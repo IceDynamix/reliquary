@@ -79,10 +79,10 @@ impl ::protobuf::Message for GridFightUseForgeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                88 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                32 => {
+                16 => {
                     self.forge_target_index = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GridFightUseForgeCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.unique_id);
         }
         if self.forge_target_index != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.forge_target_index);
+            my_size += ::protobuf::rt::uint32_size(2, self.forge_target_index);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GridFightUseForgeCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(8, self.unique_id)?;
+            os.write_uint32(11, self.unique_id)?;
         }
         if self.forge_target_index != 0 {
-            os.write_uint32(4, self.forge_target_index)?;
+            os.write_uint32(2, self.forge_target_index)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightUseForgeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGridFightUseForgeCsReq.proto\"c\n\x16GridFightUseForgeCsReq\x12\
-    \x1b\n\tunique_id\x18\x08\x20\x01(\rR\x08uniqueId\x12,\n\x12forge_target\
-    _index\x18\x04\x20\x01(\rR\x10forgeTargetIndexb\x06proto3\
+    \x1b\n\tunique_id\x18\x0b\x20\x01(\rR\x08uniqueId\x12,\n\x12forge_target\
+    _index\x18\x02\x20\x01(\rR\x10forgeTargetIndexb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

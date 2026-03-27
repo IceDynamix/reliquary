@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSwitchMascotDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.GOJMLBAEPOB)
-    pub GOJMLBAEPOB: ::std::vec::Vec<super::HBHPKHHGPHL::HBHPKHHGPHL>,
-    // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.KAABLCLNLFG)
-    pub KAABLCLNLFG: u32,
+    // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.MIIKBNAJEDK)
+    pub MIIKBNAJEDK: u32,
     // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetSwitchMascotDataScRsp.IONGNMFLAHG)
+    pub IONGNMFLAHG: ::std::vec::Vec<super::DKAPGNICEMI::DKAPGNICEMI>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSwitchMascotDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GetSwitchMascotDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GOJMLBAEPOB",
-            |m: &GetSwitchMascotDataScRsp| { &m.GOJMLBAEPOB },
-            |m: &mut GetSwitchMascotDataScRsp| { &mut m.GOJMLBAEPOB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KAABLCLNLFG",
-            |m: &GetSwitchMascotDataScRsp| { &m.KAABLCLNLFG },
-            |m: &mut GetSwitchMascotDataScRsp| { &mut m.KAABLCLNLFG },
+            "MIIKBNAJEDK",
+            |m: &GetSwitchMascotDataScRsp| { &m.MIIKBNAJEDK },
+            |m: &mut GetSwitchMascotDataScRsp| { &mut m.MIIKBNAJEDK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSwitchMascotDataScRsp| { &m.retcode },
             |m: &mut GetSwitchMascotDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IONGNMFLAHG",
+            |m: &GetSwitchMascotDataScRsp| { &m.IONGNMFLAHG },
+            |m: &mut GetSwitchMascotDataScRsp| { &mut m.IONGNMFLAHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSwitchMascotDataScRsp>(
             "GetSwitchMascotDataScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.GOJMLBAEPOB.push(is.read_message()?);
+                24 => {
+                    self.MIIKBNAJEDK = is.read_uint32()?;
                 },
-                88 => {
-                    self.KAABLCLNLFG = is.read_uint32()?;
-                },
-                32 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
+                },
+                74 => {
+                    self.IONGNMFLAHG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GOJMLBAEPOB {
+        if self.MIIKBNAJEDK != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.MIIKBNAJEDK);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        for value in &self.IONGNMFLAHG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.KAABLCLNLFG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KAABLCLNLFG);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GOJMLBAEPOB {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
-        if self.KAABLCLNLFG != 0 {
-            os.write_uint32(11, self.KAABLCLNLFG)?;
+        if self.MIIKBNAJEDK != 0 {
+            os.write_uint32(3, self.MIIKBNAJEDK)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
+        for v in &self.IONGNMFLAHG {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetSwitchMascotDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.GOJMLBAEPOB.clear();
-        self.KAABLCLNLFG = 0;
+        self.MIIKBNAJEDK = 0;
         self.retcode = 0;
+        self.IONGNMFLAHG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSwitchMascotDataScRsp {
         static instance: GetSwitchMascotDataScRsp = GetSwitchMascotDataScRsp {
-            GOJMLBAEPOB: ::std::vec::Vec::new(),
-            KAABLCLNLFG: 0,
+            MIIKBNAJEDK: 0,
             retcode: 0,
+            IONGNMFLAHG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSwitchMascotDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGetSwitchMascotDataScRsp.proto\x1a\x11HBHPKHHGPHL.proto\"\x86\x01\
-    \n\x18GetSwitchMascotDataScRsp\x12.\n\x0bGOJMLBAEPOB\x18\r\x20\x03(\x0b2\
-    \x0c.HBHPKHHGPHLR\x0bGOJMLBAEPOB\x12\x20\n\x0bKAABLCLNLFG\x18\x0b\x20\
-    \x01(\rR\x0bKAABLCLNLFG\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retc\
-    odeb\x06proto3\
+    \n\x1eGetSwitchMascotDataScRsp.proto\x1a\x11DKAPGNICEMI.proto\"\x86\x01\
+    \n\x18GetSwitchMascotDataScRsp\x12\x20\n\x0bMIIKBNAJEDK\x18\x03\x20\x01(\
+    \rR\x0bMIIKBNAJEDK\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bIONGNMFLAHG\x18\t\x20\x03(\x0b2\x0c.DKAPGNICEMIR\x0bIONGNMFLA\
+    HGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HBHPKHHGPHL::file_descriptor().clone());
+            deps.push(super::DKAPGNICEMI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSwitchMascotDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

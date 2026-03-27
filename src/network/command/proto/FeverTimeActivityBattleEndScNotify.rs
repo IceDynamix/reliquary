@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FeverTimeActivityBattleEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.turn_left)
-    pub turn_left: u32,
     // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.id)
     pub id: u32,
-    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.IFPMGONIMHN)
-    pub IFPMGONIMHN: ::protobuf::EnumOrUnknown<super::FeverTimeBattleRank::FeverTimeBattleRank>,
-    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.KBKBPCKEEGJ)
-    pub KBKBPCKEEGJ: u32,
+    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.NAMLOCJKBEH)
+    pub NAMLOCJKBEH: ::protobuf::EnumOrUnknown<super::FeverTimeBattleRank::FeverTimeBattleRank>,
+    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.BHGGCHHMAIH)
+    pub BHGGCHHMAIH: u32,
+    // @@protoc_insertion_point(field:FeverTimeActivityBattleEndScNotify.turn_left)
+    pub turn_left: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FeverTimeActivityBattleEndScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl FeverTimeActivityBattleEndScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "turn_left",
-            |m: &FeverTimeActivityBattleEndScNotify| { &m.turn_left },
-            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.turn_left },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &FeverTimeActivityBattleEndScNotify| { &m.id },
             |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFPMGONIMHN",
-            |m: &FeverTimeActivityBattleEndScNotify| { &m.IFPMGONIMHN },
-            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.IFPMGONIMHN },
+            "NAMLOCJKBEH",
+            |m: &FeverTimeActivityBattleEndScNotify| { &m.NAMLOCJKBEH },
+            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.NAMLOCJKBEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KBKBPCKEEGJ",
-            |m: &FeverTimeActivityBattleEndScNotify| { &m.KBKBPCKEEGJ },
-            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.KBKBPCKEEGJ },
+            "BHGGCHHMAIH",
+            |m: &FeverTimeActivityBattleEndScNotify| { &m.BHGGCHHMAIH },
+            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.BHGGCHHMAIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "turn_left",
+            |m: &FeverTimeActivityBattleEndScNotify| { &m.turn_left },
+            |m: &mut FeverTimeActivityBattleEndScNotify| { &mut m.turn_left },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FeverTimeActivityBattleEndScNotify>(
             "FeverTimeActivityBattleEndScNotify",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FeverTimeActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.turn_left = is.read_uint32()?;
-                },
-                40 => {
+                72 => {
                     self.id = is.read_uint32()?;
                 },
-                120 => {
-                    self.IFPMGONIMHN = is.read_enum_or_unknown()?;
+                64 => {
+                    self.NAMLOCJKBEH = is.read_enum_or_unknown()?;
                 },
-                32 => {
-                    self.KBKBPCKEEGJ = is.read_uint32()?;
+                88 => {
+                    self.BHGGCHHMAIH = is.read_uint32()?;
+                },
+                8 => {
+                    self.turn_left = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for FeverTimeActivityBattleEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.turn_left != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.turn_left);
-        }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
+            my_size += ::protobuf::rt::uint32_size(9, self.id);
         }
-        if self.IFPMGONIMHN != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::GIDPEAKAKPC_PPDNHPKNBDO) {
-            my_size += ::protobuf::rt::int32_size(15, self.IFPMGONIMHN.value());
+        if self.NAMLOCJKBEH != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FeverTimeBattleRank_HDDNCGLDBFM) {
+            my_size += ::protobuf::rt::int32_size(8, self.NAMLOCJKBEH.value());
         }
-        if self.KBKBPCKEEGJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KBKBPCKEEGJ);
+        if self.BHGGCHHMAIH != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BHGGCHHMAIH);
+        }
+        if self.turn_left != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.turn_left);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for FeverTimeActivityBattleEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.turn_left != 0 {
-            os.write_uint32(13, self.turn_left)?;
-        }
         if self.id != 0 {
-            os.write_uint32(5, self.id)?;
+            os.write_uint32(9, self.id)?;
         }
-        if self.IFPMGONIMHN != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::GIDPEAKAKPC_PPDNHPKNBDO) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.IFPMGONIMHN))?;
+        if self.NAMLOCJKBEH != ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FeverTimeBattleRank_HDDNCGLDBFM) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.NAMLOCJKBEH))?;
         }
-        if self.KBKBPCKEEGJ != 0 {
-            os.write_uint32(4, self.KBKBPCKEEGJ)?;
+        if self.BHGGCHHMAIH != 0 {
+            os.write_uint32(11, self.BHGGCHHMAIH)?;
+        }
+        if self.turn_left != 0 {
+            os.write_uint32(1, self.turn_left)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for FeverTimeActivityBattleEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.turn_left = 0;
         self.id = 0;
-        self.IFPMGONIMHN = ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::GIDPEAKAKPC_PPDNHPKNBDO);
-        self.KBKBPCKEEGJ = 0;
+        self.NAMLOCJKBEH = ::protobuf::EnumOrUnknown::new(super::FeverTimeBattleRank::FeverTimeBattleRank::FeverTimeBattleRank_HDDNCGLDBFM);
+        self.BHGGCHHMAIH = 0;
+        self.turn_left = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FeverTimeActivityBattleEndScNotify {
         static instance: FeverTimeActivityBattleEndScNotify = FeverTimeActivityBattleEndScNotify {
-            turn_left: 0,
             id: 0,
-            IFPMGONIMHN: ::protobuf::EnumOrUnknown::from_i32(0),
-            KBKBPCKEEGJ: 0,
+            NAMLOCJKBEH: ::protobuf::EnumOrUnknown::from_i32(0),
+            BHGGCHHMAIH: 0,
+            turn_left: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for FeverTimeActivityBattleEndScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(FeverTimeActivityBattleEndScNotify.proto\x1a\x19FeverTimeBattleRank.p\
-    roto\"\xab\x01\n\"FeverTimeActivityBattleEndScNotify\x12\x1b\n\tturn_lef\
-    t\x18\r\x20\x01(\rR\x08turnLeft\x12\x0e\n\x02id\x18\x05\x20\x01(\rR\x02i\
-    d\x126\n\x0bIFPMGONIMHN\x18\x0f\x20\x01(\x0e2\x14.FeverTimeBattleRankR\
-    \x0bIFPMGONIMHN\x12\x20\n\x0bKBKBPCKEEGJ\x18\x04\x20\x01(\rR\x0bKBKBPCKE\
-    EGJb\x06proto3\
+    roto\"\xab\x01\n\"FeverTimeActivityBattleEndScNotify\x12\x0e\n\x02id\x18\
+    \t\x20\x01(\rR\x02id\x126\n\x0bNAMLOCJKBEH\x18\x08\x20\x01(\x0e2\x14.Fev\
+    erTimeBattleRankR\x0bNAMLOCJKBEH\x12\x20\n\x0bBHGGCHHMAIH\x18\x0b\x20\
+    \x01(\rR\x0bBHGGCHHMAIH\x12\x1b\n\tturn_left\x18\x01\x20\x01(\rR\x08turn\
+    Leftb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

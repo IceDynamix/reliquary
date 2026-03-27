@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FateSyncActionResultScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FateSyncActionResultScNotify.KKBNNAJCNHC)
-    pub KKBNNAJCNHC: ::std::vec::Vec<super::OOAINJOHFNB::OOAINJOHFNB>,
+    // @@protoc_insertion_point(field:FateSyncActionResultScNotify.BEDDGHIMAFN)
+    pub BEDDGHIMAFN: ::std::vec::Vec<super::KFOKIOGGEML::KFOKIOGGEML>,
     // special fields
     // @@protoc_insertion_point(special_field:FateSyncActionResultScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FateSyncActionResultScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KKBNNAJCNHC",
-            |m: &FateSyncActionResultScNotify| { &m.KKBNNAJCNHC },
-            |m: &mut FateSyncActionResultScNotify| { &mut m.KKBNNAJCNHC },
+            "BEDDGHIMAFN",
+            |m: &FateSyncActionResultScNotify| { &m.BEDDGHIMAFN },
+            |m: &mut FateSyncActionResultScNotify| { &mut m.BEDDGHIMAFN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FateSyncActionResultScNotify>(
             "FateSyncActionResultScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FateSyncActionResultScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.KKBNNAJCNHC.push(is.read_message()?);
+                82 => {
+                    self.BEDDGHIMAFN.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for FateSyncActionResultScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KKBNNAJCNHC {
+        for value in &self.BEDDGHIMAFN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FateSyncActionResultScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KKBNNAJCNHC {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        for v in &self.BEDDGHIMAFN {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FateSyncActionResultScNotify {
     }
 
     fn clear(&mut self) {
-        self.KKBNNAJCNHC.clear();
+        self.BEDDGHIMAFN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FateSyncActionResultScNotify {
         static instance: FateSyncActionResultScNotify = FateSyncActionResultScNotify {
-            KKBNNAJCNHC: ::std::vec::Vec::new(),
+            BEDDGHIMAFN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for FateSyncActionResultScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"FateSyncActionResultScNotify.proto\x1a\x11OOAINJOHFNB.proto\"N\n\x1c\
-    FateSyncActionResultScNotify\x12.\n\x0bKKBNNAJCNHC\x18\x0c\x20\x03(\x0b2\
-    \x0c.OOAINJOHFNBR\x0bKKBNNAJCNHCb\x06proto3\
+    \n\"FateSyncActionResultScNotify.proto\x1a\x11KFOKIOGGEML.proto\"N\n\x1c\
+    FateSyncActionResultScNotify\x12.\n\x0bBEDDGHIMAFN\x18\n\x20\x03(\x0b2\
+    \x0c.KFOKIOGGEMLR\x0bBEDDGHIMAFNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OOAINJOHFNB::file_descriptor().clone());
+            deps.push(super::KFOKIOGGEML::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FateSyncActionResultScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -82,7 +82,7 @@ impl ::protobuf::Message for FinishCosumeItemMissionCsReq {
                 112 => {
                     self.sub_mission_id = is.read_uint32()?;
                 },
-                106 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
                 },
                 tag => {
@@ -114,7 +114,7 @@ impl ::protobuf::Message for FinishCosumeItemMissionCsReq {
             os.write_uint32(14, self.sub_mission_id)?;
         }
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishCosumeItemMissionCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FinishCosumeItemMissionCsReq.proto\x1a\x0eItemList.proto\"l\n\x1cFin\
     ishCosumeItemMissionCsReq\x12$\n\x0esub_mission_id\x18\x0e\x20\x01(\rR\
-    \x0csubMissionId\x12&\n\titem_list\x18\r\x20\x01(\x0b2\t.ItemListR\x08it\
-    emListb\x06proto3\
+    \x0csubMissionId\x12&\n\titem_list\x18\x03\x20\x01(\x0b2\t.ItemListR\x08\
+    itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

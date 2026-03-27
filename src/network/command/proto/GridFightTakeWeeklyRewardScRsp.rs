@@ -28,12 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightTakeWeeklyRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GridFightTakeWeeklyRewardScRsp.MKJGFKMBJDB)
-    pub MKJGFKMBJDB: ::protobuf::MessageField<super::GridFightWeeklyScore::GridFightWeeklyScore>,
+    // @@protoc_insertion_point(field:GridFightTakeWeeklyRewardScRsp.BGDGOACEFCB)
+    pub BGDGOACEFCB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GridFightTakeWeeklyRewardScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GridFightTakeWeeklyRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:GridFightTakeWeeklyRewardScRsp.BJFHHNMLAHL)
+    pub BJFHHNMLAHL: ::protobuf::MessageField<super::GridFightWeeklyScore::GridFightWeeklyScore>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightTakeWeeklyRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,12 +53,12 @@ impl GridFightTakeWeeklyRewardScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightWeeklyScore::GridFightWeeklyScore>(
-            "MKJGFKMBJDB",
-            |m: &GridFightTakeWeeklyRewardScRsp| { &m.MKJGFKMBJDB },
-            |m: &mut GridFightTakeWeeklyRewardScRsp| { &mut m.MKJGFKMBJDB },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BGDGOACEFCB",
+            |m: &GridFightTakeWeeklyRewardScRsp| { &m.BGDGOACEFCB },
+            |m: &mut GridFightTakeWeeklyRewardScRsp| { &mut m.BGDGOACEFCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -67,6 +69,11 @@ impl GridFightTakeWeeklyRewardScRsp {
             "reward",
             |m: &GridFightTakeWeeklyRewardScRsp| { &m.reward },
             |m: &mut GridFightTakeWeeklyRewardScRsp| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightWeeklyScore::GridFightWeeklyScore>(
+            "BJFHHNMLAHL",
+            |m: &GridFightTakeWeeklyRewardScRsp| { &m.BJFHHNMLAHL },
+            |m: &mut GridFightTakeWeeklyRewardScRsp| { &mut m.BJFHHNMLAHL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightTakeWeeklyRewardScRsp>(
             "GridFightTakeWeeklyRewardScRsp",
@@ -86,14 +93,20 @@ impl ::protobuf::Message for GridFightTakeWeeklyRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MKJGFKMBJDB)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BGDGOACEFCB)?;
                 },
-                56 => {
+                64 => {
+                    self.BGDGOACEFCB.push(is.read_uint32()?);
+                },
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BJFHHNMLAHL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +120,15 @@ impl ::protobuf::Message for GridFightTakeWeeklyRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MKJGFKMBJDB.as_ref() {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.BGDGOACEFCB);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
-        if let Some(v) = self.reward.as_ref() {
+        if let Some(v) = self.BJFHHNMLAHL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +138,15 @@ impl ::protobuf::Message for GridFightTakeWeeklyRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MKJGFKMBJDB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
+        os.write_repeated_packed_uint32(8, &self.BGDGOACEFCB)?;
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if let Some(v) = self.BJFHHNMLAHL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +165,19 @@ impl ::protobuf::Message for GridFightTakeWeeklyRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.MKJGFKMBJDB.clear();
+        self.BGDGOACEFCB.clear();
         self.retcode = 0;
         self.reward.clear();
+        self.BJFHHNMLAHL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightTakeWeeklyRewardScRsp {
         static instance: GridFightTakeWeeklyRewardScRsp = GridFightTakeWeeklyRewardScRsp {
-            MKJGFKMBJDB: ::protobuf::MessageField::none(),
+            BGDGOACEFCB: ::std::vec::Vec::new(),
             retcode: 0,
             reward: ::protobuf::MessageField::none(),
+            BJFHHNMLAHL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,10 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for GridFightTakeWeeklyRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GridFightTakeWeeklyRewardScRsp.proto\x1a\x1aGridFightWeeklyScore.prot\
-    o\x1a\x0eItemList.proto\"\x96\x01\n\x1eGridFightTakeWeeklyRewardScRsp\
-    \x127\n\x0bMKJGFKMBJDB\x18\x06\x20\x01(\x0b2\x15.GridFightWeeklyScoreR\
-    \x0bMKJGFKMBJDB\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12!\
-    \n\x06reward\x18\x04\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    o\x1a\x0eItemList.proto\"\xb8\x01\n\x1eGridFightTakeWeeklyRewardScRsp\
+    \x12\x20\n\x0bBGDGOACEFCB\x18\x08\x20\x03(\rR\x0bBGDGOACEFCB\x12\x18\n\
+    \x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x05\x20\
+    \x01(\x0b2\t.ItemListR\x06reward\x127\n\x0bBJFHHNMLAHL\x18\x0c\x20\x01(\
+    \x0b2\x15.GridFightWeeklyScoreR\x0bBJFHHNMLAHLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

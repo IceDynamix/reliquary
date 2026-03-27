@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetClientRaidTargetCountCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.FELKHHOPCOD)
-    pub FELKHHOPCOD: u32,
     // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.progress)
     pub progress: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.ONBJCNGIMNL)
+    pub ONBJCNGIMNL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetClientRaidTargetCountCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SetClientRaidTargetCountCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FELKHHOPCOD",
-            |m: &SetClientRaidTargetCountCsReq| { &m.FELKHHOPCOD },
-            |m: &mut SetClientRaidTargetCountCsReq| { &mut m.FELKHHOPCOD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &SetClientRaidTargetCountCsReq| { &m.progress },
             |m: &mut SetClientRaidTargetCountCsReq| { &mut m.progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ONBJCNGIMNL",
+            |m: &SetClientRaidTargetCountCsReq| { &m.ONBJCNGIMNL },
+            |m: &mut SetClientRaidTargetCountCsReq| { &mut m.ONBJCNGIMNL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetClientRaidTargetCountCsReq>(
             "SetClientRaidTargetCountCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.FELKHHOPCOD = is.read_uint32()?;
-                },
-                104 => {
+                16 => {
                     self.progress = is.read_uint32()?;
+                },
+                40 => {
+                    self.ONBJCNGIMNL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FELKHHOPCOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FELKHHOPCOD);
-        }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.progress);
+            my_size += ::protobuf::rt::uint32_size(2, self.progress);
+        }
+        if self.ONBJCNGIMNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.ONBJCNGIMNL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FELKHHOPCOD != 0 {
-            os.write_uint32(8, self.FELKHHOPCOD)?;
-        }
         if self.progress != 0 {
-            os.write_uint32(13, self.progress)?;
+            os.write_uint32(2, self.progress)?;
+        }
+        if self.ONBJCNGIMNL != 0 {
+            os.write_uint32(5, self.ONBJCNGIMNL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     }
 
     fn clear(&mut self) {
-        self.FELKHHOPCOD = 0;
         self.progress = 0;
+        self.ONBJCNGIMNL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetClientRaidTargetCountCsReq {
         static instance: SetClientRaidTargetCountCsReq = SetClientRaidTargetCountCsReq {
-            FELKHHOPCOD: 0,
             progress: 0,
+            ONBJCNGIMNL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SetClientRaidTargetCountCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SetClientRaidTargetCountCsReq.proto\"]\n\x1dSetClientRaidTargetCountC\
-    sReq\x12\x20\n\x0bFELKHHOPCOD\x18\x08\x20\x01(\rR\x0bFELKHHOPCOD\x12\x1a\
-    \n\x08progress\x18\r\x20\x01(\rR\x08progressb\x06proto3\
+    sReq\x12\x1a\n\x08progress\x18\x02\x20\x01(\rR\x08progress\x12\x20\n\x0b\
+    ONBJCNGIMNL\x18\x05\x20\x01(\rR\x0bONBJCNGIMNLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

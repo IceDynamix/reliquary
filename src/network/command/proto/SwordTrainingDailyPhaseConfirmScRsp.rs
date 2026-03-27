@@ -30,8 +30,8 @@ pub struct SwordTrainingDailyPhaseConfirmScRsp {
     // message fields
     // @@protoc_insertion_point(field:SwordTrainingDailyPhaseConfirmScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SwordTrainingDailyPhaseConfirmScRsp.NKCLHEOPIOK)
-    pub NKCLHEOPIOK: bool,
+    // @@protoc_insertion_point(field:SwordTrainingDailyPhaseConfirmScRsp.FLCALPKOEHB)
+    pub FLCALPKOEHB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingDailyPhaseConfirmScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl SwordTrainingDailyPhaseConfirmScRsp {
             |m: &mut SwordTrainingDailyPhaseConfirmScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKCLHEOPIOK",
-            |m: &SwordTrainingDailyPhaseConfirmScRsp| { &m.NKCLHEOPIOK },
-            |m: &mut SwordTrainingDailyPhaseConfirmScRsp| { &mut m.NKCLHEOPIOK },
+            "FLCALPKOEHB",
+            |m: &SwordTrainingDailyPhaseConfirmScRsp| { &m.FLCALPKOEHB },
+            |m: &mut SwordTrainingDailyPhaseConfirmScRsp| { &mut m.FLCALPKOEHB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingDailyPhaseConfirmScRsp>(
             "SwordTrainingDailyPhaseConfirmScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
-                    self.NKCLHEOPIOK = is.read_bool()?;
+                24 => {
+                    self.FLCALPKOEHB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        if self.NKCLHEOPIOK != false {
+        if self.FLCALPKOEHB != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,10 +110,10 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        if self.NKCLHEOPIOK != false {
-            os.write_bool(7, self.NKCLHEOPIOK)?;
+        if self.FLCALPKOEHB != false {
+            os.write_bool(3, self.FLCALPKOEHB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.NKCLHEOPIOK = false;
+        self.FLCALPKOEHB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingDailyPhaseConfirmScRsp {
         static instance: SwordTrainingDailyPhaseConfirmScRsp = SwordTrainingDailyPhaseConfirmScRsp {
             retcode: 0,
-            NKCLHEOPIOK: false,
+            FLCALPKOEHB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingDailyPhaseConfirmScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)SwordTrainingDailyPhaseConfirmScRsp.proto\"a\n#SwordTrainingDailyPhas\
-    eConfirmScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\
-    \x20\n\x0bNKCLHEOPIOK\x18\x07\x20\x01(\x08R\x0bNKCLHEOPIOKb\x06proto3\
+    eConfirmScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\
+    \x20\n\x0bFLCALPKOEHB\x18\x03\x20\x01(\x08R\x0bFLCALPKOEHBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

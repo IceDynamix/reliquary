@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateAeonModifierValueScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateAeonModifierValueScNotify.LOPGFCFCAGE)
-    pub LOPGFCFCAGE: u32,
-    // @@protoc_insertion_point(field:ChessRogueUpdateAeonModifierValueScNotify.NJEOBAHKLID)
-    pub NJEOBAHKLID: i32,
+    // @@protoc_insertion_point(field:ChessRogueUpdateAeonModifierValueScNotify.ENPIAPKLKNL)
+    pub ENPIAPKLKNL: u32,
+    // @@protoc_insertion_point(field:ChessRogueUpdateAeonModifierValueScNotify.JFPIOJGJHON)
+    pub JFPIOJGJHON: i32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateAeonModifierValueScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ChessRogueUpdateAeonModifierValueScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOPGFCFCAGE",
-            |m: &ChessRogueUpdateAeonModifierValueScNotify| { &m.LOPGFCFCAGE },
-            |m: &mut ChessRogueUpdateAeonModifierValueScNotify| { &mut m.LOPGFCFCAGE },
+            "ENPIAPKLKNL",
+            |m: &ChessRogueUpdateAeonModifierValueScNotify| { &m.ENPIAPKLKNL },
+            |m: &mut ChessRogueUpdateAeonModifierValueScNotify| { &mut m.ENPIAPKLKNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJEOBAHKLID",
-            |m: &ChessRogueUpdateAeonModifierValueScNotify| { &m.NJEOBAHKLID },
-            |m: &mut ChessRogueUpdateAeonModifierValueScNotify| { &mut m.NJEOBAHKLID },
+            "JFPIOJGJHON",
+            |m: &ChessRogueUpdateAeonModifierValueScNotify| { &m.JFPIOJGJHON },
+            |m: &mut ChessRogueUpdateAeonModifierValueScNotify| { &mut m.JFPIOJGJHON },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueUpdateAeonModifierValueScNotify>(
             "ChessRogueUpdateAeonModifierValueScNotify",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 112 => {
-                    self.LOPGFCFCAGE = is.read_uint32()?;
+                    self.ENPIAPKLKNL = is.read_uint32()?;
                 },
                 88 => {
-                    self.NJEOBAHKLID = is.read_int32()?;
+                    self.JFPIOJGJHON = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LOPGFCFCAGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LOPGFCFCAGE);
+        if self.ENPIAPKLKNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ENPIAPKLKNL);
         }
-        if self.NJEOBAHKLID != 0 {
-            my_size += ::protobuf::rt::int32_size(11, self.NJEOBAHKLID);
+        if self.JFPIOJGJHON != 0 {
+            my_size += ::protobuf::rt::int32_size(11, self.JFPIOJGJHON);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LOPGFCFCAGE != 0 {
-            os.write_uint32(14, self.LOPGFCFCAGE)?;
+        if self.ENPIAPKLKNL != 0 {
+            os.write_uint32(14, self.ENPIAPKLKNL)?;
         }
-        if self.NJEOBAHKLID != 0 {
-            os.write_int32(11, self.NJEOBAHKLID)?;
+        if self.JFPIOJGJHON != 0 {
+            os.write_int32(11, self.JFPIOJGJHON)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ChessRogueUpdateAeonModifierValueScNotify {
     }
 
     fn clear(&mut self) {
-        self.LOPGFCFCAGE = 0;
-        self.NJEOBAHKLID = 0;
+        self.ENPIAPKLKNL = 0;
+        self.JFPIOJGJHON = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateAeonModifierValueScNotify {
         static instance: ChessRogueUpdateAeonModifierValueScNotify = ChessRogueUpdateAeonModifierValueScNotify {
-            LOPGFCFCAGE: 0,
-            NJEOBAHKLID: 0,
+            ENPIAPKLKNL: 0,
+            JFPIOJGJHON: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateAeonModifierValueScN
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n/ChessRogueUpdateAeonModifierValueScNotify.proto\"o\n)ChessRogueUpdate\
-    AeonModifierValueScNotify\x12\x20\n\x0bLOPGFCFCAGE\x18\x0e\x20\x01(\rR\
-    \x0bLOPGFCFCAGE\x12\x20\n\x0bNJEOBAHKLID\x18\x0b\x20\x01(\x05R\x0bNJEOBA\
-    HKLIDb\x06proto3\
+    AeonModifierValueScNotify\x12\x20\n\x0bENPIAPKLKNL\x18\x0e\x20\x01(\rR\
+    \x0bENPIAPKLKNL\x12\x20\n\x0bJFPIOJGJHON\x18\x0b\x20\x01(\x05R\x0bJFPIOJ\
+    GJHONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetFriendRemarkNameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.reason)
-    pub reason: u32,
     // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.remark_name)
     pub remark_name: ::std::string::String,
+    // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.reason)
+    pub reason: u32,
     // @@protoc_insertion_point(field:SetFriendRemarkNameCsReq.uid)
     pub uid: u32,
     // special fields
@@ -54,14 +54,14 @@ impl SetFriendRemarkNameCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &SetFriendRemarkNameCsReq| { &m.reason },
-            |m: &mut SetFriendRemarkNameCsReq| { &mut m.reason },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "remark_name",
             |m: &SetFriendRemarkNameCsReq| { &m.remark_name },
             |m: &mut SetFriendRemarkNameCsReq| { &mut m.remark_name },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reason",
+            |m: &SetFriendRemarkNameCsReq| { &m.reason },
+            |m: &mut SetFriendRemarkNameCsReq| { &mut m.reason },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.reason = is.read_uint32()?;
-                },
-                10 => {
+                18 => {
                     self.remark_name = is.read_string()?;
                 },
-                32 => {
+                72 => {
+                    self.reason = is.read_uint32()?;
+                },
+                96 => {
                     self.uid = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.reason != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.reason);
-        }
         if !self.remark_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.remark_name);
+            my_size += ::protobuf::rt::string_size(2, &self.remark_name);
+        }
+        if self.reason != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.reason);
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.uid);
+            my_size += ::protobuf::rt::uint32_size(12, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.reason != 0 {
-            os.write_uint32(2, self.reason)?;
-        }
         if !self.remark_name.is_empty() {
-            os.write_string(1, &self.remark_name)?;
+            os.write_string(2, &self.remark_name)?;
+        }
+        if self.reason != 0 {
+            os.write_uint32(9, self.reason)?;
         }
         if self.uid != 0 {
-            os.write_uint32(4, self.uid)?;
+            os.write_uint32(12, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SetFriendRemarkNameCsReq {
     }
 
     fn clear(&mut self) {
-        self.reason = 0;
         self.remark_name.clear();
+        self.reason = 0;
         self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetFriendRemarkNameCsReq {
         static instance: SetFriendRemarkNameCsReq = SetFriendRemarkNameCsReq {
-            reason: 0,
             remark_name: ::std::string::String::new(),
+            reason: 0,
             uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendRemarkNameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSetFriendRemarkNameCsReq.proto\"e\n\x18SetFriendRemarkNameCsReq\
-    \x12\x16\n\x06reason\x18\x02\x20\x01(\rR\x06reason\x12\x1f\n\x0bremark_n\
-    ame\x18\x01\x20\x01(\tR\nremarkName\x12\x10\n\x03uid\x18\x04\x20\x01(\rR\
+    \x12\x1f\n\x0bremark_name\x18\x02\x20\x01(\tR\nremarkName\x12\x16\n\x06r\
+    eason\x18\t\x20\x01(\rR\x06reason\x12\x10\n\x03uid\x18\x0c\x20\x01(\rR\
     \x03uidb\x06proto3\
 ";
 

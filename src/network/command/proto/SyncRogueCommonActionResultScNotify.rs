@@ -28,12 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueCommonActionResultScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.KKBNNAJCNHC)
-    pub KKBNNAJCNHC: ::std::vec::Vec<super::NOJODJILHMM::NOJODJILHMM>,
-    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.AIPGEFNPNLL)
-    pub AIPGEFNPNLL: ::protobuf::EnumOrUnknown<super::HKFMAJHFCFD::HKFMAJHFCFD>,
-    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.BHKAGJHDCLM)
-    pub BHKAGJHDCLM: u32,
+    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.BEDDGHIMAFN)
+    pub BEDDGHIMAFN: ::std::vec::Vec<super::EAHOGGPNKEC::EAHOGGPNKEC>,
+    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.FFOJLKPMEBG)
+    pub FFOJLKPMEBG: u32,
+    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.MNHGPKIHHKL)
+    pub MNHGPKIHHKL: ::protobuf::EnumOrUnknown<super::HPODENPEMBD::HPODENPEMBD>,
+    // @@protoc_insertion_point(field:SyncRogueCommonActionResultScNotify.NJNDCEKFPAA)
+    pub NJNDCEKFPAA: ::std::vec::Vec<super::ICPGGFEFHJM::ICPGGFEFHJM>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueCommonActionResultScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +53,27 @@ impl SyncRogueCommonActionResultScNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KKBNNAJCNHC",
-            |m: &SyncRogueCommonActionResultScNotify| { &m.KKBNNAJCNHC },
-            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.KKBNNAJCNHC },
+            "BEDDGHIMAFN",
+            |m: &SyncRogueCommonActionResultScNotify| { &m.BEDDGHIMAFN },
+            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.BEDDGHIMAFN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIPGEFNPNLL",
-            |m: &SyncRogueCommonActionResultScNotify| { &m.AIPGEFNPNLL },
-            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.AIPGEFNPNLL },
+            "FFOJLKPMEBG",
+            |m: &SyncRogueCommonActionResultScNotify| { &m.FFOJLKPMEBG },
+            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.FFOJLKPMEBG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHKAGJHDCLM",
-            |m: &SyncRogueCommonActionResultScNotify| { &m.BHKAGJHDCLM },
-            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.BHKAGJHDCLM },
+            "MNHGPKIHHKL",
+            |m: &SyncRogueCommonActionResultScNotify| { &m.MNHGPKIHHKL },
+            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.MNHGPKIHHKL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NJNDCEKFPAA",
+            |m: &SyncRogueCommonActionResultScNotify| { &m.NJNDCEKFPAA },
+            |m: &mut SyncRogueCommonActionResultScNotify| { &mut m.NJNDCEKFPAA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueCommonActionResultScNotify>(
             "SyncRogueCommonActionResultScNotify",
@@ -86,14 +93,17 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.KKBNNAJCNHC.push(is.read_message()?);
+                26 => {
+                    self.BEDDGHIMAFN.push(is.read_message()?);
                 },
-                32 => {
-                    self.AIPGEFNPNLL = is.read_enum_or_unknown()?;
+                56 => {
+                    self.FFOJLKPMEBG = is.read_uint32()?;
                 },
-                40 => {
-                    self.BHKAGJHDCLM = is.read_uint32()?;
+                80 => {
+                    self.MNHGPKIHHKL = is.read_enum_or_unknown()?;
+                },
+                90 => {
+                    self.NJNDCEKFPAA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +117,38 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KKBNNAJCNHC {
+        for value in &self.BEDDGHIMAFN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.AIPGEFNPNLL != ::protobuf::EnumOrUnknown::new(super::HKFMAJHFCFD::HKFMAJHFCFD::HKFMAJHFCFD_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(4, self.AIPGEFNPNLL.value());
+        if self.FFOJLKPMEBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.FFOJLKPMEBG);
         }
-        if self.BHKAGJHDCLM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.BHKAGJHDCLM);
+        if self.MNHGPKIHHKL != ::protobuf::EnumOrUnknown::new(super::HPODENPEMBD::HPODENPEMBD::HPODENPEMBD_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(10, self.MNHGPKIHHKL.value());
         }
+        for value in &self.NJNDCEKFPAA {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KKBNNAJCNHC {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.BEDDGHIMAFN {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
-        if self.AIPGEFNPNLL != ::protobuf::EnumOrUnknown::new(super::HKFMAJHFCFD::HKFMAJHFCFD::HKFMAJHFCFD_GKJBAODJMJG) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.AIPGEFNPNLL))?;
+        if self.FFOJLKPMEBG != 0 {
+            os.write_uint32(7, self.FFOJLKPMEBG)?;
         }
-        if self.BHKAGJHDCLM != 0 {
-            os.write_uint32(5, self.BHKAGJHDCLM)?;
+        if self.MNHGPKIHHKL != ::protobuf::EnumOrUnknown::new(super::HPODENPEMBD::HPODENPEMBD::HPODENPEMBD_MNFEPONEDDJ) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.MNHGPKIHHKL))?;
         }
+        for v in &self.NJNDCEKFPAA {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +166,19 @@ impl ::protobuf::Message for SyncRogueCommonActionResultScNotify {
     }
 
     fn clear(&mut self) {
-        self.KKBNNAJCNHC.clear();
-        self.AIPGEFNPNLL = ::protobuf::EnumOrUnknown::new(super::HKFMAJHFCFD::HKFMAJHFCFD::HKFMAJHFCFD_GKJBAODJMJG);
-        self.BHKAGJHDCLM = 0;
+        self.BEDDGHIMAFN.clear();
+        self.FFOJLKPMEBG = 0;
+        self.MNHGPKIHHKL = ::protobuf::EnumOrUnknown::new(super::HPODENPEMBD::HPODENPEMBD::HPODENPEMBD_MNFEPONEDDJ);
+        self.NJNDCEKFPAA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueCommonActionResultScNotify {
         static instance: SyncRogueCommonActionResultScNotify = SyncRogueCommonActionResultScNotify {
-            KKBNNAJCNHC: ::std::vec::Vec::new(),
-            AIPGEFNPNLL: ::protobuf::EnumOrUnknown::from_i32(0),
-            BHKAGJHDCLM: 0,
+            BEDDGHIMAFN: ::std::vec::Vec::new(),
+            FFOJLKPMEBG: 0,
+            MNHGPKIHHKL: ::protobuf::EnumOrUnknown::from_i32(0),
+            NJNDCEKFPAA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,12 +203,13 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonActionResultScNotify 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)SyncRogueCommonActionResultScNotify.proto\x1a\x11HKFMAJHFCFD.proto\
-    \x1a\x11NOJODJILHMM.proto\"\xa7\x01\n#SyncRogueCommonActionResultScNotif\
-    y\x12.\n\x0bKKBNNAJCNHC\x18\x0e\x20\x03(\x0b2\x0c.NOJODJILHMMR\x0bKKBNNA\
-    JCNHC\x12.\n\x0bAIPGEFNPNLL\x18\x04\x20\x01(\x0e2\x0c.HKFMAJHFCFDR\x0bAI\
-    PGEFNPNLL\x12\x20\n\x0bBHKAGJHDCLM\x18\x05\x20\x01(\rR\x0bBHKAGJHDCLMb\
-    \x06proto3\
+    \n)SyncRogueCommonActionResultScNotify.proto\x1a\x11EAHOGGPNKEC.proto\
+    \x1a\x11HPODENPEMBD.proto\x1a\x11ICPGGFEFHJM.proto\"\xd7\x01\n#SyncRogue\
+    CommonActionResultScNotify\x12.\n\x0bBEDDGHIMAFN\x18\x03\x20\x03(\x0b2\
+    \x0c.EAHOGGPNKECR\x0bBEDDGHIMAFN\x12\x20\n\x0bFFOJLKPMEBG\x18\x07\x20\
+    \x01(\rR\x0bFFOJLKPMEBG\x12.\n\x0bMNHGPKIHHKL\x18\n\x20\x01(\x0e2\x0c.HP\
+    ODENPEMBDR\x0bMNHGPKIHHKL\x12.\n\x0bNJNDCEKFPAA\x18\x0b\x20\x03(\x0b2\
+    \x0c.ICPGGFEFHJMR\x0bNJNDCEKFPAAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,9 +226,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::HKFMAJHFCFD::file_descriptor().clone());
-            deps.push(super::NOJODJILHMM::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(3);
+            deps.push(super::EAHOGGPNKEC::file_descriptor().clone());
+            deps.push(super::HPODENPEMBD::file_descriptor().clone());
+            deps.push(super::ICPGGFEFHJM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncRogueCommonActionResultScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

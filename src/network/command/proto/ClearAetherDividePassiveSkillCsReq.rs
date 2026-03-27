@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClearAetherDividePassiveSkillCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ClearAetherDividePassiveSkillCsReq.PDIKGFEKOHH)
-    pub PDIKGFEKOHH: u32,
     // @@protoc_insertion_point(field:ClearAetherDividePassiveSkillCsReq.slot)
     pub slot: u32,
+    // @@protoc_insertion_point(field:ClearAetherDividePassiveSkillCsReq.KLEJPKIHMEG)
+    pub KLEJPKIHMEG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClearAetherDividePassiveSkillCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ClearAetherDividePassiveSkillCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDIKGFEKOHH",
-            |m: &ClearAetherDividePassiveSkillCsReq| { &m.PDIKGFEKOHH },
-            |m: &mut ClearAetherDividePassiveSkillCsReq| { &mut m.PDIKGFEKOHH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "slot",
             |m: &ClearAetherDividePassiveSkillCsReq| { &m.slot },
             |m: &mut ClearAetherDividePassiveSkillCsReq| { &mut m.slot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KLEJPKIHMEG",
+            |m: &ClearAetherDividePassiveSkillCsReq| { &m.KLEJPKIHMEG },
+            |m: &mut ClearAetherDividePassiveSkillCsReq| { &mut m.KLEJPKIHMEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClearAetherDividePassiveSkillCsReq>(
             "ClearAetherDividePassiveSkillCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ClearAetherDividePassiveSkillCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.PDIKGFEKOHH = is.read_uint32()?;
-                },
                 80 => {
                     self.slot = is.read_uint32()?;
+                },
+                72 => {
+                    self.KLEJPKIHMEG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ClearAetherDividePassiveSkillCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PDIKGFEKOHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PDIKGFEKOHH);
-        }
         if self.slot != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.slot);
+        }
+        if self.KLEJPKIHMEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.KLEJPKIHMEG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ClearAetherDividePassiveSkillCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PDIKGFEKOHH != 0 {
-            os.write_uint32(1, self.PDIKGFEKOHH)?;
-        }
         if self.slot != 0 {
             os.write_uint32(10, self.slot)?;
+        }
+        if self.KLEJPKIHMEG != 0 {
+            os.write_uint32(9, self.KLEJPKIHMEG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ClearAetherDividePassiveSkillCsReq {
     }
 
     fn clear(&mut self) {
-        self.PDIKGFEKOHH = 0;
         self.slot = 0;
+        self.KLEJPKIHMEG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClearAetherDividePassiveSkillCsReq {
         static instance: ClearAetherDividePassiveSkillCsReq = ClearAetherDividePassiveSkillCsReq {
-            PDIKGFEKOHH: 0,
             slot: 0,
+            KLEJPKIHMEG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ClearAetherDividePassiveSkillCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(ClearAetherDividePassiveSkillCsReq.proto\"Z\n\"ClearAetherDividePassi\
-    veSkillCsReq\x12\x20\n\x0bPDIKGFEKOHH\x18\x01\x20\x01(\rR\x0bPDIKGFEKOHH\
-    \x12\x12\n\x04slot\x18\n\x20\x01(\rR\x04slotb\x06proto3\
+    veSkillCsReq\x12\x12\n\x04slot\x18\n\x20\x01(\rR\x04slot\x12\x20\n\x0bKL\
+    EJPKIHMEG\x18\t\x20\x01(\rR\x0bKLEJPKIHMEGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

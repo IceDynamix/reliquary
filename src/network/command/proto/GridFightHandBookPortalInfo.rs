@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightHandBookPortalInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightHandBookPortalInfo.NIDNIHIOFBJ)
-    pub NIDNIHIOFBJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GridFightHandBookPortalInfo.HBLPKDEHAFC)
+    pub HBLPKDEHAFC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GridFightHandBookPortalInfo.grid_fight_portal_buff_list)
     pub grid_fight_portal_buff_list: ::std::vec::Vec<u32>,
     // special fields
@@ -52,9 +52,9 @@ impl GridFightHandBookPortalInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NIDNIHIOFBJ",
-            |m: &GridFightHandBookPortalInfo| { &m.NIDNIHIOFBJ },
-            |m: &mut GridFightHandBookPortalInfo| { &mut m.NIDNIHIOFBJ },
+            "HBLPKDEHAFC",
+            |m: &GridFightHandBookPortalInfo| { &m.HBLPKDEHAFC },
+            |m: &mut GridFightHandBookPortalInfo| { &mut m.HBLPKDEHAFC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "grid_fight_portal_buff_list",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GridFightHandBookPortalInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NIDNIHIOFBJ)?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HBLPKDEHAFC)?;
                 },
-                88 => {
-                    self.NIDNIHIOFBJ.push(is.read_uint32()?);
+                16 => {
+                    self.HBLPKDEHAFC.push(is.read_uint32()?);
                 },
                 42 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_portal_buff_list)?;
@@ -103,7 +103,7 @@ impl ::protobuf::Message for GridFightHandBookPortalInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.NIDNIHIOFBJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.HBLPKDEHAFC);
         my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.grid_fight_portal_buff_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,7 +111,7 @@ impl ::protobuf::Message for GridFightHandBookPortalInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(11, &self.NIDNIHIOFBJ)?;
+        os.write_repeated_packed_uint32(2, &self.HBLPKDEHAFC)?;
         os.write_repeated_packed_uint32(5, &self.grid_fight_portal_buff_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -130,14 +130,14 @@ impl ::protobuf::Message for GridFightHandBookPortalInfo {
     }
 
     fn clear(&mut self) {
-        self.NIDNIHIOFBJ.clear();
+        self.HBLPKDEHAFC.clear();
         self.grid_fight_portal_buff_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightHandBookPortalInfo {
         static instance: GridFightHandBookPortalInfo = GridFightHandBookPortalInfo {
-            NIDNIHIOFBJ: ::std::vec::Vec::new(),
+            HBLPKDEHAFC: ::std::vec::Vec::new(),
             grid_fight_portal_buff_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,7 +164,7 @@ impl ::protobuf::reflect::ProtobufValue for GridFightHandBookPortalInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GridFightHandBookPortalInfo.proto\"}\n\x1bGridFightHandBookPortalInfo\
-    \x12\x20\n\x0bNIDNIHIOFBJ\x18\x0b\x20\x03(\rR\x0bNIDNIHIOFBJ\x12<\n\x1bg\
+    \x12\x20\n\x0bHBLPKDEHAFC\x18\x02\x20\x03(\rR\x0bHBLPKDEHAFC\x12<\n\x1bg\
     rid_fight_portal_buff_list\x18\x05\x20\x03(\rR\x17gridFightPortalBuffLis\
     tb\x06proto3\
 ";

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PropChessRogueInfo {
     // message fields
-    // @@protoc_insertion_point(field:PropChessRogueInfo.BJIAAFLODPA)
-    pub BJIAAFLODPA: bool,
-    // @@protoc_insertion_point(field:PropChessRogueInfo.GINFKGKILEE)
-    pub GINFKGKILEE: bool,
+    // @@protoc_insertion_point(field:PropChessRogueInfo.GKHEPJDNBGP)
+    pub GKHEPJDNBGP: bool,
+    // @@protoc_insertion_point(field:PropChessRogueInfo.OBIJLPJOCDD)
+    pub OBIJLPJOCDD: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PropChessRogueInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PropChessRogueInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJIAAFLODPA",
-            |m: &PropChessRogueInfo| { &m.BJIAAFLODPA },
-            |m: &mut PropChessRogueInfo| { &mut m.BJIAAFLODPA },
+            "GKHEPJDNBGP",
+            |m: &PropChessRogueInfo| { &m.GKHEPJDNBGP },
+            |m: &mut PropChessRogueInfo| { &mut m.GKHEPJDNBGP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GINFKGKILEE",
-            |m: &PropChessRogueInfo| { &m.GINFKGKILEE },
-            |m: &mut PropChessRogueInfo| { &mut m.GINFKGKILEE },
+            "OBIJLPJOCDD",
+            |m: &PropChessRogueInfo| { &m.OBIJLPJOCDD },
+            |m: &mut PropChessRogueInfo| { &mut m.OBIJLPJOCDD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PropChessRogueInfo>(
             "PropChessRogueInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PropChessRogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.BJIAAFLODPA = is.read_bool()?;
+                72 => {
+                    self.GKHEPJDNBGP = is.read_bool()?;
                 },
-                64 => {
-                    self.GINFKGKILEE = is.read_bool()?;
+                88 => {
+                    self.OBIJLPJOCDD = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for PropChessRogueInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BJIAAFLODPA != false {
+        if self.GKHEPJDNBGP != false {
             my_size += 1 + 1;
         }
-        if self.GINFKGKILEE != false {
+        if self.OBIJLPJOCDD != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PropChessRogueInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BJIAAFLODPA != false {
-            os.write_bool(7, self.BJIAAFLODPA)?;
+        if self.GKHEPJDNBGP != false {
+            os.write_bool(9, self.GKHEPJDNBGP)?;
         }
-        if self.GINFKGKILEE != false {
-            os.write_bool(8, self.GINFKGKILEE)?;
+        if self.OBIJLPJOCDD != false {
+            os.write_bool(11, self.OBIJLPJOCDD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PropChessRogueInfo {
     }
 
     fn clear(&mut self) {
-        self.BJIAAFLODPA = false;
-        self.GINFKGKILEE = false;
+        self.GKHEPJDNBGP = false;
+        self.OBIJLPJOCDD = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PropChessRogueInfo {
         static instance: PropChessRogueInfo = PropChessRogueInfo {
-            BJIAAFLODPA: false,
-            GINFKGKILEE: false,
+            GKHEPJDNBGP: false,
+            OBIJLPJOCDD: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for PropChessRogueInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18PropChessRogueInfo.proto\"X\n\x12PropChessRogueInfo\x12\x20\n\x0bB\
-    JIAAFLODPA\x18\x07\x20\x01(\x08R\x0bBJIAAFLODPA\x12\x20\n\x0bGINFKGKILEE\
-    \x18\x08\x20\x01(\x08R\x0bGINFKGKILEEb\x06proto3\
+    \n\x18PropChessRogueInfo.proto\"X\n\x12PropChessRogueInfo\x12\x20\n\x0bG\
+    KHEPJDNBGP\x18\t\x20\x01(\x08R\x0bGKHEPJDNBGP\x12\x20\n\x0bOBIJLPJOCDD\
+    \x18\x0b\x20\x01(\x08R\x0bOBIJLPJOCDDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

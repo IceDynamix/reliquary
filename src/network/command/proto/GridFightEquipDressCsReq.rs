@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightEquipDressCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GridFightEquipDressCsReq.dress_equipment_unique_id)
-    pub dress_equipment_unique_id: u32,
     // @@protoc_insertion_point(field:GridFightEquipDressCsReq.dress_source)
     pub dress_source: ::protobuf::EnumOrUnknown<super::GridFightEquipDressSource::GridFightEquipDressSource>,
+    // @@protoc_insertion_point(field:GridFightEquipDressCsReq.dress_equipment_unique_id)
+    pub dress_equipment_unique_id: u32,
     // @@protoc_insertion_point(field:GridFightEquipDressCsReq.dress_role_unique_id)
     pub dress_role_unique_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl GridFightEquipDressCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dress_equipment_unique_id",
-            |m: &GridFightEquipDressCsReq| { &m.dress_equipment_unique_id },
-            |m: &mut GridFightEquipDressCsReq| { &mut m.dress_equipment_unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dress_source",
             |m: &GridFightEquipDressCsReq| { &m.dress_source },
             |m: &mut GridFightEquipDressCsReq| { &mut m.dress_source },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dress_equipment_unique_id",
+            |m: &GridFightEquipDressCsReq| { &m.dress_equipment_unique_id },
+            |m: &mut GridFightEquipDressCsReq| { &mut m.dress_equipment_unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dress_role_unique_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for GridFightEquipDressCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.dress_equipment_unique_id = is.read_uint32()?;
-                },
-                112 => {
+                96 => {
                     self.dress_source = is.read_enum_or_unknown()?;
                 },
-                96 => {
+                16 => {
+                    self.dress_equipment_unique_id = is.read_uint32()?;
+                },
+                40 => {
                     self.dress_role_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GridFightEquipDressCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.dress_equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.dress_equipment_unique_id);
+        if self.dress_source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::GridFightEquipDressSource_NIHLOMAFLFE) {
+            my_size += ::protobuf::rt::int32_size(12, self.dress_source.value());
         }
-        if self.dress_source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::MLBFKHLJNDB_CLOKNEKIFEH) {
-            my_size += ::protobuf::rt::int32_size(14, self.dress_source.value());
+        if self.dress_equipment_unique_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.dress_equipment_unique_id);
         }
         if self.dress_role_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.dress_role_unique_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.dress_role_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GridFightEquipDressCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.dress_equipment_unique_id != 0 {
-            os.write_uint32(11, self.dress_equipment_unique_id)?;
+        if self.dress_source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::GridFightEquipDressSource_NIHLOMAFLFE) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.dress_source))?;
         }
-        if self.dress_source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::MLBFKHLJNDB_CLOKNEKIFEH) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.dress_source))?;
+        if self.dress_equipment_unique_id != 0 {
+            os.write_uint32(2, self.dress_equipment_unique_id)?;
         }
         if self.dress_role_unique_id != 0 {
-            os.write_uint32(12, self.dress_role_unique_id)?;
+            os.write_uint32(5, self.dress_role_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for GridFightEquipDressCsReq {
     }
 
     fn clear(&mut self) {
+        self.dress_source = ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::GridFightEquipDressSource_NIHLOMAFLFE);
         self.dress_equipment_unique_id = 0;
-        self.dress_source = ::protobuf::EnumOrUnknown::new(super::GridFightEquipDressSource::GridFightEquipDressSource::MLBFKHLJNDB_CLOKNEKIFEH);
         self.dress_role_unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightEquipDressCsReq {
         static instance: GridFightEquipDressCsReq = GridFightEquipDressCsReq {
-            dress_equipment_unique_id: 0,
             dress_source: ::protobuf::EnumOrUnknown::from_i32(0),
+            dress_equipment_unique_id: 0,
             dress_role_unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for GridFightEquipDressCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGridFightEquipDressCsReq.proto\x1a\x1fGridFightEquipDressSource.pr\
-    oto\"\xc5\x01\n\x18GridFightEquipDressCsReq\x129\n\x19dress_equipment_un\
-    ique_id\x18\x0b\x20\x01(\rR\x16dressEquipmentUniqueId\x12=\n\x0cdress_so\
-    urce\x18\x0e\x20\x01(\x0e2\x1a.GridFightEquipDressSourceR\x0bdressSource\
-    \x12/\n\x14dress_role_unique_id\x18\x0c\x20\x01(\rR\x11dressRoleUniqueId\
-    b\x06proto3\
+    oto\"\xc5\x01\n\x18GridFightEquipDressCsReq\x12=\n\x0cdress_source\x18\
+    \x0c\x20\x01(\x0e2\x1a.GridFightEquipDressSourceR\x0bdressSource\x129\n\
+    \x19dress_equipment_unique_id\x18\x02\x20\x01(\rR\x16dressEquipmentUniqu\
+    eId\x12/\n\x14dress_role_unique_id\x18\x05\x20\x01(\rR\x11dressRoleUniqu\
+    eIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

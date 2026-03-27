@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightShopSyncInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightShopSyncInfo.KGIIAFNEJFI)
-    pub KGIIAFNEJFI: ::protobuf::MessageField<super::MIBONFGCFBN::MIBONFGCFBN>,
-    // @@protoc_insertion_point(field:GridFightShopSyncInfo.HHAFOHGFENP)
-    pub HHAFOHGFENP: u32,
-    // @@protoc_insertion_point(field:GridFightShopSyncInfo.shop_goods_list)
-    pub shop_goods_list: ::std::vec::Vec<super::GridFightShopGoodsInfo::GridFightShopGoodsInfo>,
-    // @@protoc_insertion_point(field:GridFightShopSyncInfo.KLKHJNAPPBP)
-    pub KLKHJNAPPBP: u32,
+    // @@protoc_insertion_point(field:GridFightShopSyncInfo.KFBDAEINFLE)
+    pub KFBDAEINFLE: ::protobuf::MessageField<super::ODBJMJDBHOL::ODBJMJDBHOL>,
+    // @@protoc_insertion_point(field:GridFightShopSyncInfo.EMJCHKNJMBJ)
+    pub EMJCHKNJMBJ: u32,
     // @@protoc_insertion_point(field:GridFightShopSyncInfo.shop_is_locked)
     pub shop_is_locked: bool,
+    // @@protoc_insertion_point(field:GridFightShopSyncInfo.MLDKGLCDOJP)
+    pub MLDKGLCDOJP: u32,
+    // @@protoc_insertion_point(field:GridFightShopSyncInfo.shop_goods_list)
+    pub shop_goods_list: ::std::vec::Vec<super::GridFightShopGoodsInfo::GridFightShopGoodsInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightShopSyncInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl GridFightShopSyncInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MIBONFGCFBN::MIBONFGCFBN>(
-            "KGIIAFNEJFI",
-            |m: &GridFightShopSyncInfo| { &m.KGIIAFNEJFI },
-            |m: &mut GridFightShopSyncInfo| { &mut m.KGIIAFNEJFI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ODBJMJDBHOL::ODBJMJDBHOL>(
+            "KFBDAEINFLE",
+            |m: &GridFightShopSyncInfo| { &m.KFBDAEINFLE },
+            |m: &mut GridFightShopSyncInfo| { &mut m.KFBDAEINFLE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHAFOHGFENP",
-            |m: &GridFightShopSyncInfo| { &m.HHAFOHGFENP },
-            |m: &mut GridFightShopSyncInfo| { &mut m.HHAFOHGFENP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "shop_goods_list",
-            |m: &GridFightShopSyncInfo| { &m.shop_goods_list },
-            |m: &mut GridFightShopSyncInfo| { &mut m.shop_goods_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KLKHJNAPPBP",
-            |m: &GridFightShopSyncInfo| { &m.KLKHJNAPPBP },
-            |m: &mut GridFightShopSyncInfo| { &mut m.KLKHJNAPPBP },
+            "EMJCHKNJMBJ",
+            |m: &GridFightShopSyncInfo| { &m.EMJCHKNJMBJ },
+            |m: &mut GridFightShopSyncInfo| { &mut m.EMJCHKNJMBJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "shop_is_locked",
             |m: &GridFightShopSyncInfo| { &m.shop_is_locked },
             |m: &mut GridFightShopSyncInfo| { &mut m.shop_is_locked },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MLDKGLCDOJP",
+            |m: &GridFightShopSyncInfo| { &m.MLDKGLCDOJP },
+            |m: &mut GridFightShopSyncInfo| { &mut m.MLDKGLCDOJP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "shop_goods_list",
+            |m: &GridFightShopSyncInfo| { &m.shop_goods_list },
+            |m: &mut GridFightShopSyncInfo| { &mut m.shop_goods_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightShopSyncInfo>(
             "GridFightShopSyncInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GridFightShopSyncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGIIAFNEJFI)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KFBDAEINFLE)?;
                 },
-                40 => {
-                    self.HHAFOHGFENP = is.read_uint32()?;
+                24 => {
+                    self.EMJCHKNJMBJ = is.read_uint32()?;
                 },
-                50 => {
-                    self.shop_goods_list.push(is.read_message()?);
-                },
-                64 => {
-                    self.KLKHJNAPPBP = is.read_uint32()?;
-                },
-                96 => {
+                56 => {
                     self.shop_is_locked = is.read_bool()?;
+                },
+                48 => {
+                    self.MLDKGLCDOJP = is.read_uint32()?;
+                },
+                98 => {
+                    self.shop_goods_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,44 +127,44 @@ impl ::protobuf::Message for GridFightShopSyncInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KGIIAFNEJFI.as_ref() {
+        if let Some(v) = self.KFBDAEINFLE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.HHAFOHGFENP != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HHAFOHGFENP);
+        if self.EMJCHKNJMBJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.EMJCHKNJMBJ);
+        }
+        if self.shop_is_locked != false {
+            my_size += 1 + 1;
+        }
+        if self.MLDKGLCDOJP != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.MLDKGLCDOJP);
         }
         for value in &self.shop_goods_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.KLKHJNAPPBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.KLKHJNAPPBP);
-        }
-        if self.shop_is_locked != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KGIIAFNEJFI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.KFBDAEINFLE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if self.HHAFOHGFENP != 0 {
-            os.write_uint32(5, self.HHAFOHGFENP)?;
-        }
-        for v in &self.shop_goods_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        if self.KLKHJNAPPBP != 0 {
-            os.write_uint32(8, self.KLKHJNAPPBP)?;
+        if self.EMJCHKNJMBJ != 0 {
+            os.write_uint32(3, self.EMJCHKNJMBJ)?;
         }
         if self.shop_is_locked != false {
-            os.write_bool(12, self.shop_is_locked)?;
+            os.write_bool(7, self.shop_is_locked)?;
         }
+        if self.MLDKGLCDOJP != 0 {
+            os.write_uint32(6, self.MLDKGLCDOJP)?;
+        }
+        for v in &self.shop_goods_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,21 +182,21 @@ impl ::protobuf::Message for GridFightShopSyncInfo {
     }
 
     fn clear(&mut self) {
-        self.KGIIAFNEJFI.clear();
-        self.HHAFOHGFENP = 0;
-        self.shop_goods_list.clear();
-        self.KLKHJNAPPBP = 0;
+        self.KFBDAEINFLE.clear();
+        self.EMJCHKNJMBJ = 0;
         self.shop_is_locked = false;
+        self.MLDKGLCDOJP = 0;
+        self.shop_goods_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightShopSyncInfo {
         static instance: GridFightShopSyncInfo = GridFightShopSyncInfo {
-            KGIIAFNEJFI: ::protobuf::MessageField::none(),
-            HHAFOHGFENP: 0,
-            shop_goods_list: ::std::vec::Vec::new(),
-            KLKHJNAPPBP: 0,
+            KFBDAEINFLE: ::protobuf::MessageField::none(),
+            EMJCHKNJMBJ: 0,
             shop_is_locked: false,
+            MLDKGLCDOJP: 0,
+            shop_goods_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,12 +222,12 @@ impl ::protobuf::reflect::ProtobufValue for GridFightShopSyncInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGridFightShopSyncInfo.proto\x1a\x1cGridFightShopGoodsInfo.proto\
-    \x1a\x11MIBONFGCFBN.proto\"\xf2\x01\n\x15GridFightShopSyncInfo\x12.\n\
-    \x0bKGIIAFNEJFI\x18\x02\x20\x01(\x0b2\x0c.MIBONFGCFBNR\x0bKGIIAFNEJFI\
-    \x12\x20\n\x0bHHAFOHGFENP\x18\x05\x20\x01(\rR\x0bHHAFOHGFENP\x12?\n\x0fs\
-    hop_goods_list\x18\x06\x20\x03(\x0b2\x17.GridFightShopGoodsInfoR\rshopGo\
-    odsList\x12\x20\n\x0bKLKHJNAPPBP\x18\x08\x20\x01(\rR\x0bKLKHJNAPPBP\x12$\
-    \n\x0eshop_is_locked\x18\x0c\x20\x01(\x08R\x0cshopIsLockedb\x06proto3\
+    \x1a\x11ODBJMJDBHOL.proto\"\xf2\x01\n\x15GridFightShopSyncInfo\x12.\n\
+    \x0bKFBDAEINFLE\x18\x0b\x20\x01(\x0b2\x0c.ODBJMJDBHOLR\x0bKFBDAEINFLE\
+    \x12\x20\n\x0bEMJCHKNJMBJ\x18\x03\x20\x01(\rR\x0bEMJCHKNJMBJ\x12$\n\x0es\
+    hop_is_locked\x18\x07\x20\x01(\x08R\x0cshopIsLocked\x12\x20\n\x0bMLDKGLC\
+    DOJP\x18\x06\x20\x01(\rR\x0bMLDKGLCDOJP\x12?\n\x0fshop_goods_list\x18\
+    \x0c\x20\x03(\x0b2\x17.GridFightShopGoodsInfoR\rshopGoodsListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -246,7 +246,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::GridFightShopGoodsInfo::file_descriptor().clone());
-            deps.push(super::MIBONFGCFBN::file_descriptor().clone());
+            deps.push(super::ODBJMJDBHOL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightShopSyncInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -30,12 +30,12 @@ pub struct BattleAvatarServantInfo {
     // message fields
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.avatar_id)
     pub avatar_id: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.LGCBCDDGHFO)
-    pub LGCBCDDGHFO: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.KMAHPLPNGBM)
+    pub KMAHPLPNGBM: u32,
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_turns)
     pub total_turns: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.NIBIGDFBFIP)
-    pub NIBIGDFBFIP: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.LCNNPPHFACM)
+    pub LCNNPPHFACM: f64,
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.skill_times)
     pub skill_times: ::std::vec::Vec<super::SkillUseProperty::SkillUseProperty>,
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_damage)
@@ -62,18 +62,20 @@ pub struct BattleAvatarServantInfo {
     pub total_shield_damage: f64,
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.break_times)
     pub break_times: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.FPOFIPNOJGA)
-    pub FPOFIPNOJGA: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.GDMCALJAKBO)
-    pub GDMCALJAKBO: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.EOFOPCOFANJ)
-    pub EOFOPCOFANJ: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.FPGPMCPEHNO)
-    pub FPGPMCPEHNO: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.DCDDBMHDKAH)
+    pub DCDDBMHDKAH: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.MHPBAJLOJCN)
+    pub MHPBAJLOJCN: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.OJGFIOONBMD)
+    pub OJGFIOONBMD: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.GLBEOAPOKGM)
+    pub GLBEOAPOKGM: f64,
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.entity_id)
     pub entity_id: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.OBPOHICEAIB)
-    pub OBPOHICEAIB: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.KNJPDJKAJLK)
+    pub KNJPDJKAJLK: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.BCIICAFAEPO)
+    pub BCIICAFAEPO: f64,
     // special fields
     // @@protoc_insertion_point(special_field:BattleAvatarServantInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -91,7 +93,7 @@ impl BattleAvatarServantInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(23);
+        let mut fields = ::std::vec::Vec::with_capacity(24);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -99,9 +101,9 @@ impl BattleAvatarServantInfo {
             |m: &mut BattleAvatarServantInfo| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LGCBCDDGHFO",
-            |m: &BattleAvatarServantInfo| { &m.LGCBCDDGHFO },
-            |m: &mut BattleAvatarServantInfo| { &mut m.LGCBCDDGHFO },
+            "KMAHPLPNGBM",
+            |m: &BattleAvatarServantInfo| { &m.KMAHPLPNGBM },
+            |m: &mut BattleAvatarServantInfo| { &mut m.KMAHPLPNGBM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_turns",
@@ -109,9 +111,9 @@ impl BattleAvatarServantInfo {
             |m: &mut BattleAvatarServantInfo| { &mut m.total_turns },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NIBIGDFBFIP",
-            |m: &BattleAvatarServantInfo| { &m.NIBIGDFBFIP },
-            |m: &mut BattleAvatarServantInfo| { &mut m.NIBIGDFBFIP },
+            "LCNNPPHFACM",
+            |m: &BattleAvatarServantInfo| { &m.LCNNPPHFACM },
+            |m: &mut BattleAvatarServantInfo| { &mut m.LCNNPPHFACM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "skill_times",
@@ -179,24 +181,24 @@ impl BattleAvatarServantInfo {
             |m: &mut BattleAvatarServantInfo| { &mut m.break_times },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPOFIPNOJGA",
-            |m: &BattleAvatarServantInfo| { &m.FPOFIPNOJGA },
-            |m: &mut BattleAvatarServantInfo| { &mut m.FPOFIPNOJGA },
+            "DCDDBMHDKAH",
+            |m: &BattleAvatarServantInfo| { &m.DCDDBMHDKAH },
+            |m: &mut BattleAvatarServantInfo| { &mut m.DCDDBMHDKAH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDMCALJAKBO",
-            |m: &BattleAvatarServantInfo| { &m.GDMCALJAKBO },
-            |m: &mut BattleAvatarServantInfo| { &mut m.GDMCALJAKBO },
+            "MHPBAJLOJCN",
+            |m: &BattleAvatarServantInfo| { &m.MHPBAJLOJCN },
+            |m: &mut BattleAvatarServantInfo| { &mut m.MHPBAJLOJCN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOFOPCOFANJ",
-            |m: &BattleAvatarServantInfo| { &m.EOFOPCOFANJ },
-            |m: &mut BattleAvatarServantInfo| { &mut m.EOFOPCOFANJ },
+            "OJGFIOONBMD",
+            |m: &BattleAvatarServantInfo| { &m.OJGFIOONBMD },
+            |m: &mut BattleAvatarServantInfo| { &mut m.OJGFIOONBMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPGPMCPEHNO",
-            |m: &BattleAvatarServantInfo| { &m.FPGPMCPEHNO },
-            |m: &mut BattleAvatarServantInfo| { &mut m.FPGPMCPEHNO },
+            "GLBEOAPOKGM",
+            |m: &BattleAvatarServantInfo| { &m.GLBEOAPOKGM },
+            |m: &mut BattleAvatarServantInfo| { &mut m.GLBEOAPOKGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entity_id",
@@ -204,9 +206,14 @@ impl BattleAvatarServantInfo {
             |m: &mut BattleAvatarServantInfo| { &mut m.entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OBPOHICEAIB",
-            |m: &BattleAvatarServantInfo| { &m.OBPOHICEAIB },
-            |m: &mut BattleAvatarServantInfo| { &mut m.OBPOHICEAIB },
+            "KNJPDJKAJLK",
+            |m: &BattleAvatarServantInfo| { &m.KNJPDJKAJLK },
+            |m: &mut BattleAvatarServantInfo| { &mut m.KNJPDJKAJLK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BCIICAFAEPO",
+            |m: &BattleAvatarServantInfo| { &m.BCIICAFAEPO },
+            |m: &mut BattleAvatarServantInfo| { &mut m.BCIICAFAEPO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleAvatarServantInfo>(
             "BattleAvatarServantInfo",
@@ -230,13 +237,13 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
                     self.avatar_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.LGCBCDDGHFO = is.read_uint32()?;
+                    self.KMAHPLPNGBM = is.read_uint32()?;
                 },
                 24 => {
                     self.total_turns = is.read_uint32()?;
                 },
                 33 => {
-                    self.NIBIGDFBFIP = is.read_double()?;
+                    self.LCNNPPHFACM = is.read_double()?;
                 },
                 42 => {
                     self.skill_times.push(is.read_message()?);
@@ -278,22 +285,25 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
                     self.break_times = is.read_uint32()?;
                 },
                 144 => {
-                    self.FPOFIPNOJGA = is.read_uint32()?;
+                    self.DCDDBMHDKAH = is.read_uint32()?;
                 },
                 152 => {
-                    self.GDMCALJAKBO = is.read_uint32()?;
+                    self.MHPBAJLOJCN = is.read_uint32()?;
                 },
                 160 => {
-                    self.EOFOPCOFANJ = is.read_uint32()?;
+                    self.OJGFIOONBMD = is.read_uint32()?;
                 },
                 169 => {
-                    self.FPGPMCPEHNO = is.read_double()?;
+                    self.GLBEOAPOKGM = is.read_double()?;
                 },
                 176 => {
                     self.entity_id = is.read_uint32()?;
                 },
                 184 => {
-                    self.OBPOHICEAIB = is.read_uint32()?;
+                    self.KNJPDJKAJLK = is.read_uint32()?;
+                },
+                193 => {
+                    self.BCIICAFAEPO = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -310,13 +320,13 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
         if self.avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
         }
-        if self.LGCBCDDGHFO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.LGCBCDDGHFO);
+        if self.KMAHPLPNGBM != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KMAHPLPNGBM);
         }
         if self.total_turns != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.total_turns);
         }
-        if self.NIBIGDFBFIP != 0. {
+        if self.LCNNPPHFACM != 0. {
             my_size += 1 + 8;
         }
         for value in &self.skill_times {
@@ -362,23 +372,26 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
         if self.break_times != 0 {
             my_size += ::protobuf::rt::uint32_size(17, self.break_times);
         }
-        if self.FPOFIPNOJGA != 0 {
-            my_size += ::protobuf::rt::uint32_size(18, self.FPOFIPNOJGA);
+        if self.DCDDBMHDKAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(18, self.DCDDBMHDKAH);
         }
-        if self.GDMCALJAKBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(19, self.GDMCALJAKBO);
+        if self.MHPBAJLOJCN != 0 {
+            my_size += ::protobuf::rt::uint32_size(19, self.MHPBAJLOJCN);
         }
-        if self.EOFOPCOFANJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(20, self.EOFOPCOFANJ);
+        if self.OJGFIOONBMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(20, self.OJGFIOONBMD);
         }
-        if self.FPGPMCPEHNO != 0. {
+        if self.GLBEOAPOKGM != 0. {
             my_size += 2 + 8;
         }
         if self.entity_id != 0 {
             my_size += ::protobuf::rt::uint32_size(22, self.entity_id);
         }
-        if self.OBPOHICEAIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(23, self.OBPOHICEAIB);
+        if self.KNJPDJKAJLK != 0 {
+            my_size += ::protobuf::rt::uint32_size(23, self.KNJPDJKAJLK);
+        }
+        if self.BCIICAFAEPO != 0. {
+            my_size += 2 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -389,14 +402,14 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
         if self.avatar_id != 0 {
             os.write_uint32(1, self.avatar_id)?;
         }
-        if self.LGCBCDDGHFO != 0 {
-            os.write_uint32(2, self.LGCBCDDGHFO)?;
+        if self.KMAHPLPNGBM != 0 {
+            os.write_uint32(2, self.KMAHPLPNGBM)?;
         }
         if self.total_turns != 0 {
             os.write_uint32(3, self.total_turns)?;
         }
-        if self.NIBIGDFBFIP != 0. {
-            os.write_double(4, self.NIBIGDFBFIP)?;
+        if self.LCNNPPHFACM != 0. {
+            os.write_double(4, self.LCNNPPHFACM)?;
         }
         for v in &self.skill_times {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
@@ -437,23 +450,26 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
         if self.break_times != 0 {
             os.write_uint32(17, self.break_times)?;
         }
-        if self.FPOFIPNOJGA != 0 {
-            os.write_uint32(18, self.FPOFIPNOJGA)?;
+        if self.DCDDBMHDKAH != 0 {
+            os.write_uint32(18, self.DCDDBMHDKAH)?;
         }
-        if self.GDMCALJAKBO != 0 {
-            os.write_uint32(19, self.GDMCALJAKBO)?;
+        if self.MHPBAJLOJCN != 0 {
+            os.write_uint32(19, self.MHPBAJLOJCN)?;
         }
-        if self.EOFOPCOFANJ != 0 {
-            os.write_uint32(20, self.EOFOPCOFANJ)?;
+        if self.OJGFIOONBMD != 0 {
+            os.write_uint32(20, self.OJGFIOONBMD)?;
         }
-        if self.FPGPMCPEHNO != 0. {
-            os.write_double(21, self.FPGPMCPEHNO)?;
+        if self.GLBEOAPOKGM != 0. {
+            os.write_double(21, self.GLBEOAPOKGM)?;
         }
         if self.entity_id != 0 {
             os.write_uint32(22, self.entity_id)?;
         }
-        if self.OBPOHICEAIB != 0 {
-            os.write_uint32(23, self.OBPOHICEAIB)?;
+        if self.KNJPDJKAJLK != 0 {
+            os.write_uint32(23, self.KNJPDJKAJLK)?;
+        }
+        if self.BCIICAFAEPO != 0. {
+            os.write_double(24, self.BCIICAFAEPO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -473,9 +489,9 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
 
     fn clear(&mut self) {
         self.avatar_id = 0;
-        self.LGCBCDDGHFO = 0;
+        self.KMAHPLPNGBM = 0;
         self.total_turns = 0;
-        self.NIBIGDFBFIP = 0.;
+        self.LCNNPPHFACM = 0.;
         self.skill_times.clear();
         self.total_damage = 0.;
         self.total_break_damage = 0.;
@@ -489,21 +505,22 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
         self.total_shield_taken = 0.;
         self.total_shield_damage = 0.;
         self.break_times = 0;
-        self.FPOFIPNOJGA = 0;
-        self.GDMCALJAKBO = 0;
-        self.EOFOPCOFANJ = 0;
-        self.FPGPMCPEHNO = 0.;
+        self.DCDDBMHDKAH = 0;
+        self.MHPBAJLOJCN = 0;
+        self.OJGFIOONBMD = 0;
+        self.GLBEOAPOKGM = 0.;
         self.entity_id = 0;
-        self.OBPOHICEAIB = 0;
+        self.KNJPDJKAJLK = 0;
+        self.BCIICAFAEPO = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleAvatarServantInfo {
         static instance: BattleAvatarServantInfo = BattleAvatarServantInfo {
             avatar_id: 0,
-            LGCBCDDGHFO: 0,
+            KMAHPLPNGBM: 0,
             total_turns: 0,
-            NIBIGDFBFIP: 0.,
+            LCNNPPHFACM: 0.,
             skill_times: ::std::vec::Vec::new(),
             total_damage: 0.,
             total_break_damage: 0.,
@@ -517,12 +534,13 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
             total_shield_taken: 0.,
             total_shield_damage: 0.,
             break_times: 0,
-            FPOFIPNOJGA: 0,
-            GDMCALJAKBO: 0,
-            EOFOPCOFANJ: 0,
-            FPGPMCPEHNO: 0.,
+            DCDDBMHDKAH: 0,
+            MHPBAJLOJCN: 0,
+            OJGFIOONBMD: 0,
+            GLBEOAPOKGM: 0.,
             entity_id: 0,
-            OBPOHICEAIB: 0,
+            KNJPDJKAJLK: 0,
+            BCIICAFAEPO: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -548,11 +566,11 @@ impl ::protobuf::reflect::ProtobufValue for BattleAvatarServantInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dBattleAvatarServantInfo.proto\x1a\x1aAttackDamageProperty.proto\
-    \x1a\x16SkillUseProperty.proto\"\xe1\x07\n\x17BattleAvatarServantInfo\
-    \x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12\x20\n\x0bLGCBC\
-    DDGHFO\x18\x02\x20\x01(\rR\x0bLGCBCDDGHFO\x12\x1f\n\x0btotal_turns\x18\
-    \x03\x20\x01(\rR\ntotalTurns\x12\x20\n\x0bNIBIGDFBFIP\x18\x04\x20\x01(\
-    \x01R\x0bNIBIGDFBFIP\x122\n\x0bskill_times\x18\x05\x20\x03(\x0b2\x11.Ski\
+    \x1a\x16SkillUseProperty.proto\"\x83\x08\n\x17BattleAvatarServantInfo\
+    \x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12\x20\n\x0bKMAHP\
+    LPNGBM\x18\x02\x20\x01(\rR\x0bKMAHPLPNGBM\x12\x1f\n\x0btotal_turns\x18\
+    \x03\x20\x01(\rR\ntotalTurns\x12\x20\n\x0bLCNNPPHFACM\x18\x04\x20\x01(\
+    \x01R\x0bLCNNPPHFACM\x122\n\x0bskill_times\x18\x05\x20\x03(\x0b2\x11.Ski\
     llUsePropertyR\nskillTimes\x12!\n\x0ctotal_damage\x18\x06\x20\x01(\x01R\
     \x0btotalDamage\x12,\n\x12total_break_damage\x18\x07\x20\x01(\x01R\x10to\
     talBreakDamage\x12C\n\x12attack_type_damage\x18\x08\x20\x03(\x0b2\x15.At\
@@ -566,11 +584,12 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \x12,\n\x12total_shield_taken\x18\x0f\x20\x01(\x01R\x10totalShieldTaken\
     \x12.\n\x13total_shield_damage\x18\x10\x20\x01(\x01R\x11totalShieldDamag\
     e\x12\x1f\n\x0bbreak_times\x18\x11\x20\x01(\rR\nbreakTimes\x12\x20\n\x0b\
-    FPOFIPNOJGA\x18\x12\x20\x01(\rR\x0bFPOFIPNOJGA\x12\x20\n\x0bGDMCALJAKBO\
-    \x18\x13\x20\x01(\rR\x0bGDMCALJAKBO\x12\x20\n\x0bEOFOPCOFANJ\x18\x14\x20\
-    \x01(\rR\x0bEOFOPCOFANJ\x12\x20\n\x0bFPGPMCPEHNO\x18\x15\x20\x01(\x01R\
-    \x0bFPGPMCPEHNO\x12\x1b\n\tentity_id\x18\x16\x20\x01(\rR\x08entityId\x12\
-    \x20\n\x0bOBPOHICEAIB\x18\x17\x20\x01(\rR\x0bOBPOHICEAIBb\x06proto3\
+    DCDDBMHDKAH\x18\x12\x20\x01(\rR\x0bDCDDBMHDKAH\x12\x20\n\x0bMHPBAJLOJCN\
+    \x18\x13\x20\x01(\rR\x0bMHPBAJLOJCN\x12\x20\n\x0bOJGFIOONBMD\x18\x14\x20\
+    \x01(\rR\x0bOJGFIOONBMD\x12\x20\n\x0bGLBEOAPOKGM\x18\x15\x20\x01(\x01R\
+    \x0bGLBEOAPOKGM\x12\x1b\n\tentity_id\x18\x16\x20\x01(\rR\x08entityId\x12\
+    \x20\n\x0bKNJPDJKAJLK\x18\x17\x20\x01(\rR\x0bKNJPDJKAJLK\x12\x20\n\x0bBC\
+    IICAFAEPO\x18\x18\x20\x01(\x01R\x0bBCIICAFAEPOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

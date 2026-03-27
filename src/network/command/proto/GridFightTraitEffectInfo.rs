@@ -31,7 +31,7 @@ pub struct GridFightTraitEffectInfo {
     // @@protoc_insertion_point(field:GridFightTraitEffectInfo.effect_id)
     pub effect_id: u32,
     // message oneof groups
-    pub LCIBGLEGJFK: ::std::option::Option<grid_fight_trait_effect_info::LCIBGLEGJFK>,
+    pub HGOPEEDOFAI: ::std::option::Option<grid_fight_trait_effect_info::HGOPEEDOFAI>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightTraitEffectInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,151 +48,151 @@ impl GridFightTraitEffectInfo {
         ::std::default::Default::default()
     }
 
-    // uint32 trait_core_role = 1871;
+    // uint32 trait_core_role = 613;
 
     pub fn trait_core_role(&self) -> u32 {
-        match self.LCIBGLEGJFK {
-            ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::TraitCoreRole(v)) => v,
+        match self.HGOPEEDOFAI {
+            ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::TraitCoreRole(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_trait_core_role(&mut self) {
-        self.LCIBGLEGJFK = ::std::option::Option::None;
+        self.HGOPEEDOFAI = ::std::option::Option::None;
     }
 
     pub fn has_trait_core_role(&self) -> bool {
-        match self.LCIBGLEGJFK {
-            ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::TraitCoreRole(..)) => true,
+        match self.HGOPEEDOFAI {
+            ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::TraitCoreRole(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_trait_core_role(&mut self, v: u32) {
-        self.LCIBGLEGJFK = ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::TraitCoreRole(v))
+        self.HGOPEEDOFAI = ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::TraitCoreRole(v))
     }
 
-    // .GNFDELPKFEI avatar_core_info = 1676;
+    // .OMNMOGHNLNI avatar_core_info = 554;
 
-    pub fn avatar_core_info(&self) -> &super::GNFDELPKFEI::GNFDELPKFEI {
-        match self.LCIBGLEGJFK {
-            ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::AvatarCoreInfo(ref v)) => v,
-            _ => <super::GNFDELPKFEI::GNFDELPKFEI as ::protobuf::Message>::default_instance(),
+    pub fn avatar_core_info(&self) -> &super::OMNMOGHNLNI::OMNMOGHNLNI {
+        match self.HGOPEEDOFAI {
+            ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::AvatarCoreInfo(ref v)) => v,
+            _ => <super::OMNMOGHNLNI::OMNMOGHNLNI as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_avatar_core_info(&mut self) {
-        self.LCIBGLEGJFK = ::std::option::Option::None;
+        self.HGOPEEDOFAI = ::std::option::Option::None;
     }
 
     pub fn has_avatar_core_info(&self) -> bool {
-        match self.LCIBGLEGJFK {
-            ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::AvatarCoreInfo(..)) => true,
+        match self.HGOPEEDOFAI {
+            ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::AvatarCoreInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_avatar_core_info(&mut self, v: super::GNFDELPKFEI::GNFDELPKFEI) {
-        self.LCIBGLEGJFK = ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::AvatarCoreInfo(v))
+    pub fn set_avatar_core_info(&mut self, v: super::OMNMOGHNLNI::OMNMOGHNLNI) {
+        self.HGOPEEDOFAI = ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::AvatarCoreInfo(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_avatar_core_info(&mut self) -> &mut super::GNFDELPKFEI::GNFDELPKFEI {
-        if let ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::AvatarCoreInfo(_)) = self.LCIBGLEGJFK {
+    pub fn mut_avatar_core_info(&mut self) -> &mut super::OMNMOGHNLNI::OMNMOGHNLNI {
+        if let ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::AvatarCoreInfo(_)) = self.HGOPEEDOFAI {
         } else {
-            self.LCIBGLEGJFK = ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::AvatarCoreInfo(super::GNFDELPKFEI::GNFDELPKFEI::new()));
+            self.HGOPEEDOFAI = ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::AvatarCoreInfo(super::OMNMOGHNLNI::OMNMOGHNLNI::new()));
         }
-        match self.LCIBGLEGJFK {
-            ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::AvatarCoreInfo(ref mut v)) => v,
+        match self.HGOPEEDOFAI {
+            ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::AvatarCoreInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_avatar_core_info(&mut self) -> super::GNFDELPKFEI::GNFDELPKFEI {
+    pub fn take_avatar_core_info(&mut self) -> super::OMNMOGHNLNI::OMNMOGHNLNI {
         if self.has_avatar_core_info() {
-            match self.LCIBGLEGJFK.take() {
-                ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::AvatarCoreInfo(v)) => v,
+            match self.HGOPEEDOFAI.take() {
+                ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::AvatarCoreInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GNFDELPKFEI::GNFDELPKFEI::new()
+            super::OMNMOGHNLNI::OMNMOGHNLNI::new()
         }
     }
 
-    // uint32 MAGFCPIGBHG = 1945;
+    // uint32 GEPLPCJPDIE = 1620;
 
-    pub fn MAGFCPIGBHG(&self) -> u32 {
-        match self.LCIBGLEGJFK {
-            ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::MAGFCPIGBHG(v)) => v,
+    pub fn GEPLPCJPDIE(&self) -> u32 {
+        match self.HGOPEEDOFAI {
+            ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::GEPLPCJPDIE(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_MAGFCPIGBHG(&mut self) {
-        self.LCIBGLEGJFK = ::std::option::Option::None;
+    pub fn clear_GEPLPCJPDIE(&mut self) {
+        self.HGOPEEDOFAI = ::std::option::Option::None;
     }
 
-    pub fn has_MAGFCPIGBHG(&self) -> bool {
-        match self.LCIBGLEGJFK {
-            ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::MAGFCPIGBHG(..)) => true,
+    pub fn has_GEPLPCJPDIE(&self) -> bool {
+        match self.HGOPEEDOFAI {
+            ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::GEPLPCJPDIE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_MAGFCPIGBHG(&mut self, v: u32) {
-        self.LCIBGLEGJFK = ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::MAGFCPIGBHG(v))
+    pub fn set_GEPLPCJPDIE(&mut self, v: u32) {
+        self.HGOPEEDOFAI = ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::GEPLPCJPDIE(v))
     }
 
-    // .KFMFDJLHFHK NHEJKLDIAGA = 1781;
+    // .BINMGPFFDGE LICHOEPBMPO = 695;
 
-    pub fn NHEJKLDIAGA(&self) -> &super::KFMFDJLHFHK::KFMFDJLHFHK {
-        match self.LCIBGLEGJFK {
-            ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::NHEJKLDIAGA(ref v)) => v,
-            _ => <super::KFMFDJLHFHK::KFMFDJLHFHK as ::protobuf::Message>::default_instance(),
+    pub fn LICHOEPBMPO(&self) -> &super::BINMGPFFDGE::BINMGPFFDGE {
+        match self.HGOPEEDOFAI {
+            ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::LICHOEPBMPO(ref v)) => v,
+            _ => <super::BINMGPFFDGE::BINMGPFFDGE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_NHEJKLDIAGA(&mut self) {
-        self.LCIBGLEGJFK = ::std::option::Option::None;
+    pub fn clear_LICHOEPBMPO(&mut self) {
+        self.HGOPEEDOFAI = ::std::option::Option::None;
     }
 
-    pub fn has_NHEJKLDIAGA(&self) -> bool {
-        match self.LCIBGLEGJFK {
-            ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::NHEJKLDIAGA(..)) => true,
+    pub fn has_LICHOEPBMPO(&self) -> bool {
+        match self.HGOPEEDOFAI {
+            ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::LICHOEPBMPO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_NHEJKLDIAGA(&mut self, v: super::KFMFDJLHFHK::KFMFDJLHFHK) {
-        self.LCIBGLEGJFK = ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::NHEJKLDIAGA(v))
+    pub fn set_LICHOEPBMPO(&mut self, v: super::BINMGPFFDGE::BINMGPFFDGE) {
+        self.HGOPEEDOFAI = ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::LICHOEPBMPO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_NHEJKLDIAGA(&mut self) -> &mut super::KFMFDJLHFHK::KFMFDJLHFHK {
-        if let ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::NHEJKLDIAGA(_)) = self.LCIBGLEGJFK {
+    pub fn mut_LICHOEPBMPO(&mut self) -> &mut super::BINMGPFFDGE::BINMGPFFDGE {
+        if let ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::LICHOEPBMPO(_)) = self.HGOPEEDOFAI {
         } else {
-            self.LCIBGLEGJFK = ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::NHEJKLDIAGA(super::KFMFDJLHFHK::KFMFDJLHFHK::new()));
+            self.HGOPEEDOFAI = ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::LICHOEPBMPO(super::BINMGPFFDGE::BINMGPFFDGE::new()));
         }
-        match self.LCIBGLEGJFK {
-            ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::NHEJKLDIAGA(ref mut v)) => v,
+        match self.HGOPEEDOFAI {
+            ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::LICHOEPBMPO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_NHEJKLDIAGA(&mut self) -> super::KFMFDJLHFHK::KFMFDJLHFHK {
-        if self.has_NHEJKLDIAGA() {
-            match self.LCIBGLEGJFK.take() {
-                ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::NHEJKLDIAGA(v)) => v,
+    pub fn take_LICHOEPBMPO(&mut self) -> super::BINMGPFFDGE::BINMGPFFDGE {
+        if self.has_LICHOEPBMPO() {
+            match self.HGOPEEDOFAI.take() {
+                ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::LICHOEPBMPO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::KFMFDJLHFHK::KFMFDJLHFHK::new()
+            super::BINMGPFFDGE::BINMGPFFDGE::new()
         }
     }
 
@@ -210,7 +210,7 @@ impl GridFightTraitEffectInfo {
             GridFightTraitEffectInfo::trait_core_role,
             GridFightTraitEffectInfo::set_trait_core_role,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GNFDELPKFEI::GNFDELPKFEI>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OMNMOGHNLNI::OMNMOGHNLNI>(
             "avatar_core_info",
             GridFightTraitEffectInfo::has_avatar_core_info,
             GridFightTraitEffectInfo::avatar_core_info,
@@ -218,19 +218,19 @@ impl GridFightTraitEffectInfo {
             GridFightTraitEffectInfo::set_avatar_core_info,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "MAGFCPIGBHG",
-            GridFightTraitEffectInfo::has_MAGFCPIGBHG,
-            GridFightTraitEffectInfo::MAGFCPIGBHG,
-            GridFightTraitEffectInfo::set_MAGFCPIGBHG,
+            "GEPLPCJPDIE",
+            GridFightTraitEffectInfo::has_GEPLPCJPDIE,
+            GridFightTraitEffectInfo::GEPLPCJPDIE,
+            GridFightTraitEffectInfo::set_GEPLPCJPDIE,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KFMFDJLHFHK::KFMFDJLHFHK>(
-            "NHEJKLDIAGA",
-            GridFightTraitEffectInfo::has_NHEJKLDIAGA,
-            GridFightTraitEffectInfo::NHEJKLDIAGA,
-            GridFightTraitEffectInfo::mut_NHEJKLDIAGA,
-            GridFightTraitEffectInfo::set_NHEJKLDIAGA,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BINMGPFFDGE::BINMGPFFDGE>(
+            "LICHOEPBMPO",
+            GridFightTraitEffectInfo::has_LICHOEPBMPO,
+            GridFightTraitEffectInfo::LICHOEPBMPO,
+            GridFightTraitEffectInfo::mut_LICHOEPBMPO,
+            GridFightTraitEffectInfo::set_LICHOEPBMPO,
         ));
-        oneofs.push(grid_fight_trait_effect_info::LCIBGLEGJFK::generated_oneof_descriptor_data());
+        oneofs.push(grid_fight_trait_effect_info::HGOPEEDOFAI::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightTraitEffectInfo>(
             "GridFightTraitEffectInfo",
             fields,
@@ -249,20 +249,20 @@ impl ::protobuf::Message for GridFightTraitEffectInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                72 => {
                     self.effect_id = is.read_uint32()?;
                 },
-                14968 => {
-                    self.LCIBGLEGJFK = ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::TraitCoreRole(is.read_uint32()?));
+                4904 => {
+                    self.HGOPEEDOFAI = ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::TraitCoreRole(is.read_uint32()?));
                 },
-                13410 => {
-                    self.LCIBGLEGJFK = ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::AvatarCoreInfo(is.read_message()?));
+                4434 => {
+                    self.HGOPEEDOFAI = ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::AvatarCoreInfo(is.read_message()?));
                 },
-                15560 => {
-                    self.LCIBGLEGJFK = ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::MAGFCPIGBHG(is.read_uint32()?));
+                12960 => {
+                    self.HGOPEEDOFAI = ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::GEPLPCJPDIE(is.read_uint32()?));
                 },
-                14250 => {
-                    self.LCIBGLEGJFK = ::std::option::Option::Some(grid_fight_trait_effect_info::LCIBGLEGJFK::NHEJKLDIAGA(is.read_message()?));
+                5562 => {
+                    self.HGOPEEDOFAI = ::std::option::Option::Some(grid_fight_trait_effect_info::HGOPEEDOFAI::LICHOEPBMPO(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -277,21 +277,21 @@ impl ::protobuf::Message for GridFightTraitEffectInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.effect_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.effect_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.effect_id);
         }
-        if let ::std::option::Option::Some(ref v) = self.LCIBGLEGJFK {
+        if let ::std::option::Option::Some(ref v) = self.HGOPEEDOFAI {
             match v {
-                &grid_fight_trait_effect_info::LCIBGLEGJFK::TraitCoreRole(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1871, v);
+                &grid_fight_trait_effect_info::HGOPEEDOFAI::TraitCoreRole(v) => {
+                    my_size += ::protobuf::rt::uint32_size(613, v);
                 },
-                &grid_fight_trait_effect_info::LCIBGLEGJFK::AvatarCoreInfo(ref v) => {
+                &grid_fight_trait_effect_info::HGOPEEDOFAI::AvatarCoreInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_trait_effect_info::LCIBGLEGJFK::MAGFCPIGBHG(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1945, v);
+                &grid_fight_trait_effect_info::HGOPEEDOFAI::GEPLPCJPDIE(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1620, v);
                 },
-                &grid_fight_trait_effect_info::LCIBGLEGJFK::NHEJKLDIAGA(ref v) => {
+                &grid_fight_trait_effect_info::HGOPEEDOFAI::LICHOEPBMPO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -304,21 +304,21 @@ impl ::protobuf::Message for GridFightTraitEffectInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.effect_id != 0 {
-            os.write_uint32(12, self.effect_id)?;
+            os.write_uint32(9, self.effect_id)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.LCIBGLEGJFK {
+        if let ::std::option::Option::Some(ref v) = self.HGOPEEDOFAI {
             match v {
-                &grid_fight_trait_effect_info::LCIBGLEGJFK::TraitCoreRole(v) => {
-                    os.write_uint32(1871, v)?;
+                &grid_fight_trait_effect_info::HGOPEEDOFAI::TraitCoreRole(v) => {
+                    os.write_uint32(613, v)?;
                 },
-                &grid_fight_trait_effect_info::LCIBGLEGJFK::AvatarCoreInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1676, v, os)?;
+                &grid_fight_trait_effect_info::HGOPEEDOFAI::AvatarCoreInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(554, v, os)?;
                 },
-                &grid_fight_trait_effect_info::LCIBGLEGJFK::MAGFCPIGBHG(v) => {
-                    os.write_uint32(1945, v)?;
+                &grid_fight_trait_effect_info::HGOPEEDOFAI::GEPLPCJPDIE(v) => {
+                    os.write_uint32(1620, v)?;
                 },
-                &grid_fight_trait_effect_info::LCIBGLEGJFK::NHEJKLDIAGA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1781, v, os)?;
+                &grid_fight_trait_effect_info::HGOPEEDOFAI::LICHOEPBMPO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(695, v, os)?;
                 },
             };
         }
@@ -340,17 +340,17 @@ impl ::protobuf::Message for GridFightTraitEffectInfo {
 
     fn clear(&mut self) {
         self.effect_id = 0;
-        self.LCIBGLEGJFK = ::std::option::Option::None;
-        self.LCIBGLEGJFK = ::std::option::Option::None;
-        self.LCIBGLEGJFK = ::std::option::Option::None;
-        self.LCIBGLEGJFK = ::std::option::Option::None;
+        self.HGOPEEDOFAI = ::std::option::Option::None;
+        self.HGOPEEDOFAI = ::std::option::Option::None;
+        self.HGOPEEDOFAI = ::std::option::Option::None;
+        self.HGOPEEDOFAI = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightTraitEffectInfo {
         static instance: GridFightTraitEffectInfo = GridFightTraitEffectInfo {
             effect_id: 0,
-            LCIBGLEGJFK: ::std::option::Option::None,
+            HGOPEEDOFAI: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -379,44 +379,44 @@ pub mod grid_fight_trait_effect_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:GridFightTraitEffectInfo.LCIBGLEGJFK)
-    pub enum LCIBGLEGJFK {
+    // @@protoc_insertion_point(oneof:GridFightTraitEffectInfo.HGOPEEDOFAI)
+    pub enum HGOPEEDOFAI {
         // @@protoc_insertion_point(oneof_field:GridFightTraitEffectInfo.trait_core_role)
         TraitCoreRole(u32),
         // @@protoc_insertion_point(oneof_field:GridFightTraitEffectInfo.avatar_core_info)
-        AvatarCoreInfo(super::super::GNFDELPKFEI::GNFDELPKFEI),
-        // @@protoc_insertion_point(oneof_field:GridFightTraitEffectInfo.MAGFCPIGBHG)
-        MAGFCPIGBHG(u32),
-        // @@protoc_insertion_point(oneof_field:GridFightTraitEffectInfo.NHEJKLDIAGA)
-        NHEJKLDIAGA(super::super::KFMFDJLHFHK::KFMFDJLHFHK),
+        AvatarCoreInfo(super::super::OMNMOGHNLNI::OMNMOGHNLNI),
+        // @@protoc_insertion_point(oneof_field:GridFightTraitEffectInfo.GEPLPCJPDIE)
+        GEPLPCJPDIE(u32),
+        // @@protoc_insertion_point(oneof_field:GridFightTraitEffectInfo.LICHOEPBMPO)
+        LICHOEPBMPO(super::super::BINMGPFFDGE::BINMGPFFDGE),
     }
 
-    impl ::protobuf::Oneof for LCIBGLEGJFK {
+    impl ::protobuf::Oneof for HGOPEEDOFAI {
     }
 
-    impl ::protobuf::OneofFull for LCIBGLEGJFK {
+    impl ::protobuf::OneofFull for HGOPEEDOFAI {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::GridFightTraitEffectInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("LCIBGLEGJFK").unwrap()).clone()
+            descriptor.get(|| <super::GridFightTraitEffectInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("HGOPEEDOFAI").unwrap()).clone()
         }
     }
 
-    impl LCIBGLEGJFK {
+    impl HGOPEEDOFAI {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<LCIBGLEGJFK>("LCIBGLEGJFK")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<HGOPEEDOFAI>("HGOPEEDOFAI")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGridFightTraitEffectInfo.proto\x1a\x11GNFDELPKFEI.proto\x1a\x11KFM\
-    FDJLHFHK.proto\"\x84\x02\n\x18GridFightTraitEffectInfo\x12\x1b\n\teffect\
-    _id\x18\x0c\x20\x01(\rR\x08effectId\x12)\n\x0ftrait_core_role\x18\xcf\
-    \x0e\x20\x01(\rH\0R\rtraitCoreRole\x129\n\x10avatar_core_info\x18\x8c\r\
-    \x20\x01(\x0b2\x0c.GNFDELPKFEIH\0R\x0eavatarCoreInfo\x12#\n\x0bMAGFCPIGB\
-    HG\x18\x99\x0f\x20\x01(\rH\0R\x0bMAGFCPIGBHG\x121\n\x0bNHEJKLDIAGA\x18\
-    \xf5\r\x20\x01(\x0b2\x0c.KFMFDJLHFHKH\0R\x0bNHEJKLDIAGAB\r\n\x0bLCIBGLEG\
-    JFKb\x06proto3\
+    \n\x1eGridFightTraitEffectInfo.proto\x1a\x11BINMGPFFDGE.proto\x1a\x11OMN\
+    MOGHNLNI.proto\"\x84\x02\n\x18GridFightTraitEffectInfo\x12\x1b\n\teffect\
+    _id\x18\t\x20\x01(\rR\x08effectId\x12)\n\x0ftrait_core_role\x18\xe5\x04\
+    \x20\x01(\rH\0R\rtraitCoreRole\x129\n\x10avatar_core_info\x18\xaa\x04\
+    \x20\x01(\x0b2\x0c.OMNMOGHNLNIH\0R\x0eavatarCoreInfo\x12#\n\x0bGEPLPCJPD\
+    IE\x18\xd4\x0c\x20\x01(\rH\0R\x0bGEPLPCJPDIE\x121\n\x0bLICHOEPBMPO\x18\
+    \xb7\x05\x20\x01(\x0b2\x0c.BINMGPFFDGEH\0R\x0bLICHOEPBMPOB\r\n\x0bHGOPEE\
+    DOFAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -434,8 +434,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::GNFDELPKFEI::file_descriptor().clone());
-            deps.push(super::KFMFDJLHFHK::file_descriptor().clone());
+            deps.push(super::BINMGPFFDGE::file_descriptor().clone());
+            deps.push(super::OMNMOGHNLNI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightTraitEffectInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

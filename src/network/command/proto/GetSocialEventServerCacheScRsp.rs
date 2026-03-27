@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSocialEventServerCacheScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSocialEventServerCacheScRsp.KKPONKCFCLK)
-    pub KKPONKCFCLK: ::std::vec::Vec<super::LMJCGPLBONJ::LMJCGPLBONJ>,
     // @@protoc_insertion_point(field:GetSocialEventServerCacheScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetSocialEventServerCacheScRsp.FCDONLMIAHA)
+    pub FCDONLMIAHA: ::std::vec::Vec<super::JDDENLCPGKB::JDDENLCPGKB>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSocialEventServerCacheScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetSocialEventServerCacheScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KKPONKCFCLK",
-            |m: &GetSocialEventServerCacheScRsp| { &m.KKPONKCFCLK },
-            |m: &mut GetSocialEventServerCacheScRsp| { &mut m.KKPONKCFCLK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSocialEventServerCacheScRsp| { &m.retcode },
             |m: &mut GetSocialEventServerCacheScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FCDONLMIAHA",
+            |m: &GetSocialEventServerCacheScRsp| { &m.FCDONLMIAHA },
+            |m: &mut GetSocialEventServerCacheScRsp| { &mut m.FCDONLMIAHA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSocialEventServerCacheScRsp>(
             "GetSocialEventServerCacheScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetSocialEventServerCacheScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.KKPONKCFCLK.push(is.read_message()?);
-                },
-                64 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    self.FCDONLMIAHA.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetSocialEventServerCacheScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.KKPONKCFCLK {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        for value in &self.FCDONLMIAHA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.KKPONKCFCLK {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
+        for v in &self.FCDONLMIAHA {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetSocialEventServerCacheScRsp {
     }
 
     fn clear(&mut self) {
-        self.KKPONKCFCLK.clear();
         self.retcode = 0;
+        self.FCDONLMIAHA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSocialEventServerCacheScRsp {
         static instance: GetSocialEventServerCacheScRsp = GetSocialEventServerCacheScRsp {
-            KKPONKCFCLK: ::std::vec::Vec::new(),
             retcode: 0,
+            FCDONLMIAHA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetSocialEventServerCacheScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$GetSocialEventServerCacheScRsp.proto\x1a\x11LMJCGPLBONJ.proto\"j\n\
-    \x1eGetSocialEventServerCacheScRsp\x12.\n\x0bKKPONKCFCLK\x18\x0b\x20\x03\
-    (\x0b2\x0c.LMJCGPLBONJR\x0bKKPONKCFCLK\x12\x18\n\x07retcode\x18\x08\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    \n$GetSocialEventServerCacheScRsp.proto\x1a\x11JDDENLCPGKB.proto\"j\n\
+    \x1eGetSocialEventServerCacheScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\
+    \rR\x07retcode\x12.\n\x0bFCDONLMIAHA\x18\x0e\x20\x03(\x0b2\x0c.JDDENLCPG\
+    KBR\x0bFCDONLMIAHAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LMJCGPLBONJ::file_descriptor().clone());
+            deps.push(super::JDDENLCPGKB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSocialEventServerCacheScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

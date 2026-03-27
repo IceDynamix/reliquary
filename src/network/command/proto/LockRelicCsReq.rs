@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LockRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LockRelicCsReq.OJONLDMDGGM)
-    pub OJONLDMDGGM: bool,
-    // @@protoc_insertion_point(field:LockRelicCsReq.relic_ids)
-    pub relic_ids: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LockRelicCsReq.is_locked)
     pub is_locked: bool,
+    // @@protoc_insertion_point(field:LockRelicCsReq.relic_ids)
+    pub relic_ids: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LockRelicCsReq.JMBHGCBMPBM)
+    pub JMBHGCBMPBM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LockRelicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl LockRelicCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OJONLDMDGGM",
-            |m: &LockRelicCsReq| { &m.OJONLDMDGGM },
-            |m: &mut LockRelicCsReq| { &mut m.OJONLDMDGGM },
+            "is_locked",
+            |m: &LockRelicCsReq| { &m.is_locked },
+            |m: &mut LockRelicCsReq| { &mut m.is_locked },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_ids",
@@ -64,9 +64,9 @@ impl LockRelicCsReq {
             |m: &mut LockRelicCsReq| { &mut m.relic_ids },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_locked",
-            |m: &LockRelicCsReq| { &m.is_locked },
-            |m: &mut LockRelicCsReq| { &mut m.is_locked },
+            "JMBHGCBMPBM",
+            |m: &LockRelicCsReq| { &m.JMBHGCBMPBM },
+            |m: &mut LockRelicCsReq| { &mut m.JMBHGCBMPBM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LockRelicCsReq>(
             "LockRelicCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for LockRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.OJONLDMDGGM = is.read_bool()?;
+                24 => {
+                    self.is_locked = is.read_bool()?;
                 },
-                34 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
                 },
-                32 => {
+                40 => {
                     self.relic_ids.push(is.read_uint32()?);
                 },
-                80 => {
-                    self.is_locked = is.read_bool()?;
+                48 => {
+                    self.JMBHGCBMPBM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for LockRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OJONLDMDGGM != false {
+        if self.is_locked != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.relic_ids);
-        if self.is_locked != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.relic_ids);
+        if self.JMBHGCBMPBM != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -123,12 +123,12 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OJONLDMDGGM != false {
-            os.write_bool(9, self.OJONLDMDGGM)?;
-        }
-        os.write_repeated_packed_uint32(4, &self.relic_ids)?;
         if self.is_locked != false {
-            os.write_bool(10, self.is_locked)?;
+            os.write_bool(3, self.is_locked)?;
+        }
+        os.write_repeated_packed_uint32(5, &self.relic_ids)?;
+        if self.JMBHGCBMPBM != false {
+            os.write_bool(6, self.JMBHGCBMPBM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for LockRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.OJONLDMDGGM = false;
-        self.relic_ids.clear();
         self.is_locked = false;
+        self.relic_ids.clear();
+        self.JMBHGCBMPBM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LockRelicCsReq {
         static instance: LockRelicCsReq = LockRelicCsReq {
-            OJONLDMDGGM: false,
-            relic_ids: ::std::vec::Vec::new(),
             is_locked: false,
+            relic_ids: ::std::vec::Vec::new(),
+            JMBHGCBMPBM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -182,10 +182,10 @@ impl ::protobuf::reflect::ProtobufValue for LockRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14LockRelicCsReq.proto\"l\n\x0eLockRelicCsReq\x12\x20\n\x0bOJONLDMDG\
-    GM\x18\t\x20\x01(\x08R\x0bOJONLDMDGGM\x12\x1b\n\trelic_ids\x18\x04\x20\
-    \x03(\rR\x08relicIds\x12\x1b\n\tis_locked\x18\n\x20\x01(\x08R\x08isLocke\
-    db\x06proto3\
+    \n\x14LockRelicCsReq.proto\"l\n\x0eLockRelicCsReq\x12\x1b\n\tis_locked\
+    \x18\x03\x20\x01(\x08R\x08isLocked\x12\x1b\n\trelic_ids\x18\x05\x20\x03(\
+    \rR\x08relicIds\x12\x20\n\x0bJMBHGCBMPBM\x18\x06\x20\x01(\x08R\x0bJMBHGC\
+    BMPBMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

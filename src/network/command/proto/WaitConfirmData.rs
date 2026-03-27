@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct WaitConfirmData {
     // message fields
-    // @@protoc_insertion_point(field:WaitConfirmData.finished_target_list)
-    pub finished_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:WaitConfirmData.cycles_used)
     pub cycles_used: u32,
+    // @@protoc_insertion_point(field:WaitConfirmData.finished_target_list)
+    pub finished_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:WaitConfirmData.is_wait_confirm)
     pub is_wait_confirm: bool,
     // @@protoc_insertion_point(field:WaitConfirmData.peak_id)
@@ -55,15 +55,15 @@ impl WaitConfirmData {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "finished_target_list",
-            |m: &WaitConfirmData| { &m.finished_target_list },
-            |m: &mut WaitConfirmData| { &mut m.finished_target_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cycles_used",
             |m: &WaitConfirmData| { &m.cycles_used },
             |m: &mut WaitConfirmData| { &mut m.cycles_used },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "finished_target_list",
+            |m: &WaitConfirmData| { &m.finished_target_list },
+            |m: &mut WaitConfirmData| { &mut m.finished_target_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_wait_confirm",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for WaitConfirmData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
-                },
-                72 => {
-                    self.finished_target_list.push(is.read_uint32()?);
-                },
-                48 => {
+                32 => {
                     self.cycles_used = is.read_uint32()?;
                 },
-                16 => {
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
+                },
+                96 => {
+                    self.finished_target_list.push(is.read_uint32()?);
+                },
+                104 => {
                     self.is_wait_confirm = is.read_bool()?;
                 },
-                8 => {
+                40 => {
                     self.peak_id = is.read_uint32()?;
                 },
                 tag => {
@@ -120,15 +120,15 @@ impl ::protobuf::Message for WaitConfirmData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.finished_target_list);
         if self.cycles_used != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.cycles_used);
+            my_size += ::protobuf::rt::uint32_size(4, self.cycles_used);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.finished_target_list);
         if self.is_wait_confirm != false {
             my_size += 1 + 1;
         }
         if self.peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.peak_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.peak_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for WaitConfirmData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.finished_target_list)?;
         if self.cycles_used != 0 {
-            os.write_uint32(6, self.cycles_used)?;
+            os.write_uint32(4, self.cycles_used)?;
         }
+        os.write_repeated_packed_uint32(12, &self.finished_target_list)?;
         if self.is_wait_confirm != false {
-            os.write_bool(2, self.is_wait_confirm)?;
+            os.write_bool(13, self.is_wait_confirm)?;
         }
         if self.peak_id != 0 {
-            os.write_uint32(1, self.peak_id)?;
+            os.write_uint32(5, self.peak_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,8 +163,8 @@ impl ::protobuf::Message for WaitConfirmData {
     }
 
     fn clear(&mut self) {
-        self.finished_target_list.clear();
         self.cycles_used = 0;
+        self.finished_target_list.clear();
         self.is_wait_confirm = false;
         self.peak_id = 0;
         self.special_fields.clear();
@@ -172,8 +172,8 @@ impl ::protobuf::Message for WaitConfirmData {
 
     fn default_instance() -> &'static WaitConfirmData {
         static instance: WaitConfirmData = WaitConfirmData {
-            finished_target_list: ::std::vec::Vec::new(),
             cycles_used: 0,
+            finished_target_list: ::std::vec::Vec::new(),
             is_wait_confirm: false,
             peak_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for WaitConfirmData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15WaitConfirmData.proto\"\xa5\x01\n\x0fWaitConfirmData\x120\n\x14fin\
-    ished_target_list\x18\t\x20\x03(\rR\x12finishedTargetList\x12\x1f\n\x0bc\
-    ycles_used\x18\x06\x20\x01(\rR\ncyclesUsed\x12&\n\x0fis_wait_confirm\x18\
-    \x02\x20\x01(\x08R\risWaitConfirm\x12\x17\n\x07peak_id\x18\x01\x20\x01(\
-    \rR\x06peakIdb\x06proto3\
+    \n\x15WaitConfirmData.proto\"\xa5\x01\n\x0fWaitConfirmData\x12\x1f\n\x0b\
+    cycles_used\x18\x04\x20\x01(\rR\ncyclesUsed\x120\n\x14finished_target_li\
+    st\x18\x0c\x20\x03(\rR\x12finishedTargetList\x12&\n\x0fis_wait_confirm\
+    \x18\r\x20\x01(\x08R\risWaitConfirm\x12\x17\n\x07peak_id\x18\x05\x20\x01\
+    (\rR\x06peakIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

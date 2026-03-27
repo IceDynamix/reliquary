@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OpenRelicBoxCsReq {
     // message fields
-    // @@protoc_insertion_point(field:OpenRelicBoxCsReq.NMLFMPNOIOM)
-    pub NMLFMPNOIOM: ::protobuf::MessageField<super::HKMIPGCMMNC::HKMIPGCMMNC>,
+    // @@protoc_insertion_point(field:OpenRelicBoxCsReq.OHCIEIHHKAL)
+    pub OHCIEIHHKAL: ::protobuf::MessageField<super::NADGCMCDBCI::NADGCMCDBCI>,
     // special fields
     // @@protoc_insertion_point(special_field:OpenRelicBoxCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl OpenRelicBoxCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKMIPGCMMNC::HKMIPGCMMNC>(
-            "NMLFMPNOIOM",
-            |m: &OpenRelicBoxCsReq| { &m.NMLFMPNOIOM },
-            |m: &mut OpenRelicBoxCsReq| { &mut m.NMLFMPNOIOM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NADGCMCDBCI::NADGCMCDBCI>(
+            "OHCIEIHHKAL",
+            |m: &OpenRelicBoxCsReq| { &m.OHCIEIHHKAL },
+            |m: &mut OpenRelicBoxCsReq| { &mut m.OHCIEIHHKAL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OpenRelicBoxCsReq>(
             "OpenRelicBoxCsReq",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for OpenRelicBoxCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMLFMPNOIOM)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OHCIEIHHKAL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for OpenRelicBoxCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.NMLFMPNOIOM.as_ref() {
+        if let Some(v) = self.OHCIEIHHKAL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,7 +97,7 @@ impl ::protobuf::Message for OpenRelicBoxCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.NMLFMPNOIOM.as_ref() {
+        if let Some(v) = self.OHCIEIHHKAL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for OpenRelicBoxCsReq {
     }
 
     fn clear(&mut self) {
-        self.NMLFMPNOIOM.clear();
+        self.OHCIEIHHKAL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OpenRelicBoxCsReq {
         static instance: OpenRelicBoxCsReq = OpenRelicBoxCsReq {
-            NMLFMPNOIOM: ::protobuf::MessageField::none(),
+            OHCIEIHHKAL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for OpenRelicBoxCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17OpenRelicBoxCsReq.proto\x1a\x11HKMIPGCMMNC.proto\"C\n\x11OpenRelic\
-    BoxCsReq\x12.\n\x0bNMLFMPNOIOM\x18\x0b\x20\x01(\x0b2\x0c.HKMIPGCMMNCR\
-    \x0bNMLFMPNOIOMb\x06proto3\
+    \n\x17OpenRelicBoxCsReq.proto\x1a\x11NADGCMCDBCI.proto\"C\n\x11OpenRelic\
+    BoxCsReq\x12.\n\x0bOHCIEIHHKAL\x18\x0b\x20\x01(\x0b2\x0c.NADGCMCDBCIR\
+    \x0bOHCIEIHHKALb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HKMIPGCMMNC::file_descriptor().clone());
+            deps.push(super::NADGCMCDBCI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OpenRelicBoxCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

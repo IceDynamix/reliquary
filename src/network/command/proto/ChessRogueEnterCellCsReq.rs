@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueEnterCellCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueEnterCellCsReq.PMCDFAAINDL)
-    pub PMCDFAAINDL: u32,
-    // @@protoc_insertion_point(field:ChessRogueEnterCellCsReq.OPNNDDJNNEP)
-    pub OPNNDDJNNEP: u32,
+    // @@protoc_insertion_point(field:ChessRogueEnterCellCsReq.HICCHNECJGJ)
+    pub HICCHNECJGJ: u32,
+    // @@protoc_insertion_point(field:ChessRogueEnterCellCsReq.GAGINAAMMPN)
+    pub GAGINAAMMPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueEnterCellCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ChessRogueEnterCellCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PMCDFAAINDL",
-            |m: &ChessRogueEnterCellCsReq| { &m.PMCDFAAINDL },
-            |m: &mut ChessRogueEnterCellCsReq| { &mut m.PMCDFAAINDL },
+            "HICCHNECJGJ",
+            |m: &ChessRogueEnterCellCsReq| { &m.HICCHNECJGJ },
+            |m: &mut ChessRogueEnterCellCsReq| { &mut m.HICCHNECJGJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPNNDDJNNEP",
-            |m: &ChessRogueEnterCellCsReq| { &m.OPNNDDJNNEP },
-            |m: &mut ChessRogueEnterCellCsReq| { &mut m.OPNNDDJNNEP },
+            "GAGINAAMMPN",
+            |m: &ChessRogueEnterCellCsReq| { &m.GAGINAAMMPN },
+            |m: &mut ChessRogueEnterCellCsReq| { &mut m.GAGINAAMMPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueEnterCellCsReq>(
             "ChessRogueEnterCellCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChessRogueEnterCellCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.PMCDFAAINDL = is.read_uint32()?;
+                56 => {
+                    self.HICCHNECJGJ = is.read_uint32()?;
                 },
-                104 => {
-                    self.OPNNDDJNNEP = is.read_uint32()?;
+                48 => {
+                    self.GAGINAAMMPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChessRogueEnterCellCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PMCDFAAINDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PMCDFAAINDL);
+        if self.HICCHNECJGJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HICCHNECJGJ);
         }
-        if self.OPNNDDJNNEP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OPNNDDJNNEP);
+        if self.GAGINAAMMPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.GAGINAAMMPN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChessRogueEnterCellCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PMCDFAAINDL != 0 {
-            os.write_uint32(4, self.PMCDFAAINDL)?;
+        if self.HICCHNECJGJ != 0 {
+            os.write_uint32(7, self.HICCHNECJGJ)?;
         }
-        if self.OPNNDDJNNEP != 0 {
-            os.write_uint32(13, self.OPNNDDJNNEP)?;
+        if self.GAGINAAMMPN != 0 {
+            os.write_uint32(6, self.GAGINAAMMPN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ChessRogueEnterCellCsReq {
     }
 
     fn clear(&mut self) {
-        self.PMCDFAAINDL = 0;
-        self.OPNNDDJNNEP = 0;
+        self.HICCHNECJGJ = 0;
+        self.GAGINAAMMPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueEnterCellCsReq {
         static instance: ChessRogueEnterCellCsReq = ChessRogueEnterCellCsReq {
-            PMCDFAAINDL: 0,
-            OPNNDDJNNEP: 0,
+            HICCHNECJGJ: 0,
+            GAGINAAMMPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueEnterCellCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChessRogueEnterCellCsReq.proto\"^\n\x18ChessRogueEnterCellCsReq\
-    \x12\x20\n\x0bPMCDFAAINDL\x18\x04\x20\x01(\rR\x0bPMCDFAAINDL\x12\x20\n\
-    \x0bOPNNDDJNNEP\x18\r\x20\x01(\rR\x0bOPNNDDJNNEPb\x06proto3\
+    \x12\x20\n\x0bHICCHNECJGJ\x18\x07\x20\x01(\rR\x0bHICCHNECJGJ\x12\x20\n\
+    \x0bGAGINAAMMPN\x18\x06\x20\x01(\rR\x0bGAGINAAMMPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

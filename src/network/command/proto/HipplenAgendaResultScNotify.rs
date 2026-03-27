@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HipplenAgendaResultScNotify {
     // message fields
-    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.PAKAANCIMGJ)
-    pub PAKAANCIMGJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.PNICAABMNFN)
-    pub PNICAABMNFN: ::std::vec::Vec<super::IIFLNJELDAJ::IIFLNJELDAJ>,
-    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.PIBGINPEDAK)
-    pub PIBGINPEDAK: ::protobuf::MessageField<super::EIPIBELNLMH::EIPIBELNLMH>,
-    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.NEDKAIKHOJC)
-    pub NEDKAIKHOJC: ::protobuf::MessageField<super::PICFMCNBJNE::PICFMCNBJNE>,
-    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.ABGGLFCMJOH)
-    pub ABGGLFCMJOH: ::protobuf::MessageField<super::EJCGFEFEBAI::EJCGFEFEBAI>,
-    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.IMIAHOBPMKD)
-    pub IMIAHOBPMKD: bool,
+    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.NMICJJGOHAF)
+    pub NMICJJGOHAF: ::protobuf::MessageField<super::EHBGAEFEHDF::EHBGAEFEHDF>,
+    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.IHNNHDNHJEI)
+    pub IHNNHDNHJEI: ::protobuf::MessageField<super::LGKLHAMJIAF::LGKLHAMJIAF>,
+    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.OMHKGPJCFHH)
+    pub OMHKGPJCFHH: ::protobuf::MessageField<super::ANPNJCOAHKG::ANPNJCOAHKG>,
+    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.EAEAPGHAFML)
+    pub EAEAPGHAFML: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.grid_fight_trait_info)
     pub grid_fight_trait_info: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.LMHHOHFOKBF)
+    pub LMHHOHFOKBF: ::std::vec::Vec<super::HBKJODHKACK::HBKJODHKACK>,
+    // @@protoc_insertion_point(field:HipplenAgendaResultScNotify.PHKOOBBOKFC)
+    pub PHKOOBBOKFC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:HipplenAgendaResultScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,40 +61,40 @@ impl HipplenAgendaResultScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PAKAANCIMGJ",
-            |m: &HipplenAgendaResultScNotify| { &m.PAKAANCIMGJ },
-            |m: &mut HipplenAgendaResultScNotify| { &mut m.PAKAANCIMGJ },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EHBGAEFEHDF::EHBGAEFEHDF>(
+            "NMICJJGOHAF",
+            |m: &HipplenAgendaResultScNotify| { &m.NMICJJGOHAF },
+            |m: &mut HipplenAgendaResultScNotify| { &mut m.NMICJJGOHAF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LGKLHAMJIAF::LGKLHAMJIAF>(
+            "IHNNHDNHJEI",
+            |m: &HipplenAgendaResultScNotify| { &m.IHNNHDNHJEI },
+            |m: &mut HipplenAgendaResultScNotify| { &mut m.IHNNHDNHJEI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ANPNJCOAHKG::ANPNJCOAHKG>(
+            "OMHKGPJCFHH",
+            |m: &HipplenAgendaResultScNotify| { &m.OMHKGPJCFHH },
+            |m: &mut HipplenAgendaResultScNotify| { &mut m.OMHKGPJCFHH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PNICAABMNFN",
-            |m: &HipplenAgendaResultScNotify| { &m.PNICAABMNFN },
-            |m: &mut HipplenAgendaResultScNotify| { &mut m.PNICAABMNFN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EIPIBELNLMH::EIPIBELNLMH>(
-            "PIBGINPEDAK",
-            |m: &HipplenAgendaResultScNotify| { &m.PIBGINPEDAK },
-            |m: &mut HipplenAgendaResultScNotify| { &mut m.PIBGINPEDAK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PICFMCNBJNE::PICFMCNBJNE>(
-            "NEDKAIKHOJC",
-            |m: &HipplenAgendaResultScNotify| { &m.NEDKAIKHOJC },
-            |m: &mut HipplenAgendaResultScNotify| { &mut m.NEDKAIKHOJC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJCGFEFEBAI::EJCGFEFEBAI>(
-            "ABGGLFCMJOH",
-            |m: &HipplenAgendaResultScNotify| { &m.ABGGLFCMJOH },
-            |m: &mut HipplenAgendaResultScNotify| { &mut m.ABGGLFCMJOH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMIAHOBPMKD",
-            |m: &HipplenAgendaResultScNotify| { &m.IMIAHOBPMKD },
-            |m: &mut HipplenAgendaResultScNotify| { &mut m.IMIAHOBPMKD },
+            "EAEAPGHAFML",
+            |m: &HipplenAgendaResultScNotify| { &m.EAEAPGHAFML },
+            |m: &mut HipplenAgendaResultScNotify| { &mut m.EAEAPGHAFML },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "grid_fight_trait_info",
             |m: &HipplenAgendaResultScNotify| { &m.grid_fight_trait_info },
             |m: &mut HipplenAgendaResultScNotify| { &mut m.grid_fight_trait_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LMHHOHFOKBF",
+            |m: &HipplenAgendaResultScNotify| { &m.LMHHOHFOKBF },
+            |m: &mut HipplenAgendaResultScNotify| { &mut m.LMHHOHFOKBF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PHKOOBBOKFC",
+            |m: &HipplenAgendaResultScNotify| { &m.PHKOOBBOKFC },
+            |m: &mut HipplenAgendaResultScNotify| { &mut m.PHKOOBBOKFC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HipplenAgendaResultScNotify>(
             "HipplenAgendaResultScNotify",
@@ -114,32 +114,32 @@ impl ::protobuf::Message for HipplenAgendaResultScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PAKAANCIMGJ)?;
-                },
-                104 => {
-                    self.PAKAANCIMGJ.push(is.read_uint32()?);
-                },
-                90 => {
-                    self.PNICAABMNFN.push(is.read_message()?);
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PIBGINPEDAK)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMICJJGOHAF)?;
                 },
                 82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NEDKAIKHOJC)?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABGGLFCMJOH)?;
-                },
-                16 => {
-                    self.IMIAHOBPMKD = is.read_bool()?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHNNHDNHJEI)?;
                 },
                 42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OMHKGPJCFHH)?;
+                },
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EAEAPGHAFML)?;
+                },
+                104 => {
+                    self.EAEAPGHAFML.push(is.read_uint32()?);
+                },
+                10 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_trait_info)?;
                 },
-                40 => {
+                8 => {
                     self.grid_fight_trait_info.push(is.read_uint32()?);
+                },
+                18 => {
+                    self.LMHHOHFOKBF.push(is.read_message()?);
+                },
+                88 => {
+                    self.PHKOOBBOKFC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -153,50 +153,50 @@ impl ::protobuf::Message for HipplenAgendaResultScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.PAKAANCIMGJ);
-        for value in &self.PNICAABMNFN {
+        if let Some(v) = self.NMICJJGOHAF.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.IHNNHDNHJEI.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.OMHKGPJCFHH.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.EAEAPGHAFML);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.grid_fight_trait_info);
+        for value in &self.LMHHOHFOKBF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.PIBGINPEDAK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.NEDKAIKHOJC.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.ABGGLFCMJOH.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.IMIAHOBPMKD != false {
+        if self.PHKOOBBOKFC != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.grid_fight_trait_info);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.PAKAANCIMGJ)?;
-        for v in &self.PNICAABMNFN {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        if let Some(v) = self.PIBGINPEDAK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.NMICJJGOHAF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if let Some(v) = self.NEDKAIKHOJC.as_ref() {
+        if let Some(v) = self.IHNNHDNHJEI.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.ABGGLFCMJOH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        if let Some(v) = self.OMHKGPJCFHH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if self.IMIAHOBPMKD != false {
-            os.write_bool(2, self.IMIAHOBPMKD)?;
+        os.write_repeated_packed_uint32(13, &self.EAEAPGHAFML)?;
+        os.write_repeated_packed_uint32(1, &self.grid_fight_trait_info)?;
+        for v in &self.LMHHOHFOKBF {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
+        if self.PHKOOBBOKFC != false {
+            os.write_bool(11, self.PHKOOBBOKFC)?;
         }
-        os.write_repeated_packed_uint32(5, &self.grid_fight_trait_info)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -214,25 +214,25 @@ impl ::protobuf::Message for HipplenAgendaResultScNotify {
     }
 
     fn clear(&mut self) {
-        self.PAKAANCIMGJ.clear();
-        self.PNICAABMNFN.clear();
-        self.PIBGINPEDAK.clear();
-        self.NEDKAIKHOJC.clear();
-        self.ABGGLFCMJOH.clear();
-        self.IMIAHOBPMKD = false;
+        self.NMICJJGOHAF.clear();
+        self.IHNNHDNHJEI.clear();
+        self.OMHKGPJCFHH.clear();
+        self.EAEAPGHAFML.clear();
         self.grid_fight_trait_info.clear();
+        self.LMHHOHFOKBF.clear();
+        self.PHKOOBBOKFC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HipplenAgendaResultScNotify {
         static instance: HipplenAgendaResultScNotify = HipplenAgendaResultScNotify {
-            PAKAANCIMGJ: ::std::vec::Vec::new(),
-            PNICAABMNFN: ::std::vec::Vec::new(),
-            PIBGINPEDAK: ::protobuf::MessageField::none(),
-            NEDKAIKHOJC: ::protobuf::MessageField::none(),
-            ABGGLFCMJOH: ::protobuf::MessageField::none(),
-            IMIAHOBPMKD: false,
+            NMICJJGOHAF: ::protobuf::MessageField::none(),
+            IHNNHDNHJEI: ::protobuf::MessageField::none(),
+            OMHKGPJCFHH: ::protobuf::MessageField::none(),
+            EAEAPGHAFML: ::std::vec::Vec::new(),
             grid_fight_trait_info: ::std::vec::Vec::new(),
+            LMHHOHFOKBF: ::std::vec::Vec::new(),
+            PHKOOBBOKFC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,16 +257,16 @@ impl ::protobuf::reflect::ProtobufValue for HipplenAgendaResultScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!HipplenAgendaResultScNotify.proto\x1a\x11EIPIBELNLMH.proto\x1a\x11EJC\
-    GFEFEBAI.proto\x1a\x11IIFLNJELDAJ.proto\x1a\x11PICFMCNBJNE.proto\"\xd4\
-    \x02\n\x1bHipplenAgendaResultScNotify\x12\x20\n\x0bPAKAANCIMGJ\x18\r\x20\
-    \x03(\rR\x0bPAKAANCIMGJ\x12.\n\x0bPNICAABMNFN\x18\x0b\x20\x03(\x0b2\x0c.\
-    IIFLNJELDAJR\x0bPNICAABMNFN\x12.\n\x0bPIBGINPEDAK\x18\x0e\x20\x01(\x0b2\
-    \x0c.EIPIBELNLMHR\x0bPIBGINPEDAK\x12.\n\x0bNEDKAIKHOJC\x18\n\x20\x01(\
-    \x0b2\x0c.PICFMCNBJNER\x0bNEDKAIKHOJC\x12.\n\x0bABGGLFCMJOH\x18\x0f\x20\
-    \x01(\x0b2\x0c.EJCGFEFEBAIR\x0bABGGLFCMJOH\x12\x20\n\x0bIMIAHOBPMKD\x18\
-    \x02\x20\x01(\x08R\x0bIMIAHOBPMKD\x121\n\x15grid_fight_trait_info\x18\
-    \x05\x20\x03(\rR\x12gridFightTraitInfob\x06proto3\
+    \n!HipplenAgendaResultScNotify.proto\x1a\x11ANPNJCOAHKG.proto\x1a\x11EHB\
+    GAEFEHDF.proto\x1a\x11HBKJODHKACK.proto\x1a\x11LGKLHAMJIAF.proto\"\xd4\
+    \x02\n\x1bHipplenAgendaResultScNotify\x12.\n\x0bNMICJJGOHAF\x18\x0c\x20\
+    \x01(\x0b2\x0c.EHBGAEFEHDFR\x0bNMICJJGOHAF\x12.\n\x0bIHNNHDNHJEI\x18\n\
+    \x20\x01(\x0b2\x0c.LGKLHAMJIAFR\x0bIHNNHDNHJEI\x12.\n\x0bOMHKGPJCFHH\x18\
+    \x05\x20\x01(\x0b2\x0c.ANPNJCOAHKGR\x0bOMHKGPJCFHH\x12\x20\n\x0bEAEAPGHA\
+    FML\x18\r\x20\x03(\rR\x0bEAEAPGHAFML\x121\n\x15grid_fight_trait_info\x18\
+    \x01\x20\x03(\rR\x12gridFightTraitInfo\x12.\n\x0bLMHHOHFOKBF\x18\x02\x20\
+    \x03(\x0b2\x0c.HBKJODHKACKR\x0bLMHHOHFOKBF\x12\x20\n\x0bPHKOOBBOKFC\x18\
+    \x0b\x20\x01(\x08R\x0bPHKOOBBOKFCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -284,10 +284,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::EIPIBELNLMH::file_descriptor().clone());
-            deps.push(super::EJCGFEFEBAI::file_descriptor().clone());
-            deps.push(super::IIFLNJELDAJ::file_descriptor().clone());
-            deps.push(super::PICFMCNBJNE::file_descriptor().clone());
+            deps.push(super::ANPNJCOAHKG::file_descriptor().clone());
+            deps.push(super::EHBGAEFEHDF::file_descriptor().clone());
+            deps.push(super::HBKJODHKACK::file_descriptor().clone());
+            deps.push(super::LGKLHAMJIAF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HipplenAgendaResultScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightLevelInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightLevelInfo.section_id)
-    pub section_id: u32,
-    // @@protoc_insertion_point(field:GridFightLevelInfo.KNHIKKPPODK)
-    pub KNHIKKPPODK: ::protobuf::MessageField<super::CNHAKDHPKCM::CNHAKDHPKCM>,
-    // @@protoc_insertion_point(field:GridFightLevelInfo.grid_fight_layer_info)
-    pub grid_fight_layer_info: ::protobuf::MessageField<super::GridFightLayerInfo::GridFightLayerInfo>,
-    // @@protoc_insertion_point(field:GridFightLevelInfo.AMEKCNMOAGB)
-    pub AMEKCNMOAGB: ::std::vec::Vec<super::PNDJKLOKMFK::PNDJKLOKMFK>,
-    // @@protoc_insertion_point(field:GridFightLevelInfo.grid_fight_portal_buff_list)
-    pub grid_fight_portal_buff_list: ::std::vec::Vec<super::GridFightGamePortalBuffInfo::GridFightGamePortalBuffInfo>,
+    // @@protoc_insertion_point(field:GridFightLevelInfo.CEPDMICFKNE)
+    pub CEPDMICFKNE: ::protobuf::MessageField<super::NMBIMHPBHOO::NMBIMHPBHOO>,
     // @@protoc_insertion_point(field:GridFightLevelInfo.grid_fight_affix_list)
     pub grid_fight_affix_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GridFightLevelInfo.DCJKCHFJMBK)
-    pub DCJKCHFJMBK: u32,
+    // @@protoc_insertion_point(field:GridFightLevelInfo.section_id)
+    pub section_id: u32,
+    // @@protoc_insertion_point(field:GridFightLevelInfo.grid_fight_portal_buff_list)
+    pub grid_fight_portal_buff_list: ::std::vec::Vec<super::GridFightGamePortalBuffInfo::GridFightGamePortalBuffInfo>,
+    // @@protoc_insertion_point(field:GridFightLevelInfo.grid_fight_layer_info)
+    pub grid_fight_layer_info: ::protobuf::MessageField<super::GridFightLayerInfo::GridFightLayerInfo>,
+    // @@protoc_insertion_point(field:GridFightLevelInfo.PBBJALBNKJD)
+    pub PBBJALBNKJD: ::std::vec::Vec<super::DOOCNPDPFNJ::DOOCNPDPFNJ>,
+    // @@protoc_insertion_point(field:GridFightLevelInfo.DHCEMLHNDLM)
+    pub DHCEMLHNDLM: u32,
+    // @@protoc_insertion_point(field:GridFightLevelInfo.KEJEEKBNIHM)
+    pub KEJEEKBNIHM: ::protobuf::MessageField<super::LCKFAPHANCN::LCKFAPHANCN>,
+    // @@protoc_insertion_point(field:GridFightLevelInfo.CPJCOBCMNHK)
+    pub CPJCOBCMNHK: u32,
     // @@protoc_insertion_point(field:GridFightLevelInfo.boss_info)
     pub boss_info: ::protobuf::MessageField<super::GridFightBossInfo::GridFightBossInfo>,
-    // @@protoc_insertion_point(field:GridFightLevelInfo.MOHOFMEIMMM)
-    pub MOHOFMEIMMM: u32,
-    // @@protoc_insertion_point(field:GridFightLevelInfo.IMHNBPIODKM)
-    pub IMHNBPIODKM: ::protobuf::MessageField<super::IHEKKDGKCHC::IHEKKDGKCHC>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightLevelInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,30 +67,10 @@ impl GridFightLevelInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "section_id",
-            |m: &GridFightLevelInfo| { &m.section_id },
-            |m: &mut GridFightLevelInfo| { &mut m.section_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CNHAKDHPKCM::CNHAKDHPKCM>(
-            "KNHIKKPPODK",
-            |m: &GridFightLevelInfo| { &m.KNHIKKPPODK },
-            |m: &mut GridFightLevelInfo| { &mut m.KNHIKKPPODK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightLayerInfo::GridFightLayerInfo>(
-            "grid_fight_layer_info",
-            |m: &GridFightLevelInfo| { &m.grid_fight_layer_info },
-            |m: &mut GridFightLevelInfo| { &mut m.grid_fight_layer_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AMEKCNMOAGB",
-            |m: &GridFightLevelInfo| { &m.AMEKCNMOAGB },
-            |m: &mut GridFightLevelInfo| { &mut m.AMEKCNMOAGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_portal_buff_list",
-            |m: &GridFightLevelInfo| { &m.grid_fight_portal_buff_list },
-            |m: &mut GridFightLevelInfo| { &mut m.grid_fight_portal_buff_list },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NMBIMHPBHOO::NMBIMHPBHOO>(
+            "CEPDMICFKNE",
+            |m: &GridFightLevelInfo| { &m.CEPDMICFKNE },
+            |m: &mut GridFightLevelInfo| { &mut m.CEPDMICFKNE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "grid_fight_affix_list",
@@ -98,24 +78,44 @@ impl GridFightLevelInfo {
             |m: &mut GridFightLevelInfo| { &mut m.grid_fight_affix_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DCJKCHFJMBK",
-            |m: &GridFightLevelInfo| { &m.DCJKCHFJMBK },
-            |m: &mut GridFightLevelInfo| { &mut m.DCJKCHFJMBK },
+            "section_id",
+            |m: &GridFightLevelInfo| { &m.section_id },
+            |m: &mut GridFightLevelInfo| { &mut m.section_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "grid_fight_portal_buff_list",
+            |m: &GridFightLevelInfo| { &m.grid_fight_portal_buff_list },
+            |m: &mut GridFightLevelInfo| { &mut m.grid_fight_portal_buff_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightLayerInfo::GridFightLayerInfo>(
+            "grid_fight_layer_info",
+            |m: &GridFightLevelInfo| { &m.grid_fight_layer_info },
+            |m: &mut GridFightLevelInfo| { &mut m.grid_fight_layer_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PBBJALBNKJD",
+            |m: &GridFightLevelInfo| { &m.PBBJALBNKJD },
+            |m: &mut GridFightLevelInfo| { &mut m.PBBJALBNKJD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DHCEMLHNDLM",
+            |m: &GridFightLevelInfo| { &m.DHCEMLHNDLM },
+            |m: &mut GridFightLevelInfo| { &mut m.DHCEMLHNDLM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LCKFAPHANCN::LCKFAPHANCN>(
+            "KEJEEKBNIHM",
+            |m: &GridFightLevelInfo| { &m.KEJEEKBNIHM },
+            |m: &mut GridFightLevelInfo| { &mut m.KEJEEKBNIHM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CPJCOBCMNHK",
+            |m: &GridFightLevelInfo| { &m.CPJCOBCMNHK },
+            |m: &mut GridFightLevelInfo| { &mut m.CPJCOBCMNHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightBossInfo::GridFightBossInfo>(
             "boss_info",
             |m: &GridFightLevelInfo| { &m.boss_info },
             |m: &mut GridFightLevelInfo| { &mut m.boss_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MOHOFMEIMMM",
-            |m: &GridFightLevelInfo| { &m.MOHOFMEIMMM },
-            |m: &mut GridFightLevelInfo| { &mut m.MOHOFMEIMMM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IHEKKDGKCHC::IHEKKDGKCHC>(
-            "IMHNBPIODKM",
-            |m: &GridFightLevelInfo| { &m.IMHNBPIODKM },
-            |m: &mut GridFightLevelInfo| { &mut m.IMHNBPIODKM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightLevelInfo>(
             "GridFightLevelInfo",
@@ -135,38 +135,38 @@ impl ::protobuf::Message for GridFightLevelInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.section_id = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CEPDMICFKNE)?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNHIKKPPODK)?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_layer_info)?;
-                },
-                90 => {
-                    self.AMEKCNMOAGB.push(is.read_message()?);
-                },
-                98 => {
-                    self.grid_fight_portal_buff_list.push(is.read_message()?);
-                },
-                10 => {
+                122 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_affix_list)?;
                 },
-                8 => {
+                120 => {
                     self.grid_fight_affix_list.push(is.read_uint32()?);
                 },
-                32 => {
-                    self.DCJKCHFJMBK = is.read_uint32()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.boss_info)?;
-                },
-                104 => {
-                    self.MOHOFMEIMMM = is.read_uint32()?;
+                64 => {
+                    self.section_id = is.read_uint32()?;
                 },
                 74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IMHNBPIODKM)?;
+                    self.grid_fight_portal_buff_list.push(is.read_message()?);
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_layer_info)?;
+                },
+                26 => {
+                    self.PBBJALBNKJD.push(is.read_message()?);
+                },
+                48 => {
+                    self.DHCEMLHNDLM = is.read_uint32()?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KEJEEKBNIHM)?;
+                },
+                112 => {
+                    self.CPJCOBCMNHK = is.read_uint32()?;
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.boss_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -180,37 +180,37 @@ impl ::protobuf::Message for GridFightLevelInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if let Some(v) = self.CEPDMICFKNE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.grid_fight_affix_list);
         if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.section_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.section_id);
         }
-        if let Some(v) = self.KNHIKKPPODK.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.grid_fight_layer_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.AMEKCNMOAGB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.grid_fight_portal_buff_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.grid_fight_affix_list);
-        if self.DCJKCHFJMBK != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DCJKCHFJMBK);
-        }
-        if let Some(v) = self.boss_info.as_ref() {
+        if let Some(v) = self.grid_fight_layer_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.MOHOFMEIMMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.MOHOFMEIMMM);
+        for value in &self.PBBJALBNKJD {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.DHCEMLHNDLM != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.DHCEMLHNDLM);
         }
-        if let Some(v) = self.IMHNBPIODKM.as_ref() {
+        if let Some(v) = self.KEJEEKBNIHM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.CPJCOBCMNHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CPJCOBCMNHK);
+        }
+        if let Some(v) = self.boss_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -220,33 +220,33 @@ impl ::protobuf::Message for GridFightLevelInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.CEPDMICFKNE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        os.write_repeated_packed_uint32(15, &self.grid_fight_affix_list)?;
         if self.section_id != 0 {
-            os.write_uint32(3, self.section_id)?;
+            os.write_uint32(8, self.section_id)?;
         }
-        if let Some(v) = self.KNHIKKPPODK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.grid_fight_layer_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        for v in &self.AMEKCNMOAGB {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
         for v in &self.grid_fight_portal_buff_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        os.write_repeated_packed_uint32(1, &self.grid_fight_affix_list)?;
-        if self.DCJKCHFJMBK != 0 {
-            os.write_uint32(4, self.DCJKCHFJMBK)?;
+        if let Some(v) = self.grid_fight_layer_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.boss_info.as_ref() {
+        for v in &self.PBBJALBNKJD {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        };
+        if self.DHCEMLHNDLM != 0 {
+            os.write_uint32(6, self.DHCEMLHNDLM)?;
+        }
+        if let Some(v) = self.KEJEEKBNIHM.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if self.MOHOFMEIMMM != 0 {
-            os.write_uint32(13, self.MOHOFMEIMMM)?;
+        if self.CPJCOBCMNHK != 0 {
+            os.write_uint32(14, self.CPJCOBCMNHK)?;
         }
-        if let Some(v) = self.IMHNBPIODKM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.boss_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -265,31 +265,31 @@ impl ::protobuf::Message for GridFightLevelInfo {
     }
 
     fn clear(&mut self) {
-        self.section_id = 0;
-        self.KNHIKKPPODK.clear();
-        self.grid_fight_layer_info.clear();
-        self.AMEKCNMOAGB.clear();
-        self.grid_fight_portal_buff_list.clear();
+        self.CEPDMICFKNE.clear();
         self.grid_fight_affix_list.clear();
-        self.DCJKCHFJMBK = 0;
+        self.section_id = 0;
+        self.grid_fight_portal_buff_list.clear();
+        self.grid_fight_layer_info.clear();
+        self.PBBJALBNKJD.clear();
+        self.DHCEMLHNDLM = 0;
+        self.KEJEEKBNIHM.clear();
+        self.CPJCOBCMNHK = 0;
         self.boss_info.clear();
-        self.MOHOFMEIMMM = 0;
-        self.IMHNBPIODKM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightLevelInfo {
         static instance: GridFightLevelInfo = GridFightLevelInfo {
-            section_id: 0,
-            KNHIKKPPODK: ::protobuf::MessageField::none(),
-            grid_fight_layer_info: ::protobuf::MessageField::none(),
-            AMEKCNMOAGB: ::std::vec::Vec::new(),
-            grid_fight_portal_buff_list: ::std::vec::Vec::new(),
+            CEPDMICFKNE: ::protobuf::MessageField::none(),
             grid_fight_affix_list: ::std::vec::Vec::new(),
-            DCJKCHFJMBK: 0,
+            section_id: 0,
+            grid_fight_portal_buff_list: ::std::vec::Vec::new(),
+            grid_fight_layer_info: ::protobuf::MessageField::none(),
+            PBBJALBNKJD: ::std::vec::Vec::new(),
+            DHCEMLHNDLM: 0,
+            KEJEEKBNIHM: ::protobuf::MessageField::none(),
+            CPJCOBCMNHK: 0,
             boss_info: ::protobuf::MessageField::none(),
-            MOHOFMEIMMM: 0,
-            IMHNBPIODKM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -314,21 +314,21 @@ impl ::protobuf::reflect::ProtobufValue for GridFightLevelInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18GridFightLevelInfo.proto\x1a\x11CNHAKDHPKCM.proto\x1a\x17GridFight\
+    \n\x18GridFightLevelInfo.proto\x1a\x11DOOCNPDPFNJ.proto\x1a\x17GridFight\
     BossInfo.proto\x1a!GridFightGamePortalBuffInfo.proto\x1a\x18GridFightLay\
-    erInfo.proto\x1a\x11IHEKKDGKCHC.proto\x1a\x11PNDJKLOKMFK.proto\"\x8f\x04\
-    \n\x12GridFightLevelInfo\x12\x1d\n\nsection_id\x18\x03\x20\x01(\rR\tsect\
-    ionId\x12.\n\x0bKNHIKKPPODK\x18\x07\x20\x01(\x0b2\x0c.CNHAKDHPKCMR\x0bKN\
-    HIKKPPODK\x12F\n\x15grid_fight_layer_info\x18\x08\x20\x01(\x0b2\x13.Grid\
-    FightLayerInfoR\x12gridFightLayerInfo\x12.\n\x0bAMEKCNMOAGB\x18\x0b\x20\
-    \x03(\x0b2\x0c.PNDJKLOKMFKR\x0bAMEKCNMOAGB\x12Z\n\x1bgrid_fight_portal_b\
-    uff_list\x18\x0c\x20\x03(\x0b2\x1c.GridFightGamePortalBuffInfoR\x17gridF\
-    ightPortalBuffList\x121\n\x15grid_fight_affix_list\x18\x01\x20\x03(\rR\
-    \x12gridFightAffixList\x12\x20\n\x0bDCJKCHFJMBK\x18\x04\x20\x01(\rR\x0bD\
-    CJKCHFJMBK\x12/\n\tboss_info\x18\x05\x20\x01(\x0b2\x12.GridFightBossInfo\
-    R\x08bossInfo\x12\x20\n\x0bMOHOFMEIMMM\x18\r\x20\x01(\rR\x0bMOHOFMEIMMM\
-    \x12.\n\x0bIMHNBPIODKM\x18\t\x20\x01(\x0b2\x0c.IHEKKDGKCHCR\x0bIMHNBPIOD\
-    KMb\x06proto3\
+    erInfo.proto\x1a\x11LCKFAPHANCN.proto\x1a\x11NMBIMHPBHOO.proto\"\x8f\x04\
+    \n\x12GridFightLevelInfo\x12.\n\x0bCEPDMICFKNE\x18\r\x20\x01(\x0b2\x0c.N\
+    MBIMHPBHOOR\x0bCEPDMICFKNE\x121\n\x15grid_fight_affix_list\x18\x0f\x20\
+    \x03(\rR\x12gridFightAffixList\x12\x1d\n\nsection_id\x18\x08\x20\x01(\rR\
+    \tsectionId\x12Z\n\x1bgrid_fight_portal_buff_list\x18\t\x20\x03(\x0b2\
+    \x1c.GridFightGamePortalBuffInfoR\x17gridFightPortalBuffList\x12F\n\x15g\
+    rid_fight_layer_info\x18\n\x20\x01(\x0b2\x13.GridFightLayerInfoR\x12grid\
+    FightLayerInfo\x12.\n\x0bPBBJALBNKJD\x18\x03\x20\x03(\x0b2\x0c.DOOCNPDPF\
+    NJR\x0bPBBJALBNKJD\x12\x20\n\x0bDHCEMLHNDLM\x18\x06\x20\x01(\rR\x0bDHCEM\
+    LHNDLM\x12.\n\x0bKEJEEKBNIHM\x18\x05\x20\x01(\x0b2\x0c.LCKFAPHANCNR\x0bK\
+    EJEEKBNIHM\x12\x20\n\x0bCPJCOBCMNHK\x18\x0e\x20\x01(\rR\x0bCPJCOBCMNHK\
+    \x12/\n\tboss_info\x18\x07\x20\x01(\x0b2\x12.GridFightBossInfoR\x08bossI\
+    nfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -346,12 +346,12 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(6);
-            deps.push(super::CNHAKDHPKCM::file_descriptor().clone());
+            deps.push(super::DOOCNPDPFNJ::file_descriptor().clone());
             deps.push(super::GridFightBossInfo::file_descriptor().clone());
             deps.push(super::GridFightGamePortalBuffInfo::file_descriptor().clone());
             deps.push(super::GridFightLayerInfo::file_descriptor().clone());
-            deps.push(super::IHEKKDGKCHC::file_descriptor().clone());
-            deps.push(super::PNDJKLOKMFK::file_descriptor().clone());
+            deps.push(super::LCKFAPHANCN::file_descriptor().clone());
+            deps.push(super::NMBIMHPBHOO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightLevelInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

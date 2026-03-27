@@ -86,13 +86,13 @@ impl ::protobuf::Message for MarkAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.is_marked = is.read_bool()?;
                 },
-                8 => {
+                64 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                104 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MarkAvatarScRsp {
             my_size += 1 + 1;
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.avatar_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MarkAvatarScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_marked != false {
-            os.write_bool(4, self.is_marked)?;
+            os.write_bool(5, self.is_marked)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(1, self.avatar_id)?;
+            os.write_uint32(8, self.avatar_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MarkAvatarScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15MarkAvatarScRsp.proto\"e\n\x0fMarkAvatarScRsp\x12\x1b\n\tis_marked\
-    \x18\x04\x20\x01(\x08R\x08isMarked\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\
-    \rR\x08avatarId\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06pr\
-    oto3\
+    \x18\x05\x20\x01(\x08R\x08isMarked\x12\x1b\n\tavatar_id\x18\x08\x20\x01(\
+    \rR\x08avatarId\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

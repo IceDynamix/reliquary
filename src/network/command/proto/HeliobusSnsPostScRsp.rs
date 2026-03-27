@@ -30,8 +30,8 @@ pub struct HeliobusSnsPostScRsp {
     // message fields
     // @@protoc_insertion_point(field:HeliobusSnsPostScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:HeliobusSnsPostScRsp.FIODGIOPHEM)
-    pub FIODGIOPHEM: ::protobuf::MessageField<super::EGIKLFDNADM::EGIKLFDNADM>,
+    // @@protoc_insertion_point(field:HeliobusSnsPostScRsp.AKEIHHBLJNJ)
+    pub AKEIHHBLJNJ: ::protobuf::MessageField<super::OEMGFNOAMAN::OEMGFNOAMAN>,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusSnsPostScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl HeliobusSnsPostScRsp {
             |m: &HeliobusSnsPostScRsp| { &m.retcode },
             |m: &mut HeliobusSnsPostScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EGIKLFDNADM::EGIKLFDNADM>(
-            "FIODGIOPHEM",
-            |m: &HeliobusSnsPostScRsp| { &m.FIODGIOPHEM },
-            |m: &mut HeliobusSnsPostScRsp| { &mut m.FIODGIOPHEM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OEMGFNOAMAN::OEMGFNOAMAN>(
+            "AKEIHHBLJNJ",
+            |m: &HeliobusSnsPostScRsp| { &m.AKEIHHBLJNJ },
+            |m: &mut HeliobusSnsPostScRsp| { &mut m.AKEIHHBLJNJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusSnsPostScRsp>(
             "HeliobusSnsPostScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for HeliobusSnsPostScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FIODGIOPHEM)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKEIHHBLJNJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for HeliobusSnsPostScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        if let Some(v) = self.FIODGIOPHEM.as_ref() {
+        if let Some(v) = self.AKEIHHBLJNJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for HeliobusSnsPostScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
-        if let Some(v) = self.FIODGIOPHEM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.AKEIHHBLJNJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for HeliobusSnsPostScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.FIODGIOPHEM.clear();
+        self.AKEIHHBLJNJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusSnsPostScRsp {
         static instance: HeliobusSnsPostScRsp = HeliobusSnsPostScRsp {
             retcode: 0,
-            FIODGIOPHEM: ::protobuf::MessageField::none(),
+            AKEIHHBLJNJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusSnsPostScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aHeliobusSnsPostScRsp.proto\x1a\x11EGIKLFDNADM.proto\"`\n\x14Heliob\
-    usSnsPostScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\
-    \n\x0bFIODGIOPHEM\x18\x04\x20\x01(\x0b2\x0c.EGIKLFDNADMR\x0bFIODGIOPHEMb\
+    \n\x1aHeliobusSnsPostScRsp.proto\x1a\x11OEMGFNOAMAN.proto\"`\n\x14Heliob\
+    usSnsPostScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12.\
+    \n\x0bAKEIHHBLJNJ\x18\x06\x20\x01(\x0b2\x0c.OEMGFNOAMANR\x0bAKEIHHBLJNJb\
     \x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EGIKLFDNADM::file_descriptor().clone());
+            deps.push(super::OEMGFNOAMAN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HeliobusSnsPostScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

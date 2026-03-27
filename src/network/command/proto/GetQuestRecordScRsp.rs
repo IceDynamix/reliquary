@@ -30,8 +30,8 @@ pub struct GetQuestRecordScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetQuestRecordScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetQuestRecordScRsp.GIFIJIIJAMM)
-    pub GIFIJIIJAMM: ::std::vec::Vec<super::HAJEIFILMCD::HAJEIFILMCD>,
+    // @@protoc_insertion_point(field:GetQuestRecordScRsp.DHLIOOJJHAF)
+    pub DHLIOOJJHAF: ::std::vec::Vec<super::HGNNBLDOCFE::HGNNBLDOCFE>,
     // special fields
     // @@protoc_insertion_point(special_field:GetQuestRecordScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GetQuestRecordScRsp {
             |m: &mut GetQuestRecordScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GIFIJIIJAMM",
-            |m: &GetQuestRecordScRsp| { &m.GIFIJIIJAMM },
-            |m: &mut GetQuestRecordScRsp| { &mut m.GIFIJIIJAMM },
+            "DHLIOOJJHAF",
+            |m: &GetQuestRecordScRsp| { &m.DHLIOOJJHAF },
+            |m: &mut GetQuestRecordScRsp| { &mut m.DHLIOOJJHAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetQuestRecordScRsp>(
             "GetQuestRecordScRsp",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for GetQuestRecordScRsp {
                 80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
-                    self.GIFIJIIJAMM.push(is.read_message()?);
+                66 => {
+                    self.DHLIOOJJHAF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for GetQuestRecordScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
-        for value in &self.GIFIJIIJAMM {
+        for value in &self.DHLIOOJJHAF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -113,8 +113,8 @@ impl ::protobuf::Message for GetQuestRecordScRsp {
         if self.retcode != 0 {
             os.write_uint32(10, self.retcode)?;
         }
-        for v in &self.GIFIJIIJAMM {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.DHLIOOJJHAF {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetQuestRecordScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.GIFIJIIJAMM.clear();
+        self.DHLIOOJJHAF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetQuestRecordScRsp {
         static instance: GetQuestRecordScRsp = GetQuestRecordScRsp {
             retcode: 0,
-            GIFIJIIJAMM: ::std::vec::Vec::new(),
+            DHLIOOJJHAF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetQuestRecordScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetQuestRecordScRsp.proto\x1a\x11HAJEIFILMCD.proto\"_\n\x13GetQues\
+    \n\x19GetQuestRecordScRsp.proto\x1a\x11HGNNBLDOCFE.proto\"_\n\x13GetQues\
     tRecordScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\
-    \x0bGIFIJIIJAMM\x18\r\x20\x03(\x0b2\x0c.HAJEIFILMCDR\x0bGIFIJIIJAMMb\x06\
-    proto3\
+    \x0bDHLIOOJJHAF\x18\x08\x20\x03(\x0b2\x0c.HGNNBLDOCFER\x0bDHLIOOJJHAFb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HAJEIFILMCD::file_descriptor().clone());
+            deps.push(super::HGNNBLDOCFE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetQuestRecordScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

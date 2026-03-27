@@ -82,7 +82,7 @@ impl ::protobuf::Message for SwordTrainingLearnSkillScRsp {
                 64 => {
                     self.skill_id = is.read_uint32()?;
                 },
-                24 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for SwordTrainingLearnSkillScRsp {
             my_size += ::protobuf::rt::uint32_size(8, self.skill_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for SwordTrainingLearnSkillScRsp {
             os.write_uint32(8, self.skill_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingLearnSkillScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SwordTrainingLearnSkillScRsp.proto\"S\n\x1cSwordTrainingLearnSkillSc\
     Rsp\x12\x19\n\x08skill_id\x18\x08\x20\x01(\rR\x07skillId\x12\x18\n\x07re\
-    tcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
+    tcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

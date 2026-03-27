@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Waypoint {
     // message fields
+    // @@protoc_insertion_point(field:Waypoint.FGMAPNBLLNO)
+    pub FGMAPNBLLNO: u32,
     // @@protoc_insertion_point(field:Waypoint.is_new)
     pub is_new: bool,
-    // @@protoc_insertion_point(field:Waypoint.KLLBEGDKNJJ)
-    pub KLLBEGDKNJJ: u32,
     // @@protoc_insertion_point(field:Waypoint.id)
     pub id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl Waypoint {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FGMAPNBLLNO",
+            |m: &Waypoint| { &m.FGMAPNBLLNO },
+            |m: &mut Waypoint| { &mut m.FGMAPNBLLNO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_new",
             |m: &Waypoint| { &m.is_new },
             |m: &mut Waypoint| { &mut m.is_new },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KLLBEGDKNJJ",
-            |m: &Waypoint| { &m.KLLBEGDKNJJ },
-            |m: &mut Waypoint| { &mut m.KLLBEGDKNJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for Waypoint {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.is_new = is.read_bool()?;
+                80 => {
+                    self.FGMAPNBLLNO = is.read_uint32()?;
                 },
-                112 => {
-                    self.KLLBEGDKNJJ = is.read_uint32()?;
+                96 => {
+                    self.is_new = is.read_bool()?;
                 },
                 40 => {
                     self.id = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for Waypoint {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FGMAPNBLLNO != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FGMAPNBLLNO);
+        }
         if self.is_new != false {
             my_size += 1 + 1;
-        }
-        if self.KLLBEGDKNJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KLLBEGDKNJJ);
         }
         if self.id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.id);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for Waypoint {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_new != false {
-            os.write_bool(13, self.is_new)?;
+        if self.FGMAPNBLLNO != 0 {
+            os.write_uint32(10, self.FGMAPNBLLNO)?;
         }
-        if self.KLLBEGDKNJJ != 0 {
-            os.write_uint32(14, self.KLLBEGDKNJJ)?;
+        if self.is_new != false {
+            os.write_bool(12, self.is_new)?;
         }
         if self.id != 0 {
             os.write_uint32(5, self.id)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for Waypoint {
     }
 
     fn clear(&mut self) {
+        self.FGMAPNBLLNO = 0;
         self.is_new = false;
-        self.KLLBEGDKNJJ = 0;
         self.id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Waypoint {
         static instance: Waypoint = Waypoint {
+            FGMAPNBLLNO: 0,
             is_new: false,
-            KLLBEGDKNJJ: 0,
             id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for Waypoint {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eWaypoint.proto\"S\n\x08Waypoint\x12\x15\n\x06is_new\x18\r\x20\x01(\
-    \x08R\x05isNew\x12\x20\n\x0bKLLBEGDKNJJ\x18\x0e\x20\x01(\rR\x0bKLLBEGDKN\
-    JJ\x12\x0e\n\x02id\x18\x05\x20\x01(\rR\x02idb\x06proto3\
+    \n\x0eWaypoint.proto\"S\n\x08Waypoint\x12\x20\n\x0bFGMAPNBLLNO\x18\n\x20\
+    \x01(\rR\x0bFGMAPNBLLNO\x12\x15\n\x06is_new\x18\x0c\x20\x01(\x08R\x05isN\
+    ew\x12\x0e\n\x02id\x18\x05\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

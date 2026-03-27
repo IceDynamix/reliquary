@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GridFightEquipDressSource)
 pub enum GridFightEquipDressSource {
-    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.MLBFKHLJNDB_CLOKNEKIFEH)
-    MLBFKHLJNDB_CLOKNEKIFEH = 0,
-    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.MLBFKHLJNDB_JMGLHCNGNID)
-    MLBFKHLJNDB_JMGLHCNGNID = 1,
-    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.MLBFKHLJNDB_DGOMBOLKJII)
-    MLBFKHLJNDB_DGOMBOLKJII = 2,
+    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.GridFightEquipDressSource_NIHLOMAFLFE)
+    GridFightEquipDressSource_NIHLOMAFLFE = 0,
+    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.GridFightEquipDressSource_LKNGAHGHILO)
+    GridFightEquipDressSource_LKNGAHGHILO = 1,
+    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.GridFightEquipDressSource_LNNIIKPOJIG)
+    GridFightEquipDressSource_LNNIIKPOJIG = 2,
 }
 
 impl ::protobuf::Enum for GridFightEquipDressSource {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for GridFightEquipDressSource {
 
     fn from_i32(value: i32) -> ::std::option::Option<GridFightEquipDressSource> {
         match value {
-            0 => ::std::option::Option::Some(GridFightEquipDressSource::MLBFKHLJNDB_CLOKNEKIFEH),
-            1 => ::std::option::Option::Some(GridFightEquipDressSource::MLBFKHLJNDB_JMGLHCNGNID),
-            2 => ::std::option::Option::Some(GridFightEquipDressSource::MLBFKHLJNDB_DGOMBOLKJII),
+            0 => ::std::option::Option::Some(GridFightEquipDressSource::GridFightEquipDressSource_NIHLOMAFLFE),
+            1 => ::std::option::Option::Some(GridFightEquipDressSource::GridFightEquipDressSource_LKNGAHGHILO),
+            2 => ::std::option::Option::Some(GridFightEquipDressSource::GridFightEquipDressSource_LNNIIKPOJIG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GridFightEquipDressSource> {
         match str {
-            "MLBFKHLJNDB_CLOKNEKIFEH" => ::std::option::Option::Some(GridFightEquipDressSource::MLBFKHLJNDB_CLOKNEKIFEH),
-            "MLBFKHLJNDB_JMGLHCNGNID" => ::std::option::Option::Some(GridFightEquipDressSource::MLBFKHLJNDB_JMGLHCNGNID),
-            "MLBFKHLJNDB_DGOMBOLKJII" => ::std::option::Option::Some(GridFightEquipDressSource::MLBFKHLJNDB_DGOMBOLKJII),
+            "GridFightEquipDressSource_NIHLOMAFLFE" => ::std::option::Option::Some(GridFightEquipDressSource::GridFightEquipDressSource_NIHLOMAFLFE),
+            "GridFightEquipDressSource_LKNGAHGHILO" => ::std::option::Option::Some(GridFightEquipDressSource::GridFightEquipDressSource_LKNGAHGHILO),
+            "GridFightEquipDressSource_LNNIIKPOJIG" => ::std::option::Option::Some(GridFightEquipDressSource::GridFightEquipDressSource_LNNIIKPOJIG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GridFightEquipDressSource] = &[
-        GridFightEquipDressSource::MLBFKHLJNDB_CLOKNEKIFEH,
-        GridFightEquipDressSource::MLBFKHLJNDB_JMGLHCNGNID,
-        GridFightEquipDressSource::MLBFKHLJNDB_DGOMBOLKJII,
+        GridFightEquipDressSource::GridFightEquipDressSource_NIHLOMAFLFE,
+        GridFightEquipDressSource::GridFightEquipDressSource_LKNGAHGHILO,
+        GridFightEquipDressSource::GridFightEquipDressSource_LNNIIKPOJIG,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for GridFightEquipDressSource {
 
 impl ::std::default::Default for GridFightEquipDressSource {
     fn default() -> Self {
-        GridFightEquipDressSource::MLBFKHLJNDB_CLOKNEKIFEH
+        GridFightEquipDressSource::GridFightEquipDressSource_NIHLOMAFLFE
     }
 }
 
@@ -92,9 +92,10 @@ impl GridFightEquipDressSource {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGridFightEquipDressSource.proto*r\n\x19GridFightEquipDressSource\
-    \x12\x1b\n\x17MLBFKHLJNDB_CLOKNEKIFEH\x10\0\x12\x1b\n\x17MLBFKHLJNDB_JMG\
-    LHCNGNID\x10\x01\x12\x1b\n\x17MLBFKHLJNDB_DGOMBOLKJII\x10\x02b\x06proto3\
+    \n\x1fGridFightEquipDressSource.proto*\x9c\x01\n\x19GridFightEquipDressS\
+    ource\x12)\n%GridFightEquipDressSource_NIHLOMAFLFE\x10\0\x12)\n%GridFigh\
+    tEquipDressSource_LKNGAHGHILO\x10\x01\x12)\n%GridFightEquipDressSource_L\
+    NNIIKPOJIG\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

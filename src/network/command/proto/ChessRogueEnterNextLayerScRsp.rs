@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueEnterNextLayerScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueEnterNextLayerScRsp.EIKBKHPCOHB)
-    pub EIKBKHPCOHB: ::protobuf::MessageField<super::LEKCHGLJAEJ::LEKCHGLJAEJ>,
     // @@protoc_insertion_point(field:ChessRogueEnterNextLayerScRsp.rogue_info)
-    pub rogue_info: ::protobuf::MessageField<super::BGJEHOLJLFI::BGJEHOLJLFI>,
+    pub rogue_info: ::protobuf::MessageField<super::CHEDHLEEGNI::CHEDHLEEGNI>,
+    // @@protoc_insertion_point(field:ChessRogueEnterNextLayerScRsp.OJNPBONFFPM)
+    pub OJNPBONFFPM: ::protobuf::MessageField<super::GJHDCOHHDOP::GJHDCOHHDOP>,
     // @@protoc_insertion_point(field:ChessRogueEnterNextLayerScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:ChessRogueEnterNextLayerScRsp.stage_info)
-    pub stage_info: ::protobuf::MessageField<super::GCLPLFACEIC::GCLPLFACEIC>,
+    pub stage_info: ::protobuf::MessageField<super::CJOOMOBNBPB::CJOOMOBNBPB>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueEnterNextLayerScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,22 +55,22 @@ impl ChessRogueEnterNextLayerScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LEKCHGLJAEJ::LEKCHGLJAEJ>(
-            "EIKBKHPCOHB",
-            |m: &ChessRogueEnterNextLayerScRsp| { &m.EIKBKHPCOHB },
-            |m: &mut ChessRogueEnterNextLayerScRsp| { &mut m.EIKBKHPCOHB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BGJEHOLJLFI::BGJEHOLJLFI>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHEDHLEEGNI::CHEDHLEEGNI>(
             "rogue_info",
             |m: &ChessRogueEnterNextLayerScRsp| { &m.rogue_info },
             |m: &mut ChessRogueEnterNextLayerScRsp| { &mut m.rogue_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GJHDCOHHDOP::GJHDCOHHDOP>(
+            "OJNPBONFFPM",
+            |m: &ChessRogueEnterNextLayerScRsp| { &m.OJNPBONFFPM },
+            |m: &mut ChessRogueEnterNextLayerScRsp| { &mut m.OJNPBONFFPM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChessRogueEnterNextLayerScRsp| { &m.retcode },
             |m: &mut ChessRogueEnterNextLayerScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCLPLFACEIC::GCLPLFACEIC>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJOOMOBNBPB::CJOOMOBNBPB>(
             "stage_info",
             |m: &ChessRogueEnterNextLayerScRsp| { &m.stage_info },
             |m: &mut ChessRogueEnterNextLayerScRsp| { &mut m.stage_info },
@@ -93,16 +93,16 @@ impl ::protobuf::Message for ChessRogueEnterNextLayerScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EIKBKHPCOHB)?;
-                },
-                18 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
                 },
-                96 => {
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OJNPBONFFPM)?;
+                },
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
                 tag => {
@@ -117,16 +117,16 @@ impl ::protobuf::Message for ChessRogueEnterNextLayerScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EIKBKHPCOHB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.rogue_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if let Some(v) = self.OJNPBONFFPM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
@@ -138,17 +138,17 @@ impl ::protobuf::Message for ChessRogueEnterNextLayerScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EIKBKHPCOHB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
         if let Some(v) = self.rogue_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.OJNPBONFFPM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,8 +167,8 @@ impl ::protobuf::Message for ChessRogueEnterNextLayerScRsp {
     }
 
     fn clear(&mut self) {
-        self.EIKBKHPCOHB.clear();
         self.rogue_info.clear();
+        self.OJNPBONFFPM.clear();
         self.retcode = 0;
         self.stage_info.clear();
         self.special_fields.clear();
@@ -176,8 +176,8 @@ impl ::protobuf::Message for ChessRogueEnterNextLayerScRsp {
 
     fn default_instance() -> &'static ChessRogueEnterNextLayerScRsp {
         static instance: ChessRogueEnterNextLayerScRsp = ChessRogueEnterNextLayerScRsp {
-            EIKBKHPCOHB: ::protobuf::MessageField::none(),
             rogue_info: ::protobuf::MessageField::none(),
+            OJNPBONFFPM: ::protobuf::MessageField::none(),
             retcode: 0,
             stage_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -204,12 +204,12 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueEnterNextLayerScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#ChessRogueEnterNextLayerScRsp.proto\x1a\x11BGJEHOLJLFI.proto\x1a\x11G\
-    CLPLFACEIC.proto\x1a\x11LEKCHGLJAEJ.proto\"\xc3\x01\n\x1dChessRogueEnter\
-    NextLayerScRsp\x12.\n\x0bEIKBKHPCOHB\x18\x05\x20\x01(\x0b2\x0c.LEKCHGLJA\
-    EJR\x0bEIKBKHPCOHB\x12+\n\nrogue_info\x18\x02\x20\x01(\x0b2\x0c.BGJEHOLJ\
-    LFIR\trogueInfo\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12+\
-    \n\nstage_info\x18\x08\x20\x01(\x0b2\x0c.GCLPLFACEICR\tstageInfob\x06pro\
+    \n#ChessRogueEnterNextLayerScRsp.proto\x1a\x11CHEDHLEEGNI.proto\x1a\x11C\
+    JOOMOBNBPB.proto\x1a\x11GJHDCOHHDOP.proto\"\xc3\x01\n\x1dChessRogueEnter\
+    NextLayerScRsp\x12+\n\nrogue_info\x18\x08\x20\x01(\x0b2\x0c.CHEDHLEEGNIR\
+    \trogueInfo\x12.\n\x0bOJNPBONFFPM\x18\x0e\x20\x01(\x0b2\x0c.GJHDCOHHDOPR\
+    \x0bOJNPBONFFPM\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12+\
+    \n\nstage_info\x18\x0b\x20\x01(\x0b2\x0c.CJOOMOBNBPBR\tstageInfob\x06pro\
     to3\
 ";
 
@@ -228,9 +228,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::BGJEHOLJLFI::file_descriptor().clone());
-            deps.push(super::GCLPLFACEIC::file_descriptor().clone());
-            deps.push(super::LEKCHGLJAEJ::file_descriptor().clone());
+            deps.push(super::CHEDHLEEGNI::file_descriptor().clone());
+            deps.push(super::CJOOMOBNBPB::file_descriptor().clone());
+            deps.push(super::GJHDCOHHDOP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueEnterNextLayerScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

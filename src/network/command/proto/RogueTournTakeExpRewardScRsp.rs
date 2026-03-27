@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournTakeExpRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.KLGAPHAJNIA)
-    pub KLGAPHAJNIA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.exp)
-    pub exp: u32,
+    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.HFIOJMEIOGN)
+    pub HFIOJMEIOGN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:RogueTournTakeExpRewardScRsp.exp)
+    pub exp: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournTakeExpRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl RogueTournTakeExpRewardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KLGAPHAJNIA",
-            |m: &RogueTournTakeExpRewardScRsp| { &m.KLGAPHAJNIA },
-            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.KLGAPHAJNIA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournTakeExpRewardScRsp| { &m.retcode },
             |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "exp",
-            |m: &RogueTournTakeExpRewardScRsp| { &m.exp },
-            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.exp },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HFIOJMEIOGN",
+            |m: &RogueTournTakeExpRewardScRsp| { &m.HFIOJMEIOGN },
+            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.HFIOJMEIOGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &RogueTournTakeExpRewardScRsp| { &m.reward },
             |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "exp",
+            |m: &RogueTournTakeExpRewardScRsp| { &m.exp },
+            |m: &mut RogueTournTakeExpRewardScRsp| { &mut m.exp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournTakeExpRewardScRsp>(
             "RogueTournTakeExpRewardScRsp",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for RogueTournTakeExpRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KLGAPHAJNIA)?;
-                },
-                48 => {
-                    self.KLGAPHAJNIA.push(is.read_uint32()?);
-                },
-                112 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                56 => {
-                    self.exp = is.read_uint32()?;
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HFIOJMEIOGN)?;
                 },
-                122 => {
+                72 => {
+                    self.HFIOJMEIOGN.push(is.read_uint32()?);
+                },
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                120 => {
+                    self.exp = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,16 +120,16 @@ impl ::protobuf::Message for RogueTournTakeExpRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.KLGAPHAJNIA);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.exp);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.HFIOJMEIOGN);
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.exp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,15 +137,15 @@ impl ::protobuf::Message for RogueTournTakeExpRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.KLGAPHAJNIA)?;
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        os.write_repeated_packed_uint32(9, &self.HFIOJMEIOGN)?;
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.exp != 0 {
-            os.write_uint32(7, self.exp)?;
-        }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            os.write_uint32(15, self.exp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for RogueTournTakeExpRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.KLGAPHAJNIA.clear();
         self.retcode = 0;
-        self.exp = 0;
+        self.HFIOJMEIOGN.clear();
         self.reward.clear();
+        self.exp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournTakeExpRewardScRsp {
         static instance: RogueTournTakeExpRewardScRsp = RogueTournTakeExpRewardScRsp {
-            KLGAPHAJNIA: ::std::vec::Vec::new(),
             retcode: 0,
-            exp: 0,
+            HFIOJMEIOGN: ::std::vec::Vec::new(),
             reward: ::protobuf::MessageField::none(),
+            exp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournTakeExpRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueTournTakeExpRewardScRsp.proto\x1a\x0eItemList.proto\"\x8f\x01\n\
-    \x1cRogueTournTakeExpRewardScRsp\x12\x20\n\x0bKLGAPHAJNIA\x18\x06\x20\
-    \x03(\rR\x0bKLGAPHAJNIA\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retc\
-    ode\x12\x10\n\x03exp\x18\x07\x20\x01(\rR\x03exp\x12!\n\x06reward\x18\x0f\
-    \x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    \x1cRogueTournTakeExpRewardScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\r\
+    R\x07retcode\x12\x20\n\x0bHFIOJMEIOGN\x18\t\x20\x03(\rR\x0bHFIOJMEIOGN\
+    \x12!\n\x06reward\x18\x06\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x10\n\
+    \x03exp\x18\x0f\x20\x01(\rR\x03expb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

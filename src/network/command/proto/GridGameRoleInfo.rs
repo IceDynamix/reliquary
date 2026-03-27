@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridGameRoleInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridGameRoleInfo.convert_property_to_fixpoint)
-    pub convert_property_to_fixpoint: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:GridGameRoleInfo.grid_fight_value_init_component)
     pub grid_fight_value_init_component: ::std::collections::HashMap<::std::string::String, u32>,
-    // @@protoc_insertion_point(field:GridGameRoleInfo.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:GridGameRoleInfo.unique_id)
     pub unique_id: u32,
-    // @@protoc_insertion_point(field:GridGameRoleInfo.role_star)
-    pub role_star: u32,
+    // @@protoc_insertion_point(field:GridGameRoleInfo.id)
+    pub id: u32,
     // @@protoc_insertion_point(field:GridGameRoleInfo.pos)
     pub pos: u32,
     // @@protoc_insertion_point(field:GridGameRoleInfo.update_equips_component)
     pub update_equips_component: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GridGameRoleInfo.convert_property_to_fixpoint)
+    pub convert_property_to_fixpoint: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:GridGameRoleInfo.role_star)
+    pub role_star: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridGameRoleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,19 +62,9 @@ impl GridGameRoleInfo {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "convert_property_to_fixpoint",
-            |m: &GridGameRoleInfo| { &m.convert_property_to_fixpoint },
-            |m: &mut GridGameRoleInfo| { &mut m.convert_property_to_fixpoint },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
             "grid_fight_value_init_component",
             |m: &GridGameRoleInfo| { &m.grid_fight_value_init_component },
             |m: &mut GridGameRoleInfo| { &mut m.grid_fight_value_init_component },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &GridGameRoleInfo| { &m.id },
-            |m: &mut GridGameRoleInfo| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
@@ -82,9 +72,9 @@ impl GridGameRoleInfo {
             |m: &mut GridGameRoleInfo| { &mut m.unique_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "role_star",
-            |m: &GridGameRoleInfo| { &m.role_star },
-            |m: &mut GridGameRoleInfo| { &mut m.role_star },
+            "id",
+            |m: &GridGameRoleInfo| { &m.id },
+            |m: &mut GridGameRoleInfo| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "pos",
@@ -95,6 +85,16 @@ impl GridGameRoleInfo {
             "update_equips_component",
             |m: &GridGameRoleInfo| { &m.update_equips_component },
             |m: &mut GridGameRoleInfo| { &mut m.update_equips_component },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "convert_property_to_fixpoint",
+            |m: &GridGameRoleInfo| { &m.convert_property_to_fixpoint },
+            |m: &mut GridGameRoleInfo| { &mut m.convert_property_to_fixpoint },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "role_star",
+            |m: &GridGameRoleInfo| { &m.role_star },
+            |m: &mut GridGameRoleInfo| { &mut m.role_star },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridGameRoleInfo>(
             "GridGameRoleInfo",
@@ -114,22 +114,7 @@ impl ::protobuf::Message for GridGameRoleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            16 => value = is.read_uint32()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.convert_property_to_fixpoint.insert(key, value);
-                },
-                10 => {
+                106 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -145,22 +130,37 @@ impl ::protobuf::Message for GridGameRoleInfo {
                     self.grid_fight_value_init_component.insert(key, value);
                 },
                 72 => {
-                    self.id = is.read_uint32()?;
-                },
-                120 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.role_star = is.read_uint32()?;
+                    self.id = is.read_uint32()?;
                 },
-                56 => {
+                120 => {
                     self.pos = is.read_uint32()?;
                 },
-                34 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.update_equips_component)?;
                 },
-                32 => {
+                24 => {
                     self.update_equips_component.push(is.read_uint32()?);
+                },
+                82 => {
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            16 => value = is.read_uint32()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.convert_property_to_fixpoint.insert(key, value);
+                },
+                112 => {
+                    self.role_star = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -174,68 +174,68 @@ impl ::protobuf::Message for GridGameRoleInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.convert_property_to_fixpoint {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
         for (k, v) in &self.grid_fight_value_init_component {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.id);
-        }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.unique_id);
         }
-        if self.role_star != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.role_star);
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
         if self.pos != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.pos);
+            my_size += ::protobuf::rt::uint32_size(15, self.pos);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.update_equips_component);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.update_equips_component);
+        for (k, v) in &self.convert_property_to_fixpoint {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        if self.role_star != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.role_star);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.convert_property_to_fixpoint {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(98)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            os.write_uint32(2, *v)?;
-        };
         for (k, v) in &self.grid_fight_value_init_component {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(10)?; // Tag.
+            os.write_raw_varint32(106)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.id != 0 {
-            os.write_uint32(9, self.id)?;
-        }
         if self.unique_id != 0 {
-            os.write_uint32(15, self.unique_id)?;
+            os.write_uint32(9, self.unique_id)?;
         }
-        if self.role_star != 0 {
-            os.write_uint32(2, self.role_star)?;
+        if self.id != 0 {
+            os.write_uint32(2, self.id)?;
         }
         if self.pos != 0 {
-            os.write_uint32(7, self.pos)?;
+            os.write_uint32(15, self.pos)?;
         }
-        os.write_repeated_packed_uint32(4, &self.update_equips_component)?;
+        os.write_repeated_packed_uint32(3, &self.update_equips_component)?;
+        for (k, v) in &self.convert_property_to_fixpoint {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            os.write_uint32(2, *v)?;
+        };
+        if self.role_star != 0 {
+            os.write_uint32(14, self.role_star)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -253,13 +253,13 @@ impl ::protobuf::Message for GridGameRoleInfo {
     }
 
     fn clear(&mut self) {
-        self.convert_property_to_fixpoint.clear();
         self.grid_fight_value_init_component.clear();
-        self.id = 0;
         self.unique_id = 0;
-        self.role_star = 0;
+        self.id = 0;
         self.pos = 0;
         self.update_equips_component.clear();
+        self.convert_property_to_fixpoint.clear();
+        self.role_star = 0;
         self.special_fields.clear();
     }
 
@@ -287,19 +287,19 @@ impl ::protobuf::reflect::ProtobufValue for GridGameRoleInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16GridGameRoleInfo.proto\"\xb1\x04\n\x10GridGameRoleInfo\x12q\n\x1cc\
-    onvert_property_to_fixpoint\x18\x0c\x20\x03(\x0b20.GridGameRoleInfo.Conv\
-    ertPropertyToFixpointEntryR\x19convertPropertyToFixpoint\x12x\n\x1fgrid_\
-    fight_value_init_component\x18\x01\x20\x03(\x0b22.GridGameRoleInfo.GridF\
-    ightValueInitComponentEntryR\x1bgridFightValueInitComponent\x12\x0e\n\
-    \x02id\x18\t\x20\x01(\rR\x02id\x12\x1b\n\tunique_id\x18\x0f\x20\x01(\rR\
-    \x08uniqueId\x12\x1b\n\trole_star\x18\x02\x20\x01(\rR\x08roleStar\x12\
-    \x10\n\x03pos\x18\x07\x20\x01(\rR\x03pos\x126\n\x17update_equips_compone\
-    nt\x18\x04\x20\x03(\rR\x15updateEquipsComponent\x1aL\n\x1eConvertPropert\
-    yToFixpointEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\
-    \x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1aN\n\x20GridFightValu\
-    eInitComponentEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\
-    \n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \n\x16GridGameRoleInfo.proto\"\xb1\x04\n\x10GridGameRoleInfo\x12x\n\x1fg\
+    rid_fight_value_init_component\x18\r\x20\x03(\x0b22.GridGameRoleInfo.Gri\
+    dFightValueInitComponentEntryR\x1bgridFightValueInitComponent\x12\x1b\n\
+    \tunique_id\x18\t\x20\x01(\rR\x08uniqueId\x12\x0e\n\x02id\x18\x02\x20\
+    \x01(\rR\x02id\x12\x10\n\x03pos\x18\x0f\x20\x01(\rR\x03pos\x126\n\x17upd\
+    ate_equips_component\x18\x03\x20\x03(\rR\x15updateEquipsComponent\x12q\n\
+    \x1cconvert_property_to_fixpoint\x18\n\x20\x03(\x0b20.GridGameRoleInfo.C\
+    onvertPropertyToFixpointEntryR\x19convertPropertyToFixpoint\x12\x1b\n\tr\
+    ole_star\x18\x0e\x20\x01(\rR\x08roleStar\x1aN\n\x20GridFightValueInitCom\
+    ponentEntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05val\
+    ue\x18\x02\x20\x01(\rR\x05value:\x028\x01\x1aL\n\x1eConvertPropertyToFix\
+    pointEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05valu\
+    e\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

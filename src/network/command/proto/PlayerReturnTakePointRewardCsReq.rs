@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerReturnTakePointRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlayerReturnTakePointRewardCsReq.CLIIANPLHIB)
-    pub CLIIANPLHIB: u32,
-    // @@protoc_insertion_point(field:PlayerReturnTakePointRewardCsReq.LHNLPOMOFCG)
-    pub LHNLPOMOFCG: u32,
+    // @@protoc_insertion_point(field:PlayerReturnTakePointRewardCsReq.DPPHGHFBDHE)
+    pub DPPHGHFBDHE: u32,
+    // @@protoc_insertion_point(field:PlayerReturnTakePointRewardCsReq.DMJBGKPHAMM)
+    pub DMJBGKPHAMM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerReturnTakePointRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PlayerReturnTakePointRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CLIIANPLHIB",
-            |m: &PlayerReturnTakePointRewardCsReq| { &m.CLIIANPLHIB },
-            |m: &mut PlayerReturnTakePointRewardCsReq| { &mut m.CLIIANPLHIB },
+            "DPPHGHFBDHE",
+            |m: &PlayerReturnTakePointRewardCsReq| { &m.DPPHGHFBDHE },
+            |m: &mut PlayerReturnTakePointRewardCsReq| { &mut m.DPPHGHFBDHE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHNLPOMOFCG",
-            |m: &PlayerReturnTakePointRewardCsReq| { &m.LHNLPOMOFCG },
-            |m: &mut PlayerReturnTakePointRewardCsReq| { &mut m.LHNLPOMOFCG },
+            "DMJBGKPHAMM",
+            |m: &PlayerReturnTakePointRewardCsReq| { &m.DMJBGKPHAMM },
+            |m: &mut PlayerReturnTakePointRewardCsReq| { &mut m.DMJBGKPHAMM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerReturnTakePointRewardCsReq>(
             "PlayerReturnTakePointRewardCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlayerReturnTakePointRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.CLIIANPLHIB = is.read_uint32()?;
+                24 => {
+                    self.DPPHGHFBDHE = is.read_uint32()?;
                 },
-                48 => {
-                    self.LHNLPOMOFCG = is.read_uint32()?;
+                96 => {
+                    self.DMJBGKPHAMM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlayerReturnTakePointRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CLIIANPLHIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CLIIANPLHIB);
+        if self.DPPHGHFBDHE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DPPHGHFBDHE);
         }
-        if self.LHNLPOMOFCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LHNLPOMOFCG);
+        if self.DMJBGKPHAMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.DMJBGKPHAMM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlayerReturnTakePointRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CLIIANPLHIB != 0 {
-            os.write_uint32(9, self.CLIIANPLHIB)?;
+        if self.DPPHGHFBDHE != 0 {
+            os.write_uint32(3, self.DPPHGHFBDHE)?;
         }
-        if self.LHNLPOMOFCG != 0 {
-            os.write_uint32(6, self.LHNLPOMOFCG)?;
+        if self.DMJBGKPHAMM != 0 {
+            os.write_uint32(12, self.DMJBGKPHAMM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PlayerReturnTakePointRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.CLIIANPLHIB = 0;
-        self.LHNLPOMOFCG = 0;
+        self.DPPHGHFBDHE = 0;
+        self.DMJBGKPHAMM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnTakePointRewardCsReq {
         static instance: PlayerReturnTakePointRewardCsReq = PlayerReturnTakePointRewardCsReq {
-            CLIIANPLHIB: 0,
-            LHNLPOMOFCG: 0,
+            DPPHGHFBDHE: 0,
+            DMJBGKPHAMM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnTakePointRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&PlayerReturnTakePointRewardCsReq.proto\"f\n\x20PlayerReturnTakePointR\
-    ewardCsReq\x12\x20\n\x0bCLIIANPLHIB\x18\t\x20\x01(\rR\x0bCLIIANPLHIB\x12\
-    \x20\n\x0bLHNLPOMOFCG\x18\x06\x20\x01(\rR\x0bLHNLPOMOFCGb\x06proto3\
+    ewardCsReq\x12\x20\n\x0bDPPHGHFBDHE\x18\x03\x20\x01(\rR\x0bDPPHGHFBDHE\
+    \x12\x20\n\x0bDMJBGKPHAMM\x18\x0c\x20\x01(\rR\x0bDMJBGKPHAMMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

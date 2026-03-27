@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:HeartDialStepType)
 pub enum HeartDialStepType {
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_CNJDNHCJIHJ)
-    HeartDialStepType_CNJDNHCJIHJ = 0,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_EBLFNEAHMEC)
-    HeartDialStepType_EBLFNEAHMEC = 1,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_IPDFMNINJHN)
-    HeartDialStepType_IPDFMNINJHN = 2,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_OEIGCGBJEOL)
-    HeartDialStepType_OEIGCGBJEOL = 3,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_JMINJCHEKDA)
-    HeartDialStepType_JMINJCHEKDA = 4,
-    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_HLCDHMJBDBJ)
-    HeartDialStepType_HLCDHMJBDBJ = 5,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_COEEJALELPF)
+    HeartDialStepType_COEEJALELPF = 0,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_BADPBGFJPNN)
+    HeartDialStepType_BADPBGFJPNN = 1,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_game_lock_info)
+    HeartDialStepType_game_lock_info = 2,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_CCJMKNNHKKE)
+    HeartDialStepType_CCJMKNNHKKE = 3,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_BEJEBBNFGPM)
+    HeartDialStepType_BEJEBBNFGPM = 4,
+    // @@protoc_insertion_point(enum_value:HeartDialStepType.HeartDialStepType_NGNFOIHNLMJ)
+    HeartDialStepType_NGNFOIHNLMJ = 5,
 }
 
 impl ::protobuf::Enum for HeartDialStepType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for HeartDialStepType {
 
     fn from_i32(value: i32) -> ::std::option::Option<HeartDialStepType> {
         match value {
-            0 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_CNJDNHCJIHJ),
-            1 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_EBLFNEAHMEC),
-            2 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_IPDFMNINJHN),
-            3 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_OEIGCGBJEOL),
-            4 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_JMINJCHEKDA),
-            5 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_HLCDHMJBDBJ),
+            0 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_COEEJALELPF),
+            1 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_BADPBGFJPNN),
+            2 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_game_lock_info),
+            3 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_CCJMKNNHKKE),
+            4 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_BEJEBBNFGPM),
+            5 => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_NGNFOIHNLMJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<HeartDialStepType> {
         match str {
-            "HeartDialStepType_CNJDNHCJIHJ" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_CNJDNHCJIHJ),
-            "HeartDialStepType_EBLFNEAHMEC" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_EBLFNEAHMEC),
-            "HeartDialStepType_IPDFMNINJHN" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_IPDFMNINJHN),
-            "HeartDialStepType_OEIGCGBJEOL" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_OEIGCGBJEOL),
-            "HeartDialStepType_JMINJCHEKDA" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_JMINJCHEKDA),
-            "HeartDialStepType_HLCDHMJBDBJ" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_HLCDHMJBDBJ),
+            "HeartDialStepType_COEEJALELPF" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_COEEJALELPF),
+            "HeartDialStepType_BADPBGFJPNN" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_BADPBGFJPNN),
+            "HeartDialStepType_game_lock_info" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_game_lock_info),
+            "HeartDialStepType_CCJMKNNHKKE" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_CCJMKNNHKKE),
+            "HeartDialStepType_BEJEBBNFGPM" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_BEJEBBNFGPM),
+            "HeartDialStepType_NGNFOIHNLMJ" => ::std::option::Option::Some(HeartDialStepType::HeartDialStepType_NGNFOIHNLMJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [HeartDialStepType] = &[
-        HeartDialStepType::HeartDialStepType_CNJDNHCJIHJ,
-        HeartDialStepType::HeartDialStepType_EBLFNEAHMEC,
-        HeartDialStepType::HeartDialStepType_IPDFMNINJHN,
-        HeartDialStepType::HeartDialStepType_OEIGCGBJEOL,
-        HeartDialStepType::HeartDialStepType_JMINJCHEKDA,
-        HeartDialStepType::HeartDialStepType_HLCDHMJBDBJ,
+        HeartDialStepType::HeartDialStepType_COEEJALELPF,
+        HeartDialStepType::HeartDialStepType_BADPBGFJPNN,
+        HeartDialStepType::HeartDialStepType_game_lock_info,
+        HeartDialStepType::HeartDialStepType_CCJMKNNHKKE,
+        HeartDialStepType::HeartDialStepType_BEJEBBNFGPM,
+        HeartDialStepType::HeartDialStepType_NGNFOIHNLMJ,
     ];
 }
 
@@ -96,7 +96,7 @@ impl ::protobuf::EnumFull for HeartDialStepType {
 
 impl ::std::default::Default for HeartDialStepType {
     fn default() -> Self {
-        HeartDialStepType::HeartDialStepType_CNJDNHCJIHJ
+        HeartDialStepType::HeartDialStepType_COEEJALELPF
     }
 }
 
@@ -107,11 +107,12 @@ impl HeartDialStepType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17HeartDialStepType.proto*\xe5\x01\n\x11HeartDialStepType\x12!\n\x1d\
-    HeartDialStepType_CNJDNHCJIHJ\x10\0\x12!\n\x1dHeartDialStepType_EBLFNEAH\
-    MEC\x10\x01\x12!\n\x1dHeartDialStepType_IPDFMNINJHN\x10\x02\x12!\n\x1dHe\
-    artDialStepType_OEIGCGBJEOL\x10\x03\x12!\n\x1dHeartDialStepType_JMINJCHE\
-    KDA\x10\x04\x12!\n\x1dHeartDialStepType_HLCDHMJBDBJ\x10\x05b\x06proto3\
+    \n\x17HeartDialStepType.proto*\xe8\x01\n\x11HeartDialStepType\x12!\n\x1d\
+    HeartDialStepType_COEEJALELPF\x10\0\x12!\n\x1dHeartDialStepType_BADPBGFJ\
+    PNN\x10\x01\x12$\n\x20HeartDialStepType_game_lock_info\x10\x02\x12!\n\
+    \x1dHeartDialStepType_CCJMKNNHKKE\x10\x03\x12!\n\x1dHeartDialStepType_BE\
+    JEBBNFGPM\x10\x04\x12!\n\x1dHeartDialStepType_NGNFOIHNLMJ\x10\x05b\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

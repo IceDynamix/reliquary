@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GridFightGetArchiveCsReq {
     // message fields
     // @@protoc_insertion_point(field:GridFightGetArchiveCsReq.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::HOAMFMHCGFP::HOAMFMHCGFP>,
+    pub type_: ::protobuf::EnumOrUnknown<super::IGGGGMEEBCA::IGGGGMEEBCA>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightGetArchiveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,7 +72,7 @@ impl ::protobuf::Message for GridFightGetArchiveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                72 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GridFightGetArchiveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::HOAMFMHCGFP::HOAMFMHCGFP::HOAMFMHCGFP_HPDKBBFDOKK) {
-            my_size += ::protobuf::rt::int32_size(7, self.type_.value());
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::IGGGGMEEBCA::IGGGGMEEBCA::IGGGGMEEBCA_FLLHPDEBEFN) {
+            my_size += ::protobuf::rt::int32_size(9, self.type_.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GridFightGetArchiveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::HOAMFMHCGFP::HOAMFMHCGFP::HOAMFMHCGFP_HPDKBBFDOKK) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::IGGGGMEEBCA::IGGGGMEEBCA::IGGGGMEEBCA_FLLHPDEBEFN) {
+            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,7 +116,7 @@ impl ::protobuf::Message for GridFightGetArchiveCsReq {
     }
 
     fn clear(&mut self) {
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::HOAMFMHCGFP::HOAMFMHCGFP::HOAMFMHCGFP_HPDKBBFDOKK);
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::IGGGGMEEBCA::IGGGGMEEBCA::IGGGGMEEBCA_FLLHPDEBEFN);
         self.special_fields.clear();
     }
 
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for GridFightGetArchiveCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGridFightGetArchiveCsReq.proto\x1a\x11HOAMFMHCGFP.proto\"<\n\x18Gr\
-    idFightGetArchiveCsReq\x12\x20\n\x04type\x18\x07\x20\x01(\x0e2\x0c.HOAMF\
-    MHCGFPR\x04typeb\x06proto3\
+    \n\x1eGridFightGetArchiveCsReq.proto\x1a\x11IGGGGMEEBCA.proto\"<\n\x18Gr\
+    idFightGetArchiveCsReq\x12\x20\n\x04type\x18\t\x20\x01(\x0e2\x0c.IGGGGME\
+    EBCAR\x04typeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,7 +167,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HOAMFMHCGFP::file_descriptor().clone());
+            deps.push(super::IGGGGMEEBCA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightGetArchiveCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

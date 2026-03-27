@@ -27,26 +27,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdEraFlipperType)
 pub enum CmdEraFlipperType {
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.GPOEBEDJBGF_GKJBAODJMJG)
-    GPOEBEDJBGF_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.GPOEBEDJBGF_JFALNMEDPPA)
-    GPOEBEDJBGF_JFALNMEDPPA = 6569,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.GPOEBEDJBGF_AOOBGNBNHAJ)
-    GPOEBEDJBGF_AOOBGNBNHAJ = 6560,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.GPOEBEDJBGF_DCADICKIMND)
-    GPOEBEDJBGF_DCADICKIMND = 6575,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.GPOEBEDJBGF_DMMELMOKEJA)
-    GPOEBEDJBGF_DMMELMOKEJA = 6551,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.GPOEBEDJBGF_AGNDAEMOFNN)
-    GPOEBEDJBGF_AGNDAEMOFNN = 6563,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.GPOEBEDJBGF_LOLDMINFODI)
-    GPOEBEDJBGF_LOLDMINFODI = 6554,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.GPOEBEDJBGF_GBJBBCKDBJF)
-    GPOEBEDJBGF_GBJBBCKDBJF = 6561,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.GPOEBEDJBGF_OFJGHOGLKFD)
-    GPOEBEDJBGF_OFJGHOGLKFD = 6559,
-    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.GPOEBEDJBGF_DBALBJPBLHI)
-    GPOEBEDJBGF_DBALBJPBLHI = 6572,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperType_MNFEPONEDDJ)
+    CmdEraFlipperType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperType_ODLMGNFGLON)
+    CmdEraFlipperType_ODLMGNFGLON = 6565,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperType_FDGOBFGJBLH)
+    CmdEraFlipperType_FDGOBFGJBLH = 6562,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperType_EHHEEIJJJKP)
+    CmdEraFlipperType_EHHEEIJJJKP = 6571,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperType_PBALEHCNEKC)
+    CmdEraFlipperType_PBALEHCNEKC = 6560,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperType_FKHHKCDDMJI)
+    CmdEraFlipperType_FKHHKCDDMJI = 6556,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperType_FANFICLKDCN)
+    CmdEraFlipperType_FANFICLKDCN = 6566,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperType_DPIDGCJICBG)
+    CmdEraFlipperType_DPIDGCJICBG = 6567,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperType_KIDDKBPCEHH)
+    CmdEraFlipperType_KIDDKBPCEHH = 6551,
+    // @@protoc_insertion_point(enum_value:CmdEraFlipperType.CmdEraFlipperType_IKJNAABFKFL)
+    CmdEraFlipperType_IKJNAABFKFL = 6553,
 }
 
 impl ::protobuf::Enum for CmdEraFlipperType {
@@ -58,47 +58,47 @@ impl ::protobuf::Enum for CmdEraFlipperType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdEraFlipperType> {
         match value {
-            0 => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_GKJBAODJMJG),
-            6569 => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_JFALNMEDPPA),
-            6560 => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_AOOBGNBNHAJ),
-            6575 => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_DCADICKIMND),
-            6551 => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_DMMELMOKEJA),
-            6563 => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_AGNDAEMOFNN),
-            6554 => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_LOLDMINFODI),
-            6561 => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_GBJBBCKDBJF),
-            6559 => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_OFJGHOGLKFD),
-            6572 => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_DBALBJPBLHI),
+            0 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_MNFEPONEDDJ),
+            6565 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_ODLMGNFGLON),
+            6562 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_FDGOBFGJBLH),
+            6571 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_EHHEEIJJJKP),
+            6560 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_PBALEHCNEKC),
+            6556 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_FKHHKCDDMJI),
+            6566 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_FANFICLKDCN),
+            6567 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_DPIDGCJICBG),
+            6551 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_KIDDKBPCEHH),
+            6553 => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_IKJNAABFKFL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdEraFlipperType> {
         match str {
-            "GPOEBEDJBGF_GKJBAODJMJG" => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_GKJBAODJMJG),
-            "GPOEBEDJBGF_JFALNMEDPPA" => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_JFALNMEDPPA),
-            "GPOEBEDJBGF_AOOBGNBNHAJ" => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_AOOBGNBNHAJ),
-            "GPOEBEDJBGF_DCADICKIMND" => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_DCADICKIMND),
-            "GPOEBEDJBGF_DMMELMOKEJA" => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_DMMELMOKEJA),
-            "GPOEBEDJBGF_AGNDAEMOFNN" => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_AGNDAEMOFNN),
-            "GPOEBEDJBGF_LOLDMINFODI" => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_LOLDMINFODI),
-            "GPOEBEDJBGF_GBJBBCKDBJF" => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_GBJBBCKDBJF),
-            "GPOEBEDJBGF_OFJGHOGLKFD" => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_OFJGHOGLKFD),
-            "GPOEBEDJBGF_DBALBJPBLHI" => ::std::option::Option::Some(CmdEraFlipperType::GPOEBEDJBGF_DBALBJPBLHI),
+            "CmdEraFlipperType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_MNFEPONEDDJ),
+            "CmdEraFlipperType_ODLMGNFGLON" => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_ODLMGNFGLON),
+            "CmdEraFlipperType_FDGOBFGJBLH" => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_FDGOBFGJBLH),
+            "CmdEraFlipperType_EHHEEIJJJKP" => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_EHHEEIJJJKP),
+            "CmdEraFlipperType_PBALEHCNEKC" => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_PBALEHCNEKC),
+            "CmdEraFlipperType_FKHHKCDDMJI" => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_FKHHKCDDMJI),
+            "CmdEraFlipperType_FANFICLKDCN" => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_FANFICLKDCN),
+            "CmdEraFlipperType_DPIDGCJICBG" => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_DPIDGCJICBG),
+            "CmdEraFlipperType_KIDDKBPCEHH" => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_KIDDKBPCEHH),
+            "CmdEraFlipperType_IKJNAABFKFL" => ::std::option::Option::Some(CmdEraFlipperType::CmdEraFlipperType_IKJNAABFKFL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdEraFlipperType] = &[
-        CmdEraFlipperType::GPOEBEDJBGF_GKJBAODJMJG,
-        CmdEraFlipperType::GPOEBEDJBGF_JFALNMEDPPA,
-        CmdEraFlipperType::GPOEBEDJBGF_AOOBGNBNHAJ,
-        CmdEraFlipperType::GPOEBEDJBGF_DCADICKIMND,
-        CmdEraFlipperType::GPOEBEDJBGF_DMMELMOKEJA,
-        CmdEraFlipperType::GPOEBEDJBGF_AGNDAEMOFNN,
-        CmdEraFlipperType::GPOEBEDJBGF_LOLDMINFODI,
-        CmdEraFlipperType::GPOEBEDJBGF_GBJBBCKDBJF,
-        CmdEraFlipperType::GPOEBEDJBGF_OFJGHOGLKFD,
-        CmdEraFlipperType::GPOEBEDJBGF_DBALBJPBLHI,
+        CmdEraFlipperType::CmdEraFlipperType_MNFEPONEDDJ,
+        CmdEraFlipperType::CmdEraFlipperType_ODLMGNFGLON,
+        CmdEraFlipperType::CmdEraFlipperType_FDGOBFGJBLH,
+        CmdEraFlipperType::CmdEraFlipperType_EHHEEIJJJKP,
+        CmdEraFlipperType::CmdEraFlipperType_PBALEHCNEKC,
+        CmdEraFlipperType::CmdEraFlipperType_FKHHKCDDMJI,
+        CmdEraFlipperType::CmdEraFlipperType_FANFICLKDCN,
+        CmdEraFlipperType::CmdEraFlipperType_DPIDGCJICBG,
+        CmdEraFlipperType::CmdEraFlipperType_KIDDKBPCEHH,
+        CmdEraFlipperType::CmdEraFlipperType_IKJNAABFKFL,
     ];
 }
 
@@ -110,16 +110,16 @@ impl ::protobuf::EnumFull for CmdEraFlipperType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdEraFlipperType::GPOEBEDJBGF_GKJBAODJMJG => 0,
-            CmdEraFlipperType::GPOEBEDJBGF_JFALNMEDPPA => 1,
-            CmdEraFlipperType::GPOEBEDJBGF_AOOBGNBNHAJ => 2,
-            CmdEraFlipperType::GPOEBEDJBGF_DCADICKIMND => 3,
-            CmdEraFlipperType::GPOEBEDJBGF_DMMELMOKEJA => 4,
-            CmdEraFlipperType::GPOEBEDJBGF_AGNDAEMOFNN => 5,
-            CmdEraFlipperType::GPOEBEDJBGF_LOLDMINFODI => 6,
-            CmdEraFlipperType::GPOEBEDJBGF_GBJBBCKDBJF => 7,
-            CmdEraFlipperType::GPOEBEDJBGF_OFJGHOGLKFD => 8,
-            CmdEraFlipperType::GPOEBEDJBGF_DBALBJPBLHI => 9,
+            CmdEraFlipperType::CmdEraFlipperType_MNFEPONEDDJ => 0,
+            CmdEraFlipperType::CmdEraFlipperType_ODLMGNFGLON => 1,
+            CmdEraFlipperType::CmdEraFlipperType_FDGOBFGJBLH => 2,
+            CmdEraFlipperType::CmdEraFlipperType_EHHEEIJJJKP => 3,
+            CmdEraFlipperType::CmdEraFlipperType_PBALEHCNEKC => 4,
+            CmdEraFlipperType::CmdEraFlipperType_FKHHKCDDMJI => 5,
+            CmdEraFlipperType::CmdEraFlipperType_FANFICLKDCN => 6,
+            CmdEraFlipperType::CmdEraFlipperType_DPIDGCJICBG => 7,
+            CmdEraFlipperType::CmdEraFlipperType_KIDDKBPCEHH => 8,
+            CmdEraFlipperType::CmdEraFlipperType_IKJNAABFKFL => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,7 +127,7 @@ impl ::protobuf::EnumFull for CmdEraFlipperType {
 
 impl ::std::default::Default for CmdEraFlipperType {
     fn default() -> Self {
-        CmdEraFlipperType::GPOEBEDJBGF_GKJBAODJMJG
+        CmdEraFlipperType::CmdEraFlipperType_MNFEPONEDDJ
     }
 }
 
@@ -138,14 +138,14 @@ impl CmdEraFlipperType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdEraFlipperType.proto*\xbe\x02\n\x11CmdEraFlipperType\x12\x1b\n\
-    \x17GPOEBEDJBGF_GKJBAODJMJG\x10\0\x12\x1c\n\x17GPOEBEDJBGF_JFALNMEDPPA\
-    \x10\xa93\x12\x1c\n\x17GPOEBEDJBGF_AOOBGNBNHAJ\x10\xa03\x12\x1c\n\x17GPO\
-    EBEDJBGF_DCADICKIMND\x10\xaf3\x12\x1c\n\x17GPOEBEDJBGF_DMMELMOKEJA\x10\
-    \x973\x12\x1c\n\x17GPOEBEDJBGF_AGNDAEMOFNN\x10\xa33\x12\x1c\n\x17GPOEBED\
-    JBGF_LOLDMINFODI\x10\x9a3\x12\x1c\n\x17GPOEBEDJBGF_GBJBBCKDBJF\x10\xa13\
-    \x12\x1c\n\x17GPOEBEDJBGF_OFJGHOGLKFD\x10\x9f3\x12\x1c\n\x17GPOEBEDJBGF_\
-    DBALBJPBLHI\x10\xac3b\x06proto3\
+    \n\x17CmdEraFlipperType.proto*\xfa\x02\n\x11CmdEraFlipperType\x12!\n\x1d\
+    CmdEraFlipperType_MNFEPONEDDJ\x10\0\x12\"\n\x1dCmdEraFlipperType_ODLMGNF\
+    GLON\x10\xa53\x12\"\n\x1dCmdEraFlipperType_FDGOBFGJBLH\x10\xa23\x12\"\n\
+    \x1dCmdEraFlipperType_EHHEEIJJJKP\x10\xab3\x12\"\n\x1dCmdEraFlipperType_\
+    PBALEHCNEKC\x10\xa03\x12\"\n\x1dCmdEraFlipperType_FKHHKCDDMJI\x10\x9c3\
+    \x12\"\n\x1dCmdEraFlipperType_FANFICLKDCN\x10\xa63\x12\"\n\x1dCmdEraFlip\
+    perType_DPIDGCJICBG\x10\xa73\x12\"\n\x1dCmdEraFlipperType_KIDDKBPCEHH\
+    \x10\x973\x12\"\n\x1dCmdEraFlipperType_IKJNAABFKFL\x10\x993b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

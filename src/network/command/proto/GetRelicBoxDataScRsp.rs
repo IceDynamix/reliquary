@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRelicBoxDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.HKKBCMEDNLB)
-    pub HKKBCMEDNLB: ::std::vec::Vec<super::NEPPAPHGJCG::NEPPAPHGJCG>,
-    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.EBDFGFEDFAI)
-    pub EBDFGFEDFAI: ::protobuf::MessageField<super::OBCBKHMHCLF::OBCBKHMHCLF>,
-    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.LKHLNPJOEOP)
-    pub LKHLNPJOEOP: u32,
+    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.OHCIEIHHKAL)
+    pub OHCIEIHHKAL: ::protobuf::MessageField<super::NADGCMCDBCI::NADGCMCDBCI>,
+    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.DLCGBPOPPIH)
+    pub DLCGBPOPPIH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.OAKBNOBPDNI)
+    pub OAKBNOBPDNI: ::std::vec::Vec<super::NMJPEPLHEJA::NMJPEPLHEJA>,
     // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.NMLFMPNOIOM)
-    pub NMLFMPNOIOM: ::protobuf::MessageField<super::HKMIPGCMMNC::HKMIPGCMMNC>,
-    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.NKNGKGCBPOG)
-    pub NKNGKGCBPOG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.state)
-    pub state: ::protobuf::EnumOrUnknown<super::BDOCHLMIPLG::BDOCHLMIPLG>,
+    pub state: ::protobuf::EnumOrUnknown<super::KBBLKIFPBCA::KBBLKIFPBCA>,
+    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.CLBAOKFAALJ)
+    pub CLBAOKFAALJ: u32,
+    // @@protoc_insertion_point(field:GetRelicBoxDataScRsp.CMMLNDMEIFO)
+    pub CMMLNDMEIFO: ::protobuf::MessageField<super::HIIOBFEMOLJ::HIIOBFEMOLJ>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRelicBoxDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,40 +61,40 @@ impl GetRelicBoxDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NADGCMCDBCI::NADGCMCDBCI>(
+            "OHCIEIHHKAL",
+            |m: &GetRelicBoxDataScRsp| { &m.OHCIEIHHKAL },
+            |m: &mut GetRelicBoxDataScRsp| { &mut m.OHCIEIHHKAL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HKKBCMEDNLB",
-            |m: &GetRelicBoxDataScRsp| { &m.HKKBCMEDNLB },
-            |m: &mut GetRelicBoxDataScRsp| { &mut m.HKKBCMEDNLB },
+            "DLCGBPOPPIH",
+            |m: &GetRelicBoxDataScRsp| { &m.DLCGBPOPPIH },
+            |m: &mut GetRelicBoxDataScRsp| { &mut m.DLCGBPOPPIH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OBCBKHMHCLF::OBCBKHMHCLF>(
-            "EBDFGFEDFAI",
-            |m: &GetRelicBoxDataScRsp| { &m.EBDFGFEDFAI },
-            |m: &mut GetRelicBoxDataScRsp| { &mut m.EBDFGFEDFAI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LKHLNPJOEOP",
-            |m: &GetRelicBoxDataScRsp| { &m.LKHLNPJOEOP },
-            |m: &mut GetRelicBoxDataScRsp| { &mut m.LKHLNPJOEOP },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OAKBNOBPDNI",
+            |m: &GetRelicBoxDataScRsp| { &m.OAKBNOBPDNI },
+            |m: &mut GetRelicBoxDataScRsp| { &mut m.OAKBNOBPDNI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetRelicBoxDataScRsp| { &m.retcode },
             |m: &mut GetRelicBoxDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKMIPGCMMNC::HKMIPGCMMNC>(
-            "NMLFMPNOIOM",
-            |m: &GetRelicBoxDataScRsp| { &m.NMLFMPNOIOM },
-            |m: &mut GetRelicBoxDataScRsp| { &mut m.NMLFMPNOIOM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NKNGKGCBPOG",
-            |m: &GetRelicBoxDataScRsp| { &m.NKNGKGCBPOG },
-            |m: &mut GetRelicBoxDataScRsp| { &mut m.NKNGKGCBPOG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "state",
             |m: &GetRelicBoxDataScRsp| { &m.state },
             |m: &mut GetRelicBoxDataScRsp| { &mut m.state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CLBAOKFAALJ",
+            |m: &GetRelicBoxDataScRsp| { &m.CLBAOKFAALJ },
+            |m: &mut GetRelicBoxDataScRsp| { &mut m.CLBAOKFAALJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HIIOBFEMOLJ::HIIOBFEMOLJ>(
+            "CMMLNDMEIFO",
+            |m: &GetRelicBoxDataScRsp| { &m.CMMLNDMEIFO },
+            |m: &mut GetRelicBoxDataScRsp| { &mut m.CMMLNDMEIFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRelicBoxDataScRsp>(
             "GetRelicBoxDataScRsp",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for GetRelicBoxDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.HKKBCMEDNLB.push(is.read_message()?);
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EBDFGFEDFAI)?;
-                },
-                32 => {
-                    self.LKHLNPJOEOP = is.read_uint32()?;
-                },
-                72 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMLFMPNOIOM)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OHCIEIHHKAL)?;
                 },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NKNGKGCBPOG)?;
-                },
-                24 => {
-                    self.NKNGKGCBPOG.push(is.read_uint32()?);
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DLCGBPOPPIH)?;
                 },
                 48 => {
+                    self.DLCGBPOPPIH.push(is.read_uint32()?);
+                },
+                106 => {
+                    self.OAKBNOBPDNI.push(is.read_message()?);
+                },
+                16 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                80 => {
                     self.state = is.read_enum_or_unknown()?;
+                },
+                8 => {
+                    self.CLBAOKFAALJ = is.read_uint32()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CMMLNDMEIFO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,27 +150,27 @@ impl ::protobuf::Message for GetRelicBoxDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HKKBCMEDNLB {
+        if let Some(v) = self.OHCIEIHHKAL.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.DLCGBPOPPIH);
+        for value in &self.OAKBNOBPDNI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.EBDFGFEDFAI.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.LKHLNPJOEOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.LKHLNPJOEOP);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if let Some(v) = self.NMLFMPNOIOM.as_ref() {
+        if self.state != ::protobuf::EnumOrUnknown::new(super::KBBLKIFPBCA::KBBLKIFPBCA::KBBLKIFPBCA_OCFBAIPCHPC) {
+            my_size += ::protobuf::rt::int32_size(10, self.state.value());
+        }
+        if self.CLBAOKFAALJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.CLBAOKFAALJ);
+        }
+        if let Some(v) = self.CMMLNDMEIFO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.NKNGKGCBPOG);
-        if self.state != ::protobuf::EnumOrUnknown::new(super::BDOCHLMIPLG::BDOCHLMIPLG::BDOCHLMIPLG_OHJFMJAKEPK) {
-            my_size += ::protobuf::rt::int32_size(6, self.state.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -178,24 +178,24 @@ impl ::protobuf::Message for GetRelicBoxDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HKKBCMEDNLB {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
-        if let Some(v) = self.EBDFGFEDFAI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if self.LKHLNPJOEOP != 0 {
-            os.write_uint32(4, self.LKHLNPJOEOP)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
-        if let Some(v) = self.NMLFMPNOIOM.as_ref() {
+        if let Some(v) = self.OHCIEIHHKAL.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        os.write_repeated_packed_uint32(3, &self.NKNGKGCBPOG)?;
-        if self.state != ::protobuf::EnumOrUnknown::new(super::BDOCHLMIPLG::BDOCHLMIPLG::BDOCHLMIPLG_OHJFMJAKEPK) {
-            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.state))?;
+        os.write_repeated_packed_uint32(6, &self.DLCGBPOPPIH)?;
+        for v in &self.OAKBNOBPDNI {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
+        }
+        if self.state != ::protobuf::EnumOrUnknown::new(super::KBBLKIFPBCA::KBBLKIFPBCA::KBBLKIFPBCA_OCFBAIPCHPC) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.state))?;
+        }
+        if self.CLBAOKFAALJ != 0 {
+            os.write_uint32(1, self.CLBAOKFAALJ)?;
+        }
+        if let Some(v) = self.CMMLNDMEIFO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,25 +214,25 @@ impl ::protobuf::Message for GetRelicBoxDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.HKKBCMEDNLB.clear();
-        self.EBDFGFEDFAI.clear();
-        self.LKHLNPJOEOP = 0;
+        self.OHCIEIHHKAL.clear();
+        self.DLCGBPOPPIH.clear();
+        self.OAKBNOBPDNI.clear();
         self.retcode = 0;
-        self.NMLFMPNOIOM.clear();
-        self.NKNGKGCBPOG.clear();
-        self.state = ::protobuf::EnumOrUnknown::new(super::BDOCHLMIPLG::BDOCHLMIPLG::BDOCHLMIPLG_OHJFMJAKEPK);
+        self.state = ::protobuf::EnumOrUnknown::new(super::KBBLKIFPBCA::KBBLKIFPBCA::KBBLKIFPBCA_OCFBAIPCHPC);
+        self.CLBAOKFAALJ = 0;
+        self.CMMLNDMEIFO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRelicBoxDataScRsp {
         static instance: GetRelicBoxDataScRsp = GetRelicBoxDataScRsp {
-            HKKBCMEDNLB: ::std::vec::Vec::new(),
-            EBDFGFEDFAI: ::protobuf::MessageField::none(),
-            LKHLNPJOEOP: 0,
+            OHCIEIHHKAL: ::protobuf::MessageField::none(),
+            DLCGBPOPPIH: ::std::vec::Vec::new(),
+            OAKBNOBPDNI: ::std::vec::Vec::new(),
             retcode: 0,
-            NMLFMPNOIOM: ::protobuf::MessageField::none(),
-            NKNGKGCBPOG: ::std::vec::Vec::new(),
             state: ::protobuf::EnumOrUnknown::from_i32(0),
+            CLBAOKFAALJ: 0,
+            CMMLNDMEIFO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -257,15 +257,15 @@ impl ::protobuf::reflect::ProtobufValue for GetRelicBoxDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetRelicBoxDataScRsp.proto\x1a\x11BDOCHLMIPLG.proto\x1a\x11HKMIPGC\
-    MMNC.proto\x1a\x11NEPPAPHGJCG.proto\x1a\x11OBCBKHMHCLF.proto\"\xa8\x02\n\
-    \x14GetRelicBoxDataScRsp\x12.\n\x0bHKKBCMEDNLB\x18\x0f\x20\x03(\x0b2\x0c\
-    .NEPPAPHGJCGR\x0bHKKBCMEDNLB\x12.\n\x0bEBDFGFEDFAI\x18\x0b\x20\x01(\x0b2\
-    \x0c.OBCBKHMHCLFR\x0bEBDFGFEDFAI\x12\x20\n\x0bLKHLNPJOEOP\x18\x04\x20\
-    \x01(\rR\x0bLKHLNPJOEOP\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcod\
-    e\x12.\n\x0bNMLFMPNOIOM\x18\x08\x20\x01(\x0b2\x0c.HKMIPGCMMNCR\x0bNMLFMP\
-    NOIOM\x12\x20\n\x0bNKNGKGCBPOG\x18\x03\x20\x03(\rR\x0bNKNGKGCBPOG\x12\"\
-    \n\x05state\x18\x06\x20\x01(\x0e2\x0c.BDOCHLMIPLGR\x05stateb\x06proto3\
+    \n\x1aGetRelicBoxDataScRsp.proto\x1a\x11HIIOBFEMOLJ.proto\x1a\x11KBBLKIF\
+    PBCA.proto\x1a\x11NADGCMCDBCI.proto\x1a\x11NMJPEPLHEJA.proto\"\xa8\x02\n\
+    \x14GetRelicBoxDataScRsp\x12.\n\x0bOHCIEIHHKAL\x18\x08\x20\x01(\x0b2\x0c\
+    .NADGCMCDBCIR\x0bOHCIEIHHKAL\x12\x20\n\x0bDLCGBPOPPIH\x18\x06\x20\x03(\r\
+    R\x0bDLCGBPOPPIH\x12.\n\x0bOAKBNOBPDNI\x18\r\x20\x03(\x0b2\x0c.NMJPEPLHE\
+    JAR\x0bOAKBNOBPDNI\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\
+    \x12\"\n\x05state\x18\n\x20\x01(\x0e2\x0c.KBBLKIFPBCAR\x05state\x12\x20\
+    \n\x0bCLBAOKFAALJ\x18\x01\x20\x01(\rR\x0bCLBAOKFAALJ\x12.\n\x0bCMMLNDMEI\
+    FO\x18\x0b\x20\x01(\x0b2\x0c.HIIOBFEMOLJR\x0bCMMLNDMEIFOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -283,10 +283,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::BDOCHLMIPLG::file_descriptor().clone());
-            deps.push(super::HKMIPGCMMNC::file_descriptor().clone());
-            deps.push(super::NEPPAPHGJCG::file_descriptor().clone());
-            deps.push(super::OBCBKHMHCLF::file_descriptor().clone());
+            deps.push(super::HIIOBFEMOLJ::file_descriptor().clone());
+            deps.push(super::KBBLKIFPBCA::file_descriptor().clone());
+            deps.push(super::NADGCMCDBCI::file_descriptor().clone());
+            deps.push(super::NMJPEPLHEJA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetRelicBoxDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

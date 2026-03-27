@@ -30,6 +30,8 @@ pub struct DeleteSummonUnitCsReq {
     // message fields
     // @@protoc_insertion_point(field:DeleteSummonUnitCsReq.entity_id_list)
     pub entity_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:DeleteSummonUnitCsReq.interact_id)
+    pub interact_id: u64,
     // special fields
     // @@protoc_insertion_point(special_field:DeleteSummonUnitCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +49,17 @@ impl DeleteSummonUnitCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "entity_id_list",
             |m: &DeleteSummonUnitCsReq| { &m.entity_id_list },
             |m: &mut DeleteSummonUnitCsReq| { &mut m.entity_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "interact_id",
+            |m: &DeleteSummonUnitCsReq| { &m.interact_id },
+            |m: &mut DeleteSummonUnitCsReq| { &mut m.interact_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DeleteSummonUnitCsReq>(
             "DeleteSummonUnitCsReq",
@@ -72,11 +79,14 @@ impl ::protobuf::Message for DeleteSummonUnitCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.entity_id_list)?;
                 },
-                96 => {
+                40 => {
                     self.entity_id_list.push(is.read_uint32()?);
+                },
+                48 => {
+                    self.interact_id = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +100,20 @@ impl ::protobuf::Message for DeleteSummonUnitCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.entity_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.entity_id_list);
+        if self.interact_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(6, self.interact_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.entity_id_list)?;
+        os.write_repeated_packed_uint32(5, &self.entity_id_list)?;
+        if self.interact_id != 0 {
+            os.write_uint64(6, self.interact_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -116,12 +132,14 @@ impl ::protobuf::Message for DeleteSummonUnitCsReq {
 
     fn clear(&mut self) {
         self.entity_id_list.clear();
+        self.interact_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DeleteSummonUnitCsReq {
         static instance: DeleteSummonUnitCsReq = DeleteSummonUnitCsReq {
             entity_id_list: ::std::vec::Vec::new(),
+            interact_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for DeleteSummonUnitCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bDeleteSummonUnitCsReq.proto\"=\n\x15DeleteSummonUnitCsReq\x12$\n\
-    \x0eentity_id_list\x18\x0c\x20\x03(\rR\x0centityIdListb\x06proto3\
+    \n\x1bDeleteSummonUnitCsReq.proto\"^\n\x15DeleteSummonUnitCsReq\x12$\n\
+    \x0eentity_id_list\x18\x05\x20\x03(\rR\x0centityIdList\x12\x1f\n\x0binte\
+    ract_id\x18\x06\x20\x01(\x04R\ninteractIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

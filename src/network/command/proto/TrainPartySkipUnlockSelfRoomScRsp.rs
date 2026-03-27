@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartySkipUnlockSelfRoomScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartySkipUnlockSelfRoomScRsp.KJCAJDCIBLM)
-    pub KJCAJDCIBLM: ::protobuf::MessageField<super::TrainPartyInfo::TrainPartyInfo>,
+    // @@protoc_insertion_point(field:TrainPartySkipUnlockSelfRoomScRsp.FFEJHCHICCF)
+    pub FFEJHCHICCF: ::protobuf::MessageField<super::TrainPartyInfo::TrainPartyInfo>,
     // @@protoc_insertion_point(field:TrainPartySkipUnlockSelfRoomScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TrainPartySkipUnlockSelfRoomScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::TrainPartyInfo::TrainPartyInfo>(
-            "KJCAJDCIBLM",
-            |m: &TrainPartySkipUnlockSelfRoomScRsp| { &m.KJCAJDCIBLM },
-            |m: &mut TrainPartySkipUnlockSelfRoomScRsp| { &mut m.KJCAJDCIBLM },
+            "FFEJHCHICCF",
+            |m: &TrainPartySkipUnlockSelfRoomScRsp| { &m.FFEJHCHICCF },
+            |m: &mut TrainPartySkipUnlockSelfRoomScRsp| { &mut m.FFEJHCHICCF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for TrainPartySkipUnlockSelfRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJCAJDCIBLM)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FFEJHCHICCF)?;
                 },
                 56 => {
                     self.retcode = is.read_uint32()?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for TrainPartySkipUnlockSelfRoomScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.KJCAJDCIBLM.as_ref() {
+        if let Some(v) = self.FFEJHCHICCF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -110,8 +110,8 @@ impl ::protobuf::Message for TrainPartySkipUnlockSelfRoomScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.KJCAJDCIBLM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.FFEJHCHICCF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(7, self.retcode)?;
@@ -133,14 +133,14 @@ impl ::protobuf::Message for TrainPartySkipUnlockSelfRoomScRsp {
     }
 
     fn clear(&mut self) {
-        self.KJCAJDCIBLM.clear();
+        self.FFEJHCHICCF.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartySkipUnlockSelfRoomScRsp {
         static instance: TrainPartySkipUnlockSelfRoomScRsp = TrainPartySkipUnlockSelfRoomScRsp {
-            KJCAJDCIBLM: ::protobuf::MessageField::none(),
+            FFEJHCHICCF: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartySkipUnlockSelfRoomScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'TrainPartySkipUnlockSelfRoomScRsp.proto\x1a\x14TrainPartyInfo.proto\"\
-    p\n!TrainPartySkipUnlockSelfRoomScRsp\x121\n\x0bKJCAJDCIBLM\x18\x05\x20\
-    \x01(\x0b2\x0f.TrainPartyInfoR\x0bKJCAJDCIBLM\x12\x18\n\x07retcode\x18\
+    p\n!TrainPartySkipUnlockSelfRoomScRsp\x121\n\x0bFFEJHCHICCF\x18\r\x20\
+    \x01(\x0b2\x0f.TrainPartyInfoR\x0bFFEJHCHICCF\x12\x18\n\x07retcode\x18\
     \x07\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

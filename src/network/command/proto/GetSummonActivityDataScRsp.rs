@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSummonActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSummonActivityDataScRsp.DFCFMHGLDLA)
-    pub DFCFMHGLDLA: ::std::vec::Vec<super::NONKKOLHOAA::NONKKOLHOAA>,
     // @@protoc_insertion_point(field:GetSummonActivityDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetSummonActivityDataScRsp.GPCLJGMNAAL)
+    pub GPCLJGMNAAL: ::std::vec::Vec<super::APKKMPBPPHG::APKKMPBPPHG>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSummonActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetSummonActivityDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DFCFMHGLDLA",
-            |m: &GetSummonActivityDataScRsp| { &m.DFCFMHGLDLA },
-            |m: &mut GetSummonActivityDataScRsp| { &mut m.DFCFMHGLDLA },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSummonActivityDataScRsp| { &m.retcode },
             |m: &mut GetSummonActivityDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GPCLJGMNAAL",
+            |m: &GetSummonActivityDataScRsp| { &m.GPCLJGMNAAL },
+            |m: &mut GetSummonActivityDataScRsp| { &mut m.GPCLJGMNAAL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSummonActivityDataScRsp>(
             "GetSummonActivityDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetSummonActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.DFCFMHGLDLA.push(is.read_message()?);
-                },
-                56 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                18 => {
+                    self.GPCLJGMNAAL.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetSummonActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DFCFMHGLDLA {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        for value in &self.GPCLJGMNAAL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DFCFMHGLDLA {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
+        for v in &self.GPCLJGMNAAL {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetSummonActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.DFCFMHGLDLA.clear();
         self.retcode = 0;
+        self.GPCLJGMNAAL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSummonActivityDataScRsp {
         static instance: GetSummonActivityDataScRsp = GetSummonActivityDataScRsp {
-            DFCFMHGLDLA: ::std::vec::Vec::new(),
             retcode: 0,
+            GPCLJGMNAAL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetSummonActivityDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20GetSummonActivityDataScRsp.proto\x1a\x11NONKKOLHOAA.proto\"f\n\x1a\
-    GetSummonActivityDataScRsp\x12.\n\x0bDFCFMHGLDLA\x18\x08\x20\x03(\x0b2\
-    \x0c.NONKKOLHOAAR\x0bDFCFMHGLDLA\x12\x18\n\x07retcode\x18\x07\x20\x01(\r\
-    R\x07retcodeb\x06proto3\
+    \n\x20GetSummonActivityDataScRsp.proto\x1a\x11APKKMPBPPHG.proto\"f\n\x1a\
+    GetSummonActivityDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07r\
+    etcode\x12.\n\x0bGPCLJGMNAAL\x18\x02\x20\x03(\x0b2\x0c.APKKMPBPPHGR\x0bG\
+    PCLJGMNAALb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NONKKOLHOAA::file_descriptor().clone());
+            deps.push(super::APKKMPBPPHG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSummonActivityDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

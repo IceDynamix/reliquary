@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueExploreWinScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueExploreWinScNotify.JEAIGIADILE)
-    pub JEAIGIADILE: bool,
+    // @@protoc_insertion_point(field:SyncRogueExploreWinScNotify.AOGGGKIMBNA)
+    pub AOGGGKIMBNA: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueExploreWinScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncRogueExploreWinScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JEAIGIADILE",
-            |m: &SyncRogueExploreWinScNotify| { &m.JEAIGIADILE },
-            |m: &mut SyncRogueExploreWinScNotify| { &mut m.JEAIGIADILE },
+            "AOGGGKIMBNA",
+            |m: &SyncRogueExploreWinScNotify| { &m.AOGGGKIMBNA },
+            |m: &mut SyncRogueExploreWinScNotify| { &mut m.AOGGGKIMBNA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueExploreWinScNotify>(
             "SyncRogueExploreWinScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncRogueExploreWinScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.JEAIGIADILE = is.read_bool()?;
+                80 => {
+                    self.AOGGGKIMBNA = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncRogueExploreWinScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JEAIGIADILE != false {
+        if self.AOGGGKIMBNA != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SyncRogueExploreWinScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JEAIGIADILE != false {
-            os.write_bool(12, self.JEAIGIADILE)?;
+        if self.AOGGGKIMBNA != false {
+            os.write_bool(10, self.AOGGGKIMBNA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SyncRogueExploreWinScNotify {
     }
 
     fn clear(&mut self) {
-        self.JEAIGIADILE = false;
+        self.AOGGGKIMBNA = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueExploreWinScNotify {
         static instance: SyncRogueExploreWinScNotify = SyncRogueExploreWinScNotify {
-            JEAIGIADILE: false,
+            AOGGGKIMBNA: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueExploreWinScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!SyncRogueExploreWinScNotify.proto\"?\n\x1bSyncRogueExploreWinScNotify\
-    \x12\x20\n\x0bJEAIGIADILE\x18\x0c\x20\x01(\x08R\x0bJEAIGIADILEb\x06proto\
-    3\
+    \x12\x20\n\x0bAOGGGKIMBNA\x18\n\x20\x01(\x08R\x0bAOGGGKIMBNAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

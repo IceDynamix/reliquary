@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelEndRoundBattleStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelEndRoundBattleStageScRsp.FFDLKMOHIJN)
-    pub FFDLKMOHIJN: ::protobuf::EnumOrUnknown<super::DJNMELMAOLL::DJNMELMAOLL>,
     // @@protoc_insertion_point(field:ChimeraDuelEndRoundBattleStageScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelEndRoundBattleStageScRsp.BLCOCDGHKAC)
+    pub BLCOCDGHKAC: ::protobuf::EnumOrUnknown<super::EJNIPFOMJGN::EJNIPFOMJGN>,
     // message oneof groups
-    pub MGKEHFMCBBP: ::std::option::Option<chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP>,
+    pub OKAIINGCACL: ::std::option::Option<chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelEndRoundBattleStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,101 +50,101 @@ impl ChimeraDuelEndRoundBattleStageScRsp {
         ::std::default::Default::default()
     }
 
-    // .MCBLHIDODFC DDCNEFCHHFA = 1914;
+    // .MBPFEMGDHIL PMMGJDNFOKF = 1132;
 
-    pub fn DDCNEFCHHFA(&self) -> &super::MCBLHIDODFC::MCBLHIDODFC {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::DDCNEFCHHFA(ref v)) => v,
-            _ => <super::MCBLHIDODFC::MCBLHIDODFC as ::protobuf::Message>::default_instance(),
+    pub fn PMMGJDNFOKF(&self) -> &super::MBPFEMGDHIL::MBPFEMGDHIL {
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::PMMGJDNFOKF(ref v)) => v,
+            _ => <super::MBPFEMGDHIL::MBPFEMGDHIL as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_DDCNEFCHHFA(&mut self) {
-        self.MGKEHFMCBBP = ::std::option::Option::None;
+    pub fn clear_PMMGJDNFOKF(&mut self) {
+        self.OKAIINGCACL = ::std::option::Option::None;
     }
 
-    pub fn has_DDCNEFCHHFA(&self) -> bool {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::DDCNEFCHHFA(..)) => true,
+    pub fn has_PMMGJDNFOKF(&self) -> bool {
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::PMMGJDNFOKF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_DDCNEFCHHFA(&mut self, v: super::MCBLHIDODFC::MCBLHIDODFC) {
-        self.MGKEHFMCBBP = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::DDCNEFCHHFA(v))
+    pub fn set_PMMGJDNFOKF(&mut self, v: super::MBPFEMGDHIL::MBPFEMGDHIL) {
+        self.OKAIINGCACL = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::PMMGJDNFOKF(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_DDCNEFCHHFA(&mut self) -> &mut super::MCBLHIDODFC::MCBLHIDODFC {
-        if let ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::DDCNEFCHHFA(_)) = self.MGKEHFMCBBP {
+    pub fn mut_PMMGJDNFOKF(&mut self) -> &mut super::MBPFEMGDHIL::MBPFEMGDHIL {
+        if let ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::PMMGJDNFOKF(_)) = self.OKAIINGCACL {
         } else {
-            self.MGKEHFMCBBP = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::DDCNEFCHHFA(super::MCBLHIDODFC::MCBLHIDODFC::new()));
+            self.OKAIINGCACL = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::PMMGJDNFOKF(super::MBPFEMGDHIL::MBPFEMGDHIL::new()));
         }
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::DDCNEFCHHFA(ref mut v)) => v,
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::PMMGJDNFOKF(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_DDCNEFCHHFA(&mut self) -> super::MCBLHIDODFC::MCBLHIDODFC {
-        if self.has_DDCNEFCHHFA() {
-            match self.MGKEHFMCBBP.take() {
-                ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::DDCNEFCHHFA(v)) => v,
+    pub fn take_PMMGJDNFOKF(&mut self) -> super::MBPFEMGDHIL::MBPFEMGDHIL {
+        if self.has_PMMGJDNFOKF() {
+            match self.OKAIINGCACL.take() {
+                ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::PMMGJDNFOKF(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::MCBLHIDODFC::MCBLHIDODFC::new()
+            super::MBPFEMGDHIL::MBPFEMGDHIL::new()
         }
     }
 
-    // .BAMBDDOKNCO MABOAIEBGNO = 1288;
+    // .BFGKMCJEKGG HFNGAJJADCB = 873;
 
-    pub fn MABOAIEBGNO(&self) -> &super::BAMBDDOKNCO::BAMBDDOKNCO {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::MABOAIEBGNO(ref v)) => v,
-            _ => <super::BAMBDDOKNCO::BAMBDDOKNCO as ::protobuf::Message>::default_instance(),
+    pub fn HFNGAJJADCB(&self) -> &super::BFGKMCJEKGG::BFGKMCJEKGG {
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::HFNGAJJADCB(ref v)) => v,
+            _ => <super::BFGKMCJEKGG::BFGKMCJEKGG as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_MABOAIEBGNO(&mut self) {
-        self.MGKEHFMCBBP = ::std::option::Option::None;
+    pub fn clear_HFNGAJJADCB(&mut self) {
+        self.OKAIINGCACL = ::std::option::Option::None;
     }
 
-    pub fn has_MABOAIEBGNO(&self) -> bool {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::MABOAIEBGNO(..)) => true,
+    pub fn has_HFNGAJJADCB(&self) -> bool {
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::HFNGAJJADCB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_MABOAIEBGNO(&mut self, v: super::BAMBDDOKNCO::BAMBDDOKNCO) {
-        self.MGKEHFMCBBP = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::MABOAIEBGNO(v))
+    pub fn set_HFNGAJJADCB(&mut self, v: super::BFGKMCJEKGG::BFGKMCJEKGG) {
+        self.OKAIINGCACL = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::HFNGAJJADCB(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_MABOAIEBGNO(&mut self) -> &mut super::BAMBDDOKNCO::BAMBDDOKNCO {
-        if let ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::MABOAIEBGNO(_)) = self.MGKEHFMCBBP {
+    pub fn mut_HFNGAJJADCB(&mut self) -> &mut super::BFGKMCJEKGG::BFGKMCJEKGG {
+        if let ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::HFNGAJJADCB(_)) = self.OKAIINGCACL {
         } else {
-            self.MGKEHFMCBBP = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::MABOAIEBGNO(super::BAMBDDOKNCO::BAMBDDOKNCO::new()));
+            self.OKAIINGCACL = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::HFNGAJJADCB(super::BFGKMCJEKGG::BFGKMCJEKGG::new()));
         }
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::MABOAIEBGNO(ref mut v)) => v,
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::HFNGAJJADCB(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_MABOAIEBGNO(&mut self) -> super::BAMBDDOKNCO::BAMBDDOKNCO {
-        if self.has_MABOAIEBGNO() {
-            match self.MGKEHFMCBBP.take() {
-                ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::MABOAIEBGNO(v)) => v,
+    pub fn take_HFNGAJJADCB(&mut self) -> super::BFGKMCJEKGG::BFGKMCJEKGG {
+        if self.has_HFNGAJJADCB() {
+            match self.OKAIINGCACL.take() {
+                ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::HFNGAJJADCB(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::BAMBDDOKNCO::BAMBDDOKNCO::new()
+            super::BFGKMCJEKGG::BFGKMCJEKGG::new()
         }
     }
 
@@ -152,30 +152,30 @@ impl ChimeraDuelEndRoundBattleStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FFDLKMOHIJN",
-            |m: &ChimeraDuelEndRoundBattleStageScRsp| { &m.FFDLKMOHIJN },
-            |m: &mut ChimeraDuelEndRoundBattleStageScRsp| { &mut m.FFDLKMOHIJN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChimeraDuelEndRoundBattleStageScRsp| { &m.retcode },
             |m: &mut ChimeraDuelEndRoundBattleStageScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MCBLHIDODFC::MCBLHIDODFC>(
-            "DDCNEFCHHFA",
-            ChimeraDuelEndRoundBattleStageScRsp::has_DDCNEFCHHFA,
-            ChimeraDuelEndRoundBattleStageScRsp::DDCNEFCHHFA,
-            ChimeraDuelEndRoundBattleStageScRsp::mut_DDCNEFCHHFA,
-            ChimeraDuelEndRoundBattleStageScRsp::set_DDCNEFCHHFA,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BLCOCDGHKAC",
+            |m: &ChimeraDuelEndRoundBattleStageScRsp| { &m.BLCOCDGHKAC },
+            |m: &mut ChimeraDuelEndRoundBattleStageScRsp| { &mut m.BLCOCDGHKAC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BAMBDDOKNCO::BAMBDDOKNCO>(
-            "MABOAIEBGNO",
-            ChimeraDuelEndRoundBattleStageScRsp::has_MABOAIEBGNO,
-            ChimeraDuelEndRoundBattleStageScRsp::MABOAIEBGNO,
-            ChimeraDuelEndRoundBattleStageScRsp::mut_MABOAIEBGNO,
-            ChimeraDuelEndRoundBattleStageScRsp::set_MABOAIEBGNO,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MBPFEMGDHIL::MBPFEMGDHIL>(
+            "PMMGJDNFOKF",
+            ChimeraDuelEndRoundBattleStageScRsp::has_PMMGJDNFOKF,
+            ChimeraDuelEndRoundBattleStageScRsp::PMMGJDNFOKF,
+            ChimeraDuelEndRoundBattleStageScRsp::mut_PMMGJDNFOKF,
+            ChimeraDuelEndRoundBattleStageScRsp::set_PMMGJDNFOKF,
         ));
-        oneofs.push(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BFGKMCJEKGG::BFGKMCJEKGG>(
+            "HFNGAJJADCB",
+            ChimeraDuelEndRoundBattleStageScRsp::has_HFNGAJJADCB,
+            ChimeraDuelEndRoundBattleStageScRsp::HFNGAJJADCB,
+            ChimeraDuelEndRoundBattleStageScRsp::mut_HFNGAJJADCB,
+            ChimeraDuelEndRoundBattleStageScRsp::set_HFNGAJJADCB,
+        ));
+        oneofs.push(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelEndRoundBattleStageScRsp>(
             "ChimeraDuelEndRoundBattleStageScRsp",
             fields,
@@ -194,17 +194,17 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.FFDLKMOHIJN = is.read_enum_or_unknown()?;
-                },
-                40 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                15314 => {
-                    self.MGKEHFMCBBP = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::DDCNEFCHHFA(is.read_message()?));
+                16 => {
+                    self.BLCOCDGHKAC = is.read_enum_or_unknown()?;
                 },
-                10306 => {
-                    self.MGKEHFMCBBP = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::MABOAIEBGNO(is.read_message()?));
+                9058 => {
+                    self.OKAIINGCACL = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::PMMGJDNFOKF(is.read_message()?));
+                },
+                6986 => {
+                    self.OKAIINGCACL = ::std::option::Option::Some(chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::HFNGAJJADCB(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -218,19 +218,19 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FFDLKMOHIJN != ::protobuf::EnumOrUnknown::new(super::DJNMELMAOLL::DJNMELMAOLL::DJNMELMAOLL_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(2, self.FFDLKMOHIJN.value());
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        if let ::std::option::Option::Some(ref v) = self.MGKEHFMCBBP {
+        if self.BLCOCDGHKAC != ::protobuf::EnumOrUnknown::new(super::EJNIPFOMJGN::EJNIPFOMJGN::EJNIPFOMJGN_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(2, self.BLCOCDGHKAC.value());
+        }
+        if let ::std::option::Option::Some(ref v) = self.OKAIINGCACL {
             match v {
-                &chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::DDCNEFCHHFA(ref v) => {
+                &chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::PMMGJDNFOKF(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::MABOAIEBGNO(ref v) => {
+                &chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::HFNGAJJADCB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -242,19 +242,19 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FFDLKMOHIJN != ::protobuf::EnumOrUnknown::new(super::DJNMELMAOLL::DJNMELMAOLL::DJNMELMAOLL_GKJBAODJMJG) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.FFDLKMOHIJN))?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.MGKEHFMCBBP {
+        if self.BLCOCDGHKAC != ::protobuf::EnumOrUnknown::new(super::EJNIPFOMJGN::EJNIPFOMJGN::EJNIPFOMJGN_MNFEPONEDDJ) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.BLCOCDGHKAC))?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.OKAIINGCACL {
             match v {
-                &chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::DDCNEFCHHFA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1914, v, os)?;
+                &chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::PMMGJDNFOKF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1132, v, os)?;
                 },
-                &chimera_duel_end_round_battle_stage_sc_rsp::MGKEHFMCBBP::MABOAIEBGNO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1288, v, os)?;
+                &chimera_duel_end_round_battle_stage_sc_rsp::OKAIINGCACL::HFNGAJJADCB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(873, v, os)?;
                 },
             };
         }
@@ -275,18 +275,18 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.FFDLKMOHIJN = ::protobuf::EnumOrUnknown::new(super::DJNMELMAOLL::DJNMELMAOLL::DJNMELMAOLL_GKJBAODJMJG);
         self.retcode = 0;
-        self.MGKEHFMCBBP = ::std::option::Option::None;
-        self.MGKEHFMCBBP = ::std::option::Option::None;
+        self.BLCOCDGHKAC = ::protobuf::EnumOrUnknown::new(super::EJNIPFOMJGN::EJNIPFOMJGN::EJNIPFOMJGN_MNFEPONEDDJ);
+        self.OKAIINGCACL = ::std::option::Option::None;
+        self.OKAIINGCACL = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelEndRoundBattleStageScRsp {
         static instance: ChimeraDuelEndRoundBattleStageScRsp = ChimeraDuelEndRoundBattleStageScRsp {
-            FFDLKMOHIJN: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
-            MGKEHFMCBBP: ::std::option::Option::None,
+            BLCOCDGHKAC: ::protobuf::EnumOrUnknown::from_i32(0),
+            OKAIINGCACL: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -315,39 +315,39 @@ pub mod chimera_duel_end_round_battle_stage_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ChimeraDuelEndRoundBattleStageScRsp.MGKEHFMCBBP)
-    pub enum MGKEHFMCBBP {
-        // @@protoc_insertion_point(oneof_field:ChimeraDuelEndRoundBattleStageScRsp.DDCNEFCHHFA)
-        DDCNEFCHHFA(super::super::MCBLHIDODFC::MCBLHIDODFC),
-        // @@protoc_insertion_point(oneof_field:ChimeraDuelEndRoundBattleStageScRsp.MABOAIEBGNO)
-        MABOAIEBGNO(super::super::BAMBDDOKNCO::BAMBDDOKNCO),
+    // @@protoc_insertion_point(oneof:ChimeraDuelEndRoundBattleStageScRsp.OKAIINGCACL)
+    pub enum OKAIINGCACL {
+        // @@protoc_insertion_point(oneof_field:ChimeraDuelEndRoundBattleStageScRsp.PMMGJDNFOKF)
+        PMMGJDNFOKF(super::super::MBPFEMGDHIL::MBPFEMGDHIL),
+        // @@protoc_insertion_point(oneof_field:ChimeraDuelEndRoundBattleStageScRsp.HFNGAJJADCB)
+        HFNGAJJADCB(super::super::BFGKMCJEKGG::BFGKMCJEKGG),
     }
 
-    impl ::protobuf::Oneof for MGKEHFMCBBP {
+    impl ::protobuf::Oneof for OKAIINGCACL {
     }
 
-    impl ::protobuf::OneofFull for MGKEHFMCBBP {
+    impl ::protobuf::OneofFull for OKAIINGCACL {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ChimeraDuelEndRoundBattleStageScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("MGKEHFMCBBP").unwrap()).clone()
+            descriptor.get(|| <super::ChimeraDuelEndRoundBattleStageScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("OKAIINGCACL").unwrap()).clone()
         }
     }
 
-    impl MGKEHFMCBBP {
+    impl OKAIINGCACL {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MGKEHFMCBBP>("MGKEHFMCBBP")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OKAIINGCACL>("OKAIINGCACL")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)ChimeraDuelEndRoundBattleStageScRsp.proto\x1a\x11BAMBDDOKNCO.proto\
-    \x1a\x11DJNMELMAOLL.proto\x1a\x11MCBLHIDODFC.proto\"\xe4\x01\n#ChimeraDu\
-    elEndRoundBattleStageScRsp\x12.\n\x0bFFDLKMOHIJN\x18\x02\x20\x01(\x0e2\
-    \x0c.DJNMELMAOLLR\x0bFFDLKMOHIJN\x12\x18\n\x07retcode\x18\x05\x20\x01(\r\
-    R\x07retcode\x121\n\x0bDDCNEFCHHFA\x18\xfa\x0e\x20\x01(\x0b2\x0c.MCBLHID\
-    ODFCH\0R\x0bDDCNEFCHHFA\x121\n\x0bMABOAIEBGNO\x18\x88\n\x20\x01(\x0b2\
-    \x0c.BAMBDDOKNCOH\0R\x0bMABOAIEBGNOB\r\n\x0bMGKEHFMCBBPb\x06proto3\
+    \n)ChimeraDuelEndRoundBattleStageScRsp.proto\x1a\x11BFGKMCJEKGG.proto\
+    \x1a\x11EJNIPFOMJGN.proto\x1a\x11MBPFEMGDHIL.proto\"\xe4\x01\n#ChimeraDu\
+    elEndRoundBattleStageScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07r\
+    etcode\x12.\n\x0bBLCOCDGHKAC\x18\x02\x20\x01(\x0e2\x0c.EJNIPFOMJGNR\x0bB\
+    LCOCDGHKAC\x121\n\x0bPMMGJDNFOKF\x18\xec\x08\x20\x01(\x0b2\x0c.MBPFEMGDH\
+    ILH\0R\x0bPMMGJDNFOKF\x121\n\x0bHFNGAJJADCB\x18\xe9\x06\x20\x01(\x0b2\
+    \x0c.BFGKMCJEKGGH\0R\x0bHFNGAJJADCBB\r\n\x0bOKAIINGCACLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -365,9 +365,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::BAMBDDOKNCO::file_descriptor().clone());
-            deps.push(super::DJNMELMAOLL::file_descriptor().clone());
-            deps.push(super::MCBLHIDODFC::file_descriptor().clone());
+            deps.push(super::BFGKMCJEKGG::file_descriptor().clone());
+            deps.push(super::EJNIPFOMJGN::file_descriptor().clone());
+            deps.push(super::MBPFEMGDHIL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChimeraDuelEndRoundBattleStageScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

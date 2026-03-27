@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct TrainPartySyncUpdateScNotify {
     // message fields
     // @@protoc_insertion_point(field:TrainPartySyncUpdateScNotify.update_dynamic_list)
-    pub update_dynamic_list: ::std::vec::Vec<super::CDDKOHPDMBJ::CDDKOHPDMBJ>,
+    pub update_dynamic_list: ::std::vec::Vec<super::OAIGADPIDHF::OAIGADPIDHF>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartySyncUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,7 +72,7 @@ impl ::protobuf::Message for TrainPartySyncUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                106 => {
                     self.update_dynamic_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for TrainPartySyncUpdateScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.update_dynamic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartySyncUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"TrainPartySyncUpdateScNotify.proto\x1a\x11CDDKOHPDMBJ.proto\"\\\n\
-    \x1cTrainPartySyncUpdateScNotify\x12<\n\x13update_dynamic_list\x18\x07\
-    \x20\x03(\x0b2\x0c.CDDKOHPDMBJR\x11updateDynamicListb\x06proto3\
+    \n\"TrainPartySyncUpdateScNotify.proto\x1a\x11OAIGADPIDHF.proto\"\\\n\
+    \x1cTrainPartySyncUpdateScNotify\x12<\n\x13update_dynamic_list\x18\r\x20\
+    \x03(\x0b2\x0c.OAIGADPIDHFR\x11updateDynamicListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CDDKOHPDMBJ::file_descriptor().clone());
+            deps.push(super::OAIGADPIDHF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartySyncUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

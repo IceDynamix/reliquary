@@ -31,7 +31,7 @@ pub struct EnterChessRogueAeonRoomScRsp {
     // @@protoc_insertion_point(field:EnterChessRogueAeonRoomScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:EnterChessRogueAeonRoomScRsp.stage_info)
-    pub stage_info: ::protobuf::MessageField<super::GCLPLFACEIC::GCLPLFACEIC>,
+    pub stage_info: ::protobuf::MessageField<super::CJOOMOBNBPB::CJOOMOBNBPB>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterChessRogueAeonRoomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl EnterChessRogueAeonRoomScRsp {
             |m: &EnterChessRogueAeonRoomScRsp| { &m.retcode },
             |m: &mut EnterChessRogueAeonRoomScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCLPLFACEIC::GCLPLFACEIC>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJOOMOBNBPB::CJOOMOBNBPB>(
             "stage_info",
             |m: &EnterChessRogueAeonRoomScRsp| { &m.stage_info },
             |m: &mut EnterChessRogueAeonRoomScRsp| { &mut m.stage_info },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for EnterChessRogueAeonRoomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for EnterChessRogueAeonRoomScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
@@ -111,10 +111,10 @@ impl ::protobuf::Message for EnterChessRogueAeonRoomScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterChessRogueAeonRoomScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"EnterChessRogueAeonRoomScRsp.proto\x1a\x11GCLPLFACEIC.proto\"e\n\x1c\
-    EnterChessRogueAeonRoomScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
-    \x07retcode\x12+\n\nstage_info\x18\x05\x20\x01(\x0b2\x0c.GCLPLFACEICR\ts\
-    tageInfob\x06proto3\
+    \n\"EnterChessRogueAeonRoomScRsp.proto\x1a\x11CJOOMOBNBPB.proto\"e\n\x1c\
+    EnterChessRogueAeonRoomScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07r\
+    etcode\x12+\n\nstage_info\x18\x0b\x20\x01(\x0b2\x0c.CJOOMOBNBPBR\tstageI\
+    nfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GCLPLFACEIC::file_descriptor().clone());
+            deps.push(super::CJOOMOBNBPB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterChessRogueAeonRoomScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

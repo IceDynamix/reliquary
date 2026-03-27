@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelEndRoundBattleStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelEndRoundBattleStageCsReq.AONBHEHBJFA)
-    pub AONBHEHBJFA: u32,
     // @@protoc_insertion_point(field:ChimeraDuelEndRoundBattleStageCsReq.stt)
-    pub stt: ::protobuf::MessageField<super::NHOBKHNEJIH::NHOBKHNEJIH>,
-    // @@protoc_insertion_point(field:ChimeraDuelEndRoundBattleStageCsReq.FFDLKMOHIJN)
-    pub FFDLKMOHIJN: ::protobuf::EnumOrUnknown<super::DJNMELMAOLL::DJNMELMAOLL>,
+    pub stt: ::protobuf::MessageField<super::NCFNNFIDAMD::NCFNNFIDAMD>,
+    // @@protoc_insertion_point(field:ChimeraDuelEndRoundBattleStageCsReq.BLCOCDGHKAC)
+    pub BLCOCDGHKAC: ::protobuf::EnumOrUnknown<super::EJNIPFOMJGN::EJNIPFOMJGN>,
+    // @@protoc_insertion_point(field:ChimeraDuelEndRoundBattleStageCsReq.EBBHIBNCAMP)
+    pub EBBHIBNCAMP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelEndRoundBattleStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl ChimeraDuelEndRoundBattleStageCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AONBHEHBJFA",
-            |m: &ChimeraDuelEndRoundBattleStageCsReq| { &m.AONBHEHBJFA },
-            |m: &mut ChimeraDuelEndRoundBattleStageCsReq| { &mut m.AONBHEHBJFA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NHOBKHNEJIH::NHOBKHNEJIH>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCFNNFIDAMD::NCFNNFIDAMD>(
             "stt",
             |m: &ChimeraDuelEndRoundBattleStageCsReq| { &m.stt },
             |m: &mut ChimeraDuelEndRoundBattleStageCsReq| { &mut m.stt },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FFDLKMOHIJN",
-            |m: &ChimeraDuelEndRoundBattleStageCsReq| { &m.FFDLKMOHIJN },
-            |m: &mut ChimeraDuelEndRoundBattleStageCsReq| { &mut m.FFDLKMOHIJN },
+            "BLCOCDGHKAC",
+            |m: &ChimeraDuelEndRoundBattleStageCsReq| { &m.BLCOCDGHKAC },
+            |m: &mut ChimeraDuelEndRoundBattleStageCsReq| { &mut m.BLCOCDGHKAC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EBBHIBNCAMP",
+            |m: &ChimeraDuelEndRoundBattleStageCsReq| { &m.EBBHIBNCAMP },
+            |m: &mut ChimeraDuelEndRoundBattleStageCsReq| { &mut m.EBBHIBNCAMP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelEndRoundBattleStageCsReq>(
             "ChimeraDuelEndRoundBattleStageCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.AONBHEHBJFA = is.read_uint32()?;
-                },
-                106 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
-                72 => {
-                    self.FFDLKMOHIJN = is.read_enum_or_unknown()?;
+                24 => {
+                    self.BLCOCDGHKAC = is.read_enum_or_unknown()?;
+                },
+                40 => {
+                    self.EBBHIBNCAMP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AONBHEHBJFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.AONBHEHBJFA);
-        }
         if let Some(v) = self.stt.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.FFDLKMOHIJN != ::protobuf::EnumOrUnknown::new(super::DJNMELMAOLL::DJNMELMAOLL::DJNMELMAOLL_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(9, self.FFDLKMOHIJN.value());
+        if self.BLCOCDGHKAC != ::protobuf::EnumOrUnknown::new(super::EJNIPFOMJGN::EJNIPFOMJGN::EJNIPFOMJGN_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(3, self.BLCOCDGHKAC.value());
+        }
+        if self.EBBHIBNCAMP != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.EBBHIBNCAMP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AONBHEHBJFA != 0 {
-            os.write_uint32(7, self.AONBHEHBJFA)?;
-        }
         if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.FFDLKMOHIJN != ::protobuf::EnumOrUnknown::new(super::DJNMELMAOLL::DJNMELMAOLL::DJNMELMAOLL_GKJBAODJMJG) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.FFDLKMOHIJN))?;
+        if self.BLCOCDGHKAC != ::protobuf::EnumOrUnknown::new(super::EJNIPFOMJGN::EJNIPFOMJGN::EJNIPFOMJGN_MNFEPONEDDJ) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.BLCOCDGHKAC))?;
+        }
+        if self.EBBHIBNCAMP != 0 {
+            os.write_uint32(5, self.EBBHIBNCAMP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for ChimeraDuelEndRoundBattleStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.AONBHEHBJFA = 0;
         self.stt.clear();
-        self.FFDLKMOHIJN = ::protobuf::EnumOrUnknown::new(super::DJNMELMAOLL::DJNMELMAOLL::DJNMELMAOLL_GKJBAODJMJG);
+        self.BLCOCDGHKAC = ::protobuf::EnumOrUnknown::new(super::EJNIPFOMJGN::EJNIPFOMJGN::EJNIPFOMJGN_MNFEPONEDDJ);
+        self.EBBHIBNCAMP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelEndRoundBattleStageCsReq {
         static instance: ChimeraDuelEndRoundBattleStageCsReq = ChimeraDuelEndRoundBattleStageCsReq {
-            AONBHEHBJFA: 0,
             stt: ::protobuf::MessageField::none(),
-            FFDLKMOHIJN: ::protobuf::EnumOrUnknown::from_i32(0),
+            BLCOCDGHKAC: ::protobuf::EnumOrUnknown::from_i32(0),
+            EBBHIBNCAMP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelEndRoundBattleStageCsReq 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)ChimeraDuelEndRoundBattleStageCsReq.proto\x1a\x11DJNMELMAOLL.proto\
-    \x1a\x11NHOBKHNEJIH.proto\"\x97\x01\n#ChimeraDuelEndRoundBattleStageCsRe\
-    q\x12\x20\n\x0bAONBHEHBJFA\x18\x07\x20\x01(\rR\x0bAONBHEHBJFA\x12\x1e\n\
-    \x03stt\x18\r\x20\x01(\x0b2\x0c.NHOBKHNEJIHR\x03stt\x12.\n\x0bFFDLKMOHIJ\
-    N\x18\t\x20\x01(\x0e2\x0c.DJNMELMAOLLR\x0bFFDLKMOHIJNb\x06proto3\
+    \n)ChimeraDuelEndRoundBattleStageCsReq.proto\x1a\x11EJNIPFOMJGN.proto\
+    \x1a\x11NCFNNFIDAMD.proto\"\x97\x01\n#ChimeraDuelEndRoundBattleStageCsRe\
+    q\x12\x1e\n\x03stt\x18\x06\x20\x01(\x0b2\x0c.NCFNNFIDAMDR\x03stt\x12.\n\
+    \x0bBLCOCDGHKAC\x18\x03\x20\x01(\x0e2\x0c.EJNIPFOMJGNR\x0bBLCOCDGHKAC\
+    \x12\x20\n\x0bEBBHIBNCAMP\x18\x05\x20\x01(\rR\x0bEBBHIBNCAMPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,8 +206,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DJNMELMAOLL::file_descriptor().clone());
-            deps.push(super::NHOBKHNEJIH::file_descriptor().clone());
+            deps.push(super::EJNIPFOMJGN::file_descriptor().clone());
+            deps.push(super::NCFNNFIDAMD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChimeraDuelEndRoundBattleStageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

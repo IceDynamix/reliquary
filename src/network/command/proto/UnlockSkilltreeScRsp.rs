@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UnlockSkilltreeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UnlockSkilltreeScRsp.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:UnlockSkilltreeScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:UnlockSkilltreeScRsp.level)
+    pub level: u32,
     // @@protoc_insertion_point(field:UnlockSkilltreeScRsp.point_id)
     pub point_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl UnlockSkilltreeScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &UnlockSkilltreeScRsp| { &m.level },
-            |m: &mut UnlockSkilltreeScRsp| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &UnlockSkilltreeScRsp| { &m.retcode },
             |m: &mut UnlockSkilltreeScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &UnlockSkilltreeScRsp| { &m.level },
+            |m: &mut UnlockSkilltreeScRsp| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "point_id",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for UnlockSkilltreeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.level = is.read_uint32()?;
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 24 => {
-                    self.retcode = is.read_uint32()?;
+                    self.level = is.read_uint32()?;
                 },
                 112 => {
                     self.point_id = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for UnlockSkilltreeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.level);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.level);
         }
         if self.point_id != 0 {
             my_size += ::protobuf::rt::uint32_size(14, self.point_id);
@@ -122,11 +122,11 @@ impl ::protobuf::Message for UnlockSkilltreeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(11, self.level)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(3, self.level)?;
         }
         if self.point_id != 0 {
             os.write_uint32(14, self.point_id)?;
@@ -148,16 +148,16 @@ impl ::protobuf::Message for UnlockSkilltreeScRsp {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.retcode = 0;
+        self.level = 0;
         self.point_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UnlockSkilltreeScRsp {
         static instance: UnlockSkilltreeScRsp = UnlockSkilltreeScRsp {
-            level: 0,
             retcode: 0,
+            level: 0,
             point_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for UnlockSkilltreeScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aUnlockSkilltreeScRsp.proto\"a\n\x14UnlockSkilltreeScRsp\x12\x14\n\
-    \x05level\x18\x0b\x20\x01(\rR\x05level\x12\x18\n\x07retcode\x18\x03\x20\
-    \x01(\rR\x07retcode\x12\x19\n\x08point_id\x18\x0e\x20\x01(\rR\x07pointId\
-    b\x06proto3\
+    \n\x1aUnlockSkilltreeScRsp.proto\"a\n\x14UnlockSkilltreeScRsp\x12\x18\n\
+    \x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x14\n\x05level\x18\x03\x20\
+    \x01(\rR\x05level\x12\x19\n\x08point_id\x18\x0e\x20\x01(\rR\x07pointIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

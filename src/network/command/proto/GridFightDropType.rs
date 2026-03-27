@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GridFightDropType)
 pub enum GridFightDropType {
-    // @@protoc_insertion_point(enum_value:GridFightDropType.FEGNMAEGDHG_GKJBAODJMJG)
-    FEGNMAEGDHG_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:GridFightDropType.FEGNMAEGDHG_HNGHAHBGAKP)
-    FEGNMAEGDHG_HNGHAHBGAKP = 1,
-    // @@protoc_insertion_point(enum_value:GridFightDropType.FEGNMAEGDHG_exp)
-    FEGNMAEGDHG_exp = 2,
-    // @@protoc_insertion_point(enum_value:GridFightDropType.FEGNMAEGDHG_BPJOACPFKJM)
-    FEGNMAEGDHG_BPJOACPFKJM = 3,
-    // @@protoc_insertion_point(enum_value:GridFightDropType.FEGNMAEGDHG_OKBJDJGCFPE)
-    FEGNMAEGDHG_OKBJDJGCFPE = 4,
-    // @@protoc_insertion_point(enum_value:GridFightDropType.FEGNMAEGDHG_GJIBLKGMGMD)
-    FEGNMAEGDHG_GJIBLKGMGMD = 5,
-    // @@protoc_insertion_point(enum_value:GridFightDropType.FEGNMAEGDHG_BCBKKLDONDJ)
-    FEGNMAEGDHG_BCBKKLDONDJ = 6,
-    // @@protoc_insertion_point(enum_value:GridFightDropType.FEGNMAEGDHG_KEDFIABFGKC)
-    FEGNMAEGDHG_KEDFIABFGKC = 7,
+    // @@protoc_insertion_point(enum_value:GridFightDropType.GridFightDropType_MNFEPONEDDJ)
+    GridFightDropType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:GridFightDropType.GridFightDropType_item_value)
+    GridFightDropType_item_value = 1,
+    // @@protoc_insertion_point(enum_value:GridFightDropType.GridFightDropType_exp)
+    GridFightDropType_exp = 2,
+    // @@protoc_insertion_point(enum_value:GridFightDropType.GridFightDropType_EONEKNGLGJD)
+    GridFightDropType_EONEKNGLGJD = 3,
+    // @@protoc_insertion_point(enum_value:GridFightDropType.GridFightDropType_role_goods_info)
+    GridFightDropType_role_goods_info = 4,
+    // @@protoc_insertion_point(enum_value:GridFightDropType.GridFightDropType_DPKEKEFBJLI)
+    GridFightDropType_DPKEKEFBJLI = 5,
+    // @@protoc_insertion_point(enum_value:GridFightDropType.GridFightDropType_JGHBFLGKBCC)
+    GridFightDropType_JGHBFLGKBCC = 6,
+    // @@protoc_insertion_point(enum_value:GridFightDropType.GridFightDropType_DOINFBHBMOB)
+    GridFightDropType_DOINFBHBMOB = 7,
 }
 
 impl ::protobuf::Enum for GridFightDropType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for GridFightDropType {
 
     fn from_i32(value: i32) -> ::std::option::Option<GridFightDropType> {
         match value {
-            0 => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_HNGHAHBGAKP),
-            2 => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_exp),
-            3 => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_BPJOACPFKJM),
-            4 => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_OKBJDJGCFPE),
-            5 => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_GJIBLKGMGMD),
-            6 => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_BCBKKLDONDJ),
-            7 => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_KEDFIABFGKC),
+            0 => ::std::option::Option::Some(GridFightDropType::GridFightDropType_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(GridFightDropType::GridFightDropType_item_value),
+            2 => ::std::option::Option::Some(GridFightDropType::GridFightDropType_exp),
+            3 => ::std::option::Option::Some(GridFightDropType::GridFightDropType_EONEKNGLGJD),
+            4 => ::std::option::Option::Some(GridFightDropType::GridFightDropType_role_goods_info),
+            5 => ::std::option::Option::Some(GridFightDropType::GridFightDropType_DPKEKEFBJLI),
+            6 => ::std::option::Option::Some(GridFightDropType::GridFightDropType_JGHBFLGKBCC),
+            7 => ::std::option::Option::Some(GridFightDropType::GridFightDropType_DOINFBHBMOB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GridFightDropType> {
         match str {
-            "FEGNMAEGDHG_GKJBAODJMJG" => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_GKJBAODJMJG),
-            "FEGNMAEGDHG_HNGHAHBGAKP" => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_HNGHAHBGAKP),
-            "FEGNMAEGDHG_exp" => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_exp),
-            "FEGNMAEGDHG_BPJOACPFKJM" => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_BPJOACPFKJM),
-            "FEGNMAEGDHG_OKBJDJGCFPE" => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_OKBJDJGCFPE),
-            "FEGNMAEGDHG_GJIBLKGMGMD" => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_GJIBLKGMGMD),
-            "FEGNMAEGDHG_BCBKKLDONDJ" => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_BCBKKLDONDJ),
-            "FEGNMAEGDHG_KEDFIABFGKC" => ::std::option::Option::Some(GridFightDropType::FEGNMAEGDHG_KEDFIABFGKC),
+            "GridFightDropType_MNFEPONEDDJ" => ::std::option::Option::Some(GridFightDropType::GridFightDropType_MNFEPONEDDJ),
+            "GridFightDropType_item_value" => ::std::option::Option::Some(GridFightDropType::GridFightDropType_item_value),
+            "GridFightDropType_exp" => ::std::option::Option::Some(GridFightDropType::GridFightDropType_exp),
+            "GridFightDropType_EONEKNGLGJD" => ::std::option::Option::Some(GridFightDropType::GridFightDropType_EONEKNGLGJD),
+            "GridFightDropType_role_goods_info" => ::std::option::Option::Some(GridFightDropType::GridFightDropType_role_goods_info),
+            "GridFightDropType_DPKEKEFBJLI" => ::std::option::Option::Some(GridFightDropType::GridFightDropType_DPKEKEFBJLI),
+            "GridFightDropType_JGHBFLGKBCC" => ::std::option::Option::Some(GridFightDropType::GridFightDropType_JGHBFLGKBCC),
+            "GridFightDropType_DOINFBHBMOB" => ::std::option::Option::Some(GridFightDropType::GridFightDropType_DOINFBHBMOB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GridFightDropType] = &[
-        GridFightDropType::FEGNMAEGDHG_GKJBAODJMJG,
-        GridFightDropType::FEGNMAEGDHG_HNGHAHBGAKP,
-        GridFightDropType::FEGNMAEGDHG_exp,
-        GridFightDropType::FEGNMAEGDHG_BPJOACPFKJM,
-        GridFightDropType::FEGNMAEGDHG_OKBJDJGCFPE,
-        GridFightDropType::FEGNMAEGDHG_GJIBLKGMGMD,
-        GridFightDropType::FEGNMAEGDHG_BCBKKLDONDJ,
-        GridFightDropType::FEGNMAEGDHG_KEDFIABFGKC,
+        GridFightDropType::GridFightDropType_MNFEPONEDDJ,
+        GridFightDropType::GridFightDropType_item_value,
+        GridFightDropType::GridFightDropType_exp,
+        GridFightDropType::GridFightDropType_EONEKNGLGJD,
+        GridFightDropType::GridFightDropType_role_goods_info,
+        GridFightDropType::GridFightDropType_DPKEKEFBJLI,
+        GridFightDropType::GridFightDropType_JGHBFLGKBCC,
+        GridFightDropType::GridFightDropType_DOINFBHBMOB,
     ];
 }
 
@@ -106,7 +106,7 @@ impl ::protobuf::EnumFull for GridFightDropType {
 
 impl ::std::default::Default for GridFightDropType {
     fn default() -> Self {
-        GridFightDropType::FEGNMAEGDHG_GKJBAODJMJG
+        GridFightDropType::GridFightDropType_MNFEPONEDDJ
     }
 }
 
@@ -117,12 +117,13 @@ impl GridFightDropType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GridFightDropType.proto*\xf3\x01\n\x11GridFightDropType\x12\x1b\n\
-    \x17FEGNMAEGDHG_GKJBAODJMJG\x10\0\x12\x1b\n\x17FEGNMAEGDHG_HNGHAHBGAKP\
-    \x10\x01\x12\x13\n\x0fFEGNMAEGDHG_exp\x10\x02\x12\x1b\n\x17FEGNMAEGDHG_B\
-    PJOACPFKJM\x10\x03\x12\x1b\n\x17FEGNMAEGDHG_OKBJDJGCFPE\x10\x04\x12\x1b\
-    \n\x17FEGNMAEGDHG_GJIBLKGMGMD\x10\x05\x12\x1b\n\x17FEGNMAEGDHG_BCBKKLDON\
-    DJ\x10\x06\x12\x1b\n\x17FEGNMAEGDHG_KEDFIABFGKC\x10\x07b\x06proto3\
+    \n\x17GridFightDropType.proto*\xa6\x02\n\x11GridFightDropType\x12!\n\x1d\
+    GridFightDropType_MNFEPONEDDJ\x10\0\x12\x20\n\x1cGridFightDropType_item_\
+    value\x10\x01\x12\x19\n\x15GridFightDropType_exp\x10\x02\x12!\n\x1dGridF\
+    ightDropType_EONEKNGLGJD\x10\x03\x12%\n!GridFightDropType_role_goods_inf\
+    o\x10\x04\x12!\n\x1dGridFightDropType_DPKEKEFBJLI\x10\x05\x12!\n\x1dGrid\
+    FightDropType_JGHBFLGKBCC\x10\x06\x12!\n\x1dGridFightDropType_DOINFBHBMO\
+    B\x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

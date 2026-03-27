@@ -27,28 +27,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMarbleType)
 pub enum CmdMarbleType {
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_GKJBAODJMJG)
-    JIMCNLAGELM_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_LOAKODBJKDK)
-    JIMCNLAGELM_LOAKODBJKDK = 8282,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_ININKGJLGIO)
-    JIMCNLAGELM_ININKGJLGIO = 8276,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_DNIGKBNOKPD)
-    JIMCNLAGELM_DNIGKBNOKPD = 8285,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_HCDHGNAPGMK)
-    JIMCNLAGELM_HCDHGNAPGMK = 8290,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_NFKPPONAHHH)
-    JIMCNLAGELM_NFKPPONAHHH = 8274,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_OCBMMLKDJGO)
-    JIMCNLAGELM_OCBMMLKDJGO = 8280,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_DLOGKGMMDIN)
-    JIMCNLAGELM_DLOGKGMMDIN = 8288,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_CFHIJJOJNHM)
-    JIMCNLAGELM_CFHIJJOJNHM = 8281,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_DPAFMLBKOOL)
-    JIMCNLAGELM_DPAFMLBKOOL = 8286,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JIMCNLAGELM_FMDCDAGLDNG)
-    JIMCNLAGELM_FMDCDAGLDNG = 8271,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_MNFEPONEDDJ)
+    CmdMarbleType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_CIFLKCOIBHD)
+    CmdMarbleType_CIFLKCOIBHD = 8287,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_EDFMGPOIPIB)
+    CmdMarbleType_EDFMGPOIPIB = 8286,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_LAIHOMDLAMD)
+    CmdMarbleType_LAIHOMDLAMD = 8282,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_FLPHOEJOPBA)
+    CmdMarbleType_FLPHOEJOPBA = 8274,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_MMOABMBOGDC)
+    CmdMarbleType_MMOABMBOGDC = 8285,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_BPCOOJOAFLE)
+    CmdMarbleType_BPCOOJOAFLE = 8275,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_NBPEFCCJBLN)
+    CmdMarbleType_NBPEFCCJBLN = 8276,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_PNADMIACIAI)
+    CmdMarbleType_PNADMIACIAI = 8272,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_OFDJOECJLKE)
+    CmdMarbleType_OFDJOECJLKE = 8271,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleType_DHFCGAMBGBB)
+    CmdMarbleType_DHFCGAMBGBB = 8289,
 }
 
 impl ::protobuf::Enum for CmdMarbleType {
@@ -60,50 +60,50 @@ impl ::protobuf::Enum for CmdMarbleType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMarbleType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_GKJBAODJMJG),
-            8282 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_LOAKODBJKDK),
-            8276 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_ININKGJLGIO),
-            8285 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_DNIGKBNOKPD),
-            8290 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_HCDHGNAPGMK),
-            8274 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_NFKPPONAHHH),
-            8280 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_OCBMMLKDJGO),
-            8288 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_DLOGKGMMDIN),
-            8281 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_CFHIJJOJNHM),
-            8286 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_DPAFMLBKOOL),
-            8271 => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_FMDCDAGLDNG),
+            0 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_MNFEPONEDDJ),
+            8287 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_CIFLKCOIBHD),
+            8286 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_EDFMGPOIPIB),
+            8282 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_LAIHOMDLAMD),
+            8274 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_FLPHOEJOPBA),
+            8285 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_MMOABMBOGDC),
+            8275 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_BPCOOJOAFLE),
+            8276 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_NBPEFCCJBLN),
+            8272 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_PNADMIACIAI),
+            8271 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_OFDJOECJLKE),
+            8289 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_DHFCGAMBGBB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMarbleType> {
         match str {
-            "JIMCNLAGELM_GKJBAODJMJG" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_GKJBAODJMJG),
-            "JIMCNLAGELM_LOAKODBJKDK" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_LOAKODBJKDK),
-            "JIMCNLAGELM_ININKGJLGIO" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_ININKGJLGIO),
-            "JIMCNLAGELM_DNIGKBNOKPD" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_DNIGKBNOKPD),
-            "JIMCNLAGELM_HCDHGNAPGMK" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_HCDHGNAPGMK),
-            "JIMCNLAGELM_NFKPPONAHHH" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_NFKPPONAHHH),
-            "JIMCNLAGELM_OCBMMLKDJGO" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_OCBMMLKDJGO),
-            "JIMCNLAGELM_DLOGKGMMDIN" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_DLOGKGMMDIN),
-            "JIMCNLAGELM_CFHIJJOJNHM" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_CFHIJJOJNHM),
-            "JIMCNLAGELM_DPAFMLBKOOL" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_DPAFMLBKOOL),
-            "JIMCNLAGELM_FMDCDAGLDNG" => ::std::option::Option::Some(CmdMarbleType::JIMCNLAGELM_FMDCDAGLDNG),
+            "CmdMarbleType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_MNFEPONEDDJ),
+            "CmdMarbleType_CIFLKCOIBHD" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_CIFLKCOIBHD),
+            "CmdMarbleType_EDFMGPOIPIB" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_EDFMGPOIPIB),
+            "CmdMarbleType_LAIHOMDLAMD" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_LAIHOMDLAMD),
+            "CmdMarbleType_FLPHOEJOPBA" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_FLPHOEJOPBA),
+            "CmdMarbleType_MMOABMBOGDC" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_MMOABMBOGDC),
+            "CmdMarbleType_BPCOOJOAFLE" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_BPCOOJOAFLE),
+            "CmdMarbleType_NBPEFCCJBLN" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_NBPEFCCJBLN),
+            "CmdMarbleType_PNADMIACIAI" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_PNADMIACIAI),
+            "CmdMarbleType_OFDJOECJLKE" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_OFDJOECJLKE),
+            "CmdMarbleType_DHFCGAMBGBB" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleType_DHFCGAMBGBB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMarbleType] = &[
-        CmdMarbleType::JIMCNLAGELM_GKJBAODJMJG,
-        CmdMarbleType::JIMCNLAGELM_LOAKODBJKDK,
-        CmdMarbleType::JIMCNLAGELM_ININKGJLGIO,
-        CmdMarbleType::JIMCNLAGELM_DNIGKBNOKPD,
-        CmdMarbleType::JIMCNLAGELM_HCDHGNAPGMK,
-        CmdMarbleType::JIMCNLAGELM_NFKPPONAHHH,
-        CmdMarbleType::JIMCNLAGELM_OCBMMLKDJGO,
-        CmdMarbleType::JIMCNLAGELM_DLOGKGMMDIN,
-        CmdMarbleType::JIMCNLAGELM_CFHIJJOJNHM,
-        CmdMarbleType::JIMCNLAGELM_DPAFMLBKOOL,
-        CmdMarbleType::JIMCNLAGELM_FMDCDAGLDNG,
+        CmdMarbleType::CmdMarbleType_MNFEPONEDDJ,
+        CmdMarbleType::CmdMarbleType_CIFLKCOIBHD,
+        CmdMarbleType::CmdMarbleType_EDFMGPOIPIB,
+        CmdMarbleType::CmdMarbleType_LAIHOMDLAMD,
+        CmdMarbleType::CmdMarbleType_FLPHOEJOPBA,
+        CmdMarbleType::CmdMarbleType_MMOABMBOGDC,
+        CmdMarbleType::CmdMarbleType_BPCOOJOAFLE,
+        CmdMarbleType::CmdMarbleType_NBPEFCCJBLN,
+        CmdMarbleType::CmdMarbleType_PNADMIACIAI,
+        CmdMarbleType::CmdMarbleType_OFDJOECJLKE,
+        CmdMarbleType::CmdMarbleType_DHFCGAMBGBB,
     ];
 }
 
@@ -115,17 +115,17 @@ impl ::protobuf::EnumFull for CmdMarbleType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMarbleType::JIMCNLAGELM_GKJBAODJMJG => 0,
-            CmdMarbleType::JIMCNLAGELM_LOAKODBJKDK => 1,
-            CmdMarbleType::JIMCNLAGELM_ININKGJLGIO => 2,
-            CmdMarbleType::JIMCNLAGELM_DNIGKBNOKPD => 3,
-            CmdMarbleType::JIMCNLAGELM_HCDHGNAPGMK => 4,
-            CmdMarbleType::JIMCNLAGELM_NFKPPONAHHH => 5,
-            CmdMarbleType::JIMCNLAGELM_OCBMMLKDJGO => 6,
-            CmdMarbleType::JIMCNLAGELM_DLOGKGMMDIN => 7,
-            CmdMarbleType::JIMCNLAGELM_CFHIJJOJNHM => 8,
-            CmdMarbleType::JIMCNLAGELM_DPAFMLBKOOL => 9,
-            CmdMarbleType::JIMCNLAGELM_FMDCDAGLDNG => 10,
+            CmdMarbleType::CmdMarbleType_MNFEPONEDDJ => 0,
+            CmdMarbleType::CmdMarbleType_CIFLKCOIBHD => 1,
+            CmdMarbleType::CmdMarbleType_EDFMGPOIPIB => 2,
+            CmdMarbleType::CmdMarbleType_LAIHOMDLAMD => 3,
+            CmdMarbleType::CmdMarbleType_FLPHOEJOPBA => 4,
+            CmdMarbleType::CmdMarbleType_MMOABMBOGDC => 5,
+            CmdMarbleType::CmdMarbleType_BPCOOJOAFLE => 6,
+            CmdMarbleType::CmdMarbleType_NBPEFCCJBLN => 7,
+            CmdMarbleType::CmdMarbleType_PNADMIACIAI => 8,
+            CmdMarbleType::CmdMarbleType_OFDJOECJLKE => 9,
+            CmdMarbleType::CmdMarbleType_DHFCGAMBGBB => 10,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -133,7 +133,7 @@ impl ::protobuf::EnumFull for CmdMarbleType {
 
 impl ::std::default::Default for CmdMarbleType {
     fn default() -> Self {
-        CmdMarbleType::JIMCNLAGELM_GKJBAODJMJG
+        CmdMarbleType::CmdMarbleType_MNFEPONEDDJ
     }
 }
 
@@ -144,14 +144,15 @@ impl CmdMarbleType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdMarbleType.proto*\xd8\x02\n\rCmdMarbleType\x12\x1b\n\x17JIMCNLA\
-    GELM_GKJBAODJMJG\x10\0\x12\x1c\n\x17JIMCNLAGELM_LOAKODBJKDK\x10\xda@\x12\
-    \x1c\n\x17JIMCNLAGELM_ININKGJLGIO\x10\xd4@\x12\x1c\n\x17JIMCNLAGELM_DNIG\
-    KBNOKPD\x10\xdd@\x12\x1c\n\x17JIMCNLAGELM_HCDHGNAPGMK\x10\xe2@\x12\x1c\n\
-    \x17JIMCNLAGELM_NFKPPONAHHH\x10\xd2@\x12\x1c\n\x17JIMCNLAGELM_OCBMMLKDJG\
-    O\x10\xd8@\x12\x1c\n\x17JIMCNLAGELM_DLOGKGMMDIN\x10\xe0@\x12\x1c\n\x17JI\
-    MCNLAGELM_CFHIJJOJNHM\x10\xd9@\x12\x1c\n\x17JIMCNLAGELM_DPAFMLBKOOL\x10\
-    \xde@\x12\x1c\n\x17JIMCNLAGELM_FMDCDAGLDNG\x10\xcf@b\x06proto3\
+    \n\x13CmdMarbleType.proto*\xee\x02\n\rCmdMarbleType\x12\x1d\n\x19CmdMarb\
+    leType_MNFEPONEDDJ\x10\0\x12\x1e\n\x19CmdMarbleType_CIFLKCOIBHD\x10\xdf@\
+    \x12\x1e\n\x19CmdMarbleType_EDFMGPOIPIB\x10\xde@\x12\x1e\n\x19CmdMarbleT\
+    ype_LAIHOMDLAMD\x10\xda@\x12\x1e\n\x19CmdMarbleType_FLPHOEJOPBA\x10\xd2@\
+    \x12\x1e\n\x19CmdMarbleType_MMOABMBOGDC\x10\xdd@\x12\x1e\n\x19CmdMarbleT\
+    ype_BPCOOJOAFLE\x10\xd3@\x12\x1e\n\x19CmdMarbleType_NBPEFCCJBLN\x10\xd4@\
+    \x12\x1e\n\x19CmdMarbleType_PNADMIACIAI\x10\xd0@\x12\x1e\n\x19CmdMarbleT\
+    ype_OFDJOECJLKE\x10\xcf@\x12\x1e\n\x19CmdMarbleType_DHFCGAMBGBB\x10\xe1@\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

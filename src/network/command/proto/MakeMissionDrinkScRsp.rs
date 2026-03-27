@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MakeMissionDrinkScRsp {
     // message fields
+    // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.GKALJIFKGNH)
+    pub GKALJIFKGNH: bool,
     // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.is_save)
     pub is_save: bool,
-    // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.AKAKNBPEAFN)
-    pub AKAKNBPEAFN: bool,
-    // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.GAHEALMHNKF)
-    pub GAHEALMHNKF: ::protobuf::MessageField<super::IMFLIFCGNKI::IMFLIFCGNKI>,
+    // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.AIBAPFGBJKA)
+    pub AIBAPFGBJKA: ::protobuf::MessageField<super::GODHAPDEGAN::GODHAPDEGAN>,
     // special fields
     // @@protoc_insertion_point(special_field:MakeMissionDrinkScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,6 +56,11 @@ impl MakeMissionDrinkScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GKALJIFKGNH",
+            |m: &MakeMissionDrinkScRsp| { &m.GKALJIFKGNH },
+            |m: &mut MakeMissionDrinkScRsp| { &mut m.GKALJIFKGNH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MakeMissionDrinkScRsp| { &m.retcode },
             |m: &mut MakeMissionDrinkScRsp| { &mut m.retcode },
@@ -65,15 +70,10 @@ impl MakeMissionDrinkScRsp {
             |m: &MakeMissionDrinkScRsp| { &m.is_save },
             |m: &mut MakeMissionDrinkScRsp| { &mut m.is_save },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKAKNBPEAFN",
-            |m: &MakeMissionDrinkScRsp| { &m.AKAKNBPEAFN },
-            |m: &mut MakeMissionDrinkScRsp| { &mut m.AKAKNBPEAFN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IMFLIFCGNKI::IMFLIFCGNKI>(
-            "GAHEALMHNKF",
-            |m: &MakeMissionDrinkScRsp| { &m.GAHEALMHNKF },
-            |m: &mut MakeMissionDrinkScRsp| { &mut m.GAHEALMHNKF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GODHAPDEGAN::GODHAPDEGAN>(
+            "AIBAPFGBJKA",
+            |m: &MakeMissionDrinkScRsp| { &m.AIBAPFGBJKA },
+            |m: &mut MakeMissionDrinkScRsp| { &mut m.AIBAPFGBJKA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MakeMissionDrinkScRsp>(
             "MakeMissionDrinkScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for MakeMissionDrinkScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                120 => {
+                    self.GKALJIFKGNH = is.read_bool()?;
+                },
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
+                24 => {
                     self.is_save = is.read_bool()?;
                 },
-                64 => {
-                    self.AKAKNBPEAFN = is.read_bool()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GAHEALMHNKF)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AIBAPFGBJKA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,16 +117,16 @@ impl ::protobuf::Message for MakeMissionDrinkScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.GKALJIFKGNH != false {
+            my_size += 1 + 1;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         if self.is_save != false {
             my_size += 1 + 1;
         }
-        if self.AKAKNBPEAFN != false {
-            my_size += 1 + 1;
-        }
-        if let Some(v) = self.GAHEALMHNKF.as_ref() {
+        if let Some(v) = self.AIBAPFGBJKA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -136,17 +136,17 @@ impl ::protobuf::Message for MakeMissionDrinkScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.GKALJIFKGNH != false {
+            os.write_bool(15, self.GKALJIFKGNH)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         if self.is_save != false {
-            os.write_bool(14, self.is_save)?;
+            os.write_bool(3, self.is_save)?;
         }
-        if self.AKAKNBPEAFN != false {
-            os.write_bool(8, self.AKAKNBPEAFN)?;
-        }
-        if let Some(v) = self.GAHEALMHNKF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.AIBAPFGBJKA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for MakeMissionDrinkScRsp {
     }
 
     fn clear(&mut self) {
+        self.GKALJIFKGNH = false;
         self.retcode = 0;
         self.is_save = false;
-        self.AKAKNBPEAFN = false;
-        self.GAHEALMHNKF.clear();
+        self.AIBAPFGBJKA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MakeMissionDrinkScRsp {
         static instance: MakeMissionDrinkScRsp = MakeMissionDrinkScRsp {
+            GKALJIFKGNH: false,
             retcode: 0,
             is_save: false,
-            AKAKNBPEAFN: false,
-            GAHEALMHNKF: ::protobuf::MessageField::none(),
+            AIBAPFGBJKA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for MakeMissionDrinkScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bMakeMissionDrinkScRsp.proto\x1a\x11IMFLIFCGNKI.proto\"\x9c\x01\n\
-    \x15MakeMissionDrinkScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07re\
-    tcode\x12\x17\n\x07is_save\x18\x0e\x20\x01(\x08R\x06isSave\x12\x20\n\x0b\
-    AKAKNBPEAFN\x18\x08\x20\x01(\x08R\x0bAKAKNBPEAFN\x12.\n\x0bGAHEALMHNKF\
-    \x18\x05\x20\x01(\x0b2\x0c.IMFLIFCGNKIR\x0bGAHEALMHNKFb\x06proto3\
+    \n\x1bMakeMissionDrinkScRsp.proto\x1a\x11GODHAPDEGAN.proto\"\x9c\x01\n\
+    \x15MakeMissionDrinkScRsp\x12\x20\n\x0bGKALJIFKGNH\x18\x0f\x20\x01(\x08R\
+    \x0bGKALJIFKGNH\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\
+    \x17\n\x07is_save\x18\x03\x20\x01(\x08R\x06isSave\x12.\n\x0bAIBAPFGBJKA\
+    \x18\x01\x20\x01(\x0b2\x0c.GODHAPDEGANR\x0bAIBAPFGBJKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IMFLIFCGNKI::file_descriptor().clone());
+            deps.push(super::GODHAPDEGAN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MakeMissionDrinkScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueCommonBuffSelectSourceType)
 pub enum RogueCommonBuffSelectSourceType {
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.JGMAJHNEHNE_GKJBAODJMJG)
-    JGMAJHNEHNE_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.JGMAJHNEHNE_HKBJKKIHJKE)
-    JGMAJHNEHNE_HKBJKKIHJKE = 1,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.JGMAJHNEHNE_JHGOGKOJFOC)
-    JGMAJHNEHNE_JHGOGKOJFOC = 2,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.JGMAJHNEHNE_MLOJMJGKCKJ)
-    JGMAJHNEHNE_MLOJMJGKCKJ = 3,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.JGMAJHNEHNE_JEMDBNLNJMI)
-    JGMAJHNEHNE_JEMDBNLNJMI = 4,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.RogueCommonBuffSelectSourceType_MNFEPONEDDJ)
+    RogueCommonBuffSelectSourceType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.RogueCommonBuffSelectSourceType_MEOCEKOKJMK)
+    RogueCommonBuffSelectSourceType_MEOCEKOKJMK = 1,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.RogueCommonBuffSelectSourceType_CFMGPNFJGPP)
+    RogueCommonBuffSelectSourceType_CFMGPNFJGPP = 2,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.RogueCommonBuffSelectSourceType_EGOBACIIKHB)
+    RogueCommonBuffSelectSourceType_EGOBACIIKHB = 3,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.RogueCommonBuffSelectSourceType_NBDCGPIOGKE)
+    RogueCommonBuffSelectSourceType_NBDCGPIOGKE = 4,
 }
 
 impl ::protobuf::Enum for RogueCommonBuffSelectSourceType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for RogueCommonBuffSelectSourceType {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueCommonBuffSelectSourceType> {
         match value {
-            0 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::JGMAJHNEHNE_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::JGMAJHNEHNE_HKBJKKIHJKE),
-            2 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::JGMAJHNEHNE_JHGOGKOJFOC),
-            3 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::JGMAJHNEHNE_MLOJMJGKCKJ),
-            4 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::JGMAJHNEHNE_JEMDBNLNJMI),
+            0 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_MEOCEKOKJMK),
+            2 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_CFMGPNFJGPP),
+            3 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_EGOBACIIKHB),
+            4 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_NBDCGPIOGKE),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueCommonBuffSelectSourceType> {
         match str {
-            "JGMAJHNEHNE_GKJBAODJMJG" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::JGMAJHNEHNE_GKJBAODJMJG),
-            "JGMAJHNEHNE_HKBJKKIHJKE" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::JGMAJHNEHNE_HKBJKKIHJKE),
-            "JGMAJHNEHNE_JHGOGKOJFOC" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::JGMAJHNEHNE_JHGOGKOJFOC),
-            "JGMAJHNEHNE_MLOJMJGKCKJ" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::JGMAJHNEHNE_MLOJMJGKCKJ),
-            "JGMAJHNEHNE_JEMDBNLNJMI" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::JGMAJHNEHNE_JEMDBNLNJMI),
+            "RogueCommonBuffSelectSourceType_MNFEPONEDDJ" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_MNFEPONEDDJ),
+            "RogueCommonBuffSelectSourceType_MEOCEKOKJMK" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_MEOCEKOKJMK),
+            "RogueCommonBuffSelectSourceType_CFMGPNFJGPP" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_CFMGPNFJGPP),
+            "RogueCommonBuffSelectSourceType_EGOBACIIKHB" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_EGOBACIIKHB),
+            "RogueCommonBuffSelectSourceType_NBDCGPIOGKE" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_NBDCGPIOGKE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueCommonBuffSelectSourceType] = &[
-        RogueCommonBuffSelectSourceType::JGMAJHNEHNE_GKJBAODJMJG,
-        RogueCommonBuffSelectSourceType::JGMAJHNEHNE_HKBJKKIHJKE,
-        RogueCommonBuffSelectSourceType::JGMAJHNEHNE_JHGOGKOJFOC,
-        RogueCommonBuffSelectSourceType::JGMAJHNEHNE_MLOJMJGKCKJ,
-        RogueCommonBuffSelectSourceType::JGMAJHNEHNE_JEMDBNLNJMI,
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_MNFEPONEDDJ,
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_MEOCEKOKJMK,
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_CFMGPNFJGPP,
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_EGOBACIIKHB,
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_NBDCGPIOGKE,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for RogueCommonBuffSelectSourceType {
 
 impl ::std::default::Default for RogueCommonBuffSelectSourceType {
     fn default() -> Self {
-        RogueCommonBuffSelectSourceType::JGMAJHNEHNE_GKJBAODJMJG
+        RogueCommonBuffSelectSourceType::RogueCommonBuffSelectSourceType_MNFEPONEDDJ
     }
 }
 
@@ -102,11 +102,12 @@ impl RogueCommonBuffSelectSourceType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%RogueCommonBuffSelectSourceType.proto*\xb2\x01\n\x1fRogueCommonBuffSe\
-    lectSourceType\x12\x1b\n\x17JGMAJHNEHNE_GKJBAODJMJG\x10\0\x12\x1b\n\x17J\
-    GMAJHNEHNE_HKBJKKIHJKE\x10\x01\x12\x1b\n\x17JGMAJHNEHNE_JHGOGKOJFOC\x10\
-    \x02\x12\x1b\n\x17JGMAJHNEHNE_MLOJMJGKCKJ\x10\x03\x12\x1b\n\x17JGMAJHNEH\
-    NE_JEMDBNLNJMI\x10\x04b\x06proto3\
+    \n%RogueCommonBuffSelectSourceType.proto*\x96\x02\n\x1fRogueCommonBuffSe\
+    lectSourceType\x12/\n+RogueCommonBuffSelectSourceType_MNFEPONEDDJ\x10\0\
+    \x12/\n+RogueCommonBuffSelectSourceType_MEOCEKOKJMK\x10\x01\x12/\n+Rogue\
+    CommonBuffSelectSourceType_CFMGPNFJGPP\x10\x02\x12/\n+RogueCommonBuffSel\
+    ectSourceType_EGOBACIIKHB\x10\x03\x12/\n+RogueCommonBuffSelectSourceType\
+    _NBDCGPIOGKE\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,40 +27,40 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdClockParkType)
 pub enum CmdClockParkType {
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_GKJBAODJMJG)
-    IEIPOIIIPEE_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_PBMNBCKPJBM)
-    IEIPOIIIPEE_PBMNBCKPJBM = 7201,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_HNHJABDLAGO)
-    IEIPOIIIPEE_HNHJABDLAGO = 7231,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_ONHKHNIGFMP)
-    IEIPOIIIPEE_ONHKHNIGFMP = 7206,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_KFJHIFGJELD)
-    IEIPOIIIPEE_KFJHIFGJELD = 7250,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_IMNPCBPPHJO)
-    IEIPOIIIPEE_IMNPCBPPHJO = 7233,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_CFIIOOAKDEC)
-    IEIPOIIIPEE_CFIIOOAKDEC = 7247,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_KLOGKOIMEOL)
-    IEIPOIIIPEE_KLOGKOIMEOL = 7239,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_NNNAHPJPGOC)
-    IEIPOIIIPEE_NNNAHPJPGOC = 7229,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_GEDGFIGGJCP)
-    IEIPOIIIPEE_GEDGFIGGJCP = 7221,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_IMBAHOLAICE)
-    IEIPOIIIPEE_IMBAHOLAICE = 7211,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_GLJOGKGPFMO)
-    IEIPOIIIPEE_GLJOGKGPFMO = 7208,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_PHLEBKMLLCK)
-    IEIPOIIIPEE_PHLEBKMLLCK = 7249,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_LPENEIMKFAH)
-    IEIPOIIIPEE_LPENEIMKFAH = 7235,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_JHPPGLDJCIC)
-    IEIPOIIIPEE_JHPPGLDJCIC = 7238,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_KDPOLEGOPNP)
-    IEIPOIIIPEE_KDPOLEGOPNP = 7243,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.IEIPOIIIPEE_GFEAANHEKON)
-    IEIPOIIIPEE_GFEAANHEKON = 7203,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_MNFEPONEDDJ)
+    CmdClockParkType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_BABEPDHDNKA)
+    CmdClockParkType_BABEPDHDNKA = 7240,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_KBLFAHFJLNK)
+    CmdClockParkType_KBLFAHFJLNK = 7207,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_AAMBHKAHKMJ)
+    CmdClockParkType_AAMBHKAHKMJ = 7222,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_KGKIKBICEML)
+    CmdClockParkType_KGKIKBICEML = 7239,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_LGLJDFKPNOO)
+    CmdClockParkType_LGLJDFKPNOO = 7212,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_AGCEOBNBHHM)
+    CmdClockParkType_AGCEOBNBHHM = 7204,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_NONMPCKPDPF)
+    CmdClockParkType_NONMPCKPDPF = 7230,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_NJMEJALOALA)
+    CmdClockParkType_NJMEJALOALA = 7218,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_LLGPIGMLFBA)
+    CmdClockParkType_LLGPIGMLFBA = 7206,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_KDBHEJKGFBI)
+    CmdClockParkType_KDBHEJKGFBI = 7238,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_OMFNGJFKCDN)
+    CmdClockParkType_OMFNGJFKCDN = 7208,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_KBHAIBCKHMP)
+    CmdClockParkType_KBHAIBCKHMP = 7211,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_FKNLJCNIENP)
+    CmdClockParkType_FKNLJCNIENP = 7202,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_LMEMAJJKHFC)
+    CmdClockParkType_LMEMAJJKHFC = 7224,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_MHAMOAFLBKI)
+    CmdClockParkType_MHAMOAFLBKI = 7234,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkType_DDDMIMLHGCH)
+    CmdClockParkType_DDDMIMLHGCH = 7223,
 }
 
 impl ::protobuf::Enum for CmdClockParkType {
@@ -72,68 +72,68 @@ impl ::protobuf::Enum for CmdClockParkType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdClockParkType> {
         match value {
-            0 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_GKJBAODJMJG),
-            7201 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_PBMNBCKPJBM),
-            7231 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_HNHJABDLAGO),
-            7206 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_ONHKHNIGFMP),
-            7250 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_KFJHIFGJELD),
-            7233 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_IMNPCBPPHJO),
-            7247 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_CFIIOOAKDEC),
-            7239 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_KLOGKOIMEOL),
-            7229 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_NNNAHPJPGOC),
-            7221 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_GEDGFIGGJCP),
-            7211 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_IMBAHOLAICE),
-            7208 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_GLJOGKGPFMO),
-            7249 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_PHLEBKMLLCK),
-            7235 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_LPENEIMKFAH),
-            7238 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_JHPPGLDJCIC),
-            7243 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_KDPOLEGOPNP),
-            7203 => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_GFEAANHEKON),
+            0 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_MNFEPONEDDJ),
+            7240 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_BABEPDHDNKA),
+            7207 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_KBLFAHFJLNK),
+            7222 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_AAMBHKAHKMJ),
+            7239 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_KGKIKBICEML),
+            7212 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_LGLJDFKPNOO),
+            7204 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_AGCEOBNBHHM),
+            7230 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_NONMPCKPDPF),
+            7218 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_NJMEJALOALA),
+            7206 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_LLGPIGMLFBA),
+            7238 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_KDBHEJKGFBI),
+            7208 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_OMFNGJFKCDN),
+            7211 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_KBHAIBCKHMP),
+            7202 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_FKNLJCNIENP),
+            7224 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_LMEMAJJKHFC),
+            7234 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_MHAMOAFLBKI),
+            7223 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_DDDMIMLHGCH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdClockParkType> {
         match str {
-            "IEIPOIIIPEE_GKJBAODJMJG" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_GKJBAODJMJG),
-            "IEIPOIIIPEE_PBMNBCKPJBM" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_PBMNBCKPJBM),
-            "IEIPOIIIPEE_HNHJABDLAGO" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_HNHJABDLAGO),
-            "IEIPOIIIPEE_ONHKHNIGFMP" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_ONHKHNIGFMP),
-            "IEIPOIIIPEE_KFJHIFGJELD" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_KFJHIFGJELD),
-            "IEIPOIIIPEE_IMNPCBPPHJO" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_IMNPCBPPHJO),
-            "IEIPOIIIPEE_CFIIOOAKDEC" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_CFIIOOAKDEC),
-            "IEIPOIIIPEE_KLOGKOIMEOL" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_KLOGKOIMEOL),
-            "IEIPOIIIPEE_NNNAHPJPGOC" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_NNNAHPJPGOC),
-            "IEIPOIIIPEE_GEDGFIGGJCP" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_GEDGFIGGJCP),
-            "IEIPOIIIPEE_IMBAHOLAICE" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_IMBAHOLAICE),
-            "IEIPOIIIPEE_GLJOGKGPFMO" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_GLJOGKGPFMO),
-            "IEIPOIIIPEE_PHLEBKMLLCK" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_PHLEBKMLLCK),
-            "IEIPOIIIPEE_LPENEIMKFAH" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_LPENEIMKFAH),
-            "IEIPOIIIPEE_JHPPGLDJCIC" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_JHPPGLDJCIC),
-            "IEIPOIIIPEE_KDPOLEGOPNP" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_KDPOLEGOPNP),
-            "IEIPOIIIPEE_GFEAANHEKON" => ::std::option::Option::Some(CmdClockParkType::IEIPOIIIPEE_GFEAANHEKON),
+            "CmdClockParkType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_MNFEPONEDDJ),
+            "CmdClockParkType_BABEPDHDNKA" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_BABEPDHDNKA),
+            "CmdClockParkType_KBLFAHFJLNK" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_KBLFAHFJLNK),
+            "CmdClockParkType_AAMBHKAHKMJ" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_AAMBHKAHKMJ),
+            "CmdClockParkType_KGKIKBICEML" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_KGKIKBICEML),
+            "CmdClockParkType_LGLJDFKPNOO" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_LGLJDFKPNOO),
+            "CmdClockParkType_AGCEOBNBHHM" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_AGCEOBNBHHM),
+            "CmdClockParkType_NONMPCKPDPF" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_NONMPCKPDPF),
+            "CmdClockParkType_NJMEJALOALA" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_NJMEJALOALA),
+            "CmdClockParkType_LLGPIGMLFBA" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_LLGPIGMLFBA),
+            "CmdClockParkType_KDBHEJKGFBI" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_KDBHEJKGFBI),
+            "CmdClockParkType_OMFNGJFKCDN" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_OMFNGJFKCDN),
+            "CmdClockParkType_KBHAIBCKHMP" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_KBHAIBCKHMP),
+            "CmdClockParkType_FKNLJCNIENP" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_FKNLJCNIENP),
+            "CmdClockParkType_LMEMAJJKHFC" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_LMEMAJJKHFC),
+            "CmdClockParkType_MHAMOAFLBKI" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_MHAMOAFLBKI),
+            "CmdClockParkType_DDDMIMLHGCH" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkType_DDDMIMLHGCH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdClockParkType] = &[
-        CmdClockParkType::IEIPOIIIPEE_GKJBAODJMJG,
-        CmdClockParkType::IEIPOIIIPEE_PBMNBCKPJBM,
-        CmdClockParkType::IEIPOIIIPEE_HNHJABDLAGO,
-        CmdClockParkType::IEIPOIIIPEE_ONHKHNIGFMP,
-        CmdClockParkType::IEIPOIIIPEE_KFJHIFGJELD,
-        CmdClockParkType::IEIPOIIIPEE_IMNPCBPPHJO,
-        CmdClockParkType::IEIPOIIIPEE_CFIIOOAKDEC,
-        CmdClockParkType::IEIPOIIIPEE_KLOGKOIMEOL,
-        CmdClockParkType::IEIPOIIIPEE_NNNAHPJPGOC,
-        CmdClockParkType::IEIPOIIIPEE_GEDGFIGGJCP,
-        CmdClockParkType::IEIPOIIIPEE_IMBAHOLAICE,
-        CmdClockParkType::IEIPOIIIPEE_GLJOGKGPFMO,
-        CmdClockParkType::IEIPOIIIPEE_PHLEBKMLLCK,
-        CmdClockParkType::IEIPOIIIPEE_LPENEIMKFAH,
-        CmdClockParkType::IEIPOIIIPEE_JHPPGLDJCIC,
-        CmdClockParkType::IEIPOIIIPEE_KDPOLEGOPNP,
-        CmdClockParkType::IEIPOIIIPEE_GFEAANHEKON,
+        CmdClockParkType::CmdClockParkType_MNFEPONEDDJ,
+        CmdClockParkType::CmdClockParkType_BABEPDHDNKA,
+        CmdClockParkType::CmdClockParkType_KBLFAHFJLNK,
+        CmdClockParkType::CmdClockParkType_AAMBHKAHKMJ,
+        CmdClockParkType::CmdClockParkType_KGKIKBICEML,
+        CmdClockParkType::CmdClockParkType_LGLJDFKPNOO,
+        CmdClockParkType::CmdClockParkType_AGCEOBNBHHM,
+        CmdClockParkType::CmdClockParkType_NONMPCKPDPF,
+        CmdClockParkType::CmdClockParkType_NJMEJALOALA,
+        CmdClockParkType::CmdClockParkType_LLGPIGMLFBA,
+        CmdClockParkType::CmdClockParkType_KDBHEJKGFBI,
+        CmdClockParkType::CmdClockParkType_OMFNGJFKCDN,
+        CmdClockParkType::CmdClockParkType_KBHAIBCKHMP,
+        CmdClockParkType::CmdClockParkType_FKNLJCNIENP,
+        CmdClockParkType::CmdClockParkType_LMEMAJJKHFC,
+        CmdClockParkType::CmdClockParkType_MHAMOAFLBKI,
+        CmdClockParkType::CmdClockParkType_DDDMIMLHGCH,
     ];
 }
 
@@ -145,23 +145,23 @@ impl ::protobuf::EnumFull for CmdClockParkType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdClockParkType::IEIPOIIIPEE_GKJBAODJMJG => 0,
-            CmdClockParkType::IEIPOIIIPEE_PBMNBCKPJBM => 1,
-            CmdClockParkType::IEIPOIIIPEE_HNHJABDLAGO => 2,
-            CmdClockParkType::IEIPOIIIPEE_ONHKHNIGFMP => 3,
-            CmdClockParkType::IEIPOIIIPEE_KFJHIFGJELD => 4,
-            CmdClockParkType::IEIPOIIIPEE_IMNPCBPPHJO => 5,
-            CmdClockParkType::IEIPOIIIPEE_CFIIOOAKDEC => 6,
-            CmdClockParkType::IEIPOIIIPEE_KLOGKOIMEOL => 7,
-            CmdClockParkType::IEIPOIIIPEE_NNNAHPJPGOC => 8,
-            CmdClockParkType::IEIPOIIIPEE_GEDGFIGGJCP => 9,
-            CmdClockParkType::IEIPOIIIPEE_IMBAHOLAICE => 10,
-            CmdClockParkType::IEIPOIIIPEE_GLJOGKGPFMO => 11,
-            CmdClockParkType::IEIPOIIIPEE_PHLEBKMLLCK => 12,
-            CmdClockParkType::IEIPOIIIPEE_LPENEIMKFAH => 13,
-            CmdClockParkType::IEIPOIIIPEE_JHPPGLDJCIC => 14,
-            CmdClockParkType::IEIPOIIIPEE_KDPOLEGOPNP => 15,
-            CmdClockParkType::IEIPOIIIPEE_GFEAANHEKON => 16,
+            CmdClockParkType::CmdClockParkType_MNFEPONEDDJ => 0,
+            CmdClockParkType::CmdClockParkType_BABEPDHDNKA => 1,
+            CmdClockParkType::CmdClockParkType_KBLFAHFJLNK => 2,
+            CmdClockParkType::CmdClockParkType_AAMBHKAHKMJ => 3,
+            CmdClockParkType::CmdClockParkType_KGKIKBICEML => 4,
+            CmdClockParkType::CmdClockParkType_LGLJDFKPNOO => 5,
+            CmdClockParkType::CmdClockParkType_AGCEOBNBHHM => 6,
+            CmdClockParkType::CmdClockParkType_NONMPCKPDPF => 7,
+            CmdClockParkType::CmdClockParkType_NJMEJALOALA => 8,
+            CmdClockParkType::CmdClockParkType_LLGPIGMLFBA => 9,
+            CmdClockParkType::CmdClockParkType_KDBHEJKGFBI => 10,
+            CmdClockParkType::CmdClockParkType_OMFNGJFKCDN => 11,
+            CmdClockParkType::CmdClockParkType_KBHAIBCKHMP => 12,
+            CmdClockParkType::CmdClockParkType_FKNLJCNIENP => 13,
+            CmdClockParkType::CmdClockParkType_LMEMAJJKHFC => 14,
+            CmdClockParkType::CmdClockParkType_MHAMOAFLBKI => 15,
+            CmdClockParkType::CmdClockParkType_DDDMIMLHGCH => 16,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -169,7 +169,7 @@ impl ::protobuf::EnumFull for CmdClockParkType {
 
 impl ::std::default::Default for CmdClockParkType {
     fn default() -> Self {
-        CmdClockParkType::IEIPOIIIPEE_GKJBAODJMJG
+        CmdClockParkType::CmdClockParkType_MNFEPONEDDJ
     }
 }
 
@@ -180,18 +180,19 @@ impl CmdClockParkType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdClockParkType.proto*\x8f\x04\n\x10CmdClockParkType\x12\x1b\n\
-    \x17IEIPOIIIPEE_GKJBAODJMJG\x10\0\x12\x1c\n\x17IEIPOIIIPEE_PBMNBCKPJBM\
-    \x10\xa18\x12\x1c\n\x17IEIPOIIIPEE_HNHJABDLAGO\x10\xbf8\x12\x1c\n\x17IEI\
-    POIIIPEE_ONHKHNIGFMP\x10\xa68\x12\x1c\n\x17IEIPOIIIPEE_KFJHIFGJELD\x10\
-    \xd28\x12\x1c\n\x17IEIPOIIIPEE_IMNPCBPPHJO\x10\xc18\x12\x1c\n\x17IEIPOII\
-    IPEE_CFIIOOAKDEC\x10\xcf8\x12\x1c\n\x17IEIPOIIIPEE_KLOGKOIMEOL\x10\xc78\
-    \x12\x1c\n\x17IEIPOIIIPEE_NNNAHPJPGOC\x10\xbd8\x12\x1c\n\x17IEIPOIIIPEE_\
-    GEDGFIGGJCP\x10\xb58\x12\x1c\n\x17IEIPOIIIPEE_IMBAHOLAICE\x10\xab8\x12\
-    \x1c\n\x17IEIPOIIIPEE_GLJOGKGPFMO\x10\xa88\x12\x1c\n\x17IEIPOIIIPEE_PHLE\
-    BKMLLCK\x10\xd18\x12\x1c\n\x17IEIPOIIIPEE_LPENEIMKFAH\x10\xc38\x12\x1c\n\
-    \x17IEIPOIIIPEE_JHPPGLDJCIC\x10\xc68\x12\x1c\n\x17IEIPOIIIPEE_KDPOLEGOPN\
-    P\x10\xcb8\x12\x1c\n\x17IEIPOIIIPEE_GFEAANHEKON\x10\xa38b\x06proto3\
+    \n\x16CmdClockParkType.proto*\xe4\x04\n\x10CmdClockParkType\x12\x20\n\
+    \x1cCmdClockParkType_MNFEPONEDDJ\x10\0\x12!\n\x1cCmdClockParkType_BABEPD\
+    HDNKA\x10\xc88\x12!\n\x1cCmdClockParkType_KBLFAHFJLNK\x10\xa78\x12!\n\
+    \x1cCmdClockParkType_AAMBHKAHKMJ\x10\xb68\x12!\n\x1cCmdClockParkType_KGK\
+    IKBICEML\x10\xc78\x12!\n\x1cCmdClockParkType_LGLJDFKPNOO\x10\xac8\x12!\n\
+    \x1cCmdClockParkType_AGCEOBNBHHM\x10\xa48\x12!\n\x1cCmdClockParkType_NON\
+    MPCKPDPF\x10\xbe8\x12!\n\x1cCmdClockParkType_NJMEJALOALA\x10\xb28\x12!\n\
+    \x1cCmdClockParkType_LLGPIGMLFBA\x10\xa68\x12!\n\x1cCmdClockParkType_KDB\
+    HEJKGFBI\x10\xc68\x12!\n\x1cCmdClockParkType_OMFNGJFKCDN\x10\xa88\x12!\n\
+    \x1cCmdClockParkType_KBHAIBCKHMP\x10\xab8\x12!\n\x1cCmdClockParkType_FKN\
+    LJCNIENP\x10\xa28\x12!\n\x1cCmdClockParkType_LMEMAJJKHFC\x10\xb88\x12!\n\
+    \x1cCmdClockParkType_MHAMOAFLBKI\x10\xc28\x12!\n\x1cCmdClockParkType_DDD\
+    MIMLHGCH\x10\xb78b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

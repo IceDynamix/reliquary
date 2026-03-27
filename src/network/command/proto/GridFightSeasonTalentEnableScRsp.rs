@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightSeasonTalentEnableScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GridFightSeasonTalentEnableScRsp.DNBJDLGIABH)
-    pub DNBJDLGIABH: u32,
     // @@protoc_insertion_point(field:GridFightSeasonTalentEnableScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GridFightSeasonTalentEnableScRsp.EHAJMKFJCCM)
+    pub EHAJMKFJCCM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightSeasonTalentEnableScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GridFightSeasonTalentEnableScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNBJDLGIABH",
-            |m: &GridFightSeasonTalentEnableScRsp| { &m.DNBJDLGIABH },
-            |m: &mut GridFightSeasonTalentEnableScRsp| { &mut m.DNBJDLGIABH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GridFightSeasonTalentEnableScRsp| { &m.retcode },
             |m: &mut GridFightSeasonTalentEnableScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EHAJMKFJCCM",
+            |m: &GridFightSeasonTalentEnableScRsp| { &m.EHAJMKFJCCM },
+            |m: &mut GridFightSeasonTalentEnableScRsp| { &mut m.EHAJMKFJCCM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightSeasonTalentEnableScRsp>(
             "GridFightSeasonTalentEnableScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.DNBJDLGIABH = is.read_uint32()?;
-                },
-                24 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
+                },
+                80 => {
+                    self.EHAJMKFJCCM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNBJDLGIABH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DNBJDLGIABH);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if self.EHAJMKFJCCM != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EHAJMKFJCCM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNBJDLGIABH != 0 {
-            os.write_uint32(9, self.DNBJDLGIABH)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if self.EHAJMKFJCCM != 0 {
+            os.write_uint32(10, self.EHAJMKFJCCM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableScRsp {
     }
 
     fn clear(&mut self) {
-        self.DNBJDLGIABH = 0;
         self.retcode = 0;
+        self.EHAJMKFJCCM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightSeasonTalentEnableScRsp {
         static instance: GridFightSeasonTalentEnableScRsp = GridFightSeasonTalentEnableScRsp {
-            DNBJDLGIABH: 0,
             retcode: 0,
+            EHAJMKFJCCM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSeasonTalentEnableScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&GridFightSeasonTalentEnableScRsp.proto\"^\n\x20GridFightSeasonTalentE\
-    nableScRsp\x12\x20\n\x0bDNBJDLGIABH\x18\t\x20\x01(\rR\x0bDNBJDLGIABH\x12\
-    \x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
+    nableScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bEHAJMKFJCCM\x18\n\x20\x01(\rR\x0bEHAJMKFJCCMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

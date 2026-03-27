@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ActiveActivityData {
     // message fields
-    // @@protoc_insertion_point(field:ActiveActivityData.OHMECEDOJBM)
-    pub OHMECEDOJBM: u32,
-    // @@protoc_insertion_point(field:ActiveActivityData.panel_id)
-    pub panel_id: u32,
-    // @@protoc_insertion_point(field:ActiveActivityData.EBAAGLNCODB)
-    pub EBAAGLNCODB: u32,
+    // @@protoc_insertion_point(field:ActiveActivityData.CEOFHMMOBOK)
+    pub CEOFHMMOBOK: u32,
     // @@protoc_insertion_point(field:ActiveActivityData.id)
     pub id: u32,
-    // @@protoc_insertion_point(field:ActiveActivityData.DDKOAEKFHBF)
-    pub DDKOAEKFHBF: u32,
+    // @@protoc_insertion_point(field:ActiveActivityData.NAKCHFEIMEL)
+    pub NAKCHFEIMEL: u32,
     // @@protoc_insertion_point(field:ActiveActivityData.taken_star_rewards)
     pub taken_star_rewards: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ActiveActivityData.NLFLEKIHEML)
+    pub NLFLEKIHEML: u32,
+    // @@protoc_insertion_point(field:ActiveActivityData.panel_id)
+    pub panel_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ActiveActivityData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,19 +60,9 @@ impl ActiveActivityData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OHMECEDOJBM",
-            |m: &ActiveActivityData| { &m.OHMECEDOJBM },
-            |m: &mut ActiveActivityData| { &mut m.OHMECEDOJBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "panel_id",
-            |m: &ActiveActivityData| { &m.panel_id },
-            |m: &mut ActiveActivityData| { &mut m.panel_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EBAAGLNCODB",
-            |m: &ActiveActivityData| { &m.EBAAGLNCODB },
-            |m: &mut ActiveActivityData| { &mut m.EBAAGLNCODB },
+            "CEOFHMMOBOK",
+            |m: &ActiveActivityData| { &m.CEOFHMMOBOK },
+            |m: &mut ActiveActivityData| { &mut m.CEOFHMMOBOK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -80,14 +70,24 @@ impl ActiveActivityData {
             |m: &mut ActiveActivityData| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DDKOAEKFHBF",
-            |m: &ActiveActivityData| { &m.DDKOAEKFHBF },
-            |m: &mut ActiveActivityData| { &mut m.DDKOAEKFHBF },
+            "NAKCHFEIMEL",
+            |m: &ActiveActivityData| { &m.NAKCHFEIMEL },
+            |m: &mut ActiveActivityData| { &mut m.NAKCHFEIMEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "taken_star_rewards",
             |m: &ActiveActivityData| { &m.taken_star_rewards },
             |m: &mut ActiveActivityData| { &mut m.taken_star_rewards },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NLFLEKIHEML",
+            |m: &ActiveActivityData| { &m.NLFLEKIHEML },
+            |m: &mut ActiveActivityData| { &mut m.NLFLEKIHEML },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "panel_id",
+            |m: &ActiveActivityData| { &m.panel_id },
+            |m: &mut ActiveActivityData| { &mut m.panel_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ActiveActivityData>(
             "ActiveActivityData",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for ActiveActivityData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.OHMECEDOJBM = is.read_uint32()?;
-                },
-                48 => {
-                    self.panel_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.EBAAGLNCODB = is.read_uint32()?;
-                },
-                40 => {
-                    self.id = is.read_uint32()?;
+                16 => {
+                    self.CEOFHMMOBOK = is.read_uint32()?;
                 },
                 8 => {
-                    self.DDKOAEKFHBF = is.read_uint32()?;
+                    self.id = is.read_uint32()?;
                 },
-                18 => {
+                24 => {
+                    self.NAKCHFEIMEL = is.read_uint32()?;
+                },
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.taken_star_rewards)?;
                 },
-                16 => {
+                112 => {
                     self.taken_star_rewards.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.NLFLEKIHEML = is.read_uint32()?;
+                },
+                120 => {
+                    self.panel_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,44 +140,44 @@ impl ::protobuf::Message for ActiveActivityData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OHMECEDOJBM != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OHMECEDOJBM);
-        }
-        if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.panel_id);
-        }
-        if self.EBAAGLNCODB != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EBAAGLNCODB);
+        if self.CEOFHMMOBOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.CEOFHMMOBOK);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.id);
+            my_size += ::protobuf::rt::uint32_size(1, self.id);
         }
-        if self.DDKOAEKFHBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DDKOAEKFHBF);
+        if self.NAKCHFEIMEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.NAKCHFEIMEL);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.taken_star_rewards);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.taken_star_rewards);
+        if self.NLFLEKIHEML != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.NLFLEKIHEML);
+        }
+        if self.panel_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.panel_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OHMECEDOJBM != 0 {
-            os.write_uint32(8, self.OHMECEDOJBM)?;
-        }
-        if self.panel_id != 0 {
-            os.write_uint32(6, self.panel_id)?;
-        }
-        if self.EBAAGLNCODB != 0 {
-            os.write_uint32(4, self.EBAAGLNCODB)?;
+        if self.CEOFHMMOBOK != 0 {
+            os.write_uint32(2, self.CEOFHMMOBOK)?;
         }
         if self.id != 0 {
-            os.write_uint32(5, self.id)?;
+            os.write_uint32(1, self.id)?;
         }
-        if self.DDKOAEKFHBF != 0 {
-            os.write_uint32(1, self.DDKOAEKFHBF)?;
+        if self.NAKCHFEIMEL != 0 {
+            os.write_uint32(3, self.NAKCHFEIMEL)?;
         }
-        os.write_repeated_packed_uint32(2, &self.taken_star_rewards)?;
+        os.write_repeated_packed_uint32(14, &self.taken_star_rewards)?;
+        if self.NLFLEKIHEML != 0 {
+            os.write_uint32(12, self.NLFLEKIHEML)?;
+        }
+        if self.panel_id != 0 {
+            os.write_uint32(15, self.panel_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -195,23 +195,23 @@ impl ::protobuf::Message for ActiveActivityData {
     }
 
     fn clear(&mut self) {
-        self.OHMECEDOJBM = 0;
-        self.panel_id = 0;
-        self.EBAAGLNCODB = 0;
+        self.CEOFHMMOBOK = 0;
         self.id = 0;
-        self.DDKOAEKFHBF = 0;
+        self.NAKCHFEIMEL = 0;
         self.taken_star_rewards.clear();
+        self.NLFLEKIHEML = 0;
+        self.panel_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActiveActivityData {
         static instance: ActiveActivityData = ActiveActivityData {
-            OHMECEDOJBM: 0,
-            panel_id: 0,
-            EBAAGLNCODB: 0,
+            CEOFHMMOBOK: 0,
             id: 0,
-            DDKOAEKFHBF: 0,
+            NAKCHFEIMEL: 0,
             taken_star_rewards: ::std::vec::Vec::new(),
+            NLFLEKIHEML: 0,
+            panel_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,11 +237,11 @@ impl ::protobuf::reflect::ProtobufValue for ActiveActivityData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ActiveActivityData.proto\"\xd3\x01\n\x12ActiveActivityData\x12\x20\
-    \n\x0bOHMECEDOJBM\x18\x08\x20\x01(\rR\x0bOHMECEDOJBM\x12\x19\n\x08panel_\
-    id\x18\x06\x20\x01(\rR\x07panelId\x12\x20\n\x0bEBAAGLNCODB\x18\x04\x20\
-    \x01(\rR\x0bEBAAGLNCODB\x12\x0e\n\x02id\x18\x05\x20\x01(\rR\x02id\x12\
-    \x20\n\x0bDDKOAEKFHBF\x18\x01\x20\x01(\rR\x0bDDKOAEKFHBF\x12,\n\x12taken\
-    _star_rewards\x18\x02\x20\x03(\rR\x10takenStarRewardsb\x06proto3\
+    \n\x0bCEOFHMMOBOK\x18\x02\x20\x01(\rR\x0bCEOFHMMOBOK\x12\x0e\n\x02id\x18\
+    \x01\x20\x01(\rR\x02id\x12\x20\n\x0bNAKCHFEIMEL\x18\x03\x20\x01(\rR\x0bN\
+    AKCHFEIMEL\x12,\n\x12taken_star_rewards\x18\x0e\x20\x03(\rR\x10takenStar\
+    Rewards\x12\x20\n\x0bNLFLEKIHEML\x18\x0c\x20\x01(\rR\x0bNLFLEKIHEML\x12\
+    \x19\n\x08panel_id\x18\x0f\x20\x01(\rR\x07panelIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

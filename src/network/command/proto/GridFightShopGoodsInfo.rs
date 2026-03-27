@@ -33,7 +33,7 @@ pub struct GridFightShopGoodsInfo {
     // @@protoc_insertion_point(field:GridFightShopGoodsInfo.is_sold_out)
     pub is_sold_out: bool,
     // message oneof groups
-    pub NKDNLBMNAAM: ::std::option::Option<grid_fight_shop_goods_info::NKDNLBMNAAM>,
+    pub NKLNKAGDEPK: ::std::option::Option<grid_fight_shop_goods_info::NKLNKAGDEPK>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightShopGoodsInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,39 +50,39 @@ impl GridFightShopGoodsInfo {
         ::std::default::Default::default()
     }
 
-    // .GridFightRoleGoodsInfo role_goods_info = 1249;
+    // .GridFightRoleGoodsInfo role_goods_info = 809;
 
     pub fn role_goods_info(&self) -> &super::GridFightRoleGoodsInfo::GridFightRoleGoodsInfo {
-        match self.NKDNLBMNAAM {
-            ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::RoleGoodsInfo(ref v)) => v,
+        match self.NKLNKAGDEPK {
+            ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::RoleGoodsInfo(ref v)) => v,
             _ => <super::GridFightRoleGoodsInfo::GridFightRoleGoodsInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_role_goods_info(&mut self) {
-        self.NKDNLBMNAAM = ::std::option::Option::None;
+        self.NKLNKAGDEPK = ::std::option::Option::None;
     }
 
     pub fn has_role_goods_info(&self) -> bool {
-        match self.NKDNLBMNAAM {
-            ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::RoleGoodsInfo(..)) => true,
+        match self.NKLNKAGDEPK {
+            ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::RoleGoodsInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_role_goods_info(&mut self, v: super::GridFightRoleGoodsInfo::GridFightRoleGoodsInfo) {
-        self.NKDNLBMNAAM = ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::RoleGoodsInfo(v))
+        self.NKLNKAGDEPK = ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::RoleGoodsInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_role_goods_info(&mut self) -> &mut super::GridFightRoleGoodsInfo::GridFightRoleGoodsInfo {
-        if let ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::RoleGoodsInfo(_)) = self.NKDNLBMNAAM {
+        if let ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::RoleGoodsInfo(_)) = self.NKLNKAGDEPK {
         } else {
-            self.NKDNLBMNAAM = ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::RoleGoodsInfo(super::GridFightRoleGoodsInfo::GridFightRoleGoodsInfo::new()));
+            self.NKLNKAGDEPK = ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::RoleGoodsInfo(super::GridFightRoleGoodsInfo::GridFightRoleGoodsInfo::new()));
         }
-        match self.NKDNLBMNAAM {
-            ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::RoleGoodsInfo(ref mut v)) => v,
+        match self.NKLNKAGDEPK {
+            ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::RoleGoodsInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -90,8 +90,8 @@ impl GridFightShopGoodsInfo {
     // Take field
     pub fn take_role_goods_info(&mut self) -> super::GridFightRoleGoodsInfo::GridFightRoleGoodsInfo {
         if self.has_role_goods_info() {
-            match self.NKDNLBMNAAM.take() {
-                ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::RoleGoodsInfo(v)) => v,
+            match self.NKLNKAGDEPK.take() {
+                ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::RoleGoodsInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -99,39 +99,39 @@ impl GridFightShopGoodsInfo {
         }
     }
 
-    // .GridFightSpecialGoodsInfo special_goods_info = 420;
+    // .GridFightSpecialGoodsInfo special_goods_info = 32;
 
     pub fn special_goods_info(&self) -> &super::GridFightSpecialGoodsInfo::GridFightSpecialGoodsInfo {
-        match self.NKDNLBMNAAM {
-            ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::SpecialGoodsInfo(ref v)) => v,
+        match self.NKLNKAGDEPK {
+            ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::SpecialGoodsInfo(ref v)) => v,
             _ => <super::GridFightSpecialGoodsInfo::GridFightSpecialGoodsInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_special_goods_info(&mut self) {
-        self.NKDNLBMNAAM = ::std::option::Option::None;
+        self.NKLNKAGDEPK = ::std::option::Option::None;
     }
 
     pub fn has_special_goods_info(&self) -> bool {
-        match self.NKDNLBMNAAM {
-            ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::SpecialGoodsInfo(..)) => true,
+        match self.NKLNKAGDEPK {
+            ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::SpecialGoodsInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_special_goods_info(&mut self, v: super::GridFightSpecialGoodsInfo::GridFightSpecialGoodsInfo) {
-        self.NKDNLBMNAAM = ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::SpecialGoodsInfo(v))
+        self.NKLNKAGDEPK = ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::SpecialGoodsInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_special_goods_info(&mut self) -> &mut super::GridFightSpecialGoodsInfo::GridFightSpecialGoodsInfo {
-        if let ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::SpecialGoodsInfo(_)) = self.NKDNLBMNAAM {
+        if let ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::SpecialGoodsInfo(_)) = self.NKLNKAGDEPK {
         } else {
-            self.NKDNLBMNAAM = ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::SpecialGoodsInfo(super::GridFightSpecialGoodsInfo::GridFightSpecialGoodsInfo::new()));
+            self.NKLNKAGDEPK = ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::SpecialGoodsInfo(super::GridFightSpecialGoodsInfo::GridFightSpecialGoodsInfo::new()));
         }
-        match self.NKDNLBMNAAM {
-            ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::SpecialGoodsInfo(ref mut v)) => v,
+        match self.NKLNKAGDEPK {
+            ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::SpecialGoodsInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -139,8 +139,8 @@ impl GridFightShopGoodsInfo {
     // Take field
     pub fn take_special_goods_info(&mut self) -> super::GridFightSpecialGoodsInfo::GridFightSpecialGoodsInfo {
         if self.has_special_goods_info() {
-            match self.NKDNLBMNAAM.take() {
-                ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::SpecialGoodsInfo(v)) => v,
+            match self.NKLNKAGDEPK.take() {
+                ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::SpecialGoodsInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -175,7 +175,7 @@ impl GridFightShopGoodsInfo {
             GridFightShopGoodsInfo::mut_special_goods_info,
             GridFightShopGoodsInfo::set_special_goods_info,
         ));
-        oneofs.push(grid_fight_shop_goods_info::NKDNLBMNAAM::generated_oneof_descriptor_data());
+        oneofs.push(grid_fight_shop_goods_info::NKLNKAGDEPK::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightShopGoodsInfo>(
             "GridFightShopGoodsInfo",
             fields,
@@ -194,17 +194,17 @@ impl ::protobuf::Message for GridFightShopGoodsInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                104 => {
                     self.shop_goods_price = is.read_uint32()?;
                 },
-                88 => {
+                40 => {
                     self.is_sold_out = is.read_bool()?;
                 },
-                9994 => {
-                    self.NKDNLBMNAAM = ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::RoleGoodsInfo(is.read_message()?));
+                6474 => {
+                    self.NKLNKAGDEPK = ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::RoleGoodsInfo(is.read_message()?));
                 },
-                3362 => {
-                    self.NKDNLBMNAAM = ::std::option::Option::Some(grid_fight_shop_goods_info::NKDNLBMNAAM::SpecialGoodsInfo(is.read_message()?));
+                258 => {
+                    self.NKLNKAGDEPK = ::std::option::Option::Some(grid_fight_shop_goods_info::NKLNKAGDEPK::SpecialGoodsInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -219,18 +219,18 @@ impl ::protobuf::Message for GridFightShopGoodsInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.shop_goods_price != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.shop_goods_price);
+            my_size += ::protobuf::rt::uint32_size(13, self.shop_goods_price);
         }
         if self.is_sold_out != false {
             my_size += 1 + 1;
         }
-        if let ::std::option::Option::Some(ref v) = self.NKDNLBMNAAM {
+        if let ::std::option::Option::Some(ref v) = self.NKLNKAGDEPK {
             match v {
-                &grid_fight_shop_goods_info::NKDNLBMNAAM::RoleGoodsInfo(ref v) => {
+                &grid_fight_shop_goods_info::NKLNKAGDEPK::RoleGoodsInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_shop_goods_info::NKDNLBMNAAM::SpecialGoodsInfo(ref v) => {
+                &grid_fight_shop_goods_info::NKLNKAGDEPK::SpecialGoodsInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -243,18 +243,18 @@ impl ::protobuf::Message for GridFightShopGoodsInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.shop_goods_price != 0 {
-            os.write_uint32(15, self.shop_goods_price)?;
+            os.write_uint32(13, self.shop_goods_price)?;
         }
         if self.is_sold_out != false {
-            os.write_bool(11, self.is_sold_out)?;
+            os.write_bool(5, self.is_sold_out)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.NKDNLBMNAAM {
+        if let ::std::option::Option::Some(ref v) = self.NKLNKAGDEPK {
             match v {
-                &grid_fight_shop_goods_info::NKDNLBMNAAM::RoleGoodsInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1249, v, os)?;
+                &grid_fight_shop_goods_info::NKLNKAGDEPK::RoleGoodsInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(809, v, os)?;
                 },
-                &grid_fight_shop_goods_info::NKDNLBMNAAM::SpecialGoodsInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(420, v, os)?;
+                &grid_fight_shop_goods_info::NKLNKAGDEPK::SpecialGoodsInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(32, v, os)?;
                 },
             };
         }
@@ -277,8 +277,8 @@ impl ::protobuf::Message for GridFightShopGoodsInfo {
     fn clear(&mut self) {
         self.shop_goods_price = 0;
         self.is_sold_out = false;
-        self.NKDNLBMNAAM = ::std::option::Option::None;
-        self.NKDNLBMNAAM = ::std::option::Option::None;
+        self.NKLNKAGDEPK = ::std::option::Option::None;
+        self.NKLNKAGDEPK = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
@@ -286,7 +286,7 @@ impl ::protobuf::Message for GridFightShopGoodsInfo {
         static instance: GridFightShopGoodsInfo = GridFightShopGoodsInfo {
             shop_goods_price: 0,
             is_sold_out: false,
-            NKDNLBMNAAM: ::std::option::Option::None,
+            NKLNKAGDEPK: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -315,40 +315,39 @@ pub mod grid_fight_shop_goods_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:GridFightShopGoodsInfo.NKDNLBMNAAM)
-    pub enum NKDNLBMNAAM {
+    // @@protoc_insertion_point(oneof:GridFightShopGoodsInfo.NKLNKAGDEPK)
+    pub enum NKLNKAGDEPK {
         // @@protoc_insertion_point(oneof_field:GridFightShopGoodsInfo.role_goods_info)
         RoleGoodsInfo(super::super::GridFightRoleGoodsInfo::GridFightRoleGoodsInfo),
         // @@protoc_insertion_point(oneof_field:GridFightShopGoodsInfo.special_goods_info)
         SpecialGoodsInfo(super::super::GridFightSpecialGoodsInfo::GridFightSpecialGoodsInfo),
     }
 
-    impl ::protobuf::Oneof for NKDNLBMNAAM {
+    impl ::protobuf::Oneof for NKLNKAGDEPK {
     }
 
-    impl ::protobuf::OneofFull for NKDNLBMNAAM {
+    impl ::protobuf::OneofFull for NKLNKAGDEPK {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::GridFightShopGoodsInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("NKDNLBMNAAM").unwrap()).clone()
+            descriptor.get(|| <super::GridFightShopGoodsInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("NKLNKAGDEPK").unwrap()).clone()
         }
     }
 
-    impl NKDNLBMNAAM {
+    impl NKLNKAGDEPK {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NKDNLBMNAAM>("NKDNLBMNAAM")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NKLNKAGDEPK>("NKLNKAGDEPK")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGridFightShopGoodsInfo.proto\x1a\x1cGridFightRoleGoodsInfo.proto\
-    \x1a\x1fGridFightSpecialGoodsInfo.proto\"\x82\x02\n\x16GridFightShopGood\
-    sInfo\x12(\n\x10shop_goods_price\x18\x0f\x20\x01(\rR\x0eshopGoodsPrice\
-    \x12\x1e\n\x0bis_sold_out\x18\x0b\x20\x01(\x08R\tisSoldOut\x12B\n\x0frol\
-    e_goods_info\x18\xe1\t\x20\x01(\x0b2\x17.GridFightRoleGoodsInfoH\0R\rrol\
-    eGoodsInfo\x12K\n\x12special_goods_info\x18\xa4\x03\x20\x01(\x0b2\x1a.Gr\
-    idFightSpecialGoodsInfoH\0R\x10specialGoodsInfoB\r\n\x0bNKDNLBMNAAMb\x06\
-    proto3\
+    \x1a\x1fGridFightSpecialGoodsInfo.proto\"\x81\x02\n\x16GridFightShopGood\
+    sInfo\x12(\n\x10shop_goods_price\x18\r\x20\x01(\rR\x0eshopGoodsPrice\x12\
+    \x1e\n\x0bis_sold_out\x18\x05\x20\x01(\x08R\tisSoldOut\x12B\n\x0frole_go\
+    ods_info\x18\xa9\x06\x20\x01(\x0b2\x17.GridFightRoleGoodsInfoH\0R\rroleG\
+    oodsInfo\x12J\n\x12special_goods_info\x18\x20\x20\x01(\x0b2\x1a.GridFigh\
+    tSpecialGoodsInfoH\0R\x10specialGoodsInfoB\r\n\x0bNKLNKAGDEPKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

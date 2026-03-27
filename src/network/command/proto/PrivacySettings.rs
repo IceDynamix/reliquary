@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PrivacySettings {
     // message fields
-    // @@protoc_insertion_point(field:PrivacySettings.PKCIONMHPCA)
-    pub PKCIONMHPCA: bool,
-    // @@protoc_insertion_point(field:PrivacySettings.ICHIBKCAONN)
-    pub ICHIBKCAONN: bool,
-    // @@protoc_insertion_point(field:PrivacySettings.APLFOHPELBF)
-    pub APLFOHPELBF: bool,
-    // @@protoc_insertion_point(field:PrivacySettings.BMDMFFBOHOG)
-    pub BMDMFFBOHOG: bool,
-    // @@protoc_insertion_point(field:PrivacySettings.LFMDLEGKIOP)
-    pub LFMDLEGKIOP: bool,
+    // @@protoc_insertion_point(field:PrivacySettings.MNLGJHEMADN)
+    pub MNLGJHEMADN: bool,
+    // @@protoc_insertion_point(field:PrivacySettings.LJDJALDEGKE)
+    pub LJDJALDEGKE: bool,
+    // @@protoc_insertion_point(field:PrivacySettings.IIDDIHBKAGE)
+    pub IIDDIHBKAGE: bool,
+    // @@protoc_insertion_point(field:PrivacySettings.AJGMIHLLEDI)
+    pub AJGMIHLLEDI: bool,
+    // @@protoc_insertion_point(field:PrivacySettings.PEKHBGBBLLK)
+    pub PEKHBGBBLLK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PrivacySettings.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl PrivacySettings {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKCIONMHPCA",
-            |m: &PrivacySettings| { &m.PKCIONMHPCA },
-            |m: &mut PrivacySettings| { &mut m.PKCIONMHPCA },
+            "MNLGJHEMADN",
+            |m: &PrivacySettings| { &m.MNLGJHEMADN },
+            |m: &mut PrivacySettings| { &mut m.MNLGJHEMADN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICHIBKCAONN",
-            |m: &PrivacySettings| { &m.ICHIBKCAONN },
-            |m: &mut PrivacySettings| { &mut m.ICHIBKCAONN },
+            "LJDJALDEGKE",
+            |m: &PrivacySettings| { &m.LJDJALDEGKE },
+            |m: &mut PrivacySettings| { &mut m.LJDJALDEGKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APLFOHPELBF",
-            |m: &PrivacySettings| { &m.APLFOHPELBF },
-            |m: &mut PrivacySettings| { &mut m.APLFOHPELBF },
+            "IIDDIHBKAGE",
+            |m: &PrivacySettings| { &m.IIDDIHBKAGE },
+            |m: &mut PrivacySettings| { &mut m.IIDDIHBKAGE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BMDMFFBOHOG",
-            |m: &PrivacySettings| { &m.BMDMFFBOHOG },
-            |m: &mut PrivacySettings| { &mut m.BMDMFFBOHOG },
+            "AJGMIHLLEDI",
+            |m: &PrivacySettings| { &m.AJGMIHLLEDI },
+            |m: &mut PrivacySettings| { &mut m.AJGMIHLLEDI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LFMDLEGKIOP",
-            |m: &PrivacySettings| { &m.LFMDLEGKIOP },
-            |m: &mut PrivacySettings| { &mut m.LFMDLEGKIOP },
+            "PEKHBGBBLLK",
+            |m: &PrivacySettings| { &m.PEKHBGBBLLK },
+            |m: &mut PrivacySettings| { &mut m.PEKHBGBBLLK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PrivacySettings>(
             "PrivacySettings",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for PrivacySettings {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.PKCIONMHPCA = is.read_bool()?;
-                },
-                56 => {
-                    self.ICHIBKCAONN = is.read_bool()?;
-                },
                 24 => {
-                    self.APLFOHPELBF = is.read_bool()?;
+                    self.MNLGJHEMADN = is.read_bool()?;
                 },
-                8 => {
-                    self.BMDMFFBOHOG = is.read_bool()?;
+                32 => {
+                    self.LJDJALDEGKE = is.read_bool()?;
                 },
-                48 => {
-                    self.LFMDLEGKIOP = is.read_bool()?;
+                64 => {
+                    self.IIDDIHBKAGE = is.read_bool()?;
+                },
+                120 => {
+                    self.AJGMIHLLEDI = is.read_bool()?;
+                },
+                16 => {
+                    self.PEKHBGBBLLK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,19 +127,19 @@ impl ::protobuf::Message for PrivacySettings {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PKCIONMHPCA != false {
+        if self.MNLGJHEMADN != false {
             my_size += 1 + 1;
         }
-        if self.ICHIBKCAONN != false {
+        if self.LJDJALDEGKE != false {
             my_size += 1 + 1;
         }
-        if self.APLFOHPELBF != false {
+        if self.IIDDIHBKAGE != false {
             my_size += 1 + 1;
         }
-        if self.BMDMFFBOHOG != false {
+        if self.AJGMIHLLEDI != false {
             my_size += 1 + 1;
         }
-        if self.LFMDLEGKIOP != false {
+        if self.PEKHBGBBLLK != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -148,20 +148,20 @@ impl ::protobuf::Message for PrivacySettings {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PKCIONMHPCA != false {
-            os.write_bool(14, self.PKCIONMHPCA)?;
+        if self.MNLGJHEMADN != false {
+            os.write_bool(3, self.MNLGJHEMADN)?;
         }
-        if self.ICHIBKCAONN != false {
-            os.write_bool(7, self.ICHIBKCAONN)?;
+        if self.LJDJALDEGKE != false {
+            os.write_bool(4, self.LJDJALDEGKE)?;
         }
-        if self.APLFOHPELBF != false {
-            os.write_bool(3, self.APLFOHPELBF)?;
+        if self.IIDDIHBKAGE != false {
+            os.write_bool(8, self.IIDDIHBKAGE)?;
         }
-        if self.BMDMFFBOHOG != false {
-            os.write_bool(1, self.BMDMFFBOHOG)?;
+        if self.AJGMIHLLEDI != false {
+            os.write_bool(15, self.AJGMIHLLEDI)?;
         }
-        if self.LFMDLEGKIOP != false {
-            os.write_bool(6, self.LFMDLEGKIOP)?;
+        if self.PEKHBGBBLLK != false {
+            os.write_bool(2, self.PEKHBGBBLLK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for PrivacySettings {
     }
 
     fn clear(&mut self) {
-        self.PKCIONMHPCA = false;
-        self.ICHIBKCAONN = false;
-        self.APLFOHPELBF = false;
-        self.BMDMFFBOHOG = false;
-        self.LFMDLEGKIOP = false;
+        self.MNLGJHEMADN = false;
+        self.LJDJALDEGKE = false;
+        self.IIDDIHBKAGE = false;
+        self.AJGMIHLLEDI = false;
+        self.PEKHBGBBLLK = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PrivacySettings {
         static instance: PrivacySettings = PrivacySettings {
-            PKCIONMHPCA: false,
-            ICHIBKCAONN: false,
-            APLFOHPELBF: false,
-            BMDMFFBOHOG: false,
-            LFMDLEGKIOP: false,
+            MNLGJHEMADN: false,
+            LJDJALDEGKE: false,
+            IIDDIHBKAGE: false,
+            AJGMIHLLEDI: false,
+            PEKHBGBBLLK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for PrivacySettings {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15PrivacySettings.proto\"\xbb\x01\n\x0fPrivacySettings\x12\x20\n\x0b\
-    PKCIONMHPCA\x18\x0e\x20\x01(\x08R\x0bPKCIONMHPCA\x12\x20\n\x0bICHIBKCAON\
-    N\x18\x07\x20\x01(\x08R\x0bICHIBKCAONN\x12\x20\n\x0bAPLFOHPELBF\x18\x03\
-    \x20\x01(\x08R\x0bAPLFOHPELBF\x12\x20\n\x0bBMDMFFBOHOG\x18\x01\x20\x01(\
-    \x08R\x0bBMDMFFBOHOG\x12\x20\n\x0bLFMDLEGKIOP\x18\x06\x20\x01(\x08R\x0bL\
-    FMDLEGKIOPb\x06proto3\
+    MNLGJHEMADN\x18\x03\x20\x01(\x08R\x0bMNLGJHEMADN\x12\x20\n\x0bLJDJALDEGK\
+    E\x18\x04\x20\x01(\x08R\x0bLJDJALDEGKE\x12\x20\n\x0bIIDDIHBKAGE\x18\x08\
+    \x20\x01(\x08R\x0bIIDDIHBKAGE\x12\x20\n\x0bAJGMIHLLEDI\x18\x0f\x20\x01(\
+    \x08R\x0bAJGMIHLLEDI\x12\x20\n\x0bPEKHBGBBLLK\x18\x02\x20\x01(\x08R\x0bP\
+    EKHBGBBLLKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

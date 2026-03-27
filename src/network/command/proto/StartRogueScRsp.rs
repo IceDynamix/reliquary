@@ -30,14 +30,14 @@ pub struct StartRogueScRsp {
     // message fields
     // @@protoc_insertion_point(field:StartRogueScRsp.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:StartRogueScRsp.ILKPKJGFCFN)
-    pub ILKPKJGFCFN: ::protobuf::MessageField<super::PGNMJEGNGGC::PGNMJEGNGGC>,
-    // @@protoc_insertion_point(field:StartRogueScRsp.rogue_info)
-    pub rogue_info: ::protobuf::MessageField<super::LOMIDLEIHCJ::LOMIDLEIHCJ>,
-    // @@protoc_insertion_point(field:StartRogueScRsp.scene)
-    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // @@protoc_insertion_point(field:StartRogueScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:StartRogueScRsp.rogue_info)
+    pub rogue_info: ::protobuf::MessageField<super::GHMIFDFCLAF::GHMIFDFCLAF>,
+    // @@protoc_insertion_point(field:StartRogueScRsp.scene)
+    pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
+    // @@protoc_insertion_point(field:StartRogueScRsp.LFMDHAFJNMA)
+    pub LFMDHAFJNMA: ::protobuf::MessageField<super::JCBJDLNDAEH::JCBJDLNDAEH>,
     // special fields
     // @@protoc_insertion_point(special_field:StartRogueScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,12 +62,12 @@ impl StartRogueScRsp {
             |m: &StartRogueScRsp| { &m.lineup },
             |m: &mut StartRogueScRsp| { &mut m.lineup },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGNMJEGNGGC::PGNMJEGNGGC>(
-            "ILKPKJGFCFN",
-            |m: &StartRogueScRsp| { &m.ILKPKJGFCFN },
-            |m: &mut StartRogueScRsp| { &mut m.ILKPKJGFCFN },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &StartRogueScRsp| { &m.retcode },
+            |m: &mut StartRogueScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LOMIDLEIHCJ::LOMIDLEIHCJ>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GHMIFDFCLAF::GHMIFDFCLAF>(
             "rogue_info",
             |m: &StartRogueScRsp| { &m.rogue_info },
             |m: &mut StartRogueScRsp| { &mut m.rogue_info },
@@ -77,10 +77,10 @@ impl StartRogueScRsp {
             |m: &StartRogueScRsp| { &m.scene },
             |m: &mut StartRogueScRsp| { &mut m.scene },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &StartRogueScRsp| { &m.retcode },
-            |m: &mut StartRogueScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JCBJDLNDAEH::JCBJDLNDAEH>(
+            "LFMDHAFJNMA",
+            |m: &StartRogueScRsp| { &m.LFMDHAFJNMA },
+            |m: &mut StartRogueScRsp| { &mut m.LFMDHAFJNMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartRogueScRsp>(
             "StartRogueScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for StartRogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ILKPKJGFCFN)?;
+                88 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                114 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
                 },
-                74 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFMDHAFJNMA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,9 +131,8 @@ impl ::protobuf::Message for StartRogueScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.ILKPKJGFCFN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         if let Some(v) = self.rogue_info.as_ref() {
             let len = v.compute_size();
@@ -143,8 +142,9 @@ impl ::protobuf::Message for StartRogueScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+        if let Some(v) = self.LFMDHAFJNMA.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -153,19 +153,19 @@ impl ::protobuf::Message for StartRogueScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if let Some(v) = self.ILKPKJGFCFN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.rogue_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if let Some(v) = self.rogue_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        if let Some(v) = self.scene.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.LFMDHAFJNMA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,20 +185,20 @@ impl ::protobuf::Message for StartRogueScRsp {
 
     fn clear(&mut self) {
         self.lineup.clear();
-        self.ILKPKJGFCFN.clear();
+        self.retcode = 0;
         self.rogue_info.clear();
         self.scene.clear();
-        self.retcode = 0;
+        self.LFMDHAFJNMA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartRogueScRsp {
         static instance: StartRogueScRsp = StartRogueScRsp {
             lineup: ::protobuf::MessageField::none(),
-            ILKPKJGFCFN: ::protobuf::MessageField::none(),
+            retcode: 0,
             rogue_info: ::protobuf::MessageField::none(),
             scene: ::protobuf::MessageField::none(),
-            retcode: 0,
+            LFMDHAFJNMA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,13 +223,13 @@ impl ::protobuf::reflect::ProtobufValue for StartRogueScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15StartRogueScRsp.proto\x1a\x11LOMIDLEIHCJ.proto\x1a\x10LineupInfo.p\
-    roto\x1a\x11PGNMJEGNGGC.proto\x1a\x0fSceneInfo.proto\"\xcf\x01\n\x0fStar\
-    tRogueScRsp\x12#\n\x06lineup\x18\x05\x20\x01(\x0b2\x0b.LineupInfoR\x06li\
-    neup\x12.\n\x0bILKPKJGFCFN\x18\x0f\x20\x01(\x0b2\x0c.PGNMJEGNGGCR\x0bILK\
-    PKJGFCFN\x12+\n\nrogue_info\x18\x0e\x20\x01(\x0b2\x0c.LOMIDLEIHCJR\trogu\
-    eInfo\x12\x20\n\x05scene\x18\t\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12\
-    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x15StartRogueScRsp.proto\x1a\x11GHMIFDFCLAF.proto\x1a\x11JCBJDLNDAEH.\
+    proto\x1a\x10LineupInfo.proto\x1a\x0fSceneInfo.proto\"\xcf\x01\n\x0fStar\
+    tRogueScRsp\x12#\n\x06lineup\x18\n\x20\x01(\x0b2\x0b.LineupInfoR\x06line\
+    up\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12+\n\nrogue_inf\
+    o\x18\x06\x20\x01(\x0b2\x0c.GHMIFDFCLAFR\trogueInfo\x12\x20\n\x05scene\
+    \x18\x08\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12.\n\x0bLFMDHAFJNMA\x18\r\
+    \x20\x01(\x0b2\x0c.JCBJDLNDAEHR\x0bLFMDHAFJNMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -247,9 +247,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::LOMIDLEIHCJ::file_descriptor().clone());
+            deps.push(super::GHMIFDFCLAF::file_descriptor().clone());
+            deps.push(super::JCBJDLNDAEH::file_descriptor().clone());
             deps.push(super::LineupInfo::file_descriptor().clone());
-            deps.push(super::PGNMJEGNGGC::file_descriptor().clone());
             deps.push(super::SceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartRogueScRsp::generated_message_descriptor_data());

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingSelectEndingScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingSelectEndingScRsp.LJDNEOBIFNK)
-    pub LJDNEOBIFNK: u32,
+    // @@protoc_insertion_point(field:SwordTrainingSelectEndingScRsp.BPECAPAGKGJ)
+    pub BPECAPAGKGJ: u32,
     // @@protoc_insertion_point(field:SwordTrainingSelectEndingScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl SwordTrainingSelectEndingScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJDNEOBIFNK",
-            |m: &SwordTrainingSelectEndingScRsp| { &m.LJDNEOBIFNK },
-            |m: &mut SwordTrainingSelectEndingScRsp| { &mut m.LJDNEOBIFNK },
+            "BPECAPAGKGJ",
+            |m: &SwordTrainingSelectEndingScRsp| { &m.BPECAPAGKGJ },
+            |m: &mut SwordTrainingSelectEndingScRsp| { &mut m.BPECAPAGKGJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for SwordTrainingSelectEndingScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.LJDNEOBIFNK = is.read_uint32()?;
+                8 => {
+                    self.BPECAPAGKGJ = is.read_uint32()?;
                 },
-                16 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SwordTrainingSelectEndingScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LJDNEOBIFNK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LJDNEOBIFNK);
+        if self.BPECAPAGKGJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.BPECAPAGKGJ);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SwordTrainingSelectEndingScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LJDNEOBIFNK != 0 {
-            os.write_uint32(10, self.LJDNEOBIFNK)?;
+        if self.BPECAPAGKGJ != 0 {
+            os.write_uint32(1, self.BPECAPAGKGJ)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for SwordTrainingSelectEndingScRsp {
     }
 
     fn clear(&mut self) {
-        self.LJDNEOBIFNK = 0;
+        self.BPECAPAGKGJ = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingSelectEndingScRsp {
         static instance: SwordTrainingSelectEndingScRsp = SwordTrainingSelectEndingScRsp {
-            LJDNEOBIFNK: 0,
+            BPECAPAGKGJ: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingSelectEndingScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SwordTrainingSelectEndingScRsp.proto\"\\\n\x1eSwordTrainingSelectEndi\
-    ngScRsp\x12\x20\n\x0bLJDNEOBIFNK\x18\n\x20\x01(\rR\x0bLJDNEOBIFNK\x12\
-    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    ngScRsp\x12\x20\n\x0bBPECAPAGKGJ\x18\x01\x20\x01(\rR\x0bBPECAPAGKGJ\x12\
+    \x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetEvolveBuildQueryInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.LAECJMNJEDL)
-    pub LAECJMNJEDL: ::std::vec::Vec<super::FEBOMCCJKBK::FEBOMCCJKBK>,
     // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.DDCNEFCHHFA)
-    pub DDCNEFCHHFA: ::protobuf::MessageField<super::KLOLJDGNCPF::KLOLJDGNCPF>,
+    // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.PMMGJDNFOKF)
+    pub PMMGJDNFOKF: ::protobuf::MessageField<super::NKBOPOPNPPN::NKBOPOPNPPN>,
+    // @@protoc_insertion_point(field:GetEvolveBuildQueryInfoScRsp.FHIFABLAPKB)
+    pub FHIFABLAPKB: ::std::vec::Vec<super::HGKDKGJOOLH::HGKDKGJOOLH>,
     // special fields
     // @@protoc_insertion_point(special_field:GetEvolveBuildQueryInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GetEvolveBuildQueryInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LAECJMNJEDL",
-            |m: &GetEvolveBuildQueryInfoScRsp| { &m.LAECJMNJEDL },
-            |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.LAECJMNJEDL },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetEvolveBuildQueryInfoScRsp| { &m.retcode },
             |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KLOLJDGNCPF::KLOLJDGNCPF>(
-            "DDCNEFCHHFA",
-            |m: &GetEvolveBuildQueryInfoScRsp| { &m.DDCNEFCHHFA },
-            |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.DDCNEFCHHFA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NKBOPOPNPPN::NKBOPOPNPPN>(
+            "PMMGJDNFOKF",
+            |m: &GetEvolveBuildQueryInfoScRsp| { &m.PMMGJDNFOKF },
+            |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.PMMGJDNFOKF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FHIFABLAPKB",
+            |m: &GetEvolveBuildQueryInfoScRsp| { &m.FHIFABLAPKB },
+            |m: &mut GetEvolveBuildQueryInfoScRsp| { &mut m.FHIFABLAPKB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetEvolveBuildQueryInfoScRsp>(
             "GetEvolveBuildQueryInfoScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.LAECJMNJEDL.push(is.read_message()?);
-                },
-                104 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDCNEFCHHFA)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PMMGJDNFOKF)?;
+                },
+                10 => {
+                    self.FHIFABLAPKB.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,32 +107,32 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LAECJMNJEDL {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
-        if let Some(v) = self.DDCNEFCHHFA.as_ref() {
+        if let Some(v) = self.PMMGJDNFOKF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.FHIFABLAPKB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LAECJMNJEDL {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
-        if let Some(v) = self.DDCNEFCHHFA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.PMMGJDNFOKF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
+        for v in &self.FHIFABLAPKB {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetEvolveBuildQueryInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.LAECJMNJEDL.clear();
         self.retcode = 0;
-        self.DDCNEFCHHFA.clear();
+        self.PMMGJDNFOKF.clear();
+        self.FHIFABLAPKB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetEvolveBuildQueryInfoScRsp {
         static instance: GetEvolveBuildQueryInfoScRsp = GetEvolveBuildQueryInfoScRsp {
-            LAECJMNJEDL: ::std::vec::Vec::new(),
             retcode: 0,
-            DDCNEFCHHFA: ::protobuf::MessageField::none(),
+            PMMGJDNFOKF: ::protobuf::MessageField::none(),
+            FHIFABLAPKB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetEvolveBuildQueryInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetEvolveBuildQueryInfoScRsp.proto\x1a\x11FEBOMCCJKBK.proto\x1a\x11K\
-    LOLJDGNCPF.proto\"\x98\x01\n\x1cGetEvolveBuildQueryInfoScRsp\x12.\n\x0bL\
-    AECJMNJEDL\x18\x0f\x20\x03(\x0b2\x0c.FEBOMCCJKBKR\x0bLAECJMNJEDL\x12\x18\
-    \n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12.\n\x0bDDCNEFCHHFA\x18\x0b\
-    \x20\x01(\x0b2\x0c.KLOLJDGNCPFR\x0bDDCNEFCHHFAb\x06proto3\
+    \n\"GetEvolveBuildQueryInfoScRsp.proto\x1a\x11HGKDKGJOOLH.proto\x1a\x11N\
+    KBOPOPNPPN.proto\"\x98\x01\n\x1cGetEvolveBuildQueryInfoScRsp\x12\x18\n\
+    \x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\n\x0bPMMGJDNFOKF\x18\x0c\
+    \x20\x01(\x0b2\x0c.NKBOPOPNPPNR\x0bPMMGJDNFOKF\x12.\n\x0bFHIFABLAPKB\x18\
+    \x01\x20\x03(\x0b2\x0c.HGKDKGJOOLHR\x0bFHIFABLAPKBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::FEBOMCCJKBK::file_descriptor().clone());
-            deps.push(super::KLOLJDGNCPF::file_descriptor().clone());
+            deps.push(super::HGKDKGJOOLH::file_descriptor().clone());
+            deps.push(super::NKBOPOPNPPN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetEvolveBuildQueryInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

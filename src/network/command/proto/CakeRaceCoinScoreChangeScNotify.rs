@@ -30,8 +30,8 @@ pub struct CakeRaceCoinScoreChangeScNotify {
     // message fields
     // @@protoc_insertion_point(field:CakeRaceCoinScoreChangeScNotify.item_value)
     pub item_value: u32,
-    // @@protoc_insertion_point(field:CakeRaceCoinScoreChangeScNotify.ICFNICMJLHC)
-    pub ICFNICMJLHC: u32,
+    // @@protoc_insertion_point(field:CakeRaceCoinScoreChangeScNotify.NOPAPHKLMDP)
+    pub NOPAPHKLMDP: u32,
     // @@protoc_insertion_point(field:CakeRaceCoinScoreChangeScNotify.score_id)
     pub score_id: u32,
     // special fields
@@ -59,9 +59,9 @@ impl CakeRaceCoinScoreChangeScNotify {
             |m: &mut CakeRaceCoinScoreChangeScNotify| { &mut m.item_value },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICFNICMJLHC",
-            |m: &CakeRaceCoinScoreChangeScNotify| { &m.ICFNICMJLHC },
-            |m: &mut CakeRaceCoinScoreChangeScNotify| { &mut m.ICFNICMJLHC },
+            "NOPAPHKLMDP",
+            |m: &CakeRaceCoinScoreChangeScNotify| { &m.NOPAPHKLMDP },
+            |m: &mut CakeRaceCoinScoreChangeScNotify| { &mut m.NOPAPHKLMDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
@@ -89,8 +89,8 @@ impl ::protobuf::Message for CakeRaceCoinScoreChangeScNotify {
                 88 => {
                     self.item_value = is.read_uint32()?;
                 },
-                16 => {
-                    self.ICFNICMJLHC = is.read_uint32()?;
+                120 => {
+                    self.NOPAPHKLMDP = is.read_uint32()?;
                 },
                 24 => {
                     self.score_id = is.read_uint32()?;
@@ -110,8 +110,8 @@ impl ::protobuf::Message for CakeRaceCoinScoreChangeScNotify {
         if self.item_value != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.item_value);
         }
-        if self.ICFNICMJLHC != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ICFNICMJLHC);
+        if self.NOPAPHKLMDP != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.NOPAPHKLMDP);
         }
         if self.score_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.score_id);
@@ -125,8 +125,8 @@ impl ::protobuf::Message for CakeRaceCoinScoreChangeScNotify {
         if self.item_value != 0 {
             os.write_uint32(11, self.item_value)?;
         }
-        if self.ICFNICMJLHC != 0 {
-            os.write_uint32(2, self.ICFNICMJLHC)?;
+        if self.NOPAPHKLMDP != 0 {
+            os.write_uint32(15, self.NOPAPHKLMDP)?;
         }
         if self.score_id != 0 {
             os.write_uint32(3, self.score_id)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for CakeRaceCoinScoreChangeScNotify {
 
     fn clear(&mut self) {
         self.item_value = 0;
-        self.ICFNICMJLHC = 0;
+        self.NOPAPHKLMDP = 0;
         self.score_id = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for CakeRaceCoinScoreChangeScNotify {
     fn default_instance() -> &'static CakeRaceCoinScoreChangeScNotify {
         static instance: CakeRaceCoinScoreChangeScNotify = CakeRaceCoinScoreChangeScNotify {
             item_value: 0,
-            ICFNICMJLHC: 0,
+            NOPAPHKLMDP: 0,
             score_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,7 +185,7 @@ impl ::protobuf::reflect::ProtobufValue for CakeRaceCoinScoreChangeScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%CakeRaceCoinScoreChangeScNotify.proto\"}\n\x1fCakeRaceCoinScoreChange\
     ScNotify\x12\x1d\n\nitem_value\x18\x0b\x20\x01(\rR\titemValue\x12\x20\n\
-    \x0bICFNICMJLHC\x18\x02\x20\x01(\rR\x0bICFNICMJLHC\x12\x19\n\x08score_id\
+    \x0bNOPAPHKLMDP\x18\x0f\x20\x01(\rR\x0bNOPAPHKLMDP\x12\x19\n\x08score_id\
     \x18\x03\x20\x01(\rR\x07scoreIdb\x06proto3\
 ";
 

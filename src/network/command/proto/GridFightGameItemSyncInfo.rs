@@ -30,12 +30,12 @@ pub struct GridFightGameItemSyncInfo {
     // message fields
     // @@protoc_insertion_point(field:GridFightGameItemSyncInfo.grid_game_forge_item_list)
     pub grid_game_forge_item_list: ::std::vec::Vec<super::GridGameForgeItemInfo::GridGameForgeItemInfo>,
-    // @@protoc_insertion_point(field:GridFightGameItemSyncInfo.grid_fight_equipment_list)
-    pub grid_fight_equipment_list: ::std::vec::Vec<super::GridFightEquipmentInfo::GridFightEquipmentInfo>,
     // @@protoc_insertion_point(field:GridFightGameItemSyncInfo.update_grid_fight_consumable_list)
     pub update_grid_fight_consumable_list: ::std::vec::Vec<super::GridFightConsumableUpdateInfo::GridFightConsumableUpdateInfo>,
     // @@protoc_insertion_point(field:GridFightGameItemSyncInfo.grid_fight_consumable_list)
     pub grid_fight_consumable_list: ::std::vec::Vec<super::GridFightConsumableInfo::GridFightConsumableInfo>,
+    // @@protoc_insertion_point(field:GridFightGameItemSyncInfo.grid_fight_equipment_list)
+    pub grid_fight_equipment_list: ::std::vec::Vec<super::GridFightEquipmentInfo::GridFightEquipmentInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightGameItemSyncInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,11 +61,6 @@ impl GridFightGameItemSyncInfo {
             |m: &mut GridFightGameItemSyncInfo| { &mut m.grid_game_forge_item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "grid_fight_equipment_list",
-            |m: &GridFightGameItemSyncInfo| { &m.grid_fight_equipment_list },
-            |m: &mut GridFightGameItemSyncInfo| { &mut m.grid_fight_equipment_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "update_grid_fight_consumable_list",
             |m: &GridFightGameItemSyncInfo| { &m.update_grid_fight_consumable_list },
             |m: &mut GridFightGameItemSyncInfo| { &mut m.update_grid_fight_consumable_list },
@@ -74,6 +69,11 @@ impl GridFightGameItemSyncInfo {
             "grid_fight_consumable_list",
             |m: &GridFightGameItemSyncInfo| { &m.grid_fight_consumable_list },
             |m: &mut GridFightGameItemSyncInfo| { &mut m.grid_fight_consumable_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "grid_fight_equipment_list",
+            |m: &GridFightGameItemSyncInfo| { &m.grid_fight_equipment_list },
+            |m: &mut GridFightGameItemSyncInfo| { &mut m.grid_fight_equipment_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightGameItemSyncInfo>(
             "GridFightGameItemSyncInfo",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GridFightGameItemSyncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                66 => {
                     self.grid_game_forge_item_list.push(is.read_message()?);
                 },
-                122 => {
-                    self.grid_fight_equipment_list.push(is.read_message()?);
-                },
-                58 => {
+                42 => {
                     self.update_grid_fight_consumable_list.push(is.read_message()?);
                 },
-                26 => {
+                106 => {
                     self.grid_fight_consumable_list.push(is.read_message()?);
+                },
+                82 => {
+                    self.grid_fight_equipment_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,15 +121,15 @@ impl ::protobuf::Message for GridFightGameItemSyncInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.grid_fight_equipment_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.update_grid_fight_consumable_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for value in &self.grid_fight_consumable_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.grid_fight_equipment_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -140,16 +140,16 @@ impl ::protobuf::Message for GridFightGameItemSyncInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.grid_game_forge_item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
-        for v in &self.grid_fight_equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         for v in &self.update_grid_fight_consumable_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         for v in &self.grid_fight_consumable_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        for v in &self.grid_fight_equipment_list {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,18 +169,18 @@ impl ::protobuf::Message for GridFightGameItemSyncInfo {
 
     fn clear(&mut self) {
         self.grid_game_forge_item_list.clear();
-        self.grid_fight_equipment_list.clear();
         self.update_grid_fight_consumable_list.clear();
         self.grid_fight_consumable_list.clear();
+        self.grid_fight_equipment_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightGameItemSyncInfo {
         static instance: GridFightGameItemSyncInfo = GridFightGameItemSyncInfo {
             grid_game_forge_item_list: ::std::vec::Vec::new(),
-            grid_fight_equipment_list: ::std::vec::Vec::new(),
             update_grid_fight_consumable_list: ::std::vec::Vec::new(),
             grid_fight_consumable_list: ::std::vec::Vec::new(),
+            grid_fight_equipment_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -208,13 +208,13 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGridFightGameItemSyncInfo.proto\x1a\x1dGridFightConsumableInfo.pro\
     to\x1a#GridFightConsumableUpdateInfo.proto\x1a\x1cGridFightEquipmentInfo\
     .proto\x1a\x1bGridGameForgeItemInfo.proto\"\x82\x03\n\x19GridFightGameIt\
-    emSyncInfo\x12P\n\x19grid_game_forge_item_list\x18\x02\x20\x03(\x0b2\x16\
-    .GridGameForgeItemInfoR\x15gridGameForgeItemList\x12R\n\x19grid_fight_eq\
-    uipment_list\x18\x0f\x20\x03(\x0b2\x17.GridFightEquipmentInfoR\x16gridFi\
-    ghtEquipmentList\x12h\n!update_grid_fight_consumable_list\x18\x07\x20\
-    \x03(\x0b2\x1e.GridFightConsumableUpdateInfoR\x1dupdateGridFightConsumab\
-    leList\x12U\n\x1agrid_fight_consumable_list\x18\x03\x20\x03(\x0b2\x18.Gr\
-    idFightConsumableInfoR\x17gridFightConsumableListb\x06proto3\
+    emSyncInfo\x12P\n\x19grid_game_forge_item_list\x18\x08\x20\x03(\x0b2\x16\
+    .GridGameForgeItemInfoR\x15gridGameForgeItemList\x12h\n!update_grid_figh\
+    t_consumable_list\x18\x05\x20\x03(\x0b2\x1e.GridFightConsumableUpdateInf\
+    oR\x1dupdateGridFightConsumableList\x12U\n\x1agrid_fight_consumable_list\
+    \x18\r\x20\x03(\x0b2\x18.GridFightConsumableInfoR\x17gridFightConsumable\
+    List\x12R\n\x19grid_fight_equipment_list\x18\n\x20\x03(\x0b2\x17.GridFig\
+    htEquipmentInfoR\x16gridFightEquipmentListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

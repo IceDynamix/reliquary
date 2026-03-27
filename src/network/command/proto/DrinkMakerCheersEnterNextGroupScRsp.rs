@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DrinkMakerCheersEnterNextGroupScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DrinkMakerCheersEnterNextGroupScRsp.PJNPMDILGLP)
-    pub PJNPMDILGLP: u32,
+    // @@protoc_insertion_point(field:DrinkMakerCheersEnterNextGroupScRsp.EBPHPEFEOLN)
+    pub EBPHPEFEOLN: u32,
     // @@protoc_insertion_point(field:DrinkMakerCheersEnterNextGroupScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl DrinkMakerCheersEnterNextGroupScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJNPMDILGLP",
-            |m: &DrinkMakerCheersEnterNextGroupScRsp| { &m.PJNPMDILGLP },
-            |m: &mut DrinkMakerCheersEnterNextGroupScRsp| { &mut m.PJNPMDILGLP },
+            "EBPHPEFEOLN",
+            |m: &DrinkMakerCheersEnterNextGroupScRsp| { &m.EBPHPEFEOLN },
+            |m: &mut DrinkMakerCheersEnterNextGroupScRsp| { &mut m.EBPHPEFEOLN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for DrinkMakerCheersEnterNextGroupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.PJNPMDILGLP = is.read_uint32()?;
+                24 => {
+                    self.EBPHPEFEOLN = is.read_uint32()?;
                 },
                 80 => {
                     self.retcode = is.read_uint32()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for DrinkMakerCheersEnterNextGroupScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PJNPMDILGLP != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.PJNPMDILGLP);
+        if self.EBPHPEFEOLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.EBPHPEFEOLN);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(10, self.retcode);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for DrinkMakerCheersEnterNextGroupScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PJNPMDILGLP != 0 {
-            os.write_uint32(6, self.PJNPMDILGLP)?;
+        if self.EBPHPEFEOLN != 0 {
+            os.write_uint32(3, self.EBPHPEFEOLN)?;
         }
         if self.retcode != 0 {
             os.write_uint32(10, self.retcode)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for DrinkMakerCheersEnterNextGroupScRsp {
     }
 
     fn clear(&mut self) {
-        self.PJNPMDILGLP = 0;
+        self.EBPHPEFEOLN = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DrinkMakerCheersEnterNextGroupScRsp {
         static instance: DrinkMakerCheersEnterNextGroupScRsp = DrinkMakerCheersEnterNextGroupScRsp {
-            PJNPMDILGLP: 0,
+            EBPHPEFEOLN: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for DrinkMakerCheersEnterNextGroupScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)DrinkMakerCheersEnterNextGroupScRsp.proto\"a\n#DrinkMakerCheersEnterN\
-    extGroupScRsp\x12\x20\n\x0bPJNPMDILGLP\x18\x06\x20\x01(\rR\x0bPJNPMDILGL\
-    P\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    extGroupScRsp\x12\x20\n\x0bEBPHPEFEOLN\x18\x03\x20\x01(\rR\x0bEBPHPEFEOL\
+    N\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

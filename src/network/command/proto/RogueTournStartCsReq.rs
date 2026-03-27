@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournStartCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournStartCsReq.GJMJJBEDIHJ)
-    pub GJMJJBEDIHJ: bool,
-    // @@protoc_insertion_point(field:RogueTournStartCsReq.AJDNIMJEHHA)
-    pub AJDNIMJEHHA: bool,
     // @@protoc_insertion_point(field:RogueTournStartCsReq.area_id)
     pub area_id: u32,
-    // @@protoc_insertion_point(field:RogueTournStartCsReq.base_avatar_id_list)
-    pub base_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueTournStartCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::OGLFABHLOOG::OGLFABHLOOG>,
+    // @@protoc_insertion_point(field:RogueTournStartCsReq.JNPFCFHEGFE)
+    pub JNPFCFHEGFE: bool,
+    // @@protoc_insertion_point(field:RogueTournStartCsReq.PCGCEIDAIOM)
+    pub PCGCEIDAIOM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournStartCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl RogueTournStartCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GJMJJBEDIHJ",
-            |m: &RogueTournStartCsReq| { &m.GJMJJBEDIHJ },
-            |m: &mut RogueTournStartCsReq| { &mut m.GJMJJBEDIHJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJDNIMJEHHA",
-            |m: &RogueTournStartCsReq| { &m.AJDNIMJEHHA },
-            |m: &mut RogueTournStartCsReq| { &mut m.AJDNIMJEHHA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "area_id",
             |m: &RogueTournStartCsReq| { &m.area_id },
             |m: &mut RogueTournStartCsReq| { &mut m.area_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "base_avatar_id_list",
-            |m: &RogueTournStartCsReq| { &m.base_avatar_id_list },
-            |m: &mut RogueTournStartCsReq| { &mut m.base_avatar_id_list },
+            "avatar_list",
+            |m: &RogueTournStartCsReq| { &m.avatar_list },
+            |m: &mut RogueTournStartCsReq| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JNPFCFHEGFE",
+            |m: &RogueTournStartCsReq| { &m.JNPFCFHEGFE },
+            |m: &mut RogueTournStartCsReq| { &mut m.JNPFCFHEGFE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PCGCEIDAIOM",
+            |m: &RogueTournStartCsReq| { &m.PCGCEIDAIOM },
+            |m: &mut RogueTournStartCsReq| { &mut m.PCGCEIDAIOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournStartCsReq>(
             "RogueTournStartCsReq",
@@ -93,20 +93,17 @@ impl ::protobuf::Message for RogueTournStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.GJMJJBEDIHJ = is.read_bool()?;
-                },
-                64 => {
-                    self.AJDNIMJEHHA = is.read_bool()?;
-                },
-                80 => {
+                32 => {
                     self.area_id = is.read_uint32()?;
                 },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
+                42 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
                 112 => {
-                    self.base_avatar_id_list.push(is.read_uint32()?);
+                    self.JNPFCFHEGFE = is.read_bool()?;
+                },
+                24 => {
+                    self.PCGCEIDAIOM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +117,37 @@ impl ::protobuf::Message for RogueTournStartCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GJMJJBEDIHJ != false {
-            my_size += 1 + 1;
-        }
-        if self.AJDNIMJEHHA != false {
-            my_size += 1 + 1;
-        }
         if self.area_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.area_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.area_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.base_avatar_id_list);
+        for value in &self.avatar_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.JNPFCFHEGFE != false {
+            my_size += 1 + 1;
+        }
+        if self.PCGCEIDAIOM != false {
+            my_size += 1 + 1;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GJMJJBEDIHJ != false {
-            os.write_bool(7, self.GJMJJBEDIHJ)?;
-        }
-        if self.AJDNIMJEHHA != false {
-            os.write_bool(8, self.AJDNIMJEHHA)?;
-        }
         if self.area_id != 0 {
-            os.write_uint32(10, self.area_id)?;
+            os.write_uint32(4, self.area_id)?;
         }
-        os.write_repeated_packed_uint32(14, &self.base_avatar_id_list)?;
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        if self.JNPFCFHEGFE != false {
+            os.write_bool(14, self.JNPFCFHEGFE)?;
+        }
+        if self.PCGCEIDAIOM != false {
+            os.write_bool(3, self.PCGCEIDAIOM)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +165,19 @@ impl ::protobuf::Message for RogueTournStartCsReq {
     }
 
     fn clear(&mut self) {
-        self.GJMJJBEDIHJ = false;
-        self.AJDNIMJEHHA = false;
         self.area_id = 0;
-        self.base_avatar_id_list.clear();
+        self.avatar_list.clear();
+        self.JNPFCFHEGFE = false;
+        self.PCGCEIDAIOM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournStartCsReq {
         static instance: RogueTournStartCsReq = RogueTournStartCsReq {
-            GJMJJBEDIHJ: false,
-            AJDNIMJEHHA: false,
             area_id: 0,
-            base_avatar_id_list: ::std::vec::Vec::new(),
+            avatar_list: ::std::vec::Vec::new(),
+            JNPFCFHEGFE: false,
+            PCGCEIDAIOM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournStartCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRogueTournStartCsReq.proto\"\xa2\x01\n\x14RogueTournStartCsReq\x12\
-    \x20\n\x0bGJMJJBEDIHJ\x18\x07\x20\x01(\x08R\x0bGJMJJBEDIHJ\x12\x20\n\x0b\
-    AJDNIMJEHHA\x18\x08\x20\x01(\x08R\x0bAJDNIMJEHHA\x12\x17\n\x07area_id\
-    \x18\n\x20\x01(\rR\x06areaId\x12-\n\x13base_avatar_id_list\x18\x0e\x20\
-    \x03(\rR\x10baseAvatarIdListb\x06proto3\
+    \n\x1aRogueTournStartCsReq.proto\x1a\x11OGLFABHLOOG.proto\"\xa2\x01\n\
+    \x14RogueTournStartCsReq\x12\x17\n\x07area_id\x18\x04\x20\x01(\rR\x06are\
+    aId\x12-\n\x0bavatar_list\x18\x05\x20\x03(\x0b2\x0c.OGLFABHLOOGR\navatar\
+    List\x12\x20\n\x0bJNPFCFHEGFE\x18\x0e\x20\x01(\x08R\x0bJNPFCFHEGFE\x12\
+    \x20\n\x0bPCGCEIDAIOM\x18\x03\x20\x01(\x08R\x0bPCGCEIDAIOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -221,7 +223,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::OGLFABHLOOG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournStartCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

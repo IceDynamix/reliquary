@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GroupStateInfo {
     // message fields
-    // @@protoc_insertion_point(field:GroupStateInfo.EBJFAEEOCDP)
-    pub EBJFAEEOCDP: u32,
+    // @@protoc_insertion_point(field:GroupStateInfo.LAPJHJBLNEP)
+    pub LAPJHJBLNEP: u32,
+    // @@protoc_insertion_point(field:GroupStateInfo.group_id)
+    pub group_id: u32,
     // @@protoc_insertion_point(field:GroupStateInfo.group_state)
     pub group_state: u32,
     // @@protoc_insertion_point(field:GroupStateInfo.entry_id)
     pub entry_id: u32,
-    // @@protoc_insertion_point(field:GroupStateInfo.group_id)
-    pub group_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GroupStateInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,14 @@ impl GroupStateInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EBJFAEEOCDP",
-            |m: &GroupStateInfo| { &m.EBJFAEEOCDP },
-            |m: &mut GroupStateInfo| { &mut m.EBJFAEEOCDP },
+            "LAPJHJBLNEP",
+            |m: &GroupStateInfo| { &m.LAPJHJBLNEP },
+            |m: &mut GroupStateInfo| { &mut m.LAPJHJBLNEP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &GroupStateInfo| { &m.group_id },
+            |m: &mut GroupStateInfo| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_state",
@@ -69,11 +74,6 @@ impl GroupStateInfo {
             "entry_id",
             |m: &GroupStateInfo| { &m.entry_id },
             |m: &mut GroupStateInfo| { &mut m.entry_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &GroupStateInfo| { &m.group_id },
-            |m: &mut GroupStateInfo| { &mut m.group_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GroupStateInfo>(
             "GroupStateInfo",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for GroupStateInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.EBJFAEEOCDP = is.read_uint32()?;
+                120 => {
+                    self.LAPJHJBLNEP = is.read_uint32()?;
                 },
-                64 => {
+                96 => {
+                    self.group_id = is.read_uint32()?;
+                },
+                104 => {
                     self.group_state = is.read_uint32()?;
                 },
-                32 => {
+                72 => {
                     self.entry_id = is.read_uint32()?;
-                },
-                88 => {
-                    self.group_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for GroupStateInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EBJFAEEOCDP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EBJFAEEOCDP);
-        }
-        if self.group_state != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.group_state);
-        }
-        if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.entry_id);
+        if self.LAPJHJBLNEP != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LAPJHJBLNEP);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.group_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
+        }
+        if self.group_state != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.group_state);
+        }
+        if self.entry_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.entry_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for GroupStateInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EBJFAEEOCDP != 0 {
-            os.write_uint32(13, self.EBJFAEEOCDP)?;
-        }
-        if self.group_state != 0 {
-            os.write_uint32(8, self.group_state)?;
-        }
-        if self.entry_id != 0 {
-            os.write_uint32(4, self.entry_id)?;
+        if self.LAPJHJBLNEP != 0 {
+            os.write_uint32(15, self.LAPJHJBLNEP)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(11, self.group_id)?;
+            os.write_uint32(12, self.group_id)?;
+        }
+        if self.group_state != 0 {
+            os.write_uint32(13, self.group_state)?;
+        }
+        if self.entry_id != 0 {
+            os.write_uint32(9, self.entry_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for GroupStateInfo {
     }
 
     fn clear(&mut self) {
-        self.EBJFAEEOCDP = 0;
+        self.LAPJHJBLNEP = 0;
+        self.group_id = 0;
         self.group_state = 0;
         self.entry_id = 0;
-        self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GroupStateInfo {
         static instance: GroupStateInfo = GroupStateInfo {
-            EBJFAEEOCDP: 0,
+            LAPJHJBLNEP: 0,
+            group_id: 0,
             group_state: 0,
             entry_id: 0,
-            group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for GroupStateInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14GroupStateInfo.proto\"\x89\x01\n\x0eGroupStateInfo\x12\x20\n\x0bEB\
-    JFAEEOCDP\x18\r\x20\x01(\rR\x0bEBJFAEEOCDP\x12\x1f\n\x0bgroup_state\x18\
-    \x08\x20\x01(\rR\ngroupState\x12\x19\n\x08entry_id\x18\x04\x20\x01(\rR\
-    \x07entryId\x12\x19\n\x08group_id\x18\x0b\x20\x01(\rR\x07groupIdb\x06pro\
-    to3\
+    \n\x14GroupStateInfo.proto\"\x89\x01\n\x0eGroupStateInfo\x12\x20\n\x0bLA\
+    PJHJBLNEP\x18\x0f\x20\x01(\rR\x0bLAPJHJBLNEP\x12\x19\n\x08group_id\x18\
+    \x0c\x20\x01(\rR\x07groupId\x12\x1f\n\x0bgroup_state\x18\r\x20\x01(\rR\n\
+    groupState\x12\x19\n\x08entry_id\x18\t\x20\x01(\rR\x07entryIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

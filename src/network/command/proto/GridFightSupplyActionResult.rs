@@ -72,10 +72,10 @@ impl ::protobuf::Message for GridFightSupplyActionResult {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                114 => {
                     is.read_repeated_packed_uint32_into(&mut self.select_supply_indexes)?;
                 },
-                80 => {
+                112 => {
                     self.select_supply_indexes.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for GridFightSupplyActionResult {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.select_supply_indexes);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.select_supply_indexes);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.select_supply_indexes)?;
+        os.write_repeated_packed_uint32(14, &self.select_supply_indexes)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSupplyActionResult {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GridFightSupplyActionResult.proto\"Q\n\x1bGridFightSupplyActionResult\
-    \x122\n\x15select_supply_indexes\x18\n\x20\x03(\rR\x13selectSupplyIndexe\
-    sb\x06proto3\
+    \x122\n\x15select_supply_indexes\x18\x0e\x20\x03(\rR\x13selectSupplyInde\
+    xesb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

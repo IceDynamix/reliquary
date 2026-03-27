@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:ChessRogueNousDicePhase)
 pub enum ChessRogueNousDicePhase {
-    // @@protoc_insertion_point(enum_value:ChessRogueNousDicePhase.KOMMGFFGBCK_GKJBAODJMJG)
-    KOMMGFFGBCK_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:ChessRogueNousDicePhase.KOMMGFFGBCK_CCABJHELMHD)
-    KOMMGFFGBCK_CCABJHELMHD = 1,
-    // @@protoc_insertion_point(enum_value:ChessRogueNousDicePhase.KOMMGFFGBCK_JIJKMFBMJJM)
-    KOMMGFFGBCK_JIJKMFBMJJM = 2,
+    // @@protoc_insertion_point(enum_value:ChessRogueNousDicePhase.ChessRogueNousDicePhase_MNFEPONEDDJ)
+    ChessRogueNousDicePhase_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:ChessRogueNousDicePhase.ChessRogueNousDicePhase_AEGNPMAFNBJ)
+    ChessRogueNousDicePhase_AEGNPMAFNBJ = 1,
+    // @@protoc_insertion_point(enum_value:ChessRogueNousDicePhase.ChessRogueNousDicePhase_HFCKDKPFOKH)
+    ChessRogueNousDicePhase_HFCKDKPFOKH = 2,
 }
 
 impl ::protobuf::Enum for ChessRogueNousDicePhase {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for ChessRogueNousDicePhase {
 
     fn from_i32(value: i32) -> ::std::option::Option<ChessRogueNousDicePhase> {
         match value {
-            0 => ::std::option::Option::Some(ChessRogueNousDicePhase::KOMMGFFGBCK_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(ChessRogueNousDicePhase::KOMMGFFGBCK_CCABJHELMHD),
-            2 => ::std::option::Option::Some(ChessRogueNousDicePhase::KOMMGFFGBCK_JIJKMFBMJJM),
+            0 => ::std::option::Option::Some(ChessRogueNousDicePhase::ChessRogueNousDicePhase_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(ChessRogueNousDicePhase::ChessRogueNousDicePhase_AEGNPMAFNBJ),
+            2 => ::std::option::Option::Some(ChessRogueNousDicePhase::ChessRogueNousDicePhase_HFCKDKPFOKH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<ChessRogueNousDicePhase> {
         match str {
-            "KOMMGFFGBCK_GKJBAODJMJG" => ::std::option::Option::Some(ChessRogueNousDicePhase::KOMMGFFGBCK_GKJBAODJMJG),
-            "KOMMGFFGBCK_CCABJHELMHD" => ::std::option::Option::Some(ChessRogueNousDicePhase::KOMMGFFGBCK_CCABJHELMHD),
-            "KOMMGFFGBCK_JIJKMFBMJJM" => ::std::option::Option::Some(ChessRogueNousDicePhase::KOMMGFFGBCK_JIJKMFBMJJM),
+            "ChessRogueNousDicePhase_MNFEPONEDDJ" => ::std::option::Option::Some(ChessRogueNousDicePhase::ChessRogueNousDicePhase_MNFEPONEDDJ),
+            "ChessRogueNousDicePhase_AEGNPMAFNBJ" => ::std::option::Option::Some(ChessRogueNousDicePhase::ChessRogueNousDicePhase_AEGNPMAFNBJ),
+            "ChessRogueNousDicePhase_HFCKDKPFOKH" => ::std::option::Option::Some(ChessRogueNousDicePhase::ChessRogueNousDicePhase_HFCKDKPFOKH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ChessRogueNousDicePhase] = &[
-        ChessRogueNousDicePhase::KOMMGFFGBCK_GKJBAODJMJG,
-        ChessRogueNousDicePhase::KOMMGFFGBCK_CCABJHELMHD,
-        ChessRogueNousDicePhase::KOMMGFFGBCK_JIJKMFBMJJM,
+        ChessRogueNousDicePhase::ChessRogueNousDicePhase_MNFEPONEDDJ,
+        ChessRogueNousDicePhase::ChessRogueNousDicePhase_AEGNPMAFNBJ,
+        ChessRogueNousDicePhase::ChessRogueNousDicePhase_HFCKDKPFOKH,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for ChessRogueNousDicePhase {
 
 impl ::std::default::Default for ChessRogueNousDicePhase {
     fn default() -> Self {
-        ChessRogueNousDicePhase::KOMMGFFGBCK_GKJBAODJMJG
+        ChessRogueNousDicePhase::ChessRogueNousDicePhase_MNFEPONEDDJ
     }
 }
 
@@ -92,9 +92,10 @@ impl ChessRogueNousDicePhase {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dChessRogueNousDicePhase.proto*p\n\x17ChessRogueNousDicePhase\x12\
-    \x1b\n\x17KOMMGFFGBCK_GKJBAODJMJG\x10\0\x12\x1b\n\x17KOMMGFFGBCK_CCABJHE\
-    LMHD\x10\x01\x12\x1b\n\x17KOMMGFFGBCK_JIJKMFBMJJM\x10\x02b\x06proto3\
+    \n\x1dChessRogueNousDicePhase.proto*\x94\x01\n\x17ChessRogueNousDicePhas\
+    e\x12'\n#ChessRogueNousDicePhase_MNFEPONEDDJ\x10\0\x12'\n#ChessRogueNous\
+    DicePhase_AEGNPMAFNBJ\x10\x01\x12'\n#ChessRogueNousDicePhase_HFCKDKPFOKH\
+    \x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

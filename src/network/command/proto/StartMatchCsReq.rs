@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartMatchCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartMatchCsReq.IIPLMDEFCFK)
-    pub IIPLMDEFCFK: ::protobuf::MessageField<super::LobbyGameExtInfo::LobbyGameExtInfo>,
-    // @@protoc_insertion_point(field:StartMatchCsReq.OKKFCINADIE)
-    pub OKKFCINADIE: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
+    // @@protoc_insertion_point(field:StartMatchCsReq.HLBJLHKOCHA)
+    pub HLBJLHKOCHA: ::protobuf::MessageField<super::LobbyGameExtInfo::LobbyGameExtInfo>,
+    // @@protoc_insertion_point(field:StartMatchCsReq.MLKKBBFLAHG)
+    pub MLKKBBFLAHG: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // special fields
     // @@protoc_insertion_point(special_field:StartMatchCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl StartMatchCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LobbyGameExtInfo::LobbyGameExtInfo>(
-            "IIPLMDEFCFK",
-            |m: &StartMatchCsReq| { &m.IIPLMDEFCFK },
-            |m: &mut StartMatchCsReq| { &mut m.IIPLMDEFCFK },
+            "HLBJLHKOCHA",
+            |m: &StartMatchCsReq| { &m.HLBJLHKOCHA },
+            |m: &mut StartMatchCsReq| { &mut m.HLBJLHKOCHA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKKFCINADIE",
-            |m: &StartMatchCsReq| { &m.OKKFCINADIE },
-            |m: &mut StartMatchCsReq| { &mut m.OKKFCINADIE },
+            "MLKKBBFLAHG",
+            |m: &StartMatchCsReq| { &m.MLKKBBFLAHG },
+            |m: &mut StartMatchCsReq| { &mut m.MLKKBBFLAHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartMatchCsReq>(
             "StartMatchCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for StartMatchCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIPLMDEFCFK)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HLBJLHKOCHA)?;
                 },
-                8 => {
-                    self.OKKFCINADIE = is.read_enum_or_unknown()?;
+                32 => {
+                    self.MLKKBBFLAHG = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for StartMatchCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IIPLMDEFCFK.as_ref() {
+        if let Some(v) = self.HLBJLHKOCHA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.OKKFCINADIE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(1, self.OKKFCINADIE.value());
+        if self.MLKKBBFLAHG != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(4, self.MLKKBBFLAHG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for StartMatchCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IIPLMDEFCFK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.HLBJLHKOCHA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if self.OKKFCINADIE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.OKKFCINADIE))?;
+        if self.MLKKBBFLAHG != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_MNFEPONEDDJ) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.MLKKBBFLAHG))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for StartMatchCsReq {
     }
 
     fn clear(&mut self) {
-        self.IIPLMDEFCFK.clear();
-        self.OKKFCINADIE = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG);
+        self.HLBJLHKOCHA.clear();
+        self.MLKKBBFLAHG = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_MNFEPONEDDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartMatchCsReq {
         static instance: StartMatchCsReq = StartMatchCsReq {
-            IIPLMDEFCFK: ::protobuf::MessageField::none(),
-            OKKFCINADIE: ::protobuf::EnumOrUnknown::from_i32(0),
+            HLBJLHKOCHA: ::protobuf::MessageField::none(),
+            MLKKBBFLAHG: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for StartMatchCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15StartMatchCsReq.proto\x1a\x13FightGameMode.proto\x1a\x16LobbyGameE\
-    xtInfo.proto\"x\n\x0fStartMatchCsReq\x123\n\x0bIIPLMDEFCFK\x18\x08\x20\
-    \x01(\x0b2\x11.LobbyGameExtInfoR\x0bIIPLMDEFCFK\x120\n\x0bOKKFCINADIE\
-    \x18\x01\x20\x01(\x0e2\x0e.FightGameModeR\x0bOKKFCINADIEb\x06proto3\
+    xtInfo.proto\"x\n\x0fStartMatchCsReq\x123\n\x0bHLBJLHKOCHA\x18\n\x20\x01\
+    (\x0b2\x11.LobbyGameExtInfoR\x0bHLBJLHKOCHA\x120\n\x0bMLKKBBFLAHG\x18\
+    \x04\x20\x01(\x0e2\x0e.FightGameModeR\x0bMLKKBBFLAHGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

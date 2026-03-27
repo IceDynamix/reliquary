@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochurePageUnlockScNotify {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochurePageUnlockScNotify.ECHGBHGCNMG)
-    pub ECHGBHGCNMG: u32,
+    // @@protoc_insertion_point(field:TravelBrochurePageUnlockScNotify.AKGJJEFCGKB)
+    pub AKGJJEFCGKB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochurePageUnlockScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TravelBrochurePageUnlockScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECHGBHGCNMG",
-            |m: &TravelBrochurePageUnlockScNotify| { &m.ECHGBHGCNMG },
-            |m: &mut TravelBrochurePageUnlockScNotify| { &mut m.ECHGBHGCNMG },
+            "AKGJJEFCGKB",
+            |m: &TravelBrochurePageUnlockScNotify| { &m.AKGJJEFCGKB },
+            |m: &mut TravelBrochurePageUnlockScNotify| { &mut m.AKGJJEFCGKB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochurePageUnlockScNotify>(
             "TravelBrochurePageUnlockScNotify",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for TravelBrochurePageUnlockScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 120 => {
-                    self.ECHGBHGCNMG = is.read_uint32()?;
+                    self.AKGJJEFCGKB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for TravelBrochurePageUnlockScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ECHGBHGCNMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ECHGBHGCNMG);
+        if self.AKGJJEFCGKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.AKGJJEFCGKB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for TravelBrochurePageUnlockScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ECHGBHGCNMG != 0 {
-            os.write_uint32(15, self.ECHGBHGCNMG)?;
+        if self.AKGJJEFCGKB != 0 {
+            os.write_uint32(15, self.AKGJJEFCGKB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for TravelBrochurePageUnlockScNotify {
     }
 
     fn clear(&mut self) {
-        self.ECHGBHGCNMG = 0;
+        self.AKGJJEFCGKB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochurePageUnlockScNotify {
         static instance: TravelBrochurePageUnlockScNotify = TravelBrochurePageUnlockScNotify {
-            ECHGBHGCNMG: 0,
+            AKGJJEFCGKB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochurePageUnlockScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&TravelBrochurePageUnlockScNotify.proto\"D\n\x20TravelBrochurePageUnlo\
-    ckScNotify\x12\x20\n\x0bECHGBHGCNMG\x18\x0f\x20\x01(\rR\x0bECHGBHGCNMGb\
+    ckScNotify\x12\x20\n\x0bAKGJJEFCGKB\x18\x0f\x20\x01(\rR\x0bAKGJJEFCGKBb\
     \x06proto3\
 ";
 

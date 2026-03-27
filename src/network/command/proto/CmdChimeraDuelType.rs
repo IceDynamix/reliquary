@@ -27,78 +27,78 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdChimeraDuelType)
 pub enum CmdChimeraDuelType {
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_GKJBAODJMJG)
-    KEHIGDEPKMK_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_CMHAODCDDKF)
-    KEHIGDEPKMK_CMHAODCDDKF = 9215,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_PDAGFAPEEIB)
-    KEHIGDEPKMK_PDAGFAPEEIB = 9231,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_EAEANCEAIMC)
-    KEHIGDEPKMK_EAEANCEAIMC = 9236,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_PKCLLFPMFNF)
-    KEHIGDEPKMK_PKCLLFPMFNF = 9247,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_PAPEDGMMDFE)
-    KEHIGDEPKMK_PAPEDGMMDFE = 9251,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_CBPIHPDLEGN)
-    KEHIGDEPKMK_CBPIHPDLEGN = 9258,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_GIEPGNODONM)
-    KEHIGDEPKMK_GIEPGNODONM = 9257,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_ADPDBNFANLM)
-    KEHIGDEPKMK_ADPDBNFANLM = 9256,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_BKEIGJMEMCE)
-    KEHIGDEPKMK_BKEIGJMEMCE = 9250,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_EPHGCNDCLAP)
-    KEHIGDEPKMK_EPHGCNDCLAP = 9246,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_PKICKEIGAKM)
-    KEHIGDEPKMK_PKICKEIGAKM = 9213,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_CJENHOKCPKF)
-    KEHIGDEPKMK_CJENHOKCPKF = 9238,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_IEELBBAODFC)
-    KEHIGDEPKMK_IEELBBAODFC = 9227,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_IJLEDFNININ)
-    KEHIGDEPKMK_IJLEDFNININ = 9243,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_HDMDEEOBFOI)
-    KEHIGDEPKMK_HDMDEEOBFOI = 9233,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_NGIOMDMKMBE)
-    KEHIGDEPKMK_NGIOMDMKMBE = 9239,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_DCPMLBBFBAL)
-    KEHIGDEPKMK_DCPMLBBFBAL = 9259,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_IMFNHLCNDLG)
-    KEHIGDEPKMK_IMFNHLCNDLG = 9255,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_ENCMMAGPFLA)
-    KEHIGDEPKMK_ENCMMAGPFLA = 9229,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_MMLBCMLFEAI)
-    KEHIGDEPKMK_MMLBCMLFEAI = 9248,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_KNJDBLHBFBM)
-    KEHIGDEPKMK_KNJDBLHBFBM = 9260,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_IDIMBDEBGNL)
-    KEHIGDEPKMK_IDIMBDEBGNL = 9218,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_JANKIBEHMHE)
-    KEHIGDEPKMK_JANKIBEHMHE = 9249,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_NPBBKENFDJC)
-    KEHIGDEPKMK_NPBBKENFDJC = 9241,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_IHNGPIFPLCI)
-    KEHIGDEPKMK_IHNGPIFPLCI = 9211,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_LJGEBLACHPI)
-    KEHIGDEPKMK_LJGEBLACHPI = 9245,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_NOGIKFIELDM)
-    KEHIGDEPKMK_NOGIKFIELDM = 9212,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_IHHPPGHHDFJ)
-    KEHIGDEPKMK_IHHPPGHHDFJ = 9254,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_MAOKEIPFMCB)
-    KEHIGDEPKMK_MAOKEIPFMCB = 9223,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_PCBOGOFKGAI)
-    KEHIGDEPKMK_PCBOGOFKGAI = 9216,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_CFIDJLKJFJI)
-    KEHIGDEPKMK_CFIDJLKJFJI = 9225,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_KKOBOKBECEI)
-    KEHIGDEPKMK_KKOBOKBECEI = 9253,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_KFPBDIEMEAK)
-    KEHIGDEPKMK_KFPBDIEMEAK = 9221,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_EFNCGNPIPNH)
-    KEHIGDEPKMK_EFNCGNPIPNH = 9232,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.KEHIGDEPKMK_ICGEMPOLMAJ)
-    KEHIGDEPKMK_ICGEMPOLMAJ = 9230,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_MNFEPONEDDJ)
+    CmdChimeraDuelType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_IPJADCICABC)
+    CmdChimeraDuelType_IPJADCICABC = 9212,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_JNHDOCJGMOD)
+    CmdChimeraDuelType_JNHDOCJGMOD = 9259,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_GCONIEBJIPO)
+    CmdChimeraDuelType_GCONIEBJIPO = 9249,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_PNONEFGJNOP)
+    CmdChimeraDuelType_PNONEFGJNOP = 9233,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_JEELEGPPJBO)
+    CmdChimeraDuelType_JEELEGPPJBO = 9218,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_BLCNIICFFLJ)
+    CmdChimeraDuelType_BLCNIICFFLJ = 9215,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_GMBLPFNKPEG)
+    CmdChimeraDuelType_GMBLPFNKPEG = 9221,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_ICMGCPFFCBE)
+    CmdChimeraDuelType_ICMGCPFFCBE = 9223,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_MLAJIEOMMBC)
+    CmdChimeraDuelType_MLAJIEOMMBC = 9214,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_DMJAPPFMIBH)
+    CmdChimeraDuelType_DMJAPPFMIBH = 9216,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_BLGGEGLJGNH)
+    CmdChimeraDuelType_BLGGEGLJGNH = 9256,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_PEKOLPBENFL)
+    CmdChimeraDuelType_PEKOLPBENFL = 9231,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_EDJBCIKFIIG)
+    CmdChimeraDuelType_EDJBCIKFIIG = 9213,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_JODDOHEFCCJ)
+    CmdChimeraDuelType_JODDOHEFCCJ = 9226,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_DKGKFLKHBFA)
+    CmdChimeraDuelType_DKGKFLKHBFA = 9236,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_OOHOOOAHOMF)
+    CmdChimeraDuelType_OOHOOOAHOMF = 9219,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_EDLPJMPMOIL)
+    CmdChimeraDuelType_EDLPJMPMOIL = 9227,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_JIDPFIOLGEF)
+    CmdChimeraDuelType_JIDPFIOLGEF = 9240,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_DEKIJEDFECE)
+    CmdChimeraDuelType_DEKIJEDFECE = 9238,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_IDDACELMMMK)
+    CmdChimeraDuelType_IDDACELMMMK = 9217,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_DNGJCEDFIOE)
+    CmdChimeraDuelType_DNGJCEDFIOE = 9250,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_KCCOKCELOLH)
+    CmdChimeraDuelType_KCCOKCELOLH = 9252,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_KFNBBOPLOIC)
+    CmdChimeraDuelType_KFNBBOPLOIC = 9248,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_MCKHOPPCMKO)
+    CmdChimeraDuelType_MCKHOPPCMKO = 9229,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_FIKLOHKOPDA)
+    CmdChimeraDuelType_FIKLOHKOPDA = 9239,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_LOEAEOAAJJJ)
+    CmdChimeraDuelType_LOEAEOAAJJJ = 9232,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_LPDKCDODBCA)
+    CmdChimeraDuelType_LPDKCDODBCA = 9241,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_CNCLNENMBFD)
+    CmdChimeraDuelType_CNCLNENMBFD = 9222,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_EFMHNGFEDJC)
+    CmdChimeraDuelType_EFMHNGFEDJC = 9251,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_FNIGPMLDLCF)
+    CmdChimeraDuelType_FNIGPMLDLCF = 9244,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_POPJKMIKCFD)
+    CmdChimeraDuelType_POPJKMIKCFD = 9234,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_KOAHPADILLD)
+    CmdChimeraDuelType_KOAHPADILLD = 9245,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_GBAKKFBOCLL)
+    CmdChimeraDuelType_GBAKKFBOCLL = 9228,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_OOEDGALGIHO)
+    CmdChimeraDuelType_OOEDGALGIHO = 9242,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelType_JDLHBLLJAKI)
+    CmdChimeraDuelType_JDLHBLLJAKI = 9230,
 }
 
 impl ::protobuf::Enum for CmdChimeraDuelType {
@@ -110,125 +110,125 @@ impl ::protobuf::Enum for CmdChimeraDuelType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdChimeraDuelType> {
         match value {
-            0 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_GKJBAODJMJG),
-            9215 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_CMHAODCDDKF),
-            9231 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_PDAGFAPEEIB),
-            9236 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_EAEANCEAIMC),
-            9247 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_PKCLLFPMFNF),
-            9251 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_PAPEDGMMDFE),
-            9258 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_CBPIHPDLEGN),
-            9257 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_GIEPGNODONM),
-            9256 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_ADPDBNFANLM),
-            9250 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_BKEIGJMEMCE),
-            9246 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_EPHGCNDCLAP),
-            9213 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_PKICKEIGAKM),
-            9238 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_CJENHOKCPKF),
-            9227 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IEELBBAODFC),
-            9243 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IJLEDFNININ),
-            9233 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_HDMDEEOBFOI),
-            9239 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_NGIOMDMKMBE),
-            9259 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_DCPMLBBFBAL),
-            9255 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IMFNHLCNDLG),
-            9229 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_ENCMMAGPFLA),
-            9248 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_MMLBCMLFEAI),
-            9260 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_KNJDBLHBFBM),
-            9218 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IDIMBDEBGNL),
-            9249 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_JANKIBEHMHE),
-            9241 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_NPBBKENFDJC),
-            9211 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IHNGPIFPLCI),
-            9245 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_LJGEBLACHPI),
-            9212 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_NOGIKFIELDM),
-            9254 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IHHPPGHHDFJ),
-            9223 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_MAOKEIPFMCB),
-            9216 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_PCBOGOFKGAI),
-            9225 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_CFIDJLKJFJI),
-            9253 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_KKOBOKBECEI),
-            9221 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_KFPBDIEMEAK),
-            9232 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_EFNCGNPIPNH),
-            9230 => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_ICGEMPOLMAJ),
+            0 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_MNFEPONEDDJ),
+            9212 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_IPJADCICABC),
+            9259 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_JNHDOCJGMOD),
+            9249 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_GCONIEBJIPO),
+            9233 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_PNONEFGJNOP),
+            9218 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_JEELEGPPJBO),
+            9215 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_BLCNIICFFLJ),
+            9221 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_GMBLPFNKPEG),
+            9223 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_ICMGCPFFCBE),
+            9214 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_MLAJIEOMMBC),
+            9216 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_DMJAPPFMIBH),
+            9256 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_BLGGEGLJGNH),
+            9231 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_PEKOLPBENFL),
+            9213 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_EDJBCIKFIIG),
+            9226 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_JODDOHEFCCJ),
+            9236 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_DKGKFLKHBFA),
+            9219 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_OOHOOOAHOMF),
+            9227 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_EDLPJMPMOIL),
+            9240 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_JIDPFIOLGEF),
+            9238 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_DEKIJEDFECE),
+            9217 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_IDDACELMMMK),
+            9250 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_DNGJCEDFIOE),
+            9252 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_KCCOKCELOLH),
+            9248 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_KFNBBOPLOIC),
+            9229 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_MCKHOPPCMKO),
+            9239 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_FIKLOHKOPDA),
+            9232 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_LOEAEOAAJJJ),
+            9241 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_LPDKCDODBCA),
+            9222 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_CNCLNENMBFD),
+            9251 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_EFMHNGFEDJC),
+            9244 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_FNIGPMLDLCF),
+            9234 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_POPJKMIKCFD),
+            9245 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_KOAHPADILLD),
+            9228 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_GBAKKFBOCLL),
+            9242 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_OOEDGALGIHO),
+            9230 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_JDLHBLLJAKI),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdChimeraDuelType> {
         match str {
-            "KEHIGDEPKMK_GKJBAODJMJG" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_GKJBAODJMJG),
-            "KEHIGDEPKMK_CMHAODCDDKF" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_CMHAODCDDKF),
-            "KEHIGDEPKMK_PDAGFAPEEIB" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_PDAGFAPEEIB),
-            "KEHIGDEPKMK_EAEANCEAIMC" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_EAEANCEAIMC),
-            "KEHIGDEPKMK_PKCLLFPMFNF" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_PKCLLFPMFNF),
-            "KEHIGDEPKMK_PAPEDGMMDFE" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_PAPEDGMMDFE),
-            "KEHIGDEPKMK_CBPIHPDLEGN" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_CBPIHPDLEGN),
-            "KEHIGDEPKMK_GIEPGNODONM" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_GIEPGNODONM),
-            "KEHIGDEPKMK_ADPDBNFANLM" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_ADPDBNFANLM),
-            "KEHIGDEPKMK_BKEIGJMEMCE" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_BKEIGJMEMCE),
-            "KEHIGDEPKMK_EPHGCNDCLAP" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_EPHGCNDCLAP),
-            "KEHIGDEPKMK_PKICKEIGAKM" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_PKICKEIGAKM),
-            "KEHIGDEPKMK_CJENHOKCPKF" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_CJENHOKCPKF),
-            "KEHIGDEPKMK_IEELBBAODFC" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IEELBBAODFC),
-            "KEHIGDEPKMK_IJLEDFNININ" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IJLEDFNININ),
-            "KEHIGDEPKMK_HDMDEEOBFOI" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_HDMDEEOBFOI),
-            "KEHIGDEPKMK_NGIOMDMKMBE" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_NGIOMDMKMBE),
-            "KEHIGDEPKMK_DCPMLBBFBAL" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_DCPMLBBFBAL),
-            "KEHIGDEPKMK_IMFNHLCNDLG" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IMFNHLCNDLG),
-            "KEHIGDEPKMK_ENCMMAGPFLA" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_ENCMMAGPFLA),
-            "KEHIGDEPKMK_MMLBCMLFEAI" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_MMLBCMLFEAI),
-            "KEHIGDEPKMK_KNJDBLHBFBM" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_KNJDBLHBFBM),
-            "KEHIGDEPKMK_IDIMBDEBGNL" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IDIMBDEBGNL),
-            "KEHIGDEPKMK_JANKIBEHMHE" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_JANKIBEHMHE),
-            "KEHIGDEPKMK_NPBBKENFDJC" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_NPBBKENFDJC),
-            "KEHIGDEPKMK_IHNGPIFPLCI" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IHNGPIFPLCI),
-            "KEHIGDEPKMK_LJGEBLACHPI" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_LJGEBLACHPI),
-            "KEHIGDEPKMK_NOGIKFIELDM" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_NOGIKFIELDM),
-            "KEHIGDEPKMK_IHHPPGHHDFJ" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_IHHPPGHHDFJ),
-            "KEHIGDEPKMK_MAOKEIPFMCB" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_MAOKEIPFMCB),
-            "KEHIGDEPKMK_PCBOGOFKGAI" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_PCBOGOFKGAI),
-            "KEHIGDEPKMK_CFIDJLKJFJI" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_CFIDJLKJFJI),
-            "KEHIGDEPKMK_KKOBOKBECEI" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_KKOBOKBECEI),
-            "KEHIGDEPKMK_KFPBDIEMEAK" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_KFPBDIEMEAK),
-            "KEHIGDEPKMK_EFNCGNPIPNH" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_EFNCGNPIPNH),
-            "KEHIGDEPKMK_ICGEMPOLMAJ" => ::std::option::Option::Some(CmdChimeraDuelType::KEHIGDEPKMK_ICGEMPOLMAJ),
+            "CmdChimeraDuelType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_MNFEPONEDDJ),
+            "CmdChimeraDuelType_IPJADCICABC" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_IPJADCICABC),
+            "CmdChimeraDuelType_JNHDOCJGMOD" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_JNHDOCJGMOD),
+            "CmdChimeraDuelType_GCONIEBJIPO" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_GCONIEBJIPO),
+            "CmdChimeraDuelType_PNONEFGJNOP" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_PNONEFGJNOP),
+            "CmdChimeraDuelType_JEELEGPPJBO" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_JEELEGPPJBO),
+            "CmdChimeraDuelType_BLCNIICFFLJ" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_BLCNIICFFLJ),
+            "CmdChimeraDuelType_GMBLPFNKPEG" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_GMBLPFNKPEG),
+            "CmdChimeraDuelType_ICMGCPFFCBE" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_ICMGCPFFCBE),
+            "CmdChimeraDuelType_MLAJIEOMMBC" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_MLAJIEOMMBC),
+            "CmdChimeraDuelType_DMJAPPFMIBH" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_DMJAPPFMIBH),
+            "CmdChimeraDuelType_BLGGEGLJGNH" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_BLGGEGLJGNH),
+            "CmdChimeraDuelType_PEKOLPBENFL" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_PEKOLPBENFL),
+            "CmdChimeraDuelType_EDJBCIKFIIG" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_EDJBCIKFIIG),
+            "CmdChimeraDuelType_JODDOHEFCCJ" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_JODDOHEFCCJ),
+            "CmdChimeraDuelType_DKGKFLKHBFA" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_DKGKFLKHBFA),
+            "CmdChimeraDuelType_OOHOOOAHOMF" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_OOHOOOAHOMF),
+            "CmdChimeraDuelType_EDLPJMPMOIL" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_EDLPJMPMOIL),
+            "CmdChimeraDuelType_JIDPFIOLGEF" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_JIDPFIOLGEF),
+            "CmdChimeraDuelType_DEKIJEDFECE" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_DEKIJEDFECE),
+            "CmdChimeraDuelType_IDDACELMMMK" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_IDDACELMMMK),
+            "CmdChimeraDuelType_DNGJCEDFIOE" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_DNGJCEDFIOE),
+            "CmdChimeraDuelType_KCCOKCELOLH" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_KCCOKCELOLH),
+            "CmdChimeraDuelType_KFNBBOPLOIC" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_KFNBBOPLOIC),
+            "CmdChimeraDuelType_MCKHOPPCMKO" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_MCKHOPPCMKO),
+            "CmdChimeraDuelType_FIKLOHKOPDA" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_FIKLOHKOPDA),
+            "CmdChimeraDuelType_LOEAEOAAJJJ" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_LOEAEOAAJJJ),
+            "CmdChimeraDuelType_LPDKCDODBCA" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_LPDKCDODBCA),
+            "CmdChimeraDuelType_CNCLNENMBFD" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_CNCLNENMBFD),
+            "CmdChimeraDuelType_EFMHNGFEDJC" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_EFMHNGFEDJC),
+            "CmdChimeraDuelType_FNIGPMLDLCF" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_FNIGPMLDLCF),
+            "CmdChimeraDuelType_POPJKMIKCFD" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_POPJKMIKCFD),
+            "CmdChimeraDuelType_KOAHPADILLD" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_KOAHPADILLD),
+            "CmdChimeraDuelType_GBAKKFBOCLL" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_GBAKKFBOCLL),
+            "CmdChimeraDuelType_OOEDGALGIHO" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_OOEDGALGIHO),
+            "CmdChimeraDuelType_JDLHBLLJAKI" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelType_JDLHBLLJAKI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdChimeraDuelType] = &[
-        CmdChimeraDuelType::KEHIGDEPKMK_GKJBAODJMJG,
-        CmdChimeraDuelType::KEHIGDEPKMK_CMHAODCDDKF,
-        CmdChimeraDuelType::KEHIGDEPKMK_PDAGFAPEEIB,
-        CmdChimeraDuelType::KEHIGDEPKMK_EAEANCEAIMC,
-        CmdChimeraDuelType::KEHIGDEPKMK_PKCLLFPMFNF,
-        CmdChimeraDuelType::KEHIGDEPKMK_PAPEDGMMDFE,
-        CmdChimeraDuelType::KEHIGDEPKMK_CBPIHPDLEGN,
-        CmdChimeraDuelType::KEHIGDEPKMK_GIEPGNODONM,
-        CmdChimeraDuelType::KEHIGDEPKMK_ADPDBNFANLM,
-        CmdChimeraDuelType::KEHIGDEPKMK_BKEIGJMEMCE,
-        CmdChimeraDuelType::KEHIGDEPKMK_EPHGCNDCLAP,
-        CmdChimeraDuelType::KEHIGDEPKMK_PKICKEIGAKM,
-        CmdChimeraDuelType::KEHIGDEPKMK_CJENHOKCPKF,
-        CmdChimeraDuelType::KEHIGDEPKMK_IEELBBAODFC,
-        CmdChimeraDuelType::KEHIGDEPKMK_IJLEDFNININ,
-        CmdChimeraDuelType::KEHIGDEPKMK_HDMDEEOBFOI,
-        CmdChimeraDuelType::KEHIGDEPKMK_NGIOMDMKMBE,
-        CmdChimeraDuelType::KEHIGDEPKMK_DCPMLBBFBAL,
-        CmdChimeraDuelType::KEHIGDEPKMK_IMFNHLCNDLG,
-        CmdChimeraDuelType::KEHIGDEPKMK_ENCMMAGPFLA,
-        CmdChimeraDuelType::KEHIGDEPKMK_MMLBCMLFEAI,
-        CmdChimeraDuelType::KEHIGDEPKMK_KNJDBLHBFBM,
-        CmdChimeraDuelType::KEHIGDEPKMK_IDIMBDEBGNL,
-        CmdChimeraDuelType::KEHIGDEPKMK_JANKIBEHMHE,
-        CmdChimeraDuelType::KEHIGDEPKMK_NPBBKENFDJC,
-        CmdChimeraDuelType::KEHIGDEPKMK_IHNGPIFPLCI,
-        CmdChimeraDuelType::KEHIGDEPKMK_LJGEBLACHPI,
-        CmdChimeraDuelType::KEHIGDEPKMK_NOGIKFIELDM,
-        CmdChimeraDuelType::KEHIGDEPKMK_IHHPPGHHDFJ,
-        CmdChimeraDuelType::KEHIGDEPKMK_MAOKEIPFMCB,
-        CmdChimeraDuelType::KEHIGDEPKMK_PCBOGOFKGAI,
-        CmdChimeraDuelType::KEHIGDEPKMK_CFIDJLKJFJI,
-        CmdChimeraDuelType::KEHIGDEPKMK_KKOBOKBECEI,
-        CmdChimeraDuelType::KEHIGDEPKMK_KFPBDIEMEAK,
-        CmdChimeraDuelType::KEHIGDEPKMK_EFNCGNPIPNH,
-        CmdChimeraDuelType::KEHIGDEPKMK_ICGEMPOLMAJ,
+        CmdChimeraDuelType::CmdChimeraDuelType_MNFEPONEDDJ,
+        CmdChimeraDuelType::CmdChimeraDuelType_IPJADCICABC,
+        CmdChimeraDuelType::CmdChimeraDuelType_JNHDOCJGMOD,
+        CmdChimeraDuelType::CmdChimeraDuelType_GCONIEBJIPO,
+        CmdChimeraDuelType::CmdChimeraDuelType_PNONEFGJNOP,
+        CmdChimeraDuelType::CmdChimeraDuelType_JEELEGPPJBO,
+        CmdChimeraDuelType::CmdChimeraDuelType_BLCNIICFFLJ,
+        CmdChimeraDuelType::CmdChimeraDuelType_GMBLPFNKPEG,
+        CmdChimeraDuelType::CmdChimeraDuelType_ICMGCPFFCBE,
+        CmdChimeraDuelType::CmdChimeraDuelType_MLAJIEOMMBC,
+        CmdChimeraDuelType::CmdChimeraDuelType_DMJAPPFMIBH,
+        CmdChimeraDuelType::CmdChimeraDuelType_BLGGEGLJGNH,
+        CmdChimeraDuelType::CmdChimeraDuelType_PEKOLPBENFL,
+        CmdChimeraDuelType::CmdChimeraDuelType_EDJBCIKFIIG,
+        CmdChimeraDuelType::CmdChimeraDuelType_JODDOHEFCCJ,
+        CmdChimeraDuelType::CmdChimeraDuelType_DKGKFLKHBFA,
+        CmdChimeraDuelType::CmdChimeraDuelType_OOHOOOAHOMF,
+        CmdChimeraDuelType::CmdChimeraDuelType_EDLPJMPMOIL,
+        CmdChimeraDuelType::CmdChimeraDuelType_JIDPFIOLGEF,
+        CmdChimeraDuelType::CmdChimeraDuelType_DEKIJEDFECE,
+        CmdChimeraDuelType::CmdChimeraDuelType_IDDACELMMMK,
+        CmdChimeraDuelType::CmdChimeraDuelType_DNGJCEDFIOE,
+        CmdChimeraDuelType::CmdChimeraDuelType_KCCOKCELOLH,
+        CmdChimeraDuelType::CmdChimeraDuelType_KFNBBOPLOIC,
+        CmdChimeraDuelType::CmdChimeraDuelType_MCKHOPPCMKO,
+        CmdChimeraDuelType::CmdChimeraDuelType_FIKLOHKOPDA,
+        CmdChimeraDuelType::CmdChimeraDuelType_LOEAEOAAJJJ,
+        CmdChimeraDuelType::CmdChimeraDuelType_LPDKCDODBCA,
+        CmdChimeraDuelType::CmdChimeraDuelType_CNCLNENMBFD,
+        CmdChimeraDuelType::CmdChimeraDuelType_EFMHNGFEDJC,
+        CmdChimeraDuelType::CmdChimeraDuelType_FNIGPMLDLCF,
+        CmdChimeraDuelType::CmdChimeraDuelType_POPJKMIKCFD,
+        CmdChimeraDuelType::CmdChimeraDuelType_KOAHPADILLD,
+        CmdChimeraDuelType::CmdChimeraDuelType_GBAKKFBOCLL,
+        CmdChimeraDuelType::CmdChimeraDuelType_OOEDGALGIHO,
+        CmdChimeraDuelType::CmdChimeraDuelType_JDLHBLLJAKI,
     ];
 }
 
@@ -240,42 +240,42 @@ impl ::protobuf::EnumFull for CmdChimeraDuelType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdChimeraDuelType::KEHIGDEPKMK_GKJBAODJMJG => 0,
-            CmdChimeraDuelType::KEHIGDEPKMK_CMHAODCDDKF => 1,
-            CmdChimeraDuelType::KEHIGDEPKMK_PDAGFAPEEIB => 2,
-            CmdChimeraDuelType::KEHIGDEPKMK_EAEANCEAIMC => 3,
-            CmdChimeraDuelType::KEHIGDEPKMK_PKCLLFPMFNF => 4,
-            CmdChimeraDuelType::KEHIGDEPKMK_PAPEDGMMDFE => 5,
-            CmdChimeraDuelType::KEHIGDEPKMK_CBPIHPDLEGN => 6,
-            CmdChimeraDuelType::KEHIGDEPKMK_GIEPGNODONM => 7,
-            CmdChimeraDuelType::KEHIGDEPKMK_ADPDBNFANLM => 8,
-            CmdChimeraDuelType::KEHIGDEPKMK_BKEIGJMEMCE => 9,
-            CmdChimeraDuelType::KEHIGDEPKMK_EPHGCNDCLAP => 10,
-            CmdChimeraDuelType::KEHIGDEPKMK_PKICKEIGAKM => 11,
-            CmdChimeraDuelType::KEHIGDEPKMK_CJENHOKCPKF => 12,
-            CmdChimeraDuelType::KEHIGDEPKMK_IEELBBAODFC => 13,
-            CmdChimeraDuelType::KEHIGDEPKMK_IJLEDFNININ => 14,
-            CmdChimeraDuelType::KEHIGDEPKMK_HDMDEEOBFOI => 15,
-            CmdChimeraDuelType::KEHIGDEPKMK_NGIOMDMKMBE => 16,
-            CmdChimeraDuelType::KEHIGDEPKMK_DCPMLBBFBAL => 17,
-            CmdChimeraDuelType::KEHIGDEPKMK_IMFNHLCNDLG => 18,
-            CmdChimeraDuelType::KEHIGDEPKMK_ENCMMAGPFLA => 19,
-            CmdChimeraDuelType::KEHIGDEPKMK_MMLBCMLFEAI => 20,
-            CmdChimeraDuelType::KEHIGDEPKMK_KNJDBLHBFBM => 21,
-            CmdChimeraDuelType::KEHIGDEPKMK_IDIMBDEBGNL => 22,
-            CmdChimeraDuelType::KEHIGDEPKMK_JANKIBEHMHE => 23,
-            CmdChimeraDuelType::KEHIGDEPKMK_NPBBKENFDJC => 24,
-            CmdChimeraDuelType::KEHIGDEPKMK_IHNGPIFPLCI => 25,
-            CmdChimeraDuelType::KEHIGDEPKMK_LJGEBLACHPI => 26,
-            CmdChimeraDuelType::KEHIGDEPKMK_NOGIKFIELDM => 27,
-            CmdChimeraDuelType::KEHIGDEPKMK_IHHPPGHHDFJ => 28,
-            CmdChimeraDuelType::KEHIGDEPKMK_MAOKEIPFMCB => 29,
-            CmdChimeraDuelType::KEHIGDEPKMK_PCBOGOFKGAI => 30,
-            CmdChimeraDuelType::KEHIGDEPKMK_CFIDJLKJFJI => 31,
-            CmdChimeraDuelType::KEHIGDEPKMK_KKOBOKBECEI => 32,
-            CmdChimeraDuelType::KEHIGDEPKMK_KFPBDIEMEAK => 33,
-            CmdChimeraDuelType::KEHIGDEPKMK_EFNCGNPIPNH => 34,
-            CmdChimeraDuelType::KEHIGDEPKMK_ICGEMPOLMAJ => 35,
+            CmdChimeraDuelType::CmdChimeraDuelType_MNFEPONEDDJ => 0,
+            CmdChimeraDuelType::CmdChimeraDuelType_IPJADCICABC => 1,
+            CmdChimeraDuelType::CmdChimeraDuelType_JNHDOCJGMOD => 2,
+            CmdChimeraDuelType::CmdChimeraDuelType_GCONIEBJIPO => 3,
+            CmdChimeraDuelType::CmdChimeraDuelType_PNONEFGJNOP => 4,
+            CmdChimeraDuelType::CmdChimeraDuelType_JEELEGPPJBO => 5,
+            CmdChimeraDuelType::CmdChimeraDuelType_BLCNIICFFLJ => 6,
+            CmdChimeraDuelType::CmdChimeraDuelType_GMBLPFNKPEG => 7,
+            CmdChimeraDuelType::CmdChimeraDuelType_ICMGCPFFCBE => 8,
+            CmdChimeraDuelType::CmdChimeraDuelType_MLAJIEOMMBC => 9,
+            CmdChimeraDuelType::CmdChimeraDuelType_DMJAPPFMIBH => 10,
+            CmdChimeraDuelType::CmdChimeraDuelType_BLGGEGLJGNH => 11,
+            CmdChimeraDuelType::CmdChimeraDuelType_PEKOLPBENFL => 12,
+            CmdChimeraDuelType::CmdChimeraDuelType_EDJBCIKFIIG => 13,
+            CmdChimeraDuelType::CmdChimeraDuelType_JODDOHEFCCJ => 14,
+            CmdChimeraDuelType::CmdChimeraDuelType_DKGKFLKHBFA => 15,
+            CmdChimeraDuelType::CmdChimeraDuelType_OOHOOOAHOMF => 16,
+            CmdChimeraDuelType::CmdChimeraDuelType_EDLPJMPMOIL => 17,
+            CmdChimeraDuelType::CmdChimeraDuelType_JIDPFIOLGEF => 18,
+            CmdChimeraDuelType::CmdChimeraDuelType_DEKIJEDFECE => 19,
+            CmdChimeraDuelType::CmdChimeraDuelType_IDDACELMMMK => 20,
+            CmdChimeraDuelType::CmdChimeraDuelType_DNGJCEDFIOE => 21,
+            CmdChimeraDuelType::CmdChimeraDuelType_KCCOKCELOLH => 22,
+            CmdChimeraDuelType::CmdChimeraDuelType_KFNBBOPLOIC => 23,
+            CmdChimeraDuelType::CmdChimeraDuelType_MCKHOPPCMKO => 24,
+            CmdChimeraDuelType::CmdChimeraDuelType_FIKLOHKOPDA => 25,
+            CmdChimeraDuelType::CmdChimeraDuelType_LOEAEOAAJJJ => 26,
+            CmdChimeraDuelType::CmdChimeraDuelType_LPDKCDODBCA => 27,
+            CmdChimeraDuelType::CmdChimeraDuelType_CNCLNENMBFD => 28,
+            CmdChimeraDuelType::CmdChimeraDuelType_EFMHNGFEDJC => 29,
+            CmdChimeraDuelType::CmdChimeraDuelType_FNIGPMLDLCF => 30,
+            CmdChimeraDuelType::CmdChimeraDuelType_POPJKMIKCFD => 31,
+            CmdChimeraDuelType::CmdChimeraDuelType_KOAHPADILLD => 32,
+            CmdChimeraDuelType::CmdChimeraDuelType_GBAKKFBOCLL => 33,
+            CmdChimeraDuelType::CmdChimeraDuelType_OOEDGALGIHO => 34,
+            CmdChimeraDuelType::CmdChimeraDuelType_JDLHBLLJAKI => 35,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -283,7 +283,7 @@ impl ::protobuf::EnumFull for CmdChimeraDuelType {
 
 impl ::std::default::Default for CmdChimeraDuelType {
     fn default() -> Self {
-        CmdChimeraDuelType::KEHIGDEPKMK_GKJBAODJMJG
+        CmdChimeraDuelType::CmdChimeraDuelType_MNFEPONEDDJ
     }
 }
 
@@ -294,30 +294,32 @@ impl CmdChimeraDuelType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdChimeraDuelType.proto*\xcb\x08\n\x12CmdChimeraDuelType\x12\x1b\
-    \n\x17KEHIGDEPKMK_GKJBAODJMJG\x10\0\x12\x1c\n\x17KEHIGDEPKMK_CMHAODCDDKF\
-    \x10\xffG\x12\x1c\n\x17KEHIGDEPKMK_PDAGFAPEEIB\x10\x8fH\x12\x1c\n\x17KEH\
-    IGDEPKMK_EAEANCEAIMC\x10\x94H\x12\x1c\n\x17KEHIGDEPKMK_PKCLLFPMFNF\x10\
-    \x9fH\x12\x1c\n\x17KEHIGDEPKMK_PAPEDGMMDFE\x10\xa3H\x12\x1c\n\x17KEHIGDE\
-    PKMK_CBPIHPDLEGN\x10\xaaH\x12\x1c\n\x17KEHIGDEPKMK_GIEPGNODONM\x10\xa9H\
-    \x12\x1c\n\x17KEHIGDEPKMK_ADPDBNFANLM\x10\xa8H\x12\x1c\n\x17KEHIGDEPKMK_\
-    BKEIGJMEMCE\x10\xa2H\x12\x1c\n\x17KEHIGDEPKMK_EPHGCNDCLAP\x10\x9eH\x12\
-    \x1c\n\x17KEHIGDEPKMK_PKICKEIGAKM\x10\xfdG\x12\x1c\n\x17KEHIGDEPKMK_CJEN\
-    HOKCPKF\x10\x96H\x12\x1c\n\x17KEHIGDEPKMK_IEELBBAODFC\x10\x8bH\x12\x1c\n\
-    \x17KEHIGDEPKMK_IJLEDFNININ\x10\x9bH\x12\x1c\n\x17KEHIGDEPKMK_HDMDEEOBFO\
-    I\x10\x91H\x12\x1c\n\x17KEHIGDEPKMK_NGIOMDMKMBE\x10\x97H\x12\x1c\n\x17KE\
-    HIGDEPKMK_DCPMLBBFBAL\x10\xabH\x12\x1c\n\x17KEHIGDEPKMK_IMFNHLCNDLG\x10\
-    \xa7H\x12\x1c\n\x17KEHIGDEPKMK_ENCMMAGPFLA\x10\x8dH\x12\x1c\n\x17KEHIGDE\
-    PKMK_MMLBCMLFEAI\x10\xa0H\x12\x1c\n\x17KEHIGDEPKMK_KNJDBLHBFBM\x10\xacH\
-    \x12\x1c\n\x17KEHIGDEPKMK_IDIMBDEBGNL\x10\x82H\x12\x1c\n\x17KEHIGDEPKMK_\
-    JANKIBEHMHE\x10\xa1H\x12\x1c\n\x17KEHIGDEPKMK_NPBBKENFDJC\x10\x99H\x12\
-    \x1c\n\x17KEHIGDEPKMK_IHNGPIFPLCI\x10\xfbG\x12\x1c\n\x17KEHIGDEPKMK_LJGE\
-    BLACHPI\x10\x9dH\x12\x1c\n\x17KEHIGDEPKMK_NOGIKFIELDM\x10\xfcG\x12\x1c\n\
-    \x17KEHIGDEPKMK_IHHPPGHHDFJ\x10\xa6H\x12\x1c\n\x17KEHIGDEPKMK_MAOKEIPFMC\
-    B\x10\x87H\x12\x1c\n\x17KEHIGDEPKMK_PCBOGOFKGAI\x10\x80H\x12\x1c\n\x17KE\
-    HIGDEPKMK_CFIDJLKJFJI\x10\x89H\x12\x1c\n\x17KEHIGDEPKMK_KKOBOKBECEI\x10\
-    \xa5H\x12\x1c\n\x17KEHIGDEPKMK_KFPBDIEMEAK\x10\x85H\x12\x1c\n\x17KEHIGDE\
-    PKMK_EFNCGNPIPNH\x10\x90H\x12\x1c\n\x17KEHIGDEPKMK_ICGEMPOLMAJ\x10\x8eHb\
+    \n\x18CmdChimeraDuelType.proto*\xc7\n\n\x12CmdChimeraDuelType\x12\"\n\
+    \x1eCmdChimeraDuelType_MNFEPONEDDJ\x10\0\x12#\n\x1eCmdChimeraDuelType_IP\
+    JADCICABC\x10\xfcG\x12#\n\x1eCmdChimeraDuelType_JNHDOCJGMOD\x10\xabH\x12\
+    #\n\x1eCmdChimeraDuelType_GCONIEBJIPO\x10\xa1H\x12#\n\x1eCmdChimeraDuelT\
+    ype_PNONEFGJNOP\x10\x91H\x12#\n\x1eCmdChimeraDuelType_JEELEGPPJBO\x10\
+    \x82H\x12#\n\x1eCmdChimeraDuelType_BLCNIICFFLJ\x10\xffG\x12#\n\x1eCmdChi\
+    meraDuelType_GMBLPFNKPEG\x10\x85H\x12#\n\x1eCmdChimeraDuelType_ICMGCPFFC\
+    BE\x10\x87H\x12#\n\x1eCmdChimeraDuelType_MLAJIEOMMBC\x10\xfeG\x12#\n\x1e\
+    CmdChimeraDuelType_DMJAPPFMIBH\x10\x80H\x12#\n\x1eCmdChimeraDuelType_BLG\
+    GEGLJGNH\x10\xa8H\x12#\n\x1eCmdChimeraDuelType_PEKOLPBENFL\x10\x8fH\x12#\
+    \n\x1eCmdChimeraDuelType_EDJBCIKFIIG\x10\xfdG\x12#\n\x1eCmdChimeraDuelTy\
+    pe_JODDOHEFCCJ\x10\x8aH\x12#\n\x1eCmdChimeraDuelType_DKGKFLKHBFA\x10\x94\
+    H\x12#\n\x1eCmdChimeraDuelType_OOHOOOAHOMF\x10\x83H\x12#\n\x1eCmdChimera\
+    DuelType_EDLPJMPMOIL\x10\x8bH\x12#\n\x1eCmdChimeraDuelType_JIDPFIOLGEF\
+    \x10\x98H\x12#\n\x1eCmdChimeraDuelType_DEKIJEDFECE\x10\x96H\x12#\n\x1eCm\
+    dChimeraDuelType_IDDACELMMMK\x10\x81H\x12#\n\x1eCmdChimeraDuelType_DNGJC\
+    EDFIOE\x10\xa2H\x12#\n\x1eCmdChimeraDuelType_KCCOKCELOLH\x10\xa4H\x12#\n\
+    \x1eCmdChimeraDuelType_KFNBBOPLOIC\x10\xa0H\x12#\n\x1eCmdChimeraDuelType\
+    _MCKHOPPCMKO\x10\x8dH\x12#\n\x1eCmdChimeraDuelType_FIKLOHKOPDA\x10\x97H\
+    \x12#\n\x1eCmdChimeraDuelType_LOEAEOAAJJJ\x10\x90H\x12#\n\x1eCmdChimeraD\
+    uelType_LPDKCDODBCA\x10\x99H\x12#\n\x1eCmdChimeraDuelType_CNCLNENMBFD\
+    \x10\x86H\x12#\n\x1eCmdChimeraDuelType_EFMHNGFEDJC\x10\xa3H\x12#\n\x1eCm\
+    dChimeraDuelType_FNIGPMLDLCF\x10\x9cH\x12#\n\x1eCmdChimeraDuelType_POPJK\
+    MIKCFD\x10\x92H\x12#\n\x1eCmdChimeraDuelType_KOAHPADILLD\x10\x9dH\x12#\n\
+    \x1eCmdChimeraDuelType_GBAKKFBOCLL\x10\x8cH\x12#\n\x1eCmdChimeraDuelType\
+    _OOEDGALGIHO\x10\x9aH\x12#\n\x1eCmdChimeraDuelType_JDLHBLLJAKI\x10\x8eHb\
     \x06proto3\
 ";
 

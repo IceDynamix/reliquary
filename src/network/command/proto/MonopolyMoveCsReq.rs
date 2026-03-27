@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyMoveCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyMoveCsReq.EMPMMGNKFJL)
-    pub EMPMMGNKFJL: u32,
-    // @@protoc_insertion_point(field:MonopolyMoveCsReq.GOAPEOBKIOP)
-    pub GOAPEOBKIOP: u32,
+    // @@protoc_insertion_point(field:MonopolyMoveCsReq.FBGFMKIGHAK)
+    pub FBGFMKIGHAK: u32,
+    // @@protoc_insertion_point(field:MonopolyMoveCsReq.PLGBBHBAFEF)
+    pub PLGBBHBAFEF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyMoveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MonopolyMoveCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EMPMMGNKFJL",
-            |m: &MonopolyMoveCsReq| { &m.EMPMMGNKFJL },
-            |m: &mut MonopolyMoveCsReq| { &mut m.EMPMMGNKFJL },
+            "FBGFMKIGHAK",
+            |m: &MonopolyMoveCsReq| { &m.FBGFMKIGHAK },
+            |m: &mut MonopolyMoveCsReq| { &mut m.FBGFMKIGHAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GOAPEOBKIOP",
-            |m: &MonopolyMoveCsReq| { &m.GOAPEOBKIOP },
-            |m: &mut MonopolyMoveCsReq| { &mut m.GOAPEOBKIOP },
+            "PLGBBHBAFEF",
+            |m: &MonopolyMoveCsReq| { &m.PLGBBHBAFEF },
+            |m: &mut MonopolyMoveCsReq| { &mut m.PLGBBHBAFEF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyMoveCsReq>(
             "MonopolyMoveCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.EMPMMGNKFJL = is.read_uint32()?;
+                88 => {
+                    self.FBGFMKIGHAK = is.read_uint32()?;
                 },
-                8 => {
-                    self.GOAPEOBKIOP = is.read_uint32()?;
+                120 => {
+                    self.PLGBBHBAFEF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EMPMMGNKFJL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EMPMMGNKFJL);
+        if self.FBGFMKIGHAK != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FBGFMKIGHAK);
         }
-        if self.GOAPEOBKIOP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GOAPEOBKIOP);
+        if self.PLGBBHBAFEF != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.PLGBBHBAFEF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EMPMMGNKFJL != 0 {
-            os.write_uint32(14, self.EMPMMGNKFJL)?;
+        if self.FBGFMKIGHAK != 0 {
+            os.write_uint32(11, self.FBGFMKIGHAK)?;
         }
-        if self.GOAPEOBKIOP != 0 {
-            os.write_uint32(1, self.GOAPEOBKIOP)?;
+        if self.PLGBBHBAFEF != 0 {
+            os.write_uint32(15, self.PLGBBHBAFEF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MonopolyMoveCsReq {
     }
 
     fn clear(&mut self) {
-        self.EMPMMGNKFJL = 0;
-        self.GOAPEOBKIOP = 0;
+        self.FBGFMKIGHAK = 0;
+        self.PLGBBHBAFEF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyMoveCsReq {
         static instance: MonopolyMoveCsReq = MonopolyMoveCsReq {
-            EMPMMGNKFJL: 0,
-            GOAPEOBKIOP: 0,
+            FBGFMKIGHAK: 0,
+            PLGBBHBAFEF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyMoveCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17MonopolyMoveCsReq.proto\"W\n\x11MonopolyMoveCsReq\x12\x20\n\x0bEMP\
-    MMGNKFJL\x18\x0e\x20\x01(\rR\x0bEMPMMGNKFJL\x12\x20\n\x0bGOAPEOBKIOP\x18\
-    \x01\x20\x01(\rR\x0bGOAPEOBKIOPb\x06proto3\
+    \n\x17MonopolyMoveCsReq.proto\"W\n\x11MonopolyMoveCsReq\x12\x20\n\x0bFBG\
+    FMKIGHAK\x18\x0b\x20\x01(\rR\x0bFBGFMKIGHAK\x12\x20\n\x0bPLGBBHBAFEF\x18\
+    \x0f\x20\x01(\rR\x0bPLGBBHBAFEFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

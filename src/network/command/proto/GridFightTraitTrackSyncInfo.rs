@@ -79,13 +79,13 @@ impl ::protobuf::Message for GridFightTraitTrackSyncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.track_trait_id_list)?;
                 },
-                48 => {
+                64 => {
                     self.track_trait_id_list.push(is.read_uint32()?);
                 },
-                80 => {
+                96 => {
                     self.is_sync = is.read_bool()?;
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for GridFightTraitTrackSyncInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.track_trait_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.track_trait_id_list);
         if self.is_sync != false {
             my_size += 1 + 1;
         }
@@ -110,9 +110,9 @@ impl ::protobuf::Message for GridFightTraitTrackSyncInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.track_trait_id_list)?;
+        os.write_repeated_packed_uint32(8, &self.track_trait_id_list)?;
         if self.is_sync != false {
-            os.write_bool(10, self.is_sync)?;
+            os.write_bool(12, self.is_sync)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightTraitTrackSyncInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GridFightTraitTrackSyncInfo.proto\"e\n\x1bGridFightTraitTrackSyncInfo\
-    \x12-\n\x13track_trait_id_list\x18\x06\x20\x03(\rR\x10trackTraitIdList\
-    \x12\x17\n\x07is_sync\x18\n\x20\x01(\x08R\x06isSyncb\x06proto3\
+    \x12-\n\x13track_trait_id_list\x18\x08\x20\x03(\rR\x10trackTraitIdList\
+    \x12\x17\n\x07is_sync\x18\x0c\x20\x01(\x08R\x06isSyncb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

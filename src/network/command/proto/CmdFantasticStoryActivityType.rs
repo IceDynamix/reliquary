@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFantasticStoryActivityType)
 pub enum CmdFantasticStoryActivityType {
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_GKJBAODJMJG)
-    FEPBJHIOECG_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_KHHNJPOEHEB)
-    FEPBJHIOECG_KHHNJPOEHEB = 4928,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_FEHNLOLMPLG)
-    FEPBJHIOECG_FEHNLOLMPLG = 4962,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_KBEDHOHFFFA)
-    FEPBJHIOECG_KBEDHOHFFFA = 4957,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_KALDLHHJPOD)
-    FEPBJHIOECG_KALDLHHJPOD = 4975,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_OMPPIAHGCLH)
-    FEPBJHIOECG_OMPPIAHGCLH = 4938,
-    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.FEPBJHIOECG_IEDECILIHAE)
-    FEPBJHIOECG_IEDECILIHAE = 4955,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityType_MNFEPONEDDJ)
+    CmdFantasticStoryActivityType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityType_GICFDCLLMJO)
+    CmdFantasticStoryActivityType_GICFDCLLMJO = 4981,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityType_GEPLKOFBPCI)
+    CmdFantasticStoryActivityType_GEPLKOFBPCI = 4983,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityType_IPLHJFPOALF)
+    CmdFantasticStoryActivityType_IPLHJFPOALF = 4913,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityType_KDHAAGODFIO)
+    CmdFantasticStoryActivityType_KDHAAGODFIO = 4935,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityType_EMJFCKINMGG)
+    CmdFantasticStoryActivityType_EMJFCKINMGG = 4924,
+    // @@protoc_insertion_point(enum_value:CmdFantasticStoryActivityType.CmdFantasticStoryActivityType_JBGFBEFOCJB)
+    CmdFantasticStoryActivityType_JBGFBEFOCJB = 4904,
 }
 
 impl ::protobuf::Enum for CmdFantasticStoryActivityType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for CmdFantasticStoryActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFantasticStoryActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_GKJBAODJMJG),
-            4928 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KHHNJPOEHEB),
-            4962 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_FEHNLOLMPLG),
-            4957 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KBEDHOHFFFA),
-            4975 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KALDLHHJPOD),
-            4938 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_OMPPIAHGCLH),
-            4955 => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_IEDECILIHAE),
+            0 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_MNFEPONEDDJ),
+            4981 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_GICFDCLLMJO),
+            4983 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_GEPLKOFBPCI),
+            4913 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_IPLHJFPOALF),
+            4935 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_KDHAAGODFIO),
+            4924 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_EMJFCKINMGG),
+            4904 => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_JBGFBEFOCJB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFantasticStoryActivityType> {
         match str {
-            "FEPBJHIOECG_GKJBAODJMJG" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_GKJBAODJMJG),
-            "FEPBJHIOECG_KHHNJPOEHEB" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KHHNJPOEHEB),
-            "FEPBJHIOECG_FEHNLOLMPLG" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_FEHNLOLMPLG),
-            "FEPBJHIOECG_KBEDHOHFFFA" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KBEDHOHFFFA),
-            "FEPBJHIOECG_KALDLHHJPOD" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_KALDLHHJPOD),
-            "FEPBJHIOECG_OMPPIAHGCLH" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_OMPPIAHGCLH),
-            "FEPBJHIOECG_IEDECILIHAE" => ::std::option::Option::Some(CmdFantasticStoryActivityType::FEPBJHIOECG_IEDECILIHAE),
+            "CmdFantasticStoryActivityType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_MNFEPONEDDJ),
+            "CmdFantasticStoryActivityType_GICFDCLLMJO" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_GICFDCLLMJO),
+            "CmdFantasticStoryActivityType_GEPLKOFBPCI" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_GEPLKOFBPCI),
+            "CmdFantasticStoryActivityType_IPLHJFPOALF" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_IPLHJFPOALF),
+            "CmdFantasticStoryActivityType_KDHAAGODFIO" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_KDHAAGODFIO),
+            "CmdFantasticStoryActivityType_EMJFCKINMGG" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_EMJFCKINMGG),
+            "CmdFantasticStoryActivityType_JBGFBEFOCJB" => ::std::option::Option::Some(CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_JBGFBEFOCJB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFantasticStoryActivityType] = &[
-        CmdFantasticStoryActivityType::FEPBJHIOECG_GKJBAODJMJG,
-        CmdFantasticStoryActivityType::FEPBJHIOECG_KHHNJPOEHEB,
-        CmdFantasticStoryActivityType::FEPBJHIOECG_FEHNLOLMPLG,
-        CmdFantasticStoryActivityType::FEPBJHIOECG_KBEDHOHFFFA,
-        CmdFantasticStoryActivityType::FEPBJHIOECG_KALDLHHJPOD,
-        CmdFantasticStoryActivityType::FEPBJHIOECG_OMPPIAHGCLH,
-        CmdFantasticStoryActivityType::FEPBJHIOECG_IEDECILIHAE,
+        CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_MNFEPONEDDJ,
+        CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_GICFDCLLMJO,
+        CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_GEPLKOFBPCI,
+        CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_IPLHJFPOALF,
+        CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_KDHAAGODFIO,
+        CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_EMJFCKINMGG,
+        CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_JBGFBEFOCJB,
     ];
 }
 
@@ -95,13 +95,13 @@ impl ::protobuf::EnumFull for CmdFantasticStoryActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFantasticStoryActivityType::FEPBJHIOECG_GKJBAODJMJG => 0,
-            CmdFantasticStoryActivityType::FEPBJHIOECG_KHHNJPOEHEB => 1,
-            CmdFantasticStoryActivityType::FEPBJHIOECG_FEHNLOLMPLG => 2,
-            CmdFantasticStoryActivityType::FEPBJHIOECG_KBEDHOHFFFA => 3,
-            CmdFantasticStoryActivityType::FEPBJHIOECG_KALDLHHJPOD => 4,
-            CmdFantasticStoryActivityType::FEPBJHIOECG_OMPPIAHGCLH => 5,
-            CmdFantasticStoryActivityType::FEPBJHIOECG_IEDECILIHAE => 6,
+            CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_MNFEPONEDDJ => 0,
+            CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_GICFDCLLMJO => 1,
+            CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_GEPLKOFBPCI => 2,
+            CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_IPLHJFPOALF => 3,
+            CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_KDHAAGODFIO => 4,
+            CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_EMJFCKINMGG => 5,
+            CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_JBGFBEFOCJB => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,7 +109,7 @@ impl ::protobuf::EnumFull for CmdFantasticStoryActivityType {
 
 impl ::std::default::Default for CmdFantasticStoryActivityType {
     fn default() -> Self {
-        CmdFantasticStoryActivityType::FEPBJHIOECG_GKJBAODJMJG
+        CmdFantasticStoryActivityType::CmdFantasticStoryActivityType_MNFEPONEDDJ
     }
 }
 
@@ -120,12 +120,13 @@ impl CmdFantasticStoryActivityType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#CmdFantasticStoryActivityType.proto*\xf0\x01\n\x1dCmdFantasticStoryAc\
-    tivityType\x12\x1b\n\x17FEPBJHIOECG_GKJBAODJMJG\x10\0\x12\x1c\n\x17FEPBJ\
-    HIOECG_KHHNJPOEHEB\x10\xc0&\x12\x1c\n\x17FEPBJHIOECG_FEHNLOLMPLG\x10\xe2\
-    &\x12\x1c\n\x17FEPBJHIOECG_KBEDHOHFFFA\x10\xdd&\x12\x1c\n\x17FEPBJHIOECG\
-    _KALDLHHJPOD\x10\xef&\x12\x1c\n\x17FEPBJHIOECG_OMPPIAHGCLH\x10\xca&\x12\
-    \x1c\n\x17FEPBJHIOECG_IEDECILIHAE\x10\xdb&b\x06proto3\
+    \n#CmdFantasticStoryActivityType.proto*\xee\x02\n\x1dCmdFantasticStoryAc\
+    tivityType\x12-\n)CmdFantasticStoryActivityType_MNFEPONEDDJ\x10\0\x12.\n\
+    )CmdFantasticStoryActivityType_GICFDCLLMJO\x10\xf5&\x12.\n)CmdFantasticS\
+    toryActivityType_GEPLKOFBPCI\x10\xf7&\x12.\n)CmdFantasticStoryActivityTy\
+    pe_IPLHJFPOALF\x10\xb1&\x12.\n)CmdFantasticStoryActivityType_KDHAAGODFIO\
+    \x10\xc7&\x12.\n)CmdFantasticStoryActivityType_EMJFCKINMGG\x10\xbc&\x12.\
+    \n)CmdFantasticStoryActivityType_JBGFBEFOCJB\x10\xa8&b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

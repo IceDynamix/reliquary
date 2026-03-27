@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BoxingClubChallengeUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:BoxingClubChallengeUpdateScNotify.JBNCKFNJDKP)
-    pub JBNCKFNJDKP: ::protobuf::MessageField<super::IFLJCFFNJHP::IFLJCFFNJHP>,
+    // @@protoc_insertion_point(field:BoxingClubChallengeUpdateScNotify.BDPBOBHCDGF)
+    pub BDPBOBHCDGF: ::protobuf::MessageField<super::FIGMGLIEKNG::FIGMGLIEKNG>,
     // special fields
     // @@protoc_insertion_point(special_field:BoxingClubChallengeUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl BoxingClubChallengeUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IFLJCFFNJHP::IFLJCFFNJHP>(
-            "JBNCKFNJDKP",
-            |m: &BoxingClubChallengeUpdateScNotify| { &m.JBNCKFNJDKP },
-            |m: &mut BoxingClubChallengeUpdateScNotify| { &mut m.JBNCKFNJDKP },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FIGMGLIEKNG::FIGMGLIEKNG>(
+            "BDPBOBHCDGF",
+            |m: &BoxingClubChallengeUpdateScNotify| { &m.BDPBOBHCDGF },
+            |m: &mut BoxingClubChallengeUpdateScNotify| { &mut m.BDPBOBHCDGF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BoxingClubChallengeUpdateScNotify>(
             "BoxingClubChallengeUpdateScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for BoxingClubChallengeUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBNCKFNJDKP)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BDPBOBHCDGF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for BoxingClubChallengeUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JBNCKFNJDKP.as_ref() {
+        if let Some(v) = self.BDPBOBHCDGF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for BoxingClubChallengeUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JBNCKFNJDKP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.BDPBOBHCDGF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for BoxingClubChallengeUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.JBNCKFNJDKP.clear();
+        self.BDPBOBHCDGF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BoxingClubChallengeUpdateScNotify {
         static instance: BoxingClubChallengeUpdateScNotify = BoxingClubChallengeUpdateScNotify {
-            JBNCKFNJDKP: ::protobuf::MessageField::none(),
+            BDPBOBHCDGF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for BoxingClubChallengeUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'BoxingClubChallengeUpdateScNotify.proto\x1a\x11IFLJCFFNJHP.proto\"S\n\
-    !BoxingClubChallengeUpdateScNotify\x12.\n\x0bJBNCKFNJDKP\x18\t\x20\x01(\
-    \x0b2\x0c.IFLJCFFNJHPR\x0bJBNCKFNJDKPb\x06proto3\
+    \n'BoxingClubChallengeUpdateScNotify.proto\x1a\x11FIGMGLIEKNG.proto\"S\n\
+    !BoxingClubChallengeUpdateScNotify\x12.\n\x0bBDPBOBHCDGF\x18\x02\x20\x01\
+    (\x0b2\x0c.FIGMGLIEKNGR\x0bBDPBOBHCDGFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IFLJCFFNJHP::file_descriptor().clone());
+            deps.push(super::FIGMGLIEKNG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BoxingClubChallengeUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

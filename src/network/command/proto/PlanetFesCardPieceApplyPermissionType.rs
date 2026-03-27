@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:PlanetFesCardPieceApplyPermissionType)
 pub enum PlanetFesCardPieceApplyPermissionType {
-    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.MMCCKAPFDEI_NIKAGBFAKEH)
-    MMCCKAPFDEI_NIKAGBFAKEH = 0,
-    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.MMCCKAPFDEI_ODNNFIGHMCL)
-    MMCCKAPFDEI_ODNNFIGHMCL = 1,
-    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.MMCCKAPFDEI_HHCDAEOLCEJ)
-    MMCCKAPFDEI_HHCDAEOLCEJ = 2,
+    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.PlanetFesCardPieceApplyPermissionType_OPGOEEBELLM)
+    PlanetFesCardPieceApplyPermissionType_OPGOEEBELLM = 0,
+    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.PlanetFesCardPieceApplyPermissionType_KFIAIHKKKEB)
+    PlanetFesCardPieceApplyPermissionType_KFIAIHKKKEB = 1,
+    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.PlanetFesCardPieceApplyPermissionType_KLIGLFEMHDA)
+    PlanetFesCardPieceApplyPermissionType_KLIGLFEMHDA = 2,
 }
 
 impl ::protobuf::Enum for PlanetFesCardPieceApplyPermissionType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for PlanetFesCardPieceApplyPermissionType {
 
     fn from_i32(value: i32) -> ::std::option::Option<PlanetFesCardPieceApplyPermissionType> {
         match value {
-            0 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::MMCCKAPFDEI_NIKAGBFAKEH),
-            1 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::MMCCKAPFDEI_ODNNFIGHMCL),
-            2 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::MMCCKAPFDEI_HHCDAEOLCEJ),
+            0 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PlanetFesCardPieceApplyPermissionType_OPGOEEBELLM),
+            1 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PlanetFesCardPieceApplyPermissionType_KFIAIHKKKEB),
+            2 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PlanetFesCardPieceApplyPermissionType_KLIGLFEMHDA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<PlanetFesCardPieceApplyPermissionType> {
         match str {
-            "MMCCKAPFDEI_NIKAGBFAKEH" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::MMCCKAPFDEI_NIKAGBFAKEH),
-            "MMCCKAPFDEI_ODNNFIGHMCL" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::MMCCKAPFDEI_ODNNFIGHMCL),
-            "MMCCKAPFDEI_HHCDAEOLCEJ" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::MMCCKAPFDEI_HHCDAEOLCEJ),
+            "PlanetFesCardPieceApplyPermissionType_OPGOEEBELLM" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PlanetFesCardPieceApplyPermissionType_OPGOEEBELLM),
+            "PlanetFesCardPieceApplyPermissionType_KFIAIHKKKEB" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PlanetFesCardPieceApplyPermissionType_KFIAIHKKKEB),
+            "PlanetFesCardPieceApplyPermissionType_KLIGLFEMHDA" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PlanetFesCardPieceApplyPermissionType_KLIGLFEMHDA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PlanetFesCardPieceApplyPermissionType] = &[
-        PlanetFesCardPieceApplyPermissionType::MMCCKAPFDEI_NIKAGBFAKEH,
-        PlanetFesCardPieceApplyPermissionType::MMCCKAPFDEI_ODNNFIGHMCL,
-        PlanetFesCardPieceApplyPermissionType::MMCCKAPFDEI_HHCDAEOLCEJ,
+        PlanetFesCardPieceApplyPermissionType::PlanetFesCardPieceApplyPermissionType_OPGOEEBELLM,
+        PlanetFesCardPieceApplyPermissionType::PlanetFesCardPieceApplyPermissionType_KFIAIHKKKEB,
+        PlanetFesCardPieceApplyPermissionType::PlanetFesCardPieceApplyPermissionType_KLIGLFEMHDA,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for PlanetFesCardPieceApplyPermissionType {
 
 impl ::std::default::Default for PlanetFesCardPieceApplyPermissionType {
     fn default() -> Self {
-        PlanetFesCardPieceApplyPermissionType::MMCCKAPFDEI_NIKAGBFAKEH
+        PlanetFesCardPieceApplyPermissionType::PlanetFesCardPieceApplyPermissionType_OPGOEEBELLM
     }
 }
 
@@ -92,10 +92,11 @@ impl PlanetFesCardPieceApplyPermissionType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n+PlanetFesCardPieceApplyPermissionType.proto*~\n%PlanetFesCardPieceApp\
-    lyPermissionType\x12\x1b\n\x17MMCCKAPFDEI_NIKAGBFAKEH\x10\0\x12\x1b\n\
-    \x17MMCCKAPFDEI_ODNNFIGHMCL\x10\x01\x12\x1b\n\x17MMCCKAPFDEI_HHCDAEOLCEJ\
-    \x10\x02b\x06proto3\
+    \n+PlanetFesCardPieceApplyPermissionType.proto*\xcc\x01\n%PlanetFesCardP\
+    ieceApplyPermissionType\x125\n1PlanetFesCardPieceApplyPermissionType_OPG\
+    OEEBELLM\x10\0\x125\n1PlanetFesCardPieceApplyPermissionType_KFIAIHKKKEB\
+    \x10\x01\x125\n1PlanetFesCardPieceApplyPermissionType_KLIGLFEMHDA\x10\
+    \x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

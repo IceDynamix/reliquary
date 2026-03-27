@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueModifierSelectCellScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueModifierSelectCellScRsp.ABGEDOEHGCC)
-    pub ABGEDOEHGCC: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:RogueModifierSelectCellScRsp.PMCDFAAINDL)
-    pub PMCDFAAINDL: u32,
+    // @@protoc_insertion_point(field:RogueModifierSelectCellScRsp.HMCMEKJDDLL)
+    pub HMCMEKJDDLL: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:RogueModifierSelectCellScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueModifierSelectCellScRsp.HICCHNECJGJ)
+    pub HICCHNECJGJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifierSelectCellScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl RogueModifierSelectCellScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "ABGEDOEHGCC",
-            |m: &RogueModifierSelectCellScRsp| { &m.ABGEDOEHGCC },
-            |m: &mut RogueModifierSelectCellScRsp| { &mut m.ABGEDOEHGCC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PMCDFAAINDL",
-            |m: &RogueModifierSelectCellScRsp| { &m.PMCDFAAINDL },
-            |m: &mut RogueModifierSelectCellScRsp| { &mut m.PMCDFAAINDL },
+            "HMCMEKJDDLL",
+            |m: &RogueModifierSelectCellScRsp| { &m.HMCMEKJDDLL },
+            |m: &mut RogueModifierSelectCellScRsp| { &mut m.HMCMEKJDDLL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueModifierSelectCellScRsp| { &m.retcode },
             |m: &mut RogueModifierSelectCellScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HICCHNECJGJ",
+            |m: &RogueModifierSelectCellScRsp| { &m.HICCHNECJGJ },
+            |m: &mut RogueModifierSelectCellScRsp| { &mut m.HICCHNECJGJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueModifierSelectCellScRsp>(
             "RogueModifierSelectCellScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueModifierSelectCellScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABGEDOEHGCC)?;
-                },
-                56 => {
-                    self.PMCDFAAINDL = is.read_uint32()?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HMCMEKJDDLL)?;
                 },
                 96 => {
                     self.retcode = is.read_uint32()?;
+                },
+                64 => {
+                    self.HICCHNECJGJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for RogueModifierSelectCellScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ABGEDOEHGCC.as_ref() {
+        if let Some(v) = self.HMCMEKJDDLL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PMCDFAAINDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.PMCDFAAINDL);
-        }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        if self.HICCHNECJGJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.HICCHNECJGJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueModifierSelectCellScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ABGEDOEHGCC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
-        if self.PMCDFAAINDL != 0 {
-            os.write_uint32(7, self.PMCDFAAINDL)?;
+        if let Some(v) = self.HMCMEKJDDLL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(12, self.retcode)?;
+        }
+        if self.HICCHNECJGJ != 0 {
+            os.write_uint32(8, self.HICCHNECJGJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for RogueModifierSelectCellScRsp {
     }
 
     fn clear(&mut self) {
-        self.ABGEDOEHGCC.clear();
-        self.PMCDFAAINDL = 0;
+        self.HMCMEKJDDLL.clear();
         self.retcode = 0;
+        self.HICCHNECJGJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueModifierSelectCellScRsp {
         static instance: RogueModifierSelectCellScRsp = RogueModifierSelectCellScRsp {
-            ABGEDOEHGCC: ::protobuf::MessageField::none(),
-            PMCDFAAINDL: 0,
+            HMCMEKJDDLL: ::protobuf::MessageField::none(),
             retcode: 0,
+            HICCHNECJGJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierSelectCellScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueModifierSelectCellScRsp.proto\x1a\x0eItemList.proto\"\x87\x01\n\
-    \x1cRogueModifierSelectCellScRsp\x12+\n\x0bABGEDOEHGCC\x18\x05\x20\x01(\
-    \x0b2\t.ItemListR\x0bABGEDOEHGCC\x12\x20\n\x0bPMCDFAAINDL\x18\x07\x20\
-    \x01(\rR\x0bPMCDFAAINDL\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retc\
-    odeb\x06proto3\
+    \x1cRogueModifierSelectCellScRsp\x12+\n\x0bHMCMEKJDDLL\x18\r\x20\x01(\
+    \x0b2\t.ItemListR\x0bHMCMEKJDDLL\x12\x18\n\x07retcode\x18\x0c\x20\x01(\r\
+    R\x07retcode\x12\x20\n\x0bHICCHNECJGJ\x18\x08\x20\x01(\rR\x0bHICCHNECJGJ\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

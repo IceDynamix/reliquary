@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournReEnterRogueCocoonStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournReEnterRogueCocoonStageCsReq.NPPJCFODIFB)
-    pub NPPJCFODIFB: bool,
+    // @@protoc_insertion_point(field:RogueTournReEnterRogueCocoonStageCsReq.BBDMELCOLBJ)
+    pub BBDMELCOLBJ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournReEnterRogueCocoonStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueTournReEnterRogueCocoonStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPPJCFODIFB",
-            |m: &RogueTournReEnterRogueCocoonStageCsReq| { &m.NPPJCFODIFB },
-            |m: &mut RogueTournReEnterRogueCocoonStageCsReq| { &mut m.NPPJCFODIFB },
+            "BBDMELCOLBJ",
+            |m: &RogueTournReEnterRogueCocoonStageCsReq| { &m.BBDMELCOLBJ },
+            |m: &mut RogueTournReEnterRogueCocoonStageCsReq| { &mut m.BBDMELCOLBJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournReEnterRogueCocoonStageCsReq>(
             "RogueTournReEnterRogueCocoonStageCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueTournReEnterRogueCocoonStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.NPPJCFODIFB = is.read_bool()?;
+                96 => {
+                    self.BBDMELCOLBJ = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueTournReEnterRogueCocoonStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NPPJCFODIFB != false {
+        if self.BBDMELCOLBJ != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RogueTournReEnterRogueCocoonStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NPPJCFODIFB != false {
-            os.write_bool(13, self.NPPJCFODIFB)?;
+        if self.BBDMELCOLBJ != false {
+            os.write_bool(12, self.BBDMELCOLBJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RogueTournReEnterRogueCocoonStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.NPPJCFODIFB = false;
+        self.BBDMELCOLBJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournReEnterRogueCocoonStageCsReq {
         static instance: RogueTournReEnterRogueCocoonStageCsReq = RogueTournReEnterRogueCocoonStageCsReq {
-            NPPJCFODIFB: false,
+            BBDMELCOLBJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournReEnterRogueCocoonStageCsR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,RogueTournReEnterRogueCocoonStageCsReq.proto\"J\n&RogueTournReEnterRo\
-    gueCocoonStageCsReq\x12\x20\n\x0bNPPJCFODIFB\x18\r\x20\x01(\x08R\x0bNPPJ\
-    CFODIFBb\x06proto3\
+    gueCocoonStageCsReq\x12\x20\n\x0bBBDMELCOLBJ\x18\x0c\x20\x01(\x08R\x0bBB\
+    DMELCOLBJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,40 +27,40 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdBoxingClubType)
 pub enum CmdBoxingClubType {
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_GKJBAODJMJG)
-    PJHLEBCJJBB_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_JIIFDBNLFAB)
-    PJHLEBCJJBB_JIIFDBNLFAB = 4220,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_IHIOJOAPLBM)
-    PJHLEBCJJBB_IHIOJOAPLBM = 4205,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_PFAOMCIAJJG)
-    PJHLEBCJJBB_PFAOMCIAJJG = 4255,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_MMKPNKOKING)
-    PJHLEBCJJBB_MMKPNKOKING = 4283,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_IMFDKPDBMNL)
-    PJHLEBCJJBB_IMFDKPDBMNL = 4266,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_DNLPNGAEINL)
-    PJHLEBCJJBB_DNLPNGAEINL = 4237,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_BJMGNEFBIDL)
-    PJHLEBCJJBB_BJMGNEFBIDL = 4275,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_APPHOIDFNNC)
-    PJHLEBCJJBB_APPHOIDFNNC = 4226,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_JOJEJHHOBJB)
-    PJHLEBCJJBB_JOJEJHHOBJB = 4262,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_EOCDEOAIAFK)
-    PJHLEBCJJBB_EOCDEOAIAFK = 4228,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_PJLCAPENCNH)
-    PJHLEBCJJBB_PJLCAPENCNH = 4279,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_KNBBOHELPID)
-    PJHLEBCJJBB_KNBBOHELPID = 4257,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_GLAMOPKHMCJ)
-    PJHLEBCJJBB_GLAMOPKHMCJ = 4245,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_JAOMGGFBEHH)
-    PJHLEBCJJBB_JAOMGGFBEHH = 4238,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_IPJGOMGMBEA)
-    PJHLEBCJJBB_IPJGOMGMBEA = 4269,
-    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.PJHLEBCJJBB_IGKHEPDGGKK)
-    PJHLEBCJJBB_IGKHEPDGGKK = 4247,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_MNFEPONEDDJ)
+    CmdBoxingClubType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_DGGNNHJOHDG)
+    CmdBoxingClubType_DGGNNHJOHDG = 4262,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_OEAELPPHFPE)
+    CmdBoxingClubType_OEAELPPHFPE = 4269,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_PEIBDDOKMFN)
+    CmdBoxingClubType_PEIBDDOKMFN = 4213,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_OBHMDIPBGOP)
+    CmdBoxingClubType_OBHMDIPBGOP = 4256,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_GNGEEJHGCBC)
+    CmdBoxingClubType_GNGEEJHGCBC = 4284,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_PDOIHMEAFGJ)
+    CmdBoxingClubType_PDOIHMEAFGJ = 4223,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_CFOHGPHKIHP)
+    CmdBoxingClubType_CFOHGPHKIHP = 4235,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_JGPCENJBACK)
+    CmdBoxingClubType_JGPCENJBACK = 4281,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_KHOIKPJGMBB)
+    CmdBoxingClubType_KHOIKPJGMBB = 4219,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_BJHIIOFIGBC)
+    CmdBoxingClubType_BJHIIOFIGBC = 4224,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_GEFCCCMKCNO)
+    CmdBoxingClubType_GEFCCCMKCNO = 4283,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_PAKFGGBPFBI)
+    CmdBoxingClubType_PAKFGGBPFBI = 4204,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_AAGMEDNBEJF)
+    CmdBoxingClubType_AAGMEDNBEJF = 4257,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_JNMLCHCLEJK)
+    CmdBoxingClubType_JNMLCHCLEJK = 4240,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_BCICBENMKDB)
+    CmdBoxingClubType_BCICBENMKDB = 4246,
+    // @@protoc_insertion_point(enum_value:CmdBoxingClubType.CmdBoxingClubType_FPBBMIAMMGP)
+    CmdBoxingClubType_FPBBMIAMMGP = 4300,
 }
 
 impl ::protobuf::Enum for CmdBoxingClubType {
@@ -72,68 +72,68 @@ impl ::protobuf::Enum for CmdBoxingClubType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdBoxingClubType> {
         match value {
-            0 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_GKJBAODJMJG),
-            4220 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_JIIFDBNLFAB),
-            4205 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_IHIOJOAPLBM),
-            4255 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_PFAOMCIAJJG),
-            4283 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_MMKPNKOKING),
-            4266 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_IMFDKPDBMNL),
-            4237 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_DNLPNGAEINL),
-            4275 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_BJMGNEFBIDL),
-            4226 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_APPHOIDFNNC),
-            4262 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_JOJEJHHOBJB),
-            4228 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_EOCDEOAIAFK),
-            4279 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_PJLCAPENCNH),
-            4257 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_KNBBOHELPID),
-            4245 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_GLAMOPKHMCJ),
-            4238 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_JAOMGGFBEHH),
-            4269 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_IPJGOMGMBEA),
-            4247 => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_IGKHEPDGGKK),
+            0 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_MNFEPONEDDJ),
+            4262 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_DGGNNHJOHDG),
+            4269 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_OEAELPPHFPE),
+            4213 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_PEIBDDOKMFN),
+            4256 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_OBHMDIPBGOP),
+            4284 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_GNGEEJHGCBC),
+            4223 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_PDOIHMEAFGJ),
+            4235 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_CFOHGPHKIHP),
+            4281 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_JGPCENJBACK),
+            4219 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_KHOIKPJGMBB),
+            4224 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_BJHIIOFIGBC),
+            4283 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_GEFCCCMKCNO),
+            4204 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_PAKFGGBPFBI),
+            4257 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_AAGMEDNBEJF),
+            4240 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_JNMLCHCLEJK),
+            4246 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_BCICBENMKDB),
+            4300 => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_FPBBMIAMMGP),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdBoxingClubType> {
         match str {
-            "PJHLEBCJJBB_GKJBAODJMJG" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_GKJBAODJMJG),
-            "PJHLEBCJJBB_JIIFDBNLFAB" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_JIIFDBNLFAB),
-            "PJHLEBCJJBB_IHIOJOAPLBM" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_IHIOJOAPLBM),
-            "PJHLEBCJJBB_PFAOMCIAJJG" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_PFAOMCIAJJG),
-            "PJHLEBCJJBB_MMKPNKOKING" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_MMKPNKOKING),
-            "PJHLEBCJJBB_IMFDKPDBMNL" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_IMFDKPDBMNL),
-            "PJHLEBCJJBB_DNLPNGAEINL" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_DNLPNGAEINL),
-            "PJHLEBCJJBB_BJMGNEFBIDL" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_BJMGNEFBIDL),
-            "PJHLEBCJJBB_APPHOIDFNNC" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_APPHOIDFNNC),
-            "PJHLEBCJJBB_JOJEJHHOBJB" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_JOJEJHHOBJB),
-            "PJHLEBCJJBB_EOCDEOAIAFK" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_EOCDEOAIAFK),
-            "PJHLEBCJJBB_PJLCAPENCNH" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_PJLCAPENCNH),
-            "PJHLEBCJJBB_KNBBOHELPID" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_KNBBOHELPID),
-            "PJHLEBCJJBB_GLAMOPKHMCJ" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_GLAMOPKHMCJ),
-            "PJHLEBCJJBB_JAOMGGFBEHH" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_JAOMGGFBEHH),
-            "PJHLEBCJJBB_IPJGOMGMBEA" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_IPJGOMGMBEA),
-            "PJHLEBCJJBB_IGKHEPDGGKK" => ::std::option::Option::Some(CmdBoxingClubType::PJHLEBCJJBB_IGKHEPDGGKK),
+            "CmdBoxingClubType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_MNFEPONEDDJ),
+            "CmdBoxingClubType_DGGNNHJOHDG" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_DGGNNHJOHDG),
+            "CmdBoxingClubType_OEAELPPHFPE" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_OEAELPPHFPE),
+            "CmdBoxingClubType_PEIBDDOKMFN" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_PEIBDDOKMFN),
+            "CmdBoxingClubType_OBHMDIPBGOP" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_OBHMDIPBGOP),
+            "CmdBoxingClubType_GNGEEJHGCBC" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_GNGEEJHGCBC),
+            "CmdBoxingClubType_PDOIHMEAFGJ" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_PDOIHMEAFGJ),
+            "CmdBoxingClubType_CFOHGPHKIHP" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_CFOHGPHKIHP),
+            "CmdBoxingClubType_JGPCENJBACK" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_JGPCENJBACK),
+            "CmdBoxingClubType_KHOIKPJGMBB" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_KHOIKPJGMBB),
+            "CmdBoxingClubType_BJHIIOFIGBC" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_BJHIIOFIGBC),
+            "CmdBoxingClubType_GEFCCCMKCNO" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_GEFCCCMKCNO),
+            "CmdBoxingClubType_PAKFGGBPFBI" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_PAKFGGBPFBI),
+            "CmdBoxingClubType_AAGMEDNBEJF" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_AAGMEDNBEJF),
+            "CmdBoxingClubType_JNMLCHCLEJK" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_JNMLCHCLEJK),
+            "CmdBoxingClubType_BCICBENMKDB" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_BCICBENMKDB),
+            "CmdBoxingClubType_FPBBMIAMMGP" => ::std::option::Option::Some(CmdBoxingClubType::CmdBoxingClubType_FPBBMIAMMGP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBoxingClubType] = &[
-        CmdBoxingClubType::PJHLEBCJJBB_GKJBAODJMJG,
-        CmdBoxingClubType::PJHLEBCJJBB_JIIFDBNLFAB,
-        CmdBoxingClubType::PJHLEBCJJBB_IHIOJOAPLBM,
-        CmdBoxingClubType::PJHLEBCJJBB_PFAOMCIAJJG,
-        CmdBoxingClubType::PJHLEBCJJBB_MMKPNKOKING,
-        CmdBoxingClubType::PJHLEBCJJBB_IMFDKPDBMNL,
-        CmdBoxingClubType::PJHLEBCJJBB_DNLPNGAEINL,
-        CmdBoxingClubType::PJHLEBCJJBB_BJMGNEFBIDL,
-        CmdBoxingClubType::PJHLEBCJJBB_APPHOIDFNNC,
-        CmdBoxingClubType::PJHLEBCJJBB_JOJEJHHOBJB,
-        CmdBoxingClubType::PJHLEBCJJBB_EOCDEOAIAFK,
-        CmdBoxingClubType::PJHLEBCJJBB_PJLCAPENCNH,
-        CmdBoxingClubType::PJHLEBCJJBB_KNBBOHELPID,
-        CmdBoxingClubType::PJHLEBCJJBB_GLAMOPKHMCJ,
-        CmdBoxingClubType::PJHLEBCJJBB_JAOMGGFBEHH,
-        CmdBoxingClubType::PJHLEBCJJBB_IPJGOMGMBEA,
-        CmdBoxingClubType::PJHLEBCJJBB_IGKHEPDGGKK,
+        CmdBoxingClubType::CmdBoxingClubType_MNFEPONEDDJ,
+        CmdBoxingClubType::CmdBoxingClubType_DGGNNHJOHDG,
+        CmdBoxingClubType::CmdBoxingClubType_OEAELPPHFPE,
+        CmdBoxingClubType::CmdBoxingClubType_PEIBDDOKMFN,
+        CmdBoxingClubType::CmdBoxingClubType_OBHMDIPBGOP,
+        CmdBoxingClubType::CmdBoxingClubType_GNGEEJHGCBC,
+        CmdBoxingClubType::CmdBoxingClubType_PDOIHMEAFGJ,
+        CmdBoxingClubType::CmdBoxingClubType_CFOHGPHKIHP,
+        CmdBoxingClubType::CmdBoxingClubType_JGPCENJBACK,
+        CmdBoxingClubType::CmdBoxingClubType_KHOIKPJGMBB,
+        CmdBoxingClubType::CmdBoxingClubType_BJHIIOFIGBC,
+        CmdBoxingClubType::CmdBoxingClubType_GEFCCCMKCNO,
+        CmdBoxingClubType::CmdBoxingClubType_PAKFGGBPFBI,
+        CmdBoxingClubType::CmdBoxingClubType_AAGMEDNBEJF,
+        CmdBoxingClubType::CmdBoxingClubType_JNMLCHCLEJK,
+        CmdBoxingClubType::CmdBoxingClubType_BCICBENMKDB,
+        CmdBoxingClubType::CmdBoxingClubType_FPBBMIAMMGP,
     ];
 }
 
@@ -145,23 +145,23 @@ impl ::protobuf::EnumFull for CmdBoxingClubType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdBoxingClubType::PJHLEBCJJBB_GKJBAODJMJG => 0,
-            CmdBoxingClubType::PJHLEBCJJBB_JIIFDBNLFAB => 1,
-            CmdBoxingClubType::PJHLEBCJJBB_IHIOJOAPLBM => 2,
-            CmdBoxingClubType::PJHLEBCJJBB_PFAOMCIAJJG => 3,
-            CmdBoxingClubType::PJHLEBCJJBB_MMKPNKOKING => 4,
-            CmdBoxingClubType::PJHLEBCJJBB_IMFDKPDBMNL => 5,
-            CmdBoxingClubType::PJHLEBCJJBB_DNLPNGAEINL => 6,
-            CmdBoxingClubType::PJHLEBCJJBB_BJMGNEFBIDL => 7,
-            CmdBoxingClubType::PJHLEBCJJBB_APPHOIDFNNC => 8,
-            CmdBoxingClubType::PJHLEBCJJBB_JOJEJHHOBJB => 9,
-            CmdBoxingClubType::PJHLEBCJJBB_EOCDEOAIAFK => 10,
-            CmdBoxingClubType::PJHLEBCJJBB_PJLCAPENCNH => 11,
-            CmdBoxingClubType::PJHLEBCJJBB_KNBBOHELPID => 12,
-            CmdBoxingClubType::PJHLEBCJJBB_GLAMOPKHMCJ => 13,
-            CmdBoxingClubType::PJHLEBCJJBB_JAOMGGFBEHH => 14,
-            CmdBoxingClubType::PJHLEBCJJBB_IPJGOMGMBEA => 15,
-            CmdBoxingClubType::PJHLEBCJJBB_IGKHEPDGGKK => 16,
+            CmdBoxingClubType::CmdBoxingClubType_MNFEPONEDDJ => 0,
+            CmdBoxingClubType::CmdBoxingClubType_DGGNNHJOHDG => 1,
+            CmdBoxingClubType::CmdBoxingClubType_OEAELPPHFPE => 2,
+            CmdBoxingClubType::CmdBoxingClubType_PEIBDDOKMFN => 3,
+            CmdBoxingClubType::CmdBoxingClubType_OBHMDIPBGOP => 4,
+            CmdBoxingClubType::CmdBoxingClubType_GNGEEJHGCBC => 5,
+            CmdBoxingClubType::CmdBoxingClubType_PDOIHMEAFGJ => 6,
+            CmdBoxingClubType::CmdBoxingClubType_CFOHGPHKIHP => 7,
+            CmdBoxingClubType::CmdBoxingClubType_JGPCENJBACK => 8,
+            CmdBoxingClubType::CmdBoxingClubType_KHOIKPJGMBB => 9,
+            CmdBoxingClubType::CmdBoxingClubType_BJHIIOFIGBC => 10,
+            CmdBoxingClubType::CmdBoxingClubType_GEFCCCMKCNO => 11,
+            CmdBoxingClubType::CmdBoxingClubType_PAKFGGBPFBI => 12,
+            CmdBoxingClubType::CmdBoxingClubType_AAGMEDNBEJF => 13,
+            CmdBoxingClubType::CmdBoxingClubType_JNMLCHCLEJK => 14,
+            CmdBoxingClubType::CmdBoxingClubType_BCICBENMKDB => 15,
+            CmdBoxingClubType::CmdBoxingClubType_FPBBMIAMMGP => 16,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -169,7 +169,7 @@ impl ::protobuf::EnumFull for CmdBoxingClubType {
 
 impl ::std::default::Default for CmdBoxingClubType {
     fn default() -> Self {
-        CmdBoxingClubType::PJHLEBCJJBB_GKJBAODJMJG
+        CmdBoxingClubType::CmdBoxingClubType_MNFEPONEDDJ
     }
 }
 
@@ -180,19 +180,19 @@ impl CmdBoxingClubType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdBoxingClubType.proto*\x90\x04\n\x11CmdBoxingClubType\x12\x1b\n\
-    \x17PJHLEBCJJBB_GKJBAODJMJG\x10\0\x12\x1c\n\x17PJHLEBCJJBB_JIIFDBNLFAB\
-    \x10\xfc\x20\x12\x1c\n\x17PJHLEBCJJBB_IHIOJOAPLBM\x10\xed\x20\x12\x1c\n\
-    \x17PJHLEBCJJBB_PFAOMCIAJJG\x10\x9f!\x12\x1c\n\x17PJHLEBCJJBB_MMKPNKOKIN\
-    G\x10\xbb!\x12\x1c\n\x17PJHLEBCJJBB_IMFDKPDBMNL\x10\xaa!\x12\x1c\n\x17PJ\
-    HLEBCJJBB_DNLPNGAEINL\x10\x8d!\x12\x1c\n\x17PJHLEBCJJBB_BJMGNEFBIDL\x10\
-    \xb3!\x12\x1c\n\x17PJHLEBCJJBB_APPHOIDFNNC\x10\x82!\x12\x1c\n\x17PJHLEBC\
-    JJBB_JOJEJHHOBJB\x10\xa6!\x12\x1c\n\x17PJHLEBCJJBB_EOCDEOAIAFK\x10\x84!\
-    \x12\x1c\n\x17PJHLEBCJJBB_PJLCAPENCNH\x10\xb7!\x12\x1c\n\x17PJHLEBCJJBB_\
-    KNBBOHELPID\x10\xa1!\x12\x1c\n\x17PJHLEBCJJBB_GLAMOPKHMCJ\x10\x95!\x12\
-    \x1c\n\x17PJHLEBCJJBB_JAOMGGFBEHH\x10\x8e!\x12\x1c\n\x17PJHLEBCJJBB_IPJG\
-    OMGMBEA\x10\xad!\x12\x1c\n\x17PJHLEBCJJBB_IGKHEPDGGKK\x10\x97!b\x06proto\
-    3\
+    \n\x17CmdBoxingClubType.proto*\xf6\x04\n\x11CmdBoxingClubType\x12!\n\x1d\
+    CmdBoxingClubType_MNFEPONEDDJ\x10\0\x12\"\n\x1dCmdBoxingClubType_DGGNNHJ\
+    OHDG\x10\xa6!\x12\"\n\x1dCmdBoxingClubType_OEAELPPHFPE\x10\xad!\x12\"\n\
+    \x1dCmdBoxingClubType_PEIBDDOKMFN\x10\xf5\x20\x12\"\n\x1dCmdBoxingClubTy\
+    pe_OBHMDIPBGOP\x10\xa0!\x12\"\n\x1dCmdBoxingClubType_GNGEEJHGCBC\x10\xbc\
+    !\x12\"\n\x1dCmdBoxingClubType_PDOIHMEAFGJ\x10\xff\x20\x12\"\n\x1dCmdBox\
+    ingClubType_CFOHGPHKIHP\x10\x8b!\x12\"\n\x1dCmdBoxingClubType_JGPCENJBAC\
+    K\x10\xb9!\x12\"\n\x1dCmdBoxingClubType_KHOIKPJGMBB\x10\xfb\x20\x12\"\n\
+    \x1dCmdBoxingClubType_BJHIIOFIGBC\x10\x80!\x12\"\n\x1dCmdBoxingClubType_\
+    GEFCCCMKCNO\x10\xbb!\x12\"\n\x1dCmdBoxingClubType_PAKFGGBPFBI\x10\xec\
+    \x20\x12\"\n\x1dCmdBoxingClubType_AAGMEDNBEJF\x10\xa1!\x12\"\n\x1dCmdBox\
+    ingClubType_JNMLCHCLEJK\x10\x90!\x12\"\n\x1dCmdBoxingClubType_BCICBENMKD\
+    B\x10\x96!\x12\"\n\x1dCmdBoxingClubType_FPBBMIAMMGP\x10\xcc!b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

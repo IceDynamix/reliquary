@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightFestScoreUpdateNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightFestScoreUpdateNotify.GGJNFKCHBCO)
-    pub GGJNFKCHBCO: u32,
+    // @@protoc_insertion_point(field:FightFestScoreUpdateNotify.JBPOLANAMFF)
+    pub JBPOLANAMFF: u32,
     // @@protoc_insertion_point(field:FightFestScoreUpdateNotify.score_id)
     pub score_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl FightFestScoreUpdateNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGJNFKCHBCO",
-            |m: &FightFestScoreUpdateNotify| { &m.GGJNFKCHBCO },
-            |m: &mut FightFestScoreUpdateNotify| { &mut m.GGJNFKCHBCO },
+            "JBPOLANAMFF",
+            |m: &FightFestScoreUpdateNotify| { &m.JBPOLANAMFF },
+            |m: &mut FightFestScoreUpdateNotify| { &mut m.JBPOLANAMFF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.GGJNFKCHBCO = is.read_uint32()?;
+                112 => {
+                    self.JBPOLANAMFF = is.read_uint32()?;
                 },
-                16 => {
+                40 => {
                     self.score_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GGJNFKCHBCO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GGJNFKCHBCO);
+        if self.JBPOLANAMFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.JBPOLANAMFF);
         }
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.score_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GGJNFKCHBCO != 0 {
-            os.write_uint32(12, self.GGJNFKCHBCO)?;
+        if self.JBPOLANAMFF != 0 {
+            os.write_uint32(14, self.JBPOLANAMFF)?;
         }
         if self.score_id != 0 {
-            os.write_uint32(2, self.score_id)?;
+            os.write_uint32(5, self.score_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for FightFestScoreUpdateNotify {
     }
 
     fn clear(&mut self) {
-        self.GGJNFKCHBCO = 0;
+        self.JBPOLANAMFF = 0;
         self.score_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightFestScoreUpdateNotify {
         static instance: FightFestScoreUpdateNotify = FightFestScoreUpdateNotify {
-            GGJNFKCHBCO: 0,
+            JBPOLANAMFF: 0,
             score_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FightFestScoreUpdateNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20FightFestScoreUpdateNotify.proto\"Y\n\x1aFightFestScoreUpdateNotif\
-    y\x12\x20\n\x0bGGJNFKCHBCO\x18\x0c\x20\x01(\rR\x0bGGJNFKCHBCO\x12\x19\n\
-    \x08score_id\x18\x02\x20\x01(\rR\x07scoreIdb\x06proto3\
+    y\x12\x20\n\x0bJBPOLANAMFF\x18\x0e\x20\x01(\rR\x0bJBPOLANAMFF\x12\x19\n\
+    \x08score_id\x18\x05\x20\x01(\rR\x07scoreIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

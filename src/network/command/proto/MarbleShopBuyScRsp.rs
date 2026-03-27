@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarbleShopBuyScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MarbleShopBuyScRsp.CEDNCDNHBFF)
-    pub CEDNCDNHBFF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MarbleShopBuyScRsp.IPNHKDBMGJJ)
+    pub IPNHKDBMGJJ: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MarbleShopBuyScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl MarbleShopBuyScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CEDNCDNHBFF",
-            |m: &MarbleShopBuyScRsp| { &m.CEDNCDNHBFF },
-            |m: &mut MarbleShopBuyScRsp| { &mut m.CEDNCDNHBFF },
+            "IPNHKDBMGJJ",
+            |m: &MarbleShopBuyScRsp| { &m.IPNHKDBMGJJ },
+            |m: &mut MarbleShopBuyScRsp| { &mut m.IPNHKDBMGJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for MarbleShopBuyScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CEDNCDNHBFF)?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IPNHKDBMGJJ)?;
                 },
-                72 => {
-                    self.CEDNCDNHBFF.push(is.read_uint32()?);
+                120 => {
+                    self.IPNHKDBMGJJ.push(is.read_uint32()?);
                 },
-                112 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for MarbleShopBuyScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.CEDNCDNHBFF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.IPNHKDBMGJJ);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for MarbleShopBuyScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.CEDNCDNHBFF)?;
+        os.write_repeated_packed_uint32(15, &self.IPNHKDBMGJJ)?;
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -131,14 +131,14 @@ impl ::protobuf::Message for MarbleShopBuyScRsp {
     }
 
     fn clear(&mut self) {
-        self.CEDNCDNHBFF.clear();
+        self.IPNHKDBMGJJ.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarbleShopBuyScRsp {
         static instance: MarbleShopBuyScRsp = MarbleShopBuyScRsp {
-            CEDNCDNHBFF: ::std::vec::Vec::new(),
+            IPNHKDBMGJJ: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for MarbleShopBuyScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18MarbleShopBuyScRsp.proto\"P\n\x12MarbleShopBuyScRsp\x12\x20\n\x0bC\
-    EDNCDNHBFF\x18\t\x20\x03(\rR\x0bCEDNCDNHBFF\x12\x18\n\x07retcode\x18\x0e\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x18MarbleShopBuyScRsp.proto\"P\n\x12MarbleShopBuyScRsp\x12\x20\n\x0bI\
+    PNHKDBMGJJ\x18\x0f\x20\x03(\rR\x0bIPNHKDBMGJJ\x12\x18\n\x07retcode\x18\
+    \x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

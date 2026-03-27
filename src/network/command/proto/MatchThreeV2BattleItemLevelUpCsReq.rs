@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchThreeV2BattleItemLevelUpCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MatchThreeV2BattleItemLevelUpCsReq.EHIOEIIAJDA)
-    pub EHIOEIIAJDA: u32,
-    // @@protoc_insertion_point(field:MatchThreeV2BattleItemLevelUpCsReq.AHIGGLNKBBJ)
-    pub AHIGGLNKBBJ: u32,
+    // @@protoc_insertion_point(field:MatchThreeV2BattleItemLevelUpCsReq.PLDEJLJBBLB)
+    pub PLDEJLJBBLB: u32,
+    // @@protoc_insertion_point(field:MatchThreeV2BattleItemLevelUpCsReq.IPDOGLDJCMO)
+    pub IPDOGLDJCMO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeV2BattleItemLevelUpCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl MatchThreeV2BattleItemLevelUpCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHIOEIIAJDA",
-            |m: &MatchThreeV2BattleItemLevelUpCsReq| { &m.EHIOEIIAJDA },
-            |m: &mut MatchThreeV2BattleItemLevelUpCsReq| { &mut m.EHIOEIIAJDA },
+            "PLDEJLJBBLB",
+            |m: &MatchThreeV2BattleItemLevelUpCsReq| { &m.PLDEJLJBBLB },
+            |m: &mut MatchThreeV2BattleItemLevelUpCsReq| { &mut m.PLDEJLJBBLB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHIGGLNKBBJ",
-            |m: &MatchThreeV2BattleItemLevelUpCsReq| { &m.AHIGGLNKBBJ },
-            |m: &mut MatchThreeV2BattleItemLevelUpCsReq| { &mut m.AHIGGLNKBBJ },
+            "IPDOGLDJCMO",
+            |m: &MatchThreeV2BattleItemLevelUpCsReq| { &m.IPDOGLDJCMO },
+            |m: &mut MatchThreeV2BattleItemLevelUpCsReq| { &mut m.IPDOGLDJCMO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeV2BattleItemLevelUpCsReq>(
             "MatchThreeV2BattleItemLevelUpCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MatchThreeV2BattleItemLevelUpCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.EHIOEIIAJDA = is.read_uint32()?;
+                24 => {
+                    self.PLDEJLJBBLB = is.read_uint32()?;
                 },
-                16 => {
-                    self.AHIGGLNKBBJ = is.read_uint32()?;
+                48 => {
+                    self.IPDOGLDJCMO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for MatchThreeV2BattleItemLevelUpCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EHIOEIIAJDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.EHIOEIIAJDA);
+        if self.PLDEJLJBBLB != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.PLDEJLJBBLB);
         }
-        if self.AHIGGLNKBBJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.AHIGGLNKBBJ);
+        if self.IPDOGLDJCMO != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.IPDOGLDJCMO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for MatchThreeV2BattleItemLevelUpCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EHIOEIIAJDA != 0 {
-            os.write_uint32(15, self.EHIOEIIAJDA)?;
+        if self.PLDEJLJBBLB != 0 {
+            os.write_uint32(3, self.PLDEJLJBBLB)?;
         }
-        if self.AHIGGLNKBBJ != 0 {
-            os.write_uint32(2, self.AHIGGLNKBBJ)?;
+        if self.IPDOGLDJCMO != 0 {
+            os.write_uint32(6, self.IPDOGLDJCMO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for MatchThreeV2BattleItemLevelUpCsReq {
     }
 
     fn clear(&mut self) {
-        self.EHIOEIIAJDA = 0;
-        self.AHIGGLNKBBJ = 0;
+        self.PLDEJLJBBLB = 0;
+        self.IPDOGLDJCMO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeV2BattleItemLevelUpCsReq {
         static instance: MatchThreeV2BattleItemLevelUpCsReq = MatchThreeV2BattleItemLevelUpCsReq {
-            EHIOEIIAJDA: 0,
-            AHIGGLNKBBJ: 0,
+            PLDEJLJBBLB: 0,
+            IPDOGLDJCMO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeV2BattleItemLevelUpCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(MatchThreeV2BattleItemLevelUpCsReq.proto\"h\n\"MatchThreeV2BattleItem\
-    LevelUpCsReq\x12\x20\n\x0bEHIOEIIAJDA\x18\x0f\x20\x01(\rR\x0bEHIOEIIAJDA\
-    \x12\x20\n\x0bAHIGGLNKBBJ\x18\x02\x20\x01(\rR\x0bAHIGGLNKBBJb\x06proto3\
+    LevelUpCsReq\x12\x20\n\x0bPLDEJLJBBLB\x18\x03\x20\x01(\rR\x0bPLDEJLJBBLB\
+    \x12\x20\n\x0bIPDOGLDJCMO\x18\x06\x20\x01(\rR\x0bIPDOGLDJCMOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

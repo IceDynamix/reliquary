@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetAllowOtherApplyFriendCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetAllowOtherApplyFriendCsReq.FMBCCMKOIPC)
-    pub FMBCCMKOIPC: bool,
+    // @@protoc_insertion_point(field:SetAllowOtherApplyFriendCsReq.FBBMEGHJNND)
+    pub FBBMEGHJNND: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetAllowOtherApplyFriendCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SetAllowOtherApplyFriendCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FMBCCMKOIPC",
-            |m: &SetAllowOtherApplyFriendCsReq| { &m.FMBCCMKOIPC },
-            |m: &mut SetAllowOtherApplyFriendCsReq| { &mut m.FMBCCMKOIPC },
+            "FBBMEGHJNND",
+            |m: &SetAllowOtherApplyFriendCsReq| { &m.FBBMEGHJNND },
+            |m: &mut SetAllowOtherApplyFriendCsReq| { &mut m.FBBMEGHJNND },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetAllowOtherApplyFriendCsReq>(
             "SetAllowOtherApplyFriendCsReq",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for SetAllowOtherApplyFriendCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 40 => {
-                    self.FMBCCMKOIPC = is.read_bool()?;
+                    self.FBBMEGHJNND = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SetAllowOtherApplyFriendCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FMBCCMKOIPC != false {
+        if self.FBBMEGHJNND != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SetAllowOtherApplyFriendCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FMBCCMKOIPC != false {
-            os.write_bool(5, self.FMBCCMKOIPC)?;
+        if self.FBBMEGHJNND != false {
+            os.write_bool(5, self.FBBMEGHJNND)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SetAllowOtherApplyFriendCsReq {
     }
 
     fn clear(&mut self) {
-        self.FMBCCMKOIPC = false;
+        self.FBBMEGHJNND = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetAllowOtherApplyFriendCsReq {
         static instance: SetAllowOtherApplyFriendCsReq = SetAllowOtherApplyFriendCsReq {
-            FMBCCMKOIPC: false,
+            FBBMEGHJNND: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SetAllowOtherApplyFriendCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SetAllowOtherApplyFriendCsReq.proto\"A\n\x1dSetAllowOtherApplyFriendC\
-    sReq\x12\x20\n\x0bFMBCCMKOIPC\x18\x05\x20\x01(\x08R\x0bFMBCCMKOIPCb\x06p\
+    sReq\x12\x20\n\x0bFBBMEGHJNND\x18\x05\x20\x01(\x08R\x0bFBBMEGHJNNDb\x06p\
     roto3\
 ";
 

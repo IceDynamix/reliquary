@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetTurnFoodSwitchCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.IKJGLHLIGDH)
-    pub IKJGLHLIGDH: bool,
-    // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.DFAIHNLKJKP)
-    pub DFAIHNLKJKP: ::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>,
+    // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.GOIIICNLFJA)
+    pub GOIIICNLFJA: ::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>,
+    // @@protoc_insertion_point(field:SetTurnFoodSwitchCsReq.FCPDPKKIELD)
+    pub FCPDPKKIELD: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SetTurnFoodSwitchCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SetTurnFoodSwitchCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IKJGLHLIGDH",
-            |m: &SetTurnFoodSwitchCsReq| { &m.IKJGLHLIGDH },
-            |m: &mut SetTurnFoodSwitchCsReq| { &mut m.IKJGLHLIGDH },
+            "GOIIICNLFJA",
+            |m: &SetTurnFoodSwitchCsReq| { &m.GOIIICNLFJA },
+            |m: &mut SetTurnFoodSwitchCsReq| { &mut m.GOIIICNLFJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DFAIHNLKJKP",
-            |m: &SetTurnFoodSwitchCsReq| { &m.DFAIHNLKJKP },
-            |m: &mut SetTurnFoodSwitchCsReq| { &mut m.DFAIHNLKJKP },
+            "FCPDPKKIELD",
+            |m: &SetTurnFoodSwitchCsReq| { &m.FCPDPKKIELD },
+            |m: &mut SetTurnFoodSwitchCsReq| { &mut m.FCPDPKKIELD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetTurnFoodSwitchCsReq>(
             "SetTurnFoodSwitchCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.IKJGLHLIGDH = is.read_bool()?;
+                112 => {
+                    self.GOIIICNLFJA = is.read_enum_or_unknown()?;
                 },
-                88 => {
-                    self.DFAIHNLKJKP = is.read_enum_or_unknown()?;
+                80 => {
+                    self.FCPDPKKIELD = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IKJGLHLIGDH != false {
-            my_size += 1 + 1;
+        if self.GOIIICNLFJA != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(14, self.GOIIICNLFJA.value());
         }
-        if self.DFAIHNLKJKP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::PLKMNNBHDIG_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(11, self.DFAIHNLKJKP.value());
+        if self.FCPDPKKIELD != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IKJGLHLIGDH != false {
-            os.write_bool(12, self.IKJGLHLIGDH)?;
+        if self.GOIIICNLFJA != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_MNFEPONEDDJ) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.GOIIICNLFJA))?;
         }
-        if self.DFAIHNLKJKP != ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::PLKMNNBHDIG_GKJBAODJMJG) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.DFAIHNLKJKP))?;
+        if self.FCPDPKKIELD != false {
+            os.write_bool(10, self.FCPDPKKIELD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SetTurnFoodSwitchCsReq {
     }
 
     fn clear(&mut self) {
-        self.IKJGLHLIGDH = false;
-        self.DFAIHNLKJKP = ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::PLKMNNBHDIG_GKJBAODJMJG);
+        self.GOIIICNLFJA = ::protobuf::EnumOrUnknown::new(super::TurnFoodSwitch::TurnFoodSwitch::TurnFoodSwitch_MNFEPONEDDJ);
+        self.FCPDPKKIELD = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetTurnFoodSwitchCsReq {
         static instance: SetTurnFoodSwitchCsReq = SetTurnFoodSwitchCsReq {
-            IKJGLHLIGDH: false,
-            DFAIHNLKJKP: ::protobuf::EnumOrUnknown::from_i32(0),
+            GOIIICNLFJA: ::protobuf::EnumOrUnknown::from_i32(0),
+            FCPDPKKIELD: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SetTurnFoodSwitchCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSetTurnFoodSwitchCsReq.proto\x1a\x14TurnFoodSwitch.proto\"m\n\x16S\
-    etTurnFoodSwitchCsReq\x12\x20\n\x0bIKJGLHLIGDH\x18\x0c\x20\x01(\x08R\x0b\
-    IKJGLHLIGDH\x121\n\x0bDFAIHNLKJKP\x18\x0b\x20\x01(\x0e2\x0f.TurnFoodSwit\
-    chR\x0bDFAIHNLKJKPb\x06proto3\
+    etTurnFoodSwitchCsReq\x121\n\x0bGOIIICNLFJA\x18\x0e\x20\x01(\x0e2\x0f.Tu\
+    rnFoodSwitchR\x0bGOIIICNLFJA\x12\x20\n\x0bFCPDPKKIELD\x18\n\x20\x01(\x08\
+    R\x0bFCPDPKKIELDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

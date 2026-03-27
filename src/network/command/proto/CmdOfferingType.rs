@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdOfferingType)
 pub enum CmdOfferingType {
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_GKJBAODJMJG)
-    NDIEHAMIKOL_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_DLCGLKGKNDG)
-    NDIEHAMIKOL_DLCGLKGKNDG = 6926,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_DNCDNBNPOHC)
-    NDIEHAMIKOL_DNCDNBNPOHC = 6932,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_JCPDFLBEHON)
-    NDIEHAMIKOL_JCPDFLBEHON = 6930,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_MEOEIPFLFFP)
-    NDIEHAMIKOL_MEOEIPFLFFP = 6931,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_NNHBMBIFCHA)
-    NDIEHAMIKOL_NNHBMBIFCHA = 6924,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_JHPAHINKPGO)
-    NDIEHAMIKOL_JHPAHINKPGO = 6940,
-    // @@protoc_insertion_point(enum_value:CmdOfferingType.NDIEHAMIKOL_IFPLJIMHDMB)
-    NDIEHAMIKOL_IFPLJIMHDMB = 6921,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingType_MNFEPONEDDJ)
+    CmdOfferingType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingType_ADGONODHFBA)
+    CmdOfferingType_ADGONODHFBA = 6936,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingType_LBPAFKPAHOA)
+    CmdOfferingType_LBPAFKPAHOA = 6926,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingType_GANIHOGLOBJ)
+    CmdOfferingType_GANIHOGLOBJ = 6925,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingType_HEPFJEKMPJH)
+    CmdOfferingType_HEPFJEKMPJH = 6935,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingType_JDAGICFJBDK)
+    CmdOfferingType_JDAGICFJBDK = 6921,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingType_INNGKAPPINB)
+    CmdOfferingType_INNGKAPPINB = 6939,
+    // @@protoc_insertion_point(enum_value:CmdOfferingType.CmdOfferingType_NIJBGCDEHBA)
+    CmdOfferingType_NIJBGCDEHBA = 6932,
 }
 
 impl ::protobuf::Enum for CmdOfferingType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for CmdOfferingType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdOfferingType> {
         match value {
-            0 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_GKJBAODJMJG),
-            6926 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_DLCGLKGKNDG),
-            6932 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_DNCDNBNPOHC),
-            6930 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_JCPDFLBEHON),
-            6931 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_MEOEIPFLFFP),
-            6924 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_NNHBMBIFCHA),
-            6940 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_JHPAHINKPGO),
-            6921 => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_IFPLJIMHDMB),
+            0 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_MNFEPONEDDJ),
+            6936 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_ADGONODHFBA),
+            6926 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_LBPAFKPAHOA),
+            6925 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_GANIHOGLOBJ),
+            6935 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_HEPFJEKMPJH),
+            6921 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_JDAGICFJBDK),
+            6939 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_INNGKAPPINB),
+            6932 => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_NIJBGCDEHBA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdOfferingType> {
         match str {
-            "NDIEHAMIKOL_GKJBAODJMJG" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_GKJBAODJMJG),
-            "NDIEHAMIKOL_DLCGLKGKNDG" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_DLCGLKGKNDG),
-            "NDIEHAMIKOL_DNCDNBNPOHC" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_DNCDNBNPOHC),
-            "NDIEHAMIKOL_JCPDFLBEHON" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_JCPDFLBEHON),
-            "NDIEHAMIKOL_MEOEIPFLFFP" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_MEOEIPFLFFP),
-            "NDIEHAMIKOL_NNHBMBIFCHA" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_NNHBMBIFCHA),
-            "NDIEHAMIKOL_JHPAHINKPGO" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_JHPAHINKPGO),
-            "NDIEHAMIKOL_IFPLJIMHDMB" => ::std::option::Option::Some(CmdOfferingType::NDIEHAMIKOL_IFPLJIMHDMB),
+            "CmdOfferingType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_MNFEPONEDDJ),
+            "CmdOfferingType_ADGONODHFBA" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_ADGONODHFBA),
+            "CmdOfferingType_LBPAFKPAHOA" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_LBPAFKPAHOA),
+            "CmdOfferingType_GANIHOGLOBJ" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_GANIHOGLOBJ),
+            "CmdOfferingType_HEPFJEKMPJH" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_HEPFJEKMPJH),
+            "CmdOfferingType_JDAGICFJBDK" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_JDAGICFJBDK),
+            "CmdOfferingType_INNGKAPPINB" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_INNGKAPPINB),
+            "CmdOfferingType_NIJBGCDEHBA" => ::std::option::Option::Some(CmdOfferingType::CmdOfferingType_NIJBGCDEHBA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdOfferingType] = &[
-        CmdOfferingType::NDIEHAMIKOL_GKJBAODJMJG,
-        CmdOfferingType::NDIEHAMIKOL_DLCGLKGKNDG,
-        CmdOfferingType::NDIEHAMIKOL_DNCDNBNPOHC,
-        CmdOfferingType::NDIEHAMIKOL_JCPDFLBEHON,
-        CmdOfferingType::NDIEHAMIKOL_MEOEIPFLFFP,
-        CmdOfferingType::NDIEHAMIKOL_NNHBMBIFCHA,
-        CmdOfferingType::NDIEHAMIKOL_JHPAHINKPGO,
-        CmdOfferingType::NDIEHAMIKOL_IFPLJIMHDMB,
+        CmdOfferingType::CmdOfferingType_MNFEPONEDDJ,
+        CmdOfferingType::CmdOfferingType_ADGONODHFBA,
+        CmdOfferingType::CmdOfferingType_LBPAFKPAHOA,
+        CmdOfferingType::CmdOfferingType_GANIHOGLOBJ,
+        CmdOfferingType::CmdOfferingType_HEPFJEKMPJH,
+        CmdOfferingType::CmdOfferingType_JDAGICFJBDK,
+        CmdOfferingType::CmdOfferingType_INNGKAPPINB,
+        CmdOfferingType::CmdOfferingType_NIJBGCDEHBA,
     ];
 }
 
@@ -100,14 +100,14 @@ impl ::protobuf::EnumFull for CmdOfferingType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdOfferingType::NDIEHAMIKOL_GKJBAODJMJG => 0,
-            CmdOfferingType::NDIEHAMIKOL_DLCGLKGKNDG => 1,
-            CmdOfferingType::NDIEHAMIKOL_DNCDNBNPOHC => 2,
-            CmdOfferingType::NDIEHAMIKOL_JCPDFLBEHON => 3,
-            CmdOfferingType::NDIEHAMIKOL_MEOEIPFLFFP => 4,
-            CmdOfferingType::NDIEHAMIKOL_NNHBMBIFCHA => 5,
-            CmdOfferingType::NDIEHAMIKOL_JHPAHINKPGO => 6,
-            CmdOfferingType::NDIEHAMIKOL_IFPLJIMHDMB => 7,
+            CmdOfferingType::CmdOfferingType_MNFEPONEDDJ => 0,
+            CmdOfferingType::CmdOfferingType_ADGONODHFBA => 1,
+            CmdOfferingType::CmdOfferingType_LBPAFKPAHOA => 2,
+            CmdOfferingType::CmdOfferingType_GANIHOGLOBJ => 3,
+            CmdOfferingType::CmdOfferingType_HEPFJEKMPJH => 4,
+            CmdOfferingType::CmdOfferingType_JDAGICFJBDK => 5,
+            CmdOfferingType::CmdOfferingType_INNGKAPPINB => 6,
+            CmdOfferingType::CmdOfferingType_NIJBGCDEHBA => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,7 +115,7 @@ impl ::protobuf::EnumFull for CmdOfferingType {
 
 impl ::std::default::Default for CmdOfferingType {
     fn default() -> Self {
-        CmdOfferingType::NDIEHAMIKOL_GKJBAODJMJG
+        CmdOfferingType::CmdOfferingType_MNFEPONEDDJ
     }
 }
 
@@ -126,13 +126,13 @@ impl CmdOfferingType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdOfferingType.proto*\x80\x02\n\x0fCmdOfferingType\x12\x1b\n\x17N\
-    DIEHAMIKOL_GKJBAODJMJG\x10\0\x12\x1c\n\x17NDIEHAMIKOL_DLCGLKGKNDG\x10\
-    \x8e6\x12\x1c\n\x17NDIEHAMIKOL_DNCDNBNPOHC\x10\x946\x12\x1c\n\x17NDIEHAM\
-    IKOL_JCPDFLBEHON\x10\x926\x12\x1c\n\x17NDIEHAMIKOL_MEOEIPFLFFP\x10\x936\
-    \x12\x1c\n\x17NDIEHAMIKOL_NNHBMBIFCHA\x10\x8c6\x12\x1c\n\x17NDIEHAMIKOL_\
-    JHPAHINKPGO\x10\x9c6\x12\x1c\n\x17NDIEHAMIKOL_IFPLJIMHDMB\x10\x896b\x06p\
-    roto3\
+    \n\x15CmdOfferingType.proto*\xa0\x02\n\x0fCmdOfferingType\x12\x1f\n\x1bC\
+    mdOfferingType_MNFEPONEDDJ\x10\0\x12\x20\n\x1bCmdOfferingType_ADGONODHFB\
+    A\x10\x986\x12\x20\n\x1bCmdOfferingType_LBPAFKPAHOA\x10\x8e6\x12\x20\n\
+    \x1bCmdOfferingType_GANIHOGLOBJ\x10\x8d6\x12\x20\n\x1bCmdOfferingType_HE\
+    PFJEKMPJH\x10\x976\x12\x20\n\x1bCmdOfferingType_JDAGICFJBDK\x10\x896\x12\
+    \x20\n\x1bCmdOfferingType_INNGKAPPINB\x10\x9b6\x12\x20\n\x1bCmdOfferingT\
+    ype_NIJBGCDEHBA\x10\x946b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

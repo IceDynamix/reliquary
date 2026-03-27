@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicDoorInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicDoorInfo.GNJPOLCEGNL)
-    pub GNJPOLCEGNL: u32,
-    // @@protoc_insertion_point(field:RogueMagicDoorInfo.EJDDPKFBPGJ)
-    pub EJDDPKFBPGJ: bool,
-    // @@protoc_insertion_point(field:RogueMagicDoorInfo.KGENNOGJNEA)
-    pub KGENNOGJNEA: u32,
+    // @@protoc_insertion_point(field:RogueMagicDoorInfo.NKFNONAFCIC)
+    pub NKFNONAFCIC: u32,
+    // @@protoc_insertion_point(field:RogueMagicDoorInfo.AAGGCEOMNLF)
+    pub AAGGCEOMNLF: u32,
+    // @@protoc_insertion_point(field:RogueMagicDoorInfo.CLPKKBADIAI)
+    pub CLPKKBADIAI: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicDoorInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl RogueMagicDoorInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNJPOLCEGNL",
-            |m: &RogueMagicDoorInfo| { &m.GNJPOLCEGNL },
-            |m: &mut RogueMagicDoorInfo| { &mut m.GNJPOLCEGNL },
+            "NKFNONAFCIC",
+            |m: &RogueMagicDoorInfo| { &m.NKFNONAFCIC },
+            |m: &mut RogueMagicDoorInfo| { &mut m.NKFNONAFCIC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EJDDPKFBPGJ",
-            |m: &RogueMagicDoorInfo| { &m.EJDDPKFBPGJ },
-            |m: &mut RogueMagicDoorInfo| { &mut m.EJDDPKFBPGJ },
+            "AAGGCEOMNLF",
+            |m: &RogueMagicDoorInfo| { &m.AAGGCEOMNLF },
+            |m: &mut RogueMagicDoorInfo| { &mut m.AAGGCEOMNLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGENNOGJNEA",
-            |m: &RogueMagicDoorInfo| { &m.KGENNOGJNEA },
-            |m: &mut RogueMagicDoorInfo| { &mut m.KGENNOGJNEA },
+            "CLPKKBADIAI",
+            |m: &RogueMagicDoorInfo| { &m.CLPKKBADIAI },
+            |m: &mut RogueMagicDoorInfo| { &mut m.CLPKKBADIAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicDoorInfo>(
             "RogueMagicDoorInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueMagicDoorInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.GNJPOLCEGNL = is.read_uint32()?;
+                48 => {
+                    self.NKFNONAFCIC = is.read_uint32()?;
                 },
-                24 => {
-                    self.EJDDPKFBPGJ = is.read_bool()?;
+                40 => {
+                    self.AAGGCEOMNLF = is.read_uint32()?;
                 },
-                8 => {
-                    self.KGENNOGJNEA = is.read_uint32()?;
+                88 => {
+                    self.CLPKKBADIAI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RogueMagicDoorInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GNJPOLCEGNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GNJPOLCEGNL);
+        if self.NKFNONAFCIC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NKFNONAFCIC);
         }
-        if self.EJDDPKFBPGJ != false {
+        if self.AAGGCEOMNLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.AAGGCEOMNLF);
+        }
+        if self.CLPKKBADIAI != false {
             my_size += 1 + 1;
-        }
-        if self.KGENNOGJNEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.KGENNOGJNEA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RogueMagicDoorInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GNJPOLCEGNL != 0 {
-            os.write_uint32(13, self.GNJPOLCEGNL)?;
+        if self.NKFNONAFCIC != 0 {
+            os.write_uint32(6, self.NKFNONAFCIC)?;
         }
-        if self.EJDDPKFBPGJ != false {
-            os.write_bool(3, self.EJDDPKFBPGJ)?;
+        if self.AAGGCEOMNLF != 0 {
+            os.write_uint32(5, self.AAGGCEOMNLF)?;
         }
-        if self.KGENNOGJNEA != 0 {
-            os.write_uint32(1, self.KGENNOGJNEA)?;
+        if self.CLPKKBADIAI != false {
+            os.write_bool(11, self.CLPKKBADIAI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for RogueMagicDoorInfo {
     }
 
     fn clear(&mut self) {
-        self.GNJPOLCEGNL = 0;
-        self.EJDDPKFBPGJ = false;
-        self.KGENNOGJNEA = 0;
+        self.NKFNONAFCIC = 0;
+        self.AAGGCEOMNLF = 0;
+        self.CLPKKBADIAI = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicDoorInfo {
         static instance: RogueMagicDoorInfo = RogueMagicDoorInfo {
-            GNJPOLCEGNL: 0,
-            EJDDPKFBPGJ: false,
-            KGENNOGJNEA: 0,
+            NKFNONAFCIC: 0,
+            AAGGCEOMNLF: 0,
+            CLPKKBADIAI: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicDoorInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RogueMagicDoorInfo.proto\"z\n\x12RogueMagicDoorInfo\x12\x20\n\x0bG\
-    NJPOLCEGNL\x18\r\x20\x01(\rR\x0bGNJPOLCEGNL\x12\x20\n\x0bEJDDPKFBPGJ\x18\
-    \x03\x20\x01(\x08R\x0bEJDDPKFBPGJ\x12\x20\n\x0bKGENNOGJNEA\x18\x01\x20\
-    \x01(\rR\x0bKGENNOGJNEAb\x06proto3\
+    \n\x18RogueMagicDoorInfo.proto\"z\n\x12RogueMagicDoorInfo\x12\x20\n\x0bN\
+    KFNONAFCIC\x18\x06\x20\x01(\rR\x0bNKFNONAFCIC\x12\x20\n\x0bAAGGCEOMNLF\
+    \x18\x05\x20\x01(\rR\x0bAAGGCEOMNLF\x12\x20\n\x0bCLPKKBADIAI\x18\x0b\x20\
+    \x01(\x08R\x0bCLPKKBADIAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

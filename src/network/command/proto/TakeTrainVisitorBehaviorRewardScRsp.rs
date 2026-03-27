@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeTrainVisitorBehaviorRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeTrainVisitorBehaviorRewardScRsp.visitor_id)
-    pub visitor_id: u32,
-    // @@protoc_insertion_point(field:TakeTrainVisitorBehaviorRewardScRsp.NJNDEILBGAN)
-    pub NJNDEILBGAN: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TakeTrainVisitorBehaviorRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeTrainVisitorBehaviorRewardScRsp.CLCBHHAOABP)
+    pub CLCBHHAOABP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeTrainVisitorBehaviorRewardScRsp.visitor_id)
+    pub visitor_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeTrainVisitorBehaviorRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl TakeTrainVisitorBehaviorRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "visitor_id",
-            |m: &TakeTrainVisitorBehaviorRewardScRsp| { &m.visitor_id },
-            |m: &mut TakeTrainVisitorBehaviorRewardScRsp| { &mut m.visitor_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NJNDEILBGAN",
-            |m: &TakeTrainVisitorBehaviorRewardScRsp| { &m.NJNDEILBGAN },
-            |m: &mut TakeTrainVisitorBehaviorRewardScRsp| { &mut m.NJNDEILBGAN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeTrainVisitorBehaviorRewardScRsp| { &m.retcode },
             |m: &mut TakeTrainVisitorBehaviorRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CLCBHHAOABP",
+            |m: &TakeTrainVisitorBehaviorRewardScRsp| { &m.CLCBHHAOABP },
+            |m: &mut TakeTrainVisitorBehaviorRewardScRsp| { &mut m.CLCBHHAOABP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "visitor_id",
+            |m: &TakeTrainVisitorBehaviorRewardScRsp| { &m.visitor_id },
+            |m: &mut TakeTrainVisitorBehaviorRewardScRsp| { &mut m.visitor_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeTrainVisitorBehaviorRewardScRsp>(
             "TakeTrainVisitorBehaviorRewardScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for TakeTrainVisitorBehaviorRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.visitor_id = is.read_uint32()?;
-                },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NJNDEILBGAN)?;
-                },
-                72 => {
-                    self.NJNDEILBGAN.push(is.read_uint32()?);
-                },
-                88 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CLCBHHAOABP)?;
+                },
+                56 => {
+                    self.CLCBHHAOABP.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.visitor_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for TakeTrainVisitorBehaviorRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.visitor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.visitor_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.NJNDEILBGAN);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.CLCBHHAOABP);
+        if self.visitor_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.visitor_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for TakeTrainVisitorBehaviorRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.visitor_id != 0 {
-            os.write_uint32(13, self.visitor_id)?;
-        }
-        os.write_repeated_packed_uint32(9, &self.NJNDEILBGAN)?;
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
+        }
+        os.write_repeated_packed_uint32(7, &self.CLCBHHAOABP)?;
+        if self.visitor_id != 0 {
+            os.write_uint32(12, self.visitor_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for TakeTrainVisitorBehaviorRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.visitor_id = 0;
-        self.NJNDEILBGAN.clear();
         self.retcode = 0;
+        self.CLCBHHAOABP.clear();
+        self.visitor_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeTrainVisitorBehaviorRewardScRsp {
         static instance: TakeTrainVisitorBehaviorRewardScRsp = TakeTrainVisitorBehaviorRewardScRsp {
-            visitor_id: 0,
-            NJNDEILBGAN: ::std::vec::Vec::new(),
             retcode: 0,
+            CLCBHHAOABP: ::std::vec::Vec::new(),
+            visitor_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeTrainVisitorBehaviorRewardScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)TakeTrainVisitorBehaviorRewardScRsp.proto\"\x80\x01\n#TakeTrainVisito\
-    rBehaviorRewardScRsp\x12\x1d\n\nvisitor_id\x18\r\x20\x01(\rR\tvisitorId\
-    \x12\x20\n\x0bNJNDEILBGAN\x18\t\x20\x03(\rR\x0bNJNDEILBGAN\x12\x18\n\x07\
-    retcode\x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
+    rBehaviorRewardScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bCLCBHHAOABP\x18\x07\x20\x03(\rR\x0bCLCBHHAOABP\x12\x1d\n\n\
+    visitor_id\x18\x0c\x20\x01(\rR\tvisitorIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

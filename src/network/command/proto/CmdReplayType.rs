@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdReplayType)
 pub enum CmdReplayType {
-    // @@protoc_insertion_point(enum_value:CmdReplayType.NLEILPMBMIK_GKJBAODJMJG)
-    NLEILPMBMIK_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.NLEILPMBMIK_CFAEOEEPJMA)
-    NLEILPMBMIK_CFAEOEEPJMA = 3555,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.NLEILPMBMIK_OHMBGOJBBJJ)
-    NLEILPMBMIK_OHMBGOJBBJJ = 3528,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.NLEILPMBMIK_MJBHPIOPMFF)
-    NLEILPMBMIK_MJBHPIOPMFF = 3575,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.NLEILPMBMIK_CHFELPCNAJD)
-    NLEILPMBMIK_CHFELPCNAJD = 3557,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdReplayType_MNFEPONEDDJ)
+    CmdReplayType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdReplayType_NOGCNAJFLMI)
+    CmdReplayType_NOGCNAJFLMI = 3583,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdReplayType_CDPHLMAIJKL)
+    CmdReplayType_CDPHLMAIJKL = 3524,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdReplayType_FKPCLKECNCI)
+    CmdReplayType_FKPCLKECNCI = 3581,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdReplayType_EGNEMEOOHPN)
+    CmdReplayType_EGNEMEOOHPN = 3504,
 }
 
 impl ::protobuf::Enum for CmdReplayType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for CmdReplayType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdReplayType> {
         match value {
-            0 => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_GKJBAODJMJG),
-            3555 => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_CFAEOEEPJMA),
-            3528 => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_OHMBGOJBBJJ),
-            3575 => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_MJBHPIOPMFF),
-            3557 => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_CHFELPCNAJD),
+            0 => ::std::option::Option::Some(CmdReplayType::CmdReplayType_MNFEPONEDDJ),
+            3583 => ::std::option::Option::Some(CmdReplayType::CmdReplayType_NOGCNAJFLMI),
+            3524 => ::std::option::Option::Some(CmdReplayType::CmdReplayType_CDPHLMAIJKL),
+            3581 => ::std::option::Option::Some(CmdReplayType::CmdReplayType_FKPCLKECNCI),
+            3504 => ::std::option::Option::Some(CmdReplayType::CmdReplayType_EGNEMEOOHPN),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdReplayType> {
         match str {
-            "NLEILPMBMIK_GKJBAODJMJG" => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_GKJBAODJMJG),
-            "NLEILPMBMIK_CFAEOEEPJMA" => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_CFAEOEEPJMA),
-            "NLEILPMBMIK_OHMBGOJBBJJ" => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_OHMBGOJBBJJ),
-            "NLEILPMBMIK_MJBHPIOPMFF" => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_MJBHPIOPMFF),
-            "NLEILPMBMIK_CHFELPCNAJD" => ::std::option::Option::Some(CmdReplayType::NLEILPMBMIK_CHFELPCNAJD),
+            "CmdReplayType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdReplayType::CmdReplayType_MNFEPONEDDJ),
+            "CmdReplayType_NOGCNAJFLMI" => ::std::option::Option::Some(CmdReplayType::CmdReplayType_NOGCNAJFLMI),
+            "CmdReplayType_CDPHLMAIJKL" => ::std::option::Option::Some(CmdReplayType::CmdReplayType_CDPHLMAIJKL),
+            "CmdReplayType_FKPCLKECNCI" => ::std::option::Option::Some(CmdReplayType::CmdReplayType_FKPCLKECNCI),
+            "CmdReplayType_EGNEMEOOHPN" => ::std::option::Option::Some(CmdReplayType::CmdReplayType_EGNEMEOOHPN),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdReplayType] = &[
-        CmdReplayType::NLEILPMBMIK_GKJBAODJMJG,
-        CmdReplayType::NLEILPMBMIK_CFAEOEEPJMA,
-        CmdReplayType::NLEILPMBMIK_OHMBGOJBBJJ,
-        CmdReplayType::NLEILPMBMIK_MJBHPIOPMFF,
-        CmdReplayType::NLEILPMBMIK_CHFELPCNAJD,
+        CmdReplayType::CmdReplayType_MNFEPONEDDJ,
+        CmdReplayType::CmdReplayType_NOGCNAJFLMI,
+        CmdReplayType::CmdReplayType_CDPHLMAIJKL,
+        CmdReplayType::CmdReplayType_FKPCLKECNCI,
+        CmdReplayType::CmdReplayType_EGNEMEOOHPN,
     ];
 }
 
@@ -85,11 +85,11 @@ impl ::protobuf::EnumFull for CmdReplayType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdReplayType::NLEILPMBMIK_GKJBAODJMJG => 0,
-            CmdReplayType::NLEILPMBMIK_CFAEOEEPJMA => 1,
-            CmdReplayType::NLEILPMBMIK_OHMBGOJBBJJ => 2,
-            CmdReplayType::NLEILPMBMIK_MJBHPIOPMFF => 3,
-            CmdReplayType::NLEILPMBMIK_CHFELPCNAJD => 4,
+            CmdReplayType::CmdReplayType_MNFEPONEDDJ => 0,
+            CmdReplayType::CmdReplayType_NOGCNAJFLMI => 1,
+            CmdReplayType::CmdReplayType_CDPHLMAIJKL => 2,
+            CmdReplayType::CmdReplayType_FKPCLKECNCI => 3,
+            CmdReplayType::CmdReplayType_EGNEMEOOHPN => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,7 +97,7 @@ impl ::protobuf::EnumFull for CmdReplayType {
 
 impl ::std::default::Default for CmdReplayType {
     fn default() -> Self {
-        CmdReplayType::NLEILPMBMIK_GKJBAODJMJG
+        CmdReplayType::CmdReplayType_MNFEPONEDDJ
     }
 }
 
@@ -108,11 +108,11 @@ impl CmdReplayType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdReplayType.proto*\xa4\x01\n\rCmdReplayType\x12\x1b\n\x17NLEILPM\
-    BMIK_GKJBAODJMJG\x10\0\x12\x1c\n\x17NLEILPMBMIK_CFAEOEEPJMA\x10\xe3\x1b\
-    \x12\x1c\n\x17NLEILPMBMIK_OHMBGOJBBJJ\x10\xc8\x1b\x12\x1c\n\x17NLEILPMBM\
-    IK_MJBHPIOPMFF\x10\xf7\x1b\x12\x1c\n\x17NLEILPMBMIK_CHFELPCNAJD\x10\xe5\
-    \x1bb\x06proto3\
+    \n\x13CmdReplayType.proto*\xae\x01\n\rCmdReplayType\x12\x1d\n\x19CmdRepl\
+    ayType_MNFEPONEDDJ\x10\0\x12\x1e\n\x19CmdReplayType_NOGCNAJFLMI\x10\xff\
+    \x1b\x12\x1e\n\x19CmdReplayType_CDPHLMAIJKL\x10\xc4\x1b\x12\x1e\n\x19Cmd\
+    ReplayType_FKPCLKECNCI\x10\xfd\x1b\x12\x1e\n\x19CmdReplayType_EGNEMEOOHP\
+    N\x10\xb0\x1bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

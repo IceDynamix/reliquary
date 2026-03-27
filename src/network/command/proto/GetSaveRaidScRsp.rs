@@ -30,12 +30,12 @@ pub struct GetSaveRaidScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetSaveRaidScRsp.raid_target_info)
     pub raid_target_info: ::std::vec::Vec<super::RaidTargetInfo::RaidTargetInfo>,
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.world_level)
-    pub world_level: u32,
-    // @@protoc_insertion_point(field:GetSaveRaidScRsp.raid_id)
-    pub raid_id: u32,
     // @@protoc_insertion_point(field:GetSaveRaidScRsp.is_save)
     pub is_save: bool,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.raid_id)
+    pub raid_id: u32,
+    // @@protoc_insertion_point(field:GetSaveRaidScRsp.world_level)
+    pub world_level: u32,
     // @@protoc_insertion_point(field:GetSaveRaidScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -63,9 +63,9 @@ impl GetSaveRaidScRsp {
             |m: &mut GetSaveRaidScRsp| { &mut m.raid_target_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &GetSaveRaidScRsp| { &m.world_level },
-            |m: &mut GetSaveRaidScRsp| { &mut m.world_level },
+            "is_save",
+            |m: &GetSaveRaidScRsp| { &m.is_save },
+            |m: &mut GetSaveRaidScRsp| { &mut m.is_save },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "raid_id",
@@ -73,9 +73,9 @@ impl GetSaveRaidScRsp {
             |m: &mut GetSaveRaidScRsp| { &mut m.raid_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_save",
-            |m: &GetSaveRaidScRsp| { &m.is_save },
-            |m: &mut GetSaveRaidScRsp| { &mut m.is_save },
+            "world_level",
+            |m: &GetSaveRaidScRsp| { &m.world_level },
+            |m: &mut GetSaveRaidScRsp| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                18 => {
                     self.raid_target_info.push(is.read_message()?);
                 },
-                24 => {
-                    self.world_level = is.read_uint32()?;
-                },
-                40 => {
-                    self.raid_id = is.read_uint32()?;
-                },
-                72 => {
+                80 => {
                     self.is_save = is.read_bool()?;
                 },
-                104 => {
+                32 => {
+                    self.raid_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.world_level = is.read_uint32()?;
+                },
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -131,17 +131,17 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.world_level);
-        }
-        if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.raid_id);
-        }
         if self.is_save != false {
             my_size += 1 + 1;
         }
+        if self.raid_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.raid_id);
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.world_level);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -150,19 +150,19 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.raid_target_info {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.world_level != 0 {
-            os.write_uint32(3, self.world_level)?;
+        if self.is_save != false {
+            os.write_bool(10, self.is_save)?;
         }
         if self.raid_id != 0 {
-            os.write_uint32(5, self.raid_id)?;
+            os.write_uint32(4, self.raid_id)?;
         }
-        if self.is_save != false {
-            os.write_bool(9, self.is_save)?;
+        if self.world_level != 0 {
+            os.write_uint32(14, self.world_level)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -182,9 +182,9 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
 
     fn clear(&mut self) {
         self.raid_target_info.clear();
-        self.world_level = 0;
-        self.raid_id = 0;
         self.is_save = false;
+        self.raid_id = 0;
+        self.world_level = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -192,9 +192,9 @@ impl ::protobuf::Message for GetSaveRaidScRsp {
     fn default_instance() -> &'static GetSaveRaidScRsp {
         static instance: GetSaveRaidScRsp = GetSaveRaidScRsp {
             raid_target_info: ::std::vec::Vec::new(),
-            world_level: 0,
-            raid_id: 0,
             is_save: false,
+            raid_id: 0,
+            world_level: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSaveRaidScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16GetSaveRaidScRsp.proto\x1a\x14RaidTargetInfo.proto\"\xba\x01\n\x10\
-    GetSaveRaidScRsp\x129\n\x10raid_target_info\x18\x06\x20\x03(\x0b2\x0f.Ra\
-    idTargetInfoR\x0eraidTargetInfo\x12\x1f\n\x0bworld_level\x18\x03\x20\x01\
-    (\rR\nworldLevel\x12\x17\n\x07raid_id\x18\x05\x20\x01(\rR\x06raidId\x12\
-    \x17\n\x07is_save\x18\t\x20\x01(\x08R\x06isSave\x12\x18\n\x07retcode\x18\
-    \r\x20\x01(\rR\x07retcodeb\x06proto3\
+    GetSaveRaidScRsp\x129\n\x10raid_target_info\x18\x02\x20\x03(\x0b2\x0f.Ra\
+    idTargetInfoR\x0eraidTargetInfo\x12\x17\n\x07is_save\x18\n\x20\x01(\x08R\
+    \x06isSave\x12\x17\n\x07raid_id\x18\x04\x20\x01(\rR\x06raidId\x12\x1f\n\
+    \x0bworld_level\x18\x0e\x20\x01(\rR\nworldLevel\x12\x18\n\x07retcode\x18\
+    \x01\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

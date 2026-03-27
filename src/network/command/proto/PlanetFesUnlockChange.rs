@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesUnlockChange {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesUnlockChange.IIEBGIMJHOL)
-    pub IIEBGIMJHOL: ::protobuf::MessageField<super::GNOHIKDKHGE::GNOHIKDKHGE>,
+    // @@protoc_insertion_point(field:PlanetFesUnlockChange.HPGPHGIHFGN)
+    pub HPGPHGIHFGN: ::protobuf::MessageField<super::KGOIEGFBBAO::KGOIEGFBBAO>,
     // @@protoc_insertion_point(field:PlanetFesUnlockChange.has_passed)
     pub has_passed: bool,
     // special fields
@@ -51,10 +51,10 @@ impl PlanetFesUnlockChange {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GNOHIKDKHGE::GNOHIKDKHGE>(
-            "IIEBGIMJHOL",
-            |m: &PlanetFesUnlockChange| { &m.IIEBGIMJHOL },
-            |m: &mut PlanetFesUnlockChange| { &mut m.IIEBGIMJHOL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KGOIEGFBBAO::KGOIEGFBBAO>(
+            "HPGPHGIHFGN",
+            |m: &PlanetFesUnlockChange| { &m.HPGPHGIHFGN },
+            |m: &mut PlanetFesUnlockChange| { &mut m.HPGPHGIHFGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "has_passed",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesUnlockChange {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIEBGIMJHOL)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HPGPHGIHFGN)?;
                 },
-                112 => {
+                24 => {
                     self.has_passed = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for PlanetFesUnlockChange {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IIEBGIMJHOL.as_ref() {
+        if let Some(v) = self.HPGPHGIHFGN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -110,11 +110,11 @@ impl ::protobuf::Message for PlanetFesUnlockChange {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IIEBGIMJHOL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.HPGPHGIHFGN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.has_passed != false {
-            os.write_bool(14, self.has_passed)?;
+            os.write_bool(3, self.has_passed)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for PlanetFesUnlockChange {
     }
 
     fn clear(&mut self) {
-        self.IIEBGIMJHOL.clear();
+        self.HPGPHGIHFGN.clear();
         self.has_passed = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesUnlockChange {
         static instance: PlanetFesUnlockChange = PlanetFesUnlockChange {
-            IIEBGIMJHOL: ::protobuf::MessageField::none(),
+            HPGPHGIHFGN: ::protobuf::MessageField::none(),
             has_passed: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesUnlockChange {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bPlanetFesUnlockChange.proto\x1a\x11GNOHIKDKHGE.proto\"f\n\x15Plane\
-    tFesUnlockChange\x12.\n\x0bIIEBGIMJHOL\x18\r\x20\x01(\x0b2\x0c.GNOHIKDKH\
-    GER\x0bIIEBGIMJHOL\x12\x1d\n\nhas_passed\x18\x0e\x20\x01(\x08R\thasPasse\
-    db\x06proto3\
+    \n\x1bPlanetFesUnlockChange.proto\x1a\x11KGOIEGFBBAO.proto\"f\n\x15Plane\
+    tFesUnlockChange\x12.\n\x0bHPGPHGIHFGN\x18\x0f\x20\x01(\x0b2\x0c.KGOIEGF\
+    BBAOR\x0bHPGPHGIHFGN\x12\x1d\n\nhas_passed\x18\x03\x20\x01(\x08R\thasPas\
+    sedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GNOHIKDKHGE::file_descriptor().clone());
+            deps.push(super::KGOIEGFBBAO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesUnlockChange::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

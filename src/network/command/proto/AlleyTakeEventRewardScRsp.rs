@@ -82,7 +82,7 @@ impl ::protobuf::Message for AlleyTakeEventRewardScRsp {
                 58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                120 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for AlleyTakeEventRewardScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for AlleyTakeEventRewardScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -168,7 +168,7 @@ impl ::protobuf::reflect::ProtobufValue for AlleyTakeEventRewardScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fAlleyTakeEventRewardScRsp.proto\x1a\x0eItemList.proto\"X\n\x19Alle\
     yTakeEventRewardScRsp\x12!\n\x06reward\x18\x07\x20\x01(\x0b2\t.ItemListR\
-    \x06reward\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\x06proto\
+    \x06reward\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto\
     3\
 ";
 

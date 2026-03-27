@@ -31,7 +31,7 @@ pub struct GridFightSelectRecommendEquipCsReq {
     // @@protoc_insertion_point(field:GridFightSelectRecommendEquipCsReq.queue_position)
     pub queue_position: u32,
     // message oneof groups
-    pub KGOPABIMHHC: ::std::option::Option<grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC>,
+    pub NCEJGDKIBHM: ::std::option::Option<grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightSelectRecommendEquipCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,39 +48,39 @@ impl GridFightSelectRecommendEquipCsReq {
         ::std::default::Default::default()
     }
 
-    // .GridFightPortalBuffActionResult portal_buff_action = 247;
+    // .GridFightPortalBuffActionResult portal_buff_action = 1459;
 
     pub fn portal_buff_action(&self) -> &super::GridFightPortalBuffActionResult::GridFightPortalBuffActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffAction(ref v)) => v,
             _ => <super::GridFightPortalBuffActionResult::GridFightPortalBuffActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_portal_buff_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_portal_buff_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_portal_buff_action(&mut self, v: super::GridFightPortalBuffActionResult::GridFightPortalBuffActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_portal_buff_action(&mut self) -> &mut super::GridFightPortalBuffActionResult::GridFightPortalBuffActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffAction(super::GridFightPortalBuffActionResult::GridFightPortalBuffActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffAction(super::GridFightPortalBuffActionResult::GridFightPortalBuffActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -88,8 +88,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_portal_buff_action(&mut self) -> super::GridFightPortalBuffActionResult::GridFightPortalBuffActionResult {
         if self.has_portal_buff_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -97,39 +97,39 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .GridFightPortalBuffRerollActionResult portal_buff_reroll_action = 1975;
+    // .GridFightPortalBuffRerollActionResult portal_buff_reroll_action = 1493;
 
     pub fn portal_buff_reroll_action(&self) -> &super::GridFightPortalBuffRerollActionResult::GridFightPortalBuffRerollActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffRerollAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffRerollAction(ref v)) => v,
             _ => <super::GridFightPortalBuffRerollActionResult::GridFightPortalBuffRerollActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_portal_buff_reroll_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_portal_buff_reroll_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffRerollAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffRerollAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_portal_buff_reroll_action(&mut self, v: super::GridFightPortalBuffRerollActionResult::GridFightPortalBuffRerollActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffRerollAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffRerollAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_portal_buff_reroll_action(&mut self) -> &mut super::GridFightPortalBuffRerollActionResult::GridFightPortalBuffRerollActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffRerollAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffRerollAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffRerollAction(super::GridFightPortalBuffRerollActionResult::GridFightPortalBuffRerollActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffRerollAction(super::GridFightPortalBuffRerollActionResult::GridFightPortalBuffRerollActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffRerollAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffRerollAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -137,8 +137,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_portal_buff_reroll_action(&mut self) -> super::GridFightPortalBuffRerollActionResult::GridFightPortalBuffRerollActionResult {
         if self.has_portal_buff_reroll_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffRerollAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffRerollAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -146,39 +146,39 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .GridFightAugmentActionResult augment_action = 857;
+    // .GridFightAugmentActionResult augment_action = 922;
 
     pub fn augment_action(&self) -> &super::GridFightAugmentActionResult::GridFightAugmentActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AugmentAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::AugmentAction(ref v)) => v,
             _ => <super::GridFightAugmentActionResult::GridFightAugmentActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_augment_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_augment_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AugmentAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::AugmentAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_augment_action(&mut self, v: super::GridFightAugmentActionResult::GridFightAugmentActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AugmentAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::AugmentAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_augment_action(&mut self) -> &mut super::GridFightAugmentActionResult::GridFightAugmentActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AugmentAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::AugmentAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AugmentAction(super::GridFightAugmentActionResult::GridFightAugmentActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::AugmentAction(super::GridFightAugmentActionResult::GridFightAugmentActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AugmentAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::AugmentAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -186,8 +186,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_augment_action(&mut self) -> super::GridFightAugmentActionResult::GridFightAugmentActionResult {
         if self.has_augment_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AugmentAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::AugmentAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -195,39 +195,39 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .GridFightAugmentRerollActionResult reroll_augment_action = 1742;
+    // .GridFightAugmentRerollActionResult reroll_augment_action = 814;
 
     pub fn reroll_augment_action(&self) -> &super::GridFightAugmentRerollActionResult::GridFightAugmentRerollActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollAugmentAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollAugmentAction(ref v)) => v,
             _ => <super::GridFightAugmentRerollActionResult::GridFightAugmentRerollActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_reroll_augment_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_reroll_augment_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollAugmentAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollAugmentAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_reroll_augment_action(&mut self, v: super::GridFightAugmentRerollActionResult::GridFightAugmentRerollActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollAugmentAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollAugmentAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_reroll_augment_action(&mut self) -> &mut super::GridFightAugmentRerollActionResult::GridFightAugmentRerollActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollAugmentAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollAugmentAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollAugmentAction(super::GridFightAugmentRerollActionResult::GridFightAugmentRerollActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollAugmentAction(super::GridFightAugmentRerollActionResult::GridFightAugmentRerollActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollAugmentAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollAugmentAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -235,8 +235,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_reroll_augment_action(&mut self) -> super::GridFightAugmentRerollActionResult::GridFightAugmentRerollActionResult {
         if self.has_reroll_augment_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollAugmentAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollAugmentAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -244,39 +244,39 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .GridFightTraitActionResult trait_action = 1394;
+    // .GridFightTraitActionResult trait_action = 281;
 
     pub fn trait_action(&self) -> &super::GridFightTraitActionResult::GridFightTraitActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::TraitAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::TraitAction(ref v)) => v,
             _ => <super::GridFightTraitActionResult::GridFightTraitActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_trait_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_trait_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::TraitAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::TraitAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_trait_action(&mut self, v: super::GridFightTraitActionResult::GridFightTraitActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::TraitAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::TraitAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_trait_action(&mut self) -> &mut super::GridFightTraitActionResult::GridFightTraitActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::TraitAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::TraitAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::TraitAction(super::GridFightTraitActionResult::GridFightTraitActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::TraitAction(super::GridFightTraitActionResult::GridFightTraitActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::TraitAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::TraitAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -284,8 +284,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_trait_action(&mut self) -> super::GridFightTraitActionResult::GridFightTraitActionResult {
         if self.has_trait_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::TraitAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::TraitAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -293,39 +293,39 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .GridFightEliteBranchActionResult elite_branch_action = 604;
+    // .GridFightEliteBranchActionResult elite_branch_action = 535;
 
     pub fn elite_branch_action(&self) -> &super::GridFightEliteBranchActionResult::GridFightEliteBranchActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::EliteBranchAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::EliteBranchAction(ref v)) => v,
             _ => <super::GridFightEliteBranchActionResult::GridFightEliteBranchActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_elite_branch_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_elite_branch_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::EliteBranchAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::EliteBranchAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_elite_branch_action(&mut self, v: super::GridFightEliteBranchActionResult::GridFightEliteBranchActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::EliteBranchAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::EliteBranchAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_elite_branch_action(&mut self) -> &mut super::GridFightEliteBranchActionResult::GridFightEliteBranchActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::EliteBranchAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::EliteBranchAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::EliteBranchAction(super::GridFightEliteBranchActionResult::GridFightEliteBranchActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::EliteBranchAction(super::GridFightEliteBranchActionResult::GridFightEliteBranchActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::EliteBranchAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::EliteBranchAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -333,8 +333,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_elite_branch_action(&mut self) -> super::GridFightEliteBranchActionResult::GridFightEliteBranchActionResult {
         if self.has_elite_branch_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::EliteBranchAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::EliteBranchAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -342,137 +342,137 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .APELIKIDONO NHEJKLDIAGA = 2023;
+    // .NGAHBOPDAKK LICHOEPBMPO = 1479;
 
-    pub fn NHEJKLDIAGA(&self) -> &super::APELIKIDONO::APELIKIDONO {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::NHEJKLDIAGA(ref v)) => v,
-            _ => <super::APELIKIDONO::APELIKIDONO as ::protobuf::Message>::default_instance(),
+    pub fn LICHOEPBMPO(&self) -> &super::NGAHBOPDAKK::NGAHBOPDAKK {
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::LICHOEPBMPO(ref v)) => v,
+            _ => <super::NGAHBOPDAKK::NGAHBOPDAKK as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_NHEJKLDIAGA(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+    pub fn clear_LICHOEPBMPO(&mut self) {
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
-    pub fn has_NHEJKLDIAGA(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::NHEJKLDIAGA(..)) => true,
+    pub fn has_LICHOEPBMPO(&self) -> bool {
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::LICHOEPBMPO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_NHEJKLDIAGA(&mut self, v: super::APELIKIDONO::APELIKIDONO) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::NHEJKLDIAGA(v))
+    pub fn set_LICHOEPBMPO(&mut self, v: super::NGAHBOPDAKK::NGAHBOPDAKK) {
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::LICHOEPBMPO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_NHEJKLDIAGA(&mut self) -> &mut super::APELIKIDONO::APELIKIDONO {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::NHEJKLDIAGA(_)) = self.KGOPABIMHHC {
+    pub fn mut_LICHOEPBMPO(&mut self) -> &mut super::NGAHBOPDAKK::NGAHBOPDAKK {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::LICHOEPBMPO(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::NHEJKLDIAGA(super::APELIKIDONO::APELIKIDONO::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::LICHOEPBMPO(super::NGAHBOPDAKK::NGAHBOPDAKK::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::NHEJKLDIAGA(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::LICHOEPBMPO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_NHEJKLDIAGA(&mut self) -> super::APELIKIDONO::APELIKIDONO {
-        if self.has_NHEJKLDIAGA() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::NHEJKLDIAGA(v)) => v,
+    pub fn take_LICHOEPBMPO(&mut self) -> super::NGAHBOPDAKK::NGAHBOPDAKK {
+        if self.has_LICHOEPBMPO() {
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::LICHOEPBMPO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::APELIKIDONO::APELIKIDONO::new()
+            super::NGAHBOPDAKK::NGAHBOPDAKK::new()
         }
     }
 
-    // .DHMDKNIKJBM INHIAPDNMJA = 709;
+    // .IPMBGBFPHJP BJBMKDOPFLA = 37;
 
-    pub fn INHIAPDNMJA(&self) -> &super::DHMDKNIKJBM::DHMDKNIKJBM {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::INHIAPDNMJA(ref v)) => v,
-            _ => <super::DHMDKNIKJBM::DHMDKNIKJBM as ::protobuf::Message>::default_instance(),
+    pub fn BJBMKDOPFLA(&self) -> &super::IPMBGBFPHJP::IPMBGBFPHJP {
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::BJBMKDOPFLA(ref v)) => v,
+            _ => <super::IPMBGBFPHJP::IPMBGBFPHJP as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_INHIAPDNMJA(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+    pub fn clear_BJBMKDOPFLA(&mut self) {
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
-    pub fn has_INHIAPDNMJA(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::INHIAPDNMJA(..)) => true,
+    pub fn has_BJBMKDOPFLA(&self) -> bool {
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::BJBMKDOPFLA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_INHIAPDNMJA(&mut self, v: super::DHMDKNIKJBM::DHMDKNIKJBM) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::INHIAPDNMJA(v))
+    pub fn set_BJBMKDOPFLA(&mut self, v: super::IPMBGBFPHJP::IPMBGBFPHJP) {
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::BJBMKDOPFLA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_INHIAPDNMJA(&mut self) -> &mut super::DHMDKNIKJBM::DHMDKNIKJBM {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::INHIAPDNMJA(_)) = self.KGOPABIMHHC {
+    pub fn mut_BJBMKDOPFLA(&mut self) -> &mut super::IPMBGBFPHJP::IPMBGBFPHJP {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::BJBMKDOPFLA(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::INHIAPDNMJA(super::DHMDKNIKJBM::DHMDKNIKJBM::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::BJBMKDOPFLA(super::IPMBGBFPHJP::IPMBGBFPHJP::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::INHIAPDNMJA(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::BJBMKDOPFLA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_INHIAPDNMJA(&mut self) -> super::DHMDKNIKJBM::DHMDKNIKJBM {
-        if self.has_INHIAPDNMJA() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::INHIAPDNMJA(v)) => v,
+    pub fn take_BJBMKDOPFLA(&mut self) -> super::IPMBGBFPHJP::IPMBGBFPHJP {
+        if self.has_BJBMKDOPFLA() {
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::BJBMKDOPFLA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::DHMDKNIKJBM::DHMDKNIKJBM::new()
+            super::IPMBGBFPHJP::IPMBGBFPHJP::new()
         }
     }
 
-    // .GridFightRoundBeginActionResult round_begin_action = 1880;
+    // .GridFightRoundBeginActionResult round_begin_action = 1813;
 
     pub fn round_begin_action(&self) -> &super::GridFightRoundBeginActionResult::GridFightRoundBeginActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RoundBeginAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RoundBeginAction(ref v)) => v,
             _ => <super::GridFightRoundBeginActionResult::GridFightRoundBeginActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_round_begin_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_round_begin_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RoundBeginAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RoundBeginAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_round_begin_action(&mut self, v: super::GridFightRoundBeginActionResult::GridFightRoundBeginActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RoundBeginAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RoundBeginAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_round_begin_action(&mut self) -> &mut super::GridFightRoundBeginActionResult::GridFightRoundBeginActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RoundBeginAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RoundBeginAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RoundBeginAction(super::GridFightRoundBeginActionResult::GridFightRoundBeginActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RoundBeginAction(super::GridFightRoundBeginActionResult::GridFightRoundBeginActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RoundBeginAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RoundBeginAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -480,8 +480,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_round_begin_action(&mut self) -> super::GridFightRoundBeginActionResult::GridFightRoundBeginActionResult {
         if self.has_round_begin_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RoundBeginAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RoundBeginAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -489,39 +489,39 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .GridFightReturnPreparationActionResult return_preparation_action = 1844;
+    // .GridFightReturnPreparationActionResult return_preparation_action = 1353;
 
     pub fn return_preparation_action(&self) -> &super::GridFightReturnPreparationActionResult::GridFightReturnPreparationActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ReturnPreparationAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ReturnPreparationAction(ref v)) => v,
             _ => <super::GridFightReturnPreparationActionResult::GridFightReturnPreparationActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_return_preparation_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_return_preparation_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ReturnPreparationAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ReturnPreparationAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_return_preparation_action(&mut self, v: super::GridFightReturnPreparationActionResult::GridFightReturnPreparationActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ReturnPreparationAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ReturnPreparationAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_return_preparation_action(&mut self) -> &mut super::GridFightReturnPreparationActionResult::GridFightReturnPreparationActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ReturnPreparationAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ReturnPreparationAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ReturnPreparationAction(super::GridFightReturnPreparationActionResult::GridFightReturnPreparationActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ReturnPreparationAction(super::GridFightReturnPreparationActionResult::GridFightReturnPreparationActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ReturnPreparationAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ReturnPreparationAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -529,8 +529,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_return_preparation_action(&mut self) -> super::GridFightReturnPreparationActionResult::GridFightReturnPreparationActionResult {
         if self.has_return_preparation_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ReturnPreparationAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ReturnPreparationAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -538,39 +538,39 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .GridFightSupplyActionResult supply_action = 773;
+    // .GridFightSupplyActionResult supply_action = 812;
 
     pub fn supply_action(&self) -> &super::GridFightSupplyActionResult::GridFightSupplyActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::SupplyAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::SupplyAction(ref v)) => v,
             _ => <super::GridFightSupplyActionResult::GridFightSupplyActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_supply_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_supply_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::SupplyAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::SupplyAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_supply_action(&mut self, v: super::GridFightSupplyActionResult::GridFightSupplyActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::SupplyAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::SupplyAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_supply_action(&mut self) -> &mut super::GridFightSupplyActionResult::GridFightSupplyActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::SupplyAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::SupplyAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::SupplyAction(super::GridFightSupplyActionResult::GridFightSupplyActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::SupplyAction(super::GridFightSupplyActionResult::GridFightSupplyActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::SupplyAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::SupplyAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -578,8 +578,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_supply_action(&mut self) -> super::GridFightSupplyActionResult::GridFightSupplyActionResult {
         if self.has_supply_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::SupplyAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::SupplyAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -587,39 +587,39 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .GridFightSupplyRerollActionResult reroll_supply_action = 688;
+    // .GridFightSupplyRerollActionResult reroll_supply_action = 547;
 
     pub fn reroll_supply_action(&self) -> &super::GridFightSupplyRerollActionResult::GridFightSupplyRerollActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollSupplyAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollSupplyAction(ref v)) => v,
             _ => <super::GridFightSupplyRerollActionResult::GridFightSupplyRerollActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_reroll_supply_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_reroll_supply_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollSupplyAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollSupplyAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_reroll_supply_action(&mut self, v: super::GridFightSupplyRerollActionResult::GridFightSupplyRerollActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollSupplyAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollSupplyAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_reroll_supply_action(&mut self) -> &mut super::GridFightSupplyRerollActionResult::GridFightSupplyRerollActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollSupplyAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollSupplyAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollSupplyAction(super::GridFightSupplyRerollActionResult::GridFightSupplyRerollActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollSupplyAction(super::GridFightSupplyRerollActionResult::GridFightSupplyRerollActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollSupplyAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollSupplyAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -627,8 +627,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_reroll_supply_action(&mut self) -> super::GridFightSupplyRerollActionResult::GridFightSupplyRerollActionResult {
         if self.has_reroll_supply_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollSupplyAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollSupplyAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -636,39 +636,39 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .GridFightUpgradeEquipActionResult upgrade_equip_action = 670;
+    // .GridFightUpgradeEquipActionResult upgrade_equip_action = 268;
 
     pub fn upgrade_equip_action(&self) -> &super::GridFightUpgradeEquipActionResult::GridFightUpgradeEquipActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::UpgradeEquipAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::UpgradeEquipAction(ref v)) => v,
             _ => <super::GridFightUpgradeEquipActionResult::GridFightUpgradeEquipActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_upgrade_equip_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_upgrade_equip_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::UpgradeEquipAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::UpgradeEquipAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_upgrade_equip_action(&mut self, v: super::GridFightUpgradeEquipActionResult::GridFightUpgradeEquipActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::UpgradeEquipAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::UpgradeEquipAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_upgrade_equip_action(&mut self) -> &mut super::GridFightUpgradeEquipActionResult::GridFightUpgradeEquipActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::UpgradeEquipAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::UpgradeEquipAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::UpgradeEquipAction(super::GridFightUpgradeEquipActionResult::GridFightUpgradeEquipActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::UpgradeEquipAction(super::GridFightUpgradeEquipActionResult::GridFightUpgradeEquipActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::UpgradeEquipAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::UpgradeEquipAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -676,8 +676,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_upgrade_equip_action(&mut self) -> super::GridFightUpgradeEquipActionResult::GridFightUpgradeEquipActionResult {
         if self.has_upgrade_equip_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::UpgradeEquipAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::UpgradeEquipAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -685,88 +685,88 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .BIEMOADDGFI AHHDNBHMPKH = 1128;
+    // .AFHHLEABJNC HOAPJDLLBFC = 1867;
 
-    pub fn AHHDNBHMPKH(&self) -> &super::BIEMOADDGFI::BIEMOADDGFI {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AHHDNBHMPKH(ref v)) => v,
-            _ => <super::BIEMOADDGFI::BIEMOADDGFI as ::protobuf::Message>::default_instance(),
+    pub fn HOAPJDLLBFC(&self) -> &super::AFHHLEABJNC::AFHHLEABJNC {
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::HOAPJDLLBFC(ref v)) => v,
+            _ => <super::AFHHLEABJNC::AFHHLEABJNC as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_AHHDNBHMPKH(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+    pub fn clear_HOAPJDLLBFC(&mut self) {
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
-    pub fn has_AHHDNBHMPKH(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AHHDNBHMPKH(..)) => true,
+    pub fn has_HOAPJDLLBFC(&self) -> bool {
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::HOAPJDLLBFC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_AHHDNBHMPKH(&mut self, v: super::BIEMOADDGFI::BIEMOADDGFI) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AHHDNBHMPKH(v))
+    pub fn set_HOAPJDLLBFC(&mut self, v: super::AFHHLEABJNC::AFHHLEABJNC) {
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::HOAPJDLLBFC(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_AHHDNBHMPKH(&mut self) -> &mut super::BIEMOADDGFI::BIEMOADDGFI {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AHHDNBHMPKH(_)) = self.KGOPABIMHHC {
+    pub fn mut_HOAPJDLLBFC(&mut self) -> &mut super::AFHHLEABJNC::AFHHLEABJNC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::HOAPJDLLBFC(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AHHDNBHMPKH(super::BIEMOADDGFI::BIEMOADDGFI::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::HOAPJDLLBFC(super::AFHHLEABJNC::AFHHLEABJNC::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AHHDNBHMPKH(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::HOAPJDLLBFC(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_AHHDNBHMPKH(&mut self) -> super::BIEMOADDGFI::BIEMOADDGFI {
-        if self.has_AHHDNBHMPKH() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AHHDNBHMPKH(v)) => v,
+    pub fn take_HOAPJDLLBFC(&mut self) -> super::AFHHLEABJNC::AFHHLEABJNC {
+        if self.has_HOAPJDLLBFC() {
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::HOAPJDLLBFC(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::BIEMOADDGFI::BIEMOADDGFI::new()
+            super::AFHHLEABJNC::AFHHLEABJNC::new()
         }
     }
 
-    // .GridFightRecommendEquipmentActionResult recommend_equipment_action = 323;
+    // .GridFightRecommendEquipmentActionResult recommend_equipment_action = 1237;
 
     pub fn recommend_equipment_action(&self) -> &super::GridFightRecommendEquipmentActionResult::GridFightRecommendEquipmentActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RecommendEquipmentAction(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RecommendEquipmentAction(ref v)) => v,
             _ => <super::GridFightRecommendEquipmentActionResult::GridFightRecommendEquipmentActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_recommend_equipment_action(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_recommend_equipment_action(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RecommendEquipmentAction(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RecommendEquipmentAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_recommend_equipment_action(&mut self, v: super::GridFightRecommendEquipmentActionResult::GridFightRecommendEquipmentActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RecommendEquipmentAction(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RecommendEquipmentAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_recommend_equipment_action(&mut self) -> &mut super::GridFightRecommendEquipmentActionResult::GridFightRecommendEquipmentActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RecommendEquipmentAction(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RecommendEquipmentAction(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RecommendEquipmentAction(super::GridFightRecommendEquipmentActionResult::GridFightRecommendEquipmentActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RecommendEquipmentAction(super::GridFightRecommendEquipmentActionResult::GridFightRecommendEquipmentActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RecommendEquipmentAction(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RecommendEquipmentAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -774,8 +774,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_recommend_equipment_action(&mut self) -> super::GridFightRecommendEquipmentActionResult::GridFightRecommendEquipmentActionResult {
         if self.has_recommend_equipment_action() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RecommendEquipmentAction(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RecommendEquipmentAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -783,39 +783,39 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .GridFightForgeRoleActionResult forge_role_action_info = 196;
+    // .GridFightForgeRoleActionResult forge_role_action_info = 1211;
 
     pub fn forge_role_action_info(&self) -> &super::GridFightForgeRoleActionResult::GridFightForgeRoleActionResult {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ForgeRoleActionInfo(ref v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ForgeRoleActionInfo(ref v)) => v,
             _ => <super::GridFightForgeRoleActionResult::GridFightForgeRoleActionResult as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_forge_role_action_info(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
     pub fn has_forge_role_action_info(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ForgeRoleActionInfo(..)) => true,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ForgeRoleActionInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_forge_role_action_info(&mut self, v: super::GridFightForgeRoleActionResult::GridFightForgeRoleActionResult) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ForgeRoleActionInfo(v))
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ForgeRoleActionInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_forge_role_action_info(&mut self) -> &mut super::GridFightForgeRoleActionResult::GridFightForgeRoleActionResult {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ForgeRoleActionInfo(_)) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ForgeRoleActionInfo(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ForgeRoleActionInfo(super::GridFightForgeRoleActionResult::GridFightForgeRoleActionResult::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ForgeRoleActionInfo(super::GridFightForgeRoleActionResult::GridFightForgeRoleActionResult::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ForgeRoleActionInfo(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ForgeRoleActionInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -823,8 +823,8 @@ impl GridFightSelectRecommendEquipCsReq {
     // Take field
     pub fn take_forge_role_action_info(&mut self) -> super::GridFightForgeRoleActionResult::GridFightForgeRoleActionResult {
         if self.has_forge_role_action_info() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ForgeRoleActionInfo(v)) => v,
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ForgeRoleActionInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -832,52 +832,52 @@ impl GridFightSelectRecommendEquipCsReq {
         }
     }
 
-    // .PAJOCFHJLLI FFFBJAGPNLE = 198;
+    // .FAPFEGCHPMF JCCAAGPGKCG = 1141;
 
-    pub fn FFFBJAGPNLE(&self) -> &super::PAJOCFHJLLI::PAJOCFHJLLI {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::FFFBJAGPNLE(ref v)) => v,
-            _ => <super::PAJOCFHJLLI::PAJOCFHJLLI as ::protobuf::Message>::default_instance(),
+    pub fn JCCAAGPGKCG(&self) -> &super::FAPFEGCHPMF::FAPFEGCHPMF {
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::JCCAAGPGKCG(ref v)) => v,
+            _ => <super::FAPFEGCHPMF::FAPFEGCHPMF as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_FFFBJAGPNLE(&mut self) {
-        self.KGOPABIMHHC = ::std::option::Option::None;
+    pub fn clear_JCCAAGPGKCG(&mut self) {
+        self.NCEJGDKIBHM = ::std::option::Option::None;
     }
 
-    pub fn has_FFFBJAGPNLE(&self) -> bool {
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::FFFBJAGPNLE(..)) => true,
+    pub fn has_JCCAAGPGKCG(&self) -> bool {
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::JCCAAGPGKCG(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_FFFBJAGPNLE(&mut self, v: super::PAJOCFHJLLI::PAJOCFHJLLI) {
-        self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::FFFBJAGPNLE(v))
+    pub fn set_JCCAAGPGKCG(&mut self, v: super::FAPFEGCHPMF::FAPFEGCHPMF) {
+        self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::JCCAAGPGKCG(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_FFFBJAGPNLE(&mut self) -> &mut super::PAJOCFHJLLI::PAJOCFHJLLI {
-        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::FFFBJAGPNLE(_)) = self.KGOPABIMHHC {
+    pub fn mut_JCCAAGPGKCG(&mut self) -> &mut super::FAPFEGCHPMF::FAPFEGCHPMF {
+        if let ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::JCCAAGPGKCG(_)) = self.NCEJGDKIBHM {
         } else {
-            self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::FFFBJAGPNLE(super::PAJOCFHJLLI::PAJOCFHJLLI::new()));
+            self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::JCCAAGPGKCG(super::FAPFEGCHPMF::FAPFEGCHPMF::new()));
         }
-        match self.KGOPABIMHHC {
-            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::FFFBJAGPNLE(ref mut v)) => v,
+        match self.NCEJGDKIBHM {
+            ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::JCCAAGPGKCG(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_FFFBJAGPNLE(&mut self) -> super::PAJOCFHJLLI::PAJOCFHJLLI {
-        if self.has_FFFBJAGPNLE() {
-            match self.KGOPABIMHHC.take() {
-                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::FFFBJAGPNLE(v)) => v,
+    pub fn take_JCCAAGPGKCG(&mut self) -> super::FAPFEGCHPMF::FAPFEGCHPMF {
+        if self.has_JCCAAGPGKCG() {
+            match self.NCEJGDKIBHM.take() {
+                ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::JCCAAGPGKCG(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::PAJOCFHJLLI::PAJOCFHJLLI::new()
+            super::FAPFEGCHPMF::FAPFEGCHPMF::new()
         }
     }
 
@@ -931,19 +931,19 @@ impl GridFightSelectRecommendEquipCsReq {
             GridFightSelectRecommendEquipCsReq::mut_elite_branch_action,
             GridFightSelectRecommendEquipCsReq::set_elite_branch_action,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::APELIKIDONO::APELIKIDONO>(
-            "NHEJKLDIAGA",
-            GridFightSelectRecommendEquipCsReq::has_NHEJKLDIAGA,
-            GridFightSelectRecommendEquipCsReq::NHEJKLDIAGA,
-            GridFightSelectRecommendEquipCsReq::mut_NHEJKLDIAGA,
-            GridFightSelectRecommendEquipCsReq::set_NHEJKLDIAGA,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NGAHBOPDAKK::NGAHBOPDAKK>(
+            "LICHOEPBMPO",
+            GridFightSelectRecommendEquipCsReq::has_LICHOEPBMPO,
+            GridFightSelectRecommendEquipCsReq::LICHOEPBMPO,
+            GridFightSelectRecommendEquipCsReq::mut_LICHOEPBMPO,
+            GridFightSelectRecommendEquipCsReq::set_LICHOEPBMPO,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DHMDKNIKJBM::DHMDKNIKJBM>(
-            "INHIAPDNMJA",
-            GridFightSelectRecommendEquipCsReq::has_INHIAPDNMJA,
-            GridFightSelectRecommendEquipCsReq::INHIAPDNMJA,
-            GridFightSelectRecommendEquipCsReq::mut_INHIAPDNMJA,
-            GridFightSelectRecommendEquipCsReq::set_INHIAPDNMJA,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IPMBGBFPHJP::IPMBGBFPHJP>(
+            "BJBMKDOPFLA",
+            GridFightSelectRecommendEquipCsReq::has_BJBMKDOPFLA,
+            GridFightSelectRecommendEquipCsReq::BJBMKDOPFLA,
+            GridFightSelectRecommendEquipCsReq::mut_BJBMKDOPFLA,
+            GridFightSelectRecommendEquipCsReq::set_BJBMKDOPFLA,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightRoundBeginActionResult::GridFightRoundBeginActionResult>(
             "round_begin_action",
@@ -980,12 +980,12 @@ impl GridFightSelectRecommendEquipCsReq {
             GridFightSelectRecommendEquipCsReq::mut_upgrade_equip_action,
             GridFightSelectRecommendEquipCsReq::set_upgrade_equip_action,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BIEMOADDGFI::BIEMOADDGFI>(
-            "AHHDNBHMPKH",
-            GridFightSelectRecommendEquipCsReq::has_AHHDNBHMPKH,
-            GridFightSelectRecommendEquipCsReq::AHHDNBHMPKH,
-            GridFightSelectRecommendEquipCsReq::mut_AHHDNBHMPKH,
-            GridFightSelectRecommendEquipCsReq::set_AHHDNBHMPKH,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AFHHLEABJNC::AFHHLEABJNC>(
+            "HOAPJDLLBFC",
+            GridFightSelectRecommendEquipCsReq::has_HOAPJDLLBFC,
+            GridFightSelectRecommendEquipCsReq::HOAPJDLLBFC,
+            GridFightSelectRecommendEquipCsReq::mut_HOAPJDLLBFC,
+            GridFightSelectRecommendEquipCsReq::set_HOAPJDLLBFC,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightRecommendEquipmentActionResult::GridFightRecommendEquipmentActionResult>(
             "recommend_equipment_action",
@@ -1001,14 +1001,14 @@ impl GridFightSelectRecommendEquipCsReq {
             GridFightSelectRecommendEquipCsReq::mut_forge_role_action_info,
             GridFightSelectRecommendEquipCsReq::set_forge_role_action_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PAJOCFHJLLI::PAJOCFHJLLI>(
-            "FFFBJAGPNLE",
-            GridFightSelectRecommendEquipCsReq::has_FFFBJAGPNLE,
-            GridFightSelectRecommendEquipCsReq::FFFBJAGPNLE,
-            GridFightSelectRecommendEquipCsReq::mut_FFFBJAGPNLE,
-            GridFightSelectRecommendEquipCsReq::set_FFFBJAGPNLE,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FAPFEGCHPMF::FAPFEGCHPMF>(
+            "JCCAAGPGKCG",
+            GridFightSelectRecommendEquipCsReq::has_JCCAAGPGKCG,
+            GridFightSelectRecommendEquipCsReq::JCCAAGPGKCG,
+            GridFightSelectRecommendEquipCsReq::mut_JCCAAGPGKCG,
+            GridFightSelectRecommendEquipCsReq::set_JCCAAGPGKCG,
         ));
-        oneofs.push(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::generated_oneof_descriptor_data());
+        oneofs.push(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightSelectRecommendEquipCsReq>(
             "GridFightSelectRecommendEquipCsReq",
             fields,
@@ -1027,59 +1027,59 @@ impl ::protobuf::Message for GridFightSelectRecommendEquipCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                8 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                1978 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffAction(is.read_message()?));
+                11674 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffAction(is.read_message()?));
                 },
-                15802 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffRerollAction(is.read_message()?));
+                11946 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffRerollAction(is.read_message()?));
                 },
-                6858 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AugmentAction(is.read_message()?));
+                7378 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::AugmentAction(is.read_message()?));
                 },
-                13938 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollAugmentAction(is.read_message()?));
+                6514 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollAugmentAction(is.read_message()?));
                 },
-                11154 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::TraitAction(is.read_message()?));
+                2250 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::TraitAction(is.read_message()?));
                 },
-                4834 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::EliteBranchAction(is.read_message()?));
+                4282 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::EliteBranchAction(is.read_message()?));
                 },
-                16186 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::NHEJKLDIAGA(is.read_message()?));
+                11834 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::LICHOEPBMPO(is.read_message()?));
                 },
-                5674 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::INHIAPDNMJA(is.read_message()?));
+                298 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::BJBMKDOPFLA(is.read_message()?));
                 },
-                15042 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RoundBeginAction(is.read_message()?));
+                14506 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RoundBeginAction(is.read_message()?));
                 },
-                14754 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ReturnPreparationAction(is.read_message()?));
+                10826 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ReturnPreparationAction(is.read_message()?));
                 },
-                6186 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::SupplyAction(is.read_message()?));
+                6498 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::SupplyAction(is.read_message()?));
                 },
-                5506 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollSupplyAction(is.read_message()?));
+                4378 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollSupplyAction(is.read_message()?));
                 },
-                5362 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::UpgradeEquipAction(is.read_message()?));
+                2146 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::UpgradeEquipAction(is.read_message()?));
                 },
-                9026 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AHHDNBHMPKH(is.read_message()?));
+                14938 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::HOAPJDLLBFC(is.read_message()?));
                 },
-                2586 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RecommendEquipmentAction(is.read_message()?));
+                9898 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RecommendEquipmentAction(is.read_message()?));
                 },
-                1570 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ForgeRoleActionInfo(is.read_message()?));
+                9690 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ForgeRoleActionInfo(is.read_message()?));
                 },
-                1586 => {
-                    self.KGOPABIMHHC = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::FFFBJAGPNLE(is.read_message()?));
+                9130 => {
+                    self.NCEJGDKIBHM = ::std::option::Option::Some(grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::JCCAAGPGKCG(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -1094,75 +1094,75 @@ impl ::protobuf::Message for GridFightSelectRecommendEquipCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(1, self.queue_position);
         }
-        if let ::std::option::Option::Some(ref v) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(ref v) = self.NCEJGDKIBHM {
             match v {
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffRerollAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffRerollAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AugmentAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::AugmentAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollAugmentAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollAugmentAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::TraitAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::TraitAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::EliteBranchAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::EliteBranchAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::NHEJKLDIAGA(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::LICHOEPBMPO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::INHIAPDNMJA(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::BJBMKDOPFLA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RoundBeginAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RoundBeginAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ReturnPreparationAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ReturnPreparationAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::SupplyAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::SupplyAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollSupplyAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollSupplyAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::UpgradeEquipAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::UpgradeEquipAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AHHDNBHMPKH(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::HOAPJDLLBFC(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RecommendEquipmentAction(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RecommendEquipmentAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ForgeRoleActionInfo(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ForgeRoleActionInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::FFFBJAGPNLE(ref v) => {
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::JCCAAGPGKCG(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -1175,60 +1175,60 @@ impl ::protobuf::Message for GridFightSelectRecommendEquipCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(4, self.queue_position)?;
+            os.write_uint32(1, self.queue_position)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.KGOPABIMHHC {
+        if let ::std::option::Option::Some(ref v) = self.NCEJGDKIBHM {
             match v {
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(247, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1459, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::PortalBuffRerollAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1975, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::PortalBuffRerollAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1493, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AugmentAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(857, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::AugmentAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(922, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollAugmentAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1742, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollAugmentAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(814, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::TraitAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1394, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::TraitAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(281, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::EliteBranchAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(604, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::EliteBranchAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(535, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::NHEJKLDIAGA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2023, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::LICHOEPBMPO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1479, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::INHIAPDNMJA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(709, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::BJBMKDOPFLA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(37, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RoundBeginAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1880, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RoundBeginAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1813, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ReturnPreparationAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1844, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ReturnPreparationAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1353, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::SupplyAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(773, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::SupplyAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(812, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RerollSupplyAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(688, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RerollSupplyAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(547, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::UpgradeEquipAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(670, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::UpgradeEquipAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(268, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::AHHDNBHMPKH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1128, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::HOAPJDLLBFC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1867, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::RecommendEquipmentAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(323, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::RecommendEquipmentAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1237, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::ForgeRoleActionInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(196, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::ForgeRoleActionInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1211, v, os)?;
                 },
-                &grid_fight_select_recommend_equip_cs_req::KGOPABIMHHC::FFFBJAGPNLE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(198, v, os)?;
+                &grid_fight_select_recommend_equip_cs_req::NCEJGDKIBHM::JCCAAGPGKCG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1141, v, os)?;
                 },
             };
         }
@@ -1250,30 +1250,30 @@ impl ::protobuf::Message for GridFightSelectRecommendEquipCsReq {
 
     fn clear(&mut self) {
         self.queue_position = 0;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
-        self.KGOPABIMHHC = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
+        self.NCEJGDKIBHM = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightSelectRecommendEquipCsReq {
         static instance: GridFightSelectRecommendEquipCsReq = GridFightSelectRecommendEquipCsReq {
             queue_position: 0,
-            KGOPABIMHHC: ::std::option::Option::None,
+            NCEJGDKIBHM: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -1302,8 +1302,8 @@ pub mod grid_fight_select_recommend_equip_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:GridFightSelectRecommendEquipCsReq.KGOPABIMHHC)
-    pub enum KGOPABIMHHC {
+    // @@protoc_insertion_point(oneof:GridFightSelectRecommendEquipCsReq.NCEJGDKIBHM)
+    pub enum NCEJGDKIBHM {
         // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.portal_buff_action)
         PortalBuffAction(super::super::GridFightPortalBuffActionResult::GridFightPortalBuffActionResult),
         // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.portal_buff_reroll_action)
@@ -1316,10 +1316,10 @@ pub mod grid_fight_select_recommend_equip_cs_req {
         TraitAction(super::super::GridFightTraitActionResult::GridFightTraitActionResult),
         // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.elite_branch_action)
         EliteBranchAction(super::super::GridFightEliteBranchActionResult::GridFightEliteBranchActionResult),
-        // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.NHEJKLDIAGA)
-        NHEJKLDIAGA(super::super::APELIKIDONO::APELIKIDONO),
-        // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.INHIAPDNMJA)
-        INHIAPDNMJA(super::super::DHMDKNIKJBM::DHMDKNIKJBM),
+        // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.LICHOEPBMPO)
+        LICHOEPBMPO(super::super::NGAHBOPDAKK::NGAHBOPDAKK),
+        // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.BJBMKDOPFLA)
+        BJBMKDOPFLA(super::super::IPMBGBFPHJP::IPMBGBFPHJP),
         // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.round_begin_action)
         RoundBeginAction(super::super::GridFightRoundBeginActionResult::GridFightRoundBeginActionResult),
         // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.return_preparation_action)
@@ -1330,72 +1330,72 @@ pub mod grid_fight_select_recommend_equip_cs_req {
         RerollSupplyAction(super::super::GridFightSupplyRerollActionResult::GridFightSupplyRerollActionResult),
         // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.upgrade_equip_action)
         UpgradeEquipAction(super::super::GridFightUpgradeEquipActionResult::GridFightUpgradeEquipActionResult),
-        // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.AHHDNBHMPKH)
-        AHHDNBHMPKH(super::super::BIEMOADDGFI::BIEMOADDGFI),
+        // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.HOAPJDLLBFC)
+        HOAPJDLLBFC(super::super::AFHHLEABJNC::AFHHLEABJNC),
         // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.recommend_equipment_action)
         RecommendEquipmentAction(super::super::GridFightRecommendEquipmentActionResult::GridFightRecommendEquipmentActionResult),
         // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.forge_role_action_info)
         ForgeRoleActionInfo(super::super::GridFightForgeRoleActionResult::GridFightForgeRoleActionResult),
-        // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.FFFBJAGPNLE)
-        FFFBJAGPNLE(super::super::PAJOCFHJLLI::PAJOCFHJLLI),
+        // @@protoc_insertion_point(oneof_field:GridFightSelectRecommendEquipCsReq.JCCAAGPGKCG)
+        JCCAAGPGKCG(super::super::FAPFEGCHPMF::FAPFEGCHPMF),
     }
 
-    impl ::protobuf::Oneof for KGOPABIMHHC {
+    impl ::protobuf::Oneof for NCEJGDKIBHM {
     }
 
-    impl ::protobuf::OneofFull for KGOPABIMHHC {
+    impl ::protobuf::OneofFull for NCEJGDKIBHM {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::GridFightSelectRecommendEquipCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("KGOPABIMHHC").unwrap()).clone()
+            descriptor.get(|| <super::GridFightSelectRecommendEquipCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("NCEJGDKIBHM").unwrap()).clone()
         }
     }
 
-    impl KGOPABIMHHC {
+    impl NCEJGDKIBHM {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KGOPABIMHHC>("KGOPABIMHHC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NCEJGDKIBHM>("NCEJGDKIBHM")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(GridFightSelectRecommendEquipCsReq.proto\x1a\x11APELIKIDONO.proto\x1a\
-    \x11BIEMOADDGFI.proto\x1a\x11DHMDKNIKJBM.proto\x1a\"GridFightAugmentActi\
-    onResult.proto\x1a(GridFightAugmentRerollActionResult.proto\x1a&GridFigh\
-    tEliteBranchActionResult.proto\x1a$GridFightForgeRoleActionResult.proto\
-    \x1a%GridFightPortalBuffActionResult.proto\x1a+GridFightPortalBuffReroll\
-    ActionResult.proto\x1a-GridFightRecommendEquipmentActionResult.proto\x1a\
-    ,GridFightReturnPreparationActionResult.proto\x1a%GridFightRoundBeginAct\
-    ionResult.proto\x1a!GridFightSupplyActionResult.proto\x1a'GridFightSuppl\
-    yRerollActionResult.proto\x1a\x20GridFightTraitActionResult.proto\x1a'Gr\
-    idFightUpgradeEquipActionResult.proto\x1a\x11PAJOCFHJLLI.proto\"\x94\x0b\
-    \n\"GridFightSelectRecommendEquipCsReq\x12%\n\x0equeue_position\x18\x04\
-    \x20\x01(\rR\rqueuePosition\x12Q\n\x12portal_buff_action\x18\xf7\x01\x20\
+    \n(GridFightSelectRecommendEquipCsReq.proto\x1a\x11AFHHLEABJNC.proto\x1a\
+    \x11FAPFEGCHPMF.proto\x1a\"GridFightAugmentActionResult.proto\x1a(GridFi\
+    ghtAugmentRerollActionResult.proto\x1a&GridFightEliteBranchActionResult.\
+    proto\x1a$GridFightForgeRoleActionResult.proto\x1a%GridFightPortalBuffAc\
+    tionResult.proto\x1a+GridFightPortalBuffRerollActionResult.proto\x1a-Gri\
+    dFightRecommendEquipmentActionResult.proto\x1a,GridFightReturnPreparatio\
+    nActionResult.proto\x1a%GridFightRoundBeginActionResult.proto\x1a!GridFi\
+    ghtSupplyActionResult.proto\x1a'GridFightSupplyRerollActionResult.proto\
+    \x1a\x20GridFightTraitActionResult.proto\x1a'GridFightUpgradeEquipAction\
+    Result.proto\x1a\x11IPMBGBFPHJP.proto\x1a\x11NGAHBOPDAKK.proto\"\x93\x0b\
+    \n\"GridFightSelectRecommendEquipCsReq\x12%\n\x0equeue_position\x18\x01\
+    \x20\x01(\rR\rqueuePosition\x12Q\n\x12portal_buff_action\x18\xb3\x0b\x20\
     \x01(\x0b2\x20.GridFightPortalBuffActionResultH\0R\x10portalBuffAction\
-    \x12d\n\x19portal_buff_reroll_action\x18\xb7\x0f\x20\x01(\x0b2&.GridFigh\
+    \x12d\n\x19portal_buff_reroll_action\x18\xd5\x0b\x20\x01(\x0b2&.GridFigh\
     tPortalBuffRerollActionResultH\0R\x16portalBuffRerollAction\x12G\n\x0eau\
-    gment_action\x18\xd9\x06\x20\x01(\x0b2\x1d.GridFightAugmentActionResultH\
-    \0R\raugmentAction\x12Z\n\x15reroll_augment_action\x18\xce\r\x20\x01(\
+    gment_action\x18\x9a\x07\x20\x01(\x0b2\x1d.GridFightAugmentActionResultH\
+    \0R\raugmentAction\x12Z\n\x15reroll_augment_action\x18\xae\x06\x20\x01(\
     \x0b2#.GridFightAugmentRerollActionResultH\0R\x13rerollAugmentAction\x12\
-    A\n\x0ctrait_action\x18\xf2\n\x20\x01(\x0b2\x1b.GridFightTraitActionResu\
-    ltH\0R\x0btraitAction\x12T\n\x13elite_branch_action\x18\xdc\x04\x20\x01(\
-    \x0b2!.GridFightEliteBranchActionResultH\0R\x11eliteBranchAction\x121\n\
-    \x0bNHEJKLDIAGA\x18\xe7\x0f\x20\x01(\x0b2\x0c.APELIKIDONOH\0R\x0bNHEJKLD\
-    IAGA\x121\n\x0bINHIAPDNMJA\x18\xc5\x05\x20\x01(\x0b2\x0c.DHMDKNIKJBMH\0R\
-    \x0bINHIAPDNMJA\x12Q\n\x12round_begin_action\x18\xd8\x0e\x20\x01(\x0b2\
+    A\n\x0ctrait_action\x18\x99\x02\x20\x01(\x0b2\x1b.GridFightTraitActionRe\
+    sultH\0R\x0btraitAction\x12T\n\x13elite_branch_action\x18\x97\x04\x20\
+    \x01(\x0b2!.GridFightEliteBranchActionResultH\0R\x11eliteBranchAction\
+    \x121\n\x0bLICHOEPBMPO\x18\xc7\x0b\x20\x01(\x0b2\x0c.NGAHBOPDAKKH\0R\x0b\
+    LICHOEPBMPO\x120\n\x0bBJBMKDOPFLA\x18%\x20\x01(\x0b2\x0c.IPMBGBFPHJPH\0R\
+    \x0bBJBMKDOPFLA\x12Q\n\x12round_begin_action\x18\x95\x0e\x20\x01(\x0b2\
     \x20.GridFightRoundBeginActionResultH\0R\x10roundBeginAction\x12f\n\x19r\
-    eturn_preparation_action\x18\xb4\x0e\x20\x01(\x0b2'.GridFightReturnPrepa\
-    rationActionResultH\0R\x17returnPreparationAction\x12D\n\rsupply_action\
-    \x18\x85\x06\x20\x01(\x0b2\x1c.GridFightSupplyActionResultH\0R\x0csupply\
-    Action\x12W\n\x14reroll_supply_action\x18\xb0\x05\x20\x01(\x0b2\".GridFi\
+    eturn_preparation_action\x18\xc9\n\x20\x01(\x0b2'.GridFightReturnPrepara\
+    tionActionResultH\0R\x17returnPreparationAction\x12D\n\rsupply_action\
+    \x18\xac\x06\x20\x01(\x0b2\x1c.GridFightSupplyActionResultH\0R\x0csupply\
+    Action\x12W\n\x14reroll_supply_action\x18\xa3\x04\x20\x01(\x0b2\".GridFi\
     ghtSupplyRerollActionResultH\0R\x12rerollSupplyAction\x12W\n\x14upgrade_\
-    equip_action\x18\x9e\x05\x20\x01(\x0b2\".GridFightUpgradeEquipActionResu\
-    ltH\0R\x12upgradeEquipAction\x121\n\x0bAHHDNBHMPKH\x18\xe8\x08\x20\x01(\
-    \x0b2\x0c.BIEMOADDGFIH\0R\x0bAHHDNBHMPKH\x12i\n\x1arecommend_equipment_a\
-    ction\x18\xc3\x02\x20\x01(\x0b2(.GridFightRecommendEquipmentActionResult\
-    H\0R\x18recommendEquipmentAction\x12W\n\x16forge_role_action_info\x18\
-    \xc4\x01\x20\x01(\x0b2\x1f.GridFightForgeRoleActionResultH\0R\x13forgeRo\
-    leActionInfo\x121\n\x0bFFFBJAGPNLE\x18\xc6\x01\x20\x01(\x0b2\x0c.PAJOCFH\
-    JLLIH\0R\x0bFFFBJAGPNLEB\r\n\x0bKGOPABIMHHCb\x06proto3\
+    equip_action\x18\x8c\x02\x20\x01(\x0b2\".GridFightUpgradeEquipActionResu\
+    ltH\0R\x12upgradeEquipAction\x121\n\x0bHOAPJDLLBFC\x18\xcb\x0e\x20\x01(\
+    \x0b2\x0c.AFHHLEABJNCH\0R\x0bHOAPJDLLBFC\x12i\n\x1arecommend_equipment_a\
+    ction\x18\xd5\t\x20\x01(\x0b2(.GridFightRecommendEquipmentActionResultH\
+    \0R\x18recommendEquipmentAction\x12W\n\x16forge_role_action_info\x18\xbb\
+    \t\x20\x01(\x0b2\x1f.GridFightForgeRoleActionResultH\0R\x13forgeRoleActi\
+    onInfo\x121\n\x0bJCCAAGPGKCG\x18\xf5\x08\x20\x01(\x0b2\x0c.FAPFEGCHPMFH\
+    \0R\x0bJCCAAGPGKCGB\r\n\x0bNCEJGDKIBHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -1413,9 +1413,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(17);
-            deps.push(super::APELIKIDONO::file_descriptor().clone());
-            deps.push(super::BIEMOADDGFI::file_descriptor().clone());
-            deps.push(super::DHMDKNIKJBM::file_descriptor().clone());
+            deps.push(super::AFHHLEABJNC::file_descriptor().clone());
+            deps.push(super::FAPFEGCHPMF::file_descriptor().clone());
             deps.push(super::GridFightAugmentActionResult::file_descriptor().clone());
             deps.push(super::GridFightAugmentRerollActionResult::file_descriptor().clone());
             deps.push(super::GridFightEliteBranchActionResult::file_descriptor().clone());
@@ -1429,7 +1428,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::GridFightSupplyRerollActionResult::file_descriptor().clone());
             deps.push(super::GridFightTraitActionResult::file_descriptor().clone());
             deps.push(super::GridFightUpgradeEquipActionResult::file_descriptor().clone());
-            deps.push(super::PAJOCFHJLLI::file_descriptor().clone());
+            deps.push(super::IPMBGBFPHJP::file_descriptor().clone());
+            deps.push(super::NGAHBOPDAKK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightSelectRecommendEquipCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

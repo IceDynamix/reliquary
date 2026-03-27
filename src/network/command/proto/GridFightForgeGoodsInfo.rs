@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightForgeGoodsInfo {
     // message oneof groups
-    pub DOODIPCBCMK: ::std::option::Option<grid_fight_forge_goods_info::DOODIPCBCMK>,
+    pub LCMMNACGBNM: ::std::option::Option<grid_fight_forge_goods_info::LCMMNACGBNM>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightForgeGoodsInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl GridFightForgeGoodsInfo {
         ::std::default::Default::default()
     }
 
-    // .GridFightForgeEquipmentInfo equipment_goods_info = 4;
+    // .GridFightForgeEquipmentInfo equipment_goods_info = 15;
 
     pub fn equipment_goods_info(&self) -> &super::GridFightForgeEquipmentInfo::GridFightForgeEquipmentInfo {
-        match self.DOODIPCBCMK {
-            ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::EquipmentGoodsInfo(ref v)) => v,
+        match self.LCMMNACGBNM {
+            ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::EquipmentGoodsInfo(ref v)) => v,
             _ => <super::GridFightForgeEquipmentInfo::GridFightForgeEquipmentInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_equipment_goods_info(&mut self) {
-        self.DOODIPCBCMK = ::std::option::Option::None;
+        self.LCMMNACGBNM = ::std::option::Option::None;
     }
 
     pub fn has_equipment_goods_info(&self) -> bool {
-        match self.DOODIPCBCMK {
-            ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::EquipmentGoodsInfo(..)) => true,
+        match self.LCMMNACGBNM {
+            ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::EquipmentGoodsInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_equipment_goods_info(&mut self, v: super::GridFightForgeEquipmentInfo::GridFightForgeEquipmentInfo) {
-        self.DOODIPCBCMK = ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::EquipmentGoodsInfo(v))
+        self.LCMMNACGBNM = ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::EquipmentGoodsInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_equipment_goods_info(&mut self) -> &mut super::GridFightForgeEquipmentInfo::GridFightForgeEquipmentInfo {
-        if let ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::EquipmentGoodsInfo(_)) = self.DOODIPCBCMK {
+        if let ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::EquipmentGoodsInfo(_)) = self.LCMMNACGBNM {
         } else {
-            self.DOODIPCBCMK = ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::EquipmentGoodsInfo(super::GridFightForgeEquipmentInfo::GridFightForgeEquipmentInfo::new()));
+            self.LCMMNACGBNM = ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::EquipmentGoodsInfo(super::GridFightForgeEquipmentInfo::GridFightForgeEquipmentInfo::new()));
         }
-        match self.DOODIPCBCMK {
-            ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::EquipmentGoodsInfo(ref mut v)) => v,
+        match self.LCMMNACGBNM {
+            ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::EquipmentGoodsInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl GridFightForgeGoodsInfo {
     // Take field
     pub fn take_equipment_goods_info(&mut self) -> super::GridFightForgeEquipmentInfo::GridFightForgeEquipmentInfo {
         if self.has_equipment_goods_info() {
-            match self.DOODIPCBCMK.take() {
-                ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::EquipmentGoodsInfo(v)) => v,
+            match self.LCMMNACGBNM.take() {
+                ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::EquipmentGoodsInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl GridFightForgeGoodsInfo {
         }
     }
 
-    // .GridFightForgeRoleInfo role_goods_info = 10;
+    // .GridFightForgeRoleInfo role_goods_info = 2;
 
     pub fn role_goods_info(&self) -> &super::GridFightForgeRoleInfo::GridFightForgeRoleInfo {
-        match self.DOODIPCBCMK {
-            ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::RoleGoodsInfo(ref v)) => v,
+        match self.LCMMNACGBNM {
+            ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::RoleGoodsInfo(ref v)) => v,
             _ => <super::GridFightForgeRoleInfo::GridFightForgeRoleInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_role_goods_info(&mut self) {
-        self.DOODIPCBCMK = ::std::option::Option::None;
+        self.LCMMNACGBNM = ::std::option::Option::None;
     }
 
     pub fn has_role_goods_info(&self) -> bool {
-        match self.DOODIPCBCMK {
-            ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::RoleGoodsInfo(..)) => true,
+        match self.LCMMNACGBNM {
+            ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::RoleGoodsInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_role_goods_info(&mut self, v: super::GridFightForgeRoleInfo::GridFightForgeRoleInfo) {
-        self.DOODIPCBCMK = ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::RoleGoodsInfo(v))
+        self.LCMMNACGBNM = ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::RoleGoodsInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_role_goods_info(&mut self) -> &mut super::GridFightForgeRoleInfo::GridFightForgeRoleInfo {
-        if let ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::RoleGoodsInfo(_)) = self.DOODIPCBCMK {
+        if let ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::RoleGoodsInfo(_)) = self.LCMMNACGBNM {
         } else {
-            self.DOODIPCBCMK = ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::RoleGoodsInfo(super::GridFightForgeRoleInfo::GridFightForgeRoleInfo::new()));
+            self.LCMMNACGBNM = ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::RoleGoodsInfo(super::GridFightForgeRoleInfo::GridFightForgeRoleInfo::new()));
         }
-        match self.DOODIPCBCMK {
-            ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::RoleGoodsInfo(ref mut v)) => v,
+        match self.LCMMNACGBNM {
+            ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::RoleGoodsInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl GridFightForgeGoodsInfo {
     // Take field
     pub fn take_role_goods_info(&mut self) -> super::GridFightForgeRoleInfo::GridFightForgeRoleInfo {
         if self.has_role_goods_info() {
-            match self.DOODIPCBCMK.take() {
-                ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::RoleGoodsInfo(v)) => v,
+            match self.LCMMNACGBNM.take() {
+                ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::RoleGoodsInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl GridFightForgeGoodsInfo {
             GridFightForgeGoodsInfo::mut_role_goods_info,
             GridFightForgeGoodsInfo::set_role_goods_info,
         ));
-        oneofs.push(grid_fight_forge_goods_info::DOODIPCBCMK::generated_oneof_descriptor_data());
+        oneofs.push(grid_fight_forge_goods_info::LCMMNACGBNM::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightForgeGoodsInfo>(
             "GridFightForgeGoodsInfo",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for GridFightForgeGoodsInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.DOODIPCBCMK = ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::EquipmentGoodsInfo(is.read_message()?));
+                122 => {
+                    self.LCMMNACGBNM = ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::EquipmentGoodsInfo(is.read_message()?));
                 },
-                82 => {
-                    self.DOODIPCBCMK = ::std::option::Option::Some(grid_fight_forge_goods_info::DOODIPCBCMK::RoleGoodsInfo(is.read_message()?));
+                18 => {
+                    self.LCMMNACGBNM = ::std::option::Option::Some(grid_fight_forge_goods_info::LCMMNACGBNM::RoleGoodsInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for GridFightForgeGoodsInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.DOODIPCBCMK {
+        if let ::std::option::Option::Some(ref v) = self.LCMMNACGBNM {
             match v {
-                &grid_fight_forge_goods_info::DOODIPCBCMK::EquipmentGoodsInfo(ref v) => {
+                &grid_fight_forge_goods_info::LCMMNACGBNM::EquipmentGoodsInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_forge_goods_info::DOODIPCBCMK::RoleGoodsInfo(ref v) => {
+                &grid_fight_forge_goods_info::LCMMNACGBNM::RoleGoodsInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for GridFightForgeGoodsInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.DOODIPCBCMK {
+        if let ::std::option::Option::Some(ref v) = self.LCMMNACGBNM {
             match v {
-                &grid_fight_forge_goods_info::DOODIPCBCMK::EquipmentGoodsInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+                &grid_fight_forge_goods_info::LCMMNACGBNM::EquipmentGoodsInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
-                &grid_fight_forge_goods_info::DOODIPCBCMK::RoleGoodsInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+                &grid_fight_forge_goods_info::LCMMNACGBNM::RoleGoodsInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for GridFightForgeGoodsInfo {
     }
 
     fn clear(&mut self) {
-        self.DOODIPCBCMK = ::std::option::Option::None;
-        self.DOODIPCBCMK = ::std::option::Option::None;
+        self.LCMMNACGBNM = ::std::option::Option::None;
+        self.LCMMNACGBNM = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightForgeGoodsInfo {
         static instance: GridFightForgeGoodsInfo = GridFightForgeGoodsInfo {
-            DOODIPCBCMK: ::std::option::Option::None,
+            LCMMNACGBNM: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,27 +278,27 @@ pub mod grid_fight_forge_goods_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:GridFightForgeGoodsInfo.DOODIPCBCMK)
-    pub enum DOODIPCBCMK {
+    // @@protoc_insertion_point(oneof:GridFightForgeGoodsInfo.LCMMNACGBNM)
+    pub enum LCMMNACGBNM {
         // @@protoc_insertion_point(oneof_field:GridFightForgeGoodsInfo.equipment_goods_info)
         EquipmentGoodsInfo(super::super::GridFightForgeEquipmentInfo::GridFightForgeEquipmentInfo),
         // @@protoc_insertion_point(oneof_field:GridFightForgeGoodsInfo.role_goods_info)
         RoleGoodsInfo(super::super::GridFightForgeRoleInfo::GridFightForgeRoleInfo),
     }
 
-    impl ::protobuf::Oneof for DOODIPCBCMK {
+    impl ::protobuf::Oneof for LCMMNACGBNM {
     }
 
-    impl ::protobuf::OneofFull for DOODIPCBCMK {
+    impl ::protobuf::OneofFull for LCMMNACGBNM {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::GridFightForgeGoodsInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("DOODIPCBCMK").unwrap()).clone()
+            descriptor.get(|| <super::GridFightForgeGoodsInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("LCMMNACGBNM").unwrap()).clone()
         }
     }
 
-    impl DOODIPCBCMK {
+    impl LCMMNACGBNM {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DOODIPCBCMK>("DOODIPCBCMK")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<LCMMNACGBNM>("LCMMNACGBNM")
         }
     }
 }
@@ -306,10 +306,10 @@ pub mod grid_fight_forge_goods_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGridFightForgeGoodsInfo.proto\x1a!GridFightForgeEquipmentInfo.prot\
     o\x1a\x1cGridFightForgeRoleInfo.proto\"\xbd\x01\n\x17GridFightForgeGoods\
-    Info\x12P\n\x14equipment_goods_info\x18\x04\x20\x01(\x0b2\x1c.GridFightF\
+    Info\x12P\n\x14equipment_goods_info\x18\x0f\x20\x01(\x0b2\x1c.GridFightF\
     orgeEquipmentInfoH\0R\x12equipmentGoodsInfo\x12A\n\x0frole_goods_info\
-    \x18\n\x20\x01(\x0b2\x17.GridFightForgeRoleInfoH\0R\rroleGoodsInfoB\r\n\
-    \x0bDOODIPCBCMKb\x06proto3\
+    \x18\x02\x20\x01(\x0b2\x17.GridFightForgeRoleInfoH\0R\rroleGoodsInfoB\r\
+    \n\x0bLCMMNACGBNMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

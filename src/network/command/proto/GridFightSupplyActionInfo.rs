@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightSupplyActionInfo {
     // message fields
+    // @@protoc_insertion_point(field:GridFightSupplyActionInfo.BAGNNMNPKPE)
+    pub BAGNNMNPKPE: u32,
+    // @@protoc_insertion_point(field:GridFightSupplyActionInfo.IFDCNMPALMM)
+    pub IFDCNMPALMM: u32,
+    // @@protoc_insertion_point(field:GridFightSupplyActionInfo.CBFPCHKNEAH)
+    pub CBFPCHKNEAH: u32,
+    // @@protoc_insertion_point(field:GridFightSupplyActionInfo.JLMLOMOLEMJ)
+    pub JLMLOMOLEMJ: u32,
     // @@protoc_insertion_point(field:GridFightSupplyActionInfo.supply_role_info_list)
     pub supply_role_info_list: ::std::vec::Vec<super::GridFightSupplyRoleInfo::GridFightSupplyRoleInfo>,
-    // @@protoc_insertion_point(field:GridFightSupplyActionInfo.AJLDNHKGMCJ)
-    pub AJLDNHKGMCJ: u32,
-    // @@protoc_insertion_point(field:GridFightSupplyActionInfo.GLABGGFIEAH)
-    pub GLABGGFIEAH: u32,
-    // @@protoc_insertion_point(field:GridFightSupplyActionInfo.EKFJGEJDEAL)
-    pub EKFJGEJDEAL: u32,
-    // @@protoc_insertion_point(field:GridFightSupplyActionInfo.FLBPJDMEJEE)
-    pub FLBPJDMEJEE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightSupplyActionInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl GridFightSupplyActionInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BAGNNMNPKPE",
+            |m: &GridFightSupplyActionInfo| { &m.BAGNNMNPKPE },
+            |m: &mut GridFightSupplyActionInfo| { &mut m.BAGNNMNPKPE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFDCNMPALMM",
+            |m: &GridFightSupplyActionInfo| { &m.IFDCNMPALMM },
+            |m: &mut GridFightSupplyActionInfo| { &mut m.IFDCNMPALMM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CBFPCHKNEAH",
+            |m: &GridFightSupplyActionInfo| { &m.CBFPCHKNEAH },
+            |m: &mut GridFightSupplyActionInfo| { &mut m.CBFPCHKNEAH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JLMLOMOLEMJ",
+            |m: &GridFightSupplyActionInfo| { &m.JLMLOMOLEMJ },
+            |m: &mut GridFightSupplyActionInfo| { &mut m.JLMLOMOLEMJ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "supply_role_info_list",
             |m: &GridFightSupplyActionInfo| { &m.supply_role_info_list },
             |m: &mut GridFightSupplyActionInfo| { &mut m.supply_role_info_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJLDNHKGMCJ",
-            |m: &GridFightSupplyActionInfo| { &m.AJLDNHKGMCJ },
-            |m: &mut GridFightSupplyActionInfo| { &mut m.AJLDNHKGMCJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLABGGFIEAH",
-            |m: &GridFightSupplyActionInfo| { &m.GLABGGFIEAH },
-            |m: &mut GridFightSupplyActionInfo| { &mut m.GLABGGFIEAH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKFJGEJDEAL",
-            |m: &GridFightSupplyActionInfo| { &m.EKFJGEJDEAL },
-            |m: &mut GridFightSupplyActionInfo| { &mut m.EKFJGEJDEAL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FLBPJDMEJEE",
-            |m: &GridFightSupplyActionInfo| { &m.FLBPJDMEJEE },
-            |m: &mut GridFightSupplyActionInfo| { &mut m.FLBPJDMEJEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightSupplyActionInfo>(
             "GridFightSupplyActionInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GridFightSupplyActionInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.supply_role_info_list.push(is.read_message()?);
+                40 => {
+                    self.BAGNNMNPKPE = is.read_uint32()?;
                 },
                 104 => {
-                    self.AJLDNHKGMCJ = is.read_uint32()?;
+                    self.IFDCNMPALMM = is.read_uint32()?;
                 },
-                40 => {
-                    self.GLABGGFIEAH = is.read_uint32()?;
+                64 => {
+                    self.CBFPCHKNEAH = is.read_uint32()?;
                 },
-                88 => {
-                    self.EKFJGEJDEAL = is.read_uint32()?;
+                8 => {
+                    self.JLMLOMOLEMJ = is.read_uint32()?;
                 },
-                24 => {
-                    self.FLBPJDMEJEE = is.read_uint32()?;
+                34 => {
+                    self.supply_role_info_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,43 +127,43 @@ impl ::protobuf::Message for GridFightSupplyActionInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BAGNNMNPKPE != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.BAGNNMNPKPE);
+        }
+        if self.IFDCNMPALMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IFDCNMPALMM);
+        }
+        if self.CBFPCHKNEAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CBFPCHKNEAH);
+        }
+        if self.JLMLOMOLEMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.JLMLOMOLEMJ);
+        }
         for value in &self.supply_role_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.AJLDNHKGMCJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.AJLDNHKGMCJ);
-        }
-        if self.GLABGGFIEAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GLABGGFIEAH);
-        }
-        if self.EKFJGEJDEAL != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.EKFJGEJDEAL);
-        }
-        if self.FLBPJDMEJEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FLBPJDMEJEE);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.BAGNNMNPKPE != 0 {
+            os.write_uint32(5, self.BAGNNMNPKPE)?;
+        }
+        if self.IFDCNMPALMM != 0 {
+            os.write_uint32(13, self.IFDCNMPALMM)?;
+        }
+        if self.CBFPCHKNEAH != 0 {
+            os.write_uint32(8, self.CBFPCHKNEAH)?;
+        }
+        if self.JLMLOMOLEMJ != 0 {
+            os.write_uint32(1, self.JLMLOMOLEMJ)?;
+        }
         for v in &self.supply_role_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.AJLDNHKGMCJ != 0 {
-            os.write_uint32(13, self.AJLDNHKGMCJ)?;
-        }
-        if self.GLABGGFIEAH != 0 {
-            os.write_uint32(5, self.GLABGGFIEAH)?;
-        }
-        if self.EKFJGEJDEAL != 0 {
-            os.write_uint32(11, self.EKFJGEJDEAL)?;
-        }
-        if self.FLBPJDMEJEE != 0 {
-            os.write_uint32(3, self.FLBPJDMEJEE)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -181,21 +181,21 @@ impl ::protobuf::Message for GridFightSupplyActionInfo {
     }
 
     fn clear(&mut self) {
+        self.BAGNNMNPKPE = 0;
+        self.IFDCNMPALMM = 0;
+        self.CBFPCHKNEAH = 0;
+        self.JLMLOMOLEMJ = 0;
         self.supply_role_info_list.clear();
-        self.AJLDNHKGMCJ = 0;
-        self.GLABGGFIEAH = 0;
-        self.EKFJGEJDEAL = 0;
-        self.FLBPJDMEJEE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightSupplyActionInfo {
         static instance: GridFightSupplyActionInfo = GridFightSupplyActionInfo {
+            BAGNNMNPKPE: 0,
+            IFDCNMPALMM: 0,
+            CBFPCHKNEAH: 0,
+            JLMLOMOLEMJ: 0,
             supply_role_info_list: ::std::vec::Vec::new(),
-            AJLDNHKGMCJ: 0,
-            GLABGGFIEAH: 0,
-            EKFJGEJDEAL: 0,
-            FLBPJDMEJEE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSupplyActionInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGridFightSupplyActionInfo.proto\x1a\x1dGridFightSupplyRoleInfo.pro\
-    to\"\xf0\x01\n\x19GridFightSupplyActionInfo\x12K\n\x15supply_role_info_l\
-    ist\x18\x07\x20\x03(\x0b2\x18.GridFightSupplyRoleInfoR\x12supplyRoleInfo\
-    List\x12\x20\n\x0bAJLDNHKGMCJ\x18\r\x20\x01(\rR\x0bAJLDNHKGMCJ\x12\x20\n\
-    \x0bGLABGGFIEAH\x18\x05\x20\x01(\rR\x0bGLABGGFIEAH\x12\x20\n\x0bEKFJGEJD\
-    EAL\x18\x0b\x20\x01(\rR\x0bEKFJGEJDEAL\x12\x20\n\x0bFLBPJDMEJEE\x18\x03\
-    \x20\x01(\rR\x0bFLBPJDMEJEEb\x06proto3\
+    to\"\xf0\x01\n\x19GridFightSupplyActionInfo\x12\x20\n\x0bBAGNNMNPKPE\x18\
+    \x05\x20\x01(\rR\x0bBAGNNMNPKPE\x12\x20\n\x0bIFDCNMPALMM\x18\r\x20\x01(\
+    \rR\x0bIFDCNMPALMM\x12\x20\n\x0bCBFPCHKNEAH\x18\x08\x20\x01(\rR\x0bCBFPC\
+    HKNEAH\x12\x20\n\x0bJLMLOMOLEMJ\x18\x01\x20\x01(\rR\x0bJLMLOMOLEMJ\x12K\
+    \n\x15supply_role_info_list\x18\x04\x20\x03(\x0b2\x18.GridFightSupplyRol\
+    eInfoR\x12supplyRoleInfoListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,10 +30,10 @@ pub struct StartStarFightLevelCsReq {
     // message fields
     // @@protoc_insertion_point(field:StartStarFightLevelCsReq.group_id)
     pub group_id: u32,
-    // @@protoc_insertion_point(field:StartStarFightLevelCsReq.OHAHIIFJJMI)
-    pub OHAHIIFJJMI: u32,
+    // @@protoc_insertion_point(field:StartStarFightLevelCsReq.AKFJLNPHODD)
+    pub AKFJLNPHODD: u32,
     // @@protoc_insertion_point(field:StartStarFightLevelCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::CDBKEDCJBFK::CDBKEDCJBFK>,
+    pub avatar_list: ::std::vec::Vec<super::DFLAPODKLDE::DFLAPODKLDE>,
     // special fields
     // @@protoc_insertion_point(special_field:StartStarFightLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,9 +59,9 @@ impl StartStarFightLevelCsReq {
             |m: &mut StartStarFightLevelCsReq| { &mut m.group_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OHAHIIFJJMI",
-            |m: &StartStarFightLevelCsReq| { &m.OHAHIIFJJMI },
-            |m: &mut StartStarFightLevelCsReq| { &mut m.OHAHIIFJJMI },
+            "AKFJLNPHODD",
+            |m: &StartStarFightLevelCsReq| { &m.AKFJLNPHODD },
+            |m: &mut StartStarFightLevelCsReq| { &mut m.AKFJLNPHODD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -89,8 +89,8 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
                 40 => {
                     self.group_id = is.read_uint32()?;
                 },
-                64 => {
-                    self.OHAHIIFJJMI = is.read_uint32()?;
+                104 => {
+                    self.AKFJLNPHODD = is.read_uint32()?;
                 },
                 58 => {
                     self.avatar_list.push(is.read_message()?);
@@ -110,8 +110,8 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
         if self.group_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.group_id);
         }
-        if self.OHAHIIFJJMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.OHAHIIFJJMI);
+        if self.AKFJLNPHODD != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.AKFJLNPHODD);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
@@ -126,8 +126,8 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
         if self.group_id != 0 {
             os.write_uint32(5, self.group_id)?;
         }
-        if self.OHAHIIFJJMI != 0 {
-            os.write_uint32(8, self.OHAHIIFJJMI)?;
+        if self.AKFJLNPHODD != 0 {
+            os.write_uint32(13, self.AKFJLNPHODD)?;
         }
         for v in &self.avatar_list {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
@@ -150,7 +150,7 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
 
     fn clear(&mut self) {
         self.group_id = 0;
-        self.OHAHIIFJJMI = 0;
+        self.AKFJLNPHODD = 0;
         self.avatar_list.clear();
         self.special_fields.clear();
     }
@@ -158,7 +158,7 @@ impl ::protobuf::Message for StartStarFightLevelCsReq {
     fn default_instance() -> &'static StartStarFightLevelCsReq {
         static instance: StartStarFightLevelCsReq = StartStarFightLevelCsReq {
             group_id: 0,
-            OHAHIIFJJMI: 0,
+            AKFJLNPHODD: 0,
             avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for StartStarFightLevelCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eStartStarFightLevelCsReq.proto\x1a\x11CDBKEDCJBFK.proto\"\x86\x01\
+    \n\x1eStartStarFightLevelCsReq.proto\x1a\x11DFLAPODKLDE.proto\"\x86\x01\
     \n\x18StartStarFightLevelCsReq\x12\x19\n\x08group_id\x18\x05\x20\x01(\rR\
-    \x07groupId\x12\x20\n\x0bOHAHIIFJJMI\x18\x08\x20\x01(\rR\x0bOHAHIIFJJMI\
-    \x12-\n\x0bavatar_list\x18\x07\x20\x03(\x0b2\x0c.CDBKEDCJBFKR\navatarLis\
+    \x07groupId\x12\x20\n\x0bAKFJLNPHODD\x18\r\x20\x01(\rR\x0bAKFJLNPHODD\
+    \x12-\n\x0bavatar_list\x18\x07\x20\x03(\x0b2\x0c.DFLAPODKLDER\navatarLis\
     tb\x06proto3\
 ";
 
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CDBKEDCJBFK::file_descriptor().clone());
+            deps.push(super::DFLAPODKLDE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartStarFightLevelCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

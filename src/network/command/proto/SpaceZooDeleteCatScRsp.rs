@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooDeleteCatScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooDeleteCatScRsp.BEHFMJEDINF)
-    pub BEHFMJEDINF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SpaceZooDeleteCatScRsp.AIGNPJKIGOL)
+    pub AIGNPJKIGOL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SpaceZooDeleteCatScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl SpaceZooDeleteCatScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BEHFMJEDINF",
-            |m: &SpaceZooDeleteCatScRsp| { &m.BEHFMJEDINF },
-            |m: &mut SpaceZooDeleteCatScRsp| { &mut m.BEHFMJEDINF },
+            "AIGNPJKIGOL",
+            |m: &SpaceZooDeleteCatScRsp| { &m.AIGNPJKIGOL },
+            |m: &mut SpaceZooDeleteCatScRsp| { &mut m.AIGNPJKIGOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BEHFMJEDINF)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AIGNPJKIGOL)?;
                 },
-                8 => {
-                    self.BEHFMJEDINF.push(is.read_uint32()?);
+                64 => {
+                    self.AIGNPJKIGOL.push(is.read_uint32()?);
                 },
-                72 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.BEHFMJEDINF);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.AIGNPJKIGOL);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.BEHFMJEDINF)?;
+        os.write_repeated_packed_uint32(8, &self.AIGNPJKIGOL)?;
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -131,14 +131,14 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
     }
 
     fn clear(&mut self) {
-        self.BEHFMJEDINF.clear();
+        self.AIGNPJKIGOL.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooDeleteCatScRsp {
         static instance: SpaceZooDeleteCatScRsp = SpaceZooDeleteCatScRsp {
-            BEHFMJEDINF: ::std::vec::Vec::new(),
+            AIGNPJKIGOL: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooDeleteCatScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSpaceZooDeleteCatScRsp.proto\"T\n\x16SpaceZooDeleteCatScRsp\x12\
-    \x20\n\x0bBEHFMJEDINF\x18\x01\x20\x03(\rR\x0bBEHFMJEDINF\x12\x18\n\x07re\
-    tcode\x18\t\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x20\n\x0bAIGNPJKIGOL\x18\x08\x20\x03(\rR\x0bAIGNPJKIGOL\x12\x18\n\x07re\
+    tcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

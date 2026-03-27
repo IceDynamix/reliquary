@@ -30,10 +30,10 @@ pub struct HeliobusChallengeData {
     // message fields
     // @@protoc_insertion_point(field:HeliobusChallengeData.challenge_id)
     pub challenge_id: u32,
-    // @@protoc_insertion_point(field:HeliobusChallengeData.MKMIJHDOPJJ)
-    pub MKMIJHDOPJJ: bool,
     // @@protoc_insertion_point(field:HeliobusChallengeData.star)
     pub star: u32,
+    // @@protoc_insertion_point(field:HeliobusChallengeData.EFBKENIFNOB)
+    pub EFBKENIFNOB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusChallengeData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl HeliobusChallengeData {
             |m: &mut HeliobusChallengeData| { &mut m.challenge_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKMIJHDOPJJ",
-            |m: &HeliobusChallengeData| { &m.MKMIJHDOPJJ },
-            |m: &mut HeliobusChallengeData| { &mut m.MKMIJHDOPJJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "star",
             |m: &HeliobusChallengeData| { &m.star },
             |m: &mut HeliobusChallengeData| { &mut m.star },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EFBKENIFNOB",
+            |m: &HeliobusChallengeData| { &m.EFBKENIFNOB },
+            |m: &mut HeliobusChallengeData| { &mut m.EFBKENIFNOB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusChallengeData>(
             "HeliobusChallengeData",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for HeliobusChallengeData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                112 => {
-                    self.MKMIJHDOPJJ = is.read_bool()?;
-                },
-                56 => {
+                80 => {
                     self.star = is.read_uint32()?;
+                },
+                112 => {
+                    self.EFBKENIFNOB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for HeliobusChallengeData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.challenge_id);
-        }
-        if self.MKMIJHDOPJJ != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::uint32_size(4, self.challenge_id);
         }
         if self.star != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.star);
+            my_size += ::protobuf::rt::uint32_size(10, self.star);
+        }
+        if self.EFBKENIFNOB != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for HeliobusChallengeData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.challenge_id != 0 {
-            os.write_uint32(5, self.challenge_id)?;
-        }
-        if self.MKMIJHDOPJJ != false {
-            os.write_bool(14, self.MKMIJHDOPJJ)?;
+            os.write_uint32(4, self.challenge_id)?;
         }
         if self.star != 0 {
-            os.write_uint32(7, self.star)?;
+            os.write_uint32(10, self.star)?;
+        }
+        if self.EFBKENIFNOB != false {
+            os.write_bool(14, self.EFBKENIFNOB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for HeliobusChallengeData {
 
     fn clear(&mut self) {
         self.challenge_id = 0;
-        self.MKMIJHDOPJJ = false;
         self.star = 0;
+        self.EFBKENIFNOB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusChallengeData {
         static instance: HeliobusChallengeData = HeliobusChallengeData {
             challenge_id: 0,
-            MKMIJHDOPJJ: false,
             star: 0,
+            EFBKENIFNOB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusChallengeData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bHeliobusChallengeData.proto\"p\n\x15HeliobusChallengeData\x12!\n\
-    \x0cchallenge_id\x18\x05\x20\x01(\rR\x0bchallengeId\x12\x20\n\x0bMKMIJHD\
-    OPJJ\x18\x0e\x20\x01(\x08R\x0bMKMIJHDOPJJ\x12\x12\n\x04star\x18\x07\x20\
-    \x01(\rR\x04starb\x06proto3\
+    \x0cchallenge_id\x18\x04\x20\x01(\rR\x0bchallengeId\x12\x12\n\x04star\
+    \x18\n\x20\x01(\rR\x04star\x12\x20\n\x0bEFBKENIFNOB\x18\x0e\x20\x01(\x08\
+    R\x0bEFBKENIFNOBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,10 +27,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TutorialGuideType)
 pub enum TutorialGuideType {
-    // @@protoc_insertion_point(enum_value:TutorialGuideType.KILIOMKNMCJ_EBNOILKPAOD)
-    KILIOMKNMCJ_EBNOILKPAOD = 0,
-    // @@protoc_insertion_point(enum_value:TutorialGuideType.KILIOMKNMCJ_CNOAHIMHNLC)
-    KILIOMKNMCJ_CNOAHIMHNLC = 1,
+    // @@protoc_insertion_point(enum_value:TutorialGuideType.TutorialGuideType_FNHBHDLFFAE)
+    TutorialGuideType_FNHBHDLFFAE = 0,
+    // @@protoc_insertion_point(enum_value:TutorialGuideType.TutorialGuideType_DJJEJAAODMN)
+    TutorialGuideType_DJJEJAAODMN = 1,
 }
 
 impl ::protobuf::Enum for TutorialGuideType {
@@ -42,23 +42,23 @@ impl ::protobuf::Enum for TutorialGuideType {
 
     fn from_i32(value: i32) -> ::std::option::Option<TutorialGuideType> {
         match value {
-            0 => ::std::option::Option::Some(TutorialGuideType::KILIOMKNMCJ_EBNOILKPAOD),
-            1 => ::std::option::Option::Some(TutorialGuideType::KILIOMKNMCJ_CNOAHIMHNLC),
+            0 => ::std::option::Option::Some(TutorialGuideType::TutorialGuideType_FNHBHDLFFAE),
+            1 => ::std::option::Option::Some(TutorialGuideType::TutorialGuideType_DJJEJAAODMN),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TutorialGuideType> {
         match str {
-            "KILIOMKNMCJ_EBNOILKPAOD" => ::std::option::Option::Some(TutorialGuideType::KILIOMKNMCJ_EBNOILKPAOD),
-            "KILIOMKNMCJ_CNOAHIMHNLC" => ::std::option::Option::Some(TutorialGuideType::KILIOMKNMCJ_CNOAHIMHNLC),
+            "TutorialGuideType_FNHBHDLFFAE" => ::std::option::Option::Some(TutorialGuideType::TutorialGuideType_FNHBHDLFFAE),
+            "TutorialGuideType_DJJEJAAODMN" => ::std::option::Option::Some(TutorialGuideType::TutorialGuideType_DJJEJAAODMN),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TutorialGuideType] = &[
-        TutorialGuideType::KILIOMKNMCJ_EBNOILKPAOD,
-        TutorialGuideType::KILIOMKNMCJ_CNOAHIMHNLC,
+        TutorialGuideType::TutorialGuideType_FNHBHDLFFAE,
+        TutorialGuideType::TutorialGuideType_DJJEJAAODMN,
     ];
 }
 
@@ -76,7 +76,7 @@ impl ::protobuf::EnumFull for TutorialGuideType {
 
 impl ::std::default::Default for TutorialGuideType {
     fn default() -> Self {
-        TutorialGuideType::KILIOMKNMCJ_EBNOILKPAOD
+        TutorialGuideType::TutorialGuideType_FNHBHDLFFAE
     }
 }
 
@@ -87,9 +87,9 @@ impl TutorialGuideType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17TutorialGuideType.proto*M\n\x11TutorialGuideType\x12\x1b\n\x17KILI\
-    OMKNMCJ_EBNOILKPAOD\x10\0\x12\x1b\n\x17KILIOMKNMCJ_CNOAHIMHNLC\x10\x01b\
-    \x06proto3\
+    \n\x17TutorialGuideType.proto*Y\n\x11TutorialGuideType\x12!\n\x1dTutoria\
+    lGuideType_FNHBHDLFFAE\x10\0\x12!\n\x1dTutorialGuideType_DJJEJAAODMN\x10\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

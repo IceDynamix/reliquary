@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraRoundWorkStartCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.JBFJPJMKEAA)
-    pub JBFJPJMKEAA: u32,
-    // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.CGNHDDDPAKE)
-    pub CGNHDDDPAKE: ::std::vec::Vec<super::ECAKIEHEHPD::ECAKIEHEHPD>,
-    // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.JNALDLPECGD)
-    pub JNALDLPECGD: u32,
     // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.lineup)
-    pub lineup: ::protobuf::MessageField<super::DKMHKBMAMBN::DKMHKBMAMBN>,
+    pub lineup: ::protobuf::MessageField<super::JDALAFCNBEK::JDALAFCNBEK>,
+    // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.OBIGCJJIFGC)
+    pub OBIGCJJIFGC: ::std::vec::Vec<super::ABLLCAIHGHH::ABLLCAIHGHH>,
+    // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.LCHCBKNMIHO)
+    pub LCHCBKNMIHO: u32,
+    // @@protoc_insertion_point(field:ChimeraRoundWorkStartCsReq.EEHDMDIJLAF)
+    pub EEHDMDIJLAF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraRoundWorkStartCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl ChimeraRoundWorkStartCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBFJPJMKEAA",
-            |m: &ChimeraRoundWorkStartCsReq| { &m.JBFJPJMKEAA },
-            |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.JBFJPJMKEAA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CGNHDDDPAKE",
-            |m: &ChimeraRoundWorkStartCsReq| { &m.CGNHDDDPAKE },
-            |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.CGNHDDDPAKE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNALDLPECGD",
-            |m: &ChimeraRoundWorkStartCsReq| { &m.JNALDLPECGD },
-            |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.JNALDLPECGD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DKMHKBMAMBN::DKMHKBMAMBN>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JDALAFCNBEK::JDALAFCNBEK>(
             "lineup",
             |m: &ChimeraRoundWorkStartCsReq| { &m.lineup },
             |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.lineup },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OBIGCJJIFGC",
+            |m: &ChimeraRoundWorkStartCsReq| { &m.OBIGCJJIFGC },
+            |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.OBIGCJJIFGC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LCHCBKNMIHO",
+            |m: &ChimeraRoundWorkStartCsReq| { &m.LCHCBKNMIHO },
+            |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.LCHCBKNMIHO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EEHDMDIJLAF",
+            |m: &ChimeraRoundWorkStartCsReq| { &m.EEHDMDIJLAF },
+            |m: &mut ChimeraRoundWorkStartCsReq| { &mut m.EEHDMDIJLAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraRoundWorkStartCsReq>(
             "ChimeraRoundWorkStartCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ChimeraRoundWorkStartCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.JBFJPJMKEAA = is.read_uint32()?;
-                },
-                90 => {
-                    self.CGNHDDDPAKE.push(is.read_message()?);
-                },
-                8 => {
-                    self.JNALDLPECGD = is.read_uint32()?;
-                },
-                58 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                34 => {
+                    self.OBIGCJJIFGC.push(is.read_message()?);
+                },
+                48 => {
+                    self.LCHCBKNMIHO = is.read_uint32()?;
+                },
+                40 => {
+                    self.EEHDMDIJLAF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for ChimeraRoundWorkStartCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JBFJPJMKEAA != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.JBFJPJMKEAA);
-        }
-        for value in &self.CGNHDDDPAKE {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.JNALDLPECGD != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JNALDLPECGD);
-        }
         if let Some(v) = self.lineup.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.OBIGCJJIFGC {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.LCHCBKNMIHO != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LCHCBKNMIHO);
+        }
+        if self.EEHDMDIJLAF != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.EEHDMDIJLAF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for ChimeraRoundWorkStartCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JBFJPJMKEAA != 0 {
-            os.write_uint32(4, self.JBFJPJMKEAA)?;
-        }
-        for v in &self.CGNHDDDPAKE {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        if self.JNALDLPECGD != 0 {
-            os.write_uint32(1, self.JNALDLPECGD)?;
-        }
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        for v in &self.OBIGCJJIFGC {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        if self.LCHCBKNMIHO != 0 {
+            os.write_uint32(6, self.LCHCBKNMIHO)?;
+        }
+        if self.EEHDMDIJLAF != 0 {
+            os.write_uint32(5, self.EEHDMDIJLAF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for ChimeraRoundWorkStartCsReq {
     }
 
     fn clear(&mut self) {
-        self.JBFJPJMKEAA = 0;
-        self.CGNHDDDPAKE.clear();
-        self.JNALDLPECGD = 0;
         self.lineup.clear();
+        self.OBIGCJJIFGC.clear();
+        self.LCHCBKNMIHO = 0;
+        self.EEHDMDIJLAF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraRoundWorkStartCsReq {
         static instance: ChimeraRoundWorkStartCsReq = ChimeraRoundWorkStartCsReq {
-            JBFJPJMKEAA: 0,
-            CGNHDDDPAKE: ::std::vec::Vec::new(),
-            JNALDLPECGD: 0,
             lineup: ::protobuf::MessageField::none(),
+            OBIGCJJIFGC: ::std::vec::Vec::new(),
+            LCHCBKNMIHO: 0,
+            EEHDMDIJLAF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraRoundWorkStartCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20ChimeraRoundWorkStartCsReq.proto\x1a\x11DKMHKBMAMBN.proto\x1a\x11E\
-    CAKIEHEHPD.proto\"\xb6\x01\n\x1aChimeraRoundWorkStartCsReq\x12\x20\n\x0b\
-    JBFJPJMKEAA\x18\x04\x20\x01(\rR\x0bJBFJPJMKEAA\x12.\n\x0bCGNHDDDPAKE\x18\
-    \x0b\x20\x03(\x0b2\x0c.ECAKIEHEHPDR\x0bCGNHDDDPAKE\x12\x20\n\x0bJNALDLPE\
-    CGD\x18\x01\x20\x01(\rR\x0bJNALDLPECGD\x12$\n\x06lineup\x18\x07\x20\x01(\
-    \x0b2\x0c.DKMHKBMAMBNR\x06lineupb\x06proto3\
+    \n\x20ChimeraRoundWorkStartCsReq.proto\x1a\x11ABLLCAIHGHH.proto\x1a\x11J\
+    DALAFCNBEK.proto\"\xb6\x01\n\x1aChimeraRoundWorkStartCsReq\x12$\n\x06lin\
+    eup\x18\n\x20\x01(\x0b2\x0c.JDALAFCNBEKR\x06lineup\x12.\n\x0bOBIGCJJIFGC\
+    \x18\x04\x20\x03(\x0b2\x0c.ABLLCAIHGHHR\x0bOBIGCJJIFGC\x12\x20\n\x0bLCHC\
+    BKNMIHO\x18\x06\x20\x01(\rR\x0bLCHCBKNMIHO\x12\x20\n\x0bEEHDMDIJLAF\x18\
+    \x05\x20\x01(\rR\x0bEEHDMDIJLAFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DKMHKBMAMBN::file_descriptor().clone());
-            deps.push(super::ECAKIEHEHPD::file_descriptor().clone());
+            deps.push(super::ABLLCAIHGHH::file_descriptor().clone());
+            deps.push(super::JDALAFCNBEK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChimeraRoundWorkStartCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

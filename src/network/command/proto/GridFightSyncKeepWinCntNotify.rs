@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightSyncKeepWinCntNotify {
     // message fields
-    // @@protoc_insertion_point(field:GridFightSyncKeepWinCntNotify.KGJGBDCILJH)
-    pub KGJGBDCILJH: u32,
+    // @@protoc_insertion_point(field:GridFightSyncKeepWinCntNotify.KMMKGNLAIHN)
+    pub KMMKGNLAIHN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightSyncKeepWinCntNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GridFightSyncKeepWinCntNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGJGBDCILJH",
-            |m: &GridFightSyncKeepWinCntNotify| { &m.KGJGBDCILJH },
-            |m: &mut GridFightSyncKeepWinCntNotify| { &mut m.KGJGBDCILJH },
+            "KMMKGNLAIHN",
+            |m: &GridFightSyncKeepWinCntNotify| { &m.KMMKGNLAIHN },
+            |m: &mut GridFightSyncKeepWinCntNotify| { &mut m.KMMKGNLAIHN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightSyncKeepWinCntNotify>(
             "GridFightSyncKeepWinCntNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GridFightSyncKeepWinCntNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.KGJGBDCILJH = is.read_uint32()?;
+                48 => {
+                    self.KMMKGNLAIHN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GridFightSyncKeepWinCntNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KGJGBDCILJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KGJGBDCILJH);
+        if self.KMMKGNLAIHN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KMMKGNLAIHN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GridFightSyncKeepWinCntNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KGJGBDCILJH != 0 {
-            os.write_uint32(7, self.KGJGBDCILJH)?;
+        if self.KMMKGNLAIHN != 0 {
+            os.write_uint32(6, self.KMMKGNLAIHN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GridFightSyncKeepWinCntNotify {
     }
 
     fn clear(&mut self) {
-        self.KGJGBDCILJH = 0;
+        self.KMMKGNLAIHN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightSyncKeepWinCntNotify {
         static instance: GridFightSyncKeepWinCntNotify = GridFightSyncKeepWinCntNotify {
-            KGJGBDCILJH: 0,
+            KMMKGNLAIHN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSyncKeepWinCntNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GridFightSyncKeepWinCntNotify.proto\"A\n\x1dGridFightSyncKeepWinCntNo\
-    tify\x12\x20\n\x0bKGJGBDCILJH\x18\x07\x20\x01(\rR\x0bKGJGBDCILJHb\x06pro\
+    tify\x12\x20\n\x0bKMMKGNLAIHN\x18\x06\x20\x01(\rR\x0bKMMKGNLAIHNb\x06pro\
     to3\
 ";
 

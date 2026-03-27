@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncMuseumRandomEventStartScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncMuseumRandomEventStartScNotify.BGLBNDKFJEA)
-    pub BGLBNDKFJEA: ::protobuf::MessageField<super::OLGPPFEBJNM::OLGPPFEBJNM>,
+    // @@protoc_insertion_point(field:SyncMuseumRandomEventStartScNotify.HFKDHPNCKJN)
+    pub HFKDHPNCKJN: ::protobuf::MessageField<super::DAIAIFBFEGH::DAIAIFBFEGH>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncMuseumRandomEventStartScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl SyncMuseumRandomEventStartScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OLGPPFEBJNM::OLGPPFEBJNM>(
-            "BGLBNDKFJEA",
-            |m: &SyncMuseumRandomEventStartScNotify| { &m.BGLBNDKFJEA },
-            |m: &mut SyncMuseumRandomEventStartScNotify| { &mut m.BGLBNDKFJEA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DAIAIFBFEGH::DAIAIFBFEGH>(
+            "HFKDHPNCKJN",
+            |m: &SyncMuseumRandomEventStartScNotify| { &m.HFKDHPNCKJN },
+            |m: &mut SyncMuseumRandomEventStartScNotify| { &mut m.HFKDHPNCKJN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncMuseumRandomEventStartScNotify>(
             "SyncMuseumRandomEventStartScNotify",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for SyncMuseumRandomEventStartScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BGLBNDKFJEA)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HFKDHPNCKJN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncMuseumRandomEventStartScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BGLBNDKFJEA.as_ref() {
+        if let Some(v) = self.HFKDHPNCKJN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SyncMuseumRandomEventStartScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BGLBNDKFJEA.as_ref() {
+        if let Some(v) = self.HFKDHPNCKJN.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncMuseumRandomEventStartScNotify {
     }
 
     fn clear(&mut self) {
-        self.BGLBNDKFJEA.clear();
+        self.HFKDHPNCKJN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncMuseumRandomEventStartScNotify {
         static instance: SyncMuseumRandomEventStartScNotify = SyncMuseumRandomEventStartScNotify {
-            BGLBNDKFJEA: ::protobuf::MessageField::none(),
+            HFKDHPNCKJN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncMuseumRandomEventStartScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(SyncMuseumRandomEventStartScNotify.proto\x1a\x11OLGPPFEBJNM.proto\"T\
-    \n\"SyncMuseumRandomEventStartScNotify\x12.\n\x0bBGLBNDKFJEA\x18\x01\x20\
-    \x01(\x0b2\x0c.OLGPPFEBJNMR\x0bBGLBNDKFJEAb\x06proto3\
+    \n(SyncMuseumRandomEventStartScNotify.proto\x1a\x11DAIAIFBFEGH.proto\"T\
+    \n\"SyncMuseumRandomEventStartScNotify\x12.\n\x0bHFKDHPNCKJN\x18\x01\x20\
+    \x01(\x0b2\x0c.DAIAIFBFEGHR\x0bHFKDHPNCKJNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OLGPPFEBJNM::file_descriptor().clone());
+            deps.push(super::DAIAIFBFEGH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncMuseumRandomEventStartScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

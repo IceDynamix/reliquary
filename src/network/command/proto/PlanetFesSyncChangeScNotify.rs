@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesSyncChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesSyncChangeScNotify.MENPIMGGPHD)
-    pub MENPIMGGPHD: ::std::vec::Vec<super::CIIIDMGLKDC::CIIIDMGLKDC>,
+    // @@protoc_insertion_point(field:PlanetFesSyncChangeScNotify.GNNBOPHBADD)
+    pub GNNBOPHBADD: ::std::vec::Vec<super::PFJLIBACFJD::PFJLIBACFJD>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesSyncChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesSyncChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MENPIMGGPHD",
-            |m: &PlanetFesSyncChangeScNotify| { &m.MENPIMGGPHD },
-            |m: &mut PlanetFesSyncChangeScNotify| { &mut m.MENPIMGGPHD },
+            "GNNBOPHBADD",
+            |m: &PlanetFesSyncChangeScNotify| { &m.GNNBOPHBADD },
+            |m: &mut PlanetFesSyncChangeScNotify| { &mut m.GNNBOPHBADD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesSyncChangeScNotify>(
             "PlanetFesSyncChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesSyncChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.MENPIMGGPHD.push(is.read_message()?);
+                106 => {
+                    self.GNNBOPHBADD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PlanetFesSyncChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MENPIMGGPHD {
+        for value in &self.GNNBOPHBADD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PlanetFesSyncChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MENPIMGGPHD {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.GNNBOPHBADD {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PlanetFesSyncChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.MENPIMGGPHD.clear();
+        self.GNNBOPHBADD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesSyncChangeScNotify {
         static instance: PlanetFesSyncChangeScNotify = PlanetFesSyncChangeScNotify {
-            MENPIMGGPHD: ::std::vec::Vec::new(),
+            GNNBOPHBADD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesSyncChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!PlanetFesSyncChangeScNotify.proto\x1a\x11CIIIDMGLKDC.proto\"M\n\x1bPl\
-    anetFesSyncChangeScNotify\x12.\n\x0bMENPIMGGPHD\x18\x0e\x20\x03(\x0b2\
-    \x0c.CIIIDMGLKDCR\x0bMENPIMGGPHDb\x06proto3\
+    \n!PlanetFesSyncChangeScNotify.proto\x1a\x11PFJLIBACFJD.proto\"M\n\x1bPl\
+    anetFesSyncChangeScNotify\x12.\n\x0bGNNBOPHBADD\x18\r\x20\x03(\x0b2\x0c.\
+    PFJLIBACFJDR\x0bGNNBOPHBADDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CIIIDMGLKDC::file_descriptor().clone());
+            deps.push(super::PFJLIBACFJD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesSyncChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

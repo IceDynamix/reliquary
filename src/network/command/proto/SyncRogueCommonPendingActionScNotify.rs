@@ -29,9 +29,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct SyncRogueCommonPendingActionScNotify {
     // message fields
     // @@protoc_insertion_point(field:SyncRogueCommonPendingActionScNotify.action)
-    pub action: ::protobuf::MessageField<super::BHBNBIOGKPF::BHBNBIOGKPF>,
-    // @@protoc_insertion_point(field:SyncRogueCommonPendingActionScNotify.BHKAGJHDCLM)
-    pub BHKAGJHDCLM: u32,
+    pub action: ::protobuf::MessageField<super::GEOPHOBIBCD::GEOPHOBIBCD>,
+    // @@protoc_insertion_point(field:SyncRogueCommonPendingActionScNotify.FFOJLKPMEBG)
+    pub FFOJLKPMEBG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueCommonPendingActionScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SyncRogueCommonPendingActionScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BHBNBIOGKPF::BHBNBIOGKPF>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GEOPHOBIBCD::GEOPHOBIBCD>(
             "action",
             |m: &SyncRogueCommonPendingActionScNotify| { &m.action },
             |m: &mut SyncRogueCommonPendingActionScNotify| { &mut m.action },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHKAGJHDCLM",
-            |m: &SyncRogueCommonPendingActionScNotify| { &m.BHKAGJHDCLM },
-            |m: &mut SyncRogueCommonPendingActionScNotify| { &mut m.BHKAGJHDCLM },
+            "FFOJLKPMEBG",
+            |m: &SyncRogueCommonPendingActionScNotify| { &m.FFOJLKPMEBG },
+            |m: &mut SyncRogueCommonPendingActionScNotify| { &mut m.FFOJLKPMEBG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueCommonPendingActionScNotify>(
             "SyncRogueCommonPendingActionScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.action)?;
                 },
-                104 => {
-                    self.BHKAGJHDCLM = is.read_uint32()?;
+                120 => {
+                    self.FFOJLKPMEBG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,8 +101,8 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BHKAGJHDCLM != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BHKAGJHDCLM);
+        if self.FFOJLKPMEBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.FFOJLKPMEBG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        if self.BHKAGJHDCLM != 0 {
-            os.write_uint32(13, self.BHKAGJHDCLM)?;
+        if self.FFOJLKPMEBG != 0 {
+            os.write_uint32(15, self.FFOJLKPMEBG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for SyncRogueCommonPendingActionScNotify {
 
     fn clear(&mut self) {
         self.action.clear();
-        self.BHKAGJHDCLM = 0;
+        self.FFOJLKPMEBG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueCommonPendingActionScNotify {
         static instance: SyncRogueCommonPendingActionScNotify = SyncRogueCommonPendingActionScNotify {
             action: ::protobuf::MessageField::none(),
-            BHKAGJHDCLM: 0,
+            FFOJLKPMEBG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonPendingActionScNotify
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*SyncRogueCommonPendingActionScNotify.proto\x1a\x11BHBNBIOGKPF.proto\"\
-    n\n$SyncRogueCommonPendingActionScNotify\x12$\n\x06action\x18\x01\x20\
-    \x01(\x0b2\x0c.BHBNBIOGKPFR\x06action\x12\x20\n\x0bBHKAGJHDCLM\x18\r\x20\
-    \x01(\rR\x0bBHKAGJHDCLMb\x06proto3\
+    \n*SyncRogueCommonPendingActionScNotify.proto\x1a\x11GEOPHOBIBCD.proto\"\
+    n\n$SyncRogueCommonPendingActionScNotify\x12$\n\x06action\x18\x0c\x20\
+    \x01(\x0b2\x0c.GEOPHOBIBCDR\x06action\x12\x20\n\x0bFFOJLKPMEBG\x18\x0f\
+    \x20\x01(\rR\x0bFFOJLKPMEBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BHBNBIOGKPF::file_descriptor().clone());
+            deps.push(super::GEOPHOBIBCD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncRogueCommonPendingActionScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -72,7 +72,7 @@ impl ::protobuf::Message for FateShopLockGoodsCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                8 => {
                     self.is_locked = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for FateShopLockGoodsCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_locked != false {
-            os.write_bool(10, self.is_locked)?;
+            os.write_bool(1, self.is_locked)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for FateShopLockGoodsCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cFateShopLockGoodsCsReq.proto\"5\n\x16FateShopLockGoodsCsReq\x12\
-    \x1b\n\tis_locked\x18\n\x20\x01(\x08R\x08isLockedb\x06proto3\
+    \x1b\n\tis_locked\x18\x01\x20\x01(\x08R\x08isLockedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

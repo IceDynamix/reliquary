@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightPortalServerDataUpdate {
     // message fields
+    // @@protoc_insertion_point(field:GridFightPortalServerDataUpdate.JPLNBNMFCHG)
+    pub JPLNBNMFCHG: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GridFightPortalServerDataUpdate.portal_buff_id)
     pub portal_buff_id: u32,
-    // @@protoc_insertion_point(field:GridFightPortalServerDataUpdate.OHIAPGNKKBI)
-    pub OHIAPGNKKBI: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightPortalServerDataUpdate.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GridFightPortalServerDataUpdate {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JPLNBNMFCHG",
+            |m: &GridFightPortalServerDataUpdate| { &m.JPLNBNMFCHG },
+            |m: &mut GridFightPortalServerDataUpdate| { &mut m.JPLNBNMFCHG },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "portal_buff_id",
             |m: &GridFightPortalServerDataUpdate| { &m.portal_buff_id },
             |m: &mut GridFightPortalServerDataUpdate| { &mut m.portal_buff_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OHIAPGNKKBI",
-            |m: &GridFightPortalServerDataUpdate| { &m.OHIAPGNKKBI },
-            |m: &mut GridFightPortalServerDataUpdate| { &mut m.OHIAPGNKKBI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightPortalServerDataUpdate>(
             "GridFightPortalServerDataUpdate",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for GridFightPortalServerDataUpdate {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JPLNBNMFCHG)?;
+                },
+                32 => {
+                    self.JPLNBNMFCHG.push(is.read_uint32()?);
+                },
+                72 => {
                     self.portal_buff_id = is.read_uint32()?;
-                },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OHIAPGNKKBI)?;
-                },
-                16 => {
-                    self.OHIAPGNKKBI.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GridFightPortalServerDataUpdate {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.JPLNBNMFCHG);
         if self.portal_buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.portal_buff_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.portal_buff_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.OHIAPGNKKBI);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(4, &self.JPLNBNMFCHG)?;
         if self.portal_buff_id != 0 {
-            os.write_uint32(15, self.portal_buff_id)?;
+            os.write_uint32(9, self.portal_buff_id)?;
         }
-        os.write_repeated_packed_uint32(2, &self.OHIAPGNKKBI)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for GridFightPortalServerDataUpdate {
     }
 
     fn clear(&mut self) {
+        self.JPLNBNMFCHG.clear();
         self.portal_buff_id = 0;
-        self.OHIAPGNKKBI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightPortalServerDataUpdate {
         static instance: GridFightPortalServerDataUpdate = GridFightPortalServerDataUpdate {
+            JPLNBNMFCHG: ::std::vec::Vec::new(),
             portal_buff_id: 0,
-            OHIAPGNKKBI: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightPortalServerDataUpdate {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%GridFightPortalServerDataUpdate.proto\"i\n\x1fGridFightPortalServerDa\
-    taUpdate\x12$\n\x0eportal_buff_id\x18\x0f\x20\x01(\rR\x0cportalBuffId\
-    \x12\x20\n\x0bOHIAPGNKKBI\x18\x02\x20\x03(\rR\x0bOHIAPGNKKBIb\x06proto3\
+    taUpdate\x12\x20\n\x0bJPLNBNMFCHG\x18\x04\x20\x03(\rR\x0bJPLNBNMFCHG\x12\
+    $\n\x0eportal_buff_id\x18\t\x20\x01(\rR\x0cportalBuffIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

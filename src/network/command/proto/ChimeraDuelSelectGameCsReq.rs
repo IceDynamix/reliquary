@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelSelectGameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelSelectGameCsReq.MIMCEJGCKBO)
-    pub MIMCEJGCKBO: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelSelectGameCsReq.JOBJLLEINIP)
+    pub JOBJLLEINIP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelSelectGameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ChimeraDuelSelectGameCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MIMCEJGCKBO",
-            |m: &ChimeraDuelSelectGameCsReq| { &m.MIMCEJGCKBO },
-            |m: &mut ChimeraDuelSelectGameCsReq| { &mut m.MIMCEJGCKBO },
+            "JOBJLLEINIP",
+            |m: &ChimeraDuelSelectGameCsReq| { &m.JOBJLLEINIP },
+            |m: &mut ChimeraDuelSelectGameCsReq| { &mut m.JOBJLLEINIP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelSelectGameCsReq>(
             "ChimeraDuelSelectGameCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ChimeraDuelSelectGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.MIMCEJGCKBO = is.read_uint32()?;
+                8 => {
+                    self.JOBJLLEINIP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ChimeraDuelSelectGameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MIMCEJGCKBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.MIMCEJGCKBO);
+        if self.JOBJLLEINIP != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.JOBJLLEINIP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ChimeraDuelSelectGameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MIMCEJGCKBO != 0 {
-            os.write_uint32(4, self.MIMCEJGCKBO)?;
+        if self.JOBJLLEINIP != 0 {
+            os.write_uint32(1, self.JOBJLLEINIP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ChimeraDuelSelectGameCsReq {
     }
 
     fn clear(&mut self) {
-        self.MIMCEJGCKBO = 0;
+        self.JOBJLLEINIP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelSelectGameCsReq {
         static instance: ChimeraDuelSelectGameCsReq = ChimeraDuelSelectGameCsReq {
-            MIMCEJGCKBO: 0,
+            JOBJLLEINIP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelSelectGameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ChimeraDuelSelectGameCsReq.proto\">\n\x1aChimeraDuelSelectGameCsRe\
-    q\x12\x20\n\x0bMIMCEJGCKBO\x18\x04\x20\x01(\rR\x0bMIMCEJGCKBOb\x06proto3\
+    q\x12\x20\n\x0bJOBJLLEINIP\x18\x01\x20\x01(\rR\x0bJOBJLLEINIPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

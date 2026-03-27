@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesChangeCardPieceApplyPermissionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesChangeCardPieceApplyPermissionScRsp.OKLJLPJOGFE)
-    pub OKLJLPJOGFE: u32,
+    // @@protoc_insertion_point(field:PlanetFesChangeCardPieceApplyPermissionScRsp.KEOLNPBCKJB)
+    pub KEOLNPBCKJB: u32,
     // @@protoc_insertion_point(field:PlanetFesChangeCardPieceApplyPermissionScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl PlanetFesChangeCardPieceApplyPermissionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKLJLPJOGFE",
-            |m: &PlanetFesChangeCardPieceApplyPermissionScRsp| { &m.OKLJLPJOGFE },
-            |m: &mut PlanetFesChangeCardPieceApplyPermissionScRsp| { &mut m.OKLJLPJOGFE },
+            "KEOLNPBCKJB",
+            |m: &PlanetFesChangeCardPieceApplyPermissionScRsp| { &m.KEOLNPBCKJB },
+            |m: &mut PlanetFesChangeCardPieceApplyPermissionScRsp| { &mut m.KEOLNPBCKJB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesChangeCardPieceApplyPermissionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.OKLJLPJOGFE = is.read_uint32()?;
+                112 => {
+                    self.KEOLNPBCKJB = is.read_uint32()?;
                 },
-                32 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlanetFesChangeCardPieceApplyPermissionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OKLJLPJOGFE != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OKLJLPJOGFE);
+        if self.KEOLNPBCKJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KEOLNPBCKJB);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlanetFesChangeCardPieceApplyPermissionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OKLJLPJOGFE != 0 {
-            os.write_uint32(1, self.OKLJLPJOGFE)?;
+        if self.KEOLNPBCKJB != 0 {
+            os.write_uint32(14, self.KEOLNPBCKJB)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for PlanetFesChangeCardPieceApplyPermissionScRsp {
     }
 
     fn clear(&mut self) {
-        self.OKLJLPJOGFE = 0;
+        self.KEOLNPBCKJB = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesChangeCardPieceApplyPermissionScRsp {
         static instance: PlanetFesChangeCardPieceApplyPermissionScRsp = PlanetFesChangeCardPieceApplyPermissionScRsp {
-            OKLJLPJOGFE: 0,
+            KEOLNPBCKJB: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesChangeCardPieceApplyPermiss
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n2PlanetFesChangeCardPieceApplyPermissionScRsp.proto\"j\n,PlanetFesChan\
-    geCardPieceApplyPermissionScRsp\x12\x20\n\x0bOKLJLPJOGFE\x18\x01\x20\x01\
-    (\rR\x0bOKLJLPJOGFE\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\
+    geCardPieceApplyPermissionScRsp\x12\x20\n\x0bKEOLNPBCKJB\x18\x0e\x20\x01\
+    (\rR\x0bKEOLNPBCKJB\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\
     \x06proto3\
 ";
 

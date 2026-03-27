@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateGunPlayDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.ADIKFAIMDGO)
-    pub ADIKFAIMDGO: ::protobuf::MessageField<super::PCBDCKNFIPO::PCBDCKNFIPO>,
+    // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.HIPDBAEAHGO)
+    pub HIPDBAEAHGO: ::protobuf::MessageField<super::FNAFALOFFNJ::FNAFALOFFNJ>,
     // @@protoc_insertion_point(field:UpdateGunPlayDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,10 +51,10 @@ impl UpdateGunPlayDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PCBDCKNFIPO::PCBDCKNFIPO>(
-            "ADIKFAIMDGO",
-            |m: &UpdateGunPlayDataScRsp| { &m.ADIKFAIMDGO },
-            |m: &mut UpdateGunPlayDataScRsp| { &mut m.ADIKFAIMDGO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FNAFALOFFNJ::FNAFALOFFNJ>(
+            "HIPDBAEAHGO",
+            |m: &UpdateGunPlayDataScRsp| { &m.HIPDBAEAHGO },
+            |m: &mut UpdateGunPlayDataScRsp| { &mut m.HIPDBAEAHGO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ADIKFAIMDGO)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HIPDBAEAHGO)?;
                 },
-                96 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ADIKFAIMDGO.as_ref() {
+        if let Some(v) = self.HIPDBAEAHGO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ADIKFAIMDGO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.HIPDBAEAHGO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for UpdateGunPlayDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.ADIKFAIMDGO.clear();
+        self.HIPDBAEAHGO.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateGunPlayDataScRsp {
         static instance: UpdateGunPlayDataScRsp = UpdateGunPlayDataScRsp {
-            ADIKFAIMDGO: ::protobuf::MessageField::none(),
+            HIPDBAEAHGO: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdateGunPlayDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cUpdateGunPlayDataScRsp.proto\x1a\x11PCBDCKNFIPO.proto\"b\n\x16Upda\
-    teGunPlayDataScRsp\x12.\n\x0bADIKFAIMDGO\x18\x0e\x20\x01(\x0b2\x0c.PCBDC\
-    KNFIPOR\x0bADIKFAIMDGO\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retco\
+    \n\x1cUpdateGunPlayDataScRsp.proto\x1a\x11FNAFALOFFNJ.proto\"b\n\x16Upda\
+    teGunPlayDataScRsp\x12.\n\x0bHIPDBAEAHGO\x18\x0b\x20\x01(\x0b2\x0c.FNAFA\
+    LOFFNJR\x0bHIPDBAEAHGO\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retco\
     deb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PCBDCKNFIPO::file_descriptor().clone());
+            deps.push(super::FNAFALOFFNJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdateGunPlayDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

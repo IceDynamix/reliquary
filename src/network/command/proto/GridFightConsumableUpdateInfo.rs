@@ -30,10 +30,10 @@ pub struct GridFightConsumableUpdateInfo {
     // message fields
     // @@protoc_insertion_point(field:GridFightConsumableUpdateInfo.item_id)
     pub item_id: u32,
-    // @@protoc_insertion_point(field:GridFightConsumableUpdateInfo.item_stack_count)
-    pub item_stack_count: i32,
     // @@protoc_insertion_point(field:GridFightConsumableUpdateInfo.num)
     pub num: u32,
+    // @@protoc_insertion_point(field:GridFightConsumableUpdateInfo.item_stack_count)
+    pub item_stack_count: i32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightConsumableUpdateInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl GridFightConsumableUpdateInfo {
             |m: &mut GridFightConsumableUpdateInfo| { &mut m.item_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "item_stack_count",
-            |m: &GridFightConsumableUpdateInfo| { &m.item_stack_count },
-            |m: &mut GridFightConsumableUpdateInfo| { &mut m.item_stack_count },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "num",
             |m: &GridFightConsumableUpdateInfo| { &m.num },
             |m: &mut GridFightConsumableUpdateInfo| { &mut m.num },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "item_stack_count",
+            |m: &GridFightConsumableUpdateInfo| { &m.item_stack_count },
+            |m: &mut GridFightConsumableUpdateInfo| { &mut m.item_stack_count },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightConsumableUpdateInfo>(
             "GridFightConsumableUpdateInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GridFightConsumableUpdateInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                112 => {
                     self.item_id = is.read_uint32()?;
                 },
                 120 => {
-                    self.item_stack_count = is.read_int32()?;
-                },
-                16 => {
                     self.num = is.read_uint32()?;
+                },
+                88 => {
+                    self.item_stack_count = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for GridFightConsumableUpdateInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.item_id);
-        }
-        if self.item_stack_count != 0 {
-            my_size += ::protobuf::rt::int32_size(15, self.item_stack_count);
+            my_size += ::protobuf::rt::uint32_size(14, self.item_id);
         }
         if self.num != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.num);
+            my_size += ::protobuf::rt::uint32_size(15, self.num);
+        }
+        if self.item_stack_count != 0 {
+            my_size += ::protobuf::rt::int32_size(11, self.item_stack_count);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GridFightConsumableUpdateInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.item_id != 0 {
-            os.write_uint32(10, self.item_id)?;
-        }
-        if self.item_stack_count != 0 {
-            os.write_int32(15, self.item_stack_count)?;
+            os.write_uint32(14, self.item_id)?;
         }
         if self.num != 0 {
-            os.write_uint32(2, self.num)?;
+            os.write_uint32(15, self.num)?;
+        }
+        if self.item_stack_count != 0 {
+            os.write_int32(11, self.item_stack_count)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for GridFightConsumableUpdateInfo {
 
     fn clear(&mut self) {
         self.item_id = 0;
-        self.item_stack_count = 0;
         self.num = 0;
+        self.item_stack_count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightConsumableUpdateInfo {
         static instance: GridFightConsumableUpdateInfo = GridFightConsumableUpdateInfo {
             item_id: 0,
-            item_stack_count: 0,
             num: 0,
+            item_stack_count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for GridFightConsumableUpdateInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GridFightConsumableUpdateInfo.proto\"t\n\x1dGridFightConsumableUpdate\
-    Info\x12\x17\n\x07item_id\x18\n\x20\x01(\rR\x06itemId\x12(\n\x10item_sta\
-    ck_count\x18\x0f\x20\x01(\x05R\x0eitemStackCount\x12\x10\n\x03num\x18\
-    \x02\x20\x01(\rR\x03numb\x06proto3\
+    Info\x12\x17\n\x07item_id\x18\x0e\x20\x01(\rR\x06itemId\x12\x10\n\x03num\
+    \x18\x0f\x20\x01(\rR\x03num\x12(\n\x10item_stack_count\x18\x0b\x20\x01(\
+    \x05R\x0eitemStackCountb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

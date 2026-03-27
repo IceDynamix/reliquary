@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetElationActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetElationActivityDataScRsp.level_data_list)
-    pub level_data_list: ::std::vec::Vec<super::ElationActivityLevelData::ElationActivityLevelData>,
     // @@protoc_insertion_point(field:GetElationActivityDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetElationActivityDataScRsp.level_data_list)
+    pub level_data_list: ::std::vec::Vec<super::ElationActivityLevelData::ElationActivityLevelData>,
     // special fields
     // @@protoc_insertion_point(special_field:GetElationActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetElationActivityDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "level_data_list",
-            |m: &GetElationActivityDataScRsp| { &m.level_data_list },
-            |m: &mut GetElationActivityDataScRsp| { &mut m.level_data_list },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetElationActivityDataScRsp| { &m.retcode },
             |m: &mut GetElationActivityDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "level_data_list",
+            |m: &GetElationActivityDataScRsp| { &m.level_data_list },
+            |m: &mut GetElationActivityDataScRsp| { &mut m.level_data_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetElationActivityDataScRsp>(
             "GetElationActivityDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetElationActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.level_data_list.push(is.read_message()?);
-                },
-                48 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
+                },
+                50 => {
+                    self.level_data_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetElationActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
         for value in &self.level_data_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.level_data_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
+        for v in &self.level_data_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetElationActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.level_data_list.clear();
         self.retcode = 0;
+        self.level_data_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetElationActivityDataScRsp {
         static instance: GetElationActivityDataScRsp = GetElationActivityDataScRsp {
-            level_data_list: ::std::vec::Vec::new(),
             retcode: 0,
+            level_data_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetElationActivityDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetElationActivityDataScRsp.proto\x1a\x1eElationActivityLevelData.pro\
-    to\"z\n\x1bGetElationActivityDataScRsp\x12A\n\x0flevel_data_list\x18\x01\
-    \x20\x03(\x0b2\x19.ElationActivityLevelDataR\rlevelDataList\x12\x18\n\
-    \x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
+    to\"z\n\x1bGetElationActivityDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\
+    \x01(\rR\x07retcode\x12A\n\x0flevel_data_list\x18\x06\x20\x03(\x0b2\x19.\
+    ElationActivityLevelDataR\rlevelDataListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

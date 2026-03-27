@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AlleyPlacingGameCsReq {
     // message fields
-    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.FDANBINFFCM)
-    pub FDANBINFFCM: u32,
-    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.ELMDBFPKOFJ)
-    pub ELMDBFPKOFJ: ::protobuf::MessageField<super::AlleyPlacingShip::AlleyPlacingShip>,
-    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.BHNBIIHFNAE)
-    pub BHNBIIHFNAE: u32,
-    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.EMHONOJHAOD)
-    pub EMHONOJHAOD: u32,
-    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.AHCIONJANJA)
-    pub AHCIONJANJA: u32,
-    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.DPPDGNAGAMM)
-    pub DPPDGNAGAMM: u32,
-    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.MHICFCKLAHH)
-    pub MHICFCKLAHH: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.AACDAEKHBMA)
+    pub AACDAEKHBMA: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.BIJOCNCLINB)
+    pub BIJOCNCLINB: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.AEFGIGJAEPP)
+    pub AEFGIGJAEPP: ::protobuf::MessageField<super::AlleyPlacingShip::AlleyPlacingShip>,
+    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.CMLFBHKBNEC)
+    pub CMLFBHKBNEC: u32,
     // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.cost_time)
     pub cost_time: u32,
-    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.EGHDOOPHOJA)
-    pub EGHDOOPHOJA: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.JNIFCCLINIB)
+    pub JNIFCCLINIB: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.OAIPAGFNIOL)
+    pub OAIPAGFNIOL: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.ANEDHEKHKGG)
+    pub ANEDHEKHKGG: u32,
+    // @@protoc_insertion_point(field:AlleyPlacingGameCsReq.ABMIOHPGOIA)
+    pub ABMIOHPGOIA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AlleyPlacingGameCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,39 +66,24 @@ impl AlleyPlacingGameCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDANBINFFCM",
-            |m: &AlleyPlacingGameCsReq| { &m.FDANBINFFCM },
-            |m: &mut AlleyPlacingGameCsReq| { &mut m.FDANBINFFCM },
+            "AACDAEKHBMA",
+            |m: &AlleyPlacingGameCsReq| { &m.AACDAEKHBMA },
+            |m: &mut AlleyPlacingGameCsReq| { &mut m.AACDAEKHBMA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BIJOCNCLINB",
+            |m: &AlleyPlacingGameCsReq| { &m.BIJOCNCLINB },
+            |m: &mut AlleyPlacingGameCsReq| { &mut m.BIJOCNCLINB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AlleyPlacingShip::AlleyPlacingShip>(
-            "ELMDBFPKOFJ",
-            |m: &AlleyPlacingGameCsReq| { &m.ELMDBFPKOFJ },
-            |m: &mut AlleyPlacingGameCsReq| { &mut m.ELMDBFPKOFJ },
+            "AEFGIGJAEPP",
+            |m: &AlleyPlacingGameCsReq| { &m.AEFGIGJAEPP },
+            |m: &mut AlleyPlacingGameCsReq| { &mut m.AEFGIGJAEPP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BHNBIIHFNAE",
-            |m: &AlleyPlacingGameCsReq| { &m.BHNBIIHFNAE },
-            |m: &mut AlleyPlacingGameCsReq| { &mut m.BHNBIIHFNAE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EMHONOJHAOD",
-            |m: &AlleyPlacingGameCsReq| { &m.EMHONOJHAOD },
-            |m: &mut AlleyPlacingGameCsReq| { &mut m.EMHONOJHAOD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHCIONJANJA",
-            |m: &AlleyPlacingGameCsReq| { &m.AHCIONJANJA },
-            |m: &mut AlleyPlacingGameCsReq| { &mut m.AHCIONJANJA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPPDGNAGAMM",
-            |m: &AlleyPlacingGameCsReq| { &m.DPPDGNAGAMM },
-            |m: &mut AlleyPlacingGameCsReq| { &mut m.DPPDGNAGAMM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MHICFCKLAHH",
-            |m: &AlleyPlacingGameCsReq| { &m.MHICFCKLAHH },
-            |m: &mut AlleyPlacingGameCsReq| { &mut m.MHICFCKLAHH },
+            "CMLFBHKBNEC",
+            |m: &AlleyPlacingGameCsReq| { &m.CMLFBHKBNEC },
+            |m: &mut AlleyPlacingGameCsReq| { &mut m.CMLFBHKBNEC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cost_time",
@@ -106,9 +91,24 @@ impl AlleyPlacingGameCsReq {
             |m: &mut AlleyPlacingGameCsReq| { &mut m.cost_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGHDOOPHOJA",
-            |m: &AlleyPlacingGameCsReq| { &m.EGHDOOPHOJA },
-            |m: &mut AlleyPlacingGameCsReq| { &mut m.EGHDOOPHOJA },
+            "JNIFCCLINIB",
+            |m: &AlleyPlacingGameCsReq| { &m.JNIFCCLINIB },
+            |m: &mut AlleyPlacingGameCsReq| { &mut m.JNIFCCLINIB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OAIPAGFNIOL",
+            |m: &AlleyPlacingGameCsReq| { &m.OAIPAGFNIOL },
+            |m: &mut AlleyPlacingGameCsReq| { &mut m.OAIPAGFNIOL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ANEDHEKHKGG",
+            |m: &AlleyPlacingGameCsReq| { &m.ANEDHEKHKGG },
+            |m: &mut AlleyPlacingGameCsReq| { &mut m.ANEDHEKHKGG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ABMIOHPGOIA",
+            |m: &AlleyPlacingGameCsReq| { &m.ABMIOHPGOIA },
+            |m: &mut AlleyPlacingGameCsReq| { &mut m.ABMIOHPGOIA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AlleyPlacingGameCsReq>(
             "AlleyPlacingGameCsReq",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for AlleyPlacingGameCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.FDANBINFFCM = is.read_uint32()?;
-                },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ELMDBFPKOFJ)?;
-                },
-                120 => {
-                    self.BHNBIIHFNAE = is.read_uint32()?;
-                },
                 112 => {
-                    self.EMHONOJHAOD = is.read_uint32()?;
+                    self.AACDAEKHBMA = is.read_uint32()?;
                 },
-                24 => {
-                    self.AHCIONJANJA = is.read_uint32()?;
+                48 => {
+                    self.BIJOCNCLINB = is.read_uint32()?;
                 },
-                16 => {
-                    self.DPPDGNAGAMM = is.read_uint32()?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEFGIGJAEPP)?;
                 },
-                40 => {
-                    self.MHICFCKLAHH = is.read_uint32()?;
+                56 => {
+                    self.CMLFBHKBNEC = is.read_uint32()?;
                 },
-                72 => {
+                96 => {
                     self.cost_time = is.read_uint32()?;
                 },
                 88 => {
-                    self.EGHDOOPHOJA = is.read_uint32()?;
+                    self.JNIFCCLINIB = is.read_uint32()?;
+                },
+                8 => {
+                    self.OAIPAGFNIOL = is.read_uint32()?;
+                },
+                104 => {
+                    self.ANEDHEKHKGG = is.read_uint32()?;
+                },
+                64 => {
+                    self.ABMIOHPGOIA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -167,33 +167,33 @@ impl ::protobuf::Message for AlleyPlacingGameCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FDANBINFFCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.FDANBINFFCM);
+        if self.AACDAEKHBMA != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.AACDAEKHBMA);
         }
-        if let Some(v) = self.ELMDBFPKOFJ.as_ref() {
+        if self.BIJOCNCLINB != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.BIJOCNCLINB);
+        }
+        if let Some(v) = self.AEFGIGJAEPP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.BHNBIIHFNAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BHNBIIHFNAE);
-        }
-        if self.EMHONOJHAOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EMHONOJHAOD);
-        }
-        if self.AHCIONJANJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.AHCIONJANJA);
-        }
-        if self.DPPDGNAGAMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DPPDGNAGAMM);
-        }
-        if self.MHICFCKLAHH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MHICFCKLAHH);
+        if self.CMLFBHKBNEC != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.CMLFBHKBNEC);
         }
         if self.cost_time != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.cost_time);
+            my_size += ::protobuf::rt::uint32_size(12, self.cost_time);
         }
-        if self.EGHDOOPHOJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.EGHDOOPHOJA);
+        if self.JNIFCCLINIB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.JNIFCCLINIB);
+        }
+        if self.OAIPAGFNIOL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.OAIPAGFNIOL);
+        }
+        if self.ANEDHEKHKGG != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.ANEDHEKHKGG);
+        }
+        if self.ABMIOHPGOIA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.ABMIOHPGOIA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -201,32 +201,32 @@ impl ::protobuf::Message for AlleyPlacingGameCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FDANBINFFCM != 0 {
-            os.write_uint32(10, self.FDANBINFFCM)?;
+        if self.AACDAEKHBMA != 0 {
+            os.write_uint32(14, self.AACDAEKHBMA)?;
         }
-        if let Some(v) = self.ELMDBFPKOFJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if self.BIJOCNCLINB != 0 {
+            os.write_uint32(6, self.BIJOCNCLINB)?;
         }
-        if self.BHNBIIHFNAE != 0 {
-            os.write_uint32(15, self.BHNBIIHFNAE)?;
+        if let Some(v) = self.AEFGIGJAEPP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if self.EMHONOJHAOD != 0 {
-            os.write_uint32(14, self.EMHONOJHAOD)?;
-        }
-        if self.AHCIONJANJA != 0 {
-            os.write_uint32(3, self.AHCIONJANJA)?;
-        }
-        if self.DPPDGNAGAMM != 0 {
-            os.write_uint32(2, self.DPPDGNAGAMM)?;
-        }
-        if self.MHICFCKLAHH != 0 {
-            os.write_uint32(5, self.MHICFCKLAHH)?;
+        if self.CMLFBHKBNEC != 0 {
+            os.write_uint32(7, self.CMLFBHKBNEC)?;
         }
         if self.cost_time != 0 {
-            os.write_uint32(9, self.cost_time)?;
+            os.write_uint32(12, self.cost_time)?;
         }
-        if self.EGHDOOPHOJA != 0 {
-            os.write_uint32(11, self.EGHDOOPHOJA)?;
+        if self.JNIFCCLINIB != 0 {
+            os.write_uint32(11, self.JNIFCCLINIB)?;
+        }
+        if self.OAIPAGFNIOL != 0 {
+            os.write_uint32(1, self.OAIPAGFNIOL)?;
+        }
+        if self.ANEDHEKHKGG != 0 {
+            os.write_uint32(13, self.ANEDHEKHKGG)?;
+        }
+        if self.ABMIOHPGOIA != 0 {
+            os.write_uint32(8, self.ABMIOHPGOIA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -245,29 +245,29 @@ impl ::protobuf::Message for AlleyPlacingGameCsReq {
     }
 
     fn clear(&mut self) {
-        self.FDANBINFFCM = 0;
-        self.ELMDBFPKOFJ.clear();
-        self.BHNBIIHFNAE = 0;
-        self.EMHONOJHAOD = 0;
-        self.AHCIONJANJA = 0;
-        self.DPPDGNAGAMM = 0;
-        self.MHICFCKLAHH = 0;
+        self.AACDAEKHBMA = 0;
+        self.BIJOCNCLINB = 0;
+        self.AEFGIGJAEPP.clear();
+        self.CMLFBHKBNEC = 0;
         self.cost_time = 0;
-        self.EGHDOOPHOJA = 0;
+        self.JNIFCCLINIB = 0;
+        self.OAIPAGFNIOL = 0;
+        self.ANEDHEKHKGG = 0;
+        self.ABMIOHPGOIA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AlleyPlacingGameCsReq {
         static instance: AlleyPlacingGameCsReq = AlleyPlacingGameCsReq {
-            FDANBINFFCM: 0,
-            ELMDBFPKOFJ: ::protobuf::MessageField::none(),
-            BHNBIIHFNAE: 0,
-            EMHONOJHAOD: 0,
-            AHCIONJANJA: 0,
-            DPPDGNAGAMM: 0,
-            MHICFCKLAHH: 0,
+            AACDAEKHBMA: 0,
+            BIJOCNCLINB: 0,
+            AEFGIGJAEPP: ::protobuf::MessageField::none(),
+            CMLFBHKBNEC: 0,
             cost_time: 0,
-            EGHDOOPHOJA: 0,
+            JNIFCCLINIB: 0,
+            OAIPAGFNIOL: 0,
+            ANEDHEKHKGG: 0,
+            ABMIOHPGOIA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -293,15 +293,15 @@ impl ::protobuf::reflect::ProtobufValue for AlleyPlacingGameCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bAlleyPlacingGameCsReq.proto\x1a\x16AlleyPlacingShip.proto\"\xd7\
-    \x02\n\x15AlleyPlacingGameCsReq\x12\x20\n\x0bFDANBINFFCM\x18\n\x20\x01(\
-    \rR\x0bFDANBINFFCM\x123\n\x0bELMDBFPKOFJ\x18\x01\x20\x01(\x0b2\x11.Alley\
-    PlacingShipR\x0bELMDBFPKOFJ\x12\x20\n\x0bBHNBIIHFNAE\x18\x0f\x20\x01(\rR\
-    \x0bBHNBIIHFNAE\x12\x20\n\x0bEMHONOJHAOD\x18\x0e\x20\x01(\rR\x0bEMHONOJH\
-    AOD\x12\x20\n\x0bAHCIONJANJA\x18\x03\x20\x01(\rR\x0bAHCIONJANJA\x12\x20\
-    \n\x0bDPPDGNAGAMM\x18\x02\x20\x01(\rR\x0bDPPDGNAGAMM\x12\x20\n\x0bMHICFC\
-    KLAHH\x18\x05\x20\x01(\rR\x0bMHICFCKLAHH\x12\x1b\n\tcost_time\x18\t\x20\
-    \x01(\rR\x08costTime\x12\x20\n\x0bEGHDOOPHOJA\x18\x0b\x20\x01(\rR\x0bEGH\
-    DOOPHOJAb\x06proto3\
+    \x02\n\x15AlleyPlacingGameCsReq\x12\x20\n\x0bAACDAEKHBMA\x18\x0e\x20\x01\
+    (\rR\x0bAACDAEKHBMA\x12\x20\n\x0bBIJOCNCLINB\x18\x06\x20\x01(\rR\x0bBIJO\
+    CNCLINB\x123\n\x0bAEFGIGJAEPP\x18\x03\x20\x01(\x0b2\x11.AlleyPlacingShip\
+    R\x0bAEFGIGJAEPP\x12\x20\n\x0bCMLFBHKBNEC\x18\x07\x20\x01(\rR\x0bCMLFBHK\
+    BNEC\x12\x1b\n\tcost_time\x18\x0c\x20\x01(\rR\x08costTime\x12\x20\n\x0bJ\
+    NIFCCLINIB\x18\x0b\x20\x01(\rR\x0bJNIFCCLINIB\x12\x20\n\x0bOAIPAGFNIOL\
+    \x18\x01\x20\x01(\rR\x0bOAIPAGFNIOL\x12\x20\n\x0bANEDHEKHKGG\x18\r\x20\
+    \x01(\rR\x0bANEDHEKHKGG\x12\x20\n\x0bABMIOHPGOIA\x18\x08\x20\x01(\rR\x0b\
+    ABMIOHPGOIAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

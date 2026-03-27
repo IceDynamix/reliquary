@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightEquipCraftCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GridFightEquipCraftCsReq.source)
-    pub source: ::protobuf::EnumOrUnknown<super::GridFightEquipCraftSource::GridFightEquipCraftSource>,
     // @@protoc_insertion_point(field:GridFightEquipCraftCsReq.craft_materials)
     pub craft_materials: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GridFightEquipCraftCsReq.BOALEJBPMMP)
-    pub BOALEJBPMMP: u32,
-    // @@protoc_insertion_point(field:GridFightEquipCraftCsReq.HIEMMFFGMCM)
-    pub HIEMMFFGMCM: u32,
+    // @@protoc_insertion_point(field:GridFightEquipCraftCsReq.BALIKHGCHDM)
+    pub BALIKHGCHDM: u32,
+    // @@protoc_insertion_point(field:GridFightEquipCraftCsReq.BPINLCKKJNB)
+    pub BPINLCKKJNB: u32,
+    // @@protoc_insertion_point(field:GridFightEquipCraftCsReq.source)
+    pub source: ::protobuf::EnumOrUnknown<super::GridFightEquipCraftSource::GridFightEquipCraftSource>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightEquipCraftCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl GridFightEquipCraftCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "source",
-            |m: &GridFightEquipCraftCsReq| { &m.source },
-            |m: &mut GridFightEquipCraftCsReq| { &mut m.source },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "craft_materials",
             |m: &GridFightEquipCraftCsReq| { &m.craft_materials },
             |m: &mut GridFightEquipCraftCsReq| { &mut m.craft_materials },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BOALEJBPMMP",
-            |m: &GridFightEquipCraftCsReq| { &m.BOALEJBPMMP },
-            |m: &mut GridFightEquipCraftCsReq| { &mut m.BOALEJBPMMP },
+            "BALIKHGCHDM",
+            |m: &GridFightEquipCraftCsReq| { &m.BALIKHGCHDM },
+            |m: &mut GridFightEquipCraftCsReq| { &mut m.BALIKHGCHDM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIEMMFFGMCM",
-            |m: &GridFightEquipCraftCsReq| { &m.HIEMMFFGMCM },
-            |m: &mut GridFightEquipCraftCsReq| { &mut m.HIEMMFFGMCM },
+            "BPINLCKKJNB",
+            |m: &GridFightEquipCraftCsReq| { &m.BPINLCKKJNB },
+            |m: &mut GridFightEquipCraftCsReq| { &mut m.BPINLCKKJNB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "source",
+            |m: &GridFightEquipCraftCsReq| { &m.source },
+            |m: &mut GridFightEquipCraftCsReq| { &mut m.source },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightEquipCraftCsReq>(
             "GridFightEquipCraftCsReq",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for GridFightEquipCraftCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.source = is.read_enum_or_unknown()?;
-                },
-                10 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.craft_materials)?;
                 },
-                8 => {
+                16 => {
                     self.craft_materials.push(is.read_uint32()?);
                 },
-                120 => {
-                    self.BOALEJBPMMP = is.read_uint32()?;
+                32 => {
+                    self.BALIKHGCHDM = is.read_uint32()?;
                 },
                 40 => {
-                    self.HIEMMFFGMCM = is.read_uint32()?;
+                    self.BPINLCKKJNB = is.read_uint32()?;
+                },
+                104 => {
+                    self.source = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for GridFightEquipCraftCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipCraftSource::GridFightEquipCraftSource::LDLNCGLLDHB_EGFKCFADCDC) {
-            my_size += ::protobuf::rt::int32_size(11, self.source.value());
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.craft_materials);
+        if self.BALIKHGCHDM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.BALIKHGCHDM);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.craft_materials);
-        if self.BOALEJBPMMP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.BOALEJBPMMP);
+        if self.BPINLCKKJNB != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.BPINLCKKJNB);
         }
-        if self.HIEMMFFGMCM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HIEMMFFGMCM);
+        if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipCraftSource::GridFightEquipCraftSource::GridFightEquipCraftSource_HDAHDHHILKH) {
+            my_size += ::protobuf::rt::int32_size(13, self.source.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for GridFightEquipCraftCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipCraftSource::GridFightEquipCraftSource::LDLNCGLLDHB_EGFKCFADCDC) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.source))?;
+        os.write_repeated_packed_uint32(2, &self.craft_materials)?;
+        if self.BALIKHGCHDM != 0 {
+            os.write_uint32(4, self.BALIKHGCHDM)?;
         }
-        os.write_repeated_packed_uint32(1, &self.craft_materials)?;
-        if self.BOALEJBPMMP != 0 {
-            os.write_uint32(15, self.BOALEJBPMMP)?;
+        if self.BPINLCKKJNB != 0 {
+            os.write_uint32(5, self.BPINLCKKJNB)?;
         }
-        if self.HIEMMFFGMCM != 0 {
-            os.write_uint32(5, self.HIEMMFFGMCM)?;
+        if self.source != ::protobuf::EnumOrUnknown::new(super::GridFightEquipCraftSource::GridFightEquipCraftSource::GridFightEquipCraftSource_HDAHDHHILKH) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for GridFightEquipCraftCsReq {
     }
 
     fn clear(&mut self) {
-        self.source = ::protobuf::EnumOrUnknown::new(super::GridFightEquipCraftSource::GridFightEquipCraftSource::LDLNCGLLDHB_EGFKCFADCDC);
         self.craft_materials.clear();
-        self.BOALEJBPMMP = 0;
-        self.HIEMMFFGMCM = 0;
+        self.BALIKHGCHDM = 0;
+        self.BPINLCKKJNB = 0;
+        self.source = ::protobuf::EnumOrUnknown::new(super::GridFightEquipCraftSource::GridFightEquipCraftSource::GridFightEquipCraftSource_HDAHDHHILKH);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightEquipCraftCsReq {
         static instance: GridFightEquipCraftCsReq = GridFightEquipCraftCsReq {
-            source: ::protobuf::EnumOrUnknown::from_i32(0),
             craft_materials: ::std::vec::Vec::new(),
-            BOALEJBPMMP: 0,
-            HIEMMFFGMCM: 0,
+            BALIKHGCHDM: 0,
+            BPINLCKKJNB: 0,
+            source: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for GridFightEquipCraftCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGridFightEquipCraftCsReq.proto\x1a\x1fGridFightEquipCraftSource.pr\
-    oto\"\xbb\x01\n\x18GridFightEquipCraftCsReq\x122\n\x06source\x18\x0b\x20\
-    \x01(\x0e2\x1a.GridFightEquipCraftSourceR\x06source\x12'\n\x0fcraft_mate\
-    rials\x18\x01\x20\x03(\rR\x0ecraftMaterials\x12\x20\n\x0bBOALEJBPMMP\x18\
-    \x0f\x20\x01(\rR\x0bBOALEJBPMMP\x12\x20\n\x0bHIEMMFFGMCM\x18\x05\x20\x01\
-    (\rR\x0bHIEMMFFGMCMb\x06proto3\
+    oto\"\xbb\x01\n\x18GridFightEquipCraftCsReq\x12'\n\x0fcraft_materials\
+    \x18\x02\x20\x03(\rR\x0ecraftMaterials\x12\x20\n\x0bBALIKHGCHDM\x18\x04\
+    \x20\x01(\rR\x0bBALIKHGCHDM\x12\x20\n\x0bBPINLCKKJNB\x18\x05\x20\x01(\rR\
+    \x0bBPINLCKKJNB\x122\n\x06source\x18\r\x20\x01(\x0e2\x1a.GridFightEquipC\
+    raftSourceR\x06sourceb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

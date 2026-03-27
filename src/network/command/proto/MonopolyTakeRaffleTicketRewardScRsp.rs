@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyTakeRaffleTicketRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyTakeRaffleTicketRewardScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyTakeRaffleTicketRewardScRsp.ONIKHEJKLAD)
-    pub ONIKHEJKLAD: u32,
+    // @@protoc_insertion_point(field:MonopolyTakeRaffleTicketRewardScRsp.ELBBJDLKFAO)
+    pub ELBBJDLKFAO: u32,
     // @@protoc_insertion_point(field:MonopolyTakeRaffleTicketRewardScRsp.reward_list)
     pub reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:MonopolyTakeRaffleTicketRewardScRsp.OAPLBMHECNE)
-    pub OAPLBMHECNE: u32,
+    // @@protoc_insertion_point(field:MonopolyTakeRaffleTicketRewardScRsp.LCJKKMHOIMJ)
+    pub LCJKKMHOIMJ: u32,
+    // @@protoc_insertion_point(field:MonopolyTakeRaffleTicketRewardScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyTakeRaffleTicketRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,14 +56,9 @@ impl MonopolyTakeRaffleTicketRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &MonopolyTakeRaffleTicketRewardScRsp| { &m.retcode },
-            |m: &mut MonopolyTakeRaffleTicketRewardScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONIKHEJKLAD",
-            |m: &MonopolyTakeRaffleTicketRewardScRsp| { &m.ONIKHEJKLAD },
-            |m: &mut MonopolyTakeRaffleTicketRewardScRsp| { &mut m.ONIKHEJKLAD },
+            "ELBBJDLKFAO",
+            |m: &MonopolyTakeRaffleTicketRewardScRsp| { &m.ELBBJDLKFAO },
+            |m: &mut MonopolyTakeRaffleTicketRewardScRsp| { &mut m.ELBBJDLKFAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward_list",
@@ -71,9 +66,14 @@ impl MonopolyTakeRaffleTicketRewardScRsp {
             |m: &mut MonopolyTakeRaffleTicketRewardScRsp| { &mut m.reward_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAPLBMHECNE",
-            |m: &MonopolyTakeRaffleTicketRewardScRsp| { &m.OAPLBMHECNE },
-            |m: &mut MonopolyTakeRaffleTicketRewardScRsp| { &mut m.OAPLBMHECNE },
+            "LCJKKMHOIMJ",
+            |m: &MonopolyTakeRaffleTicketRewardScRsp| { &m.LCJKKMHOIMJ },
+            |m: &mut MonopolyTakeRaffleTicketRewardScRsp| { &mut m.LCJKKMHOIMJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &MonopolyTakeRaffleTicketRewardScRsp| { &m.retcode },
+            |m: &mut MonopolyTakeRaffleTicketRewardScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyTakeRaffleTicketRewardScRsp>(
             "MonopolyTakeRaffleTicketRewardScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for MonopolyTakeRaffleTicketRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                16 => {
-                    self.ONIKHEJKLAD = is.read_uint32()?;
+                48 => {
+                    self.ELBBJDLKFAO = is.read_uint32()?;
                 },
                 90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
                 },
-                104 => {
-                    self.OAPLBMHECNE = is.read_uint32()?;
+                40 => {
+                    self.LCJKKMHOIMJ = is.read_uint32()?;
+                },
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for MonopolyTakeRaffleTicketRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
-        if self.ONIKHEJKLAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.ONIKHEJKLAD);
+        if self.ELBBJDLKFAO != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.ELBBJDLKFAO);
         }
         if let Some(v) = self.reward_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.OAPLBMHECNE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.OAPLBMHECNE);
+        if self.LCJKKMHOIMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.LCJKKMHOIMJ);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for MonopolyTakeRaffleTicketRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
-        }
-        if self.ONIKHEJKLAD != 0 {
-            os.write_uint32(2, self.ONIKHEJKLAD)?;
+        if self.ELBBJDLKFAO != 0 {
+            os.write_uint32(6, self.ELBBJDLKFAO)?;
         }
         if let Some(v) = self.reward_list.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if self.OAPLBMHECNE != 0 {
-            os.write_uint32(13, self.OAPLBMHECNE)?;
+        if self.LCJKKMHOIMJ != 0 {
+            os.write_uint32(5, self.LCJKKMHOIMJ)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for MonopolyTakeRaffleTicketRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
-        self.ONIKHEJKLAD = 0;
+        self.ELBBJDLKFAO = 0;
         self.reward_list.clear();
-        self.OAPLBMHECNE = 0;
+        self.LCJKKMHOIMJ = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyTakeRaffleTicketRewardScRsp {
         static instance: MonopolyTakeRaffleTicketRewardScRsp = MonopolyTakeRaffleTicketRewardScRsp {
-            retcode: 0,
-            ONIKHEJKLAD: 0,
+            ELBBJDLKFAO: 0,
             reward_list: ::protobuf::MessageField::none(),
-            OAPLBMHECNE: 0,
+            LCJKKMHOIMJ: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyTakeRaffleTicketRewardScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)MonopolyTakeRaffleTicketRewardScRsp.proto\x1a\x0eItemList.proto\"\xaf\
-    \x01\n#MonopolyTakeRaffleTicketRewardScRsp\x12\x18\n\x07retcode\x18\x0e\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bONIKHEJKLAD\x18\x02\x20\x01(\rR\x0b\
-    ONIKHEJKLAD\x12*\n\x0breward_list\x18\x0b\x20\x01(\x0b2\t.ItemListR\nrew\
-    ardList\x12\x20\n\x0bOAPLBMHECNE\x18\r\x20\x01(\rR\x0bOAPLBMHECNEb\x06pr\
-    oto3\
+    \x01\n#MonopolyTakeRaffleTicketRewardScRsp\x12\x20\n\x0bELBBJDLKFAO\x18\
+    \x06\x20\x01(\rR\x0bELBBJDLKFAO\x12*\n\x0breward_list\x18\x0b\x20\x01(\
+    \x0b2\t.ItemListR\nrewardList\x12\x20\n\x0bLCJKKMHOIMJ\x18\x05\x20\x01(\
+    \rR\x0bLCJKKMHOIMJ\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcodeb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

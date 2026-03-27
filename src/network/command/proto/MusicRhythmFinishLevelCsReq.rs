@@ -86,13 +86,13 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                56 => {
                     self.score_id = is.read_uint32()?;
                 },
-                56 => {
+                88 => {
                     self.role_star = is.read_uint32()?;
                 },
-                40 => {
+                104 => {
                     self.full_combo = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.score_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.score_id);
         }
         if self.role_star != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.role_star);
+            my_size += ::protobuf::rt::uint32_size(11, self.role_star);
         }
         if self.full_combo != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for MusicRhythmFinishLevelCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.score_id != 0 {
-            os.write_uint32(10, self.score_id)?;
+            os.write_uint32(7, self.score_id)?;
         }
         if self.role_star != 0 {
-            os.write_uint32(7, self.role_star)?;
+            os.write_uint32(11, self.role_star)?;
         }
         if self.full_combo != false {
-            os.write_bool(5, self.full_combo)?;
+            os.write_bool(13, self.full_combo)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmFinishLevelCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!MusicRhythmFinishLevelCsReq.proto\"t\n\x1bMusicRhythmFinishLevelCsReq\
-    \x12\x19\n\x08score_id\x18\n\x20\x01(\rR\x07scoreId\x12\x1b\n\trole_star\
-    \x18\x07\x20\x01(\rR\x08roleStar\x12\x1d\n\nfull_combo\x18\x05\x20\x01(\
+    \x12\x19\n\x08score_id\x18\x07\x20\x01(\rR\x07scoreId\x12\x1b\n\trole_st\
+    ar\x18\x0b\x20\x01(\rR\x08roleStar\x12\x1d\n\nfull_combo\x18\r\x20\x01(\
     \x08R\tfullCombob\x06proto3\
 ";
 

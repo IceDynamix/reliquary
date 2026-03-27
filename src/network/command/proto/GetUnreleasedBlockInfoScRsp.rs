@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetUnreleasedBlockInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.EDDAJPPKCAK)
-    pub EDDAJPPKCAK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.PCFDJKAKBND)
+    pub PCFDJKAKBND: i64,
     // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.KNEMICCPMPJ)
-    pub KNEMICCPMPJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.JKOAMCBACKA)
-    pub JKOAMCBACKA: i64,
+    // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.KJONKIALHOG)
+    pub KJONKIALHOG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetUnreleasedBlockInfoScRsp.KEGNMKHJNJB)
+    pub KEGNMKHJNJB: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetUnreleasedBlockInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,10 +55,10 @@ impl GetUnreleasedBlockInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EDDAJPPKCAK",
-            |m: &GetUnreleasedBlockInfoScRsp| { &m.EDDAJPPKCAK },
-            |m: &mut GetUnreleasedBlockInfoScRsp| { &mut m.EDDAJPPKCAK },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PCFDJKAKBND",
+            |m: &GetUnreleasedBlockInfoScRsp| { &m.PCFDJKAKBND },
+            |m: &mut GetUnreleasedBlockInfoScRsp| { &mut m.PCFDJKAKBND },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -66,14 +66,14 @@ impl GetUnreleasedBlockInfoScRsp {
             |m: &mut GetUnreleasedBlockInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KNEMICCPMPJ",
-            |m: &GetUnreleasedBlockInfoScRsp| { &m.KNEMICCPMPJ },
-            |m: &mut GetUnreleasedBlockInfoScRsp| { &mut m.KNEMICCPMPJ },
+            "KJONKIALHOG",
+            |m: &GetUnreleasedBlockInfoScRsp| { &m.KJONKIALHOG },
+            |m: &mut GetUnreleasedBlockInfoScRsp| { &mut m.KJONKIALHOG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKOAMCBACKA",
-            |m: &GetUnreleasedBlockInfoScRsp| { &m.JKOAMCBACKA },
-            |m: &mut GetUnreleasedBlockInfoScRsp| { &mut m.JKOAMCBACKA },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KEGNMKHJNJB",
+            |m: &GetUnreleasedBlockInfoScRsp| { &m.KEGNMKHJNJB },
+            |m: &mut GetUnreleasedBlockInfoScRsp| { &mut m.KEGNMKHJNJB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetUnreleasedBlockInfoScRsp>(
             "GetUnreleasedBlockInfoScRsp",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for GetUnreleasedBlockInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EDDAJPPKCAK)?;
+                88 => {
+                    self.PCFDJKAKBND = is.read_int64()?;
                 },
-                112 => {
-                    self.EDDAJPPKCAK.push(is.read_uint32()?);
-                },
-                16 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KNEMICCPMPJ)?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KJONKIALHOG)?;
                 },
-                48 => {
-                    self.KNEMICCPMPJ.push(is.read_uint32()?);
+                80 => {
+                    self.KJONKIALHOG.push(is.read_uint32()?);
                 },
-                8 => {
-                    self.JKOAMCBACKA = is.read_int64()?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KEGNMKHJNJB)?;
+                },
+                120 => {
+                    self.KEGNMKHJNJB.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,28 +123,28 @@ impl ::protobuf::Message for GetUnreleasedBlockInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.EDDAJPPKCAK);
+        if self.PCFDJKAKBND != 0 {
+            my_size += ::protobuf::rt::int64_size(11, self.PCFDJKAKBND);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.KNEMICCPMPJ);
-        if self.JKOAMCBACKA != 0 {
-            my_size += ::protobuf::rt::int64_size(1, self.JKOAMCBACKA);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.KJONKIALHOG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.KEGNMKHJNJB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(14, &self.EDDAJPPKCAK)?;
+        if self.PCFDJKAKBND != 0 {
+            os.write_int64(11, self.PCFDJKAKBND)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(6, &self.KNEMICCPMPJ)?;
-        if self.JKOAMCBACKA != 0 {
-            os.write_int64(1, self.JKOAMCBACKA)?;
-        }
+        os.write_repeated_packed_uint32(10, &self.KJONKIALHOG)?;
+        os.write_repeated_packed_uint32(15, &self.KEGNMKHJNJB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -162,19 +162,19 @@ impl ::protobuf::Message for GetUnreleasedBlockInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.EDDAJPPKCAK.clear();
+        self.PCFDJKAKBND = 0;
         self.retcode = 0;
-        self.KNEMICCPMPJ.clear();
-        self.JKOAMCBACKA = 0;
+        self.KJONKIALHOG.clear();
+        self.KEGNMKHJNJB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetUnreleasedBlockInfoScRsp {
         static instance: GetUnreleasedBlockInfoScRsp = GetUnreleasedBlockInfoScRsp {
-            EDDAJPPKCAK: ::std::vec::Vec::new(),
+            PCFDJKAKBND: 0,
             retcode: 0,
-            KNEMICCPMPJ: ::std::vec::Vec::new(),
-            JKOAMCBACKA: 0,
+            KJONKIALHOG: ::std::vec::Vec::new(),
+            KEGNMKHJNJB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for GetUnreleasedBlockInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetUnreleasedBlockInfoScRsp.proto\"\x9d\x01\n\x1bGetUnreleasedBlockIn\
-    foScRsp\x12\x20\n\x0bEDDAJPPKCAK\x18\x0e\x20\x03(\rR\x0bEDDAJPPKCAK\x12\
-    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x20\n\x0bKNEMICCPMP\
-    J\x18\x06\x20\x03(\rR\x0bKNEMICCPMPJ\x12\x20\n\x0bJKOAMCBACKA\x18\x01\
-    \x20\x01(\x03R\x0bJKOAMCBACKAb\x06proto3\
+    foScRsp\x12\x20\n\x0bPCFDJKAKBND\x18\x0b\x20\x01(\x03R\x0bPCFDJKAKBND\
+    \x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bKJONKIAL\
+    HOG\x18\n\x20\x03(\rR\x0bKJONKIALHOG\x12\x20\n\x0bKEGNMKHJNJB\x18\x0f\
+    \x20\x03(\rR\x0bKEGNMKHJNJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CounterDownCsReq {
     // message fields
-    // @@protoc_insertion_point(field:CounterDownCsReq.FNNCCNNPAEL)
-    pub FNNCCNNPAEL: u32,
-    // @@protoc_insertion_point(field:CounterDownCsReq.IFMAHDAMEDN)
-    pub IFMAHDAMEDN: u32,
+    // @@protoc_insertion_point(field:CounterDownCsReq.OENAEHPLPMN)
+    pub OENAEHPLPMN: u32,
+    // @@protoc_insertion_point(field:CounterDownCsReq.GNBDGNBNPBK)
+    pub GNBDGNBNPBK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CounterDownCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CounterDownCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNNCCNNPAEL",
-            |m: &CounterDownCsReq| { &m.FNNCCNNPAEL },
-            |m: &mut CounterDownCsReq| { &mut m.FNNCCNNPAEL },
+            "OENAEHPLPMN",
+            |m: &CounterDownCsReq| { &m.OENAEHPLPMN },
+            |m: &mut CounterDownCsReq| { &mut m.OENAEHPLPMN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFMAHDAMEDN",
-            |m: &CounterDownCsReq| { &m.IFMAHDAMEDN },
-            |m: &mut CounterDownCsReq| { &mut m.IFMAHDAMEDN },
+            "GNBDGNBNPBK",
+            |m: &CounterDownCsReq| { &m.GNBDGNBNPBK },
+            |m: &mut CounterDownCsReq| { &mut m.GNBDGNBNPBK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CounterDownCsReq>(
             "CounterDownCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CounterDownCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.FNNCCNNPAEL = is.read_uint32()?;
-                },
                 56 => {
-                    self.IFMAHDAMEDN = is.read_uint32()?;
+                    self.OENAEHPLPMN = is.read_uint32()?;
+                },
+                32 => {
+                    self.GNBDGNBNPBK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CounterDownCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FNNCCNNPAEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FNNCCNNPAEL);
+        if self.OENAEHPLPMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.OENAEHPLPMN);
         }
-        if self.IFMAHDAMEDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IFMAHDAMEDN);
+        if self.GNBDGNBNPBK != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.GNBDGNBNPBK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CounterDownCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FNNCCNNPAEL != 0 {
-            os.write_uint32(8, self.FNNCCNNPAEL)?;
+        if self.OENAEHPLPMN != 0 {
+            os.write_uint32(7, self.OENAEHPLPMN)?;
         }
-        if self.IFMAHDAMEDN != 0 {
-            os.write_uint32(7, self.IFMAHDAMEDN)?;
+        if self.GNBDGNBNPBK != 0 {
+            os.write_uint32(4, self.GNBDGNBNPBK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CounterDownCsReq {
     }
 
     fn clear(&mut self) {
-        self.FNNCCNNPAEL = 0;
-        self.IFMAHDAMEDN = 0;
+        self.OENAEHPLPMN = 0;
+        self.GNBDGNBNPBK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CounterDownCsReq {
         static instance: CounterDownCsReq = CounterDownCsReq {
-            FNNCCNNPAEL: 0,
-            IFMAHDAMEDN: 0,
+            OENAEHPLPMN: 0,
+            GNBDGNBNPBK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CounterDownCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CounterDownCsReq.proto\"V\n\x10CounterDownCsReq\x12\x20\n\x0bFNNCC\
-    NNPAEL\x18\x08\x20\x01(\rR\x0bFNNCCNNPAEL\x12\x20\n\x0bIFMAHDAMEDN\x18\
-    \x07\x20\x01(\rR\x0bIFMAHDAMEDNb\x06proto3\
+    \n\x16CounterDownCsReq.proto\"V\n\x10CounterDownCsReq\x12\x20\n\x0bOENAE\
+    HPLPMN\x18\x07\x20\x01(\rR\x0bOENAEHPLPMN\x12\x20\n\x0bGNBDGNBNPBK\x18\
+    \x04\x20\x01(\rR\x0bGNBDGNBNPBKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

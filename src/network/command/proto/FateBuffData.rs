@@ -82,7 +82,7 @@ impl ::protobuf::Message for FateBuffData {
                 64 => {
                     self.buff_id = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
                     self.cnt = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for FateBuffData {
             my_size += ::protobuf::rt::uint32_size(8, self.buff_id);
         }
         if self.cnt != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.cnt);
+            my_size += ::protobuf::rt::uint32_size(11, self.cnt);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for FateBuffData {
             os.write_uint32(8, self.buff_id)?;
         }
         if self.cnt != 0 {
-            os.write_uint32(13, self.cnt)?;
+            os.write_uint32(11, self.cnt)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for FateBuffData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12FateBuffData.proto\"9\n\x0cFateBuffData\x12\x17\n\x07buff_id\x18\
-    \x08\x20\x01(\rR\x06buffId\x12\x10\n\x03cnt\x18\r\x20\x01(\rR\x03cntb\
+    \x08\x20\x01(\rR\x06buffId\x12\x10\n\x03cnt\x18\x0b\x20\x01(\rR\x03cntb\
     \x06proto3\
 ";
 

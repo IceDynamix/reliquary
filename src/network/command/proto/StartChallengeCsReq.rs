@@ -93,22 +93,22 @@ impl ::protobuf::Message for StartChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.second_lineup)?;
                 },
-                64 => {
+                96 => {
                     self.second_lineup.push(is.read_uint32()?);
                 },
-                26 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stage_info)?;
                 },
-                48 => {
+                112 => {
                     self.challenge_id = is.read_uint32()?;
                 },
-                10 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.first_lineup)?;
                 },
-                8 => {
+                24 => {
                     self.first_lineup.push(is.read_uint32()?);
                 },
                 tag => {
@@ -123,29 +123,29 @@ impl ::protobuf::Message for StartChallengeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.second_lineup);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.second_lineup);
         if let Some(v) = self.stage_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.challenge_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.first_lineup);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.first_lineup);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.second_lineup)?;
+        os.write_repeated_packed_uint32(12, &self.second_lineup)?;
         if let Some(v) = self.stage_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(6, self.challenge_id)?;
+            os.write_uint32(14, self.challenge_id)?;
         }
-        os.write_repeated_packed_uint32(1, &self.first_lineup)?;
+        os.write_repeated_packed_uint32(3, &self.first_lineup)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for StartChallengeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19StartChallengeCsReq.proto\x1a\x17ChallengeBuffInfo.proto\"\xb3\x01\
-    \n\x13StartChallengeCsReq\x12#\n\rsecond_lineup\x18\x08\x20\x03(\rR\x0cs\
-    econdLineup\x121\n\nstage_info\x18\x03\x20\x01(\x0b2\x12.ChallengeBuffIn\
-    foR\tstageInfo\x12!\n\x0cchallenge_id\x18\x06\x20\x01(\rR\x0bchallengeId\
-    \x12!\n\x0cfirst_lineup\x18\x01\x20\x03(\rR\x0bfirstLineupb\x06proto3\
+    \n\x13StartChallengeCsReq\x12#\n\rsecond_lineup\x18\x0c\x20\x03(\rR\x0cs\
+    econdLineup\x121\n\nstage_info\x18\t\x20\x01(\x0b2\x12.ChallengeBuffInfo\
+    R\tstageInfo\x12!\n\x0cchallenge_id\x18\x0e\x20\x01(\rR\x0bchallengeId\
+    \x12!\n\x0cfirst_lineup\x18\x03\x20\x03(\rR\x0bfirstLineupb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

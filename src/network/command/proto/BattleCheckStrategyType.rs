@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BattleCheckStrategyType)
 pub enum BattleCheckStrategyType {
-    // @@protoc_insertion_point(enum_value:BattleCheckStrategyType.BattleCheckStrategyType_DBJNEGIJFCO)
-    BattleCheckStrategyType_DBJNEGIJFCO = 0,
-    // @@protoc_insertion_point(enum_value:BattleCheckStrategyType.BattleCheckStrategyType_KGCKGNEFCLM)
-    BattleCheckStrategyType_KGCKGNEFCLM = 1,
-    // @@protoc_insertion_point(enum_value:BattleCheckStrategyType.BattleCheckStrategyType_GCALFGPOOCL)
-    BattleCheckStrategyType_GCALFGPOOCL = 2,
-    // @@protoc_insertion_point(enum_value:BattleCheckStrategyType.BattleCheckStrategyType_GHPNKDHNOHF)
-    BattleCheckStrategyType_GHPNKDHNOHF = 3,
+    // @@protoc_insertion_point(enum_value:BattleCheckStrategyType.BattleCheckStrategyType_KCCNAEPAPNC)
+    BattleCheckStrategyType_KCCNAEPAPNC = 0,
+    // @@protoc_insertion_point(enum_value:BattleCheckStrategyType.BattleCheckStrategyType_JFBLHFIBCDE)
+    BattleCheckStrategyType_JFBLHFIBCDE = 1,
+    // @@protoc_insertion_point(enum_value:BattleCheckStrategyType.BattleCheckStrategyType_PECJAGDPNEI)
+    BattleCheckStrategyType_PECJAGDPNEI = 2,
+    // @@protoc_insertion_point(enum_value:BattleCheckStrategyType.BattleCheckStrategyType_BHPCJPGDJAE)
+    BattleCheckStrategyType_BHPCJPGDJAE = 3,
 }
 
 impl ::protobuf::Enum for BattleCheckStrategyType {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for BattleCheckStrategyType {
 
     fn from_i32(value: i32) -> ::std::option::Option<BattleCheckStrategyType> {
         match value {
-            0 => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_DBJNEGIJFCO),
-            1 => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_KGCKGNEFCLM),
-            2 => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_GCALFGPOOCL),
-            3 => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_GHPNKDHNOHF),
+            0 => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_KCCNAEPAPNC),
+            1 => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_JFBLHFIBCDE),
+            2 => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_PECJAGDPNEI),
+            3 => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_BHPCJPGDJAE),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BattleCheckStrategyType> {
         match str {
-            "BattleCheckStrategyType_DBJNEGIJFCO" => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_DBJNEGIJFCO),
-            "BattleCheckStrategyType_KGCKGNEFCLM" => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_KGCKGNEFCLM),
-            "BattleCheckStrategyType_GCALFGPOOCL" => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_GCALFGPOOCL),
-            "BattleCheckStrategyType_GHPNKDHNOHF" => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_GHPNKDHNOHF),
+            "BattleCheckStrategyType_KCCNAEPAPNC" => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_KCCNAEPAPNC),
+            "BattleCheckStrategyType_JFBLHFIBCDE" => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_JFBLHFIBCDE),
+            "BattleCheckStrategyType_PECJAGDPNEI" => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_PECJAGDPNEI),
+            "BattleCheckStrategyType_BHPCJPGDJAE" => ::std::option::Option::Some(BattleCheckStrategyType::BattleCheckStrategyType_BHPCJPGDJAE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BattleCheckStrategyType] = &[
-        BattleCheckStrategyType::BattleCheckStrategyType_DBJNEGIJFCO,
-        BattleCheckStrategyType::BattleCheckStrategyType_KGCKGNEFCLM,
-        BattleCheckStrategyType::BattleCheckStrategyType_GCALFGPOOCL,
-        BattleCheckStrategyType::BattleCheckStrategyType_GHPNKDHNOHF,
+        BattleCheckStrategyType::BattleCheckStrategyType_KCCNAEPAPNC,
+        BattleCheckStrategyType::BattleCheckStrategyType_JFBLHFIBCDE,
+        BattleCheckStrategyType::BattleCheckStrategyType_PECJAGDPNEI,
+        BattleCheckStrategyType::BattleCheckStrategyType_BHPCJPGDJAE,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for BattleCheckStrategyType {
 
 impl ::std::default::Default for BattleCheckStrategyType {
     fn default() -> Self {
-        BattleCheckStrategyType::BattleCheckStrategyType_DBJNEGIJFCO
+        BattleCheckStrategyType::BattleCheckStrategyType_KCCNAEPAPNC
     }
 }
 
@@ -98,9 +98,9 @@ impl BattleCheckStrategyType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dBattleCheckStrategyType.proto*\xbd\x01\n\x17BattleCheckStrategyTyp\
-    e\x12'\n#BattleCheckStrategyType_DBJNEGIJFCO\x10\0\x12'\n#BattleCheckStr\
-    ategyType_KGCKGNEFCLM\x10\x01\x12'\n#BattleCheckStrategyType_GCALFGPOOCL\
-    \x10\x02\x12'\n#BattleCheckStrategyType_GHPNKDHNOHF\x10\x03b\x06proto3\
+    e\x12'\n#BattleCheckStrategyType_KCCNAEPAPNC\x10\0\x12'\n#BattleCheckStr\
+    ategyType_JFBLHFIBCDE\x10\x01\x12'\n#BattleCheckStrategyType_PECJAGDPNEI\
+    \x10\x02\x12'\n#BattleCheckStrategyType_BHPCJPGDJAE\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

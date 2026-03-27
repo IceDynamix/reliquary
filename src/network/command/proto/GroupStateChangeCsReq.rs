@@ -28,6 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GroupStateChangeCsReq {
     // message fields
+    // @@protoc_insertion_point(field:GroupStateChangeCsReq.interact_id)
+    pub interact_id: u64,
     // @@protoc_insertion_point(field:GroupStateChangeCsReq.group_state_info)
     pub group_state_info: ::protobuf::MessageField<super::GroupStateInfo::GroupStateInfo>,
     // special fields
@@ -47,8 +49,13 @@ impl GroupStateChangeCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "interact_id",
+            |m: &GroupStateChangeCsReq| { &m.interact_id },
+            |m: &mut GroupStateChangeCsReq| { &mut m.interact_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GroupStateInfo::GroupStateInfo>(
             "group_state_info",
             |m: &GroupStateChangeCsReq| { &m.group_state_info },
@@ -72,7 +79,10 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                96 => {
+                    self.interact_id = is.read_uint64()?;
+                },
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.group_state_info)?;
                 },
                 tag => {
@@ -87,6 +97,9 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.interact_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(12, self.interact_id);
+        }
         if let Some(v) = self.group_state_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -97,8 +110,11 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.interact_id != 0 {
+            os.write_uint64(12, self.interact_id)?;
+        }
         if let Some(v) = self.group_state_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,12 +133,14 @@ impl ::protobuf::Message for GroupStateChangeCsReq {
     }
 
     fn clear(&mut self) {
+        self.interact_id = 0;
         self.group_state_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GroupStateChangeCsReq {
         static instance: GroupStateChangeCsReq = GroupStateChangeCsReq {
+            interact_id: 0,
             group_state_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -148,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GroupStateChangeCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGroupStateChangeCsReq.proto\x1a\x14GroupStateInfo.proto\"R\n\x15Gr\
-    oupStateChangeCsReq\x129\n\x10group_state_info\x18\x04\x20\x01(\x0b2\x0f\
-    .GroupStateInfoR\x0egroupStateInfob\x06proto3\
+    \n\x1bGroupStateChangeCsReq.proto\x1a\x14GroupStateInfo.proto\"s\n\x15Gr\
+    oupStateChangeCsReq\x12\x1f\n\x0binteract_id\x18\x0c\x20\x01(\x04R\ninte\
+    ractId\x129\n\x10group_state_info\x18\t\x20\x01(\x0b2\x0f.GroupStateInfo\
+    R\x0egroupStateInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

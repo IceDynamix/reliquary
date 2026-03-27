@@ -28,6 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NpcMonsterRogueInfo {
     // message fields
+    // @@protoc_insertion_point(field:NpcMonsterRogueInfo.CKKFPHKCOKE)
+    pub CKKFPHKCOKE: ::protobuf::EnumOrUnknown<super::PAIOBCKMALJ::PAIOBCKMALJ>,
     // @@protoc_insertion_point(field:NpcMonsterRogueInfo.rogue_monster_id)
     pub rogue_monster_id: u32,
     // @@protoc_insertion_point(field:NpcMonsterRogueInfo.elite_group)
@@ -36,8 +38,8 @@ pub struct NpcMonsterRogueInfo {
     pub hard_level_group: u32,
     // @@protoc_insertion_point(field:NpcMonsterRogueInfo.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:NpcMonsterRogueInfo.POHHHACHHGH)
-    pub POHHHACHHGH: u32,
+    // @@protoc_insertion_point(field:NpcMonsterRogueInfo.KPAJJKNOBGE)
+    pub KPAJJKNOBGE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:NpcMonsterRogueInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,8 +57,13 @@ impl NpcMonsterRogueInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CKKFPHKCOKE",
+            |m: &NpcMonsterRogueInfo| { &m.CKKFPHKCOKE },
+            |m: &mut NpcMonsterRogueInfo| { &mut m.CKKFPHKCOKE },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_monster_id",
             |m: &NpcMonsterRogueInfo| { &m.rogue_monster_id },
@@ -78,9 +85,9 @@ impl NpcMonsterRogueInfo {
             |m: &mut NpcMonsterRogueInfo| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POHHHACHHGH",
-            |m: &NpcMonsterRogueInfo| { &m.POHHHACHHGH },
-            |m: &mut NpcMonsterRogueInfo| { &mut m.POHHHACHHGH },
+            "KPAJJKNOBGE",
+            |m: &NpcMonsterRogueInfo| { &m.KPAJJKNOBGE },
+            |m: &mut NpcMonsterRogueInfo| { &mut m.KPAJJKNOBGE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NpcMonsterRogueInfo>(
             "NpcMonsterRogueInfo",
@@ -100,20 +107,23 @@ impl ::protobuf::Message for NpcMonsterRogueInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                40 => {
+                    self.CKKFPHKCOKE = is.read_enum_or_unknown()?;
+                },
+                72 => {
                     self.rogue_monster_id = is.read_uint32()?;
                 },
                 104 => {
                     self.elite_group = is.read_uint32()?;
                 },
-                48 => {
+                16 => {
                     self.hard_level_group = is.read_uint32()?;
                 },
-                56 => {
+                80 => {
                     self.level = is.read_uint32()?;
                 },
-                72 => {
-                    self.POHHHACHHGH = is.read_uint32()?;
+                8 => {
+                    self.KPAJJKNOBGE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +137,23 @@ impl ::protobuf::Message for NpcMonsterRogueInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.CKKFPHKCOKE != ::protobuf::EnumOrUnknown::new(super::PAIOBCKMALJ::PAIOBCKMALJ::PAIOBCKMALJ_OCFNEBKKECL) {
+            my_size += ::protobuf::rt::int32_size(5, self.CKKFPHKCOKE.value());
+        }
         if self.rogue_monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.rogue_monster_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.rogue_monster_id);
         }
         if self.elite_group != 0 {
             my_size += ::protobuf::rt::uint32_size(13, self.elite_group);
         }
         if self.hard_level_group != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.hard_level_group);
+            my_size += ::protobuf::rt::uint32_size(2, self.hard_level_group);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
+            my_size += ::protobuf::rt::uint32_size(10, self.level);
         }
-        if self.POHHHACHHGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.POHHHACHHGH);
+        if self.KPAJJKNOBGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.KPAJJKNOBGE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +161,23 @@ impl ::protobuf::Message for NpcMonsterRogueInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.CKKFPHKCOKE != ::protobuf::EnumOrUnknown::new(super::PAIOBCKMALJ::PAIOBCKMALJ::PAIOBCKMALJ_OCFNEBKKECL) {
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.CKKFPHKCOKE))?;
+        }
         if self.rogue_monster_id != 0 {
-            os.write_uint32(12, self.rogue_monster_id)?;
+            os.write_uint32(9, self.rogue_monster_id)?;
         }
         if self.elite_group != 0 {
             os.write_uint32(13, self.elite_group)?;
         }
         if self.hard_level_group != 0 {
-            os.write_uint32(6, self.hard_level_group)?;
+            os.write_uint32(2, self.hard_level_group)?;
         }
         if self.level != 0 {
-            os.write_uint32(7, self.level)?;
+            os.write_uint32(10, self.level)?;
         }
-        if self.POHHHACHHGH != 0 {
-            os.write_uint32(9, self.POHHHACHHGH)?;
+        if self.KPAJJKNOBGE != 0 {
+            os.write_uint32(1, self.KPAJJKNOBGE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +196,23 @@ impl ::protobuf::Message for NpcMonsterRogueInfo {
     }
 
     fn clear(&mut self) {
+        self.CKKFPHKCOKE = ::protobuf::EnumOrUnknown::new(super::PAIOBCKMALJ::PAIOBCKMALJ::PAIOBCKMALJ_OCFNEBKKECL);
         self.rogue_monster_id = 0;
         self.elite_group = 0;
         self.hard_level_group = 0;
         self.level = 0;
-        self.POHHHACHHGH = 0;
+        self.KPAJJKNOBGE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NpcMonsterRogueInfo {
         static instance: NpcMonsterRogueInfo = NpcMonsterRogueInfo {
+            CKKFPHKCOKE: ::protobuf::EnumOrUnknown::from_i32(0),
             rogue_monster_id: 0,
             elite_group: 0,
             hard_level_group: 0,
             level: 0,
-            POHHHACHHGH: 0,
+            KPAJJKNOBGE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +237,13 @@ impl ::protobuf::reflect::ProtobufValue for NpcMonsterRogueInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19NpcMonsterRogueInfo.proto\"\xc2\x01\n\x13NpcMonsterRogueInfo\x12(\
-    \n\x10rogue_monster_id\x18\x0c\x20\x01(\rR\x0erogueMonsterId\x12\x1f\n\
-    \x0belite_group\x18\r\x20\x01(\rR\neliteGroup\x12(\n\x10hard_level_group\
-    \x18\x06\x20\x01(\rR\x0ehardLevelGroup\x12\x14\n\x05level\x18\x07\x20\
-    \x01(\rR\x05level\x12\x20\n\x0bPOHHHACHHGH\x18\t\x20\x01(\rR\x0bPOHHHACH\
-    HGHb\x06proto3\
+    \n\x19NpcMonsterRogueInfo.proto\x1a\x11PAIOBCKMALJ.proto\"\xf2\x01\n\x13\
+    NpcMonsterRogueInfo\x12.\n\x0bCKKFPHKCOKE\x18\x05\x20\x01(\x0e2\x0c.PAIO\
+    BCKMALJR\x0bCKKFPHKCOKE\x12(\n\x10rogue_monster_id\x18\t\x20\x01(\rR\x0e\
+    rogueMonsterId\x12\x1f\n\x0belite_group\x18\r\x20\x01(\rR\neliteGroup\
+    \x12(\n\x10hard_level_group\x18\x02\x20\x01(\rR\x0ehardLevelGroup\x12\
+    \x14\n\x05level\x18\n\x20\x01(\rR\x05level\x12\x20\n\x0bKPAJJKNOBGE\x18\
+    \x01\x20\x01(\rR\x0bKPAJJKNOBGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -241,7 +260,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::PAIOBCKMALJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NpcMonsterRogueInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

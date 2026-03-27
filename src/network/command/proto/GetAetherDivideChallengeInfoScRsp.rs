@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAetherDivideChallengeInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAetherDivideChallengeInfoScRsp.KPFKNMFHEOJ)
-    pub KPFKNMFHEOJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetAetherDivideChallengeInfoScRsp.JOLOKBEGDCH)
-    pub JOLOKBEGDCH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetAetherDivideChallengeInfoScRsp.EKBNPPCEFGO)
-    pub EKBNPPCEFGO: u32,
+    // @@protoc_insertion_point(field:GetAetherDivideChallengeInfoScRsp.GGLEKJNFCCL)
+    pub GGLEKJNFCCL: u32,
+    // @@protoc_insertion_point(field:GetAetherDivideChallengeInfoScRsp.DAJGEAHGFCI)
+    pub DAJGEAHGFCI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetAetherDivideChallengeInfoScRsp.DGOAIPFECMF)
+    pub DGOAIPFECMF: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetAetherDivideChallengeInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -55,20 +55,20 @@ impl GetAetherDivideChallengeInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KPFKNMFHEOJ",
-            |m: &GetAetherDivideChallengeInfoScRsp| { &m.KPFKNMFHEOJ },
-            |m: &mut GetAetherDivideChallengeInfoScRsp| { &mut m.KPFKNMFHEOJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JOLOKBEGDCH",
-            |m: &GetAetherDivideChallengeInfoScRsp| { &m.JOLOKBEGDCH },
-            |m: &mut GetAetherDivideChallengeInfoScRsp| { &mut m.JOLOKBEGDCH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKBNPPCEFGO",
-            |m: &GetAetherDivideChallengeInfoScRsp| { &m.EKBNPPCEFGO },
-            |m: &mut GetAetherDivideChallengeInfoScRsp| { &mut m.EKBNPPCEFGO },
+            "GGLEKJNFCCL",
+            |m: &GetAetherDivideChallengeInfoScRsp| { &m.GGLEKJNFCCL },
+            |m: &mut GetAetherDivideChallengeInfoScRsp| { &mut m.GGLEKJNFCCL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DAJGEAHGFCI",
+            |m: &GetAetherDivideChallengeInfoScRsp| { &m.DAJGEAHGFCI },
+            |m: &mut GetAetherDivideChallengeInfoScRsp| { &mut m.DAJGEAHGFCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DGOAIPFECMF",
+            |m: &GetAetherDivideChallengeInfoScRsp| { &m.DGOAIPFECMF },
+            |m: &mut GetAetherDivideChallengeInfoScRsp| { &mut m.DGOAIPFECMF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,22 +93,22 @@ impl ::protobuf::Message for GetAetherDivideChallengeInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KPFKNMFHEOJ)?;
-                },
-                120 => {
-                    self.KPFKNMFHEOJ.push(is.read_uint32()?);
-                },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JOLOKBEGDCH)?;
-                },
                 72 => {
-                    self.JOLOKBEGDCH.push(is.read_uint32()?);
+                    self.GGLEKJNFCCL = is.read_uint32()?;
                 },
-                16 => {
-                    self.EKBNPPCEFGO = is.read_uint32()?;
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DAJGEAHGFCI)?;
                 },
-                56 => {
+                96 => {
+                    self.DAJGEAHGFCI.push(is.read_uint32()?);
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DGOAIPFECMF)?;
+                },
+                48 => {
+                    self.DGOAIPFECMF.push(is.read_uint32()?);
+                },
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -123,13 +123,13 @@ impl ::protobuf::Message for GetAetherDivideChallengeInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.KPFKNMFHEOJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.JOLOKBEGDCH);
-        if self.EKBNPPCEFGO != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.EKBNPPCEFGO);
+        if self.GGLEKJNFCCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.GGLEKJNFCCL);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.DAJGEAHGFCI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.DGOAIPFECMF);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,13 +137,13 @@ impl ::protobuf::Message for GetAetherDivideChallengeInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.KPFKNMFHEOJ)?;
-        os.write_repeated_packed_uint32(9, &self.JOLOKBEGDCH)?;
-        if self.EKBNPPCEFGO != 0 {
-            os.write_uint32(2, self.EKBNPPCEFGO)?;
+        if self.GGLEKJNFCCL != 0 {
+            os.write_uint32(9, self.GGLEKJNFCCL)?;
         }
+        os.write_repeated_packed_uint32(12, &self.DAJGEAHGFCI)?;
+        os.write_repeated_packed_uint32(6, &self.DGOAIPFECMF)?;
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -162,18 +162,18 @@ impl ::protobuf::Message for GetAetherDivideChallengeInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.KPFKNMFHEOJ.clear();
-        self.JOLOKBEGDCH.clear();
-        self.EKBNPPCEFGO = 0;
+        self.GGLEKJNFCCL = 0;
+        self.DAJGEAHGFCI.clear();
+        self.DGOAIPFECMF.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAetherDivideChallengeInfoScRsp {
         static instance: GetAetherDivideChallengeInfoScRsp = GetAetherDivideChallengeInfoScRsp {
-            KPFKNMFHEOJ: ::std::vec::Vec::new(),
-            JOLOKBEGDCH: ::std::vec::Vec::new(),
-            EKBNPPCEFGO: 0,
+            GGLEKJNFCCL: 0,
+            DAJGEAHGFCI: ::std::vec::Vec::new(),
+            DGOAIPFECMF: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,10 +200,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAetherDivideChallengeInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GetAetherDivideChallengeInfoScRsp.proto\"\xa3\x01\n!GetAetherDivideCh\
-    allengeInfoScRsp\x12\x20\n\x0bKPFKNMFHEOJ\x18\x0f\x20\x03(\rR\x0bKPFKNMF\
-    HEOJ\x12\x20\n\x0bJOLOKBEGDCH\x18\t\x20\x03(\rR\x0bJOLOKBEGDCH\x12\x20\n\
-    \x0bEKBNPPCEFGO\x18\x02\x20\x01(\rR\x0bEKBNPPCEFGO\x12\x18\n\x07retcode\
-    \x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
+    allengeInfoScRsp\x12\x20\n\x0bGGLEKJNFCCL\x18\t\x20\x01(\rR\x0bGGLEKJNFC\
+    CL\x12\x20\n\x0bDAJGEAHGFCI\x18\x0c\x20\x03(\rR\x0bDAJGEAHGFCI\x12\x20\n\
+    \x0bDGOAIPFECMF\x18\x06\x20\x03(\rR\x0bDGOAIPFECMF\x12\x18\n\x07retcode\
+    \x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

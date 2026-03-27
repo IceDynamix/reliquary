@@ -79,7 +79,7 @@ impl ::protobuf::Message for SetSignatureScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                42 => {
                     self.signature = is.read_string()?;
                 },
                 120 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SetSignatureScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.signature.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.signature);
+            my_size += ::protobuf::rt::string_size(5, &self.signature);
         }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.retcode);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SetSignatureScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.signature.is_empty() {
-            os.write_string(1, &self.signature)?;
+            os.write_string(5, &self.signature)?;
         }
         if self.retcode != 0 {
             os.write_uint32(15, self.retcode)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for SetSignatureScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SetSignatureScRsp.proto\"K\n\x11SetSignatureScRsp\x12\x1c\n\tsigna\
-    ture\x18\x01\x20\x01(\tR\tsignature\x12\x18\n\x07retcode\x18\x0f\x20\x01\
+    ture\x18\x05\x20\x01(\tR\tsignature\x12\x18\n\x07retcode\x18\x0f\x20\x01\
     (\rR\x07retcodeb\x06proto3\
 ";
 

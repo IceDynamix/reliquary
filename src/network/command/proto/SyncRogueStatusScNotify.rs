@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueStatusScNotify {
     // message fields
+    // @@protoc_insertion_point(field:SyncRogueStatusScNotify.OPIPOBKDJPL)
+    pub OPIPOBKDJPL: bool,
     // @@protoc_insertion_point(field:SyncRogueStatusScNotify.status)
     pub status: ::protobuf::EnumOrUnknown<super::RogueStatus::RogueStatus>,
-    // @@protoc_insertion_point(field:SyncRogueStatusScNotify.FKHLCLEPCHK)
-    pub FKHLCLEPCHK: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueStatusScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SyncRogueStatusScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OPIPOBKDJPL",
+            |m: &SyncRogueStatusScNotify| { &m.OPIPOBKDJPL },
+            |m: &mut SyncRogueStatusScNotify| { &mut m.OPIPOBKDJPL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
             |m: &SyncRogueStatusScNotify| { &m.status },
             |m: &mut SyncRogueStatusScNotify| { &mut m.status },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKHLCLEPCHK",
-            |m: &SyncRogueStatusScNotify| { &m.FKHLCLEPCHK },
-            |m: &mut SyncRogueStatusScNotify| { &mut m.FKHLCLEPCHK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueStatusScNotify>(
             "SyncRogueStatusScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                120 => {
+                    self.OPIPOBKDJPL = is.read_bool()?;
+                },
                 88 => {
                     self.status = is.read_enum_or_unknown()?;
-                },
-                8 => {
-                    self.FKHLCLEPCHK = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::DIBMKLBGELL_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(11, self.status.value());
-        }
-        if self.FKHLCLEPCHK != false {
+        if self.OPIPOBKDJPL != false {
             my_size += 1 + 1;
+        }
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(11, self.status.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::DIBMKLBGELL_GKJBAODJMJG) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        if self.OPIPOBKDJPL != false {
+            os.write_bool(15, self.OPIPOBKDJPL)?;
         }
-        if self.FKHLCLEPCHK != false {
-            os.write_bool(1, self.FKHLCLEPCHK)?;
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_MNFEPONEDDJ) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SyncRogueStatusScNotify {
     }
 
     fn clear(&mut self) {
-        self.status = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::DIBMKLBGELL_GKJBAODJMJG);
-        self.FKHLCLEPCHK = false;
+        self.OPIPOBKDJPL = false;
+        self.status = ::protobuf::EnumOrUnknown::new(super::RogueStatus::RogueStatus::RogueStatus_MNFEPONEDDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueStatusScNotify {
         static instance: SyncRogueStatusScNotify = SyncRogueStatusScNotify {
+            OPIPOBKDJPL: false,
             status: ::protobuf::EnumOrUnknown::from_i32(0),
-            FKHLCLEPCHK: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueStatusScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dSyncRogueStatusScNotify.proto\x1a\x11RogueStatus.proto\"a\n\x17Syn\
-    cRogueStatusScNotify\x12$\n\x06status\x18\x0b\x20\x01(\x0e2\x0c.RogueSta\
-    tusR\x06status\x12\x20\n\x0bFKHLCLEPCHK\x18\x01\x20\x01(\x08R\x0bFKHLCLE\
-    PCHKb\x06proto3\
+    cRogueStatusScNotify\x12\x20\n\x0bOPIPOBKDJPL\x18\x0f\x20\x01(\x08R\x0bO\
+    PIPOBKDJPL\x12$\n\x06status\x18\x0b\x20\x01(\x0e2\x0c.RogueStatusR\x06st\
+    atusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

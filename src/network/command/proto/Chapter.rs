@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct Chapter {
     // message fields
-    // @@protoc_insertion_point(field:Chapter.LLPOGJJPJPP)
-    pub LLPOGJJPJPP: ::std::vec::Vec<super::Waypoint::Waypoint>,
-    // @@protoc_insertion_point(field:Chapter.JFKCAMMJJGK)
-    pub JFKCAMMJJGK: ::protobuf::MessageField<super::ChapterBrief::ChapterBrief>,
+    // @@protoc_insertion_point(field:Chapter.PDBJMCKANEK)
+    pub PDBJMCKANEK: ::std::vec::Vec<super::Waypoint::Waypoint>,
+    // @@protoc_insertion_point(field:Chapter.AIPIKJJHLMH)
+    pub AIPIKJJHLMH: ::protobuf::MessageField<super::ChapterBrief::ChapterBrief>,
     // special fields
     // @@protoc_insertion_point(special_field:Chapter.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl Chapter {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LLPOGJJPJPP",
-            |m: &Chapter| { &m.LLPOGJJPJPP },
-            |m: &mut Chapter| { &mut m.LLPOGJJPJPP },
+            "PDBJMCKANEK",
+            |m: &Chapter| { &m.PDBJMCKANEK },
+            |m: &mut Chapter| { &mut m.PDBJMCKANEK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChapterBrief::ChapterBrief>(
-            "JFKCAMMJJGK",
-            |m: &Chapter| { &m.JFKCAMMJJGK },
-            |m: &mut Chapter| { &mut m.JFKCAMMJJGK },
+            "AIPIKJJHLMH",
+            |m: &Chapter| { &m.AIPIKJJHLMH },
+            |m: &mut Chapter| { &mut m.AIPIKJJHLMH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Chapter>(
             "Chapter",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for Chapter {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    self.LLPOGJJPJPP.push(is.read_message()?);
+                66 => {
+                    self.PDBJMCKANEK.push(is.read_message()?);
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFKCAMMJJGK)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AIPIKJJHLMH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for Chapter {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LLPOGJJPJPP {
+        for value in &self.PDBJMCKANEK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.JFKCAMMJJGK.as_ref() {
+        if let Some(v) = self.AIPIKJJHLMH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for Chapter {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LLPOGJJPJPP {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        for v in &self.PDBJMCKANEK {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if let Some(v) = self.JFKCAMMJJGK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.AIPIKJJHLMH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for Chapter {
     }
 
     fn clear(&mut self) {
-        self.LLPOGJJPJPP.clear();
-        self.JFKCAMMJJGK.clear();
+        self.PDBJMCKANEK.clear();
+        self.AIPIKJJHLMH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static Chapter {
         static instance: Chapter = Chapter {
-            LLPOGJJPJPP: ::std::vec::Vec::new(),
-            JFKCAMMJJGK: ::protobuf::MessageField::none(),
+            PDBJMCKANEK: ::std::vec::Vec::new(),
+            AIPIKJJHLMH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for Chapter {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\rChapter.proto\x1a\x12ChapterBrief.proto\x1a\x0eWaypoint.proto\"g\n\
-    \x07Chapter\x12+\n\x0bLLPOGJJPJPP\x18\n\x20\x03(\x0b2\t.WaypointR\x0bLLP\
-    OGJJPJPP\x12/\n\x0bJFKCAMMJJGK\x18\x02\x20\x01(\x0b2\r.ChapterBriefR\x0b\
-    JFKCAMMJJGKb\x06proto3\
+    \x07Chapter\x12+\n\x0bPDBJMCKANEK\x18\x08\x20\x03(\x0b2\t.WaypointR\x0bP\
+    DBJMCKANEK\x12/\n\x0bAIPIKJJHLMH\x18\x0e\x20\x01(\x0b2\r.ChapterBriefR\
+    \x0bAIPIKJJHLMHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EquipmentRecommendInfo {
     // message fields
-    // @@protoc_insertion_point(field:EquipmentRecommendInfo.FAIOGBEPHHE)
-    pub FAIOGBEPHHE: u32,
-    // @@protoc_insertion_point(field:EquipmentRecommendInfo.KNEFBIEDGEH)
-    pub KNEFBIEDGEH: u32,
+    // @@protoc_insertion_point(field:EquipmentRecommendInfo.NDDAIJGDJCC)
+    pub NDDAIJGDJCC: u32,
+    // @@protoc_insertion_point(field:EquipmentRecommendInfo.PNHGIECFEIA)
+    pub PNHGIECFEIA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EquipmentRecommendInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EquipmentRecommendInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FAIOGBEPHHE",
-            |m: &EquipmentRecommendInfo| { &m.FAIOGBEPHHE },
-            |m: &mut EquipmentRecommendInfo| { &mut m.FAIOGBEPHHE },
+            "NDDAIJGDJCC",
+            |m: &EquipmentRecommendInfo| { &m.NDDAIJGDJCC },
+            |m: &mut EquipmentRecommendInfo| { &mut m.NDDAIJGDJCC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNEFBIEDGEH",
-            |m: &EquipmentRecommendInfo| { &m.KNEFBIEDGEH },
-            |m: &mut EquipmentRecommendInfo| { &mut m.KNEFBIEDGEH },
+            "PNHGIECFEIA",
+            |m: &EquipmentRecommendInfo| { &m.PNHGIECFEIA },
+            |m: &mut EquipmentRecommendInfo| { &mut m.PNHGIECFEIA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EquipmentRecommendInfo>(
             "EquipmentRecommendInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EquipmentRecommendInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.FAIOGBEPHHE = is.read_uint32()?;
+                32 => {
+                    self.NDDAIJGDJCC = is.read_uint32()?;
                 },
-                112 => {
-                    self.KNEFBIEDGEH = is.read_uint32()?;
+                96 => {
+                    self.PNHGIECFEIA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EquipmentRecommendInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FAIOGBEPHHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FAIOGBEPHHE);
+        if self.NDDAIJGDJCC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NDDAIJGDJCC);
         }
-        if self.KNEFBIEDGEH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KNEFBIEDGEH);
+        if self.PNHGIECFEIA != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.PNHGIECFEIA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EquipmentRecommendInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FAIOGBEPHHE != 0 {
-            os.write_uint32(2, self.FAIOGBEPHHE)?;
+        if self.NDDAIJGDJCC != 0 {
+            os.write_uint32(4, self.NDDAIJGDJCC)?;
         }
-        if self.KNEFBIEDGEH != 0 {
-            os.write_uint32(14, self.KNEFBIEDGEH)?;
+        if self.PNHGIECFEIA != 0 {
+            os.write_uint32(12, self.PNHGIECFEIA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EquipmentRecommendInfo {
     }
 
     fn clear(&mut self) {
-        self.FAIOGBEPHHE = 0;
-        self.KNEFBIEDGEH = 0;
+        self.NDDAIJGDJCC = 0;
+        self.PNHGIECFEIA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EquipmentRecommendInfo {
         static instance: EquipmentRecommendInfo = EquipmentRecommendInfo {
-            FAIOGBEPHHE: 0,
-            KNEFBIEDGEH: 0,
+            NDDAIJGDJCC: 0,
+            PNHGIECFEIA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EquipmentRecommendInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cEquipmentRecommendInfo.proto\"\\\n\x16EquipmentRecommendInfo\x12\
-    \x20\n\x0bFAIOGBEPHHE\x18\x02\x20\x01(\rR\x0bFAIOGBEPHHE\x12\x20\n\x0bKN\
-    EFBIEDGEH\x18\x0e\x20\x01(\rR\x0bKNEFBIEDGEHb\x06proto3\
+    \x20\n\x0bNDDAIJGDJCC\x18\x04\x20\x01(\rR\x0bNDDAIJGDJCC\x12\x20\n\x0bPN\
+    HGIECFEIA\x18\x0c\x20\x01(\rR\x0bPNHGIECFEIAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

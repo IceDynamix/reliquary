@@ -32,8 +32,8 @@ pub struct PlanetFesTakeRegionPhaseRewardScRsp {
     pub retcode: u32,
     // @@protoc_insertion_point(field:PlanetFesTakeRegionPhaseRewardScRsp.reward_list)
     pub reward_list: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:PlanetFesTakeRegionPhaseRewardScRsp.HNMFMGCAPNO)
-    pub HNMFMGCAPNO: u32,
+    // @@protoc_insertion_point(field:PlanetFesTakeRegionPhaseRewardScRsp.AOMKNKFFABE)
+    pub AOMKNKFFABE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesTakeRegionPhaseRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -64,9 +64,9 @@ impl PlanetFesTakeRegionPhaseRewardScRsp {
             |m: &mut PlanetFesTakeRegionPhaseRewardScRsp| { &mut m.reward_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HNMFMGCAPNO",
-            |m: &PlanetFesTakeRegionPhaseRewardScRsp| { &m.HNMFMGCAPNO },
-            |m: &mut PlanetFesTakeRegionPhaseRewardScRsp| { &mut m.HNMFMGCAPNO },
+            "AOMKNKFFABE",
+            |m: &PlanetFesTakeRegionPhaseRewardScRsp| { &m.AOMKNKFFABE },
+            |m: &mut PlanetFesTakeRegionPhaseRewardScRsp| { &mut m.AOMKNKFFABE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesTakeRegionPhaseRewardScRsp>(
             "PlanetFesTakeRegionPhaseRewardScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlanetFesTakeRegionPhaseRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                122 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward_list)?;
                 },
                 88 => {
-                    self.HNMFMGCAPNO = is.read_uint32()?;
+                    self.AOMKNKFFABE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for PlanetFesTakeRegionPhaseRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         if let Some(v) = self.reward_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.HNMFMGCAPNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.HNMFMGCAPNO);
+        if self.AOMKNKFFABE != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.AOMKNKFFABE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PlanetFesTakeRegionPhaseRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
         if let Some(v) = self.reward_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if self.HNMFMGCAPNO != 0 {
-            os.write_uint32(11, self.HNMFMGCAPNO)?;
+        if self.AOMKNKFFABE != 0 {
+            os.write_uint32(11, self.AOMKNKFFABE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,7 +151,7 @@ impl ::protobuf::Message for PlanetFesTakeRegionPhaseRewardScRsp {
     fn clear(&mut self) {
         self.retcode = 0;
         self.reward_list.clear();
-        self.HNMFMGCAPNO = 0;
+        self.AOMKNKFFABE = 0;
         self.special_fields.clear();
     }
 
@@ -159,7 +159,7 @@ impl ::protobuf::Message for PlanetFesTakeRegionPhaseRewardScRsp {
         static instance: PlanetFesTakeRegionPhaseRewardScRsp = PlanetFesTakeRegionPhaseRewardScRsp {
             retcode: 0,
             reward_list: ::protobuf::MessageField::none(),
-            HNMFMGCAPNO: 0,
+            AOMKNKFFABE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesTakeRegionPhaseRewardScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)PlanetFesTakeRegionPhaseRewardScRsp.proto\x1a\x0eItemList.proto\"\x8d\
-    \x01\n#PlanetFesTakeRegionPhaseRewardScRsp\x12\x18\n\x07retcode\x18\x01\
-    \x20\x01(\rR\x07retcode\x12*\n\x0breward_list\x18\x0f\x20\x01(\x0b2\t.It\
-    emListR\nrewardList\x12\x20\n\x0bHNMFMGCAPNO\x18\x0b\x20\x01(\rR\x0bHNMF\
-    MGCAPNOb\x06proto3\
+    \x01\n#PlanetFesTakeRegionPhaseRewardScRsp\x12\x18\n\x07retcode\x18\x0c\
+    \x20\x01(\rR\x07retcode\x12*\n\x0breward_list\x18\x01\x20\x01(\x0b2\t.It\
+    emListR\nrewardList\x12\x20\n\x0bAOMKNKFFABE\x18\x0b\x20\x01(\rR\x0bAOMK\
+    NKFFABEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GridFightEquipTrackSource)
 pub enum GridFightEquipTrackSource {
-    // @@protoc_insertion_point(enum_value:GridFightEquipTrackSource.BIDKCNHLKCL_HMBNOMKANHD)
-    BIDKCNHLKCL_HMBNOMKANHD = 0,
-    // @@protoc_insertion_point(enum_value:GridFightEquipTrackSource.BIDKCNHLKCL_ICAAJAMMFGB)
-    BIDKCNHLKCL_ICAAJAMMFGB = 1,
-    // @@protoc_insertion_point(enum_value:GridFightEquipTrackSource.BIDKCNHLKCL_GBMOOPLNOCA)
-    BIDKCNHLKCL_GBMOOPLNOCA = 2,
+    // @@protoc_insertion_point(enum_value:GridFightEquipTrackSource.GridFightEquipTrackSource_EGKKIFHLLHA)
+    GridFightEquipTrackSource_EGKKIFHLLHA = 0,
+    // @@protoc_insertion_point(enum_value:GridFightEquipTrackSource.GridFightEquipTrackSource_PLKFLFJBPNL)
+    GridFightEquipTrackSource_PLKFLFJBPNL = 1,
+    // @@protoc_insertion_point(enum_value:GridFightEquipTrackSource.GridFightEquipTrackSource_LCKHGCIGLKH)
+    GridFightEquipTrackSource_LCKHGCIGLKH = 2,
 }
 
 impl ::protobuf::Enum for GridFightEquipTrackSource {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for GridFightEquipTrackSource {
 
     fn from_i32(value: i32) -> ::std::option::Option<GridFightEquipTrackSource> {
         match value {
-            0 => ::std::option::Option::Some(GridFightEquipTrackSource::BIDKCNHLKCL_HMBNOMKANHD),
-            1 => ::std::option::Option::Some(GridFightEquipTrackSource::BIDKCNHLKCL_ICAAJAMMFGB),
-            2 => ::std::option::Option::Some(GridFightEquipTrackSource::BIDKCNHLKCL_GBMOOPLNOCA),
+            0 => ::std::option::Option::Some(GridFightEquipTrackSource::GridFightEquipTrackSource_EGKKIFHLLHA),
+            1 => ::std::option::Option::Some(GridFightEquipTrackSource::GridFightEquipTrackSource_PLKFLFJBPNL),
+            2 => ::std::option::Option::Some(GridFightEquipTrackSource::GridFightEquipTrackSource_LCKHGCIGLKH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GridFightEquipTrackSource> {
         match str {
-            "BIDKCNHLKCL_HMBNOMKANHD" => ::std::option::Option::Some(GridFightEquipTrackSource::BIDKCNHLKCL_HMBNOMKANHD),
-            "BIDKCNHLKCL_ICAAJAMMFGB" => ::std::option::Option::Some(GridFightEquipTrackSource::BIDKCNHLKCL_ICAAJAMMFGB),
-            "BIDKCNHLKCL_GBMOOPLNOCA" => ::std::option::Option::Some(GridFightEquipTrackSource::BIDKCNHLKCL_GBMOOPLNOCA),
+            "GridFightEquipTrackSource_EGKKIFHLLHA" => ::std::option::Option::Some(GridFightEquipTrackSource::GridFightEquipTrackSource_EGKKIFHLLHA),
+            "GridFightEquipTrackSource_PLKFLFJBPNL" => ::std::option::Option::Some(GridFightEquipTrackSource::GridFightEquipTrackSource_PLKFLFJBPNL),
+            "GridFightEquipTrackSource_LCKHGCIGLKH" => ::std::option::Option::Some(GridFightEquipTrackSource::GridFightEquipTrackSource_LCKHGCIGLKH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GridFightEquipTrackSource] = &[
-        GridFightEquipTrackSource::BIDKCNHLKCL_HMBNOMKANHD,
-        GridFightEquipTrackSource::BIDKCNHLKCL_ICAAJAMMFGB,
-        GridFightEquipTrackSource::BIDKCNHLKCL_GBMOOPLNOCA,
+        GridFightEquipTrackSource::GridFightEquipTrackSource_EGKKIFHLLHA,
+        GridFightEquipTrackSource::GridFightEquipTrackSource_PLKFLFJBPNL,
+        GridFightEquipTrackSource::GridFightEquipTrackSource_LCKHGCIGLKH,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for GridFightEquipTrackSource {
 
 impl ::std::default::Default for GridFightEquipTrackSource {
     fn default() -> Self {
-        GridFightEquipTrackSource::BIDKCNHLKCL_HMBNOMKANHD
+        GridFightEquipTrackSource::GridFightEquipTrackSource_EGKKIFHLLHA
     }
 }
 
@@ -92,9 +92,10 @@ impl GridFightEquipTrackSource {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGridFightEquipTrackSource.proto*r\n\x19GridFightEquipTrackSource\
-    \x12\x1b\n\x17BIDKCNHLKCL_HMBNOMKANHD\x10\0\x12\x1b\n\x17BIDKCNHLKCL_ICA\
-    AJAMMFGB\x10\x01\x12\x1b\n\x17BIDKCNHLKCL_GBMOOPLNOCA\x10\x02b\x06proto3\
+    \n\x1fGridFightEquipTrackSource.proto*\x9c\x01\n\x19GridFightEquipTrackS\
+    ource\x12)\n%GridFightEquipTrackSource_EGKKIFHLLHA\x10\0\x12)\n%GridFigh\
+    tEquipTrackSource_PLKFLFJBPNL\x10\x01\x12)\n%GridFightEquipTrackSource_L\
+    CKHGCIGLKH\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

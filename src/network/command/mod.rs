@@ -80,16 +80,16 @@ pub mod proto {
     pub mod WaitDelResource;
 
     // Untranslated dependencies
-    pub mod BFNHDLIEMJB;
-    pub mod EINFBMJPDAH;
-    pub mod FBEANGHKMFG;
-    pub mod FCKLHHKFEJG;
-    pub mod GBNNKMKNLAK;
-    pub mod IMHBLLJLHEF;
-    pub mod JBIFELDOACE;
-    pub mod NCPKCMGAAOM;
-    pub mod OMMDLBPNGEK;
-    pub mod PGKHJCKKEEJ;
+    pub mod EAIOLADLFKL;
+    pub mod EDLDOOAILPM;
+    pub mod EGAJNMIIAPJ;
+    pub mod FCFAGFDBKIH;
+    pub mod GCEMNNEICDP;
+    pub mod HICAPOJEBJJ;
+    pub mod JFKBNADPDEE;
+    pub mod JMDPCOPDNNH;
+    pub mod JOGMADAMFNI;
+    pub mod MJHHEOEEAJD;
 }
 
 /// Game command header.

@@ -47,8 +47,8 @@ pub enum PlayingState {
     PLAYING_ROGUE_MAGIC = 8,
     // @@protoc_insertion_point(enum_value:PlayingState.PLAYING_CHALLENGE_PEAK)
     PLAYING_CHALLENGE_PEAK = 9,
-    // @@protoc_insertion_point(enum_value:PlayingState.DNPJOCHLKPC_GLPLACKKCAM)
-    DNPJOCHLKPC_GLPLACKKCAM = 10,
+    // @@protoc_insertion_point(enum_value:PlayingState.PlayingState_MICLPGPHAJL)
+    PlayingState_MICLPGPHAJL = 10,
 }
 
 impl ::protobuf::Enum for PlayingState {
@@ -70,7 +70,7 @@ impl ::protobuf::Enum for PlayingState {
             7 => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_TOURN),
             8 => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_MAGIC),
             9 => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_PEAK),
-            10 => ::std::option::Option::Some(PlayingState::DNPJOCHLKPC_GLPLACKKCAM),
+            10 => ::std::option::Option::Some(PlayingState::PlayingState_MICLPGPHAJL),
             _ => ::std::option::Option::None
         }
     }
@@ -87,7 +87,7 @@ impl ::protobuf::Enum for PlayingState {
             "PLAYING_ROGUE_TOURN" => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_TOURN),
             "PLAYING_ROGUE_MAGIC" => ::std::option::Option::Some(PlayingState::PLAYING_ROGUE_MAGIC),
             "PLAYING_CHALLENGE_PEAK" => ::std::option::Option::Some(PlayingState::PLAYING_CHALLENGE_PEAK),
-            "DNPJOCHLKPC_GLPLACKKCAM" => ::std::option::Option::Some(PlayingState::DNPJOCHLKPC_GLPLACKKCAM),
+            "PlayingState_MICLPGPHAJL" => ::std::option::Option::Some(PlayingState::PlayingState_MICLPGPHAJL),
             _ => ::std::option::Option::None
         }
     }
@@ -103,7 +103,7 @@ impl ::protobuf::Enum for PlayingState {
         PlayingState::PLAYING_ROGUE_TOURN,
         PlayingState::PLAYING_ROGUE_MAGIC,
         PlayingState::PLAYING_CHALLENGE_PEAK,
-        PlayingState::DNPJOCHLKPC_GLPLACKKCAM,
+        PlayingState::PlayingState_MICLPGPHAJL,
     ];
 }
 
@@ -132,14 +132,14 @@ impl PlayingState {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12PlayingState.proto*\xb9\x02\n\x0cPlayingState\x12\x16\n\x12PLAYING\
+    \n\x12PlayingState.proto*\xba\x02\n\x0cPlayingState\x12\x16\n\x12PLAYING\
     _STATE_NONE\x10\0\x12\x18\n\x14PLAYING_ROGUE_COSMOS\x10\x01\x12\x17\n\
     \x13PLAYING_ROGUE_CHESS\x10\x02\x12\x1c\n\x18PLAYING_ROGUE_CHESS_NOUS\
     \x10\x03\x12\x1c\n\x18PLAYING_CHALLENGE_MEMORY\x10\x04\x12\x1b\n\x17PLAY\
     ING_CHALLENGE_STORY\x10\x05\x12\x1a\n\x16PLAYING_CHALLENGE_BOSS\x10\x06\
     \x12\x17\n\x13PLAYING_ROGUE_TOURN\x10\x07\x12\x17\n\x13PLAYING_ROGUE_MAG\
-    IC\x10\x08\x12\x1a\n\x16PLAYING_CHALLENGE_PEAK\x10\t\x12\x1b\n\x17DNPJOC\
-    HLKPC_GLPLACKKCAM\x10\nb\x06proto3\
+    IC\x10\x08\x12\x1a\n\x16PLAYING_CHALLENGE_PEAK\x10\t\x12\x1c\n\x18Playin\
+    gState_MICLPGPHAJL\x10\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

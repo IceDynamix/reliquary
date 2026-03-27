@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FiveDimGameDataUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FiveDimGameDataUpdateScNotify.KIEFKBHHIJD)
-    pub KIEFKBHHIJD: bool,
+    // @@protoc_insertion_point(field:FiveDimGameDataUpdateScNotify.PMMGJDNFOKF)
+    pub PMMGJDNFOKF: ::protobuf::MessageField<super::CNMADDPJBAB::CNMADDPJBAB>,
+    // @@protoc_insertion_point(field:FiveDimGameDataUpdateScNotify.JIGPCGKPHMG)
+    pub JIGPCGKPHMG: bool,
     // @@protoc_insertion_point(field:FiveDimGameDataUpdateScNotify.client_pos_version)
     pub client_pos_version: u32,
-    // @@protoc_insertion_point(field:FiveDimGameDataUpdateScNotify.DDCNEFCHHFA)
-    pub DDCNEFCHHFA: ::protobuf::MessageField<super::PDFKINCINIL::PDFKINCINIL>,
     // special fields
     // @@protoc_insertion_point(special_field:FiveDimGameDataUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl FiveDimGameDataUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CNMADDPJBAB::CNMADDPJBAB>(
+            "PMMGJDNFOKF",
+            |m: &FiveDimGameDataUpdateScNotify| { &m.PMMGJDNFOKF },
+            |m: &mut FiveDimGameDataUpdateScNotify| { &mut m.PMMGJDNFOKF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KIEFKBHHIJD",
-            |m: &FiveDimGameDataUpdateScNotify| { &m.KIEFKBHHIJD },
-            |m: &mut FiveDimGameDataUpdateScNotify| { &mut m.KIEFKBHHIJD },
+            "JIGPCGKPHMG",
+            |m: &FiveDimGameDataUpdateScNotify| { &m.JIGPCGKPHMG },
+            |m: &mut FiveDimGameDataUpdateScNotify| { &mut m.JIGPCGKPHMG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "client_pos_version",
             |m: &FiveDimGameDataUpdateScNotify| { &m.client_pos_version },
             |m: &mut FiveDimGameDataUpdateScNotify| { &mut m.client_pos_version },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PDFKINCINIL::PDFKINCINIL>(
-            "DDCNEFCHHFA",
-            |m: &FiveDimGameDataUpdateScNotify| { &m.DDCNEFCHHFA },
-            |m: &mut FiveDimGameDataUpdateScNotify| { &mut m.DDCNEFCHHFA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FiveDimGameDataUpdateScNotify>(
             "FiveDimGameDataUpdateScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FiveDimGameDataUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.KIEFKBHHIJD = is.read_bool()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PMMGJDNFOKF)?;
                 },
-                16 => {
+                88 => {
+                    self.JIGPCGKPHMG = is.read_bool()?;
+                },
+                112 => {
                     self.client_pos_version = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDCNEFCHHFA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for FiveDimGameDataUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KIEFKBHHIJD != false {
+        if let Some(v) = self.PMMGJDNFOKF.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.JIGPCGKPHMG != false {
             my_size += 1 + 1;
         }
         if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.client_pos_version);
-        }
-        if let Some(v) = self.DDCNEFCHHFA.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(14, self.client_pos_version);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for FiveDimGameDataUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KIEFKBHHIJD != false {
-            os.write_bool(9, self.KIEFKBHHIJD)?;
+        if let Some(v) = self.PMMGJDNFOKF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if self.JIGPCGKPHMG != false {
+            os.write_bool(11, self.JIGPCGKPHMG)?;
         }
         if self.client_pos_version != 0 {
-            os.write_uint32(2, self.client_pos_version)?;
-        }
-        if let Some(v) = self.DDCNEFCHHFA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            os.write_uint32(14, self.client_pos_version)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for FiveDimGameDataUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.KIEFKBHHIJD = false;
+        self.PMMGJDNFOKF.clear();
+        self.JIGPCGKPHMG = false;
         self.client_pos_version = 0;
-        self.DDCNEFCHHFA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FiveDimGameDataUpdateScNotify {
         static instance: FiveDimGameDataUpdateScNotify = FiveDimGameDataUpdateScNotify {
-            KIEFKBHHIJD: false,
+            PMMGJDNFOKF: ::protobuf::MessageField::none(),
+            JIGPCGKPHMG: false,
             client_pos_version: 0,
-            DDCNEFCHHFA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for FiveDimGameDataUpdateScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#FiveDimGameDataUpdateScNotify.proto\x1a\x11PDFKINCINIL.proto\"\x9f\
-    \x01\n\x1dFiveDimGameDataUpdateScNotify\x12\x20\n\x0bKIEFKBHHIJD\x18\t\
-    \x20\x01(\x08R\x0bKIEFKBHHIJD\x12,\n\x12client_pos_version\x18\x02\x20\
-    \x01(\rR\x10clientPosVersion\x12.\n\x0bDDCNEFCHHFA\x18\n\x20\x01(\x0b2\
-    \x0c.PDFKINCINILR\x0bDDCNEFCHHFAb\x06proto3\
+    \n#FiveDimGameDataUpdateScNotify.proto\x1a\x11CNMADDPJBAB.proto\"\x9f\
+    \x01\n\x1dFiveDimGameDataUpdateScNotify\x12.\n\x0bPMMGJDNFOKF\x18\x08\
+    \x20\x01(\x0b2\x0c.CNMADDPJBABR\x0bPMMGJDNFOKF\x12\x20\n\x0bJIGPCGKPHMG\
+    \x18\x0b\x20\x01(\x08R\x0bJIGPCGKPHMG\x12,\n\x12client_pos_version\x18\
+    \x0e\x20\x01(\rR\x10clientPosVersionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PDFKINCINIL::file_descriptor().clone());
+            deps.push(super::CNMADDPJBAB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FiveDimGameDataUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

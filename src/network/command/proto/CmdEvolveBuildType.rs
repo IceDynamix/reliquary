@@ -27,52 +27,52 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdEvolveBuildType)
 pub enum CmdEvolveBuildType {
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_MMHHLBKKBAH)
-    LBGEAODKEND_MMHHLBKKBAH = 0,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_CENCNJKKBDN)
-    LBGEAODKEND_CENCNJKKBDN = 7146,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_IHGAPIFALHO)
-    LBGEAODKEND_IHGAPIFALHO = 7108,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_ECHHBOAINCH)
-    LBGEAODKEND_ECHHBOAINCH = 7150,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_GJNHIPMBDOK)
-    LBGEAODKEND_GJNHIPMBDOK = 7135,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_IODNOOIABPK)
-    LBGEAODKEND_IODNOOIABPK = 7145,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_FGMJBFMKCJL)
-    LBGEAODKEND_FGMJBFMKCJL = 7133,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_DPLMFHOOHHP)
-    LBGEAODKEND_DPLMFHOOHHP = 7147,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_GFJLBEJNNLK)
-    LBGEAODKEND_GFJLBEJNNLK = 7106,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_FLKIGJGPNHL)
-    LBGEAODKEND_FLKIGJGPNHL = 7128,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_FEOEINFCOEK)
-    LBGEAODKEND_FEOEINFCOEK = 7139,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_IGMAJNJANGK)
-    LBGEAODKEND_IGMAJNJANGK = 7107,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_MPIJMMMDKNP)
-    LBGEAODKEND_MPIJMMMDKNP = 7101,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_ILGJHKANPDC)
-    LBGEAODKEND_ILGJHKANPDC = 7137,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_DJHEEANFIKM)
-    LBGEAODKEND_DJHEEANFIKM = 7103,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_LEECJBGPHEG)
-    LBGEAODKEND_LEECJBGPHEG = 7124,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_DIPHAHJGHBA)
-    LBGEAODKEND_DIPHAHJGHBA = 7149,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_AJLDKCFPECA)
-    LBGEAODKEND_AJLDKCFPECA = 7143,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_MMFFHEEFDOB)
-    LBGEAODKEND_MMFFHEEFDOB = 7120,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_DKDCPCKKAKC)
-    LBGEAODKEND_DKDCPCKKAKC = 7119,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_COAHKEGCMJD)
-    LBGEAODKEND_COAHKEGCMJD = 7140,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_OGADNBHAFKN)
-    LBGEAODKEND_OGADNBHAFKN = 7131,
-    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.LBGEAODKEND_PJOIANCJMOH)
-    LBGEAODKEND_PJOIANCJMOH = 7138,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_IINBLPOACOC)
+    CmdEvolveBuildType_IINBLPOACOC = 0,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_KAPLENCCCBG)
+    CmdEvolveBuildType_KAPLENCCCBG = 7128,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_MCEJEKEECCN)
+    CmdEvolveBuildType_MCEJEKEECCN = 7101,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_HLPEAGKHMFL)
+    CmdEvolveBuildType_HLPEAGKHMFL = 7112,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_PGGMADMLGEJ)
+    CmdEvolveBuildType_PGGMADMLGEJ = 7124,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_JAGCJECMGML)
+    CmdEvolveBuildType_JAGCJECMGML = 7107,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_PFAAKDMGMKC)
+    CmdEvolveBuildType_PFAAKDMGMKC = 7119,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_MEACONLEBEG)
+    CmdEvolveBuildType_MEACONLEBEG = 7140,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_NLKADELBGFK)
+    CmdEvolveBuildType_NLKADELBGFK = 7134,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_OIJGLNHDFPP)
+    CmdEvolveBuildType_OIJGLNHDFPP = 7130,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_LELOBDMGJDB)
+    CmdEvolveBuildType_LELOBDMGJDB = 7109,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_IEBFEDOMNKM)
+    CmdEvolveBuildType_IEBFEDOMNKM = 7114,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_EMICHDMFBOF)
+    CmdEvolveBuildType_EMICHDMFBOF = 7108,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_IBPNCBPMFOE)
+    CmdEvolveBuildType_IBPNCBPMFOE = 7141,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_LONNAFPGDHF)
+    CmdEvolveBuildType_LONNAFPGDHF = 7129,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_OBKJGAKFHFO)
+    CmdEvolveBuildType_OBKJGAKFHFO = 7138,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_CBEPCLLEBMG)
+    CmdEvolveBuildType_CBEPCLLEBMG = 7104,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_DAELCLFMPEN)
+    CmdEvolveBuildType_DAELCLFMPEN = 7146,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_GBPOGNFBNHP)
+    CmdEvolveBuildType_GBPOGNFBNHP = 7102,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_JGCDHKNDKCN)
+    CmdEvolveBuildType_JGCDHKNDKCN = 7123,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_EBHCKENHKON)
+    CmdEvolveBuildType_EBHCKENHKON = 7103,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_DMALHBBDIBB)
+    CmdEvolveBuildType_DMALHBBDIBB = 7139,
+    // @@protoc_insertion_point(enum_value:CmdEvolveBuildType.CmdEvolveBuildType_BHHNBMBNJOK)
+    CmdEvolveBuildType_BHHNBMBNJOK = 7118,
 }
 
 impl ::protobuf::Enum for CmdEvolveBuildType {
@@ -84,86 +84,86 @@ impl ::protobuf::Enum for CmdEvolveBuildType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdEvolveBuildType> {
         match value {
-            0 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_MMHHLBKKBAH),
-            7146 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_CENCNJKKBDN),
-            7108 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_IHGAPIFALHO),
-            7150 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_ECHHBOAINCH),
-            7135 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_GJNHIPMBDOK),
-            7145 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_IODNOOIABPK),
-            7133 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_FGMJBFMKCJL),
-            7147 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_DPLMFHOOHHP),
-            7106 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_GFJLBEJNNLK),
-            7128 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_FLKIGJGPNHL),
-            7139 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_FEOEINFCOEK),
-            7107 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_IGMAJNJANGK),
-            7101 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_MPIJMMMDKNP),
-            7137 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_ILGJHKANPDC),
-            7103 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_DJHEEANFIKM),
-            7124 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_LEECJBGPHEG),
-            7149 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_DIPHAHJGHBA),
-            7143 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_AJLDKCFPECA),
-            7120 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_MMFFHEEFDOB),
-            7119 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_DKDCPCKKAKC),
-            7140 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_COAHKEGCMJD),
-            7131 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_OGADNBHAFKN),
-            7138 => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_PJOIANCJMOH),
+            0 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_IINBLPOACOC),
+            7128 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_KAPLENCCCBG),
+            7101 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_MCEJEKEECCN),
+            7112 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_HLPEAGKHMFL),
+            7124 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_PGGMADMLGEJ),
+            7107 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_JAGCJECMGML),
+            7119 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_PFAAKDMGMKC),
+            7140 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_MEACONLEBEG),
+            7134 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_NLKADELBGFK),
+            7130 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_OIJGLNHDFPP),
+            7109 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_LELOBDMGJDB),
+            7114 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_IEBFEDOMNKM),
+            7108 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_EMICHDMFBOF),
+            7141 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_IBPNCBPMFOE),
+            7129 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_LONNAFPGDHF),
+            7138 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_OBKJGAKFHFO),
+            7104 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_CBEPCLLEBMG),
+            7146 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_DAELCLFMPEN),
+            7102 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_GBPOGNFBNHP),
+            7123 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_JGCDHKNDKCN),
+            7103 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_EBHCKENHKON),
+            7139 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_DMALHBBDIBB),
+            7118 => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_BHHNBMBNJOK),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdEvolveBuildType> {
         match str {
-            "LBGEAODKEND_MMHHLBKKBAH" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_MMHHLBKKBAH),
-            "LBGEAODKEND_CENCNJKKBDN" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_CENCNJKKBDN),
-            "LBGEAODKEND_IHGAPIFALHO" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_IHGAPIFALHO),
-            "LBGEAODKEND_ECHHBOAINCH" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_ECHHBOAINCH),
-            "LBGEAODKEND_GJNHIPMBDOK" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_GJNHIPMBDOK),
-            "LBGEAODKEND_IODNOOIABPK" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_IODNOOIABPK),
-            "LBGEAODKEND_FGMJBFMKCJL" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_FGMJBFMKCJL),
-            "LBGEAODKEND_DPLMFHOOHHP" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_DPLMFHOOHHP),
-            "LBGEAODKEND_GFJLBEJNNLK" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_GFJLBEJNNLK),
-            "LBGEAODKEND_FLKIGJGPNHL" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_FLKIGJGPNHL),
-            "LBGEAODKEND_FEOEINFCOEK" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_FEOEINFCOEK),
-            "LBGEAODKEND_IGMAJNJANGK" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_IGMAJNJANGK),
-            "LBGEAODKEND_MPIJMMMDKNP" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_MPIJMMMDKNP),
-            "LBGEAODKEND_ILGJHKANPDC" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_ILGJHKANPDC),
-            "LBGEAODKEND_DJHEEANFIKM" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_DJHEEANFIKM),
-            "LBGEAODKEND_LEECJBGPHEG" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_LEECJBGPHEG),
-            "LBGEAODKEND_DIPHAHJGHBA" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_DIPHAHJGHBA),
-            "LBGEAODKEND_AJLDKCFPECA" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_AJLDKCFPECA),
-            "LBGEAODKEND_MMFFHEEFDOB" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_MMFFHEEFDOB),
-            "LBGEAODKEND_DKDCPCKKAKC" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_DKDCPCKKAKC),
-            "LBGEAODKEND_COAHKEGCMJD" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_COAHKEGCMJD),
-            "LBGEAODKEND_OGADNBHAFKN" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_OGADNBHAFKN),
-            "LBGEAODKEND_PJOIANCJMOH" => ::std::option::Option::Some(CmdEvolveBuildType::LBGEAODKEND_PJOIANCJMOH),
+            "CmdEvolveBuildType_IINBLPOACOC" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_IINBLPOACOC),
+            "CmdEvolveBuildType_KAPLENCCCBG" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_KAPLENCCCBG),
+            "CmdEvolveBuildType_MCEJEKEECCN" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_MCEJEKEECCN),
+            "CmdEvolveBuildType_HLPEAGKHMFL" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_HLPEAGKHMFL),
+            "CmdEvolveBuildType_PGGMADMLGEJ" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_PGGMADMLGEJ),
+            "CmdEvolveBuildType_JAGCJECMGML" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_JAGCJECMGML),
+            "CmdEvolveBuildType_PFAAKDMGMKC" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_PFAAKDMGMKC),
+            "CmdEvolveBuildType_MEACONLEBEG" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_MEACONLEBEG),
+            "CmdEvolveBuildType_NLKADELBGFK" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_NLKADELBGFK),
+            "CmdEvolveBuildType_OIJGLNHDFPP" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_OIJGLNHDFPP),
+            "CmdEvolveBuildType_LELOBDMGJDB" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_LELOBDMGJDB),
+            "CmdEvolveBuildType_IEBFEDOMNKM" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_IEBFEDOMNKM),
+            "CmdEvolveBuildType_EMICHDMFBOF" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_EMICHDMFBOF),
+            "CmdEvolveBuildType_IBPNCBPMFOE" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_IBPNCBPMFOE),
+            "CmdEvolveBuildType_LONNAFPGDHF" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_LONNAFPGDHF),
+            "CmdEvolveBuildType_OBKJGAKFHFO" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_OBKJGAKFHFO),
+            "CmdEvolveBuildType_CBEPCLLEBMG" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_CBEPCLLEBMG),
+            "CmdEvolveBuildType_DAELCLFMPEN" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_DAELCLFMPEN),
+            "CmdEvolveBuildType_GBPOGNFBNHP" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_GBPOGNFBNHP),
+            "CmdEvolveBuildType_JGCDHKNDKCN" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_JGCDHKNDKCN),
+            "CmdEvolveBuildType_EBHCKENHKON" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_EBHCKENHKON),
+            "CmdEvolveBuildType_DMALHBBDIBB" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_DMALHBBDIBB),
+            "CmdEvolveBuildType_BHHNBMBNJOK" => ::std::option::Option::Some(CmdEvolveBuildType::CmdEvolveBuildType_BHHNBMBNJOK),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdEvolveBuildType] = &[
-        CmdEvolveBuildType::LBGEAODKEND_MMHHLBKKBAH,
-        CmdEvolveBuildType::LBGEAODKEND_CENCNJKKBDN,
-        CmdEvolveBuildType::LBGEAODKEND_IHGAPIFALHO,
-        CmdEvolveBuildType::LBGEAODKEND_ECHHBOAINCH,
-        CmdEvolveBuildType::LBGEAODKEND_GJNHIPMBDOK,
-        CmdEvolveBuildType::LBGEAODKEND_IODNOOIABPK,
-        CmdEvolveBuildType::LBGEAODKEND_FGMJBFMKCJL,
-        CmdEvolveBuildType::LBGEAODKEND_DPLMFHOOHHP,
-        CmdEvolveBuildType::LBGEAODKEND_GFJLBEJNNLK,
-        CmdEvolveBuildType::LBGEAODKEND_FLKIGJGPNHL,
-        CmdEvolveBuildType::LBGEAODKEND_FEOEINFCOEK,
-        CmdEvolveBuildType::LBGEAODKEND_IGMAJNJANGK,
-        CmdEvolveBuildType::LBGEAODKEND_MPIJMMMDKNP,
-        CmdEvolveBuildType::LBGEAODKEND_ILGJHKANPDC,
-        CmdEvolveBuildType::LBGEAODKEND_DJHEEANFIKM,
-        CmdEvolveBuildType::LBGEAODKEND_LEECJBGPHEG,
-        CmdEvolveBuildType::LBGEAODKEND_DIPHAHJGHBA,
-        CmdEvolveBuildType::LBGEAODKEND_AJLDKCFPECA,
-        CmdEvolveBuildType::LBGEAODKEND_MMFFHEEFDOB,
-        CmdEvolveBuildType::LBGEAODKEND_DKDCPCKKAKC,
-        CmdEvolveBuildType::LBGEAODKEND_COAHKEGCMJD,
-        CmdEvolveBuildType::LBGEAODKEND_OGADNBHAFKN,
-        CmdEvolveBuildType::LBGEAODKEND_PJOIANCJMOH,
+        CmdEvolveBuildType::CmdEvolveBuildType_IINBLPOACOC,
+        CmdEvolveBuildType::CmdEvolveBuildType_KAPLENCCCBG,
+        CmdEvolveBuildType::CmdEvolveBuildType_MCEJEKEECCN,
+        CmdEvolveBuildType::CmdEvolveBuildType_HLPEAGKHMFL,
+        CmdEvolveBuildType::CmdEvolveBuildType_PGGMADMLGEJ,
+        CmdEvolveBuildType::CmdEvolveBuildType_JAGCJECMGML,
+        CmdEvolveBuildType::CmdEvolveBuildType_PFAAKDMGMKC,
+        CmdEvolveBuildType::CmdEvolveBuildType_MEACONLEBEG,
+        CmdEvolveBuildType::CmdEvolveBuildType_NLKADELBGFK,
+        CmdEvolveBuildType::CmdEvolveBuildType_OIJGLNHDFPP,
+        CmdEvolveBuildType::CmdEvolveBuildType_LELOBDMGJDB,
+        CmdEvolveBuildType::CmdEvolveBuildType_IEBFEDOMNKM,
+        CmdEvolveBuildType::CmdEvolveBuildType_EMICHDMFBOF,
+        CmdEvolveBuildType::CmdEvolveBuildType_IBPNCBPMFOE,
+        CmdEvolveBuildType::CmdEvolveBuildType_LONNAFPGDHF,
+        CmdEvolveBuildType::CmdEvolveBuildType_OBKJGAKFHFO,
+        CmdEvolveBuildType::CmdEvolveBuildType_CBEPCLLEBMG,
+        CmdEvolveBuildType::CmdEvolveBuildType_DAELCLFMPEN,
+        CmdEvolveBuildType::CmdEvolveBuildType_GBPOGNFBNHP,
+        CmdEvolveBuildType::CmdEvolveBuildType_JGCDHKNDKCN,
+        CmdEvolveBuildType::CmdEvolveBuildType_EBHCKENHKON,
+        CmdEvolveBuildType::CmdEvolveBuildType_DMALHBBDIBB,
+        CmdEvolveBuildType::CmdEvolveBuildType_BHHNBMBNJOK,
     ];
 }
 
@@ -175,29 +175,29 @@ impl ::protobuf::EnumFull for CmdEvolveBuildType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdEvolveBuildType::LBGEAODKEND_MMHHLBKKBAH => 0,
-            CmdEvolveBuildType::LBGEAODKEND_CENCNJKKBDN => 1,
-            CmdEvolveBuildType::LBGEAODKEND_IHGAPIFALHO => 2,
-            CmdEvolveBuildType::LBGEAODKEND_ECHHBOAINCH => 3,
-            CmdEvolveBuildType::LBGEAODKEND_GJNHIPMBDOK => 4,
-            CmdEvolveBuildType::LBGEAODKEND_IODNOOIABPK => 5,
-            CmdEvolveBuildType::LBGEAODKEND_FGMJBFMKCJL => 6,
-            CmdEvolveBuildType::LBGEAODKEND_DPLMFHOOHHP => 7,
-            CmdEvolveBuildType::LBGEAODKEND_GFJLBEJNNLK => 8,
-            CmdEvolveBuildType::LBGEAODKEND_FLKIGJGPNHL => 9,
-            CmdEvolveBuildType::LBGEAODKEND_FEOEINFCOEK => 10,
-            CmdEvolveBuildType::LBGEAODKEND_IGMAJNJANGK => 11,
-            CmdEvolveBuildType::LBGEAODKEND_MPIJMMMDKNP => 12,
-            CmdEvolveBuildType::LBGEAODKEND_ILGJHKANPDC => 13,
-            CmdEvolveBuildType::LBGEAODKEND_DJHEEANFIKM => 14,
-            CmdEvolveBuildType::LBGEAODKEND_LEECJBGPHEG => 15,
-            CmdEvolveBuildType::LBGEAODKEND_DIPHAHJGHBA => 16,
-            CmdEvolveBuildType::LBGEAODKEND_AJLDKCFPECA => 17,
-            CmdEvolveBuildType::LBGEAODKEND_MMFFHEEFDOB => 18,
-            CmdEvolveBuildType::LBGEAODKEND_DKDCPCKKAKC => 19,
-            CmdEvolveBuildType::LBGEAODKEND_COAHKEGCMJD => 20,
-            CmdEvolveBuildType::LBGEAODKEND_OGADNBHAFKN => 21,
-            CmdEvolveBuildType::LBGEAODKEND_PJOIANCJMOH => 22,
+            CmdEvolveBuildType::CmdEvolveBuildType_IINBLPOACOC => 0,
+            CmdEvolveBuildType::CmdEvolveBuildType_KAPLENCCCBG => 1,
+            CmdEvolveBuildType::CmdEvolveBuildType_MCEJEKEECCN => 2,
+            CmdEvolveBuildType::CmdEvolveBuildType_HLPEAGKHMFL => 3,
+            CmdEvolveBuildType::CmdEvolveBuildType_PGGMADMLGEJ => 4,
+            CmdEvolveBuildType::CmdEvolveBuildType_JAGCJECMGML => 5,
+            CmdEvolveBuildType::CmdEvolveBuildType_PFAAKDMGMKC => 6,
+            CmdEvolveBuildType::CmdEvolveBuildType_MEACONLEBEG => 7,
+            CmdEvolveBuildType::CmdEvolveBuildType_NLKADELBGFK => 8,
+            CmdEvolveBuildType::CmdEvolveBuildType_OIJGLNHDFPP => 9,
+            CmdEvolveBuildType::CmdEvolveBuildType_LELOBDMGJDB => 10,
+            CmdEvolveBuildType::CmdEvolveBuildType_IEBFEDOMNKM => 11,
+            CmdEvolveBuildType::CmdEvolveBuildType_EMICHDMFBOF => 12,
+            CmdEvolveBuildType::CmdEvolveBuildType_IBPNCBPMFOE => 13,
+            CmdEvolveBuildType::CmdEvolveBuildType_LONNAFPGDHF => 14,
+            CmdEvolveBuildType::CmdEvolveBuildType_OBKJGAKFHFO => 15,
+            CmdEvolveBuildType::CmdEvolveBuildType_CBEPCLLEBMG => 16,
+            CmdEvolveBuildType::CmdEvolveBuildType_DAELCLFMPEN => 17,
+            CmdEvolveBuildType::CmdEvolveBuildType_GBPOGNFBNHP => 18,
+            CmdEvolveBuildType::CmdEvolveBuildType_JGCDHKNDKCN => 19,
+            CmdEvolveBuildType::CmdEvolveBuildType_EBHCKENHKON => 20,
+            CmdEvolveBuildType::CmdEvolveBuildType_DMALHBBDIBB => 21,
+            CmdEvolveBuildType::CmdEvolveBuildType_BHHNBMBNJOK => 22,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -205,7 +205,7 @@ impl ::protobuf::EnumFull for CmdEvolveBuildType {
 
 impl ::std::default::Default for CmdEvolveBuildType {
     fn default() -> Self {
-        CmdEvolveBuildType::LBGEAODKEND_MMHHLBKKBAH
+        CmdEvolveBuildType::CmdEvolveBuildType_IINBLPOACOC
     }
 }
 
@@ -216,22 +216,24 @@ impl CmdEvolveBuildType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdEvolveBuildType.proto*\xc5\x05\n\x12CmdEvolveBuildType\x12\x1b\
-    \n\x17LBGEAODKEND_MMHHLBKKBAH\x10\0\x12\x1c\n\x17LBGEAODKEND_CENCNJKKBDN\
-    \x10\xea7\x12\x1c\n\x17LBGEAODKEND_IHGAPIFALHO\x10\xc47\x12\x1c\n\x17LBG\
-    EAODKEND_ECHHBOAINCH\x10\xee7\x12\x1c\n\x17LBGEAODKEND_GJNHIPMBDOK\x10\
-    \xdf7\x12\x1c\n\x17LBGEAODKEND_IODNOOIABPK\x10\xe97\x12\x1c\n\x17LBGEAOD\
-    KEND_FGMJBFMKCJL\x10\xdd7\x12\x1c\n\x17LBGEAODKEND_DPLMFHOOHHP\x10\xeb7\
-    \x12\x1c\n\x17LBGEAODKEND_GFJLBEJNNLK\x10\xc27\x12\x1c\n\x17LBGEAODKEND_\
-    FLKIGJGPNHL\x10\xd87\x12\x1c\n\x17LBGEAODKEND_FEOEINFCOEK\x10\xe37\x12\
-    \x1c\n\x17LBGEAODKEND_IGMAJNJANGK\x10\xc37\x12\x1c\n\x17LBGEAODKEND_MPIJ\
-    MMMDKNP\x10\xbd7\x12\x1c\n\x17LBGEAODKEND_ILGJHKANPDC\x10\xe17\x12\x1c\n\
-    \x17LBGEAODKEND_DJHEEANFIKM\x10\xbf7\x12\x1c\n\x17LBGEAODKEND_LEECJBGPHE\
-    G\x10\xd47\x12\x1c\n\x17LBGEAODKEND_DIPHAHJGHBA\x10\xed7\x12\x1c\n\x17LB\
-    GEAODKEND_AJLDKCFPECA\x10\xe77\x12\x1c\n\x17LBGEAODKEND_MMFFHEEFDOB\x10\
-    \xd07\x12\x1c\n\x17LBGEAODKEND_DKDCPCKKAKC\x10\xcf7\x12\x1c\n\x17LBGEAOD\
-    KEND_COAHKEGCMJD\x10\xe47\x12\x1c\n\x17LBGEAODKEND_OGADNBHAFKN\x10\xdb7\
-    \x12\x1c\n\x17LBGEAODKEND_PJOIANCJMOH\x10\xe27b\x06proto3\
+    \n\x18CmdEvolveBuildType.proto*\xe6\x06\n\x12CmdEvolveBuildType\x12\"\n\
+    \x1eCmdEvolveBuildType_IINBLPOACOC\x10\0\x12#\n\x1eCmdEvolveBuildType_KA\
+    PLENCCCBG\x10\xd87\x12#\n\x1eCmdEvolveBuildType_MCEJEKEECCN\x10\xbd7\x12\
+    #\n\x1eCmdEvolveBuildType_HLPEAGKHMFL\x10\xc87\x12#\n\x1eCmdEvolveBuildT\
+    ype_PGGMADMLGEJ\x10\xd47\x12#\n\x1eCmdEvolveBuildType_JAGCJECMGML\x10\
+    \xc37\x12#\n\x1eCmdEvolveBuildType_PFAAKDMGMKC\x10\xcf7\x12#\n\x1eCmdEvo\
+    lveBuildType_MEACONLEBEG\x10\xe47\x12#\n\x1eCmdEvolveBuildType_NLKADELBG\
+    FK\x10\xde7\x12#\n\x1eCmdEvolveBuildType_OIJGLNHDFPP\x10\xda7\x12#\n\x1e\
+    CmdEvolveBuildType_LELOBDMGJDB\x10\xc57\x12#\n\x1eCmdEvolveBuildType_IEB\
+    FEDOMNKM\x10\xca7\x12#\n\x1eCmdEvolveBuildType_EMICHDMFBOF\x10\xc47\x12#\
+    \n\x1eCmdEvolveBuildType_IBPNCBPMFOE\x10\xe57\x12#\n\x1eCmdEvolveBuildTy\
+    pe_LONNAFPGDHF\x10\xd97\x12#\n\x1eCmdEvolveBuildType_OBKJGAKFHFO\x10\xe2\
+    7\x12#\n\x1eCmdEvolveBuildType_CBEPCLLEBMG\x10\xc07\x12#\n\x1eCmdEvolveB\
+    uildType_DAELCLFMPEN\x10\xea7\x12#\n\x1eCmdEvolveBuildType_GBPOGNFBNHP\
+    \x10\xbe7\x12#\n\x1eCmdEvolveBuildType_JGCDHKNDKCN\x10\xd37\x12#\n\x1eCm\
+    dEvolveBuildType_EBHCKENHKON\x10\xbf7\x12#\n\x1eCmdEvolveBuildType_DMALH\
+    BBDIBB\x10\xe37\x12#\n\x1eCmdEvolveBuildType_BHHNBMBNJOK\x10\xce7b\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

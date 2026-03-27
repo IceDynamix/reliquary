@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightGameStateScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FightGameStateScRsp.EJKAONJFGGA)
-    pub EJKAONJFGGA: ::protobuf::MessageField<super::GDOCLBELINI::GDOCLBELINI>,
-    // @@protoc_insertion_point(field:FightGameStateScRsp.JHKOCFGKOJI)
-    pub JHKOCFGKOJI: ::std::vec::Vec<super::BAIGACNLLMI::BAIGACNLLMI>,
+    // @@protoc_insertion_point(field:FightGameStateScRsp.DIMFOEHBNIA)
+    pub DIMFOEHBNIA: ::protobuf::MessageField<super::JDNNCKMJCPO::JDNNCKMJCPO>,
+    // @@protoc_insertion_point(field:FightGameStateScRsp.PMCKGJIIHNL)
+    pub PMCKGJIIHNL: ::std::vec::Vec<super::GCKNBLAJJGP::GCKNBLAJJGP>,
+    // @@protoc_insertion_point(field:FightGameStateScRsp.KFIIHJMOHIG)
+    pub KFIIHJMOHIG: ::protobuf::MessageField<super::POFJNMBIINE::POFJNMBIINE>,
     // @@protoc_insertion_point(field:FightGameStateScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:FightGameStateScRsp.GOCANFLCAOJ)
-    pub GOCANFLCAOJ: ::protobuf::MessageField<super::FAMNPACAOIP::FAMNPACAOIP>,
     // special fields
     // @@protoc_insertion_point(special_field:FightGameStateScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl FightGameStateScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GDOCLBELINI::GDOCLBELINI>(
-            "EJKAONJFGGA",
-            |m: &FightGameStateScRsp| { &m.EJKAONJFGGA },
-            |m: &mut FightGameStateScRsp| { &mut m.EJKAONJFGGA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JDNNCKMJCPO::JDNNCKMJCPO>(
+            "DIMFOEHBNIA",
+            |m: &FightGameStateScRsp| { &m.DIMFOEHBNIA },
+            |m: &mut FightGameStateScRsp| { &mut m.DIMFOEHBNIA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JHKOCFGKOJI",
-            |m: &FightGameStateScRsp| { &m.JHKOCFGKOJI },
-            |m: &mut FightGameStateScRsp| { &mut m.JHKOCFGKOJI },
+            "PMCKGJIIHNL",
+            |m: &FightGameStateScRsp| { &m.PMCKGJIIHNL },
+            |m: &mut FightGameStateScRsp| { &mut m.PMCKGJIIHNL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::POFJNMBIINE::POFJNMBIINE>(
+            "KFIIHJMOHIG",
+            |m: &FightGameStateScRsp| { &m.KFIIHJMOHIG },
+            |m: &mut FightGameStateScRsp| { &mut m.KFIIHJMOHIG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FightGameStateScRsp| { &m.retcode },
             |m: &mut FightGameStateScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FAMNPACAOIP::FAMNPACAOIP>(
-            "GOCANFLCAOJ",
-            |m: &FightGameStateScRsp| { &m.GOCANFLCAOJ },
-            |m: &mut FightGameStateScRsp| { &mut m.GOCANFLCAOJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightGameStateScRsp>(
             "FightGameStateScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for FightGameStateScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJKAONJFGGA)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DIMFOEHBNIA)?;
                 },
-                58 => {
-                    self.JHKOCFGKOJI.push(is.read_message()?);
+                74 => {
+                    self.PMCKGJIIHNL.push(is.read_message()?);
                 },
-                88 => {
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KFIIHJMOHIG)?;
+                },
+                16 => {
                     self.retcode = is.read_uint32()?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GOCANFLCAOJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,20 +117,20 @@ impl ::protobuf::Message for FightGameStateScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EJKAONJFGGA.as_ref() {
+        if let Some(v) = self.DIMFOEHBNIA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.JHKOCFGKOJI {
+        for value in &self.PMCKGJIIHNL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if let Some(v) = self.GOCANFLCAOJ.as_ref() {
+        if let Some(v) = self.KFIIHJMOHIG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,17 +138,17 @@ impl ::protobuf::Message for FightGameStateScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EJKAONJFGGA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.DIMFOEHBNIA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        for v in &self.JHKOCFGKOJI {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.PMCKGJIIHNL {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+        if let Some(v) = self.KFIIHJMOHIG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if let Some(v) = self.GOCANFLCAOJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,19 +167,19 @@ impl ::protobuf::Message for FightGameStateScRsp {
     }
 
     fn clear(&mut self) {
-        self.EJKAONJFGGA.clear();
-        self.JHKOCFGKOJI.clear();
+        self.DIMFOEHBNIA.clear();
+        self.PMCKGJIIHNL.clear();
+        self.KFIIHJMOHIG.clear();
         self.retcode = 0;
-        self.GOCANFLCAOJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightGameStateScRsp {
         static instance: FightGameStateScRsp = FightGameStateScRsp {
-            EJKAONJFGGA: ::protobuf::MessageField::none(),
-            JHKOCFGKOJI: ::std::vec::Vec::new(),
+            DIMFOEHBNIA: ::protobuf::MessageField::none(),
+            PMCKGJIIHNL: ::std::vec::Vec::new(),
+            KFIIHJMOHIG: ::protobuf::MessageField::none(),
             retcode: 0,
-            GOCANFLCAOJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,13 +204,13 @@ impl ::protobuf::reflect::ProtobufValue for FightGameStateScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19FightGameStateScRsp.proto\x1a\x11BAIGACNLLMI.proto\x1a\x11FAMNPACA\
-    OIP.proto\x1a\x11GDOCLBELINI.proto\"\xbf\x01\n\x13FightGameStateScRsp\
-    \x12.\n\x0bEJKAONJFGGA\x18\x08\x20\x01(\x0b2\x0c.GDOCLBELINIR\x0bEJKAONJ\
-    FGGA\x12.\n\x0bJHKOCFGKOJI\x18\x07\x20\x03(\x0b2\x0c.BAIGACNLLMIR\x0bJHK\
-    OCFGKOJI\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12.\n\x0bG\
-    OCANFLCAOJ\x18\x0e\x20\x01(\x0b2\x0c.FAMNPACAOIPR\x0bGOCANFLCAOJb\x06pro\
-    to3\
+    \n\x19FightGameStateScRsp.proto\x1a\x11GCKNBLAJJGP.proto\x1a\x11JDNNCKMJ\
+    CPO.proto\x1a\x11POFJNMBIINE.proto\"\xbf\x01\n\x13FightGameStateScRsp\
+    \x12.\n\x0bDIMFOEHBNIA\x18\x06\x20\x01(\x0b2\x0c.JDNNCKMJCPOR\x0bDIMFOEH\
+    BNIA\x12.\n\x0bPMCKGJIIHNL\x18\t\x20\x03(\x0b2\x0c.GCKNBLAJJGPR\x0bPMCKG\
+    JIIHNL\x12.\n\x0bKFIIHJMOHIG\x18\x03\x20\x01(\x0b2\x0c.POFJNMBIINER\x0bK\
+    FIIHJMOHIG\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -228,9 +228,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::BAIGACNLLMI::file_descriptor().clone());
-            deps.push(super::FAMNPACAOIP::file_descriptor().clone());
-            deps.push(super::GDOCLBELINI::file_descriptor().clone());
+            deps.push(super::GCKNBLAJJGP::file_descriptor().clone());
+            deps.push(super::JDNNCKMJCPO::file_descriptor().clone());
+            deps.push(super::POFJNMBIINE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FightGameStateScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

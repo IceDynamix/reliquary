@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueModifierSelectCellCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueModifierSelectCellCsReq.PMCDFAAINDL)
-    pub PMCDFAAINDL: u32,
+    // @@protoc_insertion_point(field:RogueModifierSelectCellCsReq.HICCHNECJGJ)
+    pub HICCHNECJGJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifierSelectCellCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueModifierSelectCellCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PMCDFAAINDL",
-            |m: &RogueModifierSelectCellCsReq| { &m.PMCDFAAINDL },
-            |m: &mut RogueModifierSelectCellCsReq| { &mut m.PMCDFAAINDL },
+            "HICCHNECJGJ",
+            |m: &RogueModifierSelectCellCsReq| { &m.HICCHNECJGJ },
+            |m: &mut RogueModifierSelectCellCsReq| { &mut m.HICCHNECJGJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueModifierSelectCellCsReq>(
             "RogueModifierSelectCellCsReq",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for RogueModifierSelectCellCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 104 => {
-                    self.PMCDFAAINDL = is.read_uint32()?;
+                    self.HICCHNECJGJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for RogueModifierSelectCellCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PMCDFAAINDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.PMCDFAAINDL);
+        if self.HICCHNECJGJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.HICCHNECJGJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RogueModifierSelectCellCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PMCDFAAINDL != 0 {
-            os.write_uint32(13, self.PMCDFAAINDL)?;
+        if self.HICCHNECJGJ != 0 {
+            os.write_uint32(13, self.HICCHNECJGJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RogueModifierSelectCellCsReq {
     }
 
     fn clear(&mut self) {
-        self.PMCDFAAINDL = 0;
+        self.HICCHNECJGJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueModifierSelectCellCsReq {
         static instance: RogueModifierSelectCellCsReq = RogueModifierSelectCellCsReq {
-            PMCDFAAINDL: 0,
+            HICCHNECJGJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierSelectCellCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"RogueModifierSelectCellCsReq.proto\"@\n\x1cRogueModifierSelectCellCs\
-    Req\x12\x20\n\x0bPMCDFAAINDL\x18\r\x20\x01(\rR\x0bPMCDFAAINDLb\x06proto3\
+    Req\x12\x20\n\x0bHICCHNECJGJ\x18\r\x20\x01(\rR\x0bHICCHNECJGJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

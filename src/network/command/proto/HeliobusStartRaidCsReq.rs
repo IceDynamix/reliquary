@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusStartRaidCsReq {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.raid_id)
-    pub raid_id: u32,
     // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.prop_entity_id)
     pub prop_entity_id: u32,
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.skill_id)
-    pub skill_id: u32,
-    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.KIBNBPMALPJ)
-    pub KIBNBPMALPJ: u32,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.MOBJLKMJJBL)
+    pub MOBJLKMJJBL: u32,
     // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.skill_id)
+    pub skill_id: u32,
+    // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.raid_id)
+    pub raid_id: u32,
     // @@protoc_insertion_point(field:HeliobusStartRaidCsReq.is_save)
     pub is_save: bool,
     // special fields
@@ -60,14 +60,19 @@ impl HeliobusStartRaidCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "raid_id",
-            |m: &HeliobusStartRaidCsReq| { &m.raid_id },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.raid_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "prop_entity_id",
             |m: &HeliobusStartRaidCsReq| { &m.prop_entity_id },
             |m: &mut HeliobusStartRaidCsReq| { &mut m.prop_entity_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MOBJLKMJJBL",
+            |m: &HeliobusStartRaidCsReq| { &m.MOBJLKMJJBL },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.MOBJLKMJJBL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_list",
+            |m: &HeliobusStartRaidCsReq| { &m.avatar_list },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "skill_id",
@@ -75,14 +80,9 @@ impl HeliobusStartRaidCsReq {
             |m: &mut HeliobusStartRaidCsReq| { &mut m.skill_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KIBNBPMALPJ",
-            |m: &HeliobusStartRaidCsReq| { &m.KIBNBPMALPJ },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.KIBNBPMALPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &HeliobusStartRaidCsReq| { &m.avatar_list },
-            |m: &mut HeliobusStartRaidCsReq| { &mut m.avatar_list },
+            "raid_id",
+            |m: &HeliobusStartRaidCsReq| { &m.raid_id },
+            |m: &mut HeliobusStartRaidCsReq| { &mut m.raid_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_save",
@@ -107,25 +107,25 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.raid_id = is.read_uint32()?;
-                },
-                96 => {
+                32 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
-                64 => {
-                    self.skill_id = is.read_uint32()?;
+                72 => {
+                    self.MOBJLKMJJBL = is.read_uint32()?;
                 },
-                24 => {
-                    self.KIBNBPMALPJ = is.read_uint32()?;
-                },
-                58 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
                 },
-                56 => {
+                16 => {
                     self.avatar_list.push(is.read_uint32()?);
                 },
-                8 => {
+                96 => {
+                    self.skill_id = is.read_uint32()?;
+                },
+                64 => {
+                    self.raid_id = is.read_uint32()?;
+                },
+                104 => {
                     self.is_save = is.read_bool()?;
                 },
                 tag => {
@@ -140,19 +140,19 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.raid_id);
-        }
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.prop_entity_id);
         }
+        if self.MOBJLKMJJBL != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.MOBJLKMJJBL);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.avatar_list);
         if self.skill_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.skill_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.skill_id);
         }
-        if self.KIBNBPMALPJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.KIBNBPMALPJ);
+        if self.raid_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.raid_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.avatar_list);
         if self.is_save != false {
             my_size += 1 + 1;
         }
@@ -162,21 +162,21 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.raid_id != 0 {
-            os.write_uint32(2, self.raid_id)?;
-        }
         if self.prop_entity_id != 0 {
-            os.write_uint32(12, self.prop_entity_id)?;
+            os.write_uint32(4, self.prop_entity_id)?;
         }
+        if self.MOBJLKMJJBL != 0 {
+            os.write_uint32(9, self.MOBJLKMJJBL)?;
+        }
+        os.write_repeated_packed_uint32(2, &self.avatar_list)?;
         if self.skill_id != 0 {
-            os.write_uint32(8, self.skill_id)?;
+            os.write_uint32(12, self.skill_id)?;
         }
-        if self.KIBNBPMALPJ != 0 {
-            os.write_uint32(3, self.KIBNBPMALPJ)?;
+        if self.raid_id != 0 {
+            os.write_uint32(8, self.raid_id)?;
         }
-        os.write_repeated_packed_uint32(7, &self.avatar_list)?;
         if self.is_save != false {
-            os.write_bool(1, self.is_save)?;
+            os.write_bool(13, self.is_save)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -195,22 +195,22 @@ impl ::protobuf::Message for HeliobusStartRaidCsReq {
     }
 
     fn clear(&mut self) {
-        self.raid_id = 0;
         self.prop_entity_id = 0;
-        self.skill_id = 0;
-        self.KIBNBPMALPJ = 0;
+        self.MOBJLKMJJBL = 0;
         self.avatar_list.clear();
+        self.skill_id = 0;
+        self.raid_id = 0;
         self.is_save = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusStartRaidCsReq {
         static instance: HeliobusStartRaidCsReq = HeliobusStartRaidCsReq {
-            raid_id: 0,
             prop_entity_id: 0,
-            skill_id: 0,
-            KIBNBPMALPJ: 0,
+            MOBJLKMJJBL: 0,
             avatar_list: ::std::vec::Vec::new(),
+            skill_id: 0,
+            raid_id: 0,
             is_save: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -237,11 +237,11 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusStartRaidCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cHeliobusStartRaidCsReq.proto\"\xce\x01\n\x16HeliobusStartRaidCsReq\
-    \x12\x17\n\x07raid_id\x18\x02\x20\x01(\rR\x06raidId\x12$\n\x0eprop_entit\
-    y_id\x18\x0c\x20\x01(\rR\x0cpropEntityId\x12\x19\n\x08skill_id\x18\x08\
-    \x20\x01(\rR\x07skillId\x12\x20\n\x0bKIBNBPMALPJ\x18\x03\x20\x01(\rR\x0b\
-    KIBNBPMALPJ\x12\x1f\n\x0bavatar_list\x18\x07\x20\x03(\rR\navatarList\x12\
-    \x17\n\x07is_save\x18\x01\x20\x01(\x08R\x06isSaveb\x06proto3\
+    \x12$\n\x0eprop_entity_id\x18\x04\x20\x01(\rR\x0cpropEntityId\x12\x20\n\
+    \x0bMOBJLKMJJBL\x18\t\x20\x01(\rR\x0bMOBJLKMJJBL\x12\x1f\n\x0bavatar_lis\
+    t\x18\x02\x20\x03(\rR\navatarList\x12\x19\n\x08skill_id\x18\x0c\x20\x01(\
+    \rR\x07skillId\x12\x17\n\x07raid_id\x18\x08\x20\x01(\rR\x06raidId\x12\
+    \x17\n\x07is_save\x18\r\x20\x01(\x08R\x06isSaveb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GridFightSettleReason)
 pub enum GridFightSettleReason {
-    // @@protoc_insertion_point(enum_value:GridFightSettleReason.HDAOIDGMHCI_AAKLGFMPAMP)
-    HDAOIDGMHCI_AAKLGFMPAMP = 0,
-    // @@protoc_insertion_point(enum_value:GridFightSettleReason.HDAOIDGMHCI_PAGOBJLDAGD)
-    HDAOIDGMHCI_PAGOBJLDAGD = 1,
-    // @@protoc_insertion_point(enum_value:GridFightSettleReason.HDAOIDGMHCI_EIGDOOFGFBD)
-    HDAOIDGMHCI_EIGDOOFGFBD = 2,
-    // @@protoc_insertion_point(enum_value:GridFightSettleReason.HDAOIDGMHCI_CFPAFCOLCDI)
-    HDAOIDGMHCI_CFPAFCOLCDI = 3,
-    // @@protoc_insertion_point(enum_value:GridFightSettleReason.HDAOIDGMHCI_IGHDIIEPMFM)
-    HDAOIDGMHCI_IGHDIIEPMFM = 4,
+    // @@protoc_insertion_point(enum_value:GridFightSettleReason.GridFightSettleReason_KNJPFFJOGPH)
+    GridFightSettleReason_KNJPFFJOGPH = 0,
+    // @@protoc_insertion_point(enum_value:GridFightSettleReason.GridFightSettleReason_EODIAOBLOKD)
+    GridFightSettleReason_EODIAOBLOKD = 1,
+    // @@protoc_insertion_point(enum_value:GridFightSettleReason.GridFightSettleReason_GHDNBNOHDMO)
+    GridFightSettleReason_GHDNBNOHDMO = 2,
+    // @@protoc_insertion_point(enum_value:GridFightSettleReason.GridFightSettleReason_ADLBHFHAJMK)
+    GridFightSettleReason_ADLBHFHAJMK = 3,
+    // @@protoc_insertion_point(enum_value:GridFightSettleReason.GridFightSettleReason_HPIPKMMNKJH)
+    GridFightSettleReason_HPIPKMMNKJH = 4,
 }
 
 impl ::protobuf::Enum for GridFightSettleReason {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for GridFightSettleReason {
 
     fn from_i32(value: i32) -> ::std::option::Option<GridFightSettleReason> {
         match value {
-            0 => ::std::option::Option::Some(GridFightSettleReason::HDAOIDGMHCI_AAKLGFMPAMP),
-            1 => ::std::option::Option::Some(GridFightSettleReason::HDAOIDGMHCI_PAGOBJLDAGD),
-            2 => ::std::option::Option::Some(GridFightSettleReason::HDAOIDGMHCI_EIGDOOFGFBD),
-            3 => ::std::option::Option::Some(GridFightSettleReason::HDAOIDGMHCI_CFPAFCOLCDI),
-            4 => ::std::option::Option::Some(GridFightSettleReason::HDAOIDGMHCI_IGHDIIEPMFM),
+            0 => ::std::option::Option::Some(GridFightSettleReason::GridFightSettleReason_KNJPFFJOGPH),
+            1 => ::std::option::Option::Some(GridFightSettleReason::GridFightSettleReason_EODIAOBLOKD),
+            2 => ::std::option::Option::Some(GridFightSettleReason::GridFightSettleReason_GHDNBNOHDMO),
+            3 => ::std::option::Option::Some(GridFightSettleReason::GridFightSettleReason_ADLBHFHAJMK),
+            4 => ::std::option::Option::Some(GridFightSettleReason::GridFightSettleReason_HPIPKMMNKJH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GridFightSettleReason> {
         match str {
-            "HDAOIDGMHCI_AAKLGFMPAMP" => ::std::option::Option::Some(GridFightSettleReason::HDAOIDGMHCI_AAKLGFMPAMP),
-            "HDAOIDGMHCI_PAGOBJLDAGD" => ::std::option::Option::Some(GridFightSettleReason::HDAOIDGMHCI_PAGOBJLDAGD),
-            "HDAOIDGMHCI_EIGDOOFGFBD" => ::std::option::Option::Some(GridFightSettleReason::HDAOIDGMHCI_EIGDOOFGFBD),
-            "HDAOIDGMHCI_CFPAFCOLCDI" => ::std::option::Option::Some(GridFightSettleReason::HDAOIDGMHCI_CFPAFCOLCDI),
-            "HDAOIDGMHCI_IGHDIIEPMFM" => ::std::option::Option::Some(GridFightSettleReason::HDAOIDGMHCI_IGHDIIEPMFM),
+            "GridFightSettleReason_KNJPFFJOGPH" => ::std::option::Option::Some(GridFightSettleReason::GridFightSettleReason_KNJPFFJOGPH),
+            "GridFightSettleReason_EODIAOBLOKD" => ::std::option::Option::Some(GridFightSettleReason::GridFightSettleReason_EODIAOBLOKD),
+            "GridFightSettleReason_GHDNBNOHDMO" => ::std::option::Option::Some(GridFightSettleReason::GridFightSettleReason_GHDNBNOHDMO),
+            "GridFightSettleReason_ADLBHFHAJMK" => ::std::option::Option::Some(GridFightSettleReason::GridFightSettleReason_ADLBHFHAJMK),
+            "GridFightSettleReason_HPIPKMMNKJH" => ::std::option::Option::Some(GridFightSettleReason::GridFightSettleReason_HPIPKMMNKJH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GridFightSettleReason] = &[
-        GridFightSettleReason::HDAOIDGMHCI_AAKLGFMPAMP,
-        GridFightSettleReason::HDAOIDGMHCI_PAGOBJLDAGD,
-        GridFightSettleReason::HDAOIDGMHCI_EIGDOOFGFBD,
-        GridFightSettleReason::HDAOIDGMHCI_CFPAFCOLCDI,
-        GridFightSettleReason::HDAOIDGMHCI_IGHDIIEPMFM,
+        GridFightSettleReason::GridFightSettleReason_KNJPFFJOGPH,
+        GridFightSettleReason::GridFightSettleReason_EODIAOBLOKD,
+        GridFightSettleReason::GridFightSettleReason_GHDNBNOHDMO,
+        GridFightSettleReason::GridFightSettleReason_ADLBHFHAJMK,
+        GridFightSettleReason::GridFightSettleReason_HPIPKMMNKJH,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for GridFightSettleReason {
 
 impl ::std::default::Default for GridFightSettleReason {
     fn default() -> Self {
-        GridFightSettleReason::HDAOIDGMHCI_AAKLGFMPAMP
+        GridFightSettleReason::GridFightSettleReason_KNJPFFJOGPH
     }
 }
 
@@ -102,11 +102,11 @@ impl GridFightSettleReason {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGridFightSettleReason.proto*\xa8\x01\n\x15GridFightSettleReason\
-    \x12\x1b\n\x17HDAOIDGMHCI_AAKLGFMPAMP\x10\0\x12\x1b\n\x17HDAOIDGMHCI_PAG\
-    OBJLDAGD\x10\x01\x12\x1b\n\x17HDAOIDGMHCI_EIGDOOFGFBD\x10\x02\x12\x1b\n\
-    \x17HDAOIDGMHCI_CFPAFCOLCDI\x10\x03\x12\x1b\n\x17HDAOIDGMHCI_IGHDIIEPMFM\
-    \x10\x04b\x06proto3\
+    \n\x1bGridFightSettleReason.proto*\xda\x01\n\x15GridFightSettleReason\
+    \x12%\n!GridFightSettleReason_KNJPFFJOGPH\x10\0\x12%\n!GridFightSettleRe\
+    ason_EODIAOBLOKD\x10\x01\x12%\n!GridFightSettleReason_GHDNBNOHDMO\x10\
+    \x02\x12%\n!GridFightSettleReason_ADLBHFHAJMK\x10\x03\x12%\n!GridFightSe\
+    ttleReason_HPIPKMMNKJH\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

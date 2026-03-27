@@ -27,108 +27,108 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPlanetFesType)
 pub enum CmdPlanetFesType {
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_GKJBAODJMJG)
-    ANPGIDLOIDB_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_OMCLPKPKPJF)
-    ANPGIDLOIDB_OMCLPKPKPJF = 8221,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_KIONCAKOEPF)
-    ANPGIDLOIDB_KIONCAKOEPF = 8207,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_MHNJLNMCBFH)
-    ANPGIDLOIDB_MHNJLNMCBFH = 8236,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_MEEJDNOOJMD)
-    ANPGIDLOIDB_MEEJDNOOJMD = 8250,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_NCIIFNMPBJN)
-    ANPGIDLOIDB_NCIIFNMPBJN = 8203,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_GFJCJLLOCAC)
-    ANPGIDLOIDB_GFJCJLLOCAC = 8234,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_DIFHGIMHOIA)
-    ANPGIDLOIDB_DIFHGIMHOIA = 8223,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_GDIILDHKEEL)
-    ANPGIDLOIDB_GDIILDHKEEL = 8239,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_ACDKCDFLJOC)
-    ANPGIDLOIDB_ACDKCDFLJOC = 8206,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_CELKCFJHOIB)
-    ANPGIDLOIDB_CELKCFJHOIB = 8215,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_AMGMLNHFKIG)
-    ANPGIDLOIDB_AMGMLNHFKIG = 8232,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_KEEIDAKODMJ)
-    ANPGIDLOIDB_KEEIDAKODMJ = 8222,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_JGGPBOOBKJH)
-    ANPGIDLOIDB_JGGPBOOBKJH = 8209,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_JIIGNJFFDIB)
-    ANPGIDLOIDB_JIIGNJFFDIB = 8218,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_BCJLHOLEJAJ)
-    ANPGIDLOIDB_BCJLHOLEJAJ = 8248,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_ILMOMNLKDFH)
-    ANPGIDLOIDB_ILMOMNLKDFH = 8249,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_NJEDLICPEHG)
-    ANPGIDLOIDB_NJEDLICPEHG = 8201,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_FCAOHACKEKL)
-    ANPGIDLOIDB_FCAOHACKEKL = 8246,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_NCDFMFKJBJM)
-    ANPGIDLOIDB_NCDFMFKJBJM = 8231,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_FOEIJNIKOFM)
-    ANPGIDLOIDB_FOEIJNIKOFM = 8227,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_MBHFFCGCIIL)
-    ANPGIDLOIDB_MBHFFCGCIIL = 8235,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_PFPBIGGIAGO)
-    ANPGIDLOIDB_PFPBIGGIAGO = 8211,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_KBHGCCDKKDA)
-    ANPGIDLOIDB_KBHGCCDKKDA = 8230,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_NGMKCGBFFHD)
-    ANPGIDLOIDB_NGMKCGBFFHD = 8226,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_LMAJLOEJFHM)
-    ANPGIDLOIDB_LMAJLOEJFHM = 8210,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_KGAKEHBIIIM)
-    ANPGIDLOIDB_KGAKEHBIIIM = 8240,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_BIILGDOICMA)
-    ANPGIDLOIDB_BIILGDOICMA = 8204,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_GMAKFCGCIJK)
-    ANPGIDLOIDB_GMAKFCGCIJK = 8238,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_NNKGNABMJCJ)
-    ANPGIDLOIDB_NNKGNABMJCJ = 8208,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_LDDIFLLODJP)
-    ANPGIDLOIDB_LDDIFLLODJP = 8224,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_ONOGPMFOHON)
-    ANPGIDLOIDB_ONOGPMFOHON = 8241,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_LOCPAIEIHGF)
-    ANPGIDLOIDB_LOCPAIEIHGF = 8213,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_NOOFDDMKDEI)
-    ANPGIDLOIDB_NOOFDDMKDEI = 8205,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_KJFFNCFBNMB)
-    ANPGIDLOIDB_KJFFNCFBNMB = 8220,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_MIENDAGHPCH)
-    ANPGIDLOIDB_MIENDAGHPCH = 8243,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_HMPBEABNAJC)
-    ANPGIDLOIDB_HMPBEABNAJC = 8219,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_IKNJFNMIDKI)
-    ANPGIDLOIDB_IKNJFNMIDKI = 8229,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_KBFEIJCEHEL)
-    ANPGIDLOIDB_KBFEIJCEHEL = 8216,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_LEOEJLOLFID)
-    ANPGIDLOIDB_LEOEJLOLFID = 8212,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_IGKKJNKJGBJ)
-    ANPGIDLOIDB_IGKKJNKJGBJ = 8244,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_DIMJKFIONKF)
-    ANPGIDLOIDB_DIMJKFIONKF = 8214,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_JBGGMIJCDBA)
-    ANPGIDLOIDB_JBGGMIJCDBA = 8225,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_PLEFJIHBKKC)
-    ANPGIDLOIDB_PLEFJIHBKKC = 8228,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_PEIHIGGANPI)
-    ANPGIDLOIDB_PEIHIGGANPI = 8245,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_NCJMOFBOPIE)
-    ANPGIDLOIDB_NCJMOFBOPIE = 8233,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_IOGMBBFICGP)
-    ANPGIDLOIDB_IOGMBBFICGP = 8242,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_AHNNACHJJIM)
-    ANPGIDLOIDB_AHNNACHJJIM = 8237,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_KODCPFMAMPL)
-    ANPGIDLOIDB_KODCPFMAMPL = 8247,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_IMJEPFELEED)
-    ANPGIDLOIDB_IMJEPFELEED = 8202,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.ANPGIDLOIDB_BJKJPBICBDO)
-    ANPGIDLOIDB_BJKJPBICBDO = 8217,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_MNFEPONEDDJ)
+    CmdPlanetFesType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_JAFGHLKAOEI)
+    CmdPlanetFesType_JAFGHLKAOEI = 8220,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_PAHAIMEGHEK)
+    CmdPlanetFesType_PAHAIMEGHEK = 8227,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_BOMIFNOIKNC)
+    CmdPlanetFesType_BOMIFNOIKNC = 8206,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_DIEACJOANKA)
+    CmdPlanetFesType_DIEACJOANKA = 8216,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_HDAOJIGODMP)
+    CmdPlanetFesType_HDAOJIGODMP = 8218,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_EOAMJLBDCHG)
+    CmdPlanetFesType_EOAMJLBDCHG = 8224,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_JENBJOLGEHG)
+    CmdPlanetFesType_JENBJOLGEHG = 8243,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_EOHAKAFCANF)
+    CmdPlanetFesType_EOHAKAFCANF = 8229,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_HPOIBHBEJIM)
+    CmdPlanetFesType_HPOIBHBEJIM = 8203,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_AFOLENBLHLJ)
+    CmdPlanetFesType_AFOLENBLHLJ = 8244,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_LPKGKACLMKA)
+    CmdPlanetFesType_LPKGKACLMKA = 8202,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_CNLJKJDGCGJ)
+    CmdPlanetFesType_CNLJKJDGCGJ = 8240,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_PPHJLANMEME)
+    CmdPlanetFesType_PPHJLANMEME = 8210,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_JDKNIDLJHDG)
+    CmdPlanetFesType_JDKNIDLJHDG = 8238,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_IJLMBNJNNPO)
+    CmdPlanetFesType_IJLMBNJNNPO = 8242,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_CGCGKKEGIGK)
+    CmdPlanetFesType_CGCGKKEGIGK = 8221,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_JHKHEHJGLBG)
+    CmdPlanetFesType_JHKHEHJGLBG = 8245,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_OINLMNDEKBP)
+    CmdPlanetFesType_OINLMNDEKBP = 8223,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_JDJEIPNNEKG)
+    CmdPlanetFesType_JDJEIPNNEKG = 8241,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_EKKNNKNLLMM)
+    CmdPlanetFesType_EKKNNKNLLMM = 8231,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_PKDEIJPIEPB)
+    CmdPlanetFesType_PKDEIJPIEPB = 8249,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_BJPBHIBKGFI)
+    CmdPlanetFesType_BJPBHIBKGFI = 8237,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_GKCBOMOKNLL)
+    CmdPlanetFesType_GKCBOMOKNLL = 8215,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_GKLKHBALIFF)
+    CmdPlanetFesType_GKLKHBALIFF = 8233,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_FALBKCMCKAI)
+    CmdPlanetFesType_FALBKCMCKAI = 8201,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_NCIPMIMFFPI)
+    CmdPlanetFesType_NCIPMIMFFPI = 8247,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_KOACBLPDHCJ)
+    CmdPlanetFesType_KOACBLPDHCJ = 8236,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_JKCGEIJOODL)
+    CmdPlanetFesType_JKCGEIJOODL = 8230,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_MMFFENIFNJA)
+    CmdPlanetFesType_MMFFENIFNJA = 8246,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_BELADIELECN)
+    CmdPlanetFesType_BELADIELECN = 8212,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_JDNJIPEOCGE)
+    CmdPlanetFesType_JDNJIPEOCGE = 8234,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_CPPOIENHJGP)
+    CmdPlanetFesType_CPPOIENHJGP = 8204,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_GBHCMNBPAEJ)
+    CmdPlanetFesType_GBHCMNBPAEJ = 8226,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_JBNEHNPNBDE)
+    CmdPlanetFesType_JBNEHNPNBDE = 8232,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_LCPHPIDDBFC)
+    CmdPlanetFesType_LCPHPIDDBFC = 8217,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_MJLNICOCPAP)
+    CmdPlanetFesType_MJLNICOCPAP = 8208,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_KKHMMOBKPDG)
+    CmdPlanetFesType_KKHMMOBKPDG = 8248,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_LBDGLOHLFGP)
+    CmdPlanetFesType_LBDGLOHLFGP = 8235,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_IKMLMAGHOJB)
+    CmdPlanetFesType_IKMLMAGHOJB = 8239,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_MAGMGAPNBEL)
+    CmdPlanetFesType_MAGMGAPNBEL = 8214,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_FMAHGAKCDEB)
+    CmdPlanetFesType_FMAHGAKCDEB = 8250,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_AGPLPJDMFID)
+    CmdPlanetFesType_AGPLPJDMFID = 8222,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_CMMHFMBPIFB)
+    CmdPlanetFesType_CMMHFMBPIFB = 8211,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_POLDAEBMIOE)
+    CmdPlanetFesType_POLDAEBMIOE = 8207,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_OGGNCPJNDMJ)
+    CmdPlanetFesType_OGGNCPJNDMJ = 8225,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_FHFCGFECBEJ)
+    CmdPlanetFesType_FHFCGFECBEJ = 8205,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_JOOAGDJFAHA)
+    CmdPlanetFesType_JOOAGDJFAHA = 8213,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_FGIEMJHEFDA)
+    CmdPlanetFesType_FGIEMJHEFDA = 8219,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_BLLIEHEKLAE)
+    CmdPlanetFesType_BLLIEHEKLAE = 8209,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesType.CmdPlanetFesType_HJPPBICCPEC)
+    CmdPlanetFesType_HJPPBICCPEC = 8228,
 }
 
 impl ::protobuf::Enum for CmdPlanetFesType {
@@ -140,170 +140,170 @@ impl ::protobuf::Enum for CmdPlanetFesType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlanetFesType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_GKJBAODJMJG),
-            8221 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_OMCLPKPKPJF),
-            8207 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KIONCAKOEPF),
-            8236 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_MHNJLNMCBFH),
-            8250 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_MEEJDNOOJMD),
-            8203 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NCIIFNMPBJN),
-            8234 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_GFJCJLLOCAC),
-            8223 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_DIFHGIMHOIA),
-            8239 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_GDIILDHKEEL),
-            8206 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_ACDKCDFLJOC),
-            8215 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_CELKCFJHOIB),
-            8232 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_AMGMLNHFKIG),
-            8222 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KEEIDAKODMJ),
-            8209 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_JGGPBOOBKJH),
-            8218 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_JIIGNJFFDIB),
-            8248 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_BCJLHOLEJAJ),
-            8249 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_ILMOMNLKDFH),
-            8201 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NJEDLICPEHG),
-            8246 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_FCAOHACKEKL),
-            8231 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NCDFMFKJBJM),
-            8227 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_FOEIJNIKOFM),
-            8235 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_MBHFFCGCIIL),
-            8211 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_PFPBIGGIAGO),
-            8230 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KBHGCCDKKDA),
-            8226 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NGMKCGBFFHD),
-            8210 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_LMAJLOEJFHM),
-            8240 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KGAKEHBIIIM),
-            8204 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_BIILGDOICMA),
-            8238 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_GMAKFCGCIJK),
-            8208 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NNKGNABMJCJ),
-            8224 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_LDDIFLLODJP),
-            8241 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_ONOGPMFOHON),
-            8213 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_LOCPAIEIHGF),
-            8205 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NOOFDDMKDEI),
-            8220 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KJFFNCFBNMB),
-            8243 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_MIENDAGHPCH),
-            8219 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_HMPBEABNAJC),
-            8229 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_IKNJFNMIDKI),
-            8216 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KBFEIJCEHEL),
-            8212 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_LEOEJLOLFID),
-            8244 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_IGKKJNKJGBJ),
-            8214 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_DIMJKFIONKF),
-            8225 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_JBGGMIJCDBA),
-            8228 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_PLEFJIHBKKC),
-            8245 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_PEIHIGGANPI),
-            8233 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NCJMOFBOPIE),
-            8242 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_IOGMBBFICGP),
-            8237 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_AHNNACHJJIM),
-            8247 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KODCPFMAMPL),
-            8202 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_IMJEPFELEED),
-            8217 => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_BJKJPBICBDO),
+            0 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_MNFEPONEDDJ),
+            8220 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JAFGHLKAOEI),
+            8227 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_PAHAIMEGHEK),
+            8206 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_BOMIFNOIKNC),
+            8216 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_DIEACJOANKA),
+            8218 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_HDAOJIGODMP),
+            8224 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_EOAMJLBDCHG),
+            8243 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JENBJOLGEHG),
+            8229 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_EOHAKAFCANF),
+            8203 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_HPOIBHBEJIM),
+            8244 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_AFOLENBLHLJ),
+            8202 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_LPKGKACLMKA),
+            8240 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_CNLJKJDGCGJ),
+            8210 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_PPHJLANMEME),
+            8238 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JDKNIDLJHDG),
+            8242 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_IJLMBNJNNPO),
+            8221 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_CGCGKKEGIGK),
+            8245 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JHKHEHJGLBG),
+            8223 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_OINLMNDEKBP),
+            8241 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JDJEIPNNEKG),
+            8231 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_EKKNNKNLLMM),
+            8249 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_PKDEIJPIEPB),
+            8237 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_BJPBHIBKGFI),
+            8215 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_GKCBOMOKNLL),
+            8233 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_GKLKHBALIFF),
+            8201 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_FALBKCMCKAI),
+            8247 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_NCIPMIMFFPI),
+            8236 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_KOACBLPDHCJ),
+            8230 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JKCGEIJOODL),
+            8246 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_MMFFENIFNJA),
+            8212 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_BELADIELECN),
+            8234 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JDNJIPEOCGE),
+            8204 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_CPPOIENHJGP),
+            8226 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_GBHCMNBPAEJ),
+            8232 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JBNEHNPNBDE),
+            8217 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_LCPHPIDDBFC),
+            8208 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_MJLNICOCPAP),
+            8248 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_KKHMMOBKPDG),
+            8235 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_LBDGLOHLFGP),
+            8239 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_IKMLMAGHOJB),
+            8214 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_MAGMGAPNBEL),
+            8250 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_FMAHGAKCDEB),
+            8222 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_AGPLPJDMFID),
+            8211 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_CMMHFMBPIFB),
+            8207 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_POLDAEBMIOE),
+            8225 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_OGGNCPJNDMJ),
+            8205 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_FHFCGFECBEJ),
+            8213 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JOOAGDJFAHA),
+            8219 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_FGIEMJHEFDA),
+            8209 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_BLLIEHEKLAE),
+            8228 => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_HJPPBICCPEC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPlanetFesType> {
         match str {
-            "ANPGIDLOIDB_GKJBAODJMJG" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_GKJBAODJMJG),
-            "ANPGIDLOIDB_OMCLPKPKPJF" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_OMCLPKPKPJF),
-            "ANPGIDLOIDB_KIONCAKOEPF" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KIONCAKOEPF),
-            "ANPGIDLOIDB_MHNJLNMCBFH" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_MHNJLNMCBFH),
-            "ANPGIDLOIDB_MEEJDNOOJMD" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_MEEJDNOOJMD),
-            "ANPGIDLOIDB_NCIIFNMPBJN" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NCIIFNMPBJN),
-            "ANPGIDLOIDB_GFJCJLLOCAC" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_GFJCJLLOCAC),
-            "ANPGIDLOIDB_DIFHGIMHOIA" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_DIFHGIMHOIA),
-            "ANPGIDLOIDB_GDIILDHKEEL" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_GDIILDHKEEL),
-            "ANPGIDLOIDB_ACDKCDFLJOC" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_ACDKCDFLJOC),
-            "ANPGIDLOIDB_CELKCFJHOIB" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_CELKCFJHOIB),
-            "ANPGIDLOIDB_AMGMLNHFKIG" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_AMGMLNHFKIG),
-            "ANPGIDLOIDB_KEEIDAKODMJ" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KEEIDAKODMJ),
-            "ANPGIDLOIDB_JGGPBOOBKJH" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_JGGPBOOBKJH),
-            "ANPGIDLOIDB_JIIGNJFFDIB" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_JIIGNJFFDIB),
-            "ANPGIDLOIDB_BCJLHOLEJAJ" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_BCJLHOLEJAJ),
-            "ANPGIDLOIDB_ILMOMNLKDFH" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_ILMOMNLKDFH),
-            "ANPGIDLOIDB_NJEDLICPEHG" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NJEDLICPEHG),
-            "ANPGIDLOIDB_FCAOHACKEKL" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_FCAOHACKEKL),
-            "ANPGIDLOIDB_NCDFMFKJBJM" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NCDFMFKJBJM),
-            "ANPGIDLOIDB_FOEIJNIKOFM" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_FOEIJNIKOFM),
-            "ANPGIDLOIDB_MBHFFCGCIIL" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_MBHFFCGCIIL),
-            "ANPGIDLOIDB_PFPBIGGIAGO" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_PFPBIGGIAGO),
-            "ANPGIDLOIDB_KBHGCCDKKDA" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KBHGCCDKKDA),
-            "ANPGIDLOIDB_NGMKCGBFFHD" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NGMKCGBFFHD),
-            "ANPGIDLOIDB_LMAJLOEJFHM" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_LMAJLOEJFHM),
-            "ANPGIDLOIDB_KGAKEHBIIIM" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KGAKEHBIIIM),
-            "ANPGIDLOIDB_BIILGDOICMA" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_BIILGDOICMA),
-            "ANPGIDLOIDB_GMAKFCGCIJK" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_GMAKFCGCIJK),
-            "ANPGIDLOIDB_NNKGNABMJCJ" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NNKGNABMJCJ),
-            "ANPGIDLOIDB_LDDIFLLODJP" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_LDDIFLLODJP),
-            "ANPGIDLOIDB_ONOGPMFOHON" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_ONOGPMFOHON),
-            "ANPGIDLOIDB_LOCPAIEIHGF" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_LOCPAIEIHGF),
-            "ANPGIDLOIDB_NOOFDDMKDEI" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NOOFDDMKDEI),
-            "ANPGIDLOIDB_KJFFNCFBNMB" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KJFFNCFBNMB),
-            "ANPGIDLOIDB_MIENDAGHPCH" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_MIENDAGHPCH),
-            "ANPGIDLOIDB_HMPBEABNAJC" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_HMPBEABNAJC),
-            "ANPGIDLOIDB_IKNJFNMIDKI" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_IKNJFNMIDKI),
-            "ANPGIDLOIDB_KBFEIJCEHEL" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KBFEIJCEHEL),
-            "ANPGIDLOIDB_LEOEJLOLFID" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_LEOEJLOLFID),
-            "ANPGIDLOIDB_IGKKJNKJGBJ" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_IGKKJNKJGBJ),
-            "ANPGIDLOIDB_DIMJKFIONKF" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_DIMJKFIONKF),
-            "ANPGIDLOIDB_JBGGMIJCDBA" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_JBGGMIJCDBA),
-            "ANPGIDLOIDB_PLEFJIHBKKC" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_PLEFJIHBKKC),
-            "ANPGIDLOIDB_PEIHIGGANPI" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_PEIHIGGANPI),
-            "ANPGIDLOIDB_NCJMOFBOPIE" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_NCJMOFBOPIE),
-            "ANPGIDLOIDB_IOGMBBFICGP" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_IOGMBBFICGP),
-            "ANPGIDLOIDB_AHNNACHJJIM" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_AHNNACHJJIM),
-            "ANPGIDLOIDB_KODCPFMAMPL" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_KODCPFMAMPL),
-            "ANPGIDLOIDB_IMJEPFELEED" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_IMJEPFELEED),
-            "ANPGIDLOIDB_BJKJPBICBDO" => ::std::option::Option::Some(CmdPlanetFesType::ANPGIDLOIDB_BJKJPBICBDO),
+            "CmdPlanetFesType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_MNFEPONEDDJ),
+            "CmdPlanetFesType_JAFGHLKAOEI" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JAFGHLKAOEI),
+            "CmdPlanetFesType_PAHAIMEGHEK" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_PAHAIMEGHEK),
+            "CmdPlanetFesType_BOMIFNOIKNC" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_BOMIFNOIKNC),
+            "CmdPlanetFesType_DIEACJOANKA" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_DIEACJOANKA),
+            "CmdPlanetFesType_HDAOJIGODMP" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_HDAOJIGODMP),
+            "CmdPlanetFesType_EOAMJLBDCHG" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_EOAMJLBDCHG),
+            "CmdPlanetFesType_JENBJOLGEHG" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JENBJOLGEHG),
+            "CmdPlanetFesType_EOHAKAFCANF" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_EOHAKAFCANF),
+            "CmdPlanetFesType_HPOIBHBEJIM" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_HPOIBHBEJIM),
+            "CmdPlanetFesType_AFOLENBLHLJ" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_AFOLENBLHLJ),
+            "CmdPlanetFesType_LPKGKACLMKA" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_LPKGKACLMKA),
+            "CmdPlanetFesType_CNLJKJDGCGJ" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_CNLJKJDGCGJ),
+            "CmdPlanetFesType_PPHJLANMEME" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_PPHJLANMEME),
+            "CmdPlanetFesType_JDKNIDLJHDG" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JDKNIDLJHDG),
+            "CmdPlanetFesType_IJLMBNJNNPO" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_IJLMBNJNNPO),
+            "CmdPlanetFesType_CGCGKKEGIGK" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_CGCGKKEGIGK),
+            "CmdPlanetFesType_JHKHEHJGLBG" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JHKHEHJGLBG),
+            "CmdPlanetFesType_OINLMNDEKBP" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_OINLMNDEKBP),
+            "CmdPlanetFesType_JDJEIPNNEKG" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JDJEIPNNEKG),
+            "CmdPlanetFesType_EKKNNKNLLMM" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_EKKNNKNLLMM),
+            "CmdPlanetFesType_PKDEIJPIEPB" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_PKDEIJPIEPB),
+            "CmdPlanetFesType_BJPBHIBKGFI" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_BJPBHIBKGFI),
+            "CmdPlanetFesType_GKCBOMOKNLL" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_GKCBOMOKNLL),
+            "CmdPlanetFesType_GKLKHBALIFF" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_GKLKHBALIFF),
+            "CmdPlanetFesType_FALBKCMCKAI" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_FALBKCMCKAI),
+            "CmdPlanetFesType_NCIPMIMFFPI" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_NCIPMIMFFPI),
+            "CmdPlanetFesType_KOACBLPDHCJ" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_KOACBLPDHCJ),
+            "CmdPlanetFesType_JKCGEIJOODL" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JKCGEIJOODL),
+            "CmdPlanetFesType_MMFFENIFNJA" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_MMFFENIFNJA),
+            "CmdPlanetFesType_BELADIELECN" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_BELADIELECN),
+            "CmdPlanetFesType_JDNJIPEOCGE" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JDNJIPEOCGE),
+            "CmdPlanetFesType_CPPOIENHJGP" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_CPPOIENHJGP),
+            "CmdPlanetFesType_GBHCMNBPAEJ" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_GBHCMNBPAEJ),
+            "CmdPlanetFesType_JBNEHNPNBDE" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JBNEHNPNBDE),
+            "CmdPlanetFesType_LCPHPIDDBFC" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_LCPHPIDDBFC),
+            "CmdPlanetFesType_MJLNICOCPAP" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_MJLNICOCPAP),
+            "CmdPlanetFesType_KKHMMOBKPDG" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_KKHMMOBKPDG),
+            "CmdPlanetFesType_LBDGLOHLFGP" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_LBDGLOHLFGP),
+            "CmdPlanetFesType_IKMLMAGHOJB" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_IKMLMAGHOJB),
+            "CmdPlanetFesType_MAGMGAPNBEL" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_MAGMGAPNBEL),
+            "CmdPlanetFesType_FMAHGAKCDEB" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_FMAHGAKCDEB),
+            "CmdPlanetFesType_AGPLPJDMFID" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_AGPLPJDMFID),
+            "CmdPlanetFesType_CMMHFMBPIFB" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_CMMHFMBPIFB),
+            "CmdPlanetFesType_POLDAEBMIOE" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_POLDAEBMIOE),
+            "CmdPlanetFesType_OGGNCPJNDMJ" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_OGGNCPJNDMJ),
+            "CmdPlanetFesType_FHFCGFECBEJ" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_FHFCGFECBEJ),
+            "CmdPlanetFesType_JOOAGDJFAHA" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_JOOAGDJFAHA),
+            "CmdPlanetFesType_FGIEMJHEFDA" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_FGIEMJHEFDA),
+            "CmdPlanetFesType_BLLIEHEKLAE" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_BLLIEHEKLAE),
+            "CmdPlanetFesType_HJPPBICCPEC" => ::std::option::Option::Some(CmdPlanetFesType::CmdPlanetFesType_HJPPBICCPEC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlanetFesType] = &[
-        CmdPlanetFesType::ANPGIDLOIDB_GKJBAODJMJG,
-        CmdPlanetFesType::ANPGIDLOIDB_OMCLPKPKPJF,
-        CmdPlanetFesType::ANPGIDLOIDB_KIONCAKOEPF,
-        CmdPlanetFesType::ANPGIDLOIDB_MHNJLNMCBFH,
-        CmdPlanetFesType::ANPGIDLOIDB_MEEJDNOOJMD,
-        CmdPlanetFesType::ANPGIDLOIDB_NCIIFNMPBJN,
-        CmdPlanetFesType::ANPGIDLOIDB_GFJCJLLOCAC,
-        CmdPlanetFesType::ANPGIDLOIDB_DIFHGIMHOIA,
-        CmdPlanetFesType::ANPGIDLOIDB_GDIILDHKEEL,
-        CmdPlanetFesType::ANPGIDLOIDB_ACDKCDFLJOC,
-        CmdPlanetFesType::ANPGIDLOIDB_CELKCFJHOIB,
-        CmdPlanetFesType::ANPGIDLOIDB_AMGMLNHFKIG,
-        CmdPlanetFesType::ANPGIDLOIDB_KEEIDAKODMJ,
-        CmdPlanetFesType::ANPGIDLOIDB_JGGPBOOBKJH,
-        CmdPlanetFesType::ANPGIDLOIDB_JIIGNJFFDIB,
-        CmdPlanetFesType::ANPGIDLOIDB_BCJLHOLEJAJ,
-        CmdPlanetFesType::ANPGIDLOIDB_ILMOMNLKDFH,
-        CmdPlanetFesType::ANPGIDLOIDB_NJEDLICPEHG,
-        CmdPlanetFesType::ANPGIDLOIDB_FCAOHACKEKL,
-        CmdPlanetFesType::ANPGIDLOIDB_NCDFMFKJBJM,
-        CmdPlanetFesType::ANPGIDLOIDB_FOEIJNIKOFM,
-        CmdPlanetFesType::ANPGIDLOIDB_MBHFFCGCIIL,
-        CmdPlanetFesType::ANPGIDLOIDB_PFPBIGGIAGO,
-        CmdPlanetFesType::ANPGIDLOIDB_KBHGCCDKKDA,
-        CmdPlanetFesType::ANPGIDLOIDB_NGMKCGBFFHD,
-        CmdPlanetFesType::ANPGIDLOIDB_LMAJLOEJFHM,
-        CmdPlanetFesType::ANPGIDLOIDB_KGAKEHBIIIM,
-        CmdPlanetFesType::ANPGIDLOIDB_BIILGDOICMA,
-        CmdPlanetFesType::ANPGIDLOIDB_GMAKFCGCIJK,
-        CmdPlanetFesType::ANPGIDLOIDB_NNKGNABMJCJ,
-        CmdPlanetFesType::ANPGIDLOIDB_LDDIFLLODJP,
-        CmdPlanetFesType::ANPGIDLOIDB_ONOGPMFOHON,
-        CmdPlanetFesType::ANPGIDLOIDB_LOCPAIEIHGF,
-        CmdPlanetFesType::ANPGIDLOIDB_NOOFDDMKDEI,
-        CmdPlanetFesType::ANPGIDLOIDB_KJFFNCFBNMB,
-        CmdPlanetFesType::ANPGIDLOIDB_MIENDAGHPCH,
-        CmdPlanetFesType::ANPGIDLOIDB_HMPBEABNAJC,
-        CmdPlanetFesType::ANPGIDLOIDB_IKNJFNMIDKI,
-        CmdPlanetFesType::ANPGIDLOIDB_KBFEIJCEHEL,
-        CmdPlanetFesType::ANPGIDLOIDB_LEOEJLOLFID,
-        CmdPlanetFesType::ANPGIDLOIDB_IGKKJNKJGBJ,
-        CmdPlanetFesType::ANPGIDLOIDB_DIMJKFIONKF,
-        CmdPlanetFesType::ANPGIDLOIDB_JBGGMIJCDBA,
-        CmdPlanetFesType::ANPGIDLOIDB_PLEFJIHBKKC,
-        CmdPlanetFesType::ANPGIDLOIDB_PEIHIGGANPI,
-        CmdPlanetFesType::ANPGIDLOIDB_NCJMOFBOPIE,
-        CmdPlanetFesType::ANPGIDLOIDB_IOGMBBFICGP,
-        CmdPlanetFesType::ANPGIDLOIDB_AHNNACHJJIM,
-        CmdPlanetFesType::ANPGIDLOIDB_KODCPFMAMPL,
-        CmdPlanetFesType::ANPGIDLOIDB_IMJEPFELEED,
-        CmdPlanetFesType::ANPGIDLOIDB_BJKJPBICBDO,
+        CmdPlanetFesType::CmdPlanetFesType_MNFEPONEDDJ,
+        CmdPlanetFesType::CmdPlanetFesType_JAFGHLKAOEI,
+        CmdPlanetFesType::CmdPlanetFesType_PAHAIMEGHEK,
+        CmdPlanetFesType::CmdPlanetFesType_BOMIFNOIKNC,
+        CmdPlanetFesType::CmdPlanetFesType_DIEACJOANKA,
+        CmdPlanetFesType::CmdPlanetFesType_HDAOJIGODMP,
+        CmdPlanetFesType::CmdPlanetFesType_EOAMJLBDCHG,
+        CmdPlanetFesType::CmdPlanetFesType_JENBJOLGEHG,
+        CmdPlanetFesType::CmdPlanetFesType_EOHAKAFCANF,
+        CmdPlanetFesType::CmdPlanetFesType_HPOIBHBEJIM,
+        CmdPlanetFesType::CmdPlanetFesType_AFOLENBLHLJ,
+        CmdPlanetFesType::CmdPlanetFesType_LPKGKACLMKA,
+        CmdPlanetFesType::CmdPlanetFesType_CNLJKJDGCGJ,
+        CmdPlanetFesType::CmdPlanetFesType_PPHJLANMEME,
+        CmdPlanetFesType::CmdPlanetFesType_JDKNIDLJHDG,
+        CmdPlanetFesType::CmdPlanetFesType_IJLMBNJNNPO,
+        CmdPlanetFesType::CmdPlanetFesType_CGCGKKEGIGK,
+        CmdPlanetFesType::CmdPlanetFesType_JHKHEHJGLBG,
+        CmdPlanetFesType::CmdPlanetFesType_OINLMNDEKBP,
+        CmdPlanetFesType::CmdPlanetFesType_JDJEIPNNEKG,
+        CmdPlanetFesType::CmdPlanetFesType_EKKNNKNLLMM,
+        CmdPlanetFesType::CmdPlanetFesType_PKDEIJPIEPB,
+        CmdPlanetFesType::CmdPlanetFesType_BJPBHIBKGFI,
+        CmdPlanetFesType::CmdPlanetFesType_GKCBOMOKNLL,
+        CmdPlanetFesType::CmdPlanetFesType_GKLKHBALIFF,
+        CmdPlanetFesType::CmdPlanetFesType_FALBKCMCKAI,
+        CmdPlanetFesType::CmdPlanetFesType_NCIPMIMFFPI,
+        CmdPlanetFesType::CmdPlanetFesType_KOACBLPDHCJ,
+        CmdPlanetFesType::CmdPlanetFesType_JKCGEIJOODL,
+        CmdPlanetFesType::CmdPlanetFesType_MMFFENIFNJA,
+        CmdPlanetFesType::CmdPlanetFesType_BELADIELECN,
+        CmdPlanetFesType::CmdPlanetFesType_JDNJIPEOCGE,
+        CmdPlanetFesType::CmdPlanetFesType_CPPOIENHJGP,
+        CmdPlanetFesType::CmdPlanetFesType_GBHCMNBPAEJ,
+        CmdPlanetFesType::CmdPlanetFesType_JBNEHNPNBDE,
+        CmdPlanetFesType::CmdPlanetFesType_LCPHPIDDBFC,
+        CmdPlanetFesType::CmdPlanetFesType_MJLNICOCPAP,
+        CmdPlanetFesType::CmdPlanetFesType_KKHMMOBKPDG,
+        CmdPlanetFesType::CmdPlanetFesType_LBDGLOHLFGP,
+        CmdPlanetFesType::CmdPlanetFesType_IKMLMAGHOJB,
+        CmdPlanetFesType::CmdPlanetFesType_MAGMGAPNBEL,
+        CmdPlanetFesType::CmdPlanetFesType_FMAHGAKCDEB,
+        CmdPlanetFesType::CmdPlanetFesType_AGPLPJDMFID,
+        CmdPlanetFesType::CmdPlanetFesType_CMMHFMBPIFB,
+        CmdPlanetFesType::CmdPlanetFesType_POLDAEBMIOE,
+        CmdPlanetFesType::CmdPlanetFesType_OGGNCPJNDMJ,
+        CmdPlanetFesType::CmdPlanetFesType_FHFCGFECBEJ,
+        CmdPlanetFesType::CmdPlanetFesType_JOOAGDJFAHA,
+        CmdPlanetFesType::CmdPlanetFesType_FGIEMJHEFDA,
+        CmdPlanetFesType::CmdPlanetFesType_BLLIEHEKLAE,
+        CmdPlanetFesType::CmdPlanetFesType_HJPPBICCPEC,
     ];
 }
 
@@ -315,57 +315,57 @@ impl ::protobuf::EnumFull for CmdPlanetFesType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPlanetFesType::ANPGIDLOIDB_GKJBAODJMJG => 0,
-            CmdPlanetFesType::ANPGIDLOIDB_OMCLPKPKPJF => 1,
-            CmdPlanetFesType::ANPGIDLOIDB_KIONCAKOEPF => 2,
-            CmdPlanetFesType::ANPGIDLOIDB_MHNJLNMCBFH => 3,
-            CmdPlanetFesType::ANPGIDLOIDB_MEEJDNOOJMD => 4,
-            CmdPlanetFesType::ANPGIDLOIDB_NCIIFNMPBJN => 5,
-            CmdPlanetFesType::ANPGIDLOIDB_GFJCJLLOCAC => 6,
-            CmdPlanetFesType::ANPGIDLOIDB_DIFHGIMHOIA => 7,
-            CmdPlanetFesType::ANPGIDLOIDB_GDIILDHKEEL => 8,
-            CmdPlanetFesType::ANPGIDLOIDB_ACDKCDFLJOC => 9,
-            CmdPlanetFesType::ANPGIDLOIDB_CELKCFJHOIB => 10,
-            CmdPlanetFesType::ANPGIDLOIDB_AMGMLNHFKIG => 11,
-            CmdPlanetFesType::ANPGIDLOIDB_KEEIDAKODMJ => 12,
-            CmdPlanetFesType::ANPGIDLOIDB_JGGPBOOBKJH => 13,
-            CmdPlanetFesType::ANPGIDLOIDB_JIIGNJFFDIB => 14,
-            CmdPlanetFesType::ANPGIDLOIDB_BCJLHOLEJAJ => 15,
-            CmdPlanetFesType::ANPGIDLOIDB_ILMOMNLKDFH => 16,
-            CmdPlanetFesType::ANPGIDLOIDB_NJEDLICPEHG => 17,
-            CmdPlanetFesType::ANPGIDLOIDB_FCAOHACKEKL => 18,
-            CmdPlanetFesType::ANPGIDLOIDB_NCDFMFKJBJM => 19,
-            CmdPlanetFesType::ANPGIDLOIDB_FOEIJNIKOFM => 20,
-            CmdPlanetFesType::ANPGIDLOIDB_MBHFFCGCIIL => 21,
-            CmdPlanetFesType::ANPGIDLOIDB_PFPBIGGIAGO => 22,
-            CmdPlanetFesType::ANPGIDLOIDB_KBHGCCDKKDA => 23,
-            CmdPlanetFesType::ANPGIDLOIDB_NGMKCGBFFHD => 24,
-            CmdPlanetFesType::ANPGIDLOIDB_LMAJLOEJFHM => 25,
-            CmdPlanetFesType::ANPGIDLOIDB_KGAKEHBIIIM => 26,
-            CmdPlanetFesType::ANPGIDLOIDB_BIILGDOICMA => 27,
-            CmdPlanetFesType::ANPGIDLOIDB_GMAKFCGCIJK => 28,
-            CmdPlanetFesType::ANPGIDLOIDB_NNKGNABMJCJ => 29,
-            CmdPlanetFesType::ANPGIDLOIDB_LDDIFLLODJP => 30,
-            CmdPlanetFesType::ANPGIDLOIDB_ONOGPMFOHON => 31,
-            CmdPlanetFesType::ANPGIDLOIDB_LOCPAIEIHGF => 32,
-            CmdPlanetFesType::ANPGIDLOIDB_NOOFDDMKDEI => 33,
-            CmdPlanetFesType::ANPGIDLOIDB_KJFFNCFBNMB => 34,
-            CmdPlanetFesType::ANPGIDLOIDB_MIENDAGHPCH => 35,
-            CmdPlanetFesType::ANPGIDLOIDB_HMPBEABNAJC => 36,
-            CmdPlanetFesType::ANPGIDLOIDB_IKNJFNMIDKI => 37,
-            CmdPlanetFesType::ANPGIDLOIDB_KBFEIJCEHEL => 38,
-            CmdPlanetFesType::ANPGIDLOIDB_LEOEJLOLFID => 39,
-            CmdPlanetFesType::ANPGIDLOIDB_IGKKJNKJGBJ => 40,
-            CmdPlanetFesType::ANPGIDLOIDB_DIMJKFIONKF => 41,
-            CmdPlanetFesType::ANPGIDLOIDB_JBGGMIJCDBA => 42,
-            CmdPlanetFesType::ANPGIDLOIDB_PLEFJIHBKKC => 43,
-            CmdPlanetFesType::ANPGIDLOIDB_PEIHIGGANPI => 44,
-            CmdPlanetFesType::ANPGIDLOIDB_NCJMOFBOPIE => 45,
-            CmdPlanetFesType::ANPGIDLOIDB_IOGMBBFICGP => 46,
-            CmdPlanetFesType::ANPGIDLOIDB_AHNNACHJJIM => 47,
-            CmdPlanetFesType::ANPGIDLOIDB_KODCPFMAMPL => 48,
-            CmdPlanetFesType::ANPGIDLOIDB_IMJEPFELEED => 49,
-            CmdPlanetFesType::ANPGIDLOIDB_BJKJPBICBDO => 50,
+            CmdPlanetFesType::CmdPlanetFesType_MNFEPONEDDJ => 0,
+            CmdPlanetFesType::CmdPlanetFesType_JAFGHLKAOEI => 1,
+            CmdPlanetFesType::CmdPlanetFesType_PAHAIMEGHEK => 2,
+            CmdPlanetFesType::CmdPlanetFesType_BOMIFNOIKNC => 3,
+            CmdPlanetFesType::CmdPlanetFesType_DIEACJOANKA => 4,
+            CmdPlanetFesType::CmdPlanetFesType_HDAOJIGODMP => 5,
+            CmdPlanetFesType::CmdPlanetFesType_EOAMJLBDCHG => 6,
+            CmdPlanetFesType::CmdPlanetFesType_JENBJOLGEHG => 7,
+            CmdPlanetFesType::CmdPlanetFesType_EOHAKAFCANF => 8,
+            CmdPlanetFesType::CmdPlanetFesType_HPOIBHBEJIM => 9,
+            CmdPlanetFesType::CmdPlanetFesType_AFOLENBLHLJ => 10,
+            CmdPlanetFesType::CmdPlanetFesType_LPKGKACLMKA => 11,
+            CmdPlanetFesType::CmdPlanetFesType_CNLJKJDGCGJ => 12,
+            CmdPlanetFesType::CmdPlanetFesType_PPHJLANMEME => 13,
+            CmdPlanetFesType::CmdPlanetFesType_JDKNIDLJHDG => 14,
+            CmdPlanetFesType::CmdPlanetFesType_IJLMBNJNNPO => 15,
+            CmdPlanetFesType::CmdPlanetFesType_CGCGKKEGIGK => 16,
+            CmdPlanetFesType::CmdPlanetFesType_JHKHEHJGLBG => 17,
+            CmdPlanetFesType::CmdPlanetFesType_OINLMNDEKBP => 18,
+            CmdPlanetFesType::CmdPlanetFesType_JDJEIPNNEKG => 19,
+            CmdPlanetFesType::CmdPlanetFesType_EKKNNKNLLMM => 20,
+            CmdPlanetFesType::CmdPlanetFesType_PKDEIJPIEPB => 21,
+            CmdPlanetFesType::CmdPlanetFesType_BJPBHIBKGFI => 22,
+            CmdPlanetFesType::CmdPlanetFesType_GKCBOMOKNLL => 23,
+            CmdPlanetFesType::CmdPlanetFesType_GKLKHBALIFF => 24,
+            CmdPlanetFesType::CmdPlanetFesType_FALBKCMCKAI => 25,
+            CmdPlanetFesType::CmdPlanetFesType_NCIPMIMFFPI => 26,
+            CmdPlanetFesType::CmdPlanetFesType_KOACBLPDHCJ => 27,
+            CmdPlanetFesType::CmdPlanetFesType_JKCGEIJOODL => 28,
+            CmdPlanetFesType::CmdPlanetFesType_MMFFENIFNJA => 29,
+            CmdPlanetFesType::CmdPlanetFesType_BELADIELECN => 30,
+            CmdPlanetFesType::CmdPlanetFesType_JDNJIPEOCGE => 31,
+            CmdPlanetFesType::CmdPlanetFesType_CPPOIENHJGP => 32,
+            CmdPlanetFesType::CmdPlanetFesType_GBHCMNBPAEJ => 33,
+            CmdPlanetFesType::CmdPlanetFesType_JBNEHNPNBDE => 34,
+            CmdPlanetFesType::CmdPlanetFesType_LCPHPIDDBFC => 35,
+            CmdPlanetFesType::CmdPlanetFesType_MJLNICOCPAP => 36,
+            CmdPlanetFesType::CmdPlanetFesType_KKHMMOBKPDG => 37,
+            CmdPlanetFesType::CmdPlanetFesType_LBDGLOHLFGP => 38,
+            CmdPlanetFesType::CmdPlanetFesType_IKMLMAGHOJB => 39,
+            CmdPlanetFesType::CmdPlanetFesType_MAGMGAPNBEL => 40,
+            CmdPlanetFesType::CmdPlanetFesType_FMAHGAKCDEB => 41,
+            CmdPlanetFesType::CmdPlanetFesType_AGPLPJDMFID => 42,
+            CmdPlanetFesType::CmdPlanetFesType_CMMHFMBPIFB => 43,
+            CmdPlanetFesType::CmdPlanetFesType_POLDAEBMIOE => 44,
+            CmdPlanetFesType::CmdPlanetFesType_OGGNCPJNDMJ => 45,
+            CmdPlanetFesType::CmdPlanetFesType_FHFCGFECBEJ => 46,
+            CmdPlanetFesType::CmdPlanetFesType_JOOAGDJFAHA => 47,
+            CmdPlanetFesType::CmdPlanetFesType_FGIEMJHEFDA => 48,
+            CmdPlanetFesType::CmdPlanetFesType_BLLIEHEKLAE => 49,
+            CmdPlanetFesType::CmdPlanetFesType_HJPPBICCPEC => 50,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -373,7 +373,7 @@ impl ::protobuf::EnumFull for CmdPlanetFesType {
 
 impl ::std::default::Default for CmdPlanetFesType {
     fn default() -> Self {
-        CmdPlanetFesType::ANPGIDLOIDB_GKJBAODJMJG
+        CmdPlanetFesType::CmdPlanetFesType_MNFEPONEDDJ
     }
 }
 
@@ -384,40 +384,42 @@ impl CmdPlanetFesType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdPlanetFesType.proto*\x8b\x0c\n\x10CmdPlanetFesType\x12\x1b\n\
-    \x17ANPGIDLOIDB_GKJBAODJMJG\x10\0\x12\x1c\n\x17ANPGIDLOIDB_OMCLPKPKPJF\
-    \x10\x9d@\x12\x1c\n\x17ANPGIDLOIDB_KIONCAKOEPF\x10\x8f@\x12\x1c\n\x17ANP\
-    GIDLOIDB_MHNJLNMCBFH\x10\xac@\x12\x1c\n\x17ANPGIDLOIDB_MEEJDNOOJMD\x10\
-    \xba@\x12\x1c\n\x17ANPGIDLOIDB_NCIIFNMPBJN\x10\x8b@\x12\x1c\n\x17ANPGIDL\
-    OIDB_GFJCJLLOCAC\x10\xaa@\x12\x1c\n\x17ANPGIDLOIDB_DIFHGIMHOIA\x10\x9f@\
-    \x12\x1c\n\x17ANPGIDLOIDB_GDIILDHKEEL\x10\xaf@\x12\x1c\n\x17ANPGIDLOIDB_\
-    ACDKCDFLJOC\x10\x8e@\x12\x1c\n\x17ANPGIDLOIDB_CELKCFJHOIB\x10\x97@\x12\
-    \x1c\n\x17ANPGIDLOIDB_AMGMLNHFKIG\x10\xa8@\x12\x1c\n\x17ANPGIDLOIDB_KEEI\
-    DAKODMJ\x10\x9e@\x12\x1c\n\x17ANPGIDLOIDB_JGGPBOOBKJH\x10\x91@\x12\x1c\n\
-    \x17ANPGIDLOIDB_JIIGNJFFDIB\x10\x9a@\x12\x1c\n\x17ANPGIDLOIDB_BCJLHOLEJA\
-    J\x10\xb8@\x12\x1c\n\x17ANPGIDLOIDB_ILMOMNLKDFH\x10\xb9@\x12\x1c\n\x17AN\
-    PGIDLOIDB_NJEDLICPEHG\x10\x89@\x12\x1c\n\x17ANPGIDLOIDB_FCAOHACKEKL\x10\
-    \xb6@\x12\x1c\n\x17ANPGIDLOIDB_NCDFMFKJBJM\x10\xa7@\x12\x1c\n\x17ANPGIDL\
-    OIDB_FOEIJNIKOFM\x10\xa3@\x12\x1c\n\x17ANPGIDLOIDB_MBHFFCGCIIL\x10\xab@\
-    \x12\x1c\n\x17ANPGIDLOIDB_PFPBIGGIAGO\x10\x93@\x12\x1c\n\x17ANPGIDLOIDB_\
-    KBHGCCDKKDA\x10\xa6@\x12\x1c\n\x17ANPGIDLOIDB_NGMKCGBFFHD\x10\xa2@\x12\
-    \x1c\n\x17ANPGIDLOIDB_LMAJLOEJFHM\x10\x92@\x12\x1c\n\x17ANPGIDLOIDB_KGAK\
-    EHBIIIM\x10\xb0@\x12\x1c\n\x17ANPGIDLOIDB_BIILGDOICMA\x10\x8c@\x12\x1c\n\
-    \x17ANPGIDLOIDB_GMAKFCGCIJK\x10\xae@\x12\x1c\n\x17ANPGIDLOIDB_NNKGNABMJC\
-    J\x10\x90@\x12\x1c\n\x17ANPGIDLOIDB_LDDIFLLODJP\x10\xa0@\x12\x1c\n\x17AN\
-    PGIDLOIDB_ONOGPMFOHON\x10\xb1@\x12\x1c\n\x17ANPGIDLOIDB_LOCPAIEIHGF\x10\
-    \x95@\x12\x1c\n\x17ANPGIDLOIDB_NOOFDDMKDEI\x10\x8d@\x12\x1c\n\x17ANPGIDL\
-    OIDB_KJFFNCFBNMB\x10\x9c@\x12\x1c\n\x17ANPGIDLOIDB_MIENDAGHPCH\x10\xb3@\
-    \x12\x1c\n\x17ANPGIDLOIDB_HMPBEABNAJC\x10\x9b@\x12\x1c\n\x17ANPGIDLOIDB_\
-    IKNJFNMIDKI\x10\xa5@\x12\x1c\n\x17ANPGIDLOIDB_KBFEIJCEHEL\x10\x98@\x12\
-    \x1c\n\x17ANPGIDLOIDB_LEOEJLOLFID\x10\x94@\x12\x1c\n\x17ANPGIDLOIDB_IGKK\
-    JNKJGBJ\x10\xb4@\x12\x1c\n\x17ANPGIDLOIDB_DIMJKFIONKF\x10\x96@\x12\x1c\n\
-    \x17ANPGIDLOIDB_JBGGMIJCDBA\x10\xa1@\x12\x1c\n\x17ANPGIDLOIDB_PLEFJIHBKK\
-    C\x10\xa4@\x12\x1c\n\x17ANPGIDLOIDB_PEIHIGGANPI\x10\xb5@\x12\x1c\n\x17AN\
-    PGIDLOIDB_NCJMOFBOPIE\x10\xa9@\x12\x1c\n\x17ANPGIDLOIDB_IOGMBBFICGP\x10\
-    \xb2@\x12\x1c\n\x17ANPGIDLOIDB_AHNNACHJJIM\x10\xad@\x12\x1c\n\x17ANPGIDL\
-    OIDB_KODCPFMAMPL\x10\xb7@\x12\x1c\n\x17ANPGIDLOIDB_IMJEPFELEED\x10\x8a@\
-    \x12\x1c\n\x17ANPGIDLOIDB_BJKJPBICBDO\x10\x99@b\x06proto3\
+    \n\x16CmdPlanetFesType.proto*\x8a\x0e\n\x10CmdPlanetFesType\x12\x20\n\
+    \x1cCmdPlanetFesType_MNFEPONEDDJ\x10\0\x12!\n\x1cCmdPlanetFesType_JAFGHL\
+    KAOEI\x10\x9c@\x12!\n\x1cCmdPlanetFesType_PAHAIMEGHEK\x10\xa3@\x12!\n\
+    \x1cCmdPlanetFesType_BOMIFNOIKNC\x10\x8e@\x12!\n\x1cCmdPlanetFesType_DIE\
+    ACJOANKA\x10\x98@\x12!\n\x1cCmdPlanetFesType_HDAOJIGODMP\x10\x9a@\x12!\n\
+    \x1cCmdPlanetFesType_EOAMJLBDCHG\x10\xa0@\x12!\n\x1cCmdPlanetFesType_JEN\
+    BJOLGEHG\x10\xb3@\x12!\n\x1cCmdPlanetFesType_EOHAKAFCANF\x10\xa5@\x12!\n\
+    \x1cCmdPlanetFesType_HPOIBHBEJIM\x10\x8b@\x12!\n\x1cCmdPlanetFesType_AFO\
+    LENBLHLJ\x10\xb4@\x12!\n\x1cCmdPlanetFesType_LPKGKACLMKA\x10\x8a@\x12!\n\
+    \x1cCmdPlanetFesType_CNLJKJDGCGJ\x10\xb0@\x12!\n\x1cCmdPlanetFesType_PPH\
+    JLANMEME\x10\x92@\x12!\n\x1cCmdPlanetFesType_JDKNIDLJHDG\x10\xae@\x12!\n\
+    \x1cCmdPlanetFesType_IJLMBNJNNPO\x10\xb2@\x12!\n\x1cCmdPlanetFesType_CGC\
+    GKKEGIGK\x10\x9d@\x12!\n\x1cCmdPlanetFesType_JHKHEHJGLBG\x10\xb5@\x12!\n\
+    \x1cCmdPlanetFesType_OINLMNDEKBP\x10\x9f@\x12!\n\x1cCmdPlanetFesType_JDJ\
+    EIPNNEKG\x10\xb1@\x12!\n\x1cCmdPlanetFesType_EKKNNKNLLMM\x10\xa7@\x12!\n\
+    \x1cCmdPlanetFesType_PKDEIJPIEPB\x10\xb9@\x12!\n\x1cCmdPlanetFesType_BJP\
+    BHIBKGFI\x10\xad@\x12!\n\x1cCmdPlanetFesType_GKCBOMOKNLL\x10\x97@\x12!\n\
+    \x1cCmdPlanetFesType_GKLKHBALIFF\x10\xa9@\x12!\n\x1cCmdPlanetFesType_FAL\
+    BKCMCKAI\x10\x89@\x12!\n\x1cCmdPlanetFesType_NCIPMIMFFPI\x10\xb7@\x12!\n\
+    \x1cCmdPlanetFesType_KOACBLPDHCJ\x10\xac@\x12!\n\x1cCmdPlanetFesType_JKC\
+    GEIJOODL\x10\xa6@\x12!\n\x1cCmdPlanetFesType_MMFFENIFNJA\x10\xb6@\x12!\n\
+    \x1cCmdPlanetFesType_BELADIELECN\x10\x94@\x12!\n\x1cCmdPlanetFesType_JDN\
+    JIPEOCGE\x10\xaa@\x12!\n\x1cCmdPlanetFesType_CPPOIENHJGP\x10\x8c@\x12!\n\
+    \x1cCmdPlanetFesType_GBHCMNBPAEJ\x10\xa2@\x12!\n\x1cCmdPlanetFesType_JBN\
+    EHNPNBDE\x10\xa8@\x12!\n\x1cCmdPlanetFesType_LCPHPIDDBFC\x10\x99@\x12!\n\
+    \x1cCmdPlanetFesType_MJLNICOCPAP\x10\x90@\x12!\n\x1cCmdPlanetFesType_KKH\
+    MMOBKPDG\x10\xb8@\x12!\n\x1cCmdPlanetFesType_LBDGLOHLFGP\x10\xab@\x12!\n\
+    \x1cCmdPlanetFesType_IKMLMAGHOJB\x10\xaf@\x12!\n\x1cCmdPlanetFesType_MAG\
+    MGAPNBEL\x10\x96@\x12!\n\x1cCmdPlanetFesType_FMAHGAKCDEB\x10\xba@\x12!\n\
+    \x1cCmdPlanetFesType_AGPLPJDMFID\x10\x9e@\x12!\n\x1cCmdPlanetFesType_CMM\
+    HFMBPIFB\x10\x93@\x12!\n\x1cCmdPlanetFesType_POLDAEBMIOE\x10\x8f@\x12!\n\
+    \x1cCmdPlanetFesType_OGGNCPJNDMJ\x10\xa1@\x12!\n\x1cCmdPlanetFesType_FHF\
+    CGFECBEJ\x10\x8d@\x12!\n\x1cCmdPlanetFesType_JOOAGDJFAHA\x10\x95@\x12!\n\
+    \x1cCmdPlanetFesType_FGIEMJHEFDA\x10\x9b@\x12!\n\x1cCmdPlanetFesType_BLL\
+    IEHEKLAE\x10\x91@\x12!\n\x1cCmdPlanetFesType_HJPPBICCPEC\x10\xa4@b\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

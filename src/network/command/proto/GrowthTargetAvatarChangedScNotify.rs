@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GrowthTargetAvatarChangedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:GrowthTargetAvatarChangedScNotify.LAIFEEAOLOK)
-    pub LAIFEEAOLOK: u32,
+    // @@protoc_insertion_point(field:GrowthTargetAvatarChangedScNotify.PDABLJKHMBO)
+    pub PDABLJKHMBO: u32,
     // @@protoc_insertion_point(field:GrowthTargetAvatarChangedScNotify.growth_target_type_list)
     pub growth_target_type_list: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::GrowthTargetFunctionType::GrowthTargetFunctionType>>,
     // special fields
@@ -52,9 +52,9 @@ impl GrowthTargetAvatarChangedScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LAIFEEAOLOK",
-            |m: &GrowthTargetAvatarChangedScNotify| { &m.LAIFEEAOLOK },
-            |m: &mut GrowthTargetAvatarChangedScNotify| { &mut m.LAIFEEAOLOK },
+            "PDABLJKHMBO",
+            |m: &GrowthTargetAvatarChangedScNotify| { &m.PDABLJKHMBO },
+            |m: &mut GrowthTargetAvatarChangedScNotify| { &mut m.PDABLJKHMBO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "growth_target_type_list",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for GrowthTargetAvatarChangedScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.LAIFEEAOLOK = is.read_uint32()?;
-                },
                 120 => {
+                    self.PDABLJKHMBO = is.read_uint32()?;
+                },
+                32 => {
                     self.growth_target_type_list.push(is.read_enum_or_unknown()?);
                 },
-                122 => {
+                34 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.growth_target_type_list)?
                 },
                 tag => {
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GrowthTargetAvatarChangedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LAIFEEAOLOK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LAIFEEAOLOK);
+        if self.PDABLJKHMBO != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.PDABLJKHMBO);
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(15, &self.growth_target_type_list);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(4, &self.growth_target_type_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LAIFEEAOLOK != 0 {
-            os.write_uint32(1, self.LAIFEEAOLOK)?;
+        if self.PDABLJKHMBO != 0 {
+            os.write_uint32(15, self.PDABLJKHMBO)?;
         }
-        os.write_repeated_packed_enum_or_unknown(15, &self.growth_target_type_list)?;
+        os.write_repeated_packed_enum_or_unknown(4, &self.growth_target_type_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,14 +131,14 @@ impl ::protobuf::Message for GrowthTargetAvatarChangedScNotify {
     }
 
     fn clear(&mut self) {
-        self.LAIFEEAOLOK = 0;
+        self.PDABLJKHMBO = 0;
         self.growth_target_type_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GrowthTargetAvatarChangedScNotify {
         static instance: GrowthTargetAvatarChangedScNotify = GrowthTargetAvatarChangedScNotify {
-            LAIFEEAOLOK: 0,
+            PDABLJKHMBO: 0,
             growth_target_type_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for GrowthTargetAvatarChangedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'GrowthTargetAvatarChangedScNotify.proto\x1a\x1eGrowthTargetFunctionTy\
-    pe.proto\"\x97\x01\n!GrowthTargetAvatarChangedScNotify\x12\x20\n\x0bLAIF\
-    EEAOLOK\x18\x01\x20\x01(\rR\x0bLAIFEEAOLOK\x12P\n\x17growth_target_type_\
-    list\x18\x0f\x20\x03(\x0e2\x19.GrowthTargetFunctionTypeR\x14growthTarget\
+    pe.proto\"\x97\x01\n!GrowthTargetAvatarChangedScNotify\x12\x20\n\x0bPDAB\
+    LJKHMBO\x18\x0f\x20\x01(\rR\x0bPDABLJKHMBO\x12P\n\x17growth_target_type_\
+    list\x18\x04\x20\x03(\x0e2\x19.GrowthTargetFunctionTypeR\x14growthTarget\
     TypeListb\x06proto3\
 ";
 

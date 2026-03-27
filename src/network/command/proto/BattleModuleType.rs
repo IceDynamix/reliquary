@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BattleModuleType)
 pub enum BattleModuleType {
-    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_IOAJJLIHOED)
-    KIKBMLPHKGC_IOAJJLIHOED = 0,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_NINGNCFOGCB)
-    KIKBMLPHKGC_NINGNCFOGCB = 1,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_HIBECGHLGKA)
-    KIKBMLPHKGC_HIBECGHLGKA = 2,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_NIFGMAMMGGK)
-    KIKBMLPHKGC_NIFGMAMMGGK = 3,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_FOPHGELKIBH)
-    KIKBMLPHKGC_FOPHGELKIBH = 4,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_GALHGMOKBJG)
-    KIKBMLPHKGC_GALHGMOKBJG = 5,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.KIKBMLPHKGC_FIDLFDMFOKF)
-    KIKBMLPHKGC_FIDLFDMFOKF = 6,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_NLEIBGFHKAJ)
+    BattleModuleType_NLEIBGFHKAJ = 0,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_OHPOALLFJGC)
+    BattleModuleType_OHPOALLFJGC = 1,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_JONBIKLEGCM)
+    BattleModuleType_JONBIKLEGCM = 2,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_HNGKMBPCBBG)
+    BattleModuleType_HNGKMBPCBBG = 3,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_HBFEMLGONJL)
+    BattleModuleType_HBFEMLGONJL = 4,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_FNDFLOHIIPF)
+    BattleModuleType_FNDFLOHIIPF = 5,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.BattleModuleType_DLKJIAGLKGJ)
+    BattleModuleType_DLKJIAGLKGJ = 6,
 }
 
 impl ::protobuf::Enum for BattleModuleType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for BattleModuleType {
 
     fn from_i32(value: i32) -> ::std::option::Option<BattleModuleType> {
         match value {
-            0 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED),
-            1 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_NINGNCFOGCB),
-            2 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_HIBECGHLGKA),
-            3 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_NIFGMAMMGGK),
-            4 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_FOPHGELKIBH),
-            5 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_GALHGMOKBJG),
-            6 => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_FIDLFDMFOKF),
+            0 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_NLEIBGFHKAJ),
+            1 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_OHPOALLFJGC),
+            2 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_JONBIKLEGCM),
+            3 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_HNGKMBPCBBG),
+            4 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_HBFEMLGONJL),
+            5 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_FNDFLOHIIPF),
+            6 => ::std::option::Option::Some(BattleModuleType::BattleModuleType_DLKJIAGLKGJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BattleModuleType> {
         match str {
-            "KIKBMLPHKGC_IOAJJLIHOED" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED),
-            "KIKBMLPHKGC_NINGNCFOGCB" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_NINGNCFOGCB),
-            "KIKBMLPHKGC_HIBECGHLGKA" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_HIBECGHLGKA),
-            "KIKBMLPHKGC_NIFGMAMMGGK" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_NIFGMAMMGGK),
-            "KIKBMLPHKGC_FOPHGELKIBH" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_FOPHGELKIBH),
-            "KIKBMLPHKGC_GALHGMOKBJG" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_GALHGMOKBJG),
-            "KIKBMLPHKGC_FIDLFDMFOKF" => ::std::option::Option::Some(BattleModuleType::KIKBMLPHKGC_FIDLFDMFOKF),
+            "BattleModuleType_NLEIBGFHKAJ" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_NLEIBGFHKAJ),
+            "BattleModuleType_OHPOALLFJGC" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_OHPOALLFJGC),
+            "BattleModuleType_JONBIKLEGCM" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_JONBIKLEGCM),
+            "BattleModuleType_HNGKMBPCBBG" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_HNGKMBPCBBG),
+            "BattleModuleType_HBFEMLGONJL" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_HBFEMLGONJL),
+            "BattleModuleType_FNDFLOHIIPF" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_FNDFLOHIIPF),
+            "BattleModuleType_DLKJIAGLKGJ" => ::std::option::Option::Some(BattleModuleType::BattleModuleType_DLKJIAGLKGJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BattleModuleType] = &[
-        BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED,
-        BattleModuleType::KIKBMLPHKGC_NINGNCFOGCB,
-        BattleModuleType::KIKBMLPHKGC_HIBECGHLGKA,
-        BattleModuleType::KIKBMLPHKGC_NIFGMAMMGGK,
-        BattleModuleType::KIKBMLPHKGC_FOPHGELKIBH,
-        BattleModuleType::KIKBMLPHKGC_GALHGMOKBJG,
-        BattleModuleType::KIKBMLPHKGC_FIDLFDMFOKF,
+        BattleModuleType::BattleModuleType_NLEIBGFHKAJ,
+        BattleModuleType::BattleModuleType_OHPOALLFJGC,
+        BattleModuleType::BattleModuleType_JONBIKLEGCM,
+        BattleModuleType::BattleModuleType_HNGKMBPCBBG,
+        BattleModuleType::BattleModuleType_HBFEMLGONJL,
+        BattleModuleType::BattleModuleType_FNDFLOHIIPF,
+        BattleModuleType::BattleModuleType_DLKJIAGLKGJ,
     ];
 }
 
@@ -101,7 +101,7 @@ impl ::protobuf::EnumFull for BattleModuleType {
 
 impl ::std::default::Default for BattleModuleType {
     fn default() -> Self {
-        BattleModuleType::KIKBMLPHKGC_IOAJJLIHOED
+        BattleModuleType::BattleModuleType_NLEIBGFHKAJ
     }
 }
 
@@ -112,12 +112,12 @@ impl BattleModuleType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16BattleModuleType.proto*\xdd\x01\n\x10BattleModuleType\x12\x1b\n\
-    \x17KIKBMLPHKGC_IOAJJLIHOED\x10\0\x12\x1b\n\x17KIKBMLPHKGC_NINGNCFOGCB\
-    \x10\x01\x12\x1b\n\x17KIKBMLPHKGC_HIBECGHLGKA\x10\x02\x12\x1b\n\x17KIKBM\
-    LPHKGC_NIFGMAMMGGK\x10\x03\x12\x1b\n\x17KIKBMLPHKGC_FOPHGELKIBH\x10\x04\
-    \x12\x1b\n\x17KIKBMLPHKGC_GALHGMOKBJG\x10\x05\x12\x1b\n\x17KIKBMLPHKGC_F\
-    IDLFDMFOKF\x10\x06b\x06proto3\
+    \n\x16BattleModuleType.proto*\x80\x02\n\x10BattleModuleType\x12\x20\n\
+    \x1cBattleModuleType_NLEIBGFHKAJ\x10\0\x12\x20\n\x1cBattleModuleType_OHP\
+    OALLFJGC\x10\x01\x12\x20\n\x1cBattleModuleType_JONBIKLEGCM\x10\x02\x12\
+    \x20\n\x1cBattleModuleType_HNGKMBPCBBG\x10\x03\x12\x20\n\x1cBattleModule\
+    Type_HBFEMLGONJL\x10\x04\x12\x20\n\x1cBattleModuleType_FNDFLOHIIPF\x10\
+    \x05\x12\x20\n\x1cBattleModuleType_DLKJIAGLKGJ\x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncChessRogueNousValueScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncChessRogueNousValueScNotify.BAFGGCCFPBO)
-    pub BAFGGCCFPBO: ::protobuf::MessageField<super::FGAPJKKKPKP::FGAPJKKKPKP>,
+    // @@protoc_insertion_point(field:SyncChessRogueNousValueScNotify.LGGACPIOADE)
+    pub LGGACPIOADE: ::protobuf::MessageField<super::ENMKGJINPGM::ENMKGJINPGM>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncChessRogueNousValueScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl SyncChessRogueNousValueScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FGAPJKKKPKP::FGAPJKKKPKP>(
-            "BAFGGCCFPBO",
-            |m: &SyncChessRogueNousValueScNotify| { &m.BAFGGCCFPBO },
-            |m: &mut SyncChessRogueNousValueScNotify| { &mut m.BAFGGCCFPBO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ENMKGJINPGM::ENMKGJINPGM>(
+            "LGGACPIOADE",
+            |m: &SyncChessRogueNousValueScNotify| { &m.LGGACPIOADE },
+            |m: &mut SyncChessRogueNousValueScNotify| { &mut m.LGGACPIOADE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncChessRogueNousValueScNotify>(
             "SyncChessRogueNousValueScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncChessRogueNousValueScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BAFGGCCFPBO)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LGGACPIOADE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncChessRogueNousValueScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BAFGGCCFPBO.as_ref() {
+        if let Some(v) = self.LGGACPIOADE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncChessRogueNousValueScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BAFGGCCFPBO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.LGGACPIOADE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncChessRogueNousValueScNotify {
     }
 
     fn clear(&mut self) {
-        self.BAFGGCCFPBO.clear();
+        self.LGGACPIOADE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncChessRogueNousValueScNotify {
         static instance: SyncChessRogueNousValueScNotify = SyncChessRogueNousValueScNotify {
-            BAFGGCCFPBO: ::protobuf::MessageField::none(),
+            LGGACPIOADE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncChessRogueNousValueScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n%SyncChessRogueNousValueScNotify.proto\x1a\x11FGAPJKKKPKP.proto\"Q\n\
-    \x1fSyncChessRogueNousValueScNotify\x12.\n\x0bBAFGGCCFPBO\x18\n\x20\x01(\
-    \x0b2\x0c.FGAPJKKKPKPR\x0bBAFGGCCFPBOb\x06proto3\
+    \n%SyncChessRogueNousValueScNotify.proto\x1a\x11ENMKGJINPGM.proto\"Q\n\
+    \x1fSyncChessRogueNousValueScNotify\x12.\n\x0bLGGACPIOADE\x18\x06\x20\
+    \x01(\x0b2\x0c.ENMKGJINPGMR\x0bLGGACPIOADEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FGAPJKKKPKP::file_descriptor().clone());
+            deps.push(super::ENMKGJINPGM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncChessRogueNousValueScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

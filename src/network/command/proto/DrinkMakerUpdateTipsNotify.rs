@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DrinkMakerUpdateTipsNotify {
     // message fields
-    // @@protoc_insertion_point(field:DrinkMakerUpdateTipsNotify.GFJDCAHLCEO)
-    pub GFJDCAHLCEO: u32,
+    // @@protoc_insertion_point(field:DrinkMakerUpdateTipsNotify.HIIJNEFJAHB)
+    pub HIIJNEFJAHB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DrinkMakerUpdateTipsNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl DrinkMakerUpdateTipsNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GFJDCAHLCEO",
-            |m: &DrinkMakerUpdateTipsNotify| { &m.GFJDCAHLCEO },
-            |m: &mut DrinkMakerUpdateTipsNotify| { &mut m.GFJDCAHLCEO },
+            "HIIJNEFJAHB",
+            |m: &DrinkMakerUpdateTipsNotify| { &m.HIIJNEFJAHB },
+            |m: &mut DrinkMakerUpdateTipsNotify| { &mut m.HIIJNEFJAHB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DrinkMakerUpdateTipsNotify>(
             "DrinkMakerUpdateTipsNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for DrinkMakerUpdateTipsNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.GFJDCAHLCEO = is.read_uint32()?;
+                40 => {
+                    self.HIIJNEFJAHB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for DrinkMakerUpdateTipsNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GFJDCAHLCEO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.GFJDCAHLCEO);
+        if self.HIIJNEFJAHB != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.HIIJNEFJAHB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for DrinkMakerUpdateTipsNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GFJDCAHLCEO != 0 {
-            os.write_uint32(7, self.GFJDCAHLCEO)?;
+        if self.HIIJNEFJAHB != 0 {
+            os.write_uint32(5, self.HIIJNEFJAHB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for DrinkMakerUpdateTipsNotify {
     }
 
     fn clear(&mut self) {
-        self.GFJDCAHLCEO = 0;
+        self.HIIJNEFJAHB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DrinkMakerUpdateTipsNotify {
         static instance: DrinkMakerUpdateTipsNotify = DrinkMakerUpdateTipsNotify {
-            GFJDCAHLCEO: 0,
+            HIIJNEFJAHB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for DrinkMakerUpdateTipsNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20DrinkMakerUpdateTipsNotify.proto\">\n\x1aDrinkMakerUpdateTipsNotif\
-    y\x12\x20\n\x0bGFJDCAHLCEO\x18\x07\x20\x01(\rR\x0bGFJDCAHLCEOb\x06proto3\
+    y\x12\x20\n\x0bHIIJNEFJAHB\x18\x05\x20\x01(\rR\x0bHIIJNEFJAHBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

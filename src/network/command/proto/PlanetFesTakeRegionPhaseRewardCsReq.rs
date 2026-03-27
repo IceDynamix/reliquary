@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesTakeRegionPhaseRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesTakeRegionPhaseRewardCsReq.HNMFMGCAPNO)
-    pub HNMFMGCAPNO: u32,
+    // @@protoc_insertion_point(field:PlanetFesTakeRegionPhaseRewardCsReq.AOMKNKFFABE)
+    pub AOMKNKFFABE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesTakeRegionPhaseRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesTakeRegionPhaseRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HNMFMGCAPNO",
-            |m: &PlanetFesTakeRegionPhaseRewardCsReq| { &m.HNMFMGCAPNO },
-            |m: &mut PlanetFesTakeRegionPhaseRewardCsReq| { &mut m.HNMFMGCAPNO },
+            "AOMKNKFFABE",
+            |m: &PlanetFesTakeRegionPhaseRewardCsReq| { &m.AOMKNKFFABE },
+            |m: &mut PlanetFesTakeRegionPhaseRewardCsReq| { &mut m.AOMKNKFFABE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesTakeRegionPhaseRewardCsReq>(
             "PlanetFesTakeRegionPhaseRewardCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesTakeRegionPhaseRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.HNMFMGCAPNO = is.read_uint32()?;
+                112 => {
+                    self.AOMKNKFFABE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for PlanetFesTakeRegionPhaseRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HNMFMGCAPNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HNMFMGCAPNO);
+        if self.AOMKNKFFABE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.AOMKNKFFABE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlanetFesTakeRegionPhaseRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HNMFMGCAPNO != 0 {
-            os.write_uint32(6, self.HNMFMGCAPNO)?;
+        if self.AOMKNKFFABE != 0 {
+            os.write_uint32(14, self.AOMKNKFFABE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlanetFesTakeRegionPhaseRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.HNMFMGCAPNO = 0;
+        self.AOMKNKFFABE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesTakeRegionPhaseRewardCsReq {
         static instance: PlanetFesTakeRegionPhaseRewardCsReq = PlanetFesTakeRegionPhaseRewardCsReq {
-            HNMFMGCAPNO: 0,
+            AOMKNKFFABE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesTakeRegionPhaseRewardCsReq 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)PlanetFesTakeRegionPhaseRewardCsReq.proto\"G\n#PlanetFesTakeRegionPha\
-    seRewardCsReq\x12\x20\n\x0bHNMFMGCAPNO\x18\x06\x20\x01(\rR\x0bHNMFMGCAPN\
-    Ob\x06proto3\
+    seRewardCsReq\x12\x20\n\x0bAOMKNKFFABE\x18\x0e\x20\x01(\rR\x0bAOMKNKFFAB\
+    Eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

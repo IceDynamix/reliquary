@@ -27,8 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GrowthTargetFunctionType)
 pub enum GrowthTargetFunctionType {
-    // @@protoc_insertion_point(enum_value:GrowthTargetFunctionType.NFDEKCMFMDB_LFLAJBNNJMD)
-    NFDEKCMFMDB_LFLAJBNNJMD = 0,
+    // @@protoc_insertion_point(enum_value:GrowthTargetFunctionType.GrowthTartgetFuncType_NOALJFABKON)
+    GrowthTartgetFuncType_NOALJFABKON = 0,
 }
 
 impl ::protobuf::Enum for GrowthTargetFunctionType {
@@ -40,20 +40,20 @@ impl ::protobuf::Enum for GrowthTargetFunctionType {
 
     fn from_i32(value: i32) -> ::std::option::Option<GrowthTargetFunctionType> {
         match value {
-            0 => ::std::option::Option::Some(GrowthTargetFunctionType::NFDEKCMFMDB_LFLAJBNNJMD),
+            0 => ::std::option::Option::Some(GrowthTargetFunctionType::GrowthTartgetFuncType_NOALJFABKON),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GrowthTargetFunctionType> {
         match str {
-            "NFDEKCMFMDB_LFLAJBNNJMD" => ::std::option::Option::Some(GrowthTargetFunctionType::NFDEKCMFMDB_LFLAJBNNJMD),
+            "GrowthTartgetFuncType_NOALJFABKON" => ::std::option::Option::Some(GrowthTargetFunctionType::GrowthTartgetFuncType_NOALJFABKON),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GrowthTargetFunctionType] = &[
-        GrowthTargetFunctionType::NFDEKCMFMDB_LFLAJBNNJMD,
+        GrowthTargetFunctionType::GrowthTartgetFuncType_NOALJFABKON,
     ];
 }
 
@@ -71,7 +71,7 @@ impl ::protobuf::EnumFull for GrowthTargetFunctionType {
 
 impl ::std::default::Default for GrowthTargetFunctionType {
     fn default() -> Self {
-        GrowthTargetFunctionType::NFDEKCMFMDB_LFLAJBNNJMD
+        GrowthTargetFunctionType::GrowthTartgetFuncType_NOALJFABKON
     }
 }
 
@@ -82,8 +82,8 @@ impl GrowthTargetFunctionType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGrowthTargetFunctionType.proto*7\n\x18GrowthTargetFunctionType\x12\
-    \x1b\n\x17NFDEKCMFMDB_LFLAJBNNJMD\x10\0b\x06proto3\
+    \n\x1eGrowthTargetFunctionType.proto*A\n\x18GrowthTargetFunctionType\x12\
+    %\n!GrowthTartgetFuncType_NOALJFABKON\x10\0b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

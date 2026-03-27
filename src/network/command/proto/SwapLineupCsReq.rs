@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwapLineupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwapLineupCsReq.extra_lineup_type)
-    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // @@protoc_insertion_point(field:SwapLineupCsReq.index)
     pub index: u32,
-    // @@protoc_insertion_point(field:SwapLineupCsReq.GCJEMDMCEJI)
-    pub GCJEMDMCEJI: u32,
-    // @@protoc_insertion_point(field:SwapLineupCsReq.GLNOABOPGDH)
-    pub GLNOABOPGDH: u32,
-    // @@protoc_insertion_point(field:SwapLineupCsReq.is_virtual)
-    pub is_virtual: bool,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.extra_lineup_type)
+    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.OIIAICLKCLB)
+    pub OIIAICLKCLB: u32,
     // @@protoc_insertion_point(field:SwapLineupCsReq.plane_id)
     pub plane_id: u32,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.BDNOAFHDHNP)
+    pub BDNOAFHDHNP: u32,
+    // @@protoc_insertion_point(field:SwapLineupCsReq.is_virtual)
+    pub is_virtual: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SwapLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,34 +60,34 @@ impl SwapLineupCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_lineup_type",
-            |m: &SwapLineupCsReq| { &m.extra_lineup_type },
-            |m: &mut SwapLineupCsReq| { &mut m.extra_lineup_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "index",
             |m: &SwapLineupCsReq| { &m.index },
             |m: &mut SwapLineupCsReq| { &mut m.index },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCJEMDMCEJI",
-            |m: &SwapLineupCsReq| { &m.GCJEMDMCEJI },
-            |m: &mut SwapLineupCsReq| { &mut m.GCJEMDMCEJI },
+            "extra_lineup_type",
+            |m: &SwapLineupCsReq| { &m.extra_lineup_type },
+            |m: &mut SwapLineupCsReq| { &mut m.extra_lineup_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLNOABOPGDH",
-            |m: &SwapLineupCsReq| { &m.GLNOABOPGDH },
-            |m: &mut SwapLineupCsReq| { &mut m.GLNOABOPGDH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_virtual",
-            |m: &SwapLineupCsReq| { &m.is_virtual },
-            |m: &mut SwapLineupCsReq| { &mut m.is_virtual },
+            "OIIAICLKCLB",
+            |m: &SwapLineupCsReq| { &m.OIIAICLKCLB },
+            |m: &mut SwapLineupCsReq| { &mut m.OIIAICLKCLB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "plane_id",
             |m: &SwapLineupCsReq| { &m.plane_id },
             |m: &mut SwapLineupCsReq| { &mut m.plane_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BDNOAFHDHNP",
+            |m: &SwapLineupCsReq| { &m.BDNOAFHDHNP },
+            |m: &mut SwapLineupCsReq| { &mut m.BDNOAFHDHNP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_virtual",
+            |m: &SwapLineupCsReq| { &m.is_virtual },
+            |m: &mut SwapLineupCsReq| { &mut m.is_virtual },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwapLineupCsReq>(
             "SwapLineupCsReq",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.extra_lineup_type = is.read_enum_or_unknown()?;
-                },
-                88 => {
+                64 => {
                     self.index = is.read_uint32()?;
                 },
-                96 => {
-                    self.GCJEMDMCEJI = is.read_uint32()?;
-                },
-                48 => {
-                    self.GLNOABOPGDH = is.read_uint32()?;
+                32 => {
+                    self.extra_lineup_type = is.read_enum_or_unknown()?;
                 },
                 120 => {
-                    self.is_virtual = is.read_bool()?;
+                    self.OIIAICLKCLB = is.read_uint32()?;
                 },
-                32 => {
+                48 => {
                     self.plane_id = is.read_uint32()?;
+                },
+                96 => {
+                    self.BDNOAFHDHNP = is.read_uint32()?;
+                },
+                56 => {
+                    self.is_virtual = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,23 +137,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(10, self.extra_lineup_type.value());
-        }
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.index);
+            my_size += ::protobuf::rt::uint32_size(8, self.index);
         }
-        if self.GCJEMDMCEJI != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.GCJEMDMCEJI);
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(4, self.extra_lineup_type.value());
         }
-        if self.GLNOABOPGDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.GLNOABOPGDH);
+        if self.OIIAICLKCLB != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.OIIAICLKCLB);
+        }
+        if self.plane_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.plane_id);
+        }
+        if self.BDNOAFHDHNP != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.BDNOAFHDHNP);
         }
         if self.is_virtual != false {
             my_size += 1 + 1;
-        }
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.plane_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,23 +161,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
-        }
         if self.index != 0 {
-            os.write_uint32(11, self.index)?;
+            os.write_uint32(8, self.index)?;
         }
-        if self.GCJEMDMCEJI != 0 {
-            os.write_uint32(12, self.GCJEMDMCEJI)?;
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
         }
-        if self.GLNOABOPGDH != 0 {
-            os.write_uint32(6, self.GLNOABOPGDH)?;
-        }
-        if self.is_virtual != false {
-            os.write_bool(15, self.is_virtual)?;
+        if self.OIIAICLKCLB != 0 {
+            os.write_uint32(15, self.OIIAICLKCLB)?;
         }
         if self.plane_id != 0 {
-            os.write_uint32(4, self.plane_id)?;
+            os.write_uint32(6, self.plane_id)?;
+        }
+        if self.BDNOAFHDHNP != 0 {
+            os.write_uint32(12, self.BDNOAFHDHNP)?;
+        }
+        if self.is_virtual != false {
+            os.write_bool(7, self.is_virtual)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,23 +196,23 @@ impl ::protobuf::Message for SwapLineupCsReq {
     }
 
     fn clear(&mut self) {
-        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.index = 0;
-        self.GCJEMDMCEJI = 0;
-        self.GLNOABOPGDH = 0;
-        self.is_virtual = false;
+        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
+        self.OIIAICLKCLB = 0;
         self.plane_id = 0;
+        self.BDNOAFHDHNP = 0;
+        self.is_virtual = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwapLineupCsReq {
         static instance: SwapLineupCsReq = SwapLineupCsReq {
-            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
             index: 0,
-            GCJEMDMCEJI: 0,
-            GLNOABOPGDH: 0,
-            is_virtual: false,
+            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            OIIAICLKCLB: 0,
             plane_id: 0,
+            BDNOAFHDHNP: 0,
+            is_virtual: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for SwapLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15SwapLineupCsReq.proto\x1a\x15ExtraLineupType.proto\"\xe3\x01\n\x0f\
-    SwapLineupCsReq\x12<\n\x11extra_lineup_type\x18\n\x20\x01(\x0e2\x10.Extr\
-    aLineupTypeR\x0fextraLineupType\x12\x14\n\x05index\x18\x0b\x20\x01(\rR\
-    \x05index\x12\x20\n\x0bGCJEMDMCEJI\x18\x0c\x20\x01(\rR\x0bGCJEMDMCEJI\
-    \x12\x20\n\x0bGLNOABOPGDH\x18\x06\x20\x01(\rR\x0bGLNOABOPGDH\x12\x1d\n\n\
-    is_virtual\x18\x0f\x20\x01(\x08R\tisVirtual\x12\x19\n\x08plane_id\x18\
-    \x04\x20\x01(\rR\x07planeIdb\x06proto3\
+    SwapLineupCsReq\x12\x14\n\x05index\x18\x08\x20\x01(\rR\x05index\x12<\n\
+    \x11extra_lineup_type\x18\x04\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextr\
+    aLineupType\x12\x20\n\x0bOIIAICLKCLB\x18\x0f\x20\x01(\rR\x0bOIIAICLKCLB\
+    \x12\x19\n\x08plane_id\x18\x06\x20\x01(\rR\x07planeId\x12\x20\n\x0bBDNOA\
+    FHDHNP\x18\x0c\x20\x01(\rR\x0bBDNOAFHDHNP\x12\x1d\n\nis_virtual\x18\x07\
+    \x20\x01(\x08R\tisVirtualb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

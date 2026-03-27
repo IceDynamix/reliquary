@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFiveDimFluteDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFiveDimFluteDataScRsp.PICMJPEOLEB)
-    pub PICMJPEOLEB: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetFiveDimFluteDataScRsp.FPGIGHMNFGE)
-    pub FPGIGHMNFGE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetFiveDimFluteDataScRsp.EHHLINEBIPE)
+    pub EHHLINEBIPE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetFiveDimFluteDataScRsp.DNEPLAGEFAC)
+    pub DNEPLAGEFAC: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetFiveDimFluteDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -54,14 +54,14 @@ impl GetFiveDimFluteDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PICMJPEOLEB",
-            |m: &GetFiveDimFluteDataScRsp| { &m.PICMJPEOLEB },
-            |m: &mut GetFiveDimFluteDataScRsp| { &mut m.PICMJPEOLEB },
+            "EHHLINEBIPE",
+            |m: &GetFiveDimFluteDataScRsp| { &m.EHHLINEBIPE },
+            |m: &mut GetFiveDimFluteDataScRsp| { &mut m.EHHLINEBIPE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FPGIGHMNFGE",
-            |m: &GetFiveDimFluteDataScRsp| { &m.FPGIGHMNFGE },
-            |m: &mut GetFiveDimFluteDataScRsp| { &mut m.FPGIGHMNFGE },
+            "DNEPLAGEFAC",
+            |m: &GetFiveDimFluteDataScRsp| { &m.DNEPLAGEFAC },
+            |m: &mut GetFiveDimFluteDataScRsp| { &mut m.DNEPLAGEFAC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -87,18 +87,18 @@ impl ::protobuf::Message for GetFiveDimFluteDataScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PICMJPEOLEB)?;
+                    is.read_repeated_packed_uint32_into(&mut self.EHHLINEBIPE)?;
                 },
                 64 => {
-                    self.PICMJPEOLEB.push(is.read_uint32()?);
+                    self.EHHLINEBIPE.push(is.read_uint32()?);
                 },
-                50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FPGIGHMNFGE)?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.DNEPLAGEFAC)?;
                 },
-                48 => {
-                    self.FPGIGHMNFGE.push(is.read_uint32()?);
+                104 => {
+                    self.DNEPLAGEFAC.push(is.read_uint32()?);
                 },
-                32 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for GetFiveDimFluteDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.PICMJPEOLEB);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.FPGIGHMNFGE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.EHHLINEBIPE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.DNEPLAGEFAC);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for GetFiveDimFluteDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.PICMJPEOLEB)?;
-        os.write_repeated_packed_uint32(6, &self.FPGIGHMNFGE)?;
+        os.write_repeated_packed_uint32(8, &self.EHHLINEBIPE)?;
+        os.write_repeated_packed_uint32(13, &self.DNEPLAGEFAC)?;
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -146,16 +146,16 @@ impl ::protobuf::Message for GetFiveDimFluteDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.PICMJPEOLEB.clear();
-        self.FPGIGHMNFGE.clear();
+        self.EHHLINEBIPE.clear();
+        self.DNEPLAGEFAC.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFiveDimFluteDataScRsp {
         static instance: GetFiveDimFluteDataScRsp = GetFiveDimFluteDataScRsp {
-            PICMJPEOLEB: ::std::vec::Vec::new(),
-            FPGIGHMNFGE: ::std::vec::Vec::new(),
+            EHHLINEBIPE: ::std::vec::Vec::new(),
+            DNEPLAGEFAC: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for GetFiveDimFluteDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetFiveDimFluteDataScRsp.proto\"x\n\x18GetFiveDimFluteDataScRsp\
-    \x12\x20\n\x0bPICMJPEOLEB\x18\x08\x20\x03(\rR\x0bPICMJPEOLEB\x12\x20\n\
-    \x0bFPGIGHMNFGE\x18\x06\x20\x03(\rR\x0bFPGIGHMNFGE\x12\x18\n\x07retcode\
-    \x18\x04\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x12\x20\n\x0bEHHLINEBIPE\x18\x08\x20\x03(\rR\x0bEHHLINEBIPE\x12\x20\n\
+    \x0bDNEPLAGEFAC\x18\r\x20\x03(\rR\x0bDNEPLAGEFAC\x12\x18\n\x07retcode\
+    \x18\x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

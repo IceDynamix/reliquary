@@ -72,10 +72,10 @@ impl ::protobuf::Message for GridFightRecommendEquipmentActionInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.available_equipment_list)?;
                 },
-                40 => {
+                48 => {
                     self.available_equipment_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for GridFightRecommendEquipmentActionInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.available_equipment_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.available_equipment_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.available_equipment_list)?;
+        os.write_repeated_packed_uint32(6, &self.available_equipment_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for GridFightRecommendEquipmentActionInf
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+GridFightRecommendEquipmentActionInfo.proto\"a\n%GridFightRecommendEq\
-    uipmentActionInfo\x128\n\x18available_equipment_list\x18\x05\x20\x03(\rR\
+    uipmentActionInfo\x128\n\x18available_equipment_list\x18\x06\x20\x03(\rR\
     \x16availableEquipmentListb\x06proto3\
 ";
 

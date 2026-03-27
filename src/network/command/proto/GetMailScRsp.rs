@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMailScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMailScRsp.mail_list)
-    pub mail_list: ::std::vec::Vec<super::ClientMail::ClientMail>,
-    // @@protoc_insertion_point(field:GetMailScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:GetMailScRsp.start)
-    pub start: u32,
     // @@protoc_insertion_point(field:GetMailScRsp.notice_mail_list)
     pub notice_mail_list: ::std::vec::Vec<super::ClientMail::ClientMail>,
     // @@protoc_insertion_point(field:GetMailScRsp.total_num)
     pub total_num: u32,
     // @@protoc_insertion_point(field:GetMailScRsp.is_end)
     pub is_end: bool,
+    // @@protoc_insertion_point(field:GetMailScRsp.mail_list)
+    pub mail_list: ::std::vec::Vec<super::ClientMail::ClientMail>,
+    // @@protoc_insertion_point(field:GetMailScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:GetMailScRsp.start)
+    pub start: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMailScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,21 +60,6 @@ impl GetMailScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "mail_list",
-            |m: &GetMailScRsp| { &m.mail_list },
-            |m: &mut GetMailScRsp| { &mut m.mail_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetMailScRsp| { &m.retcode },
-            |m: &mut GetMailScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "start",
-            |m: &GetMailScRsp| { &m.start },
-            |m: &mut GetMailScRsp| { &mut m.start },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "notice_mail_list",
             |m: &GetMailScRsp| { &m.notice_mail_list },
             |m: &mut GetMailScRsp| { &mut m.notice_mail_list },
@@ -88,6 +73,21 @@ impl GetMailScRsp {
             "is_end",
             |m: &GetMailScRsp| { &m.is_end },
             |m: &mut GetMailScRsp| { &mut m.is_end },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "mail_list",
+            |m: &GetMailScRsp| { &m.mail_list },
+            |m: &mut GetMailScRsp| { &mut m.mail_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetMailScRsp| { &m.retcode },
+            |m: &mut GetMailScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "start",
+            |m: &GetMailScRsp| { &m.start },
+            |m: &mut GetMailScRsp| { &mut m.start },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMailScRsp>(
             "GetMailScRsp",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for GetMailScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.mail_list.push(is.read_message()?);
-                },
-                88 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                112 => {
-                    self.start = is.read_uint32()?;
-                },
-                42 => {
+                74 => {
                     self.notice_mail_list.push(is.read_message()?);
                 },
-                16 => {
+                88 => {
                     self.total_num = is.read_uint32()?;
                 },
                 64 => {
                     self.is_end = is.read_bool()?;
+                },
+                34 => {
+                    self.mail_list.push(is.read_message()?);
+                },
+                48 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                40 => {
+                    self.start = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,25 +137,25 @@ impl ::protobuf::Message for GetMailScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.mail_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if self.start != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.start);
-        }
         for value in &self.notice_mail_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.total_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.total_num);
+            my_size += ::protobuf::rt::uint32_size(11, self.total_num);
         }
         if self.is_end != false {
             my_size += 1 + 1;
+        }
+        for value in &self.mail_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        if self.start != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.start);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for GetMailScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.mail_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
-        if self.start != 0 {
-            os.write_uint32(14, self.start)?;
-        }
         for v in &self.notice_mail_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         if self.total_num != 0 {
-            os.write_uint32(2, self.total_num)?;
+            os.write_uint32(11, self.total_num)?;
         }
         if self.is_end != false {
             os.write_bool(8, self.is_end)?;
+        }
+        for v in &self.mail_list {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
+        }
+        if self.start != 0 {
+            os.write_uint32(5, self.start)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for GetMailScRsp {
     }
 
     fn clear(&mut self) {
-        self.mail_list.clear();
-        self.retcode = 0;
-        self.start = 0;
         self.notice_mail_list.clear();
         self.total_num = 0;
         self.is_end = false;
+        self.mail_list.clear();
+        self.retcode = 0;
+        self.start = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMailScRsp {
         static instance: GetMailScRsp = GetMailScRsp {
-            mail_list: ::std::vec::Vec::new(),
-            retcode: 0,
-            start: 0,
             notice_mail_list: ::std::vec::Vec::new(),
             total_num: 0,
             is_end: false,
+            mail_list: ::std::vec::Vec::new(),
+            retcode: 0,
+            start: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for GetMailScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12GetMailScRsp.proto\x1a\x10ClientMail.proto\"\xd3\x01\n\x0cGetMailS\
-    cRsp\x12(\n\tmail_list\x18\x01\x20\x03(\x0b2\x0b.ClientMailR\x08mailList\
-    \x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x14\n\x05start\
-    \x18\x0e\x20\x01(\rR\x05start\x125\n\x10notice_mail_list\x18\x05\x20\x03\
-    (\x0b2\x0b.ClientMailR\x0enoticeMailList\x12\x1b\n\ttotal_num\x18\x02\
-    \x20\x01(\rR\x08totalNum\x12\x15\n\x06is_end\x18\x08\x20\x01(\x08R\x05is\
-    Endb\x06proto3\
+    cRsp\x125\n\x10notice_mail_list\x18\t\x20\x03(\x0b2\x0b.ClientMailR\x0en\
+    oticeMailList\x12\x1b\n\ttotal_num\x18\x0b\x20\x01(\rR\x08totalNum\x12\
+    \x15\n\x06is_end\x18\x08\x20\x01(\x08R\x05isEnd\x12(\n\tmail_list\x18\
+    \x04\x20\x03(\x0b2\x0b.ClientMailR\x08mailList\x12\x18\n\x07retcode\x18\
+    \x06\x20\x01(\rR\x07retcode\x12\x14\n\x05start\x18\x05\x20\x01(\rR\x05st\
+    artb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

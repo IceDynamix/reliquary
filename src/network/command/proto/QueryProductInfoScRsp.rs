@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QueryProductInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:QueryProductInfoScRsp.CKEMGLJOFOE)
-    pub CKEMGLJOFOE: u32,
-    // @@protoc_insertion_point(field:QueryProductInfoScRsp.product_list)
-    pub product_list: ::std::vec::Vec<super::Product::Product>,
+    // @@protoc_insertion_point(field:QueryProductInfoScRsp.NDLHLGKLLIO)
+    pub NDLHLGKLLIO: u32,
     // @@protoc_insertion_point(field:QueryProductInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:QueryProductInfoScRsp.MAOLGKNAMCH)
-    pub MAOLGKNAMCH: u32,
     // @@protoc_insertion_point(field:QueryProductInfoScRsp.month_card_out_date_time)
     pub month_card_out_date_time: u64,
+    // @@protoc_insertion_point(field:QueryProductInfoScRsp.product_list)
+    pub product_list: ::std::vec::Vec<super::Product::Product>,
+    // @@protoc_insertion_point(field:QueryProductInfoScRsp.LPBHHCFJIKG)
+    pub LPBHHCFJIKG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:QueryProductInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,9 @@ impl QueryProductInfoScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CKEMGLJOFOE",
-            |m: &QueryProductInfoScRsp| { &m.CKEMGLJOFOE },
-            |m: &mut QueryProductInfoScRsp| { &mut m.CKEMGLJOFOE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "product_list",
-            |m: &QueryProductInfoScRsp| { &m.product_list },
-            |m: &mut QueryProductInfoScRsp| { &mut m.product_list },
+            "NDLHLGKLLIO",
+            |m: &QueryProductInfoScRsp| { &m.NDLHLGKLLIO },
+            |m: &mut QueryProductInfoScRsp| { &mut m.NDLHLGKLLIO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -73,14 +68,19 @@ impl QueryProductInfoScRsp {
             |m: &mut QueryProductInfoScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MAOLGKNAMCH",
-            |m: &QueryProductInfoScRsp| { &m.MAOLGKNAMCH },
-            |m: &mut QueryProductInfoScRsp| { &mut m.MAOLGKNAMCH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "month_card_out_date_time",
             |m: &QueryProductInfoScRsp| { &m.month_card_out_date_time },
             |m: &mut QueryProductInfoScRsp| { &mut m.month_card_out_date_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "product_list",
+            |m: &QueryProductInfoScRsp| { &m.product_list },
+            |m: &mut QueryProductInfoScRsp| { &mut m.product_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LPBHHCFJIKG",
+            |m: &QueryProductInfoScRsp| { &m.LPBHHCFJIKG },
+            |m: &mut QueryProductInfoScRsp| { &mut m.LPBHHCFJIKG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<QueryProductInfoScRsp>(
             "QueryProductInfoScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.CKEMGLJOFOE = is.read_uint32()?;
-                },
-                90 => {
-                    self.product_list.push(is.read_message()?);
-                },
                 32 => {
+                    self.NDLHLGKLLIO = is.read_uint32()?;
+                },
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                24 => {
-                    self.MAOLGKNAMCH = is.read_uint32()?;
-                },
-                96 => {
+                120 => {
                     self.month_card_out_date_time = is.read_uint64()?;
+                },
+                50 => {
+                    self.product_list.push(is.read_message()?);
+                },
+                8 => {
+                    self.LPBHHCFJIKG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CKEMGLJOFOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.CKEMGLJOFOE);
+        if self.NDLHLGKLLIO != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NDLHLGKLLIO);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.month_card_out_date_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(15, self.month_card_out_date_time);
         }
         for value in &self.product_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
-        if self.MAOLGKNAMCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MAOLGKNAMCH);
-        }
-        if self.month_card_out_date_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(12, self.month_card_out_date_time);
+        if self.LPBHHCFJIKG != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.LPBHHCFJIKG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CKEMGLJOFOE != 0 {
-            os.write_uint32(9, self.CKEMGLJOFOE)?;
+        if self.NDLHLGKLLIO != 0 {
+            os.write_uint32(4, self.NDLHLGKLLIO)?;
         }
-        for v in &self.product_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
-        if self.MAOLGKNAMCH != 0 {
-            os.write_uint32(3, self.MAOLGKNAMCH)?;
+            os.write_uint32(9, self.retcode)?;
         }
         if self.month_card_out_date_time != 0 {
-            os.write_uint64(12, self.month_card_out_date_time)?;
+            os.write_uint64(15, self.month_card_out_date_time)?;
+        }
+        for v in &self.product_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if self.LPBHHCFJIKG != 0 {
+            os.write_uint32(1, self.LPBHHCFJIKG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for QueryProductInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.CKEMGLJOFOE = 0;
-        self.product_list.clear();
+        self.NDLHLGKLLIO = 0;
         self.retcode = 0;
-        self.MAOLGKNAMCH = 0;
         self.month_card_out_date_time = 0;
+        self.product_list.clear();
+        self.LPBHHCFJIKG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static QueryProductInfoScRsp {
         static instance: QueryProductInfoScRsp = QueryProductInfoScRsp {
-            CKEMGLJOFOE: 0,
-            product_list: ::std::vec::Vec::new(),
+            NDLHLGKLLIO: 0,
             retcode: 0,
-            MAOLGKNAMCH: 0,
             month_card_out_date_time: 0,
+            product_list: ::std::vec::Vec::new(),
+            LPBHHCFJIKG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for QueryProductInfoScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bQueryProductInfoScRsp.proto\x1a\rProduct.proto\"\xda\x01\n\x15Quer\
-    yProductInfoScRsp\x12\x20\n\x0bCKEMGLJOFOE\x18\t\x20\x01(\rR\x0bCKEMGLJO\
-    FOE\x12+\n\x0cproduct_list\x18\x0b\x20\x03(\x0b2\x08.ProductR\x0bproduct\
-    List\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bMA\
-    OLGKNAMCH\x18\x03\x20\x01(\rR\x0bMAOLGKNAMCH\x126\n\x18month_card_out_da\
-    te_time\x18\x0c\x20\x01(\x04R\x14monthCardOutDateTimeb\x06proto3\
+    yProductInfoScRsp\x12\x20\n\x0bNDLHLGKLLIO\x18\x04\x20\x01(\rR\x0bNDLHLG\
+    KLLIO\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x126\n\x18month_\
+    card_out_date_time\x18\x0f\x20\x01(\x04R\x14monthCardOutDateTime\x12+\n\
+    \x0cproduct_list\x18\x06\x20\x03(\x0b2\x08.ProductR\x0bproductList\x12\
+    \x20\n\x0bLPBHHCFJIKG\x18\x01\x20\x01(\rR\x0bLPBHHCFJIKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

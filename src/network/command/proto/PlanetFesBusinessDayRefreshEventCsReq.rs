@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesBusinessDayRefreshEventCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventCsReq.LIGAEBKAOHG)
-    pub LIGAEBKAOHG: bool,
-    // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventCsReq.OCAOPNCIFKH)
-    pub OCAOPNCIFKH: u32,
-    // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventCsReq.EAJKMDBHNHO)
-    pub EAJKMDBHNHO: u32,
+    // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventCsReq.MMFFIIFMKPB)
+    pub MMFFIIFMKPB: u32,
+    // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventCsReq.NGIGGCOLJBP)
+    pub NGIGGCOLJBP: bool,
+    // @@protoc_insertion_point(field:PlanetFesBusinessDayRefreshEventCsReq.CGBIOBCFKIJ)
+    pub CGBIOBCFKIJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesBusinessDayRefreshEventCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl PlanetFesBusinessDayRefreshEventCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LIGAEBKAOHG",
-            |m: &PlanetFesBusinessDayRefreshEventCsReq| { &m.LIGAEBKAOHG },
-            |m: &mut PlanetFesBusinessDayRefreshEventCsReq| { &mut m.LIGAEBKAOHG },
+            "MMFFIIFMKPB",
+            |m: &PlanetFesBusinessDayRefreshEventCsReq| { &m.MMFFIIFMKPB },
+            |m: &mut PlanetFesBusinessDayRefreshEventCsReq| { &mut m.MMFFIIFMKPB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OCAOPNCIFKH",
-            |m: &PlanetFesBusinessDayRefreshEventCsReq| { &m.OCAOPNCIFKH },
-            |m: &mut PlanetFesBusinessDayRefreshEventCsReq| { &mut m.OCAOPNCIFKH },
+            "NGIGGCOLJBP",
+            |m: &PlanetFesBusinessDayRefreshEventCsReq| { &m.NGIGGCOLJBP },
+            |m: &mut PlanetFesBusinessDayRefreshEventCsReq| { &mut m.NGIGGCOLJBP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EAJKMDBHNHO",
-            |m: &PlanetFesBusinessDayRefreshEventCsReq| { &m.EAJKMDBHNHO },
-            |m: &mut PlanetFesBusinessDayRefreshEventCsReq| { &mut m.EAJKMDBHNHO },
+            "CGBIOBCFKIJ",
+            |m: &PlanetFesBusinessDayRefreshEventCsReq| { &m.CGBIOBCFKIJ },
+            |m: &mut PlanetFesBusinessDayRefreshEventCsReq| { &mut m.CGBIOBCFKIJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesBusinessDayRefreshEventCsReq>(
             "PlanetFesBusinessDayRefreshEventCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.LIGAEBKAOHG = is.read_bool()?;
+                32 => {
+                    self.MMFFIIFMKPB = is.read_uint32()?;
                 },
-                120 => {
-                    self.OCAOPNCIFKH = is.read_uint32()?;
+                16 => {
+                    self.NGIGGCOLJBP = is.read_bool()?;
                 },
                 64 => {
-                    self.EAJKMDBHNHO = is.read_uint32()?;
+                    self.CGBIOBCFKIJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LIGAEBKAOHG != false {
+        if self.MMFFIIFMKPB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.MMFFIIFMKPB);
+        }
+        if self.NGIGGCOLJBP != false {
             my_size += 1 + 1;
         }
-        if self.OCAOPNCIFKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.OCAOPNCIFKH);
-        }
-        if self.EAJKMDBHNHO != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.EAJKMDBHNHO);
+        if self.CGBIOBCFKIJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CGBIOBCFKIJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LIGAEBKAOHG != false {
-            os.write_bool(7, self.LIGAEBKAOHG)?;
+        if self.MMFFIIFMKPB != 0 {
+            os.write_uint32(4, self.MMFFIIFMKPB)?;
         }
-        if self.OCAOPNCIFKH != 0 {
-            os.write_uint32(15, self.OCAOPNCIFKH)?;
+        if self.NGIGGCOLJBP != false {
+            os.write_bool(2, self.NGIGGCOLJBP)?;
         }
-        if self.EAJKMDBHNHO != 0 {
-            os.write_uint32(8, self.EAJKMDBHNHO)?;
+        if self.CGBIOBCFKIJ != 0 {
+            os.write_uint32(8, self.CGBIOBCFKIJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for PlanetFesBusinessDayRefreshEventCsReq {
     }
 
     fn clear(&mut self) {
-        self.LIGAEBKAOHG = false;
-        self.OCAOPNCIFKH = 0;
-        self.EAJKMDBHNHO = 0;
+        self.MMFFIIFMKPB = 0;
+        self.NGIGGCOLJBP = false;
+        self.CGBIOBCFKIJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesBusinessDayRefreshEventCsReq {
         static instance: PlanetFesBusinessDayRefreshEventCsReq = PlanetFesBusinessDayRefreshEventCsReq {
-            LIGAEBKAOHG: false,
-            OCAOPNCIFKH: 0,
-            EAJKMDBHNHO: 0,
+            MMFFIIFMKPB: 0,
+            NGIGGCOLJBP: false,
+            CGBIOBCFKIJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesBusinessDayRefreshEventCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+PlanetFesBusinessDayRefreshEventCsReq.proto\"\x8d\x01\n%PlanetFesBusi\
-    nessDayRefreshEventCsReq\x12\x20\n\x0bLIGAEBKAOHG\x18\x07\x20\x01(\x08R\
-    \x0bLIGAEBKAOHG\x12\x20\n\x0bOCAOPNCIFKH\x18\x0f\x20\x01(\rR\x0bOCAOPNCI\
-    FKH\x12\x20\n\x0bEAJKMDBHNHO\x18\x08\x20\x01(\rR\x0bEAJKMDBHNHOb\x06prot\
-    o3\
+    nessDayRefreshEventCsReq\x12\x20\n\x0bMMFFIIFMKPB\x18\x04\x20\x01(\rR\
+    \x0bMMFFIIFMKPB\x12\x20\n\x0bNGIGGCOLJBP\x18\x02\x20\x01(\x08R\x0bNGIGGC\
+    OLJBP\x12\x20\n\x0bCGBIOBCFKIJ\x18\x08\x20\x01(\rR\x0bCGBIOBCFKIJb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

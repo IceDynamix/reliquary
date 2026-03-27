@@ -30,16 +30,16 @@ pub struct RaidInfoNotify {
     // message fields
     // @@protoc_insertion_point(field:RaidInfoNotify.raid_target_info)
     pub raid_target_info: ::std::vec::Vec<super::RaidTargetInfo::RaidTargetInfo>,
-    // @@protoc_insertion_point(field:RaidInfoNotify.raid_finish_time)
-    pub raid_finish_time: u64,
-    // @@protoc_insertion_point(field:RaidInfoNotify.item_list)
-    pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:RaidInfoNotify.world_level)
     pub world_level: u32,
-    // @@protoc_insertion_point(field:RaidInfoNotify.raid_id)
-    pub raid_id: u32,
+    // @@protoc_insertion_point(field:RaidInfoNotify.item_list)
+    pub item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:RaidInfoNotify.status)
     pub status: ::protobuf::EnumOrUnknown<super::RaidStatus::RaidStatus>,
+    // @@protoc_insertion_point(field:RaidInfoNotify.raid_id)
+    pub raid_id: u32,
+    // @@protoc_insertion_point(field:RaidInfoNotify.raid_finish_time)
+    pub raid_finish_time: u64,
     // special fields
     // @@protoc_insertion_point(special_field:RaidInfoNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,9 +65,9 @@ impl RaidInfoNotify {
             |m: &mut RaidInfoNotify| { &mut m.raid_target_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "raid_finish_time",
-            |m: &RaidInfoNotify| { &m.raid_finish_time },
-            |m: &mut RaidInfoNotify| { &mut m.raid_finish_time },
+            "world_level",
+            |m: &RaidInfoNotify| { &m.world_level },
+            |m: &mut RaidInfoNotify| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "item_list",
@@ -75,9 +75,9 @@ impl RaidInfoNotify {
             |m: &mut RaidInfoNotify| { &mut m.item_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &RaidInfoNotify| { &m.world_level },
-            |m: &mut RaidInfoNotify| { &mut m.world_level },
+            "status",
+            |m: &RaidInfoNotify| { &m.status },
+            |m: &mut RaidInfoNotify| { &mut m.status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "raid_id",
@@ -85,9 +85,9 @@ impl RaidInfoNotify {
             |m: &mut RaidInfoNotify| { &mut m.raid_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "status",
-            |m: &RaidInfoNotify| { &m.status },
-            |m: &mut RaidInfoNotify| { &mut m.status },
+            "raid_finish_time",
+            |m: &RaidInfoNotify| { &m.raid_finish_time },
+            |m: &mut RaidInfoNotify| { &mut m.raid_finish_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidInfoNotify>(
             "RaidInfoNotify",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for RaidInfoNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                98 => {
                     self.raid_target_info.push(is.read_message()?);
                 },
-                120 => {
-                    self.raid_finish_time = is.read_uint64()?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
-                },
-                8 => {
+                104 => {
                     self.world_level = is.read_uint32()?;
                 },
-                96 => {
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list)?;
+                },
+                56 => {
+                    self.status = is.read_enum_or_unknown()?;
+                },
+                8 => {
                     self.raid_id = is.read_uint32()?;
                 },
-                40 => {
-                    self.status = is.read_enum_or_unknown()?;
+                24 => {
+                    self.raid_finish_time = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,21 +141,21 @@ impl ::protobuf::Message for RaidInfoNotify {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.raid_finish_time != 0 {
-            my_size += ::protobuf::rt::uint64_size(15, self.raid_finish_time);
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.world_level);
         }
         if let Some(v) = self.item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.world_level);
+        if self.status != ::protobuf::EnumOrUnknown::new(super::RaidStatus::RaidStatus::RAID_STATUS_NONE) {
+            my_size += ::protobuf::rt::int32_size(7, self.status.value());
         }
         if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.raid_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.raid_id);
         }
-        if self.status != ::protobuf::EnumOrUnknown::new(super::RaidStatus::RaidStatus::RAID_STATUS_NONE) {
-            my_size += ::protobuf::rt::int32_size(5, self.status.value());
+        if self.raid_finish_time != 0 {
+            my_size += ::protobuf::rt::uint64_size(3, self.raid_finish_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,22 +164,22 @@ impl ::protobuf::Message for RaidInfoNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.raid_target_info {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        if self.raid_finish_time != 0 {
-            os.write_uint64(15, self.raid_finish_time)?;
+        if self.world_level != 0 {
+            os.write_uint32(13, self.world_level)?;
         }
         if let Some(v) = self.item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if self.world_level != 0 {
-            os.write_uint32(1, self.world_level)?;
-        }
-        if self.raid_id != 0 {
-            os.write_uint32(12, self.raid_id)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.status != ::protobuf::EnumOrUnknown::new(super::RaidStatus::RaidStatus::RAID_STATUS_NONE) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.status))?;
+        }
+        if self.raid_id != 0 {
+            os.write_uint32(1, self.raid_id)?;
+        }
+        if self.raid_finish_time != 0 {
+            os.write_uint64(3, self.raid_finish_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -199,22 +199,22 @@ impl ::protobuf::Message for RaidInfoNotify {
 
     fn clear(&mut self) {
         self.raid_target_info.clear();
-        self.raid_finish_time = 0;
-        self.item_list.clear();
         self.world_level = 0;
-        self.raid_id = 0;
+        self.item_list.clear();
         self.status = ::protobuf::EnumOrUnknown::new(super::RaidStatus::RaidStatus::RAID_STATUS_NONE);
+        self.raid_id = 0;
+        self.raid_finish_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidInfoNotify {
         static instance: RaidInfoNotify = RaidInfoNotify {
             raid_target_info: ::std::vec::Vec::new(),
-            raid_finish_time: 0,
-            item_list: ::protobuf::MessageField::none(),
             world_level: 0,
-            raid_id: 0,
+            item_list: ::protobuf::MessageField::none(),
             status: ::protobuf::EnumOrUnknown::from_i32(0),
+            raid_id: 0,
+            raid_finish_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -241,12 +241,12 @@ impl ::protobuf::reflect::ProtobufValue for RaidInfoNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14RaidInfoNotify.proto\x1a\x0eItemList.proto\x1a\x10RaidStatus.proto\
     \x1a\x14RaidTargetInfo.proto\"\xfc\x01\n\x0eRaidInfoNotify\x129\n\x10rai\
-    d_target_info\x18\x07\x20\x03(\x0b2\x0f.RaidTargetInfoR\x0eraidTargetInf\
-    o\x12(\n\x10raid_finish_time\x18\x0f\x20\x01(\x04R\x0eraidFinishTime\x12\
-    &\n\titem_list\x18\x0b\x20\x01(\x0b2\t.ItemListR\x08itemList\x12\x1f\n\
-    \x0bworld_level\x18\x01\x20\x01(\rR\nworldLevel\x12\x17\n\x07raid_id\x18\
-    \x0c\x20\x01(\rR\x06raidId\x12#\n\x06status\x18\x05\x20\x01(\x0e2\x0b.Ra\
-    idStatusR\x06statusb\x06proto3\
+    d_target_info\x18\x0c\x20\x03(\x0b2\x0f.RaidTargetInfoR\x0eraidTargetInf\
+    o\x12\x1f\n\x0bworld_level\x18\r\x20\x01(\rR\nworldLevel\x12&\n\titem_li\
+    st\x18\t\x20\x01(\x0b2\t.ItemListR\x08itemList\x12#\n\x06status\x18\x07\
+    \x20\x01(\x0e2\x0b.RaidStatusR\x06status\x12\x17\n\x07raid_id\x18\x01\
+    \x20\x01(\rR\x06raidId\x12(\n\x10raid_finish_time\x18\x03\x20\x01(\x04R\
+    \x0eraidFinishTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

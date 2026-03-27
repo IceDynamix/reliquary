@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraFinishRoundCsReq {
     // message fields
+    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.stt)
+    pub stt: ::protobuf::MessageField<super::ALOGAJNFOBA::ALOGAJNFOBA>,
+    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.MCNPCEDOKIF)
+    pub MCNPCEDOKIF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.lineup)
+    pub lineup: ::protobuf::MessageField<super::JDALAFCNBEK::JDALAFCNBEK>,
+    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.NPNCEEJCEHA)
+    pub NPNCEEJCEHA: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.end_reason)
     pub end_reason: ::protobuf::EnumOrUnknown<super::ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason>,
-    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.BJIMBDLNIMM)
-    pub BJIMBDLNIMM: ::std::collections::HashMap<u32, super::BNJLLLCBEDA::BNJLLLCBEDA>,
-    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.stt)
-    pub stt: ::protobuf::MessageField<super::CGBAODMGNMJ::CGBAODMGNMJ>,
-    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.DEIPFLHJABE)
-    pub DEIPFLHJABE: u32,
-    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.HGFGDGLKFGH)
-    pub HGFGDGLKFGH: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.EJGOMOPLEAN)
-    pub EJGOMOPLEAN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.lineup)
-    pub lineup: ::protobuf::MessageField<super::DKMHKBMAMBN::DKMHKBMAMBN>,
-    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.CGNHDDDPAKE)
-    pub CGNHDDDPAKE: ::std::vec::Vec<super::ECAKIEHEHPD::ECAKIEHEHPD>,
-    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.BOEDHDLHHCD)
-    pub BOEDHDLHHCD: bool,
+    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.HIHOPOIEJLE)
+    pub HIHOPOIEJLE: u32,
+    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.OBJPEFMECEM)
+    pub OBJPEFMECEM: ::std::collections::HashMap<u32, super::NMNHGBJNEOI::NMNHGBJNEOI>,
+    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.GDLJGAMIGJC)
+    pub GDLJGAMIGJC: bool,
+    // @@protoc_insertion_point(field:ChimeraFinishRoundCsReq.OBIGCJJIFGC)
+    pub OBIGCJJIFGC: ::std::vec::Vec<super::ABLLCAIHGHH::ABLLCAIHGHH>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraFinishRoundCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,50 +65,50 @@ impl ChimeraFinishRoundCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ALOGAJNFOBA::ALOGAJNFOBA>(
+            "stt",
+            |m: &ChimeraFinishRoundCsReq| { &m.stt },
+            |m: &mut ChimeraFinishRoundCsReq| { &mut m.stt },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MCNPCEDOKIF",
+            |m: &ChimeraFinishRoundCsReq| { &m.MCNPCEDOKIF },
+            |m: &mut ChimeraFinishRoundCsReq| { &mut m.MCNPCEDOKIF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JDALAFCNBEK::JDALAFCNBEK>(
+            "lineup",
+            |m: &ChimeraFinishRoundCsReq| { &m.lineup },
+            |m: &mut ChimeraFinishRoundCsReq| { &mut m.lineup },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "NPNCEEJCEHA",
+            |m: &ChimeraFinishRoundCsReq| { &m.NPNCEEJCEHA },
+            |m: &mut ChimeraFinishRoundCsReq| { &mut m.NPNCEEJCEHA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_reason",
             |m: &ChimeraFinishRoundCsReq| { &m.end_reason },
             |m: &mut ChimeraFinishRoundCsReq| { &mut m.end_reason },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "BJIMBDLNIMM",
-            |m: &ChimeraFinishRoundCsReq| { &m.BJIMBDLNIMM },
-            |m: &mut ChimeraFinishRoundCsReq| { &mut m.BJIMBDLNIMM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CGBAODMGNMJ::CGBAODMGNMJ>(
-            "stt",
-            |m: &ChimeraFinishRoundCsReq| { &m.stt },
-            |m: &mut ChimeraFinishRoundCsReq| { &mut m.stt },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DEIPFLHJABE",
-            |m: &ChimeraFinishRoundCsReq| { &m.DEIPFLHJABE },
-            |m: &mut ChimeraFinishRoundCsReq| { &mut m.DEIPFLHJABE },
+            "HIHOPOIEJLE",
+            |m: &ChimeraFinishRoundCsReq| { &m.HIHOPOIEJLE },
+            |m: &mut ChimeraFinishRoundCsReq| { &mut m.HIHOPOIEJLE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "HGFGDGLKFGH",
-            |m: &ChimeraFinishRoundCsReq| { &m.HGFGDGLKFGH },
-            |m: &mut ChimeraFinishRoundCsReq| { &mut m.HGFGDGLKFGH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EJGOMOPLEAN",
-            |m: &ChimeraFinishRoundCsReq| { &m.EJGOMOPLEAN },
-            |m: &mut ChimeraFinishRoundCsReq| { &mut m.EJGOMOPLEAN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DKMHKBMAMBN::DKMHKBMAMBN>(
-            "lineup",
-            |m: &ChimeraFinishRoundCsReq| { &m.lineup },
-            |m: &mut ChimeraFinishRoundCsReq| { &mut m.lineup },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CGNHDDDPAKE",
-            |m: &ChimeraFinishRoundCsReq| { &m.CGNHDDDPAKE },
-            |m: &mut ChimeraFinishRoundCsReq| { &mut m.CGNHDDDPAKE },
+            "OBJPEFMECEM",
+            |m: &ChimeraFinishRoundCsReq| { &m.OBJPEFMECEM },
+            |m: &mut ChimeraFinishRoundCsReq| { &mut m.OBJPEFMECEM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BOEDHDLHHCD",
-            |m: &ChimeraFinishRoundCsReq| { &m.BOEDHDLHHCD },
-            |m: &mut ChimeraFinishRoundCsReq| { &mut m.BOEDHDLHHCD },
+            "GDLJGAMIGJC",
+            |m: &ChimeraFinishRoundCsReq| { &m.GDLJGAMIGJC },
+            |m: &mut ChimeraFinishRoundCsReq| { &mut m.GDLJGAMIGJC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OBIGCJJIFGC",
+            |m: &ChimeraFinishRoundCsReq| { &m.OBIGCJJIFGC },
+            |m: &mut ChimeraFinishRoundCsReq| { &mut m.OBIGCJJIFGC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraFinishRoundCsReq>(
             "ChimeraFinishRoundCsReq",
@@ -128,31 +128,19 @@ impl ::protobuf::Message for ChimeraFinishRoundCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.end_reason = is.read_enum_or_unknown()?;
-                },
                 10 => {
-                    let len = is.read_raw_varint32()?;
-                    let old_limit = is.push_limit(len as u64)?;
-                    let mut key = ::std::default::Default::default();
-                    let mut value = ::std::default::Default::default();
-                    while let Some(tag) = is.read_raw_tag_or_eof()? {
-                        match tag {
-                            8 => key = is.read_uint32()?,
-                            18 => value = is.read_message()?,
-                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
-                        };
-                    }
-                    is.pop_limit(old_limit);
-                    self.BJIMBDLNIMM.insert(key, value);
-                },
-                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
-                48 => {
-                    self.DEIPFLHJABE = is.read_uint32()?;
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MCNPCEDOKIF)?;
                 },
-                98 => {
+                72 => {
+                    self.MCNPCEDOKIF.push(is.read_uint32()?);
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
+                },
+                90 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -165,22 +153,34 @@ impl ::protobuf::Message for ChimeraFinishRoundCsReq {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.HGFGDGLKFGH.insert(key, value);
+                    self.NPNCEEJCEHA.insert(key, value);
+                },
+                64 => {
+                    self.end_reason = is.read_enum_or_unknown()?;
+                },
+                32 => {
+                    self.HIHOPOIEJLE = is.read_uint32()?;
                 },
                 26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EJGOMOPLEAN)?;
-                },
-                24 => {
-                    self.EJGOMOPLEAN.push(is.read_uint32()?);
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
-                },
-                90 => {
-                    self.CGNHDDDPAKE.push(is.read_message()?);
+                    let len = is.read_raw_varint32()?;
+                    let old_limit = is.push_limit(len as u64)?;
+                    let mut key = ::std::default::Default::default();
+                    let mut value = ::std::default::Default::default();
+                    while let Some(tag) = is.read_raw_tag_or_eof()? {
+                        match tag {
+                            8 => key = is.read_uint32()?,
+                            18 => value = is.read_message()?,
+                            _ => ::protobuf::rt::skip_field_for_tag(tag, is)?,
+                        };
+                    }
+                    is.pop_limit(old_limit);
+                    self.OBJPEFMECEM.insert(key, value);
                 },
                 40 => {
-                    self.BOEDHDLHHCD = is.read_bool()?;
+                    self.GDLJGAMIGJC = is.read_bool()?;
+                },
+                50 => {
+                    self.OBIGCJJIFGC.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -194,85 +194,85 @@ impl ::protobuf::Message for ChimeraFinishRoundCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason::DHKBBLHEAHH_NCCPANFNEBA) {
-            my_size += ::protobuf::rt::int32_size(15, self.end_reason.value());
+        if let Some(v) = self.stt.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for (k, v) in &self.BJIMBDLNIMM {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.MCNPCEDOKIF);
+        if let Some(v) = self.lineup.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for (k, v) in &self.NPNCEEJCEHA {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            entry_size += ::protobuf::rt::uint32_size(2, *v);
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
+        };
+        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_NIPGFABAJDC) {
+            my_size += ::protobuf::rt::int32_size(8, self.end_reason.value());
+        }
+        if self.HIHOPOIEJLE != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HIHOPOIEJLE);
+        }
+        for (k, v) in &self.OBJPEFMECEM {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.compute_size();
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if let Some(v) = self.stt.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.GDLJGAMIGJC != false {
+            my_size += 1 + 1;
         }
-        if self.DEIPFLHJABE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.DEIPFLHJABE);
-        }
-        for (k, v) in &self.HGFGDGLKFGH {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            entry_size += ::protobuf::rt::uint32_size(2, *v);
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
-        };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.EJGOMOPLEAN);
-        if let Some(v) = self.lineup.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.CGNHDDDPAKE {
+        for value in &self.OBIGCJJIFGC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.BOEDHDLHHCD != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason::DHKBBLHEAHH_NCCPANFNEBA) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.end_reason))?;
-        }
-        for (k, v) in &self.BJIMBDLNIMM {
-            let mut entry_size = 0;
-            entry_size += ::protobuf::rt::uint32_size(1, *k);
-            let len = v.cached_size() as u64;
-            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(10)?; // Tag.
-            os.write_raw_varint32(entry_size as u32)?;
-            os.write_uint32(1, *k)?;
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        };
         if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if self.DEIPFLHJABE != 0 {
-            os.write_uint32(6, self.DEIPFLHJABE)?;
+        os.write_repeated_packed_uint32(9, &self.MCNPCEDOKIF)?;
+        if let Some(v) = self.lineup.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        for (k, v) in &self.HGFGDGLKFGH {
+        for (k, v) in &self.NPNCEEJCEHA {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(98)?; // Tag.
+            os.write_raw_varint32(90)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        os.write_repeated_packed_uint32(3, &self.EJGOMOPLEAN)?;
-        if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if self.end_reason != ::protobuf::EnumOrUnknown::new(super::ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_NIPGFABAJDC) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.end_reason))?;
         }
-        for v in &self.CGNHDDDPAKE {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.HIHOPOIEJLE != 0 {
+            os.write_uint32(4, self.HIHOPOIEJLE)?;
+        }
+        for (k, v) in &self.OBJPEFMECEM {
+            let mut entry_size = 0;
+            entry_size += ::protobuf::rt::uint32_size(1, *k);
+            let len = v.cached_size() as u64;
+            entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            os.write_raw_varint32(26)?; // Tag.
+            os.write_raw_varint32(entry_size as u32)?;
+            os.write_uint32(1, *k)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.BOEDHDLHHCD != false {
-            os.write_bool(5, self.BOEDHDLHHCD)?;
+        if self.GDLJGAMIGJC != false {
+            os.write_bool(5, self.GDLJGAMIGJC)?;
         }
+        for v in &self.OBIGCJJIFGC {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -290,15 +290,15 @@ impl ::protobuf::Message for ChimeraFinishRoundCsReq {
     }
 
     fn clear(&mut self) {
-        self.end_reason = ::protobuf::EnumOrUnknown::new(super::ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason::DHKBBLHEAHH_NCCPANFNEBA);
-        self.BJIMBDLNIMM.clear();
         self.stt.clear();
-        self.DEIPFLHJABE = 0;
-        self.HGFGDGLKFGH.clear();
-        self.EJGOMOPLEAN.clear();
+        self.MCNPCEDOKIF.clear();
         self.lineup.clear();
-        self.CGNHDDDPAKE.clear();
-        self.BOEDHDLHHCD = false;
+        self.NPNCEEJCEHA.clear();
+        self.end_reason = ::protobuf::EnumOrUnknown::new(super::ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason::ChimeraRoundWorkEndReason_NIPGFABAJDC);
+        self.HIHOPOIEJLE = 0;
+        self.OBJPEFMECEM.clear();
+        self.GDLJGAMIGJC = false;
+        self.OBIGCJJIFGC.clear();
         self.special_fields.clear();
     }
 
@@ -326,23 +326,23 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraFinishRoundCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dChimeraFinishRoundCsReq.proto\x1a\x11BNJLLLCBEDA.proto\x1a\x11CGBA\
-    ODMGNMJ.proto\x1a\x1fChimeraRoundWorkEndReason.proto\x1a\x11DKMHKBMAMBN.\
-    proto\x1a\x11ECAKIEHEHPD.proto\"\xd8\x04\n\x17ChimeraFinishRoundCsReq\
-    \x129\n\nend_reason\x18\x0f\x20\x01(\x0e2\x1a.ChimeraRoundWorkEndReasonR\
-    \tendReason\x12K\n\x0bBJIMBDLNIMM\x18\x01\x20\x03(\x0b2).ChimeraFinishRo\
-    undCsReq.BJIMBDLNIMMEntryR\x0bBJIMBDLNIMM\x12\x1e\n\x03stt\x18\x07\x20\
-    \x01(\x0b2\x0c.CGBAODMGNMJR\x03stt\x12\x20\n\x0bDEIPFLHJABE\x18\x06\x20\
-    \x01(\rR\x0bDEIPFLHJABE\x12K\n\x0bHGFGDGLKFGH\x18\x0c\x20\x03(\x0b2).Chi\
-    meraFinishRoundCsReq.HGFGDGLKFGHEntryR\x0bHGFGDGLKFGH\x12\x20\n\x0bEJGOM\
-    OPLEAN\x18\x03\x20\x03(\rR\x0bEJGOMOPLEAN\x12$\n\x06lineup\x18\x04\x20\
-    \x01(\x0b2\x0c.DKMHKBMAMBNR\x06lineup\x12.\n\x0bCGNHDDDPAKE\x18\x0b\x20\
-    \x03(\x0b2\x0c.ECAKIEHEHPDR\x0bCGNHDDDPAKE\x12\x20\n\x0bBOEDHDLHHCD\x18\
-    \x05\x20\x01(\x08R\x0bBOEDHDLHHCD\x1aL\n\x10BJIMBDLNIMMEntry\x12\x10\n\
-    \x03key\x18\x01\x20\x01(\rR\x03key\x12\"\n\x05value\x18\x02\x20\x01(\x0b\
-    2\x0c.BNJLLLCBEDAR\x05value:\x028\x01\x1a>\n\x10HGFGDGLKFGHEntry\x12\x10\
-    \n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\
-    \rR\x05value:\x028\x01b\x06proto3\
+    \n\x1dChimeraFinishRoundCsReq.proto\x1a\x11ABLLCAIHGHH.proto\x1a\x11ALOG\
+    AJNFOBA.proto\x1a\x1fChimeraRoundWorkEndReason.proto\x1a\x11JDALAFCNBEK.\
+    proto\x1a\x11NMNHGBJNEOI.proto\"\xd8\x04\n\x17ChimeraFinishRoundCsReq\
+    \x12\x1e\n\x03stt\x18\x01\x20\x01(\x0b2\x0c.ALOGAJNFOBAR\x03stt\x12\x20\
+    \n\x0bMCNPCEDOKIF\x18\t\x20\x03(\rR\x0bMCNPCEDOKIF\x12$\n\x06lineup\x18\
+    \n\x20\x01(\x0b2\x0c.JDALAFCNBEKR\x06lineup\x12K\n\x0bNPNCEEJCEHA\x18\
+    \x0b\x20\x03(\x0b2).ChimeraFinishRoundCsReq.NPNCEEJCEHAEntryR\x0bNPNCEEJ\
+    CEHA\x129\n\nend_reason\x18\x08\x20\x01(\x0e2\x1a.ChimeraRoundWorkEndRea\
+    sonR\tendReason\x12\x20\n\x0bHIHOPOIEJLE\x18\x04\x20\x01(\rR\x0bHIHOPOIE\
+    JLE\x12K\n\x0bOBJPEFMECEM\x18\x03\x20\x03(\x0b2).ChimeraFinishRoundCsReq\
+    .OBJPEFMECEMEntryR\x0bOBJPEFMECEM\x12\x20\n\x0bGDLJGAMIGJC\x18\x05\x20\
+    \x01(\x08R\x0bGDLJGAMIGJC\x12.\n\x0bOBIGCJJIFGC\x18\x06\x20\x03(\x0b2\
+    \x0c.ABLLCAIHGHHR\x0bOBIGCJJIFGC\x1a>\n\x10NPNCEEJCEHAEntry\x12\x10\n\
+    \x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\r\
+    R\x05value:\x028\x01\x1aL\n\x10OBJPEFMECEMEntry\x12\x10\n\x03key\x18\x01\
+    \x20\x01(\rR\x03key\x12\"\n\x05value\x18\x02\x20\x01(\x0b2\x0c.NMNHGBJNE\
+    OIR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -360,11 +360,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(5);
-            deps.push(super::BNJLLLCBEDA::file_descriptor().clone());
-            deps.push(super::CGBAODMGNMJ::file_descriptor().clone());
+            deps.push(super::ABLLCAIHGHH::file_descriptor().clone());
+            deps.push(super::ALOGAJNFOBA::file_descriptor().clone());
             deps.push(super::ChimeraRoundWorkEndReason::file_descriptor().clone());
-            deps.push(super::DKMHKBMAMBN::file_descriptor().clone());
-            deps.push(super::ECAKIEHEHPD::file_descriptor().clone());
+            deps.push(super::JDALAFCNBEK::file_descriptor().clone());
+            deps.push(super::NMNHGBJNEOI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChimeraFinishRoundCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

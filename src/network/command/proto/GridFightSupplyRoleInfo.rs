@@ -79,13 +79,13 @@ impl ::protobuf::Message for GridFightSupplyRoleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                40 => {
                     self.role_id = is.read_uint32()?;
                 },
-                26 => {
+                98 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_item_list)?;
                 },
-                24 => {
+                96 => {
                     self.grid_fight_item_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -101,9 +101,9 @@ impl ::protobuf::Message for GridFightSupplyRoleInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.role_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.role_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.role_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.grid_fight_item_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.grid_fight_item_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for GridFightSupplyRoleInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.role_id != 0 {
-            os.write_uint32(11, self.role_id)?;
+            os.write_uint32(5, self.role_id)?;
         }
-        os.write_repeated_packed_uint32(3, &self.grid_fight_item_list)?;
+        os.write_repeated_packed_uint32(12, &self.grid_fight_item_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSupplyRoleInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dGridFightSupplyRoleInfo.proto\"c\n\x17GridFightSupplyRoleInfo\x12\
-    \x17\n\x07role_id\x18\x0b\x20\x01(\rR\x06roleId\x12/\n\x14grid_fight_ite\
-    m_list\x18\x03\x20\x03(\rR\x11gridFightItemListb\x06proto3\
+    \x17\n\x07role_id\x18\x05\x20\x01(\rR\x06roleId\x12/\n\x14grid_fight_ite\
+    m_list\x18\x0c\x20\x03(\rR\x11gridFightItemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

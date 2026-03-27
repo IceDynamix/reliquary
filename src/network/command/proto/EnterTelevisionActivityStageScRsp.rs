@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterTelevisionActivityStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnterTelevisionActivityStageScRsp.EJADEEFGFJH)
-    pub EJADEEFGFJH: u32,
+    // @@protoc_insertion_point(field:EnterTelevisionActivityStageScRsp.LKCKAAHGGDD)
+    pub LKCKAAHGGDD: u32,
     // @@protoc_insertion_point(field:EnterTelevisionActivityStageScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:EnterTelevisionActivityStageScRsp.battle_info)
@@ -54,9 +54,9 @@ impl EnterTelevisionActivityStageScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EJADEEFGFJH",
-            |m: &EnterTelevisionActivityStageScRsp| { &m.EJADEEFGFJH },
-            |m: &mut EnterTelevisionActivityStageScRsp| { &mut m.EJADEEFGFJH },
+            "LKCKAAHGGDD",
+            |m: &EnterTelevisionActivityStageScRsp| { &m.LKCKAAHGGDD },
+            |m: &mut EnterTelevisionActivityStageScRsp| { &mut m.LKCKAAHGGDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for EnterTelevisionActivityStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.EJADEEFGFJH = is.read_uint32()?;
+                8 => {
+                    self.LKCKAAHGGDD = is.read_uint32()?;
                 },
-                80 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for EnterTelevisionActivityStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EJADEEFGFJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.EJADEEFGFJH);
+        if self.LKCKAAHGGDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.LKCKAAHGGDD);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for EnterTelevisionActivityStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EJADEEFGFJH != 0 {
-            os.write_uint32(9, self.EJADEEFGFJH)?;
+        if self.LKCKAAHGGDD != 0 {
+            os.write_uint32(1, self.LKCKAAHGGDD)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::Message for EnterTelevisionActivityStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.EJADEEFGFJH = 0;
+        self.LKCKAAHGGDD = 0;
         self.retcode = 0;
         self.battle_info.clear();
         self.special_fields.clear();
@@ -157,7 +157,7 @@ impl ::protobuf::Message for EnterTelevisionActivityStageScRsp {
 
     fn default_instance() -> &'static EnterTelevisionActivityStageScRsp {
         static instance: EnterTelevisionActivityStageScRsp = EnterTelevisionActivityStageScRsp {
-            EJADEEFGFJH: 0,
+            LKCKAAHGGDD: 0,
             retcode: 0,
             battle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterTelevisionActivityStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'EnterTelevisionActivityStageScRsp.proto\x1a\x15SceneBattleInfo.proto\
-    \"\x92\x01\n!EnterTelevisionActivityStageScRsp\x12\x20\n\x0bEJADEEFGFJH\
-    \x18\t\x20\x01(\rR\x0bEJADEEFGFJH\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
-    \x07retcode\x121\n\x0bbattle_info\x18\r\x20\x01(\x0b2\x10.SceneBattleInf\
-    oR\nbattleInfob\x06proto3\
+    \"\x92\x01\n!EnterTelevisionActivityStageScRsp\x12\x20\n\x0bLKCKAAHGGDD\
+    \x18\x01\x20\x01(\rR\x0bLKCKAAHGGDD\x12\x18\n\x07retcode\x18\x0e\x20\x01\
+    (\rR\x07retcode\x121\n\x0bbattle_info\x18\x04\x20\x01(\x0b2\x10.SceneBat\
+    tleInfoR\nbattleInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

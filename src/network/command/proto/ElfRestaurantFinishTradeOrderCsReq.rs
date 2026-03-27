@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ElfRestaurantFinishTradeOrderCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ElfRestaurantFinishTradeOrderCsReq.NEACAGJBCGM)
-    pub NEACAGJBCGM: u32,
+    // @@protoc_insertion_point(field:ElfRestaurantFinishTradeOrderCsReq.IAJKNHOFNOB)
+    pub IAJKNHOFNOB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ElfRestaurantFinishTradeOrderCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ElfRestaurantFinishTradeOrderCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NEACAGJBCGM",
-            |m: &ElfRestaurantFinishTradeOrderCsReq| { &m.NEACAGJBCGM },
-            |m: &mut ElfRestaurantFinishTradeOrderCsReq| { &mut m.NEACAGJBCGM },
+            "IAJKNHOFNOB",
+            |m: &ElfRestaurantFinishTradeOrderCsReq| { &m.IAJKNHOFNOB },
+            |m: &mut ElfRestaurantFinishTradeOrderCsReq| { &mut m.IAJKNHOFNOB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ElfRestaurantFinishTradeOrderCsReq>(
             "ElfRestaurantFinishTradeOrderCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ElfRestaurantFinishTradeOrderCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.NEACAGJBCGM = is.read_uint32()?;
+                16 => {
+                    self.IAJKNHOFNOB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ElfRestaurantFinishTradeOrderCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NEACAGJBCGM != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NEACAGJBCGM);
+        if self.IAJKNHOFNOB != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IAJKNHOFNOB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ElfRestaurantFinishTradeOrderCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NEACAGJBCGM != 0 {
-            os.write_uint32(9, self.NEACAGJBCGM)?;
+        if self.IAJKNHOFNOB != 0 {
+            os.write_uint32(2, self.IAJKNHOFNOB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ElfRestaurantFinishTradeOrderCsReq {
     }
 
     fn clear(&mut self) {
-        self.NEACAGJBCGM = 0;
+        self.IAJKNHOFNOB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ElfRestaurantFinishTradeOrderCsReq {
         static instance: ElfRestaurantFinishTradeOrderCsReq = ElfRestaurantFinishTradeOrderCsReq {
-            NEACAGJBCGM: 0,
+            IAJKNHOFNOB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantFinishTradeOrderCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(ElfRestaurantFinishTradeOrderCsReq.proto\"F\n\"ElfRestaurantFinishTra\
-    deOrderCsReq\x12\x20\n\x0bNEACAGJBCGM\x18\t\x20\x01(\rR\x0bNEACAGJBCGMb\
-    \x06proto3\
+    deOrderCsReq\x12\x20\n\x0bIAJKNHOFNOB\x18\x02\x20\x01(\rR\x0bIAJKNHOFNOB\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

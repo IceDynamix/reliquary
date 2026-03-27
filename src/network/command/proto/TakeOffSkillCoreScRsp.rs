@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeOffSkillCoreScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeOffSkillCoreScRsp.DLNKGDDEMCB)
-    pub DLNKGDDEMCB: ::protobuf::MessageField<super::HOPKPEICIPJ::HOPKPEICIPJ>,
-    // @@protoc_insertion_point(field:TakeOffSkillCoreScRsp.OPJNNAOJAGI)
-    pub OPJNNAOJAGI: ::protobuf::MessageField<super::LGMJLELAOAN::LGMJLELAOAN>,
+    // @@protoc_insertion_point(field:TakeOffSkillCoreScRsp.PBGOEKBIANO)
+    pub PBGOEKBIANO: ::protobuf::MessageField<super::HNJLHFJMCBJ::HNJLHFJMCBJ>,
+    // @@protoc_insertion_point(field:TakeOffSkillCoreScRsp.CELCKCMKJEB)
+    pub CELCKCMKJEB: ::protobuf::MessageField<super::CHEBBNJKNLE::CHEBBNJKNLE>,
     // @@protoc_insertion_point(field:TakeOffSkillCoreScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl TakeOffSkillCoreScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HOPKPEICIPJ::HOPKPEICIPJ>(
-            "DLNKGDDEMCB",
-            |m: &TakeOffSkillCoreScRsp| { &m.DLNKGDDEMCB },
-            |m: &mut TakeOffSkillCoreScRsp| { &mut m.DLNKGDDEMCB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HNJLHFJMCBJ::HNJLHFJMCBJ>(
+            "PBGOEKBIANO",
+            |m: &TakeOffSkillCoreScRsp| { &m.PBGOEKBIANO },
+            |m: &mut TakeOffSkillCoreScRsp| { &mut m.PBGOEKBIANO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LGMJLELAOAN::LGMJLELAOAN>(
-            "OPJNNAOJAGI",
-            |m: &TakeOffSkillCoreScRsp| { &m.OPJNNAOJAGI },
-            |m: &mut TakeOffSkillCoreScRsp| { &mut m.OPJNNAOJAGI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHEBBNJKNLE::CHEBBNJKNLE>(
+            "CELCKCMKJEB",
+            |m: &TakeOffSkillCoreScRsp| { &m.CELCKCMKJEB },
+            |m: &mut TakeOffSkillCoreScRsp| { &mut m.CELCKCMKJEB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -87,12 +87,12 @@ impl ::protobuf::Message for TakeOffSkillCoreScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLNKGDDEMCB)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBGOEKBIANO)?;
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPJNNAOJAGI)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CELCKCMKJEB)?;
                 },
-                80 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,16 +107,16 @@ impl ::protobuf::Message for TakeOffSkillCoreScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DLNKGDDEMCB.as_ref() {
+        if let Some(v) = self.PBGOEKBIANO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.OPJNNAOJAGI.as_ref() {
+        if let Some(v) = self.CELCKCMKJEB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for TakeOffSkillCoreScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DLNKGDDEMCB.as_ref() {
+        if let Some(v) = self.PBGOEKBIANO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.OPJNNAOJAGI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.CELCKCMKJEB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for TakeOffSkillCoreScRsp {
     }
 
     fn clear(&mut self) {
-        self.DLNKGDDEMCB.clear();
-        self.OPJNNAOJAGI.clear();
+        self.PBGOEKBIANO.clear();
+        self.CELCKCMKJEB.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeOffSkillCoreScRsp {
         static instance: TakeOffSkillCoreScRsp = TakeOffSkillCoreScRsp {
-            DLNKGDDEMCB: ::protobuf::MessageField::none(),
-            OPJNNAOJAGI: ::protobuf::MessageField::none(),
+            PBGOEKBIANO: ::protobuf::MessageField::none(),
+            CELCKCMKJEB: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeOffSkillCoreScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bTakeOffSkillCoreScRsp.proto\x1a\x11HOPKPEICIPJ.proto\x1a\x11LGMJLE\
-    LAOAN.proto\"\x91\x01\n\x15TakeOffSkillCoreScRsp\x12.\n\x0bDLNKGDDEMCB\
-    \x18\x02\x20\x01(\x0b2\x0c.HOPKPEICIPJR\x0bDLNKGDDEMCB\x12.\n\x0bOPJNNAO\
-    JAGI\x18\x05\x20\x01(\x0b2\x0c.LGMJLELAOANR\x0bOPJNNAOJAGI\x12\x18\n\x07\
-    retcode\x18\n\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1bTakeOffSkillCoreScRsp.proto\x1a\x11CHEBBNJKNLE.proto\x1a\x11HNJLHF\
+    JMCBJ.proto\"\x91\x01\n\x15TakeOffSkillCoreScRsp\x12.\n\x0bPBGOEKBIANO\
+    \x18\x02\x20\x01(\x0b2\x0c.HNJLHFJMCBJR\x0bPBGOEKBIANO\x12.\n\x0bCELCKCM\
+    KJEB\x18\x0c\x20\x01(\x0b2\x0c.CHEBBNJKNLER\x0bCELCKCMKJEB\x12\x18\n\x07\
+    retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::HOPKPEICIPJ::file_descriptor().clone());
-            deps.push(super::LGMJLELAOAN::file_descriptor().clone());
+            deps.push(super::CHEBBNJKNLE::file_descriptor().clone());
+            deps.push(super::HNJLHFJMCBJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TakeOffSkillCoreScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

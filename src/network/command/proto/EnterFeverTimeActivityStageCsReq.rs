@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterFeverTimeActivityStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.MLPKPMKIDAG)
-    pub MLPKPMKIDAG: u32,
-    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<super::FeverTimeAvatar::FeverTimeAvatar>,
-    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.EHNKHMDJACK)
-    pub EHNKHMDJACK: u32,
+    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.id)
+    pub id: u32,
+    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.EPAICOLIFDO)
+    pub EPAICOLIFDO: u32,
+    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.FJPLEFAKONO)
+    pub FJPLEFAKONO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterFeverTimeActivityStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl EnterFeverTimeActivityStageCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLPKPMKIDAG",
-            |m: &EnterFeverTimeActivityStageCsReq| { &m.MLPKPMKIDAG },
-            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.MLPKPMKIDAG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &EnterFeverTimeActivityStageCsReq| { &m.id },
-            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &EnterFeverTimeActivityStageCsReq| { &m.avatar_list },
             |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHNKHMDJACK",
-            |m: &EnterFeverTimeActivityStageCsReq| { &m.EHNKHMDJACK },
-            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.EHNKHMDJACK },
+            "id",
+            |m: &EnterFeverTimeActivityStageCsReq| { &m.id },
+            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EPAICOLIFDO",
+            |m: &EnterFeverTimeActivityStageCsReq| { &m.EPAICOLIFDO },
+            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.EPAICOLIFDO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FJPLEFAKONO",
+            |m: &EnterFeverTimeActivityStageCsReq| { &m.FJPLEFAKONO },
+            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.FJPLEFAKONO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterFeverTimeActivityStageCsReq>(
             "EnterFeverTimeActivityStageCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.MLPKPMKIDAG = is.read_uint32()?;
+                98 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
                 72 => {
                     self.id = is.read_uint32()?;
                 },
-                66 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
                 8 => {
-                    self.EHNKHMDJACK = is.read_uint32()?;
+                    self.EPAICOLIFDO = is.read_uint32()?;
+                },
+                48 => {
+                    self.FJPLEFAKONO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MLPKPMKIDAG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.MLPKPMKIDAG);
-        }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.id);
-        }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.EHNKHMDJACK != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EHNKHMDJACK);
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.id);
+        }
+        if self.EPAICOLIFDO != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.EPAICOLIFDO);
+        }
+        if self.FJPLEFAKONO != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.FJPLEFAKONO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MLPKPMKIDAG != 0 {
-            os.write_uint32(11, self.MLPKPMKIDAG)?;
-        }
+        for v in &self.avatar_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
         if self.id != 0 {
             os.write_uint32(9, self.id)?;
         }
-        for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.EHNKHMDJACK != 0 {
-            os.write_uint32(1, self.EHNKHMDJACK)?;
+        if self.EPAICOLIFDO != 0 {
+            os.write_uint32(1, self.EPAICOLIFDO)?;
+        }
+        if self.FJPLEFAKONO != 0 {
+            os.write_uint32(6, self.FJPLEFAKONO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.MLPKPMKIDAG = 0;
-        self.id = 0;
         self.avatar_list.clear();
-        self.EHNKHMDJACK = 0;
+        self.id = 0;
+        self.EPAICOLIFDO = 0;
+        self.FJPLEFAKONO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterFeverTimeActivityStageCsReq {
         static instance: EnterFeverTimeActivityStageCsReq = EnterFeverTimeActivityStageCsReq {
-            MLPKPMKIDAG: 0,
-            id: 0,
             avatar_list: ::std::vec::Vec::new(),
-            EHNKHMDJACK: 0,
+            id: 0,
+            EPAICOLIFDO: 0,
+            FJPLEFAKONO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterFeverTimeActivityStageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&EnterFeverTimeActivityStageCsReq.proto\x1a\x15FeverTimeAvatar.proto\"\
-    \xa9\x01\n\x20EnterFeverTimeActivityStageCsReq\x12\x20\n\x0bMLPKPMKIDAG\
-    \x18\x0b\x20\x01(\rR\x0bMLPKPMKIDAG\x12\x0e\n\x02id\x18\t\x20\x01(\rR\
-    \x02id\x121\n\x0bavatar_list\x18\x08\x20\x03(\x0b2\x10.FeverTimeAvatarR\
-    \navatarList\x12\x20\n\x0bEHNKHMDJACK\x18\x01\x20\x01(\rR\x0bEHNKHMDJACK\
-    b\x06proto3\
+    \xa9\x01\n\x20EnterFeverTimeActivityStageCsReq\x121\n\x0bavatar_list\x18\
+    \x0c\x20\x03(\x0b2\x10.FeverTimeAvatarR\navatarList\x12\x0e\n\x02id\x18\
+    \t\x20\x01(\rR\x02id\x12\x20\n\x0bEPAICOLIFDO\x18\x01\x20\x01(\rR\x0bEPA\
+    ICOLIFDO\x12\x20\n\x0bFJPLEFAKONO\x18\x06\x20\x01(\rR\x0bFJPLEFAKONOb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

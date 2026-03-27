@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RefreshTriggerByClientScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.refresh_trigger)
-    pub refresh_trigger: bool,
-    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.trigger_entity_id)
-    pub trigger_entity_id: u32,
     // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.trigger_entity_id)
+    pub trigger_entity_id: u32,
+    // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.refresh_trigger)
+    pub refresh_trigger: bool,
     // @@protoc_insertion_point(field:RefreshTriggerByClientScRsp.trigger_name)
     pub trigger_name: ::std::string::String,
     // special fields
@@ -56,9 +56,9 @@ impl RefreshTriggerByClientScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "refresh_trigger",
-            |m: &RefreshTriggerByClientScRsp| { &m.refresh_trigger },
-            |m: &mut RefreshTriggerByClientScRsp| { &mut m.refresh_trigger },
+            "retcode",
+            |m: &RefreshTriggerByClientScRsp| { &m.retcode },
+            |m: &mut RefreshTriggerByClientScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trigger_entity_id",
@@ -66,9 +66,9 @@ impl RefreshTriggerByClientScRsp {
             |m: &mut RefreshTriggerByClientScRsp| { &mut m.trigger_entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RefreshTriggerByClientScRsp| { &m.retcode },
-            |m: &mut RefreshTriggerByClientScRsp| { &mut m.retcode },
+            "refresh_trigger",
+            |m: &RefreshTriggerByClientScRsp| { &m.refresh_trigger },
+            |m: &mut RefreshTriggerByClientScRsp| { &mut m.refresh_trigger },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trigger_name",
@@ -94,15 +94,15 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 88 => {
-                    self.refresh_trigger = is.read_bool()?;
-                },
-                48 => {
-                    self.trigger_entity_id = is.read_uint32()?;
-                },
-                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
+                8 => {
+                    self.trigger_entity_id = is.read_uint32()?;
+                },
+                56 => {
+                    self.refresh_trigger = is.read_bool()?;
+                },
+                50 => {
                     self.trigger_name = is.read_string()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if self.trigger_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.trigger_entity_id);
+        }
         if self.refresh_trigger != false {
             my_size += 1 + 1;
         }
-        if self.trigger_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.trigger_entity_id);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
         if !self.trigger_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(1, &self.trigger_name);
+            my_size += ::protobuf::rt::string_size(6, &self.trigger_name);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.refresh_trigger != false {
-            os.write_bool(11, self.refresh_trigger)?;
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
         if self.trigger_entity_id != 0 {
-            os.write_uint32(6, self.trigger_entity_id)?;
+            os.write_uint32(1, self.trigger_entity_id)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+        if self.refresh_trigger != false {
+            os.write_bool(7, self.refresh_trigger)?;
         }
         if !self.trigger_name.is_empty() {
-            os.write_string(1, &self.trigger_name)?;
+            os.write_string(6, &self.trigger_name)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,18 +164,18 @@ impl ::protobuf::Message for RefreshTriggerByClientScRsp {
     }
 
     fn clear(&mut self) {
-        self.refresh_trigger = false;
-        self.trigger_entity_id = 0;
         self.retcode = 0;
+        self.trigger_entity_id = 0;
+        self.refresh_trigger = false;
         self.trigger_name.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RefreshTriggerByClientScRsp {
         static instance: RefreshTriggerByClientScRsp = RefreshTriggerByClientScRsp {
-            refresh_trigger: false,
-            trigger_entity_id: 0,
             retcode: 0,
+            trigger_entity_id: 0,
+            refresh_trigger: false,
             trigger_name: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for RefreshTriggerByClientScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RefreshTriggerByClientScRsp.proto\"\xaf\x01\n\x1bRefreshTriggerByClie\
-    ntScRsp\x12'\n\x0frefresh_trigger\x18\x0b\x20\x01(\x08R\x0erefreshTrigge\
-    r\x12*\n\x11trigger_entity_id\x18\x06\x20\x01(\rR\x0ftriggerEntityId\x12\
-    \x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12!\n\x0ctrigger_name\
-    \x18\x01\x20\x01(\tR\x0btriggerNameb\x06proto3\
+    ntScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12*\n\x11tr\
+    igger_entity_id\x18\x01\x20\x01(\rR\x0ftriggerEntityId\x12'\n\x0frefresh\
+    _trigger\x18\x07\x20\x01(\x08R\x0erefreshTrigger\x12!\n\x0ctrigger_name\
+    \x18\x06\x20\x01(\tR\x0btriggerNameb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

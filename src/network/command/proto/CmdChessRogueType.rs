@@ -27,164 +27,164 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdChessRogueType)
 pub enum CmdChessRogueType {
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_GKJBAODJMJG)
-    CPNMDALEPIH_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_LDIKGGLAICA)
-    CPNMDALEPIH_LDIKGGLAICA = 5432,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_FFBHLNGJLNH)
-    CPNMDALEPIH_FFBHLNGJLNH = 5442,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_BJBMMFPNDPM)
-    CPNMDALEPIH_BJBMMFPNDPM = 5425,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_JFJBABKPAOK)
-    CPNMDALEPIH_JFJBABKPAOK = 5486,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_OMKCKNEABLF)
-    CPNMDALEPIH_OMKCKNEABLF = 5443,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_HGDCMKFKNIA)
-    CPNMDALEPIH_HGDCMKFKNIA = 5520,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_LDBCHJECHIH)
-    CPNMDALEPIH_LDBCHJECHIH = 5594,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_COPPHBIGFAB)
-    CPNMDALEPIH_COPPHBIGFAB = 5537,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_KMDGEBLMEGH)
-    CPNMDALEPIH_KMDGEBLMEGH = 5485,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_PKLLEFDDAEK)
-    CPNMDALEPIH_PKLLEFDDAEK = 5588,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_ECEEGCPPBMI)
-    CPNMDALEPIH_ECEEGCPPBMI = 5579,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_JLEJALIOGDK)
-    CPNMDALEPIH_JLEJALIOGDK = 5596,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_PKLDNFCJFOO)
-    CPNMDALEPIH_PKLDNFCJFOO = 5549,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_OAFKKLKKKNA)
-    CPNMDALEPIH_OAFKKLKKKNA = 5412,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_LCCNPPCCIIN)
-    CPNMDALEPIH_LCCNPPCCIIN = 5555,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_NJGMIENGHNE)
-    CPNMDALEPIH_NJGMIENGHNE = 5477,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_NGJDDIDEHOP)
-    CPNMDALEPIH_NGJDDIDEHOP = 5439,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_JDIJJNFCCBH)
-    CPNMDALEPIH_JDIJJNFCCBH = 5539,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_CIFLKIEDCGB)
-    CPNMDALEPIH_CIFLKIEDCGB = 5573,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_FNKPOCHHOIO)
-    CPNMDALEPIH_FNKPOCHHOIO = 5544,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_PKINKPFAJDD)
-    CPNMDALEPIH_PKINKPFAJDD = 5578,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_EMBCGHIPIKD)
-    CPNMDALEPIH_EMBCGHIPIKD = 5500,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_DLGJLHOLAOG)
-    CPNMDALEPIH_DLGJLHOLAOG = 5509,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_CNMGLKMDBLL)
-    CPNMDALEPIH_CNMGLKMDBLL = 5590,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_LCCHEIOPENL)
-    CPNMDALEPIH_LCCHEIOPENL = 5493,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_ANPCPBOCNIH)
-    CPNMDALEPIH_ANPCPBOCNIH = 5424,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_GOKGPIFIJAA)
-    CPNMDALEPIH_GOKGPIFIJAA = 5416,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_ILBAFAOFMEF)
-    CPNMDALEPIH_ILBAFAOFMEF = 5465,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_NBINHJPNHBN)
-    CPNMDALEPIH_NBINHJPNHBN = 5580,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_JHIFAGLIELE)
-    CPNMDALEPIH_JHIFAGLIELE = 5523,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_FLFLNCICGFM)
-    CPNMDALEPIH_FLFLNCICGFM = 5563,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_OJAMCHAPDLK)
-    CPNMDALEPIH_OJAMCHAPDLK = 5448,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_BECHIDKIMFM)
-    CPNMDALEPIH_BECHIDKIMFM = 5499,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_KNPDOEBGALH)
-    CPNMDALEPIH_KNPDOEBGALH = 5533,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_MDBCDDGMANC)
-    CPNMDALEPIH_MDBCDDGMANC = 5569,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_LECCJOPFLLG)
-    CPNMDALEPIH_LECCJOPFLLG = 5577,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_ILHFDCGGJLI)
-    CPNMDALEPIH_ILHFDCGGJLI = 5496,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_GLCJOIHKPKD)
-    CPNMDALEPIH_GLCJOIHKPKD = 5429,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_LABDJAIKGDJ)
-    CPNMDALEPIH_LABDJAIKGDJ = 5456,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_JIOMIBMMEJN)
-    CPNMDALEPIH_JIOMIBMMEJN = 5430,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_GBINIHJGEEO)
-    CPNMDALEPIH_GBINIHJGEEO = 5515,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_ACJBLDKMIKM)
-    CPNMDALEPIH_ACJBLDKMIKM = 5406,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_KDCEBICIAGH)
-    CPNMDALEPIH_KDCEBICIAGH = 5567,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_KPOEPNBMMPH)
-    CPNMDALEPIH_KPOEPNBMMPH = 5511,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_DJJCJMEINAN)
-    CPNMDALEPIH_DJJCJMEINAN = 5411,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_JCKLBGLMHDM)
-    CPNMDALEPIH_JCKLBGLMHDM = 5440,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_OHIAEDGDFHM)
-    CPNMDALEPIH_OHIAEDGDFHM = 5481,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_HHPBJHFBGED)
-    CPNMDALEPIH_HHPBJHFBGED = 5455,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_MKDHOPEOLGF)
-    CPNMDALEPIH_MKDHOPEOLGF = 5550,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_AHEHFKIEPCI)
-    CPNMDALEPIH_AHEHFKIEPCI = 5423,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_OJLAKEFMIIK)
-    CPNMDALEPIH_OJLAKEFMIIK = 5552,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_DLLPOHKGGNN)
-    CPNMDALEPIH_DLLPOHKGGNN = 5403,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_GGADLICFCME)
-    CPNMDALEPIH_GGADLICFCME = 5584,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_IMAPJCJGOEE)
-    CPNMDALEPIH_IMAPJCJGOEE = 5557,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_KHINBADNGON)
-    CPNMDALEPIH_KHINBADNGON = 5482,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_BBBONEFDADK)
-    CPNMDALEPIH_BBBONEFDADK = 5434,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_CCDIOEFGIGJ)
-    CPNMDALEPIH_CCDIOEFGIGJ = 5566,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_FAHELCOEHBD)
-    CPNMDALEPIH_FAHELCOEHBD = 5458,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_OJKOGPBLDDN)
-    CPNMDALEPIH_OJKOGPBLDDN = 5583,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_AEFNECDIIBA)
-    CPNMDALEPIH_AEFNECDIIBA = 5501,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_GMNADLAPGHG)
-    CPNMDALEPIH_GMNADLAPGHG = 5540,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_PEHAKFOKBEB)
-    CPNMDALEPIH_PEHAKFOKBEB = 5503,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_HIDFFHPODCC)
-    CPNMDALEPIH_HIDFFHPODCC = 5415,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_NAMOCEFHNEA)
-    CPNMDALEPIH_NAMOCEFHNEA = 5571,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_NNFHOPNGHMN)
-    CPNMDALEPIH_NNFHOPNGHMN = 5404,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_APFKAOJNOBE)
-    CPNMDALEPIH_APFKAOJNOBE = 5548,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_BIODHAHAOJK)
-    CPNMDALEPIH_BIODHAHAOJK = 5410,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_FMFJJHCEOFO)
-    CPNMDALEPIH_FMFJJHCEOFO = 5489,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_AHINILHHNKM)
-    CPNMDALEPIH_AHINILHHNKM = 5488,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_GGJMLINKCIC)
-    CPNMDALEPIH_GGJMLINKCIC = 5558,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_INNCJOEEINE)
-    CPNMDALEPIH_INNCJOEEINE = 5417,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_AIDKNLIKODL)
-    CPNMDALEPIH_AIDKNLIKODL = 5460,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_IGEEOGAEAJA)
-    CPNMDALEPIH_IGEEOGAEAJA = 5401,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_BMMNDBOIONJ)
-    CPNMDALEPIH_BMMNDBOIONJ = 5574,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_KIBEGOCDDPA)
-    CPNMDALEPIH_KIBEGOCDDPA = 5524,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_CKNLBEMMDGC)
-    CPNMDALEPIH_CKNLBEMMDGC = 5521,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_GBLCONIOGNK)
-    CPNMDALEPIH_GBLCONIOGNK = 5473,
-    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CPNMDALEPIH_DDMJJFHEBIF)
-    CPNMDALEPIH_DDMJJFHEBIF = 5446,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_MNFEPONEDDJ)
+    CmdChessRogueType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_APBLBPFDEGH)
+    CmdChessRogueType_APBLBPFDEGH = 5547,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_HCJDDLCDJOE)
+    CmdChessRogueType_HCJDDLCDJOE = 5538,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_OLFMCBCINFH)
+    CmdChessRogueType_OLFMCBCINFH = 5553,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_BDDEBHAJMMF)
+    CmdChessRogueType_BDDEBHAJMMF = 5584,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_ICAJINGOAON)
+    CmdChessRogueType_ICAJINGOAON = 5594,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_KNICDHMNDOB)
+    CmdChessRogueType_KNICDHMNDOB = 5449,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_MKEHCFHPFDD)
+    CmdChessRogueType_MKEHCFHPFDD = 5572,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_COIAEEBPFNN)
+    CmdChessRogueType_COIAEEBPFNN = 5492,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_NEMEENHMODE)
+    CmdChessRogueType_NEMEENHMODE = 5402,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_CEBAPDNOGKP)
+    CmdChessRogueType_CEBAPDNOGKP = 5532,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_AJPDHKIADCE)
+    CmdChessRogueType_AJPDHKIADCE = 5574,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_HCJJPLAFBIH)
+    CmdChessRogueType_HCJJPLAFBIH = 5507,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_JNEPALNMMHL)
+    CmdChessRogueType_JNEPALNMMHL = 5582,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_JBPBJDJONOA)
+    CmdChessRogueType_JBPBJDJONOA = 5407,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_HLIDPKOEHDD)
+    CmdChessRogueType_HLIDPKOEHDD = 5481,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_NIFCKCCHNEC)
+    CmdChessRogueType_NIFCKCCHNEC = 5510,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_ICAEGODDABJ)
+    CmdChessRogueType_ICAEGODDABJ = 5536,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_FKIEDOMAJNC)
+    CmdChessRogueType_FKIEDOMAJNC = 5560,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_CAHMDIGNFBJ)
+    CmdChessRogueType_CAHMDIGNFBJ = 5556,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_BOLNFLCBOAI)
+    CmdChessRogueType_BOLNFLCBOAI = 5471,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_HDJFFLFLEBE)
+    CmdChessRogueType_HDJFFLFLEBE = 5591,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_NEAKEDLNBBH)
+    CmdChessRogueType_NEAKEDLNBBH = 5501,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_CPCPJMHMAGM)
+    CmdChessRogueType_CPCPJMHMAGM = 5420,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_FIAJGDJPNKK)
+    CmdChessRogueType_FIAJGDJPNKK = 5600,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_OGAPEDJICJP)
+    CmdChessRogueType_OGAPEDJICJP = 5595,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_NOMJOEAAEJP)
+    CmdChessRogueType_NOMJOEAAEJP = 5575,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_LNNLECJHHDC)
+    CmdChessRogueType_LNNLECJHHDC = 5558,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_OFEFBLENFKH)
+    CmdChessRogueType_OFEFBLENFKH = 5433,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_ADFGONHLCAO)
+    CmdChessRogueType_ADFGONHLCAO = 5569,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_ODMBEHBJDEE)
+    CmdChessRogueType_ODMBEHBJDEE = 5559,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_CAFIDCDFCKL)
+    CmdChessRogueType_CAFIDCDFCKL = 5469,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_CKDIGHHELCM)
+    CmdChessRogueType_CKDIGHHELCM = 5425,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_JLBMLMJCLJP)
+    CmdChessRogueType_JLBMLMJCLJP = 5487,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_BFECDDOJHGD)
+    CmdChessRogueType_BFECDDOJHGD = 5477,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_LGADOJGNCFP)
+    CmdChessRogueType_LGADOJGNCFP = 5529,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_KBEDDJOIKKE)
+    CmdChessRogueType_KBEDDJOIKKE = 5539,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_PFKLFOHMNJP)
+    CmdChessRogueType_PFKLFOHMNJP = 5446,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_FAMMFKMFHFI)
+    CmdChessRogueType_FAMMFKMFHFI = 5434,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_NDOLCDLAOMJ)
+    CmdChessRogueType_NDOLCDLAOMJ = 5514,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_PKENEMLKIAI)
+    CmdChessRogueType_PKENEMLKIAI = 5511,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_MMKGACAILDA)
+    CmdChessRogueType_MMKGACAILDA = 5543,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_AOFLBDDDFDB)
+    CmdChessRogueType_AOFLBDDDFDB = 5541,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_EDIFFAEDKDA)
+    CmdChessRogueType_EDIFFAEDKDA = 5401,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_MEKKLFCLJMN)
+    CmdChessRogueType_MEKKLFCLJMN = 5583,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_AHNGOJLIOIO)
+    CmdChessRogueType_AHNGOJLIOIO = 5528,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_MFOLIJMHJAN)
+    CmdChessRogueType_MFOLIJMHJAN = 5472,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_FINCCAGGFBG)
+    CmdChessRogueType_FINCCAGGFBG = 5488,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_AMNGDPGIEPL)
+    CmdChessRogueType_AMNGDPGIEPL = 5438,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_GGJBPLKPMGK)
+    CmdChessRogueType_GGJBPLKPMGK = 5451,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_HANHOKHKICG)
+    CmdChessRogueType_HANHOKHKICG = 5430,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_MGCCLPAKCKF)
+    CmdChessRogueType_MGCCLPAKCKF = 5439,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_NJMPOIEHAMM)
+    CmdChessRogueType_NJMPOIEHAMM = 5412,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_OKHJMHAHHJJ)
+    CmdChessRogueType_OKHJMHAHHJJ = 5500,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_HKHBJABHFAK)
+    CmdChessRogueType_HKHBJABHFAK = 5497,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_OLBMNECCNLC)
+    CmdChessRogueType_OLBMNECCNLC = 5533,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_LCLMLAHEMOO)
+    CmdChessRogueType_LCLMLAHEMOO = 5441,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_ONKGHEFAMKH)
+    CmdChessRogueType_ONKGHEFAMKH = 5432,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_DKJOMHIIONE)
+    CmdChessRogueType_DKJOMHIIONE = 5403,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_NCJMPABANCJ)
+    CmdChessRogueType_NCJMPABANCJ = 5535,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_BODODCJBHFE)
+    CmdChessRogueType_BODODCJBHFE = 5496,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_NAHHFPDHPBA)
+    CmdChessRogueType_NAHHFPDHPBA = 5454,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_DOCOKNGABFL)
+    CmdChessRogueType_DOCOKNGABFL = 5517,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_HPJIFGCMLEO)
+    CmdChessRogueType_HPJIFGCMLEO = 5413,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_CKJEADGMBNH)
+    CmdChessRogueType_CKJEADGMBNH = 5521,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_OJCEACONKHP)
+    CmdChessRogueType_OJCEACONKHP = 5485,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_MFDINMIBDFB)
+    CmdChessRogueType_MFDINMIBDFB = 5415,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_KFEPOGMCKEM)
+    CmdChessRogueType_KFEPOGMCKEM = 5427,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_PKEJHPGCHCO)
+    CmdChessRogueType_PKEJHPGCHCO = 5587,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_JKHEOCPFCFB)
+    CmdChessRogueType_JKHEOCPFCFB = 5588,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_LAMMDKEAFCH)
+    CmdChessRogueType_LAMMDKEAFCH = 5524,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_HGBBFKLIPHA)
+    CmdChessRogueType_HGBBFKLIPHA = 5404,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_OLAOFFODGAH)
+    CmdChessRogueType_OLAOFFODGAH = 5493,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_OGKDEDMDBJO)
+    CmdChessRogueType_OGKDEDMDBJO = 5494,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_BKGFOLBPGAL)
+    CmdChessRogueType_BKGFOLBPGAL = 5593,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_OMFIJOMANBF)
+    CmdChessRogueType_OMFIJOMANBF = 5424,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_JBIODJCJLIC)
+    CmdChessRogueType_JBIODJCJLIC = 5509,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_AGNEIMEPKCN)
+    CmdChessRogueType_AGNEIMEPKCN = 5480,
+    // @@protoc_insertion_point(enum_value:CmdChessRogueType.CmdChessRogueType_KAHHIKGODDP)
+    CmdChessRogueType_KAHHIKGODDP = 5468,
 }
 
 impl ::protobuf::Enum for CmdChessRogueType {
@@ -196,254 +196,254 @@ impl ::protobuf::Enum for CmdChessRogueType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdChessRogueType> {
         match value {
-            0 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GKJBAODJMJG),
-            5432 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LDIKGGLAICA),
-            5442 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_FFBHLNGJLNH),
-            5425 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_BJBMMFPNDPM),
-            5486 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JFJBABKPAOK),
-            5443 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OMKCKNEABLF),
-            5520 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_HGDCMKFKNIA),
-            5594 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LDBCHJECHIH),
-            5537 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_COPPHBIGFAB),
-            5485 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KMDGEBLMEGH),
-            5588 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_PKLLEFDDAEK),
-            5579 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_ECEEGCPPBMI),
-            5596 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JLEJALIOGDK),
-            5549 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_PKLDNFCJFOO),
-            5412 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OAFKKLKKKNA),
-            5555 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LCCNPPCCIIN),
-            5477 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_NJGMIENGHNE),
-            5439 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_NGJDDIDEHOP),
-            5539 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JDIJJNFCCBH),
-            5573 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_CIFLKIEDCGB),
-            5544 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_FNKPOCHHOIO),
-            5578 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_PKINKPFAJDD),
-            5500 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_EMBCGHIPIKD),
-            5509 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_DLGJLHOLAOG),
-            5590 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_CNMGLKMDBLL),
-            5493 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LCCHEIOPENL),
-            5424 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_ANPCPBOCNIH),
-            5416 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GOKGPIFIJAA),
-            5465 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_ILBAFAOFMEF),
-            5580 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_NBINHJPNHBN),
-            5523 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JHIFAGLIELE),
-            5563 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_FLFLNCICGFM),
-            5448 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OJAMCHAPDLK),
-            5499 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_BECHIDKIMFM),
-            5533 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KNPDOEBGALH),
-            5569 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_MDBCDDGMANC),
-            5577 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LECCJOPFLLG),
-            5496 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_ILHFDCGGJLI),
-            5429 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GLCJOIHKPKD),
-            5456 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LABDJAIKGDJ),
-            5430 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JIOMIBMMEJN),
-            5515 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GBINIHJGEEO),
-            5406 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_ACJBLDKMIKM),
-            5567 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KDCEBICIAGH),
-            5511 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KPOEPNBMMPH),
-            5411 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_DJJCJMEINAN),
-            5440 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JCKLBGLMHDM),
-            5481 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OHIAEDGDFHM),
-            5455 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_HHPBJHFBGED),
-            5550 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_MKDHOPEOLGF),
-            5423 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_AHEHFKIEPCI),
-            5552 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OJLAKEFMIIK),
-            5403 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_DLLPOHKGGNN),
-            5584 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GGADLICFCME),
-            5557 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_IMAPJCJGOEE),
-            5482 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KHINBADNGON),
-            5434 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_BBBONEFDADK),
-            5566 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_CCDIOEFGIGJ),
-            5458 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_FAHELCOEHBD),
-            5583 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OJKOGPBLDDN),
-            5501 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_AEFNECDIIBA),
-            5540 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GMNADLAPGHG),
-            5503 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_PEHAKFOKBEB),
-            5415 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_HIDFFHPODCC),
-            5571 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_NAMOCEFHNEA),
-            5404 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_NNFHOPNGHMN),
-            5548 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_APFKAOJNOBE),
-            5410 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_BIODHAHAOJK),
-            5489 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_FMFJJHCEOFO),
-            5488 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_AHINILHHNKM),
-            5558 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GGJMLINKCIC),
-            5417 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_INNCJOEEINE),
-            5460 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_AIDKNLIKODL),
-            5401 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_IGEEOGAEAJA),
-            5574 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_BMMNDBOIONJ),
-            5524 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KIBEGOCDDPA),
-            5521 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_CKNLBEMMDGC),
-            5473 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GBLCONIOGNK),
-            5446 => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_DDMJJFHEBIF),
+            0 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MNFEPONEDDJ),
+            5547 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_APBLBPFDEGH),
+            5538 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HCJDDLCDJOE),
+            5553 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OLFMCBCINFH),
+            5584 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_BDDEBHAJMMF),
+            5594 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_ICAJINGOAON),
+            5449 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_KNICDHMNDOB),
+            5572 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MKEHCFHPFDD),
+            5492 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_COIAEEBPFNN),
+            5402 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NEMEENHMODE),
+            5532 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CEBAPDNOGKP),
+            5574 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_AJPDHKIADCE),
+            5507 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HCJJPLAFBIH),
+            5582 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_JNEPALNMMHL),
+            5407 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_JBPBJDJONOA),
+            5481 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HLIDPKOEHDD),
+            5510 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NIFCKCCHNEC),
+            5536 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_ICAEGODDABJ),
+            5560 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_FKIEDOMAJNC),
+            5556 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CAHMDIGNFBJ),
+            5471 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_BOLNFLCBOAI),
+            5591 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HDJFFLFLEBE),
+            5501 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NEAKEDLNBBH),
+            5420 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CPCPJMHMAGM),
+            5600 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_FIAJGDJPNKK),
+            5595 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OGAPEDJICJP),
+            5575 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NOMJOEAAEJP),
+            5558 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_LNNLECJHHDC),
+            5433 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OFEFBLENFKH),
+            5569 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_ADFGONHLCAO),
+            5559 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_ODMBEHBJDEE),
+            5469 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CAFIDCDFCKL),
+            5425 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CKDIGHHELCM),
+            5487 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_JLBMLMJCLJP),
+            5477 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_BFECDDOJHGD),
+            5529 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_LGADOJGNCFP),
+            5539 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_KBEDDJOIKKE),
+            5446 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_PFKLFOHMNJP),
+            5434 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_FAMMFKMFHFI),
+            5514 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NDOLCDLAOMJ),
+            5511 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_PKENEMLKIAI),
+            5543 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MMKGACAILDA),
+            5541 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_AOFLBDDDFDB),
+            5401 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_EDIFFAEDKDA),
+            5583 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MEKKLFCLJMN),
+            5528 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_AHNGOJLIOIO),
+            5472 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MFOLIJMHJAN),
+            5488 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_FINCCAGGFBG),
+            5438 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_AMNGDPGIEPL),
+            5451 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_GGJBPLKPMGK),
+            5430 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HANHOKHKICG),
+            5439 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MGCCLPAKCKF),
+            5412 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NJMPOIEHAMM),
+            5500 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OKHJMHAHHJJ),
+            5497 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HKHBJABHFAK),
+            5533 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OLBMNECCNLC),
+            5441 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_LCLMLAHEMOO),
+            5432 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_ONKGHEFAMKH),
+            5403 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_DKJOMHIIONE),
+            5535 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NCJMPABANCJ),
+            5496 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_BODODCJBHFE),
+            5454 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NAHHFPDHPBA),
+            5517 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_DOCOKNGABFL),
+            5413 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HPJIFGCMLEO),
+            5521 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CKJEADGMBNH),
+            5485 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OJCEACONKHP),
+            5415 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MFDINMIBDFB),
+            5427 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_KFEPOGMCKEM),
+            5587 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_PKEJHPGCHCO),
+            5588 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_JKHEOCPFCFB),
+            5524 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_LAMMDKEAFCH),
+            5404 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HGBBFKLIPHA),
+            5493 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OLAOFFODGAH),
+            5494 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OGKDEDMDBJO),
+            5593 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_BKGFOLBPGAL),
+            5424 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OMFIJOMANBF),
+            5509 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_JBIODJCJLIC),
+            5480 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_AGNEIMEPKCN),
+            5468 => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_KAHHIKGODDP),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdChessRogueType> {
         match str {
-            "CPNMDALEPIH_GKJBAODJMJG" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GKJBAODJMJG),
-            "CPNMDALEPIH_LDIKGGLAICA" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LDIKGGLAICA),
-            "CPNMDALEPIH_FFBHLNGJLNH" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_FFBHLNGJLNH),
-            "CPNMDALEPIH_BJBMMFPNDPM" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_BJBMMFPNDPM),
-            "CPNMDALEPIH_JFJBABKPAOK" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JFJBABKPAOK),
-            "CPNMDALEPIH_OMKCKNEABLF" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OMKCKNEABLF),
-            "CPNMDALEPIH_HGDCMKFKNIA" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_HGDCMKFKNIA),
-            "CPNMDALEPIH_LDBCHJECHIH" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LDBCHJECHIH),
-            "CPNMDALEPIH_COPPHBIGFAB" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_COPPHBIGFAB),
-            "CPNMDALEPIH_KMDGEBLMEGH" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KMDGEBLMEGH),
-            "CPNMDALEPIH_PKLLEFDDAEK" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_PKLLEFDDAEK),
-            "CPNMDALEPIH_ECEEGCPPBMI" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_ECEEGCPPBMI),
-            "CPNMDALEPIH_JLEJALIOGDK" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JLEJALIOGDK),
-            "CPNMDALEPIH_PKLDNFCJFOO" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_PKLDNFCJFOO),
-            "CPNMDALEPIH_OAFKKLKKKNA" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OAFKKLKKKNA),
-            "CPNMDALEPIH_LCCNPPCCIIN" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LCCNPPCCIIN),
-            "CPNMDALEPIH_NJGMIENGHNE" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_NJGMIENGHNE),
-            "CPNMDALEPIH_NGJDDIDEHOP" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_NGJDDIDEHOP),
-            "CPNMDALEPIH_JDIJJNFCCBH" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JDIJJNFCCBH),
-            "CPNMDALEPIH_CIFLKIEDCGB" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_CIFLKIEDCGB),
-            "CPNMDALEPIH_FNKPOCHHOIO" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_FNKPOCHHOIO),
-            "CPNMDALEPIH_PKINKPFAJDD" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_PKINKPFAJDD),
-            "CPNMDALEPIH_EMBCGHIPIKD" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_EMBCGHIPIKD),
-            "CPNMDALEPIH_DLGJLHOLAOG" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_DLGJLHOLAOG),
-            "CPNMDALEPIH_CNMGLKMDBLL" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_CNMGLKMDBLL),
-            "CPNMDALEPIH_LCCHEIOPENL" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LCCHEIOPENL),
-            "CPNMDALEPIH_ANPCPBOCNIH" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_ANPCPBOCNIH),
-            "CPNMDALEPIH_GOKGPIFIJAA" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GOKGPIFIJAA),
-            "CPNMDALEPIH_ILBAFAOFMEF" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_ILBAFAOFMEF),
-            "CPNMDALEPIH_NBINHJPNHBN" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_NBINHJPNHBN),
-            "CPNMDALEPIH_JHIFAGLIELE" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JHIFAGLIELE),
-            "CPNMDALEPIH_FLFLNCICGFM" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_FLFLNCICGFM),
-            "CPNMDALEPIH_OJAMCHAPDLK" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OJAMCHAPDLK),
-            "CPNMDALEPIH_BECHIDKIMFM" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_BECHIDKIMFM),
-            "CPNMDALEPIH_KNPDOEBGALH" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KNPDOEBGALH),
-            "CPNMDALEPIH_MDBCDDGMANC" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_MDBCDDGMANC),
-            "CPNMDALEPIH_LECCJOPFLLG" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LECCJOPFLLG),
-            "CPNMDALEPIH_ILHFDCGGJLI" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_ILHFDCGGJLI),
-            "CPNMDALEPIH_GLCJOIHKPKD" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GLCJOIHKPKD),
-            "CPNMDALEPIH_LABDJAIKGDJ" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_LABDJAIKGDJ),
-            "CPNMDALEPIH_JIOMIBMMEJN" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JIOMIBMMEJN),
-            "CPNMDALEPIH_GBINIHJGEEO" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GBINIHJGEEO),
-            "CPNMDALEPIH_ACJBLDKMIKM" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_ACJBLDKMIKM),
-            "CPNMDALEPIH_KDCEBICIAGH" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KDCEBICIAGH),
-            "CPNMDALEPIH_KPOEPNBMMPH" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KPOEPNBMMPH),
-            "CPNMDALEPIH_DJJCJMEINAN" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_DJJCJMEINAN),
-            "CPNMDALEPIH_JCKLBGLMHDM" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_JCKLBGLMHDM),
-            "CPNMDALEPIH_OHIAEDGDFHM" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OHIAEDGDFHM),
-            "CPNMDALEPIH_HHPBJHFBGED" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_HHPBJHFBGED),
-            "CPNMDALEPIH_MKDHOPEOLGF" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_MKDHOPEOLGF),
-            "CPNMDALEPIH_AHEHFKIEPCI" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_AHEHFKIEPCI),
-            "CPNMDALEPIH_OJLAKEFMIIK" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OJLAKEFMIIK),
-            "CPNMDALEPIH_DLLPOHKGGNN" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_DLLPOHKGGNN),
-            "CPNMDALEPIH_GGADLICFCME" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GGADLICFCME),
-            "CPNMDALEPIH_IMAPJCJGOEE" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_IMAPJCJGOEE),
-            "CPNMDALEPIH_KHINBADNGON" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KHINBADNGON),
-            "CPNMDALEPIH_BBBONEFDADK" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_BBBONEFDADK),
-            "CPNMDALEPIH_CCDIOEFGIGJ" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_CCDIOEFGIGJ),
-            "CPNMDALEPIH_FAHELCOEHBD" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_FAHELCOEHBD),
-            "CPNMDALEPIH_OJKOGPBLDDN" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_OJKOGPBLDDN),
-            "CPNMDALEPIH_AEFNECDIIBA" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_AEFNECDIIBA),
-            "CPNMDALEPIH_GMNADLAPGHG" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GMNADLAPGHG),
-            "CPNMDALEPIH_PEHAKFOKBEB" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_PEHAKFOKBEB),
-            "CPNMDALEPIH_HIDFFHPODCC" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_HIDFFHPODCC),
-            "CPNMDALEPIH_NAMOCEFHNEA" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_NAMOCEFHNEA),
-            "CPNMDALEPIH_NNFHOPNGHMN" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_NNFHOPNGHMN),
-            "CPNMDALEPIH_APFKAOJNOBE" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_APFKAOJNOBE),
-            "CPNMDALEPIH_BIODHAHAOJK" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_BIODHAHAOJK),
-            "CPNMDALEPIH_FMFJJHCEOFO" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_FMFJJHCEOFO),
-            "CPNMDALEPIH_AHINILHHNKM" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_AHINILHHNKM),
-            "CPNMDALEPIH_GGJMLINKCIC" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GGJMLINKCIC),
-            "CPNMDALEPIH_INNCJOEEINE" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_INNCJOEEINE),
-            "CPNMDALEPIH_AIDKNLIKODL" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_AIDKNLIKODL),
-            "CPNMDALEPIH_IGEEOGAEAJA" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_IGEEOGAEAJA),
-            "CPNMDALEPIH_BMMNDBOIONJ" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_BMMNDBOIONJ),
-            "CPNMDALEPIH_KIBEGOCDDPA" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_KIBEGOCDDPA),
-            "CPNMDALEPIH_CKNLBEMMDGC" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_CKNLBEMMDGC),
-            "CPNMDALEPIH_GBLCONIOGNK" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_GBLCONIOGNK),
-            "CPNMDALEPIH_DDMJJFHEBIF" => ::std::option::Option::Some(CmdChessRogueType::CPNMDALEPIH_DDMJJFHEBIF),
+            "CmdChessRogueType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MNFEPONEDDJ),
+            "CmdChessRogueType_APBLBPFDEGH" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_APBLBPFDEGH),
+            "CmdChessRogueType_HCJDDLCDJOE" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HCJDDLCDJOE),
+            "CmdChessRogueType_OLFMCBCINFH" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OLFMCBCINFH),
+            "CmdChessRogueType_BDDEBHAJMMF" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_BDDEBHAJMMF),
+            "CmdChessRogueType_ICAJINGOAON" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_ICAJINGOAON),
+            "CmdChessRogueType_KNICDHMNDOB" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_KNICDHMNDOB),
+            "CmdChessRogueType_MKEHCFHPFDD" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MKEHCFHPFDD),
+            "CmdChessRogueType_COIAEEBPFNN" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_COIAEEBPFNN),
+            "CmdChessRogueType_NEMEENHMODE" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NEMEENHMODE),
+            "CmdChessRogueType_CEBAPDNOGKP" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CEBAPDNOGKP),
+            "CmdChessRogueType_AJPDHKIADCE" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_AJPDHKIADCE),
+            "CmdChessRogueType_HCJJPLAFBIH" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HCJJPLAFBIH),
+            "CmdChessRogueType_JNEPALNMMHL" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_JNEPALNMMHL),
+            "CmdChessRogueType_JBPBJDJONOA" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_JBPBJDJONOA),
+            "CmdChessRogueType_HLIDPKOEHDD" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HLIDPKOEHDD),
+            "CmdChessRogueType_NIFCKCCHNEC" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NIFCKCCHNEC),
+            "CmdChessRogueType_ICAEGODDABJ" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_ICAEGODDABJ),
+            "CmdChessRogueType_FKIEDOMAJNC" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_FKIEDOMAJNC),
+            "CmdChessRogueType_CAHMDIGNFBJ" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CAHMDIGNFBJ),
+            "CmdChessRogueType_BOLNFLCBOAI" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_BOLNFLCBOAI),
+            "CmdChessRogueType_HDJFFLFLEBE" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HDJFFLFLEBE),
+            "CmdChessRogueType_NEAKEDLNBBH" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NEAKEDLNBBH),
+            "CmdChessRogueType_CPCPJMHMAGM" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CPCPJMHMAGM),
+            "CmdChessRogueType_FIAJGDJPNKK" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_FIAJGDJPNKK),
+            "CmdChessRogueType_OGAPEDJICJP" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OGAPEDJICJP),
+            "CmdChessRogueType_NOMJOEAAEJP" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NOMJOEAAEJP),
+            "CmdChessRogueType_LNNLECJHHDC" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_LNNLECJHHDC),
+            "CmdChessRogueType_OFEFBLENFKH" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OFEFBLENFKH),
+            "CmdChessRogueType_ADFGONHLCAO" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_ADFGONHLCAO),
+            "CmdChessRogueType_ODMBEHBJDEE" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_ODMBEHBJDEE),
+            "CmdChessRogueType_CAFIDCDFCKL" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CAFIDCDFCKL),
+            "CmdChessRogueType_CKDIGHHELCM" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CKDIGHHELCM),
+            "CmdChessRogueType_JLBMLMJCLJP" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_JLBMLMJCLJP),
+            "CmdChessRogueType_BFECDDOJHGD" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_BFECDDOJHGD),
+            "CmdChessRogueType_LGADOJGNCFP" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_LGADOJGNCFP),
+            "CmdChessRogueType_KBEDDJOIKKE" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_KBEDDJOIKKE),
+            "CmdChessRogueType_PFKLFOHMNJP" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_PFKLFOHMNJP),
+            "CmdChessRogueType_FAMMFKMFHFI" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_FAMMFKMFHFI),
+            "CmdChessRogueType_NDOLCDLAOMJ" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NDOLCDLAOMJ),
+            "CmdChessRogueType_PKENEMLKIAI" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_PKENEMLKIAI),
+            "CmdChessRogueType_MMKGACAILDA" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MMKGACAILDA),
+            "CmdChessRogueType_AOFLBDDDFDB" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_AOFLBDDDFDB),
+            "CmdChessRogueType_EDIFFAEDKDA" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_EDIFFAEDKDA),
+            "CmdChessRogueType_MEKKLFCLJMN" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MEKKLFCLJMN),
+            "CmdChessRogueType_AHNGOJLIOIO" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_AHNGOJLIOIO),
+            "CmdChessRogueType_MFOLIJMHJAN" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MFOLIJMHJAN),
+            "CmdChessRogueType_FINCCAGGFBG" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_FINCCAGGFBG),
+            "CmdChessRogueType_AMNGDPGIEPL" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_AMNGDPGIEPL),
+            "CmdChessRogueType_GGJBPLKPMGK" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_GGJBPLKPMGK),
+            "CmdChessRogueType_HANHOKHKICG" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HANHOKHKICG),
+            "CmdChessRogueType_MGCCLPAKCKF" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MGCCLPAKCKF),
+            "CmdChessRogueType_NJMPOIEHAMM" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NJMPOIEHAMM),
+            "CmdChessRogueType_OKHJMHAHHJJ" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OKHJMHAHHJJ),
+            "CmdChessRogueType_HKHBJABHFAK" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HKHBJABHFAK),
+            "CmdChessRogueType_OLBMNECCNLC" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OLBMNECCNLC),
+            "CmdChessRogueType_LCLMLAHEMOO" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_LCLMLAHEMOO),
+            "CmdChessRogueType_ONKGHEFAMKH" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_ONKGHEFAMKH),
+            "CmdChessRogueType_DKJOMHIIONE" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_DKJOMHIIONE),
+            "CmdChessRogueType_NCJMPABANCJ" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NCJMPABANCJ),
+            "CmdChessRogueType_BODODCJBHFE" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_BODODCJBHFE),
+            "CmdChessRogueType_NAHHFPDHPBA" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_NAHHFPDHPBA),
+            "CmdChessRogueType_DOCOKNGABFL" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_DOCOKNGABFL),
+            "CmdChessRogueType_HPJIFGCMLEO" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HPJIFGCMLEO),
+            "CmdChessRogueType_CKJEADGMBNH" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_CKJEADGMBNH),
+            "CmdChessRogueType_OJCEACONKHP" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OJCEACONKHP),
+            "CmdChessRogueType_MFDINMIBDFB" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_MFDINMIBDFB),
+            "CmdChessRogueType_KFEPOGMCKEM" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_KFEPOGMCKEM),
+            "CmdChessRogueType_PKEJHPGCHCO" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_PKEJHPGCHCO),
+            "CmdChessRogueType_JKHEOCPFCFB" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_JKHEOCPFCFB),
+            "CmdChessRogueType_LAMMDKEAFCH" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_LAMMDKEAFCH),
+            "CmdChessRogueType_HGBBFKLIPHA" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_HGBBFKLIPHA),
+            "CmdChessRogueType_OLAOFFODGAH" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OLAOFFODGAH),
+            "CmdChessRogueType_OGKDEDMDBJO" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OGKDEDMDBJO),
+            "CmdChessRogueType_BKGFOLBPGAL" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_BKGFOLBPGAL),
+            "CmdChessRogueType_OMFIJOMANBF" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_OMFIJOMANBF),
+            "CmdChessRogueType_JBIODJCJLIC" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_JBIODJCJLIC),
+            "CmdChessRogueType_AGNEIMEPKCN" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_AGNEIMEPKCN),
+            "CmdChessRogueType_KAHHIKGODDP" => ::std::option::Option::Some(CmdChessRogueType::CmdChessRogueType_KAHHIKGODDP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdChessRogueType] = &[
-        CmdChessRogueType::CPNMDALEPIH_GKJBAODJMJG,
-        CmdChessRogueType::CPNMDALEPIH_LDIKGGLAICA,
-        CmdChessRogueType::CPNMDALEPIH_FFBHLNGJLNH,
-        CmdChessRogueType::CPNMDALEPIH_BJBMMFPNDPM,
-        CmdChessRogueType::CPNMDALEPIH_JFJBABKPAOK,
-        CmdChessRogueType::CPNMDALEPIH_OMKCKNEABLF,
-        CmdChessRogueType::CPNMDALEPIH_HGDCMKFKNIA,
-        CmdChessRogueType::CPNMDALEPIH_LDBCHJECHIH,
-        CmdChessRogueType::CPNMDALEPIH_COPPHBIGFAB,
-        CmdChessRogueType::CPNMDALEPIH_KMDGEBLMEGH,
-        CmdChessRogueType::CPNMDALEPIH_PKLLEFDDAEK,
-        CmdChessRogueType::CPNMDALEPIH_ECEEGCPPBMI,
-        CmdChessRogueType::CPNMDALEPIH_JLEJALIOGDK,
-        CmdChessRogueType::CPNMDALEPIH_PKLDNFCJFOO,
-        CmdChessRogueType::CPNMDALEPIH_OAFKKLKKKNA,
-        CmdChessRogueType::CPNMDALEPIH_LCCNPPCCIIN,
-        CmdChessRogueType::CPNMDALEPIH_NJGMIENGHNE,
-        CmdChessRogueType::CPNMDALEPIH_NGJDDIDEHOP,
-        CmdChessRogueType::CPNMDALEPIH_JDIJJNFCCBH,
-        CmdChessRogueType::CPNMDALEPIH_CIFLKIEDCGB,
-        CmdChessRogueType::CPNMDALEPIH_FNKPOCHHOIO,
-        CmdChessRogueType::CPNMDALEPIH_PKINKPFAJDD,
-        CmdChessRogueType::CPNMDALEPIH_EMBCGHIPIKD,
-        CmdChessRogueType::CPNMDALEPIH_DLGJLHOLAOG,
-        CmdChessRogueType::CPNMDALEPIH_CNMGLKMDBLL,
-        CmdChessRogueType::CPNMDALEPIH_LCCHEIOPENL,
-        CmdChessRogueType::CPNMDALEPIH_ANPCPBOCNIH,
-        CmdChessRogueType::CPNMDALEPIH_GOKGPIFIJAA,
-        CmdChessRogueType::CPNMDALEPIH_ILBAFAOFMEF,
-        CmdChessRogueType::CPNMDALEPIH_NBINHJPNHBN,
-        CmdChessRogueType::CPNMDALEPIH_JHIFAGLIELE,
-        CmdChessRogueType::CPNMDALEPIH_FLFLNCICGFM,
-        CmdChessRogueType::CPNMDALEPIH_OJAMCHAPDLK,
-        CmdChessRogueType::CPNMDALEPIH_BECHIDKIMFM,
-        CmdChessRogueType::CPNMDALEPIH_KNPDOEBGALH,
-        CmdChessRogueType::CPNMDALEPIH_MDBCDDGMANC,
-        CmdChessRogueType::CPNMDALEPIH_LECCJOPFLLG,
-        CmdChessRogueType::CPNMDALEPIH_ILHFDCGGJLI,
-        CmdChessRogueType::CPNMDALEPIH_GLCJOIHKPKD,
-        CmdChessRogueType::CPNMDALEPIH_LABDJAIKGDJ,
-        CmdChessRogueType::CPNMDALEPIH_JIOMIBMMEJN,
-        CmdChessRogueType::CPNMDALEPIH_GBINIHJGEEO,
-        CmdChessRogueType::CPNMDALEPIH_ACJBLDKMIKM,
-        CmdChessRogueType::CPNMDALEPIH_KDCEBICIAGH,
-        CmdChessRogueType::CPNMDALEPIH_KPOEPNBMMPH,
-        CmdChessRogueType::CPNMDALEPIH_DJJCJMEINAN,
-        CmdChessRogueType::CPNMDALEPIH_JCKLBGLMHDM,
-        CmdChessRogueType::CPNMDALEPIH_OHIAEDGDFHM,
-        CmdChessRogueType::CPNMDALEPIH_HHPBJHFBGED,
-        CmdChessRogueType::CPNMDALEPIH_MKDHOPEOLGF,
-        CmdChessRogueType::CPNMDALEPIH_AHEHFKIEPCI,
-        CmdChessRogueType::CPNMDALEPIH_OJLAKEFMIIK,
-        CmdChessRogueType::CPNMDALEPIH_DLLPOHKGGNN,
-        CmdChessRogueType::CPNMDALEPIH_GGADLICFCME,
-        CmdChessRogueType::CPNMDALEPIH_IMAPJCJGOEE,
-        CmdChessRogueType::CPNMDALEPIH_KHINBADNGON,
-        CmdChessRogueType::CPNMDALEPIH_BBBONEFDADK,
-        CmdChessRogueType::CPNMDALEPIH_CCDIOEFGIGJ,
-        CmdChessRogueType::CPNMDALEPIH_FAHELCOEHBD,
-        CmdChessRogueType::CPNMDALEPIH_OJKOGPBLDDN,
-        CmdChessRogueType::CPNMDALEPIH_AEFNECDIIBA,
-        CmdChessRogueType::CPNMDALEPIH_GMNADLAPGHG,
-        CmdChessRogueType::CPNMDALEPIH_PEHAKFOKBEB,
-        CmdChessRogueType::CPNMDALEPIH_HIDFFHPODCC,
-        CmdChessRogueType::CPNMDALEPIH_NAMOCEFHNEA,
-        CmdChessRogueType::CPNMDALEPIH_NNFHOPNGHMN,
-        CmdChessRogueType::CPNMDALEPIH_APFKAOJNOBE,
-        CmdChessRogueType::CPNMDALEPIH_BIODHAHAOJK,
-        CmdChessRogueType::CPNMDALEPIH_FMFJJHCEOFO,
-        CmdChessRogueType::CPNMDALEPIH_AHINILHHNKM,
-        CmdChessRogueType::CPNMDALEPIH_GGJMLINKCIC,
-        CmdChessRogueType::CPNMDALEPIH_INNCJOEEINE,
-        CmdChessRogueType::CPNMDALEPIH_AIDKNLIKODL,
-        CmdChessRogueType::CPNMDALEPIH_IGEEOGAEAJA,
-        CmdChessRogueType::CPNMDALEPIH_BMMNDBOIONJ,
-        CmdChessRogueType::CPNMDALEPIH_KIBEGOCDDPA,
-        CmdChessRogueType::CPNMDALEPIH_CKNLBEMMDGC,
-        CmdChessRogueType::CPNMDALEPIH_GBLCONIOGNK,
-        CmdChessRogueType::CPNMDALEPIH_DDMJJFHEBIF,
+        CmdChessRogueType::CmdChessRogueType_MNFEPONEDDJ,
+        CmdChessRogueType::CmdChessRogueType_APBLBPFDEGH,
+        CmdChessRogueType::CmdChessRogueType_HCJDDLCDJOE,
+        CmdChessRogueType::CmdChessRogueType_OLFMCBCINFH,
+        CmdChessRogueType::CmdChessRogueType_BDDEBHAJMMF,
+        CmdChessRogueType::CmdChessRogueType_ICAJINGOAON,
+        CmdChessRogueType::CmdChessRogueType_KNICDHMNDOB,
+        CmdChessRogueType::CmdChessRogueType_MKEHCFHPFDD,
+        CmdChessRogueType::CmdChessRogueType_COIAEEBPFNN,
+        CmdChessRogueType::CmdChessRogueType_NEMEENHMODE,
+        CmdChessRogueType::CmdChessRogueType_CEBAPDNOGKP,
+        CmdChessRogueType::CmdChessRogueType_AJPDHKIADCE,
+        CmdChessRogueType::CmdChessRogueType_HCJJPLAFBIH,
+        CmdChessRogueType::CmdChessRogueType_JNEPALNMMHL,
+        CmdChessRogueType::CmdChessRogueType_JBPBJDJONOA,
+        CmdChessRogueType::CmdChessRogueType_HLIDPKOEHDD,
+        CmdChessRogueType::CmdChessRogueType_NIFCKCCHNEC,
+        CmdChessRogueType::CmdChessRogueType_ICAEGODDABJ,
+        CmdChessRogueType::CmdChessRogueType_FKIEDOMAJNC,
+        CmdChessRogueType::CmdChessRogueType_CAHMDIGNFBJ,
+        CmdChessRogueType::CmdChessRogueType_BOLNFLCBOAI,
+        CmdChessRogueType::CmdChessRogueType_HDJFFLFLEBE,
+        CmdChessRogueType::CmdChessRogueType_NEAKEDLNBBH,
+        CmdChessRogueType::CmdChessRogueType_CPCPJMHMAGM,
+        CmdChessRogueType::CmdChessRogueType_FIAJGDJPNKK,
+        CmdChessRogueType::CmdChessRogueType_OGAPEDJICJP,
+        CmdChessRogueType::CmdChessRogueType_NOMJOEAAEJP,
+        CmdChessRogueType::CmdChessRogueType_LNNLECJHHDC,
+        CmdChessRogueType::CmdChessRogueType_OFEFBLENFKH,
+        CmdChessRogueType::CmdChessRogueType_ADFGONHLCAO,
+        CmdChessRogueType::CmdChessRogueType_ODMBEHBJDEE,
+        CmdChessRogueType::CmdChessRogueType_CAFIDCDFCKL,
+        CmdChessRogueType::CmdChessRogueType_CKDIGHHELCM,
+        CmdChessRogueType::CmdChessRogueType_JLBMLMJCLJP,
+        CmdChessRogueType::CmdChessRogueType_BFECDDOJHGD,
+        CmdChessRogueType::CmdChessRogueType_LGADOJGNCFP,
+        CmdChessRogueType::CmdChessRogueType_KBEDDJOIKKE,
+        CmdChessRogueType::CmdChessRogueType_PFKLFOHMNJP,
+        CmdChessRogueType::CmdChessRogueType_FAMMFKMFHFI,
+        CmdChessRogueType::CmdChessRogueType_NDOLCDLAOMJ,
+        CmdChessRogueType::CmdChessRogueType_PKENEMLKIAI,
+        CmdChessRogueType::CmdChessRogueType_MMKGACAILDA,
+        CmdChessRogueType::CmdChessRogueType_AOFLBDDDFDB,
+        CmdChessRogueType::CmdChessRogueType_EDIFFAEDKDA,
+        CmdChessRogueType::CmdChessRogueType_MEKKLFCLJMN,
+        CmdChessRogueType::CmdChessRogueType_AHNGOJLIOIO,
+        CmdChessRogueType::CmdChessRogueType_MFOLIJMHJAN,
+        CmdChessRogueType::CmdChessRogueType_FINCCAGGFBG,
+        CmdChessRogueType::CmdChessRogueType_AMNGDPGIEPL,
+        CmdChessRogueType::CmdChessRogueType_GGJBPLKPMGK,
+        CmdChessRogueType::CmdChessRogueType_HANHOKHKICG,
+        CmdChessRogueType::CmdChessRogueType_MGCCLPAKCKF,
+        CmdChessRogueType::CmdChessRogueType_NJMPOIEHAMM,
+        CmdChessRogueType::CmdChessRogueType_OKHJMHAHHJJ,
+        CmdChessRogueType::CmdChessRogueType_HKHBJABHFAK,
+        CmdChessRogueType::CmdChessRogueType_OLBMNECCNLC,
+        CmdChessRogueType::CmdChessRogueType_LCLMLAHEMOO,
+        CmdChessRogueType::CmdChessRogueType_ONKGHEFAMKH,
+        CmdChessRogueType::CmdChessRogueType_DKJOMHIIONE,
+        CmdChessRogueType::CmdChessRogueType_NCJMPABANCJ,
+        CmdChessRogueType::CmdChessRogueType_BODODCJBHFE,
+        CmdChessRogueType::CmdChessRogueType_NAHHFPDHPBA,
+        CmdChessRogueType::CmdChessRogueType_DOCOKNGABFL,
+        CmdChessRogueType::CmdChessRogueType_HPJIFGCMLEO,
+        CmdChessRogueType::CmdChessRogueType_CKJEADGMBNH,
+        CmdChessRogueType::CmdChessRogueType_OJCEACONKHP,
+        CmdChessRogueType::CmdChessRogueType_MFDINMIBDFB,
+        CmdChessRogueType::CmdChessRogueType_KFEPOGMCKEM,
+        CmdChessRogueType::CmdChessRogueType_PKEJHPGCHCO,
+        CmdChessRogueType::CmdChessRogueType_JKHEOCPFCFB,
+        CmdChessRogueType::CmdChessRogueType_LAMMDKEAFCH,
+        CmdChessRogueType::CmdChessRogueType_HGBBFKLIPHA,
+        CmdChessRogueType::CmdChessRogueType_OLAOFFODGAH,
+        CmdChessRogueType::CmdChessRogueType_OGKDEDMDBJO,
+        CmdChessRogueType::CmdChessRogueType_BKGFOLBPGAL,
+        CmdChessRogueType::CmdChessRogueType_OMFIJOMANBF,
+        CmdChessRogueType::CmdChessRogueType_JBIODJCJLIC,
+        CmdChessRogueType::CmdChessRogueType_AGNEIMEPKCN,
+        CmdChessRogueType::CmdChessRogueType_KAHHIKGODDP,
     ];
 }
 
@@ -455,85 +455,85 @@ impl ::protobuf::EnumFull for CmdChessRogueType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdChessRogueType::CPNMDALEPIH_GKJBAODJMJG => 0,
-            CmdChessRogueType::CPNMDALEPIH_LDIKGGLAICA => 1,
-            CmdChessRogueType::CPNMDALEPIH_FFBHLNGJLNH => 2,
-            CmdChessRogueType::CPNMDALEPIH_BJBMMFPNDPM => 3,
-            CmdChessRogueType::CPNMDALEPIH_JFJBABKPAOK => 4,
-            CmdChessRogueType::CPNMDALEPIH_OMKCKNEABLF => 5,
-            CmdChessRogueType::CPNMDALEPIH_HGDCMKFKNIA => 6,
-            CmdChessRogueType::CPNMDALEPIH_LDBCHJECHIH => 7,
-            CmdChessRogueType::CPNMDALEPIH_COPPHBIGFAB => 8,
-            CmdChessRogueType::CPNMDALEPIH_KMDGEBLMEGH => 9,
-            CmdChessRogueType::CPNMDALEPIH_PKLLEFDDAEK => 10,
-            CmdChessRogueType::CPNMDALEPIH_ECEEGCPPBMI => 11,
-            CmdChessRogueType::CPNMDALEPIH_JLEJALIOGDK => 12,
-            CmdChessRogueType::CPNMDALEPIH_PKLDNFCJFOO => 13,
-            CmdChessRogueType::CPNMDALEPIH_OAFKKLKKKNA => 14,
-            CmdChessRogueType::CPNMDALEPIH_LCCNPPCCIIN => 15,
-            CmdChessRogueType::CPNMDALEPIH_NJGMIENGHNE => 16,
-            CmdChessRogueType::CPNMDALEPIH_NGJDDIDEHOP => 17,
-            CmdChessRogueType::CPNMDALEPIH_JDIJJNFCCBH => 18,
-            CmdChessRogueType::CPNMDALEPIH_CIFLKIEDCGB => 19,
-            CmdChessRogueType::CPNMDALEPIH_FNKPOCHHOIO => 20,
-            CmdChessRogueType::CPNMDALEPIH_PKINKPFAJDD => 21,
-            CmdChessRogueType::CPNMDALEPIH_EMBCGHIPIKD => 22,
-            CmdChessRogueType::CPNMDALEPIH_DLGJLHOLAOG => 23,
-            CmdChessRogueType::CPNMDALEPIH_CNMGLKMDBLL => 24,
-            CmdChessRogueType::CPNMDALEPIH_LCCHEIOPENL => 25,
-            CmdChessRogueType::CPNMDALEPIH_ANPCPBOCNIH => 26,
-            CmdChessRogueType::CPNMDALEPIH_GOKGPIFIJAA => 27,
-            CmdChessRogueType::CPNMDALEPIH_ILBAFAOFMEF => 28,
-            CmdChessRogueType::CPNMDALEPIH_NBINHJPNHBN => 29,
-            CmdChessRogueType::CPNMDALEPIH_JHIFAGLIELE => 30,
-            CmdChessRogueType::CPNMDALEPIH_FLFLNCICGFM => 31,
-            CmdChessRogueType::CPNMDALEPIH_OJAMCHAPDLK => 32,
-            CmdChessRogueType::CPNMDALEPIH_BECHIDKIMFM => 33,
-            CmdChessRogueType::CPNMDALEPIH_KNPDOEBGALH => 34,
-            CmdChessRogueType::CPNMDALEPIH_MDBCDDGMANC => 35,
-            CmdChessRogueType::CPNMDALEPIH_LECCJOPFLLG => 36,
-            CmdChessRogueType::CPNMDALEPIH_ILHFDCGGJLI => 37,
-            CmdChessRogueType::CPNMDALEPIH_GLCJOIHKPKD => 38,
-            CmdChessRogueType::CPNMDALEPIH_LABDJAIKGDJ => 39,
-            CmdChessRogueType::CPNMDALEPIH_JIOMIBMMEJN => 40,
-            CmdChessRogueType::CPNMDALEPIH_GBINIHJGEEO => 41,
-            CmdChessRogueType::CPNMDALEPIH_ACJBLDKMIKM => 42,
-            CmdChessRogueType::CPNMDALEPIH_KDCEBICIAGH => 43,
-            CmdChessRogueType::CPNMDALEPIH_KPOEPNBMMPH => 44,
-            CmdChessRogueType::CPNMDALEPIH_DJJCJMEINAN => 45,
-            CmdChessRogueType::CPNMDALEPIH_JCKLBGLMHDM => 46,
-            CmdChessRogueType::CPNMDALEPIH_OHIAEDGDFHM => 47,
-            CmdChessRogueType::CPNMDALEPIH_HHPBJHFBGED => 48,
-            CmdChessRogueType::CPNMDALEPIH_MKDHOPEOLGF => 49,
-            CmdChessRogueType::CPNMDALEPIH_AHEHFKIEPCI => 50,
-            CmdChessRogueType::CPNMDALEPIH_OJLAKEFMIIK => 51,
-            CmdChessRogueType::CPNMDALEPIH_DLLPOHKGGNN => 52,
-            CmdChessRogueType::CPNMDALEPIH_GGADLICFCME => 53,
-            CmdChessRogueType::CPNMDALEPIH_IMAPJCJGOEE => 54,
-            CmdChessRogueType::CPNMDALEPIH_KHINBADNGON => 55,
-            CmdChessRogueType::CPNMDALEPIH_BBBONEFDADK => 56,
-            CmdChessRogueType::CPNMDALEPIH_CCDIOEFGIGJ => 57,
-            CmdChessRogueType::CPNMDALEPIH_FAHELCOEHBD => 58,
-            CmdChessRogueType::CPNMDALEPIH_OJKOGPBLDDN => 59,
-            CmdChessRogueType::CPNMDALEPIH_AEFNECDIIBA => 60,
-            CmdChessRogueType::CPNMDALEPIH_GMNADLAPGHG => 61,
-            CmdChessRogueType::CPNMDALEPIH_PEHAKFOKBEB => 62,
-            CmdChessRogueType::CPNMDALEPIH_HIDFFHPODCC => 63,
-            CmdChessRogueType::CPNMDALEPIH_NAMOCEFHNEA => 64,
-            CmdChessRogueType::CPNMDALEPIH_NNFHOPNGHMN => 65,
-            CmdChessRogueType::CPNMDALEPIH_APFKAOJNOBE => 66,
-            CmdChessRogueType::CPNMDALEPIH_BIODHAHAOJK => 67,
-            CmdChessRogueType::CPNMDALEPIH_FMFJJHCEOFO => 68,
-            CmdChessRogueType::CPNMDALEPIH_AHINILHHNKM => 69,
-            CmdChessRogueType::CPNMDALEPIH_GGJMLINKCIC => 70,
-            CmdChessRogueType::CPNMDALEPIH_INNCJOEEINE => 71,
-            CmdChessRogueType::CPNMDALEPIH_AIDKNLIKODL => 72,
-            CmdChessRogueType::CPNMDALEPIH_IGEEOGAEAJA => 73,
-            CmdChessRogueType::CPNMDALEPIH_BMMNDBOIONJ => 74,
-            CmdChessRogueType::CPNMDALEPIH_KIBEGOCDDPA => 75,
-            CmdChessRogueType::CPNMDALEPIH_CKNLBEMMDGC => 76,
-            CmdChessRogueType::CPNMDALEPIH_GBLCONIOGNK => 77,
-            CmdChessRogueType::CPNMDALEPIH_DDMJJFHEBIF => 78,
+            CmdChessRogueType::CmdChessRogueType_MNFEPONEDDJ => 0,
+            CmdChessRogueType::CmdChessRogueType_APBLBPFDEGH => 1,
+            CmdChessRogueType::CmdChessRogueType_HCJDDLCDJOE => 2,
+            CmdChessRogueType::CmdChessRogueType_OLFMCBCINFH => 3,
+            CmdChessRogueType::CmdChessRogueType_BDDEBHAJMMF => 4,
+            CmdChessRogueType::CmdChessRogueType_ICAJINGOAON => 5,
+            CmdChessRogueType::CmdChessRogueType_KNICDHMNDOB => 6,
+            CmdChessRogueType::CmdChessRogueType_MKEHCFHPFDD => 7,
+            CmdChessRogueType::CmdChessRogueType_COIAEEBPFNN => 8,
+            CmdChessRogueType::CmdChessRogueType_NEMEENHMODE => 9,
+            CmdChessRogueType::CmdChessRogueType_CEBAPDNOGKP => 10,
+            CmdChessRogueType::CmdChessRogueType_AJPDHKIADCE => 11,
+            CmdChessRogueType::CmdChessRogueType_HCJJPLAFBIH => 12,
+            CmdChessRogueType::CmdChessRogueType_JNEPALNMMHL => 13,
+            CmdChessRogueType::CmdChessRogueType_JBPBJDJONOA => 14,
+            CmdChessRogueType::CmdChessRogueType_HLIDPKOEHDD => 15,
+            CmdChessRogueType::CmdChessRogueType_NIFCKCCHNEC => 16,
+            CmdChessRogueType::CmdChessRogueType_ICAEGODDABJ => 17,
+            CmdChessRogueType::CmdChessRogueType_FKIEDOMAJNC => 18,
+            CmdChessRogueType::CmdChessRogueType_CAHMDIGNFBJ => 19,
+            CmdChessRogueType::CmdChessRogueType_BOLNFLCBOAI => 20,
+            CmdChessRogueType::CmdChessRogueType_HDJFFLFLEBE => 21,
+            CmdChessRogueType::CmdChessRogueType_NEAKEDLNBBH => 22,
+            CmdChessRogueType::CmdChessRogueType_CPCPJMHMAGM => 23,
+            CmdChessRogueType::CmdChessRogueType_FIAJGDJPNKK => 24,
+            CmdChessRogueType::CmdChessRogueType_OGAPEDJICJP => 25,
+            CmdChessRogueType::CmdChessRogueType_NOMJOEAAEJP => 26,
+            CmdChessRogueType::CmdChessRogueType_LNNLECJHHDC => 27,
+            CmdChessRogueType::CmdChessRogueType_OFEFBLENFKH => 28,
+            CmdChessRogueType::CmdChessRogueType_ADFGONHLCAO => 29,
+            CmdChessRogueType::CmdChessRogueType_ODMBEHBJDEE => 30,
+            CmdChessRogueType::CmdChessRogueType_CAFIDCDFCKL => 31,
+            CmdChessRogueType::CmdChessRogueType_CKDIGHHELCM => 32,
+            CmdChessRogueType::CmdChessRogueType_JLBMLMJCLJP => 33,
+            CmdChessRogueType::CmdChessRogueType_BFECDDOJHGD => 34,
+            CmdChessRogueType::CmdChessRogueType_LGADOJGNCFP => 35,
+            CmdChessRogueType::CmdChessRogueType_KBEDDJOIKKE => 36,
+            CmdChessRogueType::CmdChessRogueType_PFKLFOHMNJP => 37,
+            CmdChessRogueType::CmdChessRogueType_FAMMFKMFHFI => 38,
+            CmdChessRogueType::CmdChessRogueType_NDOLCDLAOMJ => 39,
+            CmdChessRogueType::CmdChessRogueType_PKENEMLKIAI => 40,
+            CmdChessRogueType::CmdChessRogueType_MMKGACAILDA => 41,
+            CmdChessRogueType::CmdChessRogueType_AOFLBDDDFDB => 42,
+            CmdChessRogueType::CmdChessRogueType_EDIFFAEDKDA => 43,
+            CmdChessRogueType::CmdChessRogueType_MEKKLFCLJMN => 44,
+            CmdChessRogueType::CmdChessRogueType_AHNGOJLIOIO => 45,
+            CmdChessRogueType::CmdChessRogueType_MFOLIJMHJAN => 46,
+            CmdChessRogueType::CmdChessRogueType_FINCCAGGFBG => 47,
+            CmdChessRogueType::CmdChessRogueType_AMNGDPGIEPL => 48,
+            CmdChessRogueType::CmdChessRogueType_GGJBPLKPMGK => 49,
+            CmdChessRogueType::CmdChessRogueType_HANHOKHKICG => 50,
+            CmdChessRogueType::CmdChessRogueType_MGCCLPAKCKF => 51,
+            CmdChessRogueType::CmdChessRogueType_NJMPOIEHAMM => 52,
+            CmdChessRogueType::CmdChessRogueType_OKHJMHAHHJJ => 53,
+            CmdChessRogueType::CmdChessRogueType_HKHBJABHFAK => 54,
+            CmdChessRogueType::CmdChessRogueType_OLBMNECCNLC => 55,
+            CmdChessRogueType::CmdChessRogueType_LCLMLAHEMOO => 56,
+            CmdChessRogueType::CmdChessRogueType_ONKGHEFAMKH => 57,
+            CmdChessRogueType::CmdChessRogueType_DKJOMHIIONE => 58,
+            CmdChessRogueType::CmdChessRogueType_NCJMPABANCJ => 59,
+            CmdChessRogueType::CmdChessRogueType_BODODCJBHFE => 60,
+            CmdChessRogueType::CmdChessRogueType_NAHHFPDHPBA => 61,
+            CmdChessRogueType::CmdChessRogueType_DOCOKNGABFL => 62,
+            CmdChessRogueType::CmdChessRogueType_HPJIFGCMLEO => 63,
+            CmdChessRogueType::CmdChessRogueType_CKJEADGMBNH => 64,
+            CmdChessRogueType::CmdChessRogueType_OJCEACONKHP => 65,
+            CmdChessRogueType::CmdChessRogueType_MFDINMIBDFB => 66,
+            CmdChessRogueType::CmdChessRogueType_KFEPOGMCKEM => 67,
+            CmdChessRogueType::CmdChessRogueType_PKEJHPGCHCO => 68,
+            CmdChessRogueType::CmdChessRogueType_JKHEOCPFCFB => 69,
+            CmdChessRogueType::CmdChessRogueType_LAMMDKEAFCH => 70,
+            CmdChessRogueType::CmdChessRogueType_HGBBFKLIPHA => 71,
+            CmdChessRogueType::CmdChessRogueType_OLAOFFODGAH => 72,
+            CmdChessRogueType::CmdChessRogueType_OGKDEDMDBJO => 73,
+            CmdChessRogueType::CmdChessRogueType_BKGFOLBPGAL => 74,
+            CmdChessRogueType::CmdChessRogueType_OMFIJOMANBF => 75,
+            CmdChessRogueType::CmdChessRogueType_JBIODJCJLIC => 76,
+            CmdChessRogueType::CmdChessRogueType_AGNEIMEPKCN => 77,
+            CmdChessRogueType::CmdChessRogueType_KAHHIKGODDP => 78,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -541,7 +541,7 @@ impl ::protobuf::EnumFull for CmdChessRogueType {
 
 impl ::std::default::Default for CmdChessRogueType {
     fn default() -> Self {
-        CmdChessRogueType::CPNMDALEPIH_GKJBAODJMJG
+        CmdChessRogueType::CmdChessRogueType_MNFEPONEDDJ
     }
 }
 
@@ -552,58 +552,63 @@ impl CmdChessRogueType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdChessRogueType.proto*\xd4\x12\n\x11CmdChessRogueType\x12\x1b\n\
-    \x17CPNMDALEPIH_GKJBAODJMJG\x10\0\x12\x1c\n\x17CPNMDALEPIH_LDIKGGLAICA\
-    \x10\xb8*\x12\x1c\n\x17CPNMDALEPIH_FFBHLNGJLNH\x10\xc2*\x12\x1c\n\x17CPN\
-    MDALEPIH_BJBMMFPNDPM\x10\xb1*\x12\x1c\n\x17CPNMDALEPIH_JFJBABKPAOK\x10\
-    \xee*\x12\x1c\n\x17CPNMDALEPIH_OMKCKNEABLF\x10\xc3*\x12\x1c\n\x17CPNMDAL\
-    EPIH_HGDCMKFKNIA\x10\x90+\x12\x1c\n\x17CPNMDALEPIH_LDBCHJECHIH\x10\xda+\
-    \x12\x1c\n\x17CPNMDALEPIH_COPPHBIGFAB\x10\xa1+\x12\x1c\n\x17CPNMDALEPIH_\
-    KMDGEBLMEGH\x10\xed*\x12\x1c\n\x17CPNMDALEPIH_PKLLEFDDAEK\x10\xd4+\x12\
-    \x1c\n\x17CPNMDALEPIH_ECEEGCPPBMI\x10\xcb+\x12\x1c\n\x17CPNMDALEPIH_JLEJ\
-    ALIOGDK\x10\xdc+\x12\x1c\n\x17CPNMDALEPIH_PKLDNFCJFOO\x10\xad+\x12\x1c\n\
-    \x17CPNMDALEPIH_OAFKKLKKKNA\x10\xa4*\x12\x1c\n\x17CPNMDALEPIH_LCCNPPCCII\
-    N\x10\xb3+\x12\x1c\n\x17CPNMDALEPIH_NJGMIENGHNE\x10\xe5*\x12\x1c\n\x17CP\
-    NMDALEPIH_NGJDDIDEHOP\x10\xbf*\x12\x1c\n\x17CPNMDALEPIH_JDIJJNFCCBH\x10\
-    \xa3+\x12\x1c\n\x17CPNMDALEPIH_CIFLKIEDCGB\x10\xc5+\x12\x1c\n\x17CPNMDAL\
-    EPIH_FNKPOCHHOIO\x10\xa8+\x12\x1c\n\x17CPNMDALEPIH_PKINKPFAJDD\x10\xca+\
-    \x12\x1c\n\x17CPNMDALEPIH_EMBCGHIPIKD\x10\xfc*\x12\x1c\n\x17CPNMDALEPIH_\
-    DLGJLHOLAOG\x10\x85+\x12\x1c\n\x17CPNMDALEPIH_CNMGLKMDBLL\x10\xd6+\x12\
-    \x1c\n\x17CPNMDALEPIH_LCCHEIOPENL\x10\xf5*\x12\x1c\n\x17CPNMDALEPIH_ANPC\
-    PBOCNIH\x10\xb0*\x12\x1c\n\x17CPNMDALEPIH_GOKGPIFIJAA\x10\xa8*\x12\x1c\n\
-    \x17CPNMDALEPIH_ILBAFAOFMEF\x10\xd9*\x12\x1c\n\x17CPNMDALEPIH_NBINHJPNHB\
-    N\x10\xcc+\x12\x1c\n\x17CPNMDALEPIH_JHIFAGLIELE\x10\x93+\x12\x1c\n\x17CP\
-    NMDALEPIH_FLFLNCICGFM\x10\xbb+\x12\x1c\n\x17CPNMDALEPIH_OJAMCHAPDLK\x10\
-    \xc8*\x12\x1c\n\x17CPNMDALEPIH_BECHIDKIMFM\x10\xfb*\x12\x1c\n\x17CPNMDAL\
-    EPIH_KNPDOEBGALH\x10\x9d+\x12\x1c\n\x17CPNMDALEPIH_MDBCDDGMANC\x10\xc1+\
-    \x12\x1c\n\x17CPNMDALEPIH_LECCJOPFLLG\x10\xc9+\x12\x1c\n\x17CPNMDALEPIH_\
-    ILHFDCGGJLI\x10\xf8*\x12\x1c\n\x17CPNMDALEPIH_GLCJOIHKPKD\x10\xb5*\x12\
-    \x1c\n\x17CPNMDALEPIH_LABDJAIKGDJ\x10\xd0*\x12\x1c\n\x17CPNMDALEPIH_JIOM\
-    IBMMEJN\x10\xb6*\x12\x1c\n\x17CPNMDALEPIH_GBINIHJGEEO\x10\x8b+\x12\x1c\n\
-    \x17CPNMDALEPIH_ACJBLDKMIKM\x10\x9e*\x12\x1c\n\x17CPNMDALEPIH_KDCEBICIAG\
-    H\x10\xbf+\x12\x1c\n\x17CPNMDALEPIH_KPOEPNBMMPH\x10\x87+\x12\x1c\n\x17CP\
-    NMDALEPIH_DJJCJMEINAN\x10\xa3*\x12\x1c\n\x17CPNMDALEPIH_JCKLBGLMHDM\x10\
-    \xc0*\x12\x1c\n\x17CPNMDALEPIH_OHIAEDGDFHM\x10\xe9*\x12\x1c\n\x17CPNMDAL\
-    EPIH_HHPBJHFBGED\x10\xcf*\x12\x1c\n\x17CPNMDALEPIH_MKDHOPEOLGF\x10\xae+\
-    \x12\x1c\n\x17CPNMDALEPIH_AHEHFKIEPCI\x10\xaf*\x12\x1c\n\x17CPNMDALEPIH_\
-    OJLAKEFMIIK\x10\xb0+\x12\x1c\n\x17CPNMDALEPIH_DLLPOHKGGNN\x10\x9b*\x12\
-    \x1c\n\x17CPNMDALEPIH_GGADLICFCME\x10\xd0+\x12\x1c\n\x17CPNMDALEPIH_IMAP\
-    JCJGOEE\x10\xb5+\x12\x1c\n\x17CPNMDALEPIH_KHINBADNGON\x10\xea*\x12\x1c\n\
-    \x17CPNMDALEPIH_BBBONEFDADK\x10\xba*\x12\x1c\n\x17CPNMDALEPIH_CCDIOEFGIG\
-    J\x10\xbe+\x12\x1c\n\x17CPNMDALEPIH_FAHELCOEHBD\x10\xd2*\x12\x1c\n\x17CP\
-    NMDALEPIH_OJKOGPBLDDN\x10\xcf+\x12\x1c\n\x17CPNMDALEPIH_AEFNECDIIBA\x10\
-    \xfd*\x12\x1c\n\x17CPNMDALEPIH_GMNADLAPGHG\x10\xa4+\x12\x1c\n\x17CPNMDAL\
-    EPIH_PEHAKFOKBEB\x10\xff*\x12\x1c\n\x17CPNMDALEPIH_HIDFFHPODCC\x10\xa7*\
-    \x12\x1c\n\x17CPNMDALEPIH_NAMOCEFHNEA\x10\xc3+\x12\x1c\n\x17CPNMDALEPIH_\
-    NNFHOPNGHMN\x10\x9c*\x12\x1c\n\x17CPNMDALEPIH_APFKAOJNOBE\x10\xac+\x12\
-    \x1c\n\x17CPNMDALEPIH_BIODHAHAOJK\x10\xa2*\x12\x1c\n\x17CPNMDALEPIH_FMFJ\
-    JHCEOFO\x10\xf1*\x12\x1c\n\x17CPNMDALEPIH_AHINILHHNKM\x10\xf0*\x12\x1c\n\
-    \x17CPNMDALEPIH_GGJMLINKCIC\x10\xb6+\x12\x1c\n\x17CPNMDALEPIH_INNCJOEEIN\
-    E\x10\xa9*\x12\x1c\n\x17CPNMDALEPIH_AIDKNLIKODL\x10\xd4*\x12\x1c\n\x17CP\
-    NMDALEPIH_IGEEOGAEAJA\x10\x99*\x12\x1c\n\x17CPNMDALEPIH_BMMNDBOIONJ\x10\
-    \xc6+\x12\x1c\n\x17CPNMDALEPIH_KIBEGOCDDPA\x10\x94+\x12\x1c\n\x17CPNMDAL\
-    EPIH_CKNLBEMMDGC\x10\x91+\x12\x1c\n\x17CPNMDALEPIH_GBLCONIOGNK\x10\xe1*\
-    \x12\x1c\n\x17CPNMDALEPIH_DDMJJFHEBIF\x10\xc6*b\x06proto3\
+    \n\x17CmdChessRogueType.proto*\xae\x16\n\x11CmdChessRogueType\x12!\n\x1d\
+    CmdChessRogueType_MNFEPONEDDJ\x10\0\x12\"\n\x1dCmdChessRogueType_APBLBPF\
+    DEGH\x10\xab+\x12\"\n\x1dCmdChessRogueType_HCJDDLCDJOE\x10\xa2+\x12\"\n\
+    \x1dCmdChessRogueType_OLFMCBCINFH\x10\xb1+\x12\"\n\x1dCmdChessRogueType_\
+    BDDEBHAJMMF\x10\xd0+\x12\"\n\x1dCmdChessRogueType_ICAJINGOAON\x10\xda+\
+    \x12\"\n\x1dCmdChessRogueType_KNICDHMNDOB\x10\xc9*\x12\"\n\x1dCmdChessRo\
+    gueType_MKEHCFHPFDD\x10\xc4+\x12\"\n\x1dCmdChessRogueType_COIAEEBPFNN\
+    \x10\xf4*\x12\"\n\x1dCmdChessRogueType_NEMEENHMODE\x10\x9a*\x12\"\n\x1dC\
+    mdChessRogueType_CEBAPDNOGKP\x10\x9c+\x12\"\n\x1dCmdChessRogueType_AJPDH\
+    KIADCE\x10\xc6+\x12\"\n\x1dCmdChessRogueType_HCJJPLAFBIH\x10\x83+\x12\"\
+    \n\x1dCmdChessRogueType_JNEPALNMMHL\x10\xce+\x12\"\n\x1dCmdChessRogueTyp\
+    e_JBPBJDJONOA\x10\x9f*\x12\"\n\x1dCmdChessRogueType_HLIDPKOEHDD\x10\xe9*\
+    \x12\"\n\x1dCmdChessRogueType_NIFCKCCHNEC\x10\x86+\x12\"\n\x1dCmdChessRo\
+    gueType_ICAEGODDABJ\x10\xa0+\x12\"\n\x1dCmdChessRogueType_FKIEDOMAJNC\
+    \x10\xb8+\x12\"\n\x1dCmdChessRogueType_CAHMDIGNFBJ\x10\xb4+\x12\"\n\x1dC\
+    mdChessRogueType_BOLNFLCBOAI\x10\xdf*\x12\"\n\x1dCmdChessRogueType_HDJFF\
+    LFLEBE\x10\xd7+\x12\"\n\x1dCmdChessRogueType_NEAKEDLNBBH\x10\xfd*\x12\"\
+    \n\x1dCmdChessRogueType_CPCPJMHMAGM\x10\xac*\x12\"\n\x1dCmdChessRogueTyp\
+    e_FIAJGDJPNKK\x10\xe0+\x12\"\n\x1dCmdChessRogueType_OGAPEDJICJP\x10\xdb+\
+    \x12\"\n\x1dCmdChessRogueType_NOMJOEAAEJP\x10\xc7+\x12\"\n\x1dCmdChessRo\
+    gueType_LNNLECJHHDC\x10\xb6+\x12\"\n\x1dCmdChessRogueType_OFEFBLENFKH\
+    \x10\xb9*\x12\"\n\x1dCmdChessRogueType_ADFGONHLCAO\x10\xc1+\x12\"\n\x1dC\
+    mdChessRogueType_ODMBEHBJDEE\x10\xb7+\x12\"\n\x1dCmdChessRogueType_CAFID\
+    CDFCKL\x10\xdd*\x12\"\n\x1dCmdChessRogueType_CKDIGHHELCM\x10\xb1*\x12\"\
+    \n\x1dCmdChessRogueType_JLBMLMJCLJP\x10\xef*\x12\"\n\x1dCmdChessRogueTyp\
+    e_BFECDDOJHGD\x10\xe5*\x12\"\n\x1dCmdChessRogueType_LGADOJGNCFP\x10\x99+\
+    \x12\"\n\x1dCmdChessRogueType_KBEDDJOIKKE\x10\xa3+\x12\"\n\x1dCmdChessRo\
+    gueType_PFKLFOHMNJP\x10\xc6*\x12\"\n\x1dCmdChessRogueType_FAMMFKMFHFI\
+    \x10\xba*\x12\"\n\x1dCmdChessRogueType_NDOLCDLAOMJ\x10\x8a+\x12\"\n\x1dC\
+    mdChessRogueType_PKENEMLKIAI\x10\x87+\x12\"\n\x1dCmdChessRogueType_MMKGA\
+    CAILDA\x10\xa7+\x12\"\n\x1dCmdChessRogueType_AOFLBDDDFDB\x10\xa5+\x12\"\
+    \n\x1dCmdChessRogueType_EDIFFAEDKDA\x10\x99*\x12\"\n\x1dCmdChessRogueTyp\
+    e_MEKKLFCLJMN\x10\xcf+\x12\"\n\x1dCmdChessRogueType_AHNGOJLIOIO\x10\x98+\
+    \x12\"\n\x1dCmdChessRogueType_MFOLIJMHJAN\x10\xe0*\x12\"\n\x1dCmdChessRo\
+    gueType_FINCCAGGFBG\x10\xf0*\x12\"\n\x1dCmdChessRogueType_AMNGDPGIEPL\
+    \x10\xbe*\x12\"\n\x1dCmdChessRogueType_GGJBPLKPMGK\x10\xcb*\x12\"\n\x1dC\
+    mdChessRogueType_HANHOKHKICG\x10\xb6*\x12\"\n\x1dCmdChessRogueType_MGCCL\
+    PAKCKF\x10\xbf*\x12\"\n\x1dCmdChessRogueType_NJMPOIEHAMM\x10\xa4*\x12\"\
+    \n\x1dCmdChessRogueType_OKHJMHAHHJJ\x10\xfc*\x12\"\n\x1dCmdChessRogueTyp\
+    e_HKHBJABHFAK\x10\xf9*\x12\"\n\x1dCmdChessRogueType_OLBMNECCNLC\x10\x9d+\
+    \x12\"\n\x1dCmdChessRogueType_LCLMLAHEMOO\x10\xc1*\x12\"\n\x1dCmdChessRo\
+    gueType_ONKGHEFAMKH\x10\xb8*\x12\"\n\x1dCmdChessRogueType_DKJOMHIIONE\
+    \x10\x9b*\x12\"\n\x1dCmdChessRogueType_NCJMPABANCJ\x10\x9f+\x12\"\n\x1dC\
+    mdChessRogueType_BODODCJBHFE\x10\xf8*\x12\"\n\x1dCmdChessRogueType_NAHHF\
+    PDHPBA\x10\xce*\x12\"\n\x1dCmdChessRogueType_DOCOKNGABFL\x10\x8d+\x12\"\
+    \n\x1dCmdChessRogueType_HPJIFGCMLEO\x10\xa5*\x12\"\n\x1dCmdChessRogueTyp\
+    e_CKJEADGMBNH\x10\x91+\x12\"\n\x1dCmdChessRogueType_OJCEACONKHP\x10\xed*\
+    \x12\"\n\x1dCmdChessRogueType_MFDINMIBDFB\x10\xa7*\x12\"\n\x1dCmdChessRo\
+    gueType_KFEPOGMCKEM\x10\xb3*\x12\"\n\x1dCmdChessRogueType_PKEJHPGCHCO\
+    \x10\xd3+\x12\"\n\x1dCmdChessRogueType_JKHEOCPFCFB\x10\xd4+\x12\"\n\x1dC\
+    mdChessRogueType_LAMMDKEAFCH\x10\x94+\x12\"\n\x1dCmdChessRogueType_HGBBF\
+    KLIPHA\x10\x9c*\x12\"\n\x1dCmdChessRogueType_OLAOFFODGAH\x10\xf5*\x12\"\
+    \n\x1dCmdChessRogueType_OGKDEDMDBJO\x10\xf6*\x12\"\n\x1dCmdChessRogueTyp\
+    e_BKGFOLBPGAL\x10\xd9+\x12\"\n\x1dCmdChessRogueType_OMFIJOMANBF\x10\xb0*\
+    \x12\"\n\x1dCmdChessRogueType_JBIODJCJLIC\x10\x85+\x12\"\n\x1dCmdChessRo\
+    gueType_AGNEIMEPKCN\x10\xe8*\x12\"\n\x1dCmdChessRogueType_KAHHIKGODDP\
+    \x10\xdc*b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

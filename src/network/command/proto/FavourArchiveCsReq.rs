@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FavourArchiveCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FavourArchiveCsReq.HLBDDPDCFMH)
-    pub HLBDDPDCFMH: bool,
-    // @@protoc_insertion_point(field:FavourArchiveCsReq.FDLDLHOAJMB)
-    pub FDLDLHOAJMB: u32,
+    // @@protoc_insertion_point(field:FavourArchiveCsReq.EMPFMNAKGNC)
+    pub EMPFMNAKGNC: u32,
+    // @@protoc_insertion_point(field:FavourArchiveCsReq.KPKKBGHAABO)
+    pub KPKKBGHAABO: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FavourArchiveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FavourArchiveCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLBDDPDCFMH",
-            |m: &FavourArchiveCsReq| { &m.HLBDDPDCFMH },
-            |m: &mut FavourArchiveCsReq| { &mut m.HLBDDPDCFMH },
+            "EMPFMNAKGNC",
+            |m: &FavourArchiveCsReq| { &m.EMPFMNAKGNC },
+            |m: &mut FavourArchiveCsReq| { &mut m.EMPFMNAKGNC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FDLDLHOAJMB",
-            |m: &FavourArchiveCsReq| { &m.FDLDLHOAJMB },
-            |m: &mut FavourArchiveCsReq| { &mut m.FDLDLHOAJMB },
+            "KPKKBGHAABO",
+            |m: &FavourArchiveCsReq| { &m.KPKKBGHAABO },
+            |m: &mut FavourArchiveCsReq| { &mut m.KPKKBGHAABO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FavourArchiveCsReq>(
             "FavourArchiveCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.HLBDDPDCFMH = is.read_bool()?;
+                48 => {
+                    self.EMPFMNAKGNC = is.read_uint32()?;
                 },
-                120 => {
-                    self.FDLDLHOAJMB = is.read_uint32()?;
+                80 => {
+                    self.KPKKBGHAABO = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HLBDDPDCFMH != false {
-            my_size += 1 + 1;
+        if self.EMPFMNAKGNC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.EMPFMNAKGNC);
         }
-        if self.FDLDLHOAJMB != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.FDLDLHOAJMB);
+        if self.KPKKBGHAABO != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HLBDDPDCFMH != false {
-            os.write_bool(13, self.HLBDDPDCFMH)?;
+        if self.EMPFMNAKGNC != 0 {
+            os.write_uint32(6, self.EMPFMNAKGNC)?;
         }
-        if self.FDLDLHOAJMB != 0 {
-            os.write_uint32(15, self.FDLDLHOAJMB)?;
+        if self.KPKKBGHAABO != false {
+            os.write_bool(10, self.KPKKBGHAABO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     }
 
     fn clear(&mut self) {
-        self.HLBDDPDCFMH = false;
-        self.FDLDLHOAJMB = 0;
+        self.EMPFMNAKGNC = 0;
+        self.KPKKBGHAABO = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FavourArchiveCsReq {
         static instance: FavourArchiveCsReq = FavourArchiveCsReq {
-            HLBDDPDCFMH: false,
-            FDLDLHOAJMB: 0,
+            EMPFMNAKGNC: 0,
+            KPKKBGHAABO: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FavourArchiveCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18FavourArchiveCsReq.proto\"X\n\x12FavourArchiveCsReq\x12\x20\n\x0bH\
-    LBDDPDCFMH\x18\r\x20\x01(\x08R\x0bHLBDDPDCFMH\x12\x20\n\x0bFDLDLHOAJMB\
-    \x18\x0f\x20\x01(\rR\x0bFDLDLHOAJMBb\x06proto3\
+    \n\x18FavourArchiveCsReq.proto\"X\n\x12FavourArchiveCsReq\x12\x20\n\x0bE\
+    MPFMNAKGNC\x18\x06\x20\x01(\rR\x0bEMPFMNAKGNC\x12\x20\n\x0bKPKKBGHAABO\
+    \x18\n\x20\x01(\x08R\x0bKPKKBGHAABOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

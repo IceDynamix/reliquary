@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerReturnSignScRsp {
     // message fields
+    // @@protoc_insertion_point(field:PlayerReturnSignScRsp.IKGJBECOIHD)
+    pub IKGJBECOIHD: ::std::vec::Vec<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:PlayerReturnSignScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PlayerReturnSignScRsp.NFIMJKDGAIM)
-    pub NFIMJKDGAIM: ::std::vec::Vec<super::EBNGDFEDAGN::EBNGDFEDAGN>,
-    // @@protoc_insertion_point(field:PlayerReturnSignScRsp.GMOHOOFJJKN)
-    pub GMOHOOFJJKN: ::std::vec::Vec<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:PlayerReturnSignScRsp.MHIKDGCFJDE)
+    pub MHIKDGCFJDE: ::std::vec::Vec<super::DBJLEMLEIFI::DBJLEMLEIFI>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerReturnSignScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl PlayerReturnSignScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IKGJBECOIHD",
+            |m: &PlayerReturnSignScRsp| { &m.IKGJBECOIHD },
+            |m: &mut PlayerReturnSignScRsp| { &mut m.IKGJBECOIHD },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlayerReturnSignScRsp| { &m.retcode },
             |m: &mut PlayerReturnSignScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NFIMJKDGAIM",
-            |m: &PlayerReturnSignScRsp| { &m.NFIMJKDGAIM },
-            |m: &mut PlayerReturnSignScRsp| { &mut m.NFIMJKDGAIM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GMOHOOFJJKN",
-            |m: &PlayerReturnSignScRsp| { &m.GMOHOOFJJKN },
-            |m: &mut PlayerReturnSignScRsp| { &mut m.GMOHOOFJJKN },
+            "MHIKDGCFJDE",
+            |m: &PlayerReturnSignScRsp| { &m.MHIKDGCFJDE },
+            |m: &mut PlayerReturnSignScRsp| { &mut m.MHIKDGCFJDE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerReturnSignScRsp>(
             "PlayerReturnSignScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlayerReturnSignScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                98 => {
+                    self.IKGJBECOIHD.push(is.read_message()?);
+                },
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    self.NFIMJKDGAIM.push(is.read_message()?);
-                },
-                66 => {
-                    self.GMOHOOFJJKN.push(is.read_message()?);
+                90 => {
+                    self.MHIKDGCFJDE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for PlayerReturnSignScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        for value in &self.NFIMJKDGAIM {
+        for value in &self.IKGJBECOIHD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.GMOHOOFJJKN {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
+        for value in &self.MHIKDGCFJDE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,14 +124,14 @@ impl ::protobuf::Message for PlayerReturnSignScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
-        }
-        for v in &self.NFIMJKDGAIM {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.IKGJBECOIHD {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        for v in &self.GMOHOOFJJKN {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
+        }
+        for v in &self.MHIKDGCFJDE {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for PlayerReturnSignScRsp {
     }
 
     fn clear(&mut self) {
+        self.IKGJBECOIHD.clear();
         self.retcode = 0;
-        self.NFIMJKDGAIM.clear();
-        self.GMOHOOFJJKN.clear();
+        self.MHIKDGCFJDE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnSignScRsp {
         static instance: PlayerReturnSignScRsp = PlayerReturnSignScRsp {
+            IKGJBECOIHD: ::std::vec::Vec::new(),
             retcode: 0,
-            NFIMJKDGAIM: ::std::vec::Vec::new(),
-            GMOHOOFJJKN: ::std::vec::Vec::new(),
+            MHIKDGCFJDE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnSignScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bPlayerReturnSignScRsp.proto\x1a\x11EBNGDFEDAGN.proto\x1a\x0eItemLi\
-    st.proto\"\x8e\x01\n\x15PlayerReturnSignScRsp\x12\x18\n\x07retcode\x18\
-    \x0b\x20\x01(\rR\x07retcode\x12.\n\x0bNFIMJKDGAIM\x18\x0e\x20\x03(\x0b2\
-    \x0c.EBNGDFEDAGNR\x0bNFIMJKDGAIM\x12+\n\x0bGMOHOOFJJKN\x18\x08\x20\x03(\
-    \x0b2\t.ItemListR\x0bGMOHOOFJJKNb\x06proto3\
+    \n\x1bPlayerReturnSignScRsp.proto\x1a\x11DBJLEMLEIFI.proto\x1a\x0eItemLi\
+    st.proto\"\x8e\x01\n\x15PlayerReturnSignScRsp\x12+\n\x0bIKGJBECOIHD\x18\
+    \x0c\x20\x03(\x0b2\t.ItemListR\x0bIKGJBECOIHD\x12\x18\n\x07retcode\x18\
+    \x0f\x20\x01(\rR\x07retcode\x12.\n\x0bMHIKDGCFJDE\x18\x0b\x20\x03(\x0b2\
+    \x0c.DBJLEMLEIFIR\x0bMHIKDGCFJDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::EBNGDFEDAGN::file_descriptor().clone());
+            deps.push(super::DBJLEMLEIFI::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerReturnSignScRsp::generated_message_descriptor_data());

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightEquipmentInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightEquipmentInfo.is_temporary)
-    pub is_temporary: bool,
     // @@protoc_insertion_point(field:GridFightEquipmentInfo.unique_id)
     pub unique_id: u32,
-    // @@protoc_insertion_point(field:GridFightEquipmentInfo.convert_property_to_fixpoint)
-    pub convert_property_to_fixpoint: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:GridFightEquipmentInfo.grid_fight_equipment_id)
     pub grid_fight_equipment_id: u32,
+    // @@protoc_insertion_point(field:GridFightEquipmentInfo.is_temporary)
+    pub is_temporary: bool,
+    // @@protoc_insertion_point(field:GridFightEquipmentInfo.convert_property_to_fixpoint)
+    pub convert_property_to_fixpoint: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightEquipmentInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl GridFightEquipmentInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_temporary",
-            |m: &GridFightEquipmentInfo| { &m.is_temporary },
-            |m: &mut GridFightEquipmentInfo| { &mut m.is_temporary },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &GridFightEquipmentInfo| { &m.unique_id },
             |m: &mut GridFightEquipmentInfo| { &mut m.unique_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "convert_property_to_fixpoint",
-            |m: &GridFightEquipmentInfo| { &m.convert_property_to_fixpoint },
-            |m: &mut GridFightEquipmentInfo| { &mut m.convert_property_to_fixpoint },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "grid_fight_equipment_id",
             |m: &GridFightEquipmentInfo| { &m.grid_fight_equipment_id },
             |m: &mut GridFightEquipmentInfo| { &mut m.grid_fight_equipment_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_temporary",
+            |m: &GridFightEquipmentInfo| { &m.is_temporary },
+            |m: &mut GridFightEquipmentInfo| { &mut m.is_temporary },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "convert_property_to_fixpoint",
+            |m: &GridFightEquipmentInfo| { &m.convert_property_to_fixpoint },
+            |m: &mut GridFightEquipmentInfo| { &mut m.convert_property_to_fixpoint },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightEquipmentInfo>(
             "GridFightEquipmentInfo",
@@ -93,13 +93,16 @@ impl ::protobuf::Message for GridFightEquipmentInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.is_temporary = is.read_bool()?;
-                },
                 56 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                42 => {
+                88 => {
+                    self.grid_fight_equipment_id = is.read_uint32()?;
+                },
+                40 => {
+                    self.is_temporary = is.read_bool()?;
+                },
+                50 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -114,9 +117,6 @@ impl ::protobuf::Message for GridFightEquipmentInfo {
                     is.pop_limit(old_limit);
                     self.convert_property_to_fixpoint.insert(key, value);
                 },
-                80 => {
-                    self.grid_fight_equipment_id = is.read_uint32()?;
-                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -129,11 +129,14 @@ impl ::protobuf::Message for GridFightEquipmentInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_temporary != false {
-            my_size += 1 + 1;
-        }
         if self.unique_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.unique_id);
+        }
+        if self.grid_fight_equipment_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.grid_fight_equipment_id);
+        }
+        if self.is_temporary != false {
+            my_size += 1 + 1;
         }
         for (k, v) in &self.convert_property_to_fixpoint {
             let mut entry_size = 0;
@@ -141,33 +144,30 @@ impl ::protobuf::Message for GridFightEquipmentInfo {
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.grid_fight_equipment_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.grid_fight_equipment_id);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_temporary != false {
-            os.write_bool(9, self.is_temporary)?;
-        }
         if self.unique_id != 0 {
             os.write_uint32(7, self.unique_id)?;
+        }
+        if self.grid_fight_equipment_id != 0 {
+            os.write_uint32(11, self.grid_fight_equipment_id)?;
+        }
+        if self.is_temporary != false {
+            os.write_bool(5, self.is_temporary)?;
         }
         for (k, v) in &self.convert_property_to_fixpoint {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(42)?; // Tag.
+            os.write_raw_varint32(50)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.grid_fight_equipment_id != 0 {
-            os.write_uint32(10, self.grid_fight_equipment_id)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -185,10 +185,10 @@ impl ::protobuf::Message for GridFightEquipmentInfo {
     }
 
     fn clear(&mut self) {
-        self.is_temporary = false;
         self.unique_id = 0;
-        self.convert_property_to_fixpoint.clear();
         self.grid_fight_equipment_id = 0;
+        self.is_temporary = false;
+        self.convert_property_to_fixpoint.clear();
         self.special_fields.clear();
     }
 
@@ -217,13 +217,13 @@ impl ::protobuf::reflect::ProtobufValue for GridFightEquipmentInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGridFightEquipmentInfo.proto\"\xd6\x02\n\x16GridFightEquipmentInfo\
-    \x12!\n\x0cis_temporary\x18\t\x20\x01(\x08R\x0bisTemporary\x12\x1b\n\tun\
-    ique_id\x18\x07\x20\x01(\rR\x08uniqueId\x12w\n\x1cconvert_property_to_fi\
-    xpoint\x18\x05\x20\x03(\x0b26.GridFightEquipmentInfo.ConvertPropertyToFi\
-    xpointEntryR\x19convertPropertyToFixpoint\x125\n\x17grid_fight_equipment\
-    _id\x18\n\x20\x01(\rR\x14gridFightEquipmentId\x1aL\n\x1eConvertPropertyT\
-    oFixpointEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05\
-    value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
+    \x12\x1b\n\tunique_id\x18\x07\x20\x01(\rR\x08uniqueId\x125\n\x17grid_fig\
+    ht_equipment_id\x18\x0b\x20\x01(\rR\x14gridFightEquipmentId\x12!\n\x0cis\
+    _temporary\x18\x05\x20\x01(\x08R\x0bisTemporary\x12w\n\x1cconvert_proper\
+    ty_to_fixpoint\x18\x06\x20\x03(\x0b26.GridFightEquipmentInfo.ConvertProp\
+    ertyToFixpointEntryR\x19convertPropertyToFixpoint\x1aL\n\x1eConvertPrope\
+    rtyToFixpointEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\x14\n\
+    \x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

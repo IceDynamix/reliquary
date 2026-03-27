@@ -36,8 +36,8 @@ pub struct Dispatch {
     pub top_sever_region_name: ::std::string::String,
     // @@protoc_insertion_point(field:Dispatch.region_list)
     pub region_list: ::std::vec::Vec<super::RegionInfo::RegionInfo>,
-    // @@protoc_insertion_point(field:Dispatch.stop_desc)
-    pub stop_desc: ::std::string::String,
+    // @@protoc_insertion_point(field:Dispatch.GKCGEDNLDPD)
+    pub GKCGEDNLDPD: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:Dispatch.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -78,9 +78,9 @@ impl Dispatch {
             |m: &mut Dispatch| { &mut m.region_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stop_desc",
-            |m: &Dispatch| { &m.stop_desc },
-            |m: &mut Dispatch| { &mut m.stop_desc },
+            "GKCGEDNLDPD",
+            |m: &Dispatch| { &m.GKCGEDNLDPD },
+            |m: &mut Dispatch| { &mut m.GKCGEDNLDPD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<Dispatch>(
             "Dispatch",
@@ -113,7 +113,7 @@ impl ::protobuf::Message for Dispatch {
                     self.region_list.push(is.read_message()?);
                 },
                 42 => {
-                    self.stop_desc = is.read_string()?;
+                    self.GKCGEDNLDPD = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,8 +140,8 @@ impl ::protobuf::Message for Dispatch {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if !self.stop_desc.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.stop_desc);
+        if !self.GKCGEDNLDPD.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.GKCGEDNLDPD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -161,8 +161,8 @@ impl ::protobuf::Message for Dispatch {
         for v in &self.region_list {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if !self.stop_desc.is_empty() {
-            os.write_string(5, &self.stop_desc)?;
+        if !self.GKCGEDNLDPD.is_empty() {
+            os.write_string(5, &self.GKCGEDNLDPD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,7 +185,7 @@ impl ::protobuf::Message for Dispatch {
         self.msg.clear();
         self.top_sever_region_name.clear();
         self.region_list.clear();
-        self.stop_desc.clear();
+        self.GKCGEDNLDPD.clear();
         self.special_fields.clear();
     }
 
@@ -195,7 +195,7 @@ impl ::protobuf::Message for Dispatch {
             msg: ::std::string::String::new(),
             top_sever_region_name: ::std::string::String::new(),
             region_list: ::std::vec::Vec::new(),
-            stop_desc: ::std::string::String::new(),
+            GKCGEDNLDPD: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,12 +220,12 @@ impl ::protobuf::reflect::ProtobufValue for Dispatch {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eDispatch.proto\x1a\x10RegionInfo.proto\"\xb4\x01\n\x08Dispatch\x12\
+    \n\x0eDispatch.proto\x1a\x10RegionInfo.proto\"\xb9\x01\n\x08Dispatch\x12\
     \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x10\n\x03msg\x18\
     \x02\x20\x01(\tR\x03msg\x121\n\x15top_sever_region_name\x18\x03\x20\x01(\
     \tR\x12topSeverRegionName\x12,\n\x0bregion_list\x18\x04\x20\x03(\x0b2\
-    \x0b.RegionInfoR\nregionList\x12\x1b\n\tstop_desc\x18\x05\x20\x01(\tR\
-    \x08stopDescb\x06proto3\
+    \x0b.RegionInfoR\nregionList\x12\x20\n\x0bGKCGEDNLDPD\x18\x05\x20\x01(\t\
+    R\x0bGKCGEDNLDPDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,7 +82,7 @@ impl ::protobuf::Message for GridFightRoleGoodsInfo {
                 72 => {
                     self.role_star = is.read_uint32()?;
                 },
-                24 => {
+                88 => {
                     self.role_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for GridFightRoleGoodsInfo {
             my_size += ::protobuf::rt::uint32_size(9, self.role_star);
         }
         if self.role_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.role_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.role_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for GridFightRoleGoodsInfo {
             os.write_uint32(9, self.role_star)?;
         }
         if self.role_id != 0 {
-            os.write_uint32(3, self.role_id)?;
+            os.write_uint32(11, self.role_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for GridFightRoleGoodsInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGridFightRoleGoodsInfo.proto\"N\n\x16GridFightRoleGoodsInfo\x12\
     \x1b\n\trole_star\x18\t\x20\x01(\rR\x08roleStar\x12\x17\n\x07role_id\x18\
-    \x03\x20\x01(\rR\x06roleIdb\x06proto3\
+    \x0b\x20\x01(\rR\x06roleIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

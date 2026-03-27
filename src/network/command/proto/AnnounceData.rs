@@ -32,22 +32,22 @@ pub struct AnnounceData {
     pub end_time: i64,
     // @@protoc_insertion_point(field:AnnounceData.center_system_frequency)
     pub center_system_frequency: u32,
-    // @@protoc_insertion_point(field:AnnounceData.emergency_text)
-    pub emergency_text: ::std::string::String,
-    // @@protoc_insertion_point(field:AnnounceData.CCILLGBJMJM)
-    pub CCILLGBJMJM: ::std::string::String,
-    // @@protoc_insertion_point(field:AnnounceData.config_id)
-    pub config_id: u32,
-    // @@protoc_insertion_point(field:AnnounceData.CJDEBEDABOL)
-    pub CJDEBEDABOL: bool,
-    // @@protoc_insertion_point(field:AnnounceData.banner_text)
-    pub banner_text: ::std::string::String,
-    // @@protoc_insertion_point(field:AnnounceData.has_recommand)
-    pub has_recommand: bool,
     // @@protoc_insertion_point(field:AnnounceData.banner_frequency)
     pub banner_frequency: u32,
+    // @@protoc_insertion_point(field:AnnounceData.has_recommand)
+    pub has_recommand: bool,
+    // @@protoc_insertion_point(field:AnnounceData.emergency_text)
+    pub emergency_text: ::std::string::String,
+    // @@protoc_insertion_point(field:AnnounceData.config_id)
+    pub config_id: u32,
+    // @@protoc_insertion_point(field:AnnounceData.banner_text)
+    pub banner_text: ::std::string::String,
     // @@protoc_insertion_point(field:AnnounceData.begin_time)
     pub begin_time: i64,
+    // @@protoc_insertion_point(field:AnnounceData.MIMMLJKJBIL)
+    pub MIMMLJKJBIL: bool,
+    // @@protoc_insertion_point(field:AnnounceData.FHDDMGMDBOL)
+    pub FHDDMGMDBOL: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:AnnounceData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -78,29 +78,9 @@ impl AnnounceData {
             |m: &mut AnnounceData| { &mut m.center_system_frequency },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "emergency_text",
-            |m: &AnnounceData| { &m.emergency_text },
-            |m: &mut AnnounceData| { &mut m.emergency_text },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CCILLGBJMJM",
-            |m: &AnnounceData| { &m.CCILLGBJMJM },
-            |m: &mut AnnounceData| { &mut m.CCILLGBJMJM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &AnnounceData| { &m.config_id },
-            |m: &mut AnnounceData| { &mut m.config_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJDEBEDABOL",
-            |m: &AnnounceData| { &m.CJDEBEDABOL },
-            |m: &mut AnnounceData| { &mut m.CJDEBEDABOL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "banner_text",
-            |m: &AnnounceData| { &m.banner_text },
-            |m: &mut AnnounceData| { &mut m.banner_text },
+            "banner_frequency",
+            |m: &AnnounceData| { &m.banner_frequency },
+            |m: &mut AnnounceData| { &mut m.banner_frequency },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "has_recommand",
@@ -108,14 +88,34 @@ impl AnnounceData {
             |m: &mut AnnounceData| { &mut m.has_recommand },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "banner_frequency",
-            |m: &AnnounceData| { &m.banner_frequency },
-            |m: &mut AnnounceData| { &mut m.banner_frequency },
+            "emergency_text",
+            |m: &AnnounceData| { &m.emergency_text },
+            |m: &mut AnnounceData| { &mut m.emergency_text },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "config_id",
+            |m: &AnnounceData| { &m.config_id },
+            |m: &mut AnnounceData| { &mut m.config_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "banner_text",
+            |m: &AnnounceData| { &m.banner_text },
+            |m: &mut AnnounceData| { &mut m.banner_text },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "begin_time",
             |m: &AnnounceData| { &m.begin_time },
             |m: &mut AnnounceData| { &mut m.begin_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MIMMLJKJBIL",
+            |m: &AnnounceData| { &m.MIMMLJKJBIL },
+            |m: &mut AnnounceData| { &mut m.MIMMLJKJBIL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FHDDMGMDBOL",
+            |m: &AnnounceData| { &m.FHDDMGMDBOL },
+            |m: &mut AnnounceData| { &mut m.FHDDMGMDBOL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AnnounceData>(
             "AnnounceData",
@@ -135,35 +135,35 @@ impl ::protobuf::Message for AnnounceData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                88 => {
                     self.end_time = is.read_int64()?;
                 },
-                8 => {
+                80 => {
                     self.center_system_frequency = is.read_uint32()?;
                 },
-                122 => {
-                    self.emergency_text = is.read_string()?;
-                },
-                82 => {
-                    self.CCILLGBJMJM = is.read_string()?;
-                },
-                24 => {
-                    self.config_id = is.read_uint32()?;
-                },
                 48 => {
-                    self.CJDEBEDABOL = is.read_bool()?;
-                },
-                18 => {
-                    self.banner_text = is.read_string()?;
-                },
-                64 => {
-                    self.has_recommand = is.read_bool()?;
-                },
-                104 => {
                     self.banner_frequency = is.read_uint32()?;
                 },
-                88 => {
+                32 => {
+                    self.has_recommand = is.read_bool()?;
+                },
+                26 => {
+                    self.emergency_text = is.read_string()?;
+                },
+                104 => {
+                    self.config_id = is.read_uint32()?;
+                },
+                10 => {
+                    self.banner_text = is.read_string()?;
+                },
+                56 => {
                     self.begin_time = is.read_int64()?;
+                },
+                40 => {
+                    self.MIMMLJKJBIL = is.read_bool()?;
+                },
+                74 => {
+                    self.FHDDMGMDBOL = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -178,34 +178,34 @@ impl ::protobuf::Message for AnnounceData {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(14, self.end_time);
+            my_size += ::protobuf::rt::int64_size(11, self.end_time);
         }
         if self.center_system_frequency != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.center_system_frequency);
+            my_size += ::protobuf::rt::uint32_size(10, self.center_system_frequency);
         }
-        if !self.emergency_text.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.emergency_text);
-        }
-        if !self.CCILLGBJMJM.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.CCILLGBJMJM);
-        }
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.config_id);
-        }
-        if self.CJDEBEDABOL != false {
-            my_size += 1 + 1;
-        }
-        if !self.banner_text.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.banner_text);
+        if self.banner_frequency != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.banner_frequency);
         }
         if self.has_recommand != false {
             my_size += 1 + 1;
         }
-        if self.banner_frequency != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.banner_frequency);
+        if !self.emergency_text.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.emergency_text);
+        }
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.config_id);
+        }
+        if !self.banner_text.is_empty() {
+            my_size += ::protobuf::rt::string_size(1, &self.banner_text);
         }
         if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(11, self.begin_time);
+            my_size += ::protobuf::rt::int64_size(7, self.begin_time);
+        }
+        if self.MIMMLJKJBIL != false {
+            my_size += 1 + 1;
+        }
+        if !self.FHDDMGMDBOL.is_empty() {
+            my_size += ::protobuf::rt::string_size(9, &self.FHDDMGMDBOL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -214,34 +214,34 @@ impl ::protobuf::Message for AnnounceData {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.end_time != 0 {
-            os.write_int64(14, self.end_time)?;
+            os.write_int64(11, self.end_time)?;
         }
         if self.center_system_frequency != 0 {
-            os.write_uint32(1, self.center_system_frequency)?;
-        }
-        if !self.emergency_text.is_empty() {
-            os.write_string(15, &self.emergency_text)?;
-        }
-        if !self.CCILLGBJMJM.is_empty() {
-            os.write_string(10, &self.CCILLGBJMJM)?;
-        }
-        if self.config_id != 0 {
-            os.write_uint32(3, self.config_id)?;
-        }
-        if self.CJDEBEDABOL != false {
-            os.write_bool(6, self.CJDEBEDABOL)?;
-        }
-        if !self.banner_text.is_empty() {
-            os.write_string(2, &self.banner_text)?;
-        }
-        if self.has_recommand != false {
-            os.write_bool(8, self.has_recommand)?;
+            os.write_uint32(10, self.center_system_frequency)?;
         }
         if self.banner_frequency != 0 {
-            os.write_uint32(13, self.banner_frequency)?;
+            os.write_uint32(6, self.banner_frequency)?;
+        }
+        if self.has_recommand != false {
+            os.write_bool(4, self.has_recommand)?;
+        }
+        if !self.emergency_text.is_empty() {
+            os.write_string(3, &self.emergency_text)?;
+        }
+        if self.config_id != 0 {
+            os.write_uint32(13, self.config_id)?;
+        }
+        if !self.banner_text.is_empty() {
+            os.write_string(1, &self.banner_text)?;
         }
         if self.begin_time != 0 {
-            os.write_int64(11, self.begin_time)?;
+            os.write_int64(7, self.begin_time)?;
+        }
+        if self.MIMMLJKJBIL != false {
+            os.write_bool(5, self.MIMMLJKJBIL)?;
+        }
+        if !self.FHDDMGMDBOL.is_empty() {
+            os.write_string(9, &self.FHDDMGMDBOL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -262,14 +262,14 @@ impl ::protobuf::Message for AnnounceData {
     fn clear(&mut self) {
         self.end_time = 0;
         self.center_system_frequency = 0;
-        self.emergency_text.clear();
-        self.CCILLGBJMJM.clear();
-        self.config_id = 0;
-        self.CJDEBEDABOL = false;
-        self.banner_text.clear();
-        self.has_recommand = false;
         self.banner_frequency = 0;
+        self.has_recommand = false;
+        self.emergency_text.clear();
+        self.config_id = 0;
+        self.banner_text.clear();
         self.begin_time = 0;
+        self.MIMMLJKJBIL = false;
+        self.FHDDMGMDBOL.clear();
         self.special_fields.clear();
     }
 
@@ -277,14 +277,14 @@ impl ::protobuf::Message for AnnounceData {
         static instance: AnnounceData = AnnounceData {
             end_time: 0,
             center_system_frequency: 0,
-            emergency_text: ::std::string::String::new(),
-            CCILLGBJMJM: ::std::string::String::new(),
-            config_id: 0,
-            CJDEBEDABOL: false,
-            banner_text: ::std::string::String::new(),
-            has_recommand: false,
             banner_frequency: 0,
+            has_recommand: false,
+            emergency_text: ::std::string::String::new(),
+            config_id: 0,
+            banner_text: ::std::string::String::new(),
             begin_time: 0,
+            MIMMLJKJBIL: false,
+            FHDDMGMDBOL: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -310,15 +310,15 @@ impl ::protobuf::reflect::ProtobufValue for AnnounceData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12AnnounceData.proto\"\xf9\x02\n\x0cAnnounceData\x12\x19\n\x08end_ti\
-    me\x18\x0e\x20\x01(\x03R\x07endTime\x126\n\x17center_system_frequency\
-    \x18\x01\x20\x01(\rR\x15centerSystemFrequency\x12%\n\x0eemergency_text\
-    \x18\x0f\x20\x01(\tR\remergencyText\x12\x20\n\x0bCCILLGBJMJM\x18\n\x20\
-    \x01(\tR\x0bCCILLGBJMJM\x12\x1b\n\tconfig_id\x18\x03\x20\x01(\rR\x08conf\
-    igId\x12\x20\n\x0bCJDEBEDABOL\x18\x06\x20\x01(\x08R\x0bCJDEBEDABOL\x12\
-    \x1f\n\x0bbanner_text\x18\x02\x20\x01(\tR\nbannerText\x12#\n\rhas_recomm\
-    and\x18\x08\x20\x01(\x08R\x0chasRecommand\x12)\n\x10banner_frequency\x18\
-    \r\x20\x01(\rR\x0fbannerFrequency\x12\x1d\n\nbegin_time\x18\x0b\x20\x01(\
-    \x03R\tbeginTimeb\x06proto3\
+    me\x18\x0b\x20\x01(\x03R\x07endTime\x126\n\x17center_system_frequency\
+    \x18\n\x20\x01(\rR\x15centerSystemFrequency\x12)\n\x10banner_frequency\
+    \x18\x06\x20\x01(\rR\x0fbannerFrequency\x12#\n\rhas_recommand\x18\x04\
+    \x20\x01(\x08R\x0chasRecommand\x12%\n\x0eemergency_text\x18\x03\x20\x01(\
+    \tR\remergencyText\x12\x1b\n\tconfig_id\x18\r\x20\x01(\rR\x08configId\
+    \x12\x1f\n\x0bbanner_text\x18\x01\x20\x01(\tR\nbannerText\x12\x1d\n\nbeg\
+    in_time\x18\x07\x20\x01(\x03R\tbeginTime\x12\x20\n\x0bMIMMLJKJBIL\x18\
+    \x05\x20\x01(\x08R\x0bMIMMLJKJBIL\x12\x20\n\x0bFHDDMGMDBOL\x18\t\x20\x01\
+    (\tR\x0bFHDDMGMDBOLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

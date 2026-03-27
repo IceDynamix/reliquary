@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightEncounterInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightEncounterInfo.HIDDBHHBNJA)
-    pub HIDDBHHBNJA: u32,
-    // @@protoc_insertion_point(field:GridFightEncounterInfo.NHPFNLCBLKC)
-    pub NHPFNLCBLKC: u32,
-    // @@protoc_insertion_point(field:GridFightEncounterInfo.AAEJDJKJJHD)
-    pub AAEJDJKJJHD: u32,
-    // @@protoc_insertion_point(field:GridFightEncounterInfo.HEGKMHLDOMJ)
-    pub HEGKMHLDOMJ: ::protobuf::MessageField<super::GridFightDropInfo::GridFightDropInfo>,
+    // @@protoc_insertion_point(field:GridFightEncounterInfo.MCNMGKDFAFF)
+    pub MCNMGKDFAFF: u32,
+    // @@protoc_insertion_point(field:GridFightEncounterInfo.PGFACOLMBCN)
+    pub PGFACOLMBCN: ::protobuf::MessageField<super::GridFightDropInfo::GridFightDropInfo>,
+    // @@protoc_insertion_point(field:GridFightEncounterInfo.KJEAPGLPFHD)
+    pub KJEAPGLPFHD: u32,
     // @@protoc_insertion_point(field:GridFightEncounterInfo.monster_wave_list)
     pub monster_wave_list: ::std::vec::Vec<super::GridEncounterMonsterWave::GridEncounterMonsterWave>,
+    // @@protoc_insertion_point(field:GridFightEncounterInfo.EPNCHDJFLMO)
+    pub EPNCHDJFLMO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightEncounterInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl GridFightEncounterInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIDDBHHBNJA",
-            |m: &GridFightEncounterInfo| { &m.HIDDBHHBNJA },
-            |m: &mut GridFightEncounterInfo| { &mut m.HIDDBHHBNJA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NHPFNLCBLKC",
-            |m: &GridFightEncounterInfo| { &m.NHPFNLCBLKC },
-            |m: &mut GridFightEncounterInfo| { &mut m.NHPFNLCBLKC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AAEJDJKJJHD",
-            |m: &GridFightEncounterInfo| { &m.AAEJDJKJJHD },
-            |m: &mut GridFightEncounterInfo| { &mut m.AAEJDJKJJHD },
+            "MCNMGKDFAFF",
+            |m: &GridFightEncounterInfo| { &m.MCNMGKDFAFF },
+            |m: &mut GridFightEncounterInfo| { &mut m.MCNMGKDFAFF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightDropInfo::GridFightDropInfo>(
-            "HEGKMHLDOMJ",
-            |m: &GridFightEncounterInfo| { &m.HEGKMHLDOMJ },
-            |m: &mut GridFightEncounterInfo| { &mut m.HEGKMHLDOMJ },
+            "PGFACOLMBCN",
+            |m: &GridFightEncounterInfo| { &m.PGFACOLMBCN },
+            |m: &mut GridFightEncounterInfo| { &mut m.PGFACOLMBCN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KJEAPGLPFHD",
+            |m: &GridFightEncounterInfo| { &m.KJEAPGLPFHD },
+            |m: &mut GridFightEncounterInfo| { &mut m.KJEAPGLPFHD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "monster_wave_list",
             |m: &GridFightEncounterInfo| { &m.monster_wave_list },
             |m: &mut GridFightEncounterInfo| { &mut m.monster_wave_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EPNCHDJFLMO",
+            |m: &GridFightEncounterInfo| { &m.EPNCHDJFLMO },
+            |m: &mut GridFightEncounterInfo| { &mut m.EPNCHDJFLMO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightEncounterInfo>(
             "GridFightEncounterInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GridFightEncounterInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.HIDDBHHBNJA = is.read_uint32()?;
-                },
-                40 => {
-                    self.NHPFNLCBLKC = is.read_uint32()?;
-                },
-                72 => {
-                    self.AAEJDJKJJHD = is.read_uint32()?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HEGKMHLDOMJ)?;
+                32 => {
+                    self.MCNMGKDFAFF = is.read_uint32()?;
                 },
                 10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PGFACOLMBCN)?;
+                },
+                64 => {
+                    self.KJEAPGLPFHD = is.read_uint32()?;
+                },
+                90 => {
                     self.monster_wave_list.push(is.read_message()?);
+                },
+                56 => {
+                    self.EPNCHDJFLMO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,44 +127,44 @@ impl ::protobuf::Message for GridFightEncounterInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HIDDBHHBNJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HIDDBHHBNJA);
+        if self.MCNMGKDFAFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.MCNMGKDFAFF);
         }
-        if self.NHPFNLCBLKC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NHPFNLCBLKC);
-        }
-        if self.AAEJDJKJJHD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.AAEJDJKJJHD);
-        }
-        if let Some(v) = self.HEGKMHLDOMJ.as_ref() {
+        if let Some(v) = self.PGFACOLMBCN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.KJEAPGLPFHD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.KJEAPGLPFHD);
         }
         for value in &self.monster_wave_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.EPNCHDJFLMO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.EPNCHDJFLMO);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HIDDBHHBNJA != 0 {
-            os.write_uint32(8, self.HIDDBHHBNJA)?;
+        if self.MCNMGKDFAFF != 0 {
+            os.write_uint32(4, self.MCNMGKDFAFF)?;
         }
-        if self.NHPFNLCBLKC != 0 {
-            os.write_uint32(5, self.NHPFNLCBLKC)?;
+        if let Some(v) = self.PGFACOLMBCN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
-        if self.AAEJDJKJJHD != 0 {
-            os.write_uint32(9, self.AAEJDJKJJHD)?;
-        }
-        if let Some(v) = self.HEGKMHLDOMJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.KJEAPGLPFHD != 0 {
+            os.write_uint32(8, self.KJEAPGLPFHD)?;
         }
         for v in &self.monster_wave_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
+        if self.EPNCHDJFLMO != 0 {
+            os.write_uint32(7, self.EPNCHDJFLMO)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,21 +182,21 @@ impl ::protobuf::Message for GridFightEncounterInfo {
     }
 
     fn clear(&mut self) {
-        self.HIDDBHHBNJA = 0;
-        self.NHPFNLCBLKC = 0;
-        self.AAEJDJKJJHD = 0;
-        self.HEGKMHLDOMJ.clear();
+        self.MCNMGKDFAFF = 0;
+        self.PGFACOLMBCN.clear();
+        self.KJEAPGLPFHD = 0;
         self.monster_wave_list.clear();
+        self.EPNCHDJFLMO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightEncounterInfo {
         static instance: GridFightEncounterInfo = GridFightEncounterInfo {
-            HIDDBHHBNJA: 0,
-            NHPFNLCBLKC: 0,
-            AAEJDJKJJHD: 0,
-            HEGKMHLDOMJ: ::protobuf::MessageField::none(),
+            MCNMGKDFAFF: 0,
+            PGFACOLMBCN: ::protobuf::MessageField::none(),
+            KJEAPGLPFHD: 0,
             monster_wave_list: ::std::vec::Vec::new(),
+            EPNCHDJFLMO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,12 +223,12 @@ impl ::protobuf::reflect::ProtobufValue for GridFightEncounterInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGridFightEncounterInfo.proto\x1a\x1eGridEncounterMonsterWave.proto\
     \x1a\x17GridFightDropInfo.proto\"\xfb\x01\n\x16GridFightEncounterInfo\
-    \x12\x20\n\x0bHIDDBHHBNJA\x18\x08\x20\x01(\rR\x0bHIDDBHHBNJA\x12\x20\n\
-    \x0bNHPFNLCBLKC\x18\x05\x20\x01(\rR\x0bNHPFNLCBLKC\x12\x20\n\x0bAAEJDJKJ\
-    JHD\x18\t\x20\x01(\rR\x0bAAEJDJKJJHD\x124\n\x0bHEGKMHLDOMJ\x18\x0b\x20\
-    \x01(\x0b2\x12.GridFightDropInfoR\x0bHEGKMHLDOMJ\x12E\n\x11monster_wave_\
-    list\x18\x01\x20\x03(\x0b2\x19.GridEncounterMonsterWaveR\x0fmonsterWaveL\
-    istb\x06proto3\
+    \x12\x20\n\x0bMCNMGKDFAFF\x18\x04\x20\x01(\rR\x0bMCNMGKDFAFF\x124\n\x0bP\
+    GFACOLMBCN\x18\x01\x20\x01(\x0b2\x12.GridFightDropInfoR\x0bPGFACOLMBCN\
+    \x12\x20\n\x0bKJEAPGLPFHD\x18\x08\x20\x01(\rR\x0bKJEAPGLPFHD\x12E\n\x11m\
+    onster_wave_list\x18\x0b\x20\x03(\x0b2\x19.GridEncounterMonsterWaveR\x0f\
+    monsterWaveList\x12\x20\n\x0bEPNCHDJFLMO\x18\x07\x20\x01(\rR\x0bEPNCHDJF\
+    LMOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicSettleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.PODOGBIOHLO)
-    pub PODOGBIOHLO: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.CLPJPJPMCFC)
-    pub CLPJPJPMCFC: ::protobuf::MessageField<super::AENDEINNBIN::AENDEINNBIN>,
-    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.ILNFPPFAKJA)
-    pub ILNFPPFAKJA: ::protobuf::MessageField<super::MCOLIGLOODH::MCOLIGLOODH>,
+    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.GMKBAIEIKOP)
+    pub GMKBAIEIKOP: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.FNHOJKNAPFA)
+    pub FNHOJKNAPFA: ::protobuf::MessageField<super::HGOAJHCGGCO::HGOAJHCGGCO>,
     // @@protoc_insertion_point(field:RogueMagicSettleScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.KNIPBHGCILA)
-    pub KNIPBHGCILA: ::protobuf::MessageField<super::JOLEAEKGMBM::JOLEAEKGMBM>,
+    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.DACAGELDCPM)
+    pub DACAGELDCPM: ::protobuf::MessageField<super::LGGANOJJOEC::LGGANOJJOEC>,
+    // @@protoc_insertion_point(field:RogueMagicSettleScRsp.KPDONNGCDAM)
+    pub KPDONNGCDAM: ::protobuf::MessageField<super::LENEGEIDKOJ::LENEGEIDKOJ>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicSettleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl RogueMagicSettleScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "PODOGBIOHLO",
-            |m: &RogueMagicSettleScRsp| { &m.PODOGBIOHLO },
-            |m: &mut RogueMagicSettleScRsp| { &mut m.PODOGBIOHLO },
+            "GMKBAIEIKOP",
+            |m: &RogueMagicSettleScRsp| { &m.GMKBAIEIKOP },
+            |m: &mut RogueMagicSettleScRsp| { &mut m.GMKBAIEIKOP },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AENDEINNBIN::AENDEINNBIN>(
-            "CLPJPJPMCFC",
-            |m: &RogueMagicSettleScRsp| { &m.CLPJPJPMCFC },
-            |m: &mut RogueMagicSettleScRsp| { &mut m.CLPJPJPMCFC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MCOLIGLOODH::MCOLIGLOODH>(
-            "ILNFPPFAKJA",
-            |m: &RogueMagicSettleScRsp| { &m.ILNFPPFAKJA },
-            |m: &mut RogueMagicSettleScRsp| { &mut m.ILNFPPFAKJA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HGOAJHCGGCO::HGOAJHCGGCO>(
+            "FNHOJKNAPFA",
+            |m: &RogueMagicSettleScRsp| { &m.FNHOJKNAPFA },
+            |m: &mut RogueMagicSettleScRsp| { &mut m.FNHOJKNAPFA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueMagicSettleScRsp| { &m.retcode },
             |m: &mut RogueMagicSettleScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JOLEAEKGMBM::JOLEAEKGMBM>(
-            "KNIPBHGCILA",
-            |m: &RogueMagicSettleScRsp| { &m.KNIPBHGCILA },
-            |m: &mut RogueMagicSettleScRsp| { &mut m.KNIPBHGCILA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LGGANOJJOEC::LGGANOJJOEC>(
+            "DACAGELDCPM",
+            |m: &RogueMagicSettleScRsp| { &m.DACAGELDCPM },
+            |m: &mut RogueMagicSettleScRsp| { &mut m.DACAGELDCPM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LENEGEIDKOJ::LENEGEIDKOJ>(
+            "KPDONNGCDAM",
+            |m: &RogueMagicSettleScRsp| { &m.KPDONNGCDAM },
+            |m: &mut RogueMagicSettleScRsp| { &mut m.KPDONNGCDAM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicSettleScRsp>(
             "RogueMagicSettleScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PODOGBIOHLO)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GMKBAIEIKOP)?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLPJPJPMCFC)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FNHOJKNAPFA)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ILNFPPFAKJA)?;
-                },
-                72 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNIPBHGCILA)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DACAGELDCPM)?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KPDONNGCDAM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,22 +127,22 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PODOGBIOHLO.as_ref() {
+        if let Some(v) = self.GMKBAIEIKOP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CLPJPJPMCFC.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.ILNFPPFAKJA.as_ref() {
+        if let Some(v) = self.FNHOJKNAPFA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        if let Some(v) = self.KNIPBHGCILA.as_ref() {
+        if let Some(v) = self.DACAGELDCPM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.KPDONNGCDAM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -152,20 +152,20 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PODOGBIOHLO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.GMKBAIEIKOP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if let Some(v) = self.CLPJPJPMCFC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
-        if let Some(v) = self.ILNFPPFAKJA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.FNHOJKNAPFA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
-        if let Some(v) = self.KNIPBHGCILA.as_ref() {
+        if let Some(v) = self.DACAGELDCPM.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.KPDONNGCDAM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,21 +184,21 @@ impl ::protobuf::Message for RogueMagicSettleScRsp {
     }
 
     fn clear(&mut self) {
-        self.PODOGBIOHLO.clear();
-        self.CLPJPJPMCFC.clear();
-        self.ILNFPPFAKJA.clear();
+        self.GMKBAIEIKOP.clear();
+        self.FNHOJKNAPFA.clear();
         self.retcode = 0;
-        self.KNIPBHGCILA.clear();
+        self.DACAGELDCPM.clear();
+        self.KPDONNGCDAM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicSettleScRsp {
         static instance: RogueMagicSettleScRsp = RogueMagicSettleScRsp {
-            PODOGBIOHLO: ::protobuf::MessageField::none(),
-            CLPJPJPMCFC: ::protobuf::MessageField::none(),
-            ILNFPPFAKJA: ::protobuf::MessageField::none(),
+            GMKBAIEIKOP: ::protobuf::MessageField::none(),
+            FNHOJKNAPFA: ::protobuf::MessageField::none(),
             retcode: 0,
-            KNIPBHGCILA: ::protobuf::MessageField::none(),
+            DACAGELDCPM: ::protobuf::MessageField::none(),
+            KPDONNGCDAM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -223,14 +223,14 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicSettleScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bRogueMagicSettleScRsp.proto\x1a\x11AENDEINNBIN.proto\x1a\x0eItemLi\
-    st.proto\x1a\x11JOLEAEKGMBM.proto\x1a\x11MCOLIGLOODH.proto\"\xee\x01\n\
-    \x15RogueMagicSettleScRsp\x12+\n\x0bPODOGBIOHLO\x18\x0c\x20\x01(\x0b2\t.\
-    ItemListR\x0bPODOGBIOHLO\x12.\n\x0bCLPJPJPMCFC\x18\x01\x20\x01(\x0b2\x0c\
-    .AENDEINNBINR\x0bCLPJPJPMCFC\x12.\n\x0bILNFPPFAKJA\x18\x02\x20\x01(\x0b2\
-    \x0c.MCOLIGLOODHR\x0bILNFPPFAKJA\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\
-    \x07retcode\x12.\n\x0bKNIPBHGCILA\x18\x07\x20\x01(\x0b2\x0c.JOLEAEKGMBMR\
-    \x0bKNIPBHGCILAb\x06proto3\
+    \n\x1bRogueMagicSettleScRsp.proto\x1a\x11HGOAJHCGGCO.proto\x1a\x0eItemLi\
+    st.proto\x1a\x11LENEGEIDKOJ.proto\x1a\x11LGGANOJJOEC.proto\"\xee\x01\n\
+    \x15RogueMagicSettleScRsp\x12+\n\x0bGMKBAIEIKOP\x18\x0b\x20\x01(\x0b2\t.\
+    ItemListR\x0bGMKBAIEIKOP\x12.\n\x0bFNHOJKNAPFA\x18\x04\x20\x01(\x0b2\x0c\
+    .HGOAJHCGGCOR\x0bFNHOJKNAPFA\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07r\
+    etcode\x12.\n\x0bDACAGELDCPM\x18\x07\x20\x01(\x0b2\x0c.LGGANOJJOECR\x0bD\
+    ACAGELDCPM\x12.\n\x0bKPDONNGCDAM\x18\x02\x20\x01(\x0b2\x0c.LENEGEIDKOJR\
+    \x0bKPDONNGCDAMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -248,10 +248,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::AENDEINNBIN::file_descriptor().clone());
+            deps.push(super::HGOAJHCGGCO::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::JOLEAEKGMBM::file_descriptor().clone());
-            deps.push(super::MCOLIGLOODH::file_descriptor().clone());
+            deps.push(super::LENEGEIDKOJ::file_descriptor().clone());
+            deps.push(super::LGGANOJJOEC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicSettleScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

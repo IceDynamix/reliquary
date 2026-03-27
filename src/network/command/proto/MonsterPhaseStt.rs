@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonsterPhaseStt {
     // message fields
-    // @@protoc_insertion_point(field:MonsterPhaseStt.HNMFMGCAPNO)
-    pub HNMFMGCAPNO: u32,
-    // @@protoc_insertion_point(field:MonsterPhaseStt.BCGAEBPJCCJ)
-    pub BCGAEBPJCCJ: f64,
-    // @@protoc_insertion_point(field:MonsterPhaseStt.LJEANEELDAE)
-    pub LJEANEELDAE: u32,
+    // @@protoc_insertion_point(field:MonsterPhaseStt.AOMKNKFFABE)
+    pub AOMKNKFFABE: u32,
+    // @@protoc_insertion_point(field:MonsterPhaseStt.MMOMFKBHDPD)
+    pub MMOMFKBHDPD: f64,
+    // @@protoc_insertion_point(field:MonsterPhaseStt.HEOMEODDMFE)
+    pub HEOMEODDMFE: u32,
     // @@protoc_insertion_point(field:MonsterPhaseStt.break_times)
     pub break_times: u32,
     // special fields
@@ -56,19 +56,19 @@ impl MonsterPhaseStt {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HNMFMGCAPNO",
-            |m: &MonsterPhaseStt| { &m.HNMFMGCAPNO },
-            |m: &mut MonsterPhaseStt| { &mut m.HNMFMGCAPNO },
+            "AOMKNKFFABE",
+            |m: &MonsterPhaseStt| { &m.AOMKNKFFABE },
+            |m: &mut MonsterPhaseStt| { &mut m.AOMKNKFFABE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCGAEBPJCCJ",
-            |m: &MonsterPhaseStt| { &m.BCGAEBPJCCJ },
-            |m: &mut MonsterPhaseStt| { &mut m.BCGAEBPJCCJ },
+            "MMOMFKBHDPD",
+            |m: &MonsterPhaseStt| { &m.MMOMFKBHDPD },
+            |m: &mut MonsterPhaseStt| { &mut m.MMOMFKBHDPD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJEANEELDAE",
-            |m: &MonsterPhaseStt| { &m.LJEANEELDAE },
-            |m: &mut MonsterPhaseStt| { &mut m.LJEANEELDAE },
+            "HEOMEODDMFE",
+            |m: &MonsterPhaseStt| { &m.HEOMEODDMFE },
+            |m: &mut MonsterPhaseStt| { &mut m.HEOMEODDMFE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "break_times",
@@ -94,13 +94,13 @@ impl ::protobuf::Message for MonsterPhaseStt {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.HNMFMGCAPNO = is.read_uint32()?;
+                    self.AOMKNKFFABE = is.read_uint32()?;
                 },
                 17 => {
-                    self.BCGAEBPJCCJ = is.read_double()?;
+                    self.MMOMFKBHDPD = is.read_double()?;
                 },
                 24 => {
-                    self.LJEANEELDAE = is.read_uint32()?;
+                    self.HEOMEODDMFE = is.read_uint32()?;
                 },
                 32 => {
                     self.break_times = is.read_uint32()?;
@@ -117,14 +117,14 @@ impl ::protobuf::Message for MonsterPhaseStt {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HNMFMGCAPNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.HNMFMGCAPNO);
+        if self.AOMKNKFFABE != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.AOMKNKFFABE);
         }
-        if self.BCGAEBPJCCJ != 0. {
+        if self.MMOMFKBHDPD != 0. {
             my_size += 1 + 8;
         }
-        if self.LJEANEELDAE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.LJEANEELDAE);
+        if self.HEOMEODDMFE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HEOMEODDMFE);
         }
         if self.break_times != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.break_times);
@@ -135,14 +135,14 @@ impl ::protobuf::Message for MonsterPhaseStt {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HNMFMGCAPNO != 0 {
-            os.write_uint32(1, self.HNMFMGCAPNO)?;
+        if self.AOMKNKFFABE != 0 {
+            os.write_uint32(1, self.AOMKNKFFABE)?;
         }
-        if self.BCGAEBPJCCJ != 0. {
-            os.write_double(2, self.BCGAEBPJCCJ)?;
+        if self.MMOMFKBHDPD != 0. {
+            os.write_double(2, self.MMOMFKBHDPD)?;
         }
-        if self.LJEANEELDAE != 0 {
-            os.write_uint32(3, self.LJEANEELDAE)?;
+        if self.HEOMEODDMFE != 0 {
+            os.write_uint32(3, self.HEOMEODDMFE)?;
         }
         if self.break_times != 0 {
             os.write_uint32(4, self.break_times)?;
@@ -164,18 +164,18 @@ impl ::protobuf::Message for MonsterPhaseStt {
     }
 
     fn clear(&mut self) {
-        self.HNMFMGCAPNO = 0;
-        self.BCGAEBPJCCJ = 0.;
-        self.LJEANEELDAE = 0;
+        self.AOMKNKFFABE = 0;
+        self.MMOMFKBHDPD = 0.;
+        self.HEOMEODDMFE = 0;
         self.break_times = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonsterPhaseStt {
         static instance: MonsterPhaseStt = MonsterPhaseStt {
-            HNMFMGCAPNO: 0,
-            BCGAEBPJCCJ: 0.,
-            LJEANEELDAE: 0,
+            AOMKNKFFABE: 0,
+            MMOMFKBHDPD: 0.,
+            HEOMEODDMFE: 0,
             break_times: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,9 +202,9 @@ impl ::protobuf::reflect::ProtobufValue for MonsterPhaseStt {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15MonsterPhaseStt.proto\"\x98\x01\n\x0fMonsterPhaseStt\x12\x20\n\x0b\
-    HNMFMGCAPNO\x18\x01\x20\x01(\rR\x0bHNMFMGCAPNO\x12\x20\n\x0bBCGAEBPJCCJ\
-    \x18\x02\x20\x01(\x01R\x0bBCGAEBPJCCJ\x12\x20\n\x0bLJEANEELDAE\x18\x03\
-    \x20\x01(\rR\x0bLJEANEELDAE\x12\x1f\n\x0bbreak_times\x18\x04\x20\x01(\rR\
+    AOMKNKFFABE\x18\x01\x20\x01(\rR\x0bAOMKNKFFABE\x12\x20\n\x0bMMOMFKBHDPD\
+    \x18\x02\x20\x01(\x01R\x0bMMOMFKBHDPD\x12\x20\n\x0bHEOMEODDMFE\x18\x03\
+    \x20\x01(\rR\x0bHEOMEODDMFE\x12\x1f\n\x0bbreak_times\x18\x04\x20\x01(\rR\
     \nbreakTimesb\x06proto3\
 ";
 

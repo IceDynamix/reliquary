@@ -30,8 +30,8 @@ pub struct GridFightPermanentTalentEnableScRsp {
     // message fields
     // @@protoc_insertion_point(field:GridFightPermanentTalentEnableScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GridFightPermanentTalentEnableScRsp.DNBJDLGIABH)
-    pub DNBJDLGIABH: u32,
+    // @@protoc_insertion_point(field:GridFightPermanentTalentEnableScRsp.EHAJMKFJCCM)
+    pub EHAJMKFJCCM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightPermanentTalentEnableScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GridFightPermanentTalentEnableScRsp {
             |m: &mut GridFightPermanentTalentEnableScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNBJDLGIABH",
-            |m: &GridFightPermanentTalentEnableScRsp| { &m.DNBJDLGIABH },
-            |m: &mut GridFightPermanentTalentEnableScRsp| { &mut m.DNBJDLGIABH },
+            "EHAJMKFJCCM",
+            |m: &GridFightPermanentTalentEnableScRsp| { &m.EHAJMKFJCCM },
+            |m: &mut GridFightPermanentTalentEnableScRsp| { &mut m.EHAJMKFJCCM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightPermanentTalentEnableScRsp>(
             "GridFightPermanentTalentEnableScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GridFightPermanentTalentEnableScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                64 => {
-                    self.DNBJDLGIABH = is.read_uint32()?;
+                16 => {
+                    self.EHAJMKFJCCM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GridFightPermanentTalentEnableScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if self.DNBJDLGIABH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DNBJDLGIABH);
+        if self.EHAJMKFJCCM != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.EHAJMKFJCCM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GridFightPermanentTalentEnableScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        if self.DNBJDLGIABH != 0 {
-            os.write_uint32(8, self.DNBJDLGIABH)?;
+        if self.EHAJMKFJCCM != 0 {
+            os.write_uint32(2, self.EHAJMKFJCCM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GridFightPermanentTalentEnableScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.DNBJDLGIABH = 0;
+        self.EHAJMKFJCCM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightPermanentTalentEnableScRsp {
         static instance: GridFightPermanentTalentEnableScRsp = GridFightPermanentTalentEnableScRsp {
             retcode: 0,
-            DNBJDLGIABH: 0,
+            EHAJMKFJCCM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightPermanentTalentEnableScRsp 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)GridFightPermanentTalentEnableScRsp.proto\"a\n#GridFightPermanentTale\
-    ntEnableScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\
-    \x20\n\x0bDNBJDLGIABH\x18\x08\x20\x01(\rR\x0bDNBJDLGIABHb\x06proto3\
+    ntEnableScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\
+    \x20\n\x0bEHAJMKFJCCM\x18\x02\x20\x01(\rR\x0bEHAJMKFJCCMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

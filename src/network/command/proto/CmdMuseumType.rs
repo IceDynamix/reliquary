@@ -27,66 +27,66 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMuseumType)
 pub enum CmdMuseumType {
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_GKJBAODJMJG)
-    AFANMHFJDBE_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_EFAAOGOIKBN)
-    AFANMHFJDBE_EFAAOGOIKBN = 4396,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_ECKNFCLBFKL)
-    AFANMHFJDBE_ECKNFCLBFKL = 4386,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_NJJLDJNLGFM)
-    AFANMHFJDBE_NJJLDJNLGFM = 4337,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_MPGJHGBMLDN)
-    AFANMHFJDBE_MPGJHGBMLDN = 4369,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_MDBFFBKEPPK)
-    AFANMHFJDBE_MDBFFBKEPPK = 4375,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_PJMMCMOGCNJ)
-    AFANMHFJDBE_PJMMCMOGCNJ = 4305,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_AOKBBDNMMKP)
-    AFANMHFJDBE_AOKBBDNMMKP = 4379,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_MLGFAHAANMP)
-    AFANMHFJDBE_MLGFAHAANMP = 4326,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_FBACIACJOLH)
-    AFANMHFJDBE_FBACIACJOLH = 4345,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_PDBPONMEONH)
-    AFANMHFJDBE_PDBPONMEONH = 4338,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_FFFJGMILADE)
-    AFANMHFJDBE_FFFJGMILADE = 4362,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_ICPJOLAGFPK)
-    AFANMHFJDBE_ICPJOLAGFPK = 4309,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_DNKHNIOIPIM)
-    AFANMHFJDBE_DNKHNIOIPIM = 4312,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_BOMCPLKFEIO)
-    AFANMHFJDBE_BOMCPLKFEIO = 4355,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_PBNLHEGEMNE)
-    AFANMHFJDBE_PBNLHEGEMNE = 4393,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_HLIIOBGEAKJ)
-    AFANMHFJDBE_HLIIOBGEAKJ = 4376,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_ALEIOOHLEJK)
-    AFANMHFJDBE_ALEIOOHLEJK = 4350,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_JJKHJBHKCDO)
-    AFANMHFJDBE_JJKHJBHKCDO = 4395,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_HJOKGHJKLPM)
-    AFANMHFJDBE_HJOKGHJKLPM = 4314,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_LFHPEENGLPP)
-    AFANMHFJDBE_LFHPEENGLPP = 4377,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_AALCHGNFACG)
-    AFANMHFJDBE_AALCHGNFACG = 4389,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_GDLKPEMKBIF)
-    AFANMHFJDBE_GDLKPEMKBIF = 4357,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_HPNCNLNBCDP)
-    AFANMHFJDBE_HPNCNLNBCDP = 4366,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_IFNAKPHHNML)
-    AFANMHFJDBE_IFNAKPHHNML = 4320,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_BGCEMCJNPFB)
-    AFANMHFJDBE_BGCEMCJNPFB = 4334,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_DEABIDMOEON)
-    AFANMHFJDBE_DEABIDMOEON = 4380,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_NKHCGFHNJFB)
-    AFANMHFJDBE_NKHCGFHNJFB = 4328,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_KCPABGDLFGC)
-    AFANMHFJDBE_KCPABGDLFGC = 4347,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.AFANMHFJDBE_AKIBNFDMCMO)
-    AFANMHFJDBE_AKIBNFDMCMO = 4383,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_MNFEPONEDDJ)
+    CmdMuseumType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_PEAJLKBDEFF)
+    CmdMuseumType_PEAJLKBDEFF = 4317,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_EGGEMEHBILH)
+    CmdMuseumType_EGGEMEHBILH = 4396,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_COCGKFKJHFC)
+    CmdMuseumType_COCGKFKJHFC = 4356,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_LEHKAFFDONJ)
+    CmdMuseumType_LEHKAFFDONJ = 4306,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_MMACLGPOLCO)
+    CmdMuseumType_MMACLGPOLCO = 4346,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_CLBBJEBFBGK)
+    CmdMuseumType_CLBBJEBFBGK = 4309,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_LJJAJHAHDBF)
+    CmdMuseumType_LJJAJHAHDBF = 4313,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_JPFANCJDMGJ)
+    CmdMuseumType_JPFANCJDMGJ = 4324,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_GFNLDJEFICD)
+    CmdMuseumType_GFNLDJEFICD = 4369,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_KPPDIPFKDOG)
+    CmdMuseumType_KPPDIPFKDOG = 4400,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_OICPILOBCOG)
+    CmdMuseumType_OICPILOBCOG = 4383,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_GKDIABCGINM)
+    CmdMuseumType_GKDIABCGINM = 4362,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_HLMKJKIMDNN)
+    CmdMuseumType_HLMKJKIMDNN = 4304,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_ADPIFMKJLOK)
+    CmdMuseumType_ADPIFMKJLOK = 4334,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_OOBOBEBJHPK)
+    CmdMuseumType_OOBOBEBJHPK = 4348,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_MBHFMJKEJKF)
+    CmdMuseumType_MBHFMJKEJKF = 4323,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_GBMLENAOBBM)
+    CmdMuseumType_GBMLENAOBBM = 4301,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_BACNKHAEGFM)
+    CmdMuseumType_BACNKHAEGFM = 4319,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_GOMJMDOLABE)
+    CmdMuseumType_GOMJMDOLABE = 4386,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_MIEFJGOCBHI)
+    CmdMuseumType_MIEFJGOCBHI = 4343,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_KPMDFGOFCOK)
+    CmdMuseumType_KPMDFGOFCOK = 4331,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_INICMJOPEEL)
+    CmdMuseumType_INICMJOPEEL = 4318,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_POGPJNHPBAI)
+    CmdMuseumType_POGPJNHPBAI = 4381,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_IHGOOBHHOEK)
+    CmdMuseumType_IHGOOBHHOEK = 4303,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_KGDDPONLOFG)
+    CmdMuseumType_KGDDPONLOFG = 4335,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_MJAGKFNKKFB)
+    CmdMuseumType_MJAGKFNKKFB = 4384,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_LPBMMLJABND)
+    CmdMuseumType_LPBMMLJABND = 4388,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_OEKPFCMLDAP)
+    CmdMuseumType_OEKPFCMLDAP = 4357,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumType_CFEHGMOBLFJ)
+    CmdMuseumType_CFEHGMOBLFJ = 4340,
 }
 
 impl ::protobuf::Enum for CmdMuseumType {
@@ -98,107 +98,107 @@ impl ::protobuf::Enum for CmdMuseumType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMuseumType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_GKJBAODJMJG),
-            4396 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_EFAAOGOIKBN),
-            4386 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_ECKNFCLBFKL),
-            4337 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_NJJLDJNLGFM),
-            4369 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_MPGJHGBMLDN),
-            4375 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_MDBFFBKEPPK),
-            4305 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_PJMMCMOGCNJ),
-            4379 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_AOKBBDNMMKP),
-            4326 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_MLGFAHAANMP),
-            4345 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_FBACIACJOLH),
-            4338 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_PDBPONMEONH),
-            4362 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_FFFJGMILADE),
-            4309 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_ICPJOLAGFPK),
-            4312 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_DNKHNIOIPIM),
-            4355 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_BOMCPLKFEIO),
-            4393 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_PBNLHEGEMNE),
-            4376 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_HLIIOBGEAKJ),
-            4350 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_ALEIOOHLEJK),
-            4395 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_JJKHJBHKCDO),
-            4314 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_HJOKGHJKLPM),
-            4377 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_LFHPEENGLPP),
-            4389 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_AALCHGNFACG),
-            4357 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_GDLKPEMKBIF),
-            4366 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_HPNCNLNBCDP),
-            4320 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_IFNAKPHHNML),
-            4334 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_BGCEMCJNPFB),
-            4380 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_DEABIDMOEON),
-            4328 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_NKHCGFHNJFB),
-            4347 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_KCPABGDLFGC),
-            4383 => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_AKIBNFDMCMO),
+            0 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_MNFEPONEDDJ),
+            4317 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_PEAJLKBDEFF),
+            4396 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_EGGEMEHBILH),
+            4356 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_COCGKFKJHFC),
+            4306 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_LEHKAFFDONJ),
+            4346 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_MMACLGPOLCO),
+            4309 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_CLBBJEBFBGK),
+            4313 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_LJJAJHAHDBF),
+            4324 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_JPFANCJDMGJ),
+            4369 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_GFNLDJEFICD),
+            4400 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_KPPDIPFKDOG),
+            4383 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_OICPILOBCOG),
+            4362 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_GKDIABCGINM),
+            4304 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_HLMKJKIMDNN),
+            4334 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_ADPIFMKJLOK),
+            4348 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_OOBOBEBJHPK),
+            4323 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_MBHFMJKEJKF),
+            4301 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_GBMLENAOBBM),
+            4319 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_BACNKHAEGFM),
+            4386 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_GOMJMDOLABE),
+            4343 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_MIEFJGOCBHI),
+            4331 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_KPMDFGOFCOK),
+            4318 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_INICMJOPEEL),
+            4381 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_POGPJNHPBAI),
+            4303 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_IHGOOBHHOEK),
+            4335 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_KGDDPONLOFG),
+            4384 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_MJAGKFNKKFB),
+            4388 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_LPBMMLJABND),
+            4357 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_OEKPFCMLDAP),
+            4340 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_CFEHGMOBLFJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMuseumType> {
         match str {
-            "AFANMHFJDBE_GKJBAODJMJG" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_GKJBAODJMJG),
-            "AFANMHFJDBE_EFAAOGOIKBN" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_EFAAOGOIKBN),
-            "AFANMHFJDBE_ECKNFCLBFKL" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_ECKNFCLBFKL),
-            "AFANMHFJDBE_NJJLDJNLGFM" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_NJJLDJNLGFM),
-            "AFANMHFJDBE_MPGJHGBMLDN" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_MPGJHGBMLDN),
-            "AFANMHFJDBE_MDBFFBKEPPK" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_MDBFFBKEPPK),
-            "AFANMHFJDBE_PJMMCMOGCNJ" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_PJMMCMOGCNJ),
-            "AFANMHFJDBE_AOKBBDNMMKP" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_AOKBBDNMMKP),
-            "AFANMHFJDBE_MLGFAHAANMP" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_MLGFAHAANMP),
-            "AFANMHFJDBE_FBACIACJOLH" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_FBACIACJOLH),
-            "AFANMHFJDBE_PDBPONMEONH" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_PDBPONMEONH),
-            "AFANMHFJDBE_FFFJGMILADE" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_FFFJGMILADE),
-            "AFANMHFJDBE_ICPJOLAGFPK" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_ICPJOLAGFPK),
-            "AFANMHFJDBE_DNKHNIOIPIM" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_DNKHNIOIPIM),
-            "AFANMHFJDBE_BOMCPLKFEIO" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_BOMCPLKFEIO),
-            "AFANMHFJDBE_PBNLHEGEMNE" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_PBNLHEGEMNE),
-            "AFANMHFJDBE_HLIIOBGEAKJ" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_HLIIOBGEAKJ),
-            "AFANMHFJDBE_ALEIOOHLEJK" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_ALEIOOHLEJK),
-            "AFANMHFJDBE_JJKHJBHKCDO" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_JJKHJBHKCDO),
-            "AFANMHFJDBE_HJOKGHJKLPM" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_HJOKGHJKLPM),
-            "AFANMHFJDBE_LFHPEENGLPP" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_LFHPEENGLPP),
-            "AFANMHFJDBE_AALCHGNFACG" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_AALCHGNFACG),
-            "AFANMHFJDBE_GDLKPEMKBIF" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_GDLKPEMKBIF),
-            "AFANMHFJDBE_HPNCNLNBCDP" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_HPNCNLNBCDP),
-            "AFANMHFJDBE_IFNAKPHHNML" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_IFNAKPHHNML),
-            "AFANMHFJDBE_BGCEMCJNPFB" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_BGCEMCJNPFB),
-            "AFANMHFJDBE_DEABIDMOEON" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_DEABIDMOEON),
-            "AFANMHFJDBE_NKHCGFHNJFB" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_NKHCGFHNJFB),
-            "AFANMHFJDBE_KCPABGDLFGC" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_KCPABGDLFGC),
-            "AFANMHFJDBE_AKIBNFDMCMO" => ::std::option::Option::Some(CmdMuseumType::AFANMHFJDBE_AKIBNFDMCMO),
+            "CmdMuseumType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_MNFEPONEDDJ),
+            "CmdMuseumType_PEAJLKBDEFF" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_PEAJLKBDEFF),
+            "CmdMuseumType_EGGEMEHBILH" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_EGGEMEHBILH),
+            "CmdMuseumType_COCGKFKJHFC" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_COCGKFKJHFC),
+            "CmdMuseumType_LEHKAFFDONJ" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_LEHKAFFDONJ),
+            "CmdMuseumType_MMACLGPOLCO" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_MMACLGPOLCO),
+            "CmdMuseumType_CLBBJEBFBGK" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_CLBBJEBFBGK),
+            "CmdMuseumType_LJJAJHAHDBF" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_LJJAJHAHDBF),
+            "CmdMuseumType_JPFANCJDMGJ" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_JPFANCJDMGJ),
+            "CmdMuseumType_GFNLDJEFICD" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_GFNLDJEFICD),
+            "CmdMuseumType_KPPDIPFKDOG" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_KPPDIPFKDOG),
+            "CmdMuseumType_OICPILOBCOG" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_OICPILOBCOG),
+            "CmdMuseumType_GKDIABCGINM" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_GKDIABCGINM),
+            "CmdMuseumType_HLMKJKIMDNN" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_HLMKJKIMDNN),
+            "CmdMuseumType_ADPIFMKJLOK" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_ADPIFMKJLOK),
+            "CmdMuseumType_OOBOBEBJHPK" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_OOBOBEBJHPK),
+            "CmdMuseumType_MBHFMJKEJKF" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_MBHFMJKEJKF),
+            "CmdMuseumType_GBMLENAOBBM" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_GBMLENAOBBM),
+            "CmdMuseumType_BACNKHAEGFM" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_BACNKHAEGFM),
+            "CmdMuseumType_GOMJMDOLABE" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_GOMJMDOLABE),
+            "CmdMuseumType_MIEFJGOCBHI" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_MIEFJGOCBHI),
+            "CmdMuseumType_KPMDFGOFCOK" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_KPMDFGOFCOK),
+            "CmdMuseumType_INICMJOPEEL" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_INICMJOPEEL),
+            "CmdMuseumType_POGPJNHPBAI" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_POGPJNHPBAI),
+            "CmdMuseumType_IHGOOBHHOEK" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_IHGOOBHHOEK),
+            "CmdMuseumType_KGDDPONLOFG" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_KGDDPONLOFG),
+            "CmdMuseumType_MJAGKFNKKFB" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_MJAGKFNKKFB),
+            "CmdMuseumType_LPBMMLJABND" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_LPBMMLJABND),
+            "CmdMuseumType_OEKPFCMLDAP" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_OEKPFCMLDAP),
+            "CmdMuseumType_CFEHGMOBLFJ" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumType_CFEHGMOBLFJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMuseumType] = &[
-        CmdMuseumType::AFANMHFJDBE_GKJBAODJMJG,
-        CmdMuseumType::AFANMHFJDBE_EFAAOGOIKBN,
-        CmdMuseumType::AFANMHFJDBE_ECKNFCLBFKL,
-        CmdMuseumType::AFANMHFJDBE_NJJLDJNLGFM,
-        CmdMuseumType::AFANMHFJDBE_MPGJHGBMLDN,
-        CmdMuseumType::AFANMHFJDBE_MDBFFBKEPPK,
-        CmdMuseumType::AFANMHFJDBE_PJMMCMOGCNJ,
-        CmdMuseumType::AFANMHFJDBE_AOKBBDNMMKP,
-        CmdMuseumType::AFANMHFJDBE_MLGFAHAANMP,
-        CmdMuseumType::AFANMHFJDBE_FBACIACJOLH,
-        CmdMuseumType::AFANMHFJDBE_PDBPONMEONH,
-        CmdMuseumType::AFANMHFJDBE_FFFJGMILADE,
-        CmdMuseumType::AFANMHFJDBE_ICPJOLAGFPK,
-        CmdMuseumType::AFANMHFJDBE_DNKHNIOIPIM,
-        CmdMuseumType::AFANMHFJDBE_BOMCPLKFEIO,
-        CmdMuseumType::AFANMHFJDBE_PBNLHEGEMNE,
-        CmdMuseumType::AFANMHFJDBE_HLIIOBGEAKJ,
-        CmdMuseumType::AFANMHFJDBE_ALEIOOHLEJK,
-        CmdMuseumType::AFANMHFJDBE_JJKHJBHKCDO,
-        CmdMuseumType::AFANMHFJDBE_HJOKGHJKLPM,
-        CmdMuseumType::AFANMHFJDBE_LFHPEENGLPP,
-        CmdMuseumType::AFANMHFJDBE_AALCHGNFACG,
-        CmdMuseumType::AFANMHFJDBE_GDLKPEMKBIF,
-        CmdMuseumType::AFANMHFJDBE_HPNCNLNBCDP,
-        CmdMuseumType::AFANMHFJDBE_IFNAKPHHNML,
-        CmdMuseumType::AFANMHFJDBE_BGCEMCJNPFB,
-        CmdMuseumType::AFANMHFJDBE_DEABIDMOEON,
-        CmdMuseumType::AFANMHFJDBE_NKHCGFHNJFB,
-        CmdMuseumType::AFANMHFJDBE_KCPABGDLFGC,
-        CmdMuseumType::AFANMHFJDBE_AKIBNFDMCMO,
+        CmdMuseumType::CmdMuseumType_MNFEPONEDDJ,
+        CmdMuseumType::CmdMuseumType_PEAJLKBDEFF,
+        CmdMuseumType::CmdMuseumType_EGGEMEHBILH,
+        CmdMuseumType::CmdMuseumType_COCGKFKJHFC,
+        CmdMuseumType::CmdMuseumType_LEHKAFFDONJ,
+        CmdMuseumType::CmdMuseumType_MMACLGPOLCO,
+        CmdMuseumType::CmdMuseumType_CLBBJEBFBGK,
+        CmdMuseumType::CmdMuseumType_LJJAJHAHDBF,
+        CmdMuseumType::CmdMuseumType_JPFANCJDMGJ,
+        CmdMuseumType::CmdMuseumType_GFNLDJEFICD,
+        CmdMuseumType::CmdMuseumType_KPPDIPFKDOG,
+        CmdMuseumType::CmdMuseumType_OICPILOBCOG,
+        CmdMuseumType::CmdMuseumType_GKDIABCGINM,
+        CmdMuseumType::CmdMuseumType_HLMKJKIMDNN,
+        CmdMuseumType::CmdMuseumType_ADPIFMKJLOK,
+        CmdMuseumType::CmdMuseumType_OOBOBEBJHPK,
+        CmdMuseumType::CmdMuseumType_MBHFMJKEJKF,
+        CmdMuseumType::CmdMuseumType_GBMLENAOBBM,
+        CmdMuseumType::CmdMuseumType_BACNKHAEGFM,
+        CmdMuseumType::CmdMuseumType_GOMJMDOLABE,
+        CmdMuseumType::CmdMuseumType_MIEFJGOCBHI,
+        CmdMuseumType::CmdMuseumType_KPMDFGOFCOK,
+        CmdMuseumType::CmdMuseumType_INICMJOPEEL,
+        CmdMuseumType::CmdMuseumType_POGPJNHPBAI,
+        CmdMuseumType::CmdMuseumType_IHGOOBHHOEK,
+        CmdMuseumType::CmdMuseumType_KGDDPONLOFG,
+        CmdMuseumType::CmdMuseumType_MJAGKFNKKFB,
+        CmdMuseumType::CmdMuseumType_LPBMMLJABND,
+        CmdMuseumType::CmdMuseumType_OEKPFCMLDAP,
+        CmdMuseumType::CmdMuseumType_CFEHGMOBLFJ,
     ];
 }
 
@@ -210,36 +210,36 @@ impl ::protobuf::EnumFull for CmdMuseumType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMuseumType::AFANMHFJDBE_GKJBAODJMJG => 0,
-            CmdMuseumType::AFANMHFJDBE_EFAAOGOIKBN => 1,
-            CmdMuseumType::AFANMHFJDBE_ECKNFCLBFKL => 2,
-            CmdMuseumType::AFANMHFJDBE_NJJLDJNLGFM => 3,
-            CmdMuseumType::AFANMHFJDBE_MPGJHGBMLDN => 4,
-            CmdMuseumType::AFANMHFJDBE_MDBFFBKEPPK => 5,
-            CmdMuseumType::AFANMHFJDBE_PJMMCMOGCNJ => 6,
-            CmdMuseumType::AFANMHFJDBE_AOKBBDNMMKP => 7,
-            CmdMuseumType::AFANMHFJDBE_MLGFAHAANMP => 8,
-            CmdMuseumType::AFANMHFJDBE_FBACIACJOLH => 9,
-            CmdMuseumType::AFANMHFJDBE_PDBPONMEONH => 10,
-            CmdMuseumType::AFANMHFJDBE_FFFJGMILADE => 11,
-            CmdMuseumType::AFANMHFJDBE_ICPJOLAGFPK => 12,
-            CmdMuseumType::AFANMHFJDBE_DNKHNIOIPIM => 13,
-            CmdMuseumType::AFANMHFJDBE_BOMCPLKFEIO => 14,
-            CmdMuseumType::AFANMHFJDBE_PBNLHEGEMNE => 15,
-            CmdMuseumType::AFANMHFJDBE_HLIIOBGEAKJ => 16,
-            CmdMuseumType::AFANMHFJDBE_ALEIOOHLEJK => 17,
-            CmdMuseumType::AFANMHFJDBE_JJKHJBHKCDO => 18,
-            CmdMuseumType::AFANMHFJDBE_HJOKGHJKLPM => 19,
-            CmdMuseumType::AFANMHFJDBE_LFHPEENGLPP => 20,
-            CmdMuseumType::AFANMHFJDBE_AALCHGNFACG => 21,
-            CmdMuseumType::AFANMHFJDBE_GDLKPEMKBIF => 22,
-            CmdMuseumType::AFANMHFJDBE_HPNCNLNBCDP => 23,
-            CmdMuseumType::AFANMHFJDBE_IFNAKPHHNML => 24,
-            CmdMuseumType::AFANMHFJDBE_BGCEMCJNPFB => 25,
-            CmdMuseumType::AFANMHFJDBE_DEABIDMOEON => 26,
-            CmdMuseumType::AFANMHFJDBE_NKHCGFHNJFB => 27,
-            CmdMuseumType::AFANMHFJDBE_KCPABGDLFGC => 28,
-            CmdMuseumType::AFANMHFJDBE_AKIBNFDMCMO => 29,
+            CmdMuseumType::CmdMuseumType_MNFEPONEDDJ => 0,
+            CmdMuseumType::CmdMuseumType_PEAJLKBDEFF => 1,
+            CmdMuseumType::CmdMuseumType_EGGEMEHBILH => 2,
+            CmdMuseumType::CmdMuseumType_COCGKFKJHFC => 3,
+            CmdMuseumType::CmdMuseumType_LEHKAFFDONJ => 4,
+            CmdMuseumType::CmdMuseumType_MMACLGPOLCO => 5,
+            CmdMuseumType::CmdMuseumType_CLBBJEBFBGK => 6,
+            CmdMuseumType::CmdMuseumType_LJJAJHAHDBF => 7,
+            CmdMuseumType::CmdMuseumType_JPFANCJDMGJ => 8,
+            CmdMuseumType::CmdMuseumType_GFNLDJEFICD => 9,
+            CmdMuseumType::CmdMuseumType_KPPDIPFKDOG => 10,
+            CmdMuseumType::CmdMuseumType_OICPILOBCOG => 11,
+            CmdMuseumType::CmdMuseumType_GKDIABCGINM => 12,
+            CmdMuseumType::CmdMuseumType_HLMKJKIMDNN => 13,
+            CmdMuseumType::CmdMuseumType_ADPIFMKJLOK => 14,
+            CmdMuseumType::CmdMuseumType_OOBOBEBJHPK => 15,
+            CmdMuseumType::CmdMuseumType_MBHFMJKEJKF => 16,
+            CmdMuseumType::CmdMuseumType_GBMLENAOBBM => 17,
+            CmdMuseumType::CmdMuseumType_BACNKHAEGFM => 18,
+            CmdMuseumType::CmdMuseumType_GOMJMDOLABE => 19,
+            CmdMuseumType::CmdMuseumType_MIEFJGOCBHI => 20,
+            CmdMuseumType::CmdMuseumType_KPMDFGOFCOK => 21,
+            CmdMuseumType::CmdMuseumType_INICMJOPEEL => 22,
+            CmdMuseumType::CmdMuseumType_POGPJNHPBAI => 23,
+            CmdMuseumType::CmdMuseumType_IHGOOBHHOEK => 24,
+            CmdMuseumType::CmdMuseumType_KGDDPONLOFG => 25,
+            CmdMuseumType::CmdMuseumType_MJAGKFNKKFB => 26,
+            CmdMuseumType::CmdMuseumType_LPBMMLJABND => 27,
+            CmdMuseumType::CmdMuseumType_OEKPFCMLDAP => 28,
+            CmdMuseumType::CmdMuseumType_CFEHGMOBLFJ => 29,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -247,7 +247,7 @@ impl ::protobuf::EnumFull for CmdMuseumType {
 
 impl ::std::default::Default for CmdMuseumType {
     fn default() -> Self {
-        CmdMuseumType::AFANMHFJDBE_GKJBAODJMJG
+        CmdMuseumType::CmdMuseumType_MNFEPONEDDJ
     }
 }
 
@@ -258,27 +258,28 @@ impl CmdMuseumType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdMuseumType.proto*\x92\x07\n\rCmdMuseumType\x12\x1b\n\x17AFANMHF\
-    JDBE_GKJBAODJMJG\x10\0\x12\x1c\n\x17AFANMHFJDBE_EFAAOGOIKBN\x10\xac\"\
-    \x12\x1c\n\x17AFANMHFJDBE_ECKNFCLBFKL\x10\xa2\"\x12\x1c\n\x17AFANMHFJDBE\
-    _NJJLDJNLGFM\x10\xf1!\x12\x1c\n\x17AFANMHFJDBE_MPGJHGBMLDN\x10\x91\"\x12\
-    \x1c\n\x17AFANMHFJDBE_MDBFFBKEPPK\x10\x97\"\x12\x1c\n\x17AFANMHFJDBE_PJM\
-    MCMOGCNJ\x10\xd1!\x12\x1c\n\x17AFANMHFJDBE_AOKBBDNMMKP\x10\x9b\"\x12\x1c\
-    \n\x17AFANMHFJDBE_MLGFAHAANMP\x10\xe6!\x12\x1c\n\x17AFANMHFJDBE_FBACIACJ\
-    OLH\x10\xf9!\x12\x1c\n\x17AFANMHFJDBE_PDBPONMEONH\x10\xf2!\x12\x1c\n\x17\
-    AFANMHFJDBE_FFFJGMILADE\x10\x8a\"\x12\x1c\n\x17AFANMHFJDBE_ICPJOLAGFPK\
-    \x10\xd5!\x12\x1c\n\x17AFANMHFJDBE_DNKHNIOIPIM\x10\xd8!\x12\x1c\n\x17AFA\
-    NMHFJDBE_BOMCPLKFEIO\x10\x83\"\x12\x1c\n\x17AFANMHFJDBE_PBNLHEGEMNE\x10\
-    \xa9\"\x12\x1c\n\x17AFANMHFJDBE_HLIIOBGEAKJ\x10\x98\"\x12\x1c\n\x17AFANM\
-    HFJDBE_ALEIOOHLEJK\x10\xfe!\x12\x1c\n\x17AFANMHFJDBE_JJKHJBHKCDO\x10\xab\
-    \"\x12\x1c\n\x17AFANMHFJDBE_HJOKGHJKLPM\x10\xda!\x12\x1c\n\x17AFANMHFJDB\
-    E_LFHPEENGLPP\x10\x99\"\x12\x1c\n\x17AFANMHFJDBE_AALCHGNFACG\x10\xa5\"\
-    \x12\x1c\n\x17AFANMHFJDBE_GDLKPEMKBIF\x10\x85\"\x12\x1c\n\x17AFANMHFJDBE\
-    _HPNCNLNBCDP\x10\x8e\"\x12\x1c\n\x17AFANMHFJDBE_IFNAKPHHNML\x10\xe0!\x12\
-    \x1c\n\x17AFANMHFJDBE_BGCEMCJNPFB\x10\xee!\x12\x1c\n\x17AFANMHFJDBE_DEAB\
-    IDMOEON\x10\x9c\"\x12\x1c\n\x17AFANMHFJDBE_NKHCGFHNJFB\x10\xe8!\x12\x1c\
-    \n\x17AFANMHFJDBE_KCPABGDLFGC\x10\xfb!\x12\x1c\n\x17AFANMHFJDBE_AKIBNFDM\
-    CMO\x10\x9f\"b\x06proto3\
+    \n\x13CmdMuseumType.proto*\xce\x07\n\rCmdMuseumType\x12\x1d\n\x19CmdMuse\
+    umType_MNFEPONEDDJ\x10\0\x12\x1e\n\x19CmdMuseumType_PEAJLKBDEFF\x10\xdd!\
+    \x12\x1e\n\x19CmdMuseumType_EGGEMEHBILH\x10\xac\"\x12\x1e\n\x19CmdMuseum\
+    Type_COCGKFKJHFC\x10\x84\"\x12\x1e\n\x19CmdMuseumType_LEHKAFFDONJ\x10\
+    \xd2!\x12\x1e\n\x19CmdMuseumType_MMACLGPOLCO\x10\xfa!\x12\x1e\n\x19CmdMu\
+    seumType_CLBBJEBFBGK\x10\xd5!\x12\x1e\n\x19CmdMuseumType_LJJAJHAHDBF\x10\
+    \xd9!\x12\x1e\n\x19CmdMuseumType_JPFANCJDMGJ\x10\xe4!\x12\x1e\n\x19CmdMu\
+    seumType_GFNLDJEFICD\x10\x91\"\x12\x1e\n\x19CmdMuseumType_KPPDIPFKDOG\
+    \x10\xb0\"\x12\x1e\n\x19CmdMuseumType_OICPILOBCOG\x10\x9f\"\x12\x1e\n\
+    \x19CmdMuseumType_GKDIABCGINM\x10\x8a\"\x12\x1e\n\x19CmdMuseumType_HLMKJ\
+    KIMDNN\x10\xd0!\x12\x1e\n\x19CmdMuseumType_ADPIFMKJLOK\x10\xee!\x12\x1e\
+    \n\x19CmdMuseumType_OOBOBEBJHPK\x10\xfc!\x12\x1e\n\x19CmdMuseumType_MBHF\
+    MJKEJKF\x10\xe3!\x12\x1e\n\x19CmdMuseumType_GBMLENAOBBM\x10\xcd!\x12\x1e\
+    \n\x19CmdMuseumType_BACNKHAEGFM\x10\xdf!\x12\x1e\n\x19CmdMuseumType_GOMJ\
+    MDOLABE\x10\xa2\"\x12\x1e\n\x19CmdMuseumType_MIEFJGOCBHI\x10\xf7!\x12\
+    \x1e\n\x19CmdMuseumType_KPMDFGOFCOK\x10\xeb!\x12\x1e\n\x19CmdMuseumType_\
+    INICMJOPEEL\x10\xde!\x12\x1e\n\x19CmdMuseumType_POGPJNHPBAI\x10\x9d\"\
+    \x12\x1e\n\x19CmdMuseumType_IHGOOBHHOEK\x10\xcf!\x12\x1e\n\x19CmdMuseumT\
+    ype_KGDDPONLOFG\x10\xef!\x12\x1e\n\x19CmdMuseumType_MJAGKFNKKFB\x10\xa0\
+    \"\x12\x1e\n\x19CmdMuseumType_LPBMMLJABND\x10\xa4\"\x12\x1e\n\x19CmdMuse\
+    umType_OEKPFCMLDAP\x10\x85\"\x12\x1e\n\x19CmdMuseumType_CFEHGMOBLFJ\x10\
+    \xf4!b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

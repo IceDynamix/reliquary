@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueScoreRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeRogueScoreRewardScRsp.ONIKHEJKLAD)
-    pub ONIKHEJKLAD: u32,
-    // @@protoc_insertion_point(field:TakeRogueScoreRewardScRsp.BCBACGMOHLH)
-    pub BCBACGMOHLH: ::protobuf::MessageField<super::JNPGFOIAHBB::JNPGFOIAHBB>,
     // @@protoc_insertion_point(field:TakeRogueScoreRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeRogueScoreRewardScRsp.LCJKKMHOIMJ)
+    pub LCJKKMHOIMJ: u32,
     // @@protoc_insertion_point(field:TakeRogueScoreRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeRogueScoreRewardScRsp.OHJHNHBDMNN)
+    pub OHJHNHBDMNN: ::protobuf::MessageField<super::GDGKAODOAMH::GDGKAODOAMH>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeRogueScoreRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl TakeRogueScoreRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONIKHEJKLAD",
-            |m: &TakeRogueScoreRewardScRsp| { &m.ONIKHEJKLAD },
-            |m: &mut TakeRogueScoreRewardScRsp| { &mut m.ONIKHEJKLAD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JNPGFOIAHBB::JNPGFOIAHBB>(
-            "BCBACGMOHLH",
-            |m: &TakeRogueScoreRewardScRsp| { &m.BCBACGMOHLH },
-            |m: &mut TakeRogueScoreRewardScRsp| { &mut m.BCBACGMOHLH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeRogueScoreRewardScRsp| { &m.retcode },
             |m: &mut TakeRogueScoreRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LCJKKMHOIMJ",
+            |m: &TakeRogueScoreRewardScRsp| { &m.LCJKKMHOIMJ },
+            |m: &mut TakeRogueScoreRewardScRsp| { &mut m.LCJKKMHOIMJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &TakeRogueScoreRewardScRsp| { &m.reward },
             |m: &mut TakeRogueScoreRewardScRsp| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GDGKAODOAMH::GDGKAODOAMH>(
+            "OHJHNHBDMNN",
+            |m: &TakeRogueScoreRewardScRsp| { &m.OHJHNHBDMNN },
+            |m: &mut TakeRogueScoreRewardScRsp| { &mut m.OHJHNHBDMNN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeRogueScoreRewardScRsp>(
             "TakeRogueScoreRewardScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for TakeRogueScoreRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.ONIKHEJKLAD = is.read_uint32()?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BCBACGMOHLH)?;
-                },
-                88 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
+                80 => {
+                    self.LCJKKMHOIMJ = is.read_uint32()?;
+                },
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OHJHNHBDMNN)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for TakeRogueScoreRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ONIKHEJKLAD != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.ONIKHEJKLAD);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        if let Some(v) = self.BCBACGMOHLH.as_ref() {
+        if self.LCJKKMHOIMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.LCJKKMHOIMJ);
+        }
+        if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if let Some(v) = self.reward.as_ref() {
+        if let Some(v) = self.OHJHNHBDMNN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -137,17 +137,17 @@ impl ::protobuf::Message for TakeRogueScoreRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ONIKHEJKLAD != 0 {
-            os.write_uint32(9, self.ONIKHEJKLAD)?;
-        }
-        if let Some(v) = self.BCBACGMOHLH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
+        }
+        if self.LCJKKMHOIMJ != 0 {
+            os.write_uint32(10, self.LCJKKMHOIMJ)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        }
+        if let Some(v) = self.OHJHNHBDMNN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for TakeRogueScoreRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.ONIKHEJKLAD = 0;
-        self.BCBACGMOHLH.clear();
         self.retcode = 0;
+        self.LCJKKMHOIMJ = 0;
         self.reward.clear();
+        self.OHJHNHBDMNN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueScoreRewardScRsp {
         static instance: TakeRogueScoreRewardScRsp = TakeRogueScoreRewardScRsp {
-            ONIKHEJKLAD: 0,
-            BCBACGMOHLH: ::protobuf::MessageField::none(),
             retcode: 0,
+            LCJKKMHOIMJ: 0,
             reward: ::protobuf::MessageField::none(),
+            OHJHNHBDMNN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueScoreRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fTakeRogueScoreRewardScRsp.proto\x1a\x0eItemList.proto\x1a\x11JNPGF\
-    OIAHBB.proto\"\xaa\x01\n\x19TakeRogueScoreRewardScRsp\x12\x20\n\x0bONIKH\
-    EJKLAD\x18\t\x20\x01(\rR\x0bONIKHEJKLAD\x12.\n\x0bBCBACGMOHLH\x18\x0f\
-    \x20\x01(\x0b2\x0c.JNPGFOIAHBBR\x0bBCBACGMOHLH\x12\x18\n\x07retcode\x18\
-    \x0b\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\x07\x20\x01(\x0b2\t.Ite\
-    mListR\x06rewardb\x06proto3\
+    \n\x1fTakeRogueScoreRewardScRsp.proto\x1a\x11GDGKAODOAMH.proto\x1a\x0eIt\
+    emList.proto\"\xaa\x01\n\x19TakeRogueScoreRewardScRsp\x12\x18\n\x07retco\
+    de\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bLCJKKMHOIMJ\x18\n\x20\x01(\
+    \rR\x0bLCJKKMHOIMJ\x12!\n\x06reward\x18\x08\x20\x01(\x0b2\t.ItemListR\
+    \x06reward\x12.\n\x0bOHJHNHBDMNN\x18\x0c\x20\x01(\x0b2\x0c.GDGKAODOAMHR\
+    \x0bOHJHNHBDMNNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
+            deps.push(super::GDGKAODOAMH::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::JNPGFOIAHBB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TakeRogueScoreRewardScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

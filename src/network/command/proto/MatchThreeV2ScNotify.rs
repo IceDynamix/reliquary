@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchThreeV2ScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MatchThreeV2ScNotify.MLFCKKHAANI)
-    pub MLFCKKHAANI: ::protobuf::MessageField<super::DGFENEDAFFL::DGFENEDAFFL>,
+    // @@protoc_insertion_point(field:MatchThreeV2ScNotify.AEHDFMIDNJM)
+    pub AEHDFMIDNJM: ::protobuf::MessageField<super::IPGAMLENFII::IPGAMLENFII>,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeV2ScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl MatchThreeV2ScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DGFENEDAFFL::DGFENEDAFFL>(
-            "MLFCKKHAANI",
-            |m: &MatchThreeV2ScNotify| { &m.MLFCKKHAANI },
-            |m: &mut MatchThreeV2ScNotify| { &mut m.MLFCKKHAANI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPGAMLENFII::IPGAMLENFII>(
+            "AEHDFMIDNJM",
+            |m: &MatchThreeV2ScNotify| { &m.AEHDFMIDNJM },
+            |m: &mut MatchThreeV2ScNotify| { &mut m.AEHDFMIDNJM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeV2ScNotify>(
             "MatchThreeV2ScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MatchThreeV2ScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MLFCKKHAANI)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEHDFMIDNJM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MatchThreeV2ScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MLFCKKHAANI.as_ref() {
+        if let Some(v) = self.AEHDFMIDNJM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MatchThreeV2ScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MLFCKKHAANI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.AEHDFMIDNJM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MatchThreeV2ScNotify {
     }
 
     fn clear(&mut self) {
-        self.MLFCKKHAANI.clear();
+        self.AEHDFMIDNJM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeV2ScNotify {
         static instance: MatchThreeV2ScNotify = MatchThreeV2ScNotify {
-            MLFCKKHAANI: ::protobuf::MessageField::none(),
+            AEHDFMIDNJM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeV2ScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aMatchThreeV2ScNotify.proto\x1a\x11DGFENEDAFFL.proto\"F\n\x14MatchT\
-    hreeV2ScNotify\x12.\n\x0bMLFCKKHAANI\x18\x01\x20\x01(\x0b2\x0c.DGFENEDAF\
-    FLR\x0bMLFCKKHAANIb\x06proto3\
+    \n\x1aMatchThreeV2ScNotify.proto\x1a\x11IPGAMLENFII.proto\"F\n\x14MatchT\
+    hreeV2ScNotify\x12.\n\x0bAEHDFMIDNJM\x18\x08\x20\x01(\x0b2\x0c.IPGAMLENF\
+    IIR\x0bAEHDFMIDNJMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DGFENEDAFFL::file_descriptor().clone());
+            deps.push(super::IPGAMLENFII::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MatchThreeV2ScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -27,26 +27,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdWaypointType)
 pub enum CmdWaypointType {
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CBOHKADGOLD_GKJBAODJMJG)
-    CBOHKADGOLD_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CBOHKADGOLD_KJDLGEJGGDJ)
-    CBOHKADGOLD_KJDLGEJGGDJ = 455,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CBOHKADGOLD_KJAGNAOHPBC)
-    CBOHKADGOLD_KJAGNAOHPBC = 447,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CBOHKADGOLD_KDDECDHBJIN)
-    CBOHKADGOLD_KDDECDHBJIN = 426,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CBOHKADGOLD_DHMOHOMHGEH)
-    CBOHKADGOLD_DHMOHOMHGEH = 420,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CBOHKADGOLD_MPCNBFLNIOH)
-    CBOHKADGOLD_MPCNBFLNIOH = 457,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CBOHKADGOLD_EDLPFCLPCJB)
-    CBOHKADGOLD_EDLPFCLPCJB = 438,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CBOHKADGOLD_GMEPGEIMHMJ)
-    CBOHKADGOLD_GMEPGEIMHMJ = 475,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CBOHKADGOLD_NLAPINDDIHE)
-    CBOHKADGOLD_NLAPINDDIHE = 462,
-    // @@protoc_insertion_point(enum_value:CmdWaypointType.CBOHKADGOLD_JBJGMAGNELM)
-    CBOHKADGOLD_JBJGMAGNELM = 428,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointType_MNFEPONEDDJ)
+    CmdWaypointType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointType_JLGPBFOKDKM)
+    CmdWaypointType_JLGPBFOKDKM = 469,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointType_NODBHKODHJO)
+    CmdWaypointType_NODBHKODHJO = 483,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointType_BGDEBBPJPEJ)
+    CmdWaypointType_BGDEBBPJPEJ = 462,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointType_MNLEJBHAGHL)
+    CmdWaypointType_MNLEJBHAGHL = 435,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointType_MMNPHDKCHKE)
+    CmdWaypointType_MMNPHDKCHKE = 424,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointType_MBGOOEDMKJA)
+    CmdWaypointType_MBGOOEDMKJA = 413,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointType_INJEJKEAKFD)
+    CmdWaypointType_INJEJKEAKFD = 404,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointType_JLMDOIFPFPD)
+    CmdWaypointType_JLMDOIFPFPD = 481,
+    // @@protoc_insertion_point(enum_value:CmdWaypointType.CmdWaypointType_HGGMOFGHJBJ)
+    CmdWaypointType_HGGMOFGHJBJ = 500,
 }
 
 impl ::protobuf::Enum for CmdWaypointType {
@@ -58,47 +58,47 @@ impl ::protobuf::Enum for CmdWaypointType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdWaypointType> {
         match value {
-            0 => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_GKJBAODJMJG),
-            455 => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_KJDLGEJGGDJ),
-            447 => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_KJAGNAOHPBC),
-            426 => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_KDDECDHBJIN),
-            420 => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_DHMOHOMHGEH),
-            457 => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_MPCNBFLNIOH),
-            438 => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_EDLPFCLPCJB),
-            475 => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_GMEPGEIMHMJ),
-            462 => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_NLAPINDDIHE),
-            428 => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_JBJGMAGNELM),
+            0 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_MNFEPONEDDJ),
+            469 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_JLGPBFOKDKM),
+            483 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_NODBHKODHJO),
+            462 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_BGDEBBPJPEJ),
+            435 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_MNLEJBHAGHL),
+            424 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_MMNPHDKCHKE),
+            413 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_MBGOOEDMKJA),
+            404 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_INJEJKEAKFD),
+            481 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_JLMDOIFPFPD),
+            500 => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_HGGMOFGHJBJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdWaypointType> {
         match str {
-            "CBOHKADGOLD_GKJBAODJMJG" => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_GKJBAODJMJG),
-            "CBOHKADGOLD_KJDLGEJGGDJ" => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_KJDLGEJGGDJ),
-            "CBOHKADGOLD_KJAGNAOHPBC" => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_KJAGNAOHPBC),
-            "CBOHKADGOLD_KDDECDHBJIN" => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_KDDECDHBJIN),
-            "CBOHKADGOLD_DHMOHOMHGEH" => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_DHMOHOMHGEH),
-            "CBOHKADGOLD_MPCNBFLNIOH" => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_MPCNBFLNIOH),
-            "CBOHKADGOLD_EDLPFCLPCJB" => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_EDLPFCLPCJB),
-            "CBOHKADGOLD_GMEPGEIMHMJ" => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_GMEPGEIMHMJ),
-            "CBOHKADGOLD_NLAPINDDIHE" => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_NLAPINDDIHE),
-            "CBOHKADGOLD_JBJGMAGNELM" => ::std::option::Option::Some(CmdWaypointType::CBOHKADGOLD_JBJGMAGNELM),
+            "CmdWaypointType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_MNFEPONEDDJ),
+            "CmdWaypointType_JLGPBFOKDKM" => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_JLGPBFOKDKM),
+            "CmdWaypointType_NODBHKODHJO" => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_NODBHKODHJO),
+            "CmdWaypointType_BGDEBBPJPEJ" => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_BGDEBBPJPEJ),
+            "CmdWaypointType_MNLEJBHAGHL" => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_MNLEJBHAGHL),
+            "CmdWaypointType_MMNPHDKCHKE" => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_MMNPHDKCHKE),
+            "CmdWaypointType_MBGOOEDMKJA" => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_MBGOOEDMKJA),
+            "CmdWaypointType_INJEJKEAKFD" => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_INJEJKEAKFD),
+            "CmdWaypointType_JLMDOIFPFPD" => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_JLMDOIFPFPD),
+            "CmdWaypointType_HGGMOFGHJBJ" => ::std::option::Option::Some(CmdWaypointType::CmdWaypointType_HGGMOFGHJBJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdWaypointType] = &[
-        CmdWaypointType::CBOHKADGOLD_GKJBAODJMJG,
-        CmdWaypointType::CBOHKADGOLD_KJDLGEJGGDJ,
-        CmdWaypointType::CBOHKADGOLD_KJAGNAOHPBC,
-        CmdWaypointType::CBOHKADGOLD_KDDECDHBJIN,
-        CmdWaypointType::CBOHKADGOLD_DHMOHOMHGEH,
-        CmdWaypointType::CBOHKADGOLD_MPCNBFLNIOH,
-        CmdWaypointType::CBOHKADGOLD_EDLPFCLPCJB,
-        CmdWaypointType::CBOHKADGOLD_GMEPGEIMHMJ,
-        CmdWaypointType::CBOHKADGOLD_NLAPINDDIHE,
-        CmdWaypointType::CBOHKADGOLD_JBJGMAGNELM,
+        CmdWaypointType::CmdWaypointType_MNFEPONEDDJ,
+        CmdWaypointType::CmdWaypointType_JLGPBFOKDKM,
+        CmdWaypointType::CmdWaypointType_NODBHKODHJO,
+        CmdWaypointType::CmdWaypointType_BGDEBBPJPEJ,
+        CmdWaypointType::CmdWaypointType_MNLEJBHAGHL,
+        CmdWaypointType::CmdWaypointType_MMNPHDKCHKE,
+        CmdWaypointType::CmdWaypointType_MBGOOEDMKJA,
+        CmdWaypointType::CmdWaypointType_INJEJKEAKFD,
+        CmdWaypointType::CmdWaypointType_JLMDOIFPFPD,
+        CmdWaypointType::CmdWaypointType_HGGMOFGHJBJ,
     ];
 }
 
@@ -110,16 +110,16 @@ impl ::protobuf::EnumFull for CmdWaypointType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdWaypointType::CBOHKADGOLD_GKJBAODJMJG => 0,
-            CmdWaypointType::CBOHKADGOLD_KJDLGEJGGDJ => 1,
-            CmdWaypointType::CBOHKADGOLD_KJAGNAOHPBC => 2,
-            CmdWaypointType::CBOHKADGOLD_KDDECDHBJIN => 3,
-            CmdWaypointType::CBOHKADGOLD_DHMOHOMHGEH => 4,
-            CmdWaypointType::CBOHKADGOLD_MPCNBFLNIOH => 5,
-            CmdWaypointType::CBOHKADGOLD_EDLPFCLPCJB => 6,
-            CmdWaypointType::CBOHKADGOLD_GMEPGEIMHMJ => 7,
-            CmdWaypointType::CBOHKADGOLD_NLAPINDDIHE => 8,
-            CmdWaypointType::CBOHKADGOLD_JBJGMAGNELM => 9,
+            CmdWaypointType::CmdWaypointType_MNFEPONEDDJ => 0,
+            CmdWaypointType::CmdWaypointType_JLGPBFOKDKM => 1,
+            CmdWaypointType::CmdWaypointType_NODBHKODHJO => 2,
+            CmdWaypointType::CmdWaypointType_BGDEBBPJPEJ => 3,
+            CmdWaypointType::CmdWaypointType_MNLEJBHAGHL => 4,
+            CmdWaypointType::CmdWaypointType_MMNPHDKCHKE => 5,
+            CmdWaypointType::CmdWaypointType_MBGOOEDMKJA => 6,
+            CmdWaypointType::CmdWaypointType_INJEJKEAKFD => 7,
+            CmdWaypointType::CmdWaypointType_JLMDOIFPFPD => 8,
+            CmdWaypointType::CmdWaypointType_HGGMOFGHJBJ => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,7 +127,7 @@ impl ::protobuf::EnumFull for CmdWaypointType {
 
 impl ::std::default::Default for CmdWaypointType {
     fn default() -> Self {
-        CmdWaypointType::CBOHKADGOLD_GKJBAODJMJG
+        CmdWaypointType::CmdWaypointType_MNFEPONEDDJ
     }
 }
 
@@ -138,14 +138,15 @@ impl CmdWaypointType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdWaypointType.proto*\xbc\x02\n\x0fCmdWaypointType\x12\x1b\n\x17C\
-    BOHKADGOLD_GKJBAODJMJG\x10\0\x12\x1c\n\x17CBOHKADGOLD_KJDLGEJGGDJ\x10\
-    \xc7\x03\x12\x1c\n\x17CBOHKADGOLD_KJAGNAOHPBC\x10\xbf\x03\x12\x1c\n\x17C\
-    BOHKADGOLD_KDDECDHBJIN\x10\xaa\x03\x12\x1c\n\x17CBOHKADGOLD_DHMOHOMHGEH\
-    \x10\xa4\x03\x12\x1c\n\x17CBOHKADGOLD_MPCNBFLNIOH\x10\xc9\x03\x12\x1c\n\
-    \x17CBOHKADGOLD_EDLPFCLPCJB\x10\xb6\x03\x12\x1c\n\x17CBOHKADGOLD_GMEPGEI\
-    MHMJ\x10\xdb\x03\x12\x1c\n\x17CBOHKADGOLD_NLAPINDDIHE\x10\xce\x03\x12\
-    \x1c\n\x17CBOHKADGOLD_JBJGMAGNELM\x10\xac\x03b\x06proto3\
+    \n\x15CmdWaypointType.proto*\xe4\x02\n\x0fCmdWaypointType\x12\x1f\n\x1bC\
+    mdWaypointType_MNFEPONEDDJ\x10\0\x12\x20\n\x1bCmdWaypointType_JLGPBFOKDK\
+    M\x10\xd5\x03\x12\x20\n\x1bCmdWaypointType_NODBHKODHJO\x10\xe3\x03\x12\
+    \x20\n\x1bCmdWaypointType_BGDEBBPJPEJ\x10\xce\x03\x12\x20\n\x1bCmdWaypoi\
+    ntType_MNLEJBHAGHL\x10\xb3\x03\x12\x20\n\x1bCmdWaypointType_MMNPHDKCHKE\
+    \x10\xa8\x03\x12\x20\n\x1bCmdWaypointType_MBGOOEDMKJA\x10\x9d\x03\x12\
+    \x20\n\x1bCmdWaypointType_INJEJKEAKFD\x10\x94\x03\x12\x20\n\x1bCmdWaypoi\
+    ntType_JLMDOIFPFPD\x10\xe1\x03\x12\x20\n\x1bCmdWaypointType_HGGMOFGHJBJ\
+    \x10\xf4\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

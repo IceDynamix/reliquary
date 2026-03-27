@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RelicDiscardType)
 pub enum RelicDiscardType {
-    // @@protoc_insertion_point(enum_value:RelicDiscardType.HBKGFOMJCEC_EKMCBEAFEBH)
-    HBKGFOMJCEC_EKMCBEAFEBH = 0,
-    // @@protoc_insertion_point(enum_value:RelicDiscardType.HBKGFOMJCEC_MGOIJEBFCDN)
-    HBKGFOMJCEC_MGOIJEBFCDN = 1,
-    // @@protoc_insertion_point(enum_value:RelicDiscardType.HBKGFOMJCEC_DPCBGFBDENH)
-    HBKGFOMJCEC_DPCBGFBDENH = 2,
+    // @@protoc_insertion_point(enum_value:RelicDiscardType.RelicDiscardType_BODGEBNACIK)
+    RelicDiscardType_BODGEBNACIK = 0,
+    // @@protoc_insertion_point(enum_value:RelicDiscardType.RelicDiscardType_HKDCCKBNCEL)
+    RelicDiscardType_HKDCCKBNCEL = 1,
+    // @@protoc_insertion_point(enum_value:RelicDiscardType.RelicDiscardType_AHDGMEDADHH)
+    RelicDiscardType_AHDGMEDADHH = 2,
 }
 
 impl ::protobuf::Enum for RelicDiscardType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for RelicDiscardType {
 
     fn from_i32(value: i32) -> ::std::option::Option<RelicDiscardType> {
         match value {
-            0 => ::std::option::Option::Some(RelicDiscardType::HBKGFOMJCEC_EKMCBEAFEBH),
-            1 => ::std::option::Option::Some(RelicDiscardType::HBKGFOMJCEC_MGOIJEBFCDN),
-            2 => ::std::option::Option::Some(RelicDiscardType::HBKGFOMJCEC_DPCBGFBDENH),
+            0 => ::std::option::Option::Some(RelicDiscardType::RelicDiscardType_BODGEBNACIK),
+            1 => ::std::option::Option::Some(RelicDiscardType::RelicDiscardType_HKDCCKBNCEL),
+            2 => ::std::option::Option::Some(RelicDiscardType::RelicDiscardType_AHDGMEDADHH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RelicDiscardType> {
         match str {
-            "HBKGFOMJCEC_EKMCBEAFEBH" => ::std::option::Option::Some(RelicDiscardType::HBKGFOMJCEC_EKMCBEAFEBH),
-            "HBKGFOMJCEC_MGOIJEBFCDN" => ::std::option::Option::Some(RelicDiscardType::HBKGFOMJCEC_MGOIJEBFCDN),
-            "HBKGFOMJCEC_DPCBGFBDENH" => ::std::option::Option::Some(RelicDiscardType::HBKGFOMJCEC_DPCBGFBDENH),
+            "RelicDiscardType_BODGEBNACIK" => ::std::option::Option::Some(RelicDiscardType::RelicDiscardType_BODGEBNACIK),
+            "RelicDiscardType_HKDCCKBNCEL" => ::std::option::Option::Some(RelicDiscardType::RelicDiscardType_HKDCCKBNCEL),
+            "RelicDiscardType_AHDGMEDADHH" => ::std::option::Option::Some(RelicDiscardType::RelicDiscardType_AHDGMEDADHH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RelicDiscardType] = &[
-        RelicDiscardType::HBKGFOMJCEC_EKMCBEAFEBH,
-        RelicDiscardType::HBKGFOMJCEC_MGOIJEBFCDN,
-        RelicDiscardType::HBKGFOMJCEC_DPCBGFBDENH,
+        RelicDiscardType::RelicDiscardType_BODGEBNACIK,
+        RelicDiscardType::RelicDiscardType_HKDCCKBNCEL,
+        RelicDiscardType::RelicDiscardType_AHDGMEDADHH,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for RelicDiscardType {
 
 impl ::std::default::Default for RelicDiscardType {
     fn default() -> Self {
-        RelicDiscardType::HBKGFOMJCEC_EKMCBEAFEBH
+        RelicDiscardType::RelicDiscardType_BODGEBNACIK
     }
 }
 
@@ -92,9 +92,9 @@ impl RelicDiscardType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16RelicDiscardType.proto*i\n\x10RelicDiscardType\x12\x1b\n\x17HBKGFO\
-    MJCEC_EKMCBEAFEBH\x10\0\x12\x1b\n\x17HBKGFOMJCEC_MGOIJEBFCDN\x10\x01\x12\
-    \x1b\n\x17HBKGFOMJCEC_DPCBGFBDENH\x10\x02b\x06proto3\
+    \n\x16RelicDiscardType.proto*x\n\x10RelicDiscardType\x12\x20\n\x1cRelicD\
+    iscardType_BODGEBNACIK\x10\0\x12\x20\n\x1cRelicDiscardType_HKDCCKBNCEL\
+    \x10\x01\x12\x20\n\x1cRelicDiscardType_AHDGMEDADHH\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

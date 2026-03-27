@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReportRelicBoxActionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReportRelicBoxActionCsReq.CBNNOPPPLHF)
-    pub CBNNOPPPLHF: u32,
+    // @@protoc_insertion_point(field:ReportRelicBoxActionCsReq.KDKNPAGEHJP)
+    pub KDKNPAGEHJP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ReportRelicBoxActionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ReportRelicBoxActionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBNNOPPPLHF",
-            |m: &ReportRelicBoxActionCsReq| { &m.CBNNOPPPLHF },
-            |m: &mut ReportRelicBoxActionCsReq| { &mut m.CBNNOPPPLHF },
+            "KDKNPAGEHJP",
+            |m: &ReportRelicBoxActionCsReq| { &m.KDKNPAGEHJP },
+            |m: &mut ReportRelicBoxActionCsReq| { &mut m.KDKNPAGEHJP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReportRelicBoxActionCsReq>(
             "ReportRelicBoxActionCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.CBNNOPPPLHF = is.read_uint32()?;
+                48 => {
+                    self.KDKNPAGEHJP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CBNNOPPPLHF != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CBNNOPPPLHF);
+        if self.KDKNPAGEHJP != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KDKNPAGEHJP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CBNNOPPPLHF != 0 {
-            os.write_uint32(10, self.CBNNOPPPLHF)?;
+        if self.KDKNPAGEHJP != 0 {
+            os.write_uint32(6, self.KDKNPAGEHJP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
     }
 
     fn clear(&mut self) {
-        self.CBNNOPPPLHF = 0;
+        self.KDKNPAGEHJP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReportRelicBoxActionCsReq {
         static instance: ReportRelicBoxActionCsReq = ReportRelicBoxActionCsReq {
-            CBNNOPPPLHF: 0,
+            KDKNPAGEHJP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ReportRelicBoxActionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fReportRelicBoxActionCsReq.proto\"=\n\x19ReportRelicBoxActionCsReq\
-    \x12\x20\n\x0bCBNNOPPPLHF\x18\n\x20\x01(\rR\x0bCBNNOPPPLHFb\x06proto3\
+    \x12\x20\n\x0bKDKNPAGEHJP\x18\x06\x20\x01(\rR\x0bKDKNPAGEHJPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

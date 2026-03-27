@@ -28,32 +28,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMonopolyInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.PBDPIAMKAPI)
-    pub PBDPIAMKAPI: ::protobuf::MessageField<super::GPIKLMGKDNK::GPIKLMGKDNK>,
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.LPIOKBDLAOM)
-    pub LPIOKBDLAOM: ::protobuf::MessageField<super::HHCPFFDCJMD::HHCPFFDCJMD>,
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.DEHKOLFHAPN)
-    pub DEHKOLFHAPN: ::protobuf::MessageField<super::PLBKLAFCLNL::PLBKLAFCLNL>,
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.DMOLBOOEFMJ)
-    pub DMOLBOOEFMJ: ::protobuf::MessageField<super::GEBPOLHBIBD::GEBPOLHBIBD>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.CDJKJGECBGC)
+    pub CDJKJGECBGC: ::protobuf::MessageField<super::DOBPMMEHNGG::DOBPMMEHNGG>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.IKFNCMIODIG)
+    pub IKFNCMIODIG: ::protobuf::MessageField<super::LMAPLAGBEEA::LMAPLAGBEEA>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.JFPMGBBAMFM)
+    pub JFPMGBBAMFM: ::protobuf::MessageField<super::FPOKLHLBEJO::FPOKLHLBEJO>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.BJHNDHJCAFM)
+    pub BJHNDHJCAFM: ::protobuf::MessageField<super::JMOGFEBBIAH::JMOGFEBBIAH>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.HBLJKNGAOKG)
+    pub HBLJKNGAOKG: ::protobuf::MessageField<super::CEEJKLIFILK::CEEJKLIFILK>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.stt)
+    pub stt: ::protobuf::MessageField<super::MINAHOBGBAG::MINAHOBGBAG>,
     // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.GMOFCNHAFJF)
-    pub GMOFCNHAFJF: ::protobuf::MessageField<super::MANKDBEGEJA::MANKDBEGEJA>,
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.DEDLMKIFLLN)
-    pub DEDLMKIFLLN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.AEOJGFLJNBM)
-    pub AEOJGFLJNBM: ::protobuf::MessageField<super::BBFFGFMPGGB::BBFFGFMPGGB>,
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.stt)
-    pub stt: ::protobuf::MessageField<super::OAFBPPDDFJJ::OAFBPPDDFJJ>,
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.CCPMLANGEAF)
-    pub CCPMLANGEAF: ::protobuf::MessageField<super::EHGFLDGDJHC::EHGFLDGDJHC>,
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.DKGDDLFNEDG)
-    pub DKGDDLFNEDG: ::protobuf::MessageField<super::PGAKDLGGEMG::PGAKDLGGEMG>,
     // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.rogue_map)
-    pub rogue_map: ::protobuf::MessageField<super::JDLGKBIMPNB::JDLGKBIMPNB>,
-    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.OMIOGALIDCO)
-    pub OMIOGALIDCO: ::protobuf::MessageField<super::IDNJALJMNAI::IDNJALJMNAI>,
+    pub rogue_map: ::protobuf::MessageField<super::ICGMOPBBCCN::ICGMOPBBCCN>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.GFCKFABCBHN)
+    pub GFCKFABCBHN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.MOHOGLJNHDM)
+    pub MOHOGLJNHDM: ::protobuf::MessageField<super::CNHCNCFGFKE::CNHCNCFGFKE>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.LNAOKIIMJME)
+    pub LNAOKIIMJME: ::protobuf::MessageField<super::NBBGPFOGHDI::NBBGPFOGHDI>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.DMMIGACHPLF)
+    pub DMMIGACHPLF: ::protobuf::MessageField<super::DKBOIEIFHBI::DKBOIEIFHBI>,
+    // @@protoc_insertion_point(field:GetMonopolyInfoScRsp.JKPAEKMCEFF)
+    pub JKPAEKMCEFF: ::protobuf::MessageField<super::FLCOLEKAMEJ::FLCOLEKAMEJ>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMonopolyInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -73,70 +73,70 @@ impl GetMonopolyInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(13);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GPIKLMGKDNK::GPIKLMGKDNK>(
-            "PBDPIAMKAPI",
-            |m: &GetMonopolyInfoScRsp| { &m.PBDPIAMKAPI },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.PBDPIAMKAPI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DOBPMMEHNGG::DOBPMMEHNGG>(
+            "CDJKJGECBGC",
+            |m: &GetMonopolyInfoScRsp| { &m.CDJKJGECBGC },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.CDJKJGECBGC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HHCPFFDCJMD::HHCPFFDCJMD>(
-            "LPIOKBDLAOM",
-            |m: &GetMonopolyInfoScRsp| { &m.LPIOKBDLAOM },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.LPIOKBDLAOM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMAPLAGBEEA::LMAPLAGBEEA>(
+            "IKFNCMIODIG",
+            |m: &GetMonopolyInfoScRsp| { &m.IKFNCMIODIG },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.IKFNCMIODIG },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PLBKLAFCLNL::PLBKLAFCLNL>(
-            "DEHKOLFHAPN",
-            |m: &GetMonopolyInfoScRsp| { &m.DEHKOLFHAPN },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.DEHKOLFHAPN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FPOKLHLBEJO::FPOKLHLBEJO>(
+            "JFPMGBBAMFM",
+            |m: &GetMonopolyInfoScRsp| { &m.JFPMGBBAMFM },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.JFPMGBBAMFM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GEBPOLHBIBD::GEBPOLHBIBD>(
-            "DMOLBOOEFMJ",
-            |m: &GetMonopolyInfoScRsp| { &m.DMOLBOOEFMJ },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.DMOLBOOEFMJ },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMOGFEBBIAH::JMOGFEBBIAH>(
+            "BJHNDHJCAFM",
+            |m: &GetMonopolyInfoScRsp| { &m.BJHNDHJCAFM },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.BJHNDHJCAFM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CEEJKLIFILK::CEEJKLIFILK>(
+            "HBLJKNGAOKG",
+            |m: &GetMonopolyInfoScRsp| { &m.HBLJKNGAOKG },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.HBLJKNGAOKG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MINAHOBGBAG::MINAHOBGBAG>(
+            "stt",
+            |m: &GetMonopolyInfoScRsp| { &m.stt },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.stt },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetMonopolyInfoScRsp| { &m.retcode },
             |m: &mut GetMonopolyInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MANKDBEGEJA::MANKDBEGEJA>(
-            "GMOFCNHAFJF",
-            |m: &GetMonopolyInfoScRsp| { &m.GMOFCNHAFJF },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.GMOFCNHAFJF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DEDLMKIFLLN",
-            |m: &GetMonopolyInfoScRsp| { &m.DEDLMKIFLLN },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.DEDLMKIFLLN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BBFFGFMPGGB::BBFFGFMPGGB>(
-            "AEOJGFLJNBM",
-            |m: &GetMonopolyInfoScRsp| { &m.AEOJGFLJNBM },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.AEOJGFLJNBM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OAFBPPDDFJJ::OAFBPPDDFJJ>(
-            "stt",
-            |m: &GetMonopolyInfoScRsp| { &m.stt },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.stt },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EHGFLDGDJHC::EHGFLDGDJHC>(
-            "CCPMLANGEAF",
-            |m: &GetMonopolyInfoScRsp| { &m.CCPMLANGEAF },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.CCPMLANGEAF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGAKDLGGEMG::PGAKDLGGEMG>(
-            "DKGDDLFNEDG",
-            |m: &GetMonopolyInfoScRsp| { &m.DKGDDLFNEDG },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.DKGDDLFNEDG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JDLGKBIMPNB::JDLGKBIMPNB>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ICGMOPBBCCN::ICGMOPBBCCN>(
             "rogue_map",
             |m: &GetMonopolyInfoScRsp| { &m.rogue_map },
             |m: &mut GetMonopolyInfoScRsp| { &mut m.rogue_map },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IDNJALJMNAI::IDNJALJMNAI>(
-            "OMIOGALIDCO",
-            |m: &GetMonopolyInfoScRsp| { &m.OMIOGALIDCO },
-            |m: &mut GetMonopolyInfoScRsp| { &mut m.OMIOGALIDCO },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GFCKFABCBHN",
+            |m: &GetMonopolyInfoScRsp| { &m.GFCKFABCBHN },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.GFCKFABCBHN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CNHCNCFGFKE::CNHCNCFGFKE>(
+            "MOHOGLJNHDM",
+            |m: &GetMonopolyInfoScRsp| { &m.MOHOGLJNHDM },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.MOHOGLJNHDM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NBBGPFOGHDI::NBBGPFOGHDI>(
+            "LNAOKIIMJME",
+            |m: &GetMonopolyInfoScRsp| { &m.LNAOKIIMJME },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.LNAOKIIMJME },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DKBOIEIFHBI::DKBOIEIFHBI>(
+            "DMMIGACHPLF",
+            |m: &GetMonopolyInfoScRsp| { &m.DMMIGACHPLF },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.DMMIGACHPLF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FLCOLEKAMEJ::FLCOLEKAMEJ>(
+            "JKPAEKMCEFF",
+            |m: &GetMonopolyInfoScRsp| { &m.JKPAEKMCEFF },
+            |m: &mut GetMonopolyInfoScRsp| { &mut m.JKPAEKMCEFF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMonopolyInfoScRsp>(
             "GetMonopolyInfoScRsp",
@@ -156,47 +156,47 @@ impl ::protobuf::Message for GetMonopolyInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CDJKJGECBGC)?;
+                },
                 74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBDPIAMKAPI)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKFNCMIODIG)?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LPIOKBDLAOM)?;
-                },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DEHKOLFHAPN)?;
-                },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DMOLBOOEFMJ)?;
-                },
-                40 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GMOFCNHAFJF)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFPMGBBAMFM)?;
                 },
                 34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DEDLMKIFLLN)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BJHNDHJCAFM)?;
                 },
-                32 => {
-                    self.DEDLMKIFLLN.push(is.read_uint32()?);
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEOJGFLJNBM)?;
-                },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBLJKNGAOKG)?;
                 },
                 122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCPMLANGEAF)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.stt)?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DKGDDLFNEDG)?;
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
-                82 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
                 },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GFCKFABCBHN)?;
+                },
+                48 => {
+                    self.GFCKFABCBHN.push(is.read_uint32()?);
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MOHOGLJNHDM)?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNAOKIIMJME)?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DMMIGACHPLF)?;
+                },
                 90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OMIOGALIDCO)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JKPAEKMCEFF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -210,31 +210,23 @@ impl ::protobuf::Message for GetMonopolyInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PBDPIAMKAPI.as_ref() {
+        if let Some(v) = self.CDJKJGECBGC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.LPIOKBDLAOM.as_ref() {
+        if let Some(v) = self.IKFNCMIODIG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.DEHKOLFHAPN.as_ref() {
+        if let Some(v) = self.JFPMGBBAMFM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.DMOLBOOEFMJ.as_ref() {
+        if let Some(v) = self.BJHNDHJCAFM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        if let Some(v) = self.GMOFCNHAFJF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.DEDLMKIFLLN);
-        if let Some(v) = self.AEOJGFLJNBM.as_ref() {
+        if let Some(v) = self.HBLJKNGAOKG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -242,19 +234,27 @@ impl ::protobuf::Message for GetMonopolyInfoScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CCPMLANGEAF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.DKGDDLFNEDG.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if let Some(v) = self.rogue_map.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.OMIOGALIDCO.as_ref() {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.GFCKFABCBHN);
+        if let Some(v) = self.MOHOGLJNHDM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.LNAOKIIMJME.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.DMMIGACHPLF.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.JKPAEKMCEFF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -264,41 +264,41 @@ impl ::protobuf::Message for GetMonopolyInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PBDPIAMKAPI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if let Some(v) = self.LPIOKBDLAOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        }
-        if let Some(v) = self.DEHKOLFHAPN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if let Some(v) = self.DMOLBOOEFMJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
-        }
-        if let Some(v) = self.GMOFCNHAFJF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        os.write_repeated_packed_uint32(4, &self.DEDLMKIFLLN)?;
-        if let Some(v) = self.AEOJGFLJNBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if let Some(v) = self.stt.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        }
-        if let Some(v) = self.CCPMLANGEAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.DKGDDLFNEDG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if let Some(v) = self.rogue_map.as_ref() {
+        if let Some(v) = self.CDJKJGECBGC.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.OMIOGALIDCO.as_ref() {
+        if let Some(v) = self.IKFNCMIODIG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        }
+        if let Some(v) = self.JFPMGBBAMFM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if let Some(v) = self.BJHNDHJCAFM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.HBLJKNGAOKG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if let Some(v) = self.stt.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
+        }
+        if let Some(v) = self.rogue_map.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        os.write_repeated_packed_uint32(6, &self.GFCKFABCBHN)?;
+        if let Some(v) = self.MOHOGLJNHDM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if let Some(v) = self.LNAOKIIMJME.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.DMMIGACHPLF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if let Some(v) = self.JKPAEKMCEFF.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -318,37 +318,37 @@ impl ::protobuf::Message for GetMonopolyInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.PBDPIAMKAPI.clear();
-        self.LPIOKBDLAOM.clear();
-        self.DEHKOLFHAPN.clear();
-        self.DMOLBOOEFMJ.clear();
-        self.retcode = 0;
-        self.GMOFCNHAFJF.clear();
-        self.DEDLMKIFLLN.clear();
-        self.AEOJGFLJNBM.clear();
+        self.CDJKJGECBGC.clear();
+        self.IKFNCMIODIG.clear();
+        self.JFPMGBBAMFM.clear();
+        self.BJHNDHJCAFM.clear();
+        self.HBLJKNGAOKG.clear();
         self.stt.clear();
-        self.CCPMLANGEAF.clear();
-        self.DKGDDLFNEDG.clear();
+        self.retcode = 0;
         self.rogue_map.clear();
-        self.OMIOGALIDCO.clear();
+        self.GFCKFABCBHN.clear();
+        self.MOHOGLJNHDM.clear();
+        self.LNAOKIIMJME.clear();
+        self.DMMIGACHPLF.clear();
+        self.JKPAEKMCEFF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMonopolyInfoScRsp {
         static instance: GetMonopolyInfoScRsp = GetMonopolyInfoScRsp {
-            PBDPIAMKAPI: ::protobuf::MessageField::none(),
-            LPIOKBDLAOM: ::protobuf::MessageField::none(),
-            DEHKOLFHAPN: ::protobuf::MessageField::none(),
-            DMOLBOOEFMJ: ::protobuf::MessageField::none(),
-            retcode: 0,
-            GMOFCNHAFJF: ::protobuf::MessageField::none(),
-            DEDLMKIFLLN: ::std::vec::Vec::new(),
-            AEOJGFLJNBM: ::protobuf::MessageField::none(),
+            CDJKJGECBGC: ::protobuf::MessageField::none(),
+            IKFNCMIODIG: ::protobuf::MessageField::none(),
+            JFPMGBBAMFM: ::protobuf::MessageField::none(),
+            BJHNDHJCAFM: ::protobuf::MessageField::none(),
+            HBLJKNGAOKG: ::protobuf::MessageField::none(),
             stt: ::protobuf::MessageField::none(),
-            CCPMLANGEAF: ::protobuf::MessageField::none(),
-            DKGDDLFNEDG: ::protobuf::MessageField::none(),
+            retcode: 0,
             rogue_map: ::protobuf::MessageField::none(),
-            OMIOGALIDCO: ::protobuf::MessageField::none(),
+            GFCKFABCBHN: ::std::vec::Vec::new(),
+            MOHOGLJNHDM: ::protobuf::MessageField::none(),
+            LNAOKIIMJME: ::protobuf::MessageField::none(),
+            DMMIGACHPLF: ::protobuf::MessageField::none(),
+            JKPAEKMCEFF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -373,24 +373,24 @@ impl ::protobuf::reflect::ProtobufValue for GetMonopolyInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aGetMonopolyInfoScRsp.proto\x1a\x11BBFFGFMPGGB.proto\x1a\x11EHGFLDG\
-    DJHC.proto\x1a\x11GEBPOLHBIBD.proto\x1a\x11GPIKLMGKDNK.proto\x1a\x11HHCP\
-    FFDCJMD.proto\x1a\x11IDNJALJMNAI.proto\x1a\x11JDLGKBIMPNB.proto\x1a\x11M\
-    ANKDBEGEJA.proto\x1a\x11OAFBPPDDFJJ.proto\x1a\x11PGAKDLGGEMG.proto\x1a\
-    \x11PLBKLAFCLNL.proto\"\xcd\x04\n\x14GetMonopolyInfoScRsp\x12.\n\x0bPBDP\
-    IAMKAPI\x18\t\x20\x01(\x0b2\x0c.GPIKLMGKDNKR\x0bPBDPIAMKAPI\x12.\n\x0bLP\
-    IOKBDLAOM\x18\x0e\x20\x01(\x0b2\x0c.HHCPFFDCJMDR\x0bLPIOKBDLAOM\x12.\n\
-    \x0bDEHKOLFHAPN\x18\x02\x20\x01(\x0b2\x0c.PLBKLAFCLNLR\x0bDEHKOLFHAPN\
-    \x12.\n\x0bDMOLBOOEFMJ\x18\x0c\x20\x01(\x0b2\x0c.GEBPOLHBIBDR\x0bDMOLBOO\
-    EFMJ\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x12.\n\x0bGMOFC\
-    NHAFJF\x18\r\x20\x01(\x0b2\x0c.MANKDBEGEJAR\x0bGMOFCNHAFJF\x12\x20\n\x0b\
-    DEDLMKIFLLN\x18\x04\x20\x03(\rR\x0bDEDLMKIFLLN\x12.\n\x0bAEOJGFLJNBM\x18\
-    \x08\x20\x01(\x0b2\x0c.BBFFGFMPGGBR\x0bAEOJGFLJNBM\x12\x1e\n\x03stt\x18\
-    \x07\x20\x01(\x0b2\x0c.OAFBPPDDFJJR\x03stt\x12.\n\x0bCCPMLANGEAF\x18\x0f\
-    \x20\x01(\x0b2\x0c.EHGFLDGDJHCR\x0bCCPMLANGEAF\x12.\n\x0bDKGDDLFNEDG\x18\
-    \x03\x20\x01(\x0b2\x0c.PGAKDLGGEMGR\x0bDKGDDLFNEDG\x12)\n\trogue_map\x18\
-    \n\x20\x01(\x0b2\x0c.JDLGKBIMPNBR\x08rogueMap\x12.\n\x0bOMIOGALIDCO\x18\
-    \x0b\x20\x01(\x0b2\x0c.IDNJALJMNAIR\x0bOMIOGALIDCOb\x06proto3\
+    \n\x1aGetMonopolyInfoScRsp.proto\x1a\x11CEEJKLIFILK.proto\x1a\x11CNHCNCF\
+    GFKE.proto\x1a\x11DKBOIEIFHBI.proto\x1a\x11DOBPMMEHNGG.proto\x1a\x11FLCO\
+    LEKAMEJ.proto\x1a\x11FPOKLHLBEJO.proto\x1a\x11ICGMOPBBCCN.proto\x1a\x11J\
+    MOGFEBBIAH.proto\x1a\x11LMAPLAGBEEA.proto\x1a\x11MINAHOBGBAG.proto\x1a\
+    \x11NBBGPFOGHDI.proto\"\xcd\x04\n\x14GetMonopolyInfoScRsp\x12.\n\x0bCDJK\
+    JGECBGC\x18\n\x20\x01(\x0b2\x0c.DOBPMMEHNGGR\x0bCDJKJGECBGC\x12.\n\x0bIK\
+    FNCMIODIG\x18\t\x20\x01(\x0b2\x0c.LMAPLAGBEEAR\x0bIKFNCMIODIG\x12.\n\x0b\
+    JFPMGBBAMFM\x18\x01\x20\x01(\x0b2\x0c.FPOKLHLBEJOR\x0bJFPMGBBAMFM\x12.\n\
+    \x0bBJHNDHJCAFM\x18\x04\x20\x01(\x0b2\x0c.JMOGFEBBIAHR\x0bBJHNDHJCAFM\
+    \x12.\n\x0bHBLJKNGAOKG\x18\x0e\x20\x01(\x0b2\x0c.CEEJKLIFILKR\x0bHBLJKNG\
+    AOKG\x12\x1e\n\x03stt\x18\x0f\x20\x01(\x0b2\x0c.MINAHOBGBAGR\x03stt\x12\
+    \x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12)\n\trogue_map\x18\
+    \x07\x20\x01(\x0b2\x0c.ICGMOPBBCCNR\x08rogueMap\x12\x20\n\x0bGFCKFABCBHN\
+    \x18\x06\x20\x03(\rR\x0bGFCKFABCBHN\x12.\n\x0bMOHOGLJNHDM\x18\x03\x20\
+    \x01(\x0b2\x0c.CNHCNCFGFKER\x0bMOHOGLJNHDM\x12.\n\x0bLNAOKIIMJME\x18\x02\
+    \x20\x01(\x0b2\x0c.NBBGPFOGHDIR\x0bLNAOKIIMJME\x12.\n\x0bDMMIGACHPLF\x18\
+    \x05\x20\x01(\x0b2\x0c.DKBOIEIFHBIR\x0bDMMIGACHPLF\x12.\n\x0bJKPAEKMCEFF\
+    \x18\x0b\x20\x01(\x0b2\x0c.FLCOLEKAMEJR\x0bJKPAEKMCEFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -408,17 +408,17 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(11);
-            deps.push(super::BBFFGFMPGGB::file_descriptor().clone());
-            deps.push(super::EHGFLDGDJHC::file_descriptor().clone());
-            deps.push(super::GEBPOLHBIBD::file_descriptor().clone());
-            deps.push(super::GPIKLMGKDNK::file_descriptor().clone());
-            deps.push(super::HHCPFFDCJMD::file_descriptor().clone());
-            deps.push(super::IDNJALJMNAI::file_descriptor().clone());
-            deps.push(super::JDLGKBIMPNB::file_descriptor().clone());
-            deps.push(super::MANKDBEGEJA::file_descriptor().clone());
-            deps.push(super::OAFBPPDDFJJ::file_descriptor().clone());
-            deps.push(super::PGAKDLGGEMG::file_descriptor().clone());
-            deps.push(super::PLBKLAFCLNL::file_descriptor().clone());
+            deps.push(super::CEEJKLIFILK::file_descriptor().clone());
+            deps.push(super::CNHCNCFGFKE::file_descriptor().clone());
+            deps.push(super::DKBOIEIFHBI::file_descriptor().clone());
+            deps.push(super::DOBPMMEHNGG::file_descriptor().clone());
+            deps.push(super::FLCOLEKAMEJ::file_descriptor().clone());
+            deps.push(super::FPOKLHLBEJO::file_descriptor().clone());
+            deps.push(super::ICGMOPBBCCN::file_descriptor().clone());
+            deps.push(super::JMOGFEBBIAH::file_descriptor().clone());
+            deps.push(super::LMAPLAGBEEA::file_descriptor().clone());
+            deps.push(super::MINAHOBGBAG::file_descriptor().clone());
+            deps.push(super::NBBGPFOGHDI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMonopolyInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

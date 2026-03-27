@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightGameShopInfo {
     // message fields
+    // @@protoc_insertion_point(field:GridFightGameShopInfo.EMJCHKNJMBJ)
+    pub EMJCHKNJMBJ: u32,
     // @@protoc_insertion_point(field:GridFightGameShopInfo.shop_is_locked)
     pub shop_is_locked: bool,
-    // @@protoc_insertion_point(field:GridFightGameShopInfo.KGIIAFNEJFI)
-    pub KGIIAFNEJFI: ::protobuf::MessageField<super::MIBONFGCFBN::MIBONFGCFBN>,
+    // @@protoc_insertion_point(field:GridFightGameShopInfo.MLDKGLCDOJP)
+    pub MLDKGLCDOJP: u32,
+    // @@protoc_insertion_point(field:GridFightGameShopInfo.KFBDAEINFLE)
+    pub KFBDAEINFLE: ::protobuf::MessageField<super::ODBJMJDBHOL::ODBJMJDBHOL>,
     // @@protoc_insertion_point(field:GridFightGameShopInfo.shop_goods_list)
     pub shop_goods_list: ::std::vec::Vec<super::GridFightShopGoodsInfo::GridFightShopGoodsInfo>,
-    // @@protoc_insertion_point(field:GridFightGameShopInfo.HHAFOHGFENP)
-    pub HHAFOHGFENP: u32,
-    // @@protoc_insertion_point(field:GridFightGameShopInfo.KLKHJNAPPBP)
-    pub KLKHJNAPPBP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightGameShopInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl GridFightGameShopInfo {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EMJCHKNJMBJ",
+            |m: &GridFightGameShopInfo| { &m.EMJCHKNJMBJ },
+            |m: &mut GridFightGameShopInfo| { &mut m.EMJCHKNJMBJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "shop_is_locked",
             |m: &GridFightGameShopInfo| { &m.shop_is_locked },
             |m: &mut GridFightGameShopInfo| { &mut m.shop_is_locked },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MIBONFGCFBN::MIBONFGCFBN>(
-            "KGIIAFNEJFI",
-            |m: &GridFightGameShopInfo| { &m.KGIIAFNEJFI },
-            |m: &mut GridFightGameShopInfo| { &mut m.KGIIAFNEJFI },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MLDKGLCDOJP",
+            |m: &GridFightGameShopInfo| { &m.MLDKGLCDOJP },
+            |m: &mut GridFightGameShopInfo| { &mut m.MLDKGLCDOJP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ODBJMJDBHOL::ODBJMJDBHOL>(
+            "KFBDAEINFLE",
+            |m: &GridFightGameShopInfo| { &m.KFBDAEINFLE },
+            |m: &mut GridFightGameShopInfo| { &mut m.KFBDAEINFLE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "shop_goods_list",
             |m: &GridFightGameShopInfo| { &m.shop_goods_list },
             |m: &mut GridFightGameShopInfo| { &mut m.shop_goods_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHAFOHGFENP",
-            |m: &GridFightGameShopInfo| { &m.HHAFOHGFENP },
-            |m: &mut GridFightGameShopInfo| { &mut m.HHAFOHGFENP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KLKHJNAPPBP",
-            |m: &GridFightGameShopInfo| { &m.KLKHJNAPPBP },
-            |m: &mut GridFightGameShopInfo| { &mut m.KLKHJNAPPBP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightGameShopInfo>(
             "GridFightGameShopInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GridFightGameShopInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                40 => {
+                    self.EMJCHKNJMBJ = is.read_uint32()?;
+                },
+                8 => {
                     self.shop_is_locked = is.read_bool()?;
                 },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KGIIAFNEJFI)?;
+                56 => {
+                    self.MLDKGLCDOJP = is.read_uint32()?;
                 },
-                10 => {
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KFBDAEINFLE)?;
+                },
+                90 => {
                     self.shop_goods_list.push(is.read_message()?);
-                },
-                24 => {
-                    self.HHAFOHGFENP = is.read_uint32()?;
-                },
-                120 => {
-                    self.KLKHJNAPPBP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,10 +127,16 @@ impl ::protobuf::Message for GridFightGameShopInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.EMJCHKNJMBJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.EMJCHKNJMBJ);
+        }
         if self.shop_is_locked != false {
             my_size += 1 + 1;
         }
-        if let Some(v) = self.KGIIAFNEJFI.as_ref() {
+        if self.MLDKGLCDOJP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MLDKGLCDOJP);
+        }
+        if let Some(v) = self.KFBDAEINFLE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -138,33 +144,27 @@ impl ::protobuf::Message for GridFightGameShopInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HHAFOHGFENP != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.HHAFOHGFENP);
-        }
-        if self.KLKHJNAPPBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KLKHJNAPPBP);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.shop_is_locked != false {
-            os.write_bool(12, self.shop_is_locked)?;
+        if self.EMJCHKNJMBJ != 0 {
+            os.write_uint32(5, self.EMJCHKNJMBJ)?;
         }
-        if let Some(v) = self.KGIIAFNEJFI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if self.shop_is_locked != false {
+            os.write_bool(1, self.shop_is_locked)?;
+        }
+        if self.MLDKGLCDOJP != 0 {
+            os.write_uint32(7, self.MLDKGLCDOJP)?;
+        }
+        if let Some(v) = self.KFBDAEINFLE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         for v in &self.shop_goods_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
-        if self.HHAFOHGFENP != 0 {
-            os.write_uint32(3, self.HHAFOHGFENP)?;
-        }
-        if self.KLKHJNAPPBP != 0 {
-            os.write_uint32(15, self.KLKHJNAPPBP)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,21 +182,21 @@ impl ::protobuf::Message for GridFightGameShopInfo {
     }
 
     fn clear(&mut self) {
+        self.EMJCHKNJMBJ = 0;
         self.shop_is_locked = false;
-        self.KGIIAFNEJFI.clear();
+        self.MLDKGLCDOJP = 0;
+        self.KFBDAEINFLE.clear();
         self.shop_goods_list.clear();
-        self.HHAFOHGFENP = 0;
-        self.KLKHJNAPPBP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightGameShopInfo {
         static instance: GridFightGameShopInfo = GridFightGameShopInfo {
+            EMJCHKNJMBJ: 0,
             shop_is_locked: false,
-            KGIIAFNEJFI: ::protobuf::MessageField::none(),
+            MLDKGLCDOJP: 0,
+            KFBDAEINFLE: ::protobuf::MessageField::none(),
             shop_goods_list: ::std::vec::Vec::new(),
-            HHAFOHGFENP: 0,
-            KLKHJNAPPBP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,12 +222,12 @@ impl ::protobuf::reflect::ProtobufValue for GridFightGameShopInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGridFightGameShopInfo.proto\x1a\x1cGridFightShopGoodsInfo.proto\
-    \x1a\x11MIBONFGCFBN.proto\"\xf2\x01\n\x15GridFightGameShopInfo\x12$\n\
-    \x0eshop_is_locked\x18\x0c\x20\x01(\x08R\x0cshopIsLocked\x12.\n\x0bKGIIA\
-    FNEJFI\x18\t\x20\x01(\x0b2\x0c.MIBONFGCFBNR\x0bKGIIAFNEJFI\x12?\n\x0fsho\
-    p_goods_list\x18\x01\x20\x03(\x0b2\x17.GridFightShopGoodsInfoR\rshopGood\
-    sList\x12\x20\n\x0bHHAFOHGFENP\x18\x03\x20\x01(\rR\x0bHHAFOHGFENP\x12\
-    \x20\n\x0bKLKHJNAPPBP\x18\x0f\x20\x01(\rR\x0bKLKHJNAPPBPb\x06proto3\
+    \x1a\x11ODBJMJDBHOL.proto\"\xf2\x01\n\x15GridFightGameShopInfo\x12\x20\n\
+    \x0bEMJCHKNJMBJ\x18\x05\x20\x01(\rR\x0bEMJCHKNJMBJ\x12$\n\x0eshop_is_loc\
+    ked\x18\x01\x20\x01(\x08R\x0cshopIsLocked\x12\x20\n\x0bMLDKGLCDOJP\x18\
+    \x07\x20\x01(\rR\x0bMLDKGLCDOJP\x12.\n\x0bKFBDAEINFLE\x18\x04\x20\x01(\
+    \x0b2\x0c.ODBJMJDBHOLR\x0bKFBDAEINFLE\x12?\n\x0fshop_goods_list\x18\x0b\
+    \x20\x03(\x0b2\x17.GridFightShopGoodsInfoR\rshopGoodsListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -246,7 +246,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::GridFightShopGoodsInfo::file_descriptor().clone());
-            deps.push(super::MIBONFGCFBN::file_descriptor().clone());
+            deps.push(super::ODBJMJDBHOL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightGameShopInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

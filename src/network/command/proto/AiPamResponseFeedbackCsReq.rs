@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AiPamResponseFeedbackCsReq {
     // message fields
-    // @@protoc_insertion_point(field:AiPamResponseFeedbackCsReq.MEEPLFLLGGD)
-    pub MEEPLFLLGGD: bool,
-    // @@protoc_insertion_point(field:AiPamResponseFeedbackCsReq.MMFMLPAKGIH)
-    pub MMFMLPAKGIH: bool,
+    // @@protoc_insertion_point(field:AiPamResponseFeedbackCsReq.FKCDMAKEHHE)
+    pub FKCDMAKEHHE: bool,
+    // @@protoc_insertion_point(field:AiPamResponseFeedbackCsReq.LENMIHEBFNM)
+    pub LENMIHEBFNM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:AiPamResponseFeedbackCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AiPamResponseFeedbackCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEEPLFLLGGD",
-            |m: &AiPamResponseFeedbackCsReq| { &m.MEEPLFLLGGD },
-            |m: &mut AiPamResponseFeedbackCsReq| { &mut m.MEEPLFLLGGD },
+            "FKCDMAKEHHE",
+            |m: &AiPamResponseFeedbackCsReq| { &m.FKCDMAKEHHE },
+            |m: &mut AiPamResponseFeedbackCsReq| { &mut m.FKCDMAKEHHE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMFMLPAKGIH",
-            |m: &AiPamResponseFeedbackCsReq| { &m.MMFMLPAKGIH },
-            |m: &mut AiPamResponseFeedbackCsReq| { &mut m.MMFMLPAKGIH },
+            "LENMIHEBFNM",
+            |m: &AiPamResponseFeedbackCsReq| { &m.LENMIHEBFNM },
+            |m: &mut AiPamResponseFeedbackCsReq| { &mut m.LENMIHEBFNM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AiPamResponseFeedbackCsReq>(
             "AiPamResponseFeedbackCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AiPamResponseFeedbackCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.MEEPLFLLGGD = is.read_bool()?;
+                96 => {
+                    self.FKCDMAKEHHE = is.read_bool()?;
                 },
-                56 => {
-                    self.MMFMLPAKGIH = is.read_bool()?;
+                24 => {
+                    self.LENMIHEBFNM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,10 +97,10 @@ impl ::protobuf::Message for AiPamResponseFeedbackCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MEEPLFLLGGD != false {
+        if self.FKCDMAKEHHE != false {
             my_size += 1 + 1;
         }
-        if self.MMFMLPAKGIH != false {
+        if self.LENMIHEBFNM != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AiPamResponseFeedbackCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MEEPLFLLGGD != false {
-            os.write_bool(6, self.MEEPLFLLGGD)?;
+        if self.FKCDMAKEHHE != false {
+            os.write_bool(12, self.FKCDMAKEHHE)?;
         }
-        if self.MMFMLPAKGIH != false {
-            os.write_bool(7, self.MMFMLPAKGIH)?;
+        if self.LENMIHEBFNM != false {
+            os.write_bool(3, self.LENMIHEBFNM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AiPamResponseFeedbackCsReq {
     }
 
     fn clear(&mut self) {
-        self.MEEPLFLLGGD = false;
-        self.MMFMLPAKGIH = false;
+        self.FKCDMAKEHHE = false;
+        self.LENMIHEBFNM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AiPamResponseFeedbackCsReq {
         static instance: AiPamResponseFeedbackCsReq = AiPamResponseFeedbackCsReq {
-            MEEPLFLLGGD: false,
-            MMFMLPAKGIH: false,
+            FKCDMAKEHHE: false,
+            LENMIHEBFNM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AiPamResponseFeedbackCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20AiPamResponseFeedbackCsReq.proto\"`\n\x1aAiPamResponseFeedbackCsRe\
-    q\x12\x20\n\x0bMEEPLFLLGGD\x18\x06\x20\x01(\x08R\x0bMEEPLFLLGGD\x12\x20\
-    \n\x0bMMFMLPAKGIH\x18\x07\x20\x01(\x08R\x0bMMFMLPAKGIHb\x06proto3\
+    q\x12\x20\n\x0bFKCDMAKEHHE\x18\x0c\x20\x01(\x08R\x0bFKCDMAKEHHE\x12\x20\
+    \n\x0bLENMIHEBFNM\x18\x03\x20\x01(\x08R\x0bLENMIHEBFNMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

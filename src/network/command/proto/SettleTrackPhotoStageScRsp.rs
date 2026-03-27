@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SettleTrackPhotoStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SettleTrackPhotoStageScRsp.IPAEIBPDAFM)
-    pub IPAEIBPDAFM: ::std::vec::Vec<super::PFHOPBJELAP::PFHOPBJELAP>,
     // @@protoc_insertion_point(field:SettleTrackPhotoStageScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:SettleTrackPhotoStageScRsp.score_id)
     pub score_id: u32,
+    // @@protoc_insertion_point(field:SettleTrackPhotoStageScRsp.JNLKJLJFDOP)
+    pub JNLKJLJFDOP: ::std::vec::Vec<super::IKKKNBABBCH::IKKKNBABBCH>,
     // @@protoc_insertion_point(field:SettleTrackPhotoStageScRsp.stage_id)
     pub stage_id: u32,
     // special fields
@@ -55,11 +55,6 @@ impl SettleTrackPhotoStageScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IPAEIBPDAFM",
-            |m: &SettleTrackPhotoStageScRsp| { &m.IPAEIBPDAFM },
-            |m: &mut SettleTrackPhotoStageScRsp| { &mut m.IPAEIBPDAFM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SettleTrackPhotoStageScRsp| { &m.retcode },
@@ -69,6 +64,11 @@ impl SettleTrackPhotoStageScRsp {
             "score_id",
             |m: &SettleTrackPhotoStageScRsp| { &m.score_id },
             |m: &mut SettleTrackPhotoStageScRsp| { &mut m.score_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "JNLKJLJFDOP",
+            |m: &SettleTrackPhotoStageScRsp| { &m.JNLKJLJFDOP },
+            |m: &mut SettleTrackPhotoStageScRsp| { &mut m.JNLKJLJFDOP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stage_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for SettleTrackPhotoStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.IPAEIBPDAFM.push(is.read_message()?);
-                },
-                88 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
-                48 => {
+                64 => {
                     self.score_id = is.read_uint32()?;
                 },
-                104 => {
+                106 => {
+                    self.JNLKJLJFDOP.push(is.read_message()?);
+                },
+                24 => {
                     self.stage_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for SettleTrackPhotoStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IPAEIBPDAFM {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+        }
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.score_id);
+        }
+        for value in &self.JNLKJLJFDOP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.score_id);
-        }
         if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.stage_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.stage_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for SettleTrackPhotoStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IPAEIBPDAFM {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.score_id != 0 {
-            os.write_uint32(6, self.score_id)?;
+            os.write_uint32(8, self.score_id)?;
         }
+        for v in &self.JNLKJLJFDOP {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         if self.stage_id != 0 {
-            os.write_uint32(13, self.stage_id)?;
+            os.write_uint32(3, self.stage_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for SettleTrackPhotoStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.IPAEIBPDAFM.clear();
         self.retcode = 0;
         self.score_id = 0;
+        self.JNLKJLJFDOP.clear();
         self.stage_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SettleTrackPhotoStageScRsp {
         static instance: SettleTrackPhotoStageScRsp = SettleTrackPhotoStageScRsp {
-            IPAEIBPDAFM: ::std::vec::Vec::new(),
             retcode: 0,
             score_id: 0,
+            JNLKJLJFDOP: ::std::vec::Vec::new(),
             stage_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for SettleTrackPhotoStageScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20SettleTrackPhotoStageScRsp.proto\x1a\x11PFHOPBJELAP.proto\"\x9c\
-    \x01\n\x1aSettleTrackPhotoStageScRsp\x12.\n\x0bIPAEIBPDAFM\x18\x0f\x20\
-    \x03(\x0b2\x0c.PFHOPBJELAPR\x0bIPAEIBPDAFM\x12\x18\n\x07retcode\x18\x0b\
-    \x20\x01(\rR\x07retcode\x12\x19\n\x08score_id\x18\x06\x20\x01(\rR\x07sco\
-    reId\x12\x19\n\x08stage_id\x18\r\x20\x01(\rR\x07stageIdb\x06proto3\
+    \n\x20SettleTrackPhotoStageScRsp.proto\x1a\x11IKKKNBABBCH.proto\"\x9c\
+    \x01\n\x1aSettleTrackPhotoStageScRsp\x12\x18\n\x07retcode\x18\x02\x20\
+    \x01(\rR\x07retcode\x12\x19\n\x08score_id\x18\x08\x20\x01(\rR\x07scoreId\
+    \x12.\n\x0bJNLKJLJFDOP\x18\r\x20\x03(\x0b2\x0c.IKKKNBABBCHR\x0bJNLKJLJFD\
+    OP\x12\x19\n\x08stage_id\x18\x03\x20\x01(\rR\x07stageIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PFHOPBJELAP::file_descriptor().clone());
+            deps.push(super::IKKKNBABBCH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SettleTrackPhotoStageScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

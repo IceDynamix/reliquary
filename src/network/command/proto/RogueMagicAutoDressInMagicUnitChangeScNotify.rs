@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicAutoDressInMagicUnitChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicAutoDressInMagicUnitChangeScNotify.OKLLKAMHEPB)
-    pub OKLLKAMHEPB: bool,
+    // @@protoc_insertion_point(field:RogueMagicAutoDressInMagicUnitChangeScNotify.NAHLMGOOIMG)
+    pub NAHLMGOOIMG: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicAutoDressInMagicUnitChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueMagicAutoDressInMagicUnitChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKLLKAMHEPB",
-            |m: &RogueMagicAutoDressInMagicUnitChangeScNotify| { &m.OKLLKAMHEPB },
-            |m: &mut RogueMagicAutoDressInMagicUnitChangeScNotify| { &mut m.OKLLKAMHEPB },
+            "NAHLMGOOIMG",
+            |m: &RogueMagicAutoDressInMagicUnitChangeScNotify| { &m.NAHLMGOOIMG },
+            |m: &mut RogueMagicAutoDressInMagicUnitChangeScNotify| { &mut m.NAHLMGOOIMG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicAutoDressInMagicUnitChangeScNotify>(
             "RogueMagicAutoDressInMagicUnitChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueMagicAutoDressInMagicUnitChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.OKLLKAMHEPB = is.read_bool()?;
+                56 => {
+                    self.NAHLMGOOIMG = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueMagicAutoDressInMagicUnitChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OKLLKAMHEPB != false {
+        if self.NAHLMGOOIMG != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RogueMagicAutoDressInMagicUnitChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OKLLKAMHEPB != false {
-            os.write_bool(9, self.OKLLKAMHEPB)?;
+        if self.NAHLMGOOIMG != false {
+            os.write_bool(7, self.NAHLMGOOIMG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RogueMagicAutoDressInMagicUnitChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.OKLLKAMHEPB = false;
+        self.NAHLMGOOIMG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicAutoDressInMagicUnitChangeScNotify {
         static instance: RogueMagicAutoDressInMagicUnitChangeScNotify = RogueMagicAutoDressInMagicUnitChangeScNotify {
-            OKLLKAMHEPB: false,
+            NAHLMGOOIMG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicAutoDressInMagicUnitChange
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n2RogueMagicAutoDressInMagicUnitChangeScNotify.proto\"P\n,RogueMagicAut\
-    oDressInMagicUnitChangeScNotify\x12\x20\n\x0bOKLLKAMHEPB\x18\t\x20\x01(\
-    \x08R\x0bOKLLKAMHEPBb\x06proto3\
+    oDressInMagicUnitChangeScNotify\x12\x20\n\x0bNAHLMGOOIMG\x18\x07\x20\x01\
+    (\x08R\x0bNAHLMGOOIMGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

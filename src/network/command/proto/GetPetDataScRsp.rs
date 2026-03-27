@@ -89,13 +89,13 @@ impl ::protobuf::Message for GetPetDataScRsp {
                 88 => {
                     self.cur_pet_id = is.read_uint32()?;
                 },
-                66 => {
+                18 => {
                     is.read_repeated_packed_uint32_into(&mut self.unlocked_pet_id)?;
                 },
-                64 => {
+                16 => {
                     self.unlocked_pet_id.push(is.read_uint32()?);
                 },
-                32 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -113,9 +113,9 @@ impl ::protobuf::Message for GetPetDataScRsp {
         if self.cur_pet_id != 0 {
             my_size += ::protobuf::rt::uint32_size(11, self.cur_pet_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.unlocked_pet_id);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.unlocked_pet_id);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,9 +126,9 @@ impl ::protobuf::Message for GetPetDataScRsp {
         if self.cur_pet_id != 0 {
             os.write_uint32(11, self.cur_pet_id)?;
         }
-        os.write_repeated_packed_uint32(8, &self.unlocked_pet_id)?;
+        os.write_repeated_packed_uint32(2, &self.unlocked_pet_id)?;
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GetPetDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15GetPetDataScRsp.proto\"q\n\x0fGetPetDataScRsp\x12\x1c\n\ncur_pet_i\
-    d\x18\x0b\x20\x01(\rR\x08curPetId\x12&\n\x0funlocked_pet_id\x18\x08\x20\
-    \x03(\rR\runlockedPetId\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retc\
-    odeb\x06proto3\
+    d\x18\x0b\x20\x01(\rR\x08curPetId\x12&\n\x0funlocked_pet_id\x18\x02\x20\
+    \x03(\rR\runlockedPetId\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcod\
+    eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

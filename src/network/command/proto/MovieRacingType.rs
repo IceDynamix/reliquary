@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MovieRacingType)
 pub enum MovieRacingType {
-    // @@protoc_insertion_point(enum_value:MovieRacingType.FDFLGBJMAGJ_ILCOLLBBCHO)
-    FDFLGBJMAGJ_ILCOLLBBCHO = 0,
-    // @@protoc_insertion_point(enum_value:MovieRacingType.FDFLGBJMAGJ_LJMMCIEJBGI)
-    FDFLGBJMAGJ_LJMMCIEJBGI = 1,
-    // @@protoc_insertion_point(enum_value:MovieRacingType.FDFLGBJMAGJ_PINHKPBNLPJ)
-    FDFLGBJMAGJ_PINHKPBNLPJ = 2,
-    // @@protoc_insertion_point(enum_value:MovieRacingType.FDFLGBJMAGJ_LCGOBFLNHFP)
-    FDFLGBJMAGJ_LCGOBFLNHFP = 3,
+    // @@protoc_insertion_point(enum_value:MovieRacingType.MovieRacingType_LIDONJLKAFD)
+    MovieRacingType_LIDONJLKAFD = 0,
+    // @@protoc_insertion_point(enum_value:MovieRacingType.MovieRacingType_LJNEDELGDMN)
+    MovieRacingType_LJNEDELGDMN = 1,
+    // @@protoc_insertion_point(enum_value:MovieRacingType.MovieRacingType_KOKDNDONHCK)
+    MovieRacingType_KOKDNDONHCK = 2,
+    // @@protoc_insertion_point(enum_value:MovieRacingType.MovieRacingType_OIPIADBGJIB)
+    MovieRacingType_OIPIADBGJIB = 3,
 }
 
 impl ::protobuf::Enum for MovieRacingType {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for MovieRacingType {
 
     fn from_i32(value: i32) -> ::std::option::Option<MovieRacingType> {
         match value {
-            0 => ::std::option::Option::Some(MovieRacingType::FDFLGBJMAGJ_ILCOLLBBCHO),
-            1 => ::std::option::Option::Some(MovieRacingType::FDFLGBJMAGJ_LJMMCIEJBGI),
-            2 => ::std::option::Option::Some(MovieRacingType::FDFLGBJMAGJ_PINHKPBNLPJ),
-            3 => ::std::option::Option::Some(MovieRacingType::FDFLGBJMAGJ_LCGOBFLNHFP),
+            0 => ::std::option::Option::Some(MovieRacingType::MovieRacingType_LIDONJLKAFD),
+            1 => ::std::option::Option::Some(MovieRacingType::MovieRacingType_LJNEDELGDMN),
+            2 => ::std::option::Option::Some(MovieRacingType::MovieRacingType_KOKDNDONHCK),
+            3 => ::std::option::Option::Some(MovieRacingType::MovieRacingType_OIPIADBGJIB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MovieRacingType> {
         match str {
-            "FDFLGBJMAGJ_ILCOLLBBCHO" => ::std::option::Option::Some(MovieRacingType::FDFLGBJMAGJ_ILCOLLBBCHO),
-            "FDFLGBJMAGJ_LJMMCIEJBGI" => ::std::option::Option::Some(MovieRacingType::FDFLGBJMAGJ_LJMMCIEJBGI),
-            "FDFLGBJMAGJ_PINHKPBNLPJ" => ::std::option::Option::Some(MovieRacingType::FDFLGBJMAGJ_PINHKPBNLPJ),
-            "FDFLGBJMAGJ_LCGOBFLNHFP" => ::std::option::Option::Some(MovieRacingType::FDFLGBJMAGJ_LCGOBFLNHFP),
+            "MovieRacingType_LIDONJLKAFD" => ::std::option::Option::Some(MovieRacingType::MovieRacingType_LIDONJLKAFD),
+            "MovieRacingType_LJNEDELGDMN" => ::std::option::Option::Some(MovieRacingType::MovieRacingType_LJNEDELGDMN),
+            "MovieRacingType_KOKDNDONHCK" => ::std::option::Option::Some(MovieRacingType::MovieRacingType_KOKDNDONHCK),
+            "MovieRacingType_OIPIADBGJIB" => ::std::option::Option::Some(MovieRacingType::MovieRacingType_OIPIADBGJIB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MovieRacingType] = &[
-        MovieRacingType::FDFLGBJMAGJ_ILCOLLBBCHO,
-        MovieRacingType::FDFLGBJMAGJ_LJMMCIEJBGI,
-        MovieRacingType::FDFLGBJMAGJ_PINHKPBNLPJ,
-        MovieRacingType::FDFLGBJMAGJ_LCGOBFLNHFP,
+        MovieRacingType::MovieRacingType_LIDONJLKAFD,
+        MovieRacingType::MovieRacingType_LJNEDELGDMN,
+        MovieRacingType::MovieRacingType_KOKDNDONHCK,
+        MovieRacingType::MovieRacingType_OIPIADBGJIB,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for MovieRacingType {
 
 impl ::std::default::Default for MovieRacingType {
     fn default() -> Self {
-        MovieRacingType::FDFLGBJMAGJ_ILCOLLBBCHO
+        MovieRacingType::MovieRacingType_LIDONJLKAFD
     }
 }
 
@@ -97,10 +97,10 @@ impl MovieRacingType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15MovieRacingType.proto*\x85\x01\n\x0fMovieRacingType\x12\x1b\n\x17F\
-    DFLGBJMAGJ_ILCOLLBBCHO\x10\0\x12\x1b\n\x17FDFLGBJMAGJ_LJMMCIEJBGI\x10\
-    \x01\x12\x1b\n\x17FDFLGBJMAGJ_PINHKPBNLPJ\x10\x02\x12\x1b\n\x17FDFLGBJMA\
-    GJ_LCGOBFLNHFP\x10\x03b\x06proto3\
+    \n\x15MovieRacingType.proto*\x95\x01\n\x0fMovieRacingType\x12\x1f\n\x1bM\
+    ovieRacingType_LIDONJLKAFD\x10\0\x12\x1f\n\x1bMovieRacingType_LJNEDELGDM\
+    N\x10\x01\x12\x1f\n\x1bMovieRacingType_KOKDNDONHCK\x10\x02\x12\x1f\n\x1b\
+    MovieRacingType_OIPIADBGJIB\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

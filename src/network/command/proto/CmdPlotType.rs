@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPlotType)
 pub enum CmdPlotType {
-    // @@protoc_insertion_point(enum_value:CmdPlotType.JHKNMOEEDBI_GKJBAODJMJG)
-    JHKNMOEEDBI_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlotType.JHKNMOEEDBI_LJPFOHLIMCO)
-    JHKNMOEEDBI_LJPFOHLIMCO = 1128,
-    // @@protoc_insertion_point(enum_value:CmdPlotType.JHKNMOEEDBI_CJDCOIAOHJC)
-    JHKNMOEEDBI_CJDCOIAOHJC = 1157,
+    // @@protoc_insertion_point(enum_value:CmdPlotType.CmdPlotType_MNFEPONEDDJ)
+    CmdPlotType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdPlotType.CmdPlotType_HNEDHIPKOEC)
+    CmdPlotType_HNEDHIPKOEC = 1181,
+    // @@protoc_insertion_point(enum_value:CmdPlotType.CmdPlotType_IJAGJNJIIBC)
+    CmdPlotType_IJAGJNJIIBC = 1183,
 }
 
 impl ::protobuf::Enum for CmdPlotType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for CmdPlotType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlotType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPlotType::JHKNMOEEDBI_GKJBAODJMJG),
-            1128 => ::std::option::Option::Some(CmdPlotType::JHKNMOEEDBI_LJPFOHLIMCO),
-            1157 => ::std::option::Option::Some(CmdPlotType::JHKNMOEEDBI_CJDCOIAOHJC),
+            0 => ::std::option::Option::Some(CmdPlotType::CmdPlotType_MNFEPONEDDJ),
+            1181 => ::std::option::Option::Some(CmdPlotType::CmdPlotType_HNEDHIPKOEC),
+            1183 => ::std::option::Option::Some(CmdPlotType::CmdPlotType_IJAGJNJIIBC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPlotType> {
         match str {
-            "JHKNMOEEDBI_GKJBAODJMJG" => ::std::option::Option::Some(CmdPlotType::JHKNMOEEDBI_GKJBAODJMJG),
-            "JHKNMOEEDBI_LJPFOHLIMCO" => ::std::option::Option::Some(CmdPlotType::JHKNMOEEDBI_LJPFOHLIMCO),
-            "JHKNMOEEDBI_CJDCOIAOHJC" => ::std::option::Option::Some(CmdPlotType::JHKNMOEEDBI_CJDCOIAOHJC),
+            "CmdPlotType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdPlotType::CmdPlotType_MNFEPONEDDJ),
+            "CmdPlotType_HNEDHIPKOEC" => ::std::option::Option::Some(CmdPlotType::CmdPlotType_HNEDHIPKOEC),
+            "CmdPlotType_IJAGJNJIIBC" => ::std::option::Option::Some(CmdPlotType::CmdPlotType_IJAGJNJIIBC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlotType] = &[
-        CmdPlotType::JHKNMOEEDBI_GKJBAODJMJG,
-        CmdPlotType::JHKNMOEEDBI_LJPFOHLIMCO,
-        CmdPlotType::JHKNMOEEDBI_CJDCOIAOHJC,
+        CmdPlotType::CmdPlotType_MNFEPONEDDJ,
+        CmdPlotType::CmdPlotType_HNEDHIPKOEC,
+        CmdPlotType::CmdPlotType_IJAGJNJIIBC,
     ];
 }
 
@@ -75,9 +75,9 @@ impl ::protobuf::EnumFull for CmdPlotType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPlotType::JHKNMOEEDBI_GKJBAODJMJG => 0,
-            CmdPlotType::JHKNMOEEDBI_LJPFOHLIMCO => 1,
-            CmdPlotType::JHKNMOEEDBI_CJDCOIAOHJC => 2,
+            CmdPlotType::CmdPlotType_MNFEPONEDDJ => 0,
+            CmdPlotType::CmdPlotType_HNEDHIPKOEC => 1,
+            CmdPlotType::CmdPlotType_IJAGJNJIIBC => 2,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -85,7 +85,7 @@ impl ::protobuf::EnumFull for CmdPlotType {
 
 impl ::std::default::Default for CmdPlotType {
     fn default() -> Self {
-        CmdPlotType::JHKNMOEEDBI_GKJBAODJMJG
+        CmdPlotType::CmdPlotType_MNFEPONEDDJ
     }
 }
 
@@ -96,9 +96,9 @@ impl CmdPlotType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CmdPlotType.proto*f\n\x0bCmdPlotType\x12\x1b\n\x17JHKNMOEEDBI_GKJB\
-    AODJMJG\x10\0\x12\x1c\n\x17JHKNMOEEDBI_LJPFOHLIMCO\x10\xe8\x08\x12\x1c\n\
-    \x17JHKNMOEEDBI_CJDCOIAOHJC\x10\x85\tb\x06proto3\
+    \n\x11CmdPlotType.proto*f\n\x0bCmdPlotType\x12\x1b\n\x17CmdPlotType_MNFE\
+    PONEDDJ\x10\0\x12\x1c\n\x17CmdPlotType_HNEDHIPKOEC\x10\x9d\t\x12\x1c\n\
+    \x17CmdPlotType_IJAGJNJIIBC\x10\x9f\tb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

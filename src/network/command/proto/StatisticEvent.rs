@@ -30,8 +30,8 @@ pub struct StatisticEvent {
     // message fields
     // @@protoc_insertion_point(field:StatisticEvent.type)
     pub type_: ::protobuf::EnumOrUnknown<super::BattleStaticticEventType::BattleStaticticEventType>,
-    // @@protoc_insertion_point(field:StatisticEvent.APNMBIOEHFL)
-    pub APNMBIOEHFL: u32,
+    // @@protoc_insertion_point(field:StatisticEvent.HDJHNCIKIGN)
+    pub HDJHNCIKIGN: u32,
     // @@protoc_insertion_point(field:StatisticEvent.display_value)
     pub display_value: u32,
     // special fields
@@ -59,9 +59,9 @@ impl StatisticEvent {
             |m: &mut StatisticEvent| { &mut m.type_ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APNMBIOEHFL",
-            |m: &StatisticEvent| { &m.APNMBIOEHFL },
-            |m: &mut StatisticEvent| { &mut m.APNMBIOEHFL },
+            "HDJHNCIKIGN",
+            |m: &StatisticEvent| { &m.HDJHNCIKIGN },
+            |m: &mut StatisticEvent| { &mut m.HDJHNCIKIGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "display_value",
@@ -90,7 +90,7 @@ impl ::protobuf::Message for StatisticEvent {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 16 => {
-                    self.APNMBIOEHFL = is.read_uint32()?;
+                    self.HDJHNCIKIGN = is.read_uint32()?;
                 },
                 24 => {
                     self.display_value = is.read_uint32()?;
@@ -110,8 +110,8 @@ impl ::protobuf::Message for StatisticEvent {
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::BattleStaticticEventType::BattleStaticticEventType::BATTLE_STATICTIC_EVENT_NONE) {
             my_size += ::protobuf::rt::int32_size(1, self.type_.value());
         }
-        if self.APNMBIOEHFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.APNMBIOEHFL);
+        if self.HDJHNCIKIGN != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.HDJHNCIKIGN);
         }
         if self.display_value != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.display_value);
@@ -125,8 +125,8 @@ impl ::protobuf::Message for StatisticEvent {
         if self.type_ != ::protobuf::EnumOrUnknown::new(super::BattleStaticticEventType::BattleStaticticEventType::BATTLE_STATICTIC_EVENT_NONE) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
-        if self.APNMBIOEHFL != 0 {
-            os.write_uint32(2, self.APNMBIOEHFL)?;
+        if self.HDJHNCIKIGN != 0 {
+            os.write_uint32(2, self.HDJHNCIKIGN)?;
         }
         if self.display_value != 0 {
             os.write_uint32(3, self.display_value)?;
@@ -149,7 +149,7 @@ impl ::protobuf::Message for StatisticEvent {
 
     fn clear(&mut self) {
         self.type_ = ::protobuf::EnumOrUnknown::new(super::BattleStaticticEventType::BattleStaticticEventType::BATTLE_STATICTIC_EVENT_NONE);
-        self.APNMBIOEHFL = 0;
+        self.HDJHNCIKIGN = 0;
         self.display_value = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for StatisticEvent {
     fn default_instance() -> &'static StatisticEvent {
         static instance: StatisticEvent = StatisticEvent {
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
-            APNMBIOEHFL: 0,
+            HDJHNCIKIGN: 0,
             display_value: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,8 +185,8 @@ impl ::protobuf::reflect::ProtobufValue for StatisticEvent {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14StatisticEvent.proto\x1a\x1eBattleStaticticEventType.proto\"\x86\
     \x01\n\x0eStatisticEvent\x12-\n\x04type\x18\x01\x20\x01(\x0e2\x19.Battle\
-    StaticticEventTypeR\x04type\x12\x20\n\x0bAPNMBIOEHFL\x18\x02\x20\x01(\rR\
-    \x0bAPNMBIOEHFL\x12#\n\rdisplay_value\x18\x03\x20\x01(\rR\x0cdisplayValu\
+    StaticticEventTypeR\x04type\x12\x20\n\x0bHDJHNCIKIGN\x18\x02\x20\x01(\rR\
+    \x0bHDJHNCIKIGN\x12#\n\rdisplay_value\x18\x03\x20\x01(\rR\x0cdisplayValu\
     eb\x06proto3\
 ";
 

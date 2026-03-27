@@ -27,52 +27,52 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdCakeRaceType)
 pub enum CmdCakeRaceType {
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_GKJBAODJMJG)
-    LPBGMAACCEK_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_HPCOKDHADIB)
-    LPBGMAACCEK_HPCOKDHADIB = 9129,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_ODPBMPOEEJJ)
-    LPBGMAACCEK_ODPBMPOEEJJ = 9147,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_MAIBKOMEONN)
-    LPBGMAACCEK_MAIBKOMEONN = 9149,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_NKNIMABJPDK)
-    LPBGMAACCEK_NKNIMABJPDK = 9140,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_FFGODAPKINO)
-    LPBGMAACCEK_FFGODAPKINO = 9136,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_JDCKJBIGHAI)
-    LPBGMAACCEK_JDCKJBIGHAI = 9123,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_FDFIOMBFFBI)
-    LPBGMAACCEK_FDFIOMBFFBI = 9121,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_LKMFFCJKJKD)
-    LPBGMAACCEK_LKMFFCJKJKD = 9144,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_HFDGDDBMOIM)
-    LPBGMAACCEK_HFDGDDBMOIM = 9148,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_HJHMJEIGPIG)
-    LPBGMAACCEK_HJHMJEIGPIG = 9133,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_DMMMELLHOAA)
-    LPBGMAACCEK_DMMMELLHOAA = 9131,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_FPDJCGMBCDC)
-    LPBGMAACCEK_FPDJCGMBCDC = 9126,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_CHHDEINDLHB)
-    LPBGMAACCEK_CHHDEINDLHB = 9138,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_KGHOHLGHCCO)
-    LPBGMAACCEK_KGHOHLGHCCO = 9132,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_EKAPHPJEIEK)
-    LPBGMAACCEK_EKAPHPJEIEK = 9143,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_PKGDBAELPNN)
-    LPBGMAACCEK_PKGDBAELPNN = 9146,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_IEIEDEGHIEC)
-    LPBGMAACCEK_IEIEDEGHIEC = 9124,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_MIPNDLJOFJJ)
-    LPBGMAACCEK_MIPNDLJOFJJ = 9137,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_ADGGOEHBNIA)
-    LPBGMAACCEK_ADGGOEHBNIA = 9135,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_BMLBJAGKMOI)
-    LPBGMAACCEK_BMLBJAGKMOI = 9127,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_OMOCNKCKMAM)
-    LPBGMAACCEK_OMOCNKCKMAM = 9150,
-    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.LPBGMAACCEK_GDPDJPJIAJA)
-    LPBGMAACCEK_GDPDJPJIAJA = 9139,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_MNFEPONEDDJ)
+    CmdCakeRaceType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_EIBKDFJFMKI)
+    CmdCakeRaceType_EIBKDFJFMKI = 9135,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_OIGOIHHFCFH)
+    CmdCakeRaceType_OIGOIHHFCFH = 9124,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_PMEGMIFODAI)
+    CmdCakeRaceType_PMEGMIFODAI = 9132,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_HKDPAOKGLMD)
+    CmdCakeRaceType_HKDPAOKGLMD = 9147,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_OIBALFGGMEE)
+    CmdCakeRaceType_OIBALFGGMEE = 9125,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_DOKKEAONBJE)
+    CmdCakeRaceType_DOKKEAONBJE = 9133,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_BEJEMCEINPG)
+    CmdCakeRaceType_BEJEMCEINPG = 9121,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_BIGHLLLNCOM)
+    CmdCakeRaceType_BIGHLLLNCOM = 9131,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_KIDKDGBILNB)
+    CmdCakeRaceType_KIDKDGBILNB = 9142,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_CFCFEDOHMJK)
+    CmdCakeRaceType_CFCFEDOHMJK = 9149,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_LDMNLPJHEAG)
+    CmdCakeRaceType_LDMNLPJHEAG = 9122,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_JLILOEFMADF)
+    CmdCakeRaceType_JLILOEFMADF = 9129,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_GLINOFGNFJP)
+    CmdCakeRaceType_GLINOFGNFJP = 9130,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_NJPCJOBHIKK)
+    CmdCakeRaceType_NJPCJOBHIKK = 9141,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_HBDDNPBLAKB)
+    CmdCakeRaceType_HBDDNPBLAKB = 9137,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_FMEKFGIILEA)
+    CmdCakeRaceType_FMEKFGIILEA = 9136,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_FPOMABNNCII)
+    CmdCakeRaceType_FPOMABNNCII = 9140,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_COEHJJALKAI)
+    CmdCakeRaceType_COEHJJALKAI = 9134,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_GPMMOOPFNGN)
+    CmdCakeRaceType_GPMMOOPFNGN = 9139,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_MMMCBFGCOBI)
+    CmdCakeRaceType_MMMCBFGCOBI = 9146,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_PLIJACDNJGA)
+    CmdCakeRaceType_PLIJACDNJGA = 9127,
+    // @@protoc_insertion_point(enum_value:CmdCakeRaceType.CmdCakeRaceType_JLMIOKMMKIF)
+    CmdCakeRaceType_JLMIOKMMKIF = 9126,
 }
 
 impl ::protobuf::Enum for CmdCakeRaceType {
@@ -84,86 +84,86 @@ impl ::protobuf::Enum for CmdCakeRaceType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdCakeRaceType> {
         match value {
-            0 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_GKJBAODJMJG),
-            9129 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_HPCOKDHADIB),
-            9147 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_ODPBMPOEEJJ),
-            9149 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_MAIBKOMEONN),
-            9140 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_NKNIMABJPDK),
-            9136 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_FFGODAPKINO),
-            9123 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_JDCKJBIGHAI),
-            9121 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_FDFIOMBFFBI),
-            9144 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_LKMFFCJKJKD),
-            9148 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_HFDGDDBMOIM),
-            9133 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_HJHMJEIGPIG),
-            9131 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_DMMMELLHOAA),
-            9126 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_FPDJCGMBCDC),
-            9138 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_CHHDEINDLHB),
-            9132 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_KGHOHLGHCCO),
-            9143 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_EKAPHPJEIEK),
-            9146 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_PKGDBAELPNN),
-            9124 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_IEIEDEGHIEC),
-            9137 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_MIPNDLJOFJJ),
-            9135 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_ADGGOEHBNIA),
-            9127 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_BMLBJAGKMOI),
-            9150 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_OMOCNKCKMAM),
-            9139 => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_GDPDJPJIAJA),
+            0 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_MNFEPONEDDJ),
+            9135 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_EIBKDFJFMKI),
+            9124 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_OIGOIHHFCFH),
+            9132 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_PMEGMIFODAI),
+            9147 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_HKDPAOKGLMD),
+            9125 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_OIBALFGGMEE),
+            9133 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_DOKKEAONBJE),
+            9121 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_BEJEMCEINPG),
+            9131 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_BIGHLLLNCOM),
+            9142 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_KIDKDGBILNB),
+            9149 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_CFCFEDOHMJK),
+            9122 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_LDMNLPJHEAG),
+            9129 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_JLILOEFMADF),
+            9130 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_GLINOFGNFJP),
+            9141 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_NJPCJOBHIKK),
+            9137 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_HBDDNPBLAKB),
+            9136 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_FMEKFGIILEA),
+            9140 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_FPOMABNNCII),
+            9134 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_COEHJJALKAI),
+            9139 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_GPMMOOPFNGN),
+            9146 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_MMMCBFGCOBI),
+            9127 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_PLIJACDNJGA),
+            9126 => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_JLMIOKMMKIF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdCakeRaceType> {
         match str {
-            "LPBGMAACCEK_GKJBAODJMJG" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_GKJBAODJMJG),
-            "LPBGMAACCEK_HPCOKDHADIB" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_HPCOKDHADIB),
-            "LPBGMAACCEK_ODPBMPOEEJJ" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_ODPBMPOEEJJ),
-            "LPBGMAACCEK_MAIBKOMEONN" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_MAIBKOMEONN),
-            "LPBGMAACCEK_NKNIMABJPDK" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_NKNIMABJPDK),
-            "LPBGMAACCEK_FFGODAPKINO" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_FFGODAPKINO),
-            "LPBGMAACCEK_JDCKJBIGHAI" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_JDCKJBIGHAI),
-            "LPBGMAACCEK_FDFIOMBFFBI" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_FDFIOMBFFBI),
-            "LPBGMAACCEK_LKMFFCJKJKD" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_LKMFFCJKJKD),
-            "LPBGMAACCEK_HFDGDDBMOIM" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_HFDGDDBMOIM),
-            "LPBGMAACCEK_HJHMJEIGPIG" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_HJHMJEIGPIG),
-            "LPBGMAACCEK_DMMMELLHOAA" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_DMMMELLHOAA),
-            "LPBGMAACCEK_FPDJCGMBCDC" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_FPDJCGMBCDC),
-            "LPBGMAACCEK_CHHDEINDLHB" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_CHHDEINDLHB),
-            "LPBGMAACCEK_KGHOHLGHCCO" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_KGHOHLGHCCO),
-            "LPBGMAACCEK_EKAPHPJEIEK" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_EKAPHPJEIEK),
-            "LPBGMAACCEK_PKGDBAELPNN" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_PKGDBAELPNN),
-            "LPBGMAACCEK_IEIEDEGHIEC" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_IEIEDEGHIEC),
-            "LPBGMAACCEK_MIPNDLJOFJJ" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_MIPNDLJOFJJ),
-            "LPBGMAACCEK_ADGGOEHBNIA" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_ADGGOEHBNIA),
-            "LPBGMAACCEK_BMLBJAGKMOI" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_BMLBJAGKMOI),
-            "LPBGMAACCEK_OMOCNKCKMAM" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_OMOCNKCKMAM),
-            "LPBGMAACCEK_GDPDJPJIAJA" => ::std::option::Option::Some(CmdCakeRaceType::LPBGMAACCEK_GDPDJPJIAJA),
+            "CmdCakeRaceType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_MNFEPONEDDJ),
+            "CmdCakeRaceType_EIBKDFJFMKI" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_EIBKDFJFMKI),
+            "CmdCakeRaceType_OIGOIHHFCFH" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_OIGOIHHFCFH),
+            "CmdCakeRaceType_PMEGMIFODAI" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_PMEGMIFODAI),
+            "CmdCakeRaceType_HKDPAOKGLMD" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_HKDPAOKGLMD),
+            "CmdCakeRaceType_OIBALFGGMEE" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_OIBALFGGMEE),
+            "CmdCakeRaceType_DOKKEAONBJE" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_DOKKEAONBJE),
+            "CmdCakeRaceType_BEJEMCEINPG" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_BEJEMCEINPG),
+            "CmdCakeRaceType_BIGHLLLNCOM" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_BIGHLLLNCOM),
+            "CmdCakeRaceType_KIDKDGBILNB" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_KIDKDGBILNB),
+            "CmdCakeRaceType_CFCFEDOHMJK" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_CFCFEDOHMJK),
+            "CmdCakeRaceType_LDMNLPJHEAG" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_LDMNLPJHEAG),
+            "CmdCakeRaceType_JLILOEFMADF" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_JLILOEFMADF),
+            "CmdCakeRaceType_GLINOFGNFJP" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_GLINOFGNFJP),
+            "CmdCakeRaceType_NJPCJOBHIKK" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_NJPCJOBHIKK),
+            "CmdCakeRaceType_HBDDNPBLAKB" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_HBDDNPBLAKB),
+            "CmdCakeRaceType_FMEKFGIILEA" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_FMEKFGIILEA),
+            "CmdCakeRaceType_FPOMABNNCII" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_FPOMABNNCII),
+            "CmdCakeRaceType_COEHJJALKAI" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_COEHJJALKAI),
+            "CmdCakeRaceType_GPMMOOPFNGN" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_GPMMOOPFNGN),
+            "CmdCakeRaceType_MMMCBFGCOBI" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_MMMCBFGCOBI),
+            "CmdCakeRaceType_PLIJACDNJGA" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_PLIJACDNJGA),
+            "CmdCakeRaceType_JLMIOKMMKIF" => ::std::option::Option::Some(CmdCakeRaceType::CmdCakeRaceType_JLMIOKMMKIF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdCakeRaceType] = &[
-        CmdCakeRaceType::LPBGMAACCEK_GKJBAODJMJG,
-        CmdCakeRaceType::LPBGMAACCEK_HPCOKDHADIB,
-        CmdCakeRaceType::LPBGMAACCEK_ODPBMPOEEJJ,
-        CmdCakeRaceType::LPBGMAACCEK_MAIBKOMEONN,
-        CmdCakeRaceType::LPBGMAACCEK_NKNIMABJPDK,
-        CmdCakeRaceType::LPBGMAACCEK_FFGODAPKINO,
-        CmdCakeRaceType::LPBGMAACCEK_JDCKJBIGHAI,
-        CmdCakeRaceType::LPBGMAACCEK_FDFIOMBFFBI,
-        CmdCakeRaceType::LPBGMAACCEK_LKMFFCJKJKD,
-        CmdCakeRaceType::LPBGMAACCEK_HFDGDDBMOIM,
-        CmdCakeRaceType::LPBGMAACCEK_HJHMJEIGPIG,
-        CmdCakeRaceType::LPBGMAACCEK_DMMMELLHOAA,
-        CmdCakeRaceType::LPBGMAACCEK_FPDJCGMBCDC,
-        CmdCakeRaceType::LPBGMAACCEK_CHHDEINDLHB,
-        CmdCakeRaceType::LPBGMAACCEK_KGHOHLGHCCO,
-        CmdCakeRaceType::LPBGMAACCEK_EKAPHPJEIEK,
-        CmdCakeRaceType::LPBGMAACCEK_PKGDBAELPNN,
-        CmdCakeRaceType::LPBGMAACCEK_IEIEDEGHIEC,
-        CmdCakeRaceType::LPBGMAACCEK_MIPNDLJOFJJ,
-        CmdCakeRaceType::LPBGMAACCEK_ADGGOEHBNIA,
-        CmdCakeRaceType::LPBGMAACCEK_BMLBJAGKMOI,
-        CmdCakeRaceType::LPBGMAACCEK_OMOCNKCKMAM,
-        CmdCakeRaceType::LPBGMAACCEK_GDPDJPJIAJA,
+        CmdCakeRaceType::CmdCakeRaceType_MNFEPONEDDJ,
+        CmdCakeRaceType::CmdCakeRaceType_EIBKDFJFMKI,
+        CmdCakeRaceType::CmdCakeRaceType_OIGOIHHFCFH,
+        CmdCakeRaceType::CmdCakeRaceType_PMEGMIFODAI,
+        CmdCakeRaceType::CmdCakeRaceType_HKDPAOKGLMD,
+        CmdCakeRaceType::CmdCakeRaceType_OIBALFGGMEE,
+        CmdCakeRaceType::CmdCakeRaceType_DOKKEAONBJE,
+        CmdCakeRaceType::CmdCakeRaceType_BEJEMCEINPG,
+        CmdCakeRaceType::CmdCakeRaceType_BIGHLLLNCOM,
+        CmdCakeRaceType::CmdCakeRaceType_KIDKDGBILNB,
+        CmdCakeRaceType::CmdCakeRaceType_CFCFEDOHMJK,
+        CmdCakeRaceType::CmdCakeRaceType_LDMNLPJHEAG,
+        CmdCakeRaceType::CmdCakeRaceType_JLILOEFMADF,
+        CmdCakeRaceType::CmdCakeRaceType_GLINOFGNFJP,
+        CmdCakeRaceType::CmdCakeRaceType_NJPCJOBHIKK,
+        CmdCakeRaceType::CmdCakeRaceType_HBDDNPBLAKB,
+        CmdCakeRaceType::CmdCakeRaceType_FMEKFGIILEA,
+        CmdCakeRaceType::CmdCakeRaceType_FPOMABNNCII,
+        CmdCakeRaceType::CmdCakeRaceType_COEHJJALKAI,
+        CmdCakeRaceType::CmdCakeRaceType_GPMMOOPFNGN,
+        CmdCakeRaceType::CmdCakeRaceType_MMMCBFGCOBI,
+        CmdCakeRaceType::CmdCakeRaceType_PLIJACDNJGA,
+        CmdCakeRaceType::CmdCakeRaceType_JLMIOKMMKIF,
     ];
 }
 
@@ -175,29 +175,29 @@ impl ::protobuf::EnumFull for CmdCakeRaceType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdCakeRaceType::LPBGMAACCEK_GKJBAODJMJG => 0,
-            CmdCakeRaceType::LPBGMAACCEK_HPCOKDHADIB => 1,
-            CmdCakeRaceType::LPBGMAACCEK_ODPBMPOEEJJ => 2,
-            CmdCakeRaceType::LPBGMAACCEK_MAIBKOMEONN => 3,
-            CmdCakeRaceType::LPBGMAACCEK_NKNIMABJPDK => 4,
-            CmdCakeRaceType::LPBGMAACCEK_FFGODAPKINO => 5,
-            CmdCakeRaceType::LPBGMAACCEK_JDCKJBIGHAI => 6,
-            CmdCakeRaceType::LPBGMAACCEK_FDFIOMBFFBI => 7,
-            CmdCakeRaceType::LPBGMAACCEK_LKMFFCJKJKD => 8,
-            CmdCakeRaceType::LPBGMAACCEK_HFDGDDBMOIM => 9,
-            CmdCakeRaceType::LPBGMAACCEK_HJHMJEIGPIG => 10,
-            CmdCakeRaceType::LPBGMAACCEK_DMMMELLHOAA => 11,
-            CmdCakeRaceType::LPBGMAACCEK_FPDJCGMBCDC => 12,
-            CmdCakeRaceType::LPBGMAACCEK_CHHDEINDLHB => 13,
-            CmdCakeRaceType::LPBGMAACCEK_KGHOHLGHCCO => 14,
-            CmdCakeRaceType::LPBGMAACCEK_EKAPHPJEIEK => 15,
-            CmdCakeRaceType::LPBGMAACCEK_PKGDBAELPNN => 16,
-            CmdCakeRaceType::LPBGMAACCEK_IEIEDEGHIEC => 17,
-            CmdCakeRaceType::LPBGMAACCEK_MIPNDLJOFJJ => 18,
-            CmdCakeRaceType::LPBGMAACCEK_ADGGOEHBNIA => 19,
-            CmdCakeRaceType::LPBGMAACCEK_BMLBJAGKMOI => 20,
-            CmdCakeRaceType::LPBGMAACCEK_OMOCNKCKMAM => 21,
-            CmdCakeRaceType::LPBGMAACCEK_GDPDJPJIAJA => 22,
+            CmdCakeRaceType::CmdCakeRaceType_MNFEPONEDDJ => 0,
+            CmdCakeRaceType::CmdCakeRaceType_EIBKDFJFMKI => 1,
+            CmdCakeRaceType::CmdCakeRaceType_OIGOIHHFCFH => 2,
+            CmdCakeRaceType::CmdCakeRaceType_PMEGMIFODAI => 3,
+            CmdCakeRaceType::CmdCakeRaceType_HKDPAOKGLMD => 4,
+            CmdCakeRaceType::CmdCakeRaceType_OIBALFGGMEE => 5,
+            CmdCakeRaceType::CmdCakeRaceType_DOKKEAONBJE => 6,
+            CmdCakeRaceType::CmdCakeRaceType_BEJEMCEINPG => 7,
+            CmdCakeRaceType::CmdCakeRaceType_BIGHLLLNCOM => 8,
+            CmdCakeRaceType::CmdCakeRaceType_KIDKDGBILNB => 9,
+            CmdCakeRaceType::CmdCakeRaceType_CFCFEDOHMJK => 10,
+            CmdCakeRaceType::CmdCakeRaceType_LDMNLPJHEAG => 11,
+            CmdCakeRaceType::CmdCakeRaceType_JLILOEFMADF => 12,
+            CmdCakeRaceType::CmdCakeRaceType_GLINOFGNFJP => 13,
+            CmdCakeRaceType::CmdCakeRaceType_NJPCJOBHIKK => 14,
+            CmdCakeRaceType::CmdCakeRaceType_HBDDNPBLAKB => 15,
+            CmdCakeRaceType::CmdCakeRaceType_FMEKFGIILEA => 16,
+            CmdCakeRaceType::CmdCakeRaceType_FPOMABNNCII => 17,
+            CmdCakeRaceType::CmdCakeRaceType_COEHJJALKAI => 18,
+            CmdCakeRaceType::CmdCakeRaceType_GPMMOOPFNGN => 19,
+            CmdCakeRaceType::CmdCakeRaceType_MMMCBFGCOBI => 20,
+            CmdCakeRaceType::CmdCakeRaceType_PLIJACDNJGA => 21,
+            CmdCakeRaceType::CmdCakeRaceType_JLMIOKMMKIF => 22,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -205,7 +205,7 @@ impl ::protobuf::EnumFull for CmdCakeRaceType {
 
 impl ::std::default::Default for CmdCakeRaceType {
     fn default() -> Self {
-        CmdCakeRaceType::LPBGMAACCEK_GKJBAODJMJG
+        CmdCakeRaceType::CmdCakeRaceType_MNFEPONEDDJ
     }
 }
 
@@ -216,22 +216,23 @@ impl CmdCakeRaceType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdCakeRaceType.proto*\xc2\x05\n\x0fCmdCakeRaceType\x12\x1b\n\x17L\
-    PBGMAACCEK_GKJBAODJMJG\x10\0\x12\x1c\n\x17LPBGMAACCEK_HPCOKDHADIB\x10\
-    \xa9G\x12\x1c\n\x17LPBGMAACCEK_ODPBMPOEEJJ\x10\xbbG\x12\x1c\n\x17LPBGMAA\
-    CCEK_MAIBKOMEONN\x10\xbdG\x12\x1c\n\x17LPBGMAACCEK_NKNIMABJPDK\x10\xb4G\
-    \x12\x1c\n\x17LPBGMAACCEK_FFGODAPKINO\x10\xb0G\x12\x1c\n\x17LPBGMAACCEK_\
-    JDCKJBIGHAI\x10\xa3G\x12\x1c\n\x17LPBGMAACCEK_FDFIOMBFFBI\x10\xa1G\x12\
-    \x1c\n\x17LPBGMAACCEK_LKMFFCJKJKD\x10\xb8G\x12\x1c\n\x17LPBGMAACCEK_HFDG\
-    DDBMOIM\x10\xbcG\x12\x1c\n\x17LPBGMAACCEK_HJHMJEIGPIG\x10\xadG\x12\x1c\n\
-    \x17LPBGMAACCEK_DMMMELLHOAA\x10\xabG\x12\x1c\n\x17LPBGMAACCEK_FPDJCGMBCD\
-    C\x10\xa6G\x12\x1c\n\x17LPBGMAACCEK_CHHDEINDLHB\x10\xb2G\x12\x1c\n\x17LP\
-    BGMAACCEK_KGHOHLGHCCO\x10\xacG\x12\x1c\n\x17LPBGMAACCEK_EKAPHPJEIEK\x10\
-    \xb7G\x12\x1c\n\x17LPBGMAACCEK_PKGDBAELPNN\x10\xbaG\x12\x1c\n\x17LPBGMAA\
-    CCEK_IEIEDEGHIEC\x10\xa4G\x12\x1c\n\x17LPBGMAACCEK_MIPNDLJOFJJ\x10\xb1G\
-    \x12\x1c\n\x17LPBGMAACCEK_ADGGOEHBNIA\x10\xafG\x12\x1c\n\x17LPBGMAACCEK_\
-    BMLBJAGKMOI\x10\xa7G\x12\x1c\n\x17LPBGMAACCEK_OMOCNKCKMAM\x10\xbeG\x12\
-    \x1c\n\x17LPBGMAACCEK_GDPDJPJIAJA\x10\xb3Gb\x06proto3\
+    \n\x15CmdCakeRaceType.proto*\x9e\x06\n\x0fCmdCakeRaceType\x12\x1f\n\x1bC\
+    mdCakeRaceType_MNFEPONEDDJ\x10\0\x12\x20\n\x1bCmdCakeRaceType_EIBKDFJFMK\
+    I\x10\xafG\x12\x20\n\x1bCmdCakeRaceType_OIGOIHHFCFH\x10\xa4G\x12\x20\n\
+    \x1bCmdCakeRaceType_PMEGMIFODAI\x10\xacG\x12\x20\n\x1bCmdCakeRaceType_HK\
+    DPAOKGLMD\x10\xbbG\x12\x20\n\x1bCmdCakeRaceType_OIBALFGGMEE\x10\xa5G\x12\
+    \x20\n\x1bCmdCakeRaceType_DOKKEAONBJE\x10\xadG\x12\x20\n\x1bCmdCakeRaceT\
+    ype_BEJEMCEINPG\x10\xa1G\x12\x20\n\x1bCmdCakeRaceType_BIGHLLLNCOM\x10\
+    \xabG\x12\x20\n\x1bCmdCakeRaceType_KIDKDGBILNB\x10\xb6G\x12\x20\n\x1bCmd\
+    CakeRaceType_CFCFEDOHMJK\x10\xbdG\x12\x20\n\x1bCmdCakeRaceType_LDMNLPJHE\
+    AG\x10\xa2G\x12\x20\n\x1bCmdCakeRaceType_JLILOEFMADF\x10\xa9G\x12\x20\n\
+    \x1bCmdCakeRaceType_GLINOFGNFJP\x10\xaaG\x12\x20\n\x1bCmdCakeRaceType_NJ\
+    PCJOBHIKK\x10\xb5G\x12\x20\n\x1bCmdCakeRaceType_HBDDNPBLAKB\x10\xb1G\x12\
+    \x20\n\x1bCmdCakeRaceType_FMEKFGIILEA\x10\xb0G\x12\x20\n\x1bCmdCakeRaceT\
+    ype_FPOMABNNCII\x10\xb4G\x12\x20\n\x1bCmdCakeRaceType_COEHJJALKAI\x10\
+    \xaeG\x12\x20\n\x1bCmdCakeRaceType_GPMMOOPFNGN\x10\xb3G\x12\x20\n\x1bCmd\
+    CakeRaceType_MMMCBFGCOBI\x10\xbaG\x12\x20\n\x1bCmdCakeRaceType_PLIJACDNJ\
+    GA\x10\xa7G\x12\x20\n\x1bCmdCakeRaceType_JLMIOKMMKIF\x10\xa6Gb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

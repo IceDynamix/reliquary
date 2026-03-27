@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGameRaiseRatioCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGameRaiseRatioCsReq.IDFLJMPEAPA)
-    pub IDFLJMPEAPA: u32,
+    // @@protoc_insertion_point(field:MonopolyGameRaiseRatioCsReq.GKCJDAKALGL)
+    pub GKCJDAKALGL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGameRaiseRatioCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MonopolyGameRaiseRatioCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IDFLJMPEAPA",
-            |m: &MonopolyGameRaiseRatioCsReq| { &m.IDFLJMPEAPA },
-            |m: &mut MonopolyGameRaiseRatioCsReq| { &mut m.IDFLJMPEAPA },
+            "GKCJDAKALGL",
+            |m: &MonopolyGameRaiseRatioCsReq| { &m.GKCJDAKALGL },
+            |m: &mut MonopolyGameRaiseRatioCsReq| { &mut m.GKCJDAKALGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGameRaiseRatioCsReq>(
             "MonopolyGameRaiseRatioCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MonopolyGameRaiseRatioCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.IDFLJMPEAPA = is.read_uint32()?;
+                112 => {
+                    self.GKCJDAKALGL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for MonopolyGameRaiseRatioCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IDFLJMPEAPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IDFLJMPEAPA);
+        if self.GKCJDAKALGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.GKCJDAKALGL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for MonopolyGameRaiseRatioCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IDFLJMPEAPA != 0 {
-            os.write_uint32(9, self.IDFLJMPEAPA)?;
+        if self.GKCJDAKALGL != 0 {
+            os.write_uint32(14, self.GKCJDAKALGL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for MonopolyGameRaiseRatioCsReq {
     }
 
     fn clear(&mut self) {
-        self.IDFLJMPEAPA = 0;
+        self.GKCJDAKALGL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGameRaiseRatioCsReq {
         static instance: MonopolyGameRaiseRatioCsReq = MonopolyGameRaiseRatioCsReq {
-            IDFLJMPEAPA: 0,
+            GKCJDAKALGL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGameRaiseRatioCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!MonopolyGameRaiseRatioCsReq.proto\"?\n\x1bMonopolyGameRaiseRatioCsReq\
-    \x12\x20\n\x0bIDFLJMPEAPA\x18\t\x20\x01(\rR\x0bIDFLJMPEAPAb\x06proto3\
+    \x12\x20\n\x0bGKCJDAKALGL\x18\x0e\x20\x01(\rR\x0bGKCJDAKALGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

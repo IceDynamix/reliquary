@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRecycleTimeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetRecycleTimeCsReq.LGONDNECLBI)
-    pub LGONDNECLBI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetRecycleTimeCsReq.HIEEMOMFHIJ)
+    pub HIEEMOMFHIJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetRecycleTimeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GetRecycleTimeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LGONDNECLBI",
-            |m: &GetRecycleTimeCsReq| { &m.LGONDNECLBI },
-            |m: &mut GetRecycleTimeCsReq| { &mut m.LGONDNECLBI },
+            "HIEEMOMFHIJ",
+            |m: &GetRecycleTimeCsReq| { &m.HIEEMOMFHIJ },
+            |m: &mut GetRecycleTimeCsReq| { &mut m.HIEEMOMFHIJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetRecycleTimeCsReq>(
             "GetRecycleTimeCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for GetRecycleTimeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LGONDNECLBI)?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HIEEMOMFHIJ)?;
                 },
-                16 => {
-                    self.LGONDNECLBI.push(is.read_uint32()?);
+                80 => {
+                    self.HIEEMOMFHIJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for GetRecycleTimeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.LGONDNECLBI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HIEEMOMFHIJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.LGONDNECLBI)?;
+        os.write_repeated_packed_uint32(10, &self.HIEEMOMFHIJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for GetRecycleTimeCsReq {
     }
 
     fn clear(&mut self) {
-        self.LGONDNECLBI.clear();
+        self.HIEEMOMFHIJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRecycleTimeCsReq {
         static instance: GetRecycleTimeCsReq = GetRecycleTimeCsReq {
-            LGONDNECLBI: ::std::vec::Vec::new(),
+            HIEEMOMFHIJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for GetRecycleTimeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19GetRecycleTimeCsReq.proto\"7\n\x13GetRecycleTimeCsReq\x12\x20\n\
-    \x0bLGONDNECLBI\x18\x02\x20\x03(\rR\x0bLGONDNECLBIb\x06proto3\
+    \x0bHIEEMOMFHIJ\x18\n\x20\x03(\rR\x0bHIEEMOMFHIJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

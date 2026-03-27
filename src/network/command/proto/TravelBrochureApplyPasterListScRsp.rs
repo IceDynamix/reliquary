@@ -30,8 +30,8 @@ pub struct TravelBrochureApplyPasterListScRsp {
     // message fields
     // @@protoc_insertion_point(field:TravelBrochureApplyPasterListScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TravelBrochureApplyPasterListScRsp.NNOADOIIKKL)
-    pub NNOADOIIKKL: ::protobuf::MessageField<super::HBHHAMCHIDE::HBHHAMCHIDE>,
+    // @@protoc_insertion_point(field:TravelBrochureApplyPasterListScRsp.ADBMMEEPGIE)
+    pub ADBMMEEPGIE: ::protobuf::MessageField<super::OIPOKOPAMPH::OIPOKOPAMPH>,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureApplyPasterListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl TravelBrochureApplyPasterListScRsp {
             |m: &TravelBrochureApplyPasterListScRsp| { &m.retcode },
             |m: &mut TravelBrochureApplyPasterListScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HBHHAMCHIDE::HBHHAMCHIDE>(
-            "NNOADOIIKKL",
-            |m: &TravelBrochureApplyPasterListScRsp| { &m.NNOADOIIKKL },
-            |m: &mut TravelBrochureApplyPasterListScRsp| { &mut m.NNOADOIIKKL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OIPOKOPAMPH::OIPOKOPAMPH>(
+            "ADBMMEEPGIE",
+            |m: &TravelBrochureApplyPasterListScRsp| { &m.ADBMMEEPGIE },
+            |m: &mut TravelBrochureApplyPasterListScRsp| { &mut m.ADBMMEEPGIE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureApplyPasterListScRsp>(
             "TravelBrochureApplyPasterListScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NNOADOIIKKL)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ADBMMEEPGIE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
-        if let Some(v) = self.NNOADOIIKKL.as_ref() {
+        if let Some(v) = self.ADBMMEEPGIE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
-        if let Some(v) = self.NNOADOIIKKL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.ADBMMEEPGIE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for TravelBrochureApplyPasterListScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.NNOADOIIKKL.clear();
+        self.ADBMMEEPGIE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureApplyPasterListScRsp {
         static instance: TravelBrochureApplyPasterListScRsp = TravelBrochureApplyPasterListScRsp {
             retcode: 0,
-            NNOADOIIKKL: ::protobuf::MessageField::none(),
+            ADBMMEEPGIE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureApplyPasterListScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(TravelBrochureApplyPasterListScRsp.proto\x1a\x11HBHHAMCHIDE.proto\"n\
-    \n\"TravelBrochureApplyPasterListScRsp\x12\x18\n\x07retcode\x18\x08\x20\
-    \x01(\rR\x07retcode\x12.\n\x0bNNOADOIIKKL\x18\x06\x20\x01(\x0b2\x0c.HBHH\
-    AMCHIDER\x0bNNOADOIIKKLb\x06proto3\
+    \n(TravelBrochureApplyPasterListScRsp.proto\x1a\x11OIPOKOPAMPH.proto\"n\
+    \n\"TravelBrochureApplyPasterListScRsp\x12\x18\n\x07retcode\x18\x0b\x20\
+    \x01(\rR\x07retcode\x12.\n\x0bADBMMEEPGIE\x18\x0e\x20\x01(\x0b2\x0c.OIPO\
+    KOPAMPHR\x0bADBMMEEPGIEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HBHHAMCHIDE::file_descriptor().clone());
+            deps.push(super::OIPOKOPAMPH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TravelBrochureApplyPasterListScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

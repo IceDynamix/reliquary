@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CommonRogueVirtualItemInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:CommonRogueVirtualItemInfoScNotify.IPKKHJPJGDD)
-    pub IPKKHJPJGDD: ::std::vec::Vec<super::IMKEEINOABP::IMKEEINOABP>,
+    // @@protoc_insertion_point(field:CommonRogueVirtualItemInfoScNotify.IMFKMGGEILO)
+    pub IMFKMGGEILO: ::std::vec::Vec<super::MJFIOGICMGO::MJFIOGICMGO>,
     // special fields
     // @@protoc_insertion_point(special_field:CommonRogueVirtualItemInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl CommonRogueVirtualItemInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IPKKHJPJGDD",
-            |m: &CommonRogueVirtualItemInfoScNotify| { &m.IPKKHJPJGDD },
-            |m: &mut CommonRogueVirtualItemInfoScNotify| { &mut m.IPKKHJPJGDD },
+            "IMFKMGGEILO",
+            |m: &CommonRogueVirtualItemInfoScNotify| { &m.IMFKMGGEILO },
+            |m: &mut CommonRogueVirtualItemInfoScNotify| { &mut m.IMFKMGGEILO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CommonRogueVirtualItemInfoScNotify>(
             "CommonRogueVirtualItemInfoScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for CommonRogueVirtualItemInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    self.IPKKHJPJGDD.push(is.read_message()?);
+                74 => {
+                    self.IMFKMGGEILO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for CommonRogueVirtualItemInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.IPKKHJPJGDD {
+        for value in &self.IMFKMGGEILO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for CommonRogueVirtualItemInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.IPKKHJPJGDD {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.IMFKMGGEILO {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for CommonRogueVirtualItemInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.IPKKHJPJGDD.clear();
+        self.IMFKMGGEILO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CommonRogueVirtualItemInfoScNotify {
         static instance: CommonRogueVirtualItemInfoScNotify = CommonRogueVirtualItemInfoScNotify {
-            IPKKHJPJGDD: ::std::vec::Vec::new(),
+            IMFKMGGEILO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for CommonRogueVirtualItemInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(CommonRogueVirtualItemInfoScNotify.proto\x1a\x11IMKEEINOABP.proto\"T\
-    \n\"CommonRogueVirtualItemInfoScNotify\x12.\n\x0bIPKKHJPJGDD\x18\x0e\x20\
-    \x03(\x0b2\x0c.IMKEEINOABPR\x0bIPKKHJPJGDDb\x06proto3\
+    \n(CommonRogueVirtualItemInfoScNotify.proto\x1a\x11MJFIOGICMGO.proto\"T\
+    \n\"CommonRogueVirtualItemInfoScNotify\x12.\n\x0bIMFKMGGEILO\x18\t\x20\
+    \x03(\x0b2\x0c.MJFIOGICMGOR\x0bIMFKMGGEILOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IMKEEINOABP::file_descriptor().clone());
+            deps.push(super::MJFIOGICMGO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CommonRogueVirtualItemInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

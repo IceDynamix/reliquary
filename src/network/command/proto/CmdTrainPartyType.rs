@@ -27,68 +27,68 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdTrainPartyType)
 pub enum CmdTrainPartyType {
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_GKJBAODJMJG)
-    CLBMGDANFHH_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_EEGLDHODCAN)
-    CLBMGDANFHH_EEGLDHODCAN = 8093,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_KMKBNMBJNPK)
-    CLBMGDANFHH_KMKBNMBJNPK = 8079,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_MCFDCKMENGI)
-    CLBMGDANFHH_MCFDCKMENGI = 8078,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_MCJLIPBLIHD)
-    CLBMGDANFHH_MCJLIPBLIHD = 8013,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_PNPNAFHOODB)
-    CLBMGDANFHH_PNPNAFHOODB = 8037,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_LHBGHIOBBJJ)
-    CLBMGDANFHH_LHBGHIOBBJJ = 8096,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_OPJGFAFEEFK)
-    CLBMGDANFHH_OPJGFAFEEFK = 8057,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_GKPNBHLDPBP)
-    CLBMGDANFHH_GKPNBHLDPBP = 8086,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_IEKAJOPBCPB)
-    CLBMGDANFHH_IEKAJOPBCPB = 8095,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_DNGKGKAKOKI)
-    CLBMGDANFHH_DNGKGKAKOKI = 8038,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_CGNACPMNHEG)
-    CLBMGDANFHH_CGNACPMNHEG = 8047,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_EOJEHGOENMN)
-    CLBMGDANFHH_EOJEHGOENMN = 8075,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_NCIJLCMEILD)
-    CLBMGDANFHH_NCIJLCMEILD = 8008,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_HAHMKAHIKPN)
-    CLBMGDANFHH_HAHMKAHIKPN = 8042,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_GHHABDLALJD)
-    CLBMGDANFHH_GHHABDLALJD = 8052,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_ALIDGGENAJH)
-    CLBMGDANFHH_ALIDGGENAJH = 8076,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_ABANNPIHCMH)
-    CLBMGDANFHH_ABANNPIHCMH = 8016,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_DKCNBCLILBF)
-    CLBMGDANFHH_DKCNBCLILBF = 8026,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_MANBBBNLLON)
-    CLBMGDANFHH_MANBBBNLLON = 8066,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_DEEABEHEBAE)
-    CLBMGDANFHH_DEEABEHEBAE = 8069,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_BEADMBHDBCM)
-    CLBMGDANFHH_BEADMBHDBCM = 8083,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_JNFLAGDMBAN)
-    CLBMGDANFHH_JNFLAGDMBAN = 8050,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_OIJGNELKADL)
-    CLBMGDANFHH_OIJGNELKADL = 8055,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_BJAFGKKAHJO)
-    CLBMGDANFHH_BJAFGKKAHJO = 8011,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_FBFAEDPKICP)
-    CLBMGDANFHH_FBFAEDPKICP = 8099,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_IDOCJFAAAHO)
-    CLBMGDANFHH_IDOCJFAAAHO = 8009,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_JCIAFGEJGOB)
-    CLBMGDANFHH_JCIAFGEJGOB = 8089,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_MFBACAKGAOD)
-    CLBMGDANFHH_MFBACAKGAOD = 8028,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_LNJBLFDPECH)
-    CLBMGDANFHH_LNJBLFDPECH = 8056,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CLBMGDANFHH_OADHCKDAJHC)
-    CLBMGDANFHH_OADHCKDAJHC = 8045,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_MNFEPONEDDJ)
+    CmdTrainPartyType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_ODKPCAMOIHJ)
+    CmdTrainPartyType_ODKPCAMOIHJ = 8045,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_NMLJDLHJBOG)
+    CmdTrainPartyType_NMLJDLHJBOG = 8022,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_JBNCIIGGKDE)
+    CmdTrainPartyType_JBNCIIGGKDE = 8062,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_AHKFFLPEICH)
+    CmdTrainPartyType_AHKFFLPEICH = 8096,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_LHBPIOBHKNP)
+    CmdTrainPartyType_LHBPIOBHKNP = 8003,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_NCJKIFDPNAC)
+    CmdTrainPartyType_NCJKIFDPNAC = 8009,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_HHPDKLJMCGI)
+    CmdTrainPartyType_HHPDKLJMCGI = 8090,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_FOKBDKDEHLC)
+    CmdTrainPartyType_FOKBDKDEHLC = 8083,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_NMNNCIEJBKA)
+    CmdTrainPartyType_NMNNCIEJBKA = 8004,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_MEKMCELAHMP)
+    CmdTrainPartyType_MEKMCELAHMP = 8068,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_LMMEFCPKMMK)
+    CmdTrainPartyType_LMMEFCPKMMK = 8008,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_JKNAOLCKDMA)
+    CmdTrainPartyType_JKNAOLCKDMA = 8002,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_DDBOABOKGFK)
+    CmdTrainPartyType_DDBOABOKGFK = 8017,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_IFLBMKCEEGA)
+    CmdTrainPartyType_IFLBMKCEEGA = 8091,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_KHONAPCJCDL)
+    CmdTrainPartyType_KHONAPCJCDL = 8057,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_PFIEAOLOFLL)
+    CmdTrainPartyType_PFIEAOLOFLL = 8043,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_GLIBFAFDBND)
+    CmdTrainPartyType_GLIBFAFDBND = 8086,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_JLNKIPEILND)
+    CmdTrainPartyType_JLNKIPEILND = 8069,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_PAJFBFCBGNO)
+    CmdTrainPartyType_PAJFBFCBGNO = 8056,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_PEIAJHEOELH)
+    CmdTrainPartyType_PEIAJHEOELH = 8048,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_DIBMJMLKFCD)
+    CmdTrainPartyType_DIBMJMLKFCD = 8037,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_PCFDJNDOLBF)
+    CmdTrainPartyType_PCFDJNDOLBF = 8088,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_BFFMONHMAEH)
+    CmdTrainPartyType_BFFMONHMAEH = 8084,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_GPHCMKFPIKK)
+    CmdTrainPartyType_GPHCMKFPIKK = 8035,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_DJJKLHHGGPJ)
+    CmdTrainPartyType_DJJKLHHGGPJ = 8081,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_KDNOGIMAPID)
+    CmdTrainPartyType_KDNOGIMAPID = 8046,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_DOIAILBBLIC)
+    CmdTrainPartyType_DOIAILBBLIC = 8019,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_PPCMMPEEEDF)
+    CmdTrainPartyType_PPCMMPEEEDF = 8023,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_CEHMKDJBCJP)
+    CmdTrainPartyType_CEHMKDJBCJP = 8047,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyType_JBJOLHDFHGE)
+    CmdTrainPartyType_JBJOLHDFHGE = 8024,
 }
 
 impl ::protobuf::Enum for CmdTrainPartyType {
@@ -100,110 +100,110 @@ impl ::protobuf::Enum for CmdTrainPartyType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdTrainPartyType> {
         match value {
-            0 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_GKJBAODJMJG),
-            8093 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_EEGLDHODCAN),
-            8079 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_KMKBNMBJNPK),
-            8078 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_MCFDCKMENGI),
-            8013 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_MCJLIPBLIHD),
-            8037 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_PNPNAFHOODB),
-            8096 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_LHBGHIOBBJJ),
-            8057 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_OPJGFAFEEFK),
-            8086 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_GKPNBHLDPBP),
-            8095 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_IEKAJOPBCPB),
-            8038 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_DNGKGKAKOKI),
-            8047 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_CGNACPMNHEG),
-            8075 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_EOJEHGOENMN),
-            8008 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_NCIJLCMEILD),
-            8042 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_HAHMKAHIKPN),
-            8052 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_GHHABDLALJD),
-            8076 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_ALIDGGENAJH),
-            8016 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_ABANNPIHCMH),
-            8026 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_DKCNBCLILBF),
-            8066 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_MANBBBNLLON),
-            8069 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_DEEABEHEBAE),
-            8083 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_BEADMBHDBCM),
-            8050 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_JNFLAGDMBAN),
-            8055 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_OIJGNELKADL),
-            8011 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_BJAFGKKAHJO),
-            8099 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_FBFAEDPKICP),
-            8009 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_IDOCJFAAAHO),
-            8089 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_JCIAFGEJGOB),
-            8028 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_MFBACAKGAOD),
-            8056 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_LNJBLFDPECH),
-            8045 => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_OADHCKDAJHC),
+            0 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_MNFEPONEDDJ),
+            8045 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_ODKPCAMOIHJ),
+            8022 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_NMLJDLHJBOG),
+            8062 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_JBNCIIGGKDE),
+            8096 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_AHKFFLPEICH),
+            8003 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_LHBPIOBHKNP),
+            8009 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_NCJKIFDPNAC),
+            8090 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_HHPDKLJMCGI),
+            8083 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_FOKBDKDEHLC),
+            8004 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_NMNNCIEJBKA),
+            8068 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_MEKMCELAHMP),
+            8008 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_LMMEFCPKMMK),
+            8002 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_JKNAOLCKDMA),
+            8017 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_DDBOABOKGFK),
+            8091 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_IFLBMKCEEGA),
+            8057 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_KHONAPCJCDL),
+            8043 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_PFIEAOLOFLL),
+            8086 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_GLIBFAFDBND),
+            8069 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_JLNKIPEILND),
+            8056 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_PAJFBFCBGNO),
+            8048 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_PEIAJHEOELH),
+            8037 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_DIBMJMLKFCD),
+            8088 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_PCFDJNDOLBF),
+            8084 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_BFFMONHMAEH),
+            8035 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_GPHCMKFPIKK),
+            8081 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_DJJKLHHGGPJ),
+            8046 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_KDNOGIMAPID),
+            8019 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_DOIAILBBLIC),
+            8023 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_PPCMMPEEEDF),
+            8047 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_CEHMKDJBCJP),
+            8024 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_JBJOLHDFHGE),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdTrainPartyType> {
         match str {
-            "CLBMGDANFHH_GKJBAODJMJG" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_GKJBAODJMJG),
-            "CLBMGDANFHH_EEGLDHODCAN" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_EEGLDHODCAN),
-            "CLBMGDANFHH_KMKBNMBJNPK" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_KMKBNMBJNPK),
-            "CLBMGDANFHH_MCFDCKMENGI" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_MCFDCKMENGI),
-            "CLBMGDANFHH_MCJLIPBLIHD" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_MCJLIPBLIHD),
-            "CLBMGDANFHH_PNPNAFHOODB" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_PNPNAFHOODB),
-            "CLBMGDANFHH_LHBGHIOBBJJ" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_LHBGHIOBBJJ),
-            "CLBMGDANFHH_OPJGFAFEEFK" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_OPJGFAFEEFK),
-            "CLBMGDANFHH_GKPNBHLDPBP" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_GKPNBHLDPBP),
-            "CLBMGDANFHH_IEKAJOPBCPB" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_IEKAJOPBCPB),
-            "CLBMGDANFHH_DNGKGKAKOKI" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_DNGKGKAKOKI),
-            "CLBMGDANFHH_CGNACPMNHEG" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_CGNACPMNHEG),
-            "CLBMGDANFHH_EOJEHGOENMN" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_EOJEHGOENMN),
-            "CLBMGDANFHH_NCIJLCMEILD" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_NCIJLCMEILD),
-            "CLBMGDANFHH_HAHMKAHIKPN" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_HAHMKAHIKPN),
-            "CLBMGDANFHH_GHHABDLALJD" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_GHHABDLALJD),
-            "CLBMGDANFHH_ALIDGGENAJH" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_ALIDGGENAJH),
-            "CLBMGDANFHH_ABANNPIHCMH" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_ABANNPIHCMH),
-            "CLBMGDANFHH_DKCNBCLILBF" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_DKCNBCLILBF),
-            "CLBMGDANFHH_MANBBBNLLON" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_MANBBBNLLON),
-            "CLBMGDANFHH_DEEABEHEBAE" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_DEEABEHEBAE),
-            "CLBMGDANFHH_BEADMBHDBCM" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_BEADMBHDBCM),
-            "CLBMGDANFHH_JNFLAGDMBAN" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_JNFLAGDMBAN),
-            "CLBMGDANFHH_OIJGNELKADL" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_OIJGNELKADL),
-            "CLBMGDANFHH_BJAFGKKAHJO" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_BJAFGKKAHJO),
-            "CLBMGDANFHH_FBFAEDPKICP" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_FBFAEDPKICP),
-            "CLBMGDANFHH_IDOCJFAAAHO" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_IDOCJFAAAHO),
-            "CLBMGDANFHH_JCIAFGEJGOB" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_JCIAFGEJGOB),
-            "CLBMGDANFHH_MFBACAKGAOD" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_MFBACAKGAOD),
-            "CLBMGDANFHH_LNJBLFDPECH" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_LNJBLFDPECH),
-            "CLBMGDANFHH_OADHCKDAJHC" => ::std::option::Option::Some(CmdTrainPartyType::CLBMGDANFHH_OADHCKDAJHC),
+            "CmdTrainPartyType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_MNFEPONEDDJ),
+            "CmdTrainPartyType_ODKPCAMOIHJ" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_ODKPCAMOIHJ),
+            "CmdTrainPartyType_NMLJDLHJBOG" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_NMLJDLHJBOG),
+            "CmdTrainPartyType_JBNCIIGGKDE" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_JBNCIIGGKDE),
+            "CmdTrainPartyType_AHKFFLPEICH" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_AHKFFLPEICH),
+            "CmdTrainPartyType_LHBPIOBHKNP" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_LHBPIOBHKNP),
+            "CmdTrainPartyType_NCJKIFDPNAC" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_NCJKIFDPNAC),
+            "CmdTrainPartyType_HHPDKLJMCGI" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_HHPDKLJMCGI),
+            "CmdTrainPartyType_FOKBDKDEHLC" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_FOKBDKDEHLC),
+            "CmdTrainPartyType_NMNNCIEJBKA" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_NMNNCIEJBKA),
+            "CmdTrainPartyType_MEKMCELAHMP" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_MEKMCELAHMP),
+            "CmdTrainPartyType_LMMEFCPKMMK" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_LMMEFCPKMMK),
+            "CmdTrainPartyType_JKNAOLCKDMA" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_JKNAOLCKDMA),
+            "CmdTrainPartyType_DDBOABOKGFK" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_DDBOABOKGFK),
+            "CmdTrainPartyType_IFLBMKCEEGA" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_IFLBMKCEEGA),
+            "CmdTrainPartyType_KHONAPCJCDL" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_KHONAPCJCDL),
+            "CmdTrainPartyType_PFIEAOLOFLL" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_PFIEAOLOFLL),
+            "CmdTrainPartyType_GLIBFAFDBND" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_GLIBFAFDBND),
+            "CmdTrainPartyType_JLNKIPEILND" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_JLNKIPEILND),
+            "CmdTrainPartyType_PAJFBFCBGNO" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_PAJFBFCBGNO),
+            "CmdTrainPartyType_PEIAJHEOELH" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_PEIAJHEOELH),
+            "CmdTrainPartyType_DIBMJMLKFCD" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_DIBMJMLKFCD),
+            "CmdTrainPartyType_PCFDJNDOLBF" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_PCFDJNDOLBF),
+            "CmdTrainPartyType_BFFMONHMAEH" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_BFFMONHMAEH),
+            "CmdTrainPartyType_GPHCMKFPIKK" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_GPHCMKFPIKK),
+            "CmdTrainPartyType_DJJKLHHGGPJ" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_DJJKLHHGGPJ),
+            "CmdTrainPartyType_KDNOGIMAPID" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_KDNOGIMAPID),
+            "CmdTrainPartyType_DOIAILBBLIC" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_DOIAILBBLIC),
+            "CmdTrainPartyType_PPCMMPEEEDF" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_PPCMMPEEEDF),
+            "CmdTrainPartyType_CEHMKDJBCJP" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_CEHMKDJBCJP),
+            "CmdTrainPartyType_JBJOLHDFHGE" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyType_JBJOLHDFHGE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTrainPartyType] = &[
-        CmdTrainPartyType::CLBMGDANFHH_GKJBAODJMJG,
-        CmdTrainPartyType::CLBMGDANFHH_EEGLDHODCAN,
-        CmdTrainPartyType::CLBMGDANFHH_KMKBNMBJNPK,
-        CmdTrainPartyType::CLBMGDANFHH_MCFDCKMENGI,
-        CmdTrainPartyType::CLBMGDANFHH_MCJLIPBLIHD,
-        CmdTrainPartyType::CLBMGDANFHH_PNPNAFHOODB,
-        CmdTrainPartyType::CLBMGDANFHH_LHBGHIOBBJJ,
-        CmdTrainPartyType::CLBMGDANFHH_OPJGFAFEEFK,
-        CmdTrainPartyType::CLBMGDANFHH_GKPNBHLDPBP,
-        CmdTrainPartyType::CLBMGDANFHH_IEKAJOPBCPB,
-        CmdTrainPartyType::CLBMGDANFHH_DNGKGKAKOKI,
-        CmdTrainPartyType::CLBMGDANFHH_CGNACPMNHEG,
-        CmdTrainPartyType::CLBMGDANFHH_EOJEHGOENMN,
-        CmdTrainPartyType::CLBMGDANFHH_NCIJLCMEILD,
-        CmdTrainPartyType::CLBMGDANFHH_HAHMKAHIKPN,
-        CmdTrainPartyType::CLBMGDANFHH_GHHABDLALJD,
-        CmdTrainPartyType::CLBMGDANFHH_ALIDGGENAJH,
-        CmdTrainPartyType::CLBMGDANFHH_ABANNPIHCMH,
-        CmdTrainPartyType::CLBMGDANFHH_DKCNBCLILBF,
-        CmdTrainPartyType::CLBMGDANFHH_MANBBBNLLON,
-        CmdTrainPartyType::CLBMGDANFHH_DEEABEHEBAE,
-        CmdTrainPartyType::CLBMGDANFHH_BEADMBHDBCM,
-        CmdTrainPartyType::CLBMGDANFHH_JNFLAGDMBAN,
-        CmdTrainPartyType::CLBMGDANFHH_OIJGNELKADL,
-        CmdTrainPartyType::CLBMGDANFHH_BJAFGKKAHJO,
-        CmdTrainPartyType::CLBMGDANFHH_FBFAEDPKICP,
-        CmdTrainPartyType::CLBMGDANFHH_IDOCJFAAAHO,
-        CmdTrainPartyType::CLBMGDANFHH_JCIAFGEJGOB,
-        CmdTrainPartyType::CLBMGDANFHH_MFBACAKGAOD,
-        CmdTrainPartyType::CLBMGDANFHH_LNJBLFDPECH,
-        CmdTrainPartyType::CLBMGDANFHH_OADHCKDAJHC,
+        CmdTrainPartyType::CmdTrainPartyType_MNFEPONEDDJ,
+        CmdTrainPartyType::CmdTrainPartyType_ODKPCAMOIHJ,
+        CmdTrainPartyType::CmdTrainPartyType_NMLJDLHJBOG,
+        CmdTrainPartyType::CmdTrainPartyType_JBNCIIGGKDE,
+        CmdTrainPartyType::CmdTrainPartyType_AHKFFLPEICH,
+        CmdTrainPartyType::CmdTrainPartyType_LHBPIOBHKNP,
+        CmdTrainPartyType::CmdTrainPartyType_NCJKIFDPNAC,
+        CmdTrainPartyType::CmdTrainPartyType_HHPDKLJMCGI,
+        CmdTrainPartyType::CmdTrainPartyType_FOKBDKDEHLC,
+        CmdTrainPartyType::CmdTrainPartyType_NMNNCIEJBKA,
+        CmdTrainPartyType::CmdTrainPartyType_MEKMCELAHMP,
+        CmdTrainPartyType::CmdTrainPartyType_LMMEFCPKMMK,
+        CmdTrainPartyType::CmdTrainPartyType_JKNAOLCKDMA,
+        CmdTrainPartyType::CmdTrainPartyType_DDBOABOKGFK,
+        CmdTrainPartyType::CmdTrainPartyType_IFLBMKCEEGA,
+        CmdTrainPartyType::CmdTrainPartyType_KHONAPCJCDL,
+        CmdTrainPartyType::CmdTrainPartyType_PFIEAOLOFLL,
+        CmdTrainPartyType::CmdTrainPartyType_GLIBFAFDBND,
+        CmdTrainPartyType::CmdTrainPartyType_JLNKIPEILND,
+        CmdTrainPartyType::CmdTrainPartyType_PAJFBFCBGNO,
+        CmdTrainPartyType::CmdTrainPartyType_PEIAJHEOELH,
+        CmdTrainPartyType::CmdTrainPartyType_DIBMJMLKFCD,
+        CmdTrainPartyType::CmdTrainPartyType_PCFDJNDOLBF,
+        CmdTrainPartyType::CmdTrainPartyType_BFFMONHMAEH,
+        CmdTrainPartyType::CmdTrainPartyType_GPHCMKFPIKK,
+        CmdTrainPartyType::CmdTrainPartyType_DJJKLHHGGPJ,
+        CmdTrainPartyType::CmdTrainPartyType_KDNOGIMAPID,
+        CmdTrainPartyType::CmdTrainPartyType_DOIAILBBLIC,
+        CmdTrainPartyType::CmdTrainPartyType_PPCMMPEEEDF,
+        CmdTrainPartyType::CmdTrainPartyType_CEHMKDJBCJP,
+        CmdTrainPartyType::CmdTrainPartyType_JBJOLHDFHGE,
     ];
 }
 
@@ -215,37 +215,37 @@ impl ::protobuf::EnumFull for CmdTrainPartyType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdTrainPartyType::CLBMGDANFHH_GKJBAODJMJG => 0,
-            CmdTrainPartyType::CLBMGDANFHH_EEGLDHODCAN => 1,
-            CmdTrainPartyType::CLBMGDANFHH_KMKBNMBJNPK => 2,
-            CmdTrainPartyType::CLBMGDANFHH_MCFDCKMENGI => 3,
-            CmdTrainPartyType::CLBMGDANFHH_MCJLIPBLIHD => 4,
-            CmdTrainPartyType::CLBMGDANFHH_PNPNAFHOODB => 5,
-            CmdTrainPartyType::CLBMGDANFHH_LHBGHIOBBJJ => 6,
-            CmdTrainPartyType::CLBMGDANFHH_OPJGFAFEEFK => 7,
-            CmdTrainPartyType::CLBMGDANFHH_GKPNBHLDPBP => 8,
-            CmdTrainPartyType::CLBMGDANFHH_IEKAJOPBCPB => 9,
-            CmdTrainPartyType::CLBMGDANFHH_DNGKGKAKOKI => 10,
-            CmdTrainPartyType::CLBMGDANFHH_CGNACPMNHEG => 11,
-            CmdTrainPartyType::CLBMGDANFHH_EOJEHGOENMN => 12,
-            CmdTrainPartyType::CLBMGDANFHH_NCIJLCMEILD => 13,
-            CmdTrainPartyType::CLBMGDANFHH_HAHMKAHIKPN => 14,
-            CmdTrainPartyType::CLBMGDANFHH_GHHABDLALJD => 15,
-            CmdTrainPartyType::CLBMGDANFHH_ALIDGGENAJH => 16,
-            CmdTrainPartyType::CLBMGDANFHH_ABANNPIHCMH => 17,
-            CmdTrainPartyType::CLBMGDANFHH_DKCNBCLILBF => 18,
-            CmdTrainPartyType::CLBMGDANFHH_MANBBBNLLON => 19,
-            CmdTrainPartyType::CLBMGDANFHH_DEEABEHEBAE => 20,
-            CmdTrainPartyType::CLBMGDANFHH_BEADMBHDBCM => 21,
-            CmdTrainPartyType::CLBMGDANFHH_JNFLAGDMBAN => 22,
-            CmdTrainPartyType::CLBMGDANFHH_OIJGNELKADL => 23,
-            CmdTrainPartyType::CLBMGDANFHH_BJAFGKKAHJO => 24,
-            CmdTrainPartyType::CLBMGDANFHH_FBFAEDPKICP => 25,
-            CmdTrainPartyType::CLBMGDANFHH_IDOCJFAAAHO => 26,
-            CmdTrainPartyType::CLBMGDANFHH_JCIAFGEJGOB => 27,
-            CmdTrainPartyType::CLBMGDANFHH_MFBACAKGAOD => 28,
-            CmdTrainPartyType::CLBMGDANFHH_LNJBLFDPECH => 29,
-            CmdTrainPartyType::CLBMGDANFHH_OADHCKDAJHC => 30,
+            CmdTrainPartyType::CmdTrainPartyType_MNFEPONEDDJ => 0,
+            CmdTrainPartyType::CmdTrainPartyType_ODKPCAMOIHJ => 1,
+            CmdTrainPartyType::CmdTrainPartyType_NMLJDLHJBOG => 2,
+            CmdTrainPartyType::CmdTrainPartyType_JBNCIIGGKDE => 3,
+            CmdTrainPartyType::CmdTrainPartyType_AHKFFLPEICH => 4,
+            CmdTrainPartyType::CmdTrainPartyType_LHBPIOBHKNP => 5,
+            CmdTrainPartyType::CmdTrainPartyType_NCJKIFDPNAC => 6,
+            CmdTrainPartyType::CmdTrainPartyType_HHPDKLJMCGI => 7,
+            CmdTrainPartyType::CmdTrainPartyType_FOKBDKDEHLC => 8,
+            CmdTrainPartyType::CmdTrainPartyType_NMNNCIEJBKA => 9,
+            CmdTrainPartyType::CmdTrainPartyType_MEKMCELAHMP => 10,
+            CmdTrainPartyType::CmdTrainPartyType_LMMEFCPKMMK => 11,
+            CmdTrainPartyType::CmdTrainPartyType_JKNAOLCKDMA => 12,
+            CmdTrainPartyType::CmdTrainPartyType_DDBOABOKGFK => 13,
+            CmdTrainPartyType::CmdTrainPartyType_IFLBMKCEEGA => 14,
+            CmdTrainPartyType::CmdTrainPartyType_KHONAPCJCDL => 15,
+            CmdTrainPartyType::CmdTrainPartyType_PFIEAOLOFLL => 16,
+            CmdTrainPartyType::CmdTrainPartyType_GLIBFAFDBND => 17,
+            CmdTrainPartyType::CmdTrainPartyType_JLNKIPEILND => 18,
+            CmdTrainPartyType::CmdTrainPartyType_PAJFBFCBGNO => 19,
+            CmdTrainPartyType::CmdTrainPartyType_PEIAJHEOELH => 20,
+            CmdTrainPartyType::CmdTrainPartyType_DIBMJMLKFCD => 21,
+            CmdTrainPartyType::CmdTrainPartyType_PCFDJNDOLBF => 22,
+            CmdTrainPartyType::CmdTrainPartyType_BFFMONHMAEH => 23,
+            CmdTrainPartyType::CmdTrainPartyType_GPHCMKFPIKK => 24,
+            CmdTrainPartyType::CmdTrainPartyType_DJJKLHHGGPJ => 25,
+            CmdTrainPartyType::CmdTrainPartyType_KDNOGIMAPID => 26,
+            CmdTrainPartyType::CmdTrainPartyType_DOIAILBBLIC => 27,
+            CmdTrainPartyType::CmdTrainPartyType_PPCMMPEEEDF => 28,
+            CmdTrainPartyType::CmdTrainPartyType_CEHMKDJBCJP => 29,
+            CmdTrainPartyType::CmdTrainPartyType_JBJOLHDFHGE => 30,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -253,7 +253,7 @@ impl ::protobuf::EnumFull for CmdTrainPartyType {
 
 impl ::std::default::Default for CmdTrainPartyType {
     fn default() -> Self {
-        CmdTrainPartyType::CLBMGDANFHH_GKJBAODJMJG
+        CmdTrainPartyType::CmdTrainPartyType_MNFEPONEDDJ
     }
 }
 
@@ -264,27 +264,29 @@ impl CmdTrainPartyType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdTrainPartyType.proto*\xb4\x07\n\x11CmdTrainPartyType\x12\x1b\n\
-    \x17CLBMGDANFHH_GKJBAODJMJG\x10\0\x12\x1c\n\x17CLBMGDANFHH_EEGLDHODCAN\
-    \x10\x9d?\x12\x1c\n\x17CLBMGDANFHH_KMKBNMBJNPK\x10\x8f?\x12\x1c\n\x17CLB\
-    MGDANFHH_MCFDCKMENGI\x10\x8e?\x12\x1c\n\x17CLBMGDANFHH_MCJLIPBLIHD\x10\
-    \xcd>\x12\x1c\n\x17CLBMGDANFHH_PNPNAFHOODB\x10\xe5>\x12\x1c\n\x17CLBMGDA\
-    NFHH_LHBGHIOBBJJ\x10\xa0?\x12\x1c\n\x17CLBMGDANFHH_OPJGFAFEEFK\x10\xf9>\
-    \x12\x1c\n\x17CLBMGDANFHH_GKPNBHLDPBP\x10\x96?\x12\x1c\n\x17CLBMGDANFHH_\
-    IEKAJOPBCPB\x10\x9f?\x12\x1c\n\x17CLBMGDANFHH_DNGKGKAKOKI\x10\xe6>\x12\
-    \x1c\n\x17CLBMGDANFHH_CGNACPMNHEG\x10\xef>\x12\x1c\n\x17CLBMGDANFHH_EOJE\
-    HGOENMN\x10\x8b?\x12\x1c\n\x17CLBMGDANFHH_NCIJLCMEILD\x10\xc8>\x12\x1c\n\
-    \x17CLBMGDANFHH_HAHMKAHIKPN\x10\xea>\x12\x1c\n\x17CLBMGDANFHH_GHHABDLALJ\
-    D\x10\xf4>\x12\x1c\n\x17CLBMGDANFHH_ALIDGGENAJH\x10\x8c?\x12\x1c\n\x17CL\
-    BMGDANFHH_ABANNPIHCMH\x10\xd0>\x12\x1c\n\x17CLBMGDANFHH_DKCNBCLILBF\x10\
-    \xda>\x12\x1c\n\x17CLBMGDANFHH_MANBBBNLLON\x10\x82?\x12\x1c\n\x17CLBMGDA\
-    NFHH_DEEABEHEBAE\x10\x85?\x12\x1c\n\x17CLBMGDANFHH_BEADMBHDBCM\x10\x93?\
-    \x12\x1c\n\x17CLBMGDANFHH_JNFLAGDMBAN\x10\xf2>\x12\x1c\n\x17CLBMGDANFHH_\
-    OIJGNELKADL\x10\xf7>\x12\x1c\n\x17CLBMGDANFHH_BJAFGKKAHJO\x10\xcb>\x12\
-    \x1c\n\x17CLBMGDANFHH_FBFAEDPKICP\x10\xa3?\x12\x1c\n\x17CLBMGDANFHH_IDOC\
-    JFAAAHO\x10\xc9>\x12\x1c\n\x17CLBMGDANFHH_JCIAFGEJGOB\x10\x99?\x12\x1c\n\
-    \x17CLBMGDANFHH_MFBACAKGAOD\x10\xdc>\x12\x1c\n\x17CLBMGDANFHH_LNJBLFDPEC\
-    H\x10\xf8>\x12\x1c\n\x17CLBMGDANFHH_OADHCKDAJHC\x10\xed>b\x06proto3\
+    \n\x17CmdTrainPartyType.proto*\xee\x08\n\x11CmdTrainPartyType\x12!\n\x1d\
+    CmdTrainPartyType_MNFEPONEDDJ\x10\0\x12\"\n\x1dCmdTrainPartyType_ODKPCAM\
+    OIHJ\x10\xed>\x12\"\n\x1dCmdTrainPartyType_NMLJDLHJBOG\x10\xd6>\x12\"\n\
+    \x1dCmdTrainPartyType_JBNCIIGGKDE\x10\xfe>\x12\"\n\x1dCmdTrainPartyType_\
+    AHKFFLPEICH\x10\xa0?\x12\"\n\x1dCmdTrainPartyType_LHBPIOBHKNP\x10\xc3>\
+    \x12\"\n\x1dCmdTrainPartyType_NCJKIFDPNAC\x10\xc9>\x12\"\n\x1dCmdTrainPa\
+    rtyType_HHPDKLJMCGI\x10\x9a?\x12\"\n\x1dCmdTrainPartyType_FOKBDKDEHLC\
+    \x10\x93?\x12\"\n\x1dCmdTrainPartyType_NMNNCIEJBKA\x10\xc4>\x12\"\n\x1dC\
+    mdTrainPartyType_MEKMCELAHMP\x10\x84?\x12\"\n\x1dCmdTrainPartyType_LMMEF\
+    CPKMMK\x10\xc8>\x12\"\n\x1dCmdTrainPartyType_JKNAOLCKDMA\x10\xc2>\x12\"\
+    \n\x1dCmdTrainPartyType_DDBOABOKGFK\x10\xd1>\x12\"\n\x1dCmdTrainPartyTyp\
+    e_IFLBMKCEEGA\x10\x9b?\x12\"\n\x1dCmdTrainPartyType_KHONAPCJCDL\x10\xf9>\
+    \x12\"\n\x1dCmdTrainPartyType_PFIEAOLOFLL\x10\xeb>\x12\"\n\x1dCmdTrainPa\
+    rtyType_GLIBFAFDBND\x10\x96?\x12\"\n\x1dCmdTrainPartyType_JLNKIPEILND\
+    \x10\x85?\x12\"\n\x1dCmdTrainPartyType_PAJFBFCBGNO\x10\xf8>\x12\"\n\x1dC\
+    mdTrainPartyType_PEIAJHEOELH\x10\xf0>\x12\"\n\x1dCmdTrainPartyType_DIBMJ\
+    MLKFCD\x10\xe5>\x12\"\n\x1dCmdTrainPartyType_PCFDJNDOLBF\x10\x98?\x12\"\
+    \n\x1dCmdTrainPartyType_BFFMONHMAEH\x10\x94?\x12\"\n\x1dCmdTrainPartyTyp\
+    e_GPHCMKFPIKK\x10\xe3>\x12\"\n\x1dCmdTrainPartyType_DJJKLHHGGPJ\x10\x91?\
+    \x12\"\n\x1dCmdTrainPartyType_KDNOGIMAPID\x10\xee>\x12\"\n\x1dCmdTrainPa\
+    rtyType_DOIAILBBLIC\x10\xd3>\x12\"\n\x1dCmdTrainPartyType_PPCMMPEEEDF\
+    \x10\xd7>\x12\"\n\x1dCmdTrainPartyType_CEHMKDJBCJP\x10\xef>\x12\"\n\x1dC\
+    mdTrainPartyType_JBJOLHDFHGE\x10\xd8>b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

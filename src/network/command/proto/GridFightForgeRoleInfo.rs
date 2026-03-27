@@ -30,8 +30,8 @@ pub struct GridFightForgeRoleInfo {
     // message fields
     // @@protoc_insertion_point(field:GridFightForgeRoleInfo.role_id)
     pub role_id: u32,
-    // @@protoc_insertion_point(field:GridFightForgeRoleInfo.ONMGEJPGMEE)
-    pub ONMGEJPGMEE: u32,
+    // @@protoc_insertion_point(field:GridFightForgeRoleInfo.IMFCDDBAILA)
+    pub IMFCDDBAILA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightForgeRoleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GridFightForgeRoleInfo {
             |m: &mut GridFightForgeRoleInfo| { &mut m.role_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONMGEJPGMEE",
-            |m: &GridFightForgeRoleInfo| { &m.ONMGEJPGMEE },
-            |m: &mut GridFightForgeRoleInfo| { &mut m.ONMGEJPGMEE },
+            "IMFCDDBAILA",
+            |m: &GridFightForgeRoleInfo| { &m.IMFCDDBAILA },
+            |m: &mut GridFightForgeRoleInfo| { &mut m.IMFCDDBAILA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightForgeRoleInfo>(
             "GridFightForgeRoleInfo",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for GridFightForgeRoleInfo {
                 64 => {
                     self.role_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.ONMGEJPGMEE = is.read_uint32()?;
+                48 => {
+                    self.IMFCDDBAILA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for GridFightForgeRoleInfo {
         if self.role_id != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.role_id);
         }
-        if self.ONMGEJPGMEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.ONMGEJPGMEE);
+        if self.IMFCDDBAILA != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.IMFCDDBAILA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,8 +112,8 @@ impl ::protobuf::Message for GridFightForgeRoleInfo {
         if self.role_id != 0 {
             os.write_uint32(8, self.role_id)?;
         }
-        if self.ONMGEJPGMEE != 0 {
-            os.write_uint32(11, self.ONMGEJPGMEE)?;
+        if self.IMFCDDBAILA != 0 {
+            os.write_uint32(6, self.IMFCDDBAILA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GridFightForgeRoleInfo {
 
     fn clear(&mut self) {
         self.role_id = 0;
-        self.ONMGEJPGMEE = 0;
+        self.IMFCDDBAILA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightForgeRoleInfo {
         static instance: GridFightForgeRoleInfo = GridFightForgeRoleInfo {
             role_id: 0,
-            ONMGEJPGMEE: 0,
+            IMFCDDBAILA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightForgeRoleInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGridFightForgeRoleInfo.proto\"S\n\x16GridFightForgeRoleInfo\x12\
-    \x17\n\x07role_id\x18\x08\x20\x01(\rR\x06roleId\x12\x20\n\x0bONMGEJPGMEE\
-    \x18\x0b\x20\x01(\rR\x0bONMGEJPGMEEb\x06proto3\
+    \x17\n\x07role_id\x18\x08\x20\x01(\rR\x06roleId\x12\x20\n\x0bIMFCDDBAILA\
+    \x18\x06\x20\x01(\rR\x0bIMFCDDBAILAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

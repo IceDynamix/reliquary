@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeRogueAeonLevelRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeRogueAeonLevelRewardCsReq.LOPGFCFCAGE)
-    pub LOPGFCFCAGE: u32,
+    // @@protoc_insertion_point(field:TakeRogueAeonLevelRewardCsReq.ENPIAPKLKNL)
+    pub ENPIAPKLKNL: u32,
     // @@protoc_insertion_point(field:TakeRogueAeonLevelRewardCsReq.level)
     pub level: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TakeRogueAeonLevelRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOPGFCFCAGE",
-            |m: &TakeRogueAeonLevelRewardCsReq| { &m.LOPGFCFCAGE },
-            |m: &mut TakeRogueAeonLevelRewardCsReq| { &mut m.LOPGFCFCAGE },
+            "ENPIAPKLKNL",
+            |m: &TakeRogueAeonLevelRewardCsReq| { &m.ENPIAPKLKNL },
+            |m: &mut TakeRogueAeonLevelRewardCsReq| { &mut m.ENPIAPKLKNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for TakeRogueAeonLevelRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.LOPGFCFCAGE = is.read_uint32()?;
+                120 => {
+                    self.ENPIAPKLKNL = is.read_uint32()?;
                 },
-                88 => {
+                72 => {
                     self.level = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TakeRogueAeonLevelRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LOPGFCFCAGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LOPGFCFCAGE);
+        if self.ENPIAPKLKNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.ENPIAPKLKNL);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.level);
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TakeRogueAeonLevelRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LOPGFCFCAGE != 0 {
-            os.write_uint32(12, self.LOPGFCFCAGE)?;
+        if self.ENPIAPKLKNL != 0 {
+            os.write_uint32(15, self.ENPIAPKLKNL)?;
         }
         if self.level != 0 {
-            os.write_uint32(11, self.level)?;
+            os.write_uint32(9, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for TakeRogueAeonLevelRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.LOPGFCFCAGE = 0;
+        self.ENPIAPKLKNL = 0;
         self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeRogueAeonLevelRewardCsReq {
         static instance: TakeRogueAeonLevelRewardCsReq = TakeRogueAeonLevelRewardCsReq {
-            LOPGFCFCAGE: 0,
+            ENPIAPKLKNL: 0,
             level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TakeRogueAeonLevelRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#TakeRogueAeonLevelRewardCsReq.proto\"W\n\x1dTakeRogueAeonLevelRewardC\
-    sReq\x12\x20\n\x0bLOPGFCFCAGE\x18\x0c\x20\x01(\rR\x0bLOPGFCFCAGE\x12\x14\
-    \n\x05level\x18\x0b\x20\x01(\rR\x05levelb\x06proto3\
+    sReq\x12\x20\n\x0bENPIAPKLKNL\x18\x0f\x20\x01(\rR\x0bENPIAPKLKNL\x12\x14\
+    \n\x05level\x18\t\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

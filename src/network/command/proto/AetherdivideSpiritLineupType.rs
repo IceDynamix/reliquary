@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:AetherdivideSpiritLineupType)
 pub enum AetherdivideSpiritLineupType {
-    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AetherdivideSpiritLineupType_LCAKAGMOCPM)
-    AetherdivideSpiritLineupType_LCAKAGMOCPM = 0,
-    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AetherdivideSpiritLineupType_MOJIKILBEPM)
-    AetherdivideSpiritLineupType_MOJIKILBEPM = 1,
-    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AetherdivideSpiritLineupType_HNNEKACACHN)
-    AetherdivideSpiritLineupType_HNNEKACACHN = 2,
+    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AetherdivideSpiritLineupType_NHAFODMNPFL)
+    AetherdivideSpiritLineupType_NHAFODMNPFL = 0,
+    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AetherdivideSpiritLineupType_GEPHHAEDFKC)
+    AetherdivideSpiritLineupType_GEPHHAEDFKC = 1,
+    // @@protoc_insertion_point(enum_value:AetherdivideSpiritLineupType.AetherdivideSpiritLineupType_NICOIJKNLIC)
+    AetherdivideSpiritLineupType_NICOIJKNLIC = 2,
 }
 
 impl ::protobuf::Enum for AetherdivideSpiritLineupType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for AetherdivideSpiritLineupType {
 
     fn from_i32(value: i32) -> ::std::option::Option<AetherdivideSpiritLineupType> {
         match value {
-            0 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM),
-            1 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_MOJIKILBEPM),
-            2 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_HNNEKACACHN),
+            0 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_NHAFODMNPFL),
+            1 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_GEPHHAEDFKC),
+            2 => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_NICOIJKNLIC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<AetherdivideSpiritLineupType> {
         match str {
-            "AetherdivideSpiritLineupType_LCAKAGMOCPM" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM),
-            "AetherdivideSpiritLineupType_MOJIKILBEPM" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_MOJIKILBEPM),
-            "AetherdivideSpiritLineupType_HNNEKACACHN" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_HNNEKACACHN),
+            "AetherdivideSpiritLineupType_NHAFODMNPFL" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_NHAFODMNPFL),
+            "AetherdivideSpiritLineupType_GEPHHAEDFKC" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_GEPHHAEDFKC),
+            "AetherdivideSpiritLineupType_NICOIJKNLIC" => ::std::option::Option::Some(AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_NICOIJKNLIC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [AetherdivideSpiritLineupType] = &[
-        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM,
-        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_MOJIKILBEPM,
-        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_HNNEKACACHN,
+        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_NHAFODMNPFL,
+        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_GEPHHAEDFKC,
+        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_NICOIJKNLIC,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for AetherdivideSpiritLineupType {
 
 impl ::std::default::Default for AetherdivideSpiritLineupType {
     fn default() -> Self {
-        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_LCAKAGMOCPM
+        AetherdivideSpiritLineupType::AetherdivideSpiritLineupType_NHAFODMNPFL
     }
 }
 
@@ -93,9 +93,9 @@ impl AetherdivideSpiritLineupType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"AetherdivideSpiritLineupType.proto*\xa8\x01\n\x1cAetherdivideSpiritL\
-    ineupType\x12,\n(AetherdivideSpiritLineupType_LCAKAGMOCPM\x10\0\x12,\n(A\
-    etherdivideSpiritLineupType_MOJIKILBEPM\x10\x01\x12,\n(AetherdivideSpiri\
-    tLineupType_HNNEKACACHN\x10\x02b\x06proto3\
+    ineupType\x12,\n(AetherdivideSpiritLineupType_NHAFODMNPFL\x10\0\x12,\n(A\
+    etherdivideSpiritLineupType_GEPHHAEDFKC\x10\x01\x12,\n(AetherdivideSpiri\
+    tLineupType_NICOIJKNLIC\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

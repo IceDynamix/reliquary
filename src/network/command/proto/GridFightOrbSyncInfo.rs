@@ -79,10 +79,10 @@ impl ::protobuf::Message for GridFightOrbSyncInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                72 => {
                     self.orb_item_id = is.read_uint32()?;
                 },
-                24 => {
+                16 => {
                     self.unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for GridFightOrbSyncInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.orb_item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.orb_item_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.orb_item_id);
         }
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for GridFightOrbSyncInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.orb_item_id != 0 {
-            os.write_uint32(4, self.orb_item_id)?;
+            os.write_uint32(9, self.orb_item_id)?;
         }
         if self.unique_id != 0 {
-            os.write_uint32(3, self.unique_id)?;
+            os.write_uint32(2, self.unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightOrbSyncInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aGridFightOrbSyncInfo.proto\"S\n\x14GridFightOrbSyncInfo\x12\x1e\n\
-    \x0borb_item_id\x18\x04\x20\x01(\rR\torbItemId\x12\x1b\n\tunique_id\x18\
-    \x03\x20\x01(\rR\x08uniqueIdb\x06proto3\
+    \x0borb_item_id\x18\t\x20\x01(\rR\torbItemId\x12\x1b\n\tunique_id\x18\
+    \x02\x20\x01(\rR\x08uniqueIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

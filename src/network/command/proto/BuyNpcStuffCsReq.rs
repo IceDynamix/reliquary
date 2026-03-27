@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BuyNpcStuffCsReq {
     // message fields
-    // @@protoc_insertion_point(field:BuyNpcStuffCsReq.FHFIBBCHKJO)
-    pub FHFIBBCHKJO: u32,
+    // @@protoc_insertion_point(field:BuyNpcStuffCsReq.CBJMDBKKIIL)
+    pub CBJMDBKKIIL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyNpcStuffCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl BuyNpcStuffCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHFIBBCHKJO",
-            |m: &BuyNpcStuffCsReq| { &m.FHFIBBCHKJO },
-            |m: &mut BuyNpcStuffCsReq| { &mut m.FHFIBBCHKJO },
+            "CBJMDBKKIIL",
+            |m: &BuyNpcStuffCsReq| { &m.CBJMDBKKIIL },
+            |m: &mut BuyNpcStuffCsReq| { &mut m.CBJMDBKKIIL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyNpcStuffCsReq>(
             "BuyNpcStuffCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for BuyNpcStuffCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.FHFIBBCHKJO = is.read_uint32()?;
+                104 => {
+                    self.CBJMDBKKIIL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for BuyNpcStuffCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FHFIBBCHKJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.FHFIBBCHKJO);
+        if self.CBJMDBKKIIL != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.CBJMDBKKIIL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for BuyNpcStuffCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FHFIBBCHKJO != 0 {
-            os.write_uint32(5, self.FHFIBBCHKJO)?;
+        if self.CBJMDBKKIIL != 0 {
+            os.write_uint32(13, self.CBJMDBKKIIL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for BuyNpcStuffCsReq {
     }
 
     fn clear(&mut self) {
-        self.FHFIBBCHKJO = 0;
+        self.CBJMDBKKIIL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyNpcStuffCsReq {
         static instance: BuyNpcStuffCsReq = BuyNpcStuffCsReq {
-            FHFIBBCHKJO: 0,
+            CBJMDBKKIIL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for BuyNpcStuffCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16BuyNpcStuffCsReq.proto\"4\n\x10BuyNpcStuffCsReq\x12\x20\n\x0bFHFIB\
-    BCHKJO\x18\x05\x20\x01(\rR\x0bFHFIBBCHKJOb\x06proto3\
+    \n\x16BuyNpcStuffCsReq.proto\"4\n\x10BuyNpcStuffCsReq\x12\x20\n\x0bCBJMD\
+    BKKIIL\x18\r\x20\x01(\rR\x0bCBJMDBKKIILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooCatUpdateNotify {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooCatUpdateNotify.CFLMGCMLEJD)
-    pub CFLMGCMLEJD: ::std::vec::Vec<super::IJBJLJIMIBI::IJBJLJIMIBI>,
-    // @@protoc_insertion_point(field:SpaceZooCatUpdateNotify.JGNKBGLOEGM)
-    pub JGNKBGLOEGM: bool,
-    // @@protoc_insertion_point(field:SpaceZooCatUpdateNotify.MNOLJLIJCBC)
-    pub MNOLJLIJCBC: bool,
+    // @@protoc_insertion_point(field:SpaceZooCatUpdateNotify.JKFLJJFKOPP)
+    pub JKFLJJFKOPP: ::std::vec::Vec<super::ADGPEMEPAKJ::ADGPEMEPAKJ>,
+    // @@protoc_insertion_point(field:SpaceZooCatUpdateNotify.GLDGFMLBMGP)
+    pub GLDGFMLBMGP: bool,
+    // @@protoc_insertion_point(field:SpaceZooCatUpdateNotify.LADCGCCFDJA)
+    pub LADCGCCFDJA: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooCatUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl SpaceZooCatUpdateNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CFLMGCMLEJD",
-            |m: &SpaceZooCatUpdateNotify| { &m.CFLMGCMLEJD },
-            |m: &mut SpaceZooCatUpdateNotify| { &mut m.CFLMGCMLEJD },
+            "JKFLJJFKOPP",
+            |m: &SpaceZooCatUpdateNotify| { &m.JKFLJJFKOPP },
+            |m: &mut SpaceZooCatUpdateNotify| { &mut m.JKFLJJFKOPP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JGNKBGLOEGM",
-            |m: &SpaceZooCatUpdateNotify| { &m.JGNKBGLOEGM },
-            |m: &mut SpaceZooCatUpdateNotify| { &mut m.JGNKBGLOEGM },
+            "GLDGFMLBMGP",
+            |m: &SpaceZooCatUpdateNotify| { &m.GLDGFMLBMGP },
+            |m: &mut SpaceZooCatUpdateNotify| { &mut m.GLDGFMLBMGP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNOLJLIJCBC",
-            |m: &SpaceZooCatUpdateNotify| { &m.MNOLJLIJCBC },
-            |m: &mut SpaceZooCatUpdateNotify| { &mut m.MNOLJLIJCBC },
+            "LADCGCCFDJA",
+            |m: &SpaceZooCatUpdateNotify| { &m.LADCGCCFDJA },
+            |m: &mut SpaceZooCatUpdateNotify| { &mut m.LADCGCCFDJA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooCatUpdateNotify>(
             "SpaceZooCatUpdateNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SpaceZooCatUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.CFLMGCMLEJD.push(is.read_message()?);
+                82 => {
+                    self.JKFLJJFKOPP.push(is.read_message()?);
                 },
-                32 => {
-                    self.JGNKBGLOEGM = is.read_bool()?;
+                8 => {
+                    self.GLDGFMLBMGP = is.read_bool()?;
                 },
-                120 => {
-                    self.MNOLJLIJCBC = is.read_bool()?;
+                24 => {
+                    self.LADCGCCFDJA = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SpaceZooCatUpdateNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CFLMGCMLEJD {
+        for value in &self.JKFLJJFKOPP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.JGNKBGLOEGM != false {
+        if self.GLDGFMLBMGP != false {
             my_size += 1 + 1;
         }
-        if self.MNOLJLIJCBC != false {
+        if self.LADCGCCFDJA != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SpaceZooCatUpdateNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CFLMGCMLEJD {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.JKFLJJFKOPP {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.JGNKBGLOEGM != false {
-            os.write_bool(4, self.JGNKBGLOEGM)?;
+        if self.GLDGFMLBMGP != false {
+            os.write_bool(1, self.GLDGFMLBMGP)?;
         }
-        if self.MNOLJLIJCBC != false {
-            os.write_bool(15, self.MNOLJLIJCBC)?;
+        if self.LADCGCCFDJA != false {
+            os.write_bool(3, self.LADCGCCFDJA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SpaceZooCatUpdateNotify {
     }
 
     fn clear(&mut self) {
-        self.CFLMGCMLEJD.clear();
-        self.JGNKBGLOEGM = false;
-        self.MNOLJLIJCBC = false;
+        self.JKFLJJFKOPP.clear();
+        self.GLDGFMLBMGP = false;
+        self.LADCGCCFDJA = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooCatUpdateNotify {
         static instance: SpaceZooCatUpdateNotify = SpaceZooCatUpdateNotify {
-            CFLMGCMLEJD: ::std::vec::Vec::new(),
-            JGNKBGLOEGM: false,
-            MNOLJLIJCBC: false,
+            JKFLJJFKOPP: ::std::vec::Vec::new(),
+            GLDGFMLBMGP: false,
+            LADCGCCFDJA: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooCatUpdateNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSpaceZooCatUpdateNotify.proto\x1a\x11IJBJLJIMIBI.proto\"\x8d\x01\n\
-    \x17SpaceZooCatUpdateNotify\x12.\n\x0bCFLMGCMLEJD\x18\x03\x20\x03(\x0b2\
-    \x0c.IJBJLJIMIBIR\x0bCFLMGCMLEJD\x12\x20\n\x0bJGNKBGLOEGM\x18\x04\x20\
-    \x01(\x08R\x0bJGNKBGLOEGM\x12\x20\n\x0bMNOLJLIJCBC\x18\x0f\x20\x01(\x08R\
-    \x0bMNOLJLIJCBCb\x06proto3\
+    \n\x1dSpaceZooCatUpdateNotify.proto\x1a\x11ADGPEMEPAKJ.proto\"\x8d\x01\n\
+    \x17SpaceZooCatUpdateNotify\x12.\n\x0bJKFLJJFKOPP\x18\n\x20\x03(\x0b2\
+    \x0c.ADGPEMEPAKJR\x0bJKFLJJFKOPP\x12\x20\n\x0bGLDGFMLBMGP\x18\x01\x20\
+    \x01(\x08R\x0bGLDGFMLBMGP\x12\x20\n\x0bLADCGCCFDJA\x18\x03\x20\x01(\x08R\
+    \x0bLADCGCCFDJAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IJBJLJIMIBI::file_descriptor().clone());
+            deps.push(super::ADGPEMEPAKJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SpaceZooCatUpdateNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

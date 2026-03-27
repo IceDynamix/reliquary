@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneMonster {
     // message fields
-    // @@protoc_insertion_point(field:SceneMonster.cur_hp)
-    pub cur_hp: u32,
-    // @@protoc_insertion_point(field:SceneMonster.extra_info)
-    pub extra_info: ::protobuf::MessageField<super::PNMNAMPNODG::PNMNAMPNODG>,
     // @@protoc_insertion_point(field:SceneMonster.max_hp)
     pub max_hp: u32,
+    // @@protoc_insertion_point(field:SceneMonster.extra_info)
+    pub extra_info: ::protobuf::MessageField<super::HDDJNDJADAC::HDDJNDJADAC>,
+    // @@protoc_insertion_point(field:SceneMonster.cur_hp)
+    pub cur_hp: u32,
     // @@protoc_insertion_point(field:SceneMonster.monster_id)
     pub monster_id: u32,
     // special fields
@@ -56,19 +56,19 @@ impl SceneMonster {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_hp",
-            |m: &SceneMonster| { &m.cur_hp },
-            |m: &mut SceneMonster| { &mut m.cur_hp },
+            "max_hp",
+            |m: &SceneMonster| { &m.max_hp },
+            |m: &mut SceneMonster| { &mut m.max_hp },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNMNAMPNODG::PNMNAMPNODG>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HDDJNDJADAC::HDDJNDJADAC>(
             "extra_info",
             |m: &SceneMonster| { &m.extra_info },
             |m: &mut SceneMonster| { &mut m.extra_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_hp",
-            |m: &SceneMonster| { &m.max_hp },
-            |m: &mut SceneMonster| { &mut m.max_hp },
+            "cur_hp",
+            |m: &SceneMonster| { &m.cur_hp },
+            |m: &mut SceneMonster| { &mut m.cur_hp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "monster_id",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for SceneMonster {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                96 => {
+                    self.max_hp = is.read_uint32()?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
+                },
                 64 => {
                     self.cur_hp = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.extra_info)?;
-                },
-                120 => {
-                    self.max_hp = is.read_uint32()?;
-                },
-                24 => {
+                32 => {
                     self.monster_id = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for SceneMonster {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.cur_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.cur_hp);
+        if self.max_hp != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.max_hp);
         }
         if let Some(v) = self.extra_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.max_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.max_hp);
+        if self.cur_hp != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.cur_hp);
         }
         if self.monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.monster_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.monster_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for SceneMonster {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.max_hp != 0 {
+            os.write_uint32(12, self.max_hp)?;
+        }
+        if let Some(v) = self.extra_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
         if self.cur_hp != 0 {
             os.write_uint32(8, self.cur_hp)?;
         }
-        if let Some(v) = self.extra_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
-        if self.max_hp != 0 {
-            os.write_uint32(15, self.max_hp)?;
-        }
         if self.monster_id != 0 {
-            os.write_uint32(3, self.monster_id)?;
+            os.write_uint32(4, self.monster_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for SceneMonster {
     }
 
     fn clear(&mut self) {
-        self.cur_hp = 0;
-        self.extra_info.clear();
         self.max_hp = 0;
+        self.extra_info.clear();
+        self.cur_hp = 0;
         self.monster_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneMonster {
         static instance: SceneMonster = SceneMonster {
-            cur_hp: 0,
-            extra_info: ::protobuf::MessageField::none(),
             max_hp: 0,
+            extra_info: ::protobuf::MessageField::none(),
+            cur_hp: 0,
             monster_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for SceneMonster {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12SceneMonster.proto\x1a\x11PNMNAMPNODG.proto\"\x88\x01\n\x0cSceneMo\
-    nster\x12\x15\n\x06cur_hp\x18\x08\x20\x01(\rR\x05curHp\x12+\n\nextra_inf\
-    o\x18\r\x20\x01(\x0b2\x0c.PNMNAMPNODGR\textraInfo\x12\x15\n\x06max_hp\
-    \x18\x0f\x20\x01(\rR\x05maxHp\x12\x1d\n\nmonster_id\x18\x03\x20\x01(\rR\
+    \n\x12SceneMonster.proto\x1a\x11HDDJNDJADAC.proto\"\x88\x01\n\x0cSceneMo\
+    nster\x12\x15\n\x06max_hp\x18\x0c\x20\x01(\rR\x05maxHp\x12+\n\nextra_inf\
+    o\x18\x01\x20\x01(\x0b2\x0c.HDDJNDJADACR\textraInfo\x12\x15\n\x06cur_hp\
+    \x18\x08\x20\x01(\rR\x05curHp\x12\x1d\n\nmonster_id\x18\x04\x20\x01(\rR\
     \tmonsterIdb\x06proto3\
 ";
 
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PNMNAMPNODG::file_descriptor().clone());
+            deps.push(super::HDDJNDJADAC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SceneMonster::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

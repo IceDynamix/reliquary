@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:SwordTrainingDailyPhaseType)
 pub enum SwordTrainingDailyPhaseType {
-    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.EJFGNINOLEO_GKJBAODJMJG)
-    EJFGNINOLEO_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.EJFGNINOLEO_PINCLIAGPMN)
-    EJFGNINOLEO_PINCLIAGPMN = 1,
-    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.EJFGNINOLEO_CGOIBMIIIPC)
-    EJFGNINOLEO_CGOIBMIIIPC = 2,
-    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.EJFGNINOLEO_CPDJFGPJOAE)
-    EJFGNINOLEO_CPDJFGPJOAE = 3,
-    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.EJFGNINOLEO_BOGIJGKKJGD)
-    EJFGNINOLEO_BOGIJGKKJGD = 4,
+    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.SwordTrainingDailyPhaseType_MNFEPONEDDJ)
+    SwordTrainingDailyPhaseType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.SwordTrainingDailyPhaseType_INNHDJPDPIJ)
+    SwordTrainingDailyPhaseType_INNHDJPDPIJ = 1,
+    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.SwordTrainingDailyPhaseType_DEFAFFKKJOP)
+    SwordTrainingDailyPhaseType_DEFAFFKKJOP = 2,
+    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.SwordTrainingDailyPhaseType_AEPPBAPNGPH)
+    SwordTrainingDailyPhaseType_AEPPBAPNGPH = 3,
+    // @@protoc_insertion_point(enum_value:SwordTrainingDailyPhaseType.SwordTrainingDailyPhaseType_EJANCHBLAOL)
+    SwordTrainingDailyPhaseType_EJANCHBLAOL = 4,
 }
 
 impl ::protobuf::Enum for SwordTrainingDailyPhaseType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for SwordTrainingDailyPhaseType {
 
     fn from_i32(value: i32) -> ::std::option::Option<SwordTrainingDailyPhaseType> {
         match value {
-            0 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::EJFGNINOLEO_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::EJFGNINOLEO_PINCLIAGPMN),
-            2 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::EJFGNINOLEO_CGOIBMIIIPC),
-            3 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::EJFGNINOLEO_CPDJFGPJOAE),
-            4 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::EJFGNINOLEO_BOGIJGKKJGD),
+            0 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_INNHDJPDPIJ),
+            2 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_DEFAFFKKJOP),
+            3 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_AEPPBAPNGPH),
+            4 => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_EJANCHBLAOL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<SwordTrainingDailyPhaseType> {
         match str {
-            "EJFGNINOLEO_GKJBAODJMJG" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::EJFGNINOLEO_GKJBAODJMJG),
-            "EJFGNINOLEO_PINCLIAGPMN" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::EJFGNINOLEO_PINCLIAGPMN),
-            "EJFGNINOLEO_CGOIBMIIIPC" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::EJFGNINOLEO_CGOIBMIIIPC),
-            "EJFGNINOLEO_CPDJFGPJOAE" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::EJFGNINOLEO_CPDJFGPJOAE),
-            "EJFGNINOLEO_BOGIJGKKJGD" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::EJFGNINOLEO_BOGIJGKKJGD),
+            "SwordTrainingDailyPhaseType_MNFEPONEDDJ" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_MNFEPONEDDJ),
+            "SwordTrainingDailyPhaseType_INNHDJPDPIJ" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_INNHDJPDPIJ),
+            "SwordTrainingDailyPhaseType_DEFAFFKKJOP" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_DEFAFFKKJOP),
+            "SwordTrainingDailyPhaseType_AEPPBAPNGPH" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_AEPPBAPNGPH),
+            "SwordTrainingDailyPhaseType_EJANCHBLAOL" => ::std::option::Option::Some(SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_EJANCHBLAOL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [SwordTrainingDailyPhaseType] = &[
-        SwordTrainingDailyPhaseType::EJFGNINOLEO_GKJBAODJMJG,
-        SwordTrainingDailyPhaseType::EJFGNINOLEO_PINCLIAGPMN,
-        SwordTrainingDailyPhaseType::EJFGNINOLEO_CGOIBMIIIPC,
-        SwordTrainingDailyPhaseType::EJFGNINOLEO_CPDJFGPJOAE,
-        SwordTrainingDailyPhaseType::EJFGNINOLEO_BOGIJGKKJGD,
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_MNFEPONEDDJ,
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_INNHDJPDPIJ,
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_DEFAFFKKJOP,
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_AEPPBAPNGPH,
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_EJANCHBLAOL,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for SwordTrainingDailyPhaseType {
 
 impl ::std::default::Default for SwordTrainingDailyPhaseType {
     fn default() -> Self {
-        SwordTrainingDailyPhaseType::EJFGNINOLEO_GKJBAODJMJG
+        SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType_MNFEPONEDDJ
     }
 }
 
@@ -102,11 +102,12 @@ impl SwordTrainingDailyPhaseType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!SwordTrainingDailyPhaseType.proto*\xae\x01\n\x1bSwordTrainingDailyPha\
-    seType\x12\x1b\n\x17EJFGNINOLEO_GKJBAODJMJG\x10\0\x12\x1b\n\x17EJFGNINOL\
-    EO_PINCLIAGPMN\x10\x01\x12\x1b\n\x17EJFGNINOLEO_CGOIBMIIIPC\x10\x02\x12\
-    \x1b\n\x17EJFGNINOLEO_CPDJFGPJOAE\x10\x03\x12\x1b\n\x17EJFGNINOLEO_BOGIJ\
-    GKKJGD\x10\x04b\x06proto3\
+    \n!SwordTrainingDailyPhaseType.proto*\xfe\x01\n\x1bSwordTrainingDailyPha\
+    seType\x12+\n'SwordTrainingDailyPhaseType_MNFEPONEDDJ\x10\0\x12+\n'Sword\
+    TrainingDailyPhaseType_INNHDJPDPIJ\x10\x01\x12+\n'SwordTrainingDailyPhas\
+    eType_DEFAFFKKJOP\x10\x02\x12+\n'SwordTrainingDailyPhaseType_AEPPBAPNGPH\
+    \x10\x03\x12+\n'SwordTrainingDailyPhaseType_EJANCHBLAOL\x10\x04b\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

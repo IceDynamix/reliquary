@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightPortalBuffActionInfo {
     // message fields
+    // @@protoc_insertion_point(field:GridFightPortalBuffActionInfo.IFDCNMPALMM)
+    pub IFDCNMPALMM: u32,
+    // @@protoc_insertion_point(field:GridFightPortalBuffActionInfo.JKIDMHKBLBD)
+    pub JKIDMHKBLBD: u32,
+    // @@protoc_insertion_point(field:GridFightPortalBuffActionInfo.CBFPCHKNEAH)
+    pub CBFPCHKNEAH: u32,
     // @@protoc_insertion_point(field:GridFightPortalBuffActionInfo.grid_fight_portal_buff_list)
     pub grid_fight_portal_buff_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GridFightPortalBuffActionInfo.GLABGGFIEAH)
-    pub GLABGGFIEAH: u32,
-    // @@protoc_insertion_point(field:GridFightPortalBuffActionInfo.OMDAODMFDMK)
-    pub OMDAODMFDMK: u32,
-    // @@protoc_insertion_point(field:GridFightPortalBuffActionInfo.FLBPJDMEJEE)
-    pub FLBPJDMEJEE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightPortalBuffActionInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl GridFightPortalBuffActionInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFDCNMPALMM",
+            |m: &GridFightPortalBuffActionInfo| { &m.IFDCNMPALMM },
+            |m: &mut GridFightPortalBuffActionInfo| { &mut m.IFDCNMPALMM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JKIDMHKBLBD",
+            |m: &GridFightPortalBuffActionInfo| { &m.JKIDMHKBLBD },
+            |m: &mut GridFightPortalBuffActionInfo| { &mut m.JKIDMHKBLBD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CBFPCHKNEAH",
+            |m: &GridFightPortalBuffActionInfo| { &m.CBFPCHKNEAH },
+            |m: &mut GridFightPortalBuffActionInfo| { &mut m.CBFPCHKNEAH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "grid_fight_portal_buff_list",
             |m: &GridFightPortalBuffActionInfo| { &m.grid_fight_portal_buff_list },
             |m: &mut GridFightPortalBuffActionInfo| { &mut m.grid_fight_portal_buff_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLABGGFIEAH",
-            |m: &GridFightPortalBuffActionInfo| { &m.GLABGGFIEAH },
-            |m: &mut GridFightPortalBuffActionInfo| { &mut m.GLABGGFIEAH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OMDAODMFDMK",
-            |m: &GridFightPortalBuffActionInfo| { &m.OMDAODMFDMK },
-            |m: &mut GridFightPortalBuffActionInfo| { &mut m.OMDAODMFDMK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FLBPJDMEJEE",
-            |m: &GridFightPortalBuffActionInfo| { &m.FLBPJDMEJEE },
-            |m: &mut GridFightPortalBuffActionInfo| { &mut m.FLBPJDMEJEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightPortalBuffActionInfo>(
             "GridFightPortalBuffActionInfo",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for GridFightPortalBuffActionInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                104 => {
+                    self.IFDCNMPALMM = is.read_uint32()?;
+                },
+                48 => {
+                    self.JKIDMHKBLBD = is.read_uint32()?;
+                },
+                72 => {
+                    self.CBFPCHKNEAH = is.read_uint32()?;
+                },
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_portal_buff_list)?;
                 },
-                104 => {
+                80 => {
                     self.grid_fight_portal_buff_list.push(is.read_uint32()?);
-                },
-                32 => {
-                    self.GLABGGFIEAH = is.read_uint32()?;
-                },
-                56 => {
-                    self.OMDAODMFDMK = is.read_uint32()?;
-                },
-                24 => {
-                    self.FLBPJDMEJEE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for GridFightPortalBuffActionInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.grid_fight_portal_buff_list);
-        if self.GLABGGFIEAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GLABGGFIEAH);
+        if self.IFDCNMPALMM != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.IFDCNMPALMM);
         }
-        if self.OMDAODMFDMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OMDAODMFDMK);
+        if self.JKIDMHKBLBD != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.JKIDMHKBLBD);
         }
-        if self.FLBPJDMEJEE != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.FLBPJDMEJEE);
+        if self.CBFPCHKNEAH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.CBFPCHKNEAH);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.grid_fight_portal_buff_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.grid_fight_portal_buff_list)?;
-        if self.GLABGGFIEAH != 0 {
-            os.write_uint32(4, self.GLABGGFIEAH)?;
+        if self.IFDCNMPALMM != 0 {
+            os.write_uint32(13, self.IFDCNMPALMM)?;
         }
-        if self.OMDAODMFDMK != 0 {
-            os.write_uint32(7, self.OMDAODMFDMK)?;
+        if self.JKIDMHKBLBD != 0 {
+            os.write_uint32(6, self.JKIDMHKBLBD)?;
         }
-        if self.FLBPJDMEJEE != 0 {
-            os.write_uint32(3, self.FLBPJDMEJEE)?;
+        if self.CBFPCHKNEAH != 0 {
+            os.write_uint32(9, self.CBFPCHKNEAH)?;
         }
+        os.write_repeated_packed_uint32(10, &self.grid_fight_portal_buff_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for GridFightPortalBuffActionInfo {
     }
 
     fn clear(&mut self) {
+        self.IFDCNMPALMM = 0;
+        self.JKIDMHKBLBD = 0;
+        self.CBFPCHKNEAH = 0;
         self.grid_fight_portal_buff_list.clear();
-        self.GLABGGFIEAH = 0;
-        self.OMDAODMFDMK = 0;
-        self.FLBPJDMEJEE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightPortalBuffActionInfo {
         static instance: GridFightPortalBuffActionInfo = GridFightPortalBuffActionInfo {
+            IFDCNMPALMM: 0,
+            JKIDMHKBLBD: 0,
+            CBFPCHKNEAH: 0,
             grid_fight_portal_buff_list: ::std::vec::Vec::new(),
-            GLABGGFIEAH: 0,
-            OMDAODMFDMK: 0,
-            FLBPJDMEJEE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for GridFightPortalBuffActionInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GridFightPortalBuffActionInfo.proto\"\xc3\x01\n\x1dGridFightPortalBuf\
-    fActionInfo\x12<\n\x1bgrid_fight_portal_buff_list\x18\r\x20\x03(\rR\x17g\
-    ridFightPortalBuffList\x12\x20\n\x0bGLABGGFIEAH\x18\x04\x20\x01(\rR\x0bG\
-    LABGGFIEAH\x12\x20\n\x0bOMDAODMFDMK\x18\x07\x20\x01(\rR\x0bOMDAODMFDMK\
-    \x12\x20\n\x0bFLBPJDMEJEE\x18\x03\x20\x01(\rR\x0bFLBPJDMEJEEb\x06proto3\
+    fActionInfo\x12\x20\n\x0bIFDCNMPALMM\x18\r\x20\x01(\rR\x0bIFDCNMPALMM\
+    \x12\x20\n\x0bJKIDMHKBLBD\x18\x06\x20\x01(\rR\x0bJKIDMHKBLBD\x12\x20\n\
+    \x0bCBFPCHKNEAH\x18\t\x20\x01(\rR\x0bCBFPCHKNEAH\x12<\n\x1bgrid_fight_po\
+    rtal_buff_list\x18\n\x20\x03(\rR\x17gridFightPortalBuffListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

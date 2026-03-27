@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightDamageSttInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightDamageSttInfo.ALAFINAJGBO)
-    pub ALAFINAJGBO: ::std::vec::Vec<super::FHLHBDBHCDP::FHLHBDBHCDP>,
-    // @@protoc_insertion_point(field:GridFightDamageSttInfo.HMCEDAOACFG)
-    pub HMCEDAOACFG: ::std::vec::Vec<super::ADMJMAPICPA::ADMJMAPICPA>,
-    // @@protoc_insertion_point(field:GridFightDamageSttInfo.KPNGJKIOGBG)
-    pub KPNGJKIOGBG: ::std::vec::Vec<super::FJANOMHOMCC::FJANOMHOMCC>,
+    // @@protoc_insertion_point(field:GridFightDamageSttInfo.IENJPAMOINO)
+    pub IENJPAMOINO: ::std::vec::Vec<super::LAINFAFHGAM::LAINFAFHGAM>,
+    // @@protoc_insertion_point(field:GridFightDamageSttInfo.LBFOKNALBCN)
+    pub LBFOKNALBCN: ::std::vec::Vec<super::ILGIDCNAPKC::ILGIDCNAPKC>,
+    // @@protoc_insertion_point(field:GridFightDamageSttInfo.GGDIHOHPILG)
+    pub GGDIHOHPILG: ::std::vec::Vec<super::LPBDLJKGOCN::LPBDLJKGOCN>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightDamageSttInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl GridFightDamageSttInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ALAFINAJGBO",
-            |m: &GridFightDamageSttInfo| { &m.ALAFINAJGBO },
-            |m: &mut GridFightDamageSttInfo| { &mut m.ALAFINAJGBO },
+            "IENJPAMOINO",
+            |m: &GridFightDamageSttInfo| { &m.IENJPAMOINO },
+            |m: &mut GridFightDamageSttInfo| { &mut m.IENJPAMOINO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HMCEDAOACFG",
-            |m: &GridFightDamageSttInfo| { &m.HMCEDAOACFG },
-            |m: &mut GridFightDamageSttInfo| { &mut m.HMCEDAOACFG },
+            "LBFOKNALBCN",
+            |m: &GridFightDamageSttInfo| { &m.LBFOKNALBCN },
+            |m: &mut GridFightDamageSttInfo| { &mut m.LBFOKNALBCN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KPNGJKIOGBG",
-            |m: &GridFightDamageSttInfo| { &m.KPNGJKIOGBG },
-            |m: &mut GridFightDamageSttInfo| { &mut m.KPNGJKIOGBG },
+            "GGDIHOHPILG",
+            |m: &GridFightDamageSttInfo| { &m.GGDIHOHPILG },
+            |m: &mut GridFightDamageSttInfo| { &mut m.GGDIHOHPILG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightDamageSttInfo>(
             "GridFightDamageSttInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GridFightDamageSttInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.ALAFINAJGBO.push(is.read_message()?);
+                50 => {
+                    self.IENJPAMOINO.push(is.read_message()?);
                 },
-                114 => {
-                    self.HMCEDAOACFG.push(is.read_message()?);
+                82 => {
+                    self.LBFOKNALBCN.push(is.read_message()?);
                 },
-                74 => {
-                    self.KPNGJKIOGBG.push(is.read_message()?);
+                42 => {
+                    self.GGDIHOHPILG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GridFightDamageSttInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.ALAFINAJGBO {
+        for value in &self.IENJPAMOINO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.HMCEDAOACFG {
+        for value in &self.LBFOKNALBCN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.KPNGJKIOGBG {
+        for value in &self.GGDIHOHPILG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -125,14 +125,14 @@ impl ::protobuf::Message for GridFightDamageSttInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.ALAFINAJGBO {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.IENJPAMOINO {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        for v in &self.HMCEDAOACFG {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        for v in &self.LBFOKNALBCN {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        for v in &self.KPNGJKIOGBG {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.GGDIHOHPILG {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,17 +151,17 @@ impl ::protobuf::Message for GridFightDamageSttInfo {
     }
 
     fn clear(&mut self) {
-        self.ALAFINAJGBO.clear();
-        self.HMCEDAOACFG.clear();
-        self.KPNGJKIOGBG.clear();
+        self.IENJPAMOINO.clear();
+        self.LBFOKNALBCN.clear();
+        self.GGDIHOHPILG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightDamageSttInfo {
         static instance: GridFightDamageSttInfo = GridFightDamageSttInfo {
-            ALAFINAJGBO: ::std::vec::Vec::new(),
-            HMCEDAOACFG: ::std::vec::Vec::new(),
-            KPNGJKIOGBG: ::std::vec::Vec::new(),
+            IENJPAMOINO: ::std::vec::Vec::new(),
+            LBFOKNALBCN: ::std::vec::Vec::new(),
+            GGDIHOHPILG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,12 +186,12 @@ impl ::protobuf::reflect::ProtobufValue for GridFightDamageSttInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cGridFightDamageSttInfo.proto\x1a\x11ADMJMAPICPA.proto\x1a\x11FHLHB\
-    DBHCDP.proto\x1a\x11FJANOMHOMCC.proto\"\xa8\x01\n\x16GridFightDamageSttI\
-    nfo\x12.\n\x0bALAFINAJGBO\x18\x07\x20\x03(\x0b2\x0c.FHLHBDBHCDPR\x0bALAF\
-    INAJGBO\x12.\n\x0bHMCEDAOACFG\x18\x0e\x20\x03(\x0b2\x0c.ADMJMAPICPAR\x0b\
-    HMCEDAOACFG\x12.\n\x0bKPNGJKIOGBG\x18\t\x20\x03(\x0b2\x0c.FJANOMHOMCCR\
-    \x0bKPNGJKIOGBGb\x06proto3\
+    \n\x1cGridFightDamageSttInfo.proto\x1a\x11ILGIDCNAPKC.proto\x1a\x11LAINF\
+    AFHGAM.proto\x1a\x11LPBDLJKGOCN.proto\"\xa8\x01\n\x16GridFightDamageSttI\
+    nfo\x12.\n\x0bIENJPAMOINO\x18\x06\x20\x03(\x0b2\x0c.LAINFAFHGAMR\x0bIENJ\
+    PAMOINO\x12.\n\x0bLBFOKNALBCN\x18\n\x20\x03(\x0b2\x0c.ILGIDCNAPKCR\x0bLB\
+    FOKNALBCN\x12.\n\x0bGGDIHOHPILG\x18\x05\x20\x03(\x0b2\x0c.LPBDLJKGOCNR\
+    \x0bGGDIHOHPILGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -209,9 +209,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::ADMJMAPICPA::file_descriptor().clone());
-            deps.push(super::FHLHBDBHCDP::file_descriptor().clone());
-            deps.push(super::FJANOMHOMCC::file_descriptor().clone());
+            deps.push(super::ILGIDCNAPKC::file_descriptor().clone());
+            deps.push(super::LAINFAFHGAM::file_descriptor().clone());
+            deps.push(super::LPBDLJKGOCN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightDamageSttInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

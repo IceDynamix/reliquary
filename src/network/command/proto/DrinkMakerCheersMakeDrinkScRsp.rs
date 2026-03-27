@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DrinkMakerCheersMakeDrinkScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DrinkMakerCheersMakeDrinkScRsp.JHIOMPKOIKE)
-    pub JHIOMPKOIKE: ::protobuf::MessageField<super::GCBLCDEEFKL::GCBLCDEEFKL>,
     // @@protoc_insertion_point(field:DrinkMakerCheersMakeDrinkScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:DrinkMakerCheersMakeDrinkScRsp.JFBICPAMGPP)
+    pub JFBICPAMGPP: ::protobuf::MessageField<super::GDPELHFMEGN::GDPELHFMEGN>,
     // special fields
     // @@protoc_insertion_point(special_field:DrinkMakerCheersMakeDrinkScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl DrinkMakerCheersMakeDrinkScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCBLCDEEFKL::GCBLCDEEFKL>(
-            "JHIOMPKOIKE",
-            |m: &DrinkMakerCheersMakeDrinkScRsp| { &m.JHIOMPKOIKE },
-            |m: &mut DrinkMakerCheersMakeDrinkScRsp| { &mut m.JHIOMPKOIKE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &DrinkMakerCheersMakeDrinkScRsp| { &m.retcode },
             |m: &mut DrinkMakerCheersMakeDrinkScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GDPELHFMEGN::GDPELHFMEGN>(
+            "JFBICPAMGPP",
+            |m: &DrinkMakerCheersMakeDrinkScRsp| { &m.JFBICPAMGPP },
+            |m: &mut DrinkMakerCheersMakeDrinkScRsp| { &mut m.JFBICPAMGPP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DrinkMakerCheersMakeDrinkScRsp>(
             "DrinkMakerCheersMakeDrinkScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DrinkMakerCheersMakeDrinkScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JHIOMPKOIKE)?;
-                },
-                40 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFBICPAMGPP)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for DrinkMakerCheersMakeDrinkScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JHIOMPKOIKE.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
+        if let Some(v) = self.JFBICPAMGPP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for DrinkMakerCheersMakeDrinkScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JHIOMPKOIKE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
+        }
+        if let Some(v) = self.JFBICPAMGPP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for DrinkMakerCheersMakeDrinkScRsp {
     }
 
     fn clear(&mut self) {
-        self.JHIOMPKOIKE.clear();
         self.retcode = 0;
+        self.JFBICPAMGPP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DrinkMakerCheersMakeDrinkScRsp {
         static instance: DrinkMakerCheersMakeDrinkScRsp = DrinkMakerCheersMakeDrinkScRsp {
-            JHIOMPKOIKE: ::protobuf::MessageField::none(),
             retcode: 0,
+            JFBICPAMGPP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for DrinkMakerCheersMakeDrinkScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$DrinkMakerCheersMakeDrinkScRsp.proto\x1a\x11GCBLCDEEFKL.proto\"j\n\
-    \x1eDrinkMakerCheersMakeDrinkScRsp\x12.\n\x0bJHIOMPKOIKE\x18\r\x20\x01(\
-    \x0b2\x0c.GCBLCDEEFKLR\x0bJHIOMPKOIKE\x12\x18\n\x07retcode\x18\x05\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    \n$DrinkMakerCheersMakeDrinkScRsp.proto\x1a\x11GDPELHFMEGN.proto\"j\n\
+    \x1eDrinkMakerCheersMakeDrinkScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\
+    \rR\x07retcode\x12.\n\x0bJFBICPAMGPP\x18\x06\x20\x01(\x0b2\x0c.GDPELHFME\
+    GNR\x0bJFBICPAMGPPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GCBLCDEEFKL::file_descriptor().clone());
+            deps.push(super::GDPELHFMEGN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(DrinkMakerCheersMakeDrinkScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

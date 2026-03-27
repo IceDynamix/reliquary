@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightHandBookInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightHandBookInfo.grid_fight_monster_info)
-    pub grid_fight_monster_info: ::protobuf::MessageField<super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo>,
     // @@protoc_insertion_point(field:GridFightHandBookInfo.grid_fight_equip_info)
     pub grid_fight_equip_info: ::protobuf::MessageField<super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo>,
-    // @@protoc_insertion_point(field:GridFightHandBookInfo.grid_fight_portal_info)
-    pub grid_fight_portal_info: ::protobuf::MessageField<super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo>,
+    // @@protoc_insertion_point(field:GridFightHandBookInfo.grid_fight_monster_info)
+    pub grid_fight_monster_info: ::protobuf::MessageField<super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo>,
     // @@protoc_insertion_point(field:GridFightHandBookInfo.grid_fight_role_info)
     pub grid_fight_role_info: ::protobuf::MessageField<super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo>,
     // @@protoc_insertion_point(field:GridFightHandBookInfo.grid_fight_augment_info)
     pub grid_fight_augment_info: ::protobuf::MessageField<super::GridFightHandBookAugmentInfo::GridFightHandBookAugmentInfo>,
+    // @@protoc_insertion_point(field:GridFightHandBookInfo.grid_fight_portal_info)
+    pub grid_fight_portal_info: ::protobuf::MessageField<super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightHandBookInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,15 @@ impl GridFightHandBookInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo>(
-            "grid_fight_monster_info",
-            |m: &GridFightHandBookInfo| { &m.grid_fight_monster_info },
-            |m: &mut GridFightHandBookInfo| { &mut m.grid_fight_monster_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightHandBookEquipInfo::GridFightHandBookEquipInfo>(
             "grid_fight_equip_info",
             |m: &GridFightHandBookInfo| { &m.grid_fight_equip_info },
             |m: &mut GridFightHandBookInfo| { &mut m.grid_fight_equip_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo>(
-            "grid_fight_portal_info",
-            |m: &GridFightHandBookInfo| { &m.grid_fight_portal_info },
-            |m: &mut GridFightHandBookInfo| { &mut m.grid_fight_portal_info },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightHandBookMonsterInfo::GridFightHandBookMonsterInfo>(
+            "grid_fight_monster_info",
+            |m: &GridFightHandBookInfo| { &m.grid_fight_monster_info },
+            |m: &mut GridFightHandBookInfo| { &mut m.grid_fight_monster_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightHandBookRoleInfo::GridFightHandBookRoleInfo>(
             "grid_fight_role_info",
@@ -81,6 +76,11 @@ impl GridFightHandBookInfo {
             "grid_fight_augment_info",
             |m: &GridFightHandBookInfo| { &m.grid_fight_augment_info },
             |m: &mut GridFightHandBookInfo| { &mut m.grid_fight_augment_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightHandBookPortalInfo::GridFightHandBookPortalInfo>(
+            "grid_fight_portal_info",
+            |m: &GridFightHandBookInfo| { &m.grid_fight_portal_info },
+            |m: &mut GridFightHandBookInfo| { &mut m.grid_fight_portal_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightHandBookInfo>(
             "GridFightHandBookInfo",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for GridFightHandBookInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_equip_info)?;
+                },
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_monster_info)?;
                 },
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_equip_info)?;
-                },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_portal_info)?;
-                },
-                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_role_info)?;
                 },
                 26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_augment_info)?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_portal_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,15 +127,11 @@ impl ::protobuf::Message for GridFightHandBookInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.grid_fight_monster_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.grid_fight_equip_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.grid_fight_portal_info.as_ref() {
+        if let Some(v) = self.grid_fight_monster_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -144,6 +140,10 @@ impl ::protobuf::Message for GridFightHandBookInfo {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.grid_fight_augment_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.grid_fight_portal_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -153,20 +153,20 @@ impl ::protobuf::Message for GridFightHandBookInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.grid_fight_monster_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if let Some(v) = self.grid_fight_equip_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.grid_fight_portal_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.grid_fight_monster_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if let Some(v) = self.grid_fight_role_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if let Some(v) = self.grid_fight_augment_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
+        if let Some(v) = self.grid_fight_portal_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,21 +185,21 @@ impl ::protobuf::Message for GridFightHandBookInfo {
     }
 
     fn clear(&mut self) {
-        self.grid_fight_monster_info.clear();
         self.grid_fight_equip_info.clear();
-        self.grid_fight_portal_info.clear();
+        self.grid_fight_monster_info.clear();
         self.grid_fight_role_info.clear();
         self.grid_fight_augment_info.clear();
+        self.grid_fight_portal_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightHandBookInfo {
         static instance: GridFightHandBookInfo = GridFightHandBookInfo {
-            grid_fight_monster_info: ::protobuf::MessageField::none(),
             grid_fight_equip_info: ::protobuf::MessageField::none(),
-            grid_fight_portal_info: ::protobuf::MessageField::none(),
+            grid_fight_monster_info: ::protobuf::MessageField::none(),
             grid_fight_role_info: ::protobuf::MessageField::none(),
             grid_fight_augment_info: ::protobuf::MessageField::none(),
+            grid_fight_portal_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -227,15 +227,15 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGridFightHandBookInfo.proto\x1a\"GridFightHandBookAugmentInfo.prot\
     o\x1a\x20GridFightHandBookEquipInfo.proto\x1a\"GridFightHandBookMonsterI\
     nfo.proto\x1a!GridFightHandBookPortalInfo.proto\x1a\x1fGridFightHandBook\
-    RoleInfo.proto\"\xb3\x03\n\x15GridFightHandBookInfo\x12T\n\x17grid_fight\
-    _monster_info\x18\x01\x20\x01(\x0b2\x1d.GridFightHandBookMonsterInfoR\
-    \x14gridFightMonsterInfo\x12N\n\x15grid_fight_equip_info\x18\x07\x20\x01\
-    (\x0b2\x1b.GridFightHandBookEquipInfoR\x12gridFightEquipInfo\x12Q\n\x16g\
-    rid_fight_portal_info\x18\r\x20\x01(\x0b2\x1c.GridFightHandBookPortalInf\
-    oR\x13gridFightPortalInfo\x12K\n\x14grid_fight_role_info\x18\x0b\x20\x01\
-    (\x0b2\x1a.GridFightHandBookRoleInfoR\x11gridFightRoleInfo\x12T\n\x17gri\
-    d_fight_augment_info\x18\x03\x20\x01(\x0b2\x1d.GridFightHandBookAugmentI\
-    nfoR\x14gridFightAugmentInfob\x06proto3\
+    RoleInfo.proto\"\xb3\x03\n\x15GridFightHandBookInfo\x12N\n\x15grid_fight\
+    _equip_info\x18\x08\x20\x01(\x0b2\x1b.GridFightHandBookEquipInfoR\x12gri\
+    dFightEquipInfo\x12T\n\x17grid_fight_monster_info\x18\x0f\x20\x01(\x0b2\
+    \x1d.GridFightHandBookMonsterInfoR\x14gridFightMonsterInfo\x12K\n\x14gri\
+    d_fight_role_info\x18\x07\x20\x01(\x0b2\x1a.GridFightHandBookRoleInfoR\
+    \x11gridFightRoleInfo\x12T\n\x17grid_fight_augment_info\x18\x03\x20\x01(\
+    \x0b2\x1d.GridFightHandBookAugmentInfoR\x14gridFightAugmentInfo\x12Q\n\
+    \x16grid_fight_portal_info\x18\x02\x20\x01(\x0b2\x1c.GridFightHandBookPo\
+    rtalInfoR\x13gridFightPortalInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

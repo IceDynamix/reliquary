@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GamecoreConfig {
     // message fields
-    // @@protoc_insertion_point(field:GamecoreConfig.HOAJIOCFGDG)
-    pub HOAJIOCFGDG: bool,
-    // @@protoc_insertion_point(field:GamecoreConfig.DEKIMLKODOJ)
-    pub DEKIMLKODOJ: u32,
+    // @@protoc_insertion_point(field:GamecoreConfig.HNFIADCMMCH)
+    pub HNFIADCMMCH: bool,
+    // @@protoc_insertion_point(field:GamecoreConfig.HBJAFDDMDCL)
+    pub HBJAFDDMDCL: u32,
     // @@protoc_insertion_point(field:GamecoreConfig.is_auto_fight)
     pub is_auto_fight: bool,
-    // @@protoc_insertion_point(field:GamecoreConfig.MBIOCMEEPAL)
-    pub MBIOCMEEPAL: ::std::string::String,
-    // @@protoc_insertion_point(field:GamecoreConfig.DHEECPHLNGD)
-    pub DHEECPHLNGD: bool,
-    // @@protoc_insertion_point(field:GamecoreConfig.PJMFAJIAPBA)
-    pub PJMFAJIAPBA: bool,
-    // @@protoc_insertion_point(field:GamecoreConfig.JEGMNEOCHPE)
-    pub JEGMNEOCHPE: u32,
+    // @@protoc_insertion_point(field:GamecoreConfig.IGNNLECCJOJ)
+    pub IGNNLECCJOJ: ::std::string::String,
+    // @@protoc_insertion_point(field:GamecoreConfig.JBHIDEBGADN)
+    pub JBHIDEBGADN: bool,
+    // @@protoc_insertion_point(field:GamecoreConfig.DFHLDHCAOFN)
+    pub DFHLDHCAOFN: bool,
+    // @@protoc_insertion_point(field:GamecoreConfig.CPIMFFIAPGE)
+    pub CPIMFFIAPGE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GamecoreConfig.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,14 +62,14 @@ impl GamecoreConfig {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOAJIOCFGDG",
-            |m: &GamecoreConfig| { &m.HOAJIOCFGDG },
-            |m: &mut GamecoreConfig| { &mut m.HOAJIOCFGDG },
+            "HNFIADCMMCH",
+            |m: &GamecoreConfig| { &m.HNFIADCMMCH },
+            |m: &mut GamecoreConfig| { &mut m.HNFIADCMMCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DEKIMLKODOJ",
-            |m: &GamecoreConfig| { &m.DEKIMLKODOJ },
-            |m: &mut GamecoreConfig| { &mut m.DEKIMLKODOJ },
+            "HBJAFDDMDCL",
+            |m: &GamecoreConfig| { &m.HBJAFDDMDCL },
+            |m: &mut GamecoreConfig| { &mut m.HBJAFDDMDCL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_auto_fight",
@@ -77,24 +77,24 @@ impl GamecoreConfig {
             |m: &mut GamecoreConfig| { &mut m.is_auto_fight },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBIOCMEEPAL",
-            |m: &GamecoreConfig| { &m.MBIOCMEEPAL },
-            |m: &mut GamecoreConfig| { &mut m.MBIOCMEEPAL },
+            "IGNNLECCJOJ",
+            |m: &GamecoreConfig| { &m.IGNNLECCJOJ },
+            |m: &mut GamecoreConfig| { &mut m.IGNNLECCJOJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHEECPHLNGD",
-            |m: &GamecoreConfig| { &m.DHEECPHLNGD },
-            |m: &mut GamecoreConfig| { &mut m.DHEECPHLNGD },
+            "JBHIDEBGADN",
+            |m: &GamecoreConfig| { &m.JBHIDEBGADN },
+            |m: &mut GamecoreConfig| { &mut m.JBHIDEBGADN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJMFAJIAPBA",
-            |m: &GamecoreConfig| { &m.PJMFAJIAPBA },
-            |m: &mut GamecoreConfig| { &mut m.PJMFAJIAPBA },
+            "DFHLDHCAOFN",
+            |m: &GamecoreConfig| { &m.DFHLDHCAOFN },
+            |m: &mut GamecoreConfig| { &mut m.DFHLDHCAOFN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JEGMNEOCHPE",
-            |m: &GamecoreConfig| { &m.JEGMNEOCHPE },
-            |m: &mut GamecoreConfig| { &mut m.JEGMNEOCHPE },
+            "CPIMFFIAPGE",
+            |m: &GamecoreConfig| { &m.CPIMFFIAPGE },
+            |m: &mut GamecoreConfig| { &mut m.CPIMFFIAPGE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GamecoreConfig>(
             "GamecoreConfig",
@@ -115,25 +115,25 @@ impl ::protobuf::Message for GamecoreConfig {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.HOAJIOCFGDG = is.read_bool()?;
+                    self.HNFIADCMMCH = is.read_bool()?;
                 },
                 16 => {
-                    self.DEKIMLKODOJ = is.read_uint32()?;
+                    self.HBJAFDDMDCL = is.read_uint32()?;
                 },
                 24 => {
                     self.is_auto_fight = is.read_bool()?;
                 },
                 34 => {
-                    self.MBIOCMEEPAL = is.read_string()?;
+                    self.IGNNLECCJOJ = is.read_string()?;
                 },
                 40 => {
-                    self.DHEECPHLNGD = is.read_bool()?;
+                    self.JBHIDEBGADN = is.read_bool()?;
                 },
                 48 => {
-                    self.PJMFAJIAPBA = is.read_bool()?;
+                    self.DFHLDHCAOFN = is.read_bool()?;
                 },
                 56 => {
-                    self.JEGMNEOCHPE = is.read_uint32()?;
+                    self.CPIMFFIAPGE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,26 +147,26 @@ impl ::protobuf::Message for GamecoreConfig {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HOAJIOCFGDG != false {
+        if self.HNFIADCMMCH != false {
             my_size += 1 + 1;
         }
-        if self.DEKIMLKODOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.DEKIMLKODOJ);
+        if self.HBJAFDDMDCL != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.HBJAFDDMDCL);
         }
         if self.is_auto_fight != false {
             my_size += 1 + 1;
         }
-        if !self.MBIOCMEEPAL.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.MBIOCMEEPAL);
+        if !self.IGNNLECCJOJ.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.IGNNLECCJOJ);
         }
-        if self.DHEECPHLNGD != false {
+        if self.JBHIDEBGADN != false {
             my_size += 1 + 1;
         }
-        if self.PJMFAJIAPBA != false {
+        if self.DFHLDHCAOFN != false {
             my_size += 1 + 1;
         }
-        if self.JEGMNEOCHPE != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JEGMNEOCHPE);
+        if self.CPIMFFIAPGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.CPIMFFIAPGE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -174,26 +174,26 @@ impl ::protobuf::Message for GamecoreConfig {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOAJIOCFGDG != false {
-            os.write_bool(1, self.HOAJIOCFGDG)?;
+        if self.HNFIADCMMCH != false {
+            os.write_bool(1, self.HNFIADCMMCH)?;
         }
-        if self.DEKIMLKODOJ != 0 {
-            os.write_uint32(2, self.DEKIMLKODOJ)?;
+        if self.HBJAFDDMDCL != 0 {
+            os.write_uint32(2, self.HBJAFDDMDCL)?;
         }
         if self.is_auto_fight != false {
             os.write_bool(3, self.is_auto_fight)?;
         }
-        if !self.MBIOCMEEPAL.is_empty() {
-            os.write_string(4, &self.MBIOCMEEPAL)?;
+        if !self.IGNNLECCJOJ.is_empty() {
+            os.write_string(4, &self.IGNNLECCJOJ)?;
         }
-        if self.DHEECPHLNGD != false {
-            os.write_bool(5, self.DHEECPHLNGD)?;
+        if self.JBHIDEBGADN != false {
+            os.write_bool(5, self.JBHIDEBGADN)?;
         }
-        if self.PJMFAJIAPBA != false {
-            os.write_bool(6, self.PJMFAJIAPBA)?;
+        if self.DFHLDHCAOFN != false {
+            os.write_bool(6, self.DFHLDHCAOFN)?;
         }
-        if self.JEGMNEOCHPE != 0 {
-            os.write_uint32(7, self.JEGMNEOCHPE)?;
+        if self.CPIMFFIAPGE != 0 {
+            os.write_uint32(7, self.CPIMFFIAPGE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -212,25 +212,25 @@ impl ::protobuf::Message for GamecoreConfig {
     }
 
     fn clear(&mut self) {
-        self.HOAJIOCFGDG = false;
-        self.DEKIMLKODOJ = 0;
+        self.HNFIADCMMCH = false;
+        self.HBJAFDDMDCL = 0;
         self.is_auto_fight = false;
-        self.MBIOCMEEPAL.clear();
-        self.DHEECPHLNGD = false;
-        self.PJMFAJIAPBA = false;
-        self.JEGMNEOCHPE = 0;
+        self.IGNNLECCJOJ.clear();
+        self.JBHIDEBGADN = false;
+        self.DFHLDHCAOFN = false;
+        self.CPIMFFIAPGE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GamecoreConfig {
         static instance: GamecoreConfig = GamecoreConfig {
-            HOAJIOCFGDG: false,
-            DEKIMLKODOJ: 0,
+            HNFIADCMMCH: false,
+            HBJAFDDMDCL: 0,
             is_auto_fight: false,
-            MBIOCMEEPAL: ::std::string::String::new(),
-            DHEECPHLNGD: false,
-            PJMFAJIAPBA: false,
-            JEGMNEOCHPE: 0,
+            IGNNLECCJOJ: ::std::string::String::new(),
+            JBHIDEBGADN: false,
+            DFHLDHCAOFN: false,
+            CPIMFFIAPGE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,13 +255,13 @@ impl ::protobuf::reflect::ProtobufValue for GamecoreConfig {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14GamecoreConfig.proto\"\x80\x02\n\x0eGamecoreConfig\x12\x20\n\x0bHO\
-    AJIOCFGDG\x18\x01\x20\x01(\x08R\x0bHOAJIOCFGDG\x12\x20\n\x0bDEKIMLKODOJ\
-    \x18\x02\x20\x01(\rR\x0bDEKIMLKODOJ\x12\"\n\ris_auto_fight\x18\x03\x20\
-    \x01(\x08R\x0bisAutoFight\x12\x20\n\x0bMBIOCMEEPAL\x18\x04\x20\x01(\tR\
-    \x0bMBIOCMEEPAL\x12\x20\n\x0bDHEECPHLNGD\x18\x05\x20\x01(\x08R\x0bDHEECP\
-    HLNGD\x12\x20\n\x0bPJMFAJIAPBA\x18\x06\x20\x01(\x08R\x0bPJMFAJIAPBA\x12\
-    \x20\n\x0bJEGMNEOCHPE\x18\x07\x20\x01(\rR\x0bJEGMNEOCHPEb\x06proto3\
+    \n\x14GamecoreConfig.proto\"\x80\x02\n\x0eGamecoreConfig\x12\x20\n\x0bHN\
+    FIADCMMCH\x18\x01\x20\x01(\x08R\x0bHNFIADCMMCH\x12\x20\n\x0bHBJAFDDMDCL\
+    \x18\x02\x20\x01(\rR\x0bHBJAFDDMDCL\x12\"\n\ris_auto_fight\x18\x03\x20\
+    \x01(\x08R\x0bisAutoFight\x12\x20\n\x0bIGNNLECCJOJ\x18\x04\x20\x01(\tR\
+    \x0bIGNNLECCJOJ\x12\x20\n\x0bJBHIDEBGADN\x18\x05\x20\x01(\x08R\x0bJBHIDE\
+    BGADN\x12\x20\n\x0bDFHLDHCAOFN\x18\x06\x20\x01(\x08R\x0bDFHLDHCAOFN\x12\
+    \x20\n\x0bCPIMFFIAPGE\x18\x07\x20\x01(\rR\x0bCPIMFFIAPGEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

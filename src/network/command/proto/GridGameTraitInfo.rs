@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridGameTraitInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridGameTraitInfo.IFDAELFFFAP)
-    pub IFDAELFFFAP: u32,
-    // @@protoc_insertion_point(field:GridGameTraitInfo.PHEOHEBELGE)
-    pub PHEOHEBELGE: u32,
+    // @@protoc_insertion_point(field:GridGameTraitInfo.LIEIEPGBCLM)
+    pub LIEIEPGBCLM: u32,
+    // @@protoc_insertion_point(field:GridGameTraitInfo.GFLIFKIJBBK)
+    pub GFLIFKIJBBK: u32,
     // @@protoc_insertion_point(field:GridGameTraitInfo.trait_id)
     pub trait_id: u32,
-    // @@protoc_insertion_point(field:GridGameTraitInfo.FCGJAGHHGFB)
-    pub FCGJAGHHGFB: u32,
     // @@protoc_insertion_point(field:GridGameTraitInfo.trait_effect_list)
     pub trait_effect_list: ::std::vec::Vec<super::GridFightTraitEffectInfo::GridFightTraitEffectInfo>,
+    // @@protoc_insertion_point(field:GridGameTraitInfo.PFFLGCBLKCB)
+    pub PFFLGCBLKCB: u32,
     // @@protoc_insertion_point(field:GridGameTraitInfo.grid_fight_trait_member_unique_id_list)
     pub grid_fight_trait_member_unique_id_list: ::std::vec::Vec<u32>,
     // special fields
@@ -60,29 +60,29 @@ impl GridGameTraitInfo {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFDAELFFFAP",
-            |m: &GridGameTraitInfo| { &m.IFDAELFFFAP },
-            |m: &mut GridGameTraitInfo| { &mut m.IFDAELFFFAP },
+            "LIEIEPGBCLM",
+            |m: &GridGameTraitInfo| { &m.LIEIEPGBCLM },
+            |m: &mut GridGameTraitInfo| { &mut m.LIEIEPGBCLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PHEOHEBELGE",
-            |m: &GridGameTraitInfo| { &m.PHEOHEBELGE },
-            |m: &mut GridGameTraitInfo| { &mut m.PHEOHEBELGE },
+            "GFLIFKIJBBK",
+            |m: &GridGameTraitInfo| { &m.GFLIFKIJBBK },
+            |m: &mut GridGameTraitInfo| { &mut m.GFLIFKIJBBK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trait_id",
             |m: &GridGameTraitInfo| { &m.trait_id },
             |m: &mut GridGameTraitInfo| { &mut m.trait_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FCGJAGHHGFB",
-            |m: &GridGameTraitInfo| { &m.FCGJAGHHGFB },
-            |m: &mut GridGameTraitInfo| { &mut m.FCGJAGHHGFB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "trait_effect_list",
             |m: &GridGameTraitInfo| { &m.trait_effect_list },
             |m: &mut GridGameTraitInfo| { &mut m.trait_effect_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PFFLGCBLKCB",
+            |m: &GridGameTraitInfo| { &m.PFFLGCBLKCB },
+            |m: &mut GridGameTraitInfo| { &mut m.PFFLGCBLKCB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "grid_fight_trait_member_unique_id_list",
@@ -107,25 +107,25 @@ impl ::protobuf::Message for GridGameTraitInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.IFDAELFFFAP = is.read_uint32()?;
+                120 => {
+                    self.LIEIEPGBCLM = is.read_uint32()?;
                 },
-                64 => {
-                    self.PHEOHEBELGE = is.read_uint32()?;
+                80 => {
+                    self.GFLIFKIJBBK = is.read_uint32()?;
                 },
-                72 => {
+                16 => {
                     self.trait_id = is.read_uint32()?;
                 },
-                56 => {
-                    self.FCGJAGHHGFB = is.read_uint32()?;
-                },
-                122 => {
+                42 => {
                     self.trait_effect_list.push(is.read_message()?);
                 },
-                50 => {
+                8 => {
+                    self.PFFLGCBLKCB = is.read_uint32()?;
+                },
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_trait_member_unique_id_list)?;
                 },
-                48 => {
+                88 => {
                     self.grid_fight_trait_member_unique_id_list.push(is.read_uint32()?);
                 },
                 tag => {
@@ -140,45 +140,45 @@ impl ::protobuf::Message for GridGameTraitInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IFDAELFFFAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.IFDAELFFFAP);
+        if self.LIEIEPGBCLM != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LIEIEPGBCLM);
         }
-        if self.PHEOHEBELGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PHEOHEBELGE);
+        if self.GFLIFKIJBBK != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.GFLIFKIJBBK);
         }
         if self.trait_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.trait_id);
-        }
-        if self.FCGJAGHHGFB != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.FCGJAGHHGFB);
+            my_size += ::protobuf::rt::uint32_size(2, self.trait_id);
         }
         for value in &self.trait_effect_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.grid_fight_trait_member_unique_id_list);
+        if self.PFFLGCBLKCB != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.PFFLGCBLKCB);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.grid_fight_trait_member_unique_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IFDAELFFFAP != 0 {
-            os.write_uint32(12, self.IFDAELFFFAP)?;
+        if self.LIEIEPGBCLM != 0 {
+            os.write_uint32(15, self.LIEIEPGBCLM)?;
         }
-        if self.PHEOHEBELGE != 0 {
-            os.write_uint32(8, self.PHEOHEBELGE)?;
+        if self.GFLIFKIJBBK != 0 {
+            os.write_uint32(10, self.GFLIFKIJBBK)?;
         }
         if self.trait_id != 0 {
-            os.write_uint32(9, self.trait_id)?;
-        }
-        if self.FCGJAGHHGFB != 0 {
-            os.write_uint32(7, self.FCGJAGHHGFB)?;
+            os.write_uint32(2, self.trait_id)?;
         }
         for v in &self.trait_effect_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        os.write_repeated_packed_uint32(6, &self.grid_fight_trait_member_unique_id_list)?;
+        if self.PFFLGCBLKCB != 0 {
+            os.write_uint32(1, self.PFFLGCBLKCB)?;
+        }
+        os.write_repeated_packed_uint32(11, &self.grid_fight_trait_member_unique_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -196,22 +196,22 @@ impl ::protobuf::Message for GridGameTraitInfo {
     }
 
     fn clear(&mut self) {
-        self.IFDAELFFFAP = 0;
-        self.PHEOHEBELGE = 0;
+        self.LIEIEPGBCLM = 0;
+        self.GFLIFKIJBBK = 0;
         self.trait_id = 0;
-        self.FCGJAGHHGFB = 0;
         self.trait_effect_list.clear();
+        self.PFFLGCBLKCB = 0;
         self.grid_fight_trait_member_unique_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridGameTraitInfo {
         static instance: GridGameTraitInfo = GridGameTraitInfo {
-            IFDAELFFFAP: 0,
-            PHEOHEBELGE: 0,
+            LIEIEPGBCLM: 0,
+            GFLIFKIJBBK: 0,
             trait_id: 0,
-            FCGJAGHHGFB: 0,
             trait_effect_list: ::std::vec::Vec::new(),
+            PFFLGCBLKCB: 0,
             grid_fight_trait_member_unique_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -238,12 +238,12 @@ impl ::protobuf::reflect::ProtobufValue for GridGameTraitInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GridGameTraitInfo.proto\x1a\x1eGridFightTraitEffectInfo.proto\"\
-    \xad\x02\n\x11GridGameTraitInfo\x12\x20\n\x0bIFDAELFFFAP\x18\x0c\x20\x01\
-    (\rR\x0bIFDAELFFFAP\x12\x20\n\x0bPHEOHEBELGE\x18\x08\x20\x01(\rR\x0bPHEO\
-    HEBELGE\x12\x19\n\x08trait_id\x18\t\x20\x01(\rR\x07traitId\x12\x20\n\x0b\
-    FCGJAGHHGFB\x18\x07\x20\x01(\rR\x0bFCGJAGHHGFB\x12E\n\x11trait_effect_li\
-    st\x18\x0f\x20\x03(\x0b2\x19.GridFightTraitEffectInfoR\x0ftraitEffectLis\
-    t\x12P\n&grid_fight_trait_member_unique_id_list\x18\x06\x20\x03(\rR\x20g\
+    \xad\x02\n\x11GridGameTraitInfo\x12\x20\n\x0bLIEIEPGBCLM\x18\x0f\x20\x01\
+    (\rR\x0bLIEIEPGBCLM\x12\x20\n\x0bGFLIFKIJBBK\x18\n\x20\x01(\rR\x0bGFLIFK\
+    IJBBK\x12\x19\n\x08trait_id\x18\x02\x20\x01(\rR\x07traitId\x12E\n\x11tra\
+    it_effect_list\x18\x05\x20\x03(\x0b2\x19.GridFightTraitEffectInfoR\x0ftr\
+    aitEffectList\x12\x20\n\x0bPFFLGCBLKCB\x18\x01\x20\x01(\rR\x0bPFFLGCBLKC\
+    B\x12P\n&grid_fight_trait_member_unique_id_list\x18\x0b\x20\x03(\rR\x20g\
     ridFightTraitMemberUniqueIdListb\x06proto3\
 ";
 

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetStuffToAreaScRsp {
     // message fields
+    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.BDJOEKJHELP)
+    pub BDJOEKJHELP: u32,
+    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.pos)
+    pub pos: ::protobuf::EnumOrUnknown<super::GDOFOGOOIAH::GDOFOGOOIAH>,
     // @@protoc_insertion_point(field:SetStuffToAreaScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.FHFIBBCHKJO)
-    pub FHFIBBCHKJO: u32,
-    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.DEOKEPLJIFL)
-    pub DEOKEPLJIFL: u32,
-    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.pos)
-    pub pos: ::protobuf::EnumOrUnknown<super::FNHEONNLHIP::FNHEONNLHIP>,
+    // @@protoc_insertion_point(field:SetStuffToAreaScRsp.CBJMDBKKIIL)
+    pub CBJMDBKKIIL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetStuffToAreaScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl SetStuffToAreaScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &SetStuffToAreaScRsp| { &m.retcode },
-            |m: &mut SetStuffToAreaScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHFIBBCHKJO",
-            |m: &SetStuffToAreaScRsp| { &m.FHFIBBCHKJO },
-            |m: &mut SetStuffToAreaScRsp| { &mut m.FHFIBBCHKJO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DEOKEPLJIFL",
-            |m: &SetStuffToAreaScRsp| { &m.DEOKEPLJIFL },
-            |m: &mut SetStuffToAreaScRsp| { &mut m.DEOKEPLJIFL },
+            "BDJOEKJHELP",
+            |m: &SetStuffToAreaScRsp| { &m.BDJOEKJHELP },
+            |m: &mut SetStuffToAreaScRsp| { &mut m.BDJOEKJHELP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "pos",
             |m: &SetStuffToAreaScRsp| { &m.pos },
             |m: &mut SetStuffToAreaScRsp| { &mut m.pos },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &SetStuffToAreaScRsp| { &m.retcode },
+            |m: &mut SetStuffToAreaScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CBJMDBKKIIL",
+            |m: &SetStuffToAreaScRsp| { &m.CBJMDBKKIIL },
+            |m: &mut SetStuffToAreaScRsp| { &mut m.CBJMDBKKIIL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetStuffToAreaScRsp>(
             "SetStuffToAreaScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                32 => {
+                    self.BDJOEKJHELP = is.read_uint32()?;
+                },
+                48 => {
+                    self.pos = is.read_enum_or_unknown()?;
+                },
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                88 => {
-                    self.FHFIBBCHKJO = is.read_uint32()?;
-                },
-                8 => {
-                    self.DEOKEPLJIFL = is.read_uint32()?;
-                },
-                72 => {
-                    self.pos = is.read_enum_or_unknown()?;
+                80 => {
+                    self.CBJMDBKKIIL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.BDJOEKJHELP != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.BDJOEKJHELP);
+        }
+        if self.pos != ::protobuf::EnumOrUnknown::new(super::GDOFOGOOIAH::GDOFOGOOIAH::GDOFOGOOIAH_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(6, self.pos.value());
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
-        if self.FHFIBBCHKJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.FHFIBBCHKJO);
-        }
-        if self.DEOKEPLJIFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.DEOKEPLJIFL);
-        }
-        if self.pos != ::protobuf::EnumOrUnknown::new(super::FNHEONNLHIP::FNHEONNLHIP::FNHEONNLHIP_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(9, self.pos.value());
+        if self.CBJMDBKKIIL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.CBJMDBKKIIL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.BDJOEKJHELP != 0 {
+            os.write_uint32(4, self.BDJOEKJHELP)?;
+        }
+        if self.pos != ::protobuf::EnumOrUnknown::new(super::GDOFOGOOIAH::GDOFOGOOIAH::GDOFOGOOIAH_MNFEPONEDDJ) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.pos))?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
         }
-        if self.FHFIBBCHKJO != 0 {
-            os.write_uint32(11, self.FHFIBBCHKJO)?;
-        }
-        if self.DEOKEPLJIFL != 0 {
-            os.write_uint32(1, self.DEOKEPLJIFL)?;
-        }
-        if self.pos != ::protobuf::EnumOrUnknown::new(super::FNHEONNLHIP::FNHEONNLHIP::FNHEONNLHIP_GKJBAODJMJG) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.pos))?;
+        if self.CBJMDBKKIIL != 0 {
+            os.write_uint32(10, self.CBJMDBKKIIL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for SetStuffToAreaScRsp {
     }
 
     fn clear(&mut self) {
+        self.BDJOEKJHELP = 0;
+        self.pos = ::protobuf::EnumOrUnknown::new(super::GDOFOGOOIAH::GDOFOGOOIAH::GDOFOGOOIAH_MNFEPONEDDJ);
         self.retcode = 0;
-        self.FHFIBBCHKJO = 0;
-        self.DEOKEPLJIFL = 0;
-        self.pos = ::protobuf::EnumOrUnknown::new(super::FNHEONNLHIP::FNHEONNLHIP::FNHEONNLHIP_GKJBAODJMJG);
+        self.CBJMDBKKIIL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetStuffToAreaScRsp {
         static instance: SetStuffToAreaScRsp = SetStuffToAreaScRsp {
-            retcode: 0,
-            FHFIBBCHKJO: 0,
-            DEOKEPLJIFL: 0,
+            BDJOEKJHELP: 0,
             pos: ::protobuf::EnumOrUnknown::from_i32(0),
+            retcode: 0,
+            CBJMDBKKIIL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,11 +201,11 @@ impl ::protobuf::reflect::ProtobufValue for SetStuffToAreaScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19SetStuffToAreaScRsp.proto\x1a\x11FNHEONNLHIP.proto\"\x93\x01\n\x13\
-    SetStuffToAreaScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\
-    \x12\x20\n\x0bFHFIBBCHKJO\x18\x0b\x20\x01(\rR\x0bFHFIBBCHKJO\x12\x20\n\
-    \x0bDEOKEPLJIFL\x18\x01\x20\x01(\rR\x0bDEOKEPLJIFL\x12\x1e\n\x03pos\x18\
-    \t\x20\x01(\x0e2\x0c.FNHEONNLHIPR\x03posb\x06proto3\
+    \n\x19SetStuffToAreaScRsp.proto\x1a\x11GDOFOGOOIAH.proto\"\x93\x01\n\x13\
+    SetStuffToAreaScRsp\x12\x20\n\x0bBDJOEKJHELP\x18\x04\x20\x01(\rR\x0bBDJO\
+    EKJHELP\x12\x1e\n\x03pos\x18\x06\x20\x01(\x0e2\x0c.GDOFOGOOIAHR\x03pos\
+    \x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bCBJMDB\
+    KKIIL\x18\n\x20\x01(\rR\x0bCBJMDBKKIILb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -223,7 +223,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FNHEONNLHIP::file_descriptor().clone());
+            deps.push(super::GDOFOGOOIAH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetStuffToAreaScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

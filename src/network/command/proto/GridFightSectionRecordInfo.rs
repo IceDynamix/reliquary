@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightSectionRecordInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightSectionRecordInfo.LEDLKGHDNOC)
-    pub LEDLKGHDNOC: u32,
     // @@protoc_insertion_point(field:GridFightSectionRecordInfo.section_id)
     pub section_id: u32,
-    // @@protoc_insertion_point(field:GridFightSectionRecordInfo.MOHOFMEIMMM)
-    pub MOHOFMEIMMM: u32,
+    // @@protoc_insertion_point(field:GridFightSectionRecordInfo.PIMNBJNLIAI)
+    pub PIMNBJNLIAI: u32,
+    // @@protoc_insertion_point(field:GridFightSectionRecordInfo.CPJCOBCMNHK)
+    pub CPJCOBCMNHK: u32,
     // @@protoc_insertion_point(field:GridFightSectionRecordInfo.camp_record_info)
     pub camp_record_info: ::protobuf::MessageField<super::GridFightSectionCampRecordInfo::GridFightSectionCampRecordInfo>,
     // special fields
@@ -56,19 +56,19 @@ impl GridFightSectionRecordInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LEDLKGHDNOC",
-            |m: &GridFightSectionRecordInfo| { &m.LEDLKGHDNOC },
-            |m: &mut GridFightSectionRecordInfo| { &mut m.LEDLKGHDNOC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "section_id",
             |m: &GridFightSectionRecordInfo| { &m.section_id },
             |m: &mut GridFightSectionRecordInfo| { &mut m.section_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MOHOFMEIMMM",
-            |m: &GridFightSectionRecordInfo| { &m.MOHOFMEIMMM },
-            |m: &mut GridFightSectionRecordInfo| { &mut m.MOHOFMEIMMM },
+            "PIMNBJNLIAI",
+            |m: &GridFightSectionRecordInfo| { &m.PIMNBJNLIAI },
+            |m: &mut GridFightSectionRecordInfo| { &mut m.PIMNBJNLIAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CPJCOBCMNHK",
+            |m: &GridFightSectionRecordInfo| { &m.CPJCOBCMNHK },
+            |m: &mut GridFightSectionRecordInfo| { &mut m.CPJCOBCMNHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightSectionCampRecordInfo::GridFightSectionCampRecordInfo>(
             "camp_record_info",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for GridFightSectionRecordInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.LEDLKGHDNOC = is.read_uint32()?;
-                },
-                72 => {
+                56 => {
                     self.section_id = is.read_uint32()?;
                 },
-                16 => {
-                    self.MOHOFMEIMMM = is.read_uint32()?;
+                24 => {
+                    self.PIMNBJNLIAI = is.read_uint32()?;
                 },
-                4474 => {
+                112 => {
+                    self.CPJCOBCMNHK = is.read_uint32()?;
+                },
+                15594 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.camp_record_info)?;
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for GridFightSectionRecordInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LEDLKGHDNOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.LEDLKGHDNOC);
-        }
         if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.section_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.section_id);
         }
-        if self.MOHOFMEIMMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MOHOFMEIMMM);
+        if self.PIMNBJNLIAI != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.PIMNBJNLIAI);
+        }
+        if self.CPJCOBCMNHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CPJCOBCMNHK);
         }
         if let Some(v) = self.camp_record_info.as_ref() {
             let len = v.compute_size();
@@ -136,17 +136,17 @@ impl ::protobuf::Message for GridFightSectionRecordInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LEDLKGHDNOC != 0 {
-            os.write_uint32(12, self.LEDLKGHDNOC)?;
-        }
         if self.section_id != 0 {
-            os.write_uint32(9, self.section_id)?;
+            os.write_uint32(7, self.section_id)?;
         }
-        if self.MOHOFMEIMMM != 0 {
-            os.write_uint32(2, self.MOHOFMEIMMM)?;
+        if self.PIMNBJNLIAI != 0 {
+            os.write_uint32(3, self.PIMNBJNLIAI)?;
+        }
+        if self.CPJCOBCMNHK != 0 {
+            os.write_uint32(14, self.CPJCOBCMNHK)?;
         }
         if let Some(v) = self.camp_record_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(559, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1949, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for GridFightSectionRecordInfo {
     }
 
     fn clear(&mut self) {
-        self.LEDLKGHDNOC = 0;
         self.section_id = 0;
-        self.MOHOFMEIMMM = 0;
+        self.PIMNBJNLIAI = 0;
+        self.CPJCOBCMNHK = 0;
         self.camp_record_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightSectionRecordInfo {
         static instance: GridFightSectionRecordInfo = GridFightSectionRecordInfo {
-            LEDLKGHDNOC: 0,
             section_id: 0,
-            MOHOFMEIMMM: 0,
+            PIMNBJNLIAI: 0,
+            CPJCOBCMNHK: 0,
             camp_record_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSectionRecordInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GridFightSectionRecordInfo.proto\x1a$GridFightSectionCampRecordInf\
-    o.proto\"\xcb\x01\n\x1aGridFightSectionRecordInfo\x12\x20\n\x0bLEDLKGHDN\
-    OC\x18\x0c\x20\x01(\rR\x0bLEDLKGHDNOC\x12\x1d\n\nsection_id\x18\t\x20\
-    \x01(\rR\tsectionId\x12\x20\n\x0bMOHOFMEIMMM\x18\x02\x20\x01(\rR\x0bMOHO\
-    FMEIMMM\x12J\n\x10camp_record_info\x18\xaf\x04\x20\x01(\x0b2\x1f.GridFig\
+    o.proto\"\xcb\x01\n\x1aGridFightSectionRecordInfo\x12\x1d\n\nsection_id\
+    \x18\x07\x20\x01(\rR\tsectionId\x12\x20\n\x0bPIMNBJNLIAI\x18\x03\x20\x01\
+    (\rR\x0bPIMNBJNLIAI\x12\x20\n\x0bCPJCOBCMNHK\x18\x0e\x20\x01(\rR\x0bCPJC\
+    OBCMNHK\x12J\n\x10camp_record_info\x18\x9d\x0f\x20\x01(\x0b2\x1f.GridFig\
     htSectionCampRecordInfoR\x0ecampRecordInfob\x06proto3\
 ";
 

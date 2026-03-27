@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueNousGetRogueTalentInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueNousGetRogueTalentInfoScRsp.DJOBCMAHPMF)
-    pub DJOBCMAHPMF: u32,
+    // @@protoc_insertion_point(field:ChessRogueNousGetRogueTalentInfoScRsp.talent_info)
+    pub talent_info: ::protobuf::MessageField<super::GPGAICLOJMD::GPGAICLOJMD>,
+    // @@protoc_insertion_point(field:ChessRogueNousGetRogueTalentInfoScRsp.MONDNDEEOMJ)
+    pub MONDNDEEOMJ: u32,
     // @@protoc_insertion_point(field:ChessRogueNousGetRogueTalentInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueNousGetRogueTalentInfoScRsp.talent_info)
-    pub talent_info: ::protobuf::MessageField<super::NADADMGJLBB::NADADMGJLBB>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueNousGetRogueTalentInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl ChessRogueNousGetRogueTalentInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GPGAICLOJMD::GPGAICLOJMD>(
+            "talent_info",
+            |m: &ChessRogueNousGetRogueTalentInfoScRsp| { &m.talent_info },
+            |m: &mut ChessRogueNousGetRogueTalentInfoScRsp| { &mut m.talent_info },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DJOBCMAHPMF",
-            |m: &ChessRogueNousGetRogueTalentInfoScRsp| { &m.DJOBCMAHPMF },
-            |m: &mut ChessRogueNousGetRogueTalentInfoScRsp| { &mut m.DJOBCMAHPMF },
+            "MONDNDEEOMJ",
+            |m: &ChessRogueNousGetRogueTalentInfoScRsp| { &m.MONDNDEEOMJ },
+            |m: &mut ChessRogueNousGetRogueTalentInfoScRsp| { &mut m.MONDNDEEOMJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChessRogueNousGetRogueTalentInfoScRsp| { &m.retcode },
             |m: &mut ChessRogueNousGetRogueTalentInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NADADMGJLBB::NADADMGJLBB>(
-            "talent_info",
-            |m: &ChessRogueNousGetRogueTalentInfoScRsp| { &m.talent_info },
-            |m: &mut ChessRogueNousGetRogueTalentInfoScRsp| { &mut m.talent_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueNousGetRogueTalentInfoScRsp>(
             "ChessRogueNousGetRogueTalentInfoScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ChessRogueNousGetRogueTalentInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.DJOBCMAHPMF = is.read_uint32()?;
-                },
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                58 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.talent_info)?;
+                },
+                120 => {
+                    self.MONDNDEEOMJ = is.read_uint32()?;
+                },
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for ChessRogueNousGetRogueTalentInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DJOBCMAHPMF != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DJOBCMAHPMF);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
         if let Some(v) = self.talent_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.MONDNDEEOMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.MONDNDEEOMJ);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for ChessRogueNousGetRogueTalentInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DJOBCMAHPMF != 0 {
-            os.write_uint32(14, self.DJOBCMAHPMF)?;
+        if let Some(v) = self.talent_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        }
+        if self.MONDNDEEOMJ != 0 {
+            os.write_uint32(15, self.MONDNDEEOMJ)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
-        if let Some(v) = self.talent_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for ChessRogueNousGetRogueTalentInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.DJOBCMAHPMF = 0;
-        self.retcode = 0;
         self.talent_info.clear();
+        self.MONDNDEEOMJ = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueNousGetRogueTalentInfoScRsp {
         static instance: ChessRogueNousGetRogueTalentInfoScRsp = ChessRogueNousGetRogueTalentInfoScRsp {
-            DJOBCMAHPMF: 0,
-            retcode: 0,
             talent_info: ::protobuf::MessageField::none(),
+            MONDNDEEOMJ: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousGetRogueTalentInfoScRs
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n+ChessRogueNousGetRogueTalentInfoScRsp.proto\x1a\x11NADADMGJLBB.proto\
-    \"\x92\x01\n%ChessRogueNousGetRogueTalentInfoScRsp\x12\x20\n\x0bDJOBCMAH\
-    PMF\x18\x0e\x20\x01(\rR\x0bDJOBCMAHPMF\x12\x18\n\x07retcode\x18\x0c\x20\
-    \x01(\rR\x07retcode\x12-\n\x0btalent_info\x18\x07\x20\x01(\x0b2\x0c.NADA\
-    DMGJLBBR\ntalentInfob\x06proto3\
+    \n+ChessRogueNousGetRogueTalentInfoScRsp.proto\x1a\x11GPGAICLOJMD.proto\
+    \"\x92\x01\n%ChessRogueNousGetRogueTalentInfoScRsp\x12-\n\x0btalent_info\
+    \x18\x0c\x20\x01(\x0b2\x0c.GPGAICLOJMDR\ntalentInfo\x12\x20\n\x0bMONDNDE\
+    EOMJ\x18\x0f\x20\x01(\rR\x0bMONDNDEEOMJ\x12\x18\n\x07retcode\x18\x01\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NADADMGJLBB::file_descriptor().clone());
+            deps.push(super::GPGAICLOJMD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueNousGetRogueTalentInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueWorkbenchHandleFuncScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncScRsp.ONBGIAOCCNM)
-    pub ONBGIAOCCNM: ::protobuf::MessageField<super::AGHPMDFHKCH::AGHPMDFHKCH>,
     // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncScRsp.KMLOAJLGJGN)
+    pub KMLOAJLGJGN: ::protobuf::MessageField<super::JBJGPJAAGPM::JBJGPJAAGPM>,
     // @@protoc_insertion_point(field:RogueWorkbenchHandleFuncScRsp.func_id)
     pub func_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl RogueWorkbenchHandleFuncScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AGHPMDFHKCH::AGHPMDFHKCH>(
-            "ONBGIAOCCNM",
-            |m: &RogueWorkbenchHandleFuncScRsp| { &m.ONBGIAOCCNM },
-            |m: &mut RogueWorkbenchHandleFuncScRsp| { &mut m.ONBGIAOCCNM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueWorkbenchHandleFuncScRsp| { &m.retcode },
             |m: &mut RogueWorkbenchHandleFuncScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JBJGPJAAGPM::JBJGPJAAGPM>(
+            "KMLOAJLGJGN",
+            |m: &RogueWorkbenchHandleFuncScRsp| { &m.KMLOAJLGJGN },
+            |m: &mut RogueWorkbenchHandleFuncScRsp| { &mut m.KMLOAJLGJGN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "func_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ONBGIAOCCNM)?;
-                },
-                40 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                48 => {
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KMLOAJLGJGN)?;
+                },
+                24 => {
                     self.func_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ONBGIAOCCNM.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if let Some(v) = self.KMLOAJLGJGN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
         if self.func_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.func_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.func_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ONBGIAOCCNM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
+        }
+        if let Some(v) = self.KMLOAJLGJGN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.func_id != 0 {
-            os.write_uint32(6, self.func_id)?;
+            os.write_uint32(3, self.func_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RogueWorkbenchHandleFuncScRsp {
     }
 
     fn clear(&mut self) {
-        self.ONBGIAOCCNM.clear();
         self.retcode = 0;
+        self.KMLOAJLGJGN.clear();
         self.func_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueWorkbenchHandleFuncScRsp {
         static instance: RogueWorkbenchHandleFuncScRsp = RogueWorkbenchHandleFuncScRsp {
-            ONBGIAOCCNM: ::protobuf::MessageField::none(),
             retcode: 0,
+            KMLOAJLGJGN: ::protobuf::MessageField::none(),
             func_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for RogueWorkbenchHandleFuncScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#RogueWorkbenchHandleFuncScRsp.proto\x1a\x11AGHPMDFHKCH.proto\"\x82\
-    \x01\n\x1dRogueWorkbenchHandleFuncScRsp\x12.\n\x0bONBGIAOCCNM\x18\x04\
-    \x20\x01(\x0b2\x0c.AGHPMDFHKCHR\x0bONBGIAOCCNM\x12\x18\n\x07retcode\x18\
-    \x05\x20\x01(\rR\x07retcode\x12\x17\n\x07func_id\x18\x06\x20\x01(\rR\x06\
-    funcIdb\x06proto3\
+    \n#RogueWorkbenchHandleFuncScRsp.proto\x1a\x11JBJGPJAAGPM.proto\"\x82\
+    \x01\n\x1dRogueWorkbenchHandleFuncScRsp\x12\x18\n\x07retcode\x18\x0b\x20\
+    \x01(\rR\x07retcode\x12.\n\x0bKMLOAJLGJGN\x18\x07\x20\x01(\x0b2\x0c.JBJG\
+    PJAAGPMR\x0bKMLOAJLGJGN\x12\x17\n\x07func_id\x18\x03\x20\x01(\rR\x06func\
+    Idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AGHPMDFHKCH::file_descriptor().clone());
+            deps.push(super::JBJGPJAAGPM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueWorkbenchHandleFuncScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetGrowthTargetAvatarCsReq {
     // message fields
+    // @@protoc_insertion_point(field:SetGrowthTargetAvatarCsReq.GDNLMHDMIBH)
+    pub GDNLMHDMIBH: u32,
     // @@protoc_insertion_point(field:SetGrowthTargetAvatarCsReq.source)
     pub source: ::protobuf::EnumOrUnknown<super::GrowthTargetState::GrowthTargetState>,
-    // @@protoc_insertion_point(field:SetGrowthTargetAvatarCsReq.OGFAEGDGBKE)
-    pub OGFAEGDGBKE: u32,
     // @@protoc_insertion_point(field:SetGrowthTargetAvatarCsReq.avatar_id)
     pub avatar_id: u32,
     // @@protoc_insertion_point(field:SetGrowthTargetAvatarCsReq.growth_target_type_list)
@@ -56,14 +56,14 @@ impl SetGrowthTargetAvatarCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GDNLMHDMIBH",
+            |m: &SetGrowthTargetAvatarCsReq| { &m.GDNLMHDMIBH },
+            |m: &mut SetGrowthTargetAvatarCsReq| { &mut m.GDNLMHDMIBH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "source",
             |m: &SetGrowthTargetAvatarCsReq| { &m.source },
             |m: &mut SetGrowthTargetAvatarCsReq| { &mut m.source },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGFAEGDGBKE",
-            |m: &SetGrowthTargetAvatarCsReq| { &m.OGFAEGDGBKE },
-            |m: &mut SetGrowthTargetAvatarCsReq| { &mut m.OGFAEGDGBKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for SetGrowthTargetAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                104 => {
+                    self.GDNLMHDMIBH = is.read_uint32()?;
+                },
+                120 => {
                     self.source = is.read_enum_or_unknown()?;
                 },
-                16 => {
-                    self.OGFAEGDGBKE = is.read_uint32()?;
-                },
-                48 => {
+                72 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                80 => {
+                16 => {
                     self.growth_target_type_list.push(is.read_enum_or_unknown()?);
                 },
-                82 => {
+                18 => {
                     ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.growth_target_type_list)?
                 },
                 tag => {
@@ -120,32 +120,32 @@ impl ::protobuf::Message for SetGrowthTargetAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.source != ::protobuf::EnumOrUnknown::new(super::GrowthTargetState::GrowthTargetState::OAHDMJMLLDF_BMAEKADBLDM) {
-            my_size += ::protobuf::rt::int32_size(7, self.source.value());
+        if self.GDNLMHDMIBH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.GDNLMHDMIBH);
         }
-        if self.OGFAEGDGBKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OGFAEGDGBKE);
+        if self.source != ::protobuf::EnumOrUnknown::new(super::GrowthTargetState::GrowthTargetState::GrowthTargetState_FHJGCAHJKPP) {
+            my_size += ::protobuf::rt::int32_size(15, self.source.value());
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.avatar_id);
         }
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(10, &self.growth_target_type_list);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(2, &self.growth_target_type_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.source != ::protobuf::EnumOrUnknown::new(super::GrowthTargetState::GrowthTargetState::OAHDMJMLLDF_BMAEKADBLDM) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.source))?;
+        if self.GDNLMHDMIBH != 0 {
+            os.write_uint32(13, self.GDNLMHDMIBH)?;
         }
-        if self.OGFAEGDGBKE != 0 {
-            os.write_uint32(2, self.OGFAEGDGBKE)?;
+        if self.source != ::protobuf::EnumOrUnknown::new(super::GrowthTargetState::GrowthTargetState::GrowthTargetState_FHJGCAHJKPP) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.source))?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(6, self.avatar_id)?;
+            os.write_uint32(9, self.avatar_id)?;
         }
-        os.write_repeated_packed_enum_or_unknown(10, &self.growth_target_type_list)?;
+        os.write_repeated_packed_enum_or_unknown(2, &self.growth_target_type_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,8 +163,8 @@ impl ::protobuf::Message for SetGrowthTargetAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.source = ::protobuf::EnumOrUnknown::new(super::GrowthTargetState::GrowthTargetState::OAHDMJMLLDF_BMAEKADBLDM);
-        self.OGFAEGDGBKE = 0;
+        self.GDNLMHDMIBH = 0;
+        self.source = ::protobuf::EnumOrUnknown::new(super::GrowthTargetState::GrowthTargetState::GrowthTargetState_FHJGCAHJKPP);
         self.avatar_id = 0;
         self.growth_target_type_list.clear();
         self.special_fields.clear();
@@ -172,8 +172,8 @@ impl ::protobuf::Message for SetGrowthTargetAvatarCsReq {
 
     fn default_instance() -> &'static SetGrowthTargetAvatarCsReq {
         static instance: SetGrowthTargetAvatarCsReq = SetGrowthTargetAvatarCsReq {
+            GDNLMHDMIBH: 0,
             source: ::protobuf::EnumOrUnknown::from_i32(0),
-            OGFAEGDGBKE: 0,
             avatar_id: 0,
             growth_target_type_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for SetGrowthTargetAvatarCsReq {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20SetGrowthTargetAvatarCsReq.proto\x1a\x1eGrowthTargetFunctionType.p\
     roto\x1a\x17GrowthTargetState.proto\"\xd9\x01\n\x1aSetGrowthTargetAvatar\
-    CsReq\x12*\n\x06source\x18\x07\x20\x01(\x0e2\x12.GrowthTargetStateR\x06s\
-    ource\x12\x20\n\x0bOGFAEGDGBKE\x18\x02\x20\x01(\rR\x0bOGFAEGDGBKE\x12\
-    \x1b\n\tavatar_id\x18\x06\x20\x01(\rR\x08avatarId\x12P\n\x17growth_targe\
-    t_type_list\x18\n\x20\x03(\x0e2\x19.GrowthTargetFunctionTypeR\x14growthT\
+    CsReq\x12\x20\n\x0bGDNLMHDMIBH\x18\r\x20\x01(\rR\x0bGDNLMHDMIBH\x12*\n\
+    \x06source\x18\x0f\x20\x01(\x0e2\x12.GrowthTargetStateR\x06source\x12\
+    \x1b\n\tavatar_id\x18\t\x20\x01(\rR\x08avatarId\x12P\n\x17growth_target_\
+    type_list\x18\x02\x20\x03(\x0e2\x19.GrowthTargetFunctionTypeR\x14growthT\
     argetTypeListb\x06proto3\
 ";
 

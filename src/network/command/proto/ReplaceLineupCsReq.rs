@@ -28,22 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReplaceLineupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.plane_id)
-    pub plane_id: u32,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.index)
-    pub index: u32,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.is_virtual)
-    pub is_virtual: bool,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.extra_lineup_type)
-    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.game_story_line_id)
     pub game_story_line_id: u32,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.lineup_slot_list)
-    pub lineup_slot_list: ::std::vec::Vec<super::LineupSlotData::LineupSlotData>,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.OEKGOGFKELD)
+    pub OEKGOGFKELD: bool,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.extra_lineup_type)
+    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.index)
+    pub index: u32,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.ODAOIGCHOEA)
+    pub ODAOIGCHOEA: bool,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.is_virtual)
+    pub is_virtual: bool,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.plane_id)
+    pub plane_id: u32,
     // @@protoc_insertion_point(field:ReplaceLineupCsReq.leader_slot)
     pub leader_slot: u32,
-    // @@protoc_insertion_point(field:ReplaceLineupCsReq.KCFCFCGEMOG)
-    pub KCFCFCGEMOG: bool,
+    // @@protoc_insertion_point(field:ReplaceLineupCsReq.lineup_slot_list)
+    pub lineup_slot_list: ::std::vec::Vec<super::LineupSlotData::LineupSlotData>,
     // special fields
     // @@protoc_insertion_point(special_field:ReplaceLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,22 +63,17 @@ impl ReplaceLineupCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(8);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "plane_id",
-            |m: &ReplaceLineupCsReq| { &m.plane_id },
-            |m: &mut ReplaceLineupCsReq| { &mut m.plane_id },
+            "game_story_line_id",
+            |m: &ReplaceLineupCsReq| { &m.game_story_line_id },
+            |m: &mut ReplaceLineupCsReq| { &mut m.game_story_line_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &ReplaceLineupCsReq| { &m.index },
-            |m: &mut ReplaceLineupCsReq| { &mut m.index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_virtual",
-            |m: &ReplaceLineupCsReq| { &m.is_virtual },
-            |m: &mut ReplaceLineupCsReq| { &mut m.is_virtual },
+            "OEKGOGFKELD",
+            |m: &ReplaceLineupCsReq| { &m.OEKGOGFKELD },
+            |m: &mut ReplaceLineupCsReq| { &mut m.OEKGOGFKELD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "extra_lineup_type",
@@ -84,24 +81,34 @@ impl ReplaceLineupCsReq {
             |m: &mut ReplaceLineupCsReq| { &mut m.extra_lineup_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "game_story_line_id",
-            |m: &ReplaceLineupCsReq| { &m.game_story_line_id },
-            |m: &mut ReplaceLineupCsReq| { &mut m.game_story_line_id },
+            "index",
+            |m: &ReplaceLineupCsReq| { &m.index },
+            |m: &mut ReplaceLineupCsReq| { &mut m.index },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lineup_slot_list",
-            |m: &ReplaceLineupCsReq| { &m.lineup_slot_list },
-            |m: &mut ReplaceLineupCsReq| { &mut m.lineup_slot_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ODAOIGCHOEA",
+            |m: &ReplaceLineupCsReq| { &m.ODAOIGCHOEA },
+            |m: &mut ReplaceLineupCsReq| { &mut m.ODAOIGCHOEA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_virtual",
+            |m: &ReplaceLineupCsReq| { &m.is_virtual },
+            |m: &mut ReplaceLineupCsReq| { &mut m.is_virtual },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "plane_id",
+            |m: &ReplaceLineupCsReq| { &m.plane_id },
+            |m: &mut ReplaceLineupCsReq| { &mut m.plane_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "leader_slot",
             |m: &ReplaceLineupCsReq| { &m.leader_slot },
             |m: &mut ReplaceLineupCsReq| { &mut m.leader_slot },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KCFCFCGEMOG",
-            |m: &ReplaceLineupCsReq| { &m.KCFCFCGEMOG },
-            |m: &mut ReplaceLineupCsReq| { &mut m.KCFCFCGEMOG },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lineup_slot_list",
+            |m: &ReplaceLineupCsReq| { &m.lineup_slot_list },
+            |m: &mut ReplaceLineupCsReq| { &mut m.lineup_slot_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReplaceLineupCsReq>(
             "ReplaceLineupCsReq",
@@ -121,29 +128,32 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                24 => {
-                    self.index = is.read_uint32()?;
-                },
-                40 => {
-                    self.is_virtual = is.read_bool()?;
-                },
-                64 => {
-                    self.extra_lineup_type = is.read_enum_or_unknown()?;
-                },
-                56 => {
+                88 => {
                     self.game_story_line_id = is.read_uint32()?;
                 },
-                122 => {
-                    self.lineup_slot_list.push(is.read_message()?);
+                80 => {
+                    self.OEKGOGFKELD = is.read_bool()?;
+                },
+                104 => {
+                    self.extra_lineup_type = is.read_enum_or_unknown()?;
+                },
+                40 => {
+                    self.index = is.read_uint32()?;
+                },
+                8 => {
+                    self.ODAOIGCHOEA = is.read_bool()?;
+                },
+                32 => {
+                    self.is_virtual = is.read_bool()?;
+                },
+                16 => {
+                    self.plane_id = is.read_uint32()?;
                 },
                 48 => {
                     self.leader_slot = is.read_uint32()?;
                 },
-                96 => {
-                    self.KCFCFCGEMOG = is.read_bool()?;
+                66 => {
+                    self.lineup_slot_list.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -157,61 +167,67 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.plane_id);
+        if self.game_story_line_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.game_story_line_id);
+        }
+        if self.OEKGOGFKELD != false {
+            my_size += 1 + 1;
+        }
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(13, self.extra_lineup_type.value());
         }
         if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.index);
+            my_size += ::protobuf::rt::uint32_size(5, self.index);
+        }
+        if self.ODAOIGCHOEA != false {
+            my_size += 1 + 1;
         }
         if self.is_virtual != false {
             my_size += 1 + 1;
         }
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(8, self.extra_lineup_type.value());
+        if self.plane_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.plane_id);
         }
-        if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.game_story_line_id);
+        if self.leader_slot != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.leader_slot);
         }
         for value in &self.lineup_slot_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.leader_slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.leader_slot);
-        }
-        if self.KCFCFCGEMOG != false {
-            my_size += 1 + 1;
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.plane_id != 0 {
-            os.write_uint32(9, self.plane_id)?;
+        if self.game_story_line_id != 0 {
+            os.write_uint32(11, self.game_story_line_id)?;
         }
-        if self.index != 0 {
-            os.write_uint32(3, self.index)?;
-        }
-        if self.is_virtual != false {
-            os.write_bool(5, self.is_virtual)?;
+        if self.OEKGOGFKELD != false {
+            os.write_bool(10, self.OEKGOGFKELD)?;
         }
         if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
         }
-        if self.game_story_line_id != 0 {
-            os.write_uint32(7, self.game_story_line_id)?;
+        if self.index != 0 {
+            os.write_uint32(5, self.index)?;
         }
-        for v in &self.lineup_slot_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
+        if self.ODAOIGCHOEA != false {
+            os.write_bool(1, self.ODAOIGCHOEA)?;
+        }
+        if self.is_virtual != false {
+            os.write_bool(4, self.is_virtual)?;
+        }
+        if self.plane_id != 0 {
+            os.write_uint32(2, self.plane_id)?;
+        }
         if self.leader_slot != 0 {
             os.write_uint32(6, self.leader_slot)?;
         }
-        if self.KCFCFCGEMOG != false {
-            os.write_bool(12, self.KCFCFCGEMOG)?;
-        }
+        for v in &self.lineup_slot_list {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -229,27 +245,29 @@ impl ::protobuf::Message for ReplaceLineupCsReq {
     }
 
     fn clear(&mut self) {
-        self.plane_id = 0;
-        self.index = 0;
-        self.is_virtual = false;
-        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.game_story_line_id = 0;
-        self.lineup_slot_list.clear();
+        self.OEKGOGFKELD = false;
+        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
+        self.index = 0;
+        self.ODAOIGCHOEA = false;
+        self.is_virtual = false;
+        self.plane_id = 0;
         self.leader_slot = 0;
-        self.KCFCFCGEMOG = false;
+        self.lineup_slot_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReplaceLineupCsReq {
         static instance: ReplaceLineupCsReq = ReplaceLineupCsReq {
-            plane_id: 0,
-            index: 0,
-            is_virtual: false,
-            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
             game_story_line_id: 0,
-            lineup_slot_list: ::std::vec::Vec::new(),
+            OEKGOGFKELD: false,
+            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            index: 0,
+            ODAOIGCHOEA: false,
+            is_virtual: false,
+            plane_id: 0,
             leader_slot: 0,
-            KCFCFCGEMOG: false,
+            lineup_slot_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -275,15 +293,15 @@ impl ::protobuf::reflect::ProtobufValue for ReplaceLineupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ReplaceLineupCsReq.proto\x1a\x15ExtraLineupType.proto\x1a\x14Lineu\
-    pSlotData.proto\"\xcd\x02\n\x12ReplaceLineupCsReq\x12\x19\n\x08plane_id\
-    \x18\t\x20\x01(\rR\x07planeId\x12\x14\n\x05index\x18\x03\x20\x01(\rR\x05\
-    index\x12\x1d\n\nis_virtual\x18\x05\x20\x01(\x08R\tisVirtual\x12<\n\x11e\
-    xtra_lineup_type\x18\x08\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLine\
-    upType\x12+\n\x12game_story_line_id\x18\x07\x20\x01(\rR\x0fgameStoryLine\
-    Id\x129\n\x10lineup_slot_list\x18\x0f\x20\x03(\x0b2\x0f.LineupSlotDataR\
-    \x0elineupSlotList\x12\x1f\n\x0bleader_slot\x18\x06\x20\x01(\rR\nleaderS\
-    lot\x12\x20\n\x0bKCFCFCGEMOG\x18\x0c\x20\x01(\x08R\x0bKCFCFCGEMOGb\x06pr\
-    oto3\
+    pSlotData.proto\"\xef\x02\n\x12ReplaceLineupCsReq\x12+\n\x12game_story_l\
+    ine_id\x18\x0b\x20\x01(\rR\x0fgameStoryLineId\x12\x20\n\x0bOEKGOGFKELD\
+    \x18\n\x20\x01(\x08R\x0bOEKGOGFKELD\x12<\n\x11extra_lineup_type\x18\r\
+    \x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x12\x14\n\x05inde\
+    x\x18\x05\x20\x01(\rR\x05index\x12\x20\n\x0bODAOIGCHOEA\x18\x01\x20\x01(\
+    \x08R\x0bODAOIGCHOEA\x12\x1d\n\nis_virtual\x18\x04\x20\x01(\x08R\tisVirt\
+    ual\x12\x19\n\x08plane_id\x18\x02\x20\x01(\rR\x07planeId\x12\x1f\n\x0ble\
+    ader_slot\x18\x06\x20\x01(\rR\nleaderSlot\x129\n\x10lineup_slot_list\x18\
+    \x08\x20\x03(\x0b2\x0f.LineupSlotDataR\x0elineupSlotListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

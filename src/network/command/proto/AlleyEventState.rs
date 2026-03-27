@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:AlleyEventState)
 pub enum AlleyEventState {
-    // @@protoc_insertion_point(enum_value:AlleyEventState.APKNFMHCMCD_BEJPNLMGGMF)
-    APKNFMHCMCD_BEJPNLMGGMF = 0,
-    // @@protoc_insertion_point(enum_value:AlleyEventState.APKNFMHCMCD_AMLGMJNBCLP)
-    APKNFMHCMCD_AMLGMJNBCLP = 1,
-    // @@protoc_insertion_point(enum_value:AlleyEventState.APKNFMHCMCD_OBKMADFMHHH)
-    APKNFMHCMCD_OBKMADFMHHH = 2,
-    // @@protoc_insertion_point(enum_value:AlleyEventState.APKNFMHCMCD_MJEKOJAJNBN)
-    APKNFMHCMCD_MJEKOJAJNBN = 3,
+    // @@protoc_insertion_point(enum_value:AlleyEventState.AlleyEventState_LOLECAEMNDG)
+    AlleyEventState_LOLECAEMNDG = 0,
+    // @@protoc_insertion_point(enum_value:AlleyEventState.AlleyEventState_NMKIOMNMOED)
+    AlleyEventState_NMKIOMNMOED = 1,
+    // @@protoc_insertion_point(enum_value:AlleyEventState.AlleyEventState_ODFLBCAGBGJ)
+    AlleyEventState_ODFLBCAGBGJ = 2,
+    // @@protoc_insertion_point(enum_value:AlleyEventState.AlleyEventState_HNKJAKONEGL)
+    AlleyEventState_HNKJAKONEGL = 3,
 }
 
 impl ::protobuf::Enum for AlleyEventState {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for AlleyEventState {
 
     fn from_i32(value: i32) -> ::std::option::Option<AlleyEventState> {
         match value {
-            0 => ::std::option::Option::Some(AlleyEventState::APKNFMHCMCD_BEJPNLMGGMF),
-            1 => ::std::option::Option::Some(AlleyEventState::APKNFMHCMCD_AMLGMJNBCLP),
-            2 => ::std::option::Option::Some(AlleyEventState::APKNFMHCMCD_OBKMADFMHHH),
-            3 => ::std::option::Option::Some(AlleyEventState::APKNFMHCMCD_MJEKOJAJNBN),
+            0 => ::std::option::Option::Some(AlleyEventState::AlleyEventState_LOLECAEMNDG),
+            1 => ::std::option::Option::Some(AlleyEventState::AlleyEventState_NMKIOMNMOED),
+            2 => ::std::option::Option::Some(AlleyEventState::AlleyEventState_ODFLBCAGBGJ),
+            3 => ::std::option::Option::Some(AlleyEventState::AlleyEventState_HNKJAKONEGL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<AlleyEventState> {
         match str {
-            "APKNFMHCMCD_BEJPNLMGGMF" => ::std::option::Option::Some(AlleyEventState::APKNFMHCMCD_BEJPNLMGGMF),
-            "APKNFMHCMCD_AMLGMJNBCLP" => ::std::option::Option::Some(AlleyEventState::APKNFMHCMCD_AMLGMJNBCLP),
-            "APKNFMHCMCD_OBKMADFMHHH" => ::std::option::Option::Some(AlleyEventState::APKNFMHCMCD_OBKMADFMHHH),
-            "APKNFMHCMCD_MJEKOJAJNBN" => ::std::option::Option::Some(AlleyEventState::APKNFMHCMCD_MJEKOJAJNBN),
+            "AlleyEventState_LOLECAEMNDG" => ::std::option::Option::Some(AlleyEventState::AlleyEventState_LOLECAEMNDG),
+            "AlleyEventState_NMKIOMNMOED" => ::std::option::Option::Some(AlleyEventState::AlleyEventState_NMKIOMNMOED),
+            "AlleyEventState_ODFLBCAGBGJ" => ::std::option::Option::Some(AlleyEventState::AlleyEventState_ODFLBCAGBGJ),
+            "AlleyEventState_HNKJAKONEGL" => ::std::option::Option::Some(AlleyEventState::AlleyEventState_HNKJAKONEGL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [AlleyEventState] = &[
-        AlleyEventState::APKNFMHCMCD_BEJPNLMGGMF,
-        AlleyEventState::APKNFMHCMCD_AMLGMJNBCLP,
-        AlleyEventState::APKNFMHCMCD_OBKMADFMHHH,
-        AlleyEventState::APKNFMHCMCD_MJEKOJAJNBN,
+        AlleyEventState::AlleyEventState_LOLECAEMNDG,
+        AlleyEventState::AlleyEventState_NMKIOMNMOED,
+        AlleyEventState::AlleyEventState_ODFLBCAGBGJ,
+        AlleyEventState::AlleyEventState_HNKJAKONEGL,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for AlleyEventState {
 
 impl ::std::default::Default for AlleyEventState {
     fn default() -> Self {
-        AlleyEventState::APKNFMHCMCD_BEJPNLMGGMF
+        AlleyEventState::AlleyEventState_LOLECAEMNDG
     }
 }
 
@@ -97,10 +97,10 @@ impl AlleyEventState {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15AlleyEventState.proto*\x85\x01\n\x0fAlleyEventState\x12\x1b\n\x17A\
-    PKNFMHCMCD_BEJPNLMGGMF\x10\0\x12\x1b\n\x17APKNFMHCMCD_AMLGMJNBCLP\x10\
-    \x01\x12\x1b\n\x17APKNFMHCMCD_OBKMADFMHHH\x10\x02\x12\x1b\n\x17APKNFMHCM\
-    CD_MJEKOJAJNBN\x10\x03b\x06proto3\
+    \n\x15AlleyEventState.proto*\x95\x01\n\x0fAlleyEventState\x12\x1f\n\x1bA\
+    lleyEventState_LOLECAEMNDG\x10\0\x12\x1f\n\x1bAlleyEventState_NMKIOMNMOE\
+    D\x10\x01\x12\x1f\n\x1bAlleyEventState_ODFLBCAGBGJ\x10\x02\x12\x1f\n\x1b\
+    AlleyEventState_HNKJAKONEGL\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

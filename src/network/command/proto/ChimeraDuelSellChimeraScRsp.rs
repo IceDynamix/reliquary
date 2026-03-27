@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelSellChimeraScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelSellChimeraScRsp.NPIEEKJOHEL)
-    pub NPIEEKJOHEL: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelSellChimeraScRsp.OHIEJDLBBJE)
+    pub OHIEJDLBBJE: u32,
     // @@protoc_insertion_point(field:ChimeraDuelSellChimeraScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChimeraDuelSellChimeraScRsp.HKKAACLJDEE)
-    pub HKKAACLJDEE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChimeraDuelSellChimeraScRsp.AEHHIFIJJCM)
+    pub AEHHIFIJJCM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelSellChimeraScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl ChimeraDuelSellChimeraScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NPIEEKJOHEL",
-            |m: &ChimeraDuelSellChimeraScRsp| { &m.NPIEEKJOHEL },
-            |m: &mut ChimeraDuelSellChimeraScRsp| { &mut m.NPIEEKJOHEL },
+            "OHIEJDLBBJE",
+            |m: &ChimeraDuelSellChimeraScRsp| { &m.OHIEJDLBBJE },
+            |m: &mut ChimeraDuelSellChimeraScRsp| { &mut m.OHIEJDLBBJE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -64,9 +64,9 @@ impl ChimeraDuelSellChimeraScRsp {
             |m: &mut ChimeraDuelSellChimeraScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HKKAACLJDEE",
-            |m: &ChimeraDuelSellChimeraScRsp| { &m.HKKAACLJDEE },
-            |m: &mut ChimeraDuelSellChimeraScRsp| { &mut m.HKKAACLJDEE },
+            "AEHHIFIJJCM",
+            |m: &ChimeraDuelSellChimeraScRsp| { &m.AEHHIFIJJCM },
+            |m: &mut ChimeraDuelSellChimeraScRsp| { &mut m.AEHHIFIJJCM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelSellChimeraScRsp>(
             "ChimeraDuelSellChimeraScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for ChimeraDuelSellChimeraScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.NPIEEKJOHEL = is.read_uint32()?;
+                112 => {
+                    self.OHIEJDLBBJE = is.read_uint32()?;
                 },
-                88 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HKKAACLJDEE)?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AEHHIFIJJCM)?;
                 },
-                104 => {
-                    self.HKKAACLJDEE.push(is.read_uint32()?);
+                56 => {
+                    self.AEHHIFIJJCM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for ChimeraDuelSellChimeraScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NPIEEKJOHEL != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NPIEEKJOHEL);
+        if self.OHIEJDLBBJE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.OHIEJDLBBJE);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.HKKAACLJDEE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.AEHHIFIJJCM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NPIEEKJOHEL != 0 {
-            os.write_uint32(5, self.NPIEEKJOHEL)?;
+        if self.OHIEJDLBBJE != 0 {
+            os.write_uint32(14, self.OHIEJDLBBJE)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(13, &self.HKKAACLJDEE)?;
+        os.write_repeated_packed_uint32(7, &self.AEHHIFIJJCM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for ChimeraDuelSellChimeraScRsp {
     }
 
     fn clear(&mut self) {
-        self.NPIEEKJOHEL = 0;
+        self.OHIEJDLBBJE = 0;
         self.retcode = 0;
-        self.HKKAACLJDEE.clear();
+        self.AEHHIFIJJCM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelSellChimeraScRsp {
         static instance: ChimeraDuelSellChimeraScRsp = ChimeraDuelSellChimeraScRsp {
-            NPIEEKJOHEL: 0,
+            OHIEJDLBBJE: 0,
             retcode: 0,
-            HKKAACLJDEE: ::std::vec::Vec::new(),
+            AEHHIFIJJCM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelSellChimeraScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ChimeraDuelSellChimeraScRsp.proto\"{\n\x1bChimeraDuelSellChimeraScRsp\
-    \x12\x20\n\x0bNPIEEKJOHEL\x18\x05\x20\x01(\rR\x0bNPIEEKJOHEL\x12\x18\n\
-    \x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bHKKAACLJDEE\x18\
-    \r\x20\x03(\rR\x0bHKKAACLJDEEb\x06proto3\
+    \x12\x20\n\x0bOHIEJDLBBJE\x18\x0e\x20\x01(\rR\x0bOHIEJDLBBJE\x12\x18\n\
+    \x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bAEHHIFIJJCM\x18\
+    \x07\x20\x03(\rR\x0bAEHHIFIJJCMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

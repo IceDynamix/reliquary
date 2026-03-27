@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooTakeScRsp {
     // message fields
+    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.IOCAMKIICMP)
+    pub IOCAMKIICMP: u32,
     // @@protoc_insertion_point(field:SpaceZooTakeScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.ICMDDHPKPID)
-    pub ICMDDHPKPID: u32,
     // @@protoc_insertion_point(field:SpaceZooTakeScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
@@ -54,14 +54,14 @@ impl SpaceZooTakeScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IOCAMKIICMP",
+            |m: &SpaceZooTakeScRsp| { &m.IOCAMKIICMP },
+            |m: &mut SpaceZooTakeScRsp| { &mut m.IOCAMKIICMP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SpaceZooTakeScRsp| { &m.retcode },
             |m: &mut SpaceZooTakeScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICMDDHPKPID",
-            |m: &SpaceZooTakeScRsp| { &m.ICMDDHPKPID },
-            |m: &mut SpaceZooTakeScRsp| { &mut m.ICMDDHPKPID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.retcode = is.read_uint32()?;
+                24 => {
+                    self.IOCAMKIICMP = is.read_uint32()?;
                 },
                 32 => {
-                    self.ICMDDHPKPID = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
                 },
-                42 => {
+                66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
                 tag => {
@@ -107,11 +107,11 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        if self.IOCAMKIICMP != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IOCAMKIICMP);
         }
-        if self.ICMDDHPKPID != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.ICMDDHPKPID);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+        if self.IOCAMKIICMP != 0 {
+            os.write_uint32(3, self.IOCAMKIICMP)?;
         }
-        if self.ICMDDHPKPID != 0 {
-            os.write_uint32(4, self.ICMDDHPKPID)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     }
 
     fn clear(&mut self) {
+        self.IOCAMKIICMP = 0;
         self.retcode = 0;
-        self.ICMDDHPKPID = 0;
         self.reward.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooTakeScRsp {
         static instance: SpaceZooTakeScRsp = SpaceZooTakeScRsp {
+            IOCAMKIICMP: 0,
             retcode: 0,
-            ICMDDHPKPID: 0,
             reward: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooTakeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SpaceZooTakeScRsp.proto\x1a\x0eItemList.proto\"r\n\x11SpaceZooTake\
-    ScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bI\
-    CMDDHPKPID\x18\x04\x20\x01(\rR\x0bICMDDHPKPID\x12!\n\x06reward\x18\x05\
-    \x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    ScRsp\x12\x20\n\x0bIOCAMKIICMP\x18\x03\x20\x01(\rR\x0bIOCAMKIICMP\x12\
+    \x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\
+    \x08\x20\x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

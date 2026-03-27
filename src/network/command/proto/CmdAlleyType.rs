@@ -27,80 +27,80 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdAlleyType)
 pub enum CmdAlleyType {
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_GKJBAODJMJG)
-    MPDLIJAHICP_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_GAHOKKIPNDB)
-    MPDLIJAHICP_GAHOKKIPNDB = 4716,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_EIKFDDKDKEJ)
-    MPDLIJAHICP_EIKFDDKDKEJ = 4751,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_HHJBGEOPOND)
-    MPDLIJAHICP_HHJBGEOPOND = 4766,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_FFFHEGBHMGM)
-    MPDLIJAHICP_FFFHEGBHMGM = 4795,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_GOCIFBGBKCJ)
-    MPDLIJAHICP_GOCIFBGBKCJ = 4756,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_CLGCIFHHBON)
-    MPDLIJAHICP_CLGCIFHHBON = 4712,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_KFDHMPKKMNB)
-    MPDLIJAHICP_KFDHMPKKMNB = 4777,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_BIKAALJIOOG)
-    MPDLIJAHICP_BIKAALJIOOG = 4728,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_PIHMKAKKMNJ)
-    MPDLIJAHICP_PIHMKAKKMNJ = 4734,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_JLMGHAIMOFM)
-    MPDLIJAHICP_JLMGHAIMOFM = 4769,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_LNNAKPDAHKH)
-    MPDLIJAHICP_LNNAKPDAHKH = 4711,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_MGHPOPBKFLG)
-    MPDLIJAHICP_MGHPOPBKFLG = 4788,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_NBMBOPPEEDE)
-    MPDLIJAHICP_NBMBOPPEEDE = 4785,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_ENOGLBDICDG)
-    MPDLIJAHICP_ENOGLBDICDG = 4796,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_NBCLFHDPOEH)
-    MPDLIJAHICP_NBCLFHDPOEH = 4750,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_KKMHBOFJHDJ)
-    MPDLIJAHICP_KKMHBOFJHDJ = 4752,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_PHJLCANDGPM)
-    MPDLIJAHICP_PHJLCANDGPM = 4786,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_NELLHANDNLB)
-    MPDLIJAHICP_NELLHANDNLB = 4776,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_BGAPHNJINAO)
-    MPDLIJAHICP_BGAPHNJINAO = 4779,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_OAOFFDHACAF)
-    MPDLIJAHICP_OAOFFDHACAF = 4793,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_BEJGBDJIGBO)
-    MPDLIJAHICP_BEJGBDJIGBO = 4780,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_CKNCFDLDOGK)
-    MPDLIJAHICP_CKNCFDLDOGK = 4720,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_PMPFOLNLCFM)
-    MPDLIJAHICP_PMPFOLNLCFM = 4709,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_NNEHBJBAGII)
-    MPDLIJAHICP_NNEHBJBAGII = 4778,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_JLGOHFFGMHI)
-    MPDLIJAHICP_JLGOHFFGMHI = 4755,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_LDJFBDDGLHJ)
-    MPDLIJAHICP_LDJFBDDGLHJ = 4705,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_NIIGPLDKOHL)
-    MPDLIJAHICP_NIIGPLDKOHL = 4713,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_MDEPGODHHOJ)
-    MPDLIJAHICP_MDEPGODHHOJ = 4737,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_DNNOAPOEBNH)
-    MPDLIJAHICP_DNNOAPOEBNH = 4782,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_OIMNNBOIOMF)
-    MPDLIJAHICP_OIMNNBOIOMF = 4775,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_PAMIIBBBJGE)
-    MPDLIJAHICP_PAMIIBBBJGE = 4747,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_FFACKHBHCHB)
-    MPDLIJAHICP_FFACKHBHCHB = 4742,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_AMDANALKCJJ)
-    MPDLIJAHICP_AMDANALKCJJ = 4757,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_ELIIDBILMEP)
-    MPDLIJAHICP_ELIIDBILMEP = 4714,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_IOABFMIKLPK)
-    MPDLIJAHICP_IOABFMIKLPK = 4799,
-    // @@protoc_insertion_point(enum_value:CmdAlleyType.MPDLIJAHICP_EMHBINNDLKK)
-    MPDLIJAHICP_EMHBINNDLKK = 4726,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_MNFEPONEDDJ)
+    CmdAlleyType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_NEFKGKIBBAP)
+    CmdAlleyType_NEFKGKIBBAP = 4719,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_BINICIPJKNG)
+    CmdAlleyType_BINICIPJKNG = 4781,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_HCILOFKFFIC)
+    CmdAlleyType_HCILOFKFFIC = 4768,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_FLAMKNKDICI)
+    CmdAlleyType_FLAMKNKDICI = 4709,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_MHEGCPEFMMP)
+    CmdAlleyType_MHEGCPEFMMP = 4740,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_MJAILEGEGDH)
+    CmdAlleyType_MJAILEGEGDH = 4712,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_POPOEMPJPMA)
+    CmdAlleyType_POPOEMPJPMA = 4717,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_BBGJLEOKGCL)
+    CmdAlleyType_BBGJLEOKGCL = 4745,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_OOCJHOCPGIK)
+    CmdAlleyType_OOCJHOCPGIK = 4705,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_PMLEHPHGCCK)
+    CmdAlleyType_PMLEHPHGCCK = 4757,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_MDBGKGNNHJC)
+    CmdAlleyType_MDBGKGNNHJC = 4727,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_LIDKHFHHPMO)
+    CmdAlleyType_LIDKHFHHPMO = 4796,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_NDLBPBMLIHD)
+    CmdAlleyType_NDLBPBMLIHD = 4746,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_AMMOAJNOJEF)
+    CmdAlleyType_AMMOAJNOJEF = 4734,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_HCAHKOKGEOJ)
+    CmdAlleyType_HCAHKOKGEOJ = 4737,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_IFEOADEPEJE)
+    CmdAlleyType_IFEOADEPEJE = 4706,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_INBLJGOJNPE)
+    CmdAlleyType_INBLJGOJNPE = 4769,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_BMDJMKKFPDP)
+    CmdAlleyType_BMDJMKKFPDP = 4708,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_LMFKCCGECON)
+    CmdAlleyType_LMFKCCGECON = 4790,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_LMPNLOOAJDD)
+    CmdAlleyType_LMPNLOOAJDD = 4701,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_JNECLKNPINP)
+    CmdAlleyType_JNECLKNPINP = 4722,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_GKBOFGLHJKI)
+    CmdAlleyType_GKBOFGLHJKI = 4748,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_BDOEIECNODG)
+    CmdAlleyType_BDOEIECNODG = 4783,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_EODPJFNFBAJ)
+    CmdAlleyType_EODPJFNFBAJ = 4731,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_KBKFBFCADGH)
+    CmdAlleyType_KBKFBFCADGH = 4800,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_MDHIBHANJHF)
+    CmdAlleyType_MDHIBHANJHF = 4703,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_HOPOFCONGGM)
+    CmdAlleyType_HOPOFCONGGM = 4788,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_LDPJDCKALLL)
+    CmdAlleyType_LDPJDCKALLL = 4702,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_HJEDKGPCKPI)
+    CmdAlleyType_HJEDKGPCKPI = 4718,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_IBLJMAKPGLE)
+    CmdAlleyType_IBLJMAKPGLE = 4764,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_JFGBJJDMBDB)
+    CmdAlleyType_JFGBJJDMBDB = 4762,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_LIKKNOBAAEH)
+    CmdAlleyType_LIKKNOBAAEH = 4743,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_LAKOGLFFJCL)
+    CmdAlleyType_LAKOGLFFJCL = 4791,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_JGDDNJMHPLI)
+    CmdAlleyType_JGDDNJMHPLI = 4724,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_EBLGNKIPLFM)
+    CmdAlleyType_EBLGNKIPLFM = 4784,
+    // @@protoc_insertion_point(enum_value:CmdAlleyType.CmdAlleyType_MDAELDLBFCD)
+    CmdAlleyType_MDAELDLBFCD = 4704,
 }
 
 impl ::protobuf::Enum for CmdAlleyType {
@@ -112,128 +112,128 @@ impl ::protobuf::Enum for CmdAlleyType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdAlleyType> {
         match value {
-            0 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_GKJBAODJMJG),
-            4716 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_GAHOKKIPNDB),
-            4751 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_EIKFDDKDKEJ),
-            4766 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_HHJBGEOPOND),
-            4795 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_FFFHEGBHMGM),
-            4756 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_GOCIFBGBKCJ),
-            4712 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_CLGCIFHHBON),
-            4777 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_KFDHMPKKMNB),
-            4728 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_BIKAALJIOOG),
-            4734 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_PIHMKAKKMNJ),
-            4769 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_JLMGHAIMOFM),
-            4711 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_LNNAKPDAHKH),
-            4788 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_MGHPOPBKFLG),
-            4785 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_NBMBOPPEEDE),
-            4796 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_ENOGLBDICDG),
-            4750 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_NBCLFHDPOEH),
-            4752 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_KKMHBOFJHDJ),
-            4786 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_PHJLCANDGPM),
-            4776 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_NELLHANDNLB),
-            4779 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_BGAPHNJINAO),
-            4793 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_OAOFFDHACAF),
-            4780 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_BEJGBDJIGBO),
-            4720 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_CKNCFDLDOGK),
-            4709 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_PMPFOLNLCFM),
-            4778 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_NNEHBJBAGII),
-            4755 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_JLGOHFFGMHI),
-            4705 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_LDJFBDDGLHJ),
-            4713 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_NIIGPLDKOHL),
-            4737 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_MDEPGODHHOJ),
-            4782 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_DNNOAPOEBNH),
-            4775 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_OIMNNBOIOMF),
-            4747 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_PAMIIBBBJGE),
-            4742 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_FFACKHBHCHB),
-            4757 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_AMDANALKCJJ),
-            4714 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_ELIIDBILMEP),
-            4799 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_IOABFMIKLPK),
-            4726 => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_EMHBINNDLKK),
+            0 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MNFEPONEDDJ),
+            4719 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_NEFKGKIBBAP),
+            4781 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_BINICIPJKNG),
+            4768 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_HCILOFKFFIC),
+            4709 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_FLAMKNKDICI),
+            4740 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MHEGCPEFMMP),
+            4712 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MJAILEGEGDH),
+            4717 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_POPOEMPJPMA),
+            4745 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_BBGJLEOKGCL),
+            4705 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_OOCJHOCPGIK),
+            4757 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_PMLEHPHGCCK),
+            4727 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MDBGKGNNHJC),
+            4796 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LIDKHFHHPMO),
+            4746 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_NDLBPBMLIHD),
+            4734 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_AMMOAJNOJEF),
+            4737 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_HCAHKOKGEOJ),
+            4706 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_IFEOADEPEJE),
+            4769 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_INBLJGOJNPE),
+            4708 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_BMDJMKKFPDP),
+            4790 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LMFKCCGECON),
+            4701 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LMPNLOOAJDD),
+            4722 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_JNECLKNPINP),
+            4748 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_GKBOFGLHJKI),
+            4783 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_BDOEIECNODG),
+            4731 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_EODPJFNFBAJ),
+            4800 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_KBKFBFCADGH),
+            4703 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MDHIBHANJHF),
+            4788 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_HOPOFCONGGM),
+            4702 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LDPJDCKALLL),
+            4718 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_HJEDKGPCKPI),
+            4764 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_IBLJMAKPGLE),
+            4762 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_JFGBJJDMBDB),
+            4743 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LIKKNOBAAEH),
+            4791 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LAKOGLFFJCL),
+            4724 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_JGDDNJMHPLI),
+            4784 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_EBLGNKIPLFM),
+            4704 => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MDAELDLBFCD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdAlleyType> {
         match str {
-            "MPDLIJAHICP_GKJBAODJMJG" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_GKJBAODJMJG),
-            "MPDLIJAHICP_GAHOKKIPNDB" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_GAHOKKIPNDB),
-            "MPDLIJAHICP_EIKFDDKDKEJ" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_EIKFDDKDKEJ),
-            "MPDLIJAHICP_HHJBGEOPOND" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_HHJBGEOPOND),
-            "MPDLIJAHICP_FFFHEGBHMGM" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_FFFHEGBHMGM),
-            "MPDLIJAHICP_GOCIFBGBKCJ" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_GOCIFBGBKCJ),
-            "MPDLIJAHICP_CLGCIFHHBON" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_CLGCIFHHBON),
-            "MPDLIJAHICP_KFDHMPKKMNB" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_KFDHMPKKMNB),
-            "MPDLIJAHICP_BIKAALJIOOG" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_BIKAALJIOOG),
-            "MPDLIJAHICP_PIHMKAKKMNJ" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_PIHMKAKKMNJ),
-            "MPDLIJAHICP_JLMGHAIMOFM" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_JLMGHAIMOFM),
-            "MPDLIJAHICP_LNNAKPDAHKH" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_LNNAKPDAHKH),
-            "MPDLIJAHICP_MGHPOPBKFLG" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_MGHPOPBKFLG),
-            "MPDLIJAHICP_NBMBOPPEEDE" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_NBMBOPPEEDE),
-            "MPDLIJAHICP_ENOGLBDICDG" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_ENOGLBDICDG),
-            "MPDLIJAHICP_NBCLFHDPOEH" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_NBCLFHDPOEH),
-            "MPDLIJAHICP_KKMHBOFJHDJ" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_KKMHBOFJHDJ),
-            "MPDLIJAHICP_PHJLCANDGPM" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_PHJLCANDGPM),
-            "MPDLIJAHICP_NELLHANDNLB" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_NELLHANDNLB),
-            "MPDLIJAHICP_BGAPHNJINAO" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_BGAPHNJINAO),
-            "MPDLIJAHICP_OAOFFDHACAF" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_OAOFFDHACAF),
-            "MPDLIJAHICP_BEJGBDJIGBO" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_BEJGBDJIGBO),
-            "MPDLIJAHICP_CKNCFDLDOGK" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_CKNCFDLDOGK),
-            "MPDLIJAHICP_PMPFOLNLCFM" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_PMPFOLNLCFM),
-            "MPDLIJAHICP_NNEHBJBAGII" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_NNEHBJBAGII),
-            "MPDLIJAHICP_JLGOHFFGMHI" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_JLGOHFFGMHI),
-            "MPDLIJAHICP_LDJFBDDGLHJ" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_LDJFBDDGLHJ),
-            "MPDLIJAHICP_NIIGPLDKOHL" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_NIIGPLDKOHL),
-            "MPDLIJAHICP_MDEPGODHHOJ" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_MDEPGODHHOJ),
-            "MPDLIJAHICP_DNNOAPOEBNH" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_DNNOAPOEBNH),
-            "MPDLIJAHICP_OIMNNBOIOMF" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_OIMNNBOIOMF),
-            "MPDLIJAHICP_PAMIIBBBJGE" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_PAMIIBBBJGE),
-            "MPDLIJAHICP_FFACKHBHCHB" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_FFACKHBHCHB),
-            "MPDLIJAHICP_AMDANALKCJJ" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_AMDANALKCJJ),
-            "MPDLIJAHICP_ELIIDBILMEP" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_ELIIDBILMEP),
-            "MPDLIJAHICP_IOABFMIKLPK" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_IOABFMIKLPK),
-            "MPDLIJAHICP_EMHBINNDLKK" => ::std::option::Option::Some(CmdAlleyType::MPDLIJAHICP_EMHBINNDLKK),
+            "CmdAlleyType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MNFEPONEDDJ),
+            "CmdAlleyType_NEFKGKIBBAP" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_NEFKGKIBBAP),
+            "CmdAlleyType_BINICIPJKNG" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_BINICIPJKNG),
+            "CmdAlleyType_HCILOFKFFIC" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_HCILOFKFFIC),
+            "CmdAlleyType_FLAMKNKDICI" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_FLAMKNKDICI),
+            "CmdAlleyType_MHEGCPEFMMP" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MHEGCPEFMMP),
+            "CmdAlleyType_MJAILEGEGDH" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MJAILEGEGDH),
+            "CmdAlleyType_POPOEMPJPMA" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_POPOEMPJPMA),
+            "CmdAlleyType_BBGJLEOKGCL" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_BBGJLEOKGCL),
+            "CmdAlleyType_OOCJHOCPGIK" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_OOCJHOCPGIK),
+            "CmdAlleyType_PMLEHPHGCCK" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_PMLEHPHGCCK),
+            "CmdAlleyType_MDBGKGNNHJC" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MDBGKGNNHJC),
+            "CmdAlleyType_LIDKHFHHPMO" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LIDKHFHHPMO),
+            "CmdAlleyType_NDLBPBMLIHD" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_NDLBPBMLIHD),
+            "CmdAlleyType_AMMOAJNOJEF" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_AMMOAJNOJEF),
+            "CmdAlleyType_HCAHKOKGEOJ" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_HCAHKOKGEOJ),
+            "CmdAlleyType_IFEOADEPEJE" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_IFEOADEPEJE),
+            "CmdAlleyType_INBLJGOJNPE" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_INBLJGOJNPE),
+            "CmdAlleyType_BMDJMKKFPDP" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_BMDJMKKFPDP),
+            "CmdAlleyType_LMFKCCGECON" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LMFKCCGECON),
+            "CmdAlleyType_LMPNLOOAJDD" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LMPNLOOAJDD),
+            "CmdAlleyType_JNECLKNPINP" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_JNECLKNPINP),
+            "CmdAlleyType_GKBOFGLHJKI" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_GKBOFGLHJKI),
+            "CmdAlleyType_BDOEIECNODG" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_BDOEIECNODG),
+            "CmdAlleyType_EODPJFNFBAJ" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_EODPJFNFBAJ),
+            "CmdAlleyType_KBKFBFCADGH" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_KBKFBFCADGH),
+            "CmdAlleyType_MDHIBHANJHF" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MDHIBHANJHF),
+            "CmdAlleyType_HOPOFCONGGM" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_HOPOFCONGGM),
+            "CmdAlleyType_LDPJDCKALLL" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LDPJDCKALLL),
+            "CmdAlleyType_HJEDKGPCKPI" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_HJEDKGPCKPI),
+            "CmdAlleyType_IBLJMAKPGLE" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_IBLJMAKPGLE),
+            "CmdAlleyType_JFGBJJDMBDB" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_JFGBJJDMBDB),
+            "CmdAlleyType_LIKKNOBAAEH" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LIKKNOBAAEH),
+            "CmdAlleyType_LAKOGLFFJCL" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_LAKOGLFFJCL),
+            "CmdAlleyType_JGDDNJMHPLI" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_JGDDNJMHPLI),
+            "CmdAlleyType_EBLGNKIPLFM" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_EBLGNKIPLFM),
+            "CmdAlleyType_MDAELDLBFCD" => ::std::option::Option::Some(CmdAlleyType::CmdAlleyType_MDAELDLBFCD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdAlleyType] = &[
-        CmdAlleyType::MPDLIJAHICP_GKJBAODJMJG,
-        CmdAlleyType::MPDLIJAHICP_GAHOKKIPNDB,
-        CmdAlleyType::MPDLIJAHICP_EIKFDDKDKEJ,
-        CmdAlleyType::MPDLIJAHICP_HHJBGEOPOND,
-        CmdAlleyType::MPDLIJAHICP_FFFHEGBHMGM,
-        CmdAlleyType::MPDLIJAHICP_GOCIFBGBKCJ,
-        CmdAlleyType::MPDLIJAHICP_CLGCIFHHBON,
-        CmdAlleyType::MPDLIJAHICP_KFDHMPKKMNB,
-        CmdAlleyType::MPDLIJAHICP_BIKAALJIOOG,
-        CmdAlleyType::MPDLIJAHICP_PIHMKAKKMNJ,
-        CmdAlleyType::MPDLIJAHICP_JLMGHAIMOFM,
-        CmdAlleyType::MPDLIJAHICP_LNNAKPDAHKH,
-        CmdAlleyType::MPDLIJAHICP_MGHPOPBKFLG,
-        CmdAlleyType::MPDLIJAHICP_NBMBOPPEEDE,
-        CmdAlleyType::MPDLIJAHICP_ENOGLBDICDG,
-        CmdAlleyType::MPDLIJAHICP_NBCLFHDPOEH,
-        CmdAlleyType::MPDLIJAHICP_KKMHBOFJHDJ,
-        CmdAlleyType::MPDLIJAHICP_PHJLCANDGPM,
-        CmdAlleyType::MPDLIJAHICP_NELLHANDNLB,
-        CmdAlleyType::MPDLIJAHICP_BGAPHNJINAO,
-        CmdAlleyType::MPDLIJAHICP_OAOFFDHACAF,
-        CmdAlleyType::MPDLIJAHICP_BEJGBDJIGBO,
-        CmdAlleyType::MPDLIJAHICP_CKNCFDLDOGK,
-        CmdAlleyType::MPDLIJAHICP_PMPFOLNLCFM,
-        CmdAlleyType::MPDLIJAHICP_NNEHBJBAGII,
-        CmdAlleyType::MPDLIJAHICP_JLGOHFFGMHI,
-        CmdAlleyType::MPDLIJAHICP_LDJFBDDGLHJ,
-        CmdAlleyType::MPDLIJAHICP_NIIGPLDKOHL,
-        CmdAlleyType::MPDLIJAHICP_MDEPGODHHOJ,
-        CmdAlleyType::MPDLIJAHICP_DNNOAPOEBNH,
-        CmdAlleyType::MPDLIJAHICP_OIMNNBOIOMF,
-        CmdAlleyType::MPDLIJAHICP_PAMIIBBBJGE,
-        CmdAlleyType::MPDLIJAHICP_FFACKHBHCHB,
-        CmdAlleyType::MPDLIJAHICP_AMDANALKCJJ,
-        CmdAlleyType::MPDLIJAHICP_ELIIDBILMEP,
-        CmdAlleyType::MPDLIJAHICP_IOABFMIKLPK,
-        CmdAlleyType::MPDLIJAHICP_EMHBINNDLKK,
+        CmdAlleyType::CmdAlleyType_MNFEPONEDDJ,
+        CmdAlleyType::CmdAlleyType_NEFKGKIBBAP,
+        CmdAlleyType::CmdAlleyType_BINICIPJKNG,
+        CmdAlleyType::CmdAlleyType_HCILOFKFFIC,
+        CmdAlleyType::CmdAlleyType_FLAMKNKDICI,
+        CmdAlleyType::CmdAlleyType_MHEGCPEFMMP,
+        CmdAlleyType::CmdAlleyType_MJAILEGEGDH,
+        CmdAlleyType::CmdAlleyType_POPOEMPJPMA,
+        CmdAlleyType::CmdAlleyType_BBGJLEOKGCL,
+        CmdAlleyType::CmdAlleyType_OOCJHOCPGIK,
+        CmdAlleyType::CmdAlleyType_PMLEHPHGCCK,
+        CmdAlleyType::CmdAlleyType_MDBGKGNNHJC,
+        CmdAlleyType::CmdAlleyType_LIDKHFHHPMO,
+        CmdAlleyType::CmdAlleyType_NDLBPBMLIHD,
+        CmdAlleyType::CmdAlleyType_AMMOAJNOJEF,
+        CmdAlleyType::CmdAlleyType_HCAHKOKGEOJ,
+        CmdAlleyType::CmdAlleyType_IFEOADEPEJE,
+        CmdAlleyType::CmdAlleyType_INBLJGOJNPE,
+        CmdAlleyType::CmdAlleyType_BMDJMKKFPDP,
+        CmdAlleyType::CmdAlleyType_LMFKCCGECON,
+        CmdAlleyType::CmdAlleyType_LMPNLOOAJDD,
+        CmdAlleyType::CmdAlleyType_JNECLKNPINP,
+        CmdAlleyType::CmdAlleyType_GKBOFGLHJKI,
+        CmdAlleyType::CmdAlleyType_BDOEIECNODG,
+        CmdAlleyType::CmdAlleyType_EODPJFNFBAJ,
+        CmdAlleyType::CmdAlleyType_KBKFBFCADGH,
+        CmdAlleyType::CmdAlleyType_MDHIBHANJHF,
+        CmdAlleyType::CmdAlleyType_HOPOFCONGGM,
+        CmdAlleyType::CmdAlleyType_LDPJDCKALLL,
+        CmdAlleyType::CmdAlleyType_HJEDKGPCKPI,
+        CmdAlleyType::CmdAlleyType_IBLJMAKPGLE,
+        CmdAlleyType::CmdAlleyType_JFGBJJDMBDB,
+        CmdAlleyType::CmdAlleyType_LIKKNOBAAEH,
+        CmdAlleyType::CmdAlleyType_LAKOGLFFJCL,
+        CmdAlleyType::CmdAlleyType_JGDDNJMHPLI,
+        CmdAlleyType::CmdAlleyType_EBLGNKIPLFM,
+        CmdAlleyType::CmdAlleyType_MDAELDLBFCD,
     ];
 }
 
@@ -245,43 +245,43 @@ impl ::protobuf::EnumFull for CmdAlleyType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdAlleyType::MPDLIJAHICP_GKJBAODJMJG => 0,
-            CmdAlleyType::MPDLIJAHICP_GAHOKKIPNDB => 1,
-            CmdAlleyType::MPDLIJAHICP_EIKFDDKDKEJ => 2,
-            CmdAlleyType::MPDLIJAHICP_HHJBGEOPOND => 3,
-            CmdAlleyType::MPDLIJAHICP_FFFHEGBHMGM => 4,
-            CmdAlleyType::MPDLIJAHICP_GOCIFBGBKCJ => 5,
-            CmdAlleyType::MPDLIJAHICP_CLGCIFHHBON => 6,
-            CmdAlleyType::MPDLIJAHICP_KFDHMPKKMNB => 7,
-            CmdAlleyType::MPDLIJAHICP_BIKAALJIOOG => 8,
-            CmdAlleyType::MPDLIJAHICP_PIHMKAKKMNJ => 9,
-            CmdAlleyType::MPDLIJAHICP_JLMGHAIMOFM => 10,
-            CmdAlleyType::MPDLIJAHICP_LNNAKPDAHKH => 11,
-            CmdAlleyType::MPDLIJAHICP_MGHPOPBKFLG => 12,
-            CmdAlleyType::MPDLIJAHICP_NBMBOPPEEDE => 13,
-            CmdAlleyType::MPDLIJAHICP_ENOGLBDICDG => 14,
-            CmdAlleyType::MPDLIJAHICP_NBCLFHDPOEH => 15,
-            CmdAlleyType::MPDLIJAHICP_KKMHBOFJHDJ => 16,
-            CmdAlleyType::MPDLIJAHICP_PHJLCANDGPM => 17,
-            CmdAlleyType::MPDLIJAHICP_NELLHANDNLB => 18,
-            CmdAlleyType::MPDLIJAHICP_BGAPHNJINAO => 19,
-            CmdAlleyType::MPDLIJAHICP_OAOFFDHACAF => 20,
-            CmdAlleyType::MPDLIJAHICP_BEJGBDJIGBO => 21,
-            CmdAlleyType::MPDLIJAHICP_CKNCFDLDOGK => 22,
-            CmdAlleyType::MPDLIJAHICP_PMPFOLNLCFM => 23,
-            CmdAlleyType::MPDLIJAHICP_NNEHBJBAGII => 24,
-            CmdAlleyType::MPDLIJAHICP_JLGOHFFGMHI => 25,
-            CmdAlleyType::MPDLIJAHICP_LDJFBDDGLHJ => 26,
-            CmdAlleyType::MPDLIJAHICP_NIIGPLDKOHL => 27,
-            CmdAlleyType::MPDLIJAHICP_MDEPGODHHOJ => 28,
-            CmdAlleyType::MPDLIJAHICP_DNNOAPOEBNH => 29,
-            CmdAlleyType::MPDLIJAHICP_OIMNNBOIOMF => 30,
-            CmdAlleyType::MPDLIJAHICP_PAMIIBBBJGE => 31,
-            CmdAlleyType::MPDLIJAHICP_FFACKHBHCHB => 32,
-            CmdAlleyType::MPDLIJAHICP_AMDANALKCJJ => 33,
-            CmdAlleyType::MPDLIJAHICP_ELIIDBILMEP => 34,
-            CmdAlleyType::MPDLIJAHICP_IOABFMIKLPK => 35,
-            CmdAlleyType::MPDLIJAHICP_EMHBINNDLKK => 36,
+            CmdAlleyType::CmdAlleyType_MNFEPONEDDJ => 0,
+            CmdAlleyType::CmdAlleyType_NEFKGKIBBAP => 1,
+            CmdAlleyType::CmdAlleyType_BINICIPJKNG => 2,
+            CmdAlleyType::CmdAlleyType_HCILOFKFFIC => 3,
+            CmdAlleyType::CmdAlleyType_FLAMKNKDICI => 4,
+            CmdAlleyType::CmdAlleyType_MHEGCPEFMMP => 5,
+            CmdAlleyType::CmdAlleyType_MJAILEGEGDH => 6,
+            CmdAlleyType::CmdAlleyType_POPOEMPJPMA => 7,
+            CmdAlleyType::CmdAlleyType_BBGJLEOKGCL => 8,
+            CmdAlleyType::CmdAlleyType_OOCJHOCPGIK => 9,
+            CmdAlleyType::CmdAlleyType_PMLEHPHGCCK => 10,
+            CmdAlleyType::CmdAlleyType_MDBGKGNNHJC => 11,
+            CmdAlleyType::CmdAlleyType_LIDKHFHHPMO => 12,
+            CmdAlleyType::CmdAlleyType_NDLBPBMLIHD => 13,
+            CmdAlleyType::CmdAlleyType_AMMOAJNOJEF => 14,
+            CmdAlleyType::CmdAlleyType_HCAHKOKGEOJ => 15,
+            CmdAlleyType::CmdAlleyType_IFEOADEPEJE => 16,
+            CmdAlleyType::CmdAlleyType_INBLJGOJNPE => 17,
+            CmdAlleyType::CmdAlleyType_BMDJMKKFPDP => 18,
+            CmdAlleyType::CmdAlleyType_LMFKCCGECON => 19,
+            CmdAlleyType::CmdAlleyType_LMPNLOOAJDD => 20,
+            CmdAlleyType::CmdAlleyType_JNECLKNPINP => 21,
+            CmdAlleyType::CmdAlleyType_GKBOFGLHJKI => 22,
+            CmdAlleyType::CmdAlleyType_BDOEIECNODG => 23,
+            CmdAlleyType::CmdAlleyType_EODPJFNFBAJ => 24,
+            CmdAlleyType::CmdAlleyType_KBKFBFCADGH => 25,
+            CmdAlleyType::CmdAlleyType_MDHIBHANJHF => 26,
+            CmdAlleyType::CmdAlleyType_HOPOFCONGGM => 27,
+            CmdAlleyType::CmdAlleyType_LDPJDCKALLL => 28,
+            CmdAlleyType::CmdAlleyType_HJEDKGPCKPI => 29,
+            CmdAlleyType::CmdAlleyType_IBLJMAKPGLE => 30,
+            CmdAlleyType::CmdAlleyType_JFGBJJDMBDB => 31,
+            CmdAlleyType::CmdAlleyType_LIKKNOBAAEH => 32,
+            CmdAlleyType::CmdAlleyType_LAKOGLFFJCL => 33,
+            CmdAlleyType::CmdAlleyType_JGDDNJMHPLI => 34,
+            CmdAlleyType::CmdAlleyType_EBLGNKIPLFM => 35,
+            CmdAlleyType::CmdAlleyType_MDAELDLBFCD => 36,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -289,7 +289,7 @@ impl ::protobuf::EnumFull for CmdAlleyType {
 
 impl ::std::default::Default for CmdAlleyType {
     fn default() -> Self {
-        CmdAlleyType::MPDLIJAHICP_GKJBAODJMJG
+        CmdAlleyType::CmdAlleyType_MNFEPONEDDJ
     }
 }
 
@@ -300,31 +300,32 @@ impl CmdAlleyType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12CmdAlleyType.proto*\xe3\x08\n\x0cCmdAlleyType\x12\x1b\n\x17MPDLIJA\
-    HICP_GKJBAODJMJG\x10\0\x12\x1c\n\x17MPDLIJAHICP_GAHOKKIPNDB\x10\xec$\x12\
-    \x1c\n\x17MPDLIJAHICP_EIKFDDKDKEJ\x10\x8f%\x12\x1c\n\x17MPDLIJAHICP_HHJB\
-    GEOPOND\x10\x9e%\x12\x1c\n\x17MPDLIJAHICP_FFFHEGBHMGM\x10\xbb%\x12\x1c\n\
-    \x17MPDLIJAHICP_GOCIFBGBKCJ\x10\x94%\x12\x1c\n\x17MPDLIJAHICP_CLGCIFHHBO\
-    N\x10\xe8$\x12\x1c\n\x17MPDLIJAHICP_KFDHMPKKMNB\x10\xa9%\x12\x1c\n\x17MP\
-    DLIJAHICP_BIKAALJIOOG\x10\xf8$\x12\x1c\n\x17MPDLIJAHICP_PIHMKAKKMNJ\x10\
-    \xfe$\x12\x1c\n\x17MPDLIJAHICP_JLMGHAIMOFM\x10\xa1%\x12\x1c\n\x17MPDLIJA\
-    HICP_LNNAKPDAHKH\x10\xe7$\x12\x1c\n\x17MPDLIJAHICP_MGHPOPBKFLG\x10\xb4%\
-    \x12\x1c\n\x17MPDLIJAHICP_NBMBOPPEEDE\x10\xb1%\x12\x1c\n\x17MPDLIJAHICP_\
-    ENOGLBDICDG\x10\xbc%\x12\x1c\n\x17MPDLIJAHICP_NBCLFHDPOEH\x10\x8e%\x12\
-    \x1c\n\x17MPDLIJAHICP_KKMHBOFJHDJ\x10\x90%\x12\x1c\n\x17MPDLIJAHICP_PHJL\
-    CANDGPM\x10\xb2%\x12\x1c\n\x17MPDLIJAHICP_NELLHANDNLB\x10\xa8%\x12\x1c\n\
-    \x17MPDLIJAHICP_BGAPHNJINAO\x10\xab%\x12\x1c\n\x17MPDLIJAHICP_OAOFFDHACA\
-    F\x10\xb9%\x12\x1c\n\x17MPDLIJAHICP_BEJGBDJIGBO\x10\xac%\x12\x1c\n\x17MP\
-    DLIJAHICP_CKNCFDLDOGK\x10\xf0$\x12\x1c\n\x17MPDLIJAHICP_PMPFOLNLCFM\x10\
-    \xe5$\x12\x1c\n\x17MPDLIJAHICP_NNEHBJBAGII\x10\xaa%\x12\x1c\n\x17MPDLIJA\
-    HICP_JLGOHFFGMHI\x10\x93%\x12\x1c\n\x17MPDLIJAHICP_LDJFBDDGLHJ\x10\xe1$\
-    \x12\x1c\n\x17MPDLIJAHICP_NIIGPLDKOHL\x10\xe9$\x12\x1c\n\x17MPDLIJAHICP_\
-    MDEPGODHHOJ\x10\x81%\x12\x1c\n\x17MPDLIJAHICP_DNNOAPOEBNH\x10\xae%\x12\
-    \x1c\n\x17MPDLIJAHICP_OIMNNBOIOMF\x10\xa7%\x12\x1c\n\x17MPDLIJAHICP_PAMI\
-    IBBBJGE\x10\x8b%\x12\x1c\n\x17MPDLIJAHICP_FFACKHBHCHB\x10\x86%\x12\x1c\n\
-    \x17MPDLIJAHICP_AMDANALKCJJ\x10\x95%\x12\x1c\n\x17MPDLIJAHICP_ELIIDBILME\
-    P\x10\xea$\x12\x1c\n\x17MPDLIJAHICP_IOABFMIKLPK\x10\xbf%\x12\x1c\n\x17MP\
-    DLIJAHICP_EMHBINNDLKK\x10\xf6$b\x06proto3\
+    \n\x12CmdAlleyType.proto*\x88\t\n\x0cCmdAlleyType\x12\x1c\n\x18CmdAlleyT\
+    ype_MNFEPONEDDJ\x10\0\x12\x1d\n\x18CmdAlleyType_NEFKGKIBBAP\x10\xef$\x12\
+    \x1d\n\x18CmdAlleyType_BINICIPJKNG\x10\xad%\x12\x1d\n\x18CmdAlleyType_HC\
+    ILOFKFFIC\x10\xa0%\x12\x1d\n\x18CmdAlleyType_FLAMKNKDICI\x10\xe5$\x12\
+    \x1d\n\x18CmdAlleyType_MHEGCPEFMMP\x10\x84%\x12\x1d\n\x18CmdAlleyType_MJ\
+    AILEGEGDH\x10\xe8$\x12\x1d\n\x18CmdAlleyType_POPOEMPJPMA\x10\xed$\x12\
+    \x1d\n\x18CmdAlleyType_BBGJLEOKGCL\x10\x89%\x12\x1d\n\x18CmdAlleyType_OO\
+    CJHOCPGIK\x10\xe1$\x12\x1d\n\x18CmdAlleyType_PMLEHPHGCCK\x10\x95%\x12\
+    \x1d\n\x18CmdAlleyType_MDBGKGNNHJC\x10\xf7$\x12\x1d\n\x18CmdAlleyType_LI\
+    DKHFHHPMO\x10\xbc%\x12\x1d\n\x18CmdAlleyType_NDLBPBMLIHD\x10\x8a%\x12\
+    \x1d\n\x18CmdAlleyType_AMMOAJNOJEF\x10\xfe$\x12\x1d\n\x18CmdAlleyType_HC\
+    AHKOKGEOJ\x10\x81%\x12\x1d\n\x18CmdAlleyType_IFEOADEPEJE\x10\xe2$\x12\
+    \x1d\n\x18CmdAlleyType_INBLJGOJNPE\x10\xa1%\x12\x1d\n\x18CmdAlleyType_BM\
+    DJMKKFPDP\x10\xe4$\x12\x1d\n\x18CmdAlleyType_LMFKCCGECON\x10\xb6%\x12\
+    \x1d\n\x18CmdAlleyType_LMPNLOOAJDD\x10\xdd$\x12\x1d\n\x18CmdAlleyType_JN\
+    ECLKNPINP\x10\xf2$\x12\x1d\n\x18CmdAlleyType_GKBOFGLHJKI\x10\x8c%\x12\
+    \x1d\n\x18CmdAlleyType_BDOEIECNODG\x10\xaf%\x12\x1d\n\x18CmdAlleyType_EO\
+    DPJFNFBAJ\x10\xfb$\x12\x1d\n\x18CmdAlleyType_KBKFBFCADGH\x10\xc0%\x12\
+    \x1d\n\x18CmdAlleyType_MDHIBHANJHF\x10\xdf$\x12\x1d\n\x18CmdAlleyType_HO\
+    POFCONGGM\x10\xb4%\x12\x1d\n\x18CmdAlleyType_LDPJDCKALLL\x10\xde$\x12\
+    \x1d\n\x18CmdAlleyType_HJEDKGPCKPI\x10\xee$\x12\x1d\n\x18CmdAlleyType_IB\
+    LJMAKPGLE\x10\x9c%\x12\x1d\n\x18CmdAlleyType_JFGBJJDMBDB\x10\x9a%\x12\
+    \x1d\n\x18CmdAlleyType_LIKKNOBAAEH\x10\x87%\x12\x1d\n\x18CmdAlleyType_LA\
+    KOGLFFJCL\x10\xb7%\x12\x1d\n\x18CmdAlleyType_JGDDNJMHPLI\x10\xf4$\x12\
+    \x1d\n\x18CmdAlleyType_EBLGNKIPLFM\x10\xb0%\x12\x1d\n\x18CmdAlleyType_MD\
+    AELDLBFCD\x10\xe0$b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

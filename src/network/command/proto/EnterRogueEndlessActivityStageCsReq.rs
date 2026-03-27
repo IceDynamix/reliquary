@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterRogueEndlessActivityStageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterRogueEndlessActivityStageCsReq.EHDKCOKIPLD)
-    pub EHDKCOKIPLD: u32,
+    // @@protoc_insertion_point(field:EnterRogueEndlessActivityStageCsReq.JBAFMMDACCH)
+    pub JBAFMMDACCH: u32,
     // @@protoc_insertion_point(field:EnterRogueEndlessActivityStageCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::BBLIOKMBPBL::BBLIOKMBPBL>,
+    pub avatar_list: ::std::vec::Vec<super::MIMOKHCEEJB::MIMOKHCEEJB>,
     // special fields
     // @@protoc_insertion_point(special_field:EnterRogueEndlessActivityStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,9 +52,9 @@ impl EnterRogueEndlessActivityStageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHDKCOKIPLD",
-            |m: &EnterRogueEndlessActivityStageCsReq| { &m.EHDKCOKIPLD },
-            |m: &mut EnterRogueEndlessActivityStageCsReq| { &mut m.EHDKCOKIPLD },
+            "JBAFMMDACCH",
+            |m: &EnterRogueEndlessActivityStageCsReq| { &m.JBAFMMDACCH },
+            |m: &mut EnterRogueEndlessActivityStageCsReq| { &mut m.JBAFMMDACCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.EHDKCOKIPLD = is.read_uint32()?;
+                56 => {
+                    self.JBAFMMDACCH = is.read_uint32()?;
                 },
-                50 => {
+                74 => {
                     self.avatar_list.push(is.read_message()?);
                 },
                 tag => {
@@ -97,8 +97,8 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EHDKCOKIPLD != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.EHDKCOKIPLD);
+        if self.JBAFMMDACCH != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JBAFMMDACCH);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EHDKCOKIPLD != 0 {
-            os.write_uint32(13, self.EHDKCOKIPLD)?;
+        if self.JBAFMMDACCH != 0 {
+            os.write_uint32(7, self.JBAFMMDACCH)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for EnterRogueEndlessActivityStageCsReq {
     }
 
     fn clear(&mut self) {
-        self.EHDKCOKIPLD = 0;
+        self.JBAFMMDACCH = 0;
         self.avatar_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterRogueEndlessActivityStageCsReq {
         static instance: EnterRogueEndlessActivityStageCsReq = EnterRogueEndlessActivityStageCsReq {
-            EHDKCOKIPLD: 0,
+            JBAFMMDACCH: 0,
             avatar_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueEndlessActivityStageCsReq 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)EnterRogueEndlessActivityStageCsReq.proto\x1a\x11BBLIOKMBPBL.proto\"v\
-    \n#EnterRogueEndlessActivityStageCsReq\x12\x20\n\x0bEHDKCOKIPLD\x18\r\
-    \x20\x01(\rR\x0bEHDKCOKIPLD\x12-\n\x0bavatar_list\x18\x06\x20\x03(\x0b2\
-    \x0c.BBLIOKMBPBLR\navatarListb\x06proto3\
+    \n)EnterRogueEndlessActivityStageCsReq.proto\x1a\x11MIMOKHCEEJB.proto\"v\
+    \n#EnterRogueEndlessActivityStageCsReq\x12\x20\n\x0bJBAFMMDACCH\x18\x07\
+    \x20\x01(\rR\x0bJBAFMMDACCH\x12-\n\x0bavatar_list\x18\t\x20\x03(\x0b2\
+    \x0c.MIMOKHCEEJBR\navatarListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BBLIOKMBPBL::file_descriptor().clone());
+            deps.push(super::MIMOKHCEEJB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterRogueEndlessActivityStageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

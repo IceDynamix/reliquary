@@ -79,7 +79,7 @@ impl ::protobuf::Message for ContentPackageInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                56 => {
                     self.status = is.read_enum_or_unknown()?;
                 },
                 40 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for ContentPackageInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.status != ::protobuf::EnumOrUnknown::new(super::ContentPackageStatus::ContentPackageStatus::ContentPackageStatus_None) {
-            my_size += ::protobuf::rt::int32_size(12, self.status.value());
+            my_size += ::protobuf::rt::int32_size(7, self.status.value());
         }
         if self.content_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.content_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for ContentPackageInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.status != ::protobuf::EnumOrUnknown::new(super::ContentPackageStatus::ContentPackageStatus::ContentPackageStatus_None) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.status))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.status))?;
         }
         if self.content_id != 0 {
             os.write_uint32(5, self.content_id)?;
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for ContentPackageInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ContentPackageInfo.proto\x1a\x1aContentPackageStatus.proto\"b\n\
-    \x12ContentPackageInfo\x12-\n\x06status\x18\x0c\x20\x01(\x0e2\x15.Conten\
+    \x12ContentPackageInfo\x12-\n\x06status\x18\x07\x20\x01(\x0e2\x15.Conten\
     tPackageStatusR\x06status\x12\x1d\n\ncontent_id\x18\x05\x20\x01(\rR\tcon\
     tentIdb\x06proto3\
 ";

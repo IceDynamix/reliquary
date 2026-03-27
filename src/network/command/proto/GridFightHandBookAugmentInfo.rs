@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightHandBookAugmentInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightHandBookAugmentInfo.IHFOGDCLMBH)
-    pub IHFOGDCLMBH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GridFightHandBookAugmentInfo.ANPHMBPPOPJ)
-    pub ANPHMBPPOPJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GridFightHandBookAugmentInfo.NDEBHDGOGMC)
+    pub NDEBHDGOGMC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GridFightHandBookAugmentInfo.OOAADCGBKPC)
+    pub OOAADCGBKPC: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightHandBookAugmentInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GridFightHandBookAugmentInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IHFOGDCLMBH",
-            |m: &GridFightHandBookAugmentInfo| { &m.IHFOGDCLMBH },
-            |m: &mut GridFightHandBookAugmentInfo| { &mut m.IHFOGDCLMBH },
+            "NDEBHDGOGMC",
+            |m: &GridFightHandBookAugmentInfo| { &m.NDEBHDGOGMC },
+            |m: &mut GridFightHandBookAugmentInfo| { &mut m.NDEBHDGOGMC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ANPHMBPPOPJ",
-            |m: &GridFightHandBookAugmentInfo| { &m.ANPHMBPPOPJ },
-            |m: &mut GridFightHandBookAugmentInfo| { &mut m.ANPHMBPPOPJ },
+            "OOAADCGBKPC",
+            |m: &GridFightHandBookAugmentInfo| { &m.OOAADCGBKPC },
+            |m: &mut GridFightHandBookAugmentInfo| { &mut m.OOAADCGBKPC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightHandBookAugmentInfo>(
             "GridFightHandBookAugmentInfo",
@@ -80,16 +80,16 @@ impl ::protobuf::Message for GridFightHandBookAugmentInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IHFOGDCLMBH)?;
+                    is.read_repeated_packed_uint32_into(&mut self.NDEBHDGOGMC)?;
                 },
                 24 => {
-                    self.IHFOGDCLMBH.push(is.read_uint32()?);
+                    self.NDEBHDGOGMC.push(is.read_uint32()?);
                 },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ANPHMBPPOPJ)?;
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OOAADCGBKPC)?;
                 },
-                40 => {
-                    self.ANPHMBPPOPJ.push(is.read_uint32()?);
+                72 => {
+                    self.OOAADCGBKPC.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for GridFightHandBookAugmentInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.IHFOGDCLMBH);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.ANPHMBPPOPJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.NDEBHDGOGMC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.OOAADCGBKPC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.IHFOGDCLMBH)?;
-        os.write_repeated_packed_uint32(5, &self.ANPHMBPPOPJ)?;
+        os.write_repeated_packed_uint32(3, &self.NDEBHDGOGMC)?;
+        os.write_repeated_packed_uint32(9, &self.OOAADCGBKPC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for GridFightHandBookAugmentInfo {
     }
 
     fn clear(&mut self) {
-        self.IHFOGDCLMBH.clear();
-        self.ANPHMBPPOPJ.clear();
+        self.NDEBHDGOGMC.clear();
+        self.OOAADCGBKPC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightHandBookAugmentInfo {
         static instance: GridFightHandBookAugmentInfo = GridFightHandBookAugmentInfo {
-            IHFOGDCLMBH: ::std::vec::Vec::new(),
-            ANPHMBPPOPJ: ::std::vec::Vec::new(),
+            NDEBHDGOGMC: ::std::vec::Vec::new(),
+            OOAADCGBKPC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightHandBookAugmentInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"GridFightHandBookAugmentInfo.proto\"b\n\x1cGridFightHandBookAugmentI\
-    nfo\x12\x20\n\x0bIHFOGDCLMBH\x18\x03\x20\x03(\rR\x0bIHFOGDCLMBH\x12\x20\
-    \n\x0bANPHMBPPOPJ\x18\x05\x20\x03(\rR\x0bANPHMBPPOPJb\x06proto3\
+    nfo\x12\x20\n\x0bNDEBHDGOGMC\x18\x03\x20\x03(\rR\x0bNDEBHDGOGMC\x12\x20\
+    \n\x0bOOAADCGBKPC\x18\t\x20\x03(\rR\x0bOOAADCGBKPCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicUnitComposeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicUnitComposeCsReq.EFPEABNGFOD)
-    pub EFPEABNGFOD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueMagicUnitComposeCsReq.GHPHOEDJBKA)
+    pub GHPHOEDJBKA: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicUnitComposeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueMagicUnitComposeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EFPEABNGFOD",
-            |m: &RogueMagicUnitComposeCsReq| { &m.EFPEABNGFOD },
-            |m: &mut RogueMagicUnitComposeCsReq| { &mut m.EFPEABNGFOD },
+            "GHPHOEDJBKA",
+            |m: &RogueMagicUnitComposeCsReq| { &m.GHPHOEDJBKA },
+            |m: &mut RogueMagicUnitComposeCsReq| { &mut m.GHPHOEDJBKA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicUnitComposeCsReq>(
             "RogueMagicUnitComposeCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for RogueMagicUnitComposeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EFPEABNGFOD)?;
+                98 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GHPHOEDJBKA)?;
                 },
-                56 => {
-                    self.EFPEABNGFOD.push(is.read_uint32()?);
+                96 => {
+                    self.GHPHOEDJBKA.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for RogueMagicUnitComposeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.EFPEABNGFOD);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.GHPHOEDJBKA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.EFPEABNGFOD)?;
+        os.write_repeated_packed_uint32(12, &self.GHPHOEDJBKA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for RogueMagicUnitComposeCsReq {
     }
 
     fn clear(&mut self) {
-        self.EFPEABNGFOD.clear();
+        self.GHPHOEDJBKA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicUnitComposeCsReq {
         static instance: RogueMagicUnitComposeCsReq = RogueMagicUnitComposeCsReq {
-            EFPEABNGFOD: ::std::vec::Vec::new(),
+            GHPHOEDJBKA: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicUnitComposeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RogueMagicUnitComposeCsReq.proto\">\n\x1aRogueMagicUnitComposeCsRe\
-    q\x12\x20\n\x0bEFPEABNGFOD\x18\x07\x20\x03(\rR\x0bEFPEABNGFODb\x06proto3\
+    q\x12\x20\n\x0bGHPHOEDJBKA\x18\x0c\x20\x03(\rR\x0bGHPHOEDJBKAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

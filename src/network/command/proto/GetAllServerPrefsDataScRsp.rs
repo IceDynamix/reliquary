@@ -79,7 +79,7 @@ impl ::protobuf::Message for GetAllServerPrefsDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
+                18 => {
                     self.server_prefs_list.push(is.read_message()?);
                 },
                 120 => {
@@ -111,7 +111,7 @@ impl ::protobuf::Message for GetAllServerPrefsDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.server_prefs_list {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.retcode != 0 {
             os.write_uint32(15, self.retcode)?;
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for GetAllServerPrefsDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetAllServerPrefsDataScRsp.proto\x1a\x11ServerPrefs.proto\"p\n\x1a\
-    GetAllServerPrefsDataScRsp\x128\n\x11server_prefs_list\x18\x03\x20\x03(\
+    GetAllServerPrefsDataScRsp\x128\n\x11server_prefs_list\x18\x02\x20\x03(\
     \x0b2\x0c.ServerPrefsR\x0fserverPrefsList\x12\x18\n\x07retcode\x18\x0f\
     \x20\x01(\rR\x07retcodeb\x06proto3\
 ";

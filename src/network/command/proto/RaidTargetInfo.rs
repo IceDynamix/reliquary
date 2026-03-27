@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RaidTargetInfo {
     // message fields
-    // @@protoc_insertion_point(field:RaidTargetInfo.EGDGJHFJEEJ)
-    pub EGDGJHFJEEJ: ::protobuf::EnumOrUnknown<super::BELCFOKBMBF::BELCFOKBMBF>,
-    // @@protoc_insertion_point(field:RaidTargetInfo.LPIOCFEEKJO)
-    pub LPIOCFEEKJO: u32,
-    // @@protoc_insertion_point(field:RaidTargetInfo.LHCHEMBCBAF)
-    pub LHCHEMBCBAF: u32,
+    // @@protoc_insertion_point(field:RaidTargetInfo.BMDFCOCDCJE)
+    pub BMDFCOCDCJE: ::protobuf::EnumOrUnknown<super::BHKKAFLPIAI::BHKKAFLPIAI>,
+    // @@protoc_insertion_point(field:RaidTargetInfo.DGLGDEOLPEH)
+    pub DGLGDEOLPEH: u32,
+    // @@protoc_insertion_point(field:RaidTargetInfo.FLNMPDNHLCJ)
+    pub FLNMPDNHLCJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RaidTargetInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl RaidTargetInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGDGJHFJEEJ",
-            |m: &RaidTargetInfo| { &m.EGDGJHFJEEJ },
-            |m: &mut RaidTargetInfo| { &mut m.EGDGJHFJEEJ },
+            "BMDFCOCDCJE",
+            |m: &RaidTargetInfo| { &m.BMDFCOCDCJE },
+            |m: &mut RaidTargetInfo| { &mut m.BMDFCOCDCJE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPIOCFEEKJO",
-            |m: &RaidTargetInfo| { &m.LPIOCFEEKJO },
-            |m: &mut RaidTargetInfo| { &mut m.LPIOCFEEKJO },
+            "DGLGDEOLPEH",
+            |m: &RaidTargetInfo| { &m.DGLGDEOLPEH },
+            |m: &mut RaidTargetInfo| { &mut m.DGLGDEOLPEH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHCHEMBCBAF",
-            |m: &RaidTargetInfo| { &m.LHCHEMBCBAF },
-            |m: &mut RaidTargetInfo| { &mut m.LHCHEMBCBAF },
+            "FLNMPDNHLCJ",
+            |m: &RaidTargetInfo| { &m.FLNMPDNHLCJ },
+            |m: &mut RaidTargetInfo| { &mut m.FLNMPDNHLCJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidTargetInfo>(
             "RaidTargetInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RaidTargetInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.EGDGJHFJEEJ = is.read_enum_or_unknown()?;
+                120 => {
+                    self.BMDFCOCDCJE = is.read_enum_or_unknown()?;
                 },
-                40 => {
-                    self.LPIOCFEEKJO = is.read_uint32()?;
+                88 => {
+                    self.DGLGDEOLPEH = is.read_uint32()?;
                 },
-                8 => {
-                    self.LHCHEMBCBAF = is.read_uint32()?;
+                16 => {
+                    self.FLNMPDNHLCJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RaidTargetInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EGDGJHFJEEJ != ::protobuf::EnumOrUnknown::new(super::BELCFOKBMBF::BELCFOKBMBF::BELCFOKBMBF_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(3, self.EGDGJHFJEEJ.value());
+        if self.BMDFCOCDCJE != ::protobuf::EnumOrUnknown::new(super::BHKKAFLPIAI::BHKKAFLPIAI::BHKKAFLPIAI_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(15, self.BMDFCOCDCJE.value());
         }
-        if self.LPIOCFEEKJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.LPIOCFEEKJO);
+        if self.DGLGDEOLPEH != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.DGLGDEOLPEH);
         }
-        if self.LHCHEMBCBAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LHCHEMBCBAF);
+        if self.FLNMPDNHLCJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.FLNMPDNHLCJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RaidTargetInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EGDGJHFJEEJ != ::protobuf::EnumOrUnknown::new(super::BELCFOKBMBF::BELCFOKBMBF::BELCFOKBMBF_GKJBAODJMJG) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.EGDGJHFJEEJ))?;
+        if self.BMDFCOCDCJE != ::protobuf::EnumOrUnknown::new(super::BHKKAFLPIAI::BHKKAFLPIAI::BHKKAFLPIAI_MNFEPONEDDJ) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.BMDFCOCDCJE))?;
         }
-        if self.LPIOCFEEKJO != 0 {
-            os.write_uint32(5, self.LPIOCFEEKJO)?;
+        if self.DGLGDEOLPEH != 0 {
+            os.write_uint32(11, self.DGLGDEOLPEH)?;
         }
-        if self.LHCHEMBCBAF != 0 {
-            os.write_uint32(1, self.LHCHEMBCBAF)?;
+        if self.FLNMPDNHLCJ != 0 {
+            os.write_uint32(2, self.FLNMPDNHLCJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for RaidTargetInfo {
     }
 
     fn clear(&mut self) {
-        self.EGDGJHFJEEJ = ::protobuf::EnumOrUnknown::new(super::BELCFOKBMBF::BELCFOKBMBF::BELCFOKBMBF_GKJBAODJMJG);
-        self.LPIOCFEEKJO = 0;
-        self.LHCHEMBCBAF = 0;
+        self.BMDFCOCDCJE = ::protobuf::EnumOrUnknown::new(super::BHKKAFLPIAI::BHKKAFLPIAI::BHKKAFLPIAI_MNFEPONEDDJ);
+        self.DGLGDEOLPEH = 0;
+        self.FLNMPDNHLCJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidTargetInfo {
         static instance: RaidTargetInfo = RaidTargetInfo {
-            EGDGJHFJEEJ: ::protobuf::EnumOrUnknown::from_i32(0),
-            LPIOCFEEKJO: 0,
-            LHCHEMBCBAF: 0,
+            BMDFCOCDCJE: ::protobuf::EnumOrUnknown::from_i32(0),
+            DGLGDEOLPEH: 0,
+            FLNMPDNHLCJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for RaidTargetInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14RaidTargetInfo.proto\x1a\x11BELCFOKBMBF.proto\"\x84\x01\n\x0eRaidT\
-    argetInfo\x12.\n\x0bEGDGJHFJEEJ\x18\x03\x20\x01(\x0e2\x0c.BELCFOKBMBFR\
-    \x0bEGDGJHFJEEJ\x12\x20\n\x0bLPIOCFEEKJO\x18\x05\x20\x01(\rR\x0bLPIOCFEE\
-    KJO\x12\x20\n\x0bLHCHEMBCBAF\x18\x01\x20\x01(\rR\x0bLHCHEMBCBAFb\x06prot\
+    \n\x14RaidTargetInfo.proto\x1a\x11BHKKAFLPIAI.proto\"\x84\x01\n\x0eRaidT\
+    argetInfo\x12.\n\x0bBMDFCOCDCJE\x18\x0f\x20\x01(\x0e2\x0c.BHKKAFLPIAIR\
+    \x0bBMDFCOCDCJE\x12\x20\n\x0bDGLGDEOLPEH\x18\x0b\x20\x01(\rR\x0bDGLGDEOL\
+    PEH\x12\x20\n\x0bFLNMPDNHLCJ\x18\x02\x20\x01(\rR\x0bFLNMPDNHLCJb\x06prot\
     o3\
 ";
 
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BELCFOKBMBF::file_descriptor().clone());
+            deps.push(super::BHKKAFLPIAI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RaidTargetInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

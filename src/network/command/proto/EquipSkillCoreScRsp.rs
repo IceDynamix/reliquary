@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EquipSkillCoreScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EquipSkillCoreScRsp.DLNKGDDEMCB)
-    pub DLNKGDDEMCB: ::protobuf::MessageField<super::HOPKPEICIPJ::HOPKPEICIPJ>,
     // @@protoc_insertion_point(field:EquipSkillCoreScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EquipSkillCoreScRsp.OPJNNAOJAGI)
-    pub OPJNNAOJAGI: ::protobuf::MessageField<super::LGMJLELAOAN::LGMJLELAOAN>,
+    // @@protoc_insertion_point(field:EquipSkillCoreScRsp.PBGOEKBIANO)
+    pub PBGOEKBIANO: ::protobuf::MessageField<super::HNJLHFJMCBJ::HNJLHFJMCBJ>,
+    // @@protoc_insertion_point(field:EquipSkillCoreScRsp.CELCKCMKJEB)
+    pub CELCKCMKJEB: ::protobuf::MessageField<super::CHEBBNJKNLE::CHEBBNJKNLE>,
     // special fields
     // @@protoc_insertion_point(special_field:EquipSkillCoreScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl EquipSkillCoreScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HOPKPEICIPJ::HOPKPEICIPJ>(
-            "DLNKGDDEMCB",
-            |m: &EquipSkillCoreScRsp| { &m.DLNKGDDEMCB },
-            |m: &mut EquipSkillCoreScRsp| { &mut m.DLNKGDDEMCB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EquipSkillCoreScRsp| { &m.retcode },
             |m: &mut EquipSkillCoreScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LGMJLELAOAN::LGMJLELAOAN>(
-            "OPJNNAOJAGI",
-            |m: &EquipSkillCoreScRsp| { &m.OPJNNAOJAGI },
-            |m: &mut EquipSkillCoreScRsp| { &mut m.OPJNNAOJAGI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HNJLHFJMCBJ::HNJLHFJMCBJ>(
+            "PBGOEKBIANO",
+            |m: &EquipSkillCoreScRsp| { &m.PBGOEKBIANO },
+            |m: &mut EquipSkillCoreScRsp| { &mut m.PBGOEKBIANO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CHEBBNJKNLE::CHEBBNJKNLE>(
+            "CELCKCMKJEB",
+            |m: &EquipSkillCoreScRsp| { &m.CELCKCMKJEB },
+            |m: &mut EquipSkillCoreScRsp| { &mut m.CELCKCMKJEB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EquipSkillCoreScRsp>(
             "EquipSkillCoreScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EquipSkillCoreScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DLNKGDDEMCB)?;
-                },
-                80 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OPJNNAOJAGI)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBGOEKBIANO)?;
+                },
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CELCKCMKJEB)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for EquipSkillCoreScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DLNKGDDEMCB.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if let Some(v) = self.PBGOEKBIANO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        if let Some(v) = self.OPJNNAOJAGI.as_ref() {
+        if let Some(v) = self.CELCKCMKJEB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for EquipSkillCoreScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DLNKGDDEMCB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
-        if let Some(v) = self.OPJNNAOJAGI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.PBGOEKBIANO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.CELCKCMKJEB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for EquipSkillCoreScRsp {
     }
 
     fn clear(&mut self) {
-        self.DLNKGDDEMCB.clear();
         self.retcode = 0;
-        self.OPJNNAOJAGI.clear();
+        self.PBGOEKBIANO.clear();
+        self.CELCKCMKJEB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EquipSkillCoreScRsp {
         static instance: EquipSkillCoreScRsp = EquipSkillCoreScRsp {
-            DLNKGDDEMCB: ::protobuf::MessageField::none(),
             retcode: 0,
-            OPJNNAOJAGI: ::protobuf::MessageField::none(),
+            PBGOEKBIANO: ::protobuf::MessageField::none(),
+            CELCKCMKJEB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for EquipSkillCoreScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19EquipSkillCoreScRsp.proto\x1a\x11HOPKPEICIPJ.proto\x1a\x11LGMJLELA\
-    OAN.proto\"\x8f\x01\n\x13EquipSkillCoreScRsp\x12.\n\x0bDLNKGDDEMCB\x18\
-    \x04\x20\x01(\x0b2\x0c.HOPKPEICIPJR\x0bDLNKGDDEMCB\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bOPJNNAOJAGI\x18\r\x20\x01(\x0b2\
-    \x0c.LGMJLELAOANR\x0bOPJNNAOJAGIb\x06proto3\
+    \n\x19EquipSkillCoreScRsp.proto\x1a\x11CHEBBNJKNLE.proto\x1a\x11HNJLHFJM\
+    CBJ.proto\"\x8f\x01\n\x13EquipSkillCoreScRsp\x12\x18\n\x07retcode\x18\t\
+    \x20\x01(\rR\x07retcode\x12.\n\x0bPBGOEKBIANO\x18\x07\x20\x01(\x0b2\x0c.\
+    HNJLHFJMCBJR\x0bPBGOEKBIANO\x12.\n\x0bCELCKCMKJEB\x18\x06\x20\x01(\x0b2\
+    \x0c.CHEBBNJKNLER\x0bCELCKCMKJEBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::HOPKPEICIPJ::file_descriptor().clone());
-            deps.push(super::LGMJLELAOAN::file_descriptor().clone());
+            deps.push(super::CHEBBNJKNLE::file_descriptor().clone());
+            deps.push(super::HNJLHFJMCBJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EquipSkillCoreScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

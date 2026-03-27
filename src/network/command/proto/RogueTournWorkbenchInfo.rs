@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournWorkbenchInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournWorkbenchInfo.ALAKAKOCLBI)
-    pub ALAKAKOCLBI: ::std::vec::Vec<super::WorkbenchFuncIdInfo::WorkbenchFuncIdInfo>,
-    // @@protoc_insertion_point(field:RogueTournWorkbenchInfo.FEMBAAEMKAK)
-    pub FEMBAAEMKAK: u32,
+    // @@protoc_insertion_point(field:RogueTournWorkbenchInfo.OLOIBGCGCCA)
+    pub OLOIBGCGCCA: ::std::vec::Vec<super::WorkbenchFuncIdInfo::WorkbenchFuncIdInfo>,
+    // @@protoc_insertion_point(field:RogueTournWorkbenchInfo.ENFHNAHDMHP)
+    pub ENFHNAHDMHP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournWorkbenchInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RogueTournWorkbenchInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ALAKAKOCLBI",
-            |m: &RogueTournWorkbenchInfo| { &m.ALAKAKOCLBI },
-            |m: &mut RogueTournWorkbenchInfo| { &mut m.ALAKAKOCLBI },
+            "OLOIBGCGCCA",
+            |m: &RogueTournWorkbenchInfo| { &m.OLOIBGCGCCA },
+            |m: &mut RogueTournWorkbenchInfo| { &mut m.OLOIBGCGCCA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FEMBAAEMKAK",
-            |m: &RogueTournWorkbenchInfo| { &m.FEMBAAEMKAK },
-            |m: &mut RogueTournWorkbenchInfo| { &mut m.FEMBAAEMKAK },
+            "ENFHNAHDMHP",
+            |m: &RogueTournWorkbenchInfo| { &m.ENFHNAHDMHP },
+            |m: &mut RogueTournWorkbenchInfo| { &mut m.ENFHNAHDMHP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournWorkbenchInfo>(
             "RogueTournWorkbenchInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueTournWorkbenchInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.ALAKAKOCLBI.push(is.read_message()?);
+                98 => {
+                    self.OLOIBGCGCCA.push(is.read_message()?);
                 },
-                48 => {
-                    self.FEMBAAEMKAK = is.read_uint32()?;
+                8 => {
+                    self.ENFHNAHDMHP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueTournWorkbenchInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.ALAKAKOCLBI {
+        for value in &self.OLOIBGCGCCA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.FEMBAAEMKAK != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FEMBAAEMKAK);
+        if self.ENFHNAHDMHP != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ENFHNAHDMHP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueTournWorkbenchInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.ALAKAKOCLBI {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.OLOIBGCGCCA {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        if self.FEMBAAEMKAK != 0 {
-            os.write_uint32(6, self.FEMBAAEMKAK)?;
+        if self.ENFHNAHDMHP != 0 {
+            os.write_uint32(1, self.ENFHNAHDMHP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueTournWorkbenchInfo {
     }
 
     fn clear(&mut self) {
-        self.ALAKAKOCLBI.clear();
-        self.FEMBAAEMKAK = 0;
+        self.OLOIBGCGCCA.clear();
+        self.ENFHNAHDMHP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournWorkbenchInfo {
         static instance: RogueTournWorkbenchInfo = RogueTournWorkbenchInfo {
-            ALAKAKOCLBI: ::std::vec::Vec::new(),
-            FEMBAAEMKAK: 0,
+            OLOIBGCGCCA: ::std::vec::Vec::new(),
+            ENFHNAHDMHP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournWorkbenchInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRogueTournWorkbenchInfo.proto\x1a\x19WorkbenchFuncIdInfo.proto\"s\
-    \n\x17RogueTournWorkbenchInfo\x126\n\x0bALAKAKOCLBI\x18\x01\x20\x03(\x0b\
-    2\x14.WorkbenchFuncIdInfoR\x0bALAKAKOCLBI\x12\x20\n\x0bFEMBAAEMKAK\x18\
-    \x06\x20\x01(\rR\x0bFEMBAAEMKAKb\x06proto3\
+    \n\x17RogueTournWorkbenchInfo\x126\n\x0bOLOIBGCGCCA\x18\x0c\x20\x03(\x0b\
+    2\x14.WorkbenchFuncIdInfoR\x0bOLOIBGCGCCA\x12\x20\n\x0bENFHNAHDMHP\x18\
+    \x01\x20\x01(\rR\x0bENFHNAHDMHPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

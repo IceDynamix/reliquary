@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TrainPartyMtSkillBriefType)
 pub enum TrainPartyMtSkillBriefType {
-    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.LOJAAKJKKMD_OCGNANCMNMD)
-    LOJAAKJKKMD_OCGNANCMNMD = 0,
-    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.LOJAAKJKKMD_BCCALHLKKEI)
-    LOJAAKJKKMD_BCCALHLKKEI = 1,
-    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.LOJAAKJKKMD_HAFOHOKGIJK)
-    LOJAAKJKKMD_HAFOHOKGIJK = 2,
-    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.LOJAAKJKKMD_LIKOCODCEJP)
-    LOJAAKJKKMD_LIKOCODCEJP = 3,
-    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.LOJAAKJKKMD_AANKBAHFBDH)
-    LOJAAKJKKMD_AANKBAHFBDH = 4,
+    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.TrainPartyMtSkillBriefType_LJCPGFHKAEI)
+    TrainPartyMtSkillBriefType_LJCPGFHKAEI = 0,
+    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.TrainPartyMtSkillBriefType_GOKMOACCKMC)
+    TrainPartyMtSkillBriefType_GOKMOACCKMC = 1,
+    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.TrainPartyMtSkillBriefType_PLDHNKEJBBI)
+    TrainPartyMtSkillBriefType_PLDHNKEJBBI = 2,
+    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.TrainPartyMtSkillBriefType_PKMNJFIMFAO)
+    TrainPartyMtSkillBriefType_PKMNJFIMFAO = 3,
+    // @@protoc_insertion_point(enum_value:TrainPartyMtSkillBriefType.TrainPartyMtSkillBriefType_NNDCOJOKNDL)
+    TrainPartyMtSkillBriefType_NNDCOJOKNDL = 4,
 }
 
 impl ::protobuf::Enum for TrainPartyMtSkillBriefType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for TrainPartyMtSkillBriefType {
 
     fn from_i32(value: i32) -> ::std::option::Option<TrainPartyMtSkillBriefType> {
         match value {
-            0 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::LOJAAKJKKMD_OCGNANCMNMD),
-            1 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::LOJAAKJKKMD_BCCALHLKKEI),
-            2 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::LOJAAKJKKMD_HAFOHOKGIJK),
-            3 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::LOJAAKJKKMD_LIKOCODCEJP),
-            4 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::LOJAAKJKKMD_AANKBAHFBDH),
+            0 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_LJCPGFHKAEI),
+            1 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_GOKMOACCKMC),
+            2 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_PLDHNKEJBBI),
+            3 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_PKMNJFIMFAO),
+            4 => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_NNDCOJOKNDL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TrainPartyMtSkillBriefType> {
         match str {
-            "LOJAAKJKKMD_OCGNANCMNMD" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::LOJAAKJKKMD_OCGNANCMNMD),
-            "LOJAAKJKKMD_BCCALHLKKEI" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::LOJAAKJKKMD_BCCALHLKKEI),
-            "LOJAAKJKKMD_HAFOHOKGIJK" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::LOJAAKJKKMD_HAFOHOKGIJK),
-            "LOJAAKJKKMD_LIKOCODCEJP" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::LOJAAKJKKMD_LIKOCODCEJP),
-            "LOJAAKJKKMD_AANKBAHFBDH" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::LOJAAKJKKMD_AANKBAHFBDH),
+            "TrainPartyMtSkillBriefType_LJCPGFHKAEI" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_LJCPGFHKAEI),
+            "TrainPartyMtSkillBriefType_GOKMOACCKMC" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_GOKMOACCKMC),
+            "TrainPartyMtSkillBriefType_PLDHNKEJBBI" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_PLDHNKEJBBI),
+            "TrainPartyMtSkillBriefType_PKMNJFIMFAO" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_PKMNJFIMFAO),
+            "TrainPartyMtSkillBriefType_NNDCOJOKNDL" => ::std::option::Option::Some(TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_NNDCOJOKNDL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TrainPartyMtSkillBriefType] = &[
-        TrainPartyMtSkillBriefType::LOJAAKJKKMD_OCGNANCMNMD,
-        TrainPartyMtSkillBriefType::LOJAAKJKKMD_BCCALHLKKEI,
-        TrainPartyMtSkillBriefType::LOJAAKJKKMD_HAFOHOKGIJK,
-        TrainPartyMtSkillBriefType::LOJAAKJKKMD_LIKOCODCEJP,
-        TrainPartyMtSkillBriefType::LOJAAKJKKMD_AANKBAHFBDH,
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_LJCPGFHKAEI,
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_GOKMOACCKMC,
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_PLDHNKEJBBI,
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_PKMNJFIMFAO,
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_NNDCOJOKNDL,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for TrainPartyMtSkillBriefType {
 
 impl ::std::default::Default for TrainPartyMtSkillBriefType {
     fn default() -> Self {
-        TrainPartyMtSkillBriefType::LOJAAKJKKMD_OCGNANCMNMD
+        TrainPartyMtSkillBriefType::TrainPartyMtSkillBriefType_LJCPGFHKAEI
     }
 }
 
@@ -102,11 +102,12 @@ impl TrainPartyMtSkillBriefType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20TrainPartyMtSkillBriefType.proto*\xad\x01\n\x1aTrainPartyMtSkillBr\
-    iefType\x12\x1b\n\x17LOJAAKJKKMD_OCGNANCMNMD\x10\0\x12\x1b\n\x17LOJAAKJK\
-    KMD_BCCALHLKKEI\x10\x01\x12\x1b\n\x17LOJAAKJKKMD_HAFOHOKGIJK\x10\x02\x12\
-    \x1b\n\x17LOJAAKJKKMD_LIKOCODCEJP\x10\x03\x12\x1b\n\x17LOJAAKJKKMD_AANKB\
-    AHFBDH\x10\x04b\x06proto3\
+    \n\x20TrainPartyMtSkillBriefType.proto*\xf8\x01\n\x1aTrainPartyMtSkillBr\
+    iefType\x12*\n&TrainPartyMtSkillBriefType_LJCPGFHKAEI\x10\0\x12*\n&Train\
+    PartyMtSkillBriefType_GOKMOACCKMC\x10\x01\x12*\n&TrainPartyMtSkillBriefT\
+    ype_PLDHNKEJBBI\x10\x02\x12*\n&TrainPartyMtSkillBriefType_PKMNJFIMFAO\
+    \x10\x03\x12*\n&TrainPartyMtSkillBriefType_NNDCOJOKNDL\x10\x04b\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,12 +30,12 @@ pub struct EnterRogueScRsp {
     // message fields
     // @@protoc_insertion_point(field:EnterRogueScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnterRogueScRsp.rogue_info)
-    pub rogue_info: ::protobuf::MessageField<super::LOMIDLEIHCJ::LOMIDLEIHCJ>,
-    // @@protoc_insertion_point(field:EnterRogueScRsp.ILKPKJGFCFN)
-    pub ILKPKJGFCFN: ::protobuf::MessageField<super::PGNMJEGNGGC::PGNMJEGNGGC>,
     // @@protoc_insertion_point(field:EnterRogueScRsp.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
+    // @@protoc_insertion_point(field:EnterRogueScRsp.rogue_info)
+    pub rogue_info: ::protobuf::MessageField<super::GHMIFDFCLAF::GHMIFDFCLAF>,
+    // @@protoc_insertion_point(field:EnterRogueScRsp.LFMDHAFJNMA)
+    pub LFMDHAFJNMA: ::protobuf::MessageField<super::JCBJDLNDAEH::JCBJDLNDAEH>,
     // @@protoc_insertion_point(field:EnterRogueScRsp.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
     // special fields
@@ -62,20 +62,20 @@ impl EnterRogueScRsp {
             |m: &EnterRogueScRsp| { &m.retcode },
             |m: &mut EnterRogueScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LOMIDLEIHCJ::LOMIDLEIHCJ>(
-            "rogue_info",
-            |m: &EnterRogueScRsp| { &m.rogue_info },
-            |m: &mut EnterRogueScRsp| { &mut m.rogue_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PGNMJEGNGGC::PGNMJEGNGGC>(
-            "ILKPKJGFCFN",
-            |m: &EnterRogueScRsp| { &m.ILKPKJGFCFN },
-            |m: &mut EnterRogueScRsp| { &mut m.ILKPKJGFCFN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LineupInfo::LineupInfo>(
             "lineup",
             |m: &EnterRogueScRsp| { &m.lineup },
             |m: &mut EnterRogueScRsp| { &mut m.lineup },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GHMIFDFCLAF::GHMIFDFCLAF>(
+            "rogue_info",
+            |m: &EnterRogueScRsp| { &m.rogue_info },
+            |m: &mut EnterRogueScRsp| { &mut m.rogue_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JCBJDLNDAEH::JCBJDLNDAEH>(
+            "LFMDHAFJNMA",
+            |m: &EnterRogueScRsp| { &m.LFMDHAFJNMA },
+            |m: &mut EnterRogueScRsp| { &mut m.LFMDHAFJNMA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
             "scene",
@@ -100,19 +100,19 @@ impl ::protobuf::Message for EnterRogueScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ILKPKJGFCFN)?;
                 },
                 66 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
                 58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_info)?;
+                },
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFMDHAFJNMA)?;
+                },
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
                 tag => {
@@ -128,17 +128,17 @@ impl ::protobuf::Message for EnterRogueScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        if let Some(v) = self.lineup.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.rogue_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.ILKPKJGFCFN.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.lineup.as_ref() {
+        if let Some(v) = self.LFMDHAFJNMA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -153,19 +153,19 @@ impl ::protobuf::Message for EnterRogueScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
-        if let Some(v) = self.rogue_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.ILKPKJGFCFN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if let Some(v) = self.lineup.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.scene.as_ref() {
+        if let Some(v) = self.rogue_info.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
+        if let Some(v) = self.LFMDHAFJNMA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if let Some(v) = self.scene.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::Message for EnterRogueScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.rogue_info.clear();
-        self.ILKPKJGFCFN.clear();
         self.lineup.clear();
+        self.rogue_info.clear();
+        self.LFMDHAFJNMA.clear();
         self.scene.clear();
         self.special_fields.clear();
     }
@@ -195,9 +195,9 @@ impl ::protobuf::Message for EnterRogueScRsp {
     fn default_instance() -> &'static EnterRogueScRsp {
         static instance: EnterRogueScRsp = EnterRogueScRsp {
             retcode: 0,
-            rogue_info: ::protobuf::MessageField::none(),
-            ILKPKJGFCFN: ::protobuf::MessageField::none(),
             lineup: ::protobuf::MessageField::none(),
+            rogue_info: ::protobuf::MessageField::none(),
+            LFMDHAFJNMA: ::protobuf::MessageField::none(),
             scene: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -223,13 +223,13 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15EnterRogueScRsp.proto\x1a\x11LOMIDLEIHCJ.proto\x1a\x10LineupInfo.p\
-    roto\x1a\x11PGNMJEGNGGC.proto\x1a\x0fSceneInfo.proto\"\xcf\x01\n\x0fEnte\
-    rRogueScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12+\n\n\
-    rogue_info\x18\x0f\x20\x01(\x0b2\x0c.LOMIDLEIHCJR\trogueInfo\x12.\n\x0bI\
-    LKPKJGFCFN\x18\x06\x20\x01(\x0b2\x0c.PGNMJEGNGGCR\x0bILKPKJGFCFN\x12#\n\
-    \x06lineup\x18\x08\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x20\n\x05\
-    scene\x18\x07\x20\x01(\x0b2\n.SceneInfoR\x05sceneb\x06proto3\
+    \n\x15EnterRogueScRsp.proto\x1a\x11GHMIFDFCLAF.proto\x1a\x11JCBJDLNDAEH.\
+    proto\x1a\x10LineupInfo.proto\x1a\x0fSceneInfo.proto\"\xcf\x01\n\x0fEnte\
+    rRogueScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12#\n\
+    \x06lineup\x18\x08\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12+\n\nrogue\
+    _info\x18\x07\x20\x01(\x0b2\x0c.GHMIFDFCLAFR\trogueInfo\x12.\n\x0bLFMDHA\
+    FJNMA\x18\r\x20\x01(\x0b2\x0c.JCBJDLNDAEHR\x0bLFMDHAFJNMA\x12\x20\n\x05s\
+    cene\x18\x0f\x20\x01(\x0b2\n.SceneInfoR\x05sceneb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -247,9 +247,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::LOMIDLEIHCJ::file_descriptor().clone());
+            deps.push(super::GHMIFDFCLAF::file_descriptor().clone());
+            deps.push(super::JCBJDLNDAEH::file_descriptor().clone());
             deps.push(super::LineupInfo::file_descriptor().clone());
-            deps.push(super::PGNMJEGNGGC::file_descriptor().clone());
             deps.push(super::SceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterRogueScRsp::generated_message_descriptor_data());

@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMarkChestType)
 pub enum CmdMarkChestType {
-    // @@protoc_insertion_point(enum_value:CmdMarkChestType.KJMOGDPNNME_GKJBAODJMJG)
-    KJMOGDPNNME_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdMarkChestType.KJMOGDPNNME_PBDBGJNCMEI)
-    KJMOGDPNNME_PBDBGJNCMEI = 8186,
-    // @@protoc_insertion_point(enum_value:CmdMarkChestType.KJMOGDPNNME_PIFAMCEGEOG)
-    KJMOGDPNNME_PIFAMCEGEOG = 8192,
-    // @@protoc_insertion_point(enum_value:CmdMarkChestType.KJMOGDPNNME_HLHDJIKKGCA)
-    KJMOGDPNNME_HLHDJIKKGCA = 8181,
-    // @@protoc_insertion_point(enum_value:CmdMarkChestType.KJMOGDPNNME_OKGBAGMCJDI)
-    KJMOGDPNNME_OKGBAGMCJDI = 8190,
-    // @@protoc_insertion_point(enum_value:CmdMarkChestType.KJMOGDPNNME_LBKCKHEOHCD)
-    KJMOGDPNNME_LBKCKHEOHCD = 8184,
+    // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdMarkChestType_MNFEPONEDDJ)
+    CmdMarkChestType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdMarkChestType_BPEKNLMIPLD)
+    CmdMarkChestType_BPEKNLMIPLD = 8199,
+    // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdMarkChestType_HHABDHGFAEG)
+    CmdMarkChestType_HHABDHGFAEG = 8185,
+    // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdMarkChestType_OCMKJJJAJOP)
+    CmdMarkChestType_OCMKJJJAJOP = 8186,
+    // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdMarkChestType_KFEDHNIAAJK)
+    CmdMarkChestType_KFEDHNIAAJK = 8181,
+    // @@protoc_insertion_point(enum_value:CmdMarkChestType.CmdMarkChestType_DEIHDJGGPCM)
+    CmdMarkChestType_DEIHDJGGPCM = 8195,
 }
 
 impl ::protobuf::Enum for CmdMarkChestType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdMarkChestType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMarkChestType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_GKJBAODJMJG),
-            8186 => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_PBDBGJNCMEI),
-            8192 => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_PIFAMCEGEOG),
-            8181 => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_HLHDJIKKGCA),
-            8190 => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_OKGBAGMCJDI),
-            8184 => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_LBKCKHEOHCD),
+            0 => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_MNFEPONEDDJ),
+            8199 => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_BPEKNLMIPLD),
+            8185 => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_HHABDHGFAEG),
+            8186 => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_OCMKJJJAJOP),
+            8181 => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_KFEDHNIAAJK),
+            8195 => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_DEIHDJGGPCM),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMarkChestType> {
         match str {
-            "KJMOGDPNNME_GKJBAODJMJG" => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_GKJBAODJMJG),
-            "KJMOGDPNNME_PBDBGJNCMEI" => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_PBDBGJNCMEI),
-            "KJMOGDPNNME_PIFAMCEGEOG" => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_PIFAMCEGEOG),
-            "KJMOGDPNNME_HLHDJIKKGCA" => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_HLHDJIKKGCA),
-            "KJMOGDPNNME_OKGBAGMCJDI" => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_OKGBAGMCJDI),
-            "KJMOGDPNNME_LBKCKHEOHCD" => ::std::option::Option::Some(CmdMarkChestType::KJMOGDPNNME_LBKCKHEOHCD),
+            "CmdMarkChestType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_MNFEPONEDDJ),
+            "CmdMarkChestType_BPEKNLMIPLD" => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_BPEKNLMIPLD),
+            "CmdMarkChestType_HHABDHGFAEG" => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_HHABDHGFAEG),
+            "CmdMarkChestType_OCMKJJJAJOP" => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_OCMKJJJAJOP),
+            "CmdMarkChestType_KFEDHNIAAJK" => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_KFEDHNIAAJK),
+            "CmdMarkChestType_DEIHDJGGPCM" => ::std::option::Option::Some(CmdMarkChestType::CmdMarkChestType_DEIHDJGGPCM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMarkChestType] = &[
-        CmdMarkChestType::KJMOGDPNNME_GKJBAODJMJG,
-        CmdMarkChestType::KJMOGDPNNME_PBDBGJNCMEI,
-        CmdMarkChestType::KJMOGDPNNME_PIFAMCEGEOG,
-        CmdMarkChestType::KJMOGDPNNME_HLHDJIKKGCA,
-        CmdMarkChestType::KJMOGDPNNME_OKGBAGMCJDI,
-        CmdMarkChestType::KJMOGDPNNME_LBKCKHEOHCD,
+        CmdMarkChestType::CmdMarkChestType_MNFEPONEDDJ,
+        CmdMarkChestType::CmdMarkChestType_BPEKNLMIPLD,
+        CmdMarkChestType::CmdMarkChestType_HHABDHGFAEG,
+        CmdMarkChestType::CmdMarkChestType_OCMKJJJAJOP,
+        CmdMarkChestType::CmdMarkChestType_KFEDHNIAAJK,
+        CmdMarkChestType::CmdMarkChestType_DEIHDJGGPCM,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdMarkChestType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMarkChestType::KJMOGDPNNME_GKJBAODJMJG => 0,
-            CmdMarkChestType::KJMOGDPNNME_PBDBGJNCMEI => 1,
-            CmdMarkChestType::KJMOGDPNNME_PIFAMCEGEOG => 2,
-            CmdMarkChestType::KJMOGDPNNME_HLHDJIKKGCA => 3,
-            CmdMarkChestType::KJMOGDPNNME_OKGBAGMCJDI => 4,
-            CmdMarkChestType::KJMOGDPNNME_LBKCKHEOHCD => 5,
+            CmdMarkChestType::CmdMarkChestType_MNFEPONEDDJ => 0,
+            CmdMarkChestType::CmdMarkChestType_BPEKNLMIPLD => 1,
+            CmdMarkChestType::CmdMarkChestType_HHABDHGFAEG => 2,
+            CmdMarkChestType::CmdMarkChestType_OCMKJJJAJOP => 3,
+            CmdMarkChestType::CmdMarkChestType_KFEDHNIAAJK => 4,
+            CmdMarkChestType::CmdMarkChestType_DEIHDJGGPCM => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdMarkChestType {
 
 impl ::std::default::Default for CmdMarkChestType {
     fn default() -> Self {
-        CmdMarkChestType::KJMOGDPNNME_GKJBAODJMJG
+        CmdMarkChestType::CmdMarkChestType_MNFEPONEDDJ
     }
 }
 
@@ -114,11 +114,12 @@ impl CmdMarkChestType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdMarkChestType.proto*\xc5\x01\n\x10CmdMarkChestType\x12\x1b\n\
-    \x17KJMOGDPNNME_GKJBAODJMJG\x10\0\x12\x1c\n\x17KJMOGDPNNME_PBDBGJNCMEI\
-    \x10\xfa?\x12\x1c\n\x17KJMOGDPNNME_PIFAMCEGEOG\x10\x80@\x12\x1c\n\x17KJM\
-    OGDPNNME_HLHDJIKKGCA\x10\xf5?\x12\x1c\n\x17KJMOGDPNNME_OKGBAGMCJDI\x10\
-    \xfe?\x12\x1c\n\x17KJMOGDPNNME_LBKCKHEOHCD\x10\xf8?b\x06proto3\
+    \n\x16CmdMarkChestType.proto*\xe3\x01\n\x10CmdMarkChestType\x12\x20\n\
+    \x1cCmdMarkChestType_MNFEPONEDDJ\x10\0\x12!\n\x1cCmdMarkChestType_BPEKNL\
+    MIPLD\x10\x87@\x12!\n\x1cCmdMarkChestType_HHABDHGFAEG\x10\xf9?\x12!\n\
+    \x1cCmdMarkChestType_OCMKJJJAJOP\x10\xfa?\x12!\n\x1cCmdMarkChestType_KFE\
+    DHNIAAJK\x10\xf5?\x12!\n\x1cCmdMarkChestType_DEIHDJGGPCM\x10\x83@b\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

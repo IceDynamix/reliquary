@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooOpCatteryCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooOpCatteryCsReq.BKALHOPFIHP)
-    pub BKALHOPFIHP: u32,
     // @@protoc_insertion_point(field:SpaceZooOpCatteryCsReq.op_type)
     pub op_type: u32,
-    // @@protoc_insertion_point(field:SpaceZooOpCatteryCsReq.JAAAGMLKKJA)
-    pub JAAAGMLKKJA: u32,
+    // @@protoc_insertion_point(field:SpaceZooOpCatteryCsReq.LHCGAOJIFGE)
+    pub LHCGAOJIFGE: u32,
+    // @@protoc_insertion_point(field:SpaceZooOpCatteryCsReq.PEMPOIMHECH)
+    pub PEMPOIMHECH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooOpCatteryCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl SpaceZooOpCatteryCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BKALHOPFIHP",
-            |m: &SpaceZooOpCatteryCsReq| { &m.BKALHOPFIHP },
-            |m: &mut SpaceZooOpCatteryCsReq| { &mut m.BKALHOPFIHP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "op_type",
             |m: &SpaceZooOpCatteryCsReq| { &m.op_type },
             |m: &mut SpaceZooOpCatteryCsReq| { &mut m.op_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JAAAGMLKKJA",
-            |m: &SpaceZooOpCatteryCsReq| { &m.JAAAGMLKKJA },
-            |m: &mut SpaceZooOpCatteryCsReq| { &mut m.JAAAGMLKKJA },
+            "LHCGAOJIFGE",
+            |m: &SpaceZooOpCatteryCsReq| { &m.LHCGAOJIFGE },
+            |m: &mut SpaceZooOpCatteryCsReq| { &mut m.LHCGAOJIFGE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PEMPOIMHECH",
+            |m: &SpaceZooOpCatteryCsReq| { &m.PEMPOIMHECH },
+            |m: &mut SpaceZooOpCatteryCsReq| { &mut m.PEMPOIMHECH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooOpCatteryCsReq>(
             "SpaceZooOpCatteryCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.BKALHOPFIHP = is.read_uint32()?;
-                },
-                48 => {
+                120 => {
                     self.op_type = is.read_uint32()?;
                 },
-                80 => {
-                    self.JAAAGMLKKJA = is.read_uint32()?;
+                56 => {
+                    self.LHCGAOJIFGE = is.read_uint32()?;
+                },
+                16 => {
+                    self.PEMPOIMHECH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BKALHOPFIHP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.BKALHOPFIHP);
-        }
         if self.op_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.op_type);
+            my_size += ::protobuf::rt::uint32_size(15, self.op_type);
         }
-        if self.JAAAGMLKKJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.JAAAGMLKKJA);
+        if self.LHCGAOJIFGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LHCGAOJIFGE);
+        }
+        if self.PEMPOIMHECH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PEMPOIMHECH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BKALHOPFIHP != 0 {
-            os.write_uint32(13, self.BKALHOPFIHP)?;
-        }
         if self.op_type != 0 {
-            os.write_uint32(6, self.op_type)?;
+            os.write_uint32(15, self.op_type)?;
         }
-        if self.JAAAGMLKKJA != 0 {
-            os.write_uint32(10, self.JAAAGMLKKJA)?;
+        if self.LHCGAOJIFGE != 0 {
+            os.write_uint32(7, self.LHCGAOJIFGE)?;
+        }
+        if self.PEMPOIMHECH != 0 {
+            os.write_uint32(2, self.PEMPOIMHECH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for SpaceZooOpCatteryCsReq {
     }
 
     fn clear(&mut self) {
-        self.BKALHOPFIHP = 0;
         self.op_type = 0;
-        self.JAAAGMLKKJA = 0;
+        self.LHCGAOJIFGE = 0;
+        self.PEMPOIMHECH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooOpCatteryCsReq {
         static instance: SpaceZooOpCatteryCsReq = SpaceZooOpCatteryCsReq {
-            BKALHOPFIHP: 0,
             op_type: 0,
-            JAAAGMLKKJA: 0,
+            LHCGAOJIFGE: 0,
+            PEMPOIMHECH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooOpCatteryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSpaceZooOpCatteryCsReq.proto\"u\n\x16SpaceZooOpCatteryCsReq\x12\
-    \x20\n\x0bBKALHOPFIHP\x18\r\x20\x01(\rR\x0bBKALHOPFIHP\x12\x17\n\x07op_t\
-    ype\x18\x06\x20\x01(\rR\x06opType\x12\x20\n\x0bJAAAGMLKKJA\x18\n\x20\x01\
-    (\rR\x0bJAAAGMLKKJAb\x06proto3\
+    \x17\n\x07op_type\x18\x0f\x20\x01(\rR\x06opType\x12\x20\n\x0bLHCGAOJIFGE\
+    \x18\x07\x20\x01(\rR\x0bLHCGAOJIFGE\x12\x20\n\x0bPEMPOIMHECH\x18\x02\x20\
+    \x01(\rR\x0bPEMPOIMHECHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

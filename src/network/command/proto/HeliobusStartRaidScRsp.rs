@@ -31,7 +31,7 @@ pub struct HeliobusStartRaidScRsp {
     // @@protoc_insertion_point(field:HeliobusStartRaidScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:HeliobusStartRaidScRsp.scene)
-    pub scene: ::protobuf::MessageField<super::OGLAIJDPIOE::OGLAIJDPIOE>,
+    pub scene: ::protobuf::MessageField<super::EJFCPMHJLDO::EJFCPMHJLDO>,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusStartRaidScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,7 +56,7 @@ impl HeliobusStartRaidScRsp {
             |m: &HeliobusStartRaidScRsp| { &m.retcode },
             |m: &mut HeliobusStartRaidScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OGLAIJDPIOE::OGLAIJDPIOE>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJFCPMHJLDO::EJFCPMHJLDO>(
             "scene",
             |m: &HeliobusStartRaidScRsp| { &m.scene },
             |m: &mut HeliobusStartRaidScRsp| { &mut m.scene },
@@ -79,7 +79,7 @@ impl ::protobuf::Message for HeliobusStartRaidScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 106 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for HeliobusStartRaidScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
@@ -111,7 +111,7 @@ impl ::protobuf::Message for HeliobusStartRaidScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         if let Some(v) = self.scene.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusStartRaidScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cHeliobusStartRaidScRsp.proto\x1a\x11OGLAIJDPIOE.proto\"V\n\x16Heli\
-    obusStartRaidScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\
-    \x12\"\n\x05scene\x18\r\x20\x01(\x0b2\x0c.OGLAIJDPIOER\x05sceneb\x06prot\
+    \n\x1cHeliobusStartRaidScRsp.proto\x1a\x11EJFCPMHJLDO.proto\"V\n\x16Heli\
+    obusStartRaidScRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\
+    \x12\"\n\x05scene\x18\r\x20\x01(\x0b2\x0c.EJFCPMHJLDOR\x05sceneb\x06prot\
     o3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OGLAIJDPIOE::file_descriptor().clone());
+            deps.push(super::EJFCPMHJLDO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HeliobusStartRaidScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchThreeLevelEndScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MatchThreeLevelEndScRsp.FBIKDJDCMLA)
-    pub FBIKDJDCMLA: u32,
-    // @@protoc_insertion_point(field:MatchThreeLevelEndScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:MatchThreeLevelEndScRsp.level_id)
     pub level_id: u32,
+    // @@protoc_insertion_point(field:MatchThreeLevelEndScRsp.DGLAEPLNAFC)
+    pub DGLAEPLNAFC: u32,
+    // @@protoc_insertion_point(field:MatchThreeLevelEndScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeLevelEndScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl MatchThreeLevelEndScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FBIKDJDCMLA",
-            |m: &MatchThreeLevelEndScRsp| { &m.FBIKDJDCMLA },
-            |m: &mut MatchThreeLevelEndScRsp| { &mut m.FBIKDJDCMLA },
+            "level_id",
+            |m: &MatchThreeLevelEndScRsp| { &m.level_id },
+            |m: &mut MatchThreeLevelEndScRsp| { &mut m.level_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DGLAEPLNAFC",
+            |m: &MatchThreeLevelEndScRsp| { &m.DGLAEPLNAFC },
+            |m: &mut MatchThreeLevelEndScRsp| { &mut m.DGLAEPLNAFC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MatchThreeLevelEndScRsp| { &m.retcode },
             |m: &mut MatchThreeLevelEndScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level_id",
-            |m: &MatchThreeLevelEndScRsp| { &m.level_id },
-            |m: &mut MatchThreeLevelEndScRsp| { &mut m.level_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeLevelEndScRsp>(
             "MatchThreeLevelEndScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.FBIKDJDCMLA = is.read_uint32()?;
-                },
-                16 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                88 => {
+                24 => {
                     self.level_id = is.read_uint32()?;
+                },
+                72 => {
+                    self.DGLAEPLNAFC = is.read_uint32()?;
+                },
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FBIKDJDCMLA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.FBIKDJDCMLA);
+        if self.level_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.level_id);
+        }
+        if self.DGLAEPLNAFC != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.DGLAEPLNAFC);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
-        if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FBIKDJDCMLA != 0 {
-            os.write_uint32(1, self.FBIKDJDCMLA)?;
+        if self.level_id != 0 {
+            os.write_uint32(3, self.level_id)?;
+        }
+        if self.DGLAEPLNAFC != 0 {
+            os.write_uint32(9, self.DGLAEPLNAFC)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
-        if self.level_id != 0 {
-            os.write_uint32(11, self.level_id)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MatchThreeLevelEndScRsp {
     }
 
     fn clear(&mut self) {
-        self.FBIKDJDCMLA = 0;
-        self.retcode = 0;
         self.level_id = 0;
+        self.DGLAEPLNAFC = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeLevelEndScRsp {
         static instance: MatchThreeLevelEndScRsp = MatchThreeLevelEndScRsp {
-            FBIKDJDCMLA: 0,
-            retcode: 0,
             level_id: 0,
+            DGLAEPLNAFC: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeLevelEndScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dMatchThreeLevelEndScRsp.proto\"p\n\x17MatchThreeLevelEndScRsp\x12\
-    \x20\n\x0bFBIKDJDCMLA\x18\x01\x20\x01(\rR\x0bFBIKDJDCMLA\x12\x18\n\x07re\
-    tcode\x18\x02\x20\x01(\rR\x07retcode\x12\x19\n\x08level_id\x18\x0b\x20\
-    \x01(\rR\x07levelIdb\x06proto3\
+    \x19\n\x08level_id\x18\x03\x20\x01(\rR\x07levelId\x12\x20\n\x0bDGLAEPLNA\
+    FC\x18\t\x20\x01(\rR\x0bDGLAEPLNAFC\x12\x18\n\x07retcode\x18\x0f\x20\x01\
+    (\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

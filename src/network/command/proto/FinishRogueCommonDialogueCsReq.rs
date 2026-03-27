@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishRogueCommonDialogueCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishRogueCommonDialogueCsReq.AKCFOGNELLE)
-    pub AKCFOGNELLE: u32,
+    // @@protoc_insertion_point(field:FinishRogueCommonDialogueCsReq.HOJIOHLHAAF)
+    pub HOJIOHLHAAF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishRogueCommonDialogueCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FinishRogueCommonDialogueCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKCFOGNELLE",
-            |m: &FinishRogueCommonDialogueCsReq| { &m.AKCFOGNELLE },
-            |m: &mut FinishRogueCommonDialogueCsReq| { &mut m.AKCFOGNELLE },
+            "HOJIOHLHAAF",
+            |m: &FinishRogueCommonDialogueCsReq| { &m.HOJIOHLHAAF },
+            |m: &mut FinishRogueCommonDialogueCsReq| { &mut m.HOJIOHLHAAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishRogueCommonDialogueCsReq>(
             "FinishRogueCommonDialogueCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FinishRogueCommonDialogueCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.AKCFOGNELLE = is.read_uint32()?;
+                32 => {
+                    self.HOJIOHLHAAF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FinishRogueCommonDialogueCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AKCFOGNELLE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.AKCFOGNELLE);
+        if self.HOJIOHLHAAF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HOJIOHLHAAF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FinishRogueCommonDialogueCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AKCFOGNELLE != 0 {
-            os.write_uint32(6, self.AKCFOGNELLE)?;
+        if self.HOJIOHLHAAF != 0 {
+            os.write_uint32(4, self.HOJIOHLHAAF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FinishRogueCommonDialogueCsReq {
     }
 
     fn clear(&mut self) {
-        self.AKCFOGNELLE = 0;
+        self.HOJIOHLHAAF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishRogueCommonDialogueCsReq {
         static instance: FinishRogueCommonDialogueCsReq = FinishRogueCommonDialogueCsReq {
-            AKCFOGNELLE: 0,
+            HOJIOHLHAAF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for FinishRogueCommonDialogueCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$FinishRogueCommonDialogueCsReq.proto\"B\n\x1eFinishRogueCommonDialogu\
-    eCsReq\x12\x20\n\x0bAKCFOGNELLE\x18\x06\x20\x01(\rR\x0bAKCFOGNELLEb\x06p\
+    eCsReq\x12\x20\n\x0bHOJIOHLHAAF\x18\x04\x20\x01(\rR\x0bHOJIOHLHAAFb\x06p\
     roto3\
 ";
 

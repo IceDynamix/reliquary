@@ -30,8 +30,8 @@ pub struct SetHipplenOutfitScRsp {
     // message fields
     // @@protoc_insertion_point(field:SetHipplenOutfitScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetHipplenOutfitScRsp.LGDFKNAAJIP)
-    pub LGDFKNAAJIP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SetHipplenOutfitScRsp.IDFFJBBOFOC)
+    pub IDFFJBBOFOC: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SetHipplenOutfitScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl SetHipplenOutfitScRsp {
             |m: &mut SetHipplenOutfitScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LGDFKNAAJIP",
-            |m: &SetHipplenOutfitScRsp| { &m.LGDFKNAAJIP },
-            |m: &mut SetHipplenOutfitScRsp| { &mut m.LGDFKNAAJIP },
+            "IDFFJBBOFOC",
+            |m: &SetHipplenOutfitScRsp| { &m.IDFFJBBOFOC },
+            |m: &mut SetHipplenOutfitScRsp| { &mut m.IDFFJBBOFOC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetHipplenOutfitScRsp>(
             "SetHipplenOutfitScRsp",
@@ -82,11 +82,11 @@ impl ::protobuf::Message for SetHipplenOutfitScRsp {
                 8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LGDFKNAAJIP)?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IDFFJBBOFOC)?;
                 },
-                32 => {
-                    self.LGDFKNAAJIP.push(is.read_uint32()?);
+                48 => {
+                    self.IDFFJBBOFOC.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,7 +103,7 @@ impl ::protobuf::Message for SetHipplenOutfitScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.LGDFKNAAJIP);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.IDFFJBBOFOC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -113,7 +113,7 @@ impl ::protobuf::Message for SetHipplenOutfitScRsp {
         if self.retcode != 0 {
             os.write_uint32(1, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(4, &self.LGDFKNAAJIP)?;
+        os.write_repeated_packed_uint32(6, &self.IDFFJBBOFOC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,14 +132,14 @@ impl ::protobuf::Message for SetHipplenOutfitScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.LGDFKNAAJIP.clear();
+        self.IDFFJBBOFOC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetHipplenOutfitScRsp {
         static instance: SetHipplenOutfitScRsp = SetHipplenOutfitScRsp {
             retcode: 0,
-            LGDFKNAAJIP: ::std::vec::Vec::new(),
+            IDFFJBBOFOC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for SetHipplenOutfitScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSetHipplenOutfitScRsp.proto\"S\n\x15SetHipplenOutfitScRsp\x12\x18\
-    \n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bLGDFKNAAJIP\
-    \x18\x04\x20\x03(\rR\x0bLGDFKNAAJIPb\x06proto3\
+    \n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bIDFFJBBOFOC\
+    \x18\x06\x20\x03(\rR\x0bIDFFJBBOFOCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

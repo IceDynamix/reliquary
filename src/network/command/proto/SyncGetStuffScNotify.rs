@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncGetStuffScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncGetStuffScNotify.FHFIBBCHKJO)
-    pub FHFIBBCHKJO: u32,
-    // @@protoc_insertion_point(field:SyncGetStuffScNotify.JOBAAHPNOBE)
-    pub JOBAAHPNOBE: ::protobuf::EnumOrUnknown<super::GetStuffType::GetStuffType>,
+    // @@protoc_insertion_point(field:SyncGetStuffScNotify.CBJMDBKKIIL)
+    pub CBJMDBKKIIL: u32,
+    // @@protoc_insertion_point(field:SyncGetStuffScNotify.PFEKIHLHLNB)
+    pub PFEKIHLHLNB: ::protobuf::EnumOrUnknown<super::GetStuffType::GetStuffType>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncGetStuffScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SyncGetStuffScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FHFIBBCHKJO",
-            |m: &SyncGetStuffScNotify| { &m.FHFIBBCHKJO },
-            |m: &mut SyncGetStuffScNotify| { &mut m.FHFIBBCHKJO },
+            "CBJMDBKKIIL",
+            |m: &SyncGetStuffScNotify| { &m.CBJMDBKKIIL },
+            |m: &mut SyncGetStuffScNotify| { &mut m.CBJMDBKKIIL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JOBAAHPNOBE",
-            |m: &SyncGetStuffScNotify| { &m.JOBAAHPNOBE },
-            |m: &mut SyncGetStuffScNotify| { &mut m.JOBAAHPNOBE },
+            "PFEKIHLHLNB",
+            |m: &SyncGetStuffScNotify| { &m.PFEKIHLHLNB },
+            |m: &mut SyncGetStuffScNotify| { &mut m.PFEKIHLHLNB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncGetStuffScNotify>(
             "SyncGetStuffScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SyncGetStuffScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.FHFIBBCHKJO = is.read_uint32()?;
-                },
                 88 => {
-                    self.JOBAAHPNOBE = is.read_enum_or_unknown()?;
+                    self.CBJMDBKKIIL = is.read_uint32()?;
+                },
+                104 => {
+                    self.PFEKIHLHLNB = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SyncGetStuffScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FHFIBBCHKJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.FHFIBBCHKJO);
+        if self.CBJMDBKKIIL != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CBJMDBKKIIL);
         }
-        if self.JOBAAHPNOBE != ::protobuf::EnumOrUnknown::new(super::GetStuffType::GetStuffType::LKKONIIAPJJ_GAPOFIKEOHN) {
-            my_size += ::protobuf::rt::int32_size(11, self.JOBAAHPNOBE.value());
+        if self.PFEKIHLHLNB != ::protobuf::EnumOrUnknown::new(super::GetStuffType::GetStuffType::GetStuffType_DOMPHFHPADB) {
+            my_size += ::protobuf::rt::int32_size(13, self.PFEKIHLHLNB.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SyncGetStuffScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FHFIBBCHKJO != 0 {
-            os.write_uint32(4, self.FHFIBBCHKJO)?;
+        if self.CBJMDBKKIIL != 0 {
+            os.write_uint32(11, self.CBJMDBKKIIL)?;
         }
-        if self.JOBAAHPNOBE != ::protobuf::EnumOrUnknown::new(super::GetStuffType::GetStuffType::LKKONIIAPJJ_GAPOFIKEOHN) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.JOBAAHPNOBE))?;
+        if self.PFEKIHLHLNB != ::protobuf::EnumOrUnknown::new(super::GetStuffType::GetStuffType::GetStuffType_DOMPHFHPADB) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.PFEKIHLHLNB))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SyncGetStuffScNotify {
     }
 
     fn clear(&mut self) {
-        self.FHFIBBCHKJO = 0;
-        self.JOBAAHPNOBE = ::protobuf::EnumOrUnknown::new(super::GetStuffType::GetStuffType::LKKONIIAPJJ_GAPOFIKEOHN);
+        self.CBJMDBKKIIL = 0;
+        self.PFEKIHLHLNB = ::protobuf::EnumOrUnknown::new(super::GetStuffType::GetStuffType::GetStuffType_DOMPHFHPADB);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncGetStuffScNotify {
         static instance: SyncGetStuffScNotify = SyncGetStuffScNotify {
-            FHFIBBCHKJO: 0,
-            JOBAAHPNOBE: ::protobuf::EnumOrUnknown::from_i32(0),
+            CBJMDBKKIIL: 0,
+            PFEKIHLHLNB: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncGetStuffScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSyncGetStuffScNotify.proto\x1a\x12GetStuffType.proto\"i\n\x14SyncG\
-    etStuffScNotify\x12\x20\n\x0bFHFIBBCHKJO\x18\x04\x20\x01(\rR\x0bFHFIBBCH\
-    KJO\x12/\n\x0bJOBAAHPNOBE\x18\x0b\x20\x01(\x0e2\r.GetStuffTypeR\x0bJOBAA\
-    HPNOBEb\x06proto3\
+    etStuffScNotify\x12\x20\n\x0bCBJMDBKKIIL\x18\x0b\x20\x01(\rR\x0bCBJMDBKK\
+    IIL\x12/\n\x0bPFEKIHLHLNB\x18\r\x20\x01(\x0e2\r.GetStuffTypeR\x0bPFEKIHL\
+    HLNBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

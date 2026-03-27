@@ -31,7 +31,7 @@ pub struct FateHouguSelectReq {
     // @@protoc_insertion_point(field:FateHouguSelectReq.queue_position)
     pub queue_position: u32,
     // message oneof groups
-    pub DCNIFNOJHIF: ::std::option::Option<fate_hougu_select_req::DCNIFNOJHIF>,
+    pub IHIAEAHGMCA: ::std::option::Option<fate_hougu_select_req::IHIAEAHGMCA>,
     // special fields
     // @@protoc_insertion_point(special_field:FateHouguSelectReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,101 +48,101 @@ impl FateHouguSelectReq {
         ::std::default::Default::default()
     }
 
-    // .HKGIHNPBNHJ IGNEOPPOCCF = 14;
+    // .PNBCAKMBCCB GBCDHNEMLDN = 10;
 
-    pub fn IGNEOPPOCCF(&self) -> &super::HKGIHNPBNHJ::HKGIHNPBNHJ {
-        match self.DCNIFNOJHIF {
-            ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::IGNEOPPOCCF(ref v)) => v,
-            _ => <super::HKGIHNPBNHJ::HKGIHNPBNHJ as ::protobuf::Message>::default_instance(),
+    pub fn GBCDHNEMLDN(&self) -> &super::PNBCAKMBCCB::PNBCAKMBCCB {
+        match self.IHIAEAHGMCA {
+            ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::GBCDHNEMLDN(ref v)) => v,
+            _ => <super::PNBCAKMBCCB::PNBCAKMBCCB as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_IGNEOPPOCCF(&mut self) {
-        self.DCNIFNOJHIF = ::std::option::Option::None;
+    pub fn clear_GBCDHNEMLDN(&mut self) {
+        self.IHIAEAHGMCA = ::std::option::Option::None;
     }
 
-    pub fn has_IGNEOPPOCCF(&self) -> bool {
-        match self.DCNIFNOJHIF {
-            ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::IGNEOPPOCCF(..)) => true,
+    pub fn has_GBCDHNEMLDN(&self) -> bool {
+        match self.IHIAEAHGMCA {
+            ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::GBCDHNEMLDN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_IGNEOPPOCCF(&mut self, v: super::HKGIHNPBNHJ::HKGIHNPBNHJ) {
-        self.DCNIFNOJHIF = ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::IGNEOPPOCCF(v))
+    pub fn set_GBCDHNEMLDN(&mut self, v: super::PNBCAKMBCCB::PNBCAKMBCCB) {
+        self.IHIAEAHGMCA = ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::GBCDHNEMLDN(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_IGNEOPPOCCF(&mut self) -> &mut super::HKGIHNPBNHJ::HKGIHNPBNHJ {
-        if let ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::IGNEOPPOCCF(_)) = self.DCNIFNOJHIF {
+    pub fn mut_GBCDHNEMLDN(&mut self) -> &mut super::PNBCAKMBCCB::PNBCAKMBCCB {
+        if let ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::GBCDHNEMLDN(_)) = self.IHIAEAHGMCA {
         } else {
-            self.DCNIFNOJHIF = ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::IGNEOPPOCCF(super::HKGIHNPBNHJ::HKGIHNPBNHJ::new()));
+            self.IHIAEAHGMCA = ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::GBCDHNEMLDN(super::PNBCAKMBCCB::PNBCAKMBCCB::new()));
         }
-        match self.DCNIFNOJHIF {
-            ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::IGNEOPPOCCF(ref mut v)) => v,
+        match self.IHIAEAHGMCA {
+            ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::GBCDHNEMLDN(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_IGNEOPPOCCF(&mut self) -> super::HKGIHNPBNHJ::HKGIHNPBNHJ {
-        if self.has_IGNEOPPOCCF() {
-            match self.DCNIFNOJHIF.take() {
-                ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::IGNEOPPOCCF(v)) => v,
+    pub fn take_GBCDHNEMLDN(&mut self) -> super::PNBCAKMBCCB::PNBCAKMBCCB {
+        if self.has_GBCDHNEMLDN() {
+            match self.IHIAEAHGMCA.take() {
+                ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::GBCDHNEMLDN(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::HKGIHNPBNHJ::HKGIHNPBNHJ::new()
+            super::PNBCAKMBCCB::PNBCAKMBCCB::new()
         }
     }
 
-    // .DGKPFJLDPBD DKCMNLGFKCC = 13;
+    // .NGCAOFEGFCA OKADCCNDFII = 4;
 
-    pub fn DKCMNLGFKCC(&self) -> &super::DGKPFJLDPBD::DGKPFJLDPBD {
-        match self.DCNIFNOJHIF {
-            ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::DKCMNLGFKCC(ref v)) => v,
-            _ => <super::DGKPFJLDPBD::DGKPFJLDPBD as ::protobuf::Message>::default_instance(),
+    pub fn OKADCCNDFII(&self) -> &super::NGCAOFEGFCA::NGCAOFEGFCA {
+        match self.IHIAEAHGMCA {
+            ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::OKADCCNDFII(ref v)) => v,
+            _ => <super::NGCAOFEGFCA::NGCAOFEGFCA as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_DKCMNLGFKCC(&mut self) {
-        self.DCNIFNOJHIF = ::std::option::Option::None;
+    pub fn clear_OKADCCNDFII(&mut self) {
+        self.IHIAEAHGMCA = ::std::option::Option::None;
     }
 
-    pub fn has_DKCMNLGFKCC(&self) -> bool {
-        match self.DCNIFNOJHIF {
-            ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::DKCMNLGFKCC(..)) => true,
+    pub fn has_OKADCCNDFII(&self) -> bool {
+        match self.IHIAEAHGMCA {
+            ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::OKADCCNDFII(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_DKCMNLGFKCC(&mut self, v: super::DGKPFJLDPBD::DGKPFJLDPBD) {
-        self.DCNIFNOJHIF = ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::DKCMNLGFKCC(v))
+    pub fn set_OKADCCNDFII(&mut self, v: super::NGCAOFEGFCA::NGCAOFEGFCA) {
+        self.IHIAEAHGMCA = ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::OKADCCNDFII(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_DKCMNLGFKCC(&mut self) -> &mut super::DGKPFJLDPBD::DGKPFJLDPBD {
-        if let ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::DKCMNLGFKCC(_)) = self.DCNIFNOJHIF {
+    pub fn mut_OKADCCNDFII(&mut self) -> &mut super::NGCAOFEGFCA::NGCAOFEGFCA {
+        if let ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::OKADCCNDFII(_)) = self.IHIAEAHGMCA {
         } else {
-            self.DCNIFNOJHIF = ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::DKCMNLGFKCC(super::DGKPFJLDPBD::DGKPFJLDPBD::new()));
+            self.IHIAEAHGMCA = ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::OKADCCNDFII(super::NGCAOFEGFCA::NGCAOFEGFCA::new()));
         }
-        match self.DCNIFNOJHIF {
-            ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::DKCMNLGFKCC(ref mut v)) => v,
+        match self.IHIAEAHGMCA {
+            ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::OKADCCNDFII(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_DKCMNLGFKCC(&mut self) -> super::DGKPFJLDPBD::DGKPFJLDPBD {
-        if self.has_DKCMNLGFKCC() {
-            match self.DCNIFNOJHIF.take() {
-                ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::DKCMNLGFKCC(v)) => v,
+    pub fn take_OKADCCNDFII(&mut self) -> super::NGCAOFEGFCA::NGCAOFEGFCA {
+        if self.has_OKADCCNDFII() {
+            match self.IHIAEAHGMCA.take() {
+                ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::OKADCCNDFII(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::DGKPFJLDPBD::DGKPFJLDPBD::new()
+            super::NGCAOFEGFCA::NGCAOFEGFCA::new()
         }
     }
 
@@ -154,21 +154,21 @@ impl FateHouguSelectReq {
             |m: &FateHouguSelectReq| { &m.queue_position },
             |m: &mut FateHouguSelectReq| { &mut m.queue_position },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HKGIHNPBNHJ::HKGIHNPBNHJ>(
-            "IGNEOPPOCCF",
-            FateHouguSelectReq::has_IGNEOPPOCCF,
-            FateHouguSelectReq::IGNEOPPOCCF,
-            FateHouguSelectReq::mut_IGNEOPPOCCF,
-            FateHouguSelectReq::set_IGNEOPPOCCF,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PNBCAKMBCCB::PNBCAKMBCCB>(
+            "GBCDHNEMLDN",
+            FateHouguSelectReq::has_GBCDHNEMLDN,
+            FateHouguSelectReq::GBCDHNEMLDN,
+            FateHouguSelectReq::mut_GBCDHNEMLDN,
+            FateHouguSelectReq::set_GBCDHNEMLDN,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DGKPFJLDPBD::DGKPFJLDPBD>(
-            "DKCMNLGFKCC",
-            FateHouguSelectReq::has_DKCMNLGFKCC,
-            FateHouguSelectReq::DKCMNLGFKCC,
-            FateHouguSelectReq::mut_DKCMNLGFKCC,
-            FateHouguSelectReq::set_DKCMNLGFKCC,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NGCAOFEGFCA::NGCAOFEGFCA>(
+            "OKADCCNDFII",
+            FateHouguSelectReq::has_OKADCCNDFII,
+            FateHouguSelectReq::OKADCCNDFII,
+            FateHouguSelectReq::mut_OKADCCNDFII,
+            FateHouguSelectReq::set_OKADCCNDFII,
         ));
-        oneofs.push(fate_hougu_select_req::DCNIFNOJHIF::generated_oneof_descriptor_data());
+        oneofs.push(fate_hougu_select_req::IHIAEAHGMCA::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FateHouguSelectReq>(
             "FateHouguSelectReq",
             fields,
@@ -187,14 +187,14 @@ impl ::protobuf::Message for FateHouguSelectReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                112 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                114 => {
-                    self.DCNIFNOJHIF = ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::IGNEOPPOCCF(is.read_message()?));
+                82 => {
+                    self.IHIAEAHGMCA = ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::GBCDHNEMLDN(is.read_message()?));
                 },
-                106 => {
-                    self.DCNIFNOJHIF = ::std::option::Option::Some(fate_hougu_select_req::DCNIFNOJHIF::DKCMNLGFKCC(is.read_message()?));
+                34 => {
+                    self.IHIAEAHGMCA = ::std::option::Option::Some(fate_hougu_select_req::IHIAEAHGMCA::OKADCCNDFII(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -209,15 +209,15 @@ impl ::protobuf::Message for FateHouguSelectReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(14, self.queue_position);
         }
-        if let ::std::option::Option::Some(ref v) = self.DCNIFNOJHIF {
+        if let ::std::option::Option::Some(ref v) = self.IHIAEAHGMCA {
             match v {
-                &fate_hougu_select_req::DCNIFNOJHIF::IGNEOPPOCCF(ref v) => {
+                &fate_hougu_select_req::IHIAEAHGMCA::GBCDHNEMLDN(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &fate_hougu_select_req::DCNIFNOJHIF::DKCMNLGFKCC(ref v) => {
+                &fate_hougu_select_req::IHIAEAHGMCA::OKADCCNDFII(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -230,15 +230,15 @@ impl ::protobuf::Message for FateHouguSelectReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(7, self.queue_position)?;
+            os.write_uint32(14, self.queue_position)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.DCNIFNOJHIF {
+        if let ::std::option::Option::Some(ref v) = self.IHIAEAHGMCA {
             match v {
-                &fate_hougu_select_req::DCNIFNOJHIF::IGNEOPPOCCF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &fate_hougu_select_req::IHIAEAHGMCA::GBCDHNEMLDN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
                 },
-                &fate_hougu_select_req::DCNIFNOJHIF::DKCMNLGFKCC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+                &fate_hougu_select_req::IHIAEAHGMCA::OKADCCNDFII(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -260,15 +260,15 @@ impl ::protobuf::Message for FateHouguSelectReq {
 
     fn clear(&mut self) {
         self.queue_position = 0;
-        self.DCNIFNOJHIF = ::std::option::Option::None;
-        self.DCNIFNOJHIF = ::std::option::Option::None;
+        self.IHIAEAHGMCA = ::std::option::Option::None;
+        self.IHIAEAHGMCA = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FateHouguSelectReq {
         static instance: FateHouguSelectReq = FateHouguSelectReq {
             queue_position: 0,
-            DCNIFNOJHIF: ::std::option::Option::None,
+            IHIAEAHGMCA: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -297,37 +297,37 @@ pub mod fate_hougu_select_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:FateHouguSelectReq.DCNIFNOJHIF)
-    pub enum DCNIFNOJHIF {
-        // @@protoc_insertion_point(oneof_field:FateHouguSelectReq.IGNEOPPOCCF)
-        IGNEOPPOCCF(super::super::HKGIHNPBNHJ::HKGIHNPBNHJ),
-        // @@protoc_insertion_point(oneof_field:FateHouguSelectReq.DKCMNLGFKCC)
-        DKCMNLGFKCC(super::super::DGKPFJLDPBD::DGKPFJLDPBD),
+    // @@protoc_insertion_point(oneof:FateHouguSelectReq.IHIAEAHGMCA)
+    pub enum IHIAEAHGMCA {
+        // @@protoc_insertion_point(oneof_field:FateHouguSelectReq.GBCDHNEMLDN)
+        GBCDHNEMLDN(super::super::PNBCAKMBCCB::PNBCAKMBCCB),
+        // @@protoc_insertion_point(oneof_field:FateHouguSelectReq.OKADCCNDFII)
+        OKADCCNDFII(super::super::NGCAOFEGFCA::NGCAOFEGFCA),
     }
 
-    impl ::protobuf::Oneof for DCNIFNOJHIF {
+    impl ::protobuf::Oneof for IHIAEAHGMCA {
     }
 
-    impl ::protobuf::OneofFull for DCNIFNOJHIF {
+    impl ::protobuf::OneofFull for IHIAEAHGMCA {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::FateHouguSelectReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("DCNIFNOJHIF").unwrap()).clone()
+            descriptor.get(|| <super::FateHouguSelectReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("IHIAEAHGMCA").unwrap()).clone()
         }
     }
 
-    impl DCNIFNOJHIF {
+    impl IHIAEAHGMCA {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DCNIFNOJHIF>("DCNIFNOJHIF")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IHIAEAHGMCA>("IHIAEAHGMCA")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18FateHouguSelectReq.proto\x1a\x11DGKPFJLDPBD.proto\x1a\x11HKGIHNPBN\
-    HJ.proto\"\xae\x01\n\x12FateHouguSelectReq\x12%\n\x0equeue_position\x18\
-    \x07\x20\x01(\rR\rqueuePosition\x120\n\x0bIGNEOPPOCCF\x18\x0e\x20\x01(\
-    \x0b2\x0c.HKGIHNPBNHJH\0R\x0bIGNEOPPOCCF\x120\n\x0bDKCMNLGFKCC\x18\r\x20\
-    \x01(\x0b2\x0c.DGKPFJLDPBDH\0R\x0bDKCMNLGFKCCB\r\n\x0bDCNIFNOJHIFb\x06pr\
+    \n\x18FateHouguSelectReq.proto\x1a\x11NGCAOFEGFCA.proto\x1a\x11PNBCAKMBC\
+    CB.proto\"\xae\x01\n\x12FateHouguSelectReq\x12%\n\x0equeue_position\x18\
+    \x0e\x20\x01(\rR\rqueuePosition\x120\n\x0bGBCDHNEMLDN\x18\n\x20\x01(\x0b\
+    2\x0c.PNBCAKMBCCBH\0R\x0bGBCDHNEMLDN\x120\n\x0bOKADCCNDFII\x18\x04\x20\
+    \x01(\x0b2\x0c.NGCAOFEGFCAH\0R\x0bOKADCCNDFIIB\r\n\x0bIHIAEAHGMCAb\x06pr\
     oto3\
 ";
 
@@ -346,8 +346,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DGKPFJLDPBD::file_descriptor().clone());
-            deps.push(super::HKGIHNPBNHJ::file_descriptor().clone());
+            deps.push(super::NGCAOFEGFCA::file_descriptor().clone());
+            deps.push(super::PNBCAKMBCCB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FateHouguSelectReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

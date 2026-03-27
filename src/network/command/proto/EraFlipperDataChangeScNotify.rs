@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct EraFlipperDataChangeScNotify {
     // message fields
     // @@protoc_insertion_point(field:EraFlipperDataChangeScNotify.data)
-    pub data: ::protobuf::MessageField<super::GAMJPEJHMMA::GAMJPEJHMMA>,
+    pub data: ::protobuf::MessageField<super::LNMMKIBKCMP::LNMMKIBKCMP>,
     // @@protoc_insertion_point(field:EraFlipperDataChangeScNotify.floor_id)
     pub floor_id: u32,
     // special fields
@@ -51,7 +51,7 @@ impl EraFlipperDataChangeScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GAMJPEJHMMA::GAMJPEJHMMA>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LNMMKIBKCMP::LNMMKIBKCMP>(
             "data",
             |m: &EraFlipperDataChangeScNotify| { &m.data },
             |m: &mut EraFlipperDataChangeScNotify| { &mut m.data },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.data)?;
                 },
-                16 => {
+                64 => {
                     self.floor_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.floor_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.floor_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for EraFlipperDataChangeScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.floor_id != 0 {
-            os.write_uint32(2, self.floor_id)?;
+            os.write_uint32(8, self.floor_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for EraFlipperDataChangeScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"EraFlipperDataChangeScNotify.proto\x1a\x11GAMJPEJHMMA.proto\"[\n\x1c\
-    EraFlipperDataChangeScNotify\x12\x20\n\x04data\x18\x05\x20\x01(\x0b2\x0c\
-    .GAMJPEJHMMAR\x04data\x12\x19\n\x08floor_id\x18\x02\x20\x01(\rR\x07floor\
+    \n\"EraFlipperDataChangeScNotify.proto\x1a\x11LNMMKIBKCMP.proto\"[\n\x1c\
+    EraFlipperDataChangeScNotify\x12\x20\n\x04data\x18\x0c\x20\x01(\x0b2\x0c\
+    .LNMMKIBKCMPR\x04data\x12\x19\n\x08floor_id\x18\x08\x20\x01(\rR\x07floor\
     Idb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GAMJPEJHMMA::file_descriptor().clone());
+            deps.push(super::LNMMKIBKCMP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EraFlipperDataChangeScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

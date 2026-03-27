@@ -27,148 +27,160 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRogueTournType)
 pub enum CmdRogueTournType {
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_GKJBAODJMJG)
-    CMPBCCJBCCC_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_HKDENGPAABK)
-    CMPBCCJBCCC_HKDENGPAABK = 6065,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_EBNGLIJBKJF)
-    CMPBCCJBCCC_EBNGLIJBKJF = 6044,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_PEPBLGGIDCP)
-    CMPBCCJBCCC_PEPBLGGIDCP = 6050,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_ALODNMDGIDI)
-    CMPBCCJBCCC_ALODNMDGIDI = 6089,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_GFNECGGNBIP)
-    CMPBCCJBCCC_GFNECGGNBIP = 6086,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_NKNGGENJNKM)
-    CMPBCCJBCCC_NKNGGENJNKM = 6034,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_PGEFOJFICBP)
-    CMPBCCJBCCC_PGEFOJFICBP = 6023,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_GHAOFNCIGMB)
-    CMPBCCJBCCC_GHAOFNCIGMB = 6095,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_NGHLPDMMNDJ)
-    CMPBCCJBCCC_NGHLPDMMNDJ = 6016,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_FCNBCHGFANB)
-    CMPBCCJBCCC_FCNBCHGFANB = 6045,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_HLGIEIOPGAH)
-    CMPBCCJBCCC_HLGIEIOPGAH = 6082,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_AELKKDIGPKK)
-    CMPBCCJBCCC_AELKKDIGPKK = 6038,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_LFPHGDAOBCA)
-    CMPBCCJBCCC_LFPHGDAOBCA = 6087,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_MGECGGLGBIM)
-    CMPBCCJBCCC_MGECGGLGBIM = 6076,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_ILGBCPCKAMG)
-    CMPBCCJBCCC_ILGBCPCKAMG = 6085,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_FANMPFANHKH)
-    CMPBCCJBCCC_FANMPFANHKH = 6056,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_INKJHKAEIAF)
-    CMPBCCJBCCC_INKJHKAEIAF = 6013,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_JMPKALPOIDA)
-    CMPBCCJBCCC_JMPKALPOIDA = 6026,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_FHIIAPMOGNI)
-    CMPBCCJBCCC_FHIIAPMOGNI = 6090,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_OBLAHHKOABN)
-    CMPBCCJBCCC_OBLAHHKOABN = 6042,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_PFANAAILIME)
-    CMPBCCJBCCC_PFANAAILIME = 6078,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_ONOLFFLPBBF)
-    CMPBCCJBCCC_ONOLFFLPBBF = 6048,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_PFDPPEKGBKJ)
-    CMPBCCJBCCC_PFDPPEKGBKJ = 6053,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_KFBDFPNFEDM)
-    CMPBCCJBCCC_KFBDFPNFEDM = 6057,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_DGFKMLKJILG)
-    CMPBCCJBCCC_DGFKMLKJILG = 6068,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_PBIOLFICMHM)
-    CMPBCCJBCCC_PBIOLFICMHM = 6031,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_HOMANDPNFKA)
-    CMPBCCJBCCC_HOMANDPNFKA = 6011,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_IJBHOEAPIMA)
-    CMPBCCJBCCC_IJBHOEAPIMA = 6088,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_JJFKEFFINIA)
-    CMPBCCJBCCC_JJFKEFFINIA = 6028,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_BNAJJCNIOCC)
-    CMPBCCJBCCC_BNAJJCNIOCC = 6066,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_LBFCLIDNDEA)
-    CMPBCCJBCCC_LBFCLIDNDEA = 6021,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_EEBIAAIFHMB)
-    CMPBCCJBCCC_EEBIAAIFHMB = 6063,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_HLGDADGNOPE)
-    CMPBCCJBCCC_HLGDADGNOPE = 6083,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_OKHEFLCAJJJ)
-    CMPBCCJBCCC_OKHEFLCAJJJ = 6019,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_HFGJICDPHAG)
-    CMPBCCJBCCC_HFGJICDPHAG = 6099,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_NINAEMAMNCF)
-    CMPBCCJBCCC_NINAEMAMNCF = 6098,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_GJELLBFDNLG)
-    CMPBCCJBCCC_GJELLBFDNLG = 6047,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_EBCKNPHBGPD)
-    CMPBCCJBCCC_EBCKNPHBGPD = 6036,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_ADJAGLHGINK)
-    CMPBCCJBCCC_ADJAGLHGINK = 6051,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_MHIKCGOMGAM)
-    CMPBCCJBCCC_MHIKCGOMGAM = 6061,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_MHMBBGLCKMG)
-    CMPBCCJBCCC_MHMBBGLCKMG = 6100,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_FBHNAJINKPN)
-    CMPBCCJBCCC_FBHNAJINKPN = 6081,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_OOJHJACAIIL)
-    CMPBCCJBCCC_OOJHJACAIIL = 6022,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_JCNDLADMPLK)
-    CMPBCCJBCCC_JCNDLADMPLK = 6024,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_GHOPILNDEDJ)
-    CMPBCCJBCCC_GHOPILNDEDJ = 6032,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_EBDPMMLNLJC)
-    CMPBCCJBCCC_EBDPMMLNLJC = 6052,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_KJBPACPDLPD)
-    CMPBCCJBCCC_KJBPACPDLPD = 6018,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_GKAHFKIOLKG)
-    CMPBCCJBCCC_GKAHFKIOLKG = 6093,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_IEILONNCCDH)
-    CMPBCCJBCCC_IEILONNCCDH = 6092,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_EHLLBHFKOME)
-    CMPBCCJBCCC_EHLLBHFKOME = 6096,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_BMPKCKOIEIH)
-    CMPBCCJBCCC_BMPKCKOIEIH = 6080,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_PICLIILMGMG)
-    CMPBCCJBCCC_PICLIILMGMG = 6049,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_GDPMLBOECMH)
-    CMPBCCJBCCC_GDPMLBOECMH = 6014,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_EMHJLEOECGA)
-    CMPBCCJBCCC_EMHJLEOECGA = 6012,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_BAKHIIEAJNH)
-    CMPBCCJBCCC_BAKHIIEAJNH = 6067,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_DKCJEOMJOOK)
-    CMPBCCJBCCC_DKCJEOMJOOK = 6070,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_JFHLLABLLBN)
-    CMPBCCJBCCC_JFHLLABLLBN = 6025,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_GBLPGLFCCKG)
-    CMPBCCJBCCC_GBLPGLFCCKG = 6091,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_JMNJBNKKLDA)
-    CMPBCCJBCCC_JMNJBNKKLDA = 6071,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_DEFJAOFEHBM)
-    CMPBCCJBCCC_DEFJAOFEHBM = 6079,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_CCLKEIAGHHE)
-    CMPBCCJBCCC_CCLKEIAGHHE = 6062,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_FMOHPPFDAPC)
-    CMPBCCJBCCC_FMOHPPFDAPC = 6030,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_HMHMAHCBCHC)
-    CMPBCCJBCCC_HMHMAHCBCHC = 6060,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_NJIKAPJOAOI)
-    CMPBCCJBCCC_NJIKAPJOAOI = 6054,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_BBFALEBPNDJ)
-    CMPBCCJBCCC_BBFALEBPNDJ = 6040,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_KDHOAMGGFMD)
-    CMPBCCJBCCC_KDHOAMGGFMD = 6015,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_GNIBICFKPIG)
-    CMPBCCJBCCC_GNIBICFKPIG = 6055,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_GEJEMFAEFLN)
-    CMPBCCJBCCC_GEJEMFAEFLN = 6058,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_FIIMBEECFFH)
-    CMPBCCJBCCC_FIIMBEECFFH = 6072,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CMPBCCJBCCC_KFHKCAEPGFC)
-    CMPBCCJBCCC_KFHKCAEPGFC = 6084,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_MNFEPONEDDJ)
+    CmdRogueTournType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_LLDIIOJIDAH)
+    CmdRogueTournType_LLDIIOJIDAH = 6100,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_OMJMJJNDLEK)
+    CmdRogueTournType_OMJMJJNDLEK = 6042,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_CMOOPILDIBM)
+    CmdRogueTournType_CMOOPILDIBM = 6062,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_DACOIJADBJG)
+    CmdRogueTournType_DACOIJADBJG = 6050,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_HGFJBBMJLBJ)
+    CmdRogueTournType_HGFJBBMJLBJ = 6020,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_LDIFDELFNJC)
+    CmdRogueTournType_LDIFDELFNJC = 6061,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_DHCKHEPAKLK)
+    CmdRogueTournType_DHCKHEPAKLK = 6087,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_KLKDMLNEKOH)
+    CmdRogueTournType_KLKDMLNEKOH = 6079,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_MBNHEFLBOMD)
+    CmdRogueTournType_MBNHEFLBOMD = 6038,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_EDFLFKBIIPL)
+    CmdRogueTournType_EDFLFKBIIPL = 6093,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_FOAHCFINFIF)
+    CmdRogueTournType_FOAHCFINFIF = 6017,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_ACHHKIJNNPD)
+    CmdRogueTournType_ACHHKIJNNPD = 6025,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_OCIIMCHMEDA)
+    CmdRogueTournType_OCIIMCHMEDA = 6058,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_LFJFFEJCFNB)
+    CmdRogueTournType_LFJFFEJCFNB = 6068,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_KMHNMEFBMHD)
+    CmdRogueTournType_KMHNMEFBMHD = 6029,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_LLBAIBFCCAP)
+    CmdRogueTournType_LLBAIBFCCAP = 6018,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_GKGADNGLDOE)
+    CmdRogueTournType_GKGADNGLDOE = 6024,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_IJOENECJDOK)
+    CmdRogueTournType_IJOENECJDOK = 6043,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_JKBKAEKKFMK)
+    CmdRogueTournType_JKBKAEKKFMK = 6047,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_ANAPAFCBKOL)
+    CmdRogueTournType_ANAPAFCBKOL = 6016,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_BNAKBGEDLAG)
+    CmdRogueTournType_BNAKBGEDLAG = 6048,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_IHEGNPFBKJH)
+    CmdRogueTournType_IHEGNPFBKJH = 6072,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_OEBIKNJOMHC)
+    CmdRogueTournType_OEBIKNJOMHC = 6011,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_NLJOAANBMPO)
+    CmdRogueTournType_NLJOAANBMPO = 6032,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_NOFNFJPEAOG)
+    CmdRogueTournType_NOFNFJPEAOG = 6031,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_ECGCJINFADB)
+    CmdRogueTournType_ECGCJINFADB = 6027,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_PLLNPMFIOKG)
+    CmdRogueTournType_PLLNPMFIOKG = 6026,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_LBDNKPPGHGC)
+    CmdRogueTournType_LBDNKPPGHGC = 6064,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_BMLILHHAMEM)
+    CmdRogueTournType_BMLILHHAMEM = 6065,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_FAEAACBKNBJ)
+    CmdRogueTournType_FAEAACBKNBJ = 6089,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_GOJOICBNLEP)
+    CmdRogueTournType_GOJOICBNLEP = 6044,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_FNLPOCCNKDA)
+    CmdRogueTournType_FNLPOCCNKDA = 6075,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_FIMFDEBLHHI)
+    CmdRogueTournType_FIMFDEBLHHI = 6049,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_HMLEDGEPGEB)
+    CmdRogueTournType_HMLEDGEPGEB = 6019,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_NELBFHHDAAB)
+    CmdRogueTournType_NELBFHHDAAB = 6077,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_EPCEFLFIAAF)
+    CmdRogueTournType_EPCEFLFIAAF = 6083,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_OGJEGCIGOOA)
+    CmdRogueTournType_OGJEGCIGOOA = 6078,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_PECKPILFFLB)
+    CmdRogueTournType_PECKPILFFLB = 6053,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_IBOHCHMCMAK)
+    CmdRogueTournType_IBOHCHMCMAK = 6021,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_LKFEJICNHKF)
+    CmdRogueTournType_LKFEJICNHKF = 6052,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_BPBDFABAIOA)
+    CmdRogueTournType_BPBDFABAIOA = 6085,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_DLANANHJHFA)
+    CmdRogueTournType_DLANANHJHFA = 6092,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_FBJPIHHLCLG)
+    CmdRogueTournType_FBJPIHHLCLG = 6014,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_HNOGIKCAAPL)
+    CmdRogueTournType_HNOGIKCAAPL = 6066,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_INLHJKBHCGH)
+    CmdRogueTournType_INLHJKBHCGH = 6097,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_ABCMGJMHADN)
+    CmdRogueTournType_ABCMGJMHADN = 6098,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_BPIECDBKJFJ)
+    CmdRogueTournType_BPIECDBKJFJ = 6023,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_ELMDKIBHBIC)
+    CmdRogueTournType_ELMDKIBHBIC = 6074,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_JANOLMEBMIG)
+    CmdRogueTournType_JANOLMEBMIG = 6035,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_MPEEAFBHBMI)
+    CmdRogueTournType_MPEEAFBHBMI = 6091,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_ONBOMDPJKFJ)
+    CmdRogueTournType_ONBOMDPJKFJ = 6013,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_FLJNJALAKHK)
+    CmdRogueTournType_FLJNJALAKHK = 6057,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_HGJANDOFHGK)
+    CmdRogueTournType_HGJANDOFHGK = 6086,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_HANJALLJMEJ)
+    CmdRogueTournType_HANJALLJMEJ = 6071,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_LHKFIKKMJNJ)
+    CmdRogueTournType_LHKFIKKMJNJ = 6060,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_FEOPPJBFMGM)
+    CmdRogueTournType_FEOPPJBFMGM = 6070,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_KBPPNMBHGED)
+    CmdRogueTournType_KBPPNMBHGED = 6037,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_GKLDPLGOBOD)
+    CmdRogueTournType_GKLDPLGOBOD = 6088,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_GMJNIHNFIOD)
+    CmdRogueTournType_GMJNIHNFIOD = 6055,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_DJNEPOFMOIL)
+    CmdRogueTournType_DJNEPOFMOIL = 6073,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_CPHNHEHOICE)
+    CmdRogueTournType_CPHNHEHOICE = 6012,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_IAPPOGJDHOO)
+    CmdRogueTournType_IAPPOGJDHOO = 6039,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_DOHAKIFIJAE)
+    CmdRogueTournType_DOHAKIFIJAE = 6034,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_HLIEGMHKLIF)
+    CmdRogueTournType_HLIEGMHKLIF = 6033,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_BHGGIOGMBNF)
+    CmdRogueTournType_BHGGIOGMBNF = 6022,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_HPENLKBABBO)
+    CmdRogueTournType_HPENLKBABBO = 6045,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_LJMLFOKJDMA)
+    CmdRogueTournType_LJMLFOKJDMA = 6041,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_MJAEHBEJBAP)
+    CmdRogueTournType_MJAEHBEJBAP = 6069,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_EKAGBDJHAAD)
+    CmdRogueTournType_EKAGBDJHAAD = 6067,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_HFKHKDJNLMF)
+    CmdRogueTournType_HFKHKDJNLMF = 6028,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_KGMKPHHLEBC)
+    CmdRogueTournType_KGMKPHHLEBC = 6015,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_LLCLNLMEBEF)
+    CmdRogueTournType_LLCLNLMEBEF = 6051,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_HPLOBNCFMFD)
+    CmdRogueTournType_HPLOBNCFMFD = 6056,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_OLFNIMAOMGJ)
+    CmdRogueTournType_OLFNIMAOMGJ = 6090,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_FJMCGGAEPDP)
+    CmdRogueTournType_FJMCGGAEPDP = 6046,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournType_KPNCCHKGBKL)
+    CmdRogueTournType_KPNCCHKGBKL = 6054,
 }
 
 impl ::protobuf::Enum for CmdRogueTournType {
@@ -180,230 +192,248 @@ impl ::protobuf::Enum for CmdRogueTournType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueTournType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GKJBAODJMJG),
-            6065 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HKDENGPAABK),
-            6044 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EBNGLIJBKJF),
-            6050 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PEPBLGGIDCP),
-            6089 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_ALODNMDGIDI),
-            6086 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GFNECGGNBIP),
-            6034 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_NKNGGENJNKM),
-            6023 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PGEFOJFICBP),
-            6095 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GHAOFNCIGMB),
-            6016 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_NGHLPDMMNDJ),
-            6045 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FCNBCHGFANB),
-            6082 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HLGIEIOPGAH),
-            6038 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_AELKKDIGPKK),
-            6087 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_LFPHGDAOBCA),
-            6076 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_MGECGGLGBIM),
-            6085 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_ILGBCPCKAMG),
-            6056 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FANMPFANHKH),
-            6013 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_INKJHKAEIAF),
-            6026 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_JMPKALPOIDA),
-            6090 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FHIIAPMOGNI),
-            6042 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_OBLAHHKOABN),
-            6078 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PFANAAILIME),
-            6048 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_ONOLFFLPBBF),
-            6053 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PFDPPEKGBKJ),
-            6057 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_KFBDFPNFEDM),
-            6068 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_DGFKMLKJILG),
-            6031 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PBIOLFICMHM),
-            6011 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HOMANDPNFKA),
-            6088 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_IJBHOEAPIMA),
-            6028 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_JJFKEFFINIA),
-            6066 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_BNAJJCNIOCC),
-            6021 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_LBFCLIDNDEA),
-            6063 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EEBIAAIFHMB),
-            6083 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HLGDADGNOPE),
-            6019 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_OKHEFLCAJJJ),
-            6099 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HFGJICDPHAG),
-            6098 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_NINAEMAMNCF),
-            6047 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GJELLBFDNLG),
-            6036 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EBCKNPHBGPD),
-            6051 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_ADJAGLHGINK),
-            6061 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_MHIKCGOMGAM),
-            6100 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_MHMBBGLCKMG),
-            6081 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FBHNAJINKPN),
-            6022 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_OOJHJACAIIL),
-            6024 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_JCNDLADMPLK),
-            6032 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GHOPILNDEDJ),
-            6052 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EBDPMMLNLJC),
-            6018 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_KJBPACPDLPD),
-            6093 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GKAHFKIOLKG),
-            6092 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_IEILONNCCDH),
-            6096 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EHLLBHFKOME),
-            6080 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_BMPKCKOIEIH),
-            6049 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PICLIILMGMG),
-            6014 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GDPMLBOECMH),
-            6012 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EMHJLEOECGA),
-            6067 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_BAKHIIEAJNH),
-            6070 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_DKCJEOMJOOK),
-            6025 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_JFHLLABLLBN),
-            6091 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GBLPGLFCCKG),
-            6071 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_JMNJBNKKLDA),
-            6079 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_DEFJAOFEHBM),
-            6062 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_CCLKEIAGHHE),
-            6030 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FMOHPPFDAPC),
-            6060 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HMHMAHCBCHC),
-            6054 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_NJIKAPJOAOI),
-            6040 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_BBFALEBPNDJ),
-            6015 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_KDHOAMGGFMD),
-            6055 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GNIBICFKPIG),
-            6058 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GEJEMFAEFLN),
-            6072 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FIIMBEECFFH),
-            6084 => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_KFHKCAEPGFC),
+            0 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_MNFEPONEDDJ),
+            6100 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LLDIIOJIDAH),
+            6042 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_OMJMJJNDLEK),
+            6062 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_CMOOPILDIBM),
+            6050 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_DACOIJADBJG),
+            6020 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HGFJBBMJLBJ),
+            6061 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LDIFDELFNJC),
+            6087 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_DHCKHEPAKLK),
+            6079 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_KLKDMLNEKOH),
+            6038 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_MBNHEFLBOMD),
+            6093 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_EDFLFKBIIPL),
+            6017 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FOAHCFINFIF),
+            6025 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ACHHKIJNNPD),
+            6058 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_OCIIMCHMEDA),
+            6068 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LFJFFEJCFNB),
+            6029 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_KMHNMEFBMHD),
+            6018 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LLBAIBFCCAP),
+            6024 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_GKGADNGLDOE),
+            6043 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_IJOENECJDOK),
+            6047 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_JKBKAEKKFMK),
+            6016 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ANAPAFCBKOL),
+            6048 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_BNAKBGEDLAG),
+            6072 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_IHEGNPFBKJH),
+            6011 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_OEBIKNJOMHC),
+            6032 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_NLJOAANBMPO),
+            6031 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_NOFNFJPEAOG),
+            6027 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ECGCJINFADB),
+            6026 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_PLLNPMFIOKG),
+            6064 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LBDNKPPGHGC),
+            6065 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_BMLILHHAMEM),
+            6089 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FAEAACBKNBJ),
+            6044 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_GOJOICBNLEP),
+            6075 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FNLPOCCNKDA),
+            6049 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FIMFDEBLHHI),
+            6019 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HMLEDGEPGEB),
+            6077 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_NELBFHHDAAB),
+            6083 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_EPCEFLFIAAF),
+            6078 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_OGJEGCIGOOA),
+            6053 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_PECKPILFFLB),
+            6021 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_IBOHCHMCMAK),
+            6052 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LKFEJICNHKF),
+            6085 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_BPBDFABAIOA),
+            6092 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_DLANANHJHFA),
+            6014 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FBJPIHHLCLG),
+            6066 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HNOGIKCAAPL),
+            6097 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_INLHJKBHCGH),
+            6098 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ABCMGJMHADN),
+            6023 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_BPIECDBKJFJ),
+            6074 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ELMDKIBHBIC),
+            6035 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_JANOLMEBMIG),
+            6091 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_MPEEAFBHBMI),
+            6013 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ONBOMDPJKFJ),
+            6057 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FLJNJALAKHK),
+            6086 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HGJANDOFHGK),
+            6071 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HANJALLJMEJ),
+            6060 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LHKFIKKMJNJ),
+            6070 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FEOPPJBFMGM),
+            6037 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_KBPPNMBHGED),
+            6088 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_GKLDPLGOBOD),
+            6055 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_GMJNIHNFIOD),
+            6073 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_DJNEPOFMOIL),
+            6012 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_CPHNHEHOICE),
+            6039 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_IAPPOGJDHOO),
+            6034 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_DOHAKIFIJAE),
+            6033 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HLIEGMHKLIF),
+            6022 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_BHGGIOGMBNF),
+            6045 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HPENLKBABBO),
+            6041 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LJMLFOKJDMA),
+            6069 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_MJAEHBEJBAP),
+            6067 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_EKAGBDJHAAD),
+            6028 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HFKHKDJNLMF),
+            6015 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_KGMKPHHLEBC),
+            6051 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LLCLNLMEBEF),
+            6056 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HPLOBNCFMFD),
+            6090 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_OLFNIMAOMGJ),
+            6046 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FJMCGGAEPDP),
+            6054 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_KPNCCHKGBKL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueTournType> {
         match str {
-            "CMPBCCJBCCC_GKJBAODJMJG" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GKJBAODJMJG),
-            "CMPBCCJBCCC_HKDENGPAABK" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HKDENGPAABK),
-            "CMPBCCJBCCC_EBNGLIJBKJF" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EBNGLIJBKJF),
-            "CMPBCCJBCCC_PEPBLGGIDCP" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PEPBLGGIDCP),
-            "CMPBCCJBCCC_ALODNMDGIDI" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_ALODNMDGIDI),
-            "CMPBCCJBCCC_GFNECGGNBIP" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GFNECGGNBIP),
-            "CMPBCCJBCCC_NKNGGENJNKM" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_NKNGGENJNKM),
-            "CMPBCCJBCCC_PGEFOJFICBP" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PGEFOJFICBP),
-            "CMPBCCJBCCC_GHAOFNCIGMB" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GHAOFNCIGMB),
-            "CMPBCCJBCCC_NGHLPDMMNDJ" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_NGHLPDMMNDJ),
-            "CMPBCCJBCCC_FCNBCHGFANB" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FCNBCHGFANB),
-            "CMPBCCJBCCC_HLGIEIOPGAH" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HLGIEIOPGAH),
-            "CMPBCCJBCCC_AELKKDIGPKK" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_AELKKDIGPKK),
-            "CMPBCCJBCCC_LFPHGDAOBCA" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_LFPHGDAOBCA),
-            "CMPBCCJBCCC_MGECGGLGBIM" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_MGECGGLGBIM),
-            "CMPBCCJBCCC_ILGBCPCKAMG" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_ILGBCPCKAMG),
-            "CMPBCCJBCCC_FANMPFANHKH" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FANMPFANHKH),
-            "CMPBCCJBCCC_INKJHKAEIAF" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_INKJHKAEIAF),
-            "CMPBCCJBCCC_JMPKALPOIDA" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_JMPKALPOIDA),
-            "CMPBCCJBCCC_FHIIAPMOGNI" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FHIIAPMOGNI),
-            "CMPBCCJBCCC_OBLAHHKOABN" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_OBLAHHKOABN),
-            "CMPBCCJBCCC_PFANAAILIME" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PFANAAILIME),
-            "CMPBCCJBCCC_ONOLFFLPBBF" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_ONOLFFLPBBF),
-            "CMPBCCJBCCC_PFDPPEKGBKJ" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PFDPPEKGBKJ),
-            "CMPBCCJBCCC_KFBDFPNFEDM" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_KFBDFPNFEDM),
-            "CMPBCCJBCCC_DGFKMLKJILG" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_DGFKMLKJILG),
-            "CMPBCCJBCCC_PBIOLFICMHM" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PBIOLFICMHM),
-            "CMPBCCJBCCC_HOMANDPNFKA" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HOMANDPNFKA),
-            "CMPBCCJBCCC_IJBHOEAPIMA" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_IJBHOEAPIMA),
-            "CMPBCCJBCCC_JJFKEFFINIA" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_JJFKEFFINIA),
-            "CMPBCCJBCCC_BNAJJCNIOCC" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_BNAJJCNIOCC),
-            "CMPBCCJBCCC_LBFCLIDNDEA" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_LBFCLIDNDEA),
-            "CMPBCCJBCCC_EEBIAAIFHMB" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EEBIAAIFHMB),
-            "CMPBCCJBCCC_HLGDADGNOPE" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HLGDADGNOPE),
-            "CMPBCCJBCCC_OKHEFLCAJJJ" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_OKHEFLCAJJJ),
-            "CMPBCCJBCCC_HFGJICDPHAG" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HFGJICDPHAG),
-            "CMPBCCJBCCC_NINAEMAMNCF" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_NINAEMAMNCF),
-            "CMPBCCJBCCC_GJELLBFDNLG" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GJELLBFDNLG),
-            "CMPBCCJBCCC_EBCKNPHBGPD" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EBCKNPHBGPD),
-            "CMPBCCJBCCC_ADJAGLHGINK" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_ADJAGLHGINK),
-            "CMPBCCJBCCC_MHIKCGOMGAM" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_MHIKCGOMGAM),
-            "CMPBCCJBCCC_MHMBBGLCKMG" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_MHMBBGLCKMG),
-            "CMPBCCJBCCC_FBHNAJINKPN" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FBHNAJINKPN),
-            "CMPBCCJBCCC_OOJHJACAIIL" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_OOJHJACAIIL),
-            "CMPBCCJBCCC_JCNDLADMPLK" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_JCNDLADMPLK),
-            "CMPBCCJBCCC_GHOPILNDEDJ" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GHOPILNDEDJ),
-            "CMPBCCJBCCC_EBDPMMLNLJC" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EBDPMMLNLJC),
-            "CMPBCCJBCCC_KJBPACPDLPD" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_KJBPACPDLPD),
-            "CMPBCCJBCCC_GKAHFKIOLKG" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GKAHFKIOLKG),
-            "CMPBCCJBCCC_IEILONNCCDH" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_IEILONNCCDH),
-            "CMPBCCJBCCC_EHLLBHFKOME" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EHLLBHFKOME),
-            "CMPBCCJBCCC_BMPKCKOIEIH" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_BMPKCKOIEIH),
-            "CMPBCCJBCCC_PICLIILMGMG" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_PICLIILMGMG),
-            "CMPBCCJBCCC_GDPMLBOECMH" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GDPMLBOECMH),
-            "CMPBCCJBCCC_EMHJLEOECGA" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_EMHJLEOECGA),
-            "CMPBCCJBCCC_BAKHIIEAJNH" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_BAKHIIEAJNH),
-            "CMPBCCJBCCC_DKCJEOMJOOK" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_DKCJEOMJOOK),
-            "CMPBCCJBCCC_JFHLLABLLBN" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_JFHLLABLLBN),
-            "CMPBCCJBCCC_GBLPGLFCCKG" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GBLPGLFCCKG),
-            "CMPBCCJBCCC_JMNJBNKKLDA" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_JMNJBNKKLDA),
-            "CMPBCCJBCCC_DEFJAOFEHBM" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_DEFJAOFEHBM),
-            "CMPBCCJBCCC_CCLKEIAGHHE" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_CCLKEIAGHHE),
-            "CMPBCCJBCCC_FMOHPPFDAPC" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FMOHPPFDAPC),
-            "CMPBCCJBCCC_HMHMAHCBCHC" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_HMHMAHCBCHC),
-            "CMPBCCJBCCC_NJIKAPJOAOI" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_NJIKAPJOAOI),
-            "CMPBCCJBCCC_BBFALEBPNDJ" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_BBFALEBPNDJ),
-            "CMPBCCJBCCC_KDHOAMGGFMD" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_KDHOAMGGFMD),
-            "CMPBCCJBCCC_GNIBICFKPIG" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GNIBICFKPIG),
-            "CMPBCCJBCCC_GEJEMFAEFLN" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_GEJEMFAEFLN),
-            "CMPBCCJBCCC_FIIMBEECFFH" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_FIIMBEECFFH),
-            "CMPBCCJBCCC_KFHKCAEPGFC" => ::std::option::Option::Some(CmdRogueTournType::CMPBCCJBCCC_KFHKCAEPGFC),
+            "CmdRogueTournType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_MNFEPONEDDJ),
+            "CmdRogueTournType_LLDIIOJIDAH" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LLDIIOJIDAH),
+            "CmdRogueTournType_OMJMJJNDLEK" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_OMJMJJNDLEK),
+            "CmdRogueTournType_CMOOPILDIBM" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_CMOOPILDIBM),
+            "CmdRogueTournType_DACOIJADBJG" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_DACOIJADBJG),
+            "CmdRogueTournType_HGFJBBMJLBJ" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HGFJBBMJLBJ),
+            "CmdRogueTournType_LDIFDELFNJC" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LDIFDELFNJC),
+            "CmdRogueTournType_DHCKHEPAKLK" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_DHCKHEPAKLK),
+            "CmdRogueTournType_KLKDMLNEKOH" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_KLKDMLNEKOH),
+            "CmdRogueTournType_MBNHEFLBOMD" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_MBNHEFLBOMD),
+            "CmdRogueTournType_EDFLFKBIIPL" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_EDFLFKBIIPL),
+            "CmdRogueTournType_FOAHCFINFIF" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FOAHCFINFIF),
+            "CmdRogueTournType_ACHHKIJNNPD" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ACHHKIJNNPD),
+            "CmdRogueTournType_OCIIMCHMEDA" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_OCIIMCHMEDA),
+            "CmdRogueTournType_LFJFFEJCFNB" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LFJFFEJCFNB),
+            "CmdRogueTournType_KMHNMEFBMHD" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_KMHNMEFBMHD),
+            "CmdRogueTournType_LLBAIBFCCAP" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LLBAIBFCCAP),
+            "CmdRogueTournType_GKGADNGLDOE" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_GKGADNGLDOE),
+            "CmdRogueTournType_IJOENECJDOK" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_IJOENECJDOK),
+            "CmdRogueTournType_JKBKAEKKFMK" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_JKBKAEKKFMK),
+            "CmdRogueTournType_ANAPAFCBKOL" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ANAPAFCBKOL),
+            "CmdRogueTournType_BNAKBGEDLAG" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_BNAKBGEDLAG),
+            "CmdRogueTournType_IHEGNPFBKJH" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_IHEGNPFBKJH),
+            "CmdRogueTournType_OEBIKNJOMHC" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_OEBIKNJOMHC),
+            "CmdRogueTournType_NLJOAANBMPO" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_NLJOAANBMPO),
+            "CmdRogueTournType_NOFNFJPEAOG" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_NOFNFJPEAOG),
+            "CmdRogueTournType_ECGCJINFADB" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ECGCJINFADB),
+            "CmdRogueTournType_PLLNPMFIOKG" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_PLLNPMFIOKG),
+            "CmdRogueTournType_LBDNKPPGHGC" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LBDNKPPGHGC),
+            "CmdRogueTournType_BMLILHHAMEM" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_BMLILHHAMEM),
+            "CmdRogueTournType_FAEAACBKNBJ" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FAEAACBKNBJ),
+            "CmdRogueTournType_GOJOICBNLEP" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_GOJOICBNLEP),
+            "CmdRogueTournType_FNLPOCCNKDA" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FNLPOCCNKDA),
+            "CmdRogueTournType_FIMFDEBLHHI" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FIMFDEBLHHI),
+            "CmdRogueTournType_HMLEDGEPGEB" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HMLEDGEPGEB),
+            "CmdRogueTournType_NELBFHHDAAB" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_NELBFHHDAAB),
+            "CmdRogueTournType_EPCEFLFIAAF" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_EPCEFLFIAAF),
+            "CmdRogueTournType_OGJEGCIGOOA" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_OGJEGCIGOOA),
+            "CmdRogueTournType_PECKPILFFLB" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_PECKPILFFLB),
+            "CmdRogueTournType_IBOHCHMCMAK" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_IBOHCHMCMAK),
+            "CmdRogueTournType_LKFEJICNHKF" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LKFEJICNHKF),
+            "CmdRogueTournType_BPBDFABAIOA" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_BPBDFABAIOA),
+            "CmdRogueTournType_DLANANHJHFA" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_DLANANHJHFA),
+            "CmdRogueTournType_FBJPIHHLCLG" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FBJPIHHLCLG),
+            "CmdRogueTournType_HNOGIKCAAPL" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HNOGIKCAAPL),
+            "CmdRogueTournType_INLHJKBHCGH" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_INLHJKBHCGH),
+            "CmdRogueTournType_ABCMGJMHADN" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ABCMGJMHADN),
+            "CmdRogueTournType_BPIECDBKJFJ" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_BPIECDBKJFJ),
+            "CmdRogueTournType_ELMDKIBHBIC" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ELMDKIBHBIC),
+            "CmdRogueTournType_JANOLMEBMIG" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_JANOLMEBMIG),
+            "CmdRogueTournType_MPEEAFBHBMI" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_MPEEAFBHBMI),
+            "CmdRogueTournType_ONBOMDPJKFJ" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_ONBOMDPJKFJ),
+            "CmdRogueTournType_FLJNJALAKHK" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FLJNJALAKHK),
+            "CmdRogueTournType_HGJANDOFHGK" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HGJANDOFHGK),
+            "CmdRogueTournType_HANJALLJMEJ" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HANJALLJMEJ),
+            "CmdRogueTournType_LHKFIKKMJNJ" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LHKFIKKMJNJ),
+            "CmdRogueTournType_FEOPPJBFMGM" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FEOPPJBFMGM),
+            "CmdRogueTournType_KBPPNMBHGED" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_KBPPNMBHGED),
+            "CmdRogueTournType_GKLDPLGOBOD" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_GKLDPLGOBOD),
+            "CmdRogueTournType_GMJNIHNFIOD" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_GMJNIHNFIOD),
+            "CmdRogueTournType_DJNEPOFMOIL" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_DJNEPOFMOIL),
+            "CmdRogueTournType_CPHNHEHOICE" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_CPHNHEHOICE),
+            "CmdRogueTournType_IAPPOGJDHOO" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_IAPPOGJDHOO),
+            "CmdRogueTournType_DOHAKIFIJAE" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_DOHAKIFIJAE),
+            "CmdRogueTournType_HLIEGMHKLIF" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HLIEGMHKLIF),
+            "CmdRogueTournType_BHGGIOGMBNF" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_BHGGIOGMBNF),
+            "CmdRogueTournType_HPENLKBABBO" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HPENLKBABBO),
+            "CmdRogueTournType_LJMLFOKJDMA" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LJMLFOKJDMA),
+            "CmdRogueTournType_MJAEHBEJBAP" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_MJAEHBEJBAP),
+            "CmdRogueTournType_EKAGBDJHAAD" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_EKAGBDJHAAD),
+            "CmdRogueTournType_HFKHKDJNLMF" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HFKHKDJNLMF),
+            "CmdRogueTournType_KGMKPHHLEBC" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_KGMKPHHLEBC),
+            "CmdRogueTournType_LLCLNLMEBEF" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_LLCLNLMEBEF),
+            "CmdRogueTournType_HPLOBNCFMFD" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_HPLOBNCFMFD),
+            "CmdRogueTournType_OLFNIMAOMGJ" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_OLFNIMAOMGJ),
+            "CmdRogueTournType_FJMCGGAEPDP" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_FJMCGGAEPDP),
+            "CmdRogueTournType_KPNCCHKGBKL" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournType_KPNCCHKGBKL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRogueTournType] = &[
-        CmdRogueTournType::CMPBCCJBCCC_GKJBAODJMJG,
-        CmdRogueTournType::CMPBCCJBCCC_HKDENGPAABK,
-        CmdRogueTournType::CMPBCCJBCCC_EBNGLIJBKJF,
-        CmdRogueTournType::CMPBCCJBCCC_PEPBLGGIDCP,
-        CmdRogueTournType::CMPBCCJBCCC_ALODNMDGIDI,
-        CmdRogueTournType::CMPBCCJBCCC_GFNECGGNBIP,
-        CmdRogueTournType::CMPBCCJBCCC_NKNGGENJNKM,
-        CmdRogueTournType::CMPBCCJBCCC_PGEFOJFICBP,
-        CmdRogueTournType::CMPBCCJBCCC_GHAOFNCIGMB,
-        CmdRogueTournType::CMPBCCJBCCC_NGHLPDMMNDJ,
-        CmdRogueTournType::CMPBCCJBCCC_FCNBCHGFANB,
-        CmdRogueTournType::CMPBCCJBCCC_HLGIEIOPGAH,
-        CmdRogueTournType::CMPBCCJBCCC_AELKKDIGPKK,
-        CmdRogueTournType::CMPBCCJBCCC_LFPHGDAOBCA,
-        CmdRogueTournType::CMPBCCJBCCC_MGECGGLGBIM,
-        CmdRogueTournType::CMPBCCJBCCC_ILGBCPCKAMG,
-        CmdRogueTournType::CMPBCCJBCCC_FANMPFANHKH,
-        CmdRogueTournType::CMPBCCJBCCC_INKJHKAEIAF,
-        CmdRogueTournType::CMPBCCJBCCC_JMPKALPOIDA,
-        CmdRogueTournType::CMPBCCJBCCC_FHIIAPMOGNI,
-        CmdRogueTournType::CMPBCCJBCCC_OBLAHHKOABN,
-        CmdRogueTournType::CMPBCCJBCCC_PFANAAILIME,
-        CmdRogueTournType::CMPBCCJBCCC_ONOLFFLPBBF,
-        CmdRogueTournType::CMPBCCJBCCC_PFDPPEKGBKJ,
-        CmdRogueTournType::CMPBCCJBCCC_KFBDFPNFEDM,
-        CmdRogueTournType::CMPBCCJBCCC_DGFKMLKJILG,
-        CmdRogueTournType::CMPBCCJBCCC_PBIOLFICMHM,
-        CmdRogueTournType::CMPBCCJBCCC_HOMANDPNFKA,
-        CmdRogueTournType::CMPBCCJBCCC_IJBHOEAPIMA,
-        CmdRogueTournType::CMPBCCJBCCC_JJFKEFFINIA,
-        CmdRogueTournType::CMPBCCJBCCC_BNAJJCNIOCC,
-        CmdRogueTournType::CMPBCCJBCCC_LBFCLIDNDEA,
-        CmdRogueTournType::CMPBCCJBCCC_EEBIAAIFHMB,
-        CmdRogueTournType::CMPBCCJBCCC_HLGDADGNOPE,
-        CmdRogueTournType::CMPBCCJBCCC_OKHEFLCAJJJ,
-        CmdRogueTournType::CMPBCCJBCCC_HFGJICDPHAG,
-        CmdRogueTournType::CMPBCCJBCCC_NINAEMAMNCF,
-        CmdRogueTournType::CMPBCCJBCCC_GJELLBFDNLG,
-        CmdRogueTournType::CMPBCCJBCCC_EBCKNPHBGPD,
-        CmdRogueTournType::CMPBCCJBCCC_ADJAGLHGINK,
-        CmdRogueTournType::CMPBCCJBCCC_MHIKCGOMGAM,
-        CmdRogueTournType::CMPBCCJBCCC_MHMBBGLCKMG,
-        CmdRogueTournType::CMPBCCJBCCC_FBHNAJINKPN,
-        CmdRogueTournType::CMPBCCJBCCC_OOJHJACAIIL,
-        CmdRogueTournType::CMPBCCJBCCC_JCNDLADMPLK,
-        CmdRogueTournType::CMPBCCJBCCC_GHOPILNDEDJ,
-        CmdRogueTournType::CMPBCCJBCCC_EBDPMMLNLJC,
-        CmdRogueTournType::CMPBCCJBCCC_KJBPACPDLPD,
-        CmdRogueTournType::CMPBCCJBCCC_GKAHFKIOLKG,
-        CmdRogueTournType::CMPBCCJBCCC_IEILONNCCDH,
-        CmdRogueTournType::CMPBCCJBCCC_EHLLBHFKOME,
-        CmdRogueTournType::CMPBCCJBCCC_BMPKCKOIEIH,
-        CmdRogueTournType::CMPBCCJBCCC_PICLIILMGMG,
-        CmdRogueTournType::CMPBCCJBCCC_GDPMLBOECMH,
-        CmdRogueTournType::CMPBCCJBCCC_EMHJLEOECGA,
-        CmdRogueTournType::CMPBCCJBCCC_BAKHIIEAJNH,
-        CmdRogueTournType::CMPBCCJBCCC_DKCJEOMJOOK,
-        CmdRogueTournType::CMPBCCJBCCC_JFHLLABLLBN,
-        CmdRogueTournType::CMPBCCJBCCC_GBLPGLFCCKG,
-        CmdRogueTournType::CMPBCCJBCCC_JMNJBNKKLDA,
-        CmdRogueTournType::CMPBCCJBCCC_DEFJAOFEHBM,
-        CmdRogueTournType::CMPBCCJBCCC_CCLKEIAGHHE,
-        CmdRogueTournType::CMPBCCJBCCC_FMOHPPFDAPC,
-        CmdRogueTournType::CMPBCCJBCCC_HMHMAHCBCHC,
-        CmdRogueTournType::CMPBCCJBCCC_NJIKAPJOAOI,
-        CmdRogueTournType::CMPBCCJBCCC_BBFALEBPNDJ,
-        CmdRogueTournType::CMPBCCJBCCC_KDHOAMGGFMD,
-        CmdRogueTournType::CMPBCCJBCCC_GNIBICFKPIG,
-        CmdRogueTournType::CMPBCCJBCCC_GEJEMFAEFLN,
-        CmdRogueTournType::CMPBCCJBCCC_FIIMBEECFFH,
-        CmdRogueTournType::CMPBCCJBCCC_KFHKCAEPGFC,
+        CmdRogueTournType::CmdRogueTournType_MNFEPONEDDJ,
+        CmdRogueTournType::CmdRogueTournType_LLDIIOJIDAH,
+        CmdRogueTournType::CmdRogueTournType_OMJMJJNDLEK,
+        CmdRogueTournType::CmdRogueTournType_CMOOPILDIBM,
+        CmdRogueTournType::CmdRogueTournType_DACOIJADBJG,
+        CmdRogueTournType::CmdRogueTournType_HGFJBBMJLBJ,
+        CmdRogueTournType::CmdRogueTournType_LDIFDELFNJC,
+        CmdRogueTournType::CmdRogueTournType_DHCKHEPAKLK,
+        CmdRogueTournType::CmdRogueTournType_KLKDMLNEKOH,
+        CmdRogueTournType::CmdRogueTournType_MBNHEFLBOMD,
+        CmdRogueTournType::CmdRogueTournType_EDFLFKBIIPL,
+        CmdRogueTournType::CmdRogueTournType_FOAHCFINFIF,
+        CmdRogueTournType::CmdRogueTournType_ACHHKIJNNPD,
+        CmdRogueTournType::CmdRogueTournType_OCIIMCHMEDA,
+        CmdRogueTournType::CmdRogueTournType_LFJFFEJCFNB,
+        CmdRogueTournType::CmdRogueTournType_KMHNMEFBMHD,
+        CmdRogueTournType::CmdRogueTournType_LLBAIBFCCAP,
+        CmdRogueTournType::CmdRogueTournType_GKGADNGLDOE,
+        CmdRogueTournType::CmdRogueTournType_IJOENECJDOK,
+        CmdRogueTournType::CmdRogueTournType_JKBKAEKKFMK,
+        CmdRogueTournType::CmdRogueTournType_ANAPAFCBKOL,
+        CmdRogueTournType::CmdRogueTournType_BNAKBGEDLAG,
+        CmdRogueTournType::CmdRogueTournType_IHEGNPFBKJH,
+        CmdRogueTournType::CmdRogueTournType_OEBIKNJOMHC,
+        CmdRogueTournType::CmdRogueTournType_NLJOAANBMPO,
+        CmdRogueTournType::CmdRogueTournType_NOFNFJPEAOG,
+        CmdRogueTournType::CmdRogueTournType_ECGCJINFADB,
+        CmdRogueTournType::CmdRogueTournType_PLLNPMFIOKG,
+        CmdRogueTournType::CmdRogueTournType_LBDNKPPGHGC,
+        CmdRogueTournType::CmdRogueTournType_BMLILHHAMEM,
+        CmdRogueTournType::CmdRogueTournType_FAEAACBKNBJ,
+        CmdRogueTournType::CmdRogueTournType_GOJOICBNLEP,
+        CmdRogueTournType::CmdRogueTournType_FNLPOCCNKDA,
+        CmdRogueTournType::CmdRogueTournType_FIMFDEBLHHI,
+        CmdRogueTournType::CmdRogueTournType_HMLEDGEPGEB,
+        CmdRogueTournType::CmdRogueTournType_NELBFHHDAAB,
+        CmdRogueTournType::CmdRogueTournType_EPCEFLFIAAF,
+        CmdRogueTournType::CmdRogueTournType_OGJEGCIGOOA,
+        CmdRogueTournType::CmdRogueTournType_PECKPILFFLB,
+        CmdRogueTournType::CmdRogueTournType_IBOHCHMCMAK,
+        CmdRogueTournType::CmdRogueTournType_LKFEJICNHKF,
+        CmdRogueTournType::CmdRogueTournType_BPBDFABAIOA,
+        CmdRogueTournType::CmdRogueTournType_DLANANHJHFA,
+        CmdRogueTournType::CmdRogueTournType_FBJPIHHLCLG,
+        CmdRogueTournType::CmdRogueTournType_HNOGIKCAAPL,
+        CmdRogueTournType::CmdRogueTournType_INLHJKBHCGH,
+        CmdRogueTournType::CmdRogueTournType_ABCMGJMHADN,
+        CmdRogueTournType::CmdRogueTournType_BPIECDBKJFJ,
+        CmdRogueTournType::CmdRogueTournType_ELMDKIBHBIC,
+        CmdRogueTournType::CmdRogueTournType_JANOLMEBMIG,
+        CmdRogueTournType::CmdRogueTournType_MPEEAFBHBMI,
+        CmdRogueTournType::CmdRogueTournType_ONBOMDPJKFJ,
+        CmdRogueTournType::CmdRogueTournType_FLJNJALAKHK,
+        CmdRogueTournType::CmdRogueTournType_HGJANDOFHGK,
+        CmdRogueTournType::CmdRogueTournType_HANJALLJMEJ,
+        CmdRogueTournType::CmdRogueTournType_LHKFIKKMJNJ,
+        CmdRogueTournType::CmdRogueTournType_FEOPPJBFMGM,
+        CmdRogueTournType::CmdRogueTournType_KBPPNMBHGED,
+        CmdRogueTournType::CmdRogueTournType_GKLDPLGOBOD,
+        CmdRogueTournType::CmdRogueTournType_GMJNIHNFIOD,
+        CmdRogueTournType::CmdRogueTournType_DJNEPOFMOIL,
+        CmdRogueTournType::CmdRogueTournType_CPHNHEHOICE,
+        CmdRogueTournType::CmdRogueTournType_IAPPOGJDHOO,
+        CmdRogueTournType::CmdRogueTournType_DOHAKIFIJAE,
+        CmdRogueTournType::CmdRogueTournType_HLIEGMHKLIF,
+        CmdRogueTournType::CmdRogueTournType_BHGGIOGMBNF,
+        CmdRogueTournType::CmdRogueTournType_HPENLKBABBO,
+        CmdRogueTournType::CmdRogueTournType_LJMLFOKJDMA,
+        CmdRogueTournType::CmdRogueTournType_MJAEHBEJBAP,
+        CmdRogueTournType::CmdRogueTournType_EKAGBDJHAAD,
+        CmdRogueTournType::CmdRogueTournType_HFKHKDJNLMF,
+        CmdRogueTournType::CmdRogueTournType_KGMKPHHLEBC,
+        CmdRogueTournType::CmdRogueTournType_LLCLNLMEBEF,
+        CmdRogueTournType::CmdRogueTournType_HPLOBNCFMFD,
+        CmdRogueTournType::CmdRogueTournType_OLFNIMAOMGJ,
+        CmdRogueTournType::CmdRogueTournType_FJMCGGAEPDP,
+        CmdRogueTournType::CmdRogueTournType_KPNCCHKGBKL,
     ];
 }
 
@@ -415,77 +445,83 @@ impl ::protobuf::EnumFull for CmdRogueTournType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRogueTournType::CMPBCCJBCCC_GKJBAODJMJG => 0,
-            CmdRogueTournType::CMPBCCJBCCC_HKDENGPAABK => 1,
-            CmdRogueTournType::CMPBCCJBCCC_EBNGLIJBKJF => 2,
-            CmdRogueTournType::CMPBCCJBCCC_PEPBLGGIDCP => 3,
-            CmdRogueTournType::CMPBCCJBCCC_ALODNMDGIDI => 4,
-            CmdRogueTournType::CMPBCCJBCCC_GFNECGGNBIP => 5,
-            CmdRogueTournType::CMPBCCJBCCC_NKNGGENJNKM => 6,
-            CmdRogueTournType::CMPBCCJBCCC_PGEFOJFICBP => 7,
-            CmdRogueTournType::CMPBCCJBCCC_GHAOFNCIGMB => 8,
-            CmdRogueTournType::CMPBCCJBCCC_NGHLPDMMNDJ => 9,
-            CmdRogueTournType::CMPBCCJBCCC_FCNBCHGFANB => 10,
-            CmdRogueTournType::CMPBCCJBCCC_HLGIEIOPGAH => 11,
-            CmdRogueTournType::CMPBCCJBCCC_AELKKDIGPKK => 12,
-            CmdRogueTournType::CMPBCCJBCCC_LFPHGDAOBCA => 13,
-            CmdRogueTournType::CMPBCCJBCCC_MGECGGLGBIM => 14,
-            CmdRogueTournType::CMPBCCJBCCC_ILGBCPCKAMG => 15,
-            CmdRogueTournType::CMPBCCJBCCC_FANMPFANHKH => 16,
-            CmdRogueTournType::CMPBCCJBCCC_INKJHKAEIAF => 17,
-            CmdRogueTournType::CMPBCCJBCCC_JMPKALPOIDA => 18,
-            CmdRogueTournType::CMPBCCJBCCC_FHIIAPMOGNI => 19,
-            CmdRogueTournType::CMPBCCJBCCC_OBLAHHKOABN => 20,
-            CmdRogueTournType::CMPBCCJBCCC_PFANAAILIME => 21,
-            CmdRogueTournType::CMPBCCJBCCC_ONOLFFLPBBF => 22,
-            CmdRogueTournType::CMPBCCJBCCC_PFDPPEKGBKJ => 23,
-            CmdRogueTournType::CMPBCCJBCCC_KFBDFPNFEDM => 24,
-            CmdRogueTournType::CMPBCCJBCCC_DGFKMLKJILG => 25,
-            CmdRogueTournType::CMPBCCJBCCC_PBIOLFICMHM => 26,
-            CmdRogueTournType::CMPBCCJBCCC_HOMANDPNFKA => 27,
-            CmdRogueTournType::CMPBCCJBCCC_IJBHOEAPIMA => 28,
-            CmdRogueTournType::CMPBCCJBCCC_JJFKEFFINIA => 29,
-            CmdRogueTournType::CMPBCCJBCCC_BNAJJCNIOCC => 30,
-            CmdRogueTournType::CMPBCCJBCCC_LBFCLIDNDEA => 31,
-            CmdRogueTournType::CMPBCCJBCCC_EEBIAAIFHMB => 32,
-            CmdRogueTournType::CMPBCCJBCCC_HLGDADGNOPE => 33,
-            CmdRogueTournType::CMPBCCJBCCC_OKHEFLCAJJJ => 34,
-            CmdRogueTournType::CMPBCCJBCCC_HFGJICDPHAG => 35,
-            CmdRogueTournType::CMPBCCJBCCC_NINAEMAMNCF => 36,
-            CmdRogueTournType::CMPBCCJBCCC_GJELLBFDNLG => 37,
-            CmdRogueTournType::CMPBCCJBCCC_EBCKNPHBGPD => 38,
-            CmdRogueTournType::CMPBCCJBCCC_ADJAGLHGINK => 39,
-            CmdRogueTournType::CMPBCCJBCCC_MHIKCGOMGAM => 40,
-            CmdRogueTournType::CMPBCCJBCCC_MHMBBGLCKMG => 41,
-            CmdRogueTournType::CMPBCCJBCCC_FBHNAJINKPN => 42,
-            CmdRogueTournType::CMPBCCJBCCC_OOJHJACAIIL => 43,
-            CmdRogueTournType::CMPBCCJBCCC_JCNDLADMPLK => 44,
-            CmdRogueTournType::CMPBCCJBCCC_GHOPILNDEDJ => 45,
-            CmdRogueTournType::CMPBCCJBCCC_EBDPMMLNLJC => 46,
-            CmdRogueTournType::CMPBCCJBCCC_KJBPACPDLPD => 47,
-            CmdRogueTournType::CMPBCCJBCCC_GKAHFKIOLKG => 48,
-            CmdRogueTournType::CMPBCCJBCCC_IEILONNCCDH => 49,
-            CmdRogueTournType::CMPBCCJBCCC_EHLLBHFKOME => 50,
-            CmdRogueTournType::CMPBCCJBCCC_BMPKCKOIEIH => 51,
-            CmdRogueTournType::CMPBCCJBCCC_PICLIILMGMG => 52,
-            CmdRogueTournType::CMPBCCJBCCC_GDPMLBOECMH => 53,
-            CmdRogueTournType::CMPBCCJBCCC_EMHJLEOECGA => 54,
-            CmdRogueTournType::CMPBCCJBCCC_BAKHIIEAJNH => 55,
-            CmdRogueTournType::CMPBCCJBCCC_DKCJEOMJOOK => 56,
-            CmdRogueTournType::CMPBCCJBCCC_JFHLLABLLBN => 57,
-            CmdRogueTournType::CMPBCCJBCCC_GBLPGLFCCKG => 58,
-            CmdRogueTournType::CMPBCCJBCCC_JMNJBNKKLDA => 59,
-            CmdRogueTournType::CMPBCCJBCCC_DEFJAOFEHBM => 60,
-            CmdRogueTournType::CMPBCCJBCCC_CCLKEIAGHHE => 61,
-            CmdRogueTournType::CMPBCCJBCCC_FMOHPPFDAPC => 62,
-            CmdRogueTournType::CMPBCCJBCCC_HMHMAHCBCHC => 63,
-            CmdRogueTournType::CMPBCCJBCCC_NJIKAPJOAOI => 64,
-            CmdRogueTournType::CMPBCCJBCCC_BBFALEBPNDJ => 65,
-            CmdRogueTournType::CMPBCCJBCCC_KDHOAMGGFMD => 66,
-            CmdRogueTournType::CMPBCCJBCCC_GNIBICFKPIG => 67,
-            CmdRogueTournType::CMPBCCJBCCC_GEJEMFAEFLN => 68,
-            CmdRogueTournType::CMPBCCJBCCC_FIIMBEECFFH => 69,
-            CmdRogueTournType::CMPBCCJBCCC_KFHKCAEPGFC => 70,
+            CmdRogueTournType::CmdRogueTournType_MNFEPONEDDJ => 0,
+            CmdRogueTournType::CmdRogueTournType_LLDIIOJIDAH => 1,
+            CmdRogueTournType::CmdRogueTournType_OMJMJJNDLEK => 2,
+            CmdRogueTournType::CmdRogueTournType_CMOOPILDIBM => 3,
+            CmdRogueTournType::CmdRogueTournType_DACOIJADBJG => 4,
+            CmdRogueTournType::CmdRogueTournType_HGFJBBMJLBJ => 5,
+            CmdRogueTournType::CmdRogueTournType_LDIFDELFNJC => 6,
+            CmdRogueTournType::CmdRogueTournType_DHCKHEPAKLK => 7,
+            CmdRogueTournType::CmdRogueTournType_KLKDMLNEKOH => 8,
+            CmdRogueTournType::CmdRogueTournType_MBNHEFLBOMD => 9,
+            CmdRogueTournType::CmdRogueTournType_EDFLFKBIIPL => 10,
+            CmdRogueTournType::CmdRogueTournType_FOAHCFINFIF => 11,
+            CmdRogueTournType::CmdRogueTournType_ACHHKIJNNPD => 12,
+            CmdRogueTournType::CmdRogueTournType_OCIIMCHMEDA => 13,
+            CmdRogueTournType::CmdRogueTournType_LFJFFEJCFNB => 14,
+            CmdRogueTournType::CmdRogueTournType_KMHNMEFBMHD => 15,
+            CmdRogueTournType::CmdRogueTournType_LLBAIBFCCAP => 16,
+            CmdRogueTournType::CmdRogueTournType_GKGADNGLDOE => 17,
+            CmdRogueTournType::CmdRogueTournType_IJOENECJDOK => 18,
+            CmdRogueTournType::CmdRogueTournType_JKBKAEKKFMK => 19,
+            CmdRogueTournType::CmdRogueTournType_ANAPAFCBKOL => 20,
+            CmdRogueTournType::CmdRogueTournType_BNAKBGEDLAG => 21,
+            CmdRogueTournType::CmdRogueTournType_IHEGNPFBKJH => 22,
+            CmdRogueTournType::CmdRogueTournType_OEBIKNJOMHC => 23,
+            CmdRogueTournType::CmdRogueTournType_NLJOAANBMPO => 24,
+            CmdRogueTournType::CmdRogueTournType_NOFNFJPEAOG => 25,
+            CmdRogueTournType::CmdRogueTournType_ECGCJINFADB => 26,
+            CmdRogueTournType::CmdRogueTournType_PLLNPMFIOKG => 27,
+            CmdRogueTournType::CmdRogueTournType_LBDNKPPGHGC => 28,
+            CmdRogueTournType::CmdRogueTournType_BMLILHHAMEM => 29,
+            CmdRogueTournType::CmdRogueTournType_FAEAACBKNBJ => 30,
+            CmdRogueTournType::CmdRogueTournType_GOJOICBNLEP => 31,
+            CmdRogueTournType::CmdRogueTournType_FNLPOCCNKDA => 32,
+            CmdRogueTournType::CmdRogueTournType_FIMFDEBLHHI => 33,
+            CmdRogueTournType::CmdRogueTournType_HMLEDGEPGEB => 34,
+            CmdRogueTournType::CmdRogueTournType_NELBFHHDAAB => 35,
+            CmdRogueTournType::CmdRogueTournType_EPCEFLFIAAF => 36,
+            CmdRogueTournType::CmdRogueTournType_OGJEGCIGOOA => 37,
+            CmdRogueTournType::CmdRogueTournType_PECKPILFFLB => 38,
+            CmdRogueTournType::CmdRogueTournType_IBOHCHMCMAK => 39,
+            CmdRogueTournType::CmdRogueTournType_LKFEJICNHKF => 40,
+            CmdRogueTournType::CmdRogueTournType_BPBDFABAIOA => 41,
+            CmdRogueTournType::CmdRogueTournType_DLANANHJHFA => 42,
+            CmdRogueTournType::CmdRogueTournType_FBJPIHHLCLG => 43,
+            CmdRogueTournType::CmdRogueTournType_HNOGIKCAAPL => 44,
+            CmdRogueTournType::CmdRogueTournType_INLHJKBHCGH => 45,
+            CmdRogueTournType::CmdRogueTournType_ABCMGJMHADN => 46,
+            CmdRogueTournType::CmdRogueTournType_BPIECDBKJFJ => 47,
+            CmdRogueTournType::CmdRogueTournType_ELMDKIBHBIC => 48,
+            CmdRogueTournType::CmdRogueTournType_JANOLMEBMIG => 49,
+            CmdRogueTournType::CmdRogueTournType_MPEEAFBHBMI => 50,
+            CmdRogueTournType::CmdRogueTournType_ONBOMDPJKFJ => 51,
+            CmdRogueTournType::CmdRogueTournType_FLJNJALAKHK => 52,
+            CmdRogueTournType::CmdRogueTournType_HGJANDOFHGK => 53,
+            CmdRogueTournType::CmdRogueTournType_HANJALLJMEJ => 54,
+            CmdRogueTournType::CmdRogueTournType_LHKFIKKMJNJ => 55,
+            CmdRogueTournType::CmdRogueTournType_FEOPPJBFMGM => 56,
+            CmdRogueTournType::CmdRogueTournType_KBPPNMBHGED => 57,
+            CmdRogueTournType::CmdRogueTournType_GKLDPLGOBOD => 58,
+            CmdRogueTournType::CmdRogueTournType_GMJNIHNFIOD => 59,
+            CmdRogueTournType::CmdRogueTournType_DJNEPOFMOIL => 60,
+            CmdRogueTournType::CmdRogueTournType_CPHNHEHOICE => 61,
+            CmdRogueTournType::CmdRogueTournType_IAPPOGJDHOO => 62,
+            CmdRogueTournType::CmdRogueTournType_DOHAKIFIJAE => 63,
+            CmdRogueTournType::CmdRogueTournType_HLIEGMHKLIF => 64,
+            CmdRogueTournType::CmdRogueTournType_BHGGIOGMBNF => 65,
+            CmdRogueTournType::CmdRogueTournType_HPENLKBABBO => 66,
+            CmdRogueTournType::CmdRogueTournType_LJMLFOKJDMA => 67,
+            CmdRogueTournType::CmdRogueTournType_MJAEHBEJBAP => 68,
+            CmdRogueTournType::CmdRogueTournType_EKAGBDJHAAD => 69,
+            CmdRogueTournType::CmdRogueTournType_HFKHKDJNLMF => 70,
+            CmdRogueTournType::CmdRogueTournType_KGMKPHHLEBC => 71,
+            CmdRogueTournType::CmdRogueTournType_LLCLNLMEBEF => 72,
+            CmdRogueTournType::CmdRogueTournType_HPLOBNCFMFD => 73,
+            CmdRogueTournType::CmdRogueTournType_OLFNIMAOMGJ => 74,
+            CmdRogueTournType::CmdRogueTournType_FJMCGGAEPDP => 75,
+            CmdRogueTournType::CmdRogueTournType_KPNCCHKGBKL => 76,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -493,7 +529,7 @@ impl ::protobuf::EnumFull for CmdRogueTournType {
 
 impl ::std::default::Default for CmdRogueTournType {
     fn default() -> Self {
-        CmdRogueTournType::CMPBCCJBCCC_GKJBAODJMJG
+        CmdRogueTournType::CmdRogueTournType_MNFEPONEDDJ
     }
 }
 
@@ -504,53 +540,61 @@ impl CmdRogueTournType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdRogueTournType.proto*\xe4\x10\n\x11CmdRogueTournType\x12\x1b\n\
-    \x17CMPBCCJBCCC_GKJBAODJMJG\x10\0\x12\x1c\n\x17CMPBCCJBCCC_HKDENGPAABK\
-    \x10\xb1/\x12\x1c\n\x17CMPBCCJBCCC_EBNGLIJBKJF\x10\x9c/\x12\x1c\n\x17CMP\
-    BCCJBCCC_PEPBLGGIDCP\x10\xa2/\x12\x1c\n\x17CMPBCCJBCCC_ALODNMDGIDI\x10\
-    \xc9/\x12\x1c\n\x17CMPBCCJBCCC_GFNECGGNBIP\x10\xc6/\x12\x1c\n\x17CMPBCCJ\
-    BCCC_NKNGGENJNKM\x10\x92/\x12\x1c\n\x17CMPBCCJBCCC_PGEFOJFICBP\x10\x87/\
-    \x12\x1c\n\x17CMPBCCJBCCC_GHAOFNCIGMB\x10\xcf/\x12\x1c\n\x17CMPBCCJBCCC_\
-    NGHLPDMMNDJ\x10\x80/\x12\x1c\n\x17CMPBCCJBCCC_FCNBCHGFANB\x10\x9d/\x12\
-    \x1c\n\x17CMPBCCJBCCC_HLGIEIOPGAH\x10\xc2/\x12\x1c\n\x17CMPBCCJBCCC_AELK\
-    KDIGPKK\x10\x96/\x12\x1c\n\x17CMPBCCJBCCC_LFPHGDAOBCA\x10\xc7/\x12\x1c\n\
-    \x17CMPBCCJBCCC_MGECGGLGBIM\x10\xbc/\x12\x1c\n\x17CMPBCCJBCCC_ILGBCPCKAM\
-    G\x10\xc5/\x12\x1c\n\x17CMPBCCJBCCC_FANMPFANHKH\x10\xa8/\x12\x1c\n\x17CM\
-    PBCCJBCCC_INKJHKAEIAF\x10\xfd.\x12\x1c\n\x17CMPBCCJBCCC_JMPKALPOIDA\x10\
-    \x8a/\x12\x1c\n\x17CMPBCCJBCCC_FHIIAPMOGNI\x10\xca/\x12\x1c\n\x17CMPBCCJ\
-    BCCC_OBLAHHKOABN\x10\x9a/\x12\x1c\n\x17CMPBCCJBCCC_PFANAAILIME\x10\xbe/\
-    \x12\x1c\n\x17CMPBCCJBCCC_ONOLFFLPBBF\x10\xa0/\x12\x1c\n\x17CMPBCCJBCCC_\
-    PFDPPEKGBKJ\x10\xa5/\x12\x1c\n\x17CMPBCCJBCCC_KFBDFPNFEDM\x10\xa9/\x12\
-    \x1c\n\x17CMPBCCJBCCC_DGFKMLKJILG\x10\xb4/\x12\x1c\n\x17CMPBCCJBCCC_PBIO\
-    LFICMHM\x10\x8f/\x12\x1c\n\x17CMPBCCJBCCC_HOMANDPNFKA\x10\xfb.\x12\x1c\n\
-    \x17CMPBCCJBCCC_IJBHOEAPIMA\x10\xc8/\x12\x1c\n\x17CMPBCCJBCCC_JJFKEFFINI\
-    A\x10\x8c/\x12\x1c\n\x17CMPBCCJBCCC_BNAJJCNIOCC\x10\xb2/\x12\x1c\n\x17CM\
-    PBCCJBCCC_LBFCLIDNDEA\x10\x85/\x12\x1c\n\x17CMPBCCJBCCC_EEBIAAIFHMB\x10\
-    \xaf/\x12\x1c\n\x17CMPBCCJBCCC_HLGDADGNOPE\x10\xc3/\x12\x1c\n\x17CMPBCCJ\
-    BCCC_OKHEFLCAJJJ\x10\x83/\x12\x1c\n\x17CMPBCCJBCCC_HFGJICDPHAG\x10\xd3/\
-    \x12\x1c\n\x17CMPBCCJBCCC_NINAEMAMNCF\x10\xd2/\x12\x1c\n\x17CMPBCCJBCCC_\
-    GJELLBFDNLG\x10\x9f/\x12\x1c\n\x17CMPBCCJBCCC_EBCKNPHBGPD\x10\x94/\x12\
-    \x1c\n\x17CMPBCCJBCCC_ADJAGLHGINK\x10\xa3/\x12\x1c\n\x17CMPBCCJBCCC_MHIK\
-    CGOMGAM\x10\xad/\x12\x1c\n\x17CMPBCCJBCCC_MHMBBGLCKMG\x10\xd4/\x12\x1c\n\
-    \x17CMPBCCJBCCC_FBHNAJINKPN\x10\xc1/\x12\x1c\n\x17CMPBCCJBCCC_OOJHJACAII\
-    L\x10\x86/\x12\x1c\n\x17CMPBCCJBCCC_JCNDLADMPLK\x10\x88/\x12\x1c\n\x17CM\
-    PBCCJBCCC_GHOPILNDEDJ\x10\x90/\x12\x1c\n\x17CMPBCCJBCCC_EBDPMMLNLJC\x10\
-    \xa4/\x12\x1c\n\x17CMPBCCJBCCC_KJBPACPDLPD\x10\x82/\x12\x1c\n\x17CMPBCCJ\
-    BCCC_GKAHFKIOLKG\x10\xcd/\x12\x1c\n\x17CMPBCCJBCCC_IEILONNCCDH\x10\xcc/\
-    \x12\x1c\n\x17CMPBCCJBCCC_EHLLBHFKOME\x10\xd0/\x12\x1c\n\x17CMPBCCJBCCC_\
-    BMPKCKOIEIH\x10\xc0/\x12\x1c\n\x17CMPBCCJBCCC_PICLIILMGMG\x10\xa1/\x12\
-    \x1c\n\x17CMPBCCJBCCC_GDPMLBOECMH\x10\xfe.\x12\x1c\n\x17CMPBCCJBCCC_EMHJ\
-    LEOECGA\x10\xfc.\x12\x1c\n\x17CMPBCCJBCCC_BAKHIIEAJNH\x10\xb3/\x12\x1c\n\
-    \x17CMPBCCJBCCC_DKCJEOMJOOK\x10\xb6/\x12\x1c\n\x17CMPBCCJBCCC_JFHLLABLLB\
-    N\x10\x89/\x12\x1c\n\x17CMPBCCJBCCC_GBLPGLFCCKG\x10\xcb/\x12\x1c\n\x17CM\
-    PBCCJBCCC_JMNJBNKKLDA\x10\xb7/\x12\x1c\n\x17CMPBCCJBCCC_DEFJAOFEHBM\x10\
-    \xbf/\x12\x1c\n\x17CMPBCCJBCCC_CCLKEIAGHHE\x10\xae/\x12\x1c\n\x17CMPBCCJ\
-    BCCC_FMOHPPFDAPC\x10\x8e/\x12\x1c\n\x17CMPBCCJBCCC_HMHMAHCBCHC\x10\xac/\
-    \x12\x1c\n\x17CMPBCCJBCCC_NJIKAPJOAOI\x10\xa6/\x12\x1c\n\x17CMPBCCJBCCC_\
-    BBFALEBPNDJ\x10\x98/\x12\x1c\n\x17CMPBCCJBCCC_KDHOAMGGFMD\x10\xff.\x12\
-    \x1c\n\x17CMPBCCJBCCC_GNIBICFKPIG\x10\xa7/\x12\x1c\n\x17CMPBCCJBCCC_GEJE\
-    MFAEFLN\x10\xaa/\x12\x1c\n\x17CMPBCCJBCCC_FIIMBEECFFH\x10\xb8/\x12\x1c\n\
-    \x17CMPBCCJBCCC_KFHKCAEPGFC\x10\xc4/b\x06proto3\
+    \n\x17CmdRogueTournType.proto*\xe6\x15\n\x11CmdRogueTournType\x12!\n\x1d\
+    CmdRogueTournType_MNFEPONEDDJ\x10\0\x12\"\n\x1dCmdRogueTournType_LLDIIOJ\
+    IDAH\x10\xd4/\x12\"\n\x1dCmdRogueTournType_OMJMJJNDLEK\x10\x9a/\x12\"\n\
+    \x1dCmdRogueTournType_CMOOPILDIBM\x10\xae/\x12\"\n\x1dCmdRogueTournType_\
+    DACOIJADBJG\x10\xa2/\x12\"\n\x1dCmdRogueTournType_HGFJBBMJLBJ\x10\x84/\
+    \x12\"\n\x1dCmdRogueTournType_LDIFDELFNJC\x10\xad/\x12\"\n\x1dCmdRogueTo\
+    urnType_DHCKHEPAKLK\x10\xc7/\x12\"\n\x1dCmdRogueTournType_KLKDMLNEKOH\
+    \x10\xbf/\x12\"\n\x1dCmdRogueTournType_MBNHEFLBOMD\x10\x96/\x12\"\n\x1dC\
+    mdRogueTournType_EDFLFKBIIPL\x10\xcd/\x12\"\n\x1dCmdRogueTournType_FOAHC\
+    FINFIF\x10\x81/\x12\"\n\x1dCmdRogueTournType_ACHHKIJNNPD\x10\x89/\x12\"\
+    \n\x1dCmdRogueTournType_OCIIMCHMEDA\x10\xaa/\x12\"\n\x1dCmdRogueTournTyp\
+    e_LFJFFEJCFNB\x10\xb4/\x12\"\n\x1dCmdRogueTournType_KMHNMEFBMHD\x10\x8d/\
+    \x12\"\n\x1dCmdRogueTournType_LLBAIBFCCAP\x10\x82/\x12\"\n\x1dCmdRogueTo\
+    urnType_GKGADNGLDOE\x10\x88/\x12\"\n\x1dCmdRogueTournType_IJOENECJDOK\
+    \x10\x9b/\x12\"\n\x1dCmdRogueTournType_JKBKAEKKFMK\x10\x9f/\x12\"\n\x1dC\
+    mdRogueTournType_ANAPAFCBKOL\x10\x80/\x12\"\n\x1dCmdRogueTournType_BNAKB\
+    GEDLAG\x10\xa0/\x12\"\n\x1dCmdRogueTournType_IHEGNPFBKJH\x10\xb8/\x12\"\
+    \n\x1dCmdRogueTournType_OEBIKNJOMHC\x10\xfb.\x12\"\n\x1dCmdRogueTournTyp\
+    e_NLJOAANBMPO\x10\x90/\x12\"\n\x1dCmdRogueTournType_NOFNFJPEAOG\x10\x8f/\
+    \x12\"\n\x1dCmdRogueTournType_ECGCJINFADB\x10\x8b/\x12\"\n\x1dCmdRogueTo\
+    urnType_PLLNPMFIOKG\x10\x8a/\x12\"\n\x1dCmdRogueTournType_LBDNKPPGHGC\
+    \x10\xb0/\x12\"\n\x1dCmdRogueTournType_BMLILHHAMEM\x10\xb1/\x12\"\n\x1dC\
+    mdRogueTournType_FAEAACBKNBJ\x10\xc9/\x12\"\n\x1dCmdRogueTournType_GOJOI\
+    CBNLEP\x10\x9c/\x12\"\n\x1dCmdRogueTournType_FNLPOCCNKDA\x10\xbb/\x12\"\
+    \n\x1dCmdRogueTournType_FIMFDEBLHHI\x10\xa1/\x12\"\n\x1dCmdRogueTournTyp\
+    e_HMLEDGEPGEB\x10\x83/\x12\"\n\x1dCmdRogueTournType_NELBFHHDAAB\x10\xbd/\
+    \x12\"\n\x1dCmdRogueTournType_EPCEFLFIAAF\x10\xc3/\x12\"\n\x1dCmdRogueTo\
+    urnType_OGJEGCIGOOA\x10\xbe/\x12\"\n\x1dCmdRogueTournType_PECKPILFFLB\
+    \x10\xa5/\x12\"\n\x1dCmdRogueTournType_IBOHCHMCMAK\x10\x85/\x12\"\n\x1dC\
+    mdRogueTournType_LKFEJICNHKF\x10\xa4/\x12\"\n\x1dCmdRogueTournType_BPBDF\
+    ABAIOA\x10\xc5/\x12\"\n\x1dCmdRogueTournType_DLANANHJHFA\x10\xcc/\x12\"\
+    \n\x1dCmdRogueTournType_FBJPIHHLCLG\x10\xfe.\x12\"\n\x1dCmdRogueTournTyp\
+    e_HNOGIKCAAPL\x10\xb2/\x12\"\n\x1dCmdRogueTournType_INLHJKBHCGH\x10\xd1/\
+    \x12\"\n\x1dCmdRogueTournType_ABCMGJMHADN\x10\xd2/\x12\"\n\x1dCmdRogueTo\
+    urnType_BPIECDBKJFJ\x10\x87/\x12\"\n\x1dCmdRogueTournType_ELMDKIBHBIC\
+    \x10\xba/\x12\"\n\x1dCmdRogueTournType_JANOLMEBMIG\x10\x93/\x12\"\n\x1dC\
+    mdRogueTournType_MPEEAFBHBMI\x10\xcb/\x12\"\n\x1dCmdRogueTournType_ONBOM\
+    DPJKFJ\x10\xfd.\x12\"\n\x1dCmdRogueTournType_FLJNJALAKHK\x10\xa9/\x12\"\
+    \n\x1dCmdRogueTournType_HGJANDOFHGK\x10\xc6/\x12\"\n\x1dCmdRogueTournTyp\
+    e_HANJALLJMEJ\x10\xb7/\x12\"\n\x1dCmdRogueTournType_LHKFIKKMJNJ\x10\xac/\
+    \x12\"\n\x1dCmdRogueTournType_FEOPPJBFMGM\x10\xb6/\x12\"\n\x1dCmdRogueTo\
+    urnType_KBPPNMBHGED\x10\x95/\x12\"\n\x1dCmdRogueTournType_GKLDPLGOBOD\
+    \x10\xc8/\x12\"\n\x1dCmdRogueTournType_GMJNIHNFIOD\x10\xa7/\x12\"\n\x1dC\
+    mdRogueTournType_DJNEPOFMOIL\x10\xb9/\x12\"\n\x1dCmdRogueTournType_CPHNH\
+    EHOICE\x10\xfc.\x12\"\n\x1dCmdRogueTournType_IAPPOGJDHOO\x10\x97/\x12\"\
+    \n\x1dCmdRogueTournType_DOHAKIFIJAE\x10\x92/\x12\"\n\x1dCmdRogueTournTyp\
+    e_HLIEGMHKLIF\x10\x91/\x12\"\n\x1dCmdRogueTournType_BHGGIOGMBNF\x10\x86/\
+    \x12\"\n\x1dCmdRogueTournType_HPENLKBABBO\x10\x9d/\x12\"\n\x1dCmdRogueTo\
+    urnType_LJMLFOKJDMA\x10\x99/\x12\"\n\x1dCmdRogueTournType_MJAEHBEJBAP\
+    \x10\xb5/\x12\"\n\x1dCmdRogueTournType_EKAGBDJHAAD\x10\xb3/\x12\"\n\x1dC\
+    mdRogueTournType_HFKHKDJNLMF\x10\x8c/\x12\"\n\x1dCmdRogueTournType_KGMKP\
+    HHLEBC\x10\xff.\x12\"\n\x1dCmdRogueTournType_LLCLNLMEBEF\x10\xa3/\x12\"\
+    \n\x1dCmdRogueTournType_HPLOBNCFMFD\x10\xa8/\x12\"\n\x1dCmdRogueTournTyp\
+    e_OLFNIMAOMGJ\x10\xca/\x12\"\n\x1dCmdRogueTournType_FJMCGGAEPDP\x10\x9e/\
+    \x12\"\n\x1dCmdRogueTournType_KPNCCHKGBKL\x10\xa6/b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

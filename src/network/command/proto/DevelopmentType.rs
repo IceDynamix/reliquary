@@ -27,44 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:DevelopmentType)
 pub enum DevelopmentType {
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_PMFJFFAPAJO)
-    LHJMKMEIKLK_PMFJFFAPAJO = 0,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_OGLNOGIKNCI)
-    LHJMKMEIKLK_OGLNOGIKNCI = 1,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_OHLMFHPEAGJ)
-    LHJMKMEIKLK_OHLMFHPEAGJ = 2,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_CKHMLOKAKOH)
-    LHJMKMEIKLK_CKHMLOKAKOH = 3,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_DBFJDBIEFDB)
-    LHJMKMEIKLK_DBFJDBIEFDB = 4,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_MNKOCFKKMBE)
-    LHJMKMEIKLK_MNKOCFKKMBE = 5,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_COOIHBLILBB)
-    LHJMKMEIKLK_COOIHBLILBB = 6,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_DFJCOIOACHE)
-    LHJMKMEIKLK_DFJCOIOACHE = 7,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_OANPHKGAGOA)
-    LHJMKMEIKLK_OANPHKGAGOA = 8,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_GHJONNNKDOH)
-    LHJMKMEIKLK_GHJONNNKDOH = 9,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_GMOPDOPMGFN)
-    LHJMKMEIKLK_GMOPDOPMGFN = 10,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_PCDCMPFNMJH)
-    LHJMKMEIKLK_PCDCMPFNMJH = 11,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_KBOKEDNFKHH)
-    LHJMKMEIKLK_KBOKEDNFKHH = 12,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_NBBOJIKJNHD)
-    LHJMKMEIKLK_NBBOJIKJNHD = 13,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_AOGDFFKOKMC)
-    LHJMKMEIKLK_AOGDFFKOKMC = 14,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_HBDOLKCAILD)
-    LHJMKMEIKLK_HBDOLKCAILD = 15,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_ELMAOPCKAJB)
-    LHJMKMEIKLK_ELMAOPCKAJB = 16,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_AIJFFNPAMPF)
-    LHJMKMEIKLK_AIJFFNPAMPF = 17,
-    // @@protoc_insertion_point(enum_value:DevelopmentType.LHJMKMEIKLK_PKLPABNIPNM)
-    LHJMKMEIKLK_PKLPABNIPNM = 18,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_IFHPJFLKBDK)
+    DevelopmentType_IFHPJFLKBDK = 0,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_ODKOIEOEFMJ)
+    DevelopmentType_ODKOIEOEFMJ = 1,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_FCEMFFBAPDG)
+    DevelopmentType_FCEMFFBAPDG = 2,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_BGFGAJNLKMM)
+    DevelopmentType_BGFGAJNLKMM = 3,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_MPKIGFDCKGD)
+    DevelopmentType_MPKIGFDCKGD = 4,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_HGCCEGEKHHN)
+    DevelopmentType_HGCCEGEKHHN = 5,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_KFGEJNPGKLH)
+    DevelopmentType_KFGEJNPGKLH = 6,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_FBKMDGGKDGJ)
+    DevelopmentType_FBKMDGGKDGJ = 7,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_FPMGCLNNGFF)
+    DevelopmentType_FPMGCLNNGFF = 8,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_NNMHCDKPLIH)
+    DevelopmentType_NNMHCDKPLIH = 9,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_MAGNHLNMIBB)
+    DevelopmentType_MAGNHLNMIBB = 10,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_BELMPCJODHF)
+    DevelopmentType_BELMPCJODHF = 11,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_LMBOCKCKGCD)
+    DevelopmentType_LMBOCKCKGCD = 12,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_NPKGBBIBENM)
+    DevelopmentType_NPKGBBIBENM = 13,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_GMIKOPCLCDK)
+    DevelopmentType_GMIKOPCLCDK = 14,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_DGLELKEDKDI)
+    DevelopmentType_DGLELKEDKDI = 15,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_JDEHNKPJFDF)
+    DevelopmentType_JDEHNKPJFDF = 16,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_COPMEJIFFLE)
+    DevelopmentType_COPMEJIFFLE = 17,
+    // @@protoc_insertion_point(enum_value:DevelopmentType.DevelopmentType_KPLFPPGBIHF)
+    DevelopmentType_KPLFPPGBIHF = 18,
 }
 
 impl ::protobuf::Enum for DevelopmentType {
@@ -76,74 +76,74 @@ impl ::protobuf::Enum for DevelopmentType {
 
     fn from_i32(value: i32) -> ::std::option::Option<DevelopmentType> {
         match value {
-            0 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PMFJFFAPAJO),
-            1 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OGLNOGIKNCI),
-            2 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OHLMFHPEAGJ),
-            3 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_CKHMLOKAKOH),
-            4 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_DBFJDBIEFDB),
-            5 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_MNKOCFKKMBE),
-            6 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_COOIHBLILBB),
-            7 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_DFJCOIOACHE),
-            8 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OANPHKGAGOA),
-            9 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_GHJONNNKDOH),
-            10 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_GMOPDOPMGFN),
-            11 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PCDCMPFNMJH),
-            12 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_KBOKEDNFKHH),
-            13 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_NBBOJIKJNHD),
-            14 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_AOGDFFKOKMC),
-            15 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_HBDOLKCAILD),
-            16 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_ELMAOPCKAJB),
-            17 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_AIJFFNPAMPF),
-            18 => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PKLPABNIPNM),
+            0 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_IFHPJFLKBDK),
+            1 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_ODKOIEOEFMJ),
+            2 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_FCEMFFBAPDG),
+            3 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_BGFGAJNLKMM),
+            4 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_MPKIGFDCKGD),
+            5 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_HGCCEGEKHHN),
+            6 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_KFGEJNPGKLH),
+            7 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_FBKMDGGKDGJ),
+            8 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_FPMGCLNNGFF),
+            9 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_NNMHCDKPLIH),
+            10 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_MAGNHLNMIBB),
+            11 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_BELMPCJODHF),
+            12 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_LMBOCKCKGCD),
+            13 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_NPKGBBIBENM),
+            14 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_GMIKOPCLCDK),
+            15 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DGLELKEDKDI),
+            16 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_JDEHNKPJFDF),
+            17 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_COPMEJIFFLE),
+            18 => ::std::option::Option::Some(DevelopmentType::DevelopmentType_KPLFPPGBIHF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<DevelopmentType> {
         match str {
-            "LHJMKMEIKLK_PMFJFFAPAJO" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PMFJFFAPAJO),
-            "LHJMKMEIKLK_OGLNOGIKNCI" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OGLNOGIKNCI),
-            "LHJMKMEIKLK_OHLMFHPEAGJ" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OHLMFHPEAGJ),
-            "LHJMKMEIKLK_CKHMLOKAKOH" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_CKHMLOKAKOH),
-            "LHJMKMEIKLK_DBFJDBIEFDB" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_DBFJDBIEFDB),
-            "LHJMKMEIKLK_MNKOCFKKMBE" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_MNKOCFKKMBE),
-            "LHJMKMEIKLK_COOIHBLILBB" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_COOIHBLILBB),
-            "LHJMKMEIKLK_DFJCOIOACHE" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_DFJCOIOACHE),
-            "LHJMKMEIKLK_OANPHKGAGOA" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_OANPHKGAGOA),
-            "LHJMKMEIKLK_GHJONNNKDOH" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_GHJONNNKDOH),
-            "LHJMKMEIKLK_GMOPDOPMGFN" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_GMOPDOPMGFN),
-            "LHJMKMEIKLK_PCDCMPFNMJH" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PCDCMPFNMJH),
-            "LHJMKMEIKLK_KBOKEDNFKHH" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_KBOKEDNFKHH),
-            "LHJMKMEIKLK_NBBOJIKJNHD" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_NBBOJIKJNHD),
-            "LHJMKMEIKLK_AOGDFFKOKMC" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_AOGDFFKOKMC),
-            "LHJMKMEIKLK_HBDOLKCAILD" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_HBDOLKCAILD),
-            "LHJMKMEIKLK_ELMAOPCKAJB" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_ELMAOPCKAJB),
-            "LHJMKMEIKLK_AIJFFNPAMPF" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_AIJFFNPAMPF),
-            "LHJMKMEIKLK_PKLPABNIPNM" => ::std::option::Option::Some(DevelopmentType::LHJMKMEIKLK_PKLPABNIPNM),
+            "DevelopmentType_IFHPJFLKBDK" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_IFHPJFLKBDK),
+            "DevelopmentType_ODKOIEOEFMJ" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_ODKOIEOEFMJ),
+            "DevelopmentType_FCEMFFBAPDG" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_FCEMFFBAPDG),
+            "DevelopmentType_BGFGAJNLKMM" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_BGFGAJNLKMM),
+            "DevelopmentType_MPKIGFDCKGD" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_MPKIGFDCKGD),
+            "DevelopmentType_HGCCEGEKHHN" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_HGCCEGEKHHN),
+            "DevelopmentType_KFGEJNPGKLH" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_KFGEJNPGKLH),
+            "DevelopmentType_FBKMDGGKDGJ" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_FBKMDGGKDGJ),
+            "DevelopmentType_FPMGCLNNGFF" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_FPMGCLNNGFF),
+            "DevelopmentType_NNMHCDKPLIH" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_NNMHCDKPLIH),
+            "DevelopmentType_MAGNHLNMIBB" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_MAGNHLNMIBB),
+            "DevelopmentType_BELMPCJODHF" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_BELMPCJODHF),
+            "DevelopmentType_LMBOCKCKGCD" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_LMBOCKCKGCD),
+            "DevelopmentType_NPKGBBIBENM" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_NPKGBBIBENM),
+            "DevelopmentType_GMIKOPCLCDK" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_GMIKOPCLCDK),
+            "DevelopmentType_DGLELKEDKDI" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_DGLELKEDKDI),
+            "DevelopmentType_JDEHNKPJFDF" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_JDEHNKPJFDF),
+            "DevelopmentType_COPMEJIFFLE" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_COPMEJIFFLE),
+            "DevelopmentType_KPLFPPGBIHF" => ::std::option::Option::Some(DevelopmentType::DevelopmentType_KPLFPPGBIHF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [DevelopmentType] = &[
-        DevelopmentType::LHJMKMEIKLK_PMFJFFAPAJO,
-        DevelopmentType::LHJMKMEIKLK_OGLNOGIKNCI,
-        DevelopmentType::LHJMKMEIKLK_OHLMFHPEAGJ,
-        DevelopmentType::LHJMKMEIKLK_CKHMLOKAKOH,
-        DevelopmentType::LHJMKMEIKLK_DBFJDBIEFDB,
-        DevelopmentType::LHJMKMEIKLK_MNKOCFKKMBE,
-        DevelopmentType::LHJMKMEIKLK_COOIHBLILBB,
-        DevelopmentType::LHJMKMEIKLK_DFJCOIOACHE,
-        DevelopmentType::LHJMKMEIKLK_OANPHKGAGOA,
-        DevelopmentType::LHJMKMEIKLK_GHJONNNKDOH,
-        DevelopmentType::LHJMKMEIKLK_GMOPDOPMGFN,
-        DevelopmentType::LHJMKMEIKLK_PCDCMPFNMJH,
-        DevelopmentType::LHJMKMEIKLK_KBOKEDNFKHH,
-        DevelopmentType::LHJMKMEIKLK_NBBOJIKJNHD,
-        DevelopmentType::LHJMKMEIKLK_AOGDFFKOKMC,
-        DevelopmentType::LHJMKMEIKLK_HBDOLKCAILD,
-        DevelopmentType::LHJMKMEIKLK_ELMAOPCKAJB,
-        DevelopmentType::LHJMKMEIKLK_AIJFFNPAMPF,
-        DevelopmentType::LHJMKMEIKLK_PKLPABNIPNM,
+        DevelopmentType::DevelopmentType_IFHPJFLKBDK,
+        DevelopmentType::DevelopmentType_ODKOIEOEFMJ,
+        DevelopmentType::DevelopmentType_FCEMFFBAPDG,
+        DevelopmentType::DevelopmentType_BGFGAJNLKMM,
+        DevelopmentType::DevelopmentType_MPKIGFDCKGD,
+        DevelopmentType::DevelopmentType_HGCCEGEKHHN,
+        DevelopmentType::DevelopmentType_KFGEJNPGKLH,
+        DevelopmentType::DevelopmentType_FBKMDGGKDGJ,
+        DevelopmentType::DevelopmentType_FPMGCLNNGFF,
+        DevelopmentType::DevelopmentType_NNMHCDKPLIH,
+        DevelopmentType::DevelopmentType_MAGNHLNMIBB,
+        DevelopmentType::DevelopmentType_BELMPCJODHF,
+        DevelopmentType::DevelopmentType_LMBOCKCKGCD,
+        DevelopmentType::DevelopmentType_NPKGBBIBENM,
+        DevelopmentType::DevelopmentType_GMIKOPCLCDK,
+        DevelopmentType::DevelopmentType_DGLELKEDKDI,
+        DevelopmentType::DevelopmentType_JDEHNKPJFDF,
+        DevelopmentType::DevelopmentType_COPMEJIFFLE,
+        DevelopmentType::DevelopmentType_KPLFPPGBIHF,
     ];
 }
 
@@ -161,7 +161,7 @@ impl ::protobuf::EnumFull for DevelopmentType {
 
 impl ::std::default::Default for DevelopmentType {
     fn default() -> Self {
-        DevelopmentType::LHJMKMEIKLK_PMFJFFAPAJO
+        DevelopmentType::DevelopmentType_IFHPJFLKBDK
     }
 }
 
@@ -172,19 +172,20 @@ impl DevelopmentType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15DevelopmentType.proto*\xb8\x04\n\x0fDevelopmentType\x12\x1b\n\x17L\
-    HJMKMEIKLK_PMFJFFAPAJO\x10\0\x12\x1b\n\x17LHJMKMEIKLK_OGLNOGIKNCI\x10\
-    \x01\x12\x1b\n\x17LHJMKMEIKLK_OHLMFHPEAGJ\x10\x02\x12\x1b\n\x17LHJMKMEIK\
-    LK_CKHMLOKAKOH\x10\x03\x12\x1b\n\x17LHJMKMEIKLK_DBFJDBIEFDB\x10\x04\x12\
-    \x1b\n\x17LHJMKMEIKLK_MNKOCFKKMBE\x10\x05\x12\x1b\n\x17LHJMKMEIKLK_COOIH\
-    BLILBB\x10\x06\x12\x1b\n\x17LHJMKMEIKLK_DFJCOIOACHE\x10\x07\x12\x1b\n\
-    \x17LHJMKMEIKLK_OANPHKGAGOA\x10\x08\x12\x1b\n\x17LHJMKMEIKLK_GHJONNNKDOH\
-    \x10\t\x12\x1b\n\x17LHJMKMEIKLK_GMOPDOPMGFN\x10\n\x12\x1b\n\x17LHJMKMEIK\
-    LK_PCDCMPFNMJH\x10\x0b\x12\x1b\n\x17LHJMKMEIKLK_KBOKEDNFKHH\x10\x0c\x12\
-    \x1b\n\x17LHJMKMEIKLK_NBBOJIKJNHD\x10\r\x12\x1b\n\x17LHJMKMEIKLK_AOGDFFK\
-    OKMC\x10\x0e\x12\x1b\n\x17LHJMKMEIKLK_HBDOLKCAILD\x10\x0f\x12\x1b\n\x17L\
-    HJMKMEIKLK_ELMAOPCKAJB\x10\x10\x12\x1b\n\x17LHJMKMEIKLK_AIJFFNPAMPF\x10\
-    \x11\x12\x1b\n\x17LHJMKMEIKLK_PKLPABNIPNM\x10\x12b\x06proto3\
+    \n\x15DevelopmentType.proto*\x84\x05\n\x0fDevelopmentType\x12\x1f\n\x1bD\
+    evelopmentType_IFHPJFLKBDK\x10\0\x12\x1f\n\x1bDevelopmentType_ODKOIEOEFM\
+    J\x10\x01\x12\x1f\n\x1bDevelopmentType_FCEMFFBAPDG\x10\x02\x12\x1f\n\x1b\
+    DevelopmentType_BGFGAJNLKMM\x10\x03\x12\x1f\n\x1bDevelopmentType_MPKIGFD\
+    CKGD\x10\x04\x12\x1f\n\x1bDevelopmentType_HGCCEGEKHHN\x10\x05\x12\x1f\n\
+    \x1bDevelopmentType_KFGEJNPGKLH\x10\x06\x12\x1f\n\x1bDevelopmentType_FBK\
+    MDGGKDGJ\x10\x07\x12\x1f\n\x1bDevelopmentType_FPMGCLNNGFF\x10\x08\x12\
+    \x1f\n\x1bDevelopmentType_NNMHCDKPLIH\x10\t\x12\x1f\n\x1bDevelopmentType\
+    _MAGNHLNMIBB\x10\n\x12\x1f\n\x1bDevelopmentType_BELMPCJODHF\x10\x0b\x12\
+    \x1f\n\x1bDevelopmentType_LMBOCKCKGCD\x10\x0c\x12\x1f\n\x1bDevelopmentTy\
+    pe_NPKGBBIBENM\x10\r\x12\x1f\n\x1bDevelopmentType_GMIKOPCLCDK\x10\x0e\
+    \x12\x1f\n\x1bDevelopmentType_DGLELKEDKDI\x10\x0f\x12\x1f\n\x1bDevelopme\
+    ntType_JDEHNKPJFDF\x10\x10\x12\x1f\n\x1bDevelopmentType_COPMEJIFFLE\x10\
+    \x11\x12\x1f\n\x1bDevelopmentType_KPLFPPGBIHF\x10\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

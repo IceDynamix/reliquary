@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MazeGroup {
     // message fields
-    // @@protoc_insertion_point(field:MazeGroup.is_need_refresh)
-    pub is_need_refresh: bool,
-    // @@protoc_insertion_point(field:MazeGroup.property_map)
-    pub property_map: ::std::collections::HashMap<::std::string::String, i32>,
-    // @@protoc_insertion_point(field:MazeGroup.group_id)
-    pub group_id: u32,
     // @@protoc_insertion_point(field:MazeGroup.destory_monster_config_id_list)
     pub destory_monster_config_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:MazeGroup.modify_time)
     pub modify_time: i64,
+    // @@protoc_insertion_point(field:MazeGroup.group_id)
+    pub group_id: u32,
+    // @@protoc_insertion_point(field:MazeGroup.property_map)
+    pub property_map: ::std::collections::HashMap<::std::string::String, i32>,
+    // @@protoc_insertion_point(field:MazeGroup.is_need_refresh)
+    pub is_need_refresh: bool,
     // special fields
     // @@protoc_insertion_point(special_field:MazeGroup.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,21 +57,6 @@ impl MazeGroup {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_need_refresh",
-            |m: &MazeGroup| { &m.is_need_refresh },
-            |m: &mut MazeGroup| { &mut m.is_need_refresh },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "property_map",
-            |m: &MazeGroup| { &m.property_map },
-            |m: &mut MazeGroup| { &mut m.property_map },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &MazeGroup| { &m.group_id },
-            |m: &mut MazeGroup| { &mut m.group_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "destory_monster_config_id_list",
             |m: &MazeGroup| { &m.destory_monster_config_id_list },
@@ -81,6 +66,21 @@ impl MazeGroup {
             "modify_time",
             |m: &MazeGroup| { &m.modify_time },
             |m: &mut MazeGroup| { &mut m.modify_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &MazeGroup| { &m.group_id },
+            |m: &mut MazeGroup| { &mut m.group_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "property_map",
+            |m: &MazeGroup| { &m.property_map },
+            |m: &mut MazeGroup| { &mut m.property_map },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_need_refresh",
+            |m: &MazeGroup| { &m.is_need_refresh },
+            |m: &mut MazeGroup| { &mut m.is_need_refresh },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MazeGroup>(
             "MazeGroup",
@@ -100,10 +100,19 @@ impl ::protobuf::Message for MazeGroup {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.is_need_refresh = is.read_bool()?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.destory_monster_config_id_list)?;
                 },
-                50 => {
+                88 => {
+                    self.destory_monster_config_id_list.push(is.read_uint32()?);
+                },
+                56 => {
+                    self.modify_time = is.read_int64()?;
+                },
+                96 => {
+                    self.group_id = is.read_uint32()?;
+                },
+                114 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -118,17 +127,8 @@ impl ::protobuf::Message for MazeGroup {
                     is.pop_limit(old_limit);
                     self.property_map.insert(key, value);
                 },
-                16 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.destory_monster_config_id_list)?;
-                },
-                80 => {
-                    self.destory_monster_config_id_list.push(is.read_uint32()?);
-                },
-                64 => {
-                    self.modify_time = is.read_int64()?;
+                8 => {
+                    self.is_need_refresh = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -142,8 +142,12 @@ impl ::protobuf::Message for MazeGroup {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_need_refresh != false {
-            my_size += 1 + 1;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.destory_monster_config_id_list);
+        if self.modify_time != 0 {
+            my_size += ::protobuf::rt::int64_size(7, self.modify_time);
+        }
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.group_id);
         }
         for (k, v) in &self.property_map {
             let mut entry_size = 0;
@@ -151,12 +155,8 @@ impl ::protobuf::Message for MazeGroup {
             entry_size += ::protobuf::rt::int32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.group_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.destory_monster_config_id_list);
-        if self.modify_time != 0 {
-            my_size += ::protobuf::rt::int64_size(8, self.modify_time);
+        if self.is_need_refresh != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,24 +164,24 @@ impl ::protobuf::Message for MazeGroup {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_need_refresh != false {
-            os.write_bool(1, self.is_need_refresh)?;
+        os.write_repeated_packed_uint32(11, &self.destory_monster_config_id_list)?;
+        if self.modify_time != 0 {
+            os.write_int64(7, self.modify_time)?;
+        }
+        if self.group_id != 0 {
+            os.write_uint32(12, self.group_id)?;
         }
         for (k, v) in &self.property_map {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::string_size(1, &k);
             entry_size += ::protobuf::rt::int32_size(2, *v);
-            os.write_raw_varint32(50)?; // Tag.
+            os.write_raw_varint32(114)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_string(1, &k)?;
             os.write_int32(2, *v)?;
         };
-        if self.group_id != 0 {
-            os.write_uint32(2, self.group_id)?;
-        }
-        os.write_repeated_packed_uint32(10, &self.destory_monster_config_id_list)?;
-        if self.modify_time != 0 {
-            os.write_int64(8, self.modify_time)?;
+        if self.is_need_refresh != false {
+            os.write_bool(1, self.is_need_refresh)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -200,11 +200,11 @@ impl ::protobuf::Message for MazeGroup {
     }
 
     fn clear(&mut self) {
-        self.is_need_refresh = false;
-        self.property_map.clear();
-        self.group_id = 0;
         self.destory_monster_config_id_list.clear();
         self.modify_time = 0;
+        self.group_id = 0;
+        self.property_map.clear();
+        self.is_need_refresh = false;
         self.special_fields.clear();
     }
 
@@ -232,12 +232,12 @@ impl ::protobuf::reflect::ProtobufValue for MazeGroup {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fMazeGroup.proto\"\xb3\x02\n\tMazeGroup\x12&\n\x0fis_need_refresh\
-    \x18\x01\x20\x01(\x08R\risNeedRefresh\x12>\n\x0cproperty_map\x18\x06\x20\
-    \x03(\x0b2\x1b.MazeGroup.PropertyMapEntryR\x0bpropertyMap\x12\x19\n\x08g\
-    roup_id\x18\x02\x20\x01(\rR\x07groupId\x12B\n\x1edestory_monster_config_\
-    id_list\x18\n\x20\x03(\rR\x1adestoryMonsterConfigIdList\x12\x1f\n\x0bmod\
-    ify_time\x18\x08\x20\x01(\x03R\nmodifyTime\x1a>\n\x10PropertyMapEntry\
+    \n\x0fMazeGroup.proto\"\xb3\x02\n\tMazeGroup\x12B\n\x1edestory_monster_c\
+    onfig_id_list\x18\x0b\x20\x03(\rR\x1adestoryMonsterConfigIdList\x12\x1f\
+    \n\x0bmodify_time\x18\x07\x20\x01(\x03R\nmodifyTime\x12\x19\n\x08group_i\
+    d\x18\x0c\x20\x01(\rR\x07groupId\x12>\n\x0cproperty_map\x18\x0e\x20\x03(\
+    \x0b2\x1b.MazeGroup.PropertyMapEntryR\x0bpropertyMap\x12&\n\x0fis_need_r\
+    efresh\x18\x01\x20\x01(\x08R\risNeedRefresh\x1a>\n\x10PropertyMapEntry\
     \x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\
     \x20\x01(\x05R\x05value:\x028\x01b\x06proto3\
 ";

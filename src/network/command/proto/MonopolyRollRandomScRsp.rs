@@ -30,10 +30,10 @@ pub struct MonopolyRollRandomScRsp {
     // message fields
     // @@protoc_insertion_point(field:MonopolyRollRandomScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MonopolyRollRandomScRsp.IKFNCMIODIG)
+    pub IKFNCMIODIG: ::protobuf::MessageField<super::AAFJGLBENCH_HAOOGILAOKL::AAFJGLBENCH>,
     // @@protoc_insertion_point(field:MonopolyRollRandomScRsp.event_id)
     pub event_id: u32,
-    // @@protoc_insertion_point(field:MonopolyRollRandomScRsp.CCPMLANGEAF)
-    pub CCPMLANGEAF: ::protobuf::MessageField<super::KNEIDNKFKEI_LALDKDDDHML::KNEIDNKFKEI>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyRollRandomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl MonopolyRollRandomScRsp {
             |m: &MonopolyRollRandomScRsp| { &m.retcode },
             |m: &mut MonopolyRollRandomScRsp| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AAFJGLBENCH_HAOOGILAOKL::AAFJGLBENCH>(
+            "IKFNCMIODIG",
+            |m: &MonopolyRollRandomScRsp| { &m.IKFNCMIODIG },
+            |m: &mut MonopolyRollRandomScRsp| { &mut m.IKFNCMIODIG },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "event_id",
             |m: &MonopolyRollRandomScRsp| { &m.event_id },
             |m: &mut MonopolyRollRandomScRsp| { &mut m.event_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KNEIDNKFKEI_LALDKDDDHML::KNEIDNKFKEI>(
-            "CCPMLANGEAF",
-            |m: &MonopolyRollRandomScRsp| { &m.CCPMLANGEAF },
-            |m: &mut MonopolyRollRandomScRsp| { &mut m.CCPMLANGEAF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyRollRandomScRsp>(
             "MonopolyRollRandomScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MonopolyRollRandomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKFNCMIODIG)?;
                 },
                 64 => {
                     self.event_id = is.read_uint32()?;
-                },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCPMLANGEAF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for MonopolyRollRandomScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if let Some(v) = self.IKFNCMIODIG.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.event_id != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.event_id);
-        }
-        if let Some(v) = self.CCPMLANGEAF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for MonopolyRollRandomScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if let Some(v) = self.IKFNCMIODIG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         if self.event_id != 0 {
             os.write_uint32(8, self.event_id)?;
-        }
-        if let Some(v) = self.CCPMLANGEAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for MonopolyRollRandomScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
+        self.IKFNCMIODIG.clear();
         self.event_id = 0;
-        self.CCPMLANGEAF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyRollRandomScRsp {
         static instance: MonopolyRollRandomScRsp = MonopolyRollRandomScRsp {
             retcode: 0,
+            IKFNCMIODIG: ::protobuf::MessageField::none(),
             event_id: 0,
-            CCPMLANGEAF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyRollRandomScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dMonopolyRollRandomScRsp.proto\x1a\x1dKNEIDNKFKEI_LALDKDDDHML.proto\
-    \"~\n\x17MonopolyRollRandomScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\
-    \x07retcode\x12\x19\n\x08event_id\x18\x08\x20\x01(\rR\x07eventId\x12.\n\
-    \x0bCCPMLANGEAF\x18\x0e\x20\x01(\x0b2\x0c.KNEIDNKFKEIR\x0bCCPMLANGEAFb\
+    \n\x1dMonopolyRollRandomScRsp.proto\x1a\x1dAAFJGLBENCH_HAOOGILAOKL.proto\
+    \"~\n\x17MonopolyRollRandomScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\r\
+    R\x07retcode\x12.\n\x0bIKFNCMIODIG\x18\x0f\x20\x01(\x0b2\x0c.AAFJGLBENCH\
+    R\x0bIKFNCMIODIG\x12\x19\n\x08event_id\x18\x08\x20\x01(\rR\x07eventIdb\
     \x06proto3\
 ";
 
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KNEIDNKFKEI_LALDKDDDHML::file_descriptor().clone());
+            deps.push(super::AAFJGLBENCH_HAOOGILAOKL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MonopolyRollRandomScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

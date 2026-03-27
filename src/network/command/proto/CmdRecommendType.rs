@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRecommendType)
 pub enum CmdRecommendType {
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.OPIIOFPDBNC_GKJBAODJMJG)
-    OPIIOFPDBNC_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.OPIIOFPDBNC_KMMMDFJIOAO)
-    OPIIOFPDBNC_KMMMDFJIOAO = 2408,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.OPIIOFPDBNC_JECCJCCPHAC)
-    OPIIOFPDBNC_JECCJCCPHAC = 2447,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.OPIIOFPDBNC_NFMBKLHLHJM)
-    OPIIOFPDBNC_NFMBKLHLHJM = 2435,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.OPIIOFPDBNC_JNIEHODJCNF)
-    OPIIOFPDBNC_JNIEHODJCNF = 2406,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRecommendType_MNFEPONEDDJ)
+    CmdRecommendType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRecommendType_AOEHBPCGCFF)
+    CmdRecommendType_AOEHBPCGCFF = 2430,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRecommendType_POJPMBOJKPO)
+    CmdRecommendType_POJPMBOJKPO = 2424,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRecommendType_JJDIFKPGFIH)
+    CmdRecommendType_JJDIFKPGFIH = 2402,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdRecommendType_LANKBINGOPB)
+    CmdRecommendType_LANKBINGOPB = 2407,
 }
 
 impl ::protobuf::Enum for CmdRecommendType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for CmdRecommendType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRecommendType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRecommendType::OPIIOFPDBNC_GKJBAODJMJG),
-            2408 => ::std::option::Option::Some(CmdRecommendType::OPIIOFPDBNC_KMMMDFJIOAO),
-            2447 => ::std::option::Option::Some(CmdRecommendType::OPIIOFPDBNC_JECCJCCPHAC),
-            2435 => ::std::option::Option::Some(CmdRecommendType::OPIIOFPDBNC_NFMBKLHLHJM),
-            2406 => ::std::option::Option::Some(CmdRecommendType::OPIIOFPDBNC_JNIEHODJCNF),
+            0 => ::std::option::Option::Some(CmdRecommendType::CmdRecommendType_MNFEPONEDDJ),
+            2430 => ::std::option::Option::Some(CmdRecommendType::CmdRecommendType_AOEHBPCGCFF),
+            2424 => ::std::option::Option::Some(CmdRecommendType::CmdRecommendType_POJPMBOJKPO),
+            2402 => ::std::option::Option::Some(CmdRecommendType::CmdRecommendType_JJDIFKPGFIH),
+            2407 => ::std::option::Option::Some(CmdRecommendType::CmdRecommendType_LANKBINGOPB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRecommendType> {
         match str {
-            "OPIIOFPDBNC_GKJBAODJMJG" => ::std::option::Option::Some(CmdRecommendType::OPIIOFPDBNC_GKJBAODJMJG),
-            "OPIIOFPDBNC_KMMMDFJIOAO" => ::std::option::Option::Some(CmdRecommendType::OPIIOFPDBNC_KMMMDFJIOAO),
-            "OPIIOFPDBNC_JECCJCCPHAC" => ::std::option::Option::Some(CmdRecommendType::OPIIOFPDBNC_JECCJCCPHAC),
-            "OPIIOFPDBNC_NFMBKLHLHJM" => ::std::option::Option::Some(CmdRecommendType::OPIIOFPDBNC_NFMBKLHLHJM),
-            "OPIIOFPDBNC_JNIEHODJCNF" => ::std::option::Option::Some(CmdRecommendType::OPIIOFPDBNC_JNIEHODJCNF),
+            "CmdRecommendType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdRecommendType::CmdRecommendType_MNFEPONEDDJ),
+            "CmdRecommendType_AOEHBPCGCFF" => ::std::option::Option::Some(CmdRecommendType::CmdRecommendType_AOEHBPCGCFF),
+            "CmdRecommendType_POJPMBOJKPO" => ::std::option::Option::Some(CmdRecommendType::CmdRecommendType_POJPMBOJKPO),
+            "CmdRecommendType_JJDIFKPGFIH" => ::std::option::Option::Some(CmdRecommendType::CmdRecommendType_JJDIFKPGFIH),
+            "CmdRecommendType_LANKBINGOPB" => ::std::option::Option::Some(CmdRecommendType::CmdRecommendType_LANKBINGOPB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRecommendType] = &[
-        CmdRecommendType::OPIIOFPDBNC_GKJBAODJMJG,
-        CmdRecommendType::OPIIOFPDBNC_KMMMDFJIOAO,
-        CmdRecommendType::OPIIOFPDBNC_JECCJCCPHAC,
-        CmdRecommendType::OPIIOFPDBNC_NFMBKLHLHJM,
-        CmdRecommendType::OPIIOFPDBNC_JNIEHODJCNF,
+        CmdRecommendType::CmdRecommendType_MNFEPONEDDJ,
+        CmdRecommendType::CmdRecommendType_AOEHBPCGCFF,
+        CmdRecommendType::CmdRecommendType_POJPMBOJKPO,
+        CmdRecommendType::CmdRecommendType_JJDIFKPGFIH,
+        CmdRecommendType::CmdRecommendType_LANKBINGOPB,
     ];
 }
 
@@ -85,11 +85,11 @@ impl ::protobuf::EnumFull for CmdRecommendType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRecommendType::OPIIOFPDBNC_GKJBAODJMJG => 0,
-            CmdRecommendType::OPIIOFPDBNC_KMMMDFJIOAO => 1,
-            CmdRecommendType::OPIIOFPDBNC_JECCJCCPHAC => 2,
-            CmdRecommendType::OPIIOFPDBNC_NFMBKLHLHJM => 3,
-            CmdRecommendType::OPIIOFPDBNC_JNIEHODJCNF => 4,
+            CmdRecommendType::CmdRecommendType_MNFEPONEDDJ => 0,
+            CmdRecommendType::CmdRecommendType_AOEHBPCGCFF => 1,
+            CmdRecommendType::CmdRecommendType_POJPMBOJKPO => 2,
+            CmdRecommendType::CmdRecommendType_JJDIFKPGFIH => 3,
+            CmdRecommendType::CmdRecommendType_LANKBINGOPB => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,7 +97,7 @@ impl ::protobuf::EnumFull for CmdRecommendType {
 
 impl ::std::default::Default for CmdRecommendType {
     fn default() -> Self {
-        CmdRecommendType::OPIIOFPDBNC_GKJBAODJMJG
+        CmdRecommendType::CmdRecommendType_MNFEPONEDDJ
     }
 }
 
@@ -108,11 +108,11 @@ impl CmdRecommendType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdRecommendType.proto*\xa7\x01\n\x10CmdRecommendType\x12\x1b\n\
-    \x17OPIIOFPDBNC_GKJBAODJMJG\x10\0\x12\x1c\n\x17OPIIOFPDBNC_KMMMDFJIOAO\
-    \x10\xe8\x12\x12\x1c\n\x17OPIIOFPDBNC_JECCJCCPHAC\x10\x8f\x13\x12\x1c\n\
-    \x17OPIIOFPDBNC_NFMBKLHLHJM\x10\x83\x13\x12\x1c\n\x17OPIIOFPDBNC_JNIEHOD\
-    JCNF\x10\xe6\x12b\x06proto3\
+    \n\x16CmdRecommendType.proto*\xc0\x01\n\x10CmdRecommendType\x12\x20\n\
+    \x1cCmdRecommendType_MNFEPONEDDJ\x10\0\x12!\n\x1cCmdRecommendType_AOEHBP\
+    CGCFF\x10\xfe\x12\x12!\n\x1cCmdRecommendType_POJPMBOJKPO\x10\xf8\x12\x12\
+    !\n\x1cCmdRecommendType_JJDIFKPGFIH\x10\xe2\x12\x12!\n\x1cCmdRecommendTy\
+    pe_LANKBINGOPB\x10\xe7\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

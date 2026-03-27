@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FriendSimpleInfo {
     // message fields
+    // @@protoc_insertion_point(field:FriendSimpleInfo.is_marked)
+    pub is_marked: bool,
     // @@protoc_insertion_point(field:FriendSimpleInfo.playing_state)
     pub playing_state: ::protobuf::EnumOrUnknown<super::PlayingState::PlayingState>,
     // @@protoc_insertion_point(field:FriendSimpleInfo.create_time)
     pub create_time: i64,
-    // @@protoc_insertion_point(field:FriendSimpleInfo.remark_name)
-    pub remark_name: ::std::string::String,
-    // @@protoc_insertion_point(field:FriendSimpleInfo.is_marked)
-    pub is_marked: bool,
     // @@protoc_insertion_point(field:FriendSimpleInfo.player_info)
     pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
-    // @@protoc_insertion_point(field:FriendSimpleInfo.HPPEOBBHFMI)
-    pub HPPEOBBHFMI: ::protobuf::MessageField<super::BNNAENMMEMB::BNNAENMMEMB>,
+    // @@protoc_insertion_point(field:FriendSimpleInfo.OKLDBIFLMLP)
+    pub OKLDBIFLMLP: ::protobuf::MessageField<super::PDPMLNPMHFN::PDPMLNPMHFN>,
+    // @@protoc_insertion_point(field:FriendSimpleInfo.remark_name)
+    pub remark_name: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:FriendSimpleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,6 +60,11 @@ impl FriendSimpleInfo {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_marked",
+            |m: &FriendSimpleInfo| { &m.is_marked },
+            |m: &mut FriendSimpleInfo| { &mut m.is_marked },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "playing_state",
             |m: &FriendSimpleInfo| { &m.playing_state },
             |m: &mut FriendSimpleInfo| { &mut m.playing_state },
@@ -69,25 +74,20 @@ impl FriendSimpleInfo {
             |m: &FriendSimpleInfo| { &m.create_time },
             |m: &mut FriendSimpleInfo| { &mut m.create_time },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "remark_name",
-            |m: &FriendSimpleInfo| { &m.remark_name },
-            |m: &mut FriendSimpleInfo| { &mut m.remark_name },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_marked",
-            |m: &FriendSimpleInfo| { &m.is_marked },
-            |m: &mut FriendSimpleInfo| { &mut m.is_marked },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
             "player_info",
             |m: &FriendSimpleInfo| { &m.player_info },
             |m: &mut FriendSimpleInfo| { &mut m.player_info },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BNNAENMMEMB::BNNAENMMEMB>(
-            "HPPEOBBHFMI",
-            |m: &FriendSimpleInfo| { &m.HPPEOBBHFMI },
-            |m: &mut FriendSimpleInfo| { &mut m.HPPEOBBHFMI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PDPMLNPMHFN::PDPMLNPMHFN>(
+            "OKLDBIFLMLP",
+            |m: &FriendSimpleInfo| { &m.OKLDBIFLMLP },
+            |m: &mut FriendSimpleInfo| { &mut m.OKLDBIFLMLP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "remark_name",
+            |m: &FriendSimpleInfo| { &m.remark_name },
+            |m: &mut FriendSimpleInfo| { &mut m.remark_name },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FriendSimpleInfo>(
             "FriendSimpleInfo",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for FriendSimpleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.playing_state = is.read_enum_or_unknown()?;
-                },
-                88 => {
-                    self.create_time = is.read_int64()?;
-                },
-                98 => {
-                    self.remark_name = is.read_string()?;
-                },
-                8 => {
+                64 => {
                     self.is_marked = is.read_bool()?;
                 },
-                74 => {
+                40 => {
+                    self.playing_state = is.read_enum_or_unknown()?;
+                },
+                96 => {
+                    self.create_time = is.read_int64()?;
+                },
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HPPEOBBHFMI)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OKLDBIFLMLP)?;
+                },
+                34 => {
+                    self.remark_name = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,25 +137,25 @@ impl ::protobuf::Message for FriendSimpleInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.playing_state != ::protobuf::EnumOrUnknown::new(super::PlayingState::PlayingState::PLAYING_STATE_NONE) {
-            my_size += ::protobuf::rt::int32_size(2, self.playing_state.value());
-        }
-        if self.create_time != 0 {
-            my_size += ::protobuf::rt::int64_size(11, self.create_time);
-        }
-        if !self.remark_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.remark_name);
-        }
         if self.is_marked != false {
             my_size += 1 + 1;
+        }
+        if self.playing_state != ::protobuf::EnumOrUnknown::new(super::PlayingState::PlayingState::PLAYING_STATE_NONE) {
+            my_size += ::protobuf::rt::int32_size(5, self.playing_state.value());
+        }
+        if self.create_time != 0 {
+            my_size += ::protobuf::rt::int64_size(12, self.create_time);
         }
         if let Some(v) = self.player_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.HPPEOBBHFMI.as_ref() {
+        if let Some(v) = self.OKLDBIFLMLP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if !self.remark_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.remark_name);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for FriendSimpleInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.is_marked != false {
+            os.write_bool(8, self.is_marked)?;
+        }
         if self.playing_state != ::protobuf::EnumOrUnknown::new(super::PlayingState::PlayingState::PLAYING_STATE_NONE) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.playing_state))?;
+            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.playing_state))?;
         }
         if self.create_time != 0 {
-            os.write_int64(11, self.create_time)?;
-        }
-        if !self.remark_name.is_empty() {
-            os.write_string(12, &self.remark_name)?;
-        }
-        if self.is_marked != false {
-            os.write_bool(1, self.is_marked)?;
+            os.write_int64(12, self.create_time)?;
         }
         if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if let Some(v) = self.HPPEOBBHFMI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.OKLDBIFLMLP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
+        if !self.remark_name.is_empty() {
+            os.write_string(4, &self.remark_name)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for FriendSimpleInfo {
     }
 
     fn clear(&mut self) {
+        self.is_marked = false;
         self.playing_state = ::protobuf::EnumOrUnknown::new(super::PlayingState::PlayingState::PLAYING_STATE_NONE);
         self.create_time = 0;
-        self.remark_name.clear();
-        self.is_marked = false;
         self.player_info.clear();
-        self.HPPEOBBHFMI.clear();
+        self.OKLDBIFLMLP.clear();
+        self.remark_name.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FriendSimpleInfo {
         static instance: FriendSimpleInfo = FriendSimpleInfo {
+            is_marked: false,
             playing_state: ::protobuf::EnumOrUnknown::from_i32(0),
             create_time: 0,
-            remark_name: ::std::string::String::new(),
-            is_marked: false,
             player_info: ::protobuf::MessageField::none(),
-            HPPEOBBHFMI: ::protobuf::MessageField::none(),
+            OKLDBIFLMLP: ::protobuf::MessageField::none(),
+            remark_name: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,14 +239,14 @@ impl ::protobuf::reflect::ProtobufValue for FriendSimpleInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16FriendSimpleInfo.proto\x1a\x11BNNAENMMEMB.proto\x1a\x16PlayerSimpl\
+    \n\x16FriendSimpleInfo.proto\x1a\x11PDPMLNPMHFN.proto\x1a\x16PlayerSimpl\
     eInfo.proto\x1a\x12PlayingState.proto\"\x89\x02\n\x10FriendSimpleInfo\
-    \x122\n\rplaying_state\x18\x02\x20\x01(\x0e2\r.PlayingStateR\x0cplayingS\
-    tate\x12\x1f\n\x0bcreate_time\x18\x0b\x20\x01(\x03R\ncreateTime\x12\x1f\
-    \n\x0bremark_name\x18\x0c\x20\x01(\tR\nremarkName\x12\x1b\n\tis_marked\
-    \x18\x01\x20\x01(\x08R\x08isMarked\x122\n\x0bplayer_info\x18\t\x20\x01(\
-    \x0b2\x11.PlayerSimpleInfoR\nplayerInfo\x12.\n\x0bHPPEOBBHFMI\x18\x03\
-    \x20\x01(\x0b2\x0c.BNNAENMMEMBR\x0bHPPEOBBHFMIb\x06proto3\
+    \x12\x1b\n\tis_marked\x18\x08\x20\x01(\x08R\x08isMarked\x122\n\rplaying_\
+    state\x18\x05\x20\x01(\x0e2\r.PlayingStateR\x0cplayingState\x12\x1f\n\
+    \x0bcreate_time\x18\x0c\x20\x01(\x03R\ncreateTime\x122\n\x0bplayer_info\
+    \x18\r\x20\x01(\x0b2\x11.PlayerSimpleInfoR\nplayerInfo\x12.\n\x0bOKLDBIF\
+    LMLP\x18\x0b\x20\x01(\x0b2\x0c.PDPMLNPMHFNR\x0bOKLDBIFLMLP\x12\x1f\n\x0b\
+    remark_name\x18\x04\x20\x01(\tR\nremarkNameb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -264,7 +264,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::BNNAENMMEMB::file_descriptor().clone());
+            deps.push(super::PDPMLNPMHFN::file_descriptor().clone());
             deps.push(super::PlayerSimpleInfo::file_descriptor().clone());
             deps.push(super::PlayingState::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

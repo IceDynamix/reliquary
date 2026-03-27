@@ -30,10 +30,10 @@ pub struct SelectPhoneCaseScRsp {
     // message fields
     // @@protoc_insertion_point(field:SelectPhoneCaseScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SelectPhoneCaseScRsp.ODDHKMKLPBH)
-    pub ODDHKMKLPBH: u32,
     // @@protoc_insertion_point(field:SelectPhoneCaseScRsp.cur_phone_case)
     pub cur_phone_case: u32,
+    // @@protoc_insertion_point(field:SelectPhoneCaseScRsp.BBEDNBNBGBG)
+    pub BBEDNBNBGBG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SelectPhoneCaseScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl SelectPhoneCaseScRsp {
             |m: &mut SelectPhoneCaseScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODDHKMKLPBH",
-            |m: &SelectPhoneCaseScRsp| { &m.ODDHKMKLPBH },
-            |m: &mut SelectPhoneCaseScRsp| { &mut m.ODDHKMKLPBH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_phone_case",
             |m: &SelectPhoneCaseScRsp| { &m.cur_phone_case },
             |m: &mut SelectPhoneCaseScRsp| { &mut m.cur_phone_case },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BBEDNBNBGBG",
+            |m: &SelectPhoneCaseScRsp| { &m.BBEDNBNBGBG },
+            |m: &mut SelectPhoneCaseScRsp| { &mut m.BBEDNBNBGBG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectPhoneCaseScRsp>(
             "SelectPhoneCaseScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SelectPhoneCaseScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.ODDHKMKLPBH = is.read_uint32()?;
-                },
-                24 => {
+                88 => {
                     self.cur_phone_case = is.read_uint32()?;
+                },
+                112 => {
+                    self.BBEDNBNBGBG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SelectPhoneCaseScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
-        if self.ODDHKMKLPBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.ODDHKMKLPBH);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         if self.cur_phone_case != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.cur_phone_case);
+            my_size += ::protobuf::rt::uint32_size(11, self.cur_phone_case);
+        }
+        if self.BBEDNBNBGBG != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BBEDNBNBGBG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SelectPhoneCaseScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
-        }
-        if self.ODDHKMKLPBH != 0 {
-            os.write_uint32(14, self.ODDHKMKLPBH)?;
+            os.write_uint32(7, self.retcode)?;
         }
         if self.cur_phone_case != 0 {
-            os.write_uint32(3, self.cur_phone_case)?;
+            os.write_uint32(11, self.cur_phone_case)?;
+        }
+        if self.BBEDNBNBGBG != 0 {
+            os.write_uint32(14, self.BBEDNBNBGBG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for SelectPhoneCaseScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.ODDHKMKLPBH = 0;
         self.cur_phone_case = 0;
+        self.BBEDNBNBGBG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectPhoneCaseScRsp {
         static instance: SelectPhoneCaseScRsp = SelectPhoneCaseScRsp {
             retcode: 0,
-            ODDHKMKLPBH: 0,
             cur_phone_case: 0,
+            BBEDNBNBGBG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SelectPhoneCaseScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aSelectPhoneCaseScRsp.proto\"x\n\x14SelectPhoneCaseScRsp\x12\x18\n\
-    \x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\n\x0bODDHKMKLPBH\x18\
-    \x0e\x20\x01(\rR\x0bODDHKMKLPBH\x12$\n\x0ecur_phone_case\x18\x03\x20\x01\
-    (\rR\x0ccurPhoneCaseb\x06proto3\
+    \x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12$\n\x0ecur_phone_case\x18\
+    \x0b\x20\x01(\rR\x0ccurPhoneCase\x12\x20\n\x0bBBEDNBNBGBG\x18\x0e\x20\
+    \x01(\rR\x0bBBEDNBNBGBGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdExpeditionType)
 pub enum CmdExpeditionType {
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.HHMPEGGKLCH_GKJBAODJMJG)
-    HHMPEGGKLCH_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.HHMPEGGKLCH_FIPIAJEEMAP)
-    HHMPEGGKLCH_FIPIAJEEMAP = 2550,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.HHMPEGGKLCH_KLJDDAICIPB)
-    HHMPEGGKLCH_KLJDDAICIPB = 2520,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.HHMPEGGKLCH_EGLODAPBIDM)
-    HHMPEGGKLCH_EGLODAPBIDM = 2549,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.HHMPEGGKLCH_NDOGILDILDK)
-    HHMPEGGKLCH_NDOGILDILDK = 2508,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.HHMPEGGKLCH_IPKOEHKMIKD)
-    HHMPEGGKLCH_IPKOEHKMIKD = 2538,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.HHMPEGGKLCH_FCKAOCBAPGC)
-    HHMPEGGKLCH_FCKAOCBAPGC = 2501,
-    // @@protoc_insertion_point(enum_value:CmdExpeditionType.HHMPEGGKLCH_DHMIJIPMPLI)
-    HHMPEGGKLCH_DHMIJIPMPLI = 2519,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdExpeditionType_MNFEPONEDDJ)
+    CmdExpeditionType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdExpeditionType_DAGEFCANEDI)
+    CmdExpeditionType_DAGEFCANEDI = 2529,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdExpeditionType_GCLAAPNKIKB)
+    CmdExpeditionType_GCLAAPNKIKB = 2523,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdExpeditionType_GLMIHJKAPBA)
+    CmdExpeditionType_GLMIHJKAPBA = 2504,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdExpeditionType_DKDBBLJMAEJ)
+    CmdExpeditionType_DKDBBLJMAEJ = 2530,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdExpeditionType_DHCNIOEINMD)
+    CmdExpeditionType_DHCNIOEINMD = 2508,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdExpeditionType_BAMJCHGKKEP)
+    CmdExpeditionType_BAMJCHGKKEP = 2540,
+    // @@protoc_insertion_point(enum_value:CmdExpeditionType.CmdExpeditionType_PDAHLHEGICJ)
+    CmdExpeditionType_PDAHLHEGICJ = 2503,
 }
 
 impl ::protobuf::Enum for CmdExpeditionType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for CmdExpeditionType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdExpeditionType> {
         match value {
-            0 => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_GKJBAODJMJG),
-            2550 => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_FIPIAJEEMAP),
-            2520 => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_KLJDDAICIPB),
-            2549 => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_EGLODAPBIDM),
-            2508 => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_NDOGILDILDK),
-            2538 => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_IPKOEHKMIKD),
-            2501 => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_FCKAOCBAPGC),
-            2519 => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_DHMIJIPMPLI),
+            0 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_MNFEPONEDDJ),
+            2529 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_DAGEFCANEDI),
+            2523 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_GCLAAPNKIKB),
+            2504 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_GLMIHJKAPBA),
+            2530 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_DKDBBLJMAEJ),
+            2508 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_DHCNIOEINMD),
+            2540 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_BAMJCHGKKEP),
+            2503 => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_PDAHLHEGICJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdExpeditionType> {
         match str {
-            "HHMPEGGKLCH_GKJBAODJMJG" => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_GKJBAODJMJG),
-            "HHMPEGGKLCH_FIPIAJEEMAP" => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_FIPIAJEEMAP),
-            "HHMPEGGKLCH_KLJDDAICIPB" => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_KLJDDAICIPB),
-            "HHMPEGGKLCH_EGLODAPBIDM" => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_EGLODAPBIDM),
-            "HHMPEGGKLCH_NDOGILDILDK" => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_NDOGILDILDK),
-            "HHMPEGGKLCH_IPKOEHKMIKD" => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_IPKOEHKMIKD),
-            "HHMPEGGKLCH_FCKAOCBAPGC" => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_FCKAOCBAPGC),
-            "HHMPEGGKLCH_DHMIJIPMPLI" => ::std::option::Option::Some(CmdExpeditionType::HHMPEGGKLCH_DHMIJIPMPLI),
+            "CmdExpeditionType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_MNFEPONEDDJ),
+            "CmdExpeditionType_DAGEFCANEDI" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_DAGEFCANEDI),
+            "CmdExpeditionType_GCLAAPNKIKB" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_GCLAAPNKIKB),
+            "CmdExpeditionType_GLMIHJKAPBA" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_GLMIHJKAPBA),
+            "CmdExpeditionType_DKDBBLJMAEJ" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_DKDBBLJMAEJ),
+            "CmdExpeditionType_DHCNIOEINMD" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_DHCNIOEINMD),
+            "CmdExpeditionType_BAMJCHGKKEP" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_BAMJCHGKKEP),
+            "CmdExpeditionType_PDAHLHEGICJ" => ::std::option::Option::Some(CmdExpeditionType::CmdExpeditionType_PDAHLHEGICJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdExpeditionType] = &[
-        CmdExpeditionType::HHMPEGGKLCH_GKJBAODJMJG,
-        CmdExpeditionType::HHMPEGGKLCH_FIPIAJEEMAP,
-        CmdExpeditionType::HHMPEGGKLCH_KLJDDAICIPB,
-        CmdExpeditionType::HHMPEGGKLCH_EGLODAPBIDM,
-        CmdExpeditionType::HHMPEGGKLCH_NDOGILDILDK,
-        CmdExpeditionType::HHMPEGGKLCH_IPKOEHKMIKD,
-        CmdExpeditionType::HHMPEGGKLCH_FCKAOCBAPGC,
-        CmdExpeditionType::HHMPEGGKLCH_DHMIJIPMPLI,
+        CmdExpeditionType::CmdExpeditionType_MNFEPONEDDJ,
+        CmdExpeditionType::CmdExpeditionType_DAGEFCANEDI,
+        CmdExpeditionType::CmdExpeditionType_GCLAAPNKIKB,
+        CmdExpeditionType::CmdExpeditionType_GLMIHJKAPBA,
+        CmdExpeditionType::CmdExpeditionType_DKDBBLJMAEJ,
+        CmdExpeditionType::CmdExpeditionType_DHCNIOEINMD,
+        CmdExpeditionType::CmdExpeditionType_BAMJCHGKKEP,
+        CmdExpeditionType::CmdExpeditionType_PDAHLHEGICJ,
     ];
 }
 
@@ -100,14 +100,14 @@ impl ::protobuf::EnumFull for CmdExpeditionType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdExpeditionType::HHMPEGGKLCH_GKJBAODJMJG => 0,
-            CmdExpeditionType::HHMPEGGKLCH_FIPIAJEEMAP => 1,
-            CmdExpeditionType::HHMPEGGKLCH_KLJDDAICIPB => 2,
-            CmdExpeditionType::HHMPEGGKLCH_EGLODAPBIDM => 3,
-            CmdExpeditionType::HHMPEGGKLCH_NDOGILDILDK => 4,
-            CmdExpeditionType::HHMPEGGKLCH_IPKOEHKMIKD => 5,
-            CmdExpeditionType::HHMPEGGKLCH_FCKAOCBAPGC => 6,
-            CmdExpeditionType::HHMPEGGKLCH_DHMIJIPMPLI => 7,
+            CmdExpeditionType::CmdExpeditionType_MNFEPONEDDJ => 0,
+            CmdExpeditionType::CmdExpeditionType_DAGEFCANEDI => 1,
+            CmdExpeditionType::CmdExpeditionType_GCLAAPNKIKB => 2,
+            CmdExpeditionType::CmdExpeditionType_GLMIHJKAPBA => 3,
+            CmdExpeditionType::CmdExpeditionType_DKDBBLJMAEJ => 4,
+            CmdExpeditionType::CmdExpeditionType_DHCNIOEINMD => 5,
+            CmdExpeditionType::CmdExpeditionType_BAMJCHGKKEP => 6,
+            CmdExpeditionType::CmdExpeditionType_PDAHLHEGICJ => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,7 +115,7 @@ impl ::protobuf::EnumFull for CmdExpeditionType {
 
 impl ::std::default::Default for CmdExpeditionType {
     fn default() -> Self {
-        CmdExpeditionType::HHMPEGGKLCH_GKJBAODJMJG
+        CmdExpeditionType::CmdExpeditionType_MNFEPONEDDJ
     }
 }
 
@@ -126,13 +126,13 @@ impl CmdExpeditionType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdExpeditionType.proto*\x82\x02\n\x11CmdExpeditionType\x12\x1b\n\
-    \x17HHMPEGGKLCH_GKJBAODJMJG\x10\0\x12\x1c\n\x17HHMPEGGKLCH_FIPIAJEEMAP\
-    \x10\xf6\x13\x12\x1c\n\x17HHMPEGGKLCH_KLJDDAICIPB\x10\xd8\x13\x12\x1c\n\
-    \x17HHMPEGGKLCH_EGLODAPBIDM\x10\xf5\x13\x12\x1c\n\x17HHMPEGGKLCH_NDOGILD\
-    ILDK\x10\xcc\x13\x12\x1c\n\x17HHMPEGGKLCH_IPKOEHKMIKD\x10\xea\x13\x12\
-    \x1c\n\x17HHMPEGGKLCH_FCKAOCBAPGC\x10\xc5\x13\x12\x1c\n\x17HHMPEGGKLCH_D\
-    HMIJIPMPLI\x10\xd7\x13b\x06proto3\
+    \n\x17CmdExpeditionType.proto*\xb2\x02\n\x11CmdExpeditionType\x12!\n\x1d\
+    CmdExpeditionType_MNFEPONEDDJ\x10\0\x12\"\n\x1dCmdExpeditionType_DAGEFCA\
+    NEDI\x10\xe1\x13\x12\"\n\x1dCmdExpeditionType_GCLAAPNKIKB\x10\xdb\x13\
+    \x12\"\n\x1dCmdExpeditionType_GLMIHJKAPBA\x10\xc8\x13\x12\"\n\x1dCmdExpe\
+    ditionType_DKDBBLJMAEJ\x10\xe2\x13\x12\"\n\x1dCmdExpeditionType_DHCNIOEI\
+    NMD\x10\xcc\x13\x12\"\n\x1dCmdExpeditionType_BAMJCHGKKEP\x10\xec\x13\x12\
+    \"\n\x1dCmdExpeditionType_PDAHLHEGICJ\x10\xc7\x13b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

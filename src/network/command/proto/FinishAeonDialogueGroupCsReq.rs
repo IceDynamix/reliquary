@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishAeonDialogueGroupCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishAeonDialogueGroupCsReq.LOPGFCFCAGE)
-    pub LOPGFCFCAGE: u32,
+    // @@protoc_insertion_point(field:FinishAeonDialogueGroupCsReq.ENPIAPKLKNL)
+    pub ENPIAPKLKNL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishAeonDialogueGroupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FinishAeonDialogueGroupCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOPGFCFCAGE",
-            |m: &FinishAeonDialogueGroupCsReq| { &m.LOPGFCFCAGE },
-            |m: &mut FinishAeonDialogueGroupCsReq| { &mut m.LOPGFCFCAGE },
+            "ENPIAPKLKNL",
+            |m: &FinishAeonDialogueGroupCsReq| { &m.ENPIAPKLKNL },
+            |m: &mut FinishAeonDialogueGroupCsReq| { &mut m.ENPIAPKLKNL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishAeonDialogueGroupCsReq>(
             "FinishAeonDialogueGroupCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FinishAeonDialogueGroupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.LOPGFCFCAGE = is.read_uint32()?;
+                56 => {
+                    self.ENPIAPKLKNL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FinishAeonDialogueGroupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LOPGFCFCAGE != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LOPGFCFCAGE);
+        if self.ENPIAPKLKNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.ENPIAPKLKNL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FinishAeonDialogueGroupCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LOPGFCFCAGE != 0 {
-            os.write_uint32(13, self.LOPGFCFCAGE)?;
+        if self.ENPIAPKLKNL != 0 {
+            os.write_uint32(7, self.ENPIAPKLKNL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FinishAeonDialogueGroupCsReq {
     }
 
     fn clear(&mut self) {
-        self.LOPGFCFCAGE = 0;
+        self.ENPIAPKLKNL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishAeonDialogueGroupCsReq {
         static instance: FinishAeonDialogueGroupCsReq = FinishAeonDialogueGroupCsReq {
-            LOPGFCFCAGE: 0,
+            ENPIAPKLKNL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishAeonDialogueGroupCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"FinishAeonDialogueGroupCsReq.proto\"@\n\x1cFinishAeonDialogueGroupCs\
-    Req\x12\x20\n\x0bLOPGFCFCAGE\x18\r\x20\x01(\rR\x0bLOPGFCFCAGEb\x06proto3\
+    Req\x12\x20\n\x0bENPIAPKLKNL\x18\x07\x20\x01(\rR\x0bENPIAPKLKNLb\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

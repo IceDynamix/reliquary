@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightSystemInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightSystemInfo.PLOONDJPHAH)
-    pub PLOONDJPHAH: ::protobuf::MessageField<super::GridFightStaticGameInfo::GridFightStaticGameInfo>,
-    // @@protoc_insertion_point(field:GridFightSystemInfo.HFFFLKDDDCI)
-    pub HFFFLKDDDCI: ::protobuf::MessageField<super::ELHLHALGAGM::ELHLHALGAGM>,
+    // @@protoc_insertion_point(field:GridFightSystemInfo.FIGFGAIGGJB)
+    pub FIGFGAIGGJB: ::protobuf::MessageField<super::KPKCNCLOKFC::KPKCNCLOKFC>,
+    // @@protoc_insertion_point(field:GridFightSystemInfo.NDCIILBONPH)
+    pub NDCIILBONPH: ::protobuf::MessageField<super::GridFightStaticGameInfo::GridFightStaticGameInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightSystemInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GridFightSystemInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightStaticGameInfo::GridFightStaticGameInfo>(
-            "PLOONDJPHAH",
-            |m: &GridFightSystemInfo| { &m.PLOONDJPHAH },
-            |m: &mut GridFightSystemInfo| { &mut m.PLOONDJPHAH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPKCNCLOKFC::KPKCNCLOKFC>(
+            "FIGFGAIGGJB",
+            |m: &GridFightSystemInfo| { &m.FIGFGAIGGJB },
+            |m: &mut GridFightSystemInfo| { &mut m.FIGFGAIGGJB },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ELHLHALGAGM::ELHLHALGAGM>(
-            "HFFFLKDDDCI",
-            |m: &GridFightSystemInfo| { &m.HFFFLKDDDCI },
-            |m: &mut GridFightSystemInfo| { &mut m.HFFFLKDDDCI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightStaticGameInfo::GridFightStaticGameInfo>(
+            "NDCIILBONPH",
+            |m: &GridFightSystemInfo| { &m.NDCIILBONPH },
+            |m: &mut GridFightSystemInfo| { &mut m.NDCIILBONPH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightSystemInfo>(
             "GridFightSystemInfo",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GridFightSystemInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PLOONDJPHAH)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FIGFGAIGGJB)?;
                 },
-                18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HFFFLKDDDCI)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NDCIILBONPH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GridFightSystemInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PLOONDJPHAH.as_ref() {
+        if let Some(v) = self.FIGFGAIGGJB.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.HFFFLKDDDCI.as_ref() {
+        if let Some(v) = self.NDCIILBONPH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for GridFightSystemInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PLOONDJPHAH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.FIGFGAIGGJB.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if let Some(v) = self.HFFFLKDDDCI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        if let Some(v) = self.NDCIILBONPH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for GridFightSystemInfo {
     }
 
     fn clear(&mut self) {
-        self.PLOONDJPHAH.clear();
-        self.HFFFLKDDDCI.clear();
+        self.FIGFGAIGGJB.clear();
+        self.NDCIILBONPH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightSystemInfo {
         static instance: GridFightSystemInfo = GridFightSystemInfo {
-            PLOONDJPHAH: ::protobuf::MessageField::none(),
-            HFFFLKDDDCI: ::protobuf::MessageField::none(),
+            FIGFGAIGGJB: ::protobuf::MessageField::none(),
+            NDCIILBONPH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,11 +167,11 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSystemInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GridFightSystemInfo.proto\x1a\x11ELHLHALGAGM.proto\x1a\x1dGridFigh\
-    tStaticGameInfo.proto\"\x81\x01\n\x13GridFightSystemInfo\x12:\n\x0bPLOON\
-    DJPHAH\x18\n\x20\x01(\x0b2\x18.GridFightStaticGameInfoR\x0bPLOONDJPHAH\
-    \x12.\n\x0bHFFFLKDDDCI\x18\x02\x20\x01(\x0b2\x0c.ELHLHALGAGMR\x0bHFFFLKD\
-    DDCIb\x06proto3\
+    \n\x19GridFightSystemInfo.proto\x1a\x1dGridFightStaticGameInfo.proto\x1a\
+    \x11KPKCNCLOKFC.proto\"\x81\x01\n\x13GridFightSystemInfo\x12.\n\x0bFIGFG\
+    AIGGJB\x18\x05\x20\x01(\x0b2\x0c.KPKCNCLOKFCR\x0bFIGFGAIGGJB\x12:\n\x0bN\
+    DCIILBONPH\x18\x01\x20\x01(\x0b2\x18.GridFightStaticGameInfoR\x0bNDCIILB\
+    ONPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -189,8 +189,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ELHLHALGAGM::file_descriptor().clone());
             deps.push(super::GridFightStaticGameInfo::file_descriptor().clone());
+            deps.push(super::KPKCNCLOKFC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightSystemInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

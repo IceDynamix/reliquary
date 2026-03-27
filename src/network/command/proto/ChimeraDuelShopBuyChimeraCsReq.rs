@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelShopBuyChimeraCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelShopBuyChimeraCsReq.IHCGLPIOHHA)
-    pub IHCGLPIOHHA: u32,
-    // @@protoc_insertion_point(field:ChimeraDuelShopBuyChimeraCsReq.OADDAIFHNGA)
-    pub OADDAIFHNGA: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChimeraDuelShopBuyChimeraCsReq.MBOAIJLCGKK)
-    pub MBOAIJLCGKK: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelShopBuyChimeraCsReq.NGCJFJDHLMD)
+    pub NGCJFJDHLMD: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelShopBuyChimeraCsReq.CNIAMJCLBLF)
+    pub CNIAMJCLBLF: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelShopBuyChimeraCsReq.BMJBHHIGDPB)
+    pub BMJBHHIGDPB: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelShopBuyChimeraCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl ChimeraDuelShopBuyChimeraCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHCGLPIOHHA",
-            |m: &ChimeraDuelShopBuyChimeraCsReq| { &m.IHCGLPIOHHA },
-            |m: &mut ChimeraDuelShopBuyChimeraCsReq| { &mut m.IHCGLPIOHHA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OADDAIFHNGA",
-            |m: &ChimeraDuelShopBuyChimeraCsReq| { &m.OADDAIFHNGA },
-            |m: &mut ChimeraDuelShopBuyChimeraCsReq| { &mut m.OADDAIFHNGA },
+            "NGCJFJDHLMD",
+            |m: &ChimeraDuelShopBuyChimeraCsReq| { &m.NGCJFJDHLMD },
+            |m: &mut ChimeraDuelShopBuyChimeraCsReq| { &mut m.NGCJFJDHLMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBOAIJLCGKK",
-            |m: &ChimeraDuelShopBuyChimeraCsReq| { &m.MBOAIJLCGKK },
-            |m: &mut ChimeraDuelShopBuyChimeraCsReq| { &mut m.MBOAIJLCGKK },
+            "CNIAMJCLBLF",
+            |m: &ChimeraDuelShopBuyChimeraCsReq| { &m.CNIAMJCLBLF },
+            |m: &mut ChimeraDuelShopBuyChimeraCsReq| { &mut m.CNIAMJCLBLF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BMJBHHIGDPB",
+            |m: &ChimeraDuelShopBuyChimeraCsReq| { &m.BMJBHHIGDPB },
+            |m: &mut ChimeraDuelShopBuyChimeraCsReq| { &mut m.BMJBHHIGDPB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelShopBuyChimeraCsReq>(
             "ChimeraDuelShopBuyChimeraCsReq",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for ChimeraDuelShopBuyChimeraCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.IHCGLPIOHHA = is.read_uint32()?;
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OADDAIFHNGA)?;
-                },
-                112 => {
-                    self.OADDAIFHNGA.push(is.read_uint32()?);
+                96 => {
+                    self.NGCJFJDHLMD = is.read_uint32()?;
                 },
                 80 => {
-                    self.MBOAIJLCGKK = is.read_uint32()?;
+                    self.CNIAMJCLBLF = is.read_uint32()?;
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BMJBHHIGDPB)?;
+                },
+                40 => {
+                    self.BMJBHHIGDPB.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,26 +110,26 @@ impl ::protobuf::Message for ChimeraDuelShopBuyChimeraCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IHCGLPIOHHA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.IHCGLPIOHHA);
+        if self.NGCJFJDHLMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.NGCJFJDHLMD);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.OADDAIFHNGA);
-        if self.MBOAIJLCGKK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MBOAIJLCGKK);
+        if self.CNIAMJCLBLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.CNIAMJCLBLF);
         }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.BMJBHHIGDPB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IHCGLPIOHHA != 0 {
-            os.write_uint32(8, self.IHCGLPIOHHA)?;
+        if self.NGCJFJDHLMD != 0 {
+            os.write_uint32(12, self.NGCJFJDHLMD)?;
         }
-        os.write_repeated_packed_uint32(14, &self.OADDAIFHNGA)?;
-        if self.MBOAIJLCGKK != 0 {
-            os.write_uint32(10, self.MBOAIJLCGKK)?;
+        if self.CNIAMJCLBLF != 0 {
+            os.write_uint32(10, self.CNIAMJCLBLF)?;
         }
+        os.write_repeated_packed_uint32(5, &self.BMJBHHIGDPB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,17 +147,17 @@ impl ::protobuf::Message for ChimeraDuelShopBuyChimeraCsReq {
     }
 
     fn clear(&mut self) {
-        self.IHCGLPIOHHA = 0;
-        self.OADDAIFHNGA.clear();
-        self.MBOAIJLCGKK = 0;
+        self.NGCJFJDHLMD = 0;
+        self.CNIAMJCLBLF = 0;
+        self.BMJBHHIGDPB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelShopBuyChimeraCsReq {
         static instance: ChimeraDuelShopBuyChimeraCsReq = ChimeraDuelShopBuyChimeraCsReq {
-            IHCGLPIOHHA: 0,
-            OADDAIFHNGA: ::std::vec::Vec::new(),
-            MBOAIJLCGKK: 0,
+            NGCJFJDHLMD: 0,
+            CNIAMJCLBLF: 0,
+            BMJBHHIGDPB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelShopBuyChimeraCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$ChimeraDuelShopBuyChimeraCsReq.proto\"\x86\x01\n\x1eChimeraDuelShopBu\
-    yChimeraCsReq\x12\x20\n\x0bIHCGLPIOHHA\x18\x08\x20\x01(\rR\x0bIHCGLPIOHH\
-    A\x12\x20\n\x0bOADDAIFHNGA\x18\x0e\x20\x03(\rR\x0bOADDAIFHNGA\x12\x20\n\
-    \x0bMBOAIJLCGKK\x18\n\x20\x01(\rR\x0bMBOAIJLCGKKb\x06proto3\
+    yChimeraCsReq\x12\x20\n\x0bNGCJFJDHLMD\x18\x0c\x20\x01(\rR\x0bNGCJFJDHLM\
+    D\x12\x20\n\x0bCNIAMJCLBLF\x18\n\x20\x01(\rR\x0bCNIAMJCLBLF\x12\x20\n\
+    \x0bBMJBHHIGDPB\x18\x05\x20\x03(\rR\x0bBMJBHHIGDPBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

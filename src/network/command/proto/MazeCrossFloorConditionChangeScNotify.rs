@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MazeCrossFloorConditionChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MazeCrossFloorConditionChangeScNotify.JOFFBHJKBEA)
-    pub JOFFBHJKBEA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MazeCrossFloorConditionChangeScNotify.HJOILJACMEC)
+    pub HJOILJACMEC: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MazeCrossFloorConditionChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MazeCrossFloorConditionChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JOFFBHJKBEA",
-            |m: &MazeCrossFloorConditionChangeScNotify| { &m.JOFFBHJKBEA },
-            |m: &mut MazeCrossFloorConditionChangeScNotify| { &mut m.JOFFBHJKBEA },
+            "HJOILJACMEC",
+            |m: &MazeCrossFloorConditionChangeScNotify| { &m.HJOILJACMEC },
+            |m: &mut MazeCrossFloorConditionChangeScNotify| { &mut m.HJOILJACMEC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MazeCrossFloorConditionChangeScNotify>(
             "MazeCrossFloorConditionChangeScNotify",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for MazeCrossFloorConditionChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JOFFBHJKBEA)?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HJOILJACMEC)?;
                 },
-                64 => {
-                    self.JOFFBHJKBEA.push(is.read_uint32()?);
+                80 => {
+                    self.HJOILJACMEC.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for MazeCrossFloorConditionChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.JOFFBHJKBEA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.HJOILJACMEC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(8, &self.JOFFBHJKBEA)?;
+        os.write_repeated_packed_uint32(10, &self.HJOILJACMEC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for MazeCrossFloorConditionChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.JOFFBHJKBEA.clear();
+        self.HJOILJACMEC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MazeCrossFloorConditionChangeScNotify {
         static instance: MazeCrossFloorConditionChangeScNotify = MazeCrossFloorConditionChangeScNotify {
-            JOFFBHJKBEA: ::std::vec::Vec::new(),
+            HJOILJACMEC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for MazeCrossFloorConditionChangeScNotif
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+MazeCrossFloorConditionChangeScNotify.proto\"I\n%MazeCrossFloorCondit\
-    ionChangeScNotify\x12\x20\n\x0bJOFFBHJKBEA\x18\x08\x20\x03(\rR\x0bJOFFBH\
-    JKBEAb\x06proto3\
+    ionChangeScNotify\x12\x20\n\x0bHJOILJACMEC\x18\n\x20\x03(\rR\x0bHJOILJAC\
+    MECb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

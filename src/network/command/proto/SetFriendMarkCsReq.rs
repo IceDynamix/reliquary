@@ -30,8 +30,8 @@ pub struct SetFriendMarkCsReq {
     // message fields
     // @@protoc_insertion_point(field:SetFriendMarkCsReq.uid)
     pub uid: u32,
-    // @@protoc_insertion_point(field:SetFriendMarkCsReq.ACMECHLPHIL)
-    pub ACMECHLPHIL: bool,
+    // @@protoc_insertion_point(field:SetFriendMarkCsReq.OLCOHPHGDKK)
+    pub OLCOHPHGDKK: bool,
     // @@protoc_insertion_point(field:SetFriendMarkCsReq.reason)
     pub reason: u32,
     // special fields
@@ -59,9 +59,9 @@ impl SetFriendMarkCsReq {
             |m: &mut SetFriendMarkCsReq| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACMECHLPHIL",
-            |m: &SetFriendMarkCsReq| { &m.ACMECHLPHIL },
-            |m: &mut SetFriendMarkCsReq| { &mut m.ACMECHLPHIL },
+            "OLCOHPHGDKK",
+            |m: &SetFriendMarkCsReq| { &m.OLCOHPHGDKK },
+            |m: &mut SetFriendMarkCsReq| { &mut m.OLCOHPHGDKK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "reason",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                64 => {
                     self.uid = is.read_uint32()?;
                 },
-                64 => {
-                    self.ACMECHLPHIL = is.read_bool()?;
-                },
                 120 => {
+                    self.OLCOHPHGDKK = is.read_bool()?;
+                },
+                32 => {
                     self.reason = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.uid);
+            my_size += ::protobuf::rt::uint32_size(8, self.uid);
         }
-        if self.ACMECHLPHIL != false {
+        if self.OLCOHPHGDKK != false {
             my_size += 1 + 1;
         }
         if self.reason != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.reason);
+            my_size += ::protobuf::rt::uint32_size(4, self.reason);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.uid != 0 {
-            os.write_uint32(13, self.uid)?;
+            os.write_uint32(8, self.uid)?;
         }
-        if self.ACMECHLPHIL != false {
-            os.write_bool(8, self.ACMECHLPHIL)?;
+        if self.OLCOHPHGDKK != false {
+            os.write_bool(15, self.OLCOHPHGDKK)?;
         }
         if self.reason != 0 {
-            os.write_uint32(15, self.reason)?;
+            os.write_uint32(4, self.reason)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
 
     fn clear(&mut self) {
         self.uid = 0;
-        self.ACMECHLPHIL = false;
+        self.OLCOHPHGDKK = false;
         self.reason = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for SetFriendMarkCsReq {
     fn default_instance() -> &'static SetFriendMarkCsReq {
         static instance: SetFriendMarkCsReq = SetFriendMarkCsReq {
             uid: 0,
-            ACMECHLPHIL: false,
+            OLCOHPHGDKK: false,
             reason: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for SetFriendMarkCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetFriendMarkCsReq.proto\"`\n\x12SetFriendMarkCsReq\x12\x10\n\x03u\
-    id\x18\r\x20\x01(\rR\x03uid\x12\x20\n\x0bACMECHLPHIL\x18\x08\x20\x01(\
-    \x08R\x0bACMECHLPHIL\x12\x16\n\x06reason\x18\x0f\x20\x01(\rR\x06reasonb\
+    id\x18\x08\x20\x01(\rR\x03uid\x12\x20\n\x0bOLCOHPHGDKK\x18\x0f\x20\x01(\
+    \x08R\x0bOLCOHPHGDKK\x12\x16\n\x06reason\x18\x04\x20\x01(\rR\x06reasonb\
     \x06proto3\
 ";
 

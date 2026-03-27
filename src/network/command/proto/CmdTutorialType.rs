@@ -27,32 +27,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdTutorialType)
 pub enum CmdTutorialType {
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_GKJBAODJMJG)
-    LGIHEOCCFEK_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_NMKBJBMEIIG)
-    LGIHEOCCFEK_NMKBJBMEIIG = 1637,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_COOKPBFFCNB)
-    LGIHEOCCFEK_COOKPBFFCNB = 1675,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_GCEEMOHGKKK)
-    LGIHEOCCFEK_GCEEMOHGKKK = 1638,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_LDEMJMCABOL)
-    LGIHEOCCFEK_LDEMJMCABOL = 1657,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_OPFHFKIBMJP)
-    LGIHEOCCFEK_OPFHFKIBMJP = 1647,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_FCCFALIHCFF)
-    LGIHEOCCFEK_FCCFALIHCFF = 1626,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_KHGHBCCOFBO)
-    LGIHEOCCFEK_KHGHBCCOFBO = 1620,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_NEAABOEHDNE)
-    LGIHEOCCFEK_NEAABOEHDNE = 1662,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_NCNELEJFDAP)
-    LGIHEOCCFEK_NCNELEJFDAP = 1605,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_KCIEILHKEKK)
-    LGIHEOCCFEK_KCIEILHKEKK = 1669,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_FDCAONKECKI)
-    LGIHEOCCFEK_FDCAONKECKI = 1655,
-    // @@protoc_insertion_point(enum_value:CmdTutorialType.LGIHEOCCFEK_DFHLGNBKHOC)
-    LGIHEOCCFEK_DFHLGNBKHOC = 1628,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_MNFEPONEDDJ)
+    CmdTutorialType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_BPGPJLOMAKA)
+    CmdTutorialType_BPGPJLOMAKA = 1683,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_EJABFPBBFPN)
+    CmdTutorialType_EJABFPBBFPN = 1681,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_OLOHCHNCPOH)
+    CmdTutorialType_OLOHCHNCPOH = 1635,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_CFPLILHMAAN)
+    CmdTutorialType_CFPLILHMAAN = 1640,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_BGOBGFAFHMN)
+    CmdTutorialType_BGOBGFAFHMN = 1646,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_BMCINOJDNOM)
+    CmdTutorialType_BMCINOJDNOM = 1700,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_POCOPCNCPAC)
+    CmdTutorialType_POCOPCNCPAC = 1613,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_KCIIFOAHAIB)
+    CmdTutorialType_KCIIFOAHAIB = 1669,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_GMBDPOODMGO)
+    CmdTutorialType_GMBDPOODMGO = 1624,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_ECNLIOGDJGO)
+    CmdTutorialType_ECNLIOGDJGO = 1662,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_KPDBLLIMMOK)
+    CmdTutorialType_KPDBLLIMMOK = 1604,
+    // @@protoc_insertion_point(enum_value:CmdTutorialType.CmdTutorialType_BGJPHMJELCA)
+    CmdTutorialType_BGJPHMJELCA = 1657,
 }
 
 impl ::protobuf::Enum for CmdTutorialType {
@@ -64,56 +64,56 @@ impl ::protobuf::Enum for CmdTutorialType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdTutorialType> {
         match value {
-            0 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_GKJBAODJMJG),
-            1637 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_NMKBJBMEIIG),
-            1675 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_COOKPBFFCNB),
-            1638 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_GCEEMOHGKKK),
-            1657 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_LDEMJMCABOL),
-            1647 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_OPFHFKIBMJP),
-            1626 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_FCCFALIHCFF),
-            1620 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_KHGHBCCOFBO),
-            1662 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_NEAABOEHDNE),
-            1605 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_NCNELEJFDAP),
-            1669 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_KCIEILHKEKK),
-            1655 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_FDCAONKECKI),
-            1628 => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_DFHLGNBKHOC),
+            0 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_MNFEPONEDDJ),
+            1683 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_BPGPJLOMAKA),
+            1681 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_EJABFPBBFPN),
+            1635 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_OLOHCHNCPOH),
+            1640 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_CFPLILHMAAN),
+            1646 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_BGOBGFAFHMN),
+            1700 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_BMCINOJDNOM),
+            1613 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_POCOPCNCPAC),
+            1669 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_KCIIFOAHAIB),
+            1624 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_GMBDPOODMGO),
+            1662 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_ECNLIOGDJGO),
+            1604 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_KPDBLLIMMOK),
+            1657 => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_BGJPHMJELCA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdTutorialType> {
         match str {
-            "LGIHEOCCFEK_GKJBAODJMJG" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_GKJBAODJMJG),
-            "LGIHEOCCFEK_NMKBJBMEIIG" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_NMKBJBMEIIG),
-            "LGIHEOCCFEK_COOKPBFFCNB" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_COOKPBFFCNB),
-            "LGIHEOCCFEK_GCEEMOHGKKK" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_GCEEMOHGKKK),
-            "LGIHEOCCFEK_LDEMJMCABOL" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_LDEMJMCABOL),
-            "LGIHEOCCFEK_OPFHFKIBMJP" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_OPFHFKIBMJP),
-            "LGIHEOCCFEK_FCCFALIHCFF" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_FCCFALIHCFF),
-            "LGIHEOCCFEK_KHGHBCCOFBO" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_KHGHBCCOFBO),
-            "LGIHEOCCFEK_NEAABOEHDNE" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_NEAABOEHDNE),
-            "LGIHEOCCFEK_NCNELEJFDAP" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_NCNELEJFDAP),
-            "LGIHEOCCFEK_KCIEILHKEKK" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_KCIEILHKEKK),
-            "LGIHEOCCFEK_FDCAONKECKI" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_FDCAONKECKI),
-            "LGIHEOCCFEK_DFHLGNBKHOC" => ::std::option::Option::Some(CmdTutorialType::LGIHEOCCFEK_DFHLGNBKHOC),
+            "CmdTutorialType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_MNFEPONEDDJ),
+            "CmdTutorialType_BPGPJLOMAKA" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_BPGPJLOMAKA),
+            "CmdTutorialType_EJABFPBBFPN" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_EJABFPBBFPN),
+            "CmdTutorialType_OLOHCHNCPOH" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_OLOHCHNCPOH),
+            "CmdTutorialType_CFPLILHMAAN" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_CFPLILHMAAN),
+            "CmdTutorialType_BGOBGFAFHMN" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_BGOBGFAFHMN),
+            "CmdTutorialType_BMCINOJDNOM" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_BMCINOJDNOM),
+            "CmdTutorialType_POCOPCNCPAC" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_POCOPCNCPAC),
+            "CmdTutorialType_KCIIFOAHAIB" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_KCIIFOAHAIB),
+            "CmdTutorialType_GMBDPOODMGO" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_GMBDPOODMGO),
+            "CmdTutorialType_ECNLIOGDJGO" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_ECNLIOGDJGO),
+            "CmdTutorialType_KPDBLLIMMOK" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_KPDBLLIMMOK),
+            "CmdTutorialType_BGJPHMJELCA" => ::std::option::Option::Some(CmdTutorialType::CmdTutorialType_BGJPHMJELCA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTutorialType] = &[
-        CmdTutorialType::LGIHEOCCFEK_GKJBAODJMJG,
-        CmdTutorialType::LGIHEOCCFEK_NMKBJBMEIIG,
-        CmdTutorialType::LGIHEOCCFEK_COOKPBFFCNB,
-        CmdTutorialType::LGIHEOCCFEK_GCEEMOHGKKK,
-        CmdTutorialType::LGIHEOCCFEK_LDEMJMCABOL,
-        CmdTutorialType::LGIHEOCCFEK_OPFHFKIBMJP,
-        CmdTutorialType::LGIHEOCCFEK_FCCFALIHCFF,
-        CmdTutorialType::LGIHEOCCFEK_KHGHBCCOFBO,
-        CmdTutorialType::LGIHEOCCFEK_NEAABOEHDNE,
-        CmdTutorialType::LGIHEOCCFEK_NCNELEJFDAP,
-        CmdTutorialType::LGIHEOCCFEK_KCIEILHKEKK,
-        CmdTutorialType::LGIHEOCCFEK_FDCAONKECKI,
-        CmdTutorialType::LGIHEOCCFEK_DFHLGNBKHOC,
+        CmdTutorialType::CmdTutorialType_MNFEPONEDDJ,
+        CmdTutorialType::CmdTutorialType_BPGPJLOMAKA,
+        CmdTutorialType::CmdTutorialType_EJABFPBBFPN,
+        CmdTutorialType::CmdTutorialType_OLOHCHNCPOH,
+        CmdTutorialType::CmdTutorialType_CFPLILHMAAN,
+        CmdTutorialType::CmdTutorialType_BGOBGFAFHMN,
+        CmdTutorialType::CmdTutorialType_BMCINOJDNOM,
+        CmdTutorialType::CmdTutorialType_POCOPCNCPAC,
+        CmdTutorialType::CmdTutorialType_KCIIFOAHAIB,
+        CmdTutorialType::CmdTutorialType_GMBDPOODMGO,
+        CmdTutorialType::CmdTutorialType_ECNLIOGDJGO,
+        CmdTutorialType::CmdTutorialType_KPDBLLIMMOK,
+        CmdTutorialType::CmdTutorialType_BGJPHMJELCA,
     ];
 }
 
@@ -125,19 +125,19 @@ impl ::protobuf::EnumFull for CmdTutorialType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdTutorialType::LGIHEOCCFEK_GKJBAODJMJG => 0,
-            CmdTutorialType::LGIHEOCCFEK_NMKBJBMEIIG => 1,
-            CmdTutorialType::LGIHEOCCFEK_COOKPBFFCNB => 2,
-            CmdTutorialType::LGIHEOCCFEK_GCEEMOHGKKK => 3,
-            CmdTutorialType::LGIHEOCCFEK_LDEMJMCABOL => 4,
-            CmdTutorialType::LGIHEOCCFEK_OPFHFKIBMJP => 5,
-            CmdTutorialType::LGIHEOCCFEK_FCCFALIHCFF => 6,
-            CmdTutorialType::LGIHEOCCFEK_KHGHBCCOFBO => 7,
-            CmdTutorialType::LGIHEOCCFEK_NEAABOEHDNE => 8,
-            CmdTutorialType::LGIHEOCCFEK_NCNELEJFDAP => 9,
-            CmdTutorialType::LGIHEOCCFEK_KCIEILHKEKK => 10,
-            CmdTutorialType::LGIHEOCCFEK_FDCAONKECKI => 11,
-            CmdTutorialType::LGIHEOCCFEK_DFHLGNBKHOC => 12,
+            CmdTutorialType::CmdTutorialType_MNFEPONEDDJ => 0,
+            CmdTutorialType::CmdTutorialType_BPGPJLOMAKA => 1,
+            CmdTutorialType::CmdTutorialType_EJABFPBBFPN => 2,
+            CmdTutorialType::CmdTutorialType_OLOHCHNCPOH => 3,
+            CmdTutorialType::CmdTutorialType_CFPLILHMAAN => 4,
+            CmdTutorialType::CmdTutorialType_BGOBGFAFHMN => 5,
+            CmdTutorialType::CmdTutorialType_BMCINOJDNOM => 6,
+            CmdTutorialType::CmdTutorialType_POCOPCNCPAC => 7,
+            CmdTutorialType::CmdTutorialType_KCIIFOAHAIB => 8,
+            CmdTutorialType::CmdTutorialType_GMBDPOODMGO => 9,
+            CmdTutorialType::CmdTutorialType_ECNLIOGDJGO => 10,
+            CmdTutorialType::CmdTutorialType_KPDBLLIMMOK => 11,
+            CmdTutorialType::CmdTutorialType_BGJPHMJELCA => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -145,7 +145,7 @@ impl ::protobuf::EnumFull for CmdTutorialType {
 
 impl ::std::default::Default for CmdTutorialType {
     fn default() -> Self {
-        CmdTutorialType::LGIHEOCCFEK_GKJBAODJMJG
+        CmdTutorialType::CmdTutorialType_MNFEPONEDDJ
     }
 }
 
@@ -156,16 +156,17 @@ impl CmdTutorialType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdTutorialType.proto*\x96\x03\n\x0fCmdTutorialType\x12\x1b\n\x17L\
-    GIHEOCCFEK_GKJBAODJMJG\x10\0\x12\x1c\n\x17LGIHEOCCFEK_NMKBJBMEIIG\x10\
-    \xe5\x0c\x12\x1c\n\x17LGIHEOCCFEK_COOKPBFFCNB\x10\x8b\r\x12\x1c\n\x17LGI\
-    HEOCCFEK_GCEEMOHGKKK\x10\xe6\x0c\x12\x1c\n\x17LGIHEOCCFEK_LDEMJMCABOL\
-    \x10\xf9\x0c\x12\x1c\n\x17LGIHEOCCFEK_OPFHFKIBMJP\x10\xef\x0c\x12\x1c\n\
-    \x17LGIHEOCCFEK_FCCFALIHCFF\x10\xda\x0c\x12\x1c\n\x17LGIHEOCCFEK_KHGHBCC\
-    OFBO\x10\xd4\x0c\x12\x1c\n\x17LGIHEOCCFEK_NEAABOEHDNE\x10\xfe\x0c\x12\
-    \x1c\n\x17LGIHEOCCFEK_NCNELEJFDAP\x10\xc5\x0c\x12\x1c\n\x17LGIHEOCCFEK_K\
-    CIEILHKEKK\x10\x85\r\x12\x1c\n\x17LGIHEOCCFEK_FDCAONKECKI\x10\xf7\x0c\
-    \x12\x1c\n\x17LGIHEOCCFEK_DFHLGNBKHOC\x10\xdc\x0cb\x06proto3\
+    \n\x15CmdTutorialType.proto*\xca\x03\n\x0fCmdTutorialType\x12\x1f\n\x1bC\
+    mdTutorialType_MNFEPONEDDJ\x10\0\x12\x20\n\x1bCmdTutorialType_BPGPJLOMAK\
+    A\x10\x93\r\x12\x20\n\x1bCmdTutorialType_EJABFPBBFPN\x10\x91\r\x12\x20\n\
+    \x1bCmdTutorialType_OLOHCHNCPOH\x10\xe3\x0c\x12\x20\n\x1bCmdTutorialType\
+    _CFPLILHMAAN\x10\xe8\x0c\x12\x20\n\x1bCmdTutorialType_BGOBGFAFHMN\x10\
+    \xee\x0c\x12\x20\n\x1bCmdTutorialType_BMCINOJDNOM\x10\xa4\r\x12\x20\n\
+    \x1bCmdTutorialType_POCOPCNCPAC\x10\xcd\x0c\x12\x20\n\x1bCmdTutorialType\
+    _KCIIFOAHAIB\x10\x85\r\x12\x20\n\x1bCmdTutorialType_GMBDPOODMGO\x10\xd8\
+    \x0c\x12\x20\n\x1bCmdTutorialType_ECNLIOGDJGO\x10\xfe\x0c\x12\x20\n\x1bC\
+    mdTutorialType_KPDBLLIMMOK\x10\xc4\x0c\x12\x20\n\x1bCmdTutorialType_BGJP\
+    HMJELCA\x10\xf9\x0cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

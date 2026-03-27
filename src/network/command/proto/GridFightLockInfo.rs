@@ -79,10 +79,10 @@ impl ::protobuf::Message for GridFightLockInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                88 => {
                     self.lock_type = is.read_enum_or_unknown()?;
                 },
-                8 => {
+                32 => {
                     self.lock_reason = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GridFightLockInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.lock_type != ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB) {
-            my_size += ::protobuf::rt::int32_size(13, self.lock_type.value());
+        if self.lock_type != ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::GridFightLockType_LCKDDLJAOHM) {
+            my_size += ::protobuf::rt::int32_size(11, self.lock_type.value());
         }
-        if self.lock_reason != ::protobuf::EnumOrUnknown::new(super::GridFightLockReason::GridFightLockReason::ABJANAJPELC_HCNPDBGIFPO) {
-            my_size += ::protobuf::rt::int32_size(1, self.lock_reason.value());
+        if self.lock_reason != ::protobuf::EnumOrUnknown::new(super::GridFightLockReason::GridFightLockReason::GridFightLockReason_EFDBPHKPJKH) {
+            my_size += ::protobuf::rt::int32_size(4, self.lock_reason.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GridFightLockInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.lock_type != ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.lock_type))?;
+        if self.lock_type != ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::GridFightLockType_LCKDDLJAOHM) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.lock_type))?;
         }
-        if self.lock_reason != ::protobuf::EnumOrUnknown::new(super::GridFightLockReason::GridFightLockReason::ABJANAJPELC_HCNPDBGIFPO) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.lock_reason))?;
+        if self.lock_reason != ::protobuf::EnumOrUnknown::new(super::GridFightLockReason::GridFightLockReason::GridFightLockReason_EFDBPHKPJKH) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.lock_reason))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,8 +132,8 @@ impl ::protobuf::Message for GridFightLockInfo {
     }
 
     fn clear(&mut self) {
-        self.lock_type = ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB);
-        self.lock_reason = ::protobuf::EnumOrUnknown::new(super::GridFightLockReason::GridFightLockReason::ABJANAJPELC_HCNPDBGIFPO);
+        self.lock_type = ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::GridFightLockType_LCKDDLJAOHM);
+        self.lock_reason = ::protobuf::EnumOrUnknown::new(super::GridFightLockReason::GridFightLockReason::GridFightLockReason_EFDBPHKPJKH);
         self.special_fields.clear();
     }
 
@@ -166,9 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GridFightLockInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GridFightLockInfo.proto\x1a\x19GridFightLockReason.proto\x1a\x17Gr\
-    idFightLockType.proto\"{\n\x11GridFightLockInfo\x12/\n\tlock_type\x18\r\
-    \x20\x01(\x0e2\x12.GridFightLockTypeR\x08lockType\x125\n\x0block_reason\
-    \x18\x01\x20\x01(\x0e2\x14.GridFightLockReasonR\nlockReasonb\x06proto3\
+    idFightLockType.proto\"{\n\x11GridFightLockInfo\x12/\n\tlock_type\x18\
+    \x0b\x20\x01(\x0e2\x12.GridFightLockTypeR\x08lockType\x125\n\x0block_rea\
+    son\x18\x04\x20\x01(\x0e2\x14.GridFightLockReasonR\nlockReasonb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

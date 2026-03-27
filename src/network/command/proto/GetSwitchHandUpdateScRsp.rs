@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSwitchHandUpdateScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetSwitchHandUpdateScRsp.IILLGJKEOGC)
+    pub IILLGJKEOGC: ::protobuf::MessageField<super::MFJODIAILFL::MFJODIAILFL>,
     // @@protoc_insertion_point(field:GetSwitchHandUpdateScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetSwitchHandUpdateScRsp.ALOHEJACLLN)
-    pub ALOHEJACLLN: ::protobuf::MessageField<super::CNIADJCLKKF::CNIADJCLKKF>,
-    // @@protoc_insertion_point(field:GetSwitchHandUpdateScRsp.GNHGNIGGOBF)
-    pub GNHGNIGGOBF: ::protobuf::MessageField<super::BLGGKBFPOPD::BLGGKBFPOPD>,
+    // @@protoc_insertion_point(field:GetSwitchHandUpdateScRsp.FJEKJOFCGBJ)
+    pub FJEKJOFCGBJ: ::protobuf::MessageField<super::GOPPKKEGPPG::GOPPKKEGPPG>,
     // special fields
     // @@protoc_insertion_point(special_field:GetSwitchHandUpdateScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl GetSwitchHandUpdateScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MFJODIAILFL::MFJODIAILFL>(
+            "IILLGJKEOGC",
+            |m: &GetSwitchHandUpdateScRsp| { &m.IILLGJKEOGC },
+            |m: &mut GetSwitchHandUpdateScRsp| { &mut m.IILLGJKEOGC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSwitchHandUpdateScRsp| { &m.retcode },
             |m: &mut GetSwitchHandUpdateScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CNIADJCLKKF::CNIADJCLKKF>(
-            "ALOHEJACLLN",
-            |m: &GetSwitchHandUpdateScRsp| { &m.ALOHEJACLLN },
-            |m: &mut GetSwitchHandUpdateScRsp| { &mut m.ALOHEJACLLN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BLGGKBFPOPD::BLGGKBFPOPD>(
-            "GNHGNIGGOBF",
-            |m: &GetSwitchHandUpdateScRsp| { &m.GNHGNIGGOBF },
-            |m: &mut GetSwitchHandUpdateScRsp| { &mut m.GNHGNIGGOBF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GOPPKKEGPPG::GOPPKKEGPPG>(
+            "FJEKJOFCGBJ",
+            |m: &GetSwitchHandUpdateScRsp| { &m.FJEKJOFCGBJ },
+            |m: &mut GetSwitchHandUpdateScRsp| { &mut m.FJEKJOFCGBJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSwitchHandUpdateScRsp>(
             "GetSwitchHandUpdateScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetSwitchHandUpdateScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IILLGJKEOGC)?;
+                },
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALOHEJACLLN)?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GNHGNIGGOBF)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FJEKJOFCGBJ)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GetSwitchHandUpdateScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        if let Some(v) = self.ALOHEJACLLN.as_ref() {
+        if let Some(v) = self.IILLGJKEOGC.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.GNHGNIGGOBF.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+        }
+        if let Some(v) = self.FJEKJOFCGBJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -124,14 +124,14 @@ impl ::protobuf::Message for GetSwitchHandUpdateScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.IILLGJKEOGC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
-        if let Some(v) = self.ALOHEJACLLN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if let Some(v) = self.GNHGNIGGOBF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.FJEKJOFCGBJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for GetSwitchHandUpdateScRsp {
     }
 
     fn clear(&mut self) {
+        self.IILLGJKEOGC.clear();
         self.retcode = 0;
-        self.ALOHEJACLLN.clear();
-        self.GNHGNIGGOBF.clear();
+        self.FJEKJOFCGBJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSwitchHandUpdateScRsp {
         static instance: GetSwitchHandUpdateScRsp = GetSwitchHandUpdateScRsp {
+            IILLGJKEOGC: ::protobuf::MessageField::none(),
             retcode: 0,
-            ALOHEJACLLN: ::protobuf::MessageField::none(),
-            GNHGNIGGOBF: ::protobuf::MessageField::none(),
+            FJEKJOFCGBJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for GetSwitchHandUpdateScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGetSwitchHandUpdateScRsp.proto\x1a\x11BLGGKBFPOPD.proto\x1a\x11CNI\
-    ADJCLKKF.proto\"\x94\x01\n\x18GetSwitchHandUpdateScRsp\x12\x18\n\x07retc\
-    ode\x18\x01\x20\x01(\rR\x07retcode\x12.\n\x0bALOHEJACLLN\x18\x0b\x20\x01\
-    (\x0b2\x0c.CNIADJCLKKFR\x0bALOHEJACLLN\x12.\n\x0bGNHGNIGGOBF\x18\n\x20\
-    \x01(\x0b2\x0c.BLGGKBFPOPDR\x0bGNHGNIGGOBFb\x06proto3\
+    \n\x1eGetSwitchHandUpdateScRsp.proto\x1a\x11GOPPKKEGPPG.proto\x1a\x11MFJ\
+    ODIAILFL.proto\"\x94\x01\n\x18GetSwitchHandUpdateScRsp\x12.\n\x0bIILLGJK\
+    EOGC\x18\x07\x20\x01(\x0b2\x0c.MFJODIAILFLR\x0bIILLGJKEOGC\x12\x18\n\x07\
+    retcode\x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bFJEKJOFCGBJ\x18\x06\x20\
+    \x01(\x0b2\x0c.GOPPKKEGPPGR\x0bFJEKJOFCGBJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BLGGKBFPOPD::file_descriptor().clone());
-            deps.push(super::CNIADJCLKKF::file_descriptor().clone());
+            deps.push(super::GOPPKKEGPPG::file_descriptor().clone());
+            deps.push(super::MFJODIAILFL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSwitchHandUpdateScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

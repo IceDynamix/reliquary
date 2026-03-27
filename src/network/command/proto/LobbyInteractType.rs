@@ -27,10 +27,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:LobbyInteractType)
 pub enum LobbyInteractType {
-    // @@protoc_insertion_point(enum_value:LobbyInteractType.KLBLCIOICIP_GKJBAODJMJG)
-    KLBLCIOICIP_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:LobbyInteractType.KLBLCIOICIP_JKNJJIDFEPI)
-    KLBLCIOICIP_JKNJJIDFEPI = 1,
+    // @@protoc_insertion_point(enum_value:LobbyInteractType.LobbyInteractType_MNFEPONEDDJ)
+    LobbyInteractType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:LobbyInteractType.LobbyInteractType_HEENHCAKNEC)
+    LobbyInteractType_HEENHCAKNEC = 1,
 }
 
 impl ::protobuf::Enum for LobbyInteractType {
@@ -42,23 +42,23 @@ impl ::protobuf::Enum for LobbyInteractType {
 
     fn from_i32(value: i32) -> ::std::option::Option<LobbyInteractType> {
         match value {
-            0 => ::std::option::Option::Some(LobbyInteractType::KLBLCIOICIP_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(LobbyInteractType::KLBLCIOICIP_JKNJJIDFEPI),
+            0 => ::std::option::Option::Some(LobbyInteractType::LobbyInteractType_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(LobbyInteractType::LobbyInteractType_HEENHCAKNEC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<LobbyInteractType> {
         match str {
-            "KLBLCIOICIP_GKJBAODJMJG" => ::std::option::Option::Some(LobbyInteractType::KLBLCIOICIP_GKJBAODJMJG),
-            "KLBLCIOICIP_JKNJJIDFEPI" => ::std::option::Option::Some(LobbyInteractType::KLBLCIOICIP_JKNJJIDFEPI),
+            "LobbyInteractType_MNFEPONEDDJ" => ::std::option::Option::Some(LobbyInteractType::LobbyInteractType_MNFEPONEDDJ),
+            "LobbyInteractType_HEENHCAKNEC" => ::std::option::Option::Some(LobbyInteractType::LobbyInteractType_HEENHCAKNEC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [LobbyInteractType] = &[
-        LobbyInteractType::KLBLCIOICIP_GKJBAODJMJG,
-        LobbyInteractType::KLBLCIOICIP_JKNJJIDFEPI,
+        LobbyInteractType::LobbyInteractType_MNFEPONEDDJ,
+        LobbyInteractType::LobbyInteractType_HEENHCAKNEC,
     ];
 }
 
@@ -76,7 +76,7 @@ impl ::protobuf::EnumFull for LobbyInteractType {
 
 impl ::std::default::Default for LobbyInteractType {
     fn default() -> Self {
-        LobbyInteractType::KLBLCIOICIP_GKJBAODJMJG
+        LobbyInteractType::LobbyInteractType_MNFEPONEDDJ
     }
 }
 
@@ -87,9 +87,9 @@ impl LobbyInteractType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17LobbyInteractType.proto*M\n\x11LobbyInteractType\x12\x1b\n\x17KLBL\
-    CIOICIP_GKJBAODJMJG\x10\0\x12\x1b\n\x17KLBLCIOICIP_JKNJJIDFEPI\x10\x01b\
-    \x06proto3\
+    \n\x17LobbyInteractType.proto*Y\n\x11LobbyInteractType\x12!\n\x1dLobbyIn\
+    teractType_MNFEPONEDDJ\x10\0\x12!\n\x1dLobbyInteractType_HEENHCAKNEC\x10\
+    \x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MatchThreeSyncDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MatchThreeSyncDataScNotify.DPLCCEIPIHE)
-    pub DPLCCEIPIHE: ::protobuf::MessageField<super::DDNBOMICDNK::DDNBOMICDNK>,
+    // @@protoc_insertion_point(field:MatchThreeSyncDataScNotify.NLFGIHFPMPO)
+    pub NLFGIHFPMPO: ::protobuf::MessageField<super::PJMDLFJMENC::PJMDLFJMENC>,
     // special fields
     // @@protoc_insertion_point(special_field:MatchThreeSyncDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl MatchThreeSyncDataScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DDNBOMICDNK::DDNBOMICDNK>(
-            "DPLCCEIPIHE",
-            |m: &MatchThreeSyncDataScNotify| { &m.DPLCCEIPIHE },
-            |m: &mut MatchThreeSyncDataScNotify| { &mut m.DPLCCEIPIHE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PJMDLFJMENC::PJMDLFJMENC>(
+            "NLFGIHFPMPO",
+            |m: &MatchThreeSyncDataScNotify| { &m.NLFGIHFPMPO },
+            |m: &mut MatchThreeSyncDataScNotify| { &mut m.NLFGIHFPMPO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MatchThreeSyncDataScNotify>(
             "MatchThreeSyncDataScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MatchThreeSyncDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DPLCCEIPIHE)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NLFGIHFPMPO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MatchThreeSyncDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DPLCCEIPIHE.as_ref() {
+        if let Some(v) = self.NLFGIHFPMPO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MatchThreeSyncDataScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DPLCCEIPIHE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.NLFGIHFPMPO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MatchThreeSyncDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.DPLCCEIPIHE.clear();
+        self.NLFGIHFPMPO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MatchThreeSyncDataScNotify {
         static instance: MatchThreeSyncDataScNotify = MatchThreeSyncDataScNotify {
-            DPLCCEIPIHE: ::protobuf::MessageField::none(),
+            NLFGIHFPMPO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for MatchThreeSyncDataScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20MatchThreeSyncDataScNotify.proto\x1a\x11DDNBOMICDNK.proto\"L\n\x1a\
-    MatchThreeSyncDataScNotify\x12.\n\x0bDPLCCEIPIHE\x18\x07\x20\x01(\x0b2\
-    \x0c.DDNBOMICDNKR\x0bDPLCCEIPIHEb\x06proto3\
+    \n\x20MatchThreeSyncDataScNotify.proto\x1a\x11PJMDLFJMENC.proto\"L\n\x1a\
+    MatchThreeSyncDataScNotify\x12.\n\x0bNLFGIHFPMPO\x18\r\x20\x01(\x0b2\x0c\
+    .PJMDLFJMENCR\x0bNLFGIHFPMPOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DDNBOMICDNK::file_descriptor().clone());
+            deps.push(super::PJMDLFJMENC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MatchThreeSyncDataScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

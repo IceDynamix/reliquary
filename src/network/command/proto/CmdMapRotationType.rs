@@ -27,48 +27,48 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMapRotationType)
 pub enum CmdMapRotationType {
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_GKJBAODJMJG)
-    HMBFBBLHJLO_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_PAMKJDAFPPM)
-    HMBFBBLHJLO_PAMKJDAFPPM = 6855,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_ENLEILDMFOC)
-    HMBFBBLHJLO_ENLEILDMFOC = 6866,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_OCBBNLHNLDO)
-    HMBFBBLHJLO_OCBBNLHNLDO = 6837,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_ONKFMKHMAID)
-    HMBFBBLHJLO_ONKFMKHMAID = 6889,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_EPEBFOIPDML)
-    HMBFBBLHJLO_EPEBFOIPDML = 6875,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_KOMCIFAMPDH)
-    HMBFBBLHJLO_KOMCIFAMPDH = 6826,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_DDACKMEFGLP)
-    HMBFBBLHJLO_DDACKMEFGLP = 6845,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_MHKPHINAMCF)
-    HMBFBBLHJLO_MHKPHINAMCF = 6893,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_JIGBNLHMNAP)
-    HMBFBBLHJLO_JIGBNLHMNAP = 6834,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_PGAMHPJPLBP)
-    HMBFBBLHJLO_PGAMHPJPLBP = 6895,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_MFLCEELCMOJ)
-    HMBFBBLHJLO_MFLCEELCMOJ = 6862,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_AIOJIMLKONI)
-    HMBFBBLHJLO_AIOJIMLKONI = 6847,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_HILIEMFPEMJ)
-    HMBFBBLHJLO_HILIEMFPEMJ = 6857,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_MJJCHELPHNA)
-    HMBFBBLHJLO_MJJCHELPHNA = 6869,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_PKBIGHGPIEA)
-    HMBFBBLHJLO_PKBIGHGPIEA = 6820,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_DPNMJDEILCH)
-    HMBFBBLHJLO_DPNMJDEILCH = 6805,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_FONGENEFMFA)
-    HMBFBBLHJLO_FONGENEFMFA = 6838,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_BCHOONLCECO)
-    HMBFBBLHJLO_BCHOONLCECO = 6883,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_FPNCBHAGNLN)
-    HMBFBBLHJLO_FPNCBHAGNLN = 6879,
-    // @@protoc_insertion_point(enum_value:CmdMapRotationType.HMBFBBLHJLO_MOLNBOKBEKP)
-    HMBFBBLHJLO_MOLNBOKBEKP = 6828,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_MNFEPONEDDJ)
+    CmdMapRotationType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_PJIPBKEABEN)
+    CmdMapRotationType_PJIPBKEABEN = 6819,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_CJFPPCPDAEK)
+    CmdMapRotationType_CJFPPCPDAEK = 6824,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_MPENIJFDDAC)
+    CmdMapRotationType_MPENIJFDDAC = 6804,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_HLLHDOOJGJG)
+    CmdMapRotationType_HLLHDOOJGJG = 6888,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_MKCPAHAFBPJ)
+    CmdMapRotationType_MKCPAHAFBPJ = 6813,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_EHPCLFMLNJO)
+    CmdMapRotationType_EHPCLFMLNJO = 6856,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_NPPPIJEMEPH)
+    CmdMapRotationType_NPPPIJEMEPH = 6884,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_NBBEIOFLIKA)
+    CmdMapRotationType_NBBEIOFLIKA = 6869,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_IAIEFKEMDKA)
+    CmdMapRotationType_IAIEFKEMDKA = 6840,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_JFAJHLNCAAA)
+    CmdMapRotationType_JFAJHLNCAAA = 6881,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_IMBGOJAMAHC)
+    CmdMapRotationType_IMBGOJAMAHC = 6834,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_IFIPBPNIJCO)
+    CmdMapRotationType_IFIPBPNIJCO = 6857,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_BCBNHIPDING)
+    CmdMapRotationType_BCBNHIPDING = 6883,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_BIDFGPPDGML)
+    CmdMapRotationType_BIDFGPPDGML = 6886,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_AMOBMLGMKLC)
+    CmdMapRotationType_AMOBMLGMKLC = 6862,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_KAFKJLHMNGD)
+    CmdMapRotationType_KAFKJLHMNGD = 6823,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_CAIMLGCJPDL)
+    CmdMapRotationType_CAIMLGCJPDL = 6900,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_HCBECMPICCM)
+    CmdMapRotationType_HCBECMPICCM = 6835,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_MKFPFJMBGDM)
+    CmdMapRotationType_MKFPFJMBGDM = 6848,
+    // @@protoc_insertion_point(enum_value:CmdMapRotationType.CmdMapRotationType_LPIAKJLHBEH)
+    CmdMapRotationType_LPIAKJLHBEH = 6846,
 }
 
 impl ::protobuf::Enum for CmdMapRotationType {
@@ -80,80 +80,80 @@ impl ::protobuf::Enum for CmdMapRotationType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMapRotationType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_GKJBAODJMJG),
-            6855 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_PAMKJDAFPPM),
-            6866 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_ENLEILDMFOC),
-            6837 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_OCBBNLHNLDO),
-            6889 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_ONKFMKHMAID),
-            6875 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_EPEBFOIPDML),
-            6826 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_KOMCIFAMPDH),
-            6845 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_DDACKMEFGLP),
-            6893 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_MHKPHINAMCF),
-            6834 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_JIGBNLHMNAP),
-            6895 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_PGAMHPJPLBP),
-            6862 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_MFLCEELCMOJ),
-            6847 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_AIOJIMLKONI),
-            6857 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_HILIEMFPEMJ),
-            6869 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_MJJCHELPHNA),
-            6820 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_PKBIGHGPIEA),
-            6805 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_DPNMJDEILCH),
-            6838 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_FONGENEFMFA),
-            6883 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_BCHOONLCECO),
-            6879 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_FPNCBHAGNLN),
-            6828 => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_MOLNBOKBEKP),
+            0 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_MNFEPONEDDJ),
+            6819 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_PJIPBKEABEN),
+            6824 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_CJFPPCPDAEK),
+            6804 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_MPENIJFDDAC),
+            6888 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_HLLHDOOJGJG),
+            6813 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_MKCPAHAFBPJ),
+            6856 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_EHPCLFMLNJO),
+            6884 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_NPPPIJEMEPH),
+            6869 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_NBBEIOFLIKA),
+            6840 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_IAIEFKEMDKA),
+            6881 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_JFAJHLNCAAA),
+            6834 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_IMBGOJAMAHC),
+            6857 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_IFIPBPNIJCO),
+            6883 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_BCBNHIPDING),
+            6886 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_BIDFGPPDGML),
+            6862 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_AMOBMLGMKLC),
+            6823 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_KAFKJLHMNGD),
+            6900 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_CAIMLGCJPDL),
+            6835 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_HCBECMPICCM),
+            6848 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_MKFPFJMBGDM),
+            6846 => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_LPIAKJLHBEH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMapRotationType> {
         match str {
-            "HMBFBBLHJLO_GKJBAODJMJG" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_GKJBAODJMJG),
-            "HMBFBBLHJLO_PAMKJDAFPPM" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_PAMKJDAFPPM),
-            "HMBFBBLHJLO_ENLEILDMFOC" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_ENLEILDMFOC),
-            "HMBFBBLHJLO_OCBBNLHNLDO" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_OCBBNLHNLDO),
-            "HMBFBBLHJLO_ONKFMKHMAID" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_ONKFMKHMAID),
-            "HMBFBBLHJLO_EPEBFOIPDML" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_EPEBFOIPDML),
-            "HMBFBBLHJLO_KOMCIFAMPDH" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_KOMCIFAMPDH),
-            "HMBFBBLHJLO_DDACKMEFGLP" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_DDACKMEFGLP),
-            "HMBFBBLHJLO_MHKPHINAMCF" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_MHKPHINAMCF),
-            "HMBFBBLHJLO_JIGBNLHMNAP" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_JIGBNLHMNAP),
-            "HMBFBBLHJLO_PGAMHPJPLBP" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_PGAMHPJPLBP),
-            "HMBFBBLHJLO_MFLCEELCMOJ" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_MFLCEELCMOJ),
-            "HMBFBBLHJLO_AIOJIMLKONI" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_AIOJIMLKONI),
-            "HMBFBBLHJLO_HILIEMFPEMJ" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_HILIEMFPEMJ),
-            "HMBFBBLHJLO_MJJCHELPHNA" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_MJJCHELPHNA),
-            "HMBFBBLHJLO_PKBIGHGPIEA" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_PKBIGHGPIEA),
-            "HMBFBBLHJLO_DPNMJDEILCH" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_DPNMJDEILCH),
-            "HMBFBBLHJLO_FONGENEFMFA" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_FONGENEFMFA),
-            "HMBFBBLHJLO_BCHOONLCECO" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_BCHOONLCECO),
-            "HMBFBBLHJLO_FPNCBHAGNLN" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_FPNCBHAGNLN),
-            "HMBFBBLHJLO_MOLNBOKBEKP" => ::std::option::Option::Some(CmdMapRotationType::HMBFBBLHJLO_MOLNBOKBEKP),
+            "CmdMapRotationType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_MNFEPONEDDJ),
+            "CmdMapRotationType_PJIPBKEABEN" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_PJIPBKEABEN),
+            "CmdMapRotationType_CJFPPCPDAEK" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_CJFPPCPDAEK),
+            "CmdMapRotationType_MPENIJFDDAC" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_MPENIJFDDAC),
+            "CmdMapRotationType_HLLHDOOJGJG" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_HLLHDOOJGJG),
+            "CmdMapRotationType_MKCPAHAFBPJ" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_MKCPAHAFBPJ),
+            "CmdMapRotationType_EHPCLFMLNJO" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_EHPCLFMLNJO),
+            "CmdMapRotationType_NPPPIJEMEPH" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_NPPPIJEMEPH),
+            "CmdMapRotationType_NBBEIOFLIKA" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_NBBEIOFLIKA),
+            "CmdMapRotationType_IAIEFKEMDKA" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_IAIEFKEMDKA),
+            "CmdMapRotationType_JFAJHLNCAAA" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_JFAJHLNCAAA),
+            "CmdMapRotationType_IMBGOJAMAHC" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_IMBGOJAMAHC),
+            "CmdMapRotationType_IFIPBPNIJCO" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_IFIPBPNIJCO),
+            "CmdMapRotationType_BCBNHIPDING" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_BCBNHIPDING),
+            "CmdMapRotationType_BIDFGPPDGML" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_BIDFGPPDGML),
+            "CmdMapRotationType_AMOBMLGMKLC" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_AMOBMLGMKLC),
+            "CmdMapRotationType_KAFKJLHMNGD" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_KAFKJLHMNGD),
+            "CmdMapRotationType_CAIMLGCJPDL" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_CAIMLGCJPDL),
+            "CmdMapRotationType_HCBECMPICCM" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_HCBECMPICCM),
+            "CmdMapRotationType_MKFPFJMBGDM" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_MKFPFJMBGDM),
+            "CmdMapRotationType_LPIAKJLHBEH" => ::std::option::Option::Some(CmdMapRotationType::CmdMapRotationType_LPIAKJLHBEH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMapRotationType] = &[
-        CmdMapRotationType::HMBFBBLHJLO_GKJBAODJMJG,
-        CmdMapRotationType::HMBFBBLHJLO_PAMKJDAFPPM,
-        CmdMapRotationType::HMBFBBLHJLO_ENLEILDMFOC,
-        CmdMapRotationType::HMBFBBLHJLO_OCBBNLHNLDO,
-        CmdMapRotationType::HMBFBBLHJLO_ONKFMKHMAID,
-        CmdMapRotationType::HMBFBBLHJLO_EPEBFOIPDML,
-        CmdMapRotationType::HMBFBBLHJLO_KOMCIFAMPDH,
-        CmdMapRotationType::HMBFBBLHJLO_DDACKMEFGLP,
-        CmdMapRotationType::HMBFBBLHJLO_MHKPHINAMCF,
-        CmdMapRotationType::HMBFBBLHJLO_JIGBNLHMNAP,
-        CmdMapRotationType::HMBFBBLHJLO_PGAMHPJPLBP,
-        CmdMapRotationType::HMBFBBLHJLO_MFLCEELCMOJ,
-        CmdMapRotationType::HMBFBBLHJLO_AIOJIMLKONI,
-        CmdMapRotationType::HMBFBBLHJLO_HILIEMFPEMJ,
-        CmdMapRotationType::HMBFBBLHJLO_MJJCHELPHNA,
-        CmdMapRotationType::HMBFBBLHJLO_PKBIGHGPIEA,
-        CmdMapRotationType::HMBFBBLHJLO_DPNMJDEILCH,
-        CmdMapRotationType::HMBFBBLHJLO_FONGENEFMFA,
-        CmdMapRotationType::HMBFBBLHJLO_BCHOONLCECO,
-        CmdMapRotationType::HMBFBBLHJLO_FPNCBHAGNLN,
-        CmdMapRotationType::HMBFBBLHJLO_MOLNBOKBEKP,
+        CmdMapRotationType::CmdMapRotationType_MNFEPONEDDJ,
+        CmdMapRotationType::CmdMapRotationType_PJIPBKEABEN,
+        CmdMapRotationType::CmdMapRotationType_CJFPPCPDAEK,
+        CmdMapRotationType::CmdMapRotationType_MPENIJFDDAC,
+        CmdMapRotationType::CmdMapRotationType_HLLHDOOJGJG,
+        CmdMapRotationType::CmdMapRotationType_MKCPAHAFBPJ,
+        CmdMapRotationType::CmdMapRotationType_EHPCLFMLNJO,
+        CmdMapRotationType::CmdMapRotationType_NPPPIJEMEPH,
+        CmdMapRotationType::CmdMapRotationType_NBBEIOFLIKA,
+        CmdMapRotationType::CmdMapRotationType_IAIEFKEMDKA,
+        CmdMapRotationType::CmdMapRotationType_JFAJHLNCAAA,
+        CmdMapRotationType::CmdMapRotationType_IMBGOJAMAHC,
+        CmdMapRotationType::CmdMapRotationType_IFIPBPNIJCO,
+        CmdMapRotationType::CmdMapRotationType_BCBNHIPDING,
+        CmdMapRotationType::CmdMapRotationType_BIDFGPPDGML,
+        CmdMapRotationType::CmdMapRotationType_AMOBMLGMKLC,
+        CmdMapRotationType::CmdMapRotationType_KAFKJLHMNGD,
+        CmdMapRotationType::CmdMapRotationType_CAIMLGCJPDL,
+        CmdMapRotationType::CmdMapRotationType_HCBECMPICCM,
+        CmdMapRotationType::CmdMapRotationType_MKFPFJMBGDM,
+        CmdMapRotationType::CmdMapRotationType_LPIAKJLHBEH,
     ];
 }
 
@@ -165,27 +165,27 @@ impl ::protobuf::EnumFull for CmdMapRotationType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMapRotationType::HMBFBBLHJLO_GKJBAODJMJG => 0,
-            CmdMapRotationType::HMBFBBLHJLO_PAMKJDAFPPM => 1,
-            CmdMapRotationType::HMBFBBLHJLO_ENLEILDMFOC => 2,
-            CmdMapRotationType::HMBFBBLHJLO_OCBBNLHNLDO => 3,
-            CmdMapRotationType::HMBFBBLHJLO_ONKFMKHMAID => 4,
-            CmdMapRotationType::HMBFBBLHJLO_EPEBFOIPDML => 5,
-            CmdMapRotationType::HMBFBBLHJLO_KOMCIFAMPDH => 6,
-            CmdMapRotationType::HMBFBBLHJLO_DDACKMEFGLP => 7,
-            CmdMapRotationType::HMBFBBLHJLO_MHKPHINAMCF => 8,
-            CmdMapRotationType::HMBFBBLHJLO_JIGBNLHMNAP => 9,
-            CmdMapRotationType::HMBFBBLHJLO_PGAMHPJPLBP => 10,
-            CmdMapRotationType::HMBFBBLHJLO_MFLCEELCMOJ => 11,
-            CmdMapRotationType::HMBFBBLHJLO_AIOJIMLKONI => 12,
-            CmdMapRotationType::HMBFBBLHJLO_HILIEMFPEMJ => 13,
-            CmdMapRotationType::HMBFBBLHJLO_MJJCHELPHNA => 14,
-            CmdMapRotationType::HMBFBBLHJLO_PKBIGHGPIEA => 15,
-            CmdMapRotationType::HMBFBBLHJLO_DPNMJDEILCH => 16,
-            CmdMapRotationType::HMBFBBLHJLO_FONGENEFMFA => 17,
-            CmdMapRotationType::HMBFBBLHJLO_BCHOONLCECO => 18,
-            CmdMapRotationType::HMBFBBLHJLO_FPNCBHAGNLN => 19,
-            CmdMapRotationType::HMBFBBLHJLO_MOLNBOKBEKP => 20,
+            CmdMapRotationType::CmdMapRotationType_MNFEPONEDDJ => 0,
+            CmdMapRotationType::CmdMapRotationType_PJIPBKEABEN => 1,
+            CmdMapRotationType::CmdMapRotationType_CJFPPCPDAEK => 2,
+            CmdMapRotationType::CmdMapRotationType_MPENIJFDDAC => 3,
+            CmdMapRotationType::CmdMapRotationType_HLLHDOOJGJG => 4,
+            CmdMapRotationType::CmdMapRotationType_MKCPAHAFBPJ => 5,
+            CmdMapRotationType::CmdMapRotationType_EHPCLFMLNJO => 6,
+            CmdMapRotationType::CmdMapRotationType_NPPPIJEMEPH => 7,
+            CmdMapRotationType::CmdMapRotationType_NBBEIOFLIKA => 8,
+            CmdMapRotationType::CmdMapRotationType_IAIEFKEMDKA => 9,
+            CmdMapRotationType::CmdMapRotationType_JFAJHLNCAAA => 10,
+            CmdMapRotationType::CmdMapRotationType_IMBGOJAMAHC => 11,
+            CmdMapRotationType::CmdMapRotationType_IFIPBPNIJCO => 12,
+            CmdMapRotationType::CmdMapRotationType_BCBNHIPDING => 13,
+            CmdMapRotationType::CmdMapRotationType_BIDFGPPDGML => 14,
+            CmdMapRotationType::CmdMapRotationType_AMOBMLGMKLC => 15,
+            CmdMapRotationType::CmdMapRotationType_KAFKJLHMNGD => 16,
+            CmdMapRotationType::CmdMapRotationType_CAIMLGCJPDL => 17,
+            CmdMapRotationType::CmdMapRotationType_HCBECMPICCM => 18,
+            CmdMapRotationType::CmdMapRotationType_MKFPFJMBGDM => 19,
+            CmdMapRotationType::CmdMapRotationType_LPIAKJLHBEH => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -193,7 +193,7 @@ impl ::protobuf::EnumFull for CmdMapRotationType {
 
 impl ::std::default::Default for CmdMapRotationType {
     fn default() -> Self {
-        CmdMapRotationType::HMBFBBLHJLO_GKJBAODJMJG
+        CmdMapRotationType::CmdMapRotationType_MNFEPONEDDJ
     }
 }
 
@@ -204,21 +204,22 @@ impl CmdMapRotationType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdMapRotationType.proto*\x89\x05\n\x12CmdMapRotationType\x12\x1b\
-    \n\x17HMBFBBLHJLO_GKJBAODJMJG\x10\0\x12\x1c\n\x17HMBFBBLHJLO_PAMKJDAFPPM\
-    \x10\xc75\x12\x1c\n\x17HMBFBBLHJLO_ENLEILDMFOC\x10\xd25\x12\x1c\n\x17HMB\
-    FBBLHJLO_OCBBNLHNLDO\x10\xb55\x12\x1c\n\x17HMBFBBLHJLO_ONKFMKHMAID\x10\
-    \xe95\x12\x1c\n\x17HMBFBBLHJLO_EPEBFOIPDML\x10\xdb5\x12\x1c\n\x17HMBFBBL\
-    HJLO_KOMCIFAMPDH\x10\xaa5\x12\x1c\n\x17HMBFBBLHJLO_DDACKMEFGLP\x10\xbd5\
-    \x12\x1c\n\x17HMBFBBLHJLO_MHKPHINAMCF\x10\xed5\x12\x1c\n\x17HMBFBBLHJLO_\
-    JIGBNLHMNAP\x10\xb25\x12\x1c\n\x17HMBFBBLHJLO_PGAMHPJPLBP\x10\xef5\x12\
-    \x1c\n\x17HMBFBBLHJLO_MFLCEELCMOJ\x10\xce5\x12\x1c\n\x17HMBFBBLHJLO_AIOJ\
-    IMLKONI\x10\xbf5\x12\x1c\n\x17HMBFBBLHJLO_HILIEMFPEMJ\x10\xc95\x12\x1c\n\
-    \x17HMBFBBLHJLO_MJJCHELPHNA\x10\xd55\x12\x1c\n\x17HMBFBBLHJLO_PKBIGHGPIE\
-    A\x10\xa45\x12\x1c\n\x17HMBFBBLHJLO_DPNMJDEILCH\x10\x955\x12\x1c\n\x17HM\
-    BFBBLHJLO_FONGENEFMFA\x10\xb65\x12\x1c\n\x17HMBFBBLHJLO_BCHOONLCECO\x10\
-    \xe35\x12\x1c\n\x17HMBFBBLHJLO_FPNCBHAGNLN\x10\xdf5\x12\x1c\n\x17HMBFBBL\
-    HJLO_MOLNBOKBEKP\x10\xac5b\x06proto3\
+    \n\x18CmdMapRotationType.proto*\x9c\x06\n\x12CmdMapRotationType\x12\"\n\
+    \x1eCmdMapRotationType_MNFEPONEDDJ\x10\0\x12#\n\x1eCmdMapRotationType_PJ\
+    IPBKEABEN\x10\xa35\x12#\n\x1eCmdMapRotationType_CJFPPCPDAEK\x10\xa85\x12\
+    #\n\x1eCmdMapRotationType_MPENIJFDDAC\x10\x945\x12#\n\x1eCmdMapRotationT\
+    ype_HLLHDOOJGJG\x10\xe85\x12#\n\x1eCmdMapRotationType_MKCPAHAFBPJ\x10\
+    \x9d5\x12#\n\x1eCmdMapRotationType_EHPCLFMLNJO\x10\xc85\x12#\n\x1eCmdMap\
+    RotationType_NPPPIJEMEPH\x10\xe45\x12#\n\x1eCmdMapRotationType_NBBEIOFLI\
+    KA\x10\xd55\x12#\n\x1eCmdMapRotationType_IAIEFKEMDKA\x10\xb85\x12#\n\x1e\
+    CmdMapRotationType_JFAJHLNCAAA\x10\xe15\x12#\n\x1eCmdMapRotationType_IMB\
+    GOJAMAHC\x10\xb25\x12#\n\x1eCmdMapRotationType_IFIPBPNIJCO\x10\xc95\x12#\
+    \n\x1eCmdMapRotationType_BCBNHIPDING\x10\xe35\x12#\n\x1eCmdMapRotationTy\
+    pe_BIDFGPPDGML\x10\xe65\x12#\n\x1eCmdMapRotationType_AMOBMLGMKLC\x10\xce\
+    5\x12#\n\x1eCmdMapRotationType_KAFKJLHMNGD\x10\xa75\x12#\n\x1eCmdMapRota\
+    tionType_CAIMLGCJPDL\x10\xf45\x12#\n\x1eCmdMapRotationType_HCBECMPICCM\
+    \x10\xb35\x12#\n\x1eCmdMapRotationType_MKFPFJMBGDM\x10\xc05\x12#\n\x1eCm\
+    dMapRotationType_LPIAKJLHBEH\x10\xbe5b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

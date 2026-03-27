@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelfRankChangeNtf {
     // message fields
-    // @@protoc_insertion_point(field:SelfRankChangeNtf.JJFHBCKJBPF)
-    pub JJFHBCKJBPF: ::std::vec::Vec<super::KNLCDIFBHHL::KNLCDIFBHHL>,
-    // @@protoc_insertion_point(field:SelfRankChangeNtf.OKKFCINADIE)
-    pub OKKFCINADIE: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
+    // @@protoc_insertion_point(field:SelfRankChangeNtf.MLKKBBFLAHG)
+    pub MLKKBBFLAHG: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
+    // @@protoc_insertion_point(field:SelfRankChangeNtf.GKAIDNHIFPF)
+    pub GKAIDNHIFPF: ::std::vec::Vec<super::KFEFPFDAMMH::KFEFPFDAMMH>,
     // special fields
     // @@protoc_insertion_point(special_field:SelfRankChangeNtf.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SelfRankChangeNtf {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JJFHBCKJBPF",
-            |m: &SelfRankChangeNtf| { &m.JJFHBCKJBPF },
-            |m: &mut SelfRankChangeNtf| { &mut m.JJFHBCKJBPF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKKFCINADIE",
-            |m: &SelfRankChangeNtf| { &m.OKKFCINADIE },
-            |m: &mut SelfRankChangeNtf| { &mut m.OKKFCINADIE },
+            "MLKKBBFLAHG",
+            |m: &SelfRankChangeNtf| { &m.MLKKBBFLAHG },
+            |m: &mut SelfRankChangeNtf| { &mut m.MLKKBBFLAHG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GKAIDNHIFPF",
+            |m: &SelfRankChangeNtf| { &m.GKAIDNHIFPF },
+            |m: &mut SelfRankChangeNtf| { &mut m.GKAIDNHIFPF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelfRankChangeNtf>(
             "SelfRankChangeNtf",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SelfRankChangeNtf {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.JJFHBCKJBPF.push(is.read_message()?);
+                96 => {
+                    self.MLKKBBFLAHG = is.read_enum_or_unknown()?;
                 },
-                16 => {
-                    self.OKKFCINADIE = is.read_enum_or_unknown()?;
+                42 => {
+                    self.GKAIDNHIFPF.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for SelfRankChangeNtf {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.JJFHBCKJBPF {
+        if self.MLKKBBFLAHG != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(12, self.MLKKBBFLAHG.value());
+        }
+        for value in &self.GKAIDNHIFPF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.OKKFCINADIE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(2, self.OKKFCINADIE.value());
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.JJFHBCKJBPF {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.OKKFCINADIE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.OKKFCINADIE))?;
+        if self.MLKKBBFLAHG != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_MNFEPONEDDJ) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.MLKKBBFLAHG))?;
         }
+        for v in &self.GKAIDNHIFPF {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SelfRankChangeNtf {
     }
 
     fn clear(&mut self) {
-        self.JJFHBCKJBPF.clear();
-        self.OKKFCINADIE = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG);
+        self.MLKKBBFLAHG = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_MNFEPONEDDJ);
+        self.GKAIDNHIFPF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelfRankChangeNtf {
         static instance: SelfRankChangeNtf = SelfRankChangeNtf {
-            JJFHBCKJBPF: ::std::vec::Vec::new(),
-            OKKFCINADIE: ::protobuf::EnumOrUnknown::from_i32(0),
+            MLKKBBFLAHG: ::protobuf::EnumOrUnknown::from_i32(0),
+            GKAIDNHIFPF: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for SelfRankChangeNtf {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17SelfRankChangeNtf.proto\x1a\x13FightGameMode.proto\x1a\x11KNLCDIFB\
-    HHL.proto\"u\n\x11SelfRankChangeNtf\x12.\n\x0bJJFHBCKJBPF\x18\x08\x20\
-    \x03(\x0b2\x0c.KNLCDIFBHHLR\x0bJJFHBCKJBPF\x120\n\x0bOKKFCINADIE\x18\x02\
-    \x20\x01(\x0e2\x0e.FightGameModeR\x0bOKKFCINADIEb\x06proto3\
+    \n\x17SelfRankChangeNtf.proto\x1a\x13FightGameMode.proto\x1a\x11KFEFPFDA\
+    MMH.proto\"u\n\x11SelfRankChangeNtf\x120\n\x0bMLKKBBFLAHG\x18\x0c\x20\
+    \x01(\x0e2\x0e.FightGameModeR\x0bMLKKBBFLAHG\x12.\n\x0bGKAIDNHIFPF\x18\
+    \x05\x20\x03(\x0b2\x0c.KFEFPFDAMMHR\x0bGKAIDNHIFPFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -188,7 +188,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::FightGameMode::file_descriptor().clone());
-            deps.push(super::KNLCDIFBHHL::file_descriptor().clone());
+            deps.push(super::KFEFPFDAMMH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SelfRankChangeNtf::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

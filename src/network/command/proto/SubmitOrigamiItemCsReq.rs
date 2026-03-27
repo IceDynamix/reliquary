@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SubmitOrigamiItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SubmitOrigamiItemCsReq.LCMMIIKBDKK)
-    pub LCMMIIKBDKK: u32,
+    // @@protoc_insertion_point(field:SubmitOrigamiItemCsReq.HOIMMHDPKFN)
+    pub HOIMMHDPKFN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SubmitOrigamiItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SubmitOrigamiItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCMMIIKBDKK",
-            |m: &SubmitOrigamiItemCsReq| { &m.LCMMIIKBDKK },
-            |m: &mut SubmitOrigamiItemCsReq| { &mut m.LCMMIIKBDKK },
+            "HOIMMHDPKFN",
+            |m: &SubmitOrigamiItemCsReq| { &m.HOIMMHDPKFN },
+            |m: &mut SubmitOrigamiItemCsReq| { &mut m.HOIMMHDPKFN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SubmitOrigamiItemCsReq>(
             "SubmitOrigamiItemCsReq",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for SubmitOrigamiItemCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 88 => {
-                    self.LCMMIIKBDKK = is.read_uint32()?;
+                    self.HOIMMHDPKFN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SubmitOrigamiItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LCMMIIKBDKK != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LCMMIIKBDKK);
+        if self.HOIMMHDPKFN != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HOIMMHDPKFN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SubmitOrigamiItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LCMMIIKBDKK != 0 {
-            os.write_uint32(11, self.LCMMIIKBDKK)?;
+        if self.HOIMMHDPKFN != 0 {
+            os.write_uint32(11, self.HOIMMHDPKFN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SubmitOrigamiItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.LCMMIIKBDKK = 0;
+        self.HOIMMHDPKFN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SubmitOrigamiItemCsReq {
         static instance: SubmitOrigamiItemCsReq = SubmitOrigamiItemCsReq {
-            LCMMIIKBDKK: 0,
+            HOIMMHDPKFN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SubmitOrigamiItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSubmitOrigamiItemCsReq.proto\":\n\x16SubmitOrigamiItemCsReq\x12\
-    \x20\n\x0bLCMMIIKBDKK\x18\x0b\x20\x01(\rR\x0bLCMMIIKBDKKb\x06proto3\
+    \x20\n\x0bHOIMMHDPKFN\x18\x0b\x20\x01(\rR\x0bHOIMMHDPKFNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

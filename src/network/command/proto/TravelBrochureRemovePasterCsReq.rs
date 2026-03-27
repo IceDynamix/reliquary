@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureRemovePasterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.ECHGBHGCNMG)
-    pub ECHGBHGCNMG: u32,
     // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.unique_id)
     pub unique_id: u64,
+    // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.AKGJJEFCGKB)
+    pub AKGJJEFCGKB: u32,
     // @@protoc_insertion_point(field:TravelBrochureRemovePasterCsReq.item_id)
     pub item_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl TravelBrochureRemovePasterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECHGBHGCNMG",
-            |m: &TravelBrochureRemovePasterCsReq| { &m.ECHGBHGCNMG },
-            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.ECHGBHGCNMG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unique_id",
             |m: &TravelBrochureRemovePasterCsReq| { &m.unique_id },
             |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.unique_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AKGJJEFCGKB",
+            |m: &TravelBrochureRemovePasterCsReq| { &m.AKGJJEFCGKB },
+            |m: &mut TravelBrochureRemovePasterCsReq| { &mut m.AKGJJEFCGKB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.ECHGBHGCNMG = is.read_uint32()?;
-                },
                 32 => {
                     self.unique_id = is.read_uint64()?;
                 },
-                40 => {
+                64 => {
+                    self.AKGJJEFCGKB = is.read_uint32()?;
+                },
+                48 => {
                     self.item_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ECHGBHGCNMG != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ECHGBHGCNMG);
-        }
         if self.unique_id != 0 {
             my_size += ::protobuf::rt::uint64_size(4, self.unique_id);
         }
+        if self.AKGJJEFCGKB != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.AKGJJEFCGKB);
+        }
         if self.item_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.item_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.item_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ECHGBHGCNMG != 0 {
-            os.write_uint32(3, self.ECHGBHGCNMG)?;
-        }
         if self.unique_id != 0 {
             os.write_uint64(4, self.unique_id)?;
         }
+        if self.AKGJJEFCGKB != 0 {
+            os.write_uint32(8, self.AKGJJEFCGKB)?;
+        }
         if self.item_id != 0 {
-            os.write_uint32(5, self.item_id)?;
+            os.write_uint32(6, self.item_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for TravelBrochureRemovePasterCsReq {
     }
 
     fn clear(&mut self) {
-        self.ECHGBHGCNMG = 0;
         self.unique_id = 0;
+        self.AKGJJEFCGKB = 0;
         self.item_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureRemovePasterCsReq {
         static instance: TravelBrochureRemovePasterCsReq = TravelBrochureRemovePasterCsReq {
-            ECHGBHGCNMG: 0,
             unique_id: 0,
+            AKGJJEFCGKB: 0,
             item_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureRemovePasterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TravelBrochureRemovePasterCsReq.proto\"y\n\x1fTravelBrochureRemovePas\
-    terCsReq\x12\x20\n\x0bECHGBHGCNMG\x18\x03\x20\x01(\rR\x0bECHGBHGCNMG\x12\
-    \x1b\n\tunique_id\x18\x04\x20\x01(\x04R\x08uniqueId\x12\x17\n\x07item_id\
-    \x18\x05\x20\x01(\rR\x06itemIdb\x06proto3\
+    terCsReq\x12\x1b\n\tunique_id\x18\x04\x20\x01(\x04R\x08uniqueId\x12\x20\
+    \n\x0bAKGJJEFCGKB\x18\x08\x20\x01(\rR\x0bAKGJJEFCGKB\x12\x17\n\x07item_i\
+    d\x18\x06\x20\x01(\rR\x06itemIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

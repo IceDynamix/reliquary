@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetBoxingClubResonanceLineupCsReq {
     // message fields
+    // @@protoc_insertion_point(field:SetBoxingClubResonanceLineupCsReq.PBMBNFDFDLE)
+    pub PBMBNFDFDLE: ::std::vec::Vec<super::GIFAHDCMEOK::GIFAHDCMEOK>,
     // @@protoc_insertion_point(field:SetBoxingClubResonanceLineupCsReq.challenge_id)
     pub challenge_id: u32,
-    // @@protoc_insertion_point(field:SetBoxingClubResonanceLineupCsReq.NDBKKCJFDFO)
-    pub NDBKKCJFDFO: ::std::vec::Vec<super::KHPMIHEHOKE::KHPMIHEHOKE>,
     // special fields
     // @@protoc_insertion_point(special_field:SetBoxingClubResonanceLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SetBoxingClubResonanceLineupCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PBMBNFDFDLE",
+            |m: &SetBoxingClubResonanceLineupCsReq| { &m.PBMBNFDFDLE },
+            |m: &mut SetBoxingClubResonanceLineupCsReq| { &mut m.PBMBNFDFDLE },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
             |m: &SetBoxingClubResonanceLineupCsReq| { &m.challenge_id },
             |m: &mut SetBoxingClubResonanceLineupCsReq| { &mut m.challenge_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NDBKKCJFDFO",
-            |m: &SetBoxingClubResonanceLineupCsReq| { &m.NDBKKCJFDFO },
-            |m: &mut SetBoxingClubResonanceLineupCsReq| { &mut m.NDBKKCJFDFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetBoxingClubResonanceLineupCsReq>(
             "SetBoxingClubResonanceLineupCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.challenge_id = is.read_uint32()?;
+                82 => {
+                    self.PBMBNFDFDLE.push(is.read_message()?);
                 },
-                42 => {
-                    self.NDBKKCJFDFO.push(is.read_message()?);
+                32 => {
+                    self.challenge_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.challenge_id);
-        }
-        for value in &self.NDBKKCJFDFO {
+        for value in &self.PBMBNFDFDLE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.challenge_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.challenge_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.challenge_id != 0 {
-            os.write_uint32(8, self.challenge_id)?;
-        }
-        for v in &self.NDBKKCJFDFO {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.PBMBNFDFDLE {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
+        if self.challenge_id != 0 {
+            os.write_uint32(4, self.challenge_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SetBoxingClubResonanceLineupCsReq {
     }
 
     fn clear(&mut self) {
+        self.PBMBNFDFDLE.clear();
         self.challenge_id = 0;
-        self.NDBKKCJFDFO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetBoxingClubResonanceLineupCsReq {
         static instance: SetBoxingClubResonanceLineupCsReq = SetBoxingClubResonanceLineupCsReq {
+            PBMBNFDFDLE: ::std::vec::Vec::new(),
             challenge_id: 0,
-            NDBKKCJFDFO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for SetBoxingClubResonanceLineupCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'SetBoxingClubResonanceLineupCsReq.proto\x1a\x11KHPMIHEHOKE.proto\"v\n\
-    !SetBoxingClubResonanceLineupCsReq\x12!\n\x0cchallenge_id\x18\x08\x20\
-    \x01(\rR\x0bchallengeId\x12.\n\x0bNDBKKCJFDFO\x18\x05\x20\x03(\x0b2\x0c.\
-    KHPMIHEHOKER\x0bNDBKKCJFDFOb\x06proto3\
+    \n'SetBoxingClubResonanceLineupCsReq.proto\x1a\x11GIFAHDCMEOK.proto\"v\n\
+    !SetBoxingClubResonanceLineupCsReq\x12.\n\x0bPBMBNFDFDLE\x18\n\x20\x03(\
+    \x0b2\x0c.GIFAHDCMEOKR\x0bPBMBNFDFDLE\x12!\n\x0cchallenge_id\x18\x04\x20\
+    \x01(\rR\x0bchallengeIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KHPMIHEHOKE::file_descriptor().clone());
+            deps.push(super::GIFAHDCMEOK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetBoxingClubResonanceLineupCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendRankingInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendRankingInfoCsReq.OKKFCINADIE)
-    pub OKKFCINADIE: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
+    // @@protoc_insertion_point(field:GetFriendRankingInfoCsReq.MLKKBBFLAHG)
+    pub MLKKBBFLAHG: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendRankingInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GetFriendRankingInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKKFCINADIE",
-            |m: &GetFriendRankingInfoCsReq| { &m.OKKFCINADIE },
-            |m: &mut GetFriendRankingInfoCsReq| { &mut m.OKKFCINADIE },
+            "MLKKBBFLAHG",
+            |m: &GetFriendRankingInfoCsReq| { &m.MLKKBBFLAHG },
+            |m: &mut GetFriendRankingInfoCsReq| { &mut m.MLKKBBFLAHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendRankingInfoCsReq>(
             "GetFriendRankingInfoCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GetFriendRankingInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.OKKFCINADIE = is.read_enum_or_unknown()?;
+                32 => {
+                    self.MLKKBBFLAHG = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GetFriendRankingInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OKKFCINADIE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(14, self.OKKFCINADIE.value());
+        if self.MLKKBBFLAHG != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(4, self.MLKKBBFLAHG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GetFriendRankingInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OKKFCINADIE != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.OKKFCINADIE))?;
+        if self.MLKKBBFLAHG != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_MNFEPONEDDJ) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.MLKKBBFLAHG))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GetFriendRankingInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.OKKFCINADIE = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::JILGMANNGNL_GKJBAODJMJG);
+        self.MLKKBBFLAHG = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FightGameMode_MNFEPONEDDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendRankingInfoCsReq {
         static instance: GetFriendRankingInfoCsReq = GetFriendRankingInfoCsReq {
-            OKKFCINADIE: ::protobuf::EnumOrUnknown::from_i32(0),
+            MLKKBBFLAHG: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendRankingInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetFriendRankingInfoCsReq.proto\x1a\x13FightGameMode.proto\"M\n\
-    \x19GetFriendRankingInfoCsReq\x120\n\x0bOKKFCINADIE\x18\x0e\x20\x01(\x0e\
-    2\x0e.FightGameModeR\x0bOKKFCINADIEb\x06proto3\
+    \x19GetFriendRankingInfoCsReq\x120\n\x0bMLKKBBFLAHG\x18\x04\x20\x01(\x0e\
+    2\x0e.FightGameModeR\x0bMLKKBBFLAHGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,26 +27,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRechargeGiftType)
 pub enum CmdRechargeGiftType {
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_GKJBAODJMJG)
-    DEJKLPPPCFL_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_FFCANGMFDAJ)
-    DEJKLPPPCFL_FFCANGMFDAJ = 8380,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_KMCOBJHMCHI)
-    DEJKLPPPCFL_KMCOBJHMCHI = 8361,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_LPLMEKHNLBF)
-    DEJKLPPPCFL_LPLMEKHNLBF = 8370,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_HNEGFBLAPCI)
-    DEJKLPPPCFL_HNEGFBLAPCI = 8375,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_OFCOAOLFJBB)
-    DEJKLPPPCFL_OFCOAOLFJBB = 8371,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_FNIOCKEGOPE)
-    DEJKLPPPCFL_FNIOCKEGOPE = 8372,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_EEEOHBKJLFP)
-    DEJKLPPPCFL_EEEOHBKJLFP = 8376,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_JCHHGNALFJD)
-    DEJKLPPPCFL_JCHHGNALFJD = 8366,
-    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.DEJKLPPPCFL_EKCLFOIKNIA)
-    DEJKLPPPCFL_EKCLFOIKNIA = 8364,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftType_MNFEPONEDDJ)
+    CmdRechargeGiftType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftType_NPJLGOKBDBH)
+    CmdRechargeGiftType_NPJLGOKBDBH = 8366,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftType_MLLJBLLPLCK)
+    CmdRechargeGiftType_MLLJBLLPLCK = 8379,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftType_HKMDGLDMHLD)
+    CmdRechargeGiftType_HKMDGLDMHLD = 8375,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftType_FLCOLNCEEJO)
+    CmdRechargeGiftType_FLCOLNCEEJO = 8364,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftType_EFCIJFBGCDL)
+    CmdRechargeGiftType_EFCIJFBGCDL = 8372,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftType_CJNHMMFLNLF)
+    CmdRechargeGiftType_CJNHMMFLNLF = 8361,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftType_LIFNPEKBPAN)
+    CmdRechargeGiftType_LIFNPEKBPAN = 8365,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftType_AMDKDAJIEEA)
+    CmdRechargeGiftType_AMDKDAJIEEA = 8362,
+    // @@protoc_insertion_point(enum_value:CmdRechargeGiftType.CmdRechargeGiftType_LLNMMCFEIPE)
+    CmdRechargeGiftType_LLNMMCFEIPE = 8376,
 }
 
 impl ::protobuf::Enum for CmdRechargeGiftType {
@@ -58,47 +58,47 @@ impl ::protobuf::Enum for CmdRechargeGiftType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRechargeGiftType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_GKJBAODJMJG),
-            8380 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_FFCANGMFDAJ),
-            8361 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_KMCOBJHMCHI),
-            8370 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_LPLMEKHNLBF),
-            8375 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_HNEGFBLAPCI),
-            8371 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_OFCOAOLFJBB),
-            8372 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_FNIOCKEGOPE),
-            8376 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_EEEOHBKJLFP),
-            8366 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_JCHHGNALFJD),
-            8364 => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_EKCLFOIKNIA),
+            0 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_MNFEPONEDDJ),
+            8366 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_NPJLGOKBDBH),
+            8379 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_MLLJBLLPLCK),
+            8375 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_HKMDGLDMHLD),
+            8364 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_FLCOLNCEEJO),
+            8372 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_EFCIJFBGCDL),
+            8361 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_CJNHMMFLNLF),
+            8365 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_LIFNPEKBPAN),
+            8362 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_AMDKDAJIEEA),
+            8376 => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_LLNMMCFEIPE),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRechargeGiftType> {
         match str {
-            "DEJKLPPPCFL_GKJBAODJMJG" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_GKJBAODJMJG),
-            "DEJKLPPPCFL_FFCANGMFDAJ" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_FFCANGMFDAJ),
-            "DEJKLPPPCFL_KMCOBJHMCHI" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_KMCOBJHMCHI),
-            "DEJKLPPPCFL_LPLMEKHNLBF" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_LPLMEKHNLBF),
-            "DEJKLPPPCFL_HNEGFBLAPCI" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_HNEGFBLAPCI),
-            "DEJKLPPPCFL_OFCOAOLFJBB" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_OFCOAOLFJBB),
-            "DEJKLPPPCFL_FNIOCKEGOPE" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_FNIOCKEGOPE),
-            "DEJKLPPPCFL_EEEOHBKJLFP" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_EEEOHBKJLFP),
-            "DEJKLPPPCFL_JCHHGNALFJD" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_JCHHGNALFJD),
-            "DEJKLPPPCFL_EKCLFOIKNIA" => ::std::option::Option::Some(CmdRechargeGiftType::DEJKLPPPCFL_EKCLFOIKNIA),
+            "CmdRechargeGiftType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_MNFEPONEDDJ),
+            "CmdRechargeGiftType_NPJLGOKBDBH" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_NPJLGOKBDBH),
+            "CmdRechargeGiftType_MLLJBLLPLCK" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_MLLJBLLPLCK),
+            "CmdRechargeGiftType_HKMDGLDMHLD" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_HKMDGLDMHLD),
+            "CmdRechargeGiftType_FLCOLNCEEJO" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_FLCOLNCEEJO),
+            "CmdRechargeGiftType_EFCIJFBGCDL" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_EFCIJFBGCDL),
+            "CmdRechargeGiftType_CJNHMMFLNLF" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_CJNHMMFLNLF),
+            "CmdRechargeGiftType_LIFNPEKBPAN" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_LIFNPEKBPAN),
+            "CmdRechargeGiftType_AMDKDAJIEEA" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_AMDKDAJIEEA),
+            "CmdRechargeGiftType_LLNMMCFEIPE" => ::std::option::Option::Some(CmdRechargeGiftType::CmdRechargeGiftType_LLNMMCFEIPE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRechargeGiftType] = &[
-        CmdRechargeGiftType::DEJKLPPPCFL_GKJBAODJMJG,
-        CmdRechargeGiftType::DEJKLPPPCFL_FFCANGMFDAJ,
-        CmdRechargeGiftType::DEJKLPPPCFL_KMCOBJHMCHI,
-        CmdRechargeGiftType::DEJKLPPPCFL_LPLMEKHNLBF,
-        CmdRechargeGiftType::DEJKLPPPCFL_HNEGFBLAPCI,
-        CmdRechargeGiftType::DEJKLPPPCFL_OFCOAOLFJBB,
-        CmdRechargeGiftType::DEJKLPPPCFL_FNIOCKEGOPE,
-        CmdRechargeGiftType::DEJKLPPPCFL_EEEOHBKJLFP,
-        CmdRechargeGiftType::DEJKLPPPCFL_JCHHGNALFJD,
-        CmdRechargeGiftType::DEJKLPPPCFL_EKCLFOIKNIA,
+        CmdRechargeGiftType::CmdRechargeGiftType_MNFEPONEDDJ,
+        CmdRechargeGiftType::CmdRechargeGiftType_NPJLGOKBDBH,
+        CmdRechargeGiftType::CmdRechargeGiftType_MLLJBLLPLCK,
+        CmdRechargeGiftType::CmdRechargeGiftType_HKMDGLDMHLD,
+        CmdRechargeGiftType::CmdRechargeGiftType_FLCOLNCEEJO,
+        CmdRechargeGiftType::CmdRechargeGiftType_EFCIJFBGCDL,
+        CmdRechargeGiftType::CmdRechargeGiftType_CJNHMMFLNLF,
+        CmdRechargeGiftType::CmdRechargeGiftType_LIFNPEKBPAN,
+        CmdRechargeGiftType::CmdRechargeGiftType_AMDKDAJIEEA,
+        CmdRechargeGiftType::CmdRechargeGiftType_LLNMMCFEIPE,
     ];
 }
 
@@ -110,16 +110,16 @@ impl ::protobuf::EnumFull for CmdRechargeGiftType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRechargeGiftType::DEJKLPPPCFL_GKJBAODJMJG => 0,
-            CmdRechargeGiftType::DEJKLPPPCFL_FFCANGMFDAJ => 1,
-            CmdRechargeGiftType::DEJKLPPPCFL_KMCOBJHMCHI => 2,
-            CmdRechargeGiftType::DEJKLPPPCFL_LPLMEKHNLBF => 3,
-            CmdRechargeGiftType::DEJKLPPPCFL_HNEGFBLAPCI => 4,
-            CmdRechargeGiftType::DEJKLPPPCFL_OFCOAOLFJBB => 5,
-            CmdRechargeGiftType::DEJKLPPPCFL_FNIOCKEGOPE => 6,
-            CmdRechargeGiftType::DEJKLPPPCFL_EEEOHBKJLFP => 7,
-            CmdRechargeGiftType::DEJKLPPPCFL_JCHHGNALFJD => 8,
-            CmdRechargeGiftType::DEJKLPPPCFL_EKCLFOIKNIA => 9,
+            CmdRechargeGiftType::CmdRechargeGiftType_MNFEPONEDDJ => 0,
+            CmdRechargeGiftType::CmdRechargeGiftType_NPJLGOKBDBH => 1,
+            CmdRechargeGiftType::CmdRechargeGiftType_MLLJBLLPLCK => 2,
+            CmdRechargeGiftType::CmdRechargeGiftType_HKMDGLDMHLD => 3,
+            CmdRechargeGiftType::CmdRechargeGiftType_FLCOLNCEEJO => 4,
+            CmdRechargeGiftType::CmdRechargeGiftType_EFCIJFBGCDL => 5,
+            CmdRechargeGiftType::CmdRechargeGiftType_CJNHMMFLNLF => 6,
+            CmdRechargeGiftType::CmdRechargeGiftType_LIFNPEKBPAN => 7,
+            CmdRechargeGiftType::CmdRechargeGiftType_AMDKDAJIEEA => 8,
+            CmdRechargeGiftType::CmdRechargeGiftType_LLNMMCFEIPE => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,7 +127,7 @@ impl ::protobuf::EnumFull for CmdRechargeGiftType {
 
 impl ::std::default::Default for CmdRechargeGiftType {
     fn default() -> Self {
-        CmdRechargeGiftType::DEJKLPPPCFL_GKJBAODJMJG
+        CmdRechargeGiftType::CmdRechargeGiftType_MNFEPONEDDJ
     }
 }
 
@@ -138,14 +138,15 @@ impl CmdRechargeGiftType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19CmdRechargeGiftType.proto*\xc0\x02\n\x13CmdRechargeGiftType\x12\
-    \x1b\n\x17DEJKLPPPCFL_GKJBAODJMJG\x10\0\x12\x1c\n\x17DEJKLPPPCFL_FFCANGM\
-    FDAJ\x10\xbcA\x12\x1c\n\x17DEJKLPPPCFL_KMCOBJHMCHI\x10\xa9A\x12\x1c\n\
-    \x17DEJKLPPPCFL_LPLMEKHNLBF\x10\xb2A\x12\x1c\n\x17DEJKLPPPCFL_HNEGFBLAPC\
-    I\x10\xb7A\x12\x1c\n\x17DEJKLPPPCFL_OFCOAOLFJBB\x10\xb3A\x12\x1c\n\x17DE\
-    JKLPPPCFL_FNIOCKEGOPE\x10\xb4A\x12\x1c\n\x17DEJKLPPPCFL_EEEOHBKJLFP\x10\
-    \xb8A\x12\x1c\n\x17DEJKLPPPCFL_JCHHGNALFJD\x10\xaeA\x12\x1c\n\x17DEJKLPP\
-    PCFL_EKCLFOIKNIA\x10\xacAb\x06proto3\
+    \n\x19CmdRechargeGiftType.proto*\x90\x03\n\x13CmdRechargeGiftType\x12#\n\
+    \x1fCmdRechargeGiftType_MNFEPONEDDJ\x10\0\x12$\n\x1fCmdRechargeGiftType_\
+    NPJLGOKBDBH\x10\xaeA\x12$\n\x1fCmdRechargeGiftType_MLLJBLLPLCK\x10\xbbA\
+    \x12$\n\x1fCmdRechargeGiftType_HKMDGLDMHLD\x10\xb7A\x12$\n\x1fCmdRecharg\
+    eGiftType_FLCOLNCEEJO\x10\xacA\x12$\n\x1fCmdRechargeGiftType_EFCIJFBGCDL\
+    \x10\xb4A\x12$\n\x1fCmdRechargeGiftType_CJNHMMFLNLF\x10\xa9A\x12$\n\x1fC\
+    mdRechargeGiftType_LIFNPEKBPAN\x10\xadA\x12$\n\x1fCmdRechargeGiftType_AM\
+    DKDAJIEEA\x10\xaaA\x12$\n\x1fCmdRechargeGiftType_LLNMMCFEIPE\x10\xb8Ab\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

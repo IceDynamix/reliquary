@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CounterRecoverCsReq {
     // message fields
-    // @@protoc_insertion_point(field:CounterRecoverCsReq.DHHEGCFCFNF)
-    pub DHHEGCFCFNF: u32,
-    // @@protoc_insertion_point(field:CounterRecoverCsReq.IFMAHDAMEDN)
-    pub IFMAHDAMEDN: u32,
+    // @@protoc_insertion_point(field:CounterRecoverCsReq.BMEBLJKDKJE)
+    pub BMEBLJKDKJE: u32,
+    // @@protoc_insertion_point(field:CounterRecoverCsReq.OENAEHPLPMN)
+    pub OENAEHPLPMN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CounterRecoverCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CounterRecoverCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHHEGCFCFNF",
-            |m: &CounterRecoverCsReq| { &m.DHHEGCFCFNF },
-            |m: &mut CounterRecoverCsReq| { &mut m.DHHEGCFCFNF },
+            "BMEBLJKDKJE",
+            |m: &CounterRecoverCsReq| { &m.BMEBLJKDKJE },
+            |m: &mut CounterRecoverCsReq| { &mut m.BMEBLJKDKJE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFMAHDAMEDN",
-            |m: &CounterRecoverCsReq| { &m.IFMAHDAMEDN },
-            |m: &mut CounterRecoverCsReq| { &mut m.IFMAHDAMEDN },
+            "OENAEHPLPMN",
+            |m: &CounterRecoverCsReq| { &m.OENAEHPLPMN },
+            |m: &mut CounterRecoverCsReq| { &mut m.OENAEHPLPMN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CounterRecoverCsReq>(
             "CounterRecoverCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CounterRecoverCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.DHHEGCFCFNF = is.read_uint32()?;
+                112 => {
+                    self.BMEBLJKDKJE = is.read_uint32()?;
                 },
-                88 => {
-                    self.IFMAHDAMEDN = is.read_uint32()?;
+                96 => {
+                    self.OENAEHPLPMN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CounterRecoverCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DHHEGCFCFNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DHHEGCFCFNF);
+        if self.BMEBLJKDKJE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.BMEBLJKDKJE);
         }
-        if self.IFMAHDAMEDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.IFMAHDAMEDN);
+        if self.OENAEHPLPMN != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.OENAEHPLPMN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CounterRecoverCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DHHEGCFCFNF != 0 {
-            os.write_uint32(9, self.DHHEGCFCFNF)?;
+        if self.BMEBLJKDKJE != 0 {
+            os.write_uint32(14, self.BMEBLJKDKJE)?;
         }
-        if self.IFMAHDAMEDN != 0 {
-            os.write_uint32(11, self.IFMAHDAMEDN)?;
+        if self.OENAEHPLPMN != 0 {
+            os.write_uint32(12, self.OENAEHPLPMN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CounterRecoverCsReq {
     }
 
     fn clear(&mut self) {
-        self.DHHEGCFCFNF = 0;
-        self.IFMAHDAMEDN = 0;
+        self.BMEBLJKDKJE = 0;
+        self.OENAEHPLPMN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CounterRecoverCsReq {
         static instance: CounterRecoverCsReq = CounterRecoverCsReq {
-            DHHEGCFCFNF: 0,
-            IFMAHDAMEDN: 0,
+            BMEBLJKDKJE: 0,
+            OENAEHPLPMN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for CounterRecoverCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19CounterRecoverCsReq.proto\"Y\n\x13CounterRecoverCsReq\x12\x20\n\
-    \x0bDHHEGCFCFNF\x18\t\x20\x01(\rR\x0bDHHEGCFCFNF\x12\x20\n\x0bIFMAHDAMED\
-    N\x18\x0b\x20\x01(\rR\x0bIFMAHDAMEDNb\x06proto3\
+    \x0bBMEBLJKDKJE\x18\x0e\x20\x01(\rR\x0bBMEBLJKDKJE\x12\x20\n\x0bOENAEHPL\
+    PMN\x18\x0c\x20\x01(\rR\x0bOENAEHPLPMNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

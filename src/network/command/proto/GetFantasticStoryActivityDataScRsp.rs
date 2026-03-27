@@ -30,8 +30,8 @@ pub struct GetFantasticStoryActivityDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetFantasticStoryActivityDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetFantasticStoryActivityDataScRsp.BNFFOAOEHFH)
-    pub BNFFOAOEHFH: ::protobuf::MessageField<super::DCJPOKNJMFM::DCJPOKNJMFM>,
+    // @@protoc_insertion_point(field:GetFantasticStoryActivityDataScRsp.LFKAHLCKFBK)
+    pub LFKAHLCKFBK: ::protobuf::MessageField<super::HEBAFMBAFLK::HEBAFMBAFLK>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFantasticStoryActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl GetFantasticStoryActivityDataScRsp {
             |m: &GetFantasticStoryActivityDataScRsp| { &m.retcode },
             |m: &mut GetFantasticStoryActivityDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DCJPOKNJMFM::DCJPOKNJMFM>(
-            "BNFFOAOEHFH",
-            |m: &GetFantasticStoryActivityDataScRsp| { &m.BNFFOAOEHFH },
-            |m: &mut GetFantasticStoryActivityDataScRsp| { &mut m.BNFFOAOEHFH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HEBAFMBAFLK::HEBAFMBAFLK>(
+            "LFKAHLCKFBK",
+            |m: &GetFantasticStoryActivityDataScRsp| { &m.LFKAHLCKFBK },
+            |m: &mut GetFantasticStoryActivityDataScRsp| { &mut m.LFKAHLCKFBK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFantasticStoryActivityDataScRsp>(
             "GetFantasticStoryActivityDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BNFFOAOEHFH)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFKAHLCKFBK)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
-        if let Some(v) = self.BNFFOAOEHFH.as_ref() {
+        if let Some(v) = self.LFKAHLCKFBK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        if let Some(v) = self.BNFFOAOEHFH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.LFKAHLCKFBK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.BNFFOAOEHFH.clear();
+        self.LFKAHLCKFBK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFantasticStoryActivityDataScRsp {
         static instance: GetFantasticStoryActivityDataScRsp = GetFantasticStoryActivityDataScRsp {
             retcode: 0,
-            BNFFOAOEHFH: ::protobuf::MessageField::none(),
+            LFKAHLCKFBK: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFantasticStoryActivityDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(GetFantasticStoryActivityDataScRsp.proto\x1a\x11DCJPOKNJMFM.proto\"n\
-    \n\"GetFantasticStoryActivityDataScRsp\x12\x18\n\x07retcode\x18\x0f\x20\
-    \x01(\rR\x07retcode\x12.\n\x0bBNFFOAOEHFH\x18\x04\x20\x01(\x0b2\x0c.DCJP\
-    OKNJMFMR\x0bBNFFOAOEHFHb\x06proto3\
+    \n(GetFantasticStoryActivityDataScRsp.proto\x1a\x11HEBAFMBAFLK.proto\"n\
+    \n\"GetFantasticStoryActivityDataScRsp\x12\x18\n\x07retcode\x18\x04\x20\
+    \x01(\rR\x07retcode\x12.\n\x0bLFKAHLCKFBK\x18\x01\x20\x01(\x0b2\x0c.HEBA\
+    FMBAFLKR\x0bLFKAHLCKFBKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DCJPOKNJMFM::file_descriptor().clone());
+            deps.push(super::HEBAFMBAFLK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFantasticStoryActivityDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

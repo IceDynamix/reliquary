@@ -27,62 +27,62 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TreasureDungeonRecordType)
 pub enum TreasureDungeonRecordType {
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_FDIMBPIECBA)
-    OGNGNEHEGJM_FDIMBPIECBA = 0,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_NKACBHENHPC)
-    OGNGNEHEGJM_NKACBHENHPC = 1,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_JONBJHNCHBA)
-    OGNGNEHEGJM_JONBJHNCHBA = 2,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_HPPOLMBNIOB)
-    OGNGNEHEGJM_HPPOLMBNIOB = 3,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_NJPEKJBECDN)
-    OGNGNEHEGJM_NJPEKJBECDN = 5,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_OLBHNHOKPKK)
-    OGNGNEHEGJM_OLBHNHOKPKK = 6,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_NCNDIKKMKDL)
-    OGNGNEHEGJM_NCNDIKKMKDL = 9,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_ACNPEEPDLFE)
-    OGNGNEHEGJM_ACNPEEPDLFE = 10,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_JBBPALDIIPP)
-    OGNGNEHEGJM_JBBPALDIIPP = 11,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_INCKFBKPIMI)
-    OGNGNEHEGJM_INCKFBKPIMI = 15,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_OJBHIGGCBFF)
-    OGNGNEHEGJM_OJBHIGGCBFF = 16,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_NBIBEGGPLNE)
-    OGNGNEHEGJM_NBIBEGGPLNE = 20,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_FHDEIAIOJLG)
-    OGNGNEHEGJM_FHDEIAIOJLG = 24,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_JPLJEMPCJMN)
-    OGNGNEHEGJM_JPLJEMPCJMN = 25,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_KBGOEBJOGBC)
-    OGNGNEHEGJM_KBGOEBJOGBC = 27,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_JEOGAIECHEK)
-    OGNGNEHEGJM_JEOGAIECHEK = 28,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_GLAJKKHFHGG)
-    OGNGNEHEGJM_GLAJKKHFHGG = 29,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_EAIJBKEIJLI)
-    OGNGNEHEGJM_EAIJBKEIJLI = 30,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_DODFFPKELDH)
-    OGNGNEHEGJM_DODFFPKELDH = 31,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_GDLLHBCBENA)
-    OGNGNEHEGJM_GDLLHBCBENA = 33,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_EAHBJGEEPDH)
-    OGNGNEHEGJM_EAHBJGEEPDH = 34,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_HMHOONHMMAH)
-    OGNGNEHEGJM_HMHOONHMMAH = 35,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_MKINGHCBKHP)
-    OGNGNEHEGJM_MKINGHCBKHP = 36,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_JPDDNLJNJEF)
-    OGNGNEHEGJM_JPDDNLJNJEF = 37,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_AMDNBCLBEAD)
-    OGNGNEHEGJM_AMDNBCLBEAD = 40,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_BBDABHFEEDO)
-    OGNGNEHEGJM_BBDABHFEEDO = 41,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_GOOCLFLABMC)
-    OGNGNEHEGJM_GOOCLFLABMC = 42,
-    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.OGNGNEHEGJM_OJPDEGNDFLK)
-    OGNGNEHEGJM_OJPDEGNDFLK = 43,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_HJBJODOCBBK)
+    TreasureDungeonRecordType_HJBJODOCBBK = 0,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_NBGODGLBHJE)
+    TreasureDungeonRecordType_NBGODGLBHJE = 1,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_APOFCPHCPCL)
+    TreasureDungeonRecordType_APOFCPHCPCL = 2,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_MHHDMGJIJEC)
+    TreasureDungeonRecordType_MHHDMGJIJEC = 3,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_JEABIPDMKDL)
+    TreasureDungeonRecordType_JEABIPDMKDL = 5,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_IMIIHIMBGPE)
+    TreasureDungeonRecordType_IMIIHIMBGPE = 6,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_EAFIJECOHCN)
+    TreasureDungeonRecordType_EAFIJECOHCN = 9,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_IBMELAECONA)
+    TreasureDungeonRecordType_IBMELAECONA = 10,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_FJMAKCAMHNG)
+    TreasureDungeonRecordType_FJMAKCAMHNG = 11,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_EPIOLFHMAPM)
+    TreasureDungeonRecordType_EPIOLFHMAPM = 15,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_KEENNCMMNHC)
+    TreasureDungeonRecordType_KEENNCMMNHC = 16,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_DHENOOMOIDI)
+    TreasureDungeonRecordType_DHENOOMOIDI = 20,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_ALBNIHFKNDB)
+    TreasureDungeonRecordType_ALBNIHFKNDB = 24,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_OBAPBDGJKAD)
+    TreasureDungeonRecordType_OBAPBDGJKAD = 25,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_HHMFCPNFGMJ)
+    TreasureDungeonRecordType_HHMFCPNFGMJ = 27,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_LFMDLNMPIPA)
+    TreasureDungeonRecordType_LFMDLNMPIPA = 28,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_BCNANPOANJA)
+    TreasureDungeonRecordType_BCNANPOANJA = 29,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_IHGDFILHOKK)
+    TreasureDungeonRecordType_IHGDFILHOKK = 30,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_FOFGCGBPOLG)
+    TreasureDungeonRecordType_FOFGCGBPOLG = 31,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_HMGOMEKJJCB)
+    TreasureDungeonRecordType_HMGOMEKJJCB = 33,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_JKAEDOOECMO)
+    TreasureDungeonRecordType_JKAEDOOECMO = 34,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_FGONADIEDFC)
+    TreasureDungeonRecordType_FGONADIEDFC = 35,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_KPKGDBFEFAA)
+    TreasureDungeonRecordType_KPKGDBFEFAA = 36,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_BNGGPEGMHGF)
+    TreasureDungeonRecordType_BNGGPEGMHGF = 37,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_HMHHPCKBNFH)
+    TreasureDungeonRecordType_HMHHPCKBNFH = 40,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_MCJFGGHMHKH)
+    TreasureDungeonRecordType_MCJFGGHMHKH = 41,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_BNIONOMGILL)
+    TreasureDungeonRecordType_BNIONOMGILL = 42,
+    // @@protoc_insertion_point(enum_value:TreasureDungeonRecordType.TreasureDungeonRecordType_EOCEMKOFIJF)
+    TreasureDungeonRecordType_EOCEMKOFIJF = 43,
 }
 
 impl ::protobuf::Enum for TreasureDungeonRecordType {
@@ -94,101 +94,101 @@ impl ::protobuf::Enum for TreasureDungeonRecordType {
 
     fn from_i32(value: i32) -> ::std::option::Option<TreasureDungeonRecordType> {
         match value {
-            0 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_FDIMBPIECBA),
-            1 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_NKACBHENHPC),
-            2 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_JONBJHNCHBA),
-            3 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_HPPOLMBNIOB),
-            5 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_NJPEKJBECDN),
-            6 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_OLBHNHOKPKK),
-            9 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_NCNDIKKMKDL),
-            10 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_ACNPEEPDLFE),
-            11 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_JBBPALDIIPP),
-            15 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_INCKFBKPIMI),
-            16 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_OJBHIGGCBFF),
-            20 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_NBIBEGGPLNE),
-            24 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_FHDEIAIOJLG),
-            25 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_JPLJEMPCJMN),
-            27 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_KBGOEBJOGBC),
-            28 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_JEOGAIECHEK),
-            29 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_GLAJKKHFHGG),
-            30 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_EAIJBKEIJLI),
-            31 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_DODFFPKELDH),
-            33 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_GDLLHBCBENA),
-            34 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_EAHBJGEEPDH),
-            35 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_HMHOONHMMAH),
-            36 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_MKINGHCBKHP),
-            37 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_JPDDNLJNJEF),
-            40 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_AMDNBCLBEAD),
-            41 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_BBDABHFEEDO),
-            42 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_GOOCLFLABMC),
-            43 => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_OJPDEGNDFLK),
+            0 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_HJBJODOCBBK),
+            1 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_NBGODGLBHJE),
+            2 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_APOFCPHCPCL),
+            3 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_MHHDMGJIJEC),
+            5 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_JEABIPDMKDL),
+            6 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_IMIIHIMBGPE),
+            9 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_EAFIJECOHCN),
+            10 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_IBMELAECONA),
+            11 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_FJMAKCAMHNG),
+            15 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_EPIOLFHMAPM),
+            16 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_KEENNCMMNHC),
+            20 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_DHENOOMOIDI),
+            24 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_ALBNIHFKNDB),
+            25 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_OBAPBDGJKAD),
+            27 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_HHMFCPNFGMJ),
+            28 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_LFMDLNMPIPA),
+            29 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_BCNANPOANJA),
+            30 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_IHGDFILHOKK),
+            31 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_FOFGCGBPOLG),
+            33 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_HMGOMEKJJCB),
+            34 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_JKAEDOOECMO),
+            35 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_FGONADIEDFC),
+            36 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_KPKGDBFEFAA),
+            37 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_BNGGPEGMHGF),
+            40 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_HMHHPCKBNFH),
+            41 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_MCJFGGHMHKH),
+            42 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_BNIONOMGILL),
+            43 => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_EOCEMKOFIJF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TreasureDungeonRecordType> {
         match str {
-            "OGNGNEHEGJM_FDIMBPIECBA" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_FDIMBPIECBA),
-            "OGNGNEHEGJM_NKACBHENHPC" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_NKACBHENHPC),
-            "OGNGNEHEGJM_JONBJHNCHBA" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_JONBJHNCHBA),
-            "OGNGNEHEGJM_HPPOLMBNIOB" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_HPPOLMBNIOB),
-            "OGNGNEHEGJM_NJPEKJBECDN" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_NJPEKJBECDN),
-            "OGNGNEHEGJM_OLBHNHOKPKK" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_OLBHNHOKPKK),
-            "OGNGNEHEGJM_NCNDIKKMKDL" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_NCNDIKKMKDL),
-            "OGNGNEHEGJM_ACNPEEPDLFE" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_ACNPEEPDLFE),
-            "OGNGNEHEGJM_JBBPALDIIPP" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_JBBPALDIIPP),
-            "OGNGNEHEGJM_INCKFBKPIMI" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_INCKFBKPIMI),
-            "OGNGNEHEGJM_OJBHIGGCBFF" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_OJBHIGGCBFF),
-            "OGNGNEHEGJM_NBIBEGGPLNE" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_NBIBEGGPLNE),
-            "OGNGNEHEGJM_FHDEIAIOJLG" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_FHDEIAIOJLG),
-            "OGNGNEHEGJM_JPLJEMPCJMN" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_JPLJEMPCJMN),
-            "OGNGNEHEGJM_KBGOEBJOGBC" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_KBGOEBJOGBC),
-            "OGNGNEHEGJM_JEOGAIECHEK" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_JEOGAIECHEK),
-            "OGNGNEHEGJM_GLAJKKHFHGG" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_GLAJKKHFHGG),
-            "OGNGNEHEGJM_EAIJBKEIJLI" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_EAIJBKEIJLI),
-            "OGNGNEHEGJM_DODFFPKELDH" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_DODFFPKELDH),
-            "OGNGNEHEGJM_GDLLHBCBENA" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_GDLLHBCBENA),
-            "OGNGNEHEGJM_EAHBJGEEPDH" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_EAHBJGEEPDH),
-            "OGNGNEHEGJM_HMHOONHMMAH" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_HMHOONHMMAH),
-            "OGNGNEHEGJM_MKINGHCBKHP" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_MKINGHCBKHP),
-            "OGNGNEHEGJM_JPDDNLJNJEF" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_JPDDNLJNJEF),
-            "OGNGNEHEGJM_AMDNBCLBEAD" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_AMDNBCLBEAD),
-            "OGNGNEHEGJM_BBDABHFEEDO" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_BBDABHFEEDO),
-            "OGNGNEHEGJM_GOOCLFLABMC" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_GOOCLFLABMC),
-            "OGNGNEHEGJM_OJPDEGNDFLK" => ::std::option::Option::Some(TreasureDungeonRecordType::OGNGNEHEGJM_OJPDEGNDFLK),
+            "TreasureDungeonRecordType_HJBJODOCBBK" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_HJBJODOCBBK),
+            "TreasureDungeonRecordType_NBGODGLBHJE" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_NBGODGLBHJE),
+            "TreasureDungeonRecordType_APOFCPHCPCL" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_APOFCPHCPCL),
+            "TreasureDungeonRecordType_MHHDMGJIJEC" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_MHHDMGJIJEC),
+            "TreasureDungeonRecordType_JEABIPDMKDL" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_JEABIPDMKDL),
+            "TreasureDungeonRecordType_IMIIHIMBGPE" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_IMIIHIMBGPE),
+            "TreasureDungeonRecordType_EAFIJECOHCN" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_EAFIJECOHCN),
+            "TreasureDungeonRecordType_IBMELAECONA" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_IBMELAECONA),
+            "TreasureDungeonRecordType_FJMAKCAMHNG" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_FJMAKCAMHNG),
+            "TreasureDungeonRecordType_EPIOLFHMAPM" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_EPIOLFHMAPM),
+            "TreasureDungeonRecordType_KEENNCMMNHC" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_KEENNCMMNHC),
+            "TreasureDungeonRecordType_DHENOOMOIDI" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_DHENOOMOIDI),
+            "TreasureDungeonRecordType_ALBNIHFKNDB" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_ALBNIHFKNDB),
+            "TreasureDungeonRecordType_OBAPBDGJKAD" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_OBAPBDGJKAD),
+            "TreasureDungeonRecordType_HHMFCPNFGMJ" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_HHMFCPNFGMJ),
+            "TreasureDungeonRecordType_LFMDLNMPIPA" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_LFMDLNMPIPA),
+            "TreasureDungeonRecordType_BCNANPOANJA" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_BCNANPOANJA),
+            "TreasureDungeonRecordType_IHGDFILHOKK" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_IHGDFILHOKK),
+            "TreasureDungeonRecordType_FOFGCGBPOLG" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_FOFGCGBPOLG),
+            "TreasureDungeonRecordType_HMGOMEKJJCB" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_HMGOMEKJJCB),
+            "TreasureDungeonRecordType_JKAEDOOECMO" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_JKAEDOOECMO),
+            "TreasureDungeonRecordType_FGONADIEDFC" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_FGONADIEDFC),
+            "TreasureDungeonRecordType_KPKGDBFEFAA" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_KPKGDBFEFAA),
+            "TreasureDungeonRecordType_BNGGPEGMHGF" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_BNGGPEGMHGF),
+            "TreasureDungeonRecordType_HMHHPCKBNFH" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_HMHHPCKBNFH),
+            "TreasureDungeonRecordType_MCJFGGHMHKH" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_MCJFGGHMHKH),
+            "TreasureDungeonRecordType_BNIONOMGILL" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_BNIONOMGILL),
+            "TreasureDungeonRecordType_EOCEMKOFIJF" => ::std::option::Option::Some(TreasureDungeonRecordType::TreasureDungeonRecordType_EOCEMKOFIJF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TreasureDungeonRecordType] = &[
-        TreasureDungeonRecordType::OGNGNEHEGJM_FDIMBPIECBA,
-        TreasureDungeonRecordType::OGNGNEHEGJM_NKACBHENHPC,
-        TreasureDungeonRecordType::OGNGNEHEGJM_JONBJHNCHBA,
-        TreasureDungeonRecordType::OGNGNEHEGJM_HPPOLMBNIOB,
-        TreasureDungeonRecordType::OGNGNEHEGJM_NJPEKJBECDN,
-        TreasureDungeonRecordType::OGNGNEHEGJM_OLBHNHOKPKK,
-        TreasureDungeonRecordType::OGNGNEHEGJM_NCNDIKKMKDL,
-        TreasureDungeonRecordType::OGNGNEHEGJM_ACNPEEPDLFE,
-        TreasureDungeonRecordType::OGNGNEHEGJM_JBBPALDIIPP,
-        TreasureDungeonRecordType::OGNGNEHEGJM_INCKFBKPIMI,
-        TreasureDungeonRecordType::OGNGNEHEGJM_OJBHIGGCBFF,
-        TreasureDungeonRecordType::OGNGNEHEGJM_NBIBEGGPLNE,
-        TreasureDungeonRecordType::OGNGNEHEGJM_FHDEIAIOJLG,
-        TreasureDungeonRecordType::OGNGNEHEGJM_JPLJEMPCJMN,
-        TreasureDungeonRecordType::OGNGNEHEGJM_KBGOEBJOGBC,
-        TreasureDungeonRecordType::OGNGNEHEGJM_JEOGAIECHEK,
-        TreasureDungeonRecordType::OGNGNEHEGJM_GLAJKKHFHGG,
-        TreasureDungeonRecordType::OGNGNEHEGJM_EAIJBKEIJLI,
-        TreasureDungeonRecordType::OGNGNEHEGJM_DODFFPKELDH,
-        TreasureDungeonRecordType::OGNGNEHEGJM_GDLLHBCBENA,
-        TreasureDungeonRecordType::OGNGNEHEGJM_EAHBJGEEPDH,
-        TreasureDungeonRecordType::OGNGNEHEGJM_HMHOONHMMAH,
-        TreasureDungeonRecordType::OGNGNEHEGJM_MKINGHCBKHP,
-        TreasureDungeonRecordType::OGNGNEHEGJM_JPDDNLJNJEF,
-        TreasureDungeonRecordType::OGNGNEHEGJM_AMDNBCLBEAD,
-        TreasureDungeonRecordType::OGNGNEHEGJM_BBDABHFEEDO,
-        TreasureDungeonRecordType::OGNGNEHEGJM_GOOCLFLABMC,
-        TreasureDungeonRecordType::OGNGNEHEGJM_OJPDEGNDFLK,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_HJBJODOCBBK,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_NBGODGLBHJE,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_APOFCPHCPCL,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_MHHDMGJIJEC,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_JEABIPDMKDL,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_IMIIHIMBGPE,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_EAFIJECOHCN,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_IBMELAECONA,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_FJMAKCAMHNG,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_EPIOLFHMAPM,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_KEENNCMMNHC,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_DHENOOMOIDI,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_ALBNIHFKNDB,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_OBAPBDGJKAD,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_HHMFCPNFGMJ,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_LFMDLNMPIPA,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_BCNANPOANJA,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_IHGDFILHOKK,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_FOFGCGBPOLG,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_HMGOMEKJJCB,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_JKAEDOOECMO,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_FGONADIEDFC,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_KPKGDBFEFAA,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_BNGGPEGMHGF,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_HMHHPCKBNFH,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_MCJFGGHMHKH,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_BNIONOMGILL,
+        TreasureDungeonRecordType::TreasureDungeonRecordType_EOCEMKOFIJF,
     ];
 }
 
@@ -200,34 +200,34 @@ impl ::protobuf::EnumFull for TreasureDungeonRecordType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            TreasureDungeonRecordType::OGNGNEHEGJM_FDIMBPIECBA => 0,
-            TreasureDungeonRecordType::OGNGNEHEGJM_NKACBHENHPC => 1,
-            TreasureDungeonRecordType::OGNGNEHEGJM_JONBJHNCHBA => 2,
-            TreasureDungeonRecordType::OGNGNEHEGJM_HPPOLMBNIOB => 3,
-            TreasureDungeonRecordType::OGNGNEHEGJM_NJPEKJBECDN => 4,
-            TreasureDungeonRecordType::OGNGNEHEGJM_OLBHNHOKPKK => 5,
-            TreasureDungeonRecordType::OGNGNEHEGJM_NCNDIKKMKDL => 6,
-            TreasureDungeonRecordType::OGNGNEHEGJM_ACNPEEPDLFE => 7,
-            TreasureDungeonRecordType::OGNGNEHEGJM_JBBPALDIIPP => 8,
-            TreasureDungeonRecordType::OGNGNEHEGJM_INCKFBKPIMI => 9,
-            TreasureDungeonRecordType::OGNGNEHEGJM_OJBHIGGCBFF => 10,
-            TreasureDungeonRecordType::OGNGNEHEGJM_NBIBEGGPLNE => 11,
-            TreasureDungeonRecordType::OGNGNEHEGJM_FHDEIAIOJLG => 12,
-            TreasureDungeonRecordType::OGNGNEHEGJM_JPLJEMPCJMN => 13,
-            TreasureDungeonRecordType::OGNGNEHEGJM_KBGOEBJOGBC => 14,
-            TreasureDungeonRecordType::OGNGNEHEGJM_JEOGAIECHEK => 15,
-            TreasureDungeonRecordType::OGNGNEHEGJM_GLAJKKHFHGG => 16,
-            TreasureDungeonRecordType::OGNGNEHEGJM_EAIJBKEIJLI => 17,
-            TreasureDungeonRecordType::OGNGNEHEGJM_DODFFPKELDH => 18,
-            TreasureDungeonRecordType::OGNGNEHEGJM_GDLLHBCBENA => 19,
-            TreasureDungeonRecordType::OGNGNEHEGJM_EAHBJGEEPDH => 20,
-            TreasureDungeonRecordType::OGNGNEHEGJM_HMHOONHMMAH => 21,
-            TreasureDungeonRecordType::OGNGNEHEGJM_MKINGHCBKHP => 22,
-            TreasureDungeonRecordType::OGNGNEHEGJM_JPDDNLJNJEF => 23,
-            TreasureDungeonRecordType::OGNGNEHEGJM_AMDNBCLBEAD => 24,
-            TreasureDungeonRecordType::OGNGNEHEGJM_BBDABHFEEDO => 25,
-            TreasureDungeonRecordType::OGNGNEHEGJM_GOOCLFLABMC => 26,
-            TreasureDungeonRecordType::OGNGNEHEGJM_OJPDEGNDFLK => 27,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_HJBJODOCBBK => 0,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_NBGODGLBHJE => 1,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_APOFCPHCPCL => 2,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_MHHDMGJIJEC => 3,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_JEABIPDMKDL => 4,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_IMIIHIMBGPE => 5,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_EAFIJECOHCN => 6,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_IBMELAECONA => 7,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_FJMAKCAMHNG => 8,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_EPIOLFHMAPM => 9,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_KEENNCMMNHC => 10,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_DHENOOMOIDI => 11,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_ALBNIHFKNDB => 12,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_OBAPBDGJKAD => 13,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_HHMFCPNFGMJ => 14,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_LFMDLNMPIPA => 15,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_BCNANPOANJA => 16,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_IHGDFILHOKK => 17,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_FOFGCGBPOLG => 18,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_HMGOMEKJJCB => 19,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_JKAEDOOECMO => 20,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_FGONADIEDFC => 21,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_KPKGDBFEFAA => 22,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_BNGGPEGMHGF => 23,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_HMHHPCKBNFH => 24,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_MCJFGGHMHKH => 25,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_BNIONOMGILL => 26,
+            TreasureDungeonRecordType::TreasureDungeonRecordType_EOCEMKOFIJF => 27,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -235,7 +235,7 @@ impl ::protobuf::EnumFull for TreasureDungeonRecordType {
 
 impl ::std::default::Default for TreasureDungeonRecordType {
     fn default() -> Self {
-        TreasureDungeonRecordType::OGNGNEHEGJM_FDIMBPIECBA
+        TreasureDungeonRecordType::TreasureDungeonRecordType_HJBJODOCBBK
     }
 }
 
@@ -246,25 +246,28 @@ impl TreasureDungeonRecordType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fTreasureDungeonRecordType.proto*\xc7\x06\n\x19TreasureDungeonRecor\
-    dType\x12\x1b\n\x17OGNGNEHEGJM_FDIMBPIECBA\x10\0\x12\x1b\n\x17OGNGNEHEGJ\
-    M_NKACBHENHPC\x10\x01\x12\x1b\n\x17OGNGNEHEGJM_JONBJHNCHBA\x10\x02\x12\
-    \x1b\n\x17OGNGNEHEGJM_HPPOLMBNIOB\x10\x03\x12\x1b\n\x17OGNGNEHEGJM_NJPEK\
-    JBECDN\x10\x05\x12\x1b\n\x17OGNGNEHEGJM_OLBHNHOKPKK\x10\x06\x12\x1b\n\
-    \x17OGNGNEHEGJM_NCNDIKKMKDL\x10\t\x12\x1b\n\x17OGNGNEHEGJM_ACNPEEPDLFE\
-    \x10\n\x12\x1b\n\x17OGNGNEHEGJM_JBBPALDIIPP\x10\x0b\x12\x1b\n\x17OGNGNEH\
-    EGJM_INCKFBKPIMI\x10\x0f\x12\x1b\n\x17OGNGNEHEGJM_OJBHIGGCBFF\x10\x10\
-    \x12\x1b\n\x17OGNGNEHEGJM_NBIBEGGPLNE\x10\x14\x12\x1b\n\x17OGNGNEHEGJM_F\
-    HDEIAIOJLG\x10\x18\x12\x1b\n\x17OGNGNEHEGJM_JPLJEMPCJMN\x10\x19\x12\x1b\
-    \n\x17OGNGNEHEGJM_KBGOEBJOGBC\x10\x1b\x12\x1b\n\x17OGNGNEHEGJM_JEOGAIECH\
-    EK\x10\x1c\x12\x1b\n\x17OGNGNEHEGJM_GLAJKKHFHGG\x10\x1d\x12\x1b\n\x17OGN\
-    GNEHEGJM_EAIJBKEIJLI\x10\x1e\x12\x1b\n\x17OGNGNEHEGJM_DODFFPKELDH\x10\
-    \x1f\x12\x1b\n\x17OGNGNEHEGJM_GDLLHBCBENA\x10!\x12\x1b\n\x17OGNGNEHEGJM_\
-    EAHBJGEEPDH\x10\"\x12\x1b\n\x17OGNGNEHEGJM_HMHOONHMMAH\x10#\x12\x1b\n\
-    \x17OGNGNEHEGJM_MKINGHCBKHP\x10$\x12\x1b\n\x17OGNGNEHEGJM_JPDDNLJNJEF\
-    \x10%\x12\x1b\n\x17OGNGNEHEGJM_AMDNBCLBEAD\x10(\x12\x1b\n\x17OGNGNEHEGJM\
-    _BBDABHFEEDO\x10)\x12\x1b\n\x17OGNGNEHEGJM_GOOCLFLABMC\x10*\x12\x1b\n\
-    \x17OGNGNEHEGJM_OJPDEGNDFLK\x10+b\x06proto3\
+    \n\x1fTreasureDungeonRecordType.proto*\xcf\t\n\x19TreasureDungeonRecordT\
+    ype\x12)\n%TreasureDungeonRecordType_HJBJODOCBBK\x10\0\x12)\n%TreasureDu\
+    ngeonRecordType_NBGODGLBHJE\x10\x01\x12)\n%TreasureDungeonRecordType_APO\
+    FCPHCPCL\x10\x02\x12)\n%TreasureDungeonRecordType_MHHDMGJIJEC\x10\x03\
+    \x12)\n%TreasureDungeonRecordType_JEABIPDMKDL\x10\x05\x12)\n%TreasureDun\
+    geonRecordType_IMIIHIMBGPE\x10\x06\x12)\n%TreasureDungeonRecordType_EAFI\
+    JECOHCN\x10\t\x12)\n%TreasureDungeonRecordType_IBMELAECONA\x10\n\x12)\n%\
+    TreasureDungeonRecordType_FJMAKCAMHNG\x10\x0b\x12)\n%TreasureDungeonReco\
+    rdType_EPIOLFHMAPM\x10\x0f\x12)\n%TreasureDungeonRecordType_KEENNCMMNHC\
+    \x10\x10\x12)\n%TreasureDungeonRecordType_DHENOOMOIDI\x10\x14\x12)\n%Tre\
+    asureDungeonRecordType_ALBNIHFKNDB\x10\x18\x12)\n%TreasureDungeonRecordT\
+    ype_OBAPBDGJKAD\x10\x19\x12)\n%TreasureDungeonRecordType_HHMFCPNFGMJ\x10\
+    \x1b\x12)\n%TreasureDungeonRecordType_LFMDLNMPIPA\x10\x1c\x12)\n%Treasur\
+    eDungeonRecordType_BCNANPOANJA\x10\x1d\x12)\n%TreasureDungeonRecordType_\
+    IHGDFILHOKK\x10\x1e\x12)\n%TreasureDungeonRecordType_FOFGCGBPOLG\x10\x1f\
+    \x12)\n%TreasureDungeonRecordType_HMGOMEKJJCB\x10!\x12)\n%TreasureDungeo\
+    nRecordType_JKAEDOOECMO\x10\"\x12)\n%TreasureDungeonRecordType_FGONADIED\
+    FC\x10#\x12)\n%TreasureDungeonRecordType_KPKGDBFEFAA\x10$\x12)\n%Treasur\
+    eDungeonRecordType_BNGGPEGMHGF\x10%\x12)\n%TreasureDungeonRecordType_HMH\
+    HPCKBNFH\x10(\x12)\n%TreasureDungeonRecordType_MCJFGGHMHKH\x10)\x12)\n%T\
+    reasureDungeonRecordType_BNIONOMGILL\x10*\x12)\n%TreasureDungeonRecordTy\
+    pe_EOCEMKOFIJF\x10+b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

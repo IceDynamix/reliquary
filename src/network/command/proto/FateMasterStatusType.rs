@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FateMasterStatusType)
 pub enum FateMasterStatusType {
-    // @@protoc_insertion_point(enum_value:FateMasterStatusType.PALKPMNMBMI_GKJBAODJMJG)
-    PALKPMNMBMI_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:FateMasterStatusType.PALKPMNMBMI_NDMGBBJCMGF)
-    PALKPMNMBMI_NDMGBBJCMGF = 1,
-    // @@protoc_insertion_point(enum_value:FateMasterStatusType.PALKPMNMBMI_ADDOPILJDKA)
-    PALKPMNMBMI_ADDOPILJDKA = 2,
-    // @@protoc_insertion_point(enum_value:FateMasterStatusType.PALKPMNMBMI_HNDFLPAEOFG)
-    PALKPMNMBMI_HNDFLPAEOFG = 3,
+    // @@protoc_insertion_point(enum_value:FateMasterStatusType.FateMasterStatusType_MNFEPONEDDJ)
+    FateMasterStatusType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:FateMasterStatusType.FateMasterStatusType_IBPEGEAMKCE)
+    FateMasterStatusType_IBPEGEAMKCE = 1,
+    // @@protoc_insertion_point(enum_value:FateMasterStatusType.FateMasterStatusType_AKBNFHBHNME)
+    FateMasterStatusType_AKBNFHBHNME = 2,
+    // @@protoc_insertion_point(enum_value:FateMasterStatusType.FateMasterStatusType_OOPLNEAHOOF)
+    FateMasterStatusType_OOPLNEAHOOF = 3,
 }
 
 impl ::protobuf::Enum for FateMasterStatusType {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for FateMasterStatusType {
 
     fn from_i32(value: i32) -> ::std::option::Option<FateMasterStatusType> {
         match value {
-            0 => ::std::option::Option::Some(FateMasterStatusType::PALKPMNMBMI_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(FateMasterStatusType::PALKPMNMBMI_NDMGBBJCMGF),
-            2 => ::std::option::Option::Some(FateMasterStatusType::PALKPMNMBMI_ADDOPILJDKA),
-            3 => ::std::option::Option::Some(FateMasterStatusType::PALKPMNMBMI_HNDFLPAEOFG),
+            0 => ::std::option::Option::Some(FateMasterStatusType::FateMasterStatusType_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(FateMasterStatusType::FateMasterStatusType_IBPEGEAMKCE),
+            2 => ::std::option::Option::Some(FateMasterStatusType::FateMasterStatusType_AKBNFHBHNME),
+            3 => ::std::option::Option::Some(FateMasterStatusType::FateMasterStatusType_OOPLNEAHOOF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FateMasterStatusType> {
         match str {
-            "PALKPMNMBMI_GKJBAODJMJG" => ::std::option::Option::Some(FateMasterStatusType::PALKPMNMBMI_GKJBAODJMJG),
-            "PALKPMNMBMI_NDMGBBJCMGF" => ::std::option::Option::Some(FateMasterStatusType::PALKPMNMBMI_NDMGBBJCMGF),
-            "PALKPMNMBMI_ADDOPILJDKA" => ::std::option::Option::Some(FateMasterStatusType::PALKPMNMBMI_ADDOPILJDKA),
-            "PALKPMNMBMI_HNDFLPAEOFG" => ::std::option::Option::Some(FateMasterStatusType::PALKPMNMBMI_HNDFLPAEOFG),
+            "FateMasterStatusType_MNFEPONEDDJ" => ::std::option::Option::Some(FateMasterStatusType::FateMasterStatusType_MNFEPONEDDJ),
+            "FateMasterStatusType_IBPEGEAMKCE" => ::std::option::Option::Some(FateMasterStatusType::FateMasterStatusType_IBPEGEAMKCE),
+            "FateMasterStatusType_AKBNFHBHNME" => ::std::option::Option::Some(FateMasterStatusType::FateMasterStatusType_AKBNFHBHNME),
+            "FateMasterStatusType_OOPLNEAHOOF" => ::std::option::Option::Some(FateMasterStatusType::FateMasterStatusType_OOPLNEAHOOF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FateMasterStatusType] = &[
-        FateMasterStatusType::PALKPMNMBMI_GKJBAODJMJG,
-        FateMasterStatusType::PALKPMNMBMI_NDMGBBJCMGF,
-        FateMasterStatusType::PALKPMNMBMI_ADDOPILJDKA,
-        FateMasterStatusType::PALKPMNMBMI_HNDFLPAEOFG,
+        FateMasterStatusType::FateMasterStatusType_MNFEPONEDDJ,
+        FateMasterStatusType::FateMasterStatusType_IBPEGEAMKCE,
+        FateMasterStatusType::FateMasterStatusType_AKBNFHBHNME,
+        FateMasterStatusType::FateMasterStatusType_OOPLNEAHOOF,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for FateMasterStatusType {
 
 impl ::std::default::Default for FateMasterStatusType {
     fn default() -> Self {
-        FateMasterStatusType::PALKPMNMBMI_GKJBAODJMJG
+        FateMasterStatusType::FateMasterStatusType_MNFEPONEDDJ
     }
 }
 
@@ -97,10 +97,10 @@ impl FateMasterStatusType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aFateMasterStatusType.proto*\x8a\x01\n\x14FateMasterStatusType\x12\
-    \x1b\n\x17PALKPMNMBMI_GKJBAODJMJG\x10\0\x12\x1b\n\x17PALKPMNMBMI_NDMGBBJ\
-    CMGF\x10\x01\x12\x1b\n\x17PALKPMNMBMI_ADDOPILJDKA\x10\x02\x12\x1b\n\x17P\
-    ALKPMNMBMI_HNDFLPAEOFG\x10\x03b\x06proto3\
+    \n\x1aFateMasterStatusType.proto*\xae\x01\n\x14FateMasterStatusType\x12$\
+    \n\x20FateMasterStatusType_MNFEPONEDDJ\x10\0\x12$\n\x20FateMasterStatusT\
+    ype_IBPEGEAMKCE\x10\x01\x12$\n\x20FateMasterStatusType_AKBNFHBHNME\x10\
+    \x02\x12$\n\x20FateMasterStatusType_OOPLNEAHOOF\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

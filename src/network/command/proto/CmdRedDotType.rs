@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRedDotType)
 pub enum CmdRedDotType {
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_GKJBAODJMJG)
-    MJFPAECGOJJ_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_DLHNPOBPJNB)
-    MJFPAECGOJJ_DLHNPOBPJNB = 5933,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_IOHCGMBNLFL)
-    MJFPAECGOJJ_IOHCGMBNLFL = 5924,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_EDLCMPALBKF)
-    MJFPAECGOJJ_EDLCMPALBKF = 5939,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_JBCMBHCFJCM)
-    MJFPAECGOJJ_JBCMBHCFJCM = 5949,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_NJAPHKFHEPD)
-    MJFPAECGOJJ_NJAPHKFHEPD = 5907,
-    // @@protoc_insertion_point(enum_value:CmdRedDotType.MJFPAECGOJJ_PAJLDJGLGAD)
-    MJFPAECGOJJ_PAJLDJGLGAD = 5950,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdRedDotType_MNFEPONEDDJ)
+    CmdRedDotType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdRedDotType_JHJFCHFILOE)
+    CmdRedDotType_JHJFCHFILOE = 5914,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdRedDotType_CGLPNFKPIEC)
+    CmdRedDotType_CGLPNFKPIEC = 5939,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdRedDotType_NCPENJAHOKM)
+    CmdRedDotType_NCPENJAHOKM = 5904,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdRedDotType_EJFMHABNNCA)
+    CmdRedDotType_EJFMHABNNCA = 5912,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdRedDotType_EJLGGFGFPDJ)
+    CmdRedDotType_EJLGGFGFPDJ = 5940,
+    // @@protoc_insertion_point(enum_value:CmdRedDotType.CmdRedDotType_DHAEHFCCEEL)
+    CmdRedDotType_DHAEHFCCEEL = 5901,
 }
 
 impl ::protobuf::Enum for CmdRedDotType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for CmdRedDotType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRedDotType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_GKJBAODJMJG),
-            5933 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_DLHNPOBPJNB),
-            5924 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_IOHCGMBNLFL),
-            5939 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_EDLCMPALBKF),
-            5949 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_JBCMBHCFJCM),
-            5907 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_NJAPHKFHEPD),
-            5950 => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_PAJLDJGLGAD),
+            0 => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_MNFEPONEDDJ),
+            5914 => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_JHJFCHFILOE),
+            5939 => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_CGLPNFKPIEC),
+            5904 => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_NCPENJAHOKM),
+            5912 => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_EJFMHABNNCA),
+            5940 => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_EJLGGFGFPDJ),
+            5901 => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_DHAEHFCCEEL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRedDotType> {
         match str {
-            "MJFPAECGOJJ_GKJBAODJMJG" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_GKJBAODJMJG),
-            "MJFPAECGOJJ_DLHNPOBPJNB" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_DLHNPOBPJNB),
-            "MJFPAECGOJJ_IOHCGMBNLFL" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_IOHCGMBNLFL),
-            "MJFPAECGOJJ_EDLCMPALBKF" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_EDLCMPALBKF),
-            "MJFPAECGOJJ_JBCMBHCFJCM" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_JBCMBHCFJCM),
-            "MJFPAECGOJJ_NJAPHKFHEPD" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_NJAPHKFHEPD),
-            "MJFPAECGOJJ_PAJLDJGLGAD" => ::std::option::Option::Some(CmdRedDotType::MJFPAECGOJJ_PAJLDJGLGAD),
+            "CmdRedDotType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_MNFEPONEDDJ),
+            "CmdRedDotType_JHJFCHFILOE" => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_JHJFCHFILOE),
+            "CmdRedDotType_CGLPNFKPIEC" => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_CGLPNFKPIEC),
+            "CmdRedDotType_NCPENJAHOKM" => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_NCPENJAHOKM),
+            "CmdRedDotType_EJFMHABNNCA" => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_EJFMHABNNCA),
+            "CmdRedDotType_EJLGGFGFPDJ" => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_EJLGGFGFPDJ),
+            "CmdRedDotType_DHAEHFCCEEL" => ::std::option::Option::Some(CmdRedDotType::CmdRedDotType_DHAEHFCCEEL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRedDotType] = &[
-        CmdRedDotType::MJFPAECGOJJ_GKJBAODJMJG,
-        CmdRedDotType::MJFPAECGOJJ_DLHNPOBPJNB,
-        CmdRedDotType::MJFPAECGOJJ_IOHCGMBNLFL,
-        CmdRedDotType::MJFPAECGOJJ_EDLCMPALBKF,
-        CmdRedDotType::MJFPAECGOJJ_JBCMBHCFJCM,
-        CmdRedDotType::MJFPAECGOJJ_NJAPHKFHEPD,
-        CmdRedDotType::MJFPAECGOJJ_PAJLDJGLGAD,
+        CmdRedDotType::CmdRedDotType_MNFEPONEDDJ,
+        CmdRedDotType::CmdRedDotType_JHJFCHFILOE,
+        CmdRedDotType::CmdRedDotType_CGLPNFKPIEC,
+        CmdRedDotType::CmdRedDotType_NCPENJAHOKM,
+        CmdRedDotType::CmdRedDotType_EJFMHABNNCA,
+        CmdRedDotType::CmdRedDotType_EJLGGFGFPDJ,
+        CmdRedDotType::CmdRedDotType_DHAEHFCCEEL,
     ];
 }
 
@@ -95,13 +95,13 @@ impl ::protobuf::EnumFull for CmdRedDotType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRedDotType::MJFPAECGOJJ_GKJBAODJMJG => 0,
-            CmdRedDotType::MJFPAECGOJJ_DLHNPOBPJNB => 1,
-            CmdRedDotType::MJFPAECGOJJ_IOHCGMBNLFL => 2,
-            CmdRedDotType::MJFPAECGOJJ_EDLCMPALBKF => 3,
-            CmdRedDotType::MJFPAECGOJJ_JBCMBHCFJCM => 4,
-            CmdRedDotType::MJFPAECGOJJ_NJAPHKFHEPD => 5,
-            CmdRedDotType::MJFPAECGOJJ_PAJLDJGLGAD => 6,
+            CmdRedDotType::CmdRedDotType_MNFEPONEDDJ => 0,
+            CmdRedDotType::CmdRedDotType_JHJFCHFILOE => 1,
+            CmdRedDotType::CmdRedDotType_CGLPNFKPIEC => 2,
+            CmdRedDotType::CmdRedDotType_NCPENJAHOKM => 3,
+            CmdRedDotType::CmdRedDotType_EJFMHABNNCA => 4,
+            CmdRedDotType::CmdRedDotType_EJLGGFGFPDJ => 5,
+            CmdRedDotType::CmdRedDotType_DHAEHFCCEEL => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,7 +109,7 @@ impl ::protobuf::EnumFull for CmdRedDotType {
 
 impl ::std::default::Default for CmdRedDotType {
     fn default() -> Self {
-        CmdRedDotType::MJFPAECGOJJ_GKJBAODJMJG
+        CmdRedDotType::CmdRedDotType_MNFEPONEDDJ
     }
 }
 
@@ -120,12 +120,12 @@ impl CmdRedDotType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdRedDotType.proto*\xe0\x01\n\rCmdRedDotType\x12\x1b\n\x17MJFPAEC\
-    GOJJ_GKJBAODJMJG\x10\0\x12\x1c\n\x17MJFPAECGOJJ_DLHNPOBPJNB\x10\xad.\x12\
-    \x1c\n\x17MJFPAECGOJJ_IOHCGMBNLFL\x10\xa4.\x12\x1c\n\x17MJFPAECGOJJ_EDLC\
-    MPALBKF\x10\xb3.\x12\x1c\n\x17MJFPAECGOJJ_JBCMBHCFJCM\x10\xbd.\x12\x1c\n\
-    \x17MJFPAECGOJJ_NJAPHKFHEPD\x10\x93.\x12\x1c\n\x17MJFPAECGOJJ_PAJLDJGLGA\
-    D\x10\xbe.b\x06proto3\
+    \n\x13CmdRedDotType.proto*\xee\x01\n\rCmdRedDotType\x12\x1d\n\x19CmdRedD\
+    otType_MNFEPONEDDJ\x10\0\x12\x1e\n\x19CmdRedDotType_JHJFCHFILOE\x10\x9a.\
+    \x12\x1e\n\x19CmdRedDotType_CGLPNFKPIEC\x10\xb3.\x12\x1e\n\x19CmdRedDotT\
+    ype_NCPENJAHOKM\x10\x90.\x12\x1e\n\x19CmdRedDotType_EJFMHABNNCA\x10\x98.\
+    \x12\x1e\n\x19CmdRedDotType_EJLGGFGFPDJ\x10\xb4.\x12\x1e\n\x19CmdRedDotT\
+    ype_DHAEHFCCEEL\x10\x8d.b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

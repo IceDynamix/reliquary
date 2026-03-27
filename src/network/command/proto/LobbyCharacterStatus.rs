@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:LobbyCharacterStatus)
 pub enum LobbyCharacterStatus {
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.FFDENDHDPCA_GKJBAODJMJG)
-    FFDENDHDPCA_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.FFDENDHDPCA_PCOFPEKEKMD)
-    FFDENDHDPCA_PCOFPEKEKMD = 1,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.FFDENDHDPCA_IJOJHGDCBFL)
-    FFDENDHDPCA_IJOJHGDCBFL = 2,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.FFDENDHDPCA_DOECGOKIJHB)
-    FFDENDHDPCA_DOECGOKIJHB = 3,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.FFDENDHDPCA_BJNCHIMNHGA)
-    FFDENDHDPCA_BJNCHIMNHGA = 4,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.FFDENDHDPCA_KDNCABEKMAM)
-    FFDENDHDPCA_KDNCABEKMAM = 5,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.FFDENDHDPCA_FEJEMBEMJBM)
-    FFDENDHDPCA_FEJEMBEMJBM = 6,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.FFDENDHDPCA_DKMLKBENOKF)
-    FFDENDHDPCA_DKMLKBENOKF = 7,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_MNFEPONEDDJ)
+    LobbyCharacterStatus_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_HIJAHCMLMPE)
+    LobbyCharacterStatus_HIJAHCMLMPE = 1,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_CCOFPMNBDBI)
+    LobbyCharacterStatus_CCOFPMNBDBI = 2,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_PFKHAKDGDLA)
+    LobbyCharacterStatus_PFKHAKDGDLA = 3,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_DKBKKNNDCEE)
+    LobbyCharacterStatus_DKBKKNNDCEE = 4,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_HJEDIJEFIOC)
+    LobbyCharacterStatus_HJEDIJEFIOC = 5,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_JPJCJPKHFLD)
+    LobbyCharacterStatus_JPJCJPKHFLD = 6,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.LobbyCharacterStatus_JIIFJALLOPI)
+    LobbyCharacterStatus_JIIFJALLOPI = 7,
 }
 
 impl ::protobuf::Enum for LobbyCharacterStatus {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for LobbyCharacterStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<LobbyCharacterStatus> {
         match value {
-            0 => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_PCOFPEKEKMD),
-            2 => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_IJOJHGDCBFL),
-            3 => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_DOECGOKIJHB),
-            4 => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_BJNCHIMNHGA),
-            5 => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_KDNCABEKMAM),
-            6 => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_FEJEMBEMJBM),
-            7 => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_DKMLKBENOKF),
+            0 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_HIJAHCMLMPE),
+            2 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_CCOFPMNBDBI),
+            3 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_PFKHAKDGDLA),
+            4 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_DKBKKNNDCEE),
+            5 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_HJEDIJEFIOC),
+            6 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_JPJCJPKHFLD),
+            7 => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_JIIFJALLOPI),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<LobbyCharacterStatus> {
         match str {
-            "FFDENDHDPCA_GKJBAODJMJG" => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_GKJBAODJMJG),
-            "FFDENDHDPCA_PCOFPEKEKMD" => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_PCOFPEKEKMD),
-            "FFDENDHDPCA_IJOJHGDCBFL" => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_IJOJHGDCBFL),
-            "FFDENDHDPCA_DOECGOKIJHB" => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_DOECGOKIJHB),
-            "FFDENDHDPCA_BJNCHIMNHGA" => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_BJNCHIMNHGA),
-            "FFDENDHDPCA_KDNCABEKMAM" => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_KDNCABEKMAM),
-            "FFDENDHDPCA_FEJEMBEMJBM" => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_FEJEMBEMJBM),
-            "FFDENDHDPCA_DKMLKBENOKF" => ::std::option::Option::Some(LobbyCharacterStatus::FFDENDHDPCA_DKMLKBENOKF),
+            "LobbyCharacterStatus_MNFEPONEDDJ" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_MNFEPONEDDJ),
+            "LobbyCharacterStatus_HIJAHCMLMPE" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_HIJAHCMLMPE),
+            "LobbyCharacterStatus_CCOFPMNBDBI" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_CCOFPMNBDBI),
+            "LobbyCharacterStatus_PFKHAKDGDLA" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_PFKHAKDGDLA),
+            "LobbyCharacterStatus_DKBKKNNDCEE" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_DKBKKNNDCEE),
+            "LobbyCharacterStatus_HJEDIJEFIOC" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_HJEDIJEFIOC),
+            "LobbyCharacterStatus_JPJCJPKHFLD" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_JPJCJPKHFLD),
+            "LobbyCharacterStatus_JIIFJALLOPI" => ::std::option::Option::Some(LobbyCharacterStatus::LobbyCharacterStatus_JIIFJALLOPI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [LobbyCharacterStatus] = &[
-        LobbyCharacterStatus::FFDENDHDPCA_GKJBAODJMJG,
-        LobbyCharacterStatus::FFDENDHDPCA_PCOFPEKEKMD,
-        LobbyCharacterStatus::FFDENDHDPCA_IJOJHGDCBFL,
-        LobbyCharacterStatus::FFDENDHDPCA_DOECGOKIJHB,
-        LobbyCharacterStatus::FFDENDHDPCA_BJNCHIMNHGA,
-        LobbyCharacterStatus::FFDENDHDPCA_KDNCABEKMAM,
-        LobbyCharacterStatus::FFDENDHDPCA_FEJEMBEMJBM,
-        LobbyCharacterStatus::FFDENDHDPCA_DKMLKBENOKF,
+        LobbyCharacterStatus::LobbyCharacterStatus_MNFEPONEDDJ,
+        LobbyCharacterStatus::LobbyCharacterStatus_HIJAHCMLMPE,
+        LobbyCharacterStatus::LobbyCharacterStatus_CCOFPMNBDBI,
+        LobbyCharacterStatus::LobbyCharacterStatus_PFKHAKDGDLA,
+        LobbyCharacterStatus::LobbyCharacterStatus_DKBKKNNDCEE,
+        LobbyCharacterStatus::LobbyCharacterStatus_HJEDIJEFIOC,
+        LobbyCharacterStatus::LobbyCharacterStatus_JPJCJPKHFLD,
+        LobbyCharacterStatus::LobbyCharacterStatus_JIIFJALLOPI,
     ];
 }
 
@@ -106,7 +106,7 @@ impl ::protobuf::EnumFull for LobbyCharacterStatus {
 
 impl ::std::default::Default for LobbyCharacterStatus {
     fn default() -> Self {
-        LobbyCharacterStatus::FFDENDHDPCA_GKJBAODJMJG
+        LobbyCharacterStatus::LobbyCharacterStatus_MNFEPONEDDJ
     }
 }
 
@@ -117,13 +117,13 @@ impl LobbyCharacterStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aLobbyCharacterStatus.proto*\xfe\x01\n\x14LobbyCharacterStatus\x12\
-    \x1b\n\x17FFDENDHDPCA_GKJBAODJMJG\x10\0\x12\x1b\n\x17FFDENDHDPCA_PCOFPEK\
-    EKMD\x10\x01\x12\x1b\n\x17FFDENDHDPCA_IJOJHGDCBFL\x10\x02\x12\x1b\n\x17F\
-    FDENDHDPCA_DOECGOKIJHB\x10\x03\x12\x1b\n\x17FFDENDHDPCA_BJNCHIMNHGA\x10\
-    \x04\x12\x1b\n\x17FFDENDHDPCA_KDNCABEKMAM\x10\x05\x12\x1b\n\x17FFDENDHDP\
-    CA_FEJEMBEMJBM\x10\x06\x12\x1b\n\x17FFDENDHDPCA_DKMLKBENOKF\x10\x07b\x06\
-    proto3\
+    \n\x1aLobbyCharacterStatus.proto*\xc6\x02\n\x14LobbyCharacterStatus\x12$\
+    \n\x20LobbyCharacterStatus_MNFEPONEDDJ\x10\0\x12$\n\x20LobbyCharacterSta\
+    tus_HIJAHCMLMPE\x10\x01\x12$\n\x20LobbyCharacterStatus_CCOFPMNBDBI\x10\
+    \x02\x12$\n\x20LobbyCharacterStatus_PFKHAKDGDLA\x10\x03\x12$\n\x20LobbyC\
+    haracterStatus_DKBKKNNDCEE\x10\x04\x12$\n\x20LobbyCharacterStatus_HJEDIJ\
+    EFIOC\x10\x05\x12$\n\x20LobbyCharacterStatus_JPJCJPKHFLD\x10\x06\x12$\n\
+    \x20LobbyCharacterStatus_JIIFJALLOPI\x10\x07b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

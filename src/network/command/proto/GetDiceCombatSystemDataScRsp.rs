@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetDiceCombatSystemDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.NMJPMNMCNEK)
-    pub NMJPMNMCNEK: u32,
+    // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.OGCHHFNHMDN)
+    pub OGCHHFNHMDN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.AIPDBPAOPOA)
+    pub AIPDBPAOPOA: u32,
+    // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::DiceCombatAvatar::DiceCombatAvatar>,
+    // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.NFNIJDLCJKN)
+    pub NFNIJDLCJKN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.LABBIFFPOED)
+    pub LABBIFFPOED: ::std::vec::Vec<super::EHDFCHBNJAB::EHDFCHBNJAB>,
     // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.ABNJMBGFBJL)
-    pub ABNJMBGFBJL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::OCDHOKOGNDM::OCDHOKOGNDM>,
-    // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.HFEIFHAHEHF)
-    pub HFEIFHAHEHF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetDiceCombatSystemDataScRsp.BINLLGHFGHN)
-    pub BINLLGHFGHN: ::std::vec::Vec<super::MDICKAFBGCL::MDICKAFBGCL>,
     // special fields
     // @@protoc_insertion_point(special_field:GetDiceCombatSystemDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,20 +59,15 @@ impl GetDiceCombatSystemDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NMJPMNMCNEK",
-            |m: &GetDiceCombatSystemDataScRsp| { &m.NMJPMNMCNEK },
-            |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.NMJPMNMCNEK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetDiceCombatSystemDataScRsp| { &m.retcode },
-            |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ABNJMBGFBJL",
-            |m: &GetDiceCombatSystemDataScRsp| { &m.ABNJMBGFBJL },
-            |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.ABNJMBGFBJL },
+            "OGCHHFNHMDN",
+            |m: &GetDiceCombatSystemDataScRsp| { &m.OGCHHFNHMDN },
+            |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.OGCHHFNHMDN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AIPDBPAOPOA",
+            |m: &GetDiceCombatSystemDataScRsp| { &m.AIPDBPAOPOA },
+            |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.AIPDBPAOPOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -80,14 +75,19 @@ impl GetDiceCombatSystemDataScRsp {
             |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HFEIFHAHEHF",
-            |m: &GetDiceCombatSystemDataScRsp| { &m.HFEIFHAHEHF },
-            |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.HFEIFHAHEHF },
+            "NFNIJDLCJKN",
+            |m: &GetDiceCombatSystemDataScRsp| { &m.NFNIJDLCJKN },
+            |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.NFNIJDLCJKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BINLLGHFGHN",
-            |m: &GetDiceCombatSystemDataScRsp| { &m.BINLLGHFGHN },
-            |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.BINLLGHFGHN },
+            "LABBIFFPOED",
+            |m: &GetDiceCombatSystemDataScRsp| { &m.LABBIFFPOED },
+            |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.LABBIFFPOED },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetDiceCombatSystemDataScRsp| { &m.retcode },
+            |m: &mut GetDiceCombatSystemDataScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetDiceCombatSystemDataScRsp>(
             "GetDiceCombatSystemDataScRsp",
@@ -107,29 +107,29 @@ impl ::protobuf::Message for GetDiceCombatSystemDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.NMJPMNMCNEK = is.read_uint32()?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.OGCHHFNHMDN)?;
                 },
-                72 => {
-                    self.retcode = is.read_uint32()?;
+                16 => {
+                    self.OGCHHFNHMDN.push(is.read_uint32()?);
                 },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ABNJMBGFBJL)?;
-                },
-                56 => {
-                    self.ABNJMBGFBJL.push(is.read_uint32()?);
+                64 => {
+                    self.AIPDBPAOPOA = is.read_uint32()?;
                 },
                 10 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HFEIFHAHEHF)?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NFNIJDLCJKN)?;
                 },
-                40 => {
-                    self.HFEIFHAHEHF.push(is.read_uint32()?);
+                80 => {
+                    self.NFNIJDLCJKN.push(is.read_uint32()?);
                 },
-                90 => {
-                    self.BINLLGHFGHN.push(is.read_message()?);
+                26 => {
+                    self.LABBIFFPOED.push(is.read_message()?);
+                },
+                120 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -143,42 +143,42 @@ impl ::protobuf::Message for GetDiceCombatSystemDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NMJPMNMCNEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.NMJPMNMCNEK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.OGCHHFNHMDN);
+        if self.AIPDBPAOPOA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.AIPDBPAOPOA);
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.ABNJMBGFBJL);
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.HFEIFHAHEHF);
-        for value in &self.BINLLGHFGHN {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.NFNIJDLCJKN);
+        for value in &self.LABBIFFPOED {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NMJPMNMCNEK != 0 {
-            os.write_uint32(12, self.NMJPMNMCNEK)?;
+        os.write_repeated_packed_uint32(2, &self.OGCHHFNHMDN)?;
+        if self.AIPDBPAOPOA != 0 {
+            os.write_uint32(8, self.AIPDBPAOPOA)?;
         }
-        if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
-        }
-        os.write_repeated_packed_uint32(7, &self.ABNJMBGFBJL)?;
         for v in &self.avatar_list {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        os.write_repeated_packed_uint32(5, &self.HFEIFHAHEHF)?;
-        for v in &self.BINLLGHFGHN {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        os.write_repeated_packed_uint32(10, &self.NFNIJDLCJKN)?;
+        for v in &self.LABBIFFPOED {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(15, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -196,23 +196,23 @@ impl ::protobuf::Message for GetDiceCombatSystemDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.NMJPMNMCNEK = 0;
-        self.retcode = 0;
-        self.ABNJMBGFBJL.clear();
+        self.OGCHHFNHMDN.clear();
+        self.AIPDBPAOPOA = 0;
         self.avatar_list.clear();
-        self.HFEIFHAHEHF.clear();
-        self.BINLLGHFGHN.clear();
+        self.NFNIJDLCJKN.clear();
+        self.LABBIFFPOED.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetDiceCombatSystemDataScRsp {
         static instance: GetDiceCombatSystemDataScRsp = GetDiceCombatSystemDataScRsp {
-            NMJPMNMCNEK: 0,
-            retcode: 0,
-            ABNJMBGFBJL: ::std::vec::Vec::new(),
+            OGCHHFNHMDN: ::std::vec::Vec::new(),
+            AIPDBPAOPOA: 0,
             avatar_list: ::std::vec::Vec::new(),
-            HFEIFHAHEHF: ::std::vec::Vec::new(),
-            BINLLGHFGHN: ::std::vec::Vec::new(),
+            NFNIJDLCJKN: ::std::vec::Vec::new(),
+            LABBIFFPOED: ::std::vec::Vec::new(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,14 +237,14 @@ impl ::protobuf::reflect::ProtobufValue for GetDiceCombatSystemDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetDiceCombatSystemDataScRsp.proto\x1a\x11MDICKAFBGCL.proto\x1a\x11O\
-    CDHOKOGNDM.proto\"\xfd\x01\n\x1cGetDiceCombatSystemDataScRsp\x12\x20\n\
-    \x0bNMJPMNMCNEK\x18\x0c\x20\x01(\rR\x0bNMJPMNMCNEK\x12\x18\n\x07retcode\
-    \x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bABNJMBGFBJL\x18\x07\x20\x03(\
-    \rR\x0bABNJMBGFBJL\x12-\n\x0bavatar_list\x18\x01\x20\x03(\x0b2\x0c.OCDHO\
-    KOGNDMR\navatarList\x12\x20\n\x0bHFEIFHAHEHF\x18\x05\x20\x03(\rR\x0bHFEI\
-    FHAHEHF\x12.\n\x0bBINLLGHFGHN\x18\x0b\x20\x03(\x0b2\x0c.MDICKAFBGCLR\x0b\
-    BINLLGHFGHNb\x06proto3\
+    \n\"GetDiceCombatSystemDataScRsp.proto\x1a\x16DiceCombatAvatar.proto\x1a\
+    \x11EHDFCHBNJAB.proto\"\x82\x02\n\x1cGetDiceCombatSystemDataScRsp\x12\
+    \x20\n\x0bOGCHHFNHMDN\x18\x02\x20\x03(\rR\x0bOGCHHFNHMDN\x12\x20\n\x0bAI\
+    PDBPAOPOA\x18\x08\x20\x01(\rR\x0bAIPDBPAOPOA\x122\n\x0bavatar_list\x18\
+    \x01\x20\x03(\x0b2\x11.DiceCombatAvatarR\navatarList\x12\x20\n\x0bNFNIJD\
+    LCJKN\x18\n\x20\x03(\rR\x0bNFNIJDLCJKN\x12.\n\x0bLABBIFFPOED\x18\x03\x20\
+    \x03(\x0b2\x0c.EHDFCHBNJABR\x0bLABBIFFPOED\x12\x18\n\x07retcode\x18\x0f\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -262,8 +262,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::MDICKAFBGCL::file_descriptor().clone());
-            deps.push(super::OCDHOKOGNDM::file_descriptor().clone());
+            deps.push(super::DiceCombatAvatar::file_descriptor().clone());
+            deps.push(super::EHDFCHBNJAB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetDiceCombatSystemDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

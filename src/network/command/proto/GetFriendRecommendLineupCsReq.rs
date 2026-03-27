@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendRecommendLineupCsReq {
     // message fields
+    // @@protoc_insertion_point(field:GetFriendRecommendLineupCsReq.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::AMOIPPAJLLN::AMOIPPAJLLN>,
     // @@protoc_insertion_point(field:GetFriendRecommendLineupCsReq.key)
     pub key: u32,
-    // @@protoc_insertion_point(field:GetFriendRecommendLineupCsReq.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::AJLJOLEJLAC::AJLJOLEJLAC>,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendRecommendLineupCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GetFriendRecommendLineupCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "key",
-            |m: &GetFriendRecommendLineupCsReq| { &m.key },
-            |m: &mut GetFriendRecommendLineupCsReq| { &mut m.key },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
             |m: &GetFriendRecommendLineupCsReq| { &m.type_ },
             |m: &mut GetFriendRecommendLineupCsReq| { &mut m.type_ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "key",
+            |m: &GetFriendRecommendLineupCsReq| { &m.key },
+            |m: &mut GetFriendRecommendLineupCsReq| { &mut m.key },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendRecommendLineupCsReq>(
             "GetFriendRecommendLineupCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetFriendRecommendLineupCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.key = is.read_uint32()?;
-                },
-                72 => {
+                120 => {
                     self.type_ = is.read_enum_or_unknown()?;
+                },
+                24 => {
+                    self.key = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GetFriendRecommendLineupCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.key != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.key);
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::AMOIPPAJLLN::AMOIPPAJLLN::AMOIPPAJLLN_MNFEPONEDDJ) {
+            my_size += ::protobuf::rt::int32_size(15, self.type_.value());
         }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::AJLJOLEJLAC::AJLJOLEJLAC::AJLJOLEJLAC_GKJBAODJMJG) {
-            my_size += ::protobuf::rt::int32_size(9, self.type_.value());
+        if self.key != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.key);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GetFriendRecommendLineupCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.key != 0 {
-            os.write_uint32(2, self.key)?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::AMOIPPAJLLN::AMOIPPAJLLN::AMOIPPAJLLN_MNFEPONEDDJ) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.type_))?;
         }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::AJLJOLEJLAC::AJLJOLEJLAC::AJLJOLEJLAC_GKJBAODJMJG) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        if self.key != 0 {
+            os.write_uint32(3, self.key)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GetFriendRecommendLineupCsReq {
     }
 
     fn clear(&mut self) {
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::AMOIPPAJLLN::AMOIPPAJLLN::AMOIPPAJLLN_MNFEPONEDDJ);
         self.key = 0;
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::AJLJOLEJLAC::AJLJOLEJLAC::AJLJOLEJLAC_GKJBAODJMJG);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendRecommendLineupCsReq {
         static instance: GetFriendRecommendLineupCsReq = GetFriendRecommendLineupCsReq {
-            key: 0,
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            key: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendRecommendLineupCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#GetFriendRecommendLineupCsReq.proto\x1a\x11AJLJOLEJLAC.proto\"S\n\x1d\
-    GetFriendRecommendLineupCsReq\x12\x10\n\x03key\x18\x02\x20\x01(\rR\x03ke\
-    y\x12\x20\n\x04type\x18\t\x20\x01(\x0e2\x0c.AJLJOLEJLACR\x04typeb\x06pro\
-    to3\
+    \n#GetFriendRecommendLineupCsReq.proto\x1a\x11AMOIPPAJLLN.proto\"S\n\x1d\
+    GetFriendRecommendLineupCsReq\x12\x20\n\x04type\x18\x0f\x20\x01(\x0e2\
+    \x0c.AMOIPPAJLLNR\x04type\x12\x10\n\x03key\x18\x03\x20\x01(\rR\x03keyb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AJLJOLEJLAC::file_descriptor().clone());
+            deps.push(super::AMOIPPAJLLN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFriendRecommendLineupCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

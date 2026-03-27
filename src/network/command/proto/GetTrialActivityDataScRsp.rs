@@ -32,12 +32,12 @@ pub struct GetTrialActivityDataScRsp {
     pub activity_stage_id: u32,
     // @@protoc_insertion_point(field:GetTrialActivityDataScRsp.trial_activity_info_list)
     pub trial_activity_info_list: ::std::vec::Vec<super::TrialActivityInfo::TrialActivityInfo>,
-    // @@protoc_insertion_point(field:GetTrialActivityDataScRsp.EBNFNFOMNKF)
-    pub EBNFNFOMNKF: ::std::vec::Vec<super::BLHIFANBENI::BLHIFANBENI>,
-    // @@protoc_insertion_point(field:GetTrialActivityDataScRsp.JOPPIANLJPH)
-    pub JOPPIANLJPH: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GetTrialActivityDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetTrialActivityDataScRsp.IEMDEAIADFG)
+    pub IEMDEAIADFG: ::std::vec::Vec<super::JAKOEDNAGEN::JAKOEDNAGEN>,
+    // @@protoc_insertion_point(field:GetTrialActivityDataScRsp.MNEMADCNDLC)
+    pub MNEMADCNDLC: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetTrialActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,20 +67,20 @@ impl GetTrialActivityDataScRsp {
             |m: &GetTrialActivityDataScRsp| { &m.trial_activity_info_list },
             |m: &mut GetTrialActivityDataScRsp| { &mut m.trial_activity_info_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EBNFNFOMNKF",
-            |m: &GetTrialActivityDataScRsp| { &m.EBNFNFOMNKF },
-            |m: &mut GetTrialActivityDataScRsp| { &mut m.EBNFNFOMNKF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JOPPIANLJPH",
-            |m: &GetTrialActivityDataScRsp| { &m.JOPPIANLJPH },
-            |m: &mut GetTrialActivityDataScRsp| { &mut m.JOPPIANLJPH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetTrialActivityDataScRsp| { &m.retcode },
             |m: &mut GetTrialActivityDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IEMDEAIADFG",
+            |m: &GetTrialActivityDataScRsp| { &m.IEMDEAIADFG },
+            |m: &mut GetTrialActivityDataScRsp| { &mut m.IEMDEAIADFG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MNEMADCNDLC",
+            |m: &GetTrialActivityDataScRsp| { &m.MNEMADCNDLC },
+            |m: &mut GetTrialActivityDataScRsp| { &mut m.MNEMADCNDLC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetTrialActivityDataScRsp>(
             "GetTrialActivityDataScRsp",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for GetTrialActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                32 => {
                     self.activity_stage_id = is.read_uint32()?;
                 },
-                74 => {
+                114 => {
                     self.trial_activity_info_list.push(is.read_message()?);
                 },
-                90 => {
-                    self.EBNFNFOMNKF.push(is.read_message()?);
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JOPPIANLJPH)?;
-                },
-                8 => {
-                    self.JOPPIANLJPH.push(is.read_uint32()?);
-                },
-                24 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                58 => {
+                    self.IEMDEAIADFG.push(is.read_message()?);
+                },
+                74 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MNEMADCNDLC)?;
+                },
+                72 => {
+                    self.MNEMADCNDLC.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,20 +131,20 @@ impl ::protobuf::Message for GetTrialActivityDataScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.activity_stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.activity_stage_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.activity_stage_id);
         }
         for value in &self.trial_activity_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.EBNFNFOMNKF {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        for value in &self.IEMDEAIADFG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.JOPPIANLJPH);
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.MNEMADCNDLC);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -152,18 +152,18 @@ impl ::protobuf::Message for GetTrialActivityDataScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.activity_stage_id != 0 {
-            os.write_uint32(5, self.activity_stage_id)?;
+            os.write_uint32(4, self.activity_stage_id)?;
         }
         for v in &self.trial_activity_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
-        for v in &self.EBNFNFOMNKF {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        os.write_repeated_packed_uint32(1, &self.JOPPIANLJPH)?;
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
+        for v in &self.IEMDEAIADFG {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
+        os.write_repeated_packed_uint32(9, &self.MNEMADCNDLC)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -183,9 +183,9 @@ impl ::protobuf::Message for GetTrialActivityDataScRsp {
     fn clear(&mut self) {
         self.activity_stage_id = 0;
         self.trial_activity_info_list.clear();
-        self.EBNFNFOMNKF.clear();
-        self.JOPPIANLJPH.clear();
         self.retcode = 0;
+        self.IEMDEAIADFG.clear();
+        self.MNEMADCNDLC.clear();
         self.special_fields.clear();
     }
 
@@ -193,9 +193,9 @@ impl ::protobuf::Message for GetTrialActivityDataScRsp {
         static instance: GetTrialActivityDataScRsp = GetTrialActivityDataScRsp {
             activity_stage_id: 0,
             trial_activity_info_list: ::std::vec::Vec::new(),
-            EBNFNFOMNKF: ::std::vec::Vec::new(),
-            JOPPIANLJPH: ::std::vec::Vec::new(),
             retcode: 0,
+            IEMDEAIADFG: ::std::vec::Vec::new(),
+            MNEMADCNDLC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,13 +220,13 @@ impl ::protobuf::reflect::ProtobufValue for GetTrialActivityDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetTrialActivityDataScRsp.proto\x1a\x11BLHIFANBENI.proto\x1a\x17Tr\
+    \n\x1fGetTrialActivityDataScRsp.proto\x1a\x11JAKOEDNAGEN.proto\x1a\x17Tr\
     ialActivityInfo.proto\"\x80\x02\n\x19GetTrialActivityDataScRsp\x12*\n\
-    \x11activity_stage_id\x18\x05\x20\x01(\rR\x0factivityStageId\x12K\n\x18t\
-    rial_activity_info_list\x18\t\x20\x03(\x0b2\x12.TrialActivityInfoR\x15tr\
-    ialActivityInfoList\x12.\n\x0bEBNFNFOMNKF\x18\x0b\x20\x03(\x0b2\x0c.BLHI\
-    FANBENIR\x0bEBNFNFOMNKF\x12\x20\n\x0bJOPPIANLJPH\x18\x01\x20\x03(\rR\x0b\
-    JOPPIANLJPH\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06prot\
+    \x11activity_stage_id\x18\x04\x20\x01(\rR\x0factivityStageId\x12K\n\x18t\
+    rial_activity_info_list\x18\x0e\x20\x03(\x0b2\x12.TrialActivityInfoR\x15\
+    trialActivityInfoList\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcod\
+    e\x12.\n\x0bIEMDEAIADFG\x18\x07\x20\x03(\x0b2\x0c.JAKOEDNAGENR\x0bIEMDEA\
+    IADFG\x12\x20\n\x0bMNEMADCNDLC\x18\t\x20\x03(\rR\x0bMNEMADCNDLCb\x06prot\
     o3\
 ";
 
@@ -245,7 +245,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::BLHIFANBENI::file_descriptor().clone());
+            deps.push(super::JAKOEDNAGEN::file_descriptor().clone());
             deps.push(super::TrialActivityInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetTrialActivityDataScRsp::generated_message_descriptor_data());

@@ -27,48 +27,48 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdTravelBrochureType)
 pub enum CmdTravelBrochureType {
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_HNMEPDFCPJC)
-    AEMFGDIOOJK_HNMEPDFCPJC = 0,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_BMPEENGDMPI)
-    AEMFGDIOOJK_BMPEENGDMPI = 6455,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_ACBNAGFEFAH)
-    AEMFGDIOOJK_ACBNAGFEFAH = 6447,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_FBEGAMHMKDH)
-    AEMFGDIOOJK_FBEGAMHMKDH = 6466,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_EDDONANGOKA)
-    AEMFGDIOOJK_EDDONANGOKA = 6405,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_GHAMOHIDCBI)
-    AEMFGDIOOJK_GHAMOHIDCBI = 6483,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_HPGFBEPACFO)
-    AEMFGDIOOJK_HPGFBEPACFO = 6476,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_CMLFOCJPGOB)
-    AEMFGDIOOJK_CMLFOCJPGOB = 6489,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_BPGKLHJOBGK)
-    AEMFGDIOOJK_BPGKLHJOBGK = 6496,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_APHMBFADBMP)
-    AEMFGDIOOJK_APHMBFADBMP = 6434,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_JFCINPKLPEL)
-    AEMFGDIOOJK_JFCINPKLPEL = 6495,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_EMOAJEDNGDN)
-    AEMFGDIOOJK_EMOAJEDNGDN = 6493,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_JBPFCEPFMEO)
-    AEMFGDIOOJK_JBPFCEPFMEO = 6437,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_KGGAJNHLKGI)
-    AEMFGDIOOJK_KGGAJNHLKGI = 6420,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_MGOJBCBFJDB)
-    AEMFGDIOOJK_MGOJBCBFJDB = 6457,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_OJPGCPOAGEL)
-    AEMFGDIOOJK_OJPGCPOAGEL = 6462,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_JADJMANKPKJ)
-    AEMFGDIOOJK_JADJMANKPKJ = 6438,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_NNMLPGODMLG)
-    AEMFGDIOOJK_NNMLPGODMLG = 6469,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_OCGGIAIECFL)
-    AEMFGDIOOJK_OCGGIAIECFL = 6428,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_KBBBDCFIOCG)
-    AEMFGDIOOJK_KBBBDCFIOCG = 6426,
-    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.AEMFGDIOOJK_GLHPFALFLHH)
-    AEMFGDIOOJK_GLHPFALFLHH = 6445,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_ECGOHIKEOPF)
+    CmdTravelBrochureType_ECGOHIKEOPF = 0,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_NLGGIPCKLFI)
+    CmdTravelBrochureType_NLGGIPCKLFI = 6488,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_JPJIOFPBEHB)
+    CmdTravelBrochureType_JPJIOFPBEHB = 6481,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_JEEICJOOHCJ)
+    CmdTravelBrochureType_JEEICJOOHCJ = 6469,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_OMBCOFKJBPJ)
+    CmdTravelBrochureType_OMBCOFKJBPJ = 6435,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_ALACOMJNDPM)
+    CmdTravelBrochureType_ALACOMJNDPM = 6456,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_PMLOHDDMJGJ)
+    CmdTravelBrochureType_PMLOHDDMJGJ = 6457,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_IEMCHLBODJM)
+    CmdTravelBrochureType_IEMCHLBODJM = 6448,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_AHLIODCBHNA)
+    CmdTravelBrochureType_AHLIODCBHNA = 6483,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_OAMBBKMMEIM)
+    CmdTravelBrochureType_OAMBBKMMEIM = 6446,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_EEJBKFOFJFC)
+    CmdTravelBrochureType_EEJBKFOFJFC = 6424,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_GODKAOKHGMO)
+    CmdTravelBrochureType_GODKAOKHGMO = 6409,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_ILBICOEPEBA)
+    CmdTravelBrochureType_ILBICOEPEBA = 6423,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_DJOPFBABKCI)
+    CmdTravelBrochureType_DJOPFBABKCI = 6486,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_NKDHDLFOIDM)
+    CmdTravelBrochureType_NKDHDLFOIDM = 6440,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_AHCJPLEEMNO)
+    CmdTravelBrochureType_AHCJPLEEMNO = 6484,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_JKMBIFFHCNC)
+    CmdTravelBrochureType_JKMBIFFHCNC = 6462,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_HIFIPHCIKJP)
+    CmdTravelBrochureType_HIFIPHCIKJP = 6403,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_OMJMDKKIFKL)
+    CmdTravelBrochureType_OMJMDKKIFKL = 6434,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_HGODJEPGBCL)
+    CmdTravelBrochureType_HGODJEPGBCL = 6500,
+    // @@protoc_insertion_point(enum_value:CmdTravelBrochureType.CmdTravelBrochureType_LEIJAEGDOLK)
+    CmdTravelBrochureType_LEIJAEGDOLK = 6413,
 }
 
 impl ::protobuf::Enum for CmdTravelBrochureType {
@@ -80,80 +80,80 @@ impl ::protobuf::Enum for CmdTravelBrochureType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdTravelBrochureType> {
         match value {
-            0 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_HNMEPDFCPJC),
-            6455 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_BMPEENGDMPI),
-            6447 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_ACBNAGFEFAH),
-            6466 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_FBEGAMHMKDH),
-            6405 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_EDDONANGOKA),
-            6483 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_GHAMOHIDCBI),
-            6476 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_HPGFBEPACFO),
-            6489 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_CMLFOCJPGOB),
-            6496 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_BPGKLHJOBGK),
-            6434 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_APHMBFADBMP),
-            6495 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_JFCINPKLPEL),
-            6493 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_EMOAJEDNGDN),
-            6437 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_JBPFCEPFMEO),
-            6420 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_KGGAJNHLKGI),
-            6457 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_MGOJBCBFJDB),
-            6462 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_OJPGCPOAGEL),
-            6438 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_JADJMANKPKJ),
-            6469 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_NNMLPGODMLG),
-            6428 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_OCGGIAIECFL),
-            6426 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_KBBBDCFIOCG),
-            6445 => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_GLHPFALFLHH),
+            0 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_ECGOHIKEOPF),
+            6488 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_NLGGIPCKLFI),
+            6481 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_JPJIOFPBEHB),
+            6469 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_JEEICJOOHCJ),
+            6435 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_OMBCOFKJBPJ),
+            6456 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_ALACOMJNDPM),
+            6457 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_PMLOHDDMJGJ),
+            6448 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_IEMCHLBODJM),
+            6483 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_AHLIODCBHNA),
+            6446 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_OAMBBKMMEIM),
+            6424 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_EEJBKFOFJFC),
+            6409 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_GODKAOKHGMO),
+            6423 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_ILBICOEPEBA),
+            6486 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_DJOPFBABKCI),
+            6440 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_NKDHDLFOIDM),
+            6484 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_AHCJPLEEMNO),
+            6462 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_JKMBIFFHCNC),
+            6403 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_HIFIPHCIKJP),
+            6434 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_OMJMDKKIFKL),
+            6500 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_HGODJEPGBCL),
+            6413 => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_LEIJAEGDOLK),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdTravelBrochureType> {
         match str {
-            "AEMFGDIOOJK_HNMEPDFCPJC" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_HNMEPDFCPJC),
-            "AEMFGDIOOJK_BMPEENGDMPI" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_BMPEENGDMPI),
-            "AEMFGDIOOJK_ACBNAGFEFAH" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_ACBNAGFEFAH),
-            "AEMFGDIOOJK_FBEGAMHMKDH" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_FBEGAMHMKDH),
-            "AEMFGDIOOJK_EDDONANGOKA" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_EDDONANGOKA),
-            "AEMFGDIOOJK_GHAMOHIDCBI" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_GHAMOHIDCBI),
-            "AEMFGDIOOJK_HPGFBEPACFO" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_HPGFBEPACFO),
-            "AEMFGDIOOJK_CMLFOCJPGOB" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_CMLFOCJPGOB),
-            "AEMFGDIOOJK_BPGKLHJOBGK" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_BPGKLHJOBGK),
-            "AEMFGDIOOJK_APHMBFADBMP" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_APHMBFADBMP),
-            "AEMFGDIOOJK_JFCINPKLPEL" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_JFCINPKLPEL),
-            "AEMFGDIOOJK_EMOAJEDNGDN" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_EMOAJEDNGDN),
-            "AEMFGDIOOJK_JBPFCEPFMEO" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_JBPFCEPFMEO),
-            "AEMFGDIOOJK_KGGAJNHLKGI" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_KGGAJNHLKGI),
-            "AEMFGDIOOJK_MGOJBCBFJDB" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_MGOJBCBFJDB),
-            "AEMFGDIOOJK_OJPGCPOAGEL" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_OJPGCPOAGEL),
-            "AEMFGDIOOJK_JADJMANKPKJ" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_JADJMANKPKJ),
-            "AEMFGDIOOJK_NNMLPGODMLG" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_NNMLPGODMLG),
-            "AEMFGDIOOJK_OCGGIAIECFL" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_OCGGIAIECFL),
-            "AEMFGDIOOJK_KBBBDCFIOCG" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_KBBBDCFIOCG),
-            "AEMFGDIOOJK_GLHPFALFLHH" => ::std::option::Option::Some(CmdTravelBrochureType::AEMFGDIOOJK_GLHPFALFLHH),
+            "CmdTravelBrochureType_ECGOHIKEOPF" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_ECGOHIKEOPF),
+            "CmdTravelBrochureType_NLGGIPCKLFI" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_NLGGIPCKLFI),
+            "CmdTravelBrochureType_JPJIOFPBEHB" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_JPJIOFPBEHB),
+            "CmdTravelBrochureType_JEEICJOOHCJ" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_JEEICJOOHCJ),
+            "CmdTravelBrochureType_OMBCOFKJBPJ" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_OMBCOFKJBPJ),
+            "CmdTravelBrochureType_ALACOMJNDPM" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_ALACOMJNDPM),
+            "CmdTravelBrochureType_PMLOHDDMJGJ" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_PMLOHDDMJGJ),
+            "CmdTravelBrochureType_IEMCHLBODJM" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_IEMCHLBODJM),
+            "CmdTravelBrochureType_AHLIODCBHNA" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_AHLIODCBHNA),
+            "CmdTravelBrochureType_OAMBBKMMEIM" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_OAMBBKMMEIM),
+            "CmdTravelBrochureType_EEJBKFOFJFC" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_EEJBKFOFJFC),
+            "CmdTravelBrochureType_GODKAOKHGMO" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_GODKAOKHGMO),
+            "CmdTravelBrochureType_ILBICOEPEBA" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_ILBICOEPEBA),
+            "CmdTravelBrochureType_DJOPFBABKCI" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_DJOPFBABKCI),
+            "CmdTravelBrochureType_NKDHDLFOIDM" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_NKDHDLFOIDM),
+            "CmdTravelBrochureType_AHCJPLEEMNO" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_AHCJPLEEMNO),
+            "CmdTravelBrochureType_JKMBIFFHCNC" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_JKMBIFFHCNC),
+            "CmdTravelBrochureType_HIFIPHCIKJP" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_HIFIPHCIKJP),
+            "CmdTravelBrochureType_OMJMDKKIFKL" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_OMJMDKKIFKL),
+            "CmdTravelBrochureType_HGODJEPGBCL" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_HGODJEPGBCL),
+            "CmdTravelBrochureType_LEIJAEGDOLK" => ::std::option::Option::Some(CmdTravelBrochureType::CmdTravelBrochureType_LEIJAEGDOLK),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTravelBrochureType] = &[
-        CmdTravelBrochureType::AEMFGDIOOJK_HNMEPDFCPJC,
-        CmdTravelBrochureType::AEMFGDIOOJK_BMPEENGDMPI,
-        CmdTravelBrochureType::AEMFGDIOOJK_ACBNAGFEFAH,
-        CmdTravelBrochureType::AEMFGDIOOJK_FBEGAMHMKDH,
-        CmdTravelBrochureType::AEMFGDIOOJK_EDDONANGOKA,
-        CmdTravelBrochureType::AEMFGDIOOJK_GHAMOHIDCBI,
-        CmdTravelBrochureType::AEMFGDIOOJK_HPGFBEPACFO,
-        CmdTravelBrochureType::AEMFGDIOOJK_CMLFOCJPGOB,
-        CmdTravelBrochureType::AEMFGDIOOJK_BPGKLHJOBGK,
-        CmdTravelBrochureType::AEMFGDIOOJK_APHMBFADBMP,
-        CmdTravelBrochureType::AEMFGDIOOJK_JFCINPKLPEL,
-        CmdTravelBrochureType::AEMFGDIOOJK_EMOAJEDNGDN,
-        CmdTravelBrochureType::AEMFGDIOOJK_JBPFCEPFMEO,
-        CmdTravelBrochureType::AEMFGDIOOJK_KGGAJNHLKGI,
-        CmdTravelBrochureType::AEMFGDIOOJK_MGOJBCBFJDB,
-        CmdTravelBrochureType::AEMFGDIOOJK_OJPGCPOAGEL,
-        CmdTravelBrochureType::AEMFGDIOOJK_JADJMANKPKJ,
-        CmdTravelBrochureType::AEMFGDIOOJK_NNMLPGODMLG,
-        CmdTravelBrochureType::AEMFGDIOOJK_OCGGIAIECFL,
-        CmdTravelBrochureType::AEMFGDIOOJK_KBBBDCFIOCG,
-        CmdTravelBrochureType::AEMFGDIOOJK_GLHPFALFLHH,
+        CmdTravelBrochureType::CmdTravelBrochureType_ECGOHIKEOPF,
+        CmdTravelBrochureType::CmdTravelBrochureType_NLGGIPCKLFI,
+        CmdTravelBrochureType::CmdTravelBrochureType_JPJIOFPBEHB,
+        CmdTravelBrochureType::CmdTravelBrochureType_JEEICJOOHCJ,
+        CmdTravelBrochureType::CmdTravelBrochureType_OMBCOFKJBPJ,
+        CmdTravelBrochureType::CmdTravelBrochureType_ALACOMJNDPM,
+        CmdTravelBrochureType::CmdTravelBrochureType_PMLOHDDMJGJ,
+        CmdTravelBrochureType::CmdTravelBrochureType_IEMCHLBODJM,
+        CmdTravelBrochureType::CmdTravelBrochureType_AHLIODCBHNA,
+        CmdTravelBrochureType::CmdTravelBrochureType_OAMBBKMMEIM,
+        CmdTravelBrochureType::CmdTravelBrochureType_EEJBKFOFJFC,
+        CmdTravelBrochureType::CmdTravelBrochureType_GODKAOKHGMO,
+        CmdTravelBrochureType::CmdTravelBrochureType_ILBICOEPEBA,
+        CmdTravelBrochureType::CmdTravelBrochureType_DJOPFBABKCI,
+        CmdTravelBrochureType::CmdTravelBrochureType_NKDHDLFOIDM,
+        CmdTravelBrochureType::CmdTravelBrochureType_AHCJPLEEMNO,
+        CmdTravelBrochureType::CmdTravelBrochureType_JKMBIFFHCNC,
+        CmdTravelBrochureType::CmdTravelBrochureType_HIFIPHCIKJP,
+        CmdTravelBrochureType::CmdTravelBrochureType_OMJMDKKIFKL,
+        CmdTravelBrochureType::CmdTravelBrochureType_HGODJEPGBCL,
+        CmdTravelBrochureType::CmdTravelBrochureType_LEIJAEGDOLK,
     ];
 }
 
@@ -165,27 +165,27 @@ impl ::protobuf::EnumFull for CmdTravelBrochureType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdTravelBrochureType::AEMFGDIOOJK_HNMEPDFCPJC => 0,
-            CmdTravelBrochureType::AEMFGDIOOJK_BMPEENGDMPI => 1,
-            CmdTravelBrochureType::AEMFGDIOOJK_ACBNAGFEFAH => 2,
-            CmdTravelBrochureType::AEMFGDIOOJK_FBEGAMHMKDH => 3,
-            CmdTravelBrochureType::AEMFGDIOOJK_EDDONANGOKA => 4,
-            CmdTravelBrochureType::AEMFGDIOOJK_GHAMOHIDCBI => 5,
-            CmdTravelBrochureType::AEMFGDIOOJK_HPGFBEPACFO => 6,
-            CmdTravelBrochureType::AEMFGDIOOJK_CMLFOCJPGOB => 7,
-            CmdTravelBrochureType::AEMFGDIOOJK_BPGKLHJOBGK => 8,
-            CmdTravelBrochureType::AEMFGDIOOJK_APHMBFADBMP => 9,
-            CmdTravelBrochureType::AEMFGDIOOJK_JFCINPKLPEL => 10,
-            CmdTravelBrochureType::AEMFGDIOOJK_EMOAJEDNGDN => 11,
-            CmdTravelBrochureType::AEMFGDIOOJK_JBPFCEPFMEO => 12,
-            CmdTravelBrochureType::AEMFGDIOOJK_KGGAJNHLKGI => 13,
-            CmdTravelBrochureType::AEMFGDIOOJK_MGOJBCBFJDB => 14,
-            CmdTravelBrochureType::AEMFGDIOOJK_OJPGCPOAGEL => 15,
-            CmdTravelBrochureType::AEMFGDIOOJK_JADJMANKPKJ => 16,
-            CmdTravelBrochureType::AEMFGDIOOJK_NNMLPGODMLG => 17,
-            CmdTravelBrochureType::AEMFGDIOOJK_OCGGIAIECFL => 18,
-            CmdTravelBrochureType::AEMFGDIOOJK_KBBBDCFIOCG => 19,
-            CmdTravelBrochureType::AEMFGDIOOJK_GLHPFALFLHH => 20,
+            CmdTravelBrochureType::CmdTravelBrochureType_ECGOHIKEOPF => 0,
+            CmdTravelBrochureType::CmdTravelBrochureType_NLGGIPCKLFI => 1,
+            CmdTravelBrochureType::CmdTravelBrochureType_JPJIOFPBEHB => 2,
+            CmdTravelBrochureType::CmdTravelBrochureType_JEEICJOOHCJ => 3,
+            CmdTravelBrochureType::CmdTravelBrochureType_OMBCOFKJBPJ => 4,
+            CmdTravelBrochureType::CmdTravelBrochureType_ALACOMJNDPM => 5,
+            CmdTravelBrochureType::CmdTravelBrochureType_PMLOHDDMJGJ => 6,
+            CmdTravelBrochureType::CmdTravelBrochureType_IEMCHLBODJM => 7,
+            CmdTravelBrochureType::CmdTravelBrochureType_AHLIODCBHNA => 8,
+            CmdTravelBrochureType::CmdTravelBrochureType_OAMBBKMMEIM => 9,
+            CmdTravelBrochureType::CmdTravelBrochureType_EEJBKFOFJFC => 10,
+            CmdTravelBrochureType::CmdTravelBrochureType_GODKAOKHGMO => 11,
+            CmdTravelBrochureType::CmdTravelBrochureType_ILBICOEPEBA => 12,
+            CmdTravelBrochureType::CmdTravelBrochureType_DJOPFBABKCI => 13,
+            CmdTravelBrochureType::CmdTravelBrochureType_NKDHDLFOIDM => 14,
+            CmdTravelBrochureType::CmdTravelBrochureType_AHCJPLEEMNO => 15,
+            CmdTravelBrochureType::CmdTravelBrochureType_JKMBIFFHCNC => 16,
+            CmdTravelBrochureType::CmdTravelBrochureType_HIFIPHCIKJP => 17,
+            CmdTravelBrochureType::CmdTravelBrochureType_OMJMDKKIFKL => 18,
+            CmdTravelBrochureType::CmdTravelBrochureType_HGODJEPGBCL => 19,
+            CmdTravelBrochureType::CmdTravelBrochureType_LEIJAEGDOLK => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -193,7 +193,7 @@ impl ::protobuf::EnumFull for CmdTravelBrochureType {
 
 impl ::std::default::Default for CmdTravelBrochureType {
     fn default() -> Self {
-        CmdTravelBrochureType::AEMFGDIOOJK_HNMEPDFCPJC
+        CmdTravelBrochureType::CmdTravelBrochureType_ECGOHIKEOPF
     }
 }
 
@@ -204,21 +204,22 @@ impl CmdTravelBrochureType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bCmdTravelBrochureType.proto*\x8c\x05\n\x15CmdTravelBrochureType\
-    \x12\x1b\n\x17AEMFGDIOOJK_HNMEPDFCPJC\x10\0\x12\x1c\n\x17AEMFGDIOOJK_BMP\
-    EENGDMPI\x10\xb72\x12\x1c\n\x17AEMFGDIOOJK_ACBNAGFEFAH\x10\xaf2\x12\x1c\
-    \n\x17AEMFGDIOOJK_FBEGAMHMKDH\x10\xc22\x12\x1c\n\x17AEMFGDIOOJK_EDDONANG\
-    OKA\x10\x852\x12\x1c\n\x17AEMFGDIOOJK_GHAMOHIDCBI\x10\xd32\x12\x1c\n\x17\
-    AEMFGDIOOJK_HPGFBEPACFO\x10\xcc2\x12\x1c\n\x17AEMFGDIOOJK_CMLFOCJPGOB\
-    \x10\xd92\x12\x1c\n\x17AEMFGDIOOJK_BPGKLHJOBGK\x10\xe02\x12\x1c\n\x17AEM\
-    FGDIOOJK_APHMBFADBMP\x10\xa22\x12\x1c\n\x17AEMFGDIOOJK_JFCINPKLPEL\x10\
-    \xdf2\x12\x1c\n\x17AEMFGDIOOJK_EMOAJEDNGDN\x10\xdd2\x12\x1c\n\x17AEMFGDI\
-    OOJK_JBPFCEPFMEO\x10\xa52\x12\x1c\n\x17AEMFGDIOOJK_KGGAJNHLKGI\x10\x942\
-    \x12\x1c\n\x17AEMFGDIOOJK_MGOJBCBFJDB\x10\xb92\x12\x1c\n\x17AEMFGDIOOJK_\
-    OJPGCPOAGEL\x10\xbe2\x12\x1c\n\x17AEMFGDIOOJK_JADJMANKPKJ\x10\xa62\x12\
-    \x1c\n\x17AEMFGDIOOJK_NNMLPGODMLG\x10\xc52\x12\x1c\n\x17AEMFGDIOOJK_OCGG\
-    IAIECFL\x10\x9c2\x12\x1c\n\x17AEMFGDIOOJK_KBBBDCFIOCG\x10\x9a2\x12\x1c\n\
-    \x17AEMFGDIOOJK_GLHPFALFLHH\x10\xad2b\x06proto3\
+    \n\x1bCmdTravelBrochureType.proto*\xde\x06\n\x15CmdTravelBrochureType\
+    \x12%\n!CmdTravelBrochureType_ECGOHIKEOPF\x10\0\x12&\n!CmdTravelBrochure\
+    Type_NLGGIPCKLFI\x10\xd82\x12&\n!CmdTravelBrochureType_JPJIOFPBEHB\x10\
+    \xd12\x12&\n!CmdTravelBrochureType_JEEICJOOHCJ\x10\xc52\x12&\n!CmdTravel\
+    BrochureType_OMBCOFKJBPJ\x10\xa32\x12&\n!CmdTravelBrochureType_ALACOMJND\
+    PM\x10\xb82\x12&\n!CmdTravelBrochureType_PMLOHDDMJGJ\x10\xb92\x12&\n!Cmd\
+    TravelBrochureType_IEMCHLBODJM\x10\xb02\x12&\n!CmdTravelBrochureType_AHL\
+    IODCBHNA\x10\xd32\x12&\n!CmdTravelBrochureType_OAMBBKMMEIM\x10\xae2\x12&\
+    \n!CmdTravelBrochureType_EEJBKFOFJFC\x10\x982\x12&\n!CmdTravelBrochureTy\
+    pe_GODKAOKHGMO\x10\x892\x12&\n!CmdTravelBrochureType_ILBICOEPEBA\x10\x97\
+    2\x12&\n!CmdTravelBrochureType_DJOPFBABKCI\x10\xd62\x12&\n!CmdTravelBroc\
+    hureType_NKDHDLFOIDM\x10\xa82\x12&\n!CmdTravelBrochureType_AHCJPLEEMNO\
+    \x10\xd42\x12&\n!CmdTravelBrochureType_JKMBIFFHCNC\x10\xbe2\x12&\n!CmdTr\
+    avelBrochureType_HIFIPHCIKJP\x10\x832\x12&\n!CmdTravelBrochureType_OMJMD\
+    KKIFKL\x10\xa22\x12&\n!CmdTravelBrochureType_HGODJEPGBCL\x10\xe42\x12&\n\
+    !CmdTravelBrochureType_LEIJAEGDOLK\x10\x8d2b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

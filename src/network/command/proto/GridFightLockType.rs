@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GridFightLockType)
 pub enum GridFightLockType {
-    // @@protoc_insertion_point(enum_value:GridFightLockType.BNKJLCMNLOD_AIBPMBCBAEB)
-    BNKJLCMNLOD_AIBPMBCBAEB = 0,
-    // @@protoc_insertion_point(enum_value:GridFightLockType.BNKJLCMNLOD_EGILKBGDDFM)
-    BNKJLCMNLOD_EGILKBGDDFM = 6,
-    // @@protoc_insertion_point(enum_value:GridFightLockType.BNKJLCMNLOD_HILODJLGEDA)
-    BNKJLCMNLOD_HILODJLGEDA = 7,
-    // @@protoc_insertion_point(enum_value:GridFightLockType.BNKJLCMNLOD_LCJOHCGCEIC)
-    BNKJLCMNLOD_LCJOHCGCEIC = 8,
+    // @@protoc_insertion_point(enum_value:GridFightLockType.GridFightLockType_LCKDDLJAOHM)
+    GridFightLockType_LCKDDLJAOHM = 0,
+    // @@protoc_insertion_point(enum_value:GridFightLockType.GridFightLockType_IJIOCIIFJNB)
+    GridFightLockType_IJIOCIIFJNB = 6,
+    // @@protoc_insertion_point(enum_value:GridFightLockType.GridFightLockType_PALLCEFGBFM)
+    GridFightLockType_PALLCEFGBFM = 7,
+    // @@protoc_insertion_point(enum_value:GridFightLockType.GridFightLockType_JBICGMNHLNA)
+    GridFightLockType_JBICGMNHLNA = 8,
 }
 
 impl ::protobuf::Enum for GridFightLockType {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for GridFightLockType {
 
     fn from_i32(value: i32) -> ::std::option::Option<GridFightLockType> {
         match value {
-            0 => ::std::option::Option::Some(GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB),
-            6 => ::std::option::Option::Some(GridFightLockType::BNKJLCMNLOD_EGILKBGDDFM),
-            7 => ::std::option::Option::Some(GridFightLockType::BNKJLCMNLOD_HILODJLGEDA),
-            8 => ::std::option::Option::Some(GridFightLockType::BNKJLCMNLOD_LCJOHCGCEIC),
+            0 => ::std::option::Option::Some(GridFightLockType::GridFightLockType_LCKDDLJAOHM),
+            6 => ::std::option::Option::Some(GridFightLockType::GridFightLockType_IJIOCIIFJNB),
+            7 => ::std::option::Option::Some(GridFightLockType::GridFightLockType_PALLCEFGBFM),
+            8 => ::std::option::Option::Some(GridFightLockType::GridFightLockType_JBICGMNHLNA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GridFightLockType> {
         match str {
-            "BNKJLCMNLOD_AIBPMBCBAEB" => ::std::option::Option::Some(GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB),
-            "BNKJLCMNLOD_EGILKBGDDFM" => ::std::option::Option::Some(GridFightLockType::BNKJLCMNLOD_EGILKBGDDFM),
-            "BNKJLCMNLOD_HILODJLGEDA" => ::std::option::Option::Some(GridFightLockType::BNKJLCMNLOD_HILODJLGEDA),
-            "BNKJLCMNLOD_LCJOHCGCEIC" => ::std::option::Option::Some(GridFightLockType::BNKJLCMNLOD_LCJOHCGCEIC),
+            "GridFightLockType_LCKDDLJAOHM" => ::std::option::Option::Some(GridFightLockType::GridFightLockType_LCKDDLJAOHM),
+            "GridFightLockType_IJIOCIIFJNB" => ::std::option::Option::Some(GridFightLockType::GridFightLockType_IJIOCIIFJNB),
+            "GridFightLockType_PALLCEFGBFM" => ::std::option::Option::Some(GridFightLockType::GridFightLockType_PALLCEFGBFM),
+            "GridFightLockType_JBICGMNHLNA" => ::std::option::Option::Some(GridFightLockType::GridFightLockType_JBICGMNHLNA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GridFightLockType] = &[
-        GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB,
-        GridFightLockType::BNKJLCMNLOD_EGILKBGDDFM,
-        GridFightLockType::BNKJLCMNLOD_HILODJLGEDA,
-        GridFightLockType::BNKJLCMNLOD_LCJOHCGCEIC,
+        GridFightLockType::GridFightLockType_LCKDDLJAOHM,
+        GridFightLockType::GridFightLockType_IJIOCIIFJNB,
+        GridFightLockType::GridFightLockType_PALLCEFGBFM,
+        GridFightLockType::GridFightLockType_JBICGMNHLNA,
     ];
 }
 
@@ -80,10 +80,10 @@ impl ::protobuf::EnumFull for GridFightLockType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB => 0,
-            GridFightLockType::BNKJLCMNLOD_EGILKBGDDFM => 1,
-            GridFightLockType::BNKJLCMNLOD_HILODJLGEDA => 2,
-            GridFightLockType::BNKJLCMNLOD_LCJOHCGCEIC => 3,
+            GridFightLockType::GridFightLockType_LCKDDLJAOHM => 0,
+            GridFightLockType::GridFightLockType_IJIOCIIFJNB => 1,
+            GridFightLockType::GridFightLockType_PALLCEFGBFM => 2,
+            GridFightLockType::GridFightLockType_JBICGMNHLNA => 3,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for GridFightLockType {
 
 impl ::std::default::Default for GridFightLockType {
     fn default() -> Self {
-        GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB
+        GridFightLockType::GridFightLockType_LCKDDLJAOHM
     }
 }
 
@@ -102,10 +102,10 @@ impl GridFightLockType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GridFightLockType.proto*\x87\x01\n\x11GridFightLockType\x12\x1b\n\
-    \x17BNKJLCMNLOD_AIBPMBCBAEB\x10\0\x12\x1b\n\x17BNKJLCMNLOD_EGILKBGDDFM\
-    \x10\x06\x12\x1b\n\x17BNKJLCMNLOD_HILODJLGEDA\x10\x07\x12\x1b\n\x17BNKJL\
-    CMNLOD_LCJOHCGCEIC\x10\x08b\x06proto3\
+    \n\x17GridFightLockType.proto*\x9f\x01\n\x11GridFightLockType\x12!\n\x1d\
+    GridFightLockType_LCKDDLJAOHM\x10\0\x12!\n\x1dGridFightLockType_IJIOCIIF\
+    JNB\x10\x06\x12!\n\x1dGridFightLockType_PALLCEFGBFM\x10\x07\x12!\n\x1dGr\
+    idFightLockType_JBICGMNHLNA\x10\x08b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

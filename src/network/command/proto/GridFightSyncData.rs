@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightSyncData {
     // message oneof groups
-    pub CGDKGNFCGCI: ::std::option::Option<grid_fight_sync_data::CGDKGNFCGCI>,
+    pub DEBKBABACIC: ::std::option::Option<grid_fight_sync_data::DEBKBABACIC>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightSyncData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl GridFightSyncData {
         ::std::default::Default::default()
     }
 
-    // .GridGameRoleInfo add_role_info = 586;
+    // .GridGameRoleInfo add_role_info = 879;
 
     pub fn add_role_info(&self) -> &super::GridGameRoleInfo::GridGameRoleInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddRoleInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddRoleInfo(ref v)) => v,
             _ => <super::GridGameRoleInfo::GridGameRoleInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_add_role_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_add_role_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddRoleInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddRoleInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_add_role_info(&mut self, v: super::GridGameRoleInfo::GridGameRoleInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddRoleInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddRoleInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_add_role_info(&mut self) -> &mut super::GridGameRoleInfo::GridGameRoleInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddRoleInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddRoleInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddRoleInfo(super::GridGameRoleInfo::GridGameRoleInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddRoleInfo(super::GridGameRoleInfo::GridGameRoleInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddRoleInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddRoleInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_add_role_info(&mut self) -> super::GridGameRoleInfo::GridGameRoleInfo {
         if self.has_add_role_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddRoleInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddRoleInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridGameRoleInfo update_role_info = 1452;
+    // .GridGameRoleInfo update_role_info = 1390;
 
     pub fn update_role_info(&self) -> &super::GridGameRoleInfo::GridGameRoleInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateRoleInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateRoleInfo(ref v)) => v,
             _ => <super::GridGameRoleInfo::GridGameRoleInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_update_role_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_update_role_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateRoleInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateRoleInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_update_role_info(&mut self, v: super::GridGameRoleInfo::GridGameRoleInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateRoleInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateRoleInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_update_role_info(&mut self) -> &mut super::GridGameRoleInfo::GridGameRoleInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateRoleInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateRoleInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateRoleInfo(super::GridGameRoleInfo::GridGameRoleInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateRoleInfo(super::GridGameRoleInfo::GridGameRoleInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateRoleInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateRoleInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_update_role_info(&mut self) -> super::GridGameRoleInfo::GridGameRoleInfo {
         if self.has_update_role_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateRoleInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateRoleInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -143,64 +143,64 @@ impl GridFightSyncData {
         }
     }
 
-    // uint32 remove_role_unique_id = 341;
+    // uint32 remove_role_unique_id = 502;
 
     pub fn remove_role_unique_id(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveRoleUniqueId(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveRoleUniqueId(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_remove_role_unique_id(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_remove_role_unique_id(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveRoleUniqueId(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveRoleUniqueId(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_remove_role_unique_id(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveRoleUniqueId(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveRoleUniqueId(v))
     }
 
-    // .GridFightGameItemSyncInfo add_game_item_info = 1312;
+    // .GridFightGameItemSyncInfo add_game_item_info = 190;
 
     pub fn add_game_item_info(&self) -> &super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddGameItemInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddGameItemInfo(ref v)) => v,
             _ => <super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_add_game_item_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_add_game_item_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddGameItemInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddGameItemInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_add_game_item_info(&mut self, v: super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddGameItemInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddGameItemInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_add_game_item_info(&mut self) -> &mut super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddGameItemInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddGameItemInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddGameItemInfo(super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddGameItemInfo(super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddGameItemInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddGameItemInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -208,8 +208,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_add_game_item_info(&mut self) -> super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo {
         if self.has_add_game_item_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddGameItemInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddGameItemInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -217,39 +217,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightGameItemSyncInfo update_game_item_info = 703;
+    // .GridFightGameItemSyncInfo update_game_item_info = 1980;
 
     pub fn update_game_item_info(&self) -> &super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateGameItemInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateGameItemInfo(ref v)) => v,
             _ => <super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_update_game_item_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_update_game_item_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateGameItemInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateGameItemInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_update_game_item_info(&mut self, v: super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateGameItemInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateGameItemInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_update_game_item_info(&mut self) -> &mut super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateGameItemInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateGameItemInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateGameItemInfo(super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateGameItemInfo(super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateGameItemInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateGameItemInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -257,8 +257,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_update_game_item_info(&mut self) -> super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo {
         if self.has_update_game_item_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateGameItemInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateGameItemInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -266,39 +266,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightGameItemSyncInfo remove_game_item_info = 584;
+    // .GridFightGameItemSyncInfo remove_game_item_info = 1563;
 
     pub fn remove_game_item_info(&self) -> &super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveGameItemInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveGameItemInfo(ref v)) => v,
             _ => <super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_remove_game_item_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_remove_game_item_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveGameItemInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveGameItemInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_remove_game_item_info(&mut self, v: super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveGameItemInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveGameItemInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_remove_game_item_info(&mut self) -> &mut super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveGameItemInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveGameItemInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveGameItemInfo(super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveGameItemInfo(super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveGameItemInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveGameItemInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -306,8 +306,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_remove_game_item_info(&mut self) -> super::GridFightGameItemSyncInfo::GridFightGameItemSyncInfo {
         if self.has_remove_game_item_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveGameItemInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveGameItemInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -315,64 +315,64 @@ impl GridFightSyncData {
         }
     }
 
-    // uint32 item_value = 1344;
+    // uint32 item_value = 1211;
 
     pub fn item_value(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ItemValue(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ItemValue(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_item_value(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_item_value(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ItemValue(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ItemValue(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_item_value(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ItemValue(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ItemValue(v))
     }
 
-    // .GridFightPlayerLevelSyncInfo player_level = 1497;
+    // .GridFightPlayerLevelSyncInfo player_level = 442;
 
     pub fn player_level(&self) -> &super::GridFightPlayerLevelSyncInfo::GridFightPlayerLevelSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PlayerLevel(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PlayerLevel(ref v)) => v,
             _ => <super::GridFightPlayerLevelSyncInfo::GridFightPlayerLevelSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_player_level(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_player_level(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PlayerLevel(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PlayerLevel(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_player_level(&mut self, v: super::GridFightPlayerLevelSyncInfo::GridFightPlayerLevelSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PlayerLevel(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PlayerLevel(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_player_level(&mut self) -> &mut super::GridFightPlayerLevelSyncInfo::GridFightPlayerLevelSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PlayerLevel(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PlayerLevel(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PlayerLevel(super::GridFightPlayerLevelSyncInfo::GridFightPlayerLevelSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PlayerLevel(super::GridFightPlayerLevelSyncInfo::GridFightPlayerLevelSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PlayerLevel(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PlayerLevel(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -380,8 +380,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_player_level(&mut self) -> super::GridFightPlayerLevelSyncInfo::GridFightPlayerLevelSyncInfo {
         if self.has_player_level() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PlayerLevel(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PlayerLevel(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -389,39 +389,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightLineupHpSyncInfo grid_fight_lineup_hp = 403;
+    // .GridFightLineupHpSyncInfo grid_fight_lineup_hp = 897;
 
     pub fn grid_fight_lineup_hp(&self) -> &super::GridFightLineupHpSyncInfo::GridFightLineupHpSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightLineupHp(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightLineupHp(ref v)) => v,
             _ => <super::GridFightLineupHpSyncInfo::GridFightLineupHpSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_grid_fight_lineup_hp(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_grid_fight_lineup_hp(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightLineupHp(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightLineupHp(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_grid_fight_lineup_hp(&mut self, v: super::GridFightLineupHpSyncInfo::GridFightLineupHpSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightLineupHp(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightLineupHp(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_grid_fight_lineup_hp(&mut self) -> &mut super::GridFightLineupHpSyncInfo::GridFightLineupHpSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightLineupHp(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightLineupHp(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightLineupHp(super::GridFightLineupHpSyncInfo::GridFightLineupHpSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightLineupHp(super::GridFightLineupHpSyncInfo::GridFightLineupHpSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightLineupHp(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightLineupHp(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -429,8 +429,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_grid_fight_lineup_hp(&mut self) -> super::GridFightLineupHpSyncInfo::GridFightLineupHpSyncInfo {
         if self.has_grid_fight_lineup_hp() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightLineupHp(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightLineupHp(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -438,64 +438,64 @@ impl GridFightSyncData {
         }
     }
 
-    // uint32 max_battle_role_num = 837;
+    // uint32 max_battle_role_num = 1368;
 
     pub fn max_battle_role_num(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::MaxBattleRoleNum(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MaxBattleRoleNum(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_max_battle_role_num(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_max_battle_role_num(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::MaxBattleRoleNum(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MaxBattleRoleNum(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_max_battle_role_num(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::MaxBattleRoleNum(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MaxBattleRoleNum(v))
     }
 
-    // .GridFightShopSyncInfo shop_sync_info = 346;
+    // .GridFightShopSyncInfo shop_sync_info = 138;
 
     pub fn shop_sync_info(&self) -> &super::GridFightShopSyncInfo::GridFightShopSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ShopSyncInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ShopSyncInfo(ref v)) => v,
             _ => <super::GridFightShopSyncInfo::GridFightShopSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_shop_sync_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_shop_sync_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ShopSyncInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ShopSyncInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_shop_sync_info(&mut self, v: super::GridFightShopSyncInfo::GridFightShopSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ShopSyncInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ShopSyncInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_shop_sync_info(&mut self) -> &mut super::GridFightShopSyncInfo::GridFightShopSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ShopSyncInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ShopSyncInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ShopSyncInfo(super::GridFightShopSyncInfo::GridFightShopSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ShopSyncInfo(super::GridFightShopSyncInfo::GridFightShopSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ShopSyncInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ShopSyncInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -503,8 +503,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_shop_sync_info(&mut self) -> super::GridFightShopSyncInfo::GridFightShopSyncInfo {
         if self.has_shop_sync_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ShopSyncInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ShopSyncInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -512,39 +512,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightPendingAction pending_action = 575;
+    // .GridFightPendingAction pending_action = 1339;
 
     pub fn pending_action(&self) -> &super::GridFightPendingAction::GridFightPendingAction {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PendingAction(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PendingAction(ref v)) => v,
             _ => <super::GridFightPendingAction::GridFightPendingAction as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_pending_action(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_pending_action(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PendingAction(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PendingAction(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_pending_action(&mut self, v: super::GridFightPendingAction::GridFightPendingAction) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PendingAction(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PendingAction(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_pending_action(&mut self) -> &mut super::GridFightPendingAction::GridFightPendingAction {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PendingAction(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PendingAction(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PendingAction(super::GridFightPendingAction::GridFightPendingAction::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PendingAction(super::GridFightPendingAction::GridFightPendingAction::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PendingAction(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PendingAction(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -552,8 +552,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_pending_action(&mut self) -> super::GridFightPendingAction::GridFightPendingAction {
         if self.has_pending_action() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PendingAction(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PendingAction(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -561,39 +561,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightPortalServerDataUpdate portal_server_data_update = 1874;
+    // .GridFightPortalServerDataUpdate portal_server_data_update = 546;
 
     pub fn portal_server_data_update(&self) -> &super::GridFightPortalServerDataUpdate::GridFightPortalServerDataUpdate {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PortalServerDataUpdate(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PortalServerDataUpdate(ref v)) => v,
             _ => <super::GridFightPortalServerDataUpdate::GridFightPortalServerDataUpdate as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_portal_server_data_update(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_portal_server_data_update(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PortalServerDataUpdate(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PortalServerDataUpdate(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_portal_server_data_update(&mut self, v: super::GridFightPortalServerDataUpdate::GridFightPortalServerDataUpdate) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PortalServerDataUpdate(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PortalServerDataUpdate(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_portal_server_data_update(&mut self) -> &mut super::GridFightPortalServerDataUpdate::GridFightPortalServerDataUpdate {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PortalServerDataUpdate(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PortalServerDataUpdate(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PortalServerDataUpdate(super::GridFightPortalServerDataUpdate::GridFightPortalServerDataUpdate::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PortalServerDataUpdate(super::GridFightPortalServerDataUpdate::GridFightPortalServerDataUpdate::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PortalServerDataUpdate(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PortalServerDataUpdate(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -601,8 +601,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_portal_server_data_update(&mut self) -> super::GridFightPortalServerDataUpdate::GridFightPortalServerDataUpdate {
         if self.has_portal_server_data_update() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PortalServerDataUpdate(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PortalServerDataUpdate(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -610,39 +610,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightLevelSyncInfo level_sync_info = 303;
+    // .GridFightLevelSyncInfo level_sync_info = 1046;
 
     pub fn level_sync_info(&self) -> &super::GridFightLevelSyncInfo::GridFightLevelSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LevelSyncInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LevelSyncInfo(ref v)) => v,
             _ => <super::GridFightLevelSyncInfo::GridFightLevelSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_level_sync_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_level_sync_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LevelSyncInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LevelSyncInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_level_sync_info(&mut self, v: super::GridFightLevelSyncInfo::GridFightLevelSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LevelSyncInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LevelSyncInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_level_sync_info(&mut self) -> &mut super::GridFightLevelSyncInfo::GridFightLevelSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LevelSyncInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LevelSyncInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LevelSyncInfo(super::GridFightLevelSyncInfo::GridFightLevelSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LevelSyncInfo(super::GridFightLevelSyncInfo::GridFightLevelSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LevelSyncInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LevelSyncInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -650,8 +650,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_level_sync_info(&mut self) -> super::GridFightLevelSyncInfo::GridFightLevelSyncInfo {
         if self.has_level_sync_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LevelSyncInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LevelSyncInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -659,39 +659,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightOrbSyncInfo orb_sync_info = 1430;
+    // .GridFightOrbSyncInfo orb_sync_info = 622;
 
     pub fn orb_sync_info(&self) -> &super::GridFightOrbSyncInfo::GridFightOrbSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::OrbSyncInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::OrbSyncInfo(ref v)) => v,
             _ => <super::GridFightOrbSyncInfo::GridFightOrbSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_orb_sync_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_orb_sync_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::OrbSyncInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::OrbSyncInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_orb_sync_info(&mut self, v: super::GridFightOrbSyncInfo::GridFightOrbSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::OrbSyncInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::OrbSyncInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_orb_sync_info(&mut self) -> &mut super::GridFightOrbSyncInfo::GridFightOrbSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::OrbSyncInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::OrbSyncInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::OrbSyncInfo(super::GridFightOrbSyncInfo::GridFightOrbSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::OrbSyncInfo(super::GridFightOrbSyncInfo::GridFightOrbSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::OrbSyncInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::OrbSyncInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -699,8 +699,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_orb_sync_info(&mut self) -> super::GridFightOrbSyncInfo::GridFightOrbSyncInfo {
         if self.has_orb_sync_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::OrbSyncInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::OrbSyncInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -708,39 +708,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightSectionRecordInfo section_record_sync_info = 907;
+    // .GridFightSectionRecordInfo section_record_sync_info = 548;
 
     pub fn section_record_sync_info(&self) -> &super::GridFightSectionRecordInfo::GridFightSectionRecordInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SectionRecordSyncInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SectionRecordSyncInfo(ref v)) => v,
             _ => <super::GridFightSectionRecordInfo::GridFightSectionRecordInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_section_record_sync_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_section_record_sync_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SectionRecordSyncInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SectionRecordSyncInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_section_record_sync_info(&mut self, v: super::GridFightSectionRecordInfo::GridFightSectionRecordInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SectionRecordSyncInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SectionRecordSyncInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_section_record_sync_info(&mut self) -> &mut super::GridFightSectionRecordInfo::GridFightSectionRecordInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SectionRecordSyncInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SectionRecordSyncInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SectionRecordSyncInfo(super::GridFightSectionRecordInfo::GridFightSectionRecordInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SectionRecordSyncInfo(super::GridFightSectionRecordInfo::GridFightSectionRecordInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SectionRecordSyncInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SectionRecordSyncInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -748,8 +748,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_section_record_sync_info(&mut self) -> super::GridFightSectionRecordInfo::GridFightSectionRecordInfo {
         if self.has_section_record_sync_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SectionRecordSyncInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SectionRecordSyncInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -757,39 +757,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightGameAugmentUpdate grid_game_augment_update = 553;
+    // .GridFightGameAugmentUpdate grid_game_augment_update = 1516;
 
     pub fn grid_game_augment_update(&self) -> &super::GridFightGameAugmentUpdate::GridFightGameAugmentUpdate {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridGameAugmentUpdate(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridGameAugmentUpdate(ref v)) => v,
             _ => <super::GridFightGameAugmentUpdate::GridFightGameAugmentUpdate as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_grid_game_augment_update(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_grid_game_augment_update(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridGameAugmentUpdate(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridGameAugmentUpdate(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_grid_game_augment_update(&mut self, v: super::GridFightGameAugmentUpdate::GridFightGameAugmentUpdate) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridGameAugmentUpdate(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridGameAugmentUpdate(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_grid_game_augment_update(&mut self) -> &mut super::GridFightGameAugmentUpdate::GridFightGameAugmentUpdate {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridGameAugmentUpdate(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridGameAugmentUpdate(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridGameAugmentUpdate(super::GridFightGameAugmentUpdate::GridFightGameAugmentUpdate::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridGameAugmentUpdate(super::GridFightGameAugmentUpdate::GridFightGameAugmentUpdate::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridGameAugmentUpdate(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridGameAugmentUpdate(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -797,8 +797,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_grid_game_augment_update(&mut self) -> super::GridFightGameAugmentUpdate::GridFightGameAugmentUpdate {
         if self.has_grid_game_augment_update() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridGameAugmentUpdate(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridGameAugmentUpdate(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -806,139 +806,139 @@ impl GridFightSyncData {
         }
     }
 
-    // uint32 remove_augment_unique_id = 581;
+    // uint32 remove_augment_unique_id = 1202;
 
     pub fn remove_augment_unique_id(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveAugmentUniqueId(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveAugmentUniqueId(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_remove_augment_unique_id(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_remove_augment_unique_id(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveAugmentUniqueId(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveAugmentUniqueId(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_remove_augment_unique_id(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveAugmentUniqueId(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveAugmentUniqueId(v))
     }
 
-    // uint32 finish_pending_action_pos = 1310;
+    // uint32 finish_pending_action_pos = 321;
 
     pub fn finish_pending_action_pos(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::FinishPendingActionPos(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::FinishPendingActionPos(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_finish_pending_action_pos(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_finish_pending_action_pos(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::FinishPendingActionPos(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::FinishPendingActionPos(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_finish_pending_action_pos(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::FinishPendingActionPos(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::FinishPendingActionPos(v))
     }
 
-    // uint32 grid_fight_max_interest_gold = 1775;
+    // uint32 grid_fight_max_interest_gold = 1332;
 
     pub fn grid_fight_max_interest_gold(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxInterestGold(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightMaxInterestGold(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_grid_fight_max_interest_gold(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_grid_fight_max_interest_gold(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxInterestGold(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightMaxInterestGold(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_grid_fight_max_interest_gold(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxInterestGold(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightMaxInterestGold(v))
     }
 
-    // uint32 grid_fight_buy_exp_cost = 1853;
+    // uint32 grid_fight_buy_exp_cost = 1139;
 
     pub fn grid_fight_buy_exp_cost(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightBuyExpCost(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightBuyExpCost(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_grid_fight_buy_exp_cost(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_grid_fight_buy_exp_cost(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightBuyExpCost(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightBuyExpCost(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_grid_fight_buy_exp_cost(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightBuyExpCost(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightBuyExpCost(v))
     }
 
-    // .GridFightTraitSyncInfo trait_sync_info = 66;
+    // .GridFightTraitSyncInfo trait_sync_info = 1935;
 
     pub fn trait_sync_info(&self) -> &super::GridFightTraitSyncInfo::GridFightTraitSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitSyncInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitSyncInfo(ref v)) => v,
             _ => <super::GridFightTraitSyncInfo::GridFightTraitSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_trait_sync_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_trait_sync_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitSyncInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitSyncInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_trait_sync_info(&mut self, v: super::GridFightTraitSyncInfo::GridFightTraitSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitSyncInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitSyncInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_trait_sync_info(&mut self) -> &mut super::GridFightTraitSyncInfo::GridFightTraitSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitSyncInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitSyncInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitSyncInfo(super::GridFightTraitSyncInfo::GridFightTraitSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitSyncInfo(super::GridFightTraitSyncInfo::GridFightTraitSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitSyncInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitSyncInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -946,8 +946,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_trait_sync_info(&mut self) -> super::GridFightTraitSyncInfo::GridFightTraitSyncInfo {
         if self.has_trait_sync_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitSyncInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitSyncInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -955,64 +955,64 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightLockType lock_type = 1703;
+    // .GridFightLockType lock_type = 1025;
 
     pub fn lock_type(&self) -> super::GridFightLockType::GridFightLockType {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LockType(v)) => ::protobuf::EnumOrUnknown::enum_value_or_default(&v),
-            _ => super::GridFightLockType::GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LockType(v)) => ::protobuf::EnumOrUnknown::enum_value_or_default(&v),
+            _ => super::GridFightLockType::GridFightLockType::GridFightLockType_LCKDDLJAOHM,
         }
     }
 
     pub fn clear_lock_type(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_lock_type(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LockType(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LockType(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_lock_type(&mut self, v: super::GridFightLockType::GridFightLockType) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LockType(::protobuf::EnumOrUnknown::new(v)))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LockType(::protobuf::EnumOrUnknown::new(v)))
     }
 
-    // .GridFightTraitTrackSyncInfo trait_track_sync_info = 841;
+    // .GridFightTraitTrackSyncInfo trait_track_sync_info = 988;
 
     pub fn trait_track_sync_info(&self) -> &super::GridFightTraitTrackSyncInfo::GridFightTraitTrackSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitTrackSyncInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitTrackSyncInfo(ref v)) => v,
             _ => <super::GridFightTraitTrackSyncInfo::GridFightTraitTrackSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_trait_track_sync_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_trait_track_sync_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitTrackSyncInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitTrackSyncInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_trait_track_sync_info(&mut self, v: super::GridFightTraitTrackSyncInfo::GridFightTraitTrackSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitTrackSyncInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitTrackSyncInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_trait_track_sync_info(&mut self) -> &mut super::GridFightTraitTrackSyncInfo::GridFightTraitTrackSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitTrackSyncInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitTrackSyncInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitTrackSyncInfo(super::GridFightTraitTrackSyncInfo::GridFightTraitTrackSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitTrackSyncInfo(super::GridFightTraitTrackSyncInfo::GridFightTraitTrackSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitTrackSyncInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitTrackSyncInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1020,8 +1020,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_trait_track_sync_info(&mut self) -> super::GridFightTraitTrackSyncInfo::GridFightTraitTrackSyncInfo {
         if self.has_trait_track_sync_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitTrackSyncInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitTrackSyncInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1029,114 +1029,114 @@ impl GridFightSyncData {
         }
     }
 
-    // uint32 grid_fight_combo_win_num = 763;
+    // uint32 grid_fight_combo_win_num = 150;
 
     pub fn grid_fight_combo_win_num(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightComboWinNum(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightComboWinNum(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_grid_fight_combo_win_num(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_grid_fight_combo_win_num(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightComboWinNum(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightComboWinNum(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_grid_fight_combo_win_num(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightComboWinNum(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightComboWinNum(v))
     }
 
-    // uint32 grid_fight_max_avatar_count = 166;
+    // uint32 grid_fight_max_avatar_count = 394;
 
     pub fn grid_fight_max_avatar_count(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxAvatarCount(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightMaxAvatarCount(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_grid_fight_max_avatar_count(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_grid_fight_max_avatar_count(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxAvatarCount(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightMaxAvatarCount(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_grid_fight_max_avatar_count(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxAvatarCount(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightMaxAvatarCount(v))
     }
 
-    // uint32 grid_fight_off_field_max_count = 721;
+    // uint32 grid_fight_off_field_max_count = 996;
 
     pub fn grid_fight_off_field_max_count(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightOffFieldMaxCount(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightOffFieldMaxCount(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_grid_fight_off_field_max_count(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_grid_fight_off_field_max_count(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightOffFieldMaxCount(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightOffFieldMaxCount(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_grid_fight_off_field_max_count(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightOffFieldMaxCount(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightOffFieldMaxCount(v))
     }
 
-    // .GridFightDamageSttInfo grid_fight_damage_stt_info = 1354;
+    // .GridFightDamageSttInfo grid_fight_damage_stt_info = 586;
 
     pub fn grid_fight_damage_stt_info(&self) -> &super::GridFightDamageSttInfo::GridFightDamageSttInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightDamageSttInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightDamageSttInfo(ref v)) => v,
             _ => <super::GridFightDamageSttInfo::GridFightDamageSttInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_grid_fight_damage_stt_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_grid_fight_damage_stt_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightDamageSttInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightDamageSttInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_grid_fight_damage_stt_info(&mut self, v: super::GridFightDamageSttInfo::GridFightDamageSttInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightDamageSttInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightDamageSttInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_grid_fight_damage_stt_info(&mut self) -> &mut super::GridFightDamageSttInfo::GridFightDamageSttInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightDamageSttInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightDamageSttInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightDamageSttInfo(super::GridFightDamageSttInfo::GridFightDamageSttInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightDamageSttInfo(super::GridFightDamageSttInfo::GridFightDamageSttInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightDamageSttInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightDamageSttInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1144,8 +1144,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_grid_fight_damage_stt_info(&mut self) -> super::GridFightDamageSttInfo::GridFightDamageSttInfo {
         if self.has_grid_fight_damage_stt_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightDamageSttInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightDamageSttInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1153,39 +1153,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightEliteBranchSyncInfo elite_branch_sync_info = 1340;
+    // .GridFightEliteBranchSyncInfo elite_branch_sync_info = 925;
 
     pub fn elite_branch_sync_info(&self) -> &super::GridFightEliteBranchSyncInfo::GridFightEliteBranchSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EliteBranchSyncInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EliteBranchSyncInfo(ref v)) => v,
             _ => <super::GridFightEliteBranchSyncInfo::GridFightEliteBranchSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_elite_branch_sync_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_elite_branch_sync_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EliteBranchSyncInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EliteBranchSyncInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_elite_branch_sync_info(&mut self, v: super::GridFightEliteBranchSyncInfo::GridFightEliteBranchSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EliteBranchSyncInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EliteBranchSyncInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_elite_branch_sync_info(&mut self) -> &mut super::GridFightEliteBranchSyncInfo::GridFightEliteBranchSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EliteBranchSyncInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EliteBranchSyncInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EliteBranchSyncInfo(super::GridFightEliteBranchSyncInfo::GridFightEliteBranchSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EliteBranchSyncInfo(super::GridFightEliteBranchSyncInfo::GridFightEliteBranchSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EliteBranchSyncInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EliteBranchSyncInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1193,8 +1193,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_elite_branch_sync_info(&mut self) -> super::GridFightEliteBranchSyncInfo::GridFightEliteBranchSyncInfo {
         if self.has_elite_branch_sync_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EliteBranchSyncInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EliteBranchSyncInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1202,39 +1202,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridGameNpcInfo add_npc_info = 1548;
+    // .GridGameNpcInfo add_npc_info = 1599;
 
     pub fn add_npc_info(&self) -> &super::GridGameNpcInfo::GridGameNpcInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddNpcInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddNpcInfo(ref v)) => v,
             _ => <super::GridGameNpcInfo::GridGameNpcInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_add_npc_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_add_npc_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddNpcInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddNpcInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_add_npc_info(&mut self, v: super::GridGameNpcInfo::GridGameNpcInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddNpcInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddNpcInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_add_npc_info(&mut self) -> &mut super::GridGameNpcInfo::GridGameNpcInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddNpcInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddNpcInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddNpcInfo(super::GridGameNpcInfo::GridGameNpcInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddNpcInfo(super::GridGameNpcInfo::GridGameNpcInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddNpcInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddNpcInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1242,8 +1242,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_add_npc_info(&mut self) -> super::GridGameNpcInfo::GridGameNpcInfo {
         if self.has_add_npc_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddNpcInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddNpcInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1251,39 +1251,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridGameNpcInfo update_npc_info = 691;
+    // .GridGameNpcInfo update_npc_info = 1425;
 
     pub fn update_npc_info(&self) -> &super::GridGameNpcInfo::GridGameNpcInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateNpcInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateNpcInfo(ref v)) => v,
             _ => <super::GridGameNpcInfo::GridGameNpcInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_update_npc_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_update_npc_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateNpcInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateNpcInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_update_npc_info(&mut self, v: super::GridGameNpcInfo::GridGameNpcInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateNpcInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateNpcInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_update_npc_info(&mut self) -> &mut super::GridGameNpcInfo::GridGameNpcInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateNpcInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateNpcInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateNpcInfo(super::GridGameNpcInfo::GridGameNpcInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateNpcInfo(super::GridGameNpcInfo::GridGameNpcInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateNpcInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateNpcInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1291,8 +1291,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_update_npc_info(&mut self) -> super::GridGameNpcInfo::GridGameNpcInfo {
         if self.has_update_npc_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateNpcInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateNpcInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1300,64 +1300,64 @@ impl GridFightSyncData {
         }
     }
 
-    // uint32 remove_npc_unique_id = 273;
+    // uint32 remove_npc_unique_id = 151;
 
     pub fn remove_npc_unique_id(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveNpcUniqueId(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveNpcUniqueId(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_remove_npc_unique_id(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_remove_npc_unique_id(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveNpcUniqueId(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveNpcUniqueId(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_remove_npc_unique_id(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveNpcUniqueId(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveNpcUniqueId(v))
     }
 
-    // .GridGameForgeItemInfo add_forge_info = 164;
+    // .GridGameForgeItemInfo add_forge_info = 1777;
 
     pub fn add_forge_info(&self) -> &super::GridGameForgeItemInfo::GridGameForgeItemInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddForgeInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddForgeInfo(ref v)) => v,
             _ => <super::GridGameForgeItemInfo::GridGameForgeItemInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_add_forge_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_add_forge_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddForgeInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddForgeInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_add_forge_info(&mut self, v: super::GridGameForgeItemInfo::GridGameForgeItemInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddForgeInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddForgeInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_add_forge_info(&mut self) -> &mut super::GridGameForgeItemInfo::GridGameForgeItemInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddForgeInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddForgeInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddForgeInfo(super::GridGameForgeItemInfo::GridGameForgeItemInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddForgeInfo(super::GridGameForgeItemInfo::GridGameForgeItemInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddForgeInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddForgeInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1365,8 +1365,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_add_forge_info(&mut self) -> super::GridGameForgeItemInfo::GridGameForgeItemInfo {
         if self.has_add_forge_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddForgeInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddForgeInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1374,39 +1374,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridGameForgeItemInfo update_forge_info = 379;
+    // .GridGameForgeItemInfo update_forge_info = 47;
 
     pub fn update_forge_info(&self) -> &super::GridGameForgeItemInfo::GridGameForgeItemInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateForgeInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateForgeInfo(ref v)) => v,
             _ => <super::GridGameForgeItemInfo::GridGameForgeItemInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_update_forge_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_update_forge_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateForgeInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateForgeInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_update_forge_info(&mut self, v: super::GridGameForgeItemInfo::GridGameForgeItemInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateForgeInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateForgeInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_update_forge_info(&mut self) -> &mut super::GridGameForgeItemInfo::GridGameForgeItemInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateForgeInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateForgeInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateForgeInfo(super::GridGameForgeItemInfo::GridGameForgeItemInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateForgeInfo(super::GridGameForgeItemInfo::GridGameForgeItemInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateForgeInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateForgeInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1414,8 +1414,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_update_forge_info(&mut self) -> super::GridGameForgeItemInfo::GridGameForgeItemInfo {
         if self.has_update_forge_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateForgeInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateForgeInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1423,64 +1423,64 @@ impl GridFightSyncData {
         }
     }
 
-    // uint32 remove_forge_unique_id = 1447;
+    // uint32 remove_forge_unique_id = 1877;
 
     pub fn remove_forge_unique_id(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveForgeUniqueId(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveForgeUniqueId(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_remove_forge_unique_id(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_remove_forge_unique_id(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveForgeUniqueId(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveForgeUniqueId(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_remove_forge_unique_id(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveForgeUniqueId(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveForgeUniqueId(v))
     }
 
-    // .GridFightGameAugmentAdd augment_sync_info = 1810;
+    // .GridFightGameAugmentAdd augment_sync_info = 597;
 
     pub fn augment_sync_info(&self) -> &super::GridFightGameAugmentAdd::GridFightGameAugmentAdd {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AugmentSyncInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AugmentSyncInfo(ref v)) => v,
             _ => <super::GridFightGameAugmentAdd::GridFightGameAugmentAdd as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_augment_sync_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_augment_sync_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AugmentSyncInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AugmentSyncInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_augment_sync_info(&mut self, v: super::GridFightGameAugmentAdd::GridFightGameAugmentAdd) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AugmentSyncInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AugmentSyncInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_augment_sync_info(&mut self) -> &mut super::GridFightGameAugmentAdd::GridFightGameAugmentAdd {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AugmentSyncInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AugmentSyncInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AugmentSyncInfo(super::GridFightGameAugmentAdd::GridFightGameAugmentAdd::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AugmentSyncInfo(super::GridFightGameAugmentAdd::GridFightGameAugmentAdd::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AugmentSyncInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AugmentSyncInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1488,8 +1488,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_augment_sync_info(&mut self) -> super::GridFightGameAugmentAdd::GridFightGameAugmentAdd {
         if self.has_augment_sync_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AugmentSyncInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AugmentSyncInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1497,39 +1497,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .RoleTrackEquipmentSyncInfo equipment_track_sync_info = 1737;
+    // .RoleTrackEquipmentSyncInfo equipment_track_sync_info = 1031;
 
     pub fn equipment_track_sync_info(&self) -> &super::RoleTrackEquipmentSyncInfo::RoleTrackEquipmentSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EquipmentTrackSyncInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EquipmentTrackSyncInfo(ref v)) => v,
             _ => <super::RoleTrackEquipmentSyncInfo::RoleTrackEquipmentSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_equipment_track_sync_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_equipment_track_sync_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EquipmentTrackSyncInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EquipmentTrackSyncInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_equipment_track_sync_info(&mut self, v: super::RoleTrackEquipmentSyncInfo::RoleTrackEquipmentSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EquipmentTrackSyncInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EquipmentTrackSyncInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_equipment_track_sync_info(&mut self) -> &mut super::RoleTrackEquipmentSyncInfo::RoleTrackEquipmentSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EquipmentTrackSyncInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EquipmentTrackSyncInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EquipmentTrackSyncInfo(super::RoleTrackEquipmentSyncInfo::RoleTrackEquipmentSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EquipmentTrackSyncInfo(super::RoleTrackEquipmentSyncInfo::RoleTrackEquipmentSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EquipmentTrackSyncInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EquipmentTrackSyncInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1537,8 +1537,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_equipment_track_sync_info(&mut self) -> super::RoleTrackEquipmentSyncInfo::RoleTrackEquipmentSyncInfo {
         if self.has_equipment_track_sync_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EquipmentTrackSyncInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EquipmentTrackSyncInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1546,39 +1546,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightGameItemInfo grid_fight_sync_game_item_info = 963;
+    // .GridFightGameItemInfo grid_fight_sync_game_item_info = 1036;
 
     pub fn grid_fight_sync_game_item_info(&self) -> &super::GridFightGameItemInfo::GridFightGameItemInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightSyncGameItemInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightSyncGameItemInfo(ref v)) => v,
             _ => <super::GridFightGameItemInfo::GridFightGameItemInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_grid_fight_sync_game_item_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_grid_fight_sync_game_item_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightSyncGameItemInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightSyncGameItemInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_grid_fight_sync_game_item_info(&mut self, v: super::GridFightGameItemInfo::GridFightGameItemInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightSyncGameItemInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightSyncGameItemInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_grid_fight_sync_game_item_info(&mut self) -> &mut super::GridFightGameItemInfo::GridFightGameItemInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightSyncGameItemInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightSyncGameItemInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightSyncGameItemInfo(super::GridFightGameItemInfo::GridFightGameItemInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightSyncGameItemInfo(super::GridFightGameItemInfo::GridFightGameItemInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightSyncGameItemInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightSyncGameItemInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1586,8 +1586,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_grid_fight_sync_game_item_info(&mut self) -> super::GridFightGameItemInfo::GridFightGameItemInfo {
         if self.has_grid_fight_sync_game_item_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightSyncGameItemInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightSyncGameItemInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1595,89 +1595,89 @@ impl GridFightSyncData {
         }
     }
 
-    // uint32 remove_orb_unique_id = 232;
+    // uint32 remove_orb_unique_id = 521;
 
     pub fn remove_orb_unique_id(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveOrbUniqueId(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveOrbUniqueId(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_remove_orb_unique_id(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_remove_orb_unique_id(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveOrbUniqueId(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveOrbUniqueId(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_remove_orb_unique_id(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveOrbUniqueId(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveOrbUniqueId(v))
     }
 
-    // uint32 GNFGKFMAFHJ = 1754;
+    // uint32 FLMPADHOKHJ = 330;
 
-    pub fn GNFGKFMAFHJ(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GNFGKFMAFHJ(v)) => v,
+    pub fn FLMPADHOKHJ(&self) -> u32 {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::FLMPADHOKHJ(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_GNFGKFMAFHJ(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+    pub fn clear_FLMPADHOKHJ(&mut self) {
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
-    pub fn has_GNFGKFMAFHJ(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GNFGKFMAFHJ(..)) => true,
+    pub fn has_FLMPADHOKHJ(&self) -> bool {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::FLMPADHOKHJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_GNFGKFMAFHJ(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GNFGKFMAFHJ(v))
+    pub fn set_FLMPADHOKHJ(&mut self, v: u32) {
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::FLMPADHOKHJ(v))
     }
 
-    // .GridFightTutorialSyncInfo grid_fight_tutorial_sync = 2034;
+    // .GridFightTutorialSyncInfo grid_fight_tutorial_sync = 1716;
 
     pub fn grid_fight_tutorial_sync(&self) -> &super::GridFightTutorialSyncInfo::GridFightTutorialSyncInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightTutorialSync(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightTutorialSync(ref v)) => v,
             _ => <super::GridFightTutorialSyncInfo::GridFightTutorialSyncInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_grid_fight_tutorial_sync(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_grid_fight_tutorial_sync(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightTutorialSync(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightTutorialSync(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_grid_fight_tutorial_sync(&mut self, v: super::GridFightTutorialSyncInfo::GridFightTutorialSyncInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightTutorialSync(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightTutorialSync(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_grid_fight_tutorial_sync(&mut self) -> &mut super::GridFightTutorialSyncInfo::GridFightTutorialSyncInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightTutorialSync(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightTutorialSync(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightTutorialSync(super::GridFightTutorialSyncInfo::GridFightTutorialSyncInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightTutorialSync(super::GridFightTutorialSyncInfo::GridFightTutorialSyncInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightTutorialSync(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightTutorialSync(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1685,8 +1685,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_grid_fight_tutorial_sync(&mut self) -> super::GridFightTutorialSyncInfo::GridFightTutorialSyncInfo {
         if self.has_grid_fight_tutorial_sync() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightTutorialSync(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightTutorialSync(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1694,39 +1694,39 @@ impl GridFightSyncData {
         }
     }
 
-    // .GridFightLockInfo sync_lock_info = 1622;
+    // .GridFightLockInfo sync_lock_info = 1675;
 
     pub fn sync_lock_info(&self) -> &super::GridFightLockInfo::GridFightLockInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SyncLockInfo(ref v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SyncLockInfo(ref v)) => v,
             _ => <super::GridFightLockInfo::GridFightLockInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_sync_lock_info(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_sync_lock_info(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SyncLockInfo(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SyncLockInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_sync_lock_info(&mut self, v: super::GridFightLockInfo::GridFightLockInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SyncLockInfo(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SyncLockInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_sync_lock_info(&mut self) -> &mut super::GridFightLockInfo::GridFightLockInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SyncLockInfo(_)) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SyncLockInfo(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SyncLockInfo(super::GridFightLockInfo::GridFightLockInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SyncLockInfo(super::GridFightLockInfo::GridFightLockInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SyncLockInfo(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SyncLockInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -1734,8 +1734,8 @@ impl GridFightSyncData {
     // Take field
     pub fn take_sync_lock_info(&mut self) -> super::GridFightLockInfo::GridFightLockInfo {
         if self.has_sync_lock_info() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SyncLockInfo(v)) => v,
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SyncLockInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1743,196 +1743,196 @@ impl GridFightSyncData {
         }
     }
 
-    // uint32 remove_trait_effect_id = 902;
+    // uint32 remove_trait_effect_id = 906;
 
     pub fn remove_trait_effect_id(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveTraitEffectId(v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveTraitEffectId(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_remove_trait_effect_id(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
     pub fn has_remove_trait_effect_id(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveTraitEffectId(..)) => true,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveTraitEffectId(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_remove_trait_effect_id(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveTraitEffectId(v))
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveTraitEffectId(v))
     }
 
-    // .IAIMMHMKKNJ LIOGMHAPGJO = 1098;
+    // .NEAOHJMAPJN DJIKOKDDJEI = 2043;
 
-    pub fn LIOGMHAPGJO(&self) -> &super::IAIMMHMKKNJ::IAIMMHMKKNJ {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LIOGMHAPGJO(ref v)) => v,
-            _ => <super::IAIMMHMKKNJ::IAIMMHMKKNJ as ::protobuf::Message>::default_instance(),
+    pub fn DJIKOKDDJEI(&self) -> &super::NEAOHJMAPJN::NEAOHJMAPJN {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::DJIKOKDDJEI(ref v)) => v,
+            _ => <super::NEAOHJMAPJN::NEAOHJMAPJN as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_LIOGMHAPGJO(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+    pub fn clear_DJIKOKDDJEI(&mut self) {
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
-    pub fn has_LIOGMHAPGJO(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LIOGMHAPGJO(..)) => true,
+    pub fn has_DJIKOKDDJEI(&self) -> bool {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::DJIKOKDDJEI(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_LIOGMHAPGJO(&mut self, v: super::IAIMMHMKKNJ::IAIMMHMKKNJ) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LIOGMHAPGJO(v))
+    pub fn set_DJIKOKDDJEI(&mut self, v: super::NEAOHJMAPJN::NEAOHJMAPJN) {
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::DJIKOKDDJEI(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_LIOGMHAPGJO(&mut self) -> &mut super::IAIMMHMKKNJ::IAIMMHMKKNJ {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LIOGMHAPGJO(_)) = self.CGDKGNFCGCI {
+    pub fn mut_DJIKOKDDJEI(&mut self) -> &mut super::NEAOHJMAPJN::NEAOHJMAPJN {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::DJIKOKDDJEI(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LIOGMHAPGJO(super::IAIMMHMKKNJ::IAIMMHMKKNJ::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::DJIKOKDDJEI(super::NEAOHJMAPJN::NEAOHJMAPJN::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LIOGMHAPGJO(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::DJIKOKDDJEI(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_LIOGMHAPGJO(&mut self) -> super::IAIMMHMKKNJ::IAIMMHMKKNJ {
-        if self.has_LIOGMHAPGJO() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LIOGMHAPGJO(v)) => v,
+    pub fn take_DJIKOKDDJEI(&mut self) -> super::NEAOHJMAPJN::NEAOHJMAPJN {
+        if self.has_DJIKOKDDJEI() {
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::DJIKOKDDJEI(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::IAIMMHMKKNJ::IAIMMHMKKNJ::new()
+            super::NEAOHJMAPJN::NEAOHJMAPJN::new()
         }
     }
 
-    // .IAIMMHMKKNJ BCEECFANEBM = 435;
+    // .NEAOHJMAPJN AICDHILPCOC = 273;
 
-    pub fn BCEECFANEBM(&self) -> &super::IAIMMHMKKNJ::IAIMMHMKKNJ {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::BCEECFANEBM(ref v)) => v,
-            _ => <super::IAIMMHMKKNJ::IAIMMHMKKNJ as ::protobuf::Message>::default_instance(),
+    pub fn AICDHILPCOC(&self) -> &super::NEAOHJMAPJN::NEAOHJMAPJN {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AICDHILPCOC(ref v)) => v,
+            _ => <super::NEAOHJMAPJN::NEAOHJMAPJN as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BCEECFANEBM(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+    pub fn clear_AICDHILPCOC(&mut self) {
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
-    pub fn has_BCEECFANEBM(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::BCEECFANEBM(..)) => true,
+    pub fn has_AICDHILPCOC(&self) -> bool {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AICDHILPCOC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BCEECFANEBM(&mut self, v: super::IAIMMHMKKNJ::IAIMMHMKKNJ) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::BCEECFANEBM(v))
+    pub fn set_AICDHILPCOC(&mut self, v: super::NEAOHJMAPJN::NEAOHJMAPJN) {
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AICDHILPCOC(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BCEECFANEBM(&mut self) -> &mut super::IAIMMHMKKNJ::IAIMMHMKKNJ {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::BCEECFANEBM(_)) = self.CGDKGNFCGCI {
+    pub fn mut_AICDHILPCOC(&mut self) -> &mut super::NEAOHJMAPJN::NEAOHJMAPJN {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AICDHILPCOC(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::BCEECFANEBM(super::IAIMMHMKKNJ::IAIMMHMKKNJ::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AICDHILPCOC(super::NEAOHJMAPJN::NEAOHJMAPJN::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::BCEECFANEBM(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AICDHILPCOC(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BCEECFANEBM(&mut self) -> super::IAIMMHMKKNJ::IAIMMHMKKNJ {
-        if self.has_BCEECFANEBM() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::BCEECFANEBM(v)) => v,
+    pub fn take_AICDHILPCOC(&mut self) -> super::NEAOHJMAPJN::NEAOHJMAPJN {
+        if self.has_AICDHILPCOC() {
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AICDHILPCOC(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::IAIMMHMKKNJ::IAIMMHMKKNJ::new()
+            super::NEAOHJMAPJN::NEAOHJMAPJN::new()
         }
     }
 
-    // uint32 HKAIBKFLFOO = 228;
+    // uint32 PNKFPEMHFIF = 1835;
 
-    pub fn HKAIBKFLFOO(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::HKAIBKFLFOO(v)) => v,
+    pub fn PNKFPEMHFIF(&self) -> u32 {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PNKFPEMHFIF(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_HKAIBKFLFOO(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+    pub fn clear_PNKFPEMHFIF(&mut self) {
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
-    pub fn has_HKAIBKFLFOO(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::HKAIBKFLFOO(..)) => true,
+    pub fn has_PNKFPEMHFIF(&self) -> bool {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PNKFPEMHFIF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_HKAIBKFLFOO(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::HKAIBKFLFOO(v))
+    pub fn set_PNKFPEMHFIF(&mut self, v: u32) {
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PNKFPEMHFIF(v))
     }
 
-    // .GridGameOrbInfo CEAAKGHFDFJ = 337;
+    // .GridGameOrbInfo MCOKOIFPMCM = 177;
 
-    pub fn CEAAKGHFDFJ(&self) -> &super::GridGameOrbInfo::GridGameOrbInfo {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::CEAAKGHFDFJ(ref v)) => v,
+    pub fn MCOKOIFPMCM(&self) -> &super::GridGameOrbInfo::GridGameOrbInfo {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MCOKOIFPMCM(ref v)) => v,
             _ => <super::GridGameOrbInfo::GridGameOrbInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_CEAAKGHFDFJ(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+    pub fn clear_MCOKOIFPMCM(&mut self) {
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
-    pub fn has_CEAAKGHFDFJ(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::CEAAKGHFDFJ(..)) => true,
+    pub fn has_MCOKOIFPMCM(&self) -> bool {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MCOKOIFPMCM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CEAAKGHFDFJ(&mut self, v: super::GridGameOrbInfo::GridGameOrbInfo) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::CEAAKGHFDFJ(v))
+    pub fn set_MCOKOIFPMCM(&mut self, v: super::GridGameOrbInfo::GridGameOrbInfo) {
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MCOKOIFPMCM(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CEAAKGHFDFJ(&mut self) -> &mut super::GridGameOrbInfo::GridGameOrbInfo {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::CEAAKGHFDFJ(_)) = self.CGDKGNFCGCI {
+    pub fn mut_MCOKOIFPMCM(&mut self) -> &mut super::GridGameOrbInfo::GridGameOrbInfo {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MCOKOIFPMCM(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::CEAAKGHFDFJ(super::GridGameOrbInfo::GridGameOrbInfo::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MCOKOIFPMCM(super::GridGameOrbInfo::GridGameOrbInfo::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::CEAAKGHFDFJ(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MCOKOIFPMCM(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CEAAKGHFDFJ(&mut self) -> super::GridGameOrbInfo::GridGameOrbInfo {
-        if self.has_CEAAKGHFDFJ() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::CEAAKGHFDFJ(v)) => v,
+    pub fn take_MCOKOIFPMCM(&mut self) -> super::GridGameOrbInfo::GridGameOrbInfo {
+        if self.has_MCOKOIFPMCM() {
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MCOKOIFPMCM(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -1940,127 +1940,127 @@ impl GridFightSyncData {
         }
     }
 
-    // uint32 PFKEEIKADMA = 332;
+    // uint32 ODKNCCEKEKL = 1065;
 
-    pub fn PFKEEIKADMA(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PFKEEIKADMA(v)) => v,
+    pub fn ODKNCCEKEKL(&self) -> u32 {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ODKNCCEKEKL(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_PFKEEIKADMA(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+    pub fn clear_ODKNCCEKEKL(&mut self) {
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
-    pub fn has_PFKEEIKADMA(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PFKEEIKADMA(..)) => true,
+    pub fn has_ODKNCCEKEKL(&self) -> bool {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ODKNCCEKEKL(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_PFKEEIKADMA(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PFKEEIKADMA(v))
+    pub fn set_ODKNCCEKEKL(&mut self, v: u32) {
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ODKNCCEKEKL(v))
     }
 
-    // uint32 MKNIDKODJHO = 225;
+    // uint32 IHKCFOMJGLL = 198;
 
-    pub fn MKNIDKODJHO(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::MKNIDKODJHO(v)) => v,
+    pub fn IHKCFOMJGLL(&self) -> u32 {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::IHKCFOMJGLL(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_MKNIDKODJHO(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+    pub fn clear_IHKCFOMJGLL(&mut self) {
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
-    pub fn has_MKNIDKODJHO(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::MKNIDKODJHO(..)) => true,
+    pub fn has_IHKCFOMJGLL(&self) -> bool {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::IHKCFOMJGLL(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_MKNIDKODJHO(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::MKNIDKODJHO(v))
+    pub fn set_IHKCFOMJGLL(&mut self, v: u32) {
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::IHKCFOMJGLL(v))
     }
 
-    // uint32 JEGMOPKFMLF = 1699;
+    // uint32 JGJDAOMKFKA = 1700;
 
-    pub fn JEGMOPKFMLF(&self) -> u32 {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::JEGMOPKFMLF(v)) => v,
+    pub fn JGJDAOMKFKA(&self) -> u32 {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::JGJDAOMKFKA(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_JEGMOPKFMLF(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+    pub fn clear_JGJDAOMKFKA(&mut self) {
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
-    pub fn has_JEGMOPKFMLF(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::JEGMOPKFMLF(..)) => true,
+    pub fn has_JGJDAOMKFKA(&self) -> bool {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::JGJDAOMKFKA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_JEGMOPKFMLF(&mut self, v: u32) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::JEGMOPKFMLF(v))
+    pub fn set_JGJDAOMKFKA(&mut self, v: u32) {
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::JGJDAOMKFKA(v))
     }
 
-    // .JHFLPNLHHCB EHAJBBCMCEN = 960;
+    // .BCDMHKEJNGH EBIGFBEFFDH = 1037;
 
-    pub fn EHAJBBCMCEN(&self) -> &super::JHFLPNLHHCB::JHFLPNLHHCB {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EHAJBBCMCEN(ref v)) => v,
-            _ => <super::JHFLPNLHHCB::JHFLPNLHHCB as ::protobuf::Message>::default_instance(),
+    pub fn EBIGFBEFFDH(&self) -> &super::BCDMHKEJNGH::BCDMHKEJNGH {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EBIGFBEFFDH(ref v)) => v,
+            _ => <super::BCDMHKEJNGH::BCDMHKEJNGH as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_EHAJBBCMCEN(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+    pub fn clear_EBIGFBEFFDH(&mut self) {
+        self.DEBKBABACIC = ::std::option::Option::None;
     }
 
-    pub fn has_EHAJBBCMCEN(&self) -> bool {
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EHAJBBCMCEN(..)) => true,
+    pub fn has_EBIGFBEFFDH(&self) -> bool {
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EBIGFBEFFDH(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_EHAJBBCMCEN(&mut self, v: super::JHFLPNLHHCB::JHFLPNLHHCB) {
-        self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EHAJBBCMCEN(v))
+    pub fn set_EBIGFBEFFDH(&mut self, v: super::BCDMHKEJNGH::BCDMHKEJNGH) {
+        self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EBIGFBEFFDH(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_EHAJBBCMCEN(&mut self) -> &mut super::JHFLPNLHHCB::JHFLPNLHHCB {
-        if let ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EHAJBBCMCEN(_)) = self.CGDKGNFCGCI {
+    pub fn mut_EBIGFBEFFDH(&mut self) -> &mut super::BCDMHKEJNGH::BCDMHKEJNGH {
+        if let ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EBIGFBEFFDH(_)) = self.DEBKBABACIC {
         } else {
-            self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EHAJBBCMCEN(super::JHFLPNLHHCB::JHFLPNLHHCB::new()));
+            self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EBIGFBEFFDH(super::BCDMHKEJNGH::BCDMHKEJNGH::new()));
         }
-        match self.CGDKGNFCGCI {
-            ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EHAJBBCMCEN(ref mut v)) => v,
+        match self.DEBKBABACIC {
+            ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EBIGFBEFFDH(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_EHAJBBCMCEN(&mut self) -> super::JHFLPNLHHCB::JHFLPNLHHCB {
-        if self.has_EHAJBBCMCEN() {
-            match self.CGDKGNFCGCI.take() {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EHAJBBCMCEN(v)) => v,
+    pub fn take_EBIGFBEFFDH(&mut self) -> super::BCDMHKEJNGH::BCDMHKEJNGH {
+        if self.has_EBIGFBEFFDH() {
+            match self.DEBKBABACIC.take() {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EBIGFBEFFDH(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JHFLPNLHHCB::JHFLPNLHHCB::new()
+            super::BCDMHKEJNGH::BCDMHKEJNGH::new()
         }
     }
 
@@ -2216,14 +2216,14 @@ impl GridFightSyncData {
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_enum_accessors::<_, _>(
             "lock_type",
-            |message: &GridFightSyncData| match &message.CGDKGNFCGCI {
-                ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LockType(e)) => ::std::option::Option::Some(*e),
+            |message: &GridFightSyncData| match &message.DEBKBABACIC {
+                ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LockType(e)) => ::std::option::Option::Some(*e),
                 _ => ::std::option::Option::None,
             },
             |message: &mut GridFightSyncData, e: ::protobuf::EnumOrUnknown<super::GridFightLockType::GridFightLockType>| {
-                message.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LockType(e));
+                message.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LockType(e));
             },
-            super::GridFightLockType::GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB,
+            super::GridFightLockType::GridFightLockType::GridFightLockType_LCKDDLJAOHM,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightTraitTrackSyncInfo::GridFightTraitTrackSyncInfo>(
             "trait_track_sync_info",
@@ -2332,10 +2332,10 @@ impl GridFightSyncData {
             GridFightSyncData::set_remove_orb_unique_id,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "GNFGKFMAFHJ",
-            GridFightSyncData::has_GNFGKFMAFHJ,
-            GridFightSyncData::GNFGKFMAFHJ,
-            GridFightSyncData::set_GNFGKFMAFHJ,
+            "FLMPADHOKHJ",
+            GridFightSyncData::has_FLMPADHOKHJ,
+            GridFightSyncData::FLMPADHOKHJ,
+            GridFightSyncData::set_FLMPADHOKHJ,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridFightTutorialSyncInfo::GridFightTutorialSyncInfo>(
             "grid_fight_tutorial_sync",
@@ -2357,59 +2357,59 @@ impl GridFightSyncData {
             GridFightSyncData::remove_trait_effect_id,
             GridFightSyncData::set_remove_trait_effect_id,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IAIMMHMKKNJ::IAIMMHMKKNJ>(
-            "LIOGMHAPGJO",
-            GridFightSyncData::has_LIOGMHAPGJO,
-            GridFightSyncData::LIOGMHAPGJO,
-            GridFightSyncData::mut_LIOGMHAPGJO,
-            GridFightSyncData::set_LIOGMHAPGJO,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NEAOHJMAPJN::NEAOHJMAPJN>(
+            "DJIKOKDDJEI",
+            GridFightSyncData::has_DJIKOKDDJEI,
+            GridFightSyncData::DJIKOKDDJEI,
+            GridFightSyncData::mut_DJIKOKDDJEI,
+            GridFightSyncData::set_DJIKOKDDJEI,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IAIMMHMKKNJ::IAIMMHMKKNJ>(
-            "BCEECFANEBM",
-            GridFightSyncData::has_BCEECFANEBM,
-            GridFightSyncData::BCEECFANEBM,
-            GridFightSyncData::mut_BCEECFANEBM,
-            GridFightSyncData::set_BCEECFANEBM,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NEAOHJMAPJN::NEAOHJMAPJN>(
+            "AICDHILPCOC",
+            GridFightSyncData::has_AICDHILPCOC,
+            GridFightSyncData::AICDHILPCOC,
+            GridFightSyncData::mut_AICDHILPCOC,
+            GridFightSyncData::set_AICDHILPCOC,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "HKAIBKFLFOO",
-            GridFightSyncData::has_HKAIBKFLFOO,
-            GridFightSyncData::HKAIBKFLFOO,
-            GridFightSyncData::set_HKAIBKFLFOO,
+            "PNKFPEMHFIF",
+            GridFightSyncData::has_PNKFPEMHFIF,
+            GridFightSyncData::PNKFPEMHFIF,
+            GridFightSyncData::set_PNKFPEMHFIF,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GridGameOrbInfo::GridGameOrbInfo>(
-            "CEAAKGHFDFJ",
-            GridFightSyncData::has_CEAAKGHFDFJ,
-            GridFightSyncData::CEAAKGHFDFJ,
-            GridFightSyncData::mut_CEAAKGHFDFJ,
-            GridFightSyncData::set_CEAAKGHFDFJ,
+            "MCOKOIFPMCM",
+            GridFightSyncData::has_MCOKOIFPMCM,
+            GridFightSyncData::MCOKOIFPMCM,
+            GridFightSyncData::mut_MCOKOIFPMCM,
+            GridFightSyncData::set_MCOKOIFPMCM,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "PFKEEIKADMA",
-            GridFightSyncData::has_PFKEEIKADMA,
-            GridFightSyncData::PFKEEIKADMA,
-            GridFightSyncData::set_PFKEEIKADMA,
+            "ODKNCCEKEKL",
+            GridFightSyncData::has_ODKNCCEKEKL,
+            GridFightSyncData::ODKNCCEKEKL,
+            GridFightSyncData::set_ODKNCCEKEKL,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "MKNIDKODJHO",
-            GridFightSyncData::has_MKNIDKODJHO,
-            GridFightSyncData::MKNIDKODJHO,
-            GridFightSyncData::set_MKNIDKODJHO,
+            "IHKCFOMJGLL",
+            GridFightSyncData::has_IHKCFOMJGLL,
+            GridFightSyncData::IHKCFOMJGLL,
+            GridFightSyncData::set_IHKCFOMJGLL,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "JEGMOPKFMLF",
-            GridFightSyncData::has_JEGMOPKFMLF,
-            GridFightSyncData::JEGMOPKFMLF,
-            GridFightSyncData::set_JEGMOPKFMLF,
+            "JGJDAOMKFKA",
+            GridFightSyncData::has_JGJDAOMKFKA,
+            GridFightSyncData::JGJDAOMKFKA,
+            GridFightSyncData::set_JGJDAOMKFKA,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JHFLPNLHHCB::JHFLPNLHHCB>(
-            "EHAJBBCMCEN",
-            GridFightSyncData::has_EHAJBBCMCEN,
-            GridFightSyncData::EHAJBBCMCEN,
-            GridFightSyncData::mut_EHAJBBCMCEN,
-            GridFightSyncData::set_EHAJBBCMCEN,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BCDMHKEJNGH::BCDMHKEJNGH>(
+            "EBIGFBEFFDH",
+            GridFightSyncData::has_EBIGFBEFFDH,
+            GridFightSyncData::EBIGFBEFFDH,
+            GridFightSyncData::mut_EBIGFBEFFDH,
+            GridFightSyncData::set_EBIGFBEFFDH,
         ));
-        oneofs.push(grid_fight_sync_data::CGDKGNFCGCI::generated_oneof_descriptor_data());
+        oneofs.push(grid_fight_sync_data::DEBKBABACIC::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightSyncData>(
             "GridFightSyncData",
             fields,
@@ -2428,158 +2428,158 @@ impl ::protobuf::Message for GridFightSyncData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                7034 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddRoleInfo(is.read_message()?));
+                },
+                11122 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateRoleInfo(is.read_message()?));
+                },
+                4016 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveRoleUniqueId(is.read_uint32()?));
+                },
+                1522 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddGameItemInfo(is.read_message()?));
+                },
+                15842 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateGameItemInfo(is.read_message()?));
+                },
+                12506 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveGameItemInfo(is.read_message()?));
+                },
+                9688 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ItemValue(is.read_uint32()?));
+                },
+                3538 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PlayerLevel(is.read_message()?));
+                },
+                7178 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightLineupHp(is.read_message()?));
+                },
+                10944 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MaxBattleRoleNum(is.read_uint32()?));
+                },
+                1106 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ShopSyncInfo(is.read_message()?));
+                },
+                10714 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PendingAction(is.read_message()?));
+                },
+                4370 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PortalServerDataUpdate(is.read_message()?));
+                },
+                8370 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LevelSyncInfo(is.read_message()?));
+                },
+                4978 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::OrbSyncInfo(is.read_message()?));
+                },
+                4386 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SectionRecordSyncInfo(is.read_message()?));
+                },
+                12130 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridGameAugmentUpdate(is.read_message()?));
+                },
+                9616 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveAugmentUniqueId(is.read_uint32()?));
+                },
+                2568 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::FinishPendingActionPos(is.read_uint32()?));
+                },
+                10656 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightMaxInterestGold(is.read_uint32()?));
+                },
+                9112 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightBuyExpCost(is.read_uint32()?));
+                },
+                15482 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitSyncInfo(is.read_message()?));
+                },
+                8200 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::LockType(is.read_enum_or_unknown()?));
+                },
+                7906 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::TraitTrackSyncInfo(is.read_message()?));
+                },
+                1200 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightComboWinNum(is.read_uint32()?));
+                },
+                3152 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightMaxAvatarCount(is.read_uint32()?));
+                },
+                7968 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightOffFieldMaxCount(is.read_uint32()?));
+                },
                 4690 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddRoleInfo(is.read_message()?));
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightDamageSttInfo(is.read_message()?));
                 },
-                11618 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateRoleInfo(is.read_message()?));
+                7402 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EliteBranchSyncInfo(is.read_message()?));
                 },
-                2728 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveRoleUniqueId(is.read_uint32()?));
+                12794 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddNpcInfo(is.read_message()?));
                 },
-                10498 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddGameItemInfo(is.read_message()?));
+                11402 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateNpcInfo(is.read_message()?));
                 },
-                5626 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateGameItemInfo(is.read_message()?));
+                1208 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveNpcUniqueId(is.read_uint32()?));
                 },
-                4674 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveGameItemInfo(is.read_message()?));
+                14218 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AddForgeInfo(is.read_message()?));
                 },
-                10752 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ItemValue(is.read_uint32()?));
+                378 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::UpdateForgeInfo(is.read_message()?));
                 },
-                11978 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PlayerLevel(is.read_message()?));
+                15016 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveForgeUniqueId(is.read_uint32()?));
                 },
-                3226 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightLineupHp(is.read_message()?));
+                4778 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AugmentSyncInfo(is.read_message()?));
                 },
-                6696 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::MaxBattleRoleNum(is.read_uint32()?));
+                8250 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EquipmentTrackSyncInfo(is.read_message()?));
                 },
-                2770 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::ShopSyncInfo(is.read_message()?));
+                8290 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightSyncGameItemInfo(is.read_message()?));
                 },
-                4602 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PendingAction(is.read_message()?));
+                4168 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveOrbUniqueId(is.read_uint32()?));
                 },
-                14994 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PortalServerDataUpdate(is.read_message()?));
+                2640 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::FLMPADHOKHJ(is.read_uint32()?));
                 },
-                2426 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LevelSyncInfo(is.read_message()?));
+                13730 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::GridFightTutorialSync(is.read_message()?));
                 },
-                11442 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::OrbSyncInfo(is.read_message()?));
+                13402 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::SyncLockInfo(is.read_message()?));
                 },
-                7258 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SectionRecordSyncInfo(is.read_message()?));
+                7248 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::RemoveTraitEffectId(is.read_uint32()?));
                 },
-                4426 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridGameAugmentUpdate(is.read_message()?));
+                16346 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::DJIKOKDDJEI(is.read_message()?));
                 },
-                4648 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveAugmentUniqueId(is.read_uint32()?));
+                2186 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::AICDHILPCOC(is.read_message()?));
                 },
-                10480 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::FinishPendingActionPos(is.read_uint32()?));
+                14680 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::PNKFPEMHFIF(is.read_uint32()?));
                 },
-                14200 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxInterestGold(is.read_uint32()?));
+                1418 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::MCOKOIFPMCM(is.read_message()?));
                 },
-                14824 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightBuyExpCost(is.read_uint32()?));
+                8520 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::ODKNCCEKEKL(is.read_uint32()?));
                 },
-                530 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitSyncInfo(is.read_message()?));
+                1584 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::IHKCFOMJGLL(is.read_uint32()?));
                 },
-                13624 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LockType(is.read_enum_or_unknown()?));
+                13600 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::JGJDAOMKFKA(is.read_uint32()?));
                 },
-                6730 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::TraitTrackSyncInfo(is.read_message()?));
-                },
-                6104 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightComboWinNum(is.read_uint32()?));
-                },
-                1328 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxAvatarCount(is.read_uint32()?));
-                },
-                5768 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightOffFieldMaxCount(is.read_uint32()?));
-                },
-                10834 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightDamageSttInfo(is.read_message()?));
-                },
-                10722 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EliteBranchSyncInfo(is.read_message()?));
-                },
-                12386 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddNpcInfo(is.read_message()?));
-                },
-                5530 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateNpcInfo(is.read_message()?));
-                },
-                2184 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveNpcUniqueId(is.read_uint32()?));
-                },
-                1314 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AddForgeInfo(is.read_message()?));
-                },
-                3034 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::UpdateForgeInfo(is.read_message()?));
-                },
-                11576 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveForgeUniqueId(is.read_uint32()?));
-                },
-                14482 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::AugmentSyncInfo(is.read_message()?));
-                },
-                13898 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EquipmentTrackSyncInfo(is.read_message()?));
-                },
-                7706 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightSyncGameItemInfo(is.read_message()?));
-                },
-                1856 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveOrbUniqueId(is.read_uint32()?));
-                },
-                14032 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GNFGKFMAFHJ(is.read_uint32()?));
-                },
-                16274 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::GridFightTutorialSync(is.read_message()?));
-                },
-                12978 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::SyncLockInfo(is.read_message()?));
-                },
-                7216 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::RemoveTraitEffectId(is.read_uint32()?));
-                },
-                8786 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::LIOGMHAPGJO(is.read_message()?));
-                },
-                3482 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::BCEECFANEBM(is.read_message()?));
-                },
-                1824 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::HKAIBKFLFOO(is.read_uint32()?));
-                },
-                2698 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::CEAAKGHFDFJ(is.read_message()?));
-                },
-                2656 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::PFKEEIKADMA(is.read_uint32()?));
-                },
-                1800 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::MKNIDKODJHO(is.read_uint32()?));
-                },
-                13592 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::JEGMOPKFMLF(is.read_uint32()?));
-                },
-                7682 => {
-                    self.CGDKGNFCGCI = ::std::option::Option::Some(grid_fight_sync_data::CGDKGNFCGCI::EHAJBBCMCEN(is.read_message()?));
+                8298 => {
+                    self.DEBKBABACIC = ::std::option::Option::Some(grid_fight_sync_data::DEBKBABACIC::EBIGFBEFFDH(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -2593,189 +2593,189 @@ impl ::protobuf::Message for GridFightSyncData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(ref v) = self.DEBKBABACIC {
             match v {
-                &grid_fight_sync_data::CGDKGNFCGCI::AddRoleInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::AddRoleInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::UpdateRoleInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::UpdateRoleInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveRoleUniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(341, v);
+                &grid_fight_sync_data::DEBKBABACIC::RemoveRoleUniqueId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(502, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::AddGameItemInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::AddGameItemInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::UpdateGameItemInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::UpdateGameItemInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveGameItemInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::RemoveGameItemInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::ItemValue(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1344, v);
+                &grid_fight_sync_data::DEBKBABACIC::ItemValue(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1211, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::PlayerLevel(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::PlayerLevel(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightLineupHp(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::GridFightLineupHp(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::MaxBattleRoleNum(v) => {
-                    my_size += ::protobuf::rt::uint32_size(837, v);
+                &grid_fight_sync_data::DEBKBABACIC::MaxBattleRoleNum(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1368, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::ShopSyncInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::ShopSyncInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::PendingAction(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::PendingAction(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::PortalServerDataUpdate(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::PortalServerDataUpdate(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::LevelSyncInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::LevelSyncInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::OrbSyncInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::OrbSyncInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::SectionRecordSyncInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::SectionRecordSyncInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridGameAugmentUpdate(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::GridGameAugmentUpdate(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveAugmentUniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(581, v);
+                &grid_fight_sync_data::DEBKBABACIC::RemoveAugmentUniqueId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1202, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::FinishPendingActionPos(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1310, v);
+                &grid_fight_sync_data::DEBKBABACIC::FinishPendingActionPos(v) => {
+                    my_size += ::protobuf::rt::uint32_size(321, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxInterestGold(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1775, v);
+                &grid_fight_sync_data::DEBKBABACIC::GridFightMaxInterestGold(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1332, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightBuyExpCost(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1853, v);
+                &grid_fight_sync_data::DEBKBABACIC::GridFightBuyExpCost(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1139, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::TraitSyncInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::TraitSyncInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::LockType(v) => {
-                    my_size += ::protobuf::rt::int32_size(1703, v.value());
+                &grid_fight_sync_data::DEBKBABACIC::LockType(v) => {
+                    my_size += ::protobuf::rt::int32_size(1025, v.value());
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::TraitTrackSyncInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::TraitTrackSyncInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightComboWinNum(v) => {
-                    my_size += ::protobuf::rt::uint32_size(763, v);
+                &grid_fight_sync_data::DEBKBABACIC::GridFightComboWinNum(v) => {
+                    my_size += ::protobuf::rt::uint32_size(150, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxAvatarCount(v) => {
-                    my_size += ::protobuf::rt::uint32_size(166, v);
+                &grid_fight_sync_data::DEBKBABACIC::GridFightMaxAvatarCount(v) => {
+                    my_size += ::protobuf::rt::uint32_size(394, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightOffFieldMaxCount(v) => {
-                    my_size += ::protobuf::rt::uint32_size(721, v);
+                &grid_fight_sync_data::DEBKBABACIC::GridFightOffFieldMaxCount(v) => {
+                    my_size += ::protobuf::rt::uint32_size(996, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightDamageSttInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::GridFightDamageSttInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::EliteBranchSyncInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::EliteBranchSyncInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::AddNpcInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::AddNpcInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::UpdateNpcInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::UpdateNpcInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveNpcUniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(273, v);
+                &grid_fight_sync_data::DEBKBABACIC::RemoveNpcUniqueId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(151, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::AddForgeInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::AddForgeInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::UpdateForgeInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::UpdateForgeInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveForgeUniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1447, v);
+                &grid_fight_sync_data::DEBKBABACIC::RemoveForgeUniqueId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1877, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::AugmentSyncInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::AugmentSyncInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::EquipmentTrackSyncInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::EquipmentTrackSyncInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightSyncGameItemInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::GridFightSyncGameItemInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveOrbUniqueId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(232, v);
+                &grid_fight_sync_data::DEBKBABACIC::RemoveOrbUniqueId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(521, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GNFGKFMAFHJ(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1754, v);
+                &grid_fight_sync_data::DEBKBABACIC::FLMPADHOKHJ(v) => {
+                    my_size += ::protobuf::rt::uint32_size(330, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightTutorialSync(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::GridFightTutorialSync(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::SyncLockInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::SyncLockInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveTraitEffectId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(902, v);
+                &grid_fight_sync_data::DEBKBABACIC::RemoveTraitEffectId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(906, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::LIOGMHAPGJO(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::DJIKOKDDJEI(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::BCEECFANEBM(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::AICDHILPCOC(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::HKAIBKFLFOO(v) => {
-                    my_size += ::protobuf::rt::uint32_size(228, v);
+                &grid_fight_sync_data::DEBKBABACIC::PNKFPEMHFIF(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1835, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::CEAAKGHFDFJ(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::MCOKOIFPMCM(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::PFKEEIKADMA(v) => {
-                    my_size += ::protobuf::rt::uint32_size(332, v);
+                &grid_fight_sync_data::DEBKBABACIC::ODKNCCEKEKL(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1065, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::MKNIDKODJHO(v) => {
-                    my_size += ::protobuf::rt::uint32_size(225, v);
+                &grid_fight_sync_data::DEBKBABACIC::IHKCFOMJGLL(v) => {
+                    my_size += ::protobuf::rt::uint32_size(198, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::JEGMOPKFMLF(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1699, v);
+                &grid_fight_sync_data::DEBKBABACIC::JGJDAOMKFKA(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1700, v);
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::EHAJBBCMCEN(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::EBIGFBEFFDH(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -2787,160 +2787,160 @@ impl ::protobuf::Message for GridFightSyncData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.CGDKGNFCGCI {
+        if let ::std::option::Option::Some(ref v) = self.DEBKBABACIC {
             match v {
-                &grid_fight_sync_data::CGDKGNFCGCI::AddRoleInfo(ref v) => {
+                &grid_fight_sync_data::DEBKBABACIC::AddRoleInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(879, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::UpdateRoleInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1390, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::RemoveRoleUniqueId(v) => {
+                    os.write_uint32(502, v)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::AddGameItemInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(190, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::UpdateGameItemInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1980, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::RemoveGameItemInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1563, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::ItemValue(v) => {
+                    os.write_uint32(1211, v)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::PlayerLevel(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(442, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::GridFightLineupHp(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(897, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::MaxBattleRoleNum(v) => {
+                    os.write_uint32(1368, v)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::ShopSyncInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(138, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::PendingAction(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1339, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::PortalServerDataUpdate(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(546, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::LevelSyncInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1046, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::OrbSyncInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(622, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::SectionRecordSyncInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(548, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::GridGameAugmentUpdate(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1516, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::RemoveAugmentUniqueId(v) => {
+                    os.write_uint32(1202, v)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::FinishPendingActionPos(v) => {
+                    os.write_uint32(321, v)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::GridFightMaxInterestGold(v) => {
+                    os.write_uint32(1332, v)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::GridFightBuyExpCost(v) => {
+                    os.write_uint32(1139, v)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::TraitSyncInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1935, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::LockType(v) => {
+                    os.write_enum(1025, ::protobuf::EnumOrUnknown::value(&v))?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::TraitTrackSyncInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(988, v, os)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::GridFightComboWinNum(v) => {
+                    os.write_uint32(150, v)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::GridFightMaxAvatarCount(v) => {
+                    os.write_uint32(394, v)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::GridFightOffFieldMaxCount(v) => {
+                    os.write_uint32(996, v)?;
+                },
+                &grid_fight_sync_data::DEBKBABACIC::GridFightDamageSttInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(586, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::UpdateRoleInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1452, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::EliteBranchSyncInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(925, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveRoleUniqueId(v) => {
-                    os.write_uint32(341, v)?;
+                &grid_fight_sync_data::DEBKBABACIC::AddNpcInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1599, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::AddGameItemInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1312, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::UpdateNpcInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1425, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::UpdateGameItemInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(703, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::RemoveNpcUniqueId(v) => {
+                    os.write_uint32(151, v)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveGameItemInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(584, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::AddForgeInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1777, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::ItemValue(v) => {
-                    os.write_uint32(1344, v)?;
+                &grid_fight_sync_data::DEBKBABACIC::UpdateForgeInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(47, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::PlayerLevel(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1497, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::RemoveForgeUniqueId(v) => {
+                    os.write_uint32(1877, v)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightLineupHp(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(403, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::AugmentSyncInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(597, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::MaxBattleRoleNum(v) => {
-                    os.write_uint32(837, v)?;
+                &grid_fight_sync_data::DEBKBABACIC::EquipmentTrackSyncInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1031, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::ShopSyncInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(346, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::GridFightSyncGameItemInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1036, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::PendingAction(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(575, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::RemoveOrbUniqueId(v) => {
+                    os.write_uint32(521, v)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::PortalServerDataUpdate(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1874, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::FLMPADHOKHJ(v) => {
+                    os.write_uint32(330, v)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::LevelSyncInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(303, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::GridFightTutorialSync(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1716, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::OrbSyncInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1430, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::SyncLockInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1675, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::SectionRecordSyncInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(907, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::RemoveTraitEffectId(v) => {
+                    os.write_uint32(906, v)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridGameAugmentUpdate(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(553, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::DJIKOKDDJEI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2043, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveAugmentUniqueId(v) => {
-                    os.write_uint32(581, v)?;
+                &grid_fight_sync_data::DEBKBABACIC::AICDHILPCOC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(273, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::FinishPendingActionPos(v) => {
-                    os.write_uint32(1310, v)?;
+                &grid_fight_sync_data::DEBKBABACIC::PNKFPEMHFIF(v) => {
+                    os.write_uint32(1835, v)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxInterestGold(v) => {
-                    os.write_uint32(1775, v)?;
+                &grid_fight_sync_data::DEBKBABACIC::MCOKOIFPMCM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(177, v, os)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightBuyExpCost(v) => {
-                    os.write_uint32(1853, v)?;
+                &grid_fight_sync_data::DEBKBABACIC::ODKNCCEKEKL(v) => {
+                    os.write_uint32(1065, v)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::TraitSyncInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(66, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::IHKCFOMJGLL(v) => {
+                    os.write_uint32(198, v)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::LockType(v) => {
-                    os.write_enum(1703, ::protobuf::EnumOrUnknown::value(&v))?;
+                &grid_fight_sync_data::DEBKBABACIC::JGJDAOMKFKA(v) => {
+                    os.write_uint32(1700, v)?;
                 },
-                &grid_fight_sync_data::CGDKGNFCGCI::TraitTrackSyncInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(841, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightComboWinNum(v) => {
-                    os.write_uint32(763, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightMaxAvatarCount(v) => {
-                    os.write_uint32(166, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightOffFieldMaxCount(v) => {
-                    os.write_uint32(721, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightDamageSttInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1354, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::EliteBranchSyncInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1340, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::AddNpcInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1548, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::UpdateNpcInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(691, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveNpcUniqueId(v) => {
-                    os.write_uint32(273, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::AddForgeInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(164, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::UpdateForgeInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(379, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveForgeUniqueId(v) => {
-                    os.write_uint32(1447, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::AugmentSyncInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1810, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::EquipmentTrackSyncInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1737, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightSyncGameItemInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(963, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveOrbUniqueId(v) => {
-                    os.write_uint32(232, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::GNFGKFMAFHJ(v) => {
-                    os.write_uint32(1754, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::GridFightTutorialSync(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2034, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::SyncLockInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1622, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::RemoveTraitEffectId(v) => {
-                    os.write_uint32(902, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::LIOGMHAPGJO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1098, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::BCEECFANEBM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(435, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::HKAIBKFLFOO(v) => {
-                    os.write_uint32(228, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::CEAAKGHFDFJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(337, v, os)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::PFKEEIKADMA(v) => {
-                    os.write_uint32(332, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::MKNIDKODJHO(v) => {
-                    os.write_uint32(225, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::JEGMOPKFMLF(v) => {
-                    os.write_uint32(1699, v)?;
-                },
-                &grid_fight_sync_data::CGDKGNFCGCI::EHAJBBCMCEN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(960, v, os)?;
+                &grid_fight_sync_data::DEBKBABACIC::EBIGFBEFFDH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1037, v, os)?;
                 },
             };
         }
@@ -2961,63 +2961,63 @@ impl ::protobuf::Message for GridFightSyncData {
     }
 
     fn clear(&mut self) {
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
-        self.CGDKGNFCGCI = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
+        self.DEBKBABACIC = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightSyncData {
         static instance: GridFightSyncData = GridFightSyncData {
-            CGDKGNFCGCI: ::std::option::Option::None,
+            DEBKBABACIC: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -3046,8 +3046,8 @@ pub mod grid_fight_sync_data {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:GridFightSyncData.CGDKGNFCGCI)
-    pub enum CGDKGNFCGCI {
+    // @@protoc_insertion_point(oneof:GridFightSyncData.DEBKBABACIC)
+    pub enum DEBKBABACIC {
         // @@protoc_insertion_point(oneof_field:GridFightSyncData.add_role_info)
         AddRoleInfo(super::super::GridGameRoleInfo::GridGameRoleInfo),
         // @@protoc_insertion_point(oneof_field:GridFightSyncData.update_role_info)
@@ -3126,131 +3126,131 @@ pub mod grid_fight_sync_data {
         GridFightSyncGameItemInfo(super::super::GridFightGameItemInfo::GridFightGameItemInfo),
         // @@protoc_insertion_point(oneof_field:GridFightSyncData.remove_orb_unique_id)
         RemoveOrbUniqueId(u32),
-        // @@protoc_insertion_point(oneof_field:GridFightSyncData.GNFGKFMAFHJ)
-        GNFGKFMAFHJ(u32),
+        // @@protoc_insertion_point(oneof_field:GridFightSyncData.FLMPADHOKHJ)
+        FLMPADHOKHJ(u32),
         // @@protoc_insertion_point(oneof_field:GridFightSyncData.grid_fight_tutorial_sync)
         GridFightTutorialSync(super::super::GridFightTutorialSyncInfo::GridFightTutorialSyncInfo),
         // @@protoc_insertion_point(oneof_field:GridFightSyncData.sync_lock_info)
         SyncLockInfo(super::super::GridFightLockInfo::GridFightLockInfo),
         // @@protoc_insertion_point(oneof_field:GridFightSyncData.remove_trait_effect_id)
         RemoveTraitEffectId(u32),
-        // @@protoc_insertion_point(oneof_field:GridFightSyncData.LIOGMHAPGJO)
-        LIOGMHAPGJO(super::super::IAIMMHMKKNJ::IAIMMHMKKNJ),
-        // @@protoc_insertion_point(oneof_field:GridFightSyncData.BCEECFANEBM)
-        BCEECFANEBM(super::super::IAIMMHMKKNJ::IAIMMHMKKNJ),
-        // @@protoc_insertion_point(oneof_field:GridFightSyncData.HKAIBKFLFOO)
-        HKAIBKFLFOO(u32),
-        // @@protoc_insertion_point(oneof_field:GridFightSyncData.CEAAKGHFDFJ)
-        CEAAKGHFDFJ(super::super::GridGameOrbInfo::GridGameOrbInfo),
-        // @@protoc_insertion_point(oneof_field:GridFightSyncData.PFKEEIKADMA)
-        PFKEEIKADMA(u32),
-        // @@protoc_insertion_point(oneof_field:GridFightSyncData.MKNIDKODJHO)
-        MKNIDKODJHO(u32),
-        // @@protoc_insertion_point(oneof_field:GridFightSyncData.JEGMOPKFMLF)
-        JEGMOPKFMLF(u32),
-        // @@protoc_insertion_point(oneof_field:GridFightSyncData.EHAJBBCMCEN)
-        EHAJBBCMCEN(super::super::JHFLPNLHHCB::JHFLPNLHHCB),
+        // @@protoc_insertion_point(oneof_field:GridFightSyncData.DJIKOKDDJEI)
+        DJIKOKDDJEI(super::super::NEAOHJMAPJN::NEAOHJMAPJN),
+        // @@protoc_insertion_point(oneof_field:GridFightSyncData.AICDHILPCOC)
+        AICDHILPCOC(super::super::NEAOHJMAPJN::NEAOHJMAPJN),
+        // @@protoc_insertion_point(oneof_field:GridFightSyncData.PNKFPEMHFIF)
+        PNKFPEMHFIF(u32),
+        // @@protoc_insertion_point(oneof_field:GridFightSyncData.MCOKOIFPMCM)
+        MCOKOIFPMCM(super::super::GridGameOrbInfo::GridGameOrbInfo),
+        // @@protoc_insertion_point(oneof_field:GridFightSyncData.ODKNCCEKEKL)
+        ODKNCCEKEKL(u32),
+        // @@protoc_insertion_point(oneof_field:GridFightSyncData.IHKCFOMJGLL)
+        IHKCFOMJGLL(u32),
+        // @@protoc_insertion_point(oneof_field:GridFightSyncData.JGJDAOMKFKA)
+        JGJDAOMKFKA(u32),
+        // @@protoc_insertion_point(oneof_field:GridFightSyncData.EBIGFBEFFDH)
+        EBIGFBEFFDH(super::super::BCDMHKEJNGH::BCDMHKEJNGH),
     }
 
-    impl ::protobuf::Oneof for CGDKGNFCGCI {
+    impl ::protobuf::Oneof for DEBKBABACIC {
     }
 
-    impl ::protobuf::OneofFull for CGDKGNFCGCI {
+    impl ::protobuf::OneofFull for DEBKBABACIC {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::GridFightSyncData as ::protobuf::MessageFull>::descriptor().oneof_by_name("CGDKGNFCGCI").unwrap()).clone()
+            descriptor.get(|| <super::GridFightSyncData as ::protobuf::MessageFull>::descriptor().oneof_by_name("DEBKBABACIC").unwrap()).clone()
         }
     }
 
-    impl CGDKGNFCGCI {
+    impl DEBKBABACIC {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<CGDKGNFCGCI>("CGDKGNFCGCI")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DEBKBABACIC>("DEBKBABACIC")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GridFightSyncData.proto\x1a\x1cGridFightDamageSttInfo.proto\x1a\"G\
-    ridFightEliteBranchSyncInfo.proto\x1a\x1dGridFightGameAugmentAdd.proto\
-    \x1a\x20GridFightGameAugmentUpdate.proto\x1a\x1bGridFightGameItemInfo.pr\
-    oto\x1a\x1fGridFightGameItemSyncInfo.proto\x1a\x1cGridFightLevelSyncInfo\
-    .proto\x1a\x1fGridFightLineupHpSyncInfo.proto\x1a\x17GridFightLockInfo.p\
-    roto\x1a\x17GridFightLockType.proto\x1a\x1aGridFightOrbSyncInfo.proto\
-    \x1a\x1cGridFightPendingAction.proto\x1a\"GridFightPlayerLevelSyncInfo.p\
-    roto\x1a%GridFightPortalServerDataUpdate.proto\x1a\x20GridFightSectionRe\
-    cordInfo.proto\x1a\x1bGridFightShopSyncInfo.proto\x1a\x1cGridFightTraitS\
-    yncInfo.proto\x1a!GridFightTraitTrackSyncInfo.proto\x1a\x1fGridFightTuto\
-    rialSyncInfo.proto\x1a\x1bGridGameForgeItemInfo.proto\x1a\x15GridGameNpc\
-    Info.proto\x1a\x15GridGameOrbInfo.proto\x1a\x16GridGameRoleInfo.proto\
-    \x1a\x11IAIMMHMKKNJ.proto\x1a\x11JHFLPNLHHCB.proto\x1a\x20RoleTrackEquip\
-    mentSyncInfo.proto\"\xe9\x19\n\x11GridFightSyncData\x128\n\radd_role_inf\
-    o\x18\xca\x04\x20\x01(\x0b2\x11.GridGameRoleInfoH\0R\x0baddRoleInfo\x12>\
-    \n\x10update_role_info\x18\xac\x0b\x20\x01(\x0b2\x11.GridGameRoleInfoH\0\
-    R\x0eupdateRoleInfo\x124\n\x15remove_role_unique_id\x18\xd5\x02\x20\x01(\
-    \rH\0R\x12removeRoleUniqueId\x12J\n\x12add_game_item_info\x18\xa0\n\x20\
-    \x01(\x0b2\x1a.GridFightGameItemSyncInfoH\0R\x0faddGameItemInfo\x12P\n\
-    \x15update_game_item_info\x18\xbf\x05\x20\x01(\x0b2\x1a.GridFightGameIte\
-    mSyncInfoH\0R\x12updateGameItemInfo\x12P\n\x15remove_game_item_info\x18\
-    \xc8\x04\x20\x01(\x0b2\x1a.GridFightGameItemSyncInfoH\0R\x12removeGameIt\
-    emInfo\x12\x20\n\nitem_value\x18\xc0\n\x20\x01(\rH\0R\titemValue\x12C\n\
-    \x0cplayer_level\x18\xd9\x0b\x20\x01(\x0b2\x1d.GridFightPlayerLevelSyncI\
-    nfoH\0R\x0bplayerLevel\x12N\n\x14grid_fight_lineup_hp\x18\x93\x03\x20\
+    \n\x17GridFightSyncData.proto\x1a\x11BCDMHKEJNGH.proto\x1a\x1cGridFightD\
+    amageSttInfo.proto\x1a\"GridFightEliteBranchSyncInfo.proto\x1a\x1dGridFi\
+    ghtGameAugmentAdd.proto\x1a\x20GridFightGameAugmentUpdate.proto\x1a\x1bG\
+    ridFightGameItemInfo.proto\x1a\x1fGridFightGameItemSyncInfo.proto\x1a\
+    \x1cGridFightLevelSyncInfo.proto\x1a\x1fGridFightLineupHpSyncInfo.proto\
+    \x1a\x17GridFightLockInfo.proto\x1a\x17GridFightLockType.proto\x1a\x1aGr\
+    idFightOrbSyncInfo.proto\x1a\x1cGridFightPendingAction.proto\x1a\"GridFi\
+    ghtPlayerLevelSyncInfo.proto\x1a%GridFightPortalServerDataUpdate.proto\
+    \x1a\x20GridFightSectionRecordInfo.proto\x1a\x1bGridFightShopSyncInfo.pr\
+    oto\x1a\x1cGridFightTraitSyncInfo.proto\x1a!GridFightTraitTrackSyncInfo.\
+    proto\x1a\x1fGridFightTutorialSyncInfo.proto\x1a\x1bGridGameForgeItemInf\
+    o.proto\x1a\x15GridGameNpcInfo.proto\x1a\x15GridGameOrbInfo.proto\x1a\
+    \x16GridGameRoleInfo.proto\x1a\x11NEAOHJMAPJN.proto\x1a\x20RoleTrackEqui\
+    pmentSyncInfo.proto\"\xe9\x19\n\x11GridFightSyncData\x128\n\radd_role_in\
+    fo\x18\xef\x06\x20\x01(\x0b2\x11.GridGameRoleInfoH\0R\x0baddRoleInfo\x12\
+    >\n\x10update_role_info\x18\xee\n\x20\x01(\x0b2\x11.GridGameRoleInfoH\0R\
+    \x0eupdateRoleInfo\x124\n\x15remove_role_unique_id\x18\xf6\x03\x20\x01(\
+    \rH\0R\x12removeRoleUniqueId\x12J\n\x12add_game_item_info\x18\xbe\x01\
+    \x20\x01(\x0b2\x1a.GridFightGameItemSyncInfoH\0R\x0faddGameItemInfo\x12P\
+    \n\x15update_game_item_info\x18\xbc\x0f\x20\x01(\x0b2\x1a.GridFightGameI\
+    temSyncInfoH\0R\x12updateGameItemInfo\x12P\n\x15remove_game_item_info\
+    \x18\x9b\x0c\x20\x01(\x0b2\x1a.GridFightGameItemSyncInfoH\0R\x12removeGa\
+    meItemInfo\x12\x20\n\nitem_value\x18\xbb\t\x20\x01(\rH\0R\titemValue\x12\
+    C\n\x0cplayer_level\x18\xba\x03\x20\x01(\x0b2\x1d.GridFightPlayerLevelSy\
+    ncInfoH\0R\x0bplayerLevel\x12N\n\x14grid_fight_lineup_hp\x18\x81\x07\x20\
     \x01(\x0b2\x1a.GridFightLineupHpSyncInfoH\0R\x11gridFightLineupHp\x120\n\
-    \x13max_battle_role_num\x18\xc5\x06\x20\x01(\rH\0R\x10maxBattleRoleNum\
-    \x12?\n\x0eshop_sync_info\x18\xda\x02\x20\x01(\x0b2\x16.GridFightShopSyn\
-    cInfoH\0R\x0cshopSyncInfo\x12A\n\x0epending_action\x18\xbf\x04\x20\x01(\
-    \x0b2\x17.GridFightPendingActionH\0R\rpendingAction\x12^\n\x19portal_ser\
-    ver_data_update\x18\xd2\x0e\x20\x01(\x0b2\x20.GridFightPortalServerDataU\
-    pdateH\0R\x16portalServerDataUpdate\x12B\n\x0flevel_sync_info\x18\xaf\
-    \x02\x20\x01(\x0b2\x17.GridFightLevelSyncInfoH\0R\rlevelSyncInfo\x12<\n\
-    \rorb_sync_info\x18\x96\x0b\x20\x01(\x0b2\x15.GridFightOrbSyncInfoH\0R\
-    \x0borbSyncInfo\x12W\n\x18section_record_sync_info\x18\x8b\x07\x20\x01(\
-    \x0b2\x1b.GridFightSectionRecordInfoH\0R\x15sectionRecordSyncInfo\x12W\n\
-    \x18grid_game_augment_update\x18\xa9\x04\x20\x01(\x0b2\x1b.GridFightGame\
-    AugmentUpdateH\0R\x15gridGameAugmentUpdate\x12:\n\x18remove_augment_uniq\
-    ue_id\x18\xc5\x04\x20\x01(\rH\0R\x15removeAugmentUniqueId\x12<\n\x19fini\
-    sh_pending_action_pos\x18\x9e\n\x20\x01(\rH\0R\x16finishPendingActionPos\
-    \x12A\n\x1cgrid_fight_max_interest_gold\x18\xef\r\x20\x01(\rH\0R\x18grid\
-    FightMaxInterestGold\x127\n\x17grid_fight_buy_exp_cost\x18\xbd\x0e\x20\
-    \x01(\rH\0R\x13gridFightBuyExpCost\x12A\n\x0ftrait_sync_info\x18B\x20\
-    \x01(\x0b2\x17.GridFightTraitSyncInfoH\0R\rtraitSyncInfo\x122\n\tlock_ty\
-    pe\x18\xa7\r\x20\x01(\x0e2\x12.GridFightLockTypeH\0R\x08lockType\x12R\n\
-    \x15trait_track_sync_info\x18\xc9\x06\x20\x01(\x0b2\x1c.GridFightTraitTr\
+    \x13max_battle_role_num\x18\xd8\n\x20\x01(\rH\0R\x10maxBattleRoleNum\x12\
+    ?\n\x0eshop_sync_info\x18\x8a\x01\x20\x01(\x0b2\x16.GridFightShopSyncInf\
+    oH\0R\x0cshopSyncInfo\x12A\n\x0epending_action\x18\xbb\n\x20\x01(\x0b2\
+    \x17.GridFightPendingActionH\0R\rpendingAction\x12^\n\x19portal_server_d\
+    ata_update\x18\xa2\x04\x20\x01(\x0b2\x20.GridFightPortalServerDataUpdate\
+    H\0R\x16portalServerDataUpdate\x12B\n\x0flevel_sync_info\x18\x96\x08\x20\
+    \x01(\x0b2\x17.GridFightLevelSyncInfoH\0R\rlevelSyncInfo\x12<\n\rorb_syn\
+    c_info\x18\xee\x04\x20\x01(\x0b2\x15.GridFightOrbSyncInfoH\0R\x0borbSync\
+    Info\x12W\n\x18section_record_sync_info\x18\xa4\x04\x20\x01(\x0b2\x1b.Gr\
+    idFightSectionRecordInfoH\0R\x15sectionRecordSyncInfo\x12W\n\x18grid_gam\
+    e_augment_update\x18\xec\x0b\x20\x01(\x0b2\x1b.GridFightGameAugmentUpdat\
+    eH\0R\x15gridGameAugmentUpdate\x12:\n\x18remove_augment_unique_id\x18\
+    \xb2\t\x20\x01(\rH\0R\x15removeAugmentUniqueId\x12<\n\x19finish_pending_\
+    action_pos\x18\xc1\x02\x20\x01(\rH\0R\x16finishPendingActionPos\x12A\n\
+    \x1cgrid_fight_max_interest_gold\x18\xb4\n\x20\x01(\rH\0R\x18gridFightMa\
+    xInterestGold\x127\n\x17grid_fight_buy_exp_cost\x18\xf3\x08\x20\x01(\rH\
+    \0R\x13gridFightBuyExpCost\x12B\n\x0ftrait_sync_info\x18\x8f\x0f\x20\x01\
+    (\x0b2\x17.GridFightTraitSyncInfoH\0R\rtraitSyncInfo\x122\n\tlock_type\
+    \x18\x81\x08\x20\x01(\x0e2\x12.GridFightLockTypeH\0R\x08lockType\x12R\n\
+    \x15trait_track_sync_info\x18\xdc\x07\x20\x01(\x0b2\x1c.GridFightTraitTr\
     ackSyncInfoH\0R\x12traitTrackSyncInfo\x129\n\x18grid_fight_combo_win_num\
-    \x18\xfb\x05\x20\x01(\rH\0R\x14gridFightComboWinNum\x12?\n\x1bgrid_fight\
-    _max_avatar_count\x18\xa6\x01\x20\x01(\rH\0R\x17gridFightMaxAvatarCount\
-    \x12D\n\x1egrid_fight_off_field_max_count\x18\xd1\x05\x20\x01(\rH\0R\x19\
-    gridFightOffFieldMaxCount\x12V\n\x1agrid_fight_damage_stt_info\x18\xca\n\
-    \x20\x01(\x0b2\x17.GridFightDamageSttInfoH\0R\x16gridFightDamageSttInfo\
-    \x12U\n\x16elite_branch_sync_info\x18\xbc\n\x20\x01(\x0b2\x1d.GridFightE\
-    liteBranchSyncInfoH\0R\x13eliteBranchSyncInfo\x125\n\x0cadd_npc_info\x18\
-    \x8c\x0c\x20\x01(\x0b2\x10.GridGameNpcInfoH\0R\naddNpcInfo\x12;\n\x0fupd\
-    ate_npc_info\x18\xb3\x05\x20\x01(\x0b2\x10.GridGameNpcInfoH\0R\rupdateNp\
-    cInfo\x122\n\x14remove_npc_unique_id\x18\x91\x02\x20\x01(\rH\0R\x11remov\
-    eNpcUniqueId\x12?\n\x0eadd_forge_info\x18\xa4\x01\x20\x01(\x0b2\x16.Grid\
-    GameForgeItemInfoH\0R\x0caddForgeInfo\x12E\n\x11update_forge_info\x18\
-    \xfb\x02\x20\x01(\x0b2\x16.GridGameForgeItemInfoH\0R\x0fupdateForgeInfo\
-    \x126\n\x16remove_forge_unique_id\x18\xa7\x0b\x20\x01(\rH\0R\x13removeFo\
-    rgeUniqueId\x12G\n\x11augment_sync_info\x18\x92\x0e\x20\x01(\x0b2\x18.Gr\
+    \x18\x96\x01\x20\x01(\rH\0R\x14gridFightComboWinNum\x12?\n\x1bgrid_fight\
+    _max_avatar_count\x18\x8a\x03\x20\x01(\rH\0R\x17gridFightMaxAvatarCount\
+    \x12D\n\x1egrid_fight_off_field_max_count\x18\xe4\x07\x20\x01(\rH\0R\x19\
+    gridFightOffFieldMaxCount\x12V\n\x1agrid_fight_damage_stt_info\x18\xca\
+    \x04\x20\x01(\x0b2\x17.GridFightDamageSttInfoH\0R\x16gridFightDamageSttI\
+    nfo\x12U\n\x16elite_branch_sync_info\x18\x9d\x07\x20\x01(\x0b2\x1d.GridF\
+    ightEliteBranchSyncInfoH\0R\x13eliteBranchSyncInfo\x125\n\x0cadd_npc_inf\
+    o\x18\xbf\x0c\x20\x01(\x0b2\x10.GridGameNpcInfoH\0R\naddNpcInfo\x12;\n\
+    \x0fupdate_npc_info\x18\x91\x0b\x20\x01(\x0b2\x10.GridGameNpcInfoH\0R\ru\
+    pdateNpcInfo\x122\n\x14remove_npc_unique_id\x18\x97\x01\x20\x01(\rH\0R\
+    \x11removeNpcUniqueId\x12?\n\x0eadd_forge_info\x18\xf1\r\x20\x01(\x0b2\
+    \x16.GridGameForgeItemInfoH\0R\x0caddForgeInfo\x12D\n\x11update_forge_in\
+    fo\x18/\x20\x01(\x0b2\x16.GridGameForgeItemInfoH\0R\x0fupdateForgeInfo\
+    \x126\n\x16remove_forge_unique_id\x18\xd5\x0e\x20\x01(\rH\0R\x13removeFo\
+    rgeUniqueId\x12G\n\x11augment_sync_info\x18\xd5\x04\x20\x01(\x0b2\x18.Gr\
     idFightGameAugmentAddH\0R\x0faugmentSyncInfo\x12Y\n\x19equipment_track_s\
-    ync_info\x18\xc9\r\x20\x01(\x0b2\x1b.RoleTrackEquipmentSyncInfoH\0R\x16e\
-    quipmentTrackSyncInfo\x12\\\n\x1egrid_fight_sync_game_item_info\x18\xc3\
-    \x07\x20\x01(\x0b2\x16.GridFightGameItemInfoH\0R\x19gridFightSyncGameIte\
-    mInfo\x122\n\x14remove_orb_unique_id\x18\xe8\x01\x20\x01(\rH\0R\x11remov\
-    eOrbUniqueId\x12#\n\x0bGNFGKFMAFHJ\x18\xda\r\x20\x01(\rH\0R\x0bGNFGKFMAF\
-    HJ\x12V\n\x18grid_fight_tutorial_sync\x18\xf2\x0f\x20\x01(\x0b2\x1a.Grid\
-    FightTutorialSyncInfoH\0R\x15gridFightTutorialSync\x12;\n\x0esync_lock_i\
-    nfo\x18\xd6\x0c\x20\x01(\x0b2\x12.GridFightLockInfoH\0R\x0csyncLockInfo\
-    \x126\n\x16remove_trait_effect_id\x18\x86\x07\x20\x01(\rH\0R\x13removeTr\
-    aitEffectId\x121\n\x0bLIOGMHAPGJO\x18\xca\x08\x20\x01(\x0b2\x0c.IAIMMHMK\
-    KNJH\0R\x0bLIOGMHAPGJO\x121\n\x0bBCEECFANEBM\x18\xb3\x03\x20\x01(\x0b2\
-    \x0c.IAIMMHMKKNJH\0R\x0bBCEECFANEBM\x12#\n\x0bHKAIBKFLFOO\x18\xe4\x01\
-    \x20\x01(\rH\0R\x0bHKAIBKFLFOO\x125\n\x0bCEAAKGHFDFJ\x18\xd1\x02\x20\x01\
-    (\x0b2\x10.GridGameOrbInfoH\0R\x0bCEAAKGHFDFJ\x12#\n\x0bPFKEEIKADMA\x18\
-    \xcc\x02\x20\x01(\rH\0R\x0bPFKEEIKADMA\x12#\n\x0bMKNIDKODJHO\x18\xe1\x01\
-    \x20\x01(\rH\0R\x0bMKNIDKODJHO\x12#\n\x0bJEGMOPKFMLF\x18\xa3\r\x20\x01(\
-    \rH\0R\x0bJEGMOPKFMLF\x121\n\x0bEHAJBBCMCEN\x18\xc0\x07\x20\x01(\x0b2\
-    \x0c.JHFLPNLHHCBH\0R\x0bEHAJBBCMCENB\r\n\x0bCGDKGNFCGCIb\x06proto3\
+    ync_info\x18\x87\x08\x20\x01(\x0b2\x1b.RoleTrackEquipmentSyncInfoH\0R\
+    \x16equipmentTrackSyncInfo\x12\\\n\x1egrid_fight_sync_game_item_info\x18\
+    \x8c\x08\x20\x01(\x0b2\x16.GridFightGameItemInfoH\0R\x19gridFightSyncGam\
+    eItemInfo\x122\n\x14remove_orb_unique_id\x18\x89\x04\x20\x01(\rH\0R\x11r\
+    emoveOrbUniqueId\x12#\n\x0bFLMPADHOKHJ\x18\xca\x02\x20\x01(\rH\0R\x0bFLM\
+    PADHOKHJ\x12V\n\x18grid_fight_tutorial_sync\x18\xb4\r\x20\x01(\x0b2\x1a.\
+    GridFightTutorialSyncInfoH\0R\x15gridFightTutorialSync\x12;\n\x0esync_lo\
+    ck_info\x18\x8b\r\x20\x01(\x0b2\x12.GridFightLockInfoH\0R\x0csyncLockInf\
+    o\x126\n\x16remove_trait_effect_id\x18\x8a\x07\x20\x01(\rH\0R\x13removeT\
+    raitEffectId\x121\n\x0bDJIKOKDDJEI\x18\xfb\x0f\x20\x01(\x0b2\x0c.NEAOHJM\
+    APJNH\0R\x0bDJIKOKDDJEI\x121\n\x0bAICDHILPCOC\x18\x91\x02\x20\x01(\x0b2\
+    \x0c.NEAOHJMAPJNH\0R\x0bAICDHILPCOC\x12#\n\x0bPNKFPEMHFIF\x18\xab\x0e\
+    \x20\x01(\rH\0R\x0bPNKFPEMHFIF\x125\n\x0bMCOKOIFPMCM\x18\xb1\x01\x20\x01\
+    (\x0b2\x10.GridGameOrbInfoH\0R\x0bMCOKOIFPMCM\x12#\n\x0bODKNCCEKEKL\x18\
+    \xa9\x08\x20\x01(\rH\0R\x0bODKNCCEKEKL\x12#\n\x0bIHKCFOMJGLL\x18\xc6\x01\
+    \x20\x01(\rH\0R\x0bIHKCFOMJGLL\x12#\n\x0bJGJDAOMKFKA\x18\xa4\r\x20\x01(\
+    \rH\0R\x0bJGJDAOMKFKA\x121\n\x0bEBIGFBEFFDH\x18\x8d\x08\x20\x01(\x0b2\
+    \x0c.BCDMHKEJNGHH\0R\x0bEBIGFBEFFDHB\r\n\x0bDEBKBABACICb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -3268,6 +3268,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(26);
+            deps.push(super::BCDMHKEJNGH::file_descriptor().clone());
             deps.push(super::GridFightDamageSttInfo::file_descriptor().clone());
             deps.push(super::GridFightEliteBranchSyncInfo::file_descriptor().clone());
             deps.push(super::GridFightGameAugmentAdd::file_descriptor().clone());
@@ -3291,8 +3292,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::GridGameNpcInfo::file_descriptor().clone());
             deps.push(super::GridGameOrbInfo::file_descriptor().clone());
             deps.push(super::GridGameRoleInfo::file_descriptor().clone());
-            deps.push(super::IAIMMHMKKNJ::file_descriptor().clone());
-            deps.push(super::JHFLPNLHHCB::file_descriptor().clone());
+            deps.push(super::NEAOHJMAPJN::file_descriptor().clone());
             deps.push(super::RoleTrackEquipmentSyncInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightSyncData::generated_message_descriptor_data());

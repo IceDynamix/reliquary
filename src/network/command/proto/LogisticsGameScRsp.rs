@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LogisticsGameScRsp {
     // message fields
-    // @@protoc_insertion_point(field:LogisticsGameScRsp.GJMLMBBJMPL)
-    pub GJMLMBBJMPL: bool,
     // @@protoc_insertion_point(field:LogisticsGameScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:LogisticsGameScRsp.event_id)
     pub event_id: u32,
-    // @@protoc_insertion_point(field:LogisticsGameScRsp.LDPDFIAAHLK)
-    pub LDPDFIAAHLK: ::std::vec::Vec<super::OADBBOPFDLF::OADBBOPFDLF>,
+    // @@protoc_insertion_point(field:LogisticsGameScRsp.BFDAPBALOFJ)
+    pub BFDAPBALOFJ: ::std::vec::Vec<super::NLLOIKCDIMK::NLLOIKCDIMK>,
+    // @@protoc_insertion_point(field:LogisticsGameScRsp.NIIJFEAGKDP)
+    pub NIIJFEAGKDP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:LogisticsGameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,11 +56,6 @@ impl LogisticsGameScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GJMLMBBJMPL",
-            |m: &LogisticsGameScRsp| { &m.GJMLMBBJMPL },
-            |m: &mut LogisticsGameScRsp| { &mut m.GJMLMBBJMPL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &LogisticsGameScRsp| { &m.retcode },
             |m: &mut LogisticsGameScRsp| { &mut m.retcode },
@@ -71,9 +66,14 @@ impl LogisticsGameScRsp {
             |m: &mut LogisticsGameScRsp| { &mut m.event_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LDPDFIAAHLK",
-            |m: &LogisticsGameScRsp| { &m.LDPDFIAAHLK },
-            |m: &mut LogisticsGameScRsp| { &mut m.LDPDFIAAHLK },
+            "BFDAPBALOFJ",
+            |m: &LogisticsGameScRsp| { &m.BFDAPBALOFJ },
+            |m: &mut LogisticsGameScRsp| { &mut m.BFDAPBALOFJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NIIJFEAGKDP",
+            |m: &LogisticsGameScRsp| { &m.NIIJFEAGKDP },
+            |m: &mut LogisticsGameScRsp| { &mut m.NIIJFEAGKDP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LogisticsGameScRsp>(
             "LogisticsGameScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for LogisticsGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.GJMLMBBJMPL = is.read_bool()?;
-                },
-                120 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                32 => {
+                88 => {
                     self.event_id = is.read_uint32()?;
                 },
                 106 => {
-                    self.LDPDFIAAHLK.push(is.read_message()?);
+                    self.BFDAPBALOFJ.push(is.read_message()?);
+                },
+                64 => {
+                    self.NIIJFEAGKDP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,37 +117,37 @@ impl ::protobuf::Message for LogisticsGameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GJMLMBBJMPL != false {
-            my_size += 1 + 1;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.event_id);
         }
-        for value in &self.LDPDFIAAHLK {
+        for value in &self.BFDAPBALOFJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.NIIJFEAGKDP != false {
+            my_size += 1 + 1;
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GJMLMBBJMPL != false {
-            os.write_bool(5, self.GJMLMBBJMPL)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if self.event_id != 0 {
-            os.write_uint32(4, self.event_id)?;
+            os.write_uint32(11, self.event_id)?;
         }
-        for v in &self.LDPDFIAAHLK {
+        for v in &self.BFDAPBALOFJ {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
+        if self.NIIJFEAGKDP != false {
+            os.write_bool(8, self.NIIJFEAGKDP)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -165,19 +165,19 @@ impl ::protobuf::Message for LogisticsGameScRsp {
     }
 
     fn clear(&mut self) {
-        self.GJMLMBBJMPL = false;
         self.retcode = 0;
         self.event_id = 0;
-        self.LDPDFIAAHLK.clear();
+        self.BFDAPBALOFJ.clear();
+        self.NIIJFEAGKDP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LogisticsGameScRsp {
         static instance: LogisticsGameScRsp = LogisticsGameScRsp {
-            GJMLMBBJMPL: false,
             retcode: 0,
             event_id: 0,
-            LDPDFIAAHLK: ::std::vec::Vec::new(),
+            BFDAPBALOFJ: ::std::vec::Vec::new(),
+            NIIJFEAGKDP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for LogisticsGameScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18LogisticsGameScRsp.proto\x1a\x11OADBBOPFDLF.proto\"\x9b\x01\n\x12L\
-    ogisticsGameScRsp\x12\x20\n\x0bGJMLMBBJMPL\x18\x05\x20\x01(\x08R\x0bGJML\
-    MBBJMPL\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x19\n\
-    \x08event_id\x18\x04\x20\x01(\rR\x07eventId\x12.\n\x0bLDPDFIAAHLK\x18\r\
-    \x20\x03(\x0b2\x0c.OADBBOPFDLFR\x0bLDPDFIAAHLKb\x06proto3\
+    \n\x18LogisticsGameScRsp.proto\x1a\x11NLLOIKCDIMK.proto\"\x9b\x01\n\x12L\
+    ogisticsGameScRsp\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\
+    \x12\x19\n\x08event_id\x18\x0b\x20\x01(\rR\x07eventId\x12.\n\x0bBFDAPBAL\
+    OFJ\x18\r\x20\x03(\x0b2\x0c.NLLOIKCDIMKR\x0bBFDAPBALOFJ\x12\x20\n\x0bNII\
+    JFEAGKDP\x18\x08\x20\x01(\x08R\x0bNIIJFEAGKDPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OADBBOPFDLF::file_descriptor().clone());
+            deps.push(super::NLLOIKCDIMK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LogisticsGameScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyPassenger {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyPassenger.MKDEIJFGLFA)
-    pub MKDEIJFGLFA: bool,
-    // @@protoc_insertion_point(field:TrainPartyPassenger.IBFAPDAKHJO)
-    pub IBFAPDAKHJO: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyPassenger.passenger_id)
     pub passenger_id: u32,
+    // @@protoc_insertion_point(field:TrainPartyPassenger.ODPMHPAEOAB)
+    pub ODPMHPAEOAB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyPassenger.AODNJAIFNDF)
+    pub AODNJAIFNDF: bool,
     // @@protoc_insertion_point(field:TrainPartyPassenger.record_id)
     pub record_id: u32,
     // special fields
@@ -56,19 +56,19 @@ impl TrainPartyPassenger {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKDEIJFGLFA",
-            |m: &TrainPartyPassenger| { &m.MKDEIJFGLFA },
-            |m: &mut TrainPartyPassenger| { &mut m.MKDEIJFGLFA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IBFAPDAKHJO",
-            |m: &TrainPartyPassenger| { &m.IBFAPDAKHJO },
-            |m: &mut TrainPartyPassenger| { &mut m.IBFAPDAKHJO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "passenger_id",
             |m: &TrainPartyPassenger| { &m.passenger_id },
             |m: &mut TrainPartyPassenger| { &mut m.passenger_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ODPMHPAEOAB",
+            |m: &TrainPartyPassenger| { &m.ODPMHPAEOAB },
+            |m: &mut TrainPartyPassenger| { &mut m.ODPMHPAEOAB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AODNJAIFNDF",
+            |m: &TrainPartyPassenger| { &m.AODNJAIFNDF },
+            |m: &mut TrainPartyPassenger| { &mut m.AODNJAIFNDF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "record_id",
@@ -93,19 +93,19 @@ impl ::protobuf::Message for TrainPartyPassenger {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MKDEIJFGLFA = is.read_bool()?;
-                },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IBFAPDAKHJO)?;
-                },
-                16 => {
-                    self.IBFAPDAKHJO.push(is.read_uint32()?);
-                },
-                24 => {
+                72 => {
                     self.passenger_id = is.read_uint32()?;
                 },
-                40 => {
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ODPMHPAEOAB)?;
+                },
+                80 => {
+                    self.ODPMHPAEOAB.push(is.read_uint32()?);
+                },
+                88 => {
+                    self.AODNJAIFNDF = is.read_bool()?;
+                },
+                112 => {
                     self.record_id = is.read_uint32()?;
                 },
                 tag => {
@@ -120,15 +120,15 @@ impl ::protobuf::Message for TrainPartyPassenger {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MKDEIJFGLFA != false {
+        if self.passenger_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.passenger_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.ODPMHPAEOAB);
+        if self.AODNJAIFNDF != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.IBFAPDAKHJO);
-        if self.passenger_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.passenger_id);
-        }
         if self.record_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.record_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.record_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for TrainPartyPassenger {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MKDEIJFGLFA != false {
-            os.write_bool(1, self.MKDEIJFGLFA)?;
-        }
-        os.write_repeated_packed_uint32(2, &self.IBFAPDAKHJO)?;
         if self.passenger_id != 0 {
-            os.write_uint32(3, self.passenger_id)?;
+            os.write_uint32(9, self.passenger_id)?;
+        }
+        os.write_repeated_packed_uint32(10, &self.ODPMHPAEOAB)?;
+        if self.AODNJAIFNDF != false {
+            os.write_bool(11, self.AODNJAIFNDF)?;
         }
         if self.record_id != 0 {
-            os.write_uint32(5, self.record_id)?;
+            os.write_uint32(14, self.record_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,18 +163,18 @@ impl ::protobuf::Message for TrainPartyPassenger {
     }
 
     fn clear(&mut self) {
-        self.MKDEIJFGLFA = false;
-        self.IBFAPDAKHJO.clear();
         self.passenger_id = 0;
+        self.ODPMHPAEOAB.clear();
+        self.AODNJAIFNDF = false;
         self.record_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyPassenger {
         static instance: TrainPartyPassenger = TrainPartyPassenger {
-            MKDEIJFGLFA: false,
-            IBFAPDAKHJO: ::std::vec::Vec::new(),
             passenger_id: 0,
+            ODPMHPAEOAB: ::std::vec::Vec::new(),
+            AODNJAIFNDF: false,
             record_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyPassenger {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19TrainPartyPassenger.proto\"\x99\x01\n\x13TrainPartyPassenger\x12\
-    \x20\n\x0bMKDEIJFGLFA\x18\x01\x20\x01(\x08R\x0bMKDEIJFGLFA\x12\x20\n\x0b\
-    IBFAPDAKHJO\x18\x02\x20\x03(\rR\x0bIBFAPDAKHJO\x12!\n\x0cpassenger_id\
-    \x18\x03\x20\x01(\rR\x0bpassengerId\x12\x1b\n\trecord_id\x18\x05\x20\x01\
-    (\rR\x08recordIdb\x06proto3\
+    \n\x19TrainPartyPassenger.proto\"\x99\x01\n\x13TrainPartyPassenger\x12!\
+    \n\x0cpassenger_id\x18\t\x20\x01(\rR\x0bpassengerId\x12\x20\n\x0bODPMHPA\
+    EOAB\x18\n\x20\x03(\rR\x0bODPMHPAEOAB\x12\x20\n\x0bAODNJAIFNDF\x18\x0b\
+    \x20\x01(\x08R\x0bAODNJAIFNDF\x12\x1b\n\trecord_id\x18\x0e\x20\x01(\rR\
+    \x08recordIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

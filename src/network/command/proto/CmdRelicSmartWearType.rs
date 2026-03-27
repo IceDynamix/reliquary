@@ -27,38 +27,38 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRelicSmartWearType)
 pub enum CmdRelicSmartWearType {
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_GKJBAODJMJG)
-    ANJADOAPAFE_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_FPGPOOFIIFO)
-    ANJADOAPAFE_FPGPOOFIIFO = 8262,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_PMEOBJIPNFL)
-    ANJADOAPAFE_PMEOBJIPNFL = 8259,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_BFFNJPMDLHI)
-    ANJADOAPAFE_BFFNJPMDLHI = 8256,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_HIANGNAADEO)
-    ANJADOAPAFE_HIANGNAADEO = 8254,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_LAMICMFCAPG)
-    ANJADOAPAFE_LAMICMFCAPG = 8258,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_GPPHKHPPOCN)
-    ANJADOAPAFE_GPPHKHPPOCN = 8267,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_KHOFEOKBJFD)
-    ANJADOAPAFE_KHOFEOKBJFD = 8255,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_JKEHJBLOHCG)
-    ANJADOAPAFE_JKEHJBLOHCG = 8263,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_IEPKCHHFKAD)
-    ANJADOAPAFE_IEPKCHHFKAD = 8251,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_DDDJBJACBGH)
-    ANJADOAPAFE_DDDJBJACBGH = 8265,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_DENLOKDIOOE)
-    ANJADOAPAFE_DENLOKDIOOE = 8264,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_CBAIPIDOICB)
-    ANJADOAPAFE_CBAIPIDOICB = 8261,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_EHBAEFCOEMH)
-    ANJADOAPAFE_EHBAEFCOEMH = 8270,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_PNOALOOIPMC)
-    ANJADOAPAFE_PNOALOOIPMC = 8260,
-    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.ANJADOAPAFE_FJLJGABEKAC)
-    ANJADOAPAFE_FJLJGABEKAC = 8257,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_MNFEPONEDDJ)
+    CmdRelicSmartWearType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_OPJECCAGBDD)
+    CmdRelicSmartWearType_OPJECCAGBDD = 8255,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_OMDEBBPAHBD)
+    CmdRelicSmartWearType_OMDEBBPAHBD = 8251,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_HMMJPIHFBGN)
+    CmdRelicSmartWearType_HMMJPIHFBGN = 8266,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_CJJJDEGGIPC)
+    CmdRelicSmartWearType_CJJJDEGGIPC = 8263,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_IGNIAOCHCAF)
+    CmdRelicSmartWearType_IGNIAOCHCAF = 8270,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_HPLBCIHHGAK)
+    CmdRelicSmartWearType_HPLBCIHHGAK = 8264,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_BPENAAGAJCI)
+    CmdRelicSmartWearType_BPENAAGAJCI = 8256,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_HNKDBCIMIMG)
+    CmdRelicSmartWearType_HNKDBCIMIMG = 8252,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_MCLKJHDJJKM)
+    CmdRelicSmartWearType_MCLKJHDJJKM = 8262,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_IHMNJIGLMFG)
+    CmdRelicSmartWearType_IHMNJIGLMFG = 8260,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_BJHAHOAIANF)
+    CmdRelicSmartWearType_BJHAHOAIANF = 8265,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_MCFLALIDFNH)
+    CmdRelicSmartWearType_MCFLALIDFNH = 8257,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_PIHIOEJJKJN)
+    CmdRelicSmartWearType_PIHIOEJJKJN = 8261,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_KCHLGKEJPIC)
+    CmdRelicSmartWearType_KCHLGKEJPIC = 8269,
+    // @@protoc_insertion_point(enum_value:CmdRelicSmartWearType.CmdRelicSmartWearType_CCHNCHALPHJ)
+    CmdRelicSmartWearType_CCHNCHALPHJ = 8258,
 }
 
 impl ::protobuf::Enum for CmdRelicSmartWearType {
@@ -70,65 +70,65 @@ impl ::protobuf::Enum for CmdRelicSmartWearType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRelicSmartWearType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_GKJBAODJMJG),
-            8262 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_FPGPOOFIIFO),
-            8259 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_PMEOBJIPNFL),
-            8256 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_BFFNJPMDLHI),
-            8254 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_HIANGNAADEO),
-            8258 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_LAMICMFCAPG),
-            8267 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_GPPHKHPPOCN),
-            8255 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_KHOFEOKBJFD),
-            8263 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_JKEHJBLOHCG),
-            8251 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_IEPKCHHFKAD),
-            8265 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_DDDJBJACBGH),
-            8264 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_DENLOKDIOOE),
-            8261 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_CBAIPIDOICB),
-            8270 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_EHBAEFCOEMH),
-            8260 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_PNOALOOIPMC),
-            8257 => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_FJLJGABEKAC),
+            0 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_MNFEPONEDDJ),
+            8255 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_OPJECCAGBDD),
+            8251 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_OMDEBBPAHBD),
+            8266 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_HMMJPIHFBGN),
+            8263 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_CJJJDEGGIPC),
+            8270 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_IGNIAOCHCAF),
+            8264 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_HPLBCIHHGAK),
+            8256 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_BPENAAGAJCI),
+            8252 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_HNKDBCIMIMG),
+            8262 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_MCLKJHDJJKM),
+            8260 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_IHMNJIGLMFG),
+            8265 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_BJHAHOAIANF),
+            8257 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_MCFLALIDFNH),
+            8261 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_PIHIOEJJKJN),
+            8269 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_KCHLGKEJPIC),
+            8258 => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_CCHNCHALPHJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRelicSmartWearType> {
         match str {
-            "ANJADOAPAFE_GKJBAODJMJG" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_GKJBAODJMJG),
-            "ANJADOAPAFE_FPGPOOFIIFO" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_FPGPOOFIIFO),
-            "ANJADOAPAFE_PMEOBJIPNFL" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_PMEOBJIPNFL),
-            "ANJADOAPAFE_BFFNJPMDLHI" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_BFFNJPMDLHI),
-            "ANJADOAPAFE_HIANGNAADEO" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_HIANGNAADEO),
-            "ANJADOAPAFE_LAMICMFCAPG" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_LAMICMFCAPG),
-            "ANJADOAPAFE_GPPHKHPPOCN" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_GPPHKHPPOCN),
-            "ANJADOAPAFE_KHOFEOKBJFD" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_KHOFEOKBJFD),
-            "ANJADOAPAFE_JKEHJBLOHCG" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_JKEHJBLOHCG),
-            "ANJADOAPAFE_IEPKCHHFKAD" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_IEPKCHHFKAD),
-            "ANJADOAPAFE_DDDJBJACBGH" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_DDDJBJACBGH),
-            "ANJADOAPAFE_DENLOKDIOOE" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_DENLOKDIOOE),
-            "ANJADOAPAFE_CBAIPIDOICB" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_CBAIPIDOICB),
-            "ANJADOAPAFE_EHBAEFCOEMH" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_EHBAEFCOEMH),
-            "ANJADOAPAFE_PNOALOOIPMC" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_PNOALOOIPMC),
-            "ANJADOAPAFE_FJLJGABEKAC" => ::std::option::Option::Some(CmdRelicSmartWearType::ANJADOAPAFE_FJLJGABEKAC),
+            "CmdRelicSmartWearType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_MNFEPONEDDJ),
+            "CmdRelicSmartWearType_OPJECCAGBDD" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_OPJECCAGBDD),
+            "CmdRelicSmartWearType_OMDEBBPAHBD" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_OMDEBBPAHBD),
+            "CmdRelicSmartWearType_HMMJPIHFBGN" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_HMMJPIHFBGN),
+            "CmdRelicSmartWearType_CJJJDEGGIPC" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_CJJJDEGGIPC),
+            "CmdRelicSmartWearType_IGNIAOCHCAF" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_IGNIAOCHCAF),
+            "CmdRelicSmartWearType_HPLBCIHHGAK" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_HPLBCIHHGAK),
+            "CmdRelicSmartWearType_BPENAAGAJCI" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_BPENAAGAJCI),
+            "CmdRelicSmartWearType_HNKDBCIMIMG" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_HNKDBCIMIMG),
+            "CmdRelicSmartWearType_MCLKJHDJJKM" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_MCLKJHDJJKM),
+            "CmdRelicSmartWearType_IHMNJIGLMFG" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_IHMNJIGLMFG),
+            "CmdRelicSmartWearType_BJHAHOAIANF" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_BJHAHOAIANF),
+            "CmdRelicSmartWearType_MCFLALIDFNH" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_MCFLALIDFNH),
+            "CmdRelicSmartWearType_PIHIOEJJKJN" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_PIHIOEJJKJN),
+            "CmdRelicSmartWearType_KCHLGKEJPIC" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_KCHLGKEJPIC),
+            "CmdRelicSmartWearType_CCHNCHALPHJ" => ::std::option::Option::Some(CmdRelicSmartWearType::CmdRelicSmartWearType_CCHNCHALPHJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRelicSmartWearType] = &[
-        CmdRelicSmartWearType::ANJADOAPAFE_GKJBAODJMJG,
-        CmdRelicSmartWearType::ANJADOAPAFE_FPGPOOFIIFO,
-        CmdRelicSmartWearType::ANJADOAPAFE_PMEOBJIPNFL,
-        CmdRelicSmartWearType::ANJADOAPAFE_BFFNJPMDLHI,
-        CmdRelicSmartWearType::ANJADOAPAFE_HIANGNAADEO,
-        CmdRelicSmartWearType::ANJADOAPAFE_LAMICMFCAPG,
-        CmdRelicSmartWearType::ANJADOAPAFE_GPPHKHPPOCN,
-        CmdRelicSmartWearType::ANJADOAPAFE_KHOFEOKBJFD,
-        CmdRelicSmartWearType::ANJADOAPAFE_JKEHJBLOHCG,
-        CmdRelicSmartWearType::ANJADOAPAFE_IEPKCHHFKAD,
-        CmdRelicSmartWearType::ANJADOAPAFE_DDDJBJACBGH,
-        CmdRelicSmartWearType::ANJADOAPAFE_DENLOKDIOOE,
-        CmdRelicSmartWearType::ANJADOAPAFE_CBAIPIDOICB,
-        CmdRelicSmartWearType::ANJADOAPAFE_EHBAEFCOEMH,
-        CmdRelicSmartWearType::ANJADOAPAFE_PNOALOOIPMC,
-        CmdRelicSmartWearType::ANJADOAPAFE_FJLJGABEKAC,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_MNFEPONEDDJ,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_OPJECCAGBDD,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_OMDEBBPAHBD,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_HMMJPIHFBGN,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_CJJJDEGGIPC,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_IGNIAOCHCAF,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_HPLBCIHHGAK,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_BPENAAGAJCI,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_HNKDBCIMIMG,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_MCLKJHDJJKM,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_IHMNJIGLMFG,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_BJHAHOAIANF,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_MCFLALIDFNH,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_PIHIOEJJKJN,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_KCHLGKEJPIC,
+        CmdRelicSmartWearType::CmdRelicSmartWearType_CCHNCHALPHJ,
     ];
 }
 
@@ -140,22 +140,22 @@ impl ::protobuf::EnumFull for CmdRelicSmartWearType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRelicSmartWearType::ANJADOAPAFE_GKJBAODJMJG => 0,
-            CmdRelicSmartWearType::ANJADOAPAFE_FPGPOOFIIFO => 1,
-            CmdRelicSmartWearType::ANJADOAPAFE_PMEOBJIPNFL => 2,
-            CmdRelicSmartWearType::ANJADOAPAFE_BFFNJPMDLHI => 3,
-            CmdRelicSmartWearType::ANJADOAPAFE_HIANGNAADEO => 4,
-            CmdRelicSmartWearType::ANJADOAPAFE_LAMICMFCAPG => 5,
-            CmdRelicSmartWearType::ANJADOAPAFE_GPPHKHPPOCN => 6,
-            CmdRelicSmartWearType::ANJADOAPAFE_KHOFEOKBJFD => 7,
-            CmdRelicSmartWearType::ANJADOAPAFE_JKEHJBLOHCG => 8,
-            CmdRelicSmartWearType::ANJADOAPAFE_IEPKCHHFKAD => 9,
-            CmdRelicSmartWearType::ANJADOAPAFE_DDDJBJACBGH => 10,
-            CmdRelicSmartWearType::ANJADOAPAFE_DENLOKDIOOE => 11,
-            CmdRelicSmartWearType::ANJADOAPAFE_CBAIPIDOICB => 12,
-            CmdRelicSmartWearType::ANJADOAPAFE_EHBAEFCOEMH => 13,
-            CmdRelicSmartWearType::ANJADOAPAFE_PNOALOOIPMC => 14,
-            CmdRelicSmartWearType::ANJADOAPAFE_FJLJGABEKAC => 15,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_MNFEPONEDDJ => 0,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_OPJECCAGBDD => 1,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_OMDEBBPAHBD => 2,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_HMMJPIHFBGN => 3,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_CJJJDEGGIPC => 4,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_IGNIAOCHCAF => 5,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_HPLBCIHHGAK => 6,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_BPENAAGAJCI => 7,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_HNKDBCIMIMG => 8,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_MCLKJHDJJKM => 9,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_IHMNJIGLMFG => 10,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_BJHAHOAIANF => 11,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_MCFLALIDFNH => 12,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_PIHIOEJJKJN => 13,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_KCHLGKEJPIC => 14,
+            CmdRelicSmartWearType::CmdRelicSmartWearType_CCHNCHALPHJ => 15,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -163,7 +163,7 @@ impl ::protobuf::EnumFull for CmdRelicSmartWearType {
 
 impl ::std::default::Default for CmdRelicSmartWearType {
     fn default() -> Self {
-        CmdRelicSmartWearType::ANJADOAPAFE_GKJBAODJMJG
+        CmdRelicSmartWearType::CmdRelicSmartWearType_MNFEPONEDDJ
     }
 }
 
@@ -174,18 +174,19 @@ impl CmdRelicSmartWearType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bCmdRelicSmartWearType.proto*\xf6\x03\n\x15CmdRelicSmartWearType\
-    \x12\x1b\n\x17ANJADOAPAFE_GKJBAODJMJG\x10\0\x12\x1c\n\x17ANJADOAPAFE_FPG\
-    POOFIIFO\x10\xc6@\x12\x1c\n\x17ANJADOAPAFE_PMEOBJIPNFL\x10\xc3@\x12\x1c\
-    \n\x17ANJADOAPAFE_BFFNJPMDLHI\x10\xc0@\x12\x1c\n\x17ANJADOAPAFE_HIANGNAA\
-    DEO\x10\xbe@\x12\x1c\n\x17ANJADOAPAFE_LAMICMFCAPG\x10\xc2@\x12\x1c\n\x17\
-    ANJADOAPAFE_GPPHKHPPOCN\x10\xcb@\x12\x1c\n\x17ANJADOAPAFE_KHOFEOKBJFD\
-    \x10\xbf@\x12\x1c\n\x17ANJADOAPAFE_JKEHJBLOHCG\x10\xc7@\x12\x1c\n\x17ANJ\
-    ADOAPAFE_IEPKCHHFKAD\x10\xbb@\x12\x1c\n\x17ANJADOAPAFE_DDDJBJACBGH\x10\
-    \xc9@\x12\x1c\n\x17ANJADOAPAFE_DENLOKDIOOE\x10\xc8@\x12\x1c\n\x17ANJADOA\
-    PAFE_CBAIPIDOICB\x10\xc5@\x12\x1c\n\x17ANJADOAPAFE_EHBAEFCOEMH\x10\xce@\
-    \x12\x1c\n\x17ANJADOAPAFE_PNOALOOIPMC\x10\xc4@\x12\x1c\n\x17ANJADOAPAFE_\
-    FJLJGABEKAC\x10\xc1@b\x06proto3\
+    \n\x1bCmdRelicSmartWearType.proto*\x96\x05\n\x15CmdRelicSmartWearType\
+    \x12%\n!CmdRelicSmartWearType_MNFEPONEDDJ\x10\0\x12&\n!CmdRelicSmartWear\
+    Type_OPJECCAGBDD\x10\xbf@\x12&\n!CmdRelicSmartWearType_OMDEBBPAHBD\x10\
+    \xbb@\x12&\n!CmdRelicSmartWearType_HMMJPIHFBGN\x10\xca@\x12&\n!CmdRelicS\
+    martWearType_CJJJDEGGIPC\x10\xc7@\x12&\n!CmdRelicSmartWearType_IGNIAOCHC\
+    AF\x10\xce@\x12&\n!CmdRelicSmartWearType_HPLBCIHHGAK\x10\xc8@\x12&\n!Cmd\
+    RelicSmartWearType_BPENAAGAJCI\x10\xc0@\x12&\n!CmdRelicSmartWearType_HNK\
+    DBCIMIMG\x10\xbc@\x12&\n!CmdRelicSmartWearType_MCLKJHDJJKM\x10\xc6@\x12&\
+    \n!CmdRelicSmartWearType_IHMNJIGLMFG\x10\xc4@\x12&\n!CmdRelicSmartWearTy\
+    pe_BJHAHOAIANF\x10\xc9@\x12&\n!CmdRelicSmartWearType_MCFLALIDFNH\x10\xc1\
+    @\x12&\n!CmdRelicSmartWearType_PIHIOEJJKJN\x10\xc5@\x12&\n!CmdRelicSmart\
+    WearType_KCHLGKEJPIC\x10\xcd@\x12&\n!CmdRelicSmartWearType_CCHNCHALPHJ\
+    \x10\xc2@b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

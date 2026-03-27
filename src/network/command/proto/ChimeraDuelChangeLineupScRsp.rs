@@ -30,8 +30,8 @@ pub struct ChimeraDuelChangeLineupScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChimeraDuelChangeLineupScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChimeraDuelChangeLineupScRsp.HKKAACLJDEE)
-    pub HKKAACLJDEE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChimeraDuelChangeLineupScRsp.AEHHIFIJJCM)
+    pub AEHHIFIJJCM: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelChangeLineupScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ChimeraDuelChangeLineupScRsp {
             |m: &mut ChimeraDuelChangeLineupScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HKKAACLJDEE",
-            |m: &ChimeraDuelChangeLineupScRsp| { &m.HKKAACLJDEE },
-            |m: &mut ChimeraDuelChangeLineupScRsp| { &mut m.HKKAACLJDEE },
+            "AEHHIFIJJCM",
+            |m: &ChimeraDuelChangeLineupScRsp| { &m.AEHHIFIJJCM },
+            |m: &mut ChimeraDuelChangeLineupScRsp| { &mut m.AEHHIFIJJCM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelChangeLineupScRsp>(
             "ChimeraDuelChangeLineupScRsp",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HKKAACLJDEE)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.AEHHIFIJJCM)?;
                 },
-                72 => {
-                    self.HKKAACLJDEE.push(is.read_uint32()?);
+                24 => {
+                    self.AEHHIFIJJCM.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -101,9 +101,9 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.HKKAACLJDEE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.AEHHIFIJJCM);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -111,9 +111,9 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(9, &self.HKKAACLJDEE)?;
+        os.write_repeated_packed_uint32(3, &self.AEHHIFIJJCM)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ChimeraDuelChangeLineupScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.HKKAACLJDEE.clear();
+        self.AEHHIFIJJCM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelChangeLineupScRsp {
         static instance: ChimeraDuelChangeLineupScRsp = ChimeraDuelChangeLineupScRsp {
             retcode: 0,
-            HKKAACLJDEE: ::std::vec::Vec::new(),
+            AEHHIFIJJCM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelChangeLineupScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"ChimeraDuelChangeLineupScRsp.proto\"Z\n\x1cChimeraDuelChangeLineupSc\
-    Rsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\x0bHKK\
-    AACLJDEE\x18\t\x20\x03(\rR\x0bHKKAACLJDEEb\x06proto3\
+    Rsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bAEH\
+    HIFIJJCM\x18\x03\x20\x03(\rR\x0bAEHHIFIJJCMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

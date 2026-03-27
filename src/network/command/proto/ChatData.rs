@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChatData {
     // message oneof groups
-    pub GHLBBDKIJKK: ::std::option::Option<chat_data::GHLBBDKIJKK>,
+    pub FPMABADPBPO: ::std::option::Option<chat_data::FPMABADPBPO>,
     // special fields
     // @@protoc_insertion_point(special_field:ChatData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,137 +45,137 @@ impl ChatData {
         ::std::default::Default::default()
     }
 
-    // .JLIIENIAJHF HAGFMHKOKEM = 101;
+    // .LFPJCAJLEHE JBLJKHCAILO = 101;
 
-    pub fn HAGFMHKOKEM(&self) -> &super::JLIIENIAJHF::JLIIENIAJHF {
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HAGFMHKOKEM(ref v)) => v,
-            _ => <super::JLIIENIAJHF::JLIIENIAJHF as ::protobuf::Message>::default_instance(),
+    pub fn JBLJKHCAILO(&self) -> &super::LFPJCAJLEHE::LFPJCAJLEHE {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::JBLJKHCAILO(ref v)) => v,
+            _ => <super::LFPJCAJLEHE::LFPJCAJLEHE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_HAGFMHKOKEM(&mut self) {
-        self.GHLBBDKIJKK = ::std::option::Option::None;
+    pub fn clear_JBLJKHCAILO(&mut self) {
+        self.FPMABADPBPO = ::std::option::Option::None;
     }
 
-    pub fn has_HAGFMHKOKEM(&self) -> bool {
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HAGFMHKOKEM(..)) => true,
+    pub fn has_JBLJKHCAILO(&self) -> bool {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::JBLJKHCAILO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_HAGFMHKOKEM(&mut self, v: super::JLIIENIAJHF::JLIIENIAJHF) {
-        self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HAGFMHKOKEM(v))
+    pub fn set_JBLJKHCAILO(&mut self, v: super::LFPJCAJLEHE::LFPJCAJLEHE) {
+        self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::JBLJKHCAILO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_HAGFMHKOKEM(&mut self) -> &mut super::JLIIENIAJHF::JLIIENIAJHF {
-        if let ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HAGFMHKOKEM(_)) = self.GHLBBDKIJKK {
+    pub fn mut_JBLJKHCAILO(&mut self) -> &mut super::LFPJCAJLEHE::LFPJCAJLEHE {
+        if let ::std::option::Option::Some(chat_data::FPMABADPBPO::JBLJKHCAILO(_)) = self.FPMABADPBPO {
         } else {
-            self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HAGFMHKOKEM(super::JLIIENIAJHF::JLIIENIAJHF::new()));
+            self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::JBLJKHCAILO(super::LFPJCAJLEHE::LFPJCAJLEHE::new()));
         }
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HAGFMHKOKEM(ref mut v)) => v,
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::JBLJKHCAILO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_HAGFMHKOKEM(&mut self) -> super::JLIIENIAJHF::JLIIENIAJHF {
-        if self.has_HAGFMHKOKEM() {
-            match self.GHLBBDKIJKK.take() {
-                ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HAGFMHKOKEM(v)) => v,
+    pub fn take_JBLJKHCAILO(&mut self) -> super::LFPJCAJLEHE::LFPJCAJLEHE {
+        if self.has_JBLJKHCAILO() {
+            match self.FPMABADPBPO.take() {
+                ::std::option::Option::Some(chat_data::FPMABADPBPO::JBLJKHCAILO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JLIIENIAJHF::JLIIENIAJHF::new()
+            super::LFPJCAJLEHE::LFPJCAJLEHE::new()
         }
     }
 
-    // .GFHACJCOJID HICBAEFKDJA = 102;
+    // .MDLOFDFIIIH PDKFDGJPMMF = 102;
 
-    pub fn HICBAEFKDJA(&self) -> &super::GFHACJCOJID::GFHACJCOJID {
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HICBAEFKDJA(ref v)) => v,
-            _ => <super::GFHACJCOJID::GFHACJCOJID as ::protobuf::Message>::default_instance(),
+    pub fn PDKFDGJPMMF(&self) -> &super::MDLOFDFIIIH::MDLOFDFIIIH {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::PDKFDGJPMMF(ref v)) => v,
+            _ => <super::MDLOFDFIIIH::MDLOFDFIIIH as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_HICBAEFKDJA(&mut self) {
-        self.GHLBBDKIJKK = ::std::option::Option::None;
+    pub fn clear_PDKFDGJPMMF(&mut self) {
+        self.FPMABADPBPO = ::std::option::Option::None;
     }
 
-    pub fn has_HICBAEFKDJA(&self) -> bool {
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HICBAEFKDJA(..)) => true,
+    pub fn has_PDKFDGJPMMF(&self) -> bool {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::PDKFDGJPMMF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_HICBAEFKDJA(&mut self, v: super::GFHACJCOJID::GFHACJCOJID) {
-        self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HICBAEFKDJA(v))
+    pub fn set_PDKFDGJPMMF(&mut self, v: super::MDLOFDFIIIH::MDLOFDFIIIH) {
+        self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::PDKFDGJPMMF(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_HICBAEFKDJA(&mut self) -> &mut super::GFHACJCOJID::GFHACJCOJID {
-        if let ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HICBAEFKDJA(_)) = self.GHLBBDKIJKK {
+    pub fn mut_PDKFDGJPMMF(&mut self) -> &mut super::MDLOFDFIIIH::MDLOFDFIIIH {
+        if let ::std::option::Option::Some(chat_data::FPMABADPBPO::PDKFDGJPMMF(_)) = self.FPMABADPBPO {
         } else {
-            self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HICBAEFKDJA(super::GFHACJCOJID::GFHACJCOJID::new()));
+            self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::PDKFDGJPMMF(super::MDLOFDFIIIH::MDLOFDFIIIH::new()));
         }
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HICBAEFKDJA(ref mut v)) => v,
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::PDKFDGJPMMF(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_HICBAEFKDJA(&mut self) -> super::GFHACJCOJID::GFHACJCOJID {
-        if self.has_HICBAEFKDJA() {
-            match self.GHLBBDKIJKK.take() {
-                ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HICBAEFKDJA(v)) => v,
+    pub fn take_PDKFDGJPMMF(&mut self) -> super::MDLOFDFIIIH::MDLOFDFIIIH {
+        if self.has_PDKFDGJPMMF() {
+            match self.FPMABADPBPO.take() {
+                ::std::option::Option::Some(chat_data::FPMABADPBPO::PDKFDGJPMMF(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GFHACJCOJID::GFHACJCOJID::new()
+            super::MDLOFDFIIIH::MDLOFDFIIIH::new()
         }
     }
 
     // string message_text = 103;
 
     pub fn message_text(&self) -> &str {
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::MessageText(ref v)) => v,
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::MessageText(ref v)) => v,
             _ => "",
         }
     }
 
     pub fn clear_message_text(&mut self) {
-        self.GHLBBDKIJKK = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
     }
 
     pub fn has_message_text(&self) -> bool {
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::MessageText(..)) => true,
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::MessageText(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_message_text(&mut self, v: ::std::string::String) {
-        self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::MessageText(v))
+        self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::MessageText(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_message_text(&mut self) -> &mut ::std::string::String {
-        if let ::std::option::Option::Some(chat_data::GHLBBDKIJKK::MessageText(_)) = self.GHLBBDKIJKK {
+        if let ::std::option::Option::Some(chat_data::FPMABADPBPO::MessageText(_)) = self.FPMABADPBPO {
         } else {
-            self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::MessageText(::std::string::String::new()));
+            self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::MessageText(::std::string::String::new()));
         }
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::MessageText(ref mut v)) => v,
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::MessageText(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -183,8 +183,8 @@ impl ChatData {
     // Take field
     pub fn take_message_text(&mut self) -> ::std::string::String {
         if self.has_message_text() {
-            match self.GHLBBDKIJKK.take() {
-                ::std::option::Option::Some(chat_data::GHLBBDKIJKK::MessageText(v)) => v,
+            match self.FPMABADPBPO.take() {
+                ::std::option::Option::Some(chat_data::FPMABADPBPO::MessageText(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -195,93 +195,289 @@ impl ChatData {
     // uint32 extra_id = 104;
 
     pub fn extra_id(&self) -> u32 {
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::ExtraId(v)) => v,
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::ExtraId(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_extra_id(&mut self) {
-        self.GHLBBDKIJKK = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
     }
 
     pub fn has_extra_id(&self) -> bool {
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::ExtraId(..)) => true,
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::ExtraId(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_extra_id(&mut self, v: u32) {
-        self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::ExtraId(v))
+        self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::ExtraId(v))
     }
 
-    // .NLIICAGGFIC CMPDDIDNAJL = 105;
+    // .HIHOFBHCMJJ KBFOJCDOCDK = 105;
 
-    pub fn CMPDDIDNAJL(&self) -> &super::NLIICAGGFIC::NLIICAGGFIC {
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::CMPDDIDNAJL(ref v)) => v,
-            _ => <super::NLIICAGGFIC::NLIICAGGFIC as ::protobuf::Message>::default_instance(),
+    pub fn KBFOJCDOCDK(&self) -> &super::HIHOFBHCMJJ::HIHOFBHCMJJ {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::KBFOJCDOCDK(ref v)) => v,
+            _ => <super::HIHOFBHCMJJ::HIHOFBHCMJJ as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_CMPDDIDNAJL(&mut self) {
-        self.GHLBBDKIJKK = ::std::option::Option::None;
+    pub fn clear_KBFOJCDOCDK(&mut self) {
+        self.FPMABADPBPO = ::std::option::Option::None;
     }
 
-    pub fn has_CMPDDIDNAJL(&self) -> bool {
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::CMPDDIDNAJL(..)) => true,
+    pub fn has_KBFOJCDOCDK(&self) -> bool {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::KBFOJCDOCDK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CMPDDIDNAJL(&mut self, v: super::NLIICAGGFIC::NLIICAGGFIC) {
-        self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::CMPDDIDNAJL(v))
+    pub fn set_KBFOJCDOCDK(&mut self, v: super::HIHOFBHCMJJ::HIHOFBHCMJJ) {
+        self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::KBFOJCDOCDK(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CMPDDIDNAJL(&mut self) -> &mut super::NLIICAGGFIC::NLIICAGGFIC {
-        if let ::std::option::Option::Some(chat_data::GHLBBDKIJKK::CMPDDIDNAJL(_)) = self.GHLBBDKIJKK {
+    pub fn mut_KBFOJCDOCDK(&mut self) -> &mut super::HIHOFBHCMJJ::HIHOFBHCMJJ {
+        if let ::std::option::Option::Some(chat_data::FPMABADPBPO::KBFOJCDOCDK(_)) = self.FPMABADPBPO {
         } else {
-            self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::CMPDDIDNAJL(super::NLIICAGGFIC::NLIICAGGFIC::new()));
+            self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::KBFOJCDOCDK(super::HIHOFBHCMJJ::HIHOFBHCMJJ::new()));
         }
-        match self.GHLBBDKIJKK {
-            ::std::option::Option::Some(chat_data::GHLBBDKIJKK::CMPDDIDNAJL(ref mut v)) => v,
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::KBFOJCDOCDK(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CMPDDIDNAJL(&mut self) -> super::NLIICAGGFIC::NLIICAGGFIC {
-        if self.has_CMPDDIDNAJL() {
-            match self.GHLBBDKIJKK.take() {
-                ::std::option::Option::Some(chat_data::GHLBBDKIJKK::CMPDDIDNAJL(v)) => v,
+    pub fn take_KBFOJCDOCDK(&mut self) -> super::HIHOFBHCMJJ::HIHOFBHCMJJ {
+        if self.has_KBFOJCDOCDK() {
+            match self.FPMABADPBPO.take() {
+                ::std::option::Option::Some(chat_data::FPMABADPBPO::KBFOJCDOCDK(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::NLIICAGGFIC::NLIICAGGFIC::new()
+            super::HIHOFBHCMJJ::HIHOFBHCMJJ::new()
+        }
+    }
+
+    // .LHMAHNLLBFC BGDMLGDMDIF = 106;
+
+    pub fn BGDMLGDMDIF(&self) -> &super::LHMAHNLLBFC::LHMAHNLLBFC {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::BGDMLGDMDIF(ref v)) => v,
+            _ => <super::LHMAHNLLBFC::LHMAHNLLBFC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_BGDMLGDMDIF(&mut self) {
+        self.FPMABADPBPO = ::std::option::Option::None;
+    }
+
+    pub fn has_BGDMLGDMDIF(&self) -> bool {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::BGDMLGDMDIF(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_BGDMLGDMDIF(&mut self, v: super::LHMAHNLLBFC::LHMAHNLLBFC) {
+        self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::BGDMLGDMDIF(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_BGDMLGDMDIF(&mut self) -> &mut super::LHMAHNLLBFC::LHMAHNLLBFC {
+        if let ::std::option::Option::Some(chat_data::FPMABADPBPO::BGDMLGDMDIF(_)) = self.FPMABADPBPO {
+        } else {
+            self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::BGDMLGDMDIF(super::LHMAHNLLBFC::LHMAHNLLBFC::new()));
+        }
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::BGDMLGDMDIF(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_BGDMLGDMDIF(&mut self) -> super::LHMAHNLLBFC::LHMAHNLLBFC {
+        if self.has_BGDMLGDMDIF() {
+            match self.FPMABADPBPO.take() {
+                ::std::option::Option::Some(chat_data::FPMABADPBPO::BGDMLGDMDIF(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::LHMAHNLLBFC::LHMAHNLLBFC::new()
+        }
+    }
+
+    // .OEBNIJGBJKC GLPGKFFKBCE = 107;
+
+    pub fn GLPGKFFKBCE(&self) -> &super::OEBNIJGBJKC::OEBNIJGBJKC {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::GLPGKFFKBCE(ref v)) => v,
+            _ => <super::OEBNIJGBJKC::OEBNIJGBJKC as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_GLPGKFFKBCE(&mut self) {
+        self.FPMABADPBPO = ::std::option::Option::None;
+    }
+
+    pub fn has_GLPGKFFKBCE(&self) -> bool {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::GLPGKFFKBCE(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_GLPGKFFKBCE(&mut self, v: super::OEBNIJGBJKC::OEBNIJGBJKC) {
+        self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::GLPGKFFKBCE(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_GLPGKFFKBCE(&mut self) -> &mut super::OEBNIJGBJKC::OEBNIJGBJKC {
+        if let ::std::option::Option::Some(chat_data::FPMABADPBPO::GLPGKFFKBCE(_)) = self.FPMABADPBPO {
+        } else {
+            self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::GLPGKFFKBCE(super::OEBNIJGBJKC::OEBNIJGBJKC::new()));
+        }
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::GLPGKFFKBCE(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_GLPGKFFKBCE(&mut self) -> super::OEBNIJGBJKC::OEBNIJGBJKC {
+        if self.has_GLPGKFFKBCE() {
+            match self.FPMABADPBPO.take() {
+                ::std::option::Option::Some(chat_data::FPMABADPBPO::GLPGKFFKBCE(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::OEBNIJGBJKC::OEBNIJGBJKC::new()
+        }
+    }
+
+    // .HMMHFALBILN FAMKDFDFEDK = 108;
+
+    pub fn FAMKDFDFEDK(&self) -> &super::HMMHFALBILN::HMMHFALBILN {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::FAMKDFDFEDK(ref v)) => v,
+            _ => <super::HMMHFALBILN::HMMHFALBILN as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_FAMKDFDFEDK(&mut self) {
+        self.FPMABADPBPO = ::std::option::Option::None;
+    }
+
+    pub fn has_FAMKDFDFEDK(&self) -> bool {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::FAMKDFDFEDK(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_FAMKDFDFEDK(&mut self, v: super::HMMHFALBILN::HMMHFALBILN) {
+        self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::FAMKDFDFEDK(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_FAMKDFDFEDK(&mut self) -> &mut super::HMMHFALBILN::HMMHFALBILN {
+        if let ::std::option::Option::Some(chat_data::FPMABADPBPO::FAMKDFDFEDK(_)) = self.FPMABADPBPO {
+        } else {
+            self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::FAMKDFDFEDK(super::HMMHFALBILN::HMMHFALBILN::new()));
+        }
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::FAMKDFDFEDK(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_FAMKDFDFEDK(&mut self) -> super::HMMHFALBILN::HMMHFALBILN {
+        if self.has_FAMKDFDFEDK() {
+            match self.FPMABADPBPO.take() {
+                ::std::option::Option::Some(chat_data::FPMABADPBPO::FAMKDFDFEDK(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::HMMHFALBILN::HMMHFALBILN::new()
+        }
+    }
+
+    // .KMIHKHAENKD JKPFPHFJJNI = 109;
+
+    pub fn JKPFPHFJJNI(&self) -> &super::KMIHKHAENKD::KMIHKHAENKD {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::JKPFPHFJJNI(ref v)) => v,
+            _ => <super::KMIHKHAENKD::KMIHKHAENKD as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_JKPFPHFJJNI(&mut self) {
+        self.FPMABADPBPO = ::std::option::Option::None;
+    }
+
+    pub fn has_JKPFPHFJJNI(&self) -> bool {
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::JKPFPHFJJNI(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_JKPFPHFJJNI(&mut self, v: super::KMIHKHAENKD::KMIHKHAENKD) {
+        self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::JKPFPHFJJNI(v))
+    }
+
+    // Mutable pointer to the field.
+    pub fn mut_JKPFPHFJJNI(&mut self) -> &mut super::KMIHKHAENKD::KMIHKHAENKD {
+        if let ::std::option::Option::Some(chat_data::FPMABADPBPO::JKPFPHFJJNI(_)) = self.FPMABADPBPO {
+        } else {
+            self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::JKPFPHFJJNI(super::KMIHKHAENKD::KMIHKHAENKD::new()));
+        }
+        match self.FPMABADPBPO {
+            ::std::option::Option::Some(chat_data::FPMABADPBPO::JKPFPHFJJNI(ref mut v)) => v,
+            _ => panic!(),
+        }
+    }
+
+    // Take field
+    pub fn take_JKPFPHFJJNI(&mut self) -> super::KMIHKHAENKD::KMIHKHAENKD {
+        if self.has_JKPFPHFJJNI() {
+            match self.FPMABADPBPO.take() {
+                ::std::option::Option::Some(chat_data::FPMABADPBPO::JKPFPHFJJNI(v)) => v,
+                _ => panic!(),
+            }
+        } else {
+            super::KMIHKHAENKD::KMIHKHAENKD::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(5);
+        let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JLIIENIAJHF::JLIIENIAJHF>(
-            "HAGFMHKOKEM",
-            ChatData::has_HAGFMHKOKEM,
-            ChatData::HAGFMHKOKEM,
-            ChatData::mut_HAGFMHKOKEM,
-            ChatData::set_HAGFMHKOKEM,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LFPJCAJLEHE::LFPJCAJLEHE>(
+            "JBLJKHCAILO",
+            ChatData::has_JBLJKHCAILO,
+            ChatData::JBLJKHCAILO,
+            ChatData::mut_JBLJKHCAILO,
+            ChatData::set_JBLJKHCAILO,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GFHACJCOJID::GFHACJCOJID>(
-            "HICBAEFKDJA",
-            ChatData::has_HICBAEFKDJA,
-            ChatData::HICBAEFKDJA,
-            ChatData::mut_HICBAEFKDJA,
-            ChatData::set_HICBAEFKDJA,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MDLOFDFIIIH::MDLOFDFIIIH>(
+            "PDKFDGJPMMF",
+            ChatData::has_PDKFDGJPMMF,
+            ChatData::PDKFDGJPMMF,
+            ChatData::mut_PDKFDGJPMMF,
+            ChatData::set_PDKFDGJPMMF,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
             "message_text",
@@ -295,14 +491,42 @@ impl ChatData {
             ChatData::extra_id,
             ChatData::set_extra_id,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NLIICAGGFIC::NLIICAGGFIC>(
-            "CMPDDIDNAJL",
-            ChatData::has_CMPDDIDNAJL,
-            ChatData::CMPDDIDNAJL,
-            ChatData::mut_CMPDDIDNAJL,
-            ChatData::set_CMPDDIDNAJL,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HIHOFBHCMJJ::HIHOFBHCMJJ>(
+            "KBFOJCDOCDK",
+            ChatData::has_KBFOJCDOCDK,
+            ChatData::KBFOJCDOCDK,
+            ChatData::mut_KBFOJCDOCDK,
+            ChatData::set_KBFOJCDOCDK,
         ));
-        oneofs.push(chat_data::GHLBBDKIJKK::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LHMAHNLLBFC::LHMAHNLLBFC>(
+            "BGDMLGDMDIF",
+            ChatData::has_BGDMLGDMDIF,
+            ChatData::BGDMLGDMDIF,
+            ChatData::mut_BGDMLGDMDIF,
+            ChatData::set_BGDMLGDMDIF,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OEBNIJGBJKC::OEBNIJGBJKC>(
+            "GLPGKFFKBCE",
+            ChatData::has_GLPGKFFKBCE,
+            ChatData::GLPGKFFKBCE,
+            ChatData::mut_GLPGKFFKBCE,
+            ChatData::set_GLPGKFFKBCE,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HMMHFALBILN::HMMHFALBILN>(
+            "FAMKDFDFEDK",
+            ChatData::has_FAMKDFDFEDK,
+            ChatData::FAMKDFDFEDK,
+            ChatData::mut_FAMKDFDFEDK,
+            ChatData::set_FAMKDFDFEDK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KMIHKHAENKD::KMIHKHAENKD>(
+            "JKPFPHFJJNI",
+            ChatData::has_JKPFPHFJJNI,
+            ChatData::JKPFPHFJJNI,
+            ChatData::mut_JKPFPHFJJNI,
+            ChatData::set_JKPFPHFJJNI,
+        ));
+        oneofs.push(chat_data::FPMABADPBPO::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChatData>(
             "ChatData",
             fields,
@@ -322,19 +546,31 @@ impl ::protobuf::Message for ChatData {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 810 => {
-                    self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HAGFMHKOKEM(is.read_message()?));
+                    self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::JBLJKHCAILO(is.read_message()?));
                 },
                 818 => {
-                    self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::HICBAEFKDJA(is.read_message()?));
+                    self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::PDKFDGJPMMF(is.read_message()?));
                 },
                 826 => {
-                    self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::MessageText(is.read_string()?));
+                    self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::MessageText(is.read_string()?));
                 },
                 832 => {
-                    self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::ExtraId(is.read_uint32()?));
+                    self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::ExtraId(is.read_uint32()?));
                 },
                 842 => {
-                    self.GHLBBDKIJKK = ::std::option::Option::Some(chat_data::GHLBBDKIJKK::CMPDDIDNAJL(is.read_message()?));
+                    self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::KBFOJCDOCDK(is.read_message()?));
+                },
+                850 => {
+                    self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::BGDMLGDMDIF(is.read_message()?));
+                },
+                858 => {
+                    self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::GLPGKFFKBCE(is.read_message()?));
+                },
+                866 => {
+                    self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::FAMKDFDFEDK(is.read_message()?));
+                },
+                874 => {
+                    self.FPMABADPBPO = ::std::option::Option::Some(chat_data::FPMABADPBPO::JKPFPHFJJNI(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -348,23 +584,39 @@ impl ::protobuf::Message for ChatData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.GHLBBDKIJKK {
+        if let ::std::option::Option::Some(ref v) = self.FPMABADPBPO {
             match v {
-                &chat_data::GHLBBDKIJKK::HAGFMHKOKEM(ref v) => {
+                &chat_data::FPMABADPBPO::JBLJKHCAILO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chat_data::GHLBBDKIJKK::HICBAEFKDJA(ref v) => {
+                &chat_data::FPMABADPBPO::PDKFDGJPMMF(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chat_data::GHLBBDKIJKK::MessageText(ref v) => {
+                &chat_data::FPMABADPBPO::MessageText(ref v) => {
                     my_size += ::protobuf::rt::string_size(103, &v);
                 },
-                &chat_data::GHLBBDKIJKK::ExtraId(v) => {
+                &chat_data::FPMABADPBPO::ExtraId(v) => {
                     my_size += ::protobuf::rt::uint32_size(104, v);
                 },
-                &chat_data::GHLBBDKIJKK::CMPDDIDNAJL(ref v) => {
+                &chat_data::FPMABADPBPO::KBFOJCDOCDK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &chat_data::FPMABADPBPO::BGDMLGDMDIF(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &chat_data::FPMABADPBPO::GLPGKFFKBCE(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &chat_data::FPMABADPBPO::FAMKDFDFEDK(ref v) => {
+                    let len = v.compute_size();
+                    my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+                },
+                &chat_data::FPMABADPBPO::JKPFPHFJJNI(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -376,22 +628,34 @@ impl ::protobuf::Message for ChatData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.GHLBBDKIJKK {
+        if let ::std::option::Option::Some(ref v) = self.FPMABADPBPO {
             match v {
-                &chat_data::GHLBBDKIJKK::HAGFMHKOKEM(ref v) => {
+                &chat_data::FPMABADPBPO::JBLJKHCAILO(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
                 },
-                &chat_data::GHLBBDKIJKK::HICBAEFKDJA(ref v) => {
+                &chat_data::FPMABADPBPO::PDKFDGJPMMF(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(102, v, os)?;
                 },
-                &chat_data::GHLBBDKIJKK::MessageText(ref v) => {
+                &chat_data::FPMABADPBPO::MessageText(ref v) => {
                     os.write_string(103, v)?;
                 },
-                &chat_data::GHLBBDKIJKK::ExtraId(v) => {
+                &chat_data::FPMABADPBPO::ExtraId(v) => {
                     os.write_uint32(104, v)?;
                 },
-                &chat_data::GHLBBDKIJKK::CMPDDIDNAJL(ref v) => {
+                &chat_data::FPMABADPBPO::KBFOJCDOCDK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(105, v, os)?;
+                },
+                &chat_data::FPMABADPBPO::BGDMLGDMDIF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(106, v, os)?;
+                },
+                &chat_data::FPMABADPBPO::GLPGKFFKBCE(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(107, v, os)?;
+                },
+                &chat_data::FPMABADPBPO::FAMKDFDFEDK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(108, v, os)?;
+                },
+                &chat_data::FPMABADPBPO::JKPFPHFJJNI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(109, v, os)?;
                 },
             };
         }
@@ -412,17 +676,21 @@ impl ::protobuf::Message for ChatData {
     }
 
     fn clear(&mut self) {
-        self.GHLBBDKIJKK = ::std::option::Option::None;
-        self.GHLBBDKIJKK = ::std::option::Option::None;
-        self.GHLBBDKIJKK = ::std::option::Option::None;
-        self.GHLBBDKIJKK = ::std::option::Option::None;
-        self.GHLBBDKIJKK = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
+        self.FPMABADPBPO = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChatData {
         static instance: ChatData = ChatData {
-            GHLBBDKIJKK: ::std::option::Option::None,
+            FPMABADPBPO: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -451,45 +719,59 @@ pub mod chat_data {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ChatData.GHLBBDKIJKK)
-    pub enum GHLBBDKIJKK {
-        // @@protoc_insertion_point(oneof_field:ChatData.HAGFMHKOKEM)
-        HAGFMHKOKEM(super::super::JLIIENIAJHF::JLIIENIAJHF),
-        // @@protoc_insertion_point(oneof_field:ChatData.HICBAEFKDJA)
-        HICBAEFKDJA(super::super::GFHACJCOJID::GFHACJCOJID),
+    // @@protoc_insertion_point(oneof:ChatData.FPMABADPBPO)
+    pub enum FPMABADPBPO {
+        // @@protoc_insertion_point(oneof_field:ChatData.JBLJKHCAILO)
+        JBLJKHCAILO(super::super::LFPJCAJLEHE::LFPJCAJLEHE),
+        // @@protoc_insertion_point(oneof_field:ChatData.PDKFDGJPMMF)
+        PDKFDGJPMMF(super::super::MDLOFDFIIIH::MDLOFDFIIIH),
         // @@protoc_insertion_point(oneof_field:ChatData.message_text)
         MessageText(::std::string::String),
         // @@protoc_insertion_point(oneof_field:ChatData.extra_id)
         ExtraId(u32),
-        // @@protoc_insertion_point(oneof_field:ChatData.CMPDDIDNAJL)
-        CMPDDIDNAJL(super::super::NLIICAGGFIC::NLIICAGGFIC),
+        // @@protoc_insertion_point(oneof_field:ChatData.KBFOJCDOCDK)
+        KBFOJCDOCDK(super::super::HIHOFBHCMJJ::HIHOFBHCMJJ),
+        // @@protoc_insertion_point(oneof_field:ChatData.BGDMLGDMDIF)
+        BGDMLGDMDIF(super::super::LHMAHNLLBFC::LHMAHNLLBFC),
+        // @@protoc_insertion_point(oneof_field:ChatData.GLPGKFFKBCE)
+        GLPGKFFKBCE(super::super::OEBNIJGBJKC::OEBNIJGBJKC),
+        // @@protoc_insertion_point(oneof_field:ChatData.FAMKDFDFEDK)
+        FAMKDFDFEDK(super::super::HMMHFALBILN::HMMHFALBILN),
+        // @@protoc_insertion_point(oneof_field:ChatData.JKPFPHFJJNI)
+        JKPFPHFJJNI(super::super::KMIHKHAENKD::KMIHKHAENKD),
     }
 
-    impl ::protobuf::Oneof for GHLBBDKIJKK {
+    impl ::protobuf::Oneof for FPMABADPBPO {
     }
 
-    impl ::protobuf::OneofFull for GHLBBDKIJKK {
+    impl ::protobuf::OneofFull for FPMABADPBPO {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ChatData as ::protobuf::MessageFull>::descriptor().oneof_by_name("GHLBBDKIJKK").unwrap()).clone()
+            descriptor.get(|| <super::ChatData as ::protobuf::MessageFull>::descriptor().oneof_by_name("FPMABADPBPO").unwrap()).clone()
         }
     }
 
-    impl GHLBBDKIJKK {
+    impl FPMABADPBPO {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<GHLBBDKIJKK>("GHLBBDKIJKK")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<FPMABADPBPO>("FPMABADPBPO")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eChatData.proto\x1a\x11GFHACJCOJID.proto\x1a\x11JLIIENIAJHF.proto\
-    \x1a\x11NLIICAGGFIC.proto\"\xf1\x01\n\x08ChatData\x120\n\x0bHAGFMHKOKEM\
-    \x18e\x20\x01(\x0b2\x0c.JLIIENIAJHFH\0R\x0bHAGFMHKOKEM\x120\n\x0bHICBAEF\
-    KDJA\x18f\x20\x01(\x0b2\x0c.GFHACJCOJIDH\0R\x0bHICBAEFKDJA\x12#\n\x0cmes\
-    sage_text\x18g\x20\x01(\tH\0R\x0bmessageText\x12\x1b\n\x08extra_id\x18h\
-    \x20\x01(\rH\0R\x07extraId\x120\n\x0bCMPDDIDNAJL\x18i\x20\x01(\x0b2\x0c.\
-    NLIICAGGFICH\0R\x0bCMPDDIDNAJLB\r\n\x0bGHLBBDKIJKKb\x06proto3\
+    \n\x0eChatData.proto\x1a\x11HIHOFBHCMJJ.proto\x1a\x11HMMHFALBILN.proto\
+    \x1a\x11KMIHKHAENKD.proto\x1a\x11LFPJCAJLEHE.proto\x1a\x11LHMAHNLLBFC.pr\
+    oto\x1a\x11MDLOFDFIIIH.proto\x1a\x11OEBNIJGBJKC.proto\"\xb9\x03\n\x08Cha\
+    tData\x120\n\x0bJBLJKHCAILO\x18e\x20\x01(\x0b2\x0c.LFPJCAJLEHEH\0R\x0bJB\
+    LJKHCAILO\x120\n\x0bPDKFDGJPMMF\x18f\x20\x01(\x0b2\x0c.MDLOFDFIIIHH\0R\
+    \x0bPDKFDGJPMMF\x12#\n\x0cmessage_text\x18g\x20\x01(\tH\0R\x0bmessageTex\
+    t\x12\x1b\n\x08extra_id\x18h\x20\x01(\rH\0R\x07extraId\x120\n\x0bKBFOJCD\
+    OCDK\x18i\x20\x01(\x0b2\x0c.HIHOFBHCMJJH\0R\x0bKBFOJCDOCDK\x120\n\x0bBGD\
+    MLGDMDIF\x18j\x20\x01(\x0b2\x0c.LHMAHNLLBFCH\0R\x0bBGDMLGDMDIF\x120\n\
+    \x0bGLPGKFFKBCE\x18k\x20\x01(\x0b2\x0c.OEBNIJGBJKCH\0R\x0bGLPGKFFKBCE\
+    \x120\n\x0bFAMKDFDFEDK\x18l\x20\x01(\x0b2\x0c.HMMHFALBILNH\0R\x0bFAMKDFD\
+    FEDK\x120\n\x0bJKPFPHFJJNI\x18m\x20\x01(\x0b2\x0c.KMIHKHAENKDH\0R\x0bJKP\
+    FPHFJJNIB\r\n\x0bFPMABADPBPOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -506,10 +788,14 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::GFHACJCOJID::file_descriptor().clone());
-            deps.push(super::JLIIENIAJHF::file_descriptor().clone());
-            deps.push(super::NLIICAGGFIC::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(7);
+            deps.push(super::HIHOFBHCMJJ::file_descriptor().clone());
+            deps.push(super::HMMHFALBILN::file_descriptor().clone());
+            deps.push(super::KMIHKHAENKD::file_descriptor().clone());
+            deps.push(super::LFPJCAJLEHE::file_descriptor().clone());
+            deps.push(super::LHMAHNLLBFC::file_descriptor().clone());
+            deps.push(super::MDLOFDFIIIH::file_descriptor().clone());
+            deps.push(super::OEBNIJGBJKC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChatData::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

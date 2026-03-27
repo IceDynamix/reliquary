@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyPassengerInfo {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyPassengerInfo.IBFAPDAKHJO)
-    pub IBFAPDAKHJO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyPassengerInfo.ODPMHPAEOAB)
+    pub ODPMHPAEOAB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyPassengerInfo.passenger_info_list)
     pub passenger_info_list: ::std::vec::Vec<super::TrainPartyPassenger::TrainPartyPassenger>,
     // special fields
@@ -52,9 +52,9 @@ impl TrainPartyPassengerInfo {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IBFAPDAKHJO",
-            |m: &TrainPartyPassengerInfo| { &m.IBFAPDAKHJO },
-            |m: &mut TrainPartyPassengerInfo| { &mut m.IBFAPDAKHJO },
+            "ODPMHPAEOAB",
+            |m: &TrainPartyPassengerInfo| { &m.ODPMHPAEOAB },
+            |m: &mut TrainPartyPassengerInfo| { &mut m.ODPMHPAEOAB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "passenger_info_list",
@@ -80,12 +80,12 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IBFAPDAKHJO)?;
+                    is.read_repeated_packed_uint32_into(&mut self.ODPMHPAEOAB)?;
                 },
                 16 => {
-                    self.IBFAPDAKHJO.push(is.read_uint32()?);
+                    self.ODPMHPAEOAB.push(is.read_uint32()?);
                 },
-                122 => {
+                50 => {
                     self.passenger_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -100,7 +100,7 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.IBFAPDAKHJO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.ODPMHPAEOAB);
         for value in &self.passenger_info_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -111,9 +111,9 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.IBFAPDAKHJO)?;
+        os.write_repeated_packed_uint32(2, &self.ODPMHPAEOAB)?;
         for v in &self.passenger_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for TrainPartyPassengerInfo {
     }
 
     fn clear(&mut self) {
-        self.IBFAPDAKHJO.clear();
+        self.ODPMHPAEOAB.clear();
         self.passenger_info_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyPassengerInfo {
         static instance: TrainPartyPassengerInfo = TrainPartyPassengerInfo {
-            IBFAPDAKHJO: ::std::vec::Vec::new(),
+            ODPMHPAEOAB: ::std::vec::Vec::new(),
             passenger_info_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyPassengerInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTrainPartyPassengerInfo.proto\x1a\x19TrainPartyPassenger.proto\"\
-    \x81\x01\n\x17TrainPartyPassengerInfo\x12\x20\n\x0bIBFAPDAKHJO\x18\x02\
-    \x20\x03(\rR\x0bIBFAPDAKHJO\x12D\n\x13passenger_info_list\x18\x0f\x20\
+    \x81\x01\n\x17TrainPartyPassengerInfo\x12\x20\n\x0bODPMHPAEOAB\x18\x02\
+    \x20\x03(\rR\x0bODPMHPAEOAB\x12D\n\x13passenger_info_list\x18\x06\x20\
     \x03(\x0b2\x14.TrainPartyPassengerR\x11passengerInfoListb\x06proto3\
 ";
 

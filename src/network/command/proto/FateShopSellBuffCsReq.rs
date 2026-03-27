@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FateShopSellBuffCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FateShopSellBuffCsReq.DLBEHBGBBIP)
-    pub DLBEHBGBBIP: bool,
-    // @@protoc_insertion_point(field:FateShopSellBuffCsReq.OBICBFOCDEK)
-    pub OBICBFOCDEK: u32,
-    // @@protoc_insertion_point(field:FateShopSellBuffCsReq.OIPDNPHPCML)
-    pub OIPDNPHPCML: u32,
+    // @@protoc_insertion_point(field:FateShopSellBuffCsReq.DNCJGPAPLFJ)
+    pub DNCJGPAPLFJ: u32,
+    // @@protoc_insertion_point(field:FateShopSellBuffCsReq.DOHPIEHNNPF)
+    pub DOHPIEHNNPF: bool,
+    // @@protoc_insertion_point(field:FateShopSellBuffCsReq.NJFBCOLABKH)
+    pub NJFBCOLABKH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FateShopSellBuffCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl FateShopSellBuffCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLBEHBGBBIP",
-            |m: &FateShopSellBuffCsReq| { &m.DLBEHBGBBIP },
-            |m: &mut FateShopSellBuffCsReq| { &mut m.DLBEHBGBBIP },
+            "DNCJGPAPLFJ",
+            |m: &FateShopSellBuffCsReq| { &m.DNCJGPAPLFJ },
+            |m: &mut FateShopSellBuffCsReq| { &mut m.DNCJGPAPLFJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OBICBFOCDEK",
-            |m: &FateShopSellBuffCsReq| { &m.OBICBFOCDEK },
-            |m: &mut FateShopSellBuffCsReq| { &mut m.OBICBFOCDEK },
+            "DOHPIEHNNPF",
+            |m: &FateShopSellBuffCsReq| { &m.DOHPIEHNNPF },
+            |m: &mut FateShopSellBuffCsReq| { &mut m.DOHPIEHNNPF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OIPDNPHPCML",
-            |m: &FateShopSellBuffCsReq| { &m.OIPDNPHPCML },
-            |m: &mut FateShopSellBuffCsReq| { &mut m.OIPDNPHPCML },
+            "NJFBCOLABKH",
+            |m: &FateShopSellBuffCsReq| { &m.NJFBCOLABKH },
+            |m: &mut FateShopSellBuffCsReq| { &mut m.NJFBCOLABKH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FateShopSellBuffCsReq>(
             "FateShopSellBuffCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FateShopSellBuffCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.DLBEHBGBBIP = is.read_bool()?;
+                16 => {
+                    self.DNCJGPAPLFJ = is.read_uint32()?;
                 },
-                120 => {
-                    self.OBICBFOCDEK = is.read_uint32()?;
+                88 => {
+                    self.DOHPIEHNNPF = is.read_bool()?;
                 },
                 96 => {
-                    self.OIPDNPHPCML = is.read_uint32()?;
+                    self.NJFBCOLABKH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FateShopSellBuffCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DLBEHBGBBIP != false {
+        if self.DNCJGPAPLFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DNCJGPAPLFJ);
+        }
+        if self.DOHPIEHNNPF != false {
             my_size += 1 + 1;
         }
-        if self.OBICBFOCDEK != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.OBICBFOCDEK);
-        }
-        if self.OIPDNPHPCML != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.OIPDNPHPCML);
+        if self.NJFBCOLABKH != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.NJFBCOLABKH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FateShopSellBuffCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DLBEHBGBBIP != false {
-            os.write_bool(5, self.DLBEHBGBBIP)?;
+        if self.DNCJGPAPLFJ != 0 {
+            os.write_uint32(2, self.DNCJGPAPLFJ)?;
         }
-        if self.OBICBFOCDEK != 0 {
-            os.write_uint32(15, self.OBICBFOCDEK)?;
+        if self.DOHPIEHNNPF != false {
+            os.write_bool(11, self.DOHPIEHNNPF)?;
         }
-        if self.OIPDNPHPCML != 0 {
-            os.write_uint32(12, self.OIPDNPHPCML)?;
+        if self.NJFBCOLABKH != 0 {
+            os.write_uint32(12, self.NJFBCOLABKH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for FateShopSellBuffCsReq {
     }
 
     fn clear(&mut self) {
-        self.DLBEHBGBBIP = false;
-        self.OBICBFOCDEK = 0;
-        self.OIPDNPHPCML = 0;
+        self.DNCJGPAPLFJ = 0;
+        self.DOHPIEHNNPF = false;
+        self.NJFBCOLABKH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FateShopSellBuffCsReq {
         static instance: FateShopSellBuffCsReq = FateShopSellBuffCsReq {
-            DLBEHBGBBIP: false,
-            OBICBFOCDEK: 0,
-            OIPDNPHPCML: 0,
+            DNCJGPAPLFJ: 0,
+            DOHPIEHNNPF: false,
+            NJFBCOLABKH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for FateShopSellBuffCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bFateShopSellBuffCsReq.proto\"}\n\x15FateShopSellBuffCsReq\x12\x20\
-    \n\x0bDLBEHBGBBIP\x18\x05\x20\x01(\x08R\x0bDLBEHBGBBIP\x12\x20\n\x0bOBIC\
-    BFOCDEK\x18\x0f\x20\x01(\rR\x0bOBICBFOCDEK\x12\x20\n\x0bOIPDNPHPCML\x18\
-    \x0c\x20\x01(\rR\x0bOIPDNPHPCMLb\x06proto3\
+    \n\x0bDNCJGPAPLFJ\x18\x02\x20\x01(\rR\x0bDNCJGPAPLFJ\x12\x20\n\x0bDOHPIE\
+    HNNPF\x18\x0b\x20\x01(\x08R\x0bDOHPIEHNNPF\x12\x20\n\x0bNJFBCOLABKH\x18\
+    \x0c\x20\x01(\rR\x0bNJFBCOLABKHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

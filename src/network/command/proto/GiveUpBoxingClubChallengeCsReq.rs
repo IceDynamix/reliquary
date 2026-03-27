@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GiveUpBoxingClubChallengeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GiveUpBoxingClubChallengeCsReq.MJBLANFCMPG)
-    pub MJBLANFCMPG: bool,
+    // @@protoc_insertion_point(field:GiveUpBoxingClubChallengeCsReq.PBBGPKCFMKK)
+    pub PBBGPKCFMKK: bool,
     // @@protoc_insertion_point(field:GiveUpBoxingClubChallengeCsReq.challenge_id)
     pub challenge_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GiveUpBoxingClubChallengeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJBLANFCMPG",
-            |m: &GiveUpBoxingClubChallengeCsReq| { &m.MJBLANFCMPG },
-            |m: &mut GiveUpBoxingClubChallengeCsReq| { &mut m.MJBLANFCMPG },
+            "PBBGPKCFMKK",
+            |m: &GiveUpBoxingClubChallengeCsReq| { &m.PBBGPKCFMKK },
+            |m: &mut GiveUpBoxingClubChallengeCsReq| { &mut m.PBBGPKCFMKK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "challenge_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.MJBLANFCMPG = is.read_bool()?;
+                112 => {
+                    self.PBBGPKCFMKK = is.read_bool()?;
                 },
-                48 => {
+                16 => {
                     self.challenge_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MJBLANFCMPG != false {
+        if self.PBBGPKCFMKK != false {
             my_size += 1 + 1;
         }
         if self.challenge_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.challenge_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.challenge_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MJBLANFCMPG != false {
-            os.write_bool(7, self.MJBLANFCMPG)?;
+        if self.PBBGPKCFMKK != false {
+            os.write_bool(14, self.PBBGPKCFMKK)?;
         }
         if self.challenge_id != 0 {
-            os.write_uint32(6, self.challenge_id)?;
+            os.write_uint32(2, self.challenge_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for GiveUpBoxingClubChallengeCsReq {
     }
 
     fn clear(&mut self) {
-        self.MJBLANFCMPG = false;
+        self.PBBGPKCFMKK = false;
         self.challenge_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GiveUpBoxingClubChallengeCsReq {
         static instance: GiveUpBoxingClubChallengeCsReq = GiveUpBoxingClubChallengeCsReq {
-            MJBLANFCMPG: false,
+            PBBGPKCFMKK: false,
             challenge_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for GiveUpBoxingClubChallengeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$GiveUpBoxingClubChallengeCsReq.proto\"e\n\x1eGiveUpBoxingClubChalleng\
-    eCsReq\x12\x20\n\x0bMJBLANFCMPG\x18\x07\x20\x01(\x08R\x0bMJBLANFCMPG\x12\
-    !\n\x0cchallenge_id\x18\x06\x20\x01(\rR\x0bchallengeIdb\x06proto3\
+    eCsReq\x12\x20\n\x0bPBBGPKCFMKK\x18\x0e\x20\x01(\x08R\x0bPBBGPKCFMKK\x12\
+    !\n\x0cchallenge_id\x18\x02\x20\x01(\rR\x0bchallengeIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

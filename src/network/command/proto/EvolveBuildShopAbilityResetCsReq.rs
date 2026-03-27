@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildShopAbilityResetCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildShopAbilityResetCsReq.PLOONDJPHAH)
-    pub PLOONDJPHAH: ::protobuf::EnumOrUnknown<super::DEDJHEJALMM::DEDJHEJALMM>,
+    // @@protoc_insertion_point(field:EvolveBuildShopAbilityResetCsReq.NDCIILBONPH)
+    pub NDCIILBONPH: ::protobuf::EnumOrUnknown<super::PCKPOKJNDBA::PCKPOKJNDBA>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildShopAbilityResetCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl EvolveBuildShopAbilityResetCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLOONDJPHAH",
-            |m: &EvolveBuildShopAbilityResetCsReq| { &m.PLOONDJPHAH },
-            |m: &mut EvolveBuildShopAbilityResetCsReq| { &mut m.PLOONDJPHAH },
+            "NDCIILBONPH",
+            |m: &EvolveBuildShopAbilityResetCsReq| { &m.NDCIILBONPH },
+            |m: &mut EvolveBuildShopAbilityResetCsReq| { &mut m.NDCIILBONPH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildShopAbilityResetCsReq>(
             "EvolveBuildShopAbilityResetCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.PLOONDJPHAH = is.read_enum_or_unknown()?;
+                32 => {
+                    self.NDCIILBONPH = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PLOONDJPHAH != ::protobuf::EnumOrUnknown::new(super::DEDJHEJALMM::DEDJHEJALMM::DEDJHEJALMM_MNPIJJNJLKL) {
-            my_size += ::protobuf::rt::int32_size(13, self.PLOONDJPHAH.value());
+        if self.NDCIILBONPH != ::protobuf::EnumOrUnknown::new(super::PCKPOKJNDBA::PCKPOKJNDBA::PCKPOKJNDBA_HPCLLJACLGJ) {
+            my_size += ::protobuf::rt::int32_size(4, self.NDCIILBONPH.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PLOONDJPHAH != ::protobuf::EnumOrUnknown::new(super::DEDJHEJALMM::DEDJHEJALMM::DEDJHEJALMM_MNPIJJNJLKL) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.PLOONDJPHAH))?;
+        if self.NDCIILBONPH != ::protobuf::EnumOrUnknown::new(super::PCKPOKJNDBA::PCKPOKJNDBA::PCKPOKJNDBA_HPCLLJACLGJ) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.NDCIILBONPH))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for EvolveBuildShopAbilityResetCsReq {
     }
 
     fn clear(&mut self) {
-        self.PLOONDJPHAH = ::protobuf::EnumOrUnknown::new(super::DEDJHEJALMM::DEDJHEJALMM::DEDJHEJALMM_MNPIJJNJLKL);
+        self.NDCIILBONPH = ::protobuf::EnumOrUnknown::new(super::PCKPOKJNDBA::PCKPOKJNDBA::PCKPOKJNDBA_HPCLLJACLGJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildShopAbilityResetCsReq {
         static instance: EvolveBuildShopAbilityResetCsReq = EvolveBuildShopAbilityResetCsReq {
-            PLOONDJPHAH: ::protobuf::EnumOrUnknown::from_i32(0),
+            NDCIILBONPH: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildShopAbilityResetCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&EvolveBuildShopAbilityResetCsReq.proto\x1a\x11DEDJHEJALMM.proto\"R\n\
-    \x20EvolveBuildShopAbilityResetCsReq\x12.\n\x0bPLOONDJPHAH\x18\r\x20\x01\
-    (\x0e2\x0c.DEDJHEJALMMR\x0bPLOONDJPHAHb\x06proto3\
+    \n&EvolveBuildShopAbilityResetCsReq.proto\x1a\x11PCKPOKJNDBA.proto\"R\n\
+    \x20EvolveBuildShopAbilityResetCsReq\x12.\n\x0bNDCIILBONPH\x18\x04\x20\
+    \x01(\x0e2\x0c.PCKPOKJNDBAR\x0bNDCIILBONPHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -167,7 +167,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DEDJHEJALMM::file_descriptor().clone());
+            deps.push(super::PCKPOKJNDBA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EvolveBuildShopAbilityResetCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

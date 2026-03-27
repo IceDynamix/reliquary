@@ -79,7 +79,7 @@ impl ::protobuf::Message for SectionStatus {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                48 => {
                     self.section_status = is.read_enum_or_unknown()?;
                 },
                 40 => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SectionStatus {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.section_status != ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE) {
-            my_size += ::protobuf::rt::int32_size(13, self.section_status.value());
+            my_size += ::protobuf::rt::int32_size(6, self.section_status.value());
         }
         if self.section_id != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.section_id);
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SectionStatus {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.section_status != ::protobuf::EnumOrUnknown::new(super::MessageSectionStatus::MessageSectionStatus::MESSAGE_SECTION_NONE) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.section_status))?;
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.section_status))?;
         }
         if self.section_id != 0 {
             os.write_uint32(5, self.section_id)?;
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SectionStatus {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13SectionStatus.proto\x1a\x1aMessageSectionStatus.proto\"l\n\rSectio\
-    nStatus\x12<\n\x0esection_status\x18\r\x20\x01(\x0e2\x15.MessageSectionS\
-    tatusR\rsectionStatus\x12\x1d\n\nsection_id\x18\x05\x20\x01(\rR\tsection\
-    Idb\x06proto3\
+    nStatus\x12<\n\x0esection_status\x18\x06\x20\x01(\x0e2\x15.MessageSectio\
+    nStatusR\rsectionStatus\x12\x1d\n\nsection_id\x18\x05\x20\x01(\rR\tsecti\
+    onIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

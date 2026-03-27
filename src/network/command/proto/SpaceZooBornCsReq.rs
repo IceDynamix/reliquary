@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooBornCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooBornCsReq.MLLPJBLCBDL)
-    pub MLLPJBLCBDL: u32,
-    // @@protoc_insertion_point(field:SpaceZooBornCsReq.AGJLJJHBEOE)
-    pub AGJLJJHBEOE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SpaceZooBornCsReq.DCDLIHCPNHG)
+    pub DCDLIHCPNHG: u32,
+    // @@protoc_insertion_point(field:SpaceZooBornCsReq.EEGFAEPCIHN)
+    pub EEGFAEPCIHN: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooBornCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SpaceZooBornCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MLLPJBLCBDL",
-            |m: &SpaceZooBornCsReq| { &m.MLLPJBLCBDL },
-            |m: &mut SpaceZooBornCsReq| { &mut m.MLLPJBLCBDL },
+            "DCDLIHCPNHG",
+            |m: &SpaceZooBornCsReq| { &m.DCDLIHCPNHG },
+            |m: &mut SpaceZooBornCsReq| { &mut m.DCDLIHCPNHG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AGJLJJHBEOE",
-            |m: &SpaceZooBornCsReq| { &m.AGJLJJHBEOE },
-            |m: &mut SpaceZooBornCsReq| { &mut m.AGJLJJHBEOE },
+            "EEGFAEPCIHN",
+            |m: &SpaceZooBornCsReq| { &m.EEGFAEPCIHN },
+            |m: &mut SpaceZooBornCsReq| { &mut m.EEGFAEPCIHN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooBornCsReq>(
             "SpaceZooBornCsReq",
@@ -80,13 +80,13 @@ impl ::protobuf::Message for SpaceZooBornCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 24 => {
-                    self.MLLPJBLCBDL = is.read_uint32()?;
+                    self.DCDLIHCPNHG = is.read_uint32()?;
                 },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AGJLJJHBEOE)?;
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EEGFAEPCIHN)?;
                 },
-                96 => {
-                    self.AGJLJJHBEOE.push(is.read_uint32()?);
+                40 => {
+                    self.EEGFAEPCIHN.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for SpaceZooBornCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MLLPJBLCBDL != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MLLPJBLCBDL);
+        if self.DCDLIHCPNHG != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DCDLIHCPNHG);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.AGJLJJHBEOE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.EEGFAEPCIHN);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MLLPJBLCBDL != 0 {
-            os.write_uint32(3, self.MLLPJBLCBDL)?;
+        if self.DCDLIHCPNHG != 0 {
+            os.write_uint32(3, self.DCDLIHCPNHG)?;
         }
-        os.write_repeated_packed_uint32(12, &self.AGJLJJHBEOE)?;
+        os.write_repeated_packed_uint32(5, &self.EEGFAEPCIHN)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for SpaceZooBornCsReq {
     }
 
     fn clear(&mut self) {
-        self.MLLPJBLCBDL = 0;
-        self.AGJLJJHBEOE.clear();
+        self.DCDLIHCPNHG = 0;
+        self.EEGFAEPCIHN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooBornCsReq {
         static instance: SpaceZooBornCsReq = SpaceZooBornCsReq {
-            MLLPJBLCBDL: 0,
-            AGJLJJHBEOE: ::std::vec::Vec::new(),
+            DCDLIHCPNHG: 0,
+            EEGFAEPCIHN: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooBornCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17SpaceZooBornCsReq.proto\"W\n\x11SpaceZooBornCsReq\x12\x20\n\x0bMLL\
-    PJBLCBDL\x18\x03\x20\x01(\rR\x0bMLLPJBLCBDL\x12\x20\n\x0bAGJLJJHBEOE\x18\
-    \x0c\x20\x03(\rR\x0bAGJLJJHBEOEb\x06proto3\
+    \n\x17SpaceZooBornCsReq.proto\"W\n\x11SpaceZooBornCsReq\x12\x20\n\x0bDCD\
+    LIHCPNHG\x18\x03\x20\x01(\rR\x0bDCDLIHCPNHG\x12\x20\n\x0bEEGFAEPCIHN\x18\
+    \x05\x20\x03(\rR\x0bEEGFAEPCIHNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

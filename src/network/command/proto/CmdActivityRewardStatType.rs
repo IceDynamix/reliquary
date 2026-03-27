@@ -27,16 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdActivityRewardStatType)
 pub enum CmdActivityRewardStatType {
-    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.NODIIEHBAPO_EBLCCNLKAFK)
-    NODIIEHBAPO_EBLCCNLKAFK = 0,
-    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.NODIIEHBAPO_CMFIFICJPHJ)
-    NODIIEHBAPO_CMFIFICJPHJ = 9115,
-    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.NODIIEHBAPO_BKNGEJKMGCJ)
-    NODIIEHBAPO_BKNGEJKMGCJ = 9120,
-    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.NODIIEHBAPO_AMHGMADNFOP)
-    NODIIEHBAPO_AMHGMADNFOP = 9118,
-    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.NODIIEHBAPO_LEPOJOBPBEM)
-    NODIIEHBAPO_LEPOJOBPBEM = 9114,
+    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.CmdActivityRewardStatType_JDCCJOFIILH)
+    CmdActivityRewardStatType_JDCCJOFIILH = 0,
+    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.CmdActivityRewardStatType_EADFGPBHHOP)
+    CmdActivityRewardStatType_EADFGPBHHOP = 9113,
+    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.CmdActivityRewardStatType_OEDINHGMHEA)
+    CmdActivityRewardStatType_OEDINHGMHEA = 9118,
+    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.CmdActivityRewardStatType_GANIBHMDJMF)
+    CmdActivityRewardStatType_GANIBHMDJMF = 9111,
+    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.CmdActivityRewardStatType_IHCHMLKNIHH)
+    CmdActivityRewardStatType_IHCHMLKNIHH = 9112,
+    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.CmdActivityRewardStatType_FCLOMIDJBKK)
+    CmdActivityRewardStatType_FCLOMIDJBKK = 9120,
+    // @@protoc_insertion_point(enum_value:CmdActivityRewardStatType.CmdActivityRewardStatType_JDAPOKBLIOD)
+    CmdActivityRewardStatType_JDAPOKBLIOD = 9116,
 }
 
 impl ::protobuf::Enum for CmdActivityRewardStatType {
@@ -48,32 +52,38 @@ impl ::protobuf::Enum for CmdActivityRewardStatType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdActivityRewardStatType> {
         match value {
-            0 => ::std::option::Option::Some(CmdActivityRewardStatType::NODIIEHBAPO_EBLCCNLKAFK),
-            9115 => ::std::option::Option::Some(CmdActivityRewardStatType::NODIIEHBAPO_CMFIFICJPHJ),
-            9120 => ::std::option::Option::Some(CmdActivityRewardStatType::NODIIEHBAPO_BKNGEJKMGCJ),
-            9118 => ::std::option::Option::Some(CmdActivityRewardStatType::NODIIEHBAPO_AMHGMADNFOP),
-            9114 => ::std::option::Option::Some(CmdActivityRewardStatType::NODIIEHBAPO_LEPOJOBPBEM),
+            0 => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_JDCCJOFIILH),
+            9113 => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_EADFGPBHHOP),
+            9118 => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_OEDINHGMHEA),
+            9111 => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_GANIBHMDJMF),
+            9112 => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_IHCHMLKNIHH),
+            9120 => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_FCLOMIDJBKK),
+            9116 => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_JDAPOKBLIOD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdActivityRewardStatType> {
         match str {
-            "NODIIEHBAPO_EBLCCNLKAFK" => ::std::option::Option::Some(CmdActivityRewardStatType::NODIIEHBAPO_EBLCCNLKAFK),
-            "NODIIEHBAPO_CMFIFICJPHJ" => ::std::option::Option::Some(CmdActivityRewardStatType::NODIIEHBAPO_CMFIFICJPHJ),
-            "NODIIEHBAPO_BKNGEJKMGCJ" => ::std::option::Option::Some(CmdActivityRewardStatType::NODIIEHBAPO_BKNGEJKMGCJ),
-            "NODIIEHBAPO_AMHGMADNFOP" => ::std::option::Option::Some(CmdActivityRewardStatType::NODIIEHBAPO_AMHGMADNFOP),
-            "NODIIEHBAPO_LEPOJOBPBEM" => ::std::option::Option::Some(CmdActivityRewardStatType::NODIIEHBAPO_LEPOJOBPBEM),
+            "CmdActivityRewardStatType_JDCCJOFIILH" => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_JDCCJOFIILH),
+            "CmdActivityRewardStatType_EADFGPBHHOP" => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_EADFGPBHHOP),
+            "CmdActivityRewardStatType_OEDINHGMHEA" => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_OEDINHGMHEA),
+            "CmdActivityRewardStatType_GANIBHMDJMF" => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_GANIBHMDJMF),
+            "CmdActivityRewardStatType_IHCHMLKNIHH" => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_IHCHMLKNIHH),
+            "CmdActivityRewardStatType_FCLOMIDJBKK" => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_FCLOMIDJBKK),
+            "CmdActivityRewardStatType_JDAPOKBLIOD" => ::std::option::Option::Some(CmdActivityRewardStatType::CmdActivityRewardStatType_JDAPOKBLIOD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdActivityRewardStatType] = &[
-        CmdActivityRewardStatType::NODIIEHBAPO_EBLCCNLKAFK,
-        CmdActivityRewardStatType::NODIIEHBAPO_CMFIFICJPHJ,
-        CmdActivityRewardStatType::NODIIEHBAPO_BKNGEJKMGCJ,
-        CmdActivityRewardStatType::NODIIEHBAPO_AMHGMADNFOP,
-        CmdActivityRewardStatType::NODIIEHBAPO_LEPOJOBPBEM,
+        CmdActivityRewardStatType::CmdActivityRewardStatType_JDCCJOFIILH,
+        CmdActivityRewardStatType::CmdActivityRewardStatType_EADFGPBHHOP,
+        CmdActivityRewardStatType::CmdActivityRewardStatType_OEDINHGMHEA,
+        CmdActivityRewardStatType::CmdActivityRewardStatType_GANIBHMDJMF,
+        CmdActivityRewardStatType::CmdActivityRewardStatType_IHCHMLKNIHH,
+        CmdActivityRewardStatType::CmdActivityRewardStatType_FCLOMIDJBKK,
+        CmdActivityRewardStatType::CmdActivityRewardStatType_JDAPOKBLIOD,
     ];
 }
 
@@ -85,11 +95,13 @@ impl ::protobuf::EnumFull for CmdActivityRewardStatType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdActivityRewardStatType::NODIIEHBAPO_EBLCCNLKAFK => 0,
-            CmdActivityRewardStatType::NODIIEHBAPO_CMFIFICJPHJ => 1,
-            CmdActivityRewardStatType::NODIIEHBAPO_BKNGEJKMGCJ => 2,
-            CmdActivityRewardStatType::NODIIEHBAPO_AMHGMADNFOP => 3,
-            CmdActivityRewardStatType::NODIIEHBAPO_LEPOJOBPBEM => 4,
+            CmdActivityRewardStatType::CmdActivityRewardStatType_JDCCJOFIILH => 0,
+            CmdActivityRewardStatType::CmdActivityRewardStatType_EADFGPBHHOP => 1,
+            CmdActivityRewardStatType::CmdActivityRewardStatType_OEDINHGMHEA => 2,
+            CmdActivityRewardStatType::CmdActivityRewardStatType_GANIBHMDJMF => 3,
+            CmdActivityRewardStatType::CmdActivityRewardStatType_IHCHMLKNIHH => 4,
+            CmdActivityRewardStatType::CmdActivityRewardStatType_FCLOMIDJBKK => 5,
+            CmdActivityRewardStatType::CmdActivityRewardStatType_JDAPOKBLIOD => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,7 +109,7 @@ impl ::protobuf::EnumFull for CmdActivityRewardStatType {
 
 impl ::std::default::Default for CmdActivityRewardStatType {
     fn default() -> Self {
-        CmdActivityRewardStatType::NODIIEHBAPO_EBLCCNLKAFK
+        CmdActivityRewardStatType::CmdActivityRewardStatType_JDCCJOFIILH
     }
 }
 
@@ -108,11 +120,13 @@ impl CmdActivityRewardStatType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fCmdActivityRewardStatType.proto*\xb0\x01\n\x19CmdActivityRewardSta\
-    tType\x12\x1b\n\x17NODIIEHBAPO_EBLCCNLKAFK\x10\0\x12\x1c\n\x17NODIIEHBAP\
-    O_CMFIFICJPHJ\x10\x9bG\x12\x1c\n\x17NODIIEHBAPO_BKNGEJKMGCJ\x10\xa0G\x12\
-    \x1c\n\x17NODIIEHBAPO_AMHGMADNFOP\x10\x9eG\x12\x1c\n\x17NODIIEHBAPO_LEPO\
-    JOBPBEM\x10\x9aGb\x06proto3\
+    \n\x1fCmdActivityRewardStatType.proto*\xce\x02\n\x19CmdActivityRewardSta\
+    tType\x12)\n%CmdActivityRewardStatType_JDCCJOFIILH\x10\0\x12*\n%CmdActiv\
+    ityRewardStatType_EADFGPBHHOP\x10\x99G\x12*\n%CmdActivityRewardStatType_\
+    OEDINHGMHEA\x10\x9eG\x12*\n%CmdActivityRewardStatType_GANIBHMDJMF\x10\
+    \x97G\x12*\n%CmdActivityRewardStatType_IHCHMLKNIHH\x10\x98G\x12*\n%CmdAc\
+    tivityRewardStatType_FCLOMIDJBKK\x10\xa0G\x12*\n%CmdActivityRewardStatTy\
+    pe_JDAPOKBLIOD\x10\x9cGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

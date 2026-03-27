@@ -30,10 +30,10 @@ pub struct PlanetFesTakeQuestRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:PlanetFesTakeQuestRewardScRsp.quest_id)
     pub quest_id: u32,
-    // @@protoc_insertion_point(field:PlanetFesTakeQuestRewardScRsp.CEMAJKFIJKD)
-    pub CEMAJKFIJKD: ::protobuf::MessageField<super::IPCEBIAPMCJ::IPCEBIAPMCJ>,
     // @@protoc_insertion_point(field:PlanetFesTakeQuestRewardScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:PlanetFesTakeQuestRewardScRsp.IADEALCLBBE)
+    pub IADEALCLBBE: ::protobuf::MessageField<super::JAEMLMENOGG::JAEMLMENOGG>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesTakeQuestRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl PlanetFesTakeQuestRewardScRsp {
             |m: &PlanetFesTakeQuestRewardScRsp| { &m.quest_id },
             |m: &mut PlanetFesTakeQuestRewardScRsp| { &mut m.quest_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IPCEBIAPMCJ::IPCEBIAPMCJ>(
-            "CEMAJKFIJKD",
-            |m: &PlanetFesTakeQuestRewardScRsp| { &m.CEMAJKFIJKD },
-            |m: &mut PlanetFesTakeQuestRewardScRsp| { &mut m.CEMAJKFIJKD },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlanetFesTakeQuestRewardScRsp| { &m.retcode },
             |m: &mut PlanetFesTakeQuestRewardScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JAEMLMENOGG::JAEMLMENOGG>(
+            "IADEALCLBBE",
+            |m: &PlanetFesTakeQuestRewardScRsp| { &m.IADEALCLBBE },
+            |m: &mut PlanetFesTakeQuestRewardScRsp| { &mut m.IADEALCLBBE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesTakeQuestRewardScRsp>(
             "PlanetFesTakeQuestRewardScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                72 => {
                     self.quest_id = is.read_uint32()?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CEMAJKFIJKD)?;
-                },
-                80 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
+                },
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IADEALCLBBE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -108,14 +108,14 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.quest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.quest_id);
-        }
-        if let Some(v) = self.CEMAJKFIJKD.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(9, self.quest_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        }
+        if let Some(v) = self.IADEALCLBBE.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.quest_id != 0 {
-            os.write_uint32(12, self.quest_id)?;
-        }
-        if let Some(v) = self.CEMAJKFIJKD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            os.write_uint32(9, self.quest_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
+        }
+        if let Some(v) = self.IADEALCLBBE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for PlanetFesTakeQuestRewardScRsp {
 
     fn clear(&mut self) {
         self.quest_id = 0;
-        self.CEMAJKFIJKD.clear();
         self.retcode = 0;
+        self.IADEALCLBBE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesTakeQuestRewardScRsp {
         static instance: PlanetFesTakeQuestRewardScRsp = PlanetFesTakeQuestRewardScRsp {
             quest_id: 0,
-            CEMAJKFIJKD: ::protobuf::MessageField::none(),
             retcode: 0,
+            IADEALCLBBE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesTakeQuestRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#PlanetFesTakeQuestRewardScRsp.proto\x1a\x11IPCEBIAPMCJ.proto\"\x84\
-    \x01\n\x1dPlanetFesTakeQuestRewardScRsp\x12\x19\n\x08quest_id\x18\x0c\
-    \x20\x01(\rR\x07questId\x12.\n\x0bCEMAJKFIJKD\x18\x08\x20\x01(\x0b2\x0c.\
-    IPCEBIAPMCJR\x0bCEMAJKFIJKD\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07re\
-    tcodeb\x06proto3\
+    \n#PlanetFesTakeQuestRewardScRsp.proto\x1a\x11JAEMLMENOGG.proto\"\x84\
+    \x01\n\x1dPlanetFesTakeQuestRewardScRsp\x12\x19\n\x08quest_id\x18\t\x20\
+    \x01(\rR\x07questId\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bIADEALCLBBE\x18\x0e\x20\x01(\x0b2\x0c.JAEMLMENOGGR\x0bIADEALC\
+    LBBEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::IPCEBIAPMCJ::file_descriptor().clone());
+            deps.push(super::JAEMLMENOGG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesTakeQuestRewardScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

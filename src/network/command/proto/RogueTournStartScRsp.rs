@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournStartScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournStartScRsp.OGHLLDFMJFP)
-    pub OGHLLDFMJFP: ::protobuf::MessageField<super::KGPMOGCFOKJ::KGPMOGCFOKJ>,
     // @@protoc_insertion_point(field:RogueTournStartScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueTournStartScRsp.KNIPBHGCILA)
-    pub KNIPBHGCILA: ::protobuf::MessageField<super::HBLMIECMMIH::HBLMIECMMIH>,
-    // @@protoc_insertion_point(field:RogueTournStartScRsp.OINCIINBPNM)
-    pub OINCIINBPNM: u32,
+    // @@protoc_insertion_point(field:RogueTournStartScRsp.FNHOJKNAPFA)
+    pub FNHOJKNAPFA: ::protobuf::MessageField<super::LNLNIGAPDAA::LNLNIGAPDAA>,
+    // @@protoc_insertion_point(field:RogueTournStartScRsp.PBJLAINCIOC)
+    pub PBJLAINCIOC: ::protobuf::MessageField<super::FOBIOKDLMNC::FOBIOKDLMNC>,
+    // @@protoc_insertion_point(field:RogueTournStartScRsp.JKMAFPBCIKC)
+    pub JKMAFPBCIKC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournStartScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl RogueTournStartScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KGPMOGCFOKJ::KGPMOGCFOKJ>(
-            "OGHLLDFMJFP",
-            |m: &RogueTournStartScRsp| { &m.OGHLLDFMJFP },
-            |m: &mut RogueTournStartScRsp| { &mut m.OGHLLDFMJFP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournStartScRsp| { &m.retcode },
             |m: &mut RogueTournStartScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HBLMIECMMIH::HBLMIECMMIH>(
-            "KNIPBHGCILA",
-            |m: &RogueTournStartScRsp| { &m.KNIPBHGCILA },
-            |m: &mut RogueTournStartScRsp| { &mut m.KNIPBHGCILA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LNLNIGAPDAA::LNLNIGAPDAA>(
+            "FNHOJKNAPFA",
+            |m: &RogueTournStartScRsp| { &m.FNHOJKNAPFA },
+            |m: &mut RogueTournStartScRsp| { &mut m.FNHOJKNAPFA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FOBIOKDLMNC::FOBIOKDLMNC>(
+            "PBJLAINCIOC",
+            |m: &RogueTournStartScRsp| { &m.PBJLAINCIOC },
+            |m: &mut RogueTournStartScRsp| { &mut m.PBJLAINCIOC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OINCIINBPNM",
-            |m: &RogueTournStartScRsp| { &m.OINCIINBPNM },
-            |m: &mut RogueTournStartScRsp| { &mut m.OINCIINBPNM },
+            "JKMAFPBCIKC",
+            |m: &RogueTournStartScRsp| { &m.JKMAFPBCIKC },
+            |m: &mut RogueTournStartScRsp| { &mut m.JKMAFPBCIKC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournStartScRsp>(
             "RogueTournStartScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for RogueTournStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OGHLLDFMJFP)?;
-                },
-                80 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KNIPBHGCILA)?;
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FNHOJKNAPFA)?;
                 },
-                16 => {
-                    self.OINCIINBPNM = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBJLAINCIOC)?;
+                },
+                96 => {
+                    self.JKMAFPBCIKC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for RogueTournStartScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OGHLLDFMJFP.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if let Some(v) = self.KNIPBHGCILA.as_ref() {
+        if let Some(v) = self.FNHOJKNAPFA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.OINCIINBPNM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OINCIINBPNM);
+        if let Some(v) = self.PBJLAINCIOC.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.JKMAFPBCIKC != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.JKMAFPBCIKC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for RogueTournStartScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OGHLLDFMJFP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        if let Some(v) = self.KNIPBHGCILA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.FNHOJKNAPFA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
-        if self.OINCIINBPNM != 0 {
-            os.write_uint32(2, self.OINCIINBPNM)?;
+        if let Some(v) = self.PBJLAINCIOC.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if self.JKMAFPBCIKC != 0 {
+            os.write_uint32(12, self.JKMAFPBCIKC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for RogueTournStartScRsp {
     }
 
     fn clear(&mut self) {
-        self.OGHLLDFMJFP.clear();
         self.retcode = 0;
-        self.KNIPBHGCILA.clear();
-        self.OINCIINBPNM = 0;
+        self.FNHOJKNAPFA.clear();
+        self.PBJLAINCIOC.clear();
+        self.JKMAFPBCIKC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournStartScRsp {
         static instance: RogueTournStartScRsp = RogueTournStartScRsp {
-            OGHLLDFMJFP: ::protobuf::MessageField::none(),
             retcode: 0,
-            KNIPBHGCILA: ::protobuf::MessageField::none(),
-            OINCIINBPNM: 0,
+            FNHOJKNAPFA: ::protobuf::MessageField::none(),
+            PBJLAINCIOC: ::protobuf::MessageField::none(),
+            JKMAFPBCIKC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournStartScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRogueTournStartScRsp.proto\x1a\x11HBLMIECMMIH.proto\x1a\x11KGPMOGC\
-    FOKJ.proto\"\xb2\x01\n\x14RogueTournStartScRsp\x12.\n\x0bOGHLLDFMJFP\x18\
-    \x08\x20\x01(\x0b2\x0c.KGPMOGCFOKJR\x0bOGHLLDFMJFP\x12\x18\n\x07retcode\
-    \x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bKNIPBHGCILA\x18\x0e\x20\x01(\x0b\
-    2\x0c.HBLMIECMMIHR\x0bKNIPBHGCILA\x12\x20\n\x0bOINCIINBPNM\x18\x02\x20\
-    \x01(\rR\x0bOINCIINBPNMb\x06proto3\
+    \n\x1aRogueTournStartScRsp.proto\x1a\x11FOBIOKDLMNC.proto\x1a\x11LNLNIGA\
+    PDAA.proto\"\xb2\x01\n\x14RogueTournStartScRsp\x12\x18\n\x07retcode\x18\
+    \x08\x20\x01(\rR\x07retcode\x12.\n\x0bFNHOJKNAPFA\x18\x03\x20\x01(\x0b2\
+    \x0c.LNLNIGAPDAAR\x0bFNHOJKNAPFA\x12.\n\x0bPBJLAINCIOC\x18\x02\x20\x01(\
+    \x0b2\x0c.FOBIOKDLMNCR\x0bPBJLAINCIOC\x12\x20\n\x0bJKMAFPBCIKC\x18\x0c\
+    \x20\x01(\rR\x0bJKMAFPBCIKCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::HBLMIECMMIH::file_descriptor().clone());
-            deps.push(super::KGPMOGCFOKJ::file_descriptor().clone());
+            deps.push(super::FOBIOKDLMNC::file_descriptor().clone());
+            deps.push(super::LNLNIGAPDAA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournStartScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

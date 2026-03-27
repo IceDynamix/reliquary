@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdSummonActivityType)
 pub enum CmdSummonActivityType {
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_GKJBAODJMJG)
-    DFOLKOIOFCC_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_CCNMNMFMGBE)
-    DFOLKOIOFCC_CCNMNMFMGBE = 7565,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_AGIINLJLAFH)
-    DFOLKOIOFCC_AGIINLJLAFH = 7568,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_CBMNBKGOOBC)
-    DFOLKOIOFCC_CBMNBKGOOBC = 7569,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_LDMNBBJHDNC)
-    DFOLKOIOFCC_LDMNBBJHDNC = 7564,
-    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.DFOLKOIOFCC_MDGEEKJMNGH)
-    DFOLKOIOFCC_MDGEEKJMNGH = 7570,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdSummonActivityType_MNFEPONEDDJ)
+    CmdSummonActivityType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdSummonActivityType_PHBAMBKDJGN)
+    CmdSummonActivityType_PHBAMBKDJGN = 7563,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdSummonActivityType_KNJNGJCKDNB)
+    CmdSummonActivityType_KNJNGJCKDNB = 7566,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdSummonActivityType_EEFFLLGFAGB)
+    CmdSummonActivityType_EEFFLLGFAGB = 7562,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdSummonActivityType_PMFOLOILFJF)
+    CmdSummonActivityType_PMFOLOILFJF = 7561,
+    // @@protoc_insertion_point(enum_value:CmdSummonActivityType.CmdSummonActivityType_NLODBEFILJC)
+    CmdSummonActivityType_NLODBEFILJC = 7568,
 }
 
 impl ::protobuf::Enum for CmdSummonActivityType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdSummonActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdSummonActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_GKJBAODJMJG),
-            7565 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_CCNMNMFMGBE),
-            7568 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_AGIINLJLAFH),
-            7569 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_CBMNBKGOOBC),
-            7564 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_LDMNBBJHDNC),
-            7570 => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_MDGEEKJMNGH),
+            0 => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_MNFEPONEDDJ),
+            7563 => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_PHBAMBKDJGN),
+            7566 => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_KNJNGJCKDNB),
+            7562 => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_EEFFLLGFAGB),
+            7561 => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_PMFOLOILFJF),
+            7568 => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_NLODBEFILJC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdSummonActivityType> {
         match str {
-            "DFOLKOIOFCC_GKJBAODJMJG" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_GKJBAODJMJG),
-            "DFOLKOIOFCC_CCNMNMFMGBE" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_CCNMNMFMGBE),
-            "DFOLKOIOFCC_AGIINLJLAFH" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_AGIINLJLAFH),
-            "DFOLKOIOFCC_CBMNBKGOOBC" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_CBMNBKGOOBC),
-            "DFOLKOIOFCC_LDMNBBJHDNC" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_LDMNBBJHDNC),
-            "DFOLKOIOFCC_MDGEEKJMNGH" => ::std::option::Option::Some(CmdSummonActivityType::DFOLKOIOFCC_MDGEEKJMNGH),
+            "CmdSummonActivityType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_MNFEPONEDDJ),
+            "CmdSummonActivityType_PHBAMBKDJGN" => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_PHBAMBKDJGN),
+            "CmdSummonActivityType_KNJNGJCKDNB" => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_KNJNGJCKDNB),
+            "CmdSummonActivityType_EEFFLLGFAGB" => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_EEFFLLGFAGB),
+            "CmdSummonActivityType_PMFOLOILFJF" => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_PMFOLOILFJF),
+            "CmdSummonActivityType_NLODBEFILJC" => ::std::option::Option::Some(CmdSummonActivityType::CmdSummonActivityType_NLODBEFILJC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSummonActivityType] = &[
-        CmdSummonActivityType::DFOLKOIOFCC_GKJBAODJMJG,
-        CmdSummonActivityType::DFOLKOIOFCC_CCNMNMFMGBE,
-        CmdSummonActivityType::DFOLKOIOFCC_AGIINLJLAFH,
-        CmdSummonActivityType::DFOLKOIOFCC_CBMNBKGOOBC,
-        CmdSummonActivityType::DFOLKOIOFCC_LDMNBBJHDNC,
-        CmdSummonActivityType::DFOLKOIOFCC_MDGEEKJMNGH,
+        CmdSummonActivityType::CmdSummonActivityType_MNFEPONEDDJ,
+        CmdSummonActivityType::CmdSummonActivityType_PHBAMBKDJGN,
+        CmdSummonActivityType::CmdSummonActivityType_KNJNGJCKDNB,
+        CmdSummonActivityType::CmdSummonActivityType_EEFFLLGFAGB,
+        CmdSummonActivityType::CmdSummonActivityType_PMFOLOILFJF,
+        CmdSummonActivityType::CmdSummonActivityType_NLODBEFILJC,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdSummonActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdSummonActivityType::DFOLKOIOFCC_GKJBAODJMJG => 0,
-            CmdSummonActivityType::DFOLKOIOFCC_CCNMNMFMGBE => 1,
-            CmdSummonActivityType::DFOLKOIOFCC_AGIINLJLAFH => 2,
-            CmdSummonActivityType::DFOLKOIOFCC_CBMNBKGOOBC => 3,
-            CmdSummonActivityType::DFOLKOIOFCC_LDMNBBJHDNC => 4,
-            CmdSummonActivityType::DFOLKOIOFCC_MDGEEKJMNGH => 5,
+            CmdSummonActivityType::CmdSummonActivityType_MNFEPONEDDJ => 0,
+            CmdSummonActivityType::CmdSummonActivityType_PHBAMBKDJGN => 1,
+            CmdSummonActivityType::CmdSummonActivityType_KNJNGJCKDNB => 2,
+            CmdSummonActivityType::CmdSummonActivityType_EEFFLLGFAGB => 3,
+            CmdSummonActivityType::CmdSummonActivityType_PMFOLOILFJF => 4,
+            CmdSummonActivityType::CmdSummonActivityType_NLODBEFILJC => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdSummonActivityType {
 
 impl ::std::default::Default for CmdSummonActivityType {
     fn default() -> Self {
-        CmdSummonActivityType::DFOLKOIOFCC_GKJBAODJMJG
+        CmdSummonActivityType::CmdSummonActivityType_MNFEPONEDDJ
     }
 }
 
@@ -114,11 +114,12 @@ impl CmdSummonActivityType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bCmdSummonActivityType.proto*\xca\x01\n\x15CmdSummonActivityType\
-    \x12\x1b\n\x17DFOLKOIOFCC_GKJBAODJMJG\x10\0\x12\x1c\n\x17DFOLKOIOFCC_CCN\
-    MNMFMGBE\x10\x8d;\x12\x1c\n\x17DFOLKOIOFCC_AGIINLJLAFH\x10\x90;\x12\x1c\
-    \n\x17DFOLKOIOFCC_CBMNBKGOOBC\x10\x91;\x12\x1c\n\x17DFOLKOIOFCC_LDMNBBJH\
-    DNC\x10\x8c;\x12\x1c\n\x17DFOLKOIOFCC_MDGEEKJMNGH\x10\x92;b\x06proto3\
+    \n\x1bCmdSummonActivityType.proto*\x86\x02\n\x15CmdSummonActivityType\
+    \x12%\n!CmdSummonActivityType_MNFEPONEDDJ\x10\0\x12&\n!CmdSummonActivity\
+    Type_PHBAMBKDJGN\x10\x8b;\x12&\n!CmdSummonActivityType_KNJNGJCKDNB\x10\
+    \x8e;\x12&\n!CmdSummonActivityType_EEFFLLGFAGB\x10\x8a;\x12&\n!CmdSummon\
+    ActivityType_PMFOLOILFJF\x10\x89;\x12&\n!CmdSummonActivityType_NLODBEFIL\
+    JC\x10\x90;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

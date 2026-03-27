@@ -27,38 +27,38 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMultiplayerType)
 pub enum CmdMultiplayerType {
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_GKJBAODJMJG)
-    DIFPKKEBMPH_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_NLHONKBJOCM)
-    DIFPKKEBMPH_NLHONKBJOCM = 1028,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_MDHACFGKFHE)
-    DIFPKKEBMPH_MDHACFGKFHE = 1038,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_EOALPKJJBHN)
-    DIFPKKEBMPH_EOALPKJJBHN = 1062,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_FHJFKHHNEDL)
-    DIFPKKEBMPH_FHJFKHHNEDL = 1026,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_HOAIMFKDGCN)
-    DIFPKKEBMPH_HOAIMFKDGCN = 1047,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_MFFBFIINGHJ)
-    DIFPKKEBMPH_MFFBFIINGHJ = 1020,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_IBOJJEKCKBL)
-    DIFPKKEBMPH_IBOJJEKCKBL = 1069,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_GIKLGHBDOCF)
-    DIFPKKEBMPH_GIKLGHBDOCF = 1079,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_OBMHEFJAHDP)
-    DIFPKKEBMPH_OBMHEFJAHDP = 1037,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_KJADONCOHMK)
-    DIFPKKEBMPH_KJADONCOHMK = 1045,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_DDGJNCJNHHE)
-    DIFPKKEBMPH_DDGJNCJNHHE = 1055,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_FEABGDAAPAP)
-    DIFPKKEBMPH_FEABGDAAPAP = 1075,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_AEDBKFKBGFF)
-    DIFPKKEBMPH_AEDBKFKBGFF = 1066,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_PDIDIMAANLK)
-    DIFPKKEBMPH_PDIDIMAANLK = 1005,
-    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.DIFPKKEBMPH_MBLGEBIPGFL)
-    DIFPKKEBMPH_MBLGEBIPGFL = 1057,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_MNFEPONEDDJ)
+    CmdMultiplayerType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_CPHIOHJOAAF)
+    CmdMultiplayerType_CPHIOHJOAAF = 1083,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_NLHCBMOBJNM)
+    CmdMultiplayerType_NLHCBMOBJNM = 1084,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_PBJFKBLEKDG)
+    CmdMultiplayerType_PBJFKBLEKDG = 1024,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_AGBELPHFMPO)
+    CmdMultiplayerType_AGBELPHFMPO = 1035,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_EHCBMGBIFND)
+    CmdMultiplayerType_EHCBMGBIFND = 1019,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_HPJMOHAMKNF)
+    CmdMultiplayerType_HPJMOHAMKNF = 1046,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_ODKEDENCHIO)
+    CmdMultiplayerType_ODKEDENCHIO = 1069,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_DGAPEMOAKNM)
+    CmdMultiplayerType_DGAPEMOAKNM = 1062,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_CKEOHENLHPF)
+    CmdMultiplayerType_CKEOHENLHPF = 1040,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_JKBAHPIDIGN)
+    CmdMultiplayerType_JKBAHPIDIGN = 1081,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_DJALENJCJNF)
+    CmdMultiplayerType_DJALENJCJNF = 1013,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_FDGPPBFPPFG)
+    CmdMultiplayerType_FDGPPBFPPFG = 1004,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_MIEMLAFMGCH)
+    CmdMultiplayerType_MIEMLAFMGCH = 1023,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_KAOOGHNEKJG)
+    CmdMultiplayerType_KAOOGHNEKJG = 1057,
+    // @@protoc_insertion_point(enum_value:CmdMultiplayerType.CmdMultiplayerType_KCGJCFKDMND)
+    CmdMultiplayerType_KCGJCFKDMND = 1100,
 }
 
 impl ::protobuf::Enum for CmdMultiplayerType {
@@ -70,65 +70,65 @@ impl ::protobuf::Enum for CmdMultiplayerType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMultiplayerType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_GKJBAODJMJG),
-            1028 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_NLHONKBJOCM),
-            1038 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MDHACFGKFHE),
-            1062 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_EOALPKJJBHN),
-            1026 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_FHJFKHHNEDL),
-            1047 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_HOAIMFKDGCN),
-            1020 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MFFBFIINGHJ),
-            1069 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_IBOJJEKCKBL),
-            1079 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_GIKLGHBDOCF),
-            1037 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_OBMHEFJAHDP),
-            1045 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_KJADONCOHMK),
-            1055 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_DDGJNCJNHHE),
-            1075 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_FEABGDAAPAP),
-            1066 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_AEDBKFKBGFF),
-            1005 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_PDIDIMAANLK),
-            1057 => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MBLGEBIPGFL),
+            0 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_MNFEPONEDDJ),
+            1083 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_CPHIOHJOAAF),
+            1084 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_NLHCBMOBJNM),
+            1024 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_PBJFKBLEKDG),
+            1035 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_AGBELPHFMPO),
+            1019 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_EHCBMGBIFND),
+            1046 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_HPJMOHAMKNF),
+            1069 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_ODKEDENCHIO),
+            1062 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_DGAPEMOAKNM),
+            1040 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_CKEOHENLHPF),
+            1081 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_JKBAHPIDIGN),
+            1013 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_DJALENJCJNF),
+            1004 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_FDGPPBFPPFG),
+            1023 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_MIEMLAFMGCH),
+            1057 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_KAOOGHNEKJG),
+            1100 => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_KCGJCFKDMND),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMultiplayerType> {
         match str {
-            "DIFPKKEBMPH_GKJBAODJMJG" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_GKJBAODJMJG),
-            "DIFPKKEBMPH_NLHONKBJOCM" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_NLHONKBJOCM),
-            "DIFPKKEBMPH_MDHACFGKFHE" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MDHACFGKFHE),
-            "DIFPKKEBMPH_EOALPKJJBHN" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_EOALPKJJBHN),
-            "DIFPKKEBMPH_FHJFKHHNEDL" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_FHJFKHHNEDL),
-            "DIFPKKEBMPH_HOAIMFKDGCN" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_HOAIMFKDGCN),
-            "DIFPKKEBMPH_MFFBFIINGHJ" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MFFBFIINGHJ),
-            "DIFPKKEBMPH_IBOJJEKCKBL" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_IBOJJEKCKBL),
-            "DIFPKKEBMPH_GIKLGHBDOCF" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_GIKLGHBDOCF),
-            "DIFPKKEBMPH_OBMHEFJAHDP" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_OBMHEFJAHDP),
-            "DIFPKKEBMPH_KJADONCOHMK" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_KJADONCOHMK),
-            "DIFPKKEBMPH_DDGJNCJNHHE" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_DDGJNCJNHHE),
-            "DIFPKKEBMPH_FEABGDAAPAP" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_FEABGDAAPAP),
-            "DIFPKKEBMPH_AEDBKFKBGFF" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_AEDBKFKBGFF),
-            "DIFPKKEBMPH_PDIDIMAANLK" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_PDIDIMAANLK),
-            "DIFPKKEBMPH_MBLGEBIPGFL" => ::std::option::Option::Some(CmdMultiplayerType::DIFPKKEBMPH_MBLGEBIPGFL),
+            "CmdMultiplayerType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_MNFEPONEDDJ),
+            "CmdMultiplayerType_CPHIOHJOAAF" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_CPHIOHJOAAF),
+            "CmdMultiplayerType_NLHCBMOBJNM" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_NLHCBMOBJNM),
+            "CmdMultiplayerType_PBJFKBLEKDG" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_PBJFKBLEKDG),
+            "CmdMultiplayerType_AGBELPHFMPO" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_AGBELPHFMPO),
+            "CmdMultiplayerType_EHCBMGBIFND" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_EHCBMGBIFND),
+            "CmdMultiplayerType_HPJMOHAMKNF" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_HPJMOHAMKNF),
+            "CmdMultiplayerType_ODKEDENCHIO" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_ODKEDENCHIO),
+            "CmdMultiplayerType_DGAPEMOAKNM" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_DGAPEMOAKNM),
+            "CmdMultiplayerType_CKEOHENLHPF" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_CKEOHENLHPF),
+            "CmdMultiplayerType_JKBAHPIDIGN" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_JKBAHPIDIGN),
+            "CmdMultiplayerType_DJALENJCJNF" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_DJALENJCJNF),
+            "CmdMultiplayerType_FDGPPBFPPFG" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_FDGPPBFPPFG),
+            "CmdMultiplayerType_MIEMLAFMGCH" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_MIEMLAFMGCH),
+            "CmdMultiplayerType_KAOOGHNEKJG" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_KAOOGHNEKJG),
+            "CmdMultiplayerType_KCGJCFKDMND" => ::std::option::Option::Some(CmdMultiplayerType::CmdMultiplayerType_KCGJCFKDMND),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMultiplayerType] = &[
-        CmdMultiplayerType::DIFPKKEBMPH_GKJBAODJMJG,
-        CmdMultiplayerType::DIFPKKEBMPH_NLHONKBJOCM,
-        CmdMultiplayerType::DIFPKKEBMPH_MDHACFGKFHE,
-        CmdMultiplayerType::DIFPKKEBMPH_EOALPKJJBHN,
-        CmdMultiplayerType::DIFPKKEBMPH_FHJFKHHNEDL,
-        CmdMultiplayerType::DIFPKKEBMPH_HOAIMFKDGCN,
-        CmdMultiplayerType::DIFPKKEBMPH_MFFBFIINGHJ,
-        CmdMultiplayerType::DIFPKKEBMPH_IBOJJEKCKBL,
-        CmdMultiplayerType::DIFPKKEBMPH_GIKLGHBDOCF,
-        CmdMultiplayerType::DIFPKKEBMPH_OBMHEFJAHDP,
-        CmdMultiplayerType::DIFPKKEBMPH_KJADONCOHMK,
-        CmdMultiplayerType::DIFPKKEBMPH_DDGJNCJNHHE,
-        CmdMultiplayerType::DIFPKKEBMPH_FEABGDAAPAP,
-        CmdMultiplayerType::DIFPKKEBMPH_AEDBKFKBGFF,
-        CmdMultiplayerType::DIFPKKEBMPH_PDIDIMAANLK,
-        CmdMultiplayerType::DIFPKKEBMPH_MBLGEBIPGFL,
+        CmdMultiplayerType::CmdMultiplayerType_MNFEPONEDDJ,
+        CmdMultiplayerType::CmdMultiplayerType_CPHIOHJOAAF,
+        CmdMultiplayerType::CmdMultiplayerType_NLHCBMOBJNM,
+        CmdMultiplayerType::CmdMultiplayerType_PBJFKBLEKDG,
+        CmdMultiplayerType::CmdMultiplayerType_AGBELPHFMPO,
+        CmdMultiplayerType::CmdMultiplayerType_EHCBMGBIFND,
+        CmdMultiplayerType::CmdMultiplayerType_HPJMOHAMKNF,
+        CmdMultiplayerType::CmdMultiplayerType_ODKEDENCHIO,
+        CmdMultiplayerType::CmdMultiplayerType_DGAPEMOAKNM,
+        CmdMultiplayerType::CmdMultiplayerType_CKEOHENLHPF,
+        CmdMultiplayerType::CmdMultiplayerType_JKBAHPIDIGN,
+        CmdMultiplayerType::CmdMultiplayerType_DJALENJCJNF,
+        CmdMultiplayerType::CmdMultiplayerType_FDGPPBFPPFG,
+        CmdMultiplayerType::CmdMultiplayerType_MIEMLAFMGCH,
+        CmdMultiplayerType::CmdMultiplayerType_KAOOGHNEKJG,
+        CmdMultiplayerType::CmdMultiplayerType_KCGJCFKDMND,
     ];
 }
 
@@ -140,22 +140,22 @@ impl ::protobuf::EnumFull for CmdMultiplayerType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMultiplayerType::DIFPKKEBMPH_GKJBAODJMJG => 0,
-            CmdMultiplayerType::DIFPKKEBMPH_NLHONKBJOCM => 1,
-            CmdMultiplayerType::DIFPKKEBMPH_MDHACFGKFHE => 2,
-            CmdMultiplayerType::DIFPKKEBMPH_EOALPKJJBHN => 3,
-            CmdMultiplayerType::DIFPKKEBMPH_FHJFKHHNEDL => 4,
-            CmdMultiplayerType::DIFPKKEBMPH_HOAIMFKDGCN => 5,
-            CmdMultiplayerType::DIFPKKEBMPH_MFFBFIINGHJ => 6,
-            CmdMultiplayerType::DIFPKKEBMPH_IBOJJEKCKBL => 7,
-            CmdMultiplayerType::DIFPKKEBMPH_GIKLGHBDOCF => 8,
-            CmdMultiplayerType::DIFPKKEBMPH_OBMHEFJAHDP => 9,
-            CmdMultiplayerType::DIFPKKEBMPH_KJADONCOHMK => 10,
-            CmdMultiplayerType::DIFPKKEBMPH_DDGJNCJNHHE => 11,
-            CmdMultiplayerType::DIFPKKEBMPH_FEABGDAAPAP => 12,
-            CmdMultiplayerType::DIFPKKEBMPH_AEDBKFKBGFF => 13,
-            CmdMultiplayerType::DIFPKKEBMPH_PDIDIMAANLK => 14,
-            CmdMultiplayerType::DIFPKKEBMPH_MBLGEBIPGFL => 15,
+            CmdMultiplayerType::CmdMultiplayerType_MNFEPONEDDJ => 0,
+            CmdMultiplayerType::CmdMultiplayerType_CPHIOHJOAAF => 1,
+            CmdMultiplayerType::CmdMultiplayerType_NLHCBMOBJNM => 2,
+            CmdMultiplayerType::CmdMultiplayerType_PBJFKBLEKDG => 3,
+            CmdMultiplayerType::CmdMultiplayerType_AGBELPHFMPO => 4,
+            CmdMultiplayerType::CmdMultiplayerType_EHCBMGBIFND => 5,
+            CmdMultiplayerType::CmdMultiplayerType_HPJMOHAMKNF => 6,
+            CmdMultiplayerType::CmdMultiplayerType_ODKEDENCHIO => 7,
+            CmdMultiplayerType::CmdMultiplayerType_DGAPEMOAKNM => 8,
+            CmdMultiplayerType::CmdMultiplayerType_CKEOHENLHPF => 9,
+            CmdMultiplayerType::CmdMultiplayerType_JKBAHPIDIGN => 10,
+            CmdMultiplayerType::CmdMultiplayerType_DJALENJCJNF => 11,
+            CmdMultiplayerType::CmdMultiplayerType_FDGPPBFPPFG => 12,
+            CmdMultiplayerType::CmdMultiplayerType_MIEMLAFMGCH => 13,
+            CmdMultiplayerType::CmdMultiplayerType_KAOOGHNEKJG => 14,
+            CmdMultiplayerType::CmdMultiplayerType_KCGJCFKDMND => 15,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -163,7 +163,7 @@ impl ::protobuf::EnumFull for CmdMultiplayerType {
 
 impl ::std::default::Default for CmdMultiplayerType {
     fn default() -> Self {
-        CmdMultiplayerType::DIFPKKEBMPH_GKJBAODJMJG
+        CmdMultiplayerType::CmdMultiplayerType_MNFEPONEDDJ
     }
 }
 
@@ -174,18 +174,19 @@ impl CmdMultiplayerType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdMultiplayerType.proto*\xf3\x03\n\x12CmdMultiplayerType\x12\x1b\
-    \n\x17DIFPKKEBMPH_GKJBAODJMJG\x10\0\x12\x1c\n\x17DIFPKKEBMPH_NLHONKBJOCM\
-    \x10\x84\x08\x12\x1c\n\x17DIFPKKEBMPH_MDHACFGKFHE\x10\x8e\x08\x12\x1c\n\
-    \x17DIFPKKEBMPH_EOALPKJJBHN\x10\xa6\x08\x12\x1c\n\x17DIFPKKEBMPH_FHJFKHH\
-    NEDL\x10\x82\x08\x12\x1c\n\x17DIFPKKEBMPH_HOAIMFKDGCN\x10\x97\x08\x12\
-    \x1c\n\x17DIFPKKEBMPH_MFFBFIINGHJ\x10\xfc\x07\x12\x1c\n\x17DIFPKKEBMPH_I\
-    BOJJEKCKBL\x10\xad\x08\x12\x1c\n\x17DIFPKKEBMPH_GIKLGHBDOCF\x10\xb7\x08\
-    \x12\x1c\n\x17DIFPKKEBMPH_OBMHEFJAHDP\x10\x8d\x08\x12\x1c\n\x17DIFPKKEBM\
-    PH_KJADONCOHMK\x10\x95\x08\x12\x1c\n\x17DIFPKKEBMPH_DDGJNCJNHHE\x10\x9f\
-    \x08\x12\x1c\n\x17DIFPKKEBMPH_FEABGDAAPAP\x10\xb3\x08\x12\x1c\n\x17DIFPK\
-    KEBMPH_AEDBKFKBGFF\x10\xaa\x08\x12\x1c\n\x17DIFPKKEBMPH_PDIDIMAANLK\x10\
-    \xed\x07\x12\x1c\n\x17DIFPKKEBMPH_MBLGEBIPGFL\x10\xa1\x08b\x06proto3\
+    \n\x18CmdMultiplayerType.proto*\xe3\x04\n\x12CmdMultiplayerType\x12\"\n\
+    \x1eCmdMultiplayerType_MNFEPONEDDJ\x10\0\x12#\n\x1eCmdMultiplayerType_CP\
+    HIOHJOAAF\x10\xbb\x08\x12#\n\x1eCmdMultiplayerType_NLHCBMOBJNM\x10\xbc\
+    \x08\x12#\n\x1eCmdMultiplayerType_PBJFKBLEKDG\x10\x80\x08\x12#\n\x1eCmdM\
+    ultiplayerType_AGBELPHFMPO\x10\x8b\x08\x12#\n\x1eCmdMultiplayerType_EHCB\
+    MGBIFND\x10\xfb\x07\x12#\n\x1eCmdMultiplayerType_HPJMOHAMKNF\x10\x96\x08\
+    \x12#\n\x1eCmdMultiplayerType_ODKEDENCHIO\x10\xad\x08\x12#\n\x1eCmdMulti\
+    playerType_DGAPEMOAKNM\x10\xa6\x08\x12#\n\x1eCmdMultiplayerType_CKEOHENL\
+    HPF\x10\x90\x08\x12#\n\x1eCmdMultiplayerType_JKBAHPIDIGN\x10\xb9\x08\x12\
+    #\n\x1eCmdMultiplayerType_DJALENJCJNF\x10\xf5\x07\x12#\n\x1eCmdMultiplay\
+    erType_FDGPPBFPPFG\x10\xec\x07\x12#\n\x1eCmdMultiplayerType_MIEMLAFMGCH\
+    \x10\xff\x07\x12#\n\x1eCmdMultiplayerType_KAOOGHNEKJG\x10\xa1\x08\x12#\n\
+    \x1eCmdMultiplayerType_KCGJCFKDMND\x10\xcc\x08b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

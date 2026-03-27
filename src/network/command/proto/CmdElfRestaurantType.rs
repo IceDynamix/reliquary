@@ -27,74 +27,74 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdElfRestaurantType)
 pub enum CmdElfRestaurantType {
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_GKJBAODJMJG)
-    OKENNGAAHIE_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_BJBNKMGHALN)
-    OKENNGAAHIE_BJBNKMGHALN = 2561,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_GNOIGBNPGEB)
-    OKENNGAAHIE_GNOIGBNPGEB = 2595,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_ODFPBNGCEKG)
-    OKENNGAAHIE_ODFPBNGCEKG = 2598,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_FBBPNLPANPJ)
-    OKENNGAAHIE_FBBPNLPANPJ = 2579,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_AHOPCMIEAMA)
-    OKENNGAAHIE_AHOPCMIEAMA = 2572,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_DABIEKEACFO)
-    OKENNGAAHIE_DABIEKEACFO = 2570,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_CMHIECEPEGA)
-    OKENNGAAHIE_CMHIECEPEGA = 2553,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_KLECCNCPJMK)
-    OKENNGAAHIE_KLECCNCPJMK = 2593,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_CJKJBMOCKPH)
-    OKENNGAAHIE_CJKJBMOCKPH = 2573,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_IHOFAIDNIEB)
-    OKENNGAAHIE_IHOFAIDNIEB = 2558,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_EPAJKGINFDM)
-    OKENNGAAHIE_EPAJKGINFDM = 2585,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_JGGHMKBGEBC)
-    OKENNGAAHIE_JGGHMKBGEBC = 2576,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_GEPLOIFKJHB)
-    OKENNGAAHIE_GEPLOIFKJHB = 2599,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_PLNJHLAPNCD)
-    OKENNGAAHIE_PLNJHLAPNCD = 2556,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_FONGINIEBBP)
-    OKENNGAAHIE_FONGINIEBBP = 2588,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_LBKMPEPDIEN)
-    OKENNGAAHIE_LBKMPEPDIEN = 2596,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_PPGPKKBDNNO)
-    OKENNGAAHIE_PPGPKKBDNNO = 2587,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_GGEGCGNFDDG)
-    OKENNGAAHIE_GGEGCGNFDDG = 2590,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_KMAPJJJMBLE)
-    OKENNGAAHIE_KMAPJJJMBLE = 2597,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_JMNIDOAPMKL)
-    OKENNGAAHIE_JMNIDOAPMKL = 2574,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_KELHMMJFHKH)
-    OKENNGAAHIE_KELHMMJFHKH = 2583,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_EDCCECLPMBH)
-    OKENNGAAHIE_EDCCECLPMBH = 2557,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_EBKNANMMGAD)
-    OKENNGAAHIE_EBKNANMMGAD = 2571,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_DCDLEKNMILC)
-    OKENNGAAHIE_DCDLEKNMILC = 2551,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_APPALCDHJGL)
-    OKENNGAAHIE_APPALCDHJGL = 2565,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_IBNOLJMMHIA)
-    OKENNGAAHIE_IBNOLJMMHIA = 2581,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_LMNNBMONFPN)
-    OKENNGAAHIE_LMNNBMONFPN = 2600,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_AFHGGPAOLNJ)
-    OKENNGAAHIE_AFHGGPAOLNJ = 2569,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_PFPKFIAIJAD)
-    OKENNGAAHIE_PFPKFIAIJAD = 2586,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_OKKLDKNGGMH)
-    OKENNGAAHIE_OKKLDKNGGMH = 2552,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_NCAMIIMEJDD)
-    OKENNGAAHIE_NCAMIIMEJDD = 2578,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_BKMCKFOGPFJ)
-    OKENNGAAHIE_BKMCKFOGPFJ = 2555,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.OKENNGAAHIE_PPIAJBKNKOM)
-    OKENNGAAHIE_PPIAJBKNKOM = 2591,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_MNFEPONEDDJ)
+    CmdElfRestaurantType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_EPGLHHOHCKK)
+    CmdElfRestaurantType_EPGLHHOHCKK = 2574,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_MAHEBGDDOEP)
+    CmdElfRestaurantType_MAHEBGDDOEP = 2579,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_EPGJMJIBHAL)
+    CmdElfRestaurantType_EPGJMJIBHAL = 2582,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_MJGCBAGADIE)
+    CmdElfRestaurantType_MJGCBAGADIE = 2553,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_LEDJELDAJEG)
+    CmdElfRestaurantType_LEDJELDAJEG = 2554,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_IJKKOBIMHBO)
+    CmdElfRestaurantType_IJKKOBIMHBO = 2573,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_GOJDPGLKAIG)
+    CmdElfRestaurantType_GOJDPGLKAIG = 2584,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_LKAEEFOONBL)
+    CmdElfRestaurantType_LKAEEFOONBL = 2551,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_DIEGPDKDABM)
+    CmdElfRestaurantType_DIEGPDKDABM = 2559,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_ABFDDONOMFK)
+    CmdElfRestaurantType_ABFDDONOMFK = 2572,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_BNPEPMKIDMC)
+    CmdElfRestaurantType_BNPEPMKIDMC = 2564,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_OANMLILBEKB)
+    CmdElfRestaurantType_OANMLILBEKB = 2561,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_JHDHMLEOEHA)
+    CmdElfRestaurantType_JHDHMLEOEHA = 2592,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_NCFJLHELNIL)
+    CmdElfRestaurantType_NCFJLHELNIL = 2571,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_OABHJPEHHOM)
+    CmdElfRestaurantType_OABHJPEHHOM = 2591,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_GDHAEEENPAO)
+    CmdElfRestaurantType_GDHAEEENPAO = 2569,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_NHBNEOPAAGH)
+    CmdElfRestaurantType_NHBNEOPAAGH = 2588,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_OGOLPGHGIBC)
+    CmdElfRestaurantType_OGOLPGHGIBC = 2568,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_DDNPOAOGDBD)
+    CmdElfRestaurantType_DDNPOAOGDBD = 2599,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_HJONIPJKFAM)
+    CmdElfRestaurantType_HJONIPJKFAM = 2567,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_ADMEACGBJJC)
+    CmdElfRestaurantType_ADMEACGBJJC = 2570,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_IMOJIKDNAEM)
+    CmdElfRestaurantType_IMOJIKDNAEM = 2562,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_EIFBOADHPEH)
+    CmdElfRestaurantType_EIFBOADHPEH = 2581,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_LAIOEAPDNGP)
+    CmdElfRestaurantType_LAIOEAPDNGP = 2590,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_EEIKELKIHJL)
+    CmdElfRestaurantType_EEIKELKIHJL = 2558,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_ACLEBAEJHCG)
+    CmdElfRestaurantType_ACLEBAEJHCG = 2557,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_JNDFCIIHPLF)
+    CmdElfRestaurantType_JNDFCIIHPLF = 2578,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_DANPHDHEJJH)
+    CmdElfRestaurantType_DANPHDHEJJH = 2580,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_JIAIIEPNBPK)
+    CmdElfRestaurantType_JIAIIEPNBPK = 2552,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_NBDOIDJAJHD)
+    CmdElfRestaurantType_NBDOIDJAJHD = 2576,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_DPGJPGEDAIB)
+    CmdElfRestaurantType_DPGJPGEDAIB = 2596,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_GBGBGHOMDMG)
+    CmdElfRestaurantType_GBGBGHOMDMG = 2556,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantType_BPFKJPBDEOD)
+    CmdElfRestaurantType_BPFKJPBDEOD = 2566,
 }
 
 impl ::protobuf::Enum for CmdElfRestaurantType {
@@ -106,119 +106,119 @@ impl ::protobuf::Enum for CmdElfRestaurantType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdElfRestaurantType> {
         match value {
-            0 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_GKJBAODJMJG),
-            2561 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_BJBNKMGHALN),
-            2595 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_GNOIGBNPGEB),
-            2598 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_ODFPBNGCEKG),
-            2579 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_FBBPNLPANPJ),
-            2572 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_AHOPCMIEAMA),
-            2570 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_DABIEKEACFO),
-            2553 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_CMHIECEPEGA),
-            2593 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_KLECCNCPJMK),
-            2573 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_CJKJBMOCKPH),
-            2558 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_IHOFAIDNIEB),
-            2585 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_EPAJKGINFDM),
-            2576 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_JGGHMKBGEBC),
-            2599 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_GEPLOIFKJHB),
-            2556 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_PLNJHLAPNCD),
-            2588 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_FONGINIEBBP),
-            2596 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_LBKMPEPDIEN),
-            2587 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_PPGPKKBDNNO),
-            2590 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_GGEGCGNFDDG),
-            2597 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_KMAPJJJMBLE),
-            2574 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_JMNIDOAPMKL),
-            2583 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_KELHMMJFHKH),
-            2557 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_EDCCECLPMBH),
-            2571 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_EBKNANMMGAD),
-            2551 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_DCDLEKNMILC),
-            2565 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_APPALCDHJGL),
-            2581 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_IBNOLJMMHIA),
-            2600 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_LMNNBMONFPN),
-            2569 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_AFHGGPAOLNJ),
-            2586 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_PFPKFIAIJAD),
-            2552 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_OKKLDKNGGMH),
-            2578 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_NCAMIIMEJDD),
-            2555 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_BKMCKFOGPFJ),
-            2591 => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_PPIAJBKNKOM),
+            0 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_MNFEPONEDDJ),
+            2574 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_EPGLHHOHCKK),
+            2579 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_MAHEBGDDOEP),
+            2582 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_EPGJMJIBHAL),
+            2553 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_MJGCBAGADIE),
+            2554 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_LEDJELDAJEG),
+            2573 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_IJKKOBIMHBO),
+            2584 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_GOJDPGLKAIG),
+            2551 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_LKAEEFOONBL),
+            2559 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_DIEGPDKDABM),
+            2572 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_ABFDDONOMFK),
+            2564 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_BNPEPMKIDMC),
+            2561 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_OANMLILBEKB),
+            2592 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_JHDHMLEOEHA),
+            2571 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_NCFJLHELNIL),
+            2591 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_OABHJPEHHOM),
+            2569 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_GDHAEEENPAO),
+            2588 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_NHBNEOPAAGH),
+            2568 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_OGOLPGHGIBC),
+            2599 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_DDNPOAOGDBD),
+            2567 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_HJONIPJKFAM),
+            2570 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_ADMEACGBJJC),
+            2562 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_IMOJIKDNAEM),
+            2581 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_EIFBOADHPEH),
+            2590 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_LAIOEAPDNGP),
+            2558 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_EEIKELKIHJL),
+            2557 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_ACLEBAEJHCG),
+            2578 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_JNDFCIIHPLF),
+            2580 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_DANPHDHEJJH),
+            2552 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_JIAIIEPNBPK),
+            2576 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_NBDOIDJAJHD),
+            2596 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_DPGJPGEDAIB),
+            2556 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_GBGBGHOMDMG),
+            2566 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_BPFKJPBDEOD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdElfRestaurantType> {
         match str {
-            "OKENNGAAHIE_GKJBAODJMJG" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_GKJBAODJMJG),
-            "OKENNGAAHIE_BJBNKMGHALN" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_BJBNKMGHALN),
-            "OKENNGAAHIE_GNOIGBNPGEB" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_GNOIGBNPGEB),
-            "OKENNGAAHIE_ODFPBNGCEKG" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_ODFPBNGCEKG),
-            "OKENNGAAHIE_FBBPNLPANPJ" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_FBBPNLPANPJ),
-            "OKENNGAAHIE_AHOPCMIEAMA" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_AHOPCMIEAMA),
-            "OKENNGAAHIE_DABIEKEACFO" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_DABIEKEACFO),
-            "OKENNGAAHIE_CMHIECEPEGA" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_CMHIECEPEGA),
-            "OKENNGAAHIE_KLECCNCPJMK" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_KLECCNCPJMK),
-            "OKENNGAAHIE_CJKJBMOCKPH" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_CJKJBMOCKPH),
-            "OKENNGAAHIE_IHOFAIDNIEB" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_IHOFAIDNIEB),
-            "OKENNGAAHIE_EPAJKGINFDM" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_EPAJKGINFDM),
-            "OKENNGAAHIE_JGGHMKBGEBC" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_JGGHMKBGEBC),
-            "OKENNGAAHIE_GEPLOIFKJHB" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_GEPLOIFKJHB),
-            "OKENNGAAHIE_PLNJHLAPNCD" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_PLNJHLAPNCD),
-            "OKENNGAAHIE_FONGINIEBBP" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_FONGINIEBBP),
-            "OKENNGAAHIE_LBKMPEPDIEN" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_LBKMPEPDIEN),
-            "OKENNGAAHIE_PPGPKKBDNNO" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_PPGPKKBDNNO),
-            "OKENNGAAHIE_GGEGCGNFDDG" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_GGEGCGNFDDG),
-            "OKENNGAAHIE_KMAPJJJMBLE" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_KMAPJJJMBLE),
-            "OKENNGAAHIE_JMNIDOAPMKL" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_JMNIDOAPMKL),
-            "OKENNGAAHIE_KELHMMJFHKH" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_KELHMMJFHKH),
-            "OKENNGAAHIE_EDCCECLPMBH" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_EDCCECLPMBH),
-            "OKENNGAAHIE_EBKNANMMGAD" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_EBKNANMMGAD),
-            "OKENNGAAHIE_DCDLEKNMILC" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_DCDLEKNMILC),
-            "OKENNGAAHIE_APPALCDHJGL" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_APPALCDHJGL),
-            "OKENNGAAHIE_IBNOLJMMHIA" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_IBNOLJMMHIA),
-            "OKENNGAAHIE_LMNNBMONFPN" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_LMNNBMONFPN),
-            "OKENNGAAHIE_AFHGGPAOLNJ" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_AFHGGPAOLNJ),
-            "OKENNGAAHIE_PFPKFIAIJAD" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_PFPKFIAIJAD),
-            "OKENNGAAHIE_OKKLDKNGGMH" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_OKKLDKNGGMH),
-            "OKENNGAAHIE_NCAMIIMEJDD" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_NCAMIIMEJDD),
-            "OKENNGAAHIE_BKMCKFOGPFJ" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_BKMCKFOGPFJ),
-            "OKENNGAAHIE_PPIAJBKNKOM" => ::std::option::Option::Some(CmdElfRestaurantType::OKENNGAAHIE_PPIAJBKNKOM),
+            "CmdElfRestaurantType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_MNFEPONEDDJ),
+            "CmdElfRestaurantType_EPGLHHOHCKK" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_EPGLHHOHCKK),
+            "CmdElfRestaurantType_MAHEBGDDOEP" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_MAHEBGDDOEP),
+            "CmdElfRestaurantType_EPGJMJIBHAL" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_EPGJMJIBHAL),
+            "CmdElfRestaurantType_MJGCBAGADIE" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_MJGCBAGADIE),
+            "CmdElfRestaurantType_LEDJELDAJEG" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_LEDJELDAJEG),
+            "CmdElfRestaurantType_IJKKOBIMHBO" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_IJKKOBIMHBO),
+            "CmdElfRestaurantType_GOJDPGLKAIG" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_GOJDPGLKAIG),
+            "CmdElfRestaurantType_LKAEEFOONBL" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_LKAEEFOONBL),
+            "CmdElfRestaurantType_DIEGPDKDABM" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_DIEGPDKDABM),
+            "CmdElfRestaurantType_ABFDDONOMFK" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_ABFDDONOMFK),
+            "CmdElfRestaurantType_BNPEPMKIDMC" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_BNPEPMKIDMC),
+            "CmdElfRestaurantType_OANMLILBEKB" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_OANMLILBEKB),
+            "CmdElfRestaurantType_JHDHMLEOEHA" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_JHDHMLEOEHA),
+            "CmdElfRestaurantType_NCFJLHELNIL" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_NCFJLHELNIL),
+            "CmdElfRestaurantType_OABHJPEHHOM" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_OABHJPEHHOM),
+            "CmdElfRestaurantType_GDHAEEENPAO" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_GDHAEEENPAO),
+            "CmdElfRestaurantType_NHBNEOPAAGH" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_NHBNEOPAAGH),
+            "CmdElfRestaurantType_OGOLPGHGIBC" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_OGOLPGHGIBC),
+            "CmdElfRestaurantType_DDNPOAOGDBD" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_DDNPOAOGDBD),
+            "CmdElfRestaurantType_HJONIPJKFAM" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_HJONIPJKFAM),
+            "CmdElfRestaurantType_ADMEACGBJJC" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_ADMEACGBJJC),
+            "CmdElfRestaurantType_IMOJIKDNAEM" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_IMOJIKDNAEM),
+            "CmdElfRestaurantType_EIFBOADHPEH" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_EIFBOADHPEH),
+            "CmdElfRestaurantType_LAIOEAPDNGP" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_LAIOEAPDNGP),
+            "CmdElfRestaurantType_EEIKELKIHJL" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_EEIKELKIHJL),
+            "CmdElfRestaurantType_ACLEBAEJHCG" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_ACLEBAEJHCG),
+            "CmdElfRestaurantType_JNDFCIIHPLF" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_JNDFCIIHPLF),
+            "CmdElfRestaurantType_DANPHDHEJJH" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_DANPHDHEJJH),
+            "CmdElfRestaurantType_JIAIIEPNBPK" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_JIAIIEPNBPK),
+            "CmdElfRestaurantType_NBDOIDJAJHD" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_NBDOIDJAJHD),
+            "CmdElfRestaurantType_DPGJPGEDAIB" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_DPGJPGEDAIB),
+            "CmdElfRestaurantType_GBGBGHOMDMG" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_GBGBGHOMDMG),
+            "CmdElfRestaurantType_BPFKJPBDEOD" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantType_BPFKJPBDEOD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdElfRestaurantType] = &[
-        CmdElfRestaurantType::OKENNGAAHIE_GKJBAODJMJG,
-        CmdElfRestaurantType::OKENNGAAHIE_BJBNKMGHALN,
-        CmdElfRestaurantType::OKENNGAAHIE_GNOIGBNPGEB,
-        CmdElfRestaurantType::OKENNGAAHIE_ODFPBNGCEKG,
-        CmdElfRestaurantType::OKENNGAAHIE_FBBPNLPANPJ,
-        CmdElfRestaurantType::OKENNGAAHIE_AHOPCMIEAMA,
-        CmdElfRestaurantType::OKENNGAAHIE_DABIEKEACFO,
-        CmdElfRestaurantType::OKENNGAAHIE_CMHIECEPEGA,
-        CmdElfRestaurantType::OKENNGAAHIE_KLECCNCPJMK,
-        CmdElfRestaurantType::OKENNGAAHIE_CJKJBMOCKPH,
-        CmdElfRestaurantType::OKENNGAAHIE_IHOFAIDNIEB,
-        CmdElfRestaurantType::OKENNGAAHIE_EPAJKGINFDM,
-        CmdElfRestaurantType::OKENNGAAHIE_JGGHMKBGEBC,
-        CmdElfRestaurantType::OKENNGAAHIE_GEPLOIFKJHB,
-        CmdElfRestaurantType::OKENNGAAHIE_PLNJHLAPNCD,
-        CmdElfRestaurantType::OKENNGAAHIE_FONGINIEBBP,
-        CmdElfRestaurantType::OKENNGAAHIE_LBKMPEPDIEN,
-        CmdElfRestaurantType::OKENNGAAHIE_PPGPKKBDNNO,
-        CmdElfRestaurantType::OKENNGAAHIE_GGEGCGNFDDG,
-        CmdElfRestaurantType::OKENNGAAHIE_KMAPJJJMBLE,
-        CmdElfRestaurantType::OKENNGAAHIE_JMNIDOAPMKL,
-        CmdElfRestaurantType::OKENNGAAHIE_KELHMMJFHKH,
-        CmdElfRestaurantType::OKENNGAAHIE_EDCCECLPMBH,
-        CmdElfRestaurantType::OKENNGAAHIE_EBKNANMMGAD,
-        CmdElfRestaurantType::OKENNGAAHIE_DCDLEKNMILC,
-        CmdElfRestaurantType::OKENNGAAHIE_APPALCDHJGL,
-        CmdElfRestaurantType::OKENNGAAHIE_IBNOLJMMHIA,
-        CmdElfRestaurantType::OKENNGAAHIE_LMNNBMONFPN,
-        CmdElfRestaurantType::OKENNGAAHIE_AFHGGPAOLNJ,
-        CmdElfRestaurantType::OKENNGAAHIE_PFPKFIAIJAD,
-        CmdElfRestaurantType::OKENNGAAHIE_OKKLDKNGGMH,
-        CmdElfRestaurantType::OKENNGAAHIE_NCAMIIMEJDD,
-        CmdElfRestaurantType::OKENNGAAHIE_BKMCKFOGPFJ,
-        CmdElfRestaurantType::OKENNGAAHIE_PPIAJBKNKOM,
+        CmdElfRestaurantType::CmdElfRestaurantType_MNFEPONEDDJ,
+        CmdElfRestaurantType::CmdElfRestaurantType_EPGLHHOHCKK,
+        CmdElfRestaurantType::CmdElfRestaurantType_MAHEBGDDOEP,
+        CmdElfRestaurantType::CmdElfRestaurantType_EPGJMJIBHAL,
+        CmdElfRestaurantType::CmdElfRestaurantType_MJGCBAGADIE,
+        CmdElfRestaurantType::CmdElfRestaurantType_LEDJELDAJEG,
+        CmdElfRestaurantType::CmdElfRestaurantType_IJKKOBIMHBO,
+        CmdElfRestaurantType::CmdElfRestaurantType_GOJDPGLKAIG,
+        CmdElfRestaurantType::CmdElfRestaurantType_LKAEEFOONBL,
+        CmdElfRestaurantType::CmdElfRestaurantType_DIEGPDKDABM,
+        CmdElfRestaurantType::CmdElfRestaurantType_ABFDDONOMFK,
+        CmdElfRestaurantType::CmdElfRestaurantType_BNPEPMKIDMC,
+        CmdElfRestaurantType::CmdElfRestaurantType_OANMLILBEKB,
+        CmdElfRestaurantType::CmdElfRestaurantType_JHDHMLEOEHA,
+        CmdElfRestaurantType::CmdElfRestaurantType_NCFJLHELNIL,
+        CmdElfRestaurantType::CmdElfRestaurantType_OABHJPEHHOM,
+        CmdElfRestaurantType::CmdElfRestaurantType_GDHAEEENPAO,
+        CmdElfRestaurantType::CmdElfRestaurantType_NHBNEOPAAGH,
+        CmdElfRestaurantType::CmdElfRestaurantType_OGOLPGHGIBC,
+        CmdElfRestaurantType::CmdElfRestaurantType_DDNPOAOGDBD,
+        CmdElfRestaurantType::CmdElfRestaurantType_HJONIPJKFAM,
+        CmdElfRestaurantType::CmdElfRestaurantType_ADMEACGBJJC,
+        CmdElfRestaurantType::CmdElfRestaurantType_IMOJIKDNAEM,
+        CmdElfRestaurantType::CmdElfRestaurantType_EIFBOADHPEH,
+        CmdElfRestaurantType::CmdElfRestaurantType_LAIOEAPDNGP,
+        CmdElfRestaurantType::CmdElfRestaurantType_EEIKELKIHJL,
+        CmdElfRestaurantType::CmdElfRestaurantType_ACLEBAEJHCG,
+        CmdElfRestaurantType::CmdElfRestaurantType_JNDFCIIHPLF,
+        CmdElfRestaurantType::CmdElfRestaurantType_DANPHDHEJJH,
+        CmdElfRestaurantType::CmdElfRestaurantType_JIAIIEPNBPK,
+        CmdElfRestaurantType::CmdElfRestaurantType_NBDOIDJAJHD,
+        CmdElfRestaurantType::CmdElfRestaurantType_DPGJPGEDAIB,
+        CmdElfRestaurantType::CmdElfRestaurantType_GBGBGHOMDMG,
+        CmdElfRestaurantType::CmdElfRestaurantType_BPFKJPBDEOD,
     ];
 }
 
@@ -230,40 +230,40 @@ impl ::protobuf::EnumFull for CmdElfRestaurantType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdElfRestaurantType::OKENNGAAHIE_GKJBAODJMJG => 0,
-            CmdElfRestaurantType::OKENNGAAHIE_BJBNKMGHALN => 1,
-            CmdElfRestaurantType::OKENNGAAHIE_GNOIGBNPGEB => 2,
-            CmdElfRestaurantType::OKENNGAAHIE_ODFPBNGCEKG => 3,
-            CmdElfRestaurantType::OKENNGAAHIE_FBBPNLPANPJ => 4,
-            CmdElfRestaurantType::OKENNGAAHIE_AHOPCMIEAMA => 5,
-            CmdElfRestaurantType::OKENNGAAHIE_DABIEKEACFO => 6,
-            CmdElfRestaurantType::OKENNGAAHIE_CMHIECEPEGA => 7,
-            CmdElfRestaurantType::OKENNGAAHIE_KLECCNCPJMK => 8,
-            CmdElfRestaurantType::OKENNGAAHIE_CJKJBMOCKPH => 9,
-            CmdElfRestaurantType::OKENNGAAHIE_IHOFAIDNIEB => 10,
-            CmdElfRestaurantType::OKENNGAAHIE_EPAJKGINFDM => 11,
-            CmdElfRestaurantType::OKENNGAAHIE_JGGHMKBGEBC => 12,
-            CmdElfRestaurantType::OKENNGAAHIE_GEPLOIFKJHB => 13,
-            CmdElfRestaurantType::OKENNGAAHIE_PLNJHLAPNCD => 14,
-            CmdElfRestaurantType::OKENNGAAHIE_FONGINIEBBP => 15,
-            CmdElfRestaurantType::OKENNGAAHIE_LBKMPEPDIEN => 16,
-            CmdElfRestaurantType::OKENNGAAHIE_PPGPKKBDNNO => 17,
-            CmdElfRestaurantType::OKENNGAAHIE_GGEGCGNFDDG => 18,
-            CmdElfRestaurantType::OKENNGAAHIE_KMAPJJJMBLE => 19,
-            CmdElfRestaurantType::OKENNGAAHIE_JMNIDOAPMKL => 20,
-            CmdElfRestaurantType::OKENNGAAHIE_KELHMMJFHKH => 21,
-            CmdElfRestaurantType::OKENNGAAHIE_EDCCECLPMBH => 22,
-            CmdElfRestaurantType::OKENNGAAHIE_EBKNANMMGAD => 23,
-            CmdElfRestaurantType::OKENNGAAHIE_DCDLEKNMILC => 24,
-            CmdElfRestaurantType::OKENNGAAHIE_APPALCDHJGL => 25,
-            CmdElfRestaurantType::OKENNGAAHIE_IBNOLJMMHIA => 26,
-            CmdElfRestaurantType::OKENNGAAHIE_LMNNBMONFPN => 27,
-            CmdElfRestaurantType::OKENNGAAHIE_AFHGGPAOLNJ => 28,
-            CmdElfRestaurantType::OKENNGAAHIE_PFPKFIAIJAD => 29,
-            CmdElfRestaurantType::OKENNGAAHIE_OKKLDKNGGMH => 30,
-            CmdElfRestaurantType::OKENNGAAHIE_NCAMIIMEJDD => 31,
-            CmdElfRestaurantType::OKENNGAAHIE_BKMCKFOGPFJ => 32,
-            CmdElfRestaurantType::OKENNGAAHIE_PPIAJBKNKOM => 33,
+            CmdElfRestaurantType::CmdElfRestaurantType_MNFEPONEDDJ => 0,
+            CmdElfRestaurantType::CmdElfRestaurantType_EPGLHHOHCKK => 1,
+            CmdElfRestaurantType::CmdElfRestaurantType_MAHEBGDDOEP => 2,
+            CmdElfRestaurantType::CmdElfRestaurantType_EPGJMJIBHAL => 3,
+            CmdElfRestaurantType::CmdElfRestaurantType_MJGCBAGADIE => 4,
+            CmdElfRestaurantType::CmdElfRestaurantType_LEDJELDAJEG => 5,
+            CmdElfRestaurantType::CmdElfRestaurantType_IJKKOBIMHBO => 6,
+            CmdElfRestaurantType::CmdElfRestaurantType_GOJDPGLKAIG => 7,
+            CmdElfRestaurantType::CmdElfRestaurantType_LKAEEFOONBL => 8,
+            CmdElfRestaurantType::CmdElfRestaurantType_DIEGPDKDABM => 9,
+            CmdElfRestaurantType::CmdElfRestaurantType_ABFDDONOMFK => 10,
+            CmdElfRestaurantType::CmdElfRestaurantType_BNPEPMKIDMC => 11,
+            CmdElfRestaurantType::CmdElfRestaurantType_OANMLILBEKB => 12,
+            CmdElfRestaurantType::CmdElfRestaurantType_JHDHMLEOEHA => 13,
+            CmdElfRestaurantType::CmdElfRestaurantType_NCFJLHELNIL => 14,
+            CmdElfRestaurantType::CmdElfRestaurantType_OABHJPEHHOM => 15,
+            CmdElfRestaurantType::CmdElfRestaurantType_GDHAEEENPAO => 16,
+            CmdElfRestaurantType::CmdElfRestaurantType_NHBNEOPAAGH => 17,
+            CmdElfRestaurantType::CmdElfRestaurantType_OGOLPGHGIBC => 18,
+            CmdElfRestaurantType::CmdElfRestaurantType_DDNPOAOGDBD => 19,
+            CmdElfRestaurantType::CmdElfRestaurantType_HJONIPJKFAM => 20,
+            CmdElfRestaurantType::CmdElfRestaurantType_ADMEACGBJJC => 21,
+            CmdElfRestaurantType::CmdElfRestaurantType_IMOJIKDNAEM => 22,
+            CmdElfRestaurantType::CmdElfRestaurantType_EIFBOADHPEH => 23,
+            CmdElfRestaurantType::CmdElfRestaurantType_LAIOEAPDNGP => 24,
+            CmdElfRestaurantType::CmdElfRestaurantType_EEIKELKIHJL => 25,
+            CmdElfRestaurantType::CmdElfRestaurantType_ACLEBAEJHCG => 26,
+            CmdElfRestaurantType::CmdElfRestaurantType_JNDFCIIHPLF => 27,
+            CmdElfRestaurantType::CmdElfRestaurantType_DANPHDHEJJH => 28,
+            CmdElfRestaurantType::CmdElfRestaurantType_JIAIIEPNBPK => 29,
+            CmdElfRestaurantType::CmdElfRestaurantType_NBDOIDJAJHD => 30,
+            CmdElfRestaurantType::CmdElfRestaurantType_DPGJPGEDAIB => 31,
+            CmdElfRestaurantType::CmdElfRestaurantType_GBGBGHOMDMG => 32,
+            CmdElfRestaurantType::CmdElfRestaurantType_BPFKJPBDEOD => 33,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -271,7 +271,7 @@ impl ::protobuf::EnumFull for CmdElfRestaurantType {
 
 impl ::std::default::Default for CmdElfRestaurantType {
     fn default() -> Self {
-        CmdElfRestaurantType::OKENNGAAHIE_GKJBAODJMJG
+        CmdElfRestaurantType::CmdElfRestaurantType_MNFEPONEDDJ
     }
 }
 
@@ -282,31 +282,34 @@ impl CmdElfRestaurantType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aCmdElfRestaurantType.proto*\x91\x08\n\x14CmdElfRestaurantType\x12\
-    \x1b\n\x17OKENNGAAHIE_GKJBAODJMJG\x10\0\x12\x1c\n\x17OKENNGAAHIE_BJBNKMG\
-    HALN\x10\x81\x14\x12\x1c\n\x17OKENNGAAHIE_GNOIGBNPGEB\x10\xa3\x14\x12\
-    \x1c\n\x17OKENNGAAHIE_ODFPBNGCEKG\x10\xa6\x14\x12\x1c\n\x17OKENNGAAHIE_F\
-    BBPNLPANPJ\x10\x93\x14\x12\x1c\n\x17OKENNGAAHIE_AHOPCMIEAMA\x10\x8c\x14\
-    \x12\x1c\n\x17OKENNGAAHIE_DABIEKEACFO\x10\x8a\x14\x12\x1c\n\x17OKENNGAAH\
-    IE_CMHIECEPEGA\x10\xf9\x13\x12\x1c\n\x17OKENNGAAHIE_KLECCNCPJMK\x10\xa1\
-    \x14\x12\x1c\n\x17OKENNGAAHIE_CJKJBMOCKPH\x10\x8d\x14\x12\x1c\n\x17OKENN\
-    GAAHIE_IHOFAIDNIEB\x10\xfe\x13\x12\x1c\n\x17OKENNGAAHIE_EPAJKGINFDM\x10\
-    \x99\x14\x12\x1c\n\x17OKENNGAAHIE_JGGHMKBGEBC\x10\x90\x14\x12\x1c\n\x17O\
-    KENNGAAHIE_GEPLOIFKJHB\x10\xa7\x14\x12\x1c\n\x17OKENNGAAHIE_PLNJHLAPNCD\
-    \x10\xfc\x13\x12\x1c\n\x17OKENNGAAHIE_FONGINIEBBP\x10\x9c\x14\x12\x1c\n\
-    \x17OKENNGAAHIE_LBKMPEPDIEN\x10\xa4\x14\x12\x1c\n\x17OKENNGAAHIE_PPGPKKB\
-    DNNO\x10\x9b\x14\x12\x1c\n\x17OKENNGAAHIE_GGEGCGNFDDG\x10\x9e\x14\x12\
-    \x1c\n\x17OKENNGAAHIE_KMAPJJJMBLE\x10\xa5\x14\x12\x1c\n\x17OKENNGAAHIE_J\
-    MNIDOAPMKL\x10\x8e\x14\x12\x1c\n\x17OKENNGAAHIE_KELHMMJFHKH\x10\x97\x14\
-    \x12\x1c\n\x17OKENNGAAHIE_EDCCECLPMBH\x10\xfd\x13\x12\x1c\n\x17OKENNGAAH\
-    IE_EBKNANMMGAD\x10\x8b\x14\x12\x1c\n\x17OKENNGAAHIE_DCDLEKNMILC\x10\xf7\
-    \x13\x12\x1c\n\x17OKENNGAAHIE_APPALCDHJGL\x10\x85\x14\x12\x1c\n\x17OKENN\
-    GAAHIE_IBNOLJMMHIA\x10\x95\x14\x12\x1c\n\x17OKENNGAAHIE_LMNNBMONFPN\x10\
-    \xa8\x14\x12\x1c\n\x17OKENNGAAHIE_AFHGGPAOLNJ\x10\x89\x14\x12\x1c\n\x17O\
-    KENNGAAHIE_PFPKFIAIJAD\x10\x9a\x14\x12\x1c\n\x17OKENNGAAHIE_OKKLDKNGGMH\
-    \x10\xf8\x13\x12\x1c\n\x17OKENNGAAHIE_NCAMIIMEJDD\x10\x92\x14\x12\x1c\n\
-    \x17OKENNGAAHIE_BKMCKFOGPFJ\x10\xfb\x13\x12\x1c\n\x17OKENNGAAHIE_PPIAJBK\
-    NKOM\x10\x9f\x14b\x06proto3\
+    \n\x1aCmdElfRestaurantType.proto*\xc3\n\n\x14CmdElfRestaurantType\x12$\n\
+    \x20CmdElfRestaurantType_MNFEPONEDDJ\x10\0\x12%\n\x20CmdElfRestaurantTyp\
+    e_EPGLHHOHCKK\x10\x8e\x14\x12%\n\x20CmdElfRestaurantType_MAHEBGDDOEP\x10\
+    \x93\x14\x12%\n\x20CmdElfRestaurantType_EPGJMJIBHAL\x10\x96\x14\x12%\n\
+    \x20CmdElfRestaurantType_MJGCBAGADIE\x10\xf9\x13\x12%\n\x20CmdElfRestaur\
+    antType_LEDJELDAJEG\x10\xfa\x13\x12%\n\x20CmdElfRestaurantType_IJKKOBIMH\
+    BO\x10\x8d\x14\x12%\n\x20CmdElfRestaurantType_GOJDPGLKAIG\x10\x98\x14\
+    \x12%\n\x20CmdElfRestaurantType_LKAEEFOONBL\x10\xf7\x13\x12%\n\x20CmdElf\
+    RestaurantType_DIEGPDKDABM\x10\xff\x13\x12%\n\x20CmdElfRestaurantType_AB\
+    FDDONOMFK\x10\x8c\x14\x12%\n\x20CmdElfRestaurantType_BNPEPMKIDMC\x10\x84\
+    \x14\x12%\n\x20CmdElfRestaurantType_OANMLILBEKB\x10\x81\x14\x12%\n\x20Cm\
+    dElfRestaurantType_JHDHMLEOEHA\x10\xa0\x14\x12%\n\x20CmdElfRestaurantTyp\
+    e_NCFJLHELNIL\x10\x8b\x14\x12%\n\x20CmdElfRestaurantType_OABHJPEHHOM\x10\
+    \x9f\x14\x12%\n\x20CmdElfRestaurantType_GDHAEEENPAO\x10\x89\x14\x12%\n\
+    \x20CmdElfRestaurantType_NHBNEOPAAGH\x10\x9c\x14\x12%\n\x20CmdElfRestaur\
+    antType_OGOLPGHGIBC\x10\x88\x14\x12%\n\x20CmdElfRestaurantType_DDNPOAOGD\
+    BD\x10\xa7\x14\x12%\n\x20CmdElfRestaurantType_HJONIPJKFAM\x10\x87\x14\
+    \x12%\n\x20CmdElfRestaurantType_ADMEACGBJJC\x10\x8a\x14\x12%\n\x20CmdElf\
+    RestaurantType_IMOJIKDNAEM\x10\x82\x14\x12%\n\x20CmdElfRestaurantType_EI\
+    FBOADHPEH\x10\x95\x14\x12%\n\x20CmdElfRestaurantType_LAIOEAPDNGP\x10\x9e\
+    \x14\x12%\n\x20CmdElfRestaurantType_EEIKELKIHJL\x10\xfe\x13\x12%\n\x20Cm\
+    dElfRestaurantType_ACLEBAEJHCG\x10\xfd\x13\x12%\n\x20CmdElfRestaurantTyp\
+    e_JNDFCIIHPLF\x10\x92\x14\x12%\n\x20CmdElfRestaurantType_DANPHDHEJJH\x10\
+    \x94\x14\x12%\n\x20CmdElfRestaurantType_JIAIIEPNBPK\x10\xf8\x13\x12%\n\
+    \x20CmdElfRestaurantType_NBDOIDJAJHD\x10\x90\x14\x12%\n\x20CmdElfRestaur\
+    antType_DPGJPGEDAIB\x10\xa4\x14\x12%\n\x20CmdElfRestaurantType_GBGBGHOMD\
+    MG\x10\xfc\x13\x12%\n\x20CmdElfRestaurantType_BPFKJPBDEOD\x10\x86\x14b\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

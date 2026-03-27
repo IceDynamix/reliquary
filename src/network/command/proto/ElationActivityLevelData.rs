@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ElationActivityLevelData {
     // message fields
-    // @@protoc_insertion_point(field:ElationActivityLevelData.AAMONJJGDMK)
-    pub AAMONJJGDMK: u32,
     // @@protoc_insertion_point(field:ElationActivityLevelData.level_id)
     pub level_id: u32,
-    // @@protoc_insertion_point(field:ElationActivityLevelData.LHDBBEIMEHF)
-    pub LHDBBEIMEHF: u32,
-    // @@protoc_insertion_point(field:ElationActivityLevelData.LOLDGODLBNH)
-    pub LOLDGODLBNH: u32,
     // @@protoc_insertion_point(field:ElationActivityLevelData.is_perfect)
     pub is_perfect: bool,
+    // @@protoc_insertion_point(field:ElationActivityLevelData.JGNMEGLIGMD)
+    pub JGNMEGLIGMD: u32,
+    // @@protoc_insertion_point(field:ElationActivityLevelData.DKGEPDLLBHM)
+    pub DKGEPDLLBHM: u32,
+    // @@protoc_insertion_point(field:ElationActivityLevelData.IHBIHEIFMOJ)
+    pub IHBIHEIFMOJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ElationActivityLevelData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl ElationActivityLevelData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AAMONJJGDMK",
-            |m: &ElationActivityLevelData| { &m.AAMONJJGDMK },
-            |m: &mut ElationActivityLevelData| { &mut m.AAMONJJGDMK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
             |m: &ElationActivityLevelData| { &m.level_id },
             |m: &mut ElationActivityLevelData| { &mut m.level_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHDBBEIMEHF",
-            |m: &ElationActivityLevelData| { &m.LHDBBEIMEHF },
-            |m: &mut ElationActivityLevelData| { &mut m.LHDBBEIMEHF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LOLDGODLBNH",
-            |m: &ElationActivityLevelData| { &m.LOLDGODLBNH },
-            |m: &mut ElationActivityLevelData| { &mut m.LOLDGODLBNH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_perfect",
             |m: &ElationActivityLevelData| { &m.is_perfect },
             |m: &mut ElationActivityLevelData| { &mut m.is_perfect },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JGNMEGLIGMD",
+            |m: &ElationActivityLevelData| { &m.JGNMEGLIGMD },
+            |m: &mut ElationActivityLevelData| { &mut m.JGNMEGLIGMD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DKGEPDLLBHM",
+            |m: &ElationActivityLevelData| { &m.DKGEPDLLBHM },
+            |m: &mut ElationActivityLevelData| { &mut m.DKGEPDLLBHM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IHBIHEIFMOJ",
+            |m: &ElationActivityLevelData| { &m.IHBIHEIFMOJ },
+            |m: &mut ElationActivityLevelData| { &mut m.IHBIHEIFMOJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ElationActivityLevelData>(
             "ElationActivityLevelData",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ElationActivityLevelData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.AAMONJJGDMK = is.read_uint32()?;
-                },
-                96 => {
+                8 => {
                     self.level_id = is.read_uint32()?;
                 },
-                8 => {
-                    self.LHDBBEIMEHF = is.read_uint32()?;
-                },
-                88 => {
-                    self.LOLDGODLBNH = is.read_uint32()?;
-                },
-                16 => {
+                56 => {
                     self.is_perfect = is.read_bool()?;
+                },
+                40 => {
+                    self.JGNMEGLIGMD = is.read_uint32()?;
+                },
+                48 => {
+                    self.DKGEPDLLBHM = is.read_uint32()?;
+                },
+                96 => {
+                    self.IHBIHEIFMOJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for ElationActivityLevelData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AAMONJJGDMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.AAMONJJGDMK);
-        }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.level_id);
-        }
-        if self.LHDBBEIMEHF != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.LHDBBEIMEHF);
-        }
-        if self.LOLDGODLBNH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LOLDGODLBNH);
+            my_size += ::protobuf::rt::uint32_size(1, self.level_id);
         }
         if self.is_perfect != false {
             my_size += 1 + 1;
+        }
+        if self.JGNMEGLIGMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JGNMEGLIGMD);
+        }
+        if self.DKGEPDLLBHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.DKGEPDLLBHM);
+        }
+        if self.IHBIHEIFMOJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.IHBIHEIFMOJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for ElationActivityLevelData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AAMONJJGDMK != 0 {
-            os.write_uint32(10, self.AAMONJJGDMK)?;
-        }
         if self.level_id != 0 {
-            os.write_uint32(12, self.level_id)?;
-        }
-        if self.LHDBBEIMEHF != 0 {
-            os.write_uint32(1, self.LHDBBEIMEHF)?;
-        }
-        if self.LOLDGODLBNH != 0 {
-            os.write_uint32(11, self.LOLDGODLBNH)?;
+            os.write_uint32(1, self.level_id)?;
         }
         if self.is_perfect != false {
-            os.write_bool(2, self.is_perfect)?;
+            os.write_bool(7, self.is_perfect)?;
+        }
+        if self.JGNMEGLIGMD != 0 {
+            os.write_uint32(5, self.JGNMEGLIGMD)?;
+        }
+        if self.DKGEPDLLBHM != 0 {
+            os.write_uint32(6, self.DKGEPDLLBHM)?;
+        }
+        if self.IHBIHEIFMOJ != 0 {
+            os.write_uint32(12, self.IHBIHEIFMOJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for ElationActivityLevelData {
     }
 
     fn clear(&mut self) {
-        self.AAMONJJGDMK = 0;
         self.level_id = 0;
-        self.LHDBBEIMEHF = 0;
-        self.LOLDGODLBNH = 0;
         self.is_perfect = false;
+        self.JGNMEGLIGMD = 0;
+        self.DKGEPDLLBHM = 0;
+        self.IHBIHEIFMOJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ElationActivityLevelData {
         static instance: ElationActivityLevelData = ElationActivityLevelData {
-            AAMONJJGDMK: 0,
             level_id: 0,
-            LHDBBEIMEHF: 0,
-            LOLDGODLBNH: 0,
             is_perfect: false,
+            JGNMEGLIGMD: 0,
+            DKGEPDLLBHM: 0,
+            IHBIHEIFMOJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for ElationActivityLevelData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eElationActivityLevelData.proto\"\xba\x01\n\x18ElationActivityLevel\
-    Data\x12\x20\n\x0bAAMONJJGDMK\x18\n\x20\x01(\rR\x0bAAMONJJGDMK\x12\x19\n\
-    \x08level_id\x18\x0c\x20\x01(\rR\x07levelId\x12\x20\n\x0bLHDBBEIMEHF\x18\
-    \x01\x20\x01(\rR\x0bLHDBBEIMEHF\x12\x20\n\x0bLOLDGODLBNH\x18\x0b\x20\x01\
-    (\rR\x0bLOLDGODLBNH\x12\x1d\n\nis_perfect\x18\x02\x20\x01(\x08R\tisPerfe\
-    ctb\x06proto3\
+    Data\x12\x19\n\x08level_id\x18\x01\x20\x01(\rR\x07levelId\x12\x1d\n\nis_\
+    perfect\x18\x07\x20\x01(\x08R\tisPerfect\x12\x20\n\x0bJGNMEGLIGMD\x18\
+    \x05\x20\x01(\rR\x0bJGNMEGLIGMD\x12\x20\n\x0bDKGEPDLLBHM\x18\x06\x20\x01\
+    (\rR\x0bDKGEPDLLBHM\x12\x20\n\x0bIHBIHEIFMOJ\x18\x0c\x20\x01(\rR\x0bIHBI\
+    HEIFMOJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

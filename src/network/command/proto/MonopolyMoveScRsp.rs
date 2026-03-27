@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyMoveScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyMoveScRsp.CEMAPMLEENB)
-    pub CEMAPMLEENB: ::std::vec::Vec<super::LJOCGHFNAPL::LJOCGHFNAPL>,
-    // @@protoc_insertion_point(field:MonopolyMoveScRsp.rogue_map)
-    pub rogue_map: ::protobuf::MessageField<super::JDLGKBIMPNB::JDLGKBIMPNB>,
+    // @@protoc_insertion_point(field:MonopolyMoveScRsp.MBEKFCOINCN)
+    pub MBEKFCOINCN: ::std::vec::Vec<super::NEMIGPNMNKH::NEMIGPNMNKH>,
     // @@protoc_insertion_point(field:MonopolyMoveScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:MonopolyMoveScRsp.rogue_map)
+    pub rogue_map: ::protobuf::MessageField<super::ICGMOPBBCCN::ICGMOPBBCCN>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyMoveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl MonopolyMoveScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CEMAPMLEENB",
-            |m: &MonopolyMoveScRsp| { &m.CEMAPMLEENB },
-            |m: &mut MonopolyMoveScRsp| { &mut m.CEMAPMLEENB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JDLGKBIMPNB::JDLGKBIMPNB>(
-            "rogue_map",
-            |m: &MonopolyMoveScRsp| { &m.rogue_map },
-            |m: &mut MonopolyMoveScRsp| { &mut m.rogue_map },
+            "MBEKFCOINCN",
+            |m: &MonopolyMoveScRsp| { &m.MBEKFCOINCN },
+            |m: &mut MonopolyMoveScRsp| { &mut m.MBEKFCOINCN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MonopolyMoveScRsp| { &m.retcode },
             |m: &mut MonopolyMoveScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ICGMOPBBCCN::ICGMOPBBCCN>(
+            "rogue_map",
+            |m: &MonopolyMoveScRsp| { &m.rogue_map },
+            |m: &mut MonopolyMoveScRsp| { &mut m.rogue_map },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyMoveScRsp>(
             "MonopolyMoveScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.CEMAPMLEENB.push(is.read_message()?);
+                74 => {
+                    self.MBEKFCOINCN.push(is.read_message()?);
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
-                },
-                104 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_map)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,16 +107,16 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CEMAPMLEENB {
+        for value in &self.MBEKFCOINCN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
         if let Some(v) = self.rogue_map.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CEMAPMLEENB {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.MBEKFCOINCN {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if let Some(v) = self.rogue_map.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
+        }
+        if let Some(v) = self.rogue_map.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for MonopolyMoveScRsp {
     }
 
     fn clear(&mut self) {
-        self.CEMAPMLEENB.clear();
-        self.rogue_map.clear();
+        self.MBEKFCOINCN.clear();
         self.retcode = 0;
+        self.rogue_map.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyMoveScRsp {
         static instance: MonopolyMoveScRsp = MonopolyMoveScRsp {
-            CEMAPMLEENB: ::std::vec::Vec::new(),
-            rogue_map: ::protobuf::MessageField::none(),
+            MBEKFCOINCN: ::std::vec::Vec::new(),
             retcode: 0,
+            rogue_map: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyMoveScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17MonopolyMoveScRsp.proto\x1a\x11JDLGKBIMPNB.proto\x1a\x11LJOCGHFNAP\
-    L.proto\"\x88\x01\n\x11MonopolyMoveScRsp\x12.\n\x0bCEMAPMLEENB\x18\x04\
-    \x20\x03(\x0b2\x0c.LJOCGHFNAPLR\x0bCEMAPMLEENB\x12)\n\trogue_map\x18\x05\
-    \x20\x01(\x0b2\x0c.JDLGKBIMPNBR\x08rogueMap\x12\x18\n\x07retcode\x18\r\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x17MonopolyMoveScRsp.proto\x1a\x11ICGMOPBBCCN.proto\x1a\x11NEMIGPNMNK\
+    H.proto\"\x88\x01\n\x11MonopolyMoveScRsp\x12.\n\x0bMBEKFCOINCN\x18\t\x20\
+    \x03(\x0b2\x0c.NEMIGPNMNKHR\x0bMBEKFCOINCN\x12\x18\n\x07retcode\x18\x08\
+    \x20\x01(\rR\x07retcode\x12)\n\trogue_map\x18\x03\x20\x01(\x0b2\x0c.ICGM\
+    OPBBCCNR\x08rogueMapb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::JDLGKBIMPNB::file_descriptor().clone());
-            deps.push(super::LJOCGHFNAPL::file_descriptor().clone());
+            deps.push(super::ICGMOPBBCCN::file_descriptor().clone());
+            deps.push(super::NEMIGPNMNKH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MonopolyMoveScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

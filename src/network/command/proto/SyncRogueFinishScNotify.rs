@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct SyncRogueFinishScNotify {
     // message fields
     // @@protoc_insertion_point(field:SyncRogueFinishScNotify.finish_info)
-    pub finish_info: ::protobuf::MessageField<super::EKPBBBMPDDE::EKPBBBMPDDE>,
+    pub finish_info: ::protobuf::MessageField<super::LCFACEGIJMA::LCFACEGIJMA>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueFinishScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,7 +49,7 @@ impl SyncRogueFinishScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EKPBBBMPDDE::EKPBBBMPDDE>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LCFACEGIJMA::LCFACEGIJMA>(
             "finish_info",
             |m: &SyncRogueFinishScNotify| { &m.finish_info },
             |m: &mut SyncRogueFinishScNotify| { &mut m.finish_info },
@@ -72,7 +72,7 @@ impl ::protobuf::Message for SyncRogueFinishScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.finish_info)?;
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for SyncRogueFinishScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.finish_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueFinishScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSyncRogueFinishScNotify.proto\x1a\x11EKPBBBMPDDE.proto\"H\n\x17Syn\
-    cRogueFinishScNotify\x12-\n\x0bfinish_info\x18\t\x20\x01(\x0b2\x0c.EKPBB\
-    BMPDDER\nfinishInfob\x06proto3\
+    \n\x1dSyncRogueFinishScNotify.proto\x1a\x11LCFACEGIJMA.proto\"H\n\x17Syn\
+    cRogueFinishScNotify\x12-\n\x0bfinish_info\x18\x0c\x20\x01(\x0b2\x0c.LCF\
+    ACEGIJMAR\nfinishInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EKPBBBMPDDE::file_descriptor().clone());
+            deps.push(super::LCFACEGIJMA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncRogueFinishScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

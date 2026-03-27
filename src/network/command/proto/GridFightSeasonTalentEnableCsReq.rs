@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightSeasonTalentEnableCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GridFightSeasonTalentEnableCsReq.DNBJDLGIABH)
-    pub DNBJDLGIABH: u32,
+    // @@protoc_insertion_point(field:GridFightSeasonTalentEnableCsReq.EHAJMKFJCCM)
+    pub EHAJMKFJCCM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightSeasonTalentEnableCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GridFightSeasonTalentEnableCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNBJDLGIABH",
-            |m: &GridFightSeasonTalentEnableCsReq| { &m.DNBJDLGIABH },
-            |m: &mut GridFightSeasonTalentEnableCsReq| { &mut m.DNBJDLGIABH },
+            "EHAJMKFJCCM",
+            |m: &GridFightSeasonTalentEnableCsReq| { &m.EHAJMKFJCCM },
+            |m: &mut GridFightSeasonTalentEnableCsReq| { &mut m.EHAJMKFJCCM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightSeasonTalentEnableCsReq>(
             "GridFightSeasonTalentEnableCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.DNBJDLGIABH = is.read_uint32()?;
+                80 => {
+                    self.EHAJMKFJCCM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNBJDLGIABH != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.DNBJDLGIABH);
+        if self.EHAJMKFJCCM != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EHAJMKFJCCM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNBJDLGIABH != 0 {
-            os.write_uint32(7, self.DNBJDLGIABH)?;
+        if self.EHAJMKFJCCM != 0 {
+            os.write_uint32(10, self.EHAJMKFJCCM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GridFightSeasonTalentEnableCsReq {
     }
 
     fn clear(&mut self) {
-        self.DNBJDLGIABH = 0;
+        self.EHAJMKFJCCM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightSeasonTalentEnableCsReq {
         static instance: GridFightSeasonTalentEnableCsReq = GridFightSeasonTalentEnableCsReq {
-            DNBJDLGIABH: 0,
+            EHAJMKFJCCM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSeasonTalentEnableCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&GridFightSeasonTalentEnableCsReq.proto\"D\n\x20GridFightSeasonTalentE\
-    nableCsReq\x12\x20\n\x0bDNBJDLGIABH\x18\x07\x20\x01(\rR\x0bDNBJDLGIABHb\
+    nableCsReq\x12\x20\n\x0bEHAJMKFJCCM\x18\n\x20\x01(\rR\x0bEHAJMKFJCCMb\
     \x06proto3\
 ";
 

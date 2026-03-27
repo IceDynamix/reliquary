@@ -27,184 +27,186 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FeatureSwitchType)
 pub enum FeatureSwitchType {
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_HFANBFDHIGC)
-    LJLMPHMOOME_HFANBFDHIGC = 0,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_HIHJDBCJGGI)
-    LJLMPHMOOME_HIHJDBCJGGI = 1,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_MACNFJBLEEA)
-    LJLMPHMOOME_MACNFJBLEEA = 2,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_JFMBBNKABIE)
-    LJLMPHMOOME_JFMBBNKABIE = 3,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_LEPEEOKIDCN)
-    LJLMPHMOOME_LEPEEOKIDCN = 4,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_HCKCMOCLFOP)
-    LJLMPHMOOME_HCKCMOCLFOP = 5,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_JPCHICONJDC)
-    LJLMPHMOOME_JPCHICONJDC = 6,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_PJAMCDJBOKB)
-    LJLMPHMOOME_PJAMCDJBOKB = 7,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_CPPAFNJIOFI)
-    LJLMPHMOOME_CPPAFNJIOFI = 8,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_PHDMBKOFBEL)
-    LJLMPHMOOME_PHDMBKOFBEL = 9,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_LKKFHIDLHPH)
-    LJLMPHMOOME_LKKFHIDLHPH = 10,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_CMIGKLDOGCG)
-    LJLMPHMOOME_CMIGKLDOGCG = 11,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_HOFAIIBHIBL)
-    LJLMPHMOOME_HOFAIIBHIBL = 12,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_KNGFLHDPPII)
-    LJLMPHMOOME_KNGFLHDPPII = 13,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_KLLNLMGOONA)
-    LJLMPHMOOME_KLLNLMGOONA = 14,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_BHFBCMLKOAM)
-    LJLMPHMOOME_BHFBCMLKOAM = 15,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_OMADHMPICEJ)
-    LJLMPHMOOME_OMADHMPICEJ = 16,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_EMOKJPPCJJC)
-    LJLMPHMOOME_EMOKJPPCJJC = 17,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_NHCBFPPJELP)
-    LJLMPHMOOME_NHCBFPPJELP = 18,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_ALPNEJPBFJB)
-    LJLMPHMOOME_ALPNEJPBFJB = 19,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_CLAJNECJDNL)
-    LJLMPHMOOME_CLAJNECJDNL = 20,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_FANHIAEGLNG)
-    LJLMPHMOOME_FANHIAEGLNG = 21,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_OHFNGLOKAPH)
-    LJLMPHMOOME_OHFNGLOKAPH = 22,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_LCECJPDKDPB)
-    LJLMPHMOOME_LCECJPDKDPB = 23,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_OABMBECOMMA)
-    LJLMPHMOOME_OABMBECOMMA = 24,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_EKFDEHCIPAH)
-    LJLMPHMOOME_EKFDEHCIPAH = 25,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_PHDPKFEGIKH)
-    LJLMPHMOOME_PHDPKFEGIKH = 26,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_OLEDMPPGNMK)
-    LJLMPHMOOME_OLEDMPPGNMK = 27,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_LDKEAMCAIJK)
-    LJLMPHMOOME_LDKEAMCAIJK = 28,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_PPPAKAIOGOF)
-    LJLMPHMOOME_PPPAKAIOGOF = 29,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_ENCBKEFOICN)
-    LJLMPHMOOME_ENCBKEFOICN = 30,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_HHIIPPAIAGH)
-    LJLMPHMOOME_HHIIPPAIAGH = 32,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_NKLNFDPKNHF)
-    LJLMPHMOOME_NKLNFDPKNHF = 33,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_JPOLGNALLGB)
-    LJLMPHMOOME_JPOLGNALLGB = 34,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_KHNDNBGCCFK)
-    LJLMPHMOOME_KHNDNBGCCFK = 35,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_DIHPMDFOECK)
-    LJLMPHMOOME_DIHPMDFOECK = 36,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_KKMAIHNKDPO)
-    LJLMPHMOOME_KKMAIHNKDPO = 37,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_HKHBOEKLPBC)
-    LJLMPHMOOME_HKHBOEKLPBC = 38,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_EIBLEKONDHP)
-    LJLMPHMOOME_EIBLEKONDHP = 39,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_PFGBPBGBKBH)
-    LJLMPHMOOME_PFGBPBGBKBH = 40,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_CBEBGFNFELP)
-    LJLMPHMOOME_CBEBGFNFELP = 41,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_NEFFHLJLHAF)
-    LJLMPHMOOME_NEFFHLJLHAF = 42,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_NCBCNFAOMKK)
-    LJLMPHMOOME_NCBCNFAOMKK = 43,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_LCEJLOFGOMN)
-    LJLMPHMOOME_LCEJLOFGOMN = 44,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_JEBAEOEIHCG)
-    LJLMPHMOOME_JEBAEOEIHCG = 45,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_JLGIEFHFFOC)
-    LJLMPHMOOME_JLGIEFHFFOC = 46,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_BNHKIDDJLBG)
-    LJLMPHMOOME_BNHKIDDJLBG = 47,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_FOOJDEEAPIM)
-    LJLMPHMOOME_FOOJDEEAPIM = 48,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_ODPKHKPOCPK)
-    LJLMPHMOOME_ODPKHKPOCPK = 49,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_OAHNNBKEKLA)
-    LJLMPHMOOME_OAHNNBKEKLA = 50,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_BJMHCHJELGL)
-    LJLMPHMOOME_BJMHCHJELGL = 51,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_EMJHPOGGIAA)
-    LJLMPHMOOME_EMJHPOGGIAA = 52,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_HGHEGIHAKJP)
-    LJLMPHMOOME_HGHEGIHAKJP = 53,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_CFNJMBEMBAI)
-    LJLMPHMOOME_CFNJMBEMBAI = 54,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_IBCABMDHEKK)
-    LJLMPHMOOME_IBCABMDHEKK = 55,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_NNABJKHKFNB)
-    LJLMPHMOOME_NNABJKHKFNB = 56,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_MDPCBHMOLBO)
-    LJLMPHMOOME_MDPCBHMOLBO = 58,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_FHDMMBDMJDK)
-    LJLMPHMOOME_FHDMMBDMJDK = 59,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_PABBJBBFGDN)
-    LJLMPHMOOME_PABBJBBFGDN = 60,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_GBIFHHNENIF)
-    LJLMPHMOOME_GBIFHHNENIF = 61,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_AMGEDMOMIOM)
-    LJLMPHMOOME_AMGEDMOMIOM = 62,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_OGAGNAACDBM)
-    LJLMPHMOOME_OGAGNAACDBM = 63,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_LPNOOECACMP)
-    LJLMPHMOOME_LPNOOECACMP = 64,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_FCBINHANFHA)
-    LJLMPHMOOME_FCBINHANFHA = 65,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_GNNFCPAAHBC)
-    LJLMPHMOOME_GNNFCPAAHBC = 66,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_MLEBNFNALMD)
-    LJLMPHMOOME_MLEBNFNALMD = 67,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_EFOOCBJDOEF)
-    LJLMPHMOOME_EFOOCBJDOEF = 68,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_ONHDPJHFOLH)
-    LJLMPHMOOME_ONHDPJHFOLH = 69,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_APPKBBOICGM)
-    LJLMPHMOOME_APPKBBOICGM = 70,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_BMHJCLKPGJJ)
-    LJLMPHMOOME_BMHJCLKPGJJ = 71,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_MPKDLFJAJEI)
-    LJLMPHMOOME_MPKDLFJAJEI = 72,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_MIDBDOHMBPD)
-    LJLMPHMOOME_MIDBDOHMBPD = 73,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_JELJHDDJAAC)
-    LJLMPHMOOME_JELJHDDJAAC = 74,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_GDFJFPCIBKP)
-    LJLMPHMOOME_GDFJFPCIBKP = 75,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_KCBENOKDKBJ)
-    LJLMPHMOOME_KCBENOKDKBJ = 76,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_GGPHBJACKAB)
-    LJLMPHMOOME_GGPHBJACKAB = 77,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_FKFBOENCDHC)
-    LJLMPHMOOME_FKFBOENCDHC = 78,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_CJDMOPDPILE)
-    LJLMPHMOOME_CJDMOPDPILE = 79,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_FNHFFJLDGLG)
-    LJLMPHMOOME_FNHFFJLDGLG = 80,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_KALKAEAOCCP)
-    LJLMPHMOOME_KALKAEAOCCP = 81,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_IIBPDMFHHMJ)
-    LJLMPHMOOME_IIBPDMFHHMJ = 82,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_FIPAIJHKOHJ)
-    LJLMPHMOOME_FIPAIJHKOHJ = 83,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_POFPBBLACAI)
-    LJLMPHMOOME_POFPBBLACAI = 84,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_BGBKBMHMKCJ)
-    LJLMPHMOOME_BGBKBMHMKCJ = 85,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_BNMOPLBBDGB)
-    LJLMPHMOOME_BNMOPLBBDGB = 86,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_LKMEEFBDOPA)
-    LJLMPHMOOME_LKMEEFBDOPA = 87,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_GOHFDBJHENN)
-    LJLMPHMOOME_GOHFDBJHENN = 88,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_EGGEIOJMODP)
-    LJLMPHMOOME_EGGEIOJMODP = 89,
-    // @@protoc_insertion_point(enum_value:FeatureSwitchType.LJLMPHMOOME_HPMNGHPGKKK)
-    LJLMPHMOOME_HPMNGHPGKKK = 90,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_BDGFDHMNCLO)
+    FeatureSwitchType_BDGFDHMNCLO = 0,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_DPNFFLLKNAF)
+    FeatureSwitchType_DPNFFLLKNAF = 1,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_IJKFENJGIKK)
+    FeatureSwitchType_IJKFENJGIKK = 2,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_CAHLMOKLHEH)
+    FeatureSwitchType_CAHLMOKLHEH = 3,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_PPOAGIFBNED)
+    FeatureSwitchType_PPOAGIFBNED = 4,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_JMNBOKDOANE)
+    FeatureSwitchType_JMNBOKDOANE = 5,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_DCENDKLNADE)
+    FeatureSwitchType_DCENDKLNADE = 6,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_NFGPAKDLNLF)
+    FeatureSwitchType_NFGPAKDLNLF = 7,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_HEKKPIOLJMG)
+    FeatureSwitchType_HEKKPIOLJMG = 8,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_GBJLNNADNNK)
+    FeatureSwitchType_GBJLNNADNNK = 9,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_HAIKIIIJDEB)
+    FeatureSwitchType_HAIKIIIJDEB = 10,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FJOHAGOEPJF)
+    FeatureSwitchType_FJOHAGOEPJF = 11,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_PNCBMJNGCAJ)
+    FeatureSwitchType_PNCBMJNGCAJ = 12,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_HMHECGHDMAM)
+    FeatureSwitchType_HMHECGHDMAM = 13,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_KHOFGLBLBHO)
+    FeatureSwitchType_KHOFGLBLBHO = 14,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_HCMGBKBDBII)
+    FeatureSwitchType_HCMGBKBDBII = 15,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_NDJEMKODNCA)
+    FeatureSwitchType_NDJEMKODNCA = 16,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_NFLLMEFHGFF)
+    FeatureSwitchType_NFLLMEFHGFF = 17,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_GNBLOJKPCLH)
+    FeatureSwitchType_GNBLOJKPCLH = 18,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_EMHPMNBAMID)
+    FeatureSwitchType_EMHPMNBAMID = 19,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_AJBBEPEKHIK)
+    FeatureSwitchType_AJBBEPEKHIK = 20,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_JHKFLELGDLN)
+    FeatureSwitchType_JHKFLELGDLN = 21,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_CKEMDOKIPAM)
+    FeatureSwitchType_CKEMDOKIPAM = 22,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_IKFFDEMKMCA)
+    FeatureSwitchType_IKFFDEMKMCA = 23,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_BLIAEFNIFOJ)
+    FeatureSwitchType_BLIAEFNIFOJ = 24,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_NAHMILDFOLL)
+    FeatureSwitchType_NAHMILDFOLL = 25,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_KGKMPDDEEED)
+    FeatureSwitchType_KGKMPDDEEED = 26,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FLGLFMOMAMB)
+    FeatureSwitchType_FLGLFMOMAMB = 27,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_ANMMNADCNKP)
+    FeatureSwitchType_ANMMNADCNKP = 28,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_MNCEAEIHEKK)
+    FeatureSwitchType_MNCEAEIHEKK = 29,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_PBBBNBHHCHP)
+    FeatureSwitchType_PBBBNBHHCHP = 30,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_ADPDIMBBADI)
+    FeatureSwitchType_ADPDIMBBADI = 32,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_OHHNNBIINIB)
+    FeatureSwitchType_OHHNNBIINIB = 33,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_MIFAHACFBJL)
+    FeatureSwitchType_MIFAHACFBJL = 34,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_BNPLCFEJFBJ)
+    FeatureSwitchType_BNPLCFEJFBJ = 35,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_KJHKLHMJIIC)
+    FeatureSwitchType_KJHKLHMJIIC = 36,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_GBPMHHIDLOP)
+    FeatureSwitchType_GBPMHHIDLOP = 37,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_MBJCENPIIJI)
+    FeatureSwitchType_MBJCENPIIJI = 38,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_HDFGJIPPFFB)
+    FeatureSwitchType_HDFGJIPPFFB = 39,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_MIJEIBKKFBK)
+    FeatureSwitchType_MIJEIBKKFBK = 40,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_HLOMJLMMKHD)
+    FeatureSwitchType_HLOMJLMMKHD = 41,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_AHCHKLFPGPM)
+    FeatureSwitchType_AHCHKLFPGPM = 42,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_CEMAEBALNFD)
+    FeatureSwitchType_CEMAEBALNFD = 43,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_GEMILMNIFAE)
+    FeatureSwitchType_GEMILMNIFAE = 44,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_GLPFCNCKOFN)
+    FeatureSwitchType_GLPFCNCKOFN = 45,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_ALBIIAEHNAI)
+    FeatureSwitchType_ALBIIAEHNAI = 46,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_HLBEICNHKNJ)
+    FeatureSwitchType_HLBEICNHKNJ = 47,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_IFOMGBCAFNE)
+    FeatureSwitchType_IFOMGBCAFNE = 48,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_NPNFCGFNCNF)
+    FeatureSwitchType_NPNFCGFNCNF = 49,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_CNNADKGEHNK)
+    FeatureSwitchType_CNNADKGEHNK = 50,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_CJKOEMHFJKI)
+    FeatureSwitchType_CJKOEMHFJKI = 51,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_CPBBNIOPODM)
+    FeatureSwitchType_CPBBNIOPODM = 52,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_EEMCPKOFFBD)
+    FeatureSwitchType_EEMCPKOFFBD = 53,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_GECPEELLJFP)
+    FeatureSwitchType_GECPEELLJFP = 54,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_NOKDEADMEBN)
+    FeatureSwitchType_NOKDEADMEBN = 55,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_DDMEGLKKLAB)
+    FeatureSwitchType_DDMEGLKKLAB = 56,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_KPNIJKHGBCE)
+    FeatureSwitchType_KPNIJKHGBCE = 58,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_PDPKHIAGHJA)
+    FeatureSwitchType_PDPKHIAGHJA = 59,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_MAMGGBPIOIB)
+    FeatureSwitchType_MAMGGBPIOIB = 60,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_PIDCEFDDLOD)
+    FeatureSwitchType_PIDCEFDDLOD = 61,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_DONFGCLHBKL)
+    FeatureSwitchType_DONFGCLHBKL = 62,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_JOLFCLPFLCG)
+    FeatureSwitchType_JOLFCLPFLCG = 63,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_BOIGGEIMFBG)
+    FeatureSwitchType_BOIGGEIMFBG = 64,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_DJOLNBJKAKD)
+    FeatureSwitchType_DJOLNBJKAKD = 65,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_ILHCKIEEBMA)
+    FeatureSwitchType_ILHCKIEEBMA = 66,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_CHMADBMOAME)
+    FeatureSwitchType_CHMADBMOAME = 67,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_EEJJDJGFMNM)
+    FeatureSwitchType_EEJJDJGFMNM = 68,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_ICNADNGDBNA)
+    FeatureSwitchType_ICNADNGDBNA = 69,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_EHPODCGNMHC)
+    FeatureSwitchType_EHPODCGNMHC = 70,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_AJAGGHOPNHH)
+    FeatureSwitchType_AJAGGHOPNHH = 71,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_NEMAGJCPNFL)
+    FeatureSwitchType_NEMAGJCPNFL = 72,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_BDOJNBCIOAO)
+    FeatureSwitchType_BDOJNBCIOAO = 73,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_NBAILBBFBIF)
+    FeatureSwitchType_NBAILBBFBIF = 74,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_FGOBKPIAAFK)
+    FeatureSwitchType_FGOBKPIAAFK = 75,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_BOGJHEEBMBK)
+    FeatureSwitchType_BOGJHEEBMBK = 76,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_LBLIMNBDAOB)
+    FeatureSwitchType_LBLIMNBDAOB = 77,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_IIKIILJOOPF)
+    FeatureSwitchType_IIKIILJOOPF = 78,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_MPCAOCGHGFB)
+    FeatureSwitchType_MPCAOCGHGFB = 79,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_NEJELJNGABG)
+    FeatureSwitchType_NEJELJNGABG = 80,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_CMCLBDHBAKK)
+    FeatureSwitchType_CMCLBDHBAKK = 81,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_PMJKCHHFCEB)
+    FeatureSwitchType_PMJKCHHFCEB = 82,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_HNEBGJNEDNN)
+    FeatureSwitchType_HNEBGJNEDNN = 83,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_IBMGIAOCLJA)
+    FeatureSwitchType_IBMGIAOCLJA = 84,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_BLHNNNPOCFO)
+    FeatureSwitchType_BLHNNNPOCFO = 85,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_HOLGLPLGPIA)
+    FeatureSwitchType_HOLGLPLGPIA = 86,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_ABGEJICHLLN)
+    FeatureSwitchType_ABGEJICHLLN = 87,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_EEODLHNCOCM)
+    FeatureSwitchType_EEODLHNCOCM = 88,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_NNFMMODOMOB)
+    FeatureSwitchType_NNFMMODOMOB = 89,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_CKONJGMFANF)
+    FeatureSwitchType_CKONJGMFANF = 90,
+    // @@protoc_insertion_point(enum_value:FeatureSwitchType.FeatureSwitchType_LHONOMFNPKN)
+    FeatureSwitchType_LHONOMFNPKN = 91,
 }
 
 impl ::protobuf::Enum for FeatureSwitchType {
@@ -216,284 +218,287 @@ impl ::protobuf::Enum for FeatureSwitchType {
 
     fn from_i32(value: i32) -> ::std::option::Option<FeatureSwitchType> {
         match value {
-            0 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HFANBFDHIGC),
-            1 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HIHJDBCJGGI),
-            2 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_MACNFJBLEEA),
-            3 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JFMBBNKABIE),
-            4 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LEPEEOKIDCN),
-            5 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HCKCMOCLFOP),
-            6 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JPCHICONJDC),
-            7 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PJAMCDJBOKB),
-            8 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CPPAFNJIOFI),
-            9 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PHDMBKOFBEL),
-            10 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LKKFHIDLHPH),
-            11 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CMIGKLDOGCG),
-            12 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HOFAIIBHIBL),
-            13 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KNGFLHDPPII),
-            14 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KLLNLMGOONA),
-            15 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BHFBCMLKOAM),
-            16 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OMADHMPICEJ),
-            17 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EMOKJPPCJJC),
-            18 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_NHCBFPPJELP),
-            19 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_ALPNEJPBFJB),
-            20 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CLAJNECJDNL),
-            21 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FANHIAEGLNG),
-            22 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OHFNGLOKAPH),
-            23 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LCECJPDKDPB),
-            24 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OABMBECOMMA),
-            25 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EKFDEHCIPAH),
-            26 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PHDPKFEGIKH),
-            27 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OLEDMPPGNMK),
-            28 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LDKEAMCAIJK),
-            29 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PPPAKAIOGOF),
-            30 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_ENCBKEFOICN),
-            32 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HHIIPPAIAGH),
-            33 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_NKLNFDPKNHF),
-            34 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JPOLGNALLGB),
-            35 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KHNDNBGCCFK),
-            36 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_DIHPMDFOECK),
-            37 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KKMAIHNKDPO),
-            38 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HKHBOEKLPBC),
-            39 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EIBLEKONDHP),
-            40 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PFGBPBGBKBH),
-            41 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CBEBGFNFELP),
-            42 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_NEFFHLJLHAF),
-            43 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_NCBCNFAOMKK),
-            44 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LCEJLOFGOMN),
-            45 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JEBAEOEIHCG),
-            46 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JLGIEFHFFOC),
-            47 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BNHKIDDJLBG),
-            48 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FOOJDEEAPIM),
-            49 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_ODPKHKPOCPK),
-            50 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OAHNNBKEKLA),
-            51 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BJMHCHJELGL),
-            52 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EMJHPOGGIAA),
-            53 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HGHEGIHAKJP),
-            54 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CFNJMBEMBAI),
-            55 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_IBCABMDHEKK),
-            56 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_NNABJKHKFNB),
-            58 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_MDPCBHMOLBO),
-            59 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FHDMMBDMJDK),
-            60 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PABBJBBFGDN),
-            61 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_GBIFHHNENIF),
-            62 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_AMGEDMOMIOM),
-            63 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OGAGNAACDBM),
-            64 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LPNOOECACMP),
-            65 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FCBINHANFHA),
-            66 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_GNNFCPAAHBC),
-            67 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_MLEBNFNALMD),
-            68 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EFOOCBJDOEF),
-            69 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_ONHDPJHFOLH),
-            70 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_APPKBBOICGM),
-            71 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BMHJCLKPGJJ),
-            72 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_MPKDLFJAJEI),
-            73 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_MIDBDOHMBPD),
-            74 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JELJHDDJAAC),
-            75 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_GDFJFPCIBKP),
-            76 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KCBENOKDKBJ),
-            77 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_GGPHBJACKAB),
-            78 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FKFBOENCDHC),
-            79 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CJDMOPDPILE),
-            80 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FNHFFJLDGLG),
-            81 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KALKAEAOCCP),
-            82 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_IIBPDMFHHMJ),
-            83 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FIPAIJHKOHJ),
-            84 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_POFPBBLACAI),
-            85 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BGBKBMHMKCJ),
-            86 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BNMOPLBBDGB),
-            87 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LKMEEFBDOPA),
-            88 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_GOHFDBJHENN),
-            89 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EGGEIOJMODP),
-            90 => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HPMNGHPGKKK),
+            0 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BDGFDHMNCLO),
+            1 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_DPNFFLLKNAF),
+            2 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_IJKFENJGIKK),
+            3 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CAHLMOKLHEH),
+            4 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PPOAGIFBNED),
+            5 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_JMNBOKDOANE),
+            6 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_DCENDKLNADE),
+            7 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NFGPAKDLNLF),
+            8 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HEKKPIOLJMG),
+            9 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GBJLNNADNNK),
+            10 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HAIKIIIJDEB),
+            11 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FJOHAGOEPJF),
+            12 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PNCBMJNGCAJ),
+            13 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HMHECGHDMAM),
+            14 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_KHOFGLBLBHO),
+            15 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HCMGBKBDBII),
+            16 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NDJEMKODNCA),
+            17 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NFLLMEFHGFF),
+            18 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GNBLOJKPCLH),
+            19 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_EMHPMNBAMID),
+            20 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_AJBBEPEKHIK),
+            21 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_JHKFLELGDLN),
+            22 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CKEMDOKIPAM),
+            23 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_IKFFDEMKMCA),
+            24 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BLIAEFNIFOJ),
+            25 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NAHMILDFOLL),
+            26 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_KGKMPDDEEED),
+            27 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FLGLFMOMAMB),
+            28 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ANMMNADCNKP),
+            29 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MNCEAEIHEKK),
+            30 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PBBBNBHHCHP),
+            32 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ADPDIMBBADI),
+            33 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_OHHNNBIINIB),
+            34 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MIFAHACFBJL),
+            35 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BNPLCFEJFBJ),
+            36 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_KJHKLHMJIIC),
+            37 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GBPMHHIDLOP),
+            38 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MBJCENPIIJI),
+            39 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HDFGJIPPFFB),
+            40 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MIJEIBKKFBK),
+            41 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HLOMJLMMKHD),
+            42 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_AHCHKLFPGPM),
+            43 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CEMAEBALNFD),
+            44 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GEMILMNIFAE),
+            45 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GLPFCNCKOFN),
+            46 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ALBIIAEHNAI),
+            47 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HLBEICNHKNJ),
+            48 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_IFOMGBCAFNE),
+            49 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NPNFCGFNCNF),
+            50 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CNNADKGEHNK),
+            51 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CJKOEMHFJKI),
+            52 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CPBBNIOPODM),
+            53 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_EEMCPKOFFBD),
+            54 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GECPEELLJFP),
+            55 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NOKDEADMEBN),
+            56 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_DDMEGLKKLAB),
+            58 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_KPNIJKHGBCE),
+            59 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PDPKHIAGHJA),
+            60 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MAMGGBPIOIB),
+            61 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PIDCEFDDLOD),
+            62 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_DONFGCLHBKL),
+            63 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_JOLFCLPFLCG),
+            64 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BOIGGEIMFBG),
+            65 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_DJOLNBJKAKD),
+            66 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ILHCKIEEBMA),
+            67 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CHMADBMOAME),
+            68 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_EEJJDJGFMNM),
+            69 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ICNADNGDBNA),
+            70 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_EHPODCGNMHC),
+            71 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_AJAGGHOPNHH),
+            72 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NEMAGJCPNFL),
+            73 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BDOJNBCIOAO),
+            74 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NBAILBBFBIF),
+            75 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FGOBKPIAAFK),
+            76 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BOGJHEEBMBK),
+            77 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_LBLIMNBDAOB),
+            78 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_IIKIILJOOPF),
+            79 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MPCAOCGHGFB),
+            80 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NEJELJNGABG),
+            81 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CMCLBDHBAKK),
+            82 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PMJKCHHFCEB),
+            83 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HNEBGJNEDNN),
+            84 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_IBMGIAOCLJA),
+            85 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BLHNNNPOCFO),
+            86 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HOLGLPLGPIA),
+            87 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ABGEJICHLLN),
+            88 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_EEODLHNCOCM),
+            89 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NNFMMODOMOB),
+            90 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CKONJGMFANF),
+            91 => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_LHONOMFNPKN),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FeatureSwitchType> {
         match str {
-            "LJLMPHMOOME_HFANBFDHIGC" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HFANBFDHIGC),
-            "LJLMPHMOOME_HIHJDBCJGGI" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HIHJDBCJGGI),
-            "LJLMPHMOOME_MACNFJBLEEA" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_MACNFJBLEEA),
-            "LJLMPHMOOME_JFMBBNKABIE" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JFMBBNKABIE),
-            "LJLMPHMOOME_LEPEEOKIDCN" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LEPEEOKIDCN),
-            "LJLMPHMOOME_HCKCMOCLFOP" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HCKCMOCLFOP),
-            "LJLMPHMOOME_JPCHICONJDC" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JPCHICONJDC),
-            "LJLMPHMOOME_PJAMCDJBOKB" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PJAMCDJBOKB),
-            "LJLMPHMOOME_CPPAFNJIOFI" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CPPAFNJIOFI),
-            "LJLMPHMOOME_PHDMBKOFBEL" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PHDMBKOFBEL),
-            "LJLMPHMOOME_LKKFHIDLHPH" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LKKFHIDLHPH),
-            "LJLMPHMOOME_CMIGKLDOGCG" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CMIGKLDOGCG),
-            "LJLMPHMOOME_HOFAIIBHIBL" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HOFAIIBHIBL),
-            "LJLMPHMOOME_KNGFLHDPPII" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KNGFLHDPPII),
-            "LJLMPHMOOME_KLLNLMGOONA" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KLLNLMGOONA),
-            "LJLMPHMOOME_BHFBCMLKOAM" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BHFBCMLKOAM),
-            "LJLMPHMOOME_OMADHMPICEJ" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OMADHMPICEJ),
-            "LJLMPHMOOME_EMOKJPPCJJC" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EMOKJPPCJJC),
-            "LJLMPHMOOME_NHCBFPPJELP" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_NHCBFPPJELP),
-            "LJLMPHMOOME_ALPNEJPBFJB" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_ALPNEJPBFJB),
-            "LJLMPHMOOME_CLAJNECJDNL" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CLAJNECJDNL),
-            "LJLMPHMOOME_FANHIAEGLNG" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FANHIAEGLNG),
-            "LJLMPHMOOME_OHFNGLOKAPH" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OHFNGLOKAPH),
-            "LJLMPHMOOME_LCECJPDKDPB" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LCECJPDKDPB),
-            "LJLMPHMOOME_OABMBECOMMA" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OABMBECOMMA),
-            "LJLMPHMOOME_EKFDEHCIPAH" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EKFDEHCIPAH),
-            "LJLMPHMOOME_PHDPKFEGIKH" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PHDPKFEGIKH),
-            "LJLMPHMOOME_OLEDMPPGNMK" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OLEDMPPGNMK),
-            "LJLMPHMOOME_LDKEAMCAIJK" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LDKEAMCAIJK),
-            "LJLMPHMOOME_PPPAKAIOGOF" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PPPAKAIOGOF),
-            "LJLMPHMOOME_ENCBKEFOICN" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_ENCBKEFOICN),
-            "LJLMPHMOOME_HHIIPPAIAGH" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HHIIPPAIAGH),
-            "LJLMPHMOOME_NKLNFDPKNHF" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_NKLNFDPKNHF),
-            "LJLMPHMOOME_JPOLGNALLGB" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JPOLGNALLGB),
-            "LJLMPHMOOME_KHNDNBGCCFK" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KHNDNBGCCFK),
-            "LJLMPHMOOME_DIHPMDFOECK" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_DIHPMDFOECK),
-            "LJLMPHMOOME_KKMAIHNKDPO" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KKMAIHNKDPO),
-            "LJLMPHMOOME_HKHBOEKLPBC" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HKHBOEKLPBC),
-            "LJLMPHMOOME_EIBLEKONDHP" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EIBLEKONDHP),
-            "LJLMPHMOOME_PFGBPBGBKBH" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PFGBPBGBKBH),
-            "LJLMPHMOOME_CBEBGFNFELP" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CBEBGFNFELP),
-            "LJLMPHMOOME_NEFFHLJLHAF" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_NEFFHLJLHAF),
-            "LJLMPHMOOME_NCBCNFAOMKK" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_NCBCNFAOMKK),
-            "LJLMPHMOOME_LCEJLOFGOMN" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LCEJLOFGOMN),
-            "LJLMPHMOOME_JEBAEOEIHCG" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JEBAEOEIHCG),
-            "LJLMPHMOOME_JLGIEFHFFOC" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JLGIEFHFFOC),
-            "LJLMPHMOOME_BNHKIDDJLBG" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BNHKIDDJLBG),
-            "LJLMPHMOOME_FOOJDEEAPIM" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FOOJDEEAPIM),
-            "LJLMPHMOOME_ODPKHKPOCPK" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_ODPKHKPOCPK),
-            "LJLMPHMOOME_OAHNNBKEKLA" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OAHNNBKEKLA),
-            "LJLMPHMOOME_BJMHCHJELGL" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BJMHCHJELGL),
-            "LJLMPHMOOME_EMJHPOGGIAA" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EMJHPOGGIAA),
-            "LJLMPHMOOME_HGHEGIHAKJP" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HGHEGIHAKJP),
-            "LJLMPHMOOME_CFNJMBEMBAI" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CFNJMBEMBAI),
-            "LJLMPHMOOME_IBCABMDHEKK" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_IBCABMDHEKK),
-            "LJLMPHMOOME_NNABJKHKFNB" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_NNABJKHKFNB),
-            "LJLMPHMOOME_MDPCBHMOLBO" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_MDPCBHMOLBO),
-            "LJLMPHMOOME_FHDMMBDMJDK" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FHDMMBDMJDK),
-            "LJLMPHMOOME_PABBJBBFGDN" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_PABBJBBFGDN),
-            "LJLMPHMOOME_GBIFHHNENIF" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_GBIFHHNENIF),
-            "LJLMPHMOOME_AMGEDMOMIOM" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_AMGEDMOMIOM),
-            "LJLMPHMOOME_OGAGNAACDBM" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_OGAGNAACDBM),
-            "LJLMPHMOOME_LPNOOECACMP" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LPNOOECACMP),
-            "LJLMPHMOOME_FCBINHANFHA" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FCBINHANFHA),
-            "LJLMPHMOOME_GNNFCPAAHBC" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_GNNFCPAAHBC),
-            "LJLMPHMOOME_MLEBNFNALMD" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_MLEBNFNALMD),
-            "LJLMPHMOOME_EFOOCBJDOEF" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EFOOCBJDOEF),
-            "LJLMPHMOOME_ONHDPJHFOLH" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_ONHDPJHFOLH),
-            "LJLMPHMOOME_APPKBBOICGM" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_APPKBBOICGM),
-            "LJLMPHMOOME_BMHJCLKPGJJ" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BMHJCLKPGJJ),
-            "LJLMPHMOOME_MPKDLFJAJEI" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_MPKDLFJAJEI),
-            "LJLMPHMOOME_MIDBDOHMBPD" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_MIDBDOHMBPD),
-            "LJLMPHMOOME_JELJHDDJAAC" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_JELJHDDJAAC),
-            "LJLMPHMOOME_GDFJFPCIBKP" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_GDFJFPCIBKP),
-            "LJLMPHMOOME_KCBENOKDKBJ" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KCBENOKDKBJ),
-            "LJLMPHMOOME_GGPHBJACKAB" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_GGPHBJACKAB),
-            "LJLMPHMOOME_FKFBOENCDHC" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FKFBOENCDHC),
-            "LJLMPHMOOME_CJDMOPDPILE" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_CJDMOPDPILE),
-            "LJLMPHMOOME_FNHFFJLDGLG" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FNHFFJLDGLG),
-            "LJLMPHMOOME_KALKAEAOCCP" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_KALKAEAOCCP),
-            "LJLMPHMOOME_IIBPDMFHHMJ" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_IIBPDMFHHMJ),
-            "LJLMPHMOOME_FIPAIJHKOHJ" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_FIPAIJHKOHJ),
-            "LJLMPHMOOME_POFPBBLACAI" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_POFPBBLACAI),
-            "LJLMPHMOOME_BGBKBMHMKCJ" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BGBKBMHMKCJ),
-            "LJLMPHMOOME_BNMOPLBBDGB" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_BNMOPLBBDGB),
-            "LJLMPHMOOME_LKMEEFBDOPA" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_LKMEEFBDOPA),
-            "LJLMPHMOOME_GOHFDBJHENN" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_GOHFDBJHENN),
-            "LJLMPHMOOME_EGGEIOJMODP" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_EGGEIOJMODP),
-            "LJLMPHMOOME_HPMNGHPGKKK" => ::std::option::Option::Some(FeatureSwitchType::LJLMPHMOOME_HPMNGHPGKKK),
+            "FeatureSwitchType_BDGFDHMNCLO" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BDGFDHMNCLO),
+            "FeatureSwitchType_DPNFFLLKNAF" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_DPNFFLLKNAF),
+            "FeatureSwitchType_IJKFENJGIKK" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_IJKFENJGIKK),
+            "FeatureSwitchType_CAHLMOKLHEH" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CAHLMOKLHEH),
+            "FeatureSwitchType_PPOAGIFBNED" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PPOAGIFBNED),
+            "FeatureSwitchType_JMNBOKDOANE" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_JMNBOKDOANE),
+            "FeatureSwitchType_DCENDKLNADE" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_DCENDKLNADE),
+            "FeatureSwitchType_NFGPAKDLNLF" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NFGPAKDLNLF),
+            "FeatureSwitchType_HEKKPIOLJMG" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HEKKPIOLJMG),
+            "FeatureSwitchType_GBJLNNADNNK" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GBJLNNADNNK),
+            "FeatureSwitchType_HAIKIIIJDEB" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HAIKIIIJDEB),
+            "FeatureSwitchType_FJOHAGOEPJF" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FJOHAGOEPJF),
+            "FeatureSwitchType_PNCBMJNGCAJ" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PNCBMJNGCAJ),
+            "FeatureSwitchType_HMHECGHDMAM" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HMHECGHDMAM),
+            "FeatureSwitchType_KHOFGLBLBHO" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_KHOFGLBLBHO),
+            "FeatureSwitchType_HCMGBKBDBII" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HCMGBKBDBII),
+            "FeatureSwitchType_NDJEMKODNCA" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NDJEMKODNCA),
+            "FeatureSwitchType_NFLLMEFHGFF" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NFLLMEFHGFF),
+            "FeatureSwitchType_GNBLOJKPCLH" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GNBLOJKPCLH),
+            "FeatureSwitchType_EMHPMNBAMID" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_EMHPMNBAMID),
+            "FeatureSwitchType_AJBBEPEKHIK" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_AJBBEPEKHIK),
+            "FeatureSwitchType_JHKFLELGDLN" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_JHKFLELGDLN),
+            "FeatureSwitchType_CKEMDOKIPAM" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CKEMDOKIPAM),
+            "FeatureSwitchType_IKFFDEMKMCA" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_IKFFDEMKMCA),
+            "FeatureSwitchType_BLIAEFNIFOJ" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BLIAEFNIFOJ),
+            "FeatureSwitchType_NAHMILDFOLL" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NAHMILDFOLL),
+            "FeatureSwitchType_KGKMPDDEEED" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_KGKMPDDEEED),
+            "FeatureSwitchType_FLGLFMOMAMB" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FLGLFMOMAMB),
+            "FeatureSwitchType_ANMMNADCNKP" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ANMMNADCNKP),
+            "FeatureSwitchType_MNCEAEIHEKK" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MNCEAEIHEKK),
+            "FeatureSwitchType_PBBBNBHHCHP" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PBBBNBHHCHP),
+            "FeatureSwitchType_ADPDIMBBADI" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ADPDIMBBADI),
+            "FeatureSwitchType_OHHNNBIINIB" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_OHHNNBIINIB),
+            "FeatureSwitchType_MIFAHACFBJL" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MIFAHACFBJL),
+            "FeatureSwitchType_BNPLCFEJFBJ" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BNPLCFEJFBJ),
+            "FeatureSwitchType_KJHKLHMJIIC" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_KJHKLHMJIIC),
+            "FeatureSwitchType_GBPMHHIDLOP" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GBPMHHIDLOP),
+            "FeatureSwitchType_MBJCENPIIJI" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MBJCENPIIJI),
+            "FeatureSwitchType_HDFGJIPPFFB" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HDFGJIPPFFB),
+            "FeatureSwitchType_MIJEIBKKFBK" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MIJEIBKKFBK),
+            "FeatureSwitchType_HLOMJLMMKHD" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HLOMJLMMKHD),
+            "FeatureSwitchType_AHCHKLFPGPM" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_AHCHKLFPGPM),
+            "FeatureSwitchType_CEMAEBALNFD" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CEMAEBALNFD),
+            "FeatureSwitchType_GEMILMNIFAE" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GEMILMNIFAE),
+            "FeatureSwitchType_GLPFCNCKOFN" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GLPFCNCKOFN),
+            "FeatureSwitchType_ALBIIAEHNAI" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ALBIIAEHNAI),
+            "FeatureSwitchType_HLBEICNHKNJ" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HLBEICNHKNJ),
+            "FeatureSwitchType_IFOMGBCAFNE" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_IFOMGBCAFNE),
+            "FeatureSwitchType_NPNFCGFNCNF" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NPNFCGFNCNF),
+            "FeatureSwitchType_CNNADKGEHNK" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CNNADKGEHNK),
+            "FeatureSwitchType_CJKOEMHFJKI" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CJKOEMHFJKI),
+            "FeatureSwitchType_CPBBNIOPODM" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CPBBNIOPODM),
+            "FeatureSwitchType_EEMCPKOFFBD" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_EEMCPKOFFBD),
+            "FeatureSwitchType_GECPEELLJFP" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_GECPEELLJFP),
+            "FeatureSwitchType_NOKDEADMEBN" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NOKDEADMEBN),
+            "FeatureSwitchType_DDMEGLKKLAB" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_DDMEGLKKLAB),
+            "FeatureSwitchType_KPNIJKHGBCE" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_KPNIJKHGBCE),
+            "FeatureSwitchType_PDPKHIAGHJA" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PDPKHIAGHJA),
+            "FeatureSwitchType_MAMGGBPIOIB" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MAMGGBPIOIB),
+            "FeatureSwitchType_PIDCEFDDLOD" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PIDCEFDDLOD),
+            "FeatureSwitchType_DONFGCLHBKL" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_DONFGCLHBKL),
+            "FeatureSwitchType_JOLFCLPFLCG" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_JOLFCLPFLCG),
+            "FeatureSwitchType_BOIGGEIMFBG" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BOIGGEIMFBG),
+            "FeatureSwitchType_DJOLNBJKAKD" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_DJOLNBJKAKD),
+            "FeatureSwitchType_ILHCKIEEBMA" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ILHCKIEEBMA),
+            "FeatureSwitchType_CHMADBMOAME" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CHMADBMOAME),
+            "FeatureSwitchType_EEJJDJGFMNM" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_EEJJDJGFMNM),
+            "FeatureSwitchType_ICNADNGDBNA" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ICNADNGDBNA),
+            "FeatureSwitchType_EHPODCGNMHC" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_EHPODCGNMHC),
+            "FeatureSwitchType_AJAGGHOPNHH" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_AJAGGHOPNHH),
+            "FeatureSwitchType_NEMAGJCPNFL" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NEMAGJCPNFL),
+            "FeatureSwitchType_BDOJNBCIOAO" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BDOJNBCIOAO),
+            "FeatureSwitchType_NBAILBBFBIF" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NBAILBBFBIF),
+            "FeatureSwitchType_FGOBKPIAAFK" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_FGOBKPIAAFK),
+            "FeatureSwitchType_BOGJHEEBMBK" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BOGJHEEBMBK),
+            "FeatureSwitchType_LBLIMNBDAOB" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_LBLIMNBDAOB),
+            "FeatureSwitchType_IIKIILJOOPF" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_IIKIILJOOPF),
+            "FeatureSwitchType_MPCAOCGHGFB" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_MPCAOCGHGFB),
+            "FeatureSwitchType_NEJELJNGABG" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NEJELJNGABG),
+            "FeatureSwitchType_CMCLBDHBAKK" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CMCLBDHBAKK),
+            "FeatureSwitchType_PMJKCHHFCEB" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_PMJKCHHFCEB),
+            "FeatureSwitchType_HNEBGJNEDNN" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HNEBGJNEDNN),
+            "FeatureSwitchType_IBMGIAOCLJA" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_IBMGIAOCLJA),
+            "FeatureSwitchType_BLHNNNPOCFO" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_BLHNNNPOCFO),
+            "FeatureSwitchType_HOLGLPLGPIA" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_HOLGLPLGPIA),
+            "FeatureSwitchType_ABGEJICHLLN" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_ABGEJICHLLN),
+            "FeatureSwitchType_EEODLHNCOCM" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_EEODLHNCOCM),
+            "FeatureSwitchType_NNFMMODOMOB" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_NNFMMODOMOB),
+            "FeatureSwitchType_CKONJGMFANF" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_CKONJGMFANF),
+            "FeatureSwitchType_LHONOMFNPKN" => ::std::option::Option::Some(FeatureSwitchType::FeatureSwitchType_LHONOMFNPKN),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FeatureSwitchType] = &[
-        FeatureSwitchType::LJLMPHMOOME_HFANBFDHIGC,
-        FeatureSwitchType::LJLMPHMOOME_HIHJDBCJGGI,
-        FeatureSwitchType::LJLMPHMOOME_MACNFJBLEEA,
-        FeatureSwitchType::LJLMPHMOOME_JFMBBNKABIE,
-        FeatureSwitchType::LJLMPHMOOME_LEPEEOKIDCN,
-        FeatureSwitchType::LJLMPHMOOME_HCKCMOCLFOP,
-        FeatureSwitchType::LJLMPHMOOME_JPCHICONJDC,
-        FeatureSwitchType::LJLMPHMOOME_PJAMCDJBOKB,
-        FeatureSwitchType::LJLMPHMOOME_CPPAFNJIOFI,
-        FeatureSwitchType::LJLMPHMOOME_PHDMBKOFBEL,
-        FeatureSwitchType::LJLMPHMOOME_LKKFHIDLHPH,
-        FeatureSwitchType::LJLMPHMOOME_CMIGKLDOGCG,
-        FeatureSwitchType::LJLMPHMOOME_HOFAIIBHIBL,
-        FeatureSwitchType::LJLMPHMOOME_KNGFLHDPPII,
-        FeatureSwitchType::LJLMPHMOOME_KLLNLMGOONA,
-        FeatureSwitchType::LJLMPHMOOME_BHFBCMLKOAM,
-        FeatureSwitchType::LJLMPHMOOME_OMADHMPICEJ,
-        FeatureSwitchType::LJLMPHMOOME_EMOKJPPCJJC,
-        FeatureSwitchType::LJLMPHMOOME_NHCBFPPJELP,
-        FeatureSwitchType::LJLMPHMOOME_ALPNEJPBFJB,
-        FeatureSwitchType::LJLMPHMOOME_CLAJNECJDNL,
-        FeatureSwitchType::LJLMPHMOOME_FANHIAEGLNG,
-        FeatureSwitchType::LJLMPHMOOME_OHFNGLOKAPH,
-        FeatureSwitchType::LJLMPHMOOME_LCECJPDKDPB,
-        FeatureSwitchType::LJLMPHMOOME_OABMBECOMMA,
-        FeatureSwitchType::LJLMPHMOOME_EKFDEHCIPAH,
-        FeatureSwitchType::LJLMPHMOOME_PHDPKFEGIKH,
-        FeatureSwitchType::LJLMPHMOOME_OLEDMPPGNMK,
-        FeatureSwitchType::LJLMPHMOOME_LDKEAMCAIJK,
-        FeatureSwitchType::LJLMPHMOOME_PPPAKAIOGOF,
-        FeatureSwitchType::LJLMPHMOOME_ENCBKEFOICN,
-        FeatureSwitchType::LJLMPHMOOME_HHIIPPAIAGH,
-        FeatureSwitchType::LJLMPHMOOME_NKLNFDPKNHF,
-        FeatureSwitchType::LJLMPHMOOME_JPOLGNALLGB,
-        FeatureSwitchType::LJLMPHMOOME_KHNDNBGCCFK,
-        FeatureSwitchType::LJLMPHMOOME_DIHPMDFOECK,
-        FeatureSwitchType::LJLMPHMOOME_KKMAIHNKDPO,
-        FeatureSwitchType::LJLMPHMOOME_HKHBOEKLPBC,
-        FeatureSwitchType::LJLMPHMOOME_EIBLEKONDHP,
-        FeatureSwitchType::LJLMPHMOOME_PFGBPBGBKBH,
-        FeatureSwitchType::LJLMPHMOOME_CBEBGFNFELP,
-        FeatureSwitchType::LJLMPHMOOME_NEFFHLJLHAF,
-        FeatureSwitchType::LJLMPHMOOME_NCBCNFAOMKK,
-        FeatureSwitchType::LJLMPHMOOME_LCEJLOFGOMN,
-        FeatureSwitchType::LJLMPHMOOME_JEBAEOEIHCG,
-        FeatureSwitchType::LJLMPHMOOME_JLGIEFHFFOC,
-        FeatureSwitchType::LJLMPHMOOME_BNHKIDDJLBG,
-        FeatureSwitchType::LJLMPHMOOME_FOOJDEEAPIM,
-        FeatureSwitchType::LJLMPHMOOME_ODPKHKPOCPK,
-        FeatureSwitchType::LJLMPHMOOME_OAHNNBKEKLA,
-        FeatureSwitchType::LJLMPHMOOME_BJMHCHJELGL,
-        FeatureSwitchType::LJLMPHMOOME_EMJHPOGGIAA,
-        FeatureSwitchType::LJLMPHMOOME_HGHEGIHAKJP,
-        FeatureSwitchType::LJLMPHMOOME_CFNJMBEMBAI,
-        FeatureSwitchType::LJLMPHMOOME_IBCABMDHEKK,
-        FeatureSwitchType::LJLMPHMOOME_NNABJKHKFNB,
-        FeatureSwitchType::LJLMPHMOOME_MDPCBHMOLBO,
-        FeatureSwitchType::LJLMPHMOOME_FHDMMBDMJDK,
-        FeatureSwitchType::LJLMPHMOOME_PABBJBBFGDN,
-        FeatureSwitchType::LJLMPHMOOME_GBIFHHNENIF,
-        FeatureSwitchType::LJLMPHMOOME_AMGEDMOMIOM,
-        FeatureSwitchType::LJLMPHMOOME_OGAGNAACDBM,
-        FeatureSwitchType::LJLMPHMOOME_LPNOOECACMP,
-        FeatureSwitchType::LJLMPHMOOME_FCBINHANFHA,
-        FeatureSwitchType::LJLMPHMOOME_GNNFCPAAHBC,
-        FeatureSwitchType::LJLMPHMOOME_MLEBNFNALMD,
-        FeatureSwitchType::LJLMPHMOOME_EFOOCBJDOEF,
-        FeatureSwitchType::LJLMPHMOOME_ONHDPJHFOLH,
-        FeatureSwitchType::LJLMPHMOOME_APPKBBOICGM,
-        FeatureSwitchType::LJLMPHMOOME_BMHJCLKPGJJ,
-        FeatureSwitchType::LJLMPHMOOME_MPKDLFJAJEI,
-        FeatureSwitchType::LJLMPHMOOME_MIDBDOHMBPD,
-        FeatureSwitchType::LJLMPHMOOME_JELJHDDJAAC,
-        FeatureSwitchType::LJLMPHMOOME_GDFJFPCIBKP,
-        FeatureSwitchType::LJLMPHMOOME_KCBENOKDKBJ,
-        FeatureSwitchType::LJLMPHMOOME_GGPHBJACKAB,
-        FeatureSwitchType::LJLMPHMOOME_FKFBOENCDHC,
-        FeatureSwitchType::LJLMPHMOOME_CJDMOPDPILE,
-        FeatureSwitchType::LJLMPHMOOME_FNHFFJLDGLG,
-        FeatureSwitchType::LJLMPHMOOME_KALKAEAOCCP,
-        FeatureSwitchType::LJLMPHMOOME_IIBPDMFHHMJ,
-        FeatureSwitchType::LJLMPHMOOME_FIPAIJHKOHJ,
-        FeatureSwitchType::LJLMPHMOOME_POFPBBLACAI,
-        FeatureSwitchType::LJLMPHMOOME_BGBKBMHMKCJ,
-        FeatureSwitchType::LJLMPHMOOME_BNMOPLBBDGB,
-        FeatureSwitchType::LJLMPHMOOME_LKMEEFBDOPA,
-        FeatureSwitchType::LJLMPHMOOME_GOHFDBJHENN,
-        FeatureSwitchType::LJLMPHMOOME_EGGEIOJMODP,
-        FeatureSwitchType::LJLMPHMOOME_HPMNGHPGKKK,
+        FeatureSwitchType::FeatureSwitchType_BDGFDHMNCLO,
+        FeatureSwitchType::FeatureSwitchType_DPNFFLLKNAF,
+        FeatureSwitchType::FeatureSwitchType_IJKFENJGIKK,
+        FeatureSwitchType::FeatureSwitchType_CAHLMOKLHEH,
+        FeatureSwitchType::FeatureSwitchType_PPOAGIFBNED,
+        FeatureSwitchType::FeatureSwitchType_JMNBOKDOANE,
+        FeatureSwitchType::FeatureSwitchType_DCENDKLNADE,
+        FeatureSwitchType::FeatureSwitchType_NFGPAKDLNLF,
+        FeatureSwitchType::FeatureSwitchType_HEKKPIOLJMG,
+        FeatureSwitchType::FeatureSwitchType_GBJLNNADNNK,
+        FeatureSwitchType::FeatureSwitchType_HAIKIIIJDEB,
+        FeatureSwitchType::FeatureSwitchType_FJOHAGOEPJF,
+        FeatureSwitchType::FeatureSwitchType_PNCBMJNGCAJ,
+        FeatureSwitchType::FeatureSwitchType_HMHECGHDMAM,
+        FeatureSwitchType::FeatureSwitchType_KHOFGLBLBHO,
+        FeatureSwitchType::FeatureSwitchType_HCMGBKBDBII,
+        FeatureSwitchType::FeatureSwitchType_NDJEMKODNCA,
+        FeatureSwitchType::FeatureSwitchType_NFLLMEFHGFF,
+        FeatureSwitchType::FeatureSwitchType_GNBLOJKPCLH,
+        FeatureSwitchType::FeatureSwitchType_EMHPMNBAMID,
+        FeatureSwitchType::FeatureSwitchType_AJBBEPEKHIK,
+        FeatureSwitchType::FeatureSwitchType_JHKFLELGDLN,
+        FeatureSwitchType::FeatureSwitchType_CKEMDOKIPAM,
+        FeatureSwitchType::FeatureSwitchType_IKFFDEMKMCA,
+        FeatureSwitchType::FeatureSwitchType_BLIAEFNIFOJ,
+        FeatureSwitchType::FeatureSwitchType_NAHMILDFOLL,
+        FeatureSwitchType::FeatureSwitchType_KGKMPDDEEED,
+        FeatureSwitchType::FeatureSwitchType_FLGLFMOMAMB,
+        FeatureSwitchType::FeatureSwitchType_ANMMNADCNKP,
+        FeatureSwitchType::FeatureSwitchType_MNCEAEIHEKK,
+        FeatureSwitchType::FeatureSwitchType_PBBBNBHHCHP,
+        FeatureSwitchType::FeatureSwitchType_ADPDIMBBADI,
+        FeatureSwitchType::FeatureSwitchType_OHHNNBIINIB,
+        FeatureSwitchType::FeatureSwitchType_MIFAHACFBJL,
+        FeatureSwitchType::FeatureSwitchType_BNPLCFEJFBJ,
+        FeatureSwitchType::FeatureSwitchType_KJHKLHMJIIC,
+        FeatureSwitchType::FeatureSwitchType_GBPMHHIDLOP,
+        FeatureSwitchType::FeatureSwitchType_MBJCENPIIJI,
+        FeatureSwitchType::FeatureSwitchType_HDFGJIPPFFB,
+        FeatureSwitchType::FeatureSwitchType_MIJEIBKKFBK,
+        FeatureSwitchType::FeatureSwitchType_HLOMJLMMKHD,
+        FeatureSwitchType::FeatureSwitchType_AHCHKLFPGPM,
+        FeatureSwitchType::FeatureSwitchType_CEMAEBALNFD,
+        FeatureSwitchType::FeatureSwitchType_GEMILMNIFAE,
+        FeatureSwitchType::FeatureSwitchType_GLPFCNCKOFN,
+        FeatureSwitchType::FeatureSwitchType_ALBIIAEHNAI,
+        FeatureSwitchType::FeatureSwitchType_HLBEICNHKNJ,
+        FeatureSwitchType::FeatureSwitchType_IFOMGBCAFNE,
+        FeatureSwitchType::FeatureSwitchType_NPNFCGFNCNF,
+        FeatureSwitchType::FeatureSwitchType_CNNADKGEHNK,
+        FeatureSwitchType::FeatureSwitchType_CJKOEMHFJKI,
+        FeatureSwitchType::FeatureSwitchType_CPBBNIOPODM,
+        FeatureSwitchType::FeatureSwitchType_EEMCPKOFFBD,
+        FeatureSwitchType::FeatureSwitchType_GECPEELLJFP,
+        FeatureSwitchType::FeatureSwitchType_NOKDEADMEBN,
+        FeatureSwitchType::FeatureSwitchType_DDMEGLKKLAB,
+        FeatureSwitchType::FeatureSwitchType_KPNIJKHGBCE,
+        FeatureSwitchType::FeatureSwitchType_PDPKHIAGHJA,
+        FeatureSwitchType::FeatureSwitchType_MAMGGBPIOIB,
+        FeatureSwitchType::FeatureSwitchType_PIDCEFDDLOD,
+        FeatureSwitchType::FeatureSwitchType_DONFGCLHBKL,
+        FeatureSwitchType::FeatureSwitchType_JOLFCLPFLCG,
+        FeatureSwitchType::FeatureSwitchType_BOIGGEIMFBG,
+        FeatureSwitchType::FeatureSwitchType_DJOLNBJKAKD,
+        FeatureSwitchType::FeatureSwitchType_ILHCKIEEBMA,
+        FeatureSwitchType::FeatureSwitchType_CHMADBMOAME,
+        FeatureSwitchType::FeatureSwitchType_EEJJDJGFMNM,
+        FeatureSwitchType::FeatureSwitchType_ICNADNGDBNA,
+        FeatureSwitchType::FeatureSwitchType_EHPODCGNMHC,
+        FeatureSwitchType::FeatureSwitchType_AJAGGHOPNHH,
+        FeatureSwitchType::FeatureSwitchType_NEMAGJCPNFL,
+        FeatureSwitchType::FeatureSwitchType_BDOJNBCIOAO,
+        FeatureSwitchType::FeatureSwitchType_NBAILBBFBIF,
+        FeatureSwitchType::FeatureSwitchType_FGOBKPIAAFK,
+        FeatureSwitchType::FeatureSwitchType_BOGJHEEBMBK,
+        FeatureSwitchType::FeatureSwitchType_LBLIMNBDAOB,
+        FeatureSwitchType::FeatureSwitchType_IIKIILJOOPF,
+        FeatureSwitchType::FeatureSwitchType_MPCAOCGHGFB,
+        FeatureSwitchType::FeatureSwitchType_NEJELJNGABG,
+        FeatureSwitchType::FeatureSwitchType_CMCLBDHBAKK,
+        FeatureSwitchType::FeatureSwitchType_PMJKCHHFCEB,
+        FeatureSwitchType::FeatureSwitchType_HNEBGJNEDNN,
+        FeatureSwitchType::FeatureSwitchType_IBMGIAOCLJA,
+        FeatureSwitchType::FeatureSwitchType_BLHNNNPOCFO,
+        FeatureSwitchType::FeatureSwitchType_HOLGLPLGPIA,
+        FeatureSwitchType::FeatureSwitchType_ABGEJICHLLN,
+        FeatureSwitchType::FeatureSwitchType_EEODLHNCOCM,
+        FeatureSwitchType::FeatureSwitchType_NNFMMODOMOB,
+        FeatureSwitchType::FeatureSwitchType_CKONJGMFANF,
+        FeatureSwitchType::FeatureSwitchType_LHONOMFNPKN,
     ];
 }
 
@@ -505,95 +510,96 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            FeatureSwitchType::LJLMPHMOOME_HFANBFDHIGC => 0,
-            FeatureSwitchType::LJLMPHMOOME_HIHJDBCJGGI => 1,
-            FeatureSwitchType::LJLMPHMOOME_MACNFJBLEEA => 2,
-            FeatureSwitchType::LJLMPHMOOME_JFMBBNKABIE => 3,
-            FeatureSwitchType::LJLMPHMOOME_LEPEEOKIDCN => 4,
-            FeatureSwitchType::LJLMPHMOOME_HCKCMOCLFOP => 5,
-            FeatureSwitchType::LJLMPHMOOME_JPCHICONJDC => 6,
-            FeatureSwitchType::LJLMPHMOOME_PJAMCDJBOKB => 7,
-            FeatureSwitchType::LJLMPHMOOME_CPPAFNJIOFI => 8,
-            FeatureSwitchType::LJLMPHMOOME_PHDMBKOFBEL => 9,
-            FeatureSwitchType::LJLMPHMOOME_LKKFHIDLHPH => 10,
-            FeatureSwitchType::LJLMPHMOOME_CMIGKLDOGCG => 11,
-            FeatureSwitchType::LJLMPHMOOME_HOFAIIBHIBL => 12,
-            FeatureSwitchType::LJLMPHMOOME_KNGFLHDPPII => 13,
-            FeatureSwitchType::LJLMPHMOOME_KLLNLMGOONA => 14,
-            FeatureSwitchType::LJLMPHMOOME_BHFBCMLKOAM => 15,
-            FeatureSwitchType::LJLMPHMOOME_OMADHMPICEJ => 16,
-            FeatureSwitchType::LJLMPHMOOME_EMOKJPPCJJC => 17,
-            FeatureSwitchType::LJLMPHMOOME_NHCBFPPJELP => 18,
-            FeatureSwitchType::LJLMPHMOOME_ALPNEJPBFJB => 19,
-            FeatureSwitchType::LJLMPHMOOME_CLAJNECJDNL => 20,
-            FeatureSwitchType::LJLMPHMOOME_FANHIAEGLNG => 21,
-            FeatureSwitchType::LJLMPHMOOME_OHFNGLOKAPH => 22,
-            FeatureSwitchType::LJLMPHMOOME_LCECJPDKDPB => 23,
-            FeatureSwitchType::LJLMPHMOOME_OABMBECOMMA => 24,
-            FeatureSwitchType::LJLMPHMOOME_EKFDEHCIPAH => 25,
-            FeatureSwitchType::LJLMPHMOOME_PHDPKFEGIKH => 26,
-            FeatureSwitchType::LJLMPHMOOME_OLEDMPPGNMK => 27,
-            FeatureSwitchType::LJLMPHMOOME_LDKEAMCAIJK => 28,
-            FeatureSwitchType::LJLMPHMOOME_PPPAKAIOGOF => 29,
-            FeatureSwitchType::LJLMPHMOOME_ENCBKEFOICN => 30,
-            FeatureSwitchType::LJLMPHMOOME_HHIIPPAIAGH => 31,
-            FeatureSwitchType::LJLMPHMOOME_NKLNFDPKNHF => 32,
-            FeatureSwitchType::LJLMPHMOOME_JPOLGNALLGB => 33,
-            FeatureSwitchType::LJLMPHMOOME_KHNDNBGCCFK => 34,
-            FeatureSwitchType::LJLMPHMOOME_DIHPMDFOECK => 35,
-            FeatureSwitchType::LJLMPHMOOME_KKMAIHNKDPO => 36,
-            FeatureSwitchType::LJLMPHMOOME_HKHBOEKLPBC => 37,
-            FeatureSwitchType::LJLMPHMOOME_EIBLEKONDHP => 38,
-            FeatureSwitchType::LJLMPHMOOME_PFGBPBGBKBH => 39,
-            FeatureSwitchType::LJLMPHMOOME_CBEBGFNFELP => 40,
-            FeatureSwitchType::LJLMPHMOOME_NEFFHLJLHAF => 41,
-            FeatureSwitchType::LJLMPHMOOME_NCBCNFAOMKK => 42,
-            FeatureSwitchType::LJLMPHMOOME_LCEJLOFGOMN => 43,
-            FeatureSwitchType::LJLMPHMOOME_JEBAEOEIHCG => 44,
-            FeatureSwitchType::LJLMPHMOOME_JLGIEFHFFOC => 45,
-            FeatureSwitchType::LJLMPHMOOME_BNHKIDDJLBG => 46,
-            FeatureSwitchType::LJLMPHMOOME_FOOJDEEAPIM => 47,
-            FeatureSwitchType::LJLMPHMOOME_ODPKHKPOCPK => 48,
-            FeatureSwitchType::LJLMPHMOOME_OAHNNBKEKLA => 49,
-            FeatureSwitchType::LJLMPHMOOME_BJMHCHJELGL => 50,
-            FeatureSwitchType::LJLMPHMOOME_EMJHPOGGIAA => 51,
-            FeatureSwitchType::LJLMPHMOOME_HGHEGIHAKJP => 52,
-            FeatureSwitchType::LJLMPHMOOME_CFNJMBEMBAI => 53,
-            FeatureSwitchType::LJLMPHMOOME_IBCABMDHEKK => 54,
-            FeatureSwitchType::LJLMPHMOOME_NNABJKHKFNB => 55,
-            FeatureSwitchType::LJLMPHMOOME_MDPCBHMOLBO => 56,
-            FeatureSwitchType::LJLMPHMOOME_FHDMMBDMJDK => 57,
-            FeatureSwitchType::LJLMPHMOOME_PABBJBBFGDN => 58,
-            FeatureSwitchType::LJLMPHMOOME_GBIFHHNENIF => 59,
-            FeatureSwitchType::LJLMPHMOOME_AMGEDMOMIOM => 60,
-            FeatureSwitchType::LJLMPHMOOME_OGAGNAACDBM => 61,
-            FeatureSwitchType::LJLMPHMOOME_LPNOOECACMP => 62,
-            FeatureSwitchType::LJLMPHMOOME_FCBINHANFHA => 63,
-            FeatureSwitchType::LJLMPHMOOME_GNNFCPAAHBC => 64,
-            FeatureSwitchType::LJLMPHMOOME_MLEBNFNALMD => 65,
-            FeatureSwitchType::LJLMPHMOOME_EFOOCBJDOEF => 66,
-            FeatureSwitchType::LJLMPHMOOME_ONHDPJHFOLH => 67,
-            FeatureSwitchType::LJLMPHMOOME_APPKBBOICGM => 68,
-            FeatureSwitchType::LJLMPHMOOME_BMHJCLKPGJJ => 69,
-            FeatureSwitchType::LJLMPHMOOME_MPKDLFJAJEI => 70,
-            FeatureSwitchType::LJLMPHMOOME_MIDBDOHMBPD => 71,
-            FeatureSwitchType::LJLMPHMOOME_JELJHDDJAAC => 72,
-            FeatureSwitchType::LJLMPHMOOME_GDFJFPCIBKP => 73,
-            FeatureSwitchType::LJLMPHMOOME_KCBENOKDKBJ => 74,
-            FeatureSwitchType::LJLMPHMOOME_GGPHBJACKAB => 75,
-            FeatureSwitchType::LJLMPHMOOME_FKFBOENCDHC => 76,
-            FeatureSwitchType::LJLMPHMOOME_CJDMOPDPILE => 77,
-            FeatureSwitchType::LJLMPHMOOME_FNHFFJLDGLG => 78,
-            FeatureSwitchType::LJLMPHMOOME_KALKAEAOCCP => 79,
-            FeatureSwitchType::LJLMPHMOOME_IIBPDMFHHMJ => 80,
-            FeatureSwitchType::LJLMPHMOOME_FIPAIJHKOHJ => 81,
-            FeatureSwitchType::LJLMPHMOOME_POFPBBLACAI => 82,
-            FeatureSwitchType::LJLMPHMOOME_BGBKBMHMKCJ => 83,
-            FeatureSwitchType::LJLMPHMOOME_BNMOPLBBDGB => 84,
-            FeatureSwitchType::LJLMPHMOOME_LKMEEFBDOPA => 85,
-            FeatureSwitchType::LJLMPHMOOME_GOHFDBJHENN => 86,
-            FeatureSwitchType::LJLMPHMOOME_EGGEIOJMODP => 87,
-            FeatureSwitchType::LJLMPHMOOME_HPMNGHPGKKK => 88,
+            FeatureSwitchType::FeatureSwitchType_BDGFDHMNCLO => 0,
+            FeatureSwitchType::FeatureSwitchType_DPNFFLLKNAF => 1,
+            FeatureSwitchType::FeatureSwitchType_IJKFENJGIKK => 2,
+            FeatureSwitchType::FeatureSwitchType_CAHLMOKLHEH => 3,
+            FeatureSwitchType::FeatureSwitchType_PPOAGIFBNED => 4,
+            FeatureSwitchType::FeatureSwitchType_JMNBOKDOANE => 5,
+            FeatureSwitchType::FeatureSwitchType_DCENDKLNADE => 6,
+            FeatureSwitchType::FeatureSwitchType_NFGPAKDLNLF => 7,
+            FeatureSwitchType::FeatureSwitchType_HEKKPIOLJMG => 8,
+            FeatureSwitchType::FeatureSwitchType_GBJLNNADNNK => 9,
+            FeatureSwitchType::FeatureSwitchType_HAIKIIIJDEB => 10,
+            FeatureSwitchType::FeatureSwitchType_FJOHAGOEPJF => 11,
+            FeatureSwitchType::FeatureSwitchType_PNCBMJNGCAJ => 12,
+            FeatureSwitchType::FeatureSwitchType_HMHECGHDMAM => 13,
+            FeatureSwitchType::FeatureSwitchType_KHOFGLBLBHO => 14,
+            FeatureSwitchType::FeatureSwitchType_HCMGBKBDBII => 15,
+            FeatureSwitchType::FeatureSwitchType_NDJEMKODNCA => 16,
+            FeatureSwitchType::FeatureSwitchType_NFLLMEFHGFF => 17,
+            FeatureSwitchType::FeatureSwitchType_GNBLOJKPCLH => 18,
+            FeatureSwitchType::FeatureSwitchType_EMHPMNBAMID => 19,
+            FeatureSwitchType::FeatureSwitchType_AJBBEPEKHIK => 20,
+            FeatureSwitchType::FeatureSwitchType_JHKFLELGDLN => 21,
+            FeatureSwitchType::FeatureSwitchType_CKEMDOKIPAM => 22,
+            FeatureSwitchType::FeatureSwitchType_IKFFDEMKMCA => 23,
+            FeatureSwitchType::FeatureSwitchType_BLIAEFNIFOJ => 24,
+            FeatureSwitchType::FeatureSwitchType_NAHMILDFOLL => 25,
+            FeatureSwitchType::FeatureSwitchType_KGKMPDDEEED => 26,
+            FeatureSwitchType::FeatureSwitchType_FLGLFMOMAMB => 27,
+            FeatureSwitchType::FeatureSwitchType_ANMMNADCNKP => 28,
+            FeatureSwitchType::FeatureSwitchType_MNCEAEIHEKK => 29,
+            FeatureSwitchType::FeatureSwitchType_PBBBNBHHCHP => 30,
+            FeatureSwitchType::FeatureSwitchType_ADPDIMBBADI => 31,
+            FeatureSwitchType::FeatureSwitchType_OHHNNBIINIB => 32,
+            FeatureSwitchType::FeatureSwitchType_MIFAHACFBJL => 33,
+            FeatureSwitchType::FeatureSwitchType_BNPLCFEJFBJ => 34,
+            FeatureSwitchType::FeatureSwitchType_KJHKLHMJIIC => 35,
+            FeatureSwitchType::FeatureSwitchType_GBPMHHIDLOP => 36,
+            FeatureSwitchType::FeatureSwitchType_MBJCENPIIJI => 37,
+            FeatureSwitchType::FeatureSwitchType_HDFGJIPPFFB => 38,
+            FeatureSwitchType::FeatureSwitchType_MIJEIBKKFBK => 39,
+            FeatureSwitchType::FeatureSwitchType_HLOMJLMMKHD => 40,
+            FeatureSwitchType::FeatureSwitchType_AHCHKLFPGPM => 41,
+            FeatureSwitchType::FeatureSwitchType_CEMAEBALNFD => 42,
+            FeatureSwitchType::FeatureSwitchType_GEMILMNIFAE => 43,
+            FeatureSwitchType::FeatureSwitchType_GLPFCNCKOFN => 44,
+            FeatureSwitchType::FeatureSwitchType_ALBIIAEHNAI => 45,
+            FeatureSwitchType::FeatureSwitchType_HLBEICNHKNJ => 46,
+            FeatureSwitchType::FeatureSwitchType_IFOMGBCAFNE => 47,
+            FeatureSwitchType::FeatureSwitchType_NPNFCGFNCNF => 48,
+            FeatureSwitchType::FeatureSwitchType_CNNADKGEHNK => 49,
+            FeatureSwitchType::FeatureSwitchType_CJKOEMHFJKI => 50,
+            FeatureSwitchType::FeatureSwitchType_CPBBNIOPODM => 51,
+            FeatureSwitchType::FeatureSwitchType_EEMCPKOFFBD => 52,
+            FeatureSwitchType::FeatureSwitchType_GECPEELLJFP => 53,
+            FeatureSwitchType::FeatureSwitchType_NOKDEADMEBN => 54,
+            FeatureSwitchType::FeatureSwitchType_DDMEGLKKLAB => 55,
+            FeatureSwitchType::FeatureSwitchType_KPNIJKHGBCE => 56,
+            FeatureSwitchType::FeatureSwitchType_PDPKHIAGHJA => 57,
+            FeatureSwitchType::FeatureSwitchType_MAMGGBPIOIB => 58,
+            FeatureSwitchType::FeatureSwitchType_PIDCEFDDLOD => 59,
+            FeatureSwitchType::FeatureSwitchType_DONFGCLHBKL => 60,
+            FeatureSwitchType::FeatureSwitchType_JOLFCLPFLCG => 61,
+            FeatureSwitchType::FeatureSwitchType_BOIGGEIMFBG => 62,
+            FeatureSwitchType::FeatureSwitchType_DJOLNBJKAKD => 63,
+            FeatureSwitchType::FeatureSwitchType_ILHCKIEEBMA => 64,
+            FeatureSwitchType::FeatureSwitchType_CHMADBMOAME => 65,
+            FeatureSwitchType::FeatureSwitchType_EEJJDJGFMNM => 66,
+            FeatureSwitchType::FeatureSwitchType_ICNADNGDBNA => 67,
+            FeatureSwitchType::FeatureSwitchType_EHPODCGNMHC => 68,
+            FeatureSwitchType::FeatureSwitchType_AJAGGHOPNHH => 69,
+            FeatureSwitchType::FeatureSwitchType_NEMAGJCPNFL => 70,
+            FeatureSwitchType::FeatureSwitchType_BDOJNBCIOAO => 71,
+            FeatureSwitchType::FeatureSwitchType_NBAILBBFBIF => 72,
+            FeatureSwitchType::FeatureSwitchType_FGOBKPIAAFK => 73,
+            FeatureSwitchType::FeatureSwitchType_BOGJHEEBMBK => 74,
+            FeatureSwitchType::FeatureSwitchType_LBLIMNBDAOB => 75,
+            FeatureSwitchType::FeatureSwitchType_IIKIILJOOPF => 76,
+            FeatureSwitchType::FeatureSwitchType_MPCAOCGHGFB => 77,
+            FeatureSwitchType::FeatureSwitchType_NEJELJNGABG => 78,
+            FeatureSwitchType::FeatureSwitchType_CMCLBDHBAKK => 79,
+            FeatureSwitchType::FeatureSwitchType_PMJKCHHFCEB => 80,
+            FeatureSwitchType::FeatureSwitchType_HNEBGJNEDNN => 81,
+            FeatureSwitchType::FeatureSwitchType_IBMGIAOCLJA => 82,
+            FeatureSwitchType::FeatureSwitchType_BLHNNNPOCFO => 83,
+            FeatureSwitchType::FeatureSwitchType_HOLGLPLGPIA => 84,
+            FeatureSwitchType::FeatureSwitchType_ABGEJICHLLN => 85,
+            FeatureSwitchType::FeatureSwitchType_EEODLHNCOCM => 86,
+            FeatureSwitchType::FeatureSwitchType_NNFMMODOMOB => 87,
+            FeatureSwitchType::FeatureSwitchType_CKONJGMFANF => 88,
+            FeatureSwitchType::FeatureSwitchType_LHONOMFNPKN => 89,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -601,7 +607,7 @@ impl ::protobuf::EnumFull for FeatureSwitchType {
 
 impl ::std::default::Default for FeatureSwitchType {
     fn default() -> Self {
-        FeatureSwitchType::LJLMPHMOOME_HFANBFDHIGC
+        FeatureSwitchType::FeatureSwitchType_BDGFDHMNCLO
     }
 }
 
@@ -612,62 +618,65 @@ impl FeatureSwitchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FeatureSwitchType.proto*\xa8\x14\n\x11FeatureSwitchType\x12\x1b\n\
-    \x17LJLMPHMOOME_HFANBFDHIGC\x10\0\x12\x1b\n\x17LJLMPHMOOME_HIHJDBCJGGI\
-    \x10\x01\x12\x1b\n\x17LJLMPHMOOME_MACNFJBLEEA\x10\x02\x12\x1b\n\x17LJLMP\
-    HMOOME_JFMBBNKABIE\x10\x03\x12\x1b\n\x17LJLMPHMOOME_LEPEEOKIDCN\x10\x04\
-    \x12\x1b\n\x17LJLMPHMOOME_HCKCMOCLFOP\x10\x05\x12\x1b\n\x17LJLMPHMOOME_J\
-    PCHICONJDC\x10\x06\x12\x1b\n\x17LJLMPHMOOME_PJAMCDJBOKB\x10\x07\x12\x1b\
-    \n\x17LJLMPHMOOME_CPPAFNJIOFI\x10\x08\x12\x1b\n\x17LJLMPHMOOME_PHDMBKOFB\
-    EL\x10\t\x12\x1b\n\x17LJLMPHMOOME_LKKFHIDLHPH\x10\n\x12\x1b\n\x17LJLMPHM\
-    OOME_CMIGKLDOGCG\x10\x0b\x12\x1b\n\x17LJLMPHMOOME_HOFAIIBHIBL\x10\x0c\
-    \x12\x1b\n\x17LJLMPHMOOME_KNGFLHDPPII\x10\r\x12\x1b\n\x17LJLMPHMOOME_KLL\
-    NLMGOONA\x10\x0e\x12\x1b\n\x17LJLMPHMOOME_BHFBCMLKOAM\x10\x0f\x12\x1b\n\
-    \x17LJLMPHMOOME_OMADHMPICEJ\x10\x10\x12\x1b\n\x17LJLMPHMOOME_EMOKJPPCJJC\
-    \x10\x11\x12\x1b\n\x17LJLMPHMOOME_NHCBFPPJELP\x10\x12\x12\x1b\n\x17LJLMP\
-    HMOOME_ALPNEJPBFJB\x10\x13\x12\x1b\n\x17LJLMPHMOOME_CLAJNECJDNL\x10\x14\
-    \x12\x1b\n\x17LJLMPHMOOME_FANHIAEGLNG\x10\x15\x12\x1b\n\x17LJLMPHMOOME_O\
-    HFNGLOKAPH\x10\x16\x12\x1b\n\x17LJLMPHMOOME_LCECJPDKDPB\x10\x17\x12\x1b\
-    \n\x17LJLMPHMOOME_OABMBECOMMA\x10\x18\x12\x1b\n\x17LJLMPHMOOME_EKFDEHCIP\
-    AH\x10\x19\x12\x1b\n\x17LJLMPHMOOME_PHDPKFEGIKH\x10\x1a\x12\x1b\n\x17LJL\
-    MPHMOOME_OLEDMPPGNMK\x10\x1b\x12\x1b\n\x17LJLMPHMOOME_LDKEAMCAIJK\x10\
-    \x1c\x12\x1b\n\x17LJLMPHMOOME_PPPAKAIOGOF\x10\x1d\x12\x1b\n\x17LJLMPHMOO\
-    ME_ENCBKEFOICN\x10\x1e\x12\x1b\n\x17LJLMPHMOOME_HHIIPPAIAGH\x10\x20\x12\
-    \x1b\n\x17LJLMPHMOOME_NKLNFDPKNHF\x10!\x12\x1b\n\x17LJLMPHMOOME_JPOLGNAL\
-    LGB\x10\"\x12\x1b\n\x17LJLMPHMOOME_KHNDNBGCCFK\x10#\x12\x1b\n\x17LJLMPHM\
-    OOME_DIHPMDFOECK\x10$\x12\x1b\n\x17LJLMPHMOOME_KKMAIHNKDPO\x10%\x12\x1b\
-    \n\x17LJLMPHMOOME_HKHBOEKLPBC\x10&\x12\x1b\n\x17LJLMPHMOOME_EIBLEKONDHP\
-    \x10'\x12\x1b\n\x17LJLMPHMOOME_PFGBPBGBKBH\x10(\x12\x1b\n\x17LJLMPHMOOME\
-    _CBEBGFNFELP\x10)\x12\x1b\n\x17LJLMPHMOOME_NEFFHLJLHAF\x10*\x12\x1b\n\
-    \x17LJLMPHMOOME_NCBCNFAOMKK\x10+\x12\x1b\n\x17LJLMPHMOOME_LCEJLOFGOMN\
-    \x10,\x12\x1b\n\x17LJLMPHMOOME_JEBAEOEIHCG\x10-\x12\x1b\n\x17LJLMPHMOOME\
-    _JLGIEFHFFOC\x10.\x12\x1b\n\x17LJLMPHMOOME_BNHKIDDJLBG\x10/\x12\x1b\n\
-    \x17LJLMPHMOOME_FOOJDEEAPIM\x100\x12\x1b\n\x17LJLMPHMOOME_ODPKHKPOCPK\
-    \x101\x12\x1b\n\x17LJLMPHMOOME_OAHNNBKEKLA\x102\x12\x1b\n\x17LJLMPHMOOME\
-    _BJMHCHJELGL\x103\x12\x1b\n\x17LJLMPHMOOME_EMJHPOGGIAA\x104\x12\x1b\n\
-    \x17LJLMPHMOOME_HGHEGIHAKJP\x105\x12\x1b\n\x17LJLMPHMOOME_CFNJMBEMBAI\
-    \x106\x12\x1b\n\x17LJLMPHMOOME_IBCABMDHEKK\x107\x12\x1b\n\x17LJLMPHMOOME\
-    _NNABJKHKFNB\x108\x12\x1b\n\x17LJLMPHMOOME_MDPCBHMOLBO\x10:\x12\x1b\n\
-    \x17LJLMPHMOOME_FHDMMBDMJDK\x10;\x12\x1b\n\x17LJLMPHMOOME_PABBJBBFGDN\
-    \x10<\x12\x1b\n\x17LJLMPHMOOME_GBIFHHNENIF\x10=\x12\x1b\n\x17LJLMPHMOOME\
-    _AMGEDMOMIOM\x10>\x12\x1b\n\x17LJLMPHMOOME_OGAGNAACDBM\x10?\x12\x1b\n\
-    \x17LJLMPHMOOME_LPNOOECACMP\x10@\x12\x1b\n\x17LJLMPHMOOME_FCBINHANFHA\
-    \x10A\x12\x1b\n\x17LJLMPHMOOME_GNNFCPAAHBC\x10B\x12\x1b\n\x17LJLMPHMOOME\
-    _MLEBNFNALMD\x10C\x12\x1b\n\x17LJLMPHMOOME_EFOOCBJDOEF\x10D\x12\x1b\n\
-    \x17LJLMPHMOOME_ONHDPJHFOLH\x10E\x12\x1b\n\x17LJLMPHMOOME_APPKBBOICGM\
-    \x10F\x12\x1b\n\x17LJLMPHMOOME_BMHJCLKPGJJ\x10G\x12\x1b\n\x17LJLMPHMOOME\
-    _MPKDLFJAJEI\x10H\x12\x1b\n\x17LJLMPHMOOME_MIDBDOHMBPD\x10I\x12\x1b\n\
-    \x17LJLMPHMOOME_JELJHDDJAAC\x10J\x12\x1b\n\x17LJLMPHMOOME_GDFJFPCIBKP\
-    \x10K\x12\x1b\n\x17LJLMPHMOOME_KCBENOKDKBJ\x10L\x12\x1b\n\x17LJLMPHMOOME\
-    _GGPHBJACKAB\x10M\x12\x1b\n\x17LJLMPHMOOME_FKFBOENCDHC\x10N\x12\x1b\n\
-    \x17LJLMPHMOOME_CJDMOPDPILE\x10O\x12\x1b\n\x17LJLMPHMOOME_FNHFFJLDGLG\
-    \x10P\x12\x1b\n\x17LJLMPHMOOME_KALKAEAOCCP\x10Q\x12\x1b\n\x17LJLMPHMOOME\
-    _IIBPDMFHHMJ\x10R\x12\x1b\n\x17LJLMPHMOOME_FIPAIJHKOHJ\x10S\x12\x1b\n\
-    \x17LJLMPHMOOME_POFPBBLACAI\x10T\x12\x1b\n\x17LJLMPHMOOME_BGBKBMHMKCJ\
-    \x10U\x12\x1b\n\x17LJLMPHMOOME_BNMOPLBBDGB\x10V\x12\x1b\n\x17LJLMPHMOOME\
-    _LKMEEFBDOPA\x10W\x12\x1b\n\x17LJLMPHMOOME_GOHFDBJHENN\x10X\x12\x1b\n\
-    \x17LJLMPHMOOME_EGGEIOJMODP\x10Y\x12\x1b\n\x17LJLMPHMOOME_HPMNGHPGKKK\
-    \x10Zb\x06proto3\
+    \n\x17FeatureSwitchType.proto*\xe1\x18\n\x11FeatureSwitchType\x12!\n\x1d\
+    FeatureSwitchType_BDGFDHMNCLO\x10\0\x12!\n\x1dFeatureSwitchType_DPNFFLLK\
+    NAF\x10\x01\x12!\n\x1dFeatureSwitchType_IJKFENJGIKK\x10\x02\x12!\n\x1dFe\
+    atureSwitchType_CAHLMOKLHEH\x10\x03\x12!\n\x1dFeatureSwitchType_PPOAGIFB\
+    NED\x10\x04\x12!\n\x1dFeatureSwitchType_JMNBOKDOANE\x10\x05\x12!\n\x1dFe\
+    atureSwitchType_DCENDKLNADE\x10\x06\x12!\n\x1dFeatureSwitchType_NFGPAKDL\
+    NLF\x10\x07\x12!\n\x1dFeatureSwitchType_HEKKPIOLJMG\x10\x08\x12!\n\x1dFe\
+    atureSwitchType_GBJLNNADNNK\x10\t\x12!\n\x1dFeatureSwitchType_HAIKIIIJDE\
+    B\x10\n\x12!\n\x1dFeatureSwitchType_FJOHAGOEPJF\x10\x0b\x12!\n\x1dFeatur\
+    eSwitchType_PNCBMJNGCAJ\x10\x0c\x12!\n\x1dFeatureSwitchType_HMHECGHDMAM\
+    \x10\r\x12!\n\x1dFeatureSwitchType_KHOFGLBLBHO\x10\x0e\x12!\n\x1dFeature\
+    SwitchType_HCMGBKBDBII\x10\x0f\x12!\n\x1dFeatureSwitchType_NDJEMKODNCA\
+    \x10\x10\x12!\n\x1dFeatureSwitchType_NFLLMEFHGFF\x10\x11\x12!\n\x1dFeatu\
+    reSwitchType_GNBLOJKPCLH\x10\x12\x12!\n\x1dFeatureSwitchType_EMHPMNBAMID\
+    \x10\x13\x12!\n\x1dFeatureSwitchType_AJBBEPEKHIK\x10\x14\x12!\n\x1dFeatu\
+    reSwitchType_JHKFLELGDLN\x10\x15\x12!\n\x1dFeatureSwitchType_CKEMDOKIPAM\
+    \x10\x16\x12!\n\x1dFeatureSwitchType_IKFFDEMKMCA\x10\x17\x12!\n\x1dFeatu\
+    reSwitchType_BLIAEFNIFOJ\x10\x18\x12!\n\x1dFeatureSwitchType_NAHMILDFOLL\
+    \x10\x19\x12!\n\x1dFeatureSwitchType_KGKMPDDEEED\x10\x1a\x12!\n\x1dFeatu\
+    reSwitchType_FLGLFMOMAMB\x10\x1b\x12!\n\x1dFeatureSwitchType_ANMMNADCNKP\
+    \x10\x1c\x12!\n\x1dFeatureSwitchType_MNCEAEIHEKK\x10\x1d\x12!\n\x1dFeatu\
+    reSwitchType_PBBBNBHHCHP\x10\x1e\x12!\n\x1dFeatureSwitchType_ADPDIMBBADI\
+    \x10\x20\x12!\n\x1dFeatureSwitchType_OHHNNBIINIB\x10!\x12!\n\x1dFeatureS\
+    witchType_MIFAHACFBJL\x10\"\x12!\n\x1dFeatureSwitchType_BNPLCFEJFBJ\x10#\
+    \x12!\n\x1dFeatureSwitchType_KJHKLHMJIIC\x10$\x12!\n\x1dFeatureSwitchTyp\
+    e_GBPMHHIDLOP\x10%\x12!\n\x1dFeatureSwitchType_MBJCENPIIJI\x10&\x12!\n\
+    \x1dFeatureSwitchType_HDFGJIPPFFB\x10'\x12!\n\x1dFeatureSwitchType_MIJEI\
+    BKKFBK\x10(\x12!\n\x1dFeatureSwitchType_HLOMJLMMKHD\x10)\x12!\n\x1dFeatu\
+    reSwitchType_AHCHKLFPGPM\x10*\x12!\n\x1dFeatureSwitchType_CEMAEBALNFD\
+    \x10+\x12!\n\x1dFeatureSwitchType_GEMILMNIFAE\x10,\x12!\n\x1dFeatureSwit\
+    chType_GLPFCNCKOFN\x10-\x12!\n\x1dFeatureSwitchType_ALBIIAEHNAI\x10.\x12\
+    !\n\x1dFeatureSwitchType_HLBEICNHKNJ\x10/\x12!\n\x1dFeatureSwitchType_IF\
+    OMGBCAFNE\x100\x12!\n\x1dFeatureSwitchType_NPNFCGFNCNF\x101\x12!\n\x1dFe\
+    atureSwitchType_CNNADKGEHNK\x102\x12!\n\x1dFeatureSwitchType_CJKOEMHFJKI\
+    \x103\x12!\n\x1dFeatureSwitchType_CPBBNIOPODM\x104\x12!\n\x1dFeatureSwit\
+    chType_EEMCPKOFFBD\x105\x12!\n\x1dFeatureSwitchType_GECPEELLJFP\x106\x12\
+    !\n\x1dFeatureSwitchType_NOKDEADMEBN\x107\x12!\n\x1dFeatureSwitchType_DD\
+    MEGLKKLAB\x108\x12!\n\x1dFeatureSwitchType_KPNIJKHGBCE\x10:\x12!\n\x1dFe\
+    atureSwitchType_PDPKHIAGHJA\x10;\x12!\n\x1dFeatureSwitchType_MAMGGBPIOIB\
+    \x10<\x12!\n\x1dFeatureSwitchType_PIDCEFDDLOD\x10=\x12!\n\x1dFeatureSwit\
+    chType_DONFGCLHBKL\x10>\x12!\n\x1dFeatureSwitchType_JOLFCLPFLCG\x10?\x12\
+    !\n\x1dFeatureSwitchType_BOIGGEIMFBG\x10@\x12!\n\x1dFeatureSwitchType_DJ\
+    OLNBJKAKD\x10A\x12!\n\x1dFeatureSwitchType_ILHCKIEEBMA\x10B\x12!\n\x1dFe\
+    atureSwitchType_CHMADBMOAME\x10C\x12!\n\x1dFeatureSwitchType_EEJJDJGFMNM\
+    \x10D\x12!\n\x1dFeatureSwitchType_ICNADNGDBNA\x10E\x12!\n\x1dFeatureSwit\
+    chType_EHPODCGNMHC\x10F\x12!\n\x1dFeatureSwitchType_AJAGGHOPNHH\x10G\x12\
+    !\n\x1dFeatureSwitchType_NEMAGJCPNFL\x10H\x12!\n\x1dFeatureSwitchType_BD\
+    OJNBCIOAO\x10I\x12!\n\x1dFeatureSwitchType_NBAILBBFBIF\x10J\x12!\n\x1dFe\
+    atureSwitchType_FGOBKPIAAFK\x10K\x12!\n\x1dFeatureSwitchType_BOGJHEEBMBK\
+    \x10L\x12!\n\x1dFeatureSwitchType_LBLIMNBDAOB\x10M\x12!\n\x1dFeatureSwit\
+    chType_IIKIILJOOPF\x10N\x12!\n\x1dFeatureSwitchType_MPCAOCGHGFB\x10O\x12\
+    !\n\x1dFeatureSwitchType_NEJELJNGABG\x10P\x12!\n\x1dFeatureSwitchType_CM\
+    CLBDHBAKK\x10Q\x12!\n\x1dFeatureSwitchType_PMJKCHHFCEB\x10R\x12!\n\x1dFe\
+    atureSwitchType_HNEBGJNEDNN\x10S\x12!\n\x1dFeatureSwitchType_IBMGIAOCLJA\
+    \x10T\x12!\n\x1dFeatureSwitchType_BLHNNNPOCFO\x10U\x12!\n\x1dFeatureSwit\
+    chType_HOLGLPLGPIA\x10V\x12!\n\x1dFeatureSwitchType_ABGEJICHLLN\x10W\x12\
+    !\n\x1dFeatureSwitchType_EEODLHNCOCM\x10X\x12!\n\x1dFeatureSwitchType_NN\
+    FMMODOMOB\x10Y\x12!\n\x1dFeatureSwitchType_CKONJGMFANF\x10Z\x12!\n\x1dFe\
+    atureSwitchType_LHONOMFNPKN\x10[b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

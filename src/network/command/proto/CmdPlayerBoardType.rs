@@ -27,38 +27,38 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPlayerBoardType)
 pub enum CmdPlayerBoardType {
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_GKJBAODJMJG)
-    JHPFKPGECCP_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_BAHEIMKFPNA)
-    JHPFKPGECCP_BAHEIMKFPNA = 2855,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_EANLABIAOOM)
-    JHPFKPGECCP_EANLABIAOOM = 2879,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_JGCNLNPCDFA)
-    JHPFKPGECCP_JGCNLNPCDFA = 2805,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_LDCHGKKNLIM)
-    JHPFKPGECCP_LDCHGKKNLIM = 2869,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_CBOGNEKAOFA)
-    JHPFKPGECCP_CBOGNEKAOFA = 2838,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_AGMHFGDHFAC)
-    JHPFKPGECCP_AGMHFGDHFAC = 2866,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_GEKADDBLNHP)
-    JHPFKPGECCP_GEKADDBLNHP = 2837,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_JDDNIPFMPIF)
-    JHPFKPGECCP_JDDNIPFMPIF = 2820,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_IHNBPNMEPGI)
-    JHPFKPGECCP_IHNBPNMEPGI = 2862,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_EFBKAAFPPNH)
-    JHPFKPGECCP_EFBKAAFPPNH = 2857,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_NONMEOIABJP)
-    JHPFKPGECCP_NONMEOIABJP = 2826,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_DBAILGHBGHH)
-    JHPFKPGECCP_DBAILGHBGHH = 2828,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_DECLCDFLFLG)
-    JHPFKPGECCP_DECLCDFLFLG = 2875,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_OJEDAKBLAAF)
-    JHPFKPGECCP_OJEDAKBLAAF = 2847,
-    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.JHPFKPGECCP_FMLGBCHJKLA)
-    JHPFKPGECCP_FMLGBCHJKLA = 2845,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_MNFEPONEDDJ)
+    CmdPlayerBoardType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_ECOMHCJIEPC)
+    CmdPlayerBoardType_ECOMHCJIEPC = 2857,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_GEAMJFJCHLM)
+    CmdPlayerBoardType_GEAMJFJCHLM = 2824,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_DAKFPPDMHGA)
+    CmdPlayerBoardType_DAKFPPDMHGA = 2862,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_BEKAEJODCMK)
+    CmdPlayerBoardType_BEKAEJODCMK = 2819,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_CBGOPKHMIOJ)
+    CmdPlayerBoardType_CBGOPKHMIOJ = 2883,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_LHEDGNMLNAI)
+    CmdPlayerBoardType_LHEDGNMLNAI = 2823,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_AGGCHFIOGLK)
+    CmdPlayerBoardType_AGGCHFIOGLK = 2804,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_PLGEODIKAGO)
+    CmdPlayerBoardType_PLGEODIKAGO = 2884,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_BMBOFGLAGBA)
+    CmdPlayerBoardType_BMBOFGLAGBA = 2846,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_CMHCKAMFDHP)
+    CmdPlayerBoardType_CMHCKAMFDHP = 2869,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_BNLACFLMANL)
+    CmdPlayerBoardType_BNLACFLMANL = 2900,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_FDCBKOFKKAO)
+    CmdPlayerBoardType_FDCBKOFKKAO = 2835,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_DEGOJCCJNMP)
+    CmdPlayerBoardType_DEGOJCCJNMP = 2813,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_IODBJICHAIE)
+    CmdPlayerBoardType_IODBJICHAIE = 2840,
+    // @@protoc_insertion_point(enum_value:CmdPlayerBoardType.CmdPlayerBoardType_KMLIIBAEAPA)
+    CmdPlayerBoardType_KMLIIBAEAPA = 2881,
 }
 
 impl ::protobuf::Enum for CmdPlayerBoardType {
@@ -70,65 +70,65 @@ impl ::protobuf::Enum for CmdPlayerBoardType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerBoardType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_GKJBAODJMJG),
-            2855 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_BAHEIMKFPNA),
-            2879 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_EANLABIAOOM),
-            2805 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_JGCNLNPCDFA),
-            2869 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_LDCHGKKNLIM),
-            2838 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_CBOGNEKAOFA),
-            2866 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_AGMHFGDHFAC),
-            2837 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_GEKADDBLNHP),
-            2820 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_JDDNIPFMPIF),
-            2862 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_IHNBPNMEPGI),
-            2857 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_EFBKAAFPPNH),
-            2826 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_NONMEOIABJP),
-            2828 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_DBAILGHBGHH),
-            2875 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_DECLCDFLFLG),
-            2847 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_OJEDAKBLAAF),
-            2845 => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_FMLGBCHJKLA),
+            0 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_MNFEPONEDDJ),
+            2857 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_ECOMHCJIEPC),
+            2824 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_GEAMJFJCHLM),
+            2862 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_DAKFPPDMHGA),
+            2819 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_BEKAEJODCMK),
+            2883 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_CBGOPKHMIOJ),
+            2823 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_LHEDGNMLNAI),
+            2804 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_AGGCHFIOGLK),
+            2884 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_PLGEODIKAGO),
+            2846 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_BMBOFGLAGBA),
+            2869 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_CMHCKAMFDHP),
+            2900 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_BNLACFLMANL),
+            2835 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_FDCBKOFKKAO),
+            2813 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_DEGOJCCJNMP),
+            2840 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_IODBJICHAIE),
+            2881 => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_KMLIIBAEAPA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPlayerBoardType> {
         match str {
-            "JHPFKPGECCP_GKJBAODJMJG" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_GKJBAODJMJG),
-            "JHPFKPGECCP_BAHEIMKFPNA" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_BAHEIMKFPNA),
-            "JHPFKPGECCP_EANLABIAOOM" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_EANLABIAOOM),
-            "JHPFKPGECCP_JGCNLNPCDFA" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_JGCNLNPCDFA),
-            "JHPFKPGECCP_LDCHGKKNLIM" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_LDCHGKKNLIM),
-            "JHPFKPGECCP_CBOGNEKAOFA" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_CBOGNEKAOFA),
-            "JHPFKPGECCP_AGMHFGDHFAC" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_AGMHFGDHFAC),
-            "JHPFKPGECCP_GEKADDBLNHP" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_GEKADDBLNHP),
-            "JHPFKPGECCP_JDDNIPFMPIF" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_JDDNIPFMPIF),
-            "JHPFKPGECCP_IHNBPNMEPGI" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_IHNBPNMEPGI),
-            "JHPFKPGECCP_EFBKAAFPPNH" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_EFBKAAFPPNH),
-            "JHPFKPGECCP_NONMEOIABJP" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_NONMEOIABJP),
-            "JHPFKPGECCP_DBAILGHBGHH" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_DBAILGHBGHH),
-            "JHPFKPGECCP_DECLCDFLFLG" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_DECLCDFLFLG),
-            "JHPFKPGECCP_OJEDAKBLAAF" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_OJEDAKBLAAF),
-            "JHPFKPGECCP_FMLGBCHJKLA" => ::std::option::Option::Some(CmdPlayerBoardType::JHPFKPGECCP_FMLGBCHJKLA),
+            "CmdPlayerBoardType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_MNFEPONEDDJ),
+            "CmdPlayerBoardType_ECOMHCJIEPC" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_ECOMHCJIEPC),
+            "CmdPlayerBoardType_GEAMJFJCHLM" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_GEAMJFJCHLM),
+            "CmdPlayerBoardType_DAKFPPDMHGA" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_DAKFPPDMHGA),
+            "CmdPlayerBoardType_BEKAEJODCMK" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_BEKAEJODCMK),
+            "CmdPlayerBoardType_CBGOPKHMIOJ" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_CBGOPKHMIOJ),
+            "CmdPlayerBoardType_LHEDGNMLNAI" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_LHEDGNMLNAI),
+            "CmdPlayerBoardType_AGGCHFIOGLK" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_AGGCHFIOGLK),
+            "CmdPlayerBoardType_PLGEODIKAGO" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_PLGEODIKAGO),
+            "CmdPlayerBoardType_BMBOFGLAGBA" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_BMBOFGLAGBA),
+            "CmdPlayerBoardType_CMHCKAMFDHP" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_CMHCKAMFDHP),
+            "CmdPlayerBoardType_BNLACFLMANL" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_BNLACFLMANL),
+            "CmdPlayerBoardType_FDCBKOFKKAO" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_FDCBKOFKKAO),
+            "CmdPlayerBoardType_DEGOJCCJNMP" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_DEGOJCCJNMP),
+            "CmdPlayerBoardType_IODBJICHAIE" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_IODBJICHAIE),
+            "CmdPlayerBoardType_KMLIIBAEAPA" => ::std::option::Option::Some(CmdPlayerBoardType::CmdPlayerBoardType_KMLIIBAEAPA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlayerBoardType] = &[
-        CmdPlayerBoardType::JHPFKPGECCP_GKJBAODJMJG,
-        CmdPlayerBoardType::JHPFKPGECCP_BAHEIMKFPNA,
-        CmdPlayerBoardType::JHPFKPGECCP_EANLABIAOOM,
-        CmdPlayerBoardType::JHPFKPGECCP_JGCNLNPCDFA,
-        CmdPlayerBoardType::JHPFKPGECCP_LDCHGKKNLIM,
-        CmdPlayerBoardType::JHPFKPGECCP_CBOGNEKAOFA,
-        CmdPlayerBoardType::JHPFKPGECCP_AGMHFGDHFAC,
-        CmdPlayerBoardType::JHPFKPGECCP_GEKADDBLNHP,
-        CmdPlayerBoardType::JHPFKPGECCP_JDDNIPFMPIF,
-        CmdPlayerBoardType::JHPFKPGECCP_IHNBPNMEPGI,
-        CmdPlayerBoardType::JHPFKPGECCP_EFBKAAFPPNH,
-        CmdPlayerBoardType::JHPFKPGECCP_NONMEOIABJP,
-        CmdPlayerBoardType::JHPFKPGECCP_DBAILGHBGHH,
-        CmdPlayerBoardType::JHPFKPGECCP_DECLCDFLFLG,
-        CmdPlayerBoardType::JHPFKPGECCP_OJEDAKBLAAF,
-        CmdPlayerBoardType::JHPFKPGECCP_FMLGBCHJKLA,
+        CmdPlayerBoardType::CmdPlayerBoardType_MNFEPONEDDJ,
+        CmdPlayerBoardType::CmdPlayerBoardType_ECOMHCJIEPC,
+        CmdPlayerBoardType::CmdPlayerBoardType_GEAMJFJCHLM,
+        CmdPlayerBoardType::CmdPlayerBoardType_DAKFPPDMHGA,
+        CmdPlayerBoardType::CmdPlayerBoardType_BEKAEJODCMK,
+        CmdPlayerBoardType::CmdPlayerBoardType_CBGOPKHMIOJ,
+        CmdPlayerBoardType::CmdPlayerBoardType_LHEDGNMLNAI,
+        CmdPlayerBoardType::CmdPlayerBoardType_AGGCHFIOGLK,
+        CmdPlayerBoardType::CmdPlayerBoardType_PLGEODIKAGO,
+        CmdPlayerBoardType::CmdPlayerBoardType_BMBOFGLAGBA,
+        CmdPlayerBoardType::CmdPlayerBoardType_CMHCKAMFDHP,
+        CmdPlayerBoardType::CmdPlayerBoardType_BNLACFLMANL,
+        CmdPlayerBoardType::CmdPlayerBoardType_FDCBKOFKKAO,
+        CmdPlayerBoardType::CmdPlayerBoardType_DEGOJCCJNMP,
+        CmdPlayerBoardType::CmdPlayerBoardType_IODBJICHAIE,
+        CmdPlayerBoardType::CmdPlayerBoardType_KMLIIBAEAPA,
     ];
 }
 
@@ -140,22 +140,22 @@ impl ::protobuf::EnumFull for CmdPlayerBoardType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPlayerBoardType::JHPFKPGECCP_GKJBAODJMJG => 0,
-            CmdPlayerBoardType::JHPFKPGECCP_BAHEIMKFPNA => 1,
-            CmdPlayerBoardType::JHPFKPGECCP_EANLABIAOOM => 2,
-            CmdPlayerBoardType::JHPFKPGECCP_JGCNLNPCDFA => 3,
-            CmdPlayerBoardType::JHPFKPGECCP_LDCHGKKNLIM => 4,
-            CmdPlayerBoardType::JHPFKPGECCP_CBOGNEKAOFA => 5,
-            CmdPlayerBoardType::JHPFKPGECCP_AGMHFGDHFAC => 6,
-            CmdPlayerBoardType::JHPFKPGECCP_GEKADDBLNHP => 7,
-            CmdPlayerBoardType::JHPFKPGECCP_JDDNIPFMPIF => 8,
-            CmdPlayerBoardType::JHPFKPGECCP_IHNBPNMEPGI => 9,
-            CmdPlayerBoardType::JHPFKPGECCP_EFBKAAFPPNH => 10,
-            CmdPlayerBoardType::JHPFKPGECCP_NONMEOIABJP => 11,
-            CmdPlayerBoardType::JHPFKPGECCP_DBAILGHBGHH => 12,
-            CmdPlayerBoardType::JHPFKPGECCP_DECLCDFLFLG => 13,
-            CmdPlayerBoardType::JHPFKPGECCP_OJEDAKBLAAF => 14,
-            CmdPlayerBoardType::JHPFKPGECCP_FMLGBCHJKLA => 15,
+            CmdPlayerBoardType::CmdPlayerBoardType_MNFEPONEDDJ => 0,
+            CmdPlayerBoardType::CmdPlayerBoardType_ECOMHCJIEPC => 1,
+            CmdPlayerBoardType::CmdPlayerBoardType_GEAMJFJCHLM => 2,
+            CmdPlayerBoardType::CmdPlayerBoardType_DAKFPPDMHGA => 3,
+            CmdPlayerBoardType::CmdPlayerBoardType_BEKAEJODCMK => 4,
+            CmdPlayerBoardType::CmdPlayerBoardType_CBGOPKHMIOJ => 5,
+            CmdPlayerBoardType::CmdPlayerBoardType_LHEDGNMLNAI => 6,
+            CmdPlayerBoardType::CmdPlayerBoardType_AGGCHFIOGLK => 7,
+            CmdPlayerBoardType::CmdPlayerBoardType_PLGEODIKAGO => 8,
+            CmdPlayerBoardType::CmdPlayerBoardType_BMBOFGLAGBA => 9,
+            CmdPlayerBoardType::CmdPlayerBoardType_CMHCKAMFDHP => 10,
+            CmdPlayerBoardType::CmdPlayerBoardType_BNLACFLMANL => 11,
+            CmdPlayerBoardType::CmdPlayerBoardType_FDCBKOFKKAO => 12,
+            CmdPlayerBoardType::CmdPlayerBoardType_DEGOJCCJNMP => 13,
+            CmdPlayerBoardType::CmdPlayerBoardType_IODBJICHAIE => 14,
+            CmdPlayerBoardType::CmdPlayerBoardType_KMLIIBAEAPA => 15,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -163,7 +163,7 @@ impl ::protobuf::EnumFull for CmdPlayerBoardType {
 
 impl ::std::default::Default for CmdPlayerBoardType {
     fn default() -> Self {
-        CmdPlayerBoardType::JHPFKPGECCP_GKJBAODJMJG
+        CmdPlayerBoardType::CmdPlayerBoardType_MNFEPONEDDJ
     }
 }
 
@@ -174,18 +174,19 @@ impl CmdPlayerBoardType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdPlayerBoardType.proto*\xf3\x03\n\x12CmdPlayerBoardType\x12\x1b\
-    \n\x17JHPFKPGECCP_GKJBAODJMJG\x10\0\x12\x1c\n\x17JHPFKPGECCP_BAHEIMKFPNA\
-    \x10\xa7\x16\x12\x1c\n\x17JHPFKPGECCP_EANLABIAOOM\x10\xbf\x16\x12\x1c\n\
-    \x17JHPFKPGECCP_JGCNLNPCDFA\x10\xf5\x15\x12\x1c\n\x17JHPFKPGECCP_LDCHGKK\
-    NLIM\x10\xb5\x16\x12\x1c\n\x17JHPFKPGECCP_CBOGNEKAOFA\x10\x96\x16\x12\
-    \x1c\n\x17JHPFKPGECCP_AGMHFGDHFAC\x10\xb2\x16\x12\x1c\n\x17JHPFKPGECCP_G\
-    EKADDBLNHP\x10\x95\x16\x12\x1c\n\x17JHPFKPGECCP_JDDNIPFMPIF\x10\x84\x16\
-    \x12\x1c\n\x17JHPFKPGECCP_IHNBPNMEPGI\x10\xae\x16\x12\x1c\n\x17JHPFKPGEC\
-    CP_EFBKAAFPPNH\x10\xa9\x16\x12\x1c\n\x17JHPFKPGECCP_NONMEOIABJP\x10\x8a\
-    \x16\x12\x1c\n\x17JHPFKPGECCP_DBAILGHBGHH\x10\x8c\x16\x12\x1c\n\x17JHPFK\
-    PGECCP_DECLCDFLFLG\x10\xbb\x16\x12\x1c\n\x17JHPFKPGECCP_OJEDAKBLAAF\x10\
-    \x9f\x16\x12\x1c\n\x17JHPFKPGECCP_FMLGBCHJKLA\x10\x9d\x16b\x06proto3\
+    \n\x18CmdPlayerBoardType.proto*\xe3\x04\n\x12CmdPlayerBoardType\x12\"\n\
+    \x1eCmdPlayerBoardType_MNFEPONEDDJ\x10\0\x12#\n\x1eCmdPlayerBoardType_EC\
+    OMHCJIEPC\x10\xa9\x16\x12#\n\x1eCmdPlayerBoardType_GEAMJFJCHLM\x10\x88\
+    \x16\x12#\n\x1eCmdPlayerBoardType_DAKFPPDMHGA\x10\xae\x16\x12#\n\x1eCmdP\
+    layerBoardType_BEKAEJODCMK\x10\x83\x16\x12#\n\x1eCmdPlayerBoardType_CBGO\
+    PKHMIOJ\x10\xc3\x16\x12#\n\x1eCmdPlayerBoardType_LHEDGNMLNAI\x10\x87\x16\
+    \x12#\n\x1eCmdPlayerBoardType_AGGCHFIOGLK\x10\xf4\x15\x12#\n\x1eCmdPlaye\
+    rBoardType_PLGEODIKAGO\x10\xc4\x16\x12#\n\x1eCmdPlayerBoardType_BMBOFGLA\
+    GBA\x10\x9e\x16\x12#\n\x1eCmdPlayerBoardType_CMHCKAMFDHP\x10\xb5\x16\x12\
+    #\n\x1eCmdPlayerBoardType_BNLACFLMANL\x10\xd4\x16\x12#\n\x1eCmdPlayerBoa\
+    rdType_FDCBKOFKKAO\x10\x93\x16\x12#\n\x1eCmdPlayerBoardType_DEGOJCCJNMP\
+    \x10\xfd\x15\x12#\n\x1eCmdPlayerBoardType_IODBJICHAIE\x10\x98\x16\x12#\n\
+    \x1eCmdPlayerBoardType_KMLIIBAEAPA\x10\xc1\x16b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

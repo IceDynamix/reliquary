@@ -30,10 +30,10 @@ pub struct MonopolyConfirmRandomScRsp {
     // message fields
     // @@protoc_insertion_point(field:MonopolyConfirmRandomScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyConfirmRandomScRsp.CCPMLANGEAF)
-    pub CCPMLANGEAF: ::protobuf::MessageField<super::KNEIDNKFKEI_LALDKDDDHML::KNEIDNKFKEI>,
     // @@protoc_insertion_point(field:MonopolyConfirmRandomScRsp.event_id)
     pub event_id: u32,
+    // @@protoc_insertion_point(field:MonopolyConfirmRandomScRsp.IKFNCMIODIG)
+    pub IKFNCMIODIG: ::protobuf::MessageField<super::AAFJGLBENCH_HAOOGILAOKL::AAFJGLBENCH>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyConfirmRandomScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl MonopolyConfirmRandomScRsp {
             |m: &MonopolyConfirmRandomScRsp| { &m.retcode },
             |m: &mut MonopolyConfirmRandomScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KNEIDNKFKEI_LALDKDDDHML::KNEIDNKFKEI>(
-            "CCPMLANGEAF",
-            |m: &MonopolyConfirmRandomScRsp| { &m.CCPMLANGEAF },
-            |m: &mut MonopolyConfirmRandomScRsp| { &mut m.CCPMLANGEAF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "event_id",
             |m: &MonopolyConfirmRandomScRsp| { &m.event_id },
             |m: &mut MonopolyConfirmRandomScRsp| { &mut m.event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AAFJGLBENCH_HAOOGILAOKL::AAFJGLBENCH>(
+            "IKFNCMIODIG",
+            |m: &MonopolyConfirmRandomScRsp| { &m.IKFNCMIODIG },
+            |m: &mut MonopolyConfirmRandomScRsp| { &mut m.IKFNCMIODIG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyConfirmRandomScRsp>(
             "MonopolyConfirmRandomScRsp",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for MonopolyConfirmRandomScRsp {
                 72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CCPMLANGEAF)?;
-                },
                 24 => {
                     self.event_id = is.read_uint32()?;
+                },
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKFNCMIODIG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for MonopolyConfirmRandomScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if let Some(v) = self.CCPMLANGEAF.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.event_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.event_id);
+        }
+        if let Some(v) = self.IKFNCMIODIG.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -126,11 +126,11 @@ impl ::protobuf::Message for MonopolyConfirmRandomScRsp {
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
         }
-        if let Some(v) = self.CCPMLANGEAF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if self.event_id != 0 {
             os.write_uint32(3, self.event_id)?;
+        }
+        if let Some(v) = self.IKFNCMIODIG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for MonopolyConfirmRandomScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.CCPMLANGEAF.clear();
         self.event_id = 0;
+        self.IKFNCMIODIG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyConfirmRandomScRsp {
         static instance: MonopolyConfirmRandomScRsp = MonopolyConfirmRandomScRsp {
             retcode: 0,
-            CCPMLANGEAF: ::protobuf::MessageField::none(),
             event_id: 0,
+            IKFNCMIODIG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyConfirmRandomScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20MonopolyConfirmRandomScRsp.proto\x1a\x1dKNEIDNKFKEI_LALDKDDDHML.pr\
+    \n\x20MonopolyConfirmRandomScRsp.proto\x1a\x1dAAFJGLBENCH_HAOOGILAOKL.pr\
     oto\"\x81\x01\n\x1aMonopolyConfirmRandomScRsp\x12\x18\n\x07retcode\x18\t\
-    \x20\x01(\rR\x07retcode\x12.\n\x0bCCPMLANGEAF\x18\x01\x20\x01(\x0b2\x0c.\
-    KNEIDNKFKEIR\x0bCCPMLANGEAF\x12\x19\n\x08event_id\x18\x03\x20\x01(\rR\
-    \x07eventIdb\x06proto3\
+    \x20\x01(\rR\x07retcode\x12\x19\n\x08event_id\x18\x03\x20\x01(\rR\x07eve\
+    ntId\x12.\n\x0bIKFNCMIODIG\x18\x0f\x20\x01(\x0b2\x0c.AAFJGLBENCHR\x0bIKF\
+    NCMIODIGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KNEIDNKFKEI_LALDKDDDHML::file_descriptor().clone());
+            deps.push(super::AAFJGLBENCH_HAOOGILAOKL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MonopolyConfirmRandomScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesGetOfferedCardPieceScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.PHIDDJOFOCE)
-    pub PHIDDJOFOCE: ::std::vec::Vec<super::HGDGCCBGKHM::HGDGCCBGKHM>,
-    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.JLGNFAGAJAO)
-    pub JLGNFAGAJAO: u64,
-    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.HJJAPIEKGHO)
-    pub HJJAPIEKGHO: bool,
-    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.NNLLADEGDGH)
-    pub NNLLADEGDGH: ::std::vec::Vec<super::NHHPGFIMOKF::NHHPGFIMOKF>,
-    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.LJJNNCBLMOC)
-    pub LJJNNCBLMOC: i64,
+    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.BJBBMKIEAFC)
+    pub BJBBMKIEAFC: ::std::vec::Vec<super::CKPCMLBMMEO::CKPCMLBMMEO>,
     // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.OKKCMFGJFCO)
+    pub OKKCMFGJFCO: u64,
+    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.PMLPGKNFBFB)
+    pub PMLPGKNFBFB: ::std::vec::Vec<super::HOGDMOFOCDF::HOGDMOFOCDF>,
+    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.GKBJFKECDIN)
+    pub GKBJFKECDIN: i64,
+    // @@protoc_insertion_point(field:PlanetFesGetOfferedCardPieceScRsp.HCONKJFFBFG)
+    pub HCONKJFFBFG: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesGetOfferedCardPieceScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -60,34 +60,34 @@ impl PlanetFesGetOfferedCardPieceScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PHIDDJOFOCE",
-            |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.PHIDDJOFOCE },
-            |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.PHIDDJOFOCE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLGNFAGAJAO",
-            |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.JLGNFAGAJAO },
-            |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.JLGNFAGAJAO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJJAPIEKGHO",
-            |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.HJJAPIEKGHO },
-            |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.HJJAPIEKGHO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NNLLADEGDGH",
-            |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.NNLLADEGDGH },
-            |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.NNLLADEGDGH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJJNNCBLMOC",
-            |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.LJJNNCBLMOC },
-            |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.LJJNNCBLMOC },
+            "BJBBMKIEAFC",
+            |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.BJBBMKIEAFC },
+            |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.BJBBMKIEAFC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.retcode },
             |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OKKCMFGJFCO",
+            |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.OKKCMFGJFCO },
+            |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.OKKCMFGJFCO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PMLPGKNFBFB",
+            |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.PMLPGKNFBFB },
+            |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.PMLPGKNFBFB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GKBJFKECDIN",
+            |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.GKBJFKECDIN },
+            |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.GKBJFKECDIN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HCONKJFFBFG",
+            |m: &PlanetFesGetOfferedCardPieceScRsp| { &m.HCONKJFFBFG },
+            |m: &mut PlanetFesGetOfferedCardPieceScRsp| { &mut m.HCONKJFFBFG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesGetOfferedCardPieceScRsp>(
             "PlanetFesGetOfferedCardPieceScRsp",
@@ -108,22 +108,22 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 18 => {
-                    self.PHIDDJOFOCE.push(is.read_message()?);
+                    self.BJBBMKIEAFC.push(is.read_message()?);
                 },
-                32 => {
-                    self.JLGNFAGAJAO = is.read_uint64()?;
-                },
-                40 => {
-                    self.HJJAPIEKGHO = is.read_bool()?;
-                },
-                66 => {
-                    self.NNLLADEGDGH.push(is.read_message()?);
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 24 => {
-                    self.LJJNNCBLMOC = is.read_int64()?;
+                    self.OKKCMFGJFCO = is.read_uint64()?;
                 },
-                96 => {
-                    self.retcode = is.read_uint32()?;
+                34 => {
+                    self.PMLPGKNFBFB.push(is.read_message()?);
+                },
+                8 => {
+                    self.GKBJFKECDIN = is.read_int64()?;
+                },
+                48 => {
+                    self.HCONKJFFBFG = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,25 +137,25 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PHIDDJOFOCE {
+        for value in &self.BJBBMKIEAFC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.JLGNFAGAJAO != 0 {
-            my_size += ::protobuf::rt::uint64_size(4, self.JLGNFAGAJAO);
-        }
-        if self.HJJAPIEKGHO != false {
-            my_size += 1 + 1;
-        }
-        for value in &self.NNLLADEGDGH {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.LJJNNCBLMOC != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.LJJNNCBLMOC);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if self.OKKCMFGJFCO != 0 {
+            my_size += ::protobuf::rt::uint64_size(3, self.OKKCMFGJFCO);
+        }
+        for value in &self.PMLPGKNFBFB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.GKBJFKECDIN != 0 {
+            my_size += ::protobuf::rt::int64_size(1, self.GKBJFKECDIN);
+        }
+        if self.HCONKJFFBFG != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PHIDDJOFOCE {
+        for v in &self.BJBBMKIEAFC {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if self.JLGNFAGAJAO != 0 {
-            os.write_uint64(4, self.JLGNFAGAJAO)?;
-        }
-        if self.HJJAPIEKGHO != false {
-            os.write_bool(5, self.HJJAPIEKGHO)?;
-        }
-        for v in &self.NNLLADEGDGH {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.LJJNNCBLMOC != 0 {
-            os.write_int64(3, self.LJJNNCBLMOC)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
+        }
+        if self.OKKCMFGJFCO != 0 {
+            os.write_uint64(3, self.OKKCMFGJFCO)?;
+        }
+        for v in &self.PMLPGKNFBFB {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        if self.GKBJFKECDIN != 0 {
+            os.write_int64(1, self.GKBJFKECDIN)?;
+        }
+        if self.HCONKJFFBFG != false {
+            os.write_bool(6, self.HCONKJFFBFG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,23 +198,23 @@ impl ::protobuf::Message for PlanetFesGetOfferedCardPieceScRsp {
     }
 
     fn clear(&mut self) {
-        self.PHIDDJOFOCE.clear();
-        self.JLGNFAGAJAO = 0;
-        self.HJJAPIEKGHO = false;
-        self.NNLLADEGDGH.clear();
-        self.LJJNNCBLMOC = 0;
+        self.BJBBMKIEAFC.clear();
         self.retcode = 0;
+        self.OKKCMFGJFCO = 0;
+        self.PMLPGKNFBFB.clear();
+        self.GKBJFKECDIN = 0;
+        self.HCONKJFFBFG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGetOfferedCardPieceScRsp {
         static instance: PlanetFesGetOfferedCardPieceScRsp = PlanetFesGetOfferedCardPieceScRsp {
-            PHIDDJOFOCE: ::std::vec::Vec::new(),
-            JLGNFAGAJAO: 0,
-            HJJAPIEKGHO: false,
-            NNLLADEGDGH: ::std::vec::Vec::new(),
-            LJJNNCBLMOC: 0,
+            BJBBMKIEAFC: ::std::vec::Vec::new(),
             retcode: 0,
+            OKKCMFGJFCO: 0,
+            PMLPGKNFBFB: ::std::vec::Vec::new(),
+            GKBJFKECDIN: 0,
+            HCONKJFFBFG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,14 +239,14 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetOfferedCardPieceScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'PlanetFesGetOfferedCardPieceScRsp.proto\x1a\x11HGDGCCBGKHM.proto\x1a\
-    \x11NHHPGFIMOKF.proto\"\x83\x02\n!PlanetFesGetOfferedCardPieceScRsp\x12.\
-    \n\x0bPHIDDJOFOCE\x18\x02\x20\x03(\x0b2\x0c.HGDGCCBGKHMR\x0bPHIDDJOFOCE\
-    \x12\x20\n\x0bJLGNFAGAJAO\x18\x04\x20\x01(\x04R\x0bJLGNFAGAJAO\x12\x20\n\
-    \x0bHJJAPIEKGHO\x18\x05\x20\x01(\x08R\x0bHJJAPIEKGHO\x12.\n\x0bNNLLADEGD\
-    GH\x18\x08\x20\x03(\x0b2\x0c.NHHPGFIMOKFR\x0bNNLLADEGDGH\x12\x20\n\x0bLJ\
-    JNNCBLMOC\x18\x03\x20\x01(\x03R\x0bLJJNNCBLMOC\x12\x18\n\x07retcode\x18\
-    \x0c\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n'PlanetFesGetOfferedCardPieceScRsp.proto\x1a\x11CKPCMLBMMEO.proto\x1a\
+    \x11HOGDMOFOCDF.proto\"\x83\x02\n!PlanetFesGetOfferedCardPieceScRsp\x12.\
+    \n\x0bBJBBMKIEAFC\x18\x02\x20\x03(\x0b2\x0c.CKPCMLBMMEOR\x0bBJBBMKIEAFC\
+    \x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bOKKCMF\
+    GJFCO\x18\x03\x20\x01(\x04R\x0bOKKCMFGJFCO\x12.\n\x0bPMLPGKNFBFB\x18\x04\
+    \x20\x03(\x0b2\x0c.HOGDMOFOCDFR\x0bPMLPGKNFBFB\x12\x20\n\x0bGKBJFKECDIN\
+    \x18\x01\x20\x01(\x03R\x0bGKBJFKECDIN\x12\x20\n\x0bHCONKJFFBFG\x18\x06\
+    \x20\x01(\x08R\x0bHCONKJFFBFGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -264,8 +264,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::HGDGCCBGKHM::file_descriptor().clone());
-            deps.push(super::NHHPGFIMOKF::file_descriptor().clone());
+            deps.push(super::CKPCMLBMMEO::file_descriptor().clone());
+            deps.push(super::HOGDMOFOCDF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesGetOfferedCardPieceScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

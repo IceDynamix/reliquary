@@ -30,8 +30,8 @@ pub struct RegionStopScNotify {
     // message fields
     // @@protoc_insertion_point(field:RegionStopScNotify.stop_end_time)
     pub stop_end_time: i64,
-    // @@protoc_insertion_point(field:RegionStopScNotify.JGAOLNBLOIG)
-    pub JGAOLNBLOIG: i64,
+    // @@protoc_insertion_point(field:RegionStopScNotify.stop_begin_time)
+    pub stop_begin_time: i64,
     // special fields
     // @@protoc_insertion_point(special_field:RegionStopScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl RegionStopScNotify {
             |m: &mut RegionStopScNotify| { &mut m.stop_end_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JGAOLNBLOIG",
-            |m: &RegionStopScNotify| { &m.JGAOLNBLOIG },
-            |m: &mut RegionStopScNotify| { &mut m.JGAOLNBLOIG },
+            "stop_begin_time",
+            |m: &RegionStopScNotify| { &m.stop_begin_time },
+            |m: &mut RegionStopScNotify| { &mut m.stop_begin_time },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RegionStopScNotify>(
             "RegionStopScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RegionStopScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
+                64 => {
                     self.stop_end_time = is.read_int64()?;
                 },
-                16 => {
-                    self.JGAOLNBLOIG = is.read_int64()?;
+                24 => {
+                    self.stop_begin_time = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RegionStopScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.stop_end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(9, self.stop_end_time);
+            my_size += ::protobuf::rt::int64_size(8, self.stop_end_time);
         }
-        if self.JGAOLNBLOIG != 0 {
-            my_size += ::protobuf::rt::int64_size(2, self.JGAOLNBLOIG);
+        if self.stop_begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(3, self.stop_begin_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RegionStopScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.stop_end_time != 0 {
-            os.write_int64(9, self.stop_end_time)?;
+            os.write_int64(8, self.stop_end_time)?;
         }
-        if self.JGAOLNBLOIG != 0 {
-            os.write_int64(2, self.JGAOLNBLOIG)?;
+        if self.stop_begin_time != 0 {
+            os.write_int64(3, self.stop_begin_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for RegionStopScNotify {
 
     fn clear(&mut self) {
         self.stop_end_time = 0;
-        self.JGAOLNBLOIG = 0;
+        self.stop_begin_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RegionStopScNotify {
         static instance: RegionStopScNotify = RegionStopScNotify {
             stop_end_time: 0,
-            JGAOLNBLOIG: 0,
+            stop_begin_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for RegionStopScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RegionStopScNotify.proto\"Z\n\x12RegionStopScNotify\x12\"\n\rstop_\
-    end_time\x18\t\x20\x01(\x03R\x0bstopEndTime\x12\x20\n\x0bJGAOLNBLOIG\x18\
-    \x02\x20\x01(\x03R\x0bJGAOLNBLOIGb\x06proto3\
+    \n\x18RegionStopScNotify.proto\"`\n\x12RegionStopScNotify\x12\"\n\rstop_\
+    end_time\x18\x08\x20\x01(\x03R\x0bstopEndTime\x12&\n\x0fstop_begin_time\
+    \x18\x03\x20\x01(\x03R\rstopBeginTimeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

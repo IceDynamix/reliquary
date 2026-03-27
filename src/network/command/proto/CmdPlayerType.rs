@@ -27,146 +27,146 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPlayerType)
 pub enum CmdPlayerType {
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_GKJBAODJMJG)
-    IKBHPCHDHCA_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_HMPNHCDGBMM)
-    IKBHPCHDHCA_HMPNHCDGBMM = 20,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_NHACLBOFCLH)
-    IKBHPCHDHCA_NHACLBOFCLH = 44,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_JLCKELFPBKC)
-    IKBHPCHDHCA_JLCKELFPBKC = 5,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_IGMAFLGGGON)
-    IKBHPCHDHCA_IGMAFLGGGON = 82,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_KJGPLKHJCGE)
-    IKBHPCHDHCA_KJGPLKHJCGE = 22,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_PKJADKHOIEO)
-    IKBHPCHDHCA_PKJADKHOIEO = 70,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_GPNCJFAFOBC)
-    IKBHPCHDHCA_GPNCJFAFOBC = 38,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_EPBKACODGIG)
-    IKBHPCHDHCA_EPBKACODGIG = 51,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_MCBAMAGKAAF)
-    IKBHPCHDHCA_MCBAMAGKAAF = 85,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_JDKBIABHJMN)
-    IKBHPCHDHCA_JDKBIABHJMN = 41,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_IPBIDAFNJGG)
-    IKBHPCHDHCA_IPBIDAFNJGG = 92,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_JGFBLJEEMCI)
-    IKBHPCHDHCA_JGFBLJEEMCI = 61,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_EHAKNNAHIGD)
-    IKBHPCHDHCA_EHAKNNAHIGD = 6,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_MIICCHPCOAO)
-    IKBHPCHDHCA_MIICCHPCOAO = 88,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_KBMKFPKBKHL)
-    IKBHPCHDHCA_KBMKFPKBKHL = 26,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_HHAADOFKNJO)
-    IKBHPCHDHCA_HHAADOFKNJO = 40,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_EOAMGCMNDLG)
-    IKBHPCHDHCA_EOAMGCMNDLG = 83,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_KMBAEFKLFCC)
-    IKBHPCHDHCA_KMBAEFKLFCC = 67,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_MGJAPDNOJCD)
-    IKBHPCHDHCA_MGJAPDNOJCD = 56,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_HAGOGOEAPIG)
-    IKBHPCHDHCA_HAGOGOEAPIG = 98,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_LKBLJBGJAFO)
-    IKBHPCHDHCA_LKBLJBGJAFO = 23,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_HHKMINKOFDH)
-    IKBHPCHDHCA_HHKMINKOFDH = 80,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_KBJAMKFMFAO)
-    IKBHPCHDHCA_KBJAMKFMFAO = 86,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_AIKDCIFBEKC)
-    IKBHPCHDHCA_AIKDCIFBEKC = 76,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_PKDMMCODCIF)
-    IKBHPCHDHCA_PKDMMCODCIF = 37,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_GFDLPCHMDMJ)
-    IKBHPCHDHCA_GFDLPCHMDMJ = 48,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_KFANNJGIMFK)
-    IKBHPCHDHCA_KFANNJGIMFK = 21,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_EAPPFLEPNDE)
-    IKBHPCHDHCA_EAPPFLEPNDE = 84,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_BDMDOKODNPE)
-    IKBHPCHDHCA_BDMDOKODNPE = 39,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_MCLHNIOGBHM)
-    IKBHPCHDHCA_MCLHNIOGBHM = 30,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_PHMKGOFDGIE)
-    IKBHPCHDHCA_PHMKGOFDGIE = 81,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_MPICAAMPFAI)
-    IKBHPCHDHCA_MPICAAMPFAI = 43,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_MIKDJEBOGKD)
-    IKBHPCHDHCA_MIKDJEBOGKD = 79,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_GJIIHCHNKKB)
-    IKBHPCHDHCA_GJIIHCHNKKB = 71,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_CHHHHAPLLHL)
-    IKBHPCHDHCA_CHHHHAPLLHL = 59,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_HJMIBLBDNLN)
-    IKBHPCHDHCA_HJMIBLBDNLN = 91,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_KOHEBFNMLBO)
-    IKBHPCHDHCA_KOHEBFNMLBO = 100,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_FEOHNCAMAPK)
-    IKBHPCHDHCA_FEOHNCAMAPK = 32,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_LMBJOOMBCKI)
-    IKBHPCHDHCA_LMBJOOMBCKI = 18,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_CBKAHNJKBPG)
-    IKBHPCHDHCA_CBKAHNJKBPG = 9,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_IILKFKNOBAE)
-    IKBHPCHDHCA_IILKFKNOBAE = 75,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_BGJGLNLKFDH)
-    IKBHPCHDHCA_BGJGLNLKFDH = 97,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_FNEJIOMOGGJ)
-    IKBHPCHDHCA_FNEJIOMOGGJ = 93,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_NDAJGINPGJM)
-    IKBHPCHDHCA_NDAJGINPGJM = 89,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_OGOIMGJNLOG)
-    IKBHPCHDHCA_OGOIMGJNLOG = 46,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_HOJHGPGIEJA)
-    IKBHPCHDHCA_HOJHGPGIEJA = 68,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_OILKGBIHBGB)
-    IKBHPCHDHCA_OILKGBIHBGB = 62,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_KMBEEBNBMHL)
-    IKBHPCHDHCA_KMBEEBNBMHL = 1,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_PDOIDJENBAE)
-    IKBHPCHDHCA_PDOIDJENBAE = 27,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_KPHAPPNEPPJ)
-    IKBHPCHDHCA_KPHAPPNEPPJ = 95,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_IKICEFJDAFM)
-    IKBHPCHDHCA_IKICEFJDAFM = 3,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_NIBHEDKIDOJ)
-    IKBHPCHDHCA_NIBHEDKIDOJ = 96,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_EOBMIGIMFHA)
-    IKBHPCHDHCA_EOBMIGIMFHA = 58,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_AIPJKHHNGJO)
-    IKBHPCHDHCA_AIPJKHHNGJO = 45,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_DOHGAMDLNOD)
-    IKBHPCHDHCA_DOHGAMDLNOD = 55,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_MGDGHOBCALD)
-    IKBHPCHDHCA_MGDGHOBCALD = 2,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_LJDJEKNLBFC)
-    IKBHPCHDHCA_LJDJEKNLBFC = 73,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_OHAJJOGNDKI)
-    IKBHPCHDHCA_OHAJJOGNDKI = 24,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_CJDDMJDPFJK)
-    IKBHPCHDHCA_CJDDMJDPFJK = 15,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_HBELNPCADPK)
-    IKBHPCHDHCA_HBELNPCADPK = 77,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_HKBAMHCPCLD)
-    IKBHPCHDHCA_HKBAMHCPCLD = 57,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_FBFMPALHIJH)
-    IKBHPCHDHCA_FBFMPALHIJH = 74,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_ADCPMIKLMFO)
-    IKBHPCHDHCA_ADCPMIKLMFO = 87,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_NNOHDAOJLPO)
-    IKBHPCHDHCA_NNOHDAOJLPO = 28,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_LINNHLBEPPF)
-    IKBHPCHDHCA_LINNHLBEPPF = 14,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_FEGHIDIKLAA)
-    IKBHPCHDHCA_FEGHIDIKLAA = 34,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_EBFFLDKAKGL)
-    IKBHPCHDHCA_EBFFLDKAKGL = 53,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_KGLKBNPIOMB)
-    IKBHPCHDHCA_KGLKBNPIOMB = 90,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.IKBHPCHDHCA_LOKGPOAJKJK)
-    IKBHPCHDHCA_LOKGPOAJKJK = 31,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_MNFEPONEDDJ)
+    CmdPlayerType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_ECDINNADBNG)
+    CmdPlayerType_ECDINNADBNG = 58,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_LPOBJONLLGF)
+    CmdPlayerType_LPOBJONLLGF = 18,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_ELLADLKNAFJ)
+    CmdPlayerType_ELLADLKNAFJ = 54,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_MBHBNCLKBMD)
+    CmdPlayerType_MBHBNCLKBMD = 39,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_GICNFOGBIOI)
+    CmdPlayerType_GICNFOGBIOI = 35,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_IMPIIECNPAA)
+    CmdPlayerType_IMPIIECNPAA = 16,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_JIBALAHBBDD)
+    CmdPlayerType_JIBALAHBBDD = 4,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_CMNMFHDCBPI)
+    CmdPlayerType_CMNMFHDCBPI = 48,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_LFGLOEAKBIJ)
+    CmdPlayerType_LFGLOEAKBIJ = 27,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_KMFCBFHLNJL)
+    CmdPlayerType_KMFCBFHLNJL = 100,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_HOJNPABFAOL)
+    CmdPlayerType_HOJNPABFAOL = 88,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_NCDNDFFFJEJ)
+    CmdPlayerType_NCDNDFFFJEJ = 77,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_JLJOMIFBMBA)
+    CmdPlayerType_JLJOMIFBMBA = 83,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_CKBCIOLCLKP)
+    CmdPlayerType_CKBCIOLCLKP = 82,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_MGAMOCDMJKN)
+    CmdPlayerType_MGAMOCDMJKN = 76,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_EGMMEFJGHIE)
+    CmdPlayerType_EGMMEFJGHIE = 25,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_NBDAFMDKLCN)
+    CmdPlayerType_NBDAFMDKLCN = 21,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_IINOKAPBNBJ)
+    CmdPlayerType_IINOKAPBNBJ = 98,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_JPBENGJBCBN)
+    CmdPlayerType_JPBENGJBCBN = 17,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_GNPCDOFMKAM)
+    CmdPlayerType_GNPCDOFMKAM = 73,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_EDAIOEMHKNN)
+    CmdPlayerType_EDAIOEMHKNN = 30,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_NOBKLFADJOF)
+    CmdPlayerType_NOBKLFADJOF = 61,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_KACNCMCLMDK)
+    CmdPlayerType_KACNCMCLMDK = 12,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_LOCJMELDAOO)
+    CmdPlayerType_LOCJMELDAOO = 51,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_HINNBGFCLIH)
+    CmdPlayerType_HINNBGFCLIH = 11,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_CIDNFFMNMKD)
+    CmdPlayerType_CIDNFFMNMKD = 23,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_HNOKABCKJFC)
+    CmdPlayerType_HNOKABCKJFC = 22,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_LBBMLBPBGEP)
+    CmdPlayerType_LBBMLBPBGEP = 46,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_MGMHBAPBNJH)
+    CmdPlayerType_MGMHBAPBNJH = 5,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_EBELFLLCGOK)
+    CmdPlayerType_EBELFLLCGOK = 43,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_LFFGOIOLJPJ)
+    CmdPlayerType_LFFGOIOLJPJ = 56,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_KJLIOEAOLAB)
+    CmdPlayerType_KJLIOEAOLAB = 41,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_MCMCJIPILCL)
+    CmdPlayerType_MCMCJIPILCL = 67,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_CDKNCPFKOOK)
+    CmdPlayerType_CDKNCPFKOOK = 19,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_POINHFIIMHI)
+    CmdPlayerType_POINHFIIMHI = 9,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_DIMGJBABHCD)
+    CmdPlayerType_DIMGJBABHCD = 7,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_HDPJFCEJJLG)
+    CmdPlayerType_HDPJFCEJJLG = 99,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_MBLNKABEOEP)
+    CmdPlayerType_MBLNKABEOEP = 14,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_GBFMEHOOGEI)
+    CmdPlayerType_GBFMEHOOGEI = 53,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_ELHNGGMJIOH)
+    CmdPlayerType_ELHNGGMJIOH = 33,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_HPINLMBEECK)
+    CmdPlayerType_HPINLMBEECK = 64,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_OIOLCJIHGOA)
+    CmdPlayerType_OIOLCJIHGOA = 74,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_LDICBGPJFFP)
+    CmdPlayerType_LDICBGPJFFP = 44,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_PEJHCBHMEAB)
+    CmdPlayerType_PEJHCBHMEAB = 79,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_CAOKMPLFMCM)
+    CmdPlayerType_CAOKMPLFMCM = 15,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_CKAEIEGMALG)
+    CmdPlayerType_CKAEIEGMALG = 6,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_HOCDHMBOANE)
+    CmdPlayerType_HOCDHMBOANE = 24,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_CBBKJJDLFGP)
+    CmdPlayerType_CBBKJJDLFGP = 69,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_LCEKFOHONOM)
+    CmdPlayerType_LCEKFOHONOM = 13,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_BBGKEMGBLNA)
+    CmdPlayerType_BBGKEMGBLNA = 34,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_AGKNFJKFELG)
+    CmdPlayerType_AGKNFJKFELG = 78,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_OKFFDDBAHHB)
+    CmdPlayerType_OKFFDDBAHHB = 36,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_ENCBFGNAOJJ)
+    CmdPlayerType_ENCBFGNAOJJ = 65,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_BEFOHADLFHC)
+    CmdPlayerType_BEFOHADLFHC = 86,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_IMMKIKBLMGA)
+    CmdPlayerType_IMMKIKBLMGA = 29,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_PPHOCHBAGIF)
+    CmdPlayerType_PPHOCHBAGIF = 97,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_FANJKOHKEBE)
+    CmdPlayerType_FANJKOHKEBE = 3,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_OMLLCHPADKL)
+    CmdPlayerType_OMLLCHPADKL = 85,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_EIEIKJFMNCH)
+    CmdPlayerType_EIEIKJFMNCH = 38,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_OBNJECIOEEM)
+    CmdPlayerType_OBNJECIOEEM = 75,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_ACNMNPEBBDL)
+    CmdPlayerType_ACNMNPEBBDL = 81,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_OBAODONPBMG)
+    CmdPlayerType_OBAODONPBMG = 59,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_AMJFNJJEDOF)
+    CmdPlayerType_AMJFNJJEDOF = 50,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_EJCNPLBJPJN)
+    CmdPlayerType_EJCNPLBJPJN = 31,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_CCKGEMCDDDN)
+    CmdPlayerType_CCKGEMCDDDN = 71,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_LKIOFEAKGHC)
+    CmdPlayerType_LKIOFEAKGHC = 80,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_GKELPLPAFHO)
+    CmdPlayerType_GKELPLPAFHO = 55,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_MGBOEKJEEDP)
+    CmdPlayerType_MGBOEKJEEDP = 60,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerType_AEPOJOIBCPA)
+    CmdPlayerType_AEPOJOIBCPA = 40,
 }
 
 impl ::protobuf::Enum for CmdPlayerType {
@@ -178,227 +178,227 @@ impl ::protobuf::Enum for CmdPlayerType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_GKJBAODJMJG),
-            20 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HMPNHCDGBMM),
-            44 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_NHACLBOFCLH),
-            5 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_JLCKELFPBKC),
-            82 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_IGMAFLGGGON),
-            22 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KJGPLKHJCGE),
-            70 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_PKJADKHOIEO),
-            38 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_GPNCJFAFOBC),
-            51 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EPBKACODGIG),
-            85 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MCBAMAGKAAF),
-            41 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_JDKBIABHJMN),
-            92 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_IPBIDAFNJGG),
-            61 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_JGFBLJEEMCI),
-            6 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EHAKNNAHIGD),
-            88 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MIICCHPCOAO),
-            26 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KBMKFPKBKHL),
-            40 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HHAADOFKNJO),
-            83 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EOAMGCMNDLG),
-            67 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KMBAEFKLFCC),
-            56 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MGJAPDNOJCD),
-            98 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HAGOGOEAPIG),
-            23 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_LKBLJBGJAFO),
-            80 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HHKMINKOFDH),
-            86 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KBJAMKFMFAO),
-            76 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_AIKDCIFBEKC),
-            37 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_PKDMMCODCIF),
-            48 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_GFDLPCHMDMJ),
-            21 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KFANNJGIMFK),
-            84 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EAPPFLEPNDE),
-            39 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_BDMDOKODNPE),
-            30 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MCLHNIOGBHM),
-            81 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_PHMKGOFDGIE),
-            43 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MPICAAMPFAI),
-            79 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MIKDJEBOGKD),
-            71 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_GJIIHCHNKKB),
-            59 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_CHHHHAPLLHL),
-            91 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HJMIBLBDNLN),
-            100 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KOHEBFNMLBO),
-            32 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_FEOHNCAMAPK),
-            18 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_LMBJOOMBCKI),
-            9 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_CBKAHNJKBPG),
-            75 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_IILKFKNOBAE),
-            97 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_BGJGLNLKFDH),
-            93 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_FNEJIOMOGGJ),
-            89 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_NDAJGINPGJM),
-            46 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_OGOIMGJNLOG),
-            68 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HOJHGPGIEJA),
-            62 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_OILKGBIHBGB),
-            1 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KMBEEBNBMHL),
-            27 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_PDOIDJENBAE),
-            95 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KPHAPPNEPPJ),
-            3 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_IKICEFJDAFM),
-            96 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_NIBHEDKIDOJ),
-            58 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EOBMIGIMFHA),
-            45 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_AIPJKHHNGJO),
-            55 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_DOHGAMDLNOD),
-            2 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MGDGHOBCALD),
-            73 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_LJDJEKNLBFC),
-            24 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_OHAJJOGNDKI),
-            15 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_CJDDMJDPFJK),
-            77 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HBELNPCADPK),
-            57 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HKBAMHCPCLD),
-            74 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_FBFMPALHIJH),
-            87 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_ADCPMIKLMFO),
-            28 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_NNOHDAOJLPO),
-            14 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_LINNHLBEPPF),
-            34 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_FEGHIDIKLAA),
-            53 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EBFFLDKAKGL),
-            90 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KGLKBNPIOMB),
-            31 => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_LOKGPOAJKJK),
+            0 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MNFEPONEDDJ),
+            58 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_ECDINNADBNG),
+            18 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LPOBJONLLGF),
+            54 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_ELLADLKNAFJ),
+            39 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MBHBNCLKBMD),
+            35 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_GICNFOGBIOI),
+            16 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_IMPIIECNPAA),
+            4 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_JIBALAHBBDD),
+            48 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CMNMFHDCBPI),
+            27 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LFGLOEAKBIJ),
+            100 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_KMFCBFHLNJL),
+            88 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HOJNPABFAOL),
+            77 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_NCDNDFFFJEJ),
+            83 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_JLJOMIFBMBA),
+            82 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CKBCIOLCLKP),
+            76 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MGAMOCDMJKN),
+            25 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_EGMMEFJGHIE),
+            21 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_NBDAFMDKLCN),
+            98 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_IINOKAPBNBJ),
+            17 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_JPBENGJBCBN),
+            73 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_GNPCDOFMKAM),
+            30 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_EDAIOEMHKNN),
+            61 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_NOBKLFADJOF),
+            12 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_KACNCMCLMDK),
+            51 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LOCJMELDAOO),
+            11 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HINNBGFCLIH),
+            23 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CIDNFFMNMKD),
+            22 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HNOKABCKJFC),
+            46 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LBBMLBPBGEP),
+            5 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MGMHBAPBNJH),
+            43 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_EBELFLLCGOK),
+            56 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LFFGOIOLJPJ),
+            41 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_KJLIOEAOLAB),
+            67 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MCMCJIPILCL),
+            19 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CDKNCPFKOOK),
+            9 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_POINHFIIMHI),
+            7 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_DIMGJBABHCD),
+            99 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HDPJFCEJJLG),
+            14 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MBLNKABEOEP),
+            53 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_GBFMEHOOGEI),
+            33 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_ELHNGGMJIOH),
+            64 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HPINLMBEECK),
+            74 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_OIOLCJIHGOA),
+            44 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LDICBGPJFFP),
+            79 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_PEJHCBHMEAB),
+            15 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CAOKMPLFMCM),
+            6 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CKAEIEGMALG),
+            24 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HOCDHMBOANE),
+            69 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CBBKJJDLFGP),
+            13 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LCEKFOHONOM),
+            34 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_BBGKEMGBLNA),
+            78 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_AGKNFJKFELG),
+            36 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_OKFFDDBAHHB),
+            65 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_ENCBFGNAOJJ),
+            86 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_BEFOHADLFHC),
+            29 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_IMMKIKBLMGA),
+            97 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_PPHOCHBAGIF),
+            3 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_FANJKOHKEBE),
+            85 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_OMLLCHPADKL),
+            38 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_EIEIKJFMNCH),
+            75 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_OBNJECIOEEM),
+            81 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_ACNMNPEBBDL),
+            59 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_OBAODONPBMG),
+            50 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_AMJFNJJEDOF),
+            31 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_EJCNPLBJPJN),
+            71 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CCKGEMCDDDN),
+            80 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LKIOFEAKGHC),
+            55 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_GKELPLPAFHO),
+            60 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MGBOEKJEEDP),
+            40 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_AEPOJOIBCPA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPlayerType> {
         match str {
-            "IKBHPCHDHCA_GKJBAODJMJG" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_GKJBAODJMJG),
-            "IKBHPCHDHCA_HMPNHCDGBMM" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HMPNHCDGBMM),
-            "IKBHPCHDHCA_NHACLBOFCLH" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_NHACLBOFCLH),
-            "IKBHPCHDHCA_JLCKELFPBKC" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_JLCKELFPBKC),
-            "IKBHPCHDHCA_IGMAFLGGGON" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_IGMAFLGGGON),
-            "IKBHPCHDHCA_KJGPLKHJCGE" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KJGPLKHJCGE),
-            "IKBHPCHDHCA_PKJADKHOIEO" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_PKJADKHOIEO),
-            "IKBHPCHDHCA_GPNCJFAFOBC" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_GPNCJFAFOBC),
-            "IKBHPCHDHCA_EPBKACODGIG" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EPBKACODGIG),
-            "IKBHPCHDHCA_MCBAMAGKAAF" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MCBAMAGKAAF),
-            "IKBHPCHDHCA_JDKBIABHJMN" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_JDKBIABHJMN),
-            "IKBHPCHDHCA_IPBIDAFNJGG" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_IPBIDAFNJGG),
-            "IKBHPCHDHCA_JGFBLJEEMCI" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_JGFBLJEEMCI),
-            "IKBHPCHDHCA_EHAKNNAHIGD" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EHAKNNAHIGD),
-            "IKBHPCHDHCA_MIICCHPCOAO" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MIICCHPCOAO),
-            "IKBHPCHDHCA_KBMKFPKBKHL" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KBMKFPKBKHL),
-            "IKBHPCHDHCA_HHAADOFKNJO" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HHAADOFKNJO),
-            "IKBHPCHDHCA_EOAMGCMNDLG" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EOAMGCMNDLG),
-            "IKBHPCHDHCA_KMBAEFKLFCC" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KMBAEFKLFCC),
-            "IKBHPCHDHCA_MGJAPDNOJCD" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MGJAPDNOJCD),
-            "IKBHPCHDHCA_HAGOGOEAPIG" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HAGOGOEAPIG),
-            "IKBHPCHDHCA_LKBLJBGJAFO" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_LKBLJBGJAFO),
-            "IKBHPCHDHCA_HHKMINKOFDH" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HHKMINKOFDH),
-            "IKBHPCHDHCA_KBJAMKFMFAO" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KBJAMKFMFAO),
-            "IKBHPCHDHCA_AIKDCIFBEKC" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_AIKDCIFBEKC),
-            "IKBHPCHDHCA_PKDMMCODCIF" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_PKDMMCODCIF),
-            "IKBHPCHDHCA_GFDLPCHMDMJ" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_GFDLPCHMDMJ),
-            "IKBHPCHDHCA_KFANNJGIMFK" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KFANNJGIMFK),
-            "IKBHPCHDHCA_EAPPFLEPNDE" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EAPPFLEPNDE),
-            "IKBHPCHDHCA_BDMDOKODNPE" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_BDMDOKODNPE),
-            "IKBHPCHDHCA_MCLHNIOGBHM" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MCLHNIOGBHM),
-            "IKBHPCHDHCA_PHMKGOFDGIE" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_PHMKGOFDGIE),
-            "IKBHPCHDHCA_MPICAAMPFAI" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MPICAAMPFAI),
-            "IKBHPCHDHCA_MIKDJEBOGKD" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MIKDJEBOGKD),
-            "IKBHPCHDHCA_GJIIHCHNKKB" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_GJIIHCHNKKB),
-            "IKBHPCHDHCA_CHHHHAPLLHL" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_CHHHHAPLLHL),
-            "IKBHPCHDHCA_HJMIBLBDNLN" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HJMIBLBDNLN),
-            "IKBHPCHDHCA_KOHEBFNMLBO" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KOHEBFNMLBO),
-            "IKBHPCHDHCA_FEOHNCAMAPK" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_FEOHNCAMAPK),
-            "IKBHPCHDHCA_LMBJOOMBCKI" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_LMBJOOMBCKI),
-            "IKBHPCHDHCA_CBKAHNJKBPG" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_CBKAHNJKBPG),
-            "IKBHPCHDHCA_IILKFKNOBAE" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_IILKFKNOBAE),
-            "IKBHPCHDHCA_BGJGLNLKFDH" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_BGJGLNLKFDH),
-            "IKBHPCHDHCA_FNEJIOMOGGJ" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_FNEJIOMOGGJ),
-            "IKBHPCHDHCA_NDAJGINPGJM" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_NDAJGINPGJM),
-            "IKBHPCHDHCA_OGOIMGJNLOG" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_OGOIMGJNLOG),
-            "IKBHPCHDHCA_HOJHGPGIEJA" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HOJHGPGIEJA),
-            "IKBHPCHDHCA_OILKGBIHBGB" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_OILKGBIHBGB),
-            "IKBHPCHDHCA_KMBEEBNBMHL" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KMBEEBNBMHL),
-            "IKBHPCHDHCA_PDOIDJENBAE" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_PDOIDJENBAE),
-            "IKBHPCHDHCA_KPHAPPNEPPJ" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KPHAPPNEPPJ),
-            "IKBHPCHDHCA_IKICEFJDAFM" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_IKICEFJDAFM),
-            "IKBHPCHDHCA_NIBHEDKIDOJ" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_NIBHEDKIDOJ),
-            "IKBHPCHDHCA_EOBMIGIMFHA" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EOBMIGIMFHA),
-            "IKBHPCHDHCA_AIPJKHHNGJO" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_AIPJKHHNGJO),
-            "IKBHPCHDHCA_DOHGAMDLNOD" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_DOHGAMDLNOD),
-            "IKBHPCHDHCA_MGDGHOBCALD" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_MGDGHOBCALD),
-            "IKBHPCHDHCA_LJDJEKNLBFC" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_LJDJEKNLBFC),
-            "IKBHPCHDHCA_OHAJJOGNDKI" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_OHAJJOGNDKI),
-            "IKBHPCHDHCA_CJDDMJDPFJK" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_CJDDMJDPFJK),
-            "IKBHPCHDHCA_HBELNPCADPK" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HBELNPCADPK),
-            "IKBHPCHDHCA_HKBAMHCPCLD" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_HKBAMHCPCLD),
-            "IKBHPCHDHCA_FBFMPALHIJH" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_FBFMPALHIJH),
-            "IKBHPCHDHCA_ADCPMIKLMFO" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_ADCPMIKLMFO),
-            "IKBHPCHDHCA_NNOHDAOJLPO" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_NNOHDAOJLPO),
-            "IKBHPCHDHCA_LINNHLBEPPF" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_LINNHLBEPPF),
-            "IKBHPCHDHCA_FEGHIDIKLAA" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_FEGHIDIKLAA),
-            "IKBHPCHDHCA_EBFFLDKAKGL" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_EBFFLDKAKGL),
-            "IKBHPCHDHCA_KGLKBNPIOMB" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_KGLKBNPIOMB),
-            "IKBHPCHDHCA_LOKGPOAJKJK" => ::std::option::Option::Some(CmdPlayerType::IKBHPCHDHCA_LOKGPOAJKJK),
+            "CmdPlayerType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MNFEPONEDDJ),
+            "CmdPlayerType_ECDINNADBNG" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_ECDINNADBNG),
+            "CmdPlayerType_LPOBJONLLGF" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LPOBJONLLGF),
+            "CmdPlayerType_ELLADLKNAFJ" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_ELLADLKNAFJ),
+            "CmdPlayerType_MBHBNCLKBMD" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MBHBNCLKBMD),
+            "CmdPlayerType_GICNFOGBIOI" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_GICNFOGBIOI),
+            "CmdPlayerType_IMPIIECNPAA" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_IMPIIECNPAA),
+            "CmdPlayerType_JIBALAHBBDD" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_JIBALAHBBDD),
+            "CmdPlayerType_CMNMFHDCBPI" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CMNMFHDCBPI),
+            "CmdPlayerType_LFGLOEAKBIJ" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LFGLOEAKBIJ),
+            "CmdPlayerType_KMFCBFHLNJL" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_KMFCBFHLNJL),
+            "CmdPlayerType_HOJNPABFAOL" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HOJNPABFAOL),
+            "CmdPlayerType_NCDNDFFFJEJ" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_NCDNDFFFJEJ),
+            "CmdPlayerType_JLJOMIFBMBA" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_JLJOMIFBMBA),
+            "CmdPlayerType_CKBCIOLCLKP" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CKBCIOLCLKP),
+            "CmdPlayerType_MGAMOCDMJKN" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MGAMOCDMJKN),
+            "CmdPlayerType_EGMMEFJGHIE" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_EGMMEFJGHIE),
+            "CmdPlayerType_NBDAFMDKLCN" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_NBDAFMDKLCN),
+            "CmdPlayerType_IINOKAPBNBJ" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_IINOKAPBNBJ),
+            "CmdPlayerType_JPBENGJBCBN" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_JPBENGJBCBN),
+            "CmdPlayerType_GNPCDOFMKAM" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_GNPCDOFMKAM),
+            "CmdPlayerType_EDAIOEMHKNN" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_EDAIOEMHKNN),
+            "CmdPlayerType_NOBKLFADJOF" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_NOBKLFADJOF),
+            "CmdPlayerType_KACNCMCLMDK" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_KACNCMCLMDK),
+            "CmdPlayerType_LOCJMELDAOO" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LOCJMELDAOO),
+            "CmdPlayerType_HINNBGFCLIH" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HINNBGFCLIH),
+            "CmdPlayerType_CIDNFFMNMKD" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CIDNFFMNMKD),
+            "CmdPlayerType_HNOKABCKJFC" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HNOKABCKJFC),
+            "CmdPlayerType_LBBMLBPBGEP" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LBBMLBPBGEP),
+            "CmdPlayerType_MGMHBAPBNJH" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MGMHBAPBNJH),
+            "CmdPlayerType_EBELFLLCGOK" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_EBELFLLCGOK),
+            "CmdPlayerType_LFFGOIOLJPJ" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LFFGOIOLJPJ),
+            "CmdPlayerType_KJLIOEAOLAB" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_KJLIOEAOLAB),
+            "CmdPlayerType_MCMCJIPILCL" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MCMCJIPILCL),
+            "CmdPlayerType_CDKNCPFKOOK" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CDKNCPFKOOK),
+            "CmdPlayerType_POINHFIIMHI" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_POINHFIIMHI),
+            "CmdPlayerType_DIMGJBABHCD" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_DIMGJBABHCD),
+            "CmdPlayerType_HDPJFCEJJLG" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HDPJFCEJJLG),
+            "CmdPlayerType_MBLNKABEOEP" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MBLNKABEOEP),
+            "CmdPlayerType_GBFMEHOOGEI" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_GBFMEHOOGEI),
+            "CmdPlayerType_ELHNGGMJIOH" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_ELHNGGMJIOH),
+            "CmdPlayerType_HPINLMBEECK" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HPINLMBEECK),
+            "CmdPlayerType_OIOLCJIHGOA" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_OIOLCJIHGOA),
+            "CmdPlayerType_LDICBGPJFFP" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LDICBGPJFFP),
+            "CmdPlayerType_PEJHCBHMEAB" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_PEJHCBHMEAB),
+            "CmdPlayerType_CAOKMPLFMCM" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CAOKMPLFMCM),
+            "CmdPlayerType_CKAEIEGMALG" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CKAEIEGMALG),
+            "CmdPlayerType_HOCDHMBOANE" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_HOCDHMBOANE),
+            "CmdPlayerType_CBBKJJDLFGP" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CBBKJJDLFGP),
+            "CmdPlayerType_LCEKFOHONOM" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LCEKFOHONOM),
+            "CmdPlayerType_BBGKEMGBLNA" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_BBGKEMGBLNA),
+            "CmdPlayerType_AGKNFJKFELG" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_AGKNFJKFELG),
+            "CmdPlayerType_OKFFDDBAHHB" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_OKFFDDBAHHB),
+            "CmdPlayerType_ENCBFGNAOJJ" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_ENCBFGNAOJJ),
+            "CmdPlayerType_BEFOHADLFHC" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_BEFOHADLFHC),
+            "CmdPlayerType_IMMKIKBLMGA" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_IMMKIKBLMGA),
+            "CmdPlayerType_PPHOCHBAGIF" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_PPHOCHBAGIF),
+            "CmdPlayerType_FANJKOHKEBE" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_FANJKOHKEBE),
+            "CmdPlayerType_OMLLCHPADKL" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_OMLLCHPADKL),
+            "CmdPlayerType_EIEIKJFMNCH" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_EIEIKJFMNCH),
+            "CmdPlayerType_OBNJECIOEEM" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_OBNJECIOEEM),
+            "CmdPlayerType_ACNMNPEBBDL" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_ACNMNPEBBDL),
+            "CmdPlayerType_OBAODONPBMG" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_OBAODONPBMG),
+            "CmdPlayerType_AMJFNJJEDOF" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_AMJFNJJEDOF),
+            "CmdPlayerType_EJCNPLBJPJN" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_EJCNPLBJPJN),
+            "CmdPlayerType_CCKGEMCDDDN" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_CCKGEMCDDDN),
+            "CmdPlayerType_LKIOFEAKGHC" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_LKIOFEAKGHC),
+            "CmdPlayerType_GKELPLPAFHO" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_GKELPLPAFHO),
+            "CmdPlayerType_MGBOEKJEEDP" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_MGBOEKJEEDP),
+            "CmdPlayerType_AEPOJOIBCPA" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerType_AEPOJOIBCPA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlayerType] = &[
-        CmdPlayerType::IKBHPCHDHCA_GKJBAODJMJG,
-        CmdPlayerType::IKBHPCHDHCA_HMPNHCDGBMM,
-        CmdPlayerType::IKBHPCHDHCA_NHACLBOFCLH,
-        CmdPlayerType::IKBHPCHDHCA_JLCKELFPBKC,
-        CmdPlayerType::IKBHPCHDHCA_IGMAFLGGGON,
-        CmdPlayerType::IKBHPCHDHCA_KJGPLKHJCGE,
-        CmdPlayerType::IKBHPCHDHCA_PKJADKHOIEO,
-        CmdPlayerType::IKBHPCHDHCA_GPNCJFAFOBC,
-        CmdPlayerType::IKBHPCHDHCA_EPBKACODGIG,
-        CmdPlayerType::IKBHPCHDHCA_MCBAMAGKAAF,
-        CmdPlayerType::IKBHPCHDHCA_JDKBIABHJMN,
-        CmdPlayerType::IKBHPCHDHCA_IPBIDAFNJGG,
-        CmdPlayerType::IKBHPCHDHCA_JGFBLJEEMCI,
-        CmdPlayerType::IKBHPCHDHCA_EHAKNNAHIGD,
-        CmdPlayerType::IKBHPCHDHCA_MIICCHPCOAO,
-        CmdPlayerType::IKBHPCHDHCA_KBMKFPKBKHL,
-        CmdPlayerType::IKBHPCHDHCA_HHAADOFKNJO,
-        CmdPlayerType::IKBHPCHDHCA_EOAMGCMNDLG,
-        CmdPlayerType::IKBHPCHDHCA_KMBAEFKLFCC,
-        CmdPlayerType::IKBHPCHDHCA_MGJAPDNOJCD,
-        CmdPlayerType::IKBHPCHDHCA_HAGOGOEAPIG,
-        CmdPlayerType::IKBHPCHDHCA_LKBLJBGJAFO,
-        CmdPlayerType::IKBHPCHDHCA_HHKMINKOFDH,
-        CmdPlayerType::IKBHPCHDHCA_KBJAMKFMFAO,
-        CmdPlayerType::IKBHPCHDHCA_AIKDCIFBEKC,
-        CmdPlayerType::IKBHPCHDHCA_PKDMMCODCIF,
-        CmdPlayerType::IKBHPCHDHCA_GFDLPCHMDMJ,
-        CmdPlayerType::IKBHPCHDHCA_KFANNJGIMFK,
-        CmdPlayerType::IKBHPCHDHCA_EAPPFLEPNDE,
-        CmdPlayerType::IKBHPCHDHCA_BDMDOKODNPE,
-        CmdPlayerType::IKBHPCHDHCA_MCLHNIOGBHM,
-        CmdPlayerType::IKBHPCHDHCA_PHMKGOFDGIE,
-        CmdPlayerType::IKBHPCHDHCA_MPICAAMPFAI,
-        CmdPlayerType::IKBHPCHDHCA_MIKDJEBOGKD,
-        CmdPlayerType::IKBHPCHDHCA_GJIIHCHNKKB,
-        CmdPlayerType::IKBHPCHDHCA_CHHHHAPLLHL,
-        CmdPlayerType::IKBHPCHDHCA_HJMIBLBDNLN,
-        CmdPlayerType::IKBHPCHDHCA_KOHEBFNMLBO,
-        CmdPlayerType::IKBHPCHDHCA_FEOHNCAMAPK,
-        CmdPlayerType::IKBHPCHDHCA_LMBJOOMBCKI,
-        CmdPlayerType::IKBHPCHDHCA_CBKAHNJKBPG,
-        CmdPlayerType::IKBHPCHDHCA_IILKFKNOBAE,
-        CmdPlayerType::IKBHPCHDHCA_BGJGLNLKFDH,
-        CmdPlayerType::IKBHPCHDHCA_FNEJIOMOGGJ,
-        CmdPlayerType::IKBHPCHDHCA_NDAJGINPGJM,
-        CmdPlayerType::IKBHPCHDHCA_OGOIMGJNLOG,
-        CmdPlayerType::IKBHPCHDHCA_HOJHGPGIEJA,
-        CmdPlayerType::IKBHPCHDHCA_OILKGBIHBGB,
-        CmdPlayerType::IKBHPCHDHCA_KMBEEBNBMHL,
-        CmdPlayerType::IKBHPCHDHCA_PDOIDJENBAE,
-        CmdPlayerType::IKBHPCHDHCA_KPHAPPNEPPJ,
-        CmdPlayerType::IKBHPCHDHCA_IKICEFJDAFM,
-        CmdPlayerType::IKBHPCHDHCA_NIBHEDKIDOJ,
-        CmdPlayerType::IKBHPCHDHCA_EOBMIGIMFHA,
-        CmdPlayerType::IKBHPCHDHCA_AIPJKHHNGJO,
-        CmdPlayerType::IKBHPCHDHCA_DOHGAMDLNOD,
-        CmdPlayerType::IKBHPCHDHCA_MGDGHOBCALD,
-        CmdPlayerType::IKBHPCHDHCA_LJDJEKNLBFC,
-        CmdPlayerType::IKBHPCHDHCA_OHAJJOGNDKI,
-        CmdPlayerType::IKBHPCHDHCA_CJDDMJDPFJK,
-        CmdPlayerType::IKBHPCHDHCA_HBELNPCADPK,
-        CmdPlayerType::IKBHPCHDHCA_HKBAMHCPCLD,
-        CmdPlayerType::IKBHPCHDHCA_FBFMPALHIJH,
-        CmdPlayerType::IKBHPCHDHCA_ADCPMIKLMFO,
-        CmdPlayerType::IKBHPCHDHCA_NNOHDAOJLPO,
-        CmdPlayerType::IKBHPCHDHCA_LINNHLBEPPF,
-        CmdPlayerType::IKBHPCHDHCA_FEGHIDIKLAA,
-        CmdPlayerType::IKBHPCHDHCA_EBFFLDKAKGL,
-        CmdPlayerType::IKBHPCHDHCA_KGLKBNPIOMB,
-        CmdPlayerType::IKBHPCHDHCA_LOKGPOAJKJK,
+        CmdPlayerType::CmdPlayerType_MNFEPONEDDJ,
+        CmdPlayerType::CmdPlayerType_ECDINNADBNG,
+        CmdPlayerType::CmdPlayerType_LPOBJONLLGF,
+        CmdPlayerType::CmdPlayerType_ELLADLKNAFJ,
+        CmdPlayerType::CmdPlayerType_MBHBNCLKBMD,
+        CmdPlayerType::CmdPlayerType_GICNFOGBIOI,
+        CmdPlayerType::CmdPlayerType_IMPIIECNPAA,
+        CmdPlayerType::CmdPlayerType_JIBALAHBBDD,
+        CmdPlayerType::CmdPlayerType_CMNMFHDCBPI,
+        CmdPlayerType::CmdPlayerType_LFGLOEAKBIJ,
+        CmdPlayerType::CmdPlayerType_KMFCBFHLNJL,
+        CmdPlayerType::CmdPlayerType_HOJNPABFAOL,
+        CmdPlayerType::CmdPlayerType_NCDNDFFFJEJ,
+        CmdPlayerType::CmdPlayerType_JLJOMIFBMBA,
+        CmdPlayerType::CmdPlayerType_CKBCIOLCLKP,
+        CmdPlayerType::CmdPlayerType_MGAMOCDMJKN,
+        CmdPlayerType::CmdPlayerType_EGMMEFJGHIE,
+        CmdPlayerType::CmdPlayerType_NBDAFMDKLCN,
+        CmdPlayerType::CmdPlayerType_IINOKAPBNBJ,
+        CmdPlayerType::CmdPlayerType_JPBENGJBCBN,
+        CmdPlayerType::CmdPlayerType_GNPCDOFMKAM,
+        CmdPlayerType::CmdPlayerType_EDAIOEMHKNN,
+        CmdPlayerType::CmdPlayerType_NOBKLFADJOF,
+        CmdPlayerType::CmdPlayerType_KACNCMCLMDK,
+        CmdPlayerType::CmdPlayerType_LOCJMELDAOO,
+        CmdPlayerType::CmdPlayerType_HINNBGFCLIH,
+        CmdPlayerType::CmdPlayerType_CIDNFFMNMKD,
+        CmdPlayerType::CmdPlayerType_HNOKABCKJFC,
+        CmdPlayerType::CmdPlayerType_LBBMLBPBGEP,
+        CmdPlayerType::CmdPlayerType_MGMHBAPBNJH,
+        CmdPlayerType::CmdPlayerType_EBELFLLCGOK,
+        CmdPlayerType::CmdPlayerType_LFFGOIOLJPJ,
+        CmdPlayerType::CmdPlayerType_KJLIOEAOLAB,
+        CmdPlayerType::CmdPlayerType_MCMCJIPILCL,
+        CmdPlayerType::CmdPlayerType_CDKNCPFKOOK,
+        CmdPlayerType::CmdPlayerType_POINHFIIMHI,
+        CmdPlayerType::CmdPlayerType_DIMGJBABHCD,
+        CmdPlayerType::CmdPlayerType_HDPJFCEJJLG,
+        CmdPlayerType::CmdPlayerType_MBLNKABEOEP,
+        CmdPlayerType::CmdPlayerType_GBFMEHOOGEI,
+        CmdPlayerType::CmdPlayerType_ELHNGGMJIOH,
+        CmdPlayerType::CmdPlayerType_HPINLMBEECK,
+        CmdPlayerType::CmdPlayerType_OIOLCJIHGOA,
+        CmdPlayerType::CmdPlayerType_LDICBGPJFFP,
+        CmdPlayerType::CmdPlayerType_PEJHCBHMEAB,
+        CmdPlayerType::CmdPlayerType_CAOKMPLFMCM,
+        CmdPlayerType::CmdPlayerType_CKAEIEGMALG,
+        CmdPlayerType::CmdPlayerType_HOCDHMBOANE,
+        CmdPlayerType::CmdPlayerType_CBBKJJDLFGP,
+        CmdPlayerType::CmdPlayerType_LCEKFOHONOM,
+        CmdPlayerType::CmdPlayerType_BBGKEMGBLNA,
+        CmdPlayerType::CmdPlayerType_AGKNFJKFELG,
+        CmdPlayerType::CmdPlayerType_OKFFDDBAHHB,
+        CmdPlayerType::CmdPlayerType_ENCBFGNAOJJ,
+        CmdPlayerType::CmdPlayerType_BEFOHADLFHC,
+        CmdPlayerType::CmdPlayerType_IMMKIKBLMGA,
+        CmdPlayerType::CmdPlayerType_PPHOCHBAGIF,
+        CmdPlayerType::CmdPlayerType_FANJKOHKEBE,
+        CmdPlayerType::CmdPlayerType_OMLLCHPADKL,
+        CmdPlayerType::CmdPlayerType_EIEIKJFMNCH,
+        CmdPlayerType::CmdPlayerType_OBNJECIOEEM,
+        CmdPlayerType::CmdPlayerType_ACNMNPEBBDL,
+        CmdPlayerType::CmdPlayerType_OBAODONPBMG,
+        CmdPlayerType::CmdPlayerType_AMJFNJJEDOF,
+        CmdPlayerType::CmdPlayerType_EJCNPLBJPJN,
+        CmdPlayerType::CmdPlayerType_CCKGEMCDDDN,
+        CmdPlayerType::CmdPlayerType_LKIOFEAKGHC,
+        CmdPlayerType::CmdPlayerType_GKELPLPAFHO,
+        CmdPlayerType::CmdPlayerType_MGBOEKJEEDP,
+        CmdPlayerType::CmdPlayerType_AEPOJOIBCPA,
     ];
 }
 
@@ -410,76 +410,76 @@ impl ::protobuf::EnumFull for CmdPlayerType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPlayerType::IKBHPCHDHCA_GKJBAODJMJG => 0,
-            CmdPlayerType::IKBHPCHDHCA_HMPNHCDGBMM => 1,
-            CmdPlayerType::IKBHPCHDHCA_NHACLBOFCLH => 2,
-            CmdPlayerType::IKBHPCHDHCA_JLCKELFPBKC => 3,
-            CmdPlayerType::IKBHPCHDHCA_IGMAFLGGGON => 4,
-            CmdPlayerType::IKBHPCHDHCA_KJGPLKHJCGE => 5,
-            CmdPlayerType::IKBHPCHDHCA_PKJADKHOIEO => 6,
-            CmdPlayerType::IKBHPCHDHCA_GPNCJFAFOBC => 7,
-            CmdPlayerType::IKBHPCHDHCA_EPBKACODGIG => 8,
-            CmdPlayerType::IKBHPCHDHCA_MCBAMAGKAAF => 9,
-            CmdPlayerType::IKBHPCHDHCA_JDKBIABHJMN => 10,
-            CmdPlayerType::IKBHPCHDHCA_IPBIDAFNJGG => 11,
-            CmdPlayerType::IKBHPCHDHCA_JGFBLJEEMCI => 12,
-            CmdPlayerType::IKBHPCHDHCA_EHAKNNAHIGD => 13,
-            CmdPlayerType::IKBHPCHDHCA_MIICCHPCOAO => 14,
-            CmdPlayerType::IKBHPCHDHCA_KBMKFPKBKHL => 15,
-            CmdPlayerType::IKBHPCHDHCA_HHAADOFKNJO => 16,
-            CmdPlayerType::IKBHPCHDHCA_EOAMGCMNDLG => 17,
-            CmdPlayerType::IKBHPCHDHCA_KMBAEFKLFCC => 18,
-            CmdPlayerType::IKBHPCHDHCA_MGJAPDNOJCD => 19,
-            CmdPlayerType::IKBHPCHDHCA_HAGOGOEAPIG => 20,
-            CmdPlayerType::IKBHPCHDHCA_LKBLJBGJAFO => 21,
-            CmdPlayerType::IKBHPCHDHCA_HHKMINKOFDH => 22,
-            CmdPlayerType::IKBHPCHDHCA_KBJAMKFMFAO => 23,
-            CmdPlayerType::IKBHPCHDHCA_AIKDCIFBEKC => 24,
-            CmdPlayerType::IKBHPCHDHCA_PKDMMCODCIF => 25,
-            CmdPlayerType::IKBHPCHDHCA_GFDLPCHMDMJ => 26,
-            CmdPlayerType::IKBHPCHDHCA_KFANNJGIMFK => 27,
-            CmdPlayerType::IKBHPCHDHCA_EAPPFLEPNDE => 28,
-            CmdPlayerType::IKBHPCHDHCA_BDMDOKODNPE => 29,
-            CmdPlayerType::IKBHPCHDHCA_MCLHNIOGBHM => 30,
-            CmdPlayerType::IKBHPCHDHCA_PHMKGOFDGIE => 31,
-            CmdPlayerType::IKBHPCHDHCA_MPICAAMPFAI => 32,
-            CmdPlayerType::IKBHPCHDHCA_MIKDJEBOGKD => 33,
-            CmdPlayerType::IKBHPCHDHCA_GJIIHCHNKKB => 34,
-            CmdPlayerType::IKBHPCHDHCA_CHHHHAPLLHL => 35,
-            CmdPlayerType::IKBHPCHDHCA_HJMIBLBDNLN => 36,
-            CmdPlayerType::IKBHPCHDHCA_KOHEBFNMLBO => 37,
-            CmdPlayerType::IKBHPCHDHCA_FEOHNCAMAPK => 38,
-            CmdPlayerType::IKBHPCHDHCA_LMBJOOMBCKI => 39,
-            CmdPlayerType::IKBHPCHDHCA_CBKAHNJKBPG => 40,
-            CmdPlayerType::IKBHPCHDHCA_IILKFKNOBAE => 41,
-            CmdPlayerType::IKBHPCHDHCA_BGJGLNLKFDH => 42,
-            CmdPlayerType::IKBHPCHDHCA_FNEJIOMOGGJ => 43,
-            CmdPlayerType::IKBHPCHDHCA_NDAJGINPGJM => 44,
-            CmdPlayerType::IKBHPCHDHCA_OGOIMGJNLOG => 45,
-            CmdPlayerType::IKBHPCHDHCA_HOJHGPGIEJA => 46,
-            CmdPlayerType::IKBHPCHDHCA_OILKGBIHBGB => 47,
-            CmdPlayerType::IKBHPCHDHCA_KMBEEBNBMHL => 48,
-            CmdPlayerType::IKBHPCHDHCA_PDOIDJENBAE => 49,
-            CmdPlayerType::IKBHPCHDHCA_KPHAPPNEPPJ => 50,
-            CmdPlayerType::IKBHPCHDHCA_IKICEFJDAFM => 51,
-            CmdPlayerType::IKBHPCHDHCA_NIBHEDKIDOJ => 52,
-            CmdPlayerType::IKBHPCHDHCA_EOBMIGIMFHA => 53,
-            CmdPlayerType::IKBHPCHDHCA_AIPJKHHNGJO => 54,
-            CmdPlayerType::IKBHPCHDHCA_DOHGAMDLNOD => 55,
-            CmdPlayerType::IKBHPCHDHCA_MGDGHOBCALD => 56,
-            CmdPlayerType::IKBHPCHDHCA_LJDJEKNLBFC => 57,
-            CmdPlayerType::IKBHPCHDHCA_OHAJJOGNDKI => 58,
-            CmdPlayerType::IKBHPCHDHCA_CJDDMJDPFJK => 59,
-            CmdPlayerType::IKBHPCHDHCA_HBELNPCADPK => 60,
-            CmdPlayerType::IKBHPCHDHCA_HKBAMHCPCLD => 61,
-            CmdPlayerType::IKBHPCHDHCA_FBFMPALHIJH => 62,
-            CmdPlayerType::IKBHPCHDHCA_ADCPMIKLMFO => 63,
-            CmdPlayerType::IKBHPCHDHCA_NNOHDAOJLPO => 64,
-            CmdPlayerType::IKBHPCHDHCA_LINNHLBEPPF => 65,
-            CmdPlayerType::IKBHPCHDHCA_FEGHIDIKLAA => 66,
-            CmdPlayerType::IKBHPCHDHCA_EBFFLDKAKGL => 67,
-            CmdPlayerType::IKBHPCHDHCA_KGLKBNPIOMB => 68,
-            CmdPlayerType::IKBHPCHDHCA_LOKGPOAJKJK => 69,
+            CmdPlayerType::CmdPlayerType_MNFEPONEDDJ => 0,
+            CmdPlayerType::CmdPlayerType_ECDINNADBNG => 1,
+            CmdPlayerType::CmdPlayerType_LPOBJONLLGF => 2,
+            CmdPlayerType::CmdPlayerType_ELLADLKNAFJ => 3,
+            CmdPlayerType::CmdPlayerType_MBHBNCLKBMD => 4,
+            CmdPlayerType::CmdPlayerType_GICNFOGBIOI => 5,
+            CmdPlayerType::CmdPlayerType_IMPIIECNPAA => 6,
+            CmdPlayerType::CmdPlayerType_JIBALAHBBDD => 7,
+            CmdPlayerType::CmdPlayerType_CMNMFHDCBPI => 8,
+            CmdPlayerType::CmdPlayerType_LFGLOEAKBIJ => 9,
+            CmdPlayerType::CmdPlayerType_KMFCBFHLNJL => 10,
+            CmdPlayerType::CmdPlayerType_HOJNPABFAOL => 11,
+            CmdPlayerType::CmdPlayerType_NCDNDFFFJEJ => 12,
+            CmdPlayerType::CmdPlayerType_JLJOMIFBMBA => 13,
+            CmdPlayerType::CmdPlayerType_CKBCIOLCLKP => 14,
+            CmdPlayerType::CmdPlayerType_MGAMOCDMJKN => 15,
+            CmdPlayerType::CmdPlayerType_EGMMEFJGHIE => 16,
+            CmdPlayerType::CmdPlayerType_NBDAFMDKLCN => 17,
+            CmdPlayerType::CmdPlayerType_IINOKAPBNBJ => 18,
+            CmdPlayerType::CmdPlayerType_JPBENGJBCBN => 19,
+            CmdPlayerType::CmdPlayerType_GNPCDOFMKAM => 20,
+            CmdPlayerType::CmdPlayerType_EDAIOEMHKNN => 21,
+            CmdPlayerType::CmdPlayerType_NOBKLFADJOF => 22,
+            CmdPlayerType::CmdPlayerType_KACNCMCLMDK => 23,
+            CmdPlayerType::CmdPlayerType_LOCJMELDAOO => 24,
+            CmdPlayerType::CmdPlayerType_HINNBGFCLIH => 25,
+            CmdPlayerType::CmdPlayerType_CIDNFFMNMKD => 26,
+            CmdPlayerType::CmdPlayerType_HNOKABCKJFC => 27,
+            CmdPlayerType::CmdPlayerType_LBBMLBPBGEP => 28,
+            CmdPlayerType::CmdPlayerType_MGMHBAPBNJH => 29,
+            CmdPlayerType::CmdPlayerType_EBELFLLCGOK => 30,
+            CmdPlayerType::CmdPlayerType_LFFGOIOLJPJ => 31,
+            CmdPlayerType::CmdPlayerType_KJLIOEAOLAB => 32,
+            CmdPlayerType::CmdPlayerType_MCMCJIPILCL => 33,
+            CmdPlayerType::CmdPlayerType_CDKNCPFKOOK => 34,
+            CmdPlayerType::CmdPlayerType_POINHFIIMHI => 35,
+            CmdPlayerType::CmdPlayerType_DIMGJBABHCD => 36,
+            CmdPlayerType::CmdPlayerType_HDPJFCEJJLG => 37,
+            CmdPlayerType::CmdPlayerType_MBLNKABEOEP => 38,
+            CmdPlayerType::CmdPlayerType_GBFMEHOOGEI => 39,
+            CmdPlayerType::CmdPlayerType_ELHNGGMJIOH => 40,
+            CmdPlayerType::CmdPlayerType_HPINLMBEECK => 41,
+            CmdPlayerType::CmdPlayerType_OIOLCJIHGOA => 42,
+            CmdPlayerType::CmdPlayerType_LDICBGPJFFP => 43,
+            CmdPlayerType::CmdPlayerType_PEJHCBHMEAB => 44,
+            CmdPlayerType::CmdPlayerType_CAOKMPLFMCM => 45,
+            CmdPlayerType::CmdPlayerType_CKAEIEGMALG => 46,
+            CmdPlayerType::CmdPlayerType_HOCDHMBOANE => 47,
+            CmdPlayerType::CmdPlayerType_CBBKJJDLFGP => 48,
+            CmdPlayerType::CmdPlayerType_LCEKFOHONOM => 49,
+            CmdPlayerType::CmdPlayerType_BBGKEMGBLNA => 50,
+            CmdPlayerType::CmdPlayerType_AGKNFJKFELG => 51,
+            CmdPlayerType::CmdPlayerType_OKFFDDBAHHB => 52,
+            CmdPlayerType::CmdPlayerType_ENCBFGNAOJJ => 53,
+            CmdPlayerType::CmdPlayerType_BEFOHADLFHC => 54,
+            CmdPlayerType::CmdPlayerType_IMMKIKBLMGA => 55,
+            CmdPlayerType::CmdPlayerType_PPHOCHBAGIF => 56,
+            CmdPlayerType::CmdPlayerType_FANJKOHKEBE => 57,
+            CmdPlayerType::CmdPlayerType_OMLLCHPADKL => 58,
+            CmdPlayerType::CmdPlayerType_EIEIKJFMNCH => 59,
+            CmdPlayerType::CmdPlayerType_OBNJECIOEEM => 60,
+            CmdPlayerType::CmdPlayerType_ACNMNPEBBDL => 61,
+            CmdPlayerType::CmdPlayerType_OBAODONPBMG => 62,
+            CmdPlayerType::CmdPlayerType_AMJFNJJEDOF => 63,
+            CmdPlayerType::CmdPlayerType_EJCNPLBJPJN => 64,
+            CmdPlayerType::CmdPlayerType_CCKGEMCDDDN => 65,
+            CmdPlayerType::CmdPlayerType_LKIOFEAKGHC => 66,
+            CmdPlayerType::CmdPlayerType_GKELPLPAFHO => 67,
+            CmdPlayerType::CmdPlayerType_MGBOEKJEEDP => 68,
+            CmdPlayerType::CmdPlayerType_AEPOJOIBCPA => 69,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -487,7 +487,7 @@ impl ::protobuf::EnumFull for CmdPlayerType {
 
 impl ::std::default::Default for CmdPlayerType {
     fn default() -> Self {
-        CmdPlayerType::IKBHPCHDHCA_GKJBAODJMJG
+        CmdPlayerType::CmdPlayerType_MNFEPONEDDJ
     }
 }
 
@@ -498,49 +498,51 @@ impl CmdPlayerType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdPlayerType.proto*\xfd\x0f\n\rCmdPlayerType\x12\x1b\n\x17IKBHPCH\
-    DHCA_GKJBAODJMJG\x10\0\x12\x1b\n\x17IKBHPCHDHCA_HMPNHCDGBMM\x10\x14\x12\
-    \x1b\n\x17IKBHPCHDHCA_NHACLBOFCLH\x10,\x12\x1b\n\x17IKBHPCHDHCA_JLCKELFP\
-    BKC\x10\x05\x12\x1b\n\x17IKBHPCHDHCA_IGMAFLGGGON\x10R\x12\x1b\n\x17IKBHP\
-    CHDHCA_KJGPLKHJCGE\x10\x16\x12\x1b\n\x17IKBHPCHDHCA_PKJADKHOIEO\x10F\x12\
-    \x1b\n\x17IKBHPCHDHCA_GPNCJFAFOBC\x10&\x12\x1b\n\x17IKBHPCHDHCA_EPBKACOD\
-    GIG\x103\x12\x1b\n\x17IKBHPCHDHCA_MCBAMAGKAAF\x10U\x12\x1b\n\x17IKBHPCHD\
-    HCA_JDKBIABHJMN\x10)\x12\x1b\n\x17IKBHPCHDHCA_IPBIDAFNJGG\x10\\\x12\x1b\
-    \n\x17IKBHPCHDHCA_JGFBLJEEMCI\x10=\x12\x1b\n\x17IKBHPCHDHCA_EHAKNNAHIGD\
-    \x10\x06\x12\x1b\n\x17IKBHPCHDHCA_MIICCHPCOAO\x10X\x12\x1b\n\x17IKBHPCHD\
-    HCA_KBMKFPKBKHL\x10\x1a\x12\x1b\n\x17IKBHPCHDHCA_HHAADOFKNJO\x10(\x12\
-    \x1b\n\x17IKBHPCHDHCA_EOAMGCMNDLG\x10S\x12\x1b\n\x17IKBHPCHDHCA_KMBAEFKL\
-    FCC\x10C\x12\x1b\n\x17IKBHPCHDHCA_MGJAPDNOJCD\x108\x12\x1b\n\x17IKBHPCHD\
-    HCA_HAGOGOEAPIG\x10b\x12\x1b\n\x17IKBHPCHDHCA_LKBLJBGJAFO\x10\x17\x12\
-    \x1b\n\x17IKBHPCHDHCA_HHKMINKOFDH\x10P\x12\x1b\n\x17IKBHPCHDHCA_KBJAMKFM\
-    FAO\x10V\x12\x1b\n\x17IKBHPCHDHCA_AIKDCIFBEKC\x10L\x12\x1b\n\x17IKBHPCHD\
-    HCA_PKDMMCODCIF\x10%\x12\x1b\n\x17IKBHPCHDHCA_GFDLPCHMDMJ\x100\x12\x1b\n\
-    \x17IKBHPCHDHCA_KFANNJGIMFK\x10\x15\x12\x1b\n\x17IKBHPCHDHCA_EAPPFLEPNDE\
-    \x10T\x12\x1b\n\x17IKBHPCHDHCA_BDMDOKODNPE\x10'\x12\x1b\n\x17IKBHPCHDHCA\
-    _MCLHNIOGBHM\x10\x1e\x12\x1b\n\x17IKBHPCHDHCA_PHMKGOFDGIE\x10Q\x12\x1b\n\
-    \x17IKBHPCHDHCA_MPICAAMPFAI\x10+\x12\x1b\n\x17IKBHPCHDHCA_MIKDJEBOGKD\
-    \x10O\x12\x1b\n\x17IKBHPCHDHCA_GJIIHCHNKKB\x10G\x12\x1b\n\x17IKBHPCHDHCA\
-    _CHHHHAPLLHL\x10;\x12\x1b\n\x17IKBHPCHDHCA_HJMIBLBDNLN\x10[\x12\x1b\n\
-    \x17IKBHPCHDHCA_KOHEBFNMLBO\x10d\x12\x1b\n\x17IKBHPCHDHCA_FEOHNCAMAPK\
-    \x10\x20\x12\x1b\n\x17IKBHPCHDHCA_LMBJOOMBCKI\x10\x12\x12\x1b\n\x17IKBHP\
-    CHDHCA_CBKAHNJKBPG\x10\t\x12\x1b\n\x17IKBHPCHDHCA_IILKFKNOBAE\x10K\x12\
-    \x1b\n\x17IKBHPCHDHCA_BGJGLNLKFDH\x10a\x12\x1b\n\x17IKBHPCHDHCA_FNEJIOMO\
-    GGJ\x10]\x12\x1b\n\x17IKBHPCHDHCA_NDAJGINPGJM\x10Y\x12\x1b\n\x17IKBHPCHD\
-    HCA_OGOIMGJNLOG\x10.\x12\x1b\n\x17IKBHPCHDHCA_HOJHGPGIEJA\x10D\x12\x1b\n\
-    \x17IKBHPCHDHCA_OILKGBIHBGB\x10>\x12\x1b\n\x17IKBHPCHDHCA_KMBEEBNBMHL\
-    \x10\x01\x12\x1b\n\x17IKBHPCHDHCA_PDOIDJENBAE\x10\x1b\x12\x1b\n\x17IKBHP\
-    CHDHCA_KPHAPPNEPPJ\x10_\x12\x1b\n\x17IKBHPCHDHCA_IKICEFJDAFM\x10\x03\x12\
-    \x1b\n\x17IKBHPCHDHCA_NIBHEDKIDOJ\x10`\x12\x1b\n\x17IKBHPCHDHCA_EOBMIGIM\
-    FHA\x10:\x12\x1b\n\x17IKBHPCHDHCA_AIPJKHHNGJO\x10-\x12\x1b\n\x17IKBHPCHD\
-    HCA_DOHGAMDLNOD\x107\x12\x1b\n\x17IKBHPCHDHCA_MGDGHOBCALD\x10\x02\x12\
-    \x1b\n\x17IKBHPCHDHCA_LJDJEKNLBFC\x10I\x12\x1b\n\x17IKBHPCHDHCA_OHAJJOGN\
-    DKI\x10\x18\x12\x1b\n\x17IKBHPCHDHCA_CJDDMJDPFJK\x10\x0f\x12\x1b\n\x17IK\
-    BHPCHDHCA_HBELNPCADPK\x10M\x12\x1b\n\x17IKBHPCHDHCA_HKBAMHCPCLD\x109\x12\
-    \x1b\n\x17IKBHPCHDHCA_FBFMPALHIJH\x10J\x12\x1b\n\x17IKBHPCHDHCA_ADCPMIKL\
-    MFO\x10W\x12\x1b\n\x17IKBHPCHDHCA_NNOHDAOJLPO\x10\x1c\x12\x1b\n\x17IKBHP\
-    CHDHCA_LINNHLBEPPF\x10\x0e\x12\x1b\n\x17IKBHPCHDHCA_FEGHIDIKLAA\x10\"\
-    \x12\x1b\n\x17IKBHPCHDHCA_EBFFLDKAKGL\x105\x12\x1b\n\x17IKBHPCHDHCA_KGLK\
-    BNPIOMB\x10Z\x12\x1b\n\x17IKBHPCHDHCA_LOKGPOAJKJK\x10\x1fb\x06proto3\
+    \n\x13CmdPlayerType.proto*\x89\x11\n\rCmdPlayerType\x12\x1d\n\x19CmdPlay\
+    erType_MNFEPONEDDJ\x10\0\x12\x1d\n\x19CmdPlayerType_ECDINNADBNG\x10:\x12\
+    \x1d\n\x19CmdPlayerType_LPOBJONLLGF\x10\x12\x12\x1d\n\x19CmdPlayerType_E\
+    LLADLKNAFJ\x106\x12\x1d\n\x19CmdPlayerType_MBHBNCLKBMD\x10'\x12\x1d\n\
+    \x19CmdPlayerType_GICNFOGBIOI\x10#\x12\x1d\n\x19CmdPlayerType_IMPIIECNPA\
+    A\x10\x10\x12\x1d\n\x19CmdPlayerType_JIBALAHBBDD\x10\x04\x12\x1d\n\x19Cm\
+    dPlayerType_CMNMFHDCBPI\x100\x12\x1d\n\x19CmdPlayerType_LFGLOEAKBIJ\x10\
+    \x1b\x12\x1d\n\x19CmdPlayerType_KMFCBFHLNJL\x10d\x12\x1d\n\x19CmdPlayerT\
+    ype_HOJNPABFAOL\x10X\x12\x1d\n\x19CmdPlayerType_NCDNDFFFJEJ\x10M\x12\x1d\
+    \n\x19CmdPlayerType_JLJOMIFBMBA\x10S\x12\x1d\n\x19CmdPlayerType_CKBCIOLC\
+    LKP\x10R\x12\x1d\n\x19CmdPlayerType_MGAMOCDMJKN\x10L\x12\x1d\n\x19CmdPla\
+    yerType_EGMMEFJGHIE\x10\x19\x12\x1d\n\x19CmdPlayerType_NBDAFMDKLCN\x10\
+    \x15\x12\x1d\n\x19CmdPlayerType_IINOKAPBNBJ\x10b\x12\x1d\n\x19CmdPlayerT\
+    ype_JPBENGJBCBN\x10\x11\x12\x1d\n\x19CmdPlayerType_GNPCDOFMKAM\x10I\x12\
+    \x1d\n\x19CmdPlayerType_EDAIOEMHKNN\x10\x1e\x12\x1d\n\x19CmdPlayerType_N\
+    OBKLFADJOF\x10=\x12\x1d\n\x19CmdPlayerType_KACNCMCLMDK\x10\x0c\x12\x1d\n\
+    \x19CmdPlayerType_LOCJMELDAOO\x103\x12\x1d\n\x19CmdPlayerType_HINNBGFCLI\
+    H\x10\x0b\x12\x1d\n\x19CmdPlayerType_CIDNFFMNMKD\x10\x17\x12\x1d\n\x19Cm\
+    dPlayerType_HNOKABCKJFC\x10\x16\x12\x1d\n\x19CmdPlayerType_LBBMLBPBGEP\
+    \x10.\x12\x1d\n\x19CmdPlayerType_MGMHBAPBNJH\x10\x05\x12\x1d\n\x19CmdPla\
+    yerType_EBELFLLCGOK\x10+\x12\x1d\n\x19CmdPlayerType_LFFGOIOLJPJ\x108\x12\
+    \x1d\n\x19CmdPlayerType_KJLIOEAOLAB\x10)\x12\x1d\n\x19CmdPlayerType_MCMC\
+    JIPILCL\x10C\x12\x1d\n\x19CmdPlayerType_CDKNCPFKOOK\x10\x13\x12\x1d\n\
+    \x19CmdPlayerType_POINHFIIMHI\x10\t\x12\x1d\n\x19CmdPlayerType_DIMGJBABH\
+    CD\x10\x07\x12\x1d\n\x19CmdPlayerType_HDPJFCEJJLG\x10c\x12\x1d\n\x19CmdP\
+    layerType_MBLNKABEOEP\x10\x0e\x12\x1d\n\x19CmdPlayerType_GBFMEHOOGEI\x10\
+    5\x12\x1d\n\x19CmdPlayerType_ELHNGGMJIOH\x10!\x12\x1d\n\x19CmdPlayerType\
+    _HPINLMBEECK\x10@\x12\x1d\n\x19CmdPlayerType_OIOLCJIHGOA\x10J\x12\x1d\n\
+    \x19CmdPlayerType_LDICBGPJFFP\x10,\x12\x1d\n\x19CmdPlayerType_PEJHCBHMEA\
+    B\x10O\x12\x1d\n\x19CmdPlayerType_CAOKMPLFMCM\x10\x0f\x12\x1d\n\x19CmdPl\
+    ayerType_CKAEIEGMALG\x10\x06\x12\x1d\n\x19CmdPlayerType_HOCDHMBOANE\x10\
+    \x18\x12\x1d\n\x19CmdPlayerType_CBBKJJDLFGP\x10E\x12\x1d\n\x19CmdPlayerT\
+    ype_LCEKFOHONOM\x10\r\x12\x1d\n\x19CmdPlayerType_BBGKEMGBLNA\x10\"\x12\
+    \x1d\n\x19CmdPlayerType_AGKNFJKFELG\x10N\x12\x1d\n\x19CmdPlayerType_OKFF\
+    DDBAHHB\x10$\x12\x1d\n\x19CmdPlayerType_ENCBFGNAOJJ\x10A\x12\x1d\n\x19Cm\
+    dPlayerType_BEFOHADLFHC\x10V\x12\x1d\n\x19CmdPlayerType_IMMKIKBLMGA\x10\
+    \x1d\x12\x1d\n\x19CmdPlayerType_PPHOCHBAGIF\x10a\x12\x1d\n\x19CmdPlayerT\
+    ype_FANJKOHKEBE\x10\x03\x12\x1d\n\x19CmdPlayerType_OMLLCHPADKL\x10U\x12\
+    \x1d\n\x19CmdPlayerType_EIEIKJFMNCH\x10&\x12\x1d\n\x19CmdPlayerType_OBNJ\
+    ECIOEEM\x10K\x12\x1d\n\x19CmdPlayerType_ACNMNPEBBDL\x10Q\x12\x1d\n\x19Cm\
+    dPlayerType_OBAODONPBMG\x10;\x12\x1d\n\x19CmdPlayerType_AMJFNJJEDOF\x102\
+    \x12\x1d\n\x19CmdPlayerType_EJCNPLBJPJN\x10\x1f\x12\x1d\n\x19CmdPlayerTy\
+    pe_CCKGEMCDDDN\x10G\x12\x1d\n\x19CmdPlayerType_LKIOFEAKGHC\x10P\x12\x1d\
+    \n\x19CmdPlayerType_GKELPLPAFHO\x107\x12\x1d\n\x19CmdPlayerType_MGBOEKJE\
+    EDP\x10<\x12\x1d\n\x19CmdPlayerType_AEPOJOIBCPA\x10(b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

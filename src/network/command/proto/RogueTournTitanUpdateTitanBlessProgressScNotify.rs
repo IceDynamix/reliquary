@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournTitanUpdateTitanBlessProgressScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournTitanUpdateTitanBlessProgressScNotify.EAJHHPHLFDH)
-    pub EAJHHPHLFDH: u32,
+    // @@protoc_insertion_point(field:RogueTournTitanUpdateTitanBlessProgressScNotify.IKJCEFHPJEN)
+    pub IKJCEFHPJEN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournTitanUpdateTitanBlessProgressScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueTournTitanUpdateTitanBlessProgressScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EAJHHPHLFDH",
-            |m: &RogueTournTitanUpdateTitanBlessProgressScNotify| { &m.EAJHHPHLFDH },
-            |m: &mut RogueTournTitanUpdateTitanBlessProgressScNotify| { &mut m.EAJHHPHLFDH },
+            "IKJCEFHPJEN",
+            |m: &RogueTournTitanUpdateTitanBlessProgressScNotify| { &m.IKJCEFHPJEN },
+            |m: &mut RogueTournTitanUpdateTitanBlessProgressScNotify| { &mut m.IKJCEFHPJEN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournTitanUpdateTitanBlessProgressScNotify>(
             "RogueTournTitanUpdateTitanBlessProgressScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueTournTitanUpdateTitanBlessProgressScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.EAJHHPHLFDH = is.read_uint32()?;
+                48 => {
+                    self.IKJCEFHPJEN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for RogueTournTitanUpdateTitanBlessProgressScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EAJHHPHLFDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.EAJHHPHLFDH);
+        if self.IKJCEFHPJEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.IKJCEFHPJEN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RogueTournTitanUpdateTitanBlessProgressScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EAJHHPHLFDH != 0 {
-            os.write_uint32(1, self.EAJHHPHLFDH)?;
+        if self.IKJCEFHPJEN != 0 {
+            os.write_uint32(6, self.IKJCEFHPJEN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RogueTournTitanUpdateTitanBlessProgressScNotify {
     }
 
     fn clear(&mut self) {
-        self.EAJHHPHLFDH = 0;
+        self.IKJCEFHPJEN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournTitanUpdateTitanBlessProgressScNotify {
         static instance: RogueTournTitanUpdateTitanBlessProgressScNotify = RogueTournTitanUpdateTitanBlessProgressScNotify {
-            EAJHHPHLFDH: 0,
+            IKJCEFHPJEN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournTitanUpdateTitanBlessProgr
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n5RogueTournTitanUpdateTitanBlessProgressScNotify.proto\"S\n/RogueTourn\
-    TitanUpdateTitanBlessProgressScNotify\x12\x20\n\x0bEAJHHPHLFDH\x18\x01\
-    \x20\x01(\rR\x0bEAJHHPHLFDHb\x06proto3\
+    TitanUpdateTitanBlessProgressScNotify\x12\x20\n\x0bIKJCEFHPJEN\x18\x06\
+    \x20\x01(\rR\x0bIKJCEFHPJENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

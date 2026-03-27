@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueGetItemScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueGetItemScNotify.LLDOCKKEAON)
-    pub LLDOCKKEAON: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:SyncRogueGetItemScNotify.get_item_list)
     pub get_item_list: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SyncRogueGetItemScNotify.CPOIEIMPBOA)
+    pub CPOIEIMPBOA: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueGetItemScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SyncRogueGetItemScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "LLDOCKKEAON",
-            |m: &SyncRogueGetItemScNotify| { &m.LLDOCKKEAON },
-            |m: &mut SyncRogueGetItemScNotify| { &mut m.LLDOCKKEAON },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "get_item_list",
             |m: &SyncRogueGetItemScNotify| { &m.get_item_list },
             |m: &mut SyncRogueGetItemScNotify| { &mut m.get_item_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "CPOIEIMPBOA",
+            |m: &SyncRogueGetItemScNotify| { &m.CPOIEIMPBOA },
+            |m: &mut SyncRogueGetItemScNotify| { &mut m.CPOIEIMPBOA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueGetItemScNotify>(
             "SyncRogueGetItemScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SyncRogueGetItemScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LLDOCKKEAON)?;
-                },
-                10 => {
+                82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.get_item_list)?;
+                },
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CPOIEIMPBOA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SyncRogueGetItemScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LLDOCKKEAON.as_ref() {
+        if let Some(v) = self.get_item_list.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.get_item_list.as_ref() {
+        if let Some(v) = self.CPOIEIMPBOA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for SyncRogueGetItemScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LLDOCKKEAON.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
         if let Some(v) = self.get_item_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        }
+        if let Some(v) = self.CPOIEIMPBOA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for SyncRogueGetItemScNotify {
     }
 
     fn clear(&mut self) {
-        self.LLDOCKKEAON.clear();
         self.get_item_list.clear();
+        self.CPOIEIMPBOA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueGetItemScNotify {
         static instance: SyncRogueGetItemScNotify = SyncRogueGetItemScNotify {
-            LLDOCKKEAON: ::protobuf::MessageField::none(),
             get_item_list: ::protobuf::MessageField::none(),
+            CPOIEIMPBOA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueGetItemScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSyncRogueGetItemScNotify.proto\x1a\x0eItemList.proto\"v\n\x18SyncR\
-    ogueGetItemScNotify\x12+\n\x0bLLDOCKKEAON\x18\x06\x20\x01(\x0b2\t.ItemLi\
-    stR\x0bLLDOCKKEAON\x12-\n\rget_item_list\x18\x01\x20\x01(\x0b2\t.ItemLis\
-    tR\x0bgetItemListb\x06proto3\
+    ogueGetItemScNotify\x12-\n\rget_item_list\x18\n\x20\x01(\x0b2\t.ItemList\
+    R\x0bgetItemList\x12+\n\x0bCPOIEIMPBOA\x18\x05\x20\x01(\x0b2\t.ItemListR\
+    \x0bCPOIEIMPBOAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

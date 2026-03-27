@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DestroyItemScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DestroyItemScRsp.CDKANABELGF)
-    pub CDKANABELGF: u32,
+    // @@protoc_insertion_point(field:DestroyItemScRsp.PFCILKPDCGL)
+    pub PFCILKPDCGL: u32,
     // @@protoc_insertion_point(field:DestroyItemScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl DestroyItemScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CDKANABELGF",
-            |m: &DestroyItemScRsp| { &m.CDKANABELGF },
-            |m: &mut DestroyItemScRsp| { &mut m.CDKANABELGF },
+            "PFCILKPDCGL",
+            |m: &DestroyItemScRsp| { &m.PFCILKPDCGL },
+            |m: &mut DestroyItemScRsp| { &mut m.PFCILKPDCGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for DestroyItemScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 88 => {
-                    self.CDKANABELGF = is.read_uint32()?;
+                    self.PFCILKPDCGL = is.read_uint32()?;
                 },
-                64 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for DestroyItemScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CDKANABELGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CDKANABELGF);
+        if self.PFCILKPDCGL != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.PFCILKPDCGL);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for DestroyItemScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CDKANABELGF != 0 {
-            os.write_uint32(11, self.CDKANABELGF)?;
+        if self.PFCILKPDCGL != 0 {
+            os.write_uint32(11, self.PFCILKPDCGL)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for DestroyItemScRsp {
     }
 
     fn clear(&mut self) {
-        self.CDKANABELGF = 0;
+        self.PFCILKPDCGL = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DestroyItemScRsp {
         static instance: DestroyItemScRsp = DestroyItemScRsp {
-            CDKANABELGF: 0,
+            PFCILKPDCGL: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for DestroyItemScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16DestroyItemScRsp.proto\"N\n\x10DestroyItemScRsp\x12\x20\n\x0bCDKAN\
-    ABELGF\x18\x0b\x20\x01(\rR\x0bCDKANABELGF\x12\x18\n\x07retcode\x18\x08\
+    \n\x16DestroyItemScRsp.proto\"N\n\x10DestroyItemScRsp\x12\x20\n\x0bPFCIL\
+    KPDCGL\x18\x0b\x20\x01(\rR\x0bPFCILKPDCGL\x12\x18\n\x07retcode\x18\x0e\
     \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

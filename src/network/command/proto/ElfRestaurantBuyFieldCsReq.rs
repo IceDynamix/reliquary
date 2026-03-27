@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ElfRestaurantBuyFieldCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ElfRestaurantBuyFieldCsReq.MHLNOJDKIMH)
-    pub MHLNOJDKIMH: u32,
+    // @@protoc_insertion_point(field:ElfRestaurantBuyFieldCsReq.IAIKDGMCLNE)
+    pub IAIKDGMCLNE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ElfRestaurantBuyFieldCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ElfRestaurantBuyFieldCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MHLNOJDKIMH",
-            |m: &ElfRestaurantBuyFieldCsReq| { &m.MHLNOJDKIMH },
-            |m: &mut ElfRestaurantBuyFieldCsReq| { &mut m.MHLNOJDKIMH },
+            "IAIKDGMCLNE",
+            |m: &ElfRestaurantBuyFieldCsReq| { &m.IAIKDGMCLNE },
+            |m: &mut ElfRestaurantBuyFieldCsReq| { &mut m.IAIKDGMCLNE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ElfRestaurantBuyFieldCsReq>(
             "ElfRestaurantBuyFieldCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ElfRestaurantBuyFieldCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MHLNOJDKIMH = is.read_uint32()?;
+                16 => {
+                    self.IAIKDGMCLNE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ElfRestaurantBuyFieldCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MHLNOJDKIMH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MHLNOJDKIMH);
+        if self.IAIKDGMCLNE != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IAIKDGMCLNE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ElfRestaurantBuyFieldCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MHLNOJDKIMH != 0 {
-            os.write_uint32(1, self.MHLNOJDKIMH)?;
+        if self.IAIKDGMCLNE != 0 {
+            os.write_uint32(2, self.IAIKDGMCLNE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ElfRestaurantBuyFieldCsReq {
     }
 
     fn clear(&mut self) {
-        self.MHLNOJDKIMH = 0;
+        self.IAIKDGMCLNE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ElfRestaurantBuyFieldCsReq {
         static instance: ElfRestaurantBuyFieldCsReq = ElfRestaurantBuyFieldCsReq {
-            MHLNOJDKIMH: 0,
+            IAIKDGMCLNE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantBuyFieldCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ElfRestaurantBuyFieldCsReq.proto\">\n\x1aElfRestaurantBuyFieldCsRe\
-    q\x12\x20\n\x0bMHLNOJDKIMH\x18\x01\x20\x01(\rR\x0bMHLNOJDKIMHb\x06proto3\
+    q\x12\x20\n\x0bIAIKDGMCLNE\x18\x02\x20\x01(\rR\x0bIAIKDGMCLNEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

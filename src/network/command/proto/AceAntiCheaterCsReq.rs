@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AceAntiCheaterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:AceAntiCheaterCsReq.OCHAILPKMEA)
-    pub OCHAILPKMEA: u32,
-    // @@protoc_insertion_point(field:AceAntiCheaterCsReq.CAAFIMPPKMI)
-    pub CAAFIMPPKMI: ::std::string::String,
+    // @@protoc_insertion_point(field:AceAntiCheaterCsReq.BCFJCNIIJMI)
+    pub BCFJCNIIJMI: ::std::string::String,
+    // @@protoc_insertion_point(field:AceAntiCheaterCsReq.MOAJCCLLPDL)
+    pub MOAJCCLLPDL: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AceAntiCheaterCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl AceAntiCheaterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OCHAILPKMEA",
-            |m: &AceAntiCheaterCsReq| { &m.OCHAILPKMEA },
-            |m: &mut AceAntiCheaterCsReq| { &mut m.OCHAILPKMEA },
+            "BCFJCNIIJMI",
+            |m: &AceAntiCheaterCsReq| { &m.BCFJCNIIJMI },
+            |m: &mut AceAntiCheaterCsReq| { &mut m.BCFJCNIIJMI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CAAFIMPPKMI",
-            |m: &AceAntiCheaterCsReq| { &m.CAAFIMPPKMI },
-            |m: &mut AceAntiCheaterCsReq| { &mut m.CAAFIMPPKMI },
+            "MOAJCCLLPDL",
+            |m: &AceAntiCheaterCsReq| { &m.MOAJCCLLPDL },
+            |m: &mut AceAntiCheaterCsReq| { &mut m.MOAJCCLLPDL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AceAntiCheaterCsReq>(
             "AceAntiCheaterCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.OCHAILPKMEA = is.read_uint32()?;
+                90 => {
+                    self.BCFJCNIIJMI = is.read_string()?;
                 },
-                34 => {
-                    self.CAAFIMPPKMI = is.read_string()?;
+                96 => {
+                    self.MOAJCCLLPDL = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OCHAILPKMEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.OCHAILPKMEA);
+        if !self.BCFJCNIIJMI.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.BCFJCNIIJMI);
         }
-        if !self.CAAFIMPPKMI.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.CAAFIMPPKMI);
+        if self.MOAJCCLLPDL != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.MOAJCCLLPDL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OCHAILPKMEA != 0 {
-            os.write_uint32(1, self.OCHAILPKMEA)?;
+        if !self.BCFJCNIIJMI.is_empty() {
+            os.write_string(11, &self.BCFJCNIIJMI)?;
         }
-        if !self.CAAFIMPPKMI.is_empty() {
-            os.write_string(4, &self.CAAFIMPPKMI)?;
+        if self.MOAJCCLLPDL != 0 {
+            os.write_uint32(12, self.MOAJCCLLPDL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for AceAntiCheaterCsReq {
     }
 
     fn clear(&mut self) {
-        self.OCHAILPKMEA = 0;
-        self.CAAFIMPPKMI.clear();
+        self.BCFJCNIIJMI.clear();
+        self.MOAJCCLLPDL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AceAntiCheaterCsReq {
         static instance: AceAntiCheaterCsReq = AceAntiCheaterCsReq {
-            OCHAILPKMEA: 0,
-            CAAFIMPPKMI: ::std::string::String::new(),
+            BCFJCNIIJMI: ::std::string::String::new(),
+            MOAJCCLLPDL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AceAntiCheaterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19AceAntiCheaterCsReq.proto\"Y\n\x13AceAntiCheaterCsReq\x12\x20\n\
-    \x0bOCHAILPKMEA\x18\x01\x20\x01(\rR\x0bOCHAILPKMEA\x12\x20\n\x0bCAAFIMPP\
-    KMI\x18\x04\x20\x01(\tR\x0bCAAFIMPPKMIb\x06proto3\
+    \x0bBCFJCNIIJMI\x18\x0b\x20\x01(\tR\x0bBCFJCNIIJMI\x12\x20\n\x0bMOAJCCLL\
+    PDL\x18\x0c\x20\x01(\rR\x0bMOAJCCLLPDLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

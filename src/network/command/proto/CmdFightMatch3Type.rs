@@ -27,62 +27,62 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFightMatch3Type)
 pub enum CmdFightMatch3Type {
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_MGBJFKCFBDN)
-    PAOKPHEDMFO_MGBJFKCFBDN = 0,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_NAGCHCDCFEC)
-    PAOKPHEDMFO_NAGCHCDCFEC = 30128,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_FIODPHPHPIH)
-    PAOKPHEDMFO_FIODPHPHPIH = 30189,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_DICBGEDJDEH)
-    PAOKPHEDMFO_DICBGEDJDEH = 30145,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_EAICCBFBOMK)
-    PAOKPHEDMFO_EAICCBFBOMK = 30150,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_DKIONFOGLLG)
-    PAOKPHEDMFO_DKIONFOGLLG = 30157,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_IKMKOHLPFNF)
-    PAOKPHEDMFO_IKMKOHLPFNF = 30196,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_CJGOMMBIOOO)
-    PAOKPHEDMFO_CJGOMMBIOOO = 30155,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_DLBDHLCMEFK)
-    PAOKPHEDMFO_DLBDHLCMEFK = 30120,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_DDOBICBKKIL)
-    PAOKPHEDMFO_DDOBICBKKIL = 30134,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_AGACAJLHLAO)
-    PAOKPHEDMFO_AGACAJLHLAO = 30179,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_DOLPBICOCBM)
-    PAOKPHEDMFO_DOLPBICOCBM = 30180,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_MEKIIDIICGD)
-    PAOKPHEDMFO_MEKIIDIICGD = 30193,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_KOOCHPNDBDO)
-    PAOKPHEDMFO_KOOCHPNDBDO = 30166,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_BNINPGIDMGJ)
-    PAOKPHEDMFO_BNINPGIDMGJ = 30138,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_ILCPJMEPHIJ)
-    PAOKPHEDMFO_ILCPJMEPHIJ = 30177,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_NAPNPHEHOBG)
-    PAOKPHEDMFO_NAPNPHEHOBG = 30183,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_HPNFELDDKLN)
-    PAOKPHEDMFO_HPNFELDDKLN = 30169,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_HPHBHCJGBAI)
-    PAOKPHEDMFO_HPHBHCJGBAI = 30176,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_AFJCDAOPFHH)
-    PAOKPHEDMFO_AFJCDAOPFHH = 30105,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_HPFJGNEAGLF)
-    PAOKPHEDMFO_HPFJGNEAGLF = 30175,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_JFKDPHEDPHM)
-    PAOKPHEDMFO_JFKDPHEDPHM = 30114,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_BBJDEMPNMGL)
-    PAOKPHEDMFO_BBJDEMPNMGL = 30126,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_AHACFDCMJDC)
-    PAOKPHEDMFO_AHACFDCMJDC = 30147,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_FGGEELJNLIL)
-    PAOKPHEDMFO_FGGEELJNLIL = 30137,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_OOKJBPFADCJ)
-    PAOKPHEDMFO_OOKJBPFADCJ = 30112,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_LFJCJDPDPJN)
-    PAOKPHEDMFO_LFJCJDPDPJN = 30162,
-    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.PAOKPHEDMFO_KNDFOKOGKBD)
-    PAOKPHEDMFO_KNDFOKOGKBD = 30195,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_HJLKOLMJPLJ)
+    CmdFightMatch3Type_HJLKOLMJPLJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_BGMCLOKBECK)
+    CmdFightMatch3Type_BGMCLOKBECK = 30109,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_FLEELEKDAAH)
+    CmdFightMatch3Type_FLEELEKDAAH = 30200,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_NGEDKCBOLHM)
+    CmdFightMatch3Type_NGEDKCBOLHM = 30101,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_POIILKGIMGI)
+    CmdFightMatch3Type_POIILKGIMGI = 30188,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_ALPNOBMKJPL)
+    CmdFightMatch3Type_ALPNOBMKJPL = 30131,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_CNPMOFKBDGA)
+    CmdFightMatch3Type_CNPMOFKBDGA = 30186,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_DHPDAFINLPK)
+    CmdFightMatch3Type_DHPDAFINLPK = 30134,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_PGBBLABCFAN)
+    CmdFightMatch3Type_PGBBLABCFAN = 30169,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_OLENKDPMEAD)
+    CmdFightMatch3Type_OLENKDPMEAD = 30148,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_CDELPEHBLEO)
+    CmdFightMatch3Type_CDELPEHBLEO = 30157,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_ECLNPMGJDGG)
+    CmdFightMatch3Type_ECLNPMGJDGG = 30140,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_MJFHFPLAFJB)
+    CmdFightMatch3Type_MJFHFPLAFJB = 30156,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_CJMNHEOGFBL)
+    CmdFightMatch3Type_CJMNHEOGFBL = 30146,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_KFOEBAJLKJL)
+    CmdFightMatch3Type_KFOEBAJLKJL = 30162,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_AFHBGKPAJGI)
+    CmdFightMatch3Type_AFHBGKPAJGI = 30118,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_MJECHCBBKPD)
+    CmdFightMatch3Type_MJECHCBBKPD = 30135,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_DNCAPMEOEJD)
+    CmdFightMatch3Type_DNCAPMEOEJD = 30103,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_PPILMFMMEEC)
+    CmdFightMatch3Type_PPILMFMMEEC = 30196,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_FOEMPMOPHIE)
+    CmdFightMatch3Type_FOEMPMOPHIE = 30106,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_EHDMLAHJNMG)
+    CmdFightMatch3Type_EHDMLAHJNMG = 30183,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_NNDKJEIEDEN)
+    CmdFightMatch3Type_NNDKJEIEDEN = 30124,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_KHAKNJFNEMP)
+    CmdFightMatch3Type_KHAKNJFNEMP = 30119,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_MLAMKEAECOF)
+    CmdFightMatch3Type_MLAMKEAECOF = 30123,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_JNGMPALPBLL)
+    CmdFightMatch3Type_JNGMPALPBLL = 30113,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_LKOKEHBODBN)
+    CmdFightMatch3Type_LKOKEHBODBN = 30104,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_NKLKHHEDPEL)
+    CmdFightMatch3Type_NKLKHHEDPEL = 30184,
+    // @@protoc_insertion_point(enum_value:CmdFightMatch3Type.CmdFightMatch3Type_KMKMCLBIPFA)
+    CmdFightMatch3Type_KMKMCLBIPFA = 30181,
 }
 
 impl ::protobuf::Enum for CmdFightMatch3Type {
@@ -94,101 +94,101 @@ impl ::protobuf::Enum for CmdFightMatch3Type {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightMatch3Type> {
         match value {
-            0 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_MGBJFKCFBDN),
-            30128 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_NAGCHCDCFEC),
-            30189 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_FIODPHPHPIH),
-            30145 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_DICBGEDJDEH),
-            30150 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_EAICCBFBOMK),
-            30157 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_DKIONFOGLLG),
-            30196 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_IKMKOHLPFNF),
-            30155 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_CJGOMMBIOOO),
-            30120 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_DLBDHLCMEFK),
-            30134 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_DDOBICBKKIL),
-            30179 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_AGACAJLHLAO),
-            30180 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_DOLPBICOCBM),
-            30193 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_MEKIIDIICGD),
-            30166 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_KOOCHPNDBDO),
-            30138 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_BNINPGIDMGJ),
-            30177 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_ILCPJMEPHIJ),
-            30183 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_NAPNPHEHOBG),
-            30169 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_HPNFELDDKLN),
-            30176 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_HPHBHCJGBAI),
-            30105 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_AFJCDAOPFHH),
-            30175 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_HPFJGNEAGLF),
-            30114 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_JFKDPHEDPHM),
-            30126 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_BBJDEMPNMGL),
-            30147 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_AHACFDCMJDC),
-            30137 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_FGGEELJNLIL),
-            30112 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_OOKJBPFADCJ),
-            30162 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_LFJCJDPDPJN),
-            30195 => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_KNDFOKOGKBD),
+            0 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_HJLKOLMJPLJ),
+            30109 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_BGMCLOKBECK),
+            30200 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_FLEELEKDAAH),
+            30101 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_NGEDKCBOLHM),
+            30188 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_POIILKGIMGI),
+            30131 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_ALPNOBMKJPL),
+            30186 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_CNPMOFKBDGA),
+            30134 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_DHPDAFINLPK),
+            30169 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_PGBBLABCFAN),
+            30148 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_OLENKDPMEAD),
+            30157 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_CDELPEHBLEO),
+            30140 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_ECLNPMGJDGG),
+            30156 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_MJFHFPLAFJB),
+            30146 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_CJMNHEOGFBL),
+            30162 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_KFOEBAJLKJL),
+            30118 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_AFHBGKPAJGI),
+            30135 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_MJECHCBBKPD),
+            30103 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_DNCAPMEOEJD),
+            30196 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_PPILMFMMEEC),
+            30106 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_FOEMPMOPHIE),
+            30183 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_EHDMLAHJNMG),
+            30124 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_NNDKJEIEDEN),
+            30119 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_KHAKNJFNEMP),
+            30123 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_MLAMKEAECOF),
+            30113 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_JNGMPALPBLL),
+            30104 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_LKOKEHBODBN),
+            30184 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_NKLKHHEDPEL),
+            30181 => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_KMKMCLBIPFA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFightMatch3Type> {
         match str {
-            "PAOKPHEDMFO_MGBJFKCFBDN" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_MGBJFKCFBDN),
-            "PAOKPHEDMFO_NAGCHCDCFEC" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_NAGCHCDCFEC),
-            "PAOKPHEDMFO_FIODPHPHPIH" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_FIODPHPHPIH),
-            "PAOKPHEDMFO_DICBGEDJDEH" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_DICBGEDJDEH),
-            "PAOKPHEDMFO_EAICCBFBOMK" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_EAICCBFBOMK),
-            "PAOKPHEDMFO_DKIONFOGLLG" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_DKIONFOGLLG),
-            "PAOKPHEDMFO_IKMKOHLPFNF" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_IKMKOHLPFNF),
-            "PAOKPHEDMFO_CJGOMMBIOOO" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_CJGOMMBIOOO),
-            "PAOKPHEDMFO_DLBDHLCMEFK" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_DLBDHLCMEFK),
-            "PAOKPHEDMFO_DDOBICBKKIL" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_DDOBICBKKIL),
-            "PAOKPHEDMFO_AGACAJLHLAO" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_AGACAJLHLAO),
-            "PAOKPHEDMFO_DOLPBICOCBM" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_DOLPBICOCBM),
-            "PAOKPHEDMFO_MEKIIDIICGD" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_MEKIIDIICGD),
-            "PAOKPHEDMFO_KOOCHPNDBDO" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_KOOCHPNDBDO),
-            "PAOKPHEDMFO_BNINPGIDMGJ" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_BNINPGIDMGJ),
-            "PAOKPHEDMFO_ILCPJMEPHIJ" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_ILCPJMEPHIJ),
-            "PAOKPHEDMFO_NAPNPHEHOBG" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_NAPNPHEHOBG),
-            "PAOKPHEDMFO_HPNFELDDKLN" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_HPNFELDDKLN),
-            "PAOKPHEDMFO_HPHBHCJGBAI" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_HPHBHCJGBAI),
-            "PAOKPHEDMFO_AFJCDAOPFHH" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_AFJCDAOPFHH),
-            "PAOKPHEDMFO_HPFJGNEAGLF" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_HPFJGNEAGLF),
-            "PAOKPHEDMFO_JFKDPHEDPHM" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_JFKDPHEDPHM),
-            "PAOKPHEDMFO_BBJDEMPNMGL" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_BBJDEMPNMGL),
-            "PAOKPHEDMFO_AHACFDCMJDC" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_AHACFDCMJDC),
-            "PAOKPHEDMFO_FGGEELJNLIL" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_FGGEELJNLIL),
-            "PAOKPHEDMFO_OOKJBPFADCJ" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_OOKJBPFADCJ),
-            "PAOKPHEDMFO_LFJCJDPDPJN" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_LFJCJDPDPJN),
-            "PAOKPHEDMFO_KNDFOKOGKBD" => ::std::option::Option::Some(CmdFightMatch3Type::PAOKPHEDMFO_KNDFOKOGKBD),
+            "CmdFightMatch3Type_HJLKOLMJPLJ" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_HJLKOLMJPLJ),
+            "CmdFightMatch3Type_BGMCLOKBECK" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_BGMCLOKBECK),
+            "CmdFightMatch3Type_FLEELEKDAAH" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_FLEELEKDAAH),
+            "CmdFightMatch3Type_NGEDKCBOLHM" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_NGEDKCBOLHM),
+            "CmdFightMatch3Type_POIILKGIMGI" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_POIILKGIMGI),
+            "CmdFightMatch3Type_ALPNOBMKJPL" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_ALPNOBMKJPL),
+            "CmdFightMatch3Type_CNPMOFKBDGA" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_CNPMOFKBDGA),
+            "CmdFightMatch3Type_DHPDAFINLPK" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_DHPDAFINLPK),
+            "CmdFightMatch3Type_PGBBLABCFAN" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_PGBBLABCFAN),
+            "CmdFightMatch3Type_OLENKDPMEAD" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_OLENKDPMEAD),
+            "CmdFightMatch3Type_CDELPEHBLEO" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_CDELPEHBLEO),
+            "CmdFightMatch3Type_ECLNPMGJDGG" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_ECLNPMGJDGG),
+            "CmdFightMatch3Type_MJFHFPLAFJB" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_MJFHFPLAFJB),
+            "CmdFightMatch3Type_CJMNHEOGFBL" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_CJMNHEOGFBL),
+            "CmdFightMatch3Type_KFOEBAJLKJL" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_KFOEBAJLKJL),
+            "CmdFightMatch3Type_AFHBGKPAJGI" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_AFHBGKPAJGI),
+            "CmdFightMatch3Type_MJECHCBBKPD" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_MJECHCBBKPD),
+            "CmdFightMatch3Type_DNCAPMEOEJD" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_DNCAPMEOEJD),
+            "CmdFightMatch3Type_PPILMFMMEEC" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_PPILMFMMEEC),
+            "CmdFightMatch3Type_FOEMPMOPHIE" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_FOEMPMOPHIE),
+            "CmdFightMatch3Type_EHDMLAHJNMG" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_EHDMLAHJNMG),
+            "CmdFightMatch3Type_NNDKJEIEDEN" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_NNDKJEIEDEN),
+            "CmdFightMatch3Type_KHAKNJFNEMP" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_KHAKNJFNEMP),
+            "CmdFightMatch3Type_MLAMKEAECOF" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_MLAMKEAECOF),
+            "CmdFightMatch3Type_JNGMPALPBLL" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_JNGMPALPBLL),
+            "CmdFightMatch3Type_LKOKEHBODBN" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_LKOKEHBODBN),
+            "CmdFightMatch3Type_NKLKHHEDPEL" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_NKLKHHEDPEL),
+            "CmdFightMatch3Type_KMKMCLBIPFA" => ::std::option::Option::Some(CmdFightMatch3Type::CmdFightMatch3Type_KMKMCLBIPFA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFightMatch3Type] = &[
-        CmdFightMatch3Type::PAOKPHEDMFO_MGBJFKCFBDN,
-        CmdFightMatch3Type::PAOKPHEDMFO_NAGCHCDCFEC,
-        CmdFightMatch3Type::PAOKPHEDMFO_FIODPHPHPIH,
-        CmdFightMatch3Type::PAOKPHEDMFO_DICBGEDJDEH,
-        CmdFightMatch3Type::PAOKPHEDMFO_EAICCBFBOMK,
-        CmdFightMatch3Type::PAOKPHEDMFO_DKIONFOGLLG,
-        CmdFightMatch3Type::PAOKPHEDMFO_IKMKOHLPFNF,
-        CmdFightMatch3Type::PAOKPHEDMFO_CJGOMMBIOOO,
-        CmdFightMatch3Type::PAOKPHEDMFO_DLBDHLCMEFK,
-        CmdFightMatch3Type::PAOKPHEDMFO_DDOBICBKKIL,
-        CmdFightMatch3Type::PAOKPHEDMFO_AGACAJLHLAO,
-        CmdFightMatch3Type::PAOKPHEDMFO_DOLPBICOCBM,
-        CmdFightMatch3Type::PAOKPHEDMFO_MEKIIDIICGD,
-        CmdFightMatch3Type::PAOKPHEDMFO_KOOCHPNDBDO,
-        CmdFightMatch3Type::PAOKPHEDMFO_BNINPGIDMGJ,
-        CmdFightMatch3Type::PAOKPHEDMFO_ILCPJMEPHIJ,
-        CmdFightMatch3Type::PAOKPHEDMFO_NAPNPHEHOBG,
-        CmdFightMatch3Type::PAOKPHEDMFO_HPNFELDDKLN,
-        CmdFightMatch3Type::PAOKPHEDMFO_HPHBHCJGBAI,
-        CmdFightMatch3Type::PAOKPHEDMFO_AFJCDAOPFHH,
-        CmdFightMatch3Type::PAOKPHEDMFO_HPFJGNEAGLF,
-        CmdFightMatch3Type::PAOKPHEDMFO_JFKDPHEDPHM,
-        CmdFightMatch3Type::PAOKPHEDMFO_BBJDEMPNMGL,
-        CmdFightMatch3Type::PAOKPHEDMFO_AHACFDCMJDC,
-        CmdFightMatch3Type::PAOKPHEDMFO_FGGEELJNLIL,
-        CmdFightMatch3Type::PAOKPHEDMFO_OOKJBPFADCJ,
-        CmdFightMatch3Type::PAOKPHEDMFO_LFJCJDPDPJN,
-        CmdFightMatch3Type::PAOKPHEDMFO_KNDFOKOGKBD,
+        CmdFightMatch3Type::CmdFightMatch3Type_HJLKOLMJPLJ,
+        CmdFightMatch3Type::CmdFightMatch3Type_BGMCLOKBECK,
+        CmdFightMatch3Type::CmdFightMatch3Type_FLEELEKDAAH,
+        CmdFightMatch3Type::CmdFightMatch3Type_NGEDKCBOLHM,
+        CmdFightMatch3Type::CmdFightMatch3Type_POIILKGIMGI,
+        CmdFightMatch3Type::CmdFightMatch3Type_ALPNOBMKJPL,
+        CmdFightMatch3Type::CmdFightMatch3Type_CNPMOFKBDGA,
+        CmdFightMatch3Type::CmdFightMatch3Type_DHPDAFINLPK,
+        CmdFightMatch3Type::CmdFightMatch3Type_PGBBLABCFAN,
+        CmdFightMatch3Type::CmdFightMatch3Type_OLENKDPMEAD,
+        CmdFightMatch3Type::CmdFightMatch3Type_CDELPEHBLEO,
+        CmdFightMatch3Type::CmdFightMatch3Type_ECLNPMGJDGG,
+        CmdFightMatch3Type::CmdFightMatch3Type_MJFHFPLAFJB,
+        CmdFightMatch3Type::CmdFightMatch3Type_CJMNHEOGFBL,
+        CmdFightMatch3Type::CmdFightMatch3Type_KFOEBAJLKJL,
+        CmdFightMatch3Type::CmdFightMatch3Type_AFHBGKPAJGI,
+        CmdFightMatch3Type::CmdFightMatch3Type_MJECHCBBKPD,
+        CmdFightMatch3Type::CmdFightMatch3Type_DNCAPMEOEJD,
+        CmdFightMatch3Type::CmdFightMatch3Type_PPILMFMMEEC,
+        CmdFightMatch3Type::CmdFightMatch3Type_FOEMPMOPHIE,
+        CmdFightMatch3Type::CmdFightMatch3Type_EHDMLAHJNMG,
+        CmdFightMatch3Type::CmdFightMatch3Type_NNDKJEIEDEN,
+        CmdFightMatch3Type::CmdFightMatch3Type_KHAKNJFNEMP,
+        CmdFightMatch3Type::CmdFightMatch3Type_MLAMKEAECOF,
+        CmdFightMatch3Type::CmdFightMatch3Type_JNGMPALPBLL,
+        CmdFightMatch3Type::CmdFightMatch3Type_LKOKEHBODBN,
+        CmdFightMatch3Type::CmdFightMatch3Type_NKLKHHEDPEL,
+        CmdFightMatch3Type::CmdFightMatch3Type_KMKMCLBIPFA,
     ];
 }
 
@@ -200,34 +200,34 @@ impl ::protobuf::EnumFull for CmdFightMatch3Type {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFightMatch3Type::PAOKPHEDMFO_MGBJFKCFBDN => 0,
-            CmdFightMatch3Type::PAOKPHEDMFO_NAGCHCDCFEC => 1,
-            CmdFightMatch3Type::PAOKPHEDMFO_FIODPHPHPIH => 2,
-            CmdFightMatch3Type::PAOKPHEDMFO_DICBGEDJDEH => 3,
-            CmdFightMatch3Type::PAOKPHEDMFO_EAICCBFBOMK => 4,
-            CmdFightMatch3Type::PAOKPHEDMFO_DKIONFOGLLG => 5,
-            CmdFightMatch3Type::PAOKPHEDMFO_IKMKOHLPFNF => 6,
-            CmdFightMatch3Type::PAOKPHEDMFO_CJGOMMBIOOO => 7,
-            CmdFightMatch3Type::PAOKPHEDMFO_DLBDHLCMEFK => 8,
-            CmdFightMatch3Type::PAOKPHEDMFO_DDOBICBKKIL => 9,
-            CmdFightMatch3Type::PAOKPHEDMFO_AGACAJLHLAO => 10,
-            CmdFightMatch3Type::PAOKPHEDMFO_DOLPBICOCBM => 11,
-            CmdFightMatch3Type::PAOKPHEDMFO_MEKIIDIICGD => 12,
-            CmdFightMatch3Type::PAOKPHEDMFO_KOOCHPNDBDO => 13,
-            CmdFightMatch3Type::PAOKPHEDMFO_BNINPGIDMGJ => 14,
-            CmdFightMatch3Type::PAOKPHEDMFO_ILCPJMEPHIJ => 15,
-            CmdFightMatch3Type::PAOKPHEDMFO_NAPNPHEHOBG => 16,
-            CmdFightMatch3Type::PAOKPHEDMFO_HPNFELDDKLN => 17,
-            CmdFightMatch3Type::PAOKPHEDMFO_HPHBHCJGBAI => 18,
-            CmdFightMatch3Type::PAOKPHEDMFO_AFJCDAOPFHH => 19,
-            CmdFightMatch3Type::PAOKPHEDMFO_HPFJGNEAGLF => 20,
-            CmdFightMatch3Type::PAOKPHEDMFO_JFKDPHEDPHM => 21,
-            CmdFightMatch3Type::PAOKPHEDMFO_BBJDEMPNMGL => 22,
-            CmdFightMatch3Type::PAOKPHEDMFO_AHACFDCMJDC => 23,
-            CmdFightMatch3Type::PAOKPHEDMFO_FGGEELJNLIL => 24,
-            CmdFightMatch3Type::PAOKPHEDMFO_OOKJBPFADCJ => 25,
-            CmdFightMatch3Type::PAOKPHEDMFO_LFJCJDPDPJN => 26,
-            CmdFightMatch3Type::PAOKPHEDMFO_KNDFOKOGKBD => 27,
+            CmdFightMatch3Type::CmdFightMatch3Type_HJLKOLMJPLJ => 0,
+            CmdFightMatch3Type::CmdFightMatch3Type_BGMCLOKBECK => 1,
+            CmdFightMatch3Type::CmdFightMatch3Type_FLEELEKDAAH => 2,
+            CmdFightMatch3Type::CmdFightMatch3Type_NGEDKCBOLHM => 3,
+            CmdFightMatch3Type::CmdFightMatch3Type_POIILKGIMGI => 4,
+            CmdFightMatch3Type::CmdFightMatch3Type_ALPNOBMKJPL => 5,
+            CmdFightMatch3Type::CmdFightMatch3Type_CNPMOFKBDGA => 6,
+            CmdFightMatch3Type::CmdFightMatch3Type_DHPDAFINLPK => 7,
+            CmdFightMatch3Type::CmdFightMatch3Type_PGBBLABCFAN => 8,
+            CmdFightMatch3Type::CmdFightMatch3Type_OLENKDPMEAD => 9,
+            CmdFightMatch3Type::CmdFightMatch3Type_CDELPEHBLEO => 10,
+            CmdFightMatch3Type::CmdFightMatch3Type_ECLNPMGJDGG => 11,
+            CmdFightMatch3Type::CmdFightMatch3Type_MJFHFPLAFJB => 12,
+            CmdFightMatch3Type::CmdFightMatch3Type_CJMNHEOGFBL => 13,
+            CmdFightMatch3Type::CmdFightMatch3Type_KFOEBAJLKJL => 14,
+            CmdFightMatch3Type::CmdFightMatch3Type_AFHBGKPAJGI => 15,
+            CmdFightMatch3Type::CmdFightMatch3Type_MJECHCBBKPD => 16,
+            CmdFightMatch3Type::CmdFightMatch3Type_DNCAPMEOEJD => 17,
+            CmdFightMatch3Type::CmdFightMatch3Type_PPILMFMMEEC => 18,
+            CmdFightMatch3Type::CmdFightMatch3Type_FOEMPMOPHIE => 19,
+            CmdFightMatch3Type::CmdFightMatch3Type_EHDMLAHJNMG => 20,
+            CmdFightMatch3Type::CmdFightMatch3Type_NNDKJEIEDEN => 21,
+            CmdFightMatch3Type::CmdFightMatch3Type_KHAKNJFNEMP => 22,
+            CmdFightMatch3Type::CmdFightMatch3Type_MLAMKEAECOF => 23,
+            CmdFightMatch3Type::CmdFightMatch3Type_JNGMPALPBLL => 24,
+            CmdFightMatch3Type::CmdFightMatch3Type_LKOKEHBODBN => 25,
+            CmdFightMatch3Type::CmdFightMatch3Type_NKLKHHEDPEL => 26,
+            CmdFightMatch3Type::CmdFightMatch3Type_KMKMCLBIPFA => 27,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -235,7 +235,7 @@ impl ::protobuf::EnumFull for CmdFightMatch3Type {
 
 impl ::std::default::Default for CmdFightMatch3Type {
     fn default() -> Self {
-        CmdFightMatch3Type::PAOKPHEDMFO_MGBJFKCFBDN
+        CmdFightMatch3Type::CmdFightMatch3Type_HJLKOLMJPLJ
     }
 }
 
@@ -246,28 +246,30 @@ impl CmdFightMatch3Type {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdFightMatch3Type.proto*\xf6\x06\n\x12CmdFightMatch3Type\x12\x1b\
-    \n\x17PAOKPHEDMFO_MGBJFKCFBDN\x10\0\x12\x1d\n\x17PAOKPHEDMFO_NAGCHCDCFEC\
-    \x10\xb0\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_FIODPHPHPIH\x10\xed\xeb\x01\
-    \x12\x1d\n\x17PAOKPHEDMFO_DICBGEDJDEH\x10\xc1\xeb\x01\x12\x1d\n\x17PAOKP\
-    HEDMFO_EAICCBFBOMK\x10\xc6\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_DKIONFOGLLG\
-    \x10\xcd\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_IKMKOHLPFNF\x10\xf4\xeb\x01\
-    \x12\x1d\n\x17PAOKPHEDMFO_CJGOMMBIOOO\x10\xcb\xeb\x01\x12\x1d\n\x17PAOKP\
-    HEDMFO_DLBDHLCMEFK\x10\xa8\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_DDOBICBKKIL\
-    \x10\xb6\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_AGACAJLHLAO\x10\xe3\xeb\x01\
-    \x12\x1d\n\x17PAOKPHEDMFO_DOLPBICOCBM\x10\xe4\xeb\x01\x12\x1d\n\x17PAOKP\
-    HEDMFO_MEKIIDIICGD\x10\xf1\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_KOOCHPNDBDO\
-    \x10\xd6\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_BNINPGIDMGJ\x10\xba\xeb\x01\
-    \x12\x1d\n\x17PAOKPHEDMFO_ILCPJMEPHIJ\x10\xe1\xeb\x01\x12\x1d\n\x17PAOKP\
-    HEDMFO_NAPNPHEHOBG\x10\xe7\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_HPNFELDDKLN\
-    \x10\xd9\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_HPHBHCJGBAI\x10\xe0\xeb\x01\
-    \x12\x1d\n\x17PAOKPHEDMFO_AFJCDAOPFHH\x10\x99\xeb\x01\x12\x1d\n\x17PAOKP\
-    HEDMFO_HPFJGNEAGLF\x10\xdf\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_JFKDPHEDPHM\
-    \x10\xa2\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_BBJDEMPNMGL\x10\xae\xeb\x01\
-    \x12\x1d\n\x17PAOKPHEDMFO_AHACFDCMJDC\x10\xc3\xeb\x01\x12\x1d\n\x17PAOKP\
-    HEDMFO_FGGEELJNLIL\x10\xb9\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_OOKJBPFADCJ\
-    \x10\xa0\xeb\x01\x12\x1d\n\x17PAOKPHEDMFO_LFJCJDPDPJN\x10\xd2\xeb\x01\
-    \x12\x1d\n\x17PAOKPHEDMFO_KNDFOKOGKBD\x10\xf3\xeb\x01b\x06proto3\
+    \n\x18CmdFightMatch3Type.proto*\xba\x08\n\x12CmdFightMatch3Type\x12\"\n\
+    \x1eCmdFightMatch3Type_HJLKOLMJPLJ\x10\0\x12$\n\x1eCmdFightMatch3Type_BG\
+    MCLOKBECK\x10\x9d\xeb\x01\x12$\n\x1eCmdFightMatch3Type_FLEELEKDAAH\x10\
+    \xf8\xeb\x01\x12$\n\x1eCmdFightMatch3Type_NGEDKCBOLHM\x10\x95\xeb\x01\
+    \x12$\n\x1eCmdFightMatch3Type_POIILKGIMGI\x10\xec\xeb\x01\x12$\n\x1eCmdF\
+    ightMatch3Type_ALPNOBMKJPL\x10\xb3\xeb\x01\x12$\n\x1eCmdFightMatch3Type_\
+    CNPMOFKBDGA\x10\xea\xeb\x01\x12$\n\x1eCmdFightMatch3Type_DHPDAFINLPK\x10\
+    \xb6\xeb\x01\x12$\n\x1eCmdFightMatch3Type_PGBBLABCFAN\x10\xd9\xeb\x01\
+    \x12$\n\x1eCmdFightMatch3Type_OLENKDPMEAD\x10\xc4\xeb\x01\x12$\n\x1eCmdF\
+    ightMatch3Type_CDELPEHBLEO\x10\xcd\xeb\x01\x12$\n\x1eCmdFightMatch3Type_\
+    ECLNPMGJDGG\x10\xbc\xeb\x01\x12$\n\x1eCmdFightMatch3Type_MJFHFPLAFJB\x10\
+    \xcc\xeb\x01\x12$\n\x1eCmdFightMatch3Type_CJMNHEOGFBL\x10\xc2\xeb\x01\
+    \x12$\n\x1eCmdFightMatch3Type_KFOEBAJLKJL\x10\xd2\xeb\x01\x12$\n\x1eCmdF\
+    ightMatch3Type_AFHBGKPAJGI\x10\xa6\xeb\x01\x12$\n\x1eCmdFightMatch3Type_\
+    MJECHCBBKPD\x10\xb7\xeb\x01\x12$\n\x1eCmdFightMatch3Type_DNCAPMEOEJD\x10\
+    \x97\xeb\x01\x12$\n\x1eCmdFightMatch3Type_PPILMFMMEEC\x10\xf4\xeb\x01\
+    \x12$\n\x1eCmdFightMatch3Type_FOEMPMOPHIE\x10\x9a\xeb\x01\x12$\n\x1eCmdF\
+    ightMatch3Type_EHDMLAHJNMG\x10\xe7\xeb\x01\x12$\n\x1eCmdFightMatch3Type_\
+    NNDKJEIEDEN\x10\xac\xeb\x01\x12$\n\x1eCmdFightMatch3Type_KHAKNJFNEMP\x10\
+    \xa7\xeb\x01\x12$\n\x1eCmdFightMatch3Type_MLAMKEAECOF\x10\xab\xeb\x01\
+    \x12$\n\x1eCmdFightMatch3Type_JNGMPALPBLL\x10\xa1\xeb\x01\x12$\n\x1eCmdF\
+    ightMatch3Type_LKOKEHBODBN\x10\x98\xeb\x01\x12$\n\x1eCmdFightMatch3Type_\
+    NKLKHHEDPEL\x10\xe8\xeb\x01\x12$\n\x1eCmdFightMatch3Type_KMKMCLBIPFA\x10\
+    \xe5\xeb\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FightLeaveScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FightLeaveScNotify.ONILCHDOPEB)
-    pub ONILCHDOPEB: u32,
+    // @@protoc_insertion_point(field:FightLeaveScNotify.ICHIAJCALFF)
+    pub ICHIAJCALFF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FightLeaveScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FightLeaveScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ONILCHDOPEB",
-            |m: &FightLeaveScNotify| { &m.ONILCHDOPEB },
-            |m: &mut FightLeaveScNotify| { &mut m.ONILCHDOPEB },
+            "ICHIAJCALFF",
+            |m: &FightLeaveScNotify| { &m.ICHIAJCALFF },
+            |m: &mut FightLeaveScNotify| { &mut m.ICHIAJCALFF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FightLeaveScNotify>(
             "FightLeaveScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FightLeaveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.ONILCHDOPEB = is.read_uint32()?;
+                112 => {
+                    self.ICHIAJCALFF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FightLeaveScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ONILCHDOPEB != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ONILCHDOPEB);
+        if self.ICHIAJCALFF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ICHIAJCALFF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FightLeaveScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ONILCHDOPEB != 0 {
-            os.write_uint32(3, self.ONILCHDOPEB)?;
+        if self.ICHIAJCALFF != 0 {
+            os.write_uint32(14, self.ICHIAJCALFF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FightLeaveScNotify {
     }
 
     fn clear(&mut self) {
-        self.ONILCHDOPEB = 0;
+        self.ICHIAJCALFF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FightLeaveScNotify {
         static instance: FightLeaveScNotify = FightLeaveScNotify {
-            ONILCHDOPEB: 0,
+            ICHIAJCALFF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FightLeaveScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18FightLeaveScNotify.proto\"6\n\x12FightLeaveScNotify\x12\x20\n\x0bO\
-    NILCHDOPEB\x18\x03\x20\x01(\rR\x0bONILCHDOPEBb\x06proto3\
+    \n\x18FightLeaveScNotify.proto\"6\n\x12FightLeaveScNotify\x12\x20\n\x0bI\
+    CHIAJCALFF\x18\x0e\x20\x01(\rR\x0bICHIAJCALFFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

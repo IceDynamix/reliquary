@@ -27,26 +27,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMailType)
 pub enum CmdMailType {
-    // @@protoc_insertion_point(enum_value:CmdMailType.LCFDJEADLPG_GKJBAODJMJG)
-    LCFDJEADLPG_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdMailType.LCFDJEADLPG_CEOPFOCFBLD)
-    LCFDJEADLPG_CEOPFOCFBLD = 855,
-    // @@protoc_insertion_point(enum_value:CmdMailType.LCFDJEADLPG_AIFGGEGOPFA)
-    LCFDJEADLPG_AIFGGEGOPFA = 857,
-    // @@protoc_insertion_point(enum_value:CmdMailType.LCFDJEADLPG_FJALLHKPLGK)
-    LCFDJEADLPG_FJALLHKPLGK = 828,
-    // @@protoc_insertion_point(enum_value:CmdMailType.LCFDJEADLPG_IEEAOPKJBBA)
-    LCFDJEADLPG_IEEAOPKJBBA = 820,
-    // @@protoc_insertion_point(enum_value:CmdMailType.LCFDJEADLPG_CDKNKPIEJCA)
-    LCFDJEADLPG_CDKNKPIEJCA = 875,
-    // @@protoc_insertion_point(enum_value:CmdMailType.LCFDJEADLPG_MIMLBBCCJFD)
-    LCFDJEADLPG_MIMLBBCCJFD = 862,
-    // @@protoc_insertion_point(enum_value:CmdMailType.LCFDJEADLPG_LKKCOECCLMG)
-    LCFDJEADLPG_LKKCOECCLMG = 847,
-    // @@protoc_insertion_point(enum_value:CmdMailType.LCFDJEADLPG_FCBAIBPHDBI)
-    LCFDJEADLPG_FCBAIBPHDBI = 838,
-    // @@protoc_insertion_point(enum_value:CmdMailType.LCFDJEADLPG_JCNNKDAAJEE)
-    LCFDJEADLPG_JCNNKDAAJEE = 826,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailType_MNFEPONEDDJ)
+    CmdMailType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailType_KLBICOFIDNG)
+    CmdMailType_KLBICOFIDNG = 835,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailType_LLHPJBNMGHK)
+    CmdMailType_LLHPJBNMGHK = 824,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailType_GIFGADBCGBA)
+    CmdMailType_GIFGADBCGBA = 869,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailType_CENLJJHJDLF)
+    CmdMailType_CENLJJHJDLF = 883,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailType_JONMNLKNKFF)
+    CmdMailType_JONMNLKNKFF = 813,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailType_MILGFIHJPDG)
+    CmdMailType_MILGFIHJPDG = 862,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailType_DEDKPBNOPDO)
+    CmdMailType_DEDKPBNOPDO = 900,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailType_LAOKACBKPOF)
+    CmdMailType_LAOKACBKPOF = 804,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMailType_NLNKDJNNMDC)
+    CmdMailType_NLNKDJNNMDC = 881,
 }
 
 impl ::protobuf::Enum for CmdMailType {
@@ -58,47 +58,47 @@ impl ::protobuf::Enum for CmdMailType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMailType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_GKJBAODJMJG),
-            855 => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_CEOPFOCFBLD),
-            857 => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_AIFGGEGOPFA),
-            828 => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_FJALLHKPLGK),
-            820 => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_IEEAOPKJBBA),
-            875 => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_CDKNKPIEJCA),
-            862 => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_MIMLBBCCJFD),
-            847 => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_LKKCOECCLMG),
-            838 => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_FCBAIBPHDBI),
-            826 => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_JCNNKDAAJEE),
+            0 => ::std::option::Option::Some(CmdMailType::CmdMailType_MNFEPONEDDJ),
+            835 => ::std::option::Option::Some(CmdMailType::CmdMailType_KLBICOFIDNG),
+            824 => ::std::option::Option::Some(CmdMailType::CmdMailType_LLHPJBNMGHK),
+            869 => ::std::option::Option::Some(CmdMailType::CmdMailType_GIFGADBCGBA),
+            883 => ::std::option::Option::Some(CmdMailType::CmdMailType_CENLJJHJDLF),
+            813 => ::std::option::Option::Some(CmdMailType::CmdMailType_JONMNLKNKFF),
+            862 => ::std::option::Option::Some(CmdMailType::CmdMailType_MILGFIHJPDG),
+            900 => ::std::option::Option::Some(CmdMailType::CmdMailType_DEDKPBNOPDO),
+            804 => ::std::option::Option::Some(CmdMailType::CmdMailType_LAOKACBKPOF),
+            881 => ::std::option::Option::Some(CmdMailType::CmdMailType_NLNKDJNNMDC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMailType> {
         match str {
-            "LCFDJEADLPG_GKJBAODJMJG" => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_GKJBAODJMJG),
-            "LCFDJEADLPG_CEOPFOCFBLD" => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_CEOPFOCFBLD),
-            "LCFDJEADLPG_AIFGGEGOPFA" => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_AIFGGEGOPFA),
-            "LCFDJEADLPG_FJALLHKPLGK" => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_FJALLHKPLGK),
-            "LCFDJEADLPG_IEEAOPKJBBA" => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_IEEAOPKJBBA),
-            "LCFDJEADLPG_CDKNKPIEJCA" => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_CDKNKPIEJCA),
-            "LCFDJEADLPG_MIMLBBCCJFD" => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_MIMLBBCCJFD),
-            "LCFDJEADLPG_LKKCOECCLMG" => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_LKKCOECCLMG),
-            "LCFDJEADLPG_FCBAIBPHDBI" => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_FCBAIBPHDBI),
-            "LCFDJEADLPG_JCNNKDAAJEE" => ::std::option::Option::Some(CmdMailType::LCFDJEADLPG_JCNNKDAAJEE),
+            "CmdMailType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdMailType::CmdMailType_MNFEPONEDDJ),
+            "CmdMailType_KLBICOFIDNG" => ::std::option::Option::Some(CmdMailType::CmdMailType_KLBICOFIDNG),
+            "CmdMailType_LLHPJBNMGHK" => ::std::option::Option::Some(CmdMailType::CmdMailType_LLHPJBNMGHK),
+            "CmdMailType_GIFGADBCGBA" => ::std::option::Option::Some(CmdMailType::CmdMailType_GIFGADBCGBA),
+            "CmdMailType_CENLJJHJDLF" => ::std::option::Option::Some(CmdMailType::CmdMailType_CENLJJHJDLF),
+            "CmdMailType_JONMNLKNKFF" => ::std::option::Option::Some(CmdMailType::CmdMailType_JONMNLKNKFF),
+            "CmdMailType_MILGFIHJPDG" => ::std::option::Option::Some(CmdMailType::CmdMailType_MILGFIHJPDG),
+            "CmdMailType_DEDKPBNOPDO" => ::std::option::Option::Some(CmdMailType::CmdMailType_DEDKPBNOPDO),
+            "CmdMailType_LAOKACBKPOF" => ::std::option::Option::Some(CmdMailType::CmdMailType_LAOKACBKPOF),
+            "CmdMailType_NLNKDJNNMDC" => ::std::option::Option::Some(CmdMailType::CmdMailType_NLNKDJNNMDC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMailType] = &[
-        CmdMailType::LCFDJEADLPG_GKJBAODJMJG,
-        CmdMailType::LCFDJEADLPG_CEOPFOCFBLD,
-        CmdMailType::LCFDJEADLPG_AIFGGEGOPFA,
-        CmdMailType::LCFDJEADLPG_FJALLHKPLGK,
-        CmdMailType::LCFDJEADLPG_IEEAOPKJBBA,
-        CmdMailType::LCFDJEADLPG_CDKNKPIEJCA,
-        CmdMailType::LCFDJEADLPG_MIMLBBCCJFD,
-        CmdMailType::LCFDJEADLPG_LKKCOECCLMG,
-        CmdMailType::LCFDJEADLPG_FCBAIBPHDBI,
-        CmdMailType::LCFDJEADLPG_JCNNKDAAJEE,
+        CmdMailType::CmdMailType_MNFEPONEDDJ,
+        CmdMailType::CmdMailType_KLBICOFIDNG,
+        CmdMailType::CmdMailType_LLHPJBNMGHK,
+        CmdMailType::CmdMailType_GIFGADBCGBA,
+        CmdMailType::CmdMailType_CENLJJHJDLF,
+        CmdMailType::CmdMailType_JONMNLKNKFF,
+        CmdMailType::CmdMailType_MILGFIHJPDG,
+        CmdMailType::CmdMailType_DEDKPBNOPDO,
+        CmdMailType::CmdMailType_LAOKACBKPOF,
+        CmdMailType::CmdMailType_NLNKDJNNMDC,
     ];
 }
 
@@ -110,16 +110,16 @@ impl ::protobuf::EnumFull for CmdMailType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMailType::LCFDJEADLPG_GKJBAODJMJG => 0,
-            CmdMailType::LCFDJEADLPG_CEOPFOCFBLD => 1,
-            CmdMailType::LCFDJEADLPG_AIFGGEGOPFA => 2,
-            CmdMailType::LCFDJEADLPG_FJALLHKPLGK => 3,
-            CmdMailType::LCFDJEADLPG_IEEAOPKJBBA => 4,
-            CmdMailType::LCFDJEADLPG_CDKNKPIEJCA => 5,
-            CmdMailType::LCFDJEADLPG_MIMLBBCCJFD => 6,
-            CmdMailType::LCFDJEADLPG_LKKCOECCLMG => 7,
-            CmdMailType::LCFDJEADLPG_FCBAIBPHDBI => 8,
-            CmdMailType::LCFDJEADLPG_JCNNKDAAJEE => 9,
+            CmdMailType::CmdMailType_MNFEPONEDDJ => 0,
+            CmdMailType::CmdMailType_KLBICOFIDNG => 1,
+            CmdMailType::CmdMailType_LLHPJBNMGHK => 2,
+            CmdMailType::CmdMailType_GIFGADBCGBA => 3,
+            CmdMailType::CmdMailType_CENLJJHJDLF => 4,
+            CmdMailType::CmdMailType_JONMNLKNKFF => 5,
+            CmdMailType::CmdMailType_MILGFIHJPDG => 6,
+            CmdMailType::CmdMailType_DEDKPBNOPDO => 7,
+            CmdMailType::CmdMailType_LAOKACBKPOF => 8,
+            CmdMailType::CmdMailType_NLNKDJNNMDC => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,7 +127,7 @@ impl ::protobuf::EnumFull for CmdMailType {
 
 impl ::std::default::Default for CmdMailType {
     fn default() -> Self {
-        CmdMailType::LCFDJEADLPG_GKJBAODJMJG
+        CmdMailType::CmdMailType_MNFEPONEDDJ
     }
 }
 
@@ -138,14 +138,14 @@ impl CmdMailType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CmdMailType.proto*\xb8\x02\n\x0bCmdMailType\x12\x1b\n\x17LCFDJEADL\
-    PG_GKJBAODJMJG\x10\0\x12\x1c\n\x17LCFDJEADLPG_CEOPFOCFBLD\x10\xd7\x06\
-    \x12\x1c\n\x17LCFDJEADLPG_AIFGGEGOPFA\x10\xd9\x06\x12\x1c\n\x17LCFDJEADL\
-    PG_FJALLHKPLGK\x10\xbc\x06\x12\x1c\n\x17LCFDJEADLPG_IEEAOPKJBBA\x10\xb4\
-    \x06\x12\x1c\n\x17LCFDJEADLPG_CDKNKPIEJCA\x10\xeb\x06\x12\x1c\n\x17LCFDJ\
-    EADLPG_MIMLBBCCJFD\x10\xde\x06\x12\x1c\n\x17LCFDJEADLPG_LKKCOECCLMG\x10\
-    \xcf\x06\x12\x1c\n\x17LCFDJEADLPG_FCBAIBPHDBI\x10\xc6\x06\x12\x1c\n\x17L\
-    CFDJEADLPG_JCNNKDAAJEE\x10\xba\x06b\x06proto3\
+    \n\x11CmdMailType.proto*\xb8\x02\n\x0bCmdMailType\x12\x1b\n\x17CmdMailTy\
+    pe_MNFEPONEDDJ\x10\0\x12\x1c\n\x17CmdMailType_KLBICOFIDNG\x10\xc3\x06\
+    \x12\x1c\n\x17CmdMailType_LLHPJBNMGHK\x10\xb8\x06\x12\x1c\n\x17CmdMailTy\
+    pe_GIFGADBCGBA\x10\xe5\x06\x12\x1c\n\x17CmdMailType_CENLJJHJDLF\x10\xf3\
+    \x06\x12\x1c\n\x17CmdMailType_JONMNLKNKFF\x10\xad\x06\x12\x1c\n\x17CmdMa\
+    ilType_MILGFIHJPDG\x10\xde\x06\x12\x1c\n\x17CmdMailType_DEDKPBNOPDO\x10\
+    \x84\x07\x12\x1c\n\x17CmdMailType_LAOKACBKPOF\x10\xa4\x06\x12\x1c\n\x17C\
+    mdMailType_NLNKDJNNMDC\x10\xf1\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

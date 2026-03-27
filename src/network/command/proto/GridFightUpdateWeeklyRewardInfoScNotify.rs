@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightUpdateWeeklyRewardInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:GridFightUpdateWeeklyRewardInfoScNotify.MKJGFKMBJDB)
-    pub MKJGFKMBJDB: ::protobuf::MessageField<super::GridFightWeeklyScore::GridFightWeeklyScore>,
+    // @@protoc_insertion_point(field:GridFightUpdateWeeklyRewardInfoScNotify.BJFHHNMLAHL)
+    pub BJFHHNMLAHL: ::protobuf::MessageField<super::GridFightWeeklyScore::GridFightWeeklyScore>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightUpdateWeeklyRewardInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GridFightUpdateWeeklyRewardInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightWeeklyScore::GridFightWeeklyScore>(
-            "MKJGFKMBJDB",
-            |m: &GridFightUpdateWeeklyRewardInfoScNotify| { &m.MKJGFKMBJDB },
-            |m: &mut GridFightUpdateWeeklyRewardInfoScNotify| { &mut m.MKJGFKMBJDB },
+            "BJFHHNMLAHL",
+            |m: &GridFightUpdateWeeklyRewardInfoScNotify| { &m.BJFHHNMLAHL },
+            |m: &mut GridFightUpdateWeeklyRewardInfoScNotify| { &mut m.BJFHHNMLAHL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightUpdateWeeklyRewardInfoScNotify>(
             "GridFightUpdateWeeklyRewardInfoScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GridFightUpdateWeeklyRewardInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MKJGFKMBJDB)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BJFHHNMLAHL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for GridFightUpdateWeeklyRewardInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MKJGFKMBJDB.as_ref() {
+        if let Some(v) = self.BJFHHNMLAHL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GridFightUpdateWeeklyRewardInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MKJGFKMBJDB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        if let Some(v) = self.BJFHHNMLAHL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GridFightUpdateWeeklyRewardInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.MKJGFKMBJDB.clear();
+        self.BJFHHNMLAHL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightUpdateWeeklyRewardInfoScNotify {
         static instance: GridFightUpdateWeeklyRewardInfoScNotify = GridFightUpdateWeeklyRewardInfoScNotify {
-            MKJGFKMBJDB: ::protobuf::MessageField::none(),
+            BJFHHNMLAHL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,9 +149,9 @@ impl ::protobuf::reflect::ProtobufValue for GridFightUpdateWeeklyRewardInfoScNot
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n-GridFightUpdateWeeklyRewardInfoScNotify.proto\x1a\x1aGridFightWeeklyS\
-    core.proto\"b\n'GridFightUpdateWeeklyRewardInfoScNotify\x127\n\x0bMKJGFK\
-    MBJDB\x18\t\x20\x01(\x0b2\x15.GridFightWeeklyScoreR\x0bMKJGFKMBJDBb\x06p\
-    roto3\
+    core.proto\"b\n'GridFightUpdateWeeklyRewardInfoScNotify\x127\n\x0bBJFHHN\
+    MLAHL\x18\x08\x20\x01(\x0b2\x15.GridFightWeeklyScoreR\x0bBJFHHNMLAHLb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

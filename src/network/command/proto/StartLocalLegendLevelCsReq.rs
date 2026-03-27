@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartLocalLegendLevelCsReq {
     // message fields
+    // @@protoc_insertion_point(field:StartLocalLegendLevelCsReq.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::POPMMAJPBBP::POPMMAJPBBP>,
+    // @@protoc_insertion_point(field:StartLocalLegendLevelCsReq.AKFJLNPHODD)
+    pub AKFJLNPHODD: u32,
     // @@protoc_insertion_point(field:StartLocalLegendLevelCsReq.group_id)
     pub group_id: u32,
-    // @@protoc_insertion_point(field:StartLocalLegendLevelCsReq.OHAHIIFJJMI)
-    pub OHAHIIFJJMI: u32,
-    // @@protoc_insertion_point(field:StartLocalLegendLevelCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::OIPKJJBBNOH::OIPKJJBBNOH>,
     // special fields
     // @@protoc_insertion_point(special_field:StartLocalLegendLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl StartLocalLegendLevelCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "group_id",
-            |m: &StartLocalLegendLevelCsReq| { &m.group_id },
-            |m: &mut StartLocalLegendLevelCsReq| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OHAHIIFJJMI",
-            |m: &StartLocalLegendLevelCsReq| { &m.OHAHIIFJJMI },
-            |m: &mut StartLocalLegendLevelCsReq| { &mut m.OHAHIIFJJMI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &StartLocalLegendLevelCsReq| { &m.avatar_list },
             |m: &mut StartLocalLegendLevelCsReq| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AKFJLNPHODD",
+            |m: &StartLocalLegendLevelCsReq| { &m.AKFJLNPHODD },
+            |m: &mut StartLocalLegendLevelCsReq| { &mut m.AKFJLNPHODD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "group_id",
+            |m: &StartLocalLegendLevelCsReq| { &m.group_id },
+            |m: &mut StartLocalLegendLevelCsReq| { &mut m.group_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartLocalLegendLevelCsReq>(
             "StartLocalLegendLevelCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for StartLocalLegendLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.group_id = is.read_uint32()?;
-                },
-                24 => {
-                    self.OHAHIIFJJMI = is.read_uint32()?;
-                },
-                90 => {
+                10 => {
                     self.avatar_list.push(is.read_message()?);
+                },
+                80 => {
+                    self.AKFJLNPHODD = is.read_uint32()?;
+                },
+                120 => {
+                    self.group_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for StartLocalLegendLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.group_id);
-        }
-        if self.OHAHIIFJJMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.OHAHIIFJJMI);
-        }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.AKFJLNPHODD != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.AKFJLNPHODD);
+        }
+        if self.group_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.group_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.group_id != 0 {
-            os.write_uint32(13, self.group_id)?;
-        }
-        if self.OHAHIIFJJMI != 0 {
-            os.write_uint32(3, self.OHAHIIFJJMI)?;
-        }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
+        if self.AKFJLNPHODD != 0 {
+            os.write_uint32(10, self.AKFJLNPHODD)?;
+        }
+        if self.group_id != 0 {
+            os.write_uint32(15, self.group_id)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for StartLocalLegendLevelCsReq {
     }
 
     fn clear(&mut self) {
-        self.group_id = 0;
-        self.OHAHIIFJJMI = 0;
         self.avatar_list.clear();
+        self.AKFJLNPHODD = 0;
+        self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartLocalLegendLevelCsReq {
         static instance: StartLocalLegendLevelCsReq = StartLocalLegendLevelCsReq {
-            group_id: 0,
-            OHAHIIFJJMI: 0,
             avatar_list: ::std::vec::Vec::new(),
+            AKFJLNPHODD: 0,
+            group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for StartLocalLegendLevelCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20StartLocalLegendLevelCsReq.proto\x1a\x11OIPKJJBBNOH.proto\"\x88\
-    \x01\n\x1aStartLocalLegendLevelCsReq\x12\x19\n\x08group_id\x18\r\x20\x01\
-    (\rR\x07groupId\x12\x20\n\x0bOHAHIIFJJMI\x18\x03\x20\x01(\rR\x0bOHAHIIFJ\
-    JMI\x12-\n\x0bavatar_list\x18\x0b\x20\x03(\x0b2\x0c.OIPKJJBBNOHR\navatar\
-    Listb\x06proto3\
+    \n\x20StartLocalLegendLevelCsReq.proto\x1a\x11POPMMAJPBBP.proto\"\x88\
+    \x01\n\x1aStartLocalLegendLevelCsReq\x12-\n\x0bavatar_list\x18\x01\x20\
+    \x03(\x0b2\x0c.POPMMAJPBBPR\navatarList\x12\x20\n\x0bAKFJLNPHODD\x18\n\
+    \x20\x01(\rR\x0bAKFJLNPHODD\x12\x19\n\x08group_id\x18\x0f\x20\x01(\rR\
+    \x07groupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OIPKJJBBNOH::file_descriptor().clone());
+            deps.push(super::POPMMAJPBBP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartLocalLegendLevelCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

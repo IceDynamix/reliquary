@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ElfRestaurantClientStatusCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ElfRestaurantClientStatusCsReq.DPDALMNINNG)
-    pub DPDALMNINNG: bool,
+    // @@protoc_insertion_point(field:ElfRestaurantClientStatusCsReq.IJKNMJIMHFL)
+    pub IJKNMJIMHFL: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ElfRestaurantClientStatusCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ElfRestaurantClientStatusCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DPDALMNINNG",
-            |m: &ElfRestaurantClientStatusCsReq| { &m.DPDALMNINNG },
-            |m: &mut ElfRestaurantClientStatusCsReq| { &mut m.DPDALMNINNG },
+            "IJKNMJIMHFL",
+            |m: &ElfRestaurantClientStatusCsReq| { &m.IJKNMJIMHFL },
+            |m: &mut ElfRestaurantClientStatusCsReq| { &mut m.IJKNMJIMHFL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ElfRestaurantClientStatusCsReq>(
             "ElfRestaurantClientStatusCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ElfRestaurantClientStatusCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.DPDALMNINNG = is.read_bool()?;
+                40 => {
+                    self.IJKNMJIMHFL = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ElfRestaurantClientStatusCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DPDALMNINNG != false {
+        if self.IJKNMJIMHFL != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ElfRestaurantClientStatusCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DPDALMNINNG != false {
-            os.write_bool(14, self.DPDALMNINNG)?;
+        if self.IJKNMJIMHFL != false {
+            os.write_bool(5, self.IJKNMJIMHFL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ElfRestaurantClientStatusCsReq {
     }
 
     fn clear(&mut self) {
-        self.DPDALMNINNG = false;
+        self.IJKNMJIMHFL = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ElfRestaurantClientStatusCsReq {
         static instance: ElfRestaurantClientStatusCsReq = ElfRestaurantClientStatusCsReq {
-            DPDALMNINNG: false,
+            IJKNMJIMHFL: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantClientStatusCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$ElfRestaurantClientStatusCsReq.proto\"B\n\x1eElfRestaurantClientStatu\
-    sCsReq\x12\x20\n\x0bDPDALMNINNG\x18\x0e\x20\x01(\x08R\x0bDPDALMNINNGb\
+    sCsReq\x12\x20\n\x0bIJKNMJIMHFL\x18\x05\x20\x01(\x08R\x0bIJKNMJIMHFLb\
     \x06proto3\
 ";
 

@@ -27,32 +27,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRelicBoxType)
 pub enum CmdRelicBoxType {
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_GKJBAODJMJG)
-    ODLMBOILBGB_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_OHLAOGDPAND)
-    ODLMBOILBGB_OHLAOGDPAND = 8960,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_HNKBAFDPBLN)
-    ODLMBOILBGB_HNKBAFDPBLN = 8951,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_CBCOIPPBODH)
-    ODLMBOILBGB_CBCOIPPBODH = 8956,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_BLOFMBGOBPB)
-    ODLMBOILBGB_BLOFMBGOBPB = 8961,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_BECLJFHLDJA)
-    ODLMBOILBGB_BECLJFHLDJA = 8963,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_JMFAPOMIDDC)
-    ODLMBOILBGB_JMFAPOMIDDC = 8954,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_BGPHIPMAHDN)
-    ODLMBOILBGB_BGPHIPMAHDN = 8959,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_PCNGKAMCHAI)
-    ODLMBOILBGB_PCNGKAMCHAI = 8969,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_CFICDLDAIIM)
-    ODLMBOILBGB_CFICDLDAIIM = 8966,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_OKKAOEIOBPD)
-    ODLMBOILBGB_OKKAOEIOBPD = 8953,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_MDMGDOCHCCI)
-    ODLMBOILBGB_MDMGDOCHCCI = 8962,
-    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.ODLMBOILBGB_BGJKMADGJEC)
-    ODLMBOILBGB_BGJKMADGJEC = 8968,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_MNFEPONEDDJ)
+    CmdRelicBoxType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_NMCHJNCCKHN)
+    CmdRelicBoxType_NMCHJNCCKHN = 8951,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_CIMJFNGENKB)
+    CmdRelicBoxType_CIMJFNGENKB = 8966,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_OPKLCAJAIGM)
+    CmdRelicBoxType_OPKLCAJAIGM = 8956,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_LNJIHEGBCEE)
+    CmdRelicBoxType_LNJIHEGBCEE = 8959,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_JJALGJFHLPP)
+    CmdRelicBoxType_JJALGJFHLPP = 8969,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_OICKJPCGCAE)
+    CmdRelicBoxType_OICKJPCGCAE = 8960,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_DPPPBCCHCLB)
+    CmdRelicBoxType_DPPPBCCHCLB = 8967,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_IFCOOCMELAE)
+    CmdRelicBoxType_IFCOOCMELAE = 8954,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_KICLLFLMKPN)
+    CmdRelicBoxType_KICLLFLMKPN = 8953,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_AAGHHAMPHLK)
+    CmdRelicBoxType_AAGHHAMPHLK = 8965,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_EFHLKFFGILN)
+    CmdRelicBoxType_EFHLKFFGILN = 8955,
+    // @@protoc_insertion_point(enum_value:CmdRelicBoxType.CmdRelicBoxType_NINNDMNDBIO)
+    CmdRelicBoxType_NINNDMNDBIO = 8957,
 }
 
 impl ::protobuf::Enum for CmdRelicBoxType {
@@ -64,56 +64,56 @@ impl ::protobuf::Enum for CmdRelicBoxType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRelicBoxType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_GKJBAODJMJG),
-            8960 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_OHLAOGDPAND),
-            8951 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_HNKBAFDPBLN),
-            8956 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_CBCOIPPBODH),
-            8961 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_BLOFMBGOBPB),
-            8963 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_BECLJFHLDJA),
-            8954 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_JMFAPOMIDDC),
-            8959 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_BGPHIPMAHDN),
-            8969 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_PCNGKAMCHAI),
-            8966 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_CFICDLDAIIM),
-            8953 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_OKKAOEIOBPD),
-            8962 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_MDMGDOCHCCI),
-            8968 => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_BGJKMADGJEC),
+            0 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_MNFEPONEDDJ),
+            8951 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_NMCHJNCCKHN),
+            8966 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_CIMJFNGENKB),
+            8956 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_OPKLCAJAIGM),
+            8959 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_LNJIHEGBCEE),
+            8969 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_JJALGJFHLPP),
+            8960 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_OICKJPCGCAE),
+            8967 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_DPPPBCCHCLB),
+            8954 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_IFCOOCMELAE),
+            8953 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_KICLLFLMKPN),
+            8965 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_AAGHHAMPHLK),
+            8955 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_EFHLKFFGILN),
+            8957 => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_NINNDMNDBIO),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRelicBoxType> {
         match str {
-            "ODLMBOILBGB_GKJBAODJMJG" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_GKJBAODJMJG),
-            "ODLMBOILBGB_OHLAOGDPAND" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_OHLAOGDPAND),
-            "ODLMBOILBGB_HNKBAFDPBLN" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_HNKBAFDPBLN),
-            "ODLMBOILBGB_CBCOIPPBODH" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_CBCOIPPBODH),
-            "ODLMBOILBGB_BLOFMBGOBPB" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_BLOFMBGOBPB),
-            "ODLMBOILBGB_BECLJFHLDJA" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_BECLJFHLDJA),
-            "ODLMBOILBGB_JMFAPOMIDDC" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_JMFAPOMIDDC),
-            "ODLMBOILBGB_BGPHIPMAHDN" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_BGPHIPMAHDN),
-            "ODLMBOILBGB_PCNGKAMCHAI" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_PCNGKAMCHAI),
-            "ODLMBOILBGB_CFICDLDAIIM" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_CFICDLDAIIM),
-            "ODLMBOILBGB_OKKAOEIOBPD" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_OKKAOEIOBPD),
-            "ODLMBOILBGB_MDMGDOCHCCI" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_MDMGDOCHCCI),
-            "ODLMBOILBGB_BGJKMADGJEC" => ::std::option::Option::Some(CmdRelicBoxType::ODLMBOILBGB_BGJKMADGJEC),
+            "CmdRelicBoxType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_MNFEPONEDDJ),
+            "CmdRelicBoxType_NMCHJNCCKHN" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_NMCHJNCCKHN),
+            "CmdRelicBoxType_CIMJFNGENKB" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_CIMJFNGENKB),
+            "CmdRelicBoxType_OPKLCAJAIGM" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_OPKLCAJAIGM),
+            "CmdRelicBoxType_LNJIHEGBCEE" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_LNJIHEGBCEE),
+            "CmdRelicBoxType_JJALGJFHLPP" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_JJALGJFHLPP),
+            "CmdRelicBoxType_OICKJPCGCAE" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_OICKJPCGCAE),
+            "CmdRelicBoxType_DPPPBCCHCLB" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_DPPPBCCHCLB),
+            "CmdRelicBoxType_IFCOOCMELAE" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_IFCOOCMELAE),
+            "CmdRelicBoxType_KICLLFLMKPN" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_KICLLFLMKPN),
+            "CmdRelicBoxType_AAGHHAMPHLK" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_AAGHHAMPHLK),
+            "CmdRelicBoxType_EFHLKFFGILN" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_EFHLKFFGILN),
+            "CmdRelicBoxType_NINNDMNDBIO" => ::std::option::Option::Some(CmdRelicBoxType::CmdRelicBoxType_NINNDMNDBIO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRelicBoxType] = &[
-        CmdRelicBoxType::ODLMBOILBGB_GKJBAODJMJG,
-        CmdRelicBoxType::ODLMBOILBGB_OHLAOGDPAND,
-        CmdRelicBoxType::ODLMBOILBGB_HNKBAFDPBLN,
-        CmdRelicBoxType::ODLMBOILBGB_CBCOIPPBODH,
-        CmdRelicBoxType::ODLMBOILBGB_BLOFMBGOBPB,
-        CmdRelicBoxType::ODLMBOILBGB_BECLJFHLDJA,
-        CmdRelicBoxType::ODLMBOILBGB_JMFAPOMIDDC,
-        CmdRelicBoxType::ODLMBOILBGB_BGPHIPMAHDN,
-        CmdRelicBoxType::ODLMBOILBGB_PCNGKAMCHAI,
-        CmdRelicBoxType::ODLMBOILBGB_CFICDLDAIIM,
-        CmdRelicBoxType::ODLMBOILBGB_OKKAOEIOBPD,
-        CmdRelicBoxType::ODLMBOILBGB_MDMGDOCHCCI,
-        CmdRelicBoxType::ODLMBOILBGB_BGJKMADGJEC,
+        CmdRelicBoxType::CmdRelicBoxType_MNFEPONEDDJ,
+        CmdRelicBoxType::CmdRelicBoxType_NMCHJNCCKHN,
+        CmdRelicBoxType::CmdRelicBoxType_CIMJFNGENKB,
+        CmdRelicBoxType::CmdRelicBoxType_OPKLCAJAIGM,
+        CmdRelicBoxType::CmdRelicBoxType_LNJIHEGBCEE,
+        CmdRelicBoxType::CmdRelicBoxType_JJALGJFHLPP,
+        CmdRelicBoxType::CmdRelicBoxType_OICKJPCGCAE,
+        CmdRelicBoxType::CmdRelicBoxType_DPPPBCCHCLB,
+        CmdRelicBoxType::CmdRelicBoxType_IFCOOCMELAE,
+        CmdRelicBoxType::CmdRelicBoxType_KICLLFLMKPN,
+        CmdRelicBoxType::CmdRelicBoxType_AAGHHAMPHLK,
+        CmdRelicBoxType::CmdRelicBoxType_EFHLKFFGILN,
+        CmdRelicBoxType::CmdRelicBoxType_NINNDMNDBIO,
     ];
 }
 
@@ -125,19 +125,19 @@ impl ::protobuf::EnumFull for CmdRelicBoxType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRelicBoxType::ODLMBOILBGB_GKJBAODJMJG => 0,
-            CmdRelicBoxType::ODLMBOILBGB_OHLAOGDPAND => 1,
-            CmdRelicBoxType::ODLMBOILBGB_HNKBAFDPBLN => 2,
-            CmdRelicBoxType::ODLMBOILBGB_CBCOIPPBODH => 3,
-            CmdRelicBoxType::ODLMBOILBGB_BLOFMBGOBPB => 4,
-            CmdRelicBoxType::ODLMBOILBGB_BECLJFHLDJA => 5,
-            CmdRelicBoxType::ODLMBOILBGB_JMFAPOMIDDC => 6,
-            CmdRelicBoxType::ODLMBOILBGB_BGPHIPMAHDN => 7,
-            CmdRelicBoxType::ODLMBOILBGB_PCNGKAMCHAI => 8,
-            CmdRelicBoxType::ODLMBOILBGB_CFICDLDAIIM => 9,
-            CmdRelicBoxType::ODLMBOILBGB_OKKAOEIOBPD => 10,
-            CmdRelicBoxType::ODLMBOILBGB_MDMGDOCHCCI => 11,
-            CmdRelicBoxType::ODLMBOILBGB_BGJKMADGJEC => 12,
+            CmdRelicBoxType::CmdRelicBoxType_MNFEPONEDDJ => 0,
+            CmdRelicBoxType::CmdRelicBoxType_NMCHJNCCKHN => 1,
+            CmdRelicBoxType::CmdRelicBoxType_CIMJFNGENKB => 2,
+            CmdRelicBoxType::CmdRelicBoxType_OPKLCAJAIGM => 3,
+            CmdRelicBoxType::CmdRelicBoxType_LNJIHEGBCEE => 4,
+            CmdRelicBoxType::CmdRelicBoxType_JJALGJFHLPP => 5,
+            CmdRelicBoxType::CmdRelicBoxType_OICKJPCGCAE => 6,
+            CmdRelicBoxType::CmdRelicBoxType_DPPPBCCHCLB => 7,
+            CmdRelicBoxType::CmdRelicBoxType_IFCOOCMELAE => 8,
+            CmdRelicBoxType::CmdRelicBoxType_KICLLFLMKPN => 9,
+            CmdRelicBoxType::CmdRelicBoxType_AAGHHAMPHLK => 10,
+            CmdRelicBoxType::CmdRelicBoxType_EFHLKFFGILN => 11,
+            CmdRelicBoxType::CmdRelicBoxType_NINNDMNDBIO => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -145,7 +145,7 @@ impl ::protobuf::EnumFull for CmdRelicBoxType {
 
 impl ::std::default::Default for CmdRelicBoxType {
     fn default() -> Self {
-        CmdRelicBoxType::ODLMBOILBGB_GKJBAODJMJG
+        CmdRelicBoxType::CmdRelicBoxType_MNFEPONEDDJ
     }
 }
 
@@ -156,16 +156,16 @@ impl CmdRelicBoxType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdRelicBoxType.proto*\x96\x03\n\x0fCmdRelicBoxType\x12\x1b\n\x17O\
-    DLMBOILBGB_GKJBAODJMJG\x10\0\x12\x1c\n\x17ODLMBOILBGB_OHLAOGDPAND\x10\
-    \x80F\x12\x1c\n\x17ODLMBOILBGB_HNKBAFDPBLN\x10\xf7E\x12\x1c\n\x17ODLMBOI\
-    LBGB_CBCOIPPBODH\x10\xfcE\x12\x1c\n\x17ODLMBOILBGB_BLOFMBGOBPB\x10\x81F\
-    \x12\x1c\n\x17ODLMBOILBGB_BECLJFHLDJA\x10\x83F\x12\x1c\n\x17ODLMBOILBGB_\
-    JMFAPOMIDDC\x10\xfaE\x12\x1c\n\x17ODLMBOILBGB_BGPHIPMAHDN\x10\xffE\x12\
-    \x1c\n\x17ODLMBOILBGB_PCNGKAMCHAI\x10\x89F\x12\x1c\n\x17ODLMBOILBGB_CFIC\
-    DLDAIIM\x10\x86F\x12\x1c\n\x17ODLMBOILBGB_OKKAOEIOBPD\x10\xf9E\x12\x1c\n\
-    \x17ODLMBOILBGB_MDMGDOCHCCI\x10\x82F\x12\x1c\n\x17ODLMBOILBGB_BGJKMADGJE\
-    C\x10\x88Fb\x06proto3\
+    \n\x15CmdRelicBoxType.proto*\xca\x03\n\x0fCmdRelicBoxType\x12\x1f\n\x1bC\
+    mdRelicBoxType_MNFEPONEDDJ\x10\0\x12\x20\n\x1bCmdRelicBoxType_NMCHJNCCKH\
+    N\x10\xf7E\x12\x20\n\x1bCmdRelicBoxType_CIMJFNGENKB\x10\x86F\x12\x20\n\
+    \x1bCmdRelicBoxType_OPKLCAJAIGM\x10\xfcE\x12\x20\n\x1bCmdRelicBoxType_LN\
+    JIHEGBCEE\x10\xffE\x12\x20\n\x1bCmdRelicBoxType_JJALGJFHLPP\x10\x89F\x12\
+    \x20\n\x1bCmdRelicBoxType_OICKJPCGCAE\x10\x80F\x12\x20\n\x1bCmdRelicBoxT\
+    ype_DPPPBCCHCLB\x10\x87F\x12\x20\n\x1bCmdRelicBoxType_IFCOOCMELAE\x10\
+    \xfaE\x12\x20\n\x1bCmdRelicBoxType_KICLLFLMKPN\x10\xf9E\x12\x20\n\x1bCmd\
+    RelicBoxType_AAGHHAMPHLK\x10\x85F\x12\x20\n\x1bCmdRelicBoxType_EFHLKFFGI\
+    LN\x10\xfbE\x12\x20\n\x1bCmdRelicBoxType_NINNDMNDBIO\x10\xfdEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

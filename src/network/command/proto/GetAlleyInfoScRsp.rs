@@ -28,30 +28,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAlleyInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.GFNCGJBHMLN)
-    pub GFNCGJBHMLN: ::std::vec::Vec<super::BLDFMMDKGEP::BLDFMMDKGEP>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.IMFFNKPEAAP)
-    pub IMFFNKPEAAP: ::protobuf::MessageField<super::BMHKCCLNBEL::BMHKCCLNBEL>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.JBGMKCCENHA)
-    pub JBGMKCCENHA: ::std::collections::HashMap<u32, u32>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.EIOGELEOCEI)
-    pub EIOGELEOCEI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.LNDHKHIIIIO)
-    pub LNDHKHIIIIO: ::protobuf::MessageField<super::OCHONAFNBMC::OCHONAFNBMC>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.KMCNDBHIBMP)
-    pub KMCNDBHIBMP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.POHJFPKJCOD)
+    pub POHJFPKJCOD: ::std::collections::HashMap<u32, u32>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.AJIPHKMODOA)
+    pub AJIPHKMODOA: ::protobuf::MessageField<super::FILNNLBDNCL::FILNNLBDNCL>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.HDFFKPKAAHP)
+    pub HDFFKPKAAHP: ::protobuf::MessageField<super::DMOGCDLOBGK::DMOGCDLOBGK>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.LNMMHGFJIIG)
+    pub LNMMHGFJIIG: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.ACFMNILDBOO)
+    pub ACFMNILDBOO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.PIFDBKPHLAO)
+    pub PIFDBKPHLAO: ::protobuf::MessageField<super::CFIOCAIHCOI::CFIOCAIHCOI>,
     // @@protoc_insertion_point(field:GetAlleyInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.LEDANFBMDAO)
-    pub LEDANFBMDAO: ::protobuf::MessageField<super::KBEFLFKMLNG::KBEFLFKMLNG>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.GCOJBJOMMPI)
+    pub GCOJBJOMMPI: ::std::vec::Vec<super::KMLGGPGEBDE::KMLGGPGEBDE>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.IIPCHBNIIGO)
+    pub IIPCHBNIIGO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.JDKOFBNBJNI)
+    pub JDKOFBNBJNI: u32,
     // @@protoc_insertion_point(field:GetAlleyInfoScRsp.cur_fund)
     pub cur_fund: u32,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.DBAGIILOLPK)
-    pub DBAGIILOLPK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetAlleyInfoScRsp.PJPILLNABEC)
-    pub PJPILLNABEC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetAlleyInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -71,65 +71,65 @@ impl GetAlleyInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(12);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GFNCGJBHMLN",
-            |m: &GetAlleyInfoScRsp| { &m.GFNCGJBHMLN },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.GFNCGJBHMLN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BMHKCCLNBEL::BMHKCCLNBEL>(
-            "IMFFNKPEAAP",
-            |m: &GetAlleyInfoScRsp| { &m.IMFFNKPEAAP },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.IMFFNKPEAAP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "JBGMKCCENHA",
-            |m: &GetAlleyInfoScRsp| { &m.JBGMKCCENHA },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.JBGMKCCENHA },
+            "POHJFPKJCOD",
+            |m: &GetAlleyInfoScRsp| { &m.POHJFPKJCOD },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.POHJFPKJCOD },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &GetAlleyInfoScRsp| { &m.level },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.level },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FILNNLBDNCL::FILNNLBDNCL>(
+            "AJIPHKMODOA",
+            |m: &GetAlleyInfoScRsp| { &m.AJIPHKMODOA },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.AJIPHKMODOA },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EIOGELEOCEI",
-            |m: &GetAlleyInfoScRsp| { &m.EIOGELEOCEI },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.EIOGELEOCEI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OCHONAFNBMC::OCHONAFNBMC>(
-            "LNDHKHIIIIO",
-            |m: &GetAlleyInfoScRsp| { &m.LNDHKHIIIIO },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.LNDHKHIIIIO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DMOGCDLOBGK::DMOGCDLOBGK>(
+            "HDFFKPKAAHP",
+            |m: &GetAlleyInfoScRsp| { &m.HDFFKPKAAHP },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.HDFFKPKAAHP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KMCNDBHIBMP",
-            |m: &GetAlleyInfoScRsp| { &m.KMCNDBHIBMP },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.KMCNDBHIBMP },
+            "LNMMHGFJIIG",
+            |m: &GetAlleyInfoScRsp| { &m.LNMMHGFJIIG },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.LNMMHGFJIIG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ACFMNILDBOO",
+            |m: &GetAlleyInfoScRsp| { &m.ACFMNILDBOO },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.ACFMNILDBOO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CFIOCAIHCOI::CFIOCAIHCOI>(
+            "PIFDBKPHLAO",
+            |m: &GetAlleyInfoScRsp| { &m.PIFDBKPHLAO },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.PIFDBKPHLAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetAlleyInfoScRsp| { &m.retcode },
             |m: &mut GetAlleyInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KBEFLFKMLNG::KBEFLFKMLNG>(
-            "LEDANFBMDAO",
-            |m: &GetAlleyInfoScRsp| { &m.LEDANFBMDAO },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.LEDANFBMDAO },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "GCOJBJOMMPI",
+            |m: &GetAlleyInfoScRsp| { &m.GCOJBJOMMPI },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.GCOJBJOMMPI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IIPCHBNIIGO",
+            |m: &GetAlleyInfoScRsp| { &m.IIPCHBNIIGO },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.IIPCHBNIIGO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &GetAlleyInfoScRsp| { &m.level },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JDKOFBNBJNI",
+            |m: &GetAlleyInfoScRsp| { &m.JDKOFBNBJNI },
+            |m: &mut GetAlleyInfoScRsp| { &mut m.JDKOFBNBJNI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_fund",
             |m: &GetAlleyInfoScRsp| { &m.cur_fund },
             |m: &mut GetAlleyInfoScRsp| { &mut m.cur_fund },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DBAGIILOLPK",
-            |m: &GetAlleyInfoScRsp| { &m.DBAGIILOLPK },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.DBAGIILOLPK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJPILLNABEC",
-            |m: &GetAlleyInfoScRsp| { &m.PJPILLNABEC },
-            |m: &mut GetAlleyInfoScRsp| { &mut m.PJPILLNABEC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAlleyInfoScRsp>(
             "GetAlleyInfoScRsp",
@@ -149,13 +149,7 @@ impl ::protobuf::Message for GetAlleyInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.GFNCGJBHMLN.push(is.read_message()?);
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IMFFNKPEAAP)?;
-                },
-                26 => {
+                98 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -168,43 +162,49 @@ impl ::protobuf::Message for GetAlleyInfoScRsp {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.JBGMKCCENHA.insert(key, value);
+                    self.POHJFPKJCOD.insert(key, value);
                 },
-                56 => {
-                    self.level = is.read_uint32()?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AJIPHKMODOA)?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HDFFKPKAAHP)?;
                 },
                 106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EIOGELEOCEI)?;
+                    is.read_repeated_packed_uint32_into(&mut self.LNMMHGFJIIG)?;
                 },
                 104 => {
-                    self.EIOGELEOCEI.push(is.read_uint32()?);
+                    self.LNMMHGFJIIG.push(is.read_uint32()?);
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNDHKHIIIIO)?;
-                },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KMCNDBHIBMP)?;
-                },
-                40 => {
-                    self.KMCNDBHIBMP.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LEDANFBMDAO)?;
-                },
-                16 => {
-                    self.cur_fund = is.read_uint32()?;
-                },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DBAGIILOLPK)?;
-                },
-                112 => {
-                    self.DBAGIILOLPK.push(is.read_uint32()?);
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ACFMNILDBOO)?;
                 },
                 64 => {
-                    self.PJPILLNABEC = is.read_uint32()?;
+                    self.ACFMNILDBOO.push(is.read_uint32()?);
+                },
+                26 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PIFDBKPHLAO)?;
+                },
+                48 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                34 => {
+                    self.GCOJBJOMMPI.push(is.read_message()?);
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IIPCHBNIIGO)?;
+                },
+                40 => {
+                    self.IIPCHBNIIGO.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.level = is.read_uint32()?;
+                },
+                56 => {
+                    self.JDKOFBNBJNI = is.read_uint32()?;
+                },
+                112 => {
+                    self.cur_fund = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -218,42 +218,42 @@ impl ::protobuf::Message for GetAlleyInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GFNCGJBHMLN {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.IMFFNKPEAAP.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for (k, v) in &self.JBGMKCCENHA {
+        for (k, v) in &self.POHJFPKJCOD {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.level);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.EIOGELEOCEI);
-        if let Some(v) = self.LNDHKHIIIIO.as_ref() {
+        if let Some(v) = self.AJIPHKMODOA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.KMCNDBHIBMP);
+        if let Some(v) = self.HDFFKPKAAHP.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.LNMMHGFJIIG);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.ACFMNILDBOO);
+        if let Some(v) = self.PIFDBKPHLAO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
-        if let Some(v) = self.LEDANFBMDAO.as_ref() {
-            let len = v.compute_size();
+        for value in &self.GCOJBJOMMPI {
+            let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.IIPCHBNIIGO);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
+        }
+        if self.JDKOFBNBJNI != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JDKOFBNBJNI);
         }
         if self.cur_fund != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.cur_fund);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.DBAGIILOLPK);
-        if self.PJPILLNABEC != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PJPILLNABEC);
+            my_size += ::protobuf::rt::uint32_size(14, self.cur_fund);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -261,41 +261,41 @@ impl ::protobuf::Message for GetAlleyInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GFNCGJBHMLN {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
-        if let Some(v) = self.IMFFNKPEAAP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        for (k, v) in &self.JBGMKCCENHA {
+        for (k, v) in &self.POHJFPKJCOD {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(26)?; // Tag.
+            os.write_raw_varint32(98)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.level != 0 {
-            os.write_uint32(7, self.level)?;
+        if let Some(v) = self.AJIPHKMODOA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        os.write_repeated_packed_uint32(13, &self.EIOGELEOCEI)?;
-        if let Some(v) = self.LNDHKHIIIIO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.HDFFKPKAAHP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        os.write_repeated_packed_uint32(5, &self.KMCNDBHIBMP)?;
+        os.write_repeated_packed_uint32(13, &self.LNMMHGFJIIG)?;
+        os.write_repeated_packed_uint32(8, &self.ACFMNILDBOO)?;
+        if let Some(v) = self.PIFDBKPHLAO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
-        if let Some(v) = self.LEDANFBMDAO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.GCOJBJOMMPI {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        os.write_repeated_packed_uint32(5, &self.IIPCHBNIIGO)?;
+        if self.level != 0 {
+            os.write_uint32(9, self.level)?;
+        }
+        if self.JDKOFBNBJNI != 0 {
+            os.write_uint32(7, self.JDKOFBNBJNI)?;
         }
         if self.cur_fund != 0 {
-            os.write_uint32(2, self.cur_fund)?;
-        }
-        os.write_repeated_packed_uint32(14, &self.DBAGIILOLPK)?;
-        if self.PJPILLNABEC != 0 {
-            os.write_uint32(8, self.PJPILLNABEC)?;
+            os.write_uint32(14, self.cur_fund)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -314,18 +314,18 @@ impl ::protobuf::Message for GetAlleyInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.GFNCGJBHMLN.clear();
-        self.IMFFNKPEAAP.clear();
-        self.JBGMKCCENHA.clear();
-        self.level = 0;
-        self.EIOGELEOCEI.clear();
-        self.LNDHKHIIIIO.clear();
-        self.KMCNDBHIBMP.clear();
+        self.POHJFPKJCOD.clear();
+        self.AJIPHKMODOA.clear();
+        self.HDFFKPKAAHP.clear();
+        self.LNMMHGFJIIG.clear();
+        self.ACFMNILDBOO.clear();
+        self.PIFDBKPHLAO.clear();
         self.retcode = 0;
-        self.LEDANFBMDAO.clear();
+        self.GCOJBJOMMPI.clear();
+        self.IIPCHBNIIGO.clear();
+        self.level = 0;
+        self.JDKOFBNBJNI = 0;
         self.cur_fund = 0;
-        self.DBAGIILOLPK.clear();
-        self.PJPILLNABEC = 0;
         self.special_fields.clear();
     }
 
@@ -353,22 +353,22 @@ impl ::protobuf::reflect::ProtobufValue for GetAlleyInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetAlleyInfoScRsp.proto\x1a\x11BLDFMMDKGEP.proto\x1a\x11BMHKCCLNBE\
-    L.proto\x1a\x11KBEFLFKMLNG.proto\x1a\x11OCHONAFNBMC.proto\"\xad\x04\n\
-    \x11GetAlleyInfoScRsp\x12.\n\x0bGFNCGJBHMLN\x18\x04\x20\x03(\x0b2\x0c.BL\
-    DFMMDKGEPR\x0bGFNCGJBHMLN\x12.\n\x0bIMFFNKPEAAP\x18\n\x20\x01(\x0b2\x0c.\
-    BMHKCCLNBELR\x0bIMFFNKPEAAP\x12E\n\x0bJBGMKCCENHA\x18\x03\x20\x03(\x0b2#\
-    .GetAlleyInfoScRsp.JBGMKCCENHAEntryR\x0bJBGMKCCENHA\x12\x14\n\x05level\
-    \x18\x07\x20\x01(\rR\x05level\x12\x20\n\x0bEIOGELEOCEI\x18\r\x20\x03(\rR\
-    \x0bEIOGELEOCEI\x12.\n\x0bLNDHKHIIIIO\x18\x01\x20\x01(\x0b2\x0c.OCHONAFN\
-    BMCR\x0bLNDHKHIIIIO\x12\x20\n\x0bKMCNDBHIBMP\x18\x05\x20\x03(\rR\x0bKMCN\
-    DBHIBMP\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12.\n\x0bLE\
-    DANFBMDAO\x18\t\x20\x01(\x0b2\x0c.KBEFLFKMLNGR\x0bLEDANFBMDAO\x12\x19\n\
-    \x08cur_fund\x18\x02\x20\x01(\rR\x07curFund\x12\x20\n\x0bDBAGIILOLPK\x18\
-    \x0e\x20\x03(\rR\x0bDBAGIILOLPK\x12\x20\n\x0bPJPILLNABEC\x18\x08\x20\x01\
-    (\rR\x0bPJPILLNABEC\x1a>\n\x10JBGMKCCENHAEntry\x12\x10\n\x03key\x18\x01\
-    \x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x02\
-    8\x01b\x06proto3\
+    \n\x17GetAlleyInfoScRsp.proto\x1a\x11CFIOCAIHCOI.proto\x1a\x11DMOGCDLOBG\
+    K.proto\x1a\x11FILNNLBDNCL.proto\x1a\x11KMLGGPGEBDE.proto\"\xad\x04\n\
+    \x11GetAlleyInfoScRsp\x12E\n\x0bPOHJFPKJCOD\x18\x0c\x20\x03(\x0b2#.GetAl\
+    leyInfoScRsp.POHJFPKJCODEntryR\x0bPOHJFPKJCOD\x12.\n\x0bAJIPHKMODOA\x18\
+    \x0f\x20\x01(\x0b2\x0c.FILNNLBDNCLR\x0bAJIPHKMODOA\x12.\n\x0bHDFFKPKAAHP\
+    \x18\x02\x20\x01(\x0b2\x0c.DMOGCDLOBGKR\x0bHDFFKPKAAHP\x12\x20\n\x0bLNMM\
+    HGFJIIG\x18\r\x20\x03(\rR\x0bLNMMHGFJIIG\x12\x20\n\x0bACFMNILDBOO\x18\
+    \x08\x20\x03(\rR\x0bACFMNILDBOO\x12.\n\x0bPIFDBKPHLAO\x18\x03\x20\x01(\
+    \x0b2\x0c.CFIOCAIHCOIR\x0bPIFDBKPHLAO\x12\x18\n\x07retcode\x18\x06\x20\
+    \x01(\rR\x07retcode\x12.\n\x0bGCOJBJOMMPI\x18\x04\x20\x03(\x0b2\x0c.KMLG\
+    GPGEBDER\x0bGCOJBJOMMPI\x12\x20\n\x0bIIPCHBNIIGO\x18\x05\x20\x03(\rR\x0b\
+    IIPCHBNIIGO\x12\x14\n\x05level\x18\t\x20\x01(\rR\x05level\x12\x20\n\x0bJ\
+    DKOFBNBJNI\x18\x07\x20\x01(\rR\x0bJDKOFBNBJNI\x12\x19\n\x08cur_fund\x18\
+    \x0e\x20\x01(\rR\x07curFund\x1a>\n\x10POHJFPKJCODEntry\x12\x10\n\x03key\
+    \x18\x01\x20\x01(\rR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05va\
+    lue:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -386,10 +386,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::BLDFMMDKGEP::file_descriptor().clone());
-            deps.push(super::BMHKCCLNBEL::file_descriptor().clone());
-            deps.push(super::KBEFLFKMLNG::file_descriptor().clone());
-            deps.push(super::OCHONAFNBMC::file_descriptor().clone());
+            deps.push(super::CFIOCAIHCOI::file_descriptor().clone());
+            deps.push(super::DMOGCDLOBGK::file_descriptor().clone());
+            deps.push(super::FILNNLBDNCL::file_descriptor().clone());
+            deps.push(super::KMLGGPGEBDE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetAlleyInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

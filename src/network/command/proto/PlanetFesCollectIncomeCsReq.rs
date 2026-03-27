@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesCollectIncomeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesCollectIncomeCsReq.NNKGCECKBLA)
-    pub NNKGCECKBLA: u32,
+    // @@protoc_insertion_point(field:PlanetFesCollectIncomeCsReq.EKNKCFPGPIB)
+    pub EKNKCFPGPIB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesCollectIncomeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlanetFesCollectIncomeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NNKGCECKBLA",
-            |m: &PlanetFesCollectIncomeCsReq| { &m.NNKGCECKBLA },
-            |m: &mut PlanetFesCollectIncomeCsReq| { &mut m.NNKGCECKBLA },
+            "EKNKCFPGPIB",
+            |m: &PlanetFesCollectIncomeCsReq| { &m.EKNKCFPGPIB },
+            |m: &mut PlanetFesCollectIncomeCsReq| { &mut m.EKNKCFPGPIB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesCollectIncomeCsReq>(
             "PlanetFesCollectIncomeCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlanetFesCollectIncomeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.NNKGCECKBLA = is.read_uint32()?;
+                104 => {
+                    self.EKNKCFPGPIB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for PlanetFesCollectIncomeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NNKGCECKBLA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NNKGCECKBLA);
+        if self.EKNKCFPGPIB != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.EKNKCFPGPIB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlanetFesCollectIncomeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NNKGCECKBLA != 0 {
-            os.write_uint32(10, self.NNKGCECKBLA)?;
+        if self.EKNKCFPGPIB != 0 {
+            os.write_uint32(13, self.EKNKCFPGPIB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlanetFesCollectIncomeCsReq {
     }
 
     fn clear(&mut self) {
-        self.NNKGCECKBLA = 0;
+        self.EKNKCFPGPIB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesCollectIncomeCsReq {
         static instance: PlanetFesCollectIncomeCsReq = PlanetFesCollectIncomeCsReq {
-            NNKGCECKBLA: 0,
+            EKNKCFPGPIB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesCollectIncomeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlanetFesCollectIncomeCsReq.proto\"?\n\x1bPlanetFesCollectIncomeCsReq\
-    \x12\x20\n\x0bNNKGCECKBLA\x18\n\x20\x01(\rR\x0bNNKGCECKBLAb\x06proto3\
+    \x12\x20\n\x0bEKNKCFPGPIB\x18\r\x20\x01(\rR\x0bEKNKCFPGPIBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:PlanetFesCustomKey)
 pub enum PlanetFesCustomKey {
-    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.JMDBDDKOEGE_GKJBAODJMJG)
-    JMDBDDKOEGE_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.JMDBDDKOEGE_GLALDAAOFAP)
-    JMDBDDKOEGE_GLALDAAOFAP = 1,
-    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.JMDBDDKOEGE_OEGCGLDFDPG)
-    JMDBDDKOEGE_OEGCGLDFDPG = 2,
-    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.JMDBDDKOEGE_AJAHPEBJCHD)
-    JMDBDDKOEGE_AJAHPEBJCHD = 3,
-    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.JMDBDDKOEGE_CLFAAINAOBO)
-    JMDBDDKOEGE_CLFAAINAOBO = 4,
+    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.PlanetFesCustomKey_MNFEPONEDDJ)
+    PlanetFesCustomKey_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.PlanetFesCustomKey_DFHHEBOJPCK)
+    PlanetFesCustomKey_DFHHEBOJPCK = 1,
+    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.PlanetFesCustomKey_LBPCPLFMCNP)
+    PlanetFesCustomKey_LBPCPLFMCNP = 2,
+    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.PlanetFesCustomKey_DOJAJLNHAHE)
+    PlanetFesCustomKey_DOJAJLNHAHE = 3,
+    // @@protoc_insertion_point(enum_value:PlanetFesCustomKey.PlanetFesCustomKey_ACHHBMHMKPD)
+    PlanetFesCustomKey_ACHHBMHMKPD = 4,
 }
 
 impl ::protobuf::Enum for PlanetFesCustomKey {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for PlanetFesCustomKey {
 
     fn from_i32(value: i32) -> ::std::option::Option<PlanetFesCustomKey> {
         match value {
-            0 => ::std::option::Option::Some(PlanetFesCustomKey::JMDBDDKOEGE_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(PlanetFesCustomKey::JMDBDDKOEGE_GLALDAAOFAP),
-            2 => ::std::option::Option::Some(PlanetFesCustomKey::JMDBDDKOEGE_OEGCGLDFDPG),
-            3 => ::std::option::Option::Some(PlanetFesCustomKey::JMDBDDKOEGE_AJAHPEBJCHD),
-            4 => ::std::option::Option::Some(PlanetFesCustomKey::JMDBDDKOEGE_CLFAAINAOBO),
+            0 => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_DFHHEBOJPCK),
+            2 => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_LBPCPLFMCNP),
+            3 => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_DOJAJLNHAHE),
+            4 => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_ACHHBMHMKPD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<PlanetFesCustomKey> {
         match str {
-            "JMDBDDKOEGE_GKJBAODJMJG" => ::std::option::Option::Some(PlanetFesCustomKey::JMDBDDKOEGE_GKJBAODJMJG),
-            "JMDBDDKOEGE_GLALDAAOFAP" => ::std::option::Option::Some(PlanetFesCustomKey::JMDBDDKOEGE_GLALDAAOFAP),
-            "JMDBDDKOEGE_OEGCGLDFDPG" => ::std::option::Option::Some(PlanetFesCustomKey::JMDBDDKOEGE_OEGCGLDFDPG),
-            "JMDBDDKOEGE_AJAHPEBJCHD" => ::std::option::Option::Some(PlanetFesCustomKey::JMDBDDKOEGE_AJAHPEBJCHD),
-            "JMDBDDKOEGE_CLFAAINAOBO" => ::std::option::Option::Some(PlanetFesCustomKey::JMDBDDKOEGE_CLFAAINAOBO),
+            "PlanetFesCustomKey_MNFEPONEDDJ" => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_MNFEPONEDDJ),
+            "PlanetFesCustomKey_DFHHEBOJPCK" => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_DFHHEBOJPCK),
+            "PlanetFesCustomKey_LBPCPLFMCNP" => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_LBPCPLFMCNP),
+            "PlanetFesCustomKey_DOJAJLNHAHE" => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_DOJAJLNHAHE),
+            "PlanetFesCustomKey_ACHHBMHMKPD" => ::std::option::Option::Some(PlanetFesCustomKey::PlanetFesCustomKey_ACHHBMHMKPD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PlanetFesCustomKey] = &[
-        PlanetFesCustomKey::JMDBDDKOEGE_GKJBAODJMJG,
-        PlanetFesCustomKey::JMDBDDKOEGE_GLALDAAOFAP,
-        PlanetFesCustomKey::JMDBDDKOEGE_OEGCGLDFDPG,
-        PlanetFesCustomKey::JMDBDDKOEGE_AJAHPEBJCHD,
-        PlanetFesCustomKey::JMDBDDKOEGE_CLFAAINAOBO,
+        PlanetFesCustomKey::PlanetFesCustomKey_MNFEPONEDDJ,
+        PlanetFesCustomKey::PlanetFesCustomKey_DFHHEBOJPCK,
+        PlanetFesCustomKey::PlanetFesCustomKey_LBPCPLFMCNP,
+        PlanetFesCustomKey::PlanetFesCustomKey_DOJAJLNHAHE,
+        PlanetFesCustomKey::PlanetFesCustomKey_ACHHBMHMKPD,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for PlanetFesCustomKey {
 
 impl ::std::default::Default for PlanetFesCustomKey {
     fn default() -> Self {
-        PlanetFesCustomKey::JMDBDDKOEGE_GKJBAODJMJG
+        PlanetFesCustomKey::PlanetFesCustomKey_MNFEPONEDDJ
     }
 }
 
@@ -102,11 +102,11 @@ impl PlanetFesCustomKey {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18PlanetFesCustomKey.proto*\xa5\x01\n\x12PlanetFesCustomKey\x12\x1b\
-    \n\x17JMDBDDKOEGE_GKJBAODJMJG\x10\0\x12\x1b\n\x17JMDBDDKOEGE_GLALDAAOFAP\
-    \x10\x01\x12\x1b\n\x17JMDBDDKOEGE_OEGCGLDFDPG\x10\x02\x12\x1b\n\x17JMDBD\
-    DKOEGE_AJAHPEBJCHD\x10\x03\x12\x1b\n\x17JMDBDDKOEGE_CLFAAINAOBO\x10\x04b\
-    \x06proto3\
+    \n\x18PlanetFesCustomKey.proto*\xc8\x01\n\x12PlanetFesCustomKey\x12\"\n\
+    \x1ePlanetFesCustomKey_MNFEPONEDDJ\x10\0\x12\"\n\x1ePlanetFesCustomKey_D\
+    FHHEBOJPCK\x10\x01\x12\"\n\x1ePlanetFesCustomKey_LBPCPLFMCNP\x10\x02\x12\
+    \"\n\x1ePlanetFesCustomKey_DOJAJLNHAHE\x10\x03\x12\"\n\x1ePlanetFesCusto\
+    mKey_ACHHBMHMKPD\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

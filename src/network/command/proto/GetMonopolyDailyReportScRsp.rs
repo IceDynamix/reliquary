@@ -30,8 +30,8 @@ pub struct GetMonopolyDailyReportScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetMonopolyDailyReportScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetMonopolyDailyReportScRsp.PBDPIAMKAPI)
-    pub PBDPIAMKAPI: ::protobuf::MessageField<super::GPIKLMGKDNK::GPIKLMGKDNK>,
+    // @@protoc_insertion_point(field:GetMonopolyDailyReportScRsp.HBLJKNGAOKG)
+    pub HBLJKNGAOKG: ::protobuf::MessageField<super::CEEJKLIFILK::CEEJKLIFILK>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMonopolyDailyReportScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl GetMonopolyDailyReportScRsp {
             |m: &GetMonopolyDailyReportScRsp| { &m.retcode },
             |m: &mut GetMonopolyDailyReportScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GPIKLMGKDNK::GPIKLMGKDNK>(
-            "PBDPIAMKAPI",
-            |m: &GetMonopolyDailyReportScRsp| { &m.PBDPIAMKAPI },
-            |m: &mut GetMonopolyDailyReportScRsp| { &mut m.PBDPIAMKAPI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CEEJKLIFILK::CEEJKLIFILK>(
+            "HBLJKNGAOKG",
+            |m: &GetMonopolyDailyReportScRsp| { &m.HBLJKNGAOKG },
+            |m: &mut GetMonopolyDailyReportScRsp| { &mut m.HBLJKNGAOKG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMonopolyDailyReportScRsp>(
             "GetMonopolyDailyReportScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetMonopolyDailyReportScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PBDPIAMKAPI)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HBLJKNGAOKG)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for GetMonopolyDailyReportScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if let Some(v) = self.PBDPIAMKAPI.as_ref() {
+        if let Some(v) = self.HBLJKNGAOKG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for GetMonopolyDailyReportScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        if let Some(v) = self.PBDPIAMKAPI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.HBLJKNGAOKG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for GetMonopolyDailyReportScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.PBDPIAMKAPI.clear();
+        self.HBLJKNGAOKG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMonopolyDailyReportScRsp {
         static instance: GetMonopolyDailyReportScRsp = GetMonopolyDailyReportScRsp {
             retcode: 0,
-            PBDPIAMKAPI: ::protobuf::MessageField::none(),
+            HBLJKNGAOKG: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetMonopolyDailyReportScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!GetMonopolyDailyReportScRsp.proto\x1a\x11GPIKLMGKDNK.proto\"g\n\x1bGe\
-    tMonopolyDailyReportScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07re\
-    tcode\x12.\n\x0bPBDPIAMKAPI\x18\x03\x20\x01(\x0b2\x0c.GPIKLMGKDNKR\x0bPB\
-    DPIAMKAPIb\x06proto3\
+    \n!GetMonopolyDailyReportScRsp.proto\x1a\x11CEEJKLIFILK.proto\"g\n\x1bGe\
+    tMonopolyDailyReportScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07re\
+    tcode\x12.\n\x0bHBLJKNGAOKG\x18\n\x20\x01(\x0b2\x0c.CEEJKLIFILKR\x0bHBLJ\
+    KNGAOKGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GPIKLMGKDNK::file_descriptor().clone());
+            deps.push(super::CEEJKLIFILK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetMonopolyDailyReportScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

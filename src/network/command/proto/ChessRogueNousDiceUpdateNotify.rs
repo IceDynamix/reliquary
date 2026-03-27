@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueNousDiceUpdateNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueNousDiceUpdateNotify.FKCGJBGFGOE)
-    pub FKCGJBGFGOE: ::protobuf::MessageField<super::GMOMMPCEGGD::GMOMMPCEGGD>,
+    // @@protoc_insertion_point(field:ChessRogueNousDiceUpdateNotify.BACHLIGNMAI)
+    pub BACHLIGNMAI: ::protobuf::MessageField<super::IOKDOOIMCJH::IOKDOOIMCJH>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueNousDiceUpdateNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl ChessRogueNousDiceUpdateNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GMOMMPCEGGD::GMOMMPCEGGD>(
-            "FKCGJBGFGOE",
-            |m: &ChessRogueNousDiceUpdateNotify| { &m.FKCGJBGFGOE },
-            |m: &mut ChessRogueNousDiceUpdateNotify| { &mut m.FKCGJBGFGOE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::IOKDOOIMCJH::IOKDOOIMCJH>(
+            "BACHLIGNMAI",
+            |m: &ChessRogueNousDiceUpdateNotify| { &m.BACHLIGNMAI },
+            |m: &mut ChessRogueNousDiceUpdateNotify| { &mut m.BACHLIGNMAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueNousDiceUpdateNotify>(
             "ChessRogueNousDiceUpdateNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ChessRogueNousDiceUpdateNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FKCGJBGFGOE)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BACHLIGNMAI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ChessRogueNousDiceUpdateNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FKCGJBGFGOE.as_ref() {
+        if let Some(v) = self.BACHLIGNMAI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ChessRogueNousDiceUpdateNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FKCGJBGFGOE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.BACHLIGNMAI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ChessRogueNousDiceUpdateNotify {
     }
 
     fn clear(&mut self) {
-        self.FKCGJBGFGOE.clear();
+        self.BACHLIGNMAI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueNousDiceUpdateNotify {
         static instance: ChessRogueNousDiceUpdateNotify = ChessRogueNousDiceUpdateNotify {
-            FKCGJBGFGOE: ::protobuf::MessageField::none(),
+            BACHLIGNMAI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueNousDiceUpdateNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$ChessRogueNousDiceUpdateNotify.proto\x1a\x11GMOMMPCEGGD.proto\"P\n\
-    \x1eChessRogueNousDiceUpdateNotify\x12.\n\x0bFKCGJBGFGOE\x18\n\x20\x01(\
-    \x0b2\x0c.GMOMMPCEGGDR\x0bFKCGJBGFGOEb\x06proto3\
+    \n$ChessRogueNousDiceUpdateNotify.proto\x1a\x11IOKDOOIMCJH.proto\"P\n\
+    \x1eChessRogueNousDiceUpdateNotify\x12.\n\x0bBACHLIGNMAI\x18\x0e\x20\x01\
+    (\x0b2\x0c.IOKDOOIMCJHR\x0bBACHLIGNMAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GMOMMPCEGGD::file_descriptor().clone());
+            deps.push(super::IOKDOOIMCJH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueNousDiceUpdateNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

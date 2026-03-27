@@ -72,7 +72,7 @@ impl ::protobuf::Message for FriendGridFightRecord {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                40 => {
                     self.division_id = is.read_uint32()?;
                 },
                 tag => {
@@ -88,7 +88,7 @@ impl ::protobuf::Message for FriendGridFightRecord {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.division_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.division_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.division_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -97,7 +97,7 @@ impl ::protobuf::Message for FriendGridFightRecord {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.division_id != 0 {
-            os.write_uint32(4, self.division_id)?;
+            os.write_uint32(5, self.division_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for FriendGridFightRecord {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bFriendGridFightRecord.proto\"8\n\x15FriendGridFightRecord\x12\x1f\
-    \n\x0bdivision_id\x18\x04\x20\x01(\rR\ndivisionIdb\x06proto3\
+    \n\x0bdivision_id\x18\x05\x20\x01(\rR\ndivisionIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

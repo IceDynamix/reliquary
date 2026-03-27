@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CakeRaceUpdatePveMeetCatCsReq {
     // message fields
-    // @@protoc_insertion_point(field:CakeRaceUpdatePveMeetCatCsReq.HNHNCGGJGNJ)
-    pub HNHNCGGJGNJ: u32,
-    // @@protoc_insertion_point(field:CakeRaceUpdatePveMeetCatCsReq.MHLNOJDKIMH)
-    pub MHLNOJDKIMH: u32,
+    // @@protoc_insertion_point(field:CakeRaceUpdatePveMeetCatCsReq.IAIKDGMCLNE)
+    pub IAIKDGMCLNE: u32,
+    // @@protoc_insertion_point(field:CakeRaceUpdatePveMeetCatCsReq.BDMLGAOILOC)
+    pub BDMLGAOILOC: u32,
     // message oneof groups
-    pub GAKCBGIBKMN: ::std::option::Option<cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN>,
+    pub HCJGEHKGCEN: ::std::option::Option<cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN>,
     // special fields
     // @@protoc_insertion_point(special_field:CakeRaceUpdatePveMeetCatCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,225 +50,225 @@ impl CakeRaceUpdatePveMeetCatCsReq {
         ::std::default::Default::default()
     }
 
-    // .EMBEEFDMFKP NLGDNBOFGIP = 14;
+    // .MNLOAJBIIKA GMFCOBLKMEJ = 9;
 
-    pub fn NLGDNBOFGIP(&self) -> &super::EMBEEFDMFKP::EMBEEFDMFKP {
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NLGDNBOFGIP(ref v)) => v,
-            _ => <super::EMBEEFDMFKP::EMBEEFDMFKP as ::protobuf::Message>::default_instance(),
+    pub fn GMFCOBLKMEJ(&self) -> &super::MNLOAJBIIKA::MNLOAJBIIKA {
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::GMFCOBLKMEJ(ref v)) => v,
+            _ => <super::MNLOAJBIIKA::MNLOAJBIIKA as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_NLGDNBOFGIP(&mut self) {
-        self.GAKCBGIBKMN = ::std::option::Option::None;
+    pub fn clear_GMFCOBLKMEJ(&mut self) {
+        self.HCJGEHKGCEN = ::std::option::Option::None;
     }
 
-    pub fn has_NLGDNBOFGIP(&self) -> bool {
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NLGDNBOFGIP(..)) => true,
+    pub fn has_GMFCOBLKMEJ(&self) -> bool {
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::GMFCOBLKMEJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_NLGDNBOFGIP(&mut self, v: super::EMBEEFDMFKP::EMBEEFDMFKP) {
-        self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NLGDNBOFGIP(v))
+    pub fn set_GMFCOBLKMEJ(&mut self, v: super::MNLOAJBIIKA::MNLOAJBIIKA) {
+        self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::GMFCOBLKMEJ(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_NLGDNBOFGIP(&mut self) -> &mut super::EMBEEFDMFKP::EMBEEFDMFKP {
-        if let ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NLGDNBOFGIP(_)) = self.GAKCBGIBKMN {
+    pub fn mut_GMFCOBLKMEJ(&mut self) -> &mut super::MNLOAJBIIKA::MNLOAJBIIKA {
+        if let ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::GMFCOBLKMEJ(_)) = self.HCJGEHKGCEN {
         } else {
-            self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NLGDNBOFGIP(super::EMBEEFDMFKP::EMBEEFDMFKP::new()));
+            self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::GMFCOBLKMEJ(super::MNLOAJBIIKA::MNLOAJBIIKA::new()));
         }
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NLGDNBOFGIP(ref mut v)) => v,
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::GMFCOBLKMEJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_NLGDNBOFGIP(&mut self) -> super::EMBEEFDMFKP::EMBEEFDMFKP {
-        if self.has_NLGDNBOFGIP() {
-            match self.GAKCBGIBKMN.take() {
-                ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NLGDNBOFGIP(v)) => v,
+    pub fn take_GMFCOBLKMEJ(&mut self) -> super::MNLOAJBIIKA::MNLOAJBIIKA {
+        if self.has_GMFCOBLKMEJ() {
+            match self.HCJGEHKGCEN.take() {
+                ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::GMFCOBLKMEJ(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::EMBEEFDMFKP::EMBEEFDMFKP::new()
+            super::MNLOAJBIIKA::MNLOAJBIIKA::new()
         }
     }
 
-    // uint32 CMNHFPFKKFD = 7;
+    // uint32 IDFIPPEGNAD = 6;
 
-    pub fn CMNHFPFKKFD(&self) -> u32 {
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::CMNHFPFKKFD(v)) => v,
+    pub fn IDFIPPEGNAD(&self) -> u32 {
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::IDFIPPEGNAD(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_CMNHFPFKKFD(&mut self) {
-        self.GAKCBGIBKMN = ::std::option::Option::None;
+    pub fn clear_IDFIPPEGNAD(&mut self) {
+        self.HCJGEHKGCEN = ::std::option::Option::None;
     }
 
-    pub fn has_CMNHFPFKKFD(&self) -> bool {
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::CMNHFPFKKFD(..)) => true,
+    pub fn has_IDFIPPEGNAD(&self) -> bool {
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::IDFIPPEGNAD(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CMNHFPFKKFD(&mut self, v: u32) {
-        self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::CMNHFPFKKFD(v))
+    pub fn set_IDFIPPEGNAD(&mut self, v: u32) {
+        self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::IDFIPPEGNAD(v))
     }
 
-    // bool FNFIKFIEKHD = 13;
+    // bool KEFDIHMKBGB = 4;
 
-    pub fn FNFIKFIEKHD(&self) -> bool {
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::FNFIKFIEKHD(v)) => v,
+    pub fn KEFDIHMKBGB(&self) -> bool {
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::KEFDIHMKBGB(v)) => v,
             _ => false,
         }
     }
 
-    pub fn clear_FNFIKFIEKHD(&mut self) {
-        self.GAKCBGIBKMN = ::std::option::Option::None;
+    pub fn clear_KEFDIHMKBGB(&mut self) {
+        self.HCJGEHKGCEN = ::std::option::Option::None;
     }
 
-    pub fn has_FNFIKFIEKHD(&self) -> bool {
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::FNFIKFIEKHD(..)) => true,
-            _ => false,
-        }
-    }
-
-    // Param is passed by value, moved
-    pub fn set_FNFIKFIEKHD(&mut self, v: bool) {
-        self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::FNFIKFIEKHD(v))
-    }
-
-    // .KCGNHIIOFNH NJAEPDCGOGB = 3;
-
-    pub fn NJAEPDCGOGB(&self) -> &super::KCGNHIIOFNH::KCGNHIIOFNH {
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NJAEPDCGOGB(ref v)) => v,
-            _ => <super::KCGNHIIOFNH::KCGNHIIOFNH as ::protobuf::Message>::default_instance(),
-        }
-    }
-
-    pub fn clear_NJAEPDCGOGB(&mut self) {
-        self.GAKCBGIBKMN = ::std::option::Option::None;
-    }
-
-    pub fn has_NJAEPDCGOGB(&self) -> bool {
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NJAEPDCGOGB(..)) => true,
+    pub fn has_KEFDIHMKBGB(&self) -> bool {
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::KEFDIHMKBGB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_NJAEPDCGOGB(&mut self, v: super::KCGNHIIOFNH::KCGNHIIOFNH) {
-        self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NJAEPDCGOGB(v))
+    pub fn set_KEFDIHMKBGB(&mut self, v: bool) {
+        self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::KEFDIHMKBGB(v))
+    }
+
+    // .FLKFJKJNFHP MNEMDLNLONH = 7;
+
+    pub fn MNEMDLNLONH(&self) -> &super::FLKFJKJNFHP::FLKFJKJNFHP {
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::MNEMDLNLONH(ref v)) => v,
+            _ => <super::FLKFJKJNFHP::FLKFJKJNFHP as ::protobuf::Message>::default_instance(),
+        }
+    }
+
+    pub fn clear_MNEMDLNLONH(&mut self) {
+        self.HCJGEHKGCEN = ::std::option::Option::None;
+    }
+
+    pub fn has_MNEMDLNLONH(&self) -> bool {
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::MNEMDLNLONH(..)) => true,
+            _ => false,
+        }
+    }
+
+    // Param is passed by value, moved
+    pub fn set_MNEMDLNLONH(&mut self, v: super::FLKFJKJNFHP::FLKFJKJNFHP) {
+        self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::MNEMDLNLONH(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_NJAEPDCGOGB(&mut self) -> &mut super::KCGNHIIOFNH::KCGNHIIOFNH {
-        if let ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NJAEPDCGOGB(_)) = self.GAKCBGIBKMN {
+    pub fn mut_MNEMDLNLONH(&mut self) -> &mut super::FLKFJKJNFHP::FLKFJKJNFHP {
+        if let ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::MNEMDLNLONH(_)) = self.HCJGEHKGCEN {
         } else {
-            self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NJAEPDCGOGB(super::KCGNHIIOFNH::KCGNHIIOFNH::new()));
+            self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::MNEMDLNLONH(super::FLKFJKJNFHP::FLKFJKJNFHP::new()));
         }
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NJAEPDCGOGB(ref mut v)) => v,
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::MNEMDLNLONH(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_NJAEPDCGOGB(&mut self) -> super::KCGNHIIOFNH::KCGNHIIOFNH {
-        if self.has_NJAEPDCGOGB() {
-            match self.GAKCBGIBKMN.take() {
-                ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NJAEPDCGOGB(v)) => v,
+    pub fn take_MNEMDLNLONH(&mut self) -> super::FLKFJKJNFHP::FLKFJKJNFHP {
+        if self.has_MNEMDLNLONH() {
+            match self.HCJGEHKGCEN.take() {
+                ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::MNEMDLNLONH(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::KCGNHIIOFNH::KCGNHIIOFNH::new()
+            super::FLKFJKJNFHP::FLKFJKJNFHP::new()
         }
     }
 
-    // bool OFDOENDELNB = 9;
+    // bool BEOKPLEFJPM = 11;
 
-    pub fn OFDOENDELNB(&self) -> bool {
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::OFDOENDELNB(v)) => v,
+    pub fn BEOKPLEFJPM(&self) -> bool {
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::BEOKPLEFJPM(v)) => v,
             _ => false,
         }
     }
 
-    pub fn clear_OFDOENDELNB(&mut self) {
-        self.GAKCBGIBKMN = ::std::option::Option::None;
+    pub fn clear_BEOKPLEFJPM(&mut self) {
+        self.HCJGEHKGCEN = ::std::option::Option::None;
     }
 
-    pub fn has_OFDOENDELNB(&self) -> bool {
-        match self.GAKCBGIBKMN {
-            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::OFDOENDELNB(..)) => true,
+    pub fn has_BEOKPLEFJPM(&self) -> bool {
+        match self.HCJGEHKGCEN {
+            ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::BEOKPLEFJPM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_OFDOENDELNB(&mut self, v: bool) {
-        self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::OFDOENDELNB(v))
+    pub fn set_BEOKPLEFJPM(&mut self, v: bool) {
+        self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::BEOKPLEFJPM(v))
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HNHNCGGJGNJ",
-            |m: &CakeRaceUpdatePveMeetCatCsReq| { &m.HNHNCGGJGNJ },
-            |m: &mut CakeRaceUpdatePveMeetCatCsReq| { &mut m.HNHNCGGJGNJ },
+            "IAIKDGMCLNE",
+            |m: &CakeRaceUpdatePveMeetCatCsReq| { &m.IAIKDGMCLNE },
+            |m: &mut CakeRaceUpdatePveMeetCatCsReq| { &mut m.IAIKDGMCLNE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MHLNOJDKIMH",
-            |m: &CakeRaceUpdatePveMeetCatCsReq| { &m.MHLNOJDKIMH },
-            |m: &mut CakeRaceUpdatePveMeetCatCsReq| { &mut m.MHLNOJDKIMH },
+            "BDMLGAOILOC",
+            |m: &CakeRaceUpdatePveMeetCatCsReq| { &m.BDMLGAOILOC },
+            |m: &mut CakeRaceUpdatePveMeetCatCsReq| { &mut m.BDMLGAOILOC },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EMBEEFDMFKP::EMBEEFDMFKP>(
-            "NLGDNBOFGIP",
-            CakeRaceUpdatePveMeetCatCsReq::has_NLGDNBOFGIP,
-            CakeRaceUpdatePveMeetCatCsReq::NLGDNBOFGIP,
-            CakeRaceUpdatePveMeetCatCsReq::mut_NLGDNBOFGIP,
-            CakeRaceUpdatePveMeetCatCsReq::set_NLGDNBOFGIP,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "CMNHFPFKKFD",
-            CakeRaceUpdatePveMeetCatCsReq::has_CMNHFPFKKFD,
-            CakeRaceUpdatePveMeetCatCsReq::CMNHFPFKKFD,
-            CakeRaceUpdatePveMeetCatCsReq::set_CMNHFPFKKFD,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MNLOAJBIIKA::MNLOAJBIIKA>(
+            "GMFCOBLKMEJ",
+            CakeRaceUpdatePveMeetCatCsReq::has_GMFCOBLKMEJ,
+            CakeRaceUpdatePveMeetCatCsReq::GMFCOBLKMEJ,
+            CakeRaceUpdatePveMeetCatCsReq::mut_GMFCOBLKMEJ,
+            CakeRaceUpdatePveMeetCatCsReq::set_GMFCOBLKMEJ,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "FNFIKFIEKHD",
-            CakeRaceUpdatePveMeetCatCsReq::has_FNFIKFIEKHD,
-            CakeRaceUpdatePveMeetCatCsReq::FNFIKFIEKHD,
-            CakeRaceUpdatePveMeetCatCsReq::set_FNFIKFIEKHD,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KCGNHIIOFNH::KCGNHIIOFNH>(
-            "NJAEPDCGOGB",
-            CakeRaceUpdatePveMeetCatCsReq::has_NJAEPDCGOGB,
-            CakeRaceUpdatePveMeetCatCsReq::NJAEPDCGOGB,
-            CakeRaceUpdatePveMeetCatCsReq::mut_NJAEPDCGOGB,
-            CakeRaceUpdatePveMeetCatCsReq::set_NJAEPDCGOGB,
+            "IDFIPPEGNAD",
+            CakeRaceUpdatePveMeetCatCsReq::has_IDFIPPEGNAD,
+            CakeRaceUpdatePveMeetCatCsReq::IDFIPPEGNAD,
+            CakeRaceUpdatePveMeetCatCsReq::set_IDFIPPEGNAD,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "OFDOENDELNB",
-            CakeRaceUpdatePveMeetCatCsReq::has_OFDOENDELNB,
-            CakeRaceUpdatePveMeetCatCsReq::OFDOENDELNB,
-            CakeRaceUpdatePveMeetCatCsReq::set_OFDOENDELNB,
+            "KEFDIHMKBGB",
+            CakeRaceUpdatePveMeetCatCsReq::has_KEFDIHMKBGB,
+            CakeRaceUpdatePveMeetCatCsReq::KEFDIHMKBGB,
+            CakeRaceUpdatePveMeetCatCsReq::set_KEFDIHMKBGB,
         ));
-        oneofs.push(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FLKFJKJNFHP::FLKFJKJNFHP>(
+            "MNEMDLNLONH",
+            CakeRaceUpdatePveMeetCatCsReq::has_MNEMDLNLONH,
+            CakeRaceUpdatePveMeetCatCsReq::MNEMDLNLONH,
+            CakeRaceUpdatePveMeetCatCsReq::mut_MNEMDLNLONH,
+            CakeRaceUpdatePveMeetCatCsReq::set_MNEMDLNLONH,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "BEOKPLEFJPM",
+            CakeRaceUpdatePveMeetCatCsReq::has_BEOKPLEFJPM,
+            CakeRaceUpdatePveMeetCatCsReq::BEOKPLEFJPM,
+            CakeRaceUpdatePveMeetCatCsReq::set_BEOKPLEFJPM,
+        ));
+        oneofs.push(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CakeRaceUpdatePveMeetCatCsReq>(
             "CakeRaceUpdatePveMeetCatCsReq",
             fields,
@@ -287,26 +287,26 @@ impl ::protobuf::Message for CakeRaceUpdatePveMeetCatCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.HNHNCGGJGNJ = is.read_uint32()?;
+                16 => {
+                    self.IAIKDGMCLNE = is.read_uint32()?;
                 },
-                80 => {
-                    self.MHLNOJDKIMH = is.read_uint32()?;
+                120 => {
+                    self.BDMLGAOILOC = is.read_uint32()?;
                 },
-                114 => {
-                    self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NLGDNBOFGIP(is.read_message()?));
+                74 => {
+                    self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::GMFCOBLKMEJ(is.read_message()?));
                 },
-                56 => {
-                    self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::CMNHFPFKKFD(is.read_uint32()?));
+                48 => {
+                    self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::IDFIPPEGNAD(is.read_uint32()?));
                 },
-                104 => {
-                    self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::FNFIKFIEKHD(is.read_bool()?));
+                32 => {
+                    self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::KEFDIHMKBGB(is.read_bool()?));
                 },
-                26 => {
-                    self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NJAEPDCGOGB(is.read_message()?));
+                58 => {
+                    self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::MNEMDLNLONH(is.read_message()?));
                 },
-                72 => {
-                    self.GAKCBGIBKMN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::OFDOENDELNB(is.read_bool()?));
+                88 => {
+                    self.HCJGEHKGCEN = ::std::option::Option::Some(cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::BEOKPLEFJPM(is.read_bool()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -320,29 +320,29 @@ impl ::protobuf::Message for CakeRaceUpdatePveMeetCatCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HNHNCGGJGNJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HNHNCGGJGNJ);
+        if self.IAIKDGMCLNE != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IAIKDGMCLNE);
         }
-        if self.MHLNOJDKIMH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.MHLNOJDKIMH);
+        if self.BDMLGAOILOC != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.BDMLGAOILOC);
         }
-        if let ::std::option::Option::Some(ref v) = self.GAKCBGIBKMN {
+        if let ::std::option::Option::Some(ref v) = self.HCJGEHKGCEN {
             match v {
-                &cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NLGDNBOFGIP(ref v) => {
+                &cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::GMFCOBLKMEJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::CMNHFPFKKFD(v) => {
-                    my_size += ::protobuf::rt::uint32_size(7, v);
+                &cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::IDFIPPEGNAD(v) => {
+                    my_size += ::protobuf::rt::uint32_size(6, v);
                 },
-                &cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::FNFIKFIEKHD(v) => {
+                &cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::KEFDIHMKBGB(v) => {
                     my_size += 1 + 1;
                 },
-                &cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NJAEPDCGOGB(ref v) => {
+                &cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::MNEMDLNLONH(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::OFDOENDELNB(v) => {
+                &cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::BEOKPLEFJPM(v) => {
                     my_size += 1 + 1;
                 },
             };
@@ -353,28 +353,28 @@ impl ::protobuf::Message for CakeRaceUpdatePveMeetCatCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HNHNCGGJGNJ != 0 {
-            os.write_uint32(8, self.HNHNCGGJGNJ)?;
+        if self.IAIKDGMCLNE != 0 {
+            os.write_uint32(2, self.IAIKDGMCLNE)?;
         }
-        if self.MHLNOJDKIMH != 0 {
-            os.write_uint32(10, self.MHLNOJDKIMH)?;
+        if self.BDMLGAOILOC != 0 {
+            os.write_uint32(15, self.BDMLGAOILOC)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.GAKCBGIBKMN {
+        if let ::std::option::Option::Some(ref v) = self.HCJGEHKGCEN {
             match v {
-                &cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NLGDNBOFGIP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::GMFCOBLKMEJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
-                &cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::CMNHFPFKKFD(v) => {
-                    os.write_uint32(7, v)?;
+                &cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::IDFIPPEGNAD(v) => {
+                    os.write_uint32(6, v)?;
                 },
-                &cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::FNFIKFIEKHD(v) => {
-                    os.write_bool(13, v)?;
+                &cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::KEFDIHMKBGB(v) => {
+                    os.write_bool(4, v)?;
                 },
-                &cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::NJAEPDCGOGB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                &cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::MNEMDLNLONH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
-                &cake_race_update_pve_meet_cat_cs_req::GAKCBGIBKMN::OFDOENDELNB(v) => {
-                    os.write_bool(9, v)?;
+                &cake_race_update_pve_meet_cat_cs_req::HCJGEHKGCEN::BEOKPLEFJPM(v) => {
+                    os.write_bool(11, v)?;
                 },
             };
         }
@@ -395,21 +395,21 @@ impl ::protobuf::Message for CakeRaceUpdatePveMeetCatCsReq {
     }
 
     fn clear(&mut self) {
-        self.HNHNCGGJGNJ = 0;
-        self.MHLNOJDKIMH = 0;
-        self.GAKCBGIBKMN = ::std::option::Option::None;
-        self.GAKCBGIBKMN = ::std::option::Option::None;
-        self.GAKCBGIBKMN = ::std::option::Option::None;
-        self.GAKCBGIBKMN = ::std::option::Option::None;
-        self.GAKCBGIBKMN = ::std::option::Option::None;
+        self.IAIKDGMCLNE = 0;
+        self.BDMLGAOILOC = 0;
+        self.HCJGEHKGCEN = ::std::option::Option::None;
+        self.HCJGEHKGCEN = ::std::option::Option::None;
+        self.HCJGEHKGCEN = ::std::option::Option::None;
+        self.HCJGEHKGCEN = ::std::option::Option::None;
+        self.HCJGEHKGCEN = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CakeRaceUpdatePveMeetCatCsReq {
         static instance: CakeRaceUpdatePveMeetCatCsReq = CakeRaceUpdatePveMeetCatCsReq {
-            HNHNCGGJGNJ: 0,
-            MHLNOJDKIMH: 0,
-            GAKCBGIBKMN: ::std::option::Option::None,
+            IAIKDGMCLNE: 0,
+            BDMLGAOILOC: 0,
+            HCJGEHKGCEN: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -438,47 +438,47 @@ pub mod cake_race_update_pve_meet_cat_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:CakeRaceUpdatePveMeetCatCsReq.GAKCBGIBKMN)
-    pub enum GAKCBGIBKMN {
-        // @@protoc_insertion_point(oneof_field:CakeRaceUpdatePveMeetCatCsReq.NLGDNBOFGIP)
-        NLGDNBOFGIP(super::super::EMBEEFDMFKP::EMBEEFDMFKP),
-        // @@protoc_insertion_point(oneof_field:CakeRaceUpdatePveMeetCatCsReq.CMNHFPFKKFD)
-        CMNHFPFKKFD(u32),
-        // @@protoc_insertion_point(oneof_field:CakeRaceUpdatePveMeetCatCsReq.FNFIKFIEKHD)
-        FNFIKFIEKHD(bool),
-        // @@protoc_insertion_point(oneof_field:CakeRaceUpdatePveMeetCatCsReq.NJAEPDCGOGB)
-        NJAEPDCGOGB(super::super::KCGNHIIOFNH::KCGNHIIOFNH),
-        // @@protoc_insertion_point(oneof_field:CakeRaceUpdatePveMeetCatCsReq.OFDOENDELNB)
-        OFDOENDELNB(bool),
+    // @@protoc_insertion_point(oneof:CakeRaceUpdatePveMeetCatCsReq.HCJGEHKGCEN)
+    pub enum HCJGEHKGCEN {
+        // @@protoc_insertion_point(oneof_field:CakeRaceUpdatePveMeetCatCsReq.GMFCOBLKMEJ)
+        GMFCOBLKMEJ(super::super::MNLOAJBIIKA::MNLOAJBIIKA),
+        // @@protoc_insertion_point(oneof_field:CakeRaceUpdatePveMeetCatCsReq.IDFIPPEGNAD)
+        IDFIPPEGNAD(u32),
+        // @@protoc_insertion_point(oneof_field:CakeRaceUpdatePveMeetCatCsReq.KEFDIHMKBGB)
+        KEFDIHMKBGB(bool),
+        // @@protoc_insertion_point(oneof_field:CakeRaceUpdatePveMeetCatCsReq.MNEMDLNLONH)
+        MNEMDLNLONH(super::super::FLKFJKJNFHP::FLKFJKJNFHP),
+        // @@protoc_insertion_point(oneof_field:CakeRaceUpdatePveMeetCatCsReq.BEOKPLEFJPM)
+        BEOKPLEFJPM(bool),
     }
 
-    impl ::protobuf::Oneof for GAKCBGIBKMN {
+    impl ::protobuf::Oneof for HCJGEHKGCEN {
     }
 
-    impl ::protobuf::OneofFull for GAKCBGIBKMN {
+    impl ::protobuf::OneofFull for HCJGEHKGCEN {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::CakeRaceUpdatePveMeetCatCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("GAKCBGIBKMN").unwrap()).clone()
+            descriptor.get(|| <super::CakeRaceUpdatePveMeetCatCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("HCJGEHKGCEN").unwrap()).clone()
         }
     }
 
-    impl GAKCBGIBKMN {
+    impl HCJGEHKGCEN {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<GAKCBGIBKMN>("GAKCBGIBKMN")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<HCJGEHKGCEN>("HCJGEHKGCEN")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#CakeRaceUpdatePveMeetCatCsReq.proto\x1a\x11EMBEEFDMFKP.proto\x1a\x11K\
-    CGNHIIOFNH.proto\"\xc2\x02\n\x1dCakeRaceUpdatePveMeetCatCsReq\x12\x20\n\
-    \x0bHNHNCGGJGNJ\x18\x08\x20\x01(\rR\x0bHNHNCGGJGNJ\x12\x20\n\x0bMHLNOJDK\
-    IMH\x18\n\x20\x01(\rR\x0bMHLNOJDKIMH\x120\n\x0bNLGDNBOFGIP\x18\x0e\x20\
-    \x01(\x0b2\x0c.EMBEEFDMFKPH\0R\x0bNLGDNBOFGIP\x12\"\n\x0bCMNHFPFKKFD\x18\
-    \x07\x20\x01(\rH\0R\x0bCMNHFPFKKFD\x12\"\n\x0bFNFIKFIEKHD\x18\r\x20\x01(\
-    \x08H\0R\x0bFNFIKFIEKHD\x120\n\x0bNJAEPDCGOGB\x18\x03\x20\x01(\x0b2\x0c.\
-    KCGNHIIOFNHH\0R\x0bNJAEPDCGOGB\x12\"\n\x0bOFDOENDELNB\x18\t\x20\x01(\x08\
-    H\0R\x0bOFDOENDELNBB\r\n\x0bGAKCBGIBKMNb\x06proto3\
+    \n#CakeRaceUpdatePveMeetCatCsReq.proto\x1a\x11FLKFJKJNFHP.proto\x1a\x11M\
+    NLOAJBIIKA.proto\"\xc2\x02\n\x1dCakeRaceUpdatePveMeetCatCsReq\x12\x20\n\
+    \x0bIAIKDGMCLNE\x18\x02\x20\x01(\rR\x0bIAIKDGMCLNE\x12\x20\n\x0bBDMLGAOI\
+    LOC\x18\x0f\x20\x01(\rR\x0bBDMLGAOILOC\x120\n\x0bGMFCOBLKMEJ\x18\t\x20\
+    \x01(\x0b2\x0c.MNLOAJBIIKAH\0R\x0bGMFCOBLKMEJ\x12\"\n\x0bIDFIPPEGNAD\x18\
+    \x06\x20\x01(\rH\0R\x0bIDFIPPEGNAD\x12\"\n\x0bKEFDIHMKBGB\x18\x04\x20\
+    \x01(\x08H\0R\x0bKEFDIHMKBGB\x120\n\x0bMNEMDLNLONH\x18\x07\x20\x01(\x0b2\
+    \x0c.FLKFJKJNFHPH\0R\x0bMNEMDLNLONH\x12\"\n\x0bBEOKPLEFJPM\x18\x0b\x20\
+    \x01(\x08H\0R\x0bBEOKPLEFJPMB\r\n\x0bHCJGEHKGCENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -496,8 +496,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::EMBEEFDMFKP::file_descriptor().clone());
-            deps.push(super::KCGNHIIOFNH::file_descriptor().clone());
+            deps.push(super::FLKFJKJNFHP::file_descriptor().clone());
+            deps.push(super::MNLOAJBIIKA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(CakeRaceUpdatePveMeetCatCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

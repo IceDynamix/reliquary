@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueAreaStatus)
 pub enum RogueAreaStatus {
-    // @@protoc_insertion_point(enum_value:RogueAreaStatus.JHJBCMICCIO_IPDFMNINJHN)
-    JHJBCMICCIO_IPDFMNINJHN = 0,
-    // @@protoc_insertion_point(enum_value:RogueAreaStatus.JHJBCMICCIO_OEIGCGBJEOL)
-    JHJBCMICCIO_OEIGCGBJEOL = 1,
-    // @@protoc_insertion_point(enum_value:RogueAreaStatus.JHJBCMICCIO_LJIBOGMMPBN)
-    JHJBCMICCIO_LJIBOGMMPBN = 2,
-    // @@protoc_insertion_point(enum_value:RogueAreaStatus.JHJBCMICCIO_OHJFMJAKEPK)
-    JHJBCMICCIO_OHJFMJAKEPK = 3,
+    // @@protoc_insertion_point(enum_value:RogueAreaStatus.RogueAreaStatus_game_lock_info)
+    RogueAreaStatus_game_lock_info = 0,
+    // @@protoc_insertion_point(enum_value:RogueAreaStatus.RogueAreaStatus_CCJMKNNHKKE)
+    RogueAreaStatus_CCJMKNNHKKE = 1,
+    // @@protoc_insertion_point(enum_value:RogueAreaStatus.RogueAreaStatus_MGEGCHJCBOE)
+    RogueAreaStatus_MGEGCHJCBOE = 2,
+    // @@protoc_insertion_point(enum_value:RogueAreaStatus.RogueAreaStatus_OCFBAIPCHPC)
+    RogueAreaStatus_OCFBAIPCHPC = 3,
 }
 
 impl ::protobuf::Enum for RogueAreaStatus {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for RogueAreaStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueAreaStatus> {
         match value {
-            0 => ::std::option::Option::Some(RogueAreaStatus::JHJBCMICCIO_IPDFMNINJHN),
-            1 => ::std::option::Option::Some(RogueAreaStatus::JHJBCMICCIO_OEIGCGBJEOL),
-            2 => ::std::option::Option::Some(RogueAreaStatus::JHJBCMICCIO_LJIBOGMMPBN),
-            3 => ::std::option::Option::Some(RogueAreaStatus::JHJBCMICCIO_OHJFMJAKEPK),
+            0 => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_game_lock_info),
+            1 => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_CCJMKNNHKKE),
+            2 => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_MGEGCHJCBOE),
+            3 => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_OCFBAIPCHPC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueAreaStatus> {
         match str {
-            "JHJBCMICCIO_IPDFMNINJHN" => ::std::option::Option::Some(RogueAreaStatus::JHJBCMICCIO_IPDFMNINJHN),
-            "JHJBCMICCIO_OEIGCGBJEOL" => ::std::option::Option::Some(RogueAreaStatus::JHJBCMICCIO_OEIGCGBJEOL),
-            "JHJBCMICCIO_LJIBOGMMPBN" => ::std::option::Option::Some(RogueAreaStatus::JHJBCMICCIO_LJIBOGMMPBN),
-            "JHJBCMICCIO_OHJFMJAKEPK" => ::std::option::Option::Some(RogueAreaStatus::JHJBCMICCIO_OHJFMJAKEPK),
+            "RogueAreaStatus_game_lock_info" => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_game_lock_info),
+            "RogueAreaStatus_CCJMKNNHKKE" => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_CCJMKNNHKKE),
+            "RogueAreaStatus_MGEGCHJCBOE" => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_MGEGCHJCBOE),
+            "RogueAreaStatus_OCFBAIPCHPC" => ::std::option::Option::Some(RogueAreaStatus::RogueAreaStatus_OCFBAIPCHPC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueAreaStatus] = &[
-        RogueAreaStatus::JHJBCMICCIO_IPDFMNINJHN,
-        RogueAreaStatus::JHJBCMICCIO_OEIGCGBJEOL,
-        RogueAreaStatus::JHJBCMICCIO_LJIBOGMMPBN,
-        RogueAreaStatus::JHJBCMICCIO_OHJFMJAKEPK,
+        RogueAreaStatus::RogueAreaStatus_game_lock_info,
+        RogueAreaStatus::RogueAreaStatus_CCJMKNNHKKE,
+        RogueAreaStatus::RogueAreaStatus_MGEGCHJCBOE,
+        RogueAreaStatus::RogueAreaStatus_OCFBAIPCHPC,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for RogueAreaStatus {
 
 impl ::std::default::Default for RogueAreaStatus {
     fn default() -> Self {
-        RogueAreaStatus::JHJBCMICCIO_IPDFMNINJHN
+        RogueAreaStatus::RogueAreaStatus_game_lock_info
     }
 }
 
@@ -97,10 +97,10 @@ impl RogueAreaStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15RogueAreaStatus.proto*\x85\x01\n\x0fRogueAreaStatus\x12\x1b\n\x17J\
-    HJBCMICCIO_IPDFMNINJHN\x10\0\x12\x1b\n\x17JHJBCMICCIO_OEIGCGBJEOL\x10\
-    \x01\x12\x1b\n\x17JHJBCMICCIO_LJIBOGMMPBN\x10\x02\x12\x1b\n\x17JHJBCMICC\
-    IO_OHJFMJAKEPK\x10\x03b\x06proto3\
+    \n\x15RogueAreaStatus.proto*\x98\x01\n\x0fRogueAreaStatus\x12\"\n\x1eRog\
+    ueAreaStatus_game_lock_info\x10\0\x12\x1f\n\x1bRogueAreaStatus_CCJMKNNHK\
+    KE\x10\x01\x12\x1f\n\x1bRogueAreaStatus_MGEGCHJCBOE\x10\x02\x12\x1f\n\
+    \x1bRogueAreaStatus_OCFBAIPCHPC\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

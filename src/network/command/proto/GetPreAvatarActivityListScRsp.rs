@@ -30,8 +30,8 @@ pub struct GetPreAvatarActivityListScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetPreAvatarActivityListScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetPreAvatarActivityListScRsp.OFLEBKDDAAM)
-    pub OFLEBKDDAAM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetPreAvatarActivityListScRsp.ALFKPNILOJJ)
+    pub ALFKPNILOJJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPreAvatarActivityListScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl GetPreAvatarActivityListScRsp {
             |m: &mut GetPreAvatarActivityListScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OFLEBKDDAAM",
-            |m: &GetPreAvatarActivityListScRsp| { &m.OFLEBKDDAAM },
-            |m: &mut GetPreAvatarActivityListScRsp| { &mut m.OFLEBKDDAAM },
+            "ALFKPNILOJJ",
+            |m: &GetPreAvatarActivityListScRsp| { &m.ALFKPNILOJJ },
+            |m: &mut GetPreAvatarActivityListScRsp| { &mut m.ALFKPNILOJJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPreAvatarActivityListScRsp>(
             "GetPreAvatarActivityListScRsp",
@@ -82,11 +82,11 @@ impl ::protobuf::Message for GetPreAvatarActivityListScRsp {
                 96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OFLEBKDDAAM)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ALFKPNILOJJ)?;
                 },
-                112 => {
-                    self.OFLEBKDDAAM.push(is.read_uint32()?);
+                88 => {
+                    self.ALFKPNILOJJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,7 +103,7 @@ impl ::protobuf::Message for GetPreAvatarActivityListScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.OFLEBKDDAAM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.ALFKPNILOJJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -113,7 +113,7 @@ impl ::protobuf::Message for GetPreAvatarActivityListScRsp {
         if self.retcode != 0 {
             os.write_uint32(12, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(14, &self.OFLEBKDDAAM)?;
+        os.write_repeated_packed_uint32(11, &self.ALFKPNILOJJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,14 +132,14 @@ impl ::protobuf::Message for GetPreAvatarActivityListScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.OFLEBKDDAAM.clear();
+        self.ALFKPNILOJJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPreAvatarActivityListScRsp {
         static instance: GetPreAvatarActivityListScRsp = GetPreAvatarActivityListScRsp {
             retcode: 0,
-            OFLEBKDDAAM: ::std::vec::Vec::new(),
+            ALFKPNILOJJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for GetPreAvatarActivityListScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GetPreAvatarActivityListScRsp.proto\"[\n\x1dGetPreAvatarActivityListS\
-    cRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bOF\
-    LEBKDDAAM\x18\x0e\x20\x03(\rR\x0bOFLEBKDDAAMb\x06proto3\
+    cRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bAL\
+    FKPNILOJJ\x18\x0b\x20\x03(\rR\x0bALFKPNILOJJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

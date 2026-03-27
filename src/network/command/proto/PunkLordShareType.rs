@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:PunkLordShareType)
 pub enum PunkLordShareType {
-    // @@protoc_insertion_point(enum_value:PunkLordShareType.KIDJIFKAJFP_GKJBAODJMJG)
-    KIDJIFKAJFP_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:PunkLordShareType.KIDJIFKAJFP_CCFIOBOBFLO)
-    KIDJIFKAJFP_CCFIOBOBFLO = 1,
-    // @@protoc_insertion_point(enum_value:PunkLordShareType.KIDJIFKAJFP_LPMCEFGOHIP)
-    KIDJIFKAJFP_LPMCEFGOHIP = 2,
+    // @@protoc_insertion_point(enum_value:PunkLordShareType.PunkLordShareType_MNFEPONEDDJ)
+    PunkLordShareType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:PunkLordShareType.PunkLordShareType_MBLHKMMBGNJ)
+    PunkLordShareType_MBLHKMMBGNJ = 1,
+    // @@protoc_insertion_point(enum_value:PunkLordShareType.PunkLordShareType_JEAADOOJGLG)
+    PunkLordShareType_JEAADOOJGLG = 2,
 }
 
 impl ::protobuf::Enum for PunkLordShareType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for PunkLordShareType {
 
     fn from_i32(value: i32) -> ::std::option::Option<PunkLordShareType> {
         match value {
-            0 => ::std::option::Option::Some(PunkLordShareType::KIDJIFKAJFP_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(PunkLordShareType::KIDJIFKAJFP_CCFIOBOBFLO),
-            2 => ::std::option::Option::Some(PunkLordShareType::KIDJIFKAJFP_LPMCEFGOHIP),
+            0 => ::std::option::Option::Some(PunkLordShareType::PunkLordShareType_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(PunkLordShareType::PunkLordShareType_MBLHKMMBGNJ),
+            2 => ::std::option::Option::Some(PunkLordShareType::PunkLordShareType_JEAADOOJGLG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<PunkLordShareType> {
         match str {
-            "KIDJIFKAJFP_GKJBAODJMJG" => ::std::option::Option::Some(PunkLordShareType::KIDJIFKAJFP_GKJBAODJMJG),
-            "KIDJIFKAJFP_CCFIOBOBFLO" => ::std::option::Option::Some(PunkLordShareType::KIDJIFKAJFP_CCFIOBOBFLO),
-            "KIDJIFKAJFP_LPMCEFGOHIP" => ::std::option::Option::Some(PunkLordShareType::KIDJIFKAJFP_LPMCEFGOHIP),
+            "PunkLordShareType_MNFEPONEDDJ" => ::std::option::Option::Some(PunkLordShareType::PunkLordShareType_MNFEPONEDDJ),
+            "PunkLordShareType_MBLHKMMBGNJ" => ::std::option::Option::Some(PunkLordShareType::PunkLordShareType_MBLHKMMBGNJ),
+            "PunkLordShareType_JEAADOOJGLG" => ::std::option::Option::Some(PunkLordShareType::PunkLordShareType_JEAADOOJGLG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PunkLordShareType] = &[
-        PunkLordShareType::KIDJIFKAJFP_GKJBAODJMJG,
-        PunkLordShareType::KIDJIFKAJFP_CCFIOBOBFLO,
-        PunkLordShareType::KIDJIFKAJFP_LPMCEFGOHIP,
+        PunkLordShareType::PunkLordShareType_MNFEPONEDDJ,
+        PunkLordShareType::PunkLordShareType_MBLHKMMBGNJ,
+        PunkLordShareType::PunkLordShareType_JEAADOOJGLG,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for PunkLordShareType {
 
 impl ::std::default::Default for PunkLordShareType {
     fn default() -> Self {
-        PunkLordShareType::KIDJIFKAJFP_GKJBAODJMJG
+        PunkLordShareType::PunkLordShareType_MNFEPONEDDJ
     }
 }
 
@@ -92,9 +92,9 @@ impl PunkLordShareType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17PunkLordShareType.proto*j\n\x11PunkLordShareType\x12\x1b\n\x17KIDJ\
-    IFKAJFP_GKJBAODJMJG\x10\0\x12\x1b\n\x17KIDJIFKAJFP_CCFIOBOBFLO\x10\x01\
-    \x12\x1b\n\x17KIDJIFKAJFP_LPMCEFGOHIP\x10\x02b\x06proto3\
+    \n\x17PunkLordShareType.proto*|\n\x11PunkLordShareType\x12!\n\x1dPunkLor\
+    dShareType_MNFEPONEDDJ\x10\0\x12!\n\x1dPunkLordShareType_MBLHKMMBGNJ\x10\
+    \x01\x12!\n\x1dPunkLordShareType_JEAADOOJGLG\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

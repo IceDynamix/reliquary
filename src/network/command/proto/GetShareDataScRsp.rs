@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetShareDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetShareDataScRsp.MIEIPPKLCBE)
-    pub MIEIPPKLCBE: ::std::vec::Vec<super::GFNEIGBGKKG::GFNEIGBGKKG>,
     // @@protoc_insertion_point(field:GetShareDataScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetShareDataScRsp.NPIAMGGIDNP)
+    pub NPIAMGGIDNP: ::std::vec::Vec<super::JPMHKMPHAKM::JPMHKMPHAKM>,
     // special fields
     // @@protoc_insertion_point(special_field:GetShareDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetShareDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MIEIPPKLCBE",
-            |m: &GetShareDataScRsp| { &m.MIEIPPKLCBE },
-            |m: &mut GetShareDataScRsp| { &mut m.MIEIPPKLCBE },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetShareDataScRsp| { &m.retcode },
             |m: &mut GetShareDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NPIAMGGIDNP",
+            |m: &GetShareDataScRsp| { &m.NPIAMGGIDNP },
+            |m: &mut GetShareDataScRsp| { &mut m.NPIAMGGIDNP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetShareDataScRsp>(
             "GetShareDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetShareDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.MIEIPPKLCBE.push(is.read_message()?);
-                },
-                80 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                18 => {
+                    self.NPIAMGGIDNP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetShareDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.MIEIPPKLCBE {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        for value in &self.NPIAMGGIDNP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.MIEIPPKLCBE {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
+        for v in &self.NPIAMGGIDNP {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetShareDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.MIEIPPKLCBE.clear();
         self.retcode = 0;
+        self.NPIAMGGIDNP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetShareDataScRsp {
         static instance: GetShareDataScRsp = GetShareDataScRsp {
-            MIEIPPKLCBE: ::std::vec::Vec::new(),
             retcode: 0,
+            NPIAMGGIDNP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetShareDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GetShareDataScRsp.proto\x1a\x11GFNEIGBGKKG.proto\"]\n\x11GetShareD\
-    ataScRsp\x12.\n\x0bMIEIPPKLCBE\x18\x07\x20\x03(\x0b2\x0c.GFNEIGBGKKGR\
-    \x0bMIEIPPKLCBE\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcodeb\x06pr\
-    oto3\
+    \n\x17GetShareDataScRsp.proto\x1a\x11JPMHKMPHAKM.proto\"]\n\x11GetShareD\
+    ataScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12.\n\x0bN\
+    PIAMGGIDNP\x18\x02\x20\x03(\x0b2\x0c.JPMHKMPHAKMR\x0bNPIAMGGIDNPb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GFNEIGBGKKG::file_descriptor().clone());
+            deps.push(super::JPMHKMPHAKM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetShareDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

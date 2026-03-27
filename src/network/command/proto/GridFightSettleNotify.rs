@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightSettleNotify {
     // message fields
+    // @@protoc_insertion_point(field:GridFightSettleNotify.FMNFMLBMGKM)
+    pub FMNFMLBMGKM: u32,
+    // @@protoc_insertion_point(field:GridFightSettleNotify.MFCCKIIHDAC)
+    pub MFCCKIIHDAC: u32,
+    // @@protoc_insertion_point(field:GridFightSettleNotify.EBKHCAONCON)
+    pub EBKHCAONCON: u32,
+    // @@protoc_insertion_point(field:GridFightSettleNotify.HMPMKCCMFCK)
+    pub HMPMKCCMFCK: u32,
     // @@protoc_insertion_point(field:GridFightSettleNotify.current_score)
     pub current_score: u32,
-    // @@protoc_insertion_point(field:GridFightSettleNotify.LHDNEEGAOND)
-    pub LHDNEEGAOND: u32,
-    // @@protoc_insertion_point(field:GridFightSettleNotify.PIFBIJACGBF)
-    pub PIFBIJACGBF: u32,
-    // @@protoc_insertion_point(field:GridFightSettleNotify.AJIPGLPOCMA)
-    pub AJIPGLPOCMA: u32,
-    // @@protoc_insertion_point(field:GridFightSettleNotify.ILBEJGKAIKL)
-    pub ILBEJGKAIKL: u32,
-    // @@protoc_insertion_point(field:GridFightSettleNotify.EPPFADGIJBP)
-    pub EPPFADGIJBP: u32,
-    // @@protoc_insertion_point(field:GridFightSettleNotify.LCCJNCJLPKO)
-    pub LCCJNCJLPKO: u32,
-    // @@protoc_insertion_point(field:GridFightSettleNotify.CLPJPJPMCFC)
-    pub CLPJPJPMCFC: ::protobuf::MessageField<super::GridFightFinishInfo::GridFightFinishInfo>,
-    // @@protoc_insertion_point(field:GridFightSettleNotify.IFFKIFLJMEN)
-    pub IFFKIFLJMEN: u32,
+    // @@protoc_insertion_point(field:GridFightSettleNotify.ANLPHOKNOPN)
+    pub ANLPHOKNOPN: u32,
+    // @@protoc_insertion_point(field:GridFightSettleNotify.DJOACKEOHFG)
+    pub DJOACKEOHFG: u32,
+    // @@protoc_insertion_point(field:GridFightSettleNotify.GJBAHMHKPGD)
+    pub GJBAHMHKPGD: u32,
+    // @@protoc_insertion_point(field:GridFightSettleNotify.DACAGELDCPM)
+    pub DACAGELDCPM: ::protobuf::MessageField<super::GridFightFinishInfo::GridFightFinishInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightSettleNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,49 +66,49 @@ impl GridFightSettleNotify {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FMNFMLBMGKM",
+            |m: &GridFightSettleNotify| { &m.FMNFMLBMGKM },
+            |m: &mut GridFightSettleNotify| { &mut m.FMNFMLBMGKM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MFCCKIIHDAC",
+            |m: &GridFightSettleNotify| { &m.MFCCKIIHDAC },
+            |m: &mut GridFightSettleNotify| { &mut m.MFCCKIIHDAC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EBKHCAONCON",
+            |m: &GridFightSettleNotify| { &m.EBKHCAONCON },
+            |m: &mut GridFightSettleNotify| { &mut m.EBKHCAONCON },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HMPMKCCMFCK",
+            |m: &GridFightSettleNotify| { &m.HMPMKCCMFCK },
+            |m: &mut GridFightSettleNotify| { &mut m.HMPMKCCMFCK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "current_score",
             |m: &GridFightSettleNotify| { &m.current_score },
             |m: &mut GridFightSettleNotify| { &mut m.current_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LHDNEEGAOND",
-            |m: &GridFightSettleNotify| { &m.LHDNEEGAOND },
-            |m: &mut GridFightSettleNotify| { &mut m.LHDNEEGAOND },
+            "ANLPHOKNOPN",
+            |m: &GridFightSettleNotify| { &m.ANLPHOKNOPN },
+            |m: &mut GridFightSettleNotify| { &mut m.ANLPHOKNOPN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIFBIJACGBF",
-            |m: &GridFightSettleNotify| { &m.PIFBIJACGBF },
-            |m: &mut GridFightSettleNotify| { &mut m.PIFBIJACGBF },
+            "DJOACKEOHFG",
+            |m: &GridFightSettleNotify| { &m.DJOACKEOHFG },
+            |m: &mut GridFightSettleNotify| { &mut m.DJOACKEOHFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJIPGLPOCMA",
-            |m: &GridFightSettleNotify| { &m.AJIPGLPOCMA },
-            |m: &mut GridFightSettleNotify| { &mut m.AJIPGLPOCMA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ILBEJGKAIKL",
-            |m: &GridFightSettleNotify| { &m.ILBEJGKAIKL },
-            |m: &mut GridFightSettleNotify| { &mut m.ILBEJGKAIKL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EPPFADGIJBP",
-            |m: &GridFightSettleNotify| { &m.EPPFADGIJBP },
-            |m: &mut GridFightSettleNotify| { &mut m.EPPFADGIJBP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCCJNCJLPKO",
-            |m: &GridFightSettleNotify| { &m.LCCJNCJLPKO },
-            |m: &mut GridFightSettleNotify| { &mut m.LCCJNCJLPKO },
+            "GJBAHMHKPGD",
+            |m: &GridFightSettleNotify| { &m.GJBAHMHKPGD },
+            |m: &mut GridFightSettleNotify| { &mut m.GJBAHMHKPGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightFinishInfo::GridFightFinishInfo>(
-            "CLPJPJPMCFC",
-            |m: &GridFightSettleNotify| { &m.CLPJPJPMCFC },
-            |m: &mut GridFightSettleNotify| { &mut m.CLPJPJPMCFC },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IFFKIFLJMEN",
-            |m: &GridFightSettleNotify| { &m.IFFKIFLJMEN },
-            |m: &mut GridFightSettleNotify| { &mut m.IFFKIFLJMEN },
+            "DACAGELDCPM",
+            |m: &GridFightSettleNotify| { &m.DACAGELDCPM },
+            |m: &mut GridFightSettleNotify| { &mut m.DACAGELDCPM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightSettleNotify>(
             "GridFightSettleNotify",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for GridFightSettleNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                13472 => {
+                    self.FMNFMLBMGKM = is.read_uint32()?;
+                },
+                8 => {
+                    self.MFCCKIIHDAC = is.read_uint32()?;
+                },
+                24 => {
+                    self.EBKHCAONCON = is.read_uint32()?;
+                },
+                88 => {
+                    self.HMPMKCCMFCK = is.read_uint32()?;
+                },
+                96 => {
                     self.current_score = is.read_uint32()?;
                 },
                 112 => {
-                    self.LHDNEEGAOND = is.read_uint32()?;
+                    self.ANLPHOKNOPN = is.read_uint32()?;
                 },
-                32 => {
-                    self.PIFBIJACGBF = is.read_uint32()?;
+                5984 => {
+                    self.DJOACKEOHFG = is.read_uint32()?;
                 },
-                40 => {
-                    self.AJIPGLPOCMA = is.read_uint32()?;
+                80 => {
+                    self.GJBAHMHKPGD = is.read_uint32()?;
                 },
-                64 => {
-                    self.ILBEJGKAIKL = is.read_uint32()?;
-                },
-                15560 => {
-                    self.EPPFADGIJBP = is.read_uint32()?;
-                },
-                104 => {
-                    self.LCCJNCJLPKO = is.read_uint32()?;
-                },
-                7402 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CLPJPJPMCFC)?;
-                },
-                13112 => {
-                    self.IFFKIFLJMEN = is.read_uint32()?;
+                6002 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DACAGELDCPM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -167,33 +167,33 @@ impl ::protobuf::Message for GridFightSettleNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FMNFMLBMGKM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1684, self.FMNFMLBMGKM);
+        }
+        if self.MFCCKIIHDAC != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.MFCCKIIHDAC);
+        }
+        if self.EBKHCAONCON != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.EBKHCAONCON);
+        }
+        if self.HMPMKCCMFCK != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HMPMKCCMFCK);
+        }
         if self.current_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.current_score);
+            my_size += ::protobuf::rt::uint32_size(12, self.current_score);
         }
-        if self.LHDNEEGAOND != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.LHDNEEGAOND);
+        if self.ANLPHOKNOPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.ANLPHOKNOPN);
         }
-        if self.PIFBIJACGBF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.PIFBIJACGBF);
+        if self.DJOACKEOHFG != 0 {
+            my_size += ::protobuf::rt::uint32_size(748, self.DJOACKEOHFG);
         }
-        if self.AJIPGLPOCMA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.AJIPGLPOCMA);
+        if self.GJBAHMHKPGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.GJBAHMHKPGD);
         }
-        if self.ILBEJGKAIKL != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.ILBEJGKAIKL);
-        }
-        if self.EPPFADGIJBP != 0 {
-            my_size += ::protobuf::rt::uint32_size(1945, self.EPPFADGIJBP);
-        }
-        if self.LCCJNCJLPKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.LCCJNCJLPKO);
-        }
-        if let Some(v) = self.CLPJPJPMCFC.as_ref() {
+        if let Some(v) = self.DACAGELDCPM.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.IFFKIFLJMEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(1639, self.IFFKIFLJMEN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -201,32 +201,32 @@ impl ::protobuf::Message for GridFightSettleNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FMNFMLBMGKM != 0 {
+            os.write_uint32(1684, self.FMNFMLBMGKM)?;
+        }
+        if self.MFCCKIIHDAC != 0 {
+            os.write_uint32(1, self.MFCCKIIHDAC)?;
+        }
+        if self.EBKHCAONCON != 0 {
+            os.write_uint32(3, self.EBKHCAONCON)?;
+        }
+        if self.HMPMKCCMFCK != 0 {
+            os.write_uint32(11, self.HMPMKCCMFCK)?;
+        }
         if self.current_score != 0 {
-            os.write_uint32(15, self.current_score)?;
+            os.write_uint32(12, self.current_score)?;
         }
-        if self.LHDNEEGAOND != 0 {
-            os.write_uint32(14, self.LHDNEEGAOND)?;
+        if self.ANLPHOKNOPN != 0 {
+            os.write_uint32(14, self.ANLPHOKNOPN)?;
         }
-        if self.PIFBIJACGBF != 0 {
-            os.write_uint32(4, self.PIFBIJACGBF)?;
+        if self.DJOACKEOHFG != 0 {
+            os.write_uint32(748, self.DJOACKEOHFG)?;
         }
-        if self.AJIPGLPOCMA != 0 {
-            os.write_uint32(5, self.AJIPGLPOCMA)?;
+        if self.GJBAHMHKPGD != 0 {
+            os.write_uint32(10, self.GJBAHMHKPGD)?;
         }
-        if self.ILBEJGKAIKL != 0 {
-            os.write_uint32(8, self.ILBEJGKAIKL)?;
-        }
-        if self.EPPFADGIJBP != 0 {
-            os.write_uint32(1945, self.EPPFADGIJBP)?;
-        }
-        if self.LCCJNCJLPKO != 0 {
-            os.write_uint32(13, self.LCCJNCJLPKO)?;
-        }
-        if let Some(v) = self.CLPJPJPMCFC.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(925, v, os)?;
-        }
-        if self.IFFKIFLJMEN != 0 {
-            os.write_uint32(1639, self.IFFKIFLJMEN)?;
+        if let Some(v) = self.DACAGELDCPM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(750, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -245,29 +245,29 @@ impl ::protobuf::Message for GridFightSettleNotify {
     }
 
     fn clear(&mut self) {
+        self.FMNFMLBMGKM = 0;
+        self.MFCCKIIHDAC = 0;
+        self.EBKHCAONCON = 0;
+        self.HMPMKCCMFCK = 0;
         self.current_score = 0;
-        self.LHDNEEGAOND = 0;
-        self.PIFBIJACGBF = 0;
-        self.AJIPGLPOCMA = 0;
-        self.ILBEJGKAIKL = 0;
-        self.EPPFADGIJBP = 0;
-        self.LCCJNCJLPKO = 0;
-        self.CLPJPJPMCFC.clear();
-        self.IFFKIFLJMEN = 0;
+        self.ANLPHOKNOPN = 0;
+        self.DJOACKEOHFG = 0;
+        self.GJBAHMHKPGD = 0;
+        self.DACAGELDCPM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightSettleNotify {
         static instance: GridFightSettleNotify = GridFightSettleNotify {
+            FMNFMLBMGKM: 0,
+            MFCCKIIHDAC: 0,
+            EBKHCAONCON: 0,
+            HMPMKCCMFCK: 0,
             current_score: 0,
-            LHDNEEGAOND: 0,
-            PIFBIJACGBF: 0,
-            AJIPGLPOCMA: 0,
-            ILBEJGKAIKL: 0,
-            EPPFADGIJBP: 0,
-            LCCJNCJLPKO: 0,
-            CLPJPJPMCFC: ::protobuf::MessageField::none(),
-            IFFKIFLJMEN: 0,
+            ANLPHOKNOPN: 0,
+            DJOACKEOHFG: 0,
+            GJBAHMHKPGD: 0,
+            DACAGELDCPM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -293,15 +293,15 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSettleNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGridFightSettleNotify.proto\x1a\x19GridFightFinishInfo.proto\"\xe5\
-    \x02\n\x15GridFightSettleNotify\x12#\n\rcurrent_score\x18\x0f\x20\x01(\r\
-    R\x0ccurrentScore\x12\x20\n\x0bLHDNEEGAOND\x18\x0e\x20\x01(\rR\x0bLHDNEE\
-    GAOND\x12\x20\n\x0bPIFBIJACGBF\x18\x04\x20\x01(\rR\x0bPIFBIJACGBF\x12\
-    \x20\n\x0bAJIPGLPOCMA\x18\x05\x20\x01(\rR\x0bAJIPGLPOCMA\x12\x20\n\x0bIL\
-    BEJGKAIKL\x18\x08\x20\x01(\rR\x0bILBEJGKAIKL\x12!\n\x0bEPPFADGIJBP\x18\
-    \x99\x0f\x20\x01(\rR\x0bEPPFADGIJBP\x12\x20\n\x0bLCCJNCJLPKO\x18\r\x20\
-    \x01(\rR\x0bLCCJNCJLPKO\x127\n\x0bCLPJPJPMCFC\x18\x9d\x07\x20\x01(\x0b2\
-    \x14.GridFightFinishInfoR\x0bCLPJPJPMCFC\x12!\n\x0bIFFKIFLJMEN\x18\xe7\
-    \x0c\x20\x01(\rR\x0bIFFKIFLJMENb\x06proto3\
+    \x02\n\x15GridFightSettleNotify\x12!\n\x0bFMNFMLBMGKM\x18\x94\r\x20\x01(\
+    \rR\x0bFMNFMLBMGKM\x12\x20\n\x0bMFCCKIIHDAC\x18\x01\x20\x01(\rR\x0bMFCCK\
+    IIHDAC\x12\x20\n\x0bEBKHCAONCON\x18\x03\x20\x01(\rR\x0bEBKHCAONCON\x12\
+    \x20\n\x0bHMPMKCCMFCK\x18\x0b\x20\x01(\rR\x0bHMPMKCCMFCK\x12#\n\rcurrent\
+    _score\x18\x0c\x20\x01(\rR\x0ccurrentScore\x12\x20\n\x0bANLPHOKNOPN\x18\
+    \x0e\x20\x01(\rR\x0bANLPHOKNOPN\x12!\n\x0bDJOACKEOHFG\x18\xec\x05\x20\
+    \x01(\rR\x0bDJOACKEOHFG\x12\x20\n\x0bGJBAHMHKPGD\x18\n\x20\x01(\rR\x0bGJ\
+    BAHMHKPGD\x127\n\x0bDACAGELDCPM\x18\xee\x05\x20\x01(\x0b2\x14.GridFightF\
+    inishInfoR\x0bDACAGELDCPMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GridFightLockReason)
 pub enum GridFightLockReason {
-    // @@protoc_insertion_point(enum_value:GridFightLockReason.ABJANAJPELC_HCNPDBGIFPO)
-    ABJANAJPELC_HCNPDBGIFPO = 0,
-    // @@protoc_insertion_point(enum_value:GridFightLockReason.ABJANAJPELC_EPJNPAAIMHE)
-    ABJANAJPELC_EPJNPAAIMHE = 1,
-    // @@protoc_insertion_point(enum_value:GridFightLockReason.ABJANAJPELC_KBMLDNBFJDM)
-    ABJANAJPELC_KBMLDNBFJDM = 2,
-    // @@protoc_insertion_point(enum_value:GridFightLockReason.ABJANAJPELC_BKPGPMDENMB)
-    ABJANAJPELC_BKPGPMDENMB = 3,
+    // @@protoc_insertion_point(enum_value:GridFightLockReason.GridFightLockReason_EFDBPHKPJKH)
+    GridFightLockReason_EFDBPHKPJKH = 0,
+    // @@protoc_insertion_point(enum_value:GridFightLockReason.GridFightLockReason_KHJDMIMLOFO)
+    GridFightLockReason_KHJDMIMLOFO = 1,
+    // @@protoc_insertion_point(enum_value:GridFightLockReason.GridFightLockReason_CAFILGAIKNP)
+    GridFightLockReason_CAFILGAIKNP = 2,
+    // @@protoc_insertion_point(enum_value:GridFightLockReason.GridFightLockReason_JEPEEJIJPMF)
+    GridFightLockReason_JEPEEJIJPMF = 3,
 }
 
 impl ::protobuf::Enum for GridFightLockReason {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for GridFightLockReason {
 
     fn from_i32(value: i32) -> ::std::option::Option<GridFightLockReason> {
         match value {
-            0 => ::std::option::Option::Some(GridFightLockReason::ABJANAJPELC_HCNPDBGIFPO),
-            1 => ::std::option::Option::Some(GridFightLockReason::ABJANAJPELC_EPJNPAAIMHE),
-            2 => ::std::option::Option::Some(GridFightLockReason::ABJANAJPELC_KBMLDNBFJDM),
-            3 => ::std::option::Option::Some(GridFightLockReason::ABJANAJPELC_BKPGPMDENMB),
+            0 => ::std::option::Option::Some(GridFightLockReason::GridFightLockReason_EFDBPHKPJKH),
+            1 => ::std::option::Option::Some(GridFightLockReason::GridFightLockReason_KHJDMIMLOFO),
+            2 => ::std::option::Option::Some(GridFightLockReason::GridFightLockReason_CAFILGAIKNP),
+            3 => ::std::option::Option::Some(GridFightLockReason::GridFightLockReason_JEPEEJIJPMF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GridFightLockReason> {
         match str {
-            "ABJANAJPELC_HCNPDBGIFPO" => ::std::option::Option::Some(GridFightLockReason::ABJANAJPELC_HCNPDBGIFPO),
-            "ABJANAJPELC_EPJNPAAIMHE" => ::std::option::Option::Some(GridFightLockReason::ABJANAJPELC_EPJNPAAIMHE),
-            "ABJANAJPELC_KBMLDNBFJDM" => ::std::option::Option::Some(GridFightLockReason::ABJANAJPELC_KBMLDNBFJDM),
-            "ABJANAJPELC_BKPGPMDENMB" => ::std::option::Option::Some(GridFightLockReason::ABJANAJPELC_BKPGPMDENMB),
+            "GridFightLockReason_EFDBPHKPJKH" => ::std::option::Option::Some(GridFightLockReason::GridFightLockReason_EFDBPHKPJKH),
+            "GridFightLockReason_KHJDMIMLOFO" => ::std::option::Option::Some(GridFightLockReason::GridFightLockReason_KHJDMIMLOFO),
+            "GridFightLockReason_CAFILGAIKNP" => ::std::option::Option::Some(GridFightLockReason::GridFightLockReason_CAFILGAIKNP),
+            "GridFightLockReason_JEPEEJIJPMF" => ::std::option::Option::Some(GridFightLockReason::GridFightLockReason_JEPEEJIJPMF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GridFightLockReason] = &[
-        GridFightLockReason::ABJANAJPELC_HCNPDBGIFPO,
-        GridFightLockReason::ABJANAJPELC_EPJNPAAIMHE,
-        GridFightLockReason::ABJANAJPELC_KBMLDNBFJDM,
-        GridFightLockReason::ABJANAJPELC_BKPGPMDENMB,
+        GridFightLockReason::GridFightLockReason_EFDBPHKPJKH,
+        GridFightLockReason::GridFightLockReason_KHJDMIMLOFO,
+        GridFightLockReason::GridFightLockReason_CAFILGAIKNP,
+        GridFightLockReason::GridFightLockReason_JEPEEJIJPMF,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for GridFightLockReason {
 
 impl ::std::default::Default for GridFightLockReason {
     fn default() -> Self {
-        GridFightLockReason::ABJANAJPELC_HCNPDBGIFPO
+        GridFightLockReason::GridFightLockReason_EFDBPHKPJKH
     }
 }
 
@@ -97,10 +97,10 @@ impl GridFightLockReason {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GridFightLockReason.proto*\x89\x01\n\x13GridFightLockReason\x12\
-    \x1b\n\x17ABJANAJPELC_HCNPDBGIFPO\x10\0\x12\x1b\n\x17ABJANAJPELC_EPJNPAA\
-    IMHE\x10\x01\x12\x1b\n\x17ABJANAJPELC_KBMLDNBFJDM\x10\x02\x12\x1b\n\x17A\
-    BJANAJPELC_BKPGPMDENMB\x10\x03b\x06proto3\
+    \n\x19GridFightLockReason.proto*\xa9\x01\n\x13GridFightLockReason\x12#\n\
+    \x1fGridFightLockReason_EFDBPHKPJKH\x10\0\x12#\n\x1fGridFightLockReason_\
+    KHJDMIMLOFO\x10\x01\x12#\n\x1fGridFightLockReason_CAFILGAIKNP\x10\x02\
+    \x12#\n\x1fGridFightLockReason_JEPEEJIJPMF\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

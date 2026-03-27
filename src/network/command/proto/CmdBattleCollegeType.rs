@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdBattleCollegeType)
 pub enum CmdBattleCollegeType {
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.PMNBOBELMHO_GKJBAODJMJG)
-    PMNBOBELMHO_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.PMNBOBELMHO_DFJAKOKKOOL)
-    PMNBOBELMHO_DFJAKOKKOOL = 5755,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.PMNBOBELMHO_LBKIMJNOINM)
-    PMNBOBELMHO_LBKIMJNOINM = 5728,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.PMNBOBELMHO_MGIBDMDHODG)
-    PMNBOBELMHO_MGIBDMDHODG = 5775,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.PMNBOBELMHO_DNDOBLFKFOP)
-    PMNBOBELMHO_DNDOBLFKFOP = 5757,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.PMNBOBELMHO_OKEBHEFLHMA)
-    PMNBOBELMHO_OKEBHEFLHMA = 5738,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdBattleCollegeType_MNFEPONEDDJ)
+    CmdBattleCollegeType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdBattleCollegeType_CMLBECNJMAL)
+    CmdBattleCollegeType_CMLBECNJMAL = 5735,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdBattleCollegeType_EKOCCLEGPAK)
+    CmdBattleCollegeType_EKOCCLEGPAK = 5781,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdBattleCollegeType_MDFNBFDOPOM)
+    CmdBattleCollegeType_MDFNBFDOPOM = 5724,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdBattleCollegeType_NIFGOFJCENA)
+    CmdBattleCollegeType_NIFGOFJCENA = 5704,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdBattleCollegeType_FGOCOMIBCFC)
+    CmdBattleCollegeType_FGOCOMIBCFC = 5783,
 }
 
 impl ::protobuf::Enum for CmdBattleCollegeType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdBattleCollegeType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdBattleCollegeType> {
         match value {
-            0 => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_GKJBAODJMJG),
-            5755 => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_DFJAKOKKOOL),
-            5728 => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_LBKIMJNOINM),
-            5775 => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_MGIBDMDHODG),
-            5757 => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_DNDOBLFKFOP),
-            5738 => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_OKEBHEFLHMA),
+            0 => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_MNFEPONEDDJ),
+            5735 => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_CMLBECNJMAL),
+            5781 => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_EKOCCLEGPAK),
+            5724 => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_MDFNBFDOPOM),
+            5704 => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_NIFGOFJCENA),
+            5783 => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_FGOCOMIBCFC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdBattleCollegeType> {
         match str {
-            "PMNBOBELMHO_GKJBAODJMJG" => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_GKJBAODJMJG),
-            "PMNBOBELMHO_DFJAKOKKOOL" => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_DFJAKOKKOOL),
-            "PMNBOBELMHO_LBKIMJNOINM" => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_LBKIMJNOINM),
-            "PMNBOBELMHO_MGIBDMDHODG" => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_MGIBDMDHODG),
-            "PMNBOBELMHO_DNDOBLFKFOP" => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_DNDOBLFKFOP),
-            "PMNBOBELMHO_OKEBHEFLHMA" => ::std::option::Option::Some(CmdBattleCollegeType::PMNBOBELMHO_OKEBHEFLHMA),
+            "CmdBattleCollegeType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_MNFEPONEDDJ),
+            "CmdBattleCollegeType_CMLBECNJMAL" => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_CMLBECNJMAL),
+            "CmdBattleCollegeType_EKOCCLEGPAK" => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_EKOCCLEGPAK),
+            "CmdBattleCollegeType_MDFNBFDOPOM" => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_MDFNBFDOPOM),
+            "CmdBattleCollegeType_NIFGOFJCENA" => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_NIFGOFJCENA),
+            "CmdBattleCollegeType_FGOCOMIBCFC" => ::std::option::Option::Some(CmdBattleCollegeType::CmdBattleCollegeType_FGOCOMIBCFC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBattleCollegeType] = &[
-        CmdBattleCollegeType::PMNBOBELMHO_GKJBAODJMJG,
-        CmdBattleCollegeType::PMNBOBELMHO_DFJAKOKKOOL,
-        CmdBattleCollegeType::PMNBOBELMHO_LBKIMJNOINM,
-        CmdBattleCollegeType::PMNBOBELMHO_MGIBDMDHODG,
-        CmdBattleCollegeType::PMNBOBELMHO_DNDOBLFKFOP,
-        CmdBattleCollegeType::PMNBOBELMHO_OKEBHEFLHMA,
+        CmdBattleCollegeType::CmdBattleCollegeType_MNFEPONEDDJ,
+        CmdBattleCollegeType::CmdBattleCollegeType_CMLBECNJMAL,
+        CmdBattleCollegeType::CmdBattleCollegeType_EKOCCLEGPAK,
+        CmdBattleCollegeType::CmdBattleCollegeType_MDFNBFDOPOM,
+        CmdBattleCollegeType::CmdBattleCollegeType_NIFGOFJCENA,
+        CmdBattleCollegeType::CmdBattleCollegeType_FGOCOMIBCFC,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdBattleCollegeType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdBattleCollegeType::PMNBOBELMHO_GKJBAODJMJG => 0,
-            CmdBattleCollegeType::PMNBOBELMHO_DFJAKOKKOOL => 1,
-            CmdBattleCollegeType::PMNBOBELMHO_LBKIMJNOINM => 2,
-            CmdBattleCollegeType::PMNBOBELMHO_MGIBDMDHODG => 3,
-            CmdBattleCollegeType::PMNBOBELMHO_DNDOBLFKFOP => 4,
-            CmdBattleCollegeType::PMNBOBELMHO_OKEBHEFLHMA => 5,
+            CmdBattleCollegeType::CmdBattleCollegeType_MNFEPONEDDJ => 0,
+            CmdBattleCollegeType::CmdBattleCollegeType_CMLBECNJMAL => 1,
+            CmdBattleCollegeType::CmdBattleCollegeType_EKOCCLEGPAK => 2,
+            CmdBattleCollegeType::CmdBattleCollegeType_MDFNBFDOPOM => 3,
+            CmdBattleCollegeType::CmdBattleCollegeType_NIFGOFJCENA => 4,
+            CmdBattleCollegeType::CmdBattleCollegeType_FGOCOMIBCFC => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdBattleCollegeType {
 
 impl ::std::default::Default for CmdBattleCollegeType {
     fn default() -> Self {
-        CmdBattleCollegeType::PMNBOBELMHO_GKJBAODJMJG
+        CmdBattleCollegeType::CmdBattleCollegeType_MNFEPONEDDJ
     }
 }
 
@@ -114,11 +114,12 @@ impl CmdBattleCollegeType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aCmdBattleCollegeType.proto*\xc9\x01\n\x14CmdBattleCollegeType\x12\
-    \x1b\n\x17PMNBOBELMHO_GKJBAODJMJG\x10\0\x12\x1c\n\x17PMNBOBELMHO_DFJAKOK\
-    KOOL\x10\xfb,\x12\x1c\n\x17PMNBOBELMHO_LBKIMJNOINM\x10\xe0,\x12\x1c\n\
-    \x17PMNBOBELMHO_MGIBDMDHODG\x10\x8f-\x12\x1c\n\x17PMNBOBELMHO_DNDOBLFKFO\
-    P\x10\xfd,\x12\x1c\n\x17PMNBOBELMHO_OKEBHEFLHMA\x10\xea,b\x06proto3\
+    \n\x1aCmdBattleCollegeType.proto*\xff\x01\n\x14CmdBattleCollegeType\x12$\
+    \n\x20CmdBattleCollegeType_MNFEPONEDDJ\x10\0\x12%\n\x20CmdBattleCollegeT\
+    ype_CMLBECNJMAL\x10\xe7,\x12%\n\x20CmdBattleCollegeType_EKOCCLEGPAK\x10\
+    \x95-\x12%\n\x20CmdBattleCollegeType_MDFNBFDOPOM\x10\xdc,\x12%\n\x20CmdB\
+    attleCollegeType_NIFGOFJCENA\x10\xc8,\x12%\n\x20CmdBattleCollegeType_FGO\
+    COMIBCFC\x10\x97-b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

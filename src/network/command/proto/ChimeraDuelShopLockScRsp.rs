@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelShopLockScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelShopLockScRsp.is_locked)
-    pub is_locked: bool,
     // @@protoc_insertion_point(field:ChimeraDuelShopLockScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelShopLockScRsp.is_locked)
+    pub is_locked: bool,
     // message oneof groups
-    pub MGKEHFMCBBP: ::std::option::Option<chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP>,
+    pub OKAIINGCACL: ::std::option::Option<chimera_duel_shop_lock_sc_rsp::OKAIINGCACL>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelShopLockScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,82 +50,82 @@ impl ChimeraDuelShopLockScRsp {
         ::std::default::Default::default()
     }
 
-    // uint32 NPIEEKJOHEL = 1;
+    // uint32 OHIEJDLBBJE = 2;
 
-    pub fn NPIEEKJOHEL(&self) -> u32 {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::NPIEEKJOHEL(v)) => v,
+    pub fn OHIEJDLBBJE(&self) -> u32 {
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::OHIEJDLBBJE(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_NPIEEKJOHEL(&mut self) {
-        self.MGKEHFMCBBP = ::std::option::Option::None;
+    pub fn clear_OHIEJDLBBJE(&mut self) {
+        self.OKAIINGCACL = ::std::option::Option::None;
     }
 
-    pub fn has_NPIEEKJOHEL(&self) -> bool {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::NPIEEKJOHEL(..)) => true,
+    pub fn has_OHIEJDLBBJE(&self) -> bool {
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::OHIEJDLBBJE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_NPIEEKJOHEL(&mut self, v: u32) {
-        self.MGKEHFMCBBP = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::NPIEEKJOHEL(v))
+    pub fn set_OHIEJDLBBJE(&mut self, v: u32) {
+        self.OKAIINGCACL = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::OHIEJDLBBJE(v))
     }
 
-    // uint32 AHKFLEFOFPH = 10;
+    // uint32 CMPPLMBMIBA = 7;
 
-    pub fn AHKFLEFOFPH(&self) -> u32 {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::AHKFLEFOFPH(v)) => v,
+    pub fn CMPPLMBMIBA(&self) -> u32 {
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::CMPPLMBMIBA(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_AHKFLEFOFPH(&mut self) {
-        self.MGKEHFMCBBP = ::std::option::Option::None;
+    pub fn clear_CMPPLMBMIBA(&mut self) {
+        self.OKAIINGCACL = ::std::option::Option::None;
     }
 
-    pub fn has_AHKFLEFOFPH(&self) -> bool {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::AHKFLEFOFPH(..)) => true,
+    pub fn has_CMPPLMBMIBA(&self) -> bool {
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::CMPPLMBMIBA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_AHKFLEFOFPH(&mut self, v: u32) {
-        self.MGKEHFMCBBP = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::AHKFLEFOFPH(v))
+    pub fn set_CMPPLMBMIBA(&mut self, v: u32) {
+        self.OKAIINGCACL = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::CMPPLMBMIBA(v))
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_locked",
-            |m: &ChimeraDuelShopLockScRsp| { &m.is_locked },
-            |m: &mut ChimeraDuelShopLockScRsp| { &mut m.is_locked },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChimeraDuelShopLockScRsp| { &m.retcode },
             |m: &mut ChimeraDuelShopLockScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "NPIEEKJOHEL",
-            ChimeraDuelShopLockScRsp::has_NPIEEKJOHEL,
-            ChimeraDuelShopLockScRsp::NPIEEKJOHEL,
-            ChimeraDuelShopLockScRsp::set_NPIEEKJOHEL,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_locked",
+            |m: &ChimeraDuelShopLockScRsp| { &m.is_locked },
+            |m: &mut ChimeraDuelShopLockScRsp| { &mut m.is_locked },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "AHKFLEFOFPH",
-            ChimeraDuelShopLockScRsp::has_AHKFLEFOFPH,
-            ChimeraDuelShopLockScRsp::AHKFLEFOFPH,
-            ChimeraDuelShopLockScRsp::set_AHKFLEFOFPH,
+            "OHIEJDLBBJE",
+            ChimeraDuelShopLockScRsp::has_OHIEJDLBBJE,
+            ChimeraDuelShopLockScRsp::OHIEJDLBBJE,
+            ChimeraDuelShopLockScRsp::set_OHIEJDLBBJE,
         ));
-        oneofs.push(chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "CMPPLMBMIBA",
+            ChimeraDuelShopLockScRsp::has_CMPPLMBMIBA,
+            ChimeraDuelShopLockScRsp::CMPPLMBMIBA,
+            ChimeraDuelShopLockScRsp::set_CMPPLMBMIBA,
+        ));
+        oneofs.push(chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelShopLockScRsp>(
             "ChimeraDuelShopLockScRsp",
             fields,
@@ -144,17 +144,17 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.is_locked = is.read_bool()?;
-                },
-                56 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                8 => {
-                    self.MGKEHFMCBBP = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::NPIEEKJOHEL(is.read_uint32()?));
+                48 => {
+                    self.is_locked = is.read_bool()?;
                 },
-                80 => {
-                    self.MGKEHFMCBBP = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::AHKFLEFOFPH(is.read_uint32()?));
+                16 => {
+                    self.OKAIINGCACL = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::OHIEJDLBBJE(is.read_uint32()?));
+                },
+                56 => {
+                    self.OKAIINGCACL = ::std::option::Option::Some(chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::CMPPLMBMIBA(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -168,19 +168,19 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
         if self.is_locked != false {
             my_size += 1 + 1;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
-        if let ::std::option::Option::Some(ref v) = self.MGKEHFMCBBP {
+        if let ::std::option::Option::Some(ref v) = self.OKAIINGCACL {
             match v {
-                &chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::NPIEEKJOHEL(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1, v);
+                &chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::OHIEJDLBBJE(v) => {
+                    my_size += ::protobuf::rt::uint32_size(2, v);
                 },
-                &chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::AHKFLEFOFPH(v) => {
-                    my_size += ::protobuf::rt::uint32_size(10, v);
+                &chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::CMPPLMBMIBA(v) => {
+                    my_size += ::protobuf::rt::uint32_size(7, v);
                 },
             };
         }
@@ -190,19 +190,19 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_locked != false {
-            os.write_bool(8, self.is_locked)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.MGKEHFMCBBP {
+        if self.is_locked != false {
+            os.write_bool(6, self.is_locked)?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.OKAIINGCACL {
             match v {
-                &chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::NPIEEKJOHEL(v) => {
-                    os.write_uint32(1, v)?;
+                &chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::OHIEJDLBBJE(v) => {
+                    os.write_uint32(2, v)?;
                 },
-                &chimera_duel_shop_lock_sc_rsp::MGKEHFMCBBP::AHKFLEFOFPH(v) => {
-                    os.write_uint32(10, v)?;
+                &chimera_duel_shop_lock_sc_rsp::OKAIINGCACL::CMPPLMBMIBA(v) => {
+                    os.write_uint32(7, v)?;
                 },
             };
         }
@@ -223,18 +223,18 @@ impl ::protobuf::Message for ChimeraDuelShopLockScRsp {
     }
 
     fn clear(&mut self) {
-        self.is_locked = false;
         self.retcode = 0;
-        self.MGKEHFMCBBP = ::std::option::Option::None;
-        self.MGKEHFMCBBP = ::std::option::Option::None;
+        self.is_locked = false;
+        self.OKAIINGCACL = ::std::option::Option::None;
+        self.OKAIINGCACL = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelShopLockScRsp {
         static instance: ChimeraDuelShopLockScRsp = ChimeraDuelShopLockScRsp {
-            is_locked: false,
             retcode: 0,
-            MGKEHFMCBBP: ::std::option::Option::None,
+            is_locked: false,
+            OKAIINGCACL: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -263,37 +263,37 @@ pub mod chimera_duel_shop_lock_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ChimeraDuelShopLockScRsp.MGKEHFMCBBP)
-    pub enum MGKEHFMCBBP {
-        // @@protoc_insertion_point(oneof_field:ChimeraDuelShopLockScRsp.NPIEEKJOHEL)
-        NPIEEKJOHEL(u32),
-        // @@protoc_insertion_point(oneof_field:ChimeraDuelShopLockScRsp.AHKFLEFOFPH)
-        AHKFLEFOFPH(u32),
+    // @@protoc_insertion_point(oneof:ChimeraDuelShopLockScRsp.OKAIINGCACL)
+    pub enum OKAIINGCACL {
+        // @@protoc_insertion_point(oneof_field:ChimeraDuelShopLockScRsp.OHIEJDLBBJE)
+        OHIEJDLBBJE(u32),
+        // @@protoc_insertion_point(oneof_field:ChimeraDuelShopLockScRsp.CMPPLMBMIBA)
+        CMPPLMBMIBA(u32),
     }
 
-    impl ::protobuf::Oneof for MGKEHFMCBBP {
+    impl ::protobuf::Oneof for OKAIINGCACL {
     }
 
-    impl ::protobuf::OneofFull for MGKEHFMCBBP {
+    impl ::protobuf::OneofFull for OKAIINGCACL {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ChimeraDuelShopLockScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("MGKEHFMCBBP").unwrap()).clone()
+            descriptor.get(|| <super::ChimeraDuelShopLockScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("OKAIINGCACL").unwrap()).clone()
         }
     }
 
-    impl MGKEHFMCBBP {
+    impl OKAIINGCACL {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MGKEHFMCBBP>("MGKEHFMCBBP")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OKAIINGCACL>("OKAIINGCACL")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eChimeraDuelShopLockScRsp.proto\"\xa8\x01\n\x18ChimeraDuelShopLockS\
-    cRsp\x12\x1b\n\tis_locked\x18\x08\x20\x01(\x08R\x08isLocked\x12\x18\n\
-    \x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\"\n\x0bNPIEEKJOHEL\x18\
-    \x01\x20\x01(\rH\0R\x0bNPIEEKJOHEL\x12\"\n\x0bAHKFLEFOFPH\x18\n\x20\x01(\
-    \rH\0R\x0bAHKFLEFOFPHB\r\n\x0bMGKEHFMCBBPb\x06proto3\
+    cRsp\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x1b\n\tis_l\
+    ocked\x18\x06\x20\x01(\x08R\x08isLocked\x12\"\n\x0bOHIEJDLBBJE\x18\x02\
+    \x20\x01(\rH\0R\x0bOHIEJDLBBJE\x12\"\n\x0bCMPPLMBMIBA\x18\x07\x20\x01(\r\
+    H\0R\x0bCMPPLMBMIBAB\r\n\x0bOKAIINGCACLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

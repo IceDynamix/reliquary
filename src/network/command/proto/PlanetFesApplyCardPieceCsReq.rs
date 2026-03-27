@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesApplyCardPieceCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesApplyCardPieceCsReq.GEGACHAEJFO)
-    pub GEGACHAEJFO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PlanetFesApplyCardPieceCsReq.OIONCOBAODK)
-    pub OIONCOBAODK: u32,
+    // @@protoc_insertion_point(field:PlanetFesApplyCardPieceCsReq.FDHEHLIKAJC)
+    pub FDHEHLIKAJC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PlanetFesApplyCardPieceCsReq.LEKGBKGDIDA)
+    pub LEKGBKGDIDA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesApplyCardPieceCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PlanetFesApplyCardPieceCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GEGACHAEJFO",
-            |m: &PlanetFesApplyCardPieceCsReq| { &m.GEGACHAEJFO },
-            |m: &mut PlanetFesApplyCardPieceCsReq| { &mut m.GEGACHAEJFO },
+            "FDHEHLIKAJC",
+            |m: &PlanetFesApplyCardPieceCsReq| { &m.FDHEHLIKAJC },
+            |m: &mut PlanetFesApplyCardPieceCsReq| { &mut m.FDHEHLIKAJC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OIONCOBAODK",
-            |m: &PlanetFesApplyCardPieceCsReq| { &m.OIONCOBAODK },
-            |m: &mut PlanetFesApplyCardPieceCsReq| { &mut m.OIONCOBAODK },
+            "LEKGBKGDIDA",
+            |m: &PlanetFesApplyCardPieceCsReq| { &m.LEKGBKGDIDA },
+            |m: &mut PlanetFesApplyCardPieceCsReq| { &mut m.LEKGBKGDIDA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesApplyCardPieceCsReq>(
             "PlanetFesApplyCardPieceCsReq",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for PlanetFesApplyCardPieceCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GEGACHAEJFO)?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FDHEHLIKAJC)?;
                 },
-                56 => {
-                    self.GEGACHAEJFO.push(is.read_uint32()?);
+                48 => {
+                    self.FDHEHLIKAJC.push(is.read_uint32()?);
                 },
-                80 => {
-                    self.OIONCOBAODK = is.read_uint32()?;
+                40 => {
+                    self.LEKGBKGDIDA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,9 +100,9 @@ impl ::protobuf::Message for PlanetFesApplyCardPieceCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.GEGACHAEJFO);
-        if self.OIONCOBAODK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.OIONCOBAODK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.FDHEHLIKAJC);
+        if self.LEKGBKGDIDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.LEKGBKGDIDA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for PlanetFesApplyCardPieceCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.GEGACHAEJFO)?;
-        if self.OIONCOBAODK != 0 {
-            os.write_uint32(10, self.OIONCOBAODK)?;
+        os.write_repeated_packed_uint32(6, &self.FDHEHLIKAJC)?;
+        if self.LEKGBKGDIDA != 0 {
+            os.write_uint32(5, self.LEKGBKGDIDA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -131,15 +131,15 @@ impl ::protobuf::Message for PlanetFesApplyCardPieceCsReq {
     }
 
     fn clear(&mut self) {
-        self.GEGACHAEJFO.clear();
-        self.OIONCOBAODK = 0;
+        self.FDHEHLIKAJC.clear();
+        self.LEKGBKGDIDA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesApplyCardPieceCsReq {
         static instance: PlanetFesApplyCardPieceCsReq = PlanetFesApplyCardPieceCsReq {
-            GEGACHAEJFO: ::std::vec::Vec::new(),
-            OIONCOBAODK: 0,
+            FDHEHLIKAJC: ::std::vec::Vec::new(),
+            LEKGBKGDIDA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesApplyCardPieceCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"PlanetFesApplyCardPieceCsReq.proto\"b\n\x1cPlanetFesApplyCardPieceCs\
-    Req\x12\x20\n\x0bGEGACHAEJFO\x18\x07\x20\x03(\rR\x0bGEGACHAEJFO\x12\x20\
-    \n\x0bOIONCOBAODK\x18\n\x20\x01(\rR\x0bOIONCOBAODKb\x06proto3\
+    Req\x12\x20\n\x0bFDHEHLIKAJC\x18\x06\x20\x03(\rR\x0bFDHEHLIKAJC\x12\x20\
+    \n\x0bLEKGBKGDIDA\x18\x05\x20\x01(\rR\x0bLEKGBKGDIDAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct SetRelicBoxTargetScRsp {
     // message fields
     // @@protoc_insertion_point(field:SetRelicBoxTargetScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetRelicBoxTargetScRsp.NMLFMPNOIOM)
-    pub NMLFMPNOIOM: ::protobuf::MessageField<super::HKMIPGCMMNC::HKMIPGCMMNC>,
+    // @@protoc_insertion_point(field:SetRelicBoxTargetScRsp.OHCIEIHHKAL)
+    pub OHCIEIHHKAL: ::protobuf::MessageField<super::NADGCMCDBCI::NADGCMCDBCI>,
     // special fields
     // @@protoc_insertion_point(special_field:SetRelicBoxTargetScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,10 +56,10 @@ impl SetRelicBoxTargetScRsp {
             |m: &SetRelicBoxTargetScRsp| { &m.retcode },
             |m: &mut SetRelicBoxTargetScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HKMIPGCMMNC::HKMIPGCMMNC>(
-            "NMLFMPNOIOM",
-            |m: &SetRelicBoxTargetScRsp| { &m.NMLFMPNOIOM },
-            |m: &mut SetRelicBoxTargetScRsp| { &mut m.NMLFMPNOIOM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NADGCMCDBCI::NADGCMCDBCI>(
+            "OHCIEIHHKAL",
+            |m: &SetRelicBoxTargetScRsp| { &m.OHCIEIHHKAL },
+            |m: &mut SetRelicBoxTargetScRsp| { &mut m.OHCIEIHHKAL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetRelicBoxTargetScRsp>(
             "SetRelicBoxTargetScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SetRelicBoxTargetScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NMLFMPNOIOM)?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OHCIEIHHKAL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for SetRelicBoxTargetScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if let Some(v) = self.NMLFMPNOIOM.as_ref() {
+        if let Some(v) = self.OHCIEIHHKAL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,10 +111,10 @@ impl ::protobuf::Message for SetRelicBoxTargetScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        if let Some(v) = self.NMLFMPNOIOM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.OHCIEIHHKAL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for SetRelicBoxTargetScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.NMLFMPNOIOM.clear();
+        self.OHCIEIHHKAL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRelicBoxTargetScRsp {
         static instance: SetRelicBoxTargetScRsp = SetRelicBoxTargetScRsp {
             retcode: 0,
-            NMLFMPNOIOM: ::protobuf::MessageField::none(),
+            OHCIEIHHKAL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for SetRelicBoxTargetScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cSetRelicBoxTargetScRsp.proto\x1a\x11HKMIPGCMMNC.proto\"b\n\x16SetR\
-    elicBoxTargetScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bNMLFMPNOIOM\x18\x03\x20\x01(\x0b2\x0c.HKMIPGCMMNCR\x0bNMLFMPN\
-    OIOMb\x06proto3\
+    \n\x1cSetRelicBoxTargetScRsp.proto\x1a\x11NADGCMCDBCI.proto\"b\n\x16SetR\
+    elicBoxTargetScRsp\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bOHCIEIHHKAL\x18\x01\x20\x01(\x0b2\x0c.NADGCMCDBCIR\x0bOHCIEIH\
+    HKALb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HKMIPGCMMNC::file_descriptor().clone());
+            deps.push(super::NADGCMCDBCI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetRelicBoxTargetScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

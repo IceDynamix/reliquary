@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ActiveActivityDataChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ActiveActivityDataChangeScNotify.JBCKMDNNNOA)
-    pub JBCKMDNNNOA: ::protobuf::MessageField<super::ActiveActivityData::ActiveActivityData>,
+    // @@protoc_insertion_point(field:ActiveActivityDataChangeScNotify.DIBCAANBOLH)
+    pub DIBCAANBOLH: ::protobuf::MessageField<super::ActiveActivityData::ActiveActivityData>,
     // special fields
     // @@protoc_insertion_point(special_field:ActiveActivityDataChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ActiveActivityDataChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ActiveActivityData::ActiveActivityData>(
-            "JBCKMDNNNOA",
-            |m: &ActiveActivityDataChangeScNotify| { &m.JBCKMDNNNOA },
-            |m: &mut ActiveActivityDataChangeScNotify| { &mut m.JBCKMDNNNOA },
+            "DIBCAANBOLH",
+            |m: &ActiveActivityDataChangeScNotify| { &m.DIBCAANBOLH },
+            |m: &mut ActiveActivityDataChangeScNotify| { &mut m.DIBCAANBOLH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ActiveActivityDataChangeScNotify>(
             "ActiveActivityDataChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ActiveActivityDataChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JBCKMDNNNOA)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DIBCAANBOLH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ActiveActivityDataChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JBCKMDNNNOA.as_ref() {
+        if let Some(v) = self.DIBCAANBOLH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for ActiveActivityDataChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JBCKMDNNNOA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if let Some(v) = self.DIBCAANBOLH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ActiveActivityDataChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.JBCKMDNNNOA.clear();
+        self.DIBCAANBOLH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActiveActivityDataChangeScNotify {
         static instance: ActiveActivityDataChangeScNotify = ActiveActivityDataChangeScNotify {
-            JBCKMDNNNOA: ::protobuf::MessageField::none(),
+            DIBCAANBOLH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for ActiveActivityDataChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&ActiveActivityDataChangeScNotify.proto\x1a\x18ActiveActivityData.prot\
-    o\"Y\n\x20ActiveActivityDataChangeScNotify\x125\n\x0bJBCKMDNNNOA\x18\r\
-    \x20\x01(\x0b2\x13.ActiveActivityDataR\x0bJBCKMDNNNOAb\x06proto3\
+    o\"Y\n\x20ActiveActivityDataChangeScNotify\x125\n\x0bDIBCAANBOLH\x18\x0f\
+    \x20\x01(\x0b2\x13.ActiveActivityDataR\x0bDIBCAANBOLHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncRogueCommonDialogueDataScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncRogueCommonDialogueDataScNotify.BNFFHEBDALD)
-    pub BNFFHEBDALD: ::std::vec::Vec<super::OPNOFJFJECJ::OPNOFJFJECJ>,
+    // @@protoc_insertion_point(field:SyncRogueCommonDialogueDataScNotify.KAAFMMOJJFE)
+    pub KAAFMMOJJFE: ::std::vec::Vec<super::HNKBJGFLCME::HNKBJGFLCME>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncRogueCommonDialogueDataScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncRogueCommonDialogueDataScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BNFFHEBDALD",
-            |m: &SyncRogueCommonDialogueDataScNotify| { &m.BNFFHEBDALD },
-            |m: &mut SyncRogueCommonDialogueDataScNotify| { &mut m.BNFFHEBDALD },
+            "KAAFMMOJJFE",
+            |m: &SyncRogueCommonDialogueDataScNotify| { &m.KAAFMMOJJFE },
+            |m: &mut SyncRogueCommonDialogueDataScNotify| { &mut m.KAAFMMOJJFE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncRogueCommonDialogueDataScNotify>(
             "SyncRogueCommonDialogueDataScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncRogueCommonDialogueDataScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.BNFFHEBDALD.push(is.read_message()?);
+                66 => {
+                    self.KAAFMMOJJFE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncRogueCommonDialogueDataScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BNFFHEBDALD {
+        for value in &self.KAAFMMOJJFE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncRogueCommonDialogueDataScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BNFFHEBDALD {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.KAAFMMOJJFE {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncRogueCommonDialogueDataScNotify {
     }
 
     fn clear(&mut self) {
-        self.BNFFHEBDALD.clear();
+        self.KAAFMMOJJFE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncRogueCommonDialogueDataScNotify {
         static instance: SyncRogueCommonDialogueDataScNotify = SyncRogueCommonDialogueDataScNotify {
-            BNFFHEBDALD: ::std::vec::Vec::new(),
+            KAAFMMOJJFE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncRogueCommonDialogueDataScNotify 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)SyncRogueCommonDialogueDataScNotify.proto\x1a\x11OPNOFJFJECJ.proto\"U\
-    \n#SyncRogueCommonDialogueDataScNotify\x12.\n\x0bBNFFHEBDALD\x18\r\x20\
-    \x03(\x0b2\x0c.OPNOFJFJECJR\x0bBNFFHEBDALDb\x06proto3\
+    \n)SyncRogueCommonDialogueDataScNotify.proto\x1a\x11HNKBJGFLCME.proto\"U\
+    \n#SyncRogueCommonDialogueDataScNotify\x12.\n\x0bKAAFMMOJJFE\x18\x08\x20\
+    \x03(\x0b2\x0c.HNKBJGFLCMER\x0bKAAFMMOJJFEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OPNOFJFJECJ::file_descriptor().clone());
+            deps.push(super::HNKBJGFLCME::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncRogueCommonDialogueDataScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

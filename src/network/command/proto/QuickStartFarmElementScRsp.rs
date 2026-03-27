@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct QuickStartFarmElementScRsp {
     // message fields
+    // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.CMFPEABAKPB)
+    pub CMFPEABAKPB: u32,
     // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.COBCONOPIAP)
-    pub COBCONOPIAP: u32,
     // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.world_level)
     pub world_level: u32,
     // @@protoc_insertion_point(field:QuickStartFarmElementScRsp.battle_info)
@@ -56,14 +56,14 @@ impl QuickStartFarmElementScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CMFPEABAKPB",
+            |m: &QuickStartFarmElementScRsp| { &m.CMFPEABAKPB },
+            |m: &mut QuickStartFarmElementScRsp| { &mut m.CMFPEABAKPB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &QuickStartFarmElementScRsp| { &m.retcode },
             |m: &mut QuickStartFarmElementScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COBCONOPIAP",
-            |m: &QuickStartFarmElementScRsp| { &m.COBCONOPIAP },
-            |m: &mut QuickStartFarmElementScRsp| { &mut m.COBCONOPIAP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "world_level",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                88 => {
+                    self.CMFPEABAKPB = is.read_uint32()?;
+                },
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
-                    self.COBCONOPIAP = is.read_uint32()?;
-                },
-                24 => {
+                16 => {
                     self.world_level = is.read_uint32()?;
                 },
-                90 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
                 tag => {
@@ -117,14 +117,14 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        if self.CMFPEABAKPB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CMFPEABAKPB);
         }
-        if self.COBCONOPIAP != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.COBCONOPIAP);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(2, self.world_level);
         }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
@@ -136,17 +136,17 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+        if self.CMFPEABAKPB != 0 {
+            os.write_uint32(11, self.CMFPEABAKPB)?;
         }
-        if self.COBCONOPIAP != 0 {
-            os.write_uint32(13, self.COBCONOPIAP)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(3, self.world_level)?;
+            os.write_uint32(2, self.world_level)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
     }
 
     fn clear(&mut self) {
+        self.CMFPEABAKPB = 0;
         self.retcode = 0;
-        self.COBCONOPIAP = 0;
         self.world_level = 0;
         self.battle_info.clear();
         self.special_fields.clear();
@@ -174,8 +174,8 @@ impl ::protobuf::Message for QuickStartFarmElementScRsp {
 
     fn default_instance() -> &'static QuickStartFarmElementScRsp {
         static instance: QuickStartFarmElementScRsp = QuickStartFarmElementScRsp {
+            CMFPEABAKPB: 0,
             retcode: 0,
-            COBCONOPIAP: 0,
             world_level: 0,
             battle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -203,11 +203,11 @@ impl ::protobuf::reflect::ProtobufValue for QuickStartFarmElementScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20QuickStartFarmElementScRsp.proto\x1a\x15SceneBattleInfo.proto\"\
-    \xac\x01\n\x1aQuickStartFarmElementScRsp\x12\x18\n\x07retcode\x18\x08\
-    \x20\x01(\rR\x07retcode\x12\x20\n\x0bCOBCONOPIAP\x18\r\x20\x01(\rR\x0bCO\
-    BCONOPIAP\x12\x1f\n\x0bworld_level\x18\x03\x20\x01(\rR\nworldLevel\x121\
-    \n\x0bbattle_info\x18\x0b\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfo\
-    b\x06proto3\
+    \xac\x01\n\x1aQuickStartFarmElementScRsp\x12\x20\n\x0bCMFPEABAKPB\x18\
+    \x0b\x20\x01(\rR\x0bCMFPEABAKPB\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\
+    \x07retcode\x12\x1f\n\x0bworld_level\x18\x02\x20\x01(\rR\nworldLevel\x12\
+    1\n\x0bbattle_info\x18\x0f\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInf\
+    ob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

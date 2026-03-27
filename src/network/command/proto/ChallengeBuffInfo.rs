@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeBuffInfo {
     // message oneof groups
-    pub MGKEHFMCBBP: ::std::option::Option<challenge_buff_info::MGKEHFMCBBP>,
+    pub OKAIINGCACL: ::std::option::Option<challenge_buff_info::OKAIINGCACL>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeBuffInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl ChallengeBuffInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStoryBuffInfo story_info = 6;
+    // .ChallengeStoryBuffInfo story_info = 9;
 
     pub fn story_info(&self) -> &super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::StoryInfo(ref v)) => v,
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::StoryInfo(ref v)) => v,
             _ => <super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_story_info(&mut self) {
-        self.MGKEHFMCBBP = ::std::option::Option::None;
+        self.OKAIINGCACL = ::std::option::Option::None;
     }
 
     pub fn has_story_info(&self) -> bool {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::StoryInfo(..)) => true,
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::StoryInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_story_info(&mut self, v: super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo) {
-        self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::StoryInfo(v))
+        self.OKAIINGCACL = ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::StoryInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_story_info(&mut self) -> &mut super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
-        if let ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::StoryInfo(_)) = self.MGKEHFMCBBP {
+        if let ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::StoryInfo(_)) = self.OKAIINGCACL {
         } else {
-            self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::StoryInfo(super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo::new()));
+            self.OKAIINGCACL = ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::StoryInfo(super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo::new()));
         }
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::StoryInfo(ref mut v)) => v,
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::StoryInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl ChallengeBuffInfo {
     // Take field
     pub fn take_story_info(&mut self) -> super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo {
         if self.has_story_info() {
-            match self.MGKEHFMCBBP.take() {
-                ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::StoryInfo(v)) => v,
+            match self.OKAIINGCACL.take() {
+                ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::StoryInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl ChallengeBuffInfo {
         }
     }
 
-    // .ChallengeBossBuffInfo boss_info = 1;
+    // .ChallengeBossBuffInfo boss_info = 2;
 
     pub fn boss_info(&self) -> &super::ChallengeBossBuffInfo::ChallengeBossBuffInfo {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::BossInfo(ref v)) => v,
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::BossInfo(ref v)) => v,
             _ => <super::ChallengeBossBuffInfo::ChallengeBossBuffInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_boss_info(&mut self) {
-        self.MGKEHFMCBBP = ::std::option::Option::None;
+        self.OKAIINGCACL = ::std::option::Option::None;
     }
 
     pub fn has_boss_info(&self) -> bool {
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::BossInfo(..)) => true,
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::BossInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_boss_info(&mut self, v: super::ChallengeBossBuffInfo::ChallengeBossBuffInfo) {
-        self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::BossInfo(v))
+        self.OKAIINGCACL = ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::BossInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_boss_info(&mut self) -> &mut super::ChallengeBossBuffInfo::ChallengeBossBuffInfo {
-        if let ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::BossInfo(_)) = self.MGKEHFMCBBP {
+        if let ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::BossInfo(_)) = self.OKAIINGCACL {
         } else {
-            self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::BossInfo(super::ChallengeBossBuffInfo::ChallengeBossBuffInfo::new()));
+            self.OKAIINGCACL = ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::BossInfo(super::ChallengeBossBuffInfo::ChallengeBossBuffInfo::new()));
         }
-        match self.MGKEHFMCBBP {
-            ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::BossInfo(ref mut v)) => v,
+        match self.OKAIINGCACL {
+            ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::BossInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl ChallengeBuffInfo {
     // Take field
     pub fn take_boss_info(&mut self) -> super::ChallengeBossBuffInfo::ChallengeBossBuffInfo {
         if self.has_boss_info() {
-            match self.MGKEHFMCBBP.take() {
-                ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::BossInfo(v)) => v,
+            match self.OKAIINGCACL.take() {
+                ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::BossInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl ChallengeBuffInfo {
             ChallengeBuffInfo::mut_boss_info,
             ChallengeBuffInfo::set_boss_info,
         ));
-        oneofs.push(challenge_buff_info::MGKEHFMCBBP::generated_oneof_descriptor_data());
+        oneofs.push(challenge_buff_info::OKAIINGCACL::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeBuffInfo>(
             "ChallengeBuffInfo",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::StoryInfo(is.read_message()?));
+                74 => {
+                    self.OKAIINGCACL = ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::StoryInfo(is.read_message()?));
                 },
-                10 => {
-                    self.MGKEHFMCBBP = ::std::option::Option::Some(challenge_buff_info::MGKEHFMCBBP::BossInfo(is.read_message()?));
+                18 => {
+                    self.OKAIINGCACL = ::std::option::Option::Some(challenge_buff_info::OKAIINGCACL::BossInfo(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.MGKEHFMCBBP {
+        if let ::std::option::Option::Some(ref v) = self.OKAIINGCACL {
             match v {
-                &challenge_buff_info::MGKEHFMCBBP::StoryInfo(ref v) => {
+                &challenge_buff_info::OKAIINGCACL::StoryInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &challenge_buff_info::MGKEHFMCBBP::BossInfo(ref v) => {
+                &challenge_buff_info::OKAIINGCACL::BossInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.MGKEHFMCBBP {
+        if let ::std::option::Option::Some(ref v) = self.OKAIINGCACL {
             match v {
-                &challenge_buff_info::MGKEHFMCBBP::StoryInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+                &challenge_buff_info::OKAIINGCACL::StoryInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
-                &challenge_buff_info::MGKEHFMCBBP::BossInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+                &challenge_buff_info::OKAIINGCACL::BossInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for ChallengeBuffInfo {
     }
 
     fn clear(&mut self) {
-        self.MGKEHFMCBBP = ::std::option::Option::None;
-        self.MGKEHFMCBBP = ::std::option::Option::None;
+        self.OKAIINGCACL = ::std::option::Option::None;
+        self.OKAIINGCACL = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeBuffInfo {
         static instance: ChallengeBuffInfo = ChallengeBuffInfo {
-            MGKEHFMCBBP: ::std::option::Option::None,
+            OKAIINGCACL: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,27 +278,27 @@ pub mod challenge_buff_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ChallengeBuffInfo.MGKEHFMCBBP)
-    pub enum MGKEHFMCBBP {
+    // @@protoc_insertion_point(oneof:ChallengeBuffInfo.OKAIINGCACL)
+    pub enum OKAIINGCACL {
         // @@protoc_insertion_point(oneof_field:ChallengeBuffInfo.story_info)
         StoryInfo(super::super::ChallengeStoryBuffInfo::ChallengeStoryBuffInfo),
         // @@protoc_insertion_point(oneof_field:ChallengeBuffInfo.boss_info)
         BossInfo(super::super::ChallengeBossBuffInfo::ChallengeBossBuffInfo),
     }
 
-    impl ::protobuf::Oneof for MGKEHFMCBBP {
+    impl ::protobuf::Oneof for OKAIINGCACL {
     }
 
-    impl ::protobuf::OneofFull for MGKEHFMCBBP {
+    impl ::protobuf::OneofFull for OKAIINGCACL {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ChallengeBuffInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("MGKEHFMCBBP").unwrap()).clone()
+            descriptor.get(|| <super::ChallengeBuffInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("OKAIINGCACL").unwrap()).clone()
         }
     }
 
-    impl MGKEHFMCBBP {
+    impl OKAIINGCACL {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MGKEHFMCBBP>("MGKEHFMCBBP")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OKAIINGCACL>("OKAIINGCACL")
         }
     }
 }
@@ -306,9 +306,9 @@ pub mod challenge_buff_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ChallengeBuffInfo.proto\x1a\x1bChallengeBossBuffInfo.proto\x1a\x1c\
     ChallengeStoryBuffInfo.proto\"\x93\x01\n\x11ChallengeBuffInfo\x128\n\nst\
-    ory_info\x18\x06\x20\x01(\x0b2\x17.ChallengeStoryBuffInfoH\0R\tstoryInfo\
-    \x125\n\tboss_info\x18\x01\x20\x01(\x0b2\x16.ChallengeBossBuffInfoH\0R\
-    \x08bossInfoB\r\n\x0bMGKEHFMCBBPb\x06proto3\
+    ory_info\x18\t\x20\x01(\x0b2\x17.ChallengeStoryBuffInfoH\0R\tstoryInfo\
+    \x125\n\tboss_info\x18\x02\x20\x01(\x0b2\x16.ChallengeBossBuffInfoH\0R\
+    \x08bossInfoB\r\n\x0bOKAIINGCACLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

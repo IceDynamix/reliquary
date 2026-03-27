@@ -30,10 +30,10 @@ pub struct CityShopInfoScNotify {
     // message fields
     // @@protoc_insertion_point(field:CityShopInfoScNotify.taken_level_reward)
     pub taken_level_reward: u64,
-    // @@protoc_insertion_point(field:CityShopInfoScNotify.shop_id)
-    pub shop_id: u32,
     // @@protoc_insertion_point(field:CityShopInfoScNotify.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:CityShopInfoScNotify.shop_id)
+    pub shop_id: u32,
     // @@protoc_insertion_point(field:CityShopInfoScNotify.exp)
     pub exp: u32,
     // special fields
@@ -61,14 +61,14 @@ impl CityShopInfoScNotify {
             |m: &mut CityShopInfoScNotify| { &mut m.taken_level_reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "shop_id",
-            |m: &CityShopInfoScNotify| { &m.shop_id },
-            |m: &mut CityShopInfoScNotify| { &mut m.shop_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &CityShopInfoScNotify| { &m.level },
             |m: &mut CityShopInfoScNotify| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "shop_id",
+            |m: &CityShopInfoScNotify| { &m.shop_id },
+            |m: &mut CityShopInfoScNotify| { &mut m.shop_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "exp",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for CityShopInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                24 => {
                     self.taken_level_reward = is.read_uint64()?;
                 },
-                56 => {
-                    self.shop_id = is.read_uint32()?;
-                },
-                24 => {
+                104 => {
                     self.level = is.read_uint32()?;
                 },
-                120 => {
+                72 => {
+                    self.shop_id = is.read_uint32()?;
+                },
+                80 => {
                     self.exp = is.read_uint32()?;
                 },
                 tag => {
@@ -118,16 +118,16 @@ impl ::protobuf::Message for CityShopInfoScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.taken_level_reward != 0 {
-            my_size += ::protobuf::rt::uint64_size(1, self.taken_level_reward);
-        }
-        if self.shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.shop_id);
+            my_size += ::protobuf::rt::uint64_size(3, self.taken_level_reward);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
+            my_size += ::protobuf::rt::uint32_size(13, self.level);
+        }
+        if self.shop_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.shop_id);
         }
         if self.exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.exp);
+            my_size += ::protobuf::rt::uint32_size(10, self.exp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for CityShopInfoScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.taken_level_reward != 0 {
-            os.write_uint64(1, self.taken_level_reward)?;
-        }
-        if self.shop_id != 0 {
-            os.write_uint32(7, self.shop_id)?;
+            os.write_uint64(3, self.taken_level_reward)?;
         }
         if self.level != 0 {
-            os.write_uint32(3, self.level)?;
+            os.write_uint32(13, self.level)?;
+        }
+        if self.shop_id != 0 {
+            os.write_uint32(9, self.shop_id)?;
         }
         if self.exp != 0 {
-            os.write_uint32(15, self.exp)?;
+            os.write_uint32(10, self.exp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,8 +165,8 @@ impl ::protobuf::Message for CityShopInfoScNotify {
 
     fn clear(&mut self) {
         self.taken_level_reward = 0;
-        self.shop_id = 0;
         self.level = 0;
+        self.shop_id = 0;
         self.exp = 0;
         self.special_fields.clear();
     }
@@ -174,8 +174,8 @@ impl ::protobuf::Message for CityShopInfoScNotify {
     fn default_instance() -> &'static CityShopInfoScNotify {
         static instance: CityShopInfoScNotify = CityShopInfoScNotify {
             taken_level_reward: 0,
-            shop_id: 0,
             level: 0,
+            shop_id: 0,
             exp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for CityShopInfoScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aCityShopInfoScNotify.proto\"\x85\x01\n\x14CityShopInfoScNotify\x12\
-    ,\n\x12taken_level_reward\x18\x01\x20\x01(\x04R\x10takenLevelReward\x12\
-    \x17\n\x07shop_id\x18\x07\x20\x01(\rR\x06shopId\x12\x14\n\x05level\x18\
-    \x03\x20\x01(\rR\x05level\x12\x10\n\x03exp\x18\x0f\x20\x01(\rR\x03expb\
-    \x06proto3\
+    ,\n\x12taken_level_reward\x18\x03\x20\x01(\x04R\x10takenLevelReward\x12\
+    \x14\n\x05level\x18\r\x20\x01(\rR\x05level\x12\x17\n\x07shop_id\x18\t\
+    \x20\x01(\rR\x06shopId\x12\x10\n\x03exp\x18\n\x20\x01(\rR\x03expb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

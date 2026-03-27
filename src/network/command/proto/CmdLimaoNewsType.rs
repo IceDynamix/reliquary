@@ -27,58 +27,58 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdLimaoNewsType)
 pub enum CmdLimaoNewsType {
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_GKJBAODJMJG)
-    EFJNJPLFPNN_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_NGLGCBDPJAN)
-    EFJNJPLFPNN_NGLGCBDPJAN = 9195,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_KGOMNIPFHGK)
-    EFJNJPLFPNN_KGOMNIPFHGK = 9198,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_ELPMMHCLOHK)
-    EFJNJPLFPNN_ELPMMHCLOHK = 9210,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_MAAJKACOLHJ)
-    EFJNJPLFPNN_MAAJKACOLHJ = 9205,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_BLBLCFLODGF)
-    EFJNJPLFPNN_BLBLCFLODGF = 9192,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_NGDPPMLNGOM)
-    EFJNJPLFPNN_NGDPPMLNGOM = 9189,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_BNHGJPOFGFH)
-    EFJNJPLFPNN_BNHGJPOFGFH = 9193,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_OLOELPKNHPM)
-    EFJNJPLFPNN_OLOELPKNHPM = 9184,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_PBLFJDPDFBC)
-    EFJNJPLFPNN_PBLFJDPDFBC = 9183,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_LHCGDLIOHED)
-    EFJNJPLFPNN_LHCGDLIOHED = 9207,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_LFBIMLKEAPC)
-    EFJNJPLFPNN_LFBIMLKEAPC = 9181,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_NFJGBLMINFJ)
-    EFJNJPLFPNN_NFJGBLMINFJ = 9203,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_ODIPKFAKFEK)
-    EFJNJPLFPNN_ODIPKFAKFEK = 9186,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_KGLDDFPHAKH)
-    EFJNJPLFPNN_KGLDDFPHAKH = 9191,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_KCGHNGLFMLN)
-    EFJNJPLFPNN_KCGHNGLFMLN = 9196,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_CNHPEAJNHHH)
-    EFJNJPLFPNN_CNHPEAJNHHH = 9187,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_DFCBGOJNGCM)
-    EFJNJPLFPNN_DFCBGOJNGCM = 9202,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_IJICNLAHJCJ)
-    EFJNJPLFPNN_IJICNLAHJCJ = 9199,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_CBILKHKBFDL)
-    EFJNJPLFPNN_CBILKHKBFDL = 9200,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_LLINAAFKEJE)
-    EFJNJPLFPNN_LLINAAFKEJE = 9206,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_HEELOAPLJKF)
-    EFJNJPLFPNN_HEELOAPLJKF = 9209,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_HOBCDDPDKMG)
-    EFJNJPLFPNN_HOBCDDPDKMG = 9204,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_AEBBBBNGFEI)
-    EFJNJPLFPNN_AEBBBBNGFEI = 9208,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_CKINCKMMHKH)
-    EFJNJPLFPNN_CKINCKMMHKH = 9197,
-    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.EFJNJPLFPNN_KDHLOMCILGE)
-    EFJNJPLFPNN_KDHLOMCILGE = 9190,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_MNFEPONEDDJ)
+    CmdLimaoNewsType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_PAOAKHCFNEK)
+    CmdLimaoNewsType_PAOAKHCFNEK = 9206,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_PECPOPFELOG)
+    CmdLimaoNewsType_PECPOPFELOG = 9197,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_MKGHBDOJINP)
+    CmdLimaoNewsType_MKGHBDOJINP = 9205,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_ALJAMNFFMFF)
+    CmdLimaoNewsType_ALJAMNFFMFF = 9187,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_JAHDPBDOOBG)
+    CmdLimaoNewsType_JAHDPBDOOBG = 9202,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_EKPGIFABGAI)
+    CmdLimaoNewsType_EKPGIFABGAI = 9195,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_EFIGLBIFLCH)
+    CmdLimaoNewsType_EFIGLBIFLCH = 9190,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_AMDECIDIEIP)
+    CmdLimaoNewsType_AMDECIDIEIP = 9210,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_DCMDFEBBJIJ)
+    CmdLimaoNewsType_DCMDFEBBJIJ = 9189,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_DPHHHIIAKFP)
+    CmdLimaoNewsType_DPHHHIIAKFP = 9201,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_HFEPMJDMPDA)
+    CmdLimaoNewsType_HFEPMJDMPDA = 9184,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_BINPNOFPNCH)
+    CmdLimaoNewsType_BINPNOFPNCH = 9191,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_ABEAHAFHDIM)
+    CmdLimaoNewsType_ABEAHAFHDIM = 9200,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_KDHCEICDPDG)
+    CmdLimaoNewsType_KDHCEICDPDG = 9209,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_GGBDENMFPKM)
+    CmdLimaoNewsType_GGBDENMFPKM = 9194,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_EGFFHOPEFPH)
+    CmdLimaoNewsType_EGFFHOPEFPH = 9199,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_AHOMOCOILNM)
+    CmdLimaoNewsType_AHOMOCOILNM = 9196,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_HOOKLFFKCKD)
+    CmdLimaoNewsType_HOOKLFFKCKD = 9181,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_CCLFAAENIKH)
+    CmdLimaoNewsType_CCLFAAENIKH = 9185,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_MAKHHFJOLFJ)
+    CmdLimaoNewsType_MAKHHFJOLFJ = 9207,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_GGLABJIONIA)
+    CmdLimaoNewsType_GGLABJIONIA = 9192,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_KBHAILJLKAO)
+    CmdLimaoNewsType_KBHAILJLKAO = 9193,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_FOKBKEPEOAG)
+    CmdLimaoNewsType_FOKBKEPEOAG = 9186,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_NIOOOGJBIFA)
+    CmdLimaoNewsType_NIOOOGJBIFA = 9183,
+    // @@protoc_insertion_point(enum_value:CmdLimaoNewsType.CmdLimaoNewsType_ADKOPDJIIFF)
+    CmdLimaoNewsType_ADKOPDJIIFF = 9182,
 }
 
 impl ::protobuf::Enum for CmdLimaoNewsType {
@@ -90,95 +90,95 @@ impl ::protobuf::Enum for CmdLimaoNewsType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdLimaoNewsType> {
         match value {
-            0 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_GKJBAODJMJG),
-            9195 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_NGLGCBDPJAN),
-            9198 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_KGOMNIPFHGK),
-            9210 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_ELPMMHCLOHK),
-            9205 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_MAAJKACOLHJ),
-            9192 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_BLBLCFLODGF),
-            9189 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_NGDPPMLNGOM),
-            9193 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_BNHGJPOFGFH),
-            9184 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_OLOELPKNHPM),
-            9183 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_PBLFJDPDFBC),
-            9207 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_LHCGDLIOHED),
-            9181 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_LFBIMLKEAPC),
-            9203 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_NFJGBLMINFJ),
-            9186 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_ODIPKFAKFEK),
-            9191 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_KGLDDFPHAKH),
-            9196 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_KCGHNGLFMLN),
-            9187 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_CNHPEAJNHHH),
-            9202 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_DFCBGOJNGCM),
-            9199 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_IJICNLAHJCJ),
-            9200 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_CBILKHKBFDL),
-            9206 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_LLINAAFKEJE),
-            9209 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_HEELOAPLJKF),
-            9204 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_HOBCDDPDKMG),
-            9208 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_AEBBBBNGFEI),
-            9197 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_CKINCKMMHKH),
-            9190 => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_KDHLOMCILGE),
+            0 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_MNFEPONEDDJ),
+            9206 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_PAOAKHCFNEK),
+            9197 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_PECPOPFELOG),
+            9205 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_MKGHBDOJINP),
+            9187 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_ALJAMNFFMFF),
+            9202 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_JAHDPBDOOBG),
+            9195 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_EKPGIFABGAI),
+            9190 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_EFIGLBIFLCH),
+            9210 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_AMDECIDIEIP),
+            9189 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_DCMDFEBBJIJ),
+            9201 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_DPHHHIIAKFP),
+            9184 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_HFEPMJDMPDA),
+            9191 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_BINPNOFPNCH),
+            9200 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_ABEAHAFHDIM),
+            9209 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_KDHCEICDPDG),
+            9194 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_GGBDENMFPKM),
+            9199 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_EGFFHOPEFPH),
+            9196 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_AHOMOCOILNM),
+            9181 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_HOOKLFFKCKD),
+            9185 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_CCLFAAENIKH),
+            9207 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_MAKHHFJOLFJ),
+            9192 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_GGLABJIONIA),
+            9193 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_KBHAILJLKAO),
+            9186 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_FOKBKEPEOAG),
+            9183 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_NIOOOGJBIFA),
+            9182 => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_ADKOPDJIIFF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdLimaoNewsType> {
         match str {
-            "EFJNJPLFPNN_GKJBAODJMJG" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_GKJBAODJMJG),
-            "EFJNJPLFPNN_NGLGCBDPJAN" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_NGLGCBDPJAN),
-            "EFJNJPLFPNN_KGOMNIPFHGK" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_KGOMNIPFHGK),
-            "EFJNJPLFPNN_ELPMMHCLOHK" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_ELPMMHCLOHK),
-            "EFJNJPLFPNN_MAAJKACOLHJ" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_MAAJKACOLHJ),
-            "EFJNJPLFPNN_BLBLCFLODGF" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_BLBLCFLODGF),
-            "EFJNJPLFPNN_NGDPPMLNGOM" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_NGDPPMLNGOM),
-            "EFJNJPLFPNN_BNHGJPOFGFH" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_BNHGJPOFGFH),
-            "EFJNJPLFPNN_OLOELPKNHPM" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_OLOELPKNHPM),
-            "EFJNJPLFPNN_PBLFJDPDFBC" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_PBLFJDPDFBC),
-            "EFJNJPLFPNN_LHCGDLIOHED" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_LHCGDLIOHED),
-            "EFJNJPLFPNN_LFBIMLKEAPC" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_LFBIMLKEAPC),
-            "EFJNJPLFPNN_NFJGBLMINFJ" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_NFJGBLMINFJ),
-            "EFJNJPLFPNN_ODIPKFAKFEK" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_ODIPKFAKFEK),
-            "EFJNJPLFPNN_KGLDDFPHAKH" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_KGLDDFPHAKH),
-            "EFJNJPLFPNN_KCGHNGLFMLN" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_KCGHNGLFMLN),
-            "EFJNJPLFPNN_CNHPEAJNHHH" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_CNHPEAJNHHH),
-            "EFJNJPLFPNN_DFCBGOJNGCM" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_DFCBGOJNGCM),
-            "EFJNJPLFPNN_IJICNLAHJCJ" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_IJICNLAHJCJ),
-            "EFJNJPLFPNN_CBILKHKBFDL" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_CBILKHKBFDL),
-            "EFJNJPLFPNN_LLINAAFKEJE" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_LLINAAFKEJE),
-            "EFJNJPLFPNN_HEELOAPLJKF" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_HEELOAPLJKF),
-            "EFJNJPLFPNN_HOBCDDPDKMG" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_HOBCDDPDKMG),
-            "EFJNJPLFPNN_AEBBBBNGFEI" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_AEBBBBNGFEI),
-            "EFJNJPLFPNN_CKINCKMMHKH" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_CKINCKMMHKH),
-            "EFJNJPLFPNN_KDHLOMCILGE" => ::std::option::Option::Some(CmdLimaoNewsType::EFJNJPLFPNN_KDHLOMCILGE),
+            "CmdLimaoNewsType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_MNFEPONEDDJ),
+            "CmdLimaoNewsType_PAOAKHCFNEK" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_PAOAKHCFNEK),
+            "CmdLimaoNewsType_PECPOPFELOG" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_PECPOPFELOG),
+            "CmdLimaoNewsType_MKGHBDOJINP" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_MKGHBDOJINP),
+            "CmdLimaoNewsType_ALJAMNFFMFF" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_ALJAMNFFMFF),
+            "CmdLimaoNewsType_JAHDPBDOOBG" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_JAHDPBDOOBG),
+            "CmdLimaoNewsType_EKPGIFABGAI" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_EKPGIFABGAI),
+            "CmdLimaoNewsType_EFIGLBIFLCH" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_EFIGLBIFLCH),
+            "CmdLimaoNewsType_AMDECIDIEIP" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_AMDECIDIEIP),
+            "CmdLimaoNewsType_DCMDFEBBJIJ" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_DCMDFEBBJIJ),
+            "CmdLimaoNewsType_DPHHHIIAKFP" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_DPHHHIIAKFP),
+            "CmdLimaoNewsType_HFEPMJDMPDA" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_HFEPMJDMPDA),
+            "CmdLimaoNewsType_BINPNOFPNCH" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_BINPNOFPNCH),
+            "CmdLimaoNewsType_ABEAHAFHDIM" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_ABEAHAFHDIM),
+            "CmdLimaoNewsType_KDHCEICDPDG" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_KDHCEICDPDG),
+            "CmdLimaoNewsType_GGBDENMFPKM" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_GGBDENMFPKM),
+            "CmdLimaoNewsType_EGFFHOPEFPH" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_EGFFHOPEFPH),
+            "CmdLimaoNewsType_AHOMOCOILNM" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_AHOMOCOILNM),
+            "CmdLimaoNewsType_HOOKLFFKCKD" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_HOOKLFFKCKD),
+            "CmdLimaoNewsType_CCLFAAENIKH" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_CCLFAAENIKH),
+            "CmdLimaoNewsType_MAKHHFJOLFJ" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_MAKHHFJOLFJ),
+            "CmdLimaoNewsType_GGLABJIONIA" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_GGLABJIONIA),
+            "CmdLimaoNewsType_KBHAILJLKAO" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_KBHAILJLKAO),
+            "CmdLimaoNewsType_FOKBKEPEOAG" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_FOKBKEPEOAG),
+            "CmdLimaoNewsType_NIOOOGJBIFA" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_NIOOOGJBIFA),
+            "CmdLimaoNewsType_ADKOPDJIIFF" => ::std::option::Option::Some(CmdLimaoNewsType::CmdLimaoNewsType_ADKOPDJIIFF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdLimaoNewsType] = &[
-        CmdLimaoNewsType::EFJNJPLFPNN_GKJBAODJMJG,
-        CmdLimaoNewsType::EFJNJPLFPNN_NGLGCBDPJAN,
-        CmdLimaoNewsType::EFJNJPLFPNN_KGOMNIPFHGK,
-        CmdLimaoNewsType::EFJNJPLFPNN_ELPMMHCLOHK,
-        CmdLimaoNewsType::EFJNJPLFPNN_MAAJKACOLHJ,
-        CmdLimaoNewsType::EFJNJPLFPNN_BLBLCFLODGF,
-        CmdLimaoNewsType::EFJNJPLFPNN_NGDPPMLNGOM,
-        CmdLimaoNewsType::EFJNJPLFPNN_BNHGJPOFGFH,
-        CmdLimaoNewsType::EFJNJPLFPNN_OLOELPKNHPM,
-        CmdLimaoNewsType::EFJNJPLFPNN_PBLFJDPDFBC,
-        CmdLimaoNewsType::EFJNJPLFPNN_LHCGDLIOHED,
-        CmdLimaoNewsType::EFJNJPLFPNN_LFBIMLKEAPC,
-        CmdLimaoNewsType::EFJNJPLFPNN_NFJGBLMINFJ,
-        CmdLimaoNewsType::EFJNJPLFPNN_ODIPKFAKFEK,
-        CmdLimaoNewsType::EFJNJPLFPNN_KGLDDFPHAKH,
-        CmdLimaoNewsType::EFJNJPLFPNN_KCGHNGLFMLN,
-        CmdLimaoNewsType::EFJNJPLFPNN_CNHPEAJNHHH,
-        CmdLimaoNewsType::EFJNJPLFPNN_DFCBGOJNGCM,
-        CmdLimaoNewsType::EFJNJPLFPNN_IJICNLAHJCJ,
-        CmdLimaoNewsType::EFJNJPLFPNN_CBILKHKBFDL,
-        CmdLimaoNewsType::EFJNJPLFPNN_LLINAAFKEJE,
-        CmdLimaoNewsType::EFJNJPLFPNN_HEELOAPLJKF,
-        CmdLimaoNewsType::EFJNJPLFPNN_HOBCDDPDKMG,
-        CmdLimaoNewsType::EFJNJPLFPNN_AEBBBBNGFEI,
-        CmdLimaoNewsType::EFJNJPLFPNN_CKINCKMMHKH,
-        CmdLimaoNewsType::EFJNJPLFPNN_KDHLOMCILGE,
+        CmdLimaoNewsType::CmdLimaoNewsType_MNFEPONEDDJ,
+        CmdLimaoNewsType::CmdLimaoNewsType_PAOAKHCFNEK,
+        CmdLimaoNewsType::CmdLimaoNewsType_PECPOPFELOG,
+        CmdLimaoNewsType::CmdLimaoNewsType_MKGHBDOJINP,
+        CmdLimaoNewsType::CmdLimaoNewsType_ALJAMNFFMFF,
+        CmdLimaoNewsType::CmdLimaoNewsType_JAHDPBDOOBG,
+        CmdLimaoNewsType::CmdLimaoNewsType_EKPGIFABGAI,
+        CmdLimaoNewsType::CmdLimaoNewsType_EFIGLBIFLCH,
+        CmdLimaoNewsType::CmdLimaoNewsType_AMDECIDIEIP,
+        CmdLimaoNewsType::CmdLimaoNewsType_DCMDFEBBJIJ,
+        CmdLimaoNewsType::CmdLimaoNewsType_DPHHHIIAKFP,
+        CmdLimaoNewsType::CmdLimaoNewsType_HFEPMJDMPDA,
+        CmdLimaoNewsType::CmdLimaoNewsType_BINPNOFPNCH,
+        CmdLimaoNewsType::CmdLimaoNewsType_ABEAHAFHDIM,
+        CmdLimaoNewsType::CmdLimaoNewsType_KDHCEICDPDG,
+        CmdLimaoNewsType::CmdLimaoNewsType_GGBDENMFPKM,
+        CmdLimaoNewsType::CmdLimaoNewsType_EGFFHOPEFPH,
+        CmdLimaoNewsType::CmdLimaoNewsType_AHOMOCOILNM,
+        CmdLimaoNewsType::CmdLimaoNewsType_HOOKLFFKCKD,
+        CmdLimaoNewsType::CmdLimaoNewsType_CCLFAAENIKH,
+        CmdLimaoNewsType::CmdLimaoNewsType_MAKHHFJOLFJ,
+        CmdLimaoNewsType::CmdLimaoNewsType_GGLABJIONIA,
+        CmdLimaoNewsType::CmdLimaoNewsType_KBHAILJLKAO,
+        CmdLimaoNewsType::CmdLimaoNewsType_FOKBKEPEOAG,
+        CmdLimaoNewsType::CmdLimaoNewsType_NIOOOGJBIFA,
+        CmdLimaoNewsType::CmdLimaoNewsType_ADKOPDJIIFF,
     ];
 }
 
@@ -190,32 +190,32 @@ impl ::protobuf::EnumFull for CmdLimaoNewsType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdLimaoNewsType::EFJNJPLFPNN_GKJBAODJMJG => 0,
-            CmdLimaoNewsType::EFJNJPLFPNN_NGLGCBDPJAN => 1,
-            CmdLimaoNewsType::EFJNJPLFPNN_KGOMNIPFHGK => 2,
-            CmdLimaoNewsType::EFJNJPLFPNN_ELPMMHCLOHK => 3,
-            CmdLimaoNewsType::EFJNJPLFPNN_MAAJKACOLHJ => 4,
-            CmdLimaoNewsType::EFJNJPLFPNN_BLBLCFLODGF => 5,
-            CmdLimaoNewsType::EFJNJPLFPNN_NGDPPMLNGOM => 6,
-            CmdLimaoNewsType::EFJNJPLFPNN_BNHGJPOFGFH => 7,
-            CmdLimaoNewsType::EFJNJPLFPNN_OLOELPKNHPM => 8,
-            CmdLimaoNewsType::EFJNJPLFPNN_PBLFJDPDFBC => 9,
-            CmdLimaoNewsType::EFJNJPLFPNN_LHCGDLIOHED => 10,
-            CmdLimaoNewsType::EFJNJPLFPNN_LFBIMLKEAPC => 11,
-            CmdLimaoNewsType::EFJNJPLFPNN_NFJGBLMINFJ => 12,
-            CmdLimaoNewsType::EFJNJPLFPNN_ODIPKFAKFEK => 13,
-            CmdLimaoNewsType::EFJNJPLFPNN_KGLDDFPHAKH => 14,
-            CmdLimaoNewsType::EFJNJPLFPNN_KCGHNGLFMLN => 15,
-            CmdLimaoNewsType::EFJNJPLFPNN_CNHPEAJNHHH => 16,
-            CmdLimaoNewsType::EFJNJPLFPNN_DFCBGOJNGCM => 17,
-            CmdLimaoNewsType::EFJNJPLFPNN_IJICNLAHJCJ => 18,
-            CmdLimaoNewsType::EFJNJPLFPNN_CBILKHKBFDL => 19,
-            CmdLimaoNewsType::EFJNJPLFPNN_LLINAAFKEJE => 20,
-            CmdLimaoNewsType::EFJNJPLFPNN_HEELOAPLJKF => 21,
-            CmdLimaoNewsType::EFJNJPLFPNN_HOBCDDPDKMG => 22,
-            CmdLimaoNewsType::EFJNJPLFPNN_AEBBBBNGFEI => 23,
-            CmdLimaoNewsType::EFJNJPLFPNN_CKINCKMMHKH => 24,
-            CmdLimaoNewsType::EFJNJPLFPNN_KDHLOMCILGE => 25,
+            CmdLimaoNewsType::CmdLimaoNewsType_MNFEPONEDDJ => 0,
+            CmdLimaoNewsType::CmdLimaoNewsType_PAOAKHCFNEK => 1,
+            CmdLimaoNewsType::CmdLimaoNewsType_PECPOPFELOG => 2,
+            CmdLimaoNewsType::CmdLimaoNewsType_MKGHBDOJINP => 3,
+            CmdLimaoNewsType::CmdLimaoNewsType_ALJAMNFFMFF => 4,
+            CmdLimaoNewsType::CmdLimaoNewsType_JAHDPBDOOBG => 5,
+            CmdLimaoNewsType::CmdLimaoNewsType_EKPGIFABGAI => 6,
+            CmdLimaoNewsType::CmdLimaoNewsType_EFIGLBIFLCH => 7,
+            CmdLimaoNewsType::CmdLimaoNewsType_AMDECIDIEIP => 8,
+            CmdLimaoNewsType::CmdLimaoNewsType_DCMDFEBBJIJ => 9,
+            CmdLimaoNewsType::CmdLimaoNewsType_DPHHHIIAKFP => 10,
+            CmdLimaoNewsType::CmdLimaoNewsType_HFEPMJDMPDA => 11,
+            CmdLimaoNewsType::CmdLimaoNewsType_BINPNOFPNCH => 12,
+            CmdLimaoNewsType::CmdLimaoNewsType_ABEAHAFHDIM => 13,
+            CmdLimaoNewsType::CmdLimaoNewsType_KDHCEICDPDG => 14,
+            CmdLimaoNewsType::CmdLimaoNewsType_GGBDENMFPKM => 15,
+            CmdLimaoNewsType::CmdLimaoNewsType_EGFFHOPEFPH => 16,
+            CmdLimaoNewsType::CmdLimaoNewsType_AHOMOCOILNM => 17,
+            CmdLimaoNewsType::CmdLimaoNewsType_HOOKLFFKCKD => 18,
+            CmdLimaoNewsType::CmdLimaoNewsType_CCLFAAENIKH => 19,
+            CmdLimaoNewsType::CmdLimaoNewsType_MAKHHFJOLFJ => 20,
+            CmdLimaoNewsType::CmdLimaoNewsType_GGLABJIONIA => 21,
+            CmdLimaoNewsType::CmdLimaoNewsType_KBHAILJLKAO => 22,
+            CmdLimaoNewsType::CmdLimaoNewsType_FOKBKEPEOAG => 23,
+            CmdLimaoNewsType::CmdLimaoNewsType_NIOOOGJBIFA => 24,
+            CmdLimaoNewsType::CmdLimaoNewsType_ADKOPDJIIFF => 25,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -223,7 +223,7 @@ impl ::protobuf::EnumFull for CmdLimaoNewsType {
 
 impl ::std::default::Default for CmdLimaoNewsType {
     fn default() -> Self {
-        CmdLimaoNewsType::EFJNJPLFPNN_GKJBAODJMJG
+        CmdLimaoNewsType::CmdLimaoNewsType_MNFEPONEDDJ
     }
 }
 
@@ -234,24 +234,25 @@ impl CmdLimaoNewsType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdLimaoNewsType.proto*\x9d\x06\n\x10CmdLimaoNewsType\x12\x1b\n\
-    \x17EFJNJPLFPNN_GKJBAODJMJG\x10\0\x12\x1c\n\x17EFJNJPLFPNN_NGLGCBDPJAN\
-    \x10\xebG\x12\x1c\n\x17EFJNJPLFPNN_KGOMNIPFHGK\x10\xeeG\x12\x1c\n\x17EFJ\
-    NJPLFPNN_ELPMMHCLOHK\x10\xfaG\x12\x1c\n\x17EFJNJPLFPNN_MAAJKACOLHJ\x10\
-    \xf5G\x12\x1c\n\x17EFJNJPLFPNN_BLBLCFLODGF\x10\xe8G\x12\x1c\n\x17EFJNJPL\
-    FPNN_NGDPPMLNGOM\x10\xe5G\x12\x1c\n\x17EFJNJPLFPNN_BNHGJPOFGFH\x10\xe9G\
-    \x12\x1c\n\x17EFJNJPLFPNN_OLOELPKNHPM\x10\xe0G\x12\x1c\n\x17EFJNJPLFPNN_\
-    PBLFJDPDFBC\x10\xdfG\x12\x1c\n\x17EFJNJPLFPNN_LHCGDLIOHED\x10\xf7G\x12\
-    \x1c\n\x17EFJNJPLFPNN_LFBIMLKEAPC\x10\xddG\x12\x1c\n\x17EFJNJPLFPNN_NFJG\
-    BLMINFJ\x10\xf3G\x12\x1c\n\x17EFJNJPLFPNN_ODIPKFAKFEK\x10\xe2G\x12\x1c\n\
-    \x17EFJNJPLFPNN_KGLDDFPHAKH\x10\xe7G\x12\x1c\n\x17EFJNJPLFPNN_KCGHNGLFML\
-    N\x10\xecG\x12\x1c\n\x17EFJNJPLFPNN_CNHPEAJNHHH\x10\xe3G\x12\x1c\n\x17EF\
-    JNJPLFPNN_DFCBGOJNGCM\x10\xf2G\x12\x1c\n\x17EFJNJPLFPNN_IJICNLAHJCJ\x10\
-    \xefG\x12\x1c\n\x17EFJNJPLFPNN_CBILKHKBFDL\x10\xf0G\x12\x1c\n\x17EFJNJPL\
-    FPNN_LLINAAFKEJE\x10\xf6G\x12\x1c\n\x17EFJNJPLFPNN_HEELOAPLJKF\x10\xf9G\
-    \x12\x1c\n\x17EFJNJPLFPNN_HOBCDDPDKMG\x10\xf4G\x12\x1c\n\x17EFJNJPLFPNN_\
-    AEBBBBNGFEI\x10\xf8G\x12\x1c\n\x17EFJNJPLFPNN_CKINCKMMHKH\x10\xedG\x12\
-    \x1c\n\x17EFJNJPLFPNN_KDHLOMCILGE\x10\xe6Gb\x06proto3\
+    \n\x16CmdLimaoNewsType.proto*\x9f\x07\n\x10CmdLimaoNewsType\x12\x20\n\
+    \x1cCmdLimaoNewsType_MNFEPONEDDJ\x10\0\x12!\n\x1cCmdLimaoNewsType_PAOAKH\
+    CFNEK\x10\xf6G\x12!\n\x1cCmdLimaoNewsType_PECPOPFELOG\x10\xedG\x12!\n\
+    \x1cCmdLimaoNewsType_MKGHBDOJINP\x10\xf5G\x12!\n\x1cCmdLimaoNewsType_ALJ\
+    AMNFFMFF\x10\xe3G\x12!\n\x1cCmdLimaoNewsType_JAHDPBDOOBG\x10\xf2G\x12!\n\
+    \x1cCmdLimaoNewsType_EKPGIFABGAI\x10\xebG\x12!\n\x1cCmdLimaoNewsType_EFI\
+    GLBIFLCH\x10\xe6G\x12!\n\x1cCmdLimaoNewsType_AMDECIDIEIP\x10\xfaG\x12!\n\
+    \x1cCmdLimaoNewsType_DCMDFEBBJIJ\x10\xe5G\x12!\n\x1cCmdLimaoNewsType_DPH\
+    HHIIAKFP\x10\xf1G\x12!\n\x1cCmdLimaoNewsType_HFEPMJDMPDA\x10\xe0G\x12!\n\
+    \x1cCmdLimaoNewsType_BINPNOFPNCH\x10\xe7G\x12!\n\x1cCmdLimaoNewsType_ABE\
+    AHAFHDIM\x10\xf0G\x12!\n\x1cCmdLimaoNewsType_KDHCEICDPDG\x10\xf9G\x12!\n\
+    \x1cCmdLimaoNewsType_GGBDENMFPKM\x10\xeaG\x12!\n\x1cCmdLimaoNewsType_EGF\
+    FHOPEFPH\x10\xefG\x12!\n\x1cCmdLimaoNewsType_AHOMOCOILNM\x10\xecG\x12!\n\
+    \x1cCmdLimaoNewsType_HOOKLFFKCKD\x10\xddG\x12!\n\x1cCmdLimaoNewsType_CCL\
+    FAAENIKH\x10\xe1G\x12!\n\x1cCmdLimaoNewsType_MAKHHFJOLFJ\x10\xf7G\x12!\n\
+    \x1cCmdLimaoNewsType_GGLABJIONIA\x10\xe8G\x12!\n\x1cCmdLimaoNewsType_KBH\
+    AILJLKAO\x10\xe9G\x12!\n\x1cCmdLimaoNewsType_FOKBKEPEOAG\x10\xe2G\x12!\n\
+    \x1cCmdLimaoNewsType_NIOOOGJBIFA\x10\xdfG\x12!\n\x1cCmdLimaoNewsType_ADK\
+    OPDJIIFF\x10\xdeGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

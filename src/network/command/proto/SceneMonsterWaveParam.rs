@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneMonsterWaveParam {
     // message fields
-    // @@protoc_insertion_point(field:SceneMonsterWaveParam.POHHHACHHGH)
-    pub POHHHACHHGH: u32,
-    // @@protoc_insertion_point(field:SceneMonsterWaveParam.elite_group)
-    pub elite_group: u32,
+    // @@protoc_insertion_point(field:SceneMonsterWaveParam.LPHMIOCFKKA)
+    pub LPHMIOCFKKA: u32,
     // @@protoc_insertion_point(field:SceneMonsterWaveParam.hard_level_group)
     pub hard_level_group: u32,
+    // @@protoc_insertion_point(field:SceneMonsterWaveParam.KPAJJKNOBGE)
+    pub KPAJJKNOBGE: u32,
+    // @@protoc_insertion_point(field:SceneMonsterWaveParam.elite_group)
+    pub elite_group: u32,
     // @@protoc_insertion_point(field:SceneMonsterWaveParam.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:SceneMonsterWaveParam.OAMHAGNBJGI)
-    pub OAMHAGNBJGI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneMonsterWaveParam.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,14 +58,9 @@ impl SceneMonsterWaveParam {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "POHHHACHHGH",
-            |m: &SceneMonsterWaveParam| { &m.POHHHACHHGH },
-            |m: &mut SceneMonsterWaveParam| { &mut m.POHHHACHHGH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "elite_group",
-            |m: &SceneMonsterWaveParam| { &m.elite_group },
-            |m: &mut SceneMonsterWaveParam| { &mut m.elite_group },
+            "LPHMIOCFKKA",
+            |m: &SceneMonsterWaveParam| { &m.LPHMIOCFKKA },
+            |m: &mut SceneMonsterWaveParam| { &mut m.LPHMIOCFKKA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "hard_level_group",
@@ -73,14 +68,19 @@ impl SceneMonsterWaveParam {
             |m: &mut SceneMonsterWaveParam| { &mut m.hard_level_group },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KPAJJKNOBGE",
+            |m: &SceneMonsterWaveParam| { &m.KPAJJKNOBGE },
+            |m: &mut SceneMonsterWaveParam| { &mut m.KPAJJKNOBGE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "elite_group",
+            |m: &SceneMonsterWaveParam| { &m.elite_group },
+            |m: &mut SceneMonsterWaveParam| { &mut m.elite_group },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &SceneMonsterWaveParam| { &m.level },
             |m: &mut SceneMonsterWaveParam| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OAMHAGNBJGI",
-            |m: &SceneMonsterWaveParam| { &m.OAMHAGNBJGI },
-            |m: &mut SceneMonsterWaveParam| { &mut m.OAMHAGNBJGI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneMonsterWaveParam>(
             "SceneMonsterWaveParam",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.POHHHACHHGH = is.read_uint32()?;
+                120 => {
+                    self.LPHMIOCFKKA = is.read_uint32()?;
                 },
-                8 => {
-                    self.elite_group = is.read_uint32()?;
-                },
-                64 => {
+                88 => {
                     self.hard_level_group = is.read_uint32()?;
                 },
                 104 => {
-                    self.level = is.read_uint32()?;
+                    self.KPAJJKNOBGE = is.read_uint32()?;
                 },
                 56 => {
-                    self.OAMHAGNBJGI = is.read_uint32()?;
+                    self.elite_group = is.read_uint32()?;
+                },
+                40 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.POHHHACHHGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.POHHHACHHGH);
-        }
-        if self.elite_group != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.elite_group);
+        if self.LPHMIOCFKKA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.LPHMIOCFKKA);
         }
         if self.hard_level_group != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.hard_level_group);
+            my_size += ::protobuf::rt::uint32_size(11, self.hard_level_group);
+        }
+        if self.KPAJJKNOBGE != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KPAJJKNOBGE);
+        }
+        if self.elite_group != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.elite_group);
         }
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.level);
-        }
-        if self.OAMHAGNBJGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OAMHAGNBJGI);
+            my_size += ::protobuf::rt::uint32_size(5, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.POHHHACHHGH != 0 {
-            os.write_uint32(12, self.POHHHACHHGH)?;
-        }
-        if self.elite_group != 0 {
-            os.write_uint32(1, self.elite_group)?;
+        if self.LPHMIOCFKKA != 0 {
+            os.write_uint32(15, self.LPHMIOCFKKA)?;
         }
         if self.hard_level_group != 0 {
-            os.write_uint32(8, self.hard_level_group)?;
+            os.write_uint32(11, self.hard_level_group)?;
+        }
+        if self.KPAJJKNOBGE != 0 {
+            os.write_uint32(13, self.KPAJJKNOBGE)?;
+        }
+        if self.elite_group != 0 {
+            os.write_uint32(7, self.elite_group)?;
         }
         if self.level != 0 {
-            os.write_uint32(13, self.level)?;
-        }
-        if self.OAMHAGNBJGI != 0 {
-            os.write_uint32(7, self.OAMHAGNBJGI)?;
+            os.write_uint32(5, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for SceneMonsterWaveParam {
     }
 
     fn clear(&mut self) {
-        self.POHHHACHHGH = 0;
-        self.elite_group = 0;
+        self.LPHMIOCFKKA = 0;
         self.hard_level_group = 0;
+        self.KPAJJKNOBGE = 0;
+        self.elite_group = 0;
         self.level = 0;
-        self.OAMHAGNBJGI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneMonsterWaveParam {
         static instance: SceneMonsterWaveParam = SceneMonsterWaveParam {
-            POHHHACHHGH: 0,
-            elite_group: 0,
+            LPHMIOCFKKA: 0,
             hard_level_group: 0,
+            KPAJJKNOBGE: 0,
+            elite_group: 0,
             level: 0,
-            OAMHAGNBJGI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -220,11 +220,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneMonsterWaveParam {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSceneMonsterWaveParam.proto\"\xbc\x01\n\x15SceneMonsterWaveParam\
-    \x12\x20\n\x0bPOHHHACHHGH\x18\x0c\x20\x01(\rR\x0bPOHHHACHHGH\x12\x1f\n\
-    \x0belite_group\x18\x01\x20\x01(\rR\neliteGroup\x12(\n\x10hard_level_gro\
-    up\x18\x08\x20\x01(\rR\x0ehardLevelGroup\x12\x14\n\x05level\x18\r\x20\
-    \x01(\rR\x05level\x12\x20\n\x0bOAMHAGNBJGI\x18\x07\x20\x01(\rR\x0bOAMHAG\
-    NBJGIb\x06proto3\
+    \x12\x20\n\x0bLPHMIOCFKKA\x18\x0f\x20\x01(\rR\x0bLPHMIOCFKKA\x12(\n\x10h\
+    ard_level_group\x18\x0b\x20\x01(\rR\x0ehardLevelGroup\x12\x20\n\x0bKPAJJ\
+    KNOBGE\x18\r\x20\x01(\rR\x0bKPAJJKNOBGE\x12\x1f\n\x0belite_group\x18\x07\
+    \x20\x01(\rR\neliteGroup\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05level\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

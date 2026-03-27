@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AddItemRsp {
     // message fields
-    // @@protoc_insertion_point(field:AddItemRsp.reward)
-    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // @@protoc_insertion_point(field:AddItemRsp.unlock_timestamp)
     pub unlock_timestamp: i64,
+    // @@protoc_insertion_point(field:AddItemRsp.reward)
+    pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
     // message oneof groups
-    pub OBJIPJFDGID: ::std::option::Option<add_item_rsp::OBJIPJFDGID>,
+    pub AKNIBIIDPGH: ::std::option::Option<add_item_rsp::AKNIBIIDPGH>,
     // special fields
     // @@protoc_insertion_point(special_field:AddItemRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,68 +50,68 @@ impl AddItemRsp {
         ::std::default::Default::default()
     }
 
-    // uint32 avatar_id = 6;
+    // uint32 avatar_id = 8;
 
     pub fn avatar_id(&self) -> u32 {
-        match self.OBJIPJFDGID {
-            ::std::option::Option::Some(add_item_rsp::OBJIPJFDGID::AvatarId(v)) => v,
+        match self.AKNIBIIDPGH {
+            ::std::option::Option::Some(add_item_rsp::AKNIBIIDPGH::AvatarId(v)) => v,
             _ => 0,
         }
     }
 
     pub fn clear_avatar_id(&mut self) {
-        self.OBJIPJFDGID = ::std::option::Option::None;
+        self.AKNIBIIDPGH = ::std::option::Option::None;
     }
 
     pub fn has_avatar_id(&self) -> bool {
-        match self.OBJIPJFDGID {
-            ::std::option::Option::Some(add_item_rsp::OBJIPJFDGID::AvatarId(..)) => true,
+        match self.AKNIBIIDPGH {
+            ::std::option::Option::Some(add_item_rsp::AKNIBIIDPGH::AvatarId(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_avatar_id(&mut self, v: u32) {
-        self.OBJIPJFDGID = ::std::option::Option::Some(add_item_rsp::OBJIPJFDGID::AvatarId(v))
+        self.AKNIBIIDPGH = ::std::option::Option::Some(add_item_rsp::AKNIBIIDPGH::AvatarId(v))
     }
 
-    // uint32 PGCMJAOCMII = 13;
+    // uint32 JNKAHHEOPCN = 2;
 
-    pub fn PGCMJAOCMII(&self) -> u32 {
-        match self.OBJIPJFDGID {
-            ::std::option::Option::Some(add_item_rsp::OBJIPJFDGID::PGCMJAOCMII(v)) => v,
+    pub fn JNKAHHEOPCN(&self) -> u32 {
+        match self.AKNIBIIDPGH {
+            ::std::option::Option::Some(add_item_rsp::AKNIBIIDPGH::JNKAHHEOPCN(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_PGCMJAOCMII(&mut self) {
-        self.OBJIPJFDGID = ::std::option::Option::None;
+    pub fn clear_JNKAHHEOPCN(&mut self) {
+        self.AKNIBIIDPGH = ::std::option::Option::None;
     }
 
-    pub fn has_PGCMJAOCMII(&self) -> bool {
-        match self.OBJIPJFDGID {
-            ::std::option::Option::Some(add_item_rsp::OBJIPJFDGID::PGCMJAOCMII(..)) => true,
+    pub fn has_JNKAHHEOPCN(&self) -> bool {
+        match self.AKNIBIIDPGH {
+            ::std::option::Option::Some(add_item_rsp::AKNIBIIDPGH::JNKAHHEOPCN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_PGCMJAOCMII(&mut self, v: u32) {
-        self.OBJIPJFDGID = ::std::option::Option::Some(add_item_rsp::OBJIPJFDGID::PGCMJAOCMII(v))
+    pub fn set_JNKAHHEOPCN(&mut self, v: u32) {
+        self.AKNIBIIDPGH = ::std::option::Option::Some(add_item_rsp::AKNIBIIDPGH::JNKAHHEOPCN(v))
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &AddItemRsp| { &m.reward },
-            |m: &mut AddItemRsp| { &mut m.reward },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unlock_timestamp",
             |m: &AddItemRsp| { &m.unlock_timestamp },
             |m: &mut AddItemRsp| { &mut m.unlock_timestamp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &AddItemRsp| { &m.reward },
+            |m: &mut AddItemRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
             "avatar_id",
@@ -120,12 +120,12 @@ impl AddItemRsp {
             AddItemRsp::set_avatar_id,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "PGCMJAOCMII",
-            AddItemRsp::has_PGCMJAOCMII,
-            AddItemRsp::PGCMJAOCMII,
-            AddItemRsp::set_PGCMJAOCMII,
+            "JNKAHHEOPCN",
+            AddItemRsp::has_JNKAHHEOPCN,
+            AddItemRsp::JNKAHHEOPCN,
+            AddItemRsp::set_JNKAHHEOPCN,
         ));
-        oneofs.push(add_item_rsp::OBJIPJFDGID::generated_oneof_descriptor_data());
+        oneofs.push(add_item_rsp::AKNIBIIDPGH::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AddItemRsp>(
             "AddItemRsp",
             fields,
@@ -144,17 +144,17 @@ impl ::protobuf::Message for AddItemRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
-                },
-                8 => {
+                24 => {
                     self.unlock_timestamp = is.read_int64()?;
                 },
-                48 => {
-                    self.OBJIPJFDGID = ::std::option::Option::Some(add_item_rsp::OBJIPJFDGID::AvatarId(is.read_uint32()?));
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                104 => {
-                    self.OBJIPJFDGID = ::std::option::Option::Some(add_item_rsp::OBJIPJFDGID::PGCMJAOCMII(is.read_uint32()?));
+                64 => {
+                    self.AKNIBIIDPGH = ::std::option::Option::Some(add_item_rsp::AKNIBIIDPGH::AvatarId(is.read_uint32()?));
+                },
+                16 => {
+                    self.AKNIBIIDPGH = ::std::option::Option::Some(add_item_rsp::AKNIBIIDPGH::JNKAHHEOPCN(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -168,20 +168,20 @@ impl ::protobuf::Message for AddItemRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.unlock_timestamp != 0 {
+            my_size += ::protobuf::rt::int64_size(3, self.unlock_timestamp);
+        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.unlock_timestamp != 0 {
-            my_size += ::protobuf::rt::int64_size(1, self.unlock_timestamp);
-        }
-        if let ::std::option::Option::Some(ref v) = self.OBJIPJFDGID {
+        if let ::std::option::Option::Some(ref v) = self.AKNIBIIDPGH {
             match v {
-                &add_item_rsp::OBJIPJFDGID::AvatarId(v) => {
-                    my_size += ::protobuf::rt::uint32_size(6, v);
+                &add_item_rsp::AKNIBIIDPGH::AvatarId(v) => {
+                    my_size += ::protobuf::rt::uint32_size(8, v);
                 },
-                &add_item_rsp::OBJIPJFDGID::PGCMJAOCMII(v) => {
-                    my_size += ::protobuf::rt::uint32_size(13, v);
+                &add_item_rsp::AKNIBIIDPGH::JNKAHHEOPCN(v) => {
+                    my_size += ::protobuf::rt::uint32_size(2, v);
                 },
             };
         }
@@ -191,19 +191,19 @@ impl ::protobuf::Message for AddItemRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
         if self.unlock_timestamp != 0 {
-            os.write_int64(1, self.unlock_timestamp)?;
+            os.write_int64(3, self.unlock_timestamp)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.OBJIPJFDGID {
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.AKNIBIIDPGH {
             match v {
-                &add_item_rsp::OBJIPJFDGID::AvatarId(v) => {
-                    os.write_uint32(6, v)?;
+                &add_item_rsp::AKNIBIIDPGH::AvatarId(v) => {
+                    os.write_uint32(8, v)?;
                 },
-                &add_item_rsp::OBJIPJFDGID::PGCMJAOCMII(v) => {
-                    os.write_uint32(13, v)?;
+                &add_item_rsp::AKNIBIIDPGH::JNKAHHEOPCN(v) => {
+                    os.write_uint32(2, v)?;
                 },
             };
         }
@@ -224,18 +224,18 @@ impl ::protobuf::Message for AddItemRsp {
     }
 
     fn clear(&mut self) {
-        self.reward.clear();
         self.unlock_timestamp = 0;
-        self.OBJIPJFDGID = ::std::option::Option::None;
-        self.OBJIPJFDGID = ::std::option::Option::None;
+        self.reward.clear();
+        self.AKNIBIIDPGH = ::std::option::Option::None;
+        self.AKNIBIIDPGH = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AddItemRsp {
         static instance: AddItemRsp = AddItemRsp {
-            reward: ::protobuf::MessageField::none(),
             unlock_timestamp: 0,
-            OBJIPJFDGID: ::std::option::Option::None,
+            reward: ::protobuf::MessageField::none(),
+            AKNIBIIDPGH: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -264,37 +264,37 @@ pub mod add_item_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:AddItemRsp.OBJIPJFDGID)
-    pub enum OBJIPJFDGID {
+    // @@protoc_insertion_point(oneof:AddItemRsp.AKNIBIIDPGH)
+    pub enum AKNIBIIDPGH {
         // @@protoc_insertion_point(oneof_field:AddItemRsp.avatar_id)
         AvatarId(u32),
-        // @@protoc_insertion_point(oneof_field:AddItemRsp.PGCMJAOCMII)
-        PGCMJAOCMII(u32),
+        // @@protoc_insertion_point(oneof_field:AddItemRsp.JNKAHHEOPCN)
+        JNKAHHEOPCN(u32),
     }
 
-    impl ::protobuf::Oneof for OBJIPJFDGID {
+    impl ::protobuf::Oneof for AKNIBIIDPGH {
     }
 
-    impl ::protobuf::OneofFull for OBJIPJFDGID {
+    impl ::protobuf::OneofFull for AKNIBIIDPGH {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::AddItemRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("OBJIPJFDGID").unwrap()).clone()
+            descriptor.get(|| <super::AddItemRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("AKNIBIIDPGH").unwrap()).clone()
         }
     }
 
-    impl OBJIPJFDGID {
+    impl AKNIBIIDPGH {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<OBJIPJFDGID>("OBJIPJFDGID")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<AKNIBIIDPGH>("AKNIBIIDPGH")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10AddItemRsp.proto\x1a\x0eItemList.proto\"\xac\x01\n\nAddItemRsp\x12\
-    !\n\x06reward\x18\x0b\x20\x01(\x0b2\t.ItemListR\x06reward\x12)\n\x10unlo\
-    ck_timestamp\x18\x01\x20\x01(\x03R\x0funlockTimestamp\x12\x1d\n\tavatar_\
-    id\x18\x06\x20\x01(\rH\0R\x08avatarId\x12\"\n\x0bPGCMJAOCMII\x18\r\x20\
-    \x01(\rH\0R\x0bPGCMJAOCMIIB\r\n\x0bOBJIPJFDGIDb\x06proto3\
+    )\n\x10unlock_timestamp\x18\x03\x20\x01(\x03R\x0funlockTimestamp\x12!\n\
+    \x06reward\x18\x0e\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x1d\n\tavatar\
+    _id\x18\x08\x20\x01(\rH\0R\x08avatarId\x12\"\n\x0bJNKAHHEOPCN\x18\x02\
+    \x20\x01(\rH\0R\x0bJNKAHHEOPCNB\r\n\x0bAKNIBIIDPGHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

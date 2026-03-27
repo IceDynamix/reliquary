@@ -98,52 +98,52 @@ pub struct AvatarBattleInfo {
     pub relics: ::std::vec::Vec<super::BattleRelic::BattleRelic>,
     // @@protoc_insertion_point(field:AvatarBattleInfo.assist_uid)
     pub assist_uid: u32,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.FJDPEIOMCJC)
-    pub FJDPEIOMCJC: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.MMGELLLJGNA)
-    pub MMGELLLJGNA: f64,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.ECFCDBEKJIB)
-    pub ECFCDBEKJIB: f64,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.HHBBNNGKKME)
-    pub HHBBNNGKKME: f64,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.AKGFHKPJDDH)
-    pub AKGFHKPJDDH: f64,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.HKHCINMGKGM)
-    pub HKHCINMGKGM: ::std::vec::Vec<super::AbilityUseStt::AbilityUseStt>,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.GDMCALJAKBO)
-    pub GDMCALJAKBO: u32,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.EOFOPCOFANJ)
-    pub EOFOPCOFANJ: u32,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.FPGPMCPEHNO)
-    pub FPGPMCPEHNO: f64,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.BJIMPEALEDG)
-    pub BJIMPEALEDG: f64,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.LPHAGJNIFKE)
-    pub LPHAGJNIFKE: f64,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.OOKPFEHOOPK)
-    pub OOKPFEHOOPK: f64,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.APEHDACEGKB)
-    pub APEHDACEGKB: f64,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.HFDHMMHNKJM)
-    pub HFDHMMHNKJM: u32,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.CEBNMMHMILJ)
-    pub CEBNMMHMILJ: u32,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.EHBJKFACMHK)
-    pub EHBJKFACMHK: u32,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.CEJBDDLFPOM)
-    pub CEJBDDLFPOM: f64,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.NKMLHNODEDO)
-    pub NKMLHNODEDO: u32,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.DNJIIAJKLEN)
-    pub DNJIIAJKLEN: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.PKPMAJKAIJB)
+    pub PKPMAJKAIJB: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.GJLIOOIFHPI)
+    pub GJLIOOIFHPI: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.BCIICAFAEPO)
+    pub BCIICAFAEPO: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.PLLGKIHKOBI)
+    pub PLLGKIHKOBI: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.FJCKAJBCDBN)
+    pub FJCKAJBCDBN: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.DDLFECCNCNE)
+    pub DDLFECCNCNE: ::std::vec::Vec<super::AbilityUseStt::AbilityUseStt>,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.MHPBAJLOJCN)
+    pub MHPBAJLOJCN: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.OJGFIOONBMD)
+    pub OJGFIOONBMD: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.GLBEOAPOKGM)
+    pub GLBEOAPOKGM: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.JBLLBDNAIFD)
+    pub JBLLBDNAIFD: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.DFFMKOBONKP)
+    pub DFFMKOBONKP: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.FEOFMAIGEID)
+    pub FEOFMAIGEID: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.JNFDJBOPMEP)
+    pub JNFDJBOPMEP: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.DNJPNOBIKAO)
+    pub DNJPNOBIKAO: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.FGHDPDMMIMO)
+    pub FGHDPDMMIMO: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.MBCONNAOCFM)
+    pub MBCONNAOCFM: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.ABGFEBMIFMD)
+    pub ABGFEBMIFMD: f64,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.JCDGLEMAKHK)
+    pub JCDGLEMAKHK: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.GGJBIGFHCHI)
+    pub GGJBIGFHCHI: u32,
     // @@protoc_insertion_point(field:AvatarBattleInfo.enhanced_id)
     pub enhanced_id: u32,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.OBPOHICEAIB)
-    pub OBPOHICEAIB: u32,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.JFLOIPIOLAG)
-    pub JFLOIPIOLAG: ::protobuf::MessageField<super::NHEGOCCNDLB::NHEGOCCNDLB>,
-    // @@protoc_insertion_point(field:AvatarBattleInfo.APFCFDLIGPO)
-    pub APFCFDLIGPO: ::protobuf::MessageField<super::NKEDPLHKKGI::NKEDPLHKKGI>,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.KNJPDJKAJLK)
+    pub KNJPDJKAJLK: u32,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.HCBFGIAOOJO)
+    pub HCBFGIAOOJO: ::protobuf::MessageField<super::JKNAJDFHBLK::JKNAJDFHBLK>,
+    // @@protoc_insertion_point(field:AvatarBattleInfo.MNLBEHIEGHC)
+    pub MNLBEHIEGHC: ::protobuf::MessageField<super::GLFPPJECFHD::GLFPPJECFHD>,
     // special fields
     // @@protoc_insertion_point(special_field:AvatarBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -339,99 +339,99 @@ impl AvatarBattleInfo {
             |m: &mut AvatarBattleInfo| { &mut m.assist_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FJDPEIOMCJC",
-            |m: &AvatarBattleInfo| { &m.FJDPEIOMCJC },
-            |m: &mut AvatarBattleInfo| { &mut m.FJDPEIOMCJC },
+            "PKPMAJKAIJB",
+            |m: &AvatarBattleInfo| { &m.PKPMAJKAIJB },
+            |m: &mut AvatarBattleInfo| { &mut m.PKPMAJKAIJB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMGELLLJGNA",
-            |m: &AvatarBattleInfo| { &m.MMGELLLJGNA },
-            |m: &mut AvatarBattleInfo| { &mut m.MMGELLLJGNA },
+            "GJLIOOIFHPI",
+            |m: &AvatarBattleInfo| { &m.GJLIOOIFHPI },
+            |m: &mut AvatarBattleInfo| { &mut m.GJLIOOIFHPI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECFCDBEKJIB",
-            |m: &AvatarBattleInfo| { &m.ECFCDBEKJIB },
-            |m: &mut AvatarBattleInfo| { &mut m.ECFCDBEKJIB },
+            "BCIICAFAEPO",
+            |m: &AvatarBattleInfo| { &m.BCIICAFAEPO },
+            |m: &mut AvatarBattleInfo| { &mut m.BCIICAFAEPO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHBBNNGKKME",
-            |m: &AvatarBattleInfo| { &m.HHBBNNGKKME },
-            |m: &mut AvatarBattleInfo| { &mut m.HHBBNNGKKME },
+            "PLLGKIHKOBI",
+            |m: &AvatarBattleInfo| { &m.PLLGKIHKOBI },
+            |m: &mut AvatarBattleInfo| { &mut m.PLLGKIHKOBI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKGFHKPJDDH",
-            |m: &AvatarBattleInfo| { &m.AKGFHKPJDDH },
-            |m: &mut AvatarBattleInfo| { &mut m.AKGFHKPJDDH },
+            "FJCKAJBCDBN",
+            |m: &AvatarBattleInfo| { &m.FJCKAJBCDBN },
+            |m: &mut AvatarBattleInfo| { &mut m.FJCKAJBCDBN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HKHCINMGKGM",
-            |m: &AvatarBattleInfo| { &m.HKHCINMGKGM },
-            |m: &mut AvatarBattleInfo| { &mut m.HKHCINMGKGM },
+            "DDLFECCNCNE",
+            |m: &AvatarBattleInfo| { &m.DDLFECCNCNE },
+            |m: &mut AvatarBattleInfo| { &mut m.DDLFECCNCNE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDMCALJAKBO",
-            |m: &AvatarBattleInfo| { &m.GDMCALJAKBO },
-            |m: &mut AvatarBattleInfo| { &mut m.GDMCALJAKBO },
+            "MHPBAJLOJCN",
+            |m: &AvatarBattleInfo| { &m.MHPBAJLOJCN },
+            |m: &mut AvatarBattleInfo| { &mut m.MHPBAJLOJCN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EOFOPCOFANJ",
-            |m: &AvatarBattleInfo| { &m.EOFOPCOFANJ },
-            |m: &mut AvatarBattleInfo| { &mut m.EOFOPCOFANJ },
+            "OJGFIOONBMD",
+            |m: &AvatarBattleInfo| { &m.OJGFIOONBMD },
+            |m: &mut AvatarBattleInfo| { &mut m.OJGFIOONBMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FPGPMCPEHNO",
-            |m: &AvatarBattleInfo| { &m.FPGPMCPEHNO },
-            |m: &mut AvatarBattleInfo| { &mut m.FPGPMCPEHNO },
+            "GLBEOAPOKGM",
+            |m: &AvatarBattleInfo| { &m.GLBEOAPOKGM },
+            |m: &mut AvatarBattleInfo| { &mut m.GLBEOAPOKGM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BJIMPEALEDG",
-            |m: &AvatarBattleInfo| { &m.BJIMPEALEDG },
-            |m: &mut AvatarBattleInfo| { &mut m.BJIMPEALEDG },
+            "JBLLBDNAIFD",
+            |m: &AvatarBattleInfo| { &m.JBLLBDNAIFD },
+            |m: &mut AvatarBattleInfo| { &mut m.JBLLBDNAIFD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPHAGJNIFKE",
-            |m: &AvatarBattleInfo| { &m.LPHAGJNIFKE },
-            |m: &mut AvatarBattleInfo| { &mut m.LPHAGJNIFKE },
+            "DFFMKOBONKP",
+            |m: &AvatarBattleInfo| { &m.DFFMKOBONKP },
+            |m: &mut AvatarBattleInfo| { &mut m.DFFMKOBONKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OOKPFEHOOPK",
-            |m: &AvatarBattleInfo| { &m.OOKPFEHOOPK },
-            |m: &mut AvatarBattleInfo| { &mut m.OOKPFEHOOPK },
+            "FEOFMAIGEID",
+            |m: &AvatarBattleInfo| { &m.FEOFMAIGEID },
+            |m: &mut AvatarBattleInfo| { &mut m.FEOFMAIGEID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APEHDACEGKB",
-            |m: &AvatarBattleInfo| { &m.APEHDACEGKB },
-            |m: &mut AvatarBattleInfo| { &mut m.APEHDACEGKB },
+            "JNFDJBOPMEP",
+            |m: &AvatarBattleInfo| { &m.JNFDJBOPMEP },
+            |m: &mut AvatarBattleInfo| { &mut m.JNFDJBOPMEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HFDHMMHNKJM",
-            |m: &AvatarBattleInfo| { &m.HFDHMMHNKJM },
-            |m: &mut AvatarBattleInfo| { &mut m.HFDHMMHNKJM },
+            "DNJPNOBIKAO",
+            |m: &AvatarBattleInfo| { &m.DNJPNOBIKAO },
+            |m: &mut AvatarBattleInfo| { &mut m.DNJPNOBIKAO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEBNMMHMILJ",
-            |m: &AvatarBattleInfo| { &m.CEBNMMHMILJ },
-            |m: &mut AvatarBattleInfo| { &mut m.CEBNMMHMILJ },
+            "FGHDPDMMIMO",
+            |m: &AvatarBattleInfo| { &m.FGHDPDMMIMO },
+            |m: &mut AvatarBattleInfo| { &mut m.FGHDPDMMIMO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EHBJKFACMHK",
-            |m: &AvatarBattleInfo| { &m.EHBJKFACMHK },
-            |m: &mut AvatarBattleInfo| { &mut m.EHBJKFACMHK },
+            "MBCONNAOCFM",
+            |m: &AvatarBattleInfo| { &m.MBCONNAOCFM },
+            |m: &mut AvatarBattleInfo| { &mut m.MBCONNAOCFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEJBDDLFPOM",
-            |m: &AvatarBattleInfo| { &m.CEJBDDLFPOM },
-            |m: &mut AvatarBattleInfo| { &mut m.CEJBDDLFPOM },
+            "ABGFEBMIFMD",
+            |m: &AvatarBattleInfo| { &m.ABGFEBMIFMD },
+            |m: &mut AvatarBattleInfo| { &mut m.ABGFEBMIFMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKMLHNODEDO",
-            |m: &AvatarBattleInfo| { &m.NKMLHNODEDO },
-            |m: &mut AvatarBattleInfo| { &mut m.NKMLHNODEDO },
+            "JCDGLEMAKHK",
+            |m: &AvatarBattleInfo| { &m.JCDGLEMAKHK },
+            |m: &mut AvatarBattleInfo| { &mut m.JCDGLEMAKHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNJIIAJKLEN",
-            |m: &AvatarBattleInfo| { &m.DNJIIAJKLEN },
-            |m: &mut AvatarBattleInfo| { &mut m.DNJIIAJKLEN },
+            "GGJBIGFHCHI",
+            |m: &AvatarBattleInfo| { &m.GGJBIGFHCHI },
+            |m: &mut AvatarBattleInfo| { &mut m.GGJBIGFHCHI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "enhanced_id",
@@ -439,19 +439,19 @@ impl AvatarBattleInfo {
             |m: &mut AvatarBattleInfo| { &mut m.enhanced_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OBPOHICEAIB",
-            |m: &AvatarBattleInfo| { &m.OBPOHICEAIB },
-            |m: &mut AvatarBattleInfo| { &mut m.OBPOHICEAIB },
+            "KNJPDJKAJLK",
+            |m: &AvatarBattleInfo| { &m.KNJPDJKAJLK },
+            |m: &mut AvatarBattleInfo| { &mut m.KNJPDJKAJLK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NHEGOCCNDLB::NHEGOCCNDLB>(
-            "JFLOIPIOLAG",
-            |m: &AvatarBattleInfo| { &m.JFLOIPIOLAG },
-            |m: &mut AvatarBattleInfo| { &mut m.JFLOIPIOLAG },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JKNAJDFHBLK::JKNAJDFHBLK>(
+            "HCBFGIAOOJO",
+            |m: &AvatarBattleInfo| { &m.HCBFGIAOOJO },
+            |m: &mut AvatarBattleInfo| { &mut m.HCBFGIAOOJO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NKEDPLHKKGI::NKEDPLHKKGI>(
-            "APFCFDLIGPO",
-            |m: &AvatarBattleInfo| { &m.APFCFDLIGPO },
-            |m: &mut AvatarBattleInfo| { &mut m.APFCFDLIGPO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GLFPPJECFHD::GLFPPJECFHD>(
+            "MNLBEHIEGHC",
+            |m: &AvatarBattleInfo| { &m.MNLBEHIEGHC },
+            |m: &mut AvatarBattleInfo| { &mut m.MNLBEHIEGHC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AvatarBattleInfo>(
             "AvatarBattleInfo",
@@ -577,73 +577,73 @@ impl ::protobuf::Message for AvatarBattleInfo {
                     self.assist_uid = is.read_uint32()?;
                 },
                 290 => {
-                    self.FJDPEIOMCJC.push(is.read_message()?);
+                    self.PKPMAJKAIJB.push(is.read_message()?);
                 },
                 297 => {
-                    self.MMGELLLJGNA = is.read_double()?;
+                    self.GJLIOOIFHPI = is.read_double()?;
                 },
                 305 => {
-                    self.ECFCDBEKJIB = is.read_double()?;
+                    self.BCIICAFAEPO = is.read_double()?;
                 },
                 313 => {
-                    self.HHBBNNGKKME = is.read_double()?;
+                    self.PLLGKIHKOBI = is.read_double()?;
                 },
                 321 => {
-                    self.AKGFHKPJDDH = is.read_double()?;
+                    self.FJCKAJBCDBN = is.read_double()?;
                 },
                 330 => {
-                    self.HKHCINMGKGM.push(is.read_message()?);
+                    self.DDLFECCNCNE.push(is.read_message()?);
                 },
                 336 => {
-                    self.GDMCALJAKBO = is.read_uint32()?;
+                    self.MHPBAJLOJCN = is.read_uint32()?;
                 },
                 344 => {
-                    self.EOFOPCOFANJ = is.read_uint32()?;
+                    self.OJGFIOONBMD = is.read_uint32()?;
                 },
                 353 => {
-                    self.FPGPMCPEHNO = is.read_double()?;
+                    self.GLBEOAPOKGM = is.read_double()?;
                 },
                 361 => {
-                    self.BJIMPEALEDG = is.read_double()?;
+                    self.JBLLBDNAIFD = is.read_double()?;
                 },
                 369 => {
-                    self.LPHAGJNIFKE = is.read_double()?;
+                    self.DFFMKOBONKP = is.read_double()?;
                 },
                 377 => {
-                    self.OOKPFEHOOPK = is.read_double()?;
+                    self.FEOFMAIGEID = is.read_double()?;
                 },
                 385 => {
-                    self.APEHDACEGKB = is.read_double()?;
+                    self.JNFDJBOPMEP = is.read_double()?;
                 },
                 392 => {
-                    self.HFDHMMHNKJM = is.read_uint32()?;
+                    self.DNJPNOBIKAO = is.read_uint32()?;
                 },
                 400 => {
-                    self.CEBNMMHMILJ = is.read_uint32()?;
+                    self.FGHDPDMMIMO = is.read_uint32()?;
                 },
                 408 => {
-                    self.EHBJKFACMHK = is.read_uint32()?;
+                    self.MBCONNAOCFM = is.read_uint32()?;
                 },
                 417 => {
-                    self.CEJBDDLFPOM = is.read_double()?;
+                    self.ABGFEBMIFMD = is.read_double()?;
                 },
                 424 => {
-                    self.NKMLHNODEDO = is.read_uint32()?;
+                    self.JCDGLEMAKHK = is.read_uint32()?;
                 },
                 432 => {
-                    self.DNJIIAJKLEN = is.read_uint32()?;
+                    self.GGJBIGFHCHI = is.read_uint32()?;
                 },
                 440 => {
                     self.enhanced_id = is.read_uint32()?;
                 },
                 448 => {
-                    self.OBPOHICEAIB = is.read_uint32()?;
+                    self.KNJPDJKAJLK = is.read_uint32()?;
                 },
                 458 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JFLOIPIOLAG)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HCBFGIAOOJO)?;
                 },
                 466 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.APFCFDLIGPO)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MNLBEHIEGHC)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -772,76 +772,76 @@ impl ::protobuf::Message for AvatarBattleInfo {
         if self.assist_uid != 0 {
             my_size += ::protobuf::rt::uint32_size(35, self.assist_uid);
         }
-        for value in &self.FJDPEIOMCJC {
+        for value in &self.PKPMAJKAIJB {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.MMGELLLJGNA != 0. {
+        if self.GJLIOOIFHPI != 0. {
             my_size += 2 + 8;
         }
-        if self.ECFCDBEKJIB != 0. {
+        if self.BCIICAFAEPO != 0. {
             my_size += 2 + 8;
         }
-        if self.HHBBNNGKKME != 0. {
+        if self.PLLGKIHKOBI != 0. {
             my_size += 2 + 8;
         }
-        if self.AKGFHKPJDDH != 0. {
+        if self.FJCKAJBCDBN != 0. {
             my_size += 2 + 8;
         }
-        for value in &self.HKHCINMGKGM {
+        for value in &self.DDLFECCNCNE {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GDMCALJAKBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(42, self.GDMCALJAKBO);
+        if self.MHPBAJLOJCN != 0 {
+            my_size += ::protobuf::rt::uint32_size(42, self.MHPBAJLOJCN);
         }
-        if self.EOFOPCOFANJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(43, self.EOFOPCOFANJ);
+        if self.OJGFIOONBMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(43, self.OJGFIOONBMD);
         }
-        if self.FPGPMCPEHNO != 0. {
+        if self.GLBEOAPOKGM != 0. {
             my_size += 2 + 8;
         }
-        if self.BJIMPEALEDG != 0. {
+        if self.JBLLBDNAIFD != 0. {
             my_size += 2 + 8;
         }
-        if self.LPHAGJNIFKE != 0. {
+        if self.DFFMKOBONKP != 0. {
             my_size += 2 + 8;
         }
-        if self.OOKPFEHOOPK != 0. {
+        if self.FEOFMAIGEID != 0. {
             my_size += 2 + 8;
         }
-        if self.APEHDACEGKB != 0. {
+        if self.JNFDJBOPMEP != 0. {
             my_size += 2 + 8;
         }
-        if self.HFDHMMHNKJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(49, self.HFDHMMHNKJM);
+        if self.DNJPNOBIKAO != 0 {
+            my_size += ::protobuf::rt::uint32_size(49, self.DNJPNOBIKAO);
         }
-        if self.CEBNMMHMILJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(50, self.CEBNMMHMILJ);
+        if self.FGHDPDMMIMO != 0 {
+            my_size += ::protobuf::rt::uint32_size(50, self.FGHDPDMMIMO);
         }
-        if self.EHBJKFACMHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(51, self.EHBJKFACMHK);
+        if self.MBCONNAOCFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(51, self.MBCONNAOCFM);
         }
-        if self.CEJBDDLFPOM != 0. {
+        if self.ABGFEBMIFMD != 0. {
             my_size += 2 + 8;
         }
-        if self.NKMLHNODEDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(53, self.NKMLHNODEDO);
+        if self.JCDGLEMAKHK != 0 {
+            my_size += ::protobuf::rt::uint32_size(53, self.JCDGLEMAKHK);
         }
-        if self.DNJIIAJKLEN != 0 {
-            my_size += ::protobuf::rt::uint32_size(54, self.DNJIIAJKLEN);
+        if self.GGJBIGFHCHI != 0 {
+            my_size += ::protobuf::rt::uint32_size(54, self.GGJBIGFHCHI);
         }
         if self.enhanced_id != 0 {
             my_size += ::protobuf::rt::uint32_size(55, self.enhanced_id);
         }
-        if self.OBPOHICEAIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(56, self.OBPOHICEAIB);
+        if self.KNJPDJKAJLK != 0 {
+            my_size += ::protobuf::rt::uint32_size(56, self.KNJPDJKAJLK);
         }
-        if let Some(v) = self.JFLOIPIOLAG.as_ref() {
+        if let Some(v) = self.HCBFGIAOOJO.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.APFCFDLIGPO.as_ref() {
+        if let Some(v) = self.MNLBEHIEGHC.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -956,73 +956,73 @@ impl ::protobuf::Message for AvatarBattleInfo {
         if self.assist_uid != 0 {
             os.write_uint32(35, self.assist_uid)?;
         }
-        for v in &self.FJDPEIOMCJC {
+        for v in &self.PKPMAJKAIJB {
             ::protobuf::rt::write_message_field_with_cached_size(36, v, os)?;
         };
-        if self.MMGELLLJGNA != 0. {
-            os.write_double(37, self.MMGELLLJGNA)?;
+        if self.GJLIOOIFHPI != 0. {
+            os.write_double(37, self.GJLIOOIFHPI)?;
         }
-        if self.ECFCDBEKJIB != 0. {
-            os.write_double(38, self.ECFCDBEKJIB)?;
+        if self.BCIICAFAEPO != 0. {
+            os.write_double(38, self.BCIICAFAEPO)?;
         }
-        if self.HHBBNNGKKME != 0. {
-            os.write_double(39, self.HHBBNNGKKME)?;
+        if self.PLLGKIHKOBI != 0. {
+            os.write_double(39, self.PLLGKIHKOBI)?;
         }
-        if self.AKGFHKPJDDH != 0. {
-            os.write_double(40, self.AKGFHKPJDDH)?;
+        if self.FJCKAJBCDBN != 0. {
+            os.write_double(40, self.FJCKAJBCDBN)?;
         }
-        for v in &self.HKHCINMGKGM {
+        for v in &self.DDLFECCNCNE {
             ::protobuf::rt::write_message_field_with_cached_size(41, v, os)?;
         };
-        if self.GDMCALJAKBO != 0 {
-            os.write_uint32(42, self.GDMCALJAKBO)?;
+        if self.MHPBAJLOJCN != 0 {
+            os.write_uint32(42, self.MHPBAJLOJCN)?;
         }
-        if self.EOFOPCOFANJ != 0 {
-            os.write_uint32(43, self.EOFOPCOFANJ)?;
+        if self.OJGFIOONBMD != 0 {
+            os.write_uint32(43, self.OJGFIOONBMD)?;
         }
-        if self.FPGPMCPEHNO != 0. {
-            os.write_double(44, self.FPGPMCPEHNO)?;
+        if self.GLBEOAPOKGM != 0. {
+            os.write_double(44, self.GLBEOAPOKGM)?;
         }
-        if self.BJIMPEALEDG != 0. {
-            os.write_double(45, self.BJIMPEALEDG)?;
+        if self.JBLLBDNAIFD != 0. {
+            os.write_double(45, self.JBLLBDNAIFD)?;
         }
-        if self.LPHAGJNIFKE != 0. {
-            os.write_double(46, self.LPHAGJNIFKE)?;
+        if self.DFFMKOBONKP != 0. {
+            os.write_double(46, self.DFFMKOBONKP)?;
         }
-        if self.OOKPFEHOOPK != 0. {
-            os.write_double(47, self.OOKPFEHOOPK)?;
+        if self.FEOFMAIGEID != 0. {
+            os.write_double(47, self.FEOFMAIGEID)?;
         }
-        if self.APEHDACEGKB != 0. {
-            os.write_double(48, self.APEHDACEGKB)?;
+        if self.JNFDJBOPMEP != 0. {
+            os.write_double(48, self.JNFDJBOPMEP)?;
         }
-        if self.HFDHMMHNKJM != 0 {
-            os.write_uint32(49, self.HFDHMMHNKJM)?;
+        if self.DNJPNOBIKAO != 0 {
+            os.write_uint32(49, self.DNJPNOBIKAO)?;
         }
-        if self.CEBNMMHMILJ != 0 {
-            os.write_uint32(50, self.CEBNMMHMILJ)?;
+        if self.FGHDPDMMIMO != 0 {
+            os.write_uint32(50, self.FGHDPDMMIMO)?;
         }
-        if self.EHBJKFACMHK != 0 {
-            os.write_uint32(51, self.EHBJKFACMHK)?;
+        if self.MBCONNAOCFM != 0 {
+            os.write_uint32(51, self.MBCONNAOCFM)?;
         }
-        if self.CEJBDDLFPOM != 0. {
-            os.write_double(52, self.CEJBDDLFPOM)?;
+        if self.ABGFEBMIFMD != 0. {
+            os.write_double(52, self.ABGFEBMIFMD)?;
         }
-        if self.NKMLHNODEDO != 0 {
-            os.write_uint32(53, self.NKMLHNODEDO)?;
+        if self.JCDGLEMAKHK != 0 {
+            os.write_uint32(53, self.JCDGLEMAKHK)?;
         }
-        if self.DNJIIAJKLEN != 0 {
-            os.write_uint32(54, self.DNJIIAJKLEN)?;
+        if self.GGJBIGFHCHI != 0 {
+            os.write_uint32(54, self.GGJBIGFHCHI)?;
         }
         if self.enhanced_id != 0 {
             os.write_uint32(55, self.enhanced_id)?;
         }
-        if self.OBPOHICEAIB != 0 {
-            os.write_uint32(56, self.OBPOHICEAIB)?;
+        if self.KNJPDJKAJLK != 0 {
+            os.write_uint32(56, self.KNJPDJKAJLK)?;
         }
-        if let Some(v) = self.JFLOIPIOLAG.as_ref() {
+        if let Some(v) = self.HCBFGIAOOJO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(57, v, os)?;
         }
-        if let Some(v) = self.APFCFDLIGPO.as_ref() {
+        if let Some(v) = self.MNLBEHIEGHC.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(58, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -1077,29 +1077,29 @@ impl ::protobuf::Message for AvatarBattleInfo {
         self.initial_status.clear();
         self.relics.clear();
         self.assist_uid = 0;
-        self.FJDPEIOMCJC.clear();
-        self.MMGELLLJGNA = 0.;
-        self.ECFCDBEKJIB = 0.;
-        self.HHBBNNGKKME = 0.;
-        self.AKGFHKPJDDH = 0.;
-        self.HKHCINMGKGM.clear();
-        self.GDMCALJAKBO = 0;
-        self.EOFOPCOFANJ = 0;
-        self.FPGPMCPEHNO = 0.;
-        self.BJIMPEALEDG = 0.;
-        self.LPHAGJNIFKE = 0.;
-        self.OOKPFEHOOPK = 0.;
-        self.APEHDACEGKB = 0.;
-        self.HFDHMMHNKJM = 0;
-        self.CEBNMMHMILJ = 0;
-        self.EHBJKFACMHK = 0;
-        self.CEJBDDLFPOM = 0.;
-        self.NKMLHNODEDO = 0;
-        self.DNJIIAJKLEN = 0;
+        self.PKPMAJKAIJB.clear();
+        self.GJLIOOIFHPI = 0.;
+        self.BCIICAFAEPO = 0.;
+        self.PLLGKIHKOBI = 0.;
+        self.FJCKAJBCDBN = 0.;
+        self.DDLFECCNCNE.clear();
+        self.MHPBAJLOJCN = 0;
+        self.OJGFIOONBMD = 0;
+        self.GLBEOAPOKGM = 0.;
+        self.JBLLBDNAIFD = 0.;
+        self.DFFMKOBONKP = 0.;
+        self.FEOFMAIGEID = 0.;
+        self.JNFDJBOPMEP = 0.;
+        self.DNJPNOBIKAO = 0;
+        self.FGHDPDMMIMO = 0;
+        self.MBCONNAOCFM = 0;
+        self.ABGFEBMIFMD = 0.;
+        self.JCDGLEMAKHK = 0;
+        self.GGJBIGFHCHI = 0;
         self.enhanced_id = 0;
-        self.OBPOHICEAIB = 0;
-        self.JFLOIPIOLAG.clear();
-        self.APFCFDLIGPO.clear();
+        self.KNJPDJKAJLK = 0;
+        self.HCBFGIAOOJO.clear();
+        self.MNLBEHIEGHC.clear();
         self.special_fields.clear();
     }
 
@@ -1140,29 +1140,29 @@ impl ::protobuf::Message for AvatarBattleInfo {
             initial_status: ::protobuf::MessageField::none(),
             relics: ::std::vec::Vec::new(),
             assist_uid: 0,
-            FJDPEIOMCJC: ::std::vec::Vec::new(),
-            MMGELLLJGNA: 0.,
-            ECFCDBEKJIB: 0.,
-            HHBBNNGKKME: 0.,
-            AKGFHKPJDDH: 0.,
-            HKHCINMGKGM: ::std::vec::Vec::new(),
-            GDMCALJAKBO: 0,
-            EOFOPCOFANJ: 0,
-            FPGPMCPEHNO: 0.,
-            BJIMPEALEDG: 0.,
-            LPHAGJNIFKE: 0.,
-            OOKPFEHOOPK: 0.,
-            APEHDACEGKB: 0.,
-            HFDHMMHNKJM: 0,
-            CEBNMMHMILJ: 0,
-            EHBJKFACMHK: 0,
-            CEJBDDLFPOM: 0.,
-            NKMLHNODEDO: 0,
-            DNJIIAJKLEN: 0,
+            PKPMAJKAIJB: ::std::vec::Vec::new(),
+            GJLIOOIFHPI: 0.,
+            BCIICAFAEPO: 0.,
+            PLLGKIHKOBI: 0.,
+            FJCKAJBCDBN: 0.,
+            DDLFECCNCNE: ::std::vec::Vec::new(),
+            MHPBAJLOJCN: 0,
+            OJGFIOONBMD: 0,
+            GLBEOAPOKGM: 0.,
+            JBLLBDNAIFD: 0.,
+            DFFMKOBONKP: 0.,
+            FEOFMAIGEID: 0.,
+            JNFDJBOPMEP: 0.,
+            DNJPNOBIKAO: 0,
+            FGHDPDMMIMO: 0,
+            MBCONNAOCFM: 0,
+            ABGFEBMIFMD: 0.,
+            JCDGLEMAKHK: 0,
+            GGJBIGFHCHI: 0,
             enhanced_id: 0,
-            OBPOHICEAIB: 0,
-            JFLOIPIOLAG: ::protobuf::MessageField::none(),
-            APFCFDLIGPO: ::protobuf::MessageField::none(),
+            KNJPDJKAJLK: 0,
+            HCBFGIAOOJO: ::protobuf::MessageField::none(),
+            MNLBEHIEGHC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -1190,7 +1190,7 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16AvatarBattleInfo.proto\x1a\x13AbilityUseStt.proto\x1a\x1aAttackDam\
     ageProperty.proto\x1a\x14AvatarProperty.proto\x1a\x15AvatarSkillTree.pro\
     to\x1a\x10AvatarType.proto\x1a\x11BattleRelic.proto\x1a\x17EquipmentProp\
-    erty.proto\x1a\x11NHEGOCCNDLB.proto\x1a\x11NKEDPLHKKGI.proto\x1a\x16Skil\
+    erty.proto\x1a\x11GLFPPJECFHD.proto\x1a\x11JKNAJDFHBLK.proto\x1a\x16Skil\
     lUseProperty.proto\x1a\x11SpAddSource.proto\"\xb4\x12\n\x10AvatarBattleI\
     nfo\x12,\n\x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarT\
     ype\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12!\n\x0cavatar_level\x18\
@@ -1225,26 +1225,26 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     talShieldDamage\x126\n\x0einitial_status\x18!\x20\x01(\x0b2\x0f.AvatarPr\
     opertyR\rinitialStatus\x12$\n\x06relics\x18\"\x20\x03(\x0b2\x0c.BattleRe\
     licR\x06relics\x12\x1d\n\nassist_uid\x18#\x20\x01(\rR\tassistUid\x127\n\
-    \x0bFJDPEIOMCJC\x18$\x20\x03(\x0b2\x15.AttackDamagePropertyR\x0bFJDPEIOM\
-    CJC\x12\x20\n\x0bMMGELLLJGNA\x18%\x20\x01(\x01R\x0bMMGELLLJGNA\x12\x20\n\
-    \x0bECFCDBEKJIB\x18&\x20\x01(\x01R\x0bECFCDBEKJIB\x12\x20\n\x0bHHBBNNGKK\
-    ME\x18'\x20\x01(\x01R\x0bHHBBNNGKKME\x12\x20\n\x0bAKGFHKPJDDH\x18(\x20\
-    \x01(\x01R\x0bAKGFHKPJDDH\x120\n\x0bHKHCINMGKGM\x18)\x20\x03(\x0b2\x0e.A\
-    bilityUseSttR\x0bHKHCINMGKGM\x12\x20\n\x0bGDMCALJAKBO\x18*\x20\x01(\rR\
-    \x0bGDMCALJAKBO\x12\x20\n\x0bEOFOPCOFANJ\x18+\x20\x01(\rR\x0bEOFOPCOFANJ\
-    \x12\x20\n\x0bFPGPMCPEHNO\x18,\x20\x01(\x01R\x0bFPGPMCPEHNO\x12\x20\n\
-    \x0bBJIMPEALEDG\x18-\x20\x01(\x01R\x0bBJIMPEALEDG\x12\x20\n\x0bLPHAGJNIF\
-    KE\x18.\x20\x01(\x01R\x0bLPHAGJNIFKE\x12\x20\n\x0bOOKPFEHOOPK\x18/\x20\
-    \x01(\x01R\x0bOOKPFEHOOPK\x12\x20\n\x0bAPEHDACEGKB\x180\x20\x01(\x01R\
-    \x0bAPEHDACEGKB\x12\x20\n\x0bHFDHMMHNKJM\x181\x20\x01(\rR\x0bHFDHMMHNKJM\
-    \x12\x20\n\x0bCEBNMMHMILJ\x182\x20\x01(\rR\x0bCEBNMMHMILJ\x12\x20\n\x0bE\
-    HBJKFACMHK\x183\x20\x01(\rR\x0bEHBJKFACMHK\x12\x20\n\x0bCEJBDDLFPOM\x184\
-    \x20\x01(\x01R\x0bCEJBDDLFPOM\x12\x20\n\x0bNKMLHNODEDO\x185\x20\x01(\rR\
-    \x0bNKMLHNODEDO\x12\x20\n\x0bDNJIIAJKLEN\x186\x20\x01(\rR\x0bDNJIIAJKLEN\
-    \x12\x1f\n\x0benhanced_id\x187\x20\x01(\rR\nenhancedId\x12\x20\n\x0bOBPO\
-    HICEAIB\x188\x20\x01(\rR\x0bOBPOHICEAIB\x12.\n\x0bJFLOIPIOLAG\x189\x20\
-    \x01(\x0b2\x0c.NHEGOCCNDLBR\x0bJFLOIPIOLAG\x12.\n\x0bAPFCFDLIGPO\x18:\
-    \x20\x01(\x0b2\x0c.NKEDPLHKKGIR\x0bAPFCFDLIGPOb\x06proto3\
+    \x0bPKPMAJKAIJB\x18$\x20\x03(\x0b2\x15.AttackDamagePropertyR\x0bPKPMAJKA\
+    IJB\x12\x20\n\x0bGJLIOOIFHPI\x18%\x20\x01(\x01R\x0bGJLIOOIFHPI\x12\x20\n\
+    \x0bBCIICAFAEPO\x18&\x20\x01(\x01R\x0bBCIICAFAEPO\x12\x20\n\x0bPLLGKIHKO\
+    BI\x18'\x20\x01(\x01R\x0bPLLGKIHKOBI\x12\x20\n\x0bFJCKAJBCDBN\x18(\x20\
+    \x01(\x01R\x0bFJCKAJBCDBN\x120\n\x0bDDLFECCNCNE\x18)\x20\x03(\x0b2\x0e.A\
+    bilityUseSttR\x0bDDLFECCNCNE\x12\x20\n\x0bMHPBAJLOJCN\x18*\x20\x01(\rR\
+    \x0bMHPBAJLOJCN\x12\x20\n\x0bOJGFIOONBMD\x18+\x20\x01(\rR\x0bOJGFIOONBMD\
+    \x12\x20\n\x0bGLBEOAPOKGM\x18,\x20\x01(\x01R\x0bGLBEOAPOKGM\x12\x20\n\
+    \x0bJBLLBDNAIFD\x18-\x20\x01(\x01R\x0bJBLLBDNAIFD\x12\x20\n\x0bDFFMKOBON\
+    KP\x18.\x20\x01(\x01R\x0bDFFMKOBONKP\x12\x20\n\x0bFEOFMAIGEID\x18/\x20\
+    \x01(\x01R\x0bFEOFMAIGEID\x12\x20\n\x0bJNFDJBOPMEP\x180\x20\x01(\x01R\
+    \x0bJNFDJBOPMEP\x12\x20\n\x0bDNJPNOBIKAO\x181\x20\x01(\rR\x0bDNJPNOBIKAO\
+    \x12\x20\n\x0bFGHDPDMMIMO\x182\x20\x01(\rR\x0bFGHDPDMMIMO\x12\x20\n\x0bM\
+    BCONNAOCFM\x183\x20\x01(\rR\x0bMBCONNAOCFM\x12\x20\n\x0bABGFEBMIFMD\x184\
+    \x20\x01(\x01R\x0bABGFEBMIFMD\x12\x20\n\x0bJCDGLEMAKHK\x185\x20\x01(\rR\
+    \x0bJCDGLEMAKHK\x12\x20\n\x0bGGJBIGFHCHI\x186\x20\x01(\rR\x0bGGJBIGFHCHI\
+    \x12\x1f\n\x0benhanced_id\x187\x20\x01(\rR\nenhancedId\x12\x20\n\x0bKNJP\
+    DJKAJLK\x188\x20\x01(\rR\x0bKNJPDJKAJLK\x12.\n\x0bHCBFGIAOOJO\x189\x20\
+    \x01(\x0b2\x0c.JKNAJDFHBLKR\x0bHCBFGIAOOJO\x12.\n\x0bMNLBEHIEGHC\x18:\
+    \x20\x01(\x0b2\x0c.GLFPPJECFHDR\x0bMNLBEHIEGHCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -1269,8 +1269,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::AvatarType::file_descriptor().clone());
             deps.push(super::BattleRelic::file_descriptor().clone());
             deps.push(super::EquipmentProperty::file_descriptor().clone());
-            deps.push(super::NHEGOCCNDLB::file_descriptor().clone());
-            deps.push(super::NKEDPLHKKGI::file_descriptor().clone());
+            deps.push(super::GLFPPJECFHD::file_descriptor().clone());
+            deps.push(super::JKNAJDFHBLK::file_descriptor().clone());
             deps.push(super::SkillUseProperty::file_descriptor().clone());
             deps.push(super::SpAddSource::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

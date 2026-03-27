@@ -30,26 +30,26 @@ pub struct ChallengePeakSettleScNotify {
     // message fields
     // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.turn_left)
     pub turn_left: u32,
-    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.peak_id)
-    pub peak_id: u32,
     // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.cycles_used)
     pub cycles_used: u32,
     // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.peak_reward_group_list)
     pub peak_reward_group_list: ::std::vec::Vec<super::ChallengePeakRewardGroup::ChallengePeakRewardGroup>,
-    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.is_first_pass)
-    pub is_first_pass: bool,
-    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.is_unlock_easy_boss)
-    pub is_unlock_easy_boss: bool,
-    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.is_win)
-    pub is_win: bool,
-    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.hard_mode_has_passed)
-    pub hard_mode_has_passed: bool,
-    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.finished_target_list)
-    pub finished_target_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.is_wait_confirm)
-    pub is_wait_confirm: bool,
     // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.is_boss_target_better)
     pub is_boss_target_better: bool,
+    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.is_wait_confirm)
+    pub is_wait_confirm: bool,
+    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.peak_id)
+    pub peak_id: u32,
+    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.finished_target_list)
+    pub finished_target_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.is_unlock_easy_boss)
+    pub is_unlock_easy_boss: bool,
+    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.hard_mode_has_passed)
+    pub hard_mode_has_passed: bool,
+    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.is_first_pass)
+    pub is_first_pass: bool,
+    // @@protoc_insertion_point(field:ChallengePeakSettleScNotify.is_win)
+    pub is_win: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengePeakSettleScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -75,11 +75,6 @@ impl ChallengePeakSettleScNotify {
             |m: &mut ChallengePeakSettleScNotify| { &mut m.turn_left },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "peak_id",
-            |m: &ChallengePeakSettleScNotify| { &m.peak_id },
-            |m: &mut ChallengePeakSettleScNotify| { &mut m.peak_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cycles_used",
             |m: &ChallengePeakSettleScNotify| { &m.cycles_used },
             |m: &mut ChallengePeakSettleScNotify| { &mut m.cycles_used },
@@ -90,29 +85,9 @@ impl ChallengePeakSettleScNotify {
             |m: &mut ChallengePeakSettleScNotify| { &mut m.peak_reward_group_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_first_pass",
-            |m: &ChallengePeakSettleScNotify| { &m.is_first_pass },
-            |m: &mut ChallengePeakSettleScNotify| { &mut m.is_first_pass },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_unlock_easy_boss",
-            |m: &ChallengePeakSettleScNotify| { &m.is_unlock_easy_boss },
-            |m: &mut ChallengePeakSettleScNotify| { &mut m.is_unlock_easy_boss },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &ChallengePeakSettleScNotify| { &m.is_win },
-            |m: &mut ChallengePeakSettleScNotify| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "hard_mode_has_passed",
-            |m: &ChallengePeakSettleScNotify| { &m.hard_mode_has_passed },
-            |m: &mut ChallengePeakSettleScNotify| { &mut m.hard_mode_has_passed },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "finished_target_list",
-            |m: &ChallengePeakSettleScNotify| { &m.finished_target_list },
-            |m: &mut ChallengePeakSettleScNotify| { &mut m.finished_target_list },
+            "is_boss_target_better",
+            |m: &ChallengePeakSettleScNotify| { &m.is_boss_target_better },
+            |m: &mut ChallengePeakSettleScNotify| { &mut m.is_boss_target_better },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_wait_confirm",
@@ -120,9 +95,34 @@ impl ChallengePeakSettleScNotify {
             |m: &mut ChallengePeakSettleScNotify| { &mut m.is_wait_confirm },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_boss_target_better",
-            |m: &ChallengePeakSettleScNotify| { &m.is_boss_target_better },
-            |m: &mut ChallengePeakSettleScNotify| { &mut m.is_boss_target_better },
+            "peak_id",
+            |m: &ChallengePeakSettleScNotify| { &m.peak_id },
+            |m: &mut ChallengePeakSettleScNotify| { &mut m.peak_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "finished_target_list",
+            |m: &ChallengePeakSettleScNotify| { &m.finished_target_list },
+            |m: &mut ChallengePeakSettleScNotify| { &mut m.finished_target_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_unlock_easy_boss",
+            |m: &ChallengePeakSettleScNotify| { &m.is_unlock_easy_boss },
+            |m: &mut ChallengePeakSettleScNotify| { &mut m.is_unlock_easy_boss },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "hard_mode_has_passed",
+            |m: &ChallengePeakSettleScNotify| { &m.hard_mode_has_passed },
+            |m: &mut ChallengePeakSettleScNotify| { &mut m.hard_mode_has_passed },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_first_pass",
+            |m: &ChallengePeakSettleScNotify| { &m.is_first_pass },
+            |m: &mut ChallengePeakSettleScNotify| { &mut m.is_first_pass },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_win",
+            |m: &ChallengePeakSettleScNotify| { &m.is_win },
+            |m: &mut ChallengePeakSettleScNotify| { &mut m.is_win },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengePeakSettleScNotify>(
             "ChallengePeakSettleScNotify",
@@ -142,41 +142,41 @@ impl ::protobuf::Message for ChallengePeakSettleScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
+                88 => {
                     self.turn_left = is.read_uint32()?;
                 },
-                96 => {
-                    self.peak_id = is.read_uint32()?;
-                },
-                72 => {
+                120 => {
                     self.cycles_used = is.read_uint32()?;
                 },
-                66 => {
+                74 => {
                     self.peak_reward_group_list.push(is.read_message()?);
                 },
-                24 => {
-                    self.is_first_pass = is.read_bool()?;
+                104 => {
+                    self.is_boss_target_better = is.read_bool()?;
+                },
+                56 => {
+                    self.is_wait_confirm = is.read_bool()?;
+                },
+                32 => {
+                    self.peak_id = is.read_uint32()?;
+                },
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
                 16 => {
-                    self.is_unlock_easy_boss = is.read_bool()?;
+                    self.finished_target_list.push(is.read_uint32()?);
                 },
-                8 => {
-                    self.is_win = is.read_bool()?;
+                112 => {
+                    self.is_unlock_easy_boss = is.read_bool()?;
                 },
                 40 => {
                     self.hard_mode_has_passed = is.read_bool()?;
                 },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
-                },
-                56 => {
-                    self.finished_target_list.push(is.read_uint32()?);
+                64 => {
+                    self.is_first_pass = is.read_bool()?;
                 },
                 48 => {
-                    self.is_wait_confirm = is.read_bool()?;
-                },
-                32 => {
-                    self.is_boss_target_better = is.read_bool()?;
+                    self.is_win = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -191,35 +191,35 @@ impl ::protobuf::Message for ChallengePeakSettleScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.turn_left != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.turn_left);
-        }
-        if self.peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.peak_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.turn_left);
         }
         if self.cycles_used != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.cycles_used);
+            my_size += ::protobuf::rt::uint32_size(15, self.cycles_used);
         }
         for value in &self.peak_reward_group_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.is_first_pass != false {
+        if self.is_boss_target_better != false {
             my_size += 1 + 1;
         }
+        if self.is_wait_confirm != false {
+            my_size += 1 + 1;
+        }
+        if self.peak_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.peak_id);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.finished_target_list);
         if self.is_unlock_easy_boss != false {
-            my_size += 1 + 1;
-        }
-        if self.is_win != false {
             my_size += 1 + 1;
         }
         if self.hard_mode_has_passed != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.finished_target_list);
-        if self.is_wait_confirm != false {
+        if self.is_first_pass != false {
             my_size += 1 + 1;
         }
-        if self.is_boss_target_better != false {
+        if self.is_win != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -229,35 +229,35 @@ impl ::protobuf::Message for ChallengePeakSettleScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.turn_left != 0 {
-            os.write_uint32(15, self.turn_left)?;
-        }
-        if self.peak_id != 0 {
-            os.write_uint32(12, self.peak_id)?;
+            os.write_uint32(11, self.turn_left)?;
         }
         if self.cycles_used != 0 {
-            os.write_uint32(9, self.cycles_used)?;
+            os.write_uint32(15, self.cycles_used)?;
         }
         for v in &self.peak_reward_group_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        if self.is_first_pass != false {
-            os.write_bool(3, self.is_first_pass)?;
+        if self.is_boss_target_better != false {
+            os.write_bool(13, self.is_boss_target_better)?;
         }
+        if self.is_wait_confirm != false {
+            os.write_bool(7, self.is_wait_confirm)?;
+        }
+        if self.peak_id != 0 {
+            os.write_uint32(4, self.peak_id)?;
+        }
+        os.write_repeated_packed_uint32(2, &self.finished_target_list)?;
         if self.is_unlock_easy_boss != false {
-            os.write_bool(2, self.is_unlock_easy_boss)?;
-        }
-        if self.is_win != false {
-            os.write_bool(1, self.is_win)?;
+            os.write_bool(14, self.is_unlock_easy_boss)?;
         }
         if self.hard_mode_has_passed != false {
             os.write_bool(5, self.hard_mode_has_passed)?;
         }
-        os.write_repeated_packed_uint32(7, &self.finished_target_list)?;
-        if self.is_wait_confirm != false {
-            os.write_bool(6, self.is_wait_confirm)?;
+        if self.is_first_pass != false {
+            os.write_bool(8, self.is_first_pass)?;
         }
-        if self.is_boss_target_better != false {
-            os.write_bool(4, self.is_boss_target_better)?;
+        if self.is_win != false {
+            os.write_bool(6, self.is_win)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -277,32 +277,32 @@ impl ::protobuf::Message for ChallengePeakSettleScNotify {
 
     fn clear(&mut self) {
         self.turn_left = 0;
-        self.peak_id = 0;
         self.cycles_used = 0;
         self.peak_reward_group_list.clear();
-        self.is_first_pass = false;
-        self.is_unlock_easy_boss = false;
-        self.is_win = false;
-        self.hard_mode_has_passed = false;
-        self.finished_target_list.clear();
-        self.is_wait_confirm = false;
         self.is_boss_target_better = false;
+        self.is_wait_confirm = false;
+        self.peak_id = 0;
+        self.finished_target_list.clear();
+        self.is_unlock_easy_boss = false;
+        self.hard_mode_has_passed = false;
+        self.is_first_pass = false;
+        self.is_win = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengePeakSettleScNotify {
         static instance: ChallengePeakSettleScNotify = ChallengePeakSettleScNotify {
             turn_left: 0,
-            peak_id: 0,
             cycles_used: 0,
             peak_reward_group_list: ::std::vec::Vec::new(),
-            is_first_pass: false,
-            is_unlock_easy_boss: false,
-            is_win: false,
-            hard_mode_has_passed: false,
-            finished_target_list: ::std::vec::Vec::new(),
-            is_wait_confirm: false,
             is_boss_target_better: false,
+            is_wait_confirm: false,
+            peak_id: 0,
+            finished_target_list: ::std::vec::Vec::new(),
+            is_unlock_easy_boss: false,
+            hard_mode_has_passed: false,
+            is_first_pass: false,
+            is_win: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -329,17 +329,17 @@ impl ::protobuf::reflect::ProtobufValue for ChallengePeakSettleScNotify {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ChallengePeakSettleScNotify.proto\x1a\x1eChallengePeakRewardGroup.pro\
     to\"\xec\x03\n\x1bChallengePeakSettleScNotify\x12\x1b\n\tturn_left\x18\
-    \x0f\x20\x01(\rR\x08turnLeft\x12\x17\n\x07peak_id\x18\x0c\x20\x01(\rR\
-    \x06peakId\x12\x1f\n\x0bcycles_used\x18\t\x20\x01(\rR\ncyclesUsed\x12N\n\
-    \x16peak_reward_group_list\x18\x08\x20\x03(\x0b2\x19.ChallengePeakReward\
-    GroupR\x13peakRewardGroupList\x12\"\n\ris_first_pass\x18\x03\x20\x01(\
-    \x08R\x0bisFirstPass\x12-\n\x13is_unlock_easy_boss\x18\x02\x20\x01(\x08R\
-    \x10isUnlockEasyBoss\x12\x15\n\x06is_win\x18\x01\x20\x01(\x08R\x05isWin\
-    \x12/\n\x14hard_mode_has_passed\x18\x05\x20\x01(\x08R\x11hardModeHasPass\
-    ed\x120\n\x14finished_target_list\x18\x07\x20\x03(\rR\x12finishedTargetL\
-    ist\x12&\n\x0fis_wait_confirm\x18\x06\x20\x01(\x08R\risWaitConfirm\x121\
-    \n\x15is_boss_target_better\x18\x04\x20\x01(\x08R\x12isBossTargetBetterb\
-    \x06proto3\
+    \x0b\x20\x01(\rR\x08turnLeft\x12\x1f\n\x0bcycles_used\x18\x0f\x20\x01(\r\
+    R\ncyclesUsed\x12N\n\x16peak_reward_group_list\x18\t\x20\x03(\x0b2\x19.C\
+    hallengePeakRewardGroupR\x13peakRewardGroupList\x121\n\x15is_boss_target\
+    _better\x18\r\x20\x01(\x08R\x12isBossTargetBetter\x12&\n\x0fis_wait_conf\
+    irm\x18\x07\x20\x01(\x08R\risWaitConfirm\x12\x17\n\x07peak_id\x18\x04\
+    \x20\x01(\rR\x06peakId\x120\n\x14finished_target_list\x18\x02\x20\x03(\r\
+    R\x12finishedTargetList\x12-\n\x13is_unlock_easy_boss\x18\x0e\x20\x01(\
+    \x08R\x10isUnlockEasyBoss\x12/\n\x14hard_mode_has_passed\x18\x05\x20\x01\
+    (\x08R\x11hardModeHasPassed\x12\"\n\ris_first_pass\x18\x08\x20\x01(\x08R\
+    \x0bisFirstPass\x12\x15\n\x06is_win\x18\x06\x20\x01(\x08R\x05isWinb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesGetExtraCardPieceInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:PlanetFesGetExtraCardPieceInfoScRsp.EPIOIBBENEG)
+    pub EPIOIBBENEG: ::protobuf::MessageField<super::NCBGHHPEHDH::NCBGHHPEHDH>,
     // @@protoc_insertion_point(field:PlanetFesGetExtraCardPieceInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PlanetFesGetExtraCardPieceInfoScRsp.CNLBECIGOBF)
-    pub CNLBECIGOBF: ::protobuf::MessageField<super::EOHPNKILMBD::EOHPNKILMBD>,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesGetExtraCardPieceInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl PlanetFesGetExtraCardPieceInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NCBGHHPEHDH::NCBGHHPEHDH>(
+            "EPIOIBBENEG",
+            |m: &PlanetFesGetExtraCardPieceInfoScRsp| { &m.EPIOIBBENEG },
+            |m: &mut PlanetFesGetExtraCardPieceInfoScRsp| { &mut m.EPIOIBBENEG },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlanetFesGetExtraCardPieceInfoScRsp| { &m.retcode },
             |m: &mut PlanetFesGetExtraCardPieceInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EOHPNKILMBD::EOHPNKILMBD>(
-            "CNLBECIGOBF",
-            |m: &PlanetFesGetExtraCardPieceInfoScRsp| { &m.CNLBECIGOBF },
-            |m: &mut PlanetFesGetExtraCardPieceInfoScRsp| { &mut m.CNLBECIGOBF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesGetExtraCardPieceInfoScRsp>(
             "PlanetFesGetExtraCardPieceInfoScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesGetExtraCardPieceInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.retcode = is.read_uint32()?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EPIOIBBENEG)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CNLBECIGOBF)?;
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for PlanetFesGetExtraCardPieceInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
-        }
-        if let Some(v) = self.CNLBECIGOBF.as_ref() {
+        if let Some(v) = self.EPIOIBBENEG.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for PlanetFesGetExtraCardPieceInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+        if let Some(v) = self.EPIOIBBENEG.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
-        if let Some(v) = self.CNLBECIGOBF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for PlanetFesGetExtraCardPieceInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.EPIOIBBENEG.clear();
         self.retcode = 0;
-        self.CNLBECIGOBF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGetExtraCardPieceInfoScRsp {
         static instance: PlanetFesGetExtraCardPieceInfoScRsp = PlanetFesGetExtraCardPieceInfoScRsp {
+            EPIOIBBENEG: ::protobuf::MessageField::none(),
             retcode: 0,
-            CNLBECIGOBF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGetExtraCardPieceInfoScRsp 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)PlanetFesGetExtraCardPieceInfoScRsp.proto\x1a\x11EOHPNKILMBD.proto\"o\
-    \n#PlanetFesGetExtraCardPieceInfoScRsp\x12\x18\n\x07retcode\x18\x0f\x20\
-    \x01(\rR\x07retcode\x12.\n\x0bCNLBECIGOBF\x18\r\x20\x01(\x0b2\x0c.EOHPNK\
-    ILMBDR\x0bCNLBECIGOBFb\x06proto3\
+    \n)PlanetFesGetExtraCardPieceInfoScRsp.proto\x1a\x11NCBGHHPEHDH.proto\"o\
+    \n#PlanetFesGetExtraCardPieceInfoScRsp\x12.\n\x0bEPIOIBBENEG\x18\n\x20\
+    \x01(\x0b2\x0c.NCBGHHPEHDHR\x0bEPIOIBBENEG\x12\x18\n\x07retcode\x18\x01\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EOHPNKILMBD::file_descriptor().clone());
+            deps.push(super::NCBGHHPEHDH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesGetExtraCardPieceInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

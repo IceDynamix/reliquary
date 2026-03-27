@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ElfRestaurantRecycleSeedCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ElfRestaurantRecycleSeedCsReq.FFDHHINIDEP)
-    pub FFDHHINIDEP: ::std::vec::Vec<super::FGNHOADLKGE::FGNHOADLKGE>,
+    // @@protoc_insertion_point(field:ElfRestaurantRecycleSeedCsReq.AKBKNKCKOFO)
+    pub AKBKNKCKOFO: ::std::vec::Vec<super::LOEPKDDHGPC::LOEPKDDHGPC>,
     // special fields
     // @@protoc_insertion_point(special_field:ElfRestaurantRecycleSeedCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ElfRestaurantRecycleSeedCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FFDHHINIDEP",
-            |m: &ElfRestaurantRecycleSeedCsReq| { &m.FFDHHINIDEP },
-            |m: &mut ElfRestaurantRecycleSeedCsReq| { &mut m.FFDHHINIDEP },
+            "AKBKNKCKOFO",
+            |m: &ElfRestaurantRecycleSeedCsReq| { &m.AKBKNKCKOFO },
+            |m: &mut ElfRestaurantRecycleSeedCsReq| { &mut m.AKBKNKCKOFO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ElfRestaurantRecycleSeedCsReq>(
             "ElfRestaurantRecycleSeedCsReq",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for ElfRestaurantRecycleSeedCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 58 => {
-                    self.FFDHHINIDEP.push(is.read_message()?);
+                    self.AKBKNKCKOFO.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ElfRestaurantRecycleSeedCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.FFDHHINIDEP {
+        for value in &self.AKBKNKCKOFO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ElfRestaurantRecycleSeedCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.FFDHHINIDEP {
+        for v in &self.AKBKNKCKOFO {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -117,13 +117,13 @@ impl ::protobuf::Message for ElfRestaurantRecycleSeedCsReq {
     }
 
     fn clear(&mut self) {
-        self.FFDHHINIDEP.clear();
+        self.AKBKNKCKOFO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ElfRestaurantRecycleSeedCsReq {
         static instance: ElfRestaurantRecycleSeedCsReq = ElfRestaurantRecycleSeedCsReq {
-            FFDHHINIDEP: ::std::vec::Vec::new(),
+            AKBKNKCKOFO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantRecycleSeedCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#ElfRestaurantRecycleSeedCsReq.proto\x1a\x11FGNHOADLKGE.proto\"O\n\x1d\
-    ElfRestaurantRecycleSeedCsReq\x12.\n\x0bFFDHHINIDEP\x18\x07\x20\x03(\x0b\
-    2\x0c.FGNHOADLKGER\x0bFFDHHINIDEPb\x06proto3\
+    \n#ElfRestaurantRecycleSeedCsReq.proto\x1a\x11LOEPKDDHGPC.proto\"O\n\x1d\
+    ElfRestaurantRecycleSeedCsReq\x12.\n\x0bAKBKNKCKOFO\x18\x07\x20\x03(\x0b\
+    2\x0c.LOEPKDDHGPCR\x0bAKBKNKCKOFOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FGNHOADLKGE::file_descriptor().clone());
+            deps.push(super::LOEPKDDHGPC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ElfRestaurantRecycleSeedCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

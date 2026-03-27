@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GetStuffType)
 pub enum GetStuffType {
-    // @@protoc_insertion_point(enum_value:GetStuffType.LKKONIIAPJJ_GAPOFIKEOHN)
-    LKKONIIAPJJ_GAPOFIKEOHN = 0,
-    // @@protoc_insertion_point(enum_value:GetStuffType.LKKONIIAPJJ_KMNLDMOGIHE)
-    LKKONIIAPJJ_KMNLDMOGIHE = 1,
-    // @@protoc_insertion_point(enum_value:GetStuffType.LKKONIIAPJJ_PEMEDLHOJBP)
-    LKKONIIAPJJ_PEMEDLHOJBP = 2,
-    // @@protoc_insertion_point(enum_value:GetStuffType.LKKONIIAPJJ_GHBFPHPKCNO)
-    LKKONIIAPJJ_GHBFPHPKCNO = 3,
-    // @@protoc_insertion_point(enum_value:GetStuffType.LKKONIIAPJJ_MEPNDFOAHMG)
-    LKKONIIAPJJ_MEPNDFOAHMG = 4,
-    // @@protoc_insertion_point(enum_value:GetStuffType.LKKONIIAPJJ_PCOGPJHMCKK)
-    LKKONIIAPJJ_PCOGPJHMCKK = 5,
-    // @@protoc_insertion_point(enum_value:GetStuffType.LKKONIIAPJJ_FPJOGHIIEBD)
-    LKKONIIAPJJ_FPJOGHIIEBD = 6,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_DOMPHFHPADB)
+    GetStuffType_DOMPHFHPADB = 0,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_CJCONANHCJJ)
+    GetStuffType_CJCONANHCJJ = 1,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_PONOCACKAJH)
+    GetStuffType_PONOCACKAJH = 2,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_OAFLJDGJMDP)
+    GetStuffType_OAFLJDGJMDP = 3,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_FECCMBJCIKA)
+    GetStuffType_FECCMBJCIKA = 4,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_DCEJLCIHOEP)
+    GetStuffType_DCEJLCIHOEP = 5,
+    // @@protoc_insertion_point(enum_value:GetStuffType.GetStuffType_LCIKNIBCNJP)
+    GetStuffType_LCIKNIBCNJP = 6,
 }
 
 impl ::protobuf::Enum for GetStuffType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for GetStuffType {
 
     fn from_i32(value: i32) -> ::std::option::Option<GetStuffType> {
         match value {
-            0 => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_GAPOFIKEOHN),
-            1 => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_KMNLDMOGIHE),
-            2 => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_PEMEDLHOJBP),
-            3 => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_GHBFPHPKCNO),
-            4 => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_MEPNDFOAHMG),
-            5 => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_PCOGPJHMCKK),
-            6 => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_FPJOGHIIEBD),
+            0 => ::std::option::Option::Some(GetStuffType::GetStuffType_DOMPHFHPADB),
+            1 => ::std::option::Option::Some(GetStuffType::GetStuffType_CJCONANHCJJ),
+            2 => ::std::option::Option::Some(GetStuffType::GetStuffType_PONOCACKAJH),
+            3 => ::std::option::Option::Some(GetStuffType::GetStuffType_OAFLJDGJMDP),
+            4 => ::std::option::Option::Some(GetStuffType::GetStuffType_FECCMBJCIKA),
+            5 => ::std::option::Option::Some(GetStuffType::GetStuffType_DCEJLCIHOEP),
+            6 => ::std::option::Option::Some(GetStuffType::GetStuffType_LCIKNIBCNJP),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GetStuffType> {
         match str {
-            "LKKONIIAPJJ_GAPOFIKEOHN" => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_GAPOFIKEOHN),
-            "LKKONIIAPJJ_KMNLDMOGIHE" => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_KMNLDMOGIHE),
-            "LKKONIIAPJJ_PEMEDLHOJBP" => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_PEMEDLHOJBP),
-            "LKKONIIAPJJ_GHBFPHPKCNO" => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_GHBFPHPKCNO),
-            "LKKONIIAPJJ_MEPNDFOAHMG" => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_MEPNDFOAHMG),
-            "LKKONIIAPJJ_PCOGPJHMCKK" => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_PCOGPJHMCKK),
-            "LKKONIIAPJJ_FPJOGHIIEBD" => ::std::option::Option::Some(GetStuffType::LKKONIIAPJJ_FPJOGHIIEBD),
+            "GetStuffType_DOMPHFHPADB" => ::std::option::Option::Some(GetStuffType::GetStuffType_DOMPHFHPADB),
+            "GetStuffType_CJCONANHCJJ" => ::std::option::Option::Some(GetStuffType::GetStuffType_CJCONANHCJJ),
+            "GetStuffType_PONOCACKAJH" => ::std::option::Option::Some(GetStuffType::GetStuffType_PONOCACKAJH),
+            "GetStuffType_OAFLJDGJMDP" => ::std::option::Option::Some(GetStuffType::GetStuffType_OAFLJDGJMDP),
+            "GetStuffType_FECCMBJCIKA" => ::std::option::Option::Some(GetStuffType::GetStuffType_FECCMBJCIKA),
+            "GetStuffType_DCEJLCIHOEP" => ::std::option::Option::Some(GetStuffType::GetStuffType_DCEJLCIHOEP),
+            "GetStuffType_LCIKNIBCNJP" => ::std::option::Option::Some(GetStuffType::GetStuffType_LCIKNIBCNJP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GetStuffType] = &[
-        GetStuffType::LKKONIIAPJJ_GAPOFIKEOHN,
-        GetStuffType::LKKONIIAPJJ_KMNLDMOGIHE,
-        GetStuffType::LKKONIIAPJJ_PEMEDLHOJBP,
-        GetStuffType::LKKONIIAPJJ_GHBFPHPKCNO,
-        GetStuffType::LKKONIIAPJJ_MEPNDFOAHMG,
-        GetStuffType::LKKONIIAPJJ_PCOGPJHMCKK,
-        GetStuffType::LKKONIIAPJJ_FPJOGHIIEBD,
+        GetStuffType::GetStuffType_DOMPHFHPADB,
+        GetStuffType::GetStuffType_CJCONANHCJJ,
+        GetStuffType::GetStuffType_PONOCACKAJH,
+        GetStuffType::GetStuffType_OAFLJDGJMDP,
+        GetStuffType::GetStuffType_FECCMBJCIKA,
+        GetStuffType::GetStuffType_DCEJLCIHOEP,
+        GetStuffType::GetStuffType_LCIKNIBCNJP,
     ];
 }
 
@@ -101,7 +101,7 @@ impl ::protobuf::EnumFull for GetStuffType {
 
 impl ::std::default::Default for GetStuffType {
     fn default() -> Self {
-        GetStuffType::LKKONIIAPJJ_GAPOFIKEOHN
+        GetStuffType::GetStuffType_DOMPHFHPADB
     }
 }
 
@@ -112,12 +112,12 @@ impl GetStuffType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12GetStuffType.proto*\xd9\x01\n\x0cGetStuffType\x12\x1b\n\x17LKKONII\
-    APJJ_GAPOFIKEOHN\x10\0\x12\x1b\n\x17LKKONIIAPJJ_KMNLDMOGIHE\x10\x01\x12\
-    \x1b\n\x17LKKONIIAPJJ_PEMEDLHOJBP\x10\x02\x12\x1b\n\x17LKKONIIAPJJ_GHBFP\
-    HPKCNO\x10\x03\x12\x1b\n\x17LKKONIIAPJJ_MEPNDFOAHMG\x10\x04\x12\x1b\n\
-    \x17LKKONIIAPJJ_PCOGPJHMCKK\x10\x05\x12\x1b\n\x17LKKONIIAPJJ_FPJOGHIIEBD\
-    \x10\x06b\x06proto3\
+    \n\x12GetStuffType.proto*\xe0\x01\n\x0cGetStuffType\x12\x1c\n\x18GetStuf\
+    fType_DOMPHFHPADB\x10\0\x12\x1c\n\x18GetStuffType_CJCONANHCJJ\x10\x01\
+    \x12\x1c\n\x18GetStuffType_PONOCACKAJH\x10\x02\x12\x1c\n\x18GetStuffType\
+    _OAFLJDGJMDP\x10\x03\x12\x1c\n\x18GetStuffType_FECCMBJCIKA\x10\x04\x12\
+    \x1c\n\x18GetStuffType_DCEJLCIHOEP\x10\x05\x12\x1c\n\x18GetStuffType_LCI\
+    KNIBCNJP\x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdBattlePassType)
 pub enum CmdBattlePassType {
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.LJKOGCNPEIJ_GKJBAODJMJG)
-    LJKOGCNPEIJ_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.LJKOGCNPEIJ_CEHCJBPIEOI)
-    LJKOGCNPEIJ_CEHCJBPIEOI = 3057,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.LJKOGCNPEIJ_IALHJKKLIMP)
-    LJKOGCNPEIJ_IALHJKKLIMP = 3047,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.LJKOGCNPEIJ_KLPDKJEBGEJ)
-    LJKOGCNPEIJ_KLPDKJEBGEJ = 3026,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.LJKOGCNPEIJ_MPLEGJKIANL)
-    LJKOGCNPEIJ_MPLEGJKIANL = 3062,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.LJKOGCNPEIJ_OFECEAOPIGP)
-    LJKOGCNPEIJ_OFECEAOPIGP = 3038,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.LJKOGCNPEIJ_HPAMMBAGPIB)
-    LJKOGCNPEIJ_HPAMMBAGPIB = 3075,
-    // @@protoc_insertion_point(enum_value:CmdBattlePassType.LJKOGCNPEIJ_ABECDOBDKIL)
-    LJKOGCNPEIJ_ABECDOBDKIL = 3020,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassType_MNFEPONEDDJ)
+    CmdBattlePassType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassType_JLPIHDPCKBC)
+    CmdBattlePassType_JLPIHDPCKBC = 3069,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassType_FCGDBMGIPJJ)
+    CmdBattlePassType_FCGDBMGIPJJ = 3035,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassType_GMBKPEGEMKK)
+    CmdBattlePassType_GMBKPEGEMKK = 3100,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassType_IKJPMDLGDHA)
+    CmdBattlePassType_IKJPMDLGDHA = 3062,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassType_FKALHAOEKCG)
+    CmdBattlePassType_FKALHAOEKCG = 3013,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassType_OJFOHLCBIAE)
+    CmdBattlePassType_OJFOHLCBIAE = 3004,
+    // @@protoc_insertion_point(enum_value:CmdBattlePassType.CmdBattlePassType_HILFPPEOLPC)
+    CmdBattlePassType_HILFPPEOLPC = 3083,
 }
 
 impl ::protobuf::Enum for CmdBattlePassType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for CmdBattlePassType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdBattlePassType> {
         match value {
-            0 => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_GKJBAODJMJG),
-            3057 => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_CEHCJBPIEOI),
-            3047 => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_IALHJKKLIMP),
-            3026 => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_KLPDKJEBGEJ),
-            3062 => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_MPLEGJKIANL),
-            3038 => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_OFECEAOPIGP),
-            3075 => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_HPAMMBAGPIB),
-            3020 => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_ABECDOBDKIL),
+            0 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_MNFEPONEDDJ),
+            3069 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_JLPIHDPCKBC),
+            3035 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_FCGDBMGIPJJ),
+            3100 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_GMBKPEGEMKK),
+            3062 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_IKJPMDLGDHA),
+            3013 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_FKALHAOEKCG),
+            3004 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_OJFOHLCBIAE),
+            3083 => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_HILFPPEOLPC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdBattlePassType> {
         match str {
-            "LJKOGCNPEIJ_GKJBAODJMJG" => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_GKJBAODJMJG),
-            "LJKOGCNPEIJ_CEHCJBPIEOI" => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_CEHCJBPIEOI),
-            "LJKOGCNPEIJ_IALHJKKLIMP" => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_IALHJKKLIMP),
-            "LJKOGCNPEIJ_KLPDKJEBGEJ" => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_KLPDKJEBGEJ),
-            "LJKOGCNPEIJ_MPLEGJKIANL" => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_MPLEGJKIANL),
-            "LJKOGCNPEIJ_OFECEAOPIGP" => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_OFECEAOPIGP),
-            "LJKOGCNPEIJ_HPAMMBAGPIB" => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_HPAMMBAGPIB),
-            "LJKOGCNPEIJ_ABECDOBDKIL" => ::std::option::Option::Some(CmdBattlePassType::LJKOGCNPEIJ_ABECDOBDKIL),
+            "CmdBattlePassType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_MNFEPONEDDJ),
+            "CmdBattlePassType_JLPIHDPCKBC" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_JLPIHDPCKBC),
+            "CmdBattlePassType_FCGDBMGIPJJ" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_FCGDBMGIPJJ),
+            "CmdBattlePassType_GMBKPEGEMKK" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_GMBKPEGEMKK),
+            "CmdBattlePassType_IKJPMDLGDHA" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_IKJPMDLGDHA),
+            "CmdBattlePassType_FKALHAOEKCG" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_FKALHAOEKCG),
+            "CmdBattlePassType_OJFOHLCBIAE" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_OJFOHLCBIAE),
+            "CmdBattlePassType_HILFPPEOLPC" => ::std::option::Option::Some(CmdBattlePassType::CmdBattlePassType_HILFPPEOLPC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBattlePassType] = &[
-        CmdBattlePassType::LJKOGCNPEIJ_GKJBAODJMJG,
-        CmdBattlePassType::LJKOGCNPEIJ_CEHCJBPIEOI,
-        CmdBattlePassType::LJKOGCNPEIJ_IALHJKKLIMP,
-        CmdBattlePassType::LJKOGCNPEIJ_KLPDKJEBGEJ,
-        CmdBattlePassType::LJKOGCNPEIJ_MPLEGJKIANL,
-        CmdBattlePassType::LJKOGCNPEIJ_OFECEAOPIGP,
-        CmdBattlePassType::LJKOGCNPEIJ_HPAMMBAGPIB,
-        CmdBattlePassType::LJKOGCNPEIJ_ABECDOBDKIL,
+        CmdBattlePassType::CmdBattlePassType_MNFEPONEDDJ,
+        CmdBattlePassType::CmdBattlePassType_JLPIHDPCKBC,
+        CmdBattlePassType::CmdBattlePassType_FCGDBMGIPJJ,
+        CmdBattlePassType::CmdBattlePassType_GMBKPEGEMKK,
+        CmdBattlePassType::CmdBattlePassType_IKJPMDLGDHA,
+        CmdBattlePassType::CmdBattlePassType_FKALHAOEKCG,
+        CmdBattlePassType::CmdBattlePassType_OJFOHLCBIAE,
+        CmdBattlePassType::CmdBattlePassType_HILFPPEOLPC,
     ];
 }
 
@@ -100,14 +100,14 @@ impl ::protobuf::EnumFull for CmdBattlePassType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdBattlePassType::LJKOGCNPEIJ_GKJBAODJMJG => 0,
-            CmdBattlePassType::LJKOGCNPEIJ_CEHCJBPIEOI => 1,
-            CmdBattlePassType::LJKOGCNPEIJ_IALHJKKLIMP => 2,
-            CmdBattlePassType::LJKOGCNPEIJ_KLPDKJEBGEJ => 3,
-            CmdBattlePassType::LJKOGCNPEIJ_MPLEGJKIANL => 4,
-            CmdBattlePassType::LJKOGCNPEIJ_OFECEAOPIGP => 5,
-            CmdBattlePassType::LJKOGCNPEIJ_HPAMMBAGPIB => 6,
-            CmdBattlePassType::LJKOGCNPEIJ_ABECDOBDKIL => 7,
+            CmdBattlePassType::CmdBattlePassType_MNFEPONEDDJ => 0,
+            CmdBattlePassType::CmdBattlePassType_JLPIHDPCKBC => 1,
+            CmdBattlePassType::CmdBattlePassType_FCGDBMGIPJJ => 2,
+            CmdBattlePassType::CmdBattlePassType_GMBKPEGEMKK => 3,
+            CmdBattlePassType::CmdBattlePassType_IKJPMDLGDHA => 4,
+            CmdBattlePassType::CmdBattlePassType_FKALHAOEKCG => 5,
+            CmdBattlePassType::CmdBattlePassType_OJFOHLCBIAE => 6,
+            CmdBattlePassType::CmdBattlePassType_HILFPPEOLPC => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,7 +115,7 @@ impl ::protobuf::EnumFull for CmdBattlePassType {
 
 impl ::std::default::Default for CmdBattlePassType {
     fn default() -> Self {
-        CmdBattlePassType::LJKOGCNPEIJ_GKJBAODJMJG
+        CmdBattlePassType::CmdBattlePassType_MNFEPONEDDJ
     }
 }
 
@@ -126,13 +126,13 @@ impl CmdBattlePassType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdBattlePassType.proto*\x82\x02\n\x11CmdBattlePassType\x12\x1b\n\
-    \x17LJKOGCNPEIJ_GKJBAODJMJG\x10\0\x12\x1c\n\x17LJKOGCNPEIJ_CEHCJBPIEOI\
-    \x10\xf1\x17\x12\x1c\n\x17LJKOGCNPEIJ_IALHJKKLIMP\x10\xe7\x17\x12\x1c\n\
-    \x17LJKOGCNPEIJ_KLPDKJEBGEJ\x10\xd2\x17\x12\x1c\n\x17LJKOGCNPEIJ_MPLEGJK\
-    IANL\x10\xf6\x17\x12\x1c\n\x17LJKOGCNPEIJ_OFECEAOPIGP\x10\xde\x17\x12\
-    \x1c\n\x17LJKOGCNPEIJ_HPAMMBAGPIB\x10\x83\x18\x12\x1c\n\x17LJKOGCNPEIJ_A\
-    BECDOBDKIL\x10\xcc\x17b\x06proto3\
+    \n\x17CmdBattlePassType.proto*\xb2\x02\n\x11CmdBattlePassType\x12!\n\x1d\
+    CmdBattlePassType_MNFEPONEDDJ\x10\0\x12\"\n\x1dCmdBattlePassType_JLPIHDP\
+    CKBC\x10\xfd\x17\x12\"\n\x1dCmdBattlePassType_FCGDBMGIPJJ\x10\xdb\x17\
+    \x12\"\n\x1dCmdBattlePassType_GMBKPEGEMKK\x10\x9c\x18\x12\"\n\x1dCmdBatt\
+    lePassType_IKJPMDLGDHA\x10\xf6\x17\x12\"\n\x1dCmdBattlePassType_FKALHAOE\
+    KCG\x10\xc5\x17\x12\"\n\x1dCmdBattlePassType_OJFOHLCBIAE\x10\xbc\x17\x12\
+    \"\n\x1dCmdBattlePassType_HILFPPEOLPC\x10\x8b\x18b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

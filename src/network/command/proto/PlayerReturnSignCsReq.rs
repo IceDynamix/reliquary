@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerReturnSignCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlayerReturnSignCsReq.NFIMJKDGAIM)
-    pub NFIMJKDGAIM: ::std::vec::Vec<super::EBNGDFEDAGN::EBNGDFEDAGN>,
+    // @@protoc_insertion_point(field:PlayerReturnSignCsReq.MHIKDGCFJDE)
+    pub MHIKDGCFJDE: ::std::vec::Vec<super::DBJLEMLEIFI::DBJLEMLEIFI>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerReturnSignCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlayerReturnSignCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NFIMJKDGAIM",
-            |m: &PlayerReturnSignCsReq| { &m.NFIMJKDGAIM },
-            |m: &mut PlayerReturnSignCsReq| { &mut m.NFIMJKDGAIM },
+            "MHIKDGCFJDE",
+            |m: &PlayerReturnSignCsReq| { &m.MHIKDGCFJDE },
+            |m: &mut PlayerReturnSignCsReq| { &mut m.MHIKDGCFJDE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerReturnSignCsReq>(
             "PlayerReturnSignCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlayerReturnSignCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.NFIMJKDGAIM.push(is.read_message()?);
+                82 => {
+                    self.MHIKDGCFJDE.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PlayerReturnSignCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.NFIMJKDGAIM {
+        for value in &self.MHIKDGCFJDE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PlayerReturnSignCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.NFIMJKDGAIM {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        for v in &self.MHIKDGCFJDE {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PlayerReturnSignCsReq {
     }
 
     fn clear(&mut self) {
-        self.NFIMJKDGAIM.clear();
+        self.MHIKDGCFJDE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnSignCsReq {
         static instance: PlayerReturnSignCsReq = PlayerReturnSignCsReq {
-            NFIMJKDGAIM: ::std::vec::Vec::new(),
+            MHIKDGCFJDE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnSignCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bPlayerReturnSignCsReq.proto\x1a\x11EBNGDFEDAGN.proto\"G\n\x15Playe\
-    rReturnSignCsReq\x12.\n\x0bNFIMJKDGAIM\x18\x0f\x20\x03(\x0b2\x0c.EBNGDFE\
-    DAGNR\x0bNFIMJKDGAIMb\x06proto3\
+    \n\x1bPlayerReturnSignCsReq.proto\x1a\x11DBJLEMLEIFI.proto\"G\n\x15Playe\
+    rReturnSignCsReq\x12.\n\x0bMHIKDGCFJDE\x18\n\x20\x03(\x0b2\x0c.DBJLEMLEI\
+    FIR\x0bMHIKDGCFJDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EBNGDFEDAGN::file_descriptor().clone());
+            deps.push(super::DBJLEMLEIFI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayerReturnSignCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

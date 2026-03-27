@@ -27,44 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPlanetFesExtType)
 pub enum CmdPlanetFesExtType {
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_GKJBAODJMJG)
-    HANCMJNBBPG_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_IHFKFGOIHFP)
-    HANCMJNBBPG_IHFKFGOIHFP = 8340,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_MEJMKHFKJAI)
-    HANCMJNBBPG_MEJMKHFKJAI = 8333,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_EONEBCGPNHG)
-    HANCMJNBBPG_EONEBCGPNHG = 8291,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_JDOHCJKEDJG)
-    HANCMJNBBPG_JDOHCJKEDJG = 8323,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_MIAGFBHIMMF)
-    HANCMJNBBPG_MIAGFBHIMMF = 8310,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_PJPMJDCJDHG)
-    HANCMJNBBPG_PJPMJDCJDHG = 8312,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_NAIHPBNNBME)
-    HANCMJNBBPG_NAIHPBNNBME = 8293,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_FFKELEMBADL)
-    HANCMJNBBPG_FFKELEMBADL = 8329,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_NJJDIIKNJGF)
-    HANCMJNBBPG_NJJDIIKNJGF = 8298,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_KOCJMFIDGJC)
-    HANCMJNBBPG_KOCJMFIDGJC = 8297,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_NOFNLKDCJOF)
-    HANCMJNBBPG_NOFNLKDCJOF = 8296,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_LIPOKDKOMHN)
-    HANCMJNBBPG_LIPOKDKOMHN = 8325,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_IFMAGIDLJKI)
-    HANCMJNBBPG_IFMAGIDLJKI = 8337,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_GGGONJIFBOM)
-    HANCMJNBBPG_GGGONJIFBOM = 8321,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_KONIAKPKELN)
-    HANCMJNBBPG_KONIAKPKELN = 8309,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_APIMFIGEOEE)
-    HANCMJNBBPG_APIMFIGEOEE = 8339,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_DNNMKPFEGLI)
-    HANCMJNBBPG_DNNMKPFEGLI = 8319,
-    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.HANCMJNBBPG_HBKADBBJNHE)
-    HANCMJNBBPG_HBKADBBJNHE = 8314,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_MNFEPONEDDJ)
+    CmdPlanetFesExtType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_GNIKCFABMKA)
+    CmdPlanetFesExtType_GNIKCFABMKA = 8292,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_IIPBPDIJEFH)
+    CmdPlanetFesExtType_IIPBPDIJEFH = 8313,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_KKKNAGLNLOL)
+    CmdPlanetFesExtType_KKKNAGLNLOL = 8328,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_KONKOGAIJDL)
+    CmdPlanetFesExtType_KONKOGAIJDL = 8312,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_OCCACLBNJHH)
+    CmdPlanetFesExtType_OCCACLBNJHH = 8294,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_PFIGIDLPDFG)
+    CmdPlanetFesExtType_PFIGIDLPDFG = 8293,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_ODAONKCLNOA)
+    CmdPlanetFesExtType_ODAONKCLNOA = 8291,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_JEDJCOFDCPJ)
+    CmdPlanetFesExtType_JEDJCOFDCPJ = 8311,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_KIPNIAHBLJB)
+    CmdPlanetFesExtType_KIPNIAHBLJB = 8319,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_KGIHOKDIEJE)
+    CmdPlanetFesExtType_KGIHOKDIEJE = 8302,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_HKMEEFCFFGE)
+    CmdPlanetFesExtType_HKMEEFCFFGE = 8330,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_GKIGKAMNAKL)
+    CmdPlanetFesExtType_GKIGKAMNAKL = 8304,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_CDJKHFPBLFB)
+    CmdPlanetFesExtType_CDJKHFPBLFB = 8320,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_FADKMBGOMMM)
+    CmdPlanetFesExtType_FADKMBGOMMM = 8329,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_AEHDMGDCLKO)
+    CmdPlanetFesExtType_AEHDMGDCLKO = 8297,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_DPFFJDFFLKF)
+    CmdPlanetFesExtType_DPFFJDFFLKF = 8324,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_DNAPACPDDCH)
+    CmdPlanetFesExtType_DNAPACPDDCH = 8314,
+    // @@protoc_insertion_point(enum_value:CmdPlanetFesExtType.CmdPlanetFesExtType_NFIKAIENLDB)
+    CmdPlanetFesExtType_NFIKAIENLDB = 8308,
 }
 
 impl ::protobuf::Enum for CmdPlanetFesExtType {
@@ -76,74 +76,74 @@ impl ::protobuf::Enum for CmdPlanetFesExtType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlanetFesExtType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_GKJBAODJMJG),
-            8340 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_IHFKFGOIHFP),
-            8333 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_MEJMKHFKJAI),
-            8291 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_EONEBCGPNHG),
-            8323 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_JDOHCJKEDJG),
-            8310 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_MIAGFBHIMMF),
-            8312 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_PJPMJDCJDHG),
-            8293 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NAIHPBNNBME),
-            8329 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_FFKELEMBADL),
-            8298 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NJJDIIKNJGF),
-            8297 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_KOCJMFIDGJC),
-            8296 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NOFNLKDCJOF),
-            8325 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_LIPOKDKOMHN),
-            8337 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_IFMAGIDLJKI),
-            8321 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_GGGONJIFBOM),
-            8309 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_KONIAKPKELN),
-            8339 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_APIMFIGEOEE),
-            8319 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_DNNMKPFEGLI),
-            8314 => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_HBKADBBJNHE),
+            0 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_MNFEPONEDDJ),
+            8292 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_GNIKCFABMKA),
+            8313 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_IIPBPDIJEFH),
+            8328 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_KKKNAGLNLOL),
+            8312 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_KONKOGAIJDL),
+            8294 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_OCCACLBNJHH),
+            8293 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_PFIGIDLPDFG),
+            8291 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_ODAONKCLNOA),
+            8311 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_JEDJCOFDCPJ),
+            8319 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_KIPNIAHBLJB),
+            8302 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_KGIHOKDIEJE),
+            8330 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_HKMEEFCFFGE),
+            8304 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_GKIGKAMNAKL),
+            8320 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_CDJKHFPBLFB),
+            8329 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_FADKMBGOMMM),
+            8297 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_AEHDMGDCLKO),
+            8324 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_DPFFJDFFLKF),
+            8314 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_DNAPACPDDCH),
+            8308 => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_NFIKAIENLDB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPlanetFesExtType> {
         match str {
-            "HANCMJNBBPG_GKJBAODJMJG" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_GKJBAODJMJG),
-            "HANCMJNBBPG_IHFKFGOIHFP" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_IHFKFGOIHFP),
-            "HANCMJNBBPG_MEJMKHFKJAI" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_MEJMKHFKJAI),
-            "HANCMJNBBPG_EONEBCGPNHG" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_EONEBCGPNHG),
-            "HANCMJNBBPG_JDOHCJKEDJG" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_JDOHCJKEDJG),
-            "HANCMJNBBPG_MIAGFBHIMMF" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_MIAGFBHIMMF),
-            "HANCMJNBBPG_PJPMJDCJDHG" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_PJPMJDCJDHG),
-            "HANCMJNBBPG_NAIHPBNNBME" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NAIHPBNNBME),
-            "HANCMJNBBPG_FFKELEMBADL" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_FFKELEMBADL),
-            "HANCMJNBBPG_NJJDIIKNJGF" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NJJDIIKNJGF),
-            "HANCMJNBBPG_KOCJMFIDGJC" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_KOCJMFIDGJC),
-            "HANCMJNBBPG_NOFNLKDCJOF" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_NOFNLKDCJOF),
-            "HANCMJNBBPG_LIPOKDKOMHN" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_LIPOKDKOMHN),
-            "HANCMJNBBPG_IFMAGIDLJKI" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_IFMAGIDLJKI),
-            "HANCMJNBBPG_GGGONJIFBOM" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_GGGONJIFBOM),
-            "HANCMJNBBPG_KONIAKPKELN" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_KONIAKPKELN),
-            "HANCMJNBBPG_APIMFIGEOEE" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_APIMFIGEOEE),
-            "HANCMJNBBPG_DNNMKPFEGLI" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_DNNMKPFEGLI),
-            "HANCMJNBBPG_HBKADBBJNHE" => ::std::option::Option::Some(CmdPlanetFesExtType::HANCMJNBBPG_HBKADBBJNHE),
+            "CmdPlanetFesExtType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_MNFEPONEDDJ),
+            "CmdPlanetFesExtType_GNIKCFABMKA" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_GNIKCFABMKA),
+            "CmdPlanetFesExtType_IIPBPDIJEFH" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_IIPBPDIJEFH),
+            "CmdPlanetFesExtType_KKKNAGLNLOL" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_KKKNAGLNLOL),
+            "CmdPlanetFesExtType_KONKOGAIJDL" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_KONKOGAIJDL),
+            "CmdPlanetFesExtType_OCCACLBNJHH" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_OCCACLBNJHH),
+            "CmdPlanetFesExtType_PFIGIDLPDFG" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_PFIGIDLPDFG),
+            "CmdPlanetFesExtType_ODAONKCLNOA" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_ODAONKCLNOA),
+            "CmdPlanetFesExtType_JEDJCOFDCPJ" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_JEDJCOFDCPJ),
+            "CmdPlanetFesExtType_KIPNIAHBLJB" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_KIPNIAHBLJB),
+            "CmdPlanetFesExtType_KGIHOKDIEJE" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_KGIHOKDIEJE),
+            "CmdPlanetFesExtType_HKMEEFCFFGE" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_HKMEEFCFFGE),
+            "CmdPlanetFesExtType_GKIGKAMNAKL" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_GKIGKAMNAKL),
+            "CmdPlanetFesExtType_CDJKHFPBLFB" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_CDJKHFPBLFB),
+            "CmdPlanetFesExtType_FADKMBGOMMM" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_FADKMBGOMMM),
+            "CmdPlanetFesExtType_AEHDMGDCLKO" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_AEHDMGDCLKO),
+            "CmdPlanetFesExtType_DPFFJDFFLKF" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_DPFFJDFFLKF),
+            "CmdPlanetFesExtType_DNAPACPDDCH" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_DNAPACPDDCH),
+            "CmdPlanetFesExtType_NFIKAIENLDB" => ::std::option::Option::Some(CmdPlanetFesExtType::CmdPlanetFesExtType_NFIKAIENLDB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlanetFesExtType] = &[
-        CmdPlanetFesExtType::HANCMJNBBPG_GKJBAODJMJG,
-        CmdPlanetFesExtType::HANCMJNBBPG_IHFKFGOIHFP,
-        CmdPlanetFesExtType::HANCMJNBBPG_MEJMKHFKJAI,
-        CmdPlanetFesExtType::HANCMJNBBPG_EONEBCGPNHG,
-        CmdPlanetFesExtType::HANCMJNBBPG_JDOHCJKEDJG,
-        CmdPlanetFesExtType::HANCMJNBBPG_MIAGFBHIMMF,
-        CmdPlanetFesExtType::HANCMJNBBPG_PJPMJDCJDHG,
-        CmdPlanetFesExtType::HANCMJNBBPG_NAIHPBNNBME,
-        CmdPlanetFesExtType::HANCMJNBBPG_FFKELEMBADL,
-        CmdPlanetFesExtType::HANCMJNBBPG_NJJDIIKNJGF,
-        CmdPlanetFesExtType::HANCMJNBBPG_KOCJMFIDGJC,
-        CmdPlanetFesExtType::HANCMJNBBPG_NOFNLKDCJOF,
-        CmdPlanetFesExtType::HANCMJNBBPG_LIPOKDKOMHN,
-        CmdPlanetFesExtType::HANCMJNBBPG_IFMAGIDLJKI,
-        CmdPlanetFesExtType::HANCMJNBBPG_GGGONJIFBOM,
-        CmdPlanetFesExtType::HANCMJNBBPG_KONIAKPKELN,
-        CmdPlanetFesExtType::HANCMJNBBPG_APIMFIGEOEE,
-        CmdPlanetFesExtType::HANCMJNBBPG_DNNMKPFEGLI,
-        CmdPlanetFesExtType::HANCMJNBBPG_HBKADBBJNHE,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_MNFEPONEDDJ,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_GNIKCFABMKA,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_IIPBPDIJEFH,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_KKKNAGLNLOL,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_KONKOGAIJDL,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_OCCACLBNJHH,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_PFIGIDLPDFG,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_ODAONKCLNOA,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_JEDJCOFDCPJ,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_KIPNIAHBLJB,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_KGIHOKDIEJE,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_HKMEEFCFFGE,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_GKIGKAMNAKL,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_CDJKHFPBLFB,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_FADKMBGOMMM,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_AEHDMGDCLKO,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_DPFFJDFFLKF,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_DNAPACPDDCH,
+        CmdPlanetFesExtType::CmdPlanetFesExtType_NFIKAIENLDB,
     ];
 }
 
@@ -155,25 +155,25 @@ impl ::protobuf::EnumFull for CmdPlanetFesExtType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPlanetFesExtType::HANCMJNBBPG_GKJBAODJMJG => 0,
-            CmdPlanetFesExtType::HANCMJNBBPG_IHFKFGOIHFP => 1,
-            CmdPlanetFesExtType::HANCMJNBBPG_MEJMKHFKJAI => 2,
-            CmdPlanetFesExtType::HANCMJNBBPG_EONEBCGPNHG => 3,
-            CmdPlanetFesExtType::HANCMJNBBPG_JDOHCJKEDJG => 4,
-            CmdPlanetFesExtType::HANCMJNBBPG_MIAGFBHIMMF => 5,
-            CmdPlanetFesExtType::HANCMJNBBPG_PJPMJDCJDHG => 6,
-            CmdPlanetFesExtType::HANCMJNBBPG_NAIHPBNNBME => 7,
-            CmdPlanetFesExtType::HANCMJNBBPG_FFKELEMBADL => 8,
-            CmdPlanetFesExtType::HANCMJNBBPG_NJJDIIKNJGF => 9,
-            CmdPlanetFesExtType::HANCMJNBBPG_KOCJMFIDGJC => 10,
-            CmdPlanetFesExtType::HANCMJNBBPG_NOFNLKDCJOF => 11,
-            CmdPlanetFesExtType::HANCMJNBBPG_LIPOKDKOMHN => 12,
-            CmdPlanetFesExtType::HANCMJNBBPG_IFMAGIDLJKI => 13,
-            CmdPlanetFesExtType::HANCMJNBBPG_GGGONJIFBOM => 14,
-            CmdPlanetFesExtType::HANCMJNBBPG_KONIAKPKELN => 15,
-            CmdPlanetFesExtType::HANCMJNBBPG_APIMFIGEOEE => 16,
-            CmdPlanetFesExtType::HANCMJNBBPG_DNNMKPFEGLI => 17,
-            CmdPlanetFesExtType::HANCMJNBBPG_HBKADBBJNHE => 18,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_MNFEPONEDDJ => 0,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_GNIKCFABMKA => 1,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_IIPBPDIJEFH => 2,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_KKKNAGLNLOL => 3,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_KONKOGAIJDL => 4,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_OCCACLBNJHH => 5,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_PFIGIDLPDFG => 6,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_ODAONKCLNOA => 7,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_JEDJCOFDCPJ => 8,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_KIPNIAHBLJB => 9,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_KGIHOKDIEJE => 10,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_HKMEEFCFFGE => 11,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_GKIGKAMNAKL => 12,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_CDJKHFPBLFB => 13,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_FADKMBGOMMM => 14,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_AEHDMGDCLKO => 15,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_DPFFJDFFLKF => 16,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_DNAPACPDDCH => 17,
+            CmdPlanetFesExtType::CmdPlanetFesExtType_NFIKAIENLDB => 18,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -181,7 +181,7 @@ impl ::protobuf::EnumFull for CmdPlanetFesExtType {
 
 impl ::std::default::Default for CmdPlanetFesExtType {
     fn default() -> Self {
-        CmdPlanetFesExtType::HANCMJNBBPG_GKJBAODJMJG
+        CmdPlanetFesExtType::CmdPlanetFesExtType_MNFEPONEDDJ
     }
 }
 
@@ -192,20 +192,21 @@ impl CmdPlanetFesExtType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19CmdPlanetFesExtType.proto*\xce\x04\n\x13CmdPlanetFesExtType\x12\
-    \x1b\n\x17HANCMJNBBPG_GKJBAODJMJG\x10\0\x12\x1c\n\x17HANCMJNBBPG_IHFKFGO\
-    IHFP\x10\x94A\x12\x1c\n\x17HANCMJNBBPG_MEJMKHFKJAI\x10\x8dA\x12\x1c\n\
-    \x17HANCMJNBBPG_EONEBCGPNHG\x10\xe3@\x12\x1c\n\x17HANCMJNBBPG_JDOHCJKEDJ\
-    G\x10\x83A\x12\x1c\n\x17HANCMJNBBPG_MIAGFBHIMMF\x10\xf6@\x12\x1c\n\x17HA\
-    NCMJNBBPG_PJPMJDCJDHG\x10\xf8@\x12\x1c\n\x17HANCMJNBBPG_NAIHPBNNBME\x10\
-    \xe5@\x12\x1c\n\x17HANCMJNBBPG_FFKELEMBADL\x10\x89A\x12\x1c\n\x17HANCMJN\
-    BBPG_NJJDIIKNJGF\x10\xea@\x12\x1c\n\x17HANCMJNBBPG_KOCJMFIDGJC\x10\xe9@\
-    \x12\x1c\n\x17HANCMJNBBPG_NOFNLKDCJOF\x10\xe8@\x12\x1c\n\x17HANCMJNBBPG_\
-    LIPOKDKOMHN\x10\x85A\x12\x1c\n\x17HANCMJNBBPG_IFMAGIDLJKI\x10\x91A\x12\
-    \x1c\n\x17HANCMJNBBPG_GGGONJIFBOM\x10\x81A\x12\x1c\n\x17HANCMJNBBPG_KONI\
-    AKPKELN\x10\xf5@\x12\x1c\n\x17HANCMJNBBPG_APIMFIGEOEE\x10\x93A\x12\x1c\n\
-    \x17HANCMJNBBPG_DNNMKPFEGLI\x10\xff@\x12\x1c\n\x17HANCMJNBBPG_HBKADBBJNH\
-    E\x10\xfa@b\x06proto3\
+    \n\x19CmdPlanetFesExtType.proto*\xe6\x05\n\x13CmdPlanetFesExtType\x12#\n\
+    \x1fCmdPlanetFesExtType_MNFEPONEDDJ\x10\0\x12$\n\x1fCmdPlanetFesExtType_\
+    GNIKCFABMKA\x10\xe4@\x12$\n\x1fCmdPlanetFesExtType_IIPBPDIJEFH\x10\xf9@\
+    \x12$\n\x1fCmdPlanetFesExtType_KKKNAGLNLOL\x10\x88A\x12$\n\x1fCmdPlanetF\
+    esExtType_KONKOGAIJDL\x10\xf8@\x12$\n\x1fCmdPlanetFesExtType_OCCACLBNJHH\
+    \x10\xe6@\x12$\n\x1fCmdPlanetFesExtType_PFIGIDLPDFG\x10\xe5@\x12$\n\x1fC\
+    mdPlanetFesExtType_ODAONKCLNOA\x10\xe3@\x12$\n\x1fCmdPlanetFesExtType_JE\
+    DJCOFDCPJ\x10\xf7@\x12$\n\x1fCmdPlanetFesExtType_KIPNIAHBLJB\x10\xff@\
+    \x12$\n\x1fCmdPlanetFesExtType_KGIHOKDIEJE\x10\xee@\x12$\n\x1fCmdPlanetF\
+    esExtType_HKMEEFCFFGE\x10\x8aA\x12$\n\x1fCmdPlanetFesExtType_GKIGKAMNAKL\
+    \x10\xf0@\x12$\n\x1fCmdPlanetFesExtType_CDJKHFPBLFB\x10\x80A\x12$\n\x1fC\
+    mdPlanetFesExtType_FADKMBGOMMM\x10\x89A\x12$\n\x1fCmdPlanetFesExtType_AE\
+    HDMGDCLKO\x10\xe9@\x12$\n\x1fCmdPlanetFesExtType_DPFFJDFFLKF\x10\x84A\
+    \x12$\n\x1fCmdPlanetFesExtType_DNAPACPDDCH\x10\xfa@\x12$\n\x1fCmdPlanetF\
+    esExtType_NFIKAIENLDB\x10\xf4@b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

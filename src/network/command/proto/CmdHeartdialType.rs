@@ -27,30 +27,30 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdHeartdialType)
 pub enum CmdHeartdialType {
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_GKJBAODJMJG)
-    GJPEHEEKNKG_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_BGECKLFKMMN)
-    GJPEHEEKNKG_BGECKLFKMMN = 6320,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_NAANNNFDMIB)
-    GJPEHEEKNKG_NAANNNFDMIB = 6326,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_FFIDBPIJFFF)
-    GJPEHEEKNKG_FFIDBPIJFFF = 6337,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_HBAIIPEKPMD)
-    GJPEHEEKNKG_HBAIIPEKPMD = 6305,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_NLHELKNMCBB)
-    GJPEHEEKNKG_NLHELKNMCBB = 6338,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_ANENLADKGOI)
-    GJPEHEEKNKG_ANENLADKGOI = 6357,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_BEGKFDPEGPC)
-    GJPEHEEKNKG_BEGKFDPEGPC = 6362,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_AGMCBFBAODN)
-    GJPEHEEKNKG_AGMCBFBAODN = 6375,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_GDFHAEEGIBO)
-    GJPEHEEKNKG_GDFHAEEGIBO = 6347,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_OKOGNBEOEJF)
-    GJPEHEEKNKG_OKOGNBEOEJF = 6355,
-    // @@protoc_insertion_point(enum_value:CmdHeartdialType.GJPEHEEKNKG_JCHEAFGHAEB)
-    GJPEHEEKNKG_JCHEAFGHAEB = 6328,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_MNFEPONEDDJ)
+    CmdHeartdialType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_GBACAIDBIFF)
+    CmdHeartdialType_GBACAIDBIFF = 6369,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_LNNBHPEGLHP)
+    CmdHeartdialType_LNNBHPEGLHP = 6340,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_MNMINKMJODP)
+    CmdHeartdialType_MNMINKMJODP = 6304,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_FGEAFKOKFGE)
+    CmdHeartdialType_FGEAFKOKFGE = 6400,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_MJBJCKLMKKH)
+    CmdHeartdialType_MJBJCKLMKKH = 6335,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_JMPKIEDMHPD)
+    CmdHeartdialType_JMPKIEDMHPD = 6346,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_DCDHNBEGAJL)
+    CmdHeartdialType_DCDHNBEGAJL = 6313,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_JLCFENENAFK)
+    CmdHeartdialType_JLCFENENAFK = 6381,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_BGLONCCNKAF)
+    CmdHeartdialType_BGLONCCNKAF = 6383,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_LKMEBDKKIHG)
+    CmdHeartdialType_LKMEBDKKIHG = 6362,
+    // @@protoc_insertion_point(enum_value:CmdHeartdialType.CmdHeartdialType_CCMMJDFAFJC)
+    CmdHeartdialType_CCMMJDFAFJC = 6324,
 }
 
 impl ::protobuf::Enum for CmdHeartdialType {
@@ -62,53 +62,53 @@ impl ::protobuf::Enum for CmdHeartdialType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdHeartdialType> {
         match value {
-            0 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_GKJBAODJMJG),
-            6320 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_BGECKLFKMMN),
-            6326 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_NAANNNFDMIB),
-            6337 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_FFIDBPIJFFF),
-            6305 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_HBAIIPEKPMD),
-            6338 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_NLHELKNMCBB),
-            6357 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_ANENLADKGOI),
-            6362 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_BEGKFDPEGPC),
-            6375 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_AGMCBFBAODN),
-            6347 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_GDFHAEEGIBO),
-            6355 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_OKOGNBEOEJF),
-            6328 => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_JCHEAFGHAEB),
+            0 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_MNFEPONEDDJ),
+            6369 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_GBACAIDBIFF),
+            6340 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_LNNBHPEGLHP),
+            6304 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_MNMINKMJODP),
+            6400 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_FGEAFKOKFGE),
+            6335 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_MJBJCKLMKKH),
+            6346 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_JMPKIEDMHPD),
+            6313 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_DCDHNBEGAJL),
+            6381 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_JLCFENENAFK),
+            6383 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_BGLONCCNKAF),
+            6362 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_LKMEBDKKIHG),
+            6324 => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_CCMMJDFAFJC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdHeartdialType> {
         match str {
-            "GJPEHEEKNKG_GKJBAODJMJG" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_GKJBAODJMJG),
-            "GJPEHEEKNKG_BGECKLFKMMN" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_BGECKLFKMMN),
-            "GJPEHEEKNKG_NAANNNFDMIB" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_NAANNNFDMIB),
-            "GJPEHEEKNKG_FFIDBPIJFFF" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_FFIDBPIJFFF),
-            "GJPEHEEKNKG_HBAIIPEKPMD" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_HBAIIPEKPMD),
-            "GJPEHEEKNKG_NLHELKNMCBB" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_NLHELKNMCBB),
-            "GJPEHEEKNKG_ANENLADKGOI" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_ANENLADKGOI),
-            "GJPEHEEKNKG_BEGKFDPEGPC" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_BEGKFDPEGPC),
-            "GJPEHEEKNKG_AGMCBFBAODN" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_AGMCBFBAODN),
-            "GJPEHEEKNKG_GDFHAEEGIBO" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_GDFHAEEGIBO),
-            "GJPEHEEKNKG_OKOGNBEOEJF" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_OKOGNBEOEJF),
-            "GJPEHEEKNKG_JCHEAFGHAEB" => ::std::option::Option::Some(CmdHeartdialType::GJPEHEEKNKG_JCHEAFGHAEB),
+            "CmdHeartdialType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_MNFEPONEDDJ),
+            "CmdHeartdialType_GBACAIDBIFF" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_GBACAIDBIFF),
+            "CmdHeartdialType_LNNBHPEGLHP" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_LNNBHPEGLHP),
+            "CmdHeartdialType_MNMINKMJODP" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_MNMINKMJODP),
+            "CmdHeartdialType_FGEAFKOKFGE" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_FGEAFKOKFGE),
+            "CmdHeartdialType_MJBJCKLMKKH" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_MJBJCKLMKKH),
+            "CmdHeartdialType_JMPKIEDMHPD" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_JMPKIEDMHPD),
+            "CmdHeartdialType_DCDHNBEGAJL" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_DCDHNBEGAJL),
+            "CmdHeartdialType_JLCFENENAFK" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_JLCFENENAFK),
+            "CmdHeartdialType_BGLONCCNKAF" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_BGLONCCNKAF),
+            "CmdHeartdialType_LKMEBDKKIHG" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_LKMEBDKKIHG),
+            "CmdHeartdialType_CCMMJDFAFJC" => ::std::option::Option::Some(CmdHeartdialType::CmdHeartdialType_CCMMJDFAFJC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdHeartdialType] = &[
-        CmdHeartdialType::GJPEHEEKNKG_GKJBAODJMJG,
-        CmdHeartdialType::GJPEHEEKNKG_BGECKLFKMMN,
-        CmdHeartdialType::GJPEHEEKNKG_NAANNNFDMIB,
-        CmdHeartdialType::GJPEHEEKNKG_FFIDBPIJFFF,
-        CmdHeartdialType::GJPEHEEKNKG_HBAIIPEKPMD,
-        CmdHeartdialType::GJPEHEEKNKG_NLHELKNMCBB,
-        CmdHeartdialType::GJPEHEEKNKG_ANENLADKGOI,
-        CmdHeartdialType::GJPEHEEKNKG_BEGKFDPEGPC,
-        CmdHeartdialType::GJPEHEEKNKG_AGMCBFBAODN,
-        CmdHeartdialType::GJPEHEEKNKG_GDFHAEEGIBO,
-        CmdHeartdialType::GJPEHEEKNKG_OKOGNBEOEJF,
-        CmdHeartdialType::GJPEHEEKNKG_JCHEAFGHAEB,
+        CmdHeartdialType::CmdHeartdialType_MNFEPONEDDJ,
+        CmdHeartdialType::CmdHeartdialType_GBACAIDBIFF,
+        CmdHeartdialType::CmdHeartdialType_LNNBHPEGLHP,
+        CmdHeartdialType::CmdHeartdialType_MNMINKMJODP,
+        CmdHeartdialType::CmdHeartdialType_FGEAFKOKFGE,
+        CmdHeartdialType::CmdHeartdialType_MJBJCKLMKKH,
+        CmdHeartdialType::CmdHeartdialType_JMPKIEDMHPD,
+        CmdHeartdialType::CmdHeartdialType_DCDHNBEGAJL,
+        CmdHeartdialType::CmdHeartdialType_JLCFENENAFK,
+        CmdHeartdialType::CmdHeartdialType_BGLONCCNKAF,
+        CmdHeartdialType::CmdHeartdialType_LKMEBDKKIHG,
+        CmdHeartdialType::CmdHeartdialType_CCMMJDFAFJC,
     ];
 }
 
@@ -120,18 +120,18 @@ impl ::protobuf::EnumFull for CmdHeartdialType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdHeartdialType::GJPEHEEKNKG_GKJBAODJMJG => 0,
-            CmdHeartdialType::GJPEHEEKNKG_BGECKLFKMMN => 1,
-            CmdHeartdialType::GJPEHEEKNKG_NAANNNFDMIB => 2,
-            CmdHeartdialType::GJPEHEEKNKG_FFIDBPIJFFF => 3,
-            CmdHeartdialType::GJPEHEEKNKG_HBAIIPEKPMD => 4,
-            CmdHeartdialType::GJPEHEEKNKG_NLHELKNMCBB => 5,
-            CmdHeartdialType::GJPEHEEKNKG_ANENLADKGOI => 6,
-            CmdHeartdialType::GJPEHEEKNKG_BEGKFDPEGPC => 7,
-            CmdHeartdialType::GJPEHEEKNKG_AGMCBFBAODN => 8,
-            CmdHeartdialType::GJPEHEEKNKG_GDFHAEEGIBO => 9,
-            CmdHeartdialType::GJPEHEEKNKG_OKOGNBEOEJF => 10,
-            CmdHeartdialType::GJPEHEEKNKG_JCHEAFGHAEB => 11,
+            CmdHeartdialType::CmdHeartdialType_MNFEPONEDDJ => 0,
+            CmdHeartdialType::CmdHeartdialType_GBACAIDBIFF => 1,
+            CmdHeartdialType::CmdHeartdialType_LNNBHPEGLHP => 2,
+            CmdHeartdialType::CmdHeartdialType_MNMINKMJODP => 3,
+            CmdHeartdialType::CmdHeartdialType_FGEAFKOKFGE => 4,
+            CmdHeartdialType::CmdHeartdialType_MJBJCKLMKKH => 5,
+            CmdHeartdialType::CmdHeartdialType_JMPKIEDMHPD => 6,
+            CmdHeartdialType::CmdHeartdialType_DCDHNBEGAJL => 7,
+            CmdHeartdialType::CmdHeartdialType_JLCFENENAFK => 8,
+            CmdHeartdialType::CmdHeartdialType_BGLONCCNKAF => 9,
+            CmdHeartdialType::CmdHeartdialType_LKMEBDKKIHG => 10,
+            CmdHeartdialType::CmdHeartdialType_CCMMJDFAFJC => 11,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -139,7 +139,7 @@ impl ::protobuf::EnumFull for CmdHeartdialType {
 
 impl ::std::default::Default for CmdHeartdialType {
     fn default() -> Self {
-        CmdHeartdialType::GJPEHEEKNKG_GKJBAODJMJG
+        CmdHeartdialType::CmdHeartdialType_MNFEPONEDDJ
     }
 }
 
@@ -150,15 +150,16 @@ impl CmdHeartdialType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdHeartdialType.proto*\xf9\x02\n\x10CmdHeartdialType\x12\x1b\n\
-    \x17GJPEHEEKNKG_GKJBAODJMJG\x10\0\x12\x1c\n\x17GJPEHEEKNKG_BGECKLFKMMN\
-    \x10\xb01\x12\x1c\n\x17GJPEHEEKNKG_NAANNNFDMIB\x10\xb61\x12\x1c\n\x17GJP\
-    EHEEKNKG_FFIDBPIJFFF\x10\xc11\x12\x1c\n\x17GJPEHEEKNKG_HBAIIPEKPMD\x10\
-    \xa11\x12\x1c\n\x17GJPEHEEKNKG_NLHELKNMCBB\x10\xc21\x12\x1c\n\x17GJPEHEE\
-    KNKG_ANENLADKGOI\x10\xd51\x12\x1c\n\x17GJPEHEEKNKG_BEGKFDPEGPC\x10\xda1\
-    \x12\x1c\n\x17GJPEHEEKNKG_AGMCBFBAODN\x10\xe71\x12\x1c\n\x17GJPEHEEKNKG_\
-    GDFHAEEGIBO\x10\xcb1\x12\x1c\n\x17GJPEHEEKNKG_OKOGNBEOEJF\x10\xd31\x12\
-    \x1c\n\x17GJPEHEEKNKG_JCHEAFGHAEB\x10\xb81b\x06proto3\
+    \n\x16CmdHeartdialType.proto*\xb5\x03\n\x10CmdHeartdialType\x12\x20\n\
+    \x1cCmdHeartdialType_MNFEPONEDDJ\x10\0\x12!\n\x1cCmdHeartdialType_GBACAI\
+    DBIFF\x10\xe11\x12!\n\x1cCmdHeartdialType_LNNBHPEGLHP\x10\xc41\x12!\n\
+    \x1cCmdHeartdialType_MNMINKMJODP\x10\xa01\x12!\n\x1cCmdHeartdialType_FGE\
+    AFKOKFGE\x10\x802\x12!\n\x1cCmdHeartdialType_MJBJCKLMKKH\x10\xbf1\x12!\n\
+    \x1cCmdHeartdialType_JMPKIEDMHPD\x10\xca1\x12!\n\x1cCmdHeartdialType_DCD\
+    HNBEGAJL\x10\xa91\x12!\n\x1cCmdHeartdialType_JLCFENENAFK\x10\xed1\x12!\n\
+    \x1cCmdHeartdialType_BGLONCCNKAF\x10\xef1\x12!\n\x1cCmdHeartdialType_LKM\
+    EBDKKIHG\x10\xda1\x12!\n\x1cCmdHeartdialType_CCMMJDFAFJC\x10\xb41b\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

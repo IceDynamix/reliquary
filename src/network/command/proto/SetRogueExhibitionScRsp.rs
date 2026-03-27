@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetRogueExhibitionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetRogueExhibitionScRsp.OLOAAGEMNOD)
-    pub OLOAAGEMNOD: ::std::vec::Vec<super::DGCJOFGDHIM::DGCJOFGDHIM>,
-    // @@protoc_insertion_point(field:SetRogueExhibitionScRsp.GJHFBJLLGOB)
-    pub GJHFBJLLGOB: ::std::vec::Vec<super::CNIDFABOAMJ::CNIDFABOAMJ>,
     // @@protoc_insertion_point(field:SetRogueExhibitionScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:SetRogueExhibitionScRsp.PKMDCENOLFN)
+    pub PKMDCENOLFN: ::std::vec::Vec<super::GIKBEFMDBDF::GIKBEFMDBDF>,
+    // @@protoc_insertion_point(field:SetRogueExhibitionScRsp.AGGCDBJHLNP)
+    pub AGGCDBJHLNP: ::std::vec::Vec<super::EHNACGDMCIE::EHNACGDMCIE>,
     // special fields
     // @@protoc_insertion_point(special_field:SetRogueExhibitionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl SetRogueExhibitionScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OLOAAGEMNOD",
-            |m: &SetRogueExhibitionScRsp| { &m.OLOAAGEMNOD },
-            |m: &mut SetRogueExhibitionScRsp| { &mut m.OLOAAGEMNOD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GJHFBJLLGOB",
-            |m: &SetRogueExhibitionScRsp| { &m.GJHFBJLLGOB },
-            |m: &mut SetRogueExhibitionScRsp| { &mut m.GJHFBJLLGOB },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SetRogueExhibitionScRsp| { &m.retcode },
             |m: &mut SetRogueExhibitionScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "PKMDCENOLFN",
+            |m: &SetRogueExhibitionScRsp| { &m.PKMDCENOLFN },
+            |m: &mut SetRogueExhibitionScRsp| { &mut m.PKMDCENOLFN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AGGCDBJHLNP",
+            |m: &SetRogueExhibitionScRsp| { &m.AGGCDBJHLNP },
+            |m: &mut SetRogueExhibitionScRsp| { &mut m.AGGCDBJHLNP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetRogueExhibitionScRsp>(
             "SetRogueExhibitionScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SetRogueExhibitionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.OLOAAGEMNOD.push(is.read_message()?);
+                80 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 42 => {
-                    self.GJHFBJLLGOB.push(is.read_message()?);
+                    self.PKMDCENOLFN.push(is.read_message()?);
                 },
-                24 => {
-                    self.retcode = is.read_uint32()?;
+                66 => {
+                    self.AGGCDBJHLNP.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,32 +107,32 @@ impl ::protobuf::Message for SetRogueExhibitionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.OLOAAGEMNOD {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.GJHFBJLLGOB {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
+        for value in &self.PKMDCENOLFN {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.AGGCDBJHLNP {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.OLOAAGEMNOD {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
-        for v in &self.GJHFBJLLGOB {
+        if self.retcode != 0 {
+            os.write_uint32(10, self.retcode)?;
+        }
+        for v in &self.PKMDCENOLFN {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
-        }
+        for v in &self.AGGCDBJHLNP {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -150,17 +150,17 @@ impl ::protobuf::Message for SetRogueExhibitionScRsp {
     }
 
     fn clear(&mut self) {
-        self.OLOAAGEMNOD.clear();
-        self.GJHFBJLLGOB.clear();
         self.retcode = 0;
+        self.PKMDCENOLFN.clear();
+        self.AGGCDBJHLNP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetRogueExhibitionScRsp {
         static instance: SetRogueExhibitionScRsp = SetRogueExhibitionScRsp {
-            OLOAAGEMNOD: ::std::vec::Vec::new(),
-            GJHFBJLLGOB: ::std::vec::Vec::new(),
             retcode: 0,
+            PKMDCENOLFN: ::std::vec::Vec::new(),
+            AGGCDBJHLNP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for SetRogueExhibitionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSetRogueExhibitionScRsp.proto\x1a\x11CNIDFABOAMJ.proto\x1a\x11DGCJ\
-    OFGDHIM.proto\"\x93\x01\n\x17SetRogueExhibitionScRsp\x12.\n\x0bOLOAAGEMN\
-    OD\x18\r\x20\x03(\x0b2\x0c.DGCJOFGDHIMR\x0bOLOAAGEMNOD\x12.\n\x0bGJHFBJL\
-    LGOB\x18\x05\x20\x03(\x0b2\x0c.CNIDFABOAMJR\x0bGJHFBJLLGOB\x12\x18\n\x07\
-    retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1dSetRogueExhibitionScRsp.proto\x1a\x11EHNACGDMCIE.proto\x1a\x11GIKB\
+    EFMDBDF.proto\"\x93\x01\n\x17SetRogueExhibitionScRsp\x12\x18\n\x07retcod\
+    e\x18\n\x20\x01(\rR\x07retcode\x12.\n\x0bPKMDCENOLFN\x18\x05\x20\x03(\
+    \x0b2\x0c.GIKBEFMDBDFR\x0bPKMDCENOLFN\x12.\n\x0bAGGCDBJHLNP\x18\x08\x20\
+    \x03(\x0b2\x0c.EHNACGDMCIER\x0bAGGCDBJHLNPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::CNIDFABOAMJ::file_descriptor().clone());
-            deps.push(super::DGCJOFGDHIM::file_descriptor().clone());
+            deps.push(super::EHNACGDMCIE::file_descriptor().clone());
+            deps.push(super::GIKBEFMDBDF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetRogueExhibitionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ConfirmRelicBoxCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ConfirmRelicBoxCsReq.KGEKDAEGHPF)
-    pub KGEKDAEGHPF: bool,
+    // @@protoc_insertion_point(field:ConfirmRelicBoxCsReq.FFEHHMPFGAB)
+    pub FFEHHMPFGAB: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ConfirmRelicBoxCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ConfirmRelicBoxCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGEKDAEGHPF",
-            |m: &ConfirmRelicBoxCsReq| { &m.KGEKDAEGHPF },
-            |m: &mut ConfirmRelicBoxCsReq| { &mut m.KGEKDAEGHPF },
+            "FFEHHMPFGAB",
+            |m: &ConfirmRelicBoxCsReq| { &m.FFEHHMPFGAB },
+            |m: &mut ConfirmRelicBoxCsReq| { &mut m.FFEHHMPFGAB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ConfirmRelicBoxCsReq>(
             "ConfirmRelicBoxCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ConfirmRelicBoxCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.KGEKDAEGHPF = is.read_bool()?;
+                80 => {
+                    self.FFEHHMPFGAB = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ConfirmRelicBoxCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KGEKDAEGHPF != false {
+        if self.FFEHHMPFGAB != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ConfirmRelicBoxCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KGEKDAEGHPF != false {
-            os.write_bool(2, self.KGEKDAEGHPF)?;
+        if self.FFEHHMPFGAB != false {
+            os.write_bool(10, self.FFEHHMPFGAB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ConfirmRelicBoxCsReq {
     }
 
     fn clear(&mut self) {
-        self.KGEKDAEGHPF = false;
+        self.FFEHHMPFGAB = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ConfirmRelicBoxCsReq {
         static instance: ConfirmRelicBoxCsReq = ConfirmRelicBoxCsReq {
-            KGEKDAEGHPF: false,
+            FFEHHMPFGAB: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ConfirmRelicBoxCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aConfirmRelicBoxCsReq.proto\"8\n\x14ConfirmRelicBoxCsReq\x12\x20\n\
-    \x0bKGEKDAEGHPF\x18\x02\x20\x01(\x08R\x0bKGEKDAEGHPFb\x06proto3\
+    \x0bFFEHHMPFGAB\x18\n\x20\x01(\x08R\x0bFFEHHMPFGABb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

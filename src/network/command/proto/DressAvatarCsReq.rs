@@ -79,10 +79,10 @@ impl ::protobuf::Message for DressAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                88 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                56 => {
+                72 => {
                     self.equipment_unique_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for DressAvatarCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.avatar_id);
         }
         if self.equipment_unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.equipment_unique_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.equipment_unique_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for DressAvatarCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.avatar_id != 0 {
-            os.write_uint32(2, self.avatar_id)?;
+            os.write_uint32(11, self.avatar_id)?;
         }
         if self.equipment_unique_id != 0 {
-            os.write_uint32(7, self.equipment_unique_id)?;
+            os.write_uint32(9, self.equipment_unique_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DressAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16DressAvatarCsReq.proto\"_\n\x10DressAvatarCsReq\x12\x1b\n\tavatar_\
-    id\x18\x02\x20\x01(\rR\x08avatarId\x12.\n\x13equipment_unique_id\x18\x07\
+    id\x18\x0b\x20\x01(\rR\x08avatarId\x12.\n\x13equipment_unique_id\x18\t\
     \x20\x01(\rR\x11equipmentUniqueIdb\x06proto3\
 ";
 

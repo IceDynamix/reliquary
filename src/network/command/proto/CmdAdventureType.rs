@@ -27,32 +27,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdAdventureType)
 pub enum CmdAdventureType {
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_GKJBAODJMJG)
-    AKCLJAAKCBD_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_OGAJNIILCLA)
-    AKCLJAAKCBD_OGAJNIILCLA = 1357,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_NPOIGBCLGIH)
-    AKCLJAAKCBD_NPOIGBCLGIH = 1305,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_MLEIFMHMEBD)
-    AKCLJAAKCBD_MLEIFMHMEBD = 1320,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_IFIHHDDJPPI)
-    AKCLJAAKCBD_IFIHHDDJPPI = 1326,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_NJJNFOILODA)
-    AKCLJAAKCBD_NJJNFOILODA = 1369,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_APGAIJMEGIG)
-    AKCLJAAKCBD_APGAIJMEGIG = 1338,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_JNNKBFHOBBP)
-    AKCLJAAKCBD_JNNKBFHOBBP = 1328,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_FGBPICFJKGH)
-    AKCLJAAKCBD_FGBPICFJKGH = 1337,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_COGAKHCHMPC)
-    AKCLJAAKCBD_COGAKHCHMPC = 1355,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_BPAGNKJEOGN)
-    AKCLJAAKCBD_BPAGNKJEOGN = 1362,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_CDAPFMMKDFK)
-    AKCLJAAKCBD_CDAPFMMKDFK = 1375,
-    // @@protoc_insertion_point(enum_value:CmdAdventureType.AKCLJAAKCBD_GCDEMKKEDNH)
-    AKCLJAAKCBD_GCDEMKKEDNH = 1347,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_MNFEPONEDDJ)
+    CmdAdventureType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_NBFFGOGOMMO)
+    CmdAdventureType_NBFFGOGOMMO = 1357,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_LHGOAMLHJLG)
+    CmdAdventureType_LHGOAMLHJLG = 1304,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_OEEILJOHHEB)
+    CmdAdventureType_OEEILJOHHEB = 1335,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_BCKFCEILKOO)
+    CmdAdventureType_BCKFCEILKOO = 1324,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_JMOHGLDKJJB)
+    CmdAdventureType_JMOHGLDKJJB = 1369,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_ANCJOFNNIAK)
+    CmdAdventureType_ANCJOFNNIAK = 1362,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_MHJFDMMKMIP)
+    CmdAdventureType_MHJFDMMKMIP = 1383,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_CLFJOFAIAJL)
+    CmdAdventureType_CLFJOFAIAJL = 1346,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_PMDGHKEJACE)
+    CmdAdventureType_PMDGHKEJACE = 1340,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_PGAHDEDGDBE)
+    CmdAdventureType_PGAHDEDGDBE = 1400,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_NMIOCGFJIFI)
+    CmdAdventureType_NMIOCGFJIFI = 1313,
+    // @@protoc_insertion_point(enum_value:CmdAdventureType.CmdAdventureType_MAGLKDBBBKA)
+    CmdAdventureType_MAGLKDBBBKA = 1381,
 }
 
 impl ::protobuf::Enum for CmdAdventureType {
@@ -64,56 +64,56 @@ impl ::protobuf::Enum for CmdAdventureType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdAdventureType> {
         match value {
-            0 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_GKJBAODJMJG),
-            1357 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_OGAJNIILCLA),
-            1305 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_NPOIGBCLGIH),
-            1320 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_MLEIFMHMEBD),
-            1326 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_IFIHHDDJPPI),
-            1369 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_NJJNFOILODA),
-            1338 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_APGAIJMEGIG),
-            1328 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_JNNKBFHOBBP),
-            1337 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_FGBPICFJKGH),
-            1355 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_COGAKHCHMPC),
-            1362 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_BPAGNKJEOGN),
-            1375 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_CDAPFMMKDFK),
-            1347 => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_GCDEMKKEDNH),
+            0 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_MNFEPONEDDJ),
+            1357 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_NBFFGOGOMMO),
+            1304 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_LHGOAMLHJLG),
+            1335 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_OEEILJOHHEB),
+            1324 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_BCKFCEILKOO),
+            1369 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_JMOHGLDKJJB),
+            1362 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_ANCJOFNNIAK),
+            1383 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_MHJFDMMKMIP),
+            1346 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_CLFJOFAIAJL),
+            1340 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_PMDGHKEJACE),
+            1400 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_PGAHDEDGDBE),
+            1313 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_NMIOCGFJIFI),
+            1381 => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_MAGLKDBBBKA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdAdventureType> {
         match str {
-            "AKCLJAAKCBD_GKJBAODJMJG" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_GKJBAODJMJG),
-            "AKCLJAAKCBD_OGAJNIILCLA" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_OGAJNIILCLA),
-            "AKCLJAAKCBD_NPOIGBCLGIH" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_NPOIGBCLGIH),
-            "AKCLJAAKCBD_MLEIFMHMEBD" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_MLEIFMHMEBD),
-            "AKCLJAAKCBD_IFIHHDDJPPI" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_IFIHHDDJPPI),
-            "AKCLJAAKCBD_NJJNFOILODA" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_NJJNFOILODA),
-            "AKCLJAAKCBD_APGAIJMEGIG" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_APGAIJMEGIG),
-            "AKCLJAAKCBD_JNNKBFHOBBP" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_JNNKBFHOBBP),
-            "AKCLJAAKCBD_FGBPICFJKGH" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_FGBPICFJKGH),
-            "AKCLJAAKCBD_COGAKHCHMPC" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_COGAKHCHMPC),
-            "AKCLJAAKCBD_BPAGNKJEOGN" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_BPAGNKJEOGN),
-            "AKCLJAAKCBD_CDAPFMMKDFK" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_CDAPFMMKDFK),
-            "AKCLJAAKCBD_GCDEMKKEDNH" => ::std::option::Option::Some(CmdAdventureType::AKCLJAAKCBD_GCDEMKKEDNH),
+            "CmdAdventureType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_MNFEPONEDDJ),
+            "CmdAdventureType_NBFFGOGOMMO" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_NBFFGOGOMMO),
+            "CmdAdventureType_LHGOAMLHJLG" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_LHGOAMLHJLG),
+            "CmdAdventureType_OEEILJOHHEB" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_OEEILJOHHEB),
+            "CmdAdventureType_BCKFCEILKOO" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_BCKFCEILKOO),
+            "CmdAdventureType_JMOHGLDKJJB" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_JMOHGLDKJJB),
+            "CmdAdventureType_ANCJOFNNIAK" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_ANCJOFNNIAK),
+            "CmdAdventureType_MHJFDMMKMIP" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_MHJFDMMKMIP),
+            "CmdAdventureType_CLFJOFAIAJL" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_CLFJOFAIAJL),
+            "CmdAdventureType_PMDGHKEJACE" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_PMDGHKEJACE),
+            "CmdAdventureType_PGAHDEDGDBE" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_PGAHDEDGDBE),
+            "CmdAdventureType_NMIOCGFJIFI" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_NMIOCGFJIFI),
+            "CmdAdventureType_MAGLKDBBBKA" => ::std::option::Option::Some(CmdAdventureType::CmdAdventureType_MAGLKDBBBKA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdAdventureType] = &[
-        CmdAdventureType::AKCLJAAKCBD_GKJBAODJMJG,
-        CmdAdventureType::AKCLJAAKCBD_OGAJNIILCLA,
-        CmdAdventureType::AKCLJAAKCBD_NPOIGBCLGIH,
-        CmdAdventureType::AKCLJAAKCBD_MLEIFMHMEBD,
-        CmdAdventureType::AKCLJAAKCBD_IFIHHDDJPPI,
-        CmdAdventureType::AKCLJAAKCBD_NJJNFOILODA,
-        CmdAdventureType::AKCLJAAKCBD_APGAIJMEGIG,
-        CmdAdventureType::AKCLJAAKCBD_JNNKBFHOBBP,
-        CmdAdventureType::AKCLJAAKCBD_FGBPICFJKGH,
-        CmdAdventureType::AKCLJAAKCBD_COGAKHCHMPC,
-        CmdAdventureType::AKCLJAAKCBD_BPAGNKJEOGN,
-        CmdAdventureType::AKCLJAAKCBD_CDAPFMMKDFK,
-        CmdAdventureType::AKCLJAAKCBD_GCDEMKKEDNH,
+        CmdAdventureType::CmdAdventureType_MNFEPONEDDJ,
+        CmdAdventureType::CmdAdventureType_NBFFGOGOMMO,
+        CmdAdventureType::CmdAdventureType_LHGOAMLHJLG,
+        CmdAdventureType::CmdAdventureType_OEEILJOHHEB,
+        CmdAdventureType::CmdAdventureType_BCKFCEILKOO,
+        CmdAdventureType::CmdAdventureType_JMOHGLDKJJB,
+        CmdAdventureType::CmdAdventureType_ANCJOFNNIAK,
+        CmdAdventureType::CmdAdventureType_MHJFDMMKMIP,
+        CmdAdventureType::CmdAdventureType_CLFJOFAIAJL,
+        CmdAdventureType::CmdAdventureType_PMDGHKEJACE,
+        CmdAdventureType::CmdAdventureType_PGAHDEDGDBE,
+        CmdAdventureType::CmdAdventureType_NMIOCGFJIFI,
+        CmdAdventureType::CmdAdventureType_MAGLKDBBBKA,
     ];
 }
 
@@ -125,19 +125,19 @@ impl ::protobuf::EnumFull for CmdAdventureType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdAdventureType::AKCLJAAKCBD_GKJBAODJMJG => 0,
-            CmdAdventureType::AKCLJAAKCBD_OGAJNIILCLA => 1,
-            CmdAdventureType::AKCLJAAKCBD_NPOIGBCLGIH => 2,
-            CmdAdventureType::AKCLJAAKCBD_MLEIFMHMEBD => 3,
-            CmdAdventureType::AKCLJAAKCBD_IFIHHDDJPPI => 4,
-            CmdAdventureType::AKCLJAAKCBD_NJJNFOILODA => 5,
-            CmdAdventureType::AKCLJAAKCBD_APGAIJMEGIG => 6,
-            CmdAdventureType::AKCLJAAKCBD_JNNKBFHOBBP => 7,
-            CmdAdventureType::AKCLJAAKCBD_FGBPICFJKGH => 8,
-            CmdAdventureType::AKCLJAAKCBD_COGAKHCHMPC => 9,
-            CmdAdventureType::AKCLJAAKCBD_BPAGNKJEOGN => 10,
-            CmdAdventureType::AKCLJAAKCBD_CDAPFMMKDFK => 11,
-            CmdAdventureType::AKCLJAAKCBD_GCDEMKKEDNH => 12,
+            CmdAdventureType::CmdAdventureType_MNFEPONEDDJ => 0,
+            CmdAdventureType::CmdAdventureType_NBFFGOGOMMO => 1,
+            CmdAdventureType::CmdAdventureType_LHGOAMLHJLG => 2,
+            CmdAdventureType::CmdAdventureType_OEEILJOHHEB => 3,
+            CmdAdventureType::CmdAdventureType_BCKFCEILKOO => 4,
+            CmdAdventureType::CmdAdventureType_JMOHGLDKJJB => 5,
+            CmdAdventureType::CmdAdventureType_ANCJOFNNIAK => 6,
+            CmdAdventureType::CmdAdventureType_MHJFDMMKMIP => 7,
+            CmdAdventureType::CmdAdventureType_CLFJOFAIAJL => 8,
+            CmdAdventureType::CmdAdventureType_PMDGHKEJACE => 9,
+            CmdAdventureType::CmdAdventureType_PGAHDEDGDBE => 10,
+            CmdAdventureType::CmdAdventureType_NMIOCGFJIFI => 11,
+            CmdAdventureType::CmdAdventureType_MAGLKDBBBKA => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -145,7 +145,7 @@ impl ::protobuf::EnumFull for CmdAdventureType {
 
 impl ::std::default::Default for CmdAdventureType {
     fn default() -> Self {
-        CmdAdventureType::AKCLJAAKCBD_GKJBAODJMJG
+        CmdAdventureType::CmdAdventureType_MNFEPONEDDJ
     }
 }
 
@@ -156,16 +156,16 @@ impl CmdAdventureType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdAdventureType.proto*\x97\x03\n\x10CmdAdventureType\x12\x1b\n\
-    \x17AKCLJAAKCBD_GKJBAODJMJG\x10\0\x12\x1c\n\x17AKCLJAAKCBD_OGAJNIILCLA\
-    \x10\xcd\n\x12\x1c\n\x17AKCLJAAKCBD_NPOIGBCLGIH\x10\x99\n\x12\x1c\n\x17A\
-    KCLJAAKCBD_MLEIFMHMEBD\x10\xa8\n\x12\x1c\n\x17AKCLJAAKCBD_IFIHHDDJPPI\
-    \x10\xae\n\x12\x1c\n\x17AKCLJAAKCBD_NJJNFOILODA\x10\xd9\n\x12\x1c\n\x17A\
-    KCLJAAKCBD_APGAIJMEGIG\x10\xba\n\x12\x1c\n\x17AKCLJAAKCBD_JNNKBFHOBBP\
-    \x10\xb0\n\x12\x1c\n\x17AKCLJAAKCBD_FGBPICFJKGH\x10\xb9\n\x12\x1c\n\x17A\
-    KCLJAAKCBD_COGAKHCHMPC\x10\xcb\n\x12\x1c\n\x17AKCLJAAKCBD_BPAGNKJEOGN\
-    \x10\xd2\n\x12\x1c\n\x17AKCLJAAKCBD_CDAPFMMKDFK\x10\xdf\n\x12\x1c\n\x17A\
-    KCLJAAKCBD_GCDEMKKEDNH\x10\xc3\nb\x06proto3\
+    \n\x16CmdAdventureType.proto*\xd8\x03\n\x10CmdAdventureType\x12\x20\n\
+    \x1cCmdAdventureType_MNFEPONEDDJ\x10\0\x12!\n\x1cCmdAdventureType_NBFFGO\
+    GOMMO\x10\xcd\n\x12!\n\x1cCmdAdventureType_LHGOAMLHJLG\x10\x98\n\x12!\n\
+    \x1cCmdAdventureType_OEEILJOHHEB\x10\xb7\n\x12!\n\x1cCmdAdventureType_BC\
+    KFCEILKOO\x10\xac\n\x12!\n\x1cCmdAdventureType_JMOHGLDKJJB\x10\xd9\n\x12\
+    !\n\x1cCmdAdventureType_ANCJOFNNIAK\x10\xd2\n\x12!\n\x1cCmdAdventureType\
+    _MHJFDMMKMIP\x10\xe7\n\x12!\n\x1cCmdAdventureType_CLFJOFAIAJL\x10\xc2\n\
+    \x12!\n\x1cCmdAdventureType_PMDGHKEJACE\x10\xbc\n\x12!\n\x1cCmdAdventure\
+    Type_PGAHDEDGDBE\x10\xf8\n\x12!\n\x1cCmdAdventureType_NMIOCGFJIFI\x10\
+    \xa1\n\x12!\n\x1cCmdAdventureType_MAGLKDBBBKA\x10\xe5\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

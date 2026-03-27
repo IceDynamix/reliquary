@@ -28,8 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetTrainWorldIdCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetTrainWorldIdCsReq.KNNGJBPJFIB)
-    pub KNNGJBPJFIB: u32,
+    // @@protoc_insertion_point(field:SetTrainWorldIdCsReq.interact_id)
+    pub interact_id: u64,
+    // @@protoc_insertion_point(field:SetTrainWorldIdCsReq.IJGLDCNMELH)
+    pub IJGLDCNMELH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SetTrainWorldIdCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +49,17 @@ impl SetTrainWorldIdCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KNNGJBPJFIB",
-            |m: &SetTrainWorldIdCsReq| { &m.KNNGJBPJFIB },
-            |m: &mut SetTrainWorldIdCsReq| { &mut m.KNNGJBPJFIB },
+            "interact_id",
+            |m: &SetTrainWorldIdCsReq| { &m.interact_id },
+            |m: &mut SetTrainWorldIdCsReq| { &mut m.interact_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IJGLDCNMELH",
+            |m: &SetTrainWorldIdCsReq| { &m.IJGLDCNMELH },
+            |m: &mut SetTrainWorldIdCsReq| { &mut m.IJGLDCNMELH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetTrainWorldIdCsReq>(
             "SetTrainWorldIdCsReq",
@@ -72,8 +79,11 @@ impl ::protobuf::Message for SetTrainWorldIdCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.KNNGJBPJFIB = is.read_uint32()?;
+                16 => {
+                    self.interact_id = is.read_uint64()?;
+                },
+                72 => {
+                    self.IJGLDCNMELH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +97,11 @@ impl ::protobuf::Message for SetTrainWorldIdCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KNNGJBPJFIB != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.KNNGJBPJFIB);
+        if self.interact_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(2, self.interact_id);
+        }
+        if self.IJGLDCNMELH != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.IJGLDCNMELH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +109,11 @@ impl ::protobuf::Message for SetTrainWorldIdCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KNNGJBPJFIB != 0 {
-            os.write_uint32(6, self.KNNGJBPJFIB)?;
+        if self.interact_id != 0 {
+            os.write_uint64(2, self.interact_id)?;
+        }
+        if self.IJGLDCNMELH != 0 {
+            os.write_uint32(9, self.IJGLDCNMELH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +132,15 @@ impl ::protobuf::Message for SetTrainWorldIdCsReq {
     }
 
     fn clear(&mut self) {
-        self.KNNGJBPJFIB = 0;
+        self.interact_id = 0;
+        self.IJGLDCNMELH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetTrainWorldIdCsReq {
         static instance: SetTrainWorldIdCsReq = SetTrainWorldIdCsReq {
-            KNNGJBPJFIB: 0,
+            interact_id: 0,
+            IJGLDCNMELH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for SetTrainWorldIdCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aSetTrainWorldIdCsReq.proto\"8\n\x14SetTrainWorldIdCsReq\x12\x20\n\
-    \x0bKNNGJBPJFIB\x18\x06\x20\x01(\rR\x0bKNNGJBPJFIBb\x06proto3\
+    \n\x1aSetTrainWorldIdCsReq.proto\"Y\n\x14SetTrainWorldIdCsReq\x12\x1f\n\
+    \x0binteract_id\x18\x02\x20\x01(\x04R\ninteractId\x12\x20\n\x0bIJGLDCNME\
+    LH\x18\t\x20\x01(\rR\x0bIJGLDCNMELHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

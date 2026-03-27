@@ -36,10 +36,10 @@ pub struct ClientTurnSnapshot {
     pub anim_event_counter: u32,
     // @@protoc_insertion_point(field:ClientTurnSnapshot.snapshot_list)
     pub snapshot_list: ::std::vec::Vec<super::CharacterSnapshot::CharacterSnapshot>,
-    // @@protoc_insertion_point(field:ClientTurnSnapshot.LBKLICGGEAG)
-    pub LBKLICGGEAG: ::std::vec::Vec<super::AnimEventSnapshot::AnimEventSnapshot>,
-    // @@protoc_insertion_point(field:ClientTurnSnapshot.NGANDKKBJGH)
-    pub NGANDKKBJGH: u32,
+    // @@protoc_insertion_point(field:ClientTurnSnapshot.AEMPFNCKJLM)
+    pub AEMPFNCKJLM: ::std::vec::Vec<super::AnimEventSnapshot::AnimEventSnapshot>,
+    // @@protoc_insertion_point(field:ClientTurnSnapshot.LFIOPHFFNFH)
+    pub LFIOPHFFNFH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClientTurnSnapshot.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -80,14 +80,14 @@ impl ClientTurnSnapshot {
             |m: &mut ClientTurnSnapshot| { &mut m.snapshot_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LBKLICGGEAG",
-            |m: &ClientTurnSnapshot| { &m.LBKLICGGEAG },
-            |m: &mut ClientTurnSnapshot| { &mut m.LBKLICGGEAG },
+            "AEMPFNCKJLM",
+            |m: &ClientTurnSnapshot| { &m.AEMPFNCKJLM },
+            |m: &mut ClientTurnSnapshot| { &mut m.AEMPFNCKJLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGANDKKBJGH",
-            |m: &ClientTurnSnapshot| { &m.NGANDKKBJGH },
-            |m: &mut ClientTurnSnapshot| { &mut m.NGANDKKBJGH },
+            "LFIOPHFFNFH",
+            |m: &ClientTurnSnapshot| { &m.LFIOPHFFNFH },
+            |m: &mut ClientTurnSnapshot| { &mut m.LFIOPHFFNFH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientTurnSnapshot>(
             "ClientTurnSnapshot",
@@ -120,10 +120,10 @@ impl ::protobuf::Message for ClientTurnSnapshot {
                     self.snapshot_list.push(is.read_message()?);
                 },
                 42 => {
-                    self.LBKLICGGEAG.push(is.read_message()?);
+                    self.AEMPFNCKJLM.push(is.read_message()?);
                 },
                 48 => {
-                    self.NGANDKKBJGH = is.read_uint32()?;
+                    self.LFIOPHFFNFH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,12 +150,12 @@ impl ::protobuf::Message for ClientTurnSnapshot {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.LBKLICGGEAG {
+        for value in &self.AEMPFNCKJLM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.NGANDKKBJGH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.NGANDKKBJGH);
+        if self.LFIOPHFFNFH != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LFIOPHFFNFH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,11 +175,11 @@ impl ::protobuf::Message for ClientTurnSnapshot {
         for v in &self.snapshot_list {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        for v in &self.LBKLICGGEAG {
+        for v in &self.AEMPFNCKJLM {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        if self.NGANDKKBJGH != 0 {
-            os.write_uint32(6, self.NGANDKKBJGH)?;
+        if self.LFIOPHFFNFH != 0 {
+            os.write_uint32(6, self.LFIOPHFFNFH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -202,8 +202,8 @@ impl ::protobuf::Message for ClientTurnSnapshot {
         self.random_counter = 0;
         self.anim_event_counter = 0;
         self.snapshot_list.clear();
-        self.LBKLICGGEAG.clear();
-        self.NGANDKKBJGH = 0;
+        self.AEMPFNCKJLM.clear();
+        self.LFIOPHFFNFH = 0;
         self.special_fields.clear();
     }
 
@@ -213,8 +213,8 @@ impl ::protobuf::Message for ClientTurnSnapshot {
             random_counter: 0,
             anim_event_counter: 0,
             snapshot_list: ::std::vec::Vec::new(),
-            LBKLICGGEAG: ::std::vec::Vec::new(),
-            NGANDKKBJGH: 0,
+            AEMPFNCKJLM: ::std::vec::Vec::new(),
+            LFIOPHFFNFH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -244,9 +244,9 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     unter\x18\x01\x20\x01(\rR\x0bturnCounter\x12%\n\x0erandom_counter\x18\
     \x02\x20\x01(\rR\rrandomCounter\x12,\n\x12anim_event_counter\x18\x03\x20\
     \x01(\rR\x10animEventCounter\x127\n\rsnapshot_list\x18\x04\x20\x03(\x0b2\
-    \x12.CharacterSnapshotR\x0csnapshotList\x124\n\x0bLBKLICGGEAG\x18\x05\
-    \x20\x03(\x0b2\x12.AnimEventSnapshotR\x0bLBKLICGGEAG\x12\x20\n\x0bNGANDK\
-    KBJGH\x18\x06\x20\x01(\rR\x0bNGANDKKBJGHb\x06proto3\
+    \x12.CharacterSnapshotR\x0csnapshotList\x124\n\x0bAEMPFNCKJLM\x18\x05\
+    \x20\x03(\x0b2\x12.AnimEventSnapshotR\x0bAEMPFNCKJLM\x12\x20\n\x0bLFIOPH\
+    FFNFH\x18\x06\x20\x01(\rR\x0bLFIOPHFFNFHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnhanceRogueBuffScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.PABNMJGHCHG)
-    pub PABNMJGHCHG: ::protobuf::MessageField<super::LODJIBBFPGB::LODJIBBFPGB>,
     // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.LNJBCAFHGNH)
-    pub LNJBCAFHGNH: ::protobuf::MessageField<super::DBIGJLKGHGC::DBIGJLKGHGC>,
-    // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.AKAKNBPEAFN)
-    pub AKAKNBPEAFN: bool,
+    // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.GPONDKOLOLI)
+    pub GPONDKOLOLI: ::protobuf::MessageField<super::HIDFOGCCJNM::HIDFOGCCJNM>,
+    // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.GKALJIFKGNH)
+    pub GKALJIFKGNH: bool,
+    // @@protoc_insertion_point(field:EnhanceRogueBuffScRsp.OCKACNPPPJL)
+    pub OCKACNPPPJL: ::protobuf::MessageField<super::LJEGFMNCCAB::LJEGFMNCCAB>,
     // special fields
     // @@protoc_insertion_point(special_field:EnhanceRogueBuffScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl EnhanceRogueBuffScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LODJIBBFPGB::LODJIBBFPGB>(
-            "PABNMJGHCHG",
-            |m: &EnhanceRogueBuffScRsp| { &m.PABNMJGHCHG },
-            |m: &mut EnhanceRogueBuffScRsp| { &mut m.PABNMJGHCHG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EnhanceRogueBuffScRsp| { &m.retcode },
             |m: &mut EnhanceRogueBuffScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DBIGJLKGHGC::DBIGJLKGHGC>(
-            "LNJBCAFHGNH",
-            |m: &EnhanceRogueBuffScRsp| { &m.LNJBCAFHGNH },
-            |m: &mut EnhanceRogueBuffScRsp| { &mut m.LNJBCAFHGNH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HIDFOGCCJNM::HIDFOGCCJNM>(
+            "GPONDKOLOLI",
+            |m: &EnhanceRogueBuffScRsp| { &m.GPONDKOLOLI },
+            |m: &mut EnhanceRogueBuffScRsp| { &mut m.GPONDKOLOLI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AKAKNBPEAFN",
-            |m: &EnhanceRogueBuffScRsp| { &m.AKAKNBPEAFN },
-            |m: &mut EnhanceRogueBuffScRsp| { &mut m.AKAKNBPEAFN },
+            "GKALJIFKGNH",
+            |m: &EnhanceRogueBuffScRsp| { &m.GKALJIFKGNH },
+            |m: &mut EnhanceRogueBuffScRsp| { &mut m.GKALJIFKGNH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LJEGFMNCCAB::LJEGFMNCCAB>(
+            "OCKACNPPPJL",
+            |m: &EnhanceRogueBuffScRsp| { &m.OCKACNPPPJL },
+            |m: &mut EnhanceRogueBuffScRsp| { &mut m.OCKACNPPPJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnhanceRogueBuffScRsp>(
             "EnhanceRogueBuffScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PABNMJGHCHG)?;
-                },
-                112 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LNJBCAFHGNH)?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GPONDKOLOLI)?;
                 },
-                32 => {
-                    self.AKAKNBPEAFN = is.read_bool()?;
+                104 => {
+                    self.GKALJIFKGNH = is.read_bool()?;
+                },
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OCKACNPPPJL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.PABNMJGHCHG.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if let Some(v) = self.LNJBCAFHGNH.as_ref() {
+        if let Some(v) = self.GPONDKOLOLI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.AKAKNBPEAFN != false {
+        if self.GKALJIFKGNH != false {
             my_size += 1 + 1;
+        }
+        if let Some(v) = self.OCKACNPPPJL.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.PABNMJGHCHG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        if let Some(v) = self.LNJBCAFHGNH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.GPONDKOLOLI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if self.AKAKNBPEAFN != false {
-            os.write_bool(4, self.AKAKNBPEAFN)?;
+        if self.GKALJIFKGNH != false {
+            os.write_bool(13, self.GKALJIFKGNH)?;
+        }
+        if let Some(v) = self.OCKACNPPPJL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for EnhanceRogueBuffScRsp {
     }
 
     fn clear(&mut self) {
-        self.PABNMJGHCHG.clear();
         self.retcode = 0;
-        self.LNJBCAFHGNH.clear();
-        self.AKAKNBPEAFN = false;
+        self.GPONDKOLOLI.clear();
+        self.GKALJIFKGNH = false;
+        self.OCKACNPPPJL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnhanceRogueBuffScRsp {
         static instance: EnhanceRogueBuffScRsp = EnhanceRogueBuffScRsp {
-            PABNMJGHCHG: ::protobuf::MessageField::none(),
             retcode: 0,
-            LNJBCAFHGNH: ::protobuf::MessageField::none(),
-            AKAKNBPEAFN: false,
+            GPONDKOLOLI: ::protobuf::MessageField::none(),
+            GKALJIFKGNH: false,
+            OCKACNPPPJL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,12 +203,12 @@ impl ::protobuf::reflect::ProtobufValue for EnhanceRogueBuffScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bEnhanceRogueBuffScRsp.proto\x1a\x11DBIGJLKGHGC.proto\x1a\x11LODJIB\
-    BFPGB.proto\"\xb3\x01\n\x15EnhanceRogueBuffScRsp\x12.\n\x0bPABNMJGHCHG\
-    \x18\x01\x20\x01(\x0b2\x0c.LODJIBBFPGBR\x0bPABNMJGHCHG\x12\x18\n\x07retc\
-    ode\x18\x0e\x20\x01(\rR\x07retcode\x12.\n\x0bLNJBCAFHGNH\x18\x06\x20\x01\
-    (\x0b2\x0c.DBIGJLKGHGCR\x0bLNJBCAFHGNH\x12\x20\n\x0bAKAKNBPEAFN\x18\x04\
-    \x20\x01(\x08R\x0bAKAKNBPEAFNb\x06proto3\
+    \n\x1bEnhanceRogueBuffScRsp.proto\x1a\x11HIDFOGCCJNM.proto\x1a\x11LJEGFM\
+    NCCAB.proto\"\xb3\x01\n\x15EnhanceRogueBuffScRsp\x12\x18\n\x07retcode\
+    \x18\x08\x20\x01(\rR\x07retcode\x12.\n\x0bGPONDKOLOLI\x18\x07\x20\x01(\
+    \x0b2\x0c.HIDFOGCCJNMR\x0bGPONDKOLOLI\x12\x20\n\x0bGKALJIFKGNH\x18\r\x20\
+    \x01(\x08R\x0bGKALJIFKGNH\x12.\n\x0bOCKACNPPPJL\x18\x0b\x20\x01(\x0b2\
+    \x0c.LJEGFMNCCABR\x0bOCKACNPPPJLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,8 +226,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DBIGJLKGHGC::file_descriptor().clone());
-            deps.push(super::LODJIBBFPGB::file_descriptor().clone());
+            deps.push(super::HIDFOGCCJNM::file_descriptor().clone());
+            deps.push(super::LJEGFMNCCAB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnhanceRogueBuffScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

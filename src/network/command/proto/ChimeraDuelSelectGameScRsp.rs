@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelSelectGameScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelSelectGameScRsp.MIMCEJGCKBO)
-    pub MIMCEJGCKBO: u32,
     // @@protoc_insertion_point(field:ChimeraDuelSelectGameScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelSelectGameScRsp.JOBJLLEINIP)
+    pub JOBJLLEINIP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelSelectGameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ChimeraDuelSelectGameScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MIMCEJGCKBO",
-            |m: &ChimeraDuelSelectGameScRsp| { &m.MIMCEJGCKBO },
-            |m: &mut ChimeraDuelSelectGameScRsp| { &mut m.MIMCEJGCKBO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChimeraDuelSelectGameScRsp| { &m.retcode },
             |m: &mut ChimeraDuelSelectGameScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JOBJLLEINIP",
+            |m: &ChimeraDuelSelectGameScRsp| { &m.JOBJLLEINIP },
+            |m: &mut ChimeraDuelSelectGameScRsp| { &mut m.JOBJLLEINIP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelSelectGameScRsp>(
             "ChimeraDuelSelectGameScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChimeraDuelSelectGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.MIMCEJGCKBO = is.read_uint32()?;
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 56 => {
-                    self.retcode = is.read_uint32()?;
+                    self.JOBJLLEINIP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChimeraDuelSelectGameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MIMCEJGCKBO != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MIMCEJGCKBO);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if self.JOBJLLEINIP != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JOBJLLEINIP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChimeraDuelSelectGameScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MIMCEJGCKBO != 0 {
-            os.write_uint32(12, self.MIMCEJGCKBO)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
+        }
+        if self.JOBJLLEINIP != 0 {
+            os.write_uint32(7, self.JOBJLLEINIP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ChimeraDuelSelectGameScRsp {
     }
 
     fn clear(&mut self) {
-        self.MIMCEJGCKBO = 0;
         self.retcode = 0;
+        self.JOBJLLEINIP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelSelectGameScRsp {
         static instance: ChimeraDuelSelectGameScRsp = ChimeraDuelSelectGameScRsp {
-            MIMCEJGCKBO: 0,
             retcode: 0,
+            JOBJLLEINIP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelSelectGameScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20ChimeraDuelSelectGameScRsp.proto\"X\n\x1aChimeraDuelSelectGameScRs\
-    p\x12\x20\n\x0bMIMCEJGCKBO\x18\x0c\x20\x01(\rR\x0bMIMCEJGCKBO\x12\x18\n\
-    \x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\x06proto3\
+    p\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x20\n\x0bJOBJL\
+    LEINIP\x18\x07\x20\x01(\rR\x0bJOBJLLEINIPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

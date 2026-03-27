@@ -28,44 +28,48 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightGameBasicInfo {
     // message fields
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.gold)
-    pub gold: u32,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.tutorial_unlock_id_list)
-    pub tutorial_unlock_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.track_trait_id_list)
-    pub track_trait_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_combo_win_num)
-    pub grid_fight_combo_win_num: u32,
     // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_buy_exp_cost)
     pub grid_fight_buy_exp_cost: u32,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.CCNMBCLHEJP)
-    pub CCNMBCLHEJP: u32,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.game_lock_info)
-    pub game_lock_info: ::protobuf::MessageField<super::GridFightLockInfo::GridFightLockInfo>,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.lock_type)
-    pub lock_type: ::protobuf::EnumOrUnknown<super::GridFightLockType::GridFightLockType>,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_sync_curtask_info)
-    pub grid_fight_sync_curtask_info: ::protobuf::MessageField<super::GridFightSyncCurrentTaskInfo::GridFightSyncCurrentTaskInfo>,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_off_field_max_count)
-    pub grid_fight_off_field_max_count: u32,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.MLPEIDNLAJE)
+    pub MLPEIDNLAJE: u32,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.DJGJCEOPIOF)
+    pub DJGJCEOPIOF: u32,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.track_trait_id_list)
+    pub track_trait_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_lineup_hp)
     pub grid_fight_lineup_hp: u32,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_target_guide_code)
-    pub grid_fight_target_guide_code: ::std::string::String,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_cur_level_exp)
-    pub grid_fight_cur_level_exp: u32,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.EEKPBMFFBFN)
-    pub EEKPBMFFBFN: u32,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.tutorial_unlock_id_list)
+    pub tutorial_unlock_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.gold)
+    pub gold: u32,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.tutorial_unlock_id_lista)
+    pub tutorial_unlock_id_lista: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_off_field_max_count)
+    pub grid_fight_off_field_max_count: u32,
     // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_lineup_max_hp)
     pub grid_fight_lineup_max_hp: u32,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.JGFEJNOJANN)
-    pub JGFEJNOJANN: u32,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_max_interest_gold)
-    pub grid_fight_max_interest_gold: u32,
-    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_max_avatar_count)
-    pub grid_fight_max_avatar_count: u32,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.game_lock_info)
+    pub game_lock_info: ::protobuf::MessageField<super::GridFightLockInfo::GridFightLockInfo>,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_sync_curtask_info)
+    pub grid_fight_sync_curtask_info: ::protobuf::MessageField<super::GridFightSyncCurrentTaskInfo::GridFightSyncCurrentTaskInfo>,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.lock_type)
+    pub lock_type: ::protobuf::EnumOrUnknown<super::GridFightLockType::GridFightLockType>,
     // @@protoc_insertion_point(field:GridFightGameBasicInfo.role_track_equipment_list)
     pub role_track_equipment_list: ::std::vec::Vec<super::RoleTrackEquipmentInfo::RoleTrackEquipmentInfo>,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_cur_level_exp)
+    pub grid_fight_cur_level_exp: u32,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_max_avatar_count)
+    pub grid_fight_max_avatar_count: u32,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_target_guide_code)
+    pub grid_fight_target_guide_code: ::std::string::String,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.JFEBDFFKLDI)
+    pub JFEBDFFKLDI: u32,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_target_guide_codea)
+    pub grid_fight_target_guide_codea: ::std::string::String,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_combo_win_num)
+    pub grid_fight_combo_win_num: u32,
+    // @@protoc_insertion_point(field:GridFightGameBasicInfo.grid_fight_max_interest_gold)
+    pub grid_fight_max_interest_gold: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightGameBasicInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -83,17 +87,22 @@ impl GridFightGameBasicInfo {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(19);
+        let mut fields = ::std::vec::Vec::with_capacity(21);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "gold",
-            |m: &GridFightGameBasicInfo| { &m.gold },
-            |m: &mut GridFightGameBasicInfo| { &mut m.gold },
+            "grid_fight_buy_exp_cost",
+            |m: &GridFightGameBasicInfo| { &m.grid_fight_buy_exp_cost },
+            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_buy_exp_cost },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "tutorial_unlock_id_list",
-            |m: &GridFightGameBasicInfo| { &m.tutorial_unlock_id_list },
-            |m: &mut GridFightGameBasicInfo| { &mut m.tutorial_unlock_id_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MLPEIDNLAJE",
+            |m: &GridFightGameBasicInfo| { &m.MLPEIDNLAJE },
+            |m: &mut GridFightGameBasicInfo| { &mut m.MLPEIDNLAJE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DJGJCEOPIOF",
+            |m: &GridFightGameBasicInfo| { &m.DJGJCEOPIOF },
+            |m: &mut GridFightGameBasicInfo| { &mut m.DJGJCEOPIOF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "track_trait_id_list",
@@ -101,34 +110,24 @@ impl GridFightGameBasicInfo {
             |m: &mut GridFightGameBasicInfo| { &mut m.track_trait_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_fight_combo_win_num",
-            |m: &GridFightGameBasicInfo| { &m.grid_fight_combo_win_num },
-            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_combo_win_num },
+            "grid_fight_lineup_hp",
+            |m: &GridFightGameBasicInfo| { &m.grid_fight_lineup_hp },
+            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_lineup_hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "tutorial_unlock_id_list",
+            |m: &GridFightGameBasicInfo| { &m.tutorial_unlock_id_list },
+            |m: &mut GridFightGameBasicInfo| { &mut m.tutorial_unlock_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_fight_buy_exp_cost",
-            |m: &GridFightGameBasicInfo| { &m.grid_fight_buy_exp_cost },
-            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_buy_exp_cost },
+            "gold",
+            |m: &GridFightGameBasicInfo| { &m.gold },
+            |m: &mut GridFightGameBasicInfo| { &mut m.gold },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CCNMBCLHEJP",
-            |m: &GridFightGameBasicInfo| { &m.CCNMBCLHEJP },
-            |m: &mut GridFightGameBasicInfo| { &mut m.CCNMBCLHEJP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightLockInfo::GridFightLockInfo>(
-            "game_lock_info",
-            |m: &GridFightGameBasicInfo| { &m.game_lock_info },
-            |m: &mut GridFightGameBasicInfo| { &mut m.game_lock_info },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "lock_type",
-            |m: &GridFightGameBasicInfo| { &m.lock_type },
-            |m: &mut GridFightGameBasicInfo| { &mut m.lock_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightSyncCurrentTaskInfo::GridFightSyncCurrentTaskInfo>(
-            "grid_fight_sync_curtask_info",
-            |m: &GridFightGameBasicInfo| { &m.grid_fight_sync_curtask_info },
-            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_sync_curtask_info },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "tutorial_unlock_id_lista",
+            |m: &GridFightGameBasicInfo| { &m.tutorial_unlock_id_lista },
+            |m: &mut GridFightGameBasicInfo| { &mut m.tutorial_unlock_id_lista },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "grid_fight_off_field_max_count",
@@ -136,14 +135,29 @@ impl GridFightGameBasicInfo {
             |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_off_field_max_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_fight_lineup_hp",
-            |m: &GridFightGameBasicInfo| { &m.grid_fight_lineup_hp },
-            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_lineup_hp },
+            "grid_fight_lineup_max_hp",
+            |m: &GridFightGameBasicInfo| { &m.grid_fight_lineup_max_hp },
+            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_lineup_max_hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightLockInfo::GridFightLockInfo>(
+            "game_lock_info",
+            |m: &GridFightGameBasicInfo| { &m.game_lock_info },
+            |m: &mut GridFightGameBasicInfo| { &mut m.game_lock_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GridFightSyncCurrentTaskInfo::GridFightSyncCurrentTaskInfo>(
+            "grid_fight_sync_curtask_info",
+            |m: &GridFightGameBasicInfo| { &m.grid_fight_sync_curtask_info },
+            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_sync_curtask_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_fight_target_guide_code",
-            |m: &GridFightGameBasicInfo| { &m.grid_fight_target_guide_code },
-            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_target_guide_code },
+            "lock_type",
+            |m: &GridFightGameBasicInfo| { &m.lock_type },
+            |m: &mut GridFightGameBasicInfo| { &mut m.lock_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "role_track_equipment_list",
+            |m: &GridFightGameBasicInfo| { &m.role_track_equipment_list },
+            |m: &mut GridFightGameBasicInfo| { &mut m.role_track_equipment_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "grid_fight_cur_level_exp",
@@ -151,34 +165,34 @@ impl GridFightGameBasicInfo {
             |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_cur_level_exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EEKPBMFFBFN",
-            |m: &GridFightGameBasicInfo| { &m.EEKPBMFFBFN },
-            |m: &mut GridFightGameBasicInfo| { &mut m.EEKPBMFFBFN },
+            "grid_fight_max_avatar_count",
+            |m: &GridFightGameBasicInfo| { &m.grid_fight_max_avatar_count },
+            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_max_avatar_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_fight_lineup_max_hp",
-            |m: &GridFightGameBasicInfo| { &m.grid_fight_lineup_max_hp },
-            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_lineup_max_hp },
+            "grid_fight_target_guide_code",
+            |m: &GridFightGameBasicInfo| { &m.grid_fight_target_guide_code },
+            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_target_guide_code },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JGFEJNOJANN",
-            |m: &GridFightGameBasicInfo| { &m.JGFEJNOJANN },
-            |m: &mut GridFightGameBasicInfo| { &mut m.JGFEJNOJANN },
+            "JFEBDFFKLDI",
+            |m: &GridFightGameBasicInfo| { &m.JFEBDFFKLDI },
+            |m: &mut GridFightGameBasicInfo| { &mut m.JFEBDFFKLDI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "grid_fight_target_guide_codea",
+            |m: &GridFightGameBasicInfo| { &m.grid_fight_target_guide_codea },
+            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_target_guide_codea },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "grid_fight_combo_win_num",
+            |m: &GridFightGameBasicInfo| { &m.grid_fight_combo_win_num },
+            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_combo_win_num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "grid_fight_max_interest_gold",
             |m: &GridFightGameBasicInfo| { &m.grid_fight_max_interest_gold },
             |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_max_interest_gold },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "grid_fight_max_avatar_count",
-            |m: &GridFightGameBasicInfo| { &m.grid_fight_max_avatar_count },
-            |m: &mut GridFightGameBasicInfo| { &mut m.grid_fight_max_avatar_count },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "role_track_equipment_list",
-            |m: &GridFightGameBasicInfo| { &m.role_track_equipment_list },
-            |m: &mut GridFightGameBasicInfo| { &mut m.role_track_equipment_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightGameBasicInfo>(
             "GridFightGameBasicInfo",
@@ -198,68 +212,77 @@ impl ::protobuf::Message for GridFightGameBasicInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.gold = is.read_uint32()?;
-                },
-                14402 => {
-                    is.read_repeated_packed_uint32_into(&mut self.tutorial_unlock_id_list)?;
-                },
-                14400 => {
-                    self.tutorial_unlock_id_list.push(is.read_uint32()?);
-                },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.track_trait_id_list)?;
-                },
-                24 => {
-                    self.track_trait_id_list.push(is.read_uint32()?);
-                },
-                8 => {
-                    self.grid_fight_combo_win_num = is.read_uint32()?;
-                },
-                72 => {
+                120 => {
                     self.grid_fight_buy_exp_cost = is.read_uint32()?;
                 },
                 112 => {
-                    self.CCNMBCLHEJP = is.read_uint32()?;
-                },
-                14906 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_lock_info)?;
-                },
-                80 => {
-                    self.lock_type = is.read_enum_or_unknown()?;
-                },
-                4258 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_sync_curtask_info)?;
-                },
-                64 => {
-                    self.grid_fight_off_field_max_count = is.read_uint32()?;
-                },
-                120 => {
-                    self.grid_fight_lineup_hp = is.read_uint32()?;
-                },
-                6762 => {
-                    self.grid_fight_target_guide_code = is.read_string()?;
-                },
-                56 => {
-                    self.grid_fight_cur_level_exp = is.read_uint32()?;
-                },
-                40 => {
-                    self.EEKPBMFFBFN = is.read_uint32()?;
+                    self.MLPEIDNLAJE = is.read_uint32()?;
                 },
                 104 => {
-                    self.grid_fight_lineup_max_hp = is.read_uint32()?;
-                },
-                16 => {
-                    self.JGFEJNOJANN = is.read_uint32()?;
-                },
-                96 => {
-                    self.grid_fight_max_interest_gold = is.read_uint32()?;
-                },
-                48 => {
-                    self.grid_fight_max_avatar_count = is.read_uint32()?;
+                    self.DJGJCEOPIOF = is.read_uint32()?;
                 },
                 34 => {
+                    is.read_repeated_packed_uint32_into(&mut self.track_trait_id_list)?;
+                },
+                32 => {
+                    self.track_trait_id_list.push(is.read_uint32()?);
+                },
+                8 => {
+                    self.grid_fight_lineup_hp = is.read_uint32()?;
+                },
+                2386 => {
+                    is.read_repeated_packed_uint32_into(&mut self.tutorial_unlock_id_list)?;
+                },
+                2384 => {
+                    self.tutorial_unlock_id_list.push(is.read_uint32()?);
+                },
+                56 => {
+                    self.gold = is.read_uint32()?;
+                },
+                3858 => {
+                    is.read_repeated_packed_uint32_into(&mut self.tutorial_unlock_id_lista)?;
+                },
+                3856 => {
+                    self.tutorial_unlock_id_lista.push(is.read_uint32()?);
+                },
+                96 => {
+                    self.grid_fight_off_field_max_count = is.read_uint32()?;
+                },
+                48 => {
+                    self.grid_fight_lineup_max_hp = is.read_uint32()?;
+                },
+                11898 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.game_lock_info)?;
+                },
+                5354 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.grid_fight_sync_curtask_info)?;
+                },
+                24 => {
+                    self.lock_type = is.read_enum_or_unknown()?;
+                },
+                18 => {
                     self.role_track_equipment_list.push(is.read_message()?);
+                },
+                88 => {
+                    self.grid_fight_cur_level_exp = is.read_uint32()?;
+                },
+                80 => {
+                    self.grid_fight_max_avatar_count = is.read_uint32()?;
+                },
+                15226 => {
+                    self.grid_fight_target_guide_code = is.read_string()?;
+                },
+                40 => {
+                    self.JFEBDFFKLDI = is.read_uint32()?;
+                },
+                4570 => {
+                    self.grid_fight_target_guide_codea = is.read_string()?;
+                },
+                64 => {
+                    self.grid_fight_combo_win_num = is.read_uint32()?;
+                },
+                72 => {
+                    self.grid_fight_max_interest_gold = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -273,121 +296,129 @@ impl ::protobuf::Message for GridFightGameBasicInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.gold != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.gold);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1800, &self.tutorial_unlock_id_list);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.track_trait_id_list);
-        if self.grid_fight_combo_win_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.grid_fight_combo_win_num);
-        }
         if self.grid_fight_buy_exp_cost != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.grid_fight_buy_exp_cost);
+            my_size += ::protobuf::rt::uint32_size(15, self.grid_fight_buy_exp_cost);
         }
-        if self.CCNMBCLHEJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.CCNMBCLHEJP);
+        if self.MLPEIDNLAJE != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.MLPEIDNLAJE);
+        }
+        if self.DJGJCEOPIOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.DJGJCEOPIOF);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.track_trait_id_list);
+        if self.grid_fight_lineup_hp != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.grid_fight_lineup_hp);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(298, &self.tutorial_unlock_id_list);
+        if self.gold != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.gold);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(482, &self.tutorial_unlock_id_lista);
+        if self.grid_fight_off_field_max_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.grid_fight_off_field_max_count);
+        }
+        if self.grid_fight_lineup_max_hp != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.grid_fight_lineup_max_hp);
         }
         if let Some(v) = self.game_lock_info.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.lock_type != ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB) {
-            my_size += ::protobuf::rt::int32_size(10, self.lock_type.value());
-        }
         if let Some(v) = self.grid_fight_sync_curtask_info.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.grid_fight_off_field_max_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.grid_fight_off_field_max_count);
-        }
-        if self.grid_fight_lineup_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.grid_fight_lineup_hp);
-        }
-        if !self.grid_fight_target_guide_code.is_empty() {
-            my_size += ::protobuf::rt::string_size(845, &self.grid_fight_target_guide_code);
-        }
-        if self.grid_fight_cur_level_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.grid_fight_cur_level_exp);
-        }
-        if self.EEKPBMFFBFN != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.EEKPBMFFBFN);
-        }
-        if self.grid_fight_lineup_max_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.grid_fight_lineup_max_hp);
-        }
-        if self.JGFEJNOJANN != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.JGFEJNOJANN);
-        }
-        if self.grid_fight_max_interest_gold != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.grid_fight_max_interest_gold);
-        }
-        if self.grid_fight_max_avatar_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.grid_fight_max_avatar_count);
+        if self.lock_type != ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::GridFightLockType_LCKDDLJAOHM) {
+            my_size += ::protobuf::rt::int32_size(3, self.lock_type.value());
         }
         for value in &self.role_track_equipment_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.grid_fight_cur_level_exp != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.grid_fight_cur_level_exp);
+        }
+        if self.grid_fight_max_avatar_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.grid_fight_max_avatar_count);
+        }
+        if !self.grid_fight_target_guide_code.is_empty() {
+            my_size += ::protobuf::rt::string_size(1903, &self.grid_fight_target_guide_code);
+        }
+        if self.JFEBDFFKLDI != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.JFEBDFFKLDI);
+        }
+        if !self.grid_fight_target_guide_codea.is_empty() {
+            my_size += ::protobuf::rt::string_size(571, &self.grid_fight_target_guide_codea);
+        }
+        if self.grid_fight_combo_win_num != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.grid_fight_combo_win_num);
+        }
+        if self.grid_fight_max_interest_gold != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.grid_fight_max_interest_gold);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.gold != 0 {
-            os.write_uint32(11, self.gold)?;
-        }
-        os.write_repeated_packed_uint32(1800, &self.tutorial_unlock_id_list)?;
-        os.write_repeated_packed_uint32(3, &self.track_trait_id_list)?;
-        if self.grid_fight_combo_win_num != 0 {
-            os.write_uint32(1, self.grid_fight_combo_win_num)?;
-        }
         if self.grid_fight_buy_exp_cost != 0 {
-            os.write_uint32(9, self.grid_fight_buy_exp_cost)?;
+            os.write_uint32(15, self.grid_fight_buy_exp_cost)?;
         }
-        if self.CCNMBCLHEJP != 0 {
-            os.write_uint32(14, self.CCNMBCLHEJP)?;
+        if self.MLPEIDNLAJE != 0 {
+            os.write_uint32(14, self.MLPEIDNLAJE)?;
         }
-        if let Some(v) = self.game_lock_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1863, v, os)?;
+        if self.DJGJCEOPIOF != 0 {
+            os.write_uint32(13, self.DJGJCEOPIOF)?;
         }
-        if self.lock_type != ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB) {
-            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.lock_type))?;
-        }
-        if let Some(v) = self.grid_fight_sync_curtask_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(532, v, os)?;
-        }
-        if self.grid_fight_off_field_max_count != 0 {
-            os.write_uint32(8, self.grid_fight_off_field_max_count)?;
-        }
+        os.write_repeated_packed_uint32(4, &self.track_trait_id_list)?;
         if self.grid_fight_lineup_hp != 0 {
-            os.write_uint32(15, self.grid_fight_lineup_hp)?;
+            os.write_uint32(1, self.grid_fight_lineup_hp)?;
         }
-        if !self.grid_fight_target_guide_code.is_empty() {
-            os.write_string(845, &self.grid_fight_target_guide_code)?;
+        os.write_repeated_packed_uint32(298, &self.tutorial_unlock_id_list)?;
+        if self.gold != 0 {
+            os.write_uint32(7, self.gold)?;
         }
-        if self.grid_fight_cur_level_exp != 0 {
-            os.write_uint32(7, self.grid_fight_cur_level_exp)?;
-        }
-        if self.EEKPBMFFBFN != 0 {
-            os.write_uint32(5, self.EEKPBMFFBFN)?;
+        os.write_repeated_packed_uint32(482, &self.tutorial_unlock_id_lista)?;
+        if self.grid_fight_off_field_max_count != 0 {
+            os.write_uint32(12, self.grid_fight_off_field_max_count)?;
         }
         if self.grid_fight_lineup_max_hp != 0 {
-            os.write_uint32(13, self.grid_fight_lineup_max_hp)?;
+            os.write_uint32(6, self.grid_fight_lineup_max_hp)?;
         }
-        if self.JGFEJNOJANN != 0 {
-            os.write_uint32(2, self.JGFEJNOJANN)?;
+        if let Some(v) = self.game_lock_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1487, v, os)?;
         }
-        if self.grid_fight_max_interest_gold != 0 {
-            os.write_uint32(12, self.grid_fight_max_interest_gold)?;
+        if let Some(v) = self.grid_fight_sync_curtask_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(669, v, os)?;
         }
-        if self.grid_fight_max_avatar_count != 0 {
-            os.write_uint32(6, self.grid_fight_max_avatar_count)?;
+        if self.lock_type != ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::GridFightLockType_LCKDDLJAOHM) {
+            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.lock_type))?;
         }
         for v in &self.role_track_equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.grid_fight_cur_level_exp != 0 {
+            os.write_uint32(11, self.grid_fight_cur_level_exp)?;
+        }
+        if self.grid_fight_max_avatar_count != 0 {
+            os.write_uint32(10, self.grid_fight_max_avatar_count)?;
+        }
+        if !self.grid_fight_target_guide_code.is_empty() {
+            os.write_string(1903, &self.grid_fight_target_guide_code)?;
+        }
+        if self.JFEBDFFKLDI != 0 {
+            os.write_uint32(5, self.JFEBDFFKLDI)?;
+        }
+        if !self.grid_fight_target_guide_codea.is_empty() {
+            os.write_string(571, &self.grid_fight_target_guide_codea)?;
+        }
+        if self.grid_fight_combo_win_num != 0 {
+            os.write_uint32(8, self.grid_fight_combo_win_num)?;
+        }
+        if self.grid_fight_max_interest_gold != 0 {
+            os.write_uint32(9, self.grid_fight_max_interest_gold)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -405,49 +436,53 @@ impl ::protobuf::Message for GridFightGameBasicInfo {
     }
 
     fn clear(&mut self) {
-        self.gold = 0;
-        self.tutorial_unlock_id_list.clear();
-        self.track_trait_id_list.clear();
-        self.grid_fight_combo_win_num = 0;
         self.grid_fight_buy_exp_cost = 0;
-        self.CCNMBCLHEJP = 0;
-        self.game_lock_info.clear();
-        self.lock_type = ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::BNKJLCMNLOD_AIBPMBCBAEB);
-        self.grid_fight_sync_curtask_info.clear();
-        self.grid_fight_off_field_max_count = 0;
+        self.MLPEIDNLAJE = 0;
+        self.DJGJCEOPIOF = 0;
+        self.track_trait_id_list.clear();
         self.grid_fight_lineup_hp = 0;
-        self.grid_fight_target_guide_code.clear();
-        self.grid_fight_cur_level_exp = 0;
-        self.EEKPBMFFBFN = 0;
+        self.tutorial_unlock_id_list.clear();
+        self.gold = 0;
+        self.tutorial_unlock_id_lista.clear();
+        self.grid_fight_off_field_max_count = 0;
         self.grid_fight_lineup_max_hp = 0;
-        self.JGFEJNOJANN = 0;
-        self.grid_fight_max_interest_gold = 0;
-        self.grid_fight_max_avatar_count = 0;
+        self.game_lock_info.clear();
+        self.grid_fight_sync_curtask_info.clear();
+        self.lock_type = ::protobuf::EnumOrUnknown::new(super::GridFightLockType::GridFightLockType::GridFightLockType_LCKDDLJAOHM);
         self.role_track_equipment_list.clear();
+        self.grid_fight_cur_level_exp = 0;
+        self.grid_fight_max_avatar_count = 0;
+        self.grid_fight_target_guide_code.clear();
+        self.JFEBDFFKLDI = 0;
+        self.grid_fight_target_guide_codea.clear();
+        self.grid_fight_combo_win_num = 0;
+        self.grid_fight_max_interest_gold = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightGameBasicInfo {
         static instance: GridFightGameBasicInfo = GridFightGameBasicInfo {
-            gold: 0,
-            tutorial_unlock_id_list: ::std::vec::Vec::new(),
-            track_trait_id_list: ::std::vec::Vec::new(),
-            grid_fight_combo_win_num: 0,
             grid_fight_buy_exp_cost: 0,
-            CCNMBCLHEJP: 0,
-            game_lock_info: ::protobuf::MessageField::none(),
-            lock_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            grid_fight_sync_curtask_info: ::protobuf::MessageField::none(),
-            grid_fight_off_field_max_count: 0,
+            MLPEIDNLAJE: 0,
+            DJGJCEOPIOF: 0,
+            track_trait_id_list: ::std::vec::Vec::new(),
             grid_fight_lineup_hp: 0,
-            grid_fight_target_guide_code: ::std::string::String::new(),
-            grid_fight_cur_level_exp: 0,
-            EEKPBMFFBFN: 0,
+            tutorial_unlock_id_list: ::std::vec::Vec::new(),
+            gold: 0,
+            tutorial_unlock_id_lista: ::std::vec::Vec::new(),
+            grid_fight_off_field_max_count: 0,
             grid_fight_lineup_max_hp: 0,
-            JGFEJNOJANN: 0,
-            grid_fight_max_interest_gold: 0,
-            grid_fight_max_avatar_count: 0,
+            game_lock_info: ::protobuf::MessageField::none(),
+            grid_fight_sync_curtask_info: ::protobuf::MessageField::none(),
+            lock_type: ::protobuf::EnumOrUnknown::from_i32(0),
             role_track_equipment_list: ::std::vec::Vec::new(),
+            grid_fight_cur_level_exp: 0,
+            grid_fight_max_avatar_count: 0,
+            grid_fight_target_guide_code: ::std::string::String::new(),
+            JFEBDFFKLDI: 0,
+            grid_fight_target_guide_codea: ::std::string::String::new(),
+            grid_fight_combo_win_num: 0,
+            grid_fight_max_interest_gold: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -474,29 +509,31 @@ impl ::protobuf::reflect::ProtobufValue for GridFightGameBasicInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGridFightGameBasicInfo.proto\x1a\x17GridFightLockInfo.proto\x1a\
     \x17GridFightLockType.proto\x1a\"GridFightSyncCurrentTaskInfo.proto\x1a\
-    \x1cRoleTrackEquipmentInfo.proto\"\xaa\x08\n\x16GridFightGameBasicInfo\
-    \x12\x12\n\x04gold\x18\x0b\x20\x01(\rR\x04gold\x126\n\x17tutorial_unlock\
-    _id_list\x18\x88\x0e\x20\x03(\rR\x14tutorialUnlockIdList\x12-\n\x13track\
-    _trait_id_list\x18\x03\x20\x03(\rR\x10trackTraitIdList\x126\n\x18grid_fi\
-    ght_combo_win_num\x18\x01\x20\x01(\rR\x14gridFightComboWinNum\x124\n\x17\
-    grid_fight_buy_exp_cost\x18\t\x20\x01(\rR\x13gridFightBuyExpCost\x12\x20\
-    \n\x0bCCNMBCLHEJP\x18\x0e\x20\x01(\rR\x0bCCNMBCLHEJP\x129\n\x0egame_lock\
-    _info\x18\xc7\x0e\x20\x01(\x0b2\x12.GridFightLockInfoR\x0cgameLockInfo\
-    \x12/\n\tlock_type\x18\n\x20\x01(\x0e2\x12.GridFightLockTypeR\x08lockTyp\
-    e\x12^\n\x1cgrid_fight_sync_curtask_info\x18\x94\x04\x20\x01(\x0b2\x1d.G\
-    ridFightSyncCurrentTaskInfoR\x18gridFightSyncCurtaskInfo\x12A\n\x1egrid_\
-    fight_off_field_max_count\x18\x08\x20\x01(\rR\x19gridFightOffFieldMaxCou\
-    nt\x12/\n\x14grid_fight_lineup_hp\x18\x0f\x20\x01(\rR\x11gridFightLineup\
-    Hp\x12?\n\x1cgrid_fight_target_guide_code\x18\xcd\x06\x20\x01(\tR\x18gri\
-    dFightTargetGuideCode\x126\n\x18grid_fight_cur_level_exp\x18\x07\x20\x01\
-    (\rR\x14gridFightCurLevelExp\x12\x20\n\x0bEEKPBMFFBFN\x18\x05\x20\x01(\r\
-    R\x0bEEKPBMFFBFN\x126\n\x18grid_fight_lineup_max_hp\x18\r\x20\x01(\rR\
-    \x14gridFightLineupMaxHp\x12\x20\n\x0bJGFEJNOJANN\x18\x02\x20\x01(\rR\
-    \x0bJGFEJNOJANN\x12>\n\x1cgrid_fight_max_interest_gold\x18\x0c\x20\x01(\
-    \rR\x18gridFightMaxInterestGold\x12<\n\x1bgrid_fight_max_avatar_count\
-    \x18\x06\x20\x01(\rR\x17gridFightMaxAvatarCount\x12R\n\x19role_track_equ\
-    ipment_list\x18\x04\x20\x03(\x0b2\x17.RoleTrackEquipmentInfoR\x16roleTra\
-    ckEquipmentListb\x06proto3\
+    \x1cRoleTrackEquipmentInfo.proto\"\xa7\t\n\x16GridFightGameBasicInfo\x12\
+    4\n\x17grid_fight_buy_exp_cost\x18\x0f\x20\x01(\rR\x13gridFightBuyExpCos\
+    t\x12\x20\n\x0bMLPEIDNLAJE\x18\x0e\x20\x01(\rR\x0bMLPEIDNLAJE\x12\x20\n\
+    \x0bDJGJCEOPIOF\x18\r\x20\x01(\rR\x0bDJGJCEOPIOF\x12-\n\x13track_trait_i\
+    d_list\x18\x04\x20\x03(\rR\x10trackTraitIdList\x12/\n\x14grid_fight_line\
+    up_hp\x18\x01\x20\x01(\rR\x11gridFightLineupHp\x126\n\x17tutorial_unlock\
+    _id_list\x18\xaa\x02\x20\x03(\rR\x14tutorialUnlockIdList\x12\x12\n\x04go\
+    ld\x18\x07\x20\x01(\rR\x04gold\x128\n\x18tutorial_unlock_id_lista\x18\
+    \xe2\x03\x20\x03(\rR\x15tutorialUnlockIdLista\x12A\n\x1egrid_fight_off_f\
+    ield_max_count\x18\x0c\x20\x01(\rR\x19gridFightOffFieldMaxCount\x126\n\
+    \x18grid_fight_lineup_max_hp\x18\x06\x20\x01(\rR\x14gridFightLineupMaxHp\
+    \x129\n\x0egame_lock_info\x18\xcf\x0b\x20\x01(\x0b2\x12.GridFightLockInf\
+    oR\x0cgameLockInfo\x12^\n\x1cgrid_fight_sync_curtask_info\x18\x9d\x05\
+    \x20\x01(\x0b2\x1d.GridFightSyncCurrentTaskInfoR\x18gridFightSyncCurtask\
+    Info\x12/\n\tlock_type\x18\x03\x20\x01(\x0e2\x12.GridFightLockTypeR\x08l\
+    ockType\x12R\n\x19role_track_equipment_list\x18\x02\x20\x03(\x0b2\x17.Ro\
+    leTrackEquipmentInfoR\x16roleTrackEquipmentList\x126\n\x18grid_fight_cur\
+    _level_exp\x18\x0b\x20\x01(\rR\x14gridFightCurLevelExp\x12<\n\x1bgrid_fi\
+    ght_max_avatar_count\x18\n\x20\x01(\rR\x17gridFightMaxAvatarCount\x12?\n\
+    \x1cgrid_fight_target_guide_code\x18\xef\x0e\x20\x01(\tR\x18gridFightTar\
+    getGuideCode\x12\x20\n\x0bJFEBDFFKLDI\x18\x05\x20\x01(\rR\x0bJFEBDFFKLDI\
+    \x12A\n\x1dgrid_fight_target_guide_codea\x18\xbb\x04\x20\x01(\tR\x19grid\
+    FightTargetGuideCodea\x126\n\x18grid_fight_combo_win_num\x18\x08\x20\x01\
+    (\rR\x14gridFightComboWinNum\x12>\n\x1cgrid_fight_max_interest_gold\x18\
+    \t\x20\x01(\rR\x18gridFightMaxInterestGoldb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAiPamChatHistoryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAiPamChatHistoryScRsp.BAHOJLPEHCN)
-    pub BAHOJLPEHCN: ::std::vec::Vec<super::ChatMessageData::ChatMessageData>,
     // @@protoc_insertion_point(field:GetAiPamChatHistoryScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GetAiPamChatHistoryScRsp.target_side)
     pub target_side: u32,
+    // @@protoc_insertion_point(field:GetAiPamChatHistoryScRsp.LOGPAINLECC)
+    pub LOGPAINLECC: ::std::vec::Vec<super::ChatMessageData::ChatMessageData>,
     // special fields
     // @@protoc_insertion_point(special_field:GetAiPamChatHistoryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,11 +53,6 @@ impl GetAiPamChatHistoryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BAHOJLPEHCN",
-            |m: &GetAiPamChatHistoryScRsp| { &m.BAHOJLPEHCN },
-            |m: &mut GetAiPamChatHistoryScRsp| { &mut m.BAHOJLPEHCN },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetAiPamChatHistoryScRsp| { &m.retcode },
@@ -67,6 +62,11 @@ impl GetAiPamChatHistoryScRsp {
             "target_side",
             |m: &GetAiPamChatHistoryScRsp| { &m.target_side },
             |m: &mut GetAiPamChatHistoryScRsp| { &mut m.target_side },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LOGPAINLECC",
+            |m: &GetAiPamChatHistoryScRsp| { &m.LOGPAINLECC },
+            |m: &mut GetAiPamChatHistoryScRsp| { &mut m.LOGPAINLECC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetAiPamChatHistoryScRsp>(
             "GetAiPamChatHistoryScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetAiPamChatHistoryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    self.BAHOJLPEHCN.push(is.read_message()?);
-                },
-                80 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                96 => {
                     self.target_side = is.read_uint32()?;
+                },
+                106 => {
+                    self.LOGPAINLECC.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,31 +107,31 @@ impl ::protobuf::Message for GetAiPamChatHistoryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BAHOJLPEHCN {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
+        if self.target_side != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.target_side);
+        }
+        for value in &self.LOGPAINLECC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        if self.target_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.target_side);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BAHOJLPEHCN {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         if self.target_side != 0 {
-            os.write_uint32(13, self.target_side)?;
+            os.write_uint32(12, self.target_side)?;
         }
+        for v in &self.LOGPAINLECC {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GetAiPamChatHistoryScRsp {
     }
 
     fn clear(&mut self) {
-        self.BAHOJLPEHCN.clear();
         self.retcode = 0;
         self.target_side = 0;
+        self.LOGPAINLECC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAiPamChatHistoryScRsp {
         static instance: GetAiPamChatHistoryScRsp = GetAiPamChatHistoryScRsp {
-            BAHOJLPEHCN: ::std::vec::Vec::new(),
             retcode: 0,
             target_side: 0,
+            LOGPAINLECC: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GetAiPamChatHistoryScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetAiPamChatHistoryScRsp.proto\x1a\x15ChatMessageData.proto\"\x89\
-    \x01\n\x18GetAiPamChatHistoryScRsp\x122\n\x0bBAHOJLPEHCN\x18\x05\x20\x03\
-    (\x0b2\x10.ChatMessageDataR\x0bBAHOJLPEHCN\x12\x18\n\x07retcode\x18\n\
-    \x20\x01(\rR\x07retcode\x12\x1f\n\x0btarget_side\x18\r\x20\x01(\rR\ntarg\
-    etSideb\x06proto3\
+    \x01\n\x18GetAiPamChatHistoryScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\
+    \rR\x07retcode\x12\x1f\n\x0btarget_side\x18\x0c\x20\x01(\rR\ntargetSide\
+    \x122\n\x0bLOGPAINLECC\x18\r\x20\x03(\x0b2\x10.ChatMessageDataR\x0bLOGPA\
+    INLECCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

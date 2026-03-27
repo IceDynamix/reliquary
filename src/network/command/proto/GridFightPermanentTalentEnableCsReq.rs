@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightPermanentTalentEnableCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GridFightPermanentTalentEnableCsReq.DNBJDLGIABH)
-    pub DNBJDLGIABH: u32,
+    // @@protoc_insertion_point(field:GridFightPermanentTalentEnableCsReq.EHAJMKFJCCM)
+    pub EHAJMKFJCCM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightPermanentTalentEnableCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GridFightPermanentTalentEnableCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DNBJDLGIABH",
-            |m: &GridFightPermanentTalentEnableCsReq| { &m.DNBJDLGIABH },
-            |m: &mut GridFightPermanentTalentEnableCsReq| { &mut m.DNBJDLGIABH },
+            "EHAJMKFJCCM",
+            |m: &GridFightPermanentTalentEnableCsReq| { &m.EHAJMKFJCCM },
+            |m: &mut GridFightPermanentTalentEnableCsReq| { &mut m.EHAJMKFJCCM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightPermanentTalentEnableCsReq>(
             "GridFightPermanentTalentEnableCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GridFightPermanentTalentEnableCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.DNBJDLGIABH = is.read_uint32()?;
+                80 => {
+                    self.EHAJMKFJCCM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GridFightPermanentTalentEnableCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DNBJDLGIABH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DNBJDLGIABH);
+        if self.EHAJMKFJCCM != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.EHAJMKFJCCM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GridFightPermanentTalentEnableCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DNBJDLGIABH != 0 {
-            os.write_uint32(12, self.DNBJDLGIABH)?;
+        if self.EHAJMKFJCCM != 0 {
+            os.write_uint32(10, self.EHAJMKFJCCM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GridFightPermanentTalentEnableCsReq {
     }
 
     fn clear(&mut self) {
-        self.DNBJDLGIABH = 0;
+        self.EHAJMKFJCCM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightPermanentTalentEnableCsReq {
         static instance: GridFightPermanentTalentEnableCsReq = GridFightPermanentTalentEnableCsReq {
-            DNBJDLGIABH: 0,
+            EHAJMKFJCCM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for GridFightPermanentTalentEnableCsReq 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)GridFightPermanentTalentEnableCsReq.proto\"G\n#GridFightPermanentTale\
-    ntEnableCsReq\x12\x20\n\x0bDNBJDLGIABH\x18\x0c\x20\x01(\rR\x0bDNBJDLGIAB\
-    Hb\x06proto3\
+    ntEnableCsReq\x12\x20\n\x0bEHAJMKFJCCM\x18\n\x20\x01(\rR\x0bEHAJMKFJCCMb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

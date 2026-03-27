@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CharacterSnapshot {
     // message fields
-    // @@protoc_insertion_point(field:CharacterSnapshot.runtime_id)
-    pub runtime_id: u32,
+    // @@protoc_insertion_point(field:CharacterSnapshot.interact_id)
+    pub interact_id: u32,
     // @@protoc_insertion_point(field:CharacterSnapshot.properties)
     pub properties: ::std::vec::Vec<u64>,
     // special fields
@@ -52,9 +52,9 @@ impl CharacterSnapshot {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "runtime_id",
-            |m: &CharacterSnapshot| { &m.runtime_id },
-            |m: &mut CharacterSnapshot| { &mut m.runtime_id },
+            "interact_id",
+            |m: &CharacterSnapshot| { &m.interact_id },
+            |m: &mut CharacterSnapshot| { &mut m.interact_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "properties",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for CharacterSnapshot {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 8 => {
-                    self.runtime_id = is.read_uint32()?;
+                    self.interact_id = is.read_uint32()?;
                 },
                 18 => {
                     is.read_repeated_packed_uint64_into(&mut self.properties)?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for CharacterSnapshot {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.runtime_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.runtime_id);
+        if self.interact_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.interact_id);
         }
         my_size += ::protobuf::rt::vec_packed_uint64_size(2, &self.properties);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,8 +110,8 @@ impl ::protobuf::Message for CharacterSnapshot {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.runtime_id != 0 {
-            os.write_uint32(1, self.runtime_id)?;
+        if self.interact_id != 0 {
+            os.write_uint32(1, self.interact_id)?;
         }
         os.write_repeated_packed_uint64(2, &self.properties)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
@@ -131,14 +131,14 @@ impl ::protobuf::Message for CharacterSnapshot {
     }
 
     fn clear(&mut self) {
-        self.runtime_id = 0;
+        self.interact_id = 0;
         self.properties.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CharacterSnapshot {
         static instance: CharacterSnapshot = CharacterSnapshot {
-            runtime_id: 0,
+            interact_id: 0,
             properties: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for CharacterSnapshot {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CharacterSnapshot.proto\"R\n\x11CharacterSnapshot\x12\x1d\n\nrunti\
-    me_id\x18\x01\x20\x01(\rR\truntimeId\x12\x1e\n\nproperties\x18\x02\x20\
-    \x03(\x04R\npropertiesb\x06proto3\
+    \n\x17CharacterSnapshot.proto\"T\n\x11CharacterSnapshot\x12\x1f\n\x0bint\
+    eract_id\x18\x01\x20\x01(\rR\ninteractId\x12\x1e\n\nproperties\x18\x02\
+    \x20\x03(\x04R\npropertiesb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightGetArchiveScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GridFightGetArchiveScRsp.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::HOAMFMHCGFP::HOAMFMHCGFP>,
     // @@protoc_insertion_point(field:GridFightGetArchiveScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GridFightGetArchiveScRsp.KJNJODNDFFF)
-    pub KJNJODNDFFF: ::std::vec::Vec<super::GridFightArchiveData::GridFightArchiveData>,
+    // @@protoc_insertion_point(field:GridFightGetArchiveScRsp.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::IGGGGMEEBCA::IGGGGMEEBCA>,
+    // @@protoc_insertion_point(field:GridFightGetArchiveScRsp.NFKGBAIOKOG)
+    pub NFKGBAIOKOG: ::std::vec::Vec<super::GridFightArchiveData::GridFightArchiveData>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightGetArchiveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl GridFightGetArchiveScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "type",
-            |m: &GridFightGetArchiveScRsp| { &m.type_ },
-            |m: &mut GridFightGetArchiveScRsp| { &mut m.type_ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GridFightGetArchiveScRsp| { &m.retcode },
             |m: &mut GridFightGetArchiveScRsp| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "type",
+            |m: &GridFightGetArchiveScRsp| { &m.type_ },
+            |m: &mut GridFightGetArchiveScRsp| { &mut m.type_ },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KJNJODNDFFF",
-            |m: &GridFightGetArchiveScRsp| { &m.KJNJODNDFFF },
-            |m: &mut GridFightGetArchiveScRsp| { &mut m.KJNJODNDFFF },
+            "NFKGBAIOKOG",
+            |m: &GridFightGetArchiveScRsp| { &m.NFKGBAIOKOG },
+            |m: &mut GridFightGetArchiveScRsp| { &mut m.NFKGBAIOKOG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightGetArchiveScRsp>(
             "GridFightGetArchiveScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GridFightGetArchiveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.type_ = is.read_enum_or_unknown()?;
-                },
-                88 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                26 => {
-                    self.KJNJODNDFFF.push(is.read_message()?);
+                120 => {
+                    self.type_ = is.read_enum_or_unknown()?;
+                },
+                18 => {
+                    self.NFKGBAIOKOG.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,13 +107,13 @@ impl ::protobuf::Message for GridFightGetArchiveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::HOAMFMHCGFP::HOAMFMHCGFP::HOAMFMHCGFP_HPDKBBFDOKK) {
-            my_size += ::protobuf::rt::int32_size(9, self.type_.value());
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        for value in &self.KJNJODNDFFF {
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::IGGGGMEEBCA::IGGGGMEEBCA::IGGGGMEEBCA_FLLHPDEBEFN) {
+            my_size += ::protobuf::rt::int32_size(15, self.type_.value());
+        }
+        for value in &self.NFKGBAIOKOG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GridFightGetArchiveScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::HOAMFMHCGFP::HOAMFMHCGFP::HOAMFMHCGFP_HPDKBBFDOKK) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.type_))?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        for v in &self.KJNJODNDFFF {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::IGGGGMEEBCA::IGGGGMEEBCA::IGGGGMEEBCA_FLLHPDEBEFN) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        }
+        for v in &self.NFKGBAIOKOG {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GridFightGetArchiveScRsp {
     }
 
     fn clear(&mut self) {
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::HOAMFMHCGFP::HOAMFMHCGFP::HOAMFMHCGFP_HPDKBBFDOKK);
         self.retcode = 0;
-        self.KJNJODNDFFF.clear();
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::IGGGGMEEBCA::IGGGGMEEBCA::IGGGGMEEBCA_FLLHPDEBEFN);
+        self.NFKGBAIOKOG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightGetArchiveScRsp {
         static instance: GridFightGetArchiveScRsp = GridFightGetArchiveScRsp {
-            type_: ::protobuf::EnumOrUnknown::from_i32(0),
             retcode: 0,
-            KJNJODNDFFF: ::std::vec::Vec::new(),
+            type_: ::protobuf::EnumOrUnknown::from_i32(0),
+            NFKGBAIOKOG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GridFightGetArchiveScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGridFightGetArchiveScRsp.proto\x1a\x1aGridFightArchiveData.proto\
-    \x1a\x11HOAMFMHCGFP.proto\"\x8f\x01\n\x18GridFightGetArchiveScRsp\x12\
-    \x20\n\x04type\x18\t\x20\x01(\x0e2\x0c.HOAMFMHCGFPR\x04type\x12\x18\n\
-    \x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x127\n\x0bKJNJODNDFFF\x18\x03\
-    \x20\x03(\x0b2\x15.GridFightArchiveDataR\x0bKJNJODNDFFFb\x06proto3\
+    \x1a\x11IGGGGMEEBCA.proto\"\x8f\x01\n\x18GridFightGetArchiveScRsp\x12\
+    \x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x04type\x18\
+    \x0f\x20\x01(\x0e2\x0c.IGGGGMEEBCAR\x04type\x127\n\x0bNFKGBAIOKOG\x18\
+    \x02\x20\x03(\x0b2\x15.GridFightArchiveDataR\x0bNFKGBAIOKOGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::GridFightArchiveData::file_descriptor().clone());
-            deps.push(super::HOAMFMHCGFP::file_descriptor().clone());
+            deps.push(super::IGGGGMEEBCA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightGetArchiveScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

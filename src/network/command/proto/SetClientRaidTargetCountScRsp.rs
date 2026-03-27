@@ -30,8 +30,8 @@ pub struct SetClientRaidTargetCountScRsp {
     // message fields
     // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.FELKHHOPCOD)
-    pub FELKHHOPCOD: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.ONBJCNGIMNL)
+    pub ONBJCNGIMNL: u32,
     // @@protoc_insertion_point(field:SetClientRaidTargetCountScRsp.progress)
     pub progress: u32,
     // special fields
@@ -59,9 +59,9 @@ impl SetClientRaidTargetCountScRsp {
             |m: &mut SetClientRaidTargetCountScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FELKHHOPCOD",
-            |m: &SetClientRaidTargetCountScRsp| { &m.FELKHHOPCOD },
-            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.FELKHHOPCOD },
+            "ONBJCNGIMNL",
+            |m: &SetClientRaidTargetCountScRsp| { &m.ONBJCNGIMNL },
+            |m: &mut SetClientRaidTargetCountScRsp| { &mut m.ONBJCNGIMNL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
                 },
-                64 => {
-                    self.FELKHHOPCOD = is.read_uint32()?;
+                8 => {
+                    self.ONBJCNGIMNL = is.read_uint32()?;
                 },
-                16 => {
+                96 => {
                     self.progress = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if self.FELKHHOPCOD != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.FELKHHOPCOD);
+        if self.ONBJCNGIMNL != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.ONBJCNGIMNL);
         }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.progress);
+            my_size += ::protobuf::rt::uint32_size(12, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
-        if self.FELKHHOPCOD != 0 {
-            os.write_uint32(8, self.FELKHHOPCOD)?;
+        if self.ONBJCNGIMNL != 0 {
+            os.write_uint32(1, self.ONBJCNGIMNL)?;
         }
         if self.progress != 0 {
-            os.write_uint32(2, self.progress)?;
+            os.write_uint32(12, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.FELKHHOPCOD = 0;
+        self.ONBJCNGIMNL = 0;
         self.progress = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for SetClientRaidTargetCountScRsp {
     fn default_instance() -> &'static SetClientRaidTargetCountScRsp {
         static instance: SetClientRaidTargetCountScRsp = SetClientRaidTargetCountScRsp {
             retcode: 0,
-            FELKHHOPCOD: 0,
+            ONBJCNGIMNL: 0,
             progress: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SetClientRaidTargetCountScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SetClientRaidTargetCountScRsp.proto\"w\n\x1dSetClientRaidTargetCountS\
-    cRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\x12\x20\n\x0bFELK\
-    HHOPCOD\x18\x08\x20\x01(\rR\x0bFELKHHOPCOD\x12\x1a\n\x08progress\x18\x02\
-    \x20\x01(\rR\x08progressb\x06proto3\
+    cRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bON\
+    BJCNGIMNL\x18\x01\x20\x01(\rR\x0bONBJCNGIMNL\x12\x1a\n\x08progress\x18\
+    \x0c\x20\x01(\rR\x08progressb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

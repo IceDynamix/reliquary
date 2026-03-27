@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesGiveCardPieceScRsp {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.JLGNFAGAJAO)
-    pub JLGNFAGAJAO: u64,
+    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.IMGPPDAMIGC)
+    pub IMGPPDAMIGC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.LEKGBKGDIDA)
+    pub LEKGBKGDIDA: u32,
+    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.OKKCMFGJFCO)
+    pub OKKCMFGJFCO: u64,
+    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.BGNCBDCJCNB)
+    pub BGNCBDCJCNB: i64,
     // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.KLAEOLPOFAH)
-    pub KLAEOLPOFAH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.OIONCOBAODK)
-    pub OIONCOBAODK: u32,
-    // @@protoc_insertion_point(field:PlanetFesGiveCardPieceScRsp.HKMGLPDINHD)
-    pub HKMGLPDINHD: i64,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesGiveCardPieceScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,30 +57,30 @@ impl PlanetFesGiveCardPieceScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IMGPPDAMIGC",
+            |m: &PlanetFesGiveCardPieceScRsp| { &m.IMGPPDAMIGC },
+            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.IMGPPDAMIGC },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JLGNFAGAJAO",
-            |m: &PlanetFesGiveCardPieceScRsp| { &m.JLGNFAGAJAO },
-            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.JLGNFAGAJAO },
+            "LEKGBKGDIDA",
+            |m: &PlanetFesGiveCardPieceScRsp| { &m.LEKGBKGDIDA },
+            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.LEKGBKGDIDA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OKKCMFGJFCO",
+            |m: &PlanetFesGiveCardPieceScRsp| { &m.OKKCMFGJFCO },
+            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.OKKCMFGJFCO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BGNCBDCJCNB",
+            |m: &PlanetFesGiveCardPieceScRsp| { &m.BGNCBDCJCNB },
+            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.BGNCBDCJCNB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PlanetFesGiveCardPieceScRsp| { &m.retcode },
             |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "KLAEOLPOFAH",
-            |m: &PlanetFesGiveCardPieceScRsp| { &m.KLAEOLPOFAH },
-            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.KLAEOLPOFAH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OIONCOBAODK",
-            |m: &PlanetFesGiveCardPieceScRsp| { &m.OIONCOBAODK },
-            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.OIONCOBAODK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HKMGLPDINHD",
-            |m: &PlanetFesGiveCardPieceScRsp| { &m.HKMGLPDINHD },
-            |m: &mut PlanetFesGiveCardPieceScRsp| { &mut m.HKMGLPDINHD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesGiveCardPieceScRsp>(
             "PlanetFesGiveCardPieceScRsp",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for PlanetFesGiveCardPieceScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.JLGNFAGAJAO = is.read_uint64()?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IMGPPDAMIGC)?;
+                },
+                80 => {
+                    self.IMGPPDAMIGC.push(is.read_uint32()?);
                 },
                 32 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.KLAEOLPOFAH)?;
-                },
-                8 => {
-                    self.KLAEOLPOFAH.push(is.read_uint32()?);
-                },
-                40 => {
-                    self.OIONCOBAODK = is.read_uint32()?;
+                    self.LEKGBKGDIDA = is.read_uint32()?;
                 },
                 56 => {
-                    self.HKMGLPDINHD = is.read_int64()?;
+                    self.OKKCMFGJFCO = is.read_uint64()?;
+                },
+                40 => {
+                    self.BGNCBDCJCNB = is.read_int64()?;
+                },
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,18 +130,18 @@ impl ::protobuf::Message for PlanetFesGiveCardPieceScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JLGNFAGAJAO != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.JLGNFAGAJAO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.IMGPPDAMIGC);
+        if self.LEKGBKGDIDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LEKGBKGDIDA);
+        }
+        if self.OKKCMFGJFCO != 0 {
+            my_size += ::protobuf::rt::uint64_size(7, self.OKKCMFGJFCO);
+        }
+        if self.BGNCBDCJCNB != 0 {
+            my_size += ::protobuf::rt::int64_size(5, self.BGNCBDCJCNB);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.KLAEOLPOFAH);
-        if self.OIONCOBAODK != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.OIONCOBAODK);
-        }
-        if self.HKMGLPDINHD != 0 {
-            my_size += ::protobuf::rt::int64_size(7, self.HKMGLPDINHD);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,18 +149,18 @@ impl ::protobuf::Message for PlanetFesGiveCardPieceScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JLGNFAGAJAO != 0 {
-            os.write_uint64(2, self.JLGNFAGAJAO)?;
+        os.write_repeated_packed_uint32(10, &self.IMGPPDAMIGC)?;
+        if self.LEKGBKGDIDA != 0 {
+            os.write_uint32(4, self.LEKGBKGDIDA)?;
+        }
+        if self.OKKCMFGJFCO != 0 {
+            os.write_uint64(7, self.OKKCMFGJFCO)?;
+        }
+        if self.BGNCBDCJCNB != 0 {
+            os.write_int64(5, self.BGNCBDCJCNB)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
-        os.write_repeated_packed_uint32(1, &self.KLAEOLPOFAH)?;
-        if self.OIONCOBAODK != 0 {
-            os.write_uint32(5, self.OIONCOBAODK)?;
-        }
-        if self.HKMGLPDINHD != 0 {
-            os.write_int64(7, self.HKMGLPDINHD)?;
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,21 +179,21 @@ impl ::protobuf::Message for PlanetFesGiveCardPieceScRsp {
     }
 
     fn clear(&mut self) {
-        self.JLGNFAGAJAO = 0;
+        self.IMGPPDAMIGC.clear();
+        self.LEKGBKGDIDA = 0;
+        self.OKKCMFGJFCO = 0;
+        self.BGNCBDCJCNB = 0;
         self.retcode = 0;
-        self.KLAEOLPOFAH.clear();
-        self.OIONCOBAODK = 0;
-        self.HKMGLPDINHD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGiveCardPieceScRsp {
         static instance: PlanetFesGiveCardPieceScRsp = PlanetFesGiveCardPieceScRsp {
-            JLGNFAGAJAO: 0,
+            IMGPPDAMIGC: ::std::vec::Vec::new(),
+            LEKGBKGDIDA: 0,
+            OKKCMFGJFCO: 0,
+            BGNCBDCJCNB: 0,
             retcode: 0,
-            KLAEOLPOFAH: ::std::vec::Vec::new(),
-            OIONCOBAODK: 0,
-            HKMGLPDINHD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,11 +219,11 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGiveCardPieceScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PlanetFesGiveCardPieceScRsp.proto\"\xbf\x01\n\x1bPlanetFesGiveCardPie\
-    ceScRsp\x12\x20\n\x0bJLGNFAGAJAO\x18\x02\x20\x01(\x04R\x0bJLGNFAGAJAO\
-    \x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bKLAEOL\
-    POFAH\x18\x01\x20\x03(\rR\x0bKLAEOLPOFAH\x12\x20\n\x0bOIONCOBAODK\x18\
-    \x05\x20\x01(\rR\x0bOIONCOBAODK\x12\x20\n\x0bHKMGLPDINHD\x18\x07\x20\x01\
-    (\x03R\x0bHKMGLPDINHDb\x06proto3\
+    ceScRsp\x12\x20\n\x0bIMGPPDAMIGC\x18\n\x20\x03(\rR\x0bIMGPPDAMIGC\x12\
+    \x20\n\x0bLEKGBKGDIDA\x18\x04\x20\x01(\rR\x0bLEKGBKGDIDA\x12\x20\n\x0bOK\
+    KCMFGJFCO\x18\x07\x20\x01(\x04R\x0bOKKCMFGJFCO\x12\x20\n\x0bBGNCBDCJCNB\
+    \x18\x05\x20\x01(\x03R\x0bBGNCBDCJCNB\x12\x18\n\x07retcode\x18\x01\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

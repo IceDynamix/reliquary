@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeMultipleExpeditionRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.FLIOBEDFEDO)
-    pub FLIOBEDFEDO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.HNAFKPKOCDM)
+    pub HNAFKPKOCDM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.ILLHGEBJHDO)
+    pub ILLHGEBJHDO: ::std::vec::Vec<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.LDHFNDFFBPG)
+    pub LDHFNDFFBPG: i64,
     // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.EMEJNMBMMJG)
-    pub EMEJNMBMMJG: ::std::vec::Vec<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeMultipleExpeditionRewardScRsp.HAGGBBFFLAA)
-    pub HAGGBBFFLAA: i64,
     // special fields
     // @@protoc_insertion_point(special_field:TakeMultipleExpeditionRewardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,24 +56,24 @@ impl TakeMultipleExpeditionRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FLIOBEDFEDO",
-            |m: &TakeMultipleExpeditionRewardScRsp| { &m.FLIOBEDFEDO },
-            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.FLIOBEDFEDO },
+            "HNAFKPKOCDM",
+            |m: &TakeMultipleExpeditionRewardScRsp| { &m.HNAFKPKOCDM },
+            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.HNAFKPKOCDM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ILLHGEBJHDO",
+            |m: &TakeMultipleExpeditionRewardScRsp| { &m.ILLHGEBJHDO },
+            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.ILLHGEBJHDO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LDHFNDFFBPG",
+            |m: &TakeMultipleExpeditionRewardScRsp| { &m.LDHFNDFFBPG },
+            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.LDHFNDFFBPG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeMultipleExpeditionRewardScRsp| { &m.retcode },
             |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EMEJNMBMMJG",
-            |m: &TakeMultipleExpeditionRewardScRsp| { &m.EMEJNMBMMJG },
-            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.EMEJNMBMMJG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HAGGBBFFLAA",
-            |m: &TakeMultipleExpeditionRewardScRsp| { &m.HAGGBBFFLAA },
-            |m: &mut TakeMultipleExpeditionRewardScRsp| { &mut m.HAGGBBFFLAA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeMultipleExpeditionRewardScRsp>(
             "TakeMultipleExpeditionRewardScRsp",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.FLIOBEDFEDO)?;
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HNAFKPKOCDM)?;
+                },
+                112 => {
+                    self.HNAFKPKOCDM.push(is.read_uint32()?);
+                },
+                10 => {
+                    self.ILLHGEBJHDO.push(is.read_message()?);
+                },
+                64 => {
+                    self.LDHFNDFFBPG = is.read_int64()?;
                 },
                 96 => {
-                    self.FLIOBEDFEDO.push(is.read_uint32()?);
-                },
-                56 => {
                     self.retcode = is.read_uint32()?;
-                },
-                42 => {
-                    self.EMEJNMBMMJG.push(is.read_message()?);
-                },
-                24 => {
-                    self.HAGGBBFFLAA = is.read_int64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,16 +120,16 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FLIOBEDFEDO);
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
-        for value in &self.EMEJNMBMMJG {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.HNAFKPKOCDM);
+        for value in &self.ILLHGEBJHDO {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HAGGBBFFLAA != 0 {
-            my_size += ::protobuf::rt::int64_size(3, self.HAGGBBFFLAA);
+        if self.LDHFNDFFBPG != 0 {
+            my_size += ::protobuf::rt::int64_size(8, self.LDHFNDFFBPG);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,15 +137,15 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.FLIOBEDFEDO)?;
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
-        }
-        for v in &self.EMEJNMBMMJG {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        os.write_repeated_packed_uint32(14, &self.HNAFKPKOCDM)?;
+        for v in &self.ILLHGEBJHDO {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.HAGGBBFFLAA != 0 {
-            os.write_int64(3, self.HAGGBBFFLAA)?;
+        if self.LDHFNDFFBPG != 0 {
+            os.write_int64(8, self.LDHFNDFFBPG)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for TakeMultipleExpeditionRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.FLIOBEDFEDO.clear();
+        self.HNAFKPKOCDM.clear();
+        self.ILLHGEBJHDO.clear();
+        self.LDHFNDFFBPG = 0;
         self.retcode = 0;
-        self.EMEJNMBMMJG.clear();
-        self.HAGGBBFFLAA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeMultipleExpeditionRewardScRsp {
         static instance: TakeMultipleExpeditionRewardScRsp = TakeMultipleExpeditionRewardScRsp {
-            FLIOBEDFEDO: ::std::vec::Vec::new(),
+            HNAFKPKOCDM: ::std::vec::Vec::new(),
+            ILLHGEBJHDO: ::std::vec::Vec::new(),
+            LDHFNDFFBPG: 0,
             retcode: 0,
-            EMEJNMBMMJG: ::std::vec::Vec::new(),
-            HAGGBBFFLAA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for TakeMultipleExpeditionRewardScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'TakeMultipleExpeditionRewardScRsp.proto\x1a\x0eItemList.proto\"\xae\
-    \x01\n!TakeMultipleExpeditionRewardScRsp\x12\x20\n\x0bFLIOBEDFEDO\x18\
-    \x0c\x20\x03(\rR\x0bFLIOBEDFEDO\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\
-    \x07retcode\x12+\n\x0bEMEJNMBMMJG\x18\x05\x20\x03(\x0b2\t.ItemListR\x0bE\
-    MEJNMBMMJG\x12\x20\n\x0bHAGGBBFFLAA\x18\x03\x20\x01(\x03R\x0bHAGGBBFFLAA\
-    b\x06proto3\
+    \x01\n!TakeMultipleExpeditionRewardScRsp\x12\x20\n\x0bHNAFKPKOCDM\x18\
+    \x0e\x20\x03(\rR\x0bHNAFKPKOCDM\x12+\n\x0bILLHGEBJHDO\x18\x01\x20\x03(\
+    \x0b2\t.ItemListR\x0bILLHGEBJHDO\x12\x20\n\x0bLDHFNDFFBPG\x18\x08\x20\
+    \x01(\x03R\x0bLDHFNDFFBPG\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07re\
+    tcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

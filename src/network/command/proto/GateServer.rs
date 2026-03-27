@@ -30,42 +30,44 @@ pub struct GateServer {
     // message fields
     // @@protoc_insertion_point(field:GateServer.unk1)
     pub unk1: bool,
-    // @@protoc_insertion_point(field:GateServer.asset_bundle_url)
-    pub asset_bundle_url: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.port)
-    pub port: u32,
-    // @@protoc_insertion_point(field:GateServer.region_name)
-    pub region_name: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.ex_resource_url)
-    pub ex_resource_url: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.unk2)
     pub unk2: bool,
+    // @@protoc_insertion_point(field:GateServer.asset_bundle_url)
+    pub asset_bundle_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.ex_resource_url)
+    pub ex_resource_url: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.region_name)
+    pub region_name: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.ip)
     pub ip: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.lua_url)
     pub lua_url: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.unk3)
-    pub unk3: bool,
+    // @@protoc_insertion_point(field:GateServer.port)
+    pub port: u32,
+    // @@protoc_insertion_point(field:GateServer.asset_bundle_url_android)
+    pub asset_bundle_url_android: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.ifix_url)
     pub ifix_url: ::std::string::String,
-    // @@protoc_insertion_point(field:GateServer.client_secret_key)
-    pub client_secret_key: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.unk3)
+    pub unk3: bool,
     // @@protoc_insertion_point(field:GateServer.msg)
     pub msg: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.unk4)
     pub unk4: bool,
-    // @@protoc_insertion_point(field:GateServer.asset_bundle_url_android)
-    pub asset_bundle_url_android: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.unk5)
     pub unk5: bool,
+    // @@protoc_insertion_point(field:GateServer.client_secret_key)
+    pub client_secret_key: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.unk6)
     pub unk6: bool,
     // @@protoc_insertion_point(field:GateServer.unk7)
     pub unk7: bool,
-    // @@protoc_insertion_point(field:GateServer.mdk_res_version)
-    pub mdk_res_version: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.ifix_version)
     pub ifix_version: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.mdk_res_version)
+    pub mdk_res_version: ::std::string::String,
+    // @@protoc_insertion_point(field:GateServer.ifix_version_android)
+    pub ifix_version_android: ::std::string::String,
     // @@protoc_insertion_point(field:GateServer.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:GateServer.unk8)
@@ -84,6 +86,8 @@ pub struct GateServer {
     pub unk14: bool,
     // @@protoc_insertion_point(field:GateServer.unk15)
     pub unk15: bool,
+    // @@protoc_insertion_point(field:GateServer.unk16)
+    pub unk16: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GateServer.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -101,7 +105,7 @@ impl GateServer {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(28);
+        let mut fields = ::std::vec::Vec::with_capacity(30);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unk1",
@@ -109,19 +113,14 @@ impl GateServer {
             |m: &mut GateServer| { &mut m.unk1 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unk2",
+            |m: &GateServer| { &m.unk2 },
+            |m: &mut GateServer| { &mut m.unk2 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "asset_bundle_url",
             |m: &GateServer| { &m.asset_bundle_url },
             |m: &mut GateServer| { &mut m.asset_bundle_url },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "port",
-            |m: &GateServer| { &m.port },
-            |m: &mut GateServer| { &mut m.port },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "region_name",
-            |m: &GateServer| { &m.region_name },
-            |m: &mut GateServer| { &mut m.region_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ex_resource_url",
@@ -129,9 +128,9 @@ impl GateServer {
             |m: &mut GateServer| { &mut m.ex_resource_url },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk2",
-            |m: &GateServer| { &m.unk2 },
-            |m: &mut GateServer| { &mut m.unk2 },
+            "region_name",
+            |m: &GateServer| { &m.region_name },
+            |m: &mut GateServer| { &mut m.region_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ip",
@@ -144,9 +143,14 @@ impl GateServer {
             |m: &mut GateServer| { &mut m.lua_url },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "unk3",
-            |m: &GateServer| { &m.unk3 },
-            |m: &mut GateServer| { &mut m.unk3 },
+            "port",
+            |m: &GateServer| { &m.port },
+            |m: &mut GateServer| { &mut m.port },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "asset_bundle_url_android",
+            |m: &GateServer| { &m.asset_bundle_url_android },
+            |m: &mut GateServer| { &mut m.asset_bundle_url_android },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "ifix_url",
@@ -154,9 +158,9 @@ impl GateServer {
             |m: &mut GateServer| { &mut m.ifix_url },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "client_secret_key",
-            |m: &GateServer| { &m.client_secret_key },
-            |m: &mut GateServer| { &mut m.client_secret_key },
+            "unk3",
+            |m: &GateServer| { &m.unk3 },
+            |m: &mut GateServer| { &mut m.unk3 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "msg",
@@ -169,14 +173,14 @@ impl GateServer {
             |m: &mut GateServer| { &mut m.unk4 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "asset_bundle_url_android",
-            |m: &GateServer| { &m.asset_bundle_url_android },
-            |m: &mut GateServer| { &mut m.asset_bundle_url_android },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unk5",
             |m: &GateServer| { &m.unk5 },
             |m: &mut GateServer| { &mut m.unk5 },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "client_secret_key",
+            |m: &GateServer| { &m.client_secret_key },
+            |m: &mut GateServer| { &mut m.client_secret_key },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unk6",
@@ -189,14 +193,19 @@ impl GateServer {
             |m: &mut GateServer| { &mut m.unk7 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "ifix_version",
+            |m: &GateServer| { &m.ifix_version },
+            |m: &mut GateServer| { &mut m.ifix_version },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "mdk_res_version",
             |m: &GateServer| { &m.mdk_res_version },
             |m: &mut GateServer| { &mut m.mdk_res_version },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ifix_version",
-            |m: &GateServer| { &m.ifix_version },
-            |m: &mut GateServer| { &mut m.ifix_version },
+            "ifix_version_android",
+            |m: &GateServer| { &m.ifix_version_android },
+            |m: &mut GateServer| { &mut m.ifix_version_android },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -243,6 +252,11 @@ impl GateServer {
             |m: &GateServer| { &m.unk15 },
             |m: &mut GateServer| { &mut m.unk15 },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "unk16",
+            |m: &GateServer| { &m.unk16 },
+            |m: &mut GateServer| { &mut m.unk16 },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GateServer>(
             "GateServer",
             fields,
@@ -264,86 +278,92 @@ impl ::protobuf::Message for GateServer {
                 16 => {
                     self.unk1 = is.read_bool()?;
                 },
-                42 => {
+                24 => {
+                    self.unk2 = is.read_bool()?;
+                },
+                34 => {
                     self.asset_bundle_url = is.read_string()?;
                 },
-                48 => {
-                    self.port = is.read_uint32()?;
+                42 => {
+                    self.ex_resource_url = is.read_string()?;
                 },
                 66 => {
                     self.region_name = is.read_string()?;
                 },
-                90 => {
-                    self.ex_resource_url = is.read_string()?;
-                },
-                96 => {
-                    self.unk2 = is.read_bool()?;
-                },
-                106 => {
+                74 => {
                     self.ip = is.read_string()?;
                 },
-                114 => {
+                106 => {
                     self.lua_url = is.read_string()?;
                 },
-                2552 => {
-                    self.unk3 = is.read_bool()?;
+                112 => {
+                    self.port = is.read_uint32()?;
                 },
-                5386 => {
-                    self.ifix_url = is.read_string()?;
-                },
-                7330 => {
-                    self.client_secret_key = is.read_string()?;
-                },
-                8818 => {
-                    self.msg = is.read_string()?;
-                },
-                8936 => {
-                    self.unk4 = is.read_bool()?;
-                },
-                11402 => {
+                642 => {
                     self.asset_bundle_url_android = is.read_string()?;
                 },
-                12144 => {
+                1138 => {
+                    self.ifix_url = is.read_string()?;
+                },
+                3136 => {
+                    self.unk3 = is.read_bool()?;
+                },
+                4330 => {
+                    self.msg = is.read_string()?;
+                },
+                5736 => {
+                    self.unk4 = is.read_bool()?;
+                },
+                10768 => {
                     self.unk5 = is.read_bool()?;
                 },
-                12160 => {
+                11010 => {
+                    self.client_secret_key = is.read_string()?;
+                },
+                11032 => {
                     self.unk6 = is.read_bool()?;
                 },
-                13704 => {
+                13800 => {
                     self.unk7 = is.read_bool()?;
                 },
-                10570 => {
-                    self.mdk_res_version = is.read_string()?;
-                },
-                14922 => {
+                5994 => {
                     self.ifix_version = is.read_string()?;
                 },
-                56 => {
+                6458 => {
+                    self.mdk_res_version = is.read_string()?;
+                },
+                11210 => {
+                    self.ifix_version_android = is.read_string()?;
+                },
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10248 => {
+                8456 => {
                     self.unk8 = is.read_bool()?;
                 },
-                13560 => {
+                15608 => {
                     self.unk9 = is.read_bool()?;
                 },
-                7672 => {
+                11448 => {
                     self.unk10 = is.read_bool()?;
                 },
-                1400 => {
+                7200 => {
                     self.unk11 = is.read_bool()?;
                 },
-                1952 => {
+                6112 => {
                     self.unk12 = is.read_bool()?;
                 },
-                4256 => {
+                1416 => {
                     self.unk13 = is.read_bool()?;
                 },
-                15704 => {
+                8936 => {
                     self.unk14 = is.read_bool()?;
                 },
-                5032 => {
+                928 => {
                     self.unk15 = is.read_bool()?;
+                },
+                16056 => {
+                    self.unk16 = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -360,47 +380,47 @@ impl ::protobuf::Message for GateServer {
         if self.unk1 != false {
             my_size += 1 + 1;
         }
-        if !self.asset_bundle_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.asset_bundle_url);
+        if self.unk2 != false {
+            my_size += 1 + 1;
         }
-        if self.port != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.port);
+        if !self.asset_bundle_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.asset_bundle_url);
+        }
+        if !self.ex_resource_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.ex_resource_url);
         }
         if !self.region_name.is_empty() {
             my_size += ::protobuf::rt::string_size(8, &self.region_name);
         }
-        if !self.ex_resource_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.ex_resource_url);
-        }
-        if self.unk2 != false {
-            my_size += 1 + 1;
-        }
         if !self.ip.is_empty() {
-            my_size += ::protobuf::rt::string_size(13, &self.ip);
+            my_size += ::protobuf::rt::string_size(9, &self.ip);
         }
         if !self.lua_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(14, &self.lua_url);
+            my_size += ::protobuf::rt::string_size(13, &self.lua_url);
+        }
+        if self.port != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.port);
+        }
+        if !self.asset_bundle_url_android.is_empty() {
+            my_size += ::protobuf::rt::string_size(80, &self.asset_bundle_url_android);
+        }
+        if !self.ifix_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(142, &self.ifix_url);
         }
         if self.unk3 != false {
             my_size += 2 + 1;
         }
-        if !self.ifix_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(673, &self.ifix_url);
-        }
-        if !self.client_secret_key.is_empty() {
-            my_size += ::protobuf::rt::string_size(916, &self.client_secret_key);
-        }
         if !self.msg.is_empty() {
-            my_size += ::protobuf::rt::string_size(1102, &self.msg);
+            my_size += ::protobuf::rt::string_size(541, &self.msg);
         }
         if self.unk4 != false {
             my_size += 2 + 1;
         }
-        if !self.asset_bundle_url_android.is_empty() {
-            my_size += ::protobuf::rt::string_size(1425, &self.asset_bundle_url_android);
-        }
         if self.unk5 != false {
             my_size += 2 + 1;
+        }
+        if !self.client_secret_key.is_empty() {
+            my_size += ::protobuf::rt::string_size(1376, &self.client_secret_key);
         }
         if self.unk6 != false {
             my_size += 2 + 1;
@@ -408,14 +428,17 @@ impl ::protobuf::Message for GateServer {
         if self.unk7 != false {
             my_size += 2 + 1;
         }
-        if !self.mdk_res_version.is_empty() {
-            my_size += ::protobuf::rt::string_size(1321, &self.mdk_res_version);
-        }
         if !self.ifix_version.is_empty() {
-            my_size += ::protobuf::rt::string_size(1865, &self.ifix_version);
+            my_size += ::protobuf::rt::string_size(749, &self.ifix_version);
+        }
+        if !self.mdk_res_version.is_empty() {
+            my_size += ::protobuf::rt::string_size(807, &self.mdk_res_version);
+        }
+        if !self.ifix_version_android.is_empty() {
+            my_size += ::protobuf::rt::string_size(1401, &self.ifix_version_android);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         if self.unk8 != false {
             my_size += 2 + 1;
@@ -439,6 +462,9 @@ impl ::protobuf::Message for GateServer {
             my_size += 2 + 1;
         }
         if self.unk15 != false {
+            my_size += 2 + 1;
+        }
+        if self.unk16 != false {
             my_size += 2 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -450,86 +476,92 @@ impl ::protobuf::Message for GateServer {
         if self.unk1 != false {
             os.write_bool(2, self.unk1)?;
         }
-        if !self.asset_bundle_url.is_empty() {
-            os.write_string(5, &self.asset_bundle_url)?;
+        if self.unk2 != false {
+            os.write_bool(3, self.unk2)?;
         }
-        if self.port != 0 {
-            os.write_uint32(6, self.port)?;
+        if !self.asset_bundle_url.is_empty() {
+            os.write_string(4, &self.asset_bundle_url)?;
+        }
+        if !self.ex_resource_url.is_empty() {
+            os.write_string(5, &self.ex_resource_url)?;
         }
         if !self.region_name.is_empty() {
             os.write_string(8, &self.region_name)?;
         }
-        if !self.ex_resource_url.is_empty() {
-            os.write_string(11, &self.ex_resource_url)?;
-        }
-        if self.unk2 != false {
-            os.write_bool(12, self.unk2)?;
-        }
         if !self.ip.is_empty() {
-            os.write_string(13, &self.ip)?;
+            os.write_string(9, &self.ip)?;
         }
         if !self.lua_url.is_empty() {
-            os.write_string(14, &self.lua_url)?;
+            os.write_string(13, &self.lua_url)?;
         }
-        if self.unk3 != false {
-            os.write_bool(319, self.unk3)?;
-        }
-        if !self.ifix_url.is_empty() {
-            os.write_string(673, &self.ifix_url)?;
-        }
-        if !self.client_secret_key.is_empty() {
-            os.write_string(916, &self.client_secret_key)?;
-        }
-        if !self.msg.is_empty() {
-            os.write_string(1102, &self.msg)?;
-        }
-        if self.unk4 != false {
-            os.write_bool(1117, self.unk4)?;
+        if self.port != 0 {
+            os.write_uint32(14, self.port)?;
         }
         if !self.asset_bundle_url_android.is_empty() {
-            os.write_string(1425, &self.asset_bundle_url_android)?;
+            os.write_string(80, &self.asset_bundle_url_android)?;
+        }
+        if !self.ifix_url.is_empty() {
+            os.write_string(142, &self.ifix_url)?;
+        }
+        if self.unk3 != false {
+            os.write_bool(392, self.unk3)?;
+        }
+        if !self.msg.is_empty() {
+            os.write_string(541, &self.msg)?;
+        }
+        if self.unk4 != false {
+            os.write_bool(717, self.unk4)?;
         }
         if self.unk5 != false {
-            os.write_bool(1518, self.unk5)?;
+            os.write_bool(1346, self.unk5)?;
+        }
+        if !self.client_secret_key.is_empty() {
+            os.write_string(1376, &self.client_secret_key)?;
         }
         if self.unk6 != false {
-            os.write_bool(1520, self.unk6)?;
+            os.write_bool(1379, self.unk6)?;
         }
         if self.unk7 != false {
-            os.write_bool(1713, self.unk7)?;
-        }
-        if !self.mdk_res_version.is_empty() {
-            os.write_string(1321, &self.mdk_res_version)?;
+            os.write_bool(1725, self.unk7)?;
         }
         if !self.ifix_version.is_empty() {
-            os.write_string(1865, &self.ifix_version)?;
+            os.write_string(749, &self.ifix_version)?;
+        }
+        if !self.mdk_res_version.is_empty() {
+            os.write_string(807, &self.mdk_res_version)?;
+        }
+        if !self.ifix_version_android.is_empty() {
+            os.write_string(1401, &self.ifix_version_android)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
         if self.unk8 != false {
-            os.write_bool(1281, self.unk8)?;
+            os.write_bool(1057, self.unk8)?;
         }
         if self.unk9 != false {
-            os.write_bool(1695, self.unk9)?;
+            os.write_bool(1951, self.unk9)?;
         }
         if self.unk10 != false {
-            os.write_bool(959, self.unk10)?;
+            os.write_bool(1431, self.unk10)?;
         }
         if self.unk11 != false {
-            os.write_bool(175, self.unk11)?;
+            os.write_bool(900, self.unk11)?;
         }
         if self.unk12 != false {
-            os.write_bool(244, self.unk12)?;
+            os.write_bool(764, self.unk12)?;
         }
         if self.unk13 != false {
-            os.write_bool(532, self.unk13)?;
+            os.write_bool(177, self.unk13)?;
         }
         if self.unk14 != false {
-            os.write_bool(1963, self.unk14)?;
+            os.write_bool(1117, self.unk14)?;
         }
         if self.unk15 != false {
-            os.write_bool(629, self.unk15)?;
+            os.write_bool(116, self.unk15)?;
+        }
+        if self.unk16 != false {
+            os.write_bool(2007, self.unk16)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -549,24 +581,25 @@ impl ::protobuf::Message for GateServer {
 
     fn clear(&mut self) {
         self.unk1 = false;
-        self.asset_bundle_url.clear();
-        self.port = 0;
-        self.region_name.clear();
-        self.ex_resource_url.clear();
         self.unk2 = false;
+        self.asset_bundle_url.clear();
+        self.ex_resource_url.clear();
+        self.region_name.clear();
         self.ip.clear();
         self.lua_url.clear();
-        self.unk3 = false;
+        self.port = 0;
+        self.asset_bundle_url_android.clear();
         self.ifix_url.clear();
-        self.client_secret_key.clear();
+        self.unk3 = false;
         self.msg.clear();
         self.unk4 = false;
-        self.asset_bundle_url_android.clear();
         self.unk5 = false;
+        self.client_secret_key.clear();
         self.unk6 = false;
         self.unk7 = false;
-        self.mdk_res_version.clear();
         self.ifix_version.clear();
+        self.mdk_res_version.clear();
+        self.ifix_version_android.clear();
         self.retcode = 0;
         self.unk8 = false;
         self.unk9 = false;
@@ -576,30 +609,32 @@ impl ::protobuf::Message for GateServer {
         self.unk13 = false;
         self.unk14 = false;
         self.unk15 = false;
+        self.unk16 = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GateServer {
         static instance: GateServer = GateServer {
             unk1: false,
-            asset_bundle_url: ::std::string::String::new(),
-            port: 0,
-            region_name: ::std::string::String::new(),
-            ex_resource_url: ::std::string::String::new(),
             unk2: false,
+            asset_bundle_url: ::std::string::String::new(),
+            ex_resource_url: ::std::string::String::new(),
+            region_name: ::std::string::String::new(),
             ip: ::std::string::String::new(),
             lua_url: ::std::string::String::new(),
-            unk3: false,
+            port: 0,
+            asset_bundle_url_android: ::std::string::String::new(),
             ifix_url: ::std::string::String::new(),
-            client_secret_key: ::std::string::String::new(),
+            unk3: false,
             msg: ::std::string::String::new(),
             unk4: false,
-            asset_bundle_url_android: ::std::string::String::new(),
             unk5: false,
+            client_secret_key: ::std::string::String::new(),
             unk6: false,
             unk7: false,
-            mdk_res_version: ::std::string::String::new(),
             ifix_version: ::std::string::String::new(),
+            mdk_res_version: ::std::string::String::new(),
+            ifix_version_android: ::std::string::String::new(),
             retcode: 0,
             unk8: false,
             unk9: false,
@@ -609,6 +644,7 @@ impl ::protobuf::Message for GateServer {
             unk13: false,
             unk14: false,
             unk15: false,
+            unk16: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -633,29 +669,31 @@ impl ::protobuf::reflect::ProtobufValue for GateServer {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10GateServer.proto\"\xfe\x05\n\nGateServer\x12\x12\n\x04unk1\x18\x02\
-    \x20\x01(\x08R\x04unk1\x12(\n\x10asset_bundle_url\x18\x05\x20\x01(\tR\
-    \x0eassetBundleUrl\x12\x12\n\x04port\x18\x06\x20\x01(\rR\x04port\x12\x1f\
-    \n\x0bregion_name\x18\x08\x20\x01(\tR\nregionName\x12&\n\x0fex_resource_\
-    url\x18\x0b\x20\x01(\tR\rexResourceUrl\x12\x12\n\x04unk2\x18\x0c\x20\x01\
-    (\x08R\x04unk2\x12\x0e\n\x02ip\x18\r\x20\x01(\tR\x02ip\x12\x17\n\x07lua_\
-    url\x18\x0e\x20\x01(\tR\x06luaUrl\x12\x13\n\x04unk3\x18\xbf\x02\x20\x01(\
-    \x08R\x04unk3\x12\x1a\n\x08ifix_url\x18\xa1\x05\x20\x01(\tR\x07ifixUrl\
-    \x12+\n\x11client_secret_key\x18\x94\x07\x20\x01(\tR\x0fclientSecretKey\
-    \x12\x11\n\x03msg\x18\xce\x08\x20\x01(\tR\x03msg\x12\x13\n\x04unk4\x18\
-    \xdd\x08\x20\x01(\x08R\x04unk4\x128\n\x18asset_bundle_url_android\x18\
-    \x91\x0b\x20\x01(\tR\x15assetBundleUrlAndroid\x12\x13\n\x04unk5\x18\xee\
-    \x0b\x20\x01(\x08R\x04unk5\x12\x13\n\x04unk6\x18\xf0\x0b\x20\x01(\x08R\
-    \x04unk6\x12\x13\n\x04unk7\x18\xb1\r\x20\x01(\x08R\x04unk7\x12'\n\x0fmdk\
-    _res_version\x18\xa9\n\x20\x01(\tR\rmdkResVersion\x12\"\n\x0cifix_versio\
-    n\x18\xc9\x0e\x20\x01(\tR\x0bifixVersion\x12\x18\n\x07retcode\x18\x07\
-    \x20\x01(\rR\x07retcode\x12\x13\n\x04unk8\x18\x81\n\x20\x01(\x08R\x04unk\
-    8\x12\x13\n\x04unk9\x18\x9f\r\x20\x01(\x08R\x04unk9\x12\x15\n\x05unk10\
-    \x18\xbf\x07\x20\x01(\x08R\x05unk10\x12\x15\n\x05unk11\x18\xaf\x01\x20\
-    \x01(\x08R\x05unk11\x12\x15\n\x05unk12\x18\xf4\x01\x20\x01(\x08R\x05unk1\
-    2\x12\x15\n\x05unk13\x18\x94\x04\x20\x01(\x08R\x05unk13\x12\x15\n\x05unk\
-    14\x18\xab\x0f\x20\x01(\x08R\x05unk14\x12\x15\n\x05unk15\x18\xf5\x04\x20\
-    \x01(\x08R\x05unk15b\x06proto3\
+    \n\x10GateServer.proto\"\xc6\x06\n\nGateServer\x12\x12\n\x04unk1\x18\x02\
+    \x20\x01(\x08R\x04unk1\x12\x12\n\x04unk2\x18\x03\x20\x01(\x08R\x04unk2\
+    \x12(\n\x10asset_bundle_url\x18\x04\x20\x01(\tR\x0eassetBundleUrl\x12&\n\
+    \x0fex_resource_url\x18\x05\x20\x01(\tR\rexResourceUrl\x12\x1f\n\x0bregi\
+    on_name\x18\x08\x20\x01(\tR\nregionName\x12\x0e\n\x02ip\x18\t\x20\x01(\t\
+    R\x02ip\x12\x17\n\x07lua_url\x18\r\x20\x01(\tR\x06luaUrl\x12\x12\n\x04po\
+    rt\x18\x0e\x20\x01(\rR\x04port\x127\n\x18asset_bundle_url_android\x18P\
+    \x20\x01(\tR\x15assetBundleUrlAndroid\x12\x1a\n\x08ifix_url\x18\x8e\x01\
+    \x20\x01(\tR\x07ifixUrl\x12\x13\n\x04unk3\x18\x88\x03\x20\x01(\x08R\x04u\
+    nk3\x12\x11\n\x03msg\x18\x9d\x04\x20\x01(\tR\x03msg\x12\x13\n\x04unk4\
+    \x18\xcd\x05\x20\x01(\x08R\x04unk4\x12\x13\n\x04unk5\x18\xc2\n\x20\x01(\
+    \x08R\x04unk5\x12+\n\x11client_secret_key\x18\xe0\n\x20\x01(\tR\x0fclien\
+    tSecretKey\x12\x13\n\x04unk6\x18\xe3\n\x20\x01(\x08R\x04unk6\x12\x13\n\
+    \x04unk7\x18\xbd\r\x20\x01(\x08R\x04unk7\x12\"\n\x0cifix_version\x18\xed\
+    \x05\x20\x01(\tR\x0bifixVersion\x12'\n\x0fmdk_res_version\x18\xa7\x06\
+    \x20\x01(\tR\rmdkResVersion\x121\n\x14ifix_version_android\x18\xf9\n\x20\
+    \x01(\tR\x12ifixVersionAndroid\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
+    \x07retcode\x12\x13\n\x04unk8\x18\xa1\x08\x20\x01(\x08R\x04unk8\x12\x13\
+    \n\x04unk9\x18\x9f\x0f\x20\x01(\x08R\x04unk9\x12\x15\n\x05unk10\x18\x97\
+    \x0b\x20\x01(\x08R\x05unk10\x12\x15\n\x05unk11\x18\x84\x07\x20\x01(\x08R\
+    \x05unk11\x12\x15\n\x05unk12\x18\xfc\x05\x20\x01(\x08R\x05unk12\x12\x15\
+    \n\x05unk13\x18\xb1\x01\x20\x01(\x08R\x05unk13\x12\x15\n\x05unk14\x18\
+    \xdd\x08\x20\x01(\x08R\x05unk14\x12\x14\n\x05unk15\x18t\x20\x01(\x08R\
+    \x05unk15\x12\x15\n\x05unk16\x18\xd7\x0f\x20\x01(\x08R\x05unk16b\x06prot\
+    o3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

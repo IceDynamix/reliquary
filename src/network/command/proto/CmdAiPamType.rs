@@ -27,34 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdAiPamType)
 pub enum CmdAiPamType {
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_PDNGOIKICAK)
-    AGOMMHFEIHE_PDNGOIKICAK = 0,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_DDNOJAMGKMG)
-    AGOMMHFEIHE_DDNOJAMGKMG = 9506,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_LFOLHBCGDEP)
-    AGOMMHFEIHE_LFOLHBCGDEP = 9533,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_GLCNLMAKNJP)
-    AGOMMHFEIHE_GLCNLMAKNJP = 9503,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_NFKPACPDEPJ)
-    AGOMMHFEIHE_NFKPACPDEPJ = 9550,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_KIMDOEICBGD)
-    AGOMMHFEIHE_KIMDOEICBGD = 9531,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_PBBFDDEFFME)
-    AGOMMHFEIHE_PBBFDDEFFME = 9535,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_GOEOLCPFGEI)
-    AGOMMHFEIHE_GOEOLCPFGEI = 9508,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_EJIKFAOJFHB)
-    AGOMMHFEIHE_EJIKFAOJFHB = 9549,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_OAAAPPMKALP)
-    AGOMMHFEIHE_OAAAPPMKALP = 9539,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_MGHDFGEEJJA)
-    AGOMMHFEIHE_MGHDFGEEJJA = 9547,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_HAJBFBFJCKE)
-    AGOMMHFEIHE_HAJBFBFJCKE = 9543,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_HCPNMKCHOGE)
-    AGOMMHFEIHE_HCPNMKCHOGE = 9524,
-    // @@protoc_insertion_point(enum_value:CmdAiPamType.AGOMMHFEIHE_NAJOJCNNLID)
-    AGOMMHFEIHE_NAJOJCNNLID = 9507,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_ICIAGHDBDOJ)
+    CmdAiPamType_ICIAGHDBDOJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_MPCMLGGLJFB)
+    CmdAiPamType_MPCMLGGLJFB = 9521,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_NMELKKGPLNG)
+    CmdAiPamType_NMELKKGPLNG = 9534,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_NIJJCAAGABK)
+    CmdAiPamType_NIJJCAAGABK = 9514,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_NAHIMHGPACK)
+    CmdAiPamType_NAHIMHGPACK = 9524,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_JGAPJABGNHI)
+    CmdAiPamType_JGAPJABGNHI = 9512,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_CMICCPGGPAB)
+    CmdAiPamType_CMICCPGGPAB = 9508,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_CGEOAIAHOIJ)
+    CmdAiPamType_CGEOAIAHOIJ = 9522,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_PGPBBGMHHDH)
+    CmdAiPamType_PGPBBGMHHDH = 9503,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_JCPNGPONDNK)
+    CmdAiPamType_JCPNGPONDNK = 9511,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_FGMLOAHMHEB)
+    CmdAiPamType_FGMLOAHMHEB = 9529,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_ALHKBKFLBKD)
+    CmdAiPamType_ALHKBKFLBKD = 9538,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_MHIGLNKJEDJ)
+    CmdAiPamType_MHIGLNKJEDJ = 9507,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_DPMJIPOBJHC)
+    CmdAiPamType_DPMJIPOBJHC = 9523,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_MFNGMCJPDGC)
+    CmdAiPamType_MFNGMCJPDGC = 9501,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_BGEGODNMCJB)
+    CmdAiPamType_BGEGODNMCJB = 9504,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_MJEPEDGAFPC)
+    CmdAiPamType_MJEPEDGAFPC = 9518,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_IDCBKKJPLDB)
+    CmdAiPamType_IDCBKKJPLDB = 9539,
+    // @@protoc_insertion_point(enum_value:CmdAiPamType.CmdAiPamType_JBNPKLJFECG)
+    CmdAiPamType_JBNPKLJFECG = 9540,
 }
 
 impl ::protobuf::Enum for CmdAiPamType {
@@ -66,59 +76,74 @@ impl ::protobuf::Enum for CmdAiPamType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdAiPamType> {
         match value {
-            0 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_PDNGOIKICAK),
-            9506 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_DDNOJAMGKMG),
-            9533 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_LFOLHBCGDEP),
-            9503 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_GLCNLMAKNJP),
-            9550 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_NFKPACPDEPJ),
-            9531 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_KIMDOEICBGD),
-            9535 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_PBBFDDEFFME),
-            9508 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_GOEOLCPFGEI),
-            9549 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_EJIKFAOJFHB),
-            9539 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_OAAAPPMKALP),
-            9547 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_MGHDFGEEJJA),
-            9543 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_HAJBFBFJCKE),
-            9524 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_HCPNMKCHOGE),
-            9507 => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_NAJOJCNNLID),
+            0 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_ICIAGHDBDOJ),
+            9521 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_MPCMLGGLJFB),
+            9534 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_NMELKKGPLNG),
+            9514 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_NIJJCAAGABK),
+            9524 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_NAHIMHGPACK),
+            9512 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_JGAPJABGNHI),
+            9508 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_CMICCPGGPAB),
+            9522 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_CGEOAIAHOIJ),
+            9503 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_PGPBBGMHHDH),
+            9511 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_JCPNGPONDNK),
+            9529 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_FGMLOAHMHEB),
+            9538 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_ALHKBKFLBKD),
+            9507 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_MHIGLNKJEDJ),
+            9523 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_DPMJIPOBJHC),
+            9501 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_MFNGMCJPDGC),
+            9504 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_BGEGODNMCJB),
+            9518 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_MJEPEDGAFPC),
+            9539 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_IDCBKKJPLDB),
+            9540 => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_JBNPKLJFECG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdAiPamType> {
         match str {
-            "AGOMMHFEIHE_PDNGOIKICAK" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_PDNGOIKICAK),
-            "AGOMMHFEIHE_DDNOJAMGKMG" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_DDNOJAMGKMG),
-            "AGOMMHFEIHE_LFOLHBCGDEP" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_LFOLHBCGDEP),
-            "AGOMMHFEIHE_GLCNLMAKNJP" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_GLCNLMAKNJP),
-            "AGOMMHFEIHE_NFKPACPDEPJ" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_NFKPACPDEPJ),
-            "AGOMMHFEIHE_KIMDOEICBGD" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_KIMDOEICBGD),
-            "AGOMMHFEIHE_PBBFDDEFFME" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_PBBFDDEFFME),
-            "AGOMMHFEIHE_GOEOLCPFGEI" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_GOEOLCPFGEI),
-            "AGOMMHFEIHE_EJIKFAOJFHB" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_EJIKFAOJFHB),
-            "AGOMMHFEIHE_OAAAPPMKALP" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_OAAAPPMKALP),
-            "AGOMMHFEIHE_MGHDFGEEJJA" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_MGHDFGEEJJA),
-            "AGOMMHFEIHE_HAJBFBFJCKE" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_HAJBFBFJCKE),
-            "AGOMMHFEIHE_HCPNMKCHOGE" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_HCPNMKCHOGE),
-            "AGOMMHFEIHE_NAJOJCNNLID" => ::std::option::Option::Some(CmdAiPamType::AGOMMHFEIHE_NAJOJCNNLID),
+            "CmdAiPamType_ICIAGHDBDOJ" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_ICIAGHDBDOJ),
+            "CmdAiPamType_MPCMLGGLJFB" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_MPCMLGGLJFB),
+            "CmdAiPamType_NMELKKGPLNG" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_NMELKKGPLNG),
+            "CmdAiPamType_NIJJCAAGABK" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_NIJJCAAGABK),
+            "CmdAiPamType_NAHIMHGPACK" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_NAHIMHGPACK),
+            "CmdAiPamType_JGAPJABGNHI" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_JGAPJABGNHI),
+            "CmdAiPamType_CMICCPGGPAB" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_CMICCPGGPAB),
+            "CmdAiPamType_CGEOAIAHOIJ" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_CGEOAIAHOIJ),
+            "CmdAiPamType_PGPBBGMHHDH" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_PGPBBGMHHDH),
+            "CmdAiPamType_JCPNGPONDNK" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_JCPNGPONDNK),
+            "CmdAiPamType_FGMLOAHMHEB" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_FGMLOAHMHEB),
+            "CmdAiPamType_ALHKBKFLBKD" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_ALHKBKFLBKD),
+            "CmdAiPamType_MHIGLNKJEDJ" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_MHIGLNKJEDJ),
+            "CmdAiPamType_DPMJIPOBJHC" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_DPMJIPOBJHC),
+            "CmdAiPamType_MFNGMCJPDGC" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_MFNGMCJPDGC),
+            "CmdAiPamType_BGEGODNMCJB" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_BGEGODNMCJB),
+            "CmdAiPamType_MJEPEDGAFPC" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_MJEPEDGAFPC),
+            "CmdAiPamType_IDCBKKJPLDB" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_IDCBKKJPLDB),
+            "CmdAiPamType_JBNPKLJFECG" => ::std::option::Option::Some(CmdAiPamType::CmdAiPamType_JBNPKLJFECG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdAiPamType] = &[
-        CmdAiPamType::AGOMMHFEIHE_PDNGOIKICAK,
-        CmdAiPamType::AGOMMHFEIHE_DDNOJAMGKMG,
-        CmdAiPamType::AGOMMHFEIHE_LFOLHBCGDEP,
-        CmdAiPamType::AGOMMHFEIHE_GLCNLMAKNJP,
-        CmdAiPamType::AGOMMHFEIHE_NFKPACPDEPJ,
-        CmdAiPamType::AGOMMHFEIHE_KIMDOEICBGD,
-        CmdAiPamType::AGOMMHFEIHE_PBBFDDEFFME,
-        CmdAiPamType::AGOMMHFEIHE_GOEOLCPFGEI,
-        CmdAiPamType::AGOMMHFEIHE_EJIKFAOJFHB,
-        CmdAiPamType::AGOMMHFEIHE_OAAAPPMKALP,
-        CmdAiPamType::AGOMMHFEIHE_MGHDFGEEJJA,
-        CmdAiPamType::AGOMMHFEIHE_HAJBFBFJCKE,
-        CmdAiPamType::AGOMMHFEIHE_HCPNMKCHOGE,
-        CmdAiPamType::AGOMMHFEIHE_NAJOJCNNLID,
+        CmdAiPamType::CmdAiPamType_ICIAGHDBDOJ,
+        CmdAiPamType::CmdAiPamType_MPCMLGGLJFB,
+        CmdAiPamType::CmdAiPamType_NMELKKGPLNG,
+        CmdAiPamType::CmdAiPamType_NIJJCAAGABK,
+        CmdAiPamType::CmdAiPamType_NAHIMHGPACK,
+        CmdAiPamType::CmdAiPamType_JGAPJABGNHI,
+        CmdAiPamType::CmdAiPamType_CMICCPGGPAB,
+        CmdAiPamType::CmdAiPamType_CGEOAIAHOIJ,
+        CmdAiPamType::CmdAiPamType_PGPBBGMHHDH,
+        CmdAiPamType::CmdAiPamType_JCPNGPONDNK,
+        CmdAiPamType::CmdAiPamType_FGMLOAHMHEB,
+        CmdAiPamType::CmdAiPamType_ALHKBKFLBKD,
+        CmdAiPamType::CmdAiPamType_MHIGLNKJEDJ,
+        CmdAiPamType::CmdAiPamType_DPMJIPOBJHC,
+        CmdAiPamType::CmdAiPamType_MFNGMCJPDGC,
+        CmdAiPamType::CmdAiPamType_BGEGODNMCJB,
+        CmdAiPamType::CmdAiPamType_MJEPEDGAFPC,
+        CmdAiPamType::CmdAiPamType_IDCBKKJPLDB,
+        CmdAiPamType::CmdAiPamType_JBNPKLJFECG,
     ];
 }
 
@@ -130,20 +155,25 @@ impl ::protobuf::EnumFull for CmdAiPamType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdAiPamType::AGOMMHFEIHE_PDNGOIKICAK => 0,
-            CmdAiPamType::AGOMMHFEIHE_DDNOJAMGKMG => 1,
-            CmdAiPamType::AGOMMHFEIHE_LFOLHBCGDEP => 2,
-            CmdAiPamType::AGOMMHFEIHE_GLCNLMAKNJP => 3,
-            CmdAiPamType::AGOMMHFEIHE_NFKPACPDEPJ => 4,
-            CmdAiPamType::AGOMMHFEIHE_KIMDOEICBGD => 5,
-            CmdAiPamType::AGOMMHFEIHE_PBBFDDEFFME => 6,
-            CmdAiPamType::AGOMMHFEIHE_GOEOLCPFGEI => 7,
-            CmdAiPamType::AGOMMHFEIHE_EJIKFAOJFHB => 8,
-            CmdAiPamType::AGOMMHFEIHE_OAAAPPMKALP => 9,
-            CmdAiPamType::AGOMMHFEIHE_MGHDFGEEJJA => 10,
-            CmdAiPamType::AGOMMHFEIHE_HAJBFBFJCKE => 11,
-            CmdAiPamType::AGOMMHFEIHE_HCPNMKCHOGE => 12,
-            CmdAiPamType::AGOMMHFEIHE_NAJOJCNNLID => 13,
+            CmdAiPamType::CmdAiPamType_ICIAGHDBDOJ => 0,
+            CmdAiPamType::CmdAiPamType_MPCMLGGLJFB => 1,
+            CmdAiPamType::CmdAiPamType_NMELKKGPLNG => 2,
+            CmdAiPamType::CmdAiPamType_NIJJCAAGABK => 3,
+            CmdAiPamType::CmdAiPamType_NAHIMHGPACK => 4,
+            CmdAiPamType::CmdAiPamType_JGAPJABGNHI => 5,
+            CmdAiPamType::CmdAiPamType_CMICCPGGPAB => 6,
+            CmdAiPamType::CmdAiPamType_CGEOAIAHOIJ => 7,
+            CmdAiPamType::CmdAiPamType_PGPBBGMHHDH => 8,
+            CmdAiPamType::CmdAiPamType_JCPNGPONDNK => 9,
+            CmdAiPamType::CmdAiPamType_FGMLOAHMHEB => 10,
+            CmdAiPamType::CmdAiPamType_ALHKBKFLBKD => 11,
+            CmdAiPamType::CmdAiPamType_MHIGLNKJEDJ => 12,
+            CmdAiPamType::CmdAiPamType_DPMJIPOBJHC => 13,
+            CmdAiPamType::CmdAiPamType_MFNGMCJPDGC => 14,
+            CmdAiPamType::CmdAiPamType_BGEGODNMCJB => 15,
+            CmdAiPamType::CmdAiPamType_MJEPEDGAFPC => 16,
+            CmdAiPamType::CmdAiPamType_IDCBKKJPLDB => 17,
+            CmdAiPamType::CmdAiPamType_JBNPKLJFECG => 18,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -151,7 +181,7 @@ impl ::protobuf::EnumFull for CmdAiPamType {
 
 impl ::std::default::Default for CmdAiPamType {
     fn default() -> Self {
-        CmdAiPamType::AGOMMHFEIHE_PDNGOIKICAK
+        CmdAiPamType::CmdAiPamType_ICIAGHDBDOJ
     }
 }
 
@@ -162,16 +192,20 @@ impl CmdAiPamType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12CmdAiPamType.proto*\xb1\x03\n\x0cCmdAiPamType\x12\x1b\n\x17AGOMMHF\
-    EIHE_PDNGOIKICAK\x10\0\x12\x1c\n\x17AGOMMHFEIHE_DDNOJAMGKMG\x10\xa2J\x12\
-    \x1c\n\x17AGOMMHFEIHE_LFOLHBCGDEP\x10\xbdJ\x12\x1c\n\x17AGOMMHFEIHE_GLCN\
-    LMAKNJP\x10\x9fJ\x12\x1c\n\x17AGOMMHFEIHE_NFKPACPDEPJ\x10\xceJ\x12\x1c\n\
-    \x17AGOMMHFEIHE_KIMDOEICBGD\x10\xbbJ\x12\x1c\n\x17AGOMMHFEIHE_PBBFDDEFFM\
-    E\x10\xbfJ\x12\x1c\n\x17AGOMMHFEIHE_GOEOLCPFGEI\x10\xa4J\x12\x1c\n\x17AG\
-    OMMHFEIHE_EJIKFAOJFHB\x10\xcdJ\x12\x1c\n\x17AGOMMHFEIHE_OAAAPPMKALP\x10\
-    \xc3J\x12\x1c\n\x17AGOMMHFEIHE_MGHDFGEEJJA\x10\xcbJ\x12\x1c\n\x17AGOMMHF\
-    EIHE_HAJBFBFJCKE\x10\xc7J\x12\x1c\n\x17AGOMMHFEIHE_HCPNMKCHOGE\x10\xb4J\
-    \x12\x1c\n\x17AGOMMHFEIHE_NAJOJCNNLID\x10\xa3Jb\x06proto3\
+    \n\x12CmdAiPamType.proto*\xda\x04\n\x0cCmdAiPamType\x12\x1c\n\x18CmdAiPa\
+    mType_ICIAGHDBDOJ\x10\0\x12\x1d\n\x18CmdAiPamType_MPCMLGGLJFB\x10\xb1J\
+    \x12\x1d\n\x18CmdAiPamType_NMELKKGPLNG\x10\xbeJ\x12\x1d\n\x18CmdAiPamTyp\
+    e_NIJJCAAGABK\x10\xaaJ\x12\x1d\n\x18CmdAiPamType_NAHIMHGPACK\x10\xb4J\
+    \x12\x1d\n\x18CmdAiPamType_JGAPJABGNHI\x10\xa8J\x12\x1d\n\x18CmdAiPamTyp\
+    e_CMICCPGGPAB\x10\xa4J\x12\x1d\n\x18CmdAiPamType_CGEOAIAHOIJ\x10\xb2J\
+    \x12\x1d\n\x18CmdAiPamType_PGPBBGMHHDH\x10\x9fJ\x12\x1d\n\x18CmdAiPamTyp\
+    e_JCPNGPONDNK\x10\xa7J\x12\x1d\n\x18CmdAiPamType_FGMLOAHMHEB\x10\xb9J\
+    \x12\x1d\n\x18CmdAiPamType_ALHKBKFLBKD\x10\xc2J\x12\x1d\n\x18CmdAiPamTyp\
+    e_MHIGLNKJEDJ\x10\xa3J\x12\x1d\n\x18CmdAiPamType_DPMJIPOBJHC\x10\xb3J\
+    \x12\x1d\n\x18CmdAiPamType_MFNGMCJPDGC\x10\x9dJ\x12\x1d\n\x18CmdAiPamTyp\
+    e_BGEGODNMCJB\x10\xa0J\x12\x1d\n\x18CmdAiPamType_MJEPEDGAFPC\x10\xaeJ\
+    \x12\x1d\n\x18CmdAiPamType_IDCBKKJPLDB\x10\xc3J\x12\x1d\n\x18CmdAiPamTyp\
+    e_JBNPKLJFECG\x10\xc4Jb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

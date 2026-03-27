@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyGridFightInfo {
     // message fields
-    // @@protoc_insertion_point(field:LobbyGridFightInfo.OPEANHFIKEC)
-    pub OPEANHFIKEC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LobbyGridFightInfo.HFDPAJPGPIB)
+    pub HFDPAJPGPIB: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LobbyGridFightInfo.gold)
     pub gold: u32,
     // @@protoc_insertion_point(field:LobbyGridFightInfo.score_id)
     pub score_id: u32,
-    // @@protoc_insertion_point(field:LobbyGridFightInfo.NIKPPGHNGCG)
-    pub NIKPPGHNGCG: ::std::string::String,
+    // @@protoc_insertion_point(field:LobbyGridFightInfo.LLBNCKCFEHO)
+    pub LLBNCKCFEHO: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyGridFightInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl LobbyGridFightInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OPEANHFIKEC",
-            |m: &LobbyGridFightInfo| { &m.OPEANHFIKEC },
-            |m: &mut LobbyGridFightInfo| { &mut m.OPEANHFIKEC },
+            "HFDPAJPGPIB",
+            |m: &LobbyGridFightInfo| { &m.HFDPAJPGPIB },
+            |m: &mut LobbyGridFightInfo| { &mut m.HFDPAJPGPIB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gold",
@@ -71,9 +71,9 @@ impl LobbyGridFightInfo {
             |m: &mut LobbyGridFightInfo| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NIKPPGHNGCG",
-            |m: &LobbyGridFightInfo| { &m.NIKPPGHNGCG },
-            |m: &mut LobbyGridFightInfo| { &mut m.NIKPPGHNGCG },
+            "LLBNCKCFEHO",
+            |m: &LobbyGridFightInfo| { &m.LLBNCKCFEHO },
+            |m: &mut LobbyGridFightInfo| { &mut m.LLBNCKCFEHO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyGridFightInfo>(
             "LobbyGridFightInfo",
@@ -94,10 +94,10 @@ impl ::protobuf::Message for LobbyGridFightInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OPEANHFIKEC)?;
+                    is.read_repeated_packed_uint32_into(&mut self.HFDPAJPGPIB)?;
                 },
                 8 => {
-                    self.OPEANHFIKEC.push(is.read_uint32()?);
+                    self.HFDPAJPGPIB.push(is.read_uint32()?);
                 },
                 16 => {
                     self.gold = is.read_uint32()?;
@@ -106,7 +106,7 @@ impl ::protobuf::Message for LobbyGridFightInfo {
                     self.score_id = is.read_uint32()?;
                 },
                 34 => {
-                    self.NIKPPGHNGCG = is.read_string()?;
+                    self.LLBNCKCFEHO = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for LobbyGridFightInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.OPEANHFIKEC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.HFDPAJPGPIB);
         if self.gold != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.gold);
         }
         if self.score_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.score_id);
         }
-        if !self.NIKPPGHNGCG.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.NIKPPGHNGCG);
+        if !self.LLBNCKCFEHO.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.LLBNCKCFEHO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for LobbyGridFightInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.OPEANHFIKEC)?;
+        os.write_repeated_packed_uint32(1, &self.HFDPAJPGPIB)?;
         if self.gold != 0 {
             os.write_uint32(2, self.gold)?;
         }
         if self.score_id != 0 {
             os.write_uint32(3, self.score_id)?;
         }
-        if !self.NIKPPGHNGCG.is_empty() {
-            os.write_string(4, &self.NIKPPGHNGCG)?;
+        if !self.LLBNCKCFEHO.is_empty() {
+            os.write_string(4, &self.LLBNCKCFEHO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for LobbyGridFightInfo {
     }
 
     fn clear(&mut self) {
-        self.OPEANHFIKEC.clear();
+        self.HFDPAJPGPIB.clear();
         self.gold = 0;
         self.score_id = 0;
-        self.NIKPPGHNGCG.clear();
+        self.LLBNCKCFEHO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyGridFightInfo {
         static instance: LobbyGridFightInfo = LobbyGridFightInfo {
-            OPEANHFIKEC: ::std::vec::Vec::new(),
+            HFDPAJPGPIB: ::std::vec::Vec::new(),
             gold: 0,
             score_id: 0,
-            NIKPPGHNGCG: ::std::string::String::new(),
+            LLBNCKCFEHO: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for LobbyGridFightInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LobbyGridFightInfo.proto\"\x87\x01\n\x12LobbyGridFightInfo\x12\x20\
-    \n\x0bOPEANHFIKEC\x18\x01\x20\x03(\rR\x0bOPEANHFIKEC\x12\x12\n\x04gold\
+    \n\x0bHFDPAJPGPIB\x18\x01\x20\x03(\rR\x0bHFDPAJPGPIB\x12\x12\n\x04gold\
     \x18\x02\x20\x01(\rR\x04gold\x12\x19\n\x08score_id\x18\x03\x20\x01(\rR\
-    \x07scoreId\x12\x20\n\x0bNIKPPGHNGCG\x18\x04\x20\x01(\tR\x0bNIKPPGHNGCGb\
+    \x07scoreId\x12\x20\n\x0bLLBNCKCFEHO\x18\x04\x20\x01(\tR\x0bLLBNCKCFEHOb\
     \x06proto3\
 ";
 

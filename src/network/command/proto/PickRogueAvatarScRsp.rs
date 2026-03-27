@@ -30,10 +30,10 @@ pub struct PickRogueAvatarScRsp {
     // message fields
     // @@protoc_insertion_point(field:PickRogueAvatarScRsp.base_avatar_id_list)
     pub base_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PickRogueAvatarScRsp.GIDAAIGDPLA)
+    pub GIDAAIGDPLA: ::protobuf::MessageField<super::DFEDBFJIJJE::DFEDBFJIJJE>,
     // @@protoc_insertion_point(field:PickRogueAvatarScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PickRogueAvatarScRsp.NPFDICBMFFC)
-    pub NPFDICBMFFC: ::protobuf::MessageField<super::OLAEILDKNKO::OLAEILDKNKO>,
     // special fields
     // @@protoc_insertion_point(special_field:PickRogueAvatarScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl PickRogueAvatarScRsp {
             |m: &PickRogueAvatarScRsp| { &m.base_avatar_id_list },
             |m: &mut PickRogueAvatarScRsp| { &mut m.base_avatar_id_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFEDBFJIJJE::DFEDBFJIJJE>(
+            "GIDAAIGDPLA",
+            |m: &PickRogueAvatarScRsp| { &m.GIDAAIGDPLA },
+            |m: &mut PickRogueAvatarScRsp| { &mut m.GIDAAIGDPLA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &PickRogueAvatarScRsp| { &m.retcode },
             |m: &mut PickRogueAvatarScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OLAEILDKNKO::OLAEILDKNKO>(
-            "NPFDICBMFFC",
-            |m: &PickRogueAvatarScRsp| { &m.NPFDICBMFFC },
-            |m: &mut PickRogueAvatarScRsp| { &mut m.NPFDICBMFFC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PickRogueAvatarScRsp>(
             "PickRogueAvatarScRsp",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for PickRogueAvatarScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
                 },
-                16 => {
+                80 => {
                     self.base_avatar_id_list.push(is.read_uint32()?);
                 },
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NPFDICBMFFC)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GIDAAIGDPLA)?;
+                },
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,13 +110,13 @@ impl ::protobuf::Message for PickRogueAvatarScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.base_avatar_id_list);
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if let Some(v) = self.NPFDICBMFFC.as_ref() {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.base_avatar_id_list);
+        if let Some(v) = self.GIDAAIGDPLA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,12 +124,12 @@ impl ::protobuf::Message for PickRogueAvatarScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(2, &self.base_avatar_id_list)?;
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        if let Some(v) = self.NPFDICBMFFC.as_ref() {
+        os.write_repeated_packed_uint32(10, &self.base_avatar_id_list)?;
+        if let Some(v) = self.GIDAAIGDPLA.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for PickRogueAvatarScRsp {
 
     fn clear(&mut self) {
         self.base_avatar_id_list.clear();
+        self.GIDAAIGDPLA.clear();
         self.retcode = 0;
-        self.NPFDICBMFFC.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PickRogueAvatarScRsp {
         static instance: PickRogueAvatarScRsp = PickRogueAvatarScRsp {
             base_avatar_id_list: ::std::vec::Vec::new(),
+            GIDAAIGDPLA: ::protobuf::MessageField::none(),
             retcode: 0,
-            NPFDICBMFFC: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for PickRogueAvatarScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aPickRogueAvatarScRsp.proto\x1a\x11OLAEILDKNKO.proto\"\x8f\x01\n\
-    \x14PickRogueAvatarScRsp\x12-\n\x13base_avatar_id_list\x18\x02\x20\x03(\
-    \rR\x10baseAvatarIdList\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retc\
-    ode\x12.\n\x0bNPFDICBMFFC\x18\x04\x20\x01(\x0b2\x0c.OLAEILDKNKOR\x0bNPFD\
-    ICBMFFCb\x06proto3\
+    \n\x1aPickRogueAvatarScRsp.proto\x1a\x11DFEDBFJIJJE.proto\"\x8f\x01\n\
+    \x14PickRogueAvatarScRsp\x12-\n\x13base_avatar_id_list\x18\n\x20\x03(\rR\
+    \x10baseAvatarIdList\x12.\n\x0bGIDAAIGDPLA\x18\x04\x20\x01(\x0b2\x0c.DFE\
+    DBFJIJJER\x0bGIDAAIGDPLA\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07ret\
+    codeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OLAEILDKNKO::file_descriptor().clone());
+            deps.push(super::DFEDBFJIJJE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PickRogueAvatarScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMissionMessageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMissionMessageScRsp.FBKDMCFLGCM)
-    pub FBKDMCFLGCM: ::std::collections::HashMap<u32, u32>,
     // @@protoc_insertion_point(field:GetMissionMessageScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:GetMissionMessageScRsp.FGIFDHCBNDM)
+    pub FGIFDHCBNDM: ::std::collections::HashMap<u32, u32>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMissionMessageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetMissionMessageScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "FBKDMCFLGCM",
-            |m: &GetMissionMessageScRsp| { &m.FBKDMCFLGCM },
-            |m: &mut GetMissionMessageScRsp| { &mut m.FBKDMCFLGCM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetMissionMessageScRsp| { &m.retcode },
             |m: &mut GetMissionMessageScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "FGIFDHCBNDM",
+            |m: &GetMissionMessageScRsp| { &m.FGIFDHCBNDM },
+            |m: &mut GetMissionMessageScRsp| { &mut m.FGIFDHCBNDM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMissionMessageScRsp>(
             "GetMissionMessageScRsp",
@@ -79,7 +79,10 @@ impl ::protobuf::Message for GetMissionMessageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                72 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                10 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -92,10 +95,7 @@ impl ::protobuf::Message for GetMissionMessageScRsp {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.FBKDMCFLGCM.insert(key, value);
-                },
-                8 => {
-                    self.retcode = is.read_uint32()?;
+                    self.FGIFDHCBNDM.insert(key, value);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -109,33 +109,33 @@ impl ::protobuf::Message for GetMissionMessageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for (k, v) in &self.FBKDMCFLGCM {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        for (k, v) in &self.FGIFDHCBNDM {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for (k, v) in &self.FBKDMCFLGCM {
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
+        }
+        for (k, v) in &self.FGIFDHCBNDM {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             entry_size += ::protobuf::rt::uint32_size(2, *v);
-            os.write_raw_varint32(82)?; // Tag.
+            os.write_raw_varint32(10)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             os.write_uint32(2, *v)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -153,8 +153,8 @@ impl ::protobuf::Message for GetMissionMessageScRsp {
     }
 
     fn clear(&mut self) {
-        self.FBKDMCFLGCM.clear();
         self.retcode = 0;
+        self.FGIFDHCBNDM.clear();
         self.special_fields.clear();
     }
 
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionMessageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGetMissionMessageScRsp.proto\"\xbe\x01\n\x16GetMissionMessageScRsp\
-    \x12J\n\x0bFBKDMCFLGCM\x18\n\x20\x03(\x0b2(.GetMissionMessageScRsp.FBKDM\
-    CFLGCMEntryR\x0bFBKDMCFLGCM\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07\
-    retcode\x1a>\n\x10FBKDMCFLGCMEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
+    \x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12J\n\x0bFGIFDHCBNDM\
+    \x18\x01\x20\x03(\x0b2(.GetMissionMessageScRsp.FGIFDHCBNDMEntryR\x0bFGIF\
+    DHCBNDM\x1a>\n\x10FGIFDHCBNDMEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\
     \x03key\x12\x14\n\x05value\x18\x02\x20\x01(\rR\x05value:\x028\x01b\x06pr\
     oto3\
 ";

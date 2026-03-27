@@ -30,10 +30,10 @@ pub struct EnterSummonActivityStageScRsp {
     // message fields
     // @@protoc_insertion_point(field:EnterSummonActivityStageScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:EnterSummonActivityStageScRsp.AKFJLNPHODD)
+    pub AKFJLNPHODD: u32,
     // @@protoc_insertion_point(field:EnterSummonActivityStageScRsp.group_id)
     pub group_id: u32,
-    // @@protoc_insertion_point(field:EnterSummonActivityStageScRsp.OHAHIIFJJMI)
-    pub OHAHIIFJJMI: u32,
     // @@protoc_insertion_point(field:EnterSummonActivityStageScRsp.battle_info)
     pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // special fields
@@ -61,14 +61,14 @@ impl EnterSummonActivityStageScRsp {
             |m: &mut EnterSummonActivityStageScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AKFJLNPHODD",
+            |m: &EnterSummonActivityStageScRsp| { &m.AKFJLNPHODD },
+            |m: &mut EnterSummonActivityStageScRsp| { &mut m.AKFJLNPHODD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
             |m: &EnterSummonActivityStageScRsp| { &m.group_id },
             |m: &mut EnterSummonActivityStageScRsp| { &mut m.group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OHAHIIFJJMI",
-            |m: &EnterSummonActivityStageScRsp| { &m.OHAHIIFJJMI },
-            |m: &mut EnterSummonActivityStageScRsp| { &mut m.OHAHIIFJJMI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
             "battle_info",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for EnterSummonActivityStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
+                8 => {
+                    self.AKFJLNPHODD = is.read_uint32()?;
+                },
+                64 => {
                     self.group_id = is.read_uint32()?;
                 },
-                56 => {
-                    self.OHAHIIFJJMI = is.read_uint32()?;
-                },
-                122 => {
+                114 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
                 tag => {
@@ -118,13 +118,13 @@ impl ::protobuf::Message for EnterSummonActivityStageScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        if self.AKFJLNPHODD != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.AKFJLNPHODD);
         }
         if self.group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.group_id);
-        }
-        if self.OHAHIIFJJMI != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.OHAHIIFJJMI);
+            my_size += ::protobuf::rt::uint32_size(8, self.group_id);
         }
         if let Some(v) = self.battle_info.as_ref() {
             let len = v.compute_size();
@@ -137,16 +137,16 @@ impl ::protobuf::Message for EnterSummonActivityStageScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
+        }
+        if self.AKFJLNPHODD != 0 {
+            os.write_uint32(1, self.AKFJLNPHODD)?;
         }
         if self.group_id != 0 {
-            os.write_uint32(5, self.group_id)?;
-        }
-        if self.OHAHIIFJJMI != 0 {
-            os.write_uint32(7, self.OHAHIIFJJMI)?;
+            os.write_uint32(8, self.group_id)?;
         }
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::Message for EnterSummonActivityStageScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
+        self.AKFJLNPHODD = 0;
         self.group_id = 0;
-        self.OHAHIIFJJMI = 0;
         self.battle_info.clear();
         self.special_fields.clear();
     }
@@ -175,8 +175,8 @@ impl ::protobuf::Message for EnterSummonActivityStageScRsp {
     fn default_instance() -> &'static EnterSummonActivityStageScRsp {
         static instance: EnterSummonActivityStageScRsp = EnterSummonActivityStageScRsp {
             retcode: 0,
+            AKFJLNPHODD: 0,
             group_id: 0,
-            OHAHIIFJJMI: 0,
             battle_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for EnterSummonActivityStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#EnterSummonActivityStageScRsp.proto\x1a\x15SceneBattleInfo.proto\"\
-    \xa9\x01\n\x1dEnterSummonActivityStageScRsp\x12\x18\n\x07retcode\x18\x0b\
-    \x20\x01(\rR\x07retcode\x12\x19\n\x08group_id\x18\x05\x20\x01(\rR\x07gro\
-    upId\x12\x20\n\x0bOHAHIIFJJMI\x18\x07\x20\x01(\rR\x0bOHAHIIFJJMI\x121\n\
-    \x0bbattle_info\x18\x0f\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfob\
+    \xa9\x01\n\x1dEnterSummonActivityStageScRsp\x12\x18\n\x07retcode\x18\x0c\
+    \x20\x01(\rR\x07retcode\x12\x20\n\x0bAKFJLNPHODD\x18\x01\x20\x01(\rR\x0b\
+    AKFJLNPHODD\x12\x19\n\x08group_id\x18\x08\x20\x01(\rR\x07groupId\x121\n\
+    \x0bbattle_info\x18\x0e\x20\x01(\x0b2\x10.SceneBattleInfoR\nbattleInfob\
     \x06proto3\
 ";
 

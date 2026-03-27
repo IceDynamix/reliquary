@@ -28,10 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SceneEntityTeleportCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SceneEntityTeleportCsReq.entry_id)
-    pub entry_id: u32,
     // @@protoc_insertion_point(field:SceneEntityTeleportCsReq.entity_motion)
     pub entity_motion: ::protobuf::MessageField<super::EntityMotion::EntityMotion>,
+    // @@protoc_insertion_point(field:SceneEntityTeleportCsReq.interact_id)
+    pub interact_id: u64,
+    // @@protoc_insertion_point(field:SceneEntityTeleportCsReq.entry_id)
+    pub entry_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SceneEntityTeleportCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,17 +51,22 @@ impl SceneEntityTeleportCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(2);
+        let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entry_id",
-            |m: &SceneEntityTeleportCsReq| { &m.entry_id },
-            |m: &mut SceneEntityTeleportCsReq| { &mut m.entry_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EntityMotion::EntityMotion>(
             "entity_motion",
             |m: &SceneEntityTeleportCsReq| { &m.entity_motion },
             |m: &mut SceneEntityTeleportCsReq| { &mut m.entity_motion },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "interact_id",
+            |m: &SceneEntityTeleportCsReq| { &m.interact_id },
+            |m: &mut SceneEntityTeleportCsReq| { &mut m.interact_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entry_id",
+            |m: &SceneEntityTeleportCsReq| { &m.entry_id },
+            |m: &mut SceneEntityTeleportCsReq| { &mut m.entry_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SceneEntityTeleportCsReq>(
             "SceneEntityTeleportCsReq",
@@ -79,11 +86,14 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.entity_motion)?;
+                },
+                96 => {
+                    self.interact_id = is.read_uint64()?;
+                },
                 32 => {
                     self.entry_id = is.read_uint32()?;
-                },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.entity_motion)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +107,15 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.entry_id);
-        }
         if let Some(v) = self.entity_motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.interact_id != 0 {
+            my_size += ::protobuf::rt::uint64_size(12, self.interact_id);
+        }
+        if self.entry_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.entry_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +123,14 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.entity_motion.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if self.interact_id != 0 {
+            os.write_uint64(12, self.interact_id)?;
+        }
         if self.entry_id != 0 {
             os.write_uint32(4, self.entry_id)?;
-        }
-        if let Some(v) = self.entity_motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +149,17 @@ impl ::protobuf::Message for SceneEntityTeleportCsReq {
     }
 
     fn clear(&mut self) {
-        self.entry_id = 0;
         self.entity_motion.clear();
+        self.interact_id = 0;
+        self.entry_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SceneEntityTeleportCsReq {
         static instance: SceneEntityTeleportCsReq = SceneEntityTeleportCsReq {
-            entry_id: 0,
             entity_motion: ::protobuf::MessageField::none(),
+            interact_id: 0,
+            entry_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for SceneEntityTeleportCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eSceneEntityTeleportCsReq.proto\x1a\x12EntityMotion.proto\"i\n\x18S\
-    ceneEntityTeleportCsReq\x12\x19\n\x08entry_id\x18\x04\x20\x01(\rR\x07ent\
-    ryId\x122\n\rentity_motion\x18\x05\x20\x01(\x0b2\r.EntityMotionR\x0centi\
-    tyMotionb\x06proto3\
+    \n\x1eSceneEntityTeleportCsReq.proto\x1a\x12EntityMotion.proto\"\x8a\x01\
+    \n\x18SceneEntityTeleportCsReq\x122\n\rentity_motion\x18\r\x20\x01(\x0b2\
+    \r.EntityMotionR\x0centityMotion\x12\x1f\n\x0binteract_id\x18\x0c\x20\
+    \x01(\x04R\ninteractId\x12\x19\n\x08entry_id\x18\x04\x20\x01(\rR\x07entr\
+    yIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

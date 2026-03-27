@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournDoorInfo {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournDoorInfo.KGENNOGJNEA)
-    pub KGENNOGJNEA: u32,
-    // @@protoc_insertion_point(field:RogueTournDoorInfo.EJDDPKFBPGJ)
-    pub EJDDPKFBPGJ: bool,
-    // @@protoc_insertion_point(field:RogueTournDoorInfo.GNJPOLCEGNL)
-    pub GNJPOLCEGNL: u32,
+    // @@protoc_insertion_point(field:RogueTournDoorInfo.AAGGCEOMNLF)
+    pub AAGGCEOMNLF: u32,
+    // @@protoc_insertion_point(field:RogueTournDoorInfo.NKFNONAFCIC)
+    pub NKFNONAFCIC: u32,
+    // @@protoc_insertion_point(field:RogueTournDoorInfo.CLPKKBADIAI)
+    pub CLPKKBADIAI: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournDoorInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl RogueTournDoorInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KGENNOGJNEA",
-            |m: &RogueTournDoorInfo| { &m.KGENNOGJNEA },
-            |m: &mut RogueTournDoorInfo| { &mut m.KGENNOGJNEA },
+            "AAGGCEOMNLF",
+            |m: &RogueTournDoorInfo| { &m.AAGGCEOMNLF },
+            |m: &mut RogueTournDoorInfo| { &mut m.AAGGCEOMNLF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EJDDPKFBPGJ",
-            |m: &RogueTournDoorInfo| { &m.EJDDPKFBPGJ },
-            |m: &mut RogueTournDoorInfo| { &mut m.EJDDPKFBPGJ },
+            "NKFNONAFCIC",
+            |m: &RogueTournDoorInfo| { &m.NKFNONAFCIC },
+            |m: &mut RogueTournDoorInfo| { &mut m.NKFNONAFCIC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNJPOLCEGNL",
-            |m: &RogueTournDoorInfo| { &m.GNJPOLCEGNL },
-            |m: &mut RogueTournDoorInfo| { &mut m.GNJPOLCEGNL },
+            "CLPKKBADIAI",
+            |m: &RogueTournDoorInfo| { &m.CLPKKBADIAI },
+            |m: &mut RogueTournDoorInfo| { &mut m.CLPKKBADIAI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournDoorInfo>(
             "RogueTournDoorInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueTournDoorInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.KGENNOGJNEA = is.read_uint32()?;
+                72 => {
+                    self.AAGGCEOMNLF = is.read_uint32()?;
+                },
+                64 => {
+                    self.NKFNONAFCIC = is.read_uint32()?;
                 },
                 96 => {
-                    self.EJDDPKFBPGJ = is.read_bool()?;
-                },
-                88 => {
-                    self.GNJPOLCEGNL = is.read_uint32()?;
+                    self.CLPKKBADIAI = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for RogueTournDoorInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KGENNOGJNEA != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.KGENNOGJNEA);
+        if self.AAGGCEOMNLF != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.AAGGCEOMNLF);
         }
-        if self.EJDDPKFBPGJ != false {
+        if self.NKFNONAFCIC != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.NKFNONAFCIC);
+        }
+        if self.CLPKKBADIAI != false {
             my_size += 1 + 1;
-        }
-        if self.GNJPOLCEGNL != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GNJPOLCEGNL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for RogueTournDoorInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KGENNOGJNEA != 0 {
-            os.write_uint32(7, self.KGENNOGJNEA)?;
+        if self.AAGGCEOMNLF != 0 {
+            os.write_uint32(9, self.AAGGCEOMNLF)?;
         }
-        if self.EJDDPKFBPGJ != false {
-            os.write_bool(12, self.EJDDPKFBPGJ)?;
+        if self.NKFNONAFCIC != 0 {
+            os.write_uint32(8, self.NKFNONAFCIC)?;
         }
-        if self.GNJPOLCEGNL != 0 {
-            os.write_uint32(11, self.GNJPOLCEGNL)?;
+        if self.CLPKKBADIAI != false {
+            os.write_bool(12, self.CLPKKBADIAI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for RogueTournDoorInfo {
     }
 
     fn clear(&mut self) {
-        self.KGENNOGJNEA = 0;
-        self.EJDDPKFBPGJ = false;
-        self.GNJPOLCEGNL = 0;
+        self.AAGGCEOMNLF = 0;
+        self.NKFNONAFCIC = 0;
+        self.CLPKKBADIAI = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournDoorInfo {
         static instance: RogueTournDoorInfo = RogueTournDoorInfo {
-            KGENNOGJNEA: 0,
-            EJDDPKFBPGJ: false,
-            GNJPOLCEGNL: 0,
+            AAGGCEOMNLF: 0,
+            NKFNONAFCIC: 0,
+            CLPKKBADIAI: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournDoorInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18RogueTournDoorInfo.proto\"z\n\x12RogueTournDoorInfo\x12\x20\n\x0bK\
-    GENNOGJNEA\x18\x07\x20\x01(\rR\x0bKGENNOGJNEA\x12\x20\n\x0bEJDDPKFBPGJ\
-    \x18\x0c\x20\x01(\x08R\x0bEJDDPKFBPGJ\x12\x20\n\x0bGNJPOLCEGNL\x18\x0b\
-    \x20\x01(\rR\x0bGNJPOLCEGNLb\x06proto3\
+    \n\x18RogueTournDoorInfo.proto\"z\n\x12RogueTournDoorInfo\x12\x20\n\x0bA\
+    AGGCEOMNLF\x18\t\x20\x01(\rR\x0bAAGGCEOMNLF\x12\x20\n\x0bNKFNONAFCIC\x18\
+    \x08\x20\x01(\rR\x0bNKFNONAFCIC\x12\x20\n\x0bCLPKKBADIAI\x18\x0c\x20\x01\
+    (\x08R\x0bCLPKKBADIAIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

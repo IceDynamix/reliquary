@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:TutorialFinishType)
 pub enum TutorialFinishType {
-    // @@protoc_insertion_point(enum_value:TutorialFinishType.PDHCNFBOFFM_GKJBAODJMJG)
-    PDHCNFBOFFM_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:TutorialFinishType.PDHCNFBOFFM_ICNPELEAELD)
-    PDHCNFBOFFM_ICNPELEAELD = 1,
-    // @@protoc_insertion_point(enum_value:TutorialFinishType.PDHCNFBOFFM_OHDCJKADLCB)
-    PDHCNFBOFFM_OHDCJKADLCB = 2,
+    // @@protoc_insertion_point(enum_value:TutorialFinishType.TutorialFinishType_MNFEPONEDDJ)
+    TutorialFinishType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:TutorialFinishType.TutorialFinishType_CIAJEMEOBIN)
+    TutorialFinishType_CIAJEMEOBIN = 1,
+    // @@protoc_insertion_point(enum_value:TutorialFinishType.TutorialFinishType_BBGOLBGAADG)
+    TutorialFinishType_BBGOLBGAADG = 2,
 }
 
 impl ::protobuf::Enum for TutorialFinishType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for TutorialFinishType {
 
     fn from_i32(value: i32) -> ::std::option::Option<TutorialFinishType> {
         match value {
-            0 => ::std::option::Option::Some(TutorialFinishType::PDHCNFBOFFM_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(TutorialFinishType::PDHCNFBOFFM_ICNPELEAELD),
-            2 => ::std::option::Option::Some(TutorialFinishType::PDHCNFBOFFM_OHDCJKADLCB),
+            0 => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_CIAJEMEOBIN),
+            2 => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_BBGOLBGAADG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<TutorialFinishType> {
         match str {
-            "PDHCNFBOFFM_GKJBAODJMJG" => ::std::option::Option::Some(TutorialFinishType::PDHCNFBOFFM_GKJBAODJMJG),
-            "PDHCNFBOFFM_ICNPELEAELD" => ::std::option::Option::Some(TutorialFinishType::PDHCNFBOFFM_ICNPELEAELD),
-            "PDHCNFBOFFM_OHDCJKADLCB" => ::std::option::Option::Some(TutorialFinishType::PDHCNFBOFFM_OHDCJKADLCB),
+            "TutorialFinishType_MNFEPONEDDJ" => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_MNFEPONEDDJ),
+            "TutorialFinishType_CIAJEMEOBIN" => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_CIAJEMEOBIN),
+            "TutorialFinishType_BBGOLBGAADG" => ::std::option::Option::Some(TutorialFinishType::TutorialFinishType_BBGOLBGAADG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [TutorialFinishType] = &[
-        TutorialFinishType::PDHCNFBOFFM_GKJBAODJMJG,
-        TutorialFinishType::PDHCNFBOFFM_ICNPELEAELD,
-        TutorialFinishType::PDHCNFBOFFM_OHDCJKADLCB,
+        TutorialFinishType::TutorialFinishType_MNFEPONEDDJ,
+        TutorialFinishType::TutorialFinishType_CIAJEMEOBIN,
+        TutorialFinishType::TutorialFinishType_BBGOLBGAADG,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for TutorialFinishType {
 
 impl ::std::default::Default for TutorialFinishType {
     fn default() -> Self {
-        TutorialFinishType::PDHCNFBOFFM_GKJBAODJMJG
+        TutorialFinishType::TutorialFinishType_MNFEPONEDDJ
     }
 }
 
@@ -92,9 +92,10 @@ impl TutorialFinishType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18TutorialFinishType.proto*k\n\x12TutorialFinishType\x12\x1b\n\x17PD\
-    HCNFBOFFM_GKJBAODJMJG\x10\0\x12\x1b\n\x17PDHCNFBOFFM_ICNPELEAELD\x10\x01\
-    \x12\x1b\n\x17PDHCNFBOFFM_OHDCJKADLCB\x10\x02b\x06proto3\
+    \n\x18TutorialFinishType.proto*\x80\x01\n\x12TutorialFinishType\x12\"\n\
+    \x1eTutorialFinishType_MNFEPONEDDJ\x10\0\x12\"\n\x1eTutorialFinishType_C\
+    IAJEMEOBIN\x10\x01\x12\"\n\x1eTutorialFinishType_BBGOLBGAADG\x10\x02b\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

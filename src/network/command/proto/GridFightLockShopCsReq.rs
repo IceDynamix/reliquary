@@ -72,7 +72,7 @@ impl ::protobuf::Message for GridFightLockShopCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                48 => {
                     self.is_locked = is.read_bool()?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GridFightLockShopCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.is_locked != false {
-            os.write_bool(14, self.is_locked)?;
+            os.write_bool(6, self.is_locked)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GridFightLockShopCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cGridFightLockShopCsReq.proto\"5\n\x16GridFightLockShopCsReq\x12\
-    \x1b\n\tis_locked\x18\x0e\x20\x01(\x08R\x08isLockedb\x06proto3\
+    \x1b\n\tis_locked\x18\x06\x20\x01(\x08R\x08isLockedb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdArchiveType)
 pub enum CmdArchiveType {
-    // @@protoc_insertion_point(enum_value:CmdArchiveType.IIJPJHKMHEF_GKJBAODJMJG)
-    IIJPJHKMHEF_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:CmdArchiveType.IIJPJHKMHEF_LIDMKKAPCPF)
-    IIJPJHKMHEF_LIDMKKAPCPF = 2357,
-    // @@protoc_insertion_point(enum_value:CmdArchiveType.IIJPJHKMHEF_HOKLGCBPADA)
-    IIJPJHKMHEF_HOKLGCBPADA = 2328,
-    // @@protoc_insertion_point(enum_value:CmdArchiveType.IIJPJHKMHEF_NNHIMNBDFIJ)
-    IIJPJHKMHEF_NNHIMNBDFIJ = 2375,
-    // @@protoc_insertion_point(enum_value:CmdArchiveType.IIJPJHKMHEF_MDOMFECCAEH)
-    IIJPJHKMHEF_MDOMFECCAEH = 2355,
+    // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdArchiveType_MNFEPONEDDJ)
+    CmdArchiveType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdArchiveType_FGABDLHOEAI)
+    CmdArchiveType_FGABDLHOEAI = 2304,
+    // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdArchiveType_KCFFKOGPEGA)
+    CmdArchiveType_KCFFKOGPEGA = 2324,
+    // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdArchiveType_BEKNMNLCHHB)
+    CmdArchiveType_BEKNMNLCHHB = 2383,
+    // @@protoc_insertion_point(enum_value:CmdArchiveType.CmdArchiveType_KAPCLNNNGHN)
+    CmdArchiveType_KAPCLNNNGHN = 2381,
 }
 
 impl ::protobuf::Enum for CmdArchiveType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for CmdArchiveType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdArchiveType> {
         match value {
-            0 => ::std::option::Option::Some(CmdArchiveType::IIJPJHKMHEF_GKJBAODJMJG),
-            2357 => ::std::option::Option::Some(CmdArchiveType::IIJPJHKMHEF_LIDMKKAPCPF),
-            2328 => ::std::option::Option::Some(CmdArchiveType::IIJPJHKMHEF_HOKLGCBPADA),
-            2375 => ::std::option::Option::Some(CmdArchiveType::IIJPJHKMHEF_NNHIMNBDFIJ),
-            2355 => ::std::option::Option::Some(CmdArchiveType::IIJPJHKMHEF_MDOMFECCAEH),
+            0 => ::std::option::Option::Some(CmdArchiveType::CmdArchiveType_MNFEPONEDDJ),
+            2304 => ::std::option::Option::Some(CmdArchiveType::CmdArchiveType_FGABDLHOEAI),
+            2324 => ::std::option::Option::Some(CmdArchiveType::CmdArchiveType_KCFFKOGPEGA),
+            2383 => ::std::option::Option::Some(CmdArchiveType::CmdArchiveType_BEKNMNLCHHB),
+            2381 => ::std::option::Option::Some(CmdArchiveType::CmdArchiveType_KAPCLNNNGHN),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdArchiveType> {
         match str {
-            "IIJPJHKMHEF_GKJBAODJMJG" => ::std::option::Option::Some(CmdArchiveType::IIJPJHKMHEF_GKJBAODJMJG),
-            "IIJPJHKMHEF_LIDMKKAPCPF" => ::std::option::Option::Some(CmdArchiveType::IIJPJHKMHEF_LIDMKKAPCPF),
-            "IIJPJHKMHEF_HOKLGCBPADA" => ::std::option::Option::Some(CmdArchiveType::IIJPJHKMHEF_HOKLGCBPADA),
-            "IIJPJHKMHEF_NNHIMNBDFIJ" => ::std::option::Option::Some(CmdArchiveType::IIJPJHKMHEF_NNHIMNBDFIJ),
-            "IIJPJHKMHEF_MDOMFECCAEH" => ::std::option::Option::Some(CmdArchiveType::IIJPJHKMHEF_MDOMFECCAEH),
+            "CmdArchiveType_MNFEPONEDDJ" => ::std::option::Option::Some(CmdArchiveType::CmdArchiveType_MNFEPONEDDJ),
+            "CmdArchiveType_FGABDLHOEAI" => ::std::option::Option::Some(CmdArchiveType::CmdArchiveType_FGABDLHOEAI),
+            "CmdArchiveType_KCFFKOGPEGA" => ::std::option::Option::Some(CmdArchiveType::CmdArchiveType_KCFFKOGPEGA),
+            "CmdArchiveType_BEKNMNLCHHB" => ::std::option::Option::Some(CmdArchiveType::CmdArchiveType_BEKNMNLCHHB),
+            "CmdArchiveType_KAPCLNNNGHN" => ::std::option::Option::Some(CmdArchiveType::CmdArchiveType_KAPCLNNNGHN),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdArchiveType] = &[
-        CmdArchiveType::IIJPJHKMHEF_GKJBAODJMJG,
-        CmdArchiveType::IIJPJHKMHEF_LIDMKKAPCPF,
-        CmdArchiveType::IIJPJHKMHEF_HOKLGCBPADA,
-        CmdArchiveType::IIJPJHKMHEF_NNHIMNBDFIJ,
-        CmdArchiveType::IIJPJHKMHEF_MDOMFECCAEH,
+        CmdArchiveType::CmdArchiveType_MNFEPONEDDJ,
+        CmdArchiveType::CmdArchiveType_FGABDLHOEAI,
+        CmdArchiveType::CmdArchiveType_KCFFKOGPEGA,
+        CmdArchiveType::CmdArchiveType_BEKNMNLCHHB,
+        CmdArchiveType::CmdArchiveType_KAPCLNNNGHN,
     ];
 }
 
@@ -85,11 +85,11 @@ impl ::protobuf::EnumFull for CmdArchiveType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdArchiveType::IIJPJHKMHEF_GKJBAODJMJG => 0,
-            CmdArchiveType::IIJPJHKMHEF_LIDMKKAPCPF => 1,
-            CmdArchiveType::IIJPJHKMHEF_HOKLGCBPADA => 2,
-            CmdArchiveType::IIJPJHKMHEF_NNHIMNBDFIJ => 3,
-            CmdArchiveType::IIJPJHKMHEF_MDOMFECCAEH => 4,
+            CmdArchiveType::CmdArchiveType_MNFEPONEDDJ => 0,
+            CmdArchiveType::CmdArchiveType_FGABDLHOEAI => 1,
+            CmdArchiveType::CmdArchiveType_KCFFKOGPEGA => 2,
+            CmdArchiveType::CmdArchiveType_BEKNMNLCHHB => 3,
+            CmdArchiveType::CmdArchiveType_KAPCLNNNGHN => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,7 +97,7 @@ impl ::protobuf::EnumFull for CmdArchiveType {
 
 impl ::std::default::Default for CmdArchiveType {
     fn default() -> Self {
-        CmdArchiveType::IIJPJHKMHEF_GKJBAODJMJG
+        CmdArchiveType::CmdArchiveType_MNFEPONEDDJ
     }
 }
 
@@ -108,11 +108,11 @@ impl CmdArchiveType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14CmdArchiveType.proto*\xa5\x01\n\x0eCmdArchiveType\x12\x1b\n\x17IIJ\
-    PJHKMHEF_GKJBAODJMJG\x10\0\x12\x1c\n\x17IIJPJHKMHEF_LIDMKKAPCPF\x10\xb5\
-    \x12\x12\x1c\n\x17IIJPJHKMHEF_HOKLGCBPADA\x10\x98\x12\x12\x1c\n\x17IIJPJ\
-    HKMHEF_NNHIMNBDFIJ\x10\xc7\x12\x12\x1c\n\x17IIJPJHKMHEF_MDOMFECCAEH\x10\
-    \xb3\x12b\x06proto3\
+    \n\x14CmdArchiveType.proto*\xb4\x01\n\x0eCmdArchiveType\x12\x1e\n\x1aCmd\
+    ArchiveType_MNFEPONEDDJ\x10\0\x12\x1f\n\x1aCmdArchiveType_FGABDLHOEAI\
+    \x10\x80\x12\x12\x1f\n\x1aCmdArchiveType_KCFFKOGPEGA\x10\x94\x12\x12\x1f\
+    \n\x1aCmdArchiveType_BEKNMNLCHHB\x10\xcf\x12\x12\x1f\n\x1aCmdArchiveType\
+    _KAPCLNNNGHN\x10\xcd\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

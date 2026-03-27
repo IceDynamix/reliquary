@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueRoomStatus)
 pub enum RogueRoomStatus {
-    // @@protoc_insertion_point(enum_value:RogueRoomStatus.FIPCDOHGOBG_GKJBAODJMJG)
-    FIPCDOHGOBG_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:RogueRoomStatus.FIPCDOHGOBG_IPDFMNINJHN)
-    FIPCDOHGOBG_IPDFMNINJHN = 1,
-    // @@protoc_insertion_point(enum_value:RogueRoomStatus.FIPCDOHGOBG_OEIGCGBJEOL)
-    FIPCDOHGOBG_OEIGCGBJEOL = 2,
-    // @@protoc_insertion_point(enum_value:RogueRoomStatus.FIPCDOHGOBG_MLOANNGKFIG)
-    FIPCDOHGOBG_MLOANNGKFIG = 3,
-    // @@protoc_insertion_point(enum_value:RogueRoomStatus.FIPCDOHGOBG_JOJFJHDLLEH)
-    FIPCDOHGOBG_JOJFJHDLLEH = 4,
+    // @@protoc_insertion_point(enum_value:RogueRoomStatus.RogueRoomStatus_MNFEPONEDDJ)
+    RogueRoomStatus_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:RogueRoomStatus.RogueRoomStatus_game_lock_info)
+    RogueRoomStatus_game_lock_info = 1,
+    // @@protoc_insertion_point(enum_value:RogueRoomStatus.RogueRoomStatus_CCJMKNNHKKE)
+    RogueRoomStatus_CCJMKNNHKKE = 2,
+    // @@protoc_insertion_point(enum_value:RogueRoomStatus.RogueRoomStatus_EOEFFICLKPN)
+    RogueRoomStatus_EOEFFICLKPN = 3,
+    // @@protoc_insertion_point(enum_value:RogueRoomStatus.RogueRoomStatus_NGPFHCFEHPK)
+    RogueRoomStatus_NGPFHCFEHPK = 4,
 }
 
 impl ::protobuf::Enum for RogueRoomStatus {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for RogueRoomStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueRoomStatus> {
         match value {
-            0 => ::std::option::Option::Some(RogueRoomStatus::FIPCDOHGOBG_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(RogueRoomStatus::FIPCDOHGOBG_IPDFMNINJHN),
-            2 => ::std::option::Option::Some(RogueRoomStatus::FIPCDOHGOBG_OEIGCGBJEOL),
-            3 => ::std::option::Option::Some(RogueRoomStatus::FIPCDOHGOBG_MLOANNGKFIG),
-            4 => ::std::option::Option::Some(RogueRoomStatus::FIPCDOHGOBG_JOJFJHDLLEH),
+            0 => ::std::option::Option::Some(RogueRoomStatus::RogueRoomStatus_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(RogueRoomStatus::RogueRoomStatus_game_lock_info),
+            2 => ::std::option::Option::Some(RogueRoomStatus::RogueRoomStatus_CCJMKNNHKKE),
+            3 => ::std::option::Option::Some(RogueRoomStatus::RogueRoomStatus_EOEFFICLKPN),
+            4 => ::std::option::Option::Some(RogueRoomStatus::RogueRoomStatus_NGPFHCFEHPK),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueRoomStatus> {
         match str {
-            "FIPCDOHGOBG_GKJBAODJMJG" => ::std::option::Option::Some(RogueRoomStatus::FIPCDOHGOBG_GKJBAODJMJG),
-            "FIPCDOHGOBG_IPDFMNINJHN" => ::std::option::Option::Some(RogueRoomStatus::FIPCDOHGOBG_IPDFMNINJHN),
-            "FIPCDOHGOBG_OEIGCGBJEOL" => ::std::option::Option::Some(RogueRoomStatus::FIPCDOHGOBG_OEIGCGBJEOL),
-            "FIPCDOHGOBG_MLOANNGKFIG" => ::std::option::Option::Some(RogueRoomStatus::FIPCDOHGOBG_MLOANNGKFIG),
-            "FIPCDOHGOBG_JOJFJHDLLEH" => ::std::option::Option::Some(RogueRoomStatus::FIPCDOHGOBG_JOJFJHDLLEH),
+            "RogueRoomStatus_MNFEPONEDDJ" => ::std::option::Option::Some(RogueRoomStatus::RogueRoomStatus_MNFEPONEDDJ),
+            "RogueRoomStatus_game_lock_info" => ::std::option::Option::Some(RogueRoomStatus::RogueRoomStatus_game_lock_info),
+            "RogueRoomStatus_CCJMKNNHKKE" => ::std::option::Option::Some(RogueRoomStatus::RogueRoomStatus_CCJMKNNHKKE),
+            "RogueRoomStatus_EOEFFICLKPN" => ::std::option::Option::Some(RogueRoomStatus::RogueRoomStatus_EOEFFICLKPN),
+            "RogueRoomStatus_NGPFHCFEHPK" => ::std::option::Option::Some(RogueRoomStatus::RogueRoomStatus_NGPFHCFEHPK),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueRoomStatus] = &[
-        RogueRoomStatus::FIPCDOHGOBG_GKJBAODJMJG,
-        RogueRoomStatus::FIPCDOHGOBG_IPDFMNINJHN,
-        RogueRoomStatus::FIPCDOHGOBG_OEIGCGBJEOL,
-        RogueRoomStatus::FIPCDOHGOBG_MLOANNGKFIG,
-        RogueRoomStatus::FIPCDOHGOBG_JOJFJHDLLEH,
+        RogueRoomStatus::RogueRoomStatus_MNFEPONEDDJ,
+        RogueRoomStatus::RogueRoomStatus_game_lock_info,
+        RogueRoomStatus::RogueRoomStatus_CCJMKNNHKKE,
+        RogueRoomStatus::RogueRoomStatus_EOEFFICLKPN,
+        RogueRoomStatus::RogueRoomStatus_NGPFHCFEHPK,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for RogueRoomStatus {
 
 impl ::std::default::Default for RogueRoomStatus {
     fn default() -> Self {
-        RogueRoomStatus::FIPCDOHGOBG_GKJBAODJMJG
+        RogueRoomStatus::RogueRoomStatus_MNFEPONEDDJ
     }
 }
 
@@ -102,11 +102,11 @@ impl RogueRoomStatus {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15RogueRoomStatus.proto*\xa2\x01\n\x0fRogueRoomStatus\x12\x1b\n\x17F\
-    IPCDOHGOBG_GKJBAODJMJG\x10\0\x12\x1b\n\x17FIPCDOHGOBG_IPDFMNINJHN\x10\
-    \x01\x12\x1b\n\x17FIPCDOHGOBG_OEIGCGBJEOL\x10\x02\x12\x1b\n\x17FIPCDOHGO\
-    BG_MLOANNGKFIG\x10\x03\x12\x1b\n\x17FIPCDOHGOBG_JOJFJHDLLEH\x10\x04b\x06\
-    proto3\
+    \n\x15RogueRoomStatus.proto*\xb9\x01\n\x0fRogueRoomStatus\x12\x1f\n\x1bR\
+    ogueRoomStatus_MNFEPONEDDJ\x10\0\x12\"\n\x1eRogueRoomStatus_game_lock_in\
+    fo\x10\x01\x12\x1f\n\x1bRogueRoomStatus_CCJMKNNHKKE\x10\x02\x12\x1f\n\
+    \x1bRogueRoomStatus_EOEFFICLKPN\x10\x03\x12\x1f\n\x1bRogueRoomStatus_NGP\
+    FHCFEHPK\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

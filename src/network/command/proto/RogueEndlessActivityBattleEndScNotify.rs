@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueEndlessActivityBattleEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueEndlessActivityBattleEndScNotify.MAAHCDCGGJO)
-    pub MAAHCDCGGJO: ::protobuf::MessageField<super::GFOCCAJCNCO::GFOCCAJCNCO>,
+    // @@protoc_insertion_point(field:RogueEndlessActivityBattleEndScNotify.EJCOAHNHEMF)
+    pub EJCOAHNHEMF: ::protobuf::MessageField<super::KAAHIILAONB::KAAHIILAONB>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueEndlessActivityBattleEndScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl RogueEndlessActivityBattleEndScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GFOCCAJCNCO::GFOCCAJCNCO>(
-            "MAAHCDCGGJO",
-            |m: &RogueEndlessActivityBattleEndScNotify| { &m.MAAHCDCGGJO },
-            |m: &mut RogueEndlessActivityBattleEndScNotify| { &mut m.MAAHCDCGGJO },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KAAHIILAONB::KAAHIILAONB>(
+            "EJCOAHNHEMF",
+            |m: &RogueEndlessActivityBattleEndScNotify| { &m.EJCOAHNHEMF },
+            |m: &mut RogueEndlessActivityBattleEndScNotify| { &mut m.EJCOAHNHEMF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueEndlessActivityBattleEndScNotify>(
             "RogueEndlessActivityBattleEndScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueEndlessActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MAAHCDCGGJO)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EJCOAHNHEMF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueEndlessActivityBattleEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MAAHCDCGGJO.as_ref() {
+        if let Some(v) = self.EJCOAHNHEMF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueEndlessActivityBattleEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MAAHCDCGGJO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.EJCOAHNHEMF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueEndlessActivityBattleEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.MAAHCDCGGJO.clear();
+        self.EJCOAHNHEMF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueEndlessActivityBattleEndScNotify {
         static instance: RogueEndlessActivityBattleEndScNotify = RogueEndlessActivityBattleEndScNotify {
-            MAAHCDCGGJO: ::protobuf::MessageField::none(),
+            EJCOAHNHEMF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueEndlessActivityBattleEndScNotif
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n+RogueEndlessActivityBattleEndScNotify.proto\x1a\x11GFOCCAJCNCO.proto\
-    \"W\n%RogueEndlessActivityBattleEndScNotify\x12.\n\x0bMAAHCDCGGJO\x18\
-    \x08\x20\x01(\x0b2\x0c.GFOCCAJCNCOR\x0bMAAHCDCGGJOb\x06proto3\
+    \n+RogueEndlessActivityBattleEndScNotify.proto\x1a\x11KAAHIILAONB.proto\
+    \"W\n%RogueEndlessActivityBattleEndScNotify\x12.\n\x0bEJCOAHNHEMF\x18\
+    \x04\x20\x01(\x0b2\x0c.KAAHIILAONBR\x0bEJCOAHNHEMFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GFOCCAJCNCO::file_descriptor().clone());
+            deps.push(super::KAAHIILAONB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueEndlessActivityBattleEndScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

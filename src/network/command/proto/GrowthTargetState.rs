@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GrowthTargetState)
 pub enum GrowthTargetState {
-    // @@protoc_insertion_point(enum_value:GrowthTargetState.OAHDMJMLLDF_BMAEKADBLDM)
-    OAHDMJMLLDF_BMAEKADBLDM = 0,
-    // @@protoc_insertion_point(enum_value:GrowthTargetState.OAHDMJMLLDF_JFCOBCELMFO)
-    OAHDMJMLLDF_JFCOBCELMFO = 1,
-    // @@protoc_insertion_point(enum_value:GrowthTargetState.OAHDMJMLLDF_GFPADPFGAGD)
-    OAHDMJMLLDF_GFPADPFGAGD = 2,
-    // @@protoc_insertion_point(enum_value:GrowthTargetState.OAHDMJMLLDF_KALOOMLKDND)
-    OAHDMJMLLDF_KALOOMLKDND = 3,
-    // @@protoc_insertion_point(enum_value:GrowthTargetState.OAHDMJMLLDF_DGFJBEHPLPJ)
-    OAHDMJMLLDF_DGFJBEHPLPJ = 4,
-    // @@protoc_insertion_point(enum_value:GrowthTargetState.OAHDMJMLLDF_LBEEJHLNODF)
-    OAHDMJMLLDF_LBEEJHLNODF = 5,
+    // @@protoc_insertion_point(enum_value:GrowthTargetState.GrowthTargetState_FHJGCAHJKPP)
+    GrowthTargetState_FHJGCAHJKPP = 0,
+    // @@protoc_insertion_point(enum_value:GrowthTargetState.GrowthTargetState_PFPOMNPBPLA)
+    GrowthTargetState_PFPOMNPBPLA = 1,
+    // @@protoc_insertion_point(enum_value:GrowthTargetState.GrowthTargetState_BOPLNDGHMFG)
+    GrowthTargetState_BOPLNDGHMFG = 2,
+    // @@protoc_insertion_point(enum_value:GrowthTargetState.GrowthTargetState_AAFCCKKJLMD)
+    GrowthTargetState_AAFCCKKJLMD = 3,
+    // @@protoc_insertion_point(enum_value:GrowthTargetState.GrowthTargetState_ANIPLKPEJEJ)
+    GrowthTargetState_ANIPLKPEJEJ = 4,
+    // @@protoc_insertion_point(enum_value:GrowthTargetState.GrowthTargetState_LFIEKGHBDCI)
+    GrowthTargetState_LFIEKGHBDCI = 5,
 }
 
 impl ::protobuf::Enum for GrowthTargetState {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for GrowthTargetState {
 
     fn from_i32(value: i32) -> ::std::option::Option<GrowthTargetState> {
         match value {
-            0 => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_BMAEKADBLDM),
-            1 => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_JFCOBCELMFO),
-            2 => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_GFPADPFGAGD),
-            3 => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_KALOOMLKDND),
-            4 => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_DGFJBEHPLPJ),
-            5 => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_LBEEJHLNODF),
+            0 => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_FHJGCAHJKPP),
+            1 => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_PFPOMNPBPLA),
+            2 => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_BOPLNDGHMFG),
+            3 => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_AAFCCKKJLMD),
+            4 => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_ANIPLKPEJEJ),
+            5 => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_LFIEKGHBDCI),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GrowthTargetState> {
         match str {
-            "OAHDMJMLLDF_BMAEKADBLDM" => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_BMAEKADBLDM),
-            "OAHDMJMLLDF_JFCOBCELMFO" => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_JFCOBCELMFO),
-            "OAHDMJMLLDF_GFPADPFGAGD" => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_GFPADPFGAGD),
-            "OAHDMJMLLDF_KALOOMLKDND" => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_KALOOMLKDND),
-            "OAHDMJMLLDF_DGFJBEHPLPJ" => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_DGFJBEHPLPJ),
-            "OAHDMJMLLDF_LBEEJHLNODF" => ::std::option::Option::Some(GrowthTargetState::OAHDMJMLLDF_LBEEJHLNODF),
+            "GrowthTargetState_FHJGCAHJKPP" => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_FHJGCAHJKPP),
+            "GrowthTargetState_PFPOMNPBPLA" => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_PFPOMNPBPLA),
+            "GrowthTargetState_BOPLNDGHMFG" => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_BOPLNDGHMFG),
+            "GrowthTargetState_AAFCCKKJLMD" => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_AAFCCKKJLMD),
+            "GrowthTargetState_ANIPLKPEJEJ" => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_ANIPLKPEJEJ),
+            "GrowthTargetState_LFIEKGHBDCI" => ::std::option::Option::Some(GrowthTargetState::GrowthTargetState_LFIEKGHBDCI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GrowthTargetState] = &[
-        GrowthTargetState::OAHDMJMLLDF_BMAEKADBLDM,
-        GrowthTargetState::OAHDMJMLLDF_JFCOBCELMFO,
-        GrowthTargetState::OAHDMJMLLDF_GFPADPFGAGD,
-        GrowthTargetState::OAHDMJMLLDF_KALOOMLKDND,
-        GrowthTargetState::OAHDMJMLLDF_DGFJBEHPLPJ,
-        GrowthTargetState::OAHDMJMLLDF_LBEEJHLNODF,
+        GrowthTargetState::GrowthTargetState_FHJGCAHJKPP,
+        GrowthTargetState::GrowthTargetState_PFPOMNPBPLA,
+        GrowthTargetState::GrowthTargetState_BOPLNDGHMFG,
+        GrowthTargetState::GrowthTargetState_AAFCCKKJLMD,
+        GrowthTargetState::GrowthTargetState_ANIPLKPEJEJ,
+        GrowthTargetState::GrowthTargetState_LFIEKGHBDCI,
     ];
 }
 
@@ -96,7 +96,7 @@ impl ::protobuf::EnumFull for GrowthTargetState {
 
 impl ::std::default::Default for GrowthTargetState {
     fn default() -> Self {
-        GrowthTargetState::OAHDMJMLLDF_BMAEKADBLDM
+        GrowthTargetState::GrowthTargetState_FHJGCAHJKPP
     }
 }
 
@@ -107,11 +107,11 @@ impl GrowthTargetState {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17GrowthTargetState.proto*\xc1\x01\n\x11GrowthTargetState\x12\x1b\n\
-    \x17OAHDMJMLLDF_BMAEKADBLDM\x10\0\x12\x1b\n\x17OAHDMJMLLDF_JFCOBCELMFO\
-    \x10\x01\x12\x1b\n\x17OAHDMJMLLDF_GFPADPFGAGD\x10\x02\x12\x1b\n\x17OAHDM\
-    JMLLDF_KALOOMLKDND\x10\x03\x12\x1b\n\x17OAHDMJMLLDF_DGFJBEHPLPJ\x10\x04\
-    \x12\x1b\n\x17OAHDMJMLLDF_LBEEJHLNODF\x10\x05b\x06proto3\
+    \n\x17GrowthTargetState.proto*\xe5\x01\n\x11GrowthTargetState\x12!\n\x1d\
+    GrowthTargetState_FHJGCAHJKPP\x10\0\x12!\n\x1dGrowthTargetState_PFPOMNPB\
+    PLA\x10\x01\x12!\n\x1dGrowthTargetState_BOPLNDGHMFG\x10\x02\x12!\n\x1dGr\
+    owthTargetState_AAFCCKKJLMD\x10\x03\x12!\n\x1dGrowthTargetState_ANIPLKPE\
+    JEJ\x10\x04\x12!\n\x1dGrowthTargetState_LFIEKGHBDCI\x10\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingSelectEndingCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingSelectEndingCsReq.LJDNEOBIFNK)
-    pub LJDNEOBIFNK: u32,
+    // @@protoc_insertion_point(field:SwordTrainingSelectEndingCsReq.BPECAPAGKGJ)
+    pub BPECAPAGKGJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingSelectEndingCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SwordTrainingSelectEndingCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LJDNEOBIFNK",
-            |m: &SwordTrainingSelectEndingCsReq| { &m.LJDNEOBIFNK },
-            |m: &mut SwordTrainingSelectEndingCsReq| { &mut m.LJDNEOBIFNK },
+            "BPECAPAGKGJ",
+            |m: &SwordTrainingSelectEndingCsReq| { &m.BPECAPAGKGJ },
+            |m: &mut SwordTrainingSelectEndingCsReq| { &mut m.BPECAPAGKGJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingSelectEndingCsReq>(
             "SwordTrainingSelectEndingCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SwordTrainingSelectEndingCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.LJDNEOBIFNK = is.read_uint32()?;
+                88 => {
+                    self.BPECAPAGKGJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SwordTrainingSelectEndingCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LJDNEOBIFNK != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.LJDNEOBIFNK);
+        if self.BPECAPAGKGJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.BPECAPAGKGJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SwordTrainingSelectEndingCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LJDNEOBIFNK != 0 {
-            os.write_uint32(8, self.LJDNEOBIFNK)?;
+        if self.BPECAPAGKGJ != 0 {
+            os.write_uint32(11, self.BPECAPAGKGJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SwordTrainingSelectEndingCsReq {
     }
 
     fn clear(&mut self) {
-        self.LJDNEOBIFNK = 0;
+        self.BPECAPAGKGJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingSelectEndingCsReq {
         static instance: SwordTrainingSelectEndingCsReq = SwordTrainingSelectEndingCsReq {
-            LJDNEOBIFNK: 0,
+            BPECAPAGKGJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingSelectEndingCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$SwordTrainingSelectEndingCsReq.proto\"B\n\x1eSwordTrainingSelectEndin\
-    gCsReq\x12\x20\n\x0bLJDNEOBIFNK\x18\x08\x20\x01(\rR\x0bLJDNEOBIFNKb\x06p\
+    gCsReq\x12\x20\n\x0bBPECAPAGKGJ\x18\x0b\x20\x01(\rR\x0bBPECAPAGKGJb\x06p\
     roto3\
 ";
 

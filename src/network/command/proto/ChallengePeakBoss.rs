@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengePeakBoss {
     // message fields
-    // @@protoc_insertion_point(field:ChallengePeakBoss.finished_target_list)
-    pub finished_target_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChallengePeakBoss.CJCHIAOGLKN)
+    pub CJCHIAOGLKN: u32,
     // @@protoc_insertion_point(field:ChallengePeakBoss.hard_mode_has_passed)
     pub hard_mode_has_passed: bool,
     // @@protoc_insertion_point(field:ChallengePeakBoss.easy_mode)
     pub easy_mode: ::protobuf::MessageField<super::ChallengePeakBossClearance::ChallengePeakBossClearance>,
-    // @@protoc_insertion_point(field:ChallengePeakBoss.NBOGAANHACG)
-    pub NBOGAANHACG: u32,
+    // @@protoc_insertion_point(field:ChallengePeakBoss.finished_target_list)
+    pub finished_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChallengePeakBoss.hard_mode)
     pub hard_mode: ::protobuf::MessageField<super::ChallengePeakBossClearance::ChallengePeakBossClearance>,
     // special fields
@@ -57,10 +57,10 @@ impl ChallengePeakBoss {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "finished_target_list",
-            |m: &ChallengePeakBoss| { &m.finished_target_list },
-            |m: &mut ChallengePeakBoss| { &mut m.finished_target_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJCHIAOGLKN",
+            |m: &ChallengePeakBoss| { &m.CJCHIAOGLKN },
+            |m: &mut ChallengePeakBoss| { &mut m.CJCHIAOGLKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "hard_mode_has_passed",
@@ -72,10 +72,10 @@ impl ChallengePeakBoss {
             |m: &ChallengePeakBoss| { &m.easy_mode },
             |m: &mut ChallengePeakBoss| { &mut m.easy_mode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBOGAANHACG",
-            |m: &ChallengePeakBoss| { &m.NBOGAANHACG },
-            |m: &mut ChallengePeakBoss| { &mut m.NBOGAANHACG },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "finished_target_list",
+            |m: &ChallengePeakBoss| { &m.finished_target_list },
+            |m: &mut ChallengePeakBoss| { &mut m.finished_target_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChallengePeakBossClearance::ChallengePeakBossClearance>(
             "hard_mode",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for ChallengePeakBoss {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
+                80 => {
+                    self.CJCHIAOGLKN = is.read_uint32()?;
                 },
-                96 => {
-                    self.finished_target_list.push(is.read_uint32()?);
-                },
-                32 => {
+                48 => {
                     self.hard_mode_has_passed = is.read_bool()?;
                 },
-                82 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.easy_mode)?;
                 },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
+                },
                 56 => {
-                    self.NBOGAANHACG = is.read_uint32()?;
+                    self.finished_target_list.push(is.read_uint32()?);
                 },
                 106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.hard_mode)?;
@@ -130,7 +130,9 @@ impl ::protobuf::Message for ChallengePeakBoss {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.finished_target_list);
+        if self.CJCHIAOGLKN != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.CJCHIAOGLKN);
+        }
         if self.hard_mode_has_passed != false {
             my_size += 1 + 1;
         }
@@ -138,9 +140,7 @@ impl ::protobuf::Message for ChallengePeakBoss {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NBOGAANHACG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.NBOGAANHACG);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.finished_target_list);
         if let Some(v) = self.hard_mode.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -151,16 +151,16 @@ impl ::protobuf::Message for ChallengePeakBoss {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.finished_target_list)?;
+        if self.CJCHIAOGLKN != 0 {
+            os.write_uint32(10, self.CJCHIAOGLKN)?;
+        }
         if self.hard_mode_has_passed != false {
-            os.write_bool(4, self.hard_mode_has_passed)?;
+            os.write_bool(6, self.hard_mode_has_passed)?;
         }
         if let Some(v) = self.easy_mode.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if self.NBOGAANHACG != 0 {
-            os.write_uint32(7, self.NBOGAANHACG)?;
-        }
+        os.write_repeated_packed_uint32(7, &self.finished_target_list)?;
         if let Some(v) = self.hard_mode.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
@@ -181,20 +181,20 @@ impl ::protobuf::Message for ChallengePeakBoss {
     }
 
     fn clear(&mut self) {
-        self.finished_target_list.clear();
+        self.CJCHIAOGLKN = 0;
         self.hard_mode_has_passed = false;
         self.easy_mode.clear();
-        self.NBOGAANHACG = 0;
+        self.finished_target_list.clear();
         self.hard_mode.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengePeakBoss {
         static instance: ChallengePeakBoss = ChallengePeakBoss {
-            finished_target_list: ::std::vec::Vec::new(),
+            CJCHIAOGLKN: 0,
             hard_mode_has_passed: false,
             easy_mode: ::protobuf::MessageField::none(),
-            NBOGAANHACG: 0,
+            finished_target_list: ::std::vec::Vec::new(),
             hard_mode: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,12 +221,12 @@ impl ::protobuf::reflect::ProtobufValue for ChallengePeakBoss {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17ChallengePeakBoss.proto\x1a\x20ChallengePeakBossClearance.proto\"\
-    \x8c\x02\n\x11ChallengePeakBoss\x120\n\x14finished_target_list\x18\x0c\
-    \x20\x03(\rR\x12finishedTargetList\x12/\n\x14hard_mode_has_passed\x18\
-    \x04\x20\x01(\x08R\x11hardModeHasPassed\x128\n\teasy_mode\x18\n\x20\x01(\
-    \x0b2\x1b.ChallengePeakBossClearanceR\x08easyMode\x12\x20\n\x0bNBOGAANHA\
-    CG\x18\x07\x20\x01(\rR\x0bNBOGAANHACG\x128\n\thard_mode\x18\r\x20\x01(\
-    \x0b2\x1b.ChallengePeakBossClearanceR\x08hardModeb\x06proto3\
+    \x8c\x02\n\x11ChallengePeakBoss\x12\x20\n\x0bCJCHIAOGLKN\x18\n\x20\x01(\
+    \rR\x0bCJCHIAOGLKN\x12/\n\x14hard_mode_has_passed\x18\x06\x20\x01(\x08R\
+    \x11hardModeHasPassed\x128\n\teasy_mode\x18\x04\x20\x01(\x0b2\x1b.Challe\
+    ngePeakBossClearanceR\x08easyMode\x120\n\x14finished_target_list\x18\x07\
+    \x20\x03(\rR\x12finishedTargetList\x128\n\thard_mode\x18\r\x20\x01(\x0b2\
+    \x1b.ChallengePeakBossClearanceR\x08hardModeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

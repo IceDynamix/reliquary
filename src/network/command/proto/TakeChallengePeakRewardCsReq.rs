@@ -86,19 +86,19 @@ impl ::protobuf::Message for TakeChallengePeakRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.normal_reward_id_list)?;
                 },
-                48 => {
+                24 => {
                     self.normal_reward_id_list.push(is.read_uint32()?);
                 },
-                64 => {
+                88 => {
                     self.peak_group_id = is.read_uint32()?;
                 },
-                82 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.reward_id)?;
                 },
-                80 => {
+                72 => {
                     self.reward_id.push(is.read_uint32()?);
                 },
                 tag => {
@@ -113,22 +113,22 @@ impl ::protobuf::Message for TakeChallengePeakRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.normal_reward_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.normal_reward_id_list);
         if self.peak_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.peak_group_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.peak_group_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.reward_id);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.reward_id);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(6, &self.normal_reward_id_list)?;
+        os.write_repeated_packed_uint32(3, &self.normal_reward_id_list)?;
         if self.peak_group_id != 0 {
-            os.write_uint32(8, self.peak_group_id)?;
+            os.write_uint32(11, self.peak_group_id)?;
         }
-        os.write_repeated_packed_uint32(10, &self.reward_id)?;
+        os.write_repeated_packed_uint32(9, &self.reward_id)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeChallengePeakRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeChallengePeakRewardCsReq.proto\"\x92\x01\n\x1cTakeChallengePeakR\
-    ewardCsReq\x121\n\x15normal_reward_id_list\x18\x06\x20\x03(\rR\x12normal\
-    RewardIdList\x12\"\n\rpeak_group_id\x18\x08\x20\x01(\rR\x0bpeakGroupId\
-    \x12\x1b\n\treward_id\x18\n\x20\x03(\rR\x08rewardIdb\x06proto3\
+    ewardCsReq\x121\n\x15normal_reward_id_list\x18\x03\x20\x03(\rR\x12normal\
+    RewardIdList\x12\"\n\rpeak_group_id\x18\x0b\x20\x01(\rR\x0bpeakGroupId\
+    \x12\x1b\n\treward_id\x18\t\x20\x03(\rR\x08rewardIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,36 +27,36 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdTalkEventType)
 pub enum CmdTalkEventType {
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_DAJPNGOGOIG)
-    JHCAKEEGKOJ_DAJPNGOGOIG = 0,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_BDHIIMMAJJN)
-    JHCAKEEGKOJ_BDHIIMMAJJN = 2128,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_ENIOFBGGINN)
-    JHCAKEEGKOJ_ENIOFBGGINN = 2162,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_DFDHJEEGKMN)
-    JHCAKEEGKOJ_DFDHJEEGKMN = 2105,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_FBBAGNNBHDP)
-    JHCAKEEGKOJ_FBBAGNNBHDP = 2138,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_OAIAAKGKNOE)
-    JHCAKEEGKOJ_OAIAAKGKNOE = 2175,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_NLNNACIOGLO)
-    JHCAKEEGKOJ_NLNNACIOGLO = 2126,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_FDBMKAAMLLM)
-    JHCAKEEGKOJ_FDBMKAAMLLM = 2169,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_FNDCFNPAKCD)
-    JHCAKEEGKOJ_FNDCFNPAKCD = 2155,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_JPGKDKLNGJO)
-    JHCAKEEGKOJ_JPGKDKLNGJO = 2137,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_CBDPHDIAFLA)
-    JHCAKEEGKOJ_CBDPHDIAFLA = 2166,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_BBPGFGLFFCF)
-    JHCAKEEGKOJ_BBPGFGLFFCF = 2157,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_MACAJCCMOKN)
-    JHCAKEEGKOJ_MACAJCCMOKN = 2179,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_NFMPKBBHHCH)
-    JHCAKEEGKOJ_NFMPKBBHHCH = 2120,
-    // @@protoc_insertion_point(enum_value:CmdTalkEventType.JHCAKEEGKOJ_NGKIOGBDDJE)
-    JHCAKEEGKOJ_NGKIOGBDDJE = 2147,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_IEPGHAGDNBB)
+    CmdTalkEventType_IEPGHAGDNBB = 0,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_CKMGFMODBGP)
+    CmdTalkEventType_CKMGFMODBGP = 2169,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_MCCNPCJGEIH)
+    CmdTalkEventType_MCCNPCJGEIH = 2119,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_NBPKKAJPOJG)
+    CmdTalkEventType_NBPKKAJPOJG = 2135,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_BHKGHMLBMAG)
+    CmdTalkEventType_BHKGHMLBMAG = 2146,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_ALFHBHLHIKI)
+    CmdTalkEventType_ALFHBHLHIKI = 2162,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_IOHNLLCBCIP)
+    CmdTalkEventType_IOHNLLCBCIP = 2181,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_HHGLNLHGMJG)
+    CmdTalkEventType_HHGLNLHGMJG = 2200,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_BFBKAOKBFDD)
+    CmdTalkEventType_BFBKAOKBFDD = 2183,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_OJLPDPEDKLP)
+    CmdTalkEventType_OJLPDPEDKLP = 2157,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_OJAAHADOGCB)
+    CmdTalkEventType_OJAAHADOGCB = 2140,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_FPMCGOCGCGL)
+    CmdTalkEventType_FPMCGOCGCGL = 2124,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_CJGJOLMKIDD)
+    CmdTalkEventType_CJGJOLMKIDD = 2184,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_KEDOMHCEJGK)
+    CmdTalkEventType_KEDOMHCEJGK = 2113,
+    // @@protoc_insertion_point(enum_value:CmdTalkEventType.CmdTalkEventType_EABBFFHPKJJ)
+    CmdTalkEventType_EABBFFHPKJJ = 2104,
 }
 
 impl ::protobuf::Enum for CmdTalkEventType {
@@ -68,62 +68,62 @@ impl ::protobuf::Enum for CmdTalkEventType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdTalkEventType> {
         match value {
-            0 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_DAJPNGOGOIG),
-            2128 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_BDHIIMMAJJN),
-            2162 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_ENIOFBGGINN),
-            2105 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_DFDHJEEGKMN),
-            2138 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_FBBAGNNBHDP),
-            2175 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_OAIAAKGKNOE),
-            2126 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_NLNNACIOGLO),
-            2169 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_FDBMKAAMLLM),
-            2155 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_FNDCFNPAKCD),
-            2137 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_JPGKDKLNGJO),
-            2166 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_CBDPHDIAFLA),
-            2157 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_BBPGFGLFFCF),
-            2179 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_MACAJCCMOKN),
-            2120 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_NFMPKBBHHCH),
-            2147 => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_NGKIOGBDDJE),
+            0 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_IEPGHAGDNBB),
+            2169 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_CKMGFMODBGP),
+            2119 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_MCCNPCJGEIH),
+            2135 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_NBPKKAJPOJG),
+            2146 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_BHKGHMLBMAG),
+            2162 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_ALFHBHLHIKI),
+            2181 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_IOHNLLCBCIP),
+            2200 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_HHGLNLHGMJG),
+            2183 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_BFBKAOKBFDD),
+            2157 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_OJLPDPEDKLP),
+            2140 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_OJAAHADOGCB),
+            2124 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_FPMCGOCGCGL),
+            2184 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_CJGJOLMKIDD),
+            2113 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_KEDOMHCEJGK),
+            2104 => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_EABBFFHPKJJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdTalkEventType> {
         match str {
-            "JHCAKEEGKOJ_DAJPNGOGOIG" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_DAJPNGOGOIG),
-            "JHCAKEEGKOJ_BDHIIMMAJJN" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_BDHIIMMAJJN),
-            "JHCAKEEGKOJ_ENIOFBGGINN" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_ENIOFBGGINN),
-            "JHCAKEEGKOJ_DFDHJEEGKMN" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_DFDHJEEGKMN),
-            "JHCAKEEGKOJ_FBBAGNNBHDP" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_FBBAGNNBHDP),
-            "JHCAKEEGKOJ_OAIAAKGKNOE" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_OAIAAKGKNOE),
-            "JHCAKEEGKOJ_NLNNACIOGLO" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_NLNNACIOGLO),
-            "JHCAKEEGKOJ_FDBMKAAMLLM" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_FDBMKAAMLLM),
-            "JHCAKEEGKOJ_FNDCFNPAKCD" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_FNDCFNPAKCD),
-            "JHCAKEEGKOJ_JPGKDKLNGJO" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_JPGKDKLNGJO),
-            "JHCAKEEGKOJ_CBDPHDIAFLA" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_CBDPHDIAFLA),
-            "JHCAKEEGKOJ_BBPGFGLFFCF" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_BBPGFGLFFCF),
-            "JHCAKEEGKOJ_MACAJCCMOKN" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_MACAJCCMOKN),
-            "JHCAKEEGKOJ_NFMPKBBHHCH" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_NFMPKBBHHCH),
-            "JHCAKEEGKOJ_NGKIOGBDDJE" => ::std::option::Option::Some(CmdTalkEventType::JHCAKEEGKOJ_NGKIOGBDDJE),
+            "CmdTalkEventType_IEPGHAGDNBB" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_IEPGHAGDNBB),
+            "CmdTalkEventType_CKMGFMODBGP" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_CKMGFMODBGP),
+            "CmdTalkEventType_MCCNPCJGEIH" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_MCCNPCJGEIH),
+            "CmdTalkEventType_NBPKKAJPOJG" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_NBPKKAJPOJG),
+            "CmdTalkEventType_BHKGHMLBMAG" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_BHKGHMLBMAG),
+            "CmdTalkEventType_ALFHBHLHIKI" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_ALFHBHLHIKI),
+            "CmdTalkEventType_IOHNLLCBCIP" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_IOHNLLCBCIP),
+            "CmdTalkEventType_HHGLNLHGMJG" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_HHGLNLHGMJG),
+            "CmdTalkEventType_BFBKAOKBFDD" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_BFBKAOKBFDD),
+            "CmdTalkEventType_OJLPDPEDKLP" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_OJLPDPEDKLP),
+            "CmdTalkEventType_OJAAHADOGCB" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_OJAAHADOGCB),
+            "CmdTalkEventType_FPMCGOCGCGL" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_FPMCGOCGCGL),
+            "CmdTalkEventType_CJGJOLMKIDD" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_CJGJOLMKIDD),
+            "CmdTalkEventType_KEDOMHCEJGK" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_KEDOMHCEJGK),
+            "CmdTalkEventType_EABBFFHPKJJ" => ::std::option::Option::Some(CmdTalkEventType::CmdTalkEventType_EABBFFHPKJJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTalkEventType] = &[
-        CmdTalkEventType::JHCAKEEGKOJ_DAJPNGOGOIG,
-        CmdTalkEventType::JHCAKEEGKOJ_BDHIIMMAJJN,
-        CmdTalkEventType::JHCAKEEGKOJ_ENIOFBGGINN,
-        CmdTalkEventType::JHCAKEEGKOJ_DFDHJEEGKMN,
-        CmdTalkEventType::JHCAKEEGKOJ_FBBAGNNBHDP,
-        CmdTalkEventType::JHCAKEEGKOJ_OAIAAKGKNOE,
-        CmdTalkEventType::JHCAKEEGKOJ_NLNNACIOGLO,
-        CmdTalkEventType::JHCAKEEGKOJ_FDBMKAAMLLM,
-        CmdTalkEventType::JHCAKEEGKOJ_FNDCFNPAKCD,
-        CmdTalkEventType::JHCAKEEGKOJ_JPGKDKLNGJO,
-        CmdTalkEventType::JHCAKEEGKOJ_CBDPHDIAFLA,
-        CmdTalkEventType::JHCAKEEGKOJ_BBPGFGLFFCF,
-        CmdTalkEventType::JHCAKEEGKOJ_MACAJCCMOKN,
-        CmdTalkEventType::JHCAKEEGKOJ_NFMPKBBHHCH,
-        CmdTalkEventType::JHCAKEEGKOJ_NGKIOGBDDJE,
+        CmdTalkEventType::CmdTalkEventType_IEPGHAGDNBB,
+        CmdTalkEventType::CmdTalkEventType_CKMGFMODBGP,
+        CmdTalkEventType::CmdTalkEventType_MCCNPCJGEIH,
+        CmdTalkEventType::CmdTalkEventType_NBPKKAJPOJG,
+        CmdTalkEventType::CmdTalkEventType_BHKGHMLBMAG,
+        CmdTalkEventType::CmdTalkEventType_ALFHBHLHIKI,
+        CmdTalkEventType::CmdTalkEventType_IOHNLLCBCIP,
+        CmdTalkEventType::CmdTalkEventType_HHGLNLHGMJG,
+        CmdTalkEventType::CmdTalkEventType_BFBKAOKBFDD,
+        CmdTalkEventType::CmdTalkEventType_OJLPDPEDKLP,
+        CmdTalkEventType::CmdTalkEventType_OJAAHADOGCB,
+        CmdTalkEventType::CmdTalkEventType_FPMCGOCGCGL,
+        CmdTalkEventType::CmdTalkEventType_CJGJOLMKIDD,
+        CmdTalkEventType::CmdTalkEventType_KEDOMHCEJGK,
+        CmdTalkEventType::CmdTalkEventType_EABBFFHPKJJ,
     ];
 }
 
@@ -135,21 +135,21 @@ impl ::protobuf::EnumFull for CmdTalkEventType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdTalkEventType::JHCAKEEGKOJ_DAJPNGOGOIG => 0,
-            CmdTalkEventType::JHCAKEEGKOJ_BDHIIMMAJJN => 1,
-            CmdTalkEventType::JHCAKEEGKOJ_ENIOFBGGINN => 2,
-            CmdTalkEventType::JHCAKEEGKOJ_DFDHJEEGKMN => 3,
-            CmdTalkEventType::JHCAKEEGKOJ_FBBAGNNBHDP => 4,
-            CmdTalkEventType::JHCAKEEGKOJ_OAIAAKGKNOE => 5,
-            CmdTalkEventType::JHCAKEEGKOJ_NLNNACIOGLO => 6,
-            CmdTalkEventType::JHCAKEEGKOJ_FDBMKAAMLLM => 7,
-            CmdTalkEventType::JHCAKEEGKOJ_FNDCFNPAKCD => 8,
-            CmdTalkEventType::JHCAKEEGKOJ_JPGKDKLNGJO => 9,
-            CmdTalkEventType::JHCAKEEGKOJ_CBDPHDIAFLA => 10,
-            CmdTalkEventType::JHCAKEEGKOJ_BBPGFGLFFCF => 11,
-            CmdTalkEventType::JHCAKEEGKOJ_MACAJCCMOKN => 12,
-            CmdTalkEventType::JHCAKEEGKOJ_NFMPKBBHHCH => 13,
-            CmdTalkEventType::JHCAKEEGKOJ_NGKIOGBDDJE => 14,
+            CmdTalkEventType::CmdTalkEventType_IEPGHAGDNBB => 0,
+            CmdTalkEventType::CmdTalkEventType_CKMGFMODBGP => 1,
+            CmdTalkEventType::CmdTalkEventType_MCCNPCJGEIH => 2,
+            CmdTalkEventType::CmdTalkEventType_NBPKKAJPOJG => 3,
+            CmdTalkEventType::CmdTalkEventType_BHKGHMLBMAG => 4,
+            CmdTalkEventType::CmdTalkEventType_ALFHBHLHIKI => 5,
+            CmdTalkEventType::CmdTalkEventType_IOHNLLCBCIP => 6,
+            CmdTalkEventType::CmdTalkEventType_HHGLNLHGMJG => 7,
+            CmdTalkEventType::CmdTalkEventType_BFBKAOKBFDD => 8,
+            CmdTalkEventType::CmdTalkEventType_OJLPDPEDKLP => 9,
+            CmdTalkEventType::CmdTalkEventType_OJAAHADOGCB => 10,
+            CmdTalkEventType::CmdTalkEventType_FPMCGOCGCGL => 11,
+            CmdTalkEventType::CmdTalkEventType_CJGJOLMKIDD => 12,
+            CmdTalkEventType::CmdTalkEventType_KEDOMHCEJGK => 13,
+            CmdTalkEventType::CmdTalkEventType_EABBFFHPKJJ => 14,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -157,7 +157,7 @@ impl ::protobuf::EnumFull for CmdTalkEventType {
 
 impl ::std::default::Default for CmdTalkEventType {
     fn default() -> Self {
-        CmdTalkEventType::JHCAKEEGKOJ_DAJPNGOGOIG
+        CmdTalkEventType::CmdTalkEventType_IEPGHAGDNBB
     }
 }
 
@@ -168,18 +168,18 @@ impl CmdTalkEventType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdTalkEventType.proto*\xd3\x03\n\x10CmdTalkEventType\x12\x1b\n\
-    \x17JHCAKEEGKOJ_DAJPNGOGOIG\x10\0\x12\x1c\n\x17JHCAKEEGKOJ_BDHIIMMAJJN\
-    \x10\xd0\x10\x12\x1c\n\x17JHCAKEEGKOJ_ENIOFBGGINN\x10\xf2\x10\x12\x1c\n\
-    \x17JHCAKEEGKOJ_DFDHJEEGKMN\x10\xb9\x10\x12\x1c\n\x17JHCAKEEGKOJ_FBBAGNN\
-    BHDP\x10\xda\x10\x12\x1c\n\x17JHCAKEEGKOJ_OAIAAKGKNOE\x10\xff\x10\x12\
-    \x1c\n\x17JHCAKEEGKOJ_NLNNACIOGLO\x10\xce\x10\x12\x1c\n\x17JHCAKEEGKOJ_F\
-    DBMKAAMLLM\x10\xf9\x10\x12\x1c\n\x17JHCAKEEGKOJ_FNDCFNPAKCD\x10\xeb\x10\
-    \x12\x1c\n\x17JHCAKEEGKOJ_JPGKDKLNGJO\x10\xd9\x10\x12\x1c\n\x17JHCAKEEGK\
-    OJ_CBDPHDIAFLA\x10\xf6\x10\x12\x1c\n\x17JHCAKEEGKOJ_BBPGFGLFFCF\x10\xed\
-    \x10\x12\x1c\n\x17JHCAKEEGKOJ_MACAJCCMOKN\x10\x83\x11\x12\x1c\n\x17JHCAK\
-    EEGKOJ_NFMPKBBHHCH\x10\xc8\x10\x12\x1c\n\x17JHCAKEEGKOJ_NGKIOGBDDJE\x10\
-    \xe3\x10b\x06proto3\
+    \n\x16CmdTalkEventType.proto*\x9e\x04\n\x10CmdTalkEventType\x12\x20\n\
+    \x1cCmdTalkEventType_IEPGHAGDNBB\x10\0\x12!\n\x1cCmdTalkEventType_CKMGFM\
+    ODBGP\x10\xf9\x10\x12!\n\x1cCmdTalkEventType_MCCNPCJGEIH\x10\xc7\x10\x12\
+    !\n\x1cCmdTalkEventType_NBPKKAJPOJG\x10\xd7\x10\x12!\n\x1cCmdTalkEventTy\
+    pe_BHKGHMLBMAG\x10\xe2\x10\x12!\n\x1cCmdTalkEventType_ALFHBHLHIKI\x10\
+    \xf2\x10\x12!\n\x1cCmdTalkEventType_IOHNLLCBCIP\x10\x85\x11\x12!\n\x1cCm\
+    dTalkEventType_HHGLNLHGMJG\x10\x98\x11\x12!\n\x1cCmdTalkEventType_BFBKAO\
+    KBFDD\x10\x87\x11\x12!\n\x1cCmdTalkEventType_OJLPDPEDKLP\x10\xed\x10\x12\
+    !\n\x1cCmdTalkEventType_OJAAHADOGCB\x10\xdc\x10\x12!\n\x1cCmdTalkEventTy\
+    pe_FPMCGOCGCGL\x10\xcc\x10\x12!\n\x1cCmdTalkEventType_CJGJOLMKIDD\x10\
+    \x88\x11\x12!\n\x1cCmdTalkEventType_KEDOMHCEJGK\x10\xc1\x10\x12!\n\x1cCm\
+    dTalkEventType_EABBFFHPKJJ\x10\xb8\x10b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -31,7 +31,7 @@ pub struct TrainPartyHandlePendingActionCsReq {
     // @@protoc_insertion_point(field:TrainPartyHandlePendingActionCsReq.queue_position)
     pub queue_position: u32,
     // message oneof groups
-    pub KNEPOOPNMOC: ::std::option::Option<train_party_handle_pending_action_cs_req::KNEPOOPNMOC>,
+    pub MJBKNBOBAKJ: ::std::option::Option<train_party_handle_pending_action_cs_req::MJBKNBOBAKJ>,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyHandlePendingActionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,199 +48,199 @@ impl TrainPartyHandlePendingActionCsReq {
         ::std::default::Default::default()
     }
 
-    // .IMLDEPMCDPA CICJBCHCCBH = 944;
+    // .BJEPDFNJJEJ JOBMKGEDLED = 826;
 
-    pub fn CICJBCHCCBH(&self) -> &super::IMLDEPMCDPA::IMLDEPMCDPA {
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::CICJBCHCCBH(ref v)) => v,
-            _ => <super::IMLDEPMCDPA::IMLDEPMCDPA as ::protobuf::Message>::default_instance(),
+    pub fn JOBMKGEDLED(&self) -> &super::BJEPDFNJJEJ::BJEPDFNJJEJ {
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JOBMKGEDLED(ref v)) => v,
+            _ => <super::BJEPDFNJJEJ::BJEPDFNJJEJ as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_CICJBCHCCBH(&mut self) {
-        self.KNEPOOPNMOC = ::std::option::Option::None;
+    pub fn clear_JOBMKGEDLED(&mut self) {
+        self.MJBKNBOBAKJ = ::std::option::Option::None;
     }
 
-    pub fn has_CICJBCHCCBH(&self) -> bool {
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::CICJBCHCCBH(..)) => true,
+    pub fn has_JOBMKGEDLED(&self) -> bool {
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JOBMKGEDLED(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CICJBCHCCBH(&mut self, v: super::IMLDEPMCDPA::IMLDEPMCDPA) {
-        self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::CICJBCHCCBH(v))
+    pub fn set_JOBMKGEDLED(&mut self, v: super::BJEPDFNJJEJ::BJEPDFNJJEJ) {
+        self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JOBMKGEDLED(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CICJBCHCCBH(&mut self) -> &mut super::IMLDEPMCDPA::IMLDEPMCDPA {
-        if let ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::CICJBCHCCBH(_)) = self.KNEPOOPNMOC {
+    pub fn mut_JOBMKGEDLED(&mut self) -> &mut super::BJEPDFNJJEJ::BJEPDFNJJEJ {
+        if let ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JOBMKGEDLED(_)) = self.MJBKNBOBAKJ {
         } else {
-            self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::CICJBCHCCBH(super::IMLDEPMCDPA::IMLDEPMCDPA::new()));
+            self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JOBMKGEDLED(super::BJEPDFNJJEJ::BJEPDFNJJEJ::new()));
         }
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::CICJBCHCCBH(ref mut v)) => v,
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JOBMKGEDLED(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CICJBCHCCBH(&mut self) -> super::IMLDEPMCDPA::IMLDEPMCDPA {
-        if self.has_CICJBCHCCBH() {
-            match self.KNEPOOPNMOC.take() {
-                ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::CICJBCHCCBH(v)) => v,
+    pub fn take_JOBMKGEDLED(&mut self) -> super::BJEPDFNJJEJ::BJEPDFNJJEJ {
+        if self.has_JOBMKGEDLED() {
+            match self.MJBKNBOBAKJ.take() {
+                ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JOBMKGEDLED(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::IMLDEPMCDPA::IMLDEPMCDPA::new()
+            super::BJEPDFNJJEJ::BJEPDFNJJEJ::new()
         }
     }
 
-    // .EFIJBJANHMM FAPPGICJEGO = 1934;
+    // .BMAIIPEDOHK FILGHPELJML = 1700;
 
-    pub fn FAPPGICJEGO(&self) -> &super::EFIJBJANHMM::EFIJBJANHMM {
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::FAPPGICJEGO(ref v)) => v,
-            _ => <super::EFIJBJANHMM::EFIJBJANHMM as ::protobuf::Message>::default_instance(),
+    pub fn FILGHPELJML(&self) -> &super::BMAIIPEDOHK::BMAIIPEDOHK {
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::FILGHPELJML(ref v)) => v,
+            _ => <super::BMAIIPEDOHK::BMAIIPEDOHK as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_FAPPGICJEGO(&mut self) {
-        self.KNEPOOPNMOC = ::std::option::Option::None;
+    pub fn clear_FILGHPELJML(&mut self) {
+        self.MJBKNBOBAKJ = ::std::option::Option::None;
     }
 
-    pub fn has_FAPPGICJEGO(&self) -> bool {
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::FAPPGICJEGO(..)) => true,
+    pub fn has_FILGHPELJML(&self) -> bool {
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::FILGHPELJML(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_FAPPGICJEGO(&mut self, v: super::EFIJBJANHMM::EFIJBJANHMM) {
-        self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::FAPPGICJEGO(v))
+    pub fn set_FILGHPELJML(&mut self, v: super::BMAIIPEDOHK::BMAIIPEDOHK) {
+        self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::FILGHPELJML(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_FAPPGICJEGO(&mut self) -> &mut super::EFIJBJANHMM::EFIJBJANHMM {
-        if let ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::FAPPGICJEGO(_)) = self.KNEPOOPNMOC {
+    pub fn mut_FILGHPELJML(&mut self) -> &mut super::BMAIIPEDOHK::BMAIIPEDOHK {
+        if let ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::FILGHPELJML(_)) = self.MJBKNBOBAKJ {
         } else {
-            self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::FAPPGICJEGO(super::EFIJBJANHMM::EFIJBJANHMM::new()));
+            self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::FILGHPELJML(super::BMAIIPEDOHK::BMAIIPEDOHK::new()));
         }
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::FAPPGICJEGO(ref mut v)) => v,
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::FILGHPELJML(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_FAPPGICJEGO(&mut self) -> super::EFIJBJANHMM::EFIJBJANHMM {
-        if self.has_FAPPGICJEGO() {
-            match self.KNEPOOPNMOC.take() {
-                ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::FAPPGICJEGO(v)) => v,
+    pub fn take_FILGHPELJML(&mut self) -> super::BMAIIPEDOHK::BMAIIPEDOHK {
+        if self.has_FILGHPELJML() {
+            match self.MJBKNBOBAKJ.take() {
+                ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::FILGHPELJML(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::EFIJBJANHMM::EFIJBJANHMM::new()
+            super::BMAIIPEDOHK::BMAIIPEDOHK::new()
         }
     }
 
-    // .IBHKKBEHPFH PBMOBNMAGEB = 871;
+    // .NHGKEBLLIEG HHPMBJIGJGD = 1443;
 
-    pub fn PBMOBNMAGEB(&self) -> &super::IBHKKBEHPFH::IBHKKBEHPFH {
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::PBMOBNMAGEB(ref v)) => v,
-            _ => <super::IBHKKBEHPFH::IBHKKBEHPFH as ::protobuf::Message>::default_instance(),
+    pub fn HHPMBJIGJGD(&self) -> &super::NHGKEBLLIEG::NHGKEBLLIEG {
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::HHPMBJIGJGD(ref v)) => v,
+            _ => <super::NHGKEBLLIEG::NHGKEBLLIEG as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_PBMOBNMAGEB(&mut self) {
-        self.KNEPOOPNMOC = ::std::option::Option::None;
+    pub fn clear_HHPMBJIGJGD(&mut self) {
+        self.MJBKNBOBAKJ = ::std::option::Option::None;
     }
 
-    pub fn has_PBMOBNMAGEB(&self) -> bool {
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::PBMOBNMAGEB(..)) => true,
+    pub fn has_HHPMBJIGJGD(&self) -> bool {
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::HHPMBJIGJGD(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_PBMOBNMAGEB(&mut self, v: super::IBHKKBEHPFH::IBHKKBEHPFH) {
-        self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::PBMOBNMAGEB(v))
+    pub fn set_HHPMBJIGJGD(&mut self, v: super::NHGKEBLLIEG::NHGKEBLLIEG) {
+        self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::HHPMBJIGJGD(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_PBMOBNMAGEB(&mut self) -> &mut super::IBHKKBEHPFH::IBHKKBEHPFH {
-        if let ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::PBMOBNMAGEB(_)) = self.KNEPOOPNMOC {
+    pub fn mut_HHPMBJIGJGD(&mut self) -> &mut super::NHGKEBLLIEG::NHGKEBLLIEG {
+        if let ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::HHPMBJIGJGD(_)) = self.MJBKNBOBAKJ {
         } else {
-            self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::PBMOBNMAGEB(super::IBHKKBEHPFH::IBHKKBEHPFH::new()));
+            self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::HHPMBJIGJGD(super::NHGKEBLLIEG::NHGKEBLLIEG::new()));
         }
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::PBMOBNMAGEB(ref mut v)) => v,
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::HHPMBJIGJGD(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_PBMOBNMAGEB(&mut self) -> super::IBHKKBEHPFH::IBHKKBEHPFH {
-        if self.has_PBMOBNMAGEB() {
-            match self.KNEPOOPNMOC.take() {
-                ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::PBMOBNMAGEB(v)) => v,
+    pub fn take_HHPMBJIGJGD(&mut self) -> super::NHGKEBLLIEG::NHGKEBLLIEG {
+        if self.has_HHPMBJIGJGD() {
+            match self.MJBKNBOBAKJ.take() {
+                ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::HHPMBJIGJGD(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::IBHKKBEHPFH::IBHKKBEHPFH::new()
+            super::NHGKEBLLIEG::NHGKEBLLIEG::new()
         }
     }
 
-    // .OCDNCOOLFEE EHFGHBKNIEG = 1160;
+    // .KINJBFCIFHE JFEHPEGHGIN = 667;
 
-    pub fn EHFGHBKNIEG(&self) -> &super::OCDNCOOLFEE::OCDNCOOLFEE {
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::EHFGHBKNIEG(ref v)) => v,
-            _ => <super::OCDNCOOLFEE::OCDNCOOLFEE as ::protobuf::Message>::default_instance(),
+    pub fn JFEHPEGHGIN(&self) -> &super::KINJBFCIFHE::KINJBFCIFHE {
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JFEHPEGHGIN(ref v)) => v,
+            _ => <super::KINJBFCIFHE::KINJBFCIFHE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_EHFGHBKNIEG(&mut self) {
-        self.KNEPOOPNMOC = ::std::option::Option::None;
+    pub fn clear_JFEHPEGHGIN(&mut self) {
+        self.MJBKNBOBAKJ = ::std::option::Option::None;
     }
 
-    pub fn has_EHFGHBKNIEG(&self) -> bool {
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::EHFGHBKNIEG(..)) => true,
+    pub fn has_JFEHPEGHGIN(&self) -> bool {
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JFEHPEGHGIN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_EHFGHBKNIEG(&mut self, v: super::OCDNCOOLFEE::OCDNCOOLFEE) {
-        self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::EHFGHBKNIEG(v))
+    pub fn set_JFEHPEGHGIN(&mut self, v: super::KINJBFCIFHE::KINJBFCIFHE) {
+        self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JFEHPEGHGIN(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_EHFGHBKNIEG(&mut self) -> &mut super::OCDNCOOLFEE::OCDNCOOLFEE {
-        if let ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::EHFGHBKNIEG(_)) = self.KNEPOOPNMOC {
+    pub fn mut_JFEHPEGHGIN(&mut self) -> &mut super::KINJBFCIFHE::KINJBFCIFHE {
+        if let ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JFEHPEGHGIN(_)) = self.MJBKNBOBAKJ {
         } else {
-            self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::EHFGHBKNIEG(super::OCDNCOOLFEE::OCDNCOOLFEE::new()));
+            self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JFEHPEGHGIN(super::KINJBFCIFHE::KINJBFCIFHE::new()));
         }
-        match self.KNEPOOPNMOC {
-            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::EHFGHBKNIEG(ref mut v)) => v,
+        match self.MJBKNBOBAKJ {
+            ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JFEHPEGHGIN(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_EHFGHBKNIEG(&mut self) -> super::OCDNCOOLFEE::OCDNCOOLFEE {
-        if self.has_EHFGHBKNIEG() {
-            match self.KNEPOOPNMOC.take() {
-                ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::EHFGHBKNIEG(v)) => v,
+    pub fn take_JFEHPEGHGIN(&mut self) -> super::KINJBFCIFHE::KINJBFCIFHE {
+        if self.has_JFEHPEGHGIN() {
+            match self.MJBKNBOBAKJ.take() {
+                ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JFEHPEGHGIN(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::OCDNCOOLFEE::OCDNCOOLFEE::new()
+            super::KINJBFCIFHE::KINJBFCIFHE::new()
         }
     }
 
@@ -252,35 +252,35 @@ impl TrainPartyHandlePendingActionCsReq {
             |m: &TrainPartyHandlePendingActionCsReq| { &m.queue_position },
             |m: &mut TrainPartyHandlePendingActionCsReq| { &mut m.queue_position },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IMLDEPMCDPA::IMLDEPMCDPA>(
-            "CICJBCHCCBH",
-            TrainPartyHandlePendingActionCsReq::has_CICJBCHCCBH,
-            TrainPartyHandlePendingActionCsReq::CICJBCHCCBH,
-            TrainPartyHandlePendingActionCsReq::mut_CICJBCHCCBH,
-            TrainPartyHandlePendingActionCsReq::set_CICJBCHCCBH,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BJEPDFNJJEJ::BJEPDFNJJEJ>(
+            "JOBMKGEDLED",
+            TrainPartyHandlePendingActionCsReq::has_JOBMKGEDLED,
+            TrainPartyHandlePendingActionCsReq::JOBMKGEDLED,
+            TrainPartyHandlePendingActionCsReq::mut_JOBMKGEDLED,
+            TrainPartyHandlePendingActionCsReq::set_JOBMKGEDLED,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EFIJBJANHMM::EFIJBJANHMM>(
-            "FAPPGICJEGO",
-            TrainPartyHandlePendingActionCsReq::has_FAPPGICJEGO,
-            TrainPartyHandlePendingActionCsReq::FAPPGICJEGO,
-            TrainPartyHandlePendingActionCsReq::mut_FAPPGICJEGO,
-            TrainPartyHandlePendingActionCsReq::set_FAPPGICJEGO,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BMAIIPEDOHK::BMAIIPEDOHK>(
+            "FILGHPELJML",
+            TrainPartyHandlePendingActionCsReq::has_FILGHPELJML,
+            TrainPartyHandlePendingActionCsReq::FILGHPELJML,
+            TrainPartyHandlePendingActionCsReq::mut_FILGHPELJML,
+            TrainPartyHandlePendingActionCsReq::set_FILGHPELJML,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IBHKKBEHPFH::IBHKKBEHPFH>(
-            "PBMOBNMAGEB",
-            TrainPartyHandlePendingActionCsReq::has_PBMOBNMAGEB,
-            TrainPartyHandlePendingActionCsReq::PBMOBNMAGEB,
-            TrainPartyHandlePendingActionCsReq::mut_PBMOBNMAGEB,
-            TrainPartyHandlePendingActionCsReq::set_PBMOBNMAGEB,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NHGKEBLLIEG::NHGKEBLLIEG>(
+            "HHPMBJIGJGD",
+            TrainPartyHandlePendingActionCsReq::has_HHPMBJIGJGD,
+            TrainPartyHandlePendingActionCsReq::HHPMBJIGJGD,
+            TrainPartyHandlePendingActionCsReq::mut_HHPMBJIGJGD,
+            TrainPartyHandlePendingActionCsReq::set_HHPMBJIGJGD,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OCDNCOOLFEE::OCDNCOOLFEE>(
-            "EHFGHBKNIEG",
-            TrainPartyHandlePendingActionCsReq::has_EHFGHBKNIEG,
-            TrainPartyHandlePendingActionCsReq::EHFGHBKNIEG,
-            TrainPartyHandlePendingActionCsReq::mut_EHFGHBKNIEG,
-            TrainPartyHandlePendingActionCsReq::set_EHFGHBKNIEG,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KINJBFCIFHE::KINJBFCIFHE>(
+            "JFEHPEGHGIN",
+            TrainPartyHandlePendingActionCsReq::has_JFEHPEGHGIN,
+            TrainPartyHandlePendingActionCsReq::JFEHPEGHGIN,
+            TrainPartyHandlePendingActionCsReq::mut_JFEHPEGHGIN,
+            TrainPartyHandlePendingActionCsReq::set_JFEHPEGHGIN,
         ));
-        oneofs.push(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::generated_oneof_descriptor_data());
+        oneofs.push(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyHandlePendingActionCsReq>(
             "TrainPartyHandlePendingActionCsReq",
             fields,
@@ -299,20 +299,20 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
+                88 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                7554 => {
-                    self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::CICJBCHCCBH(is.read_message()?));
+                6610 => {
+                    self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JOBMKGEDLED(is.read_message()?));
                 },
-                15474 => {
-                    self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::FAPPGICJEGO(is.read_message()?));
+                13602 => {
+                    self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::FILGHPELJML(is.read_message()?));
                 },
-                6970 => {
-                    self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::PBMOBNMAGEB(is.read_message()?));
+                11546 => {
+                    self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::HHPMBJIGJGD(is.read_message()?));
                 },
-                9282 => {
-                    self.KNEPOOPNMOC = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::KNEPOOPNMOC::EHFGHBKNIEG(is.read_message()?));
+                5338 => {
+                    self.MJBKNBOBAKJ = ::std::option::Option::Some(train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JFEHPEGHGIN(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -327,23 +327,23 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(11, self.queue_position);
         }
-        if let ::std::option::Option::Some(ref v) = self.KNEPOOPNMOC {
+        if let ::std::option::Option::Some(ref v) = self.MJBKNBOBAKJ {
             match v {
-                &train_party_handle_pending_action_cs_req::KNEPOOPNMOC::CICJBCHCCBH(ref v) => {
+                &train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JOBMKGEDLED(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &train_party_handle_pending_action_cs_req::KNEPOOPNMOC::FAPPGICJEGO(ref v) => {
+                &train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::FILGHPELJML(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &train_party_handle_pending_action_cs_req::KNEPOOPNMOC::PBMOBNMAGEB(ref v) => {
+                &train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::HHPMBJIGJGD(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &train_party_handle_pending_action_cs_req::KNEPOOPNMOC::EHFGHBKNIEG(ref v) => {
+                &train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JFEHPEGHGIN(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -356,21 +356,21 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.queue_position != 0 {
-            os.write_uint32(12, self.queue_position)?;
+            os.write_uint32(11, self.queue_position)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.KNEPOOPNMOC {
+        if let ::std::option::Option::Some(ref v) = self.MJBKNBOBAKJ {
             match v {
-                &train_party_handle_pending_action_cs_req::KNEPOOPNMOC::CICJBCHCCBH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(944, v, os)?;
+                &train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JOBMKGEDLED(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(826, v, os)?;
                 },
-                &train_party_handle_pending_action_cs_req::KNEPOOPNMOC::FAPPGICJEGO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1934, v, os)?;
+                &train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::FILGHPELJML(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1700, v, os)?;
                 },
-                &train_party_handle_pending_action_cs_req::KNEPOOPNMOC::PBMOBNMAGEB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(871, v, os)?;
+                &train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::HHPMBJIGJGD(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1443, v, os)?;
                 },
-                &train_party_handle_pending_action_cs_req::KNEPOOPNMOC::EHFGHBKNIEG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1160, v, os)?;
+                &train_party_handle_pending_action_cs_req::MJBKNBOBAKJ::JFEHPEGHGIN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(667, v, os)?;
                 },
             };
         }
@@ -392,17 +392,17 @@ impl ::protobuf::Message for TrainPartyHandlePendingActionCsReq {
 
     fn clear(&mut self) {
         self.queue_position = 0;
-        self.KNEPOOPNMOC = ::std::option::Option::None;
-        self.KNEPOOPNMOC = ::std::option::Option::None;
-        self.KNEPOOPNMOC = ::std::option::Option::None;
-        self.KNEPOOPNMOC = ::std::option::Option::None;
+        self.MJBKNBOBAKJ = ::std::option::Option::None;
+        self.MJBKNBOBAKJ = ::std::option::Option::None;
+        self.MJBKNBOBAKJ = ::std::option::Option::None;
+        self.MJBKNBOBAKJ = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyHandlePendingActionCsReq {
         static instance: TrainPartyHandlePendingActionCsReq = TrainPartyHandlePendingActionCsReq {
             queue_position: 0,
-            KNEPOOPNMOC: ::std::option::Option::None,
+            MJBKNBOBAKJ: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -431,45 +431,45 @@ pub mod train_party_handle_pending_action_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:TrainPartyHandlePendingActionCsReq.KNEPOOPNMOC)
-    pub enum KNEPOOPNMOC {
-        // @@protoc_insertion_point(oneof_field:TrainPartyHandlePendingActionCsReq.CICJBCHCCBH)
-        CICJBCHCCBH(super::super::IMLDEPMCDPA::IMLDEPMCDPA),
-        // @@protoc_insertion_point(oneof_field:TrainPartyHandlePendingActionCsReq.FAPPGICJEGO)
-        FAPPGICJEGO(super::super::EFIJBJANHMM::EFIJBJANHMM),
-        // @@protoc_insertion_point(oneof_field:TrainPartyHandlePendingActionCsReq.PBMOBNMAGEB)
-        PBMOBNMAGEB(super::super::IBHKKBEHPFH::IBHKKBEHPFH),
-        // @@protoc_insertion_point(oneof_field:TrainPartyHandlePendingActionCsReq.EHFGHBKNIEG)
-        EHFGHBKNIEG(super::super::OCDNCOOLFEE::OCDNCOOLFEE),
+    // @@protoc_insertion_point(oneof:TrainPartyHandlePendingActionCsReq.MJBKNBOBAKJ)
+    pub enum MJBKNBOBAKJ {
+        // @@protoc_insertion_point(oneof_field:TrainPartyHandlePendingActionCsReq.JOBMKGEDLED)
+        JOBMKGEDLED(super::super::BJEPDFNJJEJ::BJEPDFNJJEJ),
+        // @@protoc_insertion_point(oneof_field:TrainPartyHandlePendingActionCsReq.FILGHPELJML)
+        FILGHPELJML(super::super::BMAIIPEDOHK::BMAIIPEDOHK),
+        // @@protoc_insertion_point(oneof_field:TrainPartyHandlePendingActionCsReq.HHPMBJIGJGD)
+        HHPMBJIGJGD(super::super::NHGKEBLLIEG::NHGKEBLLIEG),
+        // @@protoc_insertion_point(oneof_field:TrainPartyHandlePendingActionCsReq.JFEHPEGHGIN)
+        JFEHPEGHGIN(super::super::KINJBFCIFHE::KINJBFCIFHE),
     }
 
-    impl ::protobuf::Oneof for KNEPOOPNMOC {
+    impl ::protobuf::Oneof for MJBKNBOBAKJ {
     }
 
-    impl ::protobuf::OneofFull for KNEPOOPNMOC {
+    impl ::protobuf::OneofFull for MJBKNBOBAKJ {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::TrainPartyHandlePendingActionCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("KNEPOOPNMOC").unwrap()).clone()
+            descriptor.get(|| <super::TrainPartyHandlePendingActionCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("MJBKNBOBAKJ").unwrap()).clone()
         }
     }
 
-    impl KNEPOOPNMOC {
+    impl MJBKNBOBAKJ {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KNEPOOPNMOC>("KNEPOOPNMOC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MJBKNBOBAKJ>("MJBKNBOBAKJ")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(TrainPartyHandlePendingActionCsReq.proto\x1a\x11EFIJBJANHMM.proto\x1a\
-    \x11IBHKKBEHPFH.proto\x1a\x11IMLDEPMCDPA.proto\x1a\x11OCDNCOOLFEE.proto\
+    \n(TrainPartyHandlePendingActionCsReq.proto\x1a\x11BJEPDFNJJEJ.proto\x1a\
+    \x11BMAIIPEDOHK.proto\x1a\x11KINJBFCIFHE.proto\x1a\x11NHGKEBLLIEG.proto\
     \"\xa6\x02\n\"TrainPartyHandlePendingActionCsReq\x12%\n\x0equeue_positio\
-    n\x18\x0c\x20\x01(\rR\rqueuePosition\x121\n\x0bCICJBCHCCBH\x18\xb0\x07\
-    \x20\x01(\x0b2\x0c.IMLDEPMCDPAH\0R\x0bCICJBCHCCBH\x121\n\x0bFAPPGICJEGO\
-    \x18\x8e\x0f\x20\x01(\x0b2\x0c.EFIJBJANHMMH\0R\x0bFAPPGICJEGO\x121\n\x0b\
-    PBMOBNMAGEB\x18\xe7\x06\x20\x01(\x0b2\x0c.IBHKKBEHPFHH\0R\x0bPBMOBNMAGEB\
-    \x121\n\x0bEHFGHBKNIEG\x18\x88\t\x20\x01(\x0b2\x0c.OCDNCOOLFEEH\0R\x0bEH\
-    FGHBKNIEGB\r\n\x0bKNEPOOPNMOCb\x06proto3\
+    n\x18\x0b\x20\x01(\rR\rqueuePosition\x121\n\x0bJOBMKGEDLED\x18\xba\x06\
+    \x20\x01(\x0b2\x0c.BJEPDFNJJEJH\0R\x0bJOBMKGEDLED\x121\n\x0bFILGHPELJML\
+    \x18\xa4\r\x20\x01(\x0b2\x0c.BMAIIPEDOHKH\0R\x0bFILGHPELJML\x121\n\x0bHH\
+    PMBJIGJGD\x18\xa3\x0b\x20\x01(\x0b2\x0c.NHGKEBLLIEGH\0R\x0bHHPMBJIGJGD\
+    \x121\n\x0bJFEHPEGHGIN\x18\x9b\x05\x20\x01(\x0b2\x0c.KINJBFCIFHEH\0R\x0b\
+    JFEHPEGHGINB\r\n\x0bMJBKNBOBAKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -487,10 +487,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::EFIJBJANHMM::file_descriptor().clone());
-            deps.push(super::IBHKKBEHPFH::file_descriptor().clone());
-            deps.push(super::IMLDEPMCDPA::file_descriptor().clone());
-            deps.push(super::OCDNCOOLFEE::file_descriptor().clone());
+            deps.push(super::BJEPDFNJJEJ::file_descriptor().clone());
+            deps.push(super::BMAIIPEDOHK::file_descriptor().clone());
+            deps.push(super::KINJBFCIFHE::file_descriptor().clone());
+            deps.push(super::NHGKEBLLIEG::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartyHandlePendingActionCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

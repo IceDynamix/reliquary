@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetGachaDecideItemScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SetGachaDecideItemScRsp.LJFCCLLCIJK)
-    pub LJFCCLLCIJK: ::protobuf::MessageField<super::OMMDLBPNGEK::OMMDLBPNGEK>,
+    // @@protoc_insertion_point(field:SetGachaDecideItemScRsp.BNOGOLNMOOA)
+    pub BNOGOLNMOOA: ::protobuf::MessageField<super::JMDPCOPDNNH::JMDPCOPDNNH>,
     // @@protoc_insertion_point(field:SetGachaDecideItemScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,10 +51,10 @@ impl SetGachaDecideItemScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OMMDLBPNGEK::OMMDLBPNGEK>(
-            "LJFCCLLCIJK",
-            |m: &SetGachaDecideItemScRsp| { &m.LJFCCLLCIJK },
-            |m: &mut SetGachaDecideItemScRsp| { &mut m.LJFCCLLCIJK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JMDPCOPDNNH::JMDPCOPDNNH>(
+            "BNOGOLNMOOA",
+            |m: &SetGachaDecideItemScRsp| { &m.BNOGOLNMOOA },
+            |m: &mut SetGachaDecideItemScRsp| { &mut m.BNOGOLNMOOA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for SetGachaDecideItemScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LJFCCLLCIJK)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BNOGOLNMOOA)?;
                 },
                 72 => {
                     self.retcode = is.read_uint32()?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SetGachaDecideItemScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.LJFCCLLCIJK.as_ref() {
+        if let Some(v) = self.BNOGOLNMOOA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -110,8 +110,8 @@ impl ::protobuf::Message for SetGachaDecideItemScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.LJFCCLLCIJK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.BNOGOLNMOOA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
@@ -133,14 +133,14 @@ impl ::protobuf::Message for SetGachaDecideItemScRsp {
     }
 
     fn clear(&mut self) {
-        self.LJFCCLLCIJK.clear();
+        self.BNOGOLNMOOA.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetGachaDecideItemScRsp {
         static instance: SetGachaDecideItemScRsp = SetGachaDecideItemScRsp {
-            LJFCCLLCIJK: ::protobuf::MessageField::none(),
+            BNOGOLNMOOA: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SetGachaDecideItemScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dSetGachaDecideItemScRsp.proto\x1a\x11OMMDLBPNGEK.proto\"c\n\x17Set\
-    GachaDecideItemScRsp\x12.\n\x0bLJFCCLLCIJK\x18\x0c\x20\x01(\x0b2\x0c.OMM\
-    DLBPNGEKR\x0bLJFCCLLCIJK\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retco\
+    \n\x1dSetGachaDecideItemScRsp.proto\x1a\x11JMDPCOPDNNH.proto\"c\n\x17Set\
+    GachaDecideItemScRsp\x12.\n\x0bBNOGOLNMOOA\x18\x04\x20\x01(\x0b2\x0c.JMD\
+    PCOPDNNHR\x0bBNOGOLNMOOA\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retco\
     deb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OMMDLBPNGEK::file_descriptor().clone());
+            deps.push(super::JMDPCOPDNNH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SetGachaDecideItemScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

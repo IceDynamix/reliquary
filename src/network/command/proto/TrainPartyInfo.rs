@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyInfo {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyInfo.APLJBIDIHPM)
-    pub APLJBIDIHPM: u32,
-    // @@protoc_insertion_point(field:TrainPartyInfo.KKEDJAKOKNF)
-    pub KKEDJAKOKNF: u32,
-    // @@protoc_insertion_point(field:TrainPartyInfo.EADPLBLABKG)
-    pub EADPLBLABKG: ::std::vec::Vec<super::AFNPNCJDLAI::AFNPNCJDLAI>,
-    // @@protoc_insertion_point(field:TrainPartyInfo.HJLANAPGPEI)
-    pub HJLANAPGPEI: u32,
-    // @@protoc_insertion_point(field:TrainPartyInfo.PIOBDCJGBIG)
-    pub PIOBDCJGBIG: u32,
-    // @@protoc_insertion_point(field:TrainPartyInfo.OGCKNCEMFCN)
-    pub OGCKNCEMFCN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyInfo.KOFBHHLBHDC)
+    pub KOFBHHLBHDC: ::std::vec::Vec<super::LFCKJMJAEBF::LFCKJMJAEBF>,
+    // @@protoc_insertion_point(field:TrainPartyInfo.LKCBEOOEHDC)
+    pub LKCBEOOEHDC: u32,
+    // @@protoc_insertion_point(field:TrainPartyInfo.FGIFDDMHMGK)
+    pub FGIFDDMHMGK: u32,
+    // @@protoc_insertion_point(field:TrainPartyInfo.BFLCENNECCE)
+    pub BFLCENNECCE: u32,
     // @@protoc_insertion_point(field:TrainPartyInfo.cur_fund)
     pub cur_fund: u32,
-    // @@protoc_insertion_point(field:TrainPartyInfo.dynamic_id_list)
-    pub dynamic_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TrainPartyInfo.area_list)
     pub area_list: ::std::vec::Vec<super::TrainPartyArea::TrainPartyArea>,
-    // @@protoc_insertion_point(field:TrainPartyInfo.HIONNJMFAON)
-    pub HIONNJMFAON: u32,
+    // @@protoc_insertion_point(field:TrainPartyInfo.dynamic_id_list)
+    pub dynamic_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyInfo.FMOPGNLDECC)
+    pub FMOPGNLDECC: u32,
+    // @@protoc_insertion_point(field:TrainPartyInfo.FGHBNHHDLGF)
+    pub FGHBNHHDLGF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TrainPartyInfo.HHOBBNLGHEN)
+    pub HHOBBNLGHEN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,35 +67,25 @@ impl TrainPartyInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APLJBIDIHPM",
-            |m: &TrainPartyInfo| { &m.APLJBIDIHPM },
-            |m: &mut TrainPartyInfo| { &mut m.APLJBIDIHPM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKEDJAKOKNF",
-            |m: &TrainPartyInfo| { &m.KKEDJAKOKNF },
-            |m: &mut TrainPartyInfo| { &mut m.KKEDJAKOKNF },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EADPLBLABKG",
-            |m: &TrainPartyInfo| { &m.EADPLBLABKG },
-            |m: &mut TrainPartyInfo| { &mut m.EADPLBLABKG },
+            "KOFBHHLBHDC",
+            |m: &TrainPartyInfo| { &m.KOFBHHLBHDC },
+            |m: &mut TrainPartyInfo| { &mut m.KOFBHHLBHDC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJLANAPGPEI",
-            |m: &TrainPartyInfo| { &m.HJLANAPGPEI },
-            |m: &mut TrainPartyInfo| { &mut m.HJLANAPGPEI },
+            "LKCBEOOEHDC",
+            |m: &TrainPartyInfo| { &m.LKCBEOOEHDC },
+            |m: &mut TrainPartyInfo| { &mut m.LKCBEOOEHDC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIOBDCJGBIG",
-            |m: &TrainPartyInfo| { &m.PIOBDCJGBIG },
-            |m: &mut TrainPartyInfo| { &mut m.PIOBDCJGBIG },
+            "FGIFDDMHMGK",
+            |m: &TrainPartyInfo| { &m.FGIFDDMHMGK },
+            |m: &mut TrainPartyInfo| { &mut m.FGIFDDMHMGK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OGCKNCEMFCN",
-            |m: &TrainPartyInfo| { &m.OGCKNCEMFCN },
-            |m: &mut TrainPartyInfo| { &mut m.OGCKNCEMFCN },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BFLCENNECCE",
+            |m: &TrainPartyInfo| { &m.BFLCENNECCE },
+            |m: &mut TrainPartyInfo| { &mut m.BFLCENNECCE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cur_fund",
@@ -103,19 +93,29 @@ impl TrainPartyInfo {
             |m: &mut TrainPartyInfo| { &mut m.cur_fund },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "dynamic_id_list",
-            |m: &TrainPartyInfo| { &m.dynamic_id_list },
-            |m: &mut TrainPartyInfo| { &mut m.dynamic_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "area_list",
             |m: &TrainPartyInfo| { &m.area_list },
             |m: &mut TrainPartyInfo| { &mut m.area_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "dynamic_id_list",
+            |m: &TrainPartyInfo| { &m.dynamic_id_list },
+            |m: &mut TrainPartyInfo| { &mut m.dynamic_id_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HIONNJMFAON",
-            |m: &TrainPartyInfo| { &m.HIONNJMFAON },
-            |m: &mut TrainPartyInfo| { &mut m.HIONNJMFAON },
+            "FMOPGNLDECC",
+            |m: &TrainPartyInfo| { &m.FMOPGNLDECC },
+            |m: &mut TrainPartyInfo| { &mut m.FMOPGNLDECC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "FGHBNHHDLGF",
+            |m: &TrainPartyInfo| { &m.FGHBNHHDLGF },
+            |m: &mut TrainPartyInfo| { &mut m.FGHBNHHDLGF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HHOBBNLGHEN",
+            |m: &TrainPartyInfo| { &m.HHOBBNLGHEN },
+            |m: &mut TrainPartyInfo| { &mut m.HHOBBNLGHEN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyInfo>(
             "TrainPartyInfo",
@@ -135,41 +135,41 @@ impl ::protobuf::Message for TrainPartyInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.APLJBIDIHPM = is.read_uint32()?;
-                },
-                32 => {
-                    self.KKEDJAKOKNF = is.read_uint32()?;
-                },
-                18 => {
-                    self.EADPLBLABKG.push(is.read_message()?);
+                82 => {
+                    self.KOFBHHLBHDC.push(is.read_message()?);
                 },
                 48 => {
-                    self.HJLANAPGPEI = is.read_uint32()?;
-                },
-                8 => {
-                    self.PIOBDCJGBIG = is.read_uint32()?;
-                },
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OGCKNCEMFCN)?;
-                },
-                56 => {
-                    self.OGCKNCEMFCN.push(is.read_uint32()?);
+                    self.LKCBEOOEHDC = is.read_uint32()?;
                 },
                 88 => {
+                    self.FGIFDDMHMGK = is.read_uint32()?;
+                },
+                16 => {
+                    self.BFLCENNECCE = is.read_uint32()?;
+                },
+                40 => {
                     self.cur_fund = is.read_uint32()?;
                 },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.dynamic_id_list)?;
-                },
-                96 => {
-                    self.dynamic_id_list.push(is.read_uint32()?);
-                },
-                74 => {
+                66 => {
                     self.area_list.push(is.read_message()?);
                 },
-                64 => {
-                    self.HIONNJMFAON = is.read_uint32()?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.dynamic_id_list)?;
+                },
+                120 => {
+                    self.dynamic_id_list.push(is.read_uint32()?);
+                },
+                104 => {
+                    self.FMOPGNLDECC = is.read_uint32()?;
+                },
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.FGHBNHHDLGF)?;
+                },
+                8 => {
+                    self.FGHBNHHDLGF.push(is.read_uint32()?);
+                },
+                56 => {
+                    self.HHOBBNLGHEN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -183,33 +183,33 @@ impl ::protobuf::Message for TrainPartyInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.APLJBIDIHPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.APLJBIDIHPM);
-        }
-        if self.KKEDJAKOKNF != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.KKEDJAKOKNF);
-        }
-        for value in &self.EADPLBLABKG {
+        for value in &self.KOFBHHLBHDC {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HJLANAPGPEI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.HJLANAPGPEI);
+        if self.LKCBEOOEHDC != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.LKCBEOOEHDC);
         }
-        if self.PIOBDCJGBIG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PIOBDCJGBIG);
+        if self.FGIFDDMHMGK != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.FGIFDDMHMGK);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.OGCKNCEMFCN);
+        if self.BFLCENNECCE != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.BFLCENNECCE);
+        }
         if self.cur_fund != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.cur_fund);
+            my_size += ::protobuf::rt::uint32_size(5, self.cur_fund);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.dynamic_id_list);
         for value in &self.area_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HIONNJMFAON != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HIONNJMFAON);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.dynamic_id_list);
+        if self.FMOPGNLDECC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.FMOPGNLDECC);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.FGHBNHHDLGF);
+        if self.HHOBBNLGHEN != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HHOBBNLGHEN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -217,31 +217,31 @@ impl ::protobuf::Message for TrainPartyInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.APLJBIDIHPM != 0 {
-            os.write_uint32(5, self.APLJBIDIHPM)?;
-        }
-        if self.KKEDJAKOKNF != 0 {
-            os.write_uint32(4, self.KKEDJAKOKNF)?;
-        }
-        for v in &self.EADPLBLABKG {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.KOFBHHLBHDC {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.HJLANAPGPEI != 0 {
-            os.write_uint32(6, self.HJLANAPGPEI)?;
+        if self.LKCBEOOEHDC != 0 {
+            os.write_uint32(6, self.LKCBEOOEHDC)?;
         }
-        if self.PIOBDCJGBIG != 0 {
-            os.write_uint32(1, self.PIOBDCJGBIG)?;
+        if self.FGIFDDMHMGK != 0 {
+            os.write_uint32(11, self.FGIFDDMHMGK)?;
         }
-        os.write_repeated_packed_uint32(7, &self.OGCKNCEMFCN)?;
+        if self.BFLCENNECCE != 0 {
+            os.write_uint32(2, self.BFLCENNECCE)?;
+        }
         if self.cur_fund != 0 {
-            os.write_uint32(11, self.cur_fund)?;
+            os.write_uint32(5, self.cur_fund)?;
         }
-        os.write_repeated_packed_uint32(12, &self.dynamic_id_list)?;
         for v in &self.area_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.HIONNJMFAON != 0 {
-            os.write_uint32(8, self.HIONNJMFAON)?;
+        os.write_repeated_packed_uint32(15, &self.dynamic_id_list)?;
+        if self.FMOPGNLDECC != 0 {
+            os.write_uint32(13, self.FMOPGNLDECC)?;
+        }
+        os.write_repeated_packed_uint32(1, &self.FGHBNHHDLGF)?;
+        if self.HHOBBNLGHEN != 0 {
+            os.write_uint32(7, self.HHOBBNLGHEN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -260,31 +260,31 @@ impl ::protobuf::Message for TrainPartyInfo {
     }
 
     fn clear(&mut self) {
-        self.APLJBIDIHPM = 0;
-        self.KKEDJAKOKNF = 0;
-        self.EADPLBLABKG.clear();
-        self.HJLANAPGPEI = 0;
-        self.PIOBDCJGBIG = 0;
-        self.OGCKNCEMFCN.clear();
+        self.KOFBHHLBHDC.clear();
+        self.LKCBEOOEHDC = 0;
+        self.FGIFDDMHMGK = 0;
+        self.BFLCENNECCE = 0;
         self.cur_fund = 0;
-        self.dynamic_id_list.clear();
         self.area_list.clear();
-        self.HIONNJMFAON = 0;
+        self.dynamic_id_list.clear();
+        self.FMOPGNLDECC = 0;
+        self.FGHBNHHDLGF.clear();
+        self.HHOBBNLGHEN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyInfo {
         static instance: TrainPartyInfo = TrainPartyInfo {
-            APLJBIDIHPM: 0,
-            KKEDJAKOKNF: 0,
-            EADPLBLABKG: ::std::vec::Vec::new(),
-            HJLANAPGPEI: 0,
-            PIOBDCJGBIG: 0,
-            OGCKNCEMFCN: ::std::vec::Vec::new(),
+            KOFBHHLBHDC: ::std::vec::Vec::new(),
+            LKCBEOOEHDC: 0,
+            FGIFDDMHMGK: 0,
+            BFLCENNECCE: 0,
             cur_fund: 0,
-            dynamic_id_list: ::std::vec::Vec::new(),
             area_list: ::std::vec::Vec::new(),
-            HIONNJMFAON: 0,
+            dynamic_id_list: ::std::vec::Vec::new(),
+            FMOPGNLDECC: 0,
+            FGHBNHHDLGF: ::std::vec::Vec::new(),
+            HHOBBNLGHEN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -309,17 +309,17 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14TrainPartyInfo.proto\x1a\x11AFNPNCJDLAI.proto\x1a\x14TrainPartyAre\
-    a.proto\"\xfd\x02\n\x0eTrainPartyInfo\x12\x20\n\x0bAPLJBIDIHPM\x18\x05\
-    \x20\x01(\rR\x0bAPLJBIDIHPM\x12\x20\n\x0bKKEDJAKOKNF\x18\x04\x20\x01(\rR\
-    \x0bKKEDJAKOKNF\x12.\n\x0bEADPLBLABKG\x18\x02\x20\x03(\x0b2\x0c.AFNPNCJD\
-    LAIR\x0bEADPLBLABKG\x12\x20\n\x0bHJLANAPGPEI\x18\x06\x20\x01(\rR\x0bHJLA\
-    NAPGPEI\x12\x20\n\x0bPIOBDCJGBIG\x18\x01\x20\x01(\rR\x0bPIOBDCJGBIG\x12\
-    \x20\n\x0bOGCKNCEMFCN\x18\x07\x20\x03(\rR\x0bOGCKNCEMFCN\x12\x19\n\x08cu\
-    r_fund\x18\x0b\x20\x01(\rR\x07curFund\x12&\n\x0fdynamic_id_list\x18\x0c\
-    \x20\x03(\rR\rdynamicIdList\x12,\n\tarea_list\x18\t\x20\x03(\x0b2\x0f.Tr\
-    ainPartyAreaR\x08areaList\x12\x20\n\x0bHIONNJMFAON\x18\x08\x20\x01(\rR\
-    \x0bHIONNJMFAONb\x06proto3\
+    \n\x14TrainPartyInfo.proto\x1a\x11LFCKJMJAEBF.proto\x1a\x14TrainPartyAre\
+    a.proto\"\xfd\x02\n\x0eTrainPartyInfo\x12.\n\x0bKOFBHHLBHDC\x18\n\x20\
+    \x03(\x0b2\x0c.LFCKJMJAEBFR\x0bKOFBHHLBHDC\x12\x20\n\x0bLKCBEOOEHDC\x18\
+    \x06\x20\x01(\rR\x0bLKCBEOOEHDC\x12\x20\n\x0bFGIFDDMHMGK\x18\x0b\x20\x01\
+    (\rR\x0bFGIFDDMHMGK\x12\x20\n\x0bBFLCENNECCE\x18\x02\x20\x01(\rR\x0bBFLC\
+    ENNECCE\x12\x19\n\x08cur_fund\x18\x05\x20\x01(\rR\x07curFund\x12,\n\tare\
+    a_list\x18\x08\x20\x03(\x0b2\x0f.TrainPartyAreaR\x08areaList\x12&\n\x0fd\
+    ynamic_id_list\x18\x0f\x20\x03(\rR\rdynamicIdList\x12\x20\n\x0bFMOPGNLDE\
+    CC\x18\r\x20\x01(\rR\x0bFMOPGNLDECC\x12\x20\n\x0bFGHBNHHDLGF\x18\x01\x20\
+    \x03(\rR\x0bFGHBNHHDLGF\x12\x20\n\x0bHHOBBNLGHEN\x18\x07\x20\x01(\rR\x0b\
+    HHOBBNLGHENb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -337,7 +337,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::AFNPNCJDLAI::file_descriptor().clone());
+            deps.push(super::LFCKJMJAEBF::file_descriptor().clone());
             deps.push(super::TrainPartyArea::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartyInfo::generated_message_descriptor_data());

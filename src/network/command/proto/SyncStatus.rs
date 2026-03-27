@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncStatus {
     // message fields
-    // @@protoc_insertion_point(field:SyncStatus.message_group_status)
-    pub message_group_status: ::std::vec::Vec<super::GroupStatus::GroupStatus>,
+    // @@protoc_insertion_point(field:SyncStatus.JABCLKLNLJA)
+    pub JABCLKLNLJA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SyncStatus.section_status)
     pub section_status: ::std::vec::Vec<super::SectionStatus::SectionStatus>,
-    // @@protoc_insertion_point(field:SyncStatus.GIAHKLOPCIO)
-    pub GIAHKLOPCIO: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SyncStatus.CAKCBHPOKLK)
-    pub CAKCBHPOKLK: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SyncStatus.ANMKNDHHHLC)
+    pub ANMKNDHHHLC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SyncStatus.message_group_status)
+    pub message_group_status: ::std::vec::Vec<super::GroupStatus::GroupStatus>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncStatus.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl SyncStatus {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "message_group_status",
-            |m: &SyncStatus| { &m.message_group_status },
-            |m: &mut SyncStatus| { &mut m.message_group_status },
+            "JABCLKLNLJA",
+            |m: &SyncStatus| { &m.JABCLKLNLJA },
+            |m: &mut SyncStatus| { &mut m.JABCLKLNLJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "section_status",
@@ -66,14 +66,14 @@ impl SyncStatus {
             |m: &mut SyncStatus| { &mut m.section_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GIAHKLOPCIO",
-            |m: &SyncStatus| { &m.GIAHKLOPCIO },
-            |m: &mut SyncStatus| { &mut m.GIAHKLOPCIO },
+            "ANMKNDHHHLC",
+            |m: &SyncStatus| { &m.ANMKNDHHHLC },
+            |m: &mut SyncStatus| { &mut m.ANMKNDHHHLC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CAKCBHPOKLK",
-            |m: &SyncStatus| { &m.CAKCBHPOKLK },
-            |m: &mut SyncStatus| { &mut m.CAKCBHPOKLK },
+            "message_group_status",
+            |m: &SyncStatus| { &m.message_group_status },
+            |m: &mut SyncStatus| { &mut m.message_group_status },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncStatus>(
             "SyncStatus",
@@ -93,23 +93,23 @@ impl ::protobuf::Message for SyncStatus {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.message_group_status.push(is.read_message()?);
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JABCLKLNLJA)?;
                 },
-                10 => {
+                104 => {
+                    self.JABCLKLNLJA.push(is.read_uint32()?);
+                },
+                50 => {
                     self.section_status.push(is.read_message()?);
                 },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.GIAHKLOPCIO)?;
-                },
-                40 => {
-                    self.GIAHKLOPCIO.push(is.read_uint32()?);
-                },
                 58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CAKCBHPOKLK)?;
+                    is.read_repeated_packed_uint32_into(&mut self.ANMKNDHHHLC)?;
                 },
                 56 => {
-                    self.CAKCBHPOKLK.push(is.read_uint32()?);
+                    self.ANMKNDHHHLC.push(is.read_uint32()?);
+                },
+                66 => {
+                    self.message_group_status.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -123,30 +123,30 @@ impl ::protobuf::Message for SyncStatus {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.message_group_status {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.JABCLKLNLJA);
         for value in &self.section_status {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.GIAHKLOPCIO);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.CAKCBHPOKLK);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.ANMKNDHHHLC);
+        for value in &self.message_group_status {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.message_group_status {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        };
+        os.write_repeated_packed_uint32(13, &self.JABCLKLNLJA)?;
         for v in &self.section_status {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        os.write_repeated_packed_uint32(5, &self.GIAHKLOPCIO)?;
-        os.write_repeated_packed_uint32(7, &self.CAKCBHPOKLK)?;
+        os.write_repeated_packed_uint32(7, &self.ANMKNDHHHLC)?;
+        for v in &self.message_group_status {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -164,19 +164,19 @@ impl ::protobuf::Message for SyncStatus {
     }
 
     fn clear(&mut self) {
-        self.message_group_status.clear();
+        self.JABCLKLNLJA.clear();
         self.section_status.clear();
-        self.GIAHKLOPCIO.clear();
-        self.CAKCBHPOKLK.clear();
+        self.ANMKNDHHHLC.clear();
+        self.message_group_status.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncStatus {
         static instance: SyncStatus = SyncStatus {
-            message_group_status: ::std::vec::Vec::new(),
+            JABCLKLNLJA: ::std::vec::Vec::new(),
             section_status: ::std::vec::Vec::new(),
-            GIAHKLOPCIO: ::std::vec::Vec::new(),
-            CAKCBHPOKLK: ::std::vec::Vec::new(),
+            ANMKNDHHHLC: ::std::vec::Vec::new(),
+            message_group_status: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for SyncStatus {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10SyncStatus.proto\x1a\x11GroupStatus.proto\x1a\x13SectionStatus.pro\
-    to\"\xc7\x01\n\nSyncStatus\x12>\n\x14message_group_status\x18\t\x20\x03(\
-    \x0b2\x0c.GroupStatusR\x12messageGroupStatus\x125\n\x0esection_status\
-    \x18\x01\x20\x03(\x0b2\x0e.SectionStatusR\rsectionStatus\x12\x20\n\x0bGI\
-    AHKLOPCIO\x18\x05\x20\x03(\rR\x0bGIAHKLOPCIO\x12\x20\n\x0bCAKCBHPOKLK\
-    \x18\x07\x20\x03(\rR\x0bCAKCBHPOKLKb\x06proto3\
+    to\"\xc7\x01\n\nSyncStatus\x12\x20\n\x0bJABCLKLNLJA\x18\r\x20\x03(\rR\
+    \x0bJABCLKLNLJA\x125\n\x0esection_status\x18\x06\x20\x03(\x0b2\x0e.Secti\
+    onStatusR\rsectionStatus\x12\x20\n\x0bANMKNDHHHLC\x18\x07\x20\x03(\rR\
+    \x0bANMKNDHHHLC\x12>\n\x14message_group_status\x18\x08\x20\x03(\x0b2\x0c\
+    .GroupStatusR\x12messageGroupStatusb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

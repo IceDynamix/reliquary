@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BattleCheckResultType)
 pub enum BattleCheckResultType {
-    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BattleCheckResultType_NEMALLPHDCC)
-    BattleCheckResultType_NEMALLPHDCC = 0,
-    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BattleCheckResultType_ONFLEKKNKBK)
-    BattleCheckResultType_ONFLEKKNKBK = 1,
-    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BattleCheckResultType_MHMNOBLJOJI)
-    BattleCheckResultType_MHMNOBLJOJI = 2,
+    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BattleCheckResultType_HGFJAOKPMNL)
+    BattleCheckResultType_HGFJAOKPMNL = 0,
+    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BattleCheckResultType_JABGMKDMHLH)
+    BattleCheckResultType_JABGMKDMHLH = 1,
+    // @@protoc_insertion_point(enum_value:BattleCheckResultType.BattleCheckResultType_NIPBHPPCLNM)
+    BattleCheckResultType_NIPBHPPCLNM = 2,
 }
 
 impl ::protobuf::Enum for BattleCheckResultType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for BattleCheckResultType {
 
     fn from_i32(value: i32) -> ::std::option::Option<BattleCheckResultType> {
         match value {
-            0 => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_NEMALLPHDCC),
-            1 => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_ONFLEKKNKBK),
-            2 => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_MHMNOBLJOJI),
+            0 => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_HGFJAOKPMNL),
+            1 => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_JABGMKDMHLH),
+            2 => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_NIPBHPPCLNM),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BattleCheckResultType> {
         match str {
-            "BattleCheckResultType_NEMALLPHDCC" => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_NEMALLPHDCC),
-            "BattleCheckResultType_ONFLEKKNKBK" => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_ONFLEKKNKBK),
-            "BattleCheckResultType_MHMNOBLJOJI" => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_MHMNOBLJOJI),
+            "BattleCheckResultType_HGFJAOKPMNL" => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_HGFJAOKPMNL),
+            "BattleCheckResultType_JABGMKDMHLH" => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_JABGMKDMHLH),
+            "BattleCheckResultType_NIPBHPPCLNM" => ::std::option::Option::Some(BattleCheckResultType::BattleCheckResultType_NIPBHPPCLNM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BattleCheckResultType] = &[
-        BattleCheckResultType::BattleCheckResultType_NEMALLPHDCC,
-        BattleCheckResultType::BattleCheckResultType_ONFLEKKNKBK,
-        BattleCheckResultType::BattleCheckResultType_MHMNOBLJOJI,
+        BattleCheckResultType::BattleCheckResultType_HGFJAOKPMNL,
+        BattleCheckResultType::BattleCheckResultType_JABGMKDMHLH,
+        BattleCheckResultType::BattleCheckResultType_NIPBHPPCLNM,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for BattleCheckResultType {
 
 impl ::std::default::Default for BattleCheckResultType {
     fn default() -> Self {
-        BattleCheckResultType::BattleCheckResultType_NEMALLPHDCC
+        BattleCheckResultType::BattleCheckResultType_HGFJAOKPMNL
     }
 }
 
@@ -93,8 +93,8 @@ impl BattleCheckResultType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bBattleCheckResultType.proto*\x8c\x01\n\x15BattleCheckResultType\
-    \x12%\n!BattleCheckResultType_NEMALLPHDCC\x10\0\x12%\n!BattleCheckResult\
-    Type_ONFLEKKNKBK\x10\x01\x12%\n!BattleCheckResultType_MHMNOBLJOJI\x10\
+    \x12%\n!BattleCheckResultType_HGFJAOKPMNL\x10\0\x12%\n!BattleCheckResult\
+    Type_JABGMKDMHLH\x10\x01\x12%\n!BattleCheckResultType_NIPBHPPCLNM\x10\
     \x02b\x06proto3\
 ";
 

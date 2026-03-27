@@ -30,8 +30,8 @@ pub struct ChessRogueSkipTeachingLevelScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChessRogueSkipTeachingLevelScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueSkipTeachingLevelScRsp.NFMHFODDKEA)
-    pub NFMHFODDKEA: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:ChessRogueSkipTeachingLevelScRsp.KDKKLGAFGBL)
+    pub KDKKLGAFGBL: ::protobuf::MessageField<super::ItemList::ItemList>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueSkipTeachingLevelScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ChessRogueSkipTeachingLevelScRsp {
             |m: &mut ChessRogueSkipTeachingLevelScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "NFMHFODDKEA",
-            |m: &ChessRogueSkipTeachingLevelScRsp| { &m.NFMHFODDKEA },
-            |m: &mut ChessRogueSkipTeachingLevelScRsp| { &mut m.NFMHFODDKEA },
+            "KDKKLGAFGBL",
+            |m: &ChessRogueSkipTeachingLevelScRsp| { &m.KDKKLGAFGBL },
+            |m: &mut ChessRogueSkipTeachingLevelScRsp| { &mut m.KDKKLGAFGBL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueSkipTeachingLevelScRsp>(
             "ChessRogueSkipTeachingLevelScRsp",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for ChessRogueSkipTeachingLevelScRsp {
                 72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NFMHFODDKEA)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KDKKLGAFGBL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for ChessRogueSkipTeachingLevelScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if let Some(v) = self.NFMHFODDKEA.as_ref() {
+        if let Some(v) = self.KDKKLGAFGBL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -113,8 +113,8 @@ impl ::protobuf::Message for ChessRogueSkipTeachingLevelScRsp {
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
         }
-        if let Some(v) = self.NFMHFODDKEA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.KDKKLGAFGBL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for ChessRogueSkipTeachingLevelScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.NFMHFODDKEA.clear();
+        self.KDKKLGAFGBL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueSkipTeachingLevelScRsp {
         static instance: ChessRogueSkipTeachingLevelScRsp = ChessRogueSkipTeachingLevelScRsp {
             retcode: 0,
-            NFMHFODDKEA: ::protobuf::MessageField::none(),
+            KDKKLGAFGBL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,8 +168,8 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueSkipTeachingLevelScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&ChessRogueSkipTeachingLevelScRsp.proto\x1a\x0eItemList.proto\"i\n\x20\
     ChessRogueSkipTeachingLevelScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\
-    \x07retcode\x12+\n\x0bNFMHFODDKEA\x18\x01\x20\x01(\x0b2\t.ItemListR\x0bN\
-    FMHFODDKEAb\x06proto3\
+    \x07retcode\x12+\n\x0bKDKKLGAFGBL\x18\n\x20\x01(\x0b2\t.ItemListR\x0bKDK\
+    KLGAFGBLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

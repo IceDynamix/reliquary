@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NewSupplementVisitorCsReq {
     // message fields
-    // @@protoc_insertion_point(field:NewSupplementVisitorCsReq.BEGKOPPFEBE)
-    pub BEGKOPPFEBE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:NewSupplementVisitorCsReq.JDMPAFNMAKJ)
+    pub JDMPAFNMAKJ: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:NewSupplementVisitorCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl NewSupplementVisitorCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BEGKOPPFEBE",
-            |m: &NewSupplementVisitorCsReq| { &m.BEGKOPPFEBE },
-            |m: &mut NewSupplementVisitorCsReq| { &mut m.BEGKOPPFEBE },
+            "JDMPAFNMAKJ",
+            |m: &NewSupplementVisitorCsReq| { &m.JDMPAFNMAKJ },
+            |m: &mut NewSupplementVisitorCsReq| { &mut m.JDMPAFNMAKJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NewSupplementVisitorCsReq>(
             "NewSupplementVisitorCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for NewSupplementVisitorCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BEGKOPPFEBE)?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JDMPAFNMAKJ)?;
                 },
-                96 => {
-                    self.BEGKOPPFEBE.push(is.read_uint32()?);
+                48 => {
+                    self.JDMPAFNMAKJ.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for NewSupplementVisitorCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.BEGKOPPFEBE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.JDMPAFNMAKJ);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.BEGKOPPFEBE)?;
+        os.write_repeated_packed_uint32(6, &self.JDMPAFNMAKJ)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for NewSupplementVisitorCsReq {
     }
 
     fn clear(&mut self) {
-        self.BEGKOPPFEBE.clear();
+        self.JDMPAFNMAKJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NewSupplementVisitorCsReq {
         static instance: NewSupplementVisitorCsReq = NewSupplementVisitorCsReq {
-            BEGKOPPFEBE: ::std::vec::Vec::new(),
+            JDMPAFNMAKJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for NewSupplementVisitorCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fNewSupplementVisitorCsReq.proto\"=\n\x19NewSupplementVisitorCsReq\
-    \x12\x20\n\x0bBEGKOPPFEBE\x18\x0c\x20\x03(\rR\x0bBEGKOPPFEBEb\x06proto3\
+    \x12\x20\n\x0bJDMPAFNMAKJ\x18\x06\x20\x03(\rR\x0bJDMPAFNMAKJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

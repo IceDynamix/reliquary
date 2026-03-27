@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdatePlayWithPsnOnlySettingCsReq {
     // message oneof groups
-    pub IGCJONCBMLN: ::std::option::Option<update_play_with_psn_only_setting_cs_req::IGCJONCBMLN>,
+    pub GFOINHGLBIG: ::std::option::Option<update_play_with_psn_only_setting_cs_req::GFOINHGLBIG>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdatePlayWithPsnOnlySettingCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,122 +45,122 @@ impl UpdatePlayWithPsnOnlySettingCsReq {
         ::std::default::Default::default()
     }
 
-    // .IDKMJPILJHK GCILCHKOLFL = 1425;
+    // .CEHOJIJEDLE FGHDHKPGDMB = 872;
 
-    pub fn GCILCHKOLFL(&self) -> &super::IDKMJPILJHK::IDKMJPILJHK {
-        match self.IGCJONCBMLN {
-            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::GCILCHKOLFL(ref v)) => v,
-            _ => <super::IDKMJPILJHK::IDKMJPILJHK as ::protobuf::Message>::default_instance(),
+    pub fn FGHDHKPGDMB(&self) -> &super::CEHOJIJEDLE::CEHOJIJEDLE {
+        match self.GFOINHGLBIG {
+            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::FGHDHKPGDMB(ref v)) => v,
+            _ => <super::CEHOJIJEDLE::CEHOJIJEDLE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_GCILCHKOLFL(&mut self) {
-        self.IGCJONCBMLN = ::std::option::Option::None;
+    pub fn clear_FGHDHKPGDMB(&mut self) {
+        self.GFOINHGLBIG = ::std::option::Option::None;
     }
 
-    pub fn has_GCILCHKOLFL(&self) -> bool {
-        match self.IGCJONCBMLN {
-            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::GCILCHKOLFL(..)) => true,
+    pub fn has_FGHDHKPGDMB(&self) -> bool {
+        match self.GFOINHGLBIG {
+            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::FGHDHKPGDMB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_GCILCHKOLFL(&mut self, v: super::IDKMJPILJHK::IDKMJPILJHK) {
-        self.IGCJONCBMLN = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::GCILCHKOLFL(v))
+    pub fn set_FGHDHKPGDMB(&mut self, v: super::CEHOJIJEDLE::CEHOJIJEDLE) {
+        self.GFOINHGLBIG = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::FGHDHKPGDMB(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_GCILCHKOLFL(&mut self) -> &mut super::IDKMJPILJHK::IDKMJPILJHK {
-        if let ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::GCILCHKOLFL(_)) = self.IGCJONCBMLN {
+    pub fn mut_FGHDHKPGDMB(&mut self) -> &mut super::CEHOJIJEDLE::CEHOJIJEDLE {
+        if let ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::FGHDHKPGDMB(_)) = self.GFOINHGLBIG {
         } else {
-            self.IGCJONCBMLN = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::GCILCHKOLFL(super::IDKMJPILJHK::IDKMJPILJHK::new()));
+            self.GFOINHGLBIG = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::FGHDHKPGDMB(super::CEHOJIJEDLE::CEHOJIJEDLE::new()));
         }
-        match self.IGCJONCBMLN {
-            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::GCILCHKOLFL(ref mut v)) => v,
+        match self.GFOINHGLBIG {
+            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::FGHDHKPGDMB(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_GCILCHKOLFL(&mut self) -> super::IDKMJPILJHK::IDKMJPILJHK {
-        if self.has_GCILCHKOLFL() {
-            match self.IGCJONCBMLN.take() {
-                ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::GCILCHKOLFL(v)) => v,
+    pub fn take_FGHDHKPGDMB(&mut self) -> super::CEHOJIJEDLE::CEHOJIJEDLE {
+        if self.has_FGHDHKPGDMB() {
+            match self.GFOINHGLBIG.take() {
+                ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::FGHDHKPGDMB(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::IDKMJPILJHK::IDKMJPILJHK::new()
+            super::CEHOJIJEDLE::CEHOJIJEDLE::new()
         }
     }
 
-    // .JPEEPALCOGI HPJBPMFBMMN = 1081;
+    // .CFCGJMCFFCC NKEIMEEOAJM = 883;
 
-    pub fn HPJBPMFBMMN(&self) -> &super::JPEEPALCOGI::JPEEPALCOGI {
-        match self.IGCJONCBMLN {
-            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::HPJBPMFBMMN(ref v)) => v,
-            _ => <super::JPEEPALCOGI::JPEEPALCOGI as ::protobuf::Message>::default_instance(),
+    pub fn NKEIMEEOAJM(&self) -> &super::CFCGJMCFFCC::CFCGJMCFFCC {
+        match self.GFOINHGLBIG {
+            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::NKEIMEEOAJM(ref v)) => v,
+            _ => <super::CFCGJMCFFCC::CFCGJMCFFCC as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_HPJBPMFBMMN(&mut self) {
-        self.IGCJONCBMLN = ::std::option::Option::None;
+    pub fn clear_NKEIMEEOAJM(&mut self) {
+        self.GFOINHGLBIG = ::std::option::Option::None;
     }
 
-    pub fn has_HPJBPMFBMMN(&self) -> bool {
-        match self.IGCJONCBMLN {
-            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::HPJBPMFBMMN(..)) => true,
+    pub fn has_NKEIMEEOAJM(&self) -> bool {
+        match self.GFOINHGLBIG {
+            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::NKEIMEEOAJM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_HPJBPMFBMMN(&mut self, v: super::JPEEPALCOGI::JPEEPALCOGI) {
-        self.IGCJONCBMLN = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::HPJBPMFBMMN(v))
+    pub fn set_NKEIMEEOAJM(&mut self, v: super::CFCGJMCFFCC::CFCGJMCFFCC) {
+        self.GFOINHGLBIG = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::NKEIMEEOAJM(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_HPJBPMFBMMN(&mut self) -> &mut super::JPEEPALCOGI::JPEEPALCOGI {
-        if let ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::HPJBPMFBMMN(_)) = self.IGCJONCBMLN {
+    pub fn mut_NKEIMEEOAJM(&mut self) -> &mut super::CFCGJMCFFCC::CFCGJMCFFCC {
+        if let ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::NKEIMEEOAJM(_)) = self.GFOINHGLBIG {
         } else {
-            self.IGCJONCBMLN = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::HPJBPMFBMMN(super::JPEEPALCOGI::JPEEPALCOGI::new()));
+            self.GFOINHGLBIG = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::NKEIMEEOAJM(super::CFCGJMCFFCC::CFCGJMCFFCC::new()));
         }
-        match self.IGCJONCBMLN {
-            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::HPJBPMFBMMN(ref mut v)) => v,
+        match self.GFOINHGLBIG {
+            ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::NKEIMEEOAJM(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_HPJBPMFBMMN(&mut self) -> super::JPEEPALCOGI::JPEEPALCOGI {
-        if self.has_HPJBPMFBMMN() {
-            match self.IGCJONCBMLN.take() {
-                ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::HPJBPMFBMMN(v)) => v,
+    pub fn take_NKEIMEEOAJM(&mut self) -> super::CFCGJMCFFCC::CFCGJMCFFCC {
+        if self.has_NKEIMEEOAJM() {
+            match self.GFOINHGLBIG.take() {
+                ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::NKEIMEEOAJM(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JPEEPALCOGI::JPEEPALCOGI::new()
+            super::CFCGJMCFFCC::CFCGJMCFFCC::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IDKMJPILJHK::IDKMJPILJHK>(
-            "GCILCHKOLFL",
-            UpdatePlayWithPsnOnlySettingCsReq::has_GCILCHKOLFL,
-            UpdatePlayWithPsnOnlySettingCsReq::GCILCHKOLFL,
-            UpdatePlayWithPsnOnlySettingCsReq::mut_GCILCHKOLFL,
-            UpdatePlayWithPsnOnlySettingCsReq::set_GCILCHKOLFL,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CEHOJIJEDLE::CEHOJIJEDLE>(
+            "FGHDHKPGDMB",
+            UpdatePlayWithPsnOnlySettingCsReq::has_FGHDHKPGDMB,
+            UpdatePlayWithPsnOnlySettingCsReq::FGHDHKPGDMB,
+            UpdatePlayWithPsnOnlySettingCsReq::mut_FGHDHKPGDMB,
+            UpdatePlayWithPsnOnlySettingCsReq::set_FGHDHKPGDMB,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JPEEPALCOGI::JPEEPALCOGI>(
-            "HPJBPMFBMMN",
-            UpdatePlayWithPsnOnlySettingCsReq::has_HPJBPMFBMMN,
-            UpdatePlayWithPsnOnlySettingCsReq::HPJBPMFBMMN,
-            UpdatePlayWithPsnOnlySettingCsReq::mut_HPJBPMFBMMN,
-            UpdatePlayWithPsnOnlySettingCsReq::set_HPJBPMFBMMN,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CFCGJMCFFCC::CFCGJMCFFCC>(
+            "NKEIMEEOAJM",
+            UpdatePlayWithPsnOnlySettingCsReq::has_NKEIMEEOAJM,
+            UpdatePlayWithPsnOnlySettingCsReq::NKEIMEEOAJM,
+            UpdatePlayWithPsnOnlySettingCsReq::mut_NKEIMEEOAJM,
+            UpdatePlayWithPsnOnlySettingCsReq::set_NKEIMEEOAJM,
         ));
-        oneofs.push(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::generated_oneof_descriptor_data());
+        oneofs.push(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdatePlayWithPsnOnlySettingCsReq>(
             "UpdatePlayWithPsnOnlySettingCsReq",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for UpdatePlayWithPsnOnlySettingCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                11402 => {
-                    self.IGCJONCBMLN = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::GCILCHKOLFL(is.read_message()?));
+                6978 => {
+                    self.GFOINHGLBIG = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::FGHDHKPGDMB(is.read_message()?));
                 },
-                8650 => {
-                    self.IGCJONCBMLN = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::HPJBPMFBMMN(is.read_message()?));
+                7066 => {
+                    self.GFOINHGLBIG = ::std::option::Option::Some(update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::NKEIMEEOAJM(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for UpdatePlayWithPsnOnlySettingCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.IGCJONCBMLN {
+        if let ::std::option::Option::Some(ref v) = self.GFOINHGLBIG {
             match v {
-                &update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::GCILCHKOLFL(ref v) => {
+                &update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::FGHDHKPGDMB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::HPJBPMFBMMN(ref v) => {
+                &update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::NKEIMEEOAJM(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for UpdatePlayWithPsnOnlySettingCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.IGCJONCBMLN {
+        if let ::std::option::Option::Some(ref v) = self.GFOINHGLBIG {
             match v {
-                &update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::GCILCHKOLFL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1425, v, os)?;
+                &update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::FGHDHKPGDMB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(872, v, os)?;
                 },
-                &update_play_with_psn_only_setting_cs_req::IGCJONCBMLN::HPJBPMFBMMN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1081, v, os)?;
+                &update_play_with_psn_only_setting_cs_req::GFOINHGLBIG::NKEIMEEOAJM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(883, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for UpdatePlayWithPsnOnlySettingCsReq {
     }
 
     fn clear(&mut self) {
-        self.IGCJONCBMLN = ::std::option::Option::None;
-        self.IGCJONCBMLN = ::std::option::Option::None;
+        self.GFOINHGLBIG = ::std::option::Option::None;
+        self.GFOINHGLBIG = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdatePlayWithPsnOnlySettingCsReq {
         static instance: UpdatePlayWithPsnOnlySettingCsReq = UpdatePlayWithPsnOnlySettingCsReq {
-            IGCJONCBMLN: ::std::option::Option::None,
+            GFOINHGLBIG: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,37 +278,37 @@ pub mod update_play_with_psn_only_setting_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:UpdatePlayWithPsnOnlySettingCsReq.IGCJONCBMLN)
-    pub enum IGCJONCBMLN {
-        // @@protoc_insertion_point(oneof_field:UpdatePlayWithPsnOnlySettingCsReq.GCILCHKOLFL)
-        GCILCHKOLFL(super::super::IDKMJPILJHK::IDKMJPILJHK),
-        // @@protoc_insertion_point(oneof_field:UpdatePlayWithPsnOnlySettingCsReq.HPJBPMFBMMN)
-        HPJBPMFBMMN(super::super::JPEEPALCOGI::JPEEPALCOGI),
+    // @@protoc_insertion_point(oneof:UpdatePlayWithPsnOnlySettingCsReq.GFOINHGLBIG)
+    pub enum GFOINHGLBIG {
+        // @@protoc_insertion_point(oneof_field:UpdatePlayWithPsnOnlySettingCsReq.FGHDHKPGDMB)
+        FGHDHKPGDMB(super::super::CEHOJIJEDLE::CEHOJIJEDLE),
+        // @@protoc_insertion_point(oneof_field:UpdatePlayWithPsnOnlySettingCsReq.NKEIMEEOAJM)
+        NKEIMEEOAJM(super::super::CFCGJMCFFCC::CFCGJMCFFCC),
     }
 
-    impl ::protobuf::Oneof for IGCJONCBMLN {
+    impl ::protobuf::Oneof for GFOINHGLBIG {
     }
 
-    impl ::protobuf::OneofFull for IGCJONCBMLN {
+    impl ::protobuf::OneofFull for GFOINHGLBIG {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::UpdatePlayWithPsnOnlySettingCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("IGCJONCBMLN").unwrap()).clone()
+            descriptor.get(|| <super::UpdatePlayWithPsnOnlySettingCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("GFOINHGLBIG").unwrap()).clone()
         }
     }
 
-    impl IGCJONCBMLN {
+    impl GFOINHGLBIG {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<IGCJONCBMLN>("IGCJONCBMLN")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<GFOINHGLBIG>("GFOINHGLBIG")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'UpdatePlayWithPsnOnlySettingCsReq.proto\x1a\x11IDKMJPILJHK.proto\x1a\
-    \x11JPEEPALCOGI.proto\"\x98\x01\n!UpdatePlayWithPsnOnlySettingCsReq\x121\
-    \n\x0bGCILCHKOLFL\x18\x91\x0b\x20\x01(\x0b2\x0c.IDKMJPILJHKH\0R\x0bGCILC\
-    HKOLFL\x121\n\x0bHPJBPMFBMMN\x18\xb9\x08\x20\x01(\x0b2\x0c.JPEEPALCOGIH\
-    \0R\x0bHPJBPMFBMMNB\r\n\x0bIGCJONCBMLNb\x06proto3\
+    \n'UpdatePlayWithPsnOnlySettingCsReq.proto\x1a\x11CEHOJIJEDLE.proto\x1a\
+    \x11CFCGJMCFFCC.proto\"\x98\x01\n!UpdatePlayWithPsnOnlySettingCsReq\x121\
+    \n\x0bFGHDHKPGDMB\x18\xe8\x06\x20\x01(\x0b2\x0c.CEHOJIJEDLEH\0R\x0bFGHDH\
+    KPGDMB\x121\n\x0bNKEIMEEOAJM\x18\xf3\x06\x20\x01(\x0b2\x0c.CFCGJMCFFCCH\
+    \0R\x0bNKEIMEEOAJMB\r\n\x0bGFOINHGLBIGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -326,8 +326,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::IDKMJPILJHK::file_descriptor().clone());
-            deps.push(super::JPEEPALCOGI::file_descriptor().clone());
+            deps.push(super::CEHOJIJEDLE::file_descriptor().clone());
+            deps.push(super::CFCGJMCFFCC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(UpdatePlayWithPsnOnlySettingCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

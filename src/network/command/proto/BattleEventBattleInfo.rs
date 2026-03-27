@@ -33,7 +33,7 @@ pub struct BattleEventBattleInfo {
     // @@protoc_insertion_point(field:BattleEventBattleInfo.status)
     pub status: ::protobuf::MessageField<super::BattleEventProperty::BattleEventProperty>,
     // @@protoc_insertion_point(field:BattleEventBattleInfo.skill_info)
-    pub skill_info: ::std::vec::Vec<super::IHBAFEIMEFM::IHBAFEIMEFM>,
+    pub skill_info: ::std::vec::Vec<super::CLDFGDGEIPC::CLDFGDGEIPC>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleEventBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -186,10 +186,10 @@ impl ::protobuf::reflect::ProtobufValue for BattleEventBattleInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bBattleEventBattleInfo.proto\x1a\x19BattleEventProperty.proto\x1a\
-    \x11IHBAFEIMEFM.proto\"\x9a\x01\n\x15BattleEventBattleInfo\x12&\n\x0fbat\
+    \x11CLDFGDGEIPC.proto\"\x9a\x01\n\x15BattleEventBattleInfo\x12&\n\x0fbat\
     tle_event_id\x18\x01\x20\x01(\rR\rbattleEventId\x12,\n\x06status\x18\x02\
     \x20\x01(\x0b2\x14.BattleEventPropertyR\x06status\x12+\n\nskill_info\x18\
-    \x03\x20\x03(\x0b2\x0c.IHBAFEIMEFMR\tskillInfob\x06proto3\
+    \x03\x20\x03(\x0b2\x0c.CLDFGDGEIPCR\tskillInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -208,7 +208,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::BattleEventProperty::file_descriptor().clone());
-            deps.push(super::IHBAFEIMEFM::file_descriptor().clone());
+            deps.push(super::CLDFGDGEIPC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleEventBattleInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

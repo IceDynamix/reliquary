@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ElfRestaurantBuyShopItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ElfRestaurantBuyShopItemCsReq.AADJHHHCENC)
-    pub AADJHHHCENC: u32,
-    // @@protoc_insertion_point(field:ElfRestaurantBuyShopItemCsReq.PBAMJBFNBDA)
-    pub PBAMJBFNBDA: u32,
+    // @@protoc_insertion_point(field:ElfRestaurantBuyShopItemCsReq.AHBMFFNBFPH)
+    pub AHBMFFNBFPH: u32,
+    // @@protoc_insertion_point(field:ElfRestaurantBuyShopItemCsReq.MJKAGNJDHFJ)
+    pub MJKAGNJDHFJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ElfRestaurantBuyShopItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ElfRestaurantBuyShopItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AADJHHHCENC",
-            |m: &ElfRestaurantBuyShopItemCsReq| { &m.AADJHHHCENC },
-            |m: &mut ElfRestaurantBuyShopItemCsReq| { &mut m.AADJHHHCENC },
+            "AHBMFFNBFPH",
+            |m: &ElfRestaurantBuyShopItemCsReq| { &m.AHBMFFNBFPH },
+            |m: &mut ElfRestaurantBuyShopItemCsReq| { &mut m.AHBMFFNBFPH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PBAMJBFNBDA",
-            |m: &ElfRestaurantBuyShopItemCsReq| { &m.PBAMJBFNBDA },
-            |m: &mut ElfRestaurantBuyShopItemCsReq| { &mut m.PBAMJBFNBDA },
+            "MJKAGNJDHFJ",
+            |m: &ElfRestaurantBuyShopItemCsReq| { &m.MJKAGNJDHFJ },
+            |m: &mut ElfRestaurantBuyShopItemCsReq| { &mut m.MJKAGNJDHFJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ElfRestaurantBuyShopItemCsReq>(
             "ElfRestaurantBuyShopItemCsReq",
@@ -80,10 +80,10 @@ impl ::protobuf::Message for ElfRestaurantBuyShopItemCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 112 => {
-                    self.AADJHHHCENC = is.read_uint32()?;
+                    self.AHBMFFNBFPH = is.read_uint32()?;
                 },
-                40 => {
-                    self.PBAMJBFNBDA = is.read_uint32()?;
+                24 => {
+                    self.MJKAGNJDHFJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ElfRestaurantBuyShopItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AADJHHHCENC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.AADJHHHCENC);
+        if self.AHBMFFNBFPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.AHBMFFNBFPH);
         }
-        if self.PBAMJBFNBDA != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.PBAMJBFNBDA);
+        if self.MJKAGNJDHFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.MJKAGNJDHFJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ElfRestaurantBuyShopItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AADJHHHCENC != 0 {
-            os.write_uint32(14, self.AADJHHHCENC)?;
+        if self.AHBMFFNBFPH != 0 {
+            os.write_uint32(14, self.AHBMFFNBFPH)?;
         }
-        if self.PBAMJBFNBDA != 0 {
-            os.write_uint32(5, self.PBAMJBFNBDA)?;
+        if self.MJKAGNJDHFJ != 0 {
+            os.write_uint32(3, self.MJKAGNJDHFJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ElfRestaurantBuyShopItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.AADJHHHCENC = 0;
-        self.PBAMJBFNBDA = 0;
+        self.AHBMFFNBFPH = 0;
+        self.MJKAGNJDHFJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ElfRestaurantBuyShopItemCsReq {
         static instance: ElfRestaurantBuyShopItemCsReq = ElfRestaurantBuyShopItemCsReq {
-            AADJHHHCENC: 0,
-            PBAMJBFNBDA: 0,
+            AHBMFFNBFPH: 0,
+            MJKAGNJDHFJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantBuyShopItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#ElfRestaurantBuyShopItemCsReq.proto\"c\n\x1dElfRestaurantBuyShopItemC\
-    sReq\x12\x20\n\x0bAADJHHHCENC\x18\x0e\x20\x01(\rR\x0bAADJHHHCENC\x12\x20\
-    \n\x0bPBAMJBFNBDA\x18\x05\x20\x01(\rR\x0bPBAMJBFNBDAb\x06proto3\
+    sReq\x12\x20\n\x0bAHBMFFNBFPH\x18\x0e\x20\x01(\rR\x0bAHBMFFNBFPH\x12\x20\
+    \n\x0bMJKAGNJDHFJ\x18\x03\x20\x01(\rR\x0bMJKAGNJDHFJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

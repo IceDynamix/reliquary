@@ -30,58 +30,58 @@ pub struct BattleGridFightSpecialBattleInfo {
     // message fields
     // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.cur_level_id)
     pub cur_level_id: u32,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.FIBGDEJOOHM)
-    pub FIBGDEJOOHM: u32,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.CNFHEEHLMMJ)
+    pub CNFHEEHLMMJ: u32,
     // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.rogue_money)
     pub rogue_money: u32,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.FHIDIKIDPLI)
-    pub FHIDIKIDPLI: ::std::vec::Vec<super::EDDKFLLHEDE::EDDKFLLHEDE>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.OMDCAOJEAAK)
-    pub OMDCAOJEAAK: ::std::vec::Vec<super::EDDKFLLHEDE::EDDKFLLHEDE>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.BJEHLNHDHJL)
-    pub BJEHLNHDHJL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.BPALPDOEEBJ)
-    pub BPALPDOEEBJ: ::protobuf::MessageField<super::NDFFLDMJIHD::NDFFLDMJIHD>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.LOINNMCNMBL)
-    pub LOINNMCNMBL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.DAKLJCANAJA)
+    pub DAKLJCANAJA: ::std::vec::Vec<super::KHFBCMCJDCL::KHFBCMCJDCL>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.FKKDKDIFGCH)
+    pub FKKDKDIFGCH: ::std::vec::Vec<super::KHFBCMCJDCL::KHFBCMCJDCL>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.BDFIJINDKBO)
+    pub BDFIJINDKBO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.HINLFKMJDJJ)
+    pub HINLFKMJDJJ: ::protobuf::MessageField<super::NNMPNANHJFA::NNMPNANHJFA>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.IDBFKKMMIGI)
+    pub IDBFKKMMIGI: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.grid_fight_cur_level_exp)
     pub grid_fight_cur_level_exp: u32,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.LNLNOFIMMCK)
-    pub LNLNOFIMMCK: u32,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.DLCPGBNDGDE)
-    pub DLCPGBNDGDE: u32,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.OHPGOGCGAHI)
-    pub OHPGOGCGAHI: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.CBAEAFCKOLI)
-    pub CBAEAFCKOLI: u32,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.DFAMLLOCNFP)
-    pub DFAMLLOCNFP: u32,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.ECNMJCJKKEC)
-    pub ECNMJCJKKEC: bool,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.JJCPDKCLKGO)
-    pub JJCPDKCLKGO: bool,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.AJOLDHICCDC)
-    pub AJOLDHICCDC: ::std::vec::Vec<super::KKEDAGNKBOK::KKEDAGNKBOK>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.DHLOILEEMBB)
-    pub DHLOILEEMBB: ::std::vec::Vec<super::PJHIOPAOCMH::PJHIOPAOCMH>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.JGFGABLGJAF)
-    pub JGFGABLGJAF: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.LCJJFIPGHNJ)
-    pub LCJJFIPGHNJ: bool,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.FJJIBJBHJJD)
-    pub FJJIBJBHJJD: u32,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.FGIHGBAPGMG)
-    pub FGIHGBAPGMG: ::protobuf::MessageField<super::OMIGEBBKBPE::OMIGEBBKBPE>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.KHCMOKJLAHB)
-    pub KHCMOKJLAHB: u32,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.GCAALFFBECE)
-    pub GCAALFFBECE: u32,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.NNIFNGBPCKH)
-    pub NNIFNGBPCKH: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.ALAKAKOCLBI)
-    pub ALAKAKOCLBI: ::std::vec::Vec<super::NMBNGOKIBEG::NMBNGOKIBEG>,
-    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.PKEIPFMMOCL)
-    pub PKEIPFMMOCL: u32,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.AFFCJINOELC)
+    pub AFFCJINOELC: u32,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.OGHJAPABFDD)
+    pub OGHJAPABFDD: u32,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.FJNJOFKEOMD)
+    pub FJNJOFKEOMD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.PKLEEHIKIPC)
+    pub PKLEEHIKIPC: u32,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.DACNEPFMDEL)
+    pub DACNEPFMDEL: u32,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.DFMJDGBDBJF)
+    pub DFMJDGBDBJF: bool,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.FJPFDNJCKFP)
+    pub FJPFDNJCKFP: bool,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.KKLNLJDEMMI)
+    pub KKLNLJDEMMI: ::std::vec::Vec<super::KLIJFOOFONO::KLIJFOOFONO>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.KEHMAABFDFG)
+    pub KEHMAABFDFG: ::std::vec::Vec<super::FLFEGBGLNBG::FLFEGBGLNBG>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.KFHLBDKBKPO)
+    pub KFHLBDKBKPO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.FGAKDCLNKEC)
+    pub FGAKDCLNKEC: bool,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.OAGJHEMHCJF)
+    pub OAGJHEMHCJF: u32,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.FMGCMEAPHAN)
+    pub FMGCMEAPHAN: ::protobuf::MessageField<super::ACCFOILMEMN::ACCFOILMEMN>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.GHMGOECABFJ)
+    pub GHMGOECABFJ: u32,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.FMPNLNONOJP)
+    pub FMPNLNONOJP: u32,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.DBMANGFEEKO)
+    pub DBMANGFEEKO: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.OLOIBGCGCCA)
+    pub OLOIBGCGCCA: ::std::vec::Vec<super::MLDFIAGBCLO::MLDFIAGBCLO>,
+    // @@protoc_insertion_point(field:BattleGridFightSpecialBattleInfo.AOEKDEACGJC)
+    pub AOEKDEACGJC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BattleGridFightSpecialBattleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -107,9 +107,9 @@ impl BattleGridFightSpecialBattleInfo {
             |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.cur_level_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FIBGDEJOOHM",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.FIBGDEJOOHM },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.FIBGDEJOOHM },
+            "CNFHEEHLMMJ",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.CNFHEEHLMMJ },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.CNFHEEHLMMJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "rogue_money",
@@ -117,29 +117,29 @@ impl BattleGridFightSpecialBattleInfo {
             |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.rogue_money },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FHIDIKIDPLI",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.FHIDIKIDPLI },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.FHIDIKIDPLI },
+            "DAKLJCANAJA",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.DAKLJCANAJA },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.DAKLJCANAJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OMDCAOJEAAK",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.OMDCAOJEAAK },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.OMDCAOJEAAK },
+            "FKKDKDIFGCH",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.FKKDKDIFGCH },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.FKKDKDIFGCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BJEHLNHDHJL",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.BJEHLNHDHJL },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.BJEHLNHDHJL },
+            "BDFIJINDKBO",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.BDFIJINDKBO },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.BDFIJINDKBO },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NDFFLDMJIHD::NDFFLDMJIHD>(
-            "BPALPDOEEBJ",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.BPALPDOEEBJ },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.BPALPDOEEBJ },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNMPNANHJFA::NNMPNANHJFA>(
+            "HINLFKMJDJJ",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.HINLFKMJDJJ },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.HINLFKMJDJJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LOINNMCNMBL",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.LOINNMCNMBL },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.LOINNMCNMBL },
+            "IDBFKKMMIGI",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.IDBFKKMMIGI },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.IDBFKKMMIGI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "grid_fight_cur_level_exp",
@@ -147,94 +147,94 @@ impl BattleGridFightSpecialBattleInfo {
             |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.grid_fight_cur_level_exp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LNLNOFIMMCK",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.LNLNOFIMMCK },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.LNLNOFIMMCK },
+            "AFFCJINOELC",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.AFFCJINOELC },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.AFFCJINOELC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DLCPGBNDGDE",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.DLCPGBNDGDE },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.DLCPGBNDGDE },
+            "OGHJAPABFDD",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.OGHJAPABFDD },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.OGHJAPABFDD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OHPGOGCGAHI",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.OHPGOGCGAHI },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.OHPGOGCGAHI },
+            "FJNJOFKEOMD",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.FJNJOFKEOMD },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.FJNJOFKEOMD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CBAEAFCKOLI",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.CBAEAFCKOLI },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.CBAEAFCKOLI },
+            "PKLEEHIKIPC",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.PKLEEHIKIPC },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.PKLEEHIKIPC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DFAMLLOCNFP",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.DFAMLLOCNFP },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.DFAMLLOCNFP },
+            "DACNEPFMDEL",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.DACNEPFMDEL },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.DACNEPFMDEL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECNMJCJKKEC",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.ECNMJCJKKEC },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.ECNMJCJKKEC },
+            "DFMJDGBDBJF",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.DFMJDGBDBJF },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.DFMJDGBDBJF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JJCPDKCLKGO",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.JJCPDKCLKGO },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.JJCPDKCLKGO },
+            "FJPFDNJCKFP",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.FJPFDNJCKFP },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.FJPFDNJCKFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AJOLDHICCDC",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.AJOLDHICCDC },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.AJOLDHICCDC },
+            "KKLNLJDEMMI",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.KKLNLJDEMMI },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.KKLNLJDEMMI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DHLOILEEMBB",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.DHLOILEEMBB },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.DHLOILEEMBB },
+            "KEHMAABFDFG",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.KEHMAABFDFG },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.KEHMAABFDFG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JGFGABLGJAF",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.JGFGABLGJAF },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.JGFGABLGJAF },
+            "KFHLBDKBKPO",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.KFHLBDKBKPO },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.KFHLBDKBKPO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCJJFIPGHNJ",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.LCJJFIPGHNJ },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.LCJJFIPGHNJ },
+            "FGAKDCLNKEC",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.FGAKDCLNKEC },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.FGAKDCLNKEC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJJIBJBHJJD",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.FJJIBJBHJJD },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.FJJIBJBHJJD },
+            "OAGJHEMHCJF",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.OAGJHEMHCJF },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.OAGJHEMHCJF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OMIGEBBKBPE::OMIGEBBKBPE>(
-            "FGIHGBAPGMG",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.FGIHGBAPGMG },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.FGIHGBAPGMG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KHCMOKJLAHB",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.KHCMOKJLAHB },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.KHCMOKJLAHB },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ACCFOILMEMN::ACCFOILMEMN>(
+            "FMGCMEAPHAN",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.FMGCMEAPHAN },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.FMGCMEAPHAN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCAALFFBECE",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.GCAALFFBECE },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.GCAALFFBECE },
+            "GHMGOECABFJ",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.GHMGOECABFJ },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.GHMGOECABFJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FMPNLNONOJP",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.FMPNLNONOJP },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.FMPNLNONOJP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NNIFNGBPCKH",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.NNIFNGBPCKH },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.NNIFNGBPCKH },
+            "DBMANGFEEKO",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.DBMANGFEEKO },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.DBMANGFEEKO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ALAKAKOCLBI",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.ALAKAKOCLBI },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.ALAKAKOCLBI },
+            "OLOIBGCGCCA",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.OLOIBGCGCCA },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.OLOIBGCGCCA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PKEIPFMMOCL",
-            |m: &BattleGridFightSpecialBattleInfo| { &m.PKEIPFMMOCL },
-            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.PKEIPFMMOCL },
+            "AOEKDEACGJC",
+            |m: &BattleGridFightSpecialBattleInfo| { &m.AOEKDEACGJC },
+            |m: &mut BattleGridFightSpecialBattleInfo| { &mut m.AOEKDEACGJC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleGridFightSpecialBattleInfo>(
             "BattleGridFightSpecialBattleInfo",
@@ -258,97 +258,97 @@ impl ::protobuf::Message for BattleGridFightSpecialBattleInfo {
                     self.cur_level_id = is.read_uint32()?;
                 },
                 16 => {
-                    self.FIBGDEJOOHM = is.read_uint32()?;
+                    self.CNFHEEHLMMJ = is.read_uint32()?;
                 },
                 24 => {
                     self.rogue_money = is.read_uint32()?;
                 },
                 34 => {
-                    self.FHIDIKIDPLI.push(is.read_message()?);
+                    self.DAKLJCANAJA.push(is.read_message()?);
                 },
                 42 => {
-                    self.OMDCAOJEAAK.push(is.read_message()?);
+                    self.FKKDKDIFGCH.push(is.read_message()?);
                 },
                 50 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BJEHLNHDHJL)?;
+                    is.read_repeated_packed_uint32_into(&mut self.BDFIJINDKBO)?;
                 },
                 48 => {
-                    self.BJEHLNHDHJL.push(is.read_uint32()?);
+                    self.BDFIJINDKBO.push(is.read_uint32()?);
                 },
                 58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BPALPDOEEBJ)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HINLFKMJDJJ)?;
                 },
                 66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.LOINNMCNMBL)?;
+                    is.read_repeated_packed_uint32_into(&mut self.IDBFKKMMIGI)?;
                 },
                 64 => {
-                    self.LOINNMCNMBL.push(is.read_uint32()?);
+                    self.IDBFKKMMIGI.push(is.read_uint32()?);
                 },
                 72 => {
                     self.grid_fight_cur_level_exp = is.read_uint32()?;
                 },
                 80 => {
-                    self.LNLNOFIMMCK = is.read_uint32()?;
+                    self.AFFCJINOELC = is.read_uint32()?;
                 },
                 88 => {
-                    self.DLCPGBNDGDE = is.read_uint32()?;
+                    self.OGHJAPABFDD = is.read_uint32()?;
                 },
                 98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OHPGOGCGAHI)?;
+                    is.read_repeated_packed_uint32_into(&mut self.FJNJOFKEOMD)?;
                 },
                 96 => {
-                    self.OHPGOGCGAHI.push(is.read_uint32()?);
+                    self.FJNJOFKEOMD.push(is.read_uint32()?);
                 },
                 104 => {
-                    self.CBAEAFCKOLI = is.read_uint32()?;
+                    self.PKLEEHIKIPC = is.read_uint32()?;
                 },
                 112 => {
-                    self.DFAMLLOCNFP = is.read_uint32()?;
+                    self.DACNEPFMDEL = is.read_uint32()?;
                 },
                 120 => {
-                    self.ECNMJCJKKEC = is.read_bool()?;
+                    self.DFMJDGBDBJF = is.read_bool()?;
                 },
                 128 => {
-                    self.JJCPDKCLKGO = is.read_bool()?;
+                    self.FJPFDNJCKFP = is.read_bool()?;
                 },
                 138 => {
-                    self.AJOLDHICCDC.push(is.read_message()?);
+                    self.KKLNLJDEMMI.push(is.read_message()?);
                 },
                 146 => {
-                    self.DHLOILEEMBB.push(is.read_message()?);
+                    self.KEHMAABFDFG.push(is.read_message()?);
                 },
                 154 => {
-                    is.read_repeated_packed_uint32_into(&mut self.JGFGABLGJAF)?;
+                    is.read_repeated_packed_uint32_into(&mut self.KFHLBDKBKPO)?;
                 },
                 152 => {
-                    self.JGFGABLGJAF.push(is.read_uint32()?);
+                    self.KFHLBDKBKPO.push(is.read_uint32()?);
                 },
                 160 => {
-                    self.LCJJFIPGHNJ = is.read_bool()?;
+                    self.FGAKDCLNKEC = is.read_bool()?;
                 },
                 168 => {
-                    self.FJJIBJBHJJD = is.read_uint32()?;
+                    self.OAGJHEMHCJF = is.read_uint32()?;
                 },
                 178 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FGIHGBAPGMG)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FMGCMEAPHAN)?;
                 },
                 184 => {
-                    self.KHCMOKJLAHB = is.read_uint32()?;
+                    self.GHMGOECABFJ = is.read_uint32()?;
                 },
                 192 => {
-                    self.GCAALFFBECE = is.read_uint32()?;
+                    self.FMPNLNONOJP = is.read_uint32()?;
                 },
                 202 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NNIFNGBPCKH)?;
+                    is.read_repeated_packed_uint32_into(&mut self.DBMANGFEEKO)?;
                 },
                 200 => {
-                    self.NNIFNGBPCKH.push(is.read_uint32()?);
+                    self.DBMANGFEEKO.push(is.read_uint32()?);
                 },
                 210 => {
-                    self.ALAKAKOCLBI.push(is.read_message()?);
+                    self.OLOIBGCGCCA.push(is.read_message()?);
                 },
                 216 => {
-                    self.PKEIPFMMOCL = is.read_uint32()?;
+                    self.AOEKDEACGJC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -365,80 +365,80 @@ impl ::protobuf::Message for BattleGridFightSpecialBattleInfo {
         if self.cur_level_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.cur_level_id);
         }
-        if self.FIBGDEJOOHM != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FIBGDEJOOHM);
+        if self.CNFHEEHLMMJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.CNFHEEHLMMJ);
         }
         if self.rogue_money != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.rogue_money);
         }
-        for value in &self.FHIDIKIDPLI {
+        for value in &self.DAKLJCANAJA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.OMDCAOJEAAK {
+        for value in &self.FKKDKDIFGCH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.BJEHLNHDHJL);
-        if let Some(v) = self.BPALPDOEEBJ.as_ref() {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.BDFIJINDKBO);
+        if let Some(v) = self.HINLFKMJDJJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.LOINNMCNMBL);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.IDBFKKMMIGI);
         if self.grid_fight_cur_level_exp != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.grid_fight_cur_level_exp);
         }
-        if self.LNLNOFIMMCK != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.LNLNOFIMMCK);
+        if self.AFFCJINOELC != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.AFFCJINOELC);
         }
-        if self.DLCPGBNDGDE != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.DLCPGBNDGDE);
+        if self.OGHJAPABFDD != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.OGHJAPABFDD);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.OHPGOGCGAHI);
-        if self.CBAEAFCKOLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.CBAEAFCKOLI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.FJNJOFKEOMD);
+        if self.PKLEEHIKIPC != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.PKLEEHIKIPC);
         }
-        if self.DFAMLLOCNFP != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.DFAMLLOCNFP);
+        if self.DACNEPFMDEL != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.DACNEPFMDEL);
         }
-        if self.ECNMJCJKKEC != false {
+        if self.DFMJDGBDBJF != false {
             my_size += 1 + 1;
         }
-        if self.JJCPDKCLKGO != false {
+        if self.FJPFDNJCKFP != false {
             my_size += 2 + 1;
         }
-        for value in &self.AJOLDHICCDC {
+        for value in &self.KKLNLJDEMMI {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.DHLOILEEMBB {
+        for value in &self.KEHMAABFDFG {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(19, &self.JGFGABLGJAF);
-        if self.LCJJFIPGHNJ != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(19, &self.KFHLBDKBKPO);
+        if self.FGAKDCLNKEC != false {
             my_size += 2 + 1;
         }
-        if self.FJJIBJBHJJD != 0 {
-            my_size += ::protobuf::rt::uint32_size(21, self.FJJIBJBHJJD);
+        if self.OAGJHEMHCJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(21, self.OAGJHEMHCJF);
         }
-        if let Some(v) = self.FGIHGBAPGMG.as_ref() {
+        if let Some(v) = self.FMGCMEAPHAN.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.KHCMOKJLAHB != 0 {
-            my_size += ::protobuf::rt::uint32_size(23, self.KHCMOKJLAHB);
+        if self.GHMGOECABFJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(23, self.GHMGOECABFJ);
         }
-        if self.GCAALFFBECE != 0 {
-            my_size += ::protobuf::rt::uint32_size(24, self.GCAALFFBECE);
+        if self.FMPNLNONOJP != 0 {
+            my_size += ::protobuf::rt::uint32_size(24, self.FMPNLNONOJP);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(25, &self.NNIFNGBPCKH);
-        for value in &self.ALAKAKOCLBI {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(25, &self.DBMANGFEEKO);
+        for value in &self.OLOIBGCGCCA {
             let len = value.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PKEIPFMMOCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(27, self.PKEIPFMMOCL);
+        if self.AOEKDEACGJC != 0 {
+            my_size += ::protobuf::rt::uint32_size(27, self.AOEKDEACGJC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -449,73 +449,73 @@ impl ::protobuf::Message for BattleGridFightSpecialBattleInfo {
         if self.cur_level_id != 0 {
             os.write_uint32(1, self.cur_level_id)?;
         }
-        if self.FIBGDEJOOHM != 0 {
-            os.write_uint32(2, self.FIBGDEJOOHM)?;
+        if self.CNFHEEHLMMJ != 0 {
+            os.write_uint32(2, self.CNFHEEHLMMJ)?;
         }
         if self.rogue_money != 0 {
             os.write_uint32(3, self.rogue_money)?;
         }
-        for v in &self.FHIDIKIDPLI {
+        for v in &self.DAKLJCANAJA {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        for v in &self.OMDCAOJEAAK {
+        for v in &self.FKKDKDIFGCH {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
-        os.write_repeated_packed_uint32(6, &self.BJEHLNHDHJL)?;
-        if let Some(v) = self.BPALPDOEEBJ.as_ref() {
+        os.write_repeated_packed_uint32(6, &self.BDFIJINDKBO)?;
+        if let Some(v) = self.HINLFKMJDJJ.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        os.write_repeated_packed_uint32(8, &self.LOINNMCNMBL)?;
+        os.write_repeated_packed_uint32(8, &self.IDBFKKMMIGI)?;
         if self.grid_fight_cur_level_exp != 0 {
             os.write_uint32(9, self.grid_fight_cur_level_exp)?;
         }
-        if self.LNLNOFIMMCK != 0 {
-            os.write_uint32(10, self.LNLNOFIMMCK)?;
+        if self.AFFCJINOELC != 0 {
+            os.write_uint32(10, self.AFFCJINOELC)?;
         }
-        if self.DLCPGBNDGDE != 0 {
-            os.write_uint32(11, self.DLCPGBNDGDE)?;
+        if self.OGHJAPABFDD != 0 {
+            os.write_uint32(11, self.OGHJAPABFDD)?;
         }
-        os.write_repeated_packed_uint32(12, &self.OHPGOGCGAHI)?;
-        if self.CBAEAFCKOLI != 0 {
-            os.write_uint32(13, self.CBAEAFCKOLI)?;
+        os.write_repeated_packed_uint32(12, &self.FJNJOFKEOMD)?;
+        if self.PKLEEHIKIPC != 0 {
+            os.write_uint32(13, self.PKLEEHIKIPC)?;
         }
-        if self.DFAMLLOCNFP != 0 {
-            os.write_uint32(14, self.DFAMLLOCNFP)?;
+        if self.DACNEPFMDEL != 0 {
+            os.write_uint32(14, self.DACNEPFMDEL)?;
         }
-        if self.ECNMJCJKKEC != false {
-            os.write_bool(15, self.ECNMJCJKKEC)?;
+        if self.DFMJDGBDBJF != false {
+            os.write_bool(15, self.DFMJDGBDBJF)?;
         }
-        if self.JJCPDKCLKGO != false {
-            os.write_bool(16, self.JJCPDKCLKGO)?;
+        if self.FJPFDNJCKFP != false {
+            os.write_bool(16, self.FJPFDNJCKFP)?;
         }
-        for v in &self.AJOLDHICCDC {
+        for v in &self.KKLNLJDEMMI {
             ::protobuf::rt::write_message_field_with_cached_size(17, v, os)?;
         };
-        for v in &self.DHLOILEEMBB {
+        for v in &self.KEHMAABFDFG {
             ::protobuf::rt::write_message_field_with_cached_size(18, v, os)?;
         };
-        os.write_repeated_packed_uint32(19, &self.JGFGABLGJAF)?;
-        if self.LCJJFIPGHNJ != false {
-            os.write_bool(20, self.LCJJFIPGHNJ)?;
+        os.write_repeated_packed_uint32(19, &self.KFHLBDKBKPO)?;
+        if self.FGAKDCLNKEC != false {
+            os.write_bool(20, self.FGAKDCLNKEC)?;
         }
-        if self.FJJIBJBHJJD != 0 {
-            os.write_uint32(21, self.FJJIBJBHJJD)?;
+        if self.OAGJHEMHCJF != 0 {
+            os.write_uint32(21, self.OAGJHEMHCJF)?;
         }
-        if let Some(v) = self.FGIHGBAPGMG.as_ref() {
+        if let Some(v) = self.FMGCMEAPHAN.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(22, v, os)?;
         }
-        if self.KHCMOKJLAHB != 0 {
-            os.write_uint32(23, self.KHCMOKJLAHB)?;
+        if self.GHMGOECABFJ != 0 {
+            os.write_uint32(23, self.GHMGOECABFJ)?;
         }
-        if self.GCAALFFBECE != 0 {
-            os.write_uint32(24, self.GCAALFFBECE)?;
+        if self.FMPNLNONOJP != 0 {
+            os.write_uint32(24, self.FMPNLNONOJP)?;
         }
-        os.write_repeated_packed_uint32(25, &self.NNIFNGBPCKH)?;
-        for v in &self.ALAKAKOCLBI {
+        os.write_repeated_packed_uint32(25, &self.DBMANGFEEKO)?;
+        for v in &self.OLOIBGCGCCA {
             ::protobuf::rt::write_message_field_with_cached_size(26, v, os)?;
         };
-        if self.PKEIPFMMOCL != 0 {
-            os.write_uint32(27, self.PKEIPFMMOCL)?;
+        if self.AOEKDEACGJC != 0 {
+            os.write_uint32(27, self.AOEKDEACGJC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -535,64 +535,64 @@ impl ::protobuf::Message for BattleGridFightSpecialBattleInfo {
 
     fn clear(&mut self) {
         self.cur_level_id = 0;
-        self.FIBGDEJOOHM = 0;
+        self.CNFHEEHLMMJ = 0;
         self.rogue_money = 0;
-        self.FHIDIKIDPLI.clear();
-        self.OMDCAOJEAAK.clear();
-        self.BJEHLNHDHJL.clear();
-        self.BPALPDOEEBJ.clear();
-        self.LOINNMCNMBL.clear();
+        self.DAKLJCANAJA.clear();
+        self.FKKDKDIFGCH.clear();
+        self.BDFIJINDKBO.clear();
+        self.HINLFKMJDJJ.clear();
+        self.IDBFKKMMIGI.clear();
         self.grid_fight_cur_level_exp = 0;
-        self.LNLNOFIMMCK = 0;
-        self.DLCPGBNDGDE = 0;
-        self.OHPGOGCGAHI.clear();
-        self.CBAEAFCKOLI = 0;
-        self.DFAMLLOCNFP = 0;
-        self.ECNMJCJKKEC = false;
-        self.JJCPDKCLKGO = false;
-        self.AJOLDHICCDC.clear();
-        self.DHLOILEEMBB.clear();
-        self.JGFGABLGJAF.clear();
-        self.LCJJFIPGHNJ = false;
-        self.FJJIBJBHJJD = 0;
-        self.FGIHGBAPGMG.clear();
-        self.KHCMOKJLAHB = 0;
-        self.GCAALFFBECE = 0;
-        self.NNIFNGBPCKH.clear();
-        self.ALAKAKOCLBI.clear();
-        self.PKEIPFMMOCL = 0;
+        self.AFFCJINOELC = 0;
+        self.OGHJAPABFDD = 0;
+        self.FJNJOFKEOMD.clear();
+        self.PKLEEHIKIPC = 0;
+        self.DACNEPFMDEL = 0;
+        self.DFMJDGBDBJF = false;
+        self.FJPFDNJCKFP = false;
+        self.KKLNLJDEMMI.clear();
+        self.KEHMAABFDFG.clear();
+        self.KFHLBDKBKPO.clear();
+        self.FGAKDCLNKEC = false;
+        self.OAGJHEMHCJF = 0;
+        self.FMGCMEAPHAN.clear();
+        self.GHMGOECABFJ = 0;
+        self.FMPNLNONOJP = 0;
+        self.DBMANGFEEKO.clear();
+        self.OLOIBGCGCCA.clear();
+        self.AOEKDEACGJC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleGridFightSpecialBattleInfo {
         static instance: BattleGridFightSpecialBattleInfo = BattleGridFightSpecialBattleInfo {
             cur_level_id: 0,
-            FIBGDEJOOHM: 0,
+            CNFHEEHLMMJ: 0,
             rogue_money: 0,
-            FHIDIKIDPLI: ::std::vec::Vec::new(),
-            OMDCAOJEAAK: ::std::vec::Vec::new(),
-            BJEHLNHDHJL: ::std::vec::Vec::new(),
-            BPALPDOEEBJ: ::protobuf::MessageField::none(),
-            LOINNMCNMBL: ::std::vec::Vec::new(),
+            DAKLJCANAJA: ::std::vec::Vec::new(),
+            FKKDKDIFGCH: ::std::vec::Vec::new(),
+            BDFIJINDKBO: ::std::vec::Vec::new(),
+            HINLFKMJDJJ: ::protobuf::MessageField::none(),
+            IDBFKKMMIGI: ::std::vec::Vec::new(),
             grid_fight_cur_level_exp: 0,
-            LNLNOFIMMCK: 0,
-            DLCPGBNDGDE: 0,
-            OHPGOGCGAHI: ::std::vec::Vec::new(),
-            CBAEAFCKOLI: 0,
-            DFAMLLOCNFP: 0,
-            ECNMJCJKKEC: false,
-            JJCPDKCLKGO: false,
-            AJOLDHICCDC: ::std::vec::Vec::new(),
-            DHLOILEEMBB: ::std::vec::Vec::new(),
-            JGFGABLGJAF: ::std::vec::Vec::new(),
-            LCJJFIPGHNJ: false,
-            FJJIBJBHJJD: 0,
-            FGIHGBAPGMG: ::protobuf::MessageField::none(),
-            KHCMOKJLAHB: 0,
-            GCAALFFBECE: 0,
-            NNIFNGBPCKH: ::std::vec::Vec::new(),
-            ALAKAKOCLBI: ::std::vec::Vec::new(),
-            PKEIPFMMOCL: 0,
+            AFFCJINOELC: 0,
+            OGHJAPABFDD: 0,
+            FJNJOFKEOMD: ::std::vec::Vec::new(),
+            PKLEEHIKIPC: 0,
+            DACNEPFMDEL: 0,
+            DFMJDGBDBJF: false,
+            FJPFDNJCKFP: false,
+            KKLNLJDEMMI: ::std::vec::Vec::new(),
+            KEHMAABFDFG: ::std::vec::Vec::new(),
+            KFHLBDKBKPO: ::std::vec::Vec::new(),
+            FGAKDCLNKEC: false,
+            OAGJHEMHCJF: 0,
+            FMGCMEAPHAN: ::protobuf::MessageField::none(),
+            GHMGOECABFJ: 0,
+            FMPNLNONOJP: 0,
+            DBMANGFEEKO: ::std::vec::Vec::new(),
+            OLOIBGCGCCA: ::std::vec::Vec::new(),
+            AOEKDEACGJC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -617,34 +617,34 @@ impl ::protobuf::reflect::ProtobufValue for BattleGridFightSpecialBattleInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&BattleGridFightSpecialBattleInfo.proto\x1a\x11EDDKFLLHEDE.proto\x1a\
-    \x11KKEDAGNKBOK.proto\x1a\x11NDFFLDMJIHD.proto\x1a\x11NMBNGOKIBEG.proto\
-    \x1a\x11OMIGEBBKBPE.proto\x1a\x11PJHIOPAOCMH.proto\"\xaf\x08\n\x20Battle\
+    \n&BattleGridFightSpecialBattleInfo.proto\x1a\x11ACCFOILMEMN.proto\x1a\
+    \x11FLFEGBGLNBG.proto\x1a\x11KHFBCMCJDCL.proto\x1a\x11KLIJFOOFONO.proto\
+    \x1a\x11MLDFIAGBCLO.proto\x1a\x11NNMPNANHJFA.proto\"\xaf\x08\n\x20Battle\
     GridFightSpecialBattleInfo\x12\x20\n\x0ccur_level_id\x18\x01\x20\x01(\rR\
-    \ncurLevelId\x12\x20\n\x0bFIBGDEJOOHM\x18\x02\x20\x01(\rR\x0bFIBGDEJOOHM\
-    \x12\x1f\n\x0brogue_money\x18\x03\x20\x01(\rR\nrogueMoney\x12.\n\x0bFHID\
-    IKIDPLI\x18\x04\x20\x03(\x0b2\x0c.EDDKFLLHEDER\x0bFHIDIKIDPLI\x12.\n\x0b\
-    OMDCAOJEAAK\x18\x05\x20\x03(\x0b2\x0c.EDDKFLLHEDER\x0bOMDCAOJEAAK\x12\
-    \x20\n\x0bBJEHLNHDHJL\x18\x06\x20\x03(\rR\x0bBJEHLNHDHJL\x12.\n\x0bBPALP\
-    DOEEBJ\x18\x07\x20\x01(\x0b2\x0c.NDFFLDMJIHDR\x0bBPALPDOEEBJ\x12\x20\n\
-    \x0bLOINNMCNMBL\x18\x08\x20\x03(\rR\x0bLOINNMCNMBL\x126\n\x18grid_fight_\
-    cur_level_exp\x18\t\x20\x01(\rR\x14gridFightCurLevelExp\x12\x20\n\x0bLNL\
-    NOFIMMCK\x18\n\x20\x01(\rR\x0bLNLNOFIMMCK\x12\x20\n\x0bDLCPGBNDGDE\x18\
-    \x0b\x20\x01(\rR\x0bDLCPGBNDGDE\x12\x20\n\x0bOHPGOGCGAHI\x18\x0c\x20\x03\
-    (\rR\x0bOHPGOGCGAHI\x12\x20\n\x0bCBAEAFCKOLI\x18\r\x20\x01(\rR\x0bCBAEAF\
-    CKOLI\x12\x20\n\x0bDFAMLLOCNFP\x18\x0e\x20\x01(\rR\x0bDFAMLLOCNFP\x12\
-    \x20\n\x0bECNMJCJKKEC\x18\x0f\x20\x01(\x08R\x0bECNMJCJKKEC\x12\x20\n\x0b\
-    JJCPDKCLKGO\x18\x10\x20\x01(\x08R\x0bJJCPDKCLKGO\x12.\n\x0bAJOLDHICCDC\
-    \x18\x11\x20\x03(\x0b2\x0c.KKEDAGNKBOKR\x0bAJOLDHICCDC\x12.\n\x0bDHLOILE\
-    EMBB\x18\x12\x20\x03(\x0b2\x0c.PJHIOPAOCMHR\x0bDHLOILEEMBB\x12\x20\n\x0b\
-    JGFGABLGJAF\x18\x13\x20\x03(\rR\x0bJGFGABLGJAF\x12\x20\n\x0bLCJJFIPGHNJ\
-    \x18\x14\x20\x01(\x08R\x0bLCJJFIPGHNJ\x12\x20\n\x0bFJJIBJBHJJD\x18\x15\
-    \x20\x01(\rR\x0bFJJIBJBHJJD\x12.\n\x0bFGIHGBAPGMG\x18\x16\x20\x01(\x0b2\
-    \x0c.OMIGEBBKBPER\x0bFGIHGBAPGMG\x12\x20\n\x0bKHCMOKJLAHB\x18\x17\x20\
-    \x01(\rR\x0bKHCMOKJLAHB\x12\x20\n\x0bGCAALFFBECE\x18\x18\x20\x01(\rR\x0b\
-    GCAALFFBECE\x12\x20\n\x0bNNIFNGBPCKH\x18\x19\x20\x03(\rR\x0bNNIFNGBPCKH\
-    \x12.\n\x0bALAKAKOCLBI\x18\x1a\x20\x03(\x0b2\x0c.NMBNGOKIBEGR\x0bALAKAKO\
-    CLBI\x12\x20\n\x0bPKEIPFMMOCL\x18\x1b\x20\x01(\rR\x0bPKEIPFMMOCLb\x06pro\
+    \ncurLevelId\x12\x20\n\x0bCNFHEEHLMMJ\x18\x02\x20\x01(\rR\x0bCNFHEEHLMMJ\
+    \x12\x1f\n\x0brogue_money\x18\x03\x20\x01(\rR\nrogueMoney\x12.\n\x0bDAKL\
+    JCANAJA\x18\x04\x20\x03(\x0b2\x0c.KHFBCMCJDCLR\x0bDAKLJCANAJA\x12.\n\x0b\
+    FKKDKDIFGCH\x18\x05\x20\x03(\x0b2\x0c.KHFBCMCJDCLR\x0bFKKDKDIFGCH\x12\
+    \x20\n\x0bBDFIJINDKBO\x18\x06\x20\x03(\rR\x0bBDFIJINDKBO\x12.\n\x0bHINLF\
+    KMJDJJ\x18\x07\x20\x01(\x0b2\x0c.NNMPNANHJFAR\x0bHINLFKMJDJJ\x12\x20\n\
+    \x0bIDBFKKMMIGI\x18\x08\x20\x03(\rR\x0bIDBFKKMMIGI\x126\n\x18grid_fight_\
+    cur_level_exp\x18\t\x20\x01(\rR\x14gridFightCurLevelExp\x12\x20\n\x0bAFF\
+    CJINOELC\x18\n\x20\x01(\rR\x0bAFFCJINOELC\x12\x20\n\x0bOGHJAPABFDD\x18\
+    \x0b\x20\x01(\rR\x0bOGHJAPABFDD\x12\x20\n\x0bFJNJOFKEOMD\x18\x0c\x20\x03\
+    (\rR\x0bFJNJOFKEOMD\x12\x20\n\x0bPKLEEHIKIPC\x18\r\x20\x01(\rR\x0bPKLEEH\
+    IKIPC\x12\x20\n\x0bDACNEPFMDEL\x18\x0e\x20\x01(\rR\x0bDACNEPFMDEL\x12\
+    \x20\n\x0bDFMJDGBDBJF\x18\x0f\x20\x01(\x08R\x0bDFMJDGBDBJF\x12\x20\n\x0b\
+    FJPFDNJCKFP\x18\x10\x20\x01(\x08R\x0bFJPFDNJCKFP\x12.\n\x0bKKLNLJDEMMI\
+    \x18\x11\x20\x03(\x0b2\x0c.KLIJFOOFONOR\x0bKKLNLJDEMMI\x12.\n\x0bKEHMAAB\
+    FDFG\x18\x12\x20\x03(\x0b2\x0c.FLFEGBGLNBGR\x0bKEHMAABFDFG\x12\x20\n\x0b\
+    KFHLBDKBKPO\x18\x13\x20\x03(\rR\x0bKFHLBDKBKPO\x12\x20\n\x0bFGAKDCLNKEC\
+    \x18\x14\x20\x01(\x08R\x0bFGAKDCLNKEC\x12\x20\n\x0bOAGJHEMHCJF\x18\x15\
+    \x20\x01(\rR\x0bOAGJHEMHCJF\x12.\n\x0bFMGCMEAPHAN\x18\x16\x20\x01(\x0b2\
+    \x0c.ACCFOILMEMNR\x0bFMGCMEAPHAN\x12\x20\n\x0bGHMGOECABFJ\x18\x17\x20\
+    \x01(\rR\x0bGHMGOECABFJ\x12\x20\n\x0bFMPNLNONOJP\x18\x18\x20\x01(\rR\x0b\
+    FMPNLNONOJP\x12\x20\n\x0bDBMANGFEEKO\x18\x19\x20\x03(\rR\x0bDBMANGFEEKO\
+    \x12.\n\x0bOLOIBGCGCCA\x18\x1a\x20\x03(\x0b2\x0c.MLDFIAGBCLOR\x0bOLOIBGC\
+    GCCA\x12\x20\n\x0bAOEKDEACGJC\x18\x1b\x20\x01(\rR\x0bAOEKDEACGJCb\x06pro\
     to3\
 ";
 
@@ -663,12 +663,12 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(6);
-            deps.push(super::EDDKFLLHEDE::file_descriptor().clone());
-            deps.push(super::KKEDAGNKBOK::file_descriptor().clone());
-            deps.push(super::NDFFLDMJIHD::file_descriptor().clone());
-            deps.push(super::NMBNGOKIBEG::file_descriptor().clone());
-            deps.push(super::OMIGEBBKBPE::file_descriptor().clone());
-            deps.push(super::PJHIOPAOCMH::file_descriptor().clone());
+            deps.push(super::ACCFOILMEMN::file_descriptor().clone());
+            deps.push(super::FLFEGBGLNBG::file_descriptor().clone());
+            deps.push(super::KHFBCMCJDCL::file_descriptor().clone());
+            deps.push(super::KLIJFOOFONO::file_descriptor().clone());
+            deps.push(super::MLDFIAGBCLO::file_descriptor().clone());
+            deps.push(super::NNMPNANHJFA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleGridFightSpecialBattleInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFantasticStoryActivityDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetFantasticStoryActivityDataCsReq.LDHLMMAMCCG)
-    pub LDHLMMAMCCG: u32,
+    // @@protoc_insertion_point(field:GetFantasticStoryActivityDataCsReq.GMKCLHNHAFA)
+    pub GMKCLHNHAFA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFantasticStoryActivityDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GetFantasticStoryActivityDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LDHLMMAMCCG",
-            |m: &GetFantasticStoryActivityDataCsReq| { &m.LDHLMMAMCCG },
-            |m: &mut GetFantasticStoryActivityDataCsReq| { &mut m.LDHLMMAMCCG },
+            "GMKCLHNHAFA",
+            |m: &GetFantasticStoryActivityDataCsReq| { &m.GMKCLHNHAFA },
+            |m: &mut GetFantasticStoryActivityDataCsReq| { &mut m.GMKCLHNHAFA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFantasticStoryActivityDataCsReq>(
             "GetFantasticStoryActivityDataCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.LDHLMMAMCCG = is.read_uint32()?;
+                72 => {
+                    self.GMKCLHNHAFA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LDHLMMAMCCG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.LDHLMMAMCCG);
+        if self.GMKCLHNHAFA != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.GMKCLHNHAFA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LDHLMMAMCCG != 0 {
-            os.write_uint32(7, self.LDHLMMAMCCG)?;
+        if self.GMKCLHNHAFA != 0 {
+            os.write_uint32(9, self.GMKCLHNHAFA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GetFantasticStoryActivityDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.LDHLMMAMCCG = 0;
+        self.GMKCLHNHAFA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFantasticStoryActivityDataCsReq {
         static instance: GetFantasticStoryActivityDataCsReq = GetFantasticStoryActivityDataCsReq {
-            LDHLMMAMCCG: 0,
+            GMKCLHNHAFA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for GetFantasticStoryActivityDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(GetFantasticStoryActivityDataCsReq.proto\"F\n\"GetFantasticStoryActiv\
-    ityDataCsReq\x12\x20\n\x0bLDHLMMAMCCG\x18\x07\x20\x01(\rR\x0bLDHLMMAMCCG\
-    b\x06proto3\
+    ityDataCsReq\x12\x20\n\x0bGMKCLHNHAFA\x18\t\x20\x01(\rR\x0bGMKCLHNHAFAb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

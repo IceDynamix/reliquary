@@ -27,44 +27,44 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:LobbyModifyType)
 pub enum LobbyModifyType {
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_GKJBAODJMJG)
-    GPEFEDEGBJF_GKJBAODJMJG = 0,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_PCOFPEKEKMD)
-    GPEFEDEGBJF_PCOFPEKEKMD = 1,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_DOECGOKIJHB)
-    GPEFEDEGBJF_DOECGOKIJHB = 2,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_IJOJHGDCBFL)
-    GPEFEDEGBJF_IJOJHGDCBFL = 3,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_LKNOJEDDALK)
-    GPEFEDEGBJF_LKNOJEDDALK = 4,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_FOLKGDBMJJJ)
-    GPEFEDEGBJF_FOLKGDBMJJJ = 5,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_MALDKIEFFIM)
-    GPEFEDEGBJF_MALDKIEFFIM = 6,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_HNBNGEDAKEI)
-    GPEFEDEGBJF_HNBNGEDAKEI = 7,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_HHCEJPBONDN)
-    GPEFEDEGBJF_HHCEJPBONDN = 8,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_DCJJFLLEHAK)
-    GPEFEDEGBJF_DCJJFLLEHAK = 9,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_FPKLAAJKJPI)
-    GPEFEDEGBJF_FPKLAAJKJPI = 10,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_MHHLNFFLHJF)
-    GPEFEDEGBJF_MHHLNFFLHJF = 11,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_JCDPKBFBHJM)
-    GPEFEDEGBJF_JCDPKBFBHJM = 12,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_DIOGPPEIAHP)
-    GPEFEDEGBJF_DIOGPPEIAHP = 13,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_IBHKGLJJMFJ)
-    GPEFEDEGBJF_IBHKGLJJMFJ = 14,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_CEFOGJAFAKN)
-    GPEFEDEGBJF_CEFOGJAFAKN = 15,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_DKMLKBENOKF)
-    GPEFEDEGBJF_DKMLKBENOKF = 16,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_GJNCOBEDLHC)
-    GPEFEDEGBJF_GJNCOBEDLHC = 17,
-    // @@protoc_insertion_point(enum_value:LobbyModifyType.GPEFEDEGBJF_LCNPPCKNKFO)
-    GPEFEDEGBJF_LCNPPCKNKFO = 18,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_MNFEPONEDDJ)
+    LobbyModifyType_MNFEPONEDDJ = 0,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_HIJAHCMLMPE)
+    LobbyModifyType_HIJAHCMLMPE = 1,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_PFKHAKDGDLA)
+    LobbyModifyType_PFKHAKDGDLA = 2,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_CCOFPMNBDBI)
+    LobbyModifyType_CCOFPMNBDBI = 3,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_EEKMIHCEDDK)
+    LobbyModifyType_EEKMIHCEDDK = 4,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_AAHPHNDDDOC)
+    LobbyModifyType_AAHPHNDDDOC = 5,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_DFJKGEBIFIF)
+    LobbyModifyType_DFJKGEBIFIF = 6,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_ICDCDLFGIOF)
+    LobbyModifyType_ICDCDLFGIOF = 7,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_BJBDAMPCAPM)
+    LobbyModifyType_BJBDAMPCAPM = 8,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_KDENJJFEHAP)
+    LobbyModifyType_KDENJJFEHAP = 9,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_JFJIBHJBLEL)
+    LobbyModifyType_JFJIBHJBLEL = 10,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_MHCGLLNNBGM)
+    LobbyModifyType_MHCGLLNNBGM = 11,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_KNFDJFDABBB)
+    LobbyModifyType_KNFDJFDABBB = 12,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_NFNNOPKLKBD)
+    LobbyModifyType_NFNNOPKLKBD = 13,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_JFMOPPHOIDH)
+    LobbyModifyType_JFMOPPHOIDH = 14,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_JNKLOEONGND)
+    LobbyModifyType_JNKLOEONGND = 15,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_JIIFJALLOPI)
+    LobbyModifyType_JIIFJALLOPI = 16,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_PAGBCMMCHAD)
+    LobbyModifyType_PAGBCMMCHAD = 17,
+    // @@protoc_insertion_point(enum_value:LobbyModifyType.LobbyModifyType_IDKMAGOMILP)
+    LobbyModifyType_IDKMAGOMILP = 18,
 }
 
 impl ::protobuf::Enum for LobbyModifyType {
@@ -76,74 +76,74 @@ impl ::protobuf::Enum for LobbyModifyType {
 
     fn from_i32(value: i32) -> ::std::option::Option<LobbyModifyType> {
         match value {
-            0 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_GKJBAODJMJG),
-            1 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_PCOFPEKEKMD),
-            2 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_DOECGOKIJHB),
-            3 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_IJOJHGDCBFL),
-            4 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_LKNOJEDDALK),
-            5 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_FOLKGDBMJJJ),
-            6 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_MALDKIEFFIM),
-            7 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_HNBNGEDAKEI),
-            8 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_HHCEJPBONDN),
-            9 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_DCJJFLLEHAK),
-            10 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_FPKLAAJKJPI),
-            11 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_MHHLNFFLHJF),
-            12 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_JCDPKBFBHJM),
-            13 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_DIOGPPEIAHP),
-            14 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_IBHKGLJJMFJ),
-            15 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_CEFOGJAFAKN),
-            16 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_DKMLKBENOKF),
-            17 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_GJNCOBEDLHC),
-            18 => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_LCNPPCKNKFO),
+            0 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_MNFEPONEDDJ),
+            1 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_HIJAHCMLMPE),
+            2 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_PFKHAKDGDLA),
+            3 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_CCOFPMNBDBI),
+            4 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_EEKMIHCEDDK),
+            5 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_AAHPHNDDDOC),
+            6 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_DFJKGEBIFIF),
+            7 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_ICDCDLFGIOF),
+            8 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_BJBDAMPCAPM),
+            9 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_KDENJJFEHAP),
+            10 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_JFJIBHJBLEL),
+            11 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_MHCGLLNNBGM),
+            12 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_KNFDJFDABBB),
+            13 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_NFNNOPKLKBD),
+            14 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_JFMOPPHOIDH),
+            15 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_JNKLOEONGND),
+            16 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_JIIFJALLOPI),
+            17 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_PAGBCMMCHAD),
+            18 => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_IDKMAGOMILP),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<LobbyModifyType> {
         match str {
-            "GPEFEDEGBJF_GKJBAODJMJG" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_GKJBAODJMJG),
-            "GPEFEDEGBJF_PCOFPEKEKMD" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_PCOFPEKEKMD),
-            "GPEFEDEGBJF_DOECGOKIJHB" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_DOECGOKIJHB),
-            "GPEFEDEGBJF_IJOJHGDCBFL" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_IJOJHGDCBFL),
-            "GPEFEDEGBJF_LKNOJEDDALK" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_LKNOJEDDALK),
-            "GPEFEDEGBJF_FOLKGDBMJJJ" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_FOLKGDBMJJJ),
-            "GPEFEDEGBJF_MALDKIEFFIM" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_MALDKIEFFIM),
-            "GPEFEDEGBJF_HNBNGEDAKEI" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_HNBNGEDAKEI),
-            "GPEFEDEGBJF_HHCEJPBONDN" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_HHCEJPBONDN),
-            "GPEFEDEGBJF_DCJJFLLEHAK" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_DCJJFLLEHAK),
-            "GPEFEDEGBJF_FPKLAAJKJPI" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_FPKLAAJKJPI),
-            "GPEFEDEGBJF_MHHLNFFLHJF" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_MHHLNFFLHJF),
-            "GPEFEDEGBJF_JCDPKBFBHJM" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_JCDPKBFBHJM),
-            "GPEFEDEGBJF_DIOGPPEIAHP" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_DIOGPPEIAHP),
-            "GPEFEDEGBJF_IBHKGLJJMFJ" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_IBHKGLJJMFJ),
-            "GPEFEDEGBJF_CEFOGJAFAKN" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_CEFOGJAFAKN),
-            "GPEFEDEGBJF_DKMLKBENOKF" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_DKMLKBENOKF),
-            "GPEFEDEGBJF_GJNCOBEDLHC" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_GJNCOBEDLHC),
-            "GPEFEDEGBJF_LCNPPCKNKFO" => ::std::option::Option::Some(LobbyModifyType::GPEFEDEGBJF_LCNPPCKNKFO),
+            "LobbyModifyType_MNFEPONEDDJ" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_MNFEPONEDDJ),
+            "LobbyModifyType_HIJAHCMLMPE" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_HIJAHCMLMPE),
+            "LobbyModifyType_PFKHAKDGDLA" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_PFKHAKDGDLA),
+            "LobbyModifyType_CCOFPMNBDBI" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_CCOFPMNBDBI),
+            "LobbyModifyType_EEKMIHCEDDK" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_EEKMIHCEDDK),
+            "LobbyModifyType_AAHPHNDDDOC" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_AAHPHNDDDOC),
+            "LobbyModifyType_DFJKGEBIFIF" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_DFJKGEBIFIF),
+            "LobbyModifyType_ICDCDLFGIOF" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_ICDCDLFGIOF),
+            "LobbyModifyType_BJBDAMPCAPM" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_BJBDAMPCAPM),
+            "LobbyModifyType_KDENJJFEHAP" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_KDENJJFEHAP),
+            "LobbyModifyType_JFJIBHJBLEL" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_JFJIBHJBLEL),
+            "LobbyModifyType_MHCGLLNNBGM" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_MHCGLLNNBGM),
+            "LobbyModifyType_KNFDJFDABBB" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_KNFDJFDABBB),
+            "LobbyModifyType_NFNNOPKLKBD" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_NFNNOPKLKBD),
+            "LobbyModifyType_JFMOPPHOIDH" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_JFMOPPHOIDH),
+            "LobbyModifyType_JNKLOEONGND" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_JNKLOEONGND),
+            "LobbyModifyType_JIIFJALLOPI" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_JIIFJALLOPI),
+            "LobbyModifyType_PAGBCMMCHAD" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_PAGBCMMCHAD),
+            "LobbyModifyType_IDKMAGOMILP" => ::std::option::Option::Some(LobbyModifyType::LobbyModifyType_IDKMAGOMILP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [LobbyModifyType] = &[
-        LobbyModifyType::GPEFEDEGBJF_GKJBAODJMJG,
-        LobbyModifyType::GPEFEDEGBJF_PCOFPEKEKMD,
-        LobbyModifyType::GPEFEDEGBJF_DOECGOKIJHB,
-        LobbyModifyType::GPEFEDEGBJF_IJOJHGDCBFL,
-        LobbyModifyType::GPEFEDEGBJF_LKNOJEDDALK,
-        LobbyModifyType::GPEFEDEGBJF_FOLKGDBMJJJ,
-        LobbyModifyType::GPEFEDEGBJF_MALDKIEFFIM,
-        LobbyModifyType::GPEFEDEGBJF_HNBNGEDAKEI,
-        LobbyModifyType::GPEFEDEGBJF_HHCEJPBONDN,
-        LobbyModifyType::GPEFEDEGBJF_DCJJFLLEHAK,
-        LobbyModifyType::GPEFEDEGBJF_FPKLAAJKJPI,
-        LobbyModifyType::GPEFEDEGBJF_MHHLNFFLHJF,
-        LobbyModifyType::GPEFEDEGBJF_JCDPKBFBHJM,
-        LobbyModifyType::GPEFEDEGBJF_DIOGPPEIAHP,
-        LobbyModifyType::GPEFEDEGBJF_IBHKGLJJMFJ,
-        LobbyModifyType::GPEFEDEGBJF_CEFOGJAFAKN,
-        LobbyModifyType::GPEFEDEGBJF_DKMLKBENOKF,
-        LobbyModifyType::GPEFEDEGBJF_GJNCOBEDLHC,
-        LobbyModifyType::GPEFEDEGBJF_LCNPPCKNKFO,
+        LobbyModifyType::LobbyModifyType_MNFEPONEDDJ,
+        LobbyModifyType::LobbyModifyType_HIJAHCMLMPE,
+        LobbyModifyType::LobbyModifyType_PFKHAKDGDLA,
+        LobbyModifyType::LobbyModifyType_CCOFPMNBDBI,
+        LobbyModifyType::LobbyModifyType_EEKMIHCEDDK,
+        LobbyModifyType::LobbyModifyType_AAHPHNDDDOC,
+        LobbyModifyType::LobbyModifyType_DFJKGEBIFIF,
+        LobbyModifyType::LobbyModifyType_ICDCDLFGIOF,
+        LobbyModifyType::LobbyModifyType_BJBDAMPCAPM,
+        LobbyModifyType::LobbyModifyType_KDENJJFEHAP,
+        LobbyModifyType::LobbyModifyType_JFJIBHJBLEL,
+        LobbyModifyType::LobbyModifyType_MHCGLLNNBGM,
+        LobbyModifyType::LobbyModifyType_KNFDJFDABBB,
+        LobbyModifyType::LobbyModifyType_NFNNOPKLKBD,
+        LobbyModifyType::LobbyModifyType_JFMOPPHOIDH,
+        LobbyModifyType::LobbyModifyType_JNKLOEONGND,
+        LobbyModifyType::LobbyModifyType_JIIFJALLOPI,
+        LobbyModifyType::LobbyModifyType_PAGBCMMCHAD,
+        LobbyModifyType::LobbyModifyType_IDKMAGOMILP,
     ];
 }
 
@@ -161,7 +161,7 @@ impl ::protobuf::EnumFull for LobbyModifyType {
 
 impl ::std::default::Default for LobbyModifyType {
     fn default() -> Self {
-        LobbyModifyType::GPEFEDEGBJF_GKJBAODJMJG
+        LobbyModifyType::LobbyModifyType_MNFEPONEDDJ
     }
 }
 
@@ -172,19 +172,20 @@ impl LobbyModifyType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15LobbyModifyType.proto*\xb8\x04\n\x0fLobbyModifyType\x12\x1b\n\x17G\
-    PEFEDEGBJF_GKJBAODJMJG\x10\0\x12\x1b\n\x17GPEFEDEGBJF_PCOFPEKEKMD\x10\
-    \x01\x12\x1b\n\x17GPEFEDEGBJF_DOECGOKIJHB\x10\x02\x12\x1b\n\x17GPEFEDEGB\
-    JF_IJOJHGDCBFL\x10\x03\x12\x1b\n\x17GPEFEDEGBJF_LKNOJEDDALK\x10\x04\x12\
-    \x1b\n\x17GPEFEDEGBJF_FOLKGDBMJJJ\x10\x05\x12\x1b\n\x17GPEFEDEGBJF_MALDK\
-    IEFFIM\x10\x06\x12\x1b\n\x17GPEFEDEGBJF_HNBNGEDAKEI\x10\x07\x12\x1b\n\
-    \x17GPEFEDEGBJF_HHCEJPBONDN\x10\x08\x12\x1b\n\x17GPEFEDEGBJF_DCJJFLLEHAK\
-    \x10\t\x12\x1b\n\x17GPEFEDEGBJF_FPKLAAJKJPI\x10\n\x12\x1b\n\x17GPEFEDEGB\
-    JF_MHHLNFFLHJF\x10\x0b\x12\x1b\n\x17GPEFEDEGBJF_JCDPKBFBHJM\x10\x0c\x12\
-    \x1b\n\x17GPEFEDEGBJF_DIOGPPEIAHP\x10\r\x12\x1b\n\x17GPEFEDEGBJF_IBHKGLJ\
-    JMFJ\x10\x0e\x12\x1b\n\x17GPEFEDEGBJF_CEFOGJAFAKN\x10\x0f\x12\x1b\n\x17G\
-    PEFEDEGBJF_DKMLKBENOKF\x10\x10\x12\x1b\n\x17GPEFEDEGBJF_GJNCOBEDLHC\x10\
-    \x11\x12\x1b\n\x17GPEFEDEGBJF_LCNPPCKNKFO\x10\x12b\x06proto3\
+    \n\x15LobbyModifyType.proto*\x84\x05\n\x0fLobbyModifyType\x12\x1f\n\x1bL\
+    obbyModifyType_MNFEPONEDDJ\x10\0\x12\x1f\n\x1bLobbyModifyType_HIJAHCMLMP\
+    E\x10\x01\x12\x1f\n\x1bLobbyModifyType_PFKHAKDGDLA\x10\x02\x12\x1f\n\x1b\
+    LobbyModifyType_CCOFPMNBDBI\x10\x03\x12\x1f\n\x1bLobbyModifyType_EEKMIHC\
+    EDDK\x10\x04\x12\x1f\n\x1bLobbyModifyType_AAHPHNDDDOC\x10\x05\x12\x1f\n\
+    \x1bLobbyModifyType_DFJKGEBIFIF\x10\x06\x12\x1f\n\x1bLobbyModifyType_ICD\
+    CDLFGIOF\x10\x07\x12\x1f\n\x1bLobbyModifyType_BJBDAMPCAPM\x10\x08\x12\
+    \x1f\n\x1bLobbyModifyType_KDENJJFEHAP\x10\t\x12\x1f\n\x1bLobbyModifyType\
+    _JFJIBHJBLEL\x10\n\x12\x1f\n\x1bLobbyModifyType_MHCGLLNNBGM\x10\x0b\x12\
+    \x1f\n\x1bLobbyModifyType_KNFDJFDABBB\x10\x0c\x12\x1f\n\x1bLobbyModifyTy\
+    pe_NFNNOPKLKBD\x10\r\x12\x1f\n\x1bLobbyModifyType_JFMOPPHOIDH\x10\x0e\
+    \x12\x1f\n\x1bLobbyModifyType_JNKLOEONGND\x10\x0f\x12\x1f\n\x1bLobbyModi\
+    fyType_JIIFJALLOPI\x10\x10\x12\x1f\n\x1bLobbyModifyType_PAGBCMMCHAD\x10\
+    \x11\x12\x1f\n\x1bLobbyModifyType_IDKMAGOMILP\x10\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

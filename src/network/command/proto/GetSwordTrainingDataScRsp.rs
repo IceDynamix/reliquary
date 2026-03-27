@@ -28,22 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetSwordTrainingDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.OKLJFBCPMLG)
-    pub OKLJFBCPMLG: u32,
-    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.IIEBGIMJHOL)
-    pub IIEBGIMJHOL: ::protobuf::MessageField<super::GPHOKBNINGK::GPHOKBNINGK>,
+    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.HJNEDHFBBGF)
+    pub HJNEDHFBBGF: ::protobuf::MessageField<super::ACGLFPGDDFM::ACGLFPGDDFM>,
+    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.IFHPLIKFOFL)
+    pub IFHPLIKFOFL: bool,
     // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.BOAGMOPLMEN)
-    pub BOAGMOPLMEN: bool,
-    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.IMCFCFBGMMK)
-    pub IMCFCFBGMMK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.BEIFHGALHKL)
-    pub BEIFHGALHKL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.HLKKKCAJHFK)
-    pub HLKKKCAJHFK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.HLEOICFJJOO)
-    pub HLEOICFJJOO: ::protobuf::MessageField<super::KFGJBLIFFDP::KFGJBLIFFDP>,
+    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.IBMJOHKMAIH)
+    pub IBMJOHKMAIH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.HPGPHGIHFGN)
+    pub HPGPHGIHFGN: ::protobuf::MessageField<super::ABIDDNMDPKJ::ABIDDNMDPKJ>,
+    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.MFGAPJBJLCB)
+    pub MFGAPJBJLCB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.EECIFBHFIIN)
+    pub EECIFBHFIIN: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetSwordTrainingDataScRsp.NNMMIMOLLOE)
+    pub NNMMIMOLLOE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetSwordTrainingDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,45 +63,45 @@ impl GetSwordTrainingDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKLJFBCPMLG",
-            |m: &GetSwordTrainingDataScRsp| { &m.OKLJFBCPMLG },
-            |m: &mut GetSwordTrainingDataScRsp| { &mut m.OKLJFBCPMLG },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ACGLFPGDDFM::ACGLFPGDDFM>(
+            "HJNEDHFBBGF",
+            |m: &GetSwordTrainingDataScRsp| { &m.HJNEDHFBBGF },
+            |m: &mut GetSwordTrainingDataScRsp| { &mut m.HJNEDHFBBGF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GPHOKBNINGK::GPHOKBNINGK>(
-            "IIEBGIMJHOL",
-            |m: &GetSwordTrainingDataScRsp| { &m.IIEBGIMJHOL },
-            |m: &mut GetSwordTrainingDataScRsp| { &mut m.IIEBGIMJHOL },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IFHPLIKFOFL",
+            |m: &GetSwordTrainingDataScRsp| { &m.IFHPLIKFOFL },
+            |m: &mut GetSwordTrainingDataScRsp| { &mut m.IFHPLIKFOFL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetSwordTrainingDataScRsp| { &m.retcode },
             |m: &mut GetSwordTrainingDataScRsp| { &mut m.retcode },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "IBMJOHKMAIH",
+            |m: &GetSwordTrainingDataScRsp| { &m.IBMJOHKMAIH },
+            |m: &mut GetSwordTrainingDataScRsp| { &mut m.IBMJOHKMAIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ABIDDNMDPKJ::ABIDDNMDPKJ>(
+            "HPGPHGIHFGN",
+            |m: &GetSwordTrainingDataScRsp| { &m.HPGPHGIHFGN },
+            |m: &mut GetSwordTrainingDataScRsp| { &mut m.HPGPHGIHFGN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "MFGAPJBJLCB",
+            |m: &GetSwordTrainingDataScRsp| { &m.MFGAPJBJLCB },
+            |m: &mut GetSwordTrainingDataScRsp| { &mut m.MFGAPJBJLCB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EECIFBHFIIN",
+            |m: &GetSwordTrainingDataScRsp| { &m.EECIFBHFIIN },
+            |m: &mut GetSwordTrainingDataScRsp| { &mut m.EECIFBHFIIN },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BOAGMOPLMEN",
-            |m: &GetSwordTrainingDataScRsp| { &m.BOAGMOPLMEN },
-            |m: &mut GetSwordTrainingDataScRsp| { &mut m.BOAGMOPLMEN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IMCFCFBGMMK",
-            |m: &GetSwordTrainingDataScRsp| { &m.IMCFCFBGMMK },
-            |m: &mut GetSwordTrainingDataScRsp| { &mut m.IMCFCFBGMMK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BEIFHGALHKL",
-            |m: &GetSwordTrainingDataScRsp| { &m.BEIFHGALHKL },
-            |m: &mut GetSwordTrainingDataScRsp| { &mut m.BEIFHGALHKL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HLKKKCAJHFK",
-            |m: &GetSwordTrainingDataScRsp| { &m.HLKKKCAJHFK },
-            |m: &mut GetSwordTrainingDataScRsp| { &mut m.HLKKKCAJHFK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KFGJBLIFFDP::KFGJBLIFFDP>(
-            "HLEOICFJJOO",
-            |m: &GetSwordTrainingDataScRsp| { &m.HLEOICFJJOO },
-            |m: &mut GetSwordTrainingDataScRsp| { &mut m.HLEOICFJJOO },
+            "NNMMIMOLLOE",
+            |m: &GetSwordTrainingDataScRsp| { &m.NNMMIMOLLOE },
+            |m: &mut GetSwordTrainingDataScRsp| { &mut m.NNMMIMOLLOE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetSwordTrainingDataScRsp>(
             "GetSwordTrainingDataScRsp",
@@ -121,38 +121,38 @@ impl ::protobuf::Message for GetSwordTrainingDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.OKLJFBCPMLG = is.read_uint32()?;
-                },
                 18 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IIEBGIMJHOL)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HJNEDHFBBGF)?;
                 },
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                120 => {
-                    self.BOAGMOPLMEN = is.read_bool()?;
-                },
-                34 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IMCFCFBGMMK)?;
-                },
-                32 => {
-                    self.IMCFCFBGMMK.push(is.read_uint32()?);
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.BEIFHGALHKL)?;
-                },
-                8 => {
-                    self.BEIFHGALHKL.push(is.read_uint32()?);
-                },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.HLKKKCAJHFK)?;
+                72 => {
+                    self.IFHPLIKFOFL = is.read_bool()?;
                 },
                 24 => {
-                    self.HLKKKCAJHFK.push(is.read_uint32()?);
+                    self.retcode = is.read_uint32()?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HLEOICFJJOO)?;
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.IBMJOHKMAIH)?;
+                },
+                104 => {
+                    self.IBMJOHKMAIH.push(is.read_uint32()?);
+                },
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HPGPHGIHFGN)?;
+                },
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.MFGAPJBJLCB)?;
+                },
+                48 => {
+                    self.MFGAPJBJLCB.push(is.read_uint32()?);
+                },
+                42 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EECIFBHFIIN)?;
+                },
+                40 => {
+                    self.EECIFBHFIIN.push(is.read_uint32()?);
+                },
+                64 => {
+                    self.NNMMIMOLLOE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -166,25 +166,25 @@ impl ::protobuf::Message for GetSwordTrainingDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OKLJFBCPMLG != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OKLJFBCPMLG);
-        }
-        if let Some(v) = self.IIEBGIMJHOL.as_ref() {
+        if let Some(v) = self.HJNEDHFBBGF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
-        if self.BOAGMOPLMEN != false {
+        if self.IFHPLIKFOFL != false {
             my_size += 1 + 1;
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.IMCFCFBGMMK);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.BEIFHGALHKL);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.HLKKKCAJHFK);
-        if let Some(v) = self.HLEOICFJJOO.as_ref() {
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.IBMJOHKMAIH);
+        if let Some(v) = self.HPGPHGIHFGN.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.MFGAPJBJLCB);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.EECIFBHFIIN);
+        if self.NNMMIMOLLOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.NNMMIMOLLOE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -192,23 +192,23 @@ impl ::protobuf::Message for GetSwordTrainingDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OKLJFBCPMLG != 0 {
-            os.write_uint32(6, self.OKLJFBCPMLG)?;
-        }
-        if let Some(v) = self.IIEBGIMJHOL.as_ref() {
+        if let Some(v) = self.HJNEDHFBBGF.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
+        if self.IFHPLIKFOFL != false {
+            os.write_bool(9, self.IFHPLIKFOFL)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
-        if self.BOAGMOPLMEN != false {
-            os.write_bool(15, self.BOAGMOPLMEN)?;
+        os.write_repeated_packed_uint32(13, &self.IBMJOHKMAIH)?;
+        if let Some(v) = self.HPGPHGIHFGN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        os.write_repeated_packed_uint32(4, &self.IMCFCFBGMMK)?;
-        os.write_repeated_packed_uint32(1, &self.BEIFHGALHKL)?;
-        os.write_repeated_packed_uint32(3, &self.HLKKKCAJHFK)?;
-        if let Some(v) = self.HLEOICFJJOO.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        os.write_repeated_packed_uint32(6, &self.MFGAPJBJLCB)?;
+        os.write_repeated_packed_uint32(5, &self.EECIFBHFIIN)?;
+        if self.NNMMIMOLLOE != 0 {
+            os.write_uint32(8, self.NNMMIMOLLOE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -227,27 +227,27 @@ impl ::protobuf::Message for GetSwordTrainingDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.OKLJFBCPMLG = 0;
-        self.IIEBGIMJHOL.clear();
+        self.HJNEDHFBBGF.clear();
+        self.IFHPLIKFOFL = false;
         self.retcode = 0;
-        self.BOAGMOPLMEN = false;
-        self.IMCFCFBGMMK.clear();
-        self.BEIFHGALHKL.clear();
-        self.HLKKKCAJHFK.clear();
-        self.HLEOICFJJOO.clear();
+        self.IBMJOHKMAIH.clear();
+        self.HPGPHGIHFGN.clear();
+        self.MFGAPJBJLCB.clear();
+        self.EECIFBHFIIN.clear();
+        self.NNMMIMOLLOE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetSwordTrainingDataScRsp {
         static instance: GetSwordTrainingDataScRsp = GetSwordTrainingDataScRsp {
-            OKLJFBCPMLG: 0,
-            IIEBGIMJHOL: ::protobuf::MessageField::none(),
+            HJNEDHFBBGF: ::protobuf::MessageField::none(),
+            IFHPLIKFOFL: false,
             retcode: 0,
-            BOAGMOPLMEN: false,
-            IMCFCFBGMMK: ::std::vec::Vec::new(),
-            BEIFHGALHKL: ::std::vec::Vec::new(),
-            HLKKKCAJHFK: ::std::vec::Vec::new(),
-            HLEOICFJJOO: ::protobuf::MessageField::none(),
+            IBMJOHKMAIH: ::std::vec::Vec::new(),
+            HPGPHGIHFGN: ::protobuf::MessageField::none(),
+            MFGAPJBJLCB: ::std::vec::Vec::new(),
+            EECIFBHFIIN: ::std::vec::Vec::new(),
+            NNMMIMOLLOE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -272,16 +272,15 @@ impl ::protobuf::reflect::ProtobufValue for GetSwordTrainingDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fGetSwordTrainingDataScRsp.proto\x1a\x11GPHOKBNINGK.proto\x1a\x11KF\
-    GJBLIFFDP.proto\"\xbf\x02\n\x19GetSwordTrainingDataScRsp\x12\x20\n\x0bOK\
-    LJFBCPMLG\x18\x06\x20\x01(\rR\x0bOKLJFBCPMLG\x12.\n\x0bIIEBGIMJHOL\x18\
-    \x02\x20\x01(\x0b2\x0c.GPHOKBNINGKR\x0bIIEBGIMJHOL\x12\x18\n\x07retcode\
-    \x18\x0c\x20\x01(\rR\x07retcode\x12\x20\n\x0bBOAGMOPLMEN\x18\x0f\x20\x01\
-    (\x08R\x0bBOAGMOPLMEN\x12\x20\n\x0bIMCFCFBGMMK\x18\x04\x20\x03(\rR\x0bIM\
-    CFCFBGMMK\x12\x20\n\x0bBEIFHGALHKL\x18\x01\x20\x03(\rR\x0bBEIFHGALHKL\
-    \x12\x20\n\x0bHLKKKCAJHFK\x18\x03\x20\x03(\rR\x0bHLKKKCAJHFK\x12.\n\x0bH\
-    LEOICFJJOO\x18\x08\x20\x01(\x0b2\x0c.KFGJBLIFFDPR\x0bHLEOICFJJOOb\x06pro\
-    to3\
+    \n\x1fGetSwordTrainingDataScRsp.proto\x1a\x11ABIDDNMDPKJ.proto\x1a\x11AC\
+    GLFPGDDFM.proto\"\xbf\x02\n\x19GetSwordTrainingDataScRsp\x12.\n\x0bHJNED\
+    HFBBGF\x18\x02\x20\x01(\x0b2\x0c.ACGLFPGDDFMR\x0bHJNEDHFBBGF\x12\x20\n\
+    \x0bIFHPLIKFOFL\x18\t\x20\x01(\x08R\x0bIFHPLIKFOFL\x12\x18\n\x07retcode\
+    \x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bIBMJOHKMAIH\x18\r\x20\x03(\
+    \rR\x0bIBMJOHKMAIH\x12.\n\x0bHPGPHGIHFGN\x18\x07\x20\x01(\x0b2\x0c.ABIDD\
+    NMDPKJR\x0bHPGPHGIHFGN\x12\x20\n\x0bMFGAPJBJLCB\x18\x06\x20\x03(\rR\x0bM\
+    FGAPJBJLCB\x12\x20\n\x0bEECIFBHFIIN\x18\x05\x20\x03(\rR\x0bEECIFBHFIIN\
+    \x12\x20\n\x0bNNMMIMOLLOE\x18\x08\x20\x01(\rR\x0bNNMMIMOLLOEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -299,8 +298,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::GPHOKBNINGK::file_descriptor().clone());
-            deps.push(super::KFGJBLIFFDP::file_descriptor().clone());
+            deps.push(super::ABIDDNMDPKJ::file_descriptor().clone());
+            deps.push(super::ACGLFPGDDFM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetSwordTrainingDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

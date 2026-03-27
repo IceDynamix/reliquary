@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMissionDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetMissionDataScRsp.main_mission_list)
-    pub main_mission_list: ::std::vec::Vec<super::MainMission::MainMission>,
-    // @@protoc_insertion_point(field:GetMissionDataScRsp.HKGGEJEDDOJ)
-    pub HKGGEJEDDOJ: u32,
-    // @@protoc_insertion_point(field:GetMissionDataScRsp.track_mission_id)
-    pub track_mission_id: u32,
-    // @@protoc_insertion_point(field:GetMissionDataScRsp.mission_list)
-    pub mission_list: ::std::vec::Vec<super::Mission::Mission>,
     // @@protoc_insertion_point(field:GetMissionDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetMissionDataScRsp.NJBLPEANKFA)
-    pub NJBLPEANKFA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMissionDataScRsp.BCPJCFACKAM)
+    pub BCPJCFACKAM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:GetMissionDataScRsp.main_mission_list)
+    pub main_mission_list: ::std::vec::Vec<super::MainMission::MainMission>,
+    // @@protoc_insertion_point(field:GetMissionDataScRsp.MHOAGEEGJLD)
+    pub MHOAGEEGJLD: u32,
+    // @@protoc_insertion_point(field:GetMissionDataScRsp.mission_list)
+    pub mission_list: ::std::vec::Vec<super::Mission::Mission>,
+    // @@protoc_insertion_point(field:GetMissionDataScRsp.track_mission_id)
+    pub track_mission_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetMissionDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,20 +59,25 @@ impl GetMissionDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &GetMissionDataScRsp| { &m.retcode },
+            |m: &mut GetMissionDataScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BCPJCFACKAM",
+            |m: &GetMissionDataScRsp| { &m.BCPJCFACKAM },
+            |m: &mut GetMissionDataScRsp| { &mut m.BCPJCFACKAM },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "main_mission_list",
             |m: &GetMissionDataScRsp| { &m.main_mission_list },
             |m: &mut GetMissionDataScRsp| { &mut m.main_mission_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HKGGEJEDDOJ",
-            |m: &GetMissionDataScRsp| { &m.HKGGEJEDDOJ },
-            |m: &mut GetMissionDataScRsp| { &mut m.HKGGEJEDDOJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "track_mission_id",
-            |m: &GetMissionDataScRsp| { &m.track_mission_id },
-            |m: &mut GetMissionDataScRsp| { &mut m.track_mission_id },
+            "MHOAGEEGJLD",
+            |m: &GetMissionDataScRsp| { &m.MHOAGEEGJLD },
+            |m: &mut GetMissionDataScRsp| { &mut m.MHOAGEEGJLD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "mission_list",
@@ -80,14 +85,9 @@ impl GetMissionDataScRsp {
             |m: &mut GetMissionDataScRsp| { &mut m.mission_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetMissionDataScRsp| { &m.retcode },
-            |m: &mut GetMissionDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NJBLPEANKFA",
-            |m: &GetMissionDataScRsp| { &m.NJBLPEANKFA },
-            |m: &mut GetMissionDataScRsp| { &mut m.NJBLPEANKFA },
+            "track_mission_id",
+            |m: &GetMissionDataScRsp| { &m.track_mission_id },
+            |m: &mut GetMissionDataScRsp| { &mut m.track_mission_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMissionDataScRsp>(
             "GetMissionDataScRsp",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for GetMissionDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.main_mission_list.push(is.read_message()?);
-                },
-                104 => {
-                    self.HKGGEJEDDOJ = is.read_uint32()?;
-                },
                 88 => {
-                    self.track_mission_id = is.read_uint32()?;
-                },
-                10 => {
-                    self.mission_list.push(is.read_message()?);
-                },
-                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                66 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NJBLPEANKFA)?;
+                10 => {
+                    is.read_repeated_packed_uint32_into(&mut self.BCPJCFACKAM)?;
                 },
-                64 => {
-                    self.NJBLPEANKFA.push(is.read_uint32()?);
+                8 => {
+                    self.BCPJCFACKAM.push(is.read_uint32()?);
+                },
+                98 => {
+                    self.main_mission_list.push(is.read_message()?);
+                },
+                24 => {
+                    self.MHOAGEEGJLD = is.read_uint32()?;
+                },
+                34 => {
+                    self.mission_list.push(is.read_message()?);
+                },
+                16 => {
+                    self.track_mission_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,46 +140,46 @@ impl ::protobuf::Message for GetMissionDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.BCPJCFACKAM);
         for value in &self.main_mission_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.HKGGEJEDDOJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HKGGEJEDDOJ);
-        }
-        if self.track_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.track_mission_id);
+        if self.MHOAGEEGJLD != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.MHOAGEEGJLD);
         }
         for value in &self.mission_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        if self.track_mission_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.track_mission_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.NJBLPEANKFA);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.main_mission_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if self.HKGGEJEDDOJ != 0 {
-            os.write_uint32(13, self.HKGGEJEDDOJ)?;
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
         }
-        if self.track_mission_id != 0 {
-            os.write_uint32(11, self.track_mission_id)?;
+        os.write_repeated_packed_uint32(1, &self.BCPJCFACKAM)?;
+        for v in &self.main_mission_list {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        };
+        if self.MHOAGEEGJLD != 0 {
+            os.write_uint32(3, self.MHOAGEEGJLD)?;
         }
         for v in &self.mission_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+        if self.track_mission_id != 0 {
+            os.write_uint32(2, self.track_mission_id)?;
         }
-        os.write_repeated_packed_uint32(8, &self.NJBLPEANKFA)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -197,23 +197,23 @@ impl ::protobuf::Message for GetMissionDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.main_mission_list.clear();
-        self.HKGGEJEDDOJ = 0;
-        self.track_mission_id = 0;
-        self.mission_list.clear();
         self.retcode = 0;
-        self.NJBLPEANKFA.clear();
+        self.BCPJCFACKAM.clear();
+        self.main_mission_list.clear();
+        self.MHOAGEEGJLD = 0;
+        self.mission_list.clear();
+        self.track_mission_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMissionDataScRsp {
         static instance: GetMissionDataScRsp = GetMissionDataScRsp {
-            main_mission_list: ::std::vec::Vec::new(),
-            HKGGEJEDDOJ: 0,
-            track_mission_id: 0,
-            mission_list: ::std::vec::Vec::new(),
             retcode: 0,
-            NJBLPEANKFA: ::std::vec::Vec::new(),
+            BCPJCFACKAM: ::std::vec::Vec::new(),
+            main_mission_list: ::std::vec::Vec::new(),
+            MHOAGEEGJLD: 0,
+            mission_list: ::std::vec::Vec::new(),
+            track_mission_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,13 +239,13 @@ impl ::protobuf::reflect::ProtobufValue for GetMissionDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19GetMissionDataScRsp.proto\x1a\x11MainMission.proto\x1a\rMission.pr\
-    oto\"\x84\x02\n\x13GetMissionDataScRsp\x128\n\x11main_mission_list\x18\
-    \x07\x20\x03(\x0b2\x0c.MainMissionR\x0fmainMissionList\x12\x20\n\x0bHKGG\
-    EJEDDOJ\x18\r\x20\x01(\rR\x0bHKGGEJEDDOJ\x12(\n\x10track_mission_id\x18\
-    \x0b\x20\x01(\rR\x0etrackMissionId\x12+\n\x0cmission_list\x18\x01\x20\
-    \x03(\x0b2\x08.MissionR\x0bmissionList\x12\x18\n\x07retcode\x18\x05\x20\
-    \x01(\rR\x07retcode\x12\x20\n\x0bNJBLPEANKFA\x18\x08\x20\x03(\rR\x0bNJBL\
-    PEANKFAb\x06proto3\
+    oto\"\x84\x02\n\x13GetMissionDataScRsp\x12\x18\n\x07retcode\x18\x0b\x20\
+    \x01(\rR\x07retcode\x12\x20\n\x0bBCPJCFACKAM\x18\x01\x20\x03(\rR\x0bBCPJ\
+    CFACKAM\x128\n\x11main_mission_list\x18\x0c\x20\x03(\x0b2\x0c.MainMissio\
+    nR\x0fmainMissionList\x12\x20\n\x0bMHOAGEEGJLD\x18\x03\x20\x01(\rR\x0bMH\
+    OAGEEGJLD\x12+\n\x0cmission_list\x18\x04\x20\x03(\x0b2\x08.MissionR\x0bm\
+    issionList\x12(\n\x10track_mission_id\x18\x02\x20\x01(\rR\x0etrackMissio\
+    nIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightRouteInfo {
     // message fields
+    // @@protoc_insertion_point(field:GridFightRouteInfo.fight_camp_id)
+    pub fight_camp_id: u32,
     // @@protoc_insertion_point(field:GridFightRouteInfo.route_encounter_list)
     pub route_encounter_list: ::std::vec::Vec<super::GridFightEncounterInfo::GridFightEncounterInfo>,
     // @@protoc_insertion_point(field:GridFightRouteInfo.elite_branch_id)
     pub elite_branch_id: u32,
-    // @@protoc_insertion_point(field:GridFightRouteInfo.fight_camp_id)
-    pub fight_camp_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightRouteInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,6 +53,11 @@ impl GridFightRouteInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "fight_camp_id",
+            |m: &GridFightRouteInfo| { &m.fight_camp_id },
+            |m: &mut GridFightRouteInfo| { &mut m.fight_camp_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "route_encounter_list",
             |m: &GridFightRouteInfo| { &m.route_encounter_list },
@@ -62,11 +67,6 @@ impl GridFightRouteInfo {
             "elite_branch_id",
             |m: &GridFightRouteInfo| { &m.elite_branch_id },
             |m: &mut GridFightRouteInfo| { &mut m.elite_branch_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "fight_camp_id",
-            |m: &GridFightRouteInfo| { &m.fight_camp_id },
-            |m: &mut GridFightRouteInfo| { &mut m.fight_camp_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightRouteInfo>(
             "GridFightRouteInfo",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GridFightRouteInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.route_encounter_list.push(is.read_message()?);
-                },
-                112 => {
-                    self.elite_branch_id = is.read_uint32()?;
-                },
                 96 => {
                     self.fight_camp_id = is.read_uint32()?;
+                },
+                42 => {
+                    self.route_encounter_list.push(is.read_message()?);
+                },
+                88 => {
+                    self.elite_branch_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for GridFightRouteInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.fight_camp_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.fight_camp_id);
+        }
         for value in &self.route_encounter_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.elite_branch_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.elite_branch_id);
-        }
-        if self.fight_camp_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.fight_camp_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.elite_branch_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for GridFightRouteInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.route_encounter_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.elite_branch_id != 0 {
-            os.write_uint32(14, self.elite_branch_id)?;
-        }
         if self.fight_camp_id != 0 {
             os.write_uint32(12, self.fight_camp_id)?;
+        }
+        for v in &self.route_encounter_list {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        if self.elite_branch_id != 0 {
+            os.write_uint32(11, self.elite_branch_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for GridFightRouteInfo {
     }
 
     fn clear(&mut self) {
+        self.fight_camp_id = 0;
         self.route_encounter_list.clear();
         self.elite_branch_id = 0;
-        self.fight_camp_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightRouteInfo {
         static instance: GridFightRouteInfo = GridFightRouteInfo {
+            fight_camp_id: 0,
             route_encounter_list: ::std::vec::Vec::new(),
             elite_branch_id: 0,
-            fight_camp_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for GridFightRouteInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18GridFightRouteInfo.proto\x1a\x1cGridFightEncounterInfo.proto\"\xab\
-    \x01\n\x12GridFightRouteInfo\x12I\n\x14route_encounter_list\x18\x08\x20\
-    \x03(\x0b2\x17.GridFightEncounterInfoR\x12routeEncounterList\x12&\n\x0fe\
-    lite_branch_id\x18\x0e\x20\x01(\rR\reliteBranchId\x12\"\n\rfight_camp_id\
-    \x18\x0c\x20\x01(\rR\x0bfightCampIdb\x06proto3\
+    \x01\n\x12GridFightRouteInfo\x12\"\n\rfight_camp_id\x18\x0c\x20\x01(\rR\
+    \x0bfightCampId\x12I\n\x14route_encounter_list\x18\x05\x20\x03(\x0b2\x17\
+    .GridFightEncounterInfoR\x12routeEncounterList\x12&\n\x0felite_branch_id\
+    \x18\x0b\x20\x01(\rR\reliteBranchIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
