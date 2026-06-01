@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyTakeBuildLevelAwardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardCsReq.HBLOHOFKKKO)
-    pub HBLOHOFKKKO: u32,
+    // @@protoc_insertion_point(field:TrainPartyTakeBuildLevelAwardCsReq.FPHFHCGNNGM)
+    pub FPHFHCGNNGM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartyTakeBuildLevelAwardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TrainPartyTakeBuildLevelAwardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBLOHOFKKKO",
-            |m: &TrainPartyTakeBuildLevelAwardCsReq| { &m.HBLOHOFKKKO },
-            |m: &mut TrainPartyTakeBuildLevelAwardCsReq| { &mut m.HBLOHOFKKKO },
+            "FPHFHCGNNGM",
+            |m: &TrainPartyTakeBuildLevelAwardCsReq| { &m.FPHFHCGNNGM },
+            |m: &mut TrainPartyTakeBuildLevelAwardCsReq| { &mut m.FPHFHCGNNGM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartyTakeBuildLevelAwardCsReq>(
             "TrainPartyTakeBuildLevelAwardCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.HBLOHOFKKKO = is.read_uint32()?;
+                32 => {
+                    self.FPHFHCGNNGM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HBLOHOFKKKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.HBLOHOFKKKO);
+        if self.FPHFHCGNNGM != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.FPHFHCGNNGM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HBLOHOFKKKO != 0 {
-            os.write_uint32(15, self.HBLOHOFKKKO)?;
+        if self.FPHFHCGNNGM != 0 {
+            os.write_uint32(4, self.FPHFHCGNNGM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for TrainPartyTakeBuildLevelAwardCsReq {
     }
 
     fn clear(&mut self) {
-        self.HBLOHOFKKKO = 0;
+        self.FPHFHCGNNGM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyTakeBuildLevelAwardCsReq {
         static instance: TrainPartyTakeBuildLevelAwardCsReq = TrainPartyTakeBuildLevelAwardCsReq {
-            HBLOHOFKKKO: 0,
+            FPHFHCGNNGM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyTakeBuildLevelAwardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(TrainPartyTakeBuildLevelAwardCsReq.proto\"F\n\"TrainPartyTakeBuildLev\
-    elAwardCsReq\x12\x20\n\x0bHBLOHOFKKKO\x18\x0f\x20\x01(\rR\x0bHBLOHOFKKKO\
+    elAwardCsReq\x12\x20\n\x0bFPHFHCGNNGM\x18\x04\x20\x01(\rR\x0bFPHFHCGNNGM\
     b\x06proto3\
 ";
 

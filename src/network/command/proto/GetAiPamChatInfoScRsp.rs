@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetAiPamChatInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.HEFLHCHDDMG)
-    pub HEFLHCHDDMG: bool,
-    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.ECIAGLJNPMM)
-    pub ECIAGLJNPMM: u32,
-    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.FILFNMKCCNN)
-    pub FILFNMKCCNN: ::std::vec::Vec<super::MDOJCCMLKHP::MDOJCCMLKHP>,
-    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.AIPBFEOFNDO)
-    pub AIPBFEOFNDO: ::std::string::String,
-    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.EKBMIOCOLIC)
-    pub EKBMIOCOLIC: bool,
-    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.MNDAIAGPOEI)
-    pub MNDAIAGPOEI: bool,
+    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.BJLHDBPPILI)
+    pub BJLHDBPPILI: ::std::vec::Vec<super::FAIFDBLLGKK::FAIFDBLLGKK>,
+    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.ACFENKABBKK)
+    pub ACFENKABBKK: ::std::string::String,
+    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.AGANFJKBFMA)
+    pub AGANFJKBFMA: bool,
+    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.LOCNGFLCENG)
+    pub LOCNGFLCENG: bool,
+    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.OKCIPPLKGCD)
+    pub OKCIPPLKGCD: bool,
+    // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.JKIHICLOPKM)
+    pub JKIHICLOPKM: u32,
     // @@protoc_insertion_point(field:GetAiPamChatInfoScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -61,35 +61,35 @@ impl GetAiPamChatInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEFLHCHDDMG",
-            |m: &GetAiPamChatInfoScRsp| { &m.HEFLHCHDDMG },
-            |m: &mut GetAiPamChatInfoScRsp| { &mut m.HEFLHCHDDMG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECIAGLJNPMM",
-            |m: &GetAiPamChatInfoScRsp| { &m.ECIAGLJNPMM },
-            |m: &mut GetAiPamChatInfoScRsp| { &mut m.ECIAGLJNPMM },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FILFNMKCCNN",
-            |m: &GetAiPamChatInfoScRsp| { &m.FILFNMKCCNN },
-            |m: &mut GetAiPamChatInfoScRsp| { &mut m.FILFNMKCCNN },
+            "BJLHDBPPILI",
+            |m: &GetAiPamChatInfoScRsp| { &m.BJLHDBPPILI },
+            |m: &mut GetAiPamChatInfoScRsp| { &mut m.BJLHDBPPILI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AIPBFEOFNDO",
-            |m: &GetAiPamChatInfoScRsp| { &m.AIPBFEOFNDO },
-            |m: &mut GetAiPamChatInfoScRsp| { &mut m.AIPBFEOFNDO },
+            "ACFENKABBKK",
+            |m: &GetAiPamChatInfoScRsp| { &m.ACFENKABBKK },
+            |m: &mut GetAiPamChatInfoScRsp| { &mut m.ACFENKABBKK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKBMIOCOLIC",
-            |m: &GetAiPamChatInfoScRsp| { &m.EKBMIOCOLIC },
-            |m: &mut GetAiPamChatInfoScRsp| { &mut m.EKBMIOCOLIC },
+            "AGANFJKBFMA",
+            |m: &GetAiPamChatInfoScRsp| { &m.AGANFJKBFMA },
+            |m: &mut GetAiPamChatInfoScRsp| { &mut m.AGANFJKBFMA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNDAIAGPOEI",
-            |m: &GetAiPamChatInfoScRsp| { &m.MNDAIAGPOEI },
-            |m: &mut GetAiPamChatInfoScRsp| { &mut m.MNDAIAGPOEI },
+            "LOCNGFLCENG",
+            |m: &GetAiPamChatInfoScRsp| { &m.LOCNGFLCENG },
+            |m: &mut GetAiPamChatInfoScRsp| { &mut m.LOCNGFLCENG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OKCIPPLKGCD",
+            |m: &GetAiPamChatInfoScRsp| { &m.OKCIPPLKGCD },
+            |m: &mut GetAiPamChatInfoScRsp| { &mut m.OKCIPPLKGCD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JKIHICLOPKM",
+            |m: &GetAiPamChatInfoScRsp| { &m.JKIHICLOPKM },
+            |m: &mut GetAiPamChatInfoScRsp| { &mut m.JKIHICLOPKM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -114,25 +114,25 @@ impl ::protobuf::Message for GetAiPamChatInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.HEFLHCHDDMG = is.read_bool()?;
+                50 => {
+                    self.BJLHDBPPILI.push(is.read_message()?);
+                },
+                122 => {
+                    self.ACFENKABBKK = is.read_string()?;
                 },
                 96 => {
-                    self.ECIAGLJNPMM = is.read_uint32()?;
+                    self.AGANFJKBFMA = is.read_bool()?;
                 },
-                90 => {
-                    self.FILFNMKCCNN.push(is.read_message()?);
+                64 => {
+                    self.LOCNGFLCENG = is.read_bool()?;
                 },
-                26 => {
-                    self.AIPBFEOFNDO = is.read_string()?;
-                },
-                104 => {
-                    self.EKBMIOCOLIC = is.read_bool()?;
-                },
-                72 => {
-                    self.MNDAIAGPOEI = is.read_bool()?;
+                40 => {
+                    self.OKCIPPLKGCD = is.read_bool()?;
                 },
                 8 => {
+                    self.JKIHICLOPKM = is.read_uint32()?;
+                },
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -147,27 +147,27 @@ impl ::protobuf::Message for GetAiPamChatInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HEFLHCHDDMG != false {
-            my_size += 1 + 1;
-        }
-        if self.ECIAGLJNPMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ECIAGLJNPMM);
-        }
-        for value in &self.FILFNMKCCNN {
+        for value in &self.BJLHDBPPILI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if !self.AIPBFEOFNDO.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.AIPBFEOFNDO);
+        if !self.ACFENKABBKK.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.ACFENKABBKK);
         }
-        if self.EKBMIOCOLIC != false {
+        if self.AGANFJKBFMA != false {
             my_size += 1 + 1;
         }
-        if self.MNDAIAGPOEI != false {
+        if self.LOCNGFLCENG != false {
             my_size += 1 + 1;
+        }
+        if self.OKCIPPLKGCD != false {
+            my_size += 1 + 1;
+        }
+        if self.JKIHICLOPKM != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.JKIHICLOPKM);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -175,26 +175,26 @@ impl ::protobuf::Message for GetAiPamChatInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HEFLHCHDDMG != false {
-            os.write_bool(6, self.HEFLHCHDDMG)?;
-        }
-        if self.ECIAGLJNPMM != 0 {
-            os.write_uint32(12, self.ECIAGLJNPMM)?;
-        }
-        for v in &self.FILFNMKCCNN {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.BJLHDBPPILI {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if !self.AIPBFEOFNDO.is_empty() {
-            os.write_string(3, &self.AIPBFEOFNDO)?;
+        if !self.ACFENKABBKK.is_empty() {
+            os.write_string(15, &self.ACFENKABBKK)?;
         }
-        if self.EKBMIOCOLIC != false {
-            os.write_bool(13, self.EKBMIOCOLIC)?;
+        if self.AGANFJKBFMA != false {
+            os.write_bool(12, self.AGANFJKBFMA)?;
         }
-        if self.MNDAIAGPOEI != false {
-            os.write_bool(9, self.MNDAIAGPOEI)?;
+        if self.LOCNGFLCENG != false {
+            os.write_bool(8, self.LOCNGFLCENG)?;
+        }
+        if self.OKCIPPLKGCD != false {
+            os.write_bool(5, self.OKCIPPLKGCD)?;
+        }
+        if self.JKIHICLOPKM != 0 {
+            os.write_uint32(1, self.JKIHICLOPKM)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,24 +213,24 @@ impl ::protobuf::Message for GetAiPamChatInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.HEFLHCHDDMG = false;
-        self.ECIAGLJNPMM = 0;
-        self.FILFNMKCCNN.clear();
-        self.AIPBFEOFNDO.clear();
-        self.EKBMIOCOLIC = false;
-        self.MNDAIAGPOEI = false;
+        self.BJLHDBPPILI.clear();
+        self.ACFENKABBKK.clear();
+        self.AGANFJKBFMA = false;
+        self.LOCNGFLCENG = false;
+        self.OKCIPPLKGCD = false;
+        self.JKIHICLOPKM = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetAiPamChatInfoScRsp {
         static instance: GetAiPamChatInfoScRsp = GetAiPamChatInfoScRsp {
-            HEFLHCHDDMG: false,
-            ECIAGLJNPMM: 0,
-            FILFNMKCCNN: ::std::vec::Vec::new(),
-            AIPBFEOFNDO: ::std::string::String::new(),
-            EKBMIOCOLIC: false,
-            MNDAIAGPOEI: false,
+            BJLHDBPPILI: ::std::vec::Vec::new(),
+            ACFENKABBKK: ::std::string::String::new(),
+            AGANFJKBFMA: false,
+            LOCNGFLCENG: false,
+            OKCIPPLKGCD: false,
+            JKIHICLOPKM: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -256,14 +256,14 @@ impl ::protobuf::reflect::ProtobufValue for GetAiPamChatInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bGetAiPamChatInfoScRsp.proto\x1a\x11MDOJCCMLKHP.proto\"\x8b\x02\n\
-    \x15GetAiPamChatInfoScRsp\x12\x20\n\x0bHEFLHCHDDMG\x18\x06\x20\x01(\x08R\
-    \x0bHEFLHCHDDMG\x12\x20\n\x0bECIAGLJNPMM\x18\x0c\x20\x01(\rR\x0bECIAGLJN\
-    PMM\x12.\n\x0bFILFNMKCCNN\x18\x0b\x20\x03(\x0b2\x0c.MDOJCCMLKHPR\x0bFILF\
-    NMKCCNN\x12\x20\n\x0bAIPBFEOFNDO\x18\x03\x20\x01(\tR\x0bAIPBFEOFNDO\x12\
-    \x20\n\x0bEKBMIOCOLIC\x18\r\x20\x01(\x08R\x0bEKBMIOCOLIC\x12\x20\n\x0bMN\
-    DAIAGPOEI\x18\t\x20\x01(\x08R\x0bMNDAIAGPOEI\x12\x18\n\x07retcode\x18\
-    \x01\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1bGetAiPamChatInfoScRsp.proto\x1a\x11FAIFDBLLGKK.proto\"\x8b\x02\n\
+    \x15GetAiPamChatInfoScRsp\x12.\n\x0bBJLHDBPPILI\x18\x06\x20\x03(\x0b2\
+    \x0c.FAIFDBLLGKKR\x0bBJLHDBPPILI\x12\x20\n\x0bACFENKABBKK\x18\x0f\x20\
+    \x01(\tR\x0bACFENKABBKK\x12\x20\n\x0bAGANFJKBFMA\x18\x0c\x20\x01(\x08R\
+    \x0bAGANFJKBFMA\x12\x20\n\x0bLOCNGFLCENG\x18\x08\x20\x01(\x08R\x0bLOCNGF\
+    LCENG\x12\x20\n\x0bOKCIPPLKGCD\x18\x05\x20\x01(\x08R\x0bOKCIPPLKGCD\x12\
+    \x20\n\x0bJKIHICLOPKM\x18\x01\x20\x01(\rR\x0bJKIHICLOPKM\x12\x18\n\x07re\
+    tcode\x18\x04\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -281,7 +281,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MDOJCCMLKHP::file_descriptor().clone());
+            deps.push(super::FAIFDBLLGKK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetAiPamChatInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:AlleyEventState)
 pub enum AlleyEventState {
-    // @@protoc_insertion_point(enum_value:AlleyEventState.HEBAGHLEECH_MFDPLAOEKFE)
-    HEBAGHLEECH_MFDPLAOEKFE = 0,
-    // @@protoc_insertion_point(enum_value:AlleyEventState.HEBAGHLEECH_GKBODJFAJCE)
-    HEBAGHLEECH_GKBODJFAJCE = 1,
-    // @@protoc_insertion_point(enum_value:AlleyEventState.HEBAGHLEECH_DOIBPFNOJFJ)
-    HEBAGHLEECH_DOIBPFNOJFJ = 2,
-    // @@protoc_insertion_point(enum_value:AlleyEventState.HEBAGHLEECH_DAFADDIENIH)
-    HEBAGHLEECH_DAFADDIENIH = 3,
+    // @@protoc_insertion_point(enum_value:AlleyEventState.AJOCCOAIFIF_NAPMFFDMLEK)
+    AJOCCOAIFIF_NAPMFFDMLEK = 0,
+    // @@protoc_insertion_point(enum_value:AlleyEventState.AJOCCOAIFIF_EMJDKBJFFHF)
+    AJOCCOAIFIF_EMJDKBJFFHF = 1,
+    // @@protoc_insertion_point(enum_value:AlleyEventState.AJOCCOAIFIF_MOMHEEPILJO)
+    AJOCCOAIFIF_MOMHEEPILJO = 2,
+    // @@protoc_insertion_point(enum_value:AlleyEventState.AJOCCOAIFIF_HDGPEEIJIJP)
+    AJOCCOAIFIF_HDGPEEIJIJP = 3,
 }
 
 impl ::protobuf::Enum for AlleyEventState {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for AlleyEventState {
 
     fn from_i32(value: i32) -> ::std::option::Option<AlleyEventState> {
         match value {
-            0 => ::std::option::Option::Some(AlleyEventState::HEBAGHLEECH_MFDPLAOEKFE),
-            1 => ::std::option::Option::Some(AlleyEventState::HEBAGHLEECH_GKBODJFAJCE),
-            2 => ::std::option::Option::Some(AlleyEventState::HEBAGHLEECH_DOIBPFNOJFJ),
-            3 => ::std::option::Option::Some(AlleyEventState::HEBAGHLEECH_DAFADDIENIH),
+            0 => ::std::option::Option::Some(AlleyEventState::AJOCCOAIFIF_NAPMFFDMLEK),
+            1 => ::std::option::Option::Some(AlleyEventState::AJOCCOAIFIF_EMJDKBJFFHF),
+            2 => ::std::option::Option::Some(AlleyEventState::AJOCCOAIFIF_MOMHEEPILJO),
+            3 => ::std::option::Option::Some(AlleyEventState::AJOCCOAIFIF_HDGPEEIJIJP),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<AlleyEventState> {
         match str {
-            "HEBAGHLEECH_MFDPLAOEKFE" => ::std::option::Option::Some(AlleyEventState::HEBAGHLEECH_MFDPLAOEKFE),
-            "HEBAGHLEECH_GKBODJFAJCE" => ::std::option::Option::Some(AlleyEventState::HEBAGHLEECH_GKBODJFAJCE),
-            "HEBAGHLEECH_DOIBPFNOJFJ" => ::std::option::Option::Some(AlleyEventState::HEBAGHLEECH_DOIBPFNOJFJ),
-            "HEBAGHLEECH_DAFADDIENIH" => ::std::option::Option::Some(AlleyEventState::HEBAGHLEECH_DAFADDIENIH),
+            "AJOCCOAIFIF_NAPMFFDMLEK" => ::std::option::Option::Some(AlleyEventState::AJOCCOAIFIF_NAPMFFDMLEK),
+            "AJOCCOAIFIF_EMJDKBJFFHF" => ::std::option::Option::Some(AlleyEventState::AJOCCOAIFIF_EMJDKBJFFHF),
+            "AJOCCOAIFIF_MOMHEEPILJO" => ::std::option::Option::Some(AlleyEventState::AJOCCOAIFIF_MOMHEEPILJO),
+            "AJOCCOAIFIF_HDGPEEIJIJP" => ::std::option::Option::Some(AlleyEventState::AJOCCOAIFIF_HDGPEEIJIJP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [AlleyEventState] = &[
-        AlleyEventState::HEBAGHLEECH_MFDPLAOEKFE,
-        AlleyEventState::HEBAGHLEECH_GKBODJFAJCE,
-        AlleyEventState::HEBAGHLEECH_DOIBPFNOJFJ,
-        AlleyEventState::HEBAGHLEECH_DAFADDIENIH,
+        AlleyEventState::AJOCCOAIFIF_NAPMFFDMLEK,
+        AlleyEventState::AJOCCOAIFIF_EMJDKBJFFHF,
+        AlleyEventState::AJOCCOAIFIF_MOMHEEPILJO,
+        AlleyEventState::AJOCCOAIFIF_HDGPEEIJIJP,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for AlleyEventState {
 
 impl ::std::default::Default for AlleyEventState {
     fn default() -> Self {
-        AlleyEventState::HEBAGHLEECH_MFDPLAOEKFE
+        AlleyEventState::AJOCCOAIFIF_NAPMFFDMLEK
     }
 }
 
@@ -97,10 +97,10 @@ impl AlleyEventState {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15AlleyEventState.proto*\x85\x01\n\x0fAlleyEventState\x12\x1b\n\x17H\
-    EBAGHLEECH_MFDPLAOEKFE\x10\0\x12\x1b\n\x17HEBAGHLEECH_GKBODJFAJCE\x10\
-    \x01\x12\x1b\n\x17HEBAGHLEECH_DOIBPFNOJFJ\x10\x02\x12\x1b\n\x17HEBAGHLEE\
-    CH_DAFADDIENIH\x10\x03b\x06proto3\
+    \n\x15AlleyEventState.proto*\x85\x01\n\x0fAlleyEventState\x12\x1b\n\x17A\
+    JOCCOAIFIF_NAPMFFDMLEK\x10\0\x12\x1b\n\x17AJOCCOAIFIF_EMJDKBJFFHF\x10\
+    \x01\x12\x1b\n\x17AJOCCOAIFIF_MOMHEEPILJO\x10\x02\x12\x1b\n\x17AJOCCOAIF\
+    IF_HDGPEEIJIJP\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

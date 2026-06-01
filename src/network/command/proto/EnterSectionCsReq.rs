@@ -79,10 +79,10 @@ impl ::protobuf::Message for EnterSectionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
+                112 => {
                     self.interact_id = is.read_uint64()?;
                 },
-                8 => {
+                16 => {
                     self.section_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for EnterSectionCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.interact_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(11, self.interact_id);
+            my_size += ::protobuf::rt::uint64_size(14, self.interact_id);
         }
         if self.section_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.section_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.section_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for EnterSectionCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.interact_id != 0 {
-            os.write_uint64(11, self.interact_id)?;
+            os.write_uint64(14, self.interact_id)?;
         }
         if self.section_id != 0 {
-            os.write_uint32(1, self.section_id)?;
+            os.write_uint32(2, self.section_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for EnterSectionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17EnterSectionCsReq.proto\"S\n\x11EnterSectionCsReq\x12\x1f\n\x0bint\
-    eract_id\x18\x0b\x20\x01(\x04R\ninteractId\x12\x1d\n\nsection_id\x18\x01\
+    eract_id\x18\x0e\x20\x01(\x04R\ninteractId\x12\x1d\n\nsection_id\x18\x02\
     \x20\x01(\rR\tsectionIdb\x06proto3\
 ";
 

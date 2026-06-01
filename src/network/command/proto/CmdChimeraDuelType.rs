@@ -27,78 +27,78 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdChimeraDuelType)
 pub enum CmdChimeraDuelType {
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.MNGJGGANIIP_PCPDHELPKEM)
-    MNGJGGANIIP_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelStartGameScRsp)
-    CmdChimeraDuelStartGameScRsp = 9211,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelEndRoundShopStageScRsp)
-    CmdChimeraDuelEndRoundShopStageScRsp = 9229,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelSelectGameCsReq)
-    CmdChimeraDuelSelectGameCsReq = 9214,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelEndRoundBattleStageCsReq)
-    CmdChimeraDuelEndRoundBattleStageCsReq = 9212,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelFinishMasterChallengeCsReq)
-    CmdChimeraDuelFinishMasterChallengeCsReq = 9256,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelShopLockCsReq)
-    CmdChimeraDuelShopLockCsReq = 9241,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelEndRoundShopStageCsReq)
-    CmdChimeraDuelEndRoundShopStageCsReq = 9257,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelStartGameCsReq)
-    CmdChimeraDuelStartGameCsReq = 9215,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelGetDataCsReq)
-    CmdChimeraDuelGetDataCsReq = 9223,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelEndGameCsReq)
-    CmdChimeraDuelEndGameCsReq = 9228,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelShopBuyItemScRsp)
-    CmdChimeraDuelShopBuyItemScRsp = 9226,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelUnlockMasterCsReq)
-    CmdChimeraDuelUnlockMasterCsReq = 9245,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelSellChimeraScRsp)
-    CmdChimeraDuelSellChimeraScRsp = 9219,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelSellChimeraCsReq)
-    CmdChimeraDuelSellChimeraCsReq = 9243,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelEndRoundBattleStageScRsp)
-    CmdChimeraDuelEndRoundBattleStageScRsp = 9254,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelShopBuyChimeraCsReq)
-    CmdChimeraDuelShopBuyChimeraCsReq = 9246,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdReceive)
-    CmdReceive = 9232,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelShopBuyChimeraScRsp)
-    CmdChimeraDuelShopBuyChimeraScRsp = 9213,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelSetFriendDefendLineupCsReq)
-    CmdChimeraDuelSetFriendDefendLineupCsReq = 9253,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelSaveFriendPvpLineupCsReq)
-    CmdChimeraDuelSaveFriendPvpLineupCsReq = 9258,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelChangeLineupCsReq)
-    CmdChimeraDuelChangeLineupCsReq = 9236,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelGetFriendListCsReq)
-    CmdChimeraDuelGetFriendListCsReq = 9230,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelShopRefreshCsReq)
-    CmdChimeraDuelShopRefreshCsReq = 9259,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelGetDataScRsp)
-    CmdChimeraDuelGetDataScRsp = 9217,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelShopLockScRsp)
-    CmdChimeraDuelShopLockScRsp = 9231,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelSaveFriendPvpLineupScRsp)
-    CmdChimeraDuelSaveFriendPvpLineupScRsp = 9239,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelChangeLineupScRsp)
-    CmdChimeraDuelChangeLineupScRsp = 9218,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelShopBuyItemCsReq)
-    CmdChimeraDuelShopBuyItemCsReq = 9260,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelSetFriendDefendLineupScRsp)
-    CmdChimeraDuelSetFriendDefendLineupScRsp = 9249,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelSyncChangeScNotify)
-    CmdChimeraDuelSyncChangeScNotify = 9216,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelFinishMasterChallengeScRsp)
-    CmdChimeraDuelFinishMasterChallengeScRsp = 9250,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelSelectGameScRsp)
-    CmdChimeraDuelSelectGameScRsp = 9247,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelShopRefreshScRsp)
-    CmdChimeraDuelShopRefreshScRsp = 9225,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelEndGameScRsp)
-    CmdChimeraDuelEndGameScRsp = 9255,
-    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.CmdChimeraDuelUnlockMasterScRsp)
-    CmdChimeraDuelUnlockMasterScRsp = 9248,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_NLCDGIPGFDJ)
+    BJCCFBOGEOE_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_CPECDGMGPGI)
+    BJCCFBOGEOE_CPECDGMGPGI = 9251,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_HJKJEHFLFLO)
+    BJCCFBOGEOE_HJKJEHFLFLO = 9252,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_GLMHKMAMMGG)
+    BJCCFBOGEOE_GLMHKMAMMGG = 9260,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_MAGIHJKEPIG)
+    BJCCFBOGEOE_MAGIHJKEPIG = 9254,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_DJAFICFHNFJ)
+    BJCCFBOGEOE_DJAFICFHNFJ = 9238,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_AEHEPACIJEL)
+    BJCCFBOGEOE_AEHEPACIJEL = 9237,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_IDBNCPIDILA)
+    BJCCFBOGEOE_IDBNCPIDILA = 9222,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_COJGFNPLABL)
+    BJCCFBOGEOE_COJGFNPLABL = 9250,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_FJHAPKOCODL)
+    BJCCFBOGEOE_FJHAPKOCODL = 9245,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_MDGPOJPGMEO)
+    BJCCFBOGEOE_MDGPOJPGMEO = 9243,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_LNNLCHOEOAJ)
+    BJCCFBOGEOE_LNNLCHOEOAJ = 9256,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_NDMGPBGDOOF)
+    BJCCFBOGEOE_NDMGPBGDOOF = 9232,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_DNJJPKFNOHJ)
+    BJCCFBOGEOE_DNJJPKFNOHJ = 9219,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_KBPJHMODAFK)
+    BJCCFBOGEOE_KBPJHMODAFK = 9242,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_EKBHDFNBDEH)
+    BJCCFBOGEOE_EKBHDFNBDEH = 9253,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_CDPCPLPMAIE)
+    BJCCFBOGEOE_CDPCPLPMAIE = 9226,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_NFGJMMHJHFK)
+    BJCCFBOGEOE_NFGJMMHJHFK = 9213,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_MMJPHPMANMH)
+    BJCCFBOGEOE_MMJPHPMANMH = 9244,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_FGJHLOALHJJ)
+    BJCCFBOGEOE_FGJHLOALHJJ = 9228,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_EJCBPDGLEDC)
+    BJCCFBOGEOE_EJCBPDGLEDC = 9224,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_MFBPPHMAGHA)
+    BJCCFBOGEOE_MFBPPHMAGHA = 9259,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_DDGBMMCABMG)
+    BJCCFBOGEOE_DDGBMMCABMG = 9215,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_EPDMNPDIMHC)
+    BJCCFBOGEOE_EPDMNPDIMHC = 9230,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_LADCFLBMDFH)
+    BJCCFBOGEOE_LADCFLBMDFH = 9239,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_HFOLCDOLMON)
+    BJCCFBOGEOE_HFOLCDOLMON = 9248,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_GLEFBDECGKA)
+    BJCCFBOGEOE_GLEFBDECGKA = 9258,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_KGGPPANCMKC)
+    BJCCFBOGEOE_KGGPPANCMKC = 9255,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_OPNGKOBFDDA)
+    BJCCFBOGEOE_OPNGKOBFDDA = 9246,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_JDLGJIEOIDA)
+    BJCCFBOGEOE_JDLGJIEOIDA = 9229,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_AAKPEPCLGDD)
+    BJCCFBOGEOE_AAKPEPCLGDD = 9225,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_BGGINGOKPDN)
+    BJCCFBOGEOE_BGGINGOKPDN = 9231,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_GLIFDGOBEEC)
+    BJCCFBOGEOE_GLIFDGOBEEC = 9216,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_FFPJHPIAADH)
+    BJCCFBOGEOE_FFPJHPIAADH = 9218,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_LMDFPJCADOG)
+    BJCCFBOGEOE_LMDFPJCADOG = 9247,
+    // @@protoc_insertion_point(enum_value:CmdChimeraDuelType.BJCCFBOGEOE_EIFLELDEOME)
+    BJCCFBOGEOE_EIFLELDEOME = 9234,
 }
 
 impl ::protobuf::Enum for CmdChimeraDuelType {
@@ -110,125 +110,125 @@ impl ::protobuf::Enum for CmdChimeraDuelType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdChimeraDuelType> {
         match value {
-            0 => ::std::option::Option::Some(CmdChimeraDuelType::MNGJGGANIIP_PCPDHELPKEM),
-            9211 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelStartGameScRsp),
-            9229 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndRoundShopStageScRsp),
-            9214 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSelectGameCsReq),
-            9212 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndRoundBattleStageCsReq),
-            9256 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelFinishMasterChallengeCsReq),
-            9241 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopLockCsReq),
-            9257 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndRoundShopStageCsReq),
-            9215 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelStartGameCsReq),
-            9223 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelGetDataCsReq),
-            9228 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndGameCsReq),
-            9226 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopBuyItemScRsp),
-            9245 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelUnlockMasterCsReq),
-            9219 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSellChimeraScRsp),
-            9243 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSellChimeraCsReq),
-            9254 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndRoundBattleStageScRsp),
-            9246 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopBuyChimeraCsReq),
-            9232 => ::std::option::Option::Some(CmdChimeraDuelType::CmdReceive),
-            9213 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopBuyChimeraScRsp),
-            9253 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSetFriendDefendLineupCsReq),
-            9258 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSaveFriendPvpLineupCsReq),
-            9236 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelChangeLineupCsReq),
-            9230 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelGetFriendListCsReq),
-            9259 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopRefreshCsReq),
-            9217 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelGetDataScRsp),
-            9231 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopLockScRsp),
-            9239 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSaveFriendPvpLineupScRsp),
-            9218 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelChangeLineupScRsp),
-            9260 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopBuyItemCsReq),
-            9249 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSetFriendDefendLineupScRsp),
-            9216 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSyncChangeScNotify),
-            9250 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelFinishMasterChallengeScRsp),
-            9247 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSelectGameScRsp),
-            9225 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopRefreshScRsp),
-            9255 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndGameScRsp),
-            9248 => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelUnlockMasterScRsp),
+            0 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_NLCDGIPGFDJ),
+            9251 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_CPECDGMGPGI),
+            9252 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_HJKJEHFLFLO),
+            9260 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_GLMHKMAMMGG),
+            9254 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_MAGIHJKEPIG),
+            9238 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_DJAFICFHNFJ),
+            9237 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_AEHEPACIJEL),
+            9222 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_IDBNCPIDILA),
+            9250 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_COJGFNPLABL),
+            9245 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_FJHAPKOCODL),
+            9243 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_MDGPOJPGMEO),
+            9256 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_LNNLCHOEOAJ),
+            9232 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_NDMGPBGDOOF),
+            9219 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_DNJJPKFNOHJ),
+            9242 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_KBPJHMODAFK),
+            9253 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_EKBHDFNBDEH),
+            9226 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_CDPCPLPMAIE),
+            9213 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_NFGJMMHJHFK),
+            9244 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_MMJPHPMANMH),
+            9228 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_FGJHLOALHJJ),
+            9224 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_EJCBPDGLEDC),
+            9259 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_MFBPPHMAGHA),
+            9215 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_DDGBMMCABMG),
+            9230 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_EPDMNPDIMHC),
+            9239 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_LADCFLBMDFH),
+            9248 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_HFOLCDOLMON),
+            9258 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_GLEFBDECGKA),
+            9255 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_KGGPPANCMKC),
+            9246 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_OPNGKOBFDDA),
+            9229 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_JDLGJIEOIDA),
+            9225 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_AAKPEPCLGDD),
+            9231 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_BGGINGOKPDN),
+            9216 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_GLIFDGOBEEC),
+            9218 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_FFPJHPIAADH),
+            9247 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_LMDFPJCADOG),
+            9234 => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_EIFLELDEOME),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdChimeraDuelType> {
         match str {
-            "MNGJGGANIIP_PCPDHELPKEM" => ::std::option::Option::Some(CmdChimeraDuelType::MNGJGGANIIP_PCPDHELPKEM),
-            "CmdChimeraDuelStartGameScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelStartGameScRsp),
-            "CmdChimeraDuelEndRoundShopStageScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndRoundShopStageScRsp),
-            "CmdChimeraDuelSelectGameCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSelectGameCsReq),
-            "CmdChimeraDuelEndRoundBattleStageCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndRoundBattleStageCsReq),
-            "CmdChimeraDuelFinishMasterChallengeCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelFinishMasterChallengeCsReq),
-            "CmdChimeraDuelShopLockCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopLockCsReq),
-            "CmdChimeraDuelEndRoundShopStageCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndRoundShopStageCsReq),
-            "CmdChimeraDuelStartGameCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelStartGameCsReq),
-            "CmdChimeraDuelGetDataCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelGetDataCsReq),
-            "CmdChimeraDuelEndGameCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndGameCsReq),
-            "CmdChimeraDuelShopBuyItemScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopBuyItemScRsp),
-            "CmdChimeraDuelUnlockMasterCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelUnlockMasterCsReq),
-            "CmdChimeraDuelSellChimeraScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSellChimeraScRsp),
-            "CmdChimeraDuelSellChimeraCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSellChimeraCsReq),
-            "CmdChimeraDuelEndRoundBattleStageScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndRoundBattleStageScRsp),
-            "CmdChimeraDuelShopBuyChimeraCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopBuyChimeraCsReq),
-            "CmdReceive" => ::std::option::Option::Some(CmdChimeraDuelType::CmdReceive),
-            "CmdChimeraDuelShopBuyChimeraScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopBuyChimeraScRsp),
-            "CmdChimeraDuelSetFriendDefendLineupCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSetFriendDefendLineupCsReq),
-            "CmdChimeraDuelSaveFriendPvpLineupCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSaveFriendPvpLineupCsReq),
-            "CmdChimeraDuelChangeLineupCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelChangeLineupCsReq),
-            "CmdChimeraDuelGetFriendListCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelGetFriendListCsReq),
-            "CmdChimeraDuelShopRefreshCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopRefreshCsReq),
-            "CmdChimeraDuelGetDataScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelGetDataScRsp),
-            "CmdChimeraDuelShopLockScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopLockScRsp),
-            "CmdChimeraDuelSaveFriendPvpLineupScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSaveFriendPvpLineupScRsp),
-            "CmdChimeraDuelChangeLineupScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelChangeLineupScRsp),
-            "CmdChimeraDuelShopBuyItemCsReq" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopBuyItemCsReq),
-            "CmdChimeraDuelSetFriendDefendLineupScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSetFriendDefendLineupScRsp),
-            "CmdChimeraDuelSyncChangeScNotify" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSyncChangeScNotify),
-            "CmdChimeraDuelFinishMasterChallengeScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelFinishMasterChallengeScRsp),
-            "CmdChimeraDuelSelectGameScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelSelectGameScRsp),
-            "CmdChimeraDuelShopRefreshScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelShopRefreshScRsp),
-            "CmdChimeraDuelEndGameScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelEndGameScRsp),
-            "CmdChimeraDuelUnlockMasterScRsp" => ::std::option::Option::Some(CmdChimeraDuelType::CmdChimeraDuelUnlockMasterScRsp),
+            "BJCCFBOGEOE_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_NLCDGIPGFDJ),
+            "BJCCFBOGEOE_CPECDGMGPGI" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_CPECDGMGPGI),
+            "BJCCFBOGEOE_HJKJEHFLFLO" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_HJKJEHFLFLO),
+            "BJCCFBOGEOE_GLMHKMAMMGG" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_GLMHKMAMMGG),
+            "BJCCFBOGEOE_MAGIHJKEPIG" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_MAGIHJKEPIG),
+            "BJCCFBOGEOE_DJAFICFHNFJ" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_DJAFICFHNFJ),
+            "BJCCFBOGEOE_AEHEPACIJEL" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_AEHEPACIJEL),
+            "BJCCFBOGEOE_IDBNCPIDILA" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_IDBNCPIDILA),
+            "BJCCFBOGEOE_COJGFNPLABL" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_COJGFNPLABL),
+            "BJCCFBOGEOE_FJHAPKOCODL" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_FJHAPKOCODL),
+            "BJCCFBOGEOE_MDGPOJPGMEO" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_MDGPOJPGMEO),
+            "BJCCFBOGEOE_LNNLCHOEOAJ" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_LNNLCHOEOAJ),
+            "BJCCFBOGEOE_NDMGPBGDOOF" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_NDMGPBGDOOF),
+            "BJCCFBOGEOE_DNJJPKFNOHJ" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_DNJJPKFNOHJ),
+            "BJCCFBOGEOE_KBPJHMODAFK" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_KBPJHMODAFK),
+            "BJCCFBOGEOE_EKBHDFNBDEH" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_EKBHDFNBDEH),
+            "BJCCFBOGEOE_CDPCPLPMAIE" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_CDPCPLPMAIE),
+            "BJCCFBOGEOE_NFGJMMHJHFK" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_NFGJMMHJHFK),
+            "BJCCFBOGEOE_MMJPHPMANMH" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_MMJPHPMANMH),
+            "BJCCFBOGEOE_FGJHLOALHJJ" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_FGJHLOALHJJ),
+            "BJCCFBOGEOE_EJCBPDGLEDC" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_EJCBPDGLEDC),
+            "BJCCFBOGEOE_MFBPPHMAGHA" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_MFBPPHMAGHA),
+            "BJCCFBOGEOE_DDGBMMCABMG" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_DDGBMMCABMG),
+            "BJCCFBOGEOE_EPDMNPDIMHC" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_EPDMNPDIMHC),
+            "BJCCFBOGEOE_LADCFLBMDFH" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_LADCFLBMDFH),
+            "BJCCFBOGEOE_HFOLCDOLMON" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_HFOLCDOLMON),
+            "BJCCFBOGEOE_GLEFBDECGKA" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_GLEFBDECGKA),
+            "BJCCFBOGEOE_KGGPPANCMKC" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_KGGPPANCMKC),
+            "BJCCFBOGEOE_OPNGKOBFDDA" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_OPNGKOBFDDA),
+            "BJCCFBOGEOE_JDLGJIEOIDA" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_JDLGJIEOIDA),
+            "BJCCFBOGEOE_AAKPEPCLGDD" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_AAKPEPCLGDD),
+            "BJCCFBOGEOE_BGGINGOKPDN" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_BGGINGOKPDN),
+            "BJCCFBOGEOE_GLIFDGOBEEC" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_GLIFDGOBEEC),
+            "BJCCFBOGEOE_FFPJHPIAADH" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_FFPJHPIAADH),
+            "BJCCFBOGEOE_LMDFPJCADOG" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_LMDFPJCADOG),
+            "BJCCFBOGEOE_EIFLELDEOME" => ::std::option::Option::Some(CmdChimeraDuelType::BJCCFBOGEOE_EIFLELDEOME),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdChimeraDuelType] = &[
-        CmdChimeraDuelType::MNGJGGANIIP_PCPDHELPKEM,
-        CmdChimeraDuelType::CmdChimeraDuelStartGameScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelEndRoundShopStageScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelSelectGameCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelEndRoundBattleStageCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelFinishMasterChallengeCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelShopLockCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelEndRoundShopStageCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelStartGameCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelGetDataCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelEndGameCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelShopBuyItemScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelUnlockMasterCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelSellChimeraScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelSellChimeraCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelEndRoundBattleStageScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelShopBuyChimeraCsReq,
-        CmdChimeraDuelType::CmdReceive,
-        CmdChimeraDuelType::CmdChimeraDuelShopBuyChimeraScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelSetFriendDefendLineupCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelSaveFriendPvpLineupCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelChangeLineupCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelGetFriendListCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelShopRefreshCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelGetDataScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelShopLockScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelSaveFriendPvpLineupScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelChangeLineupScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelShopBuyItemCsReq,
-        CmdChimeraDuelType::CmdChimeraDuelSetFriendDefendLineupScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelSyncChangeScNotify,
-        CmdChimeraDuelType::CmdChimeraDuelFinishMasterChallengeScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelSelectGameScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelShopRefreshScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelEndGameScRsp,
-        CmdChimeraDuelType::CmdChimeraDuelUnlockMasterScRsp,
+        CmdChimeraDuelType::BJCCFBOGEOE_NLCDGIPGFDJ,
+        CmdChimeraDuelType::BJCCFBOGEOE_CPECDGMGPGI,
+        CmdChimeraDuelType::BJCCFBOGEOE_HJKJEHFLFLO,
+        CmdChimeraDuelType::BJCCFBOGEOE_GLMHKMAMMGG,
+        CmdChimeraDuelType::BJCCFBOGEOE_MAGIHJKEPIG,
+        CmdChimeraDuelType::BJCCFBOGEOE_DJAFICFHNFJ,
+        CmdChimeraDuelType::BJCCFBOGEOE_AEHEPACIJEL,
+        CmdChimeraDuelType::BJCCFBOGEOE_IDBNCPIDILA,
+        CmdChimeraDuelType::BJCCFBOGEOE_COJGFNPLABL,
+        CmdChimeraDuelType::BJCCFBOGEOE_FJHAPKOCODL,
+        CmdChimeraDuelType::BJCCFBOGEOE_MDGPOJPGMEO,
+        CmdChimeraDuelType::BJCCFBOGEOE_LNNLCHOEOAJ,
+        CmdChimeraDuelType::BJCCFBOGEOE_NDMGPBGDOOF,
+        CmdChimeraDuelType::BJCCFBOGEOE_DNJJPKFNOHJ,
+        CmdChimeraDuelType::BJCCFBOGEOE_KBPJHMODAFK,
+        CmdChimeraDuelType::BJCCFBOGEOE_EKBHDFNBDEH,
+        CmdChimeraDuelType::BJCCFBOGEOE_CDPCPLPMAIE,
+        CmdChimeraDuelType::BJCCFBOGEOE_NFGJMMHJHFK,
+        CmdChimeraDuelType::BJCCFBOGEOE_MMJPHPMANMH,
+        CmdChimeraDuelType::BJCCFBOGEOE_FGJHLOALHJJ,
+        CmdChimeraDuelType::BJCCFBOGEOE_EJCBPDGLEDC,
+        CmdChimeraDuelType::BJCCFBOGEOE_MFBPPHMAGHA,
+        CmdChimeraDuelType::BJCCFBOGEOE_DDGBMMCABMG,
+        CmdChimeraDuelType::BJCCFBOGEOE_EPDMNPDIMHC,
+        CmdChimeraDuelType::BJCCFBOGEOE_LADCFLBMDFH,
+        CmdChimeraDuelType::BJCCFBOGEOE_HFOLCDOLMON,
+        CmdChimeraDuelType::BJCCFBOGEOE_GLEFBDECGKA,
+        CmdChimeraDuelType::BJCCFBOGEOE_KGGPPANCMKC,
+        CmdChimeraDuelType::BJCCFBOGEOE_OPNGKOBFDDA,
+        CmdChimeraDuelType::BJCCFBOGEOE_JDLGJIEOIDA,
+        CmdChimeraDuelType::BJCCFBOGEOE_AAKPEPCLGDD,
+        CmdChimeraDuelType::BJCCFBOGEOE_BGGINGOKPDN,
+        CmdChimeraDuelType::BJCCFBOGEOE_GLIFDGOBEEC,
+        CmdChimeraDuelType::BJCCFBOGEOE_FFPJHPIAADH,
+        CmdChimeraDuelType::BJCCFBOGEOE_LMDFPJCADOG,
+        CmdChimeraDuelType::BJCCFBOGEOE_EIFLELDEOME,
     ];
 }
 
@@ -240,42 +240,42 @@ impl ::protobuf::EnumFull for CmdChimeraDuelType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdChimeraDuelType::MNGJGGANIIP_PCPDHELPKEM => 0,
-            CmdChimeraDuelType::CmdChimeraDuelStartGameScRsp => 1,
-            CmdChimeraDuelType::CmdChimeraDuelEndRoundShopStageScRsp => 2,
-            CmdChimeraDuelType::CmdChimeraDuelSelectGameCsReq => 3,
-            CmdChimeraDuelType::CmdChimeraDuelEndRoundBattleStageCsReq => 4,
-            CmdChimeraDuelType::CmdChimeraDuelFinishMasterChallengeCsReq => 5,
-            CmdChimeraDuelType::CmdChimeraDuelShopLockCsReq => 6,
-            CmdChimeraDuelType::CmdChimeraDuelEndRoundShopStageCsReq => 7,
-            CmdChimeraDuelType::CmdChimeraDuelStartGameCsReq => 8,
-            CmdChimeraDuelType::CmdChimeraDuelGetDataCsReq => 9,
-            CmdChimeraDuelType::CmdChimeraDuelEndGameCsReq => 10,
-            CmdChimeraDuelType::CmdChimeraDuelShopBuyItemScRsp => 11,
-            CmdChimeraDuelType::CmdChimeraDuelUnlockMasterCsReq => 12,
-            CmdChimeraDuelType::CmdChimeraDuelSellChimeraScRsp => 13,
-            CmdChimeraDuelType::CmdChimeraDuelSellChimeraCsReq => 14,
-            CmdChimeraDuelType::CmdChimeraDuelEndRoundBattleStageScRsp => 15,
-            CmdChimeraDuelType::CmdChimeraDuelShopBuyChimeraCsReq => 16,
-            CmdChimeraDuelType::CmdReceive => 17,
-            CmdChimeraDuelType::CmdChimeraDuelShopBuyChimeraScRsp => 18,
-            CmdChimeraDuelType::CmdChimeraDuelSetFriendDefendLineupCsReq => 19,
-            CmdChimeraDuelType::CmdChimeraDuelSaveFriendPvpLineupCsReq => 20,
-            CmdChimeraDuelType::CmdChimeraDuelChangeLineupCsReq => 21,
-            CmdChimeraDuelType::CmdChimeraDuelGetFriendListCsReq => 22,
-            CmdChimeraDuelType::CmdChimeraDuelShopRefreshCsReq => 23,
-            CmdChimeraDuelType::CmdChimeraDuelGetDataScRsp => 24,
-            CmdChimeraDuelType::CmdChimeraDuelShopLockScRsp => 25,
-            CmdChimeraDuelType::CmdChimeraDuelSaveFriendPvpLineupScRsp => 26,
-            CmdChimeraDuelType::CmdChimeraDuelChangeLineupScRsp => 27,
-            CmdChimeraDuelType::CmdChimeraDuelShopBuyItemCsReq => 28,
-            CmdChimeraDuelType::CmdChimeraDuelSetFriendDefendLineupScRsp => 29,
-            CmdChimeraDuelType::CmdChimeraDuelSyncChangeScNotify => 30,
-            CmdChimeraDuelType::CmdChimeraDuelFinishMasterChallengeScRsp => 31,
-            CmdChimeraDuelType::CmdChimeraDuelSelectGameScRsp => 32,
-            CmdChimeraDuelType::CmdChimeraDuelShopRefreshScRsp => 33,
-            CmdChimeraDuelType::CmdChimeraDuelEndGameScRsp => 34,
-            CmdChimeraDuelType::CmdChimeraDuelUnlockMasterScRsp => 35,
+            CmdChimeraDuelType::BJCCFBOGEOE_NLCDGIPGFDJ => 0,
+            CmdChimeraDuelType::BJCCFBOGEOE_CPECDGMGPGI => 1,
+            CmdChimeraDuelType::BJCCFBOGEOE_HJKJEHFLFLO => 2,
+            CmdChimeraDuelType::BJCCFBOGEOE_GLMHKMAMMGG => 3,
+            CmdChimeraDuelType::BJCCFBOGEOE_MAGIHJKEPIG => 4,
+            CmdChimeraDuelType::BJCCFBOGEOE_DJAFICFHNFJ => 5,
+            CmdChimeraDuelType::BJCCFBOGEOE_AEHEPACIJEL => 6,
+            CmdChimeraDuelType::BJCCFBOGEOE_IDBNCPIDILA => 7,
+            CmdChimeraDuelType::BJCCFBOGEOE_COJGFNPLABL => 8,
+            CmdChimeraDuelType::BJCCFBOGEOE_FJHAPKOCODL => 9,
+            CmdChimeraDuelType::BJCCFBOGEOE_MDGPOJPGMEO => 10,
+            CmdChimeraDuelType::BJCCFBOGEOE_LNNLCHOEOAJ => 11,
+            CmdChimeraDuelType::BJCCFBOGEOE_NDMGPBGDOOF => 12,
+            CmdChimeraDuelType::BJCCFBOGEOE_DNJJPKFNOHJ => 13,
+            CmdChimeraDuelType::BJCCFBOGEOE_KBPJHMODAFK => 14,
+            CmdChimeraDuelType::BJCCFBOGEOE_EKBHDFNBDEH => 15,
+            CmdChimeraDuelType::BJCCFBOGEOE_CDPCPLPMAIE => 16,
+            CmdChimeraDuelType::BJCCFBOGEOE_NFGJMMHJHFK => 17,
+            CmdChimeraDuelType::BJCCFBOGEOE_MMJPHPMANMH => 18,
+            CmdChimeraDuelType::BJCCFBOGEOE_FGJHLOALHJJ => 19,
+            CmdChimeraDuelType::BJCCFBOGEOE_EJCBPDGLEDC => 20,
+            CmdChimeraDuelType::BJCCFBOGEOE_MFBPPHMAGHA => 21,
+            CmdChimeraDuelType::BJCCFBOGEOE_DDGBMMCABMG => 22,
+            CmdChimeraDuelType::BJCCFBOGEOE_EPDMNPDIMHC => 23,
+            CmdChimeraDuelType::BJCCFBOGEOE_LADCFLBMDFH => 24,
+            CmdChimeraDuelType::BJCCFBOGEOE_HFOLCDOLMON => 25,
+            CmdChimeraDuelType::BJCCFBOGEOE_GLEFBDECGKA => 26,
+            CmdChimeraDuelType::BJCCFBOGEOE_KGGPPANCMKC => 27,
+            CmdChimeraDuelType::BJCCFBOGEOE_OPNGKOBFDDA => 28,
+            CmdChimeraDuelType::BJCCFBOGEOE_JDLGJIEOIDA => 29,
+            CmdChimeraDuelType::BJCCFBOGEOE_AAKPEPCLGDD => 30,
+            CmdChimeraDuelType::BJCCFBOGEOE_BGGINGOKPDN => 31,
+            CmdChimeraDuelType::BJCCFBOGEOE_GLIFDGOBEEC => 32,
+            CmdChimeraDuelType::BJCCFBOGEOE_FFPJHPIAADH => 33,
+            CmdChimeraDuelType::BJCCFBOGEOE_LMDFPJCADOG => 34,
+            CmdChimeraDuelType::BJCCFBOGEOE_EIFLELDEOME => 35,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -283,7 +283,7 @@ impl ::protobuf::EnumFull for CmdChimeraDuelType {
 
 impl ::std::default::Default for CmdChimeraDuelType {
     fn default() -> Self {
-        CmdChimeraDuelType::MNGJGGANIIP_PCPDHELPKEM
+        CmdChimeraDuelType::BJCCFBOGEOE_NLCDGIPGFDJ
     }
 }
 
@@ -294,33 +294,31 @@ impl CmdChimeraDuelType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdChimeraDuelType.proto*\xf2\n\n\x12CmdChimeraDuelType\x12\x1b\n\
-    \x17MNGJGGANIIP_PCPDHELPKEM\x10\0\x12!\n\x1cCmdChimeraDuelStartGameScRsp\
-    \x10\xfbG\x12)\n$CmdChimeraDuelEndRoundShopStageScRsp\x10\x8dH\x12\"\n\
-    \x1dCmdChimeraDuelSelectGameCsReq\x10\xfeG\x12+\n&CmdChimeraDuelEndRound\
-    BattleStageCsReq\x10\xfcG\x12-\n(CmdChimeraDuelFinishMasterChallengeCsRe\
-    q\x10\xa8H\x12\x20\n\x1bCmdChimeraDuelShopLockCsReq\x10\x99H\x12)\n$CmdC\
-    himeraDuelEndRoundShopStageCsReq\x10\xa9H\x12!\n\x1cCmdChimeraDuelStartG\
-    ameCsReq\x10\xffG\x12\x1f\n\x1aCmdChimeraDuelGetDataCsReq\x10\x87H\x12\
-    \x1f\n\x1aCmdChimeraDuelEndGameCsReq\x10\x8cH\x12#\n\x1eCmdChimeraDuelSh\
-    opBuyItemScRsp\x10\x8aH\x12$\n\x1fCmdChimeraDuelUnlockMasterCsReq\x10\
-    \x9dH\x12#\n\x1eCmdChimeraDuelSellChimeraScRsp\x10\x83H\x12#\n\x1eCmdChi\
-    meraDuelSellChimeraCsReq\x10\x9bH\x12+\n&CmdChimeraDuelEndRoundBattleSta\
-    geScRsp\x10\xa6H\x12&\n!CmdChimeraDuelShopBuyChimeraCsReq\x10\x9eH\x12\
-    \x0f\n\nCmdReceive\x10\x90H\x12&\n!CmdChimeraDuelShopBuyChimeraScRsp\x10\
-    \xfdG\x12-\n(CmdChimeraDuelSetFriendDefendLineupCsReq\x10\xa5H\x12+\n&Cm\
-    dChimeraDuelSaveFriendPvpLineupCsReq\x10\xaaH\x12$\n\x1fCmdChimeraDuelCh\
-    angeLineupCsReq\x10\x94H\x12%\n\x20CmdChimeraDuelGetFriendListCsReq\x10\
-    \x8eH\x12#\n\x1eCmdChimeraDuelShopRefreshCsReq\x10\xabH\x12\x1f\n\x1aCmd\
-    ChimeraDuelGetDataScRsp\x10\x81H\x12\x20\n\x1bCmdChimeraDuelShopLockScRs\
-    p\x10\x8fH\x12+\n&CmdChimeraDuelSaveFriendPvpLineupScRsp\x10\x97H\x12$\n\
-    \x1fCmdChimeraDuelChangeLineupScRsp\x10\x82H\x12#\n\x1eCmdChimeraDuelSho\
-    pBuyItemCsReq\x10\xacH\x12-\n(CmdChimeraDuelSetFriendDefendLineupScRsp\
-    \x10\xa1H\x12%\n\x20CmdChimeraDuelSyncChangeScNotify\x10\x80H\x12-\n(Cmd\
-    ChimeraDuelFinishMasterChallengeScRsp\x10\xa2H\x12\"\n\x1dCmdChimeraDuel\
-    SelectGameScRsp\x10\x9fH\x12#\n\x1eCmdChimeraDuelShopRefreshScRsp\x10\
-    \x89H\x12\x1f\n\x1aCmdChimeraDuelEndGameScRsp\x10\xa7H\x12$\n\x1fCmdChim\
-    eraDuelUnlockMasterScRsp\x10\xa0Hb\x06proto3\
+    \n\x18CmdChimeraDuelType.proto*\xcb\x08\n\x12CmdChimeraDuelType\x12\x1b\
+    \n\x17BJCCFBOGEOE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17BJCCFBOGEOE_CPECDGMGPGI\
+    \x10\xa3H\x12\x1c\n\x17BJCCFBOGEOE_HJKJEHFLFLO\x10\xa4H\x12\x1c\n\x17BJC\
+    CFBOGEOE_GLMHKMAMMGG\x10\xacH\x12\x1c\n\x17BJCCFBOGEOE_MAGIHJKEPIG\x10\
+    \xa6H\x12\x1c\n\x17BJCCFBOGEOE_DJAFICFHNFJ\x10\x96H\x12\x1c\n\x17BJCCFBO\
+    GEOE_AEHEPACIJEL\x10\x95H\x12\x1c\n\x17BJCCFBOGEOE_IDBNCPIDILA\x10\x86H\
+    \x12\x1c\n\x17BJCCFBOGEOE_COJGFNPLABL\x10\xa2H\x12\x1c\n\x17BJCCFBOGEOE_\
+    FJHAPKOCODL\x10\x9dH\x12\x1c\n\x17BJCCFBOGEOE_MDGPOJPGMEO\x10\x9bH\x12\
+    \x1c\n\x17BJCCFBOGEOE_LNNLCHOEOAJ\x10\xa8H\x12\x1c\n\x17BJCCFBOGEOE_NDMG\
+    PBGDOOF\x10\x90H\x12\x1c\n\x17BJCCFBOGEOE_DNJJPKFNOHJ\x10\x83H\x12\x1c\n\
+    \x17BJCCFBOGEOE_KBPJHMODAFK\x10\x9aH\x12\x1c\n\x17BJCCFBOGEOE_EKBHDFNBDE\
+    H\x10\xa5H\x12\x1c\n\x17BJCCFBOGEOE_CDPCPLPMAIE\x10\x8aH\x12\x1c\n\x17BJ\
+    CCFBOGEOE_NFGJMMHJHFK\x10\xfdG\x12\x1c\n\x17BJCCFBOGEOE_MMJPHPMANMH\x10\
+    \x9cH\x12\x1c\n\x17BJCCFBOGEOE_FGJHLOALHJJ\x10\x8cH\x12\x1c\n\x17BJCCFBO\
+    GEOE_EJCBPDGLEDC\x10\x88H\x12\x1c\n\x17BJCCFBOGEOE_MFBPPHMAGHA\x10\xabH\
+    \x12\x1c\n\x17BJCCFBOGEOE_DDGBMMCABMG\x10\xffG\x12\x1c\n\x17BJCCFBOGEOE_\
+    EPDMNPDIMHC\x10\x8eH\x12\x1c\n\x17BJCCFBOGEOE_LADCFLBMDFH\x10\x97H\x12\
+    \x1c\n\x17BJCCFBOGEOE_HFOLCDOLMON\x10\xa0H\x12\x1c\n\x17BJCCFBOGEOE_GLEF\
+    BDECGKA\x10\xaaH\x12\x1c\n\x17BJCCFBOGEOE_KGGPPANCMKC\x10\xa7H\x12\x1c\n\
+    \x17BJCCFBOGEOE_OPNGKOBFDDA\x10\x9eH\x12\x1c\n\x17BJCCFBOGEOE_JDLGJIEOID\
+    A\x10\x8dH\x12\x1c\n\x17BJCCFBOGEOE_AAKPEPCLGDD\x10\x89H\x12\x1c\n\x17BJ\
+    CCFBOGEOE_BGGINGOKPDN\x10\x8fH\x12\x1c\n\x17BJCCFBOGEOE_GLIFDGOBEEC\x10\
+    \x80H\x12\x1c\n\x17BJCCFBOGEOE_FFPJHPIAADH\x10\x82H\x12\x1c\n\x17BJCCFBO\
+    GEOE_LMDFPJCADOG\x10\x9fH\x12\x1c\n\x17BJCCFBOGEOE_EIFLELDEOME\x10\x92Hb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

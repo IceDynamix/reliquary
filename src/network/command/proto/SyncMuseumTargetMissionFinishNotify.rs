@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncMuseumTargetMissionFinishNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncMuseumTargetMissionFinishNotify.LPAGKHGCCFH)
-    pub LPAGKHGCCFH: u32,
-    // @@protoc_insertion_point(field:SyncMuseumTargetMissionFinishNotify.EGEFHCFJICC)
-    pub EGEFHCFJICC: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SyncMuseumTargetMissionFinishNotify.EPOGEOIILNI)
-    pub EPOGEOIILNI: bool,
+    // @@protoc_insertion_point(field:SyncMuseumTargetMissionFinishNotify.CLLLEMMKDMB)
+    pub CLLLEMMKDMB: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SyncMuseumTargetMissionFinishNotify.MAOMPIDOMIJ)
+    pub MAOMPIDOMIJ: bool,
+    // @@protoc_insertion_point(field:SyncMuseumTargetMissionFinishNotify.KFGLDLFBFFB)
+    pub KFGLDLFBFFB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncMuseumTargetMissionFinishNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl SyncMuseumTargetMissionFinishNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPAGKHGCCFH",
-            |m: &SyncMuseumTargetMissionFinishNotify| { &m.LPAGKHGCCFH },
-            |m: &mut SyncMuseumTargetMissionFinishNotify| { &mut m.LPAGKHGCCFH },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EGEFHCFJICC",
-            |m: &SyncMuseumTargetMissionFinishNotify| { &m.EGEFHCFJICC },
-            |m: &mut SyncMuseumTargetMissionFinishNotify| { &mut m.EGEFHCFJICC },
+            "CLLLEMMKDMB",
+            |m: &SyncMuseumTargetMissionFinishNotify| { &m.CLLLEMMKDMB },
+            |m: &mut SyncMuseumTargetMissionFinishNotify| { &mut m.CLLLEMMKDMB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EPOGEOIILNI",
-            |m: &SyncMuseumTargetMissionFinishNotify| { &m.EPOGEOIILNI },
-            |m: &mut SyncMuseumTargetMissionFinishNotify| { &mut m.EPOGEOIILNI },
+            "MAOMPIDOMIJ",
+            |m: &SyncMuseumTargetMissionFinishNotify| { &m.MAOMPIDOMIJ },
+            |m: &mut SyncMuseumTargetMissionFinishNotify| { &mut m.MAOMPIDOMIJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KFGLDLFBFFB",
+            |m: &SyncMuseumTargetMissionFinishNotify| { &m.KFGLDLFBFFB },
+            |m: &mut SyncMuseumTargetMissionFinishNotify| { &mut m.KFGLDLFBFFB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncMuseumTargetMissionFinishNotify>(
             "SyncMuseumTargetMissionFinishNotify",
@@ -86,17 +86,17 @@ impl ::protobuf::Message for SyncMuseumTargetMissionFinishNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.LPAGKHGCCFH = is.read_uint32()?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CLLLEMMKDMB)?;
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EGEFHCFJICC)?;
+                56 => {
+                    self.CLLLEMMKDMB.push(is.read_uint32()?);
                 },
-                104 => {
-                    self.EGEFHCFJICC.push(is.read_uint32()?);
+                40 => {
+                    self.MAOMPIDOMIJ = is.read_bool()?;
                 },
-                24 => {
-                    self.EPOGEOIILNI = is.read_bool()?;
+                64 => {
+                    self.KFGLDLFBFFB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,12 +110,12 @@ impl ::protobuf::Message for SyncMuseumTargetMissionFinishNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LPAGKHGCCFH != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.LPAGKHGCCFH);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.EGEFHCFJICC);
-        if self.EPOGEOIILNI != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.CLLLEMMKDMB);
+        if self.MAOMPIDOMIJ != false {
             my_size += 1 + 1;
+        }
+        if self.KFGLDLFBFFB != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.KFGLDLFBFFB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for SyncMuseumTargetMissionFinishNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LPAGKHGCCFH != 0 {
-            os.write_uint32(6, self.LPAGKHGCCFH)?;
+        os.write_repeated_packed_uint32(7, &self.CLLLEMMKDMB)?;
+        if self.MAOMPIDOMIJ != false {
+            os.write_bool(5, self.MAOMPIDOMIJ)?;
         }
-        os.write_repeated_packed_uint32(13, &self.EGEFHCFJICC)?;
-        if self.EPOGEOIILNI != false {
-            os.write_bool(3, self.EPOGEOIILNI)?;
+        if self.KFGLDLFBFFB != 0 {
+            os.write_uint32(8, self.KFGLDLFBFFB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -147,17 +147,17 @@ impl ::protobuf::Message for SyncMuseumTargetMissionFinishNotify {
     }
 
     fn clear(&mut self) {
-        self.LPAGKHGCCFH = 0;
-        self.EGEFHCFJICC.clear();
-        self.EPOGEOIILNI = false;
+        self.CLLLEMMKDMB.clear();
+        self.MAOMPIDOMIJ = false;
+        self.KFGLDLFBFFB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncMuseumTargetMissionFinishNotify {
         static instance: SyncMuseumTargetMissionFinishNotify = SyncMuseumTargetMissionFinishNotify {
-            LPAGKHGCCFH: 0,
-            EGEFHCFJICC: ::std::vec::Vec::new(),
-            EPOGEOIILNI: false,
+            CLLLEMMKDMB: ::std::vec::Vec::new(),
+            MAOMPIDOMIJ: false,
+            KFGLDLFBFFB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncMuseumTargetMissionFinishNotify 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)SyncMuseumTargetMissionFinishNotify.proto\"\x8b\x01\n#SyncMuseumTarge\
-    tMissionFinishNotify\x12\x20\n\x0bLPAGKHGCCFH\x18\x06\x20\x01(\rR\x0bLPA\
-    GKHGCCFH\x12\x20\n\x0bEGEFHCFJICC\x18\r\x20\x03(\rR\x0bEGEFHCFJICC\x12\
-    \x20\n\x0bEPOGEOIILNI\x18\x03\x20\x01(\x08R\x0bEPOGEOIILNIb\x06proto3\
+    tMissionFinishNotify\x12\x20\n\x0bCLLLEMMKDMB\x18\x07\x20\x03(\rR\x0bCLL\
+    LEMMKDMB\x12\x20\n\x0bMAOMPIDOMIJ\x18\x05\x20\x01(\x08R\x0bMAOMPIDOMIJ\
+    \x12\x20\n\x0bKFGLDLFBFFB\x18\x08\x20\x01(\rR\x0bKFGLDLFBFFBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

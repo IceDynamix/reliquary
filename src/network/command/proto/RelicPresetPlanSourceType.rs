@@ -27,16 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RelicPresetPlanSourceType)
 pub enum RelicPresetPlanSourceType {
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.KHIMAPHKDLI_PCPDHELPKEM)
-    KHIMAPHKDLI_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.KHIMAPHKDLI_FLFLCELFAPI)
-    KHIMAPHKDLI_FLFLCELFAPI = 1,
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.KHIMAPHKDLI_ONJGEAAJDLM)
-    KHIMAPHKDLI_ONJGEAAJDLM = 2,
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.KHIMAPHKDLI_KOBKOAIDLNF)
-    KHIMAPHKDLI_KOBKOAIDLNF = 3,
-    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.KHIMAPHKDLI_GBCKGOIGGHK)
-    KHIMAPHKDLI_GBCKGOIGGHK = 4,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_NLCDGIPGFDJ)
+    HNBGMOIHOAN_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_BDNDDMBONNJ)
+    HNBGMOIHOAN_BDNDDMBONNJ = 1,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_DLBLNAKKNKJ)
+    HNBGMOIHOAN_DLBLNAKKNKJ = 2,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_ODFAMIBHIGE)
+    HNBGMOIHOAN_ODFAMIBHIGE = 3,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_LIKOPGNHBPP)
+    HNBGMOIHOAN_LIKOPGNHBPP = 4,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_CPHMEHDCFBF)
+    HNBGMOIHOAN_CPHMEHDCFBF = 5,
+    // @@protoc_insertion_point(enum_value:RelicPresetPlanSourceType.HNBGMOIHOAN_platform)
+    HNBGMOIHOAN_platform = 6,
 }
 
 impl ::protobuf::Enum for RelicPresetPlanSourceType {
@@ -48,32 +52,38 @@ impl ::protobuf::Enum for RelicPresetPlanSourceType {
 
     fn from_i32(value: i32) -> ::std::option::Option<RelicPresetPlanSourceType> {
         match value {
-            0 => ::std::option::Option::Some(RelicPresetPlanSourceType::KHIMAPHKDLI_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(RelicPresetPlanSourceType::KHIMAPHKDLI_FLFLCELFAPI),
-            2 => ::std::option::Option::Some(RelicPresetPlanSourceType::KHIMAPHKDLI_ONJGEAAJDLM),
-            3 => ::std::option::Option::Some(RelicPresetPlanSourceType::KHIMAPHKDLI_KOBKOAIDLNF),
-            4 => ::std::option::Option::Some(RelicPresetPlanSourceType::KHIMAPHKDLI_GBCKGOIGGHK),
+            0 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_BDNDDMBONNJ),
+            2 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_DLBLNAKKNKJ),
+            3 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_ODFAMIBHIGE),
+            4 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_LIKOPGNHBPP),
+            5 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_CPHMEHDCFBF),
+            6 => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_platform),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RelicPresetPlanSourceType> {
         match str {
-            "KHIMAPHKDLI_PCPDHELPKEM" => ::std::option::Option::Some(RelicPresetPlanSourceType::KHIMAPHKDLI_PCPDHELPKEM),
-            "KHIMAPHKDLI_FLFLCELFAPI" => ::std::option::Option::Some(RelicPresetPlanSourceType::KHIMAPHKDLI_FLFLCELFAPI),
-            "KHIMAPHKDLI_ONJGEAAJDLM" => ::std::option::Option::Some(RelicPresetPlanSourceType::KHIMAPHKDLI_ONJGEAAJDLM),
-            "KHIMAPHKDLI_KOBKOAIDLNF" => ::std::option::Option::Some(RelicPresetPlanSourceType::KHIMAPHKDLI_KOBKOAIDLNF),
-            "KHIMAPHKDLI_GBCKGOIGGHK" => ::std::option::Option::Some(RelicPresetPlanSourceType::KHIMAPHKDLI_GBCKGOIGGHK),
+            "HNBGMOIHOAN_NLCDGIPGFDJ" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ),
+            "HNBGMOIHOAN_BDNDDMBONNJ" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_BDNDDMBONNJ),
+            "HNBGMOIHOAN_DLBLNAKKNKJ" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_DLBLNAKKNKJ),
+            "HNBGMOIHOAN_ODFAMIBHIGE" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_ODFAMIBHIGE),
+            "HNBGMOIHOAN_LIKOPGNHBPP" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_LIKOPGNHBPP),
+            "HNBGMOIHOAN_CPHMEHDCFBF" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_CPHMEHDCFBF),
+            "HNBGMOIHOAN_platform" => ::std::option::Option::Some(RelicPresetPlanSourceType::HNBGMOIHOAN_platform),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RelicPresetPlanSourceType] = &[
-        RelicPresetPlanSourceType::KHIMAPHKDLI_PCPDHELPKEM,
-        RelicPresetPlanSourceType::KHIMAPHKDLI_FLFLCELFAPI,
-        RelicPresetPlanSourceType::KHIMAPHKDLI_ONJGEAAJDLM,
-        RelicPresetPlanSourceType::KHIMAPHKDLI_KOBKOAIDLNF,
-        RelicPresetPlanSourceType::KHIMAPHKDLI_GBCKGOIGGHK,
+        RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ,
+        RelicPresetPlanSourceType::HNBGMOIHOAN_BDNDDMBONNJ,
+        RelicPresetPlanSourceType::HNBGMOIHOAN_DLBLNAKKNKJ,
+        RelicPresetPlanSourceType::HNBGMOIHOAN_ODFAMIBHIGE,
+        RelicPresetPlanSourceType::HNBGMOIHOAN_LIKOPGNHBPP,
+        RelicPresetPlanSourceType::HNBGMOIHOAN_CPHMEHDCFBF,
+        RelicPresetPlanSourceType::HNBGMOIHOAN_platform,
     ];
 }
 
@@ -91,7 +101,7 @@ impl ::protobuf::EnumFull for RelicPresetPlanSourceType {
 
 impl ::std::default::Default for RelicPresetPlanSourceType {
     fn default() -> Self {
-        RelicPresetPlanSourceType::KHIMAPHKDLI_PCPDHELPKEM
+        RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ
     }
 }
 
@@ -102,11 +112,12 @@ impl RelicPresetPlanSourceType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fRelicPresetPlanSourceType.proto*\xac\x01\n\x19RelicPresetPlanSourc\
-    eType\x12\x1b\n\x17KHIMAPHKDLI_PCPDHELPKEM\x10\0\x12\x1b\n\x17KHIMAPHKDL\
-    I_FLFLCELFAPI\x10\x01\x12\x1b\n\x17KHIMAPHKDLI_ONJGEAAJDLM\x10\x02\x12\
-    \x1b\n\x17KHIMAPHKDLI_KOBKOAIDLNF\x10\x03\x12\x1b\n\x17KHIMAPHKDLI_GBCKG\
-    OIGGHK\x10\x04b\x06proto3\
+    \n\x1fRelicPresetPlanSourceType.proto*\xe3\x01\n\x19RelicPresetPlanSourc\
+    eType\x12\x1b\n\x17HNBGMOIHOAN_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17HNBGMOIHOA\
+    N_BDNDDMBONNJ\x10\x01\x12\x1b\n\x17HNBGMOIHOAN_DLBLNAKKNKJ\x10\x02\x12\
+    \x1b\n\x17HNBGMOIHOAN_ODFAMIBHIGE\x10\x03\x12\x1b\n\x17HNBGMOIHOAN_LIKOP\
+    GNHBPP\x10\x04\x12\x1b\n\x17HNBGMOIHOAN_CPHMEHDCFBF\x10\x05\x12\x18\n\
+    \x14HNBGMOIHOAN_platform\x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

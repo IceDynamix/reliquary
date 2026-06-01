@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingTurnActionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingTurnActionCsReq.ACBIMOGNKAJ)
-    pub ACBIMOGNKAJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:SwordTrainingTurnActionCsReq.AKHJFKNPGEE)
-    pub AKHJFKNPGEE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SwordTrainingTurnActionCsReq.CCPADEMEHBA)
+    pub CCPADEMEHBA: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SwordTrainingTurnActionCsReq.GJEPAKHPFCG)
+    pub GJEPAKHPFCG: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingTurnActionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SwordTrainingTurnActionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ACBIMOGNKAJ",
-            |m: &SwordTrainingTurnActionCsReq| { &m.ACBIMOGNKAJ },
-            |m: &mut SwordTrainingTurnActionCsReq| { &mut m.ACBIMOGNKAJ },
+            "CCPADEMEHBA",
+            |m: &SwordTrainingTurnActionCsReq| { &m.CCPADEMEHBA },
+            |m: &mut SwordTrainingTurnActionCsReq| { &mut m.CCPADEMEHBA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AKHJFKNPGEE",
-            |m: &SwordTrainingTurnActionCsReq| { &m.AKHJFKNPGEE },
-            |m: &mut SwordTrainingTurnActionCsReq| { &mut m.AKHJFKNPGEE },
+            "GJEPAKHPFCG",
+            |m: &SwordTrainingTurnActionCsReq| { &m.GJEPAKHPFCG },
+            |m: &mut SwordTrainingTurnActionCsReq| { &mut m.GJEPAKHPFCG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingTurnActionCsReq>(
             "SwordTrainingTurnActionCsReq",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for SwordTrainingTurnActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ACBIMOGNKAJ)?;
+                50 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CCPADEMEHBA)?;
                 },
-                80 => {
-                    self.ACBIMOGNKAJ.push(is.read_uint32()?);
+                48 => {
+                    self.CCPADEMEHBA.push(is.read_uint32()?);
                 },
-                114 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AKHJFKNPGEE)?;
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GJEPAKHPFCG)?;
                 },
-                112 => {
-                    self.AKHJFKNPGEE.push(is.read_uint32()?);
+                64 => {
+                    self.GJEPAKHPFCG.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for SwordTrainingTurnActionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.ACBIMOGNKAJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.AKHJFKNPGEE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.CCPADEMEHBA);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.GJEPAKHPFCG);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(10, &self.ACBIMOGNKAJ)?;
-        os.write_repeated_packed_uint32(14, &self.AKHJFKNPGEE)?;
+        os.write_repeated_packed_uint32(6, &self.CCPADEMEHBA)?;
+        os.write_repeated_packed_uint32(8, &self.GJEPAKHPFCG)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for SwordTrainingTurnActionCsReq {
     }
 
     fn clear(&mut self) {
-        self.ACBIMOGNKAJ.clear();
-        self.AKHJFKNPGEE.clear();
+        self.CCPADEMEHBA.clear();
+        self.GJEPAKHPFCG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingTurnActionCsReq {
         static instance: SwordTrainingTurnActionCsReq = SwordTrainingTurnActionCsReq {
-            ACBIMOGNKAJ: ::std::vec::Vec::new(),
-            AKHJFKNPGEE: ::std::vec::Vec::new(),
+            CCPADEMEHBA: ::std::vec::Vec::new(),
+            GJEPAKHPFCG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,8 +164,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingTurnActionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SwordTrainingTurnActionCsReq.proto\"b\n\x1cSwordTrainingTurnActionCs\
-    Req\x12\x20\n\x0bACBIMOGNKAJ\x18\n\x20\x03(\rR\x0bACBIMOGNKAJ\x12\x20\n\
-    \x0bAKHJFKNPGEE\x18\x0e\x20\x03(\rR\x0bAKHJFKNPGEEb\x06proto3\
+    Req\x12\x20\n\x0bCCPADEMEHBA\x18\x06\x20\x03(\rR\x0bCCPADEMEHBA\x12\x20\
+    \n\x0bGJEPAKHPFCG\x18\x08\x20\x03(\rR\x0bGJEPAKHPFCGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

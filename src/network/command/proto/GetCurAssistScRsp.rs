@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetCurAssistScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetCurAssistScRsp.ILPKPBOKMEN)
-    pub ILPKPBOKMEN: ::protobuf::MessageField<super::PlayerAssistInfo::PlayerAssistInfo>,
+    // @@protoc_insertion_point(field:GetCurAssistScRsp.ODHMGPNECFO)
+    pub ODHMGPNECFO: ::protobuf::MessageField<super::PlayerAssistInfo::PlayerAssistInfo>,
     // @@protoc_insertion_point(field:GetCurAssistScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetCurAssistScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerAssistInfo::PlayerAssistInfo>(
-            "ILPKPBOKMEN",
-            |m: &GetCurAssistScRsp| { &m.ILPKPBOKMEN },
-            |m: &mut GetCurAssistScRsp| { &mut m.ILPKPBOKMEN },
+            "ODHMGPNECFO",
+            |m: &GetCurAssistScRsp| { &m.ODHMGPNECFO },
+            |m: &mut GetCurAssistScRsp| { &mut m.ODHMGPNECFO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,7 +80,7 @@ impl ::protobuf::Message for GetCurAssistScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ILPKPBOKMEN)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ODHMGPNECFO)?;
                 },
                 80 => {
                     self.retcode = is.read_uint32()?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ILPKPBOKMEN.as_ref() {
+        if let Some(v) = self.ODHMGPNECFO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ILPKPBOKMEN.as_ref() {
+        if let Some(v) = self.ODHMGPNECFO.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
         if self.retcode != 0 {
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetCurAssistScRsp {
     }
 
     fn clear(&mut self) {
-        self.ILPKPBOKMEN.clear();
+        self.ODHMGPNECFO.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCurAssistScRsp {
         static instance: GetCurAssistScRsp = GetCurAssistScRsp {
-            ILPKPBOKMEN: ::protobuf::MessageField::none(),
+            ODHMGPNECFO: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for GetCurAssistScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17GetCurAssistScRsp.proto\x1a\x16PlayerAssistInfo.proto\"b\n\x11GetC\
-    urAssistScRsp\x123\n\x0bILPKPBOKMEN\x18\x05\x20\x01(\x0b2\x11.PlayerAssi\
-    stInfoR\x0bILPKPBOKMEN\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\
+    urAssistScRsp\x123\n\x0bODHMGPNECFO\x18\x05\x20\x01(\x0b2\x11.PlayerAssi\
+    stInfoR\x0bODHMGPNECFO\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\x07retcode\
     b\x06proto3\
 ";
 

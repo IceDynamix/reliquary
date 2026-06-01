@@ -27,48 +27,48 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRaidType)
 pub enum CmdRaidType {
-    // @@protoc_insertion_point(enum_value:CmdRaidType.AFOEMKIDMJI_PCPDHELPKEM)
-    AFOEMKIDMJI_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdLeaveRaidScRsp)
-    CmdLeaveRaidScRsp = 2227,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdDelSaveRaidScNotify)
-    CmdDelSaveRaidScNotify = 2231,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdRaidKickByServer)
-    CmdRaidKickByServer = 2221,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.AFOEMKIDMJI_MLCKKOMGBJE)
-    AFOEMKIDMJI_MLCKKOMGBJE = 2238,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetAllSaveRaidScRsp)
-    CmdGetAllSaveRaidScRsp = 2216,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdTakeChallengeRaidRewardCsReq)
-    CmdTakeChallengeRaidRewardCsReq = 2201,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdSetClientRaidTargetCountCsReq)
-    CmdSetClientRaidTargetCountCsReq = 2218,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdStartRaidCsReq)
-    CmdStartRaidCsReq = 2213,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdTakeChallengeRaidRewardScRsp)
-    CmdTakeChallengeRaidRewardScRsp = 2247,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdLeaveRaidCsReq)
-    CmdLeaveRaidCsReq = 2230,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdStartRaidScRsp)
-    CmdStartRaidScRsp = 2207,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetSaveRaidScRsp)
-    CmdGetSaveRaidScRsp = 2203,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetRaidInfoCsReq)
-    CmdGetRaidInfoCsReq = 2202,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdChallengeRaidNotify)
-    CmdChallengeRaidNotify = 2219,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdOHMFECJNLEG)
-    CmdOHMFECJNLEG = 2205,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetSaveRaidCsReq)
-    CmdGetSaveRaidCsReq = 2236,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetAllSaveRaidCsReq)
-    CmdGetAllSaveRaidCsReq = 2250,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdRaidInfoNotify)
-    CmdRaidInfoNotify = 2235,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdGetRaidInfoScRsp)
-    CmdGetRaidInfoScRsp = 2244,
-    // @@protoc_insertion_point(enum_value:CmdRaidType.CmdSetClientRaidTargetCountScRsp)
-    CmdSetClientRaidTargetCountScRsp = 2245,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_NLCDGIPGFDJ)
+    ENMOIIMEDKD_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_LAKLHDPLLAP)
+    ENMOIIMEDKD_LAKLHDPLLAP = 2205,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_KIAAALLPPCM)
+    ENMOIIMEDKD_KIAAALLPPCM = 2240,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_DPIANCJPNBI)
+    ENMOIIMEDKD_DPIANCJPNBI = 2238,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_NKCJGPBMLBM)
+    ENMOIIMEDKD_NKCJGPBMLBM = 2232,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_DBEOJEGFCIO)
+    ENMOIIMEDKD_DBEOJEGFCIO = 2244,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_GDJCOFKGJCG)
+    ENMOIIMEDKD_GDJCOFKGJCG = 2227,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_EELECOGCJKP)
+    ENMOIIMEDKD_EELECOGCJKP = 2220,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_NEDJJGKDDNP)
+    ENMOIIMEDKD_NEDJJGKDDNP = 2229,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_FGBBOOCHPOO)
+    ENMOIIMEDKD_FGBBOOCHPOO = 2234,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_GMBHKFNHOJI)
+    ENMOIIMEDKD_GMBHKFNHOJI = 2219,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_GLHPDJAKOGI)
+    ENMOIIMEDKD_GLHPDJAKOGI = 2212,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_PMIJIJGANAN)
+    ENMOIIMEDKD_PMIJIJGANAN = 2243,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_PMPIJBHGOKC)
+    ENMOIIMEDKD_PMPIJBHGOKC = 2208,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_EHIFBAALDMH)
+    ENMOIIMEDKD_EHIFBAALDMH = 2207,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_EJHGOOPPKCO)
+    ENMOIIMEDKD_EJHGOOPPKCO = 2242,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_HEHJAHHAKDI)
+    ENMOIIMEDKD_HEHJAHHAKDI = 2223,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_MDMMEFIPJKD)
+    ENMOIIMEDKD_MDMMEFIPJKD = 2245,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_JIPMAKDBIAJ)
+    ENMOIIMEDKD_JIPMAKDBIAJ = 2209,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_OHCJFFHMILD)
+    ENMOIIMEDKD_OHCJFFHMILD = 2221,
+    // @@protoc_insertion_point(enum_value:CmdRaidType.ENMOIIMEDKD_OPNFILPAAGH)
+    ENMOIIMEDKD_OPNFILPAAGH = 2203,
 }
 
 impl ::protobuf::Enum for CmdRaidType {
@@ -80,80 +80,80 @@ impl ::protobuf::Enum for CmdRaidType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRaidType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRaidType::AFOEMKIDMJI_PCPDHELPKEM),
-            2227 => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidScRsp),
-            2231 => ::std::option::Option::Some(CmdRaidType::CmdDelSaveRaidScNotify),
-            2221 => ::std::option::Option::Some(CmdRaidType::CmdRaidKickByServer),
-            2238 => ::std::option::Option::Some(CmdRaidType::AFOEMKIDMJI_MLCKKOMGBJE),
-            2216 => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidScRsp),
-            2201 => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardCsReq),
-            2218 => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountCsReq),
-            2213 => ::std::option::Option::Some(CmdRaidType::CmdStartRaidCsReq),
-            2247 => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardScRsp),
-            2230 => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidCsReq),
-            2207 => ::std::option::Option::Some(CmdRaidType::CmdStartRaidScRsp),
-            2203 => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidScRsp),
-            2202 => ::std::option::Option::Some(CmdRaidType::CmdGetRaidInfoCsReq),
-            2219 => ::std::option::Option::Some(CmdRaidType::CmdChallengeRaidNotify),
-            2205 => ::std::option::Option::Some(CmdRaidType::CmdOHMFECJNLEG),
-            2236 => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidCsReq),
-            2250 => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidCsReq),
-            2235 => ::std::option::Option::Some(CmdRaidType::CmdRaidInfoNotify),
-            2244 => ::std::option::Option::Some(CmdRaidType::CmdGetRaidInfoScRsp),
-            2245 => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountScRsp),
+            0 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NLCDGIPGFDJ),
+            2205 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP),
+            2240 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_KIAAALLPPCM),
+            2238 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_DPIANCJPNBI),
+            2232 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM),
+            2244 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_DBEOJEGFCIO),
+            2227 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GDJCOFKGJCG),
+            2220 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EELECOGCJKP),
+            2229 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP),
+            2234 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_FGBBOOCHPOO),
+            2219 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI),
+            2212 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI),
+            2243 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN),
+            2208 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMPIJBHGOKC),
+            2207 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EHIFBAALDMH),
+            2242 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO),
+            2223 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI),
+            2245 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_MDMMEFIPJKD),
+            2209 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ),
+            2221 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD),
+            2203 => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRaidType> {
         match str {
-            "AFOEMKIDMJI_PCPDHELPKEM" => ::std::option::Option::Some(CmdRaidType::AFOEMKIDMJI_PCPDHELPKEM),
-            "CmdLeaveRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidScRsp),
-            "CmdDelSaveRaidScNotify" => ::std::option::Option::Some(CmdRaidType::CmdDelSaveRaidScNotify),
-            "CmdRaidKickByServer" => ::std::option::Option::Some(CmdRaidType::CmdRaidKickByServer),
-            "AFOEMKIDMJI_MLCKKOMGBJE" => ::std::option::Option::Some(CmdRaidType::AFOEMKIDMJI_MLCKKOMGBJE),
-            "CmdGetAllSaveRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidScRsp),
-            "CmdTakeChallengeRaidRewardCsReq" => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardCsReq),
-            "CmdSetClientRaidTargetCountCsReq" => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountCsReq),
-            "CmdStartRaidCsReq" => ::std::option::Option::Some(CmdRaidType::CmdStartRaidCsReq),
-            "CmdTakeChallengeRaidRewardScRsp" => ::std::option::Option::Some(CmdRaidType::CmdTakeChallengeRaidRewardScRsp),
-            "CmdLeaveRaidCsReq" => ::std::option::Option::Some(CmdRaidType::CmdLeaveRaidCsReq),
-            "CmdStartRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdStartRaidScRsp),
-            "CmdGetSaveRaidScRsp" => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidScRsp),
-            "CmdGetRaidInfoCsReq" => ::std::option::Option::Some(CmdRaidType::CmdGetRaidInfoCsReq),
-            "CmdChallengeRaidNotify" => ::std::option::Option::Some(CmdRaidType::CmdChallengeRaidNotify),
-            "CmdOHMFECJNLEG" => ::std::option::Option::Some(CmdRaidType::CmdOHMFECJNLEG),
-            "CmdGetSaveRaidCsReq" => ::std::option::Option::Some(CmdRaidType::CmdGetSaveRaidCsReq),
-            "CmdGetAllSaveRaidCsReq" => ::std::option::Option::Some(CmdRaidType::CmdGetAllSaveRaidCsReq),
-            "CmdRaidInfoNotify" => ::std::option::Option::Some(CmdRaidType::CmdRaidInfoNotify),
-            "CmdGetRaidInfoScRsp" => ::std::option::Option::Some(CmdRaidType::CmdGetRaidInfoScRsp),
-            "CmdSetClientRaidTargetCountScRsp" => ::std::option::Option::Some(CmdRaidType::CmdSetClientRaidTargetCountScRsp),
+            "ENMOIIMEDKD_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NLCDGIPGFDJ),
+            "ENMOIIMEDKD_LAKLHDPLLAP" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP),
+            "ENMOIIMEDKD_KIAAALLPPCM" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_KIAAALLPPCM),
+            "ENMOIIMEDKD_DPIANCJPNBI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_DPIANCJPNBI),
+            "ENMOIIMEDKD_NKCJGPBMLBM" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM),
+            "ENMOIIMEDKD_DBEOJEGFCIO" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_DBEOJEGFCIO),
+            "ENMOIIMEDKD_GDJCOFKGJCG" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GDJCOFKGJCG),
+            "ENMOIIMEDKD_EELECOGCJKP" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EELECOGCJKP),
+            "ENMOIIMEDKD_NEDJJGKDDNP" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP),
+            "ENMOIIMEDKD_FGBBOOCHPOO" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_FGBBOOCHPOO),
+            "ENMOIIMEDKD_GMBHKFNHOJI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI),
+            "ENMOIIMEDKD_GLHPDJAKOGI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI),
+            "ENMOIIMEDKD_PMIJIJGANAN" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN),
+            "ENMOIIMEDKD_PMPIJBHGOKC" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_PMPIJBHGOKC),
+            "ENMOIIMEDKD_EHIFBAALDMH" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EHIFBAALDMH),
+            "ENMOIIMEDKD_EJHGOOPPKCO" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO),
+            "ENMOIIMEDKD_HEHJAHHAKDI" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI),
+            "ENMOIIMEDKD_MDMMEFIPJKD" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_MDMMEFIPJKD),
+            "ENMOIIMEDKD_JIPMAKDBIAJ" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ),
+            "ENMOIIMEDKD_OHCJFFHMILD" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD),
+            "ENMOIIMEDKD_OPNFILPAAGH" => ::std::option::Option::Some(CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRaidType] = &[
-        CmdRaidType::AFOEMKIDMJI_PCPDHELPKEM,
-        CmdRaidType::CmdLeaveRaidScRsp,
-        CmdRaidType::CmdDelSaveRaidScNotify,
-        CmdRaidType::CmdRaidKickByServer,
-        CmdRaidType::AFOEMKIDMJI_MLCKKOMGBJE,
-        CmdRaidType::CmdGetAllSaveRaidScRsp,
-        CmdRaidType::CmdTakeChallengeRaidRewardCsReq,
-        CmdRaidType::CmdSetClientRaidTargetCountCsReq,
-        CmdRaidType::CmdStartRaidCsReq,
-        CmdRaidType::CmdTakeChallengeRaidRewardScRsp,
-        CmdRaidType::CmdLeaveRaidCsReq,
-        CmdRaidType::CmdStartRaidScRsp,
-        CmdRaidType::CmdGetSaveRaidScRsp,
-        CmdRaidType::CmdGetRaidInfoCsReq,
-        CmdRaidType::CmdChallengeRaidNotify,
-        CmdRaidType::CmdOHMFECJNLEG,
-        CmdRaidType::CmdGetSaveRaidCsReq,
-        CmdRaidType::CmdGetAllSaveRaidCsReq,
-        CmdRaidType::CmdRaidInfoNotify,
-        CmdRaidType::CmdGetRaidInfoScRsp,
-        CmdRaidType::CmdSetClientRaidTargetCountScRsp,
+        CmdRaidType::ENMOIIMEDKD_NLCDGIPGFDJ,
+        CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP,
+        CmdRaidType::ENMOIIMEDKD_KIAAALLPPCM,
+        CmdRaidType::ENMOIIMEDKD_DPIANCJPNBI,
+        CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM,
+        CmdRaidType::ENMOIIMEDKD_DBEOJEGFCIO,
+        CmdRaidType::ENMOIIMEDKD_GDJCOFKGJCG,
+        CmdRaidType::ENMOIIMEDKD_EELECOGCJKP,
+        CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP,
+        CmdRaidType::ENMOIIMEDKD_FGBBOOCHPOO,
+        CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI,
+        CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI,
+        CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN,
+        CmdRaidType::ENMOIIMEDKD_PMPIJBHGOKC,
+        CmdRaidType::ENMOIIMEDKD_EHIFBAALDMH,
+        CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO,
+        CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI,
+        CmdRaidType::ENMOIIMEDKD_MDMMEFIPJKD,
+        CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ,
+        CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD,
+        CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH,
     ];
 }
 
@@ -165,27 +165,27 @@ impl ::protobuf::EnumFull for CmdRaidType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRaidType::AFOEMKIDMJI_PCPDHELPKEM => 0,
-            CmdRaidType::CmdLeaveRaidScRsp => 1,
-            CmdRaidType::CmdDelSaveRaidScNotify => 2,
-            CmdRaidType::CmdRaidKickByServer => 3,
-            CmdRaidType::AFOEMKIDMJI_MLCKKOMGBJE => 4,
-            CmdRaidType::CmdGetAllSaveRaidScRsp => 5,
-            CmdRaidType::CmdTakeChallengeRaidRewardCsReq => 6,
-            CmdRaidType::CmdSetClientRaidTargetCountCsReq => 7,
-            CmdRaidType::CmdStartRaidCsReq => 8,
-            CmdRaidType::CmdTakeChallengeRaidRewardScRsp => 9,
-            CmdRaidType::CmdLeaveRaidCsReq => 10,
-            CmdRaidType::CmdStartRaidScRsp => 11,
-            CmdRaidType::CmdGetSaveRaidScRsp => 12,
-            CmdRaidType::CmdGetRaidInfoCsReq => 13,
-            CmdRaidType::CmdChallengeRaidNotify => 14,
-            CmdRaidType::CmdOHMFECJNLEG => 15,
-            CmdRaidType::CmdGetSaveRaidCsReq => 16,
-            CmdRaidType::CmdGetAllSaveRaidCsReq => 17,
-            CmdRaidType::CmdRaidInfoNotify => 18,
-            CmdRaidType::CmdGetRaidInfoScRsp => 19,
-            CmdRaidType::CmdSetClientRaidTargetCountScRsp => 20,
+            CmdRaidType::ENMOIIMEDKD_NLCDGIPGFDJ => 0,
+            CmdRaidType::ENMOIIMEDKD_LAKLHDPLLAP => 1,
+            CmdRaidType::ENMOIIMEDKD_KIAAALLPPCM => 2,
+            CmdRaidType::ENMOIIMEDKD_DPIANCJPNBI => 3,
+            CmdRaidType::ENMOIIMEDKD_NKCJGPBMLBM => 4,
+            CmdRaidType::ENMOIIMEDKD_DBEOJEGFCIO => 5,
+            CmdRaidType::ENMOIIMEDKD_GDJCOFKGJCG => 6,
+            CmdRaidType::ENMOIIMEDKD_EELECOGCJKP => 7,
+            CmdRaidType::ENMOIIMEDKD_NEDJJGKDDNP => 8,
+            CmdRaidType::ENMOIIMEDKD_FGBBOOCHPOO => 9,
+            CmdRaidType::ENMOIIMEDKD_GMBHKFNHOJI => 10,
+            CmdRaidType::ENMOIIMEDKD_GLHPDJAKOGI => 11,
+            CmdRaidType::ENMOIIMEDKD_PMIJIJGANAN => 12,
+            CmdRaidType::ENMOIIMEDKD_PMPIJBHGOKC => 13,
+            CmdRaidType::ENMOIIMEDKD_EHIFBAALDMH => 14,
+            CmdRaidType::ENMOIIMEDKD_EJHGOOPPKCO => 15,
+            CmdRaidType::ENMOIIMEDKD_HEHJAHHAKDI => 16,
+            CmdRaidType::ENMOIIMEDKD_MDMMEFIPJKD => 17,
+            CmdRaidType::ENMOIIMEDKD_JIPMAKDBIAJ => 18,
+            CmdRaidType::ENMOIIMEDKD_OHCJFFHMILD => 19,
+            CmdRaidType::ENMOIIMEDKD_OPNFILPAAGH => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -193,7 +193,7 @@ impl ::protobuf::EnumFull for CmdRaidType {
 
 impl ::std::default::Default for CmdRaidType {
     fn default() -> Self {
-        CmdRaidType::AFOEMKIDMJI_PCPDHELPKEM
+        CmdRaidType::ENMOIIMEDKD_NLCDGIPGFDJ
     }
 }
 
@@ -204,21 +204,22 @@ impl CmdRaidType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CmdRaidType.proto*\xe5\x04\n\x0bCmdRaidType\x12\x1b\n\x17AFOEMKIDM\
-    JI_PCPDHELPKEM\x10\0\x12\x16\n\x11CmdLeaveRaidScRsp\x10\xb3\x11\x12\x1b\
-    \n\x16CmdDelSaveRaidScNotify\x10\xb7\x11\x12\x18\n\x13CmdRaidKickByServe\
-    r\x10\xad\x11\x12\x1c\n\x17AFOEMKIDMJI_MLCKKOMGBJE\x10\xbe\x11\x12\x1b\n\
-    \x16CmdGetAllSaveRaidScRsp\x10\xa8\x11\x12$\n\x1fCmdTakeChallengeRaidRew\
-    ardCsReq\x10\x99\x11\x12%\n\x20CmdSetClientRaidTargetCountCsReq\x10\xaa\
-    \x11\x12\x16\n\x11CmdStartRaidCsReq\x10\xa5\x11\x12$\n\x1fCmdTakeChallen\
-    geRaidRewardScRsp\x10\xc7\x11\x12\x16\n\x11CmdLeaveRaidCsReq\x10\xb6\x11\
-    \x12\x16\n\x11CmdStartRaidScRsp\x10\x9f\x11\x12\x18\n\x13CmdGetSaveRaidS\
-    cRsp\x10\x9b\x11\x12\x18\n\x13CmdGetRaidInfoCsReq\x10\x9a\x11\x12\x1b\n\
-    \x16CmdChallengeRaidNotify\x10\xab\x11\x12\x13\n\x0eCmdOHMFECJNLEG\x10\
-    \x9d\x11\x12\x18\n\x13CmdGetSaveRaidCsReq\x10\xbc\x11\x12\x1b\n\x16CmdGe\
-    tAllSaveRaidCsReq\x10\xca\x11\x12\x16\n\x11CmdRaidInfoNotify\x10\xbb\x11\
-    \x12\x18\n\x13CmdGetRaidInfoScRsp\x10\xc4\x11\x12%\n\x20CmdSetClientRaid\
-    TargetCountScRsp\x10\xc5\x11b\x06proto3\
+    \n\x11CmdRaidType.proto*\x82\x05\n\x0bCmdRaidType\x12\x1b\n\x17ENMOIIMED\
+    KD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ENMOIIMEDKD_LAKLHDPLLAP\x10\x9d\x11\
+    \x12\x1c\n\x17ENMOIIMEDKD_KIAAALLPPCM\x10\xc0\x11\x12\x1c\n\x17ENMOIIMED\
+    KD_DPIANCJPNBI\x10\xbe\x11\x12\x1c\n\x17ENMOIIMEDKD_NKCJGPBMLBM\x10\xb8\
+    \x11\x12\x1c\n\x17ENMOIIMEDKD_DBEOJEGFCIO\x10\xc4\x11\x12\x1c\n\x17ENMOI\
+    IMEDKD_GDJCOFKGJCG\x10\xb3\x11\x12\x1c\n\x17ENMOIIMEDKD_EELECOGCJKP\x10\
+    \xac\x11\x12\x1c\n\x17ENMOIIMEDKD_NEDJJGKDDNP\x10\xb5\x11\x12\x1c\n\x17E\
+    NMOIIMEDKD_FGBBOOCHPOO\x10\xba\x11\x12\x1c\n\x17ENMOIIMEDKD_GMBHKFNHOJI\
+    \x10\xab\x11\x12\x1c\n\x17ENMOIIMEDKD_GLHPDJAKOGI\x10\xa4\x11\x12\x1c\n\
+    \x17ENMOIIMEDKD_PMIJIJGANAN\x10\xc3\x11\x12\x1c\n\x17ENMOIIMEDKD_PMPIJBH\
+    GOKC\x10\xa0\x11\x12\x1c\n\x17ENMOIIMEDKD_EHIFBAALDMH\x10\x9f\x11\x12\
+    \x1c\n\x17ENMOIIMEDKD_EJHGOOPPKCO\x10\xc2\x11\x12\x1c\n\x17ENMOIIMEDKD_H\
+    EHJAHHAKDI\x10\xaf\x11\x12\x1c\n\x17ENMOIIMEDKD_MDMMEFIPJKD\x10\xc5\x11\
+    \x12\x1c\n\x17ENMOIIMEDKD_JIPMAKDBIAJ\x10\xa1\x11\x12\x1c\n\x17ENMOIIMED\
+    KD_OHCJFFHMILD\x10\xad\x11\x12\x1c\n\x17ENMOIIMEDKD_OPNFILPAAGH\x10\x9b\
+    \x11b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

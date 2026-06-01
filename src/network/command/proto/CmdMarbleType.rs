@@ -27,28 +27,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMarbleType)
 pub enum CmdMarbleType {
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.JGIOJDGDAOD_PCPDHELPKEM)
-    JGIOJDGDAOD_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleGetDataScRsp)
-    CmdMarbleGetDataScRsp = 8290,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarblePvpDataUpdateScNotify)
-    CmdMarblePvpDataUpdateScNotify = 8287,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleGetDataCsReq)
-    CmdMarbleGetDataCsReq = 8271,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleUpdateShownSealCsReq)
-    CmdMarbleUpdateShownSealCsReq = 8277,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleShopBuyScRsp)
-    CmdMarbleShopBuyScRsp = 8278,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleUnlockSealScNotify)
-    CmdMarbleUnlockSealScNotify = 8284,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleUpdateShownSealScRsp)
-    CmdMarbleUpdateShownSealScRsp = 8289,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdPCPJKOHFECE)
-    CmdPCPJKOHFECE = 8280,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdIFJDJKMMABL)
-    CmdIFJDJKMMABL = 8272,
-    // @@protoc_insertion_point(enum_value:CmdMarbleType.CmdMarbleShopBuyCsReq)
-    CmdMarbleShopBuyCsReq = 8285,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_NLCDGIPGFDJ)
+    NIEBPPAPJOF_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_DNPLCONGKND)
+    NIEBPPAPJOF_DNPLCONGKND = 8281,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_DDIOBKAADAL)
+    NIEBPPAPJOF_DDIOBKAADAL = 8282,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_JGNPOCAFKON)
+    NIEBPPAPJOF_JGNPOCAFKON = 8276,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_DLBEGMGIEPE)
+    NIEBPPAPJOF_DLBEGMGIEPE = 8289,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_CCJMIFLJFKC)
+    NIEBPPAPJOF_CCJMIFLJFKC = 8274,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_AGDKICBCICD)
+    NIEBPPAPJOF_AGDKICBCICD = 8286,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_DLJNJFOMAEG)
+    NIEBPPAPJOF_DLJNJFOMAEG = 8288,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_JHCDCIKNEEM)
+    NIEBPPAPJOF_JHCDCIKNEEM = 8290,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_DMECBJNLIJJ)
+    NIEBPPAPJOF_DMECBJNLIJJ = 8284,
+    // @@protoc_insertion_point(enum_value:CmdMarbleType.NIEBPPAPJOF_KHNPGEPLCLD)
+    NIEBPPAPJOF_KHNPGEPLCLD = 8272,
 }
 
 impl ::protobuf::Enum for CmdMarbleType {
@@ -60,50 +60,50 @@ impl ::protobuf::Enum for CmdMarbleType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMarbleType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMarbleType::JGIOJDGDAOD_PCPDHELPKEM),
-            8290 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleGetDataScRsp),
-            8287 => ::std::option::Option::Some(CmdMarbleType::CmdMarblePvpDataUpdateScNotify),
-            8271 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleGetDataCsReq),
-            8277 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUpdateShownSealCsReq),
-            8278 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleShopBuyScRsp),
-            8284 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUnlockSealScNotify),
-            8289 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUpdateShownSealScRsp),
-            8280 => ::std::option::Option::Some(CmdMarbleType::CmdPCPJKOHFECE),
-            8272 => ::std::option::Option::Some(CmdMarbleType::CmdIFJDJKMMABL),
-            8285 => ::std::option::Option::Some(CmdMarbleType::CmdMarbleShopBuyCsReq),
+            0 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_NLCDGIPGFDJ),
+            8281 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_DNPLCONGKND),
+            8282 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_DDIOBKAADAL),
+            8276 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_JGNPOCAFKON),
+            8289 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_DLBEGMGIEPE),
+            8274 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_CCJMIFLJFKC),
+            8286 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_AGDKICBCICD),
+            8288 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_DLJNJFOMAEG),
+            8290 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_JHCDCIKNEEM),
+            8284 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_DMECBJNLIJJ),
+            8272 => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_KHNPGEPLCLD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMarbleType> {
         match str {
-            "JGIOJDGDAOD_PCPDHELPKEM" => ::std::option::Option::Some(CmdMarbleType::JGIOJDGDAOD_PCPDHELPKEM),
-            "CmdMarbleGetDataScRsp" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleGetDataScRsp),
-            "CmdMarblePvpDataUpdateScNotify" => ::std::option::Option::Some(CmdMarbleType::CmdMarblePvpDataUpdateScNotify),
-            "CmdMarbleGetDataCsReq" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleGetDataCsReq),
-            "CmdMarbleUpdateShownSealCsReq" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUpdateShownSealCsReq),
-            "CmdMarbleShopBuyScRsp" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleShopBuyScRsp),
-            "CmdMarbleUnlockSealScNotify" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUnlockSealScNotify),
-            "CmdMarbleUpdateShownSealScRsp" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleUpdateShownSealScRsp),
-            "CmdPCPJKOHFECE" => ::std::option::Option::Some(CmdMarbleType::CmdPCPJKOHFECE),
-            "CmdIFJDJKMMABL" => ::std::option::Option::Some(CmdMarbleType::CmdIFJDJKMMABL),
-            "CmdMarbleShopBuyCsReq" => ::std::option::Option::Some(CmdMarbleType::CmdMarbleShopBuyCsReq),
+            "NIEBPPAPJOF_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_NLCDGIPGFDJ),
+            "NIEBPPAPJOF_DNPLCONGKND" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_DNPLCONGKND),
+            "NIEBPPAPJOF_DDIOBKAADAL" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_DDIOBKAADAL),
+            "NIEBPPAPJOF_JGNPOCAFKON" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_JGNPOCAFKON),
+            "NIEBPPAPJOF_DLBEGMGIEPE" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_DLBEGMGIEPE),
+            "NIEBPPAPJOF_CCJMIFLJFKC" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_CCJMIFLJFKC),
+            "NIEBPPAPJOF_AGDKICBCICD" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_AGDKICBCICD),
+            "NIEBPPAPJOF_DLJNJFOMAEG" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_DLJNJFOMAEG),
+            "NIEBPPAPJOF_JHCDCIKNEEM" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_JHCDCIKNEEM),
+            "NIEBPPAPJOF_DMECBJNLIJJ" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_DMECBJNLIJJ),
+            "NIEBPPAPJOF_KHNPGEPLCLD" => ::std::option::Option::Some(CmdMarbleType::NIEBPPAPJOF_KHNPGEPLCLD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMarbleType] = &[
-        CmdMarbleType::JGIOJDGDAOD_PCPDHELPKEM,
-        CmdMarbleType::CmdMarbleGetDataScRsp,
-        CmdMarbleType::CmdMarblePvpDataUpdateScNotify,
-        CmdMarbleType::CmdMarbleGetDataCsReq,
-        CmdMarbleType::CmdMarbleUpdateShownSealCsReq,
-        CmdMarbleType::CmdMarbleShopBuyScRsp,
-        CmdMarbleType::CmdMarbleUnlockSealScNotify,
-        CmdMarbleType::CmdMarbleUpdateShownSealScRsp,
-        CmdMarbleType::CmdPCPJKOHFECE,
-        CmdMarbleType::CmdIFJDJKMMABL,
-        CmdMarbleType::CmdMarbleShopBuyCsReq,
+        CmdMarbleType::NIEBPPAPJOF_NLCDGIPGFDJ,
+        CmdMarbleType::NIEBPPAPJOF_DNPLCONGKND,
+        CmdMarbleType::NIEBPPAPJOF_DDIOBKAADAL,
+        CmdMarbleType::NIEBPPAPJOF_JGNPOCAFKON,
+        CmdMarbleType::NIEBPPAPJOF_DLBEGMGIEPE,
+        CmdMarbleType::NIEBPPAPJOF_CCJMIFLJFKC,
+        CmdMarbleType::NIEBPPAPJOF_AGDKICBCICD,
+        CmdMarbleType::NIEBPPAPJOF_DLJNJFOMAEG,
+        CmdMarbleType::NIEBPPAPJOF_JHCDCIKNEEM,
+        CmdMarbleType::NIEBPPAPJOF_DMECBJNLIJJ,
+        CmdMarbleType::NIEBPPAPJOF_KHNPGEPLCLD,
     ];
 }
 
@@ -115,17 +115,17 @@ impl ::protobuf::EnumFull for CmdMarbleType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMarbleType::JGIOJDGDAOD_PCPDHELPKEM => 0,
-            CmdMarbleType::CmdMarbleGetDataScRsp => 1,
-            CmdMarbleType::CmdMarblePvpDataUpdateScNotify => 2,
-            CmdMarbleType::CmdMarbleGetDataCsReq => 3,
-            CmdMarbleType::CmdMarbleUpdateShownSealCsReq => 4,
-            CmdMarbleType::CmdMarbleShopBuyScRsp => 5,
-            CmdMarbleType::CmdMarbleUnlockSealScNotify => 6,
-            CmdMarbleType::CmdMarbleUpdateShownSealScRsp => 7,
-            CmdMarbleType::CmdPCPJKOHFECE => 8,
-            CmdMarbleType::CmdIFJDJKMMABL => 9,
-            CmdMarbleType::CmdMarbleShopBuyCsReq => 10,
+            CmdMarbleType::NIEBPPAPJOF_NLCDGIPGFDJ => 0,
+            CmdMarbleType::NIEBPPAPJOF_DNPLCONGKND => 1,
+            CmdMarbleType::NIEBPPAPJOF_DDIOBKAADAL => 2,
+            CmdMarbleType::NIEBPPAPJOF_JGNPOCAFKON => 3,
+            CmdMarbleType::NIEBPPAPJOF_DLBEGMGIEPE => 4,
+            CmdMarbleType::NIEBPPAPJOF_CCJMIFLJFKC => 5,
+            CmdMarbleType::NIEBPPAPJOF_AGDKICBCICD => 6,
+            CmdMarbleType::NIEBPPAPJOF_DLJNJFOMAEG => 7,
+            CmdMarbleType::NIEBPPAPJOF_JHCDCIKNEEM => 8,
+            CmdMarbleType::NIEBPPAPJOF_DMECBJNLIJJ => 9,
+            CmdMarbleType::NIEBPPAPJOF_KHNPGEPLCLD => 10,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -133,7 +133,7 @@ impl ::protobuf::EnumFull for CmdMarbleType {
 
 impl ::std::default::Default for CmdMarbleType {
     fn default() -> Self {
-        CmdMarbleType::JGIOJDGDAOD_PCPDHELPKEM
+        CmdMarbleType::NIEBPPAPJOF_NLCDGIPGFDJ
     }
 }
 
@@ -144,14 +144,14 @@ impl CmdMarbleType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdMarbleType.proto*\xd5\x02\n\rCmdMarbleType\x12\x1b\n\x17JGIOJDG\
-    DAOD_PCPDHELPKEM\x10\0\x12\x1a\n\x15CmdMarbleGetDataScRsp\x10\xe2@\x12#\
-    \n\x1eCmdMarblePvpDataUpdateScNotify\x10\xdf@\x12\x1a\n\x15CmdMarbleGetD\
-    ataCsReq\x10\xcf@\x12\"\n\x1dCmdMarbleUpdateShownSealCsReq\x10\xd5@\x12\
-    \x1a\n\x15CmdMarbleShopBuyScRsp\x10\xd6@\x12\x20\n\x1bCmdMarbleUnlockSea\
-    lScNotify\x10\xdc@\x12\"\n\x1dCmdMarbleUpdateShownSealScRsp\x10\xe1@\x12\
-    \x13\n\x0eCmdPCPJKOHFECE\x10\xd8@\x12\x13\n\x0eCmdIFJDJKMMABL\x10\xd0@\
-    \x12\x1a\n\x15CmdMarbleShopBuyCsReq\x10\xdd@b\x06proto3\
+    \n\x13CmdMarbleType.proto*\xd8\x02\n\rCmdMarbleType\x12\x1b\n\x17NIEBPPA\
+    PJOF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17NIEBPPAPJOF_DNPLCONGKND\x10\xd9@\x12\
+    \x1c\n\x17NIEBPPAPJOF_DDIOBKAADAL\x10\xda@\x12\x1c\n\x17NIEBPPAPJOF_JGNP\
+    OCAFKON\x10\xd4@\x12\x1c\n\x17NIEBPPAPJOF_DLBEGMGIEPE\x10\xe1@\x12\x1c\n\
+    \x17NIEBPPAPJOF_CCJMIFLJFKC\x10\xd2@\x12\x1c\n\x17NIEBPPAPJOF_AGDKICBCIC\
+    D\x10\xde@\x12\x1c\n\x17NIEBPPAPJOF_DLJNJFOMAEG\x10\xe0@\x12\x1c\n\x17NI\
+    EBPPAPJOF_JHCDCIKNEEM\x10\xe2@\x12\x1c\n\x17NIEBPPAPJOF_DMECBJNLIJJ\x10\
+    \xdc@\x12\x1c\n\x17NIEBPPAPJOF_KHNPGEPLCLD\x10\xd0@b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -89,10 +89,10 @@ impl ::protobuf::Message for TeleportToMissionResetPointScRsp {
                 82 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
-                72 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                48 => {
                     self.client_pos_version = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for TeleportToMissionResetPointScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         if self.client_pos_version != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.client_pos_version);
+            my_size += ::protobuf::rt::uint32_size(6, self.client_pos_version);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,10 +127,10 @@ impl ::protobuf::Message for TeleportToMissionResetPointScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         if self.client_pos_version != 0 {
-            os.write_uint32(13, self.client_pos_version)?;
+            os.write_uint32(6, self.client_pos_version)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for TeleportToMissionResetPointScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&TeleportToMissionResetPointScRsp.proto\x1a\x10MotionInfo.proto\"\x8f\
     \x01\n\x20TeleportToMissionResetPointScRsp\x12#\n\x06motion\x18\n\x20\
-    \x01(\x0b2\x0b.MotionInfoR\x06motion\x12\x18\n\x07retcode\x18\t\x20\x01(\
-    \rR\x07retcode\x12,\n\x12client_pos_version\x18\r\x20\x01(\rR\x10clientP\
-    osVersionb\x06proto3\
+    \x01(\x0b2\x0b.MotionInfoR\x06motion\x12\x18\n\x07retcode\x18\x04\x20\
+    \x01(\rR\x07retcode\x12,\n\x12client_pos_version\x18\x06\x20\x01(\rR\x10\
+    clientPosVersionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

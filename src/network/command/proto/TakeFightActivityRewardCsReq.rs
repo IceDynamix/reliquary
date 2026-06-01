@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeFightActivityRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeFightActivityRewardCsReq.INOMFFAIEOA)
-    pub INOMFFAIEOA: u32,
+    // @@protoc_insertion_point(field:TakeFightActivityRewardCsReq.DBKHHCGGKNN)
+    pub DBKHHCGGKNN: u32,
     // @@protoc_insertion_point(field:TakeFightActivityRewardCsReq.group_id)
     pub group_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TakeFightActivityRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "INOMFFAIEOA",
-            |m: &TakeFightActivityRewardCsReq| { &m.INOMFFAIEOA },
-            |m: &mut TakeFightActivityRewardCsReq| { &mut m.INOMFFAIEOA },
+            "DBKHHCGGKNN",
+            |m: &TakeFightActivityRewardCsReq| { &m.DBKHHCGGKNN },
+            |m: &mut TakeFightActivityRewardCsReq| { &mut m.DBKHHCGGKNN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "group_id",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.INOMFFAIEOA = is.read_uint32()?;
+                120 => {
+                    self.DBKHHCGGKNN = is.read_uint32()?;
                 },
                 56 => {
                     self.group_id = is.read_uint32()?;
@@ -97,8 +97,8 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.INOMFFAIEOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.INOMFFAIEOA);
+        if self.DBKHHCGGKNN != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.DBKHHCGGKNN);
         }
         if self.group_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.group_id);
@@ -109,8 +109,8 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.INOMFFAIEOA != 0 {
-            os.write_uint32(8, self.INOMFFAIEOA)?;
+        if self.DBKHHCGGKNN != 0 {
+            os.write_uint32(15, self.DBKHHCGGKNN)?;
         }
         if self.group_id != 0 {
             os.write_uint32(7, self.group_id)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for TakeFightActivityRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.INOMFFAIEOA = 0;
+        self.DBKHHCGGKNN = 0;
         self.group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeFightActivityRewardCsReq {
         static instance: TakeFightActivityRewardCsReq = TakeFightActivityRewardCsReq {
-            INOMFFAIEOA: 0,
+            DBKHHCGGKNN: 0,
             group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeFightActivityRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeFightActivityRewardCsReq.proto\"[\n\x1cTakeFightActivityRewardCs\
-    Req\x12\x20\n\x0bINOMFFAIEOA\x18\x08\x20\x01(\rR\x0bINOMFFAIEOA\x12\x19\
+    Req\x12\x20\n\x0bDBKHHCGGKNN\x18\x0f\x20\x01(\rR\x0bDBKHHCGGKNN\x12\x19\
     \n\x08group_id\x18\x07\x20\x01(\rR\x07groupIdb\x06proto3\
 ";
 

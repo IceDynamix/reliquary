@@ -30,8 +30,8 @@ pub struct ChenLingActivatedPrivilegeScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChenLingActivatedPrivilegeScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChenLingActivatedPrivilegeScRsp.HCEOMBKCDDM)
-    pub HCEOMBKCDDM: u32,
+    // @@protoc_insertion_point(field:ChenLingActivatedPrivilegeScRsp.ADBGHKBGGJM)
+    pub ADBGHKBGGJM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChenLingActivatedPrivilegeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ChenLingActivatedPrivilegeScRsp {
             |m: &mut ChenLingActivatedPrivilegeScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCEOMBKCDDM",
-            |m: &ChenLingActivatedPrivilegeScRsp| { &m.HCEOMBKCDDM },
-            |m: &mut ChenLingActivatedPrivilegeScRsp| { &mut m.HCEOMBKCDDM },
+            "ADBGHKBGGJM",
+            |m: &ChenLingActivatedPrivilegeScRsp| { &m.ADBGHKBGGJM },
+            |m: &mut ChenLingActivatedPrivilegeScRsp| { &mut m.ADBGHKBGGJM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChenLingActivatedPrivilegeScRsp>(
             "ChenLingActivatedPrivilegeScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
-                40 => {
-                    self.HCEOMBKCDDM = is.read_uint32()?;
+                72 => {
+                    self.ADBGHKBGGJM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
-        if self.HCEOMBKCDDM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.HCEOMBKCDDM);
+        if self.ADBGHKBGGJM != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.ADBGHKBGGJM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
-        if self.HCEOMBKCDDM != 0 {
-            os.write_uint32(5, self.HCEOMBKCDDM)?;
+        if self.ADBGHKBGGJM != 0 {
+            os.write_uint32(9, self.ADBGHKBGGJM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.HCEOMBKCDDM = 0;
+        self.ADBGHKBGGJM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingActivatedPrivilegeScRsp {
         static instance: ChenLingActivatedPrivilegeScRsp = ChenLingActivatedPrivilegeScRsp {
             retcode: 0,
-            HCEOMBKCDDM: 0,
+            ADBGHKBGGJM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingActivatedPrivilegeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%ChenLingActivatedPrivilegeScRsp.proto\"]\n\x1fChenLingActivatedPrivil\
-    egeScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\
-    \x0bHCEOMBKCDDM\x18\x05\x20\x01(\rR\x0bHCEOMBKCDDMb\x06proto3\
+    egeScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\
+    \x0bADBGHKBGGJM\x18\t\x20\x01(\rR\x0bADBGHKBGGJMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

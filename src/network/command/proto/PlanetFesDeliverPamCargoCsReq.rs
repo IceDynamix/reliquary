@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesDeliverPamCargoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesDeliverPamCargoCsReq.AFAHDBPGJLL)
-    pub AFAHDBPGJLL: u32,
+    // @@protoc_insertion_point(field:PlanetFesDeliverPamCargoCsReq.JADCEPFHHDK)
+    pub JADCEPFHHDK: u32,
     // @@protoc_insertion_point(field:PlanetFesDeliverPamCargoCsReq.avatar_id)
     pub avatar_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl PlanetFesDeliverPamCargoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFAHDBPGJLL",
-            |m: &PlanetFesDeliverPamCargoCsReq| { &m.AFAHDBPGJLL },
-            |m: &mut PlanetFesDeliverPamCargoCsReq| { &mut m.AFAHDBPGJLL },
+            "JADCEPFHHDK",
+            |m: &PlanetFesDeliverPamCargoCsReq| { &m.JADCEPFHHDK },
+            |m: &mut PlanetFesDeliverPamCargoCsReq| { &mut m.JADCEPFHHDK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlanetFesDeliverPamCargoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.AFAHDBPGJLL = is.read_uint32()?;
-                },
                 16 => {
+                    self.JADCEPFHHDK = is.read_uint32()?;
+                },
+                56 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlanetFesDeliverPamCargoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AFAHDBPGJLL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.AFAHDBPGJLL);
+        if self.JADCEPFHHDK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JADCEPFHHDK);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlanetFesDeliverPamCargoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AFAHDBPGJLL != 0 {
-            os.write_uint32(14, self.AFAHDBPGJLL)?;
+        if self.JADCEPFHHDK != 0 {
+            os.write_uint32(2, self.JADCEPFHHDK)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(2, self.avatar_id)?;
+            os.write_uint32(7, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for PlanetFesDeliverPamCargoCsReq {
     }
 
     fn clear(&mut self) {
-        self.AFAHDBPGJLL = 0;
+        self.JADCEPFHHDK = 0;
         self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesDeliverPamCargoCsReq {
         static instance: PlanetFesDeliverPamCargoCsReq = PlanetFesDeliverPamCargoCsReq {
-            AFAHDBPGJLL: 0,
+            JADCEPFHHDK: 0,
             avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesDeliverPamCargoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#PlanetFesDeliverPamCargoCsReq.proto\"^\n\x1dPlanetFesDeliverPamCargoC\
-    sReq\x12\x20\n\x0bAFAHDBPGJLL\x18\x0e\x20\x01(\rR\x0bAFAHDBPGJLL\x12\x1b\
-    \n\tavatar_id\x18\x02\x20\x01(\rR\x08avatarIdb\x06proto3\
+    sReq\x12\x20\n\x0bJADCEPFHHDK\x18\x02\x20\x01(\rR\x0bJADCEPFHHDK\x12\x1b\
+    \n\tavatar_id\x18\x07\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

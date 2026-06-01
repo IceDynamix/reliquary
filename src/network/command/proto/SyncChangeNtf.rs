@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncChangeNtf {
     // message fields
-    // @@protoc_insertion_point(field:SyncChangeNtf.CJFBLHNPHAK)
-    pub CJFBLHNPHAK: ::std::vec::Vec<super::FAIGHIPDKIG::FAIGHIPDKIG>,
+    // @@protoc_insertion_point(field:SyncChangeNtf.DGNGMJMPFGK)
+    pub DGNGMJMPFGK: ::std::vec::Vec<super::KAILIIEEBJM::KAILIIEEBJM>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncChangeNtf.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncChangeNtf {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CJFBLHNPHAK",
-            |m: &SyncChangeNtf| { &m.CJFBLHNPHAK },
-            |m: &mut SyncChangeNtf| { &mut m.CJFBLHNPHAK },
+            "DGNGMJMPFGK",
+            |m: &SyncChangeNtf| { &m.DGNGMJMPFGK },
+            |m: &mut SyncChangeNtf| { &mut m.DGNGMJMPFGK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncChangeNtf>(
             "SyncChangeNtf",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncChangeNtf {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    self.CJFBLHNPHAK.push(is.read_message()?);
+                90 => {
+                    self.DGNGMJMPFGK.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for SyncChangeNtf {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.CJFBLHNPHAK {
+        for value in &self.DGNGMJMPFGK {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for SyncChangeNtf {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.CJFBLHNPHAK {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.DGNGMJMPFGK {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for SyncChangeNtf {
     }
 
     fn clear(&mut self) {
-        self.CJFBLHNPHAK.clear();
+        self.DGNGMJMPFGK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncChangeNtf {
         static instance: SyncChangeNtf = SyncChangeNtf {
-            CJFBLHNPHAK: ::std::vec::Vec::new(),
+            DGNGMJMPFGK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncChangeNtf {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13SyncChangeNtf.proto\x1a\x11FAIGHIPDKIG.proto\"?\n\rSyncChangeNtf\
-    \x12.\n\x0bCJFBLHNPHAK\x18\t\x20\x03(\x0b2\x0c.FAIGHIPDKIGR\x0bCJFBLHNPH\
-    AKb\x06proto3\
+    \n\x13SyncChangeNtf.proto\x1a\x11KAILIIEEBJM.proto\"?\n\rSyncChangeNtf\
+    \x12.\n\x0bDGNGMJMPFGK\x18\x0b\x20\x03(\x0b2\x0c.KAILIIEEBJMR\x0bDGNGMJM\
+    PFGKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FAIGHIPDKIG::file_descriptor().clone());
+            deps.push(super::KAILIIEEBJM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SyncChangeNtf::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

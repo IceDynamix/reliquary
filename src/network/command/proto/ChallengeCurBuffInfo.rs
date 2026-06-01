@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeCurBuffInfo {
     // message oneof groups
-    pub BPIHFAJCLOC: ::std::option::Option<challenge_cur_buff_info::BPIHFAJCLOC>,
+    pub KKNBOACNCON: ::std::option::Option<challenge_cur_buff_info::KKNBOACNCON>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeCurBuffInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl ChallengeCurBuffInfo {
         ::std::default::Default::default()
     }
 
-    // .ChallengeStoryBuffList cur_story_buffs = 3;
+    // .ChallengeStoryBuffList cur_story_buffs = 9;
 
     pub fn cur_story_buffs(&self) -> &super::ChallengeStoryBuffList::ChallengeStoryBuffList {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurStoryBuffs(ref v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(ref v)) => v,
             _ => <super::ChallengeStoryBuffList::ChallengeStoryBuffList as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_cur_story_buffs(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
     pub fn has_cur_story_buffs(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurStoryBuffs(..)) => true,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_cur_story_buffs(&mut self, v: super::ChallengeStoryBuffList::ChallengeStoryBuffList) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurStoryBuffs(v))
+        self.KKNBOACNCON = ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_cur_story_buffs(&mut self) -> &mut super::ChallengeStoryBuffList::ChallengeStoryBuffList {
-        if let ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurStoryBuffs(_)) = self.BPIHFAJCLOC {
+        if let ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurStoryBuffs(super::ChallengeStoryBuffList::ChallengeStoryBuffList::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(super::ChallengeStoryBuffList::ChallengeStoryBuffList::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurStoryBuffs(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl ChallengeCurBuffInfo {
     // Take field
     pub fn take_cur_story_buffs(&mut self) -> super::ChallengeStoryBuffList::ChallengeStoryBuffList {
         if self.has_cur_story_buffs() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurStoryBuffs(v)) => v,
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,39 +94,39 @@ impl ChallengeCurBuffInfo {
         }
     }
 
-    // .ChallengeBossBuffList cur_boss_buffs = 15;
+    // .ChallengeBossBuffList cur_boss_buffs = 5;
 
     pub fn cur_boss_buffs(&self) -> &super::ChallengeBossBuffList::ChallengeBossBuffList {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurBossBuffs(ref v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(ref v)) => v,
             _ => <super::ChallengeBossBuffList::ChallengeBossBuffList as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_cur_boss_buffs(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
     pub fn has_cur_boss_buffs(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurBossBuffs(..)) => true,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_cur_boss_buffs(&mut self, v: super::ChallengeBossBuffList::ChallengeBossBuffList) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurBossBuffs(v))
+        self.KKNBOACNCON = ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_cur_boss_buffs(&mut self) -> &mut super::ChallengeBossBuffList::ChallengeBossBuffList {
-        if let ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurBossBuffs(_)) = self.BPIHFAJCLOC {
+        if let ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurBossBuffs(super::ChallengeBossBuffList::ChallengeBossBuffList::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(super::ChallengeBossBuffList::ChallengeBossBuffList::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurBossBuffs(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -134,8 +134,8 @@ impl ChallengeCurBuffInfo {
     // Take field
     pub fn take_cur_boss_buffs(&mut self) -> super::ChallengeBossBuffList::ChallengeBossBuffList {
         if self.has_cur_boss_buffs() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurBossBuffs(v)) => v,
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -160,7 +160,7 @@ impl ChallengeCurBuffInfo {
             ChallengeCurBuffInfo::mut_cur_boss_buffs,
             ChallengeCurBuffInfo::set_cur_boss_buffs,
         ));
-        oneofs.push(challenge_cur_buff_info::BPIHFAJCLOC::generated_oneof_descriptor_data());
+        oneofs.push(challenge_cur_buff_info::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeCurBuffInfo>(
             "ChallengeCurBuffInfo",
             fields,
@@ -179,11 +179,11 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurStoryBuffs(is.read_message()?));
+                74 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(is.read_message()?));
                 },
-                122 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(challenge_cur_buff_info::BPIHFAJCLOC::CurBossBuffs(is.read_message()?));
+                42 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -197,13 +197,13 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.BPIHFAJCLOC {
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &challenge_cur_buff_info::BPIHFAJCLOC::CurStoryBuffs(ref v) => {
+                &challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &challenge_cur_buff_info::BPIHFAJCLOC::CurBossBuffs(ref v) => {
+                &challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -215,13 +215,13 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.BPIHFAJCLOC {
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &challenge_cur_buff_info::BPIHFAJCLOC::CurStoryBuffs(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                &challenge_cur_buff_info::KKNBOACNCON::CurStoryBuffs(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
                 },
-                &challenge_cur_buff_info::BPIHFAJCLOC::CurBossBuffs(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                &challenge_cur_buff_info::KKNBOACNCON::CurBossBuffs(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
                 },
             };
         }
@@ -242,14 +242,14 @@ impl ::protobuf::Message for ChallengeCurBuffInfo {
     }
 
     fn clear(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeCurBuffInfo {
         static instance: ChallengeCurBuffInfo = ChallengeCurBuffInfo {
-            BPIHFAJCLOC: ::std::option::Option::None,
+            KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -278,27 +278,27 @@ pub mod challenge_cur_buff_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:ChallengeCurBuffInfo.BPIHFAJCLOC)
-    pub enum BPIHFAJCLOC {
+    // @@protoc_insertion_point(oneof:ChallengeCurBuffInfo.KKNBOACNCON)
+    pub enum KKNBOACNCON {
         // @@protoc_insertion_point(oneof_field:ChallengeCurBuffInfo.cur_story_buffs)
         CurStoryBuffs(super::super::ChallengeStoryBuffList::ChallengeStoryBuffList),
         // @@protoc_insertion_point(oneof_field:ChallengeCurBuffInfo.cur_boss_buffs)
         CurBossBuffs(super::super::ChallengeBossBuffList::ChallengeBossBuffList),
     }
 
-    impl ::protobuf::Oneof for BPIHFAJCLOC {
+    impl ::protobuf::Oneof for KKNBOACNCON {
     }
 
-    impl ::protobuf::OneofFull for BPIHFAJCLOC {
+    impl ::protobuf::OneofFull for KKNBOACNCON {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::ChallengeCurBuffInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("BPIHFAJCLOC").unwrap()).clone()
+            descriptor.get(|| <super::ChallengeCurBuffInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("KKNBOACNCON").unwrap()).clone()
         }
     }
 
-    impl BPIHFAJCLOC {
+    impl KKNBOACNCON {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<BPIHFAJCLOC>("BPIHFAJCLOC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KKNBOACNCON>("KKNBOACNCON")
         }
     }
 }
@@ -306,9 +306,9 @@ pub mod challenge_cur_buff_info {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aChallengeCurBuffInfo.proto\x1a\x1bChallengeBossBuffList.proto\x1a\
     \x1cChallengeStoryBuffList.proto\"\xa8\x01\n\x14ChallengeCurBuffInfo\x12\
-    A\n\x0fcur_story_buffs\x18\x03\x20\x01(\x0b2\x17.ChallengeStoryBuffListH\
-    \0R\rcurStoryBuffs\x12>\n\x0ecur_boss_buffs\x18\x0f\x20\x01(\x0b2\x16.Ch\
-    allengeBossBuffListH\0R\x0ccurBossBuffsB\r\n\x0bBPIHFAJCLOCb\x06proto3\
+    A\n\x0fcur_story_buffs\x18\t\x20\x01(\x0b2\x17.ChallengeStoryBuffListH\0\
+    R\rcurStoryBuffs\x12>\n\x0ecur_boss_buffs\x18\x05\x20\x01(\x0b2\x16.Chal\
+    lengeBossBuffListH\0R\x0ccurBossBuffsB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

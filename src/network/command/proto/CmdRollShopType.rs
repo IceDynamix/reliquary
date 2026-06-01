@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRollShopType)
 pub enum CmdRollShopType {
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.MNCIAAAFPKK_PCPDHELPKEM)
-    MNCIAAAFPKK_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdGetRollShopInfoCsReq)
-    CmdGetRollShopInfoCsReq = 6901,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdDoGachaInRollShopCsReq)
-    CmdDoGachaInRollShopCsReq = 6902,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdGetRollShopInfoScRsp)
-    CmdGetRollShopInfoScRsp = 6920,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdDoGachaInRollShopScRsp)
-    CmdDoGachaInRollShopScRsp = 6910,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdTakeRollShopRewardScRsp)
-    CmdTakeRollShopRewardScRsp = 6908,
-    // @@protoc_insertion_point(enum_value:CmdRollShopType.CmdTakeRollShopRewardCsReq)
-    CmdTakeRollShopRewardCsReq = 6915,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_NLCDGIPGFDJ)
+    OHCMLBPONOB_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_JLMAAPILPFM)
+    OHCMLBPONOB_JLMAAPILPFM = 6906,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_FNHGIIEDMOL)
+    OHCMLBPONOB_FNHGIIEDMOL = 6902,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_OAOLKAMEEJA)
+    OHCMLBPONOB_OAOLKAMEEJA = 6916,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_IHMMENKJJGC)
+    OHCMLBPONOB_IHMMENKJJGC = 6918,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_EOKAIKAJHOP)
+    OHCMLBPONOB_EOKAIKAJHOP = 6919,
+    // @@protoc_insertion_point(enum_value:CmdRollShopType.OHCMLBPONOB_MGKPBJDFEFH)
+    OHCMLBPONOB_MGKPBJDFEFH = 6920,
 }
 
 impl ::protobuf::Enum for CmdRollShopType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for CmdRollShopType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRollShopType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRollShopType::MNCIAAAFPKK_PCPDHELPKEM),
-            6901 => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoCsReq),
-            6902 => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopCsReq),
-            6920 => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoScRsp),
-            6910 => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopScRsp),
-            6908 => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardScRsp),
-            6915 => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardCsReq),
+            0 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_NLCDGIPGFDJ),
+            6906 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM),
+            6902 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL),
+            6916 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA),
+            6918 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC),
+            6919 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP),
+            6920 => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_MGKPBJDFEFH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRollShopType> {
         match str {
-            "MNCIAAAFPKK_PCPDHELPKEM" => ::std::option::Option::Some(CmdRollShopType::MNCIAAAFPKK_PCPDHELPKEM),
-            "CmdGetRollShopInfoCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoCsReq),
-            "CmdDoGachaInRollShopCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopCsReq),
-            "CmdGetRollShopInfoScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdGetRollShopInfoScRsp),
-            "CmdDoGachaInRollShopScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdDoGachaInRollShopScRsp),
-            "CmdTakeRollShopRewardScRsp" => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardScRsp),
-            "CmdTakeRollShopRewardCsReq" => ::std::option::Option::Some(CmdRollShopType::CmdTakeRollShopRewardCsReq),
+            "OHCMLBPONOB_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_NLCDGIPGFDJ),
+            "OHCMLBPONOB_JLMAAPILPFM" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM),
+            "OHCMLBPONOB_FNHGIIEDMOL" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL),
+            "OHCMLBPONOB_OAOLKAMEEJA" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA),
+            "OHCMLBPONOB_IHMMENKJJGC" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC),
+            "OHCMLBPONOB_EOKAIKAJHOP" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP),
+            "OHCMLBPONOB_MGKPBJDFEFH" => ::std::option::Option::Some(CmdRollShopType::OHCMLBPONOB_MGKPBJDFEFH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRollShopType] = &[
-        CmdRollShopType::MNCIAAAFPKK_PCPDHELPKEM,
-        CmdRollShopType::CmdGetRollShopInfoCsReq,
-        CmdRollShopType::CmdDoGachaInRollShopCsReq,
-        CmdRollShopType::CmdGetRollShopInfoScRsp,
-        CmdRollShopType::CmdDoGachaInRollShopScRsp,
-        CmdRollShopType::CmdTakeRollShopRewardScRsp,
-        CmdRollShopType::CmdTakeRollShopRewardCsReq,
+        CmdRollShopType::OHCMLBPONOB_NLCDGIPGFDJ,
+        CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM,
+        CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL,
+        CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA,
+        CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC,
+        CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP,
+        CmdRollShopType::OHCMLBPONOB_MGKPBJDFEFH,
     ];
 }
 
@@ -95,13 +95,13 @@ impl ::protobuf::EnumFull for CmdRollShopType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRollShopType::MNCIAAAFPKK_PCPDHELPKEM => 0,
-            CmdRollShopType::CmdGetRollShopInfoCsReq => 1,
-            CmdRollShopType::CmdDoGachaInRollShopCsReq => 2,
-            CmdRollShopType::CmdGetRollShopInfoScRsp => 3,
-            CmdRollShopType::CmdDoGachaInRollShopScRsp => 4,
-            CmdRollShopType::CmdTakeRollShopRewardScRsp => 5,
-            CmdRollShopType::CmdTakeRollShopRewardCsReq => 6,
+            CmdRollShopType::OHCMLBPONOB_NLCDGIPGFDJ => 0,
+            CmdRollShopType::OHCMLBPONOB_JLMAAPILPFM => 1,
+            CmdRollShopType::OHCMLBPONOB_FNHGIIEDMOL => 2,
+            CmdRollShopType::OHCMLBPONOB_OAOLKAMEEJA => 3,
+            CmdRollShopType::OHCMLBPONOB_IHMMENKJJGC => 4,
+            CmdRollShopType::OHCMLBPONOB_EOKAIKAJHOP => 5,
+            CmdRollShopType::OHCMLBPONOB_MGKPBJDFEFH => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,7 +109,7 @@ impl ::protobuf::EnumFull for CmdRollShopType {
 
 impl ::std::default::Default for CmdRollShopType {
     fn default() -> Self {
-        CmdRollShopType::MNCIAAAFPKK_PCPDHELPKEM
+        CmdRollShopType::OHCMLBPONOB_NLCDGIPGFDJ
     }
 }
 
@@ -120,12 +120,12 @@ impl CmdRollShopType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdRollShopType.proto*\xec\x01\n\x0fCmdRollShopType\x12\x1b\n\x17M\
-    NCIAAAFPKK_PCPDHELPKEM\x10\0\x12\x1c\n\x17CmdGetRollShopInfoCsReq\x10\
-    \xf55\x12\x1e\n\x19CmdDoGachaInRollShopCsReq\x10\xf65\x12\x1c\n\x17CmdGe\
-    tRollShopInfoScRsp\x10\x886\x12\x1e\n\x19CmdDoGachaInRollShopScRsp\x10\
-    \xfe5\x12\x1f\n\x1aCmdTakeRollShopRewardScRsp\x10\xfc5\x12\x1f\n\x1aCmdT\
-    akeRollShopRewardCsReq\x10\x836b\x06proto3\
+    \n\x15CmdRollShopType.proto*\xe2\x01\n\x0fCmdRollShopType\x12\x1b\n\x17O\
+    HCMLBPONOB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17OHCMLBPONOB_JLMAAPILPFM\x10\
+    \xfa5\x12\x1c\n\x17OHCMLBPONOB_FNHGIIEDMOL\x10\xf65\x12\x1c\n\x17OHCMLBP\
+    ONOB_OAOLKAMEEJA\x10\x846\x12\x1c\n\x17OHCMLBPONOB_IHMMENKJJGC\x10\x866\
+    \x12\x1c\n\x17OHCMLBPONOB_EOKAIKAJHOP\x10\x876\x12\x1c\n\x17OHCMLBPONOB_\
+    MGKPBJDFEFH\x10\x886b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

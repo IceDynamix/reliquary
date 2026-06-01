@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GridFightEquipCraftSource)
 pub enum GridFightEquipCraftSource {
-    // @@protoc_insertion_point(enum_value:GridFightEquipCraftSource.BNMLEPCNCIH_AIALPDEJIJK)
-    BNMLEPCNCIH_AIALPDEJIJK = 0,
-    // @@protoc_insertion_point(enum_value:GridFightEquipCraftSource.BNMLEPCNCIH_LHNMMCFCJGD)
-    BNMLEPCNCIH_LHNMMCFCJGD = 1,
-    // @@protoc_insertion_point(enum_value:GridFightEquipCraftSource.BNMLEPCNCIH_ALINJDNGKCE)
-    BNMLEPCNCIH_ALINJDNGKCE = 2,
-    // @@protoc_insertion_point(enum_value:GridFightEquipCraftSource.BNMLEPCNCIH_HGEAEEGMBAP)
-    BNMLEPCNCIH_HGEAEEGMBAP = 3,
+    // @@protoc_insertion_point(enum_value:GridFightEquipCraftSource.ACNPGGHPDJB_GDDBKIPOJFK)
+    ACNPGGHPDJB_GDDBKIPOJFK = 0,
+    // @@protoc_insertion_point(enum_value:GridFightEquipCraftSource.ACNPGGHPDJB_NAADGNAMIOK)
+    ACNPGGHPDJB_NAADGNAMIOK = 1,
+    // @@protoc_insertion_point(enum_value:GridFightEquipCraftSource.ACNPGGHPDJB_LEPMGCFIMGD)
+    ACNPGGHPDJB_LEPMGCFIMGD = 2,
+    // @@protoc_insertion_point(enum_value:GridFightEquipCraftSource.ACNPGGHPDJB_KEKMKPPODEG)
+    ACNPGGHPDJB_KEKMKPPODEG = 3,
 }
 
 impl ::protobuf::Enum for GridFightEquipCraftSource {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for GridFightEquipCraftSource {
 
     fn from_i32(value: i32) -> ::std::option::Option<GridFightEquipCraftSource> {
         match value {
-            0 => ::std::option::Option::Some(GridFightEquipCraftSource::BNMLEPCNCIH_AIALPDEJIJK),
-            1 => ::std::option::Option::Some(GridFightEquipCraftSource::BNMLEPCNCIH_LHNMMCFCJGD),
-            2 => ::std::option::Option::Some(GridFightEquipCraftSource::BNMLEPCNCIH_ALINJDNGKCE),
-            3 => ::std::option::Option::Some(GridFightEquipCraftSource::BNMLEPCNCIH_HGEAEEGMBAP),
+            0 => ::std::option::Option::Some(GridFightEquipCraftSource::ACNPGGHPDJB_GDDBKIPOJFK),
+            1 => ::std::option::Option::Some(GridFightEquipCraftSource::ACNPGGHPDJB_NAADGNAMIOK),
+            2 => ::std::option::Option::Some(GridFightEquipCraftSource::ACNPGGHPDJB_LEPMGCFIMGD),
+            3 => ::std::option::Option::Some(GridFightEquipCraftSource::ACNPGGHPDJB_KEKMKPPODEG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GridFightEquipCraftSource> {
         match str {
-            "BNMLEPCNCIH_AIALPDEJIJK" => ::std::option::Option::Some(GridFightEquipCraftSource::BNMLEPCNCIH_AIALPDEJIJK),
-            "BNMLEPCNCIH_LHNMMCFCJGD" => ::std::option::Option::Some(GridFightEquipCraftSource::BNMLEPCNCIH_LHNMMCFCJGD),
-            "BNMLEPCNCIH_ALINJDNGKCE" => ::std::option::Option::Some(GridFightEquipCraftSource::BNMLEPCNCIH_ALINJDNGKCE),
-            "BNMLEPCNCIH_HGEAEEGMBAP" => ::std::option::Option::Some(GridFightEquipCraftSource::BNMLEPCNCIH_HGEAEEGMBAP),
+            "ACNPGGHPDJB_GDDBKIPOJFK" => ::std::option::Option::Some(GridFightEquipCraftSource::ACNPGGHPDJB_GDDBKIPOJFK),
+            "ACNPGGHPDJB_NAADGNAMIOK" => ::std::option::Option::Some(GridFightEquipCraftSource::ACNPGGHPDJB_NAADGNAMIOK),
+            "ACNPGGHPDJB_LEPMGCFIMGD" => ::std::option::Option::Some(GridFightEquipCraftSource::ACNPGGHPDJB_LEPMGCFIMGD),
+            "ACNPGGHPDJB_KEKMKPPODEG" => ::std::option::Option::Some(GridFightEquipCraftSource::ACNPGGHPDJB_KEKMKPPODEG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GridFightEquipCraftSource] = &[
-        GridFightEquipCraftSource::BNMLEPCNCIH_AIALPDEJIJK,
-        GridFightEquipCraftSource::BNMLEPCNCIH_LHNMMCFCJGD,
-        GridFightEquipCraftSource::BNMLEPCNCIH_ALINJDNGKCE,
-        GridFightEquipCraftSource::BNMLEPCNCIH_HGEAEEGMBAP,
+        GridFightEquipCraftSource::ACNPGGHPDJB_GDDBKIPOJFK,
+        GridFightEquipCraftSource::ACNPGGHPDJB_NAADGNAMIOK,
+        GridFightEquipCraftSource::ACNPGGHPDJB_LEPMGCFIMGD,
+        GridFightEquipCraftSource::ACNPGGHPDJB_KEKMKPPODEG,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for GridFightEquipCraftSource {
 
 impl ::std::default::Default for GridFightEquipCraftSource {
     fn default() -> Self {
-        GridFightEquipCraftSource::BNMLEPCNCIH_AIALPDEJIJK
+        GridFightEquipCraftSource::ACNPGGHPDJB_GDDBKIPOJFK
     }
 }
 
@@ -98,9 +98,9 @@ impl GridFightEquipCraftSource {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGridFightEquipCraftSource.proto*\x8f\x01\n\x19GridFightEquipCraftS\
-    ource\x12\x1b\n\x17BNMLEPCNCIH_AIALPDEJIJK\x10\0\x12\x1b\n\x17BNMLEPCNCI\
-    H_LHNMMCFCJGD\x10\x01\x12\x1b\n\x17BNMLEPCNCIH_ALINJDNGKCE\x10\x02\x12\
-    \x1b\n\x17BNMLEPCNCIH_HGEAEEGMBAP\x10\x03b\x06proto3\
+    ource\x12\x1b\n\x17ACNPGGHPDJB_GDDBKIPOJFK\x10\0\x12\x1b\n\x17ACNPGGHPDJ\
+    B_NAADGNAMIOK\x10\x01\x12\x1b\n\x17ACNPGGHPDJB_LEPMGCFIMGD\x10\x02\x12\
+    \x1b\n\x17ACNPGGHPDJB_KEKMKPPODEG\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

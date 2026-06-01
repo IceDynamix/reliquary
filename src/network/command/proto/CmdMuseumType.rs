@@ -27,66 +27,66 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMuseumType)
 pub enum CmdMuseumType {
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.ODOODGHAIJN_PCPDHELPKEM)
-    ODOODGHAIJN_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSetStuffToAreaCsReq)
-    CmdSetStuffToAreaCsReq = 4314,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdUpgradeAreaStatCsReq)
-    CmdUpgradeAreaStatCsReq = 4304,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdIBFCJBCKENI)
-    CmdIBFCJBCKENI = 4400,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdFinishCurTurnCsReq)
-    CmdFinishCurTurnCsReq = 4339,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumRandomEventSelectCsReq)
-    CmdMuseumRandomEventSelectCsReq = 4358,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSyncMuseumTargetStartNotify)
-    CmdSyncMuseumTargetStartNotify = 4389,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSetStuffToAreaScRsp)
-    CmdSetStuffToAreaScRsp = 4318,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSyncMuseumRandomEventStartScNotify)
-    CmdSyncMuseumRandomEventStartScNotify = 4333,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdTakeCollectRewardRsp)
-    CmdTakeCollectRewardRsp = 4328,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdGetMuseumInfoCsReq)
-    CmdGetMuseumInfoCsReq = 4391,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdBuyNpcStuffScRsp)
-    CmdBuyNpcStuffScRsp = 4395,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdTakeCollectRewardCsReq)
-    CmdTakeCollectRewardCsReq = 4321,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumRandomEventSelectScRsp)
-    CmdMuseumRandomEventSelectScRsp = 4344,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSyncMuseumFundsChangedScNotify)
-    CmdSyncMuseumFundsChangedScNotify = 4332,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumRandomEventQueryCsReq)
-    CmdMuseumRandomEventQueryCsReq = 4361,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdFinishCurTurnScRsp)
-    CmdFinishCurTurnScRsp = 4301,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSyncGetExhibitScNotify)
-    CmdSyncGetExhibitScNotify = 4326,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdGetMuseumInfoScRsp)
-    CmdGetMuseumInfoScRsp = 4310,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdUpgradeAreaCsReq)
-    CmdUpgradeAreaCsReq = 4374,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSyncMuseumTargetRewardNotify)
-    CmdSyncMuseumTargetRewardNotify = 4357,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdBuyNpcStuffCsReq)
-    CmdBuyNpcStuffCsReq = 4394,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdUpgradeAreaStatScRsp)
-    CmdUpgradeAreaStatScRsp = 4338,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdRemoveStuffFromAreaScRsp)
-    CmdRemoveStuffFromAreaScRsp = 4398,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdRemoveStuffFromAreaCsReq)
-    CmdRemoveStuffFromAreaCsReq = 4309,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdMuseumRandomEventQueryScRsp)
-    CmdMuseumRandomEventQueryScRsp = 4307,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSyncMuseumInfoChangedScNotify)
-    CmdSyncMuseumInfoChangedScNotify = 4372,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdUpgradeAreaScRsp)
-    CmdUpgradeAreaScRsp = 4337,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSyncMuseumTargetMissionFinishNotify)
-    CmdSyncMuseumTargetMissionFinishNotify = 4396,
-    // @@protoc_insertion_point(enum_value:CmdMuseumType.CmdSyncGetStuffScNotify)
-    CmdSyncGetStuffScNotify = 4363,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_NLCDGIPGFDJ)
+    CIILMLFIACA_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_DEOKEGAAJMH)
+    CIILMLFIACA_DEOKEGAAJMH = 4324,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_NKEHOBMLIID)
+    CIILMLFIACA_NKEHOBMLIID = 4309,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_JJNIFCCLJKB)
+    CIILMLFIACA_JJNIFCCLJKB = 4373,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_ABJMPLEDOBE)
+    CIILMLFIACA_ABJMPLEDOBE = 4378,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_HAHOKHBFAOG)
+    CIILMLFIACA_HAHOKHBFAOG = 4329,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_IPEGGPHNONJ)
+    CIILMLFIACA_IPEGGPHNONJ = 4338,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_EBOFHIBPECF)
+    CIILMLFIACA_EBOFHIBPECF = 4359,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_ABPEALPNEOK)
+    CIILMLFIACA_ABPEALPNEOK = 4352,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_ELACELNLHCM)
+    CIILMLFIACA_ELACELNLHCM = 4361,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_LLFPNMDNMKM)
+    CIILMLFIACA_LLFPNMDNMKM = 4387,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_JAHIGLFGFNM)
+    CIILMLFIACA_JAHIGLFGFNM = 4315,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_BJIEGJBKNGG)
+    CIILMLFIACA_BJIEGJBKNGG = 4380,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_EMKFLADECGM)
+    CIILMLFIACA_EMKFLADECGM = 4371,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_LPDGONBCHNJ)
+    CIILMLFIACA_LPDGONBCHNJ = 4348,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_BAFKPGEJINI)
+    CIILMLFIACA_BAFKPGEJINI = 4327,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_CDHKEBKODNE)
+    CIILMLFIACA_CDHKEBKODNE = 4374,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_GECAMJJBEFJ)
+    CIILMLFIACA_GECAMJJBEFJ = 4312,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_HAACGKDBCOH)
+    CIILMLFIACA_HAACGKDBCOH = 4336,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_NBAPAJAOCJM)
+    CIILMLFIACA_NBAPAJAOCJM = 4303,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_PIPNOPLDAKA)
+    CIILMLFIACA_PIPNOPLDAKA = 4376,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_KADNHHELJPB)
+    CIILMLFIACA_KADNHHELJPB = 4383,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_LHJKMOPGDGF)
+    CIILMLFIACA_LHJKMOPGDGF = 4381,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_FJFECCHBGEK)
+    CIILMLFIACA_FJFECCHBGEK = 4310,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_CEPFGCAKGKM)
+    CIILMLFIACA_CEPFGCAKGKM = 4354,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_PGDBMGAFCCN)
+    CIILMLFIACA_PGDBMGAFCCN = 4366,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_JLDLICPMOCO)
+    CIILMLFIACA_JLDLICPMOCO = 4342,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_OAKDDHGBLDI)
+    CIILMLFIACA_OAKDDHGBLDI = 4392,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_HFIAHCAPDLE)
+    CIILMLFIACA_HFIAHCAPDLE = 4313,
+    // @@protoc_insertion_point(enum_value:CmdMuseumType.CIILMLFIACA_IJLDNHCKAJA)
+    CIILMLFIACA_IJLDNHCKAJA = 4330,
 }
 
 impl ::protobuf::Enum for CmdMuseumType {
@@ -98,107 +98,107 @@ impl ::protobuf::Enum for CmdMuseumType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMuseumType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMuseumType::ODOODGHAIJN_PCPDHELPKEM),
-            4314 => ::std::option::Option::Some(CmdMuseumType::CmdSetStuffToAreaCsReq),
-            4304 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaStatCsReq),
-            4400 => ::std::option::Option::Some(CmdMuseumType::CmdIBFCJBCKENI),
-            4339 => ::std::option::Option::Some(CmdMuseumType::CmdFinishCurTurnCsReq),
-            4358 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventSelectCsReq),
-            4389 => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumTargetStartNotify),
-            4318 => ::std::option::Option::Some(CmdMuseumType::CmdSetStuffToAreaScRsp),
-            4333 => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumRandomEventStartScNotify),
-            4328 => ::std::option::Option::Some(CmdMuseumType::CmdTakeCollectRewardRsp),
-            4391 => ::std::option::Option::Some(CmdMuseumType::CmdGetMuseumInfoCsReq),
-            4395 => ::std::option::Option::Some(CmdMuseumType::CmdBuyNpcStuffScRsp),
-            4321 => ::std::option::Option::Some(CmdMuseumType::CmdTakeCollectRewardCsReq),
-            4344 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventSelectScRsp),
-            4332 => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumFundsChangedScNotify),
-            4361 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventQueryCsReq),
-            4301 => ::std::option::Option::Some(CmdMuseumType::CmdFinishCurTurnScRsp),
-            4326 => ::std::option::Option::Some(CmdMuseumType::CmdSyncGetExhibitScNotify),
-            4310 => ::std::option::Option::Some(CmdMuseumType::CmdGetMuseumInfoScRsp),
-            4374 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaCsReq),
-            4357 => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumTargetRewardNotify),
-            4394 => ::std::option::Option::Some(CmdMuseumType::CmdBuyNpcStuffCsReq),
-            4338 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaStatScRsp),
-            4398 => ::std::option::Option::Some(CmdMuseumType::CmdRemoveStuffFromAreaScRsp),
-            4309 => ::std::option::Option::Some(CmdMuseumType::CmdRemoveStuffFromAreaCsReq),
-            4307 => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventQueryScRsp),
-            4372 => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumInfoChangedScNotify),
-            4337 => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaScRsp),
-            4396 => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumTargetMissionFinishNotify),
-            4363 => ::std::option::Option::Some(CmdMuseumType::CmdSyncGetStuffScNotify),
+            0 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_NLCDGIPGFDJ),
+            4324 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_DEOKEGAAJMH),
+            4309 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_NKEHOBMLIID),
+            4373 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_JJNIFCCLJKB),
+            4378 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_ABJMPLEDOBE),
+            4329 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_HAHOKHBFAOG),
+            4338 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_IPEGGPHNONJ),
+            4359 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_EBOFHIBPECF),
+            4352 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_ABPEALPNEOK),
+            4361 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_ELACELNLHCM),
+            4387 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_LLFPNMDNMKM),
+            4315 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_JAHIGLFGFNM),
+            4380 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_BJIEGJBKNGG),
+            4371 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_EMKFLADECGM),
+            4348 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_LPDGONBCHNJ),
+            4327 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_BAFKPGEJINI),
+            4374 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_CDHKEBKODNE),
+            4312 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_GECAMJJBEFJ),
+            4336 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_HAACGKDBCOH),
+            4303 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_NBAPAJAOCJM),
+            4376 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_PIPNOPLDAKA),
+            4383 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_KADNHHELJPB),
+            4381 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_LHJKMOPGDGF),
+            4310 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_FJFECCHBGEK),
+            4354 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_CEPFGCAKGKM),
+            4366 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_PGDBMGAFCCN),
+            4342 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_JLDLICPMOCO),
+            4392 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_OAKDDHGBLDI),
+            4313 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_HFIAHCAPDLE),
+            4330 => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_IJLDNHCKAJA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMuseumType> {
         match str {
-            "ODOODGHAIJN_PCPDHELPKEM" => ::std::option::Option::Some(CmdMuseumType::ODOODGHAIJN_PCPDHELPKEM),
-            "CmdSetStuffToAreaCsReq" => ::std::option::Option::Some(CmdMuseumType::CmdSetStuffToAreaCsReq),
-            "CmdUpgradeAreaStatCsReq" => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaStatCsReq),
-            "CmdIBFCJBCKENI" => ::std::option::Option::Some(CmdMuseumType::CmdIBFCJBCKENI),
-            "CmdFinishCurTurnCsReq" => ::std::option::Option::Some(CmdMuseumType::CmdFinishCurTurnCsReq),
-            "CmdMuseumRandomEventSelectCsReq" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventSelectCsReq),
-            "CmdSyncMuseumTargetStartNotify" => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumTargetStartNotify),
-            "CmdSetStuffToAreaScRsp" => ::std::option::Option::Some(CmdMuseumType::CmdSetStuffToAreaScRsp),
-            "CmdSyncMuseumRandomEventStartScNotify" => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumRandomEventStartScNotify),
-            "CmdTakeCollectRewardRsp" => ::std::option::Option::Some(CmdMuseumType::CmdTakeCollectRewardRsp),
-            "CmdGetMuseumInfoCsReq" => ::std::option::Option::Some(CmdMuseumType::CmdGetMuseumInfoCsReq),
-            "CmdBuyNpcStuffScRsp" => ::std::option::Option::Some(CmdMuseumType::CmdBuyNpcStuffScRsp),
-            "CmdTakeCollectRewardCsReq" => ::std::option::Option::Some(CmdMuseumType::CmdTakeCollectRewardCsReq),
-            "CmdMuseumRandomEventSelectScRsp" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventSelectScRsp),
-            "CmdSyncMuseumFundsChangedScNotify" => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumFundsChangedScNotify),
-            "CmdMuseumRandomEventQueryCsReq" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventQueryCsReq),
-            "CmdFinishCurTurnScRsp" => ::std::option::Option::Some(CmdMuseumType::CmdFinishCurTurnScRsp),
-            "CmdSyncGetExhibitScNotify" => ::std::option::Option::Some(CmdMuseumType::CmdSyncGetExhibitScNotify),
-            "CmdGetMuseumInfoScRsp" => ::std::option::Option::Some(CmdMuseumType::CmdGetMuseumInfoScRsp),
-            "CmdUpgradeAreaCsReq" => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaCsReq),
-            "CmdSyncMuseumTargetRewardNotify" => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumTargetRewardNotify),
-            "CmdBuyNpcStuffCsReq" => ::std::option::Option::Some(CmdMuseumType::CmdBuyNpcStuffCsReq),
-            "CmdUpgradeAreaStatScRsp" => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaStatScRsp),
-            "CmdRemoveStuffFromAreaScRsp" => ::std::option::Option::Some(CmdMuseumType::CmdRemoveStuffFromAreaScRsp),
-            "CmdRemoveStuffFromAreaCsReq" => ::std::option::Option::Some(CmdMuseumType::CmdRemoveStuffFromAreaCsReq),
-            "CmdMuseumRandomEventQueryScRsp" => ::std::option::Option::Some(CmdMuseumType::CmdMuseumRandomEventQueryScRsp),
-            "CmdSyncMuseumInfoChangedScNotify" => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumInfoChangedScNotify),
-            "CmdUpgradeAreaScRsp" => ::std::option::Option::Some(CmdMuseumType::CmdUpgradeAreaScRsp),
-            "CmdSyncMuseumTargetMissionFinishNotify" => ::std::option::Option::Some(CmdMuseumType::CmdSyncMuseumTargetMissionFinishNotify),
-            "CmdSyncGetStuffScNotify" => ::std::option::Option::Some(CmdMuseumType::CmdSyncGetStuffScNotify),
+            "CIILMLFIACA_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_NLCDGIPGFDJ),
+            "CIILMLFIACA_DEOKEGAAJMH" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_DEOKEGAAJMH),
+            "CIILMLFIACA_NKEHOBMLIID" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_NKEHOBMLIID),
+            "CIILMLFIACA_JJNIFCCLJKB" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_JJNIFCCLJKB),
+            "CIILMLFIACA_ABJMPLEDOBE" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_ABJMPLEDOBE),
+            "CIILMLFIACA_HAHOKHBFAOG" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_HAHOKHBFAOG),
+            "CIILMLFIACA_IPEGGPHNONJ" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_IPEGGPHNONJ),
+            "CIILMLFIACA_EBOFHIBPECF" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_EBOFHIBPECF),
+            "CIILMLFIACA_ABPEALPNEOK" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_ABPEALPNEOK),
+            "CIILMLFIACA_ELACELNLHCM" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_ELACELNLHCM),
+            "CIILMLFIACA_LLFPNMDNMKM" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_LLFPNMDNMKM),
+            "CIILMLFIACA_JAHIGLFGFNM" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_JAHIGLFGFNM),
+            "CIILMLFIACA_BJIEGJBKNGG" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_BJIEGJBKNGG),
+            "CIILMLFIACA_EMKFLADECGM" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_EMKFLADECGM),
+            "CIILMLFIACA_LPDGONBCHNJ" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_LPDGONBCHNJ),
+            "CIILMLFIACA_BAFKPGEJINI" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_BAFKPGEJINI),
+            "CIILMLFIACA_CDHKEBKODNE" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_CDHKEBKODNE),
+            "CIILMLFIACA_GECAMJJBEFJ" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_GECAMJJBEFJ),
+            "CIILMLFIACA_HAACGKDBCOH" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_HAACGKDBCOH),
+            "CIILMLFIACA_NBAPAJAOCJM" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_NBAPAJAOCJM),
+            "CIILMLFIACA_PIPNOPLDAKA" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_PIPNOPLDAKA),
+            "CIILMLFIACA_KADNHHELJPB" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_KADNHHELJPB),
+            "CIILMLFIACA_LHJKMOPGDGF" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_LHJKMOPGDGF),
+            "CIILMLFIACA_FJFECCHBGEK" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_FJFECCHBGEK),
+            "CIILMLFIACA_CEPFGCAKGKM" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_CEPFGCAKGKM),
+            "CIILMLFIACA_PGDBMGAFCCN" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_PGDBMGAFCCN),
+            "CIILMLFIACA_JLDLICPMOCO" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_JLDLICPMOCO),
+            "CIILMLFIACA_OAKDDHGBLDI" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_OAKDDHGBLDI),
+            "CIILMLFIACA_HFIAHCAPDLE" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_HFIAHCAPDLE),
+            "CIILMLFIACA_IJLDNHCKAJA" => ::std::option::Option::Some(CmdMuseumType::CIILMLFIACA_IJLDNHCKAJA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMuseumType] = &[
-        CmdMuseumType::ODOODGHAIJN_PCPDHELPKEM,
-        CmdMuseumType::CmdSetStuffToAreaCsReq,
-        CmdMuseumType::CmdUpgradeAreaStatCsReq,
-        CmdMuseumType::CmdIBFCJBCKENI,
-        CmdMuseumType::CmdFinishCurTurnCsReq,
-        CmdMuseumType::CmdMuseumRandomEventSelectCsReq,
-        CmdMuseumType::CmdSyncMuseumTargetStartNotify,
-        CmdMuseumType::CmdSetStuffToAreaScRsp,
-        CmdMuseumType::CmdSyncMuseumRandomEventStartScNotify,
-        CmdMuseumType::CmdTakeCollectRewardRsp,
-        CmdMuseumType::CmdGetMuseumInfoCsReq,
-        CmdMuseumType::CmdBuyNpcStuffScRsp,
-        CmdMuseumType::CmdTakeCollectRewardCsReq,
-        CmdMuseumType::CmdMuseumRandomEventSelectScRsp,
-        CmdMuseumType::CmdSyncMuseumFundsChangedScNotify,
-        CmdMuseumType::CmdMuseumRandomEventQueryCsReq,
-        CmdMuseumType::CmdFinishCurTurnScRsp,
-        CmdMuseumType::CmdSyncGetExhibitScNotify,
-        CmdMuseumType::CmdGetMuseumInfoScRsp,
-        CmdMuseumType::CmdUpgradeAreaCsReq,
-        CmdMuseumType::CmdSyncMuseumTargetRewardNotify,
-        CmdMuseumType::CmdBuyNpcStuffCsReq,
-        CmdMuseumType::CmdUpgradeAreaStatScRsp,
-        CmdMuseumType::CmdRemoveStuffFromAreaScRsp,
-        CmdMuseumType::CmdRemoveStuffFromAreaCsReq,
-        CmdMuseumType::CmdMuseumRandomEventQueryScRsp,
-        CmdMuseumType::CmdSyncMuseumInfoChangedScNotify,
-        CmdMuseumType::CmdUpgradeAreaScRsp,
-        CmdMuseumType::CmdSyncMuseumTargetMissionFinishNotify,
-        CmdMuseumType::CmdSyncGetStuffScNotify,
+        CmdMuseumType::CIILMLFIACA_NLCDGIPGFDJ,
+        CmdMuseumType::CIILMLFIACA_DEOKEGAAJMH,
+        CmdMuseumType::CIILMLFIACA_NKEHOBMLIID,
+        CmdMuseumType::CIILMLFIACA_JJNIFCCLJKB,
+        CmdMuseumType::CIILMLFIACA_ABJMPLEDOBE,
+        CmdMuseumType::CIILMLFIACA_HAHOKHBFAOG,
+        CmdMuseumType::CIILMLFIACA_IPEGGPHNONJ,
+        CmdMuseumType::CIILMLFIACA_EBOFHIBPECF,
+        CmdMuseumType::CIILMLFIACA_ABPEALPNEOK,
+        CmdMuseumType::CIILMLFIACA_ELACELNLHCM,
+        CmdMuseumType::CIILMLFIACA_LLFPNMDNMKM,
+        CmdMuseumType::CIILMLFIACA_JAHIGLFGFNM,
+        CmdMuseumType::CIILMLFIACA_BJIEGJBKNGG,
+        CmdMuseumType::CIILMLFIACA_EMKFLADECGM,
+        CmdMuseumType::CIILMLFIACA_LPDGONBCHNJ,
+        CmdMuseumType::CIILMLFIACA_BAFKPGEJINI,
+        CmdMuseumType::CIILMLFIACA_CDHKEBKODNE,
+        CmdMuseumType::CIILMLFIACA_GECAMJJBEFJ,
+        CmdMuseumType::CIILMLFIACA_HAACGKDBCOH,
+        CmdMuseumType::CIILMLFIACA_NBAPAJAOCJM,
+        CmdMuseumType::CIILMLFIACA_PIPNOPLDAKA,
+        CmdMuseumType::CIILMLFIACA_KADNHHELJPB,
+        CmdMuseumType::CIILMLFIACA_LHJKMOPGDGF,
+        CmdMuseumType::CIILMLFIACA_FJFECCHBGEK,
+        CmdMuseumType::CIILMLFIACA_CEPFGCAKGKM,
+        CmdMuseumType::CIILMLFIACA_PGDBMGAFCCN,
+        CmdMuseumType::CIILMLFIACA_JLDLICPMOCO,
+        CmdMuseumType::CIILMLFIACA_OAKDDHGBLDI,
+        CmdMuseumType::CIILMLFIACA_HFIAHCAPDLE,
+        CmdMuseumType::CIILMLFIACA_IJLDNHCKAJA,
     ];
 }
 
@@ -210,36 +210,36 @@ impl ::protobuf::EnumFull for CmdMuseumType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMuseumType::ODOODGHAIJN_PCPDHELPKEM => 0,
-            CmdMuseumType::CmdSetStuffToAreaCsReq => 1,
-            CmdMuseumType::CmdUpgradeAreaStatCsReq => 2,
-            CmdMuseumType::CmdIBFCJBCKENI => 3,
-            CmdMuseumType::CmdFinishCurTurnCsReq => 4,
-            CmdMuseumType::CmdMuseumRandomEventSelectCsReq => 5,
-            CmdMuseumType::CmdSyncMuseumTargetStartNotify => 6,
-            CmdMuseumType::CmdSetStuffToAreaScRsp => 7,
-            CmdMuseumType::CmdSyncMuseumRandomEventStartScNotify => 8,
-            CmdMuseumType::CmdTakeCollectRewardRsp => 9,
-            CmdMuseumType::CmdGetMuseumInfoCsReq => 10,
-            CmdMuseumType::CmdBuyNpcStuffScRsp => 11,
-            CmdMuseumType::CmdTakeCollectRewardCsReq => 12,
-            CmdMuseumType::CmdMuseumRandomEventSelectScRsp => 13,
-            CmdMuseumType::CmdSyncMuseumFundsChangedScNotify => 14,
-            CmdMuseumType::CmdMuseumRandomEventQueryCsReq => 15,
-            CmdMuseumType::CmdFinishCurTurnScRsp => 16,
-            CmdMuseumType::CmdSyncGetExhibitScNotify => 17,
-            CmdMuseumType::CmdGetMuseumInfoScRsp => 18,
-            CmdMuseumType::CmdUpgradeAreaCsReq => 19,
-            CmdMuseumType::CmdSyncMuseumTargetRewardNotify => 20,
-            CmdMuseumType::CmdBuyNpcStuffCsReq => 21,
-            CmdMuseumType::CmdUpgradeAreaStatScRsp => 22,
-            CmdMuseumType::CmdRemoveStuffFromAreaScRsp => 23,
-            CmdMuseumType::CmdRemoveStuffFromAreaCsReq => 24,
-            CmdMuseumType::CmdMuseumRandomEventQueryScRsp => 25,
-            CmdMuseumType::CmdSyncMuseumInfoChangedScNotify => 26,
-            CmdMuseumType::CmdUpgradeAreaScRsp => 27,
-            CmdMuseumType::CmdSyncMuseumTargetMissionFinishNotify => 28,
-            CmdMuseumType::CmdSyncGetStuffScNotify => 29,
+            CmdMuseumType::CIILMLFIACA_NLCDGIPGFDJ => 0,
+            CmdMuseumType::CIILMLFIACA_DEOKEGAAJMH => 1,
+            CmdMuseumType::CIILMLFIACA_NKEHOBMLIID => 2,
+            CmdMuseumType::CIILMLFIACA_JJNIFCCLJKB => 3,
+            CmdMuseumType::CIILMLFIACA_ABJMPLEDOBE => 4,
+            CmdMuseumType::CIILMLFIACA_HAHOKHBFAOG => 5,
+            CmdMuseumType::CIILMLFIACA_IPEGGPHNONJ => 6,
+            CmdMuseumType::CIILMLFIACA_EBOFHIBPECF => 7,
+            CmdMuseumType::CIILMLFIACA_ABPEALPNEOK => 8,
+            CmdMuseumType::CIILMLFIACA_ELACELNLHCM => 9,
+            CmdMuseumType::CIILMLFIACA_LLFPNMDNMKM => 10,
+            CmdMuseumType::CIILMLFIACA_JAHIGLFGFNM => 11,
+            CmdMuseumType::CIILMLFIACA_BJIEGJBKNGG => 12,
+            CmdMuseumType::CIILMLFIACA_EMKFLADECGM => 13,
+            CmdMuseumType::CIILMLFIACA_LPDGONBCHNJ => 14,
+            CmdMuseumType::CIILMLFIACA_BAFKPGEJINI => 15,
+            CmdMuseumType::CIILMLFIACA_CDHKEBKODNE => 16,
+            CmdMuseumType::CIILMLFIACA_GECAMJJBEFJ => 17,
+            CmdMuseumType::CIILMLFIACA_HAACGKDBCOH => 18,
+            CmdMuseumType::CIILMLFIACA_NBAPAJAOCJM => 19,
+            CmdMuseumType::CIILMLFIACA_PIPNOPLDAKA => 20,
+            CmdMuseumType::CIILMLFIACA_KADNHHELJPB => 21,
+            CmdMuseumType::CIILMLFIACA_LHJKMOPGDGF => 22,
+            CmdMuseumType::CIILMLFIACA_FJFECCHBGEK => 23,
+            CmdMuseumType::CIILMLFIACA_CEPFGCAKGKM => 24,
+            CmdMuseumType::CIILMLFIACA_PGDBMGAFCCN => 25,
+            CmdMuseumType::CIILMLFIACA_JLDLICPMOCO => 26,
+            CmdMuseumType::CIILMLFIACA_OAKDDHGBLDI => 27,
+            CmdMuseumType::CIILMLFIACA_HFIAHCAPDLE => 28,
+            CmdMuseumType::CIILMLFIACA_IJLDNHCKAJA => 29,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -247,7 +247,7 @@ impl ::protobuf::EnumFull for CmdMuseumType {
 
 impl ::std::default::Default for CmdMuseumType {
     fn default() -> Self {
-        CmdMuseumType::ODOODGHAIJN_PCPDHELPKEM
+        CmdMuseumType::CIILMLFIACA_NLCDGIPGFDJ
     }
 }
 
@@ -258,27 +258,27 @@ impl CmdMuseumType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdMuseumType.proto*\xd8\x07\n\rCmdMuseumType\x12\x1b\n\x17ODOODGH\
-    AIJN_PCPDHELPKEM\x10\0\x12\x1b\n\x16CmdSetStuffToAreaCsReq\x10\xda!\x12\
-    \x1c\n\x17CmdUpgradeAreaStatCsReq\x10\xd0!\x12\x13\n\x0eCmdIBFCJBCKENI\
-    \x10\xb0\"\x12\x1a\n\x15CmdFinishCurTurnCsReq\x10\xf3!\x12$\n\x1fCmdMuse\
-    umRandomEventSelectCsReq\x10\x86\"\x12#\n\x1eCmdSyncMuseumTargetStartNot\
-    ify\x10\xa5\"\x12\x1b\n\x16CmdSetStuffToAreaScRsp\x10\xde!\x12*\n%CmdSyn\
-    cMuseumRandomEventStartScNotify\x10\xed!\x12\x1c\n\x17CmdTakeCollectRewa\
-    rdRsp\x10\xe8!\x12\x1a\n\x15CmdGetMuseumInfoCsReq\x10\xa7\"\x12\x18\n\
-    \x13CmdBuyNpcStuffScRsp\x10\xab\"\x12\x1e\n\x19CmdTakeCollectRewardCsReq\
-    \x10\xe1!\x12$\n\x1fCmdMuseumRandomEventSelectScRsp\x10\xf8!\x12&\n!CmdS\
-    yncMuseumFundsChangedScNotify\x10\xec!\x12#\n\x1eCmdMuseumRandomEventQue\
-    ryCsReq\x10\x89\"\x12\x1a\n\x15CmdFinishCurTurnScRsp\x10\xcd!\x12\x1e\n\
-    \x19CmdSyncGetExhibitScNotify\x10\xe6!\x12\x1a\n\x15CmdGetMuseumInfoScRs\
-    p\x10\xd6!\x12\x18\n\x13CmdUpgradeAreaCsReq\x10\x96\"\x12$\n\x1fCmdSyncM\
-    useumTargetRewardNotify\x10\x85\"\x12\x18\n\x13CmdBuyNpcStuffCsReq\x10\
-    \xaa\"\x12\x1c\n\x17CmdUpgradeAreaStatScRsp\x10\xf2!\x12\x20\n\x1bCmdRem\
-    oveStuffFromAreaScRsp\x10\xae\"\x12\x20\n\x1bCmdRemoveStuffFromAreaCsReq\
-    \x10\xd5!\x12#\n\x1eCmdMuseumRandomEventQueryScRsp\x10\xd3!\x12%\n\x20Cm\
-    dSyncMuseumInfoChangedScNotify\x10\x94\"\x12\x18\n\x13CmdUpgradeAreaScRs\
-    p\x10\xf1!\x12+\n&CmdSyncMuseumTargetMissionFinishNotify\x10\xac\"\x12\
-    \x1c\n\x17CmdSyncGetStuffScNotify\x10\x8b\"b\x06proto3\
+    \n\x13CmdMuseumType.proto*\x92\x07\n\rCmdMuseumType\x12\x1b\n\x17CIILMLF\
+    IACA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CIILMLFIACA_DEOKEGAAJMH\x10\xe4!\x12\
+    \x1c\n\x17CIILMLFIACA_NKEHOBMLIID\x10\xd5!\x12\x1c\n\x17CIILMLFIACA_JJNI\
+    FCCLJKB\x10\x95\"\x12\x1c\n\x17CIILMLFIACA_ABJMPLEDOBE\x10\x9a\"\x12\x1c\
+    \n\x17CIILMLFIACA_HAHOKHBFAOG\x10\xe9!\x12\x1c\n\x17CIILMLFIACA_IPEGGPHN\
+    ONJ\x10\xf2!\x12\x1c\n\x17CIILMLFIACA_EBOFHIBPECF\x10\x87\"\x12\x1c\n\
+    \x17CIILMLFIACA_ABPEALPNEOK\x10\x80\"\x12\x1c\n\x17CIILMLFIACA_ELACELNLH\
+    CM\x10\x89\"\x12\x1c\n\x17CIILMLFIACA_LLFPNMDNMKM\x10\xa3\"\x12\x1c\n\
+    \x17CIILMLFIACA_JAHIGLFGFNM\x10\xdb!\x12\x1c\n\x17CIILMLFIACA_BJIEGJBKNG\
+    G\x10\x9c\"\x12\x1c\n\x17CIILMLFIACA_EMKFLADECGM\x10\x93\"\x12\x1c\n\x17\
+    CIILMLFIACA_LPDGONBCHNJ\x10\xfc!\x12\x1c\n\x17CIILMLFIACA_BAFKPGEJINI\
+    \x10\xe7!\x12\x1c\n\x17CIILMLFIACA_CDHKEBKODNE\x10\x96\"\x12\x1c\n\x17CI\
+    ILMLFIACA_GECAMJJBEFJ\x10\xd8!\x12\x1c\n\x17CIILMLFIACA_HAACGKDBCOH\x10\
+    \xf0!\x12\x1c\n\x17CIILMLFIACA_NBAPAJAOCJM\x10\xcf!\x12\x1c\n\x17CIILMLF\
+    IACA_PIPNOPLDAKA\x10\x98\"\x12\x1c\n\x17CIILMLFIACA_KADNHHELJPB\x10\x9f\
+    \"\x12\x1c\n\x17CIILMLFIACA_LHJKMOPGDGF\x10\x9d\"\x12\x1c\n\x17CIILMLFIA\
+    CA_FJFECCHBGEK\x10\xd6!\x12\x1c\n\x17CIILMLFIACA_CEPFGCAKGKM\x10\x82\"\
+    \x12\x1c\n\x17CIILMLFIACA_PGDBMGAFCCN\x10\x8e\"\x12\x1c\n\x17CIILMLFIACA\
+    _JLDLICPMOCO\x10\xf6!\x12\x1c\n\x17CIILMLFIACA_OAKDDHGBLDI\x10\xa8\"\x12\
+    \x1c\n\x17CIILMLFIACA_HFIAHCAPDLE\x10\xd9!\x12\x1c\n\x17CIILMLFIACA_IJLD\
+    NHCKAJA\x10\xea!b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

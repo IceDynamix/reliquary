@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetGunPlayDataScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetGunPlayDataScRsp.OHOLABHLCKL)
+    pub OHOLABHLCKL: ::std::vec::Vec<super::BPAGBAALHMP::BPAGBAALHMP>,
     // @@protoc_insertion_point(field:GetGunPlayDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetGunPlayDataScRsp.NBMAIDECCHJ)
-    pub NBMAIDECCHJ: ::std::vec::Vec<super::DEOMNEOMPFE::DEOMNEOMPFE>,
     // special fields
     // @@protoc_insertion_point(special_field:GetGunPlayDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetGunPlayDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "OHOLABHLCKL",
+            |m: &GetGunPlayDataScRsp| { &m.OHOLABHLCKL },
+            |m: &mut GetGunPlayDataScRsp| { &mut m.OHOLABHLCKL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetGunPlayDataScRsp| { &m.retcode },
             |m: &mut GetGunPlayDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NBMAIDECCHJ",
-            |m: &GetGunPlayDataScRsp| { &m.NBMAIDECCHJ },
-            |m: &mut GetGunPlayDataScRsp| { &mut m.NBMAIDECCHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetGunPlayDataScRsp>(
             "GetGunPlayDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetGunPlayDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 42 => {
-                    self.NBMAIDECCHJ.push(is.read_message()?);
+                    self.OHOLABHLCKL.push(is.read_message()?);
+                },
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetGunPlayDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
-        for value in &self.NBMAIDECCHJ {
+        for value in &self.OHOLABHLCKL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
-        for v in &self.NBMAIDECCHJ {
+        for v in &self.OHOLABHLCKL {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetGunPlayDataScRsp {
     }
 
     fn clear(&mut self) {
+        self.OHOLABHLCKL.clear();
         self.retcode = 0;
-        self.NBMAIDECCHJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetGunPlayDataScRsp {
         static instance: GetGunPlayDataScRsp = GetGunPlayDataScRsp {
+            OHOLABHLCKL: ::std::vec::Vec::new(),
             retcode: 0,
-            NBMAIDECCHJ: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for GetGunPlayDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetGunPlayDataScRsp.proto\x1a\x11DEOMNEOMPFE.proto\"_\n\x13GetGunP\
-    layDataScRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12.\n\
-    \x0bNBMAIDECCHJ\x18\x05\x20\x03(\x0b2\x0c.DEOMNEOMPFER\x0bNBMAIDECCHJb\
-    \x06proto3\
+    \n\x19GetGunPlayDataScRsp.proto\x1a\x11BPAGBAALHMP.proto\"_\n\x13GetGunP\
+    layDataScRsp\x12.\n\x0bOHOLABHLCKL\x18\x05\x20\x03(\x0b2\x0c.BPAGBAALHMP\
+    R\x0bOHOLABHLCKL\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DEOMNEOMPFE::file_descriptor().clone());
+            deps.push(super::BPAGBAALHMP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetGunPlayDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

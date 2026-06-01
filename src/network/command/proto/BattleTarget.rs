@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleTarget {
     // message fields
-    // @@protoc_insertion_point(field:BattleTarget.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:BattleTarget.progress)
     pub progress: u32,
     // @@protoc_insertion_point(field:BattleTarget.total_progress)
     pub total_progress: u32,
+    // @@protoc_insertion_point(field:BattleTarget.id)
+    pub id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BattleTarget.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,11 +54,6 @@ impl BattleTarget {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &BattleTarget| { &m.id },
-            |m: &mut BattleTarget| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &BattleTarget| { &m.progress },
             |m: &mut BattleTarget| { &mut m.progress },
@@ -67,6 +62,11 @@ impl BattleTarget {
             "total_progress",
             |m: &BattleTarget| { &m.total_progress },
             |m: &mut BattleTarget| { &mut m.total_progress },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &BattleTarget| { &m.id },
+            |m: &mut BattleTarget| { &mut m.id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleTarget>(
             "BattleTarget",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for BattleTarget {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.id = is.read_uint32()?;
-                },
                 16 => {
                     self.progress = is.read_uint32()?;
                 },
                 24 => {
                     self.total_progress = is.read_uint32()?;
+                },
+                8 => {
+                    self.id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for BattleTarget {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.id);
-        }
         if self.progress != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.progress);
         }
         if self.total_progress != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.total_progress);
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for BattleTarget {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.id != 0 {
-            os.write_uint32(1, self.id)?;
-        }
         if self.progress != 0 {
             os.write_uint32(2, self.progress)?;
         }
         if self.total_progress != 0 {
             os.write_uint32(3, self.total_progress)?;
+        }
+        if self.id != 0 {
+            os.write_uint32(1, self.id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for BattleTarget {
     }
 
     fn clear(&mut self) {
-        self.id = 0;
         self.progress = 0;
         self.total_progress = 0;
+        self.id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleTarget {
         static instance: BattleTarget = BattleTarget {
-            id: 0,
             progress: 0,
             total_progress: 0,
+            id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for BattleTarget {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12BattleTarget.proto\"a\n\x0cBattleTarget\x12\x0e\n\x02id\x18\x01\
-    \x20\x01(\rR\x02id\x12\x1a\n\x08progress\x18\x02\x20\x01(\rR\x08progress\
-    \x12%\n\x0etotal_progress\x18\x03\x20\x01(\rR\rtotalProgressb\x06proto3\
+    \n\x12BattleTarget.proto\"a\n\x0cBattleTarget\x12\x1a\n\x08progress\x18\
+    \x02\x20\x01(\rR\x08progress\x12%\n\x0etotal_progress\x18\x03\x20\x01(\r\
+    R\rtotalProgress\x12\x0e\n\x02id\x18\x01\x20\x01(\rR\x02idb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

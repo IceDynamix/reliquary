@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BenefitData {
     // message fields
-    // @@protoc_insertion_point(field:BenefitData.ODLBOKHDANL)
-    pub ODLBOKHDANL: ::protobuf::MessageField<super::FHBFFIFIPOA::FHBFFIFIPOA>,
-    // @@protoc_insertion_point(field:BenefitData.COOOFFKIDMC)
-    pub COOOFFKIDMC: u32,
-    // @@protoc_insertion_point(field:BenefitData.status)
-    pub status: u32,
+    // @@protoc_insertion_point(field:BenefitData.EABKOHGCHFP)
+    pub EABKOHGCHFP: ::protobuf::MessageField<super::OPGKKPEDKCL::OPGKKPEDKCL>,
     // @@protoc_insertion_point(field:BenefitData.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:BenefitData.status)
+    pub status: u32,
+    // @@protoc_insertion_point(field:BenefitData.JALHKMEOOPN)
+    pub JALHKMEOOPN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BenefitData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,15 +55,15 @@ impl BenefitData {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FHBFFIFIPOA::FHBFFIFIPOA>(
-            "ODLBOKHDANL",
-            |m: &BenefitData| { &m.ODLBOKHDANL },
-            |m: &mut BenefitData| { &mut m.ODLBOKHDANL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OPGKKPEDKCL::OPGKKPEDKCL>(
+            "EABKOHGCHFP",
+            |m: &BenefitData| { &m.EABKOHGCHFP },
+            |m: &mut BenefitData| { &mut m.EABKOHGCHFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "COOOFFKIDMC",
-            |m: &BenefitData| { &m.COOOFFKIDMC },
-            |m: &mut BenefitData| { &mut m.COOOFFKIDMC },
+            "level",
+            |m: &BenefitData| { &m.level },
+            |m: &mut BenefitData| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "status",
@@ -71,9 +71,9 @@ impl BenefitData {
             |m: &mut BenefitData| { &mut m.status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &BenefitData| { &m.level },
-            |m: &mut BenefitData| { &mut m.level },
+            "JALHKMEOOPN",
+            |m: &BenefitData| { &m.JALHKMEOOPN },
+            |m: &mut BenefitData| { &mut m.JALHKMEOOPN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BenefitData>(
             "BenefitData",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for BenefitData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ODLBOKHDANL)?;
+                98 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EABKOHGCHFP)?;
                 },
-                56 => {
-                    self.COOOFFKIDMC = is.read_uint32()?;
+                120 => {
+                    self.level = is.read_uint32()?;
                 },
-                32 => {
+                64 => {
                     self.status = is.read_uint32()?;
                 },
                 16 => {
-                    self.level = is.read_uint32()?;
+                    self.JALHKMEOOPN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for BenefitData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ODLBOKHDANL.as_ref() {
+        if let Some(v) = self.EABKOHGCHFP.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.COOOFFKIDMC != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.COOOFFKIDMC);
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.level);
         }
         if self.status != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.status);
+            my_size += ::protobuf::rt::uint32_size(8, self.status);
         }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level);
+        if self.JALHKMEOOPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JALHKMEOOPN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for BenefitData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ODLBOKHDANL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if self.COOOFFKIDMC != 0 {
-            os.write_uint32(7, self.COOOFFKIDMC)?;
-        }
-        if self.status != 0 {
-            os.write_uint32(4, self.status)?;
+        if let Some(v) = self.EABKOHGCHFP.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.level != 0 {
-            os.write_uint32(2, self.level)?;
+            os.write_uint32(15, self.level)?;
+        }
+        if self.status != 0 {
+            os.write_uint32(8, self.status)?;
+        }
+        if self.JALHKMEOOPN != 0 {
+            os.write_uint32(2, self.JALHKMEOOPN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for BenefitData {
     }
 
     fn clear(&mut self) {
-        self.ODLBOKHDANL.clear();
-        self.COOOFFKIDMC = 0;
-        self.status = 0;
+        self.EABKOHGCHFP.clear();
         self.level = 0;
+        self.status = 0;
+        self.JALHKMEOOPN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BenefitData {
         static instance: BenefitData = BenefitData {
-            ODLBOKHDANL: ::protobuf::MessageField::none(),
-            COOOFFKIDMC: 0,
-            status: 0,
+            EABKOHGCHFP: ::protobuf::MessageField::none(),
             level: 0,
+            status: 0,
+            JALHKMEOOPN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for BenefitData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11BenefitData.proto\x1a\x11FHBFFIFIPOA.proto\"\x8d\x01\n\x0bBenefitD\
-    ata\x12.\n\x0bODLBOKHDANL\x18\x03\x20\x01(\x0b2\x0c.FHBFFIFIPOAR\x0bODLB\
-    OKHDANL\x12\x20\n\x0bCOOOFFKIDMC\x18\x07\x20\x01(\rR\x0bCOOOFFKIDMC\x12\
-    \x16\n\x06status\x18\x04\x20\x01(\rR\x06status\x12\x14\n\x05level\x18\
-    \x02\x20\x01(\rR\x05levelb\x06proto3\
+    \n\x11BenefitData.proto\x1a\x11OPGKKPEDKCL.proto\"\x8d\x01\n\x0bBenefitD\
+    ata\x12.\n\x0bEABKOHGCHFP\x18\x0c\x20\x01(\x0b2\x0c.OPGKKPEDKCLR\x0bEABK\
+    OHGCHFP\x12\x14\n\x05level\x18\x0f\x20\x01(\rR\x05level\x12\x16\n\x06sta\
+    tus\x18\x08\x20\x01(\rR\x06status\x12\x20\n\x0bJALHKMEOOPN\x18\x02\x20\
+    \x01(\rR\x0bJALHKMEOOPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FHBFFIFIPOA::file_descriptor().clone());
+            deps.push(super::OPGKKPEDKCL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BenefitData::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

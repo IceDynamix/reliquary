@@ -31,7 +31,7 @@ pub struct ReportRelicBoxActionScRsp {
     // @@protoc_insertion_point(field:ReportRelicBoxActionScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:ReportRelicBoxActionScRsp.state)
-    pub state: ::protobuf::EnumOrUnknown<super::JHHBIOJHEGL::JHHBIOJHEGL>,
+    pub state: ::protobuf::EnumOrUnknown<super::BDFGBPHEPDI::BDFGBPHEPDI>,
     // special fields
     // @@protoc_insertion_point(special_field:ReportRelicBoxActionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ReportRelicBoxActionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                72 => {
+                104 => {
                     self.state = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for ReportRelicBoxActionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        if self.state != ::protobuf::EnumOrUnknown::new(super::JHHBIOJHEGL::JHHBIOJHEGL::JHHBIOJHEGL_CLPHMAJJILA) {
-            my_size += ::protobuf::rt::int32_size(9, self.state.value());
+        if self.state != ::protobuf::EnumOrUnknown::new(super::BDFGBPHEPDI::BDFGBPHEPDI::BDFGBPHEPDI_PDKLDMNAJBO) {
+            my_size += ::protobuf::rt::int32_size(13, self.state.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ReportRelicBoxActionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        if self.state != ::protobuf::EnumOrUnknown::new(super::JHHBIOJHEGL::JHHBIOJHEGL::JHHBIOJHEGL_CLPHMAJJILA) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.state))?;
+        if self.state != ::protobuf::EnumOrUnknown::new(super::BDFGBPHEPDI::BDFGBPHEPDI::BDFGBPHEPDI_PDKLDMNAJBO) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.state))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,7 +133,7 @@ impl ::protobuf::Message for ReportRelicBoxActionScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.state = ::protobuf::EnumOrUnknown::new(super::JHHBIOJHEGL::JHHBIOJHEGL::JHHBIOJHEGL_CLPHMAJJILA);
+        self.state = ::protobuf::EnumOrUnknown::new(super::BDFGBPHEPDI::BDFGBPHEPDI::BDFGBPHEPDI_PDKLDMNAJBO);
         self.special_fields.clear();
     }
 
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ReportRelicBoxActionScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fReportRelicBoxActionScRsp.proto\x1a\x11JHHBIOJHEGL.proto\"Y\n\x19R\
-    eportRelicBoxActionScRsp\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07ret\
-    code\x12\"\n\x05state\x18\t\x20\x01(\x0e2\x0c.JHHBIOJHEGLR\x05stateb\x06\
+    \n\x1fReportRelicBoxActionScRsp.proto\x1a\x11BDFGBPHEPDI.proto\"Y\n\x19R\
+    eportRelicBoxActionScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07ret\
+    code\x12\"\n\x05state\x18\r\x20\x01(\x0e2\x0c.BDFGBPHEPDIR\x05stateb\x06\
     proto3\
 ";
 
@@ -186,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JHHBIOJHEGL::file_descriptor().clone());
+            deps.push(super::BDFGBPHEPDI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ReportRelicBoxActionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

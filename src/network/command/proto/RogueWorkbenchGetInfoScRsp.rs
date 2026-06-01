@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueWorkbenchGetInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:RogueWorkbenchGetInfoScRsp.NJAPFMHHPPA)
+    pub NJAPFMHHPPA: ::std::collections::HashMap<u32, super::BCOEGNBGJFC::BCOEGNBGJFC>,
     // @@protoc_insertion_point(field:RogueWorkbenchGetInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueWorkbenchGetInfoScRsp.DKOAPDJGLOA)
-    pub DKOAPDJGLOA: ::std::collections::HashMap<u32, super::CGKBEBCCDGF::CGKBEBCCDGF>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueWorkbenchGetInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueWorkbenchGetInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "NJAPFMHHPPA",
+            |m: &RogueWorkbenchGetInfoScRsp| { &m.NJAPFMHHPPA },
+            |m: &mut RogueWorkbenchGetInfoScRsp| { &mut m.NJAPFMHHPPA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueWorkbenchGetInfoScRsp| { &m.retcode },
             |m: &mut RogueWorkbenchGetInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "DKOAPDJGLOA",
-            |m: &RogueWorkbenchGetInfoScRsp| { &m.DKOAPDJGLOA },
-            |m: &mut RogueWorkbenchGetInfoScRsp| { &mut m.DKOAPDJGLOA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueWorkbenchGetInfoScRsp>(
             "RogueWorkbenchGetInfoScRsp",
@@ -79,10 +79,7 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                98 => {
+                26 => {
                     let len = is.read_raw_varint32()?;
                     let old_limit = is.push_limit(len as u64)?;
                     let mut key = ::std::default::Default::default();
@@ -95,7 +92,10 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoScRsp {
                         };
                     }
                     is.pop_limit(old_limit);
-                    self.DKOAPDJGLOA.insert(key, value);
+                    self.NJAPFMHHPPA.insert(key, value);
+                },
+                40 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -109,35 +109,35 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
-        for (k, v) in &self.DKOAPDJGLOA {
+        for (k, v) in &self.NJAPFMHHPPA {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.compute_size();
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
-        }
-        for (k, v) in &self.DKOAPDJGLOA {
+        for (k, v) in &self.NJAPFMHHPPA {
             let mut entry_size = 0;
             entry_size += ::protobuf::rt::uint32_size(1, *k);
             let len = v.cached_size() as u64;
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-            os.write_raw_varint32(98)?; // Tag.
+            os.write_raw_varint32(26)?; // Tag.
             os.write_raw_varint32(entry_size as u32)?;
             os.write_uint32(1, *k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -155,8 +155,8 @@ impl ::protobuf::Message for RogueWorkbenchGetInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.NJAPFMHHPPA.clear();
         self.retcode = 0;
-        self.DKOAPDJGLOA.clear();
         self.special_fields.clear();
     }
 
@@ -184,12 +184,12 @@ impl ::protobuf::reflect::ProtobufValue for RogueWorkbenchGetInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20RogueWorkbenchGetInfoScRsp.proto\x1a\x11CGKBEBCCDGF.proto\"\xd4\
-    \x01\n\x1aRogueWorkbenchGetInfoScRsp\x12\x18\n\x07retcode\x18\x02\x20\
-    \x01(\rR\x07retcode\x12N\n\x0bDKOAPDJGLOA\x18\x0c\x20\x03(\x0b2,.RogueWo\
-    rkbenchGetInfoScRsp.DKOAPDJGLOAEntryR\x0bDKOAPDJGLOA\x1aL\n\x10DKOAPDJGL\
-    OAEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\"\n\x05value\x18\
-    \x02\x20\x01(\x0b2\x0c.CGKBEBCCDGFR\x05value:\x028\x01b\x06proto3\
+    \n\x20RogueWorkbenchGetInfoScRsp.proto\x1a\x11BCOEGNBGJFC.proto\"\xd4\
+    \x01\n\x1aRogueWorkbenchGetInfoScRsp\x12N\n\x0bNJAPFMHHPPA\x18\x03\x20\
+    \x03(\x0b2,.RogueWorkbenchGetInfoScRsp.NJAPFMHHPPAEntryR\x0bNJAPFMHHPPA\
+    \x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\x1aL\n\x10NJAPFMHHP\
+    PAEntry\x12\x10\n\x03key\x18\x01\x20\x01(\rR\x03key\x12\"\n\x05value\x18\
+    \x02\x20\x01(\x0b2\x0c.BCOEGNBGJFCR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CGKBEBCCDGF::file_descriptor().clone());
+            deps.push(super::BCOEGNBGJFC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueWorkbenchGetInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

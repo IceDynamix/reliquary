@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SocialPlayGameplayOperationScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SocialPlayGameplayOperationScNotify.NCFHGIBCEBG)
-    pub NCFHGIBCEBG: u32,
-    // @@protoc_insertion_point(field:SocialPlayGameplayOperationScNotify.MFBDMLPDEOE)
-    pub MFBDMLPDEOE: u32,
+    // @@protoc_insertion_point(field:SocialPlayGameplayOperationScNotify.IKDEIJCEDIO)
+    pub IKDEIJCEDIO: u32,
+    // @@protoc_insertion_point(field:SocialPlayGameplayOperationScNotify.PLIDNBMCIJH)
+    pub PLIDNBMCIJH: u32,
     // message oneof groups
-    pub DCINAIHIPOC: ::std::option::Option<social_play_gameplay_operation_sc_notify::DCINAIHIPOC>,
+    pub NBGBONGLJHM: ::std::option::Option<social_play_gameplay_operation_sc_notify::NBGBONGLJHM>,
     // special fields
     // @@protoc_insertion_point(special_field:SocialPlayGameplayOperationScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,679 +50,679 @@ impl SocialPlayGameplayOperationScNotify {
         ::std::default::Default::default()
     }
 
-    // .CCKCCKHEFFB IACKOCPGIAK = 684;
+    // .MHNNEFBOPIE NJDCPMENIFG = 902;
 
-    pub fn IACKOCPGIAK(&self) -> &super::CCKCCKHEFFB::CCKCCKHEFFB {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IACKOCPGIAK(ref v)) => v,
-            _ => <super::CCKCCKHEFFB::CCKCCKHEFFB as ::protobuf::Message>::default_instance(),
+    pub fn NJDCPMENIFG(&self) -> &super::MHNNEFBOPIE::MHNNEFBOPIE {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(ref v)) => v,
+            _ => <super::MHNNEFBOPIE::MHNNEFBOPIE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_IACKOCPGIAK(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_NJDCPMENIFG(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_IACKOCPGIAK(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IACKOCPGIAK(..)) => true,
+    pub fn has_NJDCPMENIFG(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_IACKOCPGIAK(&mut self, v: super::CCKCCKHEFFB::CCKCCKHEFFB) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IACKOCPGIAK(v))
+    pub fn set_NJDCPMENIFG(&mut self, v: super::MHNNEFBOPIE::MHNNEFBOPIE) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_IACKOCPGIAK(&mut self) -> &mut super::CCKCCKHEFFB::CCKCCKHEFFB {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IACKOCPGIAK(_)) = self.DCINAIHIPOC {
+    pub fn mut_NJDCPMENIFG(&mut self) -> &mut super::MHNNEFBOPIE::MHNNEFBOPIE {
+        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(_)) = self.NBGBONGLJHM {
         } else {
-            self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IACKOCPGIAK(super::CCKCCKHEFFB::CCKCCKHEFFB::new()));
+            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(super::MHNNEFBOPIE::MHNNEFBOPIE::new()));
         }
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IACKOCPGIAK(ref mut v)) => v,
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_IACKOCPGIAK(&mut self) -> super::CCKCCKHEFFB::CCKCCKHEFFB {
-        if self.has_IACKOCPGIAK() {
-            match self.DCINAIHIPOC.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IACKOCPGIAK(v)) => v,
+    pub fn take_NJDCPMENIFG(&mut self) -> super::MHNNEFBOPIE::MHNNEFBOPIE {
+        if self.has_NJDCPMENIFG() {
+            match self.NBGBONGLJHM.take() {
+                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::CCKCCKHEFFB::CCKCCKHEFFB::new()
+            super::MHNNEFBOPIE::MHNNEFBOPIE::new()
         }
     }
 
-    // uint32 JKMNPPEOIJP = 294;
+    // uint32 LMGGGLECNEA = 623;
 
-    pub fn JKMNPPEOIJP(&self) -> u32 {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::JKMNPPEOIJP(v)) => v,
+    pub fn LMGGGLECNEA(&self) -> u32 {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMGGGLECNEA(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_JKMNPPEOIJP(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_LMGGGLECNEA(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_JKMNPPEOIJP(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::JKMNPPEOIJP(..)) => true,
+    pub fn has_LMGGGLECNEA(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMGGGLECNEA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_JKMNPPEOIJP(&mut self, v: u32) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::JKMNPPEOIJP(v))
+    pub fn set_LMGGGLECNEA(&mut self, v: u32) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMGGGLECNEA(v))
     }
 
-    // .OEBJBPNNOKO PEFPFCINABN = 1841;
+    // .JBJNJPAOCDA GNLAECODENP = 278;
 
-    pub fn PEFPFCINABN(&self) -> &super::OEBJBPNNOKO::OEBJBPNNOKO {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PEFPFCINABN(ref v)) => v,
-            _ => <super::OEBJBPNNOKO::OEBJBPNNOKO as ::protobuf::Message>::default_instance(),
+    pub fn GNLAECODENP(&self) -> &super::JBJNJPAOCDA::JBJNJPAOCDA {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(ref v)) => v,
+            _ => <super::JBJNJPAOCDA::JBJNJPAOCDA as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_PEFPFCINABN(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_GNLAECODENP(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_PEFPFCINABN(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PEFPFCINABN(..)) => true,
+    pub fn has_GNLAECODENP(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_PEFPFCINABN(&mut self, v: super::OEBJBPNNOKO::OEBJBPNNOKO) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PEFPFCINABN(v))
+    pub fn set_GNLAECODENP(&mut self, v: super::JBJNJPAOCDA::JBJNJPAOCDA) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_PEFPFCINABN(&mut self) -> &mut super::OEBJBPNNOKO::OEBJBPNNOKO {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PEFPFCINABN(_)) = self.DCINAIHIPOC {
+    pub fn mut_GNLAECODENP(&mut self) -> &mut super::JBJNJPAOCDA::JBJNJPAOCDA {
+        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(_)) = self.NBGBONGLJHM {
         } else {
-            self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PEFPFCINABN(super::OEBJBPNNOKO::OEBJBPNNOKO::new()));
+            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(super::JBJNJPAOCDA::JBJNJPAOCDA::new()));
         }
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PEFPFCINABN(ref mut v)) => v,
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_PEFPFCINABN(&mut self) -> super::OEBJBPNNOKO::OEBJBPNNOKO {
-        if self.has_PEFPFCINABN() {
-            match self.DCINAIHIPOC.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PEFPFCINABN(v)) => v,
+    pub fn take_GNLAECODENP(&mut self) -> super::JBJNJPAOCDA::JBJNJPAOCDA {
+        if self.has_GNLAECODENP() {
+            match self.NBGBONGLJHM.take() {
+                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::OEBJBPNNOKO::OEBJBPNNOKO::new()
+            super::JBJNJPAOCDA::JBJNJPAOCDA::new()
         }
     }
 
-    // .MKHIPFHEKCK INPEGNFEPAP = 1396;
+    // .POBLGKIGINE LMFMBJCNALJ = 1031;
 
-    pub fn INPEGNFEPAP(&self) -> &super::MKHIPFHEKCK::MKHIPFHEKCK {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::INPEGNFEPAP(ref v)) => v,
-            _ => <super::MKHIPFHEKCK::MKHIPFHEKCK as ::protobuf::Message>::default_instance(),
+    pub fn LMFMBJCNALJ(&self) -> &super::POBLGKIGINE::POBLGKIGINE {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(ref v)) => v,
+            _ => <super::POBLGKIGINE::POBLGKIGINE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_INPEGNFEPAP(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_LMFMBJCNALJ(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_INPEGNFEPAP(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::INPEGNFEPAP(..)) => true,
+    pub fn has_LMFMBJCNALJ(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_INPEGNFEPAP(&mut self, v: super::MKHIPFHEKCK::MKHIPFHEKCK) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::INPEGNFEPAP(v))
+    pub fn set_LMFMBJCNALJ(&mut self, v: super::POBLGKIGINE::POBLGKIGINE) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_INPEGNFEPAP(&mut self) -> &mut super::MKHIPFHEKCK::MKHIPFHEKCK {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::INPEGNFEPAP(_)) = self.DCINAIHIPOC {
+    pub fn mut_LMFMBJCNALJ(&mut self) -> &mut super::POBLGKIGINE::POBLGKIGINE {
+        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(_)) = self.NBGBONGLJHM {
         } else {
-            self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::INPEGNFEPAP(super::MKHIPFHEKCK::MKHIPFHEKCK::new()));
+            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(super::POBLGKIGINE::POBLGKIGINE::new()));
         }
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::INPEGNFEPAP(ref mut v)) => v,
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_INPEGNFEPAP(&mut self) -> super::MKHIPFHEKCK::MKHIPFHEKCK {
-        if self.has_INPEGNFEPAP() {
-            match self.DCINAIHIPOC.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::INPEGNFEPAP(v)) => v,
+    pub fn take_LMFMBJCNALJ(&mut self) -> super::POBLGKIGINE::POBLGKIGINE {
+        if self.has_LMFMBJCNALJ() {
+            match self.NBGBONGLJHM.take() {
+                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::MKHIPFHEKCK::MKHIPFHEKCK::new()
+            super::POBLGKIGINE::POBLGKIGINE::new()
         }
     }
 
-    // uint32 NEAIFLAADFE = 1780;
+    // uint32 HJHPHDACEHE = 332;
 
-    pub fn NEAIFLAADFE(&self) -> u32 {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NEAIFLAADFE(v)) => v,
+    pub fn HJHPHDACEHE(&self) -> u32 {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::HJHPHDACEHE(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_NEAIFLAADFE(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_HJHPHDACEHE(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_NEAIFLAADFE(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NEAIFLAADFE(..)) => true,
+    pub fn has_HJHPHDACEHE(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::HJHPHDACEHE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_NEAIFLAADFE(&mut self, v: u32) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NEAIFLAADFE(v))
+    pub fn set_HJHPHDACEHE(&mut self, v: u32) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::HJHPHDACEHE(v))
     }
 
-    // .KHCINCLHIOJ BLEDIOOJPNL = 1686;
+    // .EIIDKJFKIPE NIELDCLPOLA = 177;
 
-    pub fn BLEDIOOJPNL(&self) -> &super::KHCINCLHIOJ::KHCINCLHIOJ {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::BLEDIOOJPNL(ref v)) => v,
-            _ => <super::KHCINCLHIOJ::KHCINCLHIOJ as ::protobuf::Message>::default_instance(),
+    pub fn NIELDCLPOLA(&self) -> &super::EIIDKJFKIPE::EIIDKJFKIPE {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(ref v)) => v,
+            _ => <super::EIIDKJFKIPE::EIIDKJFKIPE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BLEDIOOJPNL(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_NIELDCLPOLA(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_BLEDIOOJPNL(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::BLEDIOOJPNL(..)) => true,
+    pub fn has_NIELDCLPOLA(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BLEDIOOJPNL(&mut self, v: super::KHCINCLHIOJ::KHCINCLHIOJ) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::BLEDIOOJPNL(v))
+    pub fn set_NIELDCLPOLA(&mut self, v: super::EIIDKJFKIPE::EIIDKJFKIPE) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BLEDIOOJPNL(&mut self) -> &mut super::KHCINCLHIOJ::KHCINCLHIOJ {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::BLEDIOOJPNL(_)) = self.DCINAIHIPOC {
+    pub fn mut_NIELDCLPOLA(&mut self) -> &mut super::EIIDKJFKIPE::EIIDKJFKIPE {
+        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(_)) = self.NBGBONGLJHM {
         } else {
-            self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::BLEDIOOJPNL(super::KHCINCLHIOJ::KHCINCLHIOJ::new()));
+            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(super::EIIDKJFKIPE::EIIDKJFKIPE::new()));
         }
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::BLEDIOOJPNL(ref mut v)) => v,
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BLEDIOOJPNL(&mut self) -> super::KHCINCLHIOJ::KHCINCLHIOJ {
-        if self.has_BLEDIOOJPNL() {
-            match self.DCINAIHIPOC.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::BLEDIOOJPNL(v)) => v,
+    pub fn take_NIELDCLPOLA(&mut self) -> super::EIIDKJFKIPE::EIIDKJFKIPE {
+        if self.has_NIELDCLPOLA() {
+            match self.NBGBONGLJHM.take() {
+                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::KHCINCLHIOJ::KHCINCLHIOJ::new()
+            super::EIIDKJFKIPE::EIIDKJFKIPE::new()
         }
     }
 
-    // .FOFNOBHLKGO KANBEFELFFE = 1176;
+    // .BFAKMCIJFCB OEMEKBOGNJH = 1354;
 
-    pub fn KANBEFELFFE(&self) -> &super::FOFNOBHLKGO::FOFNOBHLKGO {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KANBEFELFFE(ref v)) => v,
-            _ => <super::FOFNOBHLKGO::FOFNOBHLKGO as ::protobuf::Message>::default_instance(),
+    pub fn OEMEKBOGNJH(&self) -> &super::BFAKMCIJFCB::BFAKMCIJFCB {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(ref v)) => v,
+            _ => <super::BFAKMCIJFCB::BFAKMCIJFCB as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_KANBEFELFFE(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_OEMEKBOGNJH(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_KANBEFELFFE(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KANBEFELFFE(..)) => true,
+    pub fn has_OEMEKBOGNJH(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_KANBEFELFFE(&mut self, v: super::FOFNOBHLKGO::FOFNOBHLKGO) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KANBEFELFFE(v))
+    pub fn set_OEMEKBOGNJH(&mut self, v: super::BFAKMCIJFCB::BFAKMCIJFCB) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KANBEFELFFE(&mut self) -> &mut super::FOFNOBHLKGO::FOFNOBHLKGO {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KANBEFELFFE(_)) = self.DCINAIHIPOC {
+    pub fn mut_OEMEKBOGNJH(&mut self) -> &mut super::BFAKMCIJFCB::BFAKMCIJFCB {
+        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(_)) = self.NBGBONGLJHM {
         } else {
-            self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KANBEFELFFE(super::FOFNOBHLKGO::FOFNOBHLKGO::new()));
+            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(super::BFAKMCIJFCB::BFAKMCIJFCB::new()));
         }
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KANBEFELFFE(ref mut v)) => v,
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_KANBEFELFFE(&mut self) -> super::FOFNOBHLKGO::FOFNOBHLKGO {
-        if self.has_KANBEFELFFE() {
-            match self.DCINAIHIPOC.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KANBEFELFFE(v)) => v,
+    pub fn take_OEMEKBOGNJH(&mut self) -> super::BFAKMCIJFCB::BFAKMCIJFCB {
+        if self.has_OEMEKBOGNJH() {
+            match self.NBGBONGLJHM.take() {
+                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::FOFNOBHLKGO::FOFNOBHLKGO::new()
+            super::BFAKMCIJFCB::BFAKMCIJFCB::new()
         }
     }
 
-    // .ICHNLLCNBCC IHNNEJKHBHL = 1754;
+    // .HMACEHDGGHB ONMNMLBANHK = 199;
 
-    pub fn IHNNEJKHBHL(&self) -> &super::ICHNLLCNBCC::ICHNLLCNBCC {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IHNNEJKHBHL(ref v)) => v,
-            _ => <super::ICHNLLCNBCC::ICHNLLCNBCC as ::protobuf::Message>::default_instance(),
+    pub fn ONMNMLBANHK(&self) -> &super::HMACEHDGGHB::HMACEHDGGHB {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(ref v)) => v,
+            _ => <super::HMACEHDGGHB::HMACEHDGGHB as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_IHNNEJKHBHL(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_ONMNMLBANHK(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_IHNNEJKHBHL(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IHNNEJKHBHL(..)) => true,
+    pub fn has_ONMNMLBANHK(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_IHNNEJKHBHL(&mut self, v: super::ICHNLLCNBCC::ICHNLLCNBCC) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IHNNEJKHBHL(v))
+    pub fn set_ONMNMLBANHK(&mut self, v: super::HMACEHDGGHB::HMACEHDGGHB) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_IHNNEJKHBHL(&mut self) -> &mut super::ICHNLLCNBCC::ICHNLLCNBCC {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IHNNEJKHBHL(_)) = self.DCINAIHIPOC {
+    pub fn mut_ONMNMLBANHK(&mut self) -> &mut super::HMACEHDGGHB::HMACEHDGGHB {
+        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(_)) = self.NBGBONGLJHM {
         } else {
-            self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IHNNEJKHBHL(super::ICHNLLCNBCC::ICHNLLCNBCC::new()));
+            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(super::HMACEHDGGHB::HMACEHDGGHB::new()));
         }
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IHNNEJKHBHL(ref mut v)) => v,
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_IHNNEJKHBHL(&mut self) -> super::ICHNLLCNBCC::ICHNLLCNBCC {
-        if self.has_IHNNEJKHBHL() {
-            match self.DCINAIHIPOC.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IHNNEJKHBHL(v)) => v,
+    pub fn take_ONMNMLBANHK(&mut self) -> super::HMACEHDGGHB::HMACEHDGGHB {
+        if self.has_ONMNMLBANHK() {
+            match self.NBGBONGLJHM.take() {
+                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::ICHNLLCNBCC::ICHNLLCNBCC::new()
+            super::HMACEHDGGHB::HMACEHDGGHB::new()
         }
     }
 
-    // .GFLKDHPBAMJ NGPGKFELCED = 826;
+    // .MIKGMGBHLEN PHKCDLPHMPA = 1153;
 
-    pub fn NGPGKFELCED(&self) -> &super::GFLKDHPBAMJ::GFLKDHPBAMJ {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NGPGKFELCED(ref v)) => v,
-            _ => <super::GFLKDHPBAMJ::GFLKDHPBAMJ as ::protobuf::Message>::default_instance(),
+    pub fn PHKCDLPHMPA(&self) -> &super::MIKGMGBHLEN::MIKGMGBHLEN {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(ref v)) => v,
+            _ => <super::MIKGMGBHLEN::MIKGMGBHLEN as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_NGPGKFELCED(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_PHKCDLPHMPA(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_NGPGKFELCED(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NGPGKFELCED(..)) => true,
+    pub fn has_PHKCDLPHMPA(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_NGPGKFELCED(&mut self, v: super::GFLKDHPBAMJ::GFLKDHPBAMJ) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NGPGKFELCED(v))
+    pub fn set_PHKCDLPHMPA(&mut self, v: super::MIKGMGBHLEN::MIKGMGBHLEN) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_NGPGKFELCED(&mut self) -> &mut super::GFLKDHPBAMJ::GFLKDHPBAMJ {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NGPGKFELCED(_)) = self.DCINAIHIPOC {
+    pub fn mut_PHKCDLPHMPA(&mut self) -> &mut super::MIKGMGBHLEN::MIKGMGBHLEN {
+        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(_)) = self.NBGBONGLJHM {
         } else {
-            self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NGPGKFELCED(super::GFLKDHPBAMJ::GFLKDHPBAMJ::new()));
+            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(super::MIKGMGBHLEN::MIKGMGBHLEN::new()));
         }
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NGPGKFELCED(ref mut v)) => v,
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_NGPGKFELCED(&mut self) -> super::GFLKDHPBAMJ::GFLKDHPBAMJ {
-        if self.has_NGPGKFELCED() {
-            match self.DCINAIHIPOC.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NGPGKFELCED(v)) => v,
+    pub fn take_PHKCDLPHMPA(&mut self) -> super::MIKGMGBHLEN::MIKGMGBHLEN {
+        if self.has_PHKCDLPHMPA() {
+            match self.NBGBONGLJHM.take() {
+                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GFLKDHPBAMJ::GFLKDHPBAMJ::new()
+            super::MIKGMGBHLEN::MIKGMGBHLEN::new()
         }
     }
 
-    // .MKHIPFHEKCK FHJFKLICFBE = 1322;
+    // .POBLGKIGINE LABNNEGJNHO = 1794;
 
-    pub fn FHJFKLICFBE(&self) -> &super::MKHIPFHEKCK::MKHIPFHEKCK {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FHJFKLICFBE(ref v)) => v,
-            _ => <super::MKHIPFHEKCK::MKHIPFHEKCK as ::protobuf::Message>::default_instance(),
+    pub fn LABNNEGJNHO(&self) -> &super::POBLGKIGINE::POBLGKIGINE {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(ref v)) => v,
+            _ => <super::POBLGKIGINE::POBLGKIGINE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_FHJFKLICFBE(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_LABNNEGJNHO(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_FHJFKLICFBE(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FHJFKLICFBE(..)) => true,
+    pub fn has_LABNNEGJNHO(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_FHJFKLICFBE(&mut self, v: super::MKHIPFHEKCK::MKHIPFHEKCK) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FHJFKLICFBE(v))
+    pub fn set_LABNNEGJNHO(&mut self, v: super::POBLGKIGINE::POBLGKIGINE) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_FHJFKLICFBE(&mut self) -> &mut super::MKHIPFHEKCK::MKHIPFHEKCK {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FHJFKLICFBE(_)) = self.DCINAIHIPOC {
+    pub fn mut_LABNNEGJNHO(&mut self) -> &mut super::POBLGKIGINE::POBLGKIGINE {
+        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(_)) = self.NBGBONGLJHM {
         } else {
-            self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FHJFKLICFBE(super::MKHIPFHEKCK::MKHIPFHEKCK::new()));
+            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(super::POBLGKIGINE::POBLGKIGINE::new()));
         }
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FHJFKLICFBE(ref mut v)) => v,
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_FHJFKLICFBE(&mut self) -> super::MKHIPFHEKCK::MKHIPFHEKCK {
-        if self.has_FHJFKLICFBE() {
-            match self.DCINAIHIPOC.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FHJFKLICFBE(v)) => v,
+    pub fn take_LABNNEGJNHO(&mut self) -> super::POBLGKIGINE::POBLGKIGINE {
+        if self.has_LABNNEGJNHO() {
+            match self.NBGBONGLJHM.take() {
+                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::MKHIPFHEKCK::MKHIPFHEKCK::new()
+            super::POBLGKIGINE::POBLGKIGINE::new()
         }
     }
 
-    // int64 FIHMHJHGHOG = 380;
+    // int64 DBIKJPDBMOE = 89;
 
-    pub fn FIHMHJHGHOG(&self) -> i64 {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FIHMHJHGHOG(v)) => v,
+    pub fn DBIKJPDBMOE(&self) -> i64 {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DBIKJPDBMOE(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_FIHMHJHGHOG(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_DBIKJPDBMOE(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_FIHMHJHGHOG(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FIHMHJHGHOG(..)) => true,
+    pub fn has_DBIKJPDBMOE(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DBIKJPDBMOE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_FIHMHJHGHOG(&mut self, v: i64) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FIHMHJHGHOG(v))
+    pub fn set_DBIKJPDBMOE(&mut self, v: i64) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DBIKJPDBMOE(v))
     }
 
-    // .HMDJNPFBOMM AFCCFJOEIOH = 565;
+    // .IKBDJLNEPBH IMPBCBPIFAG = 1335;
 
-    pub fn AFCCFJOEIOH(&self) -> &super::HMDJNPFBOMM::HMDJNPFBOMM {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::AFCCFJOEIOH(ref v)) => v,
-            _ => <super::HMDJNPFBOMM::HMDJNPFBOMM as ::protobuf::Message>::default_instance(),
+    pub fn IMPBCBPIFAG(&self) -> &super::IKBDJLNEPBH::IKBDJLNEPBH {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(ref v)) => v,
+            _ => <super::IKBDJLNEPBH::IKBDJLNEPBH as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_AFCCFJOEIOH(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_IMPBCBPIFAG(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_AFCCFJOEIOH(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::AFCCFJOEIOH(..)) => true,
+    pub fn has_IMPBCBPIFAG(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_AFCCFJOEIOH(&mut self, v: super::HMDJNPFBOMM::HMDJNPFBOMM) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::AFCCFJOEIOH(v))
+    pub fn set_IMPBCBPIFAG(&mut self, v: super::IKBDJLNEPBH::IKBDJLNEPBH) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_AFCCFJOEIOH(&mut self) -> &mut super::HMDJNPFBOMM::HMDJNPFBOMM {
-        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::AFCCFJOEIOH(_)) = self.DCINAIHIPOC {
+    pub fn mut_IMPBCBPIFAG(&mut self) -> &mut super::IKBDJLNEPBH::IKBDJLNEPBH {
+        if let ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(_)) = self.NBGBONGLJHM {
         } else {
-            self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::AFCCFJOEIOH(super::HMDJNPFBOMM::HMDJNPFBOMM::new()));
+            self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(super::IKBDJLNEPBH::IKBDJLNEPBH::new()));
         }
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::AFCCFJOEIOH(ref mut v)) => v,
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_AFCCFJOEIOH(&mut self) -> super::HMDJNPFBOMM::HMDJNPFBOMM {
-        if self.has_AFCCFJOEIOH() {
-            match self.DCINAIHIPOC.take() {
-                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::AFCCFJOEIOH(v)) => v,
+    pub fn take_IMPBCBPIFAG(&mut self) -> super::IKBDJLNEPBH::IKBDJLNEPBH {
+        if self.has_IMPBCBPIFAG() {
+            match self.NBGBONGLJHM.take() {
+                ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::HMDJNPFBOMM::HMDJNPFBOMM::new()
+            super::IKBDJLNEPBH::IKBDJLNEPBH::new()
         }
     }
 
-    // uint32 KBPJEKKBBNO = 25;
+    // uint32 BJLCBAAKPDI = 1251;
 
-    pub fn KBPJEKKBBNO(&self) -> u32 {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KBPJEKKBBNO(v)) => v,
+    pub fn BJLCBAAKPDI(&self) -> u32 {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::BJLCBAAKPDI(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_KBPJEKKBBNO(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_BJLCBAAKPDI(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_KBPJEKKBBNO(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KBPJEKKBBNO(..)) => true,
+    pub fn has_BJLCBAAKPDI(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::BJLCBAAKPDI(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_KBPJEKKBBNO(&mut self, v: u32) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KBPJEKKBBNO(v))
+    pub fn set_BJLCBAAKPDI(&mut self, v: u32) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::BJLCBAAKPDI(v))
     }
 
-    // uint32 PAIBKOMPFOE = 1763;
+    // uint32 DLKOEIANIMK = 1874;
 
-    pub fn PAIBKOMPFOE(&self) -> u32 {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PAIBKOMPFOE(v)) => v,
+    pub fn DLKOEIANIMK(&self) -> u32 {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DLKOEIANIMK(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_PAIBKOMPFOE(&mut self) {
-        self.DCINAIHIPOC = ::std::option::Option::None;
+    pub fn clear_DLKOEIANIMK(&mut self) {
+        self.NBGBONGLJHM = ::std::option::Option::None;
     }
 
-    pub fn has_PAIBKOMPFOE(&self) -> bool {
-        match self.DCINAIHIPOC {
-            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PAIBKOMPFOE(..)) => true,
+    pub fn has_DLKOEIANIMK(&self) -> bool {
+        match self.NBGBONGLJHM {
+            ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DLKOEIANIMK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_PAIBKOMPFOE(&mut self, v: u32) {
-        self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PAIBKOMPFOE(v))
+    pub fn set_DLKOEIANIMK(&mut self, v: u32) {
+        self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DLKOEIANIMK(v))
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(16);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCFHGIBCEBG",
-            |m: &SocialPlayGameplayOperationScNotify| { &m.NCFHGIBCEBG },
-            |m: &mut SocialPlayGameplayOperationScNotify| { &mut m.NCFHGIBCEBG },
+            "IKDEIJCEDIO",
+            |m: &SocialPlayGameplayOperationScNotify| { &m.IKDEIJCEDIO },
+            |m: &mut SocialPlayGameplayOperationScNotify| { &mut m.IKDEIJCEDIO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFBDMLPDEOE",
-            |m: &SocialPlayGameplayOperationScNotify| { &m.MFBDMLPDEOE },
-            |m: &mut SocialPlayGameplayOperationScNotify| { &mut m.MFBDMLPDEOE },
+            "PLIDNBMCIJH",
+            |m: &SocialPlayGameplayOperationScNotify| { &m.PLIDNBMCIJH },
+            |m: &mut SocialPlayGameplayOperationScNotify| { &mut m.PLIDNBMCIJH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CCKCCKHEFFB::CCKCCKHEFFB>(
-            "IACKOCPGIAK",
-            SocialPlayGameplayOperationScNotify::has_IACKOCPGIAK,
-            SocialPlayGameplayOperationScNotify::IACKOCPGIAK,
-            SocialPlayGameplayOperationScNotify::mut_IACKOCPGIAK,
-            SocialPlayGameplayOperationScNotify::set_IACKOCPGIAK,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "JKMNPPEOIJP",
-            SocialPlayGameplayOperationScNotify::has_JKMNPPEOIJP,
-            SocialPlayGameplayOperationScNotify::JKMNPPEOIJP,
-            SocialPlayGameplayOperationScNotify::set_JKMNPPEOIJP,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OEBJBPNNOKO::OEBJBPNNOKO>(
-            "PEFPFCINABN",
-            SocialPlayGameplayOperationScNotify::has_PEFPFCINABN,
-            SocialPlayGameplayOperationScNotify::PEFPFCINABN,
-            SocialPlayGameplayOperationScNotify::mut_PEFPFCINABN,
-            SocialPlayGameplayOperationScNotify::set_PEFPFCINABN,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MKHIPFHEKCK::MKHIPFHEKCK>(
-            "INPEGNFEPAP",
-            SocialPlayGameplayOperationScNotify::has_INPEGNFEPAP,
-            SocialPlayGameplayOperationScNotify::INPEGNFEPAP,
-            SocialPlayGameplayOperationScNotify::mut_INPEGNFEPAP,
-            SocialPlayGameplayOperationScNotify::set_INPEGNFEPAP,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MHNNEFBOPIE::MHNNEFBOPIE>(
+            "NJDCPMENIFG",
+            SocialPlayGameplayOperationScNotify::has_NJDCPMENIFG,
+            SocialPlayGameplayOperationScNotify::NJDCPMENIFG,
+            SocialPlayGameplayOperationScNotify::mut_NJDCPMENIFG,
+            SocialPlayGameplayOperationScNotify::set_NJDCPMENIFG,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "NEAIFLAADFE",
-            SocialPlayGameplayOperationScNotify::has_NEAIFLAADFE,
-            SocialPlayGameplayOperationScNotify::NEAIFLAADFE,
-            SocialPlayGameplayOperationScNotify::set_NEAIFLAADFE,
+            "LMGGGLECNEA",
+            SocialPlayGameplayOperationScNotify::has_LMGGGLECNEA,
+            SocialPlayGameplayOperationScNotify::LMGGGLECNEA,
+            SocialPlayGameplayOperationScNotify::set_LMGGGLECNEA,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KHCINCLHIOJ::KHCINCLHIOJ>(
-            "BLEDIOOJPNL",
-            SocialPlayGameplayOperationScNotify::has_BLEDIOOJPNL,
-            SocialPlayGameplayOperationScNotify::BLEDIOOJPNL,
-            SocialPlayGameplayOperationScNotify::mut_BLEDIOOJPNL,
-            SocialPlayGameplayOperationScNotify::set_BLEDIOOJPNL,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JBJNJPAOCDA::JBJNJPAOCDA>(
+            "GNLAECODENP",
+            SocialPlayGameplayOperationScNotify::has_GNLAECODENP,
+            SocialPlayGameplayOperationScNotify::GNLAECODENP,
+            SocialPlayGameplayOperationScNotify::mut_GNLAECODENP,
+            SocialPlayGameplayOperationScNotify::set_GNLAECODENP,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FOFNOBHLKGO::FOFNOBHLKGO>(
-            "KANBEFELFFE",
-            SocialPlayGameplayOperationScNotify::has_KANBEFELFFE,
-            SocialPlayGameplayOperationScNotify::KANBEFELFFE,
-            SocialPlayGameplayOperationScNotify::mut_KANBEFELFFE,
-            SocialPlayGameplayOperationScNotify::set_KANBEFELFFE,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ICHNLLCNBCC::ICHNLLCNBCC>(
-            "IHNNEJKHBHL",
-            SocialPlayGameplayOperationScNotify::has_IHNNEJKHBHL,
-            SocialPlayGameplayOperationScNotify::IHNNEJKHBHL,
-            SocialPlayGameplayOperationScNotify::mut_IHNNEJKHBHL,
-            SocialPlayGameplayOperationScNotify::set_IHNNEJKHBHL,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GFLKDHPBAMJ::GFLKDHPBAMJ>(
-            "NGPGKFELCED",
-            SocialPlayGameplayOperationScNotify::has_NGPGKFELCED,
-            SocialPlayGameplayOperationScNotify::NGPGKFELCED,
-            SocialPlayGameplayOperationScNotify::mut_NGPGKFELCED,
-            SocialPlayGameplayOperationScNotify::set_NGPGKFELCED,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MKHIPFHEKCK::MKHIPFHEKCK>(
-            "FHJFKLICFBE",
-            SocialPlayGameplayOperationScNotify::has_FHJFKLICFBE,
-            SocialPlayGameplayOperationScNotify::FHJFKLICFBE,
-            SocialPlayGameplayOperationScNotify::mut_FHJFKLICFBE,
-            SocialPlayGameplayOperationScNotify::set_FHJFKLICFBE,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::POBLGKIGINE::POBLGKIGINE>(
+            "LMFMBJCNALJ",
+            SocialPlayGameplayOperationScNotify::has_LMFMBJCNALJ,
+            SocialPlayGameplayOperationScNotify::LMFMBJCNALJ,
+            SocialPlayGameplayOperationScNotify::mut_LMFMBJCNALJ,
+            SocialPlayGameplayOperationScNotify::set_LMFMBJCNALJ,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "FIHMHJHGHOG",
-            SocialPlayGameplayOperationScNotify::has_FIHMHJHGHOG,
-            SocialPlayGameplayOperationScNotify::FIHMHJHGHOG,
-            SocialPlayGameplayOperationScNotify::set_FIHMHJHGHOG,
+            "HJHPHDACEHE",
+            SocialPlayGameplayOperationScNotify::has_HJHPHDACEHE,
+            SocialPlayGameplayOperationScNotify::HJHPHDACEHE,
+            SocialPlayGameplayOperationScNotify::set_HJHPHDACEHE,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HMDJNPFBOMM::HMDJNPFBOMM>(
-            "AFCCFJOEIOH",
-            SocialPlayGameplayOperationScNotify::has_AFCCFJOEIOH,
-            SocialPlayGameplayOperationScNotify::AFCCFJOEIOH,
-            SocialPlayGameplayOperationScNotify::mut_AFCCFJOEIOH,
-            SocialPlayGameplayOperationScNotify::set_AFCCFJOEIOH,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EIIDKJFKIPE::EIIDKJFKIPE>(
+            "NIELDCLPOLA",
+            SocialPlayGameplayOperationScNotify::has_NIELDCLPOLA,
+            SocialPlayGameplayOperationScNotify::NIELDCLPOLA,
+            SocialPlayGameplayOperationScNotify::mut_NIELDCLPOLA,
+            SocialPlayGameplayOperationScNotify::set_NIELDCLPOLA,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BFAKMCIJFCB::BFAKMCIJFCB>(
+            "OEMEKBOGNJH",
+            SocialPlayGameplayOperationScNotify::has_OEMEKBOGNJH,
+            SocialPlayGameplayOperationScNotify::OEMEKBOGNJH,
+            SocialPlayGameplayOperationScNotify::mut_OEMEKBOGNJH,
+            SocialPlayGameplayOperationScNotify::set_OEMEKBOGNJH,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HMACEHDGGHB::HMACEHDGGHB>(
+            "ONMNMLBANHK",
+            SocialPlayGameplayOperationScNotify::has_ONMNMLBANHK,
+            SocialPlayGameplayOperationScNotify::ONMNMLBANHK,
+            SocialPlayGameplayOperationScNotify::mut_ONMNMLBANHK,
+            SocialPlayGameplayOperationScNotify::set_ONMNMLBANHK,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MIKGMGBHLEN::MIKGMGBHLEN>(
+            "PHKCDLPHMPA",
+            SocialPlayGameplayOperationScNotify::has_PHKCDLPHMPA,
+            SocialPlayGameplayOperationScNotify::PHKCDLPHMPA,
+            SocialPlayGameplayOperationScNotify::mut_PHKCDLPHMPA,
+            SocialPlayGameplayOperationScNotify::set_PHKCDLPHMPA,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::POBLGKIGINE::POBLGKIGINE>(
+            "LABNNEGJNHO",
+            SocialPlayGameplayOperationScNotify::has_LABNNEGJNHO,
+            SocialPlayGameplayOperationScNotify::LABNNEGJNHO,
+            SocialPlayGameplayOperationScNotify::mut_LABNNEGJNHO,
+            SocialPlayGameplayOperationScNotify::set_LABNNEGJNHO,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "KBPJEKKBBNO",
-            SocialPlayGameplayOperationScNotify::has_KBPJEKKBBNO,
-            SocialPlayGameplayOperationScNotify::KBPJEKKBBNO,
-            SocialPlayGameplayOperationScNotify::set_KBPJEKKBBNO,
+            "DBIKJPDBMOE",
+            SocialPlayGameplayOperationScNotify::has_DBIKJPDBMOE,
+            SocialPlayGameplayOperationScNotify::DBIKJPDBMOE,
+            SocialPlayGameplayOperationScNotify::set_DBIKJPDBMOE,
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IKBDJLNEPBH::IKBDJLNEPBH>(
+            "IMPBCBPIFAG",
+            SocialPlayGameplayOperationScNotify::has_IMPBCBPIFAG,
+            SocialPlayGameplayOperationScNotify::IMPBCBPIFAG,
+            SocialPlayGameplayOperationScNotify::mut_IMPBCBPIFAG,
+            SocialPlayGameplayOperationScNotify::set_IMPBCBPIFAG,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "PAIBKOMPFOE",
-            SocialPlayGameplayOperationScNotify::has_PAIBKOMPFOE,
-            SocialPlayGameplayOperationScNotify::PAIBKOMPFOE,
-            SocialPlayGameplayOperationScNotify::set_PAIBKOMPFOE,
+            "BJLCBAAKPDI",
+            SocialPlayGameplayOperationScNotify::has_BJLCBAAKPDI,
+            SocialPlayGameplayOperationScNotify::BJLCBAAKPDI,
+            SocialPlayGameplayOperationScNotify::set_BJLCBAAKPDI,
         ));
-        oneofs.push(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
+            "DLKOEIANIMK",
+            SocialPlayGameplayOperationScNotify::has_DLKOEIANIMK,
+            SocialPlayGameplayOperationScNotify::DLKOEIANIMK,
+            SocialPlayGameplayOperationScNotify::set_DLKOEIANIMK,
+        ));
+        oneofs.push(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SocialPlayGameplayOperationScNotify>(
             "SocialPlayGameplayOperationScNotify",
             fields,
@@ -741,53 +741,53 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                112 => {
+                    self.IKDEIJCEDIO = is.read_uint32()?;
+                },
                 40 => {
-                    self.NCFHGIBCEBG = is.read_uint32()?;
+                    self.PLIDNBMCIJH = is.read_uint32()?;
                 },
-                48 => {
-                    self.MFBDMLPDEOE = is.read_uint32()?;
+                7218 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(is.read_message()?));
                 },
-                5474 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IACKOCPGIAK(is.read_message()?));
+                4984 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMGGGLECNEA(is.read_uint32()?));
                 },
-                2352 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::JKMNPPEOIJP(is.read_uint32()?));
+                2226 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(is.read_message()?));
                 },
-                14730 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PEFPFCINABN(is.read_message()?));
+                8250 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(is.read_message()?));
                 },
-                11170 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::INPEGNFEPAP(is.read_message()?));
+                2656 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::HJHPHDACEHE(is.read_uint32()?));
                 },
-                14240 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NEAIFLAADFE(is.read_uint32()?));
+                1418 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(is.read_message()?));
                 },
-                13490 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::BLEDIOOJPNL(is.read_message()?));
+                10834 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(is.read_message()?));
                 },
-                9410 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KANBEFELFFE(is.read_message()?));
+                1594 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(is.read_message()?));
                 },
-                14034 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IHNNEJKHBHL(is.read_message()?));
+                9226 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(is.read_message()?));
                 },
-                6610 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NGPGKFELCED(is.read_message()?));
+                14354 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(is.read_message()?));
                 },
-                10578 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FHJFKLICFBE(is.read_message()?));
+                712 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DBIKJPDBMOE(is.read_int64()?));
                 },
-                3040 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FIHMHJHGHOG(is.read_int64()?));
+                10682 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(is.read_message()?));
                 },
-                4522 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::AFCCFJOEIOH(is.read_message()?));
+                10008 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::BJLCBAAKPDI(is.read_uint32()?));
                 },
-                200 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KBPJEKKBBNO(is.read_uint32()?));
-                },
-                14104 => {
-                    self.DCINAIHIPOC = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PAIBKOMPFOE(is.read_uint32()?));
+                14992 => {
+                    self.NBGBONGLJHM = ::std::option::Option::Some(social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DLKOEIANIMK(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -801,64 +801,64 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NCFHGIBCEBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NCFHGIBCEBG);
+        if self.IKDEIJCEDIO != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.IKDEIJCEDIO);
         }
-        if self.MFBDMLPDEOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.MFBDMLPDEOE);
+        if self.PLIDNBMCIJH != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.PLIDNBMCIJH);
         }
-        if let ::std::option::Option::Some(ref v) = self.DCINAIHIPOC {
+        if let ::std::option::Option::Some(ref v) = self.NBGBONGLJHM {
             match v {
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IACKOCPGIAK(ref v) => {
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::JKMNPPEOIJP(v) => {
-                    my_size += ::protobuf::rt::uint32_size(294, v);
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMGGGLECNEA(v) => {
+                    my_size += ::protobuf::rt::uint32_size(623, v);
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PEFPFCINABN(ref v) => {
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::INPEGNFEPAP(ref v) => {
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NEAIFLAADFE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1780, v);
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::HJHPHDACEHE(v) => {
+                    my_size += ::protobuf::rt::uint32_size(332, v);
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::BLEDIOOJPNL(ref v) => {
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KANBEFELFFE(ref v) => {
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IHNNEJKHBHL(ref v) => {
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NGPGKFELCED(ref v) => {
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FHJFKLICFBE(ref v) => {
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FIHMHJHGHOG(v) => {
-                    my_size += ::protobuf::rt::int64_size(380, v);
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DBIKJPDBMOE(v) => {
+                    my_size += ::protobuf::rt::int64_size(89, v);
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::AFCCFJOEIOH(ref v) => {
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KBPJEKKBBNO(v) => {
-                    my_size += ::protobuf::rt::uint32_size(25, v);
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::BJLCBAAKPDI(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1251, v);
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PAIBKOMPFOE(v) => {
-                    my_size += ::protobuf::rt::uint32_size(1763, v);
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DLKOEIANIMK(v) => {
+                    my_size += ::protobuf::rt::uint32_size(1874, v);
                 },
             };
         }
@@ -868,55 +868,55 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NCFHGIBCEBG != 0 {
-            os.write_uint32(5, self.NCFHGIBCEBG)?;
+        if self.IKDEIJCEDIO != 0 {
+            os.write_uint32(14, self.IKDEIJCEDIO)?;
         }
-        if self.MFBDMLPDEOE != 0 {
-            os.write_uint32(6, self.MFBDMLPDEOE)?;
+        if self.PLIDNBMCIJH != 0 {
+            os.write_uint32(5, self.PLIDNBMCIJH)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.DCINAIHIPOC {
+        if let ::std::option::Option::Some(ref v) = self.NBGBONGLJHM {
             match v {
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IACKOCPGIAK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(684, v, os)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NJDCPMENIFG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(902, v, os)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::JKMNPPEOIJP(v) => {
-                    os.write_uint32(294, v)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMGGGLECNEA(v) => {
+                    os.write_uint32(623, v)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PEFPFCINABN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1841, v, os)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::GNLAECODENP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(278, v, os)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::INPEGNFEPAP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1396, v, os)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LMFMBJCNALJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1031, v, os)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NEAIFLAADFE(v) => {
-                    os.write_uint32(1780, v)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::HJHPHDACEHE(v) => {
+                    os.write_uint32(332, v)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::BLEDIOOJPNL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1686, v, os)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::NIELDCLPOLA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(177, v, os)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KANBEFELFFE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1176, v, os)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::OEMEKBOGNJH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1354, v, os)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::IHNNEJKHBHL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1754, v, os)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::ONMNMLBANHK(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(199, v, os)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::NGPGKFELCED(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(826, v, os)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::PHKCDLPHMPA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1153, v, os)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FHJFKLICFBE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1322, v, os)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::LABNNEGJNHO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1794, v, os)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::FIHMHJHGHOG(v) => {
-                    os.write_int64(380, v)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DBIKJPDBMOE(v) => {
+                    os.write_int64(89, v)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::AFCCFJOEIOH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(565, v, os)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::IMPBCBPIFAG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1335, v, os)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::KBPJEKKBBNO(v) => {
-                    os.write_uint32(25, v)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::BJLCBAAKPDI(v) => {
+                    os.write_uint32(1251, v)?;
                 },
-                &social_play_gameplay_operation_sc_notify::DCINAIHIPOC::PAIBKOMPFOE(v) => {
-                    os.write_uint32(1763, v)?;
+                &social_play_gameplay_operation_sc_notify::NBGBONGLJHM::DLKOEIANIMK(v) => {
+                    os.write_uint32(1874, v)?;
                 },
             };
         }
@@ -937,30 +937,30 @@ impl ::protobuf::Message for SocialPlayGameplayOperationScNotify {
     }
 
     fn clear(&mut self) {
-        self.NCFHGIBCEBG = 0;
-        self.MFBDMLPDEOE = 0;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
-        self.DCINAIHIPOC = ::std::option::Option::None;
+        self.IKDEIJCEDIO = 0;
+        self.PLIDNBMCIJH = 0;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
+        self.NBGBONGLJHM = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SocialPlayGameplayOperationScNotify {
         static instance: SocialPlayGameplayOperationScNotify = SocialPlayGameplayOperationScNotify {
-            NCFHGIBCEBG: 0,
-            MFBDMLPDEOE: 0,
-            DCINAIHIPOC: ::std::option::Option::None,
+            IKDEIJCEDIO: 0,
+            PLIDNBMCIJH: 0,
+            NBGBONGLJHM: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -989,77 +989,77 @@ pub mod social_play_gameplay_operation_sc_notify {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:SocialPlayGameplayOperationScNotify.DCINAIHIPOC)
-    pub enum DCINAIHIPOC {
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.IACKOCPGIAK)
-        IACKOCPGIAK(super::super::CCKCCKHEFFB::CCKCCKHEFFB),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.JKMNPPEOIJP)
-        JKMNPPEOIJP(u32),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.PEFPFCINABN)
-        PEFPFCINABN(super::super::OEBJBPNNOKO::OEBJBPNNOKO),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.INPEGNFEPAP)
-        INPEGNFEPAP(super::super::MKHIPFHEKCK::MKHIPFHEKCK),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.NEAIFLAADFE)
-        NEAIFLAADFE(u32),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.BLEDIOOJPNL)
-        BLEDIOOJPNL(super::super::KHCINCLHIOJ::KHCINCLHIOJ),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.KANBEFELFFE)
-        KANBEFELFFE(super::super::FOFNOBHLKGO::FOFNOBHLKGO),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.IHNNEJKHBHL)
-        IHNNEJKHBHL(super::super::ICHNLLCNBCC::ICHNLLCNBCC),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.NGPGKFELCED)
-        NGPGKFELCED(super::super::GFLKDHPBAMJ::GFLKDHPBAMJ),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.FHJFKLICFBE)
-        FHJFKLICFBE(super::super::MKHIPFHEKCK::MKHIPFHEKCK),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.FIHMHJHGHOG)
-        FIHMHJHGHOG(i64),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.AFCCFJOEIOH)
-        AFCCFJOEIOH(super::super::HMDJNPFBOMM::HMDJNPFBOMM),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.KBPJEKKBBNO)
-        KBPJEKKBBNO(u32),
-        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.PAIBKOMPFOE)
-        PAIBKOMPFOE(u32),
+    // @@protoc_insertion_point(oneof:SocialPlayGameplayOperationScNotify.NBGBONGLJHM)
+    pub enum NBGBONGLJHM {
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.NJDCPMENIFG)
+        NJDCPMENIFG(super::super::MHNNEFBOPIE::MHNNEFBOPIE),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.LMGGGLECNEA)
+        LMGGGLECNEA(u32),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.GNLAECODENP)
+        GNLAECODENP(super::super::JBJNJPAOCDA::JBJNJPAOCDA),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.LMFMBJCNALJ)
+        LMFMBJCNALJ(super::super::POBLGKIGINE::POBLGKIGINE),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.HJHPHDACEHE)
+        HJHPHDACEHE(u32),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.NIELDCLPOLA)
+        NIELDCLPOLA(super::super::EIIDKJFKIPE::EIIDKJFKIPE),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.OEMEKBOGNJH)
+        OEMEKBOGNJH(super::super::BFAKMCIJFCB::BFAKMCIJFCB),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.ONMNMLBANHK)
+        ONMNMLBANHK(super::super::HMACEHDGGHB::HMACEHDGGHB),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.PHKCDLPHMPA)
+        PHKCDLPHMPA(super::super::MIKGMGBHLEN::MIKGMGBHLEN),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.LABNNEGJNHO)
+        LABNNEGJNHO(super::super::POBLGKIGINE::POBLGKIGINE),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.DBIKJPDBMOE)
+        DBIKJPDBMOE(i64),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.IMPBCBPIFAG)
+        IMPBCBPIFAG(super::super::IKBDJLNEPBH::IKBDJLNEPBH),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.BJLCBAAKPDI)
+        BJLCBAAKPDI(u32),
+        // @@protoc_insertion_point(oneof_field:SocialPlayGameplayOperationScNotify.DLKOEIANIMK)
+        DLKOEIANIMK(u32),
     }
 
-    impl ::protobuf::Oneof for DCINAIHIPOC {
+    impl ::protobuf::Oneof for NBGBONGLJHM {
     }
 
-    impl ::protobuf::OneofFull for DCINAIHIPOC {
+    impl ::protobuf::OneofFull for NBGBONGLJHM {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::SocialPlayGameplayOperationScNotify as ::protobuf::MessageFull>::descriptor().oneof_by_name("DCINAIHIPOC").unwrap()).clone()
+            descriptor.get(|| <super::SocialPlayGameplayOperationScNotify as ::protobuf::MessageFull>::descriptor().oneof_by_name("NBGBONGLJHM").unwrap()).clone()
         }
     }
 
-    impl DCINAIHIPOC {
+    impl NBGBONGLJHM {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<DCINAIHIPOC>("DCINAIHIPOC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NBGBONGLJHM>("NBGBONGLJHM")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)SocialPlayGameplayOperationScNotify.proto\x1a\x11CCKCCKHEFFB.proto\
-    \x1a\x11FOFNOBHLKGO.proto\x1a\x11GFLKDHPBAMJ.proto\x1a\x11HMDJNPFBOMM.pr\
-    oto\x1a\x11ICHNLLCNBCC.proto\x1a\x11KHCINCLHIOJ.proto\x1a\x11MKHIPFHEKCK\
-    .proto\x1a\x11OEBJBPNNOKO.proto\"\xfb\x05\n#SocialPlayGameplayOperationS\
-    cNotify\x12\x20\n\x0bNCFHGIBCEBG\x18\x05\x20\x01(\rR\x0bNCFHGIBCEBG\x12\
-    \x20\n\x0bMFBDMLPDEOE\x18\x06\x20\x01(\rR\x0bMFBDMLPDEOE\x121\n\x0bIACKO\
-    CPGIAK\x18\xac\x05\x20\x01(\x0b2\x0c.CCKCCKHEFFBH\0R\x0bIACKOCPGIAK\x12#\
-    \n\x0bJKMNPPEOIJP\x18\xa6\x02\x20\x01(\rH\0R\x0bJKMNPPEOIJP\x121\n\x0bPE\
-    FPFCINABN\x18\xb1\x0e\x20\x01(\x0b2\x0c.OEBJBPNNOKOH\0R\x0bPEFPFCINABN\
-    \x121\n\x0bINPEGNFEPAP\x18\xf4\n\x20\x01(\x0b2\x0c.MKHIPFHEKCKH\0R\x0bIN\
-    PEGNFEPAP\x12#\n\x0bNEAIFLAADFE\x18\xf4\r\x20\x01(\rH\0R\x0bNEAIFLAADFE\
-    \x121\n\x0bBLEDIOOJPNL\x18\x96\r\x20\x01(\x0b2\x0c.KHCINCLHIOJH\0R\x0bBL\
-    EDIOOJPNL\x121\n\x0bKANBEFELFFE\x18\x98\t\x20\x01(\x0b2\x0c.FOFNOBHLKGOH\
-    \0R\x0bKANBEFELFFE\x121\n\x0bIHNNEJKHBHL\x18\xda\r\x20\x01(\x0b2\x0c.ICH\
-    NLLCNBCCH\0R\x0bIHNNEJKHBHL\x121\n\x0bNGPGKFELCED\x18\xba\x06\x20\x01(\
-    \x0b2\x0c.GFLKDHPBAMJH\0R\x0bNGPGKFELCED\x121\n\x0bFHJFKLICFBE\x18\xaa\n\
-    \x20\x01(\x0b2\x0c.MKHIPFHEKCKH\0R\x0bFHJFKLICFBE\x12#\n\x0bFIHMHJHGHOG\
-    \x18\xfc\x02\x20\x01(\x03H\0R\x0bFIHMHJHGHOG\x121\n\x0bAFCCFJOEIOH\x18\
-    \xb5\x04\x20\x01(\x0b2\x0c.HMDJNPFBOMMH\0R\x0bAFCCFJOEIOH\x12\"\n\x0bKBP\
-    JEKKBBNO\x18\x19\x20\x01(\rH\0R\x0bKBPJEKKBBNO\x12#\n\x0bPAIBKOMPFOE\x18\
-    \xe3\r\x20\x01(\rH\0R\x0bPAIBKOMPFOEB\r\n\x0bDCINAIHIPOCb\x06proto3\
+    \n)SocialPlayGameplayOperationScNotify.proto\x1a\x11BFAKMCIJFCB.proto\
+    \x1a\x11EIIDKJFKIPE.proto\x1a\x11HMACEHDGGHB.proto\x1a\x11IKBDJLNEPBH.pr\
+    oto\x1a\x11JBJNJPAOCDA.proto\x1a\x11MHNNEFBOPIE.proto\x1a\x11MIKGMGBHLEN\
+    .proto\x1a\x11POBLGKIGINE.proto\"\xfb\x05\n#SocialPlayGameplayOperationS\
+    cNotify\x12\x20\n\x0bIKDEIJCEDIO\x18\x0e\x20\x01(\rR\x0bIKDEIJCEDIO\x12\
+    \x20\n\x0bPLIDNBMCIJH\x18\x05\x20\x01(\rR\x0bPLIDNBMCIJH\x121\n\x0bNJDCP\
+    MENIFG\x18\x86\x07\x20\x01(\x0b2\x0c.MHNNEFBOPIEH\0R\x0bNJDCPMENIFG\x12#\
+    \n\x0bLMGGGLECNEA\x18\xef\x04\x20\x01(\rH\0R\x0bLMGGGLECNEA\x121\n\x0bGN\
+    LAECODENP\x18\x96\x02\x20\x01(\x0b2\x0c.JBJNJPAOCDAH\0R\x0bGNLAECODENP\
+    \x121\n\x0bLMFMBJCNALJ\x18\x87\x08\x20\x01(\x0b2\x0c.POBLGKIGINEH\0R\x0b\
+    LMFMBJCNALJ\x12#\n\x0bHJHPHDACEHE\x18\xcc\x02\x20\x01(\rH\0R\x0bHJHPHDAC\
+    EHE\x121\n\x0bNIELDCLPOLA\x18\xb1\x01\x20\x01(\x0b2\x0c.EIIDKJFKIPEH\0R\
+    \x0bNIELDCLPOLA\x121\n\x0bOEMEKBOGNJH\x18\xca\n\x20\x01(\x0b2\x0c.BFAKMC\
+    IJFCBH\0R\x0bOEMEKBOGNJH\x121\n\x0bONMNMLBANHK\x18\xc7\x01\x20\x01(\x0b2\
+    \x0c.HMACEHDGGHBH\0R\x0bONMNMLBANHK\x121\n\x0bPHKCDLPHMPA\x18\x81\t\x20\
+    \x01(\x0b2\x0c.MIKGMGBHLENH\0R\x0bPHKCDLPHMPA\x121\n\x0bLABNNEGJNHO\x18\
+    \x82\x0e\x20\x01(\x0b2\x0c.POBLGKIGINEH\0R\x0bLABNNEGJNHO\x12\"\n\x0bDBI\
+    KJPDBMOE\x18Y\x20\x01(\x03H\0R\x0bDBIKJPDBMOE\x121\n\x0bIMPBCBPIFAG\x18\
+    \xb7\n\x20\x01(\x0b2\x0c.IKBDJLNEPBHH\0R\x0bIMPBCBPIFAG\x12#\n\x0bBJLCBA\
+    AKPDI\x18\xe3\t\x20\x01(\rH\0R\x0bBJLCBAAKPDI\x12#\n\x0bDLKOEIANIMK\x18\
+    \xd2\x0e\x20\x01(\rH\0R\x0bDLKOEIANIMKB\r\n\x0bNBGBONGLJHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -1077,14 +1077,14 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(8);
-            deps.push(super::CCKCCKHEFFB::file_descriptor().clone());
-            deps.push(super::FOFNOBHLKGO::file_descriptor().clone());
-            deps.push(super::GFLKDHPBAMJ::file_descriptor().clone());
-            deps.push(super::HMDJNPFBOMM::file_descriptor().clone());
-            deps.push(super::ICHNLLCNBCC::file_descriptor().clone());
-            deps.push(super::KHCINCLHIOJ::file_descriptor().clone());
-            deps.push(super::MKHIPFHEKCK::file_descriptor().clone());
-            deps.push(super::OEBJBPNNOKO::file_descriptor().clone());
+            deps.push(super::BFAKMCIJFCB::file_descriptor().clone());
+            deps.push(super::EIIDKJFKIPE::file_descriptor().clone());
+            deps.push(super::HMACEHDGGHB::file_descriptor().clone());
+            deps.push(super::IKBDJLNEPBH::file_descriptor().clone());
+            deps.push(super::JBJNJPAOCDA::file_descriptor().clone());
+            deps.push(super::MHNNEFBOPIE::file_descriptor().clone());
+            deps.push(super::MIKGMGBHLEN::file_descriptor().clone());
+            deps.push(super::POBLGKIGINE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SocialPlayGameplayOperationScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

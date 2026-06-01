@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeHipplenEndingRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeHipplenEndingRewardCsReq.DKPCDLDDONG)
-    pub DKPCDLDDONG: u32,
+    // @@protoc_insertion_point(field:TakeHipplenEndingRewardCsReq.BKFICFMMGIN)
+    pub BKFICFMMGIN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeHipplenEndingRewardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TakeHipplenEndingRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKPCDLDDONG",
-            |m: &TakeHipplenEndingRewardCsReq| { &m.DKPCDLDDONG },
-            |m: &mut TakeHipplenEndingRewardCsReq| { &mut m.DKPCDLDDONG },
+            "BKFICFMMGIN",
+            |m: &TakeHipplenEndingRewardCsReq| { &m.BKFICFMMGIN },
+            |m: &mut TakeHipplenEndingRewardCsReq| { &mut m.BKFICFMMGIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeHipplenEndingRewardCsReq>(
             "TakeHipplenEndingRewardCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TakeHipplenEndingRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.DKPCDLDDONG = is.read_uint32()?;
+                72 => {
+                    self.BKFICFMMGIN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for TakeHipplenEndingRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DKPCDLDDONG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.DKPCDLDDONG);
+        if self.BKFICFMMGIN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BKFICFMMGIN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for TakeHipplenEndingRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DKPCDLDDONG != 0 {
-            os.write_uint32(12, self.DKPCDLDDONG)?;
+        if self.BKFICFMMGIN != 0 {
+            os.write_uint32(9, self.BKFICFMMGIN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for TakeHipplenEndingRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.DKPCDLDDONG = 0;
+        self.BKFICFMMGIN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeHipplenEndingRewardCsReq {
         static instance: TakeHipplenEndingRewardCsReq = TakeHipplenEndingRewardCsReq {
-            DKPCDLDDONG: 0,
+            BKFICFMMGIN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for TakeHipplenEndingRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeHipplenEndingRewardCsReq.proto\"@\n\x1cTakeHipplenEndingRewardCs\
-    Req\x12\x20\n\x0bDKPCDLDDONG\x18\x0c\x20\x01(\rR\x0bDKPCDLDDONGb\x06prot\
-    o3\
+    Req\x12\x20\n\x0bBKFICFMMGIN\x18\t\x20\x01(\rR\x0bBKFICFMMGINb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdReplayType)
 pub enum CmdReplayType {
-    // @@protoc_insertion_point(enum_value:CmdReplayType.EDFKEEKMFIB_PCPDHELPKEM)
-    EDFKEEKMFIB_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdGetReplayTokenCsReq)
-    CmdGetReplayTokenCsReq = 3591,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdAHCAHFFNHLD)
-    CmdAHCAHFFNHLD = 3595,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.EDFKEEKMFIB_MLJMDFDNOOE)
-    EDFKEEKMFIB_MLJMDFDNOOE = 3594,
-    // @@protoc_insertion_point(enum_value:CmdReplayType.CmdEKGAMNCMOEJ)
-    CmdEKGAMNCMOEJ = 3510,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_NLCDGIPGFDJ)
+    GLHDKOHHDDK_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_OENOMLJLADC)
+    GLHDKOHHDDK_OENOMLJLADC = 3580,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_IDABMGHDHJH)
+    GLHDKOHHDDK_IDABMGHDHJH = 3573,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_OINMFGJKBFP)
+    GLHDKOHHDDK_OINMFGJKBFP = 3527,
+    // @@protoc_insertion_point(enum_value:CmdReplayType.GLHDKOHHDDK_CMGJOLOLINK)
+    GLHDKOHHDDK_CMGJOLOLINK = 3503,
 }
 
 impl ::protobuf::Enum for CmdReplayType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for CmdReplayType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdReplayType> {
         match value {
-            0 => ::std::option::Option::Some(CmdReplayType::EDFKEEKMFIB_PCPDHELPKEM),
-            3591 => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
-            3595 => ::std::option::Option::Some(CmdReplayType::CmdAHCAHFFNHLD),
-            3594 => ::std::option::Option::Some(CmdReplayType::EDFKEEKMFIB_MLJMDFDNOOE),
-            3510 => ::std::option::Option::Some(CmdReplayType::CmdEKGAMNCMOEJ),
+            0 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_NLCDGIPGFDJ),
+            3580 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_OENOMLJLADC),
+            3573 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH),
+            3527 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_OINMFGJKBFP),
+            3503 => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_CMGJOLOLINK),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdReplayType> {
         match str {
-            "EDFKEEKMFIB_PCPDHELPKEM" => ::std::option::Option::Some(CmdReplayType::EDFKEEKMFIB_PCPDHELPKEM),
-            "CmdGetReplayTokenCsReq" => ::std::option::Option::Some(CmdReplayType::CmdGetReplayTokenCsReq),
-            "CmdAHCAHFFNHLD" => ::std::option::Option::Some(CmdReplayType::CmdAHCAHFFNHLD),
-            "EDFKEEKMFIB_MLJMDFDNOOE" => ::std::option::Option::Some(CmdReplayType::EDFKEEKMFIB_MLJMDFDNOOE),
-            "CmdEKGAMNCMOEJ" => ::std::option::Option::Some(CmdReplayType::CmdEKGAMNCMOEJ),
+            "GLHDKOHHDDK_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_NLCDGIPGFDJ),
+            "GLHDKOHHDDK_OENOMLJLADC" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_OENOMLJLADC),
+            "GLHDKOHHDDK_IDABMGHDHJH" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH),
+            "GLHDKOHHDDK_OINMFGJKBFP" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_OINMFGJKBFP),
+            "GLHDKOHHDDK_CMGJOLOLINK" => ::std::option::Option::Some(CmdReplayType::GLHDKOHHDDK_CMGJOLOLINK),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdReplayType] = &[
-        CmdReplayType::EDFKEEKMFIB_PCPDHELPKEM,
-        CmdReplayType::CmdGetReplayTokenCsReq,
-        CmdReplayType::CmdAHCAHFFNHLD,
-        CmdReplayType::EDFKEEKMFIB_MLJMDFDNOOE,
-        CmdReplayType::CmdEKGAMNCMOEJ,
+        CmdReplayType::GLHDKOHHDDK_NLCDGIPGFDJ,
+        CmdReplayType::GLHDKOHHDDK_OENOMLJLADC,
+        CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH,
+        CmdReplayType::GLHDKOHHDDK_OINMFGJKBFP,
+        CmdReplayType::GLHDKOHHDDK_CMGJOLOLINK,
     ];
 }
 
@@ -85,11 +85,11 @@ impl ::protobuf::EnumFull for CmdReplayType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdReplayType::EDFKEEKMFIB_PCPDHELPKEM => 0,
-            CmdReplayType::CmdGetReplayTokenCsReq => 1,
-            CmdReplayType::CmdAHCAHFFNHLD => 2,
-            CmdReplayType::EDFKEEKMFIB_MLJMDFDNOOE => 3,
-            CmdReplayType::CmdEKGAMNCMOEJ => 4,
+            CmdReplayType::GLHDKOHHDDK_NLCDGIPGFDJ => 0,
+            CmdReplayType::GLHDKOHHDDK_OENOMLJLADC => 1,
+            CmdReplayType::GLHDKOHHDDK_IDABMGHDHJH => 2,
+            CmdReplayType::GLHDKOHHDDK_OINMFGJKBFP => 3,
+            CmdReplayType::GLHDKOHHDDK_CMGJOLOLINK => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,7 +97,7 @@ impl ::protobuf::EnumFull for CmdReplayType {
 
 impl ::std::default::Default for CmdReplayType {
     fn default() -> Self {
-        CmdReplayType::EDFKEEKMFIB_PCPDHELPKEM
+        CmdReplayType::GLHDKOHHDDK_NLCDGIPGFDJ
     }
 }
 
@@ -108,10 +108,11 @@ impl CmdReplayType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdReplayType.proto*\x91\x01\n\rCmdReplayType\x12\x1b\n\x17EDFKEEK\
-    MFIB_PCPDHELPKEM\x10\0\x12\x1b\n\x16CmdGetReplayTokenCsReq\x10\x87\x1c\
-    \x12\x13\n\x0eCmdAHCAHFFNHLD\x10\x8b\x1c\x12\x1c\n\x17EDFKEEKMFIB_MLJMDF\
-    DNOOE\x10\x8a\x1c\x12\x13\n\x0eCmdEKGAMNCMOEJ\x10\xb6\x1bb\x06proto3\
+    \n\x13CmdReplayType.proto*\xa4\x01\n\rCmdReplayType\x12\x1b\n\x17GLHDKOH\
+    HDDK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GLHDKOHHDDK_OENOMLJLADC\x10\xfc\x1b\
+    \x12\x1c\n\x17GLHDKOHHDDK_IDABMGHDHJH\x10\xf5\x1b\x12\x1c\n\x17GLHDKOHHD\
+    DK_OINMFGJKBFP\x10\xc7\x1b\x12\x1c\n\x17GLHDKOHHDDK_CMGJOLOLINK\x10\xaf\
+    \x1bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

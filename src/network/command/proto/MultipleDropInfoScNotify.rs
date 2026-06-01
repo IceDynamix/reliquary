@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MultipleDropInfoScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MultipleDropInfoScNotify.DFEOOEHFAAC)
-    pub DFEOOEHFAAC: ::std::vec::Vec<super::DMINLLDNNDL::DMINLLDNNDL>,
+    // @@protoc_insertion_point(field:MultipleDropInfoScNotify.MOPAGKNEMOD)
+    pub MOPAGKNEMOD: ::std::vec::Vec<super::NGLOBFBCGBB::NGLOBFBCGBB>,
     // special fields
     // @@protoc_insertion_point(special_field:MultipleDropInfoScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MultipleDropInfoScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DFEOOEHFAAC",
-            |m: &MultipleDropInfoScNotify| { &m.DFEOOEHFAAC },
-            |m: &mut MultipleDropInfoScNotify| { &mut m.DFEOOEHFAAC },
+            "MOPAGKNEMOD",
+            |m: &MultipleDropInfoScNotify| { &m.MOPAGKNEMOD },
+            |m: &mut MultipleDropInfoScNotify| { &mut m.MOPAGKNEMOD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MultipleDropInfoScNotify>(
             "MultipleDropInfoScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MultipleDropInfoScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.DFEOOEHFAAC.push(is.read_message()?);
+                42 => {
+                    self.MOPAGKNEMOD.push(is.read_message()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MultipleDropInfoScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DFEOOEHFAAC {
+        for value in &self.MOPAGKNEMOD {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MultipleDropInfoScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DFEOOEHFAAC {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        for v in &self.MOPAGKNEMOD {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MultipleDropInfoScNotify {
     }
 
     fn clear(&mut self) {
-        self.DFEOOEHFAAC.clear();
+        self.MOPAGKNEMOD.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MultipleDropInfoScNotify {
         static instance: MultipleDropInfoScNotify = MultipleDropInfoScNotify {
-            DFEOOEHFAAC: ::std::vec::Vec::new(),
+            MOPAGKNEMOD: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for MultipleDropInfoScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eMultipleDropInfoScNotify.proto\x1a\x11DMINLLDNNDL.proto\"J\n\x18Mu\
-    ltipleDropInfoScNotify\x12.\n\x0bDFEOOEHFAAC\x18\x06\x20\x03(\x0b2\x0c.D\
-    MINLLDNNDLR\x0bDFEOOEHFAACb\x06proto3\
+    \n\x1eMultipleDropInfoScNotify.proto\x1a\x11NGLOBFBCGBB.proto\"J\n\x18Mu\
+    ltipleDropInfoScNotify\x12.\n\x0bMOPAGKNEMOD\x18\x05\x20\x03(\x0b2\x0c.N\
+    GLOBFBCGBBR\x0bMOPAGKNEMODb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DMINLLDNNDL::file_descriptor().clone());
+            deps.push(super::NGLOBFBCGBB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MultipleDropInfoScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

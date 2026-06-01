@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayBackGroundMusicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlayBackGroundMusicCsReq.DMGCIDGKPFF)
-    pub DMGCIDGKPFF: ::protobuf::MessageField<super::MCPPIEJEBEF::MCPPIEJEBEF>,
+    // @@protoc_insertion_point(field:PlayBackGroundMusicCsReq.IKJNIKIGFLF)
+    pub IKJNIKIGFLF: ::protobuf::MessageField<super::MNCBEDBDDHL::MNCBEDBDDHL>,
     // special fields
     // @@protoc_insertion_point(special_field:PlayBackGroundMusicCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl PlayBackGroundMusicCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MCPPIEJEBEF::MCPPIEJEBEF>(
-            "DMGCIDGKPFF",
-            |m: &PlayBackGroundMusicCsReq| { &m.DMGCIDGKPFF },
-            |m: &mut PlayBackGroundMusicCsReq| { &mut m.DMGCIDGKPFF },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MNCBEDBDDHL::MNCBEDBDDHL>(
+            "IKJNIKIGFLF",
+            |m: &PlayBackGroundMusicCsReq| { &m.IKJNIKIGFLF },
+            |m: &mut PlayBackGroundMusicCsReq| { &mut m.IKJNIKIGFLF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayBackGroundMusicCsReq>(
             "PlayBackGroundMusicCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlayBackGroundMusicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DMGCIDGKPFF)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKJNIKIGFLF)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PlayBackGroundMusicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DMGCIDGKPFF.as_ref() {
+        if let Some(v) = self.IKJNIKIGFLF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PlayBackGroundMusicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DMGCIDGKPFF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.IKJNIKIGFLF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PlayBackGroundMusicCsReq {
     }
 
     fn clear(&mut self) {
-        self.DMGCIDGKPFF.clear();
+        self.IKJNIKIGFLF.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayBackGroundMusicCsReq {
         static instance: PlayBackGroundMusicCsReq = PlayBackGroundMusicCsReq {
-            DMGCIDGKPFF: ::protobuf::MessageField::none(),
+            IKJNIKIGFLF: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayBackGroundMusicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1ePlayBackGroundMusicCsReq.proto\x1a\x11MCPPIEJEBEF.proto\"J\n\x18Pl\
-    ayBackGroundMusicCsReq\x12.\n\x0bDMGCIDGKPFF\x18\n\x20\x01(\x0b2\x0c.MCP\
-    PIEJEBEFR\x0bDMGCIDGKPFFb\x06proto3\
+    \n\x1ePlayBackGroundMusicCsReq.proto\x1a\x11MNCBEDBDDHL.proto\"J\n\x18Pl\
+    ayBackGroundMusicCsReq\x12.\n\x0bIKJNIKIGFLF\x18\x02\x20\x01(\x0b2\x0c.M\
+    NCBEDBDDHLR\x0bIKJNIKIGFLFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::MCPPIEJEBEF::file_descriptor().clone());
+            deps.push(super::MNCBEDBDDHL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlayBackGroundMusicCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

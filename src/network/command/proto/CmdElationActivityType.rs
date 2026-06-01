@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdElationActivityType)
 pub enum CmdElationActivityType {
-    // @@protoc_insertion_point(enum_value:CmdElationActivityType.LMALBOAPKOH_PCPDHELPKEM)
-    LMALBOAPKOH_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdElationActivityBattleEndScNotify)
-    CmdElationActivityBattleEndScNotify = 9105,
-    // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdEnterElationActivityStageScRsp)
-    CmdEnterElationActivityStageScRsp = 9107,
-    // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdEnterElationActivityStageCsReq)
-    CmdEnterElationActivityStageCsReq = 9101,
-    // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdGetElationActivityDataScRsp)
-    CmdGetElationActivityDataScRsp = 9110,
-    // @@protoc_insertion_point(enum_value:CmdElationActivityType.CmdGetActivityElationDataCsReq)
-    CmdGetActivityElationDataCsReq = 9109,
+    // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_NLCDGIPGFDJ)
+    GFOCDHFMBBC_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_FAGCDJLHAAE)
+    GFOCDHFMBBC_FAGCDJLHAAE = 9109,
+    // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_AECKJFFELBJ)
+    GFOCDHFMBBC_AECKJFFELBJ = 9110,
+    // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_ELNGDMKBHIE)
+    GFOCDHFMBBC_ELNGDMKBHIE = 9104,
+    // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_GMCIMIMJNKC)
+    GFOCDHFMBBC_GMCIMIMJNKC = 9102,
+    // @@protoc_insertion_point(enum_value:CmdElationActivityType.GFOCDHFMBBC_NLNGGABBEEK)
+    GFOCDHFMBBC_NLNGGABBEEK = 9108,
 }
 
 impl ::protobuf::Enum for CmdElationActivityType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdElationActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdElationActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdElationActivityType::LMALBOAPKOH_PCPDHELPKEM),
-            9105 => ::std::option::Option::Some(CmdElationActivityType::CmdElationActivityBattleEndScNotify),
-            9107 => ::std::option::Option::Some(CmdElationActivityType::CmdEnterElationActivityStageScRsp),
-            9101 => ::std::option::Option::Some(CmdElationActivityType::CmdEnterElationActivityStageCsReq),
-            9110 => ::std::option::Option::Some(CmdElationActivityType::CmdGetElationActivityDataScRsp),
-            9109 => ::std::option::Option::Some(CmdElationActivityType::CmdGetActivityElationDataCsReq),
+            0 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_NLCDGIPGFDJ),
+            9109 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE),
+            9110 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ),
+            9104 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_ELNGDMKBHIE),
+            9102 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_GMCIMIMJNKC),
+            9108 => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_NLNGGABBEEK),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdElationActivityType> {
         match str {
-            "LMALBOAPKOH_PCPDHELPKEM" => ::std::option::Option::Some(CmdElationActivityType::LMALBOAPKOH_PCPDHELPKEM),
-            "CmdElationActivityBattleEndScNotify" => ::std::option::Option::Some(CmdElationActivityType::CmdElationActivityBattleEndScNotify),
-            "CmdEnterElationActivityStageScRsp" => ::std::option::Option::Some(CmdElationActivityType::CmdEnterElationActivityStageScRsp),
-            "CmdEnterElationActivityStageCsReq" => ::std::option::Option::Some(CmdElationActivityType::CmdEnterElationActivityStageCsReq),
-            "CmdGetElationActivityDataScRsp" => ::std::option::Option::Some(CmdElationActivityType::CmdGetElationActivityDataScRsp),
-            "CmdGetActivityElationDataCsReq" => ::std::option::Option::Some(CmdElationActivityType::CmdGetActivityElationDataCsReq),
+            "GFOCDHFMBBC_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_NLCDGIPGFDJ),
+            "GFOCDHFMBBC_FAGCDJLHAAE" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE),
+            "GFOCDHFMBBC_AECKJFFELBJ" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ),
+            "GFOCDHFMBBC_ELNGDMKBHIE" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_ELNGDMKBHIE),
+            "GFOCDHFMBBC_GMCIMIMJNKC" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_GMCIMIMJNKC),
+            "GFOCDHFMBBC_NLNGGABBEEK" => ::std::option::Option::Some(CmdElationActivityType::GFOCDHFMBBC_NLNGGABBEEK),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdElationActivityType] = &[
-        CmdElationActivityType::LMALBOAPKOH_PCPDHELPKEM,
-        CmdElationActivityType::CmdElationActivityBattleEndScNotify,
-        CmdElationActivityType::CmdEnterElationActivityStageScRsp,
-        CmdElationActivityType::CmdEnterElationActivityStageCsReq,
-        CmdElationActivityType::CmdGetElationActivityDataScRsp,
-        CmdElationActivityType::CmdGetActivityElationDataCsReq,
+        CmdElationActivityType::GFOCDHFMBBC_NLCDGIPGFDJ,
+        CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE,
+        CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ,
+        CmdElationActivityType::GFOCDHFMBBC_ELNGDMKBHIE,
+        CmdElationActivityType::GFOCDHFMBBC_GMCIMIMJNKC,
+        CmdElationActivityType::GFOCDHFMBBC_NLNGGABBEEK,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdElationActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdElationActivityType::LMALBOAPKOH_PCPDHELPKEM => 0,
-            CmdElationActivityType::CmdElationActivityBattleEndScNotify => 1,
-            CmdElationActivityType::CmdEnterElationActivityStageScRsp => 2,
-            CmdElationActivityType::CmdEnterElationActivityStageCsReq => 3,
-            CmdElationActivityType::CmdGetElationActivityDataScRsp => 4,
-            CmdElationActivityType::CmdGetActivityElationDataCsReq => 5,
+            CmdElationActivityType::GFOCDHFMBBC_NLCDGIPGFDJ => 0,
+            CmdElationActivityType::GFOCDHFMBBC_FAGCDJLHAAE => 1,
+            CmdElationActivityType::GFOCDHFMBBC_AECKJFFELBJ => 2,
+            CmdElationActivityType::GFOCDHFMBBC_ELNGDMKBHIE => 3,
+            CmdElationActivityType::GFOCDHFMBBC_GMCIMIMJNKC => 4,
+            CmdElationActivityType::GFOCDHFMBBC_NLNGGABBEEK => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdElationActivityType {
 
 impl ::std::default::Default for CmdElationActivityType {
     fn default() -> Self {
-        CmdElationActivityType::LMALBOAPKOH_PCPDHELPKEM
+        CmdElationActivityType::GFOCDHFMBBC_NLCDGIPGFDJ
     }
 }
 
@@ -114,12 +114,11 @@ impl CmdElationActivityType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cCmdElationActivityType.proto*\xf9\x01\n\x16CmdElationActivityType\
-    \x12\x1b\n\x17LMALBOAPKOH_PCPDHELPKEM\x10\0\x12(\n#CmdElationActivityBat\
-    tleEndScNotify\x10\x91G\x12&\n!CmdEnterElationActivityStageScRsp\x10\x93\
-    G\x12&\n!CmdEnterElationActivityStageCsReq\x10\x8dG\x12#\n\x1eCmdGetElat\
-    ionActivityDataScRsp\x10\x96G\x12#\n\x1eCmdGetActivityElationDataCsReq\
-    \x10\x95Gb\x06proto3\
+    \n\x1cCmdElationActivityType.proto*\xcb\x01\n\x16CmdElationActivityType\
+    \x12\x1b\n\x17GFOCDHFMBBC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GFOCDHFMBBC_FAG\
+    CDJLHAAE\x10\x95G\x12\x1c\n\x17GFOCDHFMBBC_AECKJFFELBJ\x10\x96G\x12\x1c\
+    \n\x17GFOCDHFMBBC_ELNGDMKBHIE\x10\x90G\x12\x1c\n\x17GFOCDHFMBBC_GMCIMIMJ\
+    NKC\x10\x8eG\x12\x1c\n\x17GFOCDHFMBBC_NLNGGABBEEK\x10\x94Gb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

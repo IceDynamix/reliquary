@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPunkLordBattleRecordScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.JIPALBLOPFI)
-    pub JIPALBLOPFI: ::protobuf::MessageField<super::JLLIDDIBOHI::JLLIDDIBOHI>,
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.DFIDPJEIBJK)
-    pub DFIDPJEIBJK: ::std::vec::Vec<super::PHOCECJOBHH::PHOCECJOBHH>,
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.PACIODONHGJ)
-    pub PACIODONHGJ: ::std::vec::Vec<super::TryDownLoadReplay::TryDownLoadReplay>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.KHOLBEGBFOM)
+    pub KHOLBEGBFOM: ::protobuf::MessageField<super::CDCCPHILOCC::CDCCPHILOCC>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.GAIKBNPIFLM)
+    pub GAIKBNPIFLM: ::std::vec::Vec<super::CJDIAHDLCNJ::CJDIAHDLCNJ>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.HLCIMLHMEKI)
+    pub HLCIMLHMEKI: ::std::vec::Vec<super::TryDownLoadReplay::TryDownLoadReplay>,
     // @@protoc_insertion_point(field:GetPunkLordBattleRecordScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -55,20 +55,20 @@ impl GetPunkLordBattleRecordScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLLIDDIBOHI::JLLIDDIBOHI>(
-            "JIPALBLOPFI",
-            |m: &GetPunkLordBattleRecordScRsp| { &m.JIPALBLOPFI },
-            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.JIPALBLOPFI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CDCCPHILOCC::CDCCPHILOCC>(
+            "KHOLBEGBFOM",
+            |m: &GetPunkLordBattleRecordScRsp| { &m.KHOLBEGBFOM },
+            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.KHOLBEGBFOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DFIDPJEIBJK",
-            |m: &GetPunkLordBattleRecordScRsp| { &m.DFIDPJEIBJK },
-            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.DFIDPJEIBJK },
+            "GAIKBNPIFLM",
+            |m: &GetPunkLordBattleRecordScRsp| { &m.GAIKBNPIFLM },
+            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.GAIKBNPIFLM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PACIODONHGJ",
-            |m: &GetPunkLordBattleRecordScRsp| { &m.PACIODONHGJ },
-            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.PACIODONHGJ },
+            "HLCIMLHMEKI",
+            |m: &GetPunkLordBattleRecordScRsp| { &m.HLCIMLHMEKI },
+            |m: &mut GetPunkLordBattleRecordScRsp| { &mut m.HLCIMLHMEKI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIPALBLOPFI)?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KHOLBEGBFOM)?;
                 },
-                66 => {
-                    self.DFIDPJEIBJK.push(is.read_message()?);
+                82 => {
+                    self.GAIKBNPIFLM.push(is.read_message()?);
                 },
-                26 => {
-                    self.PACIODONHGJ.push(is.read_message()?);
+                106 => {
+                    self.HLCIMLHMEKI.push(is.read_message()?);
                 },
-                96 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -117,20 +117,20 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JIPALBLOPFI.as_ref() {
+        if let Some(v) = self.KHOLBEGBFOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.DFIDPJEIBJK {
+        for value in &self.GAIKBNPIFLM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.PACIODONHGJ {
+        for value in &self.HLCIMLHMEKI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -138,17 +138,17 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JIPALBLOPFI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.KHOLBEGBFOM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        for v in &self.DFIDPJEIBJK {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.GAIKBNPIFLM {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        for v in &self.PACIODONHGJ {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        for v in &self.HLCIMLHMEKI {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,18 +167,18 @@ impl ::protobuf::Message for GetPunkLordBattleRecordScRsp {
     }
 
     fn clear(&mut self) {
-        self.JIPALBLOPFI.clear();
-        self.DFIDPJEIBJK.clear();
-        self.PACIODONHGJ.clear();
+        self.KHOLBEGBFOM.clear();
+        self.GAIKBNPIFLM.clear();
+        self.HLCIMLHMEKI.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPunkLordBattleRecordScRsp {
         static instance: GetPunkLordBattleRecordScRsp = GetPunkLordBattleRecordScRsp {
-            JIPALBLOPFI: ::protobuf::MessageField::none(),
-            DFIDPJEIBJK: ::std::vec::Vec::new(),
-            PACIODONHGJ: ::std::vec::Vec::new(),
+            KHOLBEGBFOM: ::protobuf::MessageField::none(),
+            GAIKBNPIFLM: ::std::vec::Vec::new(),
+            HLCIMLHMEKI: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -204,13 +204,13 @@ impl ::protobuf::reflect::ProtobufValue for GetPunkLordBattleRecordScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetPunkLordBattleRecordScRsp.proto\x1a\x11JLLIDDIBOHI.proto\x1a\x11P\
-    HOCECJOBHH.proto\x1a\x17TryDownLoadReplay.proto\"\xce\x01\n\x1cGetPunkLo\
-    rdBattleRecordScRsp\x12.\n\x0bJIPALBLOPFI\x18\x04\x20\x01(\x0b2\x0c.JLLI\
-    DDIBOHIR\x0bJIPALBLOPFI\x12.\n\x0bDFIDPJEIBJK\x18\x08\x20\x03(\x0b2\x0c.\
-    PHOCECJOBHHR\x0bDFIDPJEIBJK\x124\n\x0bPACIODONHGJ\x18\x03\x20\x03(\x0b2\
-    \x12.TryDownLoadReplayR\x0bPACIODONHGJ\x12\x18\n\x07retcode\x18\x0c\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    \n\"GetPunkLordBattleRecordScRsp.proto\x1a\x11CDCCPHILOCC.proto\x1a\x11C\
+    JDIAHDLCNJ.proto\x1a\x17TryDownLoadReplay.proto\"\xce\x01\n\x1cGetPunkLo\
+    rdBattleRecordScRsp\x12.\n\x0bKHOLBEGBFOM\x18\x05\x20\x01(\x0b2\x0c.CDCC\
+    PHILOCCR\x0bKHOLBEGBFOM\x12.\n\x0bGAIKBNPIFLM\x18\n\x20\x03(\x0b2\x0c.CJ\
+    DIAHDLCNJR\x0bGAIKBNPIFLM\x124\n\x0bHLCIMLHMEKI\x18\r\x20\x03(\x0b2\x12.\
+    TryDownLoadReplayR\x0bHLCIMLHMEKI\x12\x18\n\x07retcode\x18\x0f\x20\x01(\
+    \rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -228,8 +228,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::JLLIDDIBOHI::file_descriptor().clone());
-            deps.push(super::PHOCECJOBHH::file_descriptor().clone());
+            deps.push(super::CDCCPHILOCC::file_descriptor().clone());
+            deps.push(super::CJDIAHDLCNJ::file_descriptor().clone());
             deps.push(super::TryDownLoadReplay::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetPunkLordBattleRecordScRsp::generated_message_descriptor_data());

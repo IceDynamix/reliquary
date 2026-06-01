@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerGetTokenCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.token)
-    pub token: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.EFLAEANKACM)
-    pub EFLAEANKACM: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.sign_type)
-    pub sign_type: u32,
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.account_ip)
-    pub account_ip: u32,
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.account_ip_port)
-    pub account_ip_port: u32,
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.EFKCMFIJGIJ)
-    pub EFKCMFIJGIJ: u32,
     // @@protoc_insertion_point(field:PlayerGetTokenCsReq.account_uid)
     pub account_uid: ::std::string::String,
-    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.uid)
-    pub uid: u32,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.token)
+    pub token: ::std::string::String,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.DNADIICFMEE)
+    pub DNADIICFMEE: ::std::string::String,
     // @@protoc_insertion_point(field:PlayerGetTokenCsReq.platform)
     pub platform: u32,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.account_ip)
+    pub account_ip: u32,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.sign_type)
+    pub sign_type: u32,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.DJCNHCGFHKF)
+    pub DJCNHCGFHKF: u32,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.uid)
+    pub uid: u32,
+    // @@protoc_insertion_point(field:PlayerGetTokenCsReq.account_ip_port)
+    pub account_ip_port: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerGetTokenCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,19 +66,24 @@ impl PlayerGetTokenCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "account_uid",
+            |m: &PlayerGetTokenCsReq| { &m.account_uid },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.account_uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "token",
             |m: &PlayerGetTokenCsReq| { &m.token },
             |m: &mut PlayerGetTokenCsReq| { &mut m.token },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EFLAEANKACM",
-            |m: &PlayerGetTokenCsReq| { &m.EFLAEANKACM },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.EFLAEANKACM },
+            "DNADIICFMEE",
+            |m: &PlayerGetTokenCsReq| { &m.DNADIICFMEE },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.DNADIICFMEE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "sign_type",
-            |m: &PlayerGetTokenCsReq| { &m.sign_type },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.sign_type },
+            "platform",
+            |m: &PlayerGetTokenCsReq| { &m.platform },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.platform },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "account_ip",
@@ -86,19 +91,14 @@ impl PlayerGetTokenCsReq {
             |m: &mut PlayerGetTokenCsReq| { &mut m.account_ip },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "account_ip_port",
-            |m: &PlayerGetTokenCsReq| { &m.account_ip_port },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.account_ip_port },
+            "sign_type",
+            |m: &PlayerGetTokenCsReq| { &m.sign_type },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.sign_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EFKCMFIJGIJ",
-            |m: &PlayerGetTokenCsReq| { &m.EFKCMFIJGIJ },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.EFKCMFIJGIJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "account_uid",
-            |m: &PlayerGetTokenCsReq| { &m.account_uid },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.account_uid },
+            "DJCNHCGFHKF",
+            |m: &PlayerGetTokenCsReq| { &m.DJCNHCGFHKF },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.DJCNHCGFHKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "uid",
@@ -106,9 +106,9 @@ impl PlayerGetTokenCsReq {
             |m: &mut PlayerGetTokenCsReq| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "platform",
-            |m: &PlayerGetTokenCsReq| { &m.platform },
-            |m: &mut PlayerGetTokenCsReq| { &mut m.platform },
+            "account_ip_port",
+            |m: &PlayerGetTokenCsReq| { &m.account_ip_port },
+            |m: &mut PlayerGetTokenCsReq| { &mut m.account_ip_port },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerGetTokenCsReq>(
             "PlayerGetTokenCsReq",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.token = is.read_string()?;
-                },
-                58 => {
-                    self.EFLAEANKACM = is.read_string()?;
-                },
-                120 => {
-                    self.sign_type = is.read_uint32()?;
-                },
-                32 => {
-                    self.account_ip = is.read_uint32()?;
-                },
-                24 => {
-                    self.account_ip_port = is.read_uint32()?;
-                },
-                40 => {
-                    self.EFKCMFIJGIJ = is.read_uint32()?;
-                },
-                50 => {
+                98 => {
                     self.account_uid = is.read_string()?;
                 },
-                64 => {
+                34 => {
+                    self.token = is.read_string()?;
+                },
+                66 => {
+                    self.DNADIICFMEE = is.read_string()?;
+                },
+                104 => {
+                    self.platform = is.read_uint32()?;
+                },
+                8 => {
+                    self.account_ip = is.read_uint32()?;
+                },
+                56 => {
+                    self.sign_type = is.read_uint32()?;
+                },
+                16 => {
+                    self.DJCNHCGFHKF = is.read_uint32()?;
+                },
+                24 => {
                     self.uid = is.read_uint32()?;
                 },
                 80 => {
-                    self.platform = is.read_uint32()?;
+                    self.account_ip_port = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -167,32 +167,32 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.token.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.token);
-        }
-        if !self.EFLAEANKACM.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.EFLAEANKACM);
-        }
-        if self.sign_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.sign_type);
-        }
-        if self.account_ip != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.account_ip);
-        }
-        if self.account_ip_port != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.account_ip_port);
-        }
-        if self.EFKCMFIJGIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.EFKCMFIJGIJ);
-        }
         if !self.account_uid.is_empty() {
-            my_size += ::protobuf::rt::string_size(6, &self.account_uid);
+            my_size += ::protobuf::rt::string_size(12, &self.account_uid);
         }
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.uid);
+        if !self.token.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.token);
+        }
+        if !self.DNADIICFMEE.is_empty() {
+            my_size += ::protobuf::rt::string_size(8, &self.DNADIICFMEE);
         }
         if self.platform != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.platform);
+            my_size += ::protobuf::rt::uint32_size(13, self.platform);
+        }
+        if self.account_ip != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.account_ip);
+        }
+        if self.sign_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.sign_type);
+        }
+        if self.DJCNHCGFHKF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DJCNHCGFHKF);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.uid);
+        }
+        if self.account_ip_port != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.account_ip_port);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -200,32 +200,32 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.token.is_empty() {
-            os.write_string(2, &self.token)?;
-        }
-        if !self.EFLAEANKACM.is_empty() {
-            os.write_string(7, &self.EFLAEANKACM)?;
-        }
-        if self.sign_type != 0 {
-            os.write_uint32(15, self.sign_type)?;
-        }
-        if self.account_ip != 0 {
-            os.write_uint32(4, self.account_ip)?;
-        }
-        if self.account_ip_port != 0 {
-            os.write_uint32(3, self.account_ip_port)?;
-        }
-        if self.EFKCMFIJGIJ != 0 {
-            os.write_uint32(5, self.EFKCMFIJGIJ)?;
-        }
         if !self.account_uid.is_empty() {
-            os.write_string(6, &self.account_uid)?;
+            os.write_string(12, &self.account_uid)?;
         }
-        if self.uid != 0 {
-            os.write_uint32(8, self.uid)?;
+        if !self.token.is_empty() {
+            os.write_string(4, &self.token)?;
+        }
+        if !self.DNADIICFMEE.is_empty() {
+            os.write_string(8, &self.DNADIICFMEE)?;
         }
         if self.platform != 0 {
-            os.write_uint32(10, self.platform)?;
+            os.write_uint32(13, self.platform)?;
+        }
+        if self.account_ip != 0 {
+            os.write_uint32(1, self.account_ip)?;
+        }
+        if self.sign_type != 0 {
+            os.write_uint32(7, self.sign_type)?;
+        }
+        if self.DJCNHCGFHKF != 0 {
+            os.write_uint32(2, self.DJCNHCGFHKF)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(3, self.uid)?;
+        }
+        if self.account_ip_port != 0 {
+            os.write_uint32(10, self.account_ip_port)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -244,29 +244,29 @@ impl ::protobuf::Message for PlayerGetTokenCsReq {
     }
 
     fn clear(&mut self) {
-        self.token.clear();
-        self.EFLAEANKACM.clear();
-        self.sign_type = 0;
-        self.account_ip = 0;
-        self.account_ip_port = 0;
-        self.EFKCMFIJGIJ = 0;
         self.account_uid.clear();
-        self.uid = 0;
+        self.token.clear();
+        self.DNADIICFMEE.clear();
         self.platform = 0;
+        self.account_ip = 0;
+        self.sign_type = 0;
+        self.DJCNHCGFHKF = 0;
+        self.uid = 0;
+        self.account_ip_port = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerGetTokenCsReq {
         static instance: PlayerGetTokenCsReq = PlayerGetTokenCsReq {
-            token: ::std::string::String::new(),
-            EFLAEANKACM: ::std::string::String::new(),
-            sign_type: 0,
-            account_ip: 0,
-            account_ip_port: 0,
-            EFKCMFIJGIJ: 0,
             account_uid: ::std::string::String::new(),
-            uid: 0,
+            token: ::std::string::String::new(),
+            DNADIICFMEE: ::std::string::String::new(),
             platform: 0,
+            account_ip: 0,
+            sign_type: 0,
+            DJCNHCGFHKF: 0,
+            uid: 0,
+            account_ip_port: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -292,13 +292,13 @@ impl ::protobuf::reflect::ProtobufValue for PlayerGetTokenCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19PlayerGetTokenCsReq.proto\"\xa2\x02\n\x13PlayerGetTokenCsReq\x12\
-    \x14\n\x05token\x18\x02\x20\x01(\tR\x05token\x12\x20\n\x0bEFLAEANKACM\
-    \x18\x07\x20\x01(\tR\x0bEFLAEANKACM\x12\x1b\n\tsign_type\x18\x0f\x20\x01\
-    (\rR\x08signType\x12\x1d\n\naccount_ip\x18\x04\x20\x01(\rR\taccountIp\
-    \x12&\n\x0faccount_ip_port\x18\x03\x20\x01(\rR\raccountIpPort\x12\x20\n\
-    \x0bEFKCMFIJGIJ\x18\x05\x20\x01(\rR\x0bEFKCMFIJGIJ\x12\x1f\n\x0baccount_\
-    uid\x18\x06\x20\x01(\tR\naccountUid\x12\x10\n\x03uid\x18\x08\x20\x01(\rR\
-    \x03uid\x12\x1a\n\x08platform\x18\n\x20\x01(\rR\x08platformb\x06proto3\
+    \x1f\n\x0baccount_uid\x18\x0c\x20\x01(\tR\naccountUid\x12\x14\n\x05token\
+    \x18\x04\x20\x01(\tR\x05token\x12\x20\n\x0bDNADIICFMEE\x18\x08\x20\x01(\
+    \tR\x0bDNADIICFMEE\x12\x1a\n\x08platform\x18\r\x20\x01(\rR\x08platform\
+    \x12\x1d\n\naccount_ip\x18\x01\x20\x01(\rR\taccountIp\x12\x1b\n\tsign_ty\
+    pe\x18\x07\x20\x01(\rR\x08signType\x12\x20\n\x0bDJCNHCGFHKF\x18\x02\x20\
+    \x01(\rR\x0bDJCNHCGFHKF\x12\x10\n\x03uid\x18\x03\x20\x01(\rR\x03uid\x12&\
+    \n\x0faccount_ip_port\x18\n\x20\x01(\rR\raccountIpPortb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelFinishMasterChallengeScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ChimeraDuelFinishMasterChallengeScRsp.IPINHNFCIOE)
+    pub IPINHNFCIOE: u32,
     // @@protoc_insertion_point(field:ChimeraDuelFinishMasterChallengeScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChimeraDuelFinishMasterChallengeScRsp.OFFIDMEJBGI)
-    pub OFFIDMEJBGI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelFinishMasterChallengeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ChimeraDuelFinishMasterChallengeScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IPINHNFCIOE",
+            |m: &ChimeraDuelFinishMasterChallengeScRsp| { &m.IPINHNFCIOE },
+            |m: &mut ChimeraDuelFinishMasterChallengeScRsp| { &mut m.IPINHNFCIOE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChimeraDuelFinishMasterChallengeScRsp| { &m.retcode },
             |m: &mut ChimeraDuelFinishMasterChallengeScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFFIDMEJBGI",
-            |m: &ChimeraDuelFinishMasterChallengeScRsp| { &m.OFFIDMEJBGI },
-            |m: &mut ChimeraDuelFinishMasterChallengeScRsp| { &mut m.OFFIDMEJBGI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelFinishMasterChallengeScRsp>(
             "ChimeraDuelFinishMasterChallengeScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChimeraDuelFinishMasterChallengeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                24 => {
+                    self.IPINHNFCIOE = is.read_uint32()?;
                 },
-                48 => {
-                    self.OFFIDMEJBGI = is.read_uint32()?;
+                104 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChimeraDuelFinishMasterChallengeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        if self.IPINHNFCIOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.IPINHNFCIOE);
         }
-        if self.OFFIDMEJBGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.OFFIDMEJBGI);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChimeraDuelFinishMasterChallengeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+        if self.IPINHNFCIOE != 0 {
+            os.write_uint32(3, self.IPINHNFCIOE)?;
         }
-        if self.OFFIDMEJBGI != 0 {
-            os.write_uint32(6, self.OFFIDMEJBGI)?;
+        if self.retcode != 0 {
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ChimeraDuelFinishMasterChallengeScRsp {
     }
 
     fn clear(&mut self) {
+        self.IPINHNFCIOE = 0;
         self.retcode = 0;
-        self.OFFIDMEJBGI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelFinishMasterChallengeScRsp {
         static instance: ChimeraDuelFinishMasterChallengeScRsp = ChimeraDuelFinishMasterChallengeScRsp {
+            IPINHNFCIOE: 0,
             retcode: 0,
-            OFFIDMEJBGI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelFinishMasterChallengeScRs
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+ChimeraDuelFinishMasterChallengeScRsp.proto\"c\n%ChimeraDuelFinishMas\
-    terChallengeScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\
-    \x12\x20\n\x0bOFFIDMEJBGI\x18\x06\x20\x01(\rR\x0bOFFIDMEJBGIb\x06proto3\
+    terChallengeScRsp\x12\x20\n\x0bIPINHNFCIOE\x18\x03\x20\x01(\rR\x0bIPINHN\
+    FCIOE\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

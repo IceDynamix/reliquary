@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingGameBoyGetFriendRankingInfoScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChenLingGameBoyGetFriendRankingInfoScRsp.GPJHJOOIJJC)
-    pub GPJHJOOIJJC: u32,
-    // @@protoc_insertion_point(field:ChenLingGameBoyGetFriendRankingInfoScRsp.JPNALKEFHOH)
-    pub JPNALKEFHOH: ::std::vec::Vec<super::PCMHMCLACNK::PCMHMCLACNK>,
+    // @@protoc_insertion_point(field:ChenLingGameBoyGetFriendRankingInfoScRsp.BEDHEKAGAPE)
+    pub BEDHEKAGAPE: ::std::vec::Vec<super::NBHDCJHGKCN::NBHDCJHGKCN>,
+    // @@protoc_insertion_point(field:ChenLingGameBoyGetFriendRankingInfoScRsp.IJCJBDDGGJF)
+    pub IJCJBDDGGJF: u32,
+    // @@protoc_insertion_point(field:ChenLingGameBoyGetFriendRankingInfoScRsp.EBAFPOLLJIA)
+    pub EBAFPOLLJIA: bool,
     // @@protoc_insertion_point(field:ChenLingGameBoyGetFriendRankingInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChenLingGameBoyGetFriendRankingInfoScRsp.KEPMJKGJLNJ)
-    pub KEPMJKGJLNJ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ChenLingGameBoyGetFriendRankingInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl ChenLingGameBoyGetFriendRankingInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GPJHJOOIJJC",
-            |m: &ChenLingGameBoyGetFriendRankingInfoScRsp| { &m.GPJHJOOIJJC },
-            |m: &mut ChenLingGameBoyGetFriendRankingInfoScRsp| { &mut m.GPJHJOOIJJC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "JPNALKEFHOH",
-            |m: &ChenLingGameBoyGetFriendRankingInfoScRsp| { &m.JPNALKEFHOH },
-            |m: &mut ChenLingGameBoyGetFriendRankingInfoScRsp| { &mut m.JPNALKEFHOH },
+            "BEDHEKAGAPE",
+            |m: &ChenLingGameBoyGetFriendRankingInfoScRsp| { &m.BEDHEKAGAPE },
+            |m: &mut ChenLingGameBoyGetFriendRankingInfoScRsp| { &mut m.BEDHEKAGAPE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IJCJBDDGGJF",
+            |m: &ChenLingGameBoyGetFriendRankingInfoScRsp| { &m.IJCJBDDGGJF },
+            |m: &mut ChenLingGameBoyGetFriendRankingInfoScRsp| { &mut m.IJCJBDDGGJF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EBAFPOLLJIA",
+            |m: &ChenLingGameBoyGetFriendRankingInfoScRsp| { &m.EBAFPOLLJIA },
+            |m: &mut ChenLingGameBoyGetFriendRankingInfoScRsp| { &mut m.EBAFPOLLJIA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChenLingGameBoyGetFriendRankingInfoScRsp| { &m.retcode },
             |m: &mut ChenLingGameBoyGetFriendRankingInfoScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KEPMJKGJLNJ",
-            |m: &ChenLingGameBoyGetFriendRankingInfoScRsp| { &m.KEPMJKGJLNJ },
-            |m: &mut ChenLingGameBoyGetFriendRankingInfoScRsp| { &mut m.KEPMJKGJLNJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChenLingGameBoyGetFriendRankingInfoScRsp>(
             "ChenLingGameBoyGetFriendRankingInfoScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ChenLingGameBoyGetFriendRankingInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.GPJHJOOIJJC = is.read_uint32()?;
+                34 => {
+                    self.BEDHEKAGAPE.push(is.read_message()?);
                 },
-                66 => {
-                    self.JPNALKEFHOH.push(is.read_message()?);
+                16 => {
+                    self.IJCJBDDGGJF = is.read_uint32()?;
                 },
-                104 => {
+                88 => {
+                    self.EBAFPOLLJIA = is.read_bool()?;
+                },
+                72 => {
                     self.retcode = is.read_uint32()?;
-                },
-                96 => {
-                    self.KEPMJKGJLNJ = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for ChenLingGameBoyGetFriendRankingInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GPJHJOOIJJC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.GPJHJOOIJJC);
-        }
-        for value in &self.JPNALKEFHOH {
+        for value in &self.BEDHEKAGAPE {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+        if self.IJCJBDDGGJF != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.IJCJBDDGGJF);
         }
-        if self.KEPMJKGJLNJ != false {
+        if self.EBAFPOLLJIA != false {
             my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for ChenLingGameBoyGetFriendRankingInfoScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GPJHJOOIJJC != 0 {
-            os.write_uint32(15, self.GPJHJOOIJJC)?;
-        }
-        for v in &self.JPNALKEFHOH {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        for v in &self.BEDHEKAGAPE {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+        if self.IJCJBDDGGJF != 0 {
+            os.write_uint32(2, self.IJCJBDDGGJF)?;
         }
-        if self.KEPMJKGJLNJ != false {
-            os.write_bool(12, self.KEPMJKGJLNJ)?;
+        if self.EBAFPOLLJIA != false {
+            os.write_bool(11, self.EBAFPOLLJIA)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for ChenLingGameBoyGetFriendRankingInfoScRsp {
     }
 
     fn clear(&mut self) {
-        self.GPJHJOOIJJC = 0;
-        self.JPNALKEFHOH.clear();
+        self.BEDHEKAGAPE.clear();
+        self.IJCJBDDGGJF = 0;
+        self.EBAFPOLLJIA = false;
         self.retcode = 0;
-        self.KEPMJKGJLNJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingGameBoyGetFriendRankingInfoScRsp {
         static instance: ChenLingGameBoyGetFriendRankingInfoScRsp = ChenLingGameBoyGetFriendRankingInfoScRsp {
-            GPJHJOOIJJC: 0,
-            JPNALKEFHOH: ::std::vec::Vec::new(),
+            BEDHEKAGAPE: ::std::vec::Vec::new(),
+            IJCJBDDGGJF: 0,
+            EBAFPOLLJIA: false,
             retcode: 0,
-            KEPMJKGJLNJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,12 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingGameBoyGetFriendRankingInfoS
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n.ChenLingGameBoyGetFriendRankingInfoScRsp.proto\x1a\x11PCMHMCLACNK.pro\
-    to\"\xb8\x01\n(ChenLingGameBoyGetFriendRankingInfoScRsp\x12\x20\n\x0bGPJ\
-    HJOOIJJC\x18\x0f\x20\x01(\rR\x0bGPJHJOOIJJC\x12.\n\x0bJPNALKEFHOH\x18\
-    \x08\x20\x03(\x0b2\x0c.PCMHMCLACNKR\x0bJPNALKEFHOH\x12\x18\n\x07retcode\
-    \x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bKEPMJKGJLNJ\x18\x0c\x20\x01(\
-    \x08R\x0bKEPMJKGJLNJb\x06proto3\
+    \n.ChenLingGameBoyGetFriendRankingInfoScRsp.proto\x1a\x11NBHDCJHGKCN.pro\
+    to\"\xb8\x01\n(ChenLingGameBoyGetFriendRankingInfoScRsp\x12.\n\x0bBEDHEK\
+    AGAPE\x18\x04\x20\x03(\x0b2\x0c.NBHDCJHGKCNR\x0bBEDHEKAGAPE\x12\x20\n\
+    \x0bIJCJBDDGGJF\x18\x02\x20\x01(\rR\x0bIJCJBDDGGJF\x12\x20\n\x0bEBAFPOLL\
+    JIA\x18\x0b\x20\x01(\x08R\x0bEBAFPOLLJIA\x12\x18\n\x07retcode\x18\t\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -225,7 +225,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PCMHMCLACNK::file_descriptor().clone());
+            deps.push(super::NBHDCJHGKCN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChenLingGameBoyGetFriendRankingInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

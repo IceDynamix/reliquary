@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelEndRoundShopStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelEndRoundShopStageScRsp.OIAPHBBDPHL)
-    pub OIAPHBBDPHL: ::protobuf::MessageField<super::DDJOEIBOELH::DDJOEIBOELH>,
+    // @@protoc_insertion_point(field:ChimeraDuelEndRoundShopStageScRsp.CFDIKLBINHK)
+    pub CFDIKLBINHK: ::protobuf::MessageField<super::LCEDDGELBMJ::LCEDDGELBMJ>,
     // @@protoc_insertion_point(field:ChimeraDuelEndRoundShopStageScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,10 +51,10 @@ impl ChimeraDuelEndRoundShopStageScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DDJOEIBOELH::DDJOEIBOELH>(
-            "OIAPHBBDPHL",
-            |m: &ChimeraDuelEndRoundShopStageScRsp| { &m.OIAPHBBDPHL },
-            |m: &mut ChimeraDuelEndRoundShopStageScRsp| { &mut m.OIAPHBBDPHL },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LCEDDGELBMJ::LCEDDGELBMJ>(
+            "CFDIKLBINHK",
+            |m: &ChimeraDuelEndRoundShopStageScRsp| { &m.CFDIKLBINHK },
+            |m: &mut ChimeraDuelEndRoundShopStageScRsp| { &mut m.CFDIKLBINHK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ChimeraDuelEndRoundShopStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OIAPHBBDPHL)?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CFDIKLBINHK)?;
                 },
-                64 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ChimeraDuelEndRoundShopStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.OIAPHBBDPHL.as_ref() {
+        if let Some(v) = self.CFDIKLBINHK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChimeraDuelEndRoundShopStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.OIAPHBBDPHL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if let Some(v) = self.CFDIKLBINHK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for ChimeraDuelEndRoundShopStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.OIAPHBBDPHL.clear();
+        self.CFDIKLBINHK.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelEndRoundShopStageScRsp {
         static instance: ChimeraDuelEndRoundShopStageScRsp = ChimeraDuelEndRoundShopStageScRsp {
-            OIAPHBBDPHL: ::protobuf::MessageField::none(),
+            CFDIKLBINHK: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelEndRoundShopStageScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'ChimeraDuelEndRoundShopStageScRsp.proto\x1a\x11DDJOEIBOELH.proto\"m\n\
-    !ChimeraDuelEndRoundShopStageScRsp\x12.\n\x0bOIAPHBBDPHL\x18\x06\x20\x01\
-    (\x0b2\x0c.DDJOEIBOELHR\x0bOIAPHBBDPHL\x12\x18\n\x07retcode\x18\x08\x20\
+    \n'ChimeraDuelEndRoundShopStageScRsp.proto\x1a\x11LCEDDGELBMJ.proto\"m\n\
+    !ChimeraDuelEndRoundShopStageScRsp\x12.\n\x0bCFDIKLBINHK\x18\x0b\x20\x01\
+    (\x0b2\x0c.LCEDDGELBMJR\x0bCFDIKLBINHK\x12\x18\n\x07retcode\x18\x0f\x20\
     \x01(\rR\x07retcodeb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DDJOEIBOELH::file_descriptor().clone());
+            deps.push(super::LCEDDGELBMJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChimeraDuelEndRoundShopStageScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

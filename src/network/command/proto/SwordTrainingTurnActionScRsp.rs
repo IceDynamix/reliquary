@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingTurnActionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingTurnActionScRsp.ACBIMOGNKAJ)
-    pub ACBIMOGNKAJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SwordTrainingTurnActionScRsp.CCPADEMEHBA)
+    pub CCPADEMEHBA: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SwordTrainingTurnActionScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl SwordTrainingTurnActionScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ACBIMOGNKAJ",
-            |m: &SwordTrainingTurnActionScRsp| { &m.ACBIMOGNKAJ },
-            |m: &mut SwordTrainingTurnActionScRsp| { &mut m.ACBIMOGNKAJ },
+            "CCPADEMEHBA",
+            |m: &SwordTrainingTurnActionScRsp| { &m.CCPADEMEHBA },
+            |m: &mut SwordTrainingTurnActionScRsp| { &mut m.CCPADEMEHBA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for SwordTrainingTurnActionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ACBIMOGNKAJ)?;
+                114 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CCPADEMEHBA)?;
                 },
-                40 => {
-                    self.ACBIMOGNKAJ.push(is.read_uint32()?);
+                112 => {
+                    self.CCPADEMEHBA.push(is.read_uint32()?);
                 },
-                24 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for SwordTrainingTurnActionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.ACBIMOGNKAJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(14, &self.CCPADEMEHBA);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for SwordTrainingTurnActionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.ACBIMOGNKAJ)?;
+        os.write_repeated_packed_uint32(14, &self.CCPADEMEHBA)?;
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -131,14 +131,14 @@ impl ::protobuf::Message for SwordTrainingTurnActionScRsp {
     }
 
     fn clear(&mut self) {
-        self.ACBIMOGNKAJ.clear();
+        self.CCPADEMEHBA.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingTurnActionScRsp {
         static instance: SwordTrainingTurnActionScRsp = SwordTrainingTurnActionScRsp {
-            ACBIMOGNKAJ: ::std::vec::Vec::new(),
+            CCPADEMEHBA: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,8 +165,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingTurnActionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"SwordTrainingTurnActionScRsp.proto\"Z\n\x1cSwordTrainingTurnActionSc\
-    Rsp\x12\x20\n\x0bACBIMOGNKAJ\x18\x05\x20\x03(\rR\x0bACBIMOGNKAJ\x12\x18\
-    \n\x07retcode\x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
+    Rsp\x12\x20\n\x0bCCPADEMEHBA\x18\x0e\x20\x03(\rR\x0bCCPADEMEHBA\x12\x18\
+    \n\x07retcode\x18\x06\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

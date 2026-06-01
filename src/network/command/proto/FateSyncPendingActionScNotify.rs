@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FateSyncPendingActionScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FateSyncPendingActionScNotify.pending_action)
-    pub pending_action: ::protobuf::MessageField<super::DFAHMBOGMAN::DFAHMBOGMAN>,
+    // @@protoc_insertion_point(field:FateSyncPendingActionScNotify.FMIGOKIDKJL)
+    pub FMIGOKIDKJL: ::protobuf::MessageField<super::JFKAOMCJIKK::JFKAOMCJIKK>,
     // special fields
     // @@protoc_insertion_point(special_field:FateSyncPendingActionScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl FateSyncPendingActionScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFAHMBOGMAN::DFAHMBOGMAN>(
-            "pending_action",
-            |m: &FateSyncPendingActionScNotify| { &m.pending_action },
-            |m: &mut FateSyncPendingActionScNotify| { &mut m.pending_action },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JFKAOMCJIKK::JFKAOMCJIKK>(
+            "FMIGOKIDKJL",
+            |m: &FateSyncPendingActionScNotify| { &m.FMIGOKIDKJL },
+            |m: &mut FateSyncPendingActionScNotify| { &mut m.FMIGOKIDKJL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FateSyncPendingActionScNotify>(
             "FateSyncPendingActionScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FateSyncPendingActionScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.pending_action)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FMIGOKIDKJL)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for FateSyncPendingActionScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.pending_action.as_ref() {
+        if let Some(v) = self.FMIGOKIDKJL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for FateSyncPendingActionScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.pending_action.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if let Some(v) = self.FMIGOKIDKJL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for FateSyncPendingActionScNotify {
     }
 
     fn clear(&mut self) {
-        self.pending_action.clear();
+        self.FMIGOKIDKJL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FateSyncPendingActionScNotify {
         static instance: FateSyncPendingActionScNotify = FateSyncPendingActionScNotify {
-            pending_action: ::protobuf::MessageField::none(),
+            FMIGOKIDKJL: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for FateSyncPendingActionScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#FateSyncPendingActionScNotify.proto\x1a\x11DFAHMBOGMAN.proto\"T\n\x1d\
-    FateSyncPendingActionScNotify\x123\n\x0epending_action\x18\n\x20\x01(\
-    \x0b2\x0c.DFAHMBOGMANR\rpendingActionb\x06proto3\
+    \n#FateSyncPendingActionScNotify.proto\x1a\x11JFKAOMCJIKK.proto\"O\n\x1d\
+    FateSyncPendingActionScNotify\x12.\n\x0bFMIGOKIDKJL\x18\x0f\x20\x01(\x0b\
+    2\x0c.JFKAOMCJIKKR\x0bFMIGOKIDKJLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DFAHMBOGMAN::file_descriptor().clone());
+            deps.push(super::JFKAOMCJIKK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FateSyncPendingActionScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

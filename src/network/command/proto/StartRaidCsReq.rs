@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartRaidCsReq {
     // message fields
-    // @@protoc_insertion_point(field:StartRaidCsReq.BDBJKKOJODC)
-    pub BDBJKKOJODC: ::std::vec::Vec<super::EEBPHJCNBFO::EEBPHJCNBFO>,
+    // @@protoc_insertion_point(field:StartRaidCsReq.NIMDEPFJJNI)
+    pub NIMDEPFJJNI: ::std::vec::Vec<super::AvatarIdentifier::AvatarIdentifier>,
     // @@protoc_insertion_point(field:StartRaidCsReq.avatar_list)
     pub avatar_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:StartRaidCsReq.world_level)
-    pub world_level: u32,
     // @@protoc_insertion_point(field:StartRaidCsReq.raid_id)
     pub raid_id: u32,
+    // @@protoc_insertion_point(field:StartRaidCsReq.world_level)
+    pub world_level: u32,
     // @@protoc_insertion_point(field:StartRaidCsReq.is_save)
     pub is_save: u32,
     // @@protoc_insertion_point(field:StartRaidCsReq.prop_entity_id)
@@ -60,9 +60,9 @@ impl StartRaidCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BDBJKKOJODC",
-            |m: &StartRaidCsReq| { &m.BDBJKKOJODC },
-            |m: &mut StartRaidCsReq| { &mut m.BDBJKKOJODC },
+            "NIMDEPFJJNI",
+            |m: &StartRaidCsReq| { &m.NIMDEPFJJNI },
+            |m: &mut StartRaidCsReq| { &mut m.NIMDEPFJJNI },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
@@ -70,14 +70,14 @@ impl StartRaidCsReq {
             |m: &mut StartRaidCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &StartRaidCsReq| { &m.world_level },
-            |m: &mut StartRaidCsReq| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "raid_id",
             |m: &StartRaidCsReq| { &m.raid_id },
             |m: &mut StartRaidCsReq| { &mut m.raid_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &StartRaidCsReq| { &m.world_level },
+            |m: &mut StartRaidCsReq| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_save",
@@ -107,25 +107,25 @@ impl ::protobuf::Message for StartRaidCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
-                    self.BDBJKKOJODC.push(is.read_message()?);
+                74 => {
+                    self.NIMDEPFJJNI.push(is.read_message()?);
                 },
-                90 => {
+                34 => {
                     is.read_repeated_packed_uint32_into(&mut self.avatar_list)?;
                 },
-                88 => {
+                32 => {
                     self.avatar_list.push(is.read_uint32()?);
                 },
-                64 => {
-                    self.world_level = is.read_uint32()?;
-                },
-                72 => {
+                120 => {
                     self.raid_id = is.read_uint32()?;
                 },
-                24 => {
+                88 => {
+                    self.world_level = is.read_uint32()?;
+                },
+                40 => {
                     self.is_save = is.read_uint32()?;
                 },
-                32 => {
+                48 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -140,22 +140,22 @@ impl ::protobuf::Message for StartRaidCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BDBJKKOJODC {
+        for value in &self.NIMDEPFJJNI {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.avatar_list);
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.world_level);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.avatar_list);
         if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.raid_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.raid_id);
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.world_level);
         }
         if self.is_save != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.is_save);
+            my_size += ::protobuf::rt::uint32_size(5, self.is_save);
         }
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,21 +163,21 @@ impl ::protobuf::Message for StartRaidCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BDBJKKOJODC {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        for v in &self.NIMDEPFJJNI {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
-        os.write_repeated_packed_uint32(11, &self.avatar_list)?;
-        if self.world_level != 0 {
-            os.write_uint32(8, self.world_level)?;
-        }
+        os.write_repeated_packed_uint32(4, &self.avatar_list)?;
         if self.raid_id != 0 {
-            os.write_uint32(9, self.raid_id)?;
+            os.write_uint32(15, self.raid_id)?;
+        }
+        if self.world_level != 0 {
+            os.write_uint32(11, self.world_level)?;
         }
         if self.is_save != 0 {
-            os.write_uint32(3, self.is_save)?;
+            os.write_uint32(5, self.is_save)?;
         }
         if self.prop_entity_id != 0 {
-            os.write_uint32(4, self.prop_entity_id)?;
+            os.write_uint32(6, self.prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,10 +196,10 @@ impl ::protobuf::Message for StartRaidCsReq {
     }
 
     fn clear(&mut self) {
-        self.BDBJKKOJODC.clear();
+        self.NIMDEPFJJNI.clear();
         self.avatar_list.clear();
-        self.world_level = 0;
         self.raid_id = 0;
+        self.world_level = 0;
         self.is_save = 0;
         self.prop_entity_id = 0;
         self.special_fields.clear();
@@ -207,10 +207,10 @@ impl ::protobuf::Message for StartRaidCsReq {
 
     fn default_instance() -> &'static StartRaidCsReq {
         static instance: StartRaidCsReq = StartRaidCsReq {
-            BDBJKKOJODC: ::std::vec::Vec::new(),
+            NIMDEPFJJNI: ::std::vec::Vec::new(),
             avatar_list: ::std::vec::Vec::new(),
-            world_level: 0,
             raid_id: 0,
+            world_level: 0,
             is_save: 0,
             prop_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -237,13 +237,13 @@ impl ::protobuf::reflect::ProtobufValue for StartRaidCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14StartRaidCsReq.proto\x1a\x11EEBPHJCNBFO.proto\"\xda\x01\n\x0eStart\
-    RaidCsReq\x12.\n\x0bBDBJKKOJODC\x18\x02\x20\x03(\x0b2\x0c.EEBPHJCNBFOR\
-    \x0bBDBJKKOJODC\x12\x1f\n\x0bavatar_list\x18\x0b\x20\x03(\rR\navatarList\
-    \x12\x1f\n\x0bworld_level\x18\x08\x20\x01(\rR\nworldLevel\x12\x17\n\x07r\
-    aid_id\x18\t\x20\x01(\rR\x06raidId\x12\x17\n\x07is_save\x18\x03\x20\x01(\
-    \rR\x06isSave\x12$\n\x0eprop_entity_id\x18\x04\x20\x01(\rR\x0cpropEntity\
-    Idb\x06proto3\
+    \n\x14StartRaidCsReq.proto\x1a\x16AvatarIdentifier.proto\"\xdf\x01\n\x0e\
+    StartRaidCsReq\x123\n\x0bNIMDEPFJJNI\x18\t\x20\x03(\x0b2\x11.AvatarIdent\
+    ifierR\x0bNIMDEPFJJNI\x12\x1f\n\x0bavatar_list\x18\x04\x20\x03(\rR\navat\
+    arList\x12\x17\n\x07raid_id\x18\x0f\x20\x01(\rR\x06raidId\x12\x1f\n\x0bw\
+    orld_level\x18\x0b\x20\x01(\rR\nworldLevel\x12\x17\n\x07is_save\x18\x05\
+    \x20\x01(\rR\x06isSave\x12$\n\x0eprop_entity_id\x18\x06\x20\x01(\rR\x0cp\
+    ropEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -261,7 +261,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EEBPHJCNBFO::file_descriptor().clone());
+            deps.push(super::AvatarIdentifier::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartRaidCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

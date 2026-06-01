@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OpenHipplenCycleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:OpenHipplenCycleScRsp.IPOEIGADLJN)
-    pub IPOEIGADLJN: u32,
-    // @@protoc_insertion_point(field:OpenHipplenCycleScRsp.ACJHGLGHEAH)
-    pub ACJHGLGHEAH: ::protobuf::MessageField<super::OOLHNFNKOHN::OOLHNFNKOHN>,
+    // @@protoc_insertion_point(field:OpenHipplenCycleScRsp.HIGHKDBJNIM)
+    pub HIGHKDBJNIM: ::protobuf::MessageField<super::BNJAIHINJIK::BNJAIHINJIK>,
+    // @@protoc_insertion_point(field:OpenHipplenCycleScRsp.JFLAEGMBMAK)
+    pub JFLAEGMBMAK: u32,
     // @@protoc_insertion_point(field:OpenHipplenCycleScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -53,15 +53,15 @@ impl OpenHipplenCycleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPOEIGADLJN",
-            |m: &OpenHipplenCycleScRsp| { &m.IPOEIGADLJN },
-            |m: &mut OpenHipplenCycleScRsp| { &mut m.IPOEIGADLJN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BNJAIHINJIK::BNJAIHINJIK>(
+            "HIGHKDBJNIM",
+            |m: &OpenHipplenCycleScRsp| { &m.HIGHKDBJNIM },
+            |m: &mut OpenHipplenCycleScRsp| { &mut m.HIGHKDBJNIM },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OOLHNFNKOHN::OOLHNFNKOHN>(
-            "ACJHGLGHEAH",
-            |m: &OpenHipplenCycleScRsp| { &m.ACJHGLGHEAH },
-            |m: &mut OpenHipplenCycleScRsp| { &mut m.ACJHGLGHEAH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JFLAEGMBMAK",
+            |m: &OpenHipplenCycleScRsp| { &m.JFLAEGMBMAK },
+            |m: &mut OpenHipplenCycleScRsp| { &mut m.JFLAEGMBMAK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for OpenHipplenCycleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.IPOEIGADLJN = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HIGHKDBJNIM)?;
                 },
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ACJHGLGHEAH)?;
+                16 => {
+                    self.JFLAEGMBMAK = is.read_uint32()?;
                 },
-                8 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for OpenHipplenCycleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IPOEIGADLJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IPOEIGADLJN);
-        }
-        if let Some(v) = self.ACJHGLGHEAH.as_ref() {
+        if let Some(v) = self.HIGHKDBJNIM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.JFLAEGMBMAK != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.JFLAEGMBMAK);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for OpenHipplenCycleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IPOEIGADLJN != 0 {
-            os.write_uint32(9, self.IPOEIGADLJN)?;
+        if let Some(v) = self.HIGHKDBJNIM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        if let Some(v) = self.ACJHGLGHEAH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if self.JFLAEGMBMAK != 0 {
+            os.write_uint32(2, self.JFLAEGMBMAK)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for OpenHipplenCycleScRsp {
     }
 
     fn clear(&mut self) {
-        self.IPOEIGADLJN = 0;
-        self.ACJHGLGHEAH.clear();
+        self.HIGHKDBJNIM.clear();
+        self.JFLAEGMBMAK = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OpenHipplenCycleScRsp {
         static instance: OpenHipplenCycleScRsp = OpenHipplenCycleScRsp {
-            IPOEIGADLJN: 0,
-            ACJHGLGHEAH: ::protobuf::MessageField::none(),
+            HIGHKDBJNIM: ::protobuf::MessageField::none(),
+            JFLAEGMBMAK: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for OpenHipplenCycleScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bOpenHipplenCycleScRsp.proto\x1a\x11OOLHNFNKOHN.proto\"\x83\x01\n\
-    \x15OpenHipplenCycleScRsp\x12\x20\n\x0bIPOEIGADLJN\x18\t\x20\x01(\rR\x0b\
-    IPOEIGADLJN\x12.\n\x0bACJHGLGHEAH\x18\x03\x20\x01(\x0b2\x0c.OOLHNFNKOHNR\
-    \x0bACJHGLGHEAH\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06\
-    proto3\
+    \n\x1bOpenHipplenCycleScRsp.proto\x1a\x11BNJAIHINJIK.proto\"\x83\x01\n\
+    \x15OpenHipplenCycleScRsp\x12.\n\x0bHIGHKDBJNIM\x18\x04\x20\x01(\x0b2\
+    \x0c.BNJAIHINJIKR\x0bHIGHKDBJNIM\x12\x20\n\x0bJFLAEGMBMAK\x18\x02\x20\
+    \x01(\rR\x0bJFLAEGMBMAK\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retc\
+    odeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OOLHNFNKOHN::file_descriptor().clone());
+            deps.push(super::BNJAIHINJIK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OpenHipplenCycleScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

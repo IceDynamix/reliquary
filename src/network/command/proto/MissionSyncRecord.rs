@@ -27,26 +27,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MissionSyncRecord)
 pub enum MissionSyncRecord {
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.ALGPCOOBEFF_ADPJFMJJABN)
-    ALGPCOOBEFF_ADPJFMJJABN = 0,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.ALGPCOOBEFF_KHJCKCDFEJL)
-    ALGPCOOBEFF_KHJCKCDFEJL = 1,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.ALGPCOOBEFF_FMIJPBPOHJD)
-    ALGPCOOBEFF_FMIJPBPOHJD = 2,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.ALGPCOOBEFF_POGPNNBHMIO)
-    ALGPCOOBEFF_POGPNNBHMIO = 3,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.ALGPCOOBEFF_OMNFLAIKIBC)
-    ALGPCOOBEFF_OMNFLAIKIBC = 4,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.ALGPCOOBEFF_EAHBMOFJIFI)
-    ALGPCOOBEFF_EAHBMOFJIFI = 11,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.ALGPCOOBEFF_FAEKDCEPPNN)
-    ALGPCOOBEFF_FAEKDCEPPNN = 12,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.ALGPCOOBEFF_CDEHDBIIAAH)
-    ALGPCOOBEFF_CDEHDBIIAAH = 13,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.ALGPCOOBEFF_CGEDDIECOKA)
-    ALGPCOOBEFF_CGEDDIECOKA = 14,
-    // @@protoc_insertion_point(enum_value:MissionSyncRecord.ALGPCOOBEFF_OMHHFJMHPOB)
-    ALGPCOOBEFF_OMHHFJMHPOB = 15,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_DOJFCPKAJEN)
+    MissionSyncRecord_DOJFCPKAJEN = 0,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_HPBMPLFIGDO)
+    MissionSyncRecord_HPBMPLFIGDO = 1,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_BBFKOIKPIOA)
+    MissionSyncRecord_BBFKOIKPIOA = 2,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_LPJJPGJPMKA)
+    MissionSyncRecord_LPJJPGJPMKA = 3,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_JCIHFNMKAKK)
+    MissionSyncRecord_JCIHFNMKAKK = 4,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_EGDIDGJEOCG)
+    MissionSyncRecord_EGDIDGJEOCG = 11,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_JPJOOPBLLHO)
+    MissionSyncRecord_JPJOOPBLLHO = 12,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_EBINJEAEFOE)
+    MissionSyncRecord_EBINJEAEFOE = 13,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_BJLCBIGLBIM)
+    MissionSyncRecord_BJLCBIGLBIM = 14,
+    // @@protoc_insertion_point(enum_value:MissionSyncRecord.MissionSyncRecord_KPDHHAPIIGM)
+    MissionSyncRecord_KPDHHAPIIGM = 15,
 }
 
 impl ::protobuf::Enum for MissionSyncRecord {
@@ -58,47 +58,47 @@ impl ::protobuf::Enum for MissionSyncRecord {
 
     fn from_i32(value: i32) -> ::std::option::Option<MissionSyncRecord> {
         match value {
-            0 => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_ADPJFMJJABN),
-            1 => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_KHJCKCDFEJL),
-            2 => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_FMIJPBPOHJD),
-            3 => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_POGPNNBHMIO),
-            4 => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_OMNFLAIKIBC),
-            11 => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_EAHBMOFJIFI),
-            12 => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_FAEKDCEPPNN),
-            13 => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_CDEHDBIIAAH),
-            14 => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_CGEDDIECOKA),
-            15 => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_OMHHFJMHPOB),
+            0 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_DOJFCPKAJEN),
+            1 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_HPBMPLFIGDO),
+            2 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_BBFKOIKPIOA),
+            3 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_LPJJPGJPMKA),
+            4 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_JCIHFNMKAKK),
+            11 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_EGDIDGJEOCG),
+            12 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_JPJOOPBLLHO),
+            13 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_EBINJEAEFOE),
+            14 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_BJLCBIGLBIM),
+            15 => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_KPDHHAPIIGM),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MissionSyncRecord> {
         match str {
-            "ALGPCOOBEFF_ADPJFMJJABN" => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_ADPJFMJJABN),
-            "ALGPCOOBEFF_KHJCKCDFEJL" => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_KHJCKCDFEJL),
-            "ALGPCOOBEFF_FMIJPBPOHJD" => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_FMIJPBPOHJD),
-            "ALGPCOOBEFF_POGPNNBHMIO" => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_POGPNNBHMIO),
-            "ALGPCOOBEFF_OMNFLAIKIBC" => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_OMNFLAIKIBC),
-            "ALGPCOOBEFF_EAHBMOFJIFI" => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_EAHBMOFJIFI),
-            "ALGPCOOBEFF_FAEKDCEPPNN" => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_FAEKDCEPPNN),
-            "ALGPCOOBEFF_CDEHDBIIAAH" => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_CDEHDBIIAAH),
-            "ALGPCOOBEFF_CGEDDIECOKA" => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_CGEDDIECOKA),
-            "ALGPCOOBEFF_OMHHFJMHPOB" => ::std::option::Option::Some(MissionSyncRecord::ALGPCOOBEFF_OMHHFJMHPOB),
+            "MissionSyncRecord_DOJFCPKAJEN" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_DOJFCPKAJEN),
+            "MissionSyncRecord_HPBMPLFIGDO" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_HPBMPLFIGDO),
+            "MissionSyncRecord_BBFKOIKPIOA" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_BBFKOIKPIOA),
+            "MissionSyncRecord_LPJJPGJPMKA" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_LPJJPGJPMKA),
+            "MissionSyncRecord_JCIHFNMKAKK" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_JCIHFNMKAKK),
+            "MissionSyncRecord_EGDIDGJEOCG" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_EGDIDGJEOCG),
+            "MissionSyncRecord_JPJOOPBLLHO" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_JPJOOPBLLHO),
+            "MissionSyncRecord_EBINJEAEFOE" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_EBINJEAEFOE),
+            "MissionSyncRecord_BJLCBIGLBIM" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_BJLCBIGLBIM),
+            "MissionSyncRecord_KPDHHAPIIGM" => ::std::option::Option::Some(MissionSyncRecord::MissionSyncRecord_KPDHHAPIIGM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MissionSyncRecord] = &[
-        MissionSyncRecord::ALGPCOOBEFF_ADPJFMJJABN,
-        MissionSyncRecord::ALGPCOOBEFF_KHJCKCDFEJL,
-        MissionSyncRecord::ALGPCOOBEFF_FMIJPBPOHJD,
-        MissionSyncRecord::ALGPCOOBEFF_POGPNNBHMIO,
-        MissionSyncRecord::ALGPCOOBEFF_OMNFLAIKIBC,
-        MissionSyncRecord::ALGPCOOBEFF_EAHBMOFJIFI,
-        MissionSyncRecord::ALGPCOOBEFF_FAEKDCEPPNN,
-        MissionSyncRecord::ALGPCOOBEFF_CDEHDBIIAAH,
-        MissionSyncRecord::ALGPCOOBEFF_CGEDDIECOKA,
-        MissionSyncRecord::ALGPCOOBEFF_OMHHFJMHPOB,
+        MissionSyncRecord::MissionSyncRecord_DOJFCPKAJEN,
+        MissionSyncRecord::MissionSyncRecord_HPBMPLFIGDO,
+        MissionSyncRecord::MissionSyncRecord_BBFKOIKPIOA,
+        MissionSyncRecord::MissionSyncRecord_LPJJPGJPMKA,
+        MissionSyncRecord::MissionSyncRecord_JCIHFNMKAKK,
+        MissionSyncRecord::MissionSyncRecord_EGDIDGJEOCG,
+        MissionSyncRecord::MissionSyncRecord_JPJOOPBLLHO,
+        MissionSyncRecord::MissionSyncRecord_EBINJEAEFOE,
+        MissionSyncRecord::MissionSyncRecord_BJLCBIGLBIM,
+        MissionSyncRecord::MissionSyncRecord_KPDHHAPIIGM,
     ];
 }
 
@@ -110,16 +110,16 @@ impl ::protobuf::EnumFull for MissionSyncRecord {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            MissionSyncRecord::ALGPCOOBEFF_ADPJFMJJABN => 0,
-            MissionSyncRecord::ALGPCOOBEFF_KHJCKCDFEJL => 1,
-            MissionSyncRecord::ALGPCOOBEFF_FMIJPBPOHJD => 2,
-            MissionSyncRecord::ALGPCOOBEFF_POGPNNBHMIO => 3,
-            MissionSyncRecord::ALGPCOOBEFF_OMNFLAIKIBC => 4,
-            MissionSyncRecord::ALGPCOOBEFF_EAHBMOFJIFI => 5,
-            MissionSyncRecord::ALGPCOOBEFF_FAEKDCEPPNN => 6,
-            MissionSyncRecord::ALGPCOOBEFF_CDEHDBIIAAH => 7,
-            MissionSyncRecord::ALGPCOOBEFF_CGEDDIECOKA => 8,
-            MissionSyncRecord::ALGPCOOBEFF_OMHHFJMHPOB => 9,
+            MissionSyncRecord::MissionSyncRecord_DOJFCPKAJEN => 0,
+            MissionSyncRecord::MissionSyncRecord_HPBMPLFIGDO => 1,
+            MissionSyncRecord::MissionSyncRecord_BBFKOIKPIOA => 2,
+            MissionSyncRecord::MissionSyncRecord_LPJJPGJPMKA => 3,
+            MissionSyncRecord::MissionSyncRecord_JCIHFNMKAKK => 4,
+            MissionSyncRecord::MissionSyncRecord_EGDIDGJEOCG => 5,
+            MissionSyncRecord::MissionSyncRecord_JPJOOPBLLHO => 6,
+            MissionSyncRecord::MissionSyncRecord_EBINJEAEFOE => 7,
+            MissionSyncRecord::MissionSyncRecord_BJLCBIGLBIM => 8,
+            MissionSyncRecord::MissionSyncRecord_KPDHHAPIIGM => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,7 +127,7 @@ impl ::protobuf::EnumFull for MissionSyncRecord {
 
 impl ::std::default::Default for MissionSyncRecord {
     fn default() -> Self {
-        MissionSyncRecord::ALGPCOOBEFF_ADPJFMJJABN
+        MissionSyncRecord::MissionSyncRecord_DOJFCPKAJEN
     }
 }
 
@@ -138,14 +138,14 @@ impl MissionSyncRecord {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17MissionSyncRecord.proto*\xb5\x02\n\x11MissionSyncRecord\x12\x1b\n\
-    \x17ALGPCOOBEFF_ADPJFMJJABN\x10\0\x12\x1b\n\x17ALGPCOOBEFF_KHJCKCDFEJL\
-    \x10\x01\x12\x1b\n\x17ALGPCOOBEFF_FMIJPBPOHJD\x10\x02\x12\x1b\n\x17ALGPC\
-    OOBEFF_POGPNNBHMIO\x10\x03\x12\x1b\n\x17ALGPCOOBEFF_OMNFLAIKIBC\x10\x04\
-    \x12\x1b\n\x17ALGPCOOBEFF_EAHBMOFJIFI\x10\x0b\x12\x1b\n\x17ALGPCOOBEFF_F\
-    AEKDCEPPNN\x10\x0c\x12\x1b\n\x17ALGPCOOBEFF_CDEHDBIIAAH\x10\r\x12\x1b\n\
-    \x17ALGPCOOBEFF_CGEDDIECOKA\x10\x0e\x12\x1b\n\x17ALGPCOOBEFF_OMHHFJMHPOB\
-    \x10\x0fb\x06proto3\
+    \n\x17MissionSyncRecord.proto*\xf1\x02\n\x11MissionSyncRecord\x12!\n\x1d\
+    MissionSyncRecord_DOJFCPKAJEN\x10\0\x12!\n\x1dMissionSyncRecord_HPBMPLFI\
+    GDO\x10\x01\x12!\n\x1dMissionSyncRecord_BBFKOIKPIOA\x10\x02\x12!\n\x1dMi\
+    ssionSyncRecord_LPJJPGJPMKA\x10\x03\x12!\n\x1dMissionSyncRecord_JCIHFNMK\
+    AKK\x10\x04\x12!\n\x1dMissionSyncRecord_EGDIDGJEOCG\x10\x0b\x12!\n\x1dMi\
+    ssionSyncRecord_JPJOOPBLLHO\x10\x0c\x12!\n\x1dMissionSyncRecord_EBINJEAE\
+    FOE\x10\r\x12!\n\x1dMissionSyncRecord_BJLCBIGLBIM\x10\x0e\x12!\n\x1dMiss\
+    ionSyncRecord_KPDHHAPIIGM\x10\x0fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

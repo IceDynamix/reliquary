@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EntityBindPropCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EntityBindPropCsReq.PFAKHCCEEEK)
-    pub PFAKHCCEEEK: bool,
     // @@protoc_insertion_point(field:EntityBindPropCsReq.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
+    // @@protoc_insertion_point(field:EntityBindPropCsReq.NLACJLPCGOE)
+    pub NLACJLPCGOE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:EntityBindPropCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl EntityBindPropCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PFAKHCCEEEK",
-            |m: &EntityBindPropCsReq| { &m.PFAKHCCEEEK },
-            |m: &mut EntityBindPropCsReq| { &mut m.PFAKHCCEEEK },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "motion",
             |m: &EntityBindPropCsReq| { &m.motion },
             |m: &mut EntityBindPropCsReq| { &mut m.motion },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NLACJLPCGOE",
+            |m: &EntityBindPropCsReq| { &m.NLACJLPCGOE },
+            |m: &mut EntityBindPropCsReq| { &mut m.NLACJLPCGOE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EntityBindPropCsReq>(
             "EntityBindPropCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EntityBindPropCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.PFAKHCCEEEK = is.read_bool()?;
-                },
-                90 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
+                },
+                96 => {
+                    self.NLACJLPCGOE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for EntityBindPropCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PFAKHCCEEEK != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.motion.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.NLACJLPCGOE != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for EntityBindPropCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PFAKHCCEEEK != false {
-            os.write_bool(4, self.PFAKHCCEEEK)?;
-        }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        if self.NLACJLPCGOE != false {
+            os.write_bool(12, self.NLACJLPCGOE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for EntityBindPropCsReq {
     }
 
     fn clear(&mut self) {
-        self.PFAKHCCEEEK = false;
         self.motion.clear();
+        self.NLACJLPCGOE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EntityBindPropCsReq {
         static instance: EntityBindPropCsReq = EntityBindPropCsReq {
-            PFAKHCCEEEK: false,
             motion: ::protobuf::MessageField::none(),
+            NLACJLPCGOE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for EntityBindPropCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19EntityBindPropCsReq.proto\x1a\x10MotionInfo.proto\"\\\n\x13EntityB\
-    indPropCsReq\x12\x20\n\x0bPFAKHCCEEEK\x18\x04\x20\x01(\x08R\x0bPFAKHCCEE\
-    EK\x12#\n\x06motion\x18\x0b\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06\
+    indPropCsReq\x12#\n\x06motion\x18\x0f\x20\x01(\x0b2\x0b.MotionInfoR\x06m\
+    otion\x12\x20\n\x0bNLACJLPCGOE\x18\x0c\x20\x01(\x08R\x0bNLACJLPCGOEb\x06\
     proto3\
 ";
 

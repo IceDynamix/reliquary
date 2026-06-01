@@ -28,12 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AiPamResponseFeedbackScRsp {
     // message fields
+    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.NMMJBGFDNAI)
+    pub NMMJBGFDNAI: bool,
+    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.IAJAOMAKAHA)
+    pub IAJAOMAKAHA: bool,
     // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.DHEKDAGJBJB)
-    pub DHEKDAGJBJB: bool,
-    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.FFGICGLDLKE)
-    pub FFGICGLDLKE: bool,
+    // @@protoc_insertion_point(field:AiPamResponseFeedbackScRsp.BDPIMPJOJBK)
+    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
     // special fields
     // @@protoc_insertion_point(special_field:AiPamResponseFeedbackScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,22 +53,27 @@ impl AiPamResponseFeedbackScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(3);
+        let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NMMJBGFDNAI",
+            |m: &AiPamResponseFeedbackScRsp| { &m.NMMJBGFDNAI },
+            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.NMMJBGFDNAI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IAJAOMAKAHA",
+            |m: &AiPamResponseFeedbackScRsp| { &m.IAJAOMAKAHA },
+            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.IAJAOMAKAHA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &AiPamResponseFeedbackScRsp| { &m.retcode },
             |m: &mut AiPamResponseFeedbackScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DHEKDAGJBJB",
-            |m: &AiPamResponseFeedbackScRsp| { &m.DHEKDAGJBJB },
-            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.DHEKDAGJBJB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FFGICGLDLKE",
-            |m: &AiPamResponseFeedbackScRsp| { &m.FFGICGLDLKE },
-            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.FFGICGLDLKE },
+            "BDPIMPJOJBK",
+            |m: &AiPamResponseFeedbackScRsp| { &m.BDPIMPJOJBK },
+            |m: &mut AiPamResponseFeedbackScRsp| { &mut m.BDPIMPJOJBK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AiPamResponseFeedbackScRsp>(
             "AiPamResponseFeedbackScRsp",
@@ -86,14 +93,17 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                16 => {
+                    self.NMMJBGFDNAI = is.read_bool()?;
+                },
+                80 => {
+                    self.IAJAOMAKAHA = is.read_bool()?;
                 },
                 104 => {
-                    self.DHEKDAGJBJB = is.read_bool()?;
+                    self.retcode = is.read_uint32()?;
                 },
-                24 => {
-                    self.FFGICGLDLKE = is.read_bool()?;
+                64 => {
+                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +117,17 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.NMMJBGFDNAI != false {
+            my_size += 1 + 1;
+        }
+        if self.IAJAOMAKAHA != false {
+            my_size += 1 + 1;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
-        if self.DHEKDAGJBJB != false {
-            my_size += 1 + 1;
-        }
-        if self.FFGICGLDLKE != false {
-            my_size += 1 + 1;
+        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(8, self.BDPIMPJOJBK.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +135,17 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.NMMJBGFDNAI != false {
+            os.write_bool(2, self.NMMJBGFDNAI)?;
+        }
+        if self.IAJAOMAKAHA != false {
+            os.write_bool(10, self.IAJAOMAKAHA)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
-        if self.DHEKDAGJBJB != false {
-            os.write_bool(13, self.DHEKDAGJBJB)?;
-        }
-        if self.FFGICGLDLKE != false {
-            os.write_bool(3, self.FFGICGLDLKE)?;
+        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +164,19 @@ impl ::protobuf::Message for AiPamResponseFeedbackScRsp {
     }
 
     fn clear(&mut self) {
+        self.NMMJBGFDNAI = false;
+        self.IAJAOMAKAHA = false;
         self.retcode = 0;
-        self.DHEKDAGJBJB = false;
-        self.FFGICGLDLKE = false;
+        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AiPamResponseFeedbackScRsp {
         static instance: AiPamResponseFeedbackScRsp = AiPamResponseFeedbackScRsp {
+            NMMJBGFDNAI: false,
+            IAJAOMAKAHA: false,
             retcode: 0,
-            DHEKDAGJBJB: false,
-            FFGICGLDLKE: false,
+            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +201,12 @@ impl ::protobuf::reflect::ProtobufValue for AiPamResponseFeedbackScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20AiPamResponseFeedbackScRsp.proto\"z\n\x1aAiPamResponseFeedbackScRs\
-    p\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0bDHEKD\
-    AGJBJB\x18\r\x20\x01(\x08R\x0bDHEKDAGJBJB\x12\x20\n\x0bFFGICGLDLKE\x18\
-    \x03\x20\x01(\x08R\x0bFFGICGLDLKEb\x06proto3\
+    \n\x20AiPamResponseFeedbackScRsp.proto\x1a\x11FKNKNLGMACL.proto\"\xaa\
+    \x01\n\x1aAiPamResponseFeedbackScRsp\x12\x20\n\x0bNMMJBGFDNAI\x18\x02\
+    \x20\x01(\x08R\x0bNMMJBGFDNAI\x12\x20\n\x0bIAJAOMAKAHA\x18\n\x20\x01(\
+    \x08R\x0bIAJAOMAKAHA\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\
+    \x12.\n\x0bBDPIMPJOJBK\x18\x08\x20\x01(\x0e2\x0c.FKNKNLGMACLR\x0bBDPIMPJ\
+    OJBKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -203,7 +223,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::FKNKNLGMACL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(AiPamResponseFeedbackScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

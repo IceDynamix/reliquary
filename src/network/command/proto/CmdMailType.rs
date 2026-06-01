@@ -27,26 +27,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMailType)
 pub enum CmdMailType {
-    // @@protoc_insertion_point(enum_value:CmdMailType.DHLEHKEIMMN_PCPDHELPKEM)
-    DHLEHKEIMMN_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdGetMailCsReq)
-    CmdGetMailCsReq = 891,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdMarkReadMailCsReq)
-    CmdMarkReadMailCsReq = 894,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdTakeMailAttachmentScRsp)
-    CmdTakeMailAttachmentScRsp = 898,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdTakeMailAttachmentCsReq)
-    CmdTakeMailAttachmentCsReq = 809,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdNewMailScNotify)
-    CmdNewMailScNotify = 863,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdDelMailCsReq)
-    CmdDelMailCsReq = 814,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdGetMailScRsp)
-    CmdGetMailScRsp = 810,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdDelMailScRsp)
-    CmdDelMailScRsp = 818,
-    // @@protoc_insertion_point(enum_value:CmdMailType.CmdLOHGBNAIAIL)
-    CmdLOHGBNAIAIL = 895,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_NLCDGIPGFDJ)
+    CFGEBHKAEHB_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_NKLEGIGBOFE)
+    CFGEBHKAEHB_NKLEGIGBOFE = 881,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_EPNKGIBMBOM)
+    CFGEBHKAEHB_EPNKGIBMBOM = 836,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_GLMALNLNPPI)
+    CFGEBHKAEHB_GLMALNLNPPI = 810,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_PGAFBFPOJGF)
+    CFGEBHKAEHB_PGAFBFPOJGF = 803,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_PCCBLDPKNKH)
+    CFGEBHKAEHB_PCCBLDPKNKH = 827,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_BKPBLKEGOEL)
+    CFGEBHKAEHB_BKPBLKEGOEL = 873,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_KPMKIALICNC)
+    CFGEBHKAEHB_KPMKIALICNC = 880,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_PELMIHDCFIL)
+    CFGEBHKAEHB_PELMIHDCFIL = 815,
+    // @@protoc_insertion_point(enum_value:CmdMailType.CFGEBHKAEHB_FCLOLINPLNI)
+    CFGEBHKAEHB_FCLOLINPLNI = 813,
 }
 
 impl ::protobuf::Enum for CmdMailType {
@@ -58,47 +58,47 @@ impl ::protobuf::Enum for CmdMailType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMailType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMailType::DHLEHKEIMMN_PCPDHELPKEM),
-            891 => ::std::option::Option::Some(CmdMailType::CmdGetMailCsReq),
-            894 => ::std::option::Option::Some(CmdMailType::CmdMarkReadMailCsReq),
-            898 => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentScRsp),
-            809 => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentCsReq),
-            863 => ::std::option::Option::Some(CmdMailType::CmdNewMailScNotify),
-            814 => ::std::option::Option::Some(CmdMailType::CmdDelMailCsReq),
-            810 => ::std::option::Option::Some(CmdMailType::CmdGetMailScRsp),
-            818 => ::std::option::Option::Some(CmdMailType::CmdDelMailScRsp),
-            895 => ::std::option::Option::Some(CmdMailType::CmdLOHGBNAIAIL),
+            0 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_NLCDGIPGFDJ),
+            881 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE),
+            836 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM),
+            810 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_GLMALNLNPPI),
+            803 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PGAFBFPOJGF),
+            827 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PCCBLDPKNKH),
+            873 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_BKPBLKEGOEL),
+            880 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_KPMKIALICNC),
+            815 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PELMIHDCFIL),
+            813 => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_FCLOLINPLNI),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMailType> {
         match str {
-            "DHLEHKEIMMN_PCPDHELPKEM" => ::std::option::Option::Some(CmdMailType::DHLEHKEIMMN_PCPDHELPKEM),
-            "CmdGetMailCsReq" => ::std::option::Option::Some(CmdMailType::CmdGetMailCsReq),
-            "CmdMarkReadMailCsReq" => ::std::option::Option::Some(CmdMailType::CmdMarkReadMailCsReq),
-            "CmdTakeMailAttachmentScRsp" => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentScRsp),
-            "CmdTakeMailAttachmentCsReq" => ::std::option::Option::Some(CmdMailType::CmdTakeMailAttachmentCsReq),
-            "CmdNewMailScNotify" => ::std::option::Option::Some(CmdMailType::CmdNewMailScNotify),
-            "CmdDelMailCsReq" => ::std::option::Option::Some(CmdMailType::CmdDelMailCsReq),
-            "CmdGetMailScRsp" => ::std::option::Option::Some(CmdMailType::CmdGetMailScRsp),
-            "CmdDelMailScRsp" => ::std::option::Option::Some(CmdMailType::CmdDelMailScRsp),
-            "CmdLOHGBNAIAIL" => ::std::option::Option::Some(CmdMailType::CmdLOHGBNAIAIL),
+            "CFGEBHKAEHB_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_NLCDGIPGFDJ),
+            "CFGEBHKAEHB_NKLEGIGBOFE" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE),
+            "CFGEBHKAEHB_EPNKGIBMBOM" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM),
+            "CFGEBHKAEHB_GLMALNLNPPI" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_GLMALNLNPPI),
+            "CFGEBHKAEHB_PGAFBFPOJGF" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PGAFBFPOJGF),
+            "CFGEBHKAEHB_PCCBLDPKNKH" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PCCBLDPKNKH),
+            "CFGEBHKAEHB_BKPBLKEGOEL" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_BKPBLKEGOEL),
+            "CFGEBHKAEHB_KPMKIALICNC" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_KPMKIALICNC),
+            "CFGEBHKAEHB_PELMIHDCFIL" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_PELMIHDCFIL),
+            "CFGEBHKAEHB_FCLOLINPLNI" => ::std::option::Option::Some(CmdMailType::CFGEBHKAEHB_FCLOLINPLNI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMailType] = &[
-        CmdMailType::DHLEHKEIMMN_PCPDHELPKEM,
-        CmdMailType::CmdGetMailCsReq,
-        CmdMailType::CmdMarkReadMailCsReq,
-        CmdMailType::CmdTakeMailAttachmentScRsp,
-        CmdMailType::CmdTakeMailAttachmentCsReq,
-        CmdMailType::CmdNewMailScNotify,
-        CmdMailType::CmdDelMailCsReq,
-        CmdMailType::CmdGetMailScRsp,
-        CmdMailType::CmdDelMailScRsp,
-        CmdMailType::CmdLOHGBNAIAIL,
+        CmdMailType::CFGEBHKAEHB_NLCDGIPGFDJ,
+        CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE,
+        CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM,
+        CmdMailType::CFGEBHKAEHB_GLMALNLNPPI,
+        CmdMailType::CFGEBHKAEHB_PGAFBFPOJGF,
+        CmdMailType::CFGEBHKAEHB_PCCBLDPKNKH,
+        CmdMailType::CFGEBHKAEHB_BKPBLKEGOEL,
+        CmdMailType::CFGEBHKAEHB_KPMKIALICNC,
+        CmdMailType::CFGEBHKAEHB_PELMIHDCFIL,
+        CmdMailType::CFGEBHKAEHB_FCLOLINPLNI,
     ];
 }
 
@@ -110,16 +110,16 @@ impl ::protobuf::EnumFull for CmdMailType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMailType::DHLEHKEIMMN_PCPDHELPKEM => 0,
-            CmdMailType::CmdGetMailCsReq => 1,
-            CmdMailType::CmdMarkReadMailCsReq => 2,
-            CmdMailType::CmdTakeMailAttachmentScRsp => 3,
-            CmdMailType::CmdTakeMailAttachmentCsReq => 4,
-            CmdMailType::CmdNewMailScNotify => 5,
-            CmdMailType::CmdDelMailCsReq => 6,
-            CmdMailType::CmdGetMailScRsp => 7,
-            CmdMailType::CmdDelMailScRsp => 8,
-            CmdMailType::CmdLOHGBNAIAIL => 9,
+            CmdMailType::CFGEBHKAEHB_NLCDGIPGFDJ => 0,
+            CmdMailType::CFGEBHKAEHB_NKLEGIGBOFE => 1,
+            CmdMailType::CFGEBHKAEHB_EPNKGIBMBOM => 2,
+            CmdMailType::CFGEBHKAEHB_GLMALNLNPPI => 3,
+            CmdMailType::CFGEBHKAEHB_PGAFBFPOJGF => 4,
+            CmdMailType::CFGEBHKAEHB_PCCBLDPKNKH => 5,
+            CmdMailType::CFGEBHKAEHB_BKPBLKEGOEL => 6,
+            CmdMailType::CFGEBHKAEHB_KPMKIALICNC => 7,
+            CmdMailType::CFGEBHKAEHB_PELMIHDCFIL => 8,
+            CmdMailType::CFGEBHKAEHB_FCLOLINPLNI => 9,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -127,7 +127,7 @@ impl ::protobuf::EnumFull for CmdMailType {
 
 impl ::std::default::Default for CmdMailType {
     fn default() -> Self {
-        CmdMailType::DHLEHKEIMMN_PCPDHELPKEM
+        CmdMailType::CFGEBHKAEHB_NLCDGIPGFDJ
     }
 }
 
@@ -138,14 +138,14 @@ impl CmdMailType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CmdMailType.proto*\x8d\x02\n\x0bCmdMailType\x12\x1b\n\x17DHLEHKEIM\
-    MN_PCPDHELPKEM\x10\0\x12\x14\n\x0fCmdGetMailCsReq\x10\xfb\x06\x12\x19\n\
-    \x14CmdMarkReadMailCsReq\x10\xfe\x06\x12\x1f\n\x1aCmdTakeMailAttachmentS\
-    cRsp\x10\x82\x07\x12\x1f\n\x1aCmdTakeMailAttachmentCsReq\x10\xa9\x06\x12\
-    \x17\n\x12CmdNewMailScNotify\x10\xdf\x06\x12\x14\n\x0fCmdDelMailCsReq\
-    \x10\xae\x06\x12\x14\n\x0fCmdGetMailScRsp\x10\xaa\x06\x12\x14\n\x0fCmdDe\
-    lMailScRsp\x10\xb2\x06\x12\x13\n\x0eCmdLOHGBNAIAIL\x10\xff\x06b\x06proto\
-    3\
+    \n\x11CmdMailType.proto*\xb8\x02\n\x0bCmdMailType\x12\x1b\n\x17CFGEBHKAE\
+    HB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17CFGEBHKAEHB_NKLEGIGBOFE\x10\xf1\x06\
+    \x12\x1c\n\x17CFGEBHKAEHB_EPNKGIBMBOM\x10\xc4\x06\x12\x1c\n\x17CFGEBHKAE\
+    HB_GLMALNLNPPI\x10\xaa\x06\x12\x1c\n\x17CFGEBHKAEHB_PGAFBFPOJGF\x10\xa3\
+    \x06\x12\x1c\n\x17CFGEBHKAEHB_PCCBLDPKNKH\x10\xbb\x06\x12\x1c\n\x17CFGEB\
+    HKAEHB_BKPBLKEGOEL\x10\xe9\x06\x12\x1c\n\x17CFGEBHKAEHB_KPMKIALICNC\x10\
+    \xf0\x06\x12\x1c\n\x17CFGEBHKAEHB_PELMIHDCFIL\x10\xaf\x06\x12\x1c\n\x17C\
+    FGEBHKAEHB_FCLOLINPLNI\x10\xad\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

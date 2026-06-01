@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlanetFesDealAvatarEventOptionItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemCsReq.GLIONEELOJH)
-    pub GLIONEELOJH: u32,
-    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemCsReq.ICOGAHFFCLD)
-    pub ICOGAHFFCLD: bool,
+    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemCsReq.MLKBOBIEAPL)
+    pub MLKBOBIEAPL: bool,
+    // @@protoc_insertion_point(field:PlanetFesDealAvatarEventOptionItemCsReq.HLLIBEEKFII)
+    pub HLLIBEEKFII: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesDealAvatarEventOptionItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl PlanetFesDealAvatarEventOptionItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLIONEELOJH",
-            |m: &PlanetFesDealAvatarEventOptionItemCsReq| { &m.GLIONEELOJH },
-            |m: &mut PlanetFesDealAvatarEventOptionItemCsReq| { &mut m.GLIONEELOJH },
+            "MLKBOBIEAPL",
+            |m: &PlanetFesDealAvatarEventOptionItemCsReq| { &m.MLKBOBIEAPL },
+            |m: &mut PlanetFesDealAvatarEventOptionItemCsReq| { &mut m.MLKBOBIEAPL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ICOGAHFFCLD",
-            |m: &PlanetFesDealAvatarEventOptionItemCsReq| { &m.ICOGAHFFCLD },
-            |m: &mut PlanetFesDealAvatarEventOptionItemCsReq| { &mut m.ICOGAHFFCLD },
+            "HLLIBEEKFII",
+            |m: &PlanetFesDealAvatarEventOptionItemCsReq| { &m.HLLIBEEKFII },
+            |m: &mut PlanetFesDealAvatarEventOptionItemCsReq| { &mut m.HLLIBEEKFII },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesDealAvatarEventOptionItemCsReq>(
             "PlanetFesDealAvatarEventOptionItemCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.GLIONEELOJH = is.read_uint32()?;
+                80 => {
+                    self.MLKBOBIEAPL = is.read_bool()?;
                 },
-                16 => {
-                    self.ICOGAHFFCLD = is.read_bool()?;
+                48 => {
+                    self.HLLIBEEKFII = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GLIONEELOJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GLIONEELOJH);
-        }
-        if self.ICOGAHFFCLD != false {
+        if self.MLKBOBIEAPL != false {
             my_size += 1 + 1;
+        }
+        if self.HLLIBEEKFII != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.HLLIBEEKFII);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GLIONEELOJH != 0 {
-            os.write_uint32(4, self.GLIONEELOJH)?;
+        if self.MLKBOBIEAPL != false {
+            os.write_bool(10, self.MLKBOBIEAPL)?;
         }
-        if self.ICOGAHFFCLD != false {
-            os.write_bool(2, self.ICOGAHFFCLD)?;
+        if self.HLLIBEEKFII != 0 {
+            os.write_uint32(6, self.HLLIBEEKFII)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for PlanetFesDealAvatarEventOptionItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.GLIONEELOJH = 0;
-        self.ICOGAHFFCLD = false;
+        self.MLKBOBIEAPL = false;
+        self.HLLIBEEKFII = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesDealAvatarEventOptionItemCsReq {
         static instance: PlanetFesDealAvatarEventOptionItemCsReq = PlanetFesDealAvatarEventOptionItemCsReq {
-            GLIONEELOJH: 0,
-            ICOGAHFFCLD: false,
+            MLKBOBIEAPL: false,
+            HLLIBEEKFII: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesDealAvatarEventOptionItemCs
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n-PlanetFesDealAvatarEventOptionItemCsReq.proto\"m\n'PlanetFesDealAvata\
-    rEventOptionItemCsReq\x12\x20\n\x0bGLIONEELOJH\x18\x04\x20\x01(\rR\x0bGL\
-    IONEELOJH\x12\x20\n\x0bICOGAHFFCLD\x18\x02\x20\x01(\x08R\x0bICOGAHFFCLDb\
+    rEventOptionItemCsReq\x12\x20\n\x0bMLKBOBIEAPL\x18\n\x20\x01(\x08R\x0bML\
+    KBOBIEAPL\x12\x20\n\x0bHLLIBEEKFII\x18\x06\x20\x01(\rR\x0bHLLIBEEKFIIb\
     \x06proto3\
 ";
 

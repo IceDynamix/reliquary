@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:ChessRogueCellSpecialType)
 pub enum ChessRogueCellSpecialType {
-    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PKFEGCHGCEE_PCPDHELPKEM)
-    PKFEGCHGCEE_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PKFEGCHGCEE_BGIBPDPNFBC)
-    PKFEGCHGCEE_BGIBPDPNFBC = 1,
-    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PKFEGCHGCEE_CFGALAJONCP)
-    PKFEGCHGCEE_CFGALAJONCP = 2,
-    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PKFEGCHGCEE_HAGCLKCKGJD)
-    PKFEGCHGCEE_HAGCLKCKGJD = 3,
-    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PKFEGCHGCEE_KBHGAJCNNBM)
-    PKFEGCHGCEE_KBHGAJCNNBM = 4,
-    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PKFEGCHGCEE_PAMMDCPGAME)
-    PKFEGCHGCEE_PAMMDCPGAME = 5,
+    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PHAHPIPPMDF_NLCDGIPGFDJ)
+    PHAHPIPPMDF_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PHAHPIPPMDF_ABGEKPJHHIA)
+    PHAHPIPPMDF_ABGEKPJHHIA = 1,
+    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PHAHPIPPMDF_EHDFEMMFHDG)
+    PHAHPIPPMDF_EHDFEMMFHDG = 2,
+    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PHAHPIPPMDF_KCAIFKMKHFJ)
+    PHAHPIPPMDF_KCAIFKMKHFJ = 3,
+    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PHAHPIPPMDF_CMFNKDKKGGI)
+    PHAHPIPPMDF_CMFNKDKKGGI = 4,
+    // @@protoc_insertion_point(enum_value:ChessRogueCellSpecialType.PHAHPIPPMDF_MOPJKHEINAL)
+    PHAHPIPPMDF_MOPJKHEINAL = 5,
 }
 
 impl ::protobuf::Enum for ChessRogueCellSpecialType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for ChessRogueCellSpecialType {
 
     fn from_i32(value: i32) -> ::std::option::Option<ChessRogueCellSpecialType> {
         match value {
-            0 => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_BGIBPDPNFBC),
-            2 => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_CFGALAJONCP),
-            3 => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_HAGCLKCKGJD),
-            4 => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_KBHGAJCNNBM),
-            5 => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_PAMMDCPGAME),
+            0 => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_ABGEKPJHHIA),
+            2 => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_EHDFEMMFHDG),
+            3 => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_KCAIFKMKHFJ),
+            4 => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_CMFNKDKKGGI),
+            5 => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_MOPJKHEINAL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<ChessRogueCellSpecialType> {
         match str {
-            "PKFEGCHGCEE_PCPDHELPKEM" => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_PCPDHELPKEM),
-            "PKFEGCHGCEE_BGIBPDPNFBC" => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_BGIBPDPNFBC),
-            "PKFEGCHGCEE_CFGALAJONCP" => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_CFGALAJONCP),
-            "PKFEGCHGCEE_HAGCLKCKGJD" => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_HAGCLKCKGJD),
-            "PKFEGCHGCEE_KBHGAJCNNBM" => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_KBHGAJCNNBM),
-            "PKFEGCHGCEE_PAMMDCPGAME" => ::std::option::Option::Some(ChessRogueCellSpecialType::PKFEGCHGCEE_PAMMDCPGAME),
+            "PHAHPIPPMDF_NLCDGIPGFDJ" => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_NLCDGIPGFDJ),
+            "PHAHPIPPMDF_ABGEKPJHHIA" => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_ABGEKPJHHIA),
+            "PHAHPIPPMDF_EHDFEMMFHDG" => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_EHDFEMMFHDG),
+            "PHAHPIPPMDF_KCAIFKMKHFJ" => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_KCAIFKMKHFJ),
+            "PHAHPIPPMDF_CMFNKDKKGGI" => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_CMFNKDKKGGI),
+            "PHAHPIPPMDF_MOPJKHEINAL" => ::std::option::Option::Some(ChessRogueCellSpecialType::PHAHPIPPMDF_MOPJKHEINAL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [ChessRogueCellSpecialType] = &[
-        ChessRogueCellSpecialType::PKFEGCHGCEE_PCPDHELPKEM,
-        ChessRogueCellSpecialType::PKFEGCHGCEE_BGIBPDPNFBC,
-        ChessRogueCellSpecialType::PKFEGCHGCEE_CFGALAJONCP,
-        ChessRogueCellSpecialType::PKFEGCHGCEE_HAGCLKCKGJD,
-        ChessRogueCellSpecialType::PKFEGCHGCEE_KBHGAJCNNBM,
-        ChessRogueCellSpecialType::PKFEGCHGCEE_PAMMDCPGAME,
+        ChessRogueCellSpecialType::PHAHPIPPMDF_NLCDGIPGFDJ,
+        ChessRogueCellSpecialType::PHAHPIPPMDF_ABGEKPJHHIA,
+        ChessRogueCellSpecialType::PHAHPIPPMDF_EHDFEMMFHDG,
+        ChessRogueCellSpecialType::PHAHPIPPMDF_KCAIFKMKHFJ,
+        ChessRogueCellSpecialType::PHAHPIPPMDF_CMFNKDKKGGI,
+        ChessRogueCellSpecialType::PHAHPIPPMDF_MOPJKHEINAL,
     ];
 }
 
@@ -96,7 +96,7 @@ impl ::protobuf::EnumFull for ChessRogueCellSpecialType {
 
 impl ::std::default::Default for ChessRogueCellSpecialType {
     fn default() -> Self {
-        ChessRogueCellSpecialType::PKFEGCHGCEE_PCPDHELPKEM
+        ChessRogueCellSpecialType::PHAHPIPPMDF_NLCDGIPGFDJ
     }
 }
 
@@ -108,10 +108,10 @@ impl ChessRogueCellSpecialType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fChessRogueCellSpecialType.proto*\xc9\x01\n\x19ChessRogueCellSpecia\
-    lType\x12\x1b\n\x17PKFEGCHGCEE_PCPDHELPKEM\x10\0\x12\x1b\n\x17PKFEGCHGCE\
-    E_BGIBPDPNFBC\x10\x01\x12\x1b\n\x17PKFEGCHGCEE_CFGALAJONCP\x10\x02\x12\
-    \x1b\n\x17PKFEGCHGCEE_HAGCLKCKGJD\x10\x03\x12\x1b\n\x17PKFEGCHGCEE_KBHGA\
-    JCNNBM\x10\x04\x12\x1b\n\x17PKFEGCHGCEE_PAMMDCPGAME\x10\x05b\x06proto3\
+    lType\x12\x1b\n\x17PHAHPIPPMDF_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17PHAHPIPPMD\
+    F_ABGEKPJHHIA\x10\x01\x12\x1b\n\x17PHAHPIPPMDF_EHDFEMMFHDG\x10\x02\x12\
+    \x1b\n\x17PHAHPIPPMDF_KCAIFKMKHFJ\x10\x03\x12\x1b\n\x17PHAHPIPPMDF_CMFNK\
+    DKKGGI\x10\x04\x12\x1b\n\x17PHAHPIPPMDF_MOPJKHEINAL\x10\x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

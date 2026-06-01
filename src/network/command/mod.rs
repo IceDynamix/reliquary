@@ -77,19 +77,19 @@ pub mod proto {
     pub mod WaitDelResource;
 
     // Untranslated dependencies
-    pub mod ANDMLIEGPKE;
-    pub mod DPBEGBNICPG;
-    pub mod EPNCDFBAHEA;
-    pub mod GKDEKJKOIJN;
-    pub mod IEBAILGKMLB;
-    pub mod IFBLMCNFIEO;
-    pub mod JLAEDKMBGEK;
-    pub mod KFLKNDHJILI;
-    pub mod LAEHDNHPGCC;
-    pub mod MCNDBBEBKMJ;
-    pub mod OEIEJHBCOOM;
-    pub mod OKEPFGMNJAO;
-    pub mod PFFDAFJLNOO;
+    pub mod ALBOJHJALOF;
+    pub mod APAMFCKFHLL;
+    pub mod BKGPJOBNMKJ;
+    pub mod CCHMHOONEGG;
+    pub mod CFMDKNCDDAL;
+    pub mod CJLCPMDGIBO;
+    pub mod MJBANFPPEFH;
+    pub mod NEIMLKNMDBM;
+    pub mod NKDNFDCFNCP;
+    pub mod NLLLAAEJOBP;
+    pub mod OCKCHBDFGNL;
+    pub mod ONHKODAFEMH;
+    pub mod PFNHCOJOBKH;
 }
 
 /// Game command header.

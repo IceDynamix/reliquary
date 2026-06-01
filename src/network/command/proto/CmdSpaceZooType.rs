@@ -27,38 +27,38 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdSpaceZooType)
 pub enum CmdSpaceZooType {
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.BGCDIJDNAGF_PCPDHELPKEM)
-    BGCDIJDNAGF_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooMutateScRsp)
-    CmdSpaceZooMutateScRsp = 6718,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooMutateCsReq)
-    CmdSpaceZooMutateCsReq = 6714,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooBornCsReq)
-    CmdSpaceZooBornCsReq = 6794,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooDeleteCatScRsp)
-    CmdSpaceZooDeleteCatScRsp = 6726,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooTakeScRsp)
-    CmdSpaceZooTakeScRsp = 6704,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooOpCatteryScRsp)
-    CmdSpaceZooOpCatteryScRsp = 6798,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooExchangeItemCsReq)
-    CmdSpaceZooExchangeItemCsReq = 6701,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooDeleteCatCsReq)
-    CmdSpaceZooDeleteCatCsReq = 6763,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooBornScRsp)
-    CmdSpaceZooBornScRsp = 6795,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooCatUpdateNotify)
-    CmdSpaceZooCatUpdateNotify = 6739,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdEICJJJFFLBI)
-    CmdEICJJJFFLBI = 6774,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooOpCatteryCsReq)
-    CmdSpaceZooOpCatteryCsReq = 6709,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooDataScRsp)
-    CmdSpaceZooDataScRsp = 6710,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooTakeCsReq)
-    CmdSpaceZooTakeCsReq = 6737,
-    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.CmdSpaceZooDataCsReq)
-    CmdSpaceZooDataCsReq = 6791,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_NLCDGIPGFDJ)
+    LPMAENKEEHO_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_GIMMMBGKIKL)
+    LPMAENKEEHO_GIMMMBGKIKL = 6710,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_DPOBLEPFJDJ)
+    LPMAENKEEHO_DPOBLEPFJDJ = 6712,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_BMPNHEMOEKI)
+    LPMAENKEEHO_BMPNHEMOEKI = 6773,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_HFBJHFGODGB)
+    LPMAENKEEHO_HFBJHFGODGB = 6780,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_AJHLBBKCFFK)
+    LPMAENKEEHO_AJHLBBKCFFK = 6713,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_KCMOAOLIPGN)
+    LPMAENKEEHO_KCMOAOLIPGN = 6783,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_MKKIOPMCMHB)
+    LPMAENKEEHO_MKKIOPMCMHB = 6727,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_HCNDNIGALBB)
+    LPMAENKEEHO_HCNDNIGALBB = 6787,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_FMNIDGBDCDO)
+    LPMAENKEEHO_FMNIDGBDCDO = 6715,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_DPLPKPEFDCC)
+    LPMAENKEEHO_DPLPKPEFDCC = 6754,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_ENEKOFGHHGG)
+    LPMAENKEEHO_ENEKOFGHHGG = 6781,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_AOJDJHDIFIP)
+    LPMAENKEEHO_AOJDJHDIFIP = 6736,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_JKILIBCLKPK)
+    LPMAENKEEHO_JKILIBCLKPK = 6729,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_CADJHIFNINP)
+    LPMAENKEEHO_CADJHIFNINP = 6703,
+    // @@protoc_insertion_point(enum_value:CmdSpaceZooType.LPMAENKEEHO_KKHDJGCHKHG)
+    LPMAENKEEHO_KKHDJGCHKHG = 6709,
 }
 
 impl ::protobuf::Enum for CmdSpaceZooType {
@@ -70,65 +70,65 @@ impl ::protobuf::Enum for CmdSpaceZooType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdSpaceZooType> {
         match value {
-            0 => ::std::option::Option::Some(CmdSpaceZooType::BGCDIJDNAGF_PCPDHELPKEM),
-            6718 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateScRsp),
-            6714 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateCsReq),
-            6794 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooBornCsReq),
-            6726 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatScRsp),
-            6704 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeScRsp),
-            6798 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp),
-            6701 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq),
-            6763 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq),
-            6795 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooBornScRsp),
-            6739 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooCatUpdateNotify),
-            6774 => ::std::option::Option::Some(CmdSpaceZooType::CmdEICJJJFFLBI),
-            6709 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq),
-            6710 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDataScRsp),
-            6737 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeCsReq),
-            6791 => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDataCsReq),
+            0 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_NLCDGIPGFDJ),
+            6710 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL),
+            6712 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ),
+            6773 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI),
+            6780 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_HFBJHFGODGB),
+            6713 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK),
+            6783 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN),
+            6727 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB),
+            6787 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_HCNDNIGALBB),
+            6715 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO),
+            6754 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPLPKPEFDCC),
+            6781 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG),
+            6736 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP),
+            6729 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK),
+            6703 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_CADJHIFNINP),
+            6709 => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KKHDJGCHKHG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdSpaceZooType> {
         match str {
-            "BGCDIJDNAGF_PCPDHELPKEM" => ::std::option::Option::Some(CmdSpaceZooType::BGCDIJDNAGF_PCPDHELPKEM),
-            "CmdSpaceZooMutateScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateScRsp),
-            "CmdSpaceZooMutateCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooMutateCsReq),
-            "CmdSpaceZooBornCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooBornCsReq),
-            "CmdSpaceZooDeleteCatScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatScRsp),
-            "CmdSpaceZooTakeScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeScRsp),
-            "CmdSpaceZooOpCatteryScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp),
-            "CmdSpaceZooExchangeItemCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq),
-            "CmdSpaceZooDeleteCatCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq),
-            "CmdSpaceZooBornScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooBornScRsp),
-            "CmdSpaceZooCatUpdateNotify" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooCatUpdateNotify),
-            "CmdEICJJJFFLBI" => ::std::option::Option::Some(CmdSpaceZooType::CmdEICJJJFFLBI),
-            "CmdSpaceZooOpCatteryCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq),
-            "CmdSpaceZooDataScRsp" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDataScRsp),
-            "CmdSpaceZooTakeCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooTakeCsReq),
-            "CmdSpaceZooDataCsReq" => ::std::option::Option::Some(CmdSpaceZooType::CmdSpaceZooDataCsReq),
+            "LPMAENKEEHO_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_NLCDGIPGFDJ),
+            "LPMAENKEEHO_GIMMMBGKIKL" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL),
+            "LPMAENKEEHO_DPOBLEPFJDJ" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ),
+            "LPMAENKEEHO_BMPNHEMOEKI" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI),
+            "LPMAENKEEHO_HFBJHFGODGB" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_HFBJHFGODGB),
+            "LPMAENKEEHO_AJHLBBKCFFK" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK),
+            "LPMAENKEEHO_KCMOAOLIPGN" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN),
+            "LPMAENKEEHO_MKKIOPMCMHB" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB),
+            "LPMAENKEEHO_HCNDNIGALBB" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_HCNDNIGALBB),
+            "LPMAENKEEHO_FMNIDGBDCDO" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO),
+            "LPMAENKEEHO_DPLPKPEFDCC" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_DPLPKPEFDCC),
+            "LPMAENKEEHO_ENEKOFGHHGG" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG),
+            "LPMAENKEEHO_AOJDJHDIFIP" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP),
+            "LPMAENKEEHO_JKILIBCLKPK" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK),
+            "LPMAENKEEHO_CADJHIFNINP" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_CADJHIFNINP),
+            "LPMAENKEEHO_KKHDJGCHKHG" => ::std::option::Option::Some(CmdSpaceZooType::LPMAENKEEHO_KKHDJGCHKHG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdSpaceZooType] = &[
-        CmdSpaceZooType::BGCDIJDNAGF_PCPDHELPKEM,
-        CmdSpaceZooType::CmdSpaceZooMutateScRsp,
-        CmdSpaceZooType::CmdSpaceZooMutateCsReq,
-        CmdSpaceZooType::CmdSpaceZooBornCsReq,
-        CmdSpaceZooType::CmdSpaceZooDeleteCatScRsp,
-        CmdSpaceZooType::CmdSpaceZooTakeScRsp,
-        CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp,
-        CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq,
-        CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq,
-        CmdSpaceZooType::CmdSpaceZooBornScRsp,
-        CmdSpaceZooType::CmdSpaceZooCatUpdateNotify,
-        CmdSpaceZooType::CmdEICJJJFFLBI,
-        CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq,
-        CmdSpaceZooType::CmdSpaceZooDataScRsp,
-        CmdSpaceZooType::CmdSpaceZooTakeCsReq,
-        CmdSpaceZooType::CmdSpaceZooDataCsReq,
+        CmdSpaceZooType::LPMAENKEEHO_NLCDGIPGFDJ,
+        CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL,
+        CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ,
+        CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI,
+        CmdSpaceZooType::LPMAENKEEHO_HFBJHFGODGB,
+        CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK,
+        CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN,
+        CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB,
+        CmdSpaceZooType::LPMAENKEEHO_HCNDNIGALBB,
+        CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO,
+        CmdSpaceZooType::LPMAENKEEHO_DPLPKPEFDCC,
+        CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG,
+        CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP,
+        CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK,
+        CmdSpaceZooType::LPMAENKEEHO_CADJHIFNINP,
+        CmdSpaceZooType::LPMAENKEEHO_KKHDJGCHKHG,
     ];
 }
 
@@ -140,22 +140,22 @@ impl ::protobuf::EnumFull for CmdSpaceZooType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdSpaceZooType::BGCDIJDNAGF_PCPDHELPKEM => 0,
-            CmdSpaceZooType::CmdSpaceZooMutateScRsp => 1,
-            CmdSpaceZooType::CmdSpaceZooMutateCsReq => 2,
-            CmdSpaceZooType::CmdSpaceZooBornCsReq => 3,
-            CmdSpaceZooType::CmdSpaceZooDeleteCatScRsp => 4,
-            CmdSpaceZooType::CmdSpaceZooTakeScRsp => 5,
-            CmdSpaceZooType::CmdSpaceZooOpCatteryScRsp => 6,
-            CmdSpaceZooType::CmdSpaceZooExchangeItemCsReq => 7,
-            CmdSpaceZooType::CmdSpaceZooDeleteCatCsReq => 8,
-            CmdSpaceZooType::CmdSpaceZooBornScRsp => 9,
-            CmdSpaceZooType::CmdSpaceZooCatUpdateNotify => 10,
-            CmdSpaceZooType::CmdEICJJJFFLBI => 11,
-            CmdSpaceZooType::CmdSpaceZooOpCatteryCsReq => 12,
-            CmdSpaceZooType::CmdSpaceZooDataScRsp => 13,
-            CmdSpaceZooType::CmdSpaceZooTakeCsReq => 14,
-            CmdSpaceZooType::CmdSpaceZooDataCsReq => 15,
+            CmdSpaceZooType::LPMAENKEEHO_NLCDGIPGFDJ => 0,
+            CmdSpaceZooType::LPMAENKEEHO_GIMMMBGKIKL => 1,
+            CmdSpaceZooType::LPMAENKEEHO_DPOBLEPFJDJ => 2,
+            CmdSpaceZooType::LPMAENKEEHO_BMPNHEMOEKI => 3,
+            CmdSpaceZooType::LPMAENKEEHO_HFBJHFGODGB => 4,
+            CmdSpaceZooType::LPMAENKEEHO_AJHLBBKCFFK => 5,
+            CmdSpaceZooType::LPMAENKEEHO_KCMOAOLIPGN => 6,
+            CmdSpaceZooType::LPMAENKEEHO_MKKIOPMCMHB => 7,
+            CmdSpaceZooType::LPMAENKEEHO_HCNDNIGALBB => 8,
+            CmdSpaceZooType::LPMAENKEEHO_FMNIDGBDCDO => 9,
+            CmdSpaceZooType::LPMAENKEEHO_DPLPKPEFDCC => 10,
+            CmdSpaceZooType::LPMAENKEEHO_ENEKOFGHHGG => 11,
+            CmdSpaceZooType::LPMAENKEEHO_AOJDJHDIFIP => 12,
+            CmdSpaceZooType::LPMAENKEEHO_JKILIBCLKPK => 13,
+            CmdSpaceZooType::LPMAENKEEHO_CADJHIFNINP => 14,
+            CmdSpaceZooType::LPMAENKEEHO_KKHDJGCHKHG => 15,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -163,7 +163,7 @@ impl ::protobuf::EnumFull for CmdSpaceZooType {
 
 impl ::std::default::Default for CmdSpaceZooType {
     fn default() -> Self {
-        CmdSpaceZooType::BGCDIJDNAGF_PCPDHELPKEM
+        CmdSpaceZooType::LPMAENKEEHO_NLCDGIPGFDJ
     }
 }
 
@@ -174,18 +174,18 @@ impl CmdSpaceZooType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdSpaceZooType.proto*\xe3\x03\n\x0fCmdSpaceZooType\x12\x1b\n\x17B\
-    GCDIJDNAGF_PCPDHELPKEM\x10\0\x12\x1b\n\x16CmdSpaceZooMutateScRsp\x10\xbe\
-    4\x12\x1b\n\x16CmdSpaceZooMutateCsReq\x10\xba4\x12\x19\n\x14CmdSpaceZooB\
-    ornCsReq\x10\x8a5\x12\x1e\n\x19CmdSpaceZooDeleteCatScRsp\x10\xc64\x12\
-    \x19\n\x14CmdSpaceZooTakeScRsp\x10\xb04\x12\x1e\n\x19CmdSpaceZooOpCatter\
-    yScRsp\x10\x8e5\x12!\n\x1cCmdSpaceZooExchangeItemCsReq\x10\xad4\x12\x1e\
-    \n\x19CmdSpaceZooDeleteCatCsReq\x10\xeb4\x12\x19\n\x14CmdSpaceZooBornScR\
-    sp\x10\x8b5\x12\x1f\n\x1aCmdSpaceZooCatUpdateNotify\x10\xd34\x12\x13\n\
-    \x0eCmdEICJJJFFLBI\x10\xf64\x12\x1e\n\x19CmdSpaceZooOpCatteryCsReq\x10\
-    \xb54\x12\x19\n\x14CmdSpaceZooDataScRsp\x10\xb64\x12\x19\n\x14CmdSpaceZo\
-    oTakeCsReq\x10\xd14\x12\x19\n\x14CmdSpaceZooDataCsReq\x10\x875b\x06proto\
-    3\
+    \n\x15CmdSpaceZooType.proto*\xf0\x03\n\x0fCmdSpaceZooType\x12\x1b\n\x17L\
+    PMAENKEEHO_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LPMAENKEEHO_GIMMMBGKIKL\x10\
+    \xb64\x12\x1c\n\x17LPMAENKEEHO_DPOBLEPFJDJ\x10\xb84\x12\x1c\n\x17LPMAENK\
+    EEHO_BMPNHEMOEKI\x10\xf54\x12\x1c\n\x17LPMAENKEEHO_HFBJHFGODGB\x10\xfc4\
+    \x12\x1c\n\x17LPMAENKEEHO_AJHLBBKCFFK\x10\xb94\x12\x1c\n\x17LPMAENKEEHO_\
+    KCMOAOLIPGN\x10\xff4\x12\x1c\n\x17LPMAENKEEHO_MKKIOPMCMHB\x10\xc74\x12\
+    \x1c\n\x17LPMAENKEEHO_HCNDNIGALBB\x10\x835\x12\x1c\n\x17LPMAENKEEHO_FMNI\
+    DGBDCDO\x10\xbb4\x12\x1c\n\x17LPMAENKEEHO_DPLPKPEFDCC\x10\xe24\x12\x1c\n\
+    \x17LPMAENKEEHO_ENEKOFGHHGG\x10\xfd4\x12\x1c\n\x17LPMAENKEEHO_AOJDJHDIFI\
+    P\x10\xd04\x12\x1c\n\x17LPMAENKEEHO_JKILIBCLKPK\x10\xc94\x12\x1c\n\x17LP\
+    MAENKEEHO_CADJHIFNINP\x10\xaf4\x12\x1c\n\x17LPMAENKEEHO_KKHDJGCHKHG\x10\
+    \xb54b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SettleHipplenWorkScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.GHPINELGNNE)
-    pub GHPINELGNNE: ::std::vec::Vec<super::IAMLOJCIKIH::IAMLOJCIKIH>,
+    // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.IPDLBJHAJOO)
+    pub IPDLBJHAJOO: ::protobuf::MessageField<super::GEFEDOAOKNO::GEFEDOAOKNO>,
+    // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.NEMFNENACNB)
+    pub NEMFNENACNB: ::std::vec::Vec<super::AFEDHCKDDFA::AFEDHCKDDFA>,
+    // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.BNIFMIPPIMA)
+    pub BNIFMIPPIMA: ::std::vec::Vec<super::ANHJKLLEKKB::ANHJKLLEKKB>,
     // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.CLKAILDCPJC)
-    pub CLKAILDCPJC: ::std::vec::Vec<super::EKOIHOMFMDE::EKOIHOMFMDE>,
-    // @@protoc_insertion_point(field:SettleHipplenWorkScRsp.LJJAJGFIGNM)
-    pub LJJAJGFIGNM: ::protobuf::MessageField<super::DGKNDMAHMAP::DGKNDMAHMAP>,
     // message oneof groups
-    pub NPBHJGIEDHL: ::std::option::Option<settle_hipplen_work_sc_rsp::NPBHJGIEDHL>,
+    pub MEJDDIPIEKK: ::std::option::Option<settle_hipplen_work_sc_rsp::MEJDDIPIEKK>,
     // special fields
     // @@protoc_insertion_point(special_field:SettleHipplenWorkScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,142 +54,142 @@ impl SettleHipplenWorkScRsp {
         ::std::default::Default::default()
     }
 
-    // .OECPLDABABL BJGDFMJDJMH = 14;
+    // .DMLACLLDCCE HBGCOIAGDIG = 3;
 
-    pub fn BJGDFMJDJMH(&self) -> &super::OECPLDABABL::OECPLDABABL {
-        match self.NPBHJGIEDHL {
-            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::BJGDFMJDJMH(ref v)) => v,
-            _ => <super::OECPLDABABL::OECPLDABABL as ::protobuf::Message>::default_instance(),
+    pub fn HBGCOIAGDIG(&self) -> &super::DMLACLLDCCE::DMLACLLDCCE {
+        match self.MEJDDIPIEKK {
+            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(ref v)) => v,
+            _ => <super::DMLACLLDCCE::DMLACLLDCCE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BJGDFMJDJMH(&mut self) {
-        self.NPBHJGIEDHL = ::std::option::Option::None;
+    pub fn clear_HBGCOIAGDIG(&mut self) {
+        self.MEJDDIPIEKK = ::std::option::Option::None;
     }
 
-    pub fn has_BJGDFMJDJMH(&self) -> bool {
-        match self.NPBHJGIEDHL {
-            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::BJGDFMJDJMH(..)) => true,
+    pub fn has_HBGCOIAGDIG(&self) -> bool {
+        match self.MEJDDIPIEKK {
+            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BJGDFMJDJMH(&mut self, v: super::OECPLDABABL::OECPLDABABL) {
-        self.NPBHJGIEDHL = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::BJGDFMJDJMH(v))
+    pub fn set_HBGCOIAGDIG(&mut self, v: super::DMLACLLDCCE::DMLACLLDCCE) {
+        self.MEJDDIPIEKK = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BJGDFMJDJMH(&mut self) -> &mut super::OECPLDABABL::OECPLDABABL {
-        if let ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::BJGDFMJDJMH(_)) = self.NPBHJGIEDHL {
+    pub fn mut_HBGCOIAGDIG(&mut self) -> &mut super::DMLACLLDCCE::DMLACLLDCCE {
+        if let ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(_)) = self.MEJDDIPIEKK {
         } else {
-            self.NPBHJGIEDHL = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::BJGDFMJDJMH(super::OECPLDABABL::OECPLDABABL::new()));
+            self.MEJDDIPIEKK = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(super::DMLACLLDCCE::DMLACLLDCCE::new()));
         }
-        match self.NPBHJGIEDHL {
-            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::BJGDFMJDJMH(ref mut v)) => v,
+        match self.MEJDDIPIEKK {
+            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BJGDFMJDJMH(&mut self) -> super::OECPLDABABL::OECPLDABABL {
-        if self.has_BJGDFMJDJMH() {
-            match self.NPBHJGIEDHL.take() {
-                ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::BJGDFMJDJMH(v)) => v,
+    pub fn take_HBGCOIAGDIG(&mut self) -> super::DMLACLLDCCE::DMLACLLDCCE {
+        if self.has_HBGCOIAGDIG() {
+            match self.MEJDDIPIEKK.take() {
+                ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::OECPLDABABL::OECPLDABABL::new()
+            super::DMLACLLDCCE::DMLACLLDCCE::new()
         }
     }
 
-    // .EOKOFFPBJME EDGOIAODJLH = 2;
+    // .LKFFMLJMGOB LONKNKFDPII = 15;
 
-    pub fn EDGOIAODJLH(&self) -> &super::EOKOFFPBJME::EOKOFFPBJME {
-        match self.NPBHJGIEDHL {
-            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::EDGOIAODJLH(ref v)) => v,
-            _ => <super::EOKOFFPBJME::EOKOFFPBJME as ::protobuf::Message>::default_instance(),
+    pub fn LONKNKFDPII(&self) -> &super::LKFFMLJMGOB::LKFFMLJMGOB {
+        match self.MEJDDIPIEKK {
+            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(ref v)) => v,
+            _ => <super::LKFFMLJMGOB::LKFFMLJMGOB as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_EDGOIAODJLH(&mut self) {
-        self.NPBHJGIEDHL = ::std::option::Option::None;
+    pub fn clear_LONKNKFDPII(&mut self) {
+        self.MEJDDIPIEKK = ::std::option::Option::None;
     }
 
-    pub fn has_EDGOIAODJLH(&self) -> bool {
-        match self.NPBHJGIEDHL {
-            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::EDGOIAODJLH(..)) => true,
+    pub fn has_LONKNKFDPII(&self) -> bool {
+        match self.MEJDDIPIEKK {
+            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_EDGOIAODJLH(&mut self, v: super::EOKOFFPBJME::EOKOFFPBJME) {
-        self.NPBHJGIEDHL = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::EDGOIAODJLH(v))
+    pub fn set_LONKNKFDPII(&mut self, v: super::LKFFMLJMGOB::LKFFMLJMGOB) {
+        self.MEJDDIPIEKK = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_EDGOIAODJLH(&mut self) -> &mut super::EOKOFFPBJME::EOKOFFPBJME {
-        if let ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::EDGOIAODJLH(_)) = self.NPBHJGIEDHL {
+    pub fn mut_LONKNKFDPII(&mut self) -> &mut super::LKFFMLJMGOB::LKFFMLJMGOB {
+        if let ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(_)) = self.MEJDDIPIEKK {
         } else {
-            self.NPBHJGIEDHL = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::EDGOIAODJLH(super::EOKOFFPBJME::EOKOFFPBJME::new()));
+            self.MEJDDIPIEKK = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(super::LKFFMLJMGOB::LKFFMLJMGOB::new()));
         }
-        match self.NPBHJGIEDHL {
-            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::EDGOIAODJLH(ref mut v)) => v,
+        match self.MEJDDIPIEKK {
+            ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_EDGOIAODJLH(&mut self) -> super::EOKOFFPBJME::EOKOFFPBJME {
-        if self.has_EDGOIAODJLH() {
-            match self.NPBHJGIEDHL.take() {
-                ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::EDGOIAODJLH(v)) => v,
+    pub fn take_LONKNKFDPII(&mut self) -> super::LKFFMLJMGOB::LKFFMLJMGOB {
+        if self.has_LONKNKFDPII() {
+            match self.MEJDDIPIEKK.take() {
+                ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::EOKOFFPBJME::EOKOFFPBJME::new()
+            super::LKFFMLJMGOB::LKFFMLJMGOB::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GEFEDOAOKNO::GEFEDOAOKNO>(
+            "IPDLBJHAJOO",
+            |m: &SettleHipplenWorkScRsp| { &m.IPDLBJHAJOO },
+            |m: &mut SettleHipplenWorkScRsp| { &mut m.IPDLBJHAJOO },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "GHPINELGNNE",
-            |m: &SettleHipplenWorkScRsp| { &m.GHPINELGNNE },
-            |m: &mut SettleHipplenWorkScRsp| { &mut m.GHPINELGNNE },
+            "NEMFNENACNB",
+            |m: &SettleHipplenWorkScRsp| { &m.NEMFNENACNB },
+            |m: &mut SettleHipplenWorkScRsp| { &mut m.NEMFNENACNB },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "BNIFMIPPIMA",
+            |m: &SettleHipplenWorkScRsp| { &m.BNIFMIPPIMA },
+            |m: &mut SettleHipplenWorkScRsp| { &mut m.BNIFMIPPIMA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SettleHipplenWorkScRsp| { &m.retcode },
             |m: &mut SettleHipplenWorkScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CLKAILDCPJC",
-            |m: &SettleHipplenWorkScRsp| { &m.CLKAILDCPJC },
-            |m: &mut SettleHipplenWorkScRsp| { &mut m.CLKAILDCPJC },
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DMLACLLDCCE::DMLACLLDCCE>(
+            "HBGCOIAGDIG",
+            SettleHipplenWorkScRsp::has_HBGCOIAGDIG,
+            SettleHipplenWorkScRsp::HBGCOIAGDIG,
+            SettleHipplenWorkScRsp::mut_HBGCOIAGDIG,
+            SettleHipplenWorkScRsp::set_HBGCOIAGDIG,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DGKNDMAHMAP::DGKNDMAHMAP>(
-            "LJJAJGFIGNM",
-            |m: &SettleHipplenWorkScRsp| { &m.LJJAJGFIGNM },
-            |m: &mut SettleHipplenWorkScRsp| { &mut m.LJJAJGFIGNM },
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LKFFMLJMGOB::LKFFMLJMGOB>(
+            "LONKNKFDPII",
+            SettleHipplenWorkScRsp::has_LONKNKFDPII,
+            SettleHipplenWorkScRsp::LONKNKFDPII,
+            SettleHipplenWorkScRsp::mut_LONKNKFDPII,
+            SettleHipplenWorkScRsp::set_LONKNKFDPII,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OECPLDABABL::OECPLDABABL>(
-            "BJGDFMJDJMH",
-            SettleHipplenWorkScRsp::has_BJGDFMJDJMH,
-            SettleHipplenWorkScRsp::BJGDFMJDJMH,
-            SettleHipplenWorkScRsp::mut_BJGDFMJDJMH,
-            SettleHipplenWorkScRsp::set_BJGDFMJDJMH,
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EOKOFFPBJME::EOKOFFPBJME>(
-            "EDGOIAODJLH",
-            SettleHipplenWorkScRsp::has_EDGOIAODJLH,
-            SettleHipplenWorkScRsp::EDGOIAODJLH,
-            SettleHipplenWorkScRsp::mut_EDGOIAODJLH,
-            SettleHipplenWorkScRsp::set_EDGOIAODJLH,
-        ));
-        oneofs.push(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::generated_oneof_descriptor_data());
+        oneofs.push(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SettleHipplenWorkScRsp>(
             "SettleHipplenWorkScRsp",
             fields,
@@ -208,23 +208,23 @@ impl ::protobuf::Message for SettleHipplenWorkScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    self.GHPINELGNNE.push(is.read_message()?);
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IPDLBJHAJOO)?;
                 },
-                120 => {
+                34 => {
+                    self.NEMFNENACNB.push(is.read_message()?);
+                },
+                106 => {
+                    self.BNIFMIPPIMA.push(is.read_message()?);
+                },
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                98 => {
-                    self.CLKAILDCPJC.push(is.read_message()?);
-                },
                 26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LJJAJGFIGNM)?;
+                    self.MEJDDIPIEKK = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(is.read_message()?));
                 },
-                114 => {
-                    self.NPBHJGIEDHL = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::BJGDFMJDJMH(is.read_message()?));
-                },
-                18 => {
-                    self.NPBHJGIEDHL = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::NPBHJGIEDHL::EDGOIAODJLH(is.read_message()?));
+                122 => {
+                    self.MEJDDIPIEKK = ::std::option::Option::Some(settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -238,28 +238,28 @@ impl ::protobuf::Message for SettleHipplenWorkScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.GHPINELGNNE {
+        if let Some(v) = self.IPDLBJHAJOO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.NEMFNENACNB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.BNIFMIPPIMA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
-        for value in &self.CLKAILDCPJC {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if let Some(v) = self.LJJAJGFIGNM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let ::std::option::Option::Some(ref v) = self.NPBHJGIEDHL {
+        if let ::std::option::Option::Some(ref v) = self.MEJDDIPIEKK {
             match v {
-                &settle_hipplen_work_sc_rsp::NPBHJGIEDHL::BJGDFMJDJMH(ref v) => {
+                &settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &settle_hipplen_work_sc_rsp::NPBHJGIEDHL::EDGOIAODJLH(ref v) => {
+                &settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -271,25 +271,25 @@ impl ::protobuf::Message for SettleHipplenWorkScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.GHPINELGNNE {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.IPDLBJHAJOO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        for v in &self.NEMFNENACNB {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        };
+        for v in &self.BNIFMIPPIMA {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
-        for v in &self.CLKAILDCPJC {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
-        };
-        if let Some(v) = self.LJJAJGFIGNM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
-        }
-        if let ::std::option::Option::Some(ref v) = self.NPBHJGIEDHL {
+        if let ::std::option::Option::Some(ref v) = self.MEJDDIPIEKK {
             match v {
-                &settle_hipplen_work_sc_rsp::NPBHJGIEDHL::BJGDFMJDJMH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+                &settle_hipplen_work_sc_rsp::MEJDDIPIEKK::HBGCOIAGDIG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
                 },
-                &settle_hipplen_work_sc_rsp::NPBHJGIEDHL::EDGOIAODJLH(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+                &settle_hipplen_work_sc_rsp::MEJDDIPIEKK::LONKNKFDPII(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
                 },
             };
         }
@@ -310,22 +310,22 @@ impl ::protobuf::Message for SettleHipplenWorkScRsp {
     }
 
     fn clear(&mut self) {
-        self.GHPINELGNNE.clear();
+        self.IPDLBJHAJOO.clear();
+        self.NEMFNENACNB.clear();
+        self.BNIFMIPPIMA.clear();
         self.retcode = 0;
-        self.CLKAILDCPJC.clear();
-        self.LJJAJGFIGNM.clear();
-        self.NPBHJGIEDHL = ::std::option::Option::None;
-        self.NPBHJGIEDHL = ::std::option::Option::None;
+        self.MEJDDIPIEKK = ::std::option::Option::None;
+        self.MEJDDIPIEKK = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SettleHipplenWorkScRsp {
         static instance: SettleHipplenWorkScRsp = SettleHipplenWorkScRsp {
-            GHPINELGNNE: ::std::vec::Vec::new(),
+            IPDLBJHAJOO: ::protobuf::MessageField::none(),
+            NEMFNENACNB: ::std::vec::Vec::new(),
+            BNIFMIPPIMA: ::std::vec::Vec::new(),
             retcode: 0,
-            CLKAILDCPJC: ::std::vec::Vec::new(),
-            LJJAJGFIGNM: ::protobuf::MessageField::none(),
-            NPBHJGIEDHL: ::std::option::Option::None,
+            MEJDDIPIEKK: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -354,42 +354,42 @@ pub mod settle_hipplen_work_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:SettleHipplenWorkScRsp.NPBHJGIEDHL)
-    pub enum NPBHJGIEDHL {
-        // @@protoc_insertion_point(oneof_field:SettleHipplenWorkScRsp.BJGDFMJDJMH)
-        BJGDFMJDJMH(super::super::OECPLDABABL::OECPLDABABL),
-        // @@protoc_insertion_point(oneof_field:SettleHipplenWorkScRsp.EDGOIAODJLH)
-        EDGOIAODJLH(super::super::EOKOFFPBJME::EOKOFFPBJME),
+    // @@protoc_insertion_point(oneof:SettleHipplenWorkScRsp.MEJDDIPIEKK)
+    pub enum MEJDDIPIEKK {
+        // @@protoc_insertion_point(oneof_field:SettleHipplenWorkScRsp.HBGCOIAGDIG)
+        HBGCOIAGDIG(super::super::DMLACLLDCCE::DMLACLLDCCE),
+        // @@protoc_insertion_point(oneof_field:SettleHipplenWorkScRsp.LONKNKFDPII)
+        LONKNKFDPII(super::super::LKFFMLJMGOB::LKFFMLJMGOB),
     }
 
-    impl ::protobuf::Oneof for NPBHJGIEDHL {
+    impl ::protobuf::Oneof for MEJDDIPIEKK {
     }
 
-    impl ::protobuf::OneofFull for NPBHJGIEDHL {
+    impl ::protobuf::OneofFull for MEJDDIPIEKK {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::SettleHipplenWorkScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("NPBHJGIEDHL").unwrap()).clone()
+            descriptor.get(|| <super::SettleHipplenWorkScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("MEJDDIPIEKK").unwrap()).clone()
         }
     }
 
-    impl NPBHJGIEDHL {
+    impl MEJDDIPIEKK {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NPBHJGIEDHL>("NPBHJGIEDHL")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MEJDDIPIEKK>("MEJDDIPIEKK")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cSettleHipplenWorkScRsp.proto\x1a\x11DGKNDMAHMAP.proto\x1a\x11EKOIH\
-    OMFMDE.proto\x1a\x11EOKOFFPBJME.proto\x1a\x11IAMLOJCIKIH.proto\x1a\x11OE\
-    CPLDABABL.proto\"\xb5\x02\n\x16SettleHipplenWorkScRsp\x12.\n\x0bGHPINELG\
-    NNE\x18\x07\x20\x03(\x0b2\x0c.IAMLOJCIKIHR\x0bGHPINELGNNE\x12\x18\n\x07r\
-    etcode\x18\x0f\x20\x01(\rR\x07retcode\x12.\n\x0bCLKAILDCPJC\x18\x0c\x20\
-    \x03(\x0b2\x0c.EKOIHOMFMDER\x0bCLKAILDCPJC\x12.\n\x0bLJJAJGFIGNM\x18\x03\
-    \x20\x01(\x0b2\x0c.DGKNDMAHMAPR\x0bLJJAJGFIGNM\x120\n\x0bBJGDFMJDJMH\x18\
-    \x0e\x20\x01(\x0b2\x0c.OECPLDABABLH\0R\x0bBJGDFMJDJMH\x120\n\x0bEDGOIAOD\
-    JLH\x18\x02\x20\x01(\x0b2\x0c.EOKOFFPBJMEH\0R\x0bEDGOIAODJLHB\r\n\x0bNPB\
-    HJGIEDHLb\x06proto3\
+    \n\x1cSettleHipplenWorkScRsp.proto\x1a\x11AFEDHCKDDFA.proto\x1a\x11ANHJK\
+    LLEKKB.proto\x1a\x11DMLACLLDCCE.proto\x1a\x11GEFEDOAOKNO.proto\x1a\x11LK\
+    FFMLJMGOB.proto\"\xb5\x02\n\x16SettleHipplenWorkScRsp\x12.\n\x0bIPDLBJHA\
+    JOO\x18\x06\x20\x01(\x0b2\x0c.GEFEDOAOKNOR\x0bIPDLBJHAJOO\x12.\n\x0bNEMF\
+    NENACNB\x18\x04\x20\x03(\x0b2\x0c.AFEDHCKDDFAR\x0bNEMFNENACNB\x12.\n\x0b\
+    BNIFMIPPIMA\x18\r\x20\x03(\x0b2\x0c.ANHJKLLEKKBR\x0bBNIFMIPPIMA\x12\x18\
+    \n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x120\n\x0bHBGCOIAGDIG\x18\
+    \x03\x20\x01(\x0b2\x0c.DMLACLLDCCEH\0R\x0bHBGCOIAGDIG\x120\n\x0bLONKNKFD\
+    PII\x18\x0f\x20\x01(\x0b2\x0c.LKFFMLJMGOBH\0R\x0bLONKNKFDPIIB\r\n\x0bMEJ\
+    DDIPIEKKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -407,11 +407,11 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(5);
-            deps.push(super::DGKNDMAHMAP::file_descriptor().clone());
-            deps.push(super::EKOIHOMFMDE::file_descriptor().clone());
-            deps.push(super::EOKOFFPBJME::file_descriptor().clone());
-            deps.push(super::IAMLOJCIKIH::file_descriptor().clone());
-            deps.push(super::OECPLDABABL::file_descriptor().clone());
+            deps.push(super::AFEDHCKDDFA::file_descriptor().clone());
+            deps.push(super::ANHJKLLEKKB::file_descriptor().clone());
+            deps.push(super::DMLACLLDCCE::file_descriptor().clone());
+            deps.push(super::GEFEDOAOKNO::file_descriptor().clone());
+            deps.push(super::LKFFMLJMGOB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SettleHipplenWorkScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

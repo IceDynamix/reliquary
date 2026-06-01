@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelFinishMasterChallengeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelFinishMasterChallengeCsReq.OFFIDMEJBGI)
-    pub OFFIDMEJBGI: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelFinishMasterChallengeCsReq.IPINHNFCIOE)
+    pub IPINHNFCIOE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelFinishMasterChallengeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ChimeraDuelFinishMasterChallengeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFFIDMEJBGI",
-            |m: &ChimeraDuelFinishMasterChallengeCsReq| { &m.OFFIDMEJBGI },
-            |m: &mut ChimeraDuelFinishMasterChallengeCsReq| { &mut m.OFFIDMEJBGI },
+            "IPINHNFCIOE",
+            |m: &ChimeraDuelFinishMasterChallengeCsReq| { &m.IPINHNFCIOE },
+            |m: &mut ChimeraDuelFinishMasterChallengeCsReq| { &mut m.IPINHNFCIOE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelFinishMasterChallengeCsReq>(
             "ChimeraDuelFinishMasterChallengeCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ChimeraDuelFinishMasterChallengeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.OFFIDMEJBGI = is.read_uint32()?;
+                120 => {
+                    self.IPINHNFCIOE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ChimeraDuelFinishMasterChallengeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OFFIDMEJBGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OFFIDMEJBGI);
+        if self.IPINHNFCIOE != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.IPINHNFCIOE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ChimeraDuelFinishMasterChallengeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OFFIDMEJBGI != 0 {
-            os.write_uint32(9, self.OFFIDMEJBGI)?;
+        if self.IPINHNFCIOE != 0 {
+            os.write_uint32(15, self.IPINHNFCIOE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ChimeraDuelFinishMasterChallengeCsReq {
     }
 
     fn clear(&mut self) {
-        self.OFFIDMEJBGI = 0;
+        self.IPINHNFCIOE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelFinishMasterChallengeCsReq {
         static instance: ChimeraDuelFinishMasterChallengeCsReq = ChimeraDuelFinishMasterChallengeCsReq {
-            OFFIDMEJBGI: 0,
+            IPINHNFCIOE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelFinishMasterChallengeCsRe
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+ChimeraDuelFinishMasterChallengeCsReq.proto\"I\n%ChimeraDuelFinishMas\
-    terChallengeCsReq\x12\x20\n\x0bOFFIDMEJBGI\x18\t\x20\x01(\rR\x0bOFFIDMEJ\
-    BGIb\x06proto3\
+    terChallengeCsReq\x12\x20\n\x0bIPINHNFCIOE\x18\x0f\x20\x01(\rR\x0bIPINHN\
+    FCIOEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeContentScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeContentScRsp.MKHDINDGHMD)
-    pub MKHDINDGHMD: ::protobuf::EnumOrUnknown<super::MHGDJPMEFFN::MHGDJPMEFFN>,
-    // @@protoc_insertion_point(field:TakeContentScRsp.content_id)
-    pub content_id: u32,
     // @@protoc_insertion_point(field:TakeContentScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:TakeContentScRsp.content_id)
+    pub content_id: u32,
     // @@protoc_insertion_point(field:TakeContentScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:TakeContentScRsp.MMNJODIJPOE)
+    pub MMNJODIJPOE: ::protobuf::EnumOrUnknown<super::LPPKGHJGOCC::LPPKGHJGOCC>,
     // special fields
     // @@protoc_insertion_point(special_field:TakeContentScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl TakeContentScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MKHDINDGHMD",
-            |m: &TakeContentScRsp| { &m.MKHDINDGHMD },
-            |m: &mut TakeContentScRsp| { &mut m.MKHDINDGHMD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "content_id",
-            |m: &TakeContentScRsp| { &m.content_id },
-            |m: &mut TakeContentScRsp| { &mut m.content_id },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &TakeContentScRsp| { &m.reward },
             |m: &mut TakeContentScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "content_id",
+            |m: &TakeContentScRsp| { &m.content_id },
+            |m: &mut TakeContentScRsp| { &mut m.content_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TakeContentScRsp| { &m.retcode },
             |m: &mut TakeContentScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MMNJODIJPOE",
+            |m: &TakeContentScRsp| { &m.MMNJODIJPOE },
+            |m: &mut TakeContentScRsp| { &mut m.MMNJODIJPOE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeContentScRsp>(
             "TakeContentScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for TakeContentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.MKHDINDGHMD = is.read_enum_or_unknown()?;
-                },
-                8 => {
-                    self.content_id = is.read_uint32()?;
-                },
-                82 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                32 => {
+                24 => {
+                    self.content_id = is.read_uint32()?;
+                },
+                64 => {
                     self.retcode = is.read_uint32()?;
+                },
+                8 => {
+                    self.MMNJODIJPOE = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for TakeContentScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MKHDINDGHMD != ::protobuf::EnumOrUnknown::new(super::MHGDJPMEFFN::MHGDJPMEFFN::MHGDJPMEFFN_PCPDHELPKEM) {
-            my_size += ::protobuf::rt::int32_size(15, self.MKHDINDGHMD.value());
-        }
-        if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.content_id);
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.content_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.content_id);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+        }
+        if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(1, self.MMNJODIJPOE.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for TakeContentScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MKHDINDGHMD != ::protobuf::EnumOrUnknown::new(super::MHGDJPMEFFN::MHGDJPMEFFN::MHGDJPMEFFN_PCPDHELPKEM) {
-            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.MKHDINDGHMD))?;
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.content_id != 0 {
-            os.write_uint32(1, self.content_id)?;
-        }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            os.write_uint32(3, self.content_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
+        }
+        if self.MMNJODIJPOE != ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.MMNJODIJPOE))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for TakeContentScRsp {
     }
 
     fn clear(&mut self) {
-        self.MKHDINDGHMD = ::protobuf::EnumOrUnknown::new(super::MHGDJPMEFFN::MHGDJPMEFFN::MHGDJPMEFFN_PCPDHELPKEM);
-        self.content_id = 0;
         self.reward.clear();
+        self.content_id = 0;
         self.retcode = 0;
+        self.MMNJODIJPOE = ::protobuf::EnumOrUnknown::new(super::LPPKGHJGOCC::LPPKGHJGOCC::LPPKGHJGOCC_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeContentScRsp {
         static instance: TakeContentScRsp = TakeContentScRsp {
-            MKHDINDGHMD: ::protobuf::EnumOrUnknown::from_i32(0),
-            content_id: 0,
             reward: ::protobuf::MessageField::none(),
+            content_id: 0,
             retcode: 0,
+            MMNJODIJPOE: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,12 +202,12 @@ impl ::protobuf::reflect::ProtobufValue for TakeContentScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16TakeContentScRsp.proto\x1a\x0eItemList.proto\x1a\x11MHGDJPMEFFN.pr\
-    oto\"\x9e\x01\n\x10TakeContentScRsp\x12.\n\x0bMKHDINDGHMD\x18\x0f\x20\
-    \x01(\x0e2\x0c.MHGDJPMEFFNR\x0bMKHDINDGHMD\x12\x1d\n\ncontent_id\x18\x01\
-    \x20\x01(\rR\tcontentId\x12!\n\x06reward\x18\n\x20\x01(\x0b2\t.ItemListR\
-    \x06reward\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcodeb\x06proto\
-    3\
+    \n\x16TakeContentScRsp.proto\x1a\x0eItemList.proto\x1a\x11LPPKGHJGOCC.pr\
+    oto\"\x9e\x01\n\x10TakeContentScRsp\x12!\n\x06reward\x18\x04\x20\x01(\
+    \x0b2\t.ItemListR\x06reward\x12\x1d\n\ncontent_id\x18\x03\x20\x01(\rR\tc\
+    ontentId\x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12.\n\x0bM\
+    MNJODIJPOE\x18\x01\x20\x01(\x0e2\x0c.LPPKGHJGOCCR\x0bMMNJODIJPOEb\x06pro\
+    to3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -226,7 +226,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::MHGDJPMEFFN::file_descriptor().clone());
+            deps.push(super::LPPKGHJGOCC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TakeContentScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

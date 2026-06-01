@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FateQueryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FateQueryScRsp.MODDIBHCPPD)
-    pub MODDIBHCPPD: ::protobuf::MessageField<super::KDJIDJBBHHE::KDJIDJBBHHE>,
+    // @@protoc_insertion_point(field:FateQueryScRsp.LFLCDNGALME)
+    pub LFLCDNGALME: ::protobuf::MessageField<super::EJCCCIGMHOM::EJCCCIGMHOM>,
+    // @@protoc_insertion_point(field:FateQueryScRsp.OEIBHLMDJKA)
+    pub OEIBHLMDJKA: ::protobuf::MessageField<super::BFBCEOICLAB::BFBCEOICLAB>,
     // @@protoc_insertion_point(field:FateQueryScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:FateQueryScRsp.rogue_get_info)
-    pub rogue_get_info: ::protobuf::MessageField<super::MFMEMDJKDAF::MFMEMDJKDAF>,
     // special fields
     // @@protoc_insertion_point(special_field:FateQueryScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl FateQueryScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KDJIDJBBHHE::KDJIDJBBHHE>(
-            "MODDIBHCPPD",
-            |m: &FateQueryScRsp| { &m.MODDIBHCPPD },
-            |m: &mut FateQueryScRsp| { &mut m.MODDIBHCPPD },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EJCCCIGMHOM::EJCCCIGMHOM>(
+            "LFLCDNGALME",
+            |m: &FateQueryScRsp| { &m.LFLCDNGALME },
+            |m: &mut FateQueryScRsp| { &mut m.LFLCDNGALME },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BFBCEOICLAB::BFBCEOICLAB>(
+            "OEIBHLMDJKA",
+            |m: &FateQueryScRsp| { &m.OEIBHLMDJKA },
+            |m: &mut FateQueryScRsp| { &mut m.OEIBHLMDJKA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FateQueryScRsp| { &m.retcode },
             |m: &mut FateQueryScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MFMEMDJKDAF::MFMEMDJKDAF>(
-            "rogue_get_info",
-            |m: &FateQueryScRsp| { &m.rogue_get_info },
-            |m: &mut FateQueryScRsp| { &mut m.rogue_get_info },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FateQueryScRsp>(
             "FateQueryScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for FateQueryScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MODDIBHCPPD)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LFLCDNGALME)?;
                 },
-                48 => {
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
+                },
+                40 => {
                     self.retcode = is.read_uint32()?;
-                },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.rogue_get_info)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,16 +107,16 @@ impl ::protobuf::Message for FateQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MODDIBHCPPD.as_ref() {
+        if let Some(v) = self.LFLCDNGALME.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
-        }
-        if let Some(v) = self.rogue_get_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for FateQueryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MODDIBHCPPD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.LFLCDNGALME.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        }
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        if let Some(v) = self.rogue_get_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for FateQueryScRsp {
     }
 
     fn clear(&mut self) {
-        self.MODDIBHCPPD.clear();
+        self.LFLCDNGALME.clear();
+        self.OEIBHLMDJKA.clear();
         self.retcode = 0;
-        self.rogue_get_info.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FateQueryScRsp {
         static instance: FateQueryScRsp = FateQueryScRsp {
-            MODDIBHCPPD: ::protobuf::MessageField::none(),
+            LFLCDNGALME: ::protobuf::MessageField::none(),
+            OEIBHLMDJKA: ::protobuf::MessageField::none(),
             retcode: 0,
-            rogue_get_info: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for FateQueryScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14FateQueryScRsp.proto\x1a\x11KDJIDJBBHHE.proto\x1a\x11MFMEMDJKDAF.p\
-    roto\"\x8e\x01\n\x0eFateQueryScRsp\x12.\n\x0bMODDIBHCPPD\x18\x0b\x20\x01\
-    (\x0b2\x0c.KDJIDJBBHHER\x0bMODDIBHCPPD\x12\x18\n\x07retcode\x18\x06\x20\
-    \x01(\rR\x07retcode\x122\n\x0erogue_get_info\x18\x08\x20\x01(\x0b2\x0c.M\
-    FMEMDJKDAFR\x0crogueGetInfob\x06proto3\
+    \n\x14FateQueryScRsp.proto\x1a\x11BFBCEOICLAB.proto\x1a\x11EJCCCIGMHOM.p\
+    roto\"\x8a\x01\n\x0eFateQueryScRsp\x12.\n\x0bLFLCDNGALME\x18\x04\x20\x01\
+    (\x0b2\x0c.EJCCCIGMHOMR\x0bLFLCDNGALME\x12.\n\x0bOEIBHLMDJKA\x18\t\x20\
+    \x01(\x0b2\x0c.BFBCEOICLABR\x0bOEIBHLMDJKA\x12\x18\n\x07retcode\x18\x05\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,8 +207,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::KDJIDJBBHHE::file_descriptor().clone());
-            deps.push(super::MFMEMDJKDAF::file_descriptor().clone());
+            deps.push(super::BFBCEOICLAB::file_descriptor().clone());
+            deps.push(super::EJCCCIGMHOM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FateQueryScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

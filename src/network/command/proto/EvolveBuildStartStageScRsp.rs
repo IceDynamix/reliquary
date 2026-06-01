@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EvolveBuildStartStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.MODDIBHCPPD)
-    pub MODDIBHCPPD: ::protobuf::MessageField<super::CJLJDKLCNDA::CJLJDKLCNDA>,
+    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.AEPNEDJPAGK)
+    pub AEPNEDJPAGK: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
+    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.OEIBHLMDJKA)
+    pub OEIBHLMDJKA: ::protobuf::MessageField<super::LDLCMMOPKNG::LDLCMMOPKNG>,
     // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:EvolveBuildStartStageScRsp.DDHGCAFFFOP)
-    pub DDHGCAFFFOP: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:EvolveBuildStartStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl EvolveBuildStartStageScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CJLJDKLCNDA::CJLJDKLCNDA>(
-            "MODDIBHCPPD",
-            |m: &EvolveBuildStartStageScRsp| { &m.MODDIBHCPPD },
-            |m: &mut EvolveBuildStartStageScRsp| { &mut m.MODDIBHCPPD },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
+            "AEPNEDJPAGK",
+            |m: &EvolveBuildStartStageScRsp| { &m.AEPNEDJPAGK },
+            |m: &mut EvolveBuildStartStageScRsp| { &mut m.AEPNEDJPAGK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LDLCMMOPKNG::LDLCMMOPKNG>(
+            "OEIBHLMDJKA",
+            |m: &EvolveBuildStartStageScRsp| { &m.OEIBHLMDJKA },
+            |m: &mut EvolveBuildStartStageScRsp| { &mut m.OEIBHLMDJKA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &EvolveBuildStartStageScRsp| { &m.retcode },
             |m: &mut EvolveBuildStartStageScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
-            "DDHGCAFFFOP",
-            |m: &EvolveBuildStartStageScRsp| { &m.DDHGCAFFFOP },
-            |m: &mut EvolveBuildStartStageScRsp| { &mut m.DDHGCAFFFOP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EvolveBuildStartStageScRsp>(
             "EvolveBuildStartStageScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MODDIBHCPPD)?;
-                },
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEPNEDJPAGK)?;
                 },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDHGCAFFFOP)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.OEIBHLMDJKA)?;
+                },
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,16 +107,16 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.MODDIBHCPPD.as_ref() {
+        if let Some(v) = self.AEPNEDJPAGK.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
-        if let Some(v) = self.DDHGCAFFFOP.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,14 +124,14 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.MODDIBHCPPD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if let Some(v) = self.AEPNEDJPAGK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.OEIBHLMDJKA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
-        }
-        if let Some(v) = self.DDHGCAFFFOP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,17 +150,17 @@ impl ::protobuf::Message for EvolveBuildStartStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.MODDIBHCPPD.clear();
+        self.AEPNEDJPAGK.clear();
+        self.OEIBHLMDJKA.clear();
         self.retcode = 0;
-        self.DDHGCAFFFOP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EvolveBuildStartStageScRsp {
         static instance: EvolveBuildStartStageScRsp = EvolveBuildStartStageScRsp {
-            MODDIBHCPPD: ::protobuf::MessageField::none(),
+            AEPNEDJPAGK: ::protobuf::MessageField::none(),
+            OEIBHLMDJKA: ::protobuf::MessageField::none(),
             retcode: 0,
-            DDHGCAFFFOP: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,11 +185,11 @@ impl ::protobuf::reflect::ProtobufValue for EvolveBuildStartStageScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20EvolveBuildStartStageScRsp.proto\x1a\x11CJLJDKLCNDA.proto\x1a\x15S\
-    ceneBattleInfo.proto\"\x9a\x01\n\x1aEvolveBuildStartStageScRsp\x12.\n\
-    \x0bMODDIBHCPPD\x18\x05\x20\x01(\x0b2\x0c.CJLJDKLCNDAR\x0bMODDIBHCPPD\
-    \x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x122\n\x0bDDHGCAFFF\
-    OP\x18\x06\x20\x01(\x0b2\x10.SceneBattleInfoR\x0bDDHGCAFFFOPb\x06proto3\
+    \n\x20EvolveBuildStartStageScRsp.proto\x1a\x11LDLCMMOPKNG.proto\x1a\x15S\
+    ceneBattleInfo.proto\"\x9a\x01\n\x1aEvolveBuildStartStageScRsp\x122\n\
+    \x0bAEPNEDJPAGK\x18\x02\x20\x01(\x0b2\x10.SceneBattleInfoR\x0bAEPNEDJPAG\
+    K\x12.\n\x0bOEIBHLMDJKA\x18\x06\x20\x01(\x0b2\x0c.LDLCMMOPKNGR\x0bOEIBHL\
+    MDJKA\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::CJLJDKLCNDA::file_descriptor().clone());
+            deps.push(super::LDLCMMOPKNG::file_descriptor().clone());
             deps.push(super::SceneBattleInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EvolveBuildStartStageScRsp::generated_message_descriptor_data());

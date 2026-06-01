@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HandleRogueCommonPendingActionScRsp {
     // message fields
-    // @@protoc_insertion_point(field:HandleRogueCommonPendingActionScRsp.MJPCBEAAABJ)
-    pub MJPCBEAAABJ: u32,
     // @@protoc_insertion_point(field:HandleRogueCommonPendingActionScRsp.queue_position)
     pub queue_position: u32,
     // @@protoc_insertion_point(field:HandleRogueCommonPendingActionScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:HandleRogueCommonPendingActionScRsp.BFNEPPCNOOI)
+    pub BFNEPPCNOOI: u32,
     // message oneof groups
-    pub BPIHFAJCLOC: ::std::option::Option<handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC>,
+    pub KKNBOACNCON: ::std::option::Option<handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON>,
     // special fields
     // @@protoc_insertion_point(special_field:HandleRogueCommonPendingActionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,1729 +52,1724 @@ impl HandleRogueCommonPendingActionScRsp {
         ::std::default::Default::default()
     }
 
-    // .NLNOGDMKBOD PKBFJJJOEBD = 860;
+    // .NFBCBCMGIIA OOMKEELHDPA = 1419;
 
-    pub fn PKBFJJJOEBD(&self) -> &super::NLNOGDMKBOD::NLNOGDMKBOD {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PKBFJJJOEBD(ref v)) => v,
-            _ => <super::NLNOGDMKBOD::NLNOGDMKBOD as ::protobuf::Message>::default_instance(),
+    pub fn OOMKEELHDPA(&self) -> &super::NFBCBCMGIIA::NFBCBCMGIIA {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OOMKEELHDPA(ref v)) => v,
+            _ => <super::NFBCBCMGIIA::NFBCBCMGIIA as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_PKBFJJJOEBD(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_OOMKEELHDPA(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_PKBFJJJOEBD(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PKBFJJJOEBD(..)) => true,
+    pub fn has_OOMKEELHDPA(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OOMKEELHDPA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_PKBFJJJOEBD(&mut self, v: super::NLNOGDMKBOD::NLNOGDMKBOD) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PKBFJJJOEBD(v))
+    pub fn set_OOMKEELHDPA(&mut self, v: super::NFBCBCMGIIA::NFBCBCMGIIA) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OOMKEELHDPA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_PKBFJJJOEBD(&mut self) -> &mut super::NLNOGDMKBOD::NLNOGDMKBOD {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PKBFJJJOEBD(_)) = self.BPIHFAJCLOC {
+    pub fn mut_OOMKEELHDPA(&mut self) -> &mut super::NFBCBCMGIIA::NFBCBCMGIIA {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OOMKEELHDPA(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PKBFJJJOEBD(super::NLNOGDMKBOD::NLNOGDMKBOD::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OOMKEELHDPA(super::NFBCBCMGIIA::NFBCBCMGIIA::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PKBFJJJOEBD(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OOMKEELHDPA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_PKBFJJJOEBD(&mut self) -> super::NLNOGDMKBOD::NLNOGDMKBOD {
-        if self.has_PKBFJJJOEBD() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PKBFJJJOEBD(v)) => v,
+    pub fn take_OOMKEELHDPA(&mut self) -> super::NFBCBCMGIIA::NFBCBCMGIIA {
+        if self.has_OOMKEELHDPA() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OOMKEELHDPA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::NLNOGDMKBOD::NLNOGDMKBOD::new()
+            super::NFBCBCMGIIA::NFBCBCMGIIA::new()
         }
     }
 
-    // .JPPGLJPCFNC CCGGGDCAIGJ = 1750;
+    // .BJGEONOCHPM NCGJCHMOHMG = 1681;
 
-    pub fn CCGGGDCAIGJ(&self) -> &super::JPPGLJPCFNC::JPPGLJPCFNC {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CCGGGDCAIGJ(ref v)) => v,
-            _ => <super::JPPGLJPCFNC::JPPGLJPCFNC as ::protobuf::Message>::default_instance(),
+    pub fn NCGJCHMOHMG(&self) -> &super::BJGEONOCHPM::BJGEONOCHPM {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NCGJCHMOHMG(ref v)) => v,
+            _ => <super::BJGEONOCHPM::BJGEONOCHPM as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_CCGGGDCAIGJ(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_NCGJCHMOHMG(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_CCGGGDCAIGJ(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CCGGGDCAIGJ(..)) => true,
+    pub fn has_NCGJCHMOHMG(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NCGJCHMOHMG(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CCGGGDCAIGJ(&mut self, v: super::JPPGLJPCFNC::JPPGLJPCFNC) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CCGGGDCAIGJ(v))
+    pub fn set_NCGJCHMOHMG(&mut self, v: super::BJGEONOCHPM::BJGEONOCHPM) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NCGJCHMOHMG(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CCGGGDCAIGJ(&mut self) -> &mut super::JPPGLJPCFNC::JPPGLJPCFNC {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CCGGGDCAIGJ(_)) = self.BPIHFAJCLOC {
+    pub fn mut_NCGJCHMOHMG(&mut self) -> &mut super::BJGEONOCHPM::BJGEONOCHPM {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NCGJCHMOHMG(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CCGGGDCAIGJ(super::JPPGLJPCFNC::JPPGLJPCFNC::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NCGJCHMOHMG(super::BJGEONOCHPM::BJGEONOCHPM::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CCGGGDCAIGJ(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NCGJCHMOHMG(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CCGGGDCAIGJ(&mut self) -> super::JPPGLJPCFNC::JPPGLJPCFNC {
-        if self.has_CCGGGDCAIGJ() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CCGGGDCAIGJ(v)) => v,
+    pub fn take_NCGJCHMOHMG(&mut self) -> super::BJGEONOCHPM::BJGEONOCHPM {
+        if self.has_NCGJCHMOHMG() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NCGJCHMOHMG(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JPPGLJPCFNC::JPPGLJPCFNC::new()
+            super::BJGEONOCHPM::BJGEONOCHPM::new()
         }
     }
 
-    // .AJGGFCJFKEL BFMONEFDILP = 435;
+    // .LGKKAKEFPIN CEIPBFGMHAP = 87;
 
-    pub fn BFMONEFDILP(&self) -> &super::AJGGFCJFKEL::AJGGFCJFKEL {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BFMONEFDILP(ref v)) => v,
-            _ => <super::AJGGFCJFKEL::AJGGFCJFKEL as ::protobuf::Message>::default_instance(),
+    pub fn CEIPBFGMHAP(&self) -> &super::LGKKAKEFPIN::LGKKAKEFPIN {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CEIPBFGMHAP(ref v)) => v,
+            _ => <super::LGKKAKEFPIN::LGKKAKEFPIN as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BFMONEFDILP(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_CEIPBFGMHAP(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_BFMONEFDILP(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BFMONEFDILP(..)) => true,
+    pub fn has_CEIPBFGMHAP(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CEIPBFGMHAP(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BFMONEFDILP(&mut self, v: super::AJGGFCJFKEL::AJGGFCJFKEL) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BFMONEFDILP(v))
+    pub fn set_CEIPBFGMHAP(&mut self, v: super::LGKKAKEFPIN::LGKKAKEFPIN) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CEIPBFGMHAP(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BFMONEFDILP(&mut self) -> &mut super::AJGGFCJFKEL::AJGGFCJFKEL {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BFMONEFDILP(_)) = self.BPIHFAJCLOC {
+    pub fn mut_CEIPBFGMHAP(&mut self) -> &mut super::LGKKAKEFPIN::LGKKAKEFPIN {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CEIPBFGMHAP(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BFMONEFDILP(super::AJGGFCJFKEL::AJGGFCJFKEL::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CEIPBFGMHAP(super::LGKKAKEFPIN::LGKKAKEFPIN::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BFMONEFDILP(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CEIPBFGMHAP(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BFMONEFDILP(&mut self) -> super::AJGGFCJFKEL::AJGGFCJFKEL {
-        if self.has_BFMONEFDILP() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BFMONEFDILP(v)) => v,
+    pub fn take_CEIPBFGMHAP(&mut self) -> super::LGKKAKEFPIN::LGKKAKEFPIN {
+        if self.has_CEIPBFGMHAP() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CEIPBFGMHAP(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::AJGGFCJFKEL::AJGGFCJFKEL::new()
+            super::LGKKAKEFPIN::LGKKAKEFPIN::new()
         }
     }
 
-    // .LJFFAHEHFDJ KCCIDNOGPPA = 341;
+    // .FKOGDINOBDF JFHKDEIDMOG = 1247;
 
-    pub fn KCCIDNOGPPA(&self) -> &super::LJFFAHEHFDJ::LJFFAHEHFDJ {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KCCIDNOGPPA(ref v)) => v,
-            _ => <super::LJFFAHEHFDJ::LJFFAHEHFDJ as ::protobuf::Message>::default_instance(),
+    pub fn JFHKDEIDMOG(&self) -> &super::FKOGDINOBDF::FKOGDINOBDF {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JFHKDEIDMOG(ref v)) => v,
+            _ => <super::FKOGDINOBDF::FKOGDINOBDF as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_KCCIDNOGPPA(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_JFHKDEIDMOG(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_KCCIDNOGPPA(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KCCIDNOGPPA(..)) => true,
+    pub fn has_JFHKDEIDMOG(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JFHKDEIDMOG(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_KCCIDNOGPPA(&mut self, v: super::LJFFAHEHFDJ::LJFFAHEHFDJ) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KCCIDNOGPPA(v))
+    pub fn set_JFHKDEIDMOG(&mut self, v: super::FKOGDINOBDF::FKOGDINOBDF) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JFHKDEIDMOG(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KCCIDNOGPPA(&mut self) -> &mut super::LJFFAHEHFDJ::LJFFAHEHFDJ {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KCCIDNOGPPA(_)) = self.BPIHFAJCLOC {
+    pub fn mut_JFHKDEIDMOG(&mut self) -> &mut super::FKOGDINOBDF::FKOGDINOBDF {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JFHKDEIDMOG(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KCCIDNOGPPA(super::LJFFAHEHFDJ::LJFFAHEHFDJ::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JFHKDEIDMOG(super::FKOGDINOBDF::FKOGDINOBDF::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KCCIDNOGPPA(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JFHKDEIDMOG(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_KCCIDNOGPPA(&mut self) -> super::LJFFAHEHFDJ::LJFFAHEHFDJ {
-        if self.has_KCCIDNOGPPA() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KCCIDNOGPPA(v)) => v,
+    pub fn take_JFHKDEIDMOG(&mut self) -> super::FKOGDINOBDF::FKOGDINOBDF {
+        if self.has_JFHKDEIDMOG() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JFHKDEIDMOG(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LJFFAHEHFDJ::LJFFAHEHFDJ::new()
+            super::FKOGDINOBDF::FKOGDINOBDF::new()
         }
     }
 
-    // .JNPGMMLHGJH PEMHIBDBCGG = 63;
+    // .NCLHLLIHMFK DJJHHDIGJIG = 1386;
 
-    pub fn PEMHIBDBCGG(&self) -> &super::JNPGMMLHGJH::JNPGMMLHGJH {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PEMHIBDBCGG(ref v)) => v,
-            _ => <super::JNPGMMLHGJH::JNPGMMLHGJH as ::protobuf::Message>::default_instance(),
+    pub fn DJJHHDIGJIG(&self) -> &super::NCLHLLIHMFK::NCLHLLIHMFK {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DJJHHDIGJIG(ref v)) => v,
+            _ => <super::NCLHLLIHMFK::NCLHLLIHMFK as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_PEMHIBDBCGG(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_DJJHHDIGJIG(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_PEMHIBDBCGG(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PEMHIBDBCGG(..)) => true,
+    pub fn has_DJJHHDIGJIG(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DJJHHDIGJIG(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_PEMHIBDBCGG(&mut self, v: super::JNPGMMLHGJH::JNPGMMLHGJH) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PEMHIBDBCGG(v))
+    pub fn set_DJJHHDIGJIG(&mut self, v: super::NCLHLLIHMFK::NCLHLLIHMFK) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DJJHHDIGJIG(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_PEMHIBDBCGG(&mut self) -> &mut super::JNPGMMLHGJH::JNPGMMLHGJH {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PEMHIBDBCGG(_)) = self.BPIHFAJCLOC {
+    pub fn mut_DJJHHDIGJIG(&mut self) -> &mut super::NCLHLLIHMFK::NCLHLLIHMFK {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DJJHHDIGJIG(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PEMHIBDBCGG(super::JNPGMMLHGJH::JNPGMMLHGJH::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DJJHHDIGJIG(super::NCLHLLIHMFK::NCLHLLIHMFK::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PEMHIBDBCGG(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DJJHHDIGJIG(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_PEMHIBDBCGG(&mut self) -> super::JNPGMMLHGJH::JNPGMMLHGJH {
-        if self.has_PEMHIBDBCGG() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PEMHIBDBCGG(v)) => v,
+    pub fn take_DJJHHDIGJIG(&mut self) -> super::NCLHLLIHMFK::NCLHLLIHMFK {
+        if self.has_DJJHHDIGJIG() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DJJHHDIGJIG(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JNPGMMLHGJH::JNPGMMLHGJH::new()
+            super::NCLHLLIHMFK::NCLHLLIHMFK::new()
         }
     }
 
-    // .PBCOPDHBMLJ HJCJCEACDHJ = 1474;
+    // .MLDADDMEGGN HANHJNOPLJM = 1175;
 
-    pub fn HJCJCEACDHJ(&self) -> &super::PBCOPDHBMLJ::PBCOPDHBMLJ {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::HJCJCEACDHJ(ref v)) => v,
-            _ => <super::PBCOPDHBMLJ::PBCOPDHBMLJ as ::protobuf::Message>::default_instance(),
+    pub fn HANHJNOPLJM(&self) -> &super::MLDADDMEGGN::MLDADDMEGGN {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HANHJNOPLJM(ref v)) => v,
+            _ => <super::MLDADDMEGGN::MLDADDMEGGN as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_HJCJCEACDHJ(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_HANHJNOPLJM(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_HJCJCEACDHJ(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::HJCJCEACDHJ(..)) => true,
+    pub fn has_HANHJNOPLJM(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HANHJNOPLJM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_HJCJCEACDHJ(&mut self, v: super::PBCOPDHBMLJ::PBCOPDHBMLJ) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::HJCJCEACDHJ(v))
+    pub fn set_HANHJNOPLJM(&mut self, v: super::MLDADDMEGGN::MLDADDMEGGN) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HANHJNOPLJM(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_HJCJCEACDHJ(&mut self) -> &mut super::PBCOPDHBMLJ::PBCOPDHBMLJ {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::HJCJCEACDHJ(_)) = self.BPIHFAJCLOC {
+    pub fn mut_HANHJNOPLJM(&mut self) -> &mut super::MLDADDMEGGN::MLDADDMEGGN {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HANHJNOPLJM(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::HJCJCEACDHJ(super::PBCOPDHBMLJ::PBCOPDHBMLJ::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HANHJNOPLJM(super::MLDADDMEGGN::MLDADDMEGGN::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::HJCJCEACDHJ(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HANHJNOPLJM(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_HJCJCEACDHJ(&mut self) -> super::PBCOPDHBMLJ::PBCOPDHBMLJ {
-        if self.has_HJCJCEACDHJ() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::HJCJCEACDHJ(v)) => v,
+    pub fn take_HANHJNOPLJM(&mut self) -> super::MLDADDMEGGN::MLDADDMEGGN {
+        if self.has_HANHJNOPLJM() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HANHJNOPLJM(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::PBCOPDHBMLJ::PBCOPDHBMLJ::new()
+            super::MLDADDMEGGN::MLDADDMEGGN::new()
         }
     }
 
-    // .BLDLMHPFBCM IJOMKIDEOEG = 183;
+    // .HPIPKICGABB COBNPFDHMEA = 523;
 
-    pub fn IJOMKIDEOEG(&self) -> &super::BLDLMHPFBCM::BLDLMHPFBCM {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJOMKIDEOEG(ref v)) => v,
-            _ => <super::BLDLMHPFBCM::BLDLMHPFBCM as ::protobuf::Message>::default_instance(),
+    pub fn COBNPFDHMEA(&self) -> &super::HPIPKICGABB::HPIPKICGABB {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::COBNPFDHMEA(ref v)) => v,
+            _ => <super::HPIPKICGABB::HPIPKICGABB as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_IJOMKIDEOEG(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_COBNPFDHMEA(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_IJOMKIDEOEG(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJOMKIDEOEG(..)) => true,
+    pub fn has_COBNPFDHMEA(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::COBNPFDHMEA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_IJOMKIDEOEG(&mut self, v: super::BLDLMHPFBCM::BLDLMHPFBCM) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJOMKIDEOEG(v))
+    pub fn set_COBNPFDHMEA(&mut self, v: super::HPIPKICGABB::HPIPKICGABB) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::COBNPFDHMEA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_IJOMKIDEOEG(&mut self) -> &mut super::BLDLMHPFBCM::BLDLMHPFBCM {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJOMKIDEOEG(_)) = self.BPIHFAJCLOC {
+    pub fn mut_COBNPFDHMEA(&mut self) -> &mut super::HPIPKICGABB::HPIPKICGABB {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::COBNPFDHMEA(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJOMKIDEOEG(super::BLDLMHPFBCM::BLDLMHPFBCM::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::COBNPFDHMEA(super::HPIPKICGABB::HPIPKICGABB::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJOMKIDEOEG(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::COBNPFDHMEA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_IJOMKIDEOEG(&mut self) -> super::BLDLMHPFBCM::BLDLMHPFBCM {
-        if self.has_IJOMKIDEOEG() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJOMKIDEOEG(v)) => v,
+    pub fn take_COBNPFDHMEA(&mut self) -> super::HPIPKICGABB::HPIPKICGABB {
+        if self.has_COBNPFDHMEA() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::COBNPFDHMEA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::BLDLMHPFBCM::BLDLMHPFBCM::new()
+            super::HPIPKICGABB::HPIPKICGABB::new()
         }
     }
 
-    // .OHMDKPCOAEC JKDHIJFLHAJ = 47;
+    // .JJKIPNMJDKH DKBNKKIGKEB = 161;
 
-    pub fn JKDHIJFLHAJ(&self) -> &super::OHMDKPCOAEC::OHMDKPCOAEC {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JKDHIJFLHAJ(ref v)) => v,
-            _ => <super::OHMDKPCOAEC::OHMDKPCOAEC as ::protobuf::Message>::default_instance(),
+    pub fn DKBNKKIGKEB(&self) -> &super::JJKIPNMJDKH::JJKIPNMJDKH {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DKBNKKIGKEB(ref v)) => v,
+            _ => <super::JJKIPNMJDKH::JJKIPNMJDKH as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_JKDHIJFLHAJ(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_DKBNKKIGKEB(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_JKDHIJFLHAJ(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JKDHIJFLHAJ(..)) => true,
+    pub fn has_DKBNKKIGKEB(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DKBNKKIGKEB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_JKDHIJFLHAJ(&mut self, v: super::OHMDKPCOAEC::OHMDKPCOAEC) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JKDHIJFLHAJ(v))
+    pub fn set_DKBNKKIGKEB(&mut self, v: super::JJKIPNMJDKH::JJKIPNMJDKH) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DKBNKKIGKEB(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_JKDHIJFLHAJ(&mut self) -> &mut super::OHMDKPCOAEC::OHMDKPCOAEC {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JKDHIJFLHAJ(_)) = self.BPIHFAJCLOC {
+    pub fn mut_DKBNKKIGKEB(&mut self) -> &mut super::JJKIPNMJDKH::JJKIPNMJDKH {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DKBNKKIGKEB(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JKDHIJFLHAJ(super::OHMDKPCOAEC::OHMDKPCOAEC::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DKBNKKIGKEB(super::JJKIPNMJDKH::JJKIPNMJDKH::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JKDHIJFLHAJ(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DKBNKKIGKEB(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_JKDHIJFLHAJ(&mut self) -> super::OHMDKPCOAEC::OHMDKPCOAEC {
-        if self.has_JKDHIJFLHAJ() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JKDHIJFLHAJ(v)) => v,
+    pub fn take_DKBNKKIGKEB(&mut self) -> super::JJKIPNMJDKH::JJKIPNMJDKH {
+        if self.has_DKBNKKIGKEB() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DKBNKKIGKEB(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::OHMDKPCOAEC::OHMDKPCOAEC::new()
+            super::JJKIPNMJDKH::JJKIPNMJDKH::new()
         }
     }
 
-    // .JICGMEBFBJF ECBDOFCDHKK = 36;
+    // .BIPMEIGLILE LGACHDMGEAI = 45;
 
-    pub fn ECBDOFCDHKK(&self) -> &super::JICGMEBFBJF::JICGMEBFBJF {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ECBDOFCDHKK(ref v)) => v,
-            _ => <super::JICGMEBFBJF::JICGMEBFBJF as ::protobuf::Message>::default_instance(),
+    pub fn LGACHDMGEAI(&self) -> &super::BIPMEIGLILE::BIPMEIGLILE {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LGACHDMGEAI(ref v)) => v,
+            _ => <super::BIPMEIGLILE::BIPMEIGLILE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_ECBDOFCDHKK(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_LGACHDMGEAI(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_ECBDOFCDHKK(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ECBDOFCDHKK(..)) => true,
+    pub fn has_LGACHDMGEAI(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LGACHDMGEAI(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_ECBDOFCDHKK(&mut self, v: super::JICGMEBFBJF::JICGMEBFBJF) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ECBDOFCDHKK(v))
+    pub fn set_LGACHDMGEAI(&mut self, v: super::BIPMEIGLILE::BIPMEIGLILE) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LGACHDMGEAI(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_ECBDOFCDHKK(&mut self) -> &mut super::JICGMEBFBJF::JICGMEBFBJF {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ECBDOFCDHKK(_)) = self.BPIHFAJCLOC {
+    pub fn mut_LGACHDMGEAI(&mut self) -> &mut super::BIPMEIGLILE::BIPMEIGLILE {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LGACHDMGEAI(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ECBDOFCDHKK(super::JICGMEBFBJF::JICGMEBFBJF::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LGACHDMGEAI(super::BIPMEIGLILE::BIPMEIGLILE::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ECBDOFCDHKK(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LGACHDMGEAI(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_ECBDOFCDHKK(&mut self) -> super::JICGMEBFBJF::JICGMEBFBJF {
-        if self.has_ECBDOFCDHKK() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ECBDOFCDHKK(v)) => v,
+    pub fn take_LGACHDMGEAI(&mut self) -> super::BIPMEIGLILE::BIPMEIGLILE {
+        if self.has_LGACHDMGEAI() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LGACHDMGEAI(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JICGMEBFBJF::JICGMEBFBJF::new()
+            super::BIPMEIGLILE::BIPMEIGLILE::new()
         }
     }
 
-    // .HGFKGMPPOIM DEIDEEJDJLB = 1085;
+    // .EBLOKOMNNNN HEGECCJIFBJ = 1602;
 
-    pub fn DEIDEEJDJLB(&self) -> &super::HGFKGMPPOIM::HGFKGMPPOIM {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DEIDEEJDJLB(ref v)) => v,
-            _ => <super::HGFKGMPPOIM::HGFKGMPPOIM as ::protobuf::Message>::default_instance(),
+    pub fn HEGECCJIFBJ(&self) -> &super::EBLOKOMNNNN::EBLOKOMNNNN {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HEGECCJIFBJ(ref v)) => v,
+            _ => <super::EBLOKOMNNNN::EBLOKOMNNNN as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_DEIDEEJDJLB(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_HEGECCJIFBJ(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_DEIDEEJDJLB(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DEIDEEJDJLB(..)) => true,
+    pub fn has_HEGECCJIFBJ(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HEGECCJIFBJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_DEIDEEJDJLB(&mut self, v: super::HGFKGMPPOIM::HGFKGMPPOIM) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DEIDEEJDJLB(v))
+    pub fn set_HEGECCJIFBJ(&mut self, v: super::EBLOKOMNNNN::EBLOKOMNNNN) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HEGECCJIFBJ(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_DEIDEEJDJLB(&mut self) -> &mut super::HGFKGMPPOIM::HGFKGMPPOIM {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DEIDEEJDJLB(_)) = self.BPIHFAJCLOC {
+    pub fn mut_HEGECCJIFBJ(&mut self) -> &mut super::EBLOKOMNNNN::EBLOKOMNNNN {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HEGECCJIFBJ(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DEIDEEJDJLB(super::HGFKGMPPOIM::HGFKGMPPOIM::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HEGECCJIFBJ(super::EBLOKOMNNNN::EBLOKOMNNNN::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DEIDEEJDJLB(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HEGECCJIFBJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_DEIDEEJDJLB(&mut self) -> super::HGFKGMPPOIM::HGFKGMPPOIM {
-        if self.has_DEIDEEJDJLB() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DEIDEEJDJLB(v)) => v,
+    pub fn take_HEGECCJIFBJ(&mut self) -> super::EBLOKOMNNNN::EBLOKOMNNNN {
+        if self.has_HEGECCJIFBJ() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HEGECCJIFBJ(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::HGFKGMPPOIM::HGFKGMPPOIM::new()
+            super::EBLOKOMNNNN::EBLOKOMNNNN::new()
         }
     }
 
-    // .MMHMPNEJFOP LKBHNGLPEGP = 124;
+    // .CBLBFGKFMLC IMKIPDCNBHH = 957;
 
-    pub fn LKBHNGLPEGP(&self) -> &super::MMHMPNEJFOP::MMHMPNEJFOP {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LKBHNGLPEGP(ref v)) => v,
-            _ => <super::MMHMPNEJFOP::MMHMPNEJFOP as ::protobuf::Message>::default_instance(),
+    pub fn IMKIPDCNBHH(&self) -> &super::CBLBFGKFMLC::CBLBFGKFMLC {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMKIPDCNBHH(ref v)) => v,
+            _ => <super::CBLBFGKFMLC::CBLBFGKFMLC as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_LKBHNGLPEGP(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_IMKIPDCNBHH(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_LKBHNGLPEGP(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LKBHNGLPEGP(..)) => true,
+    pub fn has_IMKIPDCNBHH(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMKIPDCNBHH(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_LKBHNGLPEGP(&mut self, v: super::MMHMPNEJFOP::MMHMPNEJFOP) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LKBHNGLPEGP(v))
+    pub fn set_IMKIPDCNBHH(&mut self, v: super::CBLBFGKFMLC::CBLBFGKFMLC) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMKIPDCNBHH(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_LKBHNGLPEGP(&mut self) -> &mut super::MMHMPNEJFOP::MMHMPNEJFOP {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LKBHNGLPEGP(_)) = self.BPIHFAJCLOC {
+    pub fn mut_IMKIPDCNBHH(&mut self) -> &mut super::CBLBFGKFMLC::CBLBFGKFMLC {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMKIPDCNBHH(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LKBHNGLPEGP(super::MMHMPNEJFOP::MMHMPNEJFOP::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMKIPDCNBHH(super::CBLBFGKFMLC::CBLBFGKFMLC::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LKBHNGLPEGP(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMKIPDCNBHH(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_LKBHNGLPEGP(&mut self) -> super::MMHMPNEJFOP::MMHMPNEJFOP {
-        if self.has_LKBHNGLPEGP() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LKBHNGLPEGP(v)) => v,
+    pub fn take_IMKIPDCNBHH(&mut self) -> super::CBLBFGKFMLC::CBLBFGKFMLC {
+        if self.has_IMKIPDCNBHH() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMKIPDCNBHH(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::MMHMPNEJFOP::MMHMPNEJFOP::new()
+            super::CBLBFGKFMLC::CBLBFGKFMLC::new()
         }
     }
 
-    // .JAMNDEJMILO OFEECJDAHLB = 1850;
+    // .BALOFADGOKE ENMKMKPBGBL = 756;
 
-    pub fn OFEECJDAHLB(&self) -> &super::JAMNDEJMILO::JAMNDEJMILO {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OFEECJDAHLB(ref v)) => v,
-            _ => <super::JAMNDEJMILO::JAMNDEJMILO as ::protobuf::Message>::default_instance(),
+    pub fn ENMKMKPBGBL(&self) -> &super::BALOFADGOKE::BALOFADGOKE {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ENMKMKPBGBL(ref v)) => v,
+            _ => <super::BALOFADGOKE::BALOFADGOKE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_OFEECJDAHLB(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_ENMKMKPBGBL(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_OFEECJDAHLB(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OFEECJDAHLB(..)) => true,
+    pub fn has_ENMKMKPBGBL(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ENMKMKPBGBL(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_OFEECJDAHLB(&mut self, v: super::JAMNDEJMILO::JAMNDEJMILO) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OFEECJDAHLB(v))
+    pub fn set_ENMKMKPBGBL(&mut self, v: super::BALOFADGOKE::BALOFADGOKE) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ENMKMKPBGBL(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_OFEECJDAHLB(&mut self) -> &mut super::JAMNDEJMILO::JAMNDEJMILO {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OFEECJDAHLB(_)) = self.BPIHFAJCLOC {
+    pub fn mut_ENMKMKPBGBL(&mut self) -> &mut super::BALOFADGOKE::BALOFADGOKE {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ENMKMKPBGBL(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OFEECJDAHLB(super::JAMNDEJMILO::JAMNDEJMILO::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ENMKMKPBGBL(super::BALOFADGOKE::BALOFADGOKE::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OFEECJDAHLB(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ENMKMKPBGBL(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_OFEECJDAHLB(&mut self) -> super::JAMNDEJMILO::JAMNDEJMILO {
-        if self.has_OFEECJDAHLB() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OFEECJDAHLB(v)) => v,
+    pub fn take_ENMKMKPBGBL(&mut self) -> super::BALOFADGOKE::BALOFADGOKE {
+        if self.has_ENMKMKPBGBL() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ENMKMKPBGBL(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JAMNDEJMILO::JAMNDEJMILO::new()
+            super::BALOFADGOKE::BALOFADGOKE::new()
         }
     }
 
-    // .MBHMOJNPHEJ BOJPHPFIPNK = 963;
+    // .LNDBCDKMMKN ABKEDNGNFEO = 88;
 
-    pub fn BOJPHPFIPNK(&self) -> &super::MBHMOJNPHEJ::MBHMOJNPHEJ {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BOJPHPFIPNK(ref v)) => v,
-            _ => <super::MBHMOJNPHEJ::MBHMOJNPHEJ as ::protobuf::Message>::default_instance(),
+    pub fn ABKEDNGNFEO(&self) -> &super::LNDBCDKMMKN::LNDBCDKMMKN {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ABKEDNGNFEO(ref v)) => v,
+            _ => <super::LNDBCDKMMKN::LNDBCDKMMKN as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BOJPHPFIPNK(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_ABKEDNGNFEO(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_BOJPHPFIPNK(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BOJPHPFIPNK(..)) => true,
+    pub fn has_ABKEDNGNFEO(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ABKEDNGNFEO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BOJPHPFIPNK(&mut self, v: super::MBHMOJNPHEJ::MBHMOJNPHEJ) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BOJPHPFIPNK(v))
+    pub fn set_ABKEDNGNFEO(&mut self, v: super::LNDBCDKMMKN::LNDBCDKMMKN) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ABKEDNGNFEO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BOJPHPFIPNK(&mut self) -> &mut super::MBHMOJNPHEJ::MBHMOJNPHEJ {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BOJPHPFIPNK(_)) = self.BPIHFAJCLOC {
+    pub fn mut_ABKEDNGNFEO(&mut self) -> &mut super::LNDBCDKMMKN::LNDBCDKMMKN {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ABKEDNGNFEO(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BOJPHPFIPNK(super::MBHMOJNPHEJ::MBHMOJNPHEJ::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ABKEDNGNFEO(super::LNDBCDKMMKN::LNDBCDKMMKN::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BOJPHPFIPNK(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ABKEDNGNFEO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BOJPHPFIPNK(&mut self) -> super::MBHMOJNPHEJ::MBHMOJNPHEJ {
-        if self.has_BOJPHPFIPNK() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BOJPHPFIPNK(v)) => v,
+    pub fn take_ABKEDNGNFEO(&mut self) -> super::LNDBCDKMMKN::LNDBCDKMMKN {
+        if self.has_ABKEDNGNFEO() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ABKEDNGNFEO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::MBHMOJNPHEJ::MBHMOJNPHEJ::new()
+            super::LNDBCDKMMKN::LNDBCDKMMKN::new()
         }
     }
 
-    // .IKEBEPBJHCE JLIINFBLMKI = 1438;
+    // .KGHLOMJHDPE IMLHDMCPHOB = 222;
 
-    pub fn JLIINFBLMKI(&self) -> &super::IKEBEPBJHCE::IKEBEPBJHCE {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JLIINFBLMKI(ref v)) => v,
-            _ => <super::IKEBEPBJHCE::IKEBEPBJHCE as ::protobuf::Message>::default_instance(),
+    pub fn IMLHDMCPHOB(&self) -> &super::KGHLOMJHDPE::KGHLOMJHDPE {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMLHDMCPHOB(ref v)) => v,
+            _ => <super::KGHLOMJHDPE::KGHLOMJHDPE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_JLIINFBLMKI(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_IMLHDMCPHOB(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_JLIINFBLMKI(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JLIINFBLMKI(..)) => true,
+    pub fn has_IMLHDMCPHOB(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMLHDMCPHOB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_JLIINFBLMKI(&mut self, v: super::IKEBEPBJHCE::IKEBEPBJHCE) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JLIINFBLMKI(v))
+    pub fn set_IMLHDMCPHOB(&mut self, v: super::KGHLOMJHDPE::KGHLOMJHDPE) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMLHDMCPHOB(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_JLIINFBLMKI(&mut self) -> &mut super::IKEBEPBJHCE::IKEBEPBJHCE {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JLIINFBLMKI(_)) = self.BPIHFAJCLOC {
+    pub fn mut_IMLHDMCPHOB(&mut self) -> &mut super::KGHLOMJHDPE::KGHLOMJHDPE {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMLHDMCPHOB(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JLIINFBLMKI(super::IKEBEPBJHCE::IKEBEPBJHCE::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMLHDMCPHOB(super::KGHLOMJHDPE::KGHLOMJHDPE::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JLIINFBLMKI(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMLHDMCPHOB(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_JLIINFBLMKI(&mut self) -> super::IKEBEPBJHCE::IKEBEPBJHCE {
-        if self.has_JLIINFBLMKI() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JLIINFBLMKI(v)) => v,
+    pub fn take_IMLHDMCPHOB(&mut self) -> super::KGHLOMJHDPE::KGHLOMJHDPE {
+        if self.has_IMLHDMCPHOB() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMLHDMCPHOB(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::IKEBEPBJHCE::IKEBEPBJHCE::new()
+            super::KGHLOMJHDPE::KGHLOMJHDPE::new()
         }
     }
 
-    // .IADIBNIPHBO DDAKCDJJOPI = 1928;
+    // .LAKMNABKMLO GJDKCHAAEDM = 816;
 
-    pub fn DDAKCDJJOPI(&self) -> &super::IADIBNIPHBO::IADIBNIPHBO {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DDAKCDJJOPI(ref v)) => v,
-            _ => <super::IADIBNIPHBO::IADIBNIPHBO as ::protobuf::Message>::default_instance(),
+    pub fn GJDKCHAAEDM(&self) -> &super::LAKMNABKMLO::LAKMNABKMLO {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GJDKCHAAEDM(ref v)) => v,
+            _ => <super::LAKMNABKMLO::LAKMNABKMLO as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_DDAKCDJJOPI(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_GJDKCHAAEDM(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_DDAKCDJJOPI(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DDAKCDJJOPI(..)) => true,
+    pub fn has_GJDKCHAAEDM(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GJDKCHAAEDM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_DDAKCDJJOPI(&mut self, v: super::IADIBNIPHBO::IADIBNIPHBO) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DDAKCDJJOPI(v))
+    pub fn set_GJDKCHAAEDM(&mut self, v: super::LAKMNABKMLO::LAKMNABKMLO) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GJDKCHAAEDM(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_DDAKCDJJOPI(&mut self) -> &mut super::IADIBNIPHBO::IADIBNIPHBO {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DDAKCDJJOPI(_)) = self.BPIHFAJCLOC {
+    pub fn mut_GJDKCHAAEDM(&mut self) -> &mut super::LAKMNABKMLO::LAKMNABKMLO {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GJDKCHAAEDM(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DDAKCDJJOPI(super::IADIBNIPHBO::IADIBNIPHBO::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GJDKCHAAEDM(super::LAKMNABKMLO::LAKMNABKMLO::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DDAKCDJJOPI(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GJDKCHAAEDM(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_DDAKCDJJOPI(&mut self) -> super::IADIBNIPHBO::IADIBNIPHBO {
-        if self.has_DDAKCDJJOPI() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DDAKCDJJOPI(v)) => v,
+    pub fn take_GJDKCHAAEDM(&mut self) -> super::LAKMNABKMLO::LAKMNABKMLO {
+        if self.has_GJDKCHAAEDM() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GJDKCHAAEDM(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::IADIBNIPHBO::IADIBNIPHBO::new()
+            super::LAKMNABKMLO::LAKMNABKMLO::new()
         }
     }
 
-    // .GACNMNIKJBF IJHKIDFCAHO = 729;
+    // .OKFPPPBNJNH LDOFNPGNJJC = 1117;
 
-    pub fn IJHKIDFCAHO(&self) -> &super::GACNMNIKJBF::GACNMNIKJBF {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJHKIDFCAHO(ref v)) => v,
-            _ => <super::GACNMNIKJBF::GACNMNIKJBF as ::protobuf::Message>::default_instance(),
+    pub fn LDOFNPGNJJC(&self) -> &super::OKFPPPBNJNH::OKFPPPBNJNH {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LDOFNPGNJJC(ref v)) => v,
+            _ => <super::OKFPPPBNJNH::OKFPPPBNJNH as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_IJHKIDFCAHO(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_LDOFNPGNJJC(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_IJHKIDFCAHO(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJHKIDFCAHO(..)) => true,
+    pub fn has_LDOFNPGNJJC(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LDOFNPGNJJC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_IJHKIDFCAHO(&mut self, v: super::GACNMNIKJBF::GACNMNIKJBF) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJHKIDFCAHO(v))
+    pub fn set_LDOFNPGNJJC(&mut self, v: super::OKFPPPBNJNH::OKFPPPBNJNH) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LDOFNPGNJJC(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_IJHKIDFCAHO(&mut self) -> &mut super::GACNMNIKJBF::GACNMNIKJBF {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJHKIDFCAHO(_)) = self.BPIHFAJCLOC {
+    pub fn mut_LDOFNPGNJJC(&mut self) -> &mut super::OKFPPPBNJNH::OKFPPPBNJNH {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LDOFNPGNJJC(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJHKIDFCAHO(super::GACNMNIKJBF::GACNMNIKJBF::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LDOFNPGNJJC(super::OKFPPPBNJNH::OKFPPPBNJNH::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJHKIDFCAHO(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LDOFNPGNJJC(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_IJHKIDFCAHO(&mut self) -> super::GACNMNIKJBF::GACNMNIKJBF {
-        if self.has_IJHKIDFCAHO() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJHKIDFCAHO(v)) => v,
+    pub fn take_LDOFNPGNJJC(&mut self) -> super::OKFPPPBNJNH::OKFPPPBNJNH {
+        if self.has_LDOFNPGNJJC() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LDOFNPGNJJC(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GACNMNIKJBF::GACNMNIKJBF::new()
+            super::OKFPPPBNJNH::OKFPPPBNJNH::new()
         }
     }
 
-    // .FOHHEPOECML KMALKBCNJHK = 1017;
+    // .PCMBLMDJPJJ NOJELDBILBF = 126;
 
-    pub fn KMALKBCNJHK(&self) -> &super::FOHHEPOECML::FOHHEPOECML {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMALKBCNJHK(ref v)) => v,
-            _ => <super::FOHHEPOECML::FOHHEPOECML as ::protobuf::Message>::default_instance(),
+    pub fn NOJELDBILBF(&self) -> &super::PCMBLMDJPJJ::PCMBLMDJPJJ {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NOJELDBILBF(ref v)) => v,
+            _ => <super::PCMBLMDJPJJ::PCMBLMDJPJJ as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_KMALKBCNJHK(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_NOJELDBILBF(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_KMALKBCNJHK(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMALKBCNJHK(..)) => true,
+    pub fn has_NOJELDBILBF(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NOJELDBILBF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_KMALKBCNJHK(&mut self, v: super::FOHHEPOECML::FOHHEPOECML) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMALKBCNJHK(v))
+    pub fn set_NOJELDBILBF(&mut self, v: super::PCMBLMDJPJJ::PCMBLMDJPJJ) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NOJELDBILBF(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KMALKBCNJHK(&mut self) -> &mut super::FOHHEPOECML::FOHHEPOECML {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMALKBCNJHK(_)) = self.BPIHFAJCLOC {
+    pub fn mut_NOJELDBILBF(&mut self) -> &mut super::PCMBLMDJPJJ::PCMBLMDJPJJ {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NOJELDBILBF(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMALKBCNJHK(super::FOHHEPOECML::FOHHEPOECML::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NOJELDBILBF(super::PCMBLMDJPJJ::PCMBLMDJPJJ::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMALKBCNJHK(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NOJELDBILBF(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_KMALKBCNJHK(&mut self) -> super::FOHHEPOECML::FOHHEPOECML {
-        if self.has_KMALKBCNJHK() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMALKBCNJHK(v)) => v,
+    pub fn take_NOJELDBILBF(&mut self) -> super::PCMBLMDJPJJ::PCMBLMDJPJJ {
+        if self.has_NOJELDBILBF() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NOJELDBILBF(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::FOHHEPOECML::FOHHEPOECML::new()
+            super::PCMBLMDJPJJ::PCMBLMDJPJJ::new()
         }
     }
 
-    // .DIKAEDCJHFM OPKPJCIDFIC = 1033;
+    // .PADDBFAGJNE NMFCCMJLCII = 566;
 
-    pub fn OPKPJCIDFIC(&self) -> &super::DIKAEDCJHFM::DIKAEDCJHFM {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OPKPJCIDFIC(ref v)) => v,
-            _ => <super::DIKAEDCJHFM::DIKAEDCJHFM as ::protobuf::Message>::default_instance(),
+    pub fn NMFCCMJLCII(&self) -> &super::PADDBFAGJNE::PADDBFAGJNE {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NMFCCMJLCII(ref v)) => v,
+            _ => <super::PADDBFAGJNE::PADDBFAGJNE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_OPKPJCIDFIC(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_NMFCCMJLCII(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_OPKPJCIDFIC(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OPKPJCIDFIC(..)) => true,
+    pub fn has_NMFCCMJLCII(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NMFCCMJLCII(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_OPKPJCIDFIC(&mut self, v: super::DIKAEDCJHFM::DIKAEDCJHFM) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OPKPJCIDFIC(v))
+    pub fn set_NMFCCMJLCII(&mut self, v: super::PADDBFAGJNE::PADDBFAGJNE) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NMFCCMJLCII(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_OPKPJCIDFIC(&mut self) -> &mut super::DIKAEDCJHFM::DIKAEDCJHFM {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OPKPJCIDFIC(_)) = self.BPIHFAJCLOC {
+    pub fn mut_NMFCCMJLCII(&mut self) -> &mut super::PADDBFAGJNE::PADDBFAGJNE {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NMFCCMJLCII(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OPKPJCIDFIC(super::DIKAEDCJHFM::DIKAEDCJHFM::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NMFCCMJLCII(super::PADDBFAGJNE::PADDBFAGJNE::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OPKPJCIDFIC(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NMFCCMJLCII(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_OPKPJCIDFIC(&mut self) -> super::DIKAEDCJHFM::DIKAEDCJHFM {
-        if self.has_OPKPJCIDFIC() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OPKPJCIDFIC(v)) => v,
+    pub fn take_NMFCCMJLCII(&mut self) -> super::PADDBFAGJNE::PADDBFAGJNE {
+        if self.has_NMFCCMJLCII() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NMFCCMJLCII(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::DIKAEDCJHFM::DIKAEDCJHFM::new()
+            super::PADDBFAGJNE::PADDBFAGJNE::new()
         }
     }
 
-    // .HAHKCDIPGJH NKMIGFDPFNJ = 1610;
+    // .PGAAIDKNIOA GCGABKJGBAL = 259;
 
-    pub fn NKMIGFDPFNJ(&self) -> &super::HAHKCDIPGJH::HAHKCDIPGJH {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::NKMIGFDPFNJ(ref v)) => v,
-            _ => <super::HAHKCDIPGJH::HAHKCDIPGJH as ::protobuf::Message>::default_instance(),
+    pub fn GCGABKJGBAL(&self) -> &super::PGAAIDKNIOA::PGAAIDKNIOA {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GCGABKJGBAL(ref v)) => v,
+            _ => <super::PGAAIDKNIOA::PGAAIDKNIOA as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_NKMIGFDPFNJ(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_GCGABKJGBAL(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_NKMIGFDPFNJ(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::NKMIGFDPFNJ(..)) => true,
+    pub fn has_GCGABKJGBAL(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GCGABKJGBAL(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_NKMIGFDPFNJ(&mut self, v: super::HAHKCDIPGJH::HAHKCDIPGJH) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::NKMIGFDPFNJ(v))
+    pub fn set_GCGABKJGBAL(&mut self, v: super::PGAAIDKNIOA::PGAAIDKNIOA) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GCGABKJGBAL(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_NKMIGFDPFNJ(&mut self) -> &mut super::HAHKCDIPGJH::HAHKCDIPGJH {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::NKMIGFDPFNJ(_)) = self.BPIHFAJCLOC {
+    pub fn mut_GCGABKJGBAL(&mut self) -> &mut super::PGAAIDKNIOA::PGAAIDKNIOA {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GCGABKJGBAL(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::NKMIGFDPFNJ(super::HAHKCDIPGJH::HAHKCDIPGJH::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GCGABKJGBAL(super::PGAAIDKNIOA::PGAAIDKNIOA::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::NKMIGFDPFNJ(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GCGABKJGBAL(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_NKMIGFDPFNJ(&mut self) -> super::HAHKCDIPGJH::HAHKCDIPGJH {
-        if self.has_NKMIGFDPFNJ() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::NKMIGFDPFNJ(v)) => v,
+    pub fn take_GCGABKJGBAL(&mut self) -> super::PGAAIDKNIOA::PGAAIDKNIOA {
+        if self.has_GCGABKJGBAL() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GCGABKJGBAL(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::HAHKCDIPGJH::HAHKCDIPGJH::new()
+            super::PGAAIDKNIOA::PGAAIDKNIOA::new()
         }
     }
 
-    // .GEDCCGBPOFL KHNAKEMGNJM = 1214;
+    // .FFBEJCNPAMN APNNHAGDPHM = 570;
 
-    pub fn KHNAKEMGNJM(&self) -> &super::GEDCCGBPOFL::GEDCCGBPOFL {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KHNAKEMGNJM(ref v)) => v,
-            _ => <super::GEDCCGBPOFL::GEDCCGBPOFL as ::protobuf::Message>::default_instance(),
+    pub fn APNNHAGDPHM(&self) -> &super::FFBEJCNPAMN::FFBEJCNPAMN {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::APNNHAGDPHM(ref v)) => v,
+            _ => <super::FFBEJCNPAMN::FFBEJCNPAMN as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_KHNAKEMGNJM(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_APNNHAGDPHM(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_KHNAKEMGNJM(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KHNAKEMGNJM(..)) => true,
+    pub fn has_APNNHAGDPHM(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::APNNHAGDPHM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_KHNAKEMGNJM(&mut self, v: super::GEDCCGBPOFL::GEDCCGBPOFL) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KHNAKEMGNJM(v))
+    pub fn set_APNNHAGDPHM(&mut self, v: super::FFBEJCNPAMN::FFBEJCNPAMN) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::APNNHAGDPHM(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KHNAKEMGNJM(&mut self) -> &mut super::GEDCCGBPOFL::GEDCCGBPOFL {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KHNAKEMGNJM(_)) = self.BPIHFAJCLOC {
+    pub fn mut_APNNHAGDPHM(&mut self) -> &mut super::FFBEJCNPAMN::FFBEJCNPAMN {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::APNNHAGDPHM(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KHNAKEMGNJM(super::GEDCCGBPOFL::GEDCCGBPOFL::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::APNNHAGDPHM(super::FFBEJCNPAMN::FFBEJCNPAMN::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KHNAKEMGNJM(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::APNNHAGDPHM(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_KHNAKEMGNJM(&mut self) -> super::GEDCCGBPOFL::GEDCCGBPOFL {
-        if self.has_KHNAKEMGNJM() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KHNAKEMGNJM(v)) => v,
+    pub fn take_APNNHAGDPHM(&mut self) -> super::FFBEJCNPAMN::FFBEJCNPAMN {
+        if self.has_APNNHAGDPHM() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::APNNHAGDPHM(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GEDCCGBPOFL::GEDCCGBPOFL::new()
+            super::FFBEJCNPAMN::FFBEJCNPAMN::new()
         }
     }
 
-    // .MPPDGFLMDEB BBEPLGMEJGN = 1206;
+    // .KHOKOACABEL MDJCMEOLAHF = 1630;
 
-    pub fn BBEPLGMEJGN(&self) -> &super::MPPDGFLMDEB::MPPDGFLMDEB {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEPLGMEJGN(ref v)) => v,
-            _ => <super::MPPDGFLMDEB::MPPDGFLMDEB as ::protobuf::Message>::default_instance(),
+    pub fn MDJCMEOLAHF(&self) -> &super::KHOKOACABEL::KHOKOACABEL {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MDJCMEOLAHF(ref v)) => v,
+            _ => <super::KHOKOACABEL::KHOKOACABEL as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BBEPLGMEJGN(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_MDJCMEOLAHF(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_BBEPLGMEJGN(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEPLGMEJGN(..)) => true,
+    pub fn has_MDJCMEOLAHF(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MDJCMEOLAHF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BBEPLGMEJGN(&mut self, v: super::MPPDGFLMDEB::MPPDGFLMDEB) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEPLGMEJGN(v))
+    pub fn set_MDJCMEOLAHF(&mut self, v: super::KHOKOACABEL::KHOKOACABEL) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MDJCMEOLAHF(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BBEPLGMEJGN(&mut self) -> &mut super::MPPDGFLMDEB::MPPDGFLMDEB {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEPLGMEJGN(_)) = self.BPIHFAJCLOC {
+    pub fn mut_MDJCMEOLAHF(&mut self) -> &mut super::KHOKOACABEL::KHOKOACABEL {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MDJCMEOLAHF(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEPLGMEJGN(super::MPPDGFLMDEB::MPPDGFLMDEB::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MDJCMEOLAHF(super::KHOKOACABEL::KHOKOACABEL::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEPLGMEJGN(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MDJCMEOLAHF(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BBEPLGMEJGN(&mut self) -> super::MPPDGFLMDEB::MPPDGFLMDEB {
-        if self.has_BBEPLGMEJGN() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEPLGMEJGN(v)) => v,
+    pub fn take_MDJCMEOLAHF(&mut self) -> super::KHOKOACABEL::KHOKOACABEL {
+        if self.has_MDJCMEOLAHF() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MDJCMEOLAHF(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::MPPDGFLMDEB::MPPDGFLMDEB::new()
+            super::KHOKOACABEL::KHOKOACABEL::new()
         }
     }
 
-    // .GCFNNAKLMPD CEPBLFDKFFJ = 1207;
+    // .MKGFFKEGMNP FDGIFAFOHLN = 986;
 
-    pub fn CEPBLFDKFFJ(&self) -> &super::GCFNNAKLMPD::GCFNNAKLMPD {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CEPBLFDKFFJ(ref v)) => v,
-            _ => <super::GCFNNAKLMPD::GCFNNAKLMPD as ::protobuf::Message>::default_instance(),
+    pub fn FDGIFAFOHLN(&self) -> &super::MKGFFKEGMNP::MKGFFKEGMNP {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FDGIFAFOHLN(ref v)) => v,
+            _ => <super::MKGFFKEGMNP::MKGFFKEGMNP as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_CEPBLFDKFFJ(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_FDGIFAFOHLN(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_CEPBLFDKFFJ(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CEPBLFDKFFJ(..)) => true,
+    pub fn has_FDGIFAFOHLN(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FDGIFAFOHLN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CEPBLFDKFFJ(&mut self, v: super::GCFNNAKLMPD::GCFNNAKLMPD) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CEPBLFDKFFJ(v))
+    pub fn set_FDGIFAFOHLN(&mut self, v: super::MKGFFKEGMNP::MKGFFKEGMNP) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FDGIFAFOHLN(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CEPBLFDKFFJ(&mut self) -> &mut super::GCFNNAKLMPD::GCFNNAKLMPD {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CEPBLFDKFFJ(_)) = self.BPIHFAJCLOC {
+    pub fn mut_FDGIFAFOHLN(&mut self) -> &mut super::MKGFFKEGMNP::MKGFFKEGMNP {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FDGIFAFOHLN(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CEPBLFDKFFJ(super::GCFNNAKLMPD::GCFNNAKLMPD::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FDGIFAFOHLN(super::MKGFFKEGMNP::MKGFFKEGMNP::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CEPBLFDKFFJ(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FDGIFAFOHLN(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CEPBLFDKFFJ(&mut self) -> super::GCFNNAKLMPD::GCFNNAKLMPD {
-        if self.has_CEPBLFDKFFJ() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CEPBLFDKFFJ(v)) => v,
+    pub fn take_FDGIFAFOHLN(&mut self) -> super::MKGFFKEGMNP::MKGFFKEGMNP {
+        if self.has_FDGIFAFOHLN() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FDGIFAFOHLN(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GCFNNAKLMPD::GCFNNAKLMPD::new()
+            super::MKGFFKEGMNP::MKGFFKEGMNP::new()
         }
     }
 
-    // .NFPOEAEPHIJ MCOPMAMMAKP = 786;
+    // .AJEDKCCAKBE EMKGAEBINMB = 362;
 
-    pub fn MCOPMAMMAKP(&self) -> &super::NFPOEAEPHIJ::NFPOEAEPHIJ {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::MCOPMAMMAKP(ref v)) => v,
-            _ => <super::NFPOEAEPHIJ::NFPOEAEPHIJ as ::protobuf::Message>::default_instance(),
+    pub fn EMKGAEBINMB(&self) -> &super::AJEDKCCAKBE::AJEDKCCAKBE {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::EMKGAEBINMB(ref v)) => v,
+            _ => <super::AJEDKCCAKBE::AJEDKCCAKBE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_MCOPMAMMAKP(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_EMKGAEBINMB(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_MCOPMAMMAKP(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::MCOPMAMMAKP(..)) => true,
+    pub fn has_EMKGAEBINMB(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::EMKGAEBINMB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_MCOPMAMMAKP(&mut self, v: super::NFPOEAEPHIJ::NFPOEAEPHIJ) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::MCOPMAMMAKP(v))
+    pub fn set_EMKGAEBINMB(&mut self, v: super::AJEDKCCAKBE::AJEDKCCAKBE) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::EMKGAEBINMB(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_MCOPMAMMAKP(&mut self) -> &mut super::NFPOEAEPHIJ::NFPOEAEPHIJ {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::MCOPMAMMAKP(_)) = self.BPIHFAJCLOC {
+    pub fn mut_EMKGAEBINMB(&mut self) -> &mut super::AJEDKCCAKBE::AJEDKCCAKBE {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::EMKGAEBINMB(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::MCOPMAMMAKP(super::NFPOEAEPHIJ::NFPOEAEPHIJ::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::EMKGAEBINMB(super::AJEDKCCAKBE::AJEDKCCAKBE::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::MCOPMAMMAKP(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::EMKGAEBINMB(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_MCOPMAMMAKP(&mut self) -> super::NFPOEAEPHIJ::NFPOEAEPHIJ {
-        if self.has_MCOPMAMMAKP() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::MCOPMAMMAKP(v)) => v,
+    pub fn take_EMKGAEBINMB(&mut self) -> super::AJEDKCCAKBE::AJEDKCCAKBE {
+        if self.has_EMKGAEBINMB() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::EMKGAEBINMB(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::NFPOEAEPHIJ::NFPOEAEPHIJ::new()
+            super::AJEDKCCAKBE::AJEDKCCAKBE::new()
         }
     }
 
-    // .IOGMLLBFDPG BBEHJAJPHBK = 1379;
+    // .GKPCMMNOGBF PAGPPMJDMFA = 1395;
 
-    pub fn BBEHJAJPHBK(&self) -> &super::IOGMLLBFDPG::IOGMLLBFDPG {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEHJAJPHBK(ref v)) => v,
-            _ => <super::IOGMLLBFDPG::IOGMLLBFDPG as ::protobuf::Message>::default_instance(),
+    pub fn PAGPPMJDMFA(&self) -> &super::GKPCMMNOGBF::GKPCMMNOGBF {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PAGPPMJDMFA(ref v)) => v,
+            _ => <super::GKPCMMNOGBF::GKPCMMNOGBF as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BBEHJAJPHBK(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_PAGPPMJDMFA(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_BBEHJAJPHBK(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEHJAJPHBK(..)) => true,
+    pub fn has_PAGPPMJDMFA(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PAGPPMJDMFA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BBEHJAJPHBK(&mut self, v: super::IOGMLLBFDPG::IOGMLLBFDPG) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEHJAJPHBK(v))
+    pub fn set_PAGPPMJDMFA(&mut self, v: super::GKPCMMNOGBF::GKPCMMNOGBF) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PAGPPMJDMFA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BBEHJAJPHBK(&mut self) -> &mut super::IOGMLLBFDPG::IOGMLLBFDPG {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEHJAJPHBK(_)) = self.BPIHFAJCLOC {
+    pub fn mut_PAGPPMJDMFA(&mut self) -> &mut super::GKPCMMNOGBF::GKPCMMNOGBF {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PAGPPMJDMFA(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEHJAJPHBK(super::IOGMLLBFDPG::IOGMLLBFDPG::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PAGPPMJDMFA(super::GKPCMMNOGBF::GKPCMMNOGBF::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEHJAJPHBK(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PAGPPMJDMFA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BBEHJAJPHBK(&mut self) -> super::IOGMLLBFDPG::IOGMLLBFDPG {
-        if self.has_BBEHJAJPHBK() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEHJAJPHBK(v)) => v,
+    pub fn take_PAGPPMJDMFA(&mut self) -> super::GKPCMMNOGBF::GKPCMMNOGBF {
+        if self.has_PAGPPMJDMFA() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PAGPPMJDMFA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::IOGMLLBFDPG::IOGMLLBFDPG::new()
+            super::GKPCMMNOGBF::GKPCMMNOGBF::new()
         }
     }
 
-    // .CFIKJKGABEI CMHGGDOMAAK = 408;
+    // .OLHGNECAEEL KBJKMBDCPJO = 1854;
 
-    pub fn CMHGGDOMAAK(&self) -> &super::CFIKJKGABEI::CFIKJKGABEI {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CMHGGDOMAAK(ref v)) => v,
-            _ => <super::CFIKJKGABEI::CFIKJKGABEI as ::protobuf::Message>::default_instance(),
+    pub fn KBJKMBDCPJO(&self) -> &super::OLHGNECAEEL::OLHGNECAEEL {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KBJKMBDCPJO(ref v)) => v,
+            _ => <super::OLHGNECAEEL::OLHGNECAEEL as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_CMHGGDOMAAK(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_KBJKMBDCPJO(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_CMHGGDOMAAK(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CMHGGDOMAAK(..)) => true,
+    pub fn has_KBJKMBDCPJO(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KBJKMBDCPJO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CMHGGDOMAAK(&mut self, v: super::CFIKJKGABEI::CFIKJKGABEI) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CMHGGDOMAAK(v))
+    pub fn set_KBJKMBDCPJO(&mut self, v: super::OLHGNECAEEL::OLHGNECAEEL) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KBJKMBDCPJO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CMHGGDOMAAK(&mut self) -> &mut super::CFIKJKGABEI::CFIKJKGABEI {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CMHGGDOMAAK(_)) = self.BPIHFAJCLOC {
+    pub fn mut_KBJKMBDCPJO(&mut self) -> &mut super::OLHGNECAEEL::OLHGNECAEEL {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KBJKMBDCPJO(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CMHGGDOMAAK(super::CFIKJKGABEI::CFIKJKGABEI::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KBJKMBDCPJO(super::OLHGNECAEEL::OLHGNECAEEL::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CMHGGDOMAAK(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KBJKMBDCPJO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CMHGGDOMAAK(&mut self) -> super::CFIKJKGABEI::CFIKJKGABEI {
-        if self.has_CMHGGDOMAAK() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CMHGGDOMAAK(v)) => v,
+    pub fn take_KBJKMBDCPJO(&mut self) -> super::OLHGNECAEEL::OLHGNECAEEL {
+        if self.has_KBJKMBDCPJO() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KBJKMBDCPJO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::CFIKJKGABEI::CFIKJKGABEI::new()
+            super::OLHGNECAEEL::OLHGNECAEEL::new()
         }
     }
 
-    // .MAGNIAAPANO DOBFKCAGMJB = 1157;
+    // .NAJIHIPCGMD PEEFOFKDEMJ = 1775;
 
-    pub fn DOBFKCAGMJB(&self) -> &super::MAGNIAAPANO::MAGNIAAPANO {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DOBFKCAGMJB(ref v)) => v,
-            _ => <super::MAGNIAAPANO::MAGNIAAPANO as ::protobuf::Message>::default_instance(),
+    pub fn PEEFOFKDEMJ(&self) -> &super::NAJIHIPCGMD::NAJIHIPCGMD {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PEEFOFKDEMJ(ref v)) => v,
+            _ => <super::NAJIHIPCGMD::NAJIHIPCGMD as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_DOBFKCAGMJB(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_PEEFOFKDEMJ(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_DOBFKCAGMJB(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DOBFKCAGMJB(..)) => true,
+    pub fn has_PEEFOFKDEMJ(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PEEFOFKDEMJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_DOBFKCAGMJB(&mut self, v: super::MAGNIAAPANO::MAGNIAAPANO) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DOBFKCAGMJB(v))
+    pub fn set_PEEFOFKDEMJ(&mut self, v: super::NAJIHIPCGMD::NAJIHIPCGMD) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PEEFOFKDEMJ(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_DOBFKCAGMJB(&mut self) -> &mut super::MAGNIAAPANO::MAGNIAAPANO {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DOBFKCAGMJB(_)) = self.BPIHFAJCLOC {
+    pub fn mut_PEEFOFKDEMJ(&mut self) -> &mut super::NAJIHIPCGMD::NAJIHIPCGMD {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PEEFOFKDEMJ(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DOBFKCAGMJB(super::MAGNIAAPANO::MAGNIAAPANO::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PEEFOFKDEMJ(super::NAJIHIPCGMD::NAJIHIPCGMD::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DOBFKCAGMJB(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PEEFOFKDEMJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_DOBFKCAGMJB(&mut self) -> super::MAGNIAAPANO::MAGNIAAPANO {
-        if self.has_DOBFKCAGMJB() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DOBFKCAGMJB(v)) => v,
+    pub fn take_PEEFOFKDEMJ(&mut self) -> super::NAJIHIPCGMD::NAJIHIPCGMD {
+        if self.has_PEEFOFKDEMJ() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PEEFOFKDEMJ(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::MAGNIAAPANO::MAGNIAAPANO::new()
+            super::NAJIHIPCGMD::NAJIHIPCGMD::new()
         }
     }
 
-    // .MAGNIAAPANO KMFILFDMILI = 558;
+    // .NAJIHIPCGMD HDNMNAFAKKC = 58;
 
-    pub fn KMFILFDMILI(&self) -> &super::MAGNIAAPANO::MAGNIAAPANO {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMFILFDMILI(ref v)) => v,
-            _ => <super::MAGNIAAPANO::MAGNIAAPANO as ::protobuf::Message>::default_instance(),
+    pub fn HDNMNAFAKKC(&self) -> &super::NAJIHIPCGMD::NAJIHIPCGMD {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HDNMNAFAKKC(ref v)) => v,
+            _ => <super::NAJIHIPCGMD::NAJIHIPCGMD as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_KMFILFDMILI(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_HDNMNAFAKKC(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_KMFILFDMILI(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMFILFDMILI(..)) => true,
+    pub fn has_HDNMNAFAKKC(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HDNMNAFAKKC(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_KMFILFDMILI(&mut self, v: super::MAGNIAAPANO::MAGNIAAPANO) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMFILFDMILI(v))
+    pub fn set_HDNMNAFAKKC(&mut self, v: super::NAJIHIPCGMD::NAJIHIPCGMD) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HDNMNAFAKKC(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_KMFILFDMILI(&mut self) -> &mut super::MAGNIAAPANO::MAGNIAAPANO {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMFILFDMILI(_)) = self.BPIHFAJCLOC {
+    pub fn mut_HDNMNAFAKKC(&mut self) -> &mut super::NAJIHIPCGMD::NAJIHIPCGMD {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HDNMNAFAKKC(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMFILFDMILI(super::MAGNIAAPANO::MAGNIAAPANO::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HDNMNAFAKKC(super::NAJIHIPCGMD::NAJIHIPCGMD::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMFILFDMILI(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HDNMNAFAKKC(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_KMFILFDMILI(&mut self) -> super::MAGNIAAPANO::MAGNIAAPANO {
-        if self.has_KMFILFDMILI() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMFILFDMILI(v)) => v,
+    pub fn take_HDNMNAFAKKC(&mut self) -> super::NAJIHIPCGMD::NAJIHIPCGMD {
+        if self.has_HDNMNAFAKKC() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HDNMNAFAKKC(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::MAGNIAAPANO::MAGNIAAPANO::new()
+            super::NAJIHIPCGMD::NAJIHIPCGMD::new()
         }
     }
 
-    // .JDKNKIBFHAF LAJICPMLKCA = 1200;
+    // .ELJDPDFMLPM PKBOEKFFMKM = 533;
 
-    pub fn LAJICPMLKCA(&self) -> &super::JDKNKIBFHAF::JDKNKIBFHAF {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LAJICPMLKCA(ref v)) => v,
-            _ => <super::JDKNKIBFHAF::JDKNKIBFHAF as ::protobuf::Message>::default_instance(),
+    pub fn PKBOEKFFMKM(&self) -> &super::ELJDPDFMLPM::ELJDPDFMLPM {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PKBOEKFFMKM(ref v)) => v,
+            _ => <super::ELJDPDFMLPM::ELJDPDFMLPM as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_LAJICPMLKCA(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_PKBOEKFFMKM(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_LAJICPMLKCA(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LAJICPMLKCA(..)) => true,
+    pub fn has_PKBOEKFFMKM(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PKBOEKFFMKM(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_LAJICPMLKCA(&mut self, v: super::JDKNKIBFHAF::JDKNKIBFHAF) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LAJICPMLKCA(v))
+    pub fn set_PKBOEKFFMKM(&mut self, v: super::ELJDPDFMLPM::ELJDPDFMLPM) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PKBOEKFFMKM(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_LAJICPMLKCA(&mut self) -> &mut super::JDKNKIBFHAF::JDKNKIBFHAF {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LAJICPMLKCA(_)) = self.BPIHFAJCLOC {
+    pub fn mut_PKBOEKFFMKM(&mut self) -> &mut super::ELJDPDFMLPM::ELJDPDFMLPM {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PKBOEKFFMKM(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LAJICPMLKCA(super::JDKNKIBFHAF::JDKNKIBFHAF::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PKBOEKFFMKM(super::ELJDPDFMLPM::ELJDPDFMLPM::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LAJICPMLKCA(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PKBOEKFFMKM(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_LAJICPMLKCA(&mut self) -> super::JDKNKIBFHAF::JDKNKIBFHAF {
-        if self.has_LAJICPMLKCA() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LAJICPMLKCA(v)) => v,
+    pub fn take_PKBOEKFFMKM(&mut self) -> super::ELJDPDFMLPM::ELJDPDFMLPM {
+        if self.has_PKBOEKFFMKM() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PKBOEKFFMKM(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JDKNKIBFHAF::JDKNKIBFHAF::new()
+            super::ELJDPDFMLPM::ELJDPDFMLPM::new()
         }
     }
 
-    // .LIDKGPCEDHE CICIDMFLIHL = 773;
+    // .MJJHMIKCHIA KMJHICGMONF = 1023;
 
-    pub fn CICIDMFLIHL(&self) -> &super::LIDKGPCEDHE::LIDKGPCEDHE {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CICIDMFLIHL(ref v)) => v,
-            _ => <super::LIDKGPCEDHE::LIDKGPCEDHE as ::protobuf::Message>::default_instance(),
+    pub fn KMJHICGMONF(&self) -> &super::MJJHMIKCHIA::MJJHMIKCHIA {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KMJHICGMONF(ref v)) => v,
+            _ => <super::MJJHMIKCHIA::MJJHMIKCHIA as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_CICIDMFLIHL(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_KMJHICGMONF(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_CICIDMFLIHL(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CICIDMFLIHL(..)) => true,
+    pub fn has_KMJHICGMONF(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KMJHICGMONF(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CICIDMFLIHL(&mut self, v: super::LIDKGPCEDHE::LIDKGPCEDHE) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CICIDMFLIHL(v))
+    pub fn set_KMJHICGMONF(&mut self, v: super::MJJHMIKCHIA::MJJHMIKCHIA) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KMJHICGMONF(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CICIDMFLIHL(&mut self) -> &mut super::LIDKGPCEDHE::LIDKGPCEDHE {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CICIDMFLIHL(_)) = self.BPIHFAJCLOC {
+    pub fn mut_KMJHICGMONF(&mut self) -> &mut super::MJJHMIKCHIA::MJJHMIKCHIA {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KMJHICGMONF(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CICIDMFLIHL(super::LIDKGPCEDHE::LIDKGPCEDHE::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KMJHICGMONF(super::MJJHMIKCHIA::MJJHMIKCHIA::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CICIDMFLIHL(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KMJHICGMONF(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CICIDMFLIHL(&mut self) -> super::LIDKGPCEDHE::LIDKGPCEDHE {
-        if self.has_CICIDMFLIHL() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CICIDMFLIHL(v)) => v,
+    pub fn take_KMJHICGMONF(&mut self) -> super::MJJHMIKCHIA::MJJHMIKCHIA {
+        if self.has_KMJHICGMONF() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KMJHICGMONF(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LIDKGPCEDHE::LIDKGPCEDHE::new()
+            super::MJJHMIKCHIA::MJJHMIKCHIA::new()
         }
     }
 
-    // .DPHIINCNKEI FGAEOEEOIFD = 129;
+    // .OBNEOHHDAIP FPJABECNFNA = 1248;
 
-    pub fn FGAEOEEOIFD(&self) -> &super::DPHIINCNKEI::DPHIINCNKEI {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FGAEOEEOIFD(ref v)) => v,
-            _ => <super::DPHIINCNKEI::DPHIINCNKEI as ::protobuf::Message>::default_instance(),
+    pub fn FPJABECNFNA(&self) -> &super::OBNEOHHDAIP::OBNEOHHDAIP {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FPJABECNFNA(ref v)) => v,
+            _ => <super::OBNEOHHDAIP::OBNEOHHDAIP as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_FGAEOEEOIFD(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_FPJABECNFNA(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_FGAEOEEOIFD(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FGAEOEEOIFD(..)) => true,
+    pub fn has_FPJABECNFNA(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FPJABECNFNA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_FGAEOEEOIFD(&mut self, v: super::DPHIINCNKEI::DPHIINCNKEI) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FGAEOEEOIFD(v))
+    pub fn set_FPJABECNFNA(&mut self, v: super::OBNEOHHDAIP::OBNEOHHDAIP) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FPJABECNFNA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_FGAEOEEOIFD(&mut self) -> &mut super::DPHIINCNKEI::DPHIINCNKEI {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FGAEOEEOIFD(_)) = self.BPIHFAJCLOC {
+    pub fn mut_FPJABECNFNA(&mut self) -> &mut super::OBNEOHHDAIP::OBNEOHHDAIP {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FPJABECNFNA(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FGAEOEEOIFD(super::DPHIINCNKEI::DPHIINCNKEI::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FPJABECNFNA(super::OBNEOHHDAIP::OBNEOHHDAIP::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FGAEOEEOIFD(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FPJABECNFNA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_FGAEOEEOIFD(&mut self) -> super::DPHIINCNKEI::DPHIINCNKEI {
-        if self.has_FGAEOEEOIFD() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FGAEOEEOIFD(v)) => v,
+    pub fn take_FPJABECNFNA(&mut self) -> super::OBNEOHHDAIP::OBNEOHHDAIP {
+        if self.has_FPJABECNFNA() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FPJABECNFNA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::DPHIINCNKEI::DPHIINCNKEI::new()
+            super::OBNEOHHDAIP::OBNEOHHDAIP::new()
         }
     }
 
-    // .AOGMCBOFNMO ILAKOOPEODP = 1138;
+    // .APOBCJFPJDD OPJONHEBIBG = 917;
 
-    pub fn ILAKOOPEODP(&self) -> &super::AOGMCBOFNMO::AOGMCBOFNMO {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ILAKOOPEODP(ref v)) => v,
-            _ => <super::AOGMCBOFNMO::AOGMCBOFNMO as ::protobuf::Message>::default_instance(),
+    pub fn OPJONHEBIBG(&self) -> &super::APOBCJFPJDD::APOBCJFPJDD {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OPJONHEBIBG(ref v)) => v,
+            _ => <super::APOBCJFPJDD::APOBCJFPJDD as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_ILAKOOPEODP(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_OPJONHEBIBG(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_ILAKOOPEODP(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ILAKOOPEODP(..)) => true,
+    pub fn has_OPJONHEBIBG(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OPJONHEBIBG(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_ILAKOOPEODP(&mut self, v: super::AOGMCBOFNMO::AOGMCBOFNMO) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ILAKOOPEODP(v))
+    pub fn set_OPJONHEBIBG(&mut self, v: super::APOBCJFPJDD::APOBCJFPJDD) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OPJONHEBIBG(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_ILAKOOPEODP(&mut self) -> &mut super::AOGMCBOFNMO::AOGMCBOFNMO {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ILAKOOPEODP(_)) = self.BPIHFAJCLOC {
+    pub fn mut_OPJONHEBIBG(&mut self) -> &mut super::APOBCJFPJDD::APOBCJFPJDD {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OPJONHEBIBG(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ILAKOOPEODP(super::AOGMCBOFNMO::AOGMCBOFNMO::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OPJONHEBIBG(super::APOBCJFPJDD::APOBCJFPJDD::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ILAKOOPEODP(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OPJONHEBIBG(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_ILAKOOPEODP(&mut self) -> super::AOGMCBOFNMO::AOGMCBOFNMO {
-        if self.has_ILAKOOPEODP() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ILAKOOPEODP(v)) => v,
+    pub fn take_OPJONHEBIBG(&mut self) -> super::APOBCJFPJDD::APOBCJFPJDD {
+        if self.has_OPJONHEBIBG() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OPJONHEBIBG(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::AOGMCBOFNMO::AOGMCBOFNMO::new()
+            super::APOBCJFPJDD::APOBCJFPJDD::new()
         }
     }
 
-    // .GJEFKOGFNCH FMAJDANLJEB = 2040;
+    // .BJEDJPONMHK CDOEJADALLO = 389;
 
-    pub fn FMAJDANLJEB(&self) -> &super::GJEFKOGFNCH::GJEFKOGFNCH {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FMAJDANLJEB(ref v)) => v,
-            _ => <super::GJEFKOGFNCH::GJEFKOGFNCH as ::protobuf::Message>::default_instance(),
+    pub fn CDOEJADALLO(&self) -> &super::BJEDJPONMHK::BJEDJPONMHK {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CDOEJADALLO(ref v)) => v,
+            _ => <super::BJEDJPONMHK::BJEDJPONMHK as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_FMAJDANLJEB(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_CDOEJADALLO(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_FMAJDANLJEB(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FMAJDANLJEB(..)) => true,
+    pub fn has_CDOEJADALLO(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CDOEJADALLO(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_FMAJDANLJEB(&mut self, v: super::GJEFKOGFNCH::GJEFKOGFNCH) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FMAJDANLJEB(v))
+    pub fn set_CDOEJADALLO(&mut self, v: super::BJEDJPONMHK::BJEDJPONMHK) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CDOEJADALLO(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_FMAJDANLJEB(&mut self) -> &mut super::GJEFKOGFNCH::GJEFKOGFNCH {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FMAJDANLJEB(_)) = self.BPIHFAJCLOC {
+    pub fn mut_CDOEJADALLO(&mut self) -> &mut super::BJEDJPONMHK::BJEDJPONMHK {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CDOEJADALLO(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FMAJDANLJEB(super::GJEFKOGFNCH::GJEFKOGFNCH::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CDOEJADALLO(super::BJEDJPONMHK::BJEDJPONMHK::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FMAJDANLJEB(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CDOEJADALLO(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_FMAJDANLJEB(&mut self) -> super::GJEFKOGFNCH::GJEFKOGFNCH {
-        if self.has_FMAJDANLJEB() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FMAJDANLJEB(v)) => v,
+    pub fn take_CDOEJADALLO(&mut self) -> super::BJEDJPONMHK::BJEDJPONMHK {
+        if self.has_CDOEJADALLO() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CDOEJADALLO(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::GJEFKOGFNCH::GJEFKOGFNCH::new()
+            super::BJEDJPONMHK::BJEDJPONMHK::new()
         }
     }
 
-    // .HBAMALALOGG FBJMOIEEHFF = 1010;
+    // .ANLOMBEKCGI MEAPDJCNPID = 1891;
 
-    pub fn FBJMOIEEHFF(&self) -> &super::HBAMALALOGG::HBAMALALOGG {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FBJMOIEEHFF(ref v)) => v,
-            _ => <super::HBAMALALOGG::HBAMALALOGG as ::protobuf::Message>::default_instance(),
+    pub fn MEAPDJCNPID(&self) -> &super::ANLOMBEKCGI::ANLOMBEKCGI {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MEAPDJCNPID(ref v)) => v,
+            _ => <super::ANLOMBEKCGI::ANLOMBEKCGI as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_FBJMOIEEHFF(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_MEAPDJCNPID(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_FBJMOIEEHFF(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FBJMOIEEHFF(..)) => true,
+    pub fn has_MEAPDJCNPID(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MEAPDJCNPID(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_FBJMOIEEHFF(&mut self, v: super::HBAMALALOGG::HBAMALALOGG) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FBJMOIEEHFF(v))
+    pub fn set_MEAPDJCNPID(&mut self, v: super::ANLOMBEKCGI::ANLOMBEKCGI) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MEAPDJCNPID(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_FBJMOIEEHFF(&mut self) -> &mut super::HBAMALALOGG::HBAMALALOGG {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FBJMOIEEHFF(_)) = self.BPIHFAJCLOC {
+    pub fn mut_MEAPDJCNPID(&mut self) -> &mut super::ANLOMBEKCGI::ANLOMBEKCGI {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MEAPDJCNPID(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FBJMOIEEHFF(super::HBAMALALOGG::HBAMALALOGG::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MEAPDJCNPID(super::ANLOMBEKCGI::ANLOMBEKCGI::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FBJMOIEEHFF(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MEAPDJCNPID(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_FBJMOIEEHFF(&mut self) -> super::HBAMALALOGG::HBAMALALOGG {
-        if self.has_FBJMOIEEHFF() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FBJMOIEEHFF(v)) => v,
+    pub fn take_MEAPDJCNPID(&mut self) -> super::ANLOMBEKCGI::ANLOMBEKCGI {
+        if self.has_MEAPDJCNPID() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MEAPDJCNPID(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::HBAMALALOGG::HBAMALALOGG::new()
+            super::ANLOMBEKCGI::ANLOMBEKCGI::new()
         }
     }
 
-    // .EFDADBFIABN BAKPFNPNMOP = 1975;
+    // .KLEHEHAMKLC HGBKMEHOMHA = 2014;
 
-    pub fn BAKPFNPNMOP(&self) -> &super::EFDADBFIABN::EFDADBFIABN {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BAKPFNPNMOP(ref v)) => v,
-            _ => <super::EFDADBFIABN::EFDADBFIABN as ::protobuf::Message>::default_instance(),
+    pub fn HGBKMEHOMHA(&self) -> &super::KLEHEHAMKLC::KLEHEHAMKLC {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HGBKMEHOMHA(ref v)) => v,
+            _ => <super::KLEHEHAMKLC::KLEHEHAMKLC as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BAKPFNPNMOP(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_HGBKMEHOMHA(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_BAKPFNPNMOP(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BAKPFNPNMOP(..)) => true,
+    pub fn has_HGBKMEHOMHA(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HGBKMEHOMHA(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BAKPFNPNMOP(&mut self, v: super::EFDADBFIABN::EFDADBFIABN) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BAKPFNPNMOP(v))
+    pub fn set_HGBKMEHOMHA(&mut self, v: super::KLEHEHAMKLC::KLEHEHAMKLC) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HGBKMEHOMHA(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BAKPFNPNMOP(&mut self) -> &mut super::EFDADBFIABN::EFDADBFIABN {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BAKPFNPNMOP(_)) = self.BPIHFAJCLOC {
+    pub fn mut_HGBKMEHOMHA(&mut self) -> &mut super::KLEHEHAMKLC::KLEHEHAMKLC {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HGBKMEHOMHA(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BAKPFNPNMOP(super::EFDADBFIABN::EFDADBFIABN::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HGBKMEHOMHA(super::KLEHEHAMKLC::KLEHEHAMKLC::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BAKPFNPNMOP(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HGBKMEHOMHA(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BAKPFNPNMOP(&mut self) -> super::EFDADBFIABN::EFDADBFIABN {
-        if self.has_BAKPFNPNMOP() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BAKPFNPNMOP(v)) => v,
+    pub fn take_HGBKMEHOMHA(&mut self) -> super::KLEHEHAMKLC::KLEHEHAMKLC {
+        if self.has_HGBKMEHOMHA() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HGBKMEHOMHA(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::EFDADBFIABN::EFDADBFIABN::new()
+            super::KLEHEHAMKLC::KLEHEHAMKLC::new()
         }
     }
 
-    // .LGKDBECKMBM IPPOGINBKIE = 1986;
+    // .OGICOEAOEBP JGABOBBHOFJ = 1872;
 
-    pub fn IPPOGINBKIE(&self) -> &super::LGKDBECKMBM::LGKDBECKMBM {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IPPOGINBKIE(ref v)) => v,
-            _ => <super::LGKDBECKMBM::LGKDBECKMBM as ::protobuf::Message>::default_instance(),
+    pub fn JGABOBBHOFJ(&self) -> &super::OGICOEAOEBP::OGICOEAOEBP {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JGABOBBHOFJ(ref v)) => v,
+            _ => <super::OGICOEAOEBP::OGICOEAOEBP as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_IPPOGINBKIE(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_JGABOBBHOFJ(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_IPPOGINBKIE(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IPPOGINBKIE(..)) => true,
+    pub fn has_JGABOBBHOFJ(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JGABOBBHOFJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_IPPOGINBKIE(&mut self, v: super::LGKDBECKMBM::LGKDBECKMBM) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IPPOGINBKIE(v))
+    pub fn set_JGABOBBHOFJ(&mut self, v: super::OGICOEAOEBP::OGICOEAOEBP) {
+        self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JGABOBBHOFJ(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_IPPOGINBKIE(&mut self) -> &mut super::LGKDBECKMBM::LGKDBECKMBM {
-        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IPPOGINBKIE(_)) = self.BPIHFAJCLOC {
+    pub fn mut_JGABOBBHOFJ(&mut self) -> &mut super::OGICOEAOEBP::OGICOEAOEBP {
+        if let ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JGABOBBHOFJ(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IPPOGINBKIE(super::LGKDBECKMBM::LGKDBECKMBM::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JGABOBBHOFJ(super::OGICOEAOEBP::OGICOEAOEBP::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IPPOGINBKIE(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JGABOBBHOFJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_IPPOGINBKIE(&mut self) -> super::LGKDBECKMBM::LGKDBECKMBM {
-        if self.has_IPPOGINBKIE() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IPPOGINBKIE(v)) => v,
+    pub fn take_JGABOBBHOFJ(&mut self) -> super::OGICOEAOEBP::OGICOEAOEBP {
+        if self.has_JGABOBBHOFJ() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JGABOBBHOFJ(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::LGKDBECKMBM::LGKDBECKMBM::new()
+            super::OGICOEAOEBP::OGICOEAOEBP::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(38);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MJPCBEAAABJ",
-            |m: &HandleRogueCommonPendingActionScRsp| { &m.MJPCBEAAABJ },
-            |m: &mut HandleRogueCommonPendingActionScRsp| { &mut m.MJPCBEAAABJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "queue_position",
             |m: &HandleRogueCommonPendingActionScRsp| { &m.queue_position },
@@ -1785,252 +1780,257 @@ impl HandleRogueCommonPendingActionScRsp {
             |m: &HandleRogueCommonPendingActionScRsp| { &m.retcode },
             |m: &mut HandleRogueCommonPendingActionScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NLNOGDMKBOD::NLNOGDMKBOD>(
-            "PKBFJJJOEBD",
-            HandleRogueCommonPendingActionScRsp::has_PKBFJJJOEBD,
-            HandleRogueCommonPendingActionScRsp::PKBFJJJOEBD,
-            HandleRogueCommonPendingActionScRsp::mut_PKBFJJJOEBD,
-            HandleRogueCommonPendingActionScRsp::set_PKBFJJJOEBD,
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BFNEPPCNOOI",
+            |m: &HandleRogueCommonPendingActionScRsp| { &m.BFNEPPCNOOI },
+            |m: &mut HandleRogueCommonPendingActionScRsp| { &mut m.BFNEPPCNOOI },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JPPGLJPCFNC::JPPGLJPCFNC>(
-            "CCGGGDCAIGJ",
-            HandleRogueCommonPendingActionScRsp::has_CCGGGDCAIGJ,
-            HandleRogueCommonPendingActionScRsp::CCGGGDCAIGJ,
-            HandleRogueCommonPendingActionScRsp::mut_CCGGGDCAIGJ,
-            HandleRogueCommonPendingActionScRsp::set_CCGGGDCAIGJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NFBCBCMGIIA::NFBCBCMGIIA>(
+            "OOMKEELHDPA",
+            HandleRogueCommonPendingActionScRsp::has_OOMKEELHDPA,
+            HandleRogueCommonPendingActionScRsp::OOMKEELHDPA,
+            HandleRogueCommonPendingActionScRsp::mut_OOMKEELHDPA,
+            HandleRogueCommonPendingActionScRsp::set_OOMKEELHDPA,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AJGGFCJFKEL::AJGGFCJFKEL>(
-            "BFMONEFDILP",
-            HandleRogueCommonPendingActionScRsp::has_BFMONEFDILP,
-            HandleRogueCommonPendingActionScRsp::BFMONEFDILP,
-            HandleRogueCommonPendingActionScRsp::mut_BFMONEFDILP,
-            HandleRogueCommonPendingActionScRsp::set_BFMONEFDILP,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BJGEONOCHPM::BJGEONOCHPM>(
+            "NCGJCHMOHMG",
+            HandleRogueCommonPendingActionScRsp::has_NCGJCHMOHMG,
+            HandleRogueCommonPendingActionScRsp::NCGJCHMOHMG,
+            HandleRogueCommonPendingActionScRsp::mut_NCGJCHMOHMG,
+            HandleRogueCommonPendingActionScRsp::set_NCGJCHMOHMG,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LJFFAHEHFDJ::LJFFAHEHFDJ>(
-            "KCCIDNOGPPA",
-            HandleRogueCommonPendingActionScRsp::has_KCCIDNOGPPA,
-            HandleRogueCommonPendingActionScRsp::KCCIDNOGPPA,
-            HandleRogueCommonPendingActionScRsp::mut_KCCIDNOGPPA,
-            HandleRogueCommonPendingActionScRsp::set_KCCIDNOGPPA,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LGKKAKEFPIN::LGKKAKEFPIN>(
+            "CEIPBFGMHAP",
+            HandleRogueCommonPendingActionScRsp::has_CEIPBFGMHAP,
+            HandleRogueCommonPendingActionScRsp::CEIPBFGMHAP,
+            HandleRogueCommonPendingActionScRsp::mut_CEIPBFGMHAP,
+            HandleRogueCommonPendingActionScRsp::set_CEIPBFGMHAP,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JNPGMMLHGJH::JNPGMMLHGJH>(
-            "PEMHIBDBCGG",
-            HandleRogueCommonPendingActionScRsp::has_PEMHIBDBCGG,
-            HandleRogueCommonPendingActionScRsp::PEMHIBDBCGG,
-            HandleRogueCommonPendingActionScRsp::mut_PEMHIBDBCGG,
-            HandleRogueCommonPendingActionScRsp::set_PEMHIBDBCGG,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FKOGDINOBDF::FKOGDINOBDF>(
+            "JFHKDEIDMOG",
+            HandleRogueCommonPendingActionScRsp::has_JFHKDEIDMOG,
+            HandleRogueCommonPendingActionScRsp::JFHKDEIDMOG,
+            HandleRogueCommonPendingActionScRsp::mut_JFHKDEIDMOG,
+            HandleRogueCommonPendingActionScRsp::set_JFHKDEIDMOG,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PBCOPDHBMLJ::PBCOPDHBMLJ>(
-            "HJCJCEACDHJ",
-            HandleRogueCommonPendingActionScRsp::has_HJCJCEACDHJ,
-            HandleRogueCommonPendingActionScRsp::HJCJCEACDHJ,
-            HandleRogueCommonPendingActionScRsp::mut_HJCJCEACDHJ,
-            HandleRogueCommonPendingActionScRsp::set_HJCJCEACDHJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NCLHLLIHMFK::NCLHLLIHMFK>(
+            "DJJHHDIGJIG",
+            HandleRogueCommonPendingActionScRsp::has_DJJHHDIGJIG,
+            HandleRogueCommonPendingActionScRsp::DJJHHDIGJIG,
+            HandleRogueCommonPendingActionScRsp::mut_DJJHHDIGJIG,
+            HandleRogueCommonPendingActionScRsp::set_DJJHHDIGJIG,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BLDLMHPFBCM::BLDLMHPFBCM>(
-            "IJOMKIDEOEG",
-            HandleRogueCommonPendingActionScRsp::has_IJOMKIDEOEG,
-            HandleRogueCommonPendingActionScRsp::IJOMKIDEOEG,
-            HandleRogueCommonPendingActionScRsp::mut_IJOMKIDEOEG,
-            HandleRogueCommonPendingActionScRsp::set_IJOMKIDEOEG,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MLDADDMEGGN::MLDADDMEGGN>(
+            "HANHJNOPLJM",
+            HandleRogueCommonPendingActionScRsp::has_HANHJNOPLJM,
+            HandleRogueCommonPendingActionScRsp::HANHJNOPLJM,
+            HandleRogueCommonPendingActionScRsp::mut_HANHJNOPLJM,
+            HandleRogueCommonPendingActionScRsp::set_HANHJNOPLJM,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OHMDKPCOAEC::OHMDKPCOAEC>(
-            "JKDHIJFLHAJ",
-            HandleRogueCommonPendingActionScRsp::has_JKDHIJFLHAJ,
-            HandleRogueCommonPendingActionScRsp::JKDHIJFLHAJ,
-            HandleRogueCommonPendingActionScRsp::mut_JKDHIJFLHAJ,
-            HandleRogueCommonPendingActionScRsp::set_JKDHIJFLHAJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HPIPKICGABB::HPIPKICGABB>(
+            "COBNPFDHMEA",
+            HandleRogueCommonPendingActionScRsp::has_COBNPFDHMEA,
+            HandleRogueCommonPendingActionScRsp::COBNPFDHMEA,
+            HandleRogueCommonPendingActionScRsp::mut_COBNPFDHMEA,
+            HandleRogueCommonPendingActionScRsp::set_COBNPFDHMEA,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JICGMEBFBJF::JICGMEBFBJF>(
-            "ECBDOFCDHKK",
-            HandleRogueCommonPendingActionScRsp::has_ECBDOFCDHKK,
-            HandleRogueCommonPendingActionScRsp::ECBDOFCDHKK,
-            HandleRogueCommonPendingActionScRsp::mut_ECBDOFCDHKK,
-            HandleRogueCommonPendingActionScRsp::set_ECBDOFCDHKK,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JJKIPNMJDKH::JJKIPNMJDKH>(
+            "DKBNKKIGKEB",
+            HandleRogueCommonPendingActionScRsp::has_DKBNKKIGKEB,
+            HandleRogueCommonPendingActionScRsp::DKBNKKIGKEB,
+            HandleRogueCommonPendingActionScRsp::mut_DKBNKKIGKEB,
+            HandleRogueCommonPendingActionScRsp::set_DKBNKKIGKEB,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HGFKGMPPOIM::HGFKGMPPOIM>(
-            "DEIDEEJDJLB",
-            HandleRogueCommonPendingActionScRsp::has_DEIDEEJDJLB,
-            HandleRogueCommonPendingActionScRsp::DEIDEEJDJLB,
-            HandleRogueCommonPendingActionScRsp::mut_DEIDEEJDJLB,
-            HandleRogueCommonPendingActionScRsp::set_DEIDEEJDJLB,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BIPMEIGLILE::BIPMEIGLILE>(
+            "LGACHDMGEAI",
+            HandleRogueCommonPendingActionScRsp::has_LGACHDMGEAI,
+            HandleRogueCommonPendingActionScRsp::LGACHDMGEAI,
+            HandleRogueCommonPendingActionScRsp::mut_LGACHDMGEAI,
+            HandleRogueCommonPendingActionScRsp::set_LGACHDMGEAI,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MMHMPNEJFOP::MMHMPNEJFOP>(
-            "LKBHNGLPEGP",
-            HandleRogueCommonPendingActionScRsp::has_LKBHNGLPEGP,
-            HandleRogueCommonPendingActionScRsp::LKBHNGLPEGP,
-            HandleRogueCommonPendingActionScRsp::mut_LKBHNGLPEGP,
-            HandleRogueCommonPendingActionScRsp::set_LKBHNGLPEGP,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EBLOKOMNNNN::EBLOKOMNNNN>(
+            "HEGECCJIFBJ",
+            HandleRogueCommonPendingActionScRsp::has_HEGECCJIFBJ,
+            HandleRogueCommonPendingActionScRsp::HEGECCJIFBJ,
+            HandleRogueCommonPendingActionScRsp::mut_HEGECCJIFBJ,
+            HandleRogueCommonPendingActionScRsp::set_HEGECCJIFBJ,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JAMNDEJMILO::JAMNDEJMILO>(
-            "OFEECJDAHLB",
-            HandleRogueCommonPendingActionScRsp::has_OFEECJDAHLB,
-            HandleRogueCommonPendingActionScRsp::OFEECJDAHLB,
-            HandleRogueCommonPendingActionScRsp::mut_OFEECJDAHLB,
-            HandleRogueCommonPendingActionScRsp::set_OFEECJDAHLB,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CBLBFGKFMLC::CBLBFGKFMLC>(
+            "IMKIPDCNBHH",
+            HandleRogueCommonPendingActionScRsp::has_IMKIPDCNBHH,
+            HandleRogueCommonPendingActionScRsp::IMKIPDCNBHH,
+            HandleRogueCommonPendingActionScRsp::mut_IMKIPDCNBHH,
+            HandleRogueCommonPendingActionScRsp::set_IMKIPDCNBHH,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MBHMOJNPHEJ::MBHMOJNPHEJ>(
-            "BOJPHPFIPNK",
-            HandleRogueCommonPendingActionScRsp::has_BOJPHPFIPNK,
-            HandleRogueCommonPendingActionScRsp::BOJPHPFIPNK,
-            HandleRogueCommonPendingActionScRsp::mut_BOJPHPFIPNK,
-            HandleRogueCommonPendingActionScRsp::set_BOJPHPFIPNK,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BALOFADGOKE::BALOFADGOKE>(
+            "ENMKMKPBGBL",
+            HandleRogueCommonPendingActionScRsp::has_ENMKMKPBGBL,
+            HandleRogueCommonPendingActionScRsp::ENMKMKPBGBL,
+            HandleRogueCommonPendingActionScRsp::mut_ENMKMKPBGBL,
+            HandleRogueCommonPendingActionScRsp::set_ENMKMKPBGBL,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IKEBEPBJHCE::IKEBEPBJHCE>(
-            "JLIINFBLMKI",
-            HandleRogueCommonPendingActionScRsp::has_JLIINFBLMKI,
-            HandleRogueCommonPendingActionScRsp::JLIINFBLMKI,
-            HandleRogueCommonPendingActionScRsp::mut_JLIINFBLMKI,
-            HandleRogueCommonPendingActionScRsp::set_JLIINFBLMKI,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LNDBCDKMMKN::LNDBCDKMMKN>(
+            "ABKEDNGNFEO",
+            HandleRogueCommonPendingActionScRsp::has_ABKEDNGNFEO,
+            HandleRogueCommonPendingActionScRsp::ABKEDNGNFEO,
+            HandleRogueCommonPendingActionScRsp::mut_ABKEDNGNFEO,
+            HandleRogueCommonPendingActionScRsp::set_ABKEDNGNFEO,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IADIBNIPHBO::IADIBNIPHBO>(
-            "DDAKCDJJOPI",
-            HandleRogueCommonPendingActionScRsp::has_DDAKCDJJOPI,
-            HandleRogueCommonPendingActionScRsp::DDAKCDJJOPI,
-            HandleRogueCommonPendingActionScRsp::mut_DDAKCDJJOPI,
-            HandleRogueCommonPendingActionScRsp::set_DDAKCDJJOPI,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KGHLOMJHDPE::KGHLOMJHDPE>(
+            "IMLHDMCPHOB",
+            HandleRogueCommonPendingActionScRsp::has_IMLHDMCPHOB,
+            HandleRogueCommonPendingActionScRsp::IMLHDMCPHOB,
+            HandleRogueCommonPendingActionScRsp::mut_IMLHDMCPHOB,
+            HandleRogueCommonPendingActionScRsp::set_IMLHDMCPHOB,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GACNMNIKJBF::GACNMNIKJBF>(
-            "IJHKIDFCAHO",
-            HandleRogueCommonPendingActionScRsp::has_IJHKIDFCAHO,
-            HandleRogueCommonPendingActionScRsp::IJHKIDFCAHO,
-            HandleRogueCommonPendingActionScRsp::mut_IJHKIDFCAHO,
-            HandleRogueCommonPendingActionScRsp::set_IJHKIDFCAHO,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LAKMNABKMLO::LAKMNABKMLO>(
+            "GJDKCHAAEDM",
+            HandleRogueCommonPendingActionScRsp::has_GJDKCHAAEDM,
+            HandleRogueCommonPendingActionScRsp::GJDKCHAAEDM,
+            HandleRogueCommonPendingActionScRsp::mut_GJDKCHAAEDM,
+            HandleRogueCommonPendingActionScRsp::set_GJDKCHAAEDM,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FOHHEPOECML::FOHHEPOECML>(
-            "KMALKBCNJHK",
-            HandleRogueCommonPendingActionScRsp::has_KMALKBCNJHK,
-            HandleRogueCommonPendingActionScRsp::KMALKBCNJHK,
-            HandleRogueCommonPendingActionScRsp::mut_KMALKBCNJHK,
-            HandleRogueCommonPendingActionScRsp::set_KMALKBCNJHK,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OKFPPPBNJNH::OKFPPPBNJNH>(
+            "LDOFNPGNJJC",
+            HandleRogueCommonPendingActionScRsp::has_LDOFNPGNJJC,
+            HandleRogueCommonPendingActionScRsp::LDOFNPGNJJC,
+            HandleRogueCommonPendingActionScRsp::mut_LDOFNPGNJJC,
+            HandleRogueCommonPendingActionScRsp::set_LDOFNPGNJJC,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DIKAEDCJHFM::DIKAEDCJHFM>(
-            "OPKPJCIDFIC",
-            HandleRogueCommonPendingActionScRsp::has_OPKPJCIDFIC,
-            HandleRogueCommonPendingActionScRsp::OPKPJCIDFIC,
-            HandleRogueCommonPendingActionScRsp::mut_OPKPJCIDFIC,
-            HandleRogueCommonPendingActionScRsp::set_OPKPJCIDFIC,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PCMBLMDJPJJ::PCMBLMDJPJJ>(
+            "NOJELDBILBF",
+            HandleRogueCommonPendingActionScRsp::has_NOJELDBILBF,
+            HandleRogueCommonPendingActionScRsp::NOJELDBILBF,
+            HandleRogueCommonPendingActionScRsp::mut_NOJELDBILBF,
+            HandleRogueCommonPendingActionScRsp::set_NOJELDBILBF,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HAHKCDIPGJH::HAHKCDIPGJH>(
-            "NKMIGFDPFNJ",
-            HandleRogueCommonPendingActionScRsp::has_NKMIGFDPFNJ,
-            HandleRogueCommonPendingActionScRsp::NKMIGFDPFNJ,
-            HandleRogueCommonPendingActionScRsp::mut_NKMIGFDPFNJ,
-            HandleRogueCommonPendingActionScRsp::set_NKMIGFDPFNJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PADDBFAGJNE::PADDBFAGJNE>(
+            "NMFCCMJLCII",
+            HandleRogueCommonPendingActionScRsp::has_NMFCCMJLCII,
+            HandleRogueCommonPendingActionScRsp::NMFCCMJLCII,
+            HandleRogueCommonPendingActionScRsp::mut_NMFCCMJLCII,
+            HandleRogueCommonPendingActionScRsp::set_NMFCCMJLCII,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GEDCCGBPOFL::GEDCCGBPOFL>(
-            "KHNAKEMGNJM",
-            HandleRogueCommonPendingActionScRsp::has_KHNAKEMGNJM,
-            HandleRogueCommonPendingActionScRsp::KHNAKEMGNJM,
-            HandleRogueCommonPendingActionScRsp::mut_KHNAKEMGNJM,
-            HandleRogueCommonPendingActionScRsp::set_KHNAKEMGNJM,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PGAAIDKNIOA::PGAAIDKNIOA>(
+            "GCGABKJGBAL",
+            HandleRogueCommonPendingActionScRsp::has_GCGABKJGBAL,
+            HandleRogueCommonPendingActionScRsp::GCGABKJGBAL,
+            HandleRogueCommonPendingActionScRsp::mut_GCGABKJGBAL,
+            HandleRogueCommonPendingActionScRsp::set_GCGABKJGBAL,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MPPDGFLMDEB::MPPDGFLMDEB>(
-            "BBEPLGMEJGN",
-            HandleRogueCommonPendingActionScRsp::has_BBEPLGMEJGN,
-            HandleRogueCommonPendingActionScRsp::BBEPLGMEJGN,
-            HandleRogueCommonPendingActionScRsp::mut_BBEPLGMEJGN,
-            HandleRogueCommonPendingActionScRsp::set_BBEPLGMEJGN,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::FFBEJCNPAMN::FFBEJCNPAMN>(
+            "APNNHAGDPHM",
+            HandleRogueCommonPendingActionScRsp::has_APNNHAGDPHM,
+            HandleRogueCommonPendingActionScRsp::APNNHAGDPHM,
+            HandleRogueCommonPendingActionScRsp::mut_APNNHAGDPHM,
+            HandleRogueCommonPendingActionScRsp::set_APNNHAGDPHM,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GCFNNAKLMPD::GCFNNAKLMPD>(
-            "CEPBLFDKFFJ",
-            HandleRogueCommonPendingActionScRsp::has_CEPBLFDKFFJ,
-            HandleRogueCommonPendingActionScRsp::CEPBLFDKFFJ,
-            HandleRogueCommonPendingActionScRsp::mut_CEPBLFDKFFJ,
-            HandleRogueCommonPendingActionScRsp::set_CEPBLFDKFFJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KHOKOACABEL::KHOKOACABEL>(
+            "MDJCMEOLAHF",
+            HandleRogueCommonPendingActionScRsp::has_MDJCMEOLAHF,
+            HandleRogueCommonPendingActionScRsp::MDJCMEOLAHF,
+            HandleRogueCommonPendingActionScRsp::mut_MDJCMEOLAHF,
+            HandleRogueCommonPendingActionScRsp::set_MDJCMEOLAHF,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NFPOEAEPHIJ::NFPOEAEPHIJ>(
-            "MCOPMAMMAKP",
-            HandleRogueCommonPendingActionScRsp::has_MCOPMAMMAKP,
-            HandleRogueCommonPendingActionScRsp::MCOPMAMMAKP,
-            HandleRogueCommonPendingActionScRsp::mut_MCOPMAMMAKP,
-            HandleRogueCommonPendingActionScRsp::set_MCOPMAMMAKP,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MKGFFKEGMNP::MKGFFKEGMNP>(
+            "FDGIFAFOHLN",
+            HandleRogueCommonPendingActionScRsp::has_FDGIFAFOHLN,
+            HandleRogueCommonPendingActionScRsp::FDGIFAFOHLN,
+            HandleRogueCommonPendingActionScRsp::mut_FDGIFAFOHLN,
+            HandleRogueCommonPendingActionScRsp::set_FDGIFAFOHLN,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IOGMLLBFDPG::IOGMLLBFDPG>(
-            "BBEHJAJPHBK",
-            HandleRogueCommonPendingActionScRsp::has_BBEHJAJPHBK,
-            HandleRogueCommonPendingActionScRsp::BBEHJAJPHBK,
-            HandleRogueCommonPendingActionScRsp::mut_BBEHJAJPHBK,
-            HandleRogueCommonPendingActionScRsp::set_BBEHJAJPHBK,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AJEDKCCAKBE::AJEDKCCAKBE>(
+            "EMKGAEBINMB",
+            HandleRogueCommonPendingActionScRsp::has_EMKGAEBINMB,
+            HandleRogueCommonPendingActionScRsp::EMKGAEBINMB,
+            HandleRogueCommonPendingActionScRsp::mut_EMKGAEBINMB,
+            HandleRogueCommonPendingActionScRsp::set_EMKGAEBINMB,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CFIKJKGABEI::CFIKJKGABEI>(
-            "CMHGGDOMAAK",
-            HandleRogueCommonPendingActionScRsp::has_CMHGGDOMAAK,
-            HandleRogueCommonPendingActionScRsp::CMHGGDOMAAK,
-            HandleRogueCommonPendingActionScRsp::mut_CMHGGDOMAAK,
-            HandleRogueCommonPendingActionScRsp::set_CMHGGDOMAAK,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GKPCMMNOGBF::GKPCMMNOGBF>(
+            "PAGPPMJDMFA",
+            HandleRogueCommonPendingActionScRsp::has_PAGPPMJDMFA,
+            HandleRogueCommonPendingActionScRsp::PAGPPMJDMFA,
+            HandleRogueCommonPendingActionScRsp::mut_PAGPPMJDMFA,
+            HandleRogueCommonPendingActionScRsp::set_PAGPPMJDMFA,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MAGNIAAPANO::MAGNIAAPANO>(
-            "DOBFKCAGMJB",
-            HandleRogueCommonPendingActionScRsp::has_DOBFKCAGMJB,
-            HandleRogueCommonPendingActionScRsp::DOBFKCAGMJB,
-            HandleRogueCommonPendingActionScRsp::mut_DOBFKCAGMJB,
-            HandleRogueCommonPendingActionScRsp::set_DOBFKCAGMJB,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OLHGNECAEEL::OLHGNECAEEL>(
+            "KBJKMBDCPJO",
+            HandleRogueCommonPendingActionScRsp::has_KBJKMBDCPJO,
+            HandleRogueCommonPendingActionScRsp::KBJKMBDCPJO,
+            HandleRogueCommonPendingActionScRsp::mut_KBJKMBDCPJO,
+            HandleRogueCommonPendingActionScRsp::set_KBJKMBDCPJO,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MAGNIAAPANO::MAGNIAAPANO>(
-            "KMFILFDMILI",
-            HandleRogueCommonPendingActionScRsp::has_KMFILFDMILI,
-            HandleRogueCommonPendingActionScRsp::KMFILFDMILI,
-            HandleRogueCommonPendingActionScRsp::mut_KMFILFDMILI,
-            HandleRogueCommonPendingActionScRsp::set_KMFILFDMILI,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NAJIHIPCGMD::NAJIHIPCGMD>(
+            "PEEFOFKDEMJ",
+            HandleRogueCommonPendingActionScRsp::has_PEEFOFKDEMJ,
+            HandleRogueCommonPendingActionScRsp::PEEFOFKDEMJ,
+            HandleRogueCommonPendingActionScRsp::mut_PEEFOFKDEMJ,
+            HandleRogueCommonPendingActionScRsp::set_PEEFOFKDEMJ,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JDKNKIBFHAF::JDKNKIBFHAF>(
-            "LAJICPMLKCA",
-            HandleRogueCommonPendingActionScRsp::has_LAJICPMLKCA,
-            HandleRogueCommonPendingActionScRsp::LAJICPMLKCA,
-            HandleRogueCommonPendingActionScRsp::mut_LAJICPMLKCA,
-            HandleRogueCommonPendingActionScRsp::set_LAJICPMLKCA,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NAJIHIPCGMD::NAJIHIPCGMD>(
+            "HDNMNAFAKKC",
+            HandleRogueCommonPendingActionScRsp::has_HDNMNAFAKKC,
+            HandleRogueCommonPendingActionScRsp::HDNMNAFAKKC,
+            HandleRogueCommonPendingActionScRsp::mut_HDNMNAFAKKC,
+            HandleRogueCommonPendingActionScRsp::set_HDNMNAFAKKC,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LIDKGPCEDHE::LIDKGPCEDHE>(
-            "CICIDMFLIHL",
-            HandleRogueCommonPendingActionScRsp::has_CICIDMFLIHL,
-            HandleRogueCommonPendingActionScRsp::CICIDMFLIHL,
-            HandleRogueCommonPendingActionScRsp::mut_CICIDMFLIHL,
-            HandleRogueCommonPendingActionScRsp::set_CICIDMFLIHL,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ELJDPDFMLPM::ELJDPDFMLPM>(
+            "PKBOEKFFMKM",
+            HandleRogueCommonPendingActionScRsp::has_PKBOEKFFMKM,
+            HandleRogueCommonPendingActionScRsp::PKBOEKFFMKM,
+            HandleRogueCommonPendingActionScRsp::mut_PKBOEKFFMKM,
+            HandleRogueCommonPendingActionScRsp::set_PKBOEKFFMKM,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DPHIINCNKEI::DPHIINCNKEI>(
-            "FGAEOEEOIFD",
-            HandleRogueCommonPendingActionScRsp::has_FGAEOEEOIFD,
-            HandleRogueCommonPendingActionScRsp::FGAEOEEOIFD,
-            HandleRogueCommonPendingActionScRsp::mut_FGAEOEEOIFD,
-            HandleRogueCommonPendingActionScRsp::set_FGAEOEEOIFD,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MJJHMIKCHIA::MJJHMIKCHIA>(
+            "KMJHICGMONF",
+            HandleRogueCommonPendingActionScRsp::has_KMJHICGMONF,
+            HandleRogueCommonPendingActionScRsp::KMJHICGMONF,
+            HandleRogueCommonPendingActionScRsp::mut_KMJHICGMONF,
+            HandleRogueCommonPendingActionScRsp::set_KMJHICGMONF,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::AOGMCBOFNMO::AOGMCBOFNMO>(
-            "ILAKOOPEODP",
-            HandleRogueCommonPendingActionScRsp::has_ILAKOOPEODP,
-            HandleRogueCommonPendingActionScRsp::ILAKOOPEODP,
-            HandleRogueCommonPendingActionScRsp::mut_ILAKOOPEODP,
-            HandleRogueCommonPendingActionScRsp::set_ILAKOOPEODP,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OBNEOHHDAIP::OBNEOHHDAIP>(
+            "FPJABECNFNA",
+            HandleRogueCommonPendingActionScRsp::has_FPJABECNFNA,
+            HandleRogueCommonPendingActionScRsp::FPJABECNFNA,
+            HandleRogueCommonPendingActionScRsp::mut_FPJABECNFNA,
+            HandleRogueCommonPendingActionScRsp::set_FPJABECNFNA,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GJEFKOGFNCH::GJEFKOGFNCH>(
-            "FMAJDANLJEB",
-            HandleRogueCommonPendingActionScRsp::has_FMAJDANLJEB,
-            HandleRogueCommonPendingActionScRsp::FMAJDANLJEB,
-            HandleRogueCommonPendingActionScRsp::mut_FMAJDANLJEB,
-            HandleRogueCommonPendingActionScRsp::set_FMAJDANLJEB,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::APOBCJFPJDD::APOBCJFPJDD>(
+            "OPJONHEBIBG",
+            HandleRogueCommonPendingActionScRsp::has_OPJONHEBIBG,
+            HandleRogueCommonPendingActionScRsp::OPJONHEBIBG,
+            HandleRogueCommonPendingActionScRsp::mut_OPJONHEBIBG,
+            HandleRogueCommonPendingActionScRsp::set_OPJONHEBIBG,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HBAMALALOGG::HBAMALALOGG>(
-            "FBJMOIEEHFF",
-            HandleRogueCommonPendingActionScRsp::has_FBJMOIEEHFF,
-            HandleRogueCommonPendingActionScRsp::FBJMOIEEHFF,
-            HandleRogueCommonPendingActionScRsp::mut_FBJMOIEEHFF,
-            HandleRogueCommonPendingActionScRsp::set_FBJMOIEEHFF,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::BJEDJPONMHK::BJEDJPONMHK>(
+            "CDOEJADALLO",
+            HandleRogueCommonPendingActionScRsp::has_CDOEJADALLO,
+            HandleRogueCommonPendingActionScRsp::CDOEJADALLO,
+            HandleRogueCommonPendingActionScRsp::mut_CDOEJADALLO,
+            HandleRogueCommonPendingActionScRsp::set_CDOEJADALLO,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EFDADBFIABN::EFDADBFIABN>(
-            "BAKPFNPNMOP",
-            HandleRogueCommonPendingActionScRsp::has_BAKPFNPNMOP,
-            HandleRogueCommonPendingActionScRsp::BAKPFNPNMOP,
-            HandleRogueCommonPendingActionScRsp::mut_BAKPFNPNMOP,
-            HandleRogueCommonPendingActionScRsp::set_BAKPFNPNMOP,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ANLOMBEKCGI::ANLOMBEKCGI>(
+            "MEAPDJCNPID",
+            HandleRogueCommonPendingActionScRsp::has_MEAPDJCNPID,
+            HandleRogueCommonPendingActionScRsp::MEAPDJCNPID,
+            HandleRogueCommonPendingActionScRsp::mut_MEAPDJCNPID,
+            HandleRogueCommonPendingActionScRsp::set_MEAPDJCNPID,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::LGKDBECKMBM::LGKDBECKMBM>(
-            "IPPOGINBKIE",
-            HandleRogueCommonPendingActionScRsp::has_IPPOGINBKIE,
-            HandleRogueCommonPendingActionScRsp::IPPOGINBKIE,
-            HandleRogueCommonPendingActionScRsp::mut_IPPOGINBKIE,
-            HandleRogueCommonPendingActionScRsp::set_IPPOGINBKIE,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KLEHEHAMKLC::KLEHEHAMKLC>(
+            "HGBKMEHOMHA",
+            HandleRogueCommonPendingActionScRsp::has_HGBKMEHOMHA,
+            HandleRogueCommonPendingActionScRsp::HGBKMEHOMHA,
+            HandleRogueCommonPendingActionScRsp::mut_HGBKMEHOMHA,
+            HandleRogueCommonPendingActionScRsp::set_HGBKMEHOMHA,
         ));
-        oneofs.push(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::generated_oneof_descriptor_data());
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OGICOEAOEBP::OGICOEAOEBP>(
+            "JGABOBBHOFJ",
+            HandleRogueCommonPendingActionScRsp::has_JGABOBBHOFJ,
+            HandleRogueCommonPendingActionScRsp::JGABOBBHOFJ,
+            HandleRogueCommonPendingActionScRsp::mut_JGABOBBHOFJ,
+            HandleRogueCommonPendingActionScRsp::set_JGABOBBHOFJ,
+        ));
+        oneofs.push(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HandleRogueCommonPendingActionScRsp>(
             "HandleRogueCommonPendingActionScRsp",
             fields,
@@ -2049,119 +2049,119 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.MJPCBEAAABJ = is.read_uint32()?;
-                },
-                104 => {
+                40 => {
                     self.queue_position = is.read_uint32()?;
                 },
-                112 => {
+                8 => {
                     self.retcode = is.read_uint32()?;
                 },
-                6882 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PKBFJJJOEBD(is.read_message()?));
+                16 => {
+                    self.BFNEPPCNOOI = is.read_uint32()?;
                 },
-                14002 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CCGGGDCAIGJ(is.read_message()?));
+                11354 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OOMKEELHDPA(is.read_message()?));
                 },
-                3482 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BFMONEFDILP(is.read_message()?));
+                13450 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NCGJCHMOHMG(is.read_message()?));
                 },
-                2730 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KCCIDNOGPPA(is.read_message()?));
+                698 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CEIPBFGMHAP(is.read_message()?));
                 },
-                506 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PEMHIBDBCGG(is.read_message()?));
+                9978 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JFHKDEIDMOG(is.read_message()?));
                 },
-                11794 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::HJCJCEACDHJ(is.read_message()?));
+                11090 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DJJHHDIGJIG(is.read_message()?));
                 },
-                1466 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJOMKIDEOEG(is.read_message()?));
+                9402 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HANHJNOPLJM(is.read_message()?));
                 },
-                378 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JKDHIJFLHAJ(is.read_message()?));
+                4186 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::COBNPFDHMEA(is.read_message()?));
                 },
-                290 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ECBDOFCDHKK(is.read_message()?));
+                1290 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DKBNKKIGKEB(is.read_message()?));
                 },
-                8682 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DEIDEEJDJLB(is.read_message()?));
+                362 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LGACHDMGEAI(is.read_message()?));
                 },
-                994 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LKBHNGLPEGP(is.read_message()?));
+                12818 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HEGECCJIFBJ(is.read_message()?));
                 },
-                14802 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OFEECJDAHLB(is.read_message()?));
+                7658 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMKIPDCNBHH(is.read_message()?));
                 },
-                7706 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BOJPHPFIPNK(is.read_message()?));
+                6050 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ENMKMKPBGBL(is.read_message()?));
                 },
-                11506 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JLIINFBLMKI(is.read_message()?));
+                706 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ABKEDNGNFEO(is.read_message()?));
                 },
-                15426 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DDAKCDJJOPI(is.read_message()?));
+                1778 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMLHDMCPHOB(is.read_message()?));
                 },
-                5834 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJHKIDFCAHO(is.read_message()?));
+                6530 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GJDKCHAAEDM(is.read_message()?));
                 },
-                8138 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMALKBCNJHK(is.read_message()?));
+                8938 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LDOFNPGNJJC(is.read_message()?));
                 },
-                8266 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OPKPJCIDFIC(is.read_message()?));
+                1010 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NOJELDBILBF(is.read_message()?));
                 },
-                12882 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::NKMIGFDPFNJ(is.read_message()?));
+                4530 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NMFCCMJLCII(is.read_message()?));
                 },
-                9714 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KHNAKEMGNJM(is.read_message()?));
+                2074 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GCGABKJGBAL(is.read_message()?));
                 },
-                9650 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEPLGMEJGN(is.read_message()?));
+                4562 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::APNNHAGDPHM(is.read_message()?));
                 },
-                9658 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CEPBLFDKFFJ(is.read_message()?));
+                13042 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MDJCMEOLAHF(is.read_message()?));
                 },
-                6290 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::MCOPMAMMAKP(is.read_message()?));
+                7890 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FDGIFAFOHLN(is.read_message()?));
                 },
-                11034 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEHJAJPHBK(is.read_message()?));
+                2898 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::EMKGAEBINMB(is.read_message()?));
                 },
-                3266 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CMHGGDOMAAK(is.read_message()?));
+                11162 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PAGPPMJDMFA(is.read_message()?));
                 },
-                9258 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DOBFKCAGMJB(is.read_message()?));
+                14834 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KBJKMBDCPJO(is.read_message()?));
                 },
-                4466 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMFILFDMILI(is.read_message()?));
+                14202 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PEEFOFKDEMJ(is.read_message()?));
                 },
-                9602 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LAJICPMLKCA(is.read_message()?));
+                466 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HDNMNAFAKKC(is.read_message()?));
                 },
-                6186 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CICIDMFLIHL(is.read_message()?));
+                4266 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PKBOEKFFMKM(is.read_message()?));
                 },
-                1034 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FGAEOEEOIFD(is.read_message()?));
+                8186 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KMJHICGMONF(is.read_message()?));
                 },
-                9106 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ILAKOOPEODP(is.read_message()?));
+                9986 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FPJABECNFNA(is.read_message()?));
                 },
-                16322 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FMAJDANLJEB(is.read_message()?));
+                7338 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OPJONHEBIBG(is.read_message()?));
                 },
-                8082 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FBJMOIEEHFF(is.read_message()?));
+                3114 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CDOEJADALLO(is.read_message()?));
                 },
-                15802 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BAKPFNPNMOP(is.read_message()?));
+                15130 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MEAPDJCNPID(is.read_message()?));
                 },
-                15890 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IPPOGINBKIE(is.read_message()?));
+                16114 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HGBKMEHOMHA(is.read_message()?));
+                },
+                14978 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JGABOBBHOFJ(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -2175,154 +2175,154 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MJPCBEAAABJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.MJPCBEAAABJ);
-        }
         if self.queue_position != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.queue_position);
+            my_size += ::protobuf::rt::uint32_size(5, self.queue_position);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
-        if let ::std::option::Option::Some(ref v) = self.BPIHFAJCLOC {
+        if self.BFNEPPCNOOI != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.BFNEPPCNOOI);
+        }
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PKBFJJJOEBD(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OOMKEELHDPA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CCGGGDCAIGJ(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NCGJCHMOHMG(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BFMONEFDILP(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CEIPBFGMHAP(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KCCIDNOGPPA(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JFHKDEIDMOG(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PEMHIBDBCGG(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DJJHHDIGJIG(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::HJCJCEACDHJ(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HANHJNOPLJM(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJOMKIDEOEG(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::COBNPFDHMEA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JKDHIJFLHAJ(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DKBNKKIGKEB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ECBDOFCDHKK(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LGACHDMGEAI(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DEIDEEJDJLB(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HEGECCJIFBJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LKBHNGLPEGP(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMKIPDCNBHH(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OFEECJDAHLB(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ENMKMKPBGBL(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BOJPHPFIPNK(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ABKEDNGNFEO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JLIINFBLMKI(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMLHDMCPHOB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DDAKCDJJOPI(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GJDKCHAAEDM(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJHKIDFCAHO(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LDOFNPGNJJC(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMALKBCNJHK(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NOJELDBILBF(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OPKPJCIDFIC(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NMFCCMJLCII(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::NKMIGFDPFNJ(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GCGABKJGBAL(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KHNAKEMGNJM(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::APNNHAGDPHM(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEPLGMEJGN(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MDJCMEOLAHF(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CEPBLFDKFFJ(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FDGIFAFOHLN(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::MCOPMAMMAKP(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::EMKGAEBINMB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEHJAJPHBK(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PAGPPMJDMFA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CMHGGDOMAAK(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KBJKMBDCPJO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DOBFKCAGMJB(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PEEFOFKDEMJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMFILFDMILI(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HDNMNAFAKKC(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LAJICPMLKCA(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PKBOEKFFMKM(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CICIDMFLIHL(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KMJHICGMONF(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FGAEOEEOIFD(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FPJABECNFNA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ILAKOOPEODP(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OPJONHEBIBG(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FMAJDANLJEB(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CDOEJADALLO(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FBJMOIEEHFF(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MEAPDJCNPID(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BAKPFNPNMOP(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HGBKMEHOMHA(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IPPOGINBKIE(ref v) => {
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JGABOBBHOFJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -2334,121 +2334,121 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MJPCBEAAABJ != 0 {
-            os.write_uint32(2, self.MJPCBEAAABJ)?;
-        }
         if self.queue_position != 0 {
-            os.write_uint32(13, self.queue_position)?;
+            os.write_uint32(5, self.queue_position)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(1, self.retcode)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.BPIHFAJCLOC {
+        if self.BFNEPPCNOOI != 0 {
+            os.write_uint32(2, self.BFNEPPCNOOI)?;
+        }
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PKBFJJJOEBD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(860, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OOMKEELHDPA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1419, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CCGGGDCAIGJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1750, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NCGJCHMOHMG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1681, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BFMONEFDILP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(435, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CEIPBFGMHAP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(87, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KCCIDNOGPPA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(341, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JFHKDEIDMOG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1247, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::PEMHIBDBCGG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(63, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DJJHHDIGJIG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1386, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::HJCJCEACDHJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1474, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HANHJNOPLJM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1175, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJOMKIDEOEG(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(183, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::COBNPFDHMEA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(523, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JKDHIJFLHAJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(47, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::DKBNKKIGKEB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(161, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ECBDOFCDHKK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(36, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LGACHDMGEAI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(45, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DEIDEEJDJLB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1085, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HEGECCJIFBJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1602, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LKBHNGLPEGP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(124, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMKIPDCNBHH(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(957, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OFEECJDAHLB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1850, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ENMKMKPBGBL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(756, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BOJPHPFIPNK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(963, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::ABKEDNGNFEO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(88, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::JLIINFBLMKI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1438, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::IMLHDMCPHOB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(222, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DDAKCDJJOPI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1928, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GJDKCHAAEDM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(816, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IJHKIDFCAHO(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(729, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::LDOFNPGNJJC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1117, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMALKBCNJHK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1017, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NOJELDBILBF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(126, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::OPKPJCIDFIC(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1033, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::NMFCCMJLCII(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(566, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::NKMIGFDPFNJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1610, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::GCGABKJGBAL(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(259, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KHNAKEMGNJM(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1214, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::APNNHAGDPHM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(570, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEPLGMEJGN(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1206, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MDJCMEOLAHF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1630, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CEPBLFDKFFJ(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1207, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FDGIFAFOHLN(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(986, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::MCOPMAMMAKP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(786, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::EMKGAEBINMB(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(362, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BBEHJAJPHBK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1379, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PAGPPMJDMFA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1395, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CMHGGDOMAAK(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(408, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KBJKMBDCPJO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1854, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::DOBFKCAGMJB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1157, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PEEFOFKDEMJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1775, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::KMFILFDMILI(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(558, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HDNMNAFAKKC(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(58, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::LAJICPMLKCA(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1200, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::PKBOEKFFMKM(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(533, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::CICIDMFLIHL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(773, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::KMJHICGMONF(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1023, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FGAEOEEOIFD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(129, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::FPJABECNFNA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1248, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::ILAKOOPEODP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1138, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::OPJONHEBIBG(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(917, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FMAJDANLJEB(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(2040, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::CDOEJADALLO(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(389, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::FBJMOIEEHFF(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1010, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::MEAPDJCNPID(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1891, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::BAKPFNPNMOP(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1975, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::HGBKMEHOMHA(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(2014, v, os)?;
                 },
-                &handle_rogue_common_pending_action_sc_rsp::BPIHFAJCLOC::IPPOGINBKIE(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(1986, v, os)?;
+                &handle_rogue_common_pending_action_sc_rsp::KKNBOACNCON::JGABOBBHOFJ(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(1872, v, os)?;
                 },
             };
         }
@@ -2469,53 +2469,53 @@ impl ::protobuf::Message for HandleRogueCommonPendingActionScRsp {
     }
 
     fn clear(&mut self) {
-        self.MJPCBEAAABJ = 0;
         self.queue_position = 0;
         self.retcode = 0;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+        self.BFNEPPCNOOI = 0;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HandleRogueCommonPendingActionScRsp {
         static instance: HandleRogueCommonPendingActionScRsp = HandleRogueCommonPendingActionScRsp {
-            MJPCBEAAABJ: 0,
             queue_position: 0,
             retcode: 0,
-            BPIHFAJCLOC: ::std::option::Option::None,
+            BFNEPPCNOOI: 0,
+            KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -2544,155 +2544,155 @@ pub mod handle_rogue_common_pending_action_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:HandleRogueCommonPendingActionScRsp.BPIHFAJCLOC)
-    pub enum BPIHFAJCLOC {
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.PKBFJJJOEBD)
-        PKBFJJJOEBD(super::super::NLNOGDMKBOD::NLNOGDMKBOD),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.CCGGGDCAIGJ)
-        CCGGGDCAIGJ(super::super::JPPGLJPCFNC::JPPGLJPCFNC),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.BFMONEFDILP)
-        BFMONEFDILP(super::super::AJGGFCJFKEL::AJGGFCJFKEL),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.KCCIDNOGPPA)
-        KCCIDNOGPPA(super::super::LJFFAHEHFDJ::LJFFAHEHFDJ),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.PEMHIBDBCGG)
-        PEMHIBDBCGG(super::super::JNPGMMLHGJH::JNPGMMLHGJH),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.HJCJCEACDHJ)
-        HJCJCEACDHJ(super::super::PBCOPDHBMLJ::PBCOPDHBMLJ),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.IJOMKIDEOEG)
-        IJOMKIDEOEG(super::super::BLDLMHPFBCM::BLDLMHPFBCM),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.JKDHIJFLHAJ)
-        JKDHIJFLHAJ(super::super::OHMDKPCOAEC::OHMDKPCOAEC),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.ECBDOFCDHKK)
-        ECBDOFCDHKK(super::super::JICGMEBFBJF::JICGMEBFBJF),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.DEIDEEJDJLB)
-        DEIDEEJDJLB(super::super::HGFKGMPPOIM::HGFKGMPPOIM),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.LKBHNGLPEGP)
-        LKBHNGLPEGP(super::super::MMHMPNEJFOP::MMHMPNEJFOP),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.OFEECJDAHLB)
-        OFEECJDAHLB(super::super::JAMNDEJMILO::JAMNDEJMILO),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.BOJPHPFIPNK)
-        BOJPHPFIPNK(super::super::MBHMOJNPHEJ::MBHMOJNPHEJ),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.JLIINFBLMKI)
-        JLIINFBLMKI(super::super::IKEBEPBJHCE::IKEBEPBJHCE),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.DDAKCDJJOPI)
-        DDAKCDJJOPI(super::super::IADIBNIPHBO::IADIBNIPHBO),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.IJHKIDFCAHO)
-        IJHKIDFCAHO(super::super::GACNMNIKJBF::GACNMNIKJBF),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.KMALKBCNJHK)
-        KMALKBCNJHK(super::super::FOHHEPOECML::FOHHEPOECML),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.OPKPJCIDFIC)
-        OPKPJCIDFIC(super::super::DIKAEDCJHFM::DIKAEDCJHFM),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.NKMIGFDPFNJ)
-        NKMIGFDPFNJ(super::super::HAHKCDIPGJH::HAHKCDIPGJH),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.KHNAKEMGNJM)
-        KHNAKEMGNJM(super::super::GEDCCGBPOFL::GEDCCGBPOFL),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.BBEPLGMEJGN)
-        BBEPLGMEJGN(super::super::MPPDGFLMDEB::MPPDGFLMDEB),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.CEPBLFDKFFJ)
-        CEPBLFDKFFJ(super::super::GCFNNAKLMPD::GCFNNAKLMPD),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.MCOPMAMMAKP)
-        MCOPMAMMAKP(super::super::NFPOEAEPHIJ::NFPOEAEPHIJ),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.BBEHJAJPHBK)
-        BBEHJAJPHBK(super::super::IOGMLLBFDPG::IOGMLLBFDPG),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.CMHGGDOMAAK)
-        CMHGGDOMAAK(super::super::CFIKJKGABEI::CFIKJKGABEI),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.DOBFKCAGMJB)
-        DOBFKCAGMJB(super::super::MAGNIAAPANO::MAGNIAAPANO),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.KMFILFDMILI)
-        KMFILFDMILI(super::super::MAGNIAAPANO::MAGNIAAPANO),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.LAJICPMLKCA)
-        LAJICPMLKCA(super::super::JDKNKIBFHAF::JDKNKIBFHAF),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.CICIDMFLIHL)
-        CICIDMFLIHL(super::super::LIDKGPCEDHE::LIDKGPCEDHE),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.FGAEOEEOIFD)
-        FGAEOEEOIFD(super::super::DPHIINCNKEI::DPHIINCNKEI),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.ILAKOOPEODP)
-        ILAKOOPEODP(super::super::AOGMCBOFNMO::AOGMCBOFNMO),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.FMAJDANLJEB)
-        FMAJDANLJEB(super::super::GJEFKOGFNCH::GJEFKOGFNCH),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.FBJMOIEEHFF)
-        FBJMOIEEHFF(super::super::HBAMALALOGG::HBAMALALOGG),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.BAKPFNPNMOP)
-        BAKPFNPNMOP(super::super::EFDADBFIABN::EFDADBFIABN),
-        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.IPPOGINBKIE)
-        IPPOGINBKIE(super::super::LGKDBECKMBM::LGKDBECKMBM),
+    // @@protoc_insertion_point(oneof:HandleRogueCommonPendingActionScRsp.KKNBOACNCON)
+    pub enum KKNBOACNCON {
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.OOMKEELHDPA)
+        OOMKEELHDPA(super::super::NFBCBCMGIIA::NFBCBCMGIIA),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.NCGJCHMOHMG)
+        NCGJCHMOHMG(super::super::BJGEONOCHPM::BJGEONOCHPM),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.CEIPBFGMHAP)
+        CEIPBFGMHAP(super::super::LGKKAKEFPIN::LGKKAKEFPIN),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.JFHKDEIDMOG)
+        JFHKDEIDMOG(super::super::FKOGDINOBDF::FKOGDINOBDF),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.DJJHHDIGJIG)
+        DJJHHDIGJIG(super::super::NCLHLLIHMFK::NCLHLLIHMFK),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.HANHJNOPLJM)
+        HANHJNOPLJM(super::super::MLDADDMEGGN::MLDADDMEGGN),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.COBNPFDHMEA)
+        COBNPFDHMEA(super::super::HPIPKICGABB::HPIPKICGABB),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.DKBNKKIGKEB)
+        DKBNKKIGKEB(super::super::JJKIPNMJDKH::JJKIPNMJDKH),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.LGACHDMGEAI)
+        LGACHDMGEAI(super::super::BIPMEIGLILE::BIPMEIGLILE),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.HEGECCJIFBJ)
+        HEGECCJIFBJ(super::super::EBLOKOMNNNN::EBLOKOMNNNN),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.IMKIPDCNBHH)
+        IMKIPDCNBHH(super::super::CBLBFGKFMLC::CBLBFGKFMLC),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.ENMKMKPBGBL)
+        ENMKMKPBGBL(super::super::BALOFADGOKE::BALOFADGOKE),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.ABKEDNGNFEO)
+        ABKEDNGNFEO(super::super::LNDBCDKMMKN::LNDBCDKMMKN),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.IMLHDMCPHOB)
+        IMLHDMCPHOB(super::super::KGHLOMJHDPE::KGHLOMJHDPE),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.GJDKCHAAEDM)
+        GJDKCHAAEDM(super::super::LAKMNABKMLO::LAKMNABKMLO),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.LDOFNPGNJJC)
+        LDOFNPGNJJC(super::super::OKFPPPBNJNH::OKFPPPBNJNH),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.NOJELDBILBF)
+        NOJELDBILBF(super::super::PCMBLMDJPJJ::PCMBLMDJPJJ),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.NMFCCMJLCII)
+        NMFCCMJLCII(super::super::PADDBFAGJNE::PADDBFAGJNE),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.GCGABKJGBAL)
+        GCGABKJGBAL(super::super::PGAAIDKNIOA::PGAAIDKNIOA),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.APNNHAGDPHM)
+        APNNHAGDPHM(super::super::FFBEJCNPAMN::FFBEJCNPAMN),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.MDJCMEOLAHF)
+        MDJCMEOLAHF(super::super::KHOKOACABEL::KHOKOACABEL),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.FDGIFAFOHLN)
+        FDGIFAFOHLN(super::super::MKGFFKEGMNP::MKGFFKEGMNP),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.EMKGAEBINMB)
+        EMKGAEBINMB(super::super::AJEDKCCAKBE::AJEDKCCAKBE),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.PAGPPMJDMFA)
+        PAGPPMJDMFA(super::super::GKPCMMNOGBF::GKPCMMNOGBF),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.KBJKMBDCPJO)
+        KBJKMBDCPJO(super::super::OLHGNECAEEL::OLHGNECAEEL),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.PEEFOFKDEMJ)
+        PEEFOFKDEMJ(super::super::NAJIHIPCGMD::NAJIHIPCGMD),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.HDNMNAFAKKC)
+        HDNMNAFAKKC(super::super::NAJIHIPCGMD::NAJIHIPCGMD),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.PKBOEKFFMKM)
+        PKBOEKFFMKM(super::super::ELJDPDFMLPM::ELJDPDFMLPM),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.KMJHICGMONF)
+        KMJHICGMONF(super::super::MJJHMIKCHIA::MJJHMIKCHIA),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.FPJABECNFNA)
+        FPJABECNFNA(super::super::OBNEOHHDAIP::OBNEOHHDAIP),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.OPJONHEBIBG)
+        OPJONHEBIBG(super::super::APOBCJFPJDD::APOBCJFPJDD),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.CDOEJADALLO)
+        CDOEJADALLO(super::super::BJEDJPONMHK::BJEDJPONMHK),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.MEAPDJCNPID)
+        MEAPDJCNPID(super::super::ANLOMBEKCGI::ANLOMBEKCGI),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.HGBKMEHOMHA)
+        HGBKMEHOMHA(super::super::KLEHEHAMKLC::KLEHEHAMKLC),
+        // @@protoc_insertion_point(oneof_field:HandleRogueCommonPendingActionScRsp.JGABOBBHOFJ)
+        JGABOBBHOFJ(super::super::OGICOEAOEBP::OGICOEAOEBP),
     }
 
-    impl ::protobuf::Oneof for BPIHFAJCLOC {
+    impl ::protobuf::Oneof for KKNBOACNCON {
     }
 
-    impl ::protobuf::OneofFull for BPIHFAJCLOC {
+    impl ::protobuf::OneofFull for KKNBOACNCON {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::HandleRogueCommonPendingActionScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("BPIHFAJCLOC").unwrap()).clone()
+            descriptor.get(|| <super::HandleRogueCommonPendingActionScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("KKNBOACNCON").unwrap()).clone()
         }
     }
 
-    impl BPIHFAJCLOC {
+    impl KKNBOACNCON {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<BPIHFAJCLOC>("BPIHFAJCLOC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KKNBOACNCON>("KKNBOACNCON")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)HandleRogueCommonPendingActionScRsp.proto\x1a\x11AJGGFCJFKEL.proto\
-    \x1a\x11AOGMCBOFNMO.proto\x1a\x11BLDLMHPFBCM.proto\x1a\x11CFIKJKGABEI.pr\
-    oto\x1a\x11DIKAEDCJHFM.proto\x1a\x11DPHIINCNKEI.proto\x1a\x11EFDADBFIABN\
-    .proto\x1a\x11FOHHEPOECML.proto\x1a\x11GACNMNIKJBF.proto\x1a\x11GCFNNAKL\
-    MPD.proto\x1a\x11GEDCCGBPOFL.proto\x1a\x11GJEFKOGFNCH.proto\x1a\x11HAHKC\
-    DIPGJH.proto\x1a\x11HBAMALALOGG.proto\x1a\x11HGFKGMPPOIM.proto\x1a\x11IA\
-    DIBNIPHBO.proto\x1a\x11IKEBEPBJHCE.proto\x1a\x11IOGMLLBFDPG.proto\x1a\
-    \x11JAMNDEJMILO.proto\x1a\x11JDKNKIBFHAF.proto\x1a\x11JICGMEBFBJF.proto\
-    \x1a\x11JNPGMMLHGJH.proto\x1a\x11JPPGLJPCFNC.proto\x1a\x11LGKDBECKMBM.pr\
-    oto\x1a\x11LIDKGPCEDHE.proto\x1a\x11LJFFAHEHFDJ.proto\x1a\x11MAGNIAAPANO\
-    .proto\x1a\x11MBHMOJNPHEJ.proto\x1a\x11MMHMPNEJFOP.proto\x1a\x11MPPDGFLM\
-    DEB.proto\x1a\x11NFPOEAEPHIJ.proto\x1a\x11NLNOGDMKBOD.proto\x1a\x11OHMDK\
-    PCOAEC.proto\x1a\x11PBCOPDHBMLJ.proto\"\x8c\x0f\n#HandleRogueCommonPendi\
-    ngActionScRsp\x12\x20\n\x0bMJPCBEAAABJ\x18\x02\x20\x01(\rR\x0bMJPCBEAAAB\
-    J\x12%\n\x0equeue_position\x18\r\x20\x01(\rR\rqueuePosition\x12\x18\n\
-    \x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x121\n\x0bPKBFJJJOEBD\x18\xdc\
-    \x06\x20\x01(\x0b2\x0c.NLNOGDMKBODH\0R\x0bPKBFJJJOEBD\x121\n\x0bCCGGGDCA\
-    IGJ\x18\xd6\r\x20\x01(\x0b2\x0c.JPPGLJPCFNCH\0R\x0bCCGGGDCAIGJ\x121\n\
-    \x0bBFMONEFDILP\x18\xb3\x03\x20\x01(\x0b2\x0c.AJGGFCJFKELH\0R\x0bBFMONEF\
-    DILP\x121\n\x0bKCCIDNOGPPA\x18\xd5\x02\x20\x01(\x0b2\x0c.LJFFAHEHFDJH\0R\
-    \x0bKCCIDNOGPPA\x120\n\x0bPEMHIBDBCGG\x18?\x20\x01(\x0b2\x0c.JNPGMMLHGJH\
-    H\0R\x0bPEMHIBDBCGG\x121\n\x0bHJCJCEACDHJ\x18\xc2\x0b\x20\x01(\x0b2\x0c.\
-    PBCOPDHBMLJH\0R\x0bHJCJCEACDHJ\x121\n\x0bIJOMKIDEOEG\x18\xb7\x01\x20\x01\
-    (\x0b2\x0c.BLDLMHPFBCMH\0R\x0bIJOMKIDEOEG\x120\n\x0bJKDHIJFLHAJ\x18/\x20\
-    \x01(\x0b2\x0c.OHMDKPCOAECH\0R\x0bJKDHIJFLHAJ\x120\n\x0bECBDOFCDHKK\x18$\
-    \x20\x01(\x0b2\x0c.JICGMEBFBJFH\0R\x0bECBDOFCDHKK\x121\n\x0bDEIDEEJDJLB\
-    \x18\xbd\x08\x20\x01(\x0b2\x0c.HGFKGMPPOIMH\0R\x0bDEIDEEJDJLB\x120\n\x0b\
-    LKBHNGLPEGP\x18|\x20\x01(\x0b2\x0c.MMHMPNEJFOPH\0R\x0bLKBHNGLPEGP\x121\n\
-    \x0bOFEECJDAHLB\x18\xba\x0e\x20\x01(\x0b2\x0c.JAMNDEJMILOH\0R\x0bOFEECJD\
-    AHLB\x121\n\x0bBOJPHPFIPNK\x18\xc3\x07\x20\x01(\x0b2\x0c.MBHMOJNPHEJH\0R\
-    \x0bBOJPHPFIPNK\x121\n\x0bJLIINFBLMKI\x18\x9e\x0b\x20\x01(\x0b2\x0c.IKEB\
-    EPBJHCEH\0R\x0bJLIINFBLMKI\x121\n\x0bDDAKCDJJOPI\x18\x88\x0f\x20\x01(\
-    \x0b2\x0c.IADIBNIPHBOH\0R\x0bDDAKCDJJOPI\x121\n\x0bIJHKIDFCAHO\x18\xd9\
-    \x05\x20\x01(\x0b2\x0c.GACNMNIKJBFH\0R\x0bIJHKIDFCAHO\x121\n\x0bKMALKBCN\
-    JHK\x18\xf9\x07\x20\x01(\x0b2\x0c.FOHHEPOECMLH\0R\x0bKMALKBCNJHK\x121\n\
-    \x0bOPKPJCIDFIC\x18\x89\x08\x20\x01(\x0b2\x0c.DIKAEDCJHFMH\0R\x0bOPKPJCI\
-    DFIC\x121\n\x0bNKMIGFDPFNJ\x18\xca\x0c\x20\x01(\x0b2\x0c.HAHKCDIPGJHH\0R\
-    \x0bNKMIGFDPFNJ\x121\n\x0bKHNAKEMGNJM\x18\xbe\t\x20\x01(\x0b2\x0c.GEDCCG\
-    BPOFLH\0R\x0bKHNAKEMGNJM\x121\n\x0bBBEPLGMEJGN\x18\xb6\t\x20\x01(\x0b2\
-    \x0c.MPPDGFLMDEBH\0R\x0bBBEPLGMEJGN\x121\n\x0bCEPBLFDKFFJ\x18\xb7\t\x20\
-    \x01(\x0b2\x0c.GCFNNAKLMPDH\0R\x0bCEPBLFDKFFJ\x121\n\x0bMCOPMAMMAKP\x18\
-    \x92\x06\x20\x01(\x0b2\x0c.NFPOEAEPHIJH\0R\x0bMCOPMAMMAKP\x121\n\x0bBBEH\
-    JAJPHBK\x18\xe3\n\x20\x01(\x0b2\x0c.IOGMLLBFDPGH\0R\x0bBBEHJAJPHBK\x121\
-    \n\x0bCMHGGDOMAAK\x18\x98\x03\x20\x01(\x0b2\x0c.CFIKJKGABEIH\0R\x0bCMHGG\
-    DOMAAK\x121\n\x0bDOBFKCAGMJB\x18\x85\t\x20\x01(\x0b2\x0c.MAGNIAAPANOH\0R\
-    \x0bDOBFKCAGMJB\x121\n\x0bKMFILFDMILI\x18\xae\x04\x20\x01(\x0b2\x0c.MAGN\
-    IAAPANOH\0R\x0bKMFILFDMILI\x121\n\x0bLAJICPMLKCA\x18\xb0\t\x20\x01(\x0b2\
-    \x0c.JDKNKIBFHAFH\0R\x0bLAJICPMLKCA\x121\n\x0bCICIDMFLIHL\x18\x85\x06\
-    \x20\x01(\x0b2\x0c.LIDKGPCEDHEH\0R\x0bCICIDMFLIHL\x121\n\x0bFGAEOEEOIFD\
-    \x18\x81\x01\x20\x01(\x0b2\x0c.DPHIINCNKEIH\0R\x0bFGAEOEEOIFD\x121\n\x0b\
-    ILAKOOPEODP\x18\xf2\x08\x20\x01(\x0b2\x0c.AOGMCBOFNMOH\0R\x0bILAKOOPEODP\
-    \x121\n\x0bFMAJDANLJEB\x18\xf8\x0f\x20\x01(\x0b2\x0c.GJEFKOGFNCHH\0R\x0b\
-    FMAJDANLJEB\x121\n\x0bFBJMOIEEHFF\x18\xf2\x07\x20\x01(\x0b2\x0c.HBAMALAL\
-    OGGH\0R\x0bFBJMOIEEHFF\x121\n\x0bBAKPFNPNMOP\x18\xb7\x0f\x20\x01(\x0b2\
-    \x0c.EFDADBFIABNH\0R\x0bBAKPFNPNMOP\x121\n\x0bIPPOGINBKIE\x18\xc2\x0f\
-    \x20\x01(\x0b2\x0c.LGKDBECKMBMH\0R\x0bIPPOGINBKIEB\r\n\x0bBPIHFAJCLOCb\
-    \x06proto3\
+    \n)HandleRogueCommonPendingActionScRsp.proto\x1a\x11AJEDKCCAKBE.proto\
+    \x1a\x11ANLOMBEKCGI.proto\x1a\x11APOBCJFPJDD.proto\x1a\x11BALOFADGOKE.pr\
+    oto\x1a\x11BIPMEIGLILE.proto\x1a\x11BJEDJPONMHK.proto\x1a\x11BJGEONOCHPM\
+    .proto\x1a\x11CBLBFGKFMLC.proto\x1a\x11EBLOKOMNNNN.proto\x1a\x11ELJDPDFM\
+    LPM.proto\x1a\x11FFBEJCNPAMN.proto\x1a\x11FKOGDINOBDF.proto\x1a\x11GKPCM\
+    MNOGBF.proto\x1a\x11HPIPKICGABB.proto\x1a\x11JJKIPNMJDKH.proto\x1a\x11KG\
+    HLOMJHDPE.proto\x1a\x11KHOKOACABEL.proto\x1a\x11KLEHEHAMKLC.proto\x1a\
+    \x11LAKMNABKMLO.proto\x1a\x11LGKKAKEFPIN.proto\x1a\x11LNDBCDKMMKN.proto\
+    \x1a\x11MJJHMIKCHIA.proto\x1a\x11MKGFFKEGMNP.proto\x1a\x11MLDADDMEGGN.pr\
+    oto\x1a\x11NAJIHIPCGMD.proto\x1a\x11NCLHLLIHMFK.proto\x1a\x11NFBCBCMGIIA\
+    .proto\x1a\x11OBNEOHHDAIP.proto\x1a\x11OGICOEAOEBP.proto\x1a\x11OKFPPPBN\
+    JNH.proto\x1a\x11OLHGNECAEEL.proto\x1a\x11PADDBFAGJNE.proto\x1a\x11PCMBL\
+    MDJPJJ.proto\x1a\x11PGAAIDKNIOA.proto\"\x8b\x0f\n#HandleRogueCommonPendi\
+    ngActionScRsp\x12%\n\x0equeue_position\x18\x05\x20\x01(\rR\rqueuePositio\
+    n\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x20\n\x0bBFNEP\
+    PCNOOI\x18\x02\x20\x01(\rR\x0bBFNEPPCNOOI\x121\n\x0bOOMKEELHDPA\x18\x8b\
+    \x0b\x20\x01(\x0b2\x0c.NFBCBCMGIIAH\0R\x0bOOMKEELHDPA\x121\n\x0bNCGJCHMO\
+    HMG\x18\x91\r\x20\x01(\x0b2\x0c.BJGEONOCHPMH\0R\x0bNCGJCHMOHMG\x120\n\
+    \x0bCEIPBFGMHAP\x18W\x20\x01(\x0b2\x0c.LGKKAKEFPINH\0R\x0bCEIPBFGMHAP\
+    \x121\n\x0bJFHKDEIDMOG\x18\xdf\t\x20\x01(\x0b2\x0c.FKOGDINOBDFH\0R\x0bJF\
+    HKDEIDMOG\x121\n\x0bDJJHHDIGJIG\x18\xea\n\x20\x01(\x0b2\x0c.NCLHLLIHMFKH\
+    \0R\x0bDJJHHDIGJIG\x121\n\x0bHANHJNOPLJM\x18\x97\t\x20\x01(\x0b2\x0c.MLD\
+    ADDMEGGNH\0R\x0bHANHJNOPLJM\x121\n\x0bCOBNPFDHMEA\x18\x8b\x04\x20\x01(\
+    \x0b2\x0c.HPIPKICGABBH\0R\x0bCOBNPFDHMEA\x121\n\x0bDKBNKKIGKEB\x18\xa1\
+    \x01\x20\x01(\x0b2\x0c.JJKIPNMJDKHH\0R\x0bDKBNKKIGKEB\x120\n\x0bLGACHDMG\
+    EAI\x18-\x20\x01(\x0b2\x0c.BIPMEIGLILEH\0R\x0bLGACHDMGEAI\x121\n\x0bHEGE\
+    CCJIFBJ\x18\xc2\x0c\x20\x01(\x0b2\x0c.EBLOKOMNNNNH\0R\x0bHEGECCJIFBJ\x12\
+    1\n\x0bIMKIPDCNBHH\x18\xbd\x07\x20\x01(\x0b2\x0c.CBLBFGKFMLCH\0R\x0bIMKI\
+    PDCNBHH\x121\n\x0bENMKMKPBGBL\x18\xf4\x05\x20\x01(\x0b2\x0c.BALOFADGOKEH\
+    \0R\x0bENMKMKPBGBL\x120\n\x0bABKEDNGNFEO\x18X\x20\x01(\x0b2\x0c.LNDBCDKM\
+    MKNH\0R\x0bABKEDNGNFEO\x121\n\x0bIMLHDMCPHOB\x18\xde\x01\x20\x01(\x0b2\
+    \x0c.KGHLOMJHDPEH\0R\x0bIMLHDMCPHOB\x121\n\x0bGJDKCHAAEDM\x18\xb0\x06\
+    \x20\x01(\x0b2\x0c.LAKMNABKMLOH\0R\x0bGJDKCHAAEDM\x121\n\x0bLDOFNPGNJJC\
+    \x18\xdd\x08\x20\x01(\x0b2\x0c.OKFPPPBNJNHH\0R\x0bLDOFNPGNJJC\x120\n\x0b\
+    NOJELDBILBF\x18~\x20\x01(\x0b2\x0c.PCMBLMDJPJJH\0R\x0bNOJELDBILBF\x121\n\
+    \x0bNMFCCMJLCII\x18\xb6\x04\x20\x01(\x0b2\x0c.PADDBFAGJNEH\0R\x0bNMFCCMJ\
+    LCII\x121\n\x0bGCGABKJGBAL\x18\x83\x02\x20\x01(\x0b2\x0c.PGAAIDKNIOAH\0R\
+    \x0bGCGABKJGBAL\x121\n\x0bAPNNHAGDPHM\x18\xba\x04\x20\x01(\x0b2\x0c.FFBE\
+    JCNPAMNH\0R\x0bAPNNHAGDPHM\x121\n\x0bMDJCMEOLAHF\x18\xde\x0c\x20\x01(\
+    \x0b2\x0c.KHOKOACABELH\0R\x0bMDJCMEOLAHF\x121\n\x0bFDGIFAFOHLN\x18\xda\
+    \x07\x20\x01(\x0b2\x0c.MKGFFKEGMNPH\0R\x0bFDGIFAFOHLN\x121\n\x0bEMKGAEBI\
+    NMB\x18\xea\x02\x20\x01(\x0b2\x0c.AJEDKCCAKBEH\0R\x0bEMKGAEBINMB\x121\n\
+    \x0bPAGPPMJDMFA\x18\xf3\n\x20\x01(\x0b2\x0c.GKPCMMNOGBFH\0R\x0bPAGPPMJDM\
+    FA\x121\n\x0bKBJKMBDCPJO\x18\xbe\x0e\x20\x01(\x0b2\x0c.OLHGNECAEELH\0R\
+    \x0bKBJKMBDCPJO\x121\n\x0bPEEFOFKDEMJ\x18\xef\r\x20\x01(\x0b2\x0c.NAJIHI\
+    PCGMDH\0R\x0bPEEFOFKDEMJ\x120\n\x0bHDNMNAFAKKC\x18:\x20\x01(\x0b2\x0c.NA\
+    JIHIPCGMDH\0R\x0bHDNMNAFAKKC\x121\n\x0bPKBOEKFFMKM\x18\x95\x04\x20\x01(\
+    \x0b2\x0c.ELJDPDFMLPMH\0R\x0bPKBOEKFFMKM\x121\n\x0bKMJHICGMONF\x18\xff\
+    \x07\x20\x01(\x0b2\x0c.MJJHMIKCHIAH\0R\x0bKMJHICGMONF\x121\n\x0bFPJABECN\
+    FNA\x18\xe0\t\x20\x01(\x0b2\x0c.OBNEOHHDAIPH\0R\x0bFPJABECNFNA\x121\n\
+    \x0bOPJONHEBIBG\x18\x95\x07\x20\x01(\x0b2\x0c.APOBCJFPJDDH\0R\x0bOPJONHE\
+    BIBG\x121\n\x0bCDOEJADALLO\x18\x85\x03\x20\x01(\x0b2\x0c.BJEDJPONMHKH\0R\
+    \x0bCDOEJADALLO\x121\n\x0bMEAPDJCNPID\x18\xe3\x0e\x20\x01(\x0b2\x0c.ANLO\
+    MBEKCGIH\0R\x0bMEAPDJCNPID\x121\n\x0bHGBKMEHOMHA\x18\xde\x0f\x20\x01(\
+    \x0b2\x0c.KLEHEHAMKLCH\0R\x0bHGBKMEHOMHA\x121\n\x0bJGABOBBHOFJ\x18\xd0\
+    \x0e\x20\x01(\x0b2\x0c.OGICOEAOEBPH\0R\x0bJGABOBBHOFJB\r\n\x0bKKNBOACNCO\
+    Nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -2710,40 +2710,40 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(34);
-            deps.push(super::AJGGFCJFKEL::file_descriptor().clone());
-            deps.push(super::AOGMCBOFNMO::file_descriptor().clone());
-            deps.push(super::BLDLMHPFBCM::file_descriptor().clone());
-            deps.push(super::CFIKJKGABEI::file_descriptor().clone());
-            deps.push(super::DIKAEDCJHFM::file_descriptor().clone());
-            deps.push(super::DPHIINCNKEI::file_descriptor().clone());
-            deps.push(super::EFDADBFIABN::file_descriptor().clone());
-            deps.push(super::FOHHEPOECML::file_descriptor().clone());
-            deps.push(super::GACNMNIKJBF::file_descriptor().clone());
-            deps.push(super::GCFNNAKLMPD::file_descriptor().clone());
-            deps.push(super::GEDCCGBPOFL::file_descriptor().clone());
-            deps.push(super::GJEFKOGFNCH::file_descriptor().clone());
-            deps.push(super::HAHKCDIPGJH::file_descriptor().clone());
-            deps.push(super::HBAMALALOGG::file_descriptor().clone());
-            deps.push(super::HGFKGMPPOIM::file_descriptor().clone());
-            deps.push(super::IADIBNIPHBO::file_descriptor().clone());
-            deps.push(super::IKEBEPBJHCE::file_descriptor().clone());
-            deps.push(super::IOGMLLBFDPG::file_descriptor().clone());
-            deps.push(super::JAMNDEJMILO::file_descriptor().clone());
-            deps.push(super::JDKNKIBFHAF::file_descriptor().clone());
-            deps.push(super::JICGMEBFBJF::file_descriptor().clone());
-            deps.push(super::JNPGMMLHGJH::file_descriptor().clone());
-            deps.push(super::JPPGLJPCFNC::file_descriptor().clone());
-            deps.push(super::LGKDBECKMBM::file_descriptor().clone());
-            deps.push(super::LIDKGPCEDHE::file_descriptor().clone());
-            deps.push(super::LJFFAHEHFDJ::file_descriptor().clone());
-            deps.push(super::MAGNIAAPANO::file_descriptor().clone());
-            deps.push(super::MBHMOJNPHEJ::file_descriptor().clone());
-            deps.push(super::MMHMPNEJFOP::file_descriptor().clone());
-            deps.push(super::MPPDGFLMDEB::file_descriptor().clone());
-            deps.push(super::NFPOEAEPHIJ::file_descriptor().clone());
-            deps.push(super::NLNOGDMKBOD::file_descriptor().clone());
-            deps.push(super::OHMDKPCOAEC::file_descriptor().clone());
-            deps.push(super::PBCOPDHBMLJ::file_descriptor().clone());
+            deps.push(super::AJEDKCCAKBE::file_descriptor().clone());
+            deps.push(super::ANLOMBEKCGI::file_descriptor().clone());
+            deps.push(super::APOBCJFPJDD::file_descriptor().clone());
+            deps.push(super::BALOFADGOKE::file_descriptor().clone());
+            deps.push(super::BIPMEIGLILE::file_descriptor().clone());
+            deps.push(super::BJEDJPONMHK::file_descriptor().clone());
+            deps.push(super::BJGEONOCHPM::file_descriptor().clone());
+            deps.push(super::CBLBFGKFMLC::file_descriptor().clone());
+            deps.push(super::EBLOKOMNNNN::file_descriptor().clone());
+            deps.push(super::ELJDPDFMLPM::file_descriptor().clone());
+            deps.push(super::FFBEJCNPAMN::file_descriptor().clone());
+            deps.push(super::FKOGDINOBDF::file_descriptor().clone());
+            deps.push(super::GKPCMMNOGBF::file_descriptor().clone());
+            deps.push(super::HPIPKICGABB::file_descriptor().clone());
+            deps.push(super::JJKIPNMJDKH::file_descriptor().clone());
+            deps.push(super::KGHLOMJHDPE::file_descriptor().clone());
+            deps.push(super::KHOKOACABEL::file_descriptor().clone());
+            deps.push(super::KLEHEHAMKLC::file_descriptor().clone());
+            deps.push(super::LAKMNABKMLO::file_descriptor().clone());
+            deps.push(super::LGKKAKEFPIN::file_descriptor().clone());
+            deps.push(super::LNDBCDKMMKN::file_descriptor().clone());
+            deps.push(super::MJJHMIKCHIA::file_descriptor().clone());
+            deps.push(super::MKGFFKEGMNP::file_descriptor().clone());
+            deps.push(super::MLDADDMEGGN::file_descriptor().clone());
+            deps.push(super::NAJIHIPCGMD::file_descriptor().clone());
+            deps.push(super::NCLHLLIHMFK::file_descriptor().clone());
+            deps.push(super::NFBCBCMGIIA::file_descriptor().clone());
+            deps.push(super::OBNEOHHDAIP::file_descriptor().clone());
+            deps.push(super::OGICOEAOEBP::file_descriptor().clone());
+            deps.push(super::OKFPPPBNJNH::file_descriptor().clone());
+            deps.push(super::OLHGNECAEEL::file_descriptor().clone());
+            deps.push(super::PADDBFAGJNE::file_descriptor().clone());
+            deps.push(super::PCMBLMDJPJJ::file_descriptor().clone());
+            deps.push(super::PGAAIDKNIOA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HandleRogueCommonPendingActionScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -79,10 +79,10 @@ impl ::protobuf::Message for UpdatePlayerSettingScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_setting)?;
                 },
-                24 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for UpdatePlayerSettingScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for UpdatePlayerSettingScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.player_setting.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdatePlayerSettingScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eUpdatePlayerSettingScRsp.proto\x1a\x19UpdatePlayerSetting.proto\"q\
-    \n\x18UpdatePlayerSettingScRsp\x12;\n\x0eplayer_setting\x18\x0c\x20\x01(\
+    \n\x18UpdatePlayerSettingScRsp\x12;\n\x0eplayer_setting\x18\t\x20\x01(\
     \x0b2\x14.UpdatePlayerSettingR\rplayerSetting\x12\x18\n\x07retcode\x18\
-    \x03\x20\x01(\rR\x07retcodeb\x06proto3\
+    \x08\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

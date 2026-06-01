@@ -45,101 +45,101 @@ impl ChatData {
         ::std::default::Default::default()
     }
 
-    // .CIKDDLMJLEN EPKIJKOHNKC = 101;
+    // .ECCKHOLLPPC NPBOINAPJJE = 101;
 
-    pub fn EPKIJKOHNKC(&self) -> &super::CIKDDLMJLEN::CIKDDLMJLEN {
+    pub fn NPBOINAPJJE(&self) -> &super::ECCKHOLLPPC::ECCKHOLLPPC {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::EPKIJKOHNKC(ref v)) => v,
-            _ => <super::CIKDDLMJLEN::CIKDDLMJLEN as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(chat_data::Extend_type::NPBOINAPJJE(ref v)) => v,
+            _ => <super::ECCKHOLLPPC::ECCKHOLLPPC as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_EPKIJKOHNKC(&mut self) {
+    pub fn clear_NPBOINAPJJE(&mut self) {
         self.extend_type = ::std::option::Option::None;
     }
 
-    pub fn has_EPKIJKOHNKC(&self) -> bool {
+    pub fn has_NPBOINAPJJE(&self) -> bool {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::EPKIJKOHNKC(..)) => true,
+            ::std::option::Option::Some(chat_data::Extend_type::NPBOINAPJJE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_EPKIJKOHNKC(&mut self, v: super::CIKDDLMJLEN::CIKDDLMJLEN) {
-        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::EPKIJKOHNKC(v))
+    pub fn set_NPBOINAPJJE(&mut self, v: super::ECCKHOLLPPC::ECCKHOLLPPC) {
+        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::NPBOINAPJJE(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_EPKIJKOHNKC(&mut self) -> &mut super::CIKDDLMJLEN::CIKDDLMJLEN {
-        if let ::std::option::Option::Some(chat_data::Extend_type::EPKIJKOHNKC(_)) = self.extend_type {
+    pub fn mut_NPBOINAPJJE(&mut self) -> &mut super::ECCKHOLLPPC::ECCKHOLLPPC {
+        if let ::std::option::Option::Some(chat_data::Extend_type::NPBOINAPJJE(_)) = self.extend_type {
         } else {
-            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::EPKIJKOHNKC(super::CIKDDLMJLEN::CIKDDLMJLEN::new()));
+            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::NPBOINAPJJE(super::ECCKHOLLPPC::ECCKHOLLPPC::new()));
         }
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::EPKIJKOHNKC(ref mut v)) => v,
+            ::std::option::Option::Some(chat_data::Extend_type::NPBOINAPJJE(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_EPKIJKOHNKC(&mut self) -> super::CIKDDLMJLEN::CIKDDLMJLEN {
-        if self.has_EPKIJKOHNKC() {
+    pub fn take_NPBOINAPJJE(&mut self) -> super::ECCKHOLLPPC::ECCKHOLLPPC {
+        if self.has_NPBOINAPJJE() {
             match self.extend_type.take() {
-                ::std::option::Option::Some(chat_data::Extend_type::EPKIJKOHNKC(v)) => v,
+                ::std::option::Option::Some(chat_data::Extend_type::NPBOINAPJJE(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::CIKDDLMJLEN::CIKDDLMJLEN::new()
+            super::ECCKHOLLPPC::ECCKHOLLPPC::new()
         }
     }
 
-    // .MMLBJFHEAKL MOELBPPIPDC = 102;
+    // .NDDOMFBJMKE IBJBFODFIMN = 102;
 
-    pub fn MOELBPPIPDC(&self) -> &super::MMLBJFHEAKL::MMLBJFHEAKL {
+    pub fn IBJBFODFIMN(&self) -> &super::NDDOMFBJMKE::NDDOMFBJMKE {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::MOELBPPIPDC(ref v)) => v,
-            _ => <super::MMLBJFHEAKL::MMLBJFHEAKL as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(chat_data::Extend_type::IBJBFODFIMN(ref v)) => v,
+            _ => <super::NDDOMFBJMKE::NDDOMFBJMKE as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_MOELBPPIPDC(&mut self) {
+    pub fn clear_IBJBFODFIMN(&mut self) {
         self.extend_type = ::std::option::Option::None;
     }
 
-    pub fn has_MOELBPPIPDC(&self) -> bool {
+    pub fn has_IBJBFODFIMN(&self) -> bool {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::MOELBPPIPDC(..)) => true,
+            ::std::option::Option::Some(chat_data::Extend_type::IBJBFODFIMN(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_MOELBPPIPDC(&mut self, v: super::MMLBJFHEAKL::MMLBJFHEAKL) {
-        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::MOELBPPIPDC(v))
+    pub fn set_IBJBFODFIMN(&mut self, v: super::NDDOMFBJMKE::NDDOMFBJMKE) {
+        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::IBJBFODFIMN(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_MOELBPPIPDC(&mut self) -> &mut super::MMLBJFHEAKL::MMLBJFHEAKL {
-        if let ::std::option::Option::Some(chat_data::Extend_type::MOELBPPIPDC(_)) = self.extend_type {
+    pub fn mut_IBJBFODFIMN(&mut self) -> &mut super::NDDOMFBJMKE::NDDOMFBJMKE {
+        if let ::std::option::Option::Some(chat_data::Extend_type::IBJBFODFIMN(_)) = self.extend_type {
         } else {
-            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::MOELBPPIPDC(super::MMLBJFHEAKL::MMLBJFHEAKL::new()));
+            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::IBJBFODFIMN(super::NDDOMFBJMKE::NDDOMFBJMKE::new()));
         }
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::MOELBPPIPDC(ref mut v)) => v,
+            ::std::option::Option::Some(chat_data::Extend_type::IBJBFODFIMN(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_MOELBPPIPDC(&mut self) -> super::MMLBJFHEAKL::MMLBJFHEAKL {
-        if self.has_MOELBPPIPDC() {
+    pub fn take_IBJBFODFIMN(&mut self) -> super::NDDOMFBJMKE::NDDOMFBJMKE {
+        if self.has_IBJBFODFIMN() {
             match self.extend_type.take() {
-                ::std::option::Option::Some(chat_data::Extend_type::MOELBPPIPDC(v)) => v,
+                ::std::option::Option::Some(chat_data::Extend_type::IBJBFODFIMN(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::MMLBJFHEAKL::MMLBJFHEAKL::new()
+            super::NDDOMFBJMKE::NDDOMFBJMKE::new()
         }
     }
 
@@ -217,316 +217,316 @@ impl ChatData {
         self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::ExtraId(v))
     }
 
-    // .PEKNOBDHAKO IMOLBGOCNEI = 105;
+    // .GCBHOIJLBFL IALHIFELMGE = 105;
 
-    pub fn IMOLBGOCNEI(&self) -> &super::PEKNOBDHAKO::PEKNOBDHAKO {
+    pub fn IALHIFELMGE(&self) -> &super::GCBHOIJLBFL::GCBHOIJLBFL {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::IMOLBGOCNEI(ref v)) => v,
-            _ => <super::PEKNOBDHAKO::PEKNOBDHAKO as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(chat_data::Extend_type::IALHIFELMGE(ref v)) => v,
+            _ => <super::GCBHOIJLBFL::GCBHOIJLBFL as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_IMOLBGOCNEI(&mut self) {
+    pub fn clear_IALHIFELMGE(&mut self) {
         self.extend_type = ::std::option::Option::None;
     }
 
-    pub fn has_IMOLBGOCNEI(&self) -> bool {
+    pub fn has_IALHIFELMGE(&self) -> bool {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::IMOLBGOCNEI(..)) => true,
+            ::std::option::Option::Some(chat_data::Extend_type::IALHIFELMGE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_IMOLBGOCNEI(&mut self, v: super::PEKNOBDHAKO::PEKNOBDHAKO) {
-        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::IMOLBGOCNEI(v))
+    pub fn set_IALHIFELMGE(&mut self, v: super::GCBHOIJLBFL::GCBHOIJLBFL) {
+        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::IALHIFELMGE(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_IMOLBGOCNEI(&mut self) -> &mut super::PEKNOBDHAKO::PEKNOBDHAKO {
-        if let ::std::option::Option::Some(chat_data::Extend_type::IMOLBGOCNEI(_)) = self.extend_type {
+    pub fn mut_IALHIFELMGE(&mut self) -> &mut super::GCBHOIJLBFL::GCBHOIJLBFL {
+        if let ::std::option::Option::Some(chat_data::Extend_type::IALHIFELMGE(_)) = self.extend_type {
         } else {
-            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::IMOLBGOCNEI(super::PEKNOBDHAKO::PEKNOBDHAKO::new()));
+            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::IALHIFELMGE(super::GCBHOIJLBFL::GCBHOIJLBFL::new()));
         }
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::IMOLBGOCNEI(ref mut v)) => v,
+            ::std::option::Option::Some(chat_data::Extend_type::IALHIFELMGE(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_IMOLBGOCNEI(&mut self) -> super::PEKNOBDHAKO::PEKNOBDHAKO {
-        if self.has_IMOLBGOCNEI() {
+    pub fn take_IALHIFELMGE(&mut self) -> super::GCBHOIJLBFL::GCBHOIJLBFL {
+        if self.has_IALHIFELMGE() {
             match self.extend_type.take() {
-                ::std::option::Option::Some(chat_data::Extend_type::IMOLBGOCNEI(v)) => v,
+                ::std::option::Option::Some(chat_data::Extend_type::IALHIFELMGE(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::PEKNOBDHAKO::PEKNOBDHAKO::new()
+            super::GCBHOIJLBFL::GCBHOIJLBFL::new()
         }
     }
 
-    // .MEBBEGGFJMI BAEABLOBEGI = 106;
+    // .IDLACKBINMC ADBNPHDPPIH = 106;
 
-    pub fn BAEABLOBEGI(&self) -> &super::MEBBEGGFJMI::MEBBEGGFJMI {
+    pub fn ADBNPHDPPIH(&self) -> &super::IDLACKBINMC::IDLACKBINMC {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::BAEABLOBEGI(ref v)) => v,
-            _ => <super::MEBBEGGFJMI::MEBBEGGFJMI as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(chat_data::Extend_type::ADBNPHDPPIH(ref v)) => v,
+            _ => <super::IDLACKBINMC::IDLACKBINMC as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_BAEABLOBEGI(&mut self) {
+    pub fn clear_ADBNPHDPPIH(&mut self) {
         self.extend_type = ::std::option::Option::None;
     }
 
-    pub fn has_BAEABLOBEGI(&self) -> bool {
+    pub fn has_ADBNPHDPPIH(&self) -> bool {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::BAEABLOBEGI(..)) => true,
+            ::std::option::Option::Some(chat_data::Extend_type::ADBNPHDPPIH(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_BAEABLOBEGI(&mut self, v: super::MEBBEGGFJMI::MEBBEGGFJMI) {
-        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::BAEABLOBEGI(v))
+    pub fn set_ADBNPHDPPIH(&mut self, v: super::IDLACKBINMC::IDLACKBINMC) {
+        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::ADBNPHDPPIH(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_BAEABLOBEGI(&mut self) -> &mut super::MEBBEGGFJMI::MEBBEGGFJMI {
-        if let ::std::option::Option::Some(chat_data::Extend_type::BAEABLOBEGI(_)) = self.extend_type {
+    pub fn mut_ADBNPHDPPIH(&mut self) -> &mut super::IDLACKBINMC::IDLACKBINMC {
+        if let ::std::option::Option::Some(chat_data::Extend_type::ADBNPHDPPIH(_)) = self.extend_type {
         } else {
-            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::BAEABLOBEGI(super::MEBBEGGFJMI::MEBBEGGFJMI::new()));
+            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::ADBNPHDPPIH(super::IDLACKBINMC::IDLACKBINMC::new()));
         }
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::BAEABLOBEGI(ref mut v)) => v,
+            ::std::option::Option::Some(chat_data::Extend_type::ADBNPHDPPIH(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_BAEABLOBEGI(&mut self) -> super::MEBBEGGFJMI::MEBBEGGFJMI {
-        if self.has_BAEABLOBEGI() {
+    pub fn take_ADBNPHDPPIH(&mut self) -> super::IDLACKBINMC::IDLACKBINMC {
+        if self.has_ADBNPHDPPIH() {
             match self.extend_type.take() {
-                ::std::option::Option::Some(chat_data::Extend_type::BAEABLOBEGI(v)) => v,
+                ::std::option::Option::Some(chat_data::Extend_type::ADBNPHDPPIH(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::MEBBEGGFJMI::MEBBEGGFJMI::new()
+            super::IDLACKBINMC::IDLACKBINMC::new()
         }
     }
 
-    // .OIJJJKLMFNO DLBNMNCPEEH = 107;
+    // .IGCHDHFMPBJ LPLCDCIFOOK = 107;
 
-    pub fn DLBNMNCPEEH(&self) -> &super::OIJJJKLMFNO::OIJJJKLMFNO {
+    pub fn LPLCDCIFOOK(&self) -> &super::IGCHDHFMPBJ::IGCHDHFMPBJ {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::DLBNMNCPEEH(ref v)) => v,
-            _ => <super::OIJJJKLMFNO::OIJJJKLMFNO as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(chat_data::Extend_type::LPLCDCIFOOK(ref v)) => v,
+            _ => <super::IGCHDHFMPBJ::IGCHDHFMPBJ as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_DLBNMNCPEEH(&mut self) {
+    pub fn clear_LPLCDCIFOOK(&mut self) {
         self.extend_type = ::std::option::Option::None;
     }
 
-    pub fn has_DLBNMNCPEEH(&self) -> bool {
+    pub fn has_LPLCDCIFOOK(&self) -> bool {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::DLBNMNCPEEH(..)) => true,
+            ::std::option::Option::Some(chat_data::Extend_type::LPLCDCIFOOK(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_DLBNMNCPEEH(&mut self, v: super::OIJJJKLMFNO::OIJJJKLMFNO) {
-        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::DLBNMNCPEEH(v))
+    pub fn set_LPLCDCIFOOK(&mut self, v: super::IGCHDHFMPBJ::IGCHDHFMPBJ) {
+        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::LPLCDCIFOOK(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_DLBNMNCPEEH(&mut self) -> &mut super::OIJJJKLMFNO::OIJJJKLMFNO {
-        if let ::std::option::Option::Some(chat_data::Extend_type::DLBNMNCPEEH(_)) = self.extend_type {
+    pub fn mut_LPLCDCIFOOK(&mut self) -> &mut super::IGCHDHFMPBJ::IGCHDHFMPBJ {
+        if let ::std::option::Option::Some(chat_data::Extend_type::LPLCDCIFOOK(_)) = self.extend_type {
         } else {
-            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::DLBNMNCPEEH(super::OIJJJKLMFNO::OIJJJKLMFNO::new()));
+            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::LPLCDCIFOOK(super::IGCHDHFMPBJ::IGCHDHFMPBJ::new()));
         }
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::DLBNMNCPEEH(ref mut v)) => v,
+            ::std::option::Option::Some(chat_data::Extend_type::LPLCDCIFOOK(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_DLBNMNCPEEH(&mut self) -> super::OIJJJKLMFNO::OIJJJKLMFNO {
-        if self.has_DLBNMNCPEEH() {
+    pub fn take_LPLCDCIFOOK(&mut self) -> super::IGCHDHFMPBJ::IGCHDHFMPBJ {
+        if self.has_LPLCDCIFOOK() {
             match self.extend_type.take() {
-                ::std::option::Option::Some(chat_data::Extend_type::DLBNMNCPEEH(v)) => v,
+                ::std::option::Option::Some(chat_data::Extend_type::LPLCDCIFOOK(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::OIJJJKLMFNO::OIJJJKLMFNO::new()
+            super::IGCHDHFMPBJ::IGCHDHFMPBJ::new()
         }
     }
 
-    // .ECLEPFKJFLC MPGEJDAEOGJ = 108;
+    // .PELDIEOMMDM NLHJFKGNAMB = 108;
 
-    pub fn MPGEJDAEOGJ(&self) -> &super::ECLEPFKJFLC::ECLEPFKJFLC {
+    pub fn NLHJFKGNAMB(&self) -> &super::PELDIEOMMDM::PELDIEOMMDM {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::MPGEJDAEOGJ(ref v)) => v,
-            _ => <super::ECLEPFKJFLC::ECLEPFKJFLC as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(chat_data::Extend_type::NLHJFKGNAMB(ref v)) => v,
+            _ => <super::PELDIEOMMDM::PELDIEOMMDM as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_MPGEJDAEOGJ(&mut self) {
+    pub fn clear_NLHJFKGNAMB(&mut self) {
         self.extend_type = ::std::option::Option::None;
     }
 
-    pub fn has_MPGEJDAEOGJ(&self) -> bool {
+    pub fn has_NLHJFKGNAMB(&self) -> bool {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::MPGEJDAEOGJ(..)) => true,
+            ::std::option::Option::Some(chat_data::Extend_type::NLHJFKGNAMB(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_MPGEJDAEOGJ(&mut self, v: super::ECLEPFKJFLC::ECLEPFKJFLC) {
-        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::MPGEJDAEOGJ(v))
+    pub fn set_NLHJFKGNAMB(&mut self, v: super::PELDIEOMMDM::PELDIEOMMDM) {
+        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::NLHJFKGNAMB(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_MPGEJDAEOGJ(&mut self) -> &mut super::ECLEPFKJFLC::ECLEPFKJFLC {
-        if let ::std::option::Option::Some(chat_data::Extend_type::MPGEJDAEOGJ(_)) = self.extend_type {
+    pub fn mut_NLHJFKGNAMB(&mut self) -> &mut super::PELDIEOMMDM::PELDIEOMMDM {
+        if let ::std::option::Option::Some(chat_data::Extend_type::NLHJFKGNAMB(_)) = self.extend_type {
         } else {
-            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::MPGEJDAEOGJ(super::ECLEPFKJFLC::ECLEPFKJFLC::new()));
+            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::NLHJFKGNAMB(super::PELDIEOMMDM::PELDIEOMMDM::new()));
         }
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::MPGEJDAEOGJ(ref mut v)) => v,
+            ::std::option::Option::Some(chat_data::Extend_type::NLHJFKGNAMB(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_MPGEJDAEOGJ(&mut self) -> super::ECLEPFKJFLC::ECLEPFKJFLC {
-        if self.has_MPGEJDAEOGJ() {
+    pub fn take_NLHJFKGNAMB(&mut self) -> super::PELDIEOMMDM::PELDIEOMMDM {
+        if self.has_NLHJFKGNAMB() {
             match self.extend_type.take() {
-                ::std::option::Option::Some(chat_data::Extend_type::MPGEJDAEOGJ(v)) => v,
+                ::std::option::Option::Some(chat_data::Extend_type::NLHJFKGNAMB(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::ECLEPFKJFLC::ECLEPFKJFLC::new()
+            super::PELDIEOMMDM::PELDIEOMMDM::new()
         }
     }
 
-    // .CHDLBDDHKDJ CMFDCKANPGD = 109;
+    // .OPLFDAGPBEI BCLPAMNPHNP = 109;
 
-    pub fn CMFDCKANPGD(&self) -> &super::CHDLBDDHKDJ::CHDLBDDHKDJ {
+    pub fn BCLPAMNPHNP(&self) -> &super::OPLFDAGPBEI::OPLFDAGPBEI {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::CMFDCKANPGD(ref v)) => v,
-            _ => <super::CHDLBDDHKDJ::CHDLBDDHKDJ as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(chat_data::Extend_type::BCLPAMNPHNP(ref v)) => v,
+            _ => <super::OPLFDAGPBEI::OPLFDAGPBEI as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_CMFDCKANPGD(&mut self) {
+    pub fn clear_BCLPAMNPHNP(&mut self) {
         self.extend_type = ::std::option::Option::None;
     }
 
-    pub fn has_CMFDCKANPGD(&self) -> bool {
+    pub fn has_BCLPAMNPHNP(&self) -> bool {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::CMFDCKANPGD(..)) => true,
+            ::std::option::Option::Some(chat_data::Extend_type::BCLPAMNPHNP(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_CMFDCKANPGD(&mut self, v: super::CHDLBDDHKDJ::CHDLBDDHKDJ) {
-        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::CMFDCKANPGD(v))
+    pub fn set_BCLPAMNPHNP(&mut self, v: super::OPLFDAGPBEI::OPLFDAGPBEI) {
+        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::BCLPAMNPHNP(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_CMFDCKANPGD(&mut self) -> &mut super::CHDLBDDHKDJ::CHDLBDDHKDJ {
-        if let ::std::option::Option::Some(chat_data::Extend_type::CMFDCKANPGD(_)) = self.extend_type {
+    pub fn mut_BCLPAMNPHNP(&mut self) -> &mut super::OPLFDAGPBEI::OPLFDAGPBEI {
+        if let ::std::option::Option::Some(chat_data::Extend_type::BCLPAMNPHNP(_)) = self.extend_type {
         } else {
-            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::CMFDCKANPGD(super::CHDLBDDHKDJ::CHDLBDDHKDJ::new()));
+            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::BCLPAMNPHNP(super::OPLFDAGPBEI::OPLFDAGPBEI::new()));
         }
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::CMFDCKANPGD(ref mut v)) => v,
+            ::std::option::Option::Some(chat_data::Extend_type::BCLPAMNPHNP(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_CMFDCKANPGD(&mut self) -> super::CHDLBDDHKDJ::CHDLBDDHKDJ {
-        if self.has_CMFDCKANPGD() {
+    pub fn take_BCLPAMNPHNP(&mut self) -> super::OPLFDAGPBEI::OPLFDAGPBEI {
+        if self.has_BCLPAMNPHNP() {
             match self.extend_type.take() {
-                ::std::option::Option::Some(chat_data::Extend_type::CMFDCKANPGD(v)) => v,
+                ::std::option::Option::Some(chat_data::Extend_type::BCLPAMNPHNP(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::CHDLBDDHKDJ::CHDLBDDHKDJ::new()
+            super::OPLFDAGPBEI::OPLFDAGPBEI::new()
         }
     }
 
-    // .JNOCGFDGHEB LEGOJPMNCLL = 110;
+    // .HCKADDLIGEB HJADNIAAMGJ = 110;
 
-    pub fn LEGOJPMNCLL(&self) -> &super::JNOCGFDGHEB::JNOCGFDGHEB {
+    pub fn HJADNIAAMGJ(&self) -> &super::HCKADDLIGEB::HCKADDLIGEB {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::LEGOJPMNCLL(ref v)) => v,
-            _ => <super::JNOCGFDGHEB::JNOCGFDGHEB as ::protobuf::Message>::default_instance(),
+            ::std::option::Option::Some(chat_data::Extend_type::HJADNIAAMGJ(ref v)) => v,
+            _ => <super::HCKADDLIGEB::HCKADDLIGEB as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_LEGOJPMNCLL(&mut self) {
+    pub fn clear_HJADNIAAMGJ(&mut self) {
         self.extend_type = ::std::option::Option::None;
     }
 
-    pub fn has_LEGOJPMNCLL(&self) -> bool {
+    pub fn has_HJADNIAAMGJ(&self) -> bool {
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::LEGOJPMNCLL(..)) => true,
+            ::std::option::Option::Some(chat_data::Extend_type::HJADNIAAMGJ(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_LEGOJPMNCLL(&mut self, v: super::JNOCGFDGHEB::JNOCGFDGHEB) {
-        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::LEGOJPMNCLL(v))
+    pub fn set_HJADNIAAMGJ(&mut self, v: super::HCKADDLIGEB::HCKADDLIGEB) {
+        self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::HJADNIAAMGJ(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_LEGOJPMNCLL(&mut self) -> &mut super::JNOCGFDGHEB::JNOCGFDGHEB {
-        if let ::std::option::Option::Some(chat_data::Extend_type::LEGOJPMNCLL(_)) = self.extend_type {
+    pub fn mut_HJADNIAAMGJ(&mut self) -> &mut super::HCKADDLIGEB::HCKADDLIGEB {
+        if let ::std::option::Option::Some(chat_data::Extend_type::HJADNIAAMGJ(_)) = self.extend_type {
         } else {
-            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::LEGOJPMNCLL(super::JNOCGFDGHEB::JNOCGFDGHEB::new()));
+            self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::HJADNIAAMGJ(super::HCKADDLIGEB::HCKADDLIGEB::new()));
         }
         match self.extend_type {
-            ::std::option::Option::Some(chat_data::Extend_type::LEGOJPMNCLL(ref mut v)) => v,
+            ::std::option::Option::Some(chat_data::Extend_type::HJADNIAAMGJ(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_LEGOJPMNCLL(&mut self) -> super::JNOCGFDGHEB::JNOCGFDGHEB {
-        if self.has_LEGOJPMNCLL() {
+    pub fn take_HJADNIAAMGJ(&mut self) -> super::HCKADDLIGEB::HCKADDLIGEB {
+        if self.has_HJADNIAAMGJ() {
             match self.extend_type.take() {
-                ::std::option::Option::Some(chat_data::Extend_type::LEGOJPMNCLL(v)) => v,
+                ::std::option::Option::Some(chat_data::Extend_type::HJADNIAAMGJ(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::JNOCGFDGHEB::JNOCGFDGHEB::new()
+            super::HCKADDLIGEB::HCKADDLIGEB::new()
         }
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(1);
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CIKDDLMJLEN::CIKDDLMJLEN>(
-            "EPKIJKOHNKC",
-            ChatData::has_EPKIJKOHNKC,
-            ChatData::EPKIJKOHNKC,
-            ChatData::mut_EPKIJKOHNKC,
-            ChatData::set_EPKIJKOHNKC,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ECCKHOLLPPC::ECCKHOLLPPC>(
+            "NPBOINAPJJE",
+            ChatData::has_NPBOINAPJJE,
+            ChatData::NPBOINAPJJE,
+            ChatData::mut_NPBOINAPJJE,
+            ChatData::set_NPBOINAPJJE,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MMLBJFHEAKL::MMLBJFHEAKL>(
-            "MOELBPPIPDC",
-            ChatData::has_MOELBPPIPDC,
-            ChatData::MOELBPPIPDC,
-            ChatData::mut_MOELBPPIPDC,
-            ChatData::set_MOELBPPIPDC,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NDDOMFBJMKE::NDDOMFBJMKE>(
+            "IBJBFODFIMN",
+            ChatData::has_IBJBFODFIMN,
+            ChatData::IBJBFODFIMN,
+            ChatData::mut_IBJBFODFIMN,
+            ChatData::set_IBJBFODFIMN,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_deref_has_get_set_simpler_accessor::<_, _>(
             "message_text",
@@ -540,47 +540,47 @@ impl ChatData {
             ChatData::extra_id,
             ChatData::set_extra_id,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PEKNOBDHAKO::PEKNOBDHAKO>(
-            "IMOLBGOCNEI",
-            ChatData::has_IMOLBGOCNEI,
-            ChatData::IMOLBGOCNEI,
-            ChatData::mut_IMOLBGOCNEI,
-            ChatData::set_IMOLBGOCNEI,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::GCBHOIJLBFL::GCBHOIJLBFL>(
+            "IALHIFELMGE",
+            ChatData::has_IALHIFELMGE,
+            ChatData::IALHIFELMGE,
+            ChatData::mut_IALHIFELMGE,
+            ChatData::set_IALHIFELMGE,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MEBBEGGFJMI::MEBBEGGFJMI>(
-            "BAEABLOBEGI",
-            ChatData::has_BAEABLOBEGI,
-            ChatData::BAEABLOBEGI,
-            ChatData::mut_BAEABLOBEGI,
-            ChatData::set_BAEABLOBEGI,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IDLACKBINMC::IDLACKBINMC>(
+            "ADBNPHDPPIH",
+            ChatData::has_ADBNPHDPPIH,
+            ChatData::ADBNPHDPPIH,
+            ChatData::mut_ADBNPHDPPIH,
+            ChatData::set_ADBNPHDPPIH,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OIJJJKLMFNO::OIJJJKLMFNO>(
-            "DLBNMNCPEEH",
-            ChatData::has_DLBNMNCPEEH,
-            ChatData::DLBNMNCPEEH,
-            ChatData::mut_DLBNMNCPEEH,
-            ChatData::set_DLBNMNCPEEH,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::IGCHDHFMPBJ::IGCHDHFMPBJ>(
+            "LPLCDCIFOOK",
+            ChatData::has_LPLCDCIFOOK,
+            ChatData::LPLCDCIFOOK,
+            ChatData::mut_LPLCDCIFOOK,
+            ChatData::set_LPLCDCIFOOK,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::ECLEPFKJFLC::ECLEPFKJFLC>(
-            "MPGEJDAEOGJ",
-            ChatData::has_MPGEJDAEOGJ,
-            ChatData::MPGEJDAEOGJ,
-            ChatData::mut_MPGEJDAEOGJ,
-            ChatData::set_MPGEJDAEOGJ,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PELDIEOMMDM::PELDIEOMMDM>(
+            "NLHJFKGNAMB",
+            ChatData::has_NLHJFKGNAMB,
+            ChatData::NLHJFKGNAMB,
+            ChatData::mut_NLHJFKGNAMB,
+            ChatData::set_NLHJFKGNAMB,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::CHDLBDDHKDJ::CHDLBDDHKDJ>(
-            "CMFDCKANPGD",
-            ChatData::has_CMFDCKANPGD,
-            ChatData::CMFDCKANPGD,
-            ChatData::mut_CMFDCKANPGD,
-            ChatData::set_CMFDCKANPGD,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::OPLFDAGPBEI::OPLFDAGPBEI>(
+            "BCLPAMNPHNP",
+            ChatData::has_BCLPAMNPHNP,
+            ChatData::BCLPAMNPHNP,
+            ChatData::mut_BCLPAMNPHNP,
+            ChatData::set_BCLPAMNPHNP,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::JNOCGFDGHEB::JNOCGFDGHEB>(
-            "LEGOJPMNCLL",
-            ChatData::has_LEGOJPMNCLL,
-            ChatData::LEGOJPMNCLL,
-            ChatData::mut_LEGOJPMNCLL,
-            ChatData::set_LEGOJPMNCLL,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HCKADDLIGEB::HCKADDLIGEB>(
+            "HJADNIAAMGJ",
+            ChatData::has_HJADNIAAMGJ,
+            ChatData::HJADNIAAMGJ,
+            ChatData::mut_HJADNIAAMGJ,
+            ChatData::set_HJADNIAAMGJ,
         ));
         oneofs.push(chat_data::Extend_type::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChatData>(
@@ -602,10 +602,10 @@ impl ::protobuf::Message for ChatData {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 810 => {
-                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::EPKIJKOHNKC(is.read_message()?));
+                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::NPBOINAPJJE(is.read_message()?));
                 },
                 818 => {
-                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::MOELBPPIPDC(is.read_message()?));
+                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::IBJBFODFIMN(is.read_message()?));
                 },
                 826 => {
                     self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::MessageText(is.read_string()?));
@@ -614,22 +614,22 @@ impl ::protobuf::Message for ChatData {
                     self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::ExtraId(is.read_uint32()?));
                 },
                 842 => {
-                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::IMOLBGOCNEI(is.read_message()?));
+                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::IALHIFELMGE(is.read_message()?));
                 },
                 850 => {
-                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::BAEABLOBEGI(is.read_message()?));
+                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::ADBNPHDPPIH(is.read_message()?));
                 },
                 858 => {
-                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::DLBNMNCPEEH(is.read_message()?));
+                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::LPLCDCIFOOK(is.read_message()?));
                 },
                 866 => {
-                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::MPGEJDAEOGJ(is.read_message()?));
+                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::NLHJFKGNAMB(is.read_message()?));
                 },
                 874 => {
-                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::CMFDCKANPGD(is.read_message()?));
+                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::BCLPAMNPHNP(is.read_message()?));
                 },
                 882 => {
-                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::LEGOJPMNCLL(is.read_message()?));
+                    self.extend_type = ::std::option::Option::Some(chat_data::Extend_type::HJADNIAAMGJ(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -645,11 +645,11 @@ impl ::protobuf::Message for ChatData {
         let mut my_size = 0;
         if let ::std::option::Option::Some(ref v) = self.extend_type {
             match v {
-                &chat_data::Extend_type::EPKIJKOHNKC(ref v) => {
+                &chat_data::Extend_type::NPBOINAPJJE(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chat_data::Extend_type::MOELBPPIPDC(ref v) => {
+                &chat_data::Extend_type::IBJBFODFIMN(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -659,27 +659,27 @@ impl ::protobuf::Message for ChatData {
                 &chat_data::Extend_type::ExtraId(v) => {
                     my_size += ::protobuf::rt::uint32_size(104, v);
                 },
-                &chat_data::Extend_type::IMOLBGOCNEI(ref v) => {
+                &chat_data::Extend_type::IALHIFELMGE(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chat_data::Extend_type::BAEABLOBEGI(ref v) => {
+                &chat_data::Extend_type::ADBNPHDPPIH(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chat_data::Extend_type::DLBNMNCPEEH(ref v) => {
+                &chat_data::Extend_type::LPLCDCIFOOK(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chat_data::Extend_type::MPGEJDAEOGJ(ref v) => {
+                &chat_data::Extend_type::NLHJFKGNAMB(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chat_data::Extend_type::CMFDCKANPGD(ref v) => {
+                &chat_data::Extend_type::BCLPAMNPHNP(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &chat_data::Extend_type::LEGOJPMNCLL(ref v) => {
+                &chat_data::Extend_type::HJADNIAAMGJ(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -693,10 +693,10 @@ impl ::protobuf::Message for ChatData {
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let ::std::option::Option::Some(ref v) = self.extend_type {
             match v {
-                &chat_data::Extend_type::EPKIJKOHNKC(ref v) => {
+                &chat_data::Extend_type::NPBOINAPJJE(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
                 },
-                &chat_data::Extend_type::MOELBPPIPDC(ref v) => {
+                &chat_data::Extend_type::IBJBFODFIMN(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(102, v, os)?;
                 },
                 &chat_data::Extend_type::MessageText(ref v) => {
@@ -705,22 +705,22 @@ impl ::protobuf::Message for ChatData {
                 &chat_data::Extend_type::ExtraId(v) => {
                     os.write_uint32(104, v)?;
                 },
-                &chat_data::Extend_type::IMOLBGOCNEI(ref v) => {
+                &chat_data::Extend_type::IALHIFELMGE(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(105, v, os)?;
                 },
-                &chat_data::Extend_type::BAEABLOBEGI(ref v) => {
+                &chat_data::Extend_type::ADBNPHDPPIH(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(106, v, os)?;
                 },
-                &chat_data::Extend_type::DLBNMNCPEEH(ref v) => {
+                &chat_data::Extend_type::LPLCDCIFOOK(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(107, v, os)?;
                 },
-                &chat_data::Extend_type::MPGEJDAEOGJ(ref v) => {
+                &chat_data::Extend_type::NLHJFKGNAMB(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(108, v, os)?;
                 },
-                &chat_data::Extend_type::CMFDCKANPGD(ref v) => {
+                &chat_data::Extend_type::BCLPAMNPHNP(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(109, v, os)?;
                 },
-                &chat_data::Extend_type::LEGOJPMNCLL(ref v) => {
+                &chat_data::Extend_type::HJADNIAAMGJ(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(110, v, os)?;
                 },
             };
@@ -788,26 +788,26 @@ pub mod chat_data {
     #[non_exhaustive]
     // @@protoc_insertion_point(oneof:ChatData.extend_type)
     pub enum Extend_type {
-        // @@protoc_insertion_point(oneof_field:ChatData.EPKIJKOHNKC)
-        EPKIJKOHNKC(super::super::CIKDDLMJLEN::CIKDDLMJLEN),
-        // @@protoc_insertion_point(oneof_field:ChatData.MOELBPPIPDC)
-        MOELBPPIPDC(super::super::MMLBJFHEAKL::MMLBJFHEAKL),
+        // @@protoc_insertion_point(oneof_field:ChatData.NPBOINAPJJE)
+        NPBOINAPJJE(super::super::ECCKHOLLPPC::ECCKHOLLPPC),
+        // @@protoc_insertion_point(oneof_field:ChatData.IBJBFODFIMN)
+        IBJBFODFIMN(super::super::NDDOMFBJMKE::NDDOMFBJMKE),
         // @@protoc_insertion_point(oneof_field:ChatData.message_text)
         MessageText(::std::string::String),
         // @@protoc_insertion_point(oneof_field:ChatData.extra_id)
         ExtraId(u32),
-        // @@protoc_insertion_point(oneof_field:ChatData.IMOLBGOCNEI)
-        IMOLBGOCNEI(super::super::PEKNOBDHAKO::PEKNOBDHAKO),
-        // @@protoc_insertion_point(oneof_field:ChatData.BAEABLOBEGI)
-        BAEABLOBEGI(super::super::MEBBEGGFJMI::MEBBEGGFJMI),
-        // @@protoc_insertion_point(oneof_field:ChatData.DLBNMNCPEEH)
-        DLBNMNCPEEH(super::super::OIJJJKLMFNO::OIJJJKLMFNO),
-        // @@protoc_insertion_point(oneof_field:ChatData.MPGEJDAEOGJ)
-        MPGEJDAEOGJ(super::super::ECLEPFKJFLC::ECLEPFKJFLC),
-        // @@protoc_insertion_point(oneof_field:ChatData.CMFDCKANPGD)
-        CMFDCKANPGD(super::super::CHDLBDDHKDJ::CHDLBDDHKDJ),
-        // @@protoc_insertion_point(oneof_field:ChatData.LEGOJPMNCLL)
-        LEGOJPMNCLL(super::super::JNOCGFDGHEB::JNOCGFDGHEB),
+        // @@protoc_insertion_point(oneof_field:ChatData.IALHIFELMGE)
+        IALHIFELMGE(super::super::GCBHOIJLBFL::GCBHOIJLBFL),
+        // @@protoc_insertion_point(oneof_field:ChatData.ADBNPHDPPIH)
+        ADBNPHDPPIH(super::super::IDLACKBINMC::IDLACKBINMC),
+        // @@protoc_insertion_point(oneof_field:ChatData.LPLCDCIFOOK)
+        LPLCDCIFOOK(super::super::IGCHDHFMPBJ::IGCHDHFMPBJ),
+        // @@protoc_insertion_point(oneof_field:ChatData.NLHJFKGNAMB)
+        NLHJFKGNAMB(super::super::PELDIEOMMDM::PELDIEOMMDM),
+        // @@protoc_insertion_point(oneof_field:ChatData.BCLPAMNPHNP)
+        BCLPAMNPHNP(super::super::OPLFDAGPBEI::OPLFDAGPBEI),
+        // @@protoc_insertion_point(oneof_field:ChatData.HJADNIAAMGJ)
+        HJADNIAAMGJ(super::super::HCKADDLIGEB::HCKADDLIGEB),
     }
 
     impl ::protobuf::Oneof for Extend_type {
@@ -828,20 +828,20 @@ pub mod chat_data {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eChatData.proto\x1a\x11CHDLBDDHKDJ.proto\x1a\x11CIKDDLMJLEN.proto\
-    \x1a\x11ECLEPFKJFLC.proto\x1a\x11JNOCGFDGHEB.proto\x1a\x11MEBBEGGFJMI.pr\
-    oto\x1a\x11MMLBJFHEAKL.proto\x1a\x11OIJJJKLMFNO.proto\x1a\x11PEKNOBDHAKO\
-    .proto\"\xeb\x03\n\x08ChatData\x120\n\x0bEPKIJKOHNKC\x18e\x20\x01(\x0b2\
-    \x0c.CIKDDLMJLENH\0R\x0bEPKIJKOHNKC\x120\n\x0bMOELBPPIPDC\x18f\x20\x01(\
-    \x0b2\x0c.MMLBJFHEAKLH\0R\x0bMOELBPPIPDC\x12#\n\x0cmessage_text\x18g\x20\
+    \n\x0eChatData.proto\x1a\x11ECCKHOLLPPC.proto\x1a\x11GCBHOIJLBFL.proto\
+    \x1a\x11HCKADDLIGEB.proto\x1a\x11IDLACKBINMC.proto\x1a\x11IGCHDHFMPBJ.pr\
+    oto\x1a\x11NDDOMFBJMKE.proto\x1a\x11OPLFDAGPBEI.proto\x1a\x11PELDIEOMMDM\
+    .proto\"\xeb\x03\n\x08ChatData\x120\n\x0bNPBOINAPJJE\x18e\x20\x01(\x0b2\
+    \x0c.ECCKHOLLPPCH\0R\x0bNPBOINAPJJE\x120\n\x0bIBJBFODFIMN\x18f\x20\x01(\
+    \x0b2\x0c.NDDOMFBJMKEH\0R\x0bIBJBFODFIMN\x12#\n\x0cmessage_text\x18g\x20\
     \x01(\tH\0R\x0bmessageText\x12\x1b\n\x08extra_id\x18h\x20\x01(\rH\0R\x07\
-    extraId\x120\n\x0bIMOLBGOCNEI\x18i\x20\x01(\x0b2\x0c.PEKNOBDHAKOH\0R\x0b\
-    IMOLBGOCNEI\x120\n\x0bBAEABLOBEGI\x18j\x20\x01(\x0b2\x0c.MEBBEGGFJMIH\0R\
-    \x0bBAEABLOBEGI\x120\n\x0bDLBNMNCPEEH\x18k\x20\x01(\x0b2\x0c.OIJJJKLMFNO\
-    H\0R\x0bDLBNMNCPEEH\x120\n\x0bMPGEJDAEOGJ\x18l\x20\x01(\x0b2\x0c.ECLEPFK\
-    JFLCH\0R\x0bMPGEJDAEOGJ\x120\n\x0bCMFDCKANPGD\x18m\x20\x01(\x0b2\x0c.CHD\
-    LBDDHKDJH\0R\x0bCMFDCKANPGD\x120\n\x0bLEGOJPMNCLL\x18n\x20\x01(\x0b2\x0c\
-    .JNOCGFDGHEBH\0R\x0bLEGOJPMNCLLB\r\n\x0bextend_typeb\x06proto3\
+    extraId\x120\n\x0bIALHIFELMGE\x18i\x20\x01(\x0b2\x0c.GCBHOIJLBFLH\0R\x0b\
+    IALHIFELMGE\x120\n\x0bADBNPHDPPIH\x18j\x20\x01(\x0b2\x0c.IDLACKBINMCH\0R\
+    \x0bADBNPHDPPIH\x120\n\x0bLPLCDCIFOOK\x18k\x20\x01(\x0b2\x0c.IGCHDHFMPBJ\
+    H\0R\x0bLPLCDCIFOOK\x120\n\x0bNLHJFKGNAMB\x18l\x20\x01(\x0b2\x0c.PELDIEO\
+    MMDMH\0R\x0bNLHJFKGNAMB\x120\n\x0bBCLPAMNPHNP\x18m\x20\x01(\x0b2\x0c.OPL\
+    FDAGPBEIH\0R\x0bBCLPAMNPHNP\x120\n\x0bHJADNIAAMGJ\x18n\x20\x01(\x0b2\x0c\
+    .HCKADDLIGEBH\0R\x0bHJADNIAAMGJB\r\n\x0bextend_typeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -859,14 +859,14 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(8);
-            deps.push(super::CHDLBDDHKDJ::file_descriptor().clone());
-            deps.push(super::CIKDDLMJLEN::file_descriptor().clone());
-            deps.push(super::ECLEPFKJFLC::file_descriptor().clone());
-            deps.push(super::JNOCGFDGHEB::file_descriptor().clone());
-            deps.push(super::MEBBEGGFJMI::file_descriptor().clone());
-            deps.push(super::MMLBJFHEAKL::file_descriptor().clone());
-            deps.push(super::OIJJJKLMFNO::file_descriptor().clone());
-            deps.push(super::PEKNOBDHAKO::file_descriptor().clone());
+            deps.push(super::ECCKHOLLPPC::file_descriptor().clone());
+            deps.push(super::GCBHOIJLBFL::file_descriptor().clone());
+            deps.push(super::HCKADDLIGEB::file_descriptor().clone());
+            deps.push(super::IDLACKBINMC::file_descriptor().clone());
+            deps.push(super::IGCHDHFMPBJ::file_descriptor().clone());
+            deps.push(super::NDDOMFBJMKE::file_descriptor().clone());
+            deps.push(super::OPLFDAGPBEI::file_descriptor().clone());
+            deps.push(super::PELDIEOMMDM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChatData::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

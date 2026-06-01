@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPetType)
 pub enum CmdPetType {
-    // @@protoc_insertion_point(enum_value:CmdPetType.AMPLNBBIBJH_PCPDHELPKEM)
-    AMPLNBBIBJH_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdRecallPetScRsp)
-    CmdRecallPetScRsp = 7608,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdGetPetDataScRsp)
-    CmdGetPetDataScRsp = 7604,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdSummonPetCsReq)
-    CmdSummonPetCsReq = 7602,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdGetPetDataCsReq)
-    CmdGetPetDataCsReq = 7601,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdSummonPetScRsp)
-    CmdSummonPetScRsp = 7614,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdFLNMCMNJGHO)
-    CmdFLNMCMNJGHO = 7610,
-    // @@protoc_insertion_point(enum_value:CmdPetType.CmdRecallPetCsReq)
-    CmdRecallPetCsReq = 7603,
+    // @@protoc_insertion_point(enum_value:CmdPetType.MAMMDADNGLP_NLCDGIPGFDJ)
+    MAMMDADNGLP_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdPetType.MAMMDADNGLP_BCKIBFHMGOF)
+    MAMMDADNGLP_BCKIBFHMGOF = 7603,
+    // @@protoc_insertion_point(enum_value:CmdPetType.MAMMDADNGLP_NDBDDBICHPP)
+    MAMMDADNGLP_NDBDDBICHPP = 7608,
+    // @@protoc_insertion_point(enum_value:CmdPetType.MAMMDADNGLP_HOFFDKBENKE)
+    MAMMDADNGLP_HOFFDKBENKE = 7611,
+    // @@protoc_insertion_point(enum_value:CmdPetType.MAMMDADNGLP_BCJECGLBFMD)
+    MAMMDADNGLP_BCJECGLBFMD = 7614,
+    // @@protoc_insertion_point(enum_value:CmdPetType.MAMMDADNGLP_KLNPCNHGBOL)
+    MAMMDADNGLP_KLNPCNHGBOL = 7617,
+    // @@protoc_insertion_point(enum_value:CmdPetType.MAMMDADNGLP_KHHMEFCDMIF)
+    MAMMDADNGLP_KHHMEFCDMIF = 7602,
+    // @@protoc_insertion_point(enum_value:CmdPetType.MAMMDADNGLP_LKIKIOEFJEC)
+    MAMMDADNGLP_LKIKIOEFJEC = 7623,
 }
 
 impl ::protobuf::Enum for CmdPetType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for CmdPetType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPetType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPetType::AMPLNBBIBJH_PCPDHELPKEM),
-            7608 => ::std::option::Option::Some(CmdPetType::CmdRecallPetScRsp),
-            7604 => ::std::option::Option::Some(CmdPetType::CmdGetPetDataScRsp),
-            7602 => ::std::option::Option::Some(CmdPetType::CmdSummonPetCsReq),
-            7601 => ::std::option::Option::Some(CmdPetType::CmdGetPetDataCsReq),
-            7614 => ::std::option::Option::Some(CmdPetType::CmdSummonPetScRsp),
-            7610 => ::std::option::Option::Some(CmdPetType::CmdFLNMCMNJGHO),
-            7603 => ::std::option::Option::Some(CmdPetType::CmdRecallPetCsReq),
+            0 => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_NLCDGIPGFDJ),
+            7603 => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_BCKIBFHMGOF),
+            7608 => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_NDBDDBICHPP),
+            7611 => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_HOFFDKBENKE),
+            7614 => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_BCJECGLBFMD),
+            7617 => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_KLNPCNHGBOL),
+            7602 => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_KHHMEFCDMIF),
+            7623 => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_LKIKIOEFJEC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPetType> {
         match str {
-            "AMPLNBBIBJH_PCPDHELPKEM" => ::std::option::Option::Some(CmdPetType::AMPLNBBIBJH_PCPDHELPKEM),
-            "CmdRecallPetScRsp" => ::std::option::Option::Some(CmdPetType::CmdRecallPetScRsp),
-            "CmdGetPetDataScRsp" => ::std::option::Option::Some(CmdPetType::CmdGetPetDataScRsp),
-            "CmdSummonPetCsReq" => ::std::option::Option::Some(CmdPetType::CmdSummonPetCsReq),
-            "CmdGetPetDataCsReq" => ::std::option::Option::Some(CmdPetType::CmdGetPetDataCsReq),
-            "CmdSummonPetScRsp" => ::std::option::Option::Some(CmdPetType::CmdSummonPetScRsp),
-            "CmdFLNMCMNJGHO" => ::std::option::Option::Some(CmdPetType::CmdFLNMCMNJGHO),
-            "CmdRecallPetCsReq" => ::std::option::Option::Some(CmdPetType::CmdRecallPetCsReq),
+            "MAMMDADNGLP_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_NLCDGIPGFDJ),
+            "MAMMDADNGLP_BCKIBFHMGOF" => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_BCKIBFHMGOF),
+            "MAMMDADNGLP_NDBDDBICHPP" => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_NDBDDBICHPP),
+            "MAMMDADNGLP_HOFFDKBENKE" => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_HOFFDKBENKE),
+            "MAMMDADNGLP_BCJECGLBFMD" => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_BCJECGLBFMD),
+            "MAMMDADNGLP_KLNPCNHGBOL" => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_KLNPCNHGBOL),
+            "MAMMDADNGLP_KHHMEFCDMIF" => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_KHHMEFCDMIF),
+            "MAMMDADNGLP_LKIKIOEFJEC" => ::std::option::Option::Some(CmdPetType::MAMMDADNGLP_LKIKIOEFJEC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPetType] = &[
-        CmdPetType::AMPLNBBIBJH_PCPDHELPKEM,
-        CmdPetType::CmdRecallPetScRsp,
-        CmdPetType::CmdGetPetDataScRsp,
-        CmdPetType::CmdSummonPetCsReq,
-        CmdPetType::CmdGetPetDataCsReq,
-        CmdPetType::CmdSummonPetScRsp,
-        CmdPetType::CmdFLNMCMNJGHO,
-        CmdPetType::CmdRecallPetCsReq,
+        CmdPetType::MAMMDADNGLP_NLCDGIPGFDJ,
+        CmdPetType::MAMMDADNGLP_BCKIBFHMGOF,
+        CmdPetType::MAMMDADNGLP_NDBDDBICHPP,
+        CmdPetType::MAMMDADNGLP_HOFFDKBENKE,
+        CmdPetType::MAMMDADNGLP_BCJECGLBFMD,
+        CmdPetType::MAMMDADNGLP_KLNPCNHGBOL,
+        CmdPetType::MAMMDADNGLP_KHHMEFCDMIF,
+        CmdPetType::MAMMDADNGLP_LKIKIOEFJEC,
     ];
 }
 
@@ -100,14 +100,14 @@ impl ::protobuf::EnumFull for CmdPetType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPetType::AMPLNBBIBJH_PCPDHELPKEM => 0,
-            CmdPetType::CmdRecallPetScRsp => 1,
-            CmdPetType::CmdGetPetDataScRsp => 2,
-            CmdPetType::CmdSummonPetCsReq => 3,
-            CmdPetType::CmdGetPetDataCsReq => 4,
-            CmdPetType::CmdSummonPetScRsp => 5,
-            CmdPetType::CmdFLNMCMNJGHO => 6,
-            CmdPetType::CmdRecallPetCsReq => 7,
+            CmdPetType::MAMMDADNGLP_NLCDGIPGFDJ => 0,
+            CmdPetType::MAMMDADNGLP_BCKIBFHMGOF => 1,
+            CmdPetType::MAMMDADNGLP_NDBDDBICHPP => 2,
+            CmdPetType::MAMMDADNGLP_HOFFDKBENKE => 3,
+            CmdPetType::MAMMDADNGLP_BCJECGLBFMD => 4,
+            CmdPetType::MAMMDADNGLP_KLNPCNHGBOL => 5,
+            CmdPetType::MAMMDADNGLP_KHHMEFCDMIF => 6,
+            CmdPetType::MAMMDADNGLP_LKIKIOEFJEC => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,7 +115,7 @@ impl ::protobuf::EnumFull for CmdPetType {
 
 impl ::std::default::Default for CmdPetType {
     fn default() -> Self {
-        CmdPetType::AMPLNBBIBJH_PCPDHELPKEM
+        CmdPetType::MAMMDADNGLP_NLCDGIPGFDJ
     }
 }
 
@@ -126,12 +126,12 @@ impl CmdPetType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10CmdPetType.proto*\xd0\x01\n\nCmdPetType\x12\x1b\n\x17AMPLNBBIBJH_P\
-    CPDHELPKEM\x10\0\x12\x16\n\x11CmdRecallPetScRsp\x10\xb8;\x12\x17\n\x12Cm\
-    dGetPetDataScRsp\x10\xb4;\x12\x16\n\x11CmdSummonPetCsReq\x10\xb2;\x12\
-    \x17\n\x12CmdGetPetDataCsReq\x10\xb1;\x12\x16\n\x11CmdSummonPetScRsp\x10\
-    \xbe;\x12\x13\n\x0eCmdFLNMCMNJGHO\x10\xba;\x12\x16\n\x11CmdRecallPetCsRe\
-    q\x10\xb3;b\x06proto3\
+    \n\x10CmdPetType.proto*\xfb\x01\n\nCmdPetType\x12\x1b\n\x17MAMMDADNGLP_N\
+    LCDGIPGFDJ\x10\0\x12\x1c\n\x17MAMMDADNGLP_BCKIBFHMGOF\x10\xb3;\x12\x1c\n\
+    \x17MAMMDADNGLP_NDBDDBICHPP\x10\xb8;\x12\x1c\n\x17MAMMDADNGLP_HOFFDKBENK\
+    E\x10\xbb;\x12\x1c\n\x17MAMMDADNGLP_BCJECGLBFMD\x10\xbe;\x12\x1c\n\x17MA\
+    MMDADNGLP_KLNPCNHGBOL\x10\xc1;\x12\x1c\n\x17MAMMDADNGLP_KHHMEFCDMIF\x10\
+    \xb2;\x12\x1c\n\x17MAMMDADNGLP_LKIKIOEFJEC\x10\xc7;b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

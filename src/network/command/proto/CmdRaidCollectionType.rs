@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRaidCollectionType)
 pub enum CmdRaidCollectionType {
-    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.MBPPIIEBBDJ_PCPDHELPKEM)
-    MBPPIIEBBDJ_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdFBKMLBAFKFL)
-    CmdFBKMLBAFKFL = 6942,
-    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionEnterNextRaidScRsp)
-    CmdRaidCollectionEnterNextRaidScRsp = 6955,
-    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionEnterNextRaidCsReq)
-    CmdRaidCollectionEnterNextRaidCsReq = 6950,
-    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionDataScRsp)
-    CmdRaidCollectionDataScRsp = 6960,
-    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.CmdRaidCollectionDataCsReq)
-    CmdRaidCollectionDataCsReq = 6941,
+    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_NLCDGIPGFDJ)
+    ONNDCODLMGD_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_HIKIBFCIKBA)
+    ONNDCODLMGD_HIKIBFCIKBA = 6960,
+    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_LNFHMGKBNEO)
+    ONNDCODLMGD_LNFHMGKBNEO = 6958,
+    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_BIHBGPPKCNL)
+    ONNDCODLMGD_BIHBGPPKCNL = 6946,
+    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_BNAFMMKMELE)
+    ONNDCODLMGD_BNAFMMKMELE = 6942,
+    // @@protoc_insertion_point(enum_value:CmdRaidCollectionType.ONNDCODLMGD_KKBBOIFDIDA)
+    ONNDCODLMGD_KKBBOIFDIDA = 6956,
 }
 
 impl ::protobuf::Enum for CmdRaidCollectionType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdRaidCollectionType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRaidCollectionType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRaidCollectionType::MBPPIIEBBDJ_PCPDHELPKEM),
-            6942 => ::std::option::Option::Some(CmdRaidCollectionType::CmdFBKMLBAFKFL),
-            6955 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp),
-            6950 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq),
-            6960 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScRsp),
-            6941 => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataCsReq),
+            0 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_NLCDGIPGFDJ),
+            6960 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_HIKIBFCIKBA),
+            6958 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_LNFHMGKBNEO),
+            6946 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_BIHBGPPKCNL),
+            6942 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_BNAFMMKMELE),
+            6956 => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_KKBBOIFDIDA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRaidCollectionType> {
         match str {
-            "MBPPIIEBBDJ_PCPDHELPKEM" => ::std::option::Option::Some(CmdRaidCollectionType::MBPPIIEBBDJ_PCPDHELPKEM),
-            "CmdFBKMLBAFKFL" => ::std::option::Option::Some(CmdRaidCollectionType::CmdFBKMLBAFKFL),
-            "CmdRaidCollectionEnterNextRaidScRsp" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp),
-            "CmdRaidCollectionEnterNextRaidCsReq" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq),
-            "CmdRaidCollectionDataScRsp" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataScRsp),
-            "CmdRaidCollectionDataCsReq" => ::std::option::Option::Some(CmdRaidCollectionType::CmdRaidCollectionDataCsReq),
+            "ONNDCODLMGD_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_NLCDGIPGFDJ),
+            "ONNDCODLMGD_HIKIBFCIKBA" => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_HIKIBFCIKBA),
+            "ONNDCODLMGD_LNFHMGKBNEO" => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_LNFHMGKBNEO),
+            "ONNDCODLMGD_BIHBGPPKCNL" => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_BIHBGPPKCNL),
+            "ONNDCODLMGD_BNAFMMKMELE" => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_BNAFMMKMELE),
+            "ONNDCODLMGD_KKBBOIFDIDA" => ::std::option::Option::Some(CmdRaidCollectionType::ONNDCODLMGD_KKBBOIFDIDA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRaidCollectionType] = &[
-        CmdRaidCollectionType::MBPPIIEBBDJ_PCPDHELPKEM,
-        CmdRaidCollectionType::CmdFBKMLBAFKFL,
-        CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp,
-        CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq,
-        CmdRaidCollectionType::CmdRaidCollectionDataScRsp,
-        CmdRaidCollectionType::CmdRaidCollectionDataCsReq,
+        CmdRaidCollectionType::ONNDCODLMGD_NLCDGIPGFDJ,
+        CmdRaidCollectionType::ONNDCODLMGD_HIKIBFCIKBA,
+        CmdRaidCollectionType::ONNDCODLMGD_LNFHMGKBNEO,
+        CmdRaidCollectionType::ONNDCODLMGD_BIHBGPPKCNL,
+        CmdRaidCollectionType::ONNDCODLMGD_BNAFMMKMELE,
+        CmdRaidCollectionType::ONNDCODLMGD_KKBBOIFDIDA,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdRaidCollectionType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRaidCollectionType::MBPPIIEBBDJ_PCPDHELPKEM => 0,
-            CmdRaidCollectionType::CmdFBKMLBAFKFL => 1,
-            CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidScRsp => 2,
-            CmdRaidCollectionType::CmdRaidCollectionEnterNextRaidCsReq => 3,
-            CmdRaidCollectionType::CmdRaidCollectionDataScRsp => 4,
-            CmdRaidCollectionType::CmdRaidCollectionDataCsReq => 5,
+            CmdRaidCollectionType::ONNDCODLMGD_NLCDGIPGFDJ => 0,
+            CmdRaidCollectionType::ONNDCODLMGD_HIKIBFCIKBA => 1,
+            CmdRaidCollectionType::ONNDCODLMGD_LNFHMGKBNEO => 2,
+            CmdRaidCollectionType::ONNDCODLMGD_BIHBGPPKCNL => 3,
+            CmdRaidCollectionType::ONNDCODLMGD_BNAFMMKMELE => 4,
+            CmdRaidCollectionType::ONNDCODLMGD_KKBBOIFDIDA => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdRaidCollectionType {
 
 impl ::std::default::Default for CmdRaidCollectionType {
     fn default() -> Self {
-        CmdRaidCollectionType::MBPPIIEBBDJ_PCPDHELPKEM
+        CmdRaidCollectionType::ONNDCODLMGD_NLCDGIPGFDJ
     }
 }
 
@@ -114,12 +114,11 @@ impl CmdRaidCollectionType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bCmdRaidCollectionType.proto*\xdf\x01\n\x15CmdRaidCollectionType\
-    \x12\x1b\n\x17MBPPIIEBBDJ_PCPDHELPKEM\x10\0\x12\x13\n\x0eCmdFBKMLBAFKFL\
-    \x10\x9e6\x12(\n#CmdRaidCollectionEnterNextRaidScRsp\x10\xab6\x12(\n#Cmd\
-    RaidCollectionEnterNextRaidCsReq\x10\xa66\x12\x1f\n\x1aCmdRaidCollection\
-    DataScRsp\x10\xb06\x12\x1f\n\x1aCmdRaidCollectionDataCsReq\x10\x9d6b\x06\
-    proto3\
+    \n\x1bCmdRaidCollectionType.proto*\xca\x01\n\x15CmdRaidCollectionType\
+    \x12\x1b\n\x17ONNDCODLMGD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ONNDCODLMGD_HIK\
+    IBFCIKBA\x10\xb06\x12\x1c\n\x17ONNDCODLMGD_LNFHMGKBNEO\x10\xae6\x12\x1c\
+    \n\x17ONNDCODLMGD_BIHBGPPKCNL\x10\xa26\x12\x1c\n\x17ONNDCODLMGD_BNAFMMKM\
+    ELE\x10\x9e6\x12\x1c\n\x17ONNDCODLMGD_KKBBOIFDIDA\x10\xac6b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

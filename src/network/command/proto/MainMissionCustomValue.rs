@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct MainMissionCustomValue {
     // message fields
     // @@protoc_insertion_point(field:MainMissionCustomValue.custom_value_list)
-    pub custom_value_list: ::protobuf::MessageField<super::EPNCDFBAHEA::EPNCDFBAHEA>,
+    pub custom_value_list: ::protobuf::MessageField<super::ONHKODAFEMH::ONHKODAFEMH>,
     // @@protoc_insertion_point(field:MainMissionCustomValue.main_mission_id)
     pub main_mission_id: u32,
     // special fields
@@ -51,7 +51,7 @@ impl MainMissionCustomValue {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EPNCDFBAHEA::EPNCDFBAHEA>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ONHKODAFEMH::ONHKODAFEMH>(
             "custom_value_list",
             |m: &MainMissionCustomValue| { &m.custom_value_list },
             |m: &mut MainMissionCustomValue| { &mut m.custom_value_list },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for MainMissionCustomValue {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                42 => {
+                58 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.custom_value_list)?;
                 },
-                88 => {
+                8 => {
                     self.main_mission_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for MainMissionCustomValue {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.main_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.main_mission_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.main_mission_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for MainMissionCustomValue {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.custom_value_list.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         if self.main_mission_id != 0 {
-            os.write_uint32(11, self.main_mission_id)?;
+            os.write_uint32(1, self.main_mission_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for MainMissionCustomValue {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cMainMissionCustomValue.proto\x1a\x11EPNCDFBAHEA.proto\"z\n\x16Main\
-    MissionCustomValue\x128\n\x11custom_value_list\x18\x05\x20\x01(\x0b2\x0c\
-    .EPNCDFBAHEAR\x0fcustomValueList\x12&\n\x0fmain_mission_id\x18\x0b\x20\
+    \n\x1cMainMissionCustomValue.proto\x1a\x11ONHKODAFEMH.proto\"z\n\x16Main\
+    MissionCustomValue\x128\n\x11custom_value_list\x18\x07\x20\x01(\x0b2\x0c\
+    .ONHKODAFEMHR\x0fcustomValueList\x12&\n\x0fmain_mission_id\x18\x01\x20\
     \x01(\rR\rmainMissionIdb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::EPNCDFBAHEA::file_descriptor().clone());
+            deps.push(super::ONHKODAFEMH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MainMissionCustomValue::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

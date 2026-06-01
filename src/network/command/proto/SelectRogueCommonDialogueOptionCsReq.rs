@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SelectRogueCommonDialogueOptionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionCsReq.AMADFJNHMFF)
-    pub AMADFJNHMFF: u32,
-    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionCsReq.HOHANPJNANA)
-    pub HOHANPJNANA: u32,
+    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionCsReq.AIAFEKGBFIF)
+    pub AIAFEKGBFIF: u32,
+    // @@protoc_insertion_point(field:SelectRogueCommonDialogueOptionCsReq.HAFOKMHCGFM)
+    pub HAFOKMHCGFM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SelectRogueCommonDialogueOptionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SelectRogueCommonDialogueOptionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AMADFJNHMFF",
-            |m: &SelectRogueCommonDialogueOptionCsReq| { &m.AMADFJNHMFF },
-            |m: &mut SelectRogueCommonDialogueOptionCsReq| { &mut m.AMADFJNHMFF },
+            "AIAFEKGBFIF",
+            |m: &SelectRogueCommonDialogueOptionCsReq| { &m.AIAFEKGBFIF },
+            |m: &mut SelectRogueCommonDialogueOptionCsReq| { &mut m.AIAFEKGBFIF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOHANPJNANA",
-            |m: &SelectRogueCommonDialogueOptionCsReq| { &m.HOHANPJNANA },
-            |m: &mut SelectRogueCommonDialogueOptionCsReq| { &mut m.HOHANPJNANA },
+            "HAFOKMHCGFM",
+            |m: &SelectRogueCommonDialogueOptionCsReq| { &m.HAFOKMHCGFM },
+            |m: &mut SelectRogueCommonDialogueOptionCsReq| { &mut m.HAFOKMHCGFM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SelectRogueCommonDialogueOptionCsReq>(
             "SelectRogueCommonDialogueOptionCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.AMADFJNHMFF = is.read_uint32()?;
+                40 => {
+                    self.AIAFEKGBFIF = is.read_uint32()?;
                 },
-                64 => {
-                    self.HOHANPJNANA = is.read_uint32()?;
+                56 => {
+                    self.HAFOKMHCGFM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AMADFJNHMFF != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.AMADFJNHMFF);
+        if self.AIAFEKGBFIF != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.AIAFEKGBFIF);
         }
-        if self.HOHANPJNANA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.HOHANPJNANA);
+        if self.HAFOKMHCGFM != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.HAFOKMHCGFM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AMADFJNHMFF != 0 {
-            os.write_uint32(6, self.AMADFJNHMFF)?;
+        if self.AIAFEKGBFIF != 0 {
+            os.write_uint32(5, self.AIAFEKGBFIF)?;
         }
-        if self.HOHANPJNANA != 0 {
-            os.write_uint32(8, self.HOHANPJNANA)?;
+        if self.HAFOKMHCGFM != 0 {
+            os.write_uint32(7, self.HAFOKMHCGFM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for SelectRogueCommonDialogueOptionCsReq {
     }
 
     fn clear(&mut self) {
-        self.AMADFJNHMFF = 0;
-        self.HOHANPJNANA = 0;
+        self.AIAFEKGBFIF = 0;
+        self.HAFOKMHCGFM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SelectRogueCommonDialogueOptionCsReq {
         static instance: SelectRogueCommonDialogueOptionCsReq = SelectRogueCommonDialogueOptionCsReq {
-            AMADFJNHMFF: 0,
-            HOHANPJNANA: 0,
+            AIAFEKGBFIF: 0,
+            HAFOKMHCGFM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SelectRogueCommonDialogueOptionCsReq
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*SelectRogueCommonDialogueOptionCsReq.proto\"j\n$SelectRogueCommonDial\
-    ogueOptionCsReq\x12\x20\n\x0bAMADFJNHMFF\x18\x06\x20\x01(\rR\x0bAMADFJNH\
-    MFF\x12\x20\n\x0bHOHANPJNANA\x18\x08\x20\x01(\rR\x0bHOHANPJNANAb\x06prot\
+    ogueOptionCsReq\x12\x20\n\x0bAIAFEKGBFIF\x18\x05\x20\x01(\rR\x0bAIAFEKGB\
+    FIF\x12\x20\n\x0bHAFOKMHCGFM\x18\x07\x20\x01(\rR\x0bHAFOKMHCGFMb\x06prot\
     o3\
 ";
 

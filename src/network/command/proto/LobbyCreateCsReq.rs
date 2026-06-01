@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyCreateCsReq {
     // message fields
-    // @@protoc_insertion_point(field:LobbyCreateCsReq.CHEODMKAHJM)
-    pub CHEODMKAHJM: u32,
-    // @@protoc_insertion_point(field:LobbyCreateCsReq.JHCJMKDDNNF)
-    pub JHCJMKDDNNF: ::protobuf::MessageField<super::LobbyGameExtInfo::LobbyGameExtInfo>,
-    // @@protoc_insertion_point(field:LobbyCreateCsReq.POFOCMIHJIA)
-    pub POFOCMIHJIA: ::protobuf::MessageField<super::PBICJCPDLGD::PBICJCPDLGD>,
-    // @@protoc_insertion_point(field:LobbyCreateCsReq.PLOBMBFPNFK)
-    pub PLOBMBFPNFK: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
+    // @@protoc_insertion_point(field:LobbyCreateCsReq.EMIJCKENBKJ)
+    pub EMIJCKENBKJ: ::protobuf::MessageField<super::PJMGBLIFDFP::PJMGBLIFDFP>,
+    // @@protoc_insertion_point(field:LobbyCreateCsReq.JIDKDPPPDPF)
+    pub JIDKDPPPDPF: ::protobuf::MessageField<super::LobbyGameExtInfo::LobbyGameExtInfo>,
+    // @@protoc_insertion_point(field:LobbyCreateCsReq.GJNMHILINHC)
+    pub GJNMHILINHC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
+    // @@protoc_insertion_point(field:LobbyCreateCsReq.HDJFGMGAOOF)
+    pub HDJFGMGAOOF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyCreateCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl LobbyCreateCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHEODMKAHJM",
-            |m: &LobbyCreateCsReq| { &m.CHEODMKAHJM },
-            |m: &mut LobbyCreateCsReq| { &mut m.CHEODMKAHJM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PJMGBLIFDFP::PJMGBLIFDFP>(
+            "EMIJCKENBKJ",
+            |m: &LobbyCreateCsReq| { &m.EMIJCKENBKJ },
+            |m: &mut LobbyCreateCsReq| { &mut m.EMIJCKENBKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LobbyGameExtInfo::LobbyGameExtInfo>(
-            "JHCJMKDDNNF",
-            |m: &LobbyCreateCsReq| { &m.JHCJMKDDNNF },
-            |m: &mut LobbyCreateCsReq| { &mut m.JHCJMKDDNNF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBICJCPDLGD::PBICJCPDLGD>(
-            "POFOCMIHJIA",
-            |m: &LobbyCreateCsReq| { &m.POFOCMIHJIA },
-            |m: &mut LobbyCreateCsReq| { &mut m.POFOCMIHJIA },
+            "JIDKDPPPDPF",
+            |m: &LobbyCreateCsReq| { &m.JIDKDPPPDPF },
+            |m: &mut LobbyCreateCsReq| { &mut m.JIDKDPPPDPF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLOBMBFPNFK",
-            |m: &LobbyCreateCsReq| { &m.PLOBMBFPNFK },
-            |m: &mut LobbyCreateCsReq| { &mut m.PLOBMBFPNFK },
+            "GJNMHILINHC",
+            |m: &LobbyCreateCsReq| { &m.GJNMHILINHC },
+            |m: &mut LobbyCreateCsReq| { &mut m.GJNMHILINHC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HDJFGMGAOOF",
+            |m: &LobbyCreateCsReq| { &m.HDJFGMGAOOF },
+            |m: &mut LobbyCreateCsReq| { &mut m.HDJFGMGAOOF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyCreateCsReq>(
             "LobbyCreateCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for LobbyCreateCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.CHEODMKAHJM = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMIJCKENBKJ)?;
                 },
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JHCJMKDDNNF)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIDKDPPPDPF)?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.POFOCMIHJIA)?;
+                104 => {
+                    self.GJNMHILINHC = is.read_enum_or_unknown()?;
                 },
-                96 => {
-                    self.PLOBMBFPNFK = is.read_enum_or_unknown()?;
+                24 => {
+                    self.HDJFGMGAOOF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,19 +117,19 @@ impl ::protobuf::Message for LobbyCreateCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CHEODMKAHJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CHEODMKAHJM);
-        }
-        if let Some(v) = self.JHCJMKDDNNF.as_ref() {
+        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.POFOCMIHJIA.as_ref() {
+        if let Some(v) = self.JIDKDPPPDPF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PLOBMBFPNFK != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::EJIMIOGAOKL_PCPDHELPKEM) {
-            my_size += ::protobuf::rt::int32_size(12, self.PLOBMBFPNFK.value());
+        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(13, self.GJNMHILINHC.value());
+        }
+        if self.HDJFGMGAOOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HDJFGMGAOOF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,17 +137,17 @@ impl ::protobuf::Message for LobbyCreateCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CHEODMKAHJM != 0 {
-            os.write_uint32(5, self.CHEODMKAHJM)?;
+        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
-        if let Some(v) = self.JHCJMKDDNNF.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.JIDKDPPPDPF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if let Some(v) = self.POFOCMIHJIA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
         }
-        if self.PLOBMBFPNFK != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::EJIMIOGAOKL_PCPDHELPKEM) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.PLOBMBFPNFK))?;
+        if self.HDJFGMGAOOF != 0 {
+            os.write_uint32(3, self.HDJFGMGAOOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,19 +166,19 @@ impl ::protobuf::Message for LobbyCreateCsReq {
     }
 
     fn clear(&mut self) {
-        self.CHEODMKAHJM = 0;
-        self.JHCJMKDDNNF.clear();
-        self.POFOCMIHJIA.clear();
-        self.PLOBMBFPNFK = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::EJIMIOGAOKL_PCPDHELPKEM);
+        self.EMIJCKENBKJ.clear();
+        self.JIDKDPPPDPF.clear();
+        self.GJNMHILINHC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
+        self.HDJFGMGAOOF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyCreateCsReq {
         static instance: LobbyCreateCsReq = LobbyCreateCsReq {
-            CHEODMKAHJM: 0,
-            JHCJMKDDNNF: ::protobuf::MessageField::none(),
-            POFOCMIHJIA: ::protobuf::MessageField::none(),
-            PLOBMBFPNFK: ::protobuf::EnumOrUnknown::from_i32(0),
+            EMIJCKENBKJ: ::protobuf::MessageField::none(),
+            JIDKDPPPDPF: ::protobuf::MessageField::none(),
+            GJNMHILINHC: ::protobuf::EnumOrUnknown::from_i32(0),
+            HDJFGMGAOOF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -204,12 +204,12 @@ impl ::protobuf::reflect::ProtobufValue for LobbyCreateCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16LobbyCreateCsReq.proto\x1a\x13FightGameMode.proto\x1a\x16LobbyGame\
-    ExtInfo.proto\x1a\x11PBICJCPDLGD.proto\"\xcb\x01\n\x10LobbyCreateCsReq\
-    \x12\x20\n\x0bCHEODMKAHJM\x18\x05\x20\x01(\rR\x0bCHEODMKAHJM\x123\n\x0bJ\
-    HCJMKDDNNF\x18\x01\x20\x01(\x0b2\x11.LobbyGameExtInfoR\x0bJHCJMKDDNNF\
-    \x12.\n\x0bPOFOCMIHJIA\x18\r\x20\x01(\x0b2\x0c.PBICJCPDLGDR\x0bPOFOCMIHJ\
-    IA\x120\n\x0bPLOBMBFPNFK\x18\x0c\x20\x01(\x0e2\x0e.FightGameModeR\x0bPLO\
-    BMBFPNFKb\x06proto3\
+    ExtInfo.proto\x1a\x11PJMGBLIFDFP.proto\"\xcb\x01\n\x10LobbyCreateCsReq\
+    \x12.\n\x0bEMIJCKENBKJ\x18\x07\x20\x01(\x0b2\x0c.PJMGBLIFDFPR\x0bEMIJCKE\
+    NBKJ\x123\n\x0bJIDKDPPPDPF\x18\x0f\x20\x01(\x0b2\x11.LobbyGameExtInfoR\
+    \x0bJIDKDPPPDPF\x120\n\x0bGJNMHILINHC\x18\r\x20\x01(\x0e2\x0e.FightGameM\
+    odeR\x0bGJNMHILINHC\x12\x20\n\x0bHDJFGMGAOOF\x18\x03\x20\x01(\rR\x0bHDJF\
+    GMGAOOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -229,7 +229,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(3);
             deps.push(super::FightGameMode::file_descriptor().clone());
             deps.push(super::LobbyGameExtInfo::file_descriptor().clone());
-            deps.push(super::PBICJCPDLGD::file_descriptor().clone());
+            deps.push(super::PJMGBLIFDFP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LobbyCreateCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -72,10 +72,10 @@ impl ::protobuf::Message for HipplenTraitUnlockScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
+                50 => {
                     is.read_repeated_packed_uint32_into(&mut self.grid_fight_trait_info)?;
                 },
-                104 => {
+                48 => {
                     self.grid_fight_trait_info.push(is.read_uint32()?);
                 },
                 tag => {
@@ -90,14 +90,14 @@ impl ::protobuf::Message for HipplenTraitUnlockScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.grid_fight_trait_info);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.grid_fight_trait_info);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.grid_fight_trait_info)?;
+        os.write_repeated_packed_uint32(6, &self.grid_fight_trait_info)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for HipplenTraitUnlockScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20HipplenTraitUnlockScNotify.proto\"O\n\x1aHipplenTraitUnlockScNotif\
-    y\x121\n\x15grid_fight_trait_info\x18\r\x20\x03(\rR\x12gridFightTraitInf\
-    ob\x06proto3\
+    y\x121\n\x15grid_fight_trait_info\x18\x06\x20\x03(\rR\x12gridFightTraitI\
+    nfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

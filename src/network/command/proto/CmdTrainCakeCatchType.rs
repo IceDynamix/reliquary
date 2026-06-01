@@ -27,54 +27,60 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdTrainCakeCatchType)
 pub enum CmdTrainCakeCatchType {
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.IODFALGGBCH_PCPDHELPKEM)
-    IODFALGGBCH_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdSocialPlayTalkScRsp)
-    CmdSocialPlayTalkScRsp = 9751,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdIPCKGLOHJLH)
-    CmdIPCKGLOHJLH = 9637,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdJGECJEFKNCO)
-    CmdJGECJEFKNCO = 9718,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdTrainCakeCatchDiyCsReq)
-    CmdTrainCakeCatchDiyCsReq = 9716,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdTrainCakeCatchSearchCsReq)
-    CmdTrainCakeCatchSearchCsReq = 9733,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdTrainCakeCatchOpenBoxScRsp)
-    CmdTrainCakeCatchOpenBoxScRsp = 9657,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdTrainCakeCatchGetDataScRsp)
-    CmdTrainCakeCatchGetDataScRsp = 9762,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdMKLFLKDHLIC)
-    CmdMKLFLKDHLIC = 9666,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdSocialPlayGameplayOperationScNotify)
-    CmdSocialPlayGameplayOperationScNotify = 9662,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdTrainCakeCatchOpenBoxCsReq)
-    CmdTrainCakeCatchOpenBoxCsReq = 9628,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdSocialPlayTalkCsReq)
-    CmdSocialPlayTalkCsReq = 9648,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdBBDMHAMPCJE)
-    CmdBBDMHAMPCJE = 9675,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdTrainCakeCatchDiyLikeCsReq)
-    CmdTrainCakeCatchDiyLikeCsReq = 9659,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdSocialPlayRoomPlayerMoveScNotify)
-    CmdSocialPlayRoomPlayerMoveScNotify = 9621,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdSocialPlayPreCheckEnterRoomScRsp)
-    CmdSocialPlayPreCheckEnterRoomScRsp = 9728,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdPreCheckEnterRoomReq)
-    CmdPreCheckEnterRoomReq = 9767,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdTrainCakeCatchSearchScRsp)
-    CmdTrainCakeCatchSearchScRsp = 9766,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdTrainCakeCatchDiyLikeScRsp)
-    CmdTrainCakeCatchDiyLikeScRsp = 9697,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdTrainCakeCatchGetDataCsReq)
-    CmdTrainCakeCatchGetDataCsReq = 9745,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.IODFALGGBCH_AAMOKIIGHIP)
-    IODFALGGBCH_AAMOKIIGHIP = 9676,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdSocialPlaySettingInfoScNotify)
-    CmdSocialPlaySettingInfoScNotify = 9627,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdAHLMMDJAGOA)
-    CmdAHLMMDJAGOA = 9683,
-    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.CmdTrainCakeCatchDiyScRsp)
-    CmdTrainCakeCatchDiyScRsp = 9649,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NLCDGIPGFDJ)
+    NMGINGMHJDA_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JLBBKGOMCDE)
+    NMGINGMHJDA_JLBBKGOMCDE = 9679,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_HJAGKHEJOFM)
+    NMGINGMHJDA_HJAGKHEJOFM = 9716,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BMCMIGILNBE)
+    NMGINGMHJDA_BMCMIGILNBE = 9755,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_OGOCLNPJPHO)
+    NMGINGMHJDA_OGOCLNPJPHO = 9752,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_PNLGFFDJKHL)
+    NMGINGMHJDA_PNLGFFDJKHL = 9760,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JNCFJJIGEFG)
+    NMGINGMHJDA_JNCFJJIGEFG = 9640,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_AEFOHGJHOMB)
+    NMGINGMHJDA_AEFOHGJHOMB = 9633,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_AFAKIKMICOF)
+    NMGINGMHJDA_AFAKIKMICOF = 9720,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BOIAJPMHPML)
+    NMGINGMHJDA_BOIAJPMHPML = 9644,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BPOBPOPNPNL)
+    NMGINGMHJDA_BPOBPOPNPNL = 9698,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_EHGILHHDKHF)
+    NMGINGMHJDA_EHGILHHDKHF = 9653,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_GCNJHGHPHDG)
+    NMGINGMHJDA_GCNJHGHPHDG = 9765,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NJNHJOFFHHC)
+    NMGINGMHJDA_NJNHJOFFHHC = 9637,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NMEHFLHCOJI)
+    NMGINGMHJDA_NMEHFLHCOJI = 9625,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JHKBKHGFEFP)
+    NMGINGMHJDA_JHKBKHGFEFP = 9641,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_LLKDECHFKDJ)
+    NMGINGMHJDA_LLKDECHFKDJ = 9754,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_NOBEEMKGGHK)
+    NMGINGMHJDA_NOBEEMKGGHK = 9712,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_PJPMBFIMNJB)
+    NMGINGMHJDA_PJPMBFIMNJB = 9646,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_OAFHNCOANPE)
+    NMGINGMHJDA_OAFHNCOANPE = 9715,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_APDHJHHIMOF)
+    NMGINGMHJDA_APDHJHHIMOF = 9768,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_CFAOJOLPOPG)
+    NMGINGMHJDA_CFAOJOLPOPG = 9632,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_OBOPFNGMBAO)
+    NMGINGMHJDA_OBOPFNGMBAO = 9676,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_JEOIKEHOPLD)
+    NMGINGMHJDA_JEOIKEHOPLD = 9642,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_ELPACLCOJOM)
+    NMGINGMHJDA_ELPACLCOJOM = 9626,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_PBPPLEDIMGH)
+    NMGINGMHJDA_PBPPLEDIMGH = 9700,
+    // @@protoc_insertion_point(enum_value:CmdTrainCakeCatchType.NMGINGMHJDA_BPOKMJCLOPB)
+    NMGINGMHJDA_BPOKMJCLOPB = 9622,
 }
 
 impl ::protobuf::Enum for CmdTrainCakeCatchType {
@@ -86,89 +92,98 @@ impl ::protobuf::Enum for CmdTrainCakeCatchType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdTrainCakeCatchType> {
         match value {
-            0 => ::std::option::Option::Some(CmdTrainCakeCatchType::IODFALGGBCH_PCPDHELPKEM),
-            9751 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlayTalkScRsp),
-            9637 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdIPCKGLOHJLH),
-            9718 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdJGECJEFKNCO),
-            9716 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchDiyCsReq),
-            9733 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchSearchCsReq),
-            9657 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchOpenBoxScRsp),
-            9762 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchGetDataScRsp),
-            9666 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdMKLFLKDHLIC),
-            9662 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlayGameplayOperationScNotify),
-            9628 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchOpenBoxCsReq),
-            9648 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlayTalkCsReq),
-            9675 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdBBDMHAMPCJE),
-            9659 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchDiyLikeCsReq),
-            9621 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlayRoomPlayerMoveScNotify),
-            9728 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlayPreCheckEnterRoomScRsp),
-            9767 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdPreCheckEnterRoomReq),
-            9766 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchSearchScRsp),
-            9697 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchDiyLikeScRsp),
-            9745 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchGetDataCsReq),
-            9676 => ::std::option::Option::Some(CmdTrainCakeCatchType::IODFALGGBCH_AAMOKIIGHIP),
-            9627 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlaySettingInfoScNotify),
-            9683 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdAHLMMDJAGOA),
-            9649 => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchDiyScRsp),
+            0 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NLCDGIPGFDJ),
+            9679 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE),
+            9716 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM),
+            9755 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE),
+            9752 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO),
+            9760 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL),
+            9640 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG),
+            9633 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB),
+            9720 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF),
+            9644 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML),
+            9698 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL),
+            9653 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF),
+            9765 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG),
+            9637 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC),
+            9625 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI),
+            9641 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP),
+            9754 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ),
+            9712 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK),
+            9646 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB),
+            9715 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OAFHNCOANPE),
+            9768 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_APDHJHHIMOF),
+            9632 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG),
+            9676 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO),
+            9642 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD),
+            9626 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM),
+            9700 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PBPPLEDIMGH),
+            9622 => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOKMJCLOPB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdTrainCakeCatchType> {
         match str {
-            "IODFALGGBCH_PCPDHELPKEM" => ::std::option::Option::Some(CmdTrainCakeCatchType::IODFALGGBCH_PCPDHELPKEM),
-            "CmdSocialPlayTalkScRsp" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlayTalkScRsp),
-            "CmdIPCKGLOHJLH" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdIPCKGLOHJLH),
-            "CmdJGECJEFKNCO" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdJGECJEFKNCO),
-            "CmdTrainCakeCatchDiyCsReq" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchDiyCsReq),
-            "CmdTrainCakeCatchSearchCsReq" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchSearchCsReq),
-            "CmdTrainCakeCatchOpenBoxScRsp" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchOpenBoxScRsp),
-            "CmdTrainCakeCatchGetDataScRsp" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchGetDataScRsp),
-            "CmdMKLFLKDHLIC" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdMKLFLKDHLIC),
-            "CmdSocialPlayGameplayOperationScNotify" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlayGameplayOperationScNotify),
-            "CmdTrainCakeCatchOpenBoxCsReq" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchOpenBoxCsReq),
-            "CmdSocialPlayTalkCsReq" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlayTalkCsReq),
-            "CmdBBDMHAMPCJE" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdBBDMHAMPCJE),
-            "CmdTrainCakeCatchDiyLikeCsReq" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchDiyLikeCsReq),
-            "CmdSocialPlayRoomPlayerMoveScNotify" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlayRoomPlayerMoveScNotify),
-            "CmdSocialPlayPreCheckEnterRoomScRsp" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlayPreCheckEnterRoomScRsp),
-            "CmdPreCheckEnterRoomReq" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdPreCheckEnterRoomReq),
-            "CmdTrainCakeCatchSearchScRsp" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchSearchScRsp),
-            "CmdTrainCakeCatchDiyLikeScRsp" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchDiyLikeScRsp),
-            "CmdTrainCakeCatchGetDataCsReq" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchGetDataCsReq),
-            "IODFALGGBCH_AAMOKIIGHIP" => ::std::option::Option::Some(CmdTrainCakeCatchType::IODFALGGBCH_AAMOKIIGHIP),
-            "CmdSocialPlaySettingInfoScNotify" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdSocialPlaySettingInfoScNotify),
-            "CmdAHLMMDJAGOA" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdAHLMMDJAGOA),
-            "CmdTrainCakeCatchDiyScRsp" => ::std::option::Option::Some(CmdTrainCakeCatchType::CmdTrainCakeCatchDiyScRsp),
+            "NMGINGMHJDA_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NLCDGIPGFDJ),
+            "NMGINGMHJDA_JLBBKGOMCDE" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE),
+            "NMGINGMHJDA_HJAGKHEJOFM" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM),
+            "NMGINGMHJDA_BMCMIGILNBE" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE),
+            "NMGINGMHJDA_OGOCLNPJPHO" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO),
+            "NMGINGMHJDA_PNLGFFDJKHL" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL),
+            "NMGINGMHJDA_JNCFJJIGEFG" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG),
+            "NMGINGMHJDA_AEFOHGJHOMB" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB),
+            "NMGINGMHJDA_AFAKIKMICOF" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF),
+            "NMGINGMHJDA_BOIAJPMHPML" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML),
+            "NMGINGMHJDA_BPOBPOPNPNL" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL),
+            "NMGINGMHJDA_EHGILHHDKHF" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF),
+            "NMGINGMHJDA_GCNJHGHPHDG" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG),
+            "NMGINGMHJDA_NJNHJOFFHHC" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC),
+            "NMGINGMHJDA_NMEHFLHCOJI" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI),
+            "NMGINGMHJDA_JHKBKHGFEFP" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP),
+            "NMGINGMHJDA_LLKDECHFKDJ" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ),
+            "NMGINGMHJDA_NOBEEMKGGHK" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK),
+            "NMGINGMHJDA_PJPMBFIMNJB" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB),
+            "NMGINGMHJDA_OAFHNCOANPE" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OAFHNCOANPE),
+            "NMGINGMHJDA_APDHJHHIMOF" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_APDHJHHIMOF),
+            "NMGINGMHJDA_CFAOJOLPOPG" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG),
+            "NMGINGMHJDA_OBOPFNGMBAO" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO),
+            "NMGINGMHJDA_JEOIKEHOPLD" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD),
+            "NMGINGMHJDA_ELPACLCOJOM" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM),
+            "NMGINGMHJDA_PBPPLEDIMGH" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_PBPPLEDIMGH),
+            "NMGINGMHJDA_BPOKMJCLOPB" => ::std::option::Option::Some(CmdTrainCakeCatchType::NMGINGMHJDA_BPOKMJCLOPB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTrainCakeCatchType] = &[
-        CmdTrainCakeCatchType::IODFALGGBCH_PCPDHELPKEM,
-        CmdTrainCakeCatchType::CmdSocialPlayTalkScRsp,
-        CmdTrainCakeCatchType::CmdIPCKGLOHJLH,
-        CmdTrainCakeCatchType::CmdJGECJEFKNCO,
-        CmdTrainCakeCatchType::CmdTrainCakeCatchDiyCsReq,
-        CmdTrainCakeCatchType::CmdTrainCakeCatchSearchCsReq,
-        CmdTrainCakeCatchType::CmdTrainCakeCatchOpenBoxScRsp,
-        CmdTrainCakeCatchType::CmdTrainCakeCatchGetDataScRsp,
-        CmdTrainCakeCatchType::CmdMKLFLKDHLIC,
-        CmdTrainCakeCatchType::CmdSocialPlayGameplayOperationScNotify,
-        CmdTrainCakeCatchType::CmdTrainCakeCatchOpenBoxCsReq,
-        CmdTrainCakeCatchType::CmdSocialPlayTalkCsReq,
-        CmdTrainCakeCatchType::CmdBBDMHAMPCJE,
-        CmdTrainCakeCatchType::CmdTrainCakeCatchDiyLikeCsReq,
-        CmdTrainCakeCatchType::CmdSocialPlayRoomPlayerMoveScNotify,
-        CmdTrainCakeCatchType::CmdSocialPlayPreCheckEnterRoomScRsp,
-        CmdTrainCakeCatchType::CmdPreCheckEnterRoomReq,
-        CmdTrainCakeCatchType::CmdTrainCakeCatchSearchScRsp,
-        CmdTrainCakeCatchType::CmdTrainCakeCatchDiyLikeScRsp,
-        CmdTrainCakeCatchType::CmdTrainCakeCatchGetDataCsReq,
-        CmdTrainCakeCatchType::IODFALGGBCH_AAMOKIIGHIP,
-        CmdTrainCakeCatchType::CmdSocialPlaySettingInfoScNotify,
-        CmdTrainCakeCatchType::CmdAHLMMDJAGOA,
-        CmdTrainCakeCatchType::CmdTrainCakeCatchDiyScRsp,
+        CmdTrainCakeCatchType::NMGINGMHJDA_NLCDGIPGFDJ,
+        CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE,
+        CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM,
+        CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE,
+        CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO,
+        CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL,
+        CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG,
+        CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB,
+        CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF,
+        CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML,
+        CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL,
+        CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF,
+        CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG,
+        CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC,
+        CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI,
+        CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP,
+        CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ,
+        CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK,
+        CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB,
+        CmdTrainCakeCatchType::NMGINGMHJDA_OAFHNCOANPE,
+        CmdTrainCakeCatchType::NMGINGMHJDA_APDHJHHIMOF,
+        CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG,
+        CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO,
+        CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD,
+        CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM,
+        CmdTrainCakeCatchType::NMGINGMHJDA_PBPPLEDIMGH,
+        CmdTrainCakeCatchType::NMGINGMHJDA_BPOKMJCLOPB,
     ];
 }
 
@@ -180,30 +195,33 @@ impl ::protobuf::EnumFull for CmdTrainCakeCatchType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdTrainCakeCatchType::IODFALGGBCH_PCPDHELPKEM => 0,
-            CmdTrainCakeCatchType::CmdSocialPlayTalkScRsp => 1,
-            CmdTrainCakeCatchType::CmdIPCKGLOHJLH => 2,
-            CmdTrainCakeCatchType::CmdJGECJEFKNCO => 3,
-            CmdTrainCakeCatchType::CmdTrainCakeCatchDiyCsReq => 4,
-            CmdTrainCakeCatchType::CmdTrainCakeCatchSearchCsReq => 5,
-            CmdTrainCakeCatchType::CmdTrainCakeCatchOpenBoxScRsp => 6,
-            CmdTrainCakeCatchType::CmdTrainCakeCatchGetDataScRsp => 7,
-            CmdTrainCakeCatchType::CmdMKLFLKDHLIC => 8,
-            CmdTrainCakeCatchType::CmdSocialPlayGameplayOperationScNotify => 9,
-            CmdTrainCakeCatchType::CmdTrainCakeCatchOpenBoxCsReq => 10,
-            CmdTrainCakeCatchType::CmdSocialPlayTalkCsReq => 11,
-            CmdTrainCakeCatchType::CmdBBDMHAMPCJE => 12,
-            CmdTrainCakeCatchType::CmdTrainCakeCatchDiyLikeCsReq => 13,
-            CmdTrainCakeCatchType::CmdSocialPlayRoomPlayerMoveScNotify => 14,
-            CmdTrainCakeCatchType::CmdSocialPlayPreCheckEnterRoomScRsp => 15,
-            CmdTrainCakeCatchType::CmdPreCheckEnterRoomReq => 16,
-            CmdTrainCakeCatchType::CmdTrainCakeCatchSearchScRsp => 17,
-            CmdTrainCakeCatchType::CmdTrainCakeCatchDiyLikeScRsp => 18,
-            CmdTrainCakeCatchType::CmdTrainCakeCatchGetDataCsReq => 19,
-            CmdTrainCakeCatchType::IODFALGGBCH_AAMOKIIGHIP => 20,
-            CmdTrainCakeCatchType::CmdSocialPlaySettingInfoScNotify => 21,
-            CmdTrainCakeCatchType::CmdAHLMMDJAGOA => 22,
-            CmdTrainCakeCatchType::CmdTrainCakeCatchDiyScRsp => 23,
+            CmdTrainCakeCatchType::NMGINGMHJDA_NLCDGIPGFDJ => 0,
+            CmdTrainCakeCatchType::NMGINGMHJDA_JLBBKGOMCDE => 1,
+            CmdTrainCakeCatchType::NMGINGMHJDA_HJAGKHEJOFM => 2,
+            CmdTrainCakeCatchType::NMGINGMHJDA_BMCMIGILNBE => 3,
+            CmdTrainCakeCatchType::NMGINGMHJDA_OGOCLNPJPHO => 4,
+            CmdTrainCakeCatchType::NMGINGMHJDA_PNLGFFDJKHL => 5,
+            CmdTrainCakeCatchType::NMGINGMHJDA_JNCFJJIGEFG => 6,
+            CmdTrainCakeCatchType::NMGINGMHJDA_AEFOHGJHOMB => 7,
+            CmdTrainCakeCatchType::NMGINGMHJDA_AFAKIKMICOF => 8,
+            CmdTrainCakeCatchType::NMGINGMHJDA_BOIAJPMHPML => 9,
+            CmdTrainCakeCatchType::NMGINGMHJDA_BPOBPOPNPNL => 10,
+            CmdTrainCakeCatchType::NMGINGMHJDA_EHGILHHDKHF => 11,
+            CmdTrainCakeCatchType::NMGINGMHJDA_GCNJHGHPHDG => 12,
+            CmdTrainCakeCatchType::NMGINGMHJDA_NJNHJOFFHHC => 13,
+            CmdTrainCakeCatchType::NMGINGMHJDA_NMEHFLHCOJI => 14,
+            CmdTrainCakeCatchType::NMGINGMHJDA_JHKBKHGFEFP => 15,
+            CmdTrainCakeCatchType::NMGINGMHJDA_LLKDECHFKDJ => 16,
+            CmdTrainCakeCatchType::NMGINGMHJDA_NOBEEMKGGHK => 17,
+            CmdTrainCakeCatchType::NMGINGMHJDA_PJPMBFIMNJB => 18,
+            CmdTrainCakeCatchType::NMGINGMHJDA_OAFHNCOANPE => 19,
+            CmdTrainCakeCatchType::NMGINGMHJDA_APDHJHHIMOF => 20,
+            CmdTrainCakeCatchType::NMGINGMHJDA_CFAOJOLPOPG => 21,
+            CmdTrainCakeCatchType::NMGINGMHJDA_OBOPFNGMBAO => 22,
+            CmdTrainCakeCatchType::NMGINGMHJDA_JEOIKEHOPLD => 23,
+            CmdTrainCakeCatchType::NMGINGMHJDA_ELPACLCOJOM => 24,
+            CmdTrainCakeCatchType::NMGINGMHJDA_PBPPLEDIMGH => 25,
+            CmdTrainCakeCatchType::NMGINGMHJDA_BPOKMJCLOPB => 26,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -211,7 +229,7 @@ impl ::protobuf::EnumFull for CmdTrainCakeCatchType {
 
 impl ::std::default::Default for CmdTrainCakeCatchType {
     fn default() -> Self {
-        CmdTrainCakeCatchType::IODFALGGBCH_PCPDHELPKEM
+        CmdTrainCakeCatchType::NMGINGMHJDA_NLCDGIPGFDJ
     }
 }
 
@@ -222,23 +240,25 @@ impl CmdTrainCakeCatchType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bCmdTrainCakeCatchType.proto*\x99\x06\n\x15CmdTrainCakeCatchType\
-    \x12\x1b\n\x17IODFALGGBCH_PCPDHELPKEM\x10\0\x12\x1b\n\x16CmdSocialPlayTa\
-    lkScRsp\x10\x97L\x12\x13\n\x0eCmdIPCKGLOHJLH\x10\xa5K\x12\x13\n\x0eCmdJG\
-    ECJEFKNCO\x10\xf6K\x12\x1e\n\x19CmdTrainCakeCatchDiyCsReq\x10\xf4K\x12!\
-    \n\x1cCmdTrainCakeCatchSearchCsReq\x10\x85L\x12\"\n\x1dCmdTrainCakeCatch\
-    OpenBoxScRsp\x10\xb9K\x12\"\n\x1dCmdTrainCakeCatchGetDataScRsp\x10\xa2L\
-    \x12\x13\n\x0eCmdMKLFLKDHLIC\x10\xc2K\x12+\n&CmdSocialPlayGameplayOperat\
-    ionScNotify\x10\xbeK\x12\"\n\x1dCmdTrainCakeCatchOpenBoxCsReq\x10\x9cK\
-    \x12\x1b\n\x16CmdSocialPlayTalkCsReq\x10\xb0K\x12\x13\n\x0eCmdBBDMHAMPCJ\
-    E\x10\xcbK\x12\"\n\x1dCmdTrainCakeCatchDiyLikeCsReq\x10\xbbK\x12(\n#CmdS\
-    ocialPlayRoomPlayerMoveScNotify\x10\x95K\x12(\n#CmdSocialPlayPreCheckEnt\
-    erRoomScRsp\x10\x80L\x12\x1c\n\x17CmdPreCheckEnterRoomReq\x10\xa7L\x12!\
-    \n\x1cCmdTrainCakeCatchSearchScRsp\x10\xa6L\x12\"\n\x1dCmdTrainCakeCatch\
-    DiyLikeScRsp\x10\xe1K\x12\"\n\x1dCmdTrainCakeCatchGetDataCsReq\x10\x91L\
-    \x12\x1c\n\x17IODFALGGBCH_AAMOKIIGHIP\x10\xccK\x12%\n\x20CmdSocialPlaySe\
-    ttingInfoScNotify\x10\x9bK\x12\x13\n\x0eCmdAHLMMDJAGOA\x10\xd3K\x12\x1e\
-    \n\x19CmdTrainCakeCatchDiyScRsp\x10\xb1Kb\x06proto3\
+    \n\x1bCmdTrainCakeCatchType.proto*\xc0\x06\n\x15CmdTrainCakeCatchType\
+    \x12\x1b\n\x17NMGINGMHJDA_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17NMGINGMHJDA_JLB\
+    BKGOMCDE\x10\xcfK\x12\x1c\n\x17NMGINGMHJDA_HJAGKHEJOFM\x10\xf4K\x12\x1c\
+    \n\x17NMGINGMHJDA_BMCMIGILNBE\x10\x9bL\x12\x1c\n\x17NMGINGMHJDA_OGOCLNPJ\
+    PHO\x10\x98L\x12\x1c\n\x17NMGINGMHJDA_PNLGFFDJKHL\x10\xa0L\x12\x1c\n\x17\
+    NMGINGMHJDA_JNCFJJIGEFG\x10\xa8K\x12\x1c\n\x17NMGINGMHJDA_AEFOHGJHOMB\
+    \x10\xa1K\x12\x1c\n\x17NMGINGMHJDA_AFAKIKMICOF\x10\xf8K\x12\x1c\n\x17NMG\
+    INGMHJDA_BOIAJPMHPML\x10\xacK\x12\x1c\n\x17NMGINGMHJDA_BPOBPOPNPNL\x10\
+    \xe2K\x12\x1c\n\x17NMGINGMHJDA_EHGILHHDKHF\x10\xb5K\x12\x1c\n\x17NMGINGM\
+    HJDA_GCNJHGHPHDG\x10\xa5L\x12\x1c\n\x17NMGINGMHJDA_NJNHJOFFHHC\x10\xa5K\
+    \x12\x1c\n\x17NMGINGMHJDA_NMEHFLHCOJI\x10\x99K\x12\x1c\n\x17NMGINGMHJDA_\
+    JHKBKHGFEFP\x10\xa9K\x12\x1c\n\x17NMGINGMHJDA_LLKDECHFKDJ\x10\x9aL\x12\
+    \x1c\n\x17NMGINGMHJDA_NOBEEMKGGHK\x10\xf0K\x12\x1c\n\x17NMGINGMHJDA_PJPM\
+    BFIMNJB\x10\xaeK\x12\x1c\n\x17NMGINGMHJDA_OAFHNCOANPE\x10\xf3K\x12\x1c\n\
+    \x17NMGINGMHJDA_APDHJHHIMOF\x10\xa8L\x12\x1c\n\x17NMGINGMHJDA_CFAOJOLPOP\
+    G\x10\xa0K\x12\x1c\n\x17NMGINGMHJDA_OBOPFNGMBAO\x10\xccK\x12\x1c\n\x17NM\
+    GINGMHJDA_JEOIKEHOPLD\x10\xaaK\x12\x1c\n\x17NMGINGMHJDA_ELPACLCOJOM\x10\
+    \x9aK\x12\x1c\n\x17NMGINGMHJDA_PBPPLEDIMGH\x10\xe4K\x12\x1c\n\x17NMGINGM\
+    HJDA_BPOKMJCLOPB\x10\x96Kb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

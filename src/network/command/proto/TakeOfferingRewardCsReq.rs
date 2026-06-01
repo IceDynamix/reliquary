@@ -86,16 +86,16 @@ impl ::protobuf::Message for TakeOfferingRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.take_reward_level_list)?;
                 },
-                96 => {
+                88 => {
                     self.take_reward_level_list.push(is.read_uint32()?);
                 },
-                120 => {
+                56 => {
                     self.offering_id = is.read_uint32()?;
                 },
-                56 => {
+                48 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -110,12 +110,12 @@ impl ::protobuf::Message for TakeOfferingRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.take_reward_level_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.take_reward_level_list);
         if self.offering_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.offering_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.offering_id);
         }
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.interacted_prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,12 +123,12 @@ impl ::protobuf::Message for TakeOfferingRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(12, &self.take_reward_level_list)?;
+        os.write_repeated_packed_uint32(11, &self.take_reward_level_list)?;
         if self.offering_id != 0 {
-            os.write_uint32(15, self.offering_id)?;
+            os.write_uint32(7, self.offering_id)?;
         }
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(7, self.interacted_prop_entity_id)?;
+            os.write_uint32(6, self.interacted_prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,9 +183,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeOfferingRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dTakeOfferingRewardCsReq.proto\"\xaa\x01\n\x17TakeOfferingRewardCsR\
-    eq\x123\n\x16take_reward_level_list\x18\x0c\x20\x03(\rR\x13takeRewardLev\
-    elList\x12\x1f\n\x0boffering_id\x18\x0f\x20\x01(\rR\nofferingId\x129\n\
-    \x19interacted_prop_entity_id\x18\x07\x20\x01(\rR\x16interactedPropEntit\
+    eq\x123\n\x16take_reward_level_list\x18\x0b\x20\x03(\rR\x13takeRewardLev\
+    elList\x12\x1f\n\x0boffering_id\x18\x07\x20\x01(\rR\nofferingId\x129\n\
+    \x19interacted_prop_entity_id\x18\x06\x20\x01(\rR\x16interactedPropEntit\
     yIdb\x06proto3\
 ";
 

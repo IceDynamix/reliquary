@@ -79,10 +79,10 @@ impl ::protobuf::Message for AvatarPathChangedNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                120 => {
                     self.base_avatar_id = is.read_uint32()?;
                 },
-                56 => {
+                32 => {
                     self.cur_multi_path_avatar_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for AvatarPathChangedNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.base_avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.base_avatar_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.base_avatar_id);
         }
         if self.cur_multi_path_avatar_type != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            my_size += ::protobuf::rt::int32_size(7, self.cur_multi_path_avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(4, self.cur_multi_path_avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AvatarPathChangedNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.base_avatar_id != 0 {
-            os.write_uint32(5, self.base_avatar_id)?;
+            os.write_uint32(15, self.base_avatar_id)?;
         }
         if self.cur_multi_path_avatar_type != ::protobuf::EnumOrUnknown::new(super::MultiPathAvatarType::MultiPathAvatarType::MultiPathAvatarTypeNone) {
-            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.cur_multi_path_avatar_type))?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.cur_multi_path_avatar_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for AvatarPathChangedNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dAvatarPathChangedNotify.proto\x1a\x19MultiPathAvatarType.proto\"\
-    \x91\x01\n\x17AvatarPathChangedNotify\x12$\n\x0ebase_avatar_id\x18\x05\
+    \x91\x01\n\x17AvatarPathChangedNotify\x12$\n\x0ebase_avatar_id\x18\x0f\
     \x20\x01(\rR\x0cbaseAvatarId\x12P\n\x1acur_multi_path_avatar_type\x18\
-    \x07\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x16curMultiPathAvatarTypeb\
+    \x04\x20\x01(\x0e2\x14.MultiPathAvatarTypeR\x16curMultiPathAvatarTypeb\
     \x06proto3\
 ";
 

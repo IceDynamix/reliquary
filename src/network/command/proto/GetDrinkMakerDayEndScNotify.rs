@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetDrinkMakerDayEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:GetDrinkMakerDayEndScNotify.IGJKLCDCLIJ)
-    pub IGJKLCDCLIJ: u32,
+    // @@protoc_insertion_point(field:GetDrinkMakerDayEndScNotify.HBJIJHHMEGO)
+    pub HBJIJHHMEGO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetDrinkMakerDayEndScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GetDrinkMakerDayEndScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IGJKLCDCLIJ",
-            |m: &GetDrinkMakerDayEndScNotify| { &m.IGJKLCDCLIJ },
-            |m: &mut GetDrinkMakerDayEndScNotify| { &mut m.IGJKLCDCLIJ },
+            "HBJIJHHMEGO",
+            |m: &GetDrinkMakerDayEndScNotify| { &m.HBJIJHHMEGO },
+            |m: &mut GetDrinkMakerDayEndScNotify| { &mut m.HBJIJHHMEGO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetDrinkMakerDayEndScNotify>(
             "GetDrinkMakerDayEndScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GetDrinkMakerDayEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.IGJKLCDCLIJ = is.read_uint32()?;
+                24 => {
+                    self.HBJIJHHMEGO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GetDrinkMakerDayEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IGJKLCDCLIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.IGJKLCDCLIJ);
+        if self.HBJIJHHMEGO != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.HBJIJHHMEGO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GetDrinkMakerDayEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IGJKLCDCLIJ != 0 {
-            os.write_uint32(9, self.IGJKLCDCLIJ)?;
+        if self.HBJIJHHMEGO != 0 {
+            os.write_uint32(3, self.HBJIJHHMEGO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GetDrinkMakerDayEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.IGJKLCDCLIJ = 0;
+        self.HBJIJHHMEGO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetDrinkMakerDayEndScNotify {
         static instance: GetDrinkMakerDayEndScNotify = GetDrinkMakerDayEndScNotify {
-            IGJKLCDCLIJ: 0,
+            HBJIJHHMEGO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for GetDrinkMakerDayEndScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!GetDrinkMakerDayEndScNotify.proto\"?\n\x1bGetDrinkMakerDayEndScNotify\
-    \x12\x20\n\x0bIGJKLCDCLIJ\x18\t\x20\x01(\rR\x0bIGJKLCDCLIJb\x06proto3\
+    \x12\x20\n\x0bHBJIJHHMEGO\x18\x03\x20\x01(\rR\x0bHBJIJHHMEGOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

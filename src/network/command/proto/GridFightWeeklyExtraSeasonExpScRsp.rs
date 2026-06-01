@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GridFightWeeklyExtraSeasonExpScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GridFightWeeklyExtraSeasonExpScRsp.cur_taken_extra_exp)
-    pub cur_taken_extra_exp: u32,
+    // @@protoc_insertion_point(field:GridFightWeeklyExtraSeasonExpScRsp.ACDOIGCBGEB)
+    pub ACDOIGCBGEB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightWeeklyExtraSeasonExpScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GridFightWeeklyExtraSeasonExpScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cur_taken_extra_exp",
-            |m: &GridFightWeeklyExtraSeasonExpScRsp| { &m.cur_taken_extra_exp },
-            |m: &mut GridFightWeeklyExtraSeasonExpScRsp| { &mut m.cur_taken_extra_exp },
+            "ACDOIGCBGEB",
+            |m: &GridFightWeeklyExtraSeasonExpScRsp| { &m.ACDOIGCBGEB },
+            |m: &mut GridFightWeeklyExtraSeasonExpScRsp| { &mut m.ACDOIGCBGEB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GridFightWeeklyExtraSeasonExpScRsp>(
             "GridFightWeeklyExtraSeasonExpScRsp",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GridFightWeeklyExtraSeasonExpScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.cur_taken_extra_exp = is.read_uint32()?;
+                88 => {
+                    self.ACDOIGCBGEB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GridFightWeeklyExtraSeasonExpScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.cur_taken_extra_exp != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.cur_taken_extra_exp);
+        if self.ACDOIGCBGEB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ACDOIGCBGEB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GridFightWeeklyExtraSeasonExpScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.cur_taken_extra_exp != 0 {
-            os.write_uint32(15, self.cur_taken_extra_exp)?;
+        if self.ACDOIGCBGEB != 0 {
+            os.write_uint32(11, self.ACDOIGCBGEB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GridFightWeeklyExtraSeasonExpScRsp {
     }
 
     fn clear(&mut self) {
-        self.cur_taken_extra_exp = 0;
+        self.ACDOIGCBGEB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GridFightWeeklyExtraSeasonExpScRsp {
         static instance: GridFightWeeklyExtraSeasonExpScRsp = GridFightWeeklyExtraSeasonExpScRsp {
-            cur_taken_extra_exp: 0,
+            ACDOIGCBGEB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,9 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for GridFightWeeklyExtraSeasonExpScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n(GridFightWeeklyExtraSeasonExpScRsp.proto\"S\n\"GridFightWeeklyExtraSe\
-    asonExpScRsp\x12-\n\x13cur_taken_extra_exp\x18\x0f\x20\x01(\rR\x10curTak\
-    enExtraExpb\x06proto3\
+    \n(GridFightWeeklyExtraSeasonExpScRsp.proto\"F\n\"GridFightWeeklyExtraSe\
+    asonExpScRsp\x12\x20\n\x0bACDOIGCBGEB\x18\x0b\x20\x01(\rR\x0bACDOIGCBGEB\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

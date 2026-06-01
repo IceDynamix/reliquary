@@ -72,7 +72,7 @@ impl ::protobuf::Message for BigDataRecommendAvatarRelic {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                106 => {
                     self.recomended_relic_info_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for BigDataRecommendAvatarRelic {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.recomended_relic_info_list {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,8 +150,8 @@ impl ::protobuf::reflect::ProtobufValue for BigDataRecommendAvatarRelic {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!BigDataRecommendAvatarRelic.proto\x1a!BigDataAvatarRelicRecommend.pro\
     to\"x\n\x1bBigDataRecommendAvatarRelic\x12Y\n\x1arecomended_relic_info_l\
-    ist\x18\x0c\x20\x03(\x0b2\x1c.BigDataAvatarRelicRecommendR\x17recomended\
-    RelicInfoListb\x06proto3\
+    ist\x18\r\x20\x03(\x0b2\x1c.BigDataAvatarRelicRecommendR\x17recomendedRe\
+    licInfoListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

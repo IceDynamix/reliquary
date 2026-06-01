@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwitchAetherDivideLineUpSlotCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwitchAetherDivideLineUpSlotCsReq.FNCINGFDLPA)
-    pub FNCINGFDLPA: u32,
+    // @@protoc_insertion_point(field:SwitchAetherDivideLineUpSlotCsReq.FDKFIOLMPHA)
+    pub FDKFIOLMPHA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SwitchAetherDivideLineUpSlotCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SwitchAetherDivideLineUpSlotCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FNCINGFDLPA",
-            |m: &SwitchAetherDivideLineUpSlotCsReq| { &m.FNCINGFDLPA },
-            |m: &mut SwitchAetherDivideLineUpSlotCsReq| { &mut m.FNCINGFDLPA },
+            "FDKFIOLMPHA",
+            |m: &SwitchAetherDivideLineUpSlotCsReq| { &m.FDKFIOLMPHA },
+            |m: &mut SwitchAetherDivideLineUpSlotCsReq| { &mut m.FDKFIOLMPHA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwitchAetherDivideLineUpSlotCsReq>(
             "SwitchAetherDivideLineUpSlotCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.FNCINGFDLPA = is.read_uint32()?;
+                104 => {
+                    self.FDKFIOLMPHA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.FNCINGFDLPA != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.FNCINGFDLPA);
+        if self.FDKFIOLMPHA != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.FDKFIOLMPHA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.FNCINGFDLPA != 0 {
-            os.write_uint32(6, self.FNCINGFDLPA)?;
+        if self.FDKFIOLMPHA != 0 {
+            os.write_uint32(13, self.FDKFIOLMPHA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SwitchAetherDivideLineUpSlotCsReq {
     }
 
     fn clear(&mut self) {
-        self.FNCINGFDLPA = 0;
+        self.FDKFIOLMPHA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchAetherDivideLineUpSlotCsReq {
         static instance: SwitchAetherDivideLineUpSlotCsReq = SwitchAetherDivideLineUpSlotCsReq {
-            FNCINGFDLPA: 0,
+            FDKFIOLMPHA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SwitchAetherDivideLineUpSlotCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'SwitchAetherDivideLineUpSlotCsReq.proto\"E\n!SwitchAetherDivideLineUp\
-    SlotCsReq\x12\x20\n\x0bFNCINGFDLPA\x18\x06\x20\x01(\rR\x0bFNCINGFDLPAb\
-    \x06proto3\
+    SlotCsReq\x12\x20\n\x0bFDKFIOLMPHA\x18\r\x20\x01(\rR\x0bFDKFIOLMPHAb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

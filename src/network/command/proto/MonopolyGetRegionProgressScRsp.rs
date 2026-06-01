@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGetRegionProgressScRsp {
     // message fields
+    // @@protoc_insertion_point(field:MonopolyGetRegionProgressScRsp.HEIHPAPJHID)
+    pub HEIHPAPJHID: u32,
     // @@protoc_insertion_point(field:MonopolyGetRegionProgressScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyGetRegionProgressScRsp.EKIMLIAMFHE)
-    pub EKIMLIAMFHE: u32,
-    // @@protoc_insertion_point(field:MonopolyGetRegionProgressScRsp.FKAKCCJCGAF)
-    pub FKAKCCJCGAF: u32,
+    // @@protoc_insertion_point(field:MonopolyGetRegionProgressScRsp.CNGMMDKCBND)
+    pub CNGMMDKCBND: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGetRegionProgressScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl MonopolyGetRegionProgressScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HEIHPAPJHID",
+            |m: &MonopolyGetRegionProgressScRsp| { &m.HEIHPAPJHID },
+            |m: &mut MonopolyGetRegionProgressScRsp| { &mut m.HEIHPAPJHID },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MonopolyGetRegionProgressScRsp| { &m.retcode },
             |m: &mut MonopolyGetRegionProgressScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKIMLIAMFHE",
-            |m: &MonopolyGetRegionProgressScRsp| { &m.EKIMLIAMFHE },
-            |m: &mut MonopolyGetRegionProgressScRsp| { &mut m.EKIMLIAMFHE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FKAKCCJCGAF",
-            |m: &MonopolyGetRegionProgressScRsp| { &m.FKAKCCJCGAF },
-            |m: &mut MonopolyGetRegionProgressScRsp| { &mut m.FKAKCCJCGAF },
+            "CNGMMDKCBND",
+            |m: &MonopolyGetRegionProgressScRsp| { &m.CNGMMDKCBND },
+            |m: &mut MonopolyGetRegionProgressScRsp| { &mut m.CNGMMDKCBND },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGetRegionProgressScRsp>(
             "MonopolyGetRegionProgressScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MonopolyGetRegionProgressScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                32 => {
+                    self.HEIHPAPJHID = is.read_uint32()?;
+                },
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                80 => {
-                    self.EKIMLIAMFHE = is.read_uint32()?;
-                },
-                96 => {
-                    self.FKAKCCJCGAF = is.read_uint32()?;
+                104 => {
+                    self.CNGMMDKCBND = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MonopolyGetRegionProgressScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.HEIHPAPJHID != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.HEIHPAPJHID);
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if self.EKIMLIAMFHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.EKIMLIAMFHE);
-        }
-        if self.FKAKCCJCGAF != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.FKAKCCJCGAF);
+        if self.CNGMMDKCBND != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.CNGMMDKCBND);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MonopolyGetRegionProgressScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.HEIHPAPJHID != 0 {
+            os.write_uint32(4, self.HEIHPAPJHID)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        if self.EKIMLIAMFHE != 0 {
-            os.write_uint32(10, self.EKIMLIAMFHE)?;
-        }
-        if self.FKAKCCJCGAF != 0 {
-            os.write_uint32(12, self.FKAKCCJCGAF)?;
+        if self.CNGMMDKCBND != 0 {
+            os.write_uint32(13, self.CNGMMDKCBND)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for MonopolyGetRegionProgressScRsp {
     }
 
     fn clear(&mut self) {
+        self.HEIHPAPJHID = 0;
         self.retcode = 0;
-        self.EKIMLIAMFHE = 0;
-        self.FKAKCCJCGAF = 0;
+        self.CNGMMDKCBND = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGetRegionProgressScRsp {
         static instance: MonopolyGetRegionProgressScRsp = MonopolyGetRegionProgressScRsp {
+            HEIHPAPJHID: 0,
             retcode: 0,
-            EKIMLIAMFHE: 0,
-            FKAKCCJCGAF: 0,
+            CNGMMDKCBND: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGetRegionProgressScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$MonopolyGetRegionProgressScRsp.proto\"~\n\x1eMonopolyGetRegionProgres\
-    sScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\x20\n\x0b\
-    EKIMLIAMFHE\x18\n\x20\x01(\rR\x0bEKIMLIAMFHE\x12\x20\n\x0bFKAKCCJCGAF\
-    \x18\x0c\x20\x01(\rR\x0bFKAKCCJCGAFb\x06proto3\
+    sScRsp\x12\x20\n\x0bHEIHPAPJHID\x18\x04\x20\x01(\rR\x0bHEIHPAPJHID\x12\
+    \x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\x0bCNGMMDKCBN\
+    D\x18\r\x20\x01(\rR\x0bCNGMMDKCBNDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MuseumRandomEventQueryCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MuseumRandomEventQueryCsReq.ACBNHJKFFMP)
-    pub ACBNHJKFFMP: i32,
+    // @@protoc_insertion_point(field:MuseumRandomEventQueryCsReq.ILLOCMPNIOH)
+    pub ILLOCMPNIOH: i32,
     // special fields
     // @@protoc_insertion_point(special_field:MuseumRandomEventQueryCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MuseumRandomEventQueryCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACBNHJKFFMP",
-            |m: &MuseumRandomEventQueryCsReq| { &m.ACBNHJKFFMP },
-            |m: &mut MuseumRandomEventQueryCsReq| { &mut m.ACBNHJKFFMP },
+            "ILLOCMPNIOH",
+            |m: &MuseumRandomEventQueryCsReq| { &m.ILLOCMPNIOH },
+            |m: &mut MuseumRandomEventQueryCsReq| { &mut m.ILLOCMPNIOH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MuseumRandomEventQueryCsReq>(
             "MuseumRandomEventQueryCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MuseumRandomEventQueryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.ACBNHJKFFMP = is.read_int32()?;
+                80 => {
+                    self.ILLOCMPNIOH = is.read_int32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for MuseumRandomEventQueryCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ACBNHJKFFMP != 0 {
-            my_size += ::protobuf::rt::int32_size(5, self.ACBNHJKFFMP);
+        if self.ILLOCMPNIOH != 0 {
+            my_size += ::protobuf::rt::int32_size(10, self.ILLOCMPNIOH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for MuseumRandomEventQueryCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ACBNHJKFFMP != 0 {
-            os.write_int32(5, self.ACBNHJKFFMP)?;
+        if self.ILLOCMPNIOH != 0 {
+            os.write_int32(10, self.ILLOCMPNIOH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for MuseumRandomEventQueryCsReq {
     }
 
     fn clear(&mut self) {
-        self.ACBNHJKFFMP = 0;
+        self.ILLOCMPNIOH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MuseumRandomEventQueryCsReq {
         static instance: MuseumRandomEventQueryCsReq = MuseumRandomEventQueryCsReq {
-            ACBNHJKFFMP: 0,
+            ILLOCMPNIOH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for MuseumRandomEventQueryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!MuseumRandomEventQueryCsReq.proto\"?\n\x1bMuseumRandomEventQueryCsReq\
-    \x12\x20\n\x0bACBNHJKFFMP\x18\x05\x20\x01(\x05R\x0bACBNHJKFFMPb\x06proto\
-    3\
+    \x12\x20\n\x0bILLOCMPNIOH\x18\n\x20\x01(\x05R\x0bILLOCMPNIOHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

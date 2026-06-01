@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengeBossStatistics {
     // message fields
+    // @@protoc_insertion_point(field:ChallengeBossStatistics.PPBHLLOJNEK)
+    pub PPBHLLOJNEK: ::protobuf::MessageField<super::AANLJBLOOFO::AANLJBLOOFO>,
     // @@protoc_insertion_point(field:ChallengeBossStatistics.record_id)
     pub record_id: u32,
-    // @@protoc_insertion_point(field:ChallengeBossStatistics.NCEGEKNLJCE)
-    pub NCEGEKNLJCE: ::protobuf::MessageField<super::BHFAFMDHKKC::BHFAFMDHKKC>,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeBossStatistics.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ChallengeBossStatistics {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AANLJBLOOFO::AANLJBLOOFO>(
+            "PPBHLLOJNEK",
+            |m: &ChallengeBossStatistics| { &m.PPBHLLOJNEK },
+            |m: &mut ChallengeBossStatistics| { &mut m.PPBHLLOJNEK },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "record_id",
             |m: &ChallengeBossStatistics| { &m.record_id },
             |m: &mut ChallengeBossStatistics| { &mut m.record_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BHFAFMDHKKC::BHFAFMDHKKC>(
-            "NCEGEKNLJCE",
-            |m: &ChallengeBossStatistics| { &m.NCEGEKNLJCE },
-            |m: &mut ChallengeBossStatistics| { &mut m.NCEGEKNLJCE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeBossStatistics>(
             "ChallengeBossStatistics",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChallengeBossStatistics {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PPBHLLOJNEK)?;
+                },
                 96 => {
                     self.record_id = is.read_uint32()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NCEGEKNLJCE)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ChallengeBossStatistics {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.record_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.record_id);
-        }
-        if let Some(v) = self.NCEGEKNLJCE.as_ref() {
+        if let Some(v) = self.PPBHLLOJNEK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.record_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.record_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChallengeBossStatistics {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.PPBHLLOJNEK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
         if self.record_id != 0 {
             os.write_uint32(12, self.record_id)?;
-        }
-        if let Some(v) = self.NCEGEKNLJCE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChallengeBossStatistics {
     }
 
     fn clear(&mut self) {
+        self.PPBHLLOJNEK.clear();
         self.record_id = 0;
-        self.NCEGEKNLJCE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeBossStatistics {
         static instance: ChallengeBossStatistics = ChallengeBossStatistics {
+            PPBHLLOJNEK: ::protobuf::MessageField::none(),
             record_id: 0,
-            NCEGEKNLJCE: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeBossStatistics {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dChallengeBossStatistics.proto\x1a\x11BHFAFMDHKKC.proto\"f\n\x17Cha\
-    llengeBossStatistics\x12\x1b\n\trecord_id\x18\x0c\x20\x01(\rR\x08recordI\
-    d\x12.\n\x0bNCEGEKNLJCE\x18\t\x20\x01(\x0b2\x0c.BHFAFMDHKKCR\x0bNCEGEKNL\
-    JCEb\x06proto3\
+    \n\x1dChallengeBossStatistics.proto\x1a\x11AANLJBLOOFO.proto\"f\n\x17Cha\
+    llengeBossStatistics\x12.\n\x0bPPBHLLOJNEK\x18\x05\x20\x01(\x0b2\x0c.AAN\
+    LJBLOOFOR\x0bPPBHLLOJNEK\x12\x1b\n\trecord_id\x18\x0c\x20\x01(\rR\x08rec\
+    ordIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BHFAFMDHKKC::file_descriptor().clone());
+            deps.push(super::AANLJBLOOFO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChallengeBossStatistics::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

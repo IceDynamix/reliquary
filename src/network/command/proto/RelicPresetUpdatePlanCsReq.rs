@@ -31,7 +31,7 @@ pub struct RelicPresetUpdatePlanCsReq {
     // @@protoc_insertion_point(field:RelicPresetUpdatePlanCsReq.unique_id)
     pub unique_id: u32,
     // message oneof groups
-    pub BPIHFAJCLOC: ::std::option::Option<relic_preset_update_plan_cs_req::BPIHFAJCLOC>,
+    pub KKNBOACNCON: ::std::option::Option<relic_preset_update_plan_cs_req::KKNBOACNCON>,
     // special fields
     // @@protoc_insertion_point(special_field:RelicPresetUpdatePlanCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,88 +48,88 @@ impl RelicPresetUpdatePlanCsReq {
         ::std::default::Default::default()
     }
 
-    // .DPDDLAOBMBH relic_list = 3;
+    // .HPPOINFLEPJ relic_list = 6;
 
-    pub fn relic_list(&self) -> &super::DPDDLAOBMBH::DPDDLAOBMBH {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::RelicList(ref v)) => v,
-            _ => <super::DPDDLAOBMBH::DPDDLAOBMBH as ::protobuf::Message>::default_instance(),
+    pub fn relic_list(&self) -> &super::HPPOINFLEPJ::HPPOINFLEPJ {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref v)) => v,
+            _ => <super::HPPOINFLEPJ::HPPOINFLEPJ as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_relic_list(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
     pub fn has_relic_list(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::RelicList(..)) => true,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_relic_list(&mut self, v: super::DPDDLAOBMBH::DPDDLAOBMBH) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::RelicList(v))
+    pub fn set_relic_list(&mut self, v: super::HPPOINFLEPJ::HPPOINFLEPJ) {
+        self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_relic_list(&mut self) -> &mut super::DPDDLAOBMBH::DPDDLAOBMBH {
-        if let ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::RelicList(_)) = self.BPIHFAJCLOC {
+    pub fn mut_relic_list(&mut self) -> &mut super::HPPOINFLEPJ::HPPOINFLEPJ {
+        if let ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::RelicList(super::DPDDLAOBMBH::DPDDLAOBMBH::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(super::HPPOINFLEPJ::HPPOINFLEPJ::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::RelicList(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_relic_list(&mut self) -> super::DPDDLAOBMBH::DPDDLAOBMBH {
+    pub fn take_relic_list(&mut self) -> super::HPPOINFLEPJ::HPPOINFLEPJ {
         if self.has_relic_list() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::RelicList(v)) => v,
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::DPDDLAOBMBH::DPDDLAOBMBH::new()
+            super::HPPOINFLEPJ::HPPOINFLEPJ::new()
         }
     }
 
-    // string name = 14;
+    // string name = 1;
 
     pub fn name(&self) -> &str {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::Name(ref v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::Name(ref v)) => v,
             _ => "",
         }
     }
 
     pub fn clear_name(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
     pub fn has_name(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::Name(..)) => true,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::Name(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_name(&mut self, v: ::std::string::String) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::Name(v))
+        self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::Name(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_name(&mut self) -> &mut ::std::string::String {
-        if let ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::Name(_)) = self.BPIHFAJCLOC {
+        if let ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::Name(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::Name(::std::string::String::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::Name(::std::string::String::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::Name(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::Name(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -137,8 +137,8 @@ impl RelicPresetUpdatePlanCsReq {
     // Take field
     pub fn take_name(&mut self) -> ::std::string::String {
         if self.has_name() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::Name(v)) => v,
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::Name(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -154,7 +154,7 @@ impl RelicPresetUpdatePlanCsReq {
             |m: &RelicPresetUpdatePlanCsReq| { &m.unique_id },
             |m: &mut RelicPresetUpdatePlanCsReq| { &mut m.unique_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DPDDLAOBMBH::DPDDLAOBMBH>(
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::HPPOINFLEPJ::HPPOINFLEPJ>(
             "relic_list",
             RelicPresetUpdatePlanCsReq::has_relic_list,
             RelicPresetUpdatePlanCsReq::relic_list,
@@ -167,7 +167,7 @@ impl RelicPresetUpdatePlanCsReq {
             RelicPresetUpdatePlanCsReq::name,
             RelicPresetUpdatePlanCsReq::set_name,
         ));
-        oneofs.push(relic_preset_update_plan_cs_req::BPIHFAJCLOC::generated_oneof_descriptor_data());
+        oneofs.push(relic_preset_update_plan_cs_req::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicPresetUpdatePlanCsReq>(
             "RelicPresetUpdatePlanCsReq",
             fields,
@@ -186,14 +186,14 @@ impl ::protobuf::Message for RelicPresetUpdatePlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
+                40 => {
                     self.unique_id = is.read_uint32()?;
                 },
-                26 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::RelicList(is.read_message()?));
+                50 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(is.read_message()?));
                 },
-                114 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(relic_preset_update_plan_cs_req::BPIHFAJCLOC::Name(is.read_string()?));
+                10 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(relic_preset_update_plan_cs_req::KKNBOACNCON::Name(is.read_string()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -208,16 +208,16 @@ impl ::protobuf::Message for RelicPresetUpdatePlanCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.unique_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.unique_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.unique_id);
         }
-        if let ::std::option::Option::Some(ref v) = self.BPIHFAJCLOC {
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &relic_preset_update_plan_cs_req::BPIHFAJCLOC::RelicList(ref v) => {
+                &relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &relic_preset_update_plan_cs_req::BPIHFAJCLOC::Name(ref v) => {
-                    my_size += ::protobuf::rt::string_size(14, &v);
+                &relic_preset_update_plan_cs_req::KKNBOACNCON::Name(ref v) => {
+                    my_size += ::protobuf::rt::string_size(1, &v);
                 },
             };
         }
@@ -228,15 +228,15 @@ impl ::protobuf::Message for RelicPresetUpdatePlanCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.unique_id != 0 {
-            os.write_uint32(10, self.unique_id)?;
+            os.write_uint32(5, self.unique_id)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.BPIHFAJCLOC {
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &relic_preset_update_plan_cs_req::BPIHFAJCLOC::RelicList(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                &relic_preset_update_plan_cs_req::KKNBOACNCON::RelicList(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
                 },
-                &relic_preset_update_plan_cs_req::BPIHFAJCLOC::Name(ref v) => {
-                    os.write_string(14, v)?;
+                &relic_preset_update_plan_cs_req::KKNBOACNCON::Name(ref v) => {
+                    os.write_string(1, v)?;
                 },
             };
         }
@@ -258,15 +258,15 @@ impl ::protobuf::Message for RelicPresetUpdatePlanCsReq {
 
     fn clear(&mut self) {
         self.unique_id = 0;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicPresetUpdatePlanCsReq {
         static instance: RelicPresetUpdatePlanCsReq = RelicPresetUpdatePlanCsReq {
             unique_id: 0,
-            BPIHFAJCLOC: ::std::option::Option::None,
+            KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -295,37 +295,37 @@ pub mod relic_preset_update_plan_cs_req {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:RelicPresetUpdatePlanCsReq.BPIHFAJCLOC)
-    pub enum BPIHFAJCLOC {
+    // @@protoc_insertion_point(oneof:RelicPresetUpdatePlanCsReq.KKNBOACNCON)
+    pub enum KKNBOACNCON {
         // @@protoc_insertion_point(oneof_field:RelicPresetUpdatePlanCsReq.relic_list)
-        RelicList(super::super::DPDDLAOBMBH::DPDDLAOBMBH),
+        RelicList(super::super::HPPOINFLEPJ::HPPOINFLEPJ),
         // @@protoc_insertion_point(oneof_field:RelicPresetUpdatePlanCsReq.name)
         Name(::std::string::String),
     }
 
-    impl ::protobuf::Oneof for BPIHFAJCLOC {
+    impl ::protobuf::Oneof for KKNBOACNCON {
     }
 
-    impl ::protobuf::OneofFull for BPIHFAJCLOC {
+    impl ::protobuf::OneofFull for KKNBOACNCON {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::RelicPresetUpdatePlanCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("BPIHFAJCLOC").unwrap()).clone()
+            descriptor.get(|| <super::RelicPresetUpdatePlanCsReq as ::protobuf::MessageFull>::descriptor().oneof_by_name("KKNBOACNCON").unwrap()).clone()
         }
     }
 
-    impl BPIHFAJCLOC {
+    impl KKNBOACNCON {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<BPIHFAJCLOC>("BPIHFAJCLOC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KKNBOACNCON>("KKNBOACNCON")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20RelicPresetUpdatePlanCsReq.proto\x1a\x11DPDDLAOBMBH.proto\"\x8d\
-    \x01\n\x1aRelicPresetUpdatePlanCsReq\x12\x1b\n\tunique_id\x18\n\x20\x01(\
-    \rR\x08uniqueId\x12-\n\nrelic_list\x18\x03\x20\x01(\x0b2\x0c.DPDDLAOBMBH\
-    H\0R\trelicList\x12\x14\n\x04name\x18\x0e\x20\x01(\tH\0R\x04nameB\r\n\
-    \x0bBPIHFAJCLOCb\x06proto3\
+    \n\x20RelicPresetUpdatePlanCsReq.proto\x1a\x11HPPOINFLEPJ.proto\"\x8d\
+    \x01\n\x1aRelicPresetUpdatePlanCsReq\x12\x1b\n\tunique_id\x18\x05\x20\
+    \x01(\rR\x08uniqueId\x12-\n\nrelic_list\x18\x06\x20\x01(\x0b2\x0c.HPPOIN\
+    FLEPJH\0R\trelicList\x12\x14\n\x04name\x18\x01\x20\x01(\tH\0R\x04nameB\r\
+    \n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -343,7 +343,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DPDDLAOBMBH::file_descriptor().clone());
+            deps.push(super::HPPOINFLEPJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RelicPresetUpdatePlanCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

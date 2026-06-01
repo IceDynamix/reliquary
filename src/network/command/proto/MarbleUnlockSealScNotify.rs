@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarbleUnlockSealScNotify {
     // message fields
-    // @@protoc_insertion_point(field:MarbleUnlockSealScNotify.NLOINMODBLE)
-    pub NLOINMODBLE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MarbleUnlockSealScNotify.EGCLLKDHIAE)
+    pub EGCLLKDHIAE: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MarbleUnlockSealScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MarbleUnlockSealScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NLOINMODBLE",
-            |m: &MarbleUnlockSealScNotify| { &m.NLOINMODBLE },
-            |m: &mut MarbleUnlockSealScNotify| { &mut m.NLOINMODBLE },
+            "EGCLLKDHIAE",
+            |m: &MarbleUnlockSealScNotify| { &m.EGCLLKDHIAE },
+            |m: &mut MarbleUnlockSealScNotify| { &mut m.EGCLLKDHIAE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarbleUnlockSealScNotify>(
             "MarbleUnlockSealScNotify",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for MarbleUnlockSealScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NLOINMODBLE)?;
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EGCLLKDHIAE)?;
                 },
-                104 => {
-                    self.NLOINMODBLE.push(is.read_uint32()?);
+                16 => {
+                    self.EGCLLKDHIAE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for MarbleUnlockSealScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.NLOINMODBLE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.EGCLLKDHIAE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(13, &self.NLOINMODBLE)?;
+        os.write_repeated_packed_uint32(2, &self.EGCLLKDHIAE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for MarbleUnlockSealScNotify {
     }
 
     fn clear(&mut self) {
-        self.NLOINMODBLE.clear();
+        self.EGCLLKDHIAE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarbleUnlockSealScNotify {
         static instance: MarbleUnlockSealScNotify = MarbleUnlockSealScNotify {
-            NLOINMODBLE: ::std::vec::Vec::new(),
+            EGCLLKDHIAE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for MarbleUnlockSealScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eMarbleUnlockSealScNotify.proto\"<\n\x18MarbleUnlockSealScNotify\
-    \x12\x20\n\x0bNLOINMODBLE\x18\r\x20\x03(\rR\x0bNLOINMODBLEb\x06proto3\
+    \x12\x20\n\x0bEGCLLKDHIAE\x18\x02\x20\x03(\rR\x0bEGCLLKDHIAEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

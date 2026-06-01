@@ -28,24 +28,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PunkLordMonsterBasicInfo {
     // message fields
-    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.uid)
-    pub uid: u32,
-    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.monster_id)
-    pub monster_id: u32,
     // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.config_id)
     pub config_id: u32,
-    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.world_level)
-    pub world_level: u32,
-    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.create_time)
-    pub create_time: i64,
-    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.left_hp)
-    pub left_hp: u32,
     // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.attacker_num)
     pub attacker_num: u32,
+    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.monster_id)
+    pub monster_id: u32,
+    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.uid)
+    pub uid: u32,
+    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.create_time)
+    pub create_time: i64,
+    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.world_level)
+    pub world_level: u32,
+    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.left_hp)
+    pub left_hp: u32,
     // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.share_type)
     pub share_type: ::protobuf::EnumOrUnknown<super::PunkLordShareType::PunkLordShareType>,
-    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.OKHELIELNME)
-    pub OKHELIELNME: bool,
+    // @@protoc_insertion_point(field:PunkLordMonsterBasicInfo.APCMAIJPPEH)
+    pub APCMAIJPPEH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordMonsterBasicInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -66,34 +66,9 @@ impl PunkLordMonsterBasicInfo {
         let mut fields = ::std::vec::Vec::with_capacity(9);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &PunkLordMonsterBasicInfo| { &m.uid },
-            |m: &mut PunkLordMonsterBasicInfo| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "monster_id",
-            |m: &PunkLordMonsterBasicInfo| { &m.monster_id },
-            |m: &mut PunkLordMonsterBasicInfo| { &mut m.monster_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "config_id",
             |m: &PunkLordMonsterBasicInfo| { &m.config_id },
             |m: &mut PunkLordMonsterBasicInfo| { &mut m.config_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &PunkLordMonsterBasicInfo| { &m.world_level },
-            |m: &mut PunkLordMonsterBasicInfo| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "create_time",
-            |m: &PunkLordMonsterBasicInfo| { &m.create_time },
-            |m: &mut PunkLordMonsterBasicInfo| { &mut m.create_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "left_hp",
-            |m: &PunkLordMonsterBasicInfo| { &m.left_hp },
-            |m: &mut PunkLordMonsterBasicInfo| { &mut m.left_hp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "attacker_num",
@@ -101,14 +76,39 @@ impl PunkLordMonsterBasicInfo {
             |m: &mut PunkLordMonsterBasicInfo| { &mut m.attacker_num },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "monster_id",
+            |m: &PunkLordMonsterBasicInfo| { &m.monster_id },
+            |m: &mut PunkLordMonsterBasicInfo| { &mut m.monster_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &PunkLordMonsterBasicInfo| { &m.uid },
+            |m: &mut PunkLordMonsterBasicInfo| { &mut m.uid },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "create_time",
+            |m: &PunkLordMonsterBasicInfo| { &m.create_time },
+            |m: &mut PunkLordMonsterBasicInfo| { &mut m.create_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &PunkLordMonsterBasicInfo| { &m.world_level },
+            |m: &mut PunkLordMonsterBasicInfo| { &mut m.world_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "left_hp",
+            |m: &PunkLordMonsterBasicInfo| { &m.left_hp },
+            |m: &mut PunkLordMonsterBasicInfo| { &mut m.left_hp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "share_type",
             |m: &PunkLordMonsterBasicInfo| { &m.share_type },
             |m: &mut PunkLordMonsterBasicInfo| { &mut m.share_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKHELIELNME",
-            |m: &PunkLordMonsterBasicInfo| { &m.OKHELIELNME },
-            |m: &mut PunkLordMonsterBasicInfo| { &mut m.OKHELIELNME },
+            "APCMAIJPPEH",
+            |m: &PunkLordMonsterBasicInfo| { &m.APCMAIJPPEH },
+            |m: &mut PunkLordMonsterBasicInfo| { &mut m.APCMAIJPPEH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PunkLordMonsterBasicInfo>(
             "PunkLordMonsterBasicInfo",
@@ -128,32 +128,32 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.uid = is.read_uint32()?;
+                24 => {
+                    self.config_id = is.read_uint32()?;
+                },
+                56 => {
+                    self.attacker_num = is.read_uint32()?;
                 },
                 16 => {
                     self.monster_id = is.read_uint32()?;
                 },
-                24 => {
-                    self.config_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.world_level = is.read_uint32()?;
+                8 => {
+                    self.uid = is.read_uint32()?;
                 },
                 40 => {
                     self.create_time = is.read_int64()?;
                 },
+                32 => {
+                    self.world_level = is.read_uint32()?;
+                },
                 48 => {
                     self.left_hp = is.read_uint32()?;
-                },
-                56 => {
-                    self.attacker_num = is.read_uint32()?;
                 },
                 64 => {
                     self.share_type = is.read_enum_or_unknown()?;
                 },
                 72 => {
-                    self.OKHELIELNME = is.read_bool()?;
+                    self.APCMAIJPPEH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -167,31 +167,31 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.uid);
-        }
-        if self.monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.monster_id);
-        }
         if self.config_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.config_id);
-        }
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.world_level);
-        }
-        if self.create_time != 0 {
-            my_size += ::protobuf::rt::int64_size(5, self.create_time);
-        }
-        if self.left_hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.left_hp);
         }
         if self.attacker_num != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.attacker_num);
         }
-        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::FOODOPDNDLK_PCPDHELPKEM) {
+        if self.monster_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.monster_id);
+        }
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.uid);
+        }
+        if self.create_time != 0 {
+            my_size += ::protobuf::rt::int64_size(5, self.create_time);
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.world_level);
+        }
+        if self.left_hp != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.left_hp);
+        }
+        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ) {
             my_size += ::protobuf::rt::int32_size(8, self.share_type.value());
         }
-        if self.OKHELIELNME != false {
+        if self.APCMAIJPPEH != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -200,32 +200,32 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.uid != 0 {
-            os.write_uint32(1, self.uid)?;
-        }
-        if self.monster_id != 0 {
-            os.write_uint32(2, self.monster_id)?;
-        }
         if self.config_id != 0 {
             os.write_uint32(3, self.config_id)?;
-        }
-        if self.world_level != 0 {
-            os.write_uint32(4, self.world_level)?;
-        }
-        if self.create_time != 0 {
-            os.write_int64(5, self.create_time)?;
-        }
-        if self.left_hp != 0 {
-            os.write_uint32(6, self.left_hp)?;
         }
         if self.attacker_num != 0 {
             os.write_uint32(7, self.attacker_num)?;
         }
-        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::FOODOPDNDLK_PCPDHELPKEM) {
+        if self.monster_id != 0 {
+            os.write_uint32(2, self.monster_id)?;
+        }
+        if self.uid != 0 {
+            os.write_uint32(1, self.uid)?;
+        }
+        if self.create_time != 0 {
+            os.write_int64(5, self.create_time)?;
+        }
+        if self.world_level != 0 {
+            os.write_uint32(4, self.world_level)?;
+        }
+        if self.left_hp != 0 {
+            os.write_uint32(6, self.left_hp)?;
+        }
+        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ) {
             os.write_enum(8, ::protobuf::EnumOrUnknown::value(&self.share_type))?;
         }
-        if self.OKHELIELNME != false {
-            os.write_bool(9, self.OKHELIELNME)?;
+        if self.APCMAIJPPEH != false {
+            os.write_bool(9, self.APCMAIJPPEH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -244,29 +244,29 @@ impl ::protobuf::Message for PunkLordMonsterBasicInfo {
     }
 
     fn clear(&mut self) {
-        self.uid = 0;
-        self.monster_id = 0;
         self.config_id = 0;
-        self.world_level = 0;
-        self.create_time = 0;
-        self.left_hp = 0;
         self.attacker_num = 0;
-        self.share_type = ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::FOODOPDNDLK_PCPDHELPKEM);
-        self.OKHELIELNME = false;
+        self.monster_id = 0;
+        self.uid = 0;
+        self.create_time = 0;
+        self.world_level = 0;
+        self.left_hp = 0;
+        self.share_type = ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ);
+        self.APCMAIJPPEH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PunkLordMonsterBasicInfo {
         static instance: PunkLordMonsterBasicInfo = PunkLordMonsterBasicInfo {
-            uid: 0,
-            monster_id: 0,
             config_id: 0,
-            world_level: 0,
-            create_time: 0,
-            left_hp: 0,
             attacker_num: 0,
+            monster_id: 0,
+            uid: 0,
+            create_time: 0,
+            world_level: 0,
+            left_hp: 0,
             share_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            OKHELIELNME: false,
+            APCMAIJPPEH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -292,14 +292,14 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordMonsterBasicInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1ePunkLordMonsterBasicInfo.proto\x1a\x17PunkLordShareType.proto\"\
-    \xbb\x02\n\x18PunkLordMonsterBasicInfo\x12\x10\n\x03uid\x18\x01\x20\x01(\
-    \rR\x03uid\x12\x1d\n\nmonster_id\x18\x02\x20\x01(\rR\tmonsterId\x12\x1b\
-    \n\tconfig_id\x18\x03\x20\x01(\rR\x08configId\x12\x1f\n\x0bworld_level\
-    \x18\x04\x20\x01(\rR\nworldLevel\x12\x1f\n\x0bcreate_time\x18\x05\x20\
-    \x01(\x03R\ncreateTime\x12\x17\n\x07left_hp\x18\x06\x20\x01(\rR\x06leftH\
-    p\x12!\n\x0cattacker_num\x18\x07\x20\x01(\rR\x0battackerNum\x121\n\nshar\
-    e_type\x18\x08\x20\x01(\x0e2\x12.PunkLordShareTypeR\tshareType\x12\x20\n\
-    \x0bOKHELIELNME\x18\t\x20\x01(\x08R\x0bOKHELIELNMEb\x06proto3\
+    \xbb\x02\n\x18PunkLordMonsterBasicInfo\x12\x1b\n\tconfig_id\x18\x03\x20\
+    \x01(\rR\x08configId\x12!\n\x0cattacker_num\x18\x07\x20\x01(\rR\x0battac\
+    kerNum\x12\x1d\n\nmonster_id\x18\x02\x20\x01(\rR\tmonsterId\x12\x10\n\
+    \x03uid\x18\x01\x20\x01(\rR\x03uid\x12\x1f\n\x0bcreate_time\x18\x05\x20\
+    \x01(\x03R\ncreateTime\x12\x1f\n\x0bworld_level\x18\x04\x20\x01(\rR\nwor\
+    ldLevel\x12\x17\n\x07left_hp\x18\x06\x20\x01(\rR\x06leftHp\x121\n\nshare\
+    _type\x18\x08\x20\x01(\x0e2\x12.PunkLordShareTypeR\tshareType\x12\x20\n\
+    \x0bAPCMAIJPPEH\x18\t\x20\x01(\x08R\x0bAPCMAIJPPEHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

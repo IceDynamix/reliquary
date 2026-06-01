@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RemoveStuffFromAreaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RemoveStuffFromAreaCsReq.GKFEGIBGEGI)
-    pub GKFEGIBGEGI: u32,
+    // @@protoc_insertion_point(field:RemoveStuffFromAreaCsReq.CEAMLKCMMGD)
+    pub CEAMLKCMMGD: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RemoveStuffFromAreaCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RemoveStuffFromAreaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GKFEGIBGEGI",
-            |m: &RemoveStuffFromAreaCsReq| { &m.GKFEGIBGEGI },
-            |m: &mut RemoveStuffFromAreaCsReq| { &mut m.GKFEGIBGEGI },
+            "CEAMLKCMMGD",
+            |m: &RemoveStuffFromAreaCsReq| { &m.CEAMLKCMMGD },
+            |m: &mut RemoveStuffFromAreaCsReq| { &mut m.CEAMLKCMMGD },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RemoveStuffFromAreaCsReq>(
             "RemoveStuffFromAreaCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.GKFEGIBGEGI = is.read_uint32()?;
+                64 => {
+                    self.CEAMLKCMMGD = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GKFEGIBGEGI != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.GKFEGIBGEGI);
+        if self.CEAMLKCMMGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CEAMLKCMMGD);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GKFEGIBGEGI != 0 {
-            os.write_uint32(14, self.GKFEGIBGEGI)?;
+        if self.CEAMLKCMMGD != 0 {
+            os.write_uint32(8, self.CEAMLKCMMGD)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RemoveStuffFromAreaCsReq {
     }
 
     fn clear(&mut self) {
-        self.GKFEGIBGEGI = 0;
+        self.CEAMLKCMMGD = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RemoveStuffFromAreaCsReq {
         static instance: RemoveStuffFromAreaCsReq = RemoveStuffFromAreaCsReq {
-            GKFEGIBGEGI: 0,
+            CEAMLKCMMGD: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RemoveStuffFromAreaCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eRemoveStuffFromAreaCsReq.proto\"<\n\x18RemoveStuffFromAreaCsReq\
-    \x12\x20\n\x0bGKFEGIBGEGI\x18\x0e\x20\x01(\rR\x0bGKFEGIBGEGIb\x06proto3\
+    \x12\x20\n\x0bCEAMLKCMMGD\x18\x08\x20\x01(\rR\x0bCEAMLKCMMGDb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

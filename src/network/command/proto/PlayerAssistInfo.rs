@@ -79,10 +79,10 @@ impl ::protobuf::Message for PlayerAssistInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                34 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.assist_avatar)?;
                 },
-                122 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for PlayerAssistInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.assist_avatar.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -169,9 +169,9 @@ impl ::protobuf::reflect::ProtobufValue for PlayerAssistInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16PlayerAssistInfo.proto\x1a\x1dDisplayAvatarDetailInfo.proto\x1a\
     \x16PlayerSimpleInfo.proto\"\x85\x01\n\x10PlayerAssistInfo\x12=\n\rassis\
-    t_avatar\x18\x0b\x20\x01(\x0b2\x18.DisplayAvatarDetailInfoR\x0cassistAva\
-    tar\x122\n\x0bplayer_info\x18\x0f\x20\x01(\x0b2\x11.PlayerSimpleInfoR\np\
-    layerInfob\x06proto3\
+    t_avatar\x18\x04\x20\x01(\x0b2\x18.DisplayAvatarDetailInfoR\x0cassistAva\
+    tar\x122\n\x0bplayer_info\x18\r\x20\x01(\x0b2\x11.PlayerSimpleInfoR\npla\
+    yerInfob\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

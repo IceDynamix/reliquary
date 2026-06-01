@@ -27,6 +27,9 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 // @@protoc_insertion_point(message:GetFriendNewAssistRewardScNotify)
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendNewAssistRewardScNotify {
+    // message fields
+    // @@protoc_insertion_point(field:GetFriendNewAssistRewardScNotify.FANDKFADKKM)
+    pub FANDKFADKKM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendNewAssistRewardScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -44,8 +47,13 @@ impl GetFriendNewAssistRewardScNotify {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(0);
+        let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "FANDKFADKKM",
+            |m: &GetFriendNewAssistRewardScNotify| { &m.FANDKFADKKM },
+            |m: &mut GetFriendNewAssistRewardScNotify| { &mut m.FANDKFADKKM },
+        ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendNewAssistRewardScNotify>(
             "GetFriendNewAssistRewardScNotify",
             fields,
@@ -64,6 +72,9 @@ impl ::protobuf::Message for GetFriendNewAssistRewardScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                72 => {
+                    self.FANDKFADKKM = is.read_uint32()?;
+                },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
                 },
@@ -76,12 +87,18 @@ impl ::protobuf::Message for GetFriendNewAssistRewardScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if self.FANDKFADKKM != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.FANDKFADKKM);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if self.FANDKFADKKM != 0 {
+            os.write_uint32(9, self.FANDKFADKKM)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -99,11 +116,13 @@ impl ::protobuf::Message for GetFriendNewAssistRewardScNotify {
     }
 
     fn clear(&mut self) {
+        self.FANDKFADKKM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendNewAssistRewardScNotify {
         static instance: GetFriendNewAssistRewardScNotify = GetFriendNewAssistRewardScNotify {
+            FANDKFADKKM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -128,8 +147,9 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendNewAssistRewardScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&GetFriendNewAssistRewardScNotify.proto\"\"\n\x20GetFriendNewAssistRew\
-    ardScNotifyb\x06proto3\
+    \n&GetFriendNewAssistRewardScNotify.proto\"D\n\x20GetFriendNewAssistRewa\
+    rdScNotify\x12\x20\n\x0bFANDKFADKKM\x18\t\x20\x01(\rR\x0bFANDKFADKKMb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

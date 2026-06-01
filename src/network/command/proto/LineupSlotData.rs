@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LineupSlotData {
     // message fields
-    // @@protoc_insertion_point(field:LineupSlotData.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:LineupSlotData.slot)
     pub slot: u32,
+    // @@protoc_insertion_point(field:LineupSlotData.id)
+    pub id: u32,
     // @@protoc_insertion_point(field:LineupSlotData.assist_uid)
     pub assist_uid: u32,
     // @@protoc_insertion_point(field:LineupSlotData.avatar_type)
@@ -56,14 +56,14 @@ impl LineupSlotData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &LineupSlotData| { &m.id },
-            |m: &mut LineupSlotData| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "slot",
             |m: &LineupSlotData| { &m.slot },
             |m: &mut LineupSlotData| { &mut m.slot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &LineupSlotData| { &m.id },
+            |m: &mut LineupSlotData| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "assist_uid",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for LineupSlotData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
+                96 => {
+                    self.slot = is.read_uint32()?;
+                },
+                64 => {
                     self.id = is.read_uint32()?;
                 },
                 24 => {
-                    self.slot = is.read_uint32()?;
-                },
-                104 => {
                     self.assist_uid = is.read_uint32()?;
                 },
-                32 => {
+                56 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
@@ -117,17 +117,17 @@ impl ::protobuf::Message for LineupSlotData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.id);
-        }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.slot);
+            my_size += ::protobuf::rt::uint32_size(12, self.slot);
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.id);
         }
         if self.assist_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.assist_uid);
+            my_size += ::protobuf::rt::uint32_size(3, self.assist_uid);
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.avatar_type.value());
+            my_size += ::protobuf::rt::int32_size(7, self.avatar_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for LineupSlotData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.id != 0 {
-            os.write_uint32(7, self.id)?;
-        }
         if self.slot != 0 {
-            os.write_uint32(3, self.slot)?;
+            os.write_uint32(12, self.slot)?;
+        }
+        if self.id != 0 {
+            os.write_uint32(8, self.id)?;
         }
         if self.assist_uid != 0 {
-            os.write_uint32(13, self.assist_uid)?;
+            os.write_uint32(3, self.assist_uid)?;
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,8 +164,8 @@ impl ::protobuf::Message for LineupSlotData {
     }
 
     fn clear(&mut self) {
-        self.id = 0;
         self.slot = 0;
+        self.id = 0;
         self.assist_uid = 0;
         self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for LineupSlotData {
 
     fn default_instance() -> &'static LineupSlotData {
         static instance: LineupSlotData = LineupSlotData {
-            id: 0,
             slot: 0,
+            id: 0,
             assist_uid: 0,
             avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for LineupSlotData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x14LineupSlotData.proto\x1a\x10AvatarType.proto\"\x81\x01\n\x0eLineup\
-    SlotData\x12\x0e\n\x02id\x18\x07\x20\x01(\rR\x02id\x12\x12\n\x04slot\x18\
-    \x03\x20\x01(\rR\x04slot\x12\x1d\n\nassist_uid\x18\r\x20\x01(\rR\tassist\
-    Uid\x12,\n\x0bavatar_type\x18\x04\x20\x01(\x0e2\x0b.AvatarTypeR\navatarT\
-    ypeb\x06proto3\
+    SlotData\x12\x12\n\x04slot\x18\x0c\x20\x01(\rR\x04slot\x12\x0e\n\x02id\
+    \x18\x08\x20\x01(\rR\x02id\x12\x1d\n\nassist_uid\x18\x03\x20\x01(\rR\tas\
+    sistUid\x12,\n\x0bavatar_type\x18\x07\x20\x01(\x0e2\x0b.AvatarTypeR\nava\
+    tarTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

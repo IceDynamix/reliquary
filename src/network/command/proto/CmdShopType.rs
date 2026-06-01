@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdShopType)
 pub enum CmdShopType {
-    // @@protoc_insertion_point(enum_value:CmdShopType.FMOJCFMPCNA_PCPDHELPKEM)
-    FMOJCFMPCNA_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdEFLGLOKNBKP)
-    CmdEFLGLOKNBKP = 1518,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdCityShopInfoScNotify)
-    CmdCityShopInfoScNotify = 1509,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdBuyGoodsCsReq)
-    CmdBuyGoodsCsReq = 1594,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdTakeCityShopRewardCsReq)
-    CmdTakeCityShopRewardCsReq = 1514,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdBuyGoodsScRsp)
-    CmdBuyGoodsScRsp = 1595,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdGetShopListScRsp)
-    CmdGetShopListScRsp = 1510,
-    // @@protoc_insertion_point(enum_value:CmdShopType.CmdGetShopListCsReq)
-    CmdGetShopListCsReq = 1591,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_NLCDGIPGFDJ)
+    LHKCEAHDMDF_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_OGOGLCKKCEK)
+    LHKCEAHDMDF_OGOGLCKKCEK = 1513,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_BEBCIIPDOEK)
+    LHKCEAHDMDF_BEBCIIPDOEK = 1527,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_LHDGOGDBNFH)
+    LHKCEAHDMDF_LHDGOGDBNFH = 1515,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_ADLEAFAAFKB)
+    LHKCEAHDMDF_ADLEAFAAFKB = 1536,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_CHIGHHKJHHH)
+    LHKCEAHDMDF_CHIGHHKJHHH = 1573,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_LOFDPKHCHEA)
+    LHKCEAHDMDF_LOFDPKHCHEA = 1580,
+    // @@protoc_insertion_point(enum_value:CmdShopType.LHKCEAHDMDF_HJEDLPLFIKL)
+    LHKCEAHDMDF_HJEDLPLFIKL = 1503,
 }
 
 impl ::protobuf::Enum for CmdShopType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for CmdShopType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdShopType> {
         match value {
-            0 => ::std::option::Option::Some(CmdShopType::FMOJCFMPCNA_PCPDHELPKEM),
-            1518 => ::std::option::Option::Some(CmdShopType::CmdEFLGLOKNBKP),
-            1509 => ::std::option::Option::Some(CmdShopType::CmdCityShopInfoScNotify),
-            1594 => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsCsReq),
-            1514 => ::std::option::Option::Some(CmdShopType::CmdTakeCityShopRewardCsReq),
-            1595 => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsScRsp),
-            1510 => ::std::option::Option::Some(CmdShopType::CmdGetShopListScRsp),
-            1591 => ::std::option::Option::Some(CmdShopType::CmdGetShopListCsReq),
+            0 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_NLCDGIPGFDJ),
+            1513 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK),
+            1527 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK),
+            1515 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH),
+            1536 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB),
+            1573 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH),
+            1580 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA),
+            1503 => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_HJEDLPLFIKL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdShopType> {
         match str {
-            "FMOJCFMPCNA_PCPDHELPKEM" => ::std::option::Option::Some(CmdShopType::FMOJCFMPCNA_PCPDHELPKEM),
-            "CmdEFLGLOKNBKP" => ::std::option::Option::Some(CmdShopType::CmdEFLGLOKNBKP),
-            "CmdCityShopInfoScNotify" => ::std::option::Option::Some(CmdShopType::CmdCityShopInfoScNotify),
-            "CmdBuyGoodsCsReq" => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsCsReq),
-            "CmdTakeCityShopRewardCsReq" => ::std::option::Option::Some(CmdShopType::CmdTakeCityShopRewardCsReq),
-            "CmdBuyGoodsScRsp" => ::std::option::Option::Some(CmdShopType::CmdBuyGoodsScRsp),
-            "CmdGetShopListScRsp" => ::std::option::Option::Some(CmdShopType::CmdGetShopListScRsp),
-            "CmdGetShopListCsReq" => ::std::option::Option::Some(CmdShopType::CmdGetShopListCsReq),
+            "LHKCEAHDMDF_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_NLCDGIPGFDJ),
+            "LHKCEAHDMDF_OGOGLCKKCEK" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK),
+            "LHKCEAHDMDF_BEBCIIPDOEK" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK),
+            "LHKCEAHDMDF_LHDGOGDBNFH" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH),
+            "LHKCEAHDMDF_ADLEAFAAFKB" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB),
+            "LHKCEAHDMDF_CHIGHHKJHHH" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH),
+            "LHKCEAHDMDF_LOFDPKHCHEA" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA),
+            "LHKCEAHDMDF_HJEDLPLFIKL" => ::std::option::Option::Some(CmdShopType::LHKCEAHDMDF_HJEDLPLFIKL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdShopType] = &[
-        CmdShopType::FMOJCFMPCNA_PCPDHELPKEM,
-        CmdShopType::CmdEFLGLOKNBKP,
-        CmdShopType::CmdCityShopInfoScNotify,
-        CmdShopType::CmdBuyGoodsCsReq,
-        CmdShopType::CmdTakeCityShopRewardCsReq,
-        CmdShopType::CmdBuyGoodsScRsp,
-        CmdShopType::CmdGetShopListScRsp,
-        CmdShopType::CmdGetShopListCsReq,
+        CmdShopType::LHKCEAHDMDF_NLCDGIPGFDJ,
+        CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK,
+        CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK,
+        CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH,
+        CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB,
+        CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH,
+        CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA,
+        CmdShopType::LHKCEAHDMDF_HJEDLPLFIKL,
     ];
 }
 
@@ -100,14 +100,14 @@ impl ::protobuf::EnumFull for CmdShopType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdShopType::FMOJCFMPCNA_PCPDHELPKEM => 0,
-            CmdShopType::CmdEFLGLOKNBKP => 1,
-            CmdShopType::CmdCityShopInfoScNotify => 2,
-            CmdShopType::CmdBuyGoodsCsReq => 3,
-            CmdShopType::CmdTakeCityShopRewardCsReq => 4,
-            CmdShopType::CmdBuyGoodsScRsp => 5,
-            CmdShopType::CmdGetShopListScRsp => 6,
-            CmdShopType::CmdGetShopListCsReq => 7,
+            CmdShopType::LHKCEAHDMDF_NLCDGIPGFDJ => 0,
+            CmdShopType::LHKCEAHDMDF_OGOGLCKKCEK => 1,
+            CmdShopType::LHKCEAHDMDF_BEBCIIPDOEK => 2,
+            CmdShopType::LHKCEAHDMDF_LHDGOGDBNFH => 3,
+            CmdShopType::LHKCEAHDMDF_ADLEAFAAFKB => 4,
+            CmdShopType::LHKCEAHDMDF_CHIGHHKJHHH => 5,
+            CmdShopType::LHKCEAHDMDF_LOFDPKHCHEA => 6,
+            CmdShopType::LHKCEAHDMDF_HJEDLPLFIKL => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,7 +115,7 @@ impl ::protobuf::EnumFull for CmdShopType {
 
 impl ::std::default::Default for CmdShopType {
     fn default() -> Self {
-        CmdShopType::FMOJCFMPCNA_PCPDHELPKEM
+        CmdShopType::LHKCEAHDMDF_NLCDGIPGFDJ
     }
 }
 
@@ -126,12 +126,13 @@ impl CmdShopType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11CmdShopType.proto*\xe0\x01\n\x0bCmdShopType\x12\x1b\n\x17FMOJCFMPC\
-    NA_PCPDHELPKEM\x10\0\x12\x13\n\x0eCmdEFLGLOKNBKP\x10\xee\x0b\x12\x1c\n\
-    \x17CmdCityShopInfoScNotify\x10\xe5\x0b\x12\x15\n\x10CmdBuyGoodsCsReq\
-    \x10\xba\x0c\x12\x1f\n\x1aCmdTakeCityShopRewardCsReq\x10\xea\x0b\x12\x15\
-    \n\x10CmdBuyGoodsScRsp\x10\xbb\x0c\x12\x18\n\x13CmdGetShopListScRsp\x10\
-    \xe6\x0b\x12\x18\n\x13CmdGetShopListCsReq\x10\xb7\x0cb\x06proto3\
+    \n\x11CmdShopType.proto*\xfc\x01\n\x0bCmdShopType\x12\x1b\n\x17LHKCEAHDM\
+    DF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LHKCEAHDMDF_OGOGLCKKCEK\x10\xe9\x0b\
+    \x12\x1c\n\x17LHKCEAHDMDF_BEBCIIPDOEK\x10\xf7\x0b\x12\x1c\n\x17LHKCEAHDM\
+    DF_LHDGOGDBNFH\x10\xeb\x0b\x12\x1c\n\x17LHKCEAHDMDF_ADLEAFAAFKB\x10\x80\
+    \x0c\x12\x1c\n\x17LHKCEAHDMDF_CHIGHHKJHHH\x10\xa5\x0c\x12\x1c\n\x17LHKCE\
+    AHDMDF_LOFDPKHCHEA\x10\xac\x0c\x12\x1c\n\x17LHKCEAHDMDF_HJEDLPLFIKL\x10\
+    \xdf\x0bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

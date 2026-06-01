@@ -30,8 +30,8 @@ pub struct EnterRogueMapRoomCsReq {
     // message fields
     // @@protoc_insertion_point(field:EnterRogueMapRoomCsReq.room_id)
     pub room_id: u32,
-    // @@protoc_insertion_point(field:EnterRogueMapRoomCsReq.HCMJDMFNENE)
-    pub HCMJDMFNENE: u32,
+    // @@protoc_insertion_point(field:EnterRogueMapRoomCsReq.MAJKFIMPOOF)
+    pub MAJKFIMPOOF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterRogueMapRoomCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl EnterRogueMapRoomCsReq {
             |m: &mut EnterRogueMapRoomCsReq| { &mut m.room_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCMJDMFNENE",
-            |m: &EnterRogueMapRoomCsReq| { &m.HCMJDMFNENE },
-            |m: &mut EnterRogueMapRoomCsReq| { &mut m.HCMJDMFNENE },
+            "MAJKFIMPOOF",
+            |m: &EnterRogueMapRoomCsReq| { &m.MAJKFIMPOOF },
+            |m: &mut EnterRogueMapRoomCsReq| { &mut m.MAJKFIMPOOF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterRogueMapRoomCsReq>(
             "EnterRogueMapRoomCsReq",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
                 120 => {
                     self.room_id = is.read_uint32()?;
                 },
-                112 => {
-                    self.HCMJDMFNENE = is.read_uint32()?;
+                56 => {
+                    self.MAJKFIMPOOF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
         if self.room_id != 0 {
             my_size += ::protobuf::rt::uint32_size(15, self.room_id);
         }
-        if self.HCMJDMFNENE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HCMJDMFNENE);
+        if self.MAJKFIMPOOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MAJKFIMPOOF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,8 +112,8 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
         if self.room_id != 0 {
             os.write_uint32(15, self.room_id)?;
         }
-        if self.HCMJDMFNENE != 0 {
-            os.write_uint32(14, self.HCMJDMFNENE)?;
+        if self.MAJKFIMPOOF != 0 {
+            os.write_uint32(7, self.MAJKFIMPOOF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for EnterRogueMapRoomCsReq {
 
     fn clear(&mut self) {
         self.room_id = 0;
-        self.HCMJDMFNENE = 0;
+        self.MAJKFIMPOOF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterRogueMapRoomCsReq {
         static instance: EnterRogueMapRoomCsReq = EnterRogueMapRoomCsReq {
             room_id: 0,
-            HCMJDMFNENE: 0,
+            MAJKFIMPOOF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterRogueMapRoomCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cEnterRogueMapRoomCsReq.proto\"S\n\x16EnterRogueMapRoomCsReq\x12\
-    \x17\n\x07room_id\x18\x0f\x20\x01(\rR\x06roomId\x12\x20\n\x0bHCMJDMFNENE\
-    \x18\x0e\x20\x01(\rR\x0bHCMJDMFNENEb\x06proto3\
+    \x17\n\x07room_id\x18\x0f\x20\x01(\rR\x06roomId\x12\x20\n\x0bMAJKFIMPOOF\
+    \x18\x07\x20\x01(\rR\x0bMAJKFIMPOOFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

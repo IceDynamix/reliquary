@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BuyBpLevelCsReq {
     // message fields
-    // @@protoc_insertion_point(field:BuyBpLevelCsReq.ODADJILOEKO)
-    pub ODADJILOEKO: u32,
+    // @@protoc_insertion_point(field:BuyBpLevelCsReq.IGOOJKMPMDC)
+    pub IGOOJKMPMDC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BuyBpLevelCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl BuyBpLevelCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ODADJILOEKO",
-            |m: &BuyBpLevelCsReq| { &m.ODADJILOEKO },
-            |m: &mut BuyBpLevelCsReq| { &mut m.ODADJILOEKO },
+            "IGOOJKMPMDC",
+            |m: &BuyBpLevelCsReq| { &m.IGOOJKMPMDC },
+            |m: &mut BuyBpLevelCsReq| { &mut m.IGOOJKMPMDC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BuyBpLevelCsReq>(
             "BuyBpLevelCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for BuyBpLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.ODADJILOEKO = is.read_uint32()?;
+                32 => {
+                    self.IGOOJKMPMDC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for BuyBpLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ODADJILOEKO != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.ODADJILOEKO);
+        if self.IGOOJKMPMDC != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IGOOJKMPMDC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for BuyBpLevelCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ODADJILOEKO != 0 {
-            os.write_uint32(15, self.ODADJILOEKO)?;
+        if self.IGOOJKMPMDC != 0 {
+            os.write_uint32(4, self.IGOOJKMPMDC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for BuyBpLevelCsReq {
     }
 
     fn clear(&mut self) {
-        self.ODADJILOEKO = 0;
+        self.IGOOJKMPMDC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BuyBpLevelCsReq {
         static instance: BuyBpLevelCsReq = BuyBpLevelCsReq {
-            ODADJILOEKO: 0,
+            IGOOJKMPMDC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for BuyBpLevelCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15BuyBpLevelCsReq.proto\"3\n\x0fBuyBpLevelCsReq\x12\x20\n\x0bODADJIL\
-    OEKO\x18\x0f\x20\x01(\rR\x0bODADJILOEKOb\x06proto3\
+    \n\x15BuyBpLevelCsReq.proto\"3\n\x0fBuyBpLevelCsReq\x12\x20\n\x0bIGOOJKM\
+    PMDC\x18\x04\x20\x01(\rR\x0bIGOOJKMPMDCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

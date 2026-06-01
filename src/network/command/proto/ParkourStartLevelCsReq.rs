@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ParkourStartLevelCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ParkourStartLevelCsReq.HHPFNDBGIIO)
-    pub HHPFNDBGIIO: u32,
+    // @@protoc_insertion_point(field:ParkourStartLevelCsReq.CEKKJHBNEOD)
+    pub CEKKJHBNEOD: u32,
     // @@protoc_insertion_point(field:ParkourStartLevelCsReq.level_id)
     pub level_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ParkourStartLevelCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HHPFNDBGIIO",
-            |m: &ParkourStartLevelCsReq| { &m.HHPFNDBGIIO },
-            |m: &mut ParkourStartLevelCsReq| { &mut m.HHPFNDBGIIO },
+            "CEKKJHBNEOD",
+            |m: &ParkourStartLevelCsReq| { &m.CEKKJHBNEOD },
+            |m: &mut ParkourStartLevelCsReq| { &mut m.CEKKJHBNEOD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ParkourStartLevelCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.HHPFNDBGIIO = is.read_uint32()?;
+                64 => {
+                    self.CEKKJHBNEOD = is.read_uint32()?;
                 },
-                48 => {
+                80 => {
                     self.level_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ParkourStartLevelCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HHPFNDBGIIO != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HHPFNDBGIIO);
+        if self.CEKKJHBNEOD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CEKKJHBNEOD);
         }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(10, self.level_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ParkourStartLevelCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HHPFNDBGIIO != 0 {
-            os.write_uint32(10, self.HHPFNDBGIIO)?;
+        if self.CEKKJHBNEOD != 0 {
+            os.write_uint32(8, self.CEKKJHBNEOD)?;
         }
         if self.level_id != 0 {
-            os.write_uint32(6, self.level_id)?;
+            os.write_uint32(10, self.level_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for ParkourStartLevelCsReq {
     }
 
     fn clear(&mut self) {
-        self.HHPFNDBGIIO = 0;
+        self.CEKKJHBNEOD = 0;
         self.level_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ParkourStartLevelCsReq {
         static instance: ParkourStartLevelCsReq = ParkourStartLevelCsReq {
-            HHPFNDBGIIO: 0,
+            CEKKJHBNEOD: 0,
             level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ParkourStartLevelCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cParkourStartLevelCsReq.proto\"U\n\x16ParkourStartLevelCsReq\x12\
-    \x20\n\x0bHHPFNDBGIIO\x18\n\x20\x01(\rR\x0bHHPFNDBGIIO\x12\x19\n\x08leve\
-    l_id\x18\x06\x20\x01(\rR\x07levelIdb\x06proto3\
+    \x20\n\x0bCEKKJHBNEOD\x18\x08\x20\x01(\rR\x0bCEKKJHBNEOD\x12\x19\n\x08le\
+    vel_id\x18\n\x20\x01(\rR\x07levelIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

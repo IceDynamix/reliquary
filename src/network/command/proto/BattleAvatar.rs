@@ -28,40 +28,40 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleAvatar {
     // message fields
+    // @@protoc_insertion_point(field:BattleAvatar.ALNJENINBPN)
+    pub ALNJENINBPN: ::protobuf::MessageField<super::AMEMKFNABGG::AMEMKFNABGG>,
+    // @@protoc_insertion_point(field:BattleAvatar.CHEFGGPEJKL)
+    pub CHEFGGPEJKL: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
+    // @@protoc_insertion_point(field:BattleAvatar.relic_list)
+    pub relic_list: ::std::vec::Vec<super::BattleRelic::BattleRelic>,
+    // @@protoc_insertion_point(field:BattleAvatar.equipment_list)
+    pub equipment_list: ::std::vec::Vec<super::BattleEquipment::BattleEquipment>,
+    // @@protoc_insertion_point(field:BattleAvatar.avatar_skilltree_list)
+    pub avatar_skilltree_list: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
+    // @@protoc_insertion_point(field:BattleAvatar.sp_bar)
+    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
+    // @@protoc_insertion_point(field:BattleAvatar.enhanced_id)
+    pub enhanced_id: u32,
+    // @@protoc_insertion_point(field:BattleAvatar.hp)
+    pub hp: u32,
     // @@protoc_insertion_point(field:BattleAvatar.avatar_type)
     pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
+    // @@protoc_insertion_point(field:BattleAvatar.rank)
+    pub rank: u32,
+    // @@protoc_insertion_point(field:BattleAvatar.world_level)
+    pub world_level: u32,
+    // @@protoc_insertion_point(field:BattleAvatar.promotion)
+    pub promotion: u32,
+    // @@protoc_insertion_point(field:BattleAvatar.GDIMKFNECOK)
+    pub GDIMKFNECOK: u32,
+    // @@protoc_insertion_point(field:BattleAvatar.index)
+    pub index: u32,
+    // @@protoc_insertion_point(field:BattleAvatar.assist_uid)
+    pub assist_uid: u32,
     // @@protoc_insertion_point(field:BattleAvatar.id)
     pub id: u32,
     // @@protoc_insertion_point(field:BattleAvatar.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.index)
-    pub index: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.avatar_skilltree_list)
-    pub avatar_skilltree_list: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
-    // @@protoc_insertion_point(field:BattleAvatar.equipment_list)
-    pub equipment_list: ::std::vec::Vec<super::BattleEquipment::BattleEquipment>,
-    // @@protoc_insertion_point(field:BattleAvatar.hp)
-    pub hp: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.promotion)
-    pub promotion: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.relic_list)
-    pub relic_list: ::std::vec::Vec<super::BattleRelic::BattleRelic>,
-    // @@protoc_insertion_point(field:BattleAvatar.world_level)
-    pub world_level: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.assist_uid)
-    pub assist_uid: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.AKNHONDBNMM)
-    pub AKNHONDBNMM: ::protobuf::MessageField<super::AAKHENHMIFM::AAKHENHMIFM>,
-    // @@protoc_insertion_point(field:BattleAvatar.sp_bar)
-    pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
-    // @@protoc_insertion_point(field:BattleAvatar.PJLADGOOFKE)
-    pub PJLADGOOFKE: u32,
-    // @@protoc_insertion_point(field:BattleAvatar.LFPOAOFBGPJ)
-    pub LFPOAOFBGPJ: ::std::vec::Vec<super::AvatarSkillTree::AvatarSkillTree>,
-    // @@protoc_insertion_point(field:BattleAvatar.enhanced_id)
-    pub enhanced_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BattleAvatar.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -81,10 +81,80 @@ impl BattleAvatar {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(17);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AMEMKFNABGG::AMEMKFNABGG>(
+            "ALNJENINBPN",
+            |m: &BattleAvatar| { &m.ALNJENINBPN },
+            |m: &mut BattleAvatar| { &mut m.ALNJENINBPN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "CHEFGGPEJKL",
+            |m: &BattleAvatar| { &m.CHEFGGPEJKL },
+            |m: &mut BattleAvatar| { &mut m.CHEFGGPEJKL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "relic_list",
+            |m: &BattleAvatar| { &m.relic_list },
+            |m: &mut BattleAvatar| { &mut m.relic_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "equipment_list",
+            |m: &BattleAvatar| { &m.equipment_list },
+            |m: &mut BattleAvatar| { &mut m.equipment_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "avatar_skilltree_list",
+            |m: &BattleAvatar| { &m.avatar_skilltree_list },
+            |m: &mut BattleAvatar| { &mut m.avatar_skilltree_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
+            "sp_bar",
+            |m: &BattleAvatar| { &m.sp_bar },
+            |m: &mut BattleAvatar| { &mut m.sp_bar },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "enhanced_id",
+            |m: &BattleAvatar| { &m.enhanced_id },
+            |m: &mut BattleAvatar| { &mut m.enhanced_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "hp",
+            |m: &BattleAvatar| { &m.hp },
+            |m: &mut BattleAvatar| { &mut m.hp },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_type",
             |m: &BattleAvatar| { &m.avatar_type },
             |m: &mut BattleAvatar| { &mut m.avatar_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &BattleAvatar| { &m.rank },
+            |m: &mut BattleAvatar| { &mut m.rank },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &BattleAvatar| { &m.world_level },
+            |m: &mut BattleAvatar| { &mut m.world_level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "promotion",
+            |m: &BattleAvatar| { &m.promotion },
+            |m: &mut BattleAvatar| { &mut m.promotion },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GDIMKFNECOK",
+            |m: &BattleAvatar| { &m.GDIMKFNECOK },
+            |m: &mut BattleAvatar| { &mut m.GDIMKFNECOK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "index",
+            |m: &BattleAvatar| { &m.index },
+            |m: &mut BattleAvatar| { &mut m.index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "assist_uid",
+            |m: &BattleAvatar| { &m.assist_uid },
+            |m: &mut BattleAvatar| { &mut m.assist_uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -95,76 +165,6 @@ impl BattleAvatar {
             "level",
             |m: &BattleAvatar| { &m.level },
             |m: &mut BattleAvatar| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &BattleAvatar| { &m.rank },
-            |m: &mut BattleAvatar| { &mut m.rank },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &BattleAvatar| { &m.index },
-            |m: &mut BattleAvatar| { &mut m.index },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_skilltree_list",
-            |m: &BattleAvatar| { &m.avatar_skilltree_list },
-            |m: &mut BattleAvatar| { &mut m.avatar_skilltree_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "equipment_list",
-            |m: &BattleAvatar| { &m.equipment_list },
-            |m: &mut BattleAvatar| { &mut m.equipment_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "hp",
-            |m: &BattleAvatar| { &m.hp },
-            |m: &mut BattleAvatar| { &mut m.hp },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "promotion",
-            |m: &BattleAvatar| { &m.promotion },
-            |m: &mut BattleAvatar| { &mut m.promotion },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "relic_list",
-            |m: &BattleAvatar| { &m.relic_list },
-            |m: &mut BattleAvatar| { &mut m.relic_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &BattleAvatar| { &m.world_level },
-            |m: &mut BattleAvatar| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "assist_uid",
-            |m: &BattleAvatar| { &m.assist_uid },
-            |m: &mut BattleAvatar| { &mut m.assist_uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AAKHENHMIFM::AAKHENHMIFM>(
-            "AKNHONDBNMM",
-            |m: &BattleAvatar| { &m.AKNHONDBNMM },
-            |m: &mut BattleAvatar| { &mut m.AKNHONDBNMM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SpBarInfo::SpBarInfo>(
-            "sp_bar",
-            |m: &BattleAvatar| { &m.sp_bar },
-            |m: &mut BattleAvatar| { &mut m.sp_bar },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJLADGOOFKE",
-            |m: &BattleAvatar| { &m.PJLADGOOFKE },
-            |m: &mut BattleAvatar| { &mut m.PJLADGOOFKE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LFPOAOFBGPJ",
-            |m: &BattleAvatar| { &m.LFPOAOFBGPJ },
-            |m: &mut BattleAvatar| { &mut m.LFPOAOFBGPJ },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "enhanced_id",
-            |m: &BattleAvatar| { &m.enhanced_id },
-            |m: &mut BattleAvatar| { &mut m.enhanced_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleAvatar>(
             "BattleAvatar",
@@ -184,56 +184,56 @@ impl ::protobuf::Message for BattleAvatar {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ALNJENINBPN)?;
+                },
+                146 => {
+                    self.CHEFGGPEJKL.push(is.read_message()?);
+                },
+                90 => {
+                    self.relic_list.push(is.read_message()?);
+                },
+                58 => {
+                    self.equipment_list.push(is.read_message()?);
+                },
+                50 => {
+                    self.avatar_skilltree_list.push(is.read_message()?);
+                },
+                130 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
+                },
+                152 => {
+                    self.enhanced_id = is.read_uint32()?;
+                },
+                64 => {
+                    self.hp = is.read_uint32()?;
+                },
                 8 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
+                },
+                32 => {
+                    self.rank = is.read_uint32()?;
+                },
+                96 => {
+                    self.world_level = is.read_uint32()?;
+                },
+                80 => {
+                    self.promotion = is.read_uint32()?;
+                },
+                136 => {
+                    self.GDIMKFNECOK = is.read_uint32()?;
+                },
+                40 => {
+                    self.index = is.read_uint32()?;
+                },
+                104 => {
+                    self.assist_uid = is.read_uint32()?;
                 },
                 16 => {
                     self.id = is.read_uint32()?;
                 },
                 24 => {
                     self.level = is.read_uint32()?;
-                },
-                32 => {
-                    self.rank = is.read_uint32()?;
-                },
-                40 => {
-                    self.index = is.read_uint32()?;
-                },
-                50 => {
-                    self.avatar_skilltree_list.push(is.read_message()?);
-                },
-                58 => {
-                    self.equipment_list.push(is.read_message()?);
-                },
-                64 => {
-                    self.hp = is.read_uint32()?;
-                },
-                80 => {
-                    self.promotion = is.read_uint32()?;
-                },
-                90 => {
-                    self.relic_list.push(is.read_message()?);
-                },
-                96 => {
-                    self.world_level = is.read_uint32()?;
-                },
-                104 => {
-                    self.assist_uid = is.read_uint32()?;
-                },
-                122 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AKNHONDBNMM)?;
-                },
-                130 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
-                },
-                136 => {
-                    self.PJLADGOOFKE = is.read_uint32()?;
-                },
-                146 => {
-                    self.LFPOAOFBGPJ.push(is.read_message()?);
-                },
-                152 => {
-                    self.enhanced_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -247,22 +247,15 @@ impl ::protobuf::Message for BattleAvatar {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.avatar_type.value());
+        if let Some(v) = self.ALNJENINBPN.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.id);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
-        }
-        if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.rank);
-        }
-        if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.index);
-        }
-        for value in &self.avatar_skilltree_list {
+        for value in &self.CHEFGGPEJKL {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.relic_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -270,39 +263,46 @@ impl ::protobuf::Message for BattleAvatar {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.hp);
-        }
-        if self.promotion != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.promotion);
-        }
-        for value in &self.relic_list {
+        for value in &self.avatar_skilltree_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.world_level);
-        }
-        if self.assist_uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.assist_uid);
-        }
-        if let Some(v) = self.AKNHONDBNMM.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
         if let Some(v) = self.sp_bar.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.PJLADGOOFKE != 0 {
-            my_size += ::protobuf::rt::uint32_size(17, self.PJLADGOOFKE);
-        }
-        for value in &self.LFPOAOFBGPJ {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.enhanced_id != 0 {
             my_size += ::protobuf::rt::uint32_size(19, self.enhanced_id);
+        }
+        if self.hp != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.hp);
+        }
+        if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.avatar_type.value());
+        }
+        if self.rank != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.rank);
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.world_level);
+        }
+        if self.promotion != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.promotion);
+        }
+        if self.GDIMKFNECOK != 0 {
+            my_size += ::protobuf::rt::uint32_size(17, self.GDIMKFNECOK);
+        }
+        if self.index != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.index);
+        }
+        if self.assist_uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.assist_uid);
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -310,56 +310,56 @@ impl ::protobuf::Message for BattleAvatar {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.ALNJENINBPN.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        }
+        for v in &self.CHEFGGPEJKL {
+            ::protobuf::rt::write_message_field_with_cached_size(18, v, os)?;
+        };
+        for v in &self.relic_list {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        };
+        for v in &self.equipment_list {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        };
+        for v in &self.avatar_skilltree_list {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        };
+        if let Some(v) = self.sp_bar.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(16, v, os)?;
+        }
+        if self.enhanced_id != 0 {
+            os.write_uint32(19, self.enhanced_id)?;
+        }
+        if self.hp != 0 {
+            os.write_uint32(8, self.hp)?;
+        }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
             os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
+        }
+        if self.rank != 0 {
+            os.write_uint32(4, self.rank)?;
+        }
+        if self.world_level != 0 {
+            os.write_uint32(12, self.world_level)?;
+        }
+        if self.promotion != 0 {
+            os.write_uint32(10, self.promotion)?;
+        }
+        if self.GDIMKFNECOK != 0 {
+            os.write_uint32(17, self.GDIMKFNECOK)?;
+        }
+        if self.index != 0 {
+            os.write_uint32(5, self.index)?;
+        }
+        if self.assist_uid != 0 {
+            os.write_uint32(13, self.assist_uid)?;
         }
         if self.id != 0 {
             os.write_uint32(2, self.id)?;
         }
         if self.level != 0 {
             os.write_uint32(3, self.level)?;
-        }
-        if self.rank != 0 {
-            os.write_uint32(4, self.rank)?;
-        }
-        if self.index != 0 {
-            os.write_uint32(5, self.index)?;
-        }
-        for v in &self.avatar_skilltree_list {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        };
-        for v in &self.equipment_list {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
-        };
-        if self.hp != 0 {
-            os.write_uint32(8, self.hp)?;
-        }
-        if self.promotion != 0 {
-            os.write_uint32(10, self.promotion)?;
-        }
-        for v in &self.relic_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        if self.world_level != 0 {
-            os.write_uint32(12, self.world_level)?;
-        }
-        if self.assist_uid != 0 {
-            os.write_uint32(13, self.assist_uid)?;
-        }
-        if let Some(v) = self.AKNHONDBNMM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if let Some(v) = self.sp_bar.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(16, v, os)?;
-        }
-        if self.PJLADGOOFKE != 0 {
-            os.write_uint32(17, self.PJLADGOOFKE)?;
-        }
-        for v in &self.LFPOAOFBGPJ {
-            ::protobuf::rt::write_message_field_with_cached_size(18, v, os)?;
-        };
-        if self.enhanced_id != 0 {
-            os.write_uint32(19, self.enhanced_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -378,45 +378,45 @@ impl ::protobuf::Message for BattleAvatar {
     }
 
     fn clear(&mut self) {
+        self.ALNJENINBPN.clear();
+        self.CHEFGGPEJKL.clear();
+        self.relic_list.clear();
+        self.equipment_list.clear();
+        self.avatar_skilltree_list.clear();
+        self.sp_bar.clear();
+        self.enhanced_id = 0;
+        self.hp = 0;
         self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
+        self.rank = 0;
+        self.world_level = 0;
+        self.promotion = 0;
+        self.GDIMKFNECOK = 0;
+        self.index = 0;
+        self.assist_uid = 0;
         self.id = 0;
         self.level = 0;
-        self.rank = 0;
-        self.index = 0;
-        self.avatar_skilltree_list.clear();
-        self.equipment_list.clear();
-        self.hp = 0;
-        self.promotion = 0;
-        self.relic_list.clear();
-        self.world_level = 0;
-        self.assist_uid = 0;
-        self.AKNHONDBNMM.clear();
-        self.sp_bar.clear();
-        self.PJLADGOOFKE = 0;
-        self.LFPOAOFBGPJ.clear();
-        self.enhanced_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleAvatar {
         static instance: BattleAvatar = BattleAvatar {
+            ALNJENINBPN: ::protobuf::MessageField::none(),
+            CHEFGGPEJKL: ::std::vec::Vec::new(),
+            relic_list: ::std::vec::Vec::new(),
+            equipment_list: ::std::vec::Vec::new(),
+            avatar_skilltree_list: ::std::vec::Vec::new(),
+            sp_bar: ::protobuf::MessageField::none(),
+            enhanced_id: 0,
+            hp: 0,
             avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            rank: 0,
+            world_level: 0,
+            promotion: 0,
+            GDIMKFNECOK: 0,
+            index: 0,
+            assist_uid: 0,
             id: 0,
             level: 0,
-            rank: 0,
-            index: 0,
-            avatar_skilltree_list: ::std::vec::Vec::new(),
-            equipment_list: ::std::vec::Vec::new(),
-            hp: 0,
-            promotion: 0,
-            relic_list: ::std::vec::Vec::new(),
-            world_level: 0,
-            assist_uid: 0,
-            AKNHONDBNMM: ::protobuf::MessageField::none(),
-            sp_bar: ::protobuf::MessageField::none(),
-            PJLADGOOFKE: 0,
-            LFPOAOFBGPJ: ::std::vec::Vec::new(),
-            enhanced_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -441,24 +441,24 @@ impl ::protobuf::reflect::ProtobufValue for BattleAvatar {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12BattleAvatar.proto\x1a\x11AAKHENHMIFM.proto\x1a\x15AvatarSkillTree\
+    \n\x12BattleAvatar.proto\x1a\x11AMEMKFNABGG.proto\x1a\x15AvatarSkillTree\
     .proto\x1a\x10AvatarType.proto\x1a\x15BattleEquipment.proto\x1a\x11Battl\
-    eRelic.proto\x1a\x0fSpBarInfo.proto\"\xf0\x04\n\x0cBattleAvatar\x12,\n\
-    \x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
-    \x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12\x14\n\x05level\x18\x03\x20\
-    \x01(\rR\x05level\x12\x12\n\x04rank\x18\x04\x20\x01(\rR\x04rank\x12\x14\
-    \n\x05index\x18\x05\x20\x01(\rR\x05index\x12D\n\x15avatar_skilltree_list\
-    \x18\x06\x20\x03(\x0b2\x10.AvatarSkillTreeR\x13avatarSkilltreeList\x127\
-    \n\x0eequipment_list\x18\x07\x20\x03(\x0b2\x10.BattleEquipmentR\requipme\
-    ntList\x12\x0e\n\x02hp\x18\x08\x20\x01(\rR\x02hp\x12\x1c\n\tpromotion\
-    \x18\n\x20\x01(\rR\tpromotion\x12+\n\nrelic_list\x18\x0b\x20\x03(\x0b2\
-    \x0c.BattleRelicR\trelicList\x12\x1f\n\x0bworld_level\x18\x0c\x20\x01(\r\
-    R\nworldLevel\x12\x1d\n\nassist_uid\x18\r\x20\x01(\rR\tassistUid\x12.\n\
-    \x0bAKNHONDBNMM\x18\x0f\x20\x01(\x0b2\x0c.AAKHENHMIFMR\x0bAKNHONDBNMM\
-    \x12!\n\x06sp_bar\x18\x10\x20\x01(\x0b2\n.SpBarInfoR\x05spBar\x12\x20\n\
-    \x0bPJLADGOOFKE\x18\x11\x20\x01(\rR\x0bPJLADGOOFKE\x122\n\x0bLFPOAOFBGPJ\
-    \x18\x12\x20\x03(\x0b2\x10.AvatarSkillTreeR\x0bLFPOAOFBGPJ\x12\x1f\n\x0b\
-    enhanced_id\x18\x13\x20\x01(\rR\nenhancedIdb\x06proto3\
+    eRelic.proto\x1a\x0fSpBarInfo.proto\"\xf0\x04\n\x0cBattleAvatar\x12.\n\
+    \x0bALNJENINBPN\x18\x0f\x20\x01(\x0b2\x0c.AMEMKFNABGGR\x0bALNJENINBPN\
+    \x122\n\x0bCHEFGGPEJKL\x18\x12\x20\x03(\x0b2\x10.AvatarSkillTreeR\x0bCHE\
+    FGGPEJKL\x12+\n\nrelic_list\x18\x0b\x20\x03(\x0b2\x0c.BattleRelicR\treli\
+    cList\x127\n\x0eequipment_list\x18\x07\x20\x03(\x0b2\x10.BattleEquipment\
+    R\requipmentList\x12D\n\x15avatar_skilltree_list\x18\x06\x20\x03(\x0b2\
+    \x10.AvatarSkillTreeR\x13avatarSkilltreeList\x12!\n\x06sp_bar\x18\x10\
+    \x20\x01(\x0b2\n.SpBarInfoR\x05spBar\x12\x1f\n\x0benhanced_id\x18\x13\
+    \x20\x01(\rR\nenhancedId\x12\x0e\n\x02hp\x18\x08\x20\x01(\rR\x02hp\x12,\
+    \n\x0bavatar_type\x18\x01\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\
+    \x12\n\x04rank\x18\x04\x20\x01(\rR\x04rank\x12\x1f\n\x0bworld_level\x18\
+    \x0c\x20\x01(\rR\nworldLevel\x12\x1c\n\tpromotion\x18\n\x20\x01(\rR\tpro\
+    motion\x12\x20\n\x0bGDIMKFNECOK\x18\x11\x20\x01(\rR\x0bGDIMKFNECOK\x12\
+    \x14\n\x05index\x18\x05\x20\x01(\rR\x05index\x12\x1d\n\nassist_uid\x18\r\
+    \x20\x01(\rR\tassistUid\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02id\x12\
+    \x14\n\x05level\x18\x03\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -476,7 +476,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(6);
-            deps.push(super::AAKHENHMIFM::file_descriptor().clone());
+            deps.push(super::AMEMKFNABGG::file_descriptor().clone());
             deps.push(super::AvatarSkillTree::file_descriptor().clone());
             deps.push(super::AvatarType::file_descriptor().clone());
             deps.push(super::BattleEquipment::file_descriptor().clone());

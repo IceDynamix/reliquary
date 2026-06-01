@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SocialPlayRoomPlayerMoveScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SocialPlayRoomPlayerMoveScNotify.MFBDMLPDEOE)
-    pub MFBDMLPDEOE: u32,
-    // @@protoc_insertion_point(field:SocialPlayRoomPlayerMoveScNotify.NCFHGIBCEBG)
-    pub NCFHGIBCEBG: u32,
-    // @@protoc_insertion_point(field:SocialPlayRoomPlayerMoveScNotify.FIPIDGKPFHA)
-    pub FIPIDGKPFHA: ::protobuf::MessageField<super::CCKCCKHEFFB::CCKCCKHEFFB>,
+    // @@protoc_insertion_point(field:SocialPlayRoomPlayerMoveScNotify.JENKGODEIOM)
+    pub JENKGODEIOM: ::protobuf::MessageField<super::MHNNEFBOPIE::MHNNEFBOPIE>,
+    // @@protoc_insertion_point(field:SocialPlayRoomPlayerMoveScNotify.PLIDNBMCIJH)
+    pub PLIDNBMCIJH: u32,
+    // @@protoc_insertion_point(field:SocialPlayRoomPlayerMoveScNotify.IKDEIJCEDIO)
+    pub IKDEIJCEDIO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SocialPlayRoomPlayerMoveScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl SocialPlayRoomPlayerMoveScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MFBDMLPDEOE",
-            |m: &SocialPlayRoomPlayerMoveScNotify| { &m.MFBDMLPDEOE },
-            |m: &mut SocialPlayRoomPlayerMoveScNotify| { &mut m.MFBDMLPDEOE },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MHNNEFBOPIE::MHNNEFBOPIE>(
+            "JENKGODEIOM",
+            |m: &SocialPlayRoomPlayerMoveScNotify| { &m.JENKGODEIOM },
+            |m: &mut SocialPlayRoomPlayerMoveScNotify| { &mut m.JENKGODEIOM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NCFHGIBCEBG",
-            |m: &SocialPlayRoomPlayerMoveScNotify| { &m.NCFHGIBCEBG },
-            |m: &mut SocialPlayRoomPlayerMoveScNotify| { &mut m.NCFHGIBCEBG },
+            "PLIDNBMCIJH",
+            |m: &SocialPlayRoomPlayerMoveScNotify| { &m.PLIDNBMCIJH },
+            |m: &mut SocialPlayRoomPlayerMoveScNotify| { &mut m.PLIDNBMCIJH },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CCKCCKHEFFB::CCKCCKHEFFB>(
-            "FIPIDGKPFHA",
-            |m: &SocialPlayRoomPlayerMoveScNotify| { &m.FIPIDGKPFHA },
-            |m: &mut SocialPlayRoomPlayerMoveScNotify| { &mut m.FIPIDGKPFHA },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IKDEIJCEDIO",
+            |m: &SocialPlayRoomPlayerMoveScNotify| { &m.IKDEIJCEDIO },
+            |m: &mut SocialPlayRoomPlayerMoveScNotify| { &mut m.IKDEIJCEDIO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SocialPlayRoomPlayerMoveScNotify>(
             "SocialPlayRoomPlayerMoveScNotify",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.MFBDMLPDEOE = is.read_uint32()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JENKGODEIOM)?;
                 },
-                104 => {
-                    self.NCFHGIBCEBG = is.read_uint32()?;
+                16 => {
+                    self.PLIDNBMCIJH = is.read_uint32()?;
                 },
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FIPIDGKPFHA)?;
+                80 => {
+                    self.IKDEIJCEDIO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MFBDMLPDEOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MFBDMLPDEOE);
-        }
-        if self.NCFHGIBCEBG != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.NCFHGIBCEBG);
-        }
-        if let Some(v) = self.FIPIDGKPFHA.as_ref() {
+        if let Some(v) = self.JENKGODEIOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.PLIDNBMCIJH != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.PLIDNBMCIJH);
+        }
+        if self.IKDEIJCEDIO != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.IKDEIJCEDIO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MFBDMLPDEOE != 0 {
-            os.write_uint32(8, self.MFBDMLPDEOE)?;
+        if let Some(v) = self.JENKGODEIOM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if self.NCFHGIBCEBG != 0 {
-            os.write_uint32(13, self.NCFHGIBCEBG)?;
+        if self.PLIDNBMCIJH != 0 {
+            os.write_uint32(2, self.PLIDNBMCIJH)?;
         }
-        if let Some(v) = self.FIPIDGKPFHA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if self.IKDEIJCEDIO != 0 {
+            os.write_uint32(10, self.IKDEIJCEDIO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SocialPlayRoomPlayerMoveScNotify {
     }
 
     fn clear(&mut self) {
-        self.MFBDMLPDEOE = 0;
-        self.NCFHGIBCEBG = 0;
-        self.FIPIDGKPFHA.clear();
+        self.JENKGODEIOM.clear();
+        self.PLIDNBMCIJH = 0;
+        self.IKDEIJCEDIO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SocialPlayRoomPlayerMoveScNotify {
         static instance: SocialPlayRoomPlayerMoveScNotify = SocialPlayRoomPlayerMoveScNotify {
-            MFBDMLPDEOE: 0,
-            NCFHGIBCEBG: 0,
-            FIPIDGKPFHA: ::protobuf::MessageField::none(),
+            JENKGODEIOM: ::protobuf::MessageField::none(),
+            PLIDNBMCIJH: 0,
+            IKDEIJCEDIO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for SocialPlayRoomPlayerMoveScNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&SocialPlayRoomPlayerMoveScNotify.proto\x1a\x11CCKCCKHEFFB.proto\"\x96\
-    \x01\n\x20SocialPlayRoomPlayerMoveScNotify\x12\x20\n\x0bMFBDMLPDEOE\x18\
-    \x08\x20\x01(\rR\x0bMFBDMLPDEOE\x12\x20\n\x0bNCFHGIBCEBG\x18\r\x20\x01(\
-    \rR\x0bNCFHGIBCEBG\x12.\n\x0bFIPIDGKPFHA\x18\x0c\x20\x01(\x0b2\x0c.CCKCC\
-    KHEFFBR\x0bFIPIDGKPFHAb\x06proto3\
+    \n&SocialPlayRoomPlayerMoveScNotify.proto\x1a\x11MHNNEFBOPIE.proto\"\x96\
+    \x01\n\x20SocialPlayRoomPlayerMoveScNotify\x12.\n\x0bJENKGODEIOM\x18\x08\
+    \x20\x01(\x0b2\x0c.MHNNEFBOPIER\x0bJENKGODEIOM\x12\x20\n\x0bPLIDNBMCIJH\
+    \x18\x02\x20\x01(\rR\x0bPLIDNBMCIJH\x12\x20\n\x0bIKDEIJCEDIO\x18\n\x20\
+    \x01(\rR\x0bIKDEIJCEDIOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CCKCCKHEFFB::file_descriptor().clone());
+            deps.push(super::MHNNEFBOPIE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SocialPlayRoomPlayerMoveScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

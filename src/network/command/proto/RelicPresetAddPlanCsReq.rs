@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicPresetAddPlanCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RelicPresetAddPlanCsReq.HBNHKPDMGIP)
-    pub HBNHKPDMGIP: ::protobuf::EnumOrUnknown<super::ENAKDNCEJBO::ENAKDNCEJBO>,
     // @@protoc_insertion_point(field:RelicPresetAddPlanCsReq.relic_ids)
     pub relic_ids: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:RelicPresetAddPlanCsReq.avatar_id)
-    pub avatar_id: u32,
-    // @@protoc_insertion_point(field:RelicPresetAddPlanCsReq.ALFHNEHOBJA)
-    pub ALFHNEHOBJA: ::protobuf::EnumOrUnknown<super::RelicPresetPlanSourceType::RelicPresetPlanSourceType>,
     // @@protoc_insertion_point(field:RelicPresetAddPlanCsReq.name)
     pub name: ::std::string::String,
+    // @@protoc_insertion_point(field:RelicPresetAddPlanCsReq.NFMKOFNEKLA)
+    pub NFMKOFNEKLA: ::protobuf::EnumOrUnknown<super::RelicPresetPlanSourceType::RelicPresetPlanSourceType>,
+    // @@protoc_insertion_point(field:RelicPresetAddPlanCsReq.avatar_id)
+    pub avatar_id: u32,
+    // @@protoc_insertion_point(field:RelicPresetAddPlanCsReq.LLJJCOOKANH)
+    pub LLJJCOOKANH: ::protobuf::EnumOrUnknown<super::FDJKLJGDCID::FDJKLJGDCID>,
     // special fields
     // @@protoc_insertion_point(special_field:RelicPresetAddPlanCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,15 +57,20 @@ impl RelicPresetAddPlanCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBNHKPDMGIP",
-            |m: &RelicPresetAddPlanCsReq| { &m.HBNHKPDMGIP },
-            |m: &mut RelicPresetAddPlanCsReq| { &mut m.HBNHKPDMGIP },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "relic_ids",
             |m: &RelicPresetAddPlanCsReq| { &m.relic_ids },
             |m: &mut RelicPresetAddPlanCsReq| { &mut m.relic_ids },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "name",
+            |m: &RelicPresetAddPlanCsReq| { &m.name },
+            |m: &mut RelicPresetAddPlanCsReq| { &mut m.name },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NFMKOFNEKLA",
+            |m: &RelicPresetAddPlanCsReq| { &m.NFMKOFNEKLA },
+            |m: &mut RelicPresetAddPlanCsReq| { &mut m.NFMKOFNEKLA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -73,14 +78,9 @@ impl RelicPresetAddPlanCsReq {
             |m: &mut RelicPresetAddPlanCsReq| { &mut m.avatar_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ALFHNEHOBJA",
-            |m: &RelicPresetAddPlanCsReq| { &m.ALFHNEHOBJA },
-            |m: &mut RelicPresetAddPlanCsReq| { &mut m.ALFHNEHOBJA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "name",
-            |m: &RelicPresetAddPlanCsReq| { &m.name },
-            |m: &mut RelicPresetAddPlanCsReq| { &mut m.name },
+            "LLJJCOOKANH",
+            |m: &RelicPresetAddPlanCsReq| { &m.LLJJCOOKANH },
+            |m: &mut RelicPresetAddPlanCsReq| { &mut m.LLJJCOOKANH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicPresetAddPlanCsReq>(
             "RelicPresetAddPlanCsReq",
@@ -100,23 +100,23 @@ impl ::protobuf::Message for RelicPresetAddPlanCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.HBNHKPDMGIP = is.read_enum_or_unknown()?;
-                },
-                34 => {
+                74 => {
                     is.read_repeated_packed_uint32_into(&mut self.relic_ids)?;
                 },
-                32 => {
+                72 => {
                     self.relic_ids.push(is.read_uint32()?);
                 },
-                40 => {
+                18 => {
+                    self.name = is.read_string()?;
+                },
+                8 => {
+                    self.NFMKOFNEKLA = is.read_enum_or_unknown()?;
+                },
+                56 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                112 => {
-                    self.ALFHNEHOBJA = is.read_enum_or_unknown()?;
-                },
-                90 => {
-                    self.name = is.read_string()?;
+                104 => {
+                    self.LLJJCOOKANH = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -130,18 +130,18 @@ impl ::protobuf::Message for RelicPresetAddPlanCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HBNHKPDMGIP != ::protobuf::EnumOrUnknown::new(super::ENAKDNCEJBO::ENAKDNCEJBO::ENAKDNCEJBO_PCPDHELPKEM) {
-            my_size += ::protobuf::rt::int32_size(3, self.HBNHKPDMGIP.value());
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(4, &self.relic_ids);
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.avatar_id);
-        }
-        if self.ALFHNEHOBJA != ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::KHIMAPHKDLI_PCPDHELPKEM) {
-            my_size += ::protobuf::rt::int32_size(14, self.ALFHNEHOBJA.value());
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.relic_ids);
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.name);
+            my_size += ::protobuf::rt::string_size(2, &self.name);
+        }
+        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(1, self.NFMKOFNEKLA.value());
+        }
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.avatar_id);
+        }
+        if self.LLJJCOOKANH != ::protobuf::EnumOrUnknown::new(super::FDJKLJGDCID::FDJKLJGDCID::FDJKLJGDCID_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(13, self.LLJJCOOKANH.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,18 +149,18 @@ impl ::protobuf::Message for RelicPresetAddPlanCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HBNHKPDMGIP != ::protobuf::EnumOrUnknown::new(super::ENAKDNCEJBO::ENAKDNCEJBO::ENAKDNCEJBO_PCPDHELPKEM) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.HBNHKPDMGIP))?;
-        }
-        os.write_repeated_packed_uint32(4, &self.relic_ids)?;
-        if self.avatar_id != 0 {
-            os.write_uint32(5, self.avatar_id)?;
-        }
-        if self.ALFHNEHOBJA != ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::KHIMAPHKDLI_PCPDHELPKEM) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.ALFHNEHOBJA))?;
-        }
+        os.write_repeated_packed_uint32(9, &self.relic_ids)?;
         if !self.name.is_empty() {
-            os.write_string(11, &self.name)?;
+            os.write_string(2, &self.name)?;
+        }
+        if self.NFMKOFNEKLA != ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.NFMKOFNEKLA))?;
+        }
+        if self.avatar_id != 0 {
+            os.write_uint32(7, self.avatar_id)?;
+        }
+        if self.LLJJCOOKANH != ::protobuf::EnumOrUnknown::new(super::FDJKLJGDCID::FDJKLJGDCID::FDJKLJGDCID_NLCDGIPGFDJ) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.LLJJCOOKANH))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -179,21 +179,21 @@ impl ::protobuf::Message for RelicPresetAddPlanCsReq {
     }
 
     fn clear(&mut self) {
-        self.HBNHKPDMGIP = ::protobuf::EnumOrUnknown::new(super::ENAKDNCEJBO::ENAKDNCEJBO::ENAKDNCEJBO_PCPDHELPKEM);
         self.relic_ids.clear();
-        self.avatar_id = 0;
-        self.ALFHNEHOBJA = ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::KHIMAPHKDLI_PCPDHELPKEM);
         self.name.clear();
+        self.NFMKOFNEKLA = ::protobuf::EnumOrUnknown::new(super::RelicPresetPlanSourceType::RelicPresetPlanSourceType::HNBGMOIHOAN_NLCDGIPGFDJ);
+        self.avatar_id = 0;
+        self.LLJJCOOKANH = ::protobuf::EnumOrUnknown::new(super::FDJKLJGDCID::FDJKLJGDCID::FDJKLJGDCID_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicPresetAddPlanCsReq {
         static instance: RelicPresetAddPlanCsReq = RelicPresetAddPlanCsReq {
-            HBNHKPDMGIP: ::protobuf::EnumOrUnknown::from_i32(0),
             relic_ids: ::std::vec::Vec::new(),
-            avatar_id: 0,
-            ALFHNEHOBJA: ::protobuf::EnumOrUnknown::from_i32(0),
             name: ::std::string::String::new(),
+            NFMKOFNEKLA: ::protobuf::EnumOrUnknown::from_i32(0),
+            avatar_id: 0,
+            LLJJCOOKANH: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -218,13 +218,13 @@ impl ::protobuf::reflect::ProtobufValue for RelicPresetAddPlanCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dRelicPresetAddPlanCsReq.proto\x1a\x11ENAKDNCEJBO.proto\x1a\x1fReli\
-    cPresetPlanSourceType.proto\"\xd5\x01\n\x17RelicPresetAddPlanCsReq\x12.\
-    \n\x0bHBNHKPDMGIP\x18\x03\x20\x01(\x0e2\x0c.ENAKDNCEJBOR\x0bHBNHKPDMGIP\
-    \x12\x1b\n\trelic_ids\x18\x04\x20\x03(\rR\x08relicIds\x12\x1b\n\tavatar_\
-    id\x18\x05\x20\x01(\rR\x08avatarId\x12<\n\x0bALFHNEHOBJA\x18\x0e\x20\x01\
-    (\x0e2\x1a.RelicPresetPlanSourceTypeR\x0bALFHNEHOBJA\x12\x12\n\x04name\
-    \x18\x0b\x20\x01(\tR\x04nameb\x06proto3\
+    \n\x1dRelicPresetAddPlanCsReq.proto\x1a\x11FDJKLJGDCID.proto\x1a\x1fReli\
+    cPresetPlanSourceType.proto\"\xd5\x01\n\x17RelicPresetAddPlanCsReq\x12\
+    \x1b\n\trelic_ids\x18\t\x20\x03(\rR\x08relicIds\x12\x12\n\x04name\x18\
+    \x02\x20\x01(\tR\x04name\x12<\n\x0bNFMKOFNEKLA\x18\x01\x20\x01(\x0e2\x1a\
+    .RelicPresetPlanSourceTypeR\x0bNFMKOFNEKLA\x12\x1b\n\tavatar_id\x18\x07\
+    \x20\x01(\rR\x08avatarId\x12.\n\x0bLLJJCOOKANH\x18\r\x20\x01(\x0e2\x0c.F\
+    DJKLJGDCIDR\x0bLLJJCOOKANHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -242,7 +242,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::ENAKDNCEJBO::file_descriptor().clone());
+            deps.push(super::FDJKLJGDCID::file_descriptor().clone());
             deps.push(super::RelicPresetPlanSourceType::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RelicPresetAddPlanCsReq::generated_message_descriptor_data());

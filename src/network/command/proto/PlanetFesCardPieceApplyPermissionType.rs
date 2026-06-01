@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:PlanetFesCardPieceApplyPermissionType)
 pub enum PlanetFesCardPieceApplyPermissionType {
-    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.PPJPJKPJHMG_NKADFCMEKGN)
-    PPJPJKPJHMG_NKADFCMEKGN = 0,
-    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.PPJPJKPJHMG_PMJMEFDGOHC)
-    PPJPJKPJHMG_PMJMEFDGOHC = 1,
-    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.PPJPJKPJHMG_HLPFBMBDKPP)
-    PPJPJKPJHMG_HLPFBMBDKPP = 2,
+    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.BOKMDMEDAHN_OAPAHOMMCGO)
+    BOKMDMEDAHN_OAPAHOMMCGO = 0,
+    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.BOKMDMEDAHN_GOJLDPCAMHM)
+    BOKMDMEDAHN_GOJLDPCAMHM = 1,
+    // @@protoc_insertion_point(enum_value:PlanetFesCardPieceApplyPermissionType.BOKMDMEDAHN_MKAAHIPOJBJ)
+    BOKMDMEDAHN_MKAAHIPOJBJ = 2,
 }
 
 impl ::protobuf::Enum for PlanetFesCardPieceApplyPermissionType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for PlanetFesCardPieceApplyPermissionType {
 
     fn from_i32(value: i32) -> ::std::option::Option<PlanetFesCardPieceApplyPermissionType> {
         match value {
-            0 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PPJPJKPJHMG_NKADFCMEKGN),
-            1 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PPJPJKPJHMG_PMJMEFDGOHC),
-            2 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PPJPJKPJHMG_HLPFBMBDKPP),
+            0 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::BOKMDMEDAHN_OAPAHOMMCGO),
+            1 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::BOKMDMEDAHN_GOJLDPCAMHM),
+            2 => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::BOKMDMEDAHN_MKAAHIPOJBJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<PlanetFesCardPieceApplyPermissionType> {
         match str {
-            "PPJPJKPJHMG_NKADFCMEKGN" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PPJPJKPJHMG_NKADFCMEKGN),
-            "PPJPJKPJHMG_PMJMEFDGOHC" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PPJPJKPJHMG_PMJMEFDGOHC),
-            "PPJPJKPJHMG_HLPFBMBDKPP" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::PPJPJKPJHMG_HLPFBMBDKPP),
+            "BOKMDMEDAHN_OAPAHOMMCGO" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::BOKMDMEDAHN_OAPAHOMMCGO),
+            "BOKMDMEDAHN_GOJLDPCAMHM" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::BOKMDMEDAHN_GOJLDPCAMHM),
+            "BOKMDMEDAHN_MKAAHIPOJBJ" => ::std::option::Option::Some(PlanetFesCardPieceApplyPermissionType::BOKMDMEDAHN_MKAAHIPOJBJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PlanetFesCardPieceApplyPermissionType] = &[
-        PlanetFesCardPieceApplyPermissionType::PPJPJKPJHMG_NKADFCMEKGN,
-        PlanetFesCardPieceApplyPermissionType::PPJPJKPJHMG_PMJMEFDGOHC,
-        PlanetFesCardPieceApplyPermissionType::PPJPJKPJHMG_HLPFBMBDKPP,
+        PlanetFesCardPieceApplyPermissionType::BOKMDMEDAHN_OAPAHOMMCGO,
+        PlanetFesCardPieceApplyPermissionType::BOKMDMEDAHN_GOJLDPCAMHM,
+        PlanetFesCardPieceApplyPermissionType::BOKMDMEDAHN_MKAAHIPOJBJ,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for PlanetFesCardPieceApplyPermissionType {
 
 impl ::std::default::Default for PlanetFesCardPieceApplyPermissionType {
     fn default() -> Self {
-        PlanetFesCardPieceApplyPermissionType::PPJPJKPJHMG_NKADFCMEKGN
+        PlanetFesCardPieceApplyPermissionType::BOKMDMEDAHN_OAPAHOMMCGO
     }
 }
 
@@ -93,8 +93,8 @@ impl PlanetFesCardPieceApplyPermissionType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n+PlanetFesCardPieceApplyPermissionType.proto*~\n%PlanetFesCardPieceApp\
-    lyPermissionType\x12\x1b\n\x17PPJPJKPJHMG_NKADFCMEKGN\x10\0\x12\x1b\n\
-    \x17PPJPJKPJHMG_PMJMEFDGOHC\x10\x01\x12\x1b\n\x17PPJPJKPJHMG_HLPFBMBDKPP\
+    lyPermissionType\x12\x1b\n\x17BOKMDMEDAHN_OAPAHOMMCGO\x10\0\x12\x1b\n\
+    \x17BOKMDMEDAHN_GOJLDPCAMHM\x10\x01\x12\x1b\n\x17BOKMDMEDAHN_MKAAHIPOJBJ\
     \x10\x02b\x06proto3\
 ";
 

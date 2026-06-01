@@ -28,20 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengePeak {
     // message fields
-    // @@protoc_insertion_point(field:ChallengePeak.peak_id)
-    pub peak_id: u32,
+    // @@protoc_insertion_point(field:ChallengePeak.finished_target_list)
+    pub finished_target_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChallengePeak.peak_avatar_id_list)
     pub peak_avatar_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:ChallengePeak.peak_build_list)
     pub peak_build_list: ::std::vec::Vec<super::ChallengePeakBuild::ChallengePeakBuild>,
-    // @@protoc_insertion_point(field:ChallengePeak.finished_target_list)
-    pub finished_target_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChallengePeak.cycles_used)
-    pub cycles_used: u32,
     // @@protoc_insertion_point(field:ChallengePeak.has_passed)
     pub has_passed: bool,
-    // @@protoc_insertion_point(field:ChallengePeak.FMFGOJHCCNL)
-    pub FMFGOJHCCNL: ::std::vec::Vec<super::EEBPHJCNBFO::EEBPHJCNBFO>,
+    // @@protoc_insertion_point(field:ChallengePeak.cycles_used)
+    pub cycles_used: u32,
+    // @@protoc_insertion_point(field:ChallengePeak.peak_id)
+    pub peak_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengePeak.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,12 +57,12 @@ impl ChallengePeak {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(7);
+        let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "peak_id",
-            |m: &ChallengePeak| { &m.peak_id },
-            |m: &mut ChallengePeak| { &mut m.peak_id },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "finished_target_list",
+            |m: &ChallengePeak| { &m.finished_target_list },
+            |m: &mut ChallengePeak| { &mut m.finished_target_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "peak_avatar_id_list",
@@ -76,10 +74,10 @@ impl ChallengePeak {
             |m: &ChallengePeak| { &m.peak_build_list },
             |m: &mut ChallengePeak| { &mut m.peak_build_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "finished_target_list",
-            |m: &ChallengePeak| { &m.finished_target_list },
-            |m: &mut ChallengePeak| { &mut m.finished_target_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "has_passed",
+            |m: &ChallengePeak| { &m.has_passed },
+            |m: &mut ChallengePeak| { &mut m.has_passed },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cycles_used",
@@ -87,14 +85,9 @@ impl ChallengePeak {
             |m: &mut ChallengePeak| { &mut m.cycles_used },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "has_passed",
-            |m: &ChallengePeak| { &m.has_passed },
-            |m: &mut ChallengePeak| { &mut m.has_passed },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMFGOJHCCNL",
-            |m: &ChallengePeak| { &m.FMFGOJHCCNL },
-            |m: &mut ChallengePeak| { &mut m.FMFGOJHCCNL },
+            "peak_id",
+            |m: &ChallengePeak| { &m.peak_id },
+            |m: &mut ChallengePeak| { &mut m.peak_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengePeak>(
             "ChallengePeak",
@@ -114,32 +107,29 @@ impl ::protobuf::Message for ChallengePeak {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.peak_id = is.read_uint32()?;
-                },
-                98 => {
-                    is.read_repeated_packed_uint32_into(&mut self.peak_avatar_id_list)?;
-                },
-                96 => {
-                    self.peak_avatar_id_list.push(is.read_uint32()?);
-                },
-                42 => {
-                    self.peak_build_list.push(is.read_message()?);
-                },
-                50 => {
+                66 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                48 => {
+                64 => {
                     self.finished_target_list.push(is.read_uint32()?);
+                },
+                18 => {
+                    is.read_repeated_packed_uint32_into(&mut self.peak_avatar_id_list)?;
+                },
+                16 => {
+                    self.peak_avatar_id_list.push(is.read_uint32()?);
+                },
+                82 => {
+                    self.peak_build_list.push(is.read_message()?);
+                },
+                24 => {
+                    self.has_passed = is.read_bool()?;
                 },
                 88 => {
                     self.cycles_used = is.read_uint32()?;
                 },
-                56 => {
-                    self.has_passed = is.read_bool()?;
-                },
-                10 => {
-                    self.FMFGOJHCCNL.push(is.read_message()?);
+                8 => {
+                    self.peak_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -153,48 +143,41 @@ impl ::protobuf::Message for ChallengePeak {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.peak_id);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(12, &self.peak_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.finished_target_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.peak_avatar_id_list);
         for value in &self.peak_build_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.finished_target_list);
-        if self.cycles_used != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.cycles_used);
-        }
         if self.has_passed != false {
             my_size += 1 + 1;
         }
-        for value in &self.FMFGOJHCCNL {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
+        if self.cycles_used != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.cycles_used);
+        }
+        if self.peak_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.peak_id);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.peak_id != 0 {
-            os.write_uint32(3, self.peak_id)?;
-        }
-        os.write_repeated_packed_uint32(12, &self.peak_avatar_id_list)?;
+        os.write_repeated_packed_uint32(8, &self.finished_target_list)?;
+        os.write_repeated_packed_uint32(2, &self.peak_avatar_id_list)?;
         for v in &self.peak_build_list {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        os.write_repeated_packed_uint32(6, &self.finished_target_list)?;
+        if self.has_passed != false {
+            os.write_bool(3, self.has_passed)?;
+        }
         if self.cycles_used != 0 {
             os.write_uint32(11, self.cycles_used)?;
         }
-        if self.has_passed != false {
-            os.write_bool(7, self.has_passed)?;
+        if self.peak_id != 0 {
+            os.write_uint32(1, self.peak_id)?;
         }
-        for v in &self.FMFGOJHCCNL {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -212,25 +195,23 @@ impl ::protobuf::Message for ChallengePeak {
     }
 
     fn clear(&mut self) {
-        self.peak_id = 0;
+        self.finished_target_list.clear();
         self.peak_avatar_id_list.clear();
         self.peak_build_list.clear();
-        self.finished_target_list.clear();
-        self.cycles_used = 0;
         self.has_passed = false;
-        self.FMFGOJHCCNL.clear();
+        self.cycles_used = 0;
+        self.peak_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengePeak {
         static instance: ChallengePeak = ChallengePeak {
-            peak_id: 0,
+            finished_target_list: ::std::vec::Vec::new(),
             peak_avatar_id_list: ::std::vec::Vec::new(),
             peak_build_list: ::std::vec::Vec::new(),
-            finished_target_list: ::std::vec::Vec::new(),
-            cycles_used: 0,
             has_passed: false,
-            FMFGOJHCCNL: ::std::vec::Vec::new(),
+            cycles_used: 0,
+            peak_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,15 +236,13 @@ impl ::protobuf::reflect::ProtobufValue for ChallengePeak {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13ChallengePeak.proto\x1a\x18ChallengePeakBuild.proto\x1a\x11EEBPHJC\
-    NBFO.proto\"\xb6\x02\n\rChallengePeak\x12\x17\n\x07peak_id\x18\x03\x20\
-    \x01(\rR\x06peakId\x12-\n\x13peak_avatar_id_list\x18\x0c\x20\x03(\rR\x10\
-    peakAvatarIdList\x12;\n\x0fpeak_build_list\x18\x05\x20\x03(\x0b2\x13.Cha\
-    llengePeakBuildR\rpeakBuildList\x120\n\x14finished_target_list\x18\x06\
-    \x20\x03(\rR\x12finishedTargetList\x12\x1f\n\x0bcycles_used\x18\x0b\x20\
-    \x01(\rR\ncyclesUsed\x12\x1d\n\nhas_passed\x18\x07\x20\x01(\x08R\thasPas\
-    sed\x12.\n\x0bFMFGOJHCCNL\x18\x01\x20\x03(\x0b2\x0c.EEBPHJCNBFOR\x0bFMFG\
-    OJHCCNLb\x06proto3\
+    \n\x13ChallengePeak.proto\x1a\x18ChallengePeakBuild.proto\"\x86\x02\n\rC\
+    hallengePeak\x120\n\x14finished_target_list\x18\x08\x20\x03(\rR\x12finis\
+    hedTargetList\x12-\n\x13peak_avatar_id_list\x18\x02\x20\x03(\rR\x10peakA\
+    vatarIdList\x12;\n\x0fpeak_build_list\x18\n\x20\x03(\x0b2\x13.ChallengeP\
+    eakBuildR\rpeakBuildList\x12\x1d\n\nhas_passed\x18\x03\x20\x01(\x08R\tha\
+    sPassed\x12\x1f\n\x0bcycles_used\x18\x0b\x20\x01(\rR\ncyclesUsed\x12\x17\
+    \n\x07peak_id\x18\x01\x20\x01(\rR\x06peakIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -280,9 +259,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
             deps.push(super::ChallengePeakBuild::file_descriptor().clone());
-            deps.push(super::EEBPHJCNBFO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChallengePeak::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

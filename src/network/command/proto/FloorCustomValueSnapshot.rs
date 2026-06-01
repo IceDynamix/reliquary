@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FloorCustomValueSnapshot {
     // message fields
-    // @@protoc_insertion_point(field:FloorCustomValueSnapshot.name)
-    pub name: ::std::string::String,
-    // @@protoc_insertion_point(field:FloorCustomValueSnapshot.type)
-    pub type_: ::protobuf::EnumOrUnknown<super::BLLDKABGKLF::BLLDKABGKLF>,
-    // @@protoc_insertion_point(field:FloorCustomValueSnapshot.bool_val)
-    pub bool_val: bool,
-    // @@protoc_insertion_point(field:FloorCustomValueSnapshot.float_val)
-    pub float_val: f32,
     // @@protoc_insertion_point(field:FloorCustomValueSnapshot.str_val)
     pub str_val: ::std::string::String,
+    // @@protoc_insertion_point(field:FloorCustomValueSnapshot.name)
+    pub name: ::std::string::String,
+    // @@protoc_insertion_point(field:FloorCustomValueSnapshot.float_val)
+    pub float_val: f32,
+    // @@protoc_insertion_point(field:FloorCustomValueSnapshot.type)
+    pub type_: ::protobuf::EnumOrUnknown<super::EGMOEMCIINO::EGMOEMCIINO>,
+    // @@protoc_insertion_point(field:FloorCustomValueSnapshot.bool_val)
+    pub bool_val: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FloorCustomValueSnapshot.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,9 +58,19 @@ impl FloorCustomValueSnapshot {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "str_val",
+            |m: &FloorCustomValueSnapshot| { &m.str_val },
+            |m: &mut FloorCustomValueSnapshot| { &mut m.str_val },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "name",
             |m: &FloorCustomValueSnapshot| { &m.name },
             |m: &mut FloorCustomValueSnapshot| { &mut m.name },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "float_val",
+            |m: &FloorCustomValueSnapshot| { &m.float_val },
+            |m: &mut FloorCustomValueSnapshot| { &mut m.float_val },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "type",
@@ -71,16 +81,6 @@ impl FloorCustomValueSnapshot {
             "bool_val",
             |m: &FloorCustomValueSnapshot| { &m.bool_val },
             |m: &mut FloorCustomValueSnapshot| { &mut m.bool_val },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "float_val",
-            |m: &FloorCustomValueSnapshot| { &m.float_val },
-            |m: &mut FloorCustomValueSnapshot| { &mut m.float_val },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "str_val",
-            |m: &FloorCustomValueSnapshot| { &m.str_val },
-            |m: &mut FloorCustomValueSnapshot| { &mut m.str_val },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FloorCustomValueSnapshot>(
             "FloorCustomValueSnapshot",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for FloorCustomValueSnapshot {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                42 => {
+                    self.str_val = is.read_string()?;
+                },
                 10 => {
                     self.name = is.read_string()?;
+                },
+                37 => {
+                    self.float_val = is.read_float()?;
                 },
                 16 => {
                     self.type_ = is.read_enum_or_unknown()?;
                 },
                 24 => {
                     self.bool_val = is.read_bool()?;
-                },
-                37 => {
-                    self.float_val = is.read_float()?;
-                },
-                42 => {
-                    self.str_val = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,20 +127,20 @@ impl ::protobuf::Message for FloorCustomValueSnapshot {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        if !self.str_val.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.str_val);
+        }
         if !self.name.is_empty() {
             my_size += ::protobuf::rt::string_size(1, &self.name);
-        }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BLLDKABGKLF::BLLDKABGKLF::BLLDKABGKLF_PLEACPIIDIN) {
-            my_size += ::protobuf::rt::int32_size(2, self.type_.value());
-        }
-        if self.bool_val != false {
-            my_size += 1 + 1;
         }
         if self.float_val != 0. {
             my_size += 1 + 4;
         }
-        if !self.str_val.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.str_val);
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::EGMOEMCIINO::EGMOEMCIINO::EGMOEMCIINO_AKACJKIBJMC) {
+            my_size += ::protobuf::rt::int32_size(2, self.type_.value());
+        }
+        if self.bool_val != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -148,20 +148,20 @@ impl ::protobuf::Message for FloorCustomValueSnapshot {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if !self.str_val.is_empty() {
+            os.write_string(5, &self.str_val)?;
+        }
         if !self.name.is_empty() {
             os.write_string(1, &self.name)?;
-        }
-        if self.type_ != ::protobuf::EnumOrUnknown::new(super::BLLDKABGKLF::BLLDKABGKLF::BLLDKABGKLF_PLEACPIIDIN) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.type_))?;
-        }
-        if self.bool_val != false {
-            os.write_bool(3, self.bool_val)?;
         }
         if self.float_val != 0. {
             os.write_float(4, self.float_val)?;
         }
-        if !self.str_val.is_empty() {
-            os.write_string(5, &self.str_val)?;
+        if self.type_ != ::protobuf::EnumOrUnknown::new(super::EGMOEMCIINO::EGMOEMCIINO::EGMOEMCIINO_AKACJKIBJMC) {
+            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.type_))?;
+        }
+        if self.bool_val != false {
+            os.write_bool(3, self.bool_val)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -180,21 +180,21 @@ impl ::protobuf::Message for FloorCustomValueSnapshot {
     }
 
     fn clear(&mut self) {
-        self.name.clear();
-        self.type_ = ::protobuf::EnumOrUnknown::new(super::BLLDKABGKLF::BLLDKABGKLF::BLLDKABGKLF_PLEACPIIDIN);
-        self.bool_val = false;
-        self.float_val = 0.;
         self.str_val.clear();
+        self.name.clear();
+        self.float_val = 0.;
+        self.type_ = ::protobuf::EnumOrUnknown::new(super::EGMOEMCIINO::EGMOEMCIINO::EGMOEMCIINO_AKACJKIBJMC);
+        self.bool_val = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FloorCustomValueSnapshot {
         static instance: FloorCustomValueSnapshot = FloorCustomValueSnapshot {
+            str_val: ::std::string::String::new(),
             name: ::std::string::String::new(),
+            float_val: 0.,
             type_: ::protobuf::EnumOrUnknown::from_i32(0),
             bool_val: false,
-            float_val: 0.,
-            str_val: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -219,12 +219,12 @@ impl ::protobuf::reflect::ProtobufValue for FloorCustomValueSnapshot {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eFloorCustomValueSnapshot.proto\x1a\x11BLLDKABGKLF.proto\"\xa1\x01\
-    \n\x18FloorCustomValueSnapshot\x12\x12\n\x04name\x18\x01\x20\x01(\tR\x04\
-    name\x12\x20\n\x04type\x18\x02\x20\x01(\x0e2\x0c.BLLDKABGKLFR\x04type\
-    \x12\x19\n\x08bool_val\x18\x03\x20\x01(\x08R\x07boolVal\x12\x1b\n\tfloat\
-    _val\x18\x04\x20\x01(\x02R\x08floatVal\x12\x17\n\x07str_val\x18\x05\x20\
-    \x01(\tR\x06strValb\x06proto3\
+    \n\x1eFloorCustomValueSnapshot.proto\x1a\x11EGMOEMCIINO.proto\"\xa1\x01\
+    \n\x18FloorCustomValueSnapshot\x12\x17\n\x07str_val\x18\x05\x20\x01(\tR\
+    \x06strVal\x12\x12\n\x04name\x18\x01\x20\x01(\tR\x04name\x12\x1b\n\tfloa\
+    t_val\x18\x04\x20\x01(\x02R\x08floatVal\x12\x20\n\x04type\x18\x02\x20\
+    \x01(\x0e2\x0c.EGMOEMCIINOR\x04type\x12\x19\n\x08bool_val\x18\x03\x20\
+    \x01(\x08R\x07boolValb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -242,7 +242,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BLLDKABGKLF::file_descriptor().clone());
+            deps.push(super::EGMOEMCIINO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(FloorCustomValueSnapshot::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

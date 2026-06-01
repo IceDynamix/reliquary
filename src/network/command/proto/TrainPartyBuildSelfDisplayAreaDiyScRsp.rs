@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartyBuildSelfDisplayAreaDiyScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartyBuildSelfDisplayAreaDiyScRsp.ICJFLLDCFHM)
-    pub ICJFLLDCFHM: ::protobuf::MessageField<super::KJGMAEGNBKL::KJGMAEGNBKL>,
+    // @@protoc_insertion_point(field:TrainPartyBuildSelfDisplayAreaDiyScRsp.ACLKMFCDMED)
+    pub ACLKMFCDMED: ::protobuf::MessageField<super::OIIPJFDNPAH::OIIPJFDNPAH>,
     // @@protoc_insertion_point(field:TrainPartyBuildSelfDisplayAreaDiyScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,10 +51,10 @@ impl TrainPartyBuildSelfDisplayAreaDiyScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KJGMAEGNBKL::KJGMAEGNBKL>(
-            "ICJFLLDCFHM",
-            |m: &TrainPartyBuildSelfDisplayAreaDiyScRsp| { &m.ICJFLLDCFHM },
-            |m: &mut TrainPartyBuildSelfDisplayAreaDiyScRsp| { &mut m.ICJFLLDCFHM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OIIPJFDNPAH::OIIPJFDNPAH>(
+            "ACLKMFCDMED",
+            |m: &TrainPartyBuildSelfDisplayAreaDiyScRsp| { &m.ACLKMFCDMED },
+            |m: &mut TrainPartyBuildSelfDisplayAreaDiyScRsp| { &mut m.ACLKMFCDMED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for TrainPartyBuildSelfDisplayAreaDiyScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ICJFLLDCFHM)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ACLKMFCDMED)?;
                 },
-                24 => {
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for TrainPartyBuildSelfDisplayAreaDiyScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ICJFLLDCFHM.as_ref() {
+        if let Some(v) = self.ACLKMFCDMED.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TrainPartyBuildSelfDisplayAreaDiyScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ICJFLLDCFHM.as_ref() {
+        if let Some(v) = self.ACLKMFCDMED.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for TrainPartyBuildSelfDisplayAreaDiyScRsp {
     }
 
     fn clear(&mut self) {
-        self.ICJFLLDCFHM.clear();
+        self.ACLKMFCDMED.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartyBuildSelfDisplayAreaDiyScRsp {
         static instance: TrainPartyBuildSelfDisplayAreaDiyScRsp = TrainPartyBuildSelfDisplayAreaDiyScRsp {
-            ICJFLLDCFHM: ::protobuf::MessageField::none(),
+            ACLKMFCDMED: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartyBuildSelfDisplayAreaDiyScR
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n,TrainPartyBuildSelfDisplayAreaDiyScRsp.proto\x1a\x11KJGMAEGNBKL.proto\
-    \"r\n&TrainPartyBuildSelfDisplayAreaDiyScRsp\x12.\n\x0bICJFLLDCFHM\x18\
-    \x01\x20\x01(\x0b2\x0c.KJGMAEGNBKLR\x0bICJFLLDCFHM\x12\x18\n\x07retcode\
-    \x18\x03\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n,TrainPartyBuildSelfDisplayAreaDiyScRsp.proto\x1a\x11OIIPJFDNPAH.proto\
+    \"r\n&TrainPartyBuildSelfDisplayAreaDiyScRsp\x12.\n\x0bACLKMFCDMED\x18\
+    \x01\x20\x01(\x0b2\x0c.OIIPJFDNPAHR\x0bACLKMFCDMED\x12\x18\n\x07retcode\
+    \x18\x04\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KJGMAEGNBKL::file_descriptor().clone());
+            deps.push(super::OIIPJFDNPAH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TrainPartyBuildSelfDisplayAreaDiyScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

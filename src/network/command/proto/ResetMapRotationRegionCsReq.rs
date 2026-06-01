@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ResetMapRotationRegionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ResetMapRotationRegionCsReq.AMMJECHPGPE)
-    pub AMMJECHPGPE: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
+    // @@protoc_insertion_point(field:ResetMapRotationRegionCsReq.COOOMDKGODF)
+    pub COOOMDKGODF: ::protobuf::MessageField<super::RotateMapInfo::RotateMapInfo>,
     // @@protoc_insertion_point(field:ResetMapRotationRegionCsReq.motion)
     pub motion: ::protobuf::MessageField<super::MotionInfo::MotionInfo>,
     // special fields
@@ -52,9 +52,9 @@ impl ResetMapRotationRegionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::RotateMapInfo::RotateMapInfo>(
-            "AMMJECHPGPE",
-            |m: &ResetMapRotationRegionCsReq| { &m.AMMJECHPGPE },
-            |m: &mut ResetMapRotationRegionCsReq| { &mut m.AMMJECHPGPE },
+            "COOOMDKGODF",
+            |m: &ResetMapRotationRegionCsReq| { &m.COOOMDKGODF },
+            |m: &mut ResetMapRotationRegionCsReq| { &mut m.COOOMDKGODF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfo::MotionInfo>(
             "motion",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ResetMapRotationRegionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AMMJECHPGPE)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.COOOMDKGODF)?;
                 },
-                10 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.motion)?;
                 },
                 tag => {
@@ -97,7 +97,7 @@ impl ::protobuf::Message for ResetMapRotationRegionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.AMMJECHPGPE.as_ref() {
+        if let Some(v) = self.COOOMDKGODF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for ResetMapRotationRegionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.AMMJECHPGPE.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.COOOMDKGODF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if let Some(v) = self.motion.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,14 +134,14 @@ impl ::protobuf::Message for ResetMapRotationRegionCsReq {
     }
 
     fn clear(&mut self) {
-        self.AMMJECHPGPE.clear();
+        self.COOOMDKGODF.clear();
         self.motion.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ResetMapRotationRegionCsReq {
         static instance: ResetMapRotationRegionCsReq = ResetMapRotationRegionCsReq {
-            AMMJECHPGPE: ::protobuf::MessageField::none(),
+            COOOMDKGODF: ::protobuf::MessageField::none(),
             motion: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for ResetMapRotationRegionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ResetMapRotationRegionCsReq.proto\x1a\x10MotionInfo.proto\x1a\x13Rota\
-    teMapInfo.proto\"t\n\x1bResetMapRotationRegionCsReq\x120\n\x0bAMMJECHPGP\
-    E\x18\x0c\x20\x01(\x0b2\x0e.RotateMapInfoR\x0bAMMJECHPGPE\x12#\n\x06moti\
-    on\x18\x01\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
+    teMapInfo.proto\"t\n\x1bResetMapRotationRegionCsReq\x120\n\x0bCOOOMDKGOD\
+    F\x18\x02\x20\x01(\x0b2\x0e.RotateMapInfoR\x0bCOOOMDKGODF\x12#\n\x06moti\
+    on\x18\x0c\x20\x01(\x0b2\x0b.MotionInfoR\x06motionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

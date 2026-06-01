@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AddEquipmentScRsp {
     // message fields
-    // @@protoc_insertion_point(field:AddEquipmentScRsp.HOKJFKNPKAJ)
-    pub HOKJFKNPKAJ: u32,
+    // @@protoc_insertion_point(field:AddEquipmentScRsp.KAJCFPKEGBP)
+    pub KAJCFPKEGBP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:AddEquipmentScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl AddEquipmentScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOKJFKNPKAJ",
-            |m: &AddEquipmentScRsp| { &m.HOKJFKNPKAJ },
-            |m: &mut AddEquipmentScRsp| { &mut m.HOKJFKNPKAJ },
+            "KAJCFPKEGBP",
+            |m: &AddEquipmentScRsp| { &m.KAJCFPKEGBP },
+            |m: &mut AddEquipmentScRsp| { &mut m.KAJCFPKEGBP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AddEquipmentScRsp>(
             "AddEquipmentScRsp",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for AddEquipmentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.HOKJFKNPKAJ = is.read_uint32()?;
+                112 => {
+                    self.KAJCFPKEGBP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for AddEquipmentScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HOKJFKNPKAJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.HOKJFKNPKAJ);
+        if self.KAJCFPKEGBP != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.KAJCFPKEGBP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for AddEquipmentScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HOKJFKNPKAJ != 0 {
-            os.write_uint32(7, self.HOKJFKNPKAJ)?;
+        if self.KAJCFPKEGBP != 0 {
+            os.write_uint32(14, self.KAJCFPKEGBP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for AddEquipmentScRsp {
     }
 
     fn clear(&mut self) {
-        self.HOKJFKNPKAJ = 0;
+        self.KAJCFPKEGBP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AddEquipmentScRsp {
         static instance: AddEquipmentScRsp = AddEquipmentScRsp {
-            HOKJFKNPKAJ: 0,
+            KAJCFPKEGBP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for AddEquipmentScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17AddEquipmentScRsp.proto\"5\n\x11AddEquipmentScRsp\x12\x20\n\x0bHOK\
-    JFKNPKAJ\x18\x07\x20\x01(\rR\x0bHOKJFKNPKAJb\x06proto3\
+    \n\x17AddEquipmentScRsp.proto\"5\n\x11AddEquipmentScRsp\x12\x20\n\x0bKAJ\
+    CFPKEGBP\x18\x0e\x20\x01(\rR\x0bKAJCFPKEGBPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

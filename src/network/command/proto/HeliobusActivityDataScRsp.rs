@@ -28,26 +28,26 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct HeliobusActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.DKOGNOKOPKG)
-    pub DKOGNOKOPKG: u32,
+    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.skill_info)
+    pub skill_info: ::protobuf::MessageField<super::ONBLLGHELOB::ONBLLGHELOB>,
+    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.challenge_list)
+    pub challenge_list: ::std::vec::Vec<super::FPIBAIPJCMD::FPIBAIPJCMD>,
+    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.DJKMBPEFCKL)
+    pub DJKMBPEFCKL: ::std::vec::Vec<super::HeliobusChallengeLineup::HeliobusChallengeLineup>,
+    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.AAHPCIOOLHB)
+    pub AAHPCIOOLHB: ::std::vec::Vec<super::BGOMIHEFHPA::BGOMIHEFHPA>,
     // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.IMBOKGFIACA)
-    pub IMBOKGFIACA: u32,
-    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.LPMIHBLOIAK)
-    pub LPMIHBLOIAK: ::std::vec::Vec<super::DLFOGJGCCGP::DLFOGJGCCGP>,
+    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.IMGDMDDKHDL)
+    pub IMGDMDDKHDL: u32,
+    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.OMMNAFNIKPH)
+    pub OMMNAFNIKPH: u32,
     // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.phase)
     pub phase: u32,
-    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.skill_info)
-    pub skill_info: ::protobuf::MessageField<super::FJCDAKICFKA::FJCDAKICFKA>,
-    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.challenge_list)
-    pub challenge_list: ::std::vec::Vec<super::HeliobusChallengeData::HeliobusChallengeData>,
-    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.CHGNKDNFNLF)
-    pub CHGNKDNFNLF: ::std::vec::Vec<super::HeliobusChallengeLineup::HeliobusChallengeLineup>,
-    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.GCDLCPMFLMH)
-    pub GCDLCPMFLMH: u32,
+    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.AFMLOAPAAPM)
+    pub AFMLOAPAAPM: u32,
+    // @@protoc_insertion_point(field:HeliobusActivityDataScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:HeliobusActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,37 +67,7 @@ impl HeliobusActivityDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(10);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DKOGNOKOPKG",
-            |m: &HeliobusActivityDataScRsp| { &m.DKOGNOKOPKG },
-            |m: &mut HeliobusActivityDataScRsp| { &mut m.DKOGNOKOPKG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &HeliobusActivityDataScRsp| { &m.level },
-            |m: &mut HeliobusActivityDataScRsp| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IMBOKGFIACA",
-            |m: &HeliobusActivityDataScRsp| { &m.IMBOKGFIACA },
-            |m: &mut HeliobusActivityDataScRsp| { &mut m.IMBOKGFIACA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &HeliobusActivityDataScRsp| { &m.retcode },
-            |m: &mut HeliobusActivityDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LPMIHBLOIAK",
-            |m: &HeliobusActivityDataScRsp| { &m.LPMIHBLOIAK },
-            |m: &mut HeliobusActivityDataScRsp| { &mut m.LPMIHBLOIAK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "phase",
-            |m: &HeliobusActivityDataScRsp| { &m.phase },
-            |m: &mut HeliobusActivityDataScRsp| { &mut m.phase },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FJCDAKICFKA::FJCDAKICFKA>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ONBLLGHELOB::ONBLLGHELOB>(
             "skill_info",
             |m: &HeliobusActivityDataScRsp| { &m.skill_info },
             |m: &mut HeliobusActivityDataScRsp| { &mut m.skill_info },
@@ -108,14 +78,44 @@ impl HeliobusActivityDataScRsp {
             |m: &mut HeliobusActivityDataScRsp| { &mut m.challenge_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CHGNKDNFNLF",
-            |m: &HeliobusActivityDataScRsp| { &m.CHGNKDNFNLF },
-            |m: &mut HeliobusActivityDataScRsp| { &mut m.CHGNKDNFNLF },
+            "DJKMBPEFCKL",
+            |m: &HeliobusActivityDataScRsp| { &m.DJKMBPEFCKL },
+            |m: &mut HeliobusActivityDataScRsp| { &mut m.DJKMBPEFCKL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "AAHPCIOOLHB",
+            |m: &HeliobusActivityDataScRsp| { &m.AAHPCIOOLHB },
+            |m: &mut HeliobusActivityDataScRsp| { &mut m.AAHPCIOOLHB },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCDLCPMFLMH",
-            |m: &HeliobusActivityDataScRsp| { &m.GCDLCPMFLMH },
-            |m: &mut HeliobusActivityDataScRsp| { &mut m.GCDLCPMFLMH },
+            "level",
+            |m: &HeliobusActivityDataScRsp| { &m.level },
+            |m: &mut HeliobusActivityDataScRsp| { &mut m.level },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IMGDMDDKHDL",
+            |m: &HeliobusActivityDataScRsp| { &m.IMGDMDDKHDL },
+            |m: &mut HeliobusActivityDataScRsp| { &mut m.IMGDMDDKHDL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OMMNAFNIKPH",
+            |m: &HeliobusActivityDataScRsp| { &m.OMMNAFNIKPH },
+            |m: &mut HeliobusActivityDataScRsp| { &mut m.OMMNAFNIKPH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "phase",
+            |m: &HeliobusActivityDataScRsp| { &m.phase },
+            |m: &mut HeliobusActivityDataScRsp| { &mut m.phase },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AFMLOAPAAPM",
+            |m: &HeliobusActivityDataScRsp| { &m.AFMLOAPAAPM },
+            |m: &mut HeliobusActivityDataScRsp| { &mut m.AFMLOAPAAPM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &HeliobusActivityDataScRsp| { &m.retcode },
+            |m: &mut HeliobusActivityDataScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<HeliobusActivityDataScRsp>(
             "HeliobusActivityDataScRsp",
@@ -135,35 +135,35 @@ impl ::protobuf::Message for HeliobusActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.DKOGNOKOPKG = is.read_uint32()?;
-                },
-                24 => {
-                    self.level = is.read_uint32()?;
-                },
-                16 => {
-                    self.IMBOKGFIACA = is.read_uint32()?;
-                },
-                32 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 122 => {
-                    self.LPMIHBLOIAK.push(is.read_message()?);
-                },
-                40 => {
-                    self.phase = is.read_uint32()?;
-                },
-                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.skill_info)?;
                 },
-                82 => {
+                98 => {
                     self.challenge_list.push(is.read_message()?);
                 },
-                10 => {
-                    self.CHGNKDNFNLF.push(is.read_message()?);
+                50 => {
+                    self.DJKMBPEFCKL.push(is.read_message()?);
+                },
+                42 => {
+                    self.AAHPCIOOLHB.push(is.read_message()?);
                 },
                 88 => {
-                    self.GCDLCPMFLMH = is.read_uint32()?;
+                    self.level = is.read_uint32()?;
+                },
+                80 => {
+                    self.IMGDMDDKHDL = is.read_uint32()?;
+                },
+                104 => {
+                    self.OMMNAFNIKPH = is.read_uint32()?;
+                },
+                72 => {
+                    self.phase = is.read_uint32()?;
+                },
+                16 => {
+                    self.AFMLOAPAAPM = is.read_uint32()?;
+                },
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -177,25 +177,6 @@ impl ::protobuf::Message for HeliobusActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DKOGNOKOPKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.DKOGNOKOPKG);
-        }
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.level);
-        }
-        if self.IMBOKGFIACA != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.IMBOKGFIACA);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
-        }
-        for value in &self.LPMIHBLOIAK {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.phase != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.phase);
-        }
         if let Some(v) = self.skill_info.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
@@ -204,12 +185,31 @@ impl ::protobuf::Message for HeliobusActivityDataScRsp {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.CHGNKDNFNLF {
+        for value in &self.DJKMBPEFCKL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GCDLCPMFLMH != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.GCDLCPMFLMH);
+        for value in &self.AAHPCIOOLHB {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.level);
+        }
+        if self.IMGDMDDKHDL != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.IMGDMDDKHDL);
+        }
+        if self.OMMNAFNIKPH != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.OMMNAFNIKPH);
+        }
+        if self.phase != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.phase);
+        }
+        if self.AFMLOAPAAPM != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.AFMLOAPAAPM);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -217,35 +217,35 @@ impl ::protobuf::Message for HeliobusActivityDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DKOGNOKOPKG != 0 {
-            os.write_uint32(9, self.DKOGNOKOPKG)?;
-        }
-        if self.level != 0 {
-            os.write_uint32(3, self.level)?;
-        }
-        if self.IMBOKGFIACA != 0 {
-            os.write_uint32(2, self.IMBOKGFIACA)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
-        for v in &self.LPMIHBLOIAK {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
-        if self.phase != 0 {
-            os.write_uint32(5, self.phase)?;
-        }
         if let Some(v) = self.skill_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         for v in &self.challenge_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        for v in &self.CHGNKDNFNLF {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.DJKMBPEFCKL {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.GCDLCPMFLMH != 0 {
-            os.write_uint32(11, self.GCDLCPMFLMH)?;
+        for v in &self.AAHPCIOOLHB {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        };
+        if self.level != 0 {
+            os.write_uint32(11, self.level)?;
+        }
+        if self.IMGDMDDKHDL != 0 {
+            os.write_uint32(10, self.IMGDMDDKHDL)?;
+        }
+        if self.OMMNAFNIKPH != 0 {
+            os.write_uint32(13, self.OMMNAFNIKPH)?;
+        }
+        if self.phase != 0 {
+            os.write_uint32(9, self.phase)?;
+        }
+        if self.AFMLOAPAAPM != 0 {
+            os.write_uint32(2, self.AFMLOAPAAPM)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -264,31 +264,31 @@ impl ::protobuf::Message for HeliobusActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.DKOGNOKOPKG = 0;
-        self.level = 0;
-        self.IMBOKGFIACA = 0;
-        self.retcode = 0;
-        self.LPMIHBLOIAK.clear();
-        self.phase = 0;
         self.skill_info.clear();
         self.challenge_list.clear();
-        self.CHGNKDNFNLF.clear();
-        self.GCDLCPMFLMH = 0;
+        self.DJKMBPEFCKL.clear();
+        self.AAHPCIOOLHB.clear();
+        self.level = 0;
+        self.IMGDMDDKHDL = 0;
+        self.OMMNAFNIKPH = 0;
+        self.phase = 0;
+        self.AFMLOAPAAPM = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static HeliobusActivityDataScRsp {
         static instance: HeliobusActivityDataScRsp = HeliobusActivityDataScRsp {
-            DKOGNOKOPKG: 0,
-            level: 0,
-            IMBOKGFIACA: 0,
-            retcode: 0,
-            LPMIHBLOIAK: ::std::vec::Vec::new(),
-            phase: 0,
             skill_info: ::protobuf::MessageField::none(),
             challenge_list: ::std::vec::Vec::new(),
-            CHGNKDNFNLF: ::std::vec::Vec::new(),
-            GCDLCPMFLMH: 0,
+            DJKMBPEFCKL: ::std::vec::Vec::new(),
+            AAHPCIOOLHB: ::std::vec::Vec::new(),
+            level: 0,
+            IMGDMDDKHDL: 0,
+            OMMNAFNIKPH: 0,
+            phase: 0,
+            AFMLOAPAAPM: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -313,19 +313,18 @@ impl ::protobuf::reflect::ProtobufValue for HeliobusActivityDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fHeliobusActivityDataScRsp.proto\x1a\x11DLFOGJGCCGP.proto\x1a\x11FJ\
-    CDAKICFKA.proto\x1a\x1bHeliobusChallengeData.proto\x1a\x1dHeliobusChalle\
-    ngeLineup.proto\"\x9f\x03\n\x19HeliobusActivityDataScRsp\x12\x20\n\x0bDK\
-    OGNOKOPKG\x18\t\x20\x01(\rR\x0bDKOGNOKOPKG\x12\x14\n\x05level\x18\x03\
-    \x20\x01(\rR\x05level\x12\x20\n\x0bIMBOKGFIACA\x18\x02\x20\x01(\rR\x0bIM\
-    BOKGFIACA\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12.\n\x0b\
-    LPMIHBLOIAK\x18\x0f\x20\x03(\x0b2\x0c.DLFOGJGCCGPR\x0bLPMIHBLOIAK\x12\
-    \x14\n\x05phase\x18\x05\x20\x01(\rR\x05phase\x12+\n\nskill_info\x18\x0c\
-    \x20\x01(\x0b2\x0c.FJCDAKICFKAR\tskillInfo\x12=\n\x0echallenge_list\x18\
-    \n\x20\x03(\x0b2\x16.HeliobusChallengeDataR\rchallengeList\x12:\n\x0bCHG\
-    NKDNFNLF\x18\x01\x20\x03(\x0b2\x18.HeliobusChallengeLineupR\x0bCHGNKDNFN\
-    LF\x12\x20\n\x0bGCDLCPMFLMH\x18\x0b\x20\x01(\rR\x0bGCDLCPMFLMHb\x06proto\
-    3\
+    \n\x1fHeliobusActivityDataScRsp.proto\x1a\x11BGOMIHEFHPA.proto\x1a\x11FP\
+    IBAIPJCMD.proto\x1a\x1dHeliobusChallengeLineup.proto\x1a\x11ONBLLGHELOB.\
+    proto\"\x95\x03\n\x19HeliobusActivityDataScRsp\x12+\n\nskill_info\x18\
+    \x0f\x20\x01(\x0b2\x0c.ONBLLGHELOBR\tskillInfo\x123\n\x0echallenge_list\
+    \x18\x0c\x20\x03(\x0b2\x0c.FPIBAIPJCMDR\rchallengeList\x12:\n\x0bDJKMBPE\
+    FCKL\x18\x06\x20\x03(\x0b2\x18.HeliobusChallengeLineupR\x0bDJKMBPEFCKL\
+    \x12.\n\x0bAAHPCIOOLHB\x18\x05\x20\x03(\x0b2\x0c.BGOMIHEFHPAR\x0bAAHPCIO\
+    OLHB\x12\x14\n\x05level\x18\x0b\x20\x01(\rR\x05level\x12\x20\n\x0bIMGDMD\
+    DKHDL\x18\n\x20\x01(\rR\x0bIMGDMDDKHDL\x12\x20\n\x0bOMMNAFNIKPH\x18\r\
+    \x20\x01(\rR\x0bOMMNAFNIKPH\x12\x14\n\x05phase\x18\t\x20\x01(\rR\x05phas\
+    e\x12\x20\n\x0bAFMLOAPAAPM\x18\x02\x20\x01(\rR\x0bAFMLOAPAAPM\x12\x18\n\
+    \x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -343,10 +342,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
-            deps.push(super::DLFOGJGCCGP::file_descriptor().clone());
-            deps.push(super::FJCDAKICFKA::file_descriptor().clone());
-            deps.push(super::HeliobusChallengeData::file_descriptor().clone());
+            deps.push(super::BGOMIHEFHPA::file_descriptor().clone());
+            deps.push(super::FPIBAIPJCMD::file_descriptor().clone());
             deps.push(super::HeliobusChallengeLineup::file_descriptor().clone());
+            deps.push(super::ONBLLGHELOB::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(HeliobusActivityDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

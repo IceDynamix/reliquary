@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwitchHandDataNodeSnapshot {
     // message fields
-    // @@protoc_insertion_point(field:SwitchHandDataNodeSnapshot.config_id)
-    pub config_id: u32,
+    // @@protoc_insertion_point(field:SwitchHandDataNodeSnapshot.hand_param)
+    pub hand_param: ::std::string::String,
     // @@protoc_insertion_point(field:SwitchHandDataNodeSnapshot.hand_transform)
     pub hand_transform: ::protobuf::MessageField<super::MotionInfoSnapshot::MotionInfoSnapshot>,
     // @@protoc_insertion_point(field:SwitchHandDataNodeSnapshot.hand_state)
     pub hand_state: u32,
-    // @@protoc_insertion_point(field:SwitchHandDataNodeSnapshot.hand_param)
-    pub hand_param: ::std::string::String,
+    // @@protoc_insertion_point(field:SwitchHandDataNodeSnapshot.config_id)
+    pub config_id: u32,
     // @@protoc_insertion_point(field:SwitchHandDataNodeSnapshot.get_coin_count)
     pub get_coin_count: u32,
     // special fields
@@ -58,9 +58,9 @@ impl SwitchHandDataNodeSnapshot {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "config_id",
-            |m: &SwitchHandDataNodeSnapshot| { &m.config_id },
-            |m: &mut SwitchHandDataNodeSnapshot| { &mut m.config_id },
+            "hand_param",
+            |m: &SwitchHandDataNodeSnapshot| { &m.hand_param },
+            |m: &mut SwitchHandDataNodeSnapshot| { &mut m.hand_param },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MotionInfoSnapshot::MotionInfoSnapshot>(
             "hand_transform",
@@ -73,9 +73,9 @@ impl SwitchHandDataNodeSnapshot {
             |m: &mut SwitchHandDataNodeSnapshot| { &mut m.hand_state },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "hand_param",
-            |m: &SwitchHandDataNodeSnapshot| { &m.hand_param },
-            |m: &mut SwitchHandDataNodeSnapshot| { &mut m.hand_param },
+            "config_id",
+            |m: &SwitchHandDataNodeSnapshot| { &m.config_id },
+            |m: &mut SwitchHandDataNodeSnapshot| { &mut m.config_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "get_coin_count",
@@ -100,8 +100,8 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.config_id = is.read_uint32()?;
+                34 => {
+                    self.hand_param = is.read_string()?;
                 },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.hand_transform)?;
@@ -109,8 +109,8 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
                 24 => {
                     self.hand_state = is.read_uint32()?;
                 },
-                34 => {
-                    self.hand_param = is.read_string()?;
+                8 => {
+                    self.config_id = is.read_uint32()?;
                 },
                 40 => {
                     self.get_coin_count = is.read_uint32()?;
@@ -127,8 +127,8 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.config_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.config_id);
+        if !self.hand_param.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.hand_param);
         }
         if let Some(v) = self.hand_transform.as_ref() {
             let len = v.compute_size();
@@ -137,8 +137,8 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
         if self.hand_state != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.hand_state);
         }
-        if !self.hand_param.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.hand_param);
+        if self.config_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.config_id);
         }
         if self.get_coin_count != 0 {
             my_size += ::protobuf::rt::uint32_size(5, self.get_coin_count);
@@ -149,8 +149,8 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.config_id != 0 {
-            os.write_uint32(1, self.config_id)?;
+        if !self.hand_param.is_empty() {
+            os.write_string(4, &self.hand_param)?;
         }
         if let Some(v) = self.hand_transform.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
@@ -158,8 +158,8 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
         if self.hand_state != 0 {
             os.write_uint32(3, self.hand_state)?;
         }
-        if !self.hand_param.is_empty() {
-            os.write_string(4, &self.hand_param)?;
+        if self.config_id != 0 {
+            os.write_uint32(1, self.config_id)?;
         }
         if self.get_coin_count != 0 {
             os.write_uint32(5, self.get_coin_count)?;
@@ -181,20 +181,20 @@ impl ::protobuf::Message for SwitchHandDataNodeSnapshot {
     }
 
     fn clear(&mut self) {
-        self.config_id = 0;
+        self.hand_param.clear();
         self.hand_transform.clear();
         self.hand_state = 0;
-        self.hand_param.clear();
+        self.config_id = 0;
         self.get_coin_count = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwitchHandDataNodeSnapshot {
         static instance: SwitchHandDataNodeSnapshot = SwitchHandDataNodeSnapshot {
-            config_id: 0,
+            hand_param: ::std::string::String::new(),
             hand_transform: ::protobuf::MessageField::none(),
             hand_state: 0,
-            hand_param: ::std::string::String::new(),
+            config_id: 0,
             get_coin_count: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for SwitchHandDataNodeSnapshot {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20SwitchHandDataNodeSnapshot.proto\x1a\x18MotionInfoSnapshot.proto\"\
-    \xd9\x01\n\x1aSwitchHandDataNodeSnapshot\x12\x1b\n\tconfig_id\x18\x01\
-    \x20\x01(\rR\x08configId\x12:\n\x0ehand_transform\x18\x02\x20\x01(\x0b2\
+    \xd9\x01\n\x1aSwitchHandDataNodeSnapshot\x12\x1d\n\nhand_param\x18\x04\
+    \x20\x01(\tR\thandParam\x12:\n\x0ehand_transform\x18\x02\x20\x01(\x0b2\
     \x13.MotionInfoSnapshotR\rhandTransform\x12\x1d\n\nhand_state\x18\x03\
-    \x20\x01(\rR\thandState\x12\x1d\n\nhand_param\x18\x04\x20\x01(\tR\thandP\
-    aram\x12$\n\x0eget_coin_count\x18\x05\x20\x01(\rR\x0cgetCoinCountb\x06pr\
+    \x20\x01(\rR\thandState\x12\x1b\n\tconfig_id\x18\x01\x20\x01(\rR\x08conf\
+    igId\x12$\n\x0eget_coin_count\x18\x05\x20\x01(\rR\x0cgetCoinCountb\x06pr\
     oto3\
 ";
 

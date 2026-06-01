@@ -27,160 +27,160 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRogueTournType)
 pub enum CmdRogueTournType {
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.IAMCFDLNKOL_PCPDHELPKEM)
-    IAMCFDLNKOL_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournSaveBuildRefScRsp)
-    CmdRogueTournSaveBuildRefScRsp = 6099,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetPermanentTalentInfoCsReq)
-    CmdRogueTournGetPermanentTalentInfoCsReq = 6090,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournTakeExpRewardScRsp)
-    CmdRogueTournTakeExpRewardScRsp = 6097,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournQueryScRsp)
-    CmdRogueTournQueryScRsp = 6061,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournPersonaRoomCardZoneUpdateScNotify)
-    CmdRogueTournPersonaRoomCardZoneUpdateScNotify = 6058,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveCsReq)
-    CmdRogueTournLeaveCsReq = 6038,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournConfirmSettleCsReq)
-    CmdRogueTournConfirmSettleCsReq = 6052,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterLayerCsReq)
-    CmdRogueTournEnterLayerCsReq = 6018,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRoomScRsp)
-    CmdRogueTournEnterRoomScRsp = 6089,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdCKEPHOJDAAD)
-    CmdCKEPHOJDAAD = 6050,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnablePermanentTalentCsReq)
-    CmdRogueTournEnablePermanentTalentCsReq = 6042,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetArchiveRepositoryCsReq)
-    CmdRogueTournGetArchiveRepositoryCsReq = 6026,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveScRsp)
-    CmdRogueTournLeaveScRsp = 6017,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRougeTournRenameBuildRefCsReq)
-    CmdRougeTournRenameBuildRefCsReq = 6079,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReEnterRogueCocoonStageCsReq)
-    CmdRogueTournReEnterRogueCocoonStageCsReq = 6070,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetSeasonTalentInfoCsReq)
-    CmdRogueTournGetSeasonTalentInfoCsReq = 6076,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournBattleFailSettleInfoScNotify)
-    CmdRogueTournBattleFailSettleInfoScNotify = 6031,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveRogueCocoonSceneCsReq)
-    CmdRogueTournLeaveRogueCocoonSceneCsReq = 6012,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetAllArchiveCsReq)
-    CmdRogueTournGetAllArchiveCsReq = 6078,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournConfirmSettleScRsp)
-    CmdRogueTournConfirmSettleScRsp = 6067,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRogueCocoonSceneCsReq)
-    CmdRogueTournEnterRogueCocoonSceneCsReq = 6030,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournDeleteArchiveCsReq)
-    CmdRogueTournDeleteArchiveCsReq = 6051,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournSaveBuildRefCsReq)
-    CmdRogueTournSaveBuildRefCsReq = 6071,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournStartScRsp)
-    CmdRogueTournStartScRsp = 6024,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournDeleteArchiveScRsp)
-    CmdRogueTournDeleteArchiveScRsp = 6080,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournUseSuperRewardKeyCsReq)
-    CmdRogueTournUseSuperRewardKeyCsReq = 6025,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetSettleInfoCsReq)
-    CmdRogueTournGetSettleInfoCsReq = 6092,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterCsReq)
-    CmdRogueTournEnterCsReq = 6098,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournQueryCsReq)
-    CmdRogueTournQueryCsReq = 6035,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnableSeasonTalentCsReq)
-    CmdRogueTournEnableSeasonTalentCsReq = 6064,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetArchiveRepositoryScRsp)
-    CmdRogueTournGetArchiveRepositoryScRsp = 6016,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournSettleScRsp)
-    CmdRogueTournSettleScRsp = 6096,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournHandBookNotify)
-    CmdRogueTournHandBookNotify = 6072,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournExpNotify)
-    CmdRogueTournExpNotify = 6075,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournTakeExpRewardCsReq)
-    CmdRogueTournTakeExpRewardCsReq = 6036,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournResetPermanentTalentCsReq)
-    CmdRogueTournResetPermanentTalentCsReq = 6027,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournClearArchiveNameScNotify)
-    CmdRogueTournClearArchiveNameScNotify = 6062,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournWeekChallengeUpdateScNotify)
-    CmdRogueTournWeekChallengeUpdateScNotify = 6039,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRogueCocoonSceneScRsp)
-    CmdRogueTournEnterRogueCocoonSceneScRsp = 6047,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterLayerScRsp)
-    CmdRogueTournEnterLayerScRsp = 6028,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReviveAvatarScRsp)
-    CmdRogueTournReviveAvatarScRsp = 6019,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetAllBuildRefScRsp)
-    CmdRogueTournGetAllBuildRefScRsp = 6040,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterScRsp)
-    CmdRogueTournEnterScRsp = 6095,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournDeleteBuildRefScRsp)
-    CmdRogueTournDeleteBuildRefScRsp = 6041,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetAllBuildRefCsReq)
-    CmdRogueTournGetAllBuildRefCsReq = 6100,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReviveCostUpdateScNotify)
-    CmdRogueTournReviveCostUpdateScNotify = 6088,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdPLCLHLNAHDB)
-    CmdPLCLHLNAHDB = 6065,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournRenameBuildRefScRsp)
-    CmdRogueTournRenameBuildRefScRsp = 6045,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnterRoomCsReq)
-    CmdRogueTournEnterRoomCsReq = 6020,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournRenameArchiveCsReq)
-    CmdRogueTournRenameArchiveCsReq = 6043,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetMiscRealTimeDataScRsp)
-    CmdRogueTournGetMiscRealTimeDataScRsp = 6081,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournRenameArchiveScRsp)
-    CmdRogueTournRenameArchiveScRsp = 6085,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdHLGKHDILCHH)
-    CmdHLGKHDILCHH = 6053,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournTriggerRoomSelectCsReq)
-    CmdRogueTournTriggerRoomSelectCsReq = 6083,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdLGFAJDIKCJN)
-    CmdLGFAJDIKCJN = 6086,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReviveAvatarCsReq)
-    CmdRogueTournReviveAvatarCsReq = 6054,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetMiscRealTimeDataCsReq)
-    CmdRogueTournGetMiscRealTimeDataCsReq = 6022,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetSettleInfoScRsp)
-    CmdRogueTournGetSettleInfoScRsp = 6034,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournUseSuperRewardKeyScRsp)
-    CmdRogueTournUseSuperRewardKeyScRsp = 6087,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournTitanUpdateTitanBlessProgressScNotify)
-    CmdRogueTournTitanUpdateTitanBlessProgressScNotify = 6073,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetCurRogueCocoonInfoCsReq)
-    CmdRogueTournGetCurRogueCocoonInfoCsReq = 6046,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetAllArchiveScRsp)
-    CmdRogueTournGetAllArchiveScRsp = 6014,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdLGACEOFJJBK)
-    CmdLGACEOFJJBK = 6069,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetPermanentTalentInfoScRsp)
-    CmdRogueTournGetPermanentTalentInfoScRsp = 6049,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournSettleCsReq)
-    CmdRogueTournSettleCsReq = 6011,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetSeasonTalentInfoScRsp)
-    CmdRogueTournGetSeasonTalentInfoScRsp = 6063,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnableSeasonTalentScRsp)
-    CmdRogueTournEnableSeasonTalentScRsp = 6021,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLevelInfoUpdateScNotify)
-    CmdRogueTournLevelInfoUpdateScNotify = 6059,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournLeaveRogueCocoonSceneScRsp)
-    CmdRogueTournLeaveRogueCocoonSceneScRsp = 6084,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournReEnterRogueCocoonStageScRsp)
-    CmdRogueTournReEnterRogueCocoonStageScRsp = 6015,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournDeleteBuildRefCsReq)
-    CmdRogueTournDeleteBuildRefCsReq = 6023,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournResetPermanentTalentScRsp)
-    CmdRogueTournResetPermanentTalentScRsp = 6093,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournAreaUpdateScNotify)
-    CmdRogueTournAreaUpdateScNotify = 6048,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournStartCsReq)
-    CmdRogueTournStartCsReq = 6068,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournEnablePermanentTalentScRsp)
-    CmdRogueTournEnablePermanentTalentScRsp = 6082,
-    // @@protoc_insertion_point(enum_value:CmdRogueTournType.CmdRogueTournGetCurRogueCocoonInfoScRsp)
-    CmdRogueTournGetCurRogueCocoonInfoScRsp = 6013,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_NLCDGIPGFDJ)
+    DIDFAHMPGBH_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_ADHCMDHNCIH)
+    DIDFAHMPGBH_ADHCMDHNCIH = 6011,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_EDJGBDBFLEK)
+    DIDFAHMPGBH_EDJGBDBFLEK = 6018,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_DHDJPEEGLGB)
+    DIDFAHMPGBH_DHDJPEEGLGB = 6040,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_FEHHDIKLOPB)
+    DIDFAHMPGBH_FEHHDIKLOPB = 6086,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_JJMINBIDHOD)
+    DIDFAHMPGBH_JJMINBIDHOD = 6098,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_LCFHIOEHDJN)
+    DIDFAHMPGBH_LCFHIOEHDJN = 6046,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_EDHLEDMDJHD)
+    DIDFAHMPGBH_EDHLEDMDJHD = 6019,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_CHEEPPFGIEK)
+    DIDFAHMPGBH_CHEEPPFGIEK = 6020,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_HFGGBIOAOHO)
+    DIDFAHMPGBH_HFGGBIOAOHO = 6062,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_HOOPLLFAEAB)
+    DIDFAHMPGBH_HOOPLLFAEAB = 6099,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_KFBDGABLDJH)
+    DIDFAHMPGBH_KFBDGABLDJH = 6023,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_JICFPAOEPJA)
+    DIDFAHMPGBH_JICFPAOEPJA = 6059,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_NFHEPPBLJEM)
+    DIDFAHMPGBH_NFHEPPBLJEM = 6033,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_KMLIBOEDGGE)
+    DIDFAHMPGBH_KMLIBOEDGGE = 6057,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_HBICPILLFEO)
+    DIDFAHMPGBH_HBICPILLFEO = 6093,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_FNNLHIOFECM)
+    DIDFAHMPGBH_FNNLHIOFECM = 6090,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_PMECNGHOGAH)
+    DIDFAHMPGBH_PMECNGHOGAH = 6094,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_BEDNKCCNMJE)
+    DIDFAHMPGBH_BEDNKCCNMJE = 6085,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_AOPLLJJDOCG)
+    DIDFAHMPGBH_AOPLLJJDOCG = 6055,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_CPEHMAPAOED)
+    DIDFAHMPGBH_CPEHMAPAOED = 6026,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_ACOENPFNKKJ)
+    DIDFAHMPGBH_ACOENPFNKKJ = 6095,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_MLNLACOPPPH)
+    DIDFAHMPGBH_MLNLACOPPPH = 6079,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_DMGHOODIDCH)
+    DIDFAHMPGBH_DMGHOODIDCH = 6025,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_COBBOLLGLJM)
+    DIDFAHMPGBH_COBBOLLGLJM = 6038,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_GMMLDBBBMOB)
+    DIDFAHMPGBH_GMMLDBBBMOB = 6063,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_HDNKEEAFKME)
+    DIDFAHMPGBH_HDNKEEAFKME = 6076,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_PPLKGGIPIFM)
+    DIDFAHMPGBH_PPLKGGIPIFM = 6048,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_OJBIPEEGMEC)
+    DIDFAHMPGBH_OJBIPEEGMEC = 6065,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_ILKIENLOGFE)
+    DIDFAHMPGBH_ILKIENLOGFE = 6049,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_EIDJIJPEDJG)
+    DIDFAHMPGBH_EIDJIJPEDJG = 6022,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_HFDIIGDFDMA)
+    DIDFAHMPGBH_HFDIIGDFDMA = 6092,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_NLNBJLHDNAM)
+    DIDFAHMPGBH_NLNBJLHDNAM = 6083,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_FCPJLDACDJI)
+    DIDFAHMPGBH_FCPJLDACDJI = 6081,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_FLAOAMMNIKP)
+    DIDFAHMPGBH_FLAOAMMNIKP = 6064,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_JJLIPFJBMPA)
+    DIDFAHMPGBH_JJLIPFJBMPA = 6028,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_GDLIGAPAHOD)
+    DIDFAHMPGBH_GDLIGAPAHOD = 6042,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_NEKCFMGNGPB)
+    DIDFAHMPGBH_NEKCFMGNGPB = 6073,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_NPJGOENAOHO)
+    DIDFAHMPGBH_NPJGOENAOHO = 6074,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_CBHHAPJIDGN)
+    DIDFAHMPGBH_CBHHAPJIDGN = 6084,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_PCBBKKGGIPI)
+    DIDFAHMPGBH_PCBBKKGGIPI = 6088,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_NKPJKKAPPND)
+    DIDFAHMPGBH_NKPJKKAPPND = 6097,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_FHDIGLMNACP)
+    DIDFAHMPGBH_FHDIGLMNACP = 6056,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_AFDKPOLPNOD)
+    DIDFAHMPGBH_AFDKPOLPNOD = 6071,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_JFFNIFFBLNE)
+    DIDFAHMPGBH_JFFNIFFBLNE = 6037,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_BNOGOAHABHN)
+    DIDFAHMPGBH_BNOGOAHABHN = 6054,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_PLHPMMOCOMB)
+    DIDFAHMPGBH_PLHPMMOCOMB = 6050,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_EGHMOMNACKN)
+    DIDFAHMPGBH_EGHMOMNACKN = 6096,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_DACKEJAPIPM)
+    DIDFAHMPGBH_DACKEJAPIPM = 6089,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_NKDAKPMCMBE)
+    DIDFAHMPGBH_NKDAKPMCMBE = 6068,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_EPPKEPMMCPH)
+    DIDFAHMPGBH_EPPKEPMMCPH = 6034,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_BIAFLHBCGOL)
+    DIDFAHMPGBH_BIAFLHBCGOL = 6044,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_LMLFHCOPBIG)
+    DIDFAHMPGBH_LMLFHCOPBIG = 6058,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_JIKEBLKECOJ)
+    DIDFAHMPGBH_JIKEBLKECOJ = 6045,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_HODIGELBEPF)
+    DIDFAHMPGBH_HODIGELBEPF = 6036,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_GJDPGGHAAFG)
+    DIDFAHMPGBH_GJDPGGHAAFG = 6039,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_EKGGJADCEOI)
+    DIDFAHMPGBH_EKGGJADCEOI = 6016,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_JNNANDBMNNB)
+    DIDFAHMPGBH_JNNANDBMNNB = 6052,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_EMPBOGAJOPE)
+    DIDFAHMPGBH_EMPBOGAJOPE = 6032,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_OCKHDDBDGMJ)
+    DIDFAHMPGBH_OCKHDDBDGMJ = 6041,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_DNNKDMJIFFA)
+    DIDFAHMPGBH_DNNKDMJIFFA = 6066,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_GMBPKFBEOFC)
+    DIDFAHMPGBH_GMBPKFBEOFC = 6078,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_FIGNPCKKDAJ)
+    DIDFAHMPGBH_FIGNPCKKDAJ = 6053,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_EOJPINNILBO)
+    DIDFAHMPGBH_EOJPINNILBO = 6047,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_DPGGHPHKBDA)
+    DIDFAHMPGBH_DPGGHPHKBDA = 6013,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_CCNBOGOEPMJ)
+    DIDFAHMPGBH_CCNBOGOEPMJ = 6067,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_GGLDPDGKKHL)
+    DIDFAHMPGBH_GGLDPDGKKHL = 6030,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_BINGAGPGKDB)
+    DIDFAHMPGBH_BINGAGPGKDB = 6069,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_CMFIGBIICBC)
+    DIDFAHMPGBH_CMFIGBIICBC = 6077,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_AJIOOMLGHOK)
+    DIDFAHMPGBH_AJIOOMLGHOK = 6027,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_NKHDFBHDOBG)
+    DIDFAHMPGBH_NKHDFBHDOBG = 6021,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_BLHPABLMGJH)
+    DIDFAHMPGBH_BLHPABLMGJH = 6015,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_OLJGECDPHDN)
+    DIDFAHMPGBH_OLJGECDPHDN = 6051,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_PAIDLKBIAOG)
+    DIDFAHMPGBH_PAIDLKBIAOG = 6075,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_FBPFEOJEGIL)
+    DIDFAHMPGBH_FBPFEOJEGIL = 6100,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_MFHJNGJFOCB)
+    DIDFAHMPGBH_MFHJNGJFOCB = 6024,
+    // @@protoc_insertion_point(enum_value:CmdRogueTournType.DIDFAHMPGBH_PKFBDCLILOC)
+    DIDFAHMPGBH_PKFBDCLILOC = 6091,
 }
 
 impl ::protobuf::Enum for CmdRogueTournType {
@@ -192,248 +192,248 @@ impl ::protobuf::Enum for CmdRogueTournType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueTournType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRogueTournType::IAMCFDLNKOL_PCPDHELPKEM),
-            6099 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSaveBuildRefScRsp),
-            6090 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq),
-            6097 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp),
-            6061 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryScRsp),
-            6058 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournPersonaRoomCardZoneUpdateScNotify),
-            6038 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveCsReq),
-            6052 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleCsReq),
-            6018 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerCsReq),
-            6089 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomScRsp),
-            6050 => ::std::option::Option::Some(CmdRogueTournType::CmdCKEPHOJDAAD),
-            6042 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq),
-            6026 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq),
-            6017 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveScRsp),
-            6079 => ::std::option::Option::Some(CmdRogueTournType::CmdRougeTournRenameBuildRefCsReq),
-            6070 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq),
-            6076 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSeasonTalentInfoCsReq),
-            6031 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify),
-            6012 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq),
-            6078 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq),
-            6067 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleScRsp),
-            6030 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq),
-            6051 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq),
-            6071 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSaveBuildRefCsReq),
-            6024 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartScRsp),
-            6080 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveScRsp),
-            6025 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournUseSuperRewardKeyCsReq),
-            6092 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq),
-            6098 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterCsReq),
-            6035 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryCsReq),
-            6064 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnableSeasonTalentCsReq),
-            6016 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp),
-            6096 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleScRsp),
-            6072 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournHandBookNotify),
-            6075 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournExpNotify),
-            6036 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq),
-            6027 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq),
-            6062 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify),
-            6039 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify),
-            6047 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp),
-            6028 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerScRsp),
-            6019 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarScRsp),
-            6040 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllBuildRefScRsp),
-            6095 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterScRsp),
-            6041 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteBuildRefScRsp),
-            6100 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllBuildRefCsReq),
-            6088 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify),
-            6065 => ::std::option::Option::Some(CmdRogueTournType::CmdPLCLHLNAHDB),
-            6045 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameBuildRefScRsp),
-            6020 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomCsReq),
-            6043 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveCsReq),
-            6081 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp),
-            6085 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveScRsp),
-            6053 => ::std::option::Option::Some(CmdRogueTournType::CmdHLGKHDILCHH),
-            6083 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTriggerRoomSelectCsReq),
-            6086 => ::std::option::Option::Some(CmdRogueTournType::CmdLGFAJDIKCJN),
-            6054 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarCsReq),
-            6022 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq),
-            6034 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp),
-            6087 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournUseSuperRewardKeyScRsp),
-            6073 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTitanUpdateTitanBlessProgressScNotify),
-            6046 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq),
-            6014 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp),
-            6069 => ::std::option::Option::Some(CmdRogueTournType::CmdLGACEOFJJBK),
-            6049 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp),
-            6011 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleCsReq),
-            6063 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSeasonTalentInfoScRsp),
-            6021 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnableSeasonTalentScRsp),
-            6059 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify),
-            6084 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp),
-            6015 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp),
-            6023 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteBuildRefCsReq),
-            6093 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp),
-            6048 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournAreaUpdateScNotify),
-            6068 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartCsReq),
-            6082 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp),
-            6013 => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp),
+            0 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NLCDGIPGFDJ),
+            6011 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_ADHCMDHNCIH),
+            6018 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EDJGBDBFLEK),
+            6040 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_DHDJPEEGLGB),
+            6086 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FEHHDIKLOPB),
+            6098 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JJMINBIDHOD),
+            6046 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_LCFHIOEHDJN),
+            6019 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EDHLEDMDJHD),
+            6020 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_CHEEPPFGIEK),
+            6062 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HFGGBIOAOHO),
+            6099 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HOOPLLFAEAB),
+            6023 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_KFBDGABLDJH),
+            6059 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JICFPAOEPJA),
+            6033 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NFHEPPBLJEM),
+            6057 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_KMLIBOEDGGE),
+            6093 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HBICPILLFEO),
+            6090 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FNNLHIOFECM),
+            6094 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PMECNGHOGAH),
+            6085 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_BEDNKCCNMJE),
+            6055 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_AOPLLJJDOCG),
+            6026 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_CPEHMAPAOED),
+            6095 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_ACOENPFNKKJ),
+            6079 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_MLNLACOPPPH),
+            6025 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_DMGHOODIDCH),
+            6038 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_COBBOLLGLJM),
+            6063 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_GMMLDBBBMOB),
+            6076 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HDNKEEAFKME),
+            6048 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PPLKGGIPIFM),
+            6065 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_OJBIPEEGMEC),
+            6049 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_ILKIENLOGFE),
+            6022 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EIDJIJPEDJG),
+            6092 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HFDIIGDFDMA),
+            6083 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NLNBJLHDNAM),
+            6081 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FCPJLDACDJI),
+            6064 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FLAOAMMNIKP),
+            6028 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JJLIPFJBMPA),
+            6042 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_GDLIGAPAHOD),
+            6073 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NEKCFMGNGPB),
+            6074 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NPJGOENAOHO),
+            6084 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_CBHHAPJIDGN),
+            6088 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PCBBKKGGIPI),
+            6097 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NKPJKKAPPND),
+            6056 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FHDIGLMNACP),
+            6071 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_AFDKPOLPNOD),
+            6037 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JFFNIFFBLNE),
+            6054 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_BNOGOAHABHN),
+            6050 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PLHPMMOCOMB),
+            6096 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EGHMOMNACKN),
+            6089 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_DACKEJAPIPM),
+            6068 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NKDAKPMCMBE),
+            6034 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EPPKEPMMCPH),
+            6044 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_BIAFLHBCGOL),
+            6058 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_LMLFHCOPBIG),
+            6045 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JIKEBLKECOJ),
+            6036 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HODIGELBEPF),
+            6039 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_GJDPGGHAAFG),
+            6016 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EKGGJADCEOI),
+            6052 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JNNANDBMNNB),
+            6032 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EMPBOGAJOPE),
+            6041 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_OCKHDDBDGMJ),
+            6066 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_DNNKDMJIFFA),
+            6078 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_GMBPKFBEOFC),
+            6053 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FIGNPCKKDAJ),
+            6047 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EOJPINNILBO),
+            6013 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_DPGGHPHKBDA),
+            6067 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_CCNBOGOEPMJ),
+            6030 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_GGLDPDGKKHL),
+            6069 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_BINGAGPGKDB),
+            6077 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_CMFIGBIICBC),
+            6027 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_AJIOOMLGHOK),
+            6021 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NKHDFBHDOBG),
+            6015 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_BLHPABLMGJH),
+            6051 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_OLJGECDPHDN),
+            6075 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PAIDLKBIAOG),
+            6100 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FBPFEOJEGIL),
+            6024 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_MFHJNGJFOCB),
+            6091 => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PKFBDCLILOC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueTournType> {
         match str {
-            "IAMCFDLNKOL_PCPDHELPKEM" => ::std::option::Option::Some(CmdRogueTournType::IAMCFDLNKOL_PCPDHELPKEM),
-            "CmdRogueTournSaveBuildRefScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSaveBuildRefScRsp),
-            "CmdRogueTournGetPermanentTalentInfoCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq),
-            "CmdRogueTournTakeExpRewardScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp),
-            "CmdRogueTournQueryScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryScRsp),
-            "CmdRogueTournPersonaRoomCardZoneUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournPersonaRoomCardZoneUpdateScNotify),
-            "CmdRogueTournLeaveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveCsReq),
-            "CmdRogueTournConfirmSettleCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleCsReq),
-            "CmdRogueTournEnterLayerCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerCsReq),
-            "CmdRogueTournEnterRoomScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomScRsp),
-            "CmdCKEPHOJDAAD" => ::std::option::Option::Some(CmdRogueTournType::CmdCKEPHOJDAAD),
-            "CmdRogueTournEnablePermanentTalentCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq),
-            "CmdRogueTournGetArchiveRepositoryCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq),
-            "CmdRogueTournLeaveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveScRsp),
-            "CmdRougeTournRenameBuildRefCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRougeTournRenameBuildRefCsReq),
-            "CmdRogueTournReEnterRogueCocoonStageCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq),
-            "CmdRogueTournGetSeasonTalentInfoCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSeasonTalentInfoCsReq),
-            "CmdRogueTournBattleFailSettleInfoScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify),
-            "CmdRogueTournLeaveRogueCocoonSceneCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq),
-            "CmdRogueTournGetAllArchiveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq),
-            "CmdRogueTournConfirmSettleScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournConfirmSettleScRsp),
-            "CmdRogueTournEnterRogueCocoonSceneCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq),
-            "CmdRogueTournDeleteArchiveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq),
-            "CmdRogueTournSaveBuildRefCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSaveBuildRefCsReq),
-            "CmdRogueTournStartScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartScRsp),
-            "CmdRogueTournDeleteArchiveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteArchiveScRsp),
-            "CmdRogueTournUseSuperRewardKeyCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournUseSuperRewardKeyCsReq),
-            "CmdRogueTournGetSettleInfoCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq),
-            "CmdRogueTournEnterCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterCsReq),
-            "CmdRogueTournQueryCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournQueryCsReq),
-            "CmdRogueTournEnableSeasonTalentCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnableSeasonTalentCsReq),
-            "CmdRogueTournGetArchiveRepositoryScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp),
-            "CmdRogueTournSettleScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleScRsp),
-            "CmdRogueTournHandBookNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournHandBookNotify),
-            "CmdRogueTournExpNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournExpNotify),
-            "CmdRogueTournTakeExpRewardCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq),
-            "CmdRogueTournResetPermanentTalentCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq),
-            "CmdRogueTournClearArchiveNameScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify),
-            "CmdRogueTournWeekChallengeUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify),
-            "CmdRogueTournEnterRogueCocoonSceneScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp),
-            "CmdRogueTournEnterLayerScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterLayerScRsp),
-            "CmdRogueTournReviveAvatarScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarScRsp),
-            "CmdRogueTournGetAllBuildRefScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllBuildRefScRsp),
-            "CmdRogueTournEnterScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterScRsp),
-            "CmdRogueTournDeleteBuildRefScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteBuildRefScRsp),
-            "CmdRogueTournGetAllBuildRefCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllBuildRefCsReq),
-            "CmdRogueTournReviveCostUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify),
-            "CmdPLCLHLNAHDB" => ::std::option::Option::Some(CmdRogueTournType::CmdPLCLHLNAHDB),
-            "CmdRogueTournRenameBuildRefScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameBuildRefScRsp),
-            "CmdRogueTournEnterRoomCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnterRoomCsReq),
-            "CmdRogueTournRenameArchiveCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveCsReq),
-            "CmdRogueTournGetMiscRealTimeDataScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp),
-            "CmdRogueTournRenameArchiveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournRenameArchiveScRsp),
-            "CmdHLGKHDILCHH" => ::std::option::Option::Some(CmdRogueTournType::CmdHLGKHDILCHH),
-            "CmdRogueTournTriggerRoomSelectCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTriggerRoomSelectCsReq),
-            "CmdLGFAJDIKCJN" => ::std::option::Option::Some(CmdRogueTournType::CmdLGFAJDIKCJN),
-            "CmdRogueTournReviveAvatarCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReviveAvatarCsReq),
-            "CmdRogueTournGetMiscRealTimeDataCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq),
-            "CmdRogueTournGetSettleInfoScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp),
-            "CmdRogueTournUseSuperRewardKeyScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournUseSuperRewardKeyScRsp),
-            "CmdRogueTournTitanUpdateTitanBlessProgressScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournTitanUpdateTitanBlessProgressScNotify),
-            "CmdRogueTournGetCurRogueCocoonInfoCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq),
-            "CmdRogueTournGetAllArchiveScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp),
-            "CmdLGACEOFJJBK" => ::std::option::Option::Some(CmdRogueTournType::CmdLGACEOFJJBK),
-            "CmdRogueTournGetPermanentTalentInfoScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp),
-            "CmdRogueTournSettleCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournSettleCsReq),
-            "CmdRogueTournGetSeasonTalentInfoScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetSeasonTalentInfoScRsp),
-            "CmdRogueTournEnableSeasonTalentScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnableSeasonTalentScRsp),
-            "CmdRogueTournLevelInfoUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify),
-            "CmdRogueTournLeaveRogueCocoonSceneScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp),
-            "CmdRogueTournReEnterRogueCocoonStageScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp),
-            "CmdRogueTournDeleteBuildRefCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournDeleteBuildRefCsReq),
-            "CmdRogueTournResetPermanentTalentScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp),
-            "CmdRogueTournAreaUpdateScNotify" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournAreaUpdateScNotify),
-            "CmdRogueTournStartCsReq" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournStartCsReq),
-            "CmdRogueTournEnablePermanentTalentScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp),
-            "CmdRogueTournGetCurRogueCocoonInfoScRsp" => ::std::option::Option::Some(CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp),
+            "DIDFAHMPGBH_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NLCDGIPGFDJ),
+            "DIDFAHMPGBH_ADHCMDHNCIH" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_ADHCMDHNCIH),
+            "DIDFAHMPGBH_EDJGBDBFLEK" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EDJGBDBFLEK),
+            "DIDFAHMPGBH_DHDJPEEGLGB" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_DHDJPEEGLGB),
+            "DIDFAHMPGBH_FEHHDIKLOPB" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FEHHDIKLOPB),
+            "DIDFAHMPGBH_JJMINBIDHOD" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JJMINBIDHOD),
+            "DIDFAHMPGBH_LCFHIOEHDJN" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_LCFHIOEHDJN),
+            "DIDFAHMPGBH_EDHLEDMDJHD" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EDHLEDMDJHD),
+            "DIDFAHMPGBH_CHEEPPFGIEK" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_CHEEPPFGIEK),
+            "DIDFAHMPGBH_HFGGBIOAOHO" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HFGGBIOAOHO),
+            "DIDFAHMPGBH_HOOPLLFAEAB" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HOOPLLFAEAB),
+            "DIDFAHMPGBH_KFBDGABLDJH" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_KFBDGABLDJH),
+            "DIDFAHMPGBH_JICFPAOEPJA" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JICFPAOEPJA),
+            "DIDFAHMPGBH_NFHEPPBLJEM" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NFHEPPBLJEM),
+            "DIDFAHMPGBH_KMLIBOEDGGE" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_KMLIBOEDGGE),
+            "DIDFAHMPGBH_HBICPILLFEO" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HBICPILLFEO),
+            "DIDFAHMPGBH_FNNLHIOFECM" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FNNLHIOFECM),
+            "DIDFAHMPGBH_PMECNGHOGAH" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PMECNGHOGAH),
+            "DIDFAHMPGBH_BEDNKCCNMJE" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_BEDNKCCNMJE),
+            "DIDFAHMPGBH_AOPLLJJDOCG" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_AOPLLJJDOCG),
+            "DIDFAHMPGBH_CPEHMAPAOED" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_CPEHMAPAOED),
+            "DIDFAHMPGBH_ACOENPFNKKJ" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_ACOENPFNKKJ),
+            "DIDFAHMPGBH_MLNLACOPPPH" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_MLNLACOPPPH),
+            "DIDFAHMPGBH_DMGHOODIDCH" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_DMGHOODIDCH),
+            "DIDFAHMPGBH_COBBOLLGLJM" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_COBBOLLGLJM),
+            "DIDFAHMPGBH_GMMLDBBBMOB" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_GMMLDBBBMOB),
+            "DIDFAHMPGBH_HDNKEEAFKME" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HDNKEEAFKME),
+            "DIDFAHMPGBH_PPLKGGIPIFM" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PPLKGGIPIFM),
+            "DIDFAHMPGBH_OJBIPEEGMEC" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_OJBIPEEGMEC),
+            "DIDFAHMPGBH_ILKIENLOGFE" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_ILKIENLOGFE),
+            "DIDFAHMPGBH_EIDJIJPEDJG" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EIDJIJPEDJG),
+            "DIDFAHMPGBH_HFDIIGDFDMA" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HFDIIGDFDMA),
+            "DIDFAHMPGBH_NLNBJLHDNAM" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NLNBJLHDNAM),
+            "DIDFAHMPGBH_FCPJLDACDJI" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FCPJLDACDJI),
+            "DIDFAHMPGBH_FLAOAMMNIKP" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FLAOAMMNIKP),
+            "DIDFAHMPGBH_JJLIPFJBMPA" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JJLIPFJBMPA),
+            "DIDFAHMPGBH_GDLIGAPAHOD" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_GDLIGAPAHOD),
+            "DIDFAHMPGBH_NEKCFMGNGPB" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NEKCFMGNGPB),
+            "DIDFAHMPGBH_NPJGOENAOHO" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NPJGOENAOHO),
+            "DIDFAHMPGBH_CBHHAPJIDGN" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_CBHHAPJIDGN),
+            "DIDFAHMPGBH_PCBBKKGGIPI" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PCBBKKGGIPI),
+            "DIDFAHMPGBH_NKPJKKAPPND" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NKPJKKAPPND),
+            "DIDFAHMPGBH_FHDIGLMNACP" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FHDIGLMNACP),
+            "DIDFAHMPGBH_AFDKPOLPNOD" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_AFDKPOLPNOD),
+            "DIDFAHMPGBH_JFFNIFFBLNE" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JFFNIFFBLNE),
+            "DIDFAHMPGBH_BNOGOAHABHN" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_BNOGOAHABHN),
+            "DIDFAHMPGBH_PLHPMMOCOMB" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PLHPMMOCOMB),
+            "DIDFAHMPGBH_EGHMOMNACKN" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EGHMOMNACKN),
+            "DIDFAHMPGBH_DACKEJAPIPM" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_DACKEJAPIPM),
+            "DIDFAHMPGBH_NKDAKPMCMBE" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NKDAKPMCMBE),
+            "DIDFAHMPGBH_EPPKEPMMCPH" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EPPKEPMMCPH),
+            "DIDFAHMPGBH_BIAFLHBCGOL" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_BIAFLHBCGOL),
+            "DIDFAHMPGBH_LMLFHCOPBIG" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_LMLFHCOPBIG),
+            "DIDFAHMPGBH_JIKEBLKECOJ" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JIKEBLKECOJ),
+            "DIDFAHMPGBH_HODIGELBEPF" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_HODIGELBEPF),
+            "DIDFAHMPGBH_GJDPGGHAAFG" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_GJDPGGHAAFG),
+            "DIDFAHMPGBH_EKGGJADCEOI" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EKGGJADCEOI),
+            "DIDFAHMPGBH_JNNANDBMNNB" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_JNNANDBMNNB),
+            "DIDFAHMPGBH_EMPBOGAJOPE" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EMPBOGAJOPE),
+            "DIDFAHMPGBH_OCKHDDBDGMJ" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_OCKHDDBDGMJ),
+            "DIDFAHMPGBH_DNNKDMJIFFA" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_DNNKDMJIFFA),
+            "DIDFAHMPGBH_GMBPKFBEOFC" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_GMBPKFBEOFC),
+            "DIDFAHMPGBH_FIGNPCKKDAJ" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FIGNPCKKDAJ),
+            "DIDFAHMPGBH_EOJPINNILBO" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_EOJPINNILBO),
+            "DIDFAHMPGBH_DPGGHPHKBDA" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_DPGGHPHKBDA),
+            "DIDFAHMPGBH_CCNBOGOEPMJ" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_CCNBOGOEPMJ),
+            "DIDFAHMPGBH_GGLDPDGKKHL" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_GGLDPDGKKHL),
+            "DIDFAHMPGBH_BINGAGPGKDB" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_BINGAGPGKDB),
+            "DIDFAHMPGBH_CMFIGBIICBC" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_CMFIGBIICBC),
+            "DIDFAHMPGBH_AJIOOMLGHOK" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_AJIOOMLGHOK),
+            "DIDFAHMPGBH_NKHDFBHDOBG" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_NKHDFBHDOBG),
+            "DIDFAHMPGBH_BLHPABLMGJH" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_BLHPABLMGJH),
+            "DIDFAHMPGBH_OLJGECDPHDN" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_OLJGECDPHDN),
+            "DIDFAHMPGBH_PAIDLKBIAOG" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PAIDLKBIAOG),
+            "DIDFAHMPGBH_FBPFEOJEGIL" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_FBPFEOJEGIL),
+            "DIDFAHMPGBH_MFHJNGJFOCB" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_MFHJNGJFOCB),
+            "DIDFAHMPGBH_PKFBDCLILOC" => ::std::option::Option::Some(CmdRogueTournType::DIDFAHMPGBH_PKFBDCLILOC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRogueTournType] = &[
-        CmdRogueTournType::IAMCFDLNKOL_PCPDHELPKEM,
-        CmdRogueTournType::CmdRogueTournSaveBuildRefScRsp,
-        CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq,
-        CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp,
-        CmdRogueTournType::CmdRogueTournQueryScRsp,
-        CmdRogueTournType::CmdRogueTournPersonaRoomCardZoneUpdateScNotify,
-        CmdRogueTournType::CmdRogueTournLeaveCsReq,
-        CmdRogueTournType::CmdRogueTournConfirmSettleCsReq,
-        CmdRogueTournType::CmdRogueTournEnterLayerCsReq,
-        CmdRogueTournType::CmdRogueTournEnterRoomScRsp,
-        CmdRogueTournType::CmdCKEPHOJDAAD,
-        CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq,
-        CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq,
-        CmdRogueTournType::CmdRogueTournLeaveScRsp,
-        CmdRogueTournType::CmdRougeTournRenameBuildRefCsReq,
-        CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq,
-        CmdRogueTournType::CmdRogueTournGetSeasonTalentInfoCsReq,
-        CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify,
-        CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq,
-        CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq,
-        CmdRogueTournType::CmdRogueTournConfirmSettleScRsp,
-        CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq,
-        CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq,
-        CmdRogueTournType::CmdRogueTournSaveBuildRefCsReq,
-        CmdRogueTournType::CmdRogueTournStartScRsp,
-        CmdRogueTournType::CmdRogueTournDeleteArchiveScRsp,
-        CmdRogueTournType::CmdRogueTournUseSuperRewardKeyCsReq,
-        CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq,
-        CmdRogueTournType::CmdRogueTournEnterCsReq,
-        CmdRogueTournType::CmdRogueTournQueryCsReq,
-        CmdRogueTournType::CmdRogueTournEnableSeasonTalentCsReq,
-        CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp,
-        CmdRogueTournType::CmdRogueTournSettleScRsp,
-        CmdRogueTournType::CmdRogueTournHandBookNotify,
-        CmdRogueTournType::CmdRogueTournExpNotify,
-        CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq,
-        CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq,
-        CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify,
-        CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify,
-        CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp,
-        CmdRogueTournType::CmdRogueTournEnterLayerScRsp,
-        CmdRogueTournType::CmdRogueTournReviveAvatarScRsp,
-        CmdRogueTournType::CmdRogueTournGetAllBuildRefScRsp,
-        CmdRogueTournType::CmdRogueTournEnterScRsp,
-        CmdRogueTournType::CmdRogueTournDeleteBuildRefScRsp,
-        CmdRogueTournType::CmdRogueTournGetAllBuildRefCsReq,
-        CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify,
-        CmdRogueTournType::CmdPLCLHLNAHDB,
-        CmdRogueTournType::CmdRogueTournRenameBuildRefScRsp,
-        CmdRogueTournType::CmdRogueTournEnterRoomCsReq,
-        CmdRogueTournType::CmdRogueTournRenameArchiveCsReq,
-        CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp,
-        CmdRogueTournType::CmdRogueTournRenameArchiveScRsp,
-        CmdRogueTournType::CmdHLGKHDILCHH,
-        CmdRogueTournType::CmdRogueTournTriggerRoomSelectCsReq,
-        CmdRogueTournType::CmdLGFAJDIKCJN,
-        CmdRogueTournType::CmdRogueTournReviveAvatarCsReq,
-        CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq,
-        CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp,
-        CmdRogueTournType::CmdRogueTournUseSuperRewardKeyScRsp,
-        CmdRogueTournType::CmdRogueTournTitanUpdateTitanBlessProgressScNotify,
-        CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq,
-        CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp,
-        CmdRogueTournType::CmdLGACEOFJJBK,
-        CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp,
-        CmdRogueTournType::CmdRogueTournSettleCsReq,
-        CmdRogueTournType::CmdRogueTournGetSeasonTalentInfoScRsp,
-        CmdRogueTournType::CmdRogueTournEnableSeasonTalentScRsp,
-        CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify,
-        CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp,
-        CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp,
-        CmdRogueTournType::CmdRogueTournDeleteBuildRefCsReq,
-        CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp,
-        CmdRogueTournType::CmdRogueTournAreaUpdateScNotify,
-        CmdRogueTournType::CmdRogueTournStartCsReq,
-        CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp,
-        CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp,
+        CmdRogueTournType::DIDFAHMPGBH_NLCDGIPGFDJ,
+        CmdRogueTournType::DIDFAHMPGBH_ADHCMDHNCIH,
+        CmdRogueTournType::DIDFAHMPGBH_EDJGBDBFLEK,
+        CmdRogueTournType::DIDFAHMPGBH_DHDJPEEGLGB,
+        CmdRogueTournType::DIDFAHMPGBH_FEHHDIKLOPB,
+        CmdRogueTournType::DIDFAHMPGBH_JJMINBIDHOD,
+        CmdRogueTournType::DIDFAHMPGBH_LCFHIOEHDJN,
+        CmdRogueTournType::DIDFAHMPGBH_EDHLEDMDJHD,
+        CmdRogueTournType::DIDFAHMPGBH_CHEEPPFGIEK,
+        CmdRogueTournType::DIDFAHMPGBH_HFGGBIOAOHO,
+        CmdRogueTournType::DIDFAHMPGBH_HOOPLLFAEAB,
+        CmdRogueTournType::DIDFAHMPGBH_KFBDGABLDJH,
+        CmdRogueTournType::DIDFAHMPGBH_JICFPAOEPJA,
+        CmdRogueTournType::DIDFAHMPGBH_NFHEPPBLJEM,
+        CmdRogueTournType::DIDFAHMPGBH_KMLIBOEDGGE,
+        CmdRogueTournType::DIDFAHMPGBH_HBICPILLFEO,
+        CmdRogueTournType::DIDFAHMPGBH_FNNLHIOFECM,
+        CmdRogueTournType::DIDFAHMPGBH_PMECNGHOGAH,
+        CmdRogueTournType::DIDFAHMPGBH_BEDNKCCNMJE,
+        CmdRogueTournType::DIDFAHMPGBH_AOPLLJJDOCG,
+        CmdRogueTournType::DIDFAHMPGBH_CPEHMAPAOED,
+        CmdRogueTournType::DIDFAHMPGBH_ACOENPFNKKJ,
+        CmdRogueTournType::DIDFAHMPGBH_MLNLACOPPPH,
+        CmdRogueTournType::DIDFAHMPGBH_DMGHOODIDCH,
+        CmdRogueTournType::DIDFAHMPGBH_COBBOLLGLJM,
+        CmdRogueTournType::DIDFAHMPGBH_GMMLDBBBMOB,
+        CmdRogueTournType::DIDFAHMPGBH_HDNKEEAFKME,
+        CmdRogueTournType::DIDFAHMPGBH_PPLKGGIPIFM,
+        CmdRogueTournType::DIDFAHMPGBH_OJBIPEEGMEC,
+        CmdRogueTournType::DIDFAHMPGBH_ILKIENLOGFE,
+        CmdRogueTournType::DIDFAHMPGBH_EIDJIJPEDJG,
+        CmdRogueTournType::DIDFAHMPGBH_HFDIIGDFDMA,
+        CmdRogueTournType::DIDFAHMPGBH_NLNBJLHDNAM,
+        CmdRogueTournType::DIDFAHMPGBH_FCPJLDACDJI,
+        CmdRogueTournType::DIDFAHMPGBH_FLAOAMMNIKP,
+        CmdRogueTournType::DIDFAHMPGBH_JJLIPFJBMPA,
+        CmdRogueTournType::DIDFAHMPGBH_GDLIGAPAHOD,
+        CmdRogueTournType::DIDFAHMPGBH_NEKCFMGNGPB,
+        CmdRogueTournType::DIDFAHMPGBH_NPJGOENAOHO,
+        CmdRogueTournType::DIDFAHMPGBH_CBHHAPJIDGN,
+        CmdRogueTournType::DIDFAHMPGBH_PCBBKKGGIPI,
+        CmdRogueTournType::DIDFAHMPGBH_NKPJKKAPPND,
+        CmdRogueTournType::DIDFAHMPGBH_FHDIGLMNACP,
+        CmdRogueTournType::DIDFAHMPGBH_AFDKPOLPNOD,
+        CmdRogueTournType::DIDFAHMPGBH_JFFNIFFBLNE,
+        CmdRogueTournType::DIDFAHMPGBH_BNOGOAHABHN,
+        CmdRogueTournType::DIDFAHMPGBH_PLHPMMOCOMB,
+        CmdRogueTournType::DIDFAHMPGBH_EGHMOMNACKN,
+        CmdRogueTournType::DIDFAHMPGBH_DACKEJAPIPM,
+        CmdRogueTournType::DIDFAHMPGBH_NKDAKPMCMBE,
+        CmdRogueTournType::DIDFAHMPGBH_EPPKEPMMCPH,
+        CmdRogueTournType::DIDFAHMPGBH_BIAFLHBCGOL,
+        CmdRogueTournType::DIDFAHMPGBH_LMLFHCOPBIG,
+        CmdRogueTournType::DIDFAHMPGBH_JIKEBLKECOJ,
+        CmdRogueTournType::DIDFAHMPGBH_HODIGELBEPF,
+        CmdRogueTournType::DIDFAHMPGBH_GJDPGGHAAFG,
+        CmdRogueTournType::DIDFAHMPGBH_EKGGJADCEOI,
+        CmdRogueTournType::DIDFAHMPGBH_JNNANDBMNNB,
+        CmdRogueTournType::DIDFAHMPGBH_EMPBOGAJOPE,
+        CmdRogueTournType::DIDFAHMPGBH_OCKHDDBDGMJ,
+        CmdRogueTournType::DIDFAHMPGBH_DNNKDMJIFFA,
+        CmdRogueTournType::DIDFAHMPGBH_GMBPKFBEOFC,
+        CmdRogueTournType::DIDFAHMPGBH_FIGNPCKKDAJ,
+        CmdRogueTournType::DIDFAHMPGBH_EOJPINNILBO,
+        CmdRogueTournType::DIDFAHMPGBH_DPGGHPHKBDA,
+        CmdRogueTournType::DIDFAHMPGBH_CCNBOGOEPMJ,
+        CmdRogueTournType::DIDFAHMPGBH_GGLDPDGKKHL,
+        CmdRogueTournType::DIDFAHMPGBH_BINGAGPGKDB,
+        CmdRogueTournType::DIDFAHMPGBH_CMFIGBIICBC,
+        CmdRogueTournType::DIDFAHMPGBH_AJIOOMLGHOK,
+        CmdRogueTournType::DIDFAHMPGBH_NKHDFBHDOBG,
+        CmdRogueTournType::DIDFAHMPGBH_BLHPABLMGJH,
+        CmdRogueTournType::DIDFAHMPGBH_OLJGECDPHDN,
+        CmdRogueTournType::DIDFAHMPGBH_PAIDLKBIAOG,
+        CmdRogueTournType::DIDFAHMPGBH_FBPFEOJEGIL,
+        CmdRogueTournType::DIDFAHMPGBH_MFHJNGJFOCB,
+        CmdRogueTournType::DIDFAHMPGBH_PKFBDCLILOC,
     ];
 }
 
@@ -445,83 +445,83 @@ impl ::protobuf::EnumFull for CmdRogueTournType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRogueTournType::IAMCFDLNKOL_PCPDHELPKEM => 0,
-            CmdRogueTournType::CmdRogueTournSaveBuildRefScRsp => 1,
-            CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoCsReq => 2,
-            CmdRogueTournType::CmdRogueTournTakeExpRewardScRsp => 3,
-            CmdRogueTournType::CmdRogueTournQueryScRsp => 4,
-            CmdRogueTournType::CmdRogueTournPersonaRoomCardZoneUpdateScNotify => 5,
-            CmdRogueTournType::CmdRogueTournLeaveCsReq => 6,
-            CmdRogueTournType::CmdRogueTournConfirmSettleCsReq => 7,
-            CmdRogueTournType::CmdRogueTournEnterLayerCsReq => 8,
-            CmdRogueTournType::CmdRogueTournEnterRoomScRsp => 9,
-            CmdRogueTournType::CmdCKEPHOJDAAD => 10,
-            CmdRogueTournType::CmdRogueTournEnablePermanentTalentCsReq => 11,
-            CmdRogueTournType::CmdRogueTournGetArchiveRepositoryCsReq => 12,
-            CmdRogueTournType::CmdRogueTournLeaveScRsp => 13,
-            CmdRogueTournType::CmdRougeTournRenameBuildRefCsReq => 14,
-            CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageCsReq => 15,
-            CmdRogueTournType::CmdRogueTournGetSeasonTalentInfoCsReq => 16,
-            CmdRogueTournType::CmdRogueTournBattleFailSettleInfoScNotify => 17,
-            CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneCsReq => 18,
-            CmdRogueTournType::CmdRogueTournGetAllArchiveCsReq => 19,
-            CmdRogueTournType::CmdRogueTournConfirmSettleScRsp => 20,
-            CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneCsReq => 21,
-            CmdRogueTournType::CmdRogueTournDeleteArchiveCsReq => 22,
-            CmdRogueTournType::CmdRogueTournSaveBuildRefCsReq => 23,
-            CmdRogueTournType::CmdRogueTournStartScRsp => 24,
-            CmdRogueTournType::CmdRogueTournDeleteArchiveScRsp => 25,
-            CmdRogueTournType::CmdRogueTournUseSuperRewardKeyCsReq => 26,
-            CmdRogueTournType::CmdRogueTournGetSettleInfoCsReq => 27,
-            CmdRogueTournType::CmdRogueTournEnterCsReq => 28,
-            CmdRogueTournType::CmdRogueTournQueryCsReq => 29,
-            CmdRogueTournType::CmdRogueTournEnableSeasonTalentCsReq => 30,
-            CmdRogueTournType::CmdRogueTournGetArchiveRepositoryScRsp => 31,
-            CmdRogueTournType::CmdRogueTournSettleScRsp => 32,
-            CmdRogueTournType::CmdRogueTournHandBookNotify => 33,
-            CmdRogueTournType::CmdRogueTournExpNotify => 34,
-            CmdRogueTournType::CmdRogueTournTakeExpRewardCsReq => 35,
-            CmdRogueTournType::CmdRogueTournResetPermanentTalentCsReq => 36,
-            CmdRogueTournType::CmdRogueTournClearArchiveNameScNotify => 37,
-            CmdRogueTournType::CmdRogueTournWeekChallengeUpdateScNotify => 38,
-            CmdRogueTournType::CmdRogueTournEnterRogueCocoonSceneScRsp => 39,
-            CmdRogueTournType::CmdRogueTournEnterLayerScRsp => 40,
-            CmdRogueTournType::CmdRogueTournReviveAvatarScRsp => 41,
-            CmdRogueTournType::CmdRogueTournGetAllBuildRefScRsp => 42,
-            CmdRogueTournType::CmdRogueTournEnterScRsp => 43,
-            CmdRogueTournType::CmdRogueTournDeleteBuildRefScRsp => 44,
-            CmdRogueTournType::CmdRogueTournGetAllBuildRefCsReq => 45,
-            CmdRogueTournType::CmdRogueTournReviveCostUpdateScNotify => 46,
-            CmdRogueTournType::CmdPLCLHLNAHDB => 47,
-            CmdRogueTournType::CmdRogueTournRenameBuildRefScRsp => 48,
-            CmdRogueTournType::CmdRogueTournEnterRoomCsReq => 49,
-            CmdRogueTournType::CmdRogueTournRenameArchiveCsReq => 50,
-            CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataScRsp => 51,
-            CmdRogueTournType::CmdRogueTournRenameArchiveScRsp => 52,
-            CmdRogueTournType::CmdHLGKHDILCHH => 53,
-            CmdRogueTournType::CmdRogueTournTriggerRoomSelectCsReq => 54,
-            CmdRogueTournType::CmdLGFAJDIKCJN => 55,
-            CmdRogueTournType::CmdRogueTournReviveAvatarCsReq => 56,
-            CmdRogueTournType::CmdRogueTournGetMiscRealTimeDataCsReq => 57,
-            CmdRogueTournType::CmdRogueTournGetSettleInfoScRsp => 58,
-            CmdRogueTournType::CmdRogueTournUseSuperRewardKeyScRsp => 59,
-            CmdRogueTournType::CmdRogueTournTitanUpdateTitanBlessProgressScNotify => 60,
-            CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoCsReq => 61,
-            CmdRogueTournType::CmdRogueTournGetAllArchiveScRsp => 62,
-            CmdRogueTournType::CmdLGACEOFJJBK => 63,
-            CmdRogueTournType::CmdRogueTournGetPermanentTalentInfoScRsp => 64,
-            CmdRogueTournType::CmdRogueTournSettleCsReq => 65,
-            CmdRogueTournType::CmdRogueTournGetSeasonTalentInfoScRsp => 66,
-            CmdRogueTournType::CmdRogueTournEnableSeasonTalentScRsp => 67,
-            CmdRogueTournType::CmdRogueTournLevelInfoUpdateScNotify => 68,
-            CmdRogueTournType::CmdRogueTournLeaveRogueCocoonSceneScRsp => 69,
-            CmdRogueTournType::CmdRogueTournReEnterRogueCocoonStageScRsp => 70,
-            CmdRogueTournType::CmdRogueTournDeleteBuildRefCsReq => 71,
-            CmdRogueTournType::CmdRogueTournResetPermanentTalentScRsp => 72,
-            CmdRogueTournType::CmdRogueTournAreaUpdateScNotify => 73,
-            CmdRogueTournType::CmdRogueTournStartCsReq => 74,
-            CmdRogueTournType::CmdRogueTournEnablePermanentTalentScRsp => 75,
-            CmdRogueTournType::CmdRogueTournGetCurRogueCocoonInfoScRsp => 76,
+            CmdRogueTournType::DIDFAHMPGBH_NLCDGIPGFDJ => 0,
+            CmdRogueTournType::DIDFAHMPGBH_ADHCMDHNCIH => 1,
+            CmdRogueTournType::DIDFAHMPGBH_EDJGBDBFLEK => 2,
+            CmdRogueTournType::DIDFAHMPGBH_DHDJPEEGLGB => 3,
+            CmdRogueTournType::DIDFAHMPGBH_FEHHDIKLOPB => 4,
+            CmdRogueTournType::DIDFAHMPGBH_JJMINBIDHOD => 5,
+            CmdRogueTournType::DIDFAHMPGBH_LCFHIOEHDJN => 6,
+            CmdRogueTournType::DIDFAHMPGBH_EDHLEDMDJHD => 7,
+            CmdRogueTournType::DIDFAHMPGBH_CHEEPPFGIEK => 8,
+            CmdRogueTournType::DIDFAHMPGBH_HFGGBIOAOHO => 9,
+            CmdRogueTournType::DIDFAHMPGBH_HOOPLLFAEAB => 10,
+            CmdRogueTournType::DIDFAHMPGBH_KFBDGABLDJH => 11,
+            CmdRogueTournType::DIDFAHMPGBH_JICFPAOEPJA => 12,
+            CmdRogueTournType::DIDFAHMPGBH_NFHEPPBLJEM => 13,
+            CmdRogueTournType::DIDFAHMPGBH_KMLIBOEDGGE => 14,
+            CmdRogueTournType::DIDFAHMPGBH_HBICPILLFEO => 15,
+            CmdRogueTournType::DIDFAHMPGBH_FNNLHIOFECM => 16,
+            CmdRogueTournType::DIDFAHMPGBH_PMECNGHOGAH => 17,
+            CmdRogueTournType::DIDFAHMPGBH_BEDNKCCNMJE => 18,
+            CmdRogueTournType::DIDFAHMPGBH_AOPLLJJDOCG => 19,
+            CmdRogueTournType::DIDFAHMPGBH_CPEHMAPAOED => 20,
+            CmdRogueTournType::DIDFAHMPGBH_ACOENPFNKKJ => 21,
+            CmdRogueTournType::DIDFAHMPGBH_MLNLACOPPPH => 22,
+            CmdRogueTournType::DIDFAHMPGBH_DMGHOODIDCH => 23,
+            CmdRogueTournType::DIDFAHMPGBH_COBBOLLGLJM => 24,
+            CmdRogueTournType::DIDFAHMPGBH_GMMLDBBBMOB => 25,
+            CmdRogueTournType::DIDFAHMPGBH_HDNKEEAFKME => 26,
+            CmdRogueTournType::DIDFAHMPGBH_PPLKGGIPIFM => 27,
+            CmdRogueTournType::DIDFAHMPGBH_OJBIPEEGMEC => 28,
+            CmdRogueTournType::DIDFAHMPGBH_ILKIENLOGFE => 29,
+            CmdRogueTournType::DIDFAHMPGBH_EIDJIJPEDJG => 30,
+            CmdRogueTournType::DIDFAHMPGBH_HFDIIGDFDMA => 31,
+            CmdRogueTournType::DIDFAHMPGBH_NLNBJLHDNAM => 32,
+            CmdRogueTournType::DIDFAHMPGBH_FCPJLDACDJI => 33,
+            CmdRogueTournType::DIDFAHMPGBH_FLAOAMMNIKP => 34,
+            CmdRogueTournType::DIDFAHMPGBH_JJLIPFJBMPA => 35,
+            CmdRogueTournType::DIDFAHMPGBH_GDLIGAPAHOD => 36,
+            CmdRogueTournType::DIDFAHMPGBH_NEKCFMGNGPB => 37,
+            CmdRogueTournType::DIDFAHMPGBH_NPJGOENAOHO => 38,
+            CmdRogueTournType::DIDFAHMPGBH_CBHHAPJIDGN => 39,
+            CmdRogueTournType::DIDFAHMPGBH_PCBBKKGGIPI => 40,
+            CmdRogueTournType::DIDFAHMPGBH_NKPJKKAPPND => 41,
+            CmdRogueTournType::DIDFAHMPGBH_FHDIGLMNACP => 42,
+            CmdRogueTournType::DIDFAHMPGBH_AFDKPOLPNOD => 43,
+            CmdRogueTournType::DIDFAHMPGBH_JFFNIFFBLNE => 44,
+            CmdRogueTournType::DIDFAHMPGBH_BNOGOAHABHN => 45,
+            CmdRogueTournType::DIDFAHMPGBH_PLHPMMOCOMB => 46,
+            CmdRogueTournType::DIDFAHMPGBH_EGHMOMNACKN => 47,
+            CmdRogueTournType::DIDFAHMPGBH_DACKEJAPIPM => 48,
+            CmdRogueTournType::DIDFAHMPGBH_NKDAKPMCMBE => 49,
+            CmdRogueTournType::DIDFAHMPGBH_EPPKEPMMCPH => 50,
+            CmdRogueTournType::DIDFAHMPGBH_BIAFLHBCGOL => 51,
+            CmdRogueTournType::DIDFAHMPGBH_LMLFHCOPBIG => 52,
+            CmdRogueTournType::DIDFAHMPGBH_JIKEBLKECOJ => 53,
+            CmdRogueTournType::DIDFAHMPGBH_HODIGELBEPF => 54,
+            CmdRogueTournType::DIDFAHMPGBH_GJDPGGHAAFG => 55,
+            CmdRogueTournType::DIDFAHMPGBH_EKGGJADCEOI => 56,
+            CmdRogueTournType::DIDFAHMPGBH_JNNANDBMNNB => 57,
+            CmdRogueTournType::DIDFAHMPGBH_EMPBOGAJOPE => 58,
+            CmdRogueTournType::DIDFAHMPGBH_OCKHDDBDGMJ => 59,
+            CmdRogueTournType::DIDFAHMPGBH_DNNKDMJIFFA => 60,
+            CmdRogueTournType::DIDFAHMPGBH_GMBPKFBEOFC => 61,
+            CmdRogueTournType::DIDFAHMPGBH_FIGNPCKKDAJ => 62,
+            CmdRogueTournType::DIDFAHMPGBH_EOJPINNILBO => 63,
+            CmdRogueTournType::DIDFAHMPGBH_DPGGHPHKBDA => 64,
+            CmdRogueTournType::DIDFAHMPGBH_CCNBOGOEPMJ => 65,
+            CmdRogueTournType::DIDFAHMPGBH_GGLDPDGKKHL => 66,
+            CmdRogueTournType::DIDFAHMPGBH_BINGAGPGKDB => 67,
+            CmdRogueTournType::DIDFAHMPGBH_CMFIGBIICBC => 68,
+            CmdRogueTournType::DIDFAHMPGBH_AJIOOMLGHOK => 69,
+            CmdRogueTournType::DIDFAHMPGBH_NKHDFBHDOBG => 70,
+            CmdRogueTournType::DIDFAHMPGBH_BLHPABLMGJH => 71,
+            CmdRogueTournType::DIDFAHMPGBH_OLJGECDPHDN => 72,
+            CmdRogueTournType::DIDFAHMPGBH_PAIDLKBIAOG => 73,
+            CmdRogueTournType::DIDFAHMPGBH_FBPFEOJEGIL => 74,
+            CmdRogueTournType::DIDFAHMPGBH_MFHJNGJFOCB => 75,
+            CmdRogueTournType::DIDFAHMPGBH_PKFBDCLILOC => 76,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -529,7 +529,7 @@ impl ::protobuf::EnumFull for CmdRogueTournType {
 
 impl ::std::default::Default for CmdRogueTournType {
     fn default() -> Self {
-        CmdRogueTournType::IAMCFDLNKOL_PCPDHELPKEM
+        CmdRogueTournType::DIDFAHMPGBH_NLCDGIPGFDJ
     }
 }
 
@@ -540,62 +540,57 @@ impl CmdRogueTournType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdRogueTournType.proto*\xb2\x17\n\x11CmdRogueTournType\x12\x1b\n\
-    \x17IAMCFDLNKOL_PCPDHELPKEM\x10\0\x12#\n\x1eCmdRogueTournSaveBuildRefScR\
-    sp\x10\xd3/\x12-\n(CmdRogueTournGetPermanentTalentInfoCsReq\x10\xca/\x12\
-    $\n\x1fCmdRogueTournTakeExpRewardScRsp\x10\xd1/\x12\x1c\n\x17CmdRogueTou\
-    rnQueryScRsp\x10\xad/\x123\n.CmdRogueTournPersonaRoomCardZoneUpdateScNot\
-    ify\x10\xaa/\x12\x1c\n\x17CmdRogueTournLeaveCsReq\x10\x96/\x12$\n\x1fCmd\
-    RogueTournConfirmSettleCsReq\x10\xa4/\x12!\n\x1cCmdRogueTournEnterLayerC\
-    sReq\x10\x82/\x12\x20\n\x1bCmdRogueTournEnterRoomScRsp\x10\xc9/\x12\x13\
-    \n\x0eCmdCKEPHOJDAAD\x10\xa2/\x12,\n'CmdRogueTournEnablePermanentTalentC\
-    sReq\x10\x9a/\x12+\n&CmdRogueTournGetArchiveRepositoryCsReq\x10\x8a/\x12\
-    \x1c\n\x17CmdRogueTournLeaveScRsp\x10\x81/\x12%\n\x20CmdRougeTournRename\
-    BuildRefCsReq\x10\xbf/\x12.\n)CmdRogueTournReEnterRogueCocoonStageCsReq\
-    \x10\xb6/\x12*\n%CmdRogueTournGetSeasonTalentInfoCsReq\x10\xbc/\x12.\n)C\
-    mdRogueTournBattleFailSettleInfoScNotify\x10\x8f/\x12,\n'CmdRogueTournLe\
-    aveRogueCocoonSceneCsReq\x10\xfc.\x12$\n\x1fCmdRogueTournGetAllArchiveCs\
-    Req\x10\xbe/\x12$\n\x1fCmdRogueTournConfirmSettleScRsp\x10\xb3/\x12,\n'C\
-    mdRogueTournEnterRogueCocoonSceneCsReq\x10\x8e/\x12$\n\x1fCmdRogueTournD\
-    eleteArchiveCsReq\x10\xa3/\x12#\n\x1eCmdRogueTournSaveBuildRefCsReq\x10\
-    \xb7/\x12\x1c\n\x17CmdRogueTournStartScRsp\x10\x88/\x12$\n\x1fCmdRogueTo\
-    urnDeleteArchiveScRsp\x10\xc0/\x12(\n#CmdRogueTournUseSuperRewardKeyCsRe\
-    q\x10\x89/\x12$\n\x1fCmdRogueTournGetSettleInfoCsReq\x10\xcc/\x12\x1c\n\
-    \x17CmdRogueTournEnterCsReq\x10\xd2/\x12\x1c\n\x17CmdRogueTournQueryCsRe\
-    q\x10\x93/\x12)\n$CmdRogueTournEnableSeasonTalentCsReq\x10\xb0/\x12+\n&C\
-    mdRogueTournGetArchiveRepositoryScRsp\x10\x80/\x12\x1d\n\x18CmdRogueTour\
-    nSettleScRsp\x10\xd0/\x12\x20\n\x1bCmdRogueTournHandBookNotify\x10\xb8/\
-    \x12\x1b\n\x16CmdRogueTournExpNotify\x10\xbb/\x12$\n\x1fCmdRogueTournTak\
-    eExpRewardCsReq\x10\x94/\x12+\n&CmdRogueTournResetPermanentTalentCsReq\
-    \x10\x8b/\x12*\n%CmdRogueTournClearArchiveNameScNotify\x10\xae/\x12-\n(C\
-    mdRogueTournWeekChallengeUpdateScNotify\x10\x97/\x12,\n'CmdRogueTournEnt\
-    erRogueCocoonSceneScRsp\x10\x9f/\x12!\n\x1cCmdRogueTournEnterLayerScRsp\
-    \x10\x8c/\x12#\n\x1eCmdRogueTournReviveAvatarScRsp\x10\x83/\x12%\n\x20Cm\
-    dRogueTournGetAllBuildRefScRsp\x10\x98/\x12\x1c\n\x17CmdRogueTournEnterS\
-    cRsp\x10\xcf/\x12%\n\x20CmdRogueTournDeleteBuildRefScRsp\x10\x99/\x12%\n\
-    \x20CmdRogueTournGetAllBuildRefCsReq\x10\xd4/\x12*\n%CmdRogueTournRevive\
-    CostUpdateScNotify\x10\xc8/\x12\x13\n\x0eCmdPLCLHLNAHDB\x10\xb1/\x12%\n\
-    \x20CmdRogueTournRenameBuildRefScRsp\x10\x9d/\x12\x20\n\x1bCmdRogueTourn\
-    EnterRoomCsReq\x10\x84/\x12$\n\x1fCmdRogueTournRenameArchiveCsReq\x10\
-    \x9b/\x12*\n%CmdRogueTournGetMiscRealTimeDataScRsp\x10\xc1/\x12$\n\x1fCm\
-    dRogueTournRenameArchiveScRsp\x10\xc5/\x12\x13\n\x0eCmdHLGKHDILCHH\x10\
-    \xa5/\x12(\n#CmdRogueTournTriggerRoomSelectCsReq\x10\xc3/\x12\x13\n\x0eC\
-    mdLGFAJDIKCJN\x10\xc6/\x12#\n\x1eCmdRogueTournReviveAvatarCsReq\x10\xa6/\
-    \x12*\n%CmdRogueTournGetMiscRealTimeDataCsReq\x10\x86/\x12$\n\x1fCmdRogu\
-    eTournGetSettleInfoScRsp\x10\x92/\x12(\n#CmdRogueTournUseSuperRewardKeyS\
-    cRsp\x10\xc7/\x127\n2CmdRogueTournTitanUpdateTitanBlessProgressScNotify\
-    \x10\xb9/\x12,\n'CmdRogueTournGetCurRogueCocoonInfoCsReq\x10\x9e/\x12$\n\
-    \x1fCmdRogueTournGetAllArchiveScRsp\x10\xfe.\x12\x13\n\x0eCmdLGACEOFJJBK\
-    \x10\xb5/\x12-\n(CmdRogueTournGetPermanentTalentInfoScRsp\x10\xa1/\x12\
-    \x1d\n\x18CmdRogueTournSettleCsReq\x10\xfb.\x12*\n%CmdRogueTournGetSeaso\
-    nTalentInfoScRsp\x10\xaf/\x12)\n$CmdRogueTournEnableSeasonTalentScRsp\
-    \x10\x85/\x12)\n$CmdRogueTournLevelInfoUpdateScNotify\x10\xab/\x12,\n'Cm\
-    dRogueTournLeaveRogueCocoonSceneScRsp\x10\xc4/\x12.\n)CmdRogueTournReEnt\
-    erRogueCocoonStageScRsp\x10\xff.\x12%\n\x20CmdRogueTournDeleteBuildRefCs\
-    Req\x10\x87/\x12+\n&CmdRogueTournResetPermanentTalentScRsp\x10\xcd/\x12$\
-    \n\x1fCmdRogueTournAreaUpdateScNotify\x10\xa0/\x12\x1c\n\x17CmdRogueTour\
-    nStartCsReq\x10\xb4/\x12,\n'CmdRogueTournEnablePermanentTalentScRsp\x10\
-    \xc2/\x12,\n'CmdRogueTournGetCurRogueCocoonInfoScRsp\x10\xfd.b\x06proto3\
+    \n\x17CmdRogueTournType.proto*\x98\x12\n\x11CmdRogueTournType\x12\x1b\n\
+    \x17DIDFAHMPGBH_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17DIDFAHMPGBH_ADHCMDHNCIH\
+    \x10\xfb.\x12\x1c\n\x17DIDFAHMPGBH_EDJGBDBFLEK\x10\x82/\x12\x1c\n\x17DID\
+    FAHMPGBH_DHDJPEEGLGB\x10\x98/\x12\x1c\n\x17DIDFAHMPGBH_FEHHDIKLOPB\x10\
+    \xc6/\x12\x1c\n\x17DIDFAHMPGBH_JJMINBIDHOD\x10\xd2/\x12\x1c\n\x17DIDFAHM\
+    PGBH_LCFHIOEHDJN\x10\x9e/\x12\x1c\n\x17DIDFAHMPGBH_EDHLEDMDJHD\x10\x83/\
+    \x12\x1c\n\x17DIDFAHMPGBH_CHEEPPFGIEK\x10\x84/\x12\x1c\n\x17DIDFAHMPGBH_\
+    HFGGBIOAOHO\x10\xae/\x12\x1c\n\x17DIDFAHMPGBH_HOOPLLFAEAB\x10\xd3/\x12\
+    \x1c\n\x17DIDFAHMPGBH_KFBDGABLDJH\x10\x87/\x12\x1c\n\x17DIDFAHMPGBH_JICF\
+    PAOEPJA\x10\xab/\x12\x1c\n\x17DIDFAHMPGBH_NFHEPPBLJEM\x10\x91/\x12\x1c\n\
+    \x17DIDFAHMPGBH_KMLIBOEDGGE\x10\xa9/\x12\x1c\n\x17DIDFAHMPGBH_HBICPILLFE\
+    O\x10\xcd/\x12\x1c\n\x17DIDFAHMPGBH_FNNLHIOFECM\x10\xca/\x12\x1c\n\x17DI\
+    DFAHMPGBH_PMECNGHOGAH\x10\xce/\x12\x1c\n\x17DIDFAHMPGBH_BEDNKCCNMJE\x10\
+    \xc5/\x12\x1c\n\x17DIDFAHMPGBH_AOPLLJJDOCG\x10\xa7/\x12\x1c\n\x17DIDFAHM\
+    PGBH_CPEHMAPAOED\x10\x8a/\x12\x1c\n\x17DIDFAHMPGBH_ACOENPFNKKJ\x10\xcf/\
+    \x12\x1c\n\x17DIDFAHMPGBH_MLNLACOPPPH\x10\xbf/\x12\x1c\n\x17DIDFAHMPGBH_\
+    DMGHOODIDCH\x10\x89/\x12\x1c\n\x17DIDFAHMPGBH_COBBOLLGLJM\x10\x96/\x12\
+    \x1c\n\x17DIDFAHMPGBH_GMMLDBBBMOB\x10\xaf/\x12\x1c\n\x17DIDFAHMPGBH_HDNK\
+    EEAFKME\x10\xbc/\x12\x1c\n\x17DIDFAHMPGBH_PPLKGGIPIFM\x10\xa0/\x12\x1c\n\
+    \x17DIDFAHMPGBH_OJBIPEEGMEC\x10\xb1/\x12\x1c\n\x17DIDFAHMPGBH_ILKIENLOGF\
+    E\x10\xa1/\x12\x1c\n\x17DIDFAHMPGBH_EIDJIJPEDJG\x10\x86/\x12\x1c\n\x17DI\
+    DFAHMPGBH_HFDIIGDFDMA\x10\xcc/\x12\x1c\n\x17DIDFAHMPGBH_NLNBJLHDNAM\x10\
+    \xc3/\x12\x1c\n\x17DIDFAHMPGBH_FCPJLDACDJI\x10\xc1/\x12\x1c\n\x17DIDFAHM\
+    PGBH_FLAOAMMNIKP\x10\xb0/\x12\x1c\n\x17DIDFAHMPGBH_JJLIPFJBMPA\x10\x8c/\
+    \x12\x1c\n\x17DIDFAHMPGBH_GDLIGAPAHOD\x10\x9a/\x12\x1c\n\x17DIDFAHMPGBH_\
+    NEKCFMGNGPB\x10\xb9/\x12\x1c\n\x17DIDFAHMPGBH_NPJGOENAOHO\x10\xba/\x12\
+    \x1c\n\x17DIDFAHMPGBH_CBHHAPJIDGN\x10\xc4/\x12\x1c\n\x17DIDFAHMPGBH_PCBB\
+    KKGGIPI\x10\xc8/\x12\x1c\n\x17DIDFAHMPGBH_NKPJKKAPPND\x10\xd1/\x12\x1c\n\
+    \x17DIDFAHMPGBH_FHDIGLMNACP\x10\xa8/\x12\x1c\n\x17DIDFAHMPGBH_AFDKPOLPNO\
+    D\x10\xb7/\x12\x1c\n\x17DIDFAHMPGBH_JFFNIFFBLNE\x10\x95/\x12\x1c\n\x17DI\
+    DFAHMPGBH_BNOGOAHABHN\x10\xa6/\x12\x1c\n\x17DIDFAHMPGBH_PLHPMMOCOMB\x10\
+    \xa2/\x12\x1c\n\x17DIDFAHMPGBH_EGHMOMNACKN\x10\xd0/\x12\x1c\n\x17DIDFAHM\
+    PGBH_DACKEJAPIPM\x10\xc9/\x12\x1c\n\x17DIDFAHMPGBH_NKDAKPMCMBE\x10\xb4/\
+    \x12\x1c\n\x17DIDFAHMPGBH_EPPKEPMMCPH\x10\x92/\x12\x1c\n\x17DIDFAHMPGBH_\
+    BIAFLHBCGOL\x10\x9c/\x12\x1c\n\x17DIDFAHMPGBH_LMLFHCOPBIG\x10\xaa/\x12\
+    \x1c\n\x17DIDFAHMPGBH_JIKEBLKECOJ\x10\x9d/\x12\x1c\n\x17DIDFAHMPGBH_HODI\
+    GELBEPF\x10\x94/\x12\x1c\n\x17DIDFAHMPGBH_GJDPGGHAAFG\x10\x97/\x12\x1c\n\
+    \x17DIDFAHMPGBH_EKGGJADCEOI\x10\x80/\x12\x1c\n\x17DIDFAHMPGBH_JNNANDBMNN\
+    B\x10\xa4/\x12\x1c\n\x17DIDFAHMPGBH_EMPBOGAJOPE\x10\x90/\x12\x1c\n\x17DI\
+    DFAHMPGBH_OCKHDDBDGMJ\x10\x99/\x12\x1c\n\x17DIDFAHMPGBH_DNNKDMJIFFA\x10\
+    \xb2/\x12\x1c\n\x17DIDFAHMPGBH_GMBPKFBEOFC\x10\xbe/\x12\x1c\n\x17DIDFAHM\
+    PGBH_FIGNPCKKDAJ\x10\xa5/\x12\x1c\n\x17DIDFAHMPGBH_EOJPINNILBO\x10\x9f/\
+    \x12\x1c\n\x17DIDFAHMPGBH_DPGGHPHKBDA\x10\xfd.\x12\x1c\n\x17DIDFAHMPGBH_\
+    CCNBOGOEPMJ\x10\xb3/\x12\x1c\n\x17DIDFAHMPGBH_GGLDPDGKKHL\x10\x8e/\x12\
+    \x1c\n\x17DIDFAHMPGBH_BINGAGPGKDB\x10\xb5/\x12\x1c\n\x17DIDFAHMPGBH_CMFI\
+    GBIICBC\x10\xbd/\x12\x1c\n\x17DIDFAHMPGBH_AJIOOMLGHOK\x10\x8b/\x12\x1c\n\
+    \x17DIDFAHMPGBH_NKHDFBHDOBG\x10\x85/\x12\x1c\n\x17DIDFAHMPGBH_BLHPABLMGJ\
+    H\x10\xff.\x12\x1c\n\x17DIDFAHMPGBH_OLJGECDPHDN\x10\xa3/\x12\x1c\n\x17DI\
+    DFAHMPGBH_PAIDLKBIAOG\x10\xbb/\x12\x1c\n\x17DIDFAHMPGBH_FBPFEOJEGIL\x10\
+    \xd4/\x12\x1c\n\x17DIDFAHMPGBH_MFHJNGJFOCB\x10\x88/\x12\x1c\n\x17DIDFAHM\
+    PGBH_PKFBDCLILOC\x10\xcb/b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

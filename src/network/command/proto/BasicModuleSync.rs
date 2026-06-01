@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BasicModuleSync {
     // message fields
+    // @@protoc_insertion_point(field:BasicModuleSync.DLODAKOHFOP)
+    pub DLODAKOHFOP: u32,
     // @@protoc_insertion_point(field:BasicModuleSync.stamina)
     pub stamina: u32,
-    // @@protoc_insertion_point(field:BasicModuleSync.LPLEBJKDEIC)
-    pub LPLEBJKDEIC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:BasicModuleSync.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl BasicModuleSync {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DLODAKOHFOP",
+            |m: &BasicModuleSync| { &m.DLODAKOHFOP },
+            |m: &mut BasicModuleSync| { &mut m.DLODAKOHFOP },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stamina",
             |m: &BasicModuleSync| { &m.stamina },
             |m: &mut BasicModuleSync| { &mut m.stamina },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LPLEBJKDEIC",
-            |m: &BasicModuleSync| { &m.LPLEBJKDEIC },
-            |m: &mut BasicModuleSync| { &mut m.LPLEBJKDEIC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BasicModuleSync>(
             "BasicModuleSync",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for BasicModuleSync {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.stamina = is.read_uint32()?;
+                16 => {
+                    self.DLODAKOHFOP = is.read_uint32()?;
                 },
-                88 => {
-                    self.LPLEBJKDEIC = is.read_uint32()?;
+                96 => {
+                    self.stamina = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for BasicModuleSync {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.stamina != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.stamina);
+        if self.DLODAKOHFOP != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.DLODAKOHFOP);
         }
-        if self.LPLEBJKDEIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LPLEBJKDEIC);
+        if self.stamina != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.stamina);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for BasicModuleSync {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.stamina != 0 {
-            os.write_uint32(13, self.stamina)?;
+        if self.DLODAKOHFOP != 0 {
+            os.write_uint32(2, self.DLODAKOHFOP)?;
         }
-        if self.LPLEBJKDEIC != 0 {
-            os.write_uint32(11, self.LPLEBJKDEIC)?;
+        if self.stamina != 0 {
+            os.write_uint32(12, self.stamina)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for BasicModuleSync {
     }
 
     fn clear(&mut self) {
+        self.DLODAKOHFOP = 0;
         self.stamina = 0;
-        self.LPLEBJKDEIC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BasicModuleSync {
         static instance: BasicModuleSync = BasicModuleSync {
+            DLODAKOHFOP: 0,
             stamina: 0,
-            LPLEBJKDEIC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for BasicModuleSync {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15BasicModuleSync.proto\"M\n\x0fBasicModuleSync\x12\x18\n\x07stamina\
-    \x18\r\x20\x01(\rR\x07stamina\x12\x20\n\x0bLPLEBJKDEIC\x18\x0b\x20\x01(\
-    \rR\x0bLPLEBJKDEICb\x06proto3\
+    \n\x15BasicModuleSync.proto\"M\n\x0fBasicModuleSync\x12\x20\n\x0bDLODAKO\
+    HFOP\x18\x02\x20\x01(\rR\x0bDLODAKOHFOP\x12\x18\n\x07stamina\x18\x0c\x20\
+    \x01(\rR\x07staminab\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

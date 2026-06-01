@@ -27,24 +27,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdJukeboxType)
 pub enum CmdJukeboxType {
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.EHPNGMCBMBF_PCPDHELPKEM)
-    EHPNGMCBMBF_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdUnlockBackGroundMusicCsReq)
-    CmdUnlockBackGroundMusicCsReq = 3114,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdGetJukeboxDataScRsp)
-    CmdGetJukeboxDataScRsp = 3110,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdPlayBackGroundMusicCsReq)
-    CmdPlayBackGroundMusicCsReq = 3194,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdIDEBDGICHAJ)
-    CmdIDEBDGICHAJ = 3109,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdGetJukeboxDataCsReq)
-    CmdGetJukeboxDataCsReq = 3191,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdCJAPFOOONKC)
-    CmdCJAPFOOONKC = 3198,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdUnlockBackGroundMusicScRsp)
-    CmdUnlockBackGroundMusicScRsp = 3118,
-    // @@protoc_insertion_point(enum_value:CmdJukeboxType.CmdPlayBackGroundMusicScRsp)
-    CmdPlayBackGroundMusicScRsp = 3195,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_NLCDGIPGFDJ)
+    ONBKHMHLADC_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_JHFCHFCMBPE)
+    ONBKHMHLADC_JHFCHFCMBPE = 3173,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_DGDJPGMNDCD)
+    ONBKHMHLADC_DGDJPGMNDCD = 3113,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_JDOHJBCOMKN)
+    ONBKHMHLADC_JDOHJBCOMKN = 3115,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_OJDLNPGPCJN)
+    ONBKHMHLADC_OJDLNPGPCJN = 3136,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_CAJLLEGDCJM)
+    ONBKHMHLADC_CAJLLEGDCJM = 3127,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_AEOGKBPOCEF)
+    ONBKHMHLADC_AEOGKBPOCEF = 3180,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_CKILMDLNFAP)
+    ONBKHMHLADC_CKILMDLNFAP = 3181,
+    // @@protoc_insertion_point(enum_value:CmdJukeboxType.ONBKHMHLADC_PFFBINHIPPN)
+    ONBKHMHLADC_PFFBINHIPPN = 3103,
 }
 
 impl ::protobuf::Enum for CmdJukeboxType {
@@ -56,44 +56,44 @@ impl ::protobuf::Enum for CmdJukeboxType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdJukeboxType> {
         match value {
-            0 => ::std::option::Option::Some(CmdJukeboxType::EHPNGMCBMBF_PCPDHELPKEM),
-            3114 => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicCsReq),
-            3110 => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataScRsp),
-            3194 => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicCsReq),
-            3109 => ::std::option::Option::Some(CmdJukeboxType::CmdIDEBDGICHAJ),
-            3191 => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataCsReq),
-            3198 => ::std::option::Option::Some(CmdJukeboxType::CmdCJAPFOOONKC),
-            3118 => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicScRsp),
-            3195 => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicScRsp),
+            0 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_NLCDGIPGFDJ),
+            3173 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE),
+            3113 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD),
+            3115 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JDOHJBCOMKN),
+            3136 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN),
+            3127 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM),
+            3180 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_AEOGKBPOCEF),
+            3181 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CKILMDLNFAP),
+            3103 => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_PFFBINHIPPN),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdJukeboxType> {
         match str {
-            "EHPNGMCBMBF_PCPDHELPKEM" => ::std::option::Option::Some(CmdJukeboxType::EHPNGMCBMBF_PCPDHELPKEM),
-            "CmdUnlockBackGroundMusicCsReq" => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicCsReq),
-            "CmdGetJukeboxDataScRsp" => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataScRsp),
-            "CmdPlayBackGroundMusicCsReq" => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicCsReq),
-            "CmdIDEBDGICHAJ" => ::std::option::Option::Some(CmdJukeboxType::CmdIDEBDGICHAJ),
-            "CmdGetJukeboxDataCsReq" => ::std::option::Option::Some(CmdJukeboxType::CmdGetJukeboxDataCsReq),
-            "CmdCJAPFOOONKC" => ::std::option::Option::Some(CmdJukeboxType::CmdCJAPFOOONKC),
-            "CmdUnlockBackGroundMusicScRsp" => ::std::option::Option::Some(CmdJukeboxType::CmdUnlockBackGroundMusicScRsp),
-            "CmdPlayBackGroundMusicScRsp" => ::std::option::Option::Some(CmdJukeboxType::CmdPlayBackGroundMusicScRsp),
+            "ONBKHMHLADC_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_NLCDGIPGFDJ),
+            "ONBKHMHLADC_JHFCHFCMBPE" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE),
+            "ONBKHMHLADC_DGDJPGMNDCD" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD),
+            "ONBKHMHLADC_JDOHJBCOMKN" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_JDOHJBCOMKN),
+            "ONBKHMHLADC_OJDLNPGPCJN" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN),
+            "ONBKHMHLADC_CAJLLEGDCJM" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM),
+            "ONBKHMHLADC_AEOGKBPOCEF" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_AEOGKBPOCEF),
+            "ONBKHMHLADC_CKILMDLNFAP" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_CKILMDLNFAP),
+            "ONBKHMHLADC_PFFBINHIPPN" => ::std::option::Option::Some(CmdJukeboxType::ONBKHMHLADC_PFFBINHIPPN),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdJukeboxType] = &[
-        CmdJukeboxType::EHPNGMCBMBF_PCPDHELPKEM,
-        CmdJukeboxType::CmdUnlockBackGroundMusicCsReq,
-        CmdJukeboxType::CmdGetJukeboxDataScRsp,
-        CmdJukeboxType::CmdPlayBackGroundMusicCsReq,
-        CmdJukeboxType::CmdIDEBDGICHAJ,
-        CmdJukeboxType::CmdGetJukeboxDataCsReq,
-        CmdJukeboxType::CmdCJAPFOOONKC,
-        CmdJukeboxType::CmdUnlockBackGroundMusicScRsp,
-        CmdJukeboxType::CmdPlayBackGroundMusicScRsp,
+        CmdJukeboxType::ONBKHMHLADC_NLCDGIPGFDJ,
+        CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE,
+        CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD,
+        CmdJukeboxType::ONBKHMHLADC_JDOHJBCOMKN,
+        CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN,
+        CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM,
+        CmdJukeboxType::ONBKHMHLADC_AEOGKBPOCEF,
+        CmdJukeboxType::ONBKHMHLADC_CKILMDLNFAP,
+        CmdJukeboxType::ONBKHMHLADC_PFFBINHIPPN,
     ];
 }
 
@@ -105,15 +105,15 @@ impl ::protobuf::EnumFull for CmdJukeboxType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdJukeboxType::EHPNGMCBMBF_PCPDHELPKEM => 0,
-            CmdJukeboxType::CmdUnlockBackGroundMusicCsReq => 1,
-            CmdJukeboxType::CmdGetJukeboxDataScRsp => 2,
-            CmdJukeboxType::CmdPlayBackGroundMusicCsReq => 3,
-            CmdJukeboxType::CmdIDEBDGICHAJ => 4,
-            CmdJukeboxType::CmdGetJukeboxDataCsReq => 5,
-            CmdJukeboxType::CmdCJAPFOOONKC => 6,
-            CmdJukeboxType::CmdUnlockBackGroundMusicScRsp => 7,
-            CmdJukeboxType::CmdPlayBackGroundMusicScRsp => 8,
+            CmdJukeboxType::ONBKHMHLADC_NLCDGIPGFDJ => 0,
+            CmdJukeboxType::ONBKHMHLADC_JHFCHFCMBPE => 1,
+            CmdJukeboxType::ONBKHMHLADC_DGDJPGMNDCD => 2,
+            CmdJukeboxType::ONBKHMHLADC_JDOHJBCOMKN => 3,
+            CmdJukeboxType::ONBKHMHLADC_OJDLNPGPCJN => 4,
+            CmdJukeboxType::ONBKHMHLADC_CAJLLEGDCJM => 5,
+            CmdJukeboxType::ONBKHMHLADC_AEOGKBPOCEF => 6,
+            CmdJukeboxType::ONBKHMHLADC_CKILMDLNFAP => 7,
+            CmdJukeboxType::ONBKHMHLADC_PFFBINHIPPN => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for CmdJukeboxType {
 
 impl ::std::default::Default for CmdJukeboxType {
     fn default() -> Self {
-        CmdJukeboxType::EHPNGMCBMBF_PCPDHELPKEM
+        CmdJukeboxType::ONBKHMHLADC_NLCDGIPGFDJ
     }
 }
 
@@ -132,13 +132,13 @@ impl CmdJukeboxType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14CmdJukeboxType.proto*\x9d\x02\n\x0eCmdJukeboxType\x12\x1b\n\x17EHP\
-    NGMCBMBF_PCPDHELPKEM\x10\0\x12\"\n\x1dCmdUnlockBackGroundMusicCsReq\x10\
-    \xaa\x18\x12\x1b\n\x16CmdGetJukeboxDataScRsp\x10\xa6\x18\x12\x20\n\x1bCm\
-    dPlayBackGroundMusicCsReq\x10\xfa\x18\x12\x13\n\x0eCmdIDEBDGICHAJ\x10\
-    \xa5\x18\x12\x1b\n\x16CmdGetJukeboxDataCsReq\x10\xf7\x18\x12\x13\n\x0eCm\
-    dCJAPFOOONKC\x10\xfe\x18\x12\"\n\x1dCmdUnlockBackGroundMusicScRsp\x10\
-    \xae\x18\x12\x20\n\x1bCmdPlayBackGroundMusicScRsp\x10\xfb\x18b\x06proto3\
+    \n\x14CmdJukeboxType.proto*\x9d\x02\n\x0eCmdJukeboxType\x12\x1b\n\x17ONB\
+    KHMHLADC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ONBKHMHLADC_JHFCHFCMBPE\x10\xe5\
+    \x18\x12\x1c\n\x17ONBKHMHLADC_DGDJPGMNDCD\x10\xa9\x18\x12\x1c\n\x17ONBKH\
+    MHLADC_JDOHJBCOMKN\x10\xab\x18\x12\x1c\n\x17ONBKHMHLADC_OJDLNPGPCJN\x10\
+    \xc0\x18\x12\x1c\n\x17ONBKHMHLADC_CAJLLEGDCJM\x10\xb7\x18\x12\x1c\n\x17O\
+    NBKHMHLADC_AEOGKBPOCEF\x10\xec\x18\x12\x1c\n\x17ONBKHMHLADC_CKILMDLNFAP\
+    \x10\xed\x18\x12\x1c\n\x17ONBKHMHLADC_PFFBINHIPPN\x10\x9f\x18b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -82,7 +82,7 @@ impl ::protobuf::Message for WaitDelResource {
                 64 => {
                     self.num = is.read_uint32()?;
                 },
-                72 => {
+                80 => {
                     self.tid = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for WaitDelResource {
             my_size += ::protobuf::rt::uint32_size(8, self.num);
         }
         if self.tid != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.tid);
+            my_size += ::protobuf::rt::uint32_size(10, self.tid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for WaitDelResource {
             os.write_uint32(8, self.num)?;
         }
         if self.tid != 0 {
-            os.write_uint32(9, self.tid)?;
+            os.write_uint32(10, self.tid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for WaitDelResource {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15WaitDelResource.proto\"5\n\x0fWaitDelResource\x12\x10\n\x03num\x18\
-    \x08\x20\x01(\rR\x03num\x12\x10\n\x03tid\x18\t\x20\x01(\rR\x03tidb\x06pr\
+    \x08\x20\x01(\rR\x03num\x12\x10\n\x03tid\x18\n\x20\x01(\rR\x03tidb\x06pr\
     oto3\
 ";
 

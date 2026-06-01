@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetCurChallengePeakScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetCurChallengePeakScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:GetCurChallengePeakScRsp.finished_target_list)
     pub finished_target_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:GetCurChallengePeakScRsp.boss_buff_id)
-    pub boss_buff_id: u32,
+    // @@protoc_insertion_point(field:GetCurChallengePeakScRsp.retcode)
+    pub retcode: u32,
     // @@protoc_insertion_point(field:GetCurChallengePeakScRsp.cycles_used)
     pub cycles_used: u32,
+    // @@protoc_insertion_point(field:GetCurChallengePeakScRsp.boss_buff_id)
+    pub boss_buff_id: u32,
     // @@protoc_insertion_point(field:GetCurChallengePeakScRsp.peak_id)
     pub peak_id: u32,
-    // @@protoc_insertion_point(field:GetCurChallengePeakScRsp.is_wait_confirm)
-    pub is_wait_confirm: bool,
     // @@protoc_insertion_point(field:GetCurChallengePeakScRsp.has_passed)
     pub has_passed: bool,
+    // @@protoc_insertion_point(field:GetCurChallengePeakScRsp.is_wait_confirm)
+    pub is_wait_confirm: bool,
     // special fields
     // @@protoc_insertion_point(special_field:GetCurChallengePeakScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,20 +61,15 @@ impl GetCurChallengePeakScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &GetCurChallengePeakScRsp| { &m.retcode },
-            |m: &mut GetCurChallengePeakScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "finished_target_list",
             |m: &GetCurChallengePeakScRsp| { &m.finished_target_list },
             |m: &mut GetCurChallengePeakScRsp| { &mut m.finished_target_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "boss_buff_id",
-            |m: &GetCurChallengePeakScRsp| { &m.boss_buff_id },
-            |m: &mut GetCurChallengePeakScRsp| { &mut m.boss_buff_id },
+            "retcode",
+            |m: &GetCurChallengePeakScRsp| { &m.retcode },
+            |m: &mut GetCurChallengePeakScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "cycles_used",
@@ -82,19 +77,24 @@ impl GetCurChallengePeakScRsp {
             |m: &mut GetCurChallengePeakScRsp| { &mut m.cycles_used },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "boss_buff_id",
+            |m: &GetCurChallengePeakScRsp| { &m.boss_buff_id },
+            |m: &mut GetCurChallengePeakScRsp| { &mut m.boss_buff_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "peak_id",
             |m: &GetCurChallengePeakScRsp| { &m.peak_id },
             |m: &mut GetCurChallengePeakScRsp| { &mut m.peak_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_wait_confirm",
-            |m: &GetCurChallengePeakScRsp| { &m.is_wait_confirm },
-            |m: &mut GetCurChallengePeakScRsp| { &mut m.is_wait_confirm },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "has_passed",
             |m: &GetCurChallengePeakScRsp| { &m.has_passed },
             |m: &mut GetCurChallengePeakScRsp| { &mut m.has_passed },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_wait_confirm",
+            |m: &GetCurChallengePeakScRsp| { &m.is_wait_confirm },
+            |m: &mut GetCurChallengePeakScRsp| { &mut m.is_wait_confirm },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetCurChallengePeakScRsp>(
             "GetCurChallengePeakScRsp",
@@ -114,29 +114,29 @@ impl ::protobuf::Message for GetCurChallengePeakScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                106 => {
+                42 => {
                     is.read_repeated_packed_uint32_into(&mut self.finished_target_list)?;
                 },
-                104 => {
+                40 => {
                     self.finished_target_list.push(is.read_uint32()?);
                 },
-                8 => {
-                    self.boss_buff_id = is.read_uint32()?;
-                },
-                88 => {
-                    self.cycles_used = is.read_uint32()?;
-                },
-                112 => {
-                    self.peak_id = is.read_uint32()?;
+                16 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 48 => {
-                    self.is_wait_confirm = is.read_bool()?;
+                    self.cycles_used = is.read_uint32()?;
                 },
-                24 => {
+                64 => {
+                    self.boss_buff_id = is.read_uint32()?;
+                },
+                8 => {
+                    self.peak_id = is.read_uint32()?;
+                },
+                104 => {
                     self.has_passed = is.read_bool()?;
+                },
+                32 => {
+                    self.is_wait_confirm = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,23 +150,23 @@ impl ::protobuf::Message for GetCurChallengePeakScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.finished_target_list);
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.finished_target_list);
-        if self.boss_buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.boss_buff_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         if self.cycles_used != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.cycles_used);
+            my_size += ::protobuf::rt::uint32_size(6, self.cycles_used);
+        }
+        if self.boss_buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.boss_buff_id);
         }
         if self.peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.peak_id);
-        }
-        if self.is_wait_confirm != false {
-            my_size += 1 + 1;
+            my_size += ::protobuf::rt::uint32_size(1, self.peak_id);
         }
         if self.has_passed != false {
+            my_size += 1 + 1;
+        }
+        if self.is_wait_confirm != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -175,24 +175,24 @@ impl ::protobuf::Message for GetCurChallengePeakScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(5, &self.finished_target_list)?;
         if self.retcode != 0 {
-            os.write_uint32(12, self.retcode)?;
-        }
-        os.write_repeated_packed_uint32(13, &self.finished_target_list)?;
-        if self.boss_buff_id != 0 {
-            os.write_uint32(1, self.boss_buff_id)?;
+            os.write_uint32(2, self.retcode)?;
         }
         if self.cycles_used != 0 {
-            os.write_uint32(11, self.cycles_used)?;
+            os.write_uint32(6, self.cycles_used)?;
+        }
+        if self.boss_buff_id != 0 {
+            os.write_uint32(8, self.boss_buff_id)?;
         }
         if self.peak_id != 0 {
-            os.write_uint32(14, self.peak_id)?;
-        }
-        if self.is_wait_confirm != false {
-            os.write_bool(6, self.is_wait_confirm)?;
+            os.write_uint32(1, self.peak_id)?;
         }
         if self.has_passed != false {
-            os.write_bool(3, self.has_passed)?;
+            os.write_bool(13, self.has_passed)?;
+        }
+        if self.is_wait_confirm != false {
+            os.write_bool(4, self.is_wait_confirm)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -211,25 +211,25 @@ impl ::protobuf::Message for GetCurChallengePeakScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.finished_target_list.clear();
-        self.boss_buff_id = 0;
+        self.retcode = 0;
         self.cycles_used = 0;
+        self.boss_buff_id = 0;
         self.peak_id = 0;
-        self.is_wait_confirm = false;
         self.has_passed = false;
+        self.is_wait_confirm = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetCurChallengePeakScRsp {
         static instance: GetCurChallengePeakScRsp = GetCurChallengePeakScRsp {
-            retcode: 0,
             finished_target_list: ::std::vec::Vec::new(),
-            boss_buff_id: 0,
+            retcode: 0,
             cycles_used: 0,
+            boss_buff_id: 0,
             peak_id: 0,
-            is_wait_confirm: false,
             has_passed: false,
+            is_wait_confirm: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -255,12 +255,12 @@ impl ::protobuf::reflect::ProtobufValue for GetCurChallengePeakScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eGetCurChallengePeakScRsp.proto\"\x89\x02\n\x18GetCurChallengePeakS\
-    cRsp\x12\x18\n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x120\n\x14finis\
-    hed_target_list\x18\r\x20\x03(\rR\x12finishedTargetList\x12\x20\n\x0cbos\
-    s_buff_id\x18\x01\x20\x01(\rR\nbossBuffId\x12\x1f\n\x0bcycles_used\x18\
-    \x0b\x20\x01(\rR\ncyclesUsed\x12\x17\n\x07peak_id\x18\x0e\x20\x01(\rR\
-    \x06peakId\x12&\n\x0fis_wait_confirm\x18\x06\x20\x01(\x08R\risWaitConfir\
-    m\x12\x1d\n\nhas_passed\x18\x03\x20\x01(\x08R\thasPassedb\x06proto3\
+    cRsp\x120\n\x14finished_target_list\x18\x05\x20\x03(\rR\x12finishedTarge\
+    tList\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x1f\n\x0bc\
+    ycles_used\x18\x06\x20\x01(\rR\ncyclesUsed\x12\x20\n\x0cboss_buff_id\x18\
+    \x08\x20\x01(\rR\nbossBuffId\x12\x17\n\x07peak_id\x18\x01\x20\x01(\rR\
+    \x06peakId\x12\x1d\n\nhas_passed\x18\r\x20\x01(\x08R\thasPassed\x12&\n\
+    \x0fis_wait_confirm\x18\x04\x20\x01(\x08R\risWaitConfirmb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

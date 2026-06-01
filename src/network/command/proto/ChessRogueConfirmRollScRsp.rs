@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueConfirmRollScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ChessRogueConfirmRollScRsp.POHEPEEFBOA)
+    pub POHEPEEFBOA: ::protobuf::MessageField<super::KFACLOGFNJF::KFACLOGFNJF>,
     // @@protoc_insertion_point(field:ChessRogueConfirmRollScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChessRogueConfirmRollScRsp.PJABKDBFPIM)
-    pub PJABKDBFPIM: ::protobuf::MessageField<super::DFAOIALEBOH::DFAOIALEBOH>,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueConfirmRollScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ChessRogueConfirmRollScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KFACLOGFNJF::KFACLOGFNJF>(
+            "POHEPEEFBOA",
+            |m: &ChessRogueConfirmRollScRsp| { &m.POHEPEEFBOA },
+            |m: &mut ChessRogueConfirmRollScRsp| { &mut m.POHEPEEFBOA },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChessRogueConfirmRollScRsp| { &m.retcode },
             |m: &mut ChessRogueConfirmRollScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFAOIALEBOH::DFAOIALEBOH>(
-            "PJABKDBFPIM",
-            |m: &ChessRogueConfirmRollScRsp| { &m.PJABKDBFPIM },
-            |m: &mut ChessRogueConfirmRollScRsp| { &mut m.PJABKDBFPIM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueConfirmRollScRsp>(
             "ChessRogueConfirmRollScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChessRogueConfirmRollScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.retcode = is.read_uint32()?;
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.POHEPEEFBOA)?;
                 },
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PJABKDBFPIM)?;
+                64 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ChessRogueConfirmRollScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if let Some(v) = self.PJABKDBFPIM.as_ref() {
+        if let Some(v) = self.POHEPEEFBOA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChessRogueConfirmRollScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+        if let Some(v) = self.POHEPEEFBOA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
-        if let Some(v) = self.PJABKDBFPIM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(8, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChessRogueConfirmRollScRsp {
     }
 
     fn clear(&mut self) {
+        self.POHEPEEFBOA.clear();
         self.retcode = 0;
-        self.PJABKDBFPIM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueConfirmRollScRsp {
         static instance: ChessRogueConfirmRollScRsp = ChessRogueConfirmRollScRsp {
+            POHEPEEFBOA: ::protobuf::MessageField::none(),
             retcode: 0,
-            PJABKDBFPIM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueConfirmRollScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20ChessRogueConfirmRollScRsp.proto\x1a\x11DFAOIALEBOH.proto\"f\n\x1a\
-    ChessRogueConfirmRollScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07ret\
-    code\x12.\n\x0bPJABKDBFPIM\x18\x07\x20\x01(\x0b2\x0c.DFAOIALEBOHR\x0bPJA\
-    BKDBFPIMb\x06proto3\
+    \n\x20ChessRogueConfirmRollScRsp.proto\x1a\x11KFACLOGFNJF.proto\"f\n\x1a\
+    ChessRogueConfirmRollScRsp\x12.\n\x0bPOHEPEEFBOA\x18\x0b\x20\x01(\x0b2\
+    \x0c.KFACLOGFNJFR\x0bPOHEPEEFBOA\x12\x18\n\x07retcode\x18\x08\x20\x01(\r\
+    R\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DFAOIALEBOH::file_descriptor().clone());
+            deps.push(super::KFACLOGFNJF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChessRogueConfirmRollScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

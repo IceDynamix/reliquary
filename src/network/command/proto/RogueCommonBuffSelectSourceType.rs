@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueCommonBuffSelectSourceType)
 pub enum RogueCommonBuffSelectSourceType {
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.MAFPONIDMLD_PCPDHELPKEM)
-    MAFPONIDMLD_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.MAFPONIDMLD_HLIDGDLNFHM)
-    MAFPONIDMLD_HLIDGDLNFHM = 1,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.MAFPONIDMLD_EGFBGJGIEKM)
-    MAFPONIDMLD_EGFBGJGIEKM = 2,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.MAFPONIDMLD_NPDCOJCAHPE)
-    MAFPONIDMLD_NPDCOJCAHPE = 3,
-    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.MAFPONIDMLD_GALGFIOMOIO)
-    MAFPONIDMLD_GALGFIOMOIO = 4,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.CLNECBOMHMN_NLCDGIPGFDJ)
+    CLNECBOMHMN_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.CLNECBOMHMN_OHFGCMENFDH)
+    CLNECBOMHMN_OHFGCMENFDH = 1,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.CLNECBOMHMN_BGDGIIOKHGF)
+    CLNECBOMHMN_BGDGIIOKHGF = 2,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.CLNECBOMHMN_MCGGEAAHBPD)
+    CLNECBOMHMN_MCGGEAAHBPD = 3,
+    // @@protoc_insertion_point(enum_value:RogueCommonBuffSelectSourceType.CLNECBOMHMN_EMALBALANLH)
+    CLNECBOMHMN_EMALBALANLH = 4,
 }
 
 impl ::protobuf::Enum for RogueCommonBuffSelectSourceType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for RogueCommonBuffSelectSourceType {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueCommonBuffSelectSourceType> {
         match value {
-            0 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::MAFPONIDMLD_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::MAFPONIDMLD_HLIDGDLNFHM),
-            2 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::MAFPONIDMLD_EGFBGJGIEKM),
-            3 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::MAFPONIDMLD_NPDCOJCAHPE),
-            4 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::MAFPONIDMLD_GALGFIOMOIO),
+            0 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_OHFGCMENFDH),
+            2 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_BGDGIIOKHGF),
+            3 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_MCGGEAAHBPD),
+            4 => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_EMALBALANLH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueCommonBuffSelectSourceType> {
         match str {
-            "MAFPONIDMLD_PCPDHELPKEM" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::MAFPONIDMLD_PCPDHELPKEM),
-            "MAFPONIDMLD_HLIDGDLNFHM" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::MAFPONIDMLD_HLIDGDLNFHM),
-            "MAFPONIDMLD_EGFBGJGIEKM" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::MAFPONIDMLD_EGFBGJGIEKM),
-            "MAFPONIDMLD_NPDCOJCAHPE" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::MAFPONIDMLD_NPDCOJCAHPE),
-            "MAFPONIDMLD_GALGFIOMOIO" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::MAFPONIDMLD_GALGFIOMOIO),
+            "CLNECBOMHMN_NLCDGIPGFDJ" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_NLCDGIPGFDJ),
+            "CLNECBOMHMN_OHFGCMENFDH" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_OHFGCMENFDH),
+            "CLNECBOMHMN_BGDGIIOKHGF" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_BGDGIIOKHGF),
+            "CLNECBOMHMN_MCGGEAAHBPD" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_MCGGEAAHBPD),
+            "CLNECBOMHMN_EMALBALANLH" => ::std::option::Option::Some(RogueCommonBuffSelectSourceType::CLNECBOMHMN_EMALBALANLH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueCommonBuffSelectSourceType] = &[
-        RogueCommonBuffSelectSourceType::MAFPONIDMLD_PCPDHELPKEM,
-        RogueCommonBuffSelectSourceType::MAFPONIDMLD_HLIDGDLNFHM,
-        RogueCommonBuffSelectSourceType::MAFPONIDMLD_EGFBGJGIEKM,
-        RogueCommonBuffSelectSourceType::MAFPONIDMLD_NPDCOJCAHPE,
-        RogueCommonBuffSelectSourceType::MAFPONIDMLD_GALGFIOMOIO,
+        RogueCommonBuffSelectSourceType::CLNECBOMHMN_NLCDGIPGFDJ,
+        RogueCommonBuffSelectSourceType::CLNECBOMHMN_OHFGCMENFDH,
+        RogueCommonBuffSelectSourceType::CLNECBOMHMN_BGDGIIOKHGF,
+        RogueCommonBuffSelectSourceType::CLNECBOMHMN_MCGGEAAHBPD,
+        RogueCommonBuffSelectSourceType::CLNECBOMHMN_EMALBALANLH,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for RogueCommonBuffSelectSourceType {
 
 impl ::std::default::Default for RogueCommonBuffSelectSourceType {
     fn default() -> Self {
-        RogueCommonBuffSelectSourceType::MAFPONIDMLD_PCPDHELPKEM
+        RogueCommonBuffSelectSourceType::CLNECBOMHMN_NLCDGIPGFDJ
     }
 }
 
@@ -103,10 +103,10 @@ impl RogueCommonBuffSelectSourceType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%RogueCommonBuffSelectSourceType.proto*\xb2\x01\n\x1fRogueCommonBuffSe\
-    lectSourceType\x12\x1b\n\x17MAFPONIDMLD_PCPDHELPKEM\x10\0\x12\x1b\n\x17M\
-    AFPONIDMLD_HLIDGDLNFHM\x10\x01\x12\x1b\n\x17MAFPONIDMLD_EGFBGJGIEKM\x10\
-    \x02\x12\x1b\n\x17MAFPONIDMLD_NPDCOJCAHPE\x10\x03\x12\x1b\n\x17MAFPONIDM\
-    LD_GALGFIOMOIO\x10\x04b\x06proto3\
+    lectSourceType\x12\x1b\n\x17CLNECBOMHMN_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17C\
+    LNECBOMHMN_OHFGCMENFDH\x10\x01\x12\x1b\n\x17CLNECBOMHMN_BGDGIIOKHGF\x10\
+    \x02\x12\x1b\n\x17CLNECBOMHMN_MCGGEAAHBPD\x10\x03\x12\x1b\n\x17CLNECBOMH\
+    MN_EMALBALANLH\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,8 +30,8 @@ pub struct RogueTournSaveBuildRefScRsp {
     // message fields
     // @@protoc_insertion_point(field:RogueTournSaveBuildRefScRsp.name)
     pub name: ::std::string::String,
-    // @@protoc_insertion_point(field:RogueTournSaveBuildRefScRsp.KKGIEENCOIC)
-    pub KKGIEENCOIC: u32,
+    // @@protoc_insertion_point(field:RogueTournSaveBuildRefScRsp.NPHAJEKCBKF)
+    pub NPHAJEKCBKF: u32,
     // @@protoc_insertion_point(field:RogueTournSaveBuildRefScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -59,9 +59,9 @@ impl RogueTournSaveBuildRefScRsp {
             |m: &mut RogueTournSaveBuildRefScRsp| { &mut m.name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKGIEENCOIC",
-            |m: &RogueTournSaveBuildRefScRsp| { &m.KKGIEENCOIC },
-            |m: &mut RogueTournSaveBuildRefScRsp| { &mut m.KKGIEENCOIC },
+            "NPHAJEKCBKF",
+            |m: &RogueTournSaveBuildRefScRsp| { &m.NPHAJEKCBKF },
+            |m: &mut RogueTournSaveBuildRefScRsp| { &mut m.NPHAJEKCBKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RogueTournSaveBuildRefScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                18 => {
                     self.name = is.read_string()?;
                 },
-                120 => {
-                    self.KKGIEENCOIC = is.read_uint32()?;
+                56 => {
+                    self.NPHAJEKCBKF = is.read_uint32()?;
                 },
-                40 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for RogueTournSaveBuildRefScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.name);
+            my_size += ::protobuf::rt::string_size(2, &self.name);
         }
-        if self.KKGIEENCOIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.KKGIEENCOIC);
+        if self.NPHAJEKCBKF != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.NPHAJEKCBKF);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for RogueTournSaveBuildRefScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.name.is_empty() {
-            os.write_string(12, &self.name)?;
+            os.write_string(2, &self.name)?;
         }
-        if self.KKGIEENCOIC != 0 {
-            os.write_uint32(15, self.KKGIEENCOIC)?;
+        if self.NPHAJEKCBKF != 0 {
+            os.write_uint32(7, self.NPHAJEKCBKF)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(5, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,7 +149,7 @@ impl ::protobuf::Message for RogueTournSaveBuildRefScRsp {
 
     fn clear(&mut self) {
         self.name.clear();
-        self.KKGIEENCOIC = 0;
+        self.NPHAJEKCBKF = 0;
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -157,7 +157,7 @@ impl ::protobuf::Message for RogueTournSaveBuildRefScRsp {
     fn default_instance() -> &'static RogueTournSaveBuildRefScRsp {
         static instance: RogueTournSaveBuildRefScRsp = RogueTournSaveBuildRefScRsp {
             name: ::std::string::String::new(),
-            KKGIEENCOIC: 0,
+            NPHAJEKCBKF: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournSaveBuildRefScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!RogueTournSaveBuildRefScRsp.proto\"m\n\x1bRogueTournSaveBuildRefScRsp\
-    \x12\x12\n\x04name\x18\x0c\x20\x01(\tR\x04name\x12\x20\n\x0bKKGIEENCOIC\
-    \x18\x0f\x20\x01(\rR\x0bKKGIEENCOIC\x12\x18\n\x07retcode\x18\x05\x20\x01\
+    \x12\x12\n\x04name\x18\x02\x20\x01(\tR\x04name\x12\x20\n\x0bNPHAJEKCBKF\
+    \x18\x07\x20\x01(\rR\x0bNPHAJEKCBKF\x12\x18\n\x07retcode\x18\x06\x20\x01\
     (\rR\x07retcodeb\x06proto3\
 ";
 

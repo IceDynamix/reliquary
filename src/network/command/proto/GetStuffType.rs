@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GetStuffType)
 pub enum GetStuffType {
-    // @@protoc_insertion_point(enum_value:GetStuffType.GAPDOPFOGEN_BLJEEHFCNCO)
-    GAPDOPFOGEN_BLJEEHFCNCO = 0,
-    // @@protoc_insertion_point(enum_value:GetStuffType.GAPDOPFOGEN_PHJHNEIOCJM)
-    GAPDOPFOGEN_PHJHNEIOCJM = 1,
-    // @@protoc_insertion_point(enum_value:GetStuffType.GAPDOPFOGEN_GKPGAEGPDNL)
-    GAPDOPFOGEN_GKPGAEGPDNL = 2,
-    // @@protoc_insertion_point(enum_value:GetStuffType.GAPDOPFOGEN_LKIKBBFNPND)
-    GAPDOPFOGEN_LKIKBBFNPND = 3,
-    // @@protoc_insertion_point(enum_value:GetStuffType.GAPDOPFOGEN_BDBEGLAKOOG)
-    GAPDOPFOGEN_BDBEGLAKOOG = 4,
-    // @@protoc_insertion_point(enum_value:GetStuffType.GAPDOPFOGEN_HAPPBGOFALG)
-    GAPDOPFOGEN_HAPPBGOFALG = 5,
-    // @@protoc_insertion_point(enum_value:GetStuffType.GAPDOPFOGEN_JJKHCEKDOFC)
-    GAPDOPFOGEN_JJKHCEKDOFC = 6,
+    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_AADOIEIDPKC)
+    FILBJDAJPAA_AADOIEIDPKC = 0,
+    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_KLEADAAONJI)
+    FILBJDAJPAA_KLEADAAONJI = 1,
+    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_JIJFOLELOHP)
+    FILBJDAJPAA_JIJFOLELOHP = 2,
+    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_KCMIPOEAKOM)
+    FILBJDAJPAA_KCMIPOEAKOM = 3,
+    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_MFCAHCCMCHA)
+    FILBJDAJPAA_MFCAHCCMCHA = 4,
+    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_DCJDPBHNEEN)
+    FILBJDAJPAA_DCJDPBHNEEN = 5,
+    // @@protoc_insertion_point(enum_value:GetStuffType.FILBJDAJPAA_CBECLOHPGNJ)
+    FILBJDAJPAA_CBECLOHPGNJ = 6,
 }
 
 impl ::protobuf::Enum for GetStuffType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for GetStuffType {
 
     fn from_i32(value: i32) -> ::std::option::Option<GetStuffType> {
         match value {
-            0 => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_BLJEEHFCNCO),
-            1 => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_PHJHNEIOCJM),
-            2 => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_GKPGAEGPDNL),
-            3 => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_LKIKBBFNPND),
-            4 => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_BDBEGLAKOOG),
-            5 => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_HAPPBGOFALG),
-            6 => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_JJKHCEKDOFC),
+            0 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_AADOIEIDPKC),
+            1 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_KLEADAAONJI),
+            2 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_JIJFOLELOHP),
+            3 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_KCMIPOEAKOM),
+            4 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_MFCAHCCMCHA),
+            5 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_DCJDPBHNEEN),
+            6 => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_CBECLOHPGNJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GetStuffType> {
         match str {
-            "GAPDOPFOGEN_BLJEEHFCNCO" => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_BLJEEHFCNCO),
-            "GAPDOPFOGEN_PHJHNEIOCJM" => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_PHJHNEIOCJM),
-            "GAPDOPFOGEN_GKPGAEGPDNL" => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_GKPGAEGPDNL),
-            "GAPDOPFOGEN_LKIKBBFNPND" => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_LKIKBBFNPND),
-            "GAPDOPFOGEN_BDBEGLAKOOG" => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_BDBEGLAKOOG),
-            "GAPDOPFOGEN_HAPPBGOFALG" => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_HAPPBGOFALG),
-            "GAPDOPFOGEN_JJKHCEKDOFC" => ::std::option::Option::Some(GetStuffType::GAPDOPFOGEN_JJKHCEKDOFC),
+            "FILBJDAJPAA_AADOIEIDPKC" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_AADOIEIDPKC),
+            "FILBJDAJPAA_KLEADAAONJI" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_KLEADAAONJI),
+            "FILBJDAJPAA_JIJFOLELOHP" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_JIJFOLELOHP),
+            "FILBJDAJPAA_KCMIPOEAKOM" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_KCMIPOEAKOM),
+            "FILBJDAJPAA_MFCAHCCMCHA" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_MFCAHCCMCHA),
+            "FILBJDAJPAA_DCJDPBHNEEN" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_DCJDPBHNEEN),
+            "FILBJDAJPAA_CBECLOHPGNJ" => ::std::option::Option::Some(GetStuffType::FILBJDAJPAA_CBECLOHPGNJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GetStuffType] = &[
-        GetStuffType::GAPDOPFOGEN_BLJEEHFCNCO,
-        GetStuffType::GAPDOPFOGEN_PHJHNEIOCJM,
-        GetStuffType::GAPDOPFOGEN_GKPGAEGPDNL,
-        GetStuffType::GAPDOPFOGEN_LKIKBBFNPND,
-        GetStuffType::GAPDOPFOGEN_BDBEGLAKOOG,
-        GetStuffType::GAPDOPFOGEN_HAPPBGOFALG,
-        GetStuffType::GAPDOPFOGEN_JJKHCEKDOFC,
+        GetStuffType::FILBJDAJPAA_AADOIEIDPKC,
+        GetStuffType::FILBJDAJPAA_KLEADAAONJI,
+        GetStuffType::FILBJDAJPAA_JIJFOLELOHP,
+        GetStuffType::FILBJDAJPAA_KCMIPOEAKOM,
+        GetStuffType::FILBJDAJPAA_MFCAHCCMCHA,
+        GetStuffType::FILBJDAJPAA_DCJDPBHNEEN,
+        GetStuffType::FILBJDAJPAA_CBECLOHPGNJ,
     ];
 }
 
@@ -101,7 +101,7 @@ impl ::protobuf::EnumFull for GetStuffType {
 
 impl ::std::default::Default for GetStuffType {
     fn default() -> Self {
-        GetStuffType::GAPDOPFOGEN_BLJEEHFCNCO
+        GetStuffType::FILBJDAJPAA_AADOIEIDPKC
     }
 }
 
@@ -112,11 +112,11 @@ impl GetStuffType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12GetStuffType.proto*\xd9\x01\n\x0cGetStuffType\x12\x1b\n\x17GAPDOPF\
-    OGEN_BLJEEHFCNCO\x10\0\x12\x1b\n\x17GAPDOPFOGEN_PHJHNEIOCJM\x10\x01\x12\
-    \x1b\n\x17GAPDOPFOGEN_GKPGAEGPDNL\x10\x02\x12\x1b\n\x17GAPDOPFOGEN_LKIKB\
-    BFNPND\x10\x03\x12\x1b\n\x17GAPDOPFOGEN_BDBEGLAKOOG\x10\x04\x12\x1b\n\
-    \x17GAPDOPFOGEN_HAPPBGOFALG\x10\x05\x12\x1b\n\x17GAPDOPFOGEN_JJKHCEKDOFC\
+    \n\x12GetStuffType.proto*\xd9\x01\n\x0cGetStuffType\x12\x1b\n\x17FILBJDA\
+    JPAA_AADOIEIDPKC\x10\0\x12\x1b\n\x17FILBJDAJPAA_KLEADAAONJI\x10\x01\x12\
+    \x1b\n\x17FILBJDAJPAA_JIJFOLELOHP\x10\x02\x12\x1b\n\x17FILBJDAJPAA_KCMIP\
+    OEAKOM\x10\x03\x12\x1b\n\x17FILBJDAJPAA_MFCAHCCMCHA\x10\x04\x12\x1b\n\
+    \x17FILBJDAJPAA_DCJDPBHNEEN\x10\x05\x12\x1b\n\x17FILBJDAJPAA_CBECLOHPGNJ\
     \x10\x06b\x06proto3\
 ";
 

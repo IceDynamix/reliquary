@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BlackInfo {
     // message fields
-    // @@protoc_insertion_point(field:BlackInfo.begin_time)
-    pub begin_time: i64,
     // @@protoc_insertion_point(field:BlackInfo.end_time)
     pub end_time: i64,
+    // @@protoc_insertion_point(field:BlackInfo.begin_time)
+    pub begin_time: i64,
     // @@protoc_insertion_point(field:BlackInfo.limit_level)
     pub limit_level: u32,
     // @@protoc_insertion_point(field:BlackInfo.ban_type)
@@ -56,14 +56,14 @@ impl BlackInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "begin_time",
-            |m: &BlackInfo| { &m.begin_time },
-            |m: &mut BlackInfo| { &mut m.begin_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_time",
             |m: &BlackInfo| { &m.end_time },
             |m: &mut BlackInfo| { &mut m.end_time },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "begin_time",
+            |m: &BlackInfo| { &m.begin_time },
+            |m: &mut BlackInfo| { &mut m.begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "limit_level",
@@ -93,11 +93,11 @@ impl ::protobuf::Message for BlackInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.begin_time = is.read_int64()?;
-                },
                 16 => {
                     self.end_time = is.read_int64()?;
+                },
+                8 => {
+                    self.begin_time = is.read_int64()?;
                 },
                 24 => {
                     self.limit_level = is.read_uint32()?;
@@ -117,11 +117,11 @@ impl ::protobuf::Message for BlackInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(1, self.begin_time);
-        }
         if self.end_time != 0 {
             my_size += ::protobuf::rt::int64_size(2, self.end_time);
+        }
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(1, self.begin_time);
         }
         if self.limit_level != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.limit_level);
@@ -135,11 +135,11 @@ impl ::protobuf::Message for BlackInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.begin_time != 0 {
-            os.write_int64(1, self.begin_time)?;
-        }
         if self.end_time != 0 {
             os.write_int64(2, self.end_time)?;
+        }
+        if self.begin_time != 0 {
+            os.write_int64(1, self.begin_time)?;
         }
         if self.limit_level != 0 {
             os.write_uint32(3, self.limit_level)?;
@@ -164,8 +164,8 @@ impl ::protobuf::Message for BlackInfo {
     }
 
     fn clear(&mut self) {
-        self.begin_time = 0;
         self.end_time = 0;
+        self.begin_time = 0;
         self.limit_level = 0;
         self.ban_type = 0;
         self.special_fields.clear();
@@ -173,8 +173,8 @@ impl ::protobuf::Message for BlackInfo {
 
     fn default_instance() -> &'static BlackInfo {
         static instance: BlackInfo = BlackInfo {
-            begin_time: 0,
             end_time: 0,
+            begin_time: 0,
             limit_level: 0,
             ban_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for BlackInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0fBlackInfo.proto\"\x81\x01\n\tBlackInfo\x12\x1d\n\nbegin_time\x18\
-    \x01\x20\x01(\x03R\tbeginTime\x12\x19\n\x08end_time\x18\x02\x20\x01(\x03\
-    R\x07endTime\x12\x1f\n\x0blimit_level\x18\x03\x20\x01(\rR\nlimitLevel\
+    \n\x0fBlackInfo.proto\"\x81\x01\n\tBlackInfo\x12\x19\n\x08end_time\x18\
+    \x02\x20\x01(\x03R\x07endTime\x12\x1d\n\nbegin_time\x18\x01\x20\x01(\x03\
+    R\tbeginTime\x12\x1f\n\x0blimit_level\x18\x03\x20\x01(\rR\nlimitLevel\
     \x12\x19\n\x08ban_type\x18\x04\x20\x01(\rR\x07banTypeb\x06proto3\
 ";
 

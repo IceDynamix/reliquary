@@ -30,8 +30,8 @@ pub struct TarotBookFinishInteractionScRsp {
     // message fields
     // @@protoc_insertion_point(field:TarotBookFinishInteractionScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TarotBookFinishInteractionScRsp.NGEIJBMCPNA)
-    pub NGEIJBMCPNA: u32,
+    // @@protoc_insertion_point(field:TarotBookFinishInteractionScRsp.INJAGFDOFEJ)
+    pub INJAGFDOFEJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TarotBookFinishInteractionScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl TarotBookFinishInteractionScRsp {
             |m: &mut TarotBookFinishInteractionScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NGEIJBMCPNA",
-            |m: &TarotBookFinishInteractionScRsp| { &m.NGEIJBMCPNA },
-            |m: &mut TarotBookFinishInteractionScRsp| { &mut m.NGEIJBMCPNA },
+            "INJAGFDOFEJ",
+            |m: &TarotBookFinishInteractionScRsp| { &m.INJAGFDOFEJ },
+            |m: &mut TarotBookFinishInteractionScRsp| { &mut m.INJAGFDOFEJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TarotBookFinishInteractionScRsp>(
             "TarotBookFinishInteractionScRsp",
@@ -82,8 +82,8 @@ impl ::protobuf::Message for TarotBookFinishInteractionScRsp {
                 72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                112 => {
-                    self.NGEIJBMCPNA = is.read_uint32()?;
+                48 => {
+                    self.INJAGFDOFEJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,8 +100,8 @@ impl ::protobuf::Message for TarotBookFinishInteractionScRsp {
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
-        if self.NGEIJBMCPNA != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.NGEIJBMCPNA);
+        if self.INJAGFDOFEJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.INJAGFDOFEJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -112,8 +112,8 @@ impl ::protobuf::Message for TarotBookFinishInteractionScRsp {
         if self.retcode != 0 {
             os.write_uint32(9, self.retcode)?;
         }
-        if self.NGEIJBMCPNA != 0 {
-            os.write_uint32(14, self.NGEIJBMCPNA)?;
+        if self.INJAGFDOFEJ != 0 {
+            os.write_uint32(6, self.INJAGFDOFEJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for TarotBookFinishInteractionScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.NGEIJBMCPNA = 0;
+        self.INJAGFDOFEJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TarotBookFinishInteractionScRsp {
         static instance: TarotBookFinishInteractionScRsp = TarotBookFinishInteractionScRsp {
             retcode: 0,
-            NGEIJBMCPNA: 0,
+            INJAGFDOFEJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,7 +167,7 @@ impl ::protobuf::reflect::ProtobufValue for TarotBookFinishInteractionScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TarotBookFinishInteractionScRsp.proto\"]\n\x1fTarotBookFinishInteract\
     ionScRsp\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0b\
-    NGEIJBMCPNA\x18\x0e\x20\x01(\rR\x0bNGEIJBMCPNAb\x06proto3\
+    INJAGFDOFEJ\x18\x06\x20\x01(\rR\x0bINJAGFDOFEJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

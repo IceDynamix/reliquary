@@ -27,202 +27,202 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdGridFightType)
 pub enum CmdGridFightType {
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.LJKEJLGDNJB_PCPDHELPKEM)
-    LJKEJLGDNJB_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetArchiveScRsp)
-    CmdGridFightGetArchiveScRsp = 8455,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdFIMNIFPFHKD)
-    CmdFIMNIFPFHKD = 8565,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdBNOKMMGGDGP)
-    CmdBNOKMMGGDGP = 8718,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetDataScRsp)
-    CmdGridFightGetDataScRsp = 8750,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdKEKKIEFKKGO)
-    CmdKEKKIEFKKGO = 8570,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdCENLNIAOMAK)
-    CmdCENLNIAOMAK = 8583,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGJMIIBDEAAJ)
-    CmdGJMIIBDEAAJ = 8654,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdKNHGHPACBMC)
-    CmdKNHGHPACBMC = 8563,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdDNDKOIOIBIN)
-    CmdDNDKOIOIBIN = 8743,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdMNBAAGCGICN)
-    CmdMNBAAGCGICN = 8490,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.LJKEJLGDNJB_IIIDPOGALIL)
-    LJKEJLGDNJB_IIIDPOGALIL = 8682,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdPPIDKCGHLOO)
-    CmdPPIDKCGHLOO = 8614,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetArchiveCsReq)
-    CmdGridFightGetArchiveCsReq = 8427,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdKEDAOINEEOB)
-    CmdKEDAOINEEOB = 8782,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSyncVirtualItemNotify)
-    CmdGridFightSyncVirtualItemNotify = 8503,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEquipCraftCsReq)
-    CmdGridFightEquipCraftCsReq = 8632,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.LJKEJLGDNJB_HBLNGDHJHJJ)
-    LJKEJLGDNJB_HBLNGDHJHJJ = 8588,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdHLMGOIBAKPH)
-    CmdHLMGOIBAKPH = 8795,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightWeeklyExtraSeasonExpScRsp)
-    CmdGridFightWeeklyExtraSeasonExpScRsp = 8771,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdIBBGIDAGCOB)
-    CmdIBBGIDAGCOB = 8493,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdEEBMIAFNJMC)
-    CmdEEBMIAFNJMC = 8494,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdKMOFOOGIDOP)
-    CmdKMOFOOGIDOP = 8610,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRecycleRoleScRsp)
-    CmdGridFightRecycleRoleScRsp = 8642,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightPermanentTalentEnableCsReq)
-    CmdGridFightPermanentTalentEnableCsReq = 8737,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightLockShopCsReq)
-    CmdGridFightLockShopCsReq = 8775,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdJNNNJBAOCOB)
-    CmdJNNNJBAOCOB = 8661,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightQuitLeaveGamePlayCsReq)
-    CmdGridFightQuitLeaveGamePlayCsReq = 8458,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdOKOHEGIBCCG)
-    CmdOKOHEGIBCCG = 8516,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdINHDFEIOBNK)
-    CmdINHDFEIOBNK = 8540,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdEGNLCNJDNCK)
-    CmdEGNLCNJDNCK = 8567,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBuyExpCsReq)
-    CmdGridFightBuyExpCsReq = 8708,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnterBattleStageCsReq)
-    CmdGridFightEnterBattleStageCsReq = 8507,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGDMIIBNJJEJ)
-    CmdGDMIIBNJJEJ = 8739,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSummonProjectionCsReq)
-    CmdGridFightSummonProjectionCsReq = 8552,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSelectRecommendEquipCsReq)
-    CmdGridFightSelectRecommendEquipCsReq = 8407,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdCMJCEEDCIAN)
-    CmdCMJCEEDCIAN = 8658,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackScRsp)
-    CmdGridFightUpdateEquipTrackScRsp = 8669,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdatePosCsReq)
-    CmdGridFightUpdatePosCsReq = 8405,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdEPJJBNPIFLC)
-    CmdEPJJBNPIFLC = 8551,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdCEFIMADBIBH)
-    CmdCEFIMADBIBH = 8556,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdPDOCJKBJNHP)
-    CmdPDOCJKBJNHP = 8514,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdHPMGDFMEIJL)
-    CmdHPMGDFMEIJL = 8546,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.LJKEJLGDNJB_FEJJEAICENO)
-    LJKEJLGDNJB_FEJJEAICENO = 8730,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdatePosScRsp)
-    CmdGridFightUpdatePosScRsp = 8578,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEndBattleStageNotify)
-    CmdGridFightEndBattleStageNotify = 8770,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdNLIDDKHJJDO)
-    CmdNLIDDKHJJDO = 8729,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSeasonTalentResetScRsp)
-    CmdGridFightSeasonTalentResetScRsp = 8536,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdDJCCBIOKNOD)
-    CmdDJCCBIOKNOD = 8515,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdFGHHDICLCJB)
-    CmdFGHHDICLCJB = 8473,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightResumeGamePlayCsReq)
-    CmdGridFightResumeGamePlayCsReq = 8752,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdOLOGIALOJDP)
-    CmdOLOGIALOJDP = 8696,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdCCNLHLLIAPL)
-    CmdCCNLHLLIAPL = 8697,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGCOBEPOGHPL)
-    CmdGCOBEPOGHPL = 8755,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdFavourArchiveScRsp)
-    CmdFavourArchiveScRsp = 8585,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdEMIDPCIJAEN)
-    CmdEMIDPCIJAEN = 8638,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.LJKEJLGDNJB_NGENONOOENC)
-    LJKEJLGDNJB_NGENONOOENC = 8756,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEquipDressCsReq)
-    CmdGridFightEquipDressCsReq = 8758,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdHNEJHAJJIOB)
-    CmdHNEJHAJJIOB = 8469,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightHandlePendingActionScRsp)
-    CmdGridFightHandlePendingActionScRsp = 8586,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdAKHODIIOGDJ)
-    CmdAKHODIIOGDJ = 8466,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSyncUpdateResultScNotify)
-    CmdGridFightSyncUpdateResultScNotify = 8456,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdDCHOKJAFKJO)
-    CmdDCHOKJAFKJO = 8762,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackCsReq)
-    CmdGridFightUpdateEquipTrackCsReq = 8760,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUpdateEquipTrackPriorityCsReq)
-    CmdGridFightUpdateEquipTrackPriorityCsReq = 8541,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRefreshShopCsReq)
-    CmdGridFightRefreshShopCsReq = 8660,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdOMJHPHPPAJH)
-    CmdOMJHPHPPAJH = 8759,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseConsumableCsReq)
-    CmdGridFightUseConsumableCsReq = 8576,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightRecycleRoleCsReq)
-    CmdGridFightRecycleRoleCsReq = 8643,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightPermanentTalentEnableScRsp)
-    CmdGridFightPermanentTalentEnableScRsp = 8438,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.LJKEJLGDNJB_HCPPIBDHOOH)
-    LJKEJLGDNJB_HCPPIBDHOOH = 8416,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightStartGamePlayCsReq)
-    CmdGridFightStartGamePlayCsReq = 8519,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightQuitSettleCsReq)
-    CmdGridFightQuitSettleCsReq = 8480,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdCOCHFHKKEBN)
-    CmdCOCHFHKKEBN = 8796,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSettleNotify)
-    CmdGridFightSettleNotify = 8513,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGPHODKCPCHG)
-    CmdGPHODKCPCHG = 8411,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightFinishTutorialCsReq)
-    CmdGridFightFinishTutorialCsReq = 8428,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.LJKEJLGDNJB_KNBAPKKJODH)
-    LJKEJLGDNJB_KNBAPKKJODH = 8704,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightEnterBattleStageScRsp)
-    CmdGridFightEnterBattleStageScRsp = 8761,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.LJKEJLGDNJB_PBIPMGMABBN)
-    LJKEJLGDNJB_PBIPMGMABBN = 8707,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSeasonTalentEnableScRsp)
-    CmdGridFightSeasonTalentEnableScRsp = 8712,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdDJCHCHCAJPB)
-    CmdDJCHCHCAJPB = 8509,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBackToPrepareReq)
-    CmdGridFightBackToPrepareReq = 8800,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdHGOIBDBMDBG)
-    CmdHGOIBDBMDBG = 8686,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSyncKeepWinCntNotify)
-    CmdGridFightSyncKeepWinCntNotify = 8767,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSeasonTalentEnableCsReq)
-    CmdGridFightSeasonTalentEnableCsReq = 8496,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightPermanentTalentResetCsReq)
-    CmdGridFightPermanentTalentResetCsReq = 8612,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightPermanentTalentResetScRsp)
-    CmdGridFightPermanentTalentResetScRsp = 8425,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightBuyGoodsCsReq)
-    CmdGridFightBuyGoodsCsReq = 8582,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdFavourArchiveCsReq)
-    CmdFavourArchiveCsReq = 8530,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightUseForgeCsReq)
-    CmdGridFightUseForgeCsReq = 8431,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSeasonTalentResetCsReq)
-    CmdGridFightSeasonTalentResetCsReq = 8691,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightTakeWeeklyRewardCsReq)
-    CmdGridFightTakeWeeklyRewardCsReq = 8592,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdCEIIEHNDPAJ)
-    CmdCEIIEHNDPAJ = 8792,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightSeasonHandBookNotify)
-    CmdGridFightSeasonHandBookNotify = 8605,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdKMDHLENLIMF)
-    CmdKMDHLENLIMF = 8753,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightDestroyWeeklyRewardCsReq)
-    CmdGridFightDestroyWeeklyRewardCsReq = 8537,
-    // @@protoc_insertion_point(enum_value:CmdGridFightType.CmdGridFightGetDataCsReq)
-    CmdGridFightGetDataCsReq = 8439,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_NLCDGIPGFDJ)
+    IGDBCJJBMPD_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_GPPHHIPKHCB)
+    IGDBCJJBMPD_GPPHHIPKHCB = 8537,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_PGHMDGNMEHE)
+    IGDBCJJBMPD_PGHMDGNMEHE = 8483,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_BCGMNMNJCEF)
+    IGDBCJJBMPD_BCGMNMNJCEF = 8709,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_ABMLMJBNOHE)
+    IGDBCJJBMPD_ABMLMJBNOHE = 8670,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_MMAGDHPJGDH)
+    IGDBCJJBMPD_MMAGDHPJGDH = 8458,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_ENJEOMLGPHH)
+    IGDBCJJBMPD_ENJEOMLGPHH = 8588,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_GCFJNKCGANI)
+    IGDBCJJBMPD_GCFJNKCGANI = 8564,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_NAOAGKNCCPJ)
+    IGDBCJJBMPD_NAOAGKNCCPJ = 8743,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HAACKDPGNPN)
+    IGDBCJJBMPD_HAACKDPGNPN = 8444,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HBAOEGMHEBG)
+    IGDBCJJBMPD_HBAOEGMHEBG = 8516,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_OEDOOIOFOBB)
+    IGDBCJJBMPD_OEDOOIOFOBB = 8524,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_CCKMGNPLALL)
+    IGDBCJJBMPD_CCKMGNPLALL = 8756,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_FDDNFCNNDEN)
+    IGDBCJJBMPD_FDDNFCNNDEN = 8664,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_IDANBPEEJLP)
+    IGDBCJJBMPD_IDANBPEEJLP = 8436,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_PCJAIFDKJDH)
+    IGDBCJJBMPD_PCJAIFDKJDH = 8661,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_GHHEBGLMJFE)
+    IGDBCJJBMPD_GHHEBGLMJFE = 8488,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_EHKNPEHAJOD)
+    IGDBCJJBMPD_EHKNPEHAJOD = 8551,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HLHAJEGJMIA)
+    IGDBCJJBMPD_HLHAJEGJMIA = 8470,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_ALJINPFBIJL)
+    IGDBCJJBMPD_ALJINPFBIJL = 8465,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_GHBFNJHIEKB)
+    IGDBCJJBMPD_GHBFNJHIEKB = 8800,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_IBIOHPHMPBE)
+    IGDBCJJBMPD_IBIOHPHMPBE = 8539,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_KLIKPEIJPEO)
+    IGDBCJJBMPD_KLIKPEIJPEO = 8631,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HKLEDAMGPOF)
+    IGDBCJJBMPD_HKLEDAMGPOF = 8688,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HMIGDFFDHDD)
+    IGDBCJJBMPD_HMIGDFFDHDD = 8489,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_AJAHEIHGNKD)
+    IGDBCJJBMPD_AJAHEIHGNKD = 8696,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_MFGJGJDJNAE)
+    IGDBCJJBMPD_MFGJGJDJNAE = 8494,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_BIAKGGKEMDM)
+    IGDBCJJBMPD_BIAKGGKEMDM = 8705,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_EIIIJNGEJMI)
+    IGDBCJJBMPD_EIIIJNGEJMI = 8640,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_GJHJAMFNBPM)
+    IGDBCJJBMPD_GJHJAMFNBPM = 8478,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_LHFCPEAOLCP)
+    IGDBCJJBMPD_LHFCPEAOLCP = 8522,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_NGDGLPLKDMI)
+    IGDBCJJBMPD_NGDGLPLKDMI = 8752,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_MBDNJFEKFIG)
+    IGDBCJJBMPD_MBDNJFEKFIG = 8558,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HMEBGAAEKML)
+    IGDBCJJBMPD_HMEBGAAEKML = 8499,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_MNFBAKIOBDJ)
+    IGDBCJJBMPD_MNFBAKIOBDJ = 8547,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HLBMFFCEHLA)
+    IGDBCJJBMPD_HLBMFFCEHLA = 8611,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_GNCBGKJKIPK)
+    IGDBCJJBMPD_GNCBGKJKIPK = 8695,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_AADCCBOKDGG)
+    IGDBCJJBMPD_AADCCBOKDGG = 8759,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_CDJBOGGPEMH)
+    IGDBCJJBMPD_CDJBOGGPEMH = 8599,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_ODJDHGEMNHM)
+    IGDBCJJBMPD_ODJDHGEMNHM = 8717,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_KNCENPAKJKE)
+    IGDBCJJBMPD_KNCENPAKJKE = 8518,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_GEMEFEFBDIK)
+    IGDBCJJBMPD_GEMEFEFBDIK = 8744,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_PKCFJGCOBEC)
+    IGDBCJJBMPD_PKCFJGCOBEC = 8679,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_OEPPNDCHKAN)
+    IGDBCJJBMPD_OEPPNDCHKAN = 8467,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_ACABMIGMHLF)
+    IGDBCJJBMPD_ACABMIGMHLF = 8635,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_OCPCODGBAKJ)
+    IGDBCJJBMPD_OCPCODGBAKJ = 8419,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_JOJPCNMJHII)
+    IGDBCJJBMPD_JOJPCNMJHII = 8712,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_KPOHPMFKKOB)
+    IGDBCJJBMPD_KPOHPMFKKOB = 8798,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_CGBEKGGFGNB)
+    IGDBCJJBMPD_CGBEKGGFGNB = 8598,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_PDKLDECBAMJ)
+    IGDBCJJBMPD_PDKLDECBAMJ = 8571,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_JHOGEKADDMF)
+    IGDBCJJBMPD_JHOGEKADDMF = 8577,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HOIMGLAEEKN)
+    IGDBCJJBMPD_HOIMGLAEEKN = 8600,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_JGHBFGEEKID)
+    IGDBCJJBMPD_JGHBFGEEKID = 8495,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_CAKNOJMKGFB)
+    IGDBCJJBMPD_CAKNOJMKGFB = 8751,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_FHPOGIHDGAB)
+    IGDBCJJBMPD_FHPOGIHDGAB = 8534,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_KNPJELIJKAK)
+    IGDBCJJBMPD_KNPJELIJKAK = 8718,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_ILONCLKIMJM)
+    IGDBCJJBMPD_ILONCLKIMJM = 8416,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_LMAFBBCNHKG)
+    IGDBCJJBMPD_LMAFBBCNHKG = 8660,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HMADFDJFJKN)
+    IGDBCJJBMPD_HMADFDJFJKN = 8550,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_DCHKJLHFAOJ)
+    IGDBCJJBMPD_DCHKJLHFAOJ = 8506,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_LOCBFCKJMIE)
+    IGDBCJJBMPD_LOCBFCKJMIE = 8771,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HIFOFEOMKHC)
+    IGDBCJJBMPD_HIFOFEOMKHC = 8729,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_JJDJIEJALNN)
+    IGDBCJJBMPD_JJDJIEJALNN = 8719,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_ICBHFOJFMOF)
+    IGDBCJJBMPD_ICBHFOJFMOF = 8423,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_CPFIHLOLLNP)
+    IGDBCJJBMPD_CPFIHLOLLNP = 8545,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_CFPIOPPFGON)
+    IGDBCJJBMPD_CFPIOPPFGON = 8634,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_OOFHGFDNGIB)
+    IGDBCJJBMPD_OOFHGFDNGIB = 8409,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_LDDHGAMNGOB)
+    IGDBCJJBMPD_LDDHGAMNGOB = 8741,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_EGOOEIKOOKC)
+    IGDBCJJBMPD_EGOOEIKOOKC = 8703,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_PBOEEGNIMEM)
+    IGDBCJJBMPD_PBOEEGNIMEM = 8507,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HDKOPGLMNCG)
+    IGDBCJJBMPD_HDKOPGLMNCG = 8433,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_MMKAOHDNDIC)
+    IGDBCJJBMPD_MMKAOHDNDIC = 8529,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_IAHFACJKOFH)
+    IGDBCJJBMPD_IAHFACJKOFH = 8517,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_FBBFFJALLGF)
+    IGDBCJJBMPD_FBBFFJALLGF = 8504,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HPIMCHMAPGA)
+    IGDBCJJBMPD_HPIMCHMAPGA = 8632,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_FCIALBEOKGJ)
+    IGDBCJJBMPD_FCIALBEOKGJ = 8469,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_AGELGBFNAPE)
+    IGDBCJJBMPD_AGELGBFNAPE = 8484,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_LJMKMKIOBBE)
+    IGDBCJJBMPD_LJMKMKIOBBE = 8408,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_DPBJLFGBHGB)
+    IGDBCJJBMPD_DPBJLFGBHGB = 8614,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_IDAJGCJNOHP)
+    IGDBCJJBMPD_IDAJGCJNOHP = 8511,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_KFKDGLGFLNE)
+    IGDBCJJBMPD_KFKDGLGFLNE = 8582,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HFOGOFPDKEL)
+    IGDBCJJBMPD_HFOGOFPDKEL = 8736,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_PACOMBKLOJF)
+    IGDBCJJBMPD_PACOMBKLOJF = 8639,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_CDFBLAPLLFD)
+    IGDBCJJBMPD_CDFBLAPLLFD = 8616,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HBDHPMEHJOO)
+    IGDBCJJBMPD_HBDHPMEHJOO = 8451,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HJEFNDNFPJG)
+    IGDBCJJBMPD_HJEFNDNFPJG = 8734,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HDJLPHDKLNJ)
+    IGDBCJJBMPD_HDJLPHDKLNJ = 8591,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_MEKHGAHABHN)
+    IGDBCJJBMPD_MEKHGAHABHN = 8440,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_PDHIJCNALBB)
+    IGDBCJJBMPD_PDHIJCNALBB = 8613,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_GJLBBDCBIHL)
+    IGDBCJJBMPD_GJLBBDCBIHL = 8786,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_MJFPIHEMGAJ)
+    IGDBCJJBMPD_MJFPIHEMGAJ = 8559,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_INKLGCAECDF)
+    IGDBCJJBMPD_INKLGCAECDF = 8418,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_IAIFBPCOEBD)
+    IGDBCJJBMPD_IAIFBPCOEBD = 8633,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_JECFGBFCEMB)
+    IGDBCJJBMPD_JECFGBFCEMB = 8595,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_PLEBJAMEFFF)
+    IGDBCJJBMPD_PLEBJAMEFFF = 8724,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_HFGGLMJEFOA)
+    IGDBCJJBMPD_HFGGLMJEFOA = 8668,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_LLCBPEGEHKL)
+    IGDBCJJBMPD_LLCBPEGEHKL = 8520,
+    // @@protoc_insertion_point(enum_value:CmdGridFightType.IGDBCJJBMPD_MOODNCNAKJF)
+    IGDBCJJBMPD_MOODNCNAKJF = 8794,
 }
 
 impl ::protobuf::Enum for CmdGridFightType {
@@ -234,311 +234,311 @@ impl ::protobuf::Enum for CmdGridFightType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdGridFightType> {
         match value {
-            0 => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_PCPDHELPKEM),
-            8455 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveScRsp),
-            8565 => ::std::option::Option::Some(CmdGridFightType::CmdFIMNIFPFHKD),
-            8718 => ::std::option::Option::Some(CmdGridFightType::CmdBNOKMMGGDGP),
-            8750 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataScRsp),
-            8570 => ::std::option::Option::Some(CmdGridFightType::CmdKEKKIEFKKGO),
-            8583 => ::std::option::Option::Some(CmdGridFightType::CmdCENLNIAOMAK),
-            8654 => ::std::option::Option::Some(CmdGridFightType::CmdGJMIIBDEAAJ),
-            8563 => ::std::option::Option::Some(CmdGridFightType::CmdKNHGHPACBMC),
-            8743 => ::std::option::Option::Some(CmdGridFightType::CmdDNDKOIOIBIN),
-            8490 => ::std::option::Option::Some(CmdGridFightType::CmdMNBAAGCGICN),
-            8682 => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_IIIDPOGALIL),
-            8614 => ::std::option::Option::Some(CmdGridFightType::CmdPPIDKCGHLOO),
-            8427 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveCsReq),
-            8782 => ::std::option::Option::Some(CmdGridFightType::CmdKEDAOINEEOB),
-            8503 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncVirtualItemNotify),
-            8632 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipCraftCsReq),
-            8588 => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_HBLNGDHJHJJ),
-            8795 => ::std::option::Option::Some(CmdGridFightType::CmdHLMGOIBAKPH),
-            8771 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightWeeklyExtraSeasonExpScRsp),
-            8493 => ::std::option::Option::Some(CmdGridFightType::CmdIBBGIDAGCOB),
-            8494 => ::std::option::Option::Some(CmdGridFightType::CmdEEBMIAFNJMC),
-            8610 => ::std::option::Option::Some(CmdGridFightType::CmdKMOFOOGIDOP),
-            8642 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleScRsp),
-            8737 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightPermanentTalentEnableCsReq),
-            8775 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightLockShopCsReq),
-            8661 => ::std::option::Option::Some(CmdGridFightType::CmdJNNNJBAOCOB),
-            8458 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitLeaveGamePlayCsReq),
-            8516 => ::std::option::Option::Some(CmdGridFightType::CmdOKOHEGIBCCG),
-            8540 => ::std::option::Option::Some(CmdGridFightType::CmdINHDFEIOBNK),
-            8567 => ::std::option::Option::Some(CmdGridFightType::CmdEGNLCNJDNCK),
-            8708 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyExpCsReq),
-            8507 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageCsReq),
-            8739 => ::std::option::Option::Some(CmdGridFightType::CmdGDMIIBNJJEJ),
-            8552 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSummonProjectionCsReq),
-            8407 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSelectRecommendEquipCsReq),
-            8658 => ::std::option::Option::Some(CmdGridFightType::CmdCMJCEEDCIAN),
-            8669 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackScRsp),
-            8405 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosCsReq),
-            8551 => ::std::option::Option::Some(CmdGridFightType::CmdEPJJBNPIFLC),
-            8556 => ::std::option::Option::Some(CmdGridFightType::CmdCEFIMADBIBH),
-            8514 => ::std::option::Option::Some(CmdGridFightType::CmdPDOCJKBJNHP),
-            8546 => ::std::option::Option::Some(CmdGridFightType::CmdHPMGDFMEIJL),
-            8730 => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_FEJJEAICENO),
-            8578 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosScRsp),
-            8770 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEndBattleStageNotify),
-            8729 => ::std::option::Option::Some(CmdGridFightType::CmdNLIDDKHJJDO),
-            8536 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonTalentResetScRsp),
-            8515 => ::std::option::Option::Some(CmdGridFightType::CmdDJCCBIOKNOD),
-            8473 => ::std::option::Option::Some(CmdGridFightType::CmdFGHHDICLCJB),
-            8752 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResumeGamePlayCsReq),
-            8696 => ::std::option::Option::Some(CmdGridFightType::CmdOLOGIALOJDP),
-            8697 => ::std::option::Option::Some(CmdGridFightType::CmdCCNLHLLIAPL),
-            8755 => ::std::option::Option::Some(CmdGridFightType::CmdGCOBEPOGHPL),
-            8585 => ::std::option::Option::Some(CmdGridFightType::CmdFavourArchiveScRsp),
-            8638 => ::std::option::Option::Some(CmdGridFightType::CmdEMIDPCIJAEN),
-            8756 => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_NGENONOOENC),
-            8758 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipDressCsReq),
-            8469 => ::std::option::Option::Some(CmdGridFightType::CmdHNEJHAJJIOB),
-            8586 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightHandlePendingActionScRsp),
-            8466 => ::std::option::Option::Some(CmdGridFightType::CmdAKHODIIOGDJ),
-            8456 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncUpdateResultScNotify),
-            8762 => ::std::option::Option::Some(CmdGridFightType::CmdDCHOKJAFKJO),
-            8760 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackCsReq),
-            8541 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackPriorityCsReq),
-            8660 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRefreshShopCsReq),
-            8759 => ::std::option::Option::Some(CmdGridFightType::CmdOMJHPHPPAJH),
-            8576 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseConsumableCsReq),
-            8643 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleCsReq),
-            8438 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightPermanentTalentEnableScRsp),
-            8416 => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_HCPPIBDHOOH),
-            8519 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightStartGamePlayCsReq),
-            8480 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitSettleCsReq),
-            8796 => ::std::option::Option::Some(CmdGridFightType::CmdCOCHFHKKEBN),
-            8513 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSettleNotify),
-            8411 => ::std::option::Option::Some(CmdGridFightType::CmdGPHODKCPCHG),
-            8428 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightFinishTutorialCsReq),
-            8704 => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_KNBAPKKJODH),
-            8761 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageScRsp),
-            8707 => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_PBIPMGMABBN),
-            8712 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonTalentEnableScRsp),
-            8509 => ::std::option::Option::Some(CmdGridFightType::CmdDJCHCHCAJPB),
-            8800 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBackToPrepareReq),
-            8686 => ::std::option::Option::Some(CmdGridFightType::CmdHGOIBDBMDBG),
-            8767 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncKeepWinCntNotify),
-            8496 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonTalentEnableCsReq),
-            8612 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightPermanentTalentResetCsReq),
-            8425 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightPermanentTalentResetScRsp),
-            8582 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyGoodsCsReq),
-            8530 => ::std::option::Option::Some(CmdGridFightType::CmdFavourArchiveCsReq),
-            8431 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseForgeCsReq),
-            8691 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonTalentResetCsReq),
-            8592 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTakeWeeklyRewardCsReq),
-            8792 => ::std::option::Option::Some(CmdGridFightType::CmdCEIIEHNDPAJ),
-            8605 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonHandBookNotify),
-            8753 => ::std::option::Option::Some(CmdGridFightType::CmdKMDHLENLIMF),
-            8537 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDestroyWeeklyRewardCsReq),
-            8439 => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataCsReq),
+            0 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_NLCDGIPGFDJ),
+            8537 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GPPHHIPKHCB),
+            8483 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PGHMDGNMEHE),
+            8709 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_BCGMNMNJCEF),
+            8670 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ABMLMJBNOHE),
+            8458 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MMAGDHPJGDH),
+            8588 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ENJEOMLGPHH),
+            8564 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GCFJNKCGANI),
+            8743 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_NAOAGKNCCPJ),
+            8444 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HAACKDPGNPN),
+            8516 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HBAOEGMHEBG),
+            8524 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_OEDOOIOFOBB),
+            8756 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CCKMGNPLALL),
+            8664 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_FDDNFCNNDEN),
+            8436 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_IDANBPEEJLP),
+            8661 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PCJAIFDKJDH),
+            8488 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GHHEBGLMJFE),
+            8551 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_EHKNPEHAJOD),
+            8470 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HLHAJEGJMIA),
+            8465 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ALJINPFBIJL),
+            8800 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GHBFNJHIEKB),
+            8539 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_IBIOHPHMPBE),
+            8631 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_KLIKPEIJPEO),
+            8688 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HKLEDAMGPOF),
+            8489 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HMIGDFFDHDD),
+            8696 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_AJAHEIHGNKD),
+            8494 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MFGJGJDJNAE),
+            8705 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_BIAKGGKEMDM),
+            8640 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_EIIIJNGEJMI),
+            8478 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GJHJAMFNBPM),
+            8522 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LHFCPEAOLCP),
+            8752 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_NGDGLPLKDMI),
+            8558 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MBDNJFEKFIG),
+            8499 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HMEBGAAEKML),
+            8547 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MNFBAKIOBDJ),
+            8611 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HLBMFFCEHLA),
+            8695 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GNCBGKJKIPK),
+            8759 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_AADCCBOKDGG),
+            8599 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CDJBOGGPEMH),
+            8717 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ODJDHGEMNHM),
+            8518 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_KNCENPAKJKE),
+            8744 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GEMEFEFBDIK),
+            8679 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PKCFJGCOBEC),
+            8467 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_OEPPNDCHKAN),
+            8635 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ACABMIGMHLF),
+            8419 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_OCPCODGBAKJ),
+            8712 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_JOJPCNMJHII),
+            8798 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_KPOHPMFKKOB),
+            8598 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CGBEKGGFGNB),
+            8571 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PDKLDECBAMJ),
+            8577 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_JHOGEKADDMF),
+            8600 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HOIMGLAEEKN),
+            8495 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_JGHBFGEEKID),
+            8751 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CAKNOJMKGFB),
+            8534 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_FHPOGIHDGAB),
+            8718 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_KNPJELIJKAK),
+            8416 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ILONCLKIMJM),
+            8660 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LMAFBBCNHKG),
+            8550 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HMADFDJFJKN),
+            8506 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_DCHKJLHFAOJ),
+            8771 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LOCBFCKJMIE),
+            8729 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HIFOFEOMKHC),
+            8719 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_JJDJIEJALNN),
+            8423 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ICBHFOJFMOF),
+            8545 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CPFIHLOLLNP),
+            8634 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CFPIOPPFGON),
+            8409 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_OOFHGFDNGIB),
+            8741 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LDDHGAMNGOB),
+            8703 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_EGOOEIKOOKC),
+            8507 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PBOEEGNIMEM),
+            8433 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HDKOPGLMNCG),
+            8529 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MMKAOHDNDIC),
+            8517 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_IAHFACJKOFH),
+            8504 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_FBBFFJALLGF),
+            8632 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HPIMCHMAPGA),
+            8469 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_FCIALBEOKGJ),
+            8484 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_AGELGBFNAPE),
+            8408 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LJMKMKIOBBE),
+            8614 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_DPBJLFGBHGB),
+            8511 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_IDAJGCJNOHP),
+            8582 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_KFKDGLGFLNE),
+            8736 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HFOGOFPDKEL),
+            8639 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PACOMBKLOJF),
+            8616 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CDFBLAPLLFD),
+            8451 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HBDHPMEHJOO),
+            8734 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HJEFNDNFPJG),
+            8591 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HDJLPHDKLNJ),
+            8440 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MEKHGAHABHN),
+            8613 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PDHIJCNALBB),
+            8786 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GJLBBDCBIHL),
+            8559 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MJFPIHEMGAJ),
+            8418 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_INKLGCAECDF),
+            8633 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_IAIFBPCOEBD),
+            8595 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_JECFGBFCEMB),
+            8724 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PLEBJAMEFFF),
+            8668 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HFGGLMJEFOA),
+            8520 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LLCBPEGEHKL),
+            8794 => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MOODNCNAKJF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdGridFightType> {
         match str {
-            "LJKEJLGDNJB_PCPDHELPKEM" => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_PCPDHELPKEM),
-            "CmdGridFightGetArchiveScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveScRsp),
-            "CmdFIMNIFPFHKD" => ::std::option::Option::Some(CmdGridFightType::CmdFIMNIFPFHKD),
-            "CmdBNOKMMGGDGP" => ::std::option::Option::Some(CmdGridFightType::CmdBNOKMMGGDGP),
-            "CmdGridFightGetDataScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataScRsp),
-            "CmdKEKKIEFKKGO" => ::std::option::Option::Some(CmdGridFightType::CmdKEKKIEFKKGO),
-            "CmdCENLNIAOMAK" => ::std::option::Option::Some(CmdGridFightType::CmdCENLNIAOMAK),
-            "CmdGJMIIBDEAAJ" => ::std::option::Option::Some(CmdGridFightType::CmdGJMIIBDEAAJ),
-            "CmdKNHGHPACBMC" => ::std::option::Option::Some(CmdGridFightType::CmdKNHGHPACBMC),
-            "CmdDNDKOIOIBIN" => ::std::option::Option::Some(CmdGridFightType::CmdDNDKOIOIBIN),
-            "CmdMNBAAGCGICN" => ::std::option::Option::Some(CmdGridFightType::CmdMNBAAGCGICN),
-            "LJKEJLGDNJB_IIIDPOGALIL" => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_IIIDPOGALIL),
-            "CmdPPIDKCGHLOO" => ::std::option::Option::Some(CmdGridFightType::CmdPPIDKCGHLOO),
-            "CmdGridFightGetArchiveCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetArchiveCsReq),
-            "CmdKEDAOINEEOB" => ::std::option::Option::Some(CmdGridFightType::CmdKEDAOINEEOB),
-            "CmdGridFightSyncVirtualItemNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncVirtualItemNotify),
-            "CmdGridFightEquipCraftCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipCraftCsReq),
-            "LJKEJLGDNJB_HBLNGDHJHJJ" => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_HBLNGDHJHJJ),
-            "CmdHLMGOIBAKPH" => ::std::option::Option::Some(CmdGridFightType::CmdHLMGOIBAKPH),
-            "CmdGridFightWeeklyExtraSeasonExpScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightWeeklyExtraSeasonExpScRsp),
-            "CmdIBBGIDAGCOB" => ::std::option::Option::Some(CmdGridFightType::CmdIBBGIDAGCOB),
-            "CmdEEBMIAFNJMC" => ::std::option::Option::Some(CmdGridFightType::CmdEEBMIAFNJMC),
-            "CmdKMOFOOGIDOP" => ::std::option::Option::Some(CmdGridFightType::CmdKMOFOOGIDOP),
-            "CmdGridFightRecycleRoleScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleScRsp),
-            "CmdGridFightPermanentTalentEnableCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightPermanentTalentEnableCsReq),
-            "CmdGridFightLockShopCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightLockShopCsReq),
-            "CmdJNNNJBAOCOB" => ::std::option::Option::Some(CmdGridFightType::CmdJNNNJBAOCOB),
-            "CmdGridFightQuitLeaveGamePlayCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitLeaveGamePlayCsReq),
-            "CmdOKOHEGIBCCG" => ::std::option::Option::Some(CmdGridFightType::CmdOKOHEGIBCCG),
-            "CmdINHDFEIOBNK" => ::std::option::Option::Some(CmdGridFightType::CmdINHDFEIOBNK),
-            "CmdEGNLCNJDNCK" => ::std::option::Option::Some(CmdGridFightType::CmdEGNLCNJDNCK),
-            "CmdGridFightBuyExpCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyExpCsReq),
-            "CmdGridFightEnterBattleStageCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageCsReq),
-            "CmdGDMIIBNJJEJ" => ::std::option::Option::Some(CmdGridFightType::CmdGDMIIBNJJEJ),
-            "CmdGridFightSummonProjectionCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSummonProjectionCsReq),
-            "CmdGridFightSelectRecommendEquipCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSelectRecommendEquipCsReq),
-            "CmdCMJCEEDCIAN" => ::std::option::Option::Some(CmdGridFightType::CmdCMJCEEDCIAN),
-            "CmdGridFightUpdateEquipTrackScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackScRsp),
-            "CmdGridFightUpdatePosCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosCsReq),
-            "CmdEPJJBNPIFLC" => ::std::option::Option::Some(CmdGridFightType::CmdEPJJBNPIFLC),
-            "CmdCEFIMADBIBH" => ::std::option::Option::Some(CmdGridFightType::CmdCEFIMADBIBH),
-            "CmdPDOCJKBJNHP" => ::std::option::Option::Some(CmdGridFightType::CmdPDOCJKBJNHP),
-            "CmdHPMGDFMEIJL" => ::std::option::Option::Some(CmdGridFightType::CmdHPMGDFMEIJL),
-            "LJKEJLGDNJB_FEJJEAICENO" => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_FEJJEAICENO),
-            "CmdGridFightUpdatePosScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdatePosScRsp),
-            "CmdGridFightEndBattleStageNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEndBattleStageNotify),
-            "CmdNLIDDKHJJDO" => ::std::option::Option::Some(CmdGridFightType::CmdNLIDDKHJJDO),
-            "CmdGridFightSeasonTalentResetScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonTalentResetScRsp),
-            "CmdDJCCBIOKNOD" => ::std::option::Option::Some(CmdGridFightType::CmdDJCCBIOKNOD),
-            "CmdFGHHDICLCJB" => ::std::option::Option::Some(CmdGridFightType::CmdFGHHDICLCJB),
-            "CmdGridFightResumeGamePlayCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightResumeGamePlayCsReq),
-            "CmdOLOGIALOJDP" => ::std::option::Option::Some(CmdGridFightType::CmdOLOGIALOJDP),
-            "CmdCCNLHLLIAPL" => ::std::option::Option::Some(CmdGridFightType::CmdCCNLHLLIAPL),
-            "CmdGCOBEPOGHPL" => ::std::option::Option::Some(CmdGridFightType::CmdGCOBEPOGHPL),
-            "CmdFavourArchiveScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdFavourArchiveScRsp),
-            "CmdEMIDPCIJAEN" => ::std::option::Option::Some(CmdGridFightType::CmdEMIDPCIJAEN),
-            "LJKEJLGDNJB_NGENONOOENC" => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_NGENONOOENC),
-            "CmdGridFightEquipDressCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEquipDressCsReq),
-            "CmdHNEJHAJJIOB" => ::std::option::Option::Some(CmdGridFightType::CmdHNEJHAJJIOB),
-            "CmdGridFightHandlePendingActionScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightHandlePendingActionScRsp),
-            "CmdAKHODIIOGDJ" => ::std::option::Option::Some(CmdGridFightType::CmdAKHODIIOGDJ),
-            "CmdGridFightSyncUpdateResultScNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncUpdateResultScNotify),
-            "CmdDCHOKJAFKJO" => ::std::option::Option::Some(CmdGridFightType::CmdDCHOKJAFKJO),
-            "CmdGridFightUpdateEquipTrackCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackCsReq),
-            "CmdGridFightUpdateEquipTrackPriorityCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUpdateEquipTrackPriorityCsReq),
-            "CmdGridFightRefreshShopCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRefreshShopCsReq),
-            "CmdOMJHPHPPAJH" => ::std::option::Option::Some(CmdGridFightType::CmdOMJHPHPPAJH),
-            "CmdGridFightUseConsumableCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseConsumableCsReq),
-            "CmdGridFightRecycleRoleCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightRecycleRoleCsReq),
-            "CmdGridFightPermanentTalentEnableScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightPermanentTalentEnableScRsp),
-            "LJKEJLGDNJB_HCPPIBDHOOH" => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_HCPPIBDHOOH),
-            "CmdGridFightStartGamePlayCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightStartGamePlayCsReq),
-            "CmdGridFightQuitSettleCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightQuitSettleCsReq),
-            "CmdCOCHFHKKEBN" => ::std::option::Option::Some(CmdGridFightType::CmdCOCHFHKKEBN),
-            "CmdGridFightSettleNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSettleNotify),
-            "CmdGPHODKCPCHG" => ::std::option::Option::Some(CmdGridFightType::CmdGPHODKCPCHG),
-            "CmdGridFightFinishTutorialCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightFinishTutorialCsReq),
-            "LJKEJLGDNJB_KNBAPKKJODH" => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_KNBAPKKJODH),
-            "CmdGridFightEnterBattleStageScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightEnterBattleStageScRsp),
-            "LJKEJLGDNJB_PBIPMGMABBN" => ::std::option::Option::Some(CmdGridFightType::LJKEJLGDNJB_PBIPMGMABBN),
-            "CmdGridFightSeasonTalentEnableScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonTalentEnableScRsp),
-            "CmdDJCHCHCAJPB" => ::std::option::Option::Some(CmdGridFightType::CmdDJCHCHCAJPB),
-            "CmdGridFightBackToPrepareReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBackToPrepareReq),
-            "CmdHGOIBDBMDBG" => ::std::option::Option::Some(CmdGridFightType::CmdHGOIBDBMDBG),
-            "CmdGridFightSyncKeepWinCntNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSyncKeepWinCntNotify),
-            "CmdGridFightSeasonTalentEnableCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonTalentEnableCsReq),
-            "CmdGridFightPermanentTalentResetCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightPermanentTalentResetCsReq),
-            "CmdGridFightPermanentTalentResetScRsp" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightPermanentTalentResetScRsp),
-            "CmdGridFightBuyGoodsCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightBuyGoodsCsReq),
-            "CmdFavourArchiveCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdFavourArchiveCsReq),
-            "CmdGridFightUseForgeCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightUseForgeCsReq),
-            "CmdGridFightSeasonTalentResetCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonTalentResetCsReq),
-            "CmdGridFightTakeWeeklyRewardCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightTakeWeeklyRewardCsReq),
-            "CmdCEIIEHNDPAJ" => ::std::option::Option::Some(CmdGridFightType::CmdCEIIEHNDPAJ),
-            "CmdGridFightSeasonHandBookNotify" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightSeasonHandBookNotify),
-            "CmdKMDHLENLIMF" => ::std::option::Option::Some(CmdGridFightType::CmdKMDHLENLIMF),
-            "CmdGridFightDestroyWeeklyRewardCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightDestroyWeeklyRewardCsReq),
-            "CmdGridFightGetDataCsReq" => ::std::option::Option::Some(CmdGridFightType::CmdGridFightGetDataCsReq),
+            "IGDBCJJBMPD_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_NLCDGIPGFDJ),
+            "IGDBCJJBMPD_GPPHHIPKHCB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GPPHHIPKHCB),
+            "IGDBCJJBMPD_PGHMDGNMEHE" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PGHMDGNMEHE),
+            "IGDBCJJBMPD_BCGMNMNJCEF" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_BCGMNMNJCEF),
+            "IGDBCJJBMPD_ABMLMJBNOHE" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ABMLMJBNOHE),
+            "IGDBCJJBMPD_MMAGDHPJGDH" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MMAGDHPJGDH),
+            "IGDBCJJBMPD_ENJEOMLGPHH" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ENJEOMLGPHH),
+            "IGDBCJJBMPD_GCFJNKCGANI" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GCFJNKCGANI),
+            "IGDBCJJBMPD_NAOAGKNCCPJ" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_NAOAGKNCCPJ),
+            "IGDBCJJBMPD_HAACKDPGNPN" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HAACKDPGNPN),
+            "IGDBCJJBMPD_HBAOEGMHEBG" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HBAOEGMHEBG),
+            "IGDBCJJBMPD_OEDOOIOFOBB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_OEDOOIOFOBB),
+            "IGDBCJJBMPD_CCKMGNPLALL" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CCKMGNPLALL),
+            "IGDBCJJBMPD_FDDNFCNNDEN" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_FDDNFCNNDEN),
+            "IGDBCJJBMPD_IDANBPEEJLP" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_IDANBPEEJLP),
+            "IGDBCJJBMPD_PCJAIFDKJDH" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PCJAIFDKJDH),
+            "IGDBCJJBMPD_GHHEBGLMJFE" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GHHEBGLMJFE),
+            "IGDBCJJBMPD_EHKNPEHAJOD" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_EHKNPEHAJOD),
+            "IGDBCJJBMPD_HLHAJEGJMIA" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HLHAJEGJMIA),
+            "IGDBCJJBMPD_ALJINPFBIJL" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ALJINPFBIJL),
+            "IGDBCJJBMPD_GHBFNJHIEKB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GHBFNJHIEKB),
+            "IGDBCJJBMPD_IBIOHPHMPBE" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_IBIOHPHMPBE),
+            "IGDBCJJBMPD_KLIKPEIJPEO" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_KLIKPEIJPEO),
+            "IGDBCJJBMPD_HKLEDAMGPOF" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HKLEDAMGPOF),
+            "IGDBCJJBMPD_HMIGDFFDHDD" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HMIGDFFDHDD),
+            "IGDBCJJBMPD_AJAHEIHGNKD" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_AJAHEIHGNKD),
+            "IGDBCJJBMPD_MFGJGJDJNAE" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MFGJGJDJNAE),
+            "IGDBCJJBMPD_BIAKGGKEMDM" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_BIAKGGKEMDM),
+            "IGDBCJJBMPD_EIIIJNGEJMI" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_EIIIJNGEJMI),
+            "IGDBCJJBMPD_GJHJAMFNBPM" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GJHJAMFNBPM),
+            "IGDBCJJBMPD_LHFCPEAOLCP" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LHFCPEAOLCP),
+            "IGDBCJJBMPD_NGDGLPLKDMI" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_NGDGLPLKDMI),
+            "IGDBCJJBMPD_MBDNJFEKFIG" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MBDNJFEKFIG),
+            "IGDBCJJBMPD_HMEBGAAEKML" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HMEBGAAEKML),
+            "IGDBCJJBMPD_MNFBAKIOBDJ" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MNFBAKIOBDJ),
+            "IGDBCJJBMPD_HLBMFFCEHLA" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HLBMFFCEHLA),
+            "IGDBCJJBMPD_GNCBGKJKIPK" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GNCBGKJKIPK),
+            "IGDBCJJBMPD_AADCCBOKDGG" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_AADCCBOKDGG),
+            "IGDBCJJBMPD_CDJBOGGPEMH" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CDJBOGGPEMH),
+            "IGDBCJJBMPD_ODJDHGEMNHM" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ODJDHGEMNHM),
+            "IGDBCJJBMPD_KNCENPAKJKE" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_KNCENPAKJKE),
+            "IGDBCJJBMPD_GEMEFEFBDIK" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GEMEFEFBDIK),
+            "IGDBCJJBMPD_PKCFJGCOBEC" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PKCFJGCOBEC),
+            "IGDBCJJBMPD_OEPPNDCHKAN" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_OEPPNDCHKAN),
+            "IGDBCJJBMPD_ACABMIGMHLF" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ACABMIGMHLF),
+            "IGDBCJJBMPD_OCPCODGBAKJ" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_OCPCODGBAKJ),
+            "IGDBCJJBMPD_JOJPCNMJHII" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_JOJPCNMJHII),
+            "IGDBCJJBMPD_KPOHPMFKKOB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_KPOHPMFKKOB),
+            "IGDBCJJBMPD_CGBEKGGFGNB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CGBEKGGFGNB),
+            "IGDBCJJBMPD_PDKLDECBAMJ" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PDKLDECBAMJ),
+            "IGDBCJJBMPD_JHOGEKADDMF" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_JHOGEKADDMF),
+            "IGDBCJJBMPD_HOIMGLAEEKN" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HOIMGLAEEKN),
+            "IGDBCJJBMPD_JGHBFGEEKID" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_JGHBFGEEKID),
+            "IGDBCJJBMPD_CAKNOJMKGFB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CAKNOJMKGFB),
+            "IGDBCJJBMPD_FHPOGIHDGAB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_FHPOGIHDGAB),
+            "IGDBCJJBMPD_KNPJELIJKAK" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_KNPJELIJKAK),
+            "IGDBCJJBMPD_ILONCLKIMJM" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ILONCLKIMJM),
+            "IGDBCJJBMPD_LMAFBBCNHKG" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LMAFBBCNHKG),
+            "IGDBCJJBMPD_HMADFDJFJKN" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HMADFDJFJKN),
+            "IGDBCJJBMPD_DCHKJLHFAOJ" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_DCHKJLHFAOJ),
+            "IGDBCJJBMPD_LOCBFCKJMIE" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LOCBFCKJMIE),
+            "IGDBCJJBMPD_HIFOFEOMKHC" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HIFOFEOMKHC),
+            "IGDBCJJBMPD_JJDJIEJALNN" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_JJDJIEJALNN),
+            "IGDBCJJBMPD_ICBHFOJFMOF" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_ICBHFOJFMOF),
+            "IGDBCJJBMPD_CPFIHLOLLNP" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CPFIHLOLLNP),
+            "IGDBCJJBMPD_CFPIOPPFGON" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CFPIOPPFGON),
+            "IGDBCJJBMPD_OOFHGFDNGIB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_OOFHGFDNGIB),
+            "IGDBCJJBMPD_LDDHGAMNGOB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LDDHGAMNGOB),
+            "IGDBCJJBMPD_EGOOEIKOOKC" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_EGOOEIKOOKC),
+            "IGDBCJJBMPD_PBOEEGNIMEM" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PBOEEGNIMEM),
+            "IGDBCJJBMPD_HDKOPGLMNCG" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HDKOPGLMNCG),
+            "IGDBCJJBMPD_MMKAOHDNDIC" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MMKAOHDNDIC),
+            "IGDBCJJBMPD_IAHFACJKOFH" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_IAHFACJKOFH),
+            "IGDBCJJBMPD_FBBFFJALLGF" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_FBBFFJALLGF),
+            "IGDBCJJBMPD_HPIMCHMAPGA" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HPIMCHMAPGA),
+            "IGDBCJJBMPD_FCIALBEOKGJ" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_FCIALBEOKGJ),
+            "IGDBCJJBMPD_AGELGBFNAPE" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_AGELGBFNAPE),
+            "IGDBCJJBMPD_LJMKMKIOBBE" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LJMKMKIOBBE),
+            "IGDBCJJBMPD_DPBJLFGBHGB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_DPBJLFGBHGB),
+            "IGDBCJJBMPD_IDAJGCJNOHP" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_IDAJGCJNOHP),
+            "IGDBCJJBMPD_KFKDGLGFLNE" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_KFKDGLGFLNE),
+            "IGDBCJJBMPD_HFOGOFPDKEL" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HFOGOFPDKEL),
+            "IGDBCJJBMPD_PACOMBKLOJF" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PACOMBKLOJF),
+            "IGDBCJJBMPD_CDFBLAPLLFD" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_CDFBLAPLLFD),
+            "IGDBCJJBMPD_HBDHPMEHJOO" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HBDHPMEHJOO),
+            "IGDBCJJBMPD_HJEFNDNFPJG" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HJEFNDNFPJG),
+            "IGDBCJJBMPD_HDJLPHDKLNJ" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HDJLPHDKLNJ),
+            "IGDBCJJBMPD_MEKHGAHABHN" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MEKHGAHABHN),
+            "IGDBCJJBMPD_PDHIJCNALBB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PDHIJCNALBB),
+            "IGDBCJJBMPD_GJLBBDCBIHL" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_GJLBBDCBIHL),
+            "IGDBCJJBMPD_MJFPIHEMGAJ" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MJFPIHEMGAJ),
+            "IGDBCJJBMPD_INKLGCAECDF" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_INKLGCAECDF),
+            "IGDBCJJBMPD_IAIFBPCOEBD" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_IAIFBPCOEBD),
+            "IGDBCJJBMPD_JECFGBFCEMB" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_JECFGBFCEMB),
+            "IGDBCJJBMPD_PLEBJAMEFFF" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_PLEBJAMEFFF),
+            "IGDBCJJBMPD_HFGGLMJEFOA" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_HFGGLMJEFOA),
+            "IGDBCJJBMPD_LLCBPEGEHKL" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_LLCBPEGEHKL),
+            "IGDBCJJBMPD_MOODNCNAKJF" => ::std::option::Option::Some(CmdGridFightType::IGDBCJJBMPD_MOODNCNAKJF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdGridFightType] = &[
-        CmdGridFightType::LJKEJLGDNJB_PCPDHELPKEM,
-        CmdGridFightType::CmdGridFightGetArchiveScRsp,
-        CmdGridFightType::CmdFIMNIFPFHKD,
-        CmdGridFightType::CmdBNOKMMGGDGP,
-        CmdGridFightType::CmdGridFightGetDataScRsp,
-        CmdGridFightType::CmdKEKKIEFKKGO,
-        CmdGridFightType::CmdCENLNIAOMAK,
-        CmdGridFightType::CmdGJMIIBDEAAJ,
-        CmdGridFightType::CmdKNHGHPACBMC,
-        CmdGridFightType::CmdDNDKOIOIBIN,
-        CmdGridFightType::CmdMNBAAGCGICN,
-        CmdGridFightType::LJKEJLGDNJB_IIIDPOGALIL,
-        CmdGridFightType::CmdPPIDKCGHLOO,
-        CmdGridFightType::CmdGridFightGetArchiveCsReq,
-        CmdGridFightType::CmdKEDAOINEEOB,
-        CmdGridFightType::CmdGridFightSyncVirtualItemNotify,
-        CmdGridFightType::CmdGridFightEquipCraftCsReq,
-        CmdGridFightType::LJKEJLGDNJB_HBLNGDHJHJJ,
-        CmdGridFightType::CmdHLMGOIBAKPH,
-        CmdGridFightType::CmdGridFightWeeklyExtraSeasonExpScRsp,
-        CmdGridFightType::CmdIBBGIDAGCOB,
-        CmdGridFightType::CmdEEBMIAFNJMC,
-        CmdGridFightType::CmdKMOFOOGIDOP,
-        CmdGridFightType::CmdGridFightRecycleRoleScRsp,
-        CmdGridFightType::CmdGridFightPermanentTalentEnableCsReq,
-        CmdGridFightType::CmdGridFightLockShopCsReq,
-        CmdGridFightType::CmdJNNNJBAOCOB,
-        CmdGridFightType::CmdGridFightQuitLeaveGamePlayCsReq,
-        CmdGridFightType::CmdOKOHEGIBCCG,
-        CmdGridFightType::CmdINHDFEIOBNK,
-        CmdGridFightType::CmdEGNLCNJDNCK,
-        CmdGridFightType::CmdGridFightBuyExpCsReq,
-        CmdGridFightType::CmdGridFightEnterBattleStageCsReq,
-        CmdGridFightType::CmdGDMIIBNJJEJ,
-        CmdGridFightType::CmdGridFightSummonProjectionCsReq,
-        CmdGridFightType::CmdGridFightSelectRecommendEquipCsReq,
-        CmdGridFightType::CmdCMJCEEDCIAN,
-        CmdGridFightType::CmdGridFightUpdateEquipTrackScRsp,
-        CmdGridFightType::CmdGridFightUpdatePosCsReq,
-        CmdGridFightType::CmdEPJJBNPIFLC,
-        CmdGridFightType::CmdCEFIMADBIBH,
-        CmdGridFightType::CmdPDOCJKBJNHP,
-        CmdGridFightType::CmdHPMGDFMEIJL,
-        CmdGridFightType::LJKEJLGDNJB_FEJJEAICENO,
-        CmdGridFightType::CmdGridFightUpdatePosScRsp,
-        CmdGridFightType::CmdGridFightEndBattleStageNotify,
-        CmdGridFightType::CmdNLIDDKHJJDO,
-        CmdGridFightType::CmdGridFightSeasonTalentResetScRsp,
-        CmdGridFightType::CmdDJCCBIOKNOD,
-        CmdGridFightType::CmdFGHHDICLCJB,
-        CmdGridFightType::CmdGridFightResumeGamePlayCsReq,
-        CmdGridFightType::CmdOLOGIALOJDP,
-        CmdGridFightType::CmdCCNLHLLIAPL,
-        CmdGridFightType::CmdGCOBEPOGHPL,
-        CmdGridFightType::CmdFavourArchiveScRsp,
-        CmdGridFightType::CmdEMIDPCIJAEN,
-        CmdGridFightType::LJKEJLGDNJB_NGENONOOENC,
-        CmdGridFightType::CmdGridFightEquipDressCsReq,
-        CmdGridFightType::CmdHNEJHAJJIOB,
-        CmdGridFightType::CmdGridFightHandlePendingActionScRsp,
-        CmdGridFightType::CmdAKHODIIOGDJ,
-        CmdGridFightType::CmdGridFightSyncUpdateResultScNotify,
-        CmdGridFightType::CmdDCHOKJAFKJO,
-        CmdGridFightType::CmdGridFightUpdateEquipTrackCsReq,
-        CmdGridFightType::CmdGridFightUpdateEquipTrackPriorityCsReq,
-        CmdGridFightType::CmdGridFightRefreshShopCsReq,
-        CmdGridFightType::CmdOMJHPHPPAJH,
-        CmdGridFightType::CmdGridFightUseConsumableCsReq,
-        CmdGridFightType::CmdGridFightRecycleRoleCsReq,
-        CmdGridFightType::CmdGridFightPermanentTalentEnableScRsp,
-        CmdGridFightType::LJKEJLGDNJB_HCPPIBDHOOH,
-        CmdGridFightType::CmdGridFightStartGamePlayCsReq,
-        CmdGridFightType::CmdGridFightQuitSettleCsReq,
-        CmdGridFightType::CmdCOCHFHKKEBN,
-        CmdGridFightType::CmdGridFightSettleNotify,
-        CmdGridFightType::CmdGPHODKCPCHG,
-        CmdGridFightType::CmdGridFightFinishTutorialCsReq,
-        CmdGridFightType::LJKEJLGDNJB_KNBAPKKJODH,
-        CmdGridFightType::CmdGridFightEnterBattleStageScRsp,
-        CmdGridFightType::LJKEJLGDNJB_PBIPMGMABBN,
-        CmdGridFightType::CmdGridFightSeasonTalentEnableScRsp,
-        CmdGridFightType::CmdDJCHCHCAJPB,
-        CmdGridFightType::CmdGridFightBackToPrepareReq,
-        CmdGridFightType::CmdHGOIBDBMDBG,
-        CmdGridFightType::CmdGridFightSyncKeepWinCntNotify,
-        CmdGridFightType::CmdGridFightSeasonTalentEnableCsReq,
-        CmdGridFightType::CmdGridFightPermanentTalentResetCsReq,
-        CmdGridFightType::CmdGridFightPermanentTalentResetScRsp,
-        CmdGridFightType::CmdGridFightBuyGoodsCsReq,
-        CmdGridFightType::CmdFavourArchiveCsReq,
-        CmdGridFightType::CmdGridFightUseForgeCsReq,
-        CmdGridFightType::CmdGridFightSeasonTalentResetCsReq,
-        CmdGridFightType::CmdGridFightTakeWeeklyRewardCsReq,
-        CmdGridFightType::CmdCEIIEHNDPAJ,
-        CmdGridFightType::CmdGridFightSeasonHandBookNotify,
-        CmdGridFightType::CmdKMDHLENLIMF,
-        CmdGridFightType::CmdGridFightDestroyWeeklyRewardCsReq,
-        CmdGridFightType::CmdGridFightGetDataCsReq,
+        CmdGridFightType::IGDBCJJBMPD_NLCDGIPGFDJ,
+        CmdGridFightType::IGDBCJJBMPD_GPPHHIPKHCB,
+        CmdGridFightType::IGDBCJJBMPD_PGHMDGNMEHE,
+        CmdGridFightType::IGDBCJJBMPD_BCGMNMNJCEF,
+        CmdGridFightType::IGDBCJJBMPD_ABMLMJBNOHE,
+        CmdGridFightType::IGDBCJJBMPD_MMAGDHPJGDH,
+        CmdGridFightType::IGDBCJJBMPD_ENJEOMLGPHH,
+        CmdGridFightType::IGDBCJJBMPD_GCFJNKCGANI,
+        CmdGridFightType::IGDBCJJBMPD_NAOAGKNCCPJ,
+        CmdGridFightType::IGDBCJJBMPD_HAACKDPGNPN,
+        CmdGridFightType::IGDBCJJBMPD_HBAOEGMHEBG,
+        CmdGridFightType::IGDBCJJBMPD_OEDOOIOFOBB,
+        CmdGridFightType::IGDBCJJBMPD_CCKMGNPLALL,
+        CmdGridFightType::IGDBCJJBMPD_FDDNFCNNDEN,
+        CmdGridFightType::IGDBCJJBMPD_IDANBPEEJLP,
+        CmdGridFightType::IGDBCJJBMPD_PCJAIFDKJDH,
+        CmdGridFightType::IGDBCJJBMPD_GHHEBGLMJFE,
+        CmdGridFightType::IGDBCJJBMPD_EHKNPEHAJOD,
+        CmdGridFightType::IGDBCJJBMPD_HLHAJEGJMIA,
+        CmdGridFightType::IGDBCJJBMPD_ALJINPFBIJL,
+        CmdGridFightType::IGDBCJJBMPD_GHBFNJHIEKB,
+        CmdGridFightType::IGDBCJJBMPD_IBIOHPHMPBE,
+        CmdGridFightType::IGDBCJJBMPD_KLIKPEIJPEO,
+        CmdGridFightType::IGDBCJJBMPD_HKLEDAMGPOF,
+        CmdGridFightType::IGDBCJJBMPD_HMIGDFFDHDD,
+        CmdGridFightType::IGDBCJJBMPD_AJAHEIHGNKD,
+        CmdGridFightType::IGDBCJJBMPD_MFGJGJDJNAE,
+        CmdGridFightType::IGDBCJJBMPD_BIAKGGKEMDM,
+        CmdGridFightType::IGDBCJJBMPD_EIIIJNGEJMI,
+        CmdGridFightType::IGDBCJJBMPD_GJHJAMFNBPM,
+        CmdGridFightType::IGDBCJJBMPD_LHFCPEAOLCP,
+        CmdGridFightType::IGDBCJJBMPD_NGDGLPLKDMI,
+        CmdGridFightType::IGDBCJJBMPD_MBDNJFEKFIG,
+        CmdGridFightType::IGDBCJJBMPD_HMEBGAAEKML,
+        CmdGridFightType::IGDBCJJBMPD_MNFBAKIOBDJ,
+        CmdGridFightType::IGDBCJJBMPD_HLBMFFCEHLA,
+        CmdGridFightType::IGDBCJJBMPD_GNCBGKJKIPK,
+        CmdGridFightType::IGDBCJJBMPD_AADCCBOKDGG,
+        CmdGridFightType::IGDBCJJBMPD_CDJBOGGPEMH,
+        CmdGridFightType::IGDBCJJBMPD_ODJDHGEMNHM,
+        CmdGridFightType::IGDBCJJBMPD_KNCENPAKJKE,
+        CmdGridFightType::IGDBCJJBMPD_GEMEFEFBDIK,
+        CmdGridFightType::IGDBCJJBMPD_PKCFJGCOBEC,
+        CmdGridFightType::IGDBCJJBMPD_OEPPNDCHKAN,
+        CmdGridFightType::IGDBCJJBMPD_ACABMIGMHLF,
+        CmdGridFightType::IGDBCJJBMPD_OCPCODGBAKJ,
+        CmdGridFightType::IGDBCJJBMPD_JOJPCNMJHII,
+        CmdGridFightType::IGDBCJJBMPD_KPOHPMFKKOB,
+        CmdGridFightType::IGDBCJJBMPD_CGBEKGGFGNB,
+        CmdGridFightType::IGDBCJJBMPD_PDKLDECBAMJ,
+        CmdGridFightType::IGDBCJJBMPD_JHOGEKADDMF,
+        CmdGridFightType::IGDBCJJBMPD_HOIMGLAEEKN,
+        CmdGridFightType::IGDBCJJBMPD_JGHBFGEEKID,
+        CmdGridFightType::IGDBCJJBMPD_CAKNOJMKGFB,
+        CmdGridFightType::IGDBCJJBMPD_FHPOGIHDGAB,
+        CmdGridFightType::IGDBCJJBMPD_KNPJELIJKAK,
+        CmdGridFightType::IGDBCJJBMPD_ILONCLKIMJM,
+        CmdGridFightType::IGDBCJJBMPD_LMAFBBCNHKG,
+        CmdGridFightType::IGDBCJJBMPD_HMADFDJFJKN,
+        CmdGridFightType::IGDBCJJBMPD_DCHKJLHFAOJ,
+        CmdGridFightType::IGDBCJJBMPD_LOCBFCKJMIE,
+        CmdGridFightType::IGDBCJJBMPD_HIFOFEOMKHC,
+        CmdGridFightType::IGDBCJJBMPD_JJDJIEJALNN,
+        CmdGridFightType::IGDBCJJBMPD_ICBHFOJFMOF,
+        CmdGridFightType::IGDBCJJBMPD_CPFIHLOLLNP,
+        CmdGridFightType::IGDBCJJBMPD_CFPIOPPFGON,
+        CmdGridFightType::IGDBCJJBMPD_OOFHGFDNGIB,
+        CmdGridFightType::IGDBCJJBMPD_LDDHGAMNGOB,
+        CmdGridFightType::IGDBCJJBMPD_EGOOEIKOOKC,
+        CmdGridFightType::IGDBCJJBMPD_PBOEEGNIMEM,
+        CmdGridFightType::IGDBCJJBMPD_HDKOPGLMNCG,
+        CmdGridFightType::IGDBCJJBMPD_MMKAOHDNDIC,
+        CmdGridFightType::IGDBCJJBMPD_IAHFACJKOFH,
+        CmdGridFightType::IGDBCJJBMPD_FBBFFJALLGF,
+        CmdGridFightType::IGDBCJJBMPD_HPIMCHMAPGA,
+        CmdGridFightType::IGDBCJJBMPD_FCIALBEOKGJ,
+        CmdGridFightType::IGDBCJJBMPD_AGELGBFNAPE,
+        CmdGridFightType::IGDBCJJBMPD_LJMKMKIOBBE,
+        CmdGridFightType::IGDBCJJBMPD_DPBJLFGBHGB,
+        CmdGridFightType::IGDBCJJBMPD_IDAJGCJNOHP,
+        CmdGridFightType::IGDBCJJBMPD_KFKDGLGFLNE,
+        CmdGridFightType::IGDBCJJBMPD_HFOGOFPDKEL,
+        CmdGridFightType::IGDBCJJBMPD_PACOMBKLOJF,
+        CmdGridFightType::IGDBCJJBMPD_CDFBLAPLLFD,
+        CmdGridFightType::IGDBCJJBMPD_HBDHPMEHJOO,
+        CmdGridFightType::IGDBCJJBMPD_HJEFNDNFPJG,
+        CmdGridFightType::IGDBCJJBMPD_HDJLPHDKLNJ,
+        CmdGridFightType::IGDBCJJBMPD_MEKHGAHABHN,
+        CmdGridFightType::IGDBCJJBMPD_PDHIJCNALBB,
+        CmdGridFightType::IGDBCJJBMPD_GJLBBDCBIHL,
+        CmdGridFightType::IGDBCJJBMPD_MJFPIHEMGAJ,
+        CmdGridFightType::IGDBCJJBMPD_INKLGCAECDF,
+        CmdGridFightType::IGDBCJJBMPD_IAIFBPCOEBD,
+        CmdGridFightType::IGDBCJJBMPD_JECFGBFCEMB,
+        CmdGridFightType::IGDBCJJBMPD_PLEBJAMEFFF,
+        CmdGridFightType::IGDBCJJBMPD_HFGGLMJEFOA,
+        CmdGridFightType::IGDBCJJBMPD_LLCBPEGEHKL,
+        CmdGridFightType::IGDBCJJBMPD_MOODNCNAKJF,
     ];
 }
 
@@ -550,104 +550,104 @@ impl ::protobuf::EnumFull for CmdGridFightType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdGridFightType::LJKEJLGDNJB_PCPDHELPKEM => 0,
-            CmdGridFightType::CmdGridFightGetArchiveScRsp => 1,
-            CmdGridFightType::CmdFIMNIFPFHKD => 2,
-            CmdGridFightType::CmdBNOKMMGGDGP => 3,
-            CmdGridFightType::CmdGridFightGetDataScRsp => 4,
-            CmdGridFightType::CmdKEKKIEFKKGO => 5,
-            CmdGridFightType::CmdCENLNIAOMAK => 6,
-            CmdGridFightType::CmdGJMIIBDEAAJ => 7,
-            CmdGridFightType::CmdKNHGHPACBMC => 8,
-            CmdGridFightType::CmdDNDKOIOIBIN => 9,
-            CmdGridFightType::CmdMNBAAGCGICN => 10,
-            CmdGridFightType::LJKEJLGDNJB_IIIDPOGALIL => 11,
-            CmdGridFightType::CmdPPIDKCGHLOO => 12,
-            CmdGridFightType::CmdGridFightGetArchiveCsReq => 13,
-            CmdGridFightType::CmdKEDAOINEEOB => 14,
-            CmdGridFightType::CmdGridFightSyncVirtualItemNotify => 15,
-            CmdGridFightType::CmdGridFightEquipCraftCsReq => 16,
-            CmdGridFightType::LJKEJLGDNJB_HBLNGDHJHJJ => 17,
-            CmdGridFightType::CmdHLMGOIBAKPH => 18,
-            CmdGridFightType::CmdGridFightWeeklyExtraSeasonExpScRsp => 19,
-            CmdGridFightType::CmdIBBGIDAGCOB => 20,
-            CmdGridFightType::CmdEEBMIAFNJMC => 21,
-            CmdGridFightType::CmdKMOFOOGIDOP => 22,
-            CmdGridFightType::CmdGridFightRecycleRoleScRsp => 23,
-            CmdGridFightType::CmdGridFightPermanentTalentEnableCsReq => 24,
-            CmdGridFightType::CmdGridFightLockShopCsReq => 25,
-            CmdGridFightType::CmdJNNNJBAOCOB => 26,
-            CmdGridFightType::CmdGridFightQuitLeaveGamePlayCsReq => 27,
-            CmdGridFightType::CmdOKOHEGIBCCG => 28,
-            CmdGridFightType::CmdINHDFEIOBNK => 29,
-            CmdGridFightType::CmdEGNLCNJDNCK => 30,
-            CmdGridFightType::CmdGridFightBuyExpCsReq => 31,
-            CmdGridFightType::CmdGridFightEnterBattleStageCsReq => 32,
-            CmdGridFightType::CmdGDMIIBNJJEJ => 33,
-            CmdGridFightType::CmdGridFightSummonProjectionCsReq => 34,
-            CmdGridFightType::CmdGridFightSelectRecommendEquipCsReq => 35,
-            CmdGridFightType::CmdCMJCEEDCIAN => 36,
-            CmdGridFightType::CmdGridFightUpdateEquipTrackScRsp => 37,
-            CmdGridFightType::CmdGridFightUpdatePosCsReq => 38,
-            CmdGridFightType::CmdEPJJBNPIFLC => 39,
-            CmdGridFightType::CmdCEFIMADBIBH => 40,
-            CmdGridFightType::CmdPDOCJKBJNHP => 41,
-            CmdGridFightType::CmdHPMGDFMEIJL => 42,
-            CmdGridFightType::LJKEJLGDNJB_FEJJEAICENO => 43,
-            CmdGridFightType::CmdGridFightUpdatePosScRsp => 44,
-            CmdGridFightType::CmdGridFightEndBattleStageNotify => 45,
-            CmdGridFightType::CmdNLIDDKHJJDO => 46,
-            CmdGridFightType::CmdGridFightSeasonTalentResetScRsp => 47,
-            CmdGridFightType::CmdDJCCBIOKNOD => 48,
-            CmdGridFightType::CmdFGHHDICLCJB => 49,
-            CmdGridFightType::CmdGridFightResumeGamePlayCsReq => 50,
-            CmdGridFightType::CmdOLOGIALOJDP => 51,
-            CmdGridFightType::CmdCCNLHLLIAPL => 52,
-            CmdGridFightType::CmdGCOBEPOGHPL => 53,
-            CmdGridFightType::CmdFavourArchiveScRsp => 54,
-            CmdGridFightType::CmdEMIDPCIJAEN => 55,
-            CmdGridFightType::LJKEJLGDNJB_NGENONOOENC => 56,
-            CmdGridFightType::CmdGridFightEquipDressCsReq => 57,
-            CmdGridFightType::CmdHNEJHAJJIOB => 58,
-            CmdGridFightType::CmdGridFightHandlePendingActionScRsp => 59,
-            CmdGridFightType::CmdAKHODIIOGDJ => 60,
-            CmdGridFightType::CmdGridFightSyncUpdateResultScNotify => 61,
-            CmdGridFightType::CmdDCHOKJAFKJO => 62,
-            CmdGridFightType::CmdGridFightUpdateEquipTrackCsReq => 63,
-            CmdGridFightType::CmdGridFightUpdateEquipTrackPriorityCsReq => 64,
-            CmdGridFightType::CmdGridFightRefreshShopCsReq => 65,
-            CmdGridFightType::CmdOMJHPHPPAJH => 66,
-            CmdGridFightType::CmdGridFightUseConsumableCsReq => 67,
-            CmdGridFightType::CmdGridFightRecycleRoleCsReq => 68,
-            CmdGridFightType::CmdGridFightPermanentTalentEnableScRsp => 69,
-            CmdGridFightType::LJKEJLGDNJB_HCPPIBDHOOH => 70,
-            CmdGridFightType::CmdGridFightStartGamePlayCsReq => 71,
-            CmdGridFightType::CmdGridFightQuitSettleCsReq => 72,
-            CmdGridFightType::CmdCOCHFHKKEBN => 73,
-            CmdGridFightType::CmdGridFightSettleNotify => 74,
-            CmdGridFightType::CmdGPHODKCPCHG => 75,
-            CmdGridFightType::CmdGridFightFinishTutorialCsReq => 76,
-            CmdGridFightType::LJKEJLGDNJB_KNBAPKKJODH => 77,
-            CmdGridFightType::CmdGridFightEnterBattleStageScRsp => 78,
-            CmdGridFightType::LJKEJLGDNJB_PBIPMGMABBN => 79,
-            CmdGridFightType::CmdGridFightSeasonTalentEnableScRsp => 80,
-            CmdGridFightType::CmdDJCHCHCAJPB => 81,
-            CmdGridFightType::CmdGridFightBackToPrepareReq => 82,
-            CmdGridFightType::CmdHGOIBDBMDBG => 83,
-            CmdGridFightType::CmdGridFightSyncKeepWinCntNotify => 84,
-            CmdGridFightType::CmdGridFightSeasonTalentEnableCsReq => 85,
-            CmdGridFightType::CmdGridFightPermanentTalentResetCsReq => 86,
-            CmdGridFightType::CmdGridFightPermanentTalentResetScRsp => 87,
-            CmdGridFightType::CmdGridFightBuyGoodsCsReq => 88,
-            CmdGridFightType::CmdFavourArchiveCsReq => 89,
-            CmdGridFightType::CmdGridFightUseForgeCsReq => 90,
-            CmdGridFightType::CmdGridFightSeasonTalentResetCsReq => 91,
-            CmdGridFightType::CmdGridFightTakeWeeklyRewardCsReq => 92,
-            CmdGridFightType::CmdCEIIEHNDPAJ => 93,
-            CmdGridFightType::CmdGridFightSeasonHandBookNotify => 94,
-            CmdGridFightType::CmdKMDHLENLIMF => 95,
-            CmdGridFightType::CmdGridFightDestroyWeeklyRewardCsReq => 96,
-            CmdGridFightType::CmdGridFightGetDataCsReq => 97,
+            CmdGridFightType::IGDBCJJBMPD_NLCDGIPGFDJ => 0,
+            CmdGridFightType::IGDBCJJBMPD_GPPHHIPKHCB => 1,
+            CmdGridFightType::IGDBCJJBMPD_PGHMDGNMEHE => 2,
+            CmdGridFightType::IGDBCJJBMPD_BCGMNMNJCEF => 3,
+            CmdGridFightType::IGDBCJJBMPD_ABMLMJBNOHE => 4,
+            CmdGridFightType::IGDBCJJBMPD_MMAGDHPJGDH => 5,
+            CmdGridFightType::IGDBCJJBMPD_ENJEOMLGPHH => 6,
+            CmdGridFightType::IGDBCJJBMPD_GCFJNKCGANI => 7,
+            CmdGridFightType::IGDBCJJBMPD_NAOAGKNCCPJ => 8,
+            CmdGridFightType::IGDBCJJBMPD_HAACKDPGNPN => 9,
+            CmdGridFightType::IGDBCJJBMPD_HBAOEGMHEBG => 10,
+            CmdGridFightType::IGDBCJJBMPD_OEDOOIOFOBB => 11,
+            CmdGridFightType::IGDBCJJBMPD_CCKMGNPLALL => 12,
+            CmdGridFightType::IGDBCJJBMPD_FDDNFCNNDEN => 13,
+            CmdGridFightType::IGDBCJJBMPD_IDANBPEEJLP => 14,
+            CmdGridFightType::IGDBCJJBMPD_PCJAIFDKJDH => 15,
+            CmdGridFightType::IGDBCJJBMPD_GHHEBGLMJFE => 16,
+            CmdGridFightType::IGDBCJJBMPD_EHKNPEHAJOD => 17,
+            CmdGridFightType::IGDBCJJBMPD_HLHAJEGJMIA => 18,
+            CmdGridFightType::IGDBCJJBMPD_ALJINPFBIJL => 19,
+            CmdGridFightType::IGDBCJJBMPD_GHBFNJHIEKB => 20,
+            CmdGridFightType::IGDBCJJBMPD_IBIOHPHMPBE => 21,
+            CmdGridFightType::IGDBCJJBMPD_KLIKPEIJPEO => 22,
+            CmdGridFightType::IGDBCJJBMPD_HKLEDAMGPOF => 23,
+            CmdGridFightType::IGDBCJJBMPD_HMIGDFFDHDD => 24,
+            CmdGridFightType::IGDBCJJBMPD_AJAHEIHGNKD => 25,
+            CmdGridFightType::IGDBCJJBMPD_MFGJGJDJNAE => 26,
+            CmdGridFightType::IGDBCJJBMPD_BIAKGGKEMDM => 27,
+            CmdGridFightType::IGDBCJJBMPD_EIIIJNGEJMI => 28,
+            CmdGridFightType::IGDBCJJBMPD_GJHJAMFNBPM => 29,
+            CmdGridFightType::IGDBCJJBMPD_LHFCPEAOLCP => 30,
+            CmdGridFightType::IGDBCJJBMPD_NGDGLPLKDMI => 31,
+            CmdGridFightType::IGDBCJJBMPD_MBDNJFEKFIG => 32,
+            CmdGridFightType::IGDBCJJBMPD_HMEBGAAEKML => 33,
+            CmdGridFightType::IGDBCJJBMPD_MNFBAKIOBDJ => 34,
+            CmdGridFightType::IGDBCJJBMPD_HLBMFFCEHLA => 35,
+            CmdGridFightType::IGDBCJJBMPD_GNCBGKJKIPK => 36,
+            CmdGridFightType::IGDBCJJBMPD_AADCCBOKDGG => 37,
+            CmdGridFightType::IGDBCJJBMPD_CDJBOGGPEMH => 38,
+            CmdGridFightType::IGDBCJJBMPD_ODJDHGEMNHM => 39,
+            CmdGridFightType::IGDBCJJBMPD_KNCENPAKJKE => 40,
+            CmdGridFightType::IGDBCJJBMPD_GEMEFEFBDIK => 41,
+            CmdGridFightType::IGDBCJJBMPD_PKCFJGCOBEC => 42,
+            CmdGridFightType::IGDBCJJBMPD_OEPPNDCHKAN => 43,
+            CmdGridFightType::IGDBCJJBMPD_ACABMIGMHLF => 44,
+            CmdGridFightType::IGDBCJJBMPD_OCPCODGBAKJ => 45,
+            CmdGridFightType::IGDBCJJBMPD_JOJPCNMJHII => 46,
+            CmdGridFightType::IGDBCJJBMPD_KPOHPMFKKOB => 47,
+            CmdGridFightType::IGDBCJJBMPD_CGBEKGGFGNB => 48,
+            CmdGridFightType::IGDBCJJBMPD_PDKLDECBAMJ => 49,
+            CmdGridFightType::IGDBCJJBMPD_JHOGEKADDMF => 50,
+            CmdGridFightType::IGDBCJJBMPD_HOIMGLAEEKN => 51,
+            CmdGridFightType::IGDBCJJBMPD_JGHBFGEEKID => 52,
+            CmdGridFightType::IGDBCJJBMPD_CAKNOJMKGFB => 53,
+            CmdGridFightType::IGDBCJJBMPD_FHPOGIHDGAB => 54,
+            CmdGridFightType::IGDBCJJBMPD_KNPJELIJKAK => 55,
+            CmdGridFightType::IGDBCJJBMPD_ILONCLKIMJM => 56,
+            CmdGridFightType::IGDBCJJBMPD_LMAFBBCNHKG => 57,
+            CmdGridFightType::IGDBCJJBMPD_HMADFDJFJKN => 58,
+            CmdGridFightType::IGDBCJJBMPD_DCHKJLHFAOJ => 59,
+            CmdGridFightType::IGDBCJJBMPD_LOCBFCKJMIE => 60,
+            CmdGridFightType::IGDBCJJBMPD_HIFOFEOMKHC => 61,
+            CmdGridFightType::IGDBCJJBMPD_JJDJIEJALNN => 62,
+            CmdGridFightType::IGDBCJJBMPD_ICBHFOJFMOF => 63,
+            CmdGridFightType::IGDBCJJBMPD_CPFIHLOLLNP => 64,
+            CmdGridFightType::IGDBCJJBMPD_CFPIOPPFGON => 65,
+            CmdGridFightType::IGDBCJJBMPD_OOFHGFDNGIB => 66,
+            CmdGridFightType::IGDBCJJBMPD_LDDHGAMNGOB => 67,
+            CmdGridFightType::IGDBCJJBMPD_EGOOEIKOOKC => 68,
+            CmdGridFightType::IGDBCJJBMPD_PBOEEGNIMEM => 69,
+            CmdGridFightType::IGDBCJJBMPD_HDKOPGLMNCG => 70,
+            CmdGridFightType::IGDBCJJBMPD_MMKAOHDNDIC => 71,
+            CmdGridFightType::IGDBCJJBMPD_IAHFACJKOFH => 72,
+            CmdGridFightType::IGDBCJJBMPD_FBBFFJALLGF => 73,
+            CmdGridFightType::IGDBCJJBMPD_HPIMCHMAPGA => 74,
+            CmdGridFightType::IGDBCJJBMPD_FCIALBEOKGJ => 75,
+            CmdGridFightType::IGDBCJJBMPD_AGELGBFNAPE => 76,
+            CmdGridFightType::IGDBCJJBMPD_LJMKMKIOBBE => 77,
+            CmdGridFightType::IGDBCJJBMPD_DPBJLFGBHGB => 78,
+            CmdGridFightType::IGDBCJJBMPD_IDAJGCJNOHP => 79,
+            CmdGridFightType::IGDBCJJBMPD_KFKDGLGFLNE => 80,
+            CmdGridFightType::IGDBCJJBMPD_HFOGOFPDKEL => 81,
+            CmdGridFightType::IGDBCJJBMPD_PACOMBKLOJF => 82,
+            CmdGridFightType::IGDBCJJBMPD_CDFBLAPLLFD => 83,
+            CmdGridFightType::IGDBCJJBMPD_HBDHPMEHJOO => 84,
+            CmdGridFightType::IGDBCJJBMPD_HJEFNDNFPJG => 85,
+            CmdGridFightType::IGDBCJJBMPD_HDJLPHDKLNJ => 86,
+            CmdGridFightType::IGDBCJJBMPD_MEKHGAHABHN => 87,
+            CmdGridFightType::IGDBCJJBMPD_PDHIJCNALBB => 88,
+            CmdGridFightType::IGDBCJJBMPD_GJLBBDCBIHL => 89,
+            CmdGridFightType::IGDBCJJBMPD_MJFPIHEMGAJ => 90,
+            CmdGridFightType::IGDBCJJBMPD_INKLGCAECDF => 91,
+            CmdGridFightType::IGDBCJJBMPD_IAIFBPCOEBD => 92,
+            CmdGridFightType::IGDBCJJBMPD_JECFGBFCEMB => 93,
+            CmdGridFightType::IGDBCJJBMPD_PLEBJAMEFFF => 94,
+            CmdGridFightType::IGDBCJJBMPD_HFGGLMJEFOA => 95,
+            CmdGridFightType::IGDBCJJBMPD_LLCBPEGEHKL => 96,
+            CmdGridFightType::IGDBCJJBMPD_MOODNCNAKJF => 97,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -655,7 +655,7 @@ impl ::protobuf::EnumFull for CmdGridFightType {
 
 impl ::std::default::Default for CmdGridFightType {
     fn default() -> Self {
-        CmdGridFightType::LJKEJLGDNJB_PCPDHELPKEM
+        CmdGridFightType::IGDBCJJBMPD_NLCDGIPGFDJ
     }
 }
 
@@ -666,68 +666,71 @@ impl CmdGridFightType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdGridFightType.proto*\x96\x17\n\x10CmdGridFightType\x12\x1b\n\
-    \x17LJKEJLGDNJB_PCPDHELPKEM\x10\0\x12\x20\n\x1bCmdGridFightGetArchiveScR\
-    sp\x10\x87B\x12\x13\n\x0eCmdFIMNIFPFHKD\x10\xf5B\x12\x13\n\x0eCmdBNOKMMG\
-    GDGP\x10\x8eD\x12\x1d\n\x18CmdGridFightGetDataScRsp\x10\xaeD\x12\x13\n\
-    \x0eCmdKEKKIEFKKGO\x10\xfaB\x12\x13\n\x0eCmdCENLNIAOMAK\x10\x87C\x12\x13\
-    \n\x0eCmdGJMIIBDEAAJ\x10\xceC\x12\x13\n\x0eCmdKNHGHPACBMC\x10\xf3B\x12\
-    \x13\n\x0eCmdDNDKOIOIBIN\x10\xa7D\x12\x13\n\x0eCmdMNBAAGCGICN\x10\xaaB\
-    \x12\x1c\n\x17LJKEJLGDNJB_IIIDPOGALIL\x10\xeaC\x12\x13\n\x0eCmdPPIDKCGHL\
-    OO\x10\xa6C\x12\x20\n\x1bCmdGridFightGetArchiveCsReq\x10\xebA\x12\x13\n\
-    \x0eCmdKEDAOINEEOB\x10\xceD\x12&\n!CmdGridFightSyncVirtualItemNotify\x10\
-    \xb7B\x12\x20\n\x1bCmdGridFightEquipCraftCsReq\x10\xb8C\x12\x1c\n\x17LJK\
-    EJLGDNJB_HBLNGDHJHJJ\x10\x8cC\x12\x13\n\x0eCmdHLMGOIBAKPH\x10\xdbD\x12*\
-    \n%CmdGridFightWeeklyExtraSeasonExpScRsp\x10\xc3D\x12\x13\n\x0eCmdIBBGID\
-    AGCOB\x10\xadB\x12\x13\n\x0eCmdEEBMIAFNJMC\x10\xaeB\x12\x13\n\x0eCmdKMOF\
-    OOGIDOP\x10\xa2C\x12!\n\x1cCmdGridFightRecycleRoleScRsp\x10\xc2C\x12+\n&\
-    CmdGridFightPermanentTalentEnableCsReq\x10\xa1D\x12\x1e\n\x19CmdGridFigh\
-    tLockShopCsReq\x10\xc7D\x12\x13\n\x0eCmdJNNNJBAOCOB\x10\xd5C\x12'\n\"Cmd\
-    GridFightQuitLeaveGamePlayCsReq\x10\x8aB\x12\x13\n\x0eCmdOKOHEGIBCCG\x10\
-    \xc4B\x12\x13\n\x0eCmdINHDFEIOBNK\x10\xdcB\x12\x13\n\x0eCmdEGNLCNJDNCK\
-    \x10\xf7B\x12\x1c\n\x17CmdGridFightBuyExpCsReq\x10\x84D\x12&\n!CmdGridFi\
-    ghtEnterBattleStageCsReq\x10\xbbB\x12\x13\n\x0eCmdGDMIIBNJJEJ\x10\xa3D\
-    \x12&\n!CmdGridFightSummonProjectionCsReq\x10\xe8B\x12*\n%CmdGridFightSe\
-    lectRecommendEquipCsReq\x10\xd7A\x12\x13\n\x0eCmdCMJCEEDCIAN\x10\xd2C\
-    \x12&\n!CmdGridFightUpdateEquipTrackScRsp\x10\xddC\x12\x1f\n\x1aCmdGridF\
-    ightUpdatePosCsReq\x10\xd5A\x12\x13\n\x0eCmdEPJJBNPIFLC\x10\xe7B\x12\x13\
-    \n\x0eCmdCEFIMADBIBH\x10\xecB\x12\x13\n\x0eCmdPDOCJKBJNHP\x10\xc2B\x12\
-    \x13\n\x0eCmdHPMGDFMEIJL\x10\xe2B\x12\x1c\n\x17LJKEJLGDNJB_FEJJEAICENO\
-    \x10\x9aD\x12\x1f\n\x1aCmdGridFightUpdatePosScRsp\x10\x82C\x12%\n\x20Cmd\
-    GridFightEndBattleStageNotify\x10\xc2D\x12\x13\n\x0eCmdNLIDDKHJJDO\x10\
-    \x99D\x12'\n\"CmdGridFightSeasonTalentResetScRsp\x10\xd8B\x12\x13\n\x0eC\
-    mdDJCCBIOKNOD\x10\xc3B\x12\x13\n\x0eCmdFGHHDICLCJB\x10\x99B\x12$\n\x1fCm\
-    dGridFightResumeGamePlayCsReq\x10\xb0D\x12\x13\n\x0eCmdOLOGIALOJDP\x10\
-    \xf8C\x12\x13\n\x0eCmdCCNLHLLIAPL\x10\xf9C\x12\x13\n\x0eCmdGCOBEPOGHPL\
-    \x10\xb3D\x12\x1a\n\x15CmdFavourArchiveScRsp\x10\x89C\x12\x13\n\x0eCmdEM\
-    IDPCIJAEN\x10\xbeC\x12\x1c\n\x17LJKEJLGDNJB_NGENONOOENC\x10\xb4D\x12\x20\
-    \n\x1bCmdGridFightEquipDressCsReq\x10\xb6D\x12\x13\n\x0eCmdHNEJHAJJIOB\
-    \x10\x95B\x12)\n$CmdGridFightHandlePendingActionScRsp\x10\x8aC\x12\x13\n\
-    \x0eCmdAKHODIIOGDJ\x10\x92B\x12)\n$CmdGridFightSyncUpdateResultScNotify\
-    \x10\x88B\x12\x13\n\x0eCmdDCHOKJAFKJO\x10\xbaD\x12&\n!CmdGridFightUpdate\
-    EquipTrackCsReq\x10\xb8D\x12.\n)CmdGridFightUpdateEquipTrackPriorityCsRe\
-    q\x10\xddB\x12!\n\x1cCmdGridFightRefreshShopCsReq\x10\xd4C\x12\x13\n\x0e\
-    CmdOMJHPHPPAJH\x10\xb7D\x12#\n\x1eCmdGridFightUseConsumableCsReq\x10\x80\
-    C\x12!\n\x1cCmdGridFightRecycleRoleCsReq\x10\xc3C\x12+\n&CmdGridFightPer\
-    manentTalentEnableScRsp\x10\xf6A\x12\x1c\n\x17LJKEJLGDNJB_HCPPIBDHOOH\
-    \x10\xe0A\x12#\n\x1eCmdGridFightStartGamePlayCsReq\x10\xc7B\x12\x20\n\
-    \x1bCmdGridFightQuitSettleCsReq\x10\xa0B\x12\x13\n\x0eCmdCOCHFHKKEBN\x10\
-    \xdcD\x12\x1d\n\x18CmdGridFightSettleNotify\x10\xc1B\x12\x13\n\x0eCmdGPH\
-    ODKCPCHG\x10\xdbA\x12$\n\x1fCmdGridFightFinishTutorialCsReq\x10\xecA\x12\
-    \x1c\n\x17LJKEJLGDNJB_KNBAPKKJODH\x10\x80D\x12&\n!CmdGridFightEnterBattl\
-    eStageScRsp\x10\xb9D\x12\x1c\n\x17LJKEJLGDNJB_PBIPMGMABBN\x10\x83D\x12(\
-    \n#CmdGridFightSeasonTalentEnableScRsp\x10\x88D\x12\x13\n\x0eCmdDJCHCHCA\
-    JPB\x10\xbdB\x12!\n\x1cCmdGridFightBackToPrepareReq\x10\xe0D\x12\x13\n\
-    \x0eCmdHGOIBDBMDBG\x10\xeeC\x12%\n\x20CmdGridFightSyncKeepWinCntNotify\
-    \x10\xbfD\x12(\n#CmdGridFightSeasonTalentEnableCsReq\x10\xb0B\x12*\n%Cmd\
-    GridFightPermanentTalentResetCsReq\x10\xa4C\x12*\n%CmdGridFightPermanent\
-    TalentResetScRsp\x10\xe9A\x12\x1e\n\x19CmdGridFightBuyGoodsCsReq\x10\x86\
-    C\x12\x1a\n\x15CmdFavourArchiveCsReq\x10\xd2B\x12\x1e\n\x19CmdGridFightU\
-    seForgeCsReq\x10\xefA\x12'\n\"CmdGridFightSeasonTalentResetCsReq\x10\xf3\
-    C\x12&\n!CmdGridFightTakeWeeklyRewardCsReq\x10\x90C\x12\x13\n\x0eCmdCEII\
-    EHNDPAJ\x10\xd8D\x12%\n\x20CmdGridFightSeasonHandBookNotify\x10\x9dC\x12\
-    \x13\n\x0eCmdKMDHLENLIMF\x10\xb1D\x12)\n$CmdGridFightDestroyWeeklyReward\
-    CsReq\x10\xd9B\x12\x1d\n\x18CmdGridFightGetDataCsReq\x10\xf7Ab\x06proto3\
+    \n\x16CmdGridFightType.proto*\x8d\x17\n\x10CmdGridFightType\x12\x1b\n\
+    \x17IGDBCJJBMPD_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17IGDBCJJBMPD_GPPHHIPKHCB\
+    \x10\xd9B\x12\x1c\n\x17IGDBCJJBMPD_PGHMDGNMEHE\x10\xa3B\x12\x1c\n\x17IGD\
+    BCJJBMPD_BCGMNMNJCEF\x10\x85D\x12\x1c\n\x17IGDBCJJBMPD_ABMLMJBNOHE\x10\
+    \xdeC\x12\x1c\n\x17IGDBCJJBMPD_MMAGDHPJGDH\x10\x8aB\x12\x1c\n\x17IGDBCJJ\
+    BMPD_ENJEOMLGPHH\x10\x8cC\x12\x1c\n\x17IGDBCJJBMPD_GCFJNKCGANI\x10\xf4B\
+    \x12\x1c\n\x17IGDBCJJBMPD_NAOAGKNCCPJ\x10\xa7D\x12\x1c\n\x17IGDBCJJBMPD_\
+    HAACKDPGNPN\x10\xfcA\x12\x1c\n\x17IGDBCJJBMPD_HBAOEGMHEBG\x10\xc4B\x12\
+    \x1c\n\x17IGDBCJJBMPD_OEDOOIOFOBB\x10\xccB\x12\x1c\n\x17IGDBCJJBMPD_CCKM\
+    GNPLALL\x10\xb4D\x12\x1c\n\x17IGDBCJJBMPD_FDDNFCNNDEN\x10\xd8C\x12\x1c\n\
+    \x17IGDBCJJBMPD_IDANBPEEJLP\x10\xf4A\x12\x1c\n\x17IGDBCJJBMPD_PCJAIFDKJD\
+    H\x10\xd5C\x12\x1c\n\x17IGDBCJJBMPD_GHHEBGLMJFE\x10\xa8B\x12\x1c\n\x17IG\
+    DBCJJBMPD_EHKNPEHAJOD\x10\xe7B\x12\x1c\n\x17IGDBCJJBMPD_HLHAJEGJMIA\x10\
+    \x96B\x12\x1c\n\x17IGDBCJJBMPD_ALJINPFBIJL\x10\x91B\x12\x1c\n\x17IGDBCJJ\
+    BMPD_GHBFNJHIEKB\x10\xe0D\x12\x1c\n\x17IGDBCJJBMPD_IBIOHPHMPBE\x10\xdbB\
+    \x12\x1c\n\x17IGDBCJJBMPD_KLIKPEIJPEO\x10\xb7C\x12\x1c\n\x17IGDBCJJBMPD_\
+    HKLEDAMGPOF\x10\xf0C\x12\x1c\n\x17IGDBCJJBMPD_HMIGDFFDHDD\x10\xa9B\x12\
+    \x1c\n\x17IGDBCJJBMPD_AJAHEIHGNKD\x10\xf8C\x12\x1c\n\x17IGDBCJJBMPD_MFGJ\
+    GJDJNAE\x10\xaeB\x12\x1c\n\x17IGDBCJJBMPD_BIAKGGKEMDM\x10\x81D\x12\x1c\n\
+    \x17IGDBCJJBMPD_EIIIJNGEJMI\x10\xc0C\x12\x1c\n\x17IGDBCJJBMPD_GJHJAMFNBP\
+    M\x10\x9eB\x12\x1c\n\x17IGDBCJJBMPD_LHFCPEAOLCP\x10\xcaB\x12\x1c\n\x17IG\
+    DBCJJBMPD_NGDGLPLKDMI\x10\xb0D\x12\x1c\n\x17IGDBCJJBMPD_MBDNJFEKFIG\x10\
+    \xeeB\x12\x1c\n\x17IGDBCJJBMPD_HMEBGAAEKML\x10\xb3B\x12\x1c\n\x17IGDBCJJ\
+    BMPD_MNFBAKIOBDJ\x10\xe3B\x12\x1c\n\x17IGDBCJJBMPD_HLBMFFCEHLA\x10\xa3C\
+    \x12\x1c\n\x17IGDBCJJBMPD_GNCBGKJKIPK\x10\xf7C\x12\x1c\n\x17IGDBCJJBMPD_\
+    AADCCBOKDGG\x10\xb7D\x12\x1c\n\x17IGDBCJJBMPD_CDJBOGGPEMH\x10\x97C\x12\
+    \x1c\n\x17IGDBCJJBMPD_ODJDHGEMNHM\x10\x8dD\x12\x1c\n\x17IGDBCJJBMPD_KNCE\
+    NPAKJKE\x10\xc6B\x12\x1c\n\x17IGDBCJJBMPD_GEMEFEFBDIK\x10\xa8D\x12\x1c\n\
+    \x17IGDBCJJBMPD_PKCFJGCOBEC\x10\xe7C\x12\x1c\n\x17IGDBCJJBMPD_OEPPNDCHKA\
+    N\x10\x93B\x12\x1c\n\x17IGDBCJJBMPD_ACABMIGMHLF\x10\xbbC\x12\x1c\n\x17IG\
+    DBCJJBMPD_OCPCODGBAKJ\x10\xe3A\x12\x1c\n\x17IGDBCJJBMPD_JOJPCNMJHII\x10\
+    \x88D\x12\x1c\n\x17IGDBCJJBMPD_KPOHPMFKKOB\x10\xdeD\x12\x1c\n\x17IGDBCJJ\
+    BMPD_CGBEKGGFGNB\x10\x96C\x12\x1c\n\x17IGDBCJJBMPD_PDKLDECBAMJ\x10\xfbB\
+    \x12\x1c\n\x17IGDBCJJBMPD_JHOGEKADDMF\x10\x81C\x12\x1c\n\x17IGDBCJJBMPD_\
+    HOIMGLAEEKN\x10\x98C\x12\x1c\n\x17IGDBCJJBMPD_JGHBFGEEKID\x10\xafB\x12\
+    \x1c\n\x17IGDBCJJBMPD_CAKNOJMKGFB\x10\xafD\x12\x1c\n\x17IGDBCJJBMPD_FHPO\
+    GIHDGAB\x10\xd6B\x12\x1c\n\x17IGDBCJJBMPD_KNPJELIJKAK\x10\x8eD\x12\x1c\n\
+    \x17IGDBCJJBMPD_ILONCLKIMJM\x10\xe0A\x12\x1c\n\x17IGDBCJJBMPD_LMAFBBCNHK\
+    G\x10\xd4C\x12\x1c\n\x17IGDBCJJBMPD_HMADFDJFJKN\x10\xe6B\x12\x1c\n\x17IG\
+    DBCJJBMPD_DCHKJLHFAOJ\x10\xbaB\x12\x1c\n\x17IGDBCJJBMPD_LOCBFCKJMIE\x10\
+    \xc3D\x12\x1c\n\x17IGDBCJJBMPD_HIFOFEOMKHC\x10\x99D\x12\x1c\n\x17IGDBCJJ\
+    BMPD_JJDJIEJALNN\x10\x8fD\x12\x1c\n\x17IGDBCJJBMPD_ICBHFOJFMOF\x10\xe7A\
+    \x12\x1c\n\x17IGDBCJJBMPD_CPFIHLOLLNP\x10\xe1B\x12\x1c\n\x17IGDBCJJBMPD_\
+    CFPIOPPFGON\x10\xbaC\x12\x1c\n\x17IGDBCJJBMPD_OOFHGFDNGIB\x10\xd9A\x12\
+    \x1c\n\x17IGDBCJJBMPD_LDDHGAMNGOB\x10\xa5D\x12\x1c\n\x17IGDBCJJBMPD_EGOO\
+    EIKOOKC\x10\xffC\x12\x1c\n\x17IGDBCJJBMPD_PBOEEGNIMEM\x10\xbbB\x12\x1c\n\
+    \x17IGDBCJJBMPD_HDKOPGLMNCG\x10\xf1A\x12\x1c\n\x17IGDBCJJBMPD_MMKAOHDNDI\
+    C\x10\xd1B\x12\x1c\n\x17IGDBCJJBMPD_IAHFACJKOFH\x10\xc5B\x12\x1c\n\x17IG\
+    DBCJJBMPD_FBBFFJALLGF\x10\xb8B\x12\x1c\n\x17IGDBCJJBMPD_HPIMCHMAPGA\x10\
+    \xb8C\x12\x1c\n\x17IGDBCJJBMPD_FCIALBEOKGJ\x10\x95B\x12\x1c\n\x17IGDBCJJ\
+    BMPD_AGELGBFNAPE\x10\xa4B\x12\x1c\n\x17IGDBCJJBMPD_LJMKMKIOBBE\x10\xd8A\
+    \x12\x1c\n\x17IGDBCJJBMPD_DPBJLFGBHGB\x10\xa6C\x12\x1c\n\x17IGDBCJJBMPD_\
+    IDAJGCJNOHP\x10\xbfB\x12\x1c\n\x17IGDBCJJBMPD_KFKDGLGFLNE\x10\x86C\x12\
+    \x1c\n\x17IGDBCJJBMPD_HFOGOFPDKEL\x10\xa0D\x12\x1c\n\x17IGDBCJJBMPD_PACO\
+    MBKLOJF\x10\xbfC\x12\x1c\n\x17IGDBCJJBMPD_CDFBLAPLLFD\x10\xa8C\x12\x1c\n\
+    \x17IGDBCJJBMPD_HBDHPMEHJOO\x10\x83B\x12\x1c\n\x17IGDBCJJBMPD_HJEFNDNFPJ\
+    G\x10\x9eD\x12\x1c\n\x17IGDBCJJBMPD_HDJLPHDKLNJ\x10\x8fC\x12\x1c\n\x17IG\
+    DBCJJBMPD_MEKHGAHABHN\x10\xf8A\x12\x1c\n\x17IGDBCJJBMPD_PDHIJCNALBB\x10\
+    \xa5C\x12\x1c\n\x17IGDBCJJBMPD_GJLBBDCBIHL\x10\xd2D\x12\x1c\n\x17IGDBCJJ\
+    BMPD_MJFPIHEMGAJ\x10\xefB\x12\x1c\n\x17IGDBCJJBMPD_INKLGCAECDF\x10\xe2A\
+    \x12\x1c\n\x17IGDBCJJBMPD_IAIFBPCOEBD\x10\xb9C\x12\x1c\n\x17IGDBCJJBMPD_\
+    JECFGBFCEMB\x10\x93C\x12\x1c\n\x17IGDBCJJBMPD_PLEBJAMEFFF\x10\x94D\x12\
+    \x1c\n\x17IGDBCJJBMPD_HFGGLMJEFOA\x10\xdcC\x12\x1c\n\x17IGDBCJJBMPD_LLCB\
+    PEGEHKL\x10\xc8B\x12\x1c\n\x17IGDBCJJBMPD_MOODNCNAKJF\x10\xdaDb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

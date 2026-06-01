@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateTrackMainMissionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateTrackMainMissionCsReq.NILLMKMKODP)
-    pub NILLMKMKODP: ::protobuf::EnumOrUnknown<super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId>,
+    // @@protoc_insertion_point(field:UpdateTrackMainMissionCsReq.POPNCNIBNMJ)
+    pub POPNCNIBNMJ: ::protobuf::EnumOrUnknown<super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId>,
     // @@protoc_insertion_point(field:UpdateTrackMainMissionCsReq.track_mission_id)
     pub track_mission_id: u32,
-    // @@protoc_insertion_point(field:UpdateTrackMainMissionCsReq.GNPDGLGBIMM)
-    pub GNPDGLGBIMM: u32,
+    // @@protoc_insertion_point(field:UpdateTrackMainMissionCsReq.JFONDEBDIOO)
+    pub JFONDEBDIOO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateTrackMainMissionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl UpdateTrackMainMissionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NILLMKMKODP",
-            |m: &UpdateTrackMainMissionCsReq| { &m.NILLMKMKODP },
-            |m: &mut UpdateTrackMainMissionCsReq| { &mut m.NILLMKMKODP },
+            "POPNCNIBNMJ",
+            |m: &UpdateTrackMainMissionCsReq| { &m.POPNCNIBNMJ },
+            |m: &mut UpdateTrackMainMissionCsReq| { &mut m.POPNCNIBNMJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "track_mission_id",
@@ -64,9 +64,9 @@ impl UpdateTrackMainMissionCsReq {
             |m: &mut UpdateTrackMainMissionCsReq| { &mut m.track_mission_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GNPDGLGBIMM",
-            |m: &UpdateTrackMainMissionCsReq| { &m.GNPDGLGBIMM },
-            |m: &mut UpdateTrackMainMissionCsReq| { &mut m.GNPDGLGBIMM },
+            "JFONDEBDIOO",
+            |m: &UpdateTrackMainMissionCsReq| { &m.JFONDEBDIOO },
+            |m: &mut UpdateTrackMainMissionCsReq| { &mut m.JFONDEBDIOO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateTrackMainMissionCsReq>(
             "UpdateTrackMainMissionCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for UpdateTrackMainMissionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.NILLMKMKODP = is.read_enum_or_unknown()?;
-                },
-                24 => {
-                    self.track_mission_id = is.read_uint32()?;
+                88 => {
+                    self.POPNCNIBNMJ = is.read_enum_or_unknown()?;
                 },
                 32 => {
-                    self.GNPDGLGBIMM = is.read_uint32()?;
+                    self.track_mission_id = is.read_uint32()?;
+                },
+                56 => {
+                    self.JFONDEBDIOO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for UpdateTrackMainMissionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NILLMKMKODP != ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::DJEOGLFDJIF_DPDFIINEAFF) {
-            my_size += ::protobuf::rt::int32_size(1, self.NILLMKMKODP.value());
+        if self.POPNCNIBNMJ != ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::APHBPMBMLOM_DJAOKMDALMI) {
+            my_size += ::protobuf::rt::int32_size(11, self.POPNCNIBNMJ.value());
         }
         if self.track_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.track_mission_id);
+            my_size += ::protobuf::rt::uint32_size(4, self.track_mission_id);
         }
-        if self.GNPDGLGBIMM != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.GNPDGLGBIMM);
+        if self.JFONDEBDIOO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JFONDEBDIOO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for UpdateTrackMainMissionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NILLMKMKODP != ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::DJEOGLFDJIF_DPDFIINEAFF) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.NILLMKMKODP))?;
+        if self.POPNCNIBNMJ != ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::APHBPMBMLOM_DJAOKMDALMI) {
+            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.POPNCNIBNMJ))?;
         }
         if self.track_mission_id != 0 {
-            os.write_uint32(3, self.track_mission_id)?;
+            os.write_uint32(4, self.track_mission_id)?;
         }
-        if self.GNPDGLGBIMM != 0 {
-            os.write_uint32(4, self.GNPDGLGBIMM)?;
+        if self.JFONDEBDIOO != 0 {
+            os.write_uint32(7, self.JFONDEBDIOO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for UpdateTrackMainMissionCsReq {
     }
 
     fn clear(&mut self) {
-        self.NILLMKMKODP = ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::DJEOGLFDJIF_DPDFIINEAFF);
+        self.POPNCNIBNMJ = ::protobuf::EnumOrUnknown::new(super::TrackMainMissionUpdateReasonId::TrackMainMissionUpdateReasonId::APHBPMBMLOM_DJAOKMDALMI);
         self.track_mission_id = 0;
-        self.GNPDGLGBIMM = 0;
+        self.JFONDEBDIOO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateTrackMainMissionCsReq {
         static instance: UpdateTrackMainMissionCsReq = UpdateTrackMainMissionCsReq {
-            NILLMKMKODP: ::protobuf::EnumOrUnknown::from_i32(0),
+            POPNCNIBNMJ: ::protobuf::EnumOrUnknown::from_i32(0),
             track_mission_id: 0,
-            GNPDGLGBIMM: 0,
+            JFONDEBDIOO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for UpdateTrackMainMissionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!UpdateTrackMainMissionCsReq.proto\x1a$TrackMainMissionUpdateReasonId.\
-    proto\"\xac\x01\n\x1bUpdateTrackMainMissionCsReq\x12A\n\x0bNILLMKMKODP\
-    \x18\x01\x20\x01(\x0e2\x1f.TrackMainMissionUpdateReasonIdR\x0bNILLMKMKOD\
-    P\x12(\n\x10track_mission_id\x18\x03\x20\x01(\rR\x0etrackMissionId\x12\
-    \x20\n\x0bGNPDGLGBIMM\x18\x04\x20\x01(\rR\x0bGNPDGLGBIMMb\x06proto3\
+    proto\"\xac\x01\n\x1bUpdateTrackMainMissionCsReq\x12A\n\x0bPOPNCNIBNMJ\
+    \x18\x0b\x20\x01(\x0e2\x1f.TrackMainMissionUpdateReasonIdR\x0bPOPNCNIBNM\
+    J\x12(\n\x10track_mission_id\x18\x04\x20\x01(\rR\x0etrackMissionId\x12\
+    \x20\n\x0bJFONDEBDIOO\x18\x07\x20\x01(\rR\x0bJFONDEBDIOOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

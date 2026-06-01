@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BattleModuleType)
 pub enum BattleModuleType {
-    // @@protoc_insertion_point(enum_value:BattleModuleType.INHPDHLOHHO_HAJDAKFIENM)
-    INHPDHLOHHO_HAJDAKFIENM = 0,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.INHPDHLOHHO_KKHLMKIPMFK)
-    INHPDHLOHHO_KKHLMKIPMFK = 1,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.INHPDHLOHHO_LHGODLABEKH)
-    INHPDHLOHHO_LHGODLABEKH = 2,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.INHPDHLOHHO_LJOPAPAKHIP)
-    INHPDHLOHHO_LJOPAPAKHIP = 3,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.INHPDHLOHHO_FNJHIOCJHLO)
-    INHPDHLOHHO_FNJHIOCJHLO = 4,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.INHPDHLOHHO_AENLPPAEANK)
-    INHPDHLOHHO_AENLPPAEANK = 5,
-    // @@protoc_insertion_point(enum_value:BattleModuleType.INHPDHLOHHO_EDLOEBEJFHN)
-    INHPDHLOHHO_EDLOEBEJFHN = 6,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_OHDOHHFAKMC)
+    JJMFOABLOCE_OHDOHHFAKMC = 0,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_FDKBEDIMCBJ)
+    JJMFOABLOCE_FDKBEDIMCBJ = 1,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_BPCBHKHDGMH)
+    JJMFOABLOCE_BPCBHKHDGMH = 2,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_GEAIEKPGNGD)
+    JJMFOABLOCE_GEAIEKPGNGD = 3,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_EKJFDFEANNH)
+    JJMFOABLOCE_EKJFDFEANNH = 4,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_BIOGDPANCLB)
+    JJMFOABLOCE_BIOGDPANCLB = 5,
+    // @@protoc_insertion_point(enum_value:BattleModuleType.JJMFOABLOCE_DPALIHINPFN)
+    JJMFOABLOCE_DPALIHINPFN = 6,
 }
 
 impl ::protobuf::Enum for BattleModuleType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for BattleModuleType {
 
     fn from_i32(value: i32) -> ::std::option::Option<BattleModuleType> {
         match value {
-            0 => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_HAJDAKFIENM),
-            1 => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_KKHLMKIPMFK),
-            2 => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_LHGODLABEKH),
-            3 => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_LJOPAPAKHIP),
-            4 => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_FNJHIOCJHLO),
-            5 => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_AENLPPAEANK),
-            6 => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_EDLOEBEJFHN),
+            0 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC),
+            1 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_FDKBEDIMCBJ),
+            2 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_BPCBHKHDGMH),
+            3 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_GEAIEKPGNGD),
+            4 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_EKJFDFEANNH),
+            5 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_BIOGDPANCLB),
+            6 => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_DPALIHINPFN),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BattleModuleType> {
         match str {
-            "INHPDHLOHHO_HAJDAKFIENM" => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_HAJDAKFIENM),
-            "INHPDHLOHHO_KKHLMKIPMFK" => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_KKHLMKIPMFK),
-            "INHPDHLOHHO_LHGODLABEKH" => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_LHGODLABEKH),
-            "INHPDHLOHHO_LJOPAPAKHIP" => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_LJOPAPAKHIP),
-            "INHPDHLOHHO_FNJHIOCJHLO" => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_FNJHIOCJHLO),
-            "INHPDHLOHHO_AENLPPAEANK" => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_AENLPPAEANK),
-            "INHPDHLOHHO_EDLOEBEJFHN" => ::std::option::Option::Some(BattleModuleType::INHPDHLOHHO_EDLOEBEJFHN),
+            "JJMFOABLOCE_OHDOHHFAKMC" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC),
+            "JJMFOABLOCE_FDKBEDIMCBJ" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_FDKBEDIMCBJ),
+            "JJMFOABLOCE_BPCBHKHDGMH" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_BPCBHKHDGMH),
+            "JJMFOABLOCE_GEAIEKPGNGD" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_GEAIEKPGNGD),
+            "JJMFOABLOCE_EKJFDFEANNH" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_EKJFDFEANNH),
+            "JJMFOABLOCE_BIOGDPANCLB" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_BIOGDPANCLB),
+            "JJMFOABLOCE_DPALIHINPFN" => ::std::option::Option::Some(BattleModuleType::JJMFOABLOCE_DPALIHINPFN),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BattleModuleType] = &[
-        BattleModuleType::INHPDHLOHHO_HAJDAKFIENM,
-        BattleModuleType::INHPDHLOHHO_KKHLMKIPMFK,
-        BattleModuleType::INHPDHLOHHO_LHGODLABEKH,
-        BattleModuleType::INHPDHLOHHO_LJOPAPAKHIP,
-        BattleModuleType::INHPDHLOHHO_FNJHIOCJHLO,
-        BattleModuleType::INHPDHLOHHO_AENLPPAEANK,
-        BattleModuleType::INHPDHLOHHO_EDLOEBEJFHN,
+        BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC,
+        BattleModuleType::JJMFOABLOCE_FDKBEDIMCBJ,
+        BattleModuleType::JJMFOABLOCE_BPCBHKHDGMH,
+        BattleModuleType::JJMFOABLOCE_GEAIEKPGNGD,
+        BattleModuleType::JJMFOABLOCE_EKJFDFEANNH,
+        BattleModuleType::JJMFOABLOCE_BIOGDPANCLB,
+        BattleModuleType::JJMFOABLOCE_DPALIHINPFN,
     ];
 }
 
@@ -101,7 +101,7 @@ impl ::protobuf::EnumFull for BattleModuleType {
 
 impl ::std::default::Default for BattleModuleType {
     fn default() -> Self {
-        BattleModuleType::INHPDHLOHHO_HAJDAKFIENM
+        BattleModuleType::JJMFOABLOCE_OHDOHHFAKMC
     }
 }
 
@@ -113,11 +113,11 @@ impl BattleModuleType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x16BattleModuleType.proto*\xdd\x01\n\x10BattleModuleType\x12\x1b\n\
-    \x17INHPDHLOHHO_HAJDAKFIENM\x10\0\x12\x1b\n\x17INHPDHLOHHO_KKHLMKIPMFK\
-    \x10\x01\x12\x1b\n\x17INHPDHLOHHO_LHGODLABEKH\x10\x02\x12\x1b\n\x17INHPD\
-    HLOHHO_LJOPAPAKHIP\x10\x03\x12\x1b\n\x17INHPDHLOHHO_FNJHIOCJHLO\x10\x04\
-    \x12\x1b\n\x17INHPDHLOHHO_AENLPPAEANK\x10\x05\x12\x1b\n\x17INHPDHLOHHO_E\
-    DLOEBEJFHN\x10\x06b\x06proto3\
+    \x17JJMFOABLOCE_OHDOHHFAKMC\x10\0\x12\x1b\n\x17JJMFOABLOCE_FDKBEDIMCBJ\
+    \x10\x01\x12\x1b\n\x17JJMFOABLOCE_BPCBHKHDGMH\x10\x02\x12\x1b\n\x17JJMFO\
+    ABLOCE_GEAIEKPGNGD\x10\x03\x12\x1b\n\x17JJMFOABLOCE_EKJFDFEANNH\x10\x04\
+    \x12\x1b\n\x17JJMFOABLOCE_BIOGDPANCLB\x10\x05\x12\x1b\n\x17JJMFOABLOCE_D\
+    PALIHINPFN\x10\x06b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

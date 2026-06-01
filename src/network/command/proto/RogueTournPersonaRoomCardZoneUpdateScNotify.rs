@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournPersonaRoomCardZoneUpdateScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournPersonaRoomCardZoneUpdateScNotify.EAHLEBKJIML)
-    pub EAHLEBKJIML: ::protobuf::MessageField<super::GNLMENKBHLE::GNLMENKBHLE>,
+    // @@protoc_insertion_point(field:RogueTournPersonaRoomCardZoneUpdateScNotify.NHNBJLLDOHO)
+    pub NHNBJLLDOHO: ::protobuf::MessageField<super::ODHJEDHKHOD::ODHJEDHKHOD>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournPersonaRoomCardZoneUpdateScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl RogueTournPersonaRoomCardZoneUpdateScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GNLMENKBHLE::GNLMENKBHLE>(
-            "EAHLEBKJIML",
-            |m: &RogueTournPersonaRoomCardZoneUpdateScNotify| { &m.EAHLEBKJIML },
-            |m: &mut RogueTournPersonaRoomCardZoneUpdateScNotify| { &mut m.EAHLEBKJIML },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ODHJEDHKHOD::ODHJEDHKHOD>(
+            "NHNBJLLDOHO",
+            |m: &RogueTournPersonaRoomCardZoneUpdateScNotify| { &m.NHNBJLLDOHO },
+            |m: &mut RogueTournPersonaRoomCardZoneUpdateScNotify| { &mut m.NHNBJLLDOHO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournPersonaRoomCardZoneUpdateScNotify>(
             "RogueTournPersonaRoomCardZoneUpdateScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueTournPersonaRoomCardZoneUpdateScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EAHLEBKJIML)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.NHNBJLLDOHO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueTournPersonaRoomCardZoneUpdateScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.EAHLEBKJIML.as_ref() {
+        if let Some(v) = self.NHNBJLLDOHO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueTournPersonaRoomCardZoneUpdateScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.EAHLEBKJIML.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if let Some(v) = self.NHNBJLLDOHO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueTournPersonaRoomCardZoneUpdateScNotify {
     }
 
     fn clear(&mut self) {
-        self.EAHLEBKJIML.clear();
+        self.NHNBJLLDOHO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournPersonaRoomCardZoneUpdateScNotify {
         static instance: RogueTournPersonaRoomCardZoneUpdateScNotify = RogueTournPersonaRoomCardZoneUpdateScNotify {
-            EAHLEBKJIML: ::protobuf::MessageField::none(),
+            NHNBJLLDOHO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournPersonaRoomCardZoneUpdateS
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n1RogueTournPersonaRoomCardZoneUpdateScNotify.proto\x1a\x11GNLMENKBHLE.\
-    proto\"]\n+RogueTournPersonaRoomCardZoneUpdateScNotify\x12.\n\x0bEAHLEBK\
-    JIML\x18\x08\x20\x01(\x0b2\x0c.GNLMENKBHLER\x0bEAHLEBKJIMLb\x06proto3\
+    \n1RogueTournPersonaRoomCardZoneUpdateScNotify.proto\x1a\x11ODHJEDHKHOD.\
+    proto\"]\n+RogueTournPersonaRoomCardZoneUpdateScNotify\x12.\n\x0bNHNBJLL\
+    DOHO\x18\x0e\x20\x01(\x0b2\x0c.ODHJEDHKHODR\x0bNHNBJLLDOHOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GNLMENKBHLE::file_descriptor().clone());
+            deps.push(super::ODHJEDHKHOD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournPersonaRoomCardZoneUpdateScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyReRollRandomScRsp {
     // message fields
+    // @@protoc_insertion_point(field:MonopolyReRollRandomScRsp.MOMEIFPICLE)
+    pub MOMEIFPICLE: ::protobuf::MessageField<super::DFKABDLJMJO_NEMIDPFEJFL::NEMIDPFEJFL>,
     // @@protoc_insertion_point(field:MonopolyReRollRandomScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyReRollRandomScRsp.GGLDOGIHFLG)
-    pub GGLDOGIHFLG: ::protobuf::MessageField<super::BLIJEKKOIJH_DODFLOBPGGL::BLIJEKKOIJH>,
     // @@protoc_insertion_point(field:MonopolyReRollRandomScRsp.event_id)
     pub event_id: u32,
     // special fields
@@ -53,15 +53,15 @@ impl MonopolyReRollRandomScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFKABDLJMJO_NEMIDPFEJFL::NEMIDPFEJFL>(
+            "MOMEIFPICLE",
+            |m: &MonopolyReRollRandomScRsp| { &m.MOMEIFPICLE },
+            |m: &mut MonopolyReRollRandomScRsp| { &mut m.MOMEIFPICLE },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MonopolyReRollRandomScRsp| { &m.retcode },
             |m: &mut MonopolyReRollRandomScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BLIJEKKOIJH_DODFLOBPGGL::BLIJEKKOIJH>(
-            "GGLDOGIHFLG",
-            |m: &MonopolyReRollRandomScRsp| { &m.GGLDOGIHFLG },
-            |m: &mut MonopolyReRollRandomScRsp| { &mut m.GGLDOGIHFLG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "event_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MonopolyReRollRandomScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.MOMEIFPICLE)?;
+                },
+                32 => {
                     self.retcode = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.GGLDOGIHFLG)?;
-                },
-                112 => {
+                88 => {
                     self.event_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for MonopolyReRollRandomScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
-        if let Some(v) = self.GGLDOGIHFLG.as_ref() {
+        if let Some(v) = self.MOMEIFPICLE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
         if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.event_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.event_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MonopolyReRollRandomScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+        if let Some(v) = self.MOMEIFPICLE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
-        if let Some(v) = self.GGLDOGIHFLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(4, self.retcode)?;
         }
         if self.event_id != 0 {
-            os.write_uint32(14, self.event_id)?;
+            os.write_uint32(11, self.event_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for MonopolyReRollRandomScRsp {
     }
 
     fn clear(&mut self) {
+        self.MOMEIFPICLE.clear();
         self.retcode = 0;
-        self.GGLDOGIHFLG.clear();
         self.event_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyReRollRandomScRsp {
         static instance: MonopolyReRollRandomScRsp = MonopolyReRollRandomScRsp {
+            MOMEIFPICLE: ::protobuf::MessageField::none(),
             retcode: 0,
-            GGLDOGIHFLG: ::protobuf::MessageField::none(),
             event_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyReRollRandomScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1fMonopolyReRollRandomScRsp.proto\x1a\x1dBLIJEKKOIJH_DODFLOBPGGL.pro\
-    to\"\x80\x01\n\x19MonopolyReRollRandomScRsp\x12\x18\n\x07retcode\x18\x01\
-    \x20\x01(\rR\x07retcode\x12.\n\x0bGGLDOGIHFLG\x18\x0b\x20\x01(\x0b2\x0c.\
-    BLIJEKKOIJHR\x0bGGLDOGIHFLG\x12\x19\n\x08event_id\x18\x0e\x20\x01(\rR\
+    \n\x1fMonopolyReRollRandomScRsp.proto\x1a\x1dDFKABDLJMJO_NEMIDPFEJFL.pro\
+    to\"\x80\x01\n\x19MonopolyReRollRandomScRsp\x12.\n\x0bMOMEIFPICLE\x18\r\
+    \x20\x01(\x0b2\x0c.NEMIDPFEJFLR\x0bMOMEIFPICLE\x12\x18\n\x07retcode\x18\
+    \x04\x20\x01(\rR\x07retcode\x12\x19\n\x08event_id\x18\x0b\x20\x01(\rR\
     \x07eventIdb\x06proto3\
 ";
 
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BLIJEKKOIJH_DODFLOBPGGL::file_descriptor().clone());
+            deps.push(super::DFKABDLJMJO_NEMIDPFEJFL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MonopolyReRollRandomScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

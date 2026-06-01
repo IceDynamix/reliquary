@@ -27,50 +27,50 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdChallengeType)
 pub enum CmdChallengeType {
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.BNLGJBKKKBK_PCPDHELPKEM)
-    BNLGJBKKKBK_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdChallengeSettleNotify)
-    CmdChallengeSettleNotify = 1709,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetChallengeGroupStatisticsCsReq)
-    CmdGetChallengeGroupStatisticsCsReq = 1772,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdLeaveChallengeCsReq)
-    CmdLeaveChallengeCsReq = 1714,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetChallengeCsReq)
-    CmdGetChallengeCsReq = 1791,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdStartPartialChallengeScRsp)
-    CmdStartPartialChallengeScRsp = 1761,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetChallengeGroupStatisticsScRsp)
-    CmdGetChallengeGroupStatisticsScRsp = 1732,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdTakeChallengeRewardScRsp)
-    CmdTakeChallengeRewardScRsp = 1738,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdTakeChallengeRewardCsReq)
-    CmdTakeChallengeRewardCsReq = 1704,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdStartChallengeScRsp)
-    CmdStartChallengeScRsp = 1795,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetCurChallengeScRsp)
-    CmdGetCurChallengeScRsp = 1739,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdEnterChallengeNextPhaseCsReq)
-    CmdEnterChallengeNextPhaseCsReq = 1800,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetCurChallengeCsReq)
-    CmdGetCurChallengeCsReq = 1726,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdEnterChallengeNextPhaseScRsp)
-    CmdEnterChallengeNextPhaseScRsp = 1789,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdLeaveChallengeScRsp)
-    CmdLeaveChallengeScRsp = 1718,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdStartChallengeCsReq)
-    CmdStartChallengeCsReq = 1794,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdRestartChallengePhaseScRsp)
-    CmdRestartChallengePhaseScRsp = 1744,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdChallengeBossPhaseSettleNotify)
-    CmdChallengeBossPhaseSettleNotify = 1796,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdPartialChallengeCsReq)
-    CmdPartialChallengeCsReq = 1733,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdGetChallengeScRsp)
-    CmdGetChallengeScRsp = 1710,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdRestartChallengePhaseCsReq)
-    CmdRestartChallengePhaseCsReq = 1758,
-    // @@protoc_insertion_point(enum_value:CmdChallengeType.CmdChallengeLineupNotify)
-    CmdChallengeLineupNotify = 1701,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_NLCDGIPGFDJ)
+    GBMDCPMJIAB_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_PDLCBOHHENN)
+    GBMDCPMJIAB_PDLCBOHHENN = 1727,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_HDECPMFFAHF)
+    GBMDCPMJIAB_HDECPMFFAHF = 1703,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_CHLNPBMKMJN)
+    GBMDCPMJIAB_CHLNPBMKMJN = 1712,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_GNBFHPKMEGH)
+    GBMDCPMJIAB_GNBFHPKMEGH = 1724,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_GAJEHKDIKFC)
+    GBMDCPMJIAB_GAJEHKDIKFC = 1761,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_GOICGNDCAEH)
+    GBMDCPMJIAB_GOICGNDCAEH = 1736,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_PJBIBICDCJP)
+    GBMDCPMJIAB_PJBIBICDCJP = 1742,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_JDGPAOKCAKC)
+    GBMDCPMJIAB_JDGPAOKCAKC = 1778,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_JMBOIAFGJAE)
+    GBMDCPMJIAB_JMBOIAFGJAE = 1776,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_GAAGCJEHIKK)
+    GBMDCPMJIAB_GAAGCJEHIKK = 1752,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_JDCJCNOEHCO)
+    GBMDCPMJIAB_JDCJCNOEHCO = 1780,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_PJELPLKLPDD)
+    GBMDCPMJIAB_PJELPLKLPDD = 1715,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_NDJMHKLLKII)
+    GBMDCPMJIAB_NDJMHKLLKII = 1738,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_DMKIMHCCKLI)
+    GBMDCPMJIAB_DMKIMHCCKLI = 1713,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_DKHIENJKDKM)
+    GBMDCPMJIAB_DKHIENJKDKM = 1729,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_NMOFHKHCJKG)
+    GBMDCPMJIAB_NMOFHKHCJKG = 1759,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_DDKKLDFAACA)
+    GBMDCPMJIAB_DDKKLDFAACA = 1787,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_PGPFCCJAHDF)
+    GBMDCPMJIAB_PGPFCCJAHDF = 1773,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_PMMCKMAONAM)
+    GBMDCPMJIAB_PMMCKMAONAM = 1748,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_DLAOMOLCFNI)
+    GBMDCPMJIAB_DLAOMOLCFNI = 1709,
+    // @@protoc_insertion_point(enum_value:CmdChallengeType.GBMDCPMJIAB_MAPJJIIBCAA)
+    GBMDCPMJIAB_MAPJJIIBCAA = 1774,
 }
 
 impl ::protobuf::Enum for CmdChallengeType {
@@ -82,83 +82,83 @@ impl ::protobuf::Enum for CmdChallengeType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdChallengeType> {
         match value {
-            0 => ::std::option::Option::Some(CmdChallengeType::BNLGJBKKKBK_PCPDHELPKEM),
-            1709 => ::std::option::Option::Some(CmdChallengeType::CmdChallengeSettleNotify),
-            1772 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq),
-            1714 => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeCsReq),
-            1791 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeCsReq),
-            1761 => ::std::option::Option::Some(CmdChallengeType::CmdStartPartialChallengeScRsp),
-            1732 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp),
-            1738 => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardScRsp),
-            1704 => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardCsReq),
-            1795 => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeScRsp),
-            1739 => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeScRsp),
-            1800 => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseCsReq),
-            1726 => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeCsReq),
-            1789 => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseScRsp),
-            1718 => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeScRsp),
-            1794 => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeCsReq),
-            1744 => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseScRsp),
-            1796 => ::std::option::Option::Some(CmdChallengeType::CmdChallengeBossPhaseSettleNotify),
-            1733 => ::std::option::Option::Some(CmdChallengeType::CmdPartialChallengeCsReq),
-            1710 => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeScRsp),
-            1758 => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseCsReq),
-            1701 => ::std::option::Option::Some(CmdChallengeType::CmdChallengeLineupNotify),
+            0 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_NLCDGIPGFDJ),
+            1727 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_PDLCBOHHENN),
+            1703 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_HDECPMFFAHF),
+            1712 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_CHLNPBMKMJN),
+            1724 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_GNBFHPKMEGH),
+            1761 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_GAJEHKDIKFC),
+            1736 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_GOICGNDCAEH),
+            1742 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_PJBIBICDCJP),
+            1778 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_JDGPAOKCAKC),
+            1776 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_JMBOIAFGJAE),
+            1752 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_GAAGCJEHIKK),
+            1780 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_JDCJCNOEHCO),
+            1715 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_PJELPLKLPDD),
+            1738 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_NDJMHKLLKII),
+            1713 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_DMKIMHCCKLI),
+            1729 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_DKHIENJKDKM),
+            1759 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_NMOFHKHCJKG),
+            1787 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_DDKKLDFAACA),
+            1773 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_PGPFCCJAHDF),
+            1748 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_PMMCKMAONAM),
+            1709 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_DLAOMOLCFNI),
+            1774 => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_MAPJJIIBCAA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdChallengeType> {
         match str {
-            "BNLGJBKKKBK_PCPDHELPKEM" => ::std::option::Option::Some(CmdChallengeType::BNLGJBKKKBK_PCPDHELPKEM),
-            "CmdChallengeSettleNotify" => ::std::option::Option::Some(CmdChallengeType::CmdChallengeSettleNotify),
-            "CmdGetChallengeGroupStatisticsCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq),
-            "CmdLeaveChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeCsReq),
-            "CmdGetChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeCsReq),
-            "CmdStartPartialChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdStartPartialChallengeScRsp),
-            "CmdGetChallengeGroupStatisticsScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp),
-            "CmdTakeChallengeRewardScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardScRsp),
-            "CmdTakeChallengeRewardCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdTakeChallengeRewardCsReq),
-            "CmdStartChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeScRsp),
-            "CmdGetCurChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeScRsp),
-            "CmdEnterChallengeNextPhaseCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseCsReq),
-            "CmdGetCurChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdGetCurChallengeCsReq),
-            "CmdEnterChallengeNextPhaseScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdEnterChallengeNextPhaseScRsp),
-            "CmdLeaveChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdLeaveChallengeScRsp),
-            "CmdStartChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdStartChallengeCsReq),
-            "CmdRestartChallengePhaseScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseScRsp),
-            "CmdChallengeBossPhaseSettleNotify" => ::std::option::Option::Some(CmdChallengeType::CmdChallengeBossPhaseSettleNotify),
-            "CmdPartialChallengeCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdPartialChallengeCsReq),
-            "CmdGetChallengeScRsp" => ::std::option::Option::Some(CmdChallengeType::CmdGetChallengeScRsp),
-            "CmdRestartChallengePhaseCsReq" => ::std::option::Option::Some(CmdChallengeType::CmdRestartChallengePhaseCsReq),
-            "CmdChallengeLineupNotify" => ::std::option::Option::Some(CmdChallengeType::CmdChallengeLineupNotify),
+            "GBMDCPMJIAB_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_NLCDGIPGFDJ),
+            "GBMDCPMJIAB_PDLCBOHHENN" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_PDLCBOHHENN),
+            "GBMDCPMJIAB_HDECPMFFAHF" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_HDECPMFFAHF),
+            "GBMDCPMJIAB_CHLNPBMKMJN" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_CHLNPBMKMJN),
+            "GBMDCPMJIAB_GNBFHPKMEGH" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_GNBFHPKMEGH),
+            "GBMDCPMJIAB_GAJEHKDIKFC" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_GAJEHKDIKFC),
+            "GBMDCPMJIAB_GOICGNDCAEH" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_GOICGNDCAEH),
+            "GBMDCPMJIAB_PJBIBICDCJP" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_PJBIBICDCJP),
+            "GBMDCPMJIAB_JDGPAOKCAKC" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_JDGPAOKCAKC),
+            "GBMDCPMJIAB_JMBOIAFGJAE" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_JMBOIAFGJAE),
+            "GBMDCPMJIAB_GAAGCJEHIKK" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_GAAGCJEHIKK),
+            "GBMDCPMJIAB_JDCJCNOEHCO" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_JDCJCNOEHCO),
+            "GBMDCPMJIAB_PJELPLKLPDD" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_PJELPLKLPDD),
+            "GBMDCPMJIAB_NDJMHKLLKII" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_NDJMHKLLKII),
+            "GBMDCPMJIAB_DMKIMHCCKLI" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_DMKIMHCCKLI),
+            "GBMDCPMJIAB_DKHIENJKDKM" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_DKHIENJKDKM),
+            "GBMDCPMJIAB_NMOFHKHCJKG" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_NMOFHKHCJKG),
+            "GBMDCPMJIAB_DDKKLDFAACA" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_DDKKLDFAACA),
+            "GBMDCPMJIAB_PGPFCCJAHDF" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_PGPFCCJAHDF),
+            "GBMDCPMJIAB_PMMCKMAONAM" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_PMMCKMAONAM),
+            "GBMDCPMJIAB_DLAOMOLCFNI" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_DLAOMOLCFNI),
+            "GBMDCPMJIAB_MAPJJIIBCAA" => ::std::option::Option::Some(CmdChallengeType::GBMDCPMJIAB_MAPJJIIBCAA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdChallengeType] = &[
-        CmdChallengeType::BNLGJBKKKBK_PCPDHELPKEM,
-        CmdChallengeType::CmdChallengeSettleNotify,
-        CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq,
-        CmdChallengeType::CmdLeaveChallengeCsReq,
-        CmdChallengeType::CmdGetChallengeCsReq,
-        CmdChallengeType::CmdStartPartialChallengeScRsp,
-        CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp,
-        CmdChallengeType::CmdTakeChallengeRewardScRsp,
-        CmdChallengeType::CmdTakeChallengeRewardCsReq,
-        CmdChallengeType::CmdStartChallengeScRsp,
-        CmdChallengeType::CmdGetCurChallengeScRsp,
-        CmdChallengeType::CmdEnterChallengeNextPhaseCsReq,
-        CmdChallengeType::CmdGetCurChallengeCsReq,
-        CmdChallengeType::CmdEnterChallengeNextPhaseScRsp,
-        CmdChallengeType::CmdLeaveChallengeScRsp,
-        CmdChallengeType::CmdStartChallengeCsReq,
-        CmdChallengeType::CmdRestartChallengePhaseScRsp,
-        CmdChallengeType::CmdChallengeBossPhaseSettleNotify,
-        CmdChallengeType::CmdPartialChallengeCsReq,
-        CmdChallengeType::CmdGetChallengeScRsp,
-        CmdChallengeType::CmdRestartChallengePhaseCsReq,
-        CmdChallengeType::CmdChallengeLineupNotify,
+        CmdChallengeType::GBMDCPMJIAB_NLCDGIPGFDJ,
+        CmdChallengeType::GBMDCPMJIAB_PDLCBOHHENN,
+        CmdChallengeType::GBMDCPMJIAB_HDECPMFFAHF,
+        CmdChallengeType::GBMDCPMJIAB_CHLNPBMKMJN,
+        CmdChallengeType::GBMDCPMJIAB_GNBFHPKMEGH,
+        CmdChallengeType::GBMDCPMJIAB_GAJEHKDIKFC,
+        CmdChallengeType::GBMDCPMJIAB_GOICGNDCAEH,
+        CmdChallengeType::GBMDCPMJIAB_PJBIBICDCJP,
+        CmdChallengeType::GBMDCPMJIAB_JDGPAOKCAKC,
+        CmdChallengeType::GBMDCPMJIAB_JMBOIAFGJAE,
+        CmdChallengeType::GBMDCPMJIAB_GAAGCJEHIKK,
+        CmdChallengeType::GBMDCPMJIAB_JDCJCNOEHCO,
+        CmdChallengeType::GBMDCPMJIAB_PJELPLKLPDD,
+        CmdChallengeType::GBMDCPMJIAB_NDJMHKLLKII,
+        CmdChallengeType::GBMDCPMJIAB_DMKIMHCCKLI,
+        CmdChallengeType::GBMDCPMJIAB_DKHIENJKDKM,
+        CmdChallengeType::GBMDCPMJIAB_NMOFHKHCJKG,
+        CmdChallengeType::GBMDCPMJIAB_DDKKLDFAACA,
+        CmdChallengeType::GBMDCPMJIAB_PGPFCCJAHDF,
+        CmdChallengeType::GBMDCPMJIAB_PMMCKMAONAM,
+        CmdChallengeType::GBMDCPMJIAB_DLAOMOLCFNI,
+        CmdChallengeType::GBMDCPMJIAB_MAPJJIIBCAA,
     ];
 }
 
@@ -170,28 +170,28 @@ impl ::protobuf::EnumFull for CmdChallengeType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdChallengeType::BNLGJBKKKBK_PCPDHELPKEM => 0,
-            CmdChallengeType::CmdChallengeSettleNotify => 1,
-            CmdChallengeType::CmdGetChallengeGroupStatisticsCsReq => 2,
-            CmdChallengeType::CmdLeaveChallengeCsReq => 3,
-            CmdChallengeType::CmdGetChallengeCsReq => 4,
-            CmdChallengeType::CmdStartPartialChallengeScRsp => 5,
-            CmdChallengeType::CmdGetChallengeGroupStatisticsScRsp => 6,
-            CmdChallengeType::CmdTakeChallengeRewardScRsp => 7,
-            CmdChallengeType::CmdTakeChallengeRewardCsReq => 8,
-            CmdChallengeType::CmdStartChallengeScRsp => 9,
-            CmdChallengeType::CmdGetCurChallengeScRsp => 10,
-            CmdChallengeType::CmdEnterChallengeNextPhaseCsReq => 11,
-            CmdChallengeType::CmdGetCurChallengeCsReq => 12,
-            CmdChallengeType::CmdEnterChallengeNextPhaseScRsp => 13,
-            CmdChallengeType::CmdLeaveChallengeScRsp => 14,
-            CmdChallengeType::CmdStartChallengeCsReq => 15,
-            CmdChallengeType::CmdRestartChallengePhaseScRsp => 16,
-            CmdChallengeType::CmdChallengeBossPhaseSettleNotify => 17,
-            CmdChallengeType::CmdPartialChallengeCsReq => 18,
-            CmdChallengeType::CmdGetChallengeScRsp => 19,
-            CmdChallengeType::CmdRestartChallengePhaseCsReq => 20,
-            CmdChallengeType::CmdChallengeLineupNotify => 21,
+            CmdChallengeType::GBMDCPMJIAB_NLCDGIPGFDJ => 0,
+            CmdChallengeType::GBMDCPMJIAB_PDLCBOHHENN => 1,
+            CmdChallengeType::GBMDCPMJIAB_HDECPMFFAHF => 2,
+            CmdChallengeType::GBMDCPMJIAB_CHLNPBMKMJN => 3,
+            CmdChallengeType::GBMDCPMJIAB_GNBFHPKMEGH => 4,
+            CmdChallengeType::GBMDCPMJIAB_GAJEHKDIKFC => 5,
+            CmdChallengeType::GBMDCPMJIAB_GOICGNDCAEH => 6,
+            CmdChallengeType::GBMDCPMJIAB_PJBIBICDCJP => 7,
+            CmdChallengeType::GBMDCPMJIAB_JDGPAOKCAKC => 8,
+            CmdChallengeType::GBMDCPMJIAB_JMBOIAFGJAE => 9,
+            CmdChallengeType::GBMDCPMJIAB_GAAGCJEHIKK => 10,
+            CmdChallengeType::GBMDCPMJIAB_JDCJCNOEHCO => 11,
+            CmdChallengeType::GBMDCPMJIAB_PJELPLKLPDD => 12,
+            CmdChallengeType::GBMDCPMJIAB_NDJMHKLLKII => 13,
+            CmdChallengeType::GBMDCPMJIAB_DMKIMHCCKLI => 14,
+            CmdChallengeType::GBMDCPMJIAB_DKHIENJKDKM => 15,
+            CmdChallengeType::GBMDCPMJIAB_NMOFHKHCJKG => 16,
+            CmdChallengeType::GBMDCPMJIAB_DDKKLDFAACA => 17,
+            CmdChallengeType::GBMDCPMJIAB_PGPFCCJAHDF => 18,
+            CmdChallengeType::GBMDCPMJIAB_PMMCKMAONAM => 19,
+            CmdChallengeType::GBMDCPMJIAB_DLAOMOLCFNI => 20,
+            CmdChallengeType::GBMDCPMJIAB_MAPJJIIBCAA => 21,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -199,7 +199,7 @@ impl ::protobuf::EnumFull for CmdChallengeType {
 
 impl ::std::default::Default for CmdChallengeType {
     fn default() -> Self {
-        CmdChallengeType::BNLGJBKKKBK_PCPDHELPKEM
+        CmdChallengeType::GBMDCPMJIAB_NLCDGIPGFDJ
     }
 }
 
@@ -210,23 +210,22 @@ impl CmdChallengeType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdChallengeType.proto*\xea\x05\n\x10CmdChallengeType\x12\x1b\n\
-    \x17BNLGJBKKKBK_PCPDHELPKEM\x10\0\x12\x1d\n\x18CmdChallengeSettleNotify\
-    \x10\xad\r\x12(\n#CmdGetChallengeGroupStatisticsCsReq\x10\xec\r\x12\x1b\
-    \n\x16CmdLeaveChallengeCsReq\x10\xb2\r\x12\x19\n\x14CmdGetChallengeCsReq\
-    \x10\xff\r\x12\"\n\x1dCmdStartPartialChallengeScRsp\x10\xe1\r\x12(\n#Cmd\
-    GetChallengeGroupStatisticsScRsp\x10\xc4\r\x12\x20\n\x1bCmdTakeChallenge\
-    RewardScRsp\x10\xca\r\x12\x20\n\x1bCmdTakeChallengeRewardCsReq\x10\xa8\r\
-    \x12\x1b\n\x16CmdStartChallengeScRsp\x10\x83\x0e\x12\x1c\n\x17CmdGetCurC\
-    hallengeScRsp\x10\xcb\r\x12$\n\x1fCmdEnterChallengeNextPhaseCsReq\x10\
-    \x88\x0e\x12\x1c\n\x17CmdGetCurChallengeCsReq\x10\xbe\r\x12$\n\x1fCmdEnt\
-    erChallengeNextPhaseScRsp\x10\xfd\r\x12\x1b\n\x16CmdLeaveChallengeScRsp\
-    \x10\xb6\r\x12\x1b\n\x16CmdStartChallengeCsReq\x10\x82\x0e\x12\"\n\x1dCm\
-    dRestartChallengePhaseScRsp\x10\xd0\r\x12&\n!CmdChallengeBossPhaseSettle\
-    Notify\x10\x84\x0e\x12\x1d\n\x18CmdPartialChallengeCsReq\x10\xc5\r\x12\
-    \x19\n\x14CmdGetChallengeScRsp\x10\xae\r\x12\"\n\x1dCmdRestartChallengeP\
-    haseCsReq\x10\xde\r\x12\x1d\n\x18CmdChallengeLineupNotify\x10\xa5\rb\x06\
-    proto3\
+    \n\x16CmdChallengeType.proto*\xa5\x05\n\x10CmdChallengeType\x12\x1b\n\
+    \x17GBMDCPMJIAB_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GBMDCPMJIAB_PDLCBOHHENN\
+    \x10\xbf\r\x12\x1c\n\x17GBMDCPMJIAB_HDECPMFFAHF\x10\xa7\r\x12\x1c\n\x17G\
+    BMDCPMJIAB_CHLNPBMKMJN\x10\xb0\r\x12\x1c\n\x17GBMDCPMJIAB_GNBFHPKMEGH\
+    \x10\xbc\r\x12\x1c\n\x17GBMDCPMJIAB_GAJEHKDIKFC\x10\xe1\r\x12\x1c\n\x17G\
+    BMDCPMJIAB_GOICGNDCAEH\x10\xc8\r\x12\x1c\n\x17GBMDCPMJIAB_PJBIBICDCJP\
+    \x10\xce\r\x12\x1c\n\x17GBMDCPMJIAB_JDGPAOKCAKC\x10\xf2\r\x12\x1c\n\x17G\
+    BMDCPMJIAB_JMBOIAFGJAE\x10\xf0\r\x12\x1c\n\x17GBMDCPMJIAB_GAAGCJEHIKK\
+    \x10\xd8\r\x12\x1c\n\x17GBMDCPMJIAB_JDCJCNOEHCO\x10\xf4\r\x12\x1c\n\x17G\
+    BMDCPMJIAB_PJELPLKLPDD\x10\xb3\r\x12\x1c\n\x17GBMDCPMJIAB_NDJMHKLLKII\
+    \x10\xca\r\x12\x1c\n\x17GBMDCPMJIAB_DMKIMHCCKLI\x10\xb1\r\x12\x1c\n\x17G\
+    BMDCPMJIAB_DKHIENJKDKM\x10\xc1\r\x12\x1c\n\x17GBMDCPMJIAB_NMOFHKHCJKG\
+    \x10\xdf\r\x12\x1c\n\x17GBMDCPMJIAB_DDKKLDFAACA\x10\xfb\r\x12\x1c\n\x17G\
+    BMDCPMJIAB_PGPFCCJAHDF\x10\xed\r\x12\x1c\n\x17GBMDCPMJIAB_PMMCKMAONAM\
+    \x10\xd4\r\x12\x1c\n\x17GBMDCPMJIAB_DLAOMOLCFNI\x10\xad\r\x12\x1c\n\x17G\
+    BMDCPMJIAB_MAPJJIIBCAA\x10\xee\rb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

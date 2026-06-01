@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelEndGameScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ChimeraDuelEndGameScRsp.CECFDNCDBEI)
+    pub CECFDNCDBEI: ::protobuf::MessageField<super::EBPBMFBFEJA::EBPBMFBFEJA>,
     // @@protoc_insertion_point(field:ChimeraDuelEndGameScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChimeraDuelEndGameScRsp.CKIMOELPOAB)
-    pub CKIMOELPOAB: ::protobuf::MessageField<super::HOBCIOKKNKH::HOBCIOKKNKH>,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelEndGameScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ChimeraDuelEndGameScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EBPBMFBFEJA::EBPBMFBFEJA>(
+            "CECFDNCDBEI",
+            |m: &ChimeraDuelEndGameScRsp| { &m.CECFDNCDBEI },
+            |m: &mut ChimeraDuelEndGameScRsp| { &mut m.CECFDNCDBEI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChimeraDuelEndGameScRsp| { &m.retcode },
             |m: &mut ChimeraDuelEndGameScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HOBCIOKKNKH::HOBCIOKKNKH>(
-            "CKIMOELPOAB",
-            |m: &ChimeraDuelEndGameScRsp| { &m.CKIMOELPOAB },
-            |m: &mut ChimeraDuelEndGameScRsp| { &mut m.CKIMOELPOAB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelEndGameScRsp>(
             "ChimeraDuelEndGameScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChimeraDuelEndGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.retcode = is.read_uint32()?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CECFDNCDBEI)?;
                 },
-                66 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CKIMOELPOAB)?;
+                72 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ChimeraDuelEndGameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
-        }
-        if let Some(v) = self.CKIMOELPOAB.as_ref() {
+        if let Some(v) = self.CECFDNCDBEI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChimeraDuelEndGameScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+        if let Some(v) = self.CECFDNCDBEI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if let Some(v) = self.CKIMOELPOAB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChimeraDuelEndGameScRsp {
     }
 
     fn clear(&mut self) {
+        self.CECFDNCDBEI.clear();
         self.retcode = 0;
-        self.CKIMOELPOAB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelEndGameScRsp {
         static instance: ChimeraDuelEndGameScRsp = ChimeraDuelEndGameScRsp {
+            CECFDNCDBEI: ::protobuf::MessageField::none(),
             retcode: 0,
-            CKIMOELPOAB: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelEndGameScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dChimeraDuelEndGameScRsp.proto\x1a\x11HOBCIOKKNKH.proto\"c\n\x17Chi\
-    meraDuelEndGameScRsp\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bCKIMOELPOAB\x18\x08\x20\x01(\x0b2\x0c.HOBCIOKKNKHR\x0bCKIMOEL\
-    POABb\x06proto3\
+    \n\x1dChimeraDuelEndGameScRsp.proto\x1a\x11EBPBMFBFEJA.proto\"c\n\x17Chi\
+    meraDuelEndGameScRsp\x12.\n\x0bCECFDNCDBEI\x18\x05\x20\x01(\x0b2\x0c.EBP\
+    BMFBFEJAR\x0bCECFDNCDBEI\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retco\
+    deb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HOBCIOKKNKH::file_descriptor().clone());
+            deps.push(super::EBPBMFBFEJA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChimeraDuelEndGameScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

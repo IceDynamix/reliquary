@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmSaveSongConfigDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataCsReq.BAJEIALIBBM)
-    pub BAJEIALIBBM: ::protobuf::MessageField<super::MusicRhythmGroup::MusicRhythmGroup>,
+    // @@protoc_insertion_point(field:MusicRhythmSaveSongConfigDataCsReq.BENAFNHLCEO)
+    pub BENAFNHLCEO: ::protobuf::MessageField<super::MusicRhythmGroup::MusicRhythmGroup>,
     // special fields
     // @@protoc_insertion_point(special_field:MusicRhythmSaveSongConfigDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MusicRhythmSaveSongConfigDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MusicRhythmGroup::MusicRhythmGroup>(
-            "BAJEIALIBBM",
-            |m: &MusicRhythmSaveSongConfigDataCsReq| { &m.BAJEIALIBBM },
-            |m: &mut MusicRhythmSaveSongConfigDataCsReq| { &mut m.BAJEIALIBBM },
+            "BENAFNHLCEO",
+            |m: &MusicRhythmSaveSongConfigDataCsReq| { &m.BENAFNHLCEO },
+            |m: &mut MusicRhythmSaveSongConfigDataCsReq| { &mut m.BENAFNHLCEO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MusicRhythmSaveSongConfigDataCsReq>(
             "MusicRhythmSaveSongConfigDataCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BAJEIALIBBM)?;
+                50 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BENAFNHLCEO)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BAJEIALIBBM.as_ref() {
+        if let Some(v) = self.BENAFNHLCEO.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BAJEIALIBBM.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.BENAFNHLCEO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for MusicRhythmSaveSongConfigDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.BAJEIALIBBM.clear();
+        self.BENAFNHLCEO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MusicRhythmSaveSongConfigDataCsReq {
         static instance: MusicRhythmSaveSongConfigDataCsReq = MusicRhythmSaveSongConfigDataCsReq {
-            BAJEIALIBBM: ::protobuf::MessageField::none(),
+            BENAFNHLCEO: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmSaveSongConfigDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(MusicRhythmSaveSongConfigDataCsReq.proto\x1a\x16MusicRhythmGroup.prot\
-    o\"Y\n\"MusicRhythmSaveSongConfigDataCsReq\x123\n\x0bBAJEIALIBBM\x18\x0e\
-    \x20\x01(\x0b2\x11.MusicRhythmGroupR\x0bBAJEIALIBBMb\x06proto3\
+    o\"Y\n\"MusicRhythmSaveSongConfigDataCsReq\x123\n\x0bBENAFNHLCEO\x18\x06\
+    \x20\x01(\x0b2\x11.MusicRhythmGroupR\x0bBENAFNHLCEOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

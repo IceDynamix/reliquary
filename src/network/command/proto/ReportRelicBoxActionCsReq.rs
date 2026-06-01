@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ReportRelicBoxActionCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ReportRelicBoxActionCsReq.CEDIPEGBNDH)
-    pub CEDIPEGBNDH: u32,
+    // @@protoc_insertion_point(field:ReportRelicBoxActionCsReq.KCGLKFKHPIC)
+    pub KCGLKFKHPIC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ReportRelicBoxActionCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ReportRelicBoxActionCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEDIPEGBNDH",
-            |m: &ReportRelicBoxActionCsReq| { &m.CEDIPEGBNDH },
-            |m: &mut ReportRelicBoxActionCsReq| { &mut m.CEDIPEGBNDH },
+            "KCGLKFKHPIC",
+            |m: &ReportRelicBoxActionCsReq| { &m.KCGLKFKHPIC },
+            |m: &mut ReportRelicBoxActionCsReq| { &mut m.KCGLKFKHPIC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ReportRelicBoxActionCsReq>(
             "ReportRelicBoxActionCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.CEDIPEGBNDH = is.read_uint32()?;
+                88 => {
+                    self.KCGLKFKHPIC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CEDIPEGBNDH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.CEDIPEGBNDH);
+        if self.KCGLKFKHPIC != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.KCGLKFKHPIC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CEDIPEGBNDH != 0 {
-            os.write_uint32(5, self.CEDIPEGBNDH)?;
+        if self.KCGLKFKHPIC != 0 {
+            os.write_uint32(11, self.KCGLKFKHPIC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ReportRelicBoxActionCsReq {
     }
 
     fn clear(&mut self) {
-        self.CEDIPEGBNDH = 0;
+        self.KCGLKFKHPIC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ReportRelicBoxActionCsReq {
         static instance: ReportRelicBoxActionCsReq = ReportRelicBoxActionCsReq {
-            CEDIPEGBNDH: 0,
+            KCGLKFKHPIC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ReportRelicBoxActionCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fReportRelicBoxActionCsReq.proto\"=\n\x19ReportRelicBoxActionCsReq\
-    \x12\x20\n\x0bCEDIPEGBNDH\x18\x05\x20\x01(\rR\x0bCEDIPEGBNDHb\x06proto3\
+    \x12\x20\n\x0bKCGLKFKHPIC\x18\x0b\x20\x01(\rR\x0bKCGLKFKHPICb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

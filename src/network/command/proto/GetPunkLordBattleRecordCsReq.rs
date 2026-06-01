@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPunkLordBattleRecordCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetPunkLordBattleRecordCsReq.JIPALBLOPFI)
-    pub JIPALBLOPFI: ::protobuf::MessageField<super::JLLIDDIBOHI::JLLIDDIBOHI>,
+    // @@protoc_insertion_point(field:GetPunkLordBattleRecordCsReq.KHOLBEGBFOM)
+    pub KHOLBEGBFOM: ::protobuf::MessageField<super::CDCCPHILOCC::CDCCPHILOCC>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPunkLordBattleRecordCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl GetPunkLordBattleRecordCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JLLIDDIBOHI::JLLIDDIBOHI>(
-            "JIPALBLOPFI",
-            |m: &GetPunkLordBattleRecordCsReq| { &m.JIPALBLOPFI },
-            |m: &mut GetPunkLordBattleRecordCsReq| { &mut m.JIPALBLOPFI },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CDCCPHILOCC::CDCCPHILOCC>(
+            "KHOLBEGBFOM",
+            |m: &GetPunkLordBattleRecordCsReq| { &m.KHOLBEGBFOM },
+            |m: &mut GetPunkLordBattleRecordCsReq| { &mut m.KHOLBEGBFOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPunkLordBattleRecordCsReq>(
             "GetPunkLordBattleRecordCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for GetPunkLordBattleRecordCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.JIPALBLOPFI)?;
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KHOLBEGBFOM)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for GetPunkLordBattleRecordCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.JIPALBLOPFI.as_ref() {
+        if let Some(v) = self.KHOLBEGBFOM.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for GetPunkLordBattleRecordCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.JIPALBLOPFI.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        if let Some(v) = self.KHOLBEGBFOM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for GetPunkLordBattleRecordCsReq {
     }
 
     fn clear(&mut self) {
-        self.JIPALBLOPFI.clear();
+        self.KHOLBEGBFOM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPunkLordBattleRecordCsReq {
         static instance: GetPunkLordBattleRecordCsReq = GetPunkLordBattleRecordCsReq {
-            JIPALBLOPFI: ::protobuf::MessageField::none(),
+            KHOLBEGBFOM: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for GetPunkLordBattleRecordCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"GetPunkLordBattleRecordCsReq.proto\x1a\x11JLLIDDIBOHI.proto\"N\n\x1c\
-    GetPunkLordBattleRecordCsReq\x12.\n\x0bJIPALBLOPFI\x18\x0c\x20\x01(\x0b2\
-    \x0c.JLLIDDIBOHIR\x0bJIPALBLOPFIb\x06proto3\
+    \n\"GetPunkLordBattleRecordCsReq.proto\x1a\x11CDCCPHILOCC.proto\"N\n\x1c\
+    GetPunkLordBattleRecordCsReq\x12.\n\x0bKHOLBEGBFOM\x18\n\x20\x01(\x0b2\
+    \x0c.CDCCPHILOCCR\x0bKHOLBEGBFOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JLLIDDIBOHI::file_descriptor().clone());
+            deps.push(super::CDCCPHILOCC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetPunkLordBattleRecordCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:PlanetFesQuestState)
 pub enum PlanetFesQuestState {
-    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.GKBAMPAGNBE_ALDGOGPGNMO)
-    GKBAMPAGNBE_ALDGOGPGNMO = 0,
-    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.GKBAMPAGNBE_BIJPCHOLDCP)
-    GKBAMPAGNBE_BIJPCHOLDCP = 1,
-    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.GKBAMPAGNBE_GMHJJBKDNMN)
-    GKBAMPAGNBE_GMHJJBKDNMN = 2,
-    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.GKBAMPAGNBE_EFIGICJNEIM)
-    GKBAMPAGNBE_EFIGICJNEIM = 3,
+    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.CNLAEDCLICP_MDPJCGEMOLG)
+    CNLAEDCLICP_MDPJCGEMOLG = 0,
+    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.CNLAEDCLICP_GBJIHFOIGHD)
+    CNLAEDCLICP_GBJIHFOIGHD = 1,
+    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.CNLAEDCLICP_BILKPNLJBFA)
+    CNLAEDCLICP_BILKPNLJBFA = 2,
+    // @@protoc_insertion_point(enum_value:PlanetFesQuestState.CNLAEDCLICP_CGIIKAHOIKL)
+    CNLAEDCLICP_CGIIKAHOIKL = 3,
 }
 
 impl ::protobuf::Enum for PlanetFesQuestState {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for PlanetFesQuestState {
 
     fn from_i32(value: i32) -> ::std::option::Option<PlanetFesQuestState> {
         match value {
-            0 => ::std::option::Option::Some(PlanetFesQuestState::GKBAMPAGNBE_ALDGOGPGNMO),
-            1 => ::std::option::Option::Some(PlanetFesQuestState::GKBAMPAGNBE_BIJPCHOLDCP),
-            2 => ::std::option::Option::Some(PlanetFesQuestState::GKBAMPAGNBE_GMHJJBKDNMN),
-            3 => ::std::option::Option::Some(PlanetFesQuestState::GKBAMPAGNBE_EFIGICJNEIM),
+            0 => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_MDPJCGEMOLG),
+            1 => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_GBJIHFOIGHD),
+            2 => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_BILKPNLJBFA),
+            3 => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_CGIIKAHOIKL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<PlanetFesQuestState> {
         match str {
-            "GKBAMPAGNBE_ALDGOGPGNMO" => ::std::option::Option::Some(PlanetFesQuestState::GKBAMPAGNBE_ALDGOGPGNMO),
-            "GKBAMPAGNBE_BIJPCHOLDCP" => ::std::option::Option::Some(PlanetFesQuestState::GKBAMPAGNBE_BIJPCHOLDCP),
-            "GKBAMPAGNBE_GMHJJBKDNMN" => ::std::option::Option::Some(PlanetFesQuestState::GKBAMPAGNBE_GMHJJBKDNMN),
-            "GKBAMPAGNBE_EFIGICJNEIM" => ::std::option::Option::Some(PlanetFesQuestState::GKBAMPAGNBE_EFIGICJNEIM),
+            "CNLAEDCLICP_MDPJCGEMOLG" => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_MDPJCGEMOLG),
+            "CNLAEDCLICP_GBJIHFOIGHD" => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_GBJIHFOIGHD),
+            "CNLAEDCLICP_BILKPNLJBFA" => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_BILKPNLJBFA),
+            "CNLAEDCLICP_CGIIKAHOIKL" => ::std::option::Option::Some(PlanetFesQuestState::CNLAEDCLICP_CGIIKAHOIKL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PlanetFesQuestState] = &[
-        PlanetFesQuestState::GKBAMPAGNBE_ALDGOGPGNMO,
-        PlanetFesQuestState::GKBAMPAGNBE_BIJPCHOLDCP,
-        PlanetFesQuestState::GKBAMPAGNBE_GMHJJBKDNMN,
-        PlanetFesQuestState::GKBAMPAGNBE_EFIGICJNEIM,
+        PlanetFesQuestState::CNLAEDCLICP_MDPJCGEMOLG,
+        PlanetFesQuestState::CNLAEDCLICP_GBJIHFOIGHD,
+        PlanetFesQuestState::CNLAEDCLICP_BILKPNLJBFA,
+        PlanetFesQuestState::CNLAEDCLICP_CGIIKAHOIKL,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for PlanetFesQuestState {
 
 impl ::std::default::Default for PlanetFesQuestState {
     fn default() -> Self {
-        PlanetFesQuestState::GKBAMPAGNBE_ALDGOGPGNMO
+        PlanetFesQuestState::CNLAEDCLICP_MDPJCGEMOLG
     }
 }
 
@@ -98,9 +98,9 @@ impl PlanetFesQuestState {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19PlanetFesQuestState.proto*\x89\x01\n\x13PlanetFesQuestState\x12\
-    \x1b\n\x17GKBAMPAGNBE_ALDGOGPGNMO\x10\0\x12\x1b\n\x17GKBAMPAGNBE_BIJPCHO\
-    LDCP\x10\x01\x12\x1b\n\x17GKBAMPAGNBE_GMHJJBKDNMN\x10\x02\x12\x1b\n\x17G\
-    KBAMPAGNBE_EFIGICJNEIM\x10\x03b\x06proto3\
+    \x1b\n\x17CNLAEDCLICP_MDPJCGEMOLG\x10\0\x12\x1b\n\x17CNLAEDCLICP_GBJIHFO\
+    IGHD\x10\x01\x12\x1b\n\x17CNLAEDCLICP_BILKPNLJBFA\x10\x02\x12\x1b\n\x17C\
+    NLAEDCLICP_CGIIKAHOIKL\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

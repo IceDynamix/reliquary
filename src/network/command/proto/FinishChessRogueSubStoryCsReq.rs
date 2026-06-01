@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishChessRogueSubStoryCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishChessRogueSubStoryCsReq.IENBKIAGPBA)
-    pub IENBKIAGPBA: u32,
+    // @@protoc_insertion_point(field:FinishChessRogueSubStoryCsReq.HONCDMKPBEG)
+    pub HONCDMKPBEG: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishChessRogueSubStoryCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FinishChessRogueSubStoryCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IENBKIAGPBA",
-            |m: &FinishChessRogueSubStoryCsReq| { &m.IENBKIAGPBA },
-            |m: &mut FinishChessRogueSubStoryCsReq| { &mut m.IENBKIAGPBA },
+            "HONCDMKPBEG",
+            |m: &FinishChessRogueSubStoryCsReq| { &m.HONCDMKPBEG },
+            |m: &mut FinishChessRogueSubStoryCsReq| { &mut m.HONCDMKPBEG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishChessRogueSubStoryCsReq>(
             "FinishChessRogueSubStoryCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FinishChessRogueSubStoryCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.IENBKIAGPBA = is.read_uint32()?;
+                8 => {
+                    self.HONCDMKPBEG = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FinishChessRogueSubStoryCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.IENBKIAGPBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IENBKIAGPBA);
+        if self.HONCDMKPBEG != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.HONCDMKPBEG);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FinishChessRogueSubStoryCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.IENBKIAGPBA != 0 {
-            os.write_uint32(15, self.IENBKIAGPBA)?;
+        if self.HONCDMKPBEG != 0 {
+            os.write_uint32(1, self.HONCDMKPBEG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FinishChessRogueSubStoryCsReq {
     }
 
     fn clear(&mut self) {
-        self.IENBKIAGPBA = 0;
+        self.HONCDMKPBEG = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishChessRogueSubStoryCsReq {
         static instance: FinishChessRogueSubStoryCsReq = FinishChessRogueSubStoryCsReq {
-            IENBKIAGPBA: 0,
+            HONCDMKPBEG: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for FinishChessRogueSubStoryCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#FinishChessRogueSubStoryCsReq.proto\"A\n\x1dFinishChessRogueSubStoryC\
-    sReq\x12\x20\n\x0bIENBKIAGPBA\x18\x0f\x20\x01(\rR\x0bIENBKIAGPBAb\x06pro\
+    sReq\x12\x20\n\x0bHONCDMKPBEG\x18\x01\x20\x01(\rR\x0bHONCDMKPBEGb\x06pro\
     to3\
 ";
 

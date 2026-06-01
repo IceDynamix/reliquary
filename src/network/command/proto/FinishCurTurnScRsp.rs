@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishCurTurnScRsp {
     // message fields
-    // @@protoc_insertion_point(field:FinishCurTurnScRsp.KDOIMEHEEOG)
-    pub KDOIMEHEEOG: u32,
     // @@protoc_insertion_point(field:FinishCurTurnScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:FinishCurTurnScRsp.CFLKHBLIDNC)
+    pub CFLKHBLIDNC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishCurTurnScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FinishCurTurnScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KDOIMEHEEOG",
-            |m: &FinishCurTurnScRsp| { &m.KDOIMEHEEOG },
-            |m: &mut FinishCurTurnScRsp| { &mut m.KDOIMEHEEOG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &FinishCurTurnScRsp| { &m.retcode },
             |m: &mut FinishCurTurnScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CFLKHBLIDNC",
+            |m: &FinishCurTurnScRsp| { &m.CFLKHBLIDNC },
+            |m: &mut FinishCurTurnScRsp| { &mut m.CFLKHBLIDNC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishCurTurnScRsp>(
             "FinishCurTurnScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FinishCurTurnScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.KDOIMEHEEOG = is.read_uint32()?;
-                },
-                104 => {
+                24 => {
                     self.retcode = is.read_uint32()?;
+                },
+                112 => {
+                    self.CFLKHBLIDNC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FinishCurTurnScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KDOIMEHEEOG != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.KDOIMEHEEOG);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+        }
+        if self.CFLKHBLIDNC != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.CFLKHBLIDNC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FinishCurTurnScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KDOIMEHEEOG != 0 {
-            os.write_uint32(11, self.KDOIMEHEEOG)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
+        }
+        if self.CFLKHBLIDNC != 0 {
+            os.write_uint32(14, self.CFLKHBLIDNC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FinishCurTurnScRsp {
     }
 
     fn clear(&mut self) {
-        self.KDOIMEHEEOG = 0;
         self.retcode = 0;
+        self.CFLKHBLIDNC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishCurTurnScRsp {
         static instance: FinishCurTurnScRsp = FinishCurTurnScRsp {
-            KDOIMEHEEOG: 0,
             retcode: 0,
+            CFLKHBLIDNC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FinishCurTurnScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18FinishCurTurnScRsp.proto\"P\n\x12FinishCurTurnScRsp\x12\x20\n\x0bK\
-    DOIMEHEEOG\x18\x0b\x20\x01(\rR\x0bKDOIMEHEEOG\x12\x18\n\x07retcode\x18\r\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x18FinishCurTurnScRsp.proto\"P\n\x12FinishCurTurnScRsp\x12\x18\n\x07r\
+    etcode\x18\x03\x20\x01(\rR\x07retcode\x12\x20\n\x0bCFLKHBLIDNC\x18\x0e\
+    \x20\x01(\rR\x0bCFLKHBLIDNCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

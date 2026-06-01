@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MakeMissionDrinkCsReq {
     // message fields
+    // @@protoc_insertion_point(field:MakeMissionDrinkCsReq.AGCBLNPHFCI)
+    pub AGCBLNPHFCI: ::protobuf::MessageField<super::DFJPGILAAON::DFJPGILAAON>,
+    // @@protoc_insertion_point(field:MakeMissionDrinkCsReq.CJGGHHCILMD)
+    pub CJGGHHCILMD: u32,
     // @@protoc_insertion_point(field:MakeMissionDrinkCsReq.is_save)
     pub is_save: bool,
-    // @@protoc_insertion_point(field:MakeMissionDrinkCsReq.JACCJGBGJOA)
-    pub JACCJGBGJOA: u32,
-    // @@protoc_insertion_point(field:MakeMissionDrinkCsReq.IHDMLHFAEKH)
-    pub IHDMLHFAEKH: ::protobuf::MessageField<super::CIGKBDIGGOI::CIGKBDIGGOI>,
     // special fields
     // @@protoc_insertion_point(special_field:MakeMissionDrinkCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl MakeMissionDrinkCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFJPGILAAON::DFJPGILAAON>(
+            "AGCBLNPHFCI",
+            |m: &MakeMissionDrinkCsReq| { &m.AGCBLNPHFCI },
+            |m: &mut MakeMissionDrinkCsReq| { &mut m.AGCBLNPHFCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CJGGHHCILMD",
+            |m: &MakeMissionDrinkCsReq| { &m.CJGGHHCILMD },
+            |m: &mut MakeMissionDrinkCsReq| { &mut m.CJGGHHCILMD },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_save",
             |m: &MakeMissionDrinkCsReq| { &m.is_save },
             |m: &mut MakeMissionDrinkCsReq| { &mut m.is_save },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JACCJGBGJOA",
-            |m: &MakeMissionDrinkCsReq| { &m.JACCJGBGJOA },
-            |m: &mut MakeMissionDrinkCsReq| { &mut m.JACCJGBGJOA },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CIGKBDIGGOI::CIGKBDIGGOI>(
-            "IHDMLHFAEKH",
-            |m: &MakeMissionDrinkCsReq| { &m.IHDMLHFAEKH },
-            |m: &mut MakeMissionDrinkCsReq| { &mut m.IHDMLHFAEKH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MakeMissionDrinkCsReq>(
             "MakeMissionDrinkCsReq",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for MakeMissionDrinkCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AGCBLNPHFCI)?;
+                },
+                64 => {
+                    self.CJGGHHCILMD = is.read_uint32()?;
+                },
+                96 => {
                     self.is_save = is.read_bool()?;
-                },
-                8 => {
-                    self.JACCJGBGJOA = is.read_uint32()?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IHDMLHFAEKH)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for MakeMissionDrinkCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_save != false {
-            my_size += 1 + 1;
-        }
-        if self.JACCJGBGJOA != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.JACCJGBGJOA);
-        }
-        if let Some(v) = self.IHDMLHFAEKH.as_ref() {
+        if let Some(v) = self.AGCBLNPHFCI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.CJGGHHCILMD != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.CJGGHHCILMD);
+        }
+        if self.is_save != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for MakeMissionDrinkCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.AGCBLNPHFCI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if self.CJGGHHCILMD != 0 {
+            os.write_uint32(8, self.CJGGHHCILMD)?;
+        }
         if self.is_save != false {
-            os.write_bool(14, self.is_save)?;
-        }
-        if self.JACCJGBGJOA != 0 {
-            os.write_uint32(1, self.JACCJGBGJOA)?;
-        }
-        if let Some(v) = self.IHDMLHFAEKH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            os.write_bool(12, self.is_save)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for MakeMissionDrinkCsReq {
     }
 
     fn clear(&mut self) {
+        self.AGCBLNPHFCI.clear();
+        self.CJGGHHCILMD = 0;
         self.is_save = false;
-        self.JACCJGBGJOA = 0;
-        self.IHDMLHFAEKH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MakeMissionDrinkCsReq {
         static instance: MakeMissionDrinkCsReq = MakeMissionDrinkCsReq {
+            AGCBLNPHFCI: ::protobuf::MessageField::none(),
+            CJGGHHCILMD: 0,
             is_save: false,
-            JACCJGBGJOA: 0,
-            IHDMLHFAEKH: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for MakeMissionDrinkCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bMakeMissionDrinkCsReq.proto\x1a\x11CIGKBDIGGOI.proto\"\x82\x01\n\
-    \x15MakeMissionDrinkCsReq\x12\x17\n\x07is_save\x18\x0e\x20\x01(\x08R\x06\
-    isSave\x12\x20\n\x0bJACCJGBGJOA\x18\x01\x20\x01(\rR\x0bJACCJGBGJOA\x12.\
-    \n\x0bIHDMLHFAEKH\x18\x0b\x20\x01(\x0b2\x0c.CIGKBDIGGOIR\x0bIHDMLHFAEKHb\
-    \x06proto3\
+    \n\x1bMakeMissionDrinkCsReq.proto\x1a\x11DFJPGILAAON.proto\"\x82\x01\n\
+    \x15MakeMissionDrinkCsReq\x12.\n\x0bAGCBLNPHFCI\x18\x01\x20\x01(\x0b2\
+    \x0c.DFJPGILAAONR\x0bAGCBLNPHFCI\x12\x20\n\x0bCJGGHHCILMD\x18\x08\x20\
+    \x01(\rR\x0bCJGGHHCILMD\x12\x17\n\x07is_save\x18\x0c\x20\x01(\x08R\x06is\
+    Saveb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CIGKBDIGGOI::file_descriptor().clone());
+            deps.push(super::DFJPGILAAON::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MakeMissionDrinkCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

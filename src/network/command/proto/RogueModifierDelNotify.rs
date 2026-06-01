@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueModifierDelNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueModifierDelNotify.PIMNEEFDAGE)
-    pub PIMNEEFDAGE: u64,
+    // @@protoc_insertion_point(field:RogueModifierDelNotify.FCHLCANJIGL)
+    pub FCHLCANJIGL: u64,
     // special fields
     // @@protoc_insertion_point(special_field:RogueModifierDelNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueModifierDelNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PIMNEEFDAGE",
-            |m: &RogueModifierDelNotify| { &m.PIMNEEFDAGE },
-            |m: &mut RogueModifierDelNotify| { &mut m.PIMNEEFDAGE },
+            "FCHLCANJIGL",
+            |m: &RogueModifierDelNotify| { &m.FCHLCANJIGL },
+            |m: &mut RogueModifierDelNotify| { &mut m.FCHLCANJIGL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueModifierDelNotify>(
             "RogueModifierDelNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueModifierDelNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.PIMNEEFDAGE = is.read_uint64()?;
+                72 => {
+                    self.FCHLCANJIGL = is.read_uint64()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for RogueModifierDelNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PIMNEEFDAGE != 0 {
-            my_size += ::protobuf::rt::uint64_size(2, self.PIMNEEFDAGE);
+        if self.FCHLCANJIGL != 0 {
+            my_size += ::protobuf::rt::uint64_size(9, self.FCHLCANJIGL);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RogueModifierDelNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PIMNEEFDAGE != 0 {
-            os.write_uint64(2, self.PIMNEEFDAGE)?;
+        if self.FCHLCANJIGL != 0 {
+            os.write_uint64(9, self.FCHLCANJIGL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RogueModifierDelNotify {
     }
 
     fn clear(&mut self) {
-        self.PIMNEEFDAGE = 0;
+        self.FCHLCANJIGL = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueModifierDelNotify {
         static instance: RogueModifierDelNotify = RogueModifierDelNotify {
-            PIMNEEFDAGE: 0,
+            FCHLCANJIGL: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueModifierDelNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cRogueModifierDelNotify.proto\":\n\x16RogueModifierDelNotify\x12\
-    \x20\n\x0bPIMNEEFDAGE\x18\x02\x20\x01(\x04R\x0bPIMNEEFDAGEb\x06proto3\
+    \x20\n\x0bFCHLCANJIGL\x18\t\x20\x01(\x04R\x0bFCHLCANJIGLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

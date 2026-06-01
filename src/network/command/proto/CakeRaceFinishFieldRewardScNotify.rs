@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CakeRaceFinishFieldRewardScNotify {
     // message fields
-    // @@protoc_insertion_point(field:CakeRaceFinishFieldRewardScNotify.JAFNCOMGABG)
-    pub JAFNCOMGABG: u32,
     // @@protoc_insertion_point(field:CakeRaceFinishFieldRewardScNotify.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:CakeRaceFinishFieldRewardScNotify.LOPNADHJKBF)
+    pub LOPNADHJKBF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CakeRaceFinishFieldRewardScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl CakeRaceFinishFieldRewardScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JAFNCOMGABG",
-            |m: &CakeRaceFinishFieldRewardScNotify| { &m.JAFNCOMGABG },
-            |m: &mut CakeRaceFinishFieldRewardScNotify| { &mut m.JAFNCOMGABG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &CakeRaceFinishFieldRewardScNotify| { &m.reward },
             |m: &mut CakeRaceFinishFieldRewardScNotify| { &mut m.reward },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LOPNADHJKBF",
+            |m: &CakeRaceFinishFieldRewardScNotify| { &m.LOPNADHJKBF },
+            |m: &mut CakeRaceFinishFieldRewardScNotify| { &mut m.LOPNADHJKBF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CakeRaceFinishFieldRewardScNotify>(
             "CakeRaceFinishFieldRewardScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CakeRaceFinishFieldRewardScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.JAFNCOMGABG = is.read_uint32()?;
-                },
-                82 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                },
+                112 => {
+                    self.LOPNADHJKBF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for CakeRaceFinishFieldRewardScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JAFNCOMGABG != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JAFNCOMGABG);
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.LOPNADHJKBF != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LOPNADHJKBF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for CakeRaceFinishFieldRewardScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JAFNCOMGABG != 0 {
-            os.write_uint32(14, self.JAFNCOMGABG)?;
-        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.LOPNADHJKBF != 0 {
+            os.write_uint32(14, self.LOPNADHJKBF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for CakeRaceFinishFieldRewardScNotify {
     }
 
     fn clear(&mut self) {
-        self.JAFNCOMGABG = 0;
         self.reward.clear();
+        self.LOPNADHJKBF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CakeRaceFinishFieldRewardScNotify {
         static instance: CakeRaceFinishFieldRewardScNotify = CakeRaceFinishFieldRewardScNotify {
-            JAFNCOMGABG: 0,
             reward: ::protobuf::MessageField::none(),
+            LOPNADHJKBF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for CakeRaceFinishFieldRewardScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'CakeRaceFinishFieldRewardScNotify.proto\x1a\x0eItemList.proto\"h\n!Ca\
-    keRaceFinishFieldRewardScNotify\x12\x20\n\x0bJAFNCOMGABG\x18\x0e\x20\x01\
-    (\rR\x0bJAFNCOMGABG\x12!\n\x06reward\x18\n\x20\x01(\x0b2\t.ItemListR\x06\
-    rewardb\x06proto3\
+    keRaceFinishFieldRewardScNotify\x12!\n\x06reward\x18\x05\x20\x01(\x0b2\t\
+    .ItemListR\x06reward\x12\x20\n\x0bLOPNADHJKBF\x18\x0e\x20\x01(\rR\x0bLOP\
+    NADHJKBFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

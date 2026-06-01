@@ -27,8 +27,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFightDiceCombatType)
 pub enum CmdFightDiceCombatType {
-    // @@protoc_insertion_point(enum_value:CmdFightDiceCombatType.MOIJFMEGOGC_PCPDHELPKEM)
-    MOIJFMEGOGC_PCPDHELPKEM = 0,
+    // @@protoc_insertion_point(enum_value:CmdFightDiceCombatType.FKFINHPOMMA_NLCDGIPGFDJ)
+    FKFINHPOMMA_NLCDGIPGFDJ = 0,
 }
 
 impl ::protobuf::Enum for CmdFightDiceCombatType {
@@ -40,20 +40,20 @@ impl ::protobuf::Enum for CmdFightDiceCombatType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightDiceCombatType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFightDiceCombatType::MOIJFMEGOGC_PCPDHELPKEM),
+            0 => ::std::option::Option::Some(CmdFightDiceCombatType::FKFINHPOMMA_NLCDGIPGFDJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFightDiceCombatType> {
         match str {
-            "MOIJFMEGOGC_PCPDHELPKEM" => ::std::option::Option::Some(CmdFightDiceCombatType::MOIJFMEGOGC_PCPDHELPKEM),
+            "FKFINHPOMMA_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdFightDiceCombatType::FKFINHPOMMA_NLCDGIPGFDJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFightDiceCombatType] = &[
-        CmdFightDiceCombatType::MOIJFMEGOGC_PCPDHELPKEM,
+        CmdFightDiceCombatType::FKFINHPOMMA_NLCDGIPGFDJ,
     ];
 }
 
@@ -71,7 +71,7 @@ impl ::protobuf::EnumFull for CmdFightDiceCombatType {
 
 impl ::std::default::Default for CmdFightDiceCombatType {
     fn default() -> Self {
-        CmdFightDiceCombatType::MOIJFMEGOGC_PCPDHELPKEM
+        CmdFightDiceCombatType::FKFINHPOMMA_NLCDGIPGFDJ
     }
 }
 
@@ -83,7 +83,7 @@ impl CmdFightDiceCombatType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cCmdFightDiceCombatType.proto*5\n\x16CmdFightDiceCombatType\x12\x1b\
-    \n\x17MOIJFMEGOGC_PCPDHELPKEM\x10\0b\x06proto3\
+    \n\x17FKFINHPOMMA_NLCDGIPGFDJ\x10\0b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

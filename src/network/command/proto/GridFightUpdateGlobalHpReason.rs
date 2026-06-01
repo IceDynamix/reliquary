@@ -27,24 +27,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GridFightUpdateGlobalHpReason)
 pub enum GridFightUpdateGlobalHpReason {
-    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.BAKGGPNHNNE_AJBMADNDIGH)
-    BAKGGPNHNNE_AJBMADNDIGH = 0,
-    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.BAKGGPNHNNE_AHIKONFEBMJ)
-    BAKGGPNHNNE_AHIKONFEBMJ = 1,
-    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.BAKGGPNHNNE_IKHLILHAIOL)
-    BAKGGPNHNNE_IKHLILHAIOL = 2,
-    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.BAKGGPNHNNE_PONICJJABEK)
-    BAKGGPNHNNE_PONICJJABEK = 3,
-    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.BAKGGPNHNNE_GPDHIBAFDCG)
-    BAKGGPNHNNE_GPDHIBAFDCG = 4,
-    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.BAKGGPNHNNE_GFIMNCCFKIK)
-    BAKGGPNHNNE_GFIMNCCFKIK = 101,
-    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.BAKGGPNHNNE_BCGPOLHOHKF)
-    BAKGGPNHNNE_BCGPOLHOHKF = 102,
-    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.BAKGGPNHNNE_DAHNCIDKFCP)
-    BAKGGPNHNNE_DAHNCIDKFCP = 103,
-    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.BAKGGPNHNNE_DCKGDADPJLH)
-    BAKGGPNHNNE_DCKGDADPJLH = 201,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.DFIJIBKBEJL_IHNDJOLCKDI)
+    DFIJIBKBEJL_IHNDJOLCKDI = 0,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.DFIJIBKBEJL_FDKCPHMMFCD)
+    DFIJIBKBEJL_FDKCPHMMFCD = 1,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.DFIJIBKBEJL_IEGEHAKDEHA)
+    DFIJIBKBEJL_IEGEHAKDEHA = 2,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.DFIJIBKBEJL_KEOPICGMGPI)
+    DFIJIBKBEJL_KEOPICGMGPI = 3,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.DFIJIBKBEJL_AAMHKFPCFPO)
+    DFIJIBKBEJL_AAMHKFPCFPO = 4,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.DFIJIBKBEJL_LGCCNHOBMAP)
+    DFIJIBKBEJL_LGCCNHOBMAP = 101,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.DFIJIBKBEJL_HBGPPEHGINP)
+    DFIJIBKBEJL_HBGPPEHGINP = 102,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.DFIJIBKBEJL_CJDPIHFECNJ)
+    DFIJIBKBEJL_CJDPIHFECNJ = 103,
+    // @@protoc_insertion_point(enum_value:GridFightUpdateGlobalHpReason.DFIJIBKBEJL_AEKPBHCLJAN)
+    DFIJIBKBEJL_AEKPBHCLJAN = 201,
 }
 
 impl ::protobuf::Enum for GridFightUpdateGlobalHpReason {
@@ -56,44 +56,44 @@ impl ::protobuf::Enum for GridFightUpdateGlobalHpReason {
 
     fn from_i32(value: i32) -> ::std::option::Option<GridFightUpdateGlobalHpReason> {
         match value {
-            0 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_AJBMADNDIGH),
-            1 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_AHIKONFEBMJ),
-            2 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_IKHLILHAIOL),
-            3 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_PONICJJABEK),
-            4 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_GPDHIBAFDCG),
-            101 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_GFIMNCCFKIK),
-            102 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_BCGPOLHOHKF),
-            103 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_DAHNCIDKFCP),
-            201 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_DCKGDADPJLH),
+            0 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_IHNDJOLCKDI),
+            1 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_FDKCPHMMFCD),
+            2 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_IEGEHAKDEHA),
+            3 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_KEOPICGMGPI),
+            4 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_AAMHKFPCFPO),
+            101 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_LGCCNHOBMAP),
+            102 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_HBGPPEHGINP),
+            103 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_CJDPIHFECNJ),
+            201 => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_AEKPBHCLJAN),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GridFightUpdateGlobalHpReason> {
         match str {
-            "BAKGGPNHNNE_AJBMADNDIGH" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_AJBMADNDIGH),
-            "BAKGGPNHNNE_AHIKONFEBMJ" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_AHIKONFEBMJ),
-            "BAKGGPNHNNE_IKHLILHAIOL" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_IKHLILHAIOL),
-            "BAKGGPNHNNE_PONICJJABEK" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_PONICJJABEK),
-            "BAKGGPNHNNE_GPDHIBAFDCG" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_GPDHIBAFDCG),
-            "BAKGGPNHNNE_GFIMNCCFKIK" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_GFIMNCCFKIK),
-            "BAKGGPNHNNE_BCGPOLHOHKF" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_BCGPOLHOHKF),
-            "BAKGGPNHNNE_DAHNCIDKFCP" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_DAHNCIDKFCP),
-            "BAKGGPNHNNE_DCKGDADPJLH" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::BAKGGPNHNNE_DCKGDADPJLH),
+            "DFIJIBKBEJL_IHNDJOLCKDI" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_IHNDJOLCKDI),
+            "DFIJIBKBEJL_FDKCPHMMFCD" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_FDKCPHMMFCD),
+            "DFIJIBKBEJL_IEGEHAKDEHA" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_IEGEHAKDEHA),
+            "DFIJIBKBEJL_KEOPICGMGPI" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_KEOPICGMGPI),
+            "DFIJIBKBEJL_AAMHKFPCFPO" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_AAMHKFPCFPO),
+            "DFIJIBKBEJL_LGCCNHOBMAP" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_LGCCNHOBMAP),
+            "DFIJIBKBEJL_HBGPPEHGINP" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_HBGPPEHGINP),
+            "DFIJIBKBEJL_CJDPIHFECNJ" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_CJDPIHFECNJ),
+            "DFIJIBKBEJL_AEKPBHCLJAN" => ::std::option::Option::Some(GridFightUpdateGlobalHpReason::DFIJIBKBEJL_AEKPBHCLJAN),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GridFightUpdateGlobalHpReason] = &[
-        GridFightUpdateGlobalHpReason::BAKGGPNHNNE_AJBMADNDIGH,
-        GridFightUpdateGlobalHpReason::BAKGGPNHNNE_AHIKONFEBMJ,
-        GridFightUpdateGlobalHpReason::BAKGGPNHNNE_IKHLILHAIOL,
-        GridFightUpdateGlobalHpReason::BAKGGPNHNNE_PONICJJABEK,
-        GridFightUpdateGlobalHpReason::BAKGGPNHNNE_GPDHIBAFDCG,
-        GridFightUpdateGlobalHpReason::BAKGGPNHNNE_GFIMNCCFKIK,
-        GridFightUpdateGlobalHpReason::BAKGGPNHNNE_BCGPOLHOHKF,
-        GridFightUpdateGlobalHpReason::BAKGGPNHNNE_DAHNCIDKFCP,
-        GridFightUpdateGlobalHpReason::BAKGGPNHNNE_DCKGDADPJLH,
+        GridFightUpdateGlobalHpReason::DFIJIBKBEJL_IHNDJOLCKDI,
+        GridFightUpdateGlobalHpReason::DFIJIBKBEJL_FDKCPHMMFCD,
+        GridFightUpdateGlobalHpReason::DFIJIBKBEJL_IEGEHAKDEHA,
+        GridFightUpdateGlobalHpReason::DFIJIBKBEJL_KEOPICGMGPI,
+        GridFightUpdateGlobalHpReason::DFIJIBKBEJL_AAMHKFPCFPO,
+        GridFightUpdateGlobalHpReason::DFIJIBKBEJL_LGCCNHOBMAP,
+        GridFightUpdateGlobalHpReason::DFIJIBKBEJL_HBGPPEHGINP,
+        GridFightUpdateGlobalHpReason::DFIJIBKBEJL_CJDPIHFECNJ,
+        GridFightUpdateGlobalHpReason::DFIJIBKBEJL_AEKPBHCLJAN,
     ];
 }
 
@@ -105,15 +105,15 @@ impl ::protobuf::EnumFull for GridFightUpdateGlobalHpReason {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            GridFightUpdateGlobalHpReason::BAKGGPNHNNE_AJBMADNDIGH => 0,
-            GridFightUpdateGlobalHpReason::BAKGGPNHNNE_AHIKONFEBMJ => 1,
-            GridFightUpdateGlobalHpReason::BAKGGPNHNNE_IKHLILHAIOL => 2,
-            GridFightUpdateGlobalHpReason::BAKGGPNHNNE_PONICJJABEK => 3,
-            GridFightUpdateGlobalHpReason::BAKGGPNHNNE_GPDHIBAFDCG => 4,
-            GridFightUpdateGlobalHpReason::BAKGGPNHNNE_GFIMNCCFKIK => 5,
-            GridFightUpdateGlobalHpReason::BAKGGPNHNNE_BCGPOLHOHKF => 6,
-            GridFightUpdateGlobalHpReason::BAKGGPNHNNE_DAHNCIDKFCP => 7,
-            GridFightUpdateGlobalHpReason::BAKGGPNHNNE_DCKGDADPJLH => 8,
+            GridFightUpdateGlobalHpReason::DFIJIBKBEJL_IHNDJOLCKDI => 0,
+            GridFightUpdateGlobalHpReason::DFIJIBKBEJL_FDKCPHMMFCD => 1,
+            GridFightUpdateGlobalHpReason::DFIJIBKBEJL_IEGEHAKDEHA => 2,
+            GridFightUpdateGlobalHpReason::DFIJIBKBEJL_KEOPICGMGPI => 3,
+            GridFightUpdateGlobalHpReason::DFIJIBKBEJL_AAMHKFPCFPO => 4,
+            GridFightUpdateGlobalHpReason::DFIJIBKBEJL_LGCCNHOBMAP => 5,
+            GridFightUpdateGlobalHpReason::DFIJIBKBEJL_HBGPPEHGINP => 6,
+            GridFightUpdateGlobalHpReason::DFIJIBKBEJL_CJDPIHFECNJ => 7,
+            GridFightUpdateGlobalHpReason::DFIJIBKBEJL_AEKPBHCLJAN => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for GridFightUpdateGlobalHpReason {
 
 impl ::std::default::Default for GridFightUpdateGlobalHpReason {
     fn default() -> Self {
-        GridFightUpdateGlobalHpReason::BAKGGPNHNNE_AJBMADNDIGH
+        GridFightUpdateGlobalHpReason::DFIJIBKBEJL_IHNDJOLCKDI
     }
 }
 
@@ -133,12 +133,12 @@ impl GridFightUpdateGlobalHpReason {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#GridFightUpdateGlobalHpReason.proto*\xa5\x02\n\x1dGridFightUpdateGlob\
-    alHpReason\x12\x1b\n\x17BAKGGPNHNNE_AJBMADNDIGH\x10\0\x12\x1b\n\x17BAKGG\
-    PNHNNE_AHIKONFEBMJ\x10\x01\x12\x1b\n\x17BAKGGPNHNNE_IKHLILHAIOL\x10\x02\
-    \x12\x1b\n\x17BAKGGPNHNNE_PONICJJABEK\x10\x03\x12\x1b\n\x17BAKGGPNHNNE_G\
-    PDHIBAFDCG\x10\x04\x12\x1b\n\x17BAKGGPNHNNE_GFIMNCCFKIK\x10e\x12\x1b\n\
-    \x17BAKGGPNHNNE_BCGPOLHOHKF\x10f\x12\x1b\n\x17BAKGGPNHNNE_DAHNCIDKFCP\
-    \x10g\x12\x1c\n\x17BAKGGPNHNNE_DCKGDADPJLH\x10\xc9\x01b\x06proto3\
+    alHpReason\x12\x1b\n\x17DFIJIBKBEJL_IHNDJOLCKDI\x10\0\x12\x1b\n\x17DFIJI\
+    BKBEJL_FDKCPHMMFCD\x10\x01\x12\x1b\n\x17DFIJIBKBEJL_IEGEHAKDEHA\x10\x02\
+    \x12\x1b\n\x17DFIJIBKBEJL_KEOPICGMGPI\x10\x03\x12\x1b\n\x17DFIJIBKBEJL_A\
+    AMHKFPCFPO\x10\x04\x12\x1b\n\x17DFIJIBKBEJL_LGCCNHOBMAP\x10e\x12\x1b\n\
+    \x17DFIJIBKBEJL_HBGPPEHGINP\x10f\x12\x1b\n\x17DFIJIBKBEJL_CJDPIHFECNJ\
+    \x10g\x12\x1c\n\x17DFIJIBKBEJL_AEKPBHCLJAN\x10\xc9\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

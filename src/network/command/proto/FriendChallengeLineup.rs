@@ -28,20 +28,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FriendChallengeLineup {
     // message fields
-    // @@protoc_insertion_point(field:FriendChallengeLineup.ABJGNBJMJJG)
-    pub ABJGNBJMJJG: u32,
-    // @@protoc_insertion_point(field:FriendChallengeLineup.buff_two)
-    pub buff_two: u32,
     // @@protoc_insertion_point(field:FriendChallengeLineup.remark_name)
     pub remark_name: ::std::string::String,
-    // @@protoc_insertion_point(field:FriendChallengeLineup.score_id)
-    pub score_id: u32,
-    // @@protoc_insertion_point(field:FriendChallengeLineup.lineup_list)
-    pub lineup_list: ::std::vec::Vec<super::ChallengeLineupList::ChallengeLineupList>,
     // @@protoc_insertion_point(field:FriendChallengeLineup.player_info)
     pub player_info: ::protobuf::MessageField<super::PlayerSimpleInfo::PlayerSimpleInfo>,
+    // @@protoc_insertion_point(field:FriendChallengeLineup.lineup_list)
+    pub lineup_list: ::std::vec::Vec<super::ChallengeLineupList::ChallengeLineupList>,
+    // @@protoc_insertion_point(field:FriendChallengeLineup.buff_two)
+    pub buff_two: u32,
     // @@protoc_insertion_point(field:FriendChallengeLineup.buff_one)
     pub buff_one: u32,
+    // @@protoc_insertion_point(field:FriendChallengeLineup.score_id)
+    pub score_id: u32,
+    // @@protoc_insertion_point(field:FriendChallengeLineup.EEJCPNAEKLJ)
+    pub EEJCPNAEKLJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FriendChallengeLineup.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,9 +62,19 @@ impl FriendChallengeLineup {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ABJGNBJMJJG",
-            |m: &FriendChallengeLineup| { &m.ABJGNBJMJJG },
-            |m: &mut FriendChallengeLineup| { &mut m.ABJGNBJMJJG },
+            "remark_name",
+            |m: &FriendChallengeLineup| { &m.remark_name },
+            |m: &mut FriendChallengeLineup| { &mut m.remark_name },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
+            "player_info",
+            |m: &FriendChallengeLineup| { &m.player_info },
+            |m: &mut FriendChallengeLineup| { &mut m.player_info },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "lineup_list",
+            |m: &FriendChallengeLineup| { &m.lineup_list },
+            |m: &mut FriendChallengeLineup| { &mut m.lineup_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_two",
@@ -72,29 +82,19 @@ impl FriendChallengeLineup {
             |m: &mut FriendChallengeLineup| { &mut m.buff_two },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "remark_name",
-            |m: &FriendChallengeLineup| { &m.remark_name },
-            |m: &mut FriendChallengeLineup| { &mut m.remark_name },
+            "buff_one",
+            |m: &FriendChallengeLineup| { &m.buff_one },
+            |m: &mut FriendChallengeLineup| { &mut m.buff_one },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
             |m: &FriendChallengeLineup| { &m.score_id },
             |m: &mut FriendChallengeLineup| { &mut m.score_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "lineup_list",
-            |m: &FriendChallengeLineup| { &m.lineup_list },
-            |m: &mut FriendChallengeLineup| { &mut m.lineup_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSimpleInfo::PlayerSimpleInfo>(
-            "player_info",
-            |m: &FriendChallengeLineup| { &m.player_info },
-            |m: &mut FriendChallengeLineup| { &mut m.player_info },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "buff_one",
-            |m: &FriendChallengeLineup| { &m.buff_one },
-            |m: &mut FriendChallengeLineup| { &mut m.buff_one },
+            "EEJCPNAEKLJ",
+            |m: &FriendChallengeLineup| { &m.EEJCPNAEKLJ },
+            |m: &mut FriendChallengeLineup| { &mut m.EEJCPNAEKLJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FriendChallengeLineup>(
             "FriendChallengeLineup",
@@ -114,26 +114,26 @@ impl ::protobuf::Message for FriendChallengeLineup {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.ABJGNBJMJJG = is.read_uint32()?;
-                },
-                120 => {
-                    self.buff_two = is.read_uint32()?;
-                },
-                98 => {
+                106 => {
                     self.remark_name = is.read_string()?;
                 },
-                72 => {
-                    self.score_id = is.read_uint32()?;
+                58 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
                 },
-                114 => {
+                18 => {
                     self.lineup_list.push(is.read_message()?);
                 },
-                42 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player_info)?;
+                112 => {
+                    self.buff_two = is.read_uint32()?;
                 },
                 64 => {
                     self.buff_one = is.read_uint32()?;
+                },
+                96 => {
+                    self.score_id = is.read_uint32()?;
+                },
+                8 => {
+                    self.EEJCPNAEKLJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -147,28 +147,28 @@ impl ::protobuf::Message for FriendChallengeLineup {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ABJGNBJMJJG != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.ABJGNBJMJJG);
-        }
-        if self.buff_two != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.buff_two);
-        }
         if !self.remark_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(12, &self.remark_name);
+            my_size += ::protobuf::rt::string_size(13, &self.remark_name);
         }
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.score_id);
+        if let Some(v) = self.player_info.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         for value in &self.lineup_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if let Some(v) = self.player_info.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.buff_two != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.buff_two);
         }
         if self.buff_one != 0 {
             my_size += ::protobuf::rt::uint32_size(8, self.buff_one);
+        }
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.score_id);
+        }
+        if self.EEJCPNAEKLJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.EEJCPNAEKLJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -176,26 +176,26 @@ impl ::protobuf::Message for FriendChallengeLineup {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ABJGNBJMJJG != 0 {
-            os.write_uint32(7, self.ABJGNBJMJJG)?;
-        }
-        if self.buff_two != 0 {
-            os.write_uint32(15, self.buff_two)?;
-        }
         if !self.remark_name.is_empty() {
-            os.write_string(12, &self.remark_name)?;
+            os.write_string(13, &self.remark_name)?;
         }
-        if self.score_id != 0 {
-            os.write_uint32(9, self.score_id)?;
+        if let Some(v) = self.player_info.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         }
         for v in &self.lineup_list {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if let Some(v) = self.player_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        if self.buff_two != 0 {
+            os.write_uint32(14, self.buff_two)?;
         }
         if self.buff_one != 0 {
             os.write_uint32(8, self.buff_one)?;
+        }
+        if self.score_id != 0 {
+            os.write_uint32(12, self.score_id)?;
+        }
+        if self.EEJCPNAEKLJ != 0 {
+            os.write_uint32(1, self.EEJCPNAEKLJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,25 +214,25 @@ impl ::protobuf::Message for FriendChallengeLineup {
     }
 
     fn clear(&mut self) {
-        self.ABJGNBJMJJG = 0;
-        self.buff_two = 0;
         self.remark_name.clear();
-        self.score_id = 0;
-        self.lineup_list.clear();
         self.player_info.clear();
+        self.lineup_list.clear();
+        self.buff_two = 0;
         self.buff_one = 0;
+        self.score_id = 0;
+        self.EEJCPNAEKLJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FriendChallengeLineup {
         static instance: FriendChallengeLineup = FriendChallengeLineup {
-            ABJGNBJMJJG: 0,
-            buff_two: 0,
             remark_name: ::std::string::String::new(),
-            score_id: 0,
-            lineup_list: ::std::vec::Vec::new(),
             player_info: ::protobuf::MessageField::none(),
+            lineup_list: ::std::vec::Vec::new(),
+            buff_two: 0,
             buff_one: 0,
+            score_id: 0,
+            EEJCPNAEKLJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -258,14 +258,14 @@ impl ::protobuf::reflect::ProtobufValue for FriendChallengeLineup {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bFriendChallengeLineup.proto\x1a\x19ChallengeLineupList.proto\x1a\
-    \x16PlayerSimpleInfo.proto\"\x96\x02\n\x15FriendChallengeLineup\x12\x20\
-    \n\x0bABJGNBJMJJG\x18\x07\x20\x01(\rR\x0bABJGNBJMJJG\x12\x19\n\x08buff_t\
-    wo\x18\x0f\x20\x01(\rR\x07buffTwo\x12\x1f\n\x0bremark_name\x18\x0c\x20\
-    \x01(\tR\nremarkName\x12\x19\n\x08score_id\x18\t\x20\x01(\rR\x07scoreId\
-    \x125\n\x0blineup_list\x18\x0e\x20\x03(\x0b2\x14.ChallengeLineupListR\nl\
-    ineupList\x122\n\x0bplayer_info\x18\x05\x20\x01(\x0b2\x11.PlayerSimpleIn\
-    foR\nplayerInfo\x12\x19\n\x08buff_one\x18\x08\x20\x01(\rR\x07buffOneb\
-    \x06proto3\
+    \x16PlayerSimpleInfo.proto\"\x96\x02\n\x15FriendChallengeLineup\x12\x1f\
+    \n\x0bremark_name\x18\r\x20\x01(\tR\nremarkName\x122\n\x0bplayer_info\
+    \x18\x07\x20\x01(\x0b2\x11.PlayerSimpleInfoR\nplayerInfo\x125\n\x0blineu\
+    p_list\x18\x02\x20\x03(\x0b2\x14.ChallengeLineupListR\nlineupList\x12\
+    \x19\n\x08buff_two\x18\x0e\x20\x01(\rR\x07buffTwo\x12\x19\n\x08buff_one\
+    \x18\x08\x20\x01(\rR\x07buffOne\x12\x19\n\x08score_id\x18\x0c\x20\x01(\r\
+    R\x07scoreId\x12\x20\n\x0bEEJCPNAEKLJ\x18\x01\x20\x01(\rR\x0bEEJCPNAEKLJ\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

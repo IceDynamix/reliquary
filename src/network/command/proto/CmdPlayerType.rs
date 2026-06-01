@@ -27,146 +27,146 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPlayerType)
 pub enum CmdPlayerType {
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.LGDEJONOGDK_PCPDHELPKEM)
-    LGDEJONOGDK_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerGetTokenCsReq)
-    CmdPlayerGetTokenCsReq = 14,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdQueryProductInfoCsReq)
-    CmdQueryProductInfoCsReq = 66,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetSecretKeyInfoScRsp)
-    CmdGetSecretKeyInfoScRsp = 69,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdExchangeStaminaCsReq)
-    CmdExchangeStaminaCsReq = 37,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.LGDEJONOGDK_JPMPCIKAMFO)
-    LGDEJONOGDK_JPMPCIKAMFO = 23,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginFinishScRsp)
-    CmdPlayerLoginFinishScRsp = 62,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPEJPOACIIKL)
-    CmdPEJPOACIIKL = 16,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGBPEEKKNCOK)
-    CmdGBPEEKKNCOK = 78,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerHeartBeatCsReq)
-    CmdPlayerHeartBeatCsReq = 12,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientObjDownloadDataScNotify)
-    CmdClientObjDownloadDataScNotify = 86,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGenderScRsp)
-    CmdSetGenderScRsp = 20,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetBasicInfoScRsp)
-    CmdGetBasicInfoScRsp = 36,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetAuthkeyScRsp)
-    CmdGetAuthkeyScRsp = 72,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientObjUploadCsReq)
-    CmdClientObjUploadCsReq = 80,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdMonthCardRewardNotify)
-    CmdMonthCardRewardNotify = 59,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetBasicInfoCsReq)
-    CmdGetBasicInfoCsReq = 71,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetVideoVersionKeyScRsp)
-    CmdGetVideoVersionKeyScRsp = 68,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardScRcp)
-    CmdGetLevelRewardScRcp = 89,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdHCBMIPFCCPL)
-    CmdHCBMIPFCCPL = 42,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdReserveStaminaExchangeCsReq)
-    CmdReserveStaminaExchangeCsReq = 13,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdKFGOKPOJKPH)
-    CmdKFGOKPOJKPH = 28,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetPlayerInfoCsReq)
-    CmdSetPlayerInfoCsReq = 93,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginCsReq)
-    CmdPlayerLoginCsReq = 91,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetPlayerInfoScRsp)
-    CmdSetPlayerInfoScRsp = 2,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardTakenListCsReq)
-    CmdGetLevelRewardTakenListCsReq = 58,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginScRsp)
-    CmdPlayerLoginScRsp = 10,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetNicknameCsReq)
-    CmdSetNicknameCsReq = 61,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdMHJAKGFPMCK)
-    CmdMHJAKGFPMCK = 67,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdFeatureSwitchClosedScNotify)
-    CmdFeatureSwitchClosedScNotify = 6,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetNicknameScRsp)
-    CmdSetNicknameScRsp = 7,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetVideoVersionKeyCsReq)
-    CmdGetVideoVersionKeyCsReq = 70,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGameplayBirthdayCsReq)
-    CmdSetGameplayBirthdayCsReq = 92,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdLightConeRarity4AutoLockReq)
-    CmdLightConeRarity4AutoLockReq = 35,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardReq)
-    CmdGetLevelRewardReq = 100,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerSqueezedScNotify)
-    CmdPlayerSqueezedScNotify = 63,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGameplayBirthdayScRsp)
-    CmdSetGameplayBirthdayScRsp = 24,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerHeartBeatScRsp)
-    CmdPlayerHeartBeatScRsp = 77,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdateFeatureSwitchScNotify)
-    CmdUpdateFeatureSwitchScNotify = 30,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdatePlayerSettingScRsp)
-    CmdUpdatePlayerSettingScRsp = 15,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetLanguageReq)
-    CmdSetLanguageReq = 21,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdEnterStageCsReq)
-    CmdEnterStageCsReq = 26,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdForceSyncGameStateFinishCSReq)
-    CmdForceSyncGameStateFinishCSReq = 50,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetAuthkeyCsReq)
-    CmdGetAuthkeyCsReq = 38,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdDailyRefreshNotify)
-    CmdDailyRefreshNotify = 3,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPHIBGDFEFEE)
-    CmdPHIBGDFEFEE = 32,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLogoutCsReq)
-    CmdPlayerLogoutCsReq = 94,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdStaminaInfoScNotify)
-    CmdStaminaInfoScNotify = 83,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.LGDEJONOGDK_MDGAICFBCKJ)
-    LGDEJONOGDK_MDGAICFBCKJ = 47,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdMHJOJEFEOKK)
-    CmdMHJOJEFEOKK = 40,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdNBCDKAOFNMD)
-    CmdNBCDKAOFNMD = 98,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.LGDEJONOGDK_OOOIEHICMDM)
-    LGDEJONOGDK_OOOIEHICMDM = 95,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetSecretKeyInfoCsReq)
-    CmdGetSecretKeyInfoCsReq = 90,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientObjUploadScRsp)
-    CmdClientObjUploadScRsp = 85,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdReserveStaminaExchangeScRsp)
-    CmdReserveStaminaExchangeScRsp = 31,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdHDEFPBNNMDJ)
-    CmdHDEFPBNNMDJ = 81,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdCIAANMCPBGF)
-    CmdCIAANMCPBGF = 29,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdDDCCKDCEBOJ)
-    CmdDDCCKDCEBOJ = 19,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPDANOHBKBBF)
-    CmdPDANOHBKBBF = 39,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdExchangeStaminaScRsp)
-    CmdExchangeStaminaScRsp = 4,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdGetLevelRewardTakenListScRsp)
-    CmdGetLevelRewardTakenListScRsp = 44,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdUpdatePlayWithPsnOnlySettingCsReq)
-    CmdUpdatePlayWithPsnOnlySettingCsReq = 55,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetGenderCsReq)
-    CmdSetGenderCsReq = 79,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdSetRedPointStatusScNotify)
-    CmdSetRedPointStatusScNotify = 82,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdServerAnnounceNotify)
-    CmdServerAnnounceNotify = 65,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerLoginFinishCsReq)
-    CmdPlayerLoginFinishCsReq = 41,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdQueryProductInfoScRsp)
-    CmdQueryProductInfoScRsp = 5,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdAntiAddictScNotify)
-    CmdAntiAddictScNotify = 33,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdClientDownloadDataScNotify)
-    CmdClientDownloadDataScNotify = 11,
-    // @@protoc_insertion_point(enum_value:CmdPlayerType.CmdPlayerGetTokenScRsp)
-    CmdPlayerGetTokenScRsp = 18,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_NLCDGIPGFDJ)
+    KIDBFKJEJJD_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KOKCPOPBBCD)
+    KIDBFKJEJJD_KOKCPOPBBCD = 52,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_AIHKMIKNPOH)
+    KIDBFKJEJJD_AIHKMIKNPOH = 13,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DHHMBIGPPFB)
+    KIDBFKJEJJD_DHHMBIGPPFB = 6,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JHFOOFEBNEL)
+    KIDBFKJEJJD_JHFOOFEBNEL = 87,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HLAAGBFPKPH)
+    KIDBFKJEJJD_HLAAGBFPKPH = 98,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_AGHGBNPIOGK)
+    KIDBFKJEJJD_AGHGBNPIOGK = 9,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JGLNKENAIEB)
+    KIDBFKJEJJD_JGLNKENAIEB = 44,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CLOMOECMLPH)
+    KIDBFKJEJJD_CLOMOECMLPH = 11,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DOGHFIAJIHP)
+    KIDBFKJEJJD_DOGHFIAJIHP = 57,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KPALKJHKPED)
+    KIDBFKJEJJD_KPALKJHKPED = 35,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KCCMJKHJMAB)
+    KIDBFKJEJJD_KCCMJKHJMAB = 64,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_GNAOLJNMAFC)
+    KIDBFKJEJJD_GNAOLJNMAFC = 75,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LHBKEJCGNCF)
+    KIDBFKJEJJD_LHBKEJCGNCF = 88,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BLPDFGFMCBK)
+    KIDBFKJEJJD_BLPDFGFMCBK = 31,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_ECHEKPDIPPA)
+    KIDBFKJEJJD_ECHEKPDIPPA = 68,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HLKKHFGJEOL)
+    KIDBFKJEJJD_HLKKHFGJEOL = 78,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HONJDBCACEB)
+    KIDBFKJEJJD_HONJDBCACEB = 26,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_AFKIMICKEDM)
+    KIDBFKJEJJD_AFKIMICKEDM = 42,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_OPFIKLLIHBH)
+    KIDBFKJEJJD_OPFIKLLIHBH = 53,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_POACPAFBFKJ)
+    KIDBFKJEJJD_POACPAFBFKJ = 43,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_GONKEIBLBOI)
+    KIDBFKJEJJD_GONKEIBLBOI = 41,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CFMGLJJOJDJ)
+    KIDBFKJEJJD_CFMGLJJOJDJ = 93,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PCMLAHACMPO)
+    KIDBFKJEJJD_PCMLAHACMPO = 89,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_FPHMFIPGANO)
+    KIDBFKJEJJD_FPHMFIPGANO = 55,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PFAAOODLAPI)
+    KIDBFKJEJJD_PFAAOODLAPI = 8,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DOPJENGCOAN)
+    KIDBFKJEJJD_DOPJENGCOAN = 69,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JFLKFMHCFFF)
+    KIDBFKJEJJD_JFLKFMHCFFF = 23,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_IBPHMNFDGCA)
+    KIDBFKJEJJD_IBPHMNFDGCA = 29,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BBECFFBPOGG)
+    KIDBFKJEJJD_BBECFFBPOGG = 45,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BLLKMJKMNIG)
+    KIDBFKJEJJD_BLLKMJKMNIG = 37,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_IPDCEJGOFKI)
+    KIDBFKJEJJD_IPDCEJGOFKI = 77,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BCOPKPAPNAI)
+    KIDBFKJEJJD_BCOPKPAPNAI = 36,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CAEEPLEGLCK)
+    KIDBFKJEJJD_CAEEPLEGLCK = 5,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_FFLOLBNNBJJ)
+    KIDBFKJEJJD_FFLOLBNNBJJ = 71,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_ONNNLNCMMGJ)
+    KIDBFKJEJJD_ONNNLNCMMGJ = 27,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MCFLGBJENJD)
+    KIDBFKJEJJD_MCFLGBJENJD = 79,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CLHGHKAAEIJ)
+    KIDBFKJEJJD_CLHGHKAAEIJ = 16,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PJMINBJDKCC)
+    KIDBFKJEJJD_PJMINBJDKCC = 59,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KGCPBEOGMOP)
+    KIDBFKJEJJD_KGCPBEOGMOP = 66,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_FCNEJBELPDL)
+    KIDBFKJEJJD_FCNEJBELPDL = 24,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MKHNJMFNPBB)
+    KIDBFKJEJJD_MKHNJMFNPBB = 14,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_OFIEPOPANGH)
+    KIDBFKJEJJD_OFIEPOPANGH = 38,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KNINELEBJDE)
+    KIDBFKJEJJD_KNINELEBJDE = 51,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MLGEKIJAIBO)
+    KIDBFKJEJJD_MLGEKIJAIBO = 60,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DHJCKFJCFIJ)
+    KIDBFKJEJJD_DHJCKFJCFIJ = 95,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LDFPOBPPCIH)
+    KIDBFKJEJJD_LDFPOBPPCIH = 76,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KLNEFLGGGIL)
+    KIDBFKJEJJD_KLNEFLGGGIL = 3,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_BFMIAMIHIED)
+    KIDBFKJEJJD_BFMIAMIHIED = 30,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CBPDMEEEOJP)
+    KIDBFKJEJJD_CBPDMEEEOJP = 63,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_MCOKJKLKHDL)
+    KIDBFKJEJJD_MCOKJKLKHDL = 90,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JIIJIOKAAOH)
+    KIDBFKJEJJD_JIIJIOKAAOH = 49,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_OAMNNICMJLH)
+    KIDBFKJEJJD_OAMNNICMJLH = 40,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HDDNALCIJDE)
+    KIDBFKJEJJD_HDDNALCIJDE = 58,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CJOBOBANBOA)
+    KIDBFKJEJJD_CJOBOBANBOA = 80,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_KJLKLPLIFDK)
+    KIDBFKJEJJD_KJLKLPLIFDK = 39,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_EEMJCDKIJOP)
+    KIDBFKJEJJD_EEMJCDKIJOP = 97,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_IKANNBLIACL)
+    KIDBFKJEJJD_IKANNBLIACL = 86,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_GKDOBOKBGPK)
+    KIDBFKJEJJD_GKDOBOKBGPK = 61,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_DGKKANKIDLG)
+    KIDBFKJEJJD_DGKKANKIDLG = 81,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LLGMMAPJDLI)
+    KIDBFKJEJJD_LLGMMAPJDLI = 4,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PBPJJFPBHHK)
+    KIDBFKJEJJD_PBPJJFPBHHK = 10,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_ABAKFMHMHPD)
+    KIDBFKJEJJD_ABAKFMHMHPD = 50,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JPADFDNCDAO)
+    KIDBFKJEJJD_JPADFDNCDAO = 100,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_COENAOLHFEL)
+    KIDBFKJEJJD_COENAOLHFEL = 17,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_PPBANCPJPHG)
+    KIDBFKJEJJD_PPBANCPJPHG = 83,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_CEDFKEJBCCJ)
+    KIDBFKJEJJD_CEDFKEJBCCJ = 18,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_HJAIHJAHMKN)
+    KIDBFKJEJJD_HJAIHJAHMKN = 48,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_LAKJLNGMLPC)
+    KIDBFKJEJJD_LAKJLNGMLPC = 34,
+    // @@protoc_insertion_point(enum_value:CmdPlayerType.KIDBFKJEJJD_JBHLDLGENMB)
+    KIDBFKJEJJD_JBHLDLGENMB = 73,
 }
 
 impl ::protobuf::Enum for CmdPlayerType {
@@ -178,227 +178,227 @@ impl ::protobuf::Enum for CmdPlayerType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPlayerType::LGDEJONOGDK_PCPDHELPKEM),
-            14 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenCsReq),
-            66 => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoCsReq),
-            69 => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoScRsp),
-            37 => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaCsReq),
-            23 => ::std::option::Option::Some(CmdPlayerType::LGDEJONOGDK_JPMPCIKAMFO),
-            62 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishScRsp),
-            16 => ::std::option::Option::Some(CmdPlayerType::CmdPEJPOACIIKL),
-            78 => ::std::option::Option::Some(CmdPlayerType::CmdGBPEEKKNCOK),
-            12 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatCsReq),
-            86 => ::std::option::Option::Some(CmdPlayerType::CmdClientObjDownloadDataScNotify),
-            20 => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderScRsp),
-            36 => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoScRsp),
-            72 => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyScRsp),
-            80 => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadCsReq),
-            59 => ::std::option::Option::Some(CmdPlayerType::CmdMonthCardRewardNotify),
-            71 => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoCsReq),
-            68 => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyScRsp),
-            89 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardScRcp),
-            42 => ::std::option::Option::Some(CmdPlayerType::CmdHCBMIPFCCPL),
-            13 => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeCsReq),
-            28 => ::std::option::Option::Some(CmdPlayerType::CmdKFGOKPOJKPH),
-            93 => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoCsReq),
-            91 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginCsReq),
-            2 => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoScRsp),
-            58 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListCsReq),
-            10 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginScRsp),
-            61 => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameCsReq),
-            67 => ::std::option::Option::Some(CmdPlayerType::CmdMHJAKGFPMCK),
-            6 => ::std::option::Option::Some(CmdPlayerType::CmdFeatureSwitchClosedScNotify),
-            7 => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameScRsp),
-            70 => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyCsReq),
-            92 => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayCsReq),
-            35 => ::std::option::Option::Some(CmdPlayerType::CmdLightConeRarity4AutoLockReq),
-            100 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardReq),
-            63 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerSqueezedScNotify),
-            24 => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayScRsp),
-            77 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatScRsp),
-            30 => ::std::option::Option::Some(CmdPlayerType::CmdUpdateFeatureSwitchScNotify),
-            15 => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayerSettingScRsp),
-            21 => ::std::option::Option::Some(CmdPlayerType::CmdSetLanguageReq),
-            26 => ::std::option::Option::Some(CmdPlayerType::CmdEnterStageCsReq),
-            50 => ::std::option::Option::Some(CmdPlayerType::CmdForceSyncGameStateFinishCSReq),
-            38 => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyCsReq),
-            3 => ::std::option::Option::Some(CmdPlayerType::CmdDailyRefreshNotify),
-            32 => ::std::option::Option::Some(CmdPlayerType::CmdPHIBGDFEFEE),
-            94 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLogoutCsReq),
-            83 => ::std::option::Option::Some(CmdPlayerType::CmdStaminaInfoScNotify),
-            47 => ::std::option::Option::Some(CmdPlayerType::LGDEJONOGDK_MDGAICFBCKJ),
-            40 => ::std::option::Option::Some(CmdPlayerType::CmdMHJOJEFEOKK),
-            98 => ::std::option::Option::Some(CmdPlayerType::CmdNBCDKAOFNMD),
-            95 => ::std::option::Option::Some(CmdPlayerType::LGDEJONOGDK_OOOIEHICMDM),
-            90 => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoCsReq),
-            85 => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadScRsp),
-            31 => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeScRsp),
-            81 => ::std::option::Option::Some(CmdPlayerType::CmdHDEFPBNNMDJ),
-            29 => ::std::option::Option::Some(CmdPlayerType::CmdCIAANMCPBGF),
-            19 => ::std::option::Option::Some(CmdPlayerType::CmdDDCCKDCEBOJ),
-            39 => ::std::option::Option::Some(CmdPlayerType::CmdPDANOHBKBBF),
-            4 => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaScRsp),
-            44 => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListScRsp),
-            55 => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayWithPsnOnlySettingCsReq),
-            79 => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderCsReq),
-            82 => ::std::option::Option::Some(CmdPlayerType::CmdSetRedPointStatusScNotify),
-            65 => ::std::option::Option::Some(CmdPlayerType::CmdServerAnnounceNotify),
-            41 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishCsReq),
-            5 => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoScRsp),
-            33 => ::std::option::Option::Some(CmdPlayerType::CmdAntiAddictScNotify),
-            11 => ::std::option::Option::Some(CmdPlayerType::CmdClientDownloadDataScNotify),
-            18 => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenScRsp),
+            0 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_NLCDGIPGFDJ),
+            52 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD),
+            13 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH),
+            6 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DHHMBIGPPFB),
+            87 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL),
+            98 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH),
+            9 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK),
+            44 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB),
+            11 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH),
+            57 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP),
+            35 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED),
+            64 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB),
+            75 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC),
+            88 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF),
+            31 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK),
+            68 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA),
+            78 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLKKHFGJEOL),
+            26 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB),
+            42 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AFKIMICKEDM),
+            53 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OPFIKLLIHBH),
+            43 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_POACPAFBFKJ),
+            41 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GONKEIBLBOI),
+            93 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ),
+            89 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO),
+            55 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO),
+            8 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PFAAOODLAPI),
+            69 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN),
+            23 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF),
+            29 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA),
+            45 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG),
+            37 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG),
+            77 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI),
+            36 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI),
+            5 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK),
+            71 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ),
+            27 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ),
+            79 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD),
+            16 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ),
+            59 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC),
+            66 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP),
+            24 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL),
+            14 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB),
+            38 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH),
+            51 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KNINELEBJDE),
+            60 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO),
+            95 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DHJCKFJCFIJ),
+            76 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH),
+            3 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL),
+            30 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED),
+            63 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP),
+            90 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL),
+            49 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH),
+            40 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH),
+            58 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE),
+            80 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA),
+            39 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK),
+            97 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_EEMJCDKIJOP),
+            86 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IKANNBLIACL),
+            61 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK),
+            81 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG),
+            4 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI),
+            10 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK),
+            50 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD),
+            100 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO),
+            17 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL),
+            83 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG),
+            18 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ),
+            48 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN),
+            34 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC),
+            73 => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPlayerType> {
         match str {
-            "LGDEJONOGDK_PCPDHELPKEM" => ::std::option::Option::Some(CmdPlayerType::LGDEJONOGDK_PCPDHELPKEM),
-            "CmdPlayerGetTokenCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenCsReq),
-            "CmdQueryProductInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoCsReq),
-            "CmdGetSecretKeyInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoScRsp),
-            "CmdExchangeStaminaCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaCsReq),
-            "LGDEJONOGDK_JPMPCIKAMFO" => ::std::option::Option::Some(CmdPlayerType::LGDEJONOGDK_JPMPCIKAMFO),
-            "CmdPlayerLoginFinishScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishScRsp),
-            "CmdPEJPOACIIKL" => ::std::option::Option::Some(CmdPlayerType::CmdPEJPOACIIKL),
-            "CmdGBPEEKKNCOK" => ::std::option::Option::Some(CmdPlayerType::CmdGBPEEKKNCOK),
-            "CmdPlayerHeartBeatCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatCsReq),
-            "CmdClientObjDownloadDataScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdClientObjDownloadDataScNotify),
-            "CmdSetGenderScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderScRsp),
-            "CmdGetBasicInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoScRsp),
-            "CmdGetAuthkeyScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyScRsp),
-            "CmdClientObjUploadCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadCsReq),
-            "CmdMonthCardRewardNotify" => ::std::option::Option::Some(CmdPlayerType::CmdMonthCardRewardNotify),
-            "CmdGetBasicInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetBasicInfoCsReq),
-            "CmdGetVideoVersionKeyScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyScRsp),
-            "CmdGetLevelRewardScRcp" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardScRcp),
-            "CmdHCBMIPFCCPL" => ::std::option::Option::Some(CmdPlayerType::CmdHCBMIPFCCPL),
-            "CmdReserveStaminaExchangeCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeCsReq),
-            "CmdKFGOKPOJKPH" => ::std::option::Option::Some(CmdPlayerType::CmdKFGOKPOJKPH),
-            "CmdSetPlayerInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoCsReq),
-            "CmdPlayerLoginCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginCsReq),
-            "CmdSetPlayerInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetPlayerInfoScRsp),
-            "CmdGetLevelRewardTakenListCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListCsReq),
-            "CmdPlayerLoginScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginScRsp),
-            "CmdSetNicknameCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameCsReq),
-            "CmdMHJAKGFPMCK" => ::std::option::Option::Some(CmdPlayerType::CmdMHJAKGFPMCK),
-            "CmdFeatureSwitchClosedScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdFeatureSwitchClosedScNotify),
-            "CmdSetNicknameScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetNicknameScRsp),
-            "CmdGetVideoVersionKeyCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetVideoVersionKeyCsReq),
-            "CmdSetGameplayBirthdayCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayCsReq),
-            "CmdLightConeRarity4AutoLockReq" => ::std::option::Option::Some(CmdPlayerType::CmdLightConeRarity4AutoLockReq),
-            "CmdGetLevelRewardReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardReq),
-            "CmdPlayerSqueezedScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerSqueezedScNotify),
-            "CmdSetGameplayBirthdayScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdSetGameplayBirthdayScRsp),
-            "CmdPlayerHeartBeatScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerHeartBeatScRsp),
-            "CmdUpdateFeatureSwitchScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdUpdateFeatureSwitchScNotify),
-            "CmdUpdatePlayerSettingScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayerSettingScRsp),
-            "CmdSetLanguageReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetLanguageReq),
-            "CmdEnterStageCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdEnterStageCsReq),
-            "CmdForceSyncGameStateFinishCSReq" => ::std::option::Option::Some(CmdPlayerType::CmdForceSyncGameStateFinishCSReq),
-            "CmdGetAuthkeyCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetAuthkeyCsReq),
-            "CmdDailyRefreshNotify" => ::std::option::Option::Some(CmdPlayerType::CmdDailyRefreshNotify),
-            "CmdPHIBGDFEFEE" => ::std::option::Option::Some(CmdPlayerType::CmdPHIBGDFEFEE),
-            "CmdPlayerLogoutCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLogoutCsReq),
-            "CmdStaminaInfoScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdStaminaInfoScNotify),
-            "LGDEJONOGDK_MDGAICFBCKJ" => ::std::option::Option::Some(CmdPlayerType::LGDEJONOGDK_MDGAICFBCKJ),
-            "CmdMHJOJEFEOKK" => ::std::option::Option::Some(CmdPlayerType::CmdMHJOJEFEOKK),
-            "CmdNBCDKAOFNMD" => ::std::option::Option::Some(CmdPlayerType::CmdNBCDKAOFNMD),
-            "LGDEJONOGDK_OOOIEHICMDM" => ::std::option::Option::Some(CmdPlayerType::LGDEJONOGDK_OOOIEHICMDM),
-            "CmdGetSecretKeyInfoCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdGetSecretKeyInfoCsReq),
-            "CmdClientObjUploadScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdClientObjUploadScRsp),
-            "CmdReserveStaminaExchangeScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdReserveStaminaExchangeScRsp),
-            "CmdHDEFPBNNMDJ" => ::std::option::Option::Some(CmdPlayerType::CmdHDEFPBNNMDJ),
-            "CmdCIAANMCPBGF" => ::std::option::Option::Some(CmdPlayerType::CmdCIAANMCPBGF),
-            "CmdDDCCKDCEBOJ" => ::std::option::Option::Some(CmdPlayerType::CmdDDCCKDCEBOJ),
-            "CmdPDANOHBKBBF" => ::std::option::Option::Some(CmdPlayerType::CmdPDANOHBKBBF),
-            "CmdExchangeStaminaScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdExchangeStaminaScRsp),
-            "CmdGetLevelRewardTakenListScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdGetLevelRewardTakenListScRsp),
-            "CmdUpdatePlayWithPsnOnlySettingCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdUpdatePlayWithPsnOnlySettingCsReq),
-            "CmdSetGenderCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdSetGenderCsReq),
-            "CmdSetRedPointStatusScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdSetRedPointStatusScNotify),
-            "CmdServerAnnounceNotify" => ::std::option::Option::Some(CmdPlayerType::CmdServerAnnounceNotify),
-            "CmdPlayerLoginFinishCsReq" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerLoginFinishCsReq),
-            "CmdQueryProductInfoScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdQueryProductInfoScRsp),
-            "CmdAntiAddictScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdAntiAddictScNotify),
-            "CmdClientDownloadDataScNotify" => ::std::option::Option::Some(CmdPlayerType::CmdClientDownloadDataScNotify),
-            "CmdPlayerGetTokenScRsp" => ::std::option::Option::Some(CmdPlayerType::CmdPlayerGetTokenScRsp),
+            "KIDBFKJEJJD_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_NLCDGIPGFDJ),
+            "KIDBFKJEJJD_KOKCPOPBBCD" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD),
+            "KIDBFKJEJJD_AIHKMIKNPOH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH),
+            "KIDBFKJEJJD_DHHMBIGPPFB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DHHMBIGPPFB),
+            "KIDBFKJEJJD_JHFOOFEBNEL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL),
+            "KIDBFKJEJJD_HLAAGBFPKPH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH),
+            "KIDBFKJEJJD_AGHGBNPIOGK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK),
+            "KIDBFKJEJJD_JGLNKENAIEB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB),
+            "KIDBFKJEJJD_CLOMOECMLPH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH),
+            "KIDBFKJEJJD_DOGHFIAJIHP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP),
+            "KIDBFKJEJJD_KPALKJHKPED" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED),
+            "KIDBFKJEJJD_KCCMJKHJMAB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB),
+            "KIDBFKJEJJD_GNAOLJNMAFC" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC),
+            "KIDBFKJEJJD_LHBKEJCGNCF" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF),
+            "KIDBFKJEJJD_BLPDFGFMCBK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK),
+            "KIDBFKJEJJD_ECHEKPDIPPA" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA),
+            "KIDBFKJEJJD_HLKKHFGJEOL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HLKKHFGJEOL),
+            "KIDBFKJEJJD_HONJDBCACEB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB),
+            "KIDBFKJEJJD_AFKIMICKEDM" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_AFKIMICKEDM),
+            "KIDBFKJEJJD_OPFIKLLIHBH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OPFIKLLIHBH),
+            "KIDBFKJEJJD_POACPAFBFKJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_POACPAFBFKJ),
+            "KIDBFKJEJJD_GONKEIBLBOI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GONKEIBLBOI),
+            "KIDBFKJEJJD_CFMGLJJOJDJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ),
+            "KIDBFKJEJJD_PCMLAHACMPO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO),
+            "KIDBFKJEJJD_FPHMFIPGANO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO),
+            "KIDBFKJEJJD_PFAAOODLAPI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PFAAOODLAPI),
+            "KIDBFKJEJJD_DOPJENGCOAN" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN),
+            "KIDBFKJEJJD_JFLKFMHCFFF" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF),
+            "KIDBFKJEJJD_IBPHMNFDGCA" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA),
+            "KIDBFKJEJJD_BBECFFBPOGG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG),
+            "KIDBFKJEJJD_BLLKMJKMNIG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG),
+            "KIDBFKJEJJD_IPDCEJGOFKI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI),
+            "KIDBFKJEJJD_BCOPKPAPNAI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI),
+            "KIDBFKJEJJD_CAEEPLEGLCK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK),
+            "KIDBFKJEJJD_FFLOLBNNBJJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ),
+            "KIDBFKJEJJD_ONNNLNCMMGJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ),
+            "KIDBFKJEJJD_MCFLGBJENJD" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD),
+            "KIDBFKJEJJD_CLHGHKAAEIJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ),
+            "KIDBFKJEJJD_PJMINBJDKCC" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC),
+            "KIDBFKJEJJD_KGCPBEOGMOP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP),
+            "KIDBFKJEJJD_FCNEJBELPDL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL),
+            "KIDBFKJEJJD_MKHNJMFNPBB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB),
+            "KIDBFKJEJJD_OFIEPOPANGH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH),
+            "KIDBFKJEJJD_KNINELEBJDE" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KNINELEBJDE),
+            "KIDBFKJEJJD_MLGEKIJAIBO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO),
+            "KIDBFKJEJJD_DHJCKFJCFIJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DHJCKFJCFIJ),
+            "KIDBFKJEJJD_LDFPOBPPCIH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH),
+            "KIDBFKJEJJD_KLNEFLGGGIL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL),
+            "KIDBFKJEJJD_BFMIAMIHIED" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED),
+            "KIDBFKJEJJD_CBPDMEEEOJP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP),
+            "KIDBFKJEJJD_MCOKJKLKHDL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL),
+            "KIDBFKJEJJD_JIIJIOKAAOH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH),
+            "KIDBFKJEJJD_OAMNNICMJLH" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH),
+            "KIDBFKJEJJD_HDDNALCIJDE" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE),
+            "KIDBFKJEJJD_CJOBOBANBOA" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA),
+            "KIDBFKJEJJD_KJLKLPLIFDK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK),
+            "KIDBFKJEJJD_EEMJCDKIJOP" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_EEMJCDKIJOP),
+            "KIDBFKJEJJD_IKANNBLIACL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_IKANNBLIACL),
+            "KIDBFKJEJJD_GKDOBOKBGPK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK),
+            "KIDBFKJEJJD_DGKKANKIDLG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG),
+            "KIDBFKJEJJD_LLGMMAPJDLI" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI),
+            "KIDBFKJEJJD_PBPJJFPBHHK" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK),
+            "KIDBFKJEJJD_ABAKFMHMHPD" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD),
+            "KIDBFKJEJJD_JPADFDNCDAO" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO),
+            "KIDBFKJEJJD_COENAOLHFEL" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL),
+            "KIDBFKJEJJD_PPBANCPJPHG" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG),
+            "KIDBFKJEJJD_CEDFKEJBCCJ" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ),
+            "KIDBFKJEJJD_HJAIHJAHMKN" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN),
+            "KIDBFKJEJJD_LAKJLNGMLPC" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC),
+            "KIDBFKJEJJD_JBHLDLGENMB" => ::std::option::Option::Some(CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlayerType] = &[
-        CmdPlayerType::LGDEJONOGDK_PCPDHELPKEM,
-        CmdPlayerType::CmdPlayerGetTokenCsReq,
-        CmdPlayerType::CmdQueryProductInfoCsReq,
-        CmdPlayerType::CmdGetSecretKeyInfoScRsp,
-        CmdPlayerType::CmdExchangeStaminaCsReq,
-        CmdPlayerType::LGDEJONOGDK_JPMPCIKAMFO,
-        CmdPlayerType::CmdPlayerLoginFinishScRsp,
-        CmdPlayerType::CmdPEJPOACIIKL,
-        CmdPlayerType::CmdGBPEEKKNCOK,
-        CmdPlayerType::CmdPlayerHeartBeatCsReq,
-        CmdPlayerType::CmdClientObjDownloadDataScNotify,
-        CmdPlayerType::CmdSetGenderScRsp,
-        CmdPlayerType::CmdGetBasicInfoScRsp,
-        CmdPlayerType::CmdGetAuthkeyScRsp,
-        CmdPlayerType::CmdClientObjUploadCsReq,
-        CmdPlayerType::CmdMonthCardRewardNotify,
-        CmdPlayerType::CmdGetBasicInfoCsReq,
-        CmdPlayerType::CmdGetVideoVersionKeyScRsp,
-        CmdPlayerType::CmdGetLevelRewardScRcp,
-        CmdPlayerType::CmdHCBMIPFCCPL,
-        CmdPlayerType::CmdReserveStaminaExchangeCsReq,
-        CmdPlayerType::CmdKFGOKPOJKPH,
-        CmdPlayerType::CmdSetPlayerInfoCsReq,
-        CmdPlayerType::CmdPlayerLoginCsReq,
-        CmdPlayerType::CmdSetPlayerInfoScRsp,
-        CmdPlayerType::CmdGetLevelRewardTakenListCsReq,
-        CmdPlayerType::CmdPlayerLoginScRsp,
-        CmdPlayerType::CmdSetNicknameCsReq,
-        CmdPlayerType::CmdMHJAKGFPMCK,
-        CmdPlayerType::CmdFeatureSwitchClosedScNotify,
-        CmdPlayerType::CmdSetNicknameScRsp,
-        CmdPlayerType::CmdGetVideoVersionKeyCsReq,
-        CmdPlayerType::CmdSetGameplayBirthdayCsReq,
-        CmdPlayerType::CmdLightConeRarity4AutoLockReq,
-        CmdPlayerType::CmdGetLevelRewardReq,
-        CmdPlayerType::CmdPlayerSqueezedScNotify,
-        CmdPlayerType::CmdSetGameplayBirthdayScRsp,
-        CmdPlayerType::CmdPlayerHeartBeatScRsp,
-        CmdPlayerType::CmdUpdateFeatureSwitchScNotify,
-        CmdPlayerType::CmdUpdatePlayerSettingScRsp,
-        CmdPlayerType::CmdSetLanguageReq,
-        CmdPlayerType::CmdEnterStageCsReq,
-        CmdPlayerType::CmdForceSyncGameStateFinishCSReq,
-        CmdPlayerType::CmdGetAuthkeyCsReq,
-        CmdPlayerType::CmdDailyRefreshNotify,
-        CmdPlayerType::CmdPHIBGDFEFEE,
-        CmdPlayerType::CmdPlayerLogoutCsReq,
-        CmdPlayerType::CmdStaminaInfoScNotify,
-        CmdPlayerType::LGDEJONOGDK_MDGAICFBCKJ,
-        CmdPlayerType::CmdMHJOJEFEOKK,
-        CmdPlayerType::CmdNBCDKAOFNMD,
-        CmdPlayerType::LGDEJONOGDK_OOOIEHICMDM,
-        CmdPlayerType::CmdGetSecretKeyInfoCsReq,
-        CmdPlayerType::CmdClientObjUploadScRsp,
-        CmdPlayerType::CmdReserveStaminaExchangeScRsp,
-        CmdPlayerType::CmdHDEFPBNNMDJ,
-        CmdPlayerType::CmdCIAANMCPBGF,
-        CmdPlayerType::CmdDDCCKDCEBOJ,
-        CmdPlayerType::CmdPDANOHBKBBF,
-        CmdPlayerType::CmdExchangeStaminaScRsp,
-        CmdPlayerType::CmdGetLevelRewardTakenListScRsp,
-        CmdPlayerType::CmdUpdatePlayWithPsnOnlySettingCsReq,
-        CmdPlayerType::CmdSetGenderCsReq,
-        CmdPlayerType::CmdSetRedPointStatusScNotify,
-        CmdPlayerType::CmdServerAnnounceNotify,
-        CmdPlayerType::CmdPlayerLoginFinishCsReq,
-        CmdPlayerType::CmdQueryProductInfoScRsp,
-        CmdPlayerType::CmdAntiAddictScNotify,
-        CmdPlayerType::CmdClientDownloadDataScNotify,
-        CmdPlayerType::CmdPlayerGetTokenScRsp,
+        CmdPlayerType::KIDBFKJEJJD_NLCDGIPGFDJ,
+        CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD,
+        CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH,
+        CmdPlayerType::KIDBFKJEJJD_DHHMBIGPPFB,
+        CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL,
+        CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH,
+        CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK,
+        CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB,
+        CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH,
+        CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP,
+        CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED,
+        CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB,
+        CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC,
+        CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF,
+        CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK,
+        CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA,
+        CmdPlayerType::KIDBFKJEJJD_HLKKHFGJEOL,
+        CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB,
+        CmdPlayerType::KIDBFKJEJJD_AFKIMICKEDM,
+        CmdPlayerType::KIDBFKJEJJD_OPFIKLLIHBH,
+        CmdPlayerType::KIDBFKJEJJD_POACPAFBFKJ,
+        CmdPlayerType::KIDBFKJEJJD_GONKEIBLBOI,
+        CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ,
+        CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO,
+        CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO,
+        CmdPlayerType::KIDBFKJEJJD_PFAAOODLAPI,
+        CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN,
+        CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF,
+        CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA,
+        CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG,
+        CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG,
+        CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI,
+        CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI,
+        CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK,
+        CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ,
+        CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ,
+        CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD,
+        CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ,
+        CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC,
+        CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP,
+        CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL,
+        CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB,
+        CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH,
+        CmdPlayerType::KIDBFKJEJJD_KNINELEBJDE,
+        CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO,
+        CmdPlayerType::KIDBFKJEJJD_DHJCKFJCFIJ,
+        CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH,
+        CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL,
+        CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED,
+        CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP,
+        CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL,
+        CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH,
+        CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH,
+        CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE,
+        CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA,
+        CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK,
+        CmdPlayerType::KIDBFKJEJJD_EEMJCDKIJOP,
+        CmdPlayerType::KIDBFKJEJJD_IKANNBLIACL,
+        CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK,
+        CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG,
+        CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI,
+        CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK,
+        CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD,
+        CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO,
+        CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL,
+        CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG,
+        CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ,
+        CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN,
+        CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC,
+        CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB,
     ];
 }
 
@@ -410,76 +410,76 @@ impl ::protobuf::EnumFull for CmdPlayerType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPlayerType::LGDEJONOGDK_PCPDHELPKEM => 0,
-            CmdPlayerType::CmdPlayerGetTokenCsReq => 1,
-            CmdPlayerType::CmdQueryProductInfoCsReq => 2,
-            CmdPlayerType::CmdGetSecretKeyInfoScRsp => 3,
-            CmdPlayerType::CmdExchangeStaminaCsReq => 4,
-            CmdPlayerType::LGDEJONOGDK_JPMPCIKAMFO => 5,
-            CmdPlayerType::CmdPlayerLoginFinishScRsp => 6,
-            CmdPlayerType::CmdPEJPOACIIKL => 7,
-            CmdPlayerType::CmdGBPEEKKNCOK => 8,
-            CmdPlayerType::CmdPlayerHeartBeatCsReq => 9,
-            CmdPlayerType::CmdClientObjDownloadDataScNotify => 10,
-            CmdPlayerType::CmdSetGenderScRsp => 11,
-            CmdPlayerType::CmdGetBasicInfoScRsp => 12,
-            CmdPlayerType::CmdGetAuthkeyScRsp => 13,
-            CmdPlayerType::CmdClientObjUploadCsReq => 14,
-            CmdPlayerType::CmdMonthCardRewardNotify => 15,
-            CmdPlayerType::CmdGetBasicInfoCsReq => 16,
-            CmdPlayerType::CmdGetVideoVersionKeyScRsp => 17,
-            CmdPlayerType::CmdGetLevelRewardScRcp => 18,
-            CmdPlayerType::CmdHCBMIPFCCPL => 19,
-            CmdPlayerType::CmdReserveStaminaExchangeCsReq => 20,
-            CmdPlayerType::CmdKFGOKPOJKPH => 21,
-            CmdPlayerType::CmdSetPlayerInfoCsReq => 22,
-            CmdPlayerType::CmdPlayerLoginCsReq => 23,
-            CmdPlayerType::CmdSetPlayerInfoScRsp => 24,
-            CmdPlayerType::CmdGetLevelRewardTakenListCsReq => 25,
-            CmdPlayerType::CmdPlayerLoginScRsp => 26,
-            CmdPlayerType::CmdSetNicknameCsReq => 27,
-            CmdPlayerType::CmdMHJAKGFPMCK => 28,
-            CmdPlayerType::CmdFeatureSwitchClosedScNotify => 29,
-            CmdPlayerType::CmdSetNicknameScRsp => 30,
-            CmdPlayerType::CmdGetVideoVersionKeyCsReq => 31,
-            CmdPlayerType::CmdSetGameplayBirthdayCsReq => 32,
-            CmdPlayerType::CmdLightConeRarity4AutoLockReq => 33,
-            CmdPlayerType::CmdGetLevelRewardReq => 34,
-            CmdPlayerType::CmdPlayerSqueezedScNotify => 35,
-            CmdPlayerType::CmdSetGameplayBirthdayScRsp => 36,
-            CmdPlayerType::CmdPlayerHeartBeatScRsp => 37,
-            CmdPlayerType::CmdUpdateFeatureSwitchScNotify => 38,
-            CmdPlayerType::CmdUpdatePlayerSettingScRsp => 39,
-            CmdPlayerType::CmdSetLanguageReq => 40,
-            CmdPlayerType::CmdEnterStageCsReq => 41,
-            CmdPlayerType::CmdForceSyncGameStateFinishCSReq => 42,
-            CmdPlayerType::CmdGetAuthkeyCsReq => 43,
-            CmdPlayerType::CmdDailyRefreshNotify => 44,
-            CmdPlayerType::CmdPHIBGDFEFEE => 45,
-            CmdPlayerType::CmdPlayerLogoutCsReq => 46,
-            CmdPlayerType::CmdStaminaInfoScNotify => 47,
-            CmdPlayerType::LGDEJONOGDK_MDGAICFBCKJ => 48,
-            CmdPlayerType::CmdMHJOJEFEOKK => 49,
-            CmdPlayerType::CmdNBCDKAOFNMD => 50,
-            CmdPlayerType::LGDEJONOGDK_OOOIEHICMDM => 51,
-            CmdPlayerType::CmdGetSecretKeyInfoCsReq => 52,
-            CmdPlayerType::CmdClientObjUploadScRsp => 53,
-            CmdPlayerType::CmdReserveStaminaExchangeScRsp => 54,
-            CmdPlayerType::CmdHDEFPBNNMDJ => 55,
-            CmdPlayerType::CmdCIAANMCPBGF => 56,
-            CmdPlayerType::CmdDDCCKDCEBOJ => 57,
-            CmdPlayerType::CmdPDANOHBKBBF => 58,
-            CmdPlayerType::CmdExchangeStaminaScRsp => 59,
-            CmdPlayerType::CmdGetLevelRewardTakenListScRsp => 60,
-            CmdPlayerType::CmdUpdatePlayWithPsnOnlySettingCsReq => 61,
-            CmdPlayerType::CmdSetGenderCsReq => 62,
-            CmdPlayerType::CmdSetRedPointStatusScNotify => 63,
-            CmdPlayerType::CmdServerAnnounceNotify => 64,
-            CmdPlayerType::CmdPlayerLoginFinishCsReq => 65,
-            CmdPlayerType::CmdQueryProductInfoScRsp => 66,
-            CmdPlayerType::CmdAntiAddictScNotify => 67,
-            CmdPlayerType::CmdClientDownloadDataScNotify => 68,
-            CmdPlayerType::CmdPlayerGetTokenScRsp => 69,
+            CmdPlayerType::KIDBFKJEJJD_NLCDGIPGFDJ => 0,
+            CmdPlayerType::KIDBFKJEJJD_KOKCPOPBBCD => 1,
+            CmdPlayerType::KIDBFKJEJJD_AIHKMIKNPOH => 2,
+            CmdPlayerType::KIDBFKJEJJD_DHHMBIGPPFB => 3,
+            CmdPlayerType::KIDBFKJEJJD_JHFOOFEBNEL => 4,
+            CmdPlayerType::KIDBFKJEJJD_HLAAGBFPKPH => 5,
+            CmdPlayerType::KIDBFKJEJJD_AGHGBNPIOGK => 6,
+            CmdPlayerType::KIDBFKJEJJD_JGLNKENAIEB => 7,
+            CmdPlayerType::KIDBFKJEJJD_CLOMOECMLPH => 8,
+            CmdPlayerType::KIDBFKJEJJD_DOGHFIAJIHP => 9,
+            CmdPlayerType::KIDBFKJEJJD_KPALKJHKPED => 10,
+            CmdPlayerType::KIDBFKJEJJD_KCCMJKHJMAB => 11,
+            CmdPlayerType::KIDBFKJEJJD_GNAOLJNMAFC => 12,
+            CmdPlayerType::KIDBFKJEJJD_LHBKEJCGNCF => 13,
+            CmdPlayerType::KIDBFKJEJJD_BLPDFGFMCBK => 14,
+            CmdPlayerType::KIDBFKJEJJD_ECHEKPDIPPA => 15,
+            CmdPlayerType::KIDBFKJEJJD_HLKKHFGJEOL => 16,
+            CmdPlayerType::KIDBFKJEJJD_HONJDBCACEB => 17,
+            CmdPlayerType::KIDBFKJEJJD_AFKIMICKEDM => 18,
+            CmdPlayerType::KIDBFKJEJJD_OPFIKLLIHBH => 19,
+            CmdPlayerType::KIDBFKJEJJD_POACPAFBFKJ => 20,
+            CmdPlayerType::KIDBFKJEJJD_GONKEIBLBOI => 21,
+            CmdPlayerType::KIDBFKJEJJD_CFMGLJJOJDJ => 22,
+            CmdPlayerType::KIDBFKJEJJD_PCMLAHACMPO => 23,
+            CmdPlayerType::KIDBFKJEJJD_FPHMFIPGANO => 24,
+            CmdPlayerType::KIDBFKJEJJD_PFAAOODLAPI => 25,
+            CmdPlayerType::KIDBFKJEJJD_DOPJENGCOAN => 26,
+            CmdPlayerType::KIDBFKJEJJD_JFLKFMHCFFF => 27,
+            CmdPlayerType::KIDBFKJEJJD_IBPHMNFDGCA => 28,
+            CmdPlayerType::KIDBFKJEJJD_BBECFFBPOGG => 29,
+            CmdPlayerType::KIDBFKJEJJD_BLLKMJKMNIG => 30,
+            CmdPlayerType::KIDBFKJEJJD_IPDCEJGOFKI => 31,
+            CmdPlayerType::KIDBFKJEJJD_BCOPKPAPNAI => 32,
+            CmdPlayerType::KIDBFKJEJJD_CAEEPLEGLCK => 33,
+            CmdPlayerType::KIDBFKJEJJD_FFLOLBNNBJJ => 34,
+            CmdPlayerType::KIDBFKJEJJD_ONNNLNCMMGJ => 35,
+            CmdPlayerType::KIDBFKJEJJD_MCFLGBJENJD => 36,
+            CmdPlayerType::KIDBFKJEJJD_CLHGHKAAEIJ => 37,
+            CmdPlayerType::KIDBFKJEJJD_PJMINBJDKCC => 38,
+            CmdPlayerType::KIDBFKJEJJD_KGCPBEOGMOP => 39,
+            CmdPlayerType::KIDBFKJEJJD_FCNEJBELPDL => 40,
+            CmdPlayerType::KIDBFKJEJJD_MKHNJMFNPBB => 41,
+            CmdPlayerType::KIDBFKJEJJD_OFIEPOPANGH => 42,
+            CmdPlayerType::KIDBFKJEJJD_KNINELEBJDE => 43,
+            CmdPlayerType::KIDBFKJEJJD_MLGEKIJAIBO => 44,
+            CmdPlayerType::KIDBFKJEJJD_DHJCKFJCFIJ => 45,
+            CmdPlayerType::KIDBFKJEJJD_LDFPOBPPCIH => 46,
+            CmdPlayerType::KIDBFKJEJJD_KLNEFLGGGIL => 47,
+            CmdPlayerType::KIDBFKJEJJD_BFMIAMIHIED => 48,
+            CmdPlayerType::KIDBFKJEJJD_CBPDMEEEOJP => 49,
+            CmdPlayerType::KIDBFKJEJJD_MCOKJKLKHDL => 50,
+            CmdPlayerType::KIDBFKJEJJD_JIIJIOKAAOH => 51,
+            CmdPlayerType::KIDBFKJEJJD_OAMNNICMJLH => 52,
+            CmdPlayerType::KIDBFKJEJJD_HDDNALCIJDE => 53,
+            CmdPlayerType::KIDBFKJEJJD_CJOBOBANBOA => 54,
+            CmdPlayerType::KIDBFKJEJJD_KJLKLPLIFDK => 55,
+            CmdPlayerType::KIDBFKJEJJD_EEMJCDKIJOP => 56,
+            CmdPlayerType::KIDBFKJEJJD_IKANNBLIACL => 57,
+            CmdPlayerType::KIDBFKJEJJD_GKDOBOKBGPK => 58,
+            CmdPlayerType::KIDBFKJEJJD_DGKKANKIDLG => 59,
+            CmdPlayerType::KIDBFKJEJJD_LLGMMAPJDLI => 60,
+            CmdPlayerType::KIDBFKJEJJD_PBPJJFPBHHK => 61,
+            CmdPlayerType::KIDBFKJEJJD_ABAKFMHMHPD => 62,
+            CmdPlayerType::KIDBFKJEJJD_JPADFDNCDAO => 63,
+            CmdPlayerType::KIDBFKJEJJD_COENAOLHFEL => 64,
+            CmdPlayerType::KIDBFKJEJJD_PPBANCPJPHG => 65,
+            CmdPlayerType::KIDBFKJEJJD_CEDFKEJBCCJ => 66,
+            CmdPlayerType::KIDBFKJEJJD_HJAIHJAHMKN => 67,
+            CmdPlayerType::KIDBFKJEJJD_LAKJLNGMLPC => 68,
+            CmdPlayerType::KIDBFKJEJJD_JBHLDLGENMB => 69,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -487,7 +487,7 @@ impl ::protobuf::EnumFull for CmdPlayerType {
 
 impl ::std::default::Default for CmdPlayerType {
     fn default() -> Self {
-        CmdPlayerType::LGDEJONOGDK_PCPDHELPKEM
+        CmdPlayerType::KIDBFKJEJJD_NLCDGIPGFDJ
     }
 }
 
@@ -498,48 +498,49 @@ impl CmdPlayerType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdPlayerType.proto*\xc2\x0f\n\rCmdPlayerType\x12\x1b\n\x17LGDEJON\
-    OGDK_PCPDHELPKEM\x10\0\x12\x1a\n\x16CmdPlayerGetTokenCsReq\x10\x0e\x12\
-    \x1c\n\x18CmdQueryProductInfoCsReq\x10B\x12\x1c\n\x18CmdGetSecretKeyInfo\
-    ScRsp\x10E\x12\x1b\n\x17CmdExchangeStaminaCsReq\x10%\x12\x1b\n\x17LGDEJO\
-    NOGDK_JPMPCIKAMFO\x10\x17\x12\x1d\n\x19CmdPlayerLoginFinishScRsp\x10>\
-    \x12\x12\n\x0eCmdPEJPOACIIKL\x10\x10\x12\x12\n\x0eCmdGBPEEKKNCOK\x10N\
-    \x12\x1b\n\x17CmdPlayerHeartBeatCsReq\x10\x0c\x12$\n\x20CmdClientObjDown\
-    loadDataScNotify\x10V\x12\x15\n\x11CmdSetGenderScRsp\x10\x14\x12\x18\n\
-    \x14CmdGetBasicInfoScRsp\x10$\x12\x16\n\x12CmdGetAuthkeyScRsp\x10H\x12\
-    \x1b\n\x17CmdClientObjUploadCsReq\x10P\x12\x1c\n\x18CmdMonthCardRewardNo\
-    tify\x10;\x12\x18\n\x14CmdGetBasicInfoCsReq\x10G\x12\x1e\n\x1aCmdGetVide\
-    oVersionKeyScRsp\x10D\x12\x1a\n\x16CmdGetLevelRewardScRcp\x10Y\x12\x12\n\
-    \x0eCmdHCBMIPFCCPL\x10*\x12\"\n\x1eCmdReserveStaminaExchangeCsReq\x10\r\
-    \x12\x12\n\x0eCmdKFGOKPOJKPH\x10\x1c\x12\x19\n\x15CmdSetPlayerInfoCsReq\
-    \x10]\x12\x17\n\x13CmdPlayerLoginCsReq\x10[\x12\x19\n\x15CmdSetPlayerInf\
-    oScRsp\x10\x02\x12#\n\x1fCmdGetLevelRewardTakenListCsReq\x10:\x12\x17\n\
-    \x13CmdPlayerLoginScRsp\x10\n\x12\x17\n\x13CmdSetNicknameCsReq\x10=\x12\
-    \x12\n\x0eCmdMHJAKGFPMCK\x10C\x12\"\n\x1eCmdFeatureSwitchClosedScNotify\
-    \x10\x06\x12\x17\n\x13CmdSetNicknameScRsp\x10\x07\x12\x1e\n\x1aCmdGetVid\
-    eoVersionKeyCsReq\x10F\x12\x1f\n\x1bCmdSetGameplayBirthdayCsReq\x10\\\
-    \x12\"\n\x1eCmdLightConeRarity4AutoLockReq\x10#\x12\x18\n\x14CmdGetLevel\
-    RewardReq\x10d\x12\x1d\n\x19CmdPlayerSqueezedScNotify\x10?\x12\x1f\n\x1b\
-    CmdSetGameplayBirthdayScRsp\x10\x18\x12\x1b\n\x17CmdPlayerHeartBeatScRsp\
-    \x10M\x12\"\n\x1eCmdUpdateFeatureSwitchScNotify\x10\x1e\x12\x1f\n\x1bCmd\
-    UpdatePlayerSettingScRsp\x10\x0f\x12\x15\n\x11CmdSetLanguageReq\x10\x15\
-    \x12\x16\n\x12CmdEnterStageCsReq\x10\x1a\x12$\n\x20CmdForceSyncGameState\
-    FinishCSReq\x102\x12\x16\n\x12CmdGetAuthkeyCsReq\x10&\x12\x19\n\x15CmdDa\
-    ilyRefreshNotify\x10\x03\x12\x12\n\x0eCmdPHIBGDFEFEE\x10\x20\x12\x18\n\
-    \x14CmdPlayerLogoutCsReq\x10^\x12\x1a\n\x16CmdStaminaInfoScNotify\x10S\
-    \x12\x1b\n\x17LGDEJONOGDK_MDGAICFBCKJ\x10/\x12\x12\n\x0eCmdMHJOJEFEOKK\
-    \x10(\x12\x12\n\x0eCmdNBCDKAOFNMD\x10b\x12\x1b\n\x17LGDEJONOGDK_OOOIEHIC\
-    MDM\x10_\x12\x1c\n\x18CmdGetSecretKeyInfoCsReq\x10Z\x12\x1b\n\x17CmdClie\
-    ntObjUploadScRsp\x10U\x12\"\n\x1eCmdReserveStaminaExchangeScRsp\x10\x1f\
-    \x12\x12\n\x0eCmdHDEFPBNNMDJ\x10Q\x12\x12\n\x0eCmdCIAANMCPBGF\x10\x1d\
-    \x12\x12\n\x0eCmdDDCCKDCEBOJ\x10\x13\x12\x12\n\x0eCmdPDANOHBKBBF\x10'\
-    \x12\x1b\n\x17CmdExchangeStaminaScRsp\x10\x04\x12#\n\x1fCmdGetLevelRewar\
-    dTakenListScRsp\x10,\x12(\n$CmdUpdatePlayWithPsnOnlySettingCsReq\x107\
-    \x12\x15\n\x11CmdSetGenderCsReq\x10O\x12\x20\n\x1cCmdSetRedPointStatusSc\
-    Notify\x10R\x12\x1b\n\x17CmdServerAnnounceNotify\x10A\x12\x1d\n\x19CmdPl\
-    ayerLoginFinishCsReq\x10)\x12\x1c\n\x18CmdQueryProductInfoScRsp\x10\x05\
-    \x12\x19\n\x15CmdAntiAddictScNotify\x10!\x12!\n\x1dCmdClientDownloadData\
-    ScNotify\x10\x0b\x12\x1a\n\x16CmdPlayerGetTokenScRsp\x10\x12b\x06proto3\
+    \n\x13CmdPlayerType.proto*\xfd\x0f\n\rCmdPlayerType\x12\x1b\n\x17KIDBFKJ\
+    EJJD_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17KIDBFKJEJJD_KOKCPOPBBCD\x104\x12\x1b\
+    \n\x17KIDBFKJEJJD_AIHKMIKNPOH\x10\r\x12\x1b\n\x17KIDBFKJEJJD_DHHMBIGPPFB\
+    \x10\x06\x12\x1b\n\x17KIDBFKJEJJD_JHFOOFEBNEL\x10W\x12\x1b\n\x17KIDBFKJE\
+    JJD_HLAAGBFPKPH\x10b\x12\x1b\n\x17KIDBFKJEJJD_AGHGBNPIOGK\x10\t\x12\x1b\
+    \n\x17KIDBFKJEJJD_JGLNKENAIEB\x10,\x12\x1b\n\x17KIDBFKJEJJD_CLOMOECMLPH\
+    \x10\x0b\x12\x1b\n\x17KIDBFKJEJJD_DOGHFIAJIHP\x109\x12\x1b\n\x17KIDBFKJE\
+    JJD_KPALKJHKPED\x10#\x12\x1b\n\x17KIDBFKJEJJD_KCCMJKHJMAB\x10@\x12\x1b\n\
+    \x17KIDBFKJEJJD_GNAOLJNMAFC\x10K\x12\x1b\n\x17KIDBFKJEJJD_LHBKEJCGNCF\
+    \x10X\x12\x1b\n\x17KIDBFKJEJJD_BLPDFGFMCBK\x10\x1f\x12\x1b\n\x17KIDBFKJE\
+    JJD_ECHEKPDIPPA\x10D\x12\x1b\n\x17KIDBFKJEJJD_HLKKHFGJEOL\x10N\x12\x1b\n\
+    \x17KIDBFKJEJJD_HONJDBCACEB\x10\x1a\x12\x1b\n\x17KIDBFKJEJJD_AFKIMICKEDM\
+    \x10*\x12\x1b\n\x17KIDBFKJEJJD_OPFIKLLIHBH\x105\x12\x1b\n\x17KIDBFKJEJJD\
+    _POACPAFBFKJ\x10+\x12\x1b\n\x17KIDBFKJEJJD_GONKEIBLBOI\x10)\x12\x1b\n\
+    \x17KIDBFKJEJJD_CFMGLJJOJDJ\x10]\x12\x1b\n\x17KIDBFKJEJJD_PCMLAHACMPO\
+    \x10Y\x12\x1b\n\x17KIDBFKJEJJD_FPHMFIPGANO\x107\x12\x1b\n\x17KIDBFKJEJJD\
+    _PFAAOODLAPI\x10\x08\x12\x1b\n\x17KIDBFKJEJJD_DOPJENGCOAN\x10E\x12\x1b\n\
+    \x17KIDBFKJEJJD_JFLKFMHCFFF\x10\x17\x12\x1b\n\x17KIDBFKJEJJD_IBPHMNFDGCA\
+    \x10\x1d\x12\x1b\n\x17KIDBFKJEJJD_BBECFFBPOGG\x10-\x12\x1b\n\x17KIDBFKJE\
+    JJD_BLLKMJKMNIG\x10%\x12\x1b\n\x17KIDBFKJEJJD_IPDCEJGOFKI\x10M\x12\x1b\n\
+    \x17KIDBFKJEJJD_BCOPKPAPNAI\x10$\x12\x1b\n\x17KIDBFKJEJJD_CAEEPLEGLCK\
+    \x10\x05\x12\x1b\n\x17KIDBFKJEJJD_FFLOLBNNBJJ\x10G\x12\x1b\n\x17KIDBFKJE\
+    JJD_ONNNLNCMMGJ\x10\x1b\x12\x1b\n\x17KIDBFKJEJJD_MCFLGBJENJD\x10O\x12\
+    \x1b\n\x17KIDBFKJEJJD_CLHGHKAAEIJ\x10\x10\x12\x1b\n\x17KIDBFKJEJJD_PJMIN\
+    BJDKCC\x10;\x12\x1b\n\x17KIDBFKJEJJD_KGCPBEOGMOP\x10B\x12\x1b\n\x17KIDBF\
+    KJEJJD_FCNEJBELPDL\x10\x18\x12\x1b\n\x17KIDBFKJEJJD_MKHNJMFNPBB\x10\x0e\
+    \x12\x1b\n\x17KIDBFKJEJJD_OFIEPOPANGH\x10&\x12\x1b\n\x17KIDBFKJEJJD_KNIN\
+    ELEBJDE\x103\x12\x1b\n\x17KIDBFKJEJJD_MLGEKIJAIBO\x10<\x12\x1b\n\x17KIDB\
+    FKJEJJD_DHJCKFJCFIJ\x10_\x12\x1b\n\x17KIDBFKJEJJD_LDFPOBPPCIH\x10L\x12\
+    \x1b\n\x17KIDBFKJEJJD_KLNEFLGGGIL\x10\x03\x12\x1b\n\x17KIDBFKJEJJD_BFMIA\
+    MIHIED\x10\x1e\x12\x1b\n\x17KIDBFKJEJJD_CBPDMEEEOJP\x10?\x12\x1b\n\x17KI\
+    DBFKJEJJD_MCOKJKLKHDL\x10Z\x12\x1b\n\x17KIDBFKJEJJD_JIIJIOKAAOH\x101\x12\
+    \x1b\n\x17KIDBFKJEJJD_OAMNNICMJLH\x10(\x12\x1b\n\x17KIDBFKJEJJD_HDDNALCI\
+    JDE\x10:\x12\x1b\n\x17KIDBFKJEJJD_CJOBOBANBOA\x10P\x12\x1b\n\x17KIDBFKJE\
+    JJD_KJLKLPLIFDK\x10'\x12\x1b\n\x17KIDBFKJEJJD_EEMJCDKIJOP\x10a\x12\x1b\n\
+    \x17KIDBFKJEJJD_IKANNBLIACL\x10V\x12\x1b\n\x17KIDBFKJEJJD_GKDOBOKBGPK\
+    \x10=\x12\x1b\n\x17KIDBFKJEJJD_DGKKANKIDLG\x10Q\x12\x1b\n\x17KIDBFKJEJJD\
+    _LLGMMAPJDLI\x10\x04\x12\x1b\n\x17KIDBFKJEJJD_PBPJJFPBHHK\x10\n\x12\x1b\
+    \n\x17KIDBFKJEJJD_ABAKFMHMHPD\x102\x12\x1b\n\x17KIDBFKJEJJD_JPADFDNCDAO\
+    \x10d\x12\x1b\n\x17KIDBFKJEJJD_COENAOLHFEL\x10\x11\x12\x1b\n\x17KIDBFKJE\
+    JJD_PPBANCPJPHG\x10S\x12\x1b\n\x17KIDBFKJEJJD_CEDFKEJBCCJ\x10\x12\x12\
+    \x1b\n\x17KIDBFKJEJJD_HJAIHJAHMKN\x100\x12\x1b\n\x17KIDBFKJEJJD_LAKJLNGM\
+    LPC\x10\"\x12\x1b\n\x17KIDBFKJEJJD_JBHLDLGENMB\x10Ib\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

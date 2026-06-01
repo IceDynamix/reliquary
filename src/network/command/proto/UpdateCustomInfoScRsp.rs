@@ -31,7 +31,7 @@ pub struct UpdateCustomInfoScRsp {
     // @@protoc_insertion_point(field:UpdateCustomInfoScRsp.retcode)
     pub retcode: u32,
     // message oneof groups
-    pub NLPPPCHGGPF: ::std::option::Option<update_custom_info_sc_rsp::NLPPPCHGGPF>,
+    pub MMCGBGDJIPN: ::std::option::Option<update_custom_info_sc_rsp::MMCGBGDJIPN>,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateCustomInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -48,39 +48,39 @@ impl UpdateCustomInfoScRsp {
         ::std::default::Default::default()
     }
 
-    // string title = 5;
+    // string title = 13;
 
     pub fn title(&self) -> &str {
-        match self.NLPPPCHGGPF {
-            ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::Title(ref v)) => v,
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(ref v)) => v,
             _ => "",
         }
     }
 
     pub fn clear_title(&mut self) {
-        self.NLPPPCHGGPF = ::std::option::Option::None;
+        self.MMCGBGDJIPN = ::std::option::Option::None;
     }
 
     pub fn has_title(&self) -> bool {
-        match self.NLPPPCHGGPF {
-            ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::Title(..)) => true,
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_title(&mut self, v: ::std::string::String) {
-        self.NLPPPCHGGPF = ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::Title(v))
+        self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_title(&mut self) -> &mut ::std::string::String {
-        if let ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::Title(_)) = self.NLPPPCHGGPF {
+        if let ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(_)) = self.MMCGBGDJIPN {
         } else {
-            self.NLPPPCHGGPF = ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::Title(::std::string::String::new()));
+            self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(::std::string::String::new()));
         }
-        match self.NLPPPCHGGPF {
-            ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::Title(ref mut v)) => v,
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -88,8 +88,8 @@ impl UpdateCustomInfoScRsp {
     // Take field
     pub fn take_title(&mut self) -> ::std::string::String {
         if self.has_title() {
-            match self.NLPPPCHGGPF.take() {
-                ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::Title(v)) => v,
+            match self.MMCGBGDJIPN.take() {
+                ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -97,29 +97,29 @@ impl UpdateCustomInfoScRsp {
         }
     }
 
-    // uint32 FCOKOGNOGCA = 11;
+    // uint32 AJIMPLLIFIE = 15;
 
-    pub fn FCOKOGNOGCA(&self) -> u32 {
-        match self.NLPPPCHGGPF {
-            ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::FCOKOGNOGCA(v)) => v,
+    pub fn AJIMPLLIFIE(&self) -> u32 {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v)) => v,
             _ => 0,
         }
     }
 
-    pub fn clear_FCOKOGNOGCA(&mut self) {
-        self.NLPPPCHGGPF = ::std::option::Option::None;
+    pub fn clear_AJIMPLLIFIE(&mut self) {
+        self.MMCGBGDJIPN = ::std::option::Option::None;
     }
 
-    pub fn has_FCOKOGNOGCA(&self) -> bool {
-        match self.NLPPPCHGGPF {
-            ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::FCOKOGNOGCA(..)) => true,
+    pub fn has_AJIMPLLIFIE(&self) -> bool {
+        match self.MMCGBGDJIPN {
+            ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_FCOKOGNOGCA(&mut self, v: u32) {
-        self.NLPPPCHGGPF = ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::FCOKOGNOGCA(v))
+    pub fn set_AJIMPLLIFIE(&mut self, v: u32) {
+        self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v))
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
@@ -137,12 +137,12 @@ impl UpdateCustomInfoScRsp {
             UpdateCustomInfoScRsp::set_title,
         ));
         fields.push(::protobuf::reflect::rt::v2::make_oneof_copy_has_get_set_simpler_accessors::<_, _>(
-            "FCOKOGNOGCA",
-            UpdateCustomInfoScRsp::has_FCOKOGNOGCA,
-            UpdateCustomInfoScRsp::FCOKOGNOGCA,
-            UpdateCustomInfoScRsp::set_FCOKOGNOGCA,
+            "AJIMPLLIFIE",
+            UpdateCustomInfoScRsp::has_AJIMPLLIFIE,
+            UpdateCustomInfoScRsp::AJIMPLLIFIE,
+            UpdateCustomInfoScRsp::set_AJIMPLLIFIE,
         ));
-        oneofs.push(update_custom_info_sc_rsp::NLPPPCHGGPF::generated_oneof_descriptor_data());
+        oneofs.push(update_custom_info_sc_rsp::MMCGBGDJIPN::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateCustomInfoScRsp>(
             "UpdateCustomInfoScRsp",
             fields,
@@ -161,14 +161,14 @@ impl ::protobuf::Message for UpdateCustomInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
-                42 => {
-                    self.NLPPPCHGGPF = ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::Title(is.read_string()?));
+                106 => {
+                    self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::Title(is.read_string()?));
                 },
-                88 => {
-                    self.NLPPPCHGGPF = ::std::option::Option::Some(update_custom_info_sc_rsp::NLPPPCHGGPF::FCOKOGNOGCA(is.read_uint32()?));
+                120 => {
+                    self.MMCGBGDJIPN = ::std::option::Option::Some(update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(is.read_uint32()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -183,15 +183,15 @@ impl ::protobuf::Message for UpdateCustomInfoScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
-        if let ::std::option::Option::Some(ref v) = self.NLPPPCHGGPF {
+        if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
-                &update_custom_info_sc_rsp::NLPPPCHGGPF::Title(ref v) => {
-                    my_size += ::protobuf::rt::string_size(5, &v);
+                &update_custom_info_sc_rsp::MMCGBGDJIPN::Title(ref v) => {
+                    my_size += ::protobuf::rt::string_size(13, &v);
                 },
-                &update_custom_info_sc_rsp::NLPPPCHGGPF::FCOKOGNOGCA(v) => {
-                    my_size += ::protobuf::rt::uint32_size(11, v);
+                &update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
+                    my_size += ::protobuf::rt::uint32_size(15, v);
                 },
             };
         }
@@ -202,15 +202,15 @@ impl ::protobuf::Message for UpdateCustomInfoScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.NLPPPCHGGPF {
+        if let ::std::option::Option::Some(ref v) = self.MMCGBGDJIPN {
             match v {
-                &update_custom_info_sc_rsp::NLPPPCHGGPF::Title(ref v) => {
-                    os.write_string(5, v)?;
+                &update_custom_info_sc_rsp::MMCGBGDJIPN::Title(ref v) => {
+                    os.write_string(13, v)?;
                 },
-                &update_custom_info_sc_rsp::NLPPPCHGGPF::FCOKOGNOGCA(v) => {
-                    os.write_uint32(11, v)?;
+                &update_custom_info_sc_rsp::MMCGBGDJIPN::AJIMPLLIFIE(v) => {
+                    os.write_uint32(15, v)?;
                 },
             };
         }
@@ -232,15 +232,15 @@ impl ::protobuf::Message for UpdateCustomInfoScRsp {
 
     fn clear(&mut self) {
         self.retcode = 0;
-        self.NLPPPCHGGPF = ::std::option::Option::None;
-        self.NLPPPCHGGPF = ::std::option::Option::None;
+        self.MMCGBGDJIPN = ::std::option::Option::None;
+        self.MMCGBGDJIPN = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateCustomInfoScRsp {
         static instance: UpdateCustomInfoScRsp = UpdateCustomInfoScRsp {
             retcode: 0,
-            NLPPPCHGGPF: ::std::option::Option::None,
+            MMCGBGDJIPN: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -269,36 +269,36 @@ pub mod update_custom_info_sc_rsp {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:UpdateCustomInfoScRsp.NLPPPCHGGPF)
-    pub enum NLPPPCHGGPF {
+    // @@protoc_insertion_point(oneof:UpdateCustomInfoScRsp.MMCGBGDJIPN)
+    pub enum MMCGBGDJIPN {
         // @@protoc_insertion_point(oneof_field:UpdateCustomInfoScRsp.title)
         Title(::std::string::String),
-        // @@protoc_insertion_point(oneof_field:UpdateCustomInfoScRsp.FCOKOGNOGCA)
-        FCOKOGNOGCA(u32),
+        // @@protoc_insertion_point(oneof_field:UpdateCustomInfoScRsp.AJIMPLLIFIE)
+        AJIMPLLIFIE(u32),
     }
 
-    impl ::protobuf::Oneof for NLPPPCHGGPF {
+    impl ::protobuf::Oneof for MMCGBGDJIPN {
     }
 
-    impl ::protobuf::OneofFull for NLPPPCHGGPF {
+    impl ::protobuf::OneofFull for MMCGBGDJIPN {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::UpdateCustomInfoScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("NLPPPCHGGPF").unwrap()).clone()
+            descriptor.get(|| <super::UpdateCustomInfoScRsp as ::protobuf::MessageFull>::descriptor().oneof_by_name("MMCGBGDJIPN").unwrap()).clone()
         }
     }
 
-    impl NLPPPCHGGPF {
+    impl MMCGBGDJIPN {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NLPPPCHGGPF>("NLPPPCHGGPF")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<MMCGBGDJIPN>("MMCGBGDJIPN")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bUpdateCustomInfoScRsp.proto\"|\n\x15UpdateCustomInfoScRsp\x12\x18\
-    \n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12\x16\n\x05title\x18\x05\
-    \x20\x01(\tH\0R\x05title\x12\"\n\x0bFCOKOGNOGCA\x18\x0b\x20\x01(\rH\0R\
-    \x0bFCOKOGNOGCAB\r\n\x0bNLPPPCHGGPFb\x06proto3\
+    \n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x16\n\x05title\x18\r\
+    \x20\x01(\tH\0R\x05title\x12\"\n\x0bAJIMPLLIFIE\x18\x0f\x20\x01(\rH\0R\
+    \x0bAJIMPLLIFIEB\r\n\x0bMMCGBGDJIPNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

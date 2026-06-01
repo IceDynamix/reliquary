@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChessRogueUpdateAllowedSelectCellScNotify {
     // message fields
-    // @@protoc_insertion_point(field:ChessRogueUpdateAllowedSelectCellScNotify.PNEMJFMGKJJ)
-    pub PNEMJFMGKJJ: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChessRogueUpdateAllowedSelectCellScNotify.OHHGAAKGLDO)
-    pub OHHGAAKGLDO: u32,
+    // @@protoc_insertion_point(field:ChessRogueUpdateAllowedSelectCellScNotify.AADAFLKEJGD)
+    pub AADAFLKEJGD: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChessRogueUpdateAllowedSelectCellScNotify.AIHCKNAMPBP)
+    pub AIHCKNAMPBP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChessRogueUpdateAllowedSelectCellScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ChessRogueUpdateAllowedSelectCellScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PNEMJFMGKJJ",
-            |m: &ChessRogueUpdateAllowedSelectCellScNotify| { &m.PNEMJFMGKJJ },
-            |m: &mut ChessRogueUpdateAllowedSelectCellScNotify| { &mut m.PNEMJFMGKJJ },
+            "AADAFLKEJGD",
+            |m: &ChessRogueUpdateAllowedSelectCellScNotify| { &m.AADAFLKEJGD },
+            |m: &mut ChessRogueUpdateAllowedSelectCellScNotify| { &mut m.AADAFLKEJGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OHHGAAKGLDO",
-            |m: &ChessRogueUpdateAllowedSelectCellScNotify| { &m.OHHGAAKGLDO },
-            |m: &mut ChessRogueUpdateAllowedSelectCellScNotify| { &mut m.OHHGAAKGLDO },
+            "AIHCKNAMPBP",
+            |m: &ChessRogueUpdateAllowedSelectCellScNotify| { &m.AIHCKNAMPBP },
+            |m: &mut ChessRogueUpdateAllowedSelectCellScNotify| { &mut m.AIHCKNAMPBP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChessRogueUpdateAllowedSelectCellScNotify>(
             "ChessRogueUpdateAllowedSelectCellScNotify",
@@ -80,13 +80,13 @@ impl ::protobuf::Message for ChessRogueUpdateAllowedSelectCellScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.PNEMJFMGKJJ)?;
+                    is.read_repeated_packed_uint32_into(&mut self.AADAFLKEJGD)?;
                 },
                 40 => {
-                    self.PNEMJFMGKJJ.push(is.read_uint32()?);
+                    self.AADAFLKEJGD.push(is.read_uint32()?);
                 },
-                112 => {
-                    self.OHHGAAKGLDO = is.read_uint32()?;
+                80 => {
+                    self.AIHCKNAMPBP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,9 +100,9 @@ impl ::protobuf::Message for ChessRogueUpdateAllowedSelectCellScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.PNEMJFMGKJJ);
-        if self.OHHGAAKGLDO != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.OHHGAAKGLDO);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.AADAFLKEJGD);
+        if self.AIHCKNAMPBP != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.AIHCKNAMPBP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for ChessRogueUpdateAllowedSelectCellScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(5, &self.PNEMJFMGKJJ)?;
-        if self.OHHGAAKGLDO != 0 {
-            os.write_uint32(14, self.OHHGAAKGLDO)?;
+        os.write_repeated_packed_uint32(5, &self.AADAFLKEJGD)?;
+        if self.AIHCKNAMPBP != 0 {
+            os.write_uint32(10, self.AIHCKNAMPBP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -131,15 +131,15 @@ impl ::protobuf::Message for ChessRogueUpdateAllowedSelectCellScNotify {
     }
 
     fn clear(&mut self) {
-        self.PNEMJFMGKJJ.clear();
-        self.OHHGAAKGLDO = 0;
+        self.AADAFLKEJGD.clear();
+        self.AIHCKNAMPBP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChessRogueUpdateAllowedSelectCellScNotify {
         static instance: ChessRogueUpdateAllowedSelectCellScNotify = ChessRogueUpdateAllowedSelectCellScNotify {
-            PNEMJFMGKJJ: ::std::vec::Vec::new(),
-            OHHGAAKGLDO: 0,
+            AADAFLKEJGD: ::std::vec::Vec::new(),
+            AIHCKNAMPBP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for ChessRogueUpdateAllowedSelectCellScN
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n/ChessRogueUpdateAllowedSelectCellScNotify.proto\"o\n)ChessRogueUpdate\
-    AllowedSelectCellScNotify\x12\x20\n\x0bPNEMJFMGKJJ\x18\x05\x20\x03(\rR\
-    \x0bPNEMJFMGKJJ\x12\x20\n\x0bOHHGAAKGLDO\x18\x0e\x20\x01(\rR\x0bOHHGAAKG\
-    LDOb\x06proto3\
+    AllowedSelectCellScNotify\x12\x20\n\x0bAADAFLKEJGD\x18\x05\x20\x03(\rR\
+    \x0bAADAFLKEJGD\x12\x20\n\x0bAIHCKNAMPBP\x18\n\x20\x01(\rR\x0bAIHCKNAMPB\
+    Pb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

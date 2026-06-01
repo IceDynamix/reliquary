@@ -47,6 +47,8 @@ pub enum MsgType {
     MSG_TYPE_PPGBFMOGAHC = 8,
     // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_BAEKHOHLLKJ)
     MSG_TYPE_BAEKHOHLLKJ = 9,
+    // @@protoc_insertion_point(enum_value:MsgType.MSG_TYPE_MJIEABMBEDP)
+    MSG_TYPE_MJIEABMBEDP = 10,
 }
 
 impl ::protobuf::Enum for MsgType {
@@ -68,6 +70,7 @@ impl ::protobuf::Enum for MsgType {
             7 => ::std::option::Option::Some(MsgType::MSG_TYPE_MGLPLOPECGJ),
             8 => ::std::option::Option::Some(MsgType::MSG_TYPE_PPGBFMOGAHC),
             9 => ::std::option::Option::Some(MsgType::MSG_TYPE_BAEKHOHLLKJ),
+            10 => ::std::option::Option::Some(MsgType::MSG_TYPE_MJIEABMBEDP),
             _ => ::std::option::Option::None
         }
     }
@@ -84,6 +87,7 @@ impl ::protobuf::Enum for MsgType {
             "MSG_TYPE_MGLPLOPECGJ" => ::std::option::Option::Some(MsgType::MSG_TYPE_MGLPLOPECGJ),
             "MSG_TYPE_PPGBFMOGAHC" => ::std::option::Option::Some(MsgType::MSG_TYPE_PPGBFMOGAHC),
             "MSG_TYPE_BAEKHOHLLKJ" => ::std::option::Option::Some(MsgType::MSG_TYPE_BAEKHOHLLKJ),
+            "MSG_TYPE_MJIEABMBEDP" => ::std::option::Option::Some(MsgType::MSG_TYPE_MJIEABMBEDP),
             _ => ::std::option::Option::None
         }
     }
@@ -99,6 +103,7 @@ impl ::protobuf::Enum for MsgType {
         MsgType::MSG_TYPE_MGLPLOPECGJ,
         MsgType::MSG_TYPE_PPGBFMOGAHC,
         MsgType::MSG_TYPE_BAEKHOHLLKJ,
+        MsgType::MSG_TYPE_MJIEABMBEDP,
     ];
 }
 
@@ -127,13 +132,13 @@ impl MsgType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\rMsgType.proto*\xfa\x01\n\x07MsgType\x12\x11\n\rMSG_TYPE_NONE\x10\0\
+    \n\rMsgType.proto*\x94\x02\n\x07MsgType\x12\x11\n\rMSG_TYPE_NONE\x10\0\
     \x12\x18\n\x14MSG_TYPE_CUSTOM_TEXT\x10\x01\x12\x12\n\x0eMSG_TYPE_EMOJI\
     \x10\x02\x12\x13\n\x0fMSG_TYPE_INVITE\x10\x03\x12\x17\n\x13MSG_TYPE_PLAN\
     ET_FES\x10\x04\x12\x18\n\x14MSG_TYPE_ACIELMOLELB\x10\x05\x12\x18\n\x14MS\
     G_TYPE_BGDMLGDMDIF\x10\x06\x12\x18\n\x14MSG_TYPE_MGLPLOPECGJ\x10\x07\x12\
     \x18\n\x14MSG_TYPE_PPGBFMOGAHC\x10\x08\x12\x18\n\x14MSG_TYPE_BAEKHOHLLKJ\
-    \x10\tb\x06proto3\
+    \x10\t\x12\x18\n\x14MSG_TYPE_MJIEABMBEDP\x10\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

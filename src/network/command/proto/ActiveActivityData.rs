@@ -30,16 +30,16 @@ pub struct ActiveActivityData {
     // message fields
     // @@protoc_insertion_point(field:ActiveActivityData.taken_star_rewards)
     pub taken_star_rewards: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ActiveActivityData.ACLBMIEHBJE)
-    pub ACLBMIEHBJE: u32,
     // @@protoc_insertion_point(field:ActiveActivityData.id)
     pub id: u32,
-    // @@protoc_insertion_point(field:ActiveActivityData.OKKJLFKLHBH)
-    pub OKKJLFKLHBH: u32,
-    // @@protoc_insertion_point(field:ActiveActivityData.PGDGGAPFPBN)
-    pub PGDGGAPFPBN: u32,
+    // @@protoc_insertion_point(field:ActiveActivityData.DBIFEEDMAOF)
+    pub DBIFEEDMAOF: u32,
+    // @@protoc_insertion_point(field:ActiveActivityData.FODLNKPNION)
+    pub FODLNKPNION: u32,
     // @@protoc_insertion_point(field:ActiveActivityData.panel_id)
     pub panel_id: u32,
+    // @@protoc_insertion_point(field:ActiveActivityData.CDMIKICANEP)
+    pub CDMIKICANEP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ActiveActivityData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,29 +65,29 @@ impl ActiveActivityData {
             |m: &mut ActiveActivityData| { &mut m.taken_star_rewards },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ACLBMIEHBJE",
-            |m: &ActiveActivityData| { &m.ACLBMIEHBJE },
-            |m: &mut ActiveActivityData| { &mut m.ACLBMIEHBJE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
             |m: &ActiveActivityData| { &m.id },
             |m: &mut ActiveActivityData| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OKKJLFKLHBH",
-            |m: &ActiveActivityData| { &m.OKKJLFKLHBH },
-            |m: &mut ActiveActivityData| { &mut m.OKKJLFKLHBH },
+            "DBIFEEDMAOF",
+            |m: &ActiveActivityData| { &m.DBIFEEDMAOF },
+            |m: &mut ActiveActivityData| { &mut m.DBIFEEDMAOF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PGDGGAPFPBN",
-            |m: &ActiveActivityData| { &m.PGDGGAPFPBN },
-            |m: &mut ActiveActivityData| { &mut m.PGDGGAPFPBN },
+            "FODLNKPNION",
+            |m: &ActiveActivityData| { &m.FODLNKPNION },
+            |m: &mut ActiveActivityData| { &mut m.FODLNKPNION },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "panel_id",
             |m: &ActiveActivityData| { &m.panel_id },
             |m: &mut ActiveActivityData| { &mut m.panel_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CDMIKICANEP",
+            |m: &ActiveActivityData| { &m.CDMIKICANEP },
+            |m: &mut ActiveActivityData| { &mut m.CDMIKICANEP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ActiveActivityData>(
             "ActiveActivityData",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for ActiveActivityData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                90 => {
                     is.read_repeated_packed_uint32_into(&mut self.taken_star_rewards)?;
                 },
-                56 => {
+                88 => {
                     self.taken_star_rewards.push(is.read_uint32()?);
                 },
-                96 => {
-                    self.ACLBMIEHBJE = is.read_uint32()?;
-                },
-                48 => {
+                16 => {
                     self.id = is.read_uint32()?;
                 },
-                16 => {
-                    self.OKKJLFKLHBH = is.read_uint32()?;
+                56 => {
+                    self.DBIFEEDMAOF = is.read_uint32()?;
                 },
-                64 => {
-                    self.PGDGGAPFPBN = is.read_uint32()?;
+                80 => {
+                    self.FODLNKPNION = is.read_uint32()?;
                 },
-                40 => {
+                112 => {
                     self.panel_id = is.read_uint32()?;
+                },
+                120 => {
+                    self.CDMIKICANEP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,21 +140,21 @@ impl ::protobuf::Message for ActiveActivityData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.taken_star_rewards);
-        if self.ACLBMIEHBJE != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.ACLBMIEHBJE);
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.taken_star_rewards);
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.id);
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
         }
-        if self.OKKJLFKLHBH != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.OKKJLFKLHBH);
+        if self.DBIFEEDMAOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.DBIFEEDMAOF);
         }
-        if self.PGDGGAPFPBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.PGDGGAPFPBN);
+        if self.FODLNKPNION != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.FODLNKPNION);
         }
         if self.panel_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.panel_id);
+            my_size += ::protobuf::rt::uint32_size(14, self.panel_id);
+        }
+        if self.CDMIKICANEP != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.CDMIKICANEP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -162,21 +162,21 @@ impl ::protobuf::Message for ActiveActivityData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.taken_star_rewards)?;
-        if self.ACLBMIEHBJE != 0 {
-            os.write_uint32(12, self.ACLBMIEHBJE)?;
-        }
+        os.write_repeated_packed_uint32(11, &self.taken_star_rewards)?;
         if self.id != 0 {
-            os.write_uint32(6, self.id)?;
+            os.write_uint32(2, self.id)?;
         }
-        if self.OKKJLFKLHBH != 0 {
-            os.write_uint32(2, self.OKKJLFKLHBH)?;
+        if self.DBIFEEDMAOF != 0 {
+            os.write_uint32(7, self.DBIFEEDMAOF)?;
         }
-        if self.PGDGGAPFPBN != 0 {
-            os.write_uint32(8, self.PGDGGAPFPBN)?;
+        if self.FODLNKPNION != 0 {
+            os.write_uint32(10, self.FODLNKPNION)?;
         }
         if self.panel_id != 0 {
-            os.write_uint32(5, self.panel_id)?;
+            os.write_uint32(14, self.panel_id)?;
+        }
+        if self.CDMIKICANEP != 0 {
+            os.write_uint32(15, self.CDMIKICANEP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -196,22 +196,22 @@ impl ::protobuf::Message for ActiveActivityData {
 
     fn clear(&mut self) {
         self.taken_star_rewards.clear();
-        self.ACLBMIEHBJE = 0;
         self.id = 0;
-        self.OKKJLFKLHBH = 0;
-        self.PGDGGAPFPBN = 0;
+        self.DBIFEEDMAOF = 0;
+        self.FODLNKPNION = 0;
         self.panel_id = 0;
+        self.CDMIKICANEP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ActiveActivityData {
         static instance: ActiveActivityData = ActiveActivityData {
             taken_star_rewards: ::std::vec::Vec::new(),
-            ACLBMIEHBJE: 0,
             id: 0,
-            OKKJLFKLHBH: 0,
-            PGDGGAPFPBN: 0,
+            DBIFEEDMAOF: 0,
+            FODLNKPNION: 0,
             panel_id: 0,
+            CDMIKICANEP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,11 +237,11 @@ impl ::protobuf::reflect::ProtobufValue for ActiveActivityData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18ActiveActivityData.proto\"\xd3\x01\n\x12ActiveActivityData\x12,\n\
-    \x12taken_star_rewards\x18\x07\x20\x03(\rR\x10takenStarRewards\x12\x20\n\
-    \x0bACLBMIEHBJE\x18\x0c\x20\x01(\rR\x0bACLBMIEHBJE\x12\x0e\n\x02id\x18\
-    \x06\x20\x01(\rR\x02id\x12\x20\n\x0bOKKJLFKLHBH\x18\x02\x20\x01(\rR\x0bO\
-    KKJLFKLHBH\x12\x20\n\x0bPGDGGAPFPBN\x18\x08\x20\x01(\rR\x0bPGDGGAPFPBN\
-    \x12\x19\n\x08panel_id\x18\x05\x20\x01(\rR\x07panelIdb\x06proto3\
+    \x12taken_star_rewards\x18\x0b\x20\x03(\rR\x10takenStarRewards\x12\x0e\n\
+    \x02id\x18\x02\x20\x01(\rR\x02id\x12\x20\n\x0bDBIFEEDMAOF\x18\x07\x20\
+    \x01(\rR\x0bDBIFEEDMAOF\x12\x20\n\x0bFODLNKPNION\x18\n\x20\x01(\rR\x0bFO\
+    DLNKPNION\x12\x19\n\x08panel_id\x18\x0e\x20\x01(\rR\x07panelId\x12\x20\n\
+    \x0bCDMIKICANEP\x18\x0f\x20\x01(\rR\x0bCDMIKICANEPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

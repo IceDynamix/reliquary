@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MusicRhythmStartLevelScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.MDILDJMPNGH)
-    pub MDILDJMPNGH: ::std::string::String,
+    // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.FPPECOIAHEP)
+    pub FPPECOIAHEP: ::std::string::String,
     // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:MusicRhythmStartLevelScRsp.level_id)
@@ -54,9 +54,9 @@ impl MusicRhythmStartLevelScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MDILDJMPNGH",
-            |m: &MusicRhythmStartLevelScRsp| { &m.MDILDJMPNGH },
-            |m: &mut MusicRhythmStartLevelScRsp| { &mut m.MDILDJMPNGH },
+            "FPPECOIAHEP",
+            |m: &MusicRhythmStartLevelScRsp| { &m.FPPECOIAHEP },
+            |m: &mut MusicRhythmStartLevelScRsp| { &mut m.FPPECOIAHEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.MDILDJMPNGH = is.read_string()?;
+                122 => {
+                    self.FPPECOIAHEP = is.read_string()?;
                 },
-                48 => {
+                64 => {
                     self.retcode = is.read_uint32()?;
                 },
-                16 => {
+                56 => {
                     self.level_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if !self.MDILDJMPNGH.is_empty() {
-            my_size += ::protobuf::rt::string_size(8, &self.MDILDJMPNGH);
+        if !self.FPPECOIAHEP.is_empty() {
+            my_size += ::protobuf::rt::string_size(15, &self.FPPECOIAHEP);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
         if self.level_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.level_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.level_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if !self.MDILDJMPNGH.is_empty() {
-            os.write_string(8, &self.MDILDJMPNGH)?;
+        if !self.FPPECOIAHEP.is_empty() {
+            os.write_string(15, &self.FPPECOIAHEP)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
         if self.level_id != 0 {
-            os.write_uint32(2, self.level_id)?;
+            os.write_uint32(7, self.level_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,7 +148,7 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
     }
 
     fn clear(&mut self) {
-        self.MDILDJMPNGH.clear();
+        self.FPPECOIAHEP.clear();
         self.retcode = 0;
         self.level_id = 0;
         self.special_fields.clear();
@@ -156,7 +156,7 @@ impl ::protobuf::Message for MusicRhythmStartLevelScRsp {
 
     fn default_instance() -> &'static MusicRhythmStartLevelScRsp {
         static instance: MusicRhythmStartLevelScRsp = MusicRhythmStartLevelScRsp {
-            MDILDJMPNGH: ::std::string::String::new(),
+            FPPECOIAHEP: ::std::string::String::new(),
             retcode: 0,
             level_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for MusicRhythmStartLevelScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20MusicRhythmStartLevelScRsp.proto\"s\n\x1aMusicRhythmStartLevelScRs\
-    p\x12\x20\n\x0bMDILDJMPNGH\x18\x08\x20\x01(\tR\x0bMDILDJMPNGH\x12\x18\n\
-    \x07retcode\x18\x06\x20\x01(\rR\x07retcode\x12\x19\n\x08level_id\x18\x02\
+    p\x12\x20\n\x0bFPPECOIAHEP\x18\x0f\x20\x01(\tR\x0bFPPECOIAHEP\x12\x18\n\
+    \x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x19\n\x08level_id\x18\x07\
     \x20\x01(\rR\x07levelIdb\x06proto3\
 ";
 

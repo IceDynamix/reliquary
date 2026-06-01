@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FightMarbleHpChangeType)
 pub enum FightMarbleHpChangeType {
-    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.AGHLHAFIAEJ_OPPEOEKLDCJ)
-    AGHLHAFIAEJ_OPPEOEKLDCJ = 0,
-    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.AGHLHAFIAEJ_CBHGOMHNLMI)
-    AGHLHAFIAEJ_CBHGOMHNLMI = 1,
-    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.AGHLHAFIAEJ_DNOOPAMDACC)
-    AGHLHAFIAEJ_DNOOPAMDACC = 2,
+    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.LMGECGDAPEN_NLPOGHCIEGN)
+    LMGECGDAPEN_NLPOGHCIEGN = 0,
+    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.LMGECGDAPEN_BNOHJNMEOBI)
+    LMGECGDAPEN_BNOHJNMEOBI = 1,
+    // @@protoc_insertion_point(enum_value:FightMarbleHpChangeType.LMGECGDAPEN_ALGLGIGKDOO)
+    LMGECGDAPEN_ALGLGIGKDOO = 2,
 }
 
 impl ::protobuf::Enum for FightMarbleHpChangeType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for FightMarbleHpChangeType {
 
     fn from_i32(value: i32) -> ::std::option::Option<FightMarbleHpChangeType> {
         match value {
-            0 => ::std::option::Option::Some(FightMarbleHpChangeType::AGHLHAFIAEJ_OPPEOEKLDCJ),
-            1 => ::std::option::Option::Some(FightMarbleHpChangeType::AGHLHAFIAEJ_CBHGOMHNLMI),
-            2 => ::std::option::Option::Some(FightMarbleHpChangeType::AGHLHAFIAEJ_DNOOPAMDACC),
+            0 => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_NLPOGHCIEGN),
+            1 => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_BNOHJNMEOBI),
+            2 => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_ALGLGIGKDOO),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FightMarbleHpChangeType> {
         match str {
-            "AGHLHAFIAEJ_OPPEOEKLDCJ" => ::std::option::Option::Some(FightMarbleHpChangeType::AGHLHAFIAEJ_OPPEOEKLDCJ),
-            "AGHLHAFIAEJ_CBHGOMHNLMI" => ::std::option::Option::Some(FightMarbleHpChangeType::AGHLHAFIAEJ_CBHGOMHNLMI),
-            "AGHLHAFIAEJ_DNOOPAMDACC" => ::std::option::Option::Some(FightMarbleHpChangeType::AGHLHAFIAEJ_DNOOPAMDACC),
+            "LMGECGDAPEN_NLPOGHCIEGN" => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_NLPOGHCIEGN),
+            "LMGECGDAPEN_BNOHJNMEOBI" => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_BNOHJNMEOBI),
+            "LMGECGDAPEN_ALGLGIGKDOO" => ::std::option::Option::Some(FightMarbleHpChangeType::LMGECGDAPEN_ALGLGIGKDOO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FightMarbleHpChangeType] = &[
-        FightMarbleHpChangeType::AGHLHAFIAEJ_OPPEOEKLDCJ,
-        FightMarbleHpChangeType::AGHLHAFIAEJ_CBHGOMHNLMI,
-        FightMarbleHpChangeType::AGHLHAFIAEJ_DNOOPAMDACC,
+        FightMarbleHpChangeType::LMGECGDAPEN_NLPOGHCIEGN,
+        FightMarbleHpChangeType::LMGECGDAPEN_BNOHJNMEOBI,
+        FightMarbleHpChangeType::LMGECGDAPEN_ALGLGIGKDOO,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for FightMarbleHpChangeType {
 
 impl ::std::default::Default for FightMarbleHpChangeType {
     fn default() -> Self {
-        FightMarbleHpChangeType::AGHLHAFIAEJ_OPPEOEKLDCJ
+        FightMarbleHpChangeType::LMGECGDAPEN_NLPOGHCIEGN
     }
 }
 
@@ -93,8 +93,8 @@ impl FightMarbleHpChangeType {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dFightMarbleHpChangeType.proto*p\n\x17FightMarbleHpChangeType\x12\
-    \x1b\n\x17AGHLHAFIAEJ_OPPEOEKLDCJ\x10\0\x12\x1b\n\x17AGHLHAFIAEJ_CBHGOMH\
-    NLMI\x10\x01\x12\x1b\n\x17AGHLHAFIAEJ_DNOOPAMDACC\x10\x02b\x06proto3\
+    \x1b\n\x17LMGECGDAPEN_NLPOGHCIEGN\x10\0\x12\x1b\n\x17LMGECGDAPEN_BNOHJNM\
+    EOBI\x10\x01\x12\x1b\n\x17LMGECGDAPEN_ALGLGIGKDOO\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

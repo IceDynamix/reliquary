@@ -30,8 +30,8 @@ pub struct ConfirmChallengePeakSettleCsReq {
     // message fields
     // @@protoc_insertion_point(field:ConfirmChallengePeakSettleCsReq.peak_id)
     pub peak_id: u32,
-    // @@protoc_insertion_point(field:ConfirmChallengePeakSettleCsReq.ABHOLNJNPJM)
-    pub ABHOLNJNPJM: bool,
+    // @@protoc_insertion_point(field:ConfirmChallengePeakSettleCsReq.IOBCIMIPEOM)
+    pub IOBCIMIPEOM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ConfirmChallengePeakSettleCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl ConfirmChallengePeakSettleCsReq {
             |m: &mut ConfirmChallengePeakSettleCsReq| { &mut m.peak_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ABHOLNJNPJM",
-            |m: &ConfirmChallengePeakSettleCsReq| { &m.ABHOLNJNPJM },
-            |m: &mut ConfirmChallengePeakSettleCsReq| { &mut m.ABHOLNJNPJM },
+            "IOBCIMIPEOM",
+            |m: &ConfirmChallengePeakSettleCsReq| { &m.IOBCIMIPEOM },
+            |m: &mut ConfirmChallengePeakSettleCsReq| { &mut m.IOBCIMIPEOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ConfirmChallengePeakSettleCsReq>(
             "ConfirmChallengePeakSettleCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                64 => {
                     self.peak_id = is.read_uint32()?;
                 },
-                88 => {
-                    self.ABHOLNJNPJM = is.read_bool()?;
+                96 => {
+                    self.IOBCIMIPEOM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.peak_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.peak_id);
+            my_size += ::protobuf::rt::uint32_size(8, self.peak_id);
         }
-        if self.ABHOLNJNPJM != false {
+        if self.IOBCIMIPEOM != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,10 +110,10 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.peak_id != 0 {
-            os.write_uint32(3, self.peak_id)?;
+            os.write_uint32(8, self.peak_id)?;
         }
-        if self.ABHOLNJNPJM != false {
-            os.write_bool(11, self.ABHOLNJNPJM)?;
+        if self.IOBCIMIPEOM != false {
+            os.write_bool(12, self.IOBCIMIPEOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleCsReq {
 
     fn clear(&mut self) {
         self.peak_id = 0;
-        self.ABHOLNJNPJM = false;
+        self.IOBCIMIPEOM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ConfirmChallengePeakSettleCsReq {
         static instance: ConfirmChallengePeakSettleCsReq = ConfirmChallengePeakSettleCsReq {
             peak_id: 0,
-            ABHOLNJNPJM: false,
+            IOBCIMIPEOM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ConfirmChallengePeakSettleCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%ConfirmChallengePeakSettleCsReq.proto\"\\\n\x1fConfirmChallengePeakSe\
-    ttleCsReq\x12\x17\n\x07peak_id\x18\x03\x20\x01(\rR\x06peakId\x12\x20\n\
-    \x0bABHOLNJNPJM\x18\x0b\x20\x01(\x08R\x0bABHOLNJNPJMb\x06proto3\
+    ttleCsReq\x12\x17\n\x07peak_id\x18\x08\x20\x01(\rR\x06peakId\x12\x20\n\
+    \x0bIOBCIMIPEOM\x18\x0c\x20\x01(\x08R\x0bIOBCIMIPEOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

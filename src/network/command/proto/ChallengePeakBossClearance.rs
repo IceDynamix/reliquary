@@ -28,24 +28,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChallengePeakBossClearance {
     // message fields
-    // @@protoc_insertion_point(field:ChallengePeakBossClearance.OHOMDMEJLFK)
-    pub OHOMDMEJLFK: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChallengePeakBossClearance.best_cycle_count)
-    pub best_cycle_count: u32,
+    // @@protoc_insertion_point(field:ChallengePeakBossClearance.EBNNJAEPBGD)
+    pub EBNNJAEPBGD: ::std::vec::Vec<super::ABCHBKBKCDF::ABCHBKBKCDF>,
     // @@protoc_insertion_point(field:ChallengePeakBossClearance.peak_avatar_id_list)
     pub peak_avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:ChallengePeakBossClearance.has_passed)
-    pub has_passed: bool,
+    // @@protoc_insertion_point(field:ChallengePeakBossClearance.LAMPCACOCHP)
+    pub LAMPCACOCHP: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ChallengePeakBossClearance.NHOJDHPGBBO)
+    pub NHOJDHPGBBO: u32,
+    // @@protoc_insertion_point(field:ChallengePeakBossClearance.best_cycle_count)
+    pub best_cycle_count: u32,
     // @@protoc_insertion_point(field:ChallengePeakBossClearance.buff_id)
     pub buff_id: u32,
-    // @@protoc_insertion_point(field:ChallengePeakBossClearance.HEILKBJCAGB)
-    pub HEILKBJCAGB: u32,
-    // @@protoc_insertion_point(field:ChallengePeakBossClearance.CGDMCHDOALC)
-    pub CGDMCHDOALC: ::std::vec::Vec<super::DGOLJHDBJKC::DGOLJHDBJKC>,
-    // @@protoc_insertion_point(field:ChallengePeakBossClearance.MALOCIMPJPM)
-    pub MALOCIMPJPM: u32,
-    // @@protoc_insertion_point(field:ChallengePeakBossClearance.FMFGOJHCCNL)
-    pub FMFGOJHCCNL: ::std::vec::Vec<super::EEBPHJCNBFO::EEBPHJCNBFO>,
+    // @@protoc_insertion_point(field:ChallengePeakBossClearance.has_passed)
+    pub has_passed: bool,
+    // @@protoc_insertion_point(field:ChallengePeakBossClearance.DJFGDMIDEHJ)
+    pub DJFGDMIDEHJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengePeakBossClearance.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -63,27 +61,32 @@ impl ChallengePeakBossClearance {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(9);
+        let mut fields = ::std::vec::Vec::with_capacity(8);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OHOMDMEJLFK",
-            |m: &ChallengePeakBossClearance| { &m.OHOMDMEJLFK },
-            |m: &mut ChallengePeakBossClearance| { &mut m.OHOMDMEJLFK },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "best_cycle_count",
-            |m: &ChallengePeakBossClearance| { &m.best_cycle_count },
-            |m: &mut ChallengePeakBossClearance| { &mut m.best_cycle_count },
+            "EBNNJAEPBGD",
+            |m: &ChallengePeakBossClearance| { &m.EBNNJAEPBGD },
+            |m: &mut ChallengePeakBossClearance| { &mut m.EBNNJAEPBGD },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "peak_avatar_id_list",
             |m: &ChallengePeakBossClearance| { &m.peak_avatar_id_list },
             |m: &mut ChallengePeakBossClearance| { &mut m.peak_avatar_id_list },
         ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "LAMPCACOCHP",
+            |m: &ChallengePeakBossClearance| { &m.LAMPCACOCHP },
+            |m: &mut ChallengePeakBossClearance| { &mut m.LAMPCACOCHP },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "has_passed",
-            |m: &ChallengePeakBossClearance| { &m.has_passed },
-            |m: &mut ChallengePeakBossClearance| { &mut m.has_passed },
+            "NHOJDHPGBBO",
+            |m: &ChallengePeakBossClearance| { &m.NHOJDHPGBBO },
+            |m: &mut ChallengePeakBossClearance| { &mut m.NHOJDHPGBBO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "best_cycle_count",
+            |m: &ChallengePeakBossClearance| { &m.best_cycle_count },
+            |m: &mut ChallengePeakBossClearance| { &mut m.best_cycle_count },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_id",
@@ -91,24 +94,14 @@ impl ChallengePeakBossClearance {
             |m: &mut ChallengePeakBossClearance| { &mut m.buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HEILKBJCAGB",
-            |m: &ChallengePeakBossClearance| { &m.HEILKBJCAGB },
-            |m: &mut ChallengePeakBossClearance| { &mut m.HEILKBJCAGB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CGDMCHDOALC",
-            |m: &ChallengePeakBossClearance| { &m.CGDMCHDOALC },
-            |m: &mut ChallengePeakBossClearance| { &mut m.CGDMCHDOALC },
+            "has_passed",
+            |m: &ChallengePeakBossClearance| { &m.has_passed },
+            |m: &mut ChallengePeakBossClearance| { &mut m.has_passed },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MALOCIMPJPM",
-            |m: &ChallengePeakBossClearance| { &m.MALOCIMPJPM },
-            |m: &mut ChallengePeakBossClearance| { &mut m.MALOCIMPJPM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "FMFGOJHCCNL",
-            |m: &ChallengePeakBossClearance| { &m.FMFGOJHCCNL },
-            |m: &mut ChallengePeakBossClearance| { &mut m.FMFGOJHCCNL },
+            "DJFGDMIDEHJ",
+            |m: &ChallengePeakBossClearance| { &m.DJFGDMIDEHJ },
+            |m: &mut ChallengePeakBossClearance| { &mut m.DJFGDMIDEHJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengePeakBossClearance>(
             "ChallengePeakBossClearance",
@@ -128,38 +121,35 @@ impl ::protobuf::Message for ChallengePeakBossClearance {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OHOMDMEJLFK)?;
+                106 => {
+                    self.EBNNJAEPBGD.push(is.read_message()?);
                 },
-                120 => {
-                    self.OHOMDMEJLFK.push(is.read_uint32()?);
-                },
-                88 => {
-                    self.best_cycle_count = is.read_uint32()?;
-                },
-                42 => {
+                26 => {
                     is.read_repeated_packed_uint32_into(&mut self.peak_avatar_id_list)?;
                 },
-                40 => {
+                24 => {
                     self.peak_avatar_id_list.push(is.read_uint32()?);
                 },
-                72 => {
-                    self.has_passed = is.read_bool()?;
+                82 => {
+                    is.read_repeated_packed_uint32_into(&mut self.LAMPCACOCHP)?;
                 },
                 80 => {
+                    self.LAMPCACOCHP.push(is.read_uint32()?);
+                },
+                32 => {
+                    self.NHOJDHPGBBO = is.read_uint32()?;
+                },
+                72 => {
+                    self.best_cycle_count = is.read_uint32()?;
+                },
+                40 => {
                     self.buff_id = is.read_uint32()?;
                 },
-                104 => {
-                    self.HEILKBJCAGB = is.read_uint32()?;
+                48 => {
+                    self.has_passed = is.read_bool()?;
                 },
-                114 => {
-                    self.CGDMCHDOALC.push(is.read_message()?);
-                },
-                24 => {
-                    self.MALOCIMPJPM = is.read_uint32()?;
-                },
-                34 => {
-                    self.FMFGOJHCCNL.push(is.read_message()?);
+                88 => {
+                    self.DJFGDMIDEHJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -173,60 +163,53 @@ impl ::protobuf::Message for ChallengePeakBossClearance {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.OHOMDMEJLFK);
-        if self.best_cycle_count != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.best_cycle_count);
+        for value in &self.EBNNJAEPBGD {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.peak_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.LAMPCACOCHP);
+        if self.NHOJDHPGBBO != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.NHOJDHPGBBO);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.peak_avatar_id_list);
+        if self.best_cycle_count != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.best_cycle_count);
+        }
+        if self.buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.buff_id);
+        }
         if self.has_passed != false {
             my_size += 1 + 1;
         }
-        if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.buff_id);
+        if self.DJFGDMIDEHJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.DJFGDMIDEHJ);
         }
-        if self.HEILKBJCAGB != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.HEILKBJCAGB);
-        }
-        for value in &self.CGDMCHDOALC {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.MALOCIMPJPM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.MALOCIMPJPM);
-        }
-        for value in &self.FMFGOJHCCNL {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(15, &self.OHOMDMEJLFK)?;
-        if self.best_cycle_count != 0 {
-            os.write_uint32(11, self.best_cycle_count)?;
+        for v in &self.EBNNJAEPBGD {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        os.write_repeated_packed_uint32(3, &self.peak_avatar_id_list)?;
+        os.write_repeated_packed_uint32(10, &self.LAMPCACOCHP)?;
+        if self.NHOJDHPGBBO != 0 {
+            os.write_uint32(4, self.NHOJDHPGBBO)?;
         }
-        os.write_repeated_packed_uint32(5, &self.peak_avatar_id_list)?;
-        if self.has_passed != false {
-            os.write_bool(9, self.has_passed)?;
+        if self.best_cycle_count != 0 {
+            os.write_uint32(9, self.best_cycle_count)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(10, self.buff_id)?;
+            os.write_uint32(5, self.buff_id)?;
         }
-        if self.HEILKBJCAGB != 0 {
-            os.write_uint32(13, self.HEILKBJCAGB)?;
+        if self.has_passed != false {
+            os.write_bool(6, self.has_passed)?;
         }
-        for v in &self.CGDMCHDOALC {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        if self.MALOCIMPJPM != 0 {
-            os.write_uint32(3, self.MALOCIMPJPM)?;
+        if self.DJFGDMIDEHJ != 0 {
+            os.write_uint32(11, self.DJFGDMIDEHJ)?;
         }
-        for v in &self.FMFGOJHCCNL {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -244,29 +227,27 @@ impl ::protobuf::Message for ChallengePeakBossClearance {
     }
 
     fn clear(&mut self) {
-        self.OHOMDMEJLFK.clear();
-        self.best_cycle_count = 0;
+        self.EBNNJAEPBGD.clear();
         self.peak_avatar_id_list.clear();
-        self.has_passed = false;
+        self.LAMPCACOCHP.clear();
+        self.NHOJDHPGBBO = 0;
+        self.best_cycle_count = 0;
         self.buff_id = 0;
-        self.HEILKBJCAGB = 0;
-        self.CGDMCHDOALC.clear();
-        self.MALOCIMPJPM = 0;
-        self.FMFGOJHCCNL.clear();
+        self.has_passed = false;
+        self.DJFGDMIDEHJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengePeakBossClearance {
         static instance: ChallengePeakBossClearance = ChallengePeakBossClearance {
-            OHOMDMEJLFK: ::std::vec::Vec::new(),
-            best_cycle_count: 0,
+            EBNNJAEPBGD: ::std::vec::Vec::new(),
             peak_avatar_id_list: ::std::vec::Vec::new(),
-            has_passed: false,
+            LAMPCACOCHP: ::std::vec::Vec::new(),
+            NHOJDHPGBBO: 0,
+            best_cycle_count: 0,
             buff_id: 0,
-            HEILKBJCAGB: 0,
-            CGDMCHDOALC: ::std::vec::Vec::new(),
-            MALOCIMPJPM: 0,
-            FMFGOJHCCNL: ::std::vec::Vec::new(),
+            has_passed: false,
+            DJFGDMIDEHJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -291,16 +272,15 @@ impl ::protobuf::reflect::ProtobufValue for ChallengePeakBossClearance {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x20ChallengePeakBossClearance.proto\x1a\x11DGOLJHDBJKC.proto\x1a\x11E\
-    EBPHJCNBFO.proto\"\xf3\x02\n\x1aChallengePeakBossClearance\x12\x20\n\x0b\
-    OHOMDMEJLFK\x18\x0f\x20\x03(\rR\x0bOHOMDMEJLFK\x12(\n\x10best_cycle_coun\
-    t\x18\x0b\x20\x01(\rR\x0ebestCycleCount\x12-\n\x13peak_avatar_id_list\
-    \x18\x05\x20\x03(\rR\x10peakAvatarIdList\x12\x1d\n\nhas_passed\x18\t\x20\
-    \x01(\x08R\thasPassed\x12\x17\n\x07buff_id\x18\n\x20\x01(\rR\x06buffId\
-    \x12\x20\n\x0bHEILKBJCAGB\x18\r\x20\x01(\rR\x0bHEILKBJCAGB\x12.\n\x0bCGD\
-    MCHDOALC\x18\x0e\x20\x03(\x0b2\x0c.DGOLJHDBJKCR\x0bCGDMCHDOALC\x12\x20\n\
-    \x0bMALOCIMPJPM\x18\x03\x20\x01(\rR\x0bMALOCIMPJPM\x12.\n\x0bFMFGOJHCCNL\
-    \x18\x04\x20\x03(\x0b2\x0c.EEBPHJCNBFOR\x0bFMFGOJHCCNLb\x06proto3\
+    \n\x20ChallengePeakBossClearance.proto\x1a\x11ABCHBKBKCDF.proto\"\xc3\
+    \x02\n\x1aChallengePeakBossClearance\x12.\n\x0bEBNNJAEPBGD\x18\r\x20\x03\
+    (\x0b2\x0c.ABCHBKBKCDFR\x0bEBNNJAEPBGD\x12-\n\x13peak_avatar_id_list\x18\
+    \x03\x20\x03(\rR\x10peakAvatarIdList\x12\x20\n\x0bLAMPCACOCHP\x18\n\x20\
+    \x03(\rR\x0bLAMPCACOCHP\x12\x20\n\x0bNHOJDHPGBBO\x18\x04\x20\x01(\rR\x0b\
+    NHOJDHPGBBO\x12(\n\x10best_cycle_count\x18\t\x20\x01(\rR\x0ebestCycleCou\
+    nt\x12\x17\n\x07buff_id\x18\x05\x20\x01(\rR\x06buffId\x12\x1d\n\nhas_pas\
+    sed\x18\x06\x20\x01(\x08R\thasPassed\x12\x20\n\x0bDJFGDMIDEHJ\x18\x0b\
+    \x20\x01(\rR\x0bDJFGDMIDEHJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -317,9 +297,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::DGOLJHDBJKC::file_descriptor().clone());
-            deps.push(super::EEBPHJCNBFO::file_descriptor().clone());
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::ABCHBKBKCDF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChallengePeakBossClearance::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

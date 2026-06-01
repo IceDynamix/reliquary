@@ -30,8 +30,8 @@ pub struct OpenRogueChestCsReq {
     // message fields
     // @@protoc_insertion_point(field:OpenRogueChestCsReq.interacted_prop_entity_id)
     pub interacted_prop_entity_id: u32,
-    // @@protoc_insertion_point(field:OpenRogueChestCsReq.NBDHADPNGNH)
-    pub NBDHADPNGNH: bool,
+    // @@protoc_insertion_point(field:OpenRogueChestCsReq.FDEKKOKBDIC)
+    pub FDEKKOKBDIC: bool,
     // special fields
     // @@protoc_insertion_point(special_field:OpenRogueChestCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,9 +57,9 @@ impl OpenRogueChestCsReq {
             |m: &mut OpenRogueChestCsReq| { &mut m.interacted_prop_entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBDHADPNGNH",
-            |m: &OpenRogueChestCsReq| { &m.NBDHADPNGNH },
-            |m: &mut OpenRogueChestCsReq| { &mut m.NBDHADPNGNH },
+            "FDEKKOKBDIC",
+            |m: &OpenRogueChestCsReq| { &m.FDEKKOKBDIC },
+            |m: &mut OpenRogueChestCsReq| { &mut m.FDEKKOKBDIC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<OpenRogueChestCsReq>(
             "OpenRogueChestCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
+                120 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
-                40 => {
-                    self.NBDHADPNGNH = is.read_bool()?;
+                24 => {
+                    self.FDEKKOKBDIC = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -98,9 +98,9 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(15, self.interacted_prop_entity_id);
         }
-        if self.NBDHADPNGNH != false {
+        if self.FDEKKOKBDIC != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -110,10 +110,10 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(2, self.interacted_prop_entity_id)?;
+            os.write_uint32(15, self.interacted_prop_entity_id)?;
         }
-        if self.NBDHADPNGNH != false {
-            os.write_bool(5, self.NBDHADPNGNH)?;
+        if self.FDEKKOKBDIC != false {
+            os.write_bool(3, self.FDEKKOKBDIC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for OpenRogueChestCsReq {
 
     fn clear(&mut self) {
         self.interacted_prop_entity_id = 0;
-        self.NBDHADPNGNH = false;
+        self.FDEKKOKBDIC = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OpenRogueChestCsReq {
         static instance: OpenRogueChestCsReq = OpenRogueChestCsReq {
             interacted_prop_entity_id: 0,
-            NBDHADPNGNH: false,
+            FDEKKOKBDIC: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for OpenRogueChestCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19OpenRogueChestCsReq.proto\"r\n\x13OpenRogueChestCsReq\x129\n\x19in\
-    teracted_prop_entity_id\x18\x02\x20\x01(\rR\x16interactedPropEntityId\
-    \x12\x20\n\x0bNBDHADPNGNH\x18\x05\x20\x01(\x08R\x0bNBDHADPNGNHb\x06proto\
+    teracted_prop_entity_id\x18\x0f\x20\x01(\rR\x16interactedPropEntityId\
+    \x12\x20\n\x0bFDEKKOKBDIC\x18\x03\x20\x01(\x08R\x0bFDEKKOKBDICb\x06proto\
     3\
 ";
 

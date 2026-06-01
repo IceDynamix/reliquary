@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueShopBeginBattleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueShopBeginBattleScRsp.DDHGCAFFFOP)
-    pub DDHGCAFFFOP: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
+    // @@protoc_insertion_point(field:RogueShopBeginBattleScRsp.AEPNEDJPAGK)
+    pub AEPNEDJPAGK: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
     // @@protoc_insertion_point(field:RogueShopBeginBattleScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl RogueShopBeginBattleScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneBattleInfo::SceneBattleInfo>(
-            "DDHGCAFFFOP",
-            |m: &RogueShopBeginBattleScRsp| { &m.DDHGCAFFFOP },
-            |m: &mut RogueShopBeginBattleScRsp| { &mut m.DDHGCAFFFOP },
+            "AEPNEDJPAGK",
+            |m: &RogueShopBeginBattleScRsp| { &m.AEPNEDJPAGK },
+            |m: &mut RogueShopBeginBattleScRsp| { &mut m.AEPNEDJPAGK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueShopBeginBattleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DDHGCAFFFOP)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AEPNEDJPAGK)?;
                 },
-                32 => {
+                104 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueShopBeginBattleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DDHGCAFFFOP.as_ref() {
+        if let Some(v) = self.AEPNEDJPAGK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueShopBeginBattleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DDHGCAFFFOP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.AEPNEDJPAGK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
+            os.write_uint32(13, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for RogueShopBeginBattleScRsp {
     }
 
     fn clear(&mut self) {
-        self.DDHGCAFFFOP.clear();
+        self.AEPNEDJPAGK.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueShopBeginBattleScRsp {
         static instance: RogueShopBeginBattleScRsp = RogueShopBeginBattleScRsp {
-            DDHGCAFFFOP: ::protobuf::MessageField::none(),
+            AEPNEDJPAGK: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueShopBeginBattleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fRogueShopBeginBattleScRsp.proto\x1a\x15SceneBattleInfo.proto\"i\n\
-    \x19RogueShopBeginBattleScRsp\x122\n\x0bDDHGCAFFFOP\x18\x01\x20\x01(\x0b\
-    2\x10.SceneBattleInfoR\x0bDDHGCAFFFOP\x12\x18\n\x07retcode\x18\x04\x20\
-    \x01(\rR\x07retcodeb\x06proto3\
+    \x19RogueShopBeginBattleScRsp\x122\n\x0bAEPNEDJPAGK\x18\x04\x20\x01(\x0b\
+    2\x10.SceneBattleInfoR\x0bAEPNEDJPAGK\x12\x18\n\x07retcode\x18\r\x20\x01\
+    (\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

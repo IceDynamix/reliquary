@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct EnterEraFlipperDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:EnterEraFlipperDataCsReq.JHDLNBPNEKG)
-    pub JHDLNBPNEKG: u32,
     // @@protoc_insertion_point(field:EnterEraFlipperDataCsReq.state)
     pub state: u32,
+    // @@protoc_insertion_point(field:EnterEraFlipperDataCsReq.LJHKNKFLGDE)
+    pub LJHKNKFLGDE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterEraFlipperDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl EnterEraFlipperDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JHDLNBPNEKG",
-            |m: &EnterEraFlipperDataCsReq| { &m.JHDLNBPNEKG },
-            |m: &mut EnterEraFlipperDataCsReq| { &mut m.JHDLNBPNEKG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "state",
             |m: &EnterEraFlipperDataCsReq| { &m.state },
             |m: &mut EnterEraFlipperDataCsReq| { &mut m.state },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LJHKNKFLGDE",
+            |m: &EnterEraFlipperDataCsReq| { &m.LJHKNKFLGDE },
+            |m: &mut EnterEraFlipperDataCsReq| { &mut m.LJHKNKFLGDE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterEraFlipperDataCsReq>(
             "EnterEraFlipperDataCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for EnterEraFlipperDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.JHDLNBPNEKG = is.read_uint32()?;
-                },
-                48 => {
+                112 => {
                     self.state = is.read_uint32()?;
+                },
+                104 => {
+                    self.LJHKNKFLGDE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for EnterEraFlipperDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JHDLNBPNEKG != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.JHDLNBPNEKG);
-        }
         if self.state != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.state);
+            my_size += ::protobuf::rt::uint32_size(14, self.state);
+        }
+        if self.LJHKNKFLGDE != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LJHKNKFLGDE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for EnterEraFlipperDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JHDLNBPNEKG != 0 {
-            os.write_uint32(5, self.JHDLNBPNEKG)?;
-        }
         if self.state != 0 {
-            os.write_uint32(6, self.state)?;
+            os.write_uint32(14, self.state)?;
+        }
+        if self.LJHKNKFLGDE != 0 {
+            os.write_uint32(13, self.LJHKNKFLGDE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for EnterEraFlipperDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.JHDLNBPNEKG = 0;
         self.state = 0;
+        self.LJHKNKFLGDE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterEraFlipperDataCsReq {
         static instance: EnterEraFlipperDataCsReq = EnterEraFlipperDataCsReq {
-            JHDLNBPNEKG: 0,
             state: 0,
+            LJHKNKFLGDE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for EnterEraFlipperDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eEnterEraFlipperDataCsReq.proto\"R\n\x18EnterEraFlipperDataCsReq\
-    \x12\x20\n\x0bJHDLNBPNEKG\x18\x05\x20\x01(\rR\x0bJHDLNBPNEKG\x12\x14\n\
-    \x05state\x18\x06\x20\x01(\rR\x05stateb\x06proto3\
+    \x12\x14\n\x05state\x18\x0e\x20\x01(\rR\x05state\x12\x20\n\x0bLJHKNKFLGD\
+    E\x18\r\x20\x01(\rR\x0bLJHKNKFLGDEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

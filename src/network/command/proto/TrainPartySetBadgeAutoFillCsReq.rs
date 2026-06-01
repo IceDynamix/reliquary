@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartySetBadgeAutoFillCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TrainPartySetBadgeAutoFillCsReq.AELMBPLDFGJ)
-    pub AELMBPLDFGJ: bool,
+    // @@protoc_insertion_point(field:TrainPartySetBadgeAutoFillCsReq.PELJACANAFH)
+    pub PELJACANAFH: bool,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartySetBadgeAutoFillCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl TrainPartySetBadgeAutoFillCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AELMBPLDFGJ",
-            |m: &TrainPartySetBadgeAutoFillCsReq| { &m.AELMBPLDFGJ },
-            |m: &mut TrainPartySetBadgeAutoFillCsReq| { &mut m.AELMBPLDFGJ },
+            "PELJACANAFH",
+            |m: &TrainPartySetBadgeAutoFillCsReq| { &m.PELJACANAFH },
+            |m: &mut TrainPartySetBadgeAutoFillCsReq| { &mut m.PELJACANAFH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartySetBadgeAutoFillCsReq>(
             "TrainPartySetBadgeAutoFillCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for TrainPartySetBadgeAutoFillCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.AELMBPLDFGJ = is.read_bool()?;
+                104 => {
+                    self.PELJACANAFH = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for TrainPartySetBadgeAutoFillCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AELMBPLDFGJ != false {
+        if self.PELJACANAFH != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for TrainPartySetBadgeAutoFillCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AELMBPLDFGJ != false {
-            os.write_bool(12, self.AELMBPLDFGJ)?;
+        if self.PELJACANAFH != false {
+            os.write_bool(13, self.PELJACANAFH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for TrainPartySetBadgeAutoFillCsReq {
     }
 
     fn clear(&mut self) {
-        self.AELMBPLDFGJ = false;
+        self.PELJACANAFH = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartySetBadgeAutoFillCsReq {
         static instance: TrainPartySetBadgeAutoFillCsReq = TrainPartySetBadgeAutoFillCsReq {
-            AELMBPLDFGJ: false,
+            PELJACANAFH: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartySetBadgeAutoFillCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TrainPartySetBadgeAutoFillCsReq.proto\"C\n\x1fTrainPartySetBadgeAutoF\
-    illCsReq\x12\x20\n\x0bAELMBPLDFGJ\x18\x0c\x20\x01(\x08R\x0bAELMBPLDFGJb\
+    illCsReq\x12\x20\n\x0bPELJACANAFH\x18\r\x20\x01(\x08R\x0bPELJACANAFHb\
     \x06proto3\
 ";
 

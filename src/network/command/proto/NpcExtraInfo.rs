@@ -28,7 +28,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct NpcExtraInfo {
     // message oneof groups
-    pub BPIHFAJCLOC: ::std::option::Option<npc_extra_info::BPIHFAJCLOC>,
+    pub KKNBOACNCON: ::std::option::Option<npc_extra_info::KKNBOACNCON>,
     // special fields
     // @@protoc_insertion_point(special_field:NpcExtraInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -45,39 +45,39 @@ impl NpcExtraInfo {
         ::std::default::Default::default()
     }
 
-    // .NpcRogueGameInfo rogue_game_info = 15;
+    // .NpcRogueGameInfo rogue_game_info = 7;
 
     pub fn rogue_game_info(&self) -> &super::NpcRogueGameInfo::NpcRogueGameInfo {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::RogueGameInfo(ref v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::RogueGameInfo(ref v)) => v,
             _ => <super::NpcRogueGameInfo::NpcRogueGameInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_rogue_game_info(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
     pub fn has_rogue_game_info(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::RogueGameInfo(..)) => true,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::RogueGameInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_rogue_game_info(&mut self, v: super::NpcRogueGameInfo::NpcRogueGameInfo) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::RogueGameInfo(v))
+        self.KKNBOACNCON = ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::RogueGameInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_rogue_game_info(&mut self) -> &mut super::NpcRogueGameInfo::NpcRogueGameInfo {
-        if let ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::RogueGameInfo(_)) = self.BPIHFAJCLOC {
+        if let ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::RogueGameInfo(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::RogueGameInfo(super::NpcRogueGameInfo::NpcRogueGameInfo::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::RogueGameInfo(super::NpcRogueGameInfo::NpcRogueGameInfo::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::RogueGameInfo(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::RogueGameInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -85,8 +85,8 @@ impl NpcExtraInfo {
     // Take field
     pub fn take_rogue_game_info(&mut self) -> super::NpcRogueGameInfo::NpcRogueGameInfo {
         if self.has_rogue_game_info() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::RogueGameInfo(v)) => v,
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::RogueGameInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -94,101 +94,101 @@ impl NpcExtraInfo {
         }
     }
 
-    // .EBFBPHIADMI JACDADCHNFL = 3;
+    // .PAGOHCJGOLC MBLFFIKGMOP = 14;
 
-    pub fn JACDADCHNFL(&self) -> &super::EBFBPHIADMI::EBFBPHIADMI {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::JACDADCHNFL(ref v)) => v,
-            _ => <super::EBFBPHIADMI::EBFBPHIADMI as ::protobuf::Message>::default_instance(),
+    pub fn MBLFFIKGMOP(&self) -> &super::PAGOHCJGOLC::PAGOHCJGOLC {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::MBLFFIKGMOP(ref v)) => v,
+            _ => <super::PAGOHCJGOLC::PAGOHCJGOLC as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_JACDADCHNFL(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_MBLFFIKGMOP(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_JACDADCHNFL(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::JACDADCHNFL(..)) => true,
+    pub fn has_MBLFFIKGMOP(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::MBLFFIKGMOP(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_JACDADCHNFL(&mut self, v: super::EBFBPHIADMI::EBFBPHIADMI) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::JACDADCHNFL(v))
+    pub fn set_MBLFFIKGMOP(&mut self, v: super::PAGOHCJGOLC::PAGOHCJGOLC) {
+        self.KKNBOACNCON = ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::MBLFFIKGMOP(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_JACDADCHNFL(&mut self) -> &mut super::EBFBPHIADMI::EBFBPHIADMI {
-        if let ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::JACDADCHNFL(_)) = self.BPIHFAJCLOC {
+    pub fn mut_MBLFFIKGMOP(&mut self) -> &mut super::PAGOHCJGOLC::PAGOHCJGOLC {
+        if let ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::MBLFFIKGMOP(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::JACDADCHNFL(super::EBFBPHIADMI::EBFBPHIADMI::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::MBLFFIKGMOP(super::PAGOHCJGOLC::PAGOHCJGOLC::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::JACDADCHNFL(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::MBLFFIKGMOP(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_JACDADCHNFL(&mut self) -> super::EBFBPHIADMI::EBFBPHIADMI {
-        if self.has_JACDADCHNFL() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::JACDADCHNFL(v)) => v,
+    pub fn take_MBLFFIKGMOP(&mut self) -> super::PAGOHCJGOLC::PAGOHCJGOLC {
+        if self.has_MBLFFIKGMOP() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::MBLFFIKGMOP(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::EBFBPHIADMI::EBFBPHIADMI::new()
+            super::PAGOHCJGOLC::PAGOHCJGOLC::new()
         }
     }
 
-    // .NEAOBFJOMCF FPCOMNAOABD = 11;
+    // .MHGAOLCDONK DKPFHLBFFHI = 4;
 
-    pub fn FPCOMNAOABD(&self) -> &super::NEAOBFJOMCF::NEAOBFJOMCF {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::FPCOMNAOABD(ref v)) => v,
-            _ => <super::NEAOBFJOMCF::NEAOBFJOMCF as ::protobuf::Message>::default_instance(),
+    pub fn DKPFHLBFFHI(&self) -> &super::MHGAOLCDONK::MHGAOLCDONK {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::DKPFHLBFFHI(ref v)) => v,
+            _ => <super::MHGAOLCDONK::MHGAOLCDONK as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_FPCOMNAOABD(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+    pub fn clear_DKPFHLBFFHI(&mut self) {
+        self.KKNBOACNCON = ::std::option::Option::None;
     }
 
-    pub fn has_FPCOMNAOABD(&self) -> bool {
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::FPCOMNAOABD(..)) => true,
+    pub fn has_DKPFHLBFFHI(&self) -> bool {
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::DKPFHLBFFHI(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_FPCOMNAOABD(&mut self, v: super::NEAOBFJOMCF::NEAOBFJOMCF) {
-        self.BPIHFAJCLOC = ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::FPCOMNAOABD(v))
+    pub fn set_DKPFHLBFFHI(&mut self, v: super::MHGAOLCDONK::MHGAOLCDONK) {
+        self.KKNBOACNCON = ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::DKPFHLBFFHI(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_FPCOMNAOABD(&mut self) -> &mut super::NEAOBFJOMCF::NEAOBFJOMCF {
-        if let ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::FPCOMNAOABD(_)) = self.BPIHFAJCLOC {
+    pub fn mut_DKPFHLBFFHI(&mut self) -> &mut super::MHGAOLCDONK::MHGAOLCDONK {
+        if let ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::DKPFHLBFFHI(_)) = self.KKNBOACNCON {
         } else {
-            self.BPIHFAJCLOC = ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::FPCOMNAOABD(super::NEAOBFJOMCF::NEAOBFJOMCF::new()));
+            self.KKNBOACNCON = ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::DKPFHLBFFHI(super::MHGAOLCDONK::MHGAOLCDONK::new()));
         }
-        match self.BPIHFAJCLOC {
-            ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::FPCOMNAOABD(ref mut v)) => v,
+        match self.KKNBOACNCON {
+            ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::DKPFHLBFFHI(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_FPCOMNAOABD(&mut self) -> super::NEAOBFJOMCF::NEAOBFJOMCF {
-        if self.has_FPCOMNAOABD() {
-            match self.BPIHFAJCLOC.take() {
-                ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::FPCOMNAOABD(v)) => v,
+    pub fn take_DKPFHLBFFHI(&mut self) -> super::MHGAOLCDONK::MHGAOLCDONK {
+        if self.has_DKPFHLBFFHI() {
+            match self.KKNBOACNCON.take() {
+                ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::DKPFHLBFFHI(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::NEAOBFJOMCF::NEAOBFJOMCF::new()
+            super::MHGAOLCDONK::MHGAOLCDONK::new()
         }
     }
 
@@ -202,21 +202,21 @@ impl NpcExtraInfo {
             NpcExtraInfo::mut_rogue_game_info,
             NpcExtraInfo::set_rogue_game_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::EBFBPHIADMI::EBFBPHIADMI>(
-            "JACDADCHNFL",
-            NpcExtraInfo::has_JACDADCHNFL,
-            NpcExtraInfo::JACDADCHNFL,
-            NpcExtraInfo::mut_JACDADCHNFL,
-            NpcExtraInfo::set_JACDADCHNFL,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::PAGOHCJGOLC::PAGOHCJGOLC>(
+            "MBLFFIKGMOP",
+            NpcExtraInfo::has_MBLFFIKGMOP,
+            NpcExtraInfo::MBLFFIKGMOP,
+            NpcExtraInfo::mut_MBLFFIKGMOP,
+            NpcExtraInfo::set_MBLFFIKGMOP,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::NEAOBFJOMCF::NEAOBFJOMCF>(
-            "FPCOMNAOABD",
-            NpcExtraInfo::has_FPCOMNAOABD,
-            NpcExtraInfo::FPCOMNAOABD,
-            NpcExtraInfo::mut_FPCOMNAOABD,
-            NpcExtraInfo::set_FPCOMNAOABD,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::MHGAOLCDONK::MHGAOLCDONK>(
+            "DKPFHLBFFHI",
+            NpcExtraInfo::has_DKPFHLBFFHI,
+            NpcExtraInfo::DKPFHLBFFHI,
+            NpcExtraInfo::mut_DKPFHLBFFHI,
+            NpcExtraInfo::set_DKPFHLBFFHI,
         ));
-        oneofs.push(npc_extra_info::BPIHFAJCLOC::generated_oneof_descriptor_data());
+        oneofs.push(npc_extra_info::KKNBOACNCON::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<NpcExtraInfo>(
             "NpcExtraInfo",
             fields,
@@ -235,14 +235,14 @@ impl ::protobuf::Message for NpcExtraInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::RogueGameInfo(is.read_message()?));
+                58 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::RogueGameInfo(is.read_message()?));
                 },
-                26 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::JACDADCHNFL(is.read_message()?));
+                114 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::MBLFFIKGMOP(is.read_message()?));
                 },
-                90 => {
-                    self.BPIHFAJCLOC = ::std::option::Option::Some(npc_extra_info::BPIHFAJCLOC::FPCOMNAOABD(is.read_message()?));
+                34 => {
+                    self.KKNBOACNCON = ::std::option::Option::Some(npc_extra_info::KKNBOACNCON::DKPFHLBFFHI(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -256,17 +256,17 @@ impl ::protobuf::Message for NpcExtraInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let ::std::option::Option::Some(ref v) = self.BPIHFAJCLOC {
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &npc_extra_info::BPIHFAJCLOC::RogueGameInfo(ref v) => {
+                &npc_extra_info::KKNBOACNCON::RogueGameInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &npc_extra_info::BPIHFAJCLOC::JACDADCHNFL(ref v) => {
+                &npc_extra_info::KKNBOACNCON::MBLFFIKGMOP(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &npc_extra_info::BPIHFAJCLOC::FPCOMNAOABD(ref v) => {
+                &npc_extra_info::KKNBOACNCON::DKPFHLBFFHI(ref v) => {
                     let len = v.compute_size();
                     my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -278,16 +278,16 @@ impl ::protobuf::Message for NpcExtraInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let ::std::option::Option::Some(ref v) = self.BPIHFAJCLOC {
+        if let ::std::option::Option::Some(ref v) = self.KKNBOACNCON {
             match v {
-                &npc_extra_info::BPIHFAJCLOC::RogueGameInfo(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+                &npc_extra_info::KKNBOACNCON::RogueGameInfo(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
                 },
-                &npc_extra_info::BPIHFAJCLOC::JACDADCHNFL(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+                &npc_extra_info::KKNBOACNCON::MBLFFIKGMOP(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
                 },
-                &npc_extra_info::BPIHFAJCLOC::FPCOMNAOABD(ref v) => {
-                    ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+                &npc_extra_info::KKNBOACNCON::DKPFHLBFFHI(ref v) => {
+                    ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
                 },
             };
         }
@@ -308,15 +308,15 @@ impl ::protobuf::Message for NpcExtraInfo {
     }
 
     fn clear(&mut self) {
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
-        self.BPIHFAJCLOC = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
+        self.KKNBOACNCON = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static NpcExtraInfo {
         static instance: NpcExtraInfo = NpcExtraInfo {
-            BPIHFAJCLOC: ::std::option::Option::None,
+            KKNBOACNCON: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -345,40 +345,40 @@ pub mod npc_extra_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:NpcExtraInfo.BPIHFAJCLOC)
-    pub enum BPIHFAJCLOC {
+    // @@protoc_insertion_point(oneof:NpcExtraInfo.KKNBOACNCON)
+    pub enum KKNBOACNCON {
         // @@protoc_insertion_point(oneof_field:NpcExtraInfo.rogue_game_info)
         RogueGameInfo(super::super::NpcRogueGameInfo::NpcRogueGameInfo),
-        // @@protoc_insertion_point(oneof_field:NpcExtraInfo.JACDADCHNFL)
-        JACDADCHNFL(super::super::EBFBPHIADMI::EBFBPHIADMI),
-        // @@protoc_insertion_point(oneof_field:NpcExtraInfo.FPCOMNAOABD)
-        FPCOMNAOABD(super::super::NEAOBFJOMCF::NEAOBFJOMCF),
+        // @@protoc_insertion_point(oneof_field:NpcExtraInfo.MBLFFIKGMOP)
+        MBLFFIKGMOP(super::super::PAGOHCJGOLC::PAGOHCJGOLC),
+        // @@protoc_insertion_point(oneof_field:NpcExtraInfo.DKPFHLBFFHI)
+        DKPFHLBFFHI(super::super::MHGAOLCDONK::MHGAOLCDONK),
     }
 
-    impl ::protobuf::Oneof for BPIHFAJCLOC {
+    impl ::protobuf::Oneof for KKNBOACNCON {
     }
 
-    impl ::protobuf::OneofFull for BPIHFAJCLOC {
+    impl ::protobuf::OneofFull for KKNBOACNCON {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::NpcExtraInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("BPIHFAJCLOC").unwrap()).clone()
+            descriptor.get(|| <super::NpcExtraInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("KKNBOACNCON").unwrap()).clone()
         }
     }
 
-    impl BPIHFAJCLOC {
+    impl KKNBOACNCON {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<BPIHFAJCLOC>("BPIHFAJCLOC")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<KKNBOACNCON>("KKNBOACNCON")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x12NpcExtraInfo.proto\x1a\x11EBFBPHIADMI.proto\x1a\x11NEAOBFJOMCF.pro\
-    to\x1a\x16NpcRogueGameInfo.proto\"\xbe\x01\n\x0cNpcExtraInfo\x12;\n\x0fr\
-    ogue_game_info\x18\x0f\x20\x01(\x0b2\x11.NpcRogueGameInfoH\0R\rrogueGame\
-    Info\x120\n\x0bJACDADCHNFL\x18\x03\x20\x01(\x0b2\x0c.EBFBPHIADMIH\0R\x0b\
-    JACDADCHNFL\x120\n\x0bFPCOMNAOABD\x18\x0b\x20\x01(\x0b2\x0c.NEAOBFJOMCFH\
-    \0R\x0bFPCOMNAOABDB\r\n\x0bBPIHFAJCLOCb\x06proto3\
+    \n\x12NpcExtraInfo.proto\x1a\x11MHGAOLCDONK.proto\x1a\x16NpcRogueGameInf\
+    o.proto\x1a\x11PAGOHCJGOLC.proto\"\xbe\x01\n\x0cNpcExtraInfo\x12;\n\x0fr\
+    ogue_game_info\x18\x07\x20\x01(\x0b2\x11.NpcRogueGameInfoH\0R\rrogueGame\
+    Info\x120\n\x0bMBLFFIKGMOP\x18\x0e\x20\x01(\x0b2\x0c.PAGOHCJGOLCH\0R\x0b\
+    MBLFFIKGMOP\x120\n\x0bDKPFHLBFFHI\x18\x04\x20\x01(\x0b2\x0c.MHGAOLCDONKH\
+    \0R\x0bDKPFHLBFFHIB\r\n\x0bKKNBOACNCONb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -396,9 +396,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::EBFBPHIADMI::file_descriptor().clone());
-            deps.push(super::NEAOBFJOMCF::file_descriptor().clone());
+            deps.push(super::MHGAOLCDONK::file_descriptor().clone());
             deps.push(super::NpcRogueGameInfo::file_descriptor().clone());
+            deps.push(super::PAGOHCJGOLC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(NpcExtraInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

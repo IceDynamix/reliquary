@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdBattleCollegeType)
 pub enum CmdBattleCollegeType {
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.BKHGOOJKNGI_PCPDHELPKEM)
-    BKHGOOJKNGI_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdGetBattleCollegeDataCsReq)
-    CmdGetBattleCollegeDataCsReq = 5791,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdStartBattleCollegeScRsp)
-    CmdStartBattleCollegeScRsp = 5714,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdGetBattleCollegeDataScRsp)
-    CmdGetBattleCollegeDataScRsp = 5710,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdSyncBattleCollegeDataChangeScNotify)
-    CmdSyncBattleCollegeDataChangeScNotify = 5794,
-    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.CmdStartBattleCollegeCsReq)
-    CmdStartBattleCollegeCsReq = 5795,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_NLCDGIPGFDJ)
+    GJPPDNGGKCC_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_LGCCILOHONJ)
+    GJPPDNGGKCC_LGCCILOHONJ = 5703,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_GGMOCMBGFAJ)
+    GJPPDNGGKCC_GGMOCMBGFAJ = 5773,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_DNAPAEJPILD)
+    GJPPDNGGKCC_DNAPAEJPILD = 5736,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_DLAEKJKFPJO)
+    GJPPDNGGKCC_DLAEKJKFPJO = 5727,
+    // @@protoc_insertion_point(enum_value:CmdBattleCollegeType.GJPPDNGGKCC_HMHLNKIKKHG)
+    GJPPDNGGKCC_HMHLNKIKKHG = 5780,
 }
 
 impl ::protobuf::Enum for CmdBattleCollegeType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdBattleCollegeType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdBattleCollegeType> {
         match value {
-            0 => ::std::option::Option::Some(CmdBattleCollegeType::BKHGOOJKNGI_PCPDHELPKEM),
-            5791 => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataCsReq),
-            5714 => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeScRsp),
-            5710 => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp),
-            5794 => ::std::option::Option::Some(CmdBattleCollegeType::CmdSyncBattleCollegeDataChangeScNotify),
-            5795 => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeCsReq),
+            0 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_NLCDGIPGFDJ),
+            5703 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ),
+            5773 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_GGMOCMBGFAJ),
+            5736 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_DNAPAEJPILD),
+            5727 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_DLAEKJKFPJO),
+            5780 => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_HMHLNKIKKHG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdBattleCollegeType> {
         match str {
-            "BKHGOOJKNGI_PCPDHELPKEM" => ::std::option::Option::Some(CmdBattleCollegeType::BKHGOOJKNGI_PCPDHELPKEM),
-            "CmdGetBattleCollegeDataCsReq" => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataCsReq),
-            "CmdStartBattleCollegeScRsp" => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeScRsp),
-            "CmdGetBattleCollegeDataScRsp" => ::std::option::Option::Some(CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp),
-            "CmdSyncBattleCollegeDataChangeScNotify" => ::std::option::Option::Some(CmdBattleCollegeType::CmdSyncBattleCollegeDataChangeScNotify),
-            "CmdStartBattleCollegeCsReq" => ::std::option::Option::Some(CmdBattleCollegeType::CmdStartBattleCollegeCsReq),
+            "GJPPDNGGKCC_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_NLCDGIPGFDJ),
+            "GJPPDNGGKCC_LGCCILOHONJ" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ),
+            "GJPPDNGGKCC_GGMOCMBGFAJ" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_GGMOCMBGFAJ),
+            "GJPPDNGGKCC_DNAPAEJPILD" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_DNAPAEJPILD),
+            "GJPPDNGGKCC_DLAEKJKFPJO" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_DLAEKJKFPJO),
+            "GJPPDNGGKCC_HMHLNKIKKHG" => ::std::option::Option::Some(CmdBattleCollegeType::GJPPDNGGKCC_HMHLNKIKKHG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdBattleCollegeType] = &[
-        CmdBattleCollegeType::BKHGOOJKNGI_PCPDHELPKEM,
-        CmdBattleCollegeType::CmdGetBattleCollegeDataCsReq,
-        CmdBattleCollegeType::CmdStartBattleCollegeScRsp,
-        CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp,
-        CmdBattleCollegeType::CmdSyncBattleCollegeDataChangeScNotify,
-        CmdBattleCollegeType::CmdStartBattleCollegeCsReq,
+        CmdBattleCollegeType::GJPPDNGGKCC_NLCDGIPGFDJ,
+        CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ,
+        CmdBattleCollegeType::GJPPDNGGKCC_GGMOCMBGFAJ,
+        CmdBattleCollegeType::GJPPDNGGKCC_DNAPAEJPILD,
+        CmdBattleCollegeType::GJPPDNGGKCC_DLAEKJKFPJO,
+        CmdBattleCollegeType::GJPPDNGGKCC_HMHLNKIKKHG,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdBattleCollegeType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdBattleCollegeType::BKHGOOJKNGI_PCPDHELPKEM => 0,
-            CmdBattleCollegeType::CmdGetBattleCollegeDataCsReq => 1,
-            CmdBattleCollegeType::CmdStartBattleCollegeScRsp => 2,
-            CmdBattleCollegeType::CmdGetBattleCollegeDataScRsp => 3,
-            CmdBattleCollegeType::CmdSyncBattleCollegeDataChangeScNotify => 4,
-            CmdBattleCollegeType::CmdStartBattleCollegeCsReq => 5,
+            CmdBattleCollegeType::GJPPDNGGKCC_NLCDGIPGFDJ => 0,
+            CmdBattleCollegeType::GJPPDNGGKCC_LGCCILOHONJ => 1,
+            CmdBattleCollegeType::GJPPDNGGKCC_GGMOCMBGFAJ => 2,
+            CmdBattleCollegeType::GJPPDNGGKCC_DNAPAEJPILD => 3,
+            CmdBattleCollegeType::GJPPDNGGKCC_DLAEKJKFPJO => 4,
+            CmdBattleCollegeType::GJPPDNGGKCC_HMHLNKIKKHG => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdBattleCollegeType {
 
 impl ::std::default::Default for CmdBattleCollegeType {
     fn default() -> Self {
-        CmdBattleCollegeType::BKHGOOJKNGI_PCPDHELPKEM
+        CmdBattleCollegeType::GJPPDNGGKCC_NLCDGIPGFDJ
     }
 }
 
@@ -114,12 +114,11 @@ impl CmdBattleCollegeType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aCmdBattleCollegeType.proto*\xe8\x01\n\x14CmdBattleCollegeType\x12\
-    \x1b\n\x17BKHGOOJKNGI_PCPDHELPKEM\x10\0\x12!\n\x1cCmdGetBattleCollegeDat\
-    aCsReq\x10\x9f-\x12\x1f\n\x1aCmdStartBattleCollegeScRsp\x10\xd2,\x12!\n\
-    \x1cCmdGetBattleCollegeDataScRsp\x10\xce,\x12+\n&CmdSyncBattleCollegeDat\
-    aChangeScNotify\x10\xa2-\x12\x1f\n\x1aCmdStartBattleCollegeCsReq\x10\xa3\
-    -b\x06proto3\
+    \n\x1aCmdBattleCollegeType.proto*\xc9\x01\n\x14CmdBattleCollegeType\x12\
+    \x1b\n\x17GJPPDNGGKCC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GJPPDNGGKCC_LGCCILO\
+    HONJ\x10\xc7,\x12\x1c\n\x17GJPPDNGGKCC_GGMOCMBGFAJ\x10\x8d-\x12\x1c\n\
+    \x17GJPPDNGGKCC_DNAPAEJPILD\x10\xe8,\x12\x1c\n\x17GJPPDNGGKCC_DLAEKJKFPJ\
+    O\x10\xdf,\x12\x1c\n\x17GJPPDNGGKCC_HMHLNKIKKHG\x10\x94-b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

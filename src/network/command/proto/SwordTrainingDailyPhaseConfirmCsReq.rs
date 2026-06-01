@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingDailyPhaseConfirmCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingDailyPhaseConfirmCsReq.BFPFDMGMCAI)
-    pub BFPFDMGMCAI: ::protobuf::EnumOrUnknown<super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType>,
+    // @@protoc_insertion_point(field:SwordTrainingDailyPhaseConfirmCsReq.GCBHFKKGPHC)
+    pub GCBHFKKGPHC: ::protobuf::EnumOrUnknown<super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType>,
     // special fields
     // @@protoc_insertion_point(special_field:SwordTrainingDailyPhaseConfirmCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SwordTrainingDailyPhaseConfirmCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BFPFDMGMCAI",
-            |m: &SwordTrainingDailyPhaseConfirmCsReq| { &m.BFPFDMGMCAI },
-            |m: &mut SwordTrainingDailyPhaseConfirmCsReq| { &mut m.BFPFDMGMCAI },
+            "GCBHFKKGPHC",
+            |m: &SwordTrainingDailyPhaseConfirmCsReq| { &m.GCBHFKKGPHC },
+            |m: &mut SwordTrainingDailyPhaseConfirmCsReq| { &mut m.GCBHFKKGPHC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SwordTrainingDailyPhaseConfirmCsReq>(
             "SwordTrainingDailyPhaseConfirmCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.BFPFDMGMCAI = is.read_enum_or_unknown()?;
+                48 => {
+                    self.GCBHFKKGPHC = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BFPFDMGMCAI != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::MMKJJKBONEA_PCPDHELPKEM) {
-            my_size += ::protobuf::rt::int32_size(4, self.BFPFDMGMCAI.value());
+        if self.GCBHFKKGPHC != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::GFEKOONGJBL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(6, self.GCBHFKKGPHC.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BFPFDMGMCAI != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::MMKJJKBONEA_PCPDHELPKEM) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.BFPFDMGMCAI))?;
+        if self.GCBHFKKGPHC != ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::GFEKOONGJBL_NLCDGIPGFDJ) {
+            os.write_enum(6, ::protobuf::EnumOrUnknown::value(&self.GCBHFKKGPHC))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SwordTrainingDailyPhaseConfirmCsReq {
     }
 
     fn clear(&mut self) {
-        self.BFPFDMGMCAI = ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::MMKJJKBONEA_PCPDHELPKEM);
+        self.GCBHFKKGPHC = ::protobuf::EnumOrUnknown::new(super::SwordTrainingDailyPhaseType::SwordTrainingDailyPhaseType::GFEKOONGJBL_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingDailyPhaseConfirmCsReq {
         static instance: SwordTrainingDailyPhaseConfirmCsReq = SwordTrainingDailyPhaseConfirmCsReq {
-            BFPFDMGMCAI: ::protobuf::EnumOrUnknown::from_i32(0),
+            GCBHFKKGPHC: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingDailyPhaseConfirmCsReq 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)SwordTrainingDailyPhaseConfirmCsReq.proto\x1a!SwordTrainingDailyPhase\
-    Type.proto\"e\n#SwordTrainingDailyPhaseConfirmCsReq\x12>\n\x0bBFPFDMGMCA\
-    I\x18\x04\x20\x01(\x0e2\x1c.SwordTrainingDailyPhaseTypeR\x0bBFPFDMGMCAIb\
+    Type.proto\"e\n#SwordTrainingDailyPhaseConfirmCsReq\x12>\n\x0bGCBHFKKGPH\
+    C\x18\x06\x20\x01(\x0e2\x1c.SwordTrainingDailyPhaseTypeR\x0bGCBHFKKGPHCb\
     \x06proto3\
 ";
 

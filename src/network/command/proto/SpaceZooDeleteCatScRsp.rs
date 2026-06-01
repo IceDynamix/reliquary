@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooDeleteCatScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooDeleteCatScRsp.NIEHHDLEANM)
-    pub NIEHHDLEANM: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SpaceZooDeleteCatScRsp.ANHNMANNAEP)
+    pub ANHNMANNAEP: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:SpaceZooDeleteCatScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl SpaceZooDeleteCatScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NIEHHDLEANM",
-            |m: &SpaceZooDeleteCatScRsp| { &m.NIEHHDLEANM },
-            |m: &mut SpaceZooDeleteCatScRsp| { &mut m.NIEHHDLEANM },
+            "ANHNMANNAEP",
+            |m: &SpaceZooDeleteCatScRsp| { &m.ANHNMANNAEP },
+            |m: &mut SpaceZooDeleteCatScRsp| { &mut m.ANHNMANNAEP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NIEHHDLEANM)?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.ANHNMANNAEP)?;
                 },
-                8 => {
-                    self.NIEHHDLEANM.push(is.read_uint32()?);
+                56 => {
+                    self.ANHNMANNAEP.push(is.read_uint32()?);
                 },
                 96 => {
                     self.retcode = is.read_uint32()?;
@@ -100,7 +100,7 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.NIEHHDLEANM);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.ANHNMANNAEP);
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
@@ -110,7 +110,7 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.NIEHHDLEANM)?;
+        os.write_repeated_packed_uint32(7, &self.ANHNMANNAEP)?;
         if self.retcode != 0 {
             os.write_uint32(12, self.retcode)?;
         }
@@ -131,14 +131,14 @@ impl ::protobuf::Message for SpaceZooDeleteCatScRsp {
     }
 
     fn clear(&mut self) {
-        self.NIEHHDLEANM.clear();
+        self.ANHNMANNAEP.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooDeleteCatScRsp {
         static instance: SpaceZooDeleteCatScRsp = SpaceZooDeleteCatScRsp {
-            NIEHHDLEANM: ::std::vec::Vec::new(),
+            ANHNMANNAEP: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -165,7 +165,7 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooDeleteCatScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSpaceZooDeleteCatScRsp.proto\"T\n\x16SpaceZooDeleteCatScRsp\x12\
-    \x20\n\x0bNIEHHDLEANM\x18\x01\x20\x03(\rR\x0bNIEHHDLEANM\x12\x18\n\x07re\
+    \x20\n\x0bANHNMANNAEP\x18\x07\x20\x03(\rR\x0bANHNMANNAEP\x12\x18\n\x07re\
     tcode\x18\x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

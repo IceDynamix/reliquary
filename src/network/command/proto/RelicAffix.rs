@@ -30,10 +30,10 @@ pub struct RelicAffix {
     // message fields
     // @@protoc_insertion_point(field:RelicAffix.affix_id)
     pub affix_id: u32,
-    // @@protoc_insertion_point(field:RelicAffix.cnt)
-    pub cnt: u32,
     // @@protoc_insertion_point(field:RelicAffix.step)
     pub step: u32,
+    // @@protoc_insertion_point(field:RelicAffix.cnt)
+    pub cnt: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RelicAffix.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl RelicAffix {
             |m: &mut RelicAffix| { &mut m.affix_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cnt",
-            |m: &RelicAffix| { &m.cnt },
-            |m: &mut RelicAffix| { &mut m.cnt },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "step",
             |m: &RelicAffix| { &m.step },
             |m: &mut RelicAffix| { &mut m.step },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cnt",
+            |m: &RelicAffix| { &m.cnt },
+            |m: &mut RelicAffix| { &mut m.cnt },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RelicAffix>(
             "RelicAffix",
@@ -89,11 +89,11 @@ impl ::protobuf::Message for RelicAffix {
                 8 => {
                     self.affix_id = is.read_uint32()?;
                 },
-                16 => {
-                    self.cnt = is.read_uint32()?;
-                },
                 24 => {
                     self.step = is.read_uint32()?;
+                },
+                16 => {
+                    self.cnt = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RelicAffix {
         if self.affix_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.affix_id);
         }
-        if self.cnt != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.cnt);
-        }
         if self.step != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.step);
+        }
+        if self.cnt != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.cnt);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,11 +125,11 @@ impl ::protobuf::Message for RelicAffix {
         if self.affix_id != 0 {
             os.write_uint32(1, self.affix_id)?;
         }
-        if self.cnt != 0 {
-            os.write_uint32(2, self.cnt)?;
-        }
         if self.step != 0 {
             os.write_uint32(3, self.step)?;
+        }
+        if self.cnt != 0 {
+            os.write_uint32(2, self.cnt)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RelicAffix {
 
     fn clear(&mut self) {
         self.affix_id = 0;
-        self.cnt = 0;
         self.step = 0;
+        self.cnt = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicAffix {
         static instance: RelicAffix = RelicAffix {
             affix_id: 0,
-            cnt: 0,
             step: 0,
+            cnt: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,8 +184,8 @@ impl ::protobuf::reflect::ProtobufValue for RelicAffix {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10RelicAffix.proto\"M\n\nRelicAffix\x12\x19\n\x08affix_id\x18\x01\
-    \x20\x01(\rR\x07affixId\x12\x10\n\x03cnt\x18\x02\x20\x01(\rR\x03cnt\x12\
-    \x12\n\x04step\x18\x03\x20\x01(\rR\x04stepb\x06proto3\
+    \x20\x01(\rR\x07affixId\x12\x12\n\x04step\x18\x03\x20\x01(\rR\x04step\
+    \x12\x10\n\x03cnt\x18\x02\x20\x01(\rR\x03cntb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

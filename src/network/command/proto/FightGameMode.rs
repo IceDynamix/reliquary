@@ -27,24 +27,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FightGameMode)
 pub enum FightGameMode {
-    // @@protoc_insertion_point(enum_value:FightGameMode.EJIMIOGAOKL_PCPDHELPKEM)
-    EJIMIOGAOKL_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:FightGameMode.EJIMIOGAOKL_NANHDDBCJOK)
-    EJIMIOGAOKL_NANHDDBCJOK = 1,
-    // @@protoc_insertion_point(enum_value:FightGameMode.EJIMIOGAOKL_DODGBHJDNFL)
-    EJIMIOGAOKL_DODGBHJDNFL = 2,
-    // @@protoc_insertion_point(enum_value:FightGameMode.EJIMIOGAOKL_FLFLKBFGPMP)
-    EJIMIOGAOKL_FLFLKBFGPMP = 3,
-    // @@protoc_insertion_point(enum_value:FightGameMode.EJIMIOGAOKL_BOIDFEHPKEI)
-    EJIMIOGAOKL_BOIDFEHPKEI = 4,
-    // @@protoc_insertion_point(enum_value:FightGameMode.EJIMIOGAOKL_ICLCGJFAEBO)
-    EJIMIOGAOKL_ICLCGJFAEBO = 5,
-    // @@protoc_insertion_point(enum_value:FightGameMode.EJIMIOGAOKL_HGJELADJLJD)
-    EJIMIOGAOKL_HGJELADJLJD = 6,
-    // @@protoc_insertion_point(enum_value:FightGameMode.EJIMIOGAOKL_IKLKNEBGFLG)
-    EJIMIOGAOKL_IKLKNEBGFLG = 7,
-    // @@protoc_insertion_point(enum_value:FightGameMode.EJIMIOGAOKL_HAPIJAMMAKF)
-    EJIMIOGAOKL_HAPIJAMMAKF = 8,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_NLCDGIPGFDJ)
+    FJPMJPEKLJL_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_EAMCPOPPHEN)
+    FJPMJPEKLJL_EAMCPOPPHEN = 1,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_KPEKNPODEKJ)
+    FJPMJPEKLJL_KPEKNPODEKJ = 2,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_NHAADPKOCMK)
+    FJPMJPEKLJL_NHAADPKOCMK = 3,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_GCMNKEJIMFI)
+    FJPMJPEKLJL_GCMNKEJIMFI = 4,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_BBEAIOOHDBE)
+    FJPMJPEKLJL_BBEAIOOHDBE = 5,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_BLBMAPAMFHE)
+    FJPMJPEKLJL_BLBMAPAMFHE = 6,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_FBPGILKIGBE)
+    FJPMJPEKLJL_FBPGILKIGBE = 7,
+    // @@protoc_insertion_point(enum_value:FightGameMode.FJPMJPEKLJL_MKHLALNLOLA)
+    FJPMJPEKLJL_MKHLALNLOLA = 8,
 }
 
 impl ::protobuf::Enum for FightGameMode {
@@ -56,44 +56,44 @@ impl ::protobuf::Enum for FightGameMode {
 
     fn from_i32(value: i32) -> ::std::option::Option<FightGameMode> {
         match value {
-            0 => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_NANHDDBCJOK),
-            2 => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_DODGBHJDNFL),
-            3 => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_FLFLKBFGPMP),
-            4 => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_BOIDFEHPKEI),
-            5 => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_ICLCGJFAEBO),
-            6 => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_HGJELADJLJD),
-            7 => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_IKLKNEBGFLG),
-            8 => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_HAPIJAMMAKF),
+            0 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_EAMCPOPPHEN),
+            2 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_KPEKNPODEKJ),
+            3 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_NHAADPKOCMK),
+            4 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_GCMNKEJIMFI),
+            5 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_BBEAIOOHDBE),
+            6 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_BLBMAPAMFHE),
+            7 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_FBPGILKIGBE),
+            8 => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_MKHLALNLOLA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FightGameMode> {
         match str {
-            "EJIMIOGAOKL_PCPDHELPKEM" => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_PCPDHELPKEM),
-            "EJIMIOGAOKL_NANHDDBCJOK" => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_NANHDDBCJOK),
-            "EJIMIOGAOKL_DODGBHJDNFL" => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_DODGBHJDNFL),
-            "EJIMIOGAOKL_FLFLKBFGPMP" => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_FLFLKBFGPMP),
-            "EJIMIOGAOKL_BOIDFEHPKEI" => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_BOIDFEHPKEI),
-            "EJIMIOGAOKL_ICLCGJFAEBO" => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_ICLCGJFAEBO),
-            "EJIMIOGAOKL_HGJELADJLJD" => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_HGJELADJLJD),
-            "EJIMIOGAOKL_IKLKNEBGFLG" => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_IKLKNEBGFLG),
-            "EJIMIOGAOKL_HAPIJAMMAKF" => ::std::option::Option::Some(FightGameMode::EJIMIOGAOKL_HAPIJAMMAKF),
+            "FJPMJPEKLJL_NLCDGIPGFDJ" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ),
+            "FJPMJPEKLJL_EAMCPOPPHEN" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_EAMCPOPPHEN),
+            "FJPMJPEKLJL_KPEKNPODEKJ" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_KPEKNPODEKJ),
+            "FJPMJPEKLJL_NHAADPKOCMK" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_NHAADPKOCMK),
+            "FJPMJPEKLJL_GCMNKEJIMFI" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_GCMNKEJIMFI),
+            "FJPMJPEKLJL_BBEAIOOHDBE" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_BBEAIOOHDBE),
+            "FJPMJPEKLJL_BLBMAPAMFHE" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_BLBMAPAMFHE),
+            "FJPMJPEKLJL_FBPGILKIGBE" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_FBPGILKIGBE),
+            "FJPMJPEKLJL_MKHLALNLOLA" => ::std::option::Option::Some(FightGameMode::FJPMJPEKLJL_MKHLALNLOLA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FightGameMode] = &[
-        FightGameMode::EJIMIOGAOKL_PCPDHELPKEM,
-        FightGameMode::EJIMIOGAOKL_NANHDDBCJOK,
-        FightGameMode::EJIMIOGAOKL_DODGBHJDNFL,
-        FightGameMode::EJIMIOGAOKL_FLFLKBFGPMP,
-        FightGameMode::EJIMIOGAOKL_BOIDFEHPKEI,
-        FightGameMode::EJIMIOGAOKL_ICLCGJFAEBO,
-        FightGameMode::EJIMIOGAOKL_HGJELADJLJD,
-        FightGameMode::EJIMIOGAOKL_IKLKNEBGFLG,
-        FightGameMode::EJIMIOGAOKL_HAPIJAMMAKF,
+        FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ,
+        FightGameMode::FJPMJPEKLJL_EAMCPOPPHEN,
+        FightGameMode::FJPMJPEKLJL_KPEKNPODEKJ,
+        FightGameMode::FJPMJPEKLJL_NHAADPKOCMK,
+        FightGameMode::FJPMJPEKLJL_GCMNKEJIMFI,
+        FightGameMode::FJPMJPEKLJL_BBEAIOOHDBE,
+        FightGameMode::FJPMJPEKLJL_BLBMAPAMFHE,
+        FightGameMode::FJPMJPEKLJL_FBPGILKIGBE,
+        FightGameMode::FJPMJPEKLJL_MKHLALNLOLA,
     ];
 }
 
@@ -111,7 +111,7 @@ impl ::protobuf::EnumFull for FightGameMode {
 
 impl ::std::default::Default for FightGameMode {
     fn default() -> Self {
-        FightGameMode::EJIMIOGAOKL_PCPDHELPKEM
+        FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ
     }
 }
 
@@ -122,13 +122,13 @@ impl FightGameMode {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13FightGameMode.proto*\x94\x02\n\rFightGameMode\x12\x1b\n\x17EJIMIOG\
-    AOKL_PCPDHELPKEM\x10\0\x12\x1b\n\x17EJIMIOGAOKL_NANHDDBCJOK\x10\x01\x12\
-    \x1b\n\x17EJIMIOGAOKL_DODGBHJDNFL\x10\x02\x12\x1b\n\x17EJIMIOGAOKL_FLFLK\
-    BFGPMP\x10\x03\x12\x1b\n\x17EJIMIOGAOKL_BOIDFEHPKEI\x10\x04\x12\x1b\n\
-    \x17EJIMIOGAOKL_ICLCGJFAEBO\x10\x05\x12\x1b\n\x17EJIMIOGAOKL_HGJELADJLJD\
-    \x10\x06\x12\x1b\n\x17EJIMIOGAOKL_IKLKNEBGFLG\x10\x07\x12\x1b\n\x17EJIMI\
-    OGAOKL_HAPIJAMMAKF\x10\x08b\x06proto3\
+    \n\x13FightGameMode.proto*\x94\x02\n\rFightGameMode\x12\x1b\n\x17FJPMJPE\
+    KLJL_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17FJPMJPEKLJL_EAMCPOPPHEN\x10\x01\x12\
+    \x1b\n\x17FJPMJPEKLJL_KPEKNPODEKJ\x10\x02\x12\x1b\n\x17FJPMJPEKLJL_NHAAD\
+    PKOCMK\x10\x03\x12\x1b\n\x17FJPMJPEKLJL_GCMNKEJIMFI\x10\x04\x12\x1b\n\
+    \x17FJPMJPEKLJL_BBEAIOOHDBE\x10\x05\x12\x1b\n\x17FJPMJPEKLJL_BLBMAPAMFHE\
+    \x10\x06\x12\x1b\n\x17FJPMJPEKLJL_FBPGILKIGBE\x10\x07\x12\x1b\n\x17FJPMJ\
+    PEKLJL_MKHLALNLOLA\x10\x08b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct AiPamMotionScNotify {
     // message fields
-    // @@protoc_insertion_point(field:AiPamMotionScNotify.BDJACHGHCHF)
-    pub BDJACHGHCHF: ::std::vec::Vec<::std::string::String>,
+    // @@protoc_insertion_point(field:AiPamMotionScNotify.BLCCBDPODFM)
+    pub BLCCBDPODFM: ::std::vec::Vec<::std::string::String>,
     // special fields
     // @@protoc_insertion_point(special_field:AiPamMotionScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl AiPamMotionScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BDJACHGHCHF",
-            |m: &AiPamMotionScNotify| { &m.BDJACHGHCHF },
-            |m: &mut AiPamMotionScNotify| { &mut m.BDJACHGHCHF },
+            "BLCCBDPODFM",
+            |m: &AiPamMotionScNotify| { &m.BLCCBDPODFM },
+            |m: &mut AiPamMotionScNotify| { &mut m.BLCCBDPODFM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<AiPamMotionScNotify>(
             "AiPamMotionScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for AiPamMotionScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
-                    self.BDJACHGHCHF.push(is.read_string()?);
+                122 => {
+                    self.BLCCBDPODFM.push(is.read_string()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for AiPamMotionScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BDJACHGHCHF {
-            my_size += ::protobuf::rt::string_size(6, &value);
+        for value in &self.BLCCBDPODFM {
+            my_size += ::protobuf::rt::string_size(15, &value);
         };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for AiPamMotionScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BDJACHGHCHF {
-            os.write_string(6, &v)?;
+        for v in &self.BLCCBDPODFM {
+            os.write_string(15, &v)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for AiPamMotionScNotify {
     }
 
     fn clear(&mut self) {
-        self.BDJACHGHCHF.clear();
+        self.BLCCBDPODFM.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static AiPamMotionScNotify {
         static instance: AiPamMotionScNotify = AiPamMotionScNotify {
-            BDJACHGHCHF: ::std::vec::Vec::new(),
+            BLCCBDPODFM: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for AiPamMotionScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x19AiPamMotionScNotify.proto\"7\n\x13AiPamMotionScNotify\x12\x20\n\
-    \x0bBDJACHGHCHF\x18\x06\x20\x03(\tR\x0bBDJACHGHCHFb\x06proto3\
+    \x0bBLCCBDPODFM\x18\x0f\x20\x03(\tR\x0bBLCCBDPODFMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

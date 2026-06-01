@@ -27,10 +27,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdPlayerSyncType)
 pub enum CmdPlayerSyncType {
-    // @@protoc_insertion_point(enum_value:CmdPlayerSyncType.BJLOLIBBMLH_BCGNOEAOCOL)
-    BJLOLIBBMLH_BCGNOEAOCOL = 0,
-    // @@protoc_insertion_point(enum_value:CmdPlayerSyncType.CmdPlayerSyncScNotify)
-    CmdPlayerSyncScNotify = 691,
+    // @@protoc_insertion_point(enum_value:CmdPlayerSyncType.OFHDDJMLOGG_LIDGOKIFPOJ)
+    OFHDDJMLOGG_LIDGOKIFPOJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdPlayerSyncType.OFHDDJMLOGG_LMDPMECFOGM)
+    OFHDDJMLOGG_LMDPMECFOGM = 673,
 }
 
 impl ::protobuf::Enum for CmdPlayerSyncType {
@@ -42,23 +42,23 @@ impl ::protobuf::Enum for CmdPlayerSyncType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdPlayerSyncType> {
         match value {
-            0 => ::std::option::Option::Some(CmdPlayerSyncType::BJLOLIBBMLH_BCGNOEAOCOL),
-            691 => ::std::option::Option::Some(CmdPlayerSyncType::CmdPlayerSyncScNotify),
+            0 => ::std::option::Option::Some(CmdPlayerSyncType::OFHDDJMLOGG_LIDGOKIFPOJ),
+            673 => ::std::option::Option::Some(CmdPlayerSyncType::OFHDDJMLOGG_LMDPMECFOGM),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdPlayerSyncType> {
         match str {
-            "BJLOLIBBMLH_BCGNOEAOCOL" => ::std::option::Option::Some(CmdPlayerSyncType::BJLOLIBBMLH_BCGNOEAOCOL),
-            "CmdPlayerSyncScNotify" => ::std::option::Option::Some(CmdPlayerSyncType::CmdPlayerSyncScNotify),
+            "OFHDDJMLOGG_LIDGOKIFPOJ" => ::std::option::Option::Some(CmdPlayerSyncType::OFHDDJMLOGG_LIDGOKIFPOJ),
+            "OFHDDJMLOGG_LMDPMECFOGM" => ::std::option::Option::Some(CmdPlayerSyncType::OFHDDJMLOGG_LMDPMECFOGM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdPlayerSyncType] = &[
-        CmdPlayerSyncType::BJLOLIBBMLH_BCGNOEAOCOL,
-        CmdPlayerSyncType::CmdPlayerSyncScNotify,
+        CmdPlayerSyncType::OFHDDJMLOGG_LIDGOKIFPOJ,
+        CmdPlayerSyncType::OFHDDJMLOGG_LMDPMECFOGM,
     ];
 }
 
@@ -70,8 +70,8 @@ impl ::protobuf::EnumFull for CmdPlayerSyncType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdPlayerSyncType::BJLOLIBBMLH_BCGNOEAOCOL => 0,
-            CmdPlayerSyncType::CmdPlayerSyncScNotify => 1,
+            CmdPlayerSyncType::OFHDDJMLOGG_LIDGOKIFPOJ => 0,
+            CmdPlayerSyncType::OFHDDJMLOGG_LMDPMECFOGM => 1,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -79,7 +79,7 @@ impl ::protobuf::EnumFull for CmdPlayerSyncType {
 
 impl ::std::default::Default for CmdPlayerSyncType {
     fn default() -> Self {
-        CmdPlayerSyncType::BJLOLIBBMLH_BCGNOEAOCOL
+        CmdPlayerSyncType::OFHDDJMLOGG_LIDGOKIFPOJ
     }
 }
 
@@ -90,9 +90,9 @@ impl CmdPlayerSyncType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdPlayerSyncType.proto*L\n\x11CmdPlayerSyncType\x12\x1b\n\x17BJLO\
-    LIBBMLH_BCGNOEAOCOL\x10\0\x12\x1a\n\x15CmdPlayerSyncScNotify\x10\xb3\x05\
-    b\x06proto3\
+    \n\x17CmdPlayerSyncType.proto*N\n\x11CmdPlayerSyncType\x12\x1b\n\x17OFHD\
+    DJMLOGG_LIDGOKIFPOJ\x10\0\x12\x1c\n\x17OFHDDJMLOGG_LMDPMECFOGM\x10\xa1\
+    \x05b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

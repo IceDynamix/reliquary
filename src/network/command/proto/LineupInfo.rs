@@ -28,34 +28,34 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LineupInfo {
     // message fields
-    // @@protoc_insertion_point(field:LineupInfo.index)
-    pub index: u32,
-    // @@protoc_insertion_point(field:LineupInfo.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::LineupAvatar::LineupAvatar>,
-    // @@protoc_insertion_point(field:LineupInfo.leader_slot)
-    pub leader_slot: u32,
-    // @@protoc_insertion_point(field:LineupInfo.OBMEFOMFGFD)
-    pub OBMEFOMFGFD: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LineupInfo.story_line_avatar_id_list)
-    pub story_line_avatar_id_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LineupInfo.GLLDELDFDEE)
-    pub GLLDELDFDEE: bool,
-    // @@protoc_insertion_point(field:LineupInfo.mp)
-    pub mp: u32,
+    // @@protoc_insertion_point(field:LineupInfo.GOFLIGGNHNE)
+    pub GOFLIGGNHNE: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LineupInfo.name)
     pub name: ::std::string::String,
-    // @@protoc_insertion_point(field:LineupInfo.AGOPFIFDJFN)
-    pub AGOPFIFDJFN: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LineupInfo.extra_lineup_type)
-    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
+    // @@protoc_insertion_point(field:LineupInfo.avatar_list)
+    pub avatar_list: ::std::vec::Vec<super::LineupAvatar::LineupAvatar>,
+    // @@protoc_insertion_point(field:LineupInfo.NCLJLLNGDCI)
+    pub NCLJLLNGDCI: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LineupInfo.story_line_avatar_id_list)
+    pub story_line_avatar_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:LineupInfo.is_virtual)
     pub is_virtual: bool,
-    // @@protoc_insertion_point(field:LineupInfo.max_mp)
-    pub max_mp: u32,
+    // @@protoc_insertion_point(field:LineupInfo.ABHONGJHICF)
+    pub ABHONGJHICF: bool,
+    // @@protoc_insertion_point(field:LineupInfo.extra_lineup_type)
+    pub extra_lineup_type: ::protobuf::EnumOrUnknown<super::ExtraLineupType::ExtraLineupType>,
     // @@protoc_insertion_point(field:LineupInfo.game_story_line_id)
     pub game_story_line_id: u32,
+    // @@protoc_insertion_point(field:LineupInfo.mp)
+    pub mp: u32,
+    // @@protoc_insertion_point(field:LineupInfo.index)
+    pub index: u32,
+    // @@protoc_insertion_point(field:LineupInfo.leader_slot)
+    pub leader_slot: u32,
     // @@protoc_insertion_point(field:LineupInfo.plane_id)
     pub plane_id: u32,
+    // @@protoc_insertion_point(field:LineupInfo.max_mp)
+    pub max_mp: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LineupInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -75,40 +75,10 @@ impl LineupInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(14);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "index",
-            |m: &LineupInfo| { &m.index },
-            |m: &mut LineupInfo| { &mut m.index },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "avatar_list",
-            |m: &LineupInfo| { &m.avatar_list },
-            |m: &mut LineupInfo| { &mut m.avatar_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "leader_slot",
-            |m: &LineupInfo| { &m.leader_slot },
-            |m: &mut LineupInfo| { &mut m.leader_slot },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OBMEFOMFGFD",
-            |m: &LineupInfo| { &m.OBMEFOMFGFD },
-            |m: &mut LineupInfo| { &mut m.OBMEFOMFGFD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "story_line_avatar_id_list",
-            |m: &LineupInfo| { &m.story_line_avatar_id_list },
-            |m: &mut LineupInfo| { &mut m.story_line_avatar_id_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GLLDELDFDEE",
-            |m: &LineupInfo| { &m.GLLDELDFDEE },
-            |m: &mut LineupInfo| { &mut m.GLLDELDFDEE },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "mp",
-            |m: &LineupInfo| { &m.mp },
-            |m: &mut LineupInfo| { &mut m.mp },
+            "GOFLIGGNHNE",
+            |m: &LineupInfo| { &m.GOFLIGGNHNE },
+            |m: &mut LineupInfo| { &mut m.GOFLIGGNHNE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "name",
@@ -116,14 +86,19 @@ impl LineupInfo {
             |m: &mut LineupInfo| { &mut m.name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AGOPFIFDJFN",
-            |m: &LineupInfo| { &m.AGOPFIFDJFN },
-            |m: &mut LineupInfo| { &mut m.AGOPFIFDJFN },
+            "avatar_list",
+            |m: &LineupInfo| { &m.avatar_list },
+            |m: &mut LineupInfo| { &mut m.avatar_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "extra_lineup_type",
-            |m: &LineupInfo| { &m.extra_lineup_type },
-            |m: &mut LineupInfo| { &mut m.extra_lineup_type },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NCLJLLNGDCI",
+            |m: &LineupInfo| { &m.NCLJLLNGDCI },
+            |m: &mut LineupInfo| { &mut m.NCLJLLNGDCI },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "story_line_avatar_id_list",
+            |m: &LineupInfo| { &m.story_line_avatar_id_list },
+            |m: &mut LineupInfo| { &mut m.story_line_avatar_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_virtual",
@@ -131,9 +106,14 @@ impl LineupInfo {
             |m: &mut LineupInfo| { &mut m.is_virtual },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "max_mp",
-            |m: &LineupInfo| { &m.max_mp },
-            |m: &mut LineupInfo| { &mut m.max_mp },
+            "ABHONGJHICF",
+            |m: &LineupInfo| { &m.ABHONGJHICF },
+            |m: &mut LineupInfo| { &mut m.ABHONGJHICF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "extra_lineup_type",
+            |m: &LineupInfo| { &m.extra_lineup_type },
+            |m: &mut LineupInfo| { &mut m.extra_lineup_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "game_story_line_id",
@@ -141,9 +121,29 @@ impl LineupInfo {
             |m: &mut LineupInfo| { &mut m.game_story_line_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "mp",
+            |m: &LineupInfo| { &m.mp },
+            |m: &mut LineupInfo| { &mut m.mp },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "index",
+            |m: &LineupInfo| { &m.index },
+            |m: &mut LineupInfo| { &mut m.index },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "leader_slot",
+            |m: &LineupInfo| { &m.leader_slot },
+            |m: &mut LineupInfo| { &mut m.leader_slot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "plane_id",
             |m: &LineupInfo| { &m.plane_id },
             |m: &mut LineupInfo| { &mut m.plane_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "max_mp",
+            |m: &LineupInfo| { &m.max_mp },
+            |m: &mut LineupInfo| { &mut m.max_mp },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LineupInfo>(
             "LineupInfo",
@@ -163,56 +163,56 @@ impl ::protobuf::Message for LineupInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.GOFLIGGNHNE)?;
+                },
                 64 => {
-                    self.index = is.read_uint32()?;
+                    self.GOFLIGGNHNE.push(is.read_uint32()?);
                 },
-                18 => {
-                    self.avatar_list.push(is.read_message()?);
-                },
-                112 => {
-                    self.leader_slot = is.read_uint32()?;
-                },
-                10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.OBMEFOMFGFD)?;
-                },
-                8 => {
-                    self.OBMEFOMFGFD.push(is.read_uint32()?);
-                },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.story_line_avatar_id_list)?;
-                },
-                24 => {
-                    self.story_line_avatar_id_list.push(is.read_uint32()?);
-                },
-                96 => {
-                    self.GLLDELDFDEE = is.read_bool()?;
-                },
-                48 => {
-                    self.mp = is.read_uint32()?;
-                },
-                90 => {
+                98 => {
                     self.name = is.read_string()?;
                 },
-                106 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AGOPFIFDJFN)?;
+                10 => {
+                    self.avatar_list.push(is.read_message()?);
                 },
-                104 => {
-                    self.AGOPFIFDJFN.push(is.read_uint32()?);
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NCLJLLNGDCI)?;
                 },
-                72 => {
-                    self.extra_lineup_type = is.read_enum_or_unknown()?;
+                24 => {
+                    self.NCLJLLNGDCI.push(is.read_uint32()?);
+                },
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.story_line_avatar_id_list)?;
                 },
                 56 => {
+                    self.story_line_avatar_id_list.push(is.read_uint32()?);
+                },
+                72 => {
                     self.is_virtual = is.read_bool()?;
                 },
                 32 => {
-                    self.max_mp = is.read_uint32()?;
-                },
-                80 => {
-                    self.game_story_line_id = is.read_uint32()?;
+                    self.ABHONGJHICF = is.read_bool()?;
                 },
                 120 => {
+                    self.extra_lineup_type = is.read_enum_or_unknown()?;
+                },
+                48 => {
+                    self.game_story_line_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.mp = is.read_uint32()?;
+                },
+                112 => {
+                    self.index = is.read_uint32()?;
+                },
+                16 => {
+                    self.leader_slot = is.read_uint32()?;
+                },
+                104 => {
                     self.plane_id = is.read_uint32()?;
+                },
+                80 => {
+                    self.max_mp = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -226,42 +226,42 @@ impl ::protobuf::Message for LineupInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.index != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.index);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.GOFLIGGNHNE);
+        if !self.name.is_empty() {
+            my_size += ::protobuf::rt::string_size(12, &self.name);
         }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.leader_slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.leader_slot);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.OBMEFOMFGFD);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.story_line_avatar_id_list);
-        if self.GLLDELDFDEE != false {
-            my_size += 1 + 1;
-        }
-        if self.mp != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.mp);
-        }
-        if !self.name.is_empty() {
-            my_size += ::protobuf::rt::string_size(11, &self.name);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.AGOPFIFDJFN);
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            my_size += ::protobuf::rt::int32_size(9, self.extra_lineup_type.value());
-        }
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.NCLJLLNGDCI);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.story_line_avatar_id_list);
         if self.is_virtual != false {
             my_size += 1 + 1;
         }
-        if self.max_mp != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.max_mp);
+        if self.ABHONGJHICF != false {
+            my_size += 1 + 1;
+        }
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.extra_lineup_type.value());
         }
         if self.game_story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.game_story_line_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.game_story_line_id);
+        }
+        if self.mp != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.mp);
+        }
+        if self.index != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.index);
+        }
+        if self.leader_slot != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.leader_slot);
         }
         if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.plane_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.plane_id);
+        }
+        if self.max_mp != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.max_mp);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -269,41 +269,41 @@ impl ::protobuf::Message for LineupInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.index != 0 {
-            os.write_uint32(8, self.index)?;
+        os.write_repeated_packed_uint32(8, &self.GOFLIGGNHNE)?;
+        if !self.name.is_empty() {
+            os.write_string(12, &self.name)?;
         }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
-        if self.leader_slot != 0 {
-            os.write_uint32(14, self.leader_slot)?;
-        }
-        os.write_repeated_packed_uint32(1, &self.OBMEFOMFGFD)?;
-        os.write_repeated_packed_uint32(3, &self.story_line_avatar_id_list)?;
-        if self.GLLDELDFDEE != false {
-            os.write_bool(12, self.GLLDELDFDEE)?;
-        }
-        if self.mp != 0 {
-            os.write_uint32(6, self.mp)?;
-        }
-        if !self.name.is_empty() {
-            os.write_string(11, &self.name)?;
-        }
-        os.write_repeated_packed_uint32(13, &self.AGOPFIFDJFN)?;
-        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
-            os.write_enum(9, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
-        }
+        os.write_repeated_packed_uint32(3, &self.NCLJLLNGDCI)?;
+        os.write_repeated_packed_uint32(7, &self.story_line_avatar_id_list)?;
         if self.is_virtual != false {
-            os.write_bool(7, self.is_virtual)?;
+            os.write_bool(9, self.is_virtual)?;
         }
-        if self.max_mp != 0 {
-            os.write_uint32(4, self.max_mp)?;
+        if self.ABHONGJHICF != false {
+            os.write_bool(4, self.ABHONGJHICF)?;
+        }
+        if self.extra_lineup_type != ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.extra_lineup_type))?;
         }
         if self.game_story_line_id != 0 {
-            os.write_uint32(10, self.game_story_line_id)?;
+            os.write_uint32(6, self.game_story_line_id)?;
+        }
+        if self.mp != 0 {
+            os.write_uint32(11, self.mp)?;
+        }
+        if self.index != 0 {
+            os.write_uint32(14, self.index)?;
+        }
+        if self.leader_slot != 0 {
+            os.write_uint32(2, self.leader_slot)?;
         }
         if self.plane_id != 0 {
-            os.write_uint32(15, self.plane_id)?;
+            os.write_uint32(13, self.plane_id)?;
+        }
+        if self.max_mp != 0 {
+            os.write_uint32(10, self.max_mp)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -322,39 +322,39 @@ impl ::protobuf::Message for LineupInfo {
     }
 
     fn clear(&mut self) {
-        self.index = 0;
-        self.avatar_list.clear();
-        self.leader_slot = 0;
-        self.OBMEFOMFGFD.clear();
-        self.story_line_avatar_id_list.clear();
-        self.GLLDELDFDEE = false;
-        self.mp = 0;
+        self.GOFLIGGNHNE.clear();
         self.name.clear();
-        self.AGOPFIFDJFN.clear();
-        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
+        self.avatar_list.clear();
+        self.NCLJLLNGDCI.clear();
+        self.story_line_avatar_id_list.clear();
         self.is_virtual = false;
-        self.max_mp = 0;
+        self.ABHONGJHICF = false;
+        self.extra_lineup_type = ::protobuf::EnumOrUnknown::new(super::ExtraLineupType::ExtraLineupType::LINEUP_NONE);
         self.game_story_line_id = 0;
+        self.mp = 0;
+        self.index = 0;
+        self.leader_slot = 0;
         self.plane_id = 0;
+        self.max_mp = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LineupInfo {
         static instance: LineupInfo = LineupInfo {
-            index: 0,
-            avatar_list: ::std::vec::Vec::new(),
-            leader_slot: 0,
-            OBMEFOMFGFD: ::std::vec::Vec::new(),
-            story_line_avatar_id_list: ::std::vec::Vec::new(),
-            GLLDELDFDEE: false,
-            mp: 0,
+            GOFLIGGNHNE: ::std::vec::Vec::new(),
             name: ::std::string::String::new(),
-            AGOPFIFDJFN: ::std::vec::Vec::new(),
-            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            avatar_list: ::std::vec::Vec::new(),
+            NCLJLLNGDCI: ::std::vec::Vec::new(),
+            story_line_avatar_id_list: ::std::vec::Vec::new(),
             is_virtual: false,
-            max_mp: 0,
+            ABHONGJHICF: false,
+            extra_lineup_type: ::protobuf::EnumOrUnknown::from_i32(0),
             game_story_line_id: 0,
+            mp: 0,
+            index: 0,
+            leader_slot: 0,
             plane_id: 0,
+            max_mp: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -380,19 +380,19 @@ impl ::protobuf::reflect::ProtobufValue for LineupInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10LineupInfo.proto\x1a\x15ExtraLineupType.proto\x1a\x12LineupAvatar.\
-    proto\"\xf3\x03\n\nLineupInfo\x12\x14\n\x05index\x18\x08\x20\x01(\rR\x05\
-    index\x12.\n\x0bavatar_list\x18\x02\x20\x03(\x0b2\r.LineupAvatarR\navata\
-    rList\x12\x1f\n\x0bleader_slot\x18\x0e\x20\x01(\rR\nleaderSlot\x12\x20\n\
-    \x0bOBMEFOMFGFD\x18\x01\x20\x03(\rR\x0bOBMEFOMFGFD\x128\n\x19story_line_\
-    avatar_id_list\x18\x03\x20\x03(\rR\x15storyLineAvatarIdList\x12\x20\n\
-    \x0bGLLDELDFDEE\x18\x0c\x20\x01(\x08R\x0bGLLDELDFDEE\x12\x0e\n\x02mp\x18\
-    \x06\x20\x01(\rR\x02mp\x12\x12\n\x04name\x18\x0b\x20\x01(\tR\x04name\x12\
-    \x20\n\x0bAGOPFIFDJFN\x18\r\x20\x03(\rR\x0bAGOPFIFDJFN\x12<\n\x11extra_l\
-    ineup_type\x18\t\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\
-    \x12\x1d\n\nis_virtual\x18\x07\x20\x01(\x08R\tisVirtual\x12\x15\n\x06max\
-    _mp\x18\x04\x20\x01(\rR\x05maxMp\x12+\n\x12game_story_line_id\x18\n\x20\
-    \x01(\rR\x0fgameStoryLineId\x12\x19\n\x08plane_id\x18\x0f\x20\x01(\rR\
-    \x07planeIdb\x06proto3\
+    proto\"\xf3\x03\n\nLineupInfo\x12\x20\n\x0bGOFLIGGNHNE\x18\x08\x20\x03(\
+    \rR\x0bGOFLIGGNHNE\x12\x12\n\x04name\x18\x0c\x20\x01(\tR\x04name\x12.\n\
+    \x0bavatar_list\x18\x01\x20\x03(\x0b2\r.LineupAvatarR\navatarList\x12\
+    \x20\n\x0bNCLJLLNGDCI\x18\x03\x20\x03(\rR\x0bNCLJLLNGDCI\x128\n\x19story\
+    _line_avatar_id_list\x18\x07\x20\x03(\rR\x15storyLineAvatarIdList\x12\
+    \x1d\n\nis_virtual\x18\t\x20\x01(\x08R\tisVirtual\x12\x20\n\x0bABHONGJHI\
+    CF\x18\x04\x20\x01(\x08R\x0bABHONGJHICF\x12<\n\x11extra_lineup_type\x18\
+    \x0f\x20\x01(\x0e2\x10.ExtraLineupTypeR\x0fextraLineupType\x12+\n\x12gam\
+    e_story_line_id\x18\x06\x20\x01(\rR\x0fgameStoryLineId\x12\x0e\n\x02mp\
+    \x18\x0b\x20\x01(\rR\x02mp\x12\x14\n\x05index\x18\x0e\x20\x01(\rR\x05ind\
+    ex\x12\x1f\n\x0bleader_slot\x18\x02\x20\x01(\rR\nleaderSlot\x12\x19\n\
+    \x08plane_id\x18\r\x20\x01(\rR\x07planeId\x12\x15\n\x06max_mp\x18\n\x20\
+    \x01(\rR\x05maxMpb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

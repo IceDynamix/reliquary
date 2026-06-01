@@ -79,10 +79,10 @@ impl ::protobuf::Message for RotaterEnergyInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
+                16 => {
                     self.cur_num = is.read_uint32()?;
                 },
-                24 => {
+                40 => {
                     self.max_num = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for RotaterEnergyInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.cur_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.cur_num);
+            my_size += ::protobuf::rt::uint32_size(2, self.cur_num);
         }
         if self.max_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.max_num);
+            my_size += ::protobuf::rt::uint32_size(5, self.max_num);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for RotaterEnergyInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.cur_num != 0 {
-            os.write_uint32(1, self.cur_num)?;
+            os.write_uint32(2, self.cur_num)?;
         }
         if self.max_num != 0 {
-            os.write_uint32(3, self.max_num)?;
+            os.write_uint32(5, self.max_num)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for RotaterEnergyInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17RotaterEnergyInfo.proto\"E\n\x11RotaterEnergyInfo\x12\x17\n\x07cur\
-    _num\x18\x01\x20\x01(\rR\x06curNum\x12\x17\n\x07max_num\x18\x03\x20\x01(\
+    _num\x18\x02\x20\x01(\rR\x06curNum\x12\x17\n\x07max_num\x18\x05\x20\x01(\
     \rR\x06maxNumb\x06proto3\
 ";
 

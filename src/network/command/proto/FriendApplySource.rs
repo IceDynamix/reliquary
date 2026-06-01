@@ -27,20 +27,28 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FriendApplySource)
 pub enum FriendApplySource {
-    // @@protoc_insertion_point(enum_value:FriendApplySource.PABBPHOIDBF_PCPDHELPKEM)
-    PABBPHOIDBF_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.PABBPHOIDBF_DDEBAHBEKHI)
-    PABBPHOIDBF_DDEBAHBEKHI = 1,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.PABBPHOIDBF_PJEOOMBFNMA)
-    PABBPHOIDBF_PJEOOMBFNMA = 2,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.PABBPHOIDBF_ILPKPBOKMEN)
-    PABBPHOIDBF_ILPKPBOKMEN = 3,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.PABBPHOIDBF_OAMHNEDGEKA)
-    PABBPHOIDBF_OAMHNEDGEKA = 4,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.PABBPHOIDBF_OGENAPDDIDB)
-    PABBPHOIDBF_OGENAPDDIDB = 5,
-    // @@protoc_insertion_point(enum_value:FriendApplySource.PABBPHOIDBF_LDLMBIFNPEP)
-    PABBPHOIDBF_LDLMBIFNPEP = 6,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_NLCDGIPGFDJ)
+    HPEKGMDHFLO_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_GODCHGIMIAJ)
+    HPEKGMDHFLO_GODCHGIMIAJ = 1,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_BLNBLLNHICH)
+    HPEKGMDHFLO_BLNBLLNHICH = 2,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_ODHMGPNECFO)
+    HPEKGMDHFLO_ODHMGPNECFO = 3,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_OBPHECNLKAP)
+    HPEKGMDHFLO_OBPHECNLKAP = 4,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_OKJJPJKLIOG)
+    HPEKGMDHFLO_OKJJPJKLIOG = 5,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_OGCABAGJIIK)
+    HPEKGMDHFLO_OGCABAGJIIK = 6,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_CGMPJEGGEED)
+    HPEKGMDHFLO_CGMPJEGGEED = 7,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_JGFGNCLKIBO)
+    HPEKGMDHFLO_JGFGNCLKIBO = 8,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_MKHLALNLOLA)
+    HPEKGMDHFLO_MKHLALNLOLA = 9,
+    // @@protoc_insertion_point(enum_value:FriendApplySource.HPEKGMDHFLO_CILGIDDHODG)
+    HPEKGMDHFLO_CILGIDDHODG = 10,
 }
 
 impl ::protobuf::Enum for FriendApplySource {
@@ -52,38 +60,50 @@ impl ::protobuf::Enum for FriendApplySource {
 
     fn from_i32(value: i32) -> ::std::option::Option<FriendApplySource> {
         match value {
-            0 => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_DDEBAHBEKHI),
-            2 => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_PJEOOMBFNMA),
-            3 => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_ILPKPBOKMEN),
-            4 => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_OAMHNEDGEKA),
-            5 => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_OGENAPDDIDB),
-            6 => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_LDLMBIFNPEP),
+            0 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_GODCHGIMIAJ),
+            2 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_BLNBLLNHICH),
+            3 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_ODHMGPNECFO),
+            4 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OBPHECNLKAP),
+            5 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OKJJPJKLIOG),
+            6 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OGCABAGJIIK),
+            7 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_CGMPJEGGEED),
+            8 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_JGFGNCLKIBO),
+            9 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_MKHLALNLOLA),
+            10 => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_CILGIDDHODG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FriendApplySource> {
         match str {
-            "PABBPHOIDBF_PCPDHELPKEM" => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_PCPDHELPKEM),
-            "PABBPHOIDBF_DDEBAHBEKHI" => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_DDEBAHBEKHI),
-            "PABBPHOIDBF_PJEOOMBFNMA" => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_PJEOOMBFNMA),
-            "PABBPHOIDBF_ILPKPBOKMEN" => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_ILPKPBOKMEN),
-            "PABBPHOIDBF_OAMHNEDGEKA" => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_OAMHNEDGEKA),
-            "PABBPHOIDBF_OGENAPDDIDB" => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_OGENAPDDIDB),
-            "PABBPHOIDBF_LDLMBIFNPEP" => ::std::option::Option::Some(FriendApplySource::PABBPHOIDBF_LDLMBIFNPEP),
+            "HPEKGMDHFLO_NLCDGIPGFDJ" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_NLCDGIPGFDJ),
+            "HPEKGMDHFLO_GODCHGIMIAJ" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_GODCHGIMIAJ),
+            "HPEKGMDHFLO_BLNBLLNHICH" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_BLNBLLNHICH),
+            "HPEKGMDHFLO_ODHMGPNECFO" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_ODHMGPNECFO),
+            "HPEKGMDHFLO_OBPHECNLKAP" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OBPHECNLKAP),
+            "HPEKGMDHFLO_OKJJPJKLIOG" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OKJJPJKLIOG),
+            "HPEKGMDHFLO_OGCABAGJIIK" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_OGCABAGJIIK),
+            "HPEKGMDHFLO_CGMPJEGGEED" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_CGMPJEGGEED),
+            "HPEKGMDHFLO_JGFGNCLKIBO" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_JGFGNCLKIBO),
+            "HPEKGMDHFLO_MKHLALNLOLA" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_MKHLALNLOLA),
+            "HPEKGMDHFLO_CILGIDDHODG" => ::std::option::Option::Some(FriendApplySource::HPEKGMDHFLO_CILGIDDHODG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FriendApplySource] = &[
-        FriendApplySource::PABBPHOIDBF_PCPDHELPKEM,
-        FriendApplySource::PABBPHOIDBF_DDEBAHBEKHI,
-        FriendApplySource::PABBPHOIDBF_PJEOOMBFNMA,
-        FriendApplySource::PABBPHOIDBF_ILPKPBOKMEN,
-        FriendApplySource::PABBPHOIDBF_OAMHNEDGEKA,
-        FriendApplySource::PABBPHOIDBF_OGENAPDDIDB,
-        FriendApplySource::PABBPHOIDBF_LDLMBIFNPEP,
+        FriendApplySource::HPEKGMDHFLO_NLCDGIPGFDJ,
+        FriendApplySource::HPEKGMDHFLO_GODCHGIMIAJ,
+        FriendApplySource::HPEKGMDHFLO_BLNBLLNHICH,
+        FriendApplySource::HPEKGMDHFLO_ODHMGPNECFO,
+        FriendApplySource::HPEKGMDHFLO_OBPHECNLKAP,
+        FriendApplySource::HPEKGMDHFLO_OKJJPJKLIOG,
+        FriendApplySource::HPEKGMDHFLO_OGCABAGJIIK,
+        FriendApplySource::HPEKGMDHFLO_CGMPJEGGEED,
+        FriendApplySource::HPEKGMDHFLO_JGFGNCLKIBO,
+        FriendApplySource::HPEKGMDHFLO_MKHLALNLOLA,
+        FriendApplySource::HPEKGMDHFLO_CILGIDDHODG,
     ];
 }
 
@@ -101,7 +121,7 @@ impl ::protobuf::EnumFull for FriendApplySource {
 
 impl ::std::default::Default for FriendApplySource {
     fn default() -> Self {
-        FriendApplySource::PABBPHOIDBF_PCPDHELPKEM
+        FriendApplySource::HPEKGMDHFLO_NLCDGIPGFDJ
     }
 }
 
@@ -112,12 +132,14 @@ impl FriendApplySource {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17FriendApplySource.proto*\xde\x01\n\x11FriendApplySource\x12\x1b\n\
-    \x17PABBPHOIDBF_PCPDHELPKEM\x10\0\x12\x1b\n\x17PABBPHOIDBF_DDEBAHBEKHI\
-    \x10\x01\x12\x1b\n\x17PABBPHOIDBF_PJEOOMBFNMA\x10\x02\x12\x1b\n\x17PABBP\
-    HOIDBF_ILPKPBOKMEN\x10\x03\x12\x1b\n\x17PABBPHOIDBF_OAMHNEDGEKA\x10\x04\
-    \x12\x1b\n\x17PABBPHOIDBF_OGENAPDDIDB\x10\x05\x12\x1b\n\x17PABBPHOIDBF_L\
-    DLMBIFNPEP\x10\x06b\x06proto3\
+    \n\x17FriendApplySource.proto*\xd2\x02\n\x11FriendApplySource\x12\x1b\n\
+    \x17HPEKGMDHFLO_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17HPEKGMDHFLO_GODCHGIMIAJ\
+    \x10\x01\x12\x1b\n\x17HPEKGMDHFLO_BLNBLLNHICH\x10\x02\x12\x1b\n\x17HPEKG\
+    MDHFLO_ODHMGPNECFO\x10\x03\x12\x1b\n\x17HPEKGMDHFLO_OBPHECNLKAP\x10\x04\
+    \x12\x1b\n\x17HPEKGMDHFLO_OKJJPJKLIOG\x10\x05\x12\x1b\n\x17HPEKGMDHFLO_O\
+    GCABAGJIIK\x10\x06\x12\x1b\n\x17HPEKGMDHFLO_CGMPJEGGEED\x10\x07\x12\x1b\
+    \n\x17HPEKGMDHFLO_JGFGNCLKIBO\x10\x08\x12\x1b\n\x17HPEKGMDHFLO_MKHLALNLO\
+    LA\x10\t\x12\x1b\n\x17HPEKGMDHFLO_CILGIDDHODG\x10\nb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

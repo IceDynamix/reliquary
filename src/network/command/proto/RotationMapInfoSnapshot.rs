@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RotationMapInfoSnapshot {
     // message fields
-    // @@protoc_insertion_point(field:RotationMapInfoSnapshot.map_pos)
-    pub map_pos: ::protobuf::MessageField<super::VectorSnapshot::VectorSnapshot>,
     // @@protoc_insertion_point(field:RotationMapInfoSnapshot.map_rot)
     pub map_rot: ::protobuf::MessageField<super::VectorSnapshot::VectorSnapshot>,
+    // @@protoc_insertion_point(field:RotationMapInfoSnapshot.map_pos)
+    pub map_pos: ::protobuf::MessageField<super::VectorSnapshot::VectorSnapshot>,
     // special fields
     // @@protoc_insertion_point(special_field:RotationMapInfoSnapshot.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RotationMapInfoSnapshot {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::VectorSnapshot::VectorSnapshot>(
-            "map_pos",
-            |m: &RotationMapInfoSnapshot| { &m.map_pos },
-            |m: &mut RotationMapInfoSnapshot| { &mut m.map_pos },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::VectorSnapshot::VectorSnapshot>(
             "map_rot",
             |m: &RotationMapInfoSnapshot| { &m.map_rot },
             |m: &mut RotationMapInfoSnapshot| { &mut m.map_rot },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::VectorSnapshot::VectorSnapshot>(
+            "map_pos",
+            |m: &RotationMapInfoSnapshot| { &m.map_pos },
+            |m: &mut RotationMapInfoSnapshot| { &mut m.map_pos },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RotationMapInfoSnapshot>(
             "RotationMapInfoSnapshot",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RotationMapInfoSnapshot {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.map_pos)?;
-                },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.map_rot)?;
+                },
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.map_pos)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RotationMapInfoSnapshot {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.map_pos.as_ref() {
+        if let Some(v) = self.map_rot.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.map_rot.as_ref() {
+        if let Some(v) = self.map_pos.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -111,11 +111,11 @@ impl ::protobuf::Message for RotationMapInfoSnapshot {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.map_pos.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
-        }
         if let Some(v) = self.map_rot.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if let Some(v) = self.map_pos.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -134,15 +134,15 @@ impl ::protobuf::Message for RotationMapInfoSnapshot {
     }
 
     fn clear(&mut self) {
-        self.map_pos.clear();
         self.map_rot.clear();
+        self.map_pos.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RotationMapInfoSnapshot {
         static instance: RotationMapInfoSnapshot = RotationMapInfoSnapshot {
-            map_pos: ::protobuf::MessageField::none(),
             map_rot: ::protobuf::MessageField::none(),
+            map_pos: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -168,9 +168,9 @@ impl ::protobuf::reflect::ProtobufValue for RotationMapInfoSnapshot {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dRotationMapInfoSnapshot.proto\x1a\x14VectorSnapshot.proto\"m\n\x17\
-    RotationMapInfoSnapshot\x12(\n\x07map_pos\x18\x01\x20\x01(\x0b2\x0f.Vect\
-    orSnapshotR\x06mapPos\x12(\n\x07map_rot\x18\x02\x20\x01(\x0b2\x0f.Vector\
-    SnapshotR\x06mapRotb\x06proto3\
+    RotationMapInfoSnapshot\x12(\n\x07map_rot\x18\x02\x20\x01(\x0b2\x0f.Vect\
+    orSnapshotR\x06mapRot\x12(\n\x07map_pos\x18\x01\x20\x01(\x0b2\x0f.Vector\
+    SnapshotR\x06mapPosb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartNodeBattleScRsp {
     // message fields
+    // @@protoc_insertion_point(field:StartNodeBattleScRsp.ENCINPIHHDF)
+    pub ENCINPIHHDF: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
     // @@protoc_insertion_point(field:StartNodeBattleScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:StartNodeBattleScRsp.OICEJIMEONG)
-    pub OICEJIMEONG: ::std::vec::Vec<super::GKDEKJKOIJN::GKDEKJKOIJN>,
-    // @@protoc_insertion_point(field:StartNodeBattleScRsp.GIHHBJMAGOC)
-    pub GIHHBJMAGOC: u32,
+    // @@protoc_insertion_point(field:StartNodeBattleScRsp.PGIEEGCGCDI)
+    pub PGIEEGCGCDI: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartNodeBattleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl StartNodeBattleScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "ENCINPIHHDF",
+            |m: &StartNodeBattleScRsp| { &m.ENCINPIHHDF },
+            |m: &mut StartNodeBattleScRsp| { &mut m.ENCINPIHHDF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &StartNodeBattleScRsp| { &m.retcode },
             |m: &mut StartNodeBattleScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OICEJIMEONG",
-            |m: &StartNodeBattleScRsp| { &m.OICEJIMEONG },
-            |m: &mut StartNodeBattleScRsp| { &mut m.OICEJIMEONG },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GIHHBJMAGOC",
-            |m: &StartNodeBattleScRsp| { &m.GIHHBJMAGOC },
-            |m: &mut StartNodeBattleScRsp| { &mut m.GIHHBJMAGOC },
+            "PGIEEGCGCDI",
+            |m: &StartNodeBattleScRsp| { &m.PGIEEGCGCDI },
+            |m: &mut StartNodeBattleScRsp| { &mut m.PGIEEGCGCDI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartNodeBattleScRsp>(
             "StartNodeBattleScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for StartNodeBattleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                114 => {
+                    self.ENCINPIHHDF.push(is.read_message()?);
+                },
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                58 => {
-                    self.OICEJIMEONG.push(is.read_message()?);
-                },
-                40 => {
-                    self.GIHHBJMAGOC = is.read_uint32()?;
+                56 => {
+                    self.PGIEEGCGCDI = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for StartNodeBattleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        for value in &self.OICEJIMEONG {
+        for value in &self.ENCINPIHHDF {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GIHHBJMAGOC != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.GIHHBJMAGOC);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.PGIEEGCGCDI != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.PGIEEGCGCDI);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for StartNodeBattleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
-        }
-        for v in &self.OICEJIMEONG {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        for v in &self.ENCINPIHHDF {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         };
-        if self.GIHHBJMAGOC != 0 {
-            os.write_uint32(5, self.GIHHBJMAGOC)?;
+        if self.retcode != 0 {
+            os.write_uint32(9, self.retcode)?;
+        }
+        if self.PGIEEGCGCDI != 0 {
+            os.write_uint32(7, self.PGIEEGCGCDI)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for StartNodeBattleScRsp {
     }
 
     fn clear(&mut self) {
+        self.ENCINPIHHDF.clear();
         self.retcode = 0;
-        self.OICEJIMEONG.clear();
-        self.GIHHBJMAGOC = 0;
+        self.PGIEEGCGCDI = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartNodeBattleScRsp {
         static instance: StartNodeBattleScRsp = StartNodeBattleScRsp {
+            ENCINPIHHDF: ::std::vec::Vec::new(),
             retcode: 0,
-            OICEJIMEONG: ::std::vec::Vec::new(),
-            GIHHBJMAGOC: 0,
+            PGIEEGCGCDI: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for StartNodeBattleScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aStartNodeBattleScRsp.proto\x1a\x11GKDEKJKOIJN.proto\"\x82\x01\n\
-    \x14StartNodeBattleScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retco\
-    de\x12.\n\x0bOICEJIMEONG\x18\x07\x20\x03(\x0b2\x0c.GKDEKJKOIJNR\x0bOICEJ\
-    IMEONG\x12\x20\n\x0bGIHHBJMAGOC\x18\x05\x20\x01(\rR\x0bGIHHBJMAGOCb\x06p\
+    \n\x1aStartNodeBattleScRsp.proto\x1a\x11APAMFCKFHLL.proto\"\x82\x01\n\
+    \x14StartNodeBattleScRsp\x12.\n\x0bENCINPIHHDF\x18\x0e\x20\x03(\x0b2\x0c\
+    .APAMFCKFHLLR\x0bENCINPIHHDF\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07r\
+    etcode\x12\x20\n\x0bPGIEEGCGCDI\x18\x07\x20\x01(\rR\x0bPGIEEGCGCDIb\x06p\
     roto3\
 ";
 
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GKDEKJKOIJN::file_descriptor().clone());
+            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartNodeBattleScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

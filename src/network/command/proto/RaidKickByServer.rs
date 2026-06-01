@@ -30,14 +30,14 @@ pub struct RaidKickByServer {
     // message fields
     // @@protoc_insertion_point(field:RaidKickByServer.lineup)
     pub lineup: ::protobuf::MessageField<super::LineupInfo::LineupInfo>,
-    // @@protoc_insertion_point(field:RaidKickByServer.reason)
-    pub reason: ::protobuf::EnumOrUnknown<super::AANCGOFCJJL::AANCGOFCJJL>,
     // @@protoc_insertion_point(field:RaidKickByServer.scene)
     pub scene: ::protobuf::MessageField<super::SceneInfo::SceneInfo>,
-    // @@protoc_insertion_point(field:RaidKickByServer.raid_id)
-    pub raid_id: u32,
     // @@protoc_insertion_point(field:RaidKickByServer.world_level)
     pub world_level: u32,
+    // @@protoc_insertion_point(field:RaidKickByServer.raid_id)
+    pub raid_id: u32,
+    // @@protoc_insertion_point(field:RaidKickByServer.reason)
+    pub reason: ::protobuf::EnumOrUnknown<super::GMFMPPKAEHE::GMFMPPKAEHE>,
     // special fields
     // @@protoc_insertion_point(special_field:RaidKickByServer.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -62,15 +62,15 @@ impl RaidKickByServer {
             |m: &RaidKickByServer| { &m.lineup },
             |m: &mut RaidKickByServer| { &mut m.lineup },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reason",
-            |m: &RaidKickByServer| { &m.reason },
-            |m: &mut RaidKickByServer| { &mut m.reason },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SceneInfo::SceneInfo>(
             "scene",
             |m: &RaidKickByServer| { &m.scene },
             |m: &mut RaidKickByServer| { &mut m.scene },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "world_level",
+            |m: &RaidKickByServer| { &m.world_level },
+            |m: &mut RaidKickByServer| { &mut m.world_level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "raid_id",
@@ -78,9 +78,9 @@ impl RaidKickByServer {
             |m: &mut RaidKickByServer| { &mut m.raid_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_level",
-            |m: &RaidKickByServer| { &m.world_level },
-            |m: &mut RaidKickByServer| { &mut m.world_level },
+            "reason",
+            |m: &RaidKickByServer| { &m.reason },
+            |m: &mut RaidKickByServer| { &mut m.reason },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RaidKickByServer>(
             "RaidKickByServer",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RaidKickByServer {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                88 => {
-                    self.reason = is.read_enum_or_unknown()?;
-                },
-                18 => {
+                26 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                24 => {
+                40 => {
+                    self.world_level = is.read_uint32()?;
+                },
+                80 => {
                     self.raid_id = is.read_uint32()?;
                 },
-                112 => {
-                    self.world_level = is.read_uint32()?;
+                96 => {
+                    self.reason = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -131,18 +131,18 @@ impl ::protobuf::Message for RaidKickByServer {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::AANCGOFCJJL::AANCGOFCJJL::AANCGOFCJJL_PCPDHELPKEM) {
-            my_size += ::protobuf::rt::int32_size(11, self.reason.value());
-        }
         if let Some(v) = self.scene.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.raid_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.raid_id);
-        }
         if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(5, self.world_level);
+        }
+        if self.raid_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.raid_id);
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::GMFMPPKAEHE::GMFMPPKAEHE::GMFMPPKAEHE_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(12, self.reason.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -151,19 +151,19 @@ impl ::protobuf::Message for RaidKickByServer {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.lineup.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
-        }
-        if self.reason != ::protobuf::EnumOrUnknown::new(super::AANCGOFCJJL::AANCGOFCJJL::AANCGOFCJJL_PCPDHELPKEM) {
-            os.write_enum(11, ::protobuf::EnumOrUnknown::value(&self.reason))?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
-        }
-        if self.raid_id != 0 {
-            os.write_uint32(3, self.raid_id)?;
+            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
         }
         if self.world_level != 0 {
-            os.write_uint32(14, self.world_level)?;
+            os.write_uint32(5, self.world_level)?;
+        }
+        if self.raid_id != 0 {
+            os.write_uint32(10, self.raid_id)?;
+        }
+        if self.reason != ::protobuf::EnumOrUnknown::new(super::GMFMPPKAEHE::GMFMPPKAEHE::GMFMPPKAEHE_NLCDGIPGFDJ) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.reason))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -183,20 +183,20 @@ impl ::protobuf::Message for RaidKickByServer {
 
     fn clear(&mut self) {
         self.lineup.clear();
-        self.reason = ::protobuf::EnumOrUnknown::new(super::AANCGOFCJJL::AANCGOFCJJL::AANCGOFCJJL_PCPDHELPKEM);
         self.scene.clear();
-        self.raid_id = 0;
         self.world_level = 0;
+        self.raid_id = 0;
+        self.reason = ::protobuf::EnumOrUnknown::new(super::GMFMPPKAEHE::GMFMPPKAEHE::GMFMPPKAEHE_NLCDGIPGFDJ);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RaidKickByServer {
         static instance: RaidKickByServer = RaidKickByServer {
             lineup: ::protobuf::MessageField::none(),
-            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             scene: ::protobuf::MessageField::none(),
-            raid_id: 0,
             world_level: 0,
+            raid_id: 0,
+            reason: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,13 +221,13 @@ impl ::protobuf::reflect::ProtobufValue for RaidKickByServer {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16RaidKickByServer.proto\x1a\x11AANCGOFCJJL.proto\x1a\x10LineupInfo.\
+    \n\x16RaidKickByServer.proto\x1a\x11GMFMPPKAEHE.proto\x1a\x10LineupInfo.\
     proto\x1a\x0fSceneInfo.proto\"\xb9\x01\n\x10RaidKickByServer\x12#\n\x06l\
-    ineup\x18\x04\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12$\n\x06reason\
-    \x18\x0b\x20\x01(\x0e2\x0c.AANCGOFCJJLR\x06reason\x12\x20\n\x05scene\x18\
-    \x02\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12\x17\n\x07raid_id\x18\x03\
-    \x20\x01(\rR\x06raidId\x12\x1f\n\x0bworld_level\x18\x0e\x20\x01(\rR\nwor\
-    ldLevelb\x06proto3\
+    ineup\x18\r\x20\x01(\x0b2\x0b.LineupInfoR\x06lineup\x12\x20\n\x05scene\
+    \x18\x03\x20\x01(\x0b2\n.SceneInfoR\x05scene\x12\x1f\n\x0bworld_level\
+    \x18\x05\x20\x01(\rR\nworldLevel\x12\x17\n\x07raid_id\x18\n\x20\x01(\rR\
+    \x06raidId\x12$\n\x06reason\x18\x0c\x20\x01(\x0e2\x0c.GMFMPPKAEHER\x06re\
+    asonb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -245,7 +245,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::AANCGOFCJJL::file_descriptor().clone());
+            deps.push(super::GMFMPPKAEHE::file_descriptor().clone());
             deps.push(super::LineupInfo::file_descriptor().clone());
             deps.push(super::SceneInfo::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct CounterDownCsReq {
     // message fields
-    // @@protoc_insertion_point(field:CounterDownCsReq.MEAJAEBDAOI)
-    pub MEAJAEBDAOI: u32,
-    // @@protoc_insertion_point(field:CounterDownCsReq.IAPFBGEDGAM)
-    pub IAPFBGEDGAM: u32,
+    // @@protoc_insertion_point(field:CounterDownCsReq.DGGCFDKJDPO)
+    pub DGGCFDKJDPO: u32,
+    // @@protoc_insertion_point(field:CounterDownCsReq.BIKALOGMMDA)
+    pub BIKALOGMMDA: u32,
     // special fields
     // @@protoc_insertion_point(special_field:CounterDownCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl CounterDownCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MEAJAEBDAOI",
-            |m: &CounterDownCsReq| { &m.MEAJAEBDAOI },
-            |m: &mut CounterDownCsReq| { &mut m.MEAJAEBDAOI },
+            "DGGCFDKJDPO",
+            |m: &CounterDownCsReq| { &m.DGGCFDKJDPO },
+            |m: &mut CounterDownCsReq| { &mut m.DGGCFDKJDPO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IAPFBGEDGAM",
-            |m: &CounterDownCsReq| { &m.IAPFBGEDGAM },
-            |m: &mut CounterDownCsReq| { &mut m.IAPFBGEDGAM },
+            "BIKALOGMMDA",
+            |m: &CounterDownCsReq| { &m.BIKALOGMMDA },
+            |m: &mut CounterDownCsReq| { &mut m.BIKALOGMMDA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<CounterDownCsReq>(
             "CounterDownCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for CounterDownCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.MEAJAEBDAOI = is.read_uint32()?;
+                56 => {
+                    self.DGGCFDKJDPO = is.read_uint32()?;
                 },
-                112 => {
-                    self.IAPFBGEDGAM = is.read_uint32()?;
+                120 => {
+                    self.BIKALOGMMDA = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for CounterDownCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.MEAJAEBDAOI != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.MEAJAEBDAOI);
+        if self.DGGCFDKJDPO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.DGGCFDKJDPO);
         }
-        if self.IAPFBGEDGAM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.IAPFBGEDGAM);
+        if self.BIKALOGMMDA != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.BIKALOGMMDA);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for CounterDownCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.MEAJAEBDAOI != 0 {
-            os.write_uint32(1, self.MEAJAEBDAOI)?;
+        if self.DGGCFDKJDPO != 0 {
+            os.write_uint32(7, self.DGGCFDKJDPO)?;
         }
-        if self.IAPFBGEDGAM != 0 {
-            os.write_uint32(14, self.IAPFBGEDGAM)?;
+        if self.BIKALOGMMDA != 0 {
+            os.write_uint32(15, self.BIKALOGMMDA)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for CounterDownCsReq {
     }
 
     fn clear(&mut self) {
-        self.MEAJAEBDAOI = 0;
-        self.IAPFBGEDGAM = 0;
+        self.DGGCFDKJDPO = 0;
+        self.BIKALOGMMDA = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static CounterDownCsReq {
         static instance: CounterDownCsReq = CounterDownCsReq {
-            MEAJAEBDAOI: 0,
-            IAPFBGEDGAM: 0,
+            DGGCFDKJDPO: 0,
+            BIKALOGMMDA: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for CounterDownCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CounterDownCsReq.proto\"V\n\x10CounterDownCsReq\x12\x20\n\x0bMEAJA\
-    EBDAOI\x18\x01\x20\x01(\rR\x0bMEAJAEBDAOI\x12\x20\n\x0bIAPFBGEDGAM\x18\
-    \x0e\x20\x01(\rR\x0bIAPFBGEDGAMb\x06proto3\
+    \n\x16CounterDownCsReq.proto\"V\n\x10CounterDownCsReq\x12\x20\n\x0bDGGCF\
+    DKJDPO\x18\x07\x20\x01(\rR\x0bDGGCFDKJDPO\x12\x20\n\x0bBIKALOGMMDA\x18\
+    \x0f\x20\x01(\rR\x0bBIKALOGMMDAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

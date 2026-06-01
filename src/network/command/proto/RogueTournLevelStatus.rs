@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:RogueTournLevelStatus)
 pub enum RogueTournLevelStatus {
-    // @@protoc_insertion_point(enum_value:RogueTournLevelStatus.JPPIEKOBPII_PCPDHELPKEM)
-    JPPIEKOBPII_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:RogueTournLevelStatus.JPPIEKOBPII_HPJEBFFHJNP)
-    JPPIEKOBPII_HPJEBFFHJNP = 1,
-    // @@protoc_insertion_point(enum_value:RogueTournLevelStatus.JPPIEKOBPII_POOLAGHGCMG)
-    JPPIEKOBPII_POOLAGHGCMG = 2,
-    // @@protoc_insertion_point(enum_value:RogueTournLevelStatus.JPPIEKOBPII_EMEDNPCCNDH)
-    JPPIEKOBPII_EMEDNPCCNDH = 3,
+    // @@protoc_insertion_point(enum_value:RogueTournLevelStatus.NHMPGNHBBLC_NLCDGIPGFDJ)
+    NHMPGNHBBLC_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:RogueTournLevelStatus.NHMPGNHBBLC_LOOAKNHDBLL)
+    NHMPGNHBBLC_LOOAKNHDBLL = 1,
+    // @@protoc_insertion_point(enum_value:RogueTournLevelStatus.NHMPGNHBBLC_CCKPNCIBDGP)
+    NHMPGNHBBLC_CCKPNCIBDGP = 2,
+    // @@protoc_insertion_point(enum_value:RogueTournLevelStatus.NHMPGNHBBLC_JKNPMIMBGML)
+    NHMPGNHBBLC_JKNPMIMBGML = 3,
 }
 
 impl ::protobuf::Enum for RogueTournLevelStatus {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for RogueTournLevelStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<RogueTournLevelStatus> {
         match value {
-            0 => ::std::option::Option::Some(RogueTournLevelStatus::JPPIEKOBPII_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(RogueTournLevelStatus::JPPIEKOBPII_HPJEBFFHJNP),
-            2 => ::std::option::Option::Some(RogueTournLevelStatus::JPPIEKOBPII_POOLAGHGCMG),
-            3 => ::std::option::Option::Some(RogueTournLevelStatus::JPPIEKOBPII_EMEDNPCCNDH),
+            0 => ::std::option::Option::Some(RogueTournLevelStatus::NHMPGNHBBLC_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(RogueTournLevelStatus::NHMPGNHBBLC_LOOAKNHDBLL),
+            2 => ::std::option::Option::Some(RogueTournLevelStatus::NHMPGNHBBLC_CCKPNCIBDGP),
+            3 => ::std::option::Option::Some(RogueTournLevelStatus::NHMPGNHBBLC_JKNPMIMBGML),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<RogueTournLevelStatus> {
         match str {
-            "JPPIEKOBPII_PCPDHELPKEM" => ::std::option::Option::Some(RogueTournLevelStatus::JPPIEKOBPII_PCPDHELPKEM),
-            "JPPIEKOBPII_HPJEBFFHJNP" => ::std::option::Option::Some(RogueTournLevelStatus::JPPIEKOBPII_HPJEBFFHJNP),
-            "JPPIEKOBPII_POOLAGHGCMG" => ::std::option::Option::Some(RogueTournLevelStatus::JPPIEKOBPII_POOLAGHGCMG),
-            "JPPIEKOBPII_EMEDNPCCNDH" => ::std::option::Option::Some(RogueTournLevelStatus::JPPIEKOBPII_EMEDNPCCNDH),
+            "NHMPGNHBBLC_NLCDGIPGFDJ" => ::std::option::Option::Some(RogueTournLevelStatus::NHMPGNHBBLC_NLCDGIPGFDJ),
+            "NHMPGNHBBLC_LOOAKNHDBLL" => ::std::option::Option::Some(RogueTournLevelStatus::NHMPGNHBBLC_LOOAKNHDBLL),
+            "NHMPGNHBBLC_CCKPNCIBDGP" => ::std::option::Option::Some(RogueTournLevelStatus::NHMPGNHBBLC_CCKPNCIBDGP),
+            "NHMPGNHBBLC_JKNPMIMBGML" => ::std::option::Option::Some(RogueTournLevelStatus::NHMPGNHBBLC_JKNPMIMBGML),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [RogueTournLevelStatus] = &[
-        RogueTournLevelStatus::JPPIEKOBPII_PCPDHELPKEM,
-        RogueTournLevelStatus::JPPIEKOBPII_HPJEBFFHJNP,
-        RogueTournLevelStatus::JPPIEKOBPII_POOLAGHGCMG,
-        RogueTournLevelStatus::JPPIEKOBPII_EMEDNPCCNDH,
+        RogueTournLevelStatus::NHMPGNHBBLC_NLCDGIPGFDJ,
+        RogueTournLevelStatus::NHMPGNHBBLC_LOOAKNHDBLL,
+        RogueTournLevelStatus::NHMPGNHBBLC_CCKPNCIBDGP,
+        RogueTournLevelStatus::NHMPGNHBBLC_JKNPMIMBGML,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for RogueTournLevelStatus {
 
 impl ::std::default::Default for RogueTournLevelStatus {
     fn default() -> Self {
-        RogueTournLevelStatus::JPPIEKOBPII_PCPDHELPKEM
+        RogueTournLevelStatus::NHMPGNHBBLC_NLCDGIPGFDJ
     }
 }
 
@@ -98,9 +98,9 @@ impl RogueTournLevelStatus {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bRogueTournLevelStatus.proto*\x8b\x01\n\x15RogueTournLevelStatus\
-    \x12\x1b\n\x17JPPIEKOBPII_PCPDHELPKEM\x10\0\x12\x1b\n\x17JPPIEKOBPII_HPJ\
-    EBFFHJNP\x10\x01\x12\x1b\n\x17JPPIEKOBPII_POOLAGHGCMG\x10\x02\x12\x1b\n\
-    \x17JPPIEKOBPII_EMEDNPCCNDH\x10\x03b\x06proto3\
+    \x12\x1b\n\x17NHMPGNHBBLC_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17NHMPGNHBBLC_LOO\
+    AKNHDBLL\x10\x01\x12\x1b\n\x17NHMPGNHBBLC_CCKPNCIBDGP\x10\x02\x12\x1b\n\
+    \x17NHMPGNHBBLC_JKNPMIMBGML\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

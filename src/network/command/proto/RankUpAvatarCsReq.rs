@@ -86,13 +86,13 @@ impl ::protobuf::Message for RankUpAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
                 },
-                16 => {
+                24 => {
                     self.avatar_id = is.read_uint32()?;
                 },
-                24 => {
+                48 => {
                     self.rank = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for RankUpAvatarCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.avatar_id);
         }
         if self.rank != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.rank);
+            my_size += ::protobuf::rt::uint32_size(6, self.rank);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for RankUpAvatarCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(2, self.avatar_id)?;
+            os.write_uint32(3, self.avatar_id)?;
         }
         if self.rank != 0 {
-            os.write_uint32(3, self.rank)?;
+            os.write_uint32(6, self.rank)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for RankUpAvatarCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17RankUpAvatarCsReq.proto\x1a\x12ItemCostData.proto\"p\n\x11RankUpAv\
-    atarCsReq\x12*\n\tcost_data\x18\x04\x20\x01(\x0b2\r.ItemCostDataR\x08cos\
-    tData\x12\x1b\n\tavatar_id\x18\x02\x20\x01(\rR\x08avatarId\x12\x12\n\x04\
-    rank\x18\x03\x20\x01(\rR\x04rankb\x06proto3\
+    atarCsReq\x12*\n\tcost_data\x18\x0c\x20\x01(\x0b2\r.ItemCostDataR\x08cos\
+    tData\x12\x1b\n\tavatar_id\x18\x03\x20\x01(\rR\x08avatarId\x12\x12\n\x04\
+    rank\x18\x06\x20\x01(\rR\x04rankb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

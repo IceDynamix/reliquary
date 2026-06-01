@@ -86,13 +86,13 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                74 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.friend_info)?;
                 },
-                120 => {
+                48 => {
                     self.uid = is.read_uint32()?;
                 },
-                16 => {
+                112 => {
                     self.is_accept = is.read_bool()?;
                 },
                 tag => {
@@ -112,7 +112,7 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.uid);
+            my_size += ::protobuf::rt::uint32_size(6, self.uid);
         }
         if self.is_accept != false {
             my_size += 1 + 1;
@@ -124,13 +124,13 @@ impl ::protobuf::Message for SyncHandleFriendScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.friend_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
         if self.uid != 0 {
-            os.write_uint32(15, self.uid)?;
+            os.write_uint32(6, self.uid)?;
         }
         if self.is_accept != false {
-            os.write_bool(2, self.is_accept)?;
+            os.write_bool(14, self.is_accept)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncHandleFriendScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eSyncHandleFriendScNotify.proto\x1a\x16FriendSimpleInfo.proto\"}\n\
-    \x18SyncHandleFriendScNotify\x122\n\x0bfriend_info\x18\x0c\x20\x01(\x0b2\
-    \x11.FriendSimpleInfoR\nfriendInfo\x12\x10\n\x03uid\x18\x0f\x20\x01(\rR\
-    \x03uid\x12\x1b\n\tis_accept\x18\x02\x20\x01(\x08R\x08isAcceptb\x06proto\
+    \x18SyncHandleFriendScNotify\x122\n\x0bfriend_info\x18\t\x20\x01(\x0b2\
+    \x11.FriendSimpleInfoR\nfriendInfo\x12\x10\n\x03uid\x18\x06\x20\x01(\rR\
+    \x03uid\x12\x1b\n\tis_accept\x18\x0e\x20\x01(\x08R\x08isAcceptb\x06proto\
     3\
 ";
 

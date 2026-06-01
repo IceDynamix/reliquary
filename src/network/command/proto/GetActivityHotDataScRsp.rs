@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GetActivityHotDataScRsp {
     // message fields
     // @@protoc_insertion_point(field:GetActivityHotDataScRsp.content_package_list)
-    pub content_package_list: ::std::vec::Vec<super::GFADBCMGFFF::GFADBCMGFFF>,
+    pub content_package_list: ::std::vec::Vec<super::EFGIHHJGCFA::EFGIHHJGCFA>,
     // @@protoc_insertion_point(field:GetActivityHotDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -82,7 +82,7 @@ impl ::protobuf::Message for GetActivityHotDataScRsp {
                 82 => {
                     self.content_package_list.push(is.read_message()?);
                 },
-                24 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for GetActivityHotDataScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -114,7 +114,7 @@ impl ::protobuf::Message for GetActivityHotDataScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetActivityHotDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1dGetActivityHotDataScRsp.proto\x1a\x11GFADBCMGFFF.proto\"s\n\x17Get\
+    \n\x1dGetActivityHotDataScRsp.proto\x1a\x11EFGIHHJGCFA.proto\"s\n\x17Get\
     ActivityHotDataScRsp\x12>\n\x14content_package_list\x18\n\x20\x03(\x0b2\
-    \x0c.GFADBCMGFFFR\x12contentPackageList\x12\x18\n\x07retcode\x18\x03\x20\
+    \x0c.EFGIHHJGCFAR\x12contentPackageList\x12\x18\n\x07retcode\x18\x0b\x20\
     \x01(\rR\x07retcodeb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GFADBCMGFFF::file_descriptor().clone());
+            deps.push(super::EFGIHHJGCFA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetActivityHotDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

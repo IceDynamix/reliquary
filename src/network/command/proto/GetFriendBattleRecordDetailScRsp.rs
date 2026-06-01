@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFriendBattleRecordDetailScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.uid)
-    pub uid: u32,
-    // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.BIKINNADKFK)
-    pub BIKINNADKFK: ::std::vec::Vec<super::FriendChallengeClearanceInfo::FriendChallengeClearanceInfo>,
-    // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.PAEEBAGOEDJ)
-    pub PAEEBAGOEDJ: ::std::vec::Vec<super::NCLCIIMIHDH::NCLCIIMIHDH>,
+    // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.HCIEFEHCENO)
+    pub HCIEFEHCENO: ::protobuf::MessageField<super::BGPIHMLLNGM::BGPIHMLLNGM>,
+    // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.EPNLMHPCDKL)
+    pub EPNLMHPCDKL: ::std::vec::Vec<super::FriendChallengeClearanceInfo::FriendChallengeClearanceInfo>,
+    // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.BAMDEHAICDA)
+    pub BAMDEHAICDA: ::protobuf::MessageField<super::HBJDMDKKMFI::HBJDMDKKMFI>,
+    // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.LGIBJLFBFCG)
+    pub LGIBJLFBFCG: ::std::vec::Vec<super::DBFHOCOBPMK::DBFHOCOBPMK>,
     // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.ENCPHHLDNLB)
-    pub ENCPHHLDNLB: ::protobuf::MessageField<super::PKECJPJCONJ::PKECJPJCONJ>,
-    // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.KIIONJBDKNJ)
-    pub KIIONJBDKNJ: ::protobuf::MessageField<super::HBNJABPHLML::HBNJABPHLML>,
+    // @@protoc_insertion_point(field:GetFriendBattleRecordDetailScRsp.uid)
+    pub uid: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetFriendBattleRecordDetailScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,35 +59,35 @@ impl GetFriendBattleRecordDetailScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &GetFriendBattleRecordDetailScRsp| { &m.uid },
-            |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.uid },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BGPIHMLLNGM::BGPIHMLLNGM>(
+            "HCIEFEHCENO",
+            |m: &GetFriendBattleRecordDetailScRsp| { &m.HCIEFEHCENO },
+            |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.HCIEFEHCENO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BIKINNADKFK",
-            |m: &GetFriendBattleRecordDetailScRsp| { &m.BIKINNADKFK },
-            |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.BIKINNADKFK },
+            "EPNLMHPCDKL",
+            |m: &GetFriendBattleRecordDetailScRsp| { &m.EPNLMHPCDKL },
+            |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.EPNLMHPCDKL },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HBJDMDKKMFI::HBJDMDKKMFI>(
+            "BAMDEHAICDA",
+            |m: &GetFriendBattleRecordDetailScRsp| { &m.BAMDEHAICDA },
+            |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.BAMDEHAICDA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PAEEBAGOEDJ",
-            |m: &GetFriendBattleRecordDetailScRsp| { &m.PAEEBAGOEDJ },
-            |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.PAEEBAGOEDJ },
+            "LGIBJLFBFCG",
+            |m: &GetFriendBattleRecordDetailScRsp| { &m.LGIBJLFBFCG },
+            |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.LGIBJLFBFCG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetFriendBattleRecordDetailScRsp| { &m.retcode },
             |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PKECJPJCONJ::PKECJPJCONJ>(
-            "ENCPHHLDNLB",
-            |m: &GetFriendBattleRecordDetailScRsp| { &m.ENCPHHLDNLB },
-            |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.ENCPHHLDNLB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HBNJABPHLML::HBNJABPHLML>(
-            "KIIONJBDKNJ",
-            |m: &GetFriendBattleRecordDetailScRsp| { &m.KIIONJBDKNJ },
-            |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.KIIONJBDKNJ },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &GetFriendBattleRecordDetailScRsp| { &m.uid },
+            |m: &mut GetFriendBattleRecordDetailScRsp| { &mut m.uid },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetFriendBattleRecordDetailScRsp>(
             "GetFriendBattleRecordDetailScRsp",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for GetFriendBattleRecordDetailScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.uid = is.read_uint32()?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HCIEFEHCENO)?;
                 },
-                98 => {
-                    self.BIKINNADKFK.push(is.read_message()?);
-                },
-                10 => {
-                    self.PAEEBAGOEDJ.push(is.read_message()?);
-                },
-                104 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                74 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ENCPHHLDNLB)?;
+                58 => {
+                    self.EPNLMHPCDKL.push(is.read_message()?);
                 },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KIIONJBDKNJ)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BAMDEHAICDA)?;
+                },
+                18 => {
+                    self.LGIBJLFBFCG.push(is.read_message()?);
+                },
+                112 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                88 => {
+                    self.uid = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,27 +137,27 @@ impl ::protobuf::Message for GetFriendBattleRecordDetailScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.uid);
+        if let Some(v) = self.HCIEFEHCENO.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.BIKINNADKFK {
+        for value in &self.EPNLMHPCDKL {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.PAEEBAGOEDJ {
+        if let Some(v) = self.BAMDEHAICDA.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        for value in &self.LGIBJLFBFCG {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        if let Some(v) = self.ENCPHHLDNLB.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if let Some(v) = self.KIIONJBDKNJ.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.uid);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -165,23 +165,23 @@ impl ::protobuf::Message for GetFriendBattleRecordDetailScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.uid != 0 {
-            os.write_uint32(15, self.uid)?;
+        if let Some(v) = self.HCIEFEHCENO.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
-        for v in &self.BIKINNADKFK {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        for v in &self.EPNLMHPCDKL {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
-        for v in &self.PAEEBAGOEDJ {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.BAMDEHAICDA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        }
+        for v in &self.LGIBJLFBFCG {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        if let Some(v) = self.ENCPHHLDNLB.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
-        }
-        if let Some(v) = self.KIIONJBDKNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        if self.uid != 0 {
+            os.write_uint32(11, self.uid)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -200,23 +200,23 @@ impl ::protobuf::Message for GetFriendBattleRecordDetailScRsp {
     }
 
     fn clear(&mut self) {
-        self.uid = 0;
-        self.BIKINNADKFK.clear();
-        self.PAEEBAGOEDJ.clear();
+        self.HCIEFEHCENO.clear();
+        self.EPNLMHPCDKL.clear();
+        self.BAMDEHAICDA.clear();
+        self.LGIBJLFBFCG.clear();
         self.retcode = 0;
-        self.ENCPHHLDNLB.clear();
-        self.KIIONJBDKNJ.clear();
+        self.uid = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFriendBattleRecordDetailScRsp {
         static instance: GetFriendBattleRecordDetailScRsp = GetFriendBattleRecordDetailScRsp {
-            uid: 0,
-            BIKINNADKFK: ::std::vec::Vec::new(),
-            PAEEBAGOEDJ: ::std::vec::Vec::new(),
+            HCIEFEHCENO: ::protobuf::MessageField::none(),
+            EPNLMHPCDKL: ::std::vec::Vec::new(),
+            BAMDEHAICDA: ::protobuf::MessageField::none(),
+            LGIBJLFBFCG: ::std::vec::Vec::new(),
             retcode: 0,
-            ENCPHHLDNLB: ::protobuf::MessageField::none(),
-            KIIONJBDKNJ: ::protobuf::MessageField::none(),
+            uid: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -241,15 +241,15 @@ impl ::protobuf::reflect::ProtobufValue for GetFriendBattleRecordDetailScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&GetFriendBattleRecordDetailScRsp.proto\x1a\"FriendChallengeClearanceI\
-    nfo.proto\x1a\x11HBNJABPHLML.proto\x1a\x11NCLCIIMIHDH.proto\x1a\x11PKECJ\
-    PJCONJ.proto\"\x9f\x02\n\x20GetFriendBattleRecordDetailScRsp\x12\x10\n\
-    \x03uid\x18\x0f\x20\x01(\rR\x03uid\x12?\n\x0bBIKINNADKFK\x18\x0c\x20\x03\
-    (\x0b2\x1d.FriendChallengeClearanceInfoR\x0bBIKINNADKFK\x12.\n\x0bPAEEBA\
-    GOEDJ\x18\x01\x20\x03(\x0b2\x0c.NCLCIIMIHDHR\x0bPAEEBAGOEDJ\x12\x18\n\
-    \x07retcode\x18\r\x20\x01(\rR\x07retcode\x12.\n\x0bENCPHHLDNLB\x18\t\x20\
-    \x01(\x0b2\x0c.PKECJPJCONJR\x0bENCPHHLDNLB\x12.\n\x0bKIIONJBDKNJ\x18\x06\
-    \x20\x01(\x0b2\x0c.HBNJABPHLMLR\x0bKIIONJBDKNJb\x06proto3\
+    \n&GetFriendBattleRecordDetailScRsp.proto\x1a\x11BGPIHMLLNGM.proto\x1a\
+    \x11DBFHOCOBPMK.proto\x1a\"FriendChallengeClearanceInfo.proto\x1a\x11HBJ\
+    DMDKKMFI.proto\"\x9f\x02\n\x20GetFriendBattleRecordDetailScRsp\x12.\n\
+    \x0bHCIEFEHCENO\x18\x04\x20\x01(\x0b2\x0c.BGPIHMLLNGMR\x0bHCIEFEHCENO\
+    \x12?\n\x0bEPNLMHPCDKL\x18\x07\x20\x03(\x0b2\x1d.FriendChallengeClearanc\
+    eInfoR\x0bEPNLMHPCDKL\x12.\n\x0bBAMDEHAICDA\x18\x06\x20\x01(\x0b2\x0c.HB\
+    JDMDKKMFIR\x0bBAMDEHAICDA\x12.\n\x0bLGIBJLFBFCG\x18\x02\x20\x03(\x0b2\
+    \x0c.DBFHOCOBPMKR\x0bLGIBJLFBFCG\x12\x18\n\x07retcode\x18\x0e\x20\x01(\r\
+    R\x07retcode\x12\x10\n\x03uid\x18\x0b\x20\x01(\rR\x03uidb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -267,10 +267,10 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(4);
+            deps.push(super::BGPIHMLLNGM::file_descriptor().clone());
+            deps.push(super::DBFHOCOBPMK::file_descriptor().clone());
             deps.push(super::FriendChallengeClearanceInfo::file_descriptor().clone());
-            deps.push(super::HBNJABPHLML::file_descriptor().clone());
-            deps.push(super::NCLCIIMIHDH::file_descriptor().clone());
-            deps.push(super::PKECJPJCONJ::file_descriptor().clone());
+            deps.push(super::HBJDMDKKMFI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFriendBattleRecordDetailScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

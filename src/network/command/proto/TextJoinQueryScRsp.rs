@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TextJoinQueryScRsp {
     // message fields
-    // @@protoc_insertion_point(field:TextJoinQueryScRsp.text_join_list)
-    pub text_join_list: ::std::vec::Vec<super::CEDGNIIEIMC::CEDGNIIEIMC>,
+    // @@protoc_insertion_point(field:TextJoinQueryScRsp.HPEDOFFJKKP)
+    pub HPEDOFFJKKP: ::std::vec::Vec<super::JCDNAGMDELF::JCDNAGMDELF>,
     // @@protoc_insertion_point(field:TextJoinQueryScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl TextJoinQueryScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "text_join_list",
-            |m: &TextJoinQueryScRsp| { &m.text_join_list },
-            |m: &mut TextJoinQueryScRsp| { &mut m.text_join_list },
+            "HPEDOFFJKKP",
+            |m: &TextJoinQueryScRsp| { &m.HPEDOFFJKKP },
+            |m: &mut TextJoinQueryScRsp| { &mut m.HPEDOFFJKKP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,9 +80,9 @@ impl ::protobuf::Message for TextJoinQueryScRsp {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 66 => {
-                    self.text_join_list.push(is.read_message()?);
+                    self.HPEDOFFJKKP.push(is.read_message()?);
                 },
-                56 => {
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for TextJoinQueryScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.text_join_list {
+        for value in &self.HPEDOFFJKKP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for TextJoinQueryScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.text_join_list {
+        for v in &self.HPEDOFFJKKP {
             ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for TextJoinQueryScRsp {
     }
 
     fn clear(&mut self) {
-        self.text_join_list.clear();
+        self.HPEDOFFJKKP.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TextJoinQueryScRsp {
         static instance: TextJoinQueryScRsp = TextJoinQueryScRsp {
-            text_join_list: ::std::vec::Vec::new(),
+            HPEDOFFJKKP: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for TextJoinQueryScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18TextJoinQueryScRsp.proto\x1a\x11CEDGNIIEIMC.proto\"b\n\x12TextJoin\
-    QueryScRsp\x122\n\x0etext_join_list\x18\x08\x20\x03(\x0b2\x0c.CEDGNIIEIM\
-    CR\x0ctextJoinList\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcodeb\
-    \x06proto3\
+    \n\x18TextJoinQueryScRsp.proto\x1a\x11JCDNAGMDELF.proto\"^\n\x12TextJoin\
+    QueryScRsp\x12.\n\x0bHPEDOFFJKKP\x18\x08\x20\x03(\x0b2\x0c.JCDNAGMDELFR\
+    \x0bHPEDOFFJKKP\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06\
+    proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CEDGNIIEIMC::file_descriptor().clone());
+            deps.push(super::JCDNAGMDELF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TextJoinQueryScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

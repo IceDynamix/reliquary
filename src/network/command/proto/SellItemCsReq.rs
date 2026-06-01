@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SellItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SellItemCsReq.BCNDJOPNJPC)
-    pub BCNDJOPNJPC: bool,
     // @@protoc_insertion_point(field:SellItemCsReq.cost_data)
     pub cost_data: ::protobuf::MessageField<super::ItemCostData::ItemCostData>,
+    // @@protoc_insertion_point(field:SellItemCsReq.HNLKAEBKKBL)
+    pub HNLKAEBKKBL: bool,
     // special fields
     // @@protoc_insertion_point(special_field:SellItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl SellItemCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BCNDJOPNJPC",
-            |m: &SellItemCsReq| { &m.BCNDJOPNJPC },
-            |m: &mut SellItemCsReq| { &mut m.BCNDJOPNJPC },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemCostData::ItemCostData>(
             "cost_data",
             |m: &SellItemCsReq| { &m.cost_data },
             |m: &mut SellItemCsReq| { &mut m.cost_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HNLKAEBKKBL",
+            |m: &SellItemCsReq| { &m.HNLKAEBKKBL },
+            |m: &mut SellItemCsReq| { &mut m.HNLKAEBKKBL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SellItemCsReq>(
             "SellItemCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for SellItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.BCNDJOPNJPC = is.read_bool()?;
-                },
-                114 => {
+                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.cost_data)?;
+                },
+                88 => {
+                    self.HNLKAEBKKBL = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for SellItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BCNDJOPNJPC != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.cost_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.HNLKAEBKKBL != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for SellItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BCNDJOPNJPC != false {
-            os.write_bool(10, self.BCNDJOPNJPC)?;
-        }
         if let Some(v) = self.cost_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        }
+        if self.HNLKAEBKKBL != false {
+            os.write_bool(11, self.HNLKAEBKKBL)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for SellItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.BCNDJOPNJPC = false;
         self.cost_data.clear();
+        self.HNLKAEBKKBL = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SellItemCsReq {
         static instance: SellItemCsReq = SellItemCsReq {
-            BCNDJOPNJPC: false,
             cost_data: ::protobuf::MessageField::none(),
+            HNLKAEBKKBL: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,8 +167,8 @@ impl ::protobuf::reflect::ProtobufValue for SellItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x13SellItemCsReq.proto\x1a\x12ItemCostData.proto\"]\n\rSellItemCsReq\
-    \x12\x20\n\x0bBCNDJOPNJPC\x18\n\x20\x01(\x08R\x0bBCNDJOPNJPC\x12*\n\tcos\
-    t_data\x18\x0e\x20\x01(\x0b2\r.ItemCostDataR\x08costDatab\x06proto3\
+    \x12*\n\tcost_data\x18\x05\x20\x01(\x0b2\r.ItemCostDataR\x08costData\x12\
+    \x20\n\x0bHNLKAEBKKBL\x18\x0b\x20\x01(\x08R\x0bHNLKAEBKKBLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

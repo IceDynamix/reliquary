@@ -82,7 +82,7 @@ impl ::protobuf::Message for ServerPrefs {
                 82 => {
                     self.data = is.read_string()?;
                 },
-                64 => {
+                40 => {
                     self.server_prefs_id = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for ServerPrefs {
             my_size += ::protobuf::rt::string_size(10, &self.data);
         }
         if self.server_prefs_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.server_prefs_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.server_prefs_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for ServerPrefs {
             os.write_string(10, &self.data)?;
         }
         if self.server_prefs_id != 0 {
-            os.write_uint32(8, self.server_prefs_id)?;
+            os.write_uint32(5, self.server_prefs_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for ServerPrefs {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x11ServerPrefs.proto\"I\n\x0bServerPrefs\x12\x12\n\x04data\x18\n\x20\
-    \x01(\tR\x04data\x12&\n\x0fserver_prefs_id\x18\x08\x20\x01(\rR\rserverPr\
+    \x01(\tR\x04data\x12&\n\x0fserver_prefs_id\x18\x05\x20\x01(\rR\rserverPr\
     efsIdb\x06proto3\
 ";
 

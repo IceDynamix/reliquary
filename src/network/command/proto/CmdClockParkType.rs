@@ -27,40 +27,40 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdClockParkType)
 pub enum CmdClockParkType {
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.EKDEGMMHODO_PCPDHELPKEM)
-    EKDEGMMHODO_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkHandleWaitOperationScRsp)
-    CmdClockParkHandleWaitOperationScRsp = 7244,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdBEDFGPIFGED)
-    CmdBEDFGPIFGED = 7250,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkFinishScriptScNotify)
-    CmdClockParkFinishScriptScNotify = 7249,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkGetInfoCsReq)
-    CmdClockParkGetInfoCsReq = 7213,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkGetOngoingScriptInfoCsReq)
-    CmdClockParkGetOngoingScriptInfoCsReq = 7247,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkUnlockTalentCsReq)
-    CmdClockParkUnlockTalentCsReq = 7235,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdNAJGIPIGCDH)
-    CmdNAJGIPIGCDH = 7221,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkStartScriptScRsp)
-    CmdClockParkStartScriptScRsp = 7201,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkUnlockTalentScRsp)
-    CmdClockParkUnlockTalentScRsp = 7238,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkQuitScriptCsReq)
-    CmdClockParkQuitScriptCsReq = 7218,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkHandleWaitPlaceDiceOperationCsReq)
-    CmdClockParkHandleWaitPlaceDiceOperationCsReq = 7202,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkGetInfoScRsp)
-    CmdClockParkGetInfoScRsp = 7207,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkStartScriptCsReq)
-    CmdClockParkStartScriptCsReq = 7205,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkGetOngoingScriptInfoScRsp)
-    CmdClockParkGetOngoingScriptInfoScRsp = 7219,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdAPBJOBNPBAN)
-    CmdAPBJOBNPBAN = 7245,
-    // @@protoc_insertion_point(enum_value:CmdClockParkType.CmdClockParkUseBuffCsReq)
-    CmdClockParkUseBuffCsReq = 7231,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_NLCDGIPGFDJ)
+    GFGOAJBEDFI_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_PKEJFOABIAJ)
+    GFGOAJBEDFI_PKEJFOABIAJ = 7221,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_JHAGPKMNFDM)
+    GFGOAJBEDFI_JHAGPKMNFDM = 7206,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_KBGOAJMIPEM)
+    GFGOAJBEDFI_KBGOAJMIPEM = 7203,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_JBMFMMDAGFC)
+    GFGOAJBEDFI_JBMFMMDAGFC = 7229,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_ANPBFBHIOHP)
+    GFGOAJBEDFI_ANPBFBHIOHP = 7212,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_PEKHIMIDGHC)
+    GFGOAJBEDFI_PEKHIMIDGHC = 7232,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_AIJFMFPCEBC)
+    GFGOAJBEDFI_AIJFMFPCEBC = 7243,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_OCPBPLEDJHC)
+    GFGOAJBEDFI_OCPBPLEDJHC = 7234,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_LHKAECJBBOA)
+    GFGOAJBEDFI_LHKAECJBBOA = 7227,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_KMFFIKDAFPB)
+    GFGOAJBEDFI_KMFFIKDAFPB = 7244,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_ELJOBIFOHLL)
+    GFGOAJBEDFI_ELJOBIFOHLL = 7242,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_AACKJFICGPM)
+    GFGOAJBEDFI_AACKJFICGPM = 7240,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_HKDKPALAJJA)
+    GFGOAJBEDFI_HKDKPALAJJA = 7220,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_IHJAOBAACLB)
+    GFGOAJBEDFI_IHJAOBAACLB = 7219,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_OLEAKJNJDDC)
+    GFGOAJBEDFI_OLEAKJNJDDC = 7209,
+    // @@protoc_insertion_point(enum_value:CmdClockParkType.GFGOAJBEDFI_AEHGAMKDECH)
+    GFGOAJBEDFI_AEHGAMKDECH = 7245,
 }
 
 impl ::protobuf::Enum for CmdClockParkType {
@@ -72,68 +72,68 @@ impl ::protobuf::Enum for CmdClockParkType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdClockParkType> {
         match value {
-            0 => ::std::option::Option::Some(CmdClockParkType::EKDEGMMHODO_PCPDHELPKEM),
-            7244 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkHandleWaitOperationScRsp),
-            7250 => ::std::option::Option::Some(CmdClockParkType::CmdBEDFGPIFGED),
-            7249 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkFinishScriptScNotify),
-            7213 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetInfoCsReq),
-            7247 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetOngoingScriptInfoCsReq),
-            7235 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUnlockTalentCsReq),
-            7221 => ::std::option::Option::Some(CmdClockParkType::CmdNAJGIPIGCDH),
-            7201 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkStartScriptScRsp),
-            7238 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUnlockTalentScRsp),
-            7218 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkQuitScriptCsReq),
-            7202 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkHandleWaitPlaceDiceOperationCsReq),
-            7207 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetInfoScRsp),
-            7205 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkStartScriptCsReq),
-            7219 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetOngoingScriptInfoScRsp),
-            7245 => ::std::option::Option::Some(CmdClockParkType::CmdAPBJOBNPBAN),
-            7231 => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUseBuffCsReq),
+            0 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_NLCDGIPGFDJ),
+            7221 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_PKEJFOABIAJ),
+            7206 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_JHAGPKMNFDM),
+            7203 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_KBGOAJMIPEM),
+            7229 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_JBMFMMDAGFC),
+            7212 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_ANPBFBHIOHP),
+            7232 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_PEKHIMIDGHC),
+            7243 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_AIJFMFPCEBC),
+            7234 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_OCPBPLEDJHC),
+            7227 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_LHKAECJBBOA),
+            7244 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_KMFFIKDAFPB),
+            7242 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_ELJOBIFOHLL),
+            7240 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_AACKJFICGPM),
+            7220 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_HKDKPALAJJA),
+            7219 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_IHJAOBAACLB),
+            7209 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_OLEAKJNJDDC),
+            7245 => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_AEHGAMKDECH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdClockParkType> {
         match str {
-            "EKDEGMMHODO_PCPDHELPKEM" => ::std::option::Option::Some(CmdClockParkType::EKDEGMMHODO_PCPDHELPKEM),
-            "CmdClockParkHandleWaitOperationScRsp" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkHandleWaitOperationScRsp),
-            "CmdBEDFGPIFGED" => ::std::option::Option::Some(CmdClockParkType::CmdBEDFGPIFGED),
-            "CmdClockParkFinishScriptScNotify" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkFinishScriptScNotify),
-            "CmdClockParkGetInfoCsReq" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetInfoCsReq),
-            "CmdClockParkGetOngoingScriptInfoCsReq" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetOngoingScriptInfoCsReq),
-            "CmdClockParkUnlockTalentCsReq" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUnlockTalentCsReq),
-            "CmdNAJGIPIGCDH" => ::std::option::Option::Some(CmdClockParkType::CmdNAJGIPIGCDH),
-            "CmdClockParkStartScriptScRsp" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkStartScriptScRsp),
-            "CmdClockParkUnlockTalentScRsp" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUnlockTalentScRsp),
-            "CmdClockParkQuitScriptCsReq" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkQuitScriptCsReq),
-            "CmdClockParkHandleWaitPlaceDiceOperationCsReq" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkHandleWaitPlaceDiceOperationCsReq),
-            "CmdClockParkGetInfoScRsp" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetInfoScRsp),
-            "CmdClockParkStartScriptCsReq" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkStartScriptCsReq),
-            "CmdClockParkGetOngoingScriptInfoScRsp" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkGetOngoingScriptInfoScRsp),
-            "CmdAPBJOBNPBAN" => ::std::option::Option::Some(CmdClockParkType::CmdAPBJOBNPBAN),
-            "CmdClockParkUseBuffCsReq" => ::std::option::Option::Some(CmdClockParkType::CmdClockParkUseBuffCsReq),
+            "GFGOAJBEDFI_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_NLCDGIPGFDJ),
+            "GFGOAJBEDFI_PKEJFOABIAJ" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_PKEJFOABIAJ),
+            "GFGOAJBEDFI_JHAGPKMNFDM" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_JHAGPKMNFDM),
+            "GFGOAJBEDFI_KBGOAJMIPEM" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_KBGOAJMIPEM),
+            "GFGOAJBEDFI_JBMFMMDAGFC" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_JBMFMMDAGFC),
+            "GFGOAJBEDFI_ANPBFBHIOHP" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_ANPBFBHIOHP),
+            "GFGOAJBEDFI_PEKHIMIDGHC" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_PEKHIMIDGHC),
+            "GFGOAJBEDFI_AIJFMFPCEBC" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_AIJFMFPCEBC),
+            "GFGOAJBEDFI_OCPBPLEDJHC" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_OCPBPLEDJHC),
+            "GFGOAJBEDFI_LHKAECJBBOA" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_LHKAECJBBOA),
+            "GFGOAJBEDFI_KMFFIKDAFPB" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_KMFFIKDAFPB),
+            "GFGOAJBEDFI_ELJOBIFOHLL" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_ELJOBIFOHLL),
+            "GFGOAJBEDFI_AACKJFICGPM" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_AACKJFICGPM),
+            "GFGOAJBEDFI_HKDKPALAJJA" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_HKDKPALAJJA),
+            "GFGOAJBEDFI_IHJAOBAACLB" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_IHJAOBAACLB),
+            "GFGOAJBEDFI_OLEAKJNJDDC" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_OLEAKJNJDDC),
+            "GFGOAJBEDFI_AEHGAMKDECH" => ::std::option::Option::Some(CmdClockParkType::GFGOAJBEDFI_AEHGAMKDECH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdClockParkType] = &[
-        CmdClockParkType::EKDEGMMHODO_PCPDHELPKEM,
-        CmdClockParkType::CmdClockParkHandleWaitOperationScRsp,
-        CmdClockParkType::CmdBEDFGPIFGED,
-        CmdClockParkType::CmdClockParkFinishScriptScNotify,
-        CmdClockParkType::CmdClockParkGetInfoCsReq,
-        CmdClockParkType::CmdClockParkGetOngoingScriptInfoCsReq,
-        CmdClockParkType::CmdClockParkUnlockTalentCsReq,
-        CmdClockParkType::CmdNAJGIPIGCDH,
-        CmdClockParkType::CmdClockParkStartScriptScRsp,
-        CmdClockParkType::CmdClockParkUnlockTalentScRsp,
-        CmdClockParkType::CmdClockParkQuitScriptCsReq,
-        CmdClockParkType::CmdClockParkHandleWaitPlaceDiceOperationCsReq,
-        CmdClockParkType::CmdClockParkGetInfoScRsp,
-        CmdClockParkType::CmdClockParkStartScriptCsReq,
-        CmdClockParkType::CmdClockParkGetOngoingScriptInfoScRsp,
-        CmdClockParkType::CmdAPBJOBNPBAN,
-        CmdClockParkType::CmdClockParkUseBuffCsReq,
+        CmdClockParkType::GFGOAJBEDFI_NLCDGIPGFDJ,
+        CmdClockParkType::GFGOAJBEDFI_PKEJFOABIAJ,
+        CmdClockParkType::GFGOAJBEDFI_JHAGPKMNFDM,
+        CmdClockParkType::GFGOAJBEDFI_KBGOAJMIPEM,
+        CmdClockParkType::GFGOAJBEDFI_JBMFMMDAGFC,
+        CmdClockParkType::GFGOAJBEDFI_ANPBFBHIOHP,
+        CmdClockParkType::GFGOAJBEDFI_PEKHIMIDGHC,
+        CmdClockParkType::GFGOAJBEDFI_AIJFMFPCEBC,
+        CmdClockParkType::GFGOAJBEDFI_OCPBPLEDJHC,
+        CmdClockParkType::GFGOAJBEDFI_LHKAECJBBOA,
+        CmdClockParkType::GFGOAJBEDFI_KMFFIKDAFPB,
+        CmdClockParkType::GFGOAJBEDFI_ELJOBIFOHLL,
+        CmdClockParkType::GFGOAJBEDFI_AACKJFICGPM,
+        CmdClockParkType::GFGOAJBEDFI_HKDKPALAJJA,
+        CmdClockParkType::GFGOAJBEDFI_IHJAOBAACLB,
+        CmdClockParkType::GFGOAJBEDFI_OLEAKJNJDDC,
+        CmdClockParkType::GFGOAJBEDFI_AEHGAMKDECH,
     ];
 }
 
@@ -145,23 +145,23 @@ impl ::protobuf::EnumFull for CmdClockParkType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdClockParkType::EKDEGMMHODO_PCPDHELPKEM => 0,
-            CmdClockParkType::CmdClockParkHandleWaitOperationScRsp => 1,
-            CmdClockParkType::CmdBEDFGPIFGED => 2,
-            CmdClockParkType::CmdClockParkFinishScriptScNotify => 3,
-            CmdClockParkType::CmdClockParkGetInfoCsReq => 4,
-            CmdClockParkType::CmdClockParkGetOngoingScriptInfoCsReq => 5,
-            CmdClockParkType::CmdClockParkUnlockTalentCsReq => 6,
-            CmdClockParkType::CmdNAJGIPIGCDH => 7,
-            CmdClockParkType::CmdClockParkStartScriptScRsp => 8,
-            CmdClockParkType::CmdClockParkUnlockTalentScRsp => 9,
-            CmdClockParkType::CmdClockParkQuitScriptCsReq => 10,
-            CmdClockParkType::CmdClockParkHandleWaitPlaceDiceOperationCsReq => 11,
-            CmdClockParkType::CmdClockParkGetInfoScRsp => 12,
-            CmdClockParkType::CmdClockParkStartScriptCsReq => 13,
-            CmdClockParkType::CmdClockParkGetOngoingScriptInfoScRsp => 14,
-            CmdClockParkType::CmdAPBJOBNPBAN => 15,
-            CmdClockParkType::CmdClockParkUseBuffCsReq => 16,
+            CmdClockParkType::GFGOAJBEDFI_NLCDGIPGFDJ => 0,
+            CmdClockParkType::GFGOAJBEDFI_PKEJFOABIAJ => 1,
+            CmdClockParkType::GFGOAJBEDFI_JHAGPKMNFDM => 2,
+            CmdClockParkType::GFGOAJBEDFI_KBGOAJMIPEM => 3,
+            CmdClockParkType::GFGOAJBEDFI_JBMFMMDAGFC => 4,
+            CmdClockParkType::GFGOAJBEDFI_ANPBFBHIOHP => 5,
+            CmdClockParkType::GFGOAJBEDFI_PEKHIMIDGHC => 6,
+            CmdClockParkType::GFGOAJBEDFI_AIJFMFPCEBC => 7,
+            CmdClockParkType::GFGOAJBEDFI_OCPBPLEDJHC => 8,
+            CmdClockParkType::GFGOAJBEDFI_LHKAECJBBOA => 9,
+            CmdClockParkType::GFGOAJBEDFI_KMFFIKDAFPB => 10,
+            CmdClockParkType::GFGOAJBEDFI_ELJOBIFOHLL => 11,
+            CmdClockParkType::GFGOAJBEDFI_AACKJFICGPM => 12,
+            CmdClockParkType::GFGOAJBEDFI_HKDKPALAJJA => 13,
+            CmdClockParkType::GFGOAJBEDFI_IHJAOBAACLB => 14,
+            CmdClockParkType::GFGOAJBEDFI_OLEAKJNJDDC => 15,
+            CmdClockParkType::GFGOAJBEDFI_AEHGAMKDECH => 16,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -169,7 +169,7 @@ impl ::protobuf::EnumFull for CmdClockParkType {
 
 impl ::std::default::Default for CmdClockParkType {
     fn default() -> Self {
-        CmdClockParkType::EKDEGMMHODO_PCPDHELPKEM
+        CmdClockParkType::GFGOAJBEDFI_NLCDGIPGFDJ
     }
 }
 
@@ -180,19 +180,18 @@ impl CmdClockParkType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdClockParkType.proto*\xd9\x04\n\x10CmdClockParkType\x12\x1b\n\
-    \x17EKDEGMMHODO_PCPDHELPKEM\x10\0\x12)\n$CmdClockParkHandleWaitOperation\
-    ScRsp\x10\xcc8\x12\x13\n\x0eCmdBEDFGPIFGED\x10\xd28\x12%\n\x20CmdClockPa\
-    rkFinishScriptScNotify\x10\xd18\x12\x1d\n\x18CmdClockParkGetInfoCsReq\
-    \x10\xad8\x12*\n%CmdClockParkGetOngoingScriptInfoCsReq\x10\xcf8\x12\"\n\
-    \x1dCmdClockParkUnlockTalentCsReq\x10\xc38\x12\x13\n\x0eCmdNAJGIPIGCDH\
-    \x10\xb58\x12!\n\x1cCmdClockParkStartScriptScRsp\x10\xa18\x12\"\n\x1dCmd\
-    ClockParkUnlockTalentScRsp\x10\xc68\x12\x20\n\x1bCmdClockParkQuitScriptC\
-    sReq\x10\xb28\x122\n-CmdClockParkHandleWaitPlaceDiceOperationCsReq\x10\
-    \xa28\x12\x1d\n\x18CmdClockParkGetInfoScRsp\x10\xa78\x12!\n\x1cCmdClockP\
-    arkStartScriptCsReq\x10\xa58\x12*\n%CmdClockParkGetOngoingScriptInfoScRs\
-    p\x10\xb38\x12\x13\n\x0eCmdAPBJOBNPBAN\x10\xcd8\x12\x1d\n\x18CmdClockPar\
-    kUseBuffCsReq\x10\xbf8b\x06proto3\
+    \n\x16CmdClockParkType.proto*\x8f\x04\n\x10CmdClockParkType\x12\x1b\n\
+    \x17GFGOAJBEDFI_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GFGOAJBEDFI_PKEJFOABIAJ\
+    \x10\xb58\x12\x1c\n\x17GFGOAJBEDFI_JHAGPKMNFDM\x10\xa68\x12\x1c\n\x17GFG\
+    OAJBEDFI_KBGOAJMIPEM\x10\xa38\x12\x1c\n\x17GFGOAJBEDFI_JBMFMMDAGFC\x10\
+    \xbd8\x12\x1c\n\x17GFGOAJBEDFI_ANPBFBHIOHP\x10\xac8\x12\x1c\n\x17GFGOAJB\
+    EDFI_PEKHIMIDGHC\x10\xc08\x12\x1c\n\x17GFGOAJBEDFI_AIJFMFPCEBC\x10\xcb8\
+    \x12\x1c\n\x17GFGOAJBEDFI_OCPBPLEDJHC\x10\xc28\x12\x1c\n\x17GFGOAJBEDFI_\
+    LHKAECJBBOA\x10\xbb8\x12\x1c\n\x17GFGOAJBEDFI_KMFFIKDAFPB\x10\xcc8\x12\
+    \x1c\n\x17GFGOAJBEDFI_ELJOBIFOHLL\x10\xca8\x12\x1c\n\x17GFGOAJBEDFI_AACK\
+    JFICGPM\x10\xc88\x12\x1c\n\x17GFGOAJBEDFI_HKDKPALAJJA\x10\xb48\x12\x1c\n\
+    \x17GFGOAJBEDFI_IHJAOBAACLB\x10\xb38\x12\x1c\n\x17GFGOAJBEDFI_OLEAKJNJDD\
+    C\x10\xa98\x12\x1c\n\x17GFGOAJBEDFI_AEHGAMKDECH\x10\xcd8b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

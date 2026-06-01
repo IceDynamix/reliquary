@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournClearArchiveNameScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueTournClearArchiveNameScNotify.KKGIEENCOIC)
-    pub KKGIEENCOIC: u32,
+    // @@protoc_insertion_point(field:RogueTournClearArchiveNameScNotify.NPHAJEKCBKF)
+    pub NPHAJEKCBKF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournClearArchiveNameScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueTournClearArchiveNameScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KKGIEENCOIC",
-            |m: &RogueTournClearArchiveNameScNotify| { &m.KKGIEENCOIC },
-            |m: &mut RogueTournClearArchiveNameScNotify| { &mut m.KKGIEENCOIC },
+            "NPHAJEKCBKF",
+            |m: &RogueTournClearArchiveNameScNotify| { &m.NPHAJEKCBKF },
+            |m: &mut RogueTournClearArchiveNameScNotify| { &mut m.NPHAJEKCBKF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournClearArchiveNameScNotify>(
             "RogueTournClearArchiveNameScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueTournClearArchiveNameScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.KKGIEENCOIC = is.read_uint32()?;
+                48 => {
+                    self.NPHAJEKCBKF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for RogueTournClearArchiveNameScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KKGIEENCOIC != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.KKGIEENCOIC);
+        if self.NPHAJEKCBKF != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.NPHAJEKCBKF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for RogueTournClearArchiveNameScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KKGIEENCOIC != 0 {
-            os.write_uint32(14, self.KKGIEENCOIC)?;
+        if self.NPHAJEKCBKF != 0 {
+            os.write_uint32(6, self.NPHAJEKCBKF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for RogueTournClearArchiveNameScNotify {
     }
 
     fn clear(&mut self) {
-        self.KKGIEENCOIC = 0;
+        self.NPHAJEKCBKF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournClearArchiveNameScNotify {
         static instance: RogueTournClearArchiveNameScNotify = RogueTournClearArchiveNameScNotify {
-            KKGIEENCOIC: 0,
+            NPHAJEKCBKF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournClearArchiveNameScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(RogueTournClearArchiveNameScNotify.proto\"F\n\"RogueTournClearArchive\
-    NameScNotify\x12\x20\n\x0bKKGIEENCOIC\x18\x0e\x20\x01(\rR\x0bKKGIEENCOIC\
+    NameScNotify\x12\x20\n\x0bNPHAJEKCBKF\x18\x06\x20\x01(\rR\x0bNPHAJEKCBKF\
     b\x06proto3\
 ";
 

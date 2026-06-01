@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueTournResetPermanentTalentScRsp {
     // message fields
+    // @@protoc_insertion_point(field:RogueTournResetPermanentTalentScRsp.DPABCOHLPLH)
+    pub DPABCOHLPLH: ::protobuf::MessageField<super::MDLPIFCHFPJ::MDLPIFCHFPJ>,
     // @@protoc_insertion_point(field:RogueTournResetPermanentTalentScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueTournResetPermanentTalentScRsp.FMKEFGJMCHA)
-    pub FMKEFGJMCHA: ::protobuf::MessageField<super::ECJNAIOLKJD::ECJNAIOLKJD>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueTournResetPermanentTalentScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueTournResetPermanentTalentScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MDLPIFCHFPJ::MDLPIFCHFPJ>(
+            "DPABCOHLPLH",
+            |m: &RogueTournResetPermanentTalentScRsp| { &m.DPABCOHLPLH },
+            |m: &mut RogueTournResetPermanentTalentScRsp| { &mut m.DPABCOHLPLH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueTournResetPermanentTalentScRsp| { &m.retcode },
             |m: &mut RogueTournResetPermanentTalentScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ECJNAIOLKJD::ECJNAIOLKJD>(
-            "FMKEFGJMCHA",
-            |m: &RogueTournResetPermanentTalentScRsp| { &m.FMKEFGJMCHA },
-            |m: &mut RogueTournResetPermanentTalentScRsp| { &mut m.FMKEFGJMCHA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueTournResetPermanentTalentScRsp>(
             "RogueTournResetPermanentTalentScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueTournResetPermanentTalentScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DPABCOHLPLH)?;
+                },
                 40 => {
                     self.retcode = is.read_uint32()?;
-                },
-                50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FMKEFGJMCHA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueTournResetPermanentTalentScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
-        }
-        if let Some(v) = self.FMKEFGJMCHA.as_ref() {
+        if let Some(v) = self.DPABCOHLPLH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueTournResetPermanentTalentScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        if let Some(v) = self.DPABCOHLPLH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
         if self.retcode != 0 {
             os.write_uint32(5, self.retcode)?;
-        }
-        if let Some(v) = self.FMKEFGJMCHA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueTournResetPermanentTalentScRsp {
     }
 
     fn clear(&mut self) {
+        self.DPABCOHLPLH.clear();
         self.retcode = 0;
-        self.FMKEFGJMCHA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueTournResetPermanentTalentScRsp {
         static instance: RogueTournResetPermanentTalentScRsp = RogueTournResetPermanentTalentScRsp {
+            DPABCOHLPLH: ::protobuf::MessageField::none(),
             retcode: 0,
-            FMKEFGJMCHA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournResetPermanentTalentScRsp 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)RogueTournResetPermanentTalentScRsp.proto\x1a\x11ECJNAIOLKJD.proto\"o\
-    \n#RogueTournResetPermanentTalentScRsp\x12\x18\n\x07retcode\x18\x05\x20\
-    \x01(\rR\x07retcode\x12.\n\x0bFMKEFGJMCHA\x18\x06\x20\x01(\x0b2\x0c.ECJN\
-    AIOLKJDR\x0bFMKEFGJMCHAb\x06proto3\
+    \n)RogueTournResetPermanentTalentScRsp.proto\x1a\x11MDLPIFCHFPJ.proto\"o\
+    \n#RogueTournResetPermanentTalentScRsp\x12.\n\x0bDPABCOHLPLH\x18\x02\x20\
+    \x01(\x0b2\x0c.MDLPIFCHFPJR\x0bDPABCOHLPLH\x12\x18\n\x07retcode\x18\x05\
+    \x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::ECJNAIOLKJD::file_descriptor().clone());
+            deps.push(super::MDLPIFCHFPJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournResetPermanentTalentScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

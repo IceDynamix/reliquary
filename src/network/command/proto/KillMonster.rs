@@ -79,10 +79,10 @@ impl ::protobuf::Message for KillMonster {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
+                80 => {
                     self.kill_num = is.read_uint32()?;
                 },
-                48 => {
+                88 => {
                     self.monster_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for KillMonster {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.kill_num != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.kill_num);
+            my_size += ::protobuf::rt::uint32_size(10, self.kill_num);
         }
         if self.monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.monster_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.monster_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for KillMonster {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.kill_num != 0 {
-            os.write_uint32(8, self.kill_num)?;
+            os.write_uint32(10, self.kill_num)?;
         }
         if self.monster_id != 0 {
-            os.write_uint32(6, self.monster_id)?;
+            os.write_uint32(11, self.monster_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for KillMonster {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x11KillMonster.proto\"G\n\x0bKillMonster\x12\x19\n\x08kill_num\x18\
-    \x08\x20\x01(\rR\x07killNum\x12\x1d\n\nmonster_id\x18\x06\x20\x01(\rR\tm\
-    onsterIdb\x06proto3\
+    \n\x11KillMonster.proto\"G\n\x0bKillMonster\x12\x19\n\x08kill_num\x18\n\
+    \x20\x01(\rR\x07killNum\x12\x1d\n\nmonster_id\x18\x0b\x20\x01(\rR\tmonst\
+    erIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MarbleShopBuyCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MarbleShopBuyCsReq.NLOINMODBLE)
-    pub NLOINMODBLE: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MarbleShopBuyCsReq.EGCLLKDHIAE)
+    pub EGCLLKDHIAE: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MarbleShopBuyCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MarbleShopBuyCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NLOINMODBLE",
-            |m: &MarbleShopBuyCsReq| { &m.NLOINMODBLE },
-            |m: &mut MarbleShopBuyCsReq| { &mut m.NLOINMODBLE },
+            "EGCLLKDHIAE",
+            |m: &MarbleShopBuyCsReq| { &m.EGCLLKDHIAE },
+            |m: &mut MarbleShopBuyCsReq| { &mut m.EGCLLKDHIAE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MarbleShopBuyCsReq>(
             "MarbleShopBuyCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for MarbleShopBuyCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.NLOINMODBLE)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.EGCLLKDHIAE)?;
                 },
-                72 => {
-                    self.NLOINMODBLE.push(is.read_uint32()?);
+                24 => {
+                    self.EGCLLKDHIAE.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for MarbleShopBuyCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.NLOINMODBLE);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.EGCLLKDHIAE);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.NLOINMODBLE)?;
+        os.write_repeated_packed_uint32(3, &self.EGCLLKDHIAE)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for MarbleShopBuyCsReq {
     }
 
     fn clear(&mut self) {
-        self.NLOINMODBLE.clear();
+        self.EGCLLKDHIAE.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MarbleShopBuyCsReq {
         static instance: MarbleShopBuyCsReq = MarbleShopBuyCsReq {
-            NLOINMODBLE: ::std::vec::Vec::new(),
+            EGCLLKDHIAE: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -146,8 +146,8 @@ impl ::protobuf::reflect::ProtobufValue for MarbleShopBuyCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18MarbleShopBuyCsReq.proto\"6\n\x12MarbleShopBuyCsReq\x12\x20\n\x0bN\
-    LOINMODBLE\x18\t\x20\x03(\rR\x0bNLOINMODBLEb\x06proto3\
+    \n\x18MarbleShopBuyCsReq.proto\"6\n\x12MarbleShopBuyCsReq\x12\x20\n\x0bE\
+    GCLLKDHIAE\x18\x03\x20\x03(\rR\x0bEGCLLKDHIAEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

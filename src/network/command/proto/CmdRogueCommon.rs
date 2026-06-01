@@ -27,136 +27,136 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRogueCommon)
 pub enum CmdRogueCommon {
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CANOHPGPCGJ_BPNKNCLAKAG)
-    CANOHPGPCGJ_BPNKNCLAKAG = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueGetGambleInfoScRsp)
-    CmdRogueGetGambleInfoScRsp = 5675,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CANOHPGPCGJ_LOAAMJBIEOH)
-    CANOHPGPCGJ_LOAAMJBIEOH = 5658,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueShopBeginBattleCsReq)
-    CmdRogueShopBeginBattleCsReq = 5650,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdPLHGBLKJNOL)
-    CmdPLHGBLKJNOL = 5698,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueCollectionScRsp)
-    CmdSetRogueCollectionScRsp = 5613,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdOOCOMIOPINM)
-    CmdOOCOMIOPINM = 5626,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeRogueMiracleHandbookRewardScRsp)
-    CmdTakeRogueMiracleHandbookRewardScRsp = 5602,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchHandleFuncScRsp)
-    CmdRogueWorkbenchHandleFuncScRsp = 5660,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSelectRogueCommonDialogueOptionScRsp)
-    CmdSelectRogueCommonDialogueOptionScRsp = 5688,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeEventHandbookRewardScRsp)
-    CmdTakeEventHandbookRewardScRsp = 5666,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopBuffInfoScRsp)
-    CmdGetRogueShopBuffInfoScRsp = 5609,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueExhibitionScRsp)
-    CmdSetRogueExhibitionScRsp = 5683,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueGetGambleInfoCsReq)
-    CmdRogueGetGambleInfoCsReq = 5697,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueCommonDialogueDataScRsp)
-    CmdGetRogueCommonDialogueDataScRsp = 5616,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueDoGambleCsReq)
-    CmdRogueDoGambleCsReq = 5648,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdCommonRogueQueryScRsp)
-    CmdCommonRogueQueryScRsp = 5629,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CANOHPGPCGJ_IAMCNCIEHGG)
-    CANOHPGPCGJ_IAMCNCIEHGG = 5644,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchGetInfoCsReq)
-    CmdRogueWorkbenchGetInfoCsReq = 5670,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdHandleRogueCommonPendingActionScRsp)
-    CmdHandleRogueCommonPendingActionScRsp = 5642,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopMiracleInfoScRsp)
-    CmdGetRogueShopMiracleInfoScRsp = 5614,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdFHEKPIAGNIN)
-    CmdFHEKPIAGNIN = 5690,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueShopBeginBattleScRsp)
-    CmdRogueShopBeginBattleScRsp = 5619,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopFormulaInfoScRsp)
-    CmdGetRogueShopFormulaInfoScRsp = 5627,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopBuffScRsp)
-    CmdBuyRogueShopBuffScRsp = 5639,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdNEELNABJPGE)
-    CmdNEELNABJPGE = 5694,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSelectRogueBonusReq)
-    CmdSelectRogueBonusReq = 5678,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonPendingActionScNotify)
-    CmdSyncRogueCommonPendingActionScNotify = 5611,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdCommonRogueVirtualItemInfoScNotify)
-    CmdCommonRogueVirtualItemInfoScNotify = 5636,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdIAGFLEBBOGB)
-    CmdIAGFLEBBOGB = 5674,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdLHEFHJLBHGK)
-    CmdLHEFHJLBHGK = 5696,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopMiracleInfoCsReq)
-    CmdGetRogueShopMiracleInfoCsReq = 5695,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueDoGambleScRsp)
-    CmdRogueDoGambleScRsp = 5676,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdUpdateRogueAdventureRoomScoreCsReq)
-    CmdUpdateRogueAdventureRoomScoreCsReq = 5630,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopMiracleCsReq)
-    CmdBuyRogueShopMiracleCsReq = 5623,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueExhibitionCsReq)
-    CmdSetRogueExhibitionCsReq = 5631,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopBuffInfoCsReq)
-    CmdGetRogueShopBuffInfoCsReq = 5618,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSelectRogueCommonDialogueOptionCsReq)
-    CmdSelectRogueCommonDialogueOptionCsReq = 5606,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeEventHandbookRewardCsReq)
-    CmdTakeEventHandbookRewardCsReq = 5649,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopFormulaScRsp)
-    CmdBuyRogueShopFormulaScRsp = 5667,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueCommonDialogueDataCsReq)
-    CmdGetRogueCommonDialogueDataCsReq = 5677,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdTakeRogueMiracleHandbookRewardCsReq)
-    CmdTakeRogueMiracleHandbookRewardCsReq = 5693,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchReforgeBuffReq)
-    CmdRogueWorkbenchReforgeBuffReq = 5682,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdBuyRogueShopMiracleScRsp)
-    CmdBuyRogueShopMiracleScRsp = 5663,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CANOHPGPCGJ_NBEEENFFEME)
-    CANOHPGPCGJ_NBEEENFFEME = 5607,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdCommonRogueQueryCsReq)
-    CmdCommonRogueQueryCsReq = 5659,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdPrepareRogueAdventureRoomCsReq)
-    CmdPrepareRogueAdventureRoomCsReq = 5610,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdIFPKEPIAOFP)
-    CmdIFPKEPIAOFP = 5691,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueWorkbenchGetInfoScRsp)
-    CmdRogueWorkbenchGetInfoScRsp = 5668,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonDialogueDataScNotify)
-    CmdSyncRogueCommonDialogueDataScNotify = 5669,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdEJGHKFDHGGC)
-    CmdEJGHKFDHGGC = 5604,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueHandbookDataCsReq)
-    CmdGetRogueHandbookDataCsReq = 5654,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdNDHFHFFHJIH)
-    CmdNDHFHFFHJIH = 5671,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueHandbookDataScRsp)
-    CmdGetRogueHandbookDataScRsp = 5679,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSetRogueCollectionCsReq)
-    CmdSetRogueCollectionCsReq = 5699,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdRogueNpcDisappearCsReq)
-    CmdRogueNpcDisappearCsReq = 5601,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonDialogueOptionFinishScNotify)
-    CmdSyncRogueCommonDialogueOptionFinishScNotify = 5641,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueAdventureRoomInfoCsReq)
-    CmdGetRogueAdventureRoomInfoCsReq = 5637,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueCommonActionResultScNotify)
-    CmdSyncRogueCommonActionResultScNotify = 5605,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdCommonRogueUpdateScNotify)
-    CmdCommonRogueUpdateScNotify = 5612,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdGetRogueShopFormulaInfoCsReq)
-    CmdGetRogueShopFormulaInfoCsReq = 5687,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdSyncRogueHandbookDataUpdateScNotify)
-    CmdSyncRogueHandbookDataUpdateScNotify = 5620,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdFinishRogueCommonDialogueCsReq)
-    CmdFinishRogueCommonDialogueCsReq = 5652,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CmdStopRogueAdventureRoomCsReq)
-    CmdStopRogueAdventureRoomCsReq = 5689,
-    // @@protoc_insertion_point(enum_value:CmdRogueCommon.CANOHPGPCGJ_LLAEEOHFPED)
-    CANOHPGPCGJ_LLAEEOHFPED = 5700,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_EDGGPGONBKK)
+    GIJNKOGJGHM_EDGGPGONBKK = 0,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_MNCPDJLJFIK)
+    GIJNKOGJGHM_MNCPDJLJFIK = 5644,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_DNEFIPNCEHK)
+    GIJNKOGJGHM_DNEFIPNCEHK = 5670,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_AIFFMBGEOPJ)
+    GIJNKOGJGHM_AIFFMBGEOPJ = 5604,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_CNNJNGECNNE)
+    GIJNKOGJGHM_CNNJNGECNNE = 5641,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_LJIGIJBBJHN)
+    GIJNKOGJGHM_LJIGIJBBJHN = 5660,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_AFKPFKMPIID)
+    GIJNKOGJGHM_AFKPFKMPIID = 5640,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_ECGCIPCGADI)
+    GIJNKOGJGHM_ECGCIPCGADI = 5671,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_FPPOLDDIGFF)
+    GIJNKOGJGHM_FPPOLDDIGFF = 5652,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_ENHIGLGFBJP)
+    GIJNKOGJGHM_ENHIGLGFBJP = 5609,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_HFKJDMNODNJ)
+    GIJNKOGJGHM_HFKJDMNODNJ = 5656,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_PHFKAFEJFLB)
+    GIJNKOGJGHM_PHFKAFEJFLB = 5613,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_EBEKADHMMKP)
+    GIJNKOGJGHM_EBEKADHMMKP = 5696,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_JJDADDOICGE)
+    GIJNKOGJGHM_JJDADDOICGE = 5682,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_ADNKCLJDPOA)
+    GIJNKOGJGHM_ADNKCLJDPOA = 5632,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_PGJMHOEBBFM)
+    GIJNKOGJGHM_PGJMHOEBBFM = 5654,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_LCBHOHJEJJB)
+    GIJNKOGJGHM_LCBHOHJEJJB = 5669,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_ENPIBIICONC)
+    GIJNKOGJGHM_ENPIBIICONC = 5664,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_CKHPICMPGDE)
+    GIJNKOGJGHM_CKHPICMPGDE = 5629,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_NLADKHIDIPL)
+    GIJNKOGJGHM_NLADKHIDIPL = 5615,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_INLFIKJJJPG)
+    GIJNKOGJGHM_INLFIKJJJPG = 5662,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_CJJCIJEBCOC)
+    GIJNKOGJGHM_CJJCIJEBCOC = 5677,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_FFFCJKPOKPG)
+    GIJNKOGJGHM_FFFCJKPOKPG = 5697,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_IAPJJMINPLH)
+    GIJNKOGJGHM_IAPJJMINPLH = 5658,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_OBBNMDLLOKE)
+    GIJNKOGJGHM_OBBNMDLLOKE = 5689,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_EBEKAJHJJEF)
+    GIJNKOGJGHM_EBEKAJHJJEF = 5681,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_FPNCKMGEDDJ)
+    GIJNKOGJGHM_FPNCKMGEDDJ = 5639,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_LJPHELEEEIM)
+    GIJNKOGJGHM_LJPHELEEEIM = 5673,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_HHFLDOGMEHN)
+    GIJNKOGJGHM_HHFLDOGMEHN = 5636,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_GIMIJDFDNGN)
+    GIJNKOGJGHM_GIMIJDFDNGN = 5693,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_FPLNLEJMHHP)
+    GIJNKOGJGHM_FPLNLEJMHHP = 5621,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_COOBADCJPKF)
+    GIJNKOGJGHM_COOBADCJPKF = 5637,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_KGHCOPOBAIP)
+    GIJNKOGJGHM_KGHCOPOBAIP = 5627,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_AOBFGMDFGOC)
+    GIJNKOGJGHM_AOBFGMDFGOC = 5614,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_PIGONEIIFBJ)
+    GIJNKOGJGHM_PIGONEIIFBJ = 5665,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_CDCNMGIJEHJ)
+    GIJNKOGJGHM_CDCNMGIJEHJ = 5648,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_GOHDKELKADI)
+    GIJNKOGJGHM_GOHDKELKADI = 5617,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_DNNECBLLKBO)
+    GIJNKOGJGHM_DNNECBLLKBO = 5678,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_PJCOFBGPJEK)
+    GIJNKOGJGHM_PJCOFBGPJEK = 5650,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_GPJHECIHEGG)
+    GIJNKOGJGHM_GPJHECIHEGG = 5603,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_HJHLJEBGFCK)
+    GIJNKOGJGHM_HJHLJEBGFCK = 5684,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_IKFDAFOBAHD)
+    GIJNKOGJGHM_IKFDAFOBAHD = 5643,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_PALMKOFIOMP)
+    GIJNKOGJGHM_PALMKOFIOMP = 5635,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_EFPOLBPDMMP)
+    GIJNKOGJGHM_EFPOLBPDMMP = 5634,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_FCHIJLIDKPK)
+    GIJNKOGJGHM_FCHIJLIDKPK = 5700,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_JDEGIBDGNKN)
+    GIJNKOGJGHM_JDEGIBDGNKN = 5606,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_BPALBPHJNNP)
+    GIJNKOGJGHM_BPALBPHJNNP = 5611,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_HGCBIAEBHLI)
+    GIJNKOGJGHM_HGCBIAEBHLI = 5663,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_NMMLGOOGHBD)
+    GIJNKOGJGHM_NMMLGOOGHBD = 5687,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_OLEJGPFJPEI)
+    GIJNKOGJGHM_OLEJGPFJPEI = 5622,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_HDNLKKBJCAA)
+    GIJNKOGJGHM_HDNLKKBJCAA = 5612,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_CMMJIMDDPND)
+    GIJNKOGJGHM_CMMJIMDDPND = 5680,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_HCBICLDEIEM)
+    GIJNKOGJGHM_HCBICLDEIEM = 5686,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_KHEBIGENECE)
+    GIJNKOGJGHM_KHEBIGENECE = 5605,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_GGLDKFDEOAA)
+    GIJNKOGJGHM_GGLDKFDEOAA = 5618,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_NAHKEJOLGHL)
+    GIJNKOGJGHM_NAHKEJOLGHL = 5683,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_INKGIMABIBD)
+    GIJNKOGJGHM_INKGIMABIBD = 5645,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_CDOBFDJOIHB)
+    GIJNKOGJGHM_CDOBFDJOIHB = 5616,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_GKDNKDIHJDA)
+    GIJNKOGJGHM_GKDNKDIHJDA = 5674,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_APOMFDFALMC)
+    GIJNKOGJGHM_APOMFDFALMC = 5653,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_AHGBDLOJHED)
+    GIJNKOGJGHM_AHGBDLOJHED = 5610,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_CBCACNIOAIH)
+    GIJNKOGJGHM_CBCACNIOAIH = 5646,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_IJGJEDPOICP)
+    GIJNKOGJGHM_IJGJEDPOICP = 5623,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_BAECOJPJADA)
+    GIJNKOGJGHM_BAECOJPJADA = 5659,
+    // @@protoc_insertion_point(enum_value:CmdRogueCommon.GIJNKOGJGHM_OPDGABDCCLH)
+    GIJNKOGJGHM_OPDGABDCCLH = 5691,
 }
 
 impl ::protobuf::Enum for CmdRogueCommon {
@@ -168,212 +168,212 @@ impl ::protobuf::Enum for CmdRogueCommon {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueCommon> {
         match value {
-            0 => ::std::option::Option::Some(CmdRogueCommon::CANOHPGPCGJ_BPNKNCLAKAG),
-            5675 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoScRsp),
-            5658 => ::std::option::Option::Some(CmdRogueCommon::CANOHPGPCGJ_LOAAMJBIEOH),
-            5650 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueShopBeginBattleCsReq),
-            5698 => ::std::option::Option::Some(CmdRogueCommon::CmdPLHGBLKJNOL),
-            5613 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionScRsp),
-            5626 => ::std::option::Option::Some(CmdRogueCommon::CmdOOCOMIOPINM),
-            5602 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp),
-            5660 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp),
-            5688 => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp),
-            5666 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeEventHandbookRewardScRsp),
-            5609 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp),
-            5683 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionScRsp),
-            5697 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoCsReq),
-            5616 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp),
-            5648 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleCsReq),
-            5629 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryScRsp),
-            5644 => ::std::option::Option::Some(CmdRogueCommon::CANOHPGPCGJ_IAMCNCIEHGG),
-            5670 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq),
-            5642 => ::std::option::Option::Some(CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp),
-            5614 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp),
-            5690 => ::std::option::Option::Some(CmdRogueCommon::CmdFHEKPIAGNIN),
-            5619 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueShopBeginBattleScRsp),
-            5627 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopFormulaInfoScRsp),
-            5639 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopBuffScRsp),
-            5694 => ::std::option::Option::Some(CmdRogueCommon::CmdNEELNABJPGE),
-            5678 => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueBonusReq),
-            5611 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify),
-            5636 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueVirtualItemInfoScNotify),
-            5674 => ::std::option::Option::Some(CmdRogueCommon::CmdIAGFLEBBOGB),
-            5696 => ::std::option::Option::Some(CmdRogueCommon::CmdLHEFHJLBHGK),
-            5695 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq),
-            5676 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleScRsp),
-            5630 => ::std::option::Option::Some(CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq),
-            5623 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleCsReq),
-            5631 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionCsReq),
-            5618 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq),
-            5606 => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq),
-            5649 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeEventHandbookRewardCsReq),
-            5667 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopFormulaScRsp),
-            5677 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq),
-            5693 => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardCsReq),
-            5682 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchReforgeBuffReq),
-            5663 => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleScRsp),
-            5607 => ::std::option::Option::Some(CmdRogueCommon::CANOHPGPCGJ_NBEEENFFEME),
-            5659 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryCsReq),
-            5610 => ::std::option::Option::Some(CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq),
-            5691 => ::std::option::Option::Some(CmdRogueCommon::CmdIFPKEPIAOFP),
-            5668 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp),
-            5669 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify),
-            5604 => ::std::option::Option::Some(CmdRogueCommon::CmdEJGHKFDHGGC),
-            5654 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataCsReq),
-            5671 => ::std::option::Option::Some(CmdRogueCommon::CmdNDHFHFFHJIH),
-            5679 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataScRsp),
-            5699 => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionCsReq),
-            5601 => ::std::option::Option::Some(CmdRogueCommon::CmdRogueNpcDisappearCsReq),
-            5641 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify),
-            5637 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq),
-            5605 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify),
-            5612 => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueUpdateScNotify),
-            5687 => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopFormulaInfoCsReq),
-            5620 => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify),
-            5652 => ::std::option::Option::Some(CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq),
-            5689 => ::std::option::Option::Some(CmdRogueCommon::CmdStopRogueAdventureRoomCsReq),
-            5700 => ::std::option::Option::Some(CmdRogueCommon::CANOHPGPCGJ_LLAEEOHFPED),
+            0 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_EDGGPGONBKK),
+            5644 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_MNCPDJLJFIK),
+            5670 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_DNEFIPNCEHK),
+            5604 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_AIFFMBGEOPJ),
+            5641 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CNNJNGECNNE),
+            5660 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_LJIGIJBBJHN),
+            5640 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_AFKPFKMPIID),
+            5671 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_ECGCIPCGADI),
+            5652 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_FPPOLDDIGFF),
+            5609 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_ENHIGLGFBJP),
+            5656 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HFKJDMNODNJ),
+            5613 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_PHFKAFEJFLB),
+            5696 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_EBEKADHMMKP),
+            5682 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_JJDADDOICGE),
+            5632 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_ADNKCLJDPOA),
+            5654 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_PGJMHOEBBFM),
+            5669 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_LCBHOHJEJJB),
+            5664 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_ENPIBIICONC),
+            5629 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CKHPICMPGDE),
+            5615 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_NLADKHIDIPL),
+            5662 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_INLFIKJJJPG),
+            5677 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CJJCIJEBCOC),
+            5697 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_FFFCJKPOKPG),
+            5658 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_IAPJJMINPLH),
+            5689 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_OBBNMDLLOKE),
+            5681 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_EBEKAJHJJEF),
+            5639 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_FPNCKMGEDDJ),
+            5673 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_LJPHELEEEIM),
+            5636 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HHFLDOGMEHN),
+            5693 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_GIMIJDFDNGN),
+            5621 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_FPLNLEJMHHP),
+            5637 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_COOBADCJPKF),
+            5627 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_KGHCOPOBAIP),
+            5614 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_AOBFGMDFGOC),
+            5665 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_PIGONEIIFBJ),
+            5648 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CDCNMGIJEHJ),
+            5617 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_GOHDKELKADI),
+            5678 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_DNNECBLLKBO),
+            5650 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_PJCOFBGPJEK),
+            5603 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_GPJHECIHEGG),
+            5684 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HJHLJEBGFCK),
+            5643 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_IKFDAFOBAHD),
+            5635 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_PALMKOFIOMP),
+            5634 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_EFPOLBPDMMP),
+            5700 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_FCHIJLIDKPK),
+            5606 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_JDEGIBDGNKN),
+            5611 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_BPALBPHJNNP),
+            5663 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HGCBIAEBHLI),
+            5687 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_NMMLGOOGHBD),
+            5622 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_OLEJGPFJPEI),
+            5612 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HDNLKKBJCAA),
+            5680 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CMMJIMDDPND),
+            5686 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HCBICLDEIEM),
+            5605 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_KHEBIGENECE),
+            5618 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_GGLDKFDEOAA),
+            5683 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_NAHKEJOLGHL),
+            5645 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_INKGIMABIBD),
+            5616 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CDOBFDJOIHB),
+            5674 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_GKDNKDIHJDA),
+            5653 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_APOMFDFALMC),
+            5610 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_AHGBDLOJHED),
+            5646 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CBCACNIOAIH),
+            5623 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_IJGJEDPOICP),
+            5659 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_BAECOJPJADA),
+            5691 => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_OPDGABDCCLH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueCommon> {
         match str {
-            "CANOHPGPCGJ_BPNKNCLAKAG" => ::std::option::Option::Some(CmdRogueCommon::CANOHPGPCGJ_BPNKNCLAKAG),
-            "CmdRogueGetGambleInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoScRsp),
-            "CANOHPGPCGJ_LOAAMJBIEOH" => ::std::option::Option::Some(CmdRogueCommon::CANOHPGPCGJ_LOAAMJBIEOH),
-            "CmdRogueShopBeginBattleCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueShopBeginBattleCsReq),
-            "CmdPLHGBLKJNOL" => ::std::option::Option::Some(CmdRogueCommon::CmdPLHGBLKJNOL),
-            "CmdSetRogueCollectionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionScRsp),
-            "CmdOOCOMIOPINM" => ::std::option::Option::Some(CmdRogueCommon::CmdOOCOMIOPINM),
-            "CmdTakeRogueMiracleHandbookRewardScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp),
-            "CmdRogueWorkbenchHandleFuncScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp),
-            "CmdSelectRogueCommonDialogueOptionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp),
-            "CmdTakeEventHandbookRewardScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeEventHandbookRewardScRsp),
-            "CmdGetRogueShopBuffInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp),
-            "CmdSetRogueExhibitionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionScRsp),
-            "CmdRogueGetGambleInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueGetGambleInfoCsReq),
-            "CmdGetRogueCommonDialogueDataScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp),
-            "CmdRogueDoGambleCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleCsReq),
-            "CmdCommonRogueQueryScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryScRsp),
-            "CANOHPGPCGJ_IAMCNCIEHGG" => ::std::option::Option::Some(CmdRogueCommon::CANOHPGPCGJ_IAMCNCIEHGG),
-            "CmdRogueWorkbenchGetInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq),
-            "CmdHandleRogueCommonPendingActionScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp),
-            "CmdGetRogueShopMiracleInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp),
-            "CmdFHEKPIAGNIN" => ::std::option::Option::Some(CmdRogueCommon::CmdFHEKPIAGNIN),
-            "CmdRogueShopBeginBattleScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueShopBeginBattleScRsp),
-            "CmdGetRogueShopFormulaInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopFormulaInfoScRsp),
-            "CmdBuyRogueShopBuffScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopBuffScRsp),
-            "CmdNEELNABJPGE" => ::std::option::Option::Some(CmdRogueCommon::CmdNEELNABJPGE),
-            "CmdSelectRogueBonusReq" => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueBonusReq),
-            "CmdSyncRogueCommonPendingActionScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify),
-            "CmdCommonRogueVirtualItemInfoScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueVirtualItemInfoScNotify),
-            "CmdIAGFLEBBOGB" => ::std::option::Option::Some(CmdRogueCommon::CmdIAGFLEBBOGB),
-            "CmdLHEFHJLBHGK" => ::std::option::Option::Some(CmdRogueCommon::CmdLHEFHJLBHGK),
-            "CmdGetRogueShopMiracleInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq),
-            "CmdRogueDoGambleScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueDoGambleScRsp),
-            "CmdUpdateRogueAdventureRoomScoreCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq),
-            "CmdBuyRogueShopMiracleCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleCsReq),
-            "CmdSetRogueExhibitionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueExhibitionCsReq),
-            "CmdGetRogueShopBuffInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq),
-            "CmdSelectRogueCommonDialogueOptionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq),
-            "CmdTakeEventHandbookRewardCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeEventHandbookRewardCsReq),
-            "CmdBuyRogueShopFormulaScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopFormulaScRsp),
-            "CmdGetRogueCommonDialogueDataCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq),
-            "CmdTakeRogueMiracleHandbookRewardCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardCsReq),
-            "CmdRogueWorkbenchReforgeBuffReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchReforgeBuffReq),
-            "CmdBuyRogueShopMiracleScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdBuyRogueShopMiracleScRsp),
-            "CANOHPGPCGJ_NBEEENFFEME" => ::std::option::Option::Some(CmdRogueCommon::CANOHPGPCGJ_NBEEENFFEME),
-            "CmdCommonRogueQueryCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueQueryCsReq),
-            "CmdPrepareRogueAdventureRoomCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq),
-            "CmdIFPKEPIAOFP" => ::std::option::Option::Some(CmdRogueCommon::CmdIFPKEPIAOFP),
-            "CmdRogueWorkbenchGetInfoScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp),
-            "CmdSyncRogueCommonDialogueDataScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify),
-            "CmdEJGHKFDHGGC" => ::std::option::Option::Some(CmdRogueCommon::CmdEJGHKFDHGGC),
-            "CmdGetRogueHandbookDataCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataCsReq),
-            "CmdNDHFHFFHJIH" => ::std::option::Option::Some(CmdRogueCommon::CmdNDHFHFFHJIH),
-            "CmdGetRogueHandbookDataScRsp" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueHandbookDataScRsp),
-            "CmdSetRogueCollectionCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdSetRogueCollectionCsReq),
-            "CmdRogueNpcDisappearCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdRogueNpcDisappearCsReq),
-            "CmdSyncRogueCommonDialogueOptionFinishScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify),
-            "CmdGetRogueAdventureRoomInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq),
-            "CmdSyncRogueCommonActionResultScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify),
-            "CmdCommonRogueUpdateScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdCommonRogueUpdateScNotify),
-            "CmdGetRogueShopFormulaInfoCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdGetRogueShopFormulaInfoCsReq),
-            "CmdSyncRogueHandbookDataUpdateScNotify" => ::std::option::Option::Some(CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify),
-            "CmdFinishRogueCommonDialogueCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq),
-            "CmdStopRogueAdventureRoomCsReq" => ::std::option::Option::Some(CmdRogueCommon::CmdStopRogueAdventureRoomCsReq),
-            "CANOHPGPCGJ_LLAEEOHFPED" => ::std::option::Option::Some(CmdRogueCommon::CANOHPGPCGJ_LLAEEOHFPED),
+            "GIJNKOGJGHM_EDGGPGONBKK" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_EDGGPGONBKK),
+            "GIJNKOGJGHM_MNCPDJLJFIK" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_MNCPDJLJFIK),
+            "GIJNKOGJGHM_DNEFIPNCEHK" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_DNEFIPNCEHK),
+            "GIJNKOGJGHM_AIFFMBGEOPJ" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_AIFFMBGEOPJ),
+            "GIJNKOGJGHM_CNNJNGECNNE" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CNNJNGECNNE),
+            "GIJNKOGJGHM_LJIGIJBBJHN" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_LJIGIJBBJHN),
+            "GIJNKOGJGHM_AFKPFKMPIID" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_AFKPFKMPIID),
+            "GIJNKOGJGHM_ECGCIPCGADI" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_ECGCIPCGADI),
+            "GIJNKOGJGHM_FPPOLDDIGFF" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_FPPOLDDIGFF),
+            "GIJNKOGJGHM_ENHIGLGFBJP" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_ENHIGLGFBJP),
+            "GIJNKOGJGHM_HFKJDMNODNJ" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HFKJDMNODNJ),
+            "GIJNKOGJGHM_PHFKAFEJFLB" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_PHFKAFEJFLB),
+            "GIJNKOGJGHM_EBEKADHMMKP" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_EBEKADHMMKP),
+            "GIJNKOGJGHM_JJDADDOICGE" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_JJDADDOICGE),
+            "GIJNKOGJGHM_ADNKCLJDPOA" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_ADNKCLJDPOA),
+            "GIJNKOGJGHM_PGJMHOEBBFM" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_PGJMHOEBBFM),
+            "GIJNKOGJGHM_LCBHOHJEJJB" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_LCBHOHJEJJB),
+            "GIJNKOGJGHM_ENPIBIICONC" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_ENPIBIICONC),
+            "GIJNKOGJGHM_CKHPICMPGDE" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CKHPICMPGDE),
+            "GIJNKOGJGHM_NLADKHIDIPL" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_NLADKHIDIPL),
+            "GIJNKOGJGHM_INLFIKJJJPG" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_INLFIKJJJPG),
+            "GIJNKOGJGHM_CJJCIJEBCOC" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CJJCIJEBCOC),
+            "GIJNKOGJGHM_FFFCJKPOKPG" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_FFFCJKPOKPG),
+            "GIJNKOGJGHM_IAPJJMINPLH" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_IAPJJMINPLH),
+            "GIJNKOGJGHM_OBBNMDLLOKE" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_OBBNMDLLOKE),
+            "GIJNKOGJGHM_EBEKAJHJJEF" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_EBEKAJHJJEF),
+            "GIJNKOGJGHM_FPNCKMGEDDJ" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_FPNCKMGEDDJ),
+            "GIJNKOGJGHM_LJPHELEEEIM" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_LJPHELEEEIM),
+            "GIJNKOGJGHM_HHFLDOGMEHN" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HHFLDOGMEHN),
+            "GIJNKOGJGHM_GIMIJDFDNGN" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_GIMIJDFDNGN),
+            "GIJNKOGJGHM_FPLNLEJMHHP" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_FPLNLEJMHHP),
+            "GIJNKOGJGHM_COOBADCJPKF" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_COOBADCJPKF),
+            "GIJNKOGJGHM_KGHCOPOBAIP" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_KGHCOPOBAIP),
+            "GIJNKOGJGHM_AOBFGMDFGOC" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_AOBFGMDFGOC),
+            "GIJNKOGJGHM_PIGONEIIFBJ" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_PIGONEIIFBJ),
+            "GIJNKOGJGHM_CDCNMGIJEHJ" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CDCNMGIJEHJ),
+            "GIJNKOGJGHM_GOHDKELKADI" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_GOHDKELKADI),
+            "GIJNKOGJGHM_DNNECBLLKBO" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_DNNECBLLKBO),
+            "GIJNKOGJGHM_PJCOFBGPJEK" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_PJCOFBGPJEK),
+            "GIJNKOGJGHM_GPJHECIHEGG" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_GPJHECIHEGG),
+            "GIJNKOGJGHM_HJHLJEBGFCK" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HJHLJEBGFCK),
+            "GIJNKOGJGHM_IKFDAFOBAHD" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_IKFDAFOBAHD),
+            "GIJNKOGJGHM_PALMKOFIOMP" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_PALMKOFIOMP),
+            "GIJNKOGJGHM_EFPOLBPDMMP" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_EFPOLBPDMMP),
+            "GIJNKOGJGHM_FCHIJLIDKPK" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_FCHIJLIDKPK),
+            "GIJNKOGJGHM_JDEGIBDGNKN" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_JDEGIBDGNKN),
+            "GIJNKOGJGHM_BPALBPHJNNP" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_BPALBPHJNNP),
+            "GIJNKOGJGHM_HGCBIAEBHLI" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HGCBIAEBHLI),
+            "GIJNKOGJGHM_NMMLGOOGHBD" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_NMMLGOOGHBD),
+            "GIJNKOGJGHM_OLEJGPFJPEI" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_OLEJGPFJPEI),
+            "GIJNKOGJGHM_HDNLKKBJCAA" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HDNLKKBJCAA),
+            "GIJNKOGJGHM_CMMJIMDDPND" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CMMJIMDDPND),
+            "GIJNKOGJGHM_HCBICLDEIEM" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_HCBICLDEIEM),
+            "GIJNKOGJGHM_KHEBIGENECE" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_KHEBIGENECE),
+            "GIJNKOGJGHM_GGLDKFDEOAA" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_GGLDKFDEOAA),
+            "GIJNKOGJGHM_NAHKEJOLGHL" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_NAHKEJOLGHL),
+            "GIJNKOGJGHM_INKGIMABIBD" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_INKGIMABIBD),
+            "GIJNKOGJGHM_CDOBFDJOIHB" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CDOBFDJOIHB),
+            "GIJNKOGJGHM_GKDNKDIHJDA" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_GKDNKDIHJDA),
+            "GIJNKOGJGHM_APOMFDFALMC" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_APOMFDFALMC),
+            "GIJNKOGJGHM_AHGBDLOJHED" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_AHGBDLOJHED),
+            "GIJNKOGJGHM_CBCACNIOAIH" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_CBCACNIOAIH),
+            "GIJNKOGJGHM_IJGJEDPOICP" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_IJGJEDPOICP),
+            "GIJNKOGJGHM_BAECOJPJADA" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_BAECOJPJADA),
+            "GIJNKOGJGHM_OPDGABDCCLH" => ::std::option::Option::Some(CmdRogueCommon::GIJNKOGJGHM_OPDGABDCCLH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRogueCommon] = &[
-        CmdRogueCommon::CANOHPGPCGJ_BPNKNCLAKAG,
-        CmdRogueCommon::CmdRogueGetGambleInfoScRsp,
-        CmdRogueCommon::CANOHPGPCGJ_LOAAMJBIEOH,
-        CmdRogueCommon::CmdRogueShopBeginBattleCsReq,
-        CmdRogueCommon::CmdPLHGBLKJNOL,
-        CmdRogueCommon::CmdSetRogueCollectionScRsp,
-        CmdRogueCommon::CmdOOCOMIOPINM,
-        CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp,
-        CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp,
-        CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp,
-        CmdRogueCommon::CmdTakeEventHandbookRewardScRsp,
-        CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp,
-        CmdRogueCommon::CmdSetRogueExhibitionScRsp,
-        CmdRogueCommon::CmdRogueGetGambleInfoCsReq,
-        CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp,
-        CmdRogueCommon::CmdRogueDoGambleCsReq,
-        CmdRogueCommon::CmdCommonRogueQueryScRsp,
-        CmdRogueCommon::CANOHPGPCGJ_IAMCNCIEHGG,
-        CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq,
-        CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp,
-        CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp,
-        CmdRogueCommon::CmdFHEKPIAGNIN,
-        CmdRogueCommon::CmdRogueShopBeginBattleScRsp,
-        CmdRogueCommon::CmdGetRogueShopFormulaInfoScRsp,
-        CmdRogueCommon::CmdBuyRogueShopBuffScRsp,
-        CmdRogueCommon::CmdNEELNABJPGE,
-        CmdRogueCommon::CmdSelectRogueBonusReq,
-        CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify,
-        CmdRogueCommon::CmdCommonRogueVirtualItemInfoScNotify,
-        CmdRogueCommon::CmdIAGFLEBBOGB,
-        CmdRogueCommon::CmdLHEFHJLBHGK,
-        CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq,
-        CmdRogueCommon::CmdRogueDoGambleScRsp,
-        CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq,
-        CmdRogueCommon::CmdBuyRogueShopMiracleCsReq,
-        CmdRogueCommon::CmdSetRogueExhibitionCsReq,
-        CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq,
-        CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq,
-        CmdRogueCommon::CmdTakeEventHandbookRewardCsReq,
-        CmdRogueCommon::CmdBuyRogueShopFormulaScRsp,
-        CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq,
-        CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardCsReq,
-        CmdRogueCommon::CmdRogueWorkbenchReforgeBuffReq,
-        CmdRogueCommon::CmdBuyRogueShopMiracleScRsp,
-        CmdRogueCommon::CANOHPGPCGJ_NBEEENFFEME,
-        CmdRogueCommon::CmdCommonRogueQueryCsReq,
-        CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq,
-        CmdRogueCommon::CmdIFPKEPIAOFP,
-        CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp,
-        CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify,
-        CmdRogueCommon::CmdEJGHKFDHGGC,
-        CmdRogueCommon::CmdGetRogueHandbookDataCsReq,
-        CmdRogueCommon::CmdNDHFHFFHJIH,
-        CmdRogueCommon::CmdGetRogueHandbookDataScRsp,
-        CmdRogueCommon::CmdSetRogueCollectionCsReq,
-        CmdRogueCommon::CmdRogueNpcDisappearCsReq,
-        CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify,
-        CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq,
-        CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify,
-        CmdRogueCommon::CmdCommonRogueUpdateScNotify,
-        CmdRogueCommon::CmdGetRogueShopFormulaInfoCsReq,
-        CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify,
-        CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq,
-        CmdRogueCommon::CmdStopRogueAdventureRoomCsReq,
-        CmdRogueCommon::CANOHPGPCGJ_LLAEEOHFPED,
+        CmdRogueCommon::GIJNKOGJGHM_EDGGPGONBKK,
+        CmdRogueCommon::GIJNKOGJGHM_MNCPDJLJFIK,
+        CmdRogueCommon::GIJNKOGJGHM_DNEFIPNCEHK,
+        CmdRogueCommon::GIJNKOGJGHM_AIFFMBGEOPJ,
+        CmdRogueCommon::GIJNKOGJGHM_CNNJNGECNNE,
+        CmdRogueCommon::GIJNKOGJGHM_LJIGIJBBJHN,
+        CmdRogueCommon::GIJNKOGJGHM_AFKPFKMPIID,
+        CmdRogueCommon::GIJNKOGJGHM_ECGCIPCGADI,
+        CmdRogueCommon::GIJNKOGJGHM_FPPOLDDIGFF,
+        CmdRogueCommon::GIJNKOGJGHM_ENHIGLGFBJP,
+        CmdRogueCommon::GIJNKOGJGHM_HFKJDMNODNJ,
+        CmdRogueCommon::GIJNKOGJGHM_PHFKAFEJFLB,
+        CmdRogueCommon::GIJNKOGJGHM_EBEKADHMMKP,
+        CmdRogueCommon::GIJNKOGJGHM_JJDADDOICGE,
+        CmdRogueCommon::GIJNKOGJGHM_ADNKCLJDPOA,
+        CmdRogueCommon::GIJNKOGJGHM_PGJMHOEBBFM,
+        CmdRogueCommon::GIJNKOGJGHM_LCBHOHJEJJB,
+        CmdRogueCommon::GIJNKOGJGHM_ENPIBIICONC,
+        CmdRogueCommon::GIJNKOGJGHM_CKHPICMPGDE,
+        CmdRogueCommon::GIJNKOGJGHM_NLADKHIDIPL,
+        CmdRogueCommon::GIJNKOGJGHM_INLFIKJJJPG,
+        CmdRogueCommon::GIJNKOGJGHM_CJJCIJEBCOC,
+        CmdRogueCommon::GIJNKOGJGHM_FFFCJKPOKPG,
+        CmdRogueCommon::GIJNKOGJGHM_IAPJJMINPLH,
+        CmdRogueCommon::GIJNKOGJGHM_OBBNMDLLOKE,
+        CmdRogueCommon::GIJNKOGJGHM_EBEKAJHJJEF,
+        CmdRogueCommon::GIJNKOGJGHM_FPNCKMGEDDJ,
+        CmdRogueCommon::GIJNKOGJGHM_LJPHELEEEIM,
+        CmdRogueCommon::GIJNKOGJGHM_HHFLDOGMEHN,
+        CmdRogueCommon::GIJNKOGJGHM_GIMIJDFDNGN,
+        CmdRogueCommon::GIJNKOGJGHM_FPLNLEJMHHP,
+        CmdRogueCommon::GIJNKOGJGHM_COOBADCJPKF,
+        CmdRogueCommon::GIJNKOGJGHM_KGHCOPOBAIP,
+        CmdRogueCommon::GIJNKOGJGHM_AOBFGMDFGOC,
+        CmdRogueCommon::GIJNKOGJGHM_PIGONEIIFBJ,
+        CmdRogueCommon::GIJNKOGJGHM_CDCNMGIJEHJ,
+        CmdRogueCommon::GIJNKOGJGHM_GOHDKELKADI,
+        CmdRogueCommon::GIJNKOGJGHM_DNNECBLLKBO,
+        CmdRogueCommon::GIJNKOGJGHM_PJCOFBGPJEK,
+        CmdRogueCommon::GIJNKOGJGHM_GPJHECIHEGG,
+        CmdRogueCommon::GIJNKOGJGHM_HJHLJEBGFCK,
+        CmdRogueCommon::GIJNKOGJGHM_IKFDAFOBAHD,
+        CmdRogueCommon::GIJNKOGJGHM_PALMKOFIOMP,
+        CmdRogueCommon::GIJNKOGJGHM_EFPOLBPDMMP,
+        CmdRogueCommon::GIJNKOGJGHM_FCHIJLIDKPK,
+        CmdRogueCommon::GIJNKOGJGHM_JDEGIBDGNKN,
+        CmdRogueCommon::GIJNKOGJGHM_BPALBPHJNNP,
+        CmdRogueCommon::GIJNKOGJGHM_HGCBIAEBHLI,
+        CmdRogueCommon::GIJNKOGJGHM_NMMLGOOGHBD,
+        CmdRogueCommon::GIJNKOGJGHM_OLEJGPFJPEI,
+        CmdRogueCommon::GIJNKOGJGHM_HDNLKKBJCAA,
+        CmdRogueCommon::GIJNKOGJGHM_CMMJIMDDPND,
+        CmdRogueCommon::GIJNKOGJGHM_HCBICLDEIEM,
+        CmdRogueCommon::GIJNKOGJGHM_KHEBIGENECE,
+        CmdRogueCommon::GIJNKOGJGHM_GGLDKFDEOAA,
+        CmdRogueCommon::GIJNKOGJGHM_NAHKEJOLGHL,
+        CmdRogueCommon::GIJNKOGJGHM_INKGIMABIBD,
+        CmdRogueCommon::GIJNKOGJGHM_CDOBFDJOIHB,
+        CmdRogueCommon::GIJNKOGJGHM_GKDNKDIHJDA,
+        CmdRogueCommon::GIJNKOGJGHM_APOMFDFALMC,
+        CmdRogueCommon::GIJNKOGJGHM_AHGBDLOJHED,
+        CmdRogueCommon::GIJNKOGJGHM_CBCACNIOAIH,
+        CmdRogueCommon::GIJNKOGJGHM_IJGJEDPOICP,
+        CmdRogueCommon::GIJNKOGJGHM_BAECOJPJADA,
+        CmdRogueCommon::GIJNKOGJGHM_OPDGABDCCLH,
     ];
 }
 
@@ -385,71 +385,71 @@ impl ::protobuf::EnumFull for CmdRogueCommon {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRogueCommon::CANOHPGPCGJ_BPNKNCLAKAG => 0,
-            CmdRogueCommon::CmdRogueGetGambleInfoScRsp => 1,
-            CmdRogueCommon::CANOHPGPCGJ_LOAAMJBIEOH => 2,
-            CmdRogueCommon::CmdRogueShopBeginBattleCsReq => 3,
-            CmdRogueCommon::CmdPLHGBLKJNOL => 4,
-            CmdRogueCommon::CmdSetRogueCollectionScRsp => 5,
-            CmdRogueCommon::CmdOOCOMIOPINM => 6,
-            CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardScRsp => 7,
-            CmdRogueCommon::CmdRogueWorkbenchHandleFuncScRsp => 8,
-            CmdRogueCommon::CmdSelectRogueCommonDialogueOptionScRsp => 9,
-            CmdRogueCommon::CmdTakeEventHandbookRewardScRsp => 10,
-            CmdRogueCommon::CmdGetRogueShopBuffInfoScRsp => 11,
-            CmdRogueCommon::CmdSetRogueExhibitionScRsp => 12,
-            CmdRogueCommon::CmdRogueGetGambleInfoCsReq => 13,
-            CmdRogueCommon::CmdGetRogueCommonDialogueDataScRsp => 14,
-            CmdRogueCommon::CmdRogueDoGambleCsReq => 15,
-            CmdRogueCommon::CmdCommonRogueQueryScRsp => 16,
-            CmdRogueCommon::CANOHPGPCGJ_IAMCNCIEHGG => 17,
-            CmdRogueCommon::CmdRogueWorkbenchGetInfoCsReq => 18,
-            CmdRogueCommon::CmdHandleRogueCommonPendingActionScRsp => 19,
-            CmdRogueCommon::CmdGetRogueShopMiracleInfoScRsp => 20,
-            CmdRogueCommon::CmdFHEKPIAGNIN => 21,
-            CmdRogueCommon::CmdRogueShopBeginBattleScRsp => 22,
-            CmdRogueCommon::CmdGetRogueShopFormulaInfoScRsp => 23,
-            CmdRogueCommon::CmdBuyRogueShopBuffScRsp => 24,
-            CmdRogueCommon::CmdNEELNABJPGE => 25,
-            CmdRogueCommon::CmdSelectRogueBonusReq => 26,
-            CmdRogueCommon::CmdSyncRogueCommonPendingActionScNotify => 27,
-            CmdRogueCommon::CmdCommonRogueVirtualItemInfoScNotify => 28,
-            CmdRogueCommon::CmdIAGFLEBBOGB => 29,
-            CmdRogueCommon::CmdLHEFHJLBHGK => 30,
-            CmdRogueCommon::CmdGetRogueShopMiracleInfoCsReq => 31,
-            CmdRogueCommon::CmdRogueDoGambleScRsp => 32,
-            CmdRogueCommon::CmdUpdateRogueAdventureRoomScoreCsReq => 33,
-            CmdRogueCommon::CmdBuyRogueShopMiracleCsReq => 34,
-            CmdRogueCommon::CmdSetRogueExhibitionCsReq => 35,
-            CmdRogueCommon::CmdGetRogueShopBuffInfoCsReq => 36,
-            CmdRogueCommon::CmdSelectRogueCommonDialogueOptionCsReq => 37,
-            CmdRogueCommon::CmdTakeEventHandbookRewardCsReq => 38,
-            CmdRogueCommon::CmdBuyRogueShopFormulaScRsp => 39,
-            CmdRogueCommon::CmdGetRogueCommonDialogueDataCsReq => 40,
-            CmdRogueCommon::CmdTakeRogueMiracleHandbookRewardCsReq => 41,
-            CmdRogueCommon::CmdRogueWorkbenchReforgeBuffReq => 42,
-            CmdRogueCommon::CmdBuyRogueShopMiracleScRsp => 43,
-            CmdRogueCommon::CANOHPGPCGJ_NBEEENFFEME => 44,
-            CmdRogueCommon::CmdCommonRogueQueryCsReq => 45,
-            CmdRogueCommon::CmdPrepareRogueAdventureRoomCsReq => 46,
-            CmdRogueCommon::CmdIFPKEPIAOFP => 47,
-            CmdRogueCommon::CmdRogueWorkbenchGetInfoScRsp => 48,
-            CmdRogueCommon::CmdSyncRogueCommonDialogueDataScNotify => 49,
-            CmdRogueCommon::CmdEJGHKFDHGGC => 50,
-            CmdRogueCommon::CmdGetRogueHandbookDataCsReq => 51,
-            CmdRogueCommon::CmdNDHFHFFHJIH => 52,
-            CmdRogueCommon::CmdGetRogueHandbookDataScRsp => 53,
-            CmdRogueCommon::CmdSetRogueCollectionCsReq => 54,
-            CmdRogueCommon::CmdRogueNpcDisappearCsReq => 55,
-            CmdRogueCommon::CmdSyncRogueCommonDialogueOptionFinishScNotify => 56,
-            CmdRogueCommon::CmdGetRogueAdventureRoomInfoCsReq => 57,
-            CmdRogueCommon::CmdSyncRogueCommonActionResultScNotify => 58,
-            CmdRogueCommon::CmdCommonRogueUpdateScNotify => 59,
-            CmdRogueCommon::CmdGetRogueShopFormulaInfoCsReq => 60,
-            CmdRogueCommon::CmdSyncRogueHandbookDataUpdateScNotify => 61,
-            CmdRogueCommon::CmdFinishRogueCommonDialogueCsReq => 62,
-            CmdRogueCommon::CmdStopRogueAdventureRoomCsReq => 63,
-            CmdRogueCommon::CANOHPGPCGJ_LLAEEOHFPED => 64,
+            CmdRogueCommon::GIJNKOGJGHM_EDGGPGONBKK => 0,
+            CmdRogueCommon::GIJNKOGJGHM_MNCPDJLJFIK => 1,
+            CmdRogueCommon::GIJNKOGJGHM_DNEFIPNCEHK => 2,
+            CmdRogueCommon::GIJNKOGJGHM_AIFFMBGEOPJ => 3,
+            CmdRogueCommon::GIJNKOGJGHM_CNNJNGECNNE => 4,
+            CmdRogueCommon::GIJNKOGJGHM_LJIGIJBBJHN => 5,
+            CmdRogueCommon::GIJNKOGJGHM_AFKPFKMPIID => 6,
+            CmdRogueCommon::GIJNKOGJGHM_ECGCIPCGADI => 7,
+            CmdRogueCommon::GIJNKOGJGHM_FPPOLDDIGFF => 8,
+            CmdRogueCommon::GIJNKOGJGHM_ENHIGLGFBJP => 9,
+            CmdRogueCommon::GIJNKOGJGHM_HFKJDMNODNJ => 10,
+            CmdRogueCommon::GIJNKOGJGHM_PHFKAFEJFLB => 11,
+            CmdRogueCommon::GIJNKOGJGHM_EBEKADHMMKP => 12,
+            CmdRogueCommon::GIJNKOGJGHM_JJDADDOICGE => 13,
+            CmdRogueCommon::GIJNKOGJGHM_ADNKCLJDPOA => 14,
+            CmdRogueCommon::GIJNKOGJGHM_PGJMHOEBBFM => 15,
+            CmdRogueCommon::GIJNKOGJGHM_LCBHOHJEJJB => 16,
+            CmdRogueCommon::GIJNKOGJGHM_ENPIBIICONC => 17,
+            CmdRogueCommon::GIJNKOGJGHM_CKHPICMPGDE => 18,
+            CmdRogueCommon::GIJNKOGJGHM_NLADKHIDIPL => 19,
+            CmdRogueCommon::GIJNKOGJGHM_INLFIKJJJPG => 20,
+            CmdRogueCommon::GIJNKOGJGHM_CJJCIJEBCOC => 21,
+            CmdRogueCommon::GIJNKOGJGHM_FFFCJKPOKPG => 22,
+            CmdRogueCommon::GIJNKOGJGHM_IAPJJMINPLH => 23,
+            CmdRogueCommon::GIJNKOGJGHM_OBBNMDLLOKE => 24,
+            CmdRogueCommon::GIJNKOGJGHM_EBEKAJHJJEF => 25,
+            CmdRogueCommon::GIJNKOGJGHM_FPNCKMGEDDJ => 26,
+            CmdRogueCommon::GIJNKOGJGHM_LJPHELEEEIM => 27,
+            CmdRogueCommon::GIJNKOGJGHM_HHFLDOGMEHN => 28,
+            CmdRogueCommon::GIJNKOGJGHM_GIMIJDFDNGN => 29,
+            CmdRogueCommon::GIJNKOGJGHM_FPLNLEJMHHP => 30,
+            CmdRogueCommon::GIJNKOGJGHM_COOBADCJPKF => 31,
+            CmdRogueCommon::GIJNKOGJGHM_KGHCOPOBAIP => 32,
+            CmdRogueCommon::GIJNKOGJGHM_AOBFGMDFGOC => 33,
+            CmdRogueCommon::GIJNKOGJGHM_PIGONEIIFBJ => 34,
+            CmdRogueCommon::GIJNKOGJGHM_CDCNMGIJEHJ => 35,
+            CmdRogueCommon::GIJNKOGJGHM_GOHDKELKADI => 36,
+            CmdRogueCommon::GIJNKOGJGHM_DNNECBLLKBO => 37,
+            CmdRogueCommon::GIJNKOGJGHM_PJCOFBGPJEK => 38,
+            CmdRogueCommon::GIJNKOGJGHM_GPJHECIHEGG => 39,
+            CmdRogueCommon::GIJNKOGJGHM_HJHLJEBGFCK => 40,
+            CmdRogueCommon::GIJNKOGJGHM_IKFDAFOBAHD => 41,
+            CmdRogueCommon::GIJNKOGJGHM_PALMKOFIOMP => 42,
+            CmdRogueCommon::GIJNKOGJGHM_EFPOLBPDMMP => 43,
+            CmdRogueCommon::GIJNKOGJGHM_FCHIJLIDKPK => 44,
+            CmdRogueCommon::GIJNKOGJGHM_JDEGIBDGNKN => 45,
+            CmdRogueCommon::GIJNKOGJGHM_BPALBPHJNNP => 46,
+            CmdRogueCommon::GIJNKOGJGHM_HGCBIAEBHLI => 47,
+            CmdRogueCommon::GIJNKOGJGHM_NMMLGOOGHBD => 48,
+            CmdRogueCommon::GIJNKOGJGHM_OLEJGPFJPEI => 49,
+            CmdRogueCommon::GIJNKOGJGHM_HDNLKKBJCAA => 50,
+            CmdRogueCommon::GIJNKOGJGHM_CMMJIMDDPND => 51,
+            CmdRogueCommon::GIJNKOGJGHM_HCBICLDEIEM => 52,
+            CmdRogueCommon::GIJNKOGJGHM_KHEBIGENECE => 53,
+            CmdRogueCommon::GIJNKOGJGHM_GGLDKFDEOAA => 54,
+            CmdRogueCommon::GIJNKOGJGHM_NAHKEJOLGHL => 55,
+            CmdRogueCommon::GIJNKOGJGHM_INKGIMABIBD => 56,
+            CmdRogueCommon::GIJNKOGJGHM_CDOBFDJOIHB => 57,
+            CmdRogueCommon::GIJNKOGJGHM_GKDNKDIHJDA => 58,
+            CmdRogueCommon::GIJNKOGJGHM_APOMFDFALMC => 59,
+            CmdRogueCommon::GIJNKOGJGHM_AHGBDLOJHED => 60,
+            CmdRogueCommon::GIJNKOGJGHM_CBCACNIOAIH => 61,
+            CmdRogueCommon::GIJNKOGJGHM_IJGJEDPOICP => 62,
+            CmdRogueCommon::GIJNKOGJGHM_BAECOJPJADA => 63,
+            CmdRogueCommon::GIJNKOGJGHM_OPDGABDCCLH => 64,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -457,7 +457,7 @@ impl ::protobuf::EnumFull for CmdRogueCommon {
 
 impl ::std::default::Default for CmdRogueCommon {
     fn default() -> Self {
-        CmdRogueCommon::CANOHPGPCGJ_BPNKNCLAKAG
+        CmdRogueCommon::GIJNKOGJGHM_EDGGPGONBKK
     }
 }
 
@@ -468,51 +468,49 @@ impl CmdRogueCommon {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14CmdRogueCommon.proto*\xe2\x11\n\x0eCmdRogueCommon\x12\x1b\n\x17CAN\
-    OHPGPCGJ_BPNKNCLAKAG\x10\0\x12\x1f\n\x1aCmdRogueGetGambleInfoScRsp\x10\
-    \xab,\x12\x1c\n\x17CANOHPGPCGJ_LOAAMJBIEOH\x10\x9a,\x12!\n\x1cCmdRogueSh\
-    opBeginBattleCsReq\x10\x92,\x12\x13\n\x0eCmdPLHGBLKJNOL\x10\xc2,\x12\x1f\
-    \n\x1aCmdSetRogueCollectionScRsp\x10\xed+\x12\x13\n\x0eCmdOOCOMIOPINM\
-    \x10\xfa+\x12+\n&CmdTakeRogueMiracleHandbookRewardScRsp\x10\xe2+\x12%\n\
-    \x20CmdRogueWorkbenchHandleFuncScRsp\x10\x9c,\x12,\n'CmdSelectRogueCommo\
-    nDialogueOptionScRsp\x10\xb8,\x12$\n\x1fCmdTakeEventHandbookRewardScRsp\
-    \x10\xa2,\x12!\n\x1cCmdGetRogueShopBuffInfoScRsp\x10\xe9+\x12\x1f\n\x1aC\
-    mdSetRogueExhibitionScRsp\x10\xb3,\x12\x1f\n\x1aCmdRogueGetGambleInfoCsR\
-    eq\x10\xc1,\x12'\n\"CmdGetRogueCommonDialogueDataScRsp\x10\xf0+\x12\x1a\
-    \n\x15CmdRogueDoGambleCsReq\x10\x90,\x12\x1d\n\x18CmdCommonRogueQueryScR\
-    sp\x10\xfd+\x12\x1c\n\x17CANOHPGPCGJ_IAMCNCIEHGG\x10\x8c,\x12\"\n\x1dCmd\
-    RogueWorkbenchGetInfoCsReq\x10\xa6,\x12+\n&CmdHandleRogueCommonPendingAc\
-    tionScRsp\x10\x8a,\x12$\n\x1fCmdGetRogueShopMiracleInfoScRsp\x10\xee+\
-    \x12\x13\n\x0eCmdFHEKPIAGNIN\x10\xba,\x12!\n\x1cCmdRogueShopBeginBattleS\
-    cRsp\x10\xf3+\x12$\n\x1fCmdGetRogueShopFormulaInfoScRsp\x10\xfb+\x12\x1d\
-    \n\x18CmdBuyRogueShopBuffScRsp\x10\x87,\x12\x13\n\x0eCmdNEELNABJPGE\x10\
-    \xbe,\x12\x1b\n\x16CmdSelectRogueBonusReq\x10\xae,\x12,\n'CmdSyncRogueCo\
-    mmonPendingActionScNotify\x10\xeb+\x12*\n%CmdCommonRogueVirtualItemInfoS\
-    cNotify\x10\x84,\x12\x13\n\x0eCmdIAGFLEBBOGB\x10\xaa,\x12\x13\n\x0eCmdLH\
-    EFHJLBHGK\x10\xc0,\x12$\n\x1fCmdGetRogueShopMiracleInfoCsReq\x10\xbf,\
-    \x12\x1a\n\x15CmdRogueDoGambleScRsp\x10\xac,\x12*\n%CmdUpdateRogueAdvent\
-    ureRoomScoreCsReq\x10\xfe+\x12\x20\n\x1bCmdBuyRogueShopMiracleCsReq\x10\
-    \xf7+\x12\x1f\n\x1aCmdSetRogueExhibitionCsReq\x10\xff+\x12!\n\x1cCmdGetR\
-    ogueShopBuffInfoCsReq\x10\xf2+\x12,\n'CmdSelectRogueCommonDialogueOption\
-    CsReq\x10\xe6+\x12$\n\x1fCmdTakeEventHandbookRewardCsReq\x10\x91,\x12\
-    \x20\n\x1bCmdBuyRogueShopFormulaScRsp\x10\xa3,\x12'\n\"CmdGetRogueCommon\
-    DialogueDataCsReq\x10\xad,\x12+\n&CmdTakeRogueMiracleHandbookRewardCsReq\
-    \x10\xbd,\x12$\n\x1fCmdRogueWorkbenchReforgeBuffReq\x10\xb2,\x12\x20\n\
-    \x1bCmdBuyRogueShopMiracleScRsp\x10\x9f,\x12\x1c\n\x17CANOHPGPCGJ_NBEEEN\
-    FFEME\x10\xe7+\x12\x1d\n\x18CmdCommonRogueQueryCsReq\x10\x9b,\x12&\n!Cmd\
-    PrepareRogueAdventureRoomCsReq\x10\xea+\x12\x13\n\x0eCmdIFPKEPIAOFP\x10\
-    \xbb,\x12\"\n\x1dCmdRogueWorkbenchGetInfoScRsp\x10\xa4,\x12+\n&CmdSyncRo\
-    gueCommonDialogueDataScNotify\x10\xa5,\x12\x13\n\x0eCmdEJGHKFDHGGC\x10\
-    \xe4+\x12!\n\x1cCmdGetRogueHandbookDataCsReq\x10\x96,\x12\x13\n\x0eCmdND\
-    HFHFFHJIH\x10\xa7,\x12!\n\x1cCmdGetRogueHandbookDataScRsp\x10\xaf,\x12\
-    \x1f\n\x1aCmdSetRogueCollectionCsReq\x10\xc3,\x12\x1e\n\x19CmdRogueNpcDi\
-    sappearCsReq\x10\xe1+\x123\n.CmdSyncRogueCommonDialogueOptionFinishScNot\
-    ify\x10\x89,\x12&\n!CmdGetRogueAdventureRoomInfoCsReq\x10\x85,\x12+\n&Cm\
-    dSyncRogueCommonActionResultScNotify\x10\xe5+\x12!\n\x1cCmdCommonRogueUp\
-    dateScNotify\x10\xec+\x12$\n\x1fCmdGetRogueShopFormulaInfoCsReq\x10\xb7,\
-    \x12+\n&CmdSyncRogueHandbookDataUpdateScNotify\x10\xf4+\x12&\n!CmdFinish\
-    RogueCommonDialogueCsReq\x10\x94,\x12#\n\x1eCmdStopRogueAdventureRoomCsR\
-    eq\x10\xb9,\x12\x1c\n\x17CANOHPGPCGJ_LLAEEOHFPED\x10\xc4,b\x06proto3\
+    \n\x14CmdRogueCommon.proto*\xad\x0f\n\x0eCmdRogueCommon\x12\x1b\n\x17GIJ\
+    NKOGJGHM_EDGGPGONBKK\x10\0\x12\x1c\n\x17GIJNKOGJGHM_MNCPDJLJFIK\x10\x8c,\
+    \x12\x1c\n\x17GIJNKOGJGHM_DNEFIPNCEHK\x10\xa6,\x12\x1c\n\x17GIJNKOGJGHM_\
+    AIFFMBGEOPJ\x10\xe4+\x12\x1c\n\x17GIJNKOGJGHM_CNNJNGECNNE\x10\x89,\x12\
+    \x1c\n\x17GIJNKOGJGHM_LJIGIJBBJHN\x10\x9c,\x12\x1c\n\x17GIJNKOGJGHM_AFKP\
+    FKMPIID\x10\x88,\x12\x1c\n\x17GIJNKOGJGHM_ECGCIPCGADI\x10\xa7,\x12\x1c\n\
+    \x17GIJNKOGJGHM_FPPOLDDIGFF\x10\x94,\x12\x1c\n\x17GIJNKOGJGHM_ENHIGLGFBJ\
+    P\x10\xe9+\x12\x1c\n\x17GIJNKOGJGHM_HFKJDMNODNJ\x10\x98,\x12\x1c\n\x17GI\
+    JNKOGJGHM_PHFKAFEJFLB\x10\xed+\x12\x1c\n\x17GIJNKOGJGHM_EBEKADHMMKP\x10\
+    \xc0,\x12\x1c\n\x17GIJNKOGJGHM_JJDADDOICGE\x10\xb2,\x12\x1c\n\x17GIJNKOG\
+    JGHM_ADNKCLJDPOA\x10\x80,\x12\x1c\n\x17GIJNKOGJGHM_PGJMHOEBBFM\x10\x96,\
+    \x12\x1c\n\x17GIJNKOGJGHM_LCBHOHJEJJB\x10\xa5,\x12\x1c\n\x17GIJNKOGJGHM_\
+    ENPIBIICONC\x10\xa0,\x12\x1c\n\x17GIJNKOGJGHM_CKHPICMPGDE\x10\xfd+\x12\
+    \x1c\n\x17GIJNKOGJGHM_NLADKHIDIPL\x10\xef+\x12\x1c\n\x17GIJNKOGJGHM_INLF\
+    IKJJJPG\x10\x9e,\x12\x1c\n\x17GIJNKOGJGHM_CJJCIJEBCOC\x10\xad,\x12\x1c\n\
+    \x17GIJNKOGJGHM_FFFCJKPOKPG\x10\xc1,\x12\x1c\n\x17GIJNKOGJGHM_IAPJJMINPL\
+    H\x10\x9a,\x12\x1c\n\x17GIJNKOGJGHM_OBBNMDLLOKE\x10\xb9,\x12\x1c\n\x17GI\
+    JNKOGJGHM_EBEKAJHJJEF\x10\xb1,\x12\x1c\n\x17GIJNKOGJGHM_FPNCKMGEDDJ\x10\
+    \x87,\x12\x1c\n\x17GIJNKOGJGHM_LJPHELEEEIM\x10\xa9,\x12\x1c\n\x17GIJNKOG\
+    JGHM_HHFLDOGMEHN\x10\x84,\x12\x1c\n\x17GIJNKOGJGHM_GIMIJDFDNGN\x10\xbd,\
+    \x12\x1c\n\x17GIJNKOGJGHM_FPLNLEJMHHP\x10\xf5+\x12\x1c\n\x17GIJNKOGJGHM_\
+    COOBADCJPKF\x10\x85,\x12\x1c\n\x17GIJNKOGJGHM_KGHCOPOBAIP\x10\xfb+\x12\
+    \x1c\n\x17GIJNKOGJGHM_AOBFGMDFGOC\x10\xee+\x12\x1c\n\x17GIJNKOGJGHM_PIGO\
+    NEIIFBJ\x10\xa1,\x12\x1c\n\x17GIJNKOGJGHM_CDCNMGIJEHJ\x10\x90,\x12\x1c\n\
+    \x17GIJNKOGJGHM_GOHDKELKADI\x10\xf1+\x12\x1c\n\x17GIJNKOGJGHM_DNNECBLLKB\
+    O\x10\xae,\x12\x1c\n\x17GIJNKOGJGHM_PJCOFBGPJEK\x10\x92,\x12\x1c\n\x17GI\
+    JNKOGJGHM_GPJHECIHEGG\x10\xe3+\x12\x1c\n\x17GIJNKOGJGHM_HJHLJEBGFCK\x10\
+    \xb4,\x12\x1c\n\x17GIJNKOGJGHM_IKFDAFOBAHD\x10\x8b,\x12\x1c\n\x17GIJNKOG\
+    JGHM_PALMKOFIOMP\x10\x83,\x12\x1c\n\x17GIJNKOGJGHM_EFPOLBPDMMP\x10\x82,\
+    \x12\x1c\n\x17GIJNKOGJGHM_FCHIJLIDKPK\x10\xc4,\x12\x1c\n\x17GIJNKOGJGHM_\
+    JDEGIBDGNKN\x10\xe6+\x12\x1c\n\x17GIJNKOGJGHM_BPALBPHJNNP\x10\xeb+\x12\
+    \x1c\n\x17GIJNKOGJGHM_HGCBIAEBHLI\x10\x9f,\x12\x1c\n\x17GIJNKOGJGHM_NMML\
+    GOOGHBD\x10\xb7,\x12\x1c\n\x17GIJNKOGJGHM_OLEJGPFJPEI\x10\xf6+\x12\x1c\n\
+    \x17GIJNKOGJGHM_HDNLKKBJCAA\x10\xec+\x12\x1c\n\x17GIJNKOGJGHM_CMMJIMDDPN\
+    D\x10\xb0,\x12\x1c\n\x17GIJNKOGJGHM_HCBICLDEIEM\x10\xb6,\x12\x1c\n\x17GI\
+    JNKOGJGHM_KHEBIGENECE\x10\xe5+\x12\x1c\n\x17GIJNKOGJGHM_GGLDKFDEOAA\x10\
+    \xf2+\x12\x1c\n\x17GIJNKOGJGHM_NAHKEJOLGHL\x10\xb3,\x12\x1c\n\x17GIJNKOG\
+    JGHM_INKGIMABIBD\x10\x8d,\x12\x1c\n\x17GIJNKOGJGHM_CDOBFDJOIHB\x10\xf0+\
+    \x12\x1c\n\x17GIJNKOGJGHM_GKDNKDIHJDA\x10\xaa,\x12\x1c\n\x17GIJNKOGJGHM_\
+    APOMFDFALMC\x10\x95,\x12\x1c\n\x17GIJNKOGJGHM_AHGBDLOJHED\x10\xea+\x12\
+    \x1c\n\x17GIJNKOGJGHM_CBCACNIOAIH\x10\x8e,\x12\x1c\n\x17GIJNKOGJGHM_IJGJ\
+    EDPOICP\x10\xf7+\x12\x1c\n\x17GIJNKOGJGHM_BAECOJPJADA\x10\x9b,\x12\x1c\n\
+    \x17GIJNKOGJGHM_OPDGABDCCLH\x10\xbb,b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TriggerAiPamSpeakCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TriggerAiPamSpeakCsReq.CEHJJGEIMCL)
-    pub CEHJJGEIMCL: u32,
+    // @@protoc_insertion_point(field:TriggerAiPamSpeakCsReq.BDPIMPJOJBK)
+    pub BDPIMPJOJBK: ::protobuf::EnumOrUnknown<super::FKNKNLGMACL::FKNKNLGMACL>,
+    // @@protoc_insertion_point(field:TriggerAiPamSpeakCsReq.JMPPMNAONHM)
+    pub JMPPMNAONHM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TriggerAiPamSpeakCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -47,12 +49,17 @@ impl TriggerAiPamSpeakCsReq {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(1);
+        let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEHJJGEIMCL",
-            |m: &TriggerAiPamSpeakCsReq| { &m.CEHJJGEIMCL },
-            |m: &mut TriggerAiPamSpeakCsReq| { &mut m.CEHJJGEIMCL },
+            "BDPIMPJOJBK",
+            |m: &TriggerAiPamSpeakCsReq| { &m.BDPIMPJOJBK },
+            |m: &mut TriggerAiPamSpeakCsReq| { &mut m.BDPIMPJOJBK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JMPPMNAONHM",
+            |m: &TriggerAiPamSpeakCsReq| { &m.JMPPMNAONHM },
+            |m: &mut TriggerAiPamSpeakCsReq| { &mut m.JMPPMNAONHM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TriggerAiPamSpeakCsReq>(
             "TriggerAiPamSpeakCsReq",
@@ -72,8 +79,11 @@ impl ::protobuf::Message for TriggerAiPamSpeakCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.CEHJJGEIMCL = is.read_uint32()?;
+                112 => {
+                    self.BDPIMPJOJBK = is.read_enum_or_unknown()?;
+                },
+                104 => {
+                    self.JMPPMNAONHM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +97,11 @@ impl ::protobuf::Message for TriggerAiPamSpeakCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.CEHJJGEIMCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.CEHJJGEIMCL);
+        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(14, self.BDPIMPJOJBK.value());
+        }
+        if self.JMPPMNAONHM != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.JMPPMNAONHM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +109,11 @@ impl ::protobuf::Message for TriggerAiPamSpeakCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.CEHJJGEIMCL != 0 {
-            os.write_uint32(11, self.CEHJJGEIMCL)?;
+        if self.BDPIMPJOJBK != ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ) {
+            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.BDPIMPJOJBK))?;
+        }
+        if self.JMPPMNAONHM != 0 {
+            os.write_uint32(13, self.JMPPMNAONHM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +132,15 @@ impl ::protobuf::Message for TriggerAiPamSpeakCsReq {
     }
 
     fn clear(&mut self) {
-        self.CEHJJGEIMCL = 0;
+        self.BDPIMPJOJBK = ::protobuf::EnumOrUnknown::new(super::FKNKNLGMACL::FKNKNLGMACL::FKNKNLGMACL_NLCDGIPGFDJ);
+        self.JMPPMNAONHM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TriggerAiPamSpeakCsReq {
         static instance: TriggerAiPamSpeakCsReq = TriggerAiPamSpeakCsReq {
-            CEHJJGEIMCL: 0,
+            BDPIMPJOJBK: ::protobuf::EnumOrUnknown::from_i32(0),
+            JMPPMNAONHM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for TriggerAiPamSpeakCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cTriggerAiPamSpeakCsReq.proto\":\n\x16TriggerAiPamSpeakCsReq\x12\
-    \x20\n\x0bCEHJJGEIMCL\x18\x0b\x20\x01(\rR\x0bCEHJJGEIMCLb\x06proto3\
+    \n\x1cTriggerAiPamSpeakCsReq.proto\x1a\x11FKNKNLGMACL.proto\"j\n\x16Trig\
+    gerAiPamSpeakCsReq\x12.\n\x0bBDPIMPJOJBK\x18\x0e\x20\x01(\x0e2\x0c.FKNKN\
+    LGMACLR\x0bBDPIMPJOJBK\x12\x20\n\x0bJMPPMNAONHM\x18\r\x20\x01(\rR\x0bJMP\
+    PMNAONHMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -165,7 +185,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     static file_descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::FileDescriptor> = ::protobuf::rt::Lazy::new();
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
-            let mut deps = ::std::vec::Vec::with_capacity(0);
+            let mut deps = ::std::vec::Vec::with_capacity(1);
+            deps.push(super::FKNKNLGMACL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TriggerAiPamSpeakCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

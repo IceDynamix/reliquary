@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateAiPamSettingsScRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpdateAiPamSettingsScRsp.EKBMIOCOLIC)
-    pub EKBMIOCOLIC: bool,
+    // @@protoc_insertion_point(field:UpdateAiPamSettingsScRsp.LOCNGFLCENG)
+    pub LOCNGFLCENG: bool,
     // @@protoc_insertion_point(field:UpdateAiPamSettingsScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl UpdateAiPamSettingsScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKBMIOCOLIC",
-            |m: &UpdateAiPamSettingsScRsp| { &m.EKBMIOCOLIC },
-            |m: &mut UpdateAiPamSettingsScRsp| { &mut m.EKBMIOCOLIC },
+            "LOCNGFLCENG",
+            |m: &UpdateAiPamSettingsScRsp| { &m.LOCNGFLCENG },
+            |m: &mut UpdateAiPamSettingsScRsp| { &mut m.LOCNGFLCENG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for UpdateAiPamSettingsScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.EKBMIOCOLIC = is.read_bool()?;
+                104 => {
+                    self.LOCNGFLCENG = is.read_bool()?;
                 },
                 40 => {
                     self.retcode = is.read_uint32()?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for UpdateAiPamSettingsScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EKBMIOCOLIC != false {
+        if self.LOCNGFLCENG != false {
             my_size += 1 + 1;
         }
         if self.retcode != 0 {
@@ -109,8 +109,8 @@ impl ::protobuf::Message for UpdateAiPamSettingsScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EKBMIOCOLIC != false {
-            os.write_bool(15, self.EKBMIOCOLIC)?;
+        if self.LOCNGFLCENG != false {
+            os.write_bool(13, self.LOCNGFLCENG)?;
         }
         if self.retcode != 0 {
             os.write_uint32(5, self.retcode)?;
@@ -132,14 +132,14 @@ impl ::protobuf::Message for UpdateAiPamSettingsScRsp {
     }
 
     fn clear(&mut self) {
-        self.EKBMIOCOLIC = false;
+        self.LOCNGFLCENG = false;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateAiPamSettingsScRsp {
         static instance: UpdateAiPamSettingsScRsp = UpdateAiPamSettingsScRsp {
-            EKBMIOCOLIC: false,
+            LOCNGFLCENG: false,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for UpdateAiPamSettingsScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eUpdateAiPamSettingsScRsp.proto\"V\n\x18UpdateAiPamSettingsScRsp\
-    \x12\x20\n\x0bEKBMIOCOLIC\x18\x0f\x20\x01(\x08R\x0bEKBMIOCOLIC\x12\x18\n\
+    \x12\x20\n\x0bLOCNGFLCENG\x18\r\x20\x01(\x08R\x0bLOCNGFLCENG\x12\x18\n\
     \x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 

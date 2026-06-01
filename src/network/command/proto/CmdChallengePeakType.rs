@@ -27,48 +27,48 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdChallengePeakType)
 pub enum CmdChallengePeakType {
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CKHPDGPGBJO_PCPDHELPKEM)
-    CKHPDGPGBJO_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdSetChallengePeakBossHardModeCsReq)
-    CmdSetChallengePeakBossHardModeCsReq = 8918,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdGFGIIALGLIM)
-    CmdGFGIIALGLIM = 8938,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdAMOAAIOFEDF)
-    CmdAMOAAIOFEDF = 8935,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdMCFEDAPHDLC)
-    CmdMCFEDAPHDLC = 8930,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdGetChallengePeakDataCsReq)
-    CmdGetChallengePeakDataCsReq = 8913,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdTakeChallengePeakRewardScRsp)
-    CmdTakeChallengePeakRewardScRsp = 8919,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdFAAAGAGDMNH)
-    CmdFAAAGAGDMNH = 8921,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdGetChallengePeakDataScRsp)
-    CmdGetChallengePeakDataScRsp = 8907,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdSetChallengePeakBossHardModeScRsp)
-    CmdSetChallengePeakBossHardModeScRsp = 8945,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdGetCurChallengePeakScRsp)
-    CmdGetCurChallengePeakScRsp = 8944,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdKIDBGJCMMOG)
-    CmdKIDBGJCMMOG = 8906,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdBFLFDMFDMCL)
-    CmdBFLFDMFDMCL = 8936,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdChallengePeakSettleScNotify)
-    CmdChallengePeakSettleScNotify = 8905,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdGPAOIDIKLLN)
-    CmdGPAOIDIKLLN = 8903,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdMJPPCNAMMKP)
-    CmdMJPPCNAMMKP = 8927,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdNNPGJJPKOGL)
-    CmdNNPGJJPKOGL = 8931,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdPMOMHJHGMHN)
-    CmdPMOMHJHGMHN = 8926,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdChallengePeakGroupDataUpdateScNotify)
-    CmdChallengePeakGroupDataUpdateScNotify = 8901,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdTakeChallengePeakRewardCsReq)
-    CmdTakeChallengePeakRewardCsReq = 8947,
-    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.CmdGetCurChallengePeakCsReq)
-    CmdGetCurChallengePeakCsReq = 8902,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_NLCDGIPGFDJ)
+    GHGFEJEHGDM_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_LCJOEDMEKDN)
+    GHGFEJEHGDM_LCJOEDMEKDN = 8907,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_APOCCPDOGOL)
+    GHGFEJEHGDM_APOCCPDOGOL = 8929,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_OHDGEJLCAHA)
+    GHGFEJEHGDM_OHDGEJLCAHA = 8908,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_HIMPPADFCCO)
+    GHGFEJEHGDM_HIMPPADFCCO = 8918,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_ELLHHFBMILA)
+    GHGFEJEHGDM_ELLHHFBMILA = 8912,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_LAMJHJMCEPD)
+    GHGFEJEHGDM_LAMJHJMCEPD = 8945,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_PGAGCAMLDCB)
+    GHGFEJEHGDM_PGAGCAMLDCB = 8909,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_GDGEAGHJOJP)
+    GHGFEJEHGDM_GDGEAGHJOJP = 8941,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_MHKIBOMNCIP)
+    GHGFEJEHGDM_MHKIBOMNCIP = 8934,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_NCHOGHFCMPB)
+    GHGFEJEHGDM_NCHOGHFCMPB = 8923,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_JPLEJIHMAIO)
+    GHGFEJEHGDM_JPLEJIHMAIO = 8942,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_CGHCPGNIHEH)
+    GHGFEJEHGDM_CGHCPGNIHEH = 8932,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_IGPMJGAHOPM)
+    GHGFEJEHGDM_IGPMJGAHOPM = 8921,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_LBAFAPCBFLD)
+    GHGFEJEHGDM_LBAFAPCBFLD = 8944,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_EFBBFHBDDBH)
+    GHGFEJEHGDM_EFBBFHBDDBH = 8919,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_AEGHKHLKDEF)
+    GHGFEJEHGDM_AEGHKHLKDEF = 8927,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_HBKMIEPLHOM)
+    GHGFEJEHGDM_HBKMIEPLHOM = 8943,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_KAMEEPBPLJD)
+    GHGFEJEHGDM_KAMEEPBPLJD = 8905,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_CMJGNICBNNE)
+    GHGFEJEHGDM_CMJGNICBNNE = 8940,
+    // @@protoc_insertion_point(enum_value:CmdChallengePeakType.GHGFEJEHGDM_KALFCEDOGGO)
+    GHGFEJEHGDM_KALFCEDOGGO = 8920,
 }
 
 impl ::protobuf::Enum for CmdChallengePeakType {
@@ -80,80 +80,80 @@ impl ::protobuf::Enum for CmdChallengePeakType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdChallengePeakType> {
         match value {
-            0 => ::std::option::Option::Some(CmdChallengePeakType::CKHPDGPGBJO_PCPDHELPKEM),
-            8918 => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakBossHardModeCsReq),
-            8938 => ::std::option::Option::Some(CmdChallengePeakType::CmdGFGIIALGLIM),
-            8935 => ::std::option::Option::Some(CmdChallengePeakType::CmdAMOAAIOFEDF),
-            8930 => ::std::option::Option::Some(CmdChallengePeakType::CmdMCFEDAPHDLC),
-            8913 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetChallengePeakDataCsReq),
-            8919 => ::std::option::Option::Some(CmdChallengePeakType::CmdTakeChallengePeakRewardScRsp),
-            8921 => ::std::option::Option::Some(CmdChallengePeakType::CmdFAAAGAGDMNH),
-            8907 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetChallengePeakDataScRsp),
-            8945 => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakBossHardModeScRsp),
-            8944 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetCurChallengePeakScRsp),
-            8906 => ::std::option::Option::Some(CmdChallengePeakType::CmdKIDBGJCMMOG),
-            8936 => ::std::option::Option::Some(CmdChallengePeakType::CmdBFLFDMFDMCL),
-            8905 => ::std::option::Option::Some(CmdChallengePeakType::CmdChallengePeakSettleScNotify),
-            8903 => ::std::option::Option::Some(CmdChallengePeakType::CmdGPAOIDIKLLN),
-            8927 => ::std::option::Option::Some(CmdChallengePeakType::CmdMJPPCNAMMKP),
-            8931 => ::std::option::Option::Some(CmdChallengePeakType::CmdNNPGJJPKOGL),
-            8926 => ::std::option::Option::Some(CmdChallengePeakType::CmdPMOMHJHGMHN),
-            8901 => ::std::option::Option::Some(CmdChallengePeakType::CmdChallengePeakGroupDataUpdateScNotify),
-            8947 => ::std::option::Option::Some(CmdChallengePeakType::CmdTakeChallengePeakRewardCsReq),
-            8902 => ::std::option::Option::Some(CmdChallengePeakType::CmdGetCurChallengePeakCsReq),
+            0 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_NLCDGIPGFDJ),
+            8907 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LCJOEDMEKDN),
+            8929 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_APOCCPDOGOL),
+            8908 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA),
+            8918 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO),
+            8912 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA),
+            8945 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD),
+            8909 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB),
+            8941 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP),
+            8934 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP),
+            8923 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB),
+            8942 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO),
+            8932 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH),
+            8921 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM),
+            8944 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD),
+            8919 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_EFBBFHBDDBH),
+            8927 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF),
+            8943 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM),
+            8905 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD),
+            8940 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CMJGNICBNNE),
+            8920 => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdChallengePeakType> {
         match str {
-            "CKHPDGPGBJO_PCPDHELPKEM" => ::std::option::Option::Some(CmdChallengePeakType::CKHPDGPGBJO_PCPDHELPKEM),
-            "CmdSetChallengePeakBossHardModeCsReq" => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakBossHardModeCsReq),
-            "CmdGFGIIALGLIM" => ::std::option::Option::Some(CmdChallengePeakType::CmdGFGIIALGLIM),
-            "CmdAMOAAIOFEDF" => ::std::option::Option::Some(CmdChallengePeakType::CmdAMOAAIOFEDF),
-            "CmdMCFEDAPHDLC" => ::std::option::Option::Some(CmdChallengePeakType::CmdMCFEDAPHDLC),
-            "CmdGetChallengePeakDataCsReq" => ::std::option::Option::Some(CmdChallengePeakType::CmdGetChallengePeakDataCsReq),
-            "CmdTakeChallengePeakRewardScRsp" => ::std::option::Option::Some(CmdChallengePeakType::CmdTakeChallengePeakRewardScRsp),
-            "CmdFAAAGAGDMNH" => ::std::option::Option::Some(CmdChallengePeakType::CmdFAAAGAGDMNH),
-            "CmdGetChallengePeakDataScRsp" => ::std::option::Option::Some(CmdChallengePeakType::CmdGetChallengePeakDataScRsp),
-            "CmdSetChallengePeakBossHardModeScRsp" => ::std::option::Option::Some(CmdChallengePeakType::CmdSetChallengePeakBossHardModeScRsp),
-            "CmdGetCurChallengePeakScRsp" => ::std::option::Option::Some(CmdChallengePeakType::CmdGetCurChallengePeakScRsp),
-            "CmdKIDBGJCMMOG" => ::std::option::Option::Some(CmdChallengePeakType::CmdKIDBGJCMMOG),
-            "CmdBFLFDMFDMCL" => ::std::option::Option::Some(CmdChallengePeakType::CmdBFLFDMFDMCL),
-            "CmdChallengePeakSettleScNotify" => ::std::option::Option::Some(CmdChallengePeakType::CmdChallengePeakSettleScNotify),
-            "CmdGPAOIDIKLLN" => ::std::option::Option::Some(CmdChallengePeakType::CmdGPAOIDIKLLN),
-            "CmdMJPPCNAMMKP" => ::std::option::Option::Some(CmdChallengePeakType::CmdMJPPCNAMMKP),
-            "CmdNNPGJJPKOGL" => ::std::option::Option::Some(CmdChallengePeakType::CmdNNPGJJPKOGL),
-            "CmdPMOMHJHGMHN" => ::std::option::Option::Some(CmdChallengePeakType::CmdPMOMHJHGMHN),
-            "CmdChallengePeakGroupDataUpdateScNotify" => ::std::option::Option::Some(CmdChallengePeakType::CmdChallengePeakGroupDataUpdateScNotify),
-            "CmdTakeChallengePeakRewardCsReq" => ::std::option::Option::Some(CmdChallengePeakType::CmdTakeChallengePeakRewardCsReq),
-            "CmdGetCurChallengePeakCsReq" => ::std::option::Option::Some(CmdChallengePeakType::CmdGetCurChallengePeakCsReq),
+            "GHGFEJEHGDM_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_NLCDGIPGFDJ),
+            "GHGFEJEHGDM_LCJOEDMEKDN" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LCJOEDMEKDN),
+            "GHGFEJEHGDM_APOCCPDOGOL" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_APOCCPDOGOL),
+            "GHGFEJEHGDM_OHDGEJLCAHA" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA),
+            "GHGFEJEHGDM_HIMPPADFCCO" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO),
+            "GHGFEJEHGDM_ELLHHFBMILA" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA),
+            "GHGFEJEHGDM_LAMJHJMCEPD" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD),
+            "GHGFEJEHGDM_PGAGCAMLDCB" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB),
+            "GHGFEJEHGDM_GDGEAGHJOJP" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP),
+            "GHGFEJEHGDM_MHKIBOMNCIP" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP),
+            "GHGFEJEHGDM_NCHOGHFCMPB" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB),
+            "GHGFEJEHGDM_JPLEJIHMAIO" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO),
+            "GHGFEJEHGDM_CGHCPGNIHEH" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH),
+            "GHGFEJEHGDM_IGPMJGAHOPM" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM),
+            "GHGFEJEHGDM_LBAFAPCBFLD" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD),
+            "GHGFEJEHGDM_EFBBFHBDDBH" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_EFBBFHBDDBH),
+            "GHGFEJEHGDM_AEGHKHLKDEF" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF),
+            "GHGFEJEHGDM_HBKMIEPLHOM" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM),
+            "GHGFEJEHGDM_KAMEEPBPLJD" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD),
+            "GHGFEJEHGDM_CMJGNICBNNE" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_CMJGNICBNNE),
+            "GHGFEJEHGDM_KALFCEDOGGO" => ::std::option::Option::Some(CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdChallengePeakType] = &[
-        CmdChallengePeakType::CKHPDGPGBJO_PCPDHELPKEM,
-        CmdChallengePeakType::CmdSetChallengePeakBossHardModeCsReq,
-        CmdChallengePeakType::CmdGFGIIALGLIM,
-        CmdChallengePeakType::CmdAMOAAIOFEDF,
-        CmdChallengePeakType::CmdMCFEDAPHDLC,
-        CmdChallengePeakType::CmdGetChallengePeakDataCsReq,
-        CmdChallengePeakType::CmdTakeChallengePeakRewardScRsp,
-        CmdChallengePeakType::CmdFAAAGAGDMNH,
-        CmdChallengePeakType::CmdGetChallengePeakDataScRsp,
-        CmdChallengePeakType::CmdSetChallengePeakBossHardModeScRsp,
-        CmdChallengePeakType::CmdGetCurChallengePeakScRsp,
-        CmdChallengePeakType::CmdKIDBGJCMMOG,
-        CmdChallengePeakType::CmdBFLFDMFDMCL,
-        CmdChallengePeakType::CmdChallengePeakSettleScNotify,
-        CmdChallengePeakType::CmdGPAOIDIKLLN,
-        CmdChallengePeakType::CmdMJPPCNAMMKP,
-        CmdChallengePeakType::CmdNNPGJJPKOGL,
-        CmdChallengePeakType::CmdPMOMHJHGMHN,
-        CmdChallengePeakType::CmdChallengePeakGroupDataUpdateScNotify,
-        CmdChallengePeakType::CmdTakeChallengePeakRewardCsReq,
-        CmdChallengePeakType::CmdGetCurChallengePeakCsReq,
+        CmdChallengePeakType::GHGFEJEHGDM_NLCDGIPGFDJ,
+        CmdChallengePeakType::GHGFEJEHGDM_LCJOEDMEKDN,
+        CmdChallengePeakType::GHGFEJEHGDM_APOCCPDOGOL,
+        CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA,
+        CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO,
+        CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA,
+        CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD,
+        CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB,
+        CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP,
+        CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP,
+        CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB,
+        CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO,
+        CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH,
+        CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM,
+        CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD,
+        CmdChallengePeakType::GHGFEJEHGDM_EFBBFHBDDBH,
+        CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF,
+        CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM,
+        CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD,
+        CmdChallengePeakType::GHGFEJEHGDM_CMJGNICBNNE,
+        CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO,
     ];
 }
 
@@ -165,27 +165,27 @@ impl ::protobuf::EnumFull for CmdChallengePeakType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdChallengePeakType::CKHPDGPGBJO_PCPDHELPKEM => 0,
-            CmdChallengePeakType::CmdSetChallengePeakBossHardModeCsReq => 1,
-            CmdChallengePeakType::CmdGFGIIALGLIM => 2,
-            CmdChallengePeakType::CmdAMOAAIOFEDF => 3,
-            CmdChallengePeakType::CmdMCFEDAPHDLC => 4,
-            CmdChallengePeakType::CmdGetChallengePeakDataCsReq => 5,
-            CmdChallengePeakType::CmdTakeChallengePeakRewardScRsp => 6,
-            CmdChallengePeakType::CmdFAAAGAGDMNH => 7,
-            CmdChallengePeakType::CmdGetChallengePeakDataScRsp => 8,
-            CmdChallengePeakType::CmdSetChallengePeakBossHardModeScRsp => 9,
-            CmdChallengePeakType::CmdGetCurChallengePeakScRsp => 10,
-            CmdChallengePeakType::CmdKIDBGJCMMOG => 11,
-            CmdChallengePeakType::CmdBFLFDMFDMCL => 12,
-            CmdChallengePeakType::CmdChallengePeakSettleScNotify => 13,
-            CmdChallengePeakType::CmdGPAOIDIKLLN => 14,
-            CmdChallengePeakType::CmdMJPPCNAMMKP => 15,
-            CmdChallengePeakType::CmdNNPGJJPKOGL => 16,
-            CmdChallengePeakType::CmdPMOMHJHGMHN => 17,
-            CmdChallengePeakType::CmdChallengePeakGroupDataUpdateScNotify => 18,
-            CmdChallengePeakType::CmdTakeChallengePeakRewardCsReq => 19,
-            CmdChallengePeakType::CmdGetCurChallengePeakCsReq => 20,
+            CmdChallengePeakType::GHGFEJEHGDM_NLCDGIPGFDJ => 0,
+            CmdChallengePeakType::GHGFEJEHGDM_LCJOEDMEKDN => 1,
+            CmdChallengePeakType::GHGFEJEHGDM_APOCCPDOGOL => 2,
+            CmdChallengePeakType::GHGFEJEHGDM_OHDGEJLCAHA => 3,
+            CmdChallengePeakType::GHGFEJEHGDM_HIMPPADFCCO => 4,
+            CmdChallengePeakType::GHGFEJEHGDM_ELLHHFBMILA => 5,
+            CmdChallengePeakType::GHGFEJEHGDM_LAMJHJMCEPD => 6,
+            CmdChallengePeakType::GHGFEJEHGDM_PGAGCAMLDCB => 7,
+            CmdChallengePeakType::GHGFEJEHGDM_GDGEAGHJOJP => 8,
+            CmdChallengePeakType::GHGFEJEHGDM_MHKIBOMNCIP => 9,
+            CmdChallengePeakType::GHGFEJEHGDM_NCHOGHFCMPB => 10,
+            CmdChallengePeakType::GHGFEJEHGDM_JPLEJIHMAIO => 11,
+            CmdChallengePeakType::GHGFEJEHGDM_CGHCPGNIHEH => 12,
+            CmdChallengePeakType::GHGFEJEHGDM_IGPMJGAHOPM => 13,
+            CmdChallengePeakType::GHGFEJEHGDM_LBAFAPCBFLD => 14,
+            CmdChallengePeakType::GHGFEJEHGDM_EFBBFHBDDBH => 15,
+            CmdChallengePeakType::GHGFEJEHGDM_AEGHKHLKDEF => 16,
+            CmdChallengePeakType::GHGFEJEHGDM_HBKMIEPLHOM => 17,
+            CmdChallengePeakType::GHGFEJEHGDM_KAMEEPBPLJD => 18,
+            CmdChallengePeakType::GHGFEJEHGDM_CMJGNICBNNE => 19,
+            CmdChallengePeakType::GHGFEJEHGDM_KALFCEDOGGO => 20,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -193,7 +193,7 @@ impl ::protobuf::EnumFull for CmdChallengePeakType {
 
 impl ::std::default::Default for CmdChallengePeakType {
     fn default() -> Self {
-        CmdChallengePeakType::CKHPDGPGBJO_PCPDHELPKEM
+        CmdChallengePeakType::GHGFEJEHGDM_NLCDGIPGFDJ
     }
 }
 
@@ -204,20 +204,21 @@ impl CmdChallengePeakType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aCmdChallengePeakType.proto*\x84\x05\n\x14CmdChallengePeakType\x12\
-    \x1b\n\x17CKHPDGPGBJO_PCPDHELPKEM\x10\0\x12)\n$CmdSetChallengePeakBossHa\
-    rdModeCsReq\x10\xd6E\x12\x13\n\x0eCmdGFGIIALGLIM\x10\xeaE\x12\x13\n\x0eC\
-    mdAMOAAIOFEDF\x10\xe7E\x12\x13\n\x0eCmdMCFEDAPHDLC\x10\xe2E\x12!\n\x1cCm\
-    dGetChallengePeakDataCsReq\x10\xd1E\x12$\n\x1fCmdTakeChallengePeakReward\
-    ScRsp\x10\xd7E\x12\x13\n\x0eCmdFAAAGAGDMNH\x10\xd9E\x12!\n\x1cCmdGetChal\
-    lengePeakDataScRsp\x10\xcbE\x12)\n$CmdSetChallengePeakBossHardModeScRsp\
-    \x10\xf1E\x12\x20\n\x1bCmdGetCurChallengePeakScRsp\x10\xf0E\x12\x13\n\
-    \x0eCmdKIDBGJCMMOG\x10\xcaE\x12\x13\n\x0eCmdBFLFDMFDMCL\x10\xe8E\x12#\n\
-    \x1eCmdChallengePeakSettleScNotify\x10\xc9E\x12\x13\n\x0eCmdGPAOIDIKLLN\
-    \x10\xc7E\x12\x13\n\x0eCmdMJPPCNAMMKP\x10\xdfE\x12\x13\n\x0eCmdNNPGJJPKO\
-    GL\x10\xe3E\x12\x13\n\x0eCmdPMOMHJHGMHN\x10\xdeE\x12,\n'CmdChallengePeak\
-    GroupDataUpdateScNotify\x10\xc5E\x12$\n\x1fCmdTakeChallengePeakRewardCsR\
-    eq\x10\xf3E\x12\x20\n\x1bCmdGetCurChallengePeakCsReq\x10\xc6Eb\x06proto3\
+    \n\x1aCmdChallengePeakType.proto*\x8b\x05\n\x14CmdChallengePeakType\x12\
+    \x1b\n\x17GHGFEJEHGDM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17GHGFEJEHGDM_LCJOEDM\
+    EKDN\x10\xcbE\x12\x1c\n\x17GHGFEJEHGDM_APOCCPDOGOL\x10\xe1E\x12\x1c\n\
+    \x17GHGFEJEHGDM_OHDGEJLCAHA\x10\xccE\x12\x1c\n\x17GHGFEJEHGDM_HIMPPADFCC\
+    O\x10\xd6E\x12\x1c\n\x17GHGFEJEHGDM_ELLHHFBMILA\x10\xd0E\x12\x1c\n\x17GH\
+    GFEJEHGDM_LAMJHJMCEPD\x10\xf1E\x12\x1c\n\x17GHGFEJEHGDM_PGAGCAMLDCB\x10\
+    \xcdE\x12\x1c\n\x17GHGFEJEHGDM_GDGEAGHJOJP\x10\xedE\x12\x1c\n\x17GHGFEJE\
+    HGDM_MHKIBOMNCIP\x10\xe6E\x12\x1c\n\x17GHGFEJEHGDM_NCHOGHFCMPB\x10\xdbE\
+    \x12\x1c\n\x17GHGFEJEHGDM_JPLEJIHMAIO\x10\xeeE\x12\x1c\n\x17GHGFEJEHGDM_\
+    CGHCPGNIHEH\x10\xe4E\x12\x1c\n\x17GHGFEJEHGDM_IGPMJGAHOPM\x10\xd9E\x12\
+    \x1c\n\x17GHGFEJEHGDM_LBAFAPCBFLD\x10\xf0E\x12\x1c\n\x17GHGFEJEHGDM_EFBB\
+    FHBDDBH\x10\xd7E\x12\x1c\n\x17GHGFEJEHGDM_AEGHKHLKDEF\x10\xdfE\x12\x1c\n\
+    \x17GHGFEJEHGDM_HBKMIEPLHOM\x10\xefE\x12\x1c\n\x17GHGFEJEHGDM_KAMEEPBPLJ\
+    D\x10\xc9E\x12\x1c\n\x17GHGFEJEHGDM_CMJGNICBNNE\x10\xecE\x12\x1c\n\x17GH\
+    GFEJEHGDM_KALFCEDOGGO\x10\xd8Eb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

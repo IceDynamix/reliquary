@@ -28,54 +28,54 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct BattleAvatarServantInfo {
     // message fields
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.avatar_id)
-    pub avatar_id: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.FIFHKNHEIBD)
-    pub FIFHKNHEIBD: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_turns)
-    pub total_turns: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.NFEHGEPLPAJ)
-    pub NFEHGEPLPAJ: f64,
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.skill_times)
     pub skill_times: ::std::vec::Vec<super::SkillUseProperty::SkillUseProperty>,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_damage)
-    pub total_damage: f64,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_break_damage)
-    pub total_break_damage: f64,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.attack_type_damage)
-    pub attack_type_damage: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.attack_type_break_damage)
-    pub attack_type_break_damage: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.attack_type_max_damage)
     pub attack_type_max_damage: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_damage_taken)
-    pub total_damage_taken: f64,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_heal)
-    pub total_heal: f64,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_hp_recover)
-    pub total_hp_recover: f64,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_shield)
-    pub total_shield: f64,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_shield_taken)
-    pub total_shield_taken: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.attack_type_break_damage)
+    pub attack_type_break_damage: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.attack_type_damage)
+    pub attack_type_damage: ::std::vec::Vec<super::AttackDamageProperty::AttackDamageProperty>,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.DBJOLLGOGOL)
+    pub DBJOLLGOGOL: f64,
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_shield_damage)
     pub total_shield_damage: f64,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.break_times)
-    pub break_times: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.CEHLLNCEMDN)
-    pub CEHLLNCEMDN: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.HOOFEMEKKOB)
-    pub HOOFEMEKKOB: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.DOAPBOLJOGF)
-    pub DOAPBOLJOGF: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.FJLIHMDENML)
-    pub FJLIHMDENML: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_damage)
+    pub total_damage: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.CNLEPLAEEHF)
+    pub CNLEPLAEEHF: u32,
     // @@protoc_insertion_point(field:BattleAvatarServantInfo.entity_id)
     pub entity_id: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.ANMBAIFOBJP)
-    pub ANMBAIFOBJP: u32,
-    // @@protoc_insertion_point(field:BattleAvatarServantInfo.OGDGEKFJAFO)
-    pub OGDGEKFJAFO: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_damage_taken)
+    pub total_damage_taken: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_shield)
+    pub total_shield: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.avatar_id)
+    pub avatar_id: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_hp_recover)
+    pub total_hp_recover: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.DIALJMAHFBO)
+    pub DIALJMAHFBO: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_heal)
+    pub total_heal: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.MEBKILMPMGA)
+    pub MEBKILMPMGA: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.NFELHIGFIOM)
+    pub NFELHIGFIOM: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.break_times)
+    pub break_times: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_turns)
+    pub total_turns: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_shield_taken)
+    pub total_shield_taken: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.KAAHKLDJPJE)
+    pub KAAHKLDJPJE: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.JDHDJFCKBGD)
+    pub JDHDJFCKBGD: u32,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.total_break_damage)
+    pub total_break_damage: f64,
+    // @@protoc_insertion_point(field:BattleAvatarServantInfo.GPLELDEIEKO)
+    pub GPLELDEIEKO: f64,
     // special fields
     // @@protoc_insertion_point(special_field:BattleAvatarServantInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -95,45 +95,15 @@ impl BattleAvatarServantInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(24);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "avatar_id",
-            |m: &BattleAvatarServantInfo| { &m.avatar_id },
-            |m: &mut BattleAvatarServantInfo| { &mut m.avatar_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FIFHKNHEIBD",
-            |m: &BattleAvatarServantInfo| { &m.FIFHKNHEIBD },
-            |m: &mut BattleAvatarServantInfo| { &mut m.FIFHKNHEIBD },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_turns",
-            |m: &BattleAvatarServantInfo| { &m.total_turns },
-            |m: &mut BattleAvatarServantInfo| { &mut m.total_turns },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NFEHGEPLPAJ",
-            |m: &BattleAvatarServantInfo| { &m.NFEHGEPLPAJ },
-            |m: &mut BattleAvatarServantInfo| { &mut m.NFEHGEPLPAJ },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "skill_times",
             |m: &BattleAvatarServantInfo| { &m.skill_times },
             |m: &mut BattleAvatarServantInfo| { &mut m.skill_times },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_damage",
-            |m: &BattleAvatarServantInfo| { &m.total_damage },
-            |m: &mut BattleAvatarServantInfo| { &mut m.total_damage },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_break_damage",
-            |m: &BattleAvatarServantInfo| { &m.total_break_damage },
-            |m: &mut BattleAvatarServantInfo| { &mut m.total_break_damage },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "attack_type_damage",
-            |m: &BattleAvatarServantInfo| { &m.attack_type_damage },
-            |m: &mut BattleAvatarServantInfo| { &mut m.attack_type_damage },
+            "attack_type_max_damage",
+            |m: &BattleAvatarServantInfo| { &m.attack_type_max_damage },
+            |m: &mut BattleAvatarServantInfo| { &mut m.attack_type_max_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "attack_type_break_damage",
@@ -141,34 +111,14 @@ impl BattleAvatarServantInfo {
             |m: &mut BattleAvatarServantInfo| { &mut m.attack_type_break_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "attack_type_max_damage",
-            |m: &BattleAvatarServantInfo| { &m.attack_type_max_damage },
-            |m: &mut BattleAvatarServantInfo| { &mut m.attack_type_max_damage },
+            "attack_type_damage",
+            |m: &BattleAvatarServantInfo| { &m.attack_type_damage },
+            |m: &mut BattleAvatarServantInfo| { &mut m.attack_type_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_damage_taken",
-            |m: &BattleAvatarServantInfo| { &m.total_damage_taken },
-            |m: &mut BattleAvatarServantInfo| { &mut m.total_damage_taken },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_heal",
-            |m: &BattleAvatarServantInfo| { &m.total_heal },
-            |m: &mut BattleAvatarServantInfo| { &mut m.total_heal },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_hp_recover",
-            |m: &BattleAvatarServantInfo| { &m.total_hp_recover },
-            |m: &mut BattleAvatarServantInfo| { &mut m.total_hp_recover },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_shield",
-            |m: &BattleAvatarServantInfo| { &m.total_shield },
-            |m: &mut BattleAvatarServantInfo| { &mut m.total_shield },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "total_shield_taken",
-            |m: &BattleAvatarServantInfo| { &m.total_shield_taken },
-            |m: &mut BattleAvatarServantInfo| { &mut m.total_shield_taken },
+            "DBJOLLGOGOL",
+            |m: &BattleAvatarServantInfo| { &m.DBJOLLGOGOL },
+            |m: &mut BattleAvatarServantInfo| { &mut m.DBJOLLGOGOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "total_shield_damage",
@@ -176,29 +126,14 @@ impl BattleAvatarServantInfo {
             |m: &mut BattleAvatarServantInfo| { &mut m.total_shield_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "break_times",
-            |m: &BattleAvatarServantInfo| { &m.break_times },
-            |m: &mut BattleAvatarServantInfo| { &mut m.break_times },
+            "total_damage",
+            |m: &BattleAvatarServantInfo| { &m.total_damage },
+            |m: &mut BattleAvatarServantInfo| { &mut m.total_damage },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CEHLLNCEMDN",
-            |m: &BattleAvatarServantInfo| { &m.CEHLLNCEMDN },
-            |m: &mut BattleAvatarServantInfo| { &mut m.CEHLLNCEMDN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HOOFEMEKKOB",
-            |m: &BattleAvatarServantInfo| { &m.HOOFEMEKKOB },
-            |m: &mut BattleAvatarServantInfo| { &mut m.HOOFEMEKKOB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DOAPBOLJOGF",
-            |m: &BattleAvatarServantInfo| { &m.DOAPBOLJOGF },
-            |m: &mut BattleAvatarServantInfo| { &mut m.DOAPBOLJOGF },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FJLIHMDENML",
-            |m: &BattleAvatarServantInfo| { &m.FJLIHMDENML },
-            |m: &mut BattleAvatarServantInfo| { &mut m.FJLIHMDENML },
+            "CNLEPLAEEHF",
+            |m: &BattleAvatarServantInfo| { &m.CNLEPLAEEHF },
+            |m: &mut BattleAvatarServantInfo| { &mut m.CNLEPLAEEHF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "entity_id",
@@ -206,14 +141,79 @@ impl BattleAvatarServantInfo {
             |m: &mut BattleAvatarServantInfo| { &mut m.entity_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ANMBAIFOBJP",
-            |m: &BattleAvatarServantInfo| { &m.ANMBAIFOBJP },
-            |m: &mut BattleAvatarServantInfo| { &mut m.ANMBAIFOBJP },
+            "total_damage_taken",
+            |m: &BattleAvatarServantInfo| { &m.total_damage_taken },
+            |m: &mut BattleAvatarServantInfo| { &mut m.total_damage_taken },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OGDGEKFJAFO",
-            |m: &BattleAvatarServantInfo| { &m.OGDGEKFJAFO },
-            |m: &mut BattleAvatarServantInfo| { &mut m.OGDGEKFJAFO },
+            "total_shield",
+            |m: &BattleAvatarServantInfo| { &m.total_shield },
+            |m: &mut BattleAvatarServantInfo| { &mut m.total_shield },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "avatar_id",
+            |m: &BattleAvatarServantInfo| { &m.avatar_id },
+            |m: &mut BattleAvatarServantInfo| { &mut m.avatar_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_hp_recover",
+            |m: &BattleAvatarServantInfo| { &m.total_hp_recover },
+            |m: &mut BattleAvatarServantInfo| { &mut m.total_hp_recover },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "DIALJMAHFBO",
+            |m: &BattleAvatarServantInfo| { &m.DIALJMAHFBO },
+            |m: &mut BattleAvatarServantInfo| { &mut m.DIALJMAHFBO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_heal",
+            |m: &BattleAvatarServantInfo| { &m.total_heal },
+            |m: &mut BattleAvatarServantInfo| { &mut m.total_heal },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MEBKILMPMGA",
+            |m: &BattleAvatarServantInfo| { &m.MEBKILMPMGA },
+            |m: &mut BattleAvatarServantInfo| { &mut m.MEBKILMPMGA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "NFELHIGFIOM",
+            |m: &BattleAvatarServantInfo| { &m.NFELHIGFIOM },
+            |m: &mut BattleAvatarServantInfo| { &mut m.NFELHIGFIOM },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "break_times",
+            |m: &BattleAvatarServantInfo| { &m.break_times },
+            |m: &mut BattleAvatarServantInfo| { &mut m.break_times },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_turns",
+            |m: &BattleAvatarServantInfo| { &m.total_turns },
+            |m: &mut BattleAvatarServantInfo| { &mut m.total_turns },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_shield_taken",
+            |m: &BattleAvatarServantInfo| { &m.total_shield_taken },
+            |m: &mut BattleAvatarServantInfo| { &mut m.total_shield_taken },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KAAHKLDJPJE",
+            |m: &BattleAvatarServantInfo| { &m.KAAHKLDJPJE },
+            |m: &mut BattleAvatarServantInfo| { &mut m.KAAHKLDJPJE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JDHDJFCKBGD",
+            |m: &BattleAvatarServantInfo| { &m.JDHDJFCKBGD },
+            |m: &mut BattleAvatarServantInfo| { &mut m.JDHDJFCKBGD },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "total_break_damage",
+            |m: &BattleAvatarServantInfo| { &m.total_break_damage },
+            |m: &mut BattleAvatarServantInfo| { &mut m.total_break_damage },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GPLELDEIEKO",
+            |m: &BattleAvatarServantInfo| { &m.GPLELDEIEKO },
+            |m: &mut BattleAvatarServantInfo| { &mut m.GPLELDEIEKO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleAvatarServantInfo>(
             "BattleAvatarServantInfo",
@@ -233,77 +233,77 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.avatar_id = is.read_uint32()?;
-                },
-                16 => {
-                    self.FIFHKNHEIBD = is.read_uint32()?;
-                },
-                24 => {
-                    self.total_turns = is.read_uint32()?;
-                },
-                33 => {
-                    self.NFEHGEPLPAJ = is.read_double()?;
-                },
                 42 => {
                     self.skill_times.push(is.read_message()?);
-                },
-                49 => {
-                    self.total_damage = is.read_double()?;
-                },
-                57 => {
-                    self.total_break_damage = is.read_double()?;
-                },
-                66 => {
-                    self.attack_type_damage.push(is.read_message()?);
-                },
-                74 => {
-                    self.attack_type_break_damage.push(is.read_message()?);
                 },
                 82 => {
                     self.attack_type_max_damage.push(is.read_message()?);
                 },
-                89 => {
-                    self.total_damage_taken = is.read_double()?;
+                74 => {
+                    self.attack_type_break_damage.push(is.read_message()?);
                 },
-                97 => {
-                    self.total_heal = is.read_double()?;
+                66 => {
+                    self.attack_type_damage.push(is.read_message()?);
                 },
-                105 => {
-                    self.total_hp_recover = is.read_double()?;
-                },
-                113 => {
-                    self.total_shield = is.read_double()?;
-                },
-                121 => {
-                    self.total_shield_taken = is.read_double()?;
+                33 => {
+                    self.DBJOLLGOGOL = is.read_double()?;
                 },
                 129 => {
                     self.total_shield_damage = is.read_double()?;
                 },
-                136 => {
-                    self.break_times = is.read_uint32()?;
-                },
-                144 => {
-                    self.CEHLLNCEMDN = is.read_uint32()?;
+                49 => {
+                    self.total_damage = is.read_double()?;
                 },
                 152 => {
-                    self.HOOFEMEKKOB = is.read_uint32()?;
-                },
-                160 => {
-                    self.DOAPBOLJOGF = is.read_uint32()?;
-                },
-                169 => {
-                    self.FJLIHMDENML = is.read_double()?;
+                    self.CNLEPLAEEHF = is.read_uint32()?;
                 },
                 176 => {
                     self.entity_id = is.read_uint32()?;
                 },
+                89 => {
+                    self.total_damage_taken = is.read_double()?;
+                },
+                113 => {
+                    self.total_shield = is.read_double()?;
+                },
+                8 => {
+                    self.avatar_id = is.read_uint32()?;
+                },
+                105 => {
+                    self.total_hp_recover = is.read_double()?;
+                },
+                169 => {
+                    self.DIALJMAHFBO = is.read_double()?;
+                },
+                97 => {
+                    self.total_heal = is.read_double()?;
+                },
                 184 => {
-                    self.ANMBAIFOBJP = is.read_uint32()?;
+                    self.MEBKILMPMGA = is.read_uint32()?;
+                },
+                144 => {
+                    self.NFELHIGFIOM = is.read_uint32()?;
+                },
+                136 => {
+                    self.break_times = is.read_uint32()?;
+                },
+                24 => {
+                    self.total_turns = is.read_uint32()?;
+                },
+                121 => {
+                    self.total_shield_taken = is.read_double()?;
+                },
+                16 => {
+                    self.KAAHKLDJPJE = is.read_uint32()?;
+                },
+                160 => {
+                    self.JDHDJFCKBGD = is.read_uint32()?;
+                },
+                57 => {
+                    self.total_break_damage = is.read_double()?;
                 },
                 193 => {
-                    self.OGDGEKFJAFO = is.read_double()?;
+                    self.GPLELDEIEKO = is.read_double()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -317,33 +317,7 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
-        }
-        if self.FIFHKNHEIBD != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.FIFHKNHEIBD);
-        }
-        if self.total_turns != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.total_turns);
-        }
-        if self.NFEHGEPLPAJ != 0. {
-            my_size += 1 + 8;
-        }
         for value in &self.skill_times {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        if self.total_damage != 0. {
-            my_size += 1 + 8;
-        }
-        if self.total_break_damage != 0. {
-            my_size += 1 + 8;
-        }
-        for value in &self.attack_type_damage {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.attack_type_break_damage {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -351,46 +325,72 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.total_damage_taken != 0. {
-            my_size += 1 + 8;
-        }
-        if self.total_heal != 0. {
-            my_size += 1 + 8;
-        }
-        if self.total_hp_recover != 0. {
-            my_size += 1 + 8;
-        }
-        if self.total_shield != 0. {
-            my_size += 1 + 8;
-        }
-        if self.total_shield_taken != 0. {
+        for value in &self.attack_type_break_damage {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.attack_type_damage {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.DBJOLLGOGOL != 0. {
             my_size += 1 + 8;
         }
         if self.total_shield_damage != 0. {
             my_size += 2 + 8;
         }
-        if self.break_times != 0 {
-            my_size += ::protobuf::rt::uint32_size(17, self.break_times);
+        if self.total_damage != 0. {
+            my_size += 1 + 8;
         }
-        if self.CEHLLNCEMDN != 0 {
-            my_size += ::protobuf::rt::uint32_size(18, self.CEHLLNCEMDN);
-        }
-        if self.HOOFEMEKKOB != 0 {
-            my_size += ::protobuf::rt::uint32_size(19, self.HOOFEMEKKOB);
-        }
-        if self.DOAPBOLJOGF != 0 {
-            my_size += ::protobuf::rt::uint32_size(20, self.DOAPBOLJOGF);
-        }
-        if self.FJLIHMDENML != 0. {
-            my_size += 2 + 8;
+        if self.CNLEPLAEEHF != 0 {
+            my_size += ::protobuf::rt::uint32_size(19, self.CNLEPLAEEHF);
         }
         if self.entity_id != 0 {
             my_size += ::protobuf::rt::uint32_size(22, self.entity_id);
         }
-        if self.ANMBAIFOBJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(23, self.ANMBAIFOBJP);
+        if self.total_damage_taken != 0. {
+            my_size += 1 + 8;
         }
-        if self.OGDGEKFJAFO != 0. {
+        if self.total_shield != 0. {
+            my_size += 1 + 8;
+        }
+        if self.avatar_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.avatar_id);
+        }
+        if self.total_hp_recover != 0. {
+            my_size += 1 + 8;
+        }
+        if self.DIALJMAHFBO != 0. {
+            my_size += 2 + 8;
+        }
+        if self.total_heal != 0. {
+            my_size += 1 + 8;
+        }
+        if self.MEBKILMPMGA != 0 {
+            my_size += ::protobuf::rt::uint32_size(23, self.MEBKILMPMGA);
+        }
+        if self.NFELHIGFIOM != 0 {
+            my_size += ::protobuf::rt::uint32_size(18, self.NFELHIGFIOM);
+        }
+        if self.break_times != 0 {
+            my_size += ::protobuf::rt::uint32_size(17, self.break_times);
+        }
+        if self.total_turns != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.total_turns);
+        }
+        if self.total_shield_taken != 0. {
+            my_size += 1 + 8;
+        }
+        if self.KAAHKLDJPJE != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.KAAHKLDJPJE);
+        }
+        if self.JDHDJFCKBGD != 0 {
+            my_size += ::protobuf::rt::uint32_size(20, self.JDHDJFCKBGD);
+        }
+        if self.total_break_damage != 0. {
+            my_size += 1 + 8;
+        }
+        if self.GPLELDEIEKO != 0. {
             my_size += 2 + 8;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -399,77 +399,77 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.avatar_id != 0 {
-            os.write_uint32(1, self.avatar_id)?;
-        }
-        if self.FIFHKNHEIBD != 0 {
-            os.write_uint32(2, self.FIFHKNHEIBD)?;
-        }
-        if self.total_turns != 0 {
-            os.write_uint32(3, self.total_turns)?;
-        }
-        if self.NFEHGEPLPAJ != 0. {
-            os.write_double(4, self.NFEHGEPLPAJ)?;
-        }
         for v in &self.skill_times {
             ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
-        };
-        if self.total_damage != 0. {
-            os.write_double(6, self.total_damage)?;
-        }
-        if self.total_break_damage != 0. {
-            os.write_double(7, self.total_break_damage)?;
-        }
-        for v in &self.attack_type_damage {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        for v in &self.attack_type_break_damage {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         };
         for v in &self.attack_type_max_damage {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
-        if self.total_damage_taken != 0. {
-            os.write_double(11, self.total_damage_taken)?;
-        }
-        if self.total_heal != 0. {
-            os.write_double(12, self.total_heal)?;
-        }
-        if self.total_hp_recover != 0. {
-            os.write_double(13, self.total_hp_recover)?;
-        }
-        if self.total_shield != 0. {
-            os.write_double(14, self.total_shield)?;
-        }
-        if self.total_shield_taken != 0. {
-            os.write_double(15, self.total_shield_taken)?;
+        for v in &self.attack_type_break_damage {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        };
+        for v in &self.attack_type_damage {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+        };
+        if self.DBJOLLGOGOL != 0. {
+            os.write_double(4, self.DBJOLLGOGOL)?;
         }
         if self.total_shield_damage != 0. {
             os.write_double(16, self.total_shield_damage)?;
         }
-        if self.break_times != 0 {
-            os.write_uint32(17, self.break_times)?;
+        if self.total_damage != 0. {
+            os.write_double(6, self.total_damage)?;
         }
-        if self.CEHLLNCEMDN != 0 {
-            os.write_uint32(18, self.CEHLLNCEMDN)?;
-        }
-        if self.HOOFEMEKKOB != 0 {
-            os.write_uint32(19, self.HOOFEMEKKOB)?;
-        }
-        if self.DOAPBOLJOGF != 0 {
-            os.write_uint32(20, self.DOAPBOLJOGF)?;
-        }
-        if self.FJLIHMDENML != 0. {
-            os.write_double(21, self.FJLIHMDENML)?;
+        if self.CNLEPLAEEHF != 0 {
+            os.write_uint32(19, self.CNLEPLAEEHF)?;
         }
         if self.entity_id != 0 {
             os.write_uint32(22, self.entity_id)?;
         }
-        if self.ANMBAIFOBJP != 0 {
-            os.write_uint32(23, self.ANMBAIFOBJP)?;
+        if self.total_damage_taken != 0. {
+            os.write_double(11, self.total_damage_taken)?;
         }
-        if self.OGDGEKFJAFO != 0. {
-            os.write_double(24, self.OGDGEKFJAFO)?;
+        if self.total_shield != 0. {
+            os.write_double(14, self.total_shield)?;
+        }
+        if self.avatar_id != 0 {
+            os.write_uint32(1, self.avatar_id)?;
+        }
+        if self.total_hp_recover != 0. {
+            os.write_double(13, self.total_hp_recover)?;
+        }
+        if self.DIALJMAHFBO != 0. {
+            os.write_double(21, self.DIALJMAHFBO)?;
+        }
+        if self.total_heal != 0. {
+            os.write_double(12, self.total_heal)?;
+        }
+        if self.MEBKILMPMGA != 0 {
+            os.write_uint32(23, self.MEBKILMPMGA)?;
+        }
+        if self.NFELHIGFIOM != 0 {
+            os.write_uint32(18, self.NFELHIGFIOM)?;
+        }
+        if self.break_times != 0 {
+            os.write_uint32(17, self.break_times)?;
+        }
+        if self.total_turns != 0 {
+            os.write_uint32(3, self.total_turns)?;
+        }
+        if self.total_shield_taken != 0. {
+            os.write_double(15, self.total_shield_taken)?;
+        }
+        if self.KAAHKLDJPJE != 0 {
+            os.write_uint32(2, self.KAAHKLDJPJE)?;
+        }
+        if self.JDHDJFCKBGD != 0 {
+            os.write_uint32(20, self.JDHDJFCKBGD)?;
+        }
+        if self.total_break_damage != 0. {
+            os.write_double(7, self.total_break_damage)?;
+        }
+        if self.GPLELDEIEKO != 0. {
+            os.write_double(24, self.GPLELDEIEKO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -488,59 +488,59 @@ impl ::protobuf::Message for BattleAvatarServantInfo {
     }
 
     fn clear(&mut self) {
-        self.avatar_id = 0;
-        self.FIFHKNHEIBD = 0;
-        self.total_turns = 0;
-        self.NFEHGEPLPAJ = 0.;
         self.skill_times.clear();
-        self.total_damage = 0.;
-        self.total_break_damage = 0.;
-        self.attack_type_damage.clear();
-        self.attack_type_break_damage.clear();
         self.attack_type_max_damage.clear();
-        self.total_damage_taken = 0.;
-        self.total_heal = 0.;
-        self.total_hp_recover = 0.;
-        self.total_shield = 0.;
-        self.total_shield_taken = 0.;
+        self.attack_type_break_damage.clear();
+        self.attack_type_damage.clear();
+        self.DBJOLLGOGOL = 0.;
         self.total_shield_damage = 0.;
-        self.break_times = 0;
-        self.CEHLLNCEMDN = 0;
-        self.HOOFEMEKKOB = 0;
-        self.DOAPBOLJOGF = 0;
-        self.FJLIHMDENML = 0.;
+        self.total_damage = 0.;
+        self.CNLEPLAEEHF = 0;
         self.entity_id = 0;
-        self.ANMBAIFOBJP = 0;
-        self.OGDGEKFJAFO = 0.;
+        self.total_damage_taken = 0.;
+        self.total_shield = 0.;
+        self.avatar_id = 0;
+        self.total_hp_recover = 0.;
+        self.DIALJMAHFBO = 0.;
+        self.total_heal = 0.;
+        self.MEBKILMPMGA = 0;
+        self.NFELHIGFIOM = 0;
+        self.break_times = 0;
+        self.total_turns = 0;
+        self.total_shield_taken = 0.;
+        self.KAAHKLDJPJE = 0;
+        self.JDHDJFCKBGD = 0;
+        self.total_break_damage = 0.;
+        self.GPLELDEIEKO = 0.;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleAvatarServantInfo {
         static instance: BattleAvatarServantInfo = BattleAvatarServantInfo {
-            avatar_id: 0,
-            FIFHKNHEIBD: 0,
-            total_turns: 0,
-            NFEHGEPLPAJ: 0.,
             skill_times: ::std::vec::Vec::new(),
-            total_damage: 0.,
-            total_break_damage: 0.,
-            attack_type_damage: ::std::vec::Vec::new(),
-            attack_type_break_damage: ::std::vec::Vec::new(),
             attack_type_max_damage: ::std::vec::Vec::new(),
-            total_damage_taken: 0.,
-            total_heal: 0.,
-            total_hp_recover: 0.,
-            total_shield: 0.,
-            total_shield_taken: 0.,
+            attack_type_break_damage: ::std::vec::Vec::new(),
+            attack_type_damage: ::std::vec::Vec::new(),
+            DBJOLLGOGOL: 0.,
             total_shield_damage: 0.,
-            break_times: 0,
-            CEHLLNCEMDN: 0,
-            HOOFEMEKKOB: 0,
-            DOAPBOLJOGF: 0,
-            FJLIHMDENML: 0.,
+            total_damage: 0.,
+            CNLEPLAEEHF: 0,
             entity_id: 0,
-            ANMBAIFOBJP: 0,
-            OGDGEKFJAFO: 0.,
+            total_damage_taken: 0.,
+            total_shield: 0.,
+            avatar_id: 0,
+            total_hp_recover: 0.,
+            DIALJMAHFBO: 0.,
+            total_heal: 0.,
+            MEBKILMPMGA: 0,
+            NFELHIGFIOM: 0,
+            break_times: 0,
+            total_turns: 0,
+            total_shield_taken: 0.,
+            KAAHKLDJPJE: 0,
+            JDHDJFCKBGD: 0,
+            total_break_damage: 0.,
+            GPLELDEIEKO: 0.,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -567,29 +567,29 @@ impl ::protobuf::reflect::ProtobufValue for BattleAvatarServantInfo {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1dBattleAvatarServantInfo.proto\x1a\x1aAttackDamageProperty.proto\
     \x1a\x16SkillUseProperty.proto\"\x83\x08\n\x17BattleAvatarServantInfo\
-    \x12\x1b\n\tavatar_id\x18\x01\x20\x01(\rR\x08avatarId\x12\x20\n\x0bFIFHK\
-    NHEIBD\x18\x02\x20\x01(\rR\x0bFIFHKNHEIBD\x12\x1f\n\x0btotal_turns\x18\
-    \x03\x20\x01(\rR\ntotalTurns\x12\x20\n\x0bNFEHGEPLPAJ\x18\x04\x20\x01(\
-    \x01R\x0bNFEHGEPLPAJ\x122\n\x0bskill_times\x18\x05\x20\x03(\x0b2\x11.Ski\
-    llUsePropertyR\nskillTimes\x12!\n\x0ctotal_damage\x18\x06\x20\x01(\x01R\
-    \x0btotalDamage\x12,\n\x12total_break_damage\x18\x07\x20\x01(\x01R\x10to\
-    talBreakDamage\x12C\n\x12attack_type_damage\x18\x08\x20\x03(\x0b2\x15.At\
-    tackDamagePropertyR\x10attackTypeDamage\x12N\n\x18attack_type_break_dama\
-    ge\x18\t\x20\x03(\x0b2\x15.AttackDamagePropertyR\x15attackTypeBreakDamag\
-    e\x12J\n\x16attack_type_max_damage\x18\n\x20\x03(\x0b2\x15.AttackDamageP\
-    ropertyR\x13attackTypeMaxDamage\x12,\n\x12total_damage_taken\x18\x0b\x20\
-    \x01(\x01R\x10totalDamageTaken\x12\x1d\n\ntotal_heal\x18\x0c\x20\x01(\
-    \x01R\ttotalHeal\x12(\n\x10total_hp_recover\x18\r\x20\x01(\x01R\x0etotal\
-    HpRecover\x12!\n\x0ctotal_shield\x18\x0e\x20\x01(\x01R\x0btotalShield\
-    \x12,\n\x12total_shield_taken\x18\x0f\x20\x01(\x01R\x10totalShieldTaken\
-    \x12.\n\x13total_shield_damage\x18\x10\x20\x01(\x01R\x11totalShieldDamag\
-    e\x12\x1f\n\x0bbreak_times\x18\x11\x20\x01(\rR\nbreakTimes\x12\x20\n\x0b\
-    CEHLLNCEMDN\x18\x12\x20\x01(\rR\x0bCEHLLNCEMDN\x12\x20\n\x0bHOOFEMEKKOB\
-    \x18\x13\x20\x01(\rR\x0bHOOFEMEKKOB\x12\x20\n\x0bDOAPBOLJOGF\x18\x14\x20\
-    \x01(\rR\x0bDOAPBOLJOGF\x12\x20\n\x0bFJLIHMDENML\x18\x15\x20\x01(\x01R\
-    \x0bFJLIHMDENML\x12\x1b\n\tentity_id\x18\x16\x20\x01(\rR\x08entityId\x12\
-    \x20\n\x0bANMBAIFOBJP\x18\x17\x20\x01(\rR\x0bANMBAIFOBJP\x12\x20\n\x0bOG\
-    DGEKFJAFO\x18\x18\x20\x01(\x01R\x0bOGDGEKFJAFOb\x06proto3\
+    \x122\n\x0bskill_times\x18\x05\x20\x03(\x0b2\x11.SkillUsePropertyR\nskil\
+    lTimes\x12J\n\x16attack_type_max_damage\x18\n\x20\x03(\x0b2\x15.AttackDa\
+    magePropertyR\x13attackTypeMaxDamage\x12N\n\x18attack_type_break_damage\
+    \x18\t\x20\x03(\x0b2\x15.AttackDamagePropertyR\x15attackTypeBreakDamage\
+    \x12C\n\x12attack_type_damage\x18\x08\x20\x03(\x0b2\x15.AttackDamageProp\
+    ertyR\x10attackTypeDamage\x12\x20\n\x0bDBJOLLGOGOL\x18\x04\x20\x01(\x01R\
+    \x0bDBJOLLGOGOL\x12.\n\x13total_shield_damage\x18\x10\x20\x01(\x01R\x11t\
+    otalShieldDamage\x12!\n\x0ctotal_damage\x18\x06\x20\x01(\x01R\x0btotalDa\
+    mage\x12\x20\n\x0bCNLEPLAEEHF\x18\x13\x20\x01(\rR\x0bCNLEPLAEEHF\x12\x1b\
+    \n\tentity_id\x18\x16\x20\x01(\rR\x08entityId\x12,\n\x12total_damage_tak\
+    en\x18\x0b\x20\x01(\x01R\x10totalDamageTaken\x12!\n\x0ctotal_shield\x18\
+    \x0e\x20\x01(\x01R\x0btotalShield\x12\x1b\n\tavatar_id\x18\x01\x20\x01(\
+    \rR\x08avatarId\x12(\n\x10total_hp_recover\x18\r\x20\x01(\x01R\x0etotalH\
+    pRecover\x12\x20\n\x0bDIALJMAHFBO\x18\x15\x20\x01(\x01R\x0bDIALJMAHFBO\
+    \x12\x1d\n\ntotal_heal\x18\x0c\x20\x01(\x01R\ttotalHeal\x12\x20\n\x0bMEB\
+    KILMPMGA\x18\x17\x20\x01(\rR\x0bMEBKILMPMGA\x12\x20\n\x0bNFELHIGFIOM\x18\
+    \x12\x20\x01(\rR\x0bNFELHIGFIOM\x12\x1f\n\x0bbreak_times\x18\x11\x20\x01\
+    (\rR\nbreakTimes\x12\x1f\n\x0btotal_turns\x18\x03\x20\x01(\rR\ntotalTurn\
+    s\x12,\n\x12total_shield_taken\x18\x0f\x20\x01(\x01R\x10totalShieldTaken\
+    \x12\x20\n\x0bKAAHKLDJPJE\x18\x02\x20\x01(\rR\x0bKAAHKLDJPJE\x12\x20\n\
+    \x0bJDHDJFCKBGD\x18\x14\x20\x01(\rR\x0bJDHDJFCKBGD\x12,\n\x12total_break\
+    _damage\x18\x07\x20\x01(\x01R\x10totalBreakDamage\x12\x20\n\x0bGPLELDEIE\
+    KO\x18\x18\x20\x01(\x01R\x0bGPLELDEIEKOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

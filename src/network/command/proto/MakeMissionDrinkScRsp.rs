@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MakeMissionDrinkScRsp {
     // message fields
-    // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.DKGODNAMBHH)
-    pub DKGODNAMBHH: ::protobuf::MessageField<super::CIGKBDIGGOI::CIGKBDIGGOI>,
-    // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.DAIKNKALKCM)
-    pub DAIKNKALKCM: bool,
+    // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.LMOGDPMLKFH)
+    pub LMOGDPMLKFH: ::protobuf::MessageField<super::DFJPGILAAON::DFJPGILAAON>,
     // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.is_save)
     pub is_save: bool,
+    // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.KGKEJAKKLDP)
+    pub KGKEJAKKLDP: bool,
     // @@protoc_insertion_point(field:MakeMissionDrinkScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -55,20 +55,20 @@ impl MakeMissionDrinkScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::CIGKBDIGGOI::CIGKBDIGGOI>(
-            "DKGODNAMBHH",
-            |m: &MakeMissionDrinkScRsp| { &m.DKGODNAMBHH },
-            |m: &mut MakeMissionDrinkScRsp| { &mut m.DKGODNAMBHH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DAIKNKALKCM",
-            |m: &MakeMissionDrinkScRsp| { &m.DAIKNKALKCM },
-            |m: &mut MakeMissionDrinkScRsp| { &mut m.DAIKNKALKCM },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFJPGILAAON::DFJPGILAAON>(
+            "LMOGDPMLKFH",
+            |m: &MakeMissionDrinkScRsp| { &m.LMOGDPMLKFH },
+            |m: &mut MakeMissionDrinkScRsp| { &mut m.LMOGDPMLKFH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "is_save",
             |m: &MakeMissionDrinkScRsp| { &m.is_save },
             |m: &mut MakeMissionDrinkScRsp| { &mut m.is_save },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KGKEJAKKLDP",
+            |m: &MakeMissionDrinkScRsp| { &m.KGKEJAKKLDP },
+            |m: &mut MakeMissionDrinkScRsp| { &mut m.KGKEJAKKLDP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -93,16 +93,16 @@ impl ::protobuf::Message for MakeMissionDrinkScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.DKGODNAMBHH)?;
-                },
-                56 => {
-                    self.DAIKNKALKCM = is.read_bool()?;
-                },
-                40 => {
-                    self.is_save = is.read_bool()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.LMOGDPMLKFH)?;
                 },
                 112 => {
+                    self.is_save = is.read_bool()?;
+                },
+                48 => {
+                    self.KGKEJAKKLDP = is.read_bool()?;
+                },
+                16 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -117,18 +117,18 @@ impl ::protobuf::Message for MakeMissionDrinkScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.DKGODNAMBHH.as_ref() {
+        if let Some(v) = self.LMOGDPMLKFH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.DAIKNKALKCM != false {
-            my_size += 1 + 1;
         }
         if self.is_save != false {
             my_size += 1 + 1;
         }
+        if self.KGKEJAKKLDP != false {
+            my_size += 1 + 1;
+        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for MakeMissionDrinkScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.DKGODNAMBHH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        }
-        if self.DAIKNKALKCM != false {
-            os.write_bool(7, self.DAIKNKALKCM)?;
+        if let Some(v) = self.LMOGDPMLKFH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.is_save != false {
-            os.write_bool(5, self.is_save)?;
+            os.write_bool(14, self.is_save)?;
+        }
+        if self.KGKEJAKKLDP != false {
+            os.write_bool(6, self.KGKEJAKKLDP)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(2, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for MakeMissionDrinkScRsp {
     }
 
     fn clear(&mut self) {
-        self.DKGODNAMBHH.clear();
-        self.DAIKNKALKCM = false;
+        self.LMOGDPMLKFH.clear();
         self.is_save = false;
+        self.KGKEJAKKLDP = false;
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MakeMissionDrinkScRsp {
         static instance: MakeMissionDrinkScRsp = MakeMissionDrinkScRsp {
-            DKGODNAMBHH: ::protobuf::MessageField::none(),
-            DAIKNKALKCM: false,
+            LMOGDPMLKFH: ::protobuf::MessageField::none(),
             is_save: false,
+            KGKEJAKKLDP: false,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for MakeMissionDrinkScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bMakeMissionDrinkScRsp.proto\x1a\x11CIGKBDIGGOI.proto\"\x9c\x01\n\
-    \x15MakeMissionDrinkScRsp\x12.\n\x0bDKGODNAMBHH\x18\x0b\x20\x01(\x0b2\
-    \x0c.CIGKBDIGGOIR\x0bDKGODNAMBHH\x12\x20\n\x0bDAIKNKALKCM\x18\x07\x20\
-    \x01(\x08R\x0bDAIKNKALKCM\x12\x17\n\x07is_save\x18\x05\x20\x01(\x08R\x06\
-    isSave\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x1bMakeMissionDrinkScRsp.proto\x1a\x11DFJPGILAAON.proto\"\x9c\x01\n\
+    \x15MakeMissionDrinkScRsp\x12.\n\x0bLMOGDPMLKFH\x18\x08\x20\x01(\x0b2\
+    \x0c.DFJPGILAAONR\x0bLMOGDPMLKFH\x12\x17\n\x07is_save\x18\x0e\x20\x01(\
+    \x08R\x06isSave\x12\x20\n\x0bKGKEJAKKLDP\x18\x06\x20\x01(\x08R\x0bKGKEJA\
+    KKLDP\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::CIGKBDIGGOI::file_descriptor().clone());
+            deps.push(super::DFJPGILAAON::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MakeMissionDrinkScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

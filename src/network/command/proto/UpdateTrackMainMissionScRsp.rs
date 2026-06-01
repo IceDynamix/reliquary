@@ -86,13 +86,13 @@ impl ::protobuf::Message for UpdateTrackMainMissionScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
+                24 => {
                     self.prev_track_mission_id = is.read_uint32()?;
                 },
-                72 => {
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                104 => {
+                48 => {
                     self.track_mission_id = is.read_uint32()?;
                 },
                 tag => {
@@ -108,13 +108,13 @@ impl ::protobuf::Message for UpdateTrackMainMissionScRsp {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.prev_track_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.prev_track_mission_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.prev_track_mission_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         if self.track_mission_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.track_mission_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.track_mission_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,13 +123,13 @@ impl ::protobuf::Message for UpdateTrackMainMissionScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.prev_track_mission_id != 0 {
-            os.write_uint32(4, self.prev_track_mission_id)?;
+            os.write_uint32(3, self.prev_track_mission_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
         if self.track_mission_id != 0 {
-            os.write_uint32(13, self.track_mission_id)?;
+            os.write_uint32(6, self.track_mission_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for UpdateTrackMainMissionScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!UpdateTrackMainMissionScRsp.proto\"\x94\x01\n\x1bUpdateTrackMainMissi\
-    onScRsp\x121\n\x15prev_track_mission_id\x18\x04\x20\x01(\rR\x12prevTrack\
-    MissionId\x12\x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12(\n\x10tr\
-    ack_mission_id\x18\r\x20\x01(\rR\x0etrackMissionIdb\x06proto3\
+    onScRsp\x121\n\x15prev_track_mission_id\x18\x03\x20\x01(\rR\x12prevTrack\
+    MissionId\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12(\n\x10\
+    track_mission_id\x18\x06\x20\x01(\rR\x0etrackMissionIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

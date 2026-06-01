@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct ChimeraDuelSaveFriendPvpLineupScRsp {
     // message fields
     // @@protoc_insertion_point(field:ChimeraDuelSaveFriendPvpLineupScRsp.lineup)
-    pub lineup: ::protobuf::MessageField<super::DKDGGGCDAGM::DKDGGGCDAGM>,
+    pub lineup: ::protobuf::MessageField<super::PNCNGIAMLCA::PNCNGIAMLCA>,
     // @@protoc_insertion_point(field:ChimeraDuelSaveFriendPvpLineupScRsp.retcode)
     pub retcode: u32,
     // @@protoc_insertion_point(field:ChimeraDuelSaveFriendPvpLineupScRsp.slot)
@@ -53,7 +53,7 @@ impl ChimeraDuelSaveFriendPvpLineupScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DKDGGGCDAGM::DKDGGGCDAGM>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PNCNGIAMLCA::PNCNGIAMLCA>(
             "lineup",
             |m: &ChimeraDuelSaveFriendPvpLineupScRsp| { &m.lineup },
             |m: &mut ChimeraDuelSaveFriendPvpLineupScRsp| { &mut m.lineup },
@@ -89,10 +89,10 @@ impl ::protobuf::Message for ChimeraDuelSaveFriendPvpLineupScRsp {
                 10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.lineup)?;
                 },
-                56 => {
+                80 => {
                     self.retcode = is.read_uint32()?;
                 },
-                24 => {
+                40 => {
                     self.slot = is.read_uint32()?;
                 },
                 tag => {
@@ -112,10 +112,10 @@ impl ::protobuf::Message for ChimeraDuelSaveFriendPvpLineupScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.slot);
+            my_size += ::protobuf::rt::uint32_size(5, self.slot);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -127,10 +127,10 @@ impl ::protobuf::Message for ChimeraDuelSaveFriendPvpLineupScRsp {
             ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(10, self.retcode)?;
         }
         if self.slot != 0 {
-            os.write_uint32(3, self.slot)?;
+            os.write_uint32(5, self.slot)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelSaveFriendPvpLineupScRsp 
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n)ChimeraDuelSaveFriendPvpLineupScRsp.proto\x1a\x11DKDGGGCDAGM.proto\"y\
+    \n)ChimeraDuelSaveFriendPvpLineupScRsp.proto\x1a\x11PNCNGIAMLCA.proto\"y\
     \n#ChimeraDuelSaveFriendPvpLineupScRsp\x12$\n\x06lineup\x18\x01\x20\x01(\
-    \x0b2\x0c.DKDGGGCDAGMR\x06lineup\x12\x18\n\x07retcode\x18\x07\x20\x01(\r\
-    R\x07retcode\x12\x12\n\x04slot\x18\x03\x20\x01(\rR\x04slotb\x06proto3\
+    \x0b2\x0c.PNCNGIAMLCAR\x06lineup\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
+    \x07retcode\x12\x12\n\x04slot\x18\x05\x20\x01(\rR\x04slotb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DKDGGGCDAGM::file_descriptor().clone());
+            deps.push(super::PNCNGIAMLCA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChimeraDuelSaveFriendPvpLineupScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

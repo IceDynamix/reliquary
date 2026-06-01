@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetPlatformPlayerInfoCsReq {
     // message fields
+    // @@protoc_insertion_point(field:GetPlatformPlayerInfoCsReq.EPIBJAMIJFI)
+    pub EPIBJAMIJFI: ::std::vec::Vec<::std::string::String>,
     // @@protoc_insertion_point(field:GetPlatformPlayerInfoCsReq.platform)
     pub platform: ::protobuf::EnumOrUnknown<super::PlatformType::PlatformType>,
-    // @@protoc_insertion_point(field:GetPlatformPlayerInfoCsReq.PBHLHFPIACP)
-    pub PBHLHFPIACP: ::std::vec::Vec<::std::string::String>,
     // special fields
     // @@protoc_insertion_point(special_field:GetPlatformPlayerInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetPlatformPlayerInfoCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "EPIBJAMIJFI",
+            |m: &GetPlatformPlayerInfoCsReq| { &m.EPIBJAMIJFI },
+            |m: &mut GetPlatformPlayerInfoCsReq| { &mut m.EPIBJAMIJFI },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "platform",
             |m: &GetPlatformPlayerInfoCsReq| { &m.platform },
             |m: &mut GetPlatformPlayerInfoCsReq| { &mut m.platform },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PBHLHFPIACP",
-            |m: &GetPlatformPlayerInfoCsReq| { &m.PBHLHFPIACP },
-            |m: &mut GetPlatformPlayerInfoCsReq| { &mut m.PBHLHFPIACP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetPlatformPlayerInfoCsReq>(
             "GetPlatformPlayerInfoCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetPlatformPlayerInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.platform = is.read_enum_or_unknown()?;
+                50 => {
+                    self.EPIBJAMIJFI.push(is.read_string()?);
                 },
-                10 => {
-                    self.PBHLHFPIACP.push(is.read_string()?);
+                80 => {
+                    self.platform = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,24 +97,24 @@ impl ::protobuf::Message for GetPlatformPlayerInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            my_size += ::protobuf::rt::int32_size(14, self.platform.value());
-        }
-        for value in &self.PBHLHFPIACP {
-            my_size += ::protobuf::rt::string_size(1, &value);
+        for value in &self.EPIBJAMIJFI {
+            my_size += ::protobuf::rt::string_size(6, &value);
         };
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            my_size += ::protobuf::rt::int32_size(10, self.platform.value());
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
-            os.write_enum(14, ::protobuf::EnumOrUnknown::value(&self.platform))?;
-        }
-        for v in &self.PBHLHFPIACP {
-            os.write_string(1, &v)?;
+        for v in &self.EPIBJAMIJFI {
+            os.write_string(6, &v)?;
         };
+        if self.platform != ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR) {
+            os.write_enum(10, ::protobuf::EnumOrUnknown::value(&self.platform))?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GetPlatformPlayerInfoCsReq {
     }
 
     fn clear(&mut self) {
+        self.EPIBJAMIJFI.clear();
         self.platform = ::protobuf::EnumOrUnknown::new(super::PlatformType::PlatformType::EDITOR);
-        self.PBHLHFPIACP.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetPlatformPlayerInfoCsReq {
         static instance: GetPlatformPlayerInfoCsReq = GetPlatformPlayerInfoCsReq {
+            EPIBJAMIJFI: ::std::vec::Vec::new(),
             platform: ::protobuf::EnumOrUnknown::from_i32(0),
-            PBHLHFPIACP: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetPlatformPlayerInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetPlatformPlayerInfoCsReq.proto\x1a\x12PlatformType.proto\"i\n\
-    \x1aGetPlatformPlayerInfoCsReq\x12)\n\x08platform\x18\x0e\x20\x01(\x0e2\
-    \r.PlatformTypeR\x08platform\x12\x20\n\x0bPBHLHFPIACP\x18\x01\x20\x03(\t\
-    R\x0bPBHLHFPIACPb\x06proto3\
+    \x1aGetPlatformPlayerInfoCsReq\x12\x20\n\x0bEPIBJAMIJFI\x18\x06\x20\x03(\
+    \tR\x0bEPIBJAMIJFI\x12)\n\x08platform\x18\n\x20\x01(\x0e2\r.PlatformType\
+    R\x08platformb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

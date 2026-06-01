@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ResetEraFlipperDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ResetEraFlipperDataCsReq.OIPLJJIODIL)
-    pub OIPLJJIODIL: bool,
+    // @@protoc_insertion_point(field:ResetEraFlipperDataCsReq.CJEILDIOIOE)
+    pub CJEILDIOIOE: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ResetEraFlipperDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ResetEraFlipperDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OIPLJJIODIL",
-            |m: &ResetEraFlipperDataCsReq| { &m.OIPLJJIODIL },
-            |m: &mut ResetEraFlipperDataCsReq| { &mut m.OIPLJJIODIL },
+            "CJEILDIOIOE",
+            |m: &ResetEraFlipperDataCsReq| { &m.CJEILDIOIOE },
+            |m: &mut ResetEraFlipperDataCsReq| { &mut m.CJEILDIOIOE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ResetEraFlipperDataCsReq>(
             "ResetEraFlipperDataCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ResetEraFlipperDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.OIPLJJIODIL = is.read_bool()?;
+                56 => {
+                    self.CJEILDIOIOE = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for ResetEraFlipperDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OIPLJJIODIL != false {
+        if self.CJEILDIOIOE != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ResetEraFlipperDataCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OIPLJJIODIL != false {
-            os.write_bool(8, self.OIPLJJIODIL)?;
+        if self.CJEILDIOIOE != false {
+            os.write_bool(7, self.CJEILDIOIOE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ResetEraFlipperDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.OIPLJJIODIL = false;
+        self.CJEILDIOIOE = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ResetEraFlipperDataCsReq {
         static instance: ResetEraFlipperDataCsReq = ResetEraFlipperDataCsReq {
-            OIPLJJIODIL: false,
+            CJEILDIOIOE: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ResetEraFlipperDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eResetEraFlipperDataCsReq.proto\"<\n\x18ResetEraFlipperDataCsReq\
-    \x12\x20\n\x0bOIPLJJIODIL\x18\x08\x20\x01(\x08R\x0bOIPLJJIODILb\x06proto\
+    \x12\x20\n\x0bCJEILDIOIOE\x18\x07\x20\x01(\x08R\x0bCJEILDIOIOEb\x06proto\
     3\
 ";
 

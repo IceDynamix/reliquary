@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdDailyActiveType)
 pub enum CmdDailyActiveType {
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.OMDDKHBJBGE_PCPDHELPKEM)
-    OMDDKHBJBGE_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeApRewardScRsp)
-    CmdTakeApRewardScRsp = 3310,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdDailyActiveInfoNotify)
-    CmdDailyActiveInfoNotify = 3314,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeApRewardCsReq)
-    CmdTakeApRewardCsReq = 3391,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdGetDailyActiveInfoCsReq)
-    CmdGetDailyActiveInfoCsReq = 3394,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeAllApRewardCsReq)
-    CmdTakeAllApRewardCsReq = 3318,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdTakeAllApRewardScRsp)
-    CmdTakeAllApRewardScRsp = 3309,
-    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.CmdGetDailyActiveInfoScRsp)
-    CmdGetDailyActiveInfoScRsp = 3395,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.HIAIBKDFAAM_NLCDGIPGFDJ)
+    HIAIBKDFAAM_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.HIAIBKDFAAM_LOCMAKODHLH)
+    HIAIBKDFAAM_LOCMAKODHLH = 3313,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.HIAIBKDFAAM_NOIANFEEEFI)
+    HIAIBKDFAAM_NOIANFEEEFI = 3373,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.HIAIBKDFAAM_HLIOHNOAFLA)
+    HIAIBKDFAAM_HLIOHNOAFLA = 3336,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.HIAIBKDFAAM_CDEFDIBDNIF)
+    HIAIBKDFAAM_CDEFDIBDNIF = 3380,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.HIAIBKDFAAM_EBPEHLPFPAP)
+    HIAIBKDFAAM_EBPEHLPFPAP = 3327,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.HIAIBKDFAAM_EGJONHAOAGA)
+    HIAIBKDFAAM_EGJONHAOAGA = 3315,
+    // @@protoc_insertion_point(enum_value:CmdDailyActiveType.HIAIBKDFAAM_LGMPAEEBNIB)
+    HIAIBKDFAAM_LGMPAEEBNIB = 3303,
 }
 
 impl ::protobuf::Enum for CmdDailyActiveType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for CmdDailyActiveType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdDailyActiveType> {
         match value {
-            0 => ::std::option::Option::Some(CmdDailyActiveType::OMDDKHBJBGE_PCPDHELPKEM),
-            3310 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardScRsp),
-            3314 => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveInfoNotify),
-            3391 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardCsReq),
-            3394 => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoCsReq),
-            3318 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardCsReq),
-            3309 => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardScRsp),
-            3395 => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoScRsp),
+            0 => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_NLCDGIPGFDJ),
+            3313 => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_LOCMAKODHLH),
+            3373 => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_NOIANFEEEFI),
+            3336 => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_HLIOHNOAFLA),
+            3380 => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_CDEFDIBDNIF),
+            3327 => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_EBPEHLPFPAP),
+            3315 => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_EGJONHAOAGA),
+            3303 => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_LGMPAEEBNIB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdDailyActiveType> {
         match str {
-            "OMDDKHBJBGE_PCPDHELPKEM" => ::std::option::Option::Some(CmdDailyActiveType::OMDDKHBJBGE_PCPDHELPKEM),
-            "CmdTakeApRewardScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardScRsp),
-            "CmdDailyActiveInfoNotify" => ::std::option::Option::Some(CmdDailyActiveType::CmdDailyActiveInfoNotify),
-            "CmdTakeApRewardCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeApRewardCsReq),
-            "CmdGetDailyActiveInfoCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoCsReq),
-            "CmdTakeAllApRewardCsReq" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardCsReq),
-            "CmdTakeAllApRewardScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdTakeAllApRewardScRsp),
-            "CmdGetDailyActiveInfoScRsp" => ::std::option::Option::Some(CmdDailyActiveType::CmdGetDailyActiveInfoScRsp),
+            "HIAIBKDFAAM_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_NLCDGIPGFDJ),
+            "HIAIBKDFAAM_LOCMAKODHLH" => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_LOCMAKODHLH),
+            "HIAIBKDFAAM_NOIANFEEEFI" => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_NOIANFEEEFI),
+            "HIAIBKDFAAM_HLIOHNOAFLA" => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_HLIOHNOAFLA),
+            "HIAIBKDFAAM_CDEFDIBDNIF" => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_CDEFDIBDNIF),
+            "HIAIBKDFAAM_EBPEHLPFPAP" => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_EBPEHLPFPAP),
+            "HIAIBKDFAAM_EGJONHAOAGA" => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_EGJONHAOAGA),
+            "HIAIBKDFAAM_LGMPAEEBNIB" => ::std::option::Option::Some(CmdDailyActiveType::HIAIBKDFAAM_LGMPAEEBNIB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdDailyActiveType] = &[
-        CmdDailyActiveType::OMDDKHBJBGE_PCPDHELPKEM,
-        CmdDailyActiveType::CmdTakeApRewardScRsp,
-        CmdDailyActiveType::CmdDailyActiveInfoNotify,
-        CmdDailyActiveType::CmdTakeApRewardCsReq,
-        CmdDailyActiveType::CmdGetDailyActiveInfoCsReq,
-        CmdDailyActiveType::CmdTakeAllApRewardCsReq,
-        CmdDailyActiveType::CmdTakeAllApRewardScRsp,
-        CmdDailyActiveType::CmdGetDailyActiveInfoScRsp,
+        CmdDailyActiveType::HIAIBKDFAAM_NLCDGIPGFDJ,
+        CmdDailyActiveType::HIAIBKDFAAM_LOCMAKODHLH,
+        CmdDailyActiveType::HIAIBKDFAAM_NOIANFEEEFI,
+        CmdDailyActiveType::HIAIBKDFAAM_HLIOHNOAFLA,
+        CmdDailyActiveType::HIAIBKDFAAM_CDEFDIBDNIF,
+        CmdDailyActiveType::HIAIBKDFAAM_EBPEHLPFPAP,
+        CmdDailyActiveType::HIAIBKDFAAM_EGJONHAOAGA,
+        CmdDailyActiveType::HIAIBKDFAAM_LGMPAEEBNIB,
     ];
 }
 
@@ -100,14 +100,14 @@ impl ::protobuf::EnumFull for CmdDailyActiveType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdDailyActiveType::OMDDKHBJBGE_PCPDHELPKEM => 0,
-            CmdDailyActiveType::CmdTakeApRewardScRsp => 1,
-            CmdDailyActiveType::CmdDailyActiveInfoNotify => 2,
-            CmdDailyActiveType::CmdTakeApRewardCsReq => 3,
-            CmdDailyActiveType::CmdGetDailyActiveInfoCsReq => 4,
-            CmdDailyActiveType::CmdTakeAllApRewardCsReq => 5,
-            CmdDailyActiveType::CmdTakeAllApRewardScRsp => 6,
-            CmdDailyActiveType::CmdGetDailyActiveInfoScRsp => 7,
+            CmdDailyActiveType::HIAIBKDFAAM_NLCDGIPGFDJ => 0,
+            CmdDailyActiveType::HIAIBKDFAAM_LOCMAKODHLH => 1,
+            CmdDailyActiveType::HIAIBKDFAAM_NOIANFEEEFI => 2,
+            CmdDailyActiveType::HIAIBKDFAAM_HLIOHNOAFLA => 3,
+            CmdDailyActiveType::HIAIBKDFAAM_CDEFDIBDNIF => 4,
+            CmdDailyActiveType::HIAIBKDFAAM_EBPEHLPFPAP => 5,
+            CmdDailyActiveType::HIAIBKDFAAM_EGJONHAOAGA => 6,
+            CmdDailyActiveType::HIAIBKDFAAM_LGMPAEEBNIB => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,7 +115,7 @@ impl ::protobuf::EnumFull for CmdDailyActiveType {
 
 impl ::std::default::Default for CmdDailyActiveType {
     fn default() -> Self {
-        CmdDailyActiveType::OMDDKHBJBGE_PCPDHELPKEM
+        CmdDailyActiveType::HIAIBKDFAAM_NLCDGIPGFDJ
     }
 }
 
@@ -126,13 +126,13 @@ impl CmdDailyActiveType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdDailyActiveType.proto*\x84\x02\n\x12CmdDailyActiveType\x12\x1b\
-    \n\x17OMDDKHBJBGE_PCPDHELPKEM\x10\0\x12\x19\n\x14CmdTakeApRewardScRsp\
-    \x10\xee\x19\x12\x1d\n\x18CmdDailyActiveInfoNotify\x10\xf2\x19\x12\x19\n\
-    \x14CmdTakeApRewardCsReq\x10\xbf\x1a\x12\x1f\n\x1aCmdGetDailyActiveInfoC\
-    sReq\x10\xc2\x1a\x12\x1c\n\x17CmdTakeAllApRewardCsReq\x10\xf6\x19\x12\
-    \x1c\n\x17CmdTakeAllApRewardScRsp\x10\xed\x19\x12\x1f\n\x1aCmdGetDailyAc\
-    tiveInfoScRsp\x10\xc3\x1ab\x06proto3\
+    \n\x18CmdDailyActiveType.proto*\x83\x02\n\x12CmdDailyActiveType\x12\x1b\
+    \n\x17HIAIBKDFAAM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17HIAIBKDFAAM_LOCMAKODHLH\
+    \x10\xf1\x19\x12\x1c\n\x17HIAIBKDFAAM_NOIANFEEEFI\x10\xad\x1a\x12\x1c\n\
+    \x17HIAIBKDFAAM_HLIOHNOAFLA\x10\x88\x1a\x12\x1c\n\x17HIAIBKDFAAM_CDEFDIB\
+    DNIF\x10\xb4\x1a\x12\x1c\n\x17HIAIBKDFAAM_EBPEHLPFPAP\x10\xff\x19\x12\
+    \x1c\n\x17HIAIBKDFAAM_EGJONHAOAGA\x10\xf3\x19\x12\x1c\n\x17HIAIBKDFAAM_L\
+    GMPAEEBNIB\x10\xe7\x19b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

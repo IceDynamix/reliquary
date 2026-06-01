@@ -27,74 +27,74 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdTrainPartyType)
 pub enum CmdTrainPartyType {
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.HLDBDENFAIH_PCPDHELPKEM)
-    HLDBDENFAIH_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGetDataScRsp)
-    CmdTrainPartyGetDataScRsp = 8010,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildSelfDisplayAreaDiyScRsp)
-    CmdTrainPartyBuildSelfDisplayAreaDiyScRsp = 8005,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildStartStepScRsp)
-    CmdTrainPartyBuildStartStepScRsp = 8037,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartySyncUpdateScNotify)
-    CmdTrainPartySyncUpdateScNotify = 8063,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyHandlePendingActionScRsp)
-    CmdTrainPartyHandlePendingActionScRsp = 8001,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildStartStepCsReq)
-    CmdTrainPartyBuildStartStepCsReq = 8074,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdKOLIOJKKDCK)
-    CmdKOLIOJKKDCK = 8051,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartySetBadgeAutoFillScRsp)
-    CmdTrainPartySetBadgeAutoFillScRsp = 8071,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGamePlayStartScRsp)
-    CmdTrainPartyGamePlayStartScRsp = 8021,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdHGAAPFBDGKC)
-    CmdHGAAPFBDGKC = 8058,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildDiyScRsp)
-    CmdTrainPartyBuildDiyScRsp = 8038,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyHandlePendingActionCsReq)
-    CmdTrainPartyHandlePendingActionCsReq = 8039,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildSelfDisplayAreaDiyScNotify)
-    CmdTrainPartyBuildSelfDisplayAreaDiyScNotify = 8011,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyMoveScNotify)
-    CmdTrainPartyMoveScNotify = 8014,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyUseCardScRsp)
-    CmdTrainPartyUseCardScRsp = 8095,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildingUpdateNotify)
-    CmdTrainPartyBuildingUpdateNotify = 8072,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartySetBadgeAutoFillCsReq)
-    CmdTrainPartySetBadgeAutoFillCsReq = 8030,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildDiyCsReq)
-    CmdTrainPartyBuildDiyCsReq = 8004,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdENCAJEEEGGL)
-    CmdENCAJEEEGGL = 8061,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyUseCardCsReq)
-    CmdTrainPartyUseCardCsReq = 8094,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGamePlayStartCsReq)
-    CmdTrainPartyGamePlayStartCsReq = 8057,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildRoomScNotify)
-    CmdTrainPartyBuildRoomScNotify = 8054,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyBuildSelfDisplayAreaDiyCsReq)
-    CmdTrainPartyBuildSelfDisplayAreaDiyCsReq = 8066,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdDGJCELHHFLK)
-    CmdDGJCELHHFLK = 8007,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.HLDBDENFAIH_IDNPNLLCCHH)
-    HLDBDENFAIH_IDNPNLLCCHH = 8053,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGetDataCsReq)
-    CmdTrainPartyGetDataCsReq = 8091,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.HLDBDENFAIH_LPOBADAJGNA)
-    HLDBDENFAIH_LPOBADAJGNA = 8073,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdFCONNMFHEGH)
-    CmdFCONNMFHEGH = 8033,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartySettleNotify)
-    CmdTrainPartySettleNotify = 8009,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyGamePlaySettleNotify)
-    CmdTrainPartyGamePlaySettleNotify = 8028,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyTakeBuildLevelAwardCsReq)
-    CmdTrainPartyTakeBuildLevelAwardCsReq = 8008,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdPOELOKDNAGA)
-    CmdPOELOKDNAGA = 8025,
-    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.CmdTrainPartyTakeBuildLevelAwardScRsp)
-    CmdTrainPartyTakeBuildLevelAwardScRsp = 8017,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_NLCDGIPGFDJ)
+    NHGAOAKEMDK_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_NEHFOBDKJFB)
+    NHGAOAKEMDK_NEHFOBDKJFB = 8029,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_FCAOAKODHHK)
+    NHGAOAKEMDK_FCAOAKODHHK = 8012,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_PHEIEAIEFPF)
+    NHGAOAKEMDK_PHEIEAIEFPF = 8003,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_AGHNFFMFIOE)
+    NHGAOAKEMDK_AGHNFFMFIOE = 8099,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_MFEKCAKCOBI)
+    NHGAOAKEMDK_MFEKCAKCOBI = 8015,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_MAOMNEIHOLP)
+    NHGAOAKEMDK_MAOMNEIHOLP = 8085,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_JOIOOOFNBIC)
+    NHGAOAKEMDK_JOIOOOFNBIC = 8092,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_CDDGCNFBFMI)
+    NHGAOAKEMDK_CDDGCNFBFMI = 8028,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_OGNEJPLMPBM)
+    NHGAOAKEMDK_OGNEJPLMPBM = 8042,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_MLCMENCKJDF)
+    NHGAOAKEMDK_MLCMENCKJDF = 8010,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_GEIFHOAPCIM)
+    NHGAOAKEMDK_GEIFHOAPCIM = 8020,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_EONAFDCGLLF)
+    NHGAOAKEMDK_EONAFDCGLLF = 8054,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_FCJFKKBJBCF)
+    NHGAOAKEMDK_FCJFKKBJBCF = 8066,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_LGJINEDPKAE)
+    NHGAOAKEMDK_LGJINEDPKAE = 8063,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_LJGOKPDBPMH)
+    NHGAOAKEMDK_LJGOKPDBPMH = 8067,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_OPDELNFFHPN)
+    NHGAOAKEMDK_OPDELNFFHPN = 8073,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_IJPNOIALBCJ)
+    NHGAOAKEMDK_IJPNOIALBCJ = 8027,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_KGDONBJEODA)
+    NHGAOAKEMDK_KGDONBJEODA = 8030,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_NPPMJELJPLP)
+    NHGAOAKEMDK_NPPMJELJPLP = 8053,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_IHNEEIPCGCJ)
+    NHGAOAKEMDK_IHNEEIPCGCJ = 8061,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_IKPJPMNCGKK)
+    NHGAOAKEMDK_IKPJPMNCGKK = 8076,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_IEGOOFAOIDK)
+    NHGAOAKEMDK_IEGOOFAOIDK = 8078,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_EOIGPFGGIOF)
+    NHGAOAKEMDK_EOIGPFGGIOF = 8009,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_BNDGMFNEFFL)
+    NHGAOAKEMDK_BNDGMFNEFFL = 8032,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_LINHHGAMHDN)
+    NHGAOAKEMDK_LINHHGAMHDN = 8036,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_GPBMCKIMCJK)
+    NHGAOAKEMDK_GPBMCKIMCJK = 8017,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_LLDOODNHAPO)
+    NHGAOAKEMDK_LLDOODNHAPO = 8006,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_PNBFFGCLEAC)
+    NHGAOAKEMDK_PNBFFGCLEAC = 8100,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_GFKCHNBEIIK)
+    NHGAOAKEMDK_GFKCHNBEIIK = 8024,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_LOOFEOBBGEH)
+    NHGAOAKEMDK_LOOFEOBBGEH = 8071,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_OBHINPCABDB)
+    NHGAOAKEMDK_OBHINPCABDB = 8001,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_FCFBLMMLBGL)
+    NHGAOAKEMDK_FCFBLMMLBGL = 8083,
+    // @@protoc_insertion_point(enum_value:CmdTrainPartyType.NHGAOAKEMDK_EDBPKKFHMOH)
+    NHGAOAKEMDK_EDBPKKFHMOH = 8080,
 }
 
 impl ::protobuf::Enum for CmdTrainPartyType {
@@ -106,119 +106,119 @@ impl ::protobuf::Enum for CmdTrainPartyType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdTrainPartyType> {
         match value {
-            0 => ::std::option::Option::Some(CmdTrainPartyType::HLDBDENFAIH_PCPDHELPKEM),
-            8010 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataScRsp),
-            8005 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyScRsp),
-            8037 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepScRsp),
-            8063 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySyncUpdateScNotify),
-            8001 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp),
-            8074 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq),
-            8051 => ::std::option::Option::Some(CmdTrainPartyType::CmdKOLIOJKKDCK),
-            8071 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySetBadgeAutoFillScRsp),
-            8021 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp),
-            8058 => ::std::option::Option::Some(CmdTrainPartyType::CmdHGAAPFBDGKC),
-            8038 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp),
-            8039 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionCsReq),
-            8011 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyScNotify),
-            8014 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyMoveScNotify),
-            8095 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardScRsp),
-            8072 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify),
-            8030 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySetBadgeAutoFillCsReq),
-            8004 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq),
-            8061 => ::std::option::Option::Some(CmdTrainPartyType::CmdENCAJEEEGGL),
-            8094 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardCsReq),
-            8057 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq),
-            8054 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildRoomScNotify),
-            8066 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyCsReq),
-            8007 => ::std::option::Option::Some(CmdTrainPartyType::CmdDGJCELHHFLK),
-            8053 => ::std::option::Option::Some(CmdTrainPartyType::HLDBDENFAIH_IDNPNLLCCHH),
-            8091 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataCsReq),
-            8073 => ::std::option::Option::Some(CmdTrainPartyType::HLDBDENFAIH_LPOBADAJGNA),
-            8033 => ::std::option::Option::Some(CmdTrainPartyType::CmdFCONNMFHEGH),
-            8009 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySettleNotify),
-            8028 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify),
-            8008 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq),
-            8025 => ::std::option::Option::Some(CmdTrainPartyType::CmdPOELOKDNAGA),
-            8017 => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp),
+            0 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_NLCDGIPGFDJ),
+            8029 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_NEHFOBDKJFB),
+            8012 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_FCAOAKODHHK),
+            8003 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_PHEIEAIEFPF),
+            8099 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_AGHNFFMFIOE),
+            8015 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_MFEKCAKCOBI),
+            8085 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_MAOMNEIHOLP),
+            8092 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_JOIOOOFNBIC),
+            8028 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_CDDGCNFBFMI),
+            8042 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_OGNEJPLMPBM),
+            8010 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_MLCMENCKJDF),
+            8020 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_GEIFHOAPCIM),
+            8054 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_EONAFDCGLLF),
+            8066 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_FCJFKKBJBCF),
+            8063 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_LGJINEDPKAE),
+            8067 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_LJGOKPDBPMH),
+            8073 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_OPDELNFFHPN),
+            8027 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_IJPNOIALBCJ),
+            8030 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_KGDONBJEODA),
+            8053 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_NPPMJELJPLP),
+            8061 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_IHNEEIPCGCJ),
+            8076 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_IKPJPMNCGKK),
+            8078 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_IEGOOFAOIDK),
+            8009 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_EOIGPFGGIOF),
+            8032 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_BNDGMFNEFFL),
+            8036 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_LINHHGAMHDN),
+            8017 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_GPBMCKIMCJK),
+            8006 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_LLDOODNHAPO),
+            8100 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_PNBFFGCLEAC),
+            8024 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_GFKCHNBEIIK),
+            8071 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_LOOFEOBBGEH),
+            8001 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_OBHINPCABDB),
+            8083 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_FCFBLMMLBGL),
+            8080 => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_EDBPKKFHMOH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdTrainPartyType> {
         match str {
-            "HLDBDENFAIH_PCPDHELPKEM" => ::std::option::Option::Some(CmdTrainPartyType::HLDBDENFAIH_PCPDHELPKEM),
-            "CmdTrainPartyGetDataScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataScRsp),
-            "CmdTrainPartyBuildSelfDisplayAreaDiyScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyScRsp),
-            "CmdTrainPartyBuildStartStepScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepScRsp),
-            "CmdTrainPartySyncUpdateScNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySyncUpdateScNotify),
-            "CmdTrainPartyHandlePendingActionScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp),
-            "CmdTrainPartyBuildStartStepCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq),
-            "CmdKOLIOJKKDCK" => ::std::option::Option::Some(CmdTrainPartyType::CmdKOLIOJKKDCK),
-            "CmdTrainPartySetBadgeAutoFillScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySetBadgeAutoFillScRsp),
-            "CmdTrainPartyGamePlayStartScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp),
-            "CmdHGAAPFBDGKC" => ::std::option::Option::Some(CmdTrainPartyType::CmdHGAAPFBDGKC),
-            "CmdTrainPartyBuildDiyScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp),
-            "CmdTrainPartyHandlePendingActionCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyHandlePendingActionCsReq),
-            "CmdTrainPartyBuildSelfDisplayAreaDiyScNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyScNotify),
-            "CmdTrainPartyMoveScNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyMoveScNotify),
-            "CmdTrainPartyUseCardScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardScRsp),
-            "CmdTrainPartyBuildingUpdateNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify),
-            "CmdTrainPartySetBadgeAutoFillCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySetBadgeAutoFillCsReq),
-            "CmdTrainPartyBuildDiyCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq),
-            "CmdENCAJEEEGGL" => ::std::option::Option::Some(CmdTrainPartyType::CmdENCAJEEEGGL),
-            "CmdTrainPartyUseCardCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyUseCardCsReq),
-            "CmdTrainPartyGamePlayStartCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq),
-            "CmdTrainPartyBuildRoomScNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildRoomScNotify),
-            "CmdTrainPartyBuildSelfDisplayAreaDiyCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyCsReq),
-            "CmdDGJCELHHFLK" => ::std::option::Option::Some(CmdTrainPartyType::CmdDGJCELHHFLK),
-            "HLDBDENFAIH_IDNPNLLCCHH" => ::std::option::Option::Some(CmdTrainPartyType::HLDBDENFAIH_IDNPNLLCCHH),
-            "CmdTrainPartyGetDataCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGetDataCsReq),
-            "HLDBDENFAIH_LPOBADAJGNA" => ::std::option::Option::Some(CmdTrainPartyType::HLDBDENFAIH_LPOBADAJGNA),
-            "CmdFCONNMFHEGH" => ::std::option::Option::Some(CmdTrainPartyType::CmdFCONNMFHEGH),
-            "CmdTrainPartySettleNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartySettleNotify),
-            "CmdTrainPartyGamePlaySettleNotify" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify),
-            "CmdTrainPartyTakeBuildLevelAwardCsReq" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq),
-            "CmdPOELOKDNAGA" => ::std::option::Option::Some(CmdTrainPartyType::CmdPOELOKDNAGA),
-            "CmdTrainPartyTakeBuildLevelAwardScRsp" => ::std::option::Option::Some(CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp),
+            "NHGAOAKEMDK_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_NLCDGIPGFDJ),
+            "NHGAOAKEMDK_NEHFOBDKJFB" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_NEHFOBDKJFB),
+            "NHGAOAKEMDK_FCAOAKODHHK" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_FCAOAKODHHK),
+            "NHGAOAKEMDK_PHEIEAIEFPF" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_PHEIEAIEFPF),
+            "NHGAOAKEMDK_AGHNFFMFIOE" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_AGHNFFMFIOE),
+            "NHGAOAKEMDK_MFEKCAKCOBI" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_MFEKCAKCOBI),
+            "NHGAOAKEMDK_MAOMNEIHOLP" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_MAOMNEIHOLP),
+            "NHGAOAKEMDK_JOIOOOFNBIC" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_JOIOOOFNBIC),
+            "NHGAOAKEMDK_CDDGCNFBFMI" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_CDDGCNFBFMI),
+            "NHGAOAKEMDK_OGNEJPLMPBM" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_OGNEJPLMPBM),
+            "NHGAOAKEMDK_MLCMENCKJDF" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_MLCMENCKJDF),
+            "NHGAOAKEMDK_GEIFHOAPCIM" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_GEIFHOAPCIM),
+            "NHGAOAKEMDK_EONAFDCGLLF" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_EONAFDCGLLF),
+            "NHGAOAKEMDK_FCJFKKBJBCF" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_FCJFKKBJBCF),
+            "NHGAOAKEMDK_LGJINEDPKAE" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_LGJINEDPKAE),
+            "NHGAOAKEMDK_LJGOKPDBPMH" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_LJGOKPDBPMH),
+            "NHGAOAKEMDK_OPDELNFFHPN" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_OPDELNFFHPN),
+            "NHGAOAKEMDK_IJPNOIALBCJ" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_IJPNOIALBCJ),
+            "NHGAOAKEMDK_KGDONBJEODA" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_KGDONBJEODA),
+            "NHGAOAKEMDK_NPPMJELJPLP" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_NPPMJELJPLP),
+            "NHGAOAKEMDK_IHNEEIPCGCJ" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_IHNEEIPCGCJ),
+            "NHGAOAKEMDK_IKPJPMNCGKK" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_IKPJPMNCGKK),
+            "NHGAOAKEMDK_IEGOOFAOIDK" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_IEGOOFAOIDK),
+            "NHGAOAKEMDK_EOIGPFGGIOF" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_EOIGPFGGIOF),
+            "NHGAOAKEMDK_BNDGMFNEFFL" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_BNDGMFNEFFL),
+            "NHGAOAKEMDK_LINHHGAMHDN" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_LINHHGAMHDN),
+            "NHGAOAKEMDK_GPBMCKIMCJK" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_GPBMCKIMCJK),
+            "NHGAOAKEMDK_LLDOODNHAPO" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_LLDOODNHAPO),
+            "NHGAOAKEMDK_PNBFFGCLEAC" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_PNBFFGCLEAC),
+            "NHGAOAKEMDK_GFKCHNBEIIK" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_GFKCHNBEIIK),
+            "NHGAOAKEMDK_LOOFEOBBGEH" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_LOOFEOBBGEH),
+            "NHGAOAKEMDK_OBHINPCABDB" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_OBHINPCABDB),
+            "NHGAOAKEMDK_FCFBLMMLBGL" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_FCFBLMMLBGL),
+            "NHGAOAKEMDK_EDBPKKFHMOH" => ::std::option::Option::Some(CmdTrainPartyType::NHGAOAKEMDK_EDBPKKFHMOH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTrainPartyType] = &[
-        CmdTrainPartyType::HLDBDENFAIH_PCPDHELPKEM,
-        CmdTrainPartyType::CmdTrainPartyGetDataScRsp,
-        CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyScRsp,
-        CmdTrainPartyType::CmdTrainPartyBuildStartStepScRsp,
-        CmdTrainPartyType::CmdTrainPartySyncUpdateScNotify,
-        CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp,
-        CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq,
-        CmdTrainPartyType::CmdKOLIOJKKDCK,
-        CmdTrainPartyType::CmdTrainPartySetBadgeAutoFillScRsp,
-        CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp,
-        CmdTrainPartyType::CmdHGAAPFBDGKC,
-        CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp,
-        CmdTrainPartyType::CmdTrainPartyHandlePendingActionCsReq,
-        CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyScNotify,
-        CmdTrainPartyType::CmdTrainPartyMoveScNotify,
-        CmdTrainPartyType::CmdTrainPartyUseCardScRsp,
-        CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify,
-        CmdTrainPartyType::CmdTrainPartySetBadgeAutoFillCsReq,
-        CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq,
-        CmdTrainPartyType::CmdENCAJEEEGGL,
-        CmdTrainPartyType::CmdTrainPartyUseCardCsReq,
-        CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq,
-        CmdTrainPartyType::CmdTrainPartyBuildRoomScNotify,
-        CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyCsReq,
-        CmdTrainPartyType::CmdDGJCELHHFLK,
-        CmdTrainPartyType::HLDBDENFAIH_IDNPNLLCCHH,
-        CmdTrainPartyType::CmdTrainPartyGetDataCsReq,
-        CmdTrainPartyType::HLDBDENFAIH_LPOBADAJGNA,
-        CmdTrainPartyType::CmdFCONNMFHEGH,
-        CmdTrainPartyType::CmdTrainPartySettleNotify,
-        CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify,
-        CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq,
-        CmdTrainPartyType::CmdPOELOKDNAGA,
-        CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp,
+        CmdTrainPartyType::NHGAOAKEMDK_NLCDGIPGFDJ,
+        CmdTrainPartyType::NHGAOAKEMDK_NEHFOBDKJFB,
+        CmdTrainPartyType::NHGAOAKEMDK_FCAOAKODHHK,
+        CmdTrainPartyType::NHGAOAKEMDK_PHEIEAIEFPF,
+        CmdTrainPartyType::NHGAOAKEMDK_AGHNFFMFIOE,
+        CmdTrainPartyType::NHGAOAKEMDK_MFEKCAKCOBI,
+        CmdTrainPartyType::NHGAOAKEMDK_MAOMNEIHOLP,
+        CmdTrainPartyType::NHGAOAKEMDK_JOIOOOFNBIC,
+        CmdTrainPartyType::NHGAOAKEMDK_CDDGCNFBFMI,
+        CmdTrainPartyType::NHGAOAKEMDK_OGNEJPLMPBM,
+        CmdTrainPartyType::NHGAOAKEMDK_MLCMENCKJDF,
+        CmdTrainPartyType::NHGAOAKEMDK_GEIFHOAPCIM,
+        CmdTrainPartyType::NHGAOAKEMDK_EONAFDCGLLF,
+        CmdTrainPartyType::NHGAOAKEMDK_FCJFKKBJBCF,
+        CmdTrainPartyType::NHGAOAKEMDK_LGJINEDPKAE,
+        CmdTrainPartyType::NHGAOAKEMDK_LJGOKPDBPMH,
+        CmdTrainPartyType::NHGAOAKEMDK_OPDELNFFHPN,
+        CmdTrainPartyType::NHGAOAKEMDK_IJPNOIALBCJ,
+        CmdTrainPartyType::NHGAOAKEMDK_KGDONBJEODA,
+        CmdTrainPartyType::NHGAOAKEMDK_NPPMJELJPLP,
+        CmdTrainPartyType::NHGAOAKEMDK_IHNEEIPCGCJ,
+        CmdTrainPartyType::NHGAOAKEMDK_IKPJPMNCGKK,
+        CmdTrainPartyType::NHGAOAKEMDK_IEGOOFAOIDK,
+        CmdTrainPartyType::NHGAOAKEMDK_EOIGPFGGIOF,
+        CmdTrainPartyType::NHGAOAKEMDK_BNDGMFNEFFL,
+        CmdTrainPartyType::NHGAOAKEMDK_LINHHGAMHDN,
+        CmdTrainPartyType::NHGAOAKEMDK_GPBMCKIMCJK,
+        CmdTrainPartyType::NHGAOAKEMDK_LLDOODNHAPO,
+        CmdTrainPartyType::NHGAOAKEMDK_PNBFFGCLEAC,
+        CmdTrainPartyType::NHGAOAKEMDK_GFKCHNBEIIK,
+        CmdTrainPartyType::NHGAOAKEMDK_LOOFEOBBGEH,
+        CmdTrainPartyType::NHGAOAKEMDK_OBHINPCABDB,
+        CmdTrainPartyType::NHGAOAKEMDK_FCFBLMMLBGL,
+        CmdTrainPartyType::NHGAOAKEMDK_EDBPKKFHMOH,
     ];
 }
 
@@ -230,40 +230,40 @@ impl ::protobuf::EnumFull for CmdTrainPartyType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdTrainPartyType::HLDBDENFAIH_PCPDHELPKEM => 0,
-            CmdTrainPartyType::CmdTrainPartyGetDataScRsp => 1,
-            CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyScRsp => 2,
-            CmdTrainPartyType::CmdTrainPartyBuildStartStepScRsp => 3,
-            CmdTrainPartyType::CmdTrainPartySyncUpdateScNotify => 4,
-            CmdTrainPartyType::CmdTrainPartyHandlePendingActionScRsp => 5,
-            CmdTrainPartyType::CmdTrainPartyBuildStartStepCsReq => 6,
-            CmdTrainPartyType::CmdKOLIOJKKDCK => 7,
-            CmdTrainPartyType::CmdTrainPartySetBadgeAutoFillScRsp => 8,
-            CmdTrainPartyType::CmdTrainPartyGamePlayStartScRsp => 9,
-            CmdTrainPartyType::CmdHGAAPFBDGKC => 10,
-            CmdTrainPartyType::CmdTrainPartyBuildDiyScRsp => 11,
-            CmdTrainPartyType::CmdTrainPartyHandlePendingActionCsReq => 12,
-            CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyScNotify => 13,
-            CmdTrainPartyType::CmdTrainPartyMoveScNotify => 14,
-            CmdTrainPartyType::CmdTrainPartyUseCardScRsp => 15,
-            CmdTrainPartyType::CmdTrainPartyBuildingUpdateNotify => 16,
-            CmdTrainPartyType::CmdTrainPartySetBadgeAutoFillCsReq => 17,
-            CmdTrainPartyType::CmdTrainPartyBuildDiyCsReq => 18,
-            CmdTrainPartyType::CmdENCAJEEEGGL => 19,
-            CmdTrainPartyType::CmdTrainPartyUseCardCsReq => 20,
-            CmdTrainPartyType::CmdTrainPartyGamePlayStartCsReq => 21,
-            CmdTrainPartyType::CmdTrainPartyBuildRoomScNotify => 22,
-            CmdTrainPartyType::CmdTrainPartyBuildSelfDisplayAreaDiyCsReq => 23,
-            CmdTrainPartyType::CmdDGJCELHHFLK => 24,
-            CmdTrainPartyType::HLDBDENFAIH_IDNPNLLCCHH => 25,
-            CmdTrainPartyType::CmdTrainPartyGetDataCsReq => 26,
-            CmdTrainPartyType::HLDBDENFAIH_LPOBADAJGNA => 27,
-            CmdTrainPartyType::CmdFCONNMFHEGH => 28,
-            CmdTrainPartyType::CmdTrainPartySettleNotify => 29,
-            CmdTrainPartyType::CmdTrainPartyGamePlaySettleNotify => 30,
-            CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardCsReq => 31,
-            CmdTrainPartyType::CmdPOELOKDNAGA => 32,
-            CmdTrainPartyType::CmdTrainPartyTakeBuildLevelAwardScRsp => 33,
+            CmdTrainPartyType::NHGAOAKEMDK_NLCDGIPGFDJ => 0,
+            CmdTrainPartyType::NHGAOAKEMDK_NEHFOBDKJFB => 1,
+            CmdTrainPartyType::NHGAOAKEMDK_FCAOAKODHHK => 2,
+            CmdTrainPartyType::NHGAOAKEMDK_PHEIEAIEFPF => 3,
+            CmdTrainPartyType::NHGAOAKEMDK_AGHNFFMFIOE => 4,
+            CmdTrainPartyType::NHGAOAKEMDK_MFEKCAKCOBI => 5,
+            CmdTrainPartyType::NHGAOAKEMDK_MAOMNEIHOLP => 6,
+            CmdTrainPartyType::NHGAOAKEMDK_JOIOOOFNBIC => 7,
+            CmdTrainPartyType::NHGAOAKEMDK_CDDGCNFBFMI => 8,
+            CmdTrainPartyType::NHGAOAKEMDK_OGNEJPLMPBM => 9,
+            CmdTrainPartyType::NHGAOAKEMDK_MLCMENCKJDF => 10,
+            CmdTrainPartyType::NHGAOAKEMDK_GEIFHOAPCIM => 11,
+            CmdTrainPartyType::NHGAOAKEMDK_EONAFDCGLLF => 12,
+            CmdTrainPartyType::NHGAOAKEMDK_FCJFKKBJBCF => 13,
+            CmdTrainPartyType::NHGAOAKEMDK_LGJINEDPKAE => 14,
+            CmdTrainPartyType::NHGAOAKEMDK_LJGOKPDBPMH => 15,
+            CmdTrainPartyType::NHGAOAKEMDK_OPDELNFFHPN => 16,
+            CmdTrainPartyType::NHGAOAKEMDK_IJPNOIALBCJ => 17,
+            CmdTrainPartyType::NHGAOAKEMDK_KGDONBJEODA => 18,
+            CmdTrainPartyType::NHGAOAKEMDK_NPPMJELJPLP => 19,
+            CmdTrainPartyType::NHGAOAKEMDK_IHNEEIPCGCJ => 20,
+            CmdTrainPartyType::NHGAOAKEMDK_IKPJPMNCGKK => 21,
+            CmdTrainPartyType::NHGAOAKEMDK_IEGOOFAOIDK => 22,
+            CmdTrainPartyType::NHGAOAKEMDK_EOIGPFGGIOF => 23,
+            CmdTrainPartyType::NHGAOAKEMDK_BNDGMFNEFFL => 24,
+            CmdTrainPartyType::NHGAOAKEMDK_LINHHGAMHDN => 25,
+            CmdTrainPartyType::NHGAOAKEMDK_GPBMCKIMCJK => 26,
+            CmdTrainPartyType::NHGAOAKEMDK_LLDOODNHAPO => 27,
+            CmdTrainPartyType::NHGAOAKEMDK_PNBFFGCLEAC => 28,
+            CmdTrainPartyType::NHGAOAKEMDK_GFKCHNBEIIK => 29,
+            CmdTrainPartyType::NHGAOAKEMDK_LOOFEOBBGEH => 30,
+            CmdTrainPartyType::NHGAOAKEMDK_OBHINPCABDB => 31,
+            CmdTrainPartyType::NHGAOAKEMDK_FCFBLMMLBGL => 32,
+            CmdTrainPartyType::NHGAOAKEMDK_EDBPKKFHMOH => 33,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -271,7 +271,7 @@ impl ::protobuf::EnumFull for CmdTrainPartyType {
 
 impl ::std::default::Default for CmdTrainPartyType {
     fn default() -> Self {
-        CmdTrainPartyType::HLDBDENFAIH_PCPDHELPKEM
+        CmdTrainPartyType::NHGAOAKEMDK_NLCDGIPGFDJ
     }
 }
 
@@ -282,31 +282,29 @@ impl CmdTrainPartyType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdTrainPartyType.proto*\xb6\t\n\x11CmdTrainPartyType\x12\x1b\n\
-    \x17HLDBDENFAIH_PCPDHELPKEM\x10\0\x12\x1e\n\x19CmdTrainPartyGetDataScRsp\
-    \x10\xca>\x12.\n)CmdTrainPartyBuildSelfDisplayAreaDiyScRsp\x10\xc5>\x12%\
-    \n\x20CmdTrainPartyBuildStartStepScRsp\x10\xe5>\x12$\n\x1fCmdTrainPartyS\
-    yncUpdateScNotify\x10\xff>\x12*\n%CmdTrainPartyHandlePendingActionScRsp\
-    \x10\xc1>\x12%\n\x20CmdTrainPartyBuildStartStepCsReq\x10\x8a?\x12\x13\n\
-    \x0eCmdKOLIOJKKDCK\x10\xf3>\x12'\n\"CmdTrainPartySetBadgeAutoFillScRsp\
-    \x10\x87?\x12$\n\x1fCmdTrainPartyGamePlayStartScRsp\x10\xd5>\x12\x13\n\
-    \x0eCmdHGAAPFBDGKC\x10\xfa>\x12\x1f\n\x1aCmdTrainPartyBuildDiyScRsp\x10\
-    \xe6>\x12*\n%CmdTrainPartyHandlePendingActionCsReq\x10\xe7>\x121\n,CmdTr\
-    ainPartyBuildSelfDisplayAreaDiyScNotify\x10\xcb>\x12\x1e\n\x19CmdTrainPa\
-    rtyMoveScNotify\x10\xce>\x12\x1e\n\x19CmdTrainPartyUseCardScRsp\x10\x9f?\
-    \x12&\n!CmdTrainPartyBuildingUpdateNotify\x10\x88?\x12'\n\"CmdTrainParty\
-    SetBadgeAutoFillCsReq\x10\xde>\x12\x1f\n\x1aCmdTrainPartyBuildDiyCsReq\
-    \x10\xc4>\x12\x13\n\x0eCmdENCAJEEEGGL\x10\xfd>\x12\x1e\n\x19CmdTrainPart\
-    yUseCardCsReq\x10\x9e?\x12$\n\x1fCmdTrainPartyGamePlayStartCsReq\x10\xf9\
-    >\x12#\n\x1eCmdTrainPartyBuildRoomScNotify\x10\xf6>\x12.\n)CmdTrainParty\
-    BuildSelfDisplayAreaDiyCsReq\x10\x82?\x12\x13\n\x0eCmdDGJCELHHFLK\x10\
-    \xc7>\x12\x1c\n\x17HLDBDENFAIH_IDNPNLLCCHH\x10\xf5>\x12\x1e\n\x19CmdTrai\
-    nPartyGetDataCsReq\x10\x9b?\x12\x1c\n\x17HLDBDENFAIH_LPOBADAJGNA\x10\x89\
-    ?\x12\x13\n\x0eCmdFCONNMFHEGH\x10\xe1>\x12\x1e\n\x19CmdTrainPartySettleN\
-    otify\x10\xc9>\x12&\n!CmdTrainPartyGamePlaySettleNotify\x10\xdc>\x12*\n%\
-    CmdTrainPartyTakeBuildLevelAwardCsReq\x10\xc8>\x12\x13\n\x0eCmdPOELOKDNA\
-    GA\x10\xd9>\x12*\n%CmdTrainPartyTakeBuildLevelAwardScRsp\x10\xd1>b\x06pr\
-    oto3\
+    \n\x17CmdTrainPartyType.proto*\x8e\x08\n\x11CmdTrainPartyType\x12\x1b\n\
+    \x17NHGAOAKEMDK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17NHGAOAKEMDK_NEHFOBDKJFB\
+    \x10\xdd>\x12\x1c\n\x17NHGAOAKEMDK_FCAOAKODHHK\x10\xcc>\x12\x1c\n\x17NHG\
+    AOAKEMDK_PHEIEAIEFPF\x10\xc3>\x12\x1c\n\x17NHGAOAKEMDK_AGHNFFMFIOE\x10\
+    \xa3?\x12\x1c\n\x17NHGAOAKEMDK_MFEKCAKCOBI\x10\xcf>\x12\x1c\n\x17NHGAOAK\
+    EMDK_MAOMNEIHOLP\x10\x95?\x12\x1c\n\x17NHGAOAKEMDK_JOIOOOFNBIC\x10\x9c?\
+    \x12\x1c\n\x17NHGAOAKEMDK_CDDGCNFBFMI\x10\xdc>\x12\x1c\n\x17NHGAOAKEMDK_\
+    OGNEJPLMPBM\x10\xea>\x12\x1c\n\x17NHGAOAKEMDK_MLCMENCKJDF\x10\xca>\x12\
+    \x1c\n\x17NHGAOAKEMDK_GEIFHOAPCIM\x10\xd4>\x12\x1c\n\x17NHGAOAKEMDK_EONA\
+    FDCGLLF\x10\xf6>\x12\x1c\n\x17NHGAOAKEMDK_FCJFKKBJBCF\x10\x82?\x12\x1c\n\
+    \x17NHGAOAKEMDK_LGJINEDPKAE\x10\xff>\x12\x1c\n\x17NHGAOAKEMDK_LJGOKPDBPM\
+    H\x10\x83?\x12\x1c\n\x17NHGAOAKEMDK_OPDELNFFHPN\x10\x89?\x12\x1c\n\x17NH\
+    GAOAKEMDK_IJPNOIALBCJ\x10\xdb>\x12\x1c\n\x17NHGAOAKEMDK_KGDONBJEODA\x10\
+    \xde>\x12\x1c\n\x17NHGAOAKEMDK_NPPMJELJPLP\x10\xf5>\x12\x1c\n\x17NHGAOAK\
+    EMDK_IHNEEIPCGCJ\x10\xfd>\x12\x1c\n\x17NHGAOAKEMDK_IKPJPMNCGKK\x10\x8c?\
+    \x12\x1c\n\x17NHGAOAKEMDK_IEGOOFAOIDK\x10\x8e?\x12\x1c\n\x17NHGAOAKEMDK_\
+    EOIGPFGGIOF\x10\xc9>\x12\x1c\n\x17NHGAOAKEMDK_BNDGMFNEFFL\x10\xe0>\x12\
+    \x1c\n\x17NHGAOAKEMDK_LINHHGAMHDN\x10\xe4>\x12\x1c\n\x17NHGAOAKEMDK_GPBM\
+    CKIMCJK\x10\xd1>\x12\x1c\n\x17NHGAOAKEMDK_LLDOODNHAPO\x10\xc6>\x12\x1c\n\
+    \x17NHGAOAKEMDK_PNBFFGCLEAC\x10\xa4?\x12\x1c\n\x17NHGAOAKEMDK_GFKCHNBEII\
+    K\x10\xd8>\x12\x1c\n\x17NHGAOAKEMDK_LOOFEOBBGEH\x10\x87?\x12\x1c\n\x17NH\
+    GAOAKEMDK_OBHINPCABDB\x10\xc1>\x12\x1c\n\x17NHGAOAKEMDK_FCFBLMMLBGL\x10\
+    \x93?\x12\x1c\n\x17NHGAOAKEMDK_EDBPKKFHMOH\x10\x90?b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

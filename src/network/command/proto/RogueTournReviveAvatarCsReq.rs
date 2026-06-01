@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct RogueTournReviveAvatarCsReq {
     // message fields
     // @@protoc_insertion_point(field:RogueTournReviveAvatarCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::HDDBJIKNEPF::HDDBJIKNEPF>,
+    pub avatar_list: ::std::vec::Vec<super::DKFJLHHDFKO::DKFJLHHDFKO>,
     // @@protoc_insertion_point(field:RogueTournReviveAvatarCsReq.interacted_prop_entity_id)
     pub interacted_prop_entity_id: u32,
     // special fields
@@ -79,10 +79,10 @@ impl ::protobuf::Message for RogueTournReviveAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                106 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                16 => {
+                88 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for RogueTournReviveAvatarCsReq {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.interacted_prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RogueTournReviveAvatarCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(2, self.interacted_prop_entity_id)?;
+            os.write_uint32(11, self.interacted_prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueTournReviveAvatarCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!RogueTournReviveAvatarCsReq.proto\x1a\x11HDDBJIKNEPF.proto\"\x87\x01\
-    \n\x1bRogueTournReviveAvatarCsReq\x12-\n\x0bavatar_list\x18\x0b\x20\x03(\
-    \x0b2\x0c.HDDBJIKNEPFR\navatarList\x129\n\x19interacted_prop_entity_id\
-    \x18\x02\x20\x01(\rR\x16interactedPropEntityIdb\x06proto3\
+    \n!RogueTournReviveAvatarCsReq.proto\x1a\x11DKFJLHHDFKO.proto\"\x87\x01\
+    \n\x1bRogueTournReviveAvatarCsReq\x12-\n\x0bavatar_list\x18\r\x20\x03(\
+    \x0b2\x0c.DKFJLHHDFKOR\navatarList\x129\n\x19interacted_prop_entity_id\
+    \x18\x0b\x20\x01(\rR\x16interactedPropEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HDDBJIKNEPF::file_descriptor().clone());
+            deps.push(super::DKFJLHHDFKO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueTournReviveAvatarCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

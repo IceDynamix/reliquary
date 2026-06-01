@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFightActivityType)
 pub enum CmdFightActivityType {
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.NACBOEPEICM_PCPDHELPKEM)
-    NACBOEPEICM_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdTakeFightActivityRewardScRsp)
-    CmdTakeFightActivityRewardScRsp = 3609,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdTakeFightActivityRewardCsReq)
-    CmdTakeFightActivityRewardCsReq = 3618,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdGetFightActivityDataCsReq)
-    CmdGetFightActivityDataCsReq = 3691,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdGetFightActivityDataScRsp)
-    CmdGetFightActivityDataScRsp = 3610,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdEnterFightActivityStageCsReq)
-    CmdEnterFightActivityStageCsReq = 3695,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdEnterFightActivityStageScRsp)
-    CmdEnterFightActivityStageScRsp = 3614,
-    // @@protoc_insertion_point(enum_value:CmdFightActivityType.CmdFightActivityDataChangeScNotify)
-    CmdFightActivityDataChangeScNotify = 3694,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_NLCDGIPGFDJ)
+    EJNCEADPKFE_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_HFBELGKADLF)
+    EJNCEADPKFE_HFBELGKADLF = 3636,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_NEBCECBJEGP)
+    EJNCEADPKFE_NEBCECBJEGP = 3673,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_KOPFLKEHKEF)
+    EJNCEADPKFE_KOPFLKEHKEF = 3680,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_CFFKPLMCNJI)
+    EJNCEADPKFE_CFFKPLMCNJI = 3613,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_FCLKICJNKBC)
+    EJNCEADPKFE_FCLKICJNKBC = 3615,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_IDPBIJOAHAC)
+    EJNCEADPKFE_IDPBIJOAHAC = 3603,
+    // @@protoc_insertion_point(enum_value:CmdFightActivityType.EJNCEADPKFE_IJBOBOFLEAE)
+    EJNCEADPKFE_IJBOBOFLEAE = 3627,
 }
 
 impl ::protobuf::Enum for CmdFightActivityType {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for CmdFightActivityType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightActivityType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFightActivityType::NACBOEPEICM_PCPDHELPKEM),
-            3609 => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardScRsp),
-            3618 => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardCsReq),
-            3691 => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataCsReq),
-            3610 => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataScRsp),
-            3695 => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageCsReq),
-            3614 => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageScRsp),
-            3694 => ::std::option::Option::Some(CmdFightActivityType::CmdFightActivityDataChangeScNotify),
+            0 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_NLCDGIPGFDJ),
+            3636 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_HFBELGKADLF),
+            3673 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_NEBCECBJEGP),
+            3680 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF),
+            3613 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_CFFKPLMCNJI),
+            3615 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_FCLKICJNKBC),
+            3603 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IDPBIJOAHAC),
+            3627 => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFightActivityType> {
         match str {
-            "NACBOEPEICM_PCPDHELPKEM" => ::std::option::Option::Some(CmdFightActivityType::NACBOEPEICM_PCPDHELPKEM),
-            "CmdTakeFightActivityRewardScRsp" => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardScRsp),
-            "CmdTakeFightActivityRewardCsReq" => ::std::option::Option::Some(CmdFightActivityType::CmdTakeFightActivityRewardCsReq),
-            "CmdGetFightActivityDataCsReq" => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataCsReq),
-            "CmdGetFightActivityDataScRsp" => ::std::option::Option::Some(CmdFightActivityType::CmdGetFightActivityDataScRsp),
-            "CmdEnterFightActivityStageCsReq" => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageCsReq),
-            "CmdEnterFightActivityStageScRsp" => ::std::option::Option::Some(CmdFightActivityType::CmdEnterFightActivityStageScRsp),
-            "CmdFightActivityDataChangeScNotify" => ::std::option::Option::Some(CmdFightActivityType::CmdFightActivityDataChangeScNotify),
+            "EJNCEADPKFE_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_NLCDGIPGFDJ),
+            "EJNCEADPKFE_HFBELGKADLF" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_HFBELGKADLF),
+            "EJNCEADPKFE_NEBCECBJEGP" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_NEBCECBJEGP),
+            "EJNCEADPKFE_KOPFLKEHKEF" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF),
+            "EJNCEADPKFE_CFFKPLMCNJI" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_CFFKPLMCNJI),
+            "EJNCEADPKFE_FCLKICJNKBC" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_FCLKICJNKBC),
+            "EJNCEADPKFE_IDPBIJOAHAC" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IDPBIJOAHAC),
+            "EJNCEADPKFE_IJBOBOFLEAE" => ::std::option::Option::Some(CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFightActivityType] = &[
-        CmdFightActivityType::NACBOEPEICM_PCPDHELPKEM,
-        CmdFightActivityType::CmdTakeFightActivityRewardScRsp,
-        CmdFightActivityType::CmdTakeFightActivityRewardCsReq,
-        CmdFightActivityType::CmdGetFightActivityDataCsReq,
-        CmdFightActivityType::CmdGetFightActivityDataScRsp,
-        CmdFightActivityType::CmdEnterFightActivityStageCsReq,
-        CmdFightActivityType::CmdEnterFightActivityStageScRsp,
-        CmdFightActivityType::CmdFightActivityDataChangeScNotify,
+        CmdFightActivityType::EJNCEADPKFE_NLCDGIPGFDJ,
+        CmdFightActivityType::EJNCEADPKFE_HFBELGKADLF,
+        CmdFightActivityType::EJNCEADPKFE_NEBCECBJEGP,
+        CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF,
+        CmdFightActivityType::EJNCEADPKFE_CFFKPLMCNJI,
+        CmdFightActivityType::EJNCEADPKFE_FCLKICJNKBC,
+        CmdFightActivityType::EJNCEADPKFE_IDPBIJOAHAC,
+        CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE,
     ];
 }
 
@@ -100,14 +100,14 @@ impl ::protobuf::EnumFull for CmdFightActivityType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFightActivityType::NACBOEPEICM_PCPDHELPKEM => 0,
-            CmdFightActivityType::CmdTakeFightActivityRewardScRsp => 1,
-            CmdFightActivityType::CmdTakeFightActivityRewardCsReq => 2,
-            CmdFightActivityType::CmdGetFightActivityDataCsReq => 3,
-            CmdFightActivityType::CmdGetFightActivityDataScRsp => 4,
-            CmdFightActivityType::CmdEnterFightActivityStageCsReq => 5,
-            CmdFightActivityType::CmdEnterFightActivityStageScRsp => 6,
-            CmdFightActivityType::CmdFightActivityDataChangeScNotify => 7,
+            CmdFightActivityType::EJNCEADPKFE_NLCDGIPGFDJ => 0,
+            CmdFightActivityType::EJNCEADPKFE_HFBELGKADLF => 1,
+            CmdFightActivityType::EJNCEADPKFE_NEBCECBJEGP => 2,
+            CmdFightActivityType::EJNCEADPKFE_KOPFLKEHKEF => 3,
+            CmdFightActivityType::EJNCEADPKFE_CFFKPLMCNJI => 4,
+            CmdFightActivityType::EJNCEADPKFE_FCLKICJNKBC => 5,
+            CmdFightActivityType::EJNCEADPKFE_IDPBIJOAHAC => 6,
+            CmdFightActivityType::EJNCEADPKFE_IJBOBOFLEAE => 7,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -115,7 +115,7 @@ impl ::protobuf::EnumFull for CmdFightActivityType {
 
 impl ::std::default::Default for CmdFightActivityType {
     fn default() -> Self {
-        CmdFightActivityType::NACBOEPEICM_PCPDHELPKEM
+        CmdFightActivityType::EJNCEADPKFE_NLCDGIPGFDJ
     }
 }
 
@@ -126,13 +126,13 @@ impl CmdFightActivityType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aCmdFightActivityType.proto*\xba\x02\n\x14CmdFightActivityType\x12\
-    \x1b\n\x17NACBOEPEICM_PCPDHELPKEM\x10\0\x12$\n\x1fCmdTakeFightActivityRe\
-    wardScRsp\x10\x99\x1c\x12$\n\x1fCmdTakeFightActivityRewardCsReq\x10\xa2\
-    \x1c\x12!\n\x1cCmdGetFightActivityDataCsReq\x10\xeb\x1c\x12!\n\x1cCmdGet\
-    FightActivityDataScRsp\x10\x9a\x1c\x12$\n\x1fCmdEnterFightActivityStageC\
-    sReq\x10\xef\x1c\x12$\n\x1fCmdEnterFightActivityStageScRsp\x10\x9e\x1c\
-    \x12'\n\"CmdFightActivityDataChangeScNotify\x10\xee\x1cb\x06proto3\
+    \n\x1aCmdFightActivityType.proto*\x85\x02\n\x14CmdFightActivityType\x12\
+    \x1b\n\x17EJNCEADPKFE_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17EJNCEADPKFE_HFBELGK\
+    ADLF\x10\xb4\x1c\x12\x1c\n\x17EJNCEADPKFE_NEBCECBJEGP\x10\xd9\x1c\x12\
+    \x1c\n\x17EJNCEADPKFE_KOPFLKEHKEF\x10\xe0\x1c\x12\x1c\n\x17EJNCEADPKFE_C\
+    FFKPLMCNJI\x10\x9d\x1c\x12\x1c\n\x17EJNCEADPKFE_FCLKICJNKBC\x10\x9f\x1c\
+    \x12\x1c\n\x17EJNCEADPKFE_IDPBIJOAHAC\x10\x93\x1c\x12\x1c\n\x17EJNCEADPK\
+    FE_IJBOBOFLEAE\x10\xab\x1cb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

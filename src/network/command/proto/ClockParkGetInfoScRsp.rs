@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClockParkGetInfoScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.HPEKLHNPDAJ)
+    pub HPEKLHNPDAJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.DCGDHFJLHCN)
+    pub DCGDHFJLHCN: ::std::vec::Vec<super::DEGFFGKMFJJ::DEGFFGKMFJJ>,
+    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.LNKAKGOCAOF)
+    pub LNKAKGOCAOF: u32,
     // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.progress)
     pub progress: u32,
-    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.HLNEMLMKECP)
-    pub HLNEMLMKECP: u32,
-    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.NIECFDLJPFI)
-    pub NIECFDLJPFI: ::std::vec::Vec<super::DHBCCMMHNCK::DHBCCMMHNCK>,
-    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.CDNGKOFBHLG)
-    pub CDNGKOFBHLG: u32,
     // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.ADJEHBLLBNH)
-    pub ADJEHBLLBNH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:ClockParkGetInfoScRsp.CDGICHDIIHH)
+    pub CDGICHDIIHH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkGetInfoScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,35 +59,35 @@ impl ClockParkGetInfoScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HPEKLHNPDAJ",
+            |m: &ClockParkGetInfoScRsp| { &m.HPEKLHNPDAJ },
+            |m: &mut ClockParkGetInfoScRsp| { &mut m.HPEKLHNPDAJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "DCGDHFJLHCN",
+            |m: &ClockParkGetInfoScRsp| { &m.DCGDHFJLHCN },
+            |m: &mut ClockParkGetInfoScRsp| { &mut m.DCGDHFJLHCN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LNKAKGOCAOF",
+            |m: &ClockParkGetInfoScRsp| { &m.LNKAKGOCAOF },
+            |m: &mut ClockParkGetInfoScRsp| { &mut m.LNKAKGOCAOF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
             |m: &ClockParkGetInfoScRsp| { &m.progress },
             |m: &mut ClockParkGetInfoScRsp| { &mut m.progress },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HLNEMLMKECP",
-            |m: &ClockParkGetInfoScRsp| { &m.HLNEMLMKECP },
-            |m: &mut ClockParkGetInfoScRsp| { &mut m.HLNEMLMKECP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NIECFDLJPFI",
-            |m: &ClockParkGetInfoScRsp| { &m.NIECFDLJPFI },
-            |m: &mut ClockParkGetInfoScRsp| { &mut m.NIECFDLJPFI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CDNGKOFBHLG",
-            |m: &ClockParkGetInfoScRsp| { &m.CDNGKOFBHLG },
-            |m: &mut ClockParkGetInfoScRsp| { &mut m.CDNGKOFBHLG },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ClockParkGetInfoScRsp| { &m.retcode },
             |m: &mut ClockParkGetInfoScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "ADJEHBLLBNH",
-            |m: &ClockParkGetInfoScRsp| { &m.ADJEHBLLBNH },
-            |m: &mut ClockParkGetInfoScRsp| { &mut m.ADJEHBLLBNH },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "CDGICHDIIHH",
+            |m: &ClockParkGetInfoScRsp| { &m.CDGICHDIIHH },
+            |m: &mut ClockParkGetInfoScRsp| { &mut m.CDGICHDIIHH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkGetInfoScRsp>(
             "ClockParkGetInfoScRsp",
@@ -107,26 +107,26 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.progress = is.read_uint32()?;
+                58 => {
+                    is.read_repeated_packed_uint32_into(&mut self.HPEKLHNPDAJ)?;
                 },
-                96 => {
-                    self.HLNEMLMKECP = is.read_uint32()?;
+                56 => {
+                    self.HPEKLHNPDAJ.push(is.read_uint32()?);
                 },
-                50 => {
-                    self.NIECFDLJPFI.push(is.read_message()?);
-                },
-                64 => {
-                    self.CDNGKOFBHLG = is.read_uint32()?;
+                66 => {
+                    self.DCGDHFJLHCN.push(is.read_message()?);
                 },
                 104 => {
+                    self.LNKAKGOCAOF = is.read_uint32()?;
+                },
+                120 => {
+                    self.progress = is.read_uint32()?;
+                },
+                112 => {
                     self.retcode = is.read_uint32()?;
                 },
-                18 => {
-                    is.read_repeated_packed_uint32_into(&mut self.ADJEHBLLBNH)?;
-                },
-                16 => {
-                    self.ADJEHBLLBNH.push(is.read_uint32()?);
+                96 => {
+                    self.CDGICHDIIHH = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -140,45 +140,45 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.progress);
-        }
-        if self.HLNEMLMKECP != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HLNEMLMKECP);
-        }
-        for value in &self.NIECFDLJPFI {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.HPEKLHNPDAJ);
+        for value in &self.DCGDHFJLHCN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.CDNGKOFBHLG != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.CDNGKOFBHLG);
+        if self.LNKAKGOCAOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.LNKAKGOCAOF);
+        }
+        if self.progress != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.progress);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(2, &self.ADJEHBLLBNH);
+        if self.CDGICHDIIHH != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.CDGICHDIIHH);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.progress != 0 {
-            os.write_uint32(1, self.progress)?;
-        }
-        if self.HLNEMLMKECP != 0 {
-            os.write_uint32(12, self.HLNEMLMKECP)?;
-        }
-        for v in &self.NIECFDLJPFI {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
+        os.write_repeated_packed_uint32(7, &self.HPEKLHNPDAJ)?;
+        for v in &self.DCGDHFJLHCN {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         };
-        if self.CDNGKOFBHLG != 0 {
-            os.write_uint32(8, self.CDNGKOFBHLG)?;
+        if self.LNKAKGOCAOF != 0 {
+            os.write_uint32(13, self.LNKAKGOCAOF)?;
+        }
+        if self.progress != 0 {
+            os.write_uint32(15, self.progress)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(14, self.retcode)?;
         }
-        os.write_repeated_packed_uint32(2, &self.ADJEHBLLBNH)?;
+        if self.CDGICHDIIHH != 0 {
+            os.write_uint32(12, self.CDGICHDIIHH)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -196,23 +196,23 @@ impl ::protobuf::Message for ClockParkGetInfoScRsp {
     }
 
     fn clear(&mut self) {
+        self.HPEKLHNPDAJ.clear();
+        self.DCGDHFJLHCN.clear();
+        self.LNKAKGOCAOF = 0;
         self.progress = 0;
-        self.HLNEMLMKECP = 0;
-        self.NIECFDLJPFI.clear();
-        self.CDNGKOFBHLG = 0;
         self.retcode = 0;
-        self.ADJEHBLLBNH.clear();
+        self.CDGICHDIIHH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkGetInfoScRsp {
         static instance: ClockParkGetInfoScRsp = ClockParkGetInfoScRsp {
+            HPEKLHNPDAJ: ::std::vec::Vec::new(),
+            DCGDHFJLHCN: ::std::vec::Vec::new(),
+            LNKAKGOCAOF: 0,
             progress: 0,
-            HLNEMLMKECP: 0,
-            NIECFDLJPFI: ::std::vec::Vec::new(),
-            CDNGKOFBHLG: 0,
             retcode: 0,
-            ADJEHBLLBNH: ::std::vec::Vec::new(),
+            CDGICHDIIHH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -237,13 +237,13 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkGetInfoScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bClockParkGetInfoScRsp.proto\x1a\x11DHBCCMMHNCK.proto\"\xe3\x01\n\
-    \x15ClockParkGetInfoScRsp\x12\x1a\n\x08progress\x18\x01\x20\x01(\rR\x08p\
-    rogress\x12\x20\n\x0bHLNEMLMKECP\x18\x0c\x20\x01(\rR\x0bHLNEMLMKECP\x12.\
-    \n\x0bNIECFDLJPFI\x18\x06\x20\x03(\x0b2\x0c.DHBCCMMHNCKR\x0bNIECFDLJPFI\
-    \x12\x20\n\x0bCDNGKOFBHLG\x18\x08\x20\x01(\rR\x0bCDNGKOFBHLG\x12\x18\n\
-    \x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\n\x0bADJEHBLLBNH\x18\
-    \x02\x20\x03(\rR\x0bADJEHBLLBNHb\x06proto3\
+    \n\x1bClockParkGetInfoScRsp.proto\x1a\x11DEGFFGKMFJJ.proto\"\xe3\x01\n\
+    \x15ClockParkGetInfoScRsp\x12\x20\n\x0bHPEKLHNPDAJ\x18\x07\x20\x03(\rR\
+    \x0bHPEKLHNPDAJ\x12.\n\x0bDCGDHFJLHCN\x18\x08\x20\x03(\x0b2\x0c.DEGFFGKM\
+    FJJR\x0bDCGDHFJLHCN\x12\x20\n\x0bLNKAKGOCAOF\x18\r\x20\x01(\rR\x0bLNKAKG\
+    OCAOF\x12\x1a\n\x08progress\x18\x0f\x20\x01(\rR\x08progress\x12\x18\n\
+    \x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\x0bCDGICHDIIHH\x18\
+    \x0c\x20\x01(\rR\x0bCDGICHDIIHHb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -261,7 +261,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DHBCCMMHNCK::file_descriptor().clone());
+            deps.push(super::DEGFFGKMFJJ::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ClockParkGetInfoScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

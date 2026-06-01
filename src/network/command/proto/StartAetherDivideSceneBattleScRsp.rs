@@ -30,10 +30,10 @@ pub struct StartAetherDivideSceneBattleScRsp {
     // message fields
     // @@protoc_insertion_point(field:StartAetherDivideSceneBattleScRsp.battle_info)
     pub battle_info: ::protobuf::MessageField<super::AetherDivideBattleInfo::AetherDivideBattleInfo>,
-    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleScRsp.cast_entity_id)
-    pub cast_entity_id: u32,
     // @@protoc_insertion_point(field:StartAetherDivideSceneBattleScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:StartAetherDivideSceneBattleScRsp.cast_entity_id)
+    pub cast_entity_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:StartAetherDivideSceneBattleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,14 +59,14 @@ impl StartAetherDivideSceneBattleScRsp {
             |m: &mut StartAetherDivideSceneBattleScRsp| { &mut m.battle_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "cast_entity_id",
-            |m: &StartAetherDivideSceneBattleScRsp| { &m.cast_entity_id },
-            |m: &mut StartAetherDivideSceneBattleScRsp| { &mut m.cast_entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &StartAetherDivideSceneBattleScRsp| { &m.retcode },
             |m: &mut StartAetherDivideSceneBattleScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "cast_entity_id",
+            |m: &StartAetherDivideSceneBattleScRsp| { &m.cast_entity_id },
+            |m: &mut StartAetherDivideSceneBattleScRsp| { &mut m.cast_entity_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartAetherDivideSceneBattleScRsp>(
             "StartAetherDivideSceneBattleScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                50 => {
+                90 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                80 => {
-                    self.cast_entity_id = is.read_uint32()?;
-                },
-                64 => {
+                96 => {
                     self.retcode = is.read_uint32()?;
+                },
+                112 => {
+                    self.cast_entity_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,11 +111,11 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.cast_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.cast_entity_id);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
+        }
+        if self.cast_entity_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.cast_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,13 +124,13 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
-        }
-        if self.cast_entity_id != 0 {
-            os.write_uint32(10, self.cast_entity_id)?;
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(12, self.retcode)?;
+        }
+        if self.cast_entity_id != 0 {
+            os.write_uint32(14, self.cast_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -150,16 +150,16 @@ impl ::protobuf::Message for StartAetherDivideSceneBattleScRsp {
 
     fn clear(&mut self) {
         self.battle_info.clear();
-        self.cast_entity_id = 0;
         self.retcode = 0;
+        self.cast_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartAetherDivideSceneBattleScRsp {
         static instance: StartAetherDivideSceneBattleScRsp = StartAetherDivideSceneBattleScRsp {
             battle_info: ::protobuf::MessageField::none(),
-            cast_entity_id: 0,
             retcode: 0,
+            cast_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -186,9 +186,9 @@ impl ::protobuf::reflect::ProtobufValue for StartAetherDivideSceneBattleScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'StartAetherDivideSceneBattleScRsp.proto\x1a\x1cAetherDivideBattleInfo\
     .proto\"\x9d\x01\n!StartAetherDivideSceneBattleScRsp\x128\n\x0bbattle_in\
-    fo\x18\x06\x20\x01(\x0b2\x17.AetherDivideBattleInfoR\nbattleInfo\x12$\n\
-    \x0ecast_entity_id\x18\n\x20\x01(\rR\x0ccastEntityId\x12\x18\n\x07retcod\
-    e\x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    fo\x18\x0b\x20\x01(\x0b2\x17.AetherDivideBattleInfoR\nbattleInfo\x12\x18\
+    \n\x07retcode\x18\x0c\x20\x01(\rR\x07retcode\x12$\n\x0ecast_entity_id\
+    \x18\x0e\x20\x01(\rR\x0ccastEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

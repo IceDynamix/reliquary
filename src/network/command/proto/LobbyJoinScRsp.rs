@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyJoinScRsp {
     // message fields
-    // @@protoc_insertion_point(field:LobbyJoinScRsp.POFOCMIHJIA)
-    pub POFOCMIHJIA: ::protobuf::MessageField<super::PBICJCPDLGD::PBICJCPDLGD>,
-    // @@protoc_insertion_point(field:LobbyJoinScRsp.BIEBFHECEPM)
-    pub BIEBFHECEPM: ::std::vec::Vec<super::ADHNJADIJAC::ADHNJADIJAC>,
-    // @@protoc_insertion_point(field:LobbyJoinScRsp.PLOBMBFPNFK)
-    pub PLOBMBFPNFK: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
-    // @@protoc_insertion_point(field:LobbyJoinScRsp.CHEODMKAHJM)
-    pub CHEODMKAHJM: u32,
+    // @@protoc_insertion_point(field:LobbyJoinScRsp.EMIJCKENBKJ)
+    pub EMIJCKENBKJ: ::protobuf::MessageField<super::PJMGBLIFDFP::PJMGBLIFDFP>,
+    // @@protoc_insertion_point(field:LobbyJoinScRsp.DFLEOIGPLNM)
+    pub DFLEOIGPLNM: ::std::vec::Vec<super::LMLNNHKJEIP::LMLNNHKJEIP>,
+    // @@protoc_insertion_point(field:LobbyJoinScRsp.HDJFGMGAOOF)
+    pub HDJFGMGAOOF: u32,
+    // @@protoc_insertion_point(field:LobbyJoinScRsp.GJNMHILINHC)
+    pub GJNMHILINHC: ::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>,
     // @@protoc_insertion_point(field:LobbyJoinScRsp.room_id)
     pub room_id: u64,
     // @@protoc_insertion_point(field:LobbyJoinScRsp.retcode)
@@ -59,25 +59,25 @@ impl LobbyJoinScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PBICJCPDLGD::PBICJCPDLGD>(
-            "POFOCMIHJIA",
-            |m: &LobbyJoinScRsp| { &m.POFOCMIHJIA },
-            |m: &mut LobbyJoinScRsp| { &mut m.POFOCMIHJIA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PJMGBLIFDFP::PJMGBLIFDFP>(
+            "EMIJCKENBKJ",
+            |m: &LobbyJoinScRsp| { &m.EMIJCKENBKJ },
+            |m: &mut LobbyJoinScRsp| { &mut m.EMIJCKENBKJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BIEBFHECEPM",
-            |m: &LobbyJoinScRsp| { &m.BIEBFHECEPM },
-            |m: &mut LobbyJoinScRsp| { &mut m.BIEBFHECEPM },
+            "DFLEOIGPLNM",
+            |m: &LobbyJoinScRsp| { &m.DFLEOIGPLNM },
+            |m: &mut LobbyJoinScRsp| { &mut m.DFLEOIGPLNM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PLOBMBFPNFK",
-            |m: &LobbyJoinScRsp| { &m.PLOBMBFPNFK },
-            |m: &mut LobbyJoinScRsp| { &mut m.PLOBMBFPNFK },
+            "HDJFGMGAOOF",
+            |m: &LobbyJoinScRsp| { &m.HDJFGMGAOOF },
+            |m: &mut LobbyJoinScRsp| { &mut m.HDJFGMGAOOF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CHEODMKAHJM",
-            |m: &LobbyJoinScRsp| { &m.CHEODMKAHJM },
-            |m: &mut LobbyJoinScRsp| { &mut m.CHEODMKAHJM },
+            "GJNMHILINHC",
+            |m: &LobbyJoinScRsp| { &m.GJNMHILINHC },
+            |m: &mut LobbyJoinScRsp| { &mut m.GJNMHILINHC },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
@@ -107,22 +107,22 @@ impl ::protobuf::Message for LobbyJoinScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.POFOCMIHJIA)?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EMIJCKENBKJ)?;
                 },
                 34 => {
-                    self.BIEBFHECEPM.push(is.read_message()?);
+                    self.DFLEOIGPLNM.push(is.read_message()?);
                 },
-                40 => {
-                    self.PLOBMBFPNFK = is.read_enum_or_unknown()?;
+                88 => {
+                    self.HDJFGMGAOOF = is.read_uint32()?;
                 },
-                56 => {
-                    self.CHEODMKAHJM = is.read_uint32()?;
+                96 => {
+                    self.GJNMHILINHC = is.read_enum_or_unknown()?;
                 },
-                48 => {
+                112 => {
                     self.room_id = is.read_uint64()?;
                 },
-                64 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -137,25 +137,25 @@ impl ::protobuf::Message for LobbyJoinScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.POFOCMIHJIA.as_ref() {
+        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.BIEBFHECEPM {
+        for value in &self.DFLEOIGPLNM {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.PLOBMBFPNFK != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::EJIMIOGAOKL_PCPDHELPKEM) {
-            my_size += ::protobuf::rt::int32_size(5, self.PLOBMBFPNFK.value());
+        if self.HDJFGMGAOOF != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.HDJFGMGAOOF);
         }
-        if self.CHEODMKAHJM != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.CHEODMKAHJM);
+        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(12, self.GJNMHILINHC.value());
         }
         if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint64_size(6, self.room_id);
+            my_size += ::protobuf::rt::uint64_size(14, self.room_id);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,23 +163,23 @@ impl ::protobuf::Message for LobbyJoinScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.POFOCMIHJIA.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if let Some(v) = self.EMIJCKENBKJ.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        for v in &self.BIEBFHECEPM {
+        for v in &self.DFLEOIGPLNM {
             ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.PLOBMBFPNFK != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::EJIMIOGAOKL_PCPDHELPKEM) {
-            os.write_enum(5, ::protobuf::EnumOrUnknown::value(&self.PLOBMBFPNFK))?;
+        if self.HDJFGMGAOOF != 0 {
+            os.write_uint32(11, self.HDJFGMGAOOF)?;
         }
-        if self.CHEODMKAHJM != 0 {
-            os.write_uint32(7, self.CHEODMKAHJM)?;
+        if self.GJNMHILINHC != ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ) {
+            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.GJNMHILINHC))?;
         }
         if self.room_id != 0 {
-            os.write_uint64(6, self.room_id)?;
+            os.write_uint64(14, self.room_id)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,10 +198,10 @@ impl ::protobuf::Message for LobbyJoinScRsp {
     }
 
     fn clear(&mut self) {
-        self.POFOCMIHJIA.clear();
-        self.BIEBFHECEPM.clear();
-        self.PLOBMBFPNFK = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::EJIMIOGAOKL_PCPDHELPKEM);
-        self.CHEODMKAHJM = 0;
+        self.EMIJCKENBKJ.clear();
+        self.DFLEOIGPLNM.clear();
+        self.HDJFGMGAOOF = 0;
+        self.GJNMHILINHC = ::protobuf::EnumOrUnknown::new(super::FightGameMode::FightGameMode::FJPMJPEKLJL_NLCDGIPGFDJ);
         self.room_id = 0;
         self.retcode = 0;
         self.special_fields.clear();
@@ -209,10 +209,10 @@ impl ::protobuf::Message for LobbyJoinScRsp {
 
     fn default_instance() -> &'static LobbyJoinScRsp {
         static instance: LobbyJoinScRsp = LobbyJoinScRsp {
-            POFOCMIHJIA: ::protobuf::MessageField::none(),
-            BIEBFHECEPM: ::std::vec::Vec::new(),
-            PLOBMBFPNFK: ::protobuf::EnumOrUnknown::from_i32(0),
-            CHEODMKAHJM: 0,
+            EMIJCKENBKJ: ::protobuf::MessageField::none(),
+            DFLEOIGPLNM: ::std::vec::Vec::new(),
+            HDJFGMGAOOF: 0,
+            GJNMHILINHC: ::protobuf::EnumOrUnknown::from_i32(0),
             room_id: 0,
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
@@ -239,14 +239,14 @@ impl ::protobuf::reflect::ProtobufValue for LobbyJoinScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14LobbyJoinScRsp.proto\x1a\x11ADHNJADIJAC.proto\x1a\x13FightGameMode\
-    .proto\x1a\x11PBICJCPDLGD.proto\"\xf7\x01\n\x0eLobbyJoinScRsp\x12.\n\x0b\
-    POFOCMIHJIA\x18\x0e\x20\x01(\x0b2\x0c.PBICJCPDLGDR\x0bPOFOCMIHJIA\x12.\n\
-    \x0bBIEBFHECEPM\x18\x04\x20\x03(\x0b2\x0c.ADHNJADIJACR\x0bBIEBFHECEPM\
-    \x120\n\x0bPLOBMBFPNFK\x18\x05\x20\x01(\x0e2\x0e.FightGameModeR\x0bPLOBM\
-    BFPNFK\x12\x20\n\x0bCHEODMKAHJM\x18\x07\x20\x01(\rR\x0bCHEODMKAHJM\x12\
-    \x17\n\x07room_id\x18\x06\x20\x01(\x04R\x06roomId\x12\x18\n\x07retcode\
-    \x18\x08\x20\x01(\rR\x07retcodeb\x06proto3\
+    \n\x14LobbyJoinScRsp.proto\x1a\x13FightGameMode.proto\x1a\x11LMLNNHKJEIP\
+    .proto\x1a\x11PJMGBLIFDFP.proto\"\xf7\x01\n\x0eLobbyJoinScRsp\x12.\n\x0b\
+    EMIJCKENBKJ\x18\x08\x20\x01(\x0b2\x0c.PJMGBLIFDFPR\x0bEMIJCKENBKJ\x12.\n\
+    \x0bDFLEOIGPLNM\x18\x04\x20\x03(\x0b2\x0c.LMLNNHKJEIPR\x0bDFLEOIGPLNM\
+    \x12\x20\n\x0bHDJFGMGAOOF\x18\x0b\x20\x01(\rR\x0bHDJFGMGAOOF\x120\n\x0bG\
+    JNMHILINHC\x18\x0c\x20\x01(\x0e2\x0e.FightGameModeR\x0bGJNMHILINHC\x12\
+    \x17\n\x07room_id\x18\x0e\x20\x01(\x04R\x06roomId\x12\x18\n\x07retcode\
+    \x18\x0f\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -264,9 +264,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::ADHNJADIJAC::file_descriptor().clone());
             deps.push(super::FightGameMode::file_descriptor().clone());
-            deps.push(super::PBICJCPDLGD::file_descriptor().clone());
+            deps.push(super::LMLNNHKJEIP::file_descriptor().clone());
+            deps.push(super::PJMGBLIFDFP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(LobbyJoinScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

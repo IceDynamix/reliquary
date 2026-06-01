@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DoGachaInRollShopScRsp {
     // message fields
-    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.reward_display_type)
-    pub reward_display_type: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.LDBCKJIPDHF)
+    pub LDBCKJIPDHF: u32,
     // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.roll_shop_id)
     pub roll_shop_id: u32,
-    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.NJJKICNOFCL)
-    pub NJJKICNOFCL: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:DoGachaInRollShopScRsp.reward_display_type)
+    pub reward_display_type: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DoGachaInRollShopScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -57,20 +57,15 @@ impl DoGachaInRollShopScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &DoGachaInRollShopScRsp| { &m.retcode },
-            |m: &mut DoGachaInRollShopScRsp| { &mut m.retcode },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &DoGachaInRollShopScRsp| { &m.reward },
             |m: &mut DoGachaInRollShopScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "reward_display_type",
-            |m: &DoGachaInRollShopScRsp| { &m.reward_display_type },
-            |m: &mut DoGachaInRollShopScRsp| { &mut m.reward_display_type },
+            "LDBCKJIPDHF",
+            |m: &DoGachaInRollShopScRsp| { &m.LDBCKJIPDHF },
+            |m: &mut DoGachaInRollShopScRsp| { &mut m.LDBCKJIPDHF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "roll_shop_id",
@@ -78,9 +73,14 @@ impl DoGachaInRollShopScRsp {
             |m: &mut DoGachaInRollShopScRsp| { &mut m.roll_shop_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJJKICNOFCL",
-            |m: &DoGachaInRollShopScRsp| { &m.NJJKICNOFCL },
-            |m: &mut DoGachaInRollShopScRsp| { &mut m.NJJKICNOFCL },
+            "retcode",
+            |m: &DoGachaInRollShopScRsp| { &m.retcode },
+            |m: &mut DoGachaInRollShopScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "reward_display_type",
+            |m: &DoGachaInRollShopScRsp| { &m.reward_display_type },
+            |m: &mut DoGachaInRollShopScRsp| { &mut m.reward_display_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DoGachaInRollShopScRsp>(
             "DoGachaInRollShopScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                56 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                106 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                112 => {
-                    self.reward_display_type = is.read_uint32()?;
-                },
-                120 => {
-                    self.roll_shop_id = is.read_uint32()?;
+                56 => {
+                    self.LDBCKJIPDHF = is.read_uint32()?;
                 },
                 88 => {
-                    self.NJJKICNOFCL = is.read_uint32()?;
+                    self.roll_shop_id = is.read_uint32()?;
+                },
+                40 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                96 => {
+                    self.reward_display_type = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,21 +127,21 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.reward_display_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.reward_display_type);
+        if self.LDBCKJIPDHF != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.LDBCKJIPDHF);
         }
         if self.roll_shop_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.roll_shop_id);
+            my_size += ::protobuf::rt::uint32_size(11, self.roll_shop_id);
         }
-        if self.NJJKICNOFCL != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NJJKICNOFCL);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if self.reward_display_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.reward_display_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -149,20 +149,20 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
-        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if self.reward_display_type != 0 {
-            os.write_uint32(14, self.reward_display_type)?;
+        if self.LDBCKJIPDHF != 0 {
+            os.write_uint32(7, self.LDBCKJIPDHF)?;
         }
         if self.roll_shop_id != 0 {
-            os.write_uint32(15, self.roll_shop_id)?;
+            os.write_uint32(11, self.roll_shop_id)?;
         }
-        if self.NJJKICNOFCL != 0 {
-            os.write_uint32(11, self.NJJKICNOFCL)?;
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
+        }
+        if self.reward_display_type != 0 {
+            os.write_uint32(12, self.reward_display_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -181,21 +181,21 @@ impl ::protobuf::Message for DoGachaInRollShopScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.reward.clear();
-        self.reward_display_type = 0;
+        self.LDBCKJIPDHF = 0;
         self.roll_shop_id = 0;
-        self.NJJKICNOFCL = 0;
+        self.retcode = 0;
+        self.reward_display_type = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DoGachaInRollShopScRsp {
         static instance: DoGachaInRollShopScRsp = DoGachaInRollShopScRsp {
-            retcode: 0,
             reward: ::protobuf::MessageField::none(),
-            reward_display_type: 0,
+            LDBCKJIPDHF: 0,
             roll_shop_id: 0,
-            NJJKICNOFCL: 0,
+            retcode: 0,
+            reward_display_type: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -221,11 +221,11 @@ impl ::protobuf::reflect::ProtobufValue for DoGachaInRollShopScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cDoGachaInRollShopScRsp.proto\x1a\x0eItemList.proto\"\xc9\x01\n\x16\
-    DoGachaInRollShopScRsp\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retco\
-    de\x12!\n\x06reward\x18\r\x20\x01(\x0b2\t.ItemListR\x06reward\x12.\n\x13\
-    reward_display_type\x18\x0e\x20\x01(\rR\x11rewardDisplayType\x12\x20\n\
-    \x0croll_shop_id\x18\x0f\x20\x01(\rR\nrollShopId\x12\x20\n\x0bNJJKICNOFC\
-    L\x18\x0b\x20\x01(\rR\x0bNJJKICNOFCLb\x06proto3\
+    DoGachaInRollShopScRsp\x12!\n\x06reward\x18\x0f\x20\x01(\x0b2\t.ItemList\
+    R\x06reward\x12\x20\n\x0bLDBCKJIPDHF\x18\x07\x20\x01(\rR\x0bLDBCKJIPDHF\
+    \x12\x20\n\x0croll_shop_id\x18\x0b\x20\x01(\rR\nrollShopId\x12\x18\n\x07\
+    retcode\x18\x05\x20\x01(\rR\x07retcode\x12.\n\x13reward_display_type\x18\
+    \x0c\x20\x01(\rR\x11rewardDisplayTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -29,13 +29,13 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct PlanetFesGameBingoFlipScRsp {
     // message fields
     // @@protoc_insertion_point(field:PlanetFesGameBingoFlipScRsp.reward)
-    pub reward: ::protobuf::MessageField<super::HLLCDBLCIPK::HLLCDBLCIPK>,
-    // @@protoc_insertion_point(field:PlanetFesGameBingoFlipScRsp.NBFLCNHFEFM)
-    pub NBFLCNHFEFM: u32,
+    pub reward: ::protobuf::MessageField<super::GNMCIEPEBPK::GNMCIEPEBPK>,
     // @@protoc_insertion_point(field:PlanetFesGameBingoFlipScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:PlanetFesGameBingoFlipScRsp.JKLFMOHICMO)
-    pub JKLFMOHICMO: bool,
+    // @@protoc_insertion_point(field:PlanetFesGameBingoFlipScRsp.BDEFAFFDBCC)
+    pub BDEFAFFDBCC: bool,
+    // @@protoc_insertion_point(field:PlanetFesGameBingoFlipScRsp.LKFIGBGPEJB)
+    pub LKFIGBGPEJB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlanetFesGameBingoFlipScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,15 +55,10 @@ impl PlanetFesGameBingoFlipScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::HLLCDBLCIPK::HLLCDBLCIPK>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GNMCIEPEBPK::GNMCIEPEBPK>(
             "reward",
             |m: &PlanetFesGameBingoFlipScRsp| { &m.reward },
             |m: &mut PlanetFesGameBingoFlipScRsp| { &mut m.reward },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBFLCNHFEFM",
-            |m: &PlanetFesGameBingoFlipScRsp| { &m.NBFLCNHFEFM },
-            |m: &mut PlanetFesGameBingoFlipScRsp| { &mut m.NBFLCNHFEFM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -71,9 +66,14 @@ impl PlanetFesGameBingoFlipScRsp {
             |m: &mut PlanetFesGameBingoFlipScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKLFMOHICMO",
-            |m: &PlanetFesGameBingoFlipScRsp| { &m.JKLFMOHICMO },
-            |m: &mut PlanetFesGameBingoFlipScRsp| { &mut m.JKLFMOHICMO },
+            "BDEFAFFDBCC",
+            |m: &PlanetFesGameBingoFlipScRsp| { &m.BDEFAFFDBCC },
+            |m: &mut PlanetFesGameBingoFlipScRsp| { &mut m.BDEFAFFDBCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "LKFIGBGPEJB",
+            |m: &PlanetFesGameBingoFlipScRsp| { &m.LKFIGBGPEJB },
+            |m: &mut PlanetFesGameBingoFlipScRsp| { &mut m.LKFIGBGPEJB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlanetFesGameBingoFlipScRsp>(
             "PlanetFesGameBingoFlipScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                24 => {
-                    self.NBFLCNHFEFM = is.read_uint32()?;
-                },
-                112 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
                 },
-                32 => {
-                    self.JKLFMOHICMO = is.read_bool()?;
+                88 => {
+                    self.BDEFAFFDBCC = is.read_bool()?;
+                },
+                16 => {
+                    self.LKFIGBGPEJB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,14 +121,14 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NBFLCNHFEFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.NBFLCNHFEFM);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
-        if self.JKLFMOHICMO != false {
+        if self.BDEFAFFDBCC != false {
             my_size += 1 + 1;
+        }
+        if self.LKFIGBGPEJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.LKFIGBGPEJB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        }
-        if self.NBFLCNHFEFM != 0 {
-            os.write_uint32(3, self.NBFLCNHFEFM)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
         }
-        if self.JKLFMOHICMO != false {
-            os.write_bool(4, self.JKLFMOHICMO)?;
+        if self.BDEFAFFDBCC != false {
+            os.write_bool(11, self.BDEFAFFDBCC)?;
+        }
+        if self.LKFIGBGPEJB != 0 {
+            os.write_uint32(2, self.LKFIGBGPEJB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for PlanetFesGameBingoFlipScRsp {
 
     fn clear(&mut self) {
         self.reward.clear();
-        self.NBFLCNHFEFM = 0;
         self.retcode = 0;
-        self.JKLFMOHICMO = false;
+        self.BDEFAFFDBCC = false;
+        self.LKFIGBGPEJB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlanetFesGameBingoFlipScRsp {
         static instance: PlanetFesGameBingoFlipScRsp = PlanetFesGameBingoFlipScRsp {
             reward: ::protobuf::MessageField::none(),
-            NBFLCNHFEFM: 0,
             retcode: 0,
-            JKLFMOHICMO: false,
+            BDEFAFFDBCC: false,
+            LKFIGBGPEJB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for PlanetFesGameBingoFlipScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!PlanetFesGameBingoFlipScRsp.proto\x1a\x11HLLCDBLCIPK.proto\"\xa1\x01\
-    \n\x1bPlanetFesGameBingoFlipScRsp\x12$\n\x06reward\x18\x08\x20\x01(\x0b2\
-    \x0c.HLLCDBLCIPKR\x06reward\x12\x20\n\x0bNBFLCNHFEFM\x18\x03\x20\x01(\rR\
-    \x0bNBFLCNHFEFM\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\
-    \x20\n\x0bJKLFMOHICMO\x18\x04\x20\x01(\x08R\x0bJKLFMOHICMOb\x06proto3\
+    \n!PlanetFesGameBingoFlipScRsp.proto\x1a\x11GNMCIEPEBPK.proto\"\xa1\x01\
+    \n\x1bPlanetFesGameBingoFlipScRsp\x12$\n\x06reward\x18\x06\x20\x01(\x0b2\
+    \x0c.GNMCIEPEBPKR\x06reward\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07\
+    retcode\x12\x20\n\x0bBDEFAFFDBCC\x18\x0b\x20\x01(\x08R\x0bBDEFAFFDBCC\
+    \x12\x20\n\x0bLKFIGBGPEJB\x18\x02\x20\x01(\rR\x0bLKFIGBGPEJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HLLCDBLCIPK::file_descriptor().clone());
+            deps.push(super::GNMCIEPEBPK::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PlanetFesGameBingoFlipScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

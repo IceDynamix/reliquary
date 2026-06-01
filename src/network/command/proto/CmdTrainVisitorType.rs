@@ -27,32 +27,32 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdTrainVisitorType)
 pub enum CmdTrainVisitorType {
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PGGMPMKFDLD_PCPDHELPKEM)
-    PGGMPMKFDLD_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdNewSupplementVisitorCsReq)
-    CmdNewSupplementVisitorCsReq = 3739,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTrainVisitorRewardSendNotify)
-    CmdTrainVisitorRewardSendNotify = 3718,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTrainVisitorBehaviorFinishScRsp)
-    CmdTrainVisitorBehaviorFinishScRsp = 3710,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTrainVisitorBehaviorFinishCsReq)
-    CmdTrainVisitorBehaviorFinishCsReq = 3791,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdGetTrainVisitorRegisterCsReq)
-    CmdGetTrainVisitorRegisterCsReq = 3709,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTrainRefreshTimeNotify)
-    CmdTrainRefreshTimeNotify = 3714,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdPCGDKHGILEE)
-    CmdPCGDKHGILEE = 3701,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTakeTrainVisitorBehaviorRewardScRsp)
-    CmdTakeTrainVisitorBehaviorRewardScRsp = 3726,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdLJPMCOJPLDE)
-    CmdLJPMCOJPLDE = 3795,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PGGMPMKFDLD_DNPHJPKEKFM)
-    PGGMPMKFDLD_DNPHJPKEKFM = 3794,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdTakeTrainVisitorBehaviorRewardCsReq)
-    CmdTakeTrainVisitorBehaviorRewardCsReq = 3763,
-    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.CmdGetTrainVisitorRegisterScRsp)
-    CmdGetTrainVisitorRegisterScRsp = 3798,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_NLCDGIPGFDJ)
+    PBNHNKPGIPL_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_AOCEPAIFAHA)
+    PBNHNKPGIPL_AOCEPAIFAHA = 3713,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_GGFOFBFAEIN)
+    PBNHNKPGIPL_GGFOFBFAEIN = 3780,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_GJBHPGPAGKJ)
+    PBNHNKPGIPL_GJBHPGPAGKJ = 3712,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_MAKJBADEJCO)
+    PBNHNKPGIPL_MAKJBADEJCO = 3736,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_PJIHOAHLMND)
+    PBNHNKPGIPL_PJIHOAHLMND = 3703,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_HNMLJJGBIKK)
+    PBNHNKPGIPL_HNMLJJGBIKK = 3781,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_HOLBGJCNMJP)
+    PBNHNKPGIPL_HOLBGJCNMJP = 3715,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_AMDHGJKALDO)
+    PBNHNKPGIPL_AMDHGJKALDO = 3727,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_NPDGBECOIIE)
+    PBNHNKPGIPL_NPDGBECOIIE = 3710,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_CCDCHACIAOE)
+    PBNHNKPGIPL_CCDCHACIAOE = 3773,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_PJMKLBEMCBG)
+    PBNHNKPGIPL_PJMKLBEMCBG = 3729,
+    // @@protoc_insertion_point(enum_value:CmdTrainVisitorType.PBNHNKPGIPL_EMEHHFLFMKG)
+    PBNHNKPGIPL_EMEHHFLFMKG = 3787,
 }
 
 impl ::protobuf::Enum for CmdTrainVisitorType {
@@ -64,56 +64,56 @@ impl ::protobuf::Enum for CmdTrainVisitorType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdTrainVisitorType> {
         match value {
-            0 => ::std::option::Option::Some(CmdTrainVisitorType::PGGMPMKFDLD_PCPDHELPKEM),
-            3739 => ::std::option::Option::Some(CmdTrainVisitorType::CmdNewSupplementVisitorCsReq),
-            3718 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorRewardSendNotify),
-            3710 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp),
-            3791 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishCsReq),
-            3709 => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterCsReq),
-            3714 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainRefreshTimeNotify),
-            3701 => ::std::option::Option::Some(CmdTrainVisitorType::CmdPCGDKHGILEE),
-            3726 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTakeTrainVisitorBehaviorRewardScRsp),
-            3795 => ::std::option::Option::Some(CmdTrainVisitorType::CmdLJPMCOJPLDE),
-            3794 => ::std::option::Option::Some(CmdTrainVisitorType::PGGMPMKFDLD_DNPHJPKEKFM),
-            3763 => ::std::option::Option::Some(CmdTrainVisitorType::CmdTakeTrainVisitorBehaviorRewardCsReq),
-            3798 => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp),
+            0 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_NLCDGIPGFDJ),
+            3713 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_AOCEPAIFAHA),
+            3780 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_GGFOFBFAEIN),
+            3712 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_GJBHPGPAGKJ),
+            3736 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_MAKJBADEJCO),
+            3703 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_PJIHOAHLMND),
+            3781 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_HNMLJJGBIKK),
+            3715 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_HOLBGJCNMJP),
+            3727 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_AMDHGJKALDO),
+            3710 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_NPDGBECOIIE),
+            3773 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_CCDCHACIAOE),
+            3729 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_PJMKLBEMCBG),
+            3787 => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_EMEHHFLFMKG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdTrainVisitorType> {
         match str {
-            "PGGMPMKFDLD_PCPDHELPKEM" => ::std::option::Option::Some(CmdTrainVisitorType::PGGMPMKFDLD_PCPDHELPKEM),
-            "CmdNewSupplementVisitorCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdNewSupplementVisitorCsReq),
-            "CmdTrainVisitorRewardSendNotify" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorRewardSendNotify),
-            "CmdTrainVisitorBehaviorFinishScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp),
-            "CmdTrainVisitorBehaviorFinishCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishCsReq),
-            "CmdGetTrainVisitorRegisterCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterCsReq),
-            "CmdTrainRefreshTimeNotify" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTrainRefreshTimeNotify),
-            "CmdPCGDKHGILEE" => ::std::option::Option::Some(CmdTrainVisitorType::CmdPCGDKHGILEE),
-            "CmdTakeTrainVisitorBehaviorRewardScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTakeTrainVisitorBehaviorRewardScRsp),
-            "CmdLJPMCOJPLDE" => ::std::option::Option::Some(CmdTrainVisitorType::CmdLJPMCOJPLDE),
-            "PGGMPMKFDLD_DNPHJPKEKFM" => ::std::option::Option::Some(CmdTrainVisitorType::PGGMPMKFDLD_DNPHJPKEKFM),
-            "CmdTakeTrainVisitorBehaviorRewardCsReq" => ::std::option::Option::Some(CmdTrainVisitorType::CmdTakeTrainVisitorBehaviorRewardCsReq),
-            "CmdGetTrainVisitorRegisterScRsp" => ::std::option::Option::Some(CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp),
+            "PBNHNKPGIPL_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_NLCDGIPGFDJ),
+            "PBNHNKPGIPL_AOCEPAIFAHA" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_AOCEPAIFAHA),
+            "PBNHNKPGIPL_GGFOFBFAEIN" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_GGFOFBFAEIN),
+            "PBNHNKPGIPL_GJBHPGPAGKJ" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_GJBHPGPAGKJ),
+            "PBNHNKPGIPL_MAKJBADEJCO" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_MAKJBADEJCO),
+            "PBNHNKPGIPL_PJIHOAHLMND" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_PJIHOAHLMND),
+            "PBNHNKPGIPL_HNMLJJGBIKK" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_HNMLJJGBIKK),
+            "PBNHNKPGIPL_HOLBGJCNMJP" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_HOLBGJCNMJP),
+            "PBNHNKPGIPL_AMDHGJKALDO" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_AMDHGJKALDO),
+            "PBNHNKPGIPL_NPDGBECOIIE" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_NPDGBECOIIE),
+            "PBNHNKPGIPL_CCDCHACIAOE" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_CCDCHACIAOE),
+            "PBNHNKPGIPL_PJMKLBEMCBG" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_PJMKLBEMCBG),
+            "PBNHNKPGIPL_EMEHHFLFMKG" => ::std::option::Option::Some(CmdTrainVisitorType::PBNHNKPGIPL_EMEHHFLFMKG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdTrainVisitorType] = &[
-        CmdTrainVisitorType::PGGMPMKFDLD_PCPDHELPKEM,
-        CmdTrainVisitorType::CmdNewSupplementVisitorCsReq,
-        CmdTrainVisitorType::CmdTrainVisitorRewardSendNotify,
-        CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp,
-        CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishCsReq,
-        CmdTrainVisitorType::CmdGetTrainVisitorRegisterCsReq,
-        CmdTrainVisitorType::CmdTrainRefreshTimeNotify,
-        CmdTrainVisitorType::CmdPCGDKHGILEE,
-        CmdTrainVisitorType::CmdTakeTrainVisitorBehaviorRewardScRsp,
-        CmdTrainVisitorType::CmdLJPMCOJPLDE,
-        CmdTrainVisitorType::PGGMPMKFDLD_DNPHJPKEKFM,
-        CmdTrainVisitorType::CmdTakeTrainVisitorBehaviorRewardCsReq,
-        CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp,
+        CmdTrainVisitorType::PBNHNKPGIPL_NLCDGIPGFDJ,
+        CmdTrainVisitorType::PBNHNKPGIPL_AOCEPAIFAHA,
+        CmdTrainVisitorType::PBNHNKPGIPL_GGFOFBFAEIN,
+        CmdTrainVisitorType::PBNHNKPGIPL_GJBHPGPAGKJ,
+        CmdTrainVisitorType::PBNHNKPGIPL_MAKJBADEJCO,
+        CmdTrainVisitorType::PBNHNKPGIPL_PJIHOAHLMND,
+        CmdTrainVisitorType::PBNHNKPGIPL_HNMLJJGBIKK,
+        CmdTrainVisitorType::PBNHNKPGIPL_HOLBGJCNMJP,
+        CmdTrainVisitorType::PBNHNKPGIPL_AMDHGJKALDO,
+        CmdTrainVisitorType::PBNHNKPGIPL_NPDGBECOIIE,
+        CmdTrainVisitorType::PBNHNKPGIPL_CCDCHACIAOE,
+        CmdTrainVisitorType::PBNHNKPGIPL_PJMKLBEMCBG,
+        CmdTrainVisitorType::PBNHNKPGIPL_EMEHHFLFMKG,
     ];
 }
 
@@ -125,19 +125,19 @@ impl ::protobuf::EnumFull for CmdTrainVisitorType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdTrainVisitorType::PGGMPMKFDLD_PCPDHELPKEM => 0,
-            CmdTrainVisitorType::CmdNewSupplementVisitorCsReq => 1,
-            CmdTrainVisitorType::CmdTrainVisitorRewardSendNotify => 2,
-            CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishScRsp => 3,
-            CmdTrainVisitorType::CmdTrainVisitorBehaviorFinishCsReq => 4,
-            CmdTrainVisitorType::CmdGetTrainVisitorRegisterCsReq => 5,
-            CmdTrainVisitorType::CmdTrainRefreshTimeNotify => 6,
-            CmdTrainVisitorType::CmdPCGDKHGILEE => 7,
-            CmdTrainVisitorType::CmdTakeTrainVisitorBehaviorRewardScRsp => 8,
-            CmdTrainVisitorType::CmdLJPMCOJPLDE => 9,
-            CmdTrainVisitorType::PGGMPMKFDLD_DNPHJPKEKFM => 10,
-            CmdTrainVisitorType::CmdTakeTrainVisitorBehaviorRewardCsReq => 11,
-            CmdTrainVisitorType::CmdGetTrainVisitorRegisterScRsp => 12,
+            CmdTrainVisitorType::PBNHNKPGIPL_NLCDGIPGFDJ => 0,
+            CmdTrainVisitorType::PBNHNKPGIPL_AOCEPAIFAHA => 1,
+            CmdTrainVisitorType::PBNHNKPGIPL_GGFOFBFAEIN => 2,
+            CmdTrainVisitorType::PBNHNKPGIPL_GJBHPGPAGKJ => 3,
+            CmdTrainVisitorType::PBNHNKPGIPL_MAKJBADEJCO => 4,
+            CmdTrainVisitorType::PBNHNKPGIPL_PJIHOAHLMND => 5,
+            CmdTrainVisitorType::PBNHNKPGIPL_HNMLJJGBIKK => 6,
+            CmdTrainVisitorType::PBNHNKPGIPL_HOLBGJCNMJP => 7,
+            CmdTrainVisitorType::PBNHNKPGIPL_AMDHGJKALDO => 8,
+            CmdTrainVisitorType::PBNHNKPGIPL_NPDGBECOIIE => 9,
+            CmdTrainVisitorType::PBNHNKPGIPL_CCDCHACIAOE => 10,
+            CmdTrainVisitorType::PBNHNKPGIPL_PJMKLBEMCBG => 11,
+            CmdTrainVisitorType::PBNHNKPGIPL_EMEHHFLFMKG => 12,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -145,7 +145,7 @@ impl ::protobuf::EnumFull for CmdTrainVisitorType {
 
 impl ::std::default::Default for CmdTrainVisitorType {
     fn default() -> Self {
-        CmdTrainVisitorType::PGGMPMKFDLD_PCPDHELPKEM
+        CmdTrainVisitorType::PBNHNKPGIPL_NLCDGIPGFDJ
     }
 }
 
@@ -156,17 +156,16 @@ impl CmdTrainVisitorType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19CmdTrainVisitorType.proto*\xdb\x03\n\x13CmdTrainVisitorType\x12\
-    \x1b\n\x17PGGMPMKFDLD_PCPDHELPKEM\x10\0\x12!\n\x1cCmdNewSupplementVisito\
-    rCsReq\x10\x9b\x1d\x12$\n\x1fCmdTrainVisitorRewardSendNotify\x10\x86\x1d\
-    \x12'\n\"CmdTrainVisitorBehaviorFinishScRsp\x10\xfe\x1c\x12'\n\"CmdTrain\
-    VisitorBehaviorFinishCsReq\x10\xcf\x1d\x12$\n\x1fCmdGetTrainVisitorRegis\
-    terCsReq\x10\xfd\x1c\x12\x1e\n\x19CmdTrainRefreshTimeNotify\x10\x82\x1d\
-    \x12\x13\n\x0eCmdPCGDKHGILEE\x10\xf5\x1c\x12+\n&CmdTakeTrainVisitorBehav\
-    iorRewardScRsp\x10\x8e\x1d\x12\x13\n\x0eCmdLJPMCOJPLDE\x10\xd3\x1d\x12\
-    \x1c\n\x17PGGMPMKFDLD_DNPHJPKEKFM\x10\xd2\x1d\x12+\n&CmdTakeTrainVisitor\
-    BehaviorRewardCsReq\x10\xb3\x1d\x12$\n\x1fCmdGetTrainVisitorRegisterScRs\
-    p\x10\xd6\x1db\x06proto3\
+    \n\x19CmdTrainVisitorType.proto*\x9a\x03\n\x13CmdTrainVisitorType\x12\
+    \x1b\n\x17PBNHNKPGIPL_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17PBNHNKPGIPL_AOCEPAI\
+    FAHA\x10\x81\x1d\x12\x1c\n\x17PBNHNKPGIPL_GGFOFBFAEIN\x10\xc4\x1d\x12\
+    \x1c\n\x17PBNHNKPGIPL_GJBHPGPAGKJ\x10\x80\x1d\x12\x1c\n\x17PBNHNKPGIPL_M\
+    AKJBADEJCO\x10\x98\x1d\x12\x1c\n\x17PBNHNKPGIPL_PJIHOAHLMND\x10\xf7\x1c\
+    \x12\x1c\n\x17PBNHNKPGIPL_HNMLJJGBIKK\x10\xc5\x1d\x12\x1c\n\x17PBNHNKPGI\
+    PL_HOLBGJCNMJP\x10\x83\x1d\x12\x1c\n\x17PBNHNKPGIPL_AMDHGJKALDO\x10\x8f\
+    \x1d\x12\x1c\n\x17PBNHNKPGIPL_NPDGBECOIIE\x10\xfe\x1c\x12\x1c\n\x17PBNHN\
+    KPGIPL_CCDCHACIAOE\x10\xbd\x1d\x12\x1c\n\x17PBNHNKPGIPL_PJMKLBEMCBG\x10\
+    \x91\x1d\x12\x1c\n\x17PBNHNKPGIPL_EMEHHFLFMKG\x10\xcb\x1db\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

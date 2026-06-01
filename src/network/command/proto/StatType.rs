@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:StatType)
 pub enum StatType {
-    // @@protoc_insertion_point(enum_value:StatType.POHDIBANGEF_PCPDHELPKEM)
-    POHDIBANGEF_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:StatType.POHDIBANGEF_GNPNMGPCJDD)
-    POHDIBANGEF_GNPNMGPCJDD = 1,
-    // @@protoc_insertion_point(enum_value:StatType.POHDIBANGEF_LJMICELEHAL)
-    POHDIBANGEF_LJMICELEHAL = 2,
-    // @@protoc_insertion_point(enum_value:StatType.POHDIBANGEF_LDLFFJPOEPK)
-    POHDIBANGEF_LDLFFJPOEPK = 3,
+    // @@protoc_insertion_point(enum_value:StatType.GOPHGIHIDPP_NLCDGIPGFDJ)
+    GOPHGIHIDPP_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:StatType.GOPHGIHIDPP_INJOMKCIBPI)
+    GOPHGIHIDPP_INJOMKCIBPI = 1,
+    // @@protoc_insertion_point(enum_value:StatType.GOPHGIHIDPP_GMKNIIHMCBO)
+    GOPHGIHIDPP_GMKNIIHMCBO = 2,
+    // @@protoc_insertion_point(enum_value:StatType.GOPHGIHIDPP_HNMLECBEGPB)
+    GOPHGIHIDPP_HNMLECBEGPB = 3,
 }
 
 impl ::protobuf::Enum for StatType {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for StatType {
 
     fn from_i32(value: i32) -> ::std::option::Option<StatType> {
         match value {
-            0 => ::std::option::Option::Some(StatType::POHDIBANGEF_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(StatType::POHDIBANGEF_GNPNMGPCJDD),
-            2 => ::std::option::Option::Some(StatType::POHDIBANGEF_LJMICELEHAL),
-            3 => ::std::option::Option::Some(StatType::POHDIBANGEF_LDLFFJPOEPK),
+            0 => ::std::option::Option::Some(StatType::GOPHGIHIDPP_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(StatType::GOPHGIHIDPP_INJOMKCIBPI),
+            2 => ::std::option::Option::Some(StatType::GOPHGIHIDPP_GMKNIIHMCBO),
+            3 => ::std::option::Option::Some(StatType::GOPHGIHIDPP_HNMLECBEGPB),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<StatType> {
         match str {
-            "POHDIBANGEF_PCPDHELPKEM" => ::std::option::Option::Some(StatType::POHDIBANGEF_PCPDHELPKEM),
-            "POHDIBANGEF_GNPNMGPCJDD" => ::std::option::Option::Some(StatType::POHDIBANGEF_GNPNMGPCJDD),
-            "POHDIBANGEF_LJMICELEHAL" => ::std::option::Option::Some(StatType::POHDIBANGEF_LJMICELEHAL),
-            "POHDIBANGEF_LDLFFJPOEPK" => ::std::option::Option::Some(StatType::POHDIBANGEF_LDLFFJPOEPK),
+            "GOPHGIHIDPP_NLCDGIPGFDJ" => ::std::option::Option::Some(StatType::GOPHGIHIDPP_NLCDGIPGFDJ),
+            "GOPHGIHIDPP_INJOMKCIBPI" => ::std::option::Option::Some(StatType::GOPHGIHIDPP_INJOMKCIBPI),
+            "GOPHGIHIDPP_GMKNIIHMCBO" => ::std::option::Option::Some(StatType::GOPHGIHIDPP_GMKNIIHMCBO),
+            "GOPHGIHIDPP_HNMLECBEGPB" => ::std::option::Option::Some(StatType::GOPHGIHIDPP_HNMLECBEGPB),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [StatType] = &[
-        StatType::POHDIBANGEF_PCPDHELPKEM,
-        StatType::POHDIBANGEF_GNPNMGPCJDD,
-        StatType::POHDIBANGEF_LJMICELEHAL,
-        StatType::POHDIBANGEF_LDLFFJPOEPK,
+        StatType::GOPHGIHIDPP_NLCDGIPGFDJ,
+        StatType::GOPHGIHIDPP_INJOMKCIBPI,
+        StatType::GOPHGIHIDPP_GMKNIIHMCBO,
+        StatType::GOPHGIHIDPP_HNMLECBEGPB,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for StatType {
 
 impl ::std::default::Default for StatType {
     fn default() -> Self {
-        StatType::POHDIBANGEF_PCPDHELPKEM
+        StatType::GOPHGIHIDPP_NLCDGIPGFDJ
     }
 }
 
@@ -97,9 +97,9 @@ impl StatType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0eStatType.proto*~\n\x08StatType\x12\x1b\n\x17POHDIBANGEF_PCPDHELPKE\
-    M\x10\0\x12\x1b\n\x17POHDIBANGEF_GNPNMGPCJDD\x10\x01\x12\x1b\n\x17POHDIB\
-    ANGEF_LJMICELEHAL\x10\x02\x12\x1b\n\x17POHDIBANGEF_LDLFFJPOEPK\x10\x03b\
+    \n\x0eStatType.proto*~\n\x08StatType\x12\x1b\n\x17GOPHGIHIDPP_NLCDGIPGFD\
+    J\x10\0\x12\x1b\n\x17GOPHGIHIDPP_INJOMKCIBPI\x10\x01\x12\x1b\n\x17GOPHGI\
+    HIDPP_GMKNIIHMCBO\x10\x02\x12\x1b\n\x17GOPHGIHIDPP_HNMLECBEGPB\x10\x03b\
     \x06proto3\
 ";
 

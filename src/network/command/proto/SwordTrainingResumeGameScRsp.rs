@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SwordTrainingResumeGameScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SwordTrainingResumeGameScRsp.BMKAEFAKNFJ)
-    pub BMKAEFAKNFJ: ::protobuf::MessageField<super::LMBHDCFPPLL::LMBHDCFPPLL>,
+    // @@protoc_insertion_point(field:SwordTrainingResumeGameScRsp.AJGOEJHKOKE)
+    pub AJGOEJHKOKE: ::protobuf::MessageField<super::EINKHFKDCCD::EINKHFKDCCD>,
     // @@protoc_insertion_point(field:SwordTrainingResumeGameScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,10 +51,10 @@ impl SwordTrainingResumeGameScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMBHDCFPPLL::LMBHDCFPPLL>(
-            "BMKAEFAKNFJ",
-            |m: &SwordTrainingResumeGameScRsp| { &m.BMKAEFAKNFJ },
-            |m: &mut SwordTrainingResumeGameScRsp| { &mut m.BMKAEFAKNFJ },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EINKHFKDCCD::EINKHFKDCCD>(
+            "AJGOEJHKOKE",
+            |m: &SwordTrainingResumeGameScRsp| { &m.AJGOEJHKOKE },
+            |m: &mut SwordTrainingResumeGameScRsp| { &mut m.AJGOEJHKOKE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,8 +79,8 @@ impl ::protobuf::Message for SwordTrainingResumeGameScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BMKAEFAKNFJ)?;
+                34 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AJGOEJHKOKE)?;
                 },
                 96 => {
                     self.retcode = is.read_uint32()?;
@@ -97,7 +97,7 @@ impl ::protobuf::Message for SwordTrainingResumeGameScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BMKAEFAKNFJ.as_ref() {
+        if let Some(v) = self.AJGOEJHKOKE.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -110,8 +110,8 @@ impl ::protobuf::Message for SwordTrainingResumeGameScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BMKAEFAKNFJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.AJGOEJHKOKE.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         }
         if self.retcode != 0 {
             os.write_uint32(12, self.retcode)?;
@@ -133,14 +133,14 @@ impl ::protobuf::Message for SwordTrainingResumeGameScRsp {
     }
 
     fn clear(&mut self) {
-        self.BMKAEFAKNFJ.clear();
+        self.AJGOEJHKOKE.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SwordTrainingResumeGameScRsp {
         static instance: SwordTrainingResumeGameScRsp = SwordTrainingResumeGameScRsp {
-            BMKAEFAKNFJ: ::protobuf::MessageField::none(),
+            AJGOEJHKOKE: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for SwordTrainingResumeGameScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"SwordTrainingResumeGameScRsp.proto\x1a\x11LMBHDCFPPLL.proto\"h\n\x1c\
-    SwordTrainingResumeGameScRsp\x12.\n\x0bBMKAEFAKNFJ\x18\x03\x20\x01(\x0b2\
-    \x0c.LMBHDCFPPLLR\x0bBMKAEFAKNFJ\x12\x18\n\x07retcode\x18\x0c\x20\x01(\r\
+    \n\"SwordTrainingResumeGameScRsp.proto\x1a\x11EINKHFKDCCD.proto\"h\n\x1c\
+    SwordTrainingResumeGameScRsp\x12.\n\x0bAJGOEJHKOKE\x18\x04\x20\x01(\x0b2\
+    \x0c.EINKHFKDCCDR\x0bAJGOEJHKOKE\x12\x18\n\x07retcode\x18\x0c\x20\x01(\r\
     R\x07retcodeb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::LMBHDCFPPLL::file_descriptor().clone());
+            deps.push(super::EINKHFKDCCD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(SwordTrainingResumeGameScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

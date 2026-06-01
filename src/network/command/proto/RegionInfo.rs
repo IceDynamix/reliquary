@@ -30,18 +30,18 @@ pub struct RegionInfo {
     // message fields
     // @@protoc_insertion_point(field:RegionInfo.name)
     pub name: ::std::string::String,
-    // @@protoc_insertion_point(field:RegionInfo.title)
-    pub title: ::std::string::String,
-    // @@protoc_insertion_point(field:RegionInfo.dispatch_url)
-    pub dispatch_url: ::std::string::String,
-    // @@protoc_insertion_point(field:RegionInfo.env_type)
-    pub env_type: ::std::string::String,
     // @@protoc_insertion_point(field:RegionInfo.display_name)
     pub display_name: ::std::string::String,
+    // @@protoc_insertion_point(field:RegionInfo.env_type)
+    pub env_type: ::std::string::String,
+    // @@protoc_insertion_point(field:RegionInfo.MDPGMPGBDMH)
+    pub MDPGMPGBDMH: ::std::string::String,
+    // @@protoc_insertion_point(field:RegionInfo.dispatch_url)
+    pub dispatch_url: ::std::string::String,
+    // @@protoc_insertion_point(field:RegionInfo.title)
+    pub title: ::std::string::String,
     // @@protoc_insertion_point(field:RegionInfo.stop_desc)
     pub stop_desc: ::std::string::String,
-    // @@protoc_insertion_point(field:RegionInfo.MPDILONJDEH)
-    pub MPDILONJDEH: ::std::string::String,
     // special fields
     // @@protoc_insertion_point(special_field:RegionInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -67,14 +67,9 @@ impl RegionInfo {
             |m: &mut RegionInfo| { &mut m.name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "title",
-            |m: &RegionInfo| { &m.title },
-            |m: &mut RegionInfo| { &mut m.title },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dispatch_url",
-            |m: &RegionInfo| { &m.dispatch_url },
-            |m: &mut RegionInfo| { &mut m.dispatch_url },
+            "display_name",
+            |m: &RegionInfo| { &m.display_name },
+            |m: &mut RegionInfo| { &mut m.display_name },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "env_type",
@@ -82,19 +77,24 @@ impl RegionInfo {
             |m: &mut RegionInfo| { &mut m.env_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "display_name",
-            |m: &RegionInfo| { &m.display_name },
-            |m: &mut RegionInfo| { &mut m.display_name },
+            "MDPGMPGBDMH",
+            |m: &RegionInfo| { &m.MDPGMPGBDMH },
+            |m: &mut RegionInfo| { &mut m.MDPGMPGBDMH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dispatch_url",
+            |m: &RegionInfo| { &m.dispatch_url },
+            |m: &mut RegionInfo| { &mut m.dispatch_url },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "title",
+            |m: &RegionInfo| { &m.title },
+            |m: &mut RegionInfo| { &mut m.title },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "stop_desc",
             |m: &RegionInfo| { &m.stop_desc },
             |m: &mut RegionInfo| { &mut m.stop_desc },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPDILONJDEH",
-            |m: &RegionInfo| { &m.MPDILONJDEH },
-            |m: &mut RegionInfo| { &mut m.MPDILONJDEH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RegionInfo>(
             "RegionInfo",
@@ -117,23 +117,23 @@ impl ::protobuf::Message for RegionInfo {
                 10 => {
                     self.name = is.read_string()?;
                 },
-                18 => {
-                    self.title = is.read_string()?;
-                },
-                26 => {
-                    self.dispatch_url = is.read_string()?;
+                42 => {
+                    self.display_name = is.read_string()?;
                 },
                 34 => {
                     self.env_type = is.read_string()?;
                 },
-                42 => {
-                    self.display_name = is.read_string()?;
+                58 => {
+                    self.MDPGMPGBDMH = is.read_string()?;
+                },
+                26 => {
+                    self.dispatch_url = is.read_string()?;
+                },
+                18 => {
+                    self.title = is.read_string()?;
                 },
                 50 => {
                     self.stop_desc = is.read_string()?;
-                },
-                58 => {
-                    self.MPDILONJDEH = is.read_string()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -150,23 +150,23 @@ impl ::protobuf::Message for RegionInfo {
         if !self.name.is_empty() {
             my_size += ::protobuf::rt::string_size(1, &self.name);
         }
-        if !self.title.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.title);
-        }
-        if !self.dispatch_url.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.dispatch_url);
+        if !self.display_name.is_empty() {
+            my_size += ::protobuf::rt::string_size(5, &self.display_name);
         }
         if !self.env_type.is_empty() {
             my_size += ::protobuf::rt::string_size(4, &self.env_type);
         }
-        if !self.display_name.is_empty() {
-            my_size += ::protobuf::rt::string_size(5, &self.display_name);
+        if !self.MDPGMPGBDMH.is_empty() {
+            my_size += ::protobuf::rt::string_size(7, &self.MDPGMPGBDMH);
+        }
+        if !self.dispatch_url.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.dispatch_url);
+        }
+        if !self.title.is_empty() {
+            my_size += ::protobuf::rt::string_size(2, &self.title);
         }
         if !self.stop_desc.is_empty() {
             my_size += ::protobuf::rt::string_size(6, &self.stop_desc);
-        }
-        if !self.MPDILONJDEH.is_empty() {
-            my_size += ::protobuf::rt::string_size(7, &self.MPDILONJDEH);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -177,23 +177,23 @@ impl ::protobuf::Message for RegionInfo {
         if !self.name.is_empty() {
             os.write_string(1, &self.name)?;
         }
-        if !self.title.is_empty() {
-            os.write_string(2, &self.title)?;
-        }
-        if !self.dispatch_url.is_empty() {
-            os.write_string(3, &self.dispatch_url)?;
+        if !self.display_name.is_empty() {
+            os.write_string(5, &self.display_name)?;
         }
         if !self.env_type.is_empty() {
             os.write_string(4, &self.env_type)?;
         }
-        if !self.display_name.is_empty() {
-            os.write_string(5, &self.display_name)?;
+        if !self.MDPGMPGBDMH.is_empty() {
+            os.write_string(7, &self.MDPGMPGBDMH)?;
+        }
+        if !self.dispatch_url.is_empty() {
+            os.write_string(3, &self.dispatch_url)?;
+        }
+        if !self.title.is_empty() {
+            os.write_string(2, &self.title)?;
         }
         if !self.stop_desc.is_empty() {
             os.write_string(6, &self.stop_desc)?;
-        }
-        if !self.MPDILONJDEH.is_empty() {
-            os.write_string(7, &self.MPDILONJDEH)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -213,24 +213,24 @@ impl ::protobuf::Message for RegionInfo {
 
     fn clear(&mut self) {
         self.name.clear();
-        self.title.clear();
-        self.dispatch_url.clear();
-        self.env_type.clear();
         self.display_name.clear();
+        self.env_type.clear();
+        self.MDPGMPGBDMH.clear();
+        self.dispatch_url.clear();
+        self.title.clear();
         self.stop_desc.clear();
-        self.MPDILONJDEH.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RegionInfo {
         static instance: RegionInfo = RegionInfo {
             name: ::std::string::String::new(),
-            title: ::std::string::String::new(),
-            dispatch_url: ::std::string::String::new(),
-            env_type: ::std::string::String::new(),
             display_name: ::std::string::String::new(),
+            env_type: ::std::string::String::new(),
+            MDPGMPGBDMH: ::std::string::String::new(),
+            dispatch_url: ::std::string::String::new(),
+            title: ::std::string::String::new(),
             stop_desc: ::std::string::String::new(),
-            MPDILONJDEH: ::std::string::String::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -256,12 +256,12 @@ impl ::protobuf::reflect::ProtobufValue for RegionInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x10RegionInfo.proto\"\xd6\x01\n\nRegionInfo\x12\x12\n\x04name\x18\x01\
-    \x20\x01(\tR\x04name\x12\x14\n\x05title\x18\x02\x20\x01(\tR\x05title\x12\
-    !\n\x0cdispatch_url\x18\x03\x20\x01(\tR\x0bdispatchUrl\x12\x19\n\x08env_\
-    type\x18\x04\x20\x01(\tR\x07envType\x12!\n\x0cdisplay_name\x18\x05\x20\
-    \x01(\tR\x0bdisplayName\x12\x1b\n\tstop_desc\x18\x06\x20\x01(\tR\x08stop\
-    Desc\x12\x20\n\x0bMPDILONJDEH\x18\x07\x20\x01(\tR\x0bMPDILONJDEHb\x06pro\
-    to3\
+    \x20\x01(\tR\x04name\x12!\n\x0cdisplay_name\x18\x05\x20\x01(\tR\x0bdispl\
+    ayName\x12\x19\n\x08env_type\x18\x04\x20\x01(\tR\x07envType\x12\x20\n\
+    \x0bMDPGMPGBDMH\x18\x07\x20\x01(\tR\x0bMDPGMPGBDMH\x12!\n\x0cdispatch_ur\
+    l\x18\x03\x20\x01(\tR\x0bdispatchUrl\x12\x14\n\x05title\x18\x02\x20\x01(\
+    \tR\x05title\x12\x1b\n\tstop_desc\x18\x06\x20\x01(\tR\x08stopDescb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

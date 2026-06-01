@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGameBingoFlipCardScRsp {
     // message fields
+    // @@protoc_insertion_point(field:MonopolyGameBingoFlipCardScRsp.KNJMPBHKHCJ)
+    pub KNJMPBHKHCJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:MonopolyGameBingoFlipCardScRsp.BDEFAFFDBCC)
+    pub BDEFAFFDBCC: bool,
+    // @@protoc_insertion_point(field:MonopolyGameBingoFlipCardScRsp.record_score)
+    pub record_score: u32,
     // @@protoc_insertion_point(field:MonopolyGameBingoFlipCardScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:MonopolyGameBingoFlipCardScRsp.JKLFMOHICMO)
-    pub JKLFMOHICMO: bool,
-    // @@protoc_insertion_point(field:MonopolyGameBingoFlipCardScRsp.EPLBCNFMLIL)
-    pub EPLBCNFMLIL: u32,
-    // @@protoc_insertion_point(field:MonopolyGameBingoFlipCardScRsp.EAOFJFAFAHO)
-    pub EAOFJFAFAHO: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGameBingoFlipCardScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl MonopolyGameBingoFlipCardScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "KNJMPBHKHCJ",
+            |m: &MonopolyGameBingoFlipCardScRsp| { &m.KNJMPBHKHCJ },
+            |m: &mut MonopolyGameBingoFlipCardScRsp| { &mut m.KNJMPBHKHCJ },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "BDEFAFFDBCC",
+            |m: &MonopolyGameBingoFlipCardScRsp| { &m.BDEFAFFDBCC },
+            |m: &mut MonopolyGameBingoFlipCardScRsp| { &mut m.BDEFAFFDBCC },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "record_score",
+            |m: &MonopolyGameBingoFlipCardScRsp| { &m.record_score },
+            |m: &mut MonopolyGameBingoFlipCardScRsp| { &mut m.record_score },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &MonopolyGameBingoFlipCardScRsp| { &m.retcode },
             |m: &mut MonopolyGameBingoFlipCardScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKLFMOHICMO",
-            |m: &MonopolyGameBingoFlipCardScRsp| { &m.JKLFMOHICMO },
-            |m: &mut MonopolyGameBingoFlipCardScRsp| { &mut m.JKLFMOHICMO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EPLBCNFMLIL",
-            |m: &MonopolyGameBingoFlipCardScRsp| { &m.EPLBCNFMLIL },
-            |m: &mut MonopolyGameBingoFlipCardScRsp| { &mut m.EPLBCNFMLIL },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "EAOFJFAFAHO",
-            |m: &MonopolyGameBingoFlipCardScRsp| { &m.EAOFJFAFAHO },
-            |m: &mut MonopolyGameBingoFlipCardScRsp| { &mut m.EAOFJFAFAHO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGameBingoFlipCardScRsp>(
             "MonopolyGameBingoFlipCardScRsp",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for MonopolyGameBingoFlipCardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.KNJMPBHKHCJ)?;
+                },
+                88 => {
+                    self.KNJMPBHKHCJ.push(is.read_uint32()?);
+                },
+                72 => {
+                    self.BDEFAFFDBCC = is.read_bool()?;
+                },
+                40 => {
+                    self.record_score = is.read_uint32()?;
+                },
+                32 => {
                     self.retcode = is.read_uint32()?;
-                },
-                16 => {
-                    self.JKLFMOHICMO = is.read_bool()?;
-                },
-                112 => {
-                    self.EPLBCNFMLIL = is.read_uint32()?;
-                },
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.EAOFJFAFAHO)?;
-                },
-                24 => {
-                    self.EAOFJFAFAHO.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,32 +120,32 @@ impl ::protobuf::Message for MonopolyGameBingoFlipCardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.retcode);
-        }
-        if self.JKLFMOHICMO != false {
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.KNJMPBHKHCJ);
+        if self.BDEFAFFDBCC != false {
             my_size += 1 + 1;
         }
-        if self.EPLBCNFMLIL != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.EPLBCNFMLIL);
+        if self.record_score != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.record_score);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.EAOFJFAFAHO);
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(11, &self.KNJMPBHKHCJ)?;
+        if self.BDEFAFFDBCC != false {
+            os.write_bool(9, self.BDEFAFFDBCC)?;
+        }
+        if self.record_score != 0 {
+            os.write_uint32(5, self.record_score)?;
+        }
         if self.retcode != 0 {
-            os.write_uint32(13, self.retcode)?;
+            os.write_uint32(4, self.retcode)?;
         }
-        if self.JKLFMOHICMO != false {
-            os.write_bool(2, self.JKLFMOHICMO)?;
-        }
-        if self.EPLBCNFMLIL != 0 {
-            os.write_uint32(14, self.EPLBCNFMLIL)?;
-        }
-        os.write_repeated_packed_uint32(3, &self.EAOFJFAFAHO)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -163,19 +163,19 @@ impl ::protobuf::Message for MonopolyGameBingoFlipCardScRsp {
     }
 
     fn clear(&mut self) {
+        self.KNJMPBHKHCJ.clear();
+        self.BDEFAFFDBCC = false;
+        self.record_score = 0;
         self.retcode = 0;
-        self.JKLFMOHICMO = false;
-        self.EPLBCNFMLIL = 0;
-        self.EAOFJFAFAHO.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGameBingoFlipCardScRsp {
         static instance: MonopolyGameBingoFlipCardScRsp = MonopolyGameBingoFlipCardScRsp {
+            KNJMPBHKHCJ: ::std::vec::Vec::new(),
+            BDEFAFFDBCC: false,
+            record_score: 0,
             retcode: 0,
-            JKLFMOHICMO: false,
-            EPLBCNFMLIL: 0,
-            EAOFJFAFAHO: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGameBingoFlipCardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$MonopolyGameBingoFlipCardScRsp.proto\"\xa0\x01\n\x1eMonopolyGameBingo\
-    FlipCardScRsp\x12\x18\n\x07retcode\x18\r\x20\x01(\rR\x07retcode\x12\x20\
-    \n\x0bJKLFMOHICMO\x18\x02\x20\x01(\x08R\x0bJKLFMOHICMO\x12\x20\n\x0bEPLB\
-    CNFMLIL\x18\x0e\x20\x01(\rR\x0bEPLBCNFMLIL\x12\x20\n\x0bEAOFJFAFAHO\x18\
-    \x03\x20\x03(\rR\x0bEAOFJFAFAHOb\x06proto3\
+    \n$MonopolyGameBingoFlipCardScRsp.proto\"\xa1\x01\n\x1eMonopolyGameBingo\
+    FlipCardScRsp\x12\x20\n\x0bKNJMPBHKHCJ\x18\x0b\x20\x03(\rR\x0bKNJMPBHKHC\
+    J\x12\x20\n\x0bBDEFAFFDBCC\x18\t\x20\x01(\x08R\x0bBDEFAFFDBCC\x12!\n\x0c\
+    record_score\x18\x05\x20\x01(\rR\x0brecordScore\x12\x18\n\x07retcode\x18\
+    \x04\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

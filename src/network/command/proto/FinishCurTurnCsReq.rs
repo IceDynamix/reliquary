@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FinishCurTurnCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FinishCurTurnCsReq.NOIBCHMDHJH)
-    pub NOIBCHMDHJH: u32,
+    // @@protoc_insertion_point(field:FinishCurTurnCsReq.IDFANGELPEE)
+    pub IDFANGELPEE: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FinishCurTurnCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FinishCurTurnCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NOIBCHMDHJH",
-            |m: &FinishCurTurnCsReq| { &m.NOIBCHMDHJH },
-            |m: &mut FinishCurTurnCsReq| { &mut m.NOIBCHMDHJH },
+            "IDFANGELPEE",
+            |m: &FinishCurTurnCsReq| { &m.IDFANGELPEE },
+            |m: &mut FinishCurTurnCsReq| { &mut m.IDFANGELPEE },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FinishCurTurnCsReq>(
             "FinishCurTurnCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for FinishCurTurnCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.NOIBCHMDHJH = is.read_uint32()?;
+                72 => {
+                    self.IDFANGELPEE = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FinishCurTurnCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NOIBCHMDHJH != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.NOIBCHMDHJH);
+        if self.IDFANGELPEE != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.IDFANGELPEE);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FinishCurTurnCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NOIBCHMDHJH != 0 {
-            os.write_uint32(1, self.NOIBCHMDHJH)?;
+        if self.IDFANGELPEE != 0 {
+            os.write_uint32(9, self.IDFANGELPEE)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FinishCurTurnCsReq {
     }
 
     fn clear(&mut self) {
-        self.NOIBCHMDHJH = 0;
+        self.IDFANGELPEE = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FinishCurTurnCsReq {
         static instance: FinishCurTurnCsReq = FinishCurTurnCsReq {
-            NOIBCHMDHJH: 0,
+            IDFANGELPEE: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for FinishCurTurnCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18FinishCurTurnCsReq.proto\"6\n\x12FinishCurTurnCsReq\x12\x20\n\x0bN\
-    OIBCHMDHJH\x18\x01\x20\x01(\rR\x0bNOIBCHMDHJHb\x06proto3\
+    \n\x18FinishCurTurnCsReq.proto\"6\n\x12FinishCurTurnCsReq\x12\x20\n\x0bI\
+    DFANGELPEE\x18\t\x20\x01(\rR\x0bIDFANGELPEEb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TrainPartySetBadgeAutoFillScRsp {
     // message fields
+    // @@protoc_insertion_point(field:TrainPartySetBadgeAutoFillScRsp.PELJACANAFH)
+    pub PELJACANAFH: bool,
     // @@protoc_insertion_point(field:TrainPartySetBadgeAutoFillScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:TrainPartySetBadgeAutoFillScRsp.AELMBPLDFGJ)
-    pub AELMBPLDFGJ: bool,
     // special fields
     // @@protoc_insertion_point(special_field:TrainPartySetBadgeAutoFillScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TrainPartySetBadgeAutoFillScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "PELJACANAFH",
+            |m: &TrainPartySetBadgeAutoFillScRsp| { &m.PELJACANAFH },
+            |m: &mut TrainPartySetBadgeAutoFillScRsp| { &mut m.PELJACANAFH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &TrainPartySetBadgeAutoFillScRsp| { &m.retcode },
             |m: &mut TrainPartySetBadgeAutoFillScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AELMBPLDFGJ",
-            |m: &TrainPartySetBadgeAutoFillScRsp| { &m.AELMBPLDFGJ },
-            |m: &mut TrainPartySetBadgeAutoFillScRsp| { &mut m.AELMBPLDFGJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TrainPartySetBadgeAutoFillScRsp>(
             "TrainPartySetBadgeAutoFillScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TrainPartySetBadgeAutoFillScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 40 => {
-                    self.AELMBPLDFGJ = is.read_bool()?;
+                    self.PELJACANAFH = is.read_bool()?;
+                },
+                8 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TrainPartySetBadgeAutoFillScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
-        if self.AELMBPLDFGJ != false {
+        if self.PELJACANAFH != false {
             my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TrainPartySetBadgeAutoFillScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if self.PELJACANAFH != false {
+            os.write_bool(5, self.PELJACANAFH)?;
         }
-        if self.AELMBPLDFGJ != false {
-            os.write_bool(5, self.AELMBPLDFGJ)?;
+        if self.retcode != 0 {
+            os.write_uint32(1, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TrainPartySetBadgeAutoFillScRsp {
     }
 
     fn clear(&mut self) {
+        self.PELJACANAFH = false;
         self.retcode = 0;
-        self.AELMBPLDFGJ = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TrainPartySetBadgeAutoFillScRsp {
         static instance: TrainPartySetBadgeAutoFillScRsp = TrainPartySetBadgeAutoFillScRsp {
+            PELJACANAFH: false,
             retcode: 0,
-            AELMBPLDFGJ: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TrainPartySetBadgeAutoFillScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%TrainPartySetBadgeAutoFillScRsp.proto\"]\n\x1fTrainPartySetBadgeAutoF\
-    illScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\
-    \x0bAELMBPLDFGJ\x18\x05\x20\x01(\x08R\x0bAELMBPLDFGJb\x06proto3\
+    illScRsp\x12\x20\n\x0bPELJACANAFH\x18\x05\x20\x01(\x08R\x0bPELJACANAFH\
+    \x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

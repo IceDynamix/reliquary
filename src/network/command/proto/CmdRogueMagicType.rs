@@ -27,88 +27,88 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRogueMagicType)
 pub enum CmdRogueMagicType {
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.NFJEJPNLLAM_AMFJBBNJPLI)
-    NFJEJPNLLAM_AMFJBBNJPLI = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicReviveCostUpdateScNotify)
-    CmdRogueMagicReviveCostUpdateScNotify = 7733,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdLMGJDLDGKMM)
-    CmdLMGJDLDGKMM = 7796,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdFGCBMGEIGFL)
-    CmdFGCBMGEIGFL = 7749,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicReviveAvatarCsReq)
-    CmdRogueMagicReviveAvatarCsReq = 7761,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicGetMiscRealTimeDataScRsp)
-    CmdRogueMagicGetMiscRealTimeDataScRsp = 7793,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.NFJEJPNLLAM_NPJIONDJKGA)
-    NFJEJPNLLAM_NPJIONDJKGA = 7708,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicStartCsReq)
-    CmdRogueMagicStartCsReq = 7791,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicScepterTakeOffUnitCsReq)
-    CmdRogueMagicScepterTakeOffUnitCsReq = 7757,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicStoryInfoUpdateScNotify)
-    CmdRogueMagicStoryInfoUpdateScNotify = 7766,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterLayerCsReq)
-    CmdRogueMagicEnterLayerCsReq = 7739,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicLevelInfoUpdateScNotify)
-    CmdRogueMagicLevelInfoUpdateScNotify = 7774,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicUnitComposeCsReq)
-    CmdRogueMagicUnitComposeCsReq = 7728,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicReviveAvatarScRsp)
-    CmdRogueMagicReviveAvatarScRsp = 7707,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicBattleFailSettleInfoScNotify)
-    CmdRogueMagicBattleFailSettleInfoScNotify = 7732,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicStartScRsp)
-    CmdRogueMagicStartScRsp = 7710,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicLeaveScRsp)
-    CmdRogueMagicLeaveScRsp = 7718,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdJEPAJCEGPAD)
-    CmdJEPAJCEGPAD = 7721,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSetAutoDressInMagicUnitScRsp)
-    CmdRogueMagicSetAutoDressInMagicUnitScRsp = 7779,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSettleScRsp)
-    CmdRogueMagicSettleScRsp = 7798,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterLayerScRsp)
-    CmdRogueMagicEnterLayerScRsp = 7701,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdKBDIBKLEBKP)
-    CmdKBDIBKLEBKP = 7753,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAutoDressInMagicUnitChangeScNotify)
-    CmdRogueMagicAutoDressInMagicUnitChangeScNotify = 7705,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicScepterDressInUnitCsReq)
-    CmdRogueMagicScepterDressInUnitCsReq = 7789,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnableTalentCsReq)
-    CmdRogueMagicEnableTalentCsReq = 7751,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterRoomCsReq)
-    CmdRogueMagicEnterRoomCsReq = 7763,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAreaUpdateScNotify)
-    CmdRogueMagicAreaUpdateScNotify = 7737,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterRoomScRsp)
-    CmdRogueMagicEnterRoomScRsp = 7726,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterScRsp)
-    CmdRogueMagicEnterScRsp = 7795,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnableTalentScRsp)
-    CmdRogueMagicEnableTalentScRsp = 7725,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicLeaveCsReq)
-    CmdRogueMagicLeaveCsReq = 7714,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.NFJEJPNLLAM_CGFBFEIIHMO)
-    NFJEJPNLLAM_CGFBFEIIHMO = 7773,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicGetMiscRealTimeDataCsReq)
-    CmdRogueMagicGetMiscRealTimeDataCsReq = 7720,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdEAHJLOANBPD)
-    CmdEAHJLOANBPD = 7717,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicQueryScRsp)
-    CmdRogueMagicQueryScRsp = 7744,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicUnitComposeScRsp)
-    CmdRogueMagicUnitComposeScRsp = 7765,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSetAutoDressInMagicUnitCsReq)
-    CmdRogueMagicSetAutoDressInMagicUnitCsReq = 7754,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicAutoDressInUnitCsReq)
-    CmdRogueMagicAutoDressInUnitCsReq = 7702,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicQueryCsReq)
-    CmdRogueMagicQueryCsReq = 7758,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicEnterCsReq)
-    CmdRogueMagicEnterCsReq = 7794,
-    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.CmdRogueMagicSettleCsReq)
-    CmdRogueMagicSettleCsReq = 7709,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_ELGPACEMCGP)
+    GCKCLGJIKFC_ELGPACEMCGP = 0,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_EBFIOPBCBMO)
+    GCKCLGJIKFC_EBFIOPBCBMO = 7738,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_DAIEBLFKELP)
+    GCKCLGJIKFC_DAIEBLFKELP = 7771,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_OLMJEOHJDOE)
+    GCKCLGJIKFC_OLMJEOHJDOE = 7782,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_LFABAIJILAP)
+    GCKCLGJIKFC_LFABAIJILAP = 7773,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_EOCMNOCLGOL)
+    GCKCLGJIKFC_EOCMNOCLGOL = 7712,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_MEAOAMPCJMI)
+    GCKCLGJIKFC_MEAOAMPCJMI = 7727,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_OHFCBNCCDDN)
+    GCKCLGJIKFC_OHFCBNCCDDN = 7705,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_FJGPJPFICON)
+    GCKCLGJIKFC_FJGPJPFICON = 7785,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_LEMAMDNLBBE)
+    GCKCLGJIKFC_LEMAMDNLBBE = 7766,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_AGJONFGMLNF)
+    GCKCLGJIKFC_AGJONFGMLNF = 7736,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_LHEGILFOIAK)
+    GCKCLGJIKFC_LHEGILFOIAK = 7749,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_JNMCDHPDBCC)
+    GCKCLGJIKFC_JNMCDHPDBCC = 7735,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_CEGNAJDJEBF)
+    GCKCLGJIKFC_CEGNAJDJEBF = 7753,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_JBCEMCLPDDP)
+    GCKCLGJIKFC_JBCEMCLPDDP = 7732,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_CCKFMFIDDCO)
+    GCKCLGJIKFC_CCKFMFIDDCO = 7763,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_AEDKOGFLOHE)
+    GCKCLGJIKFC_AEDKOGFLOHE = 7783,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_AKELCLEGHFG)
+    GCKCLGJIKFC_AKELCLEGHFG = 7729,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_DLGJNFNPIIM)
+    GCKCLGJIKFC_DLGJNFNPIIM = 7714,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_KJNOLKDPHHG)
+    GCKCLGJIKFC_KJNOLKDPHHG = 7715,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_CEMDCONHCGL)
+    GCKCLGJIKFC_CEMDCONHCGL = 7710,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_HNFPIDGENIB)
+    GCKCLGJIKFC_HNFPIDGENIB = 7716,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_GPGIKLKCHDJ)
+    GCKCLGJIKFC_GPGIKLKCHDJ = 7761,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_JEMAMHMPJMK)
+    GCKCLGJIKFC_JEMAMHMPJMK = 7754,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_HONOAMIJAEL)
+    GCKCLGJIKFC_HONOAMIJAEL = 7730,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_HIOELOOHHKA)
+    GCKCLGJIKFC_HIOELOOHHKA = 7774,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_DFLNJOIPHIC)
+    GCKCLGJIKFC_DFLNJOIPHIC = 7787,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_OBJMAFEBKMO)
+    GCKCLGJIKFC_OBJMAFEBKMO = 7720,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_DKIBMCIFNDN)
+    GCKCLGJIKFC_DKIBMCIFNDN = 7799,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_LJPPNJJCMDD)
+    GCKCLGJIKFC_LJPPNJJCMDD = 7752,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_NFLEONIBHPO)
+    GCKCLGJIKFC_NFLEONIBHPO = 7703,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_IFKDDPJKHCG)
+    GCKCLGJIKFC_IFKDDPJKHCG = 7724,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_ELIKGKAELLK)
+    GCKCLGJIKFC_ELIKGKAELLK = 7713,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_AMEAKKEPALK)
+    GCKCLGJIKFC_AMEAKKEPALK = 7781,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_JIHNGNPPPCG)
+    GCKCLGJIKFC_JIHNGNPPPCG = 7767,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_DNMLCNEJLCP)
+    GCKCLGJIKFC_DNMLCNEJLCP = 7759,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_LHLOMIFDHIL)
+    GCKCLGJIKFC_LHLOMIFDHIL = 7780,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_KAOEMDIGGGM)
+    GCKCLGJIKFC_KAOEMDIGGGM = 7728,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_FAPKFFBJJKH)
+    GCKCLGJIKFC_FAPKFFBJJKH = 7701,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_LJCCLPPDLHH)
+    GCKCLGJIKFC_LJCCLPPDLHH = 7778,
+    // @@protoc_insertion_point(enum_value:CmdRogueMagicType.GCKCLGJIKFC_MEIBPJIJKAD)
+    GCKCLGJIKFC_MEIBPJIJKAD = 7792,
 }
 
 impl ::protobuf::Enum for CmdRogueMagicType {
@@ -120,140 +120,140 @@ impl ::protobuf::Enum for CmdRogueMagicType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueMagicType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRogueMagicType::NFJEJPNLLAM_AMFJBBNJPLI),
-            7733 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify),
-            7796 => ::std::option::Option::Some(CmdRogueMagicType::CmdLMGJDLDGKMM),
-            7749 => ::std::option::Option::Some(CmdRogueMagicType::CmdFGCBMGEIGFL),
-            7761 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq),
-            7793 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp),
-            7708 => ::std::option::Option::Some(CmdRogueMagicType::NFJEJPNLLAM_NPJIONDJKGA),
-            7791 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartCsReq),
-            7757 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitCsReq),
-            7766 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify),
-            7739 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq),
-            7774 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify),
-            7728 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq),
-            7707 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp),
-            7732 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify),
-            7710 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartScRsp),
-            7718 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveScRsp),
-            7721 => ::std::option::Option::Some(CmdRogueMagicType::CmdJEPAJCEGPAD),
-            7779 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitScRsp),
-            7798 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleScRsp),
-            7701 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp),
-            7753 => ::std::option::Option::Some(CmdRogueMagicType::CmdKBDIBKLEBKP),
-            7705 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInMagicUnitChangeScNotify),
-            7789 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq),
-            7751 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq),
-            7763 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq),
-            7737 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify),
-            7726 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp),
-            7795 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterScRsp),
-            7725 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp),
-            7714 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveCsReq),
-            7773 => ::std::option::Option::Some(CmdRogueMagicType::NFJEJPNLLAM_CGFBFEIIHMO),
-            7720 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq),
-            7717 => ::std::option::Option::Some(CmdRogueMagicType::CmdEAHJLOANBPD),
-            7744 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryScRsp),
-            7765 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp),
-            7754 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq),
-            7702 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq),
-            7758 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryCsReq),
-            7794 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterCsReq),
-            7709 => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleCsReq),
+            0 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_ELGPACEMCGP),
+            7738 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_EBFIOPBCBMO),
+            7771 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_DAIEBLFKELP),
+            7782 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_OLMJEOHJDOE),
+            7773 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LFABAIJILAP),
+            7712 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_EOCMNOCLGOL),
+            7727 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_MEAOAMPCJMI),
+            7705 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_OHFCBNCCDDN),
+            7785 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_FJGPJPFICON),
+            7766 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LEMAMDNLBBE),
+            7736 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_AGJONFGMLNF),
+            7749 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LHEGILFOIAK),
+            7735 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_JNMCDHPDBCC),
+            7753 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_CEGNAJDJEBF),
+            7732 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_JBCEMCLPDDP),
+            7763 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_CCKFMFIDDCO),
+            7783 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_AEDKOGFLOHE),
+            7729 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_AKELCLEGHFG),
+            7714 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_DLGJNFNPIIM),
+            7715 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_KJNOLKDPHHG),
+            7710 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_CEMDCONHCGL),
+            7716 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_HNFPIDGENIB),
+            7761 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_GPGIKLKCHDJ),
+            7754 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_JEMAMHMPJMK),
+            7730 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_HONOAMIJAEL),
+            7774 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_HIOELOOHHKA),
+            7787 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_DFLNJOIPHIC),
+            7720 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_OBJMAFEBKMO),
+            7799 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_DKIBMCIFNDN),
+            7752 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LJPPNJJCMDD),
+            7703 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_NFLEONIBHPO),
+            7724 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_IFKDDPJKHCG),
+            7713 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_ELIKGKAELLK),
+            7781 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_AMEAKKEPALK),
+            7767 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_JIHNGNPPPCG),
+            7759 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_DNMLCNEJLCP),
+            7780 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LHLOMIFDHIL),
+            7728 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_KAOEMDIGGGM),
+            7701 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_FAPKFFBJJKH),
+            7778 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LJCCLPPDLHH),
+            7792 => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_MEIBPJIJKAD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueMagicType> {
         match str {
-            "NFJEJPNLLAM_AMFJBBNJPLI" => ::std::option::Option::Some(CmdRogueMagicType::NFJEJPNLLAM_AMFJBBNJPLI),
-            "CmdRogueMagicReviveCostUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify),
-            "CmdLMGJDLDGKMM" => ::std::option::Option::Some(CmdRogueMagicType::CmdLMGJDLDGKMM),
-            "CmdFGCBMGEIGFL" => ::std::option::Option::Some(CmdRogueMagicType::CmdFGCBMGEIGFL),
-            "CmdRogueMagicReviveAvatarCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq),
-            "CmdRogueMagicGetMiscRealTimeDataScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp),
-            "NFJEJPNLLAM_NPJIONDJKGA" => ::std::option::Option::Some(CmdRogueMagicType::NFJEJPNLLAM_NPJIONDJKGA),
-            "CmdRogueMagicStartCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartCsReq),
-            "CmdRogueMagicScepterTakeOffUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitCsReq),
-            "CmdRogueMagicStoryInfoUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify),
-            "CmdRogueMagicEnterLayerCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq),
-            "CmdRogueMagicLevelInfoUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify),
-            "CmdRogueMagicUnitComposeCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq),
-            "CmdRogueMagicReviveAvatarScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp),
-            "CmdRogueMagicBattleFailSettleInfoScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify),
-            "CmdRogueMagicStartScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicStartScRsp),
-            "CmdRogueMagicLeaveScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveScRsp),
-            "CmdJEPAJCEGPAD" => ::std::option::Option::Some(CmdRogueMagicType::CmdJEPAJCEGPAD),
-            "CmdRogueMagicSetAutoDressInMagicUnitScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitScRsp),
-            "CmdRogueMagicSettleScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleScRsp),
-            "CmdRogueMagicEnterLayerScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp),
-            "CmdKBDIBKLEBKP" => ::std::option::Option::Some(CmdRogueMagicType::CmdKBDIBKLEBKP),
-            "CmdRogueMagicAutoDressInMagicUnitChangeScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInMagicUnitChangeScNotify),
-            "CmdRogueMagicScepterDressInUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq),
-            "CmdRogueMagicEnableTalentCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq),
-            "CmdRogueMagicEnterRoomCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq),
-            "CmdRogueMagicAreaUpdateScNotify" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify),
-            "CmdRogueMagicEnterRoomScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp),
-            "CmdRogueMagicEnterScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterScRsp),
-            "CmdRogueMagicEnableTalentScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp),
-            "CmdRogueMagicLeaveCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicLeaveCsReq),
-            "NFJEJPNLLAM_CGFBFEIIHMO" => ::std::option::Option::Some(CmdRogueMagicType::NFJEJPNLLAM_CGFBFEIIHMO),
-            "CmdRogueMagicGetMiscRealTimeDataCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq),
-            "CmdEAHJLOANBPD" => ::std::option::Option::Some(CmdRogueMagicType::CmdEAHJLOANBPD),
-            "CmdRogueMagicQueryScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryScRsp),
-            "CmdRogueMagicUnitComposeScRsp" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp),
-            "CmdRogueMagicSetAutoDressInMagicUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq),
-            "CmdRogueMagicAutoDressInUnitCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq),
-            "CmdRogueMagicQueryCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicQueryCsReq),
-            "CmdRogueMagicEnterCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicEnterCsReq),
-            "CmdRogueMagicSettleCsReq" => ::std::option::Option::Some(CmdRogueMagicType::CmdRogueMagicSettleCsReq),
+            "GCKCLGJIKFC_ELGPACEMCGP" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_ELGPACEMCGP),
+            "GCKCLGJIKFC_EBFIOPBCBMO" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_EBFIOPBCBMO),
+            "GCKCLGJIKFC_DAIEBLFKELP" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_DAIEBLFKELP),
+            "GCKCLGJIKFC_OLMJEOHJDOE" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_OLMJEOHJDOE),
+            "GCKCLGJIKFC_LFABAIJILAP" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LFABAIJILAP),
+            "GCKCLGJIKFC_EOCMNOCLGOL" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_EOCMNOCLGOL),
+            "GCKCLGJIKFC_MEAOAMPCJMI" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_MEAOAMPCJMI),
+            "GCKCLGJIKFC_OHFCBNCCDDN" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_OHFCBNCCDDN),
+            "GCKCLGJIKFC_FJGPJPFICON" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_FJGPJPFICON),
+            "GCKCLGJIKFC_LEMAMDNLBBE" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LEMAMDNLBBE),
+            "GCKCLGJIKFC_AGJONFGMLNF" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_AGJONFGMLNF),
+            "GCKCLGJIKFC_LHEGILFOIAK" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LHEGILFOIAK),
+            "GCKCLGJIKFC_JNMCDHPDBCC" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_JNMCDHPDBCC),
+            "GCKCLGJIKFC_CEGNAJDJEBF" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_CEGNAJDJEBF),
+            "GCKCLGJIKFC_JBCEMCLPDDP" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_JBCEMCLPDDP),
+            "GCKCLGJIKFC_CCKFMFIDDCO" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_CCKFMFIDDCO),
+            "GCKCLGJIKFC_AEDKOGFLOHE" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_AEDKOGFLOHE),
+            "GCKCLGJIKFC_AKELCLEGHFG" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_AKELCLEGHFG),
+            "GCKCLGJIKFC_DLGJNFNPIIM" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_DLGJNFNPIIM),
+            "GCKCLGJIKFC_KJNOLKDPHHG" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_KJNOLKDPHHG),
+            "GCKCLGJIKFC_CEMDCONHCGL" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_CEMDCONHCGL),
+            "GCKCLGJIKFC_HNFPIDGENIB" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_HNFPIDGENIB),
+            "GCKCLGJIKFC_GPGIKLKCHDJ" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_GPGIKLKCHDJ),
+            "GCKCLGJIKFC_JEMAMHMPJMK" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_JEMAMHMPJMK),
+            "GCKCLGJIKFC_HONOAMIJAEL" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_HONOAMIJAEL),
+            "GCKCLGJIKFC_HIOELOOHHKA" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_HIOELOOHHKA),
+            "GCKCLGJIKFC_DFLNJOIPHIC" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_DFLNJOIPHIC),
+            "GCKCLGJIKFC_OBJMAFEBKMO" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_OBJMAFEBKMO),
+            "GCKCLGJIKFC_DKIBMCIFNDN" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_DKIBMCIFNDN),
+            "GCKCLGJIKFC_LJPPNJJCMDD" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LJPPNJJCMDD),
+            "GCKCLGJIKFC_NFLEONIBHPO" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_NFLEONIBHPO),
+            "GCKCLGJIKFC_IFKDDPJKHCG" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_IFKDDPJKHCG),
+            "GCKCLGJIKFC_ELIKGKAELLK" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_ELIKGKAELLK),
+            "GCKCLGJIKFC_AMEAKKEPALK" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_AMEAKKEPALK),
+            "GCKCLGJIKFC_JIHNGNPPPCG" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_JIHNGNPPPCG),
+            "GCKCLGJIKFC_DNMLCNEJLCP" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_DNMLCNEJLCP),
+            "GCKCLGJIKFC_LHLOMIFDHIL" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LHLOMIFDHIL),
+            "GCKCLGJIKFC_KAOEMDIGGGM" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_KAOEMDIGGGM),
+            "GCKCLGJIKFC_FAPKFFBJJKH" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_FAPKFFBJJKH),
+            "GCKCLGJIKFC_LJCCLPPDLHH" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_LJCCLPPDLHH),
+            "GCKCLGJIKFC_MEIBPJIJKAD" => ::std::option::Option::Some(CmdRogueMagicType::GCKCLGJIKFC_MEIBPJIJKAD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRogueMagicType] = &[
-        CmdRogueMagicType::NFJEJPNLLAM_AMFJBBNJPLI,
-        CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify,
-        CmdRogueMagicType::CmdLMGJDLDGKMM,
-        CmdRogueMagicType::CmdFGCBMGEIGFL,
-        CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq,
-        CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp,
-        CmdRogueMagicType::NFJEJPNLLAM_NPJIONDJKGA,
-        CmdRogueMagicType::CmdRogueMagicStartCsReq,
-        CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitCsReq,
-        CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify,
-        CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq,
-        CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify,
-        CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq,
-        CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp,
-        CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify,
-        CmdRogueMagicType::CmdRogueMagicStartScRsp,
-        CmdRogueMagicType::CmdRogueMagicLeaveScRsp,
-        CmdRogueMagicType::CmdJEPAJCEGPAD,
-        CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitScRsp,
-        CmdRogueMagicType::CmdRogueMagicSettleScRsp,
-        CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp,
-        CmdRogueMagicType::CmdKBDIBKLEBKP,
-        CmdRogueMagicType::CmdRogueMagicAutoDressInMagicUnitChangeScNotify,
-        CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq,
-        CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq,
-        CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq,
-        CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify,
-        CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp,
-        CmdRogueMagicType::CmdRogueMagicEnterScRsp,
-        CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp,
-        CmdRogueMagicType::CmdRogueMagicLeaveCsReq,
-        CmdRogueMagicType::NFJEJPNLLAM_CGFBFEIIHMO,
-        CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq,
-        CmdRogueMagicType::CmdEAHJLOANBPD,
-        CmdRogueMagicType::CmdRogueMagicQueryScRsp,
-        CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp,
-        CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq,
-        CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq,
-        CmdRogueMagicType::CmdRogueMagicQueryCsReq,
-        CmdRogueMagicType::CmdRogueMagicEnterCsReq,
-        CmdRogueMagicType::CmdRogueMagicSettleCsReq,
+        CmdRogueMagicType::GCKCLGJIKFC_ELGPACEMCGP,
+        CmdRogueMagicType::GCKCLGJIKFC_EBFIOPBCBMO,
+        CmdRogueMagicType::GCKCLGJIKFC_DAIEBLFKELP,
+        CmdRogueMagicType::GCKCLGJIKFC_OLMJEOHJDOE,
+        CmdRogueMagicType::GCKCLGJIKFC_LFABAIJILAP,
+        CmdRogueMagicType::GCKCLGJIKFC_EOCMNOCLGOL,
+        CmdRogueMagicType::GCKCLGJIKFC_MEAOAMPCJMI,
+        CmdRogueMagicType::GCKCLGJIKFC_OHFCBNCCDDN,
+        CmdRogueMagicType::GCKCLGJIKFC_FJGPJPFICON,
+        CmdRogueMagicType::GCKCLGJIKFC_LEMAMDNLBBE,
+        CmdRogueMagicType::GCKCLGJIKFC_AGJONFGMLNF,
+        CmdRogueMagicType::GCKCLGJIKFC_LHEGILFOIAK,
+        CmdRogueMagicType::GCKCLGJIKFC_JNMCDHPDBCC,
+        CmdRogueMagicType::GCKCLGJIKFC_CEGNAJDJEBF,
+        CmdRogueMagicType::GCKCLGJIKFC_JBCEMCLPDDP,
+        CmdRogueMagicType::GCKCLGJIKFC_CCKFMFIDDCO,
+        CmdRogueMagicType::GCKCLGJIKFC_AEDKOGFLOHE,
+        CmdRogueMagicType::GCKCLGJIKFC_AKELCLEGHFG,
+        CmdRogueMagicType::GCKCLGJIKFC_DLGJNFNPIIM,
+        CmdRogueMagicType::GCKCLGJIKFC_KJNOLKDPHHG,
+        CmdRogueMagicType::GCKCLGJIKFC_CEMDCONHCGL,
+        CmdRogueMagicType::GCKCLGJIKFC_HNFPIDGENIB,
+        CmdRogueMagicType::GCKCLGJIKFC_GPGIKLKCHDJ,
+        CmdRogueMagicType::GCKCLGJIKFC_JEMAMHMPJMK,
+        CmdRogueMagicType::GCKCLGJIKFC_HONOAMIJAEL,
+        CmdRogueMagicType::GCKCLGJIKFC_HIOELOOHHKA,
+        CmdRogueMagicType::GCKCLGJIKFC_DFLNJOIPHIC,
+        CmdRogueMagicType::GCKCLGJIKFC_OBJMAFEBKMO,
+        CmdRogueMagicType::GCKCLGJIKFC_DKIBMCIFNDN,
+        CmdRogueMagicType::GCKCLGJIKFC_LJPPNJJCMDD,
+        CmdRogueMagicType::GCKCLGJIKFC_NFLEONIBHPO,
+        CmdRogueMagicType::GCKCLGJIKFC_IFKDDPJKHCG,
+        CmdRogueMagicType::GCKCLGJIKFC_ELIKGKAELLK,
+        CmdRogueMagicType::GCKCLGJIKFC_AMEAKKEPALK,
+        CmdRogueMagicType::GCKCLGJIKFC_JIHNGNPPPCG,
+        CmdRogueMagicType::GCKCLGJIKFC_DNMLCNEJLCP,
+        CmdRogueMagicType::GCKCLGJIKFC_LHLOMIFDHIL,
+        CmdRogueMagicType::GCKCLGJIKFC_KAOEMDIGGGM,
+        CmdRogueMagicType::GCKCLGJIKFC_FAPKFFBJJKH,
+        CmdRogueMagicType::GCKCLGJIKFC_LJCCLPPDLHH,
+        CmdRogueMagicType::GCKCLGJIKFC_MEIBPJIJKAD,
     ];
 }
 
@@ -265,47 +265,47 @@ impl ::protobuf::EnumFull for CmdRogueMagicType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRogueMagicType::NFJEJPNLLAM_AMFJBBNJPLI => 0,
-            CmdRogueMagicType::CmdRogueMagicReviveCostUpdateScNotify => 1,
-            CmdRogueMagicType::CmdLMGJDLDGKMM => 2,
-            CmdRogueMagicType::CmdFGCBMGEIGFL => 3,
-            CmdRogueMagicType::CmdRogueMagicReviveAvatarCsReq => 4,
-            CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataScRsp => 5,
-            CmdRogueMagicType::NFJEJPNLLAM_NPJIONDJKGA => 6,
-            CmdRogueMagicType::CmdRogueMagicStartCsReq => 7,
-            CmdRogueMagicType::CmdRogueMagicScepterTakeOffUnitCsReq => 8,
-            CmdRogueMagicType::CmdRogueMagicStoryInfoUpdateScNotify => 9,
-            CmdRogueMagicType::CmdRogueMagicEnterLayerCsReq => 10,
-            CmdRogueMagicType::CmdRogueMagicLevelInfoUpdateScNotify => 11,
-            CmdRogueMagicType::CmdRogueMagicUnitComposeCsReq => 12,
-            CmdRogueMagicType::CmdRogueMagicReviveAvatarScRsp => 13,
-            CmdRogueMagicType::CmdRogueMagicBattleFailSettleInfoScNotify => 14,
-            CmdRogueMagicType::CmdRogueMagicStartScRsp => 15,
-            CmdRogueMagicType::CmdRogueMagicLeaveScRsp => 16,
-            CmdRogueMagicType::CmdJEPAJCEGPAD => 17,
-            CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitScRsp => 18,
-            CmdRogueMagicType::CmdRogueMagicSettleScRsp => 19,
-            CmdRogueMagicType::CmdRogueMagicEnterLayerScRsp => 20,
-            CmdRogueMagicType::CmdKBDIBKLEBKP => 21,
-            CmdRogueMagicType::CmdRogueMagicAutoDressInMagicUnitChangeScNotify => 22,
-            CmdRogueMagicType::CmdRogueMagicScepterDressInUnitCsReq => 23,
-            CmdRogueMagicType::CmdRogueMagicEnableTalentCsReq => 24,
-            CmdRogueMagicType::CmdRogueMagicEnterRoomCsReq => 25,
-            CmdRogueMagicType::CmdRogueMagicAreaUpdateScNotify => 26,
-            CmdRogueMagicType::CmdRogueMagicEnterRoomScRsp => 27,
-            CmdRogueMagicType::CmdRogueMagicEnterScRsp => 28,
-            CmdRogueMagicType::CmdRogueMagicEnableTalentScRsp => 29,
-            CmdRogueMagicType::CmdRogueMagicLeaveCsReq => 30,
-            CmdRogueMagicType::NFJEJPNLLAM_CGFBFEIIHMO => 31,
-            CmdRogueMagicType::CmdRogueMagicGetMiscRealTimeDataCsReq => 32,
-            CmdRogueMagicType::CmdEAHJLOANBPD => 33,
-            CmdRogueMagicType::CmdRogueMagicQueryScRsp => 34,
-            CmdRogueMagicType::CmdRogueMagicUnitComposeScRsp => 35,
-            CmdRogueMagicType::CmdRogueMagicSetAutoDressInMagicUnitCsReq => 36,
-            CmdRogueMagicType::CmdRogueMagicAutoDressInUnitCsReq => 37,
-            CmdRogueMagicType::CmdRogueMagicQueryCsReq => 38,
-            CmdRogueMagicType::CmdRogueMagicEnterCsReq => 39,
-            CmdRogueMagicType::CmdRogueMagicSettleCsReq => 40,
+            CmdRogueMagicType::GCKCLGJIKFC_ELGPACEMCGP => 0,
+            CmdRogueMagicType::GCKCLGJIKFC_EBFIOPBCBMO => 1,
+            CmdRogueMagicType::GCKCLGJIKFC_DAIEBLFKELP => 2,
+            CmdRogueMagicType::GCKCLGJIKFC_OLMJEOHJDOE => 3,
+            CmdRogueMagicType::GCKCLGJIKFC_LFABAIJILAP => 4,
+            CmdRogueMagicType::GCKCLGJIKFC_EOCMNOCLGOL => 5,
+            CmdRogueMagicType::GCKCLGJIKFC_MEAOAMPCJMI => 6,
+            CmdRogueMagicType::GCKCLGJIKFC_OHFCBNCCDDN => 7,
+            CmdRogueMagicType::GCKCLGJIKFC_FJGPJPFICON => 8,
+            CmdRogueMagicType::GCKCLGJIKFC_LEMAMDNLBBE => 9,
+            CmdRogueMagicType::GCKCLGJIKFC_AGJONFGMLNF => 10,
+            CmdRogueMagicType::GCKCLGJIKFC_LHEGILFOIAK => 11,
+            CmdRogueMagicType::GCKCLGJIKFC_JNMCDHPDBCC => 12,
+            CmdRogueMagicType::GCKCLGJIKFC_CEGNAJDJEBF => 13,
+            CmdRogueMagicType::GCKCLGJIKFC_JBCEMCLPDDP => 14,
+            CmdRogueMagicType::GCKCLGJIKFC_CCKFMFIDDCO => 15,
+            CmdRogueMagicType::GCKCLGJIKFC_AEDKOGFLOHE => 16,
+            CmdRogueMagicType::GCKCLGJIKFC_AKELCLEGHFG => 17,
+            CmdRogueMagicType::GCKCLGJIKFC_DLGJNFNPIIM => 18,
+            CmdRogueMagicType::GCKCLGJIKFC_KJNOLKDPHHG => 19,
+            CmdRogueMagicType::GCKCLGJIKFC_CEMDCONHCGL => 20,
+            CmdRogueMagicType::GCKCLGJIKFC_HNFPIDGENIB => 21,
+            CmdRogueMagicType::GCKCLGJIKFC_GPGIKLKCHDJ => 22,
+            CmdRogueMagicType::GCKCLGJIKFC_JEMAMHMPJMK => 23,
+            CmdRogueMagicType::GCKCLGJIKFC_HONOAMIJAEL => 24,
+            CmdRogueMagicType::GCKCLGJIKFC_HIOELOOHHKA => 25,
+            CmdRogueMagicType::GCKCLGJIKFC_DFLNJOIPHIC => 26,
+            CmdRogueMagicType::GCKCLGJIKFC_OBJMAFEBKMO => 27,
+            CmdRogueMagicType::GCKCLGJIKFC_DKIBMCIFNDN => 28,
+            CmdRogueMagicType::GCKCLGJIKFC_LJPPNJJCMDD => 29,
+            CmdRogueMagicType::GCKCLGJIKFC_NFLEONIBHPO => 30,
+            CmdRogueMagicType::GCKCLGJIKFC_IFKDDPJKHCG => 31,
+            CmdRogueMagicType::GCKCLGJIKFC_ELIKGKAELLK => 32,
+            CmdRogueMagicType::GCKCLGJIKFC_AMEAKKEPALK => 33,
+            CmdRogueMagicType::GCKCLGJIKFC_JIHNGNPPPCG => 34,
+            CmdRogueMagicType::GCKCLGJIKFC_DNMLCNEJLCP => 35,
+            CmdRogueMagicType::GCKCLGJIKFC_LHLOMIFDHIL => 36,
+            CmdRogueMagicType::GCKCLGJIKFC_KAOEMDIGGGM => 37,
+            CmdRogueMagicType::GCKCLGJIKFC_FAPKFFBJJKH => 38,
+            CmdRogueMagicType::GCKCLGJIKFC_LJCCLPPDLHH => 39,
+            CmdRogueMagicType::GCKCLGJIKFC_MEIBPJIJKAD => 40,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -313,7 +313,7 @@ impl ::protobuf::EnumFull for CmdRogueMagicType {
 
 impl ::std::default::Default for CmdRogueMagicType {
     fn default() -> Self {
-        CmdRogueMagicType::NFJEJPNLLAM_AMFJBBNJPLI
+        CmdRogueMagicType::GCKCLGJIKFC_ELGPACEMCGP
     }
 }
 
@@ -324,35 +324,34 @@ impl CmdRogueMagicType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17CmdRogueMagicType.proto*\xad\x0b\n\x11CmdRogueMagicType\x12\x1b\n\
-    \x17NFJEJPNLLAM_AMFJBBNJPLI\x10\0\x12*\n%CmdRogueMagicReviveCostUpdateSc\
-    Notify\x10\xb5<\x12\x13\n\x0eCmdLMGJDLDGKMM\x10\xf4<\x12\x13\n\x0eCmdFGC\
-    BMGEIGFL\x10\xc5<\x12#\n\x1eCmdRogueMagicReviveAvatarCsReq\x10\xd1<\x12*\
-    \n%CmdRogueMagicGetMiscRealTimeDataScRsp\x10\xf1<\x12\x1c\n\x17NFJEJPNLL\
-    AM_NPJIONDJKGA\x10\x9c<\x12\x1c\n\x17CmdRogueMagicStartCsReq\x10\xef<\
-    \x12)\n$CmdRogueMagicScepterTakeOffUnitCsReq\x10\xcd<\x12)\n$CmdRogueMag\
-    icStoryInfoUpdateScNotify\x10\xd6<\x12!\n\x1cCmdRogueMagicEnterLayerCsRe\
-    q\x10\xbb<\x12)\n$CmdRogueMagicLevelInfoUpdateScNotify\x10\xde<\x12\"\n\
-    \x1dCmdRogueMagicUnitComposeCsReq\x10\xb0<\x12#\n\x1eCmdRogueMagicRevive\
-    AvatarScRsp\x10\x9b<\x12.\n)CmdRogueMagicBattleFailSettleInfoScNotify\
-    \x10\xb4<\x12\x1c\n\x17CmdRogueMagicStartScRsp\x10\x9e<\x12\x1c\n\x17Cmd\
-    RogueMagicLeaveScRsp\x10\xa6<\x12\x13\n\x0eCmdJEPAJCEGPAD\x10\xa9<\x12.\
-    \n)CmdRogueMagicSetAutoDressInMagicUnitScRsp\x10\xe3<\x12\x1d\n\x18CmdRo\
-    gueMagicSettleScRsp\x10\xf6<\x12!\n\x1cCmdRogueMagicEnterLayerScRsp\x10\
-    \x95<\x12\x13\n\x0eCmdKBDIBKLEBKP\x10\xc9<\x124\n/CmdRogueMagicAutoDress\
-    InMagicUnitChangeScNotify\x10\x99<\x12)\n$CmdRogueMagicScepterDressInUni\
-    tCsReq\x10\xed<\x12#\n\x1eCmdRogueMagicEnableTalentCsReq\x10\xc7<\x12\
-    \x20\n\x1bCmdRogueMagicEnterRoomCsReq\x10\xd3<\x12$\n\x1fCmdRogueMagicAr\
-    eaUpdateScNotify\x10\xb9<\x12\x20\n\x1bCmdRogueMagicEnterRoomScRsp\x10\
-    \xae<\x12\x1c\n\x17CmdRogueMagicEnterScRsp\x10\xf3<\x12#\n\x1eCmdRogueMa\
-    gicEnableTalentScRsp\x10\xad<\x12\x1c\n\x17CmdRogueMagicLeaveCsReq\x10\
-    \xa2<\x12\x1c\n\x17NFJEJPNLLAM_CGFBFEIIHMO\x10\xdd<\x12*\n%CmdRogueMagic\
-    GetMiscRealTimeDataCsReq\x10\xa8<\x12\x13\n\x0eCmdEAHJLOANBPD\x10\xa5<\
-    \x12\x1c\n\x17CmdRogueMagicQueryScRsp\x10\xc0<\x12\"\n\x1dCmdRogueMagicU\
-    nitComposeScRsp\x10\xd5<\x12.\n)CmdRogueMagicSetAutoDressInMagicUnitCsRe\
-    q\x10\xca<\x12&\n!CmdRogueMagicAutoDressInUnitCsReq\x10\x96<\x12\x1c\n\
-    \x17CmdRogueMagicQueryCsReq\x10\xce<\x12\x1c\n\x17CmdRogueMagicEnterCsRe\
-    q\x10\xf2<\x12\x1d\n\x18CmdRogueMagicSettleCsReq\x10\x9d<b\x06proto3\
+    \n\x17CmdRogueMagicType.proto*\xe0\t\n\x11CmdRogueMagicType\x12\x1b\n\
+    \x17GCKCLGJIKFC_ELGPACEMCGP\x10\0\x12\x1c\n\x17GCKCLGJIKFC_EBFIOPBCBMO\
+    \x10\xba<\x12\x1c\n\x17GCKCLGJIKFC_DAIEBLFKELP\x10\xdb<\x12\x1c\n\x17GCK\
+    CLGJIKFC_OLMJEOHJDOE\x10\xe6<\x12\x1c\n\x17GCKCLGJIKFC_LFABAIJILAP\x10\
+    \xdd<\x12\x1c\n\x17GCKCLGJIKFC_EOCMNOCLGOL\x10\xa0<\x12\x1c\n\x17GCKCLGJ\
+    IKFC_MEAOAMPCJMI\x10\xaf<\x12\x1c\n\x17GCKCLGJIKFC_OHFCBNCCDDN\x10\x99<\
+    \x12\x1c\n\x17GCKCLGJIKFC_FJGPJPFICON\x10\xe9<\x12\x1c\n\x17GCKCLGJIKFC_\
+    LEMAMDNLBBE\x10\xd6<\x12\x1c\n\x17GCKCLGJIKFC_AGJONFGMLNF\x10\xb8<\x12\
+    \x1c\n\x17GCKCLGJIKFC_LHEGILFOIAK\x10\xc5<\x12\x1c\n\x17GCKCLGJIKFC_JNMC\
+    DHPDBCC\x10\xb7<\x12\x1c\n\x17GCKCLGJIKFC_CEGNAJDJEBF\x10\xc9<\x12\x1c\n\
+    \x17GCKCLGJIKFC_JBCEMCLPDDP\x10\xb4<\x12\x1c\n\x17GCKCLGJIKFC_CCKFMFIDDC\
+    O\x10\xd3<\x12\x1c\n\x17GCKCLGJIKFC_AEDKOGFLOHE\x10\xe7<\x12\x1c\n\x17GC\
+    KCLGJIKFC_AKELCLEGHFG\x10\xb1<\x12\x1c\n\x17GCKCLGJIKFC_DLGJNFNPIIM\x10\
+    \xa2<\x12\x1c\n\x17GCKCLGJIKFC_KJNOLKDPHHG\x10\xa3<\x12\x1c\n\x17GCKCLGJ\
+    IKFC_CEMDCONHCGL\x10\x9e<\x12\x1c\n\x17GCKCLGJIKFC_HNFPIDGENIB\x10\xa4<\
+    \x12\x1c\n\x17GCKCLGJIKFC_GPGIKLKCHDJ\x10\xd1<\x12\x1c\n\x17GCKCLGJIKFC_\
+    JEMAMHMPJMK\x10\xca<\x12\x1c\n\x17GCKCLGJIKFC_HONOAMIJAEL\x10\xb2<\x12\
+    \x1c\n\x17GCKCLGJIKFC_HIOELOOHHKA\x10\xde<\x12\x1c\n\x17GCKCLGJIKFC_DFLN\
+    JOIPHIC\x10\xeb<\x12\x1c\n\x17GCKCLGJIKFC_OBJMAFEBKMO\x10\xa8<\x12\x1c\n\
+    \x17GCKCLGJIKFC_DKIBMCIFNDN\x10\xf7<\x12\x1c\n\x17GCKCLGJIKFC_LJPPNJJCMD\
+    D\x10\xc8<\x12\x1c\n\x17GCKCLGJIKFC_NFLEONIBHPO\x10\x97<\x12\x1c\n\x17GC\
+    KCLGJIKFC_IFKDDPJKHCG\x10\xac<\x12\x1c\n\x17GCKCLGJIKFC_ELIKGKAELLK\x10\
+    \xa1<\x12\x1c\n\x17GCKCLGJIKFC_AMEAKKEPALK\x10\xe5<\x12\x1c\n\x17GCKCLGJ\
+    IKFC_JIHNGNPPPCG\x10\xd7<\x12\x1c\n\x17GCKCLGJIKFC_DNMLCNEJLCP\x10\xcf<\
+    \x12\x1c\n\x17GCKCLGJIKFC_LHLOMIFDHIL\x10\xe4<\x12\x1c\n\x17GCKCLGJIKFC_\
+    KAOEMDIGGGM\x10\xb0<\x12\x1c\n\x17GCKCLGJIKFC_FAPKFFBJJKH\x10\x95<\x12\
+    \x1c\n\x17GCKCLGJIKFC_LJCCLPPDLHH\x10\xe2<\x12\x1c\n\x17GCKCLGJIKFC_MEIB\
+    PJIJKAD\x10\xf0<b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

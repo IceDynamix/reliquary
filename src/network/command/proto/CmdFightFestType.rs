@@ -27,24 +27,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFightFestType)
 pub enum CmdFightFestType {
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.EIMOOOILMKC_PCPDHELPKEM)
-    EIMOOOILMKC_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestUnlockSkillNotify)
-    CmdFightFestUnlockSkillNotify = 7288,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdStartFightFestScRsp)
-    CmdStartFightFestScRsp = 7277,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestUpdateChallengeRecordNotify)
-    CmdFightFestUpdateChallengeRecordNotify = 7255,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestScoreUpdateNotify)
-    CmdFightFestScoreUpdateNotify = 7285,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdFightFestUpdateCoinNotify)
-    CmdFightFestUpdateCoinNotify = 7251,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdStartFightFestCsReq)
-    CmdStartFightFestCsReq = 7280,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdGetFightFestDataCsReq)
-    CmdGetFightFestDataCsReq = 7263,
-    // @@protoc_insertion_point(enum_value:CmdFightFestType.CmdGetFightFestDataScRsp)
-    CmdGetFightFestDataScRsp = 7257,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.FLLKHDMHGEJ_NLCDGIPGFDJ)
+    FLLKHDMHGEJ_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.FLLKHDMHGEJ_BMEPHMNEODG)
+    FLLKHDMHGEJ_BMEPHMNEODG = 7294,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.FLLKHDMHGEJ_MNFDHGIDPFK)
+    FLLKHDMHGEJ_MNFDHGIDPFK = 7292,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.FLLKHDMHGEJ_NJHPJOFMIPI)
+    FLLKHDMHGEJ_NJHPJOFMIPI = 7273,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.FLLKHDMHGEJ_AAJHAHGNDOF)
+    FLLKHDMHGEJ_AAJHAHGNDOF = 7269,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.FLLKHDMHGEJ_AADOOEEIHII)
+    FLLKHDMHGEJ_AADOOEEIHII = 7295,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.FLLKHDMHGEJ_JNIBHGOJJMD)
+    FLLKHDMHGEJ_JNIBHGOJJMD = 7257,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.FLLKHDMHGEJ_AOFOMJNMIIM)
+    FLLKHDMHGEJ_AOFOMJNMIIM = 7282,
+    // @@protoc_insertion_point(enum_value:CmdFightFestType.FLLKHDMHGEJ_NKDCMEJMIKO)
+    FLLKHDMHGEJ_NKDCMEJMIKO = 7277,
 }
 
 impl ::protobuf::Enum for CmdFightFestType {
@@ -56,44 +56,44 @@ impl ::protobuf::Enum for CmdFightFestType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFightFestType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFightFestType::EIMOOOILMKC_PCPDHELPKEM),
-            7288 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUnlockSkillNotify),
-            7277 => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestScRsp),
-            7255 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify),
-            7285 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestScoreUpdateNotify),
-            7251 => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateCoinNotify),
-            7280 => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestCsReq),
-            7263 => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataCsReq),
-            7257 => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataScRsp),
+            0 => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_NLCDGIPGFDJ),
+            7294 => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_BMEPHMNEODG),
+            7292 => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_MNFDHGIDPFK),
+            7273 => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_NJHPJOFMIPI),
+            7269 => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_AAJHAHGNDOF),
+            7295 => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_AADOOEEIHII),
+            7257 => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_JNIBHGOJJMD),
+            7282 => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_AOFOMJNMIIM),
+            7277 => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_NKDCMEJMIKO),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFightFestType> {
         match str {
-            "EIMOOOILMKC_PCPDHELPKEM" => ::std::option::Option::Some(CmdFightFestType::EIMOOOILMKC_PCPDHELPKEM),
-            "CmdFightFestUnlockSkillNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUnlockSkillNotify),
-            "CmdStartFightFestScRsp" => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestScRsp),
-            "CmdFightFestUpdateChallengeRecordNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify),
-            "CmdFightFestScoreUpdateNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestScoreUpdateNotify),
-            "CmdFightFestUpdateCoinNotify" => ::std::option::Option::Some(CmdFightFestType::CmdFightFestUpdateCoinNotify),
-            "CmdStartFightFestCsReq" => ::std::option::Option::Some(CmdFightFestType::CmdStartFightFestCsReq),
-            "CmdGetFightFestDataCsReq" => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataCsReq),
-            "CmdGetFightFestDataScRsp" => ::std::option::Option::Some(CmdFightFestType::CmdGetFightFestDataScRsp),
+            "FLLKHDMHGEJ_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_NLCDGIPGFDJ),
+            "FLLKHDMHGEJ_BMEPHMNEODG" => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_BMEPHMNEODG),
+            "FLLKHDMHGEJ_MNFDHGIDPFK" => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_MNFDHGIDPFK),
+            "FLLKHDMHGEJ_NJHPJOFMIPI" => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_NJHPJOFMIPI),
+            "FLLKHDMHGEJ_AAJHAHGNDOF" => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_AAJHAHGNDOF),
+            "FLLKHDMHGEJ_AADOOEEIHII" => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_AADOOEEIHII),
+            "FLLKHDMHGEJ_JNIBHGOJJMD" => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_JNIBHGOJJMD),
+            "FLLKHDMHGEJ_AOFOMJNMIIM" => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_AOFOMJNMIIM),
+            "FLLKHDMHGEJ_NKDCMEJMIKO" => ::std::option::Option::Some(CmdFightFestType::FLLKHDMHGEJ_NKDCMEJMIKO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFightFestType] = &[
-        CmdFightFestType::EIMOOOILMKC_PCPDHELPKEM,
-        CmdFightFestType::CmdFightFestUnlockSkillNotify,
-        CmdFightFestType::CmdStartFightFestScRsp,
-        CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify,
-        CmdFightFestType::CmdFightFestScoreUpdateNotify,
-        CmdFightFestType::CmdFightFestUpdateCoinNotify,
-        CmdFightFestType::CmdStartFightFestCsReq,
-        CmdFightFestType::CmdGetFightFestDataCsReq,
-        CmdFightFestType::CmdGetFightFestDataScRsp,
+        CmdFightFestType::FLLKHDMHGEJ_NLCDGIPGFDJ,
+        CmdFightFestType::FLLKHDMHGEJ_BMEPHMNEODG,
+        CmdFightFestType::FLLKHDMHGEJ_MNFDHGIDPFK,
+        CmdFightFestType::FLLKHDMHGEJ_NJHPJOFMIPI,
+        CmdFightFestType::FLLKHDMHGEJ_AAJHAHGNDOF,
+        CmdFightFestType::FLLKHDMHGEJ_AADOOEEIHII,
+        CmdFightFestType::FLLKHDMHGEJ_JNIBHGOJJMD,
+        CmdFightFestType::FLLKHDMHGEJ_AOFOMJNMIIM,
+        CmdFightFestType::FLLKHDMHGEJ_NKDCMEJMIKO,
     ];
 }
 
@@ -105,15 +105,15 @@ impl ::protobuf::EnumFull for CmdFightFestType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFightFestType::EIMOOOILMKC_PCPDHELPKEM => 0,
-            CmdFightFestType::CmdFightFestUnlockSkillNotify => 1,
-            CmdFightFestType::CmdStartFightFestScRsp => 2,
-            CmdFightFestType::CmdFightFestUpdateChallengeRecordNotify => 3,
-            CmdFightFestType::CmdFightFestScoreUpdateNotify => 4,
-            CmdFightFestType::CmdFightFestUpdateCoinNotify => 5,
-            CmdFightFestType::CmdStartFightFestCsReq => 6,
-            CmdFightFestType::CmdGetFightFestDataCsReq => 7,
-            CmdFightFestType::CmdGetFightFestDataScRsp => 8,
+            CmdFightFestType::FLLKHDMHGEJ_NLCDGIPGFDJ => 0,
+            CmdFightFestType::FLLKHDMHGEJ_BMEPHMNEODG => 1,
+            CmdFightFestType::FLLKHDMHGEJ_MNFDHGIDPFK => 2,
+            CmdFightFestType::FLLKHDMHGEJ_NJHPJOFMIPI => 3,
+            CmdFightFestType::FLLKHDMHGEJ_AAJHAHGNDOF => 4,
+            CmdFightFestType::FLLKHDMHGEJ_AADOOEEIHII => 5,
+            CmdFightFestType::FLLKHDMHGEJ_JNIBHGOJJMD => 6,
+            CmdFightFestType::FLLKHDMHGEJ_AOFOMJNMIIM => 7,
+            CmdFightFestType::FLLKHDMHGEJ_NKDCMEJMIKO => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for CmdFightFestType {
 
 impl ::std::default::Default for CmdFightFestType {
     fn default() -> Self {
-        CmdFightFestType::EIMOOOILMKC_PCPDHELPKEM
+        CmdFightFestType::FLLKHDMHGEJ_NLCDGIPGFDJ
     }
 }
 
@@ -132,14 +132,13 @@ impl CmdFightFestType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdFightFestType.proto*\xc0\x02\n\x10CmdFightFestType\x12\x1b\n\
-    \x17EIMOOOILMKC_PCPDHELPKEM\x10\0\x12\"\n\x1dCmdFightFestUnlockSkillNoti\
-    fy\x10\xf88\x12\x1b\n\x16CmdStartFightFestScRsp\x10\xed8\x12,\n'CmdFight\
-    FestUpdateChallengeRecordNotify\x10\xd78\x12\"\n\x1dCmdFightFestScoreUpd\
-    ateNotify\x10\xf58\x12!\n\x1cCmdFightFestUpdateCoinNotify\x10\xd38\x12\
-    \x1b\n\x16CmdStartFightFestCsReq\x10\xf08\x12\x1d\n\x18CmdGetFightFestDa\
-    taCsReq\x10\xdf8\x12\x1d\n\x18CmdGetFightFestDataScRsp\x10\xd98b\x06prot\
-    o3\
+    \n\x16CmdFightFestType.proto*\x9f\x02\n\x10CmdFightFestType\x12\x1b\n\
+    \x17FLLKHDMHGEJ_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17FLLKHDMHGEJ_BMEPHMNEODG\
+    \x10\xfe8\x12\x1c\n\x17FLLKHDMHGEJ_MNFDHGIDPFK\x10\xfc8\x12\x1c\n\x17FLL\
+    KHDMHGEJ_NJHPJOFMIPI\x10\xe98\x12\x1c\n\x17FLLKHDMHGEJ_AAJHAHGNDOF\x10\
+    \xe58\x12\x1c\n\x17FLLKHDMHGEJ_AADOOEEIHII\x10\xff8\x12\x1c\n\x17FLLKHDM\
+    HGEJ_JNIBHGOJJMD\x10\xd98\x12\x1c\n\x17FLLKHDMHGEJ_AOFOMJNMIIM\x10\xf28\
+    \x12\x1c\n\x17FLLKHDMHGEJ_NKDCMEJMIKO\x10\xed8b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueArcadeStartScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueArcadeStartScRsp.retcode)
-    pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueArcadeStartScRsp.IDCMACCPCBH)
+    pub IDCMACCPCBH: ::protobuf::MessageField<super::GCPGBPNGOFF::GCPGBPNGOFF>,
     // @@protoc_insertion_point(field:RogueArcadeStartScRsp.room_id)
     pub room_id: u32,
-    // @@protoc_insertion_point(field:RogueArcadeStartScRsp.AFLJJJFCBIN)
-    pub AFLJJJFCBIN: ::protobuf::MessageField<super::KEEDJBIEJOF::KEEDJBIEJOF>,
+    // @@protoc_insertion_point(field:RogueArcadeStartScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueArcadeStartScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl RogueArcadeStartScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &RogueArcadeStartScRsp| { &m.retcode },
-            |m: &mut RogueArcadeStartScRsp| { &mut m.retcode },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GCPGBPNGOFF::GCPGBPNGOFF>(
+            "IDCMACCPCBH",
+            |m: &RogueArcadeStartScRsp| { &m.IDCMACCPCBH },
+            |m: &mut RogueArcadeStartScRsp| { &mut m.IDCMACCPCBH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "room_id",
             |m: &RogueArcadeStartScRsp| { &m.room_id },
             |m: &mut RogueArcadeStartScRsp| { &mut m.room_id },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KEEDJBIEJOF::KEEDJBIEJOF>(
-            "AFLJJJFCBIN",
-            |m: &RogueArcadeStartScRsp| { &m.AFLJJJFCBIN },
-            |m: &mut RogueArcadeStartScRsp| { &mut m.AFLJJJFCBIN },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &RogueArcadeStartScRsp| { &m.retcode },
+            |m: &mut RogueArcadeStartScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueArcadeStartScRsp>(
             "RogueArcadeStartScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for RogueArcadeStartScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.retcode = is.read_uint32()?;
+                10 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDCMACCPCBH)?;
                 },
-                32 => {
+                56 => {
                     self.room_id = is.read_uint32()?;
                 },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AFLJJJFCBIN)?;
+                40 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for RogueArcadeStartScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
-        if self.room_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.room_id);
-        }
-        if let Some(v) = self.AFLJJJFCBIN.as_ref() {
+        if let Some(v) = self.IDCMACCPCBH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.room_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.room_id);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RogueArcadeStartScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+        if let Some(v) = self.IDCMACCPCBH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         }
         if self.room_id != 0 {
-            os.write_uint32(4, self.room_id)?;
+            os.write_uint32(7, self.room_id)?;
         }
-        if let Some(v) = self.AFLJJJFCBIN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for RogueArcadeStartScRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
+        self.IDCMACCPCBH.clear();
         self.room_id = 0;
-        self.AFLJJJFCBIN.clear();
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueArcadeStartScRsp {
         static instance: RogueArcadeStartScRsp = RogueArcadeStartScRsp {
-            retcode: 0,
+            IDCMACCPCBH: ::protobuf::MessageField::none(),
             room_id: 0,
-            AFLJJJFCBIN: ::protobuf::MessageField::none(),
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,10 +184,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueArcadeStartScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bRogueArcadeStartScRsp.proto\x1a\x11KEEDJBIEJOF.proto\"z\n\x15Rogue\
-    ArcadeStartScRsp\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\
-    \x17\n\x07room_id\x18\x04\x20\x01(\rR\x06roomId\x12.\n\x0bAFLJJJFCBIN\
-    \x18\x0b\x20\x01(\x0b2\x0c.KEEDJBIEJOFR\x0bAFLJJJFCBINb\x06proto3\
+    \n\x1bRogueArcadeStartScRsp.proto\x1a\x11GCPGBPNGOFF.proto\"z\n\x15Rogue\
+    ArcadeStartScRsp\x12.\n\x0bIDCMACCPCBH\x18\x01\x20\x01(\x0b2\x0c.GCPGBPN\
+    GOFFR\x0bIDCMACCPCBH\x12\x17\n\x07room_id\x18\x07\x20\x01(\rR\x06roomId\
+    \x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KEEDJBIEJOF::file_descriptor().clone());
+            deps.push(super::GCPGBPNGOFF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueArcadeStartScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

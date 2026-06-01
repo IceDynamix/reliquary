@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRndOptionType)
 pub enum CmdRndOptionType {
-    // @@protoc_insertion_point(enum_value:CmdRndOptionType.EDOOKEJHPAD_PCPDHELPKEM)
-    EDOOKEJHPAD_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdDailyFirstMeetPamCsReq)
-    CmdDailyFirstMeetPamCsReq = 3494,
-    // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdGetRndOptionCsReq)
-    CmdGetRndOptionCsReq = 3491,
-    // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdEEAMBMDGIHF)
-    CmdEEAMBMDGIHF = 3410,
-    // @@protoc_insertion_point(enum_value:CmdRndOptionType.CmdCBEFFNAFPEL)
-    CmdCBEFFNAFPEL = 3495,
+    // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_NLCDGIPGFDJ)
+    LHHIKPLMLGH_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_FHMBJGCBBPF)
+    LHHIKPLMLGH_FHMBJGCBBPF = 3473,
+    // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_IFMEJPJJELN)
+    LHHIKPLMLGH_IFMEJPJJELN = 3427,
+    // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_AKEKFNOPPLF)
+    LHHIKPLMLGH_AKEKFNOPPLF = 3403,
+    // @@protoc_insertion_point(enum_value:CmdRndOptionType.LHHIKPLMLGH_BKAOLMEOLFJ)
+    LHHIKPLMLGH_BKAOLMEOLFJ = 3480,
 }
 
 impl ::protobuf::Enum for CmdRndOptionType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for CmdRndOptionType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRndOptionType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRndOptionType::EDOOKEJHPAD_PCPDHELPKEM),
-            3494 => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamCsReq),
-            3491 => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionCsReq),
-            3410 => ::std::option::Option::Some(CmdRndOptionType::CmdEEAMBMDGIHF),
-            3495 => ::std::option::Option::Some(CmdRndOptionType::CmdCBEFFNAFPEL),
+            0 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_NLCDGIPGFDJ),
+            3473 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_FHMBJGCBBPF),
+            3427 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN),
+            3403 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF),
+            3480 => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_BKAOLMEOLFJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRndOptionType> {
         match str {
-            "EDOOKEJHPAD_PCPDHELPKEM" => ::std::option::Option::Some(CmdRndOptionType::EDOOKEJHPAD_PCPDHELPKEM),
-            "CmdDailyFirstMeetPamCsReq" => ::std::option::Option::Some(CmdRndOptionType::CmdDailyFirstMeetPamCsReq),
-            "CmdGetRndOptionCsReq" => ::std::option::Option::Some(CmdRndOptionType::CmdGetRndOptionCsReq),
-            "CmdEEAMBMDGIHF" => ::std::option::Option::Some(CmdRndOptionType::CmdEEAMBMDGIHF),
-            "CmdCBEFFNAFPEL" => ::std::option::Option::Some(CmdRndOptionType::CmdCBEFFNAFPEL),
+            "LHHIKPLMLGH_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_NLCDGIPGFDJ),
+            "LHHIKPLMLGH_FHMBJGCBBPF" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_FHMBJGCBBPF),
+            "LHHIKPLMLGH_IFMEJPJJELN" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN),
+            "LHHIKPLMLGH_AKEKFNOPPLF" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF),
+            "LHHIKPLMLGH_BKAOLMEOLFJ" => ::std::option::Option::Some(CmdRndOptionType::LHHIKPLMLGH_BKAOLMEOLFJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRndOptionType] = &[
-        CmdRndOptionType::EDOOKEJHPAD_PCPDHELPKEM,
-        CmdRndOptionType::CmdDailyFirstMeetPamCsReq,
-        CmdRndOptionType::CmdGetRndOptionCsReq,
-        CmdRndOptionType::CmdEEAMBMDGIHF,
-        CmdRndOptionType::CmdCBEFFNAFPEL,
+        CmdRndOptionType::LHHIKPLMLGH_NLCDGIPGFDJ,
+        CmdRndOptionType::LHHIKPLMLGH_FHMBJGCBBPF,
+        CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN,
+        CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF,
+        CmdRndOptionType::LHHIKPLMLGH_BKAOLMEOLFJ,
     ];
 }
 
@@ -85,11 +85,11 @@ impl ::protobuf::EnumFull for CmdRndOptionType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRndOptionType::EDOOKEJHPAD_PCPDHELPKEM => 0,
-            CmdRndOptionType::CmdDailyFirstMeetPamCsReq => 1,
-            CmdRndOptionType::CmdGetRndOptionCsReq => 2,
-            CmdRndOptionType::CmdEEAMBMDGIHF => 3,
-            CmdRndOptionType::CmdCBEFFNAFPEL => 4,
+            CmdRndOptionType::LHHIKPLMLGH_NLCDGIPGFDJ => 0,
+            CmdRndOptionType::LHHIKPLMLGH_FHMBJGCBBPF => 1,
+            CmdRndOptionType::LHHIKPLMLGH_IFMEJPJJELN => 2,
+            CmdRndOptionType::LHHIKPLMLGH_AKEKFNOPPLF => 3,
+            CmdRndOptionType::LHHIKPLMLGH_BKAOLMEOLFJ => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,7 +97,7 @@ impl ::protobuf::EnumFull for CmdRndOptionType {
 
 impl ::std::default::Default for CmdRndOptionType {
     fn default() -> Self {
-        CmdRndOptionType::EDOOKEJHPAD_PCPDHELPKEM
+        CmdRndOptionType::LHHIKPLMLGH_NLCDGIPGFDJ
     }
 }
 
@@ -108,11 +108,11 @@ impl CmdRndOptionType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdRndOptionType.proto*\x94\x01\n\x10CmdRndOptionType\x12\x1b\n\
-    \x17EDOOKEJHPAD_PCPDHELPKEM\x10\0\x12\x1e\n\x19CmdDailyFirstMeetPamCsReq\
-    \x10\xa6\x1b\x12\x19\n\x14CmdGetRndOptionCsReq\x10\xa3\x1b\x12\x13\n\x0e\
-    CmdEEAMBMDGIHF\x10\xd2\x1a\x12\x13\n\x0eCmdCBEFFNAFPEL\x10\xa7\x1bb\x06p\
-    roto3\
+    \n\x16CmdRndOptionType.proto*\xa7\x01\n\x10CmdRndOptionType\x12\x1b\n\
+    \x17LHHIKPLMLGH_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17LHHIKPLMLGH_FHMBJGCBBPF\
+    \x10\x91\x1b\x12\x1c\n\x17LHHIKPLMLGH_IFMEJPJJELN\x10\xe3\x1a\x12\x1c\n\
+    \x17LHHIKPLMLGH_AKEKFNOPPLF\x10\xcb\x1a\x12\x1c\n\x17LHHIKPLMLGH_BKAOLME\
+    OLFJ\x10\x98\x1bb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

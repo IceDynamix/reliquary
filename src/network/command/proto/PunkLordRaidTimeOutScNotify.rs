@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PunkLordRaidTimeOutScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PunkLordRaidTimeOutScNotify.FFCDPHMJJKG)
-    pub FFCDPHMJJKG: ::protobuf::MessageField<super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>,
+    // @@protoc_insertion_point(field:PunkLordRaidTimeOutScNotify.ONICJOAOEMA)
+    pub ONICJOAOEMA: ::protobuf::MessageField<super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>,
     // special fields
     // @@protoc_insertion_point(special_field:PunkLordRaidTimeOutScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PunkLordRaidTimeOutScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PunkLordMonsterBasicInfo::PunkLordMonsterBasicInfo>(
-            "FFCDPHMJJKG",
-            |m: &PunkLordRaidTimeOutScNotify| { &m.FFCDPHMJJKG },
-            |m: &mut PunkLordRaidTimeOutScNotify| { &mut m.FFCDPHMJJKG },
+            "ONICJOAOEMA",
+            |m: &PunkLordRaidTimeOutScNotify| { &m.ONICJOAOEMA },
+            |m: &mut PunkLordRaidTimeOutScNotify| { &mut m.ONICJOAOEMA },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PunkLordRaidTimeOutScNotify>(
             "PunkLordRaidTimeOutScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PunkLordRaidTimeOutScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.FFCDPHMJJKG)?;
+                114 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ONICJOAOEMA)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for PunkLordRaidTimeOutScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.FFCDPHMJJKG.as_ref() {
+        if let Some(v) = self.ONICJOAOEMA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for PunkLordRaidTimeOutScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.FFCDPHMJJKG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(3, v, os)?;
+        if let Some(v) = self.ONICJOAOEMA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for PunkLordRaidTimeOutScNotify {
     }
 
     fn clear(&mut self) {
-        self.FFCDPHMJJKG.clear();
+        self.ONICJOAOEMA.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PunkLordRaidTimeOutScNotify {
         static instance: PunkLordRaidTimeOutScNotify = PunkLordRaidTimeOutScNotify {
-            FFCDPHMJJKG: ::protobuf::MessageField::none(),
+            ONICJOAOEMA: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -149,8 +149,8 @@ impl ::protobuf::reflect::ProtobufValue for PunkLordRaidTimeOutScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!PunkLordRaidTimeOutScNotify.proto\x1a\x1ePunkLordMonsterBasicInfo.pro\
-    to\"Z\n\x1bPunkLordRaidTimeOutScNotify\x12;\n\x0bFFCDPHMJJKG\x18\x03\x20\
-    \x01(\x0b2\x19.PunkLordMonsterBasicInfoR\x0bFFCDPHMJJKGb\x06proto3\
+    to\"Z\n\x1bPunkLordRaidTimeOutScNotify\x12;\n\x0bONICJOAOEMA\x18\x0e\x20\
+    \x01(\x0b2\x19.PunkLordMonsterBasicInfoR\x0bONICJOAOEMAb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

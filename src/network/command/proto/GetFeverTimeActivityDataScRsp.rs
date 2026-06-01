@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetFeverTimeActivityDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetFeverTimeActivityDataScRsp.PCDIFDGCDOK)
-    pub PCDIFDGCDOK: ::std::vec::Vec<super::AEBCLFBDHPE::AEBCLFBDHPE>,
+    // @@protoc_insertion_point(field:GetFeverTimeActivityDataScRsp.GNDEFEAEDNJ)
+    pub GNDEFEAEDNJ: ::std::vec::Vec<super::JBMJOIPJPLH::JBMJOIPJPLH>,
     // @@protoc_insertion_point(field:GetFeverTimeActivityDataScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetFeverTimeActivityDataScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PCDIFDGCDOK",
-            |m: &GetFeverTimeActivityDataScRsp| { &m.PCDIFDGCDOK },
-            |m: &mut GetFeverTimeActivityDataScRsp| { &mut m.PCDIFDGCDOK },
+            "GNDEFEAEDNJ",
+            |m: &GetFeverTimeActivityDataScRsp| { &m.GNDEFEAEDNJ },
+            |m: &mut GetFeverTimeActivityDataScRsp| { &mut m.GNDEFEAEDNJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetFeverTimeActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
-                    self.PCDIFDGCDOK.push(is.read_message()?);
+                58 => {
+                    self.GNDEFEAEDNJ.push(is.read_message()?);
                 },
-                64 => {
+                48 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for GetFeverTimeActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.PCDIFDGCDOK {
+        for value in &self.GNDEFEAEDNJ {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for GetFeverTimeActivityDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.PCDIFDGCDOK {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+        for v in &self.GNDEFEAEDNJ {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for GetFeverTimeActivityDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.PCDIFDGCDOK.clear();
+        self.GNDEFEAEDNJ.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetFeverTimeActivityDataScRsp {
         static instance: GetFeverTimeActivityDataScRsp = GetFeverTimeActivityDataScRsp {
-            PCDIFDGCDOK: ::std::vec::Vec::new(),
+            GNDEFEAEDNJ: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetFeverTimeActivityDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n#GetFeverTimeActivityDataScRsp.proto\x1a\x11AEBCLFBDHPE.proto\"i\n\x1d\
-    GetFeverTimeActivityDataScRsp\x12.\n\x0bPCDIFDGCDOK\x18\x0c\x20\x03(\x0b\
-    2\x0c.AEBCLFBDHPER\x0bPCDIFDGCDOK\x12\x18\n\x07retcode\x18\x08\x20\x01(\
+    \n#GetFeverTimeActivityDataScRsp.proto\x1a\x11JBMJOIPJPLH.proto\"i\n\x1d\
+    GetFeverTimeActivityDataScRsp\x12.\n\x0bGNDEFEAEDNJ\x18\x07\x20\x03(\x0b\
+    2\x0c.JBMJOIPJPLHR\x0bGNDEFEAEDNJ\x12\x18\n\x07retcode\x18\x06\x20\x01(\
     \rR\x07retcodeb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::AEBCLFBDHPE::file_descriptor().clone());
+            deps.push(super::JBMJOIPJPLH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetFeverTimeActivityDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

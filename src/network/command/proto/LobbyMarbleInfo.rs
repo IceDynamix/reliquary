@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyMarbleInfo {
     // message fields
-    // @@protoc_insertion_point(field:LobbyMarbleInfo.PJCGAJPDOBN)
-    pub PJCGAJPDOBN: u32,
-    // @@protoc_insertion_point(field:LobbyMarbleInfo.rank)
-    pub rank: u32,
-    // @@protoc_insertion_point(field:LobbyMarbleInfo.AOPJPCPNACH)
-    pub AOPJPCPNACH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LobbyMarbleInfo.CIPEHBBKFIH)
+    pub CIPEHBBKFIH: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LobbyMarbleInfo.GDBNHOJPKIE)
+    pub GDBNHOJPKIE: u32,
     // @@protoc_insertion_point(field:LobbyMarbleInfo.score_id)
     pub score_id: u32,
+    // @@protoc_insertion_point(field:LobbyMarbleInfo.rank)
+    pub rank: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyMarbleInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl LobbyMarbleInfo {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PJCGAJPDOBN",
-            |m: &LobbyMarbleInfo| { &m.PJCGAJPDOBN },
-            |m: &mut LobbyMarbleInfo| { &mut m.PJCGAJPDOBN },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "rank",
-            |m: &LobbyMarbleInfo| { &m.rank },
-            |m: &mut LobbyMarbleInfo| { &mut m.rank },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "AOPJPCPNACH",
-            |m: &LobbyMarbleInfo| { &m.AOPJPCPNACH },
-            |m: &mut LobbyMarbleInfo| { &mut m.AOPJPCPNACH },
+            "CIPEHBBKFIH",
+            |m: &LobbyMarbleInfo| { &m.CIPEHBBKFIH },
+            |m: &mut LobbyMarbleInfo| { &mut m.CIPEHBBKFIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GDBNHOJPKIE",
+            |m: &LobbyMarbleInfo| { &m.GDBNHOJPKIE },
+            |m: &mut LobbyMarbleInfo| { &mut m.GDBNHOJPKIE },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
             |m: &LobbyMarbleInfo| { &m.score_id },
             |m: &mut LobbyMarbleInfo| { &mut m.score_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "rank",
+            |m: &LobbyMarbleInfo| { &m.rank },
+            |m: &mut LobbyMarbleInfo| { &mut m.rank },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyMarbleInfo>(
             "LobbyMarbleInfo",
@@ -93,20 +93,20 @@ impl ::protobuf::Message for LobbyMarbleInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.PJCGAJPDOBN = is.read_uint32()?;
-                },
-                16 => {
-                    self.rank = is.read_uint32()?;
-                },
                 26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.AOPJPCPNACH)?;
+                    is.read_repeated_packed_uint32_into(&mut self.CIPEHBBKFIH)?;
                 },
                 24 => {
-                    self.AOPJPCPNACH.push(is.read_uint32()?);
+                    self.CIPEHBBKFIH.push(is.read_uint32()?);
+                },
+                8 => {
+                    self.GDBNHOJPKIE = is.read_uint32()?;
                 },
                 32 => {
                     self.score_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.rank = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for LobbyMarbleInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PJCGAJPDOBN != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.PJCGAJPDOBN);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.CIPEHBBKFIH);
+        if self.GDBNHOJPKIE != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.GDBNHOJPKIE);
+        }
+        if self.score_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.score_id);
         }
         if self.rank != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.rank);
-        }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.AOPJPCPNACH);
-        if self.score_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.score_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for LobbyMarbleInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PJCGAJPDOBN != 0 {
-            os.write_uint32(1, self.PJCGAJPDOBN)?;
+        os.write_repeated_packed_uint32(3, &self.CIPEHBBKFIH)?;
+        if self.GDBNHOJPKIE != 0 {
+            os.write_uint32(1, self.GDBNHOJPKIE)?;
+        }
+        if self.score_id != 0 {
+            os.write_uint32(4, self.score_id)?;
         }
         if self.rank != 0 {
             os.write_uint32(2, self.rank)?;
-        }
-        os.write_repeated_packed_uint32(3, &self.AOPJPCPNACH)?;
-        if self.score_id != 0 {
-            os.write_uint32(4, self.score_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for LobbyMarbleInfo {
     }
 
     fn clear(&mut self) {
-        self.PJCGAJPDOBN = 0;
-        self.rank = 0;
-        self.AOPJPCPNACH.clear();
+        self.CIPEHBBKFIH.clear();
+        self.GDBNHOJPKIE = 0;
         self.score_id = 0;
+        self.rank = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyMarbleInfo {
         static instance: LobbyMarbleInfo = LobbyMarbleInfo {
-            PJCGAJPDOBN: 0,
-            rank: 0,
-            AOPJPCPNACH: ::std::vec::Vec::new(),
+            CIPEHBBKFIH: ::std::vec::Vec::new(),
+            GDBNHOJPKIE: 0,
             score_id: 0,
+            rank: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,9 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for LobbyMarbleInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15LobbyMarbleInfo.proto\"\x84\x01\n\x0fLobbyMarbleInfo\x12\x20\n\x0b\
-    PJCGAJPDOBN\x18\x01\x20\x01(\rR\x0bPJCGAJPDOBN\x12\x12\n\x04rank\x18\x02\
-    \x20\x01(\rR\x04rank\x12\x20\n\x0bAOPJPCPNACH\x18\x03\x20\x03(\rR\x0bAOP\
-    JPCPNACH\x12\x19\n\x08score_id\x18\x04\x20\x01(\rR\x07scoreIdb\x06proto3\
+    CIPEHBBKFIH\x18\x03\x20\x03(\rR\x0bCIPEHBBKFIH\x12\x20\n\x0bGDBNHOJPKIE\
+    \x18\x01\x20\x01(\rR\x0bGDBNHOJPKIE\x12\x19\n\x08score_id\x18\x04\x20\
+    \x01(\rR\x07scoreId\x12\x12\n\x04rank\x18\x02\x20\x01(\rR\x04rankb\x06pr\
+    oto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

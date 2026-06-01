@@ -27,24 +27,24 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRogueArcadeType)
 pub enum CmdRogueArcadeType {
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.JEJMOKKEGLI_PCPDHELPKEM)
-    JEJMOKKEGLI_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeGetInfoScRsp)
-    CmdRogueArcadeGetInfoScRsp = 7677,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeRestartCsReq)
-    CmdRogueArcadeRestartCsReq = 7681,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeGetInfoCsReq)
-    CmdRogueArcadeGetInfoCsReq = 7651,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeStartCsReq)
-    CmdRogueArcadeStartCsReq = 7687,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeRestartScRsp)
-    CmdRogueArcadeRestartScRsp = 7698,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeLeaveScRsp)
-    CmdRogueArcadeLeaveScRsp = 7655,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeStartScRsp)
-    CmdRogueArcadeStartScRsp = 7668,
-    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.CmdRogueArcadeLeaveCsReq)
-    CmdRogueArcadeLeaveCsReq = 7657,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.NNHBAOKEBJI_NLCDGIPGFDJ)
+    NNHBAOKEBJI_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.NNHBAOKEBJI_GFECMCBCMDM)
+    NNHBAOKEBJI_GFECMCBCMDM = 7658,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.NNHBAOKEBJI_OCEMBBBNAGJ)
+    NNHBAOKEBJI_OCEMBBBNAGJ = 7657,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.NNHBAOKEBJI_OCKANPAJIMJ)
+    NNHBAOKEBJI_OCKANPAJIMJ = 7653,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.NNHBAOKEBJI_PJDFLECDOAA)
+    NNHBAOKEBJI_PJDFLECDOAA = 7671,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.NNHBAOKEBJI_DCHBPOBFJJK)
+    NNHBAOKEBJI_DCHBPOBFJJK = 7684,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.NNHBAOKEBJI_FNAMLLEMAOK)
+    NNHBAOKEBJI_FNAMLLEMAOK = 7673,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.NNHBAOKEBJI_IFPCDBMEIAK)
+    NNHBAOKEBJI_IFPCDBMEIAK = 7690,
+    // @@protoc_insertion_point(enum_value:CmdRogueArcadeType.NNHBAOKEBJI_ENDFCJDJHEJ)
+    NNHBAOKEBJI_ENDFCJDJHEJ = 7691,
 }
 
 impl ::protobuf::Enum for CmdRogueArcadeType {
@@ -56,44 +56,44 @@ impl ::protobuf::Enum for CmdRogueArcadeType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueArcadeType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRogueArcadeType::JEJMOKKEGLI_PCPDHELPKEM),
-            7677 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp),
-            7681 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartCsReq),
-            7651 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq),
-            7687 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeStartCsReq),
-            7698 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartScRsp),
-            7655 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp),
-            7668 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeStartScRsp),
-            7657 => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveCsReq),
+            0 => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_NLCDGIPGFDJ),
+            7658 => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_GFECMCBCMDM),
+            7657 => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_OCEMBBBNAGJ),
+            7653 => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_OCKANPAJIMJ),
+            7671 => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_PJDFLECDOAA),
+            7684 => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_DCHBPOBFJJK),
+            7673 => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_FNAMLLEMAOK),
+            7690 => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_IFPCDBMEIAK),
+            7691 => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_ENDFCJDJHEJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueArcadeType> {
         match str {
-            "JEJMOKKEGLI_PCPDHELPKEM" => ::std::option::Option::Some(CmdRogueArcadeType::JEJMOKKEGLI_PCPDHELPKEM),
-            "CmdRogueArcadeGetInfoScRsp" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp),
-            "CmdRogueArcadeRestartCsReq" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartCsReq),
-            "CmdRogueArcadeGetInfoCsReq" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq),
-            "CmdRogueArcadeStartCsReq" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeStartCsReq),
-            "CmdRogueArcadeRestartScRsp" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeRestartScRsp),
-            "CmdRogueArcadeLeaveScRsp" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp),
-            "CmdRogueArcadeStartScRsp" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeStartScRsp),
-            "CmdRogueArcadeLeaveCsReq" => ::std::option::Option::Some(CmdRogueArcadeType::CmdRogueArcadeLeaveCsReq),
+            "NNHBAOKEBJI_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_NLCDGIPGFDJ),
+            "NNHBAOKEBJI_GFECMCBCMDM" => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_GFECMCBCMDM),
+            "NNHBAOKEBJI_OCEMBBBNAGJ" => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_OCEMBBBNAGJ),
+            "NNHBAOKEBJI_OCKANPAJIMJ" => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_OCKANPAJIMJ),
+            "NNHBAOKEBJI_PJDFLECDOAA" => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_PJDFLECDOAA),
+            "NNHBAOKEBJI_DCHBPOBFJJK" => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_DCHBPOBFJJK),
+            "NNHBAOKEBJI_FNAMLLEMAOK" => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_FNAMLLEMAOK),
+            "NNHBAOKEBJI_IFPCDBMEIAK" => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_IFPCDBMEIAK),
+            "NNHBAOKEBJI_ENDFCJDJHEJ" => ::std::option::Option::Some(CmdRogueArcadeType::NNHBAOKEBJI_ENDFCJDJHEJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRogueArcadeType] = &[
-        CmdRogueArcadeType::JEJMOKKEGLI_PCPDHELPKEM,
-        CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp,
-        CmdRogueArcadeType::CmdRogueArcadeRestartCsReq,
-        CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq,
-        CmdRogueArcadeType::CmdRogueArcadeStartCsReq,
-        CmdRogueArcadeType::CmdRogueArcadeRestartScRsp,
-        CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp,
-        CmdRogueArcadeType::CmdRogueArcadeStartScRsp,
-        CmdRogueArcadeType::CmdRogueArcadeLeaveCsReq,
+        CmdRogueArcadeType::NNHBAOKEBJI_NLCDGIPGFDJ,
+        CmdRogueArcadeType::NNHBAOKEBJI_GFECMCBCMDM,
+        CmdRogueArcadeType::NNHBAOKEBJI_OCEMBBBNAGJ,
+        CmdRogueArcadeType::NNHBAOKEBJI_OCKANPAJIMJ,
+        CmdRogueArcadeType::NNHBAOKEBJI_PJDFLECDOAA,
+        CmdRogueArcadeType::NNHBAOKEBJI_DCHBPOBFJJK,
+        CmdRogueArcadeType::NNHBAOKEBJI_FNAMLLEMAOK,
+        CmdRogueArcadeType::NNHBAOKEBJI_IFPCDBMEIAK,
+        CmdRogueArcadeType::NNHBAOKEBJI_ENDFCJDJHEJ,
     ];
 }
 
@@ -105,15 +105,15 @@ impl ::protobuf::EnumFull for CmdRogueArcadeType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRogueArcadeType::JEJMOKKEGLI_PCPDHELPKEM => 0,
-            CmdRogueArcadeType::CmdRogueArcadeGetInfoScRsp => 1,
-            CmdRogueArcadeType::CmdRogueArcadeRestartCsReq => 2,
-            CmdRogueArcadeType::CmdRogueArcadeGetInfoCsReq => 3,
-            CmdRogueArcadeType::CmdRogueArcadeStartCsReq => 4,
-            CmdRogueArcadeType::CmdRogueArcadeRestartScRsp => 5,
-            CmdRogueArcadeType::CmdRogueArcadeLeaveScRsp => 6,
-            CmdRogueArcadeType::CmdRogueArcadeStartScRsp => 7,
-            CmdRogueArcadeType::CmdRogueArcadeLeaveCsReq => 8,
+            CmdRogueArcadeType::NNHBAOKEBJI_NLCDGIPGFDJ => 0,
+            CmdRogueArcadeType::NNHBAOKEBJI_GFECMCBCMDM => 1,
+            CmdRogueArcadeType::NNHBAOKEBJI_OCEMBBBNAGJ => 2,
+            CmdRogueArcadeType::NNHBAOKEBJI_OCKANPAJIMJ => 3,
+            CmdRogueArcadeType::NNHBAOKEBJI_PJDFLECDOAA => 4,
+            CmdRogueArcadeType::NNHBAOKEBJI_DCHBPOBFJJK => 5,
+            CmdRogueArcadeType::NNHBAOKEBJI_FNAMLLEMAOK => 6,
+            CmdRogueArcadeType::NNHBAOKEBJI_IFPCDBMEIAK => 7,
+            CmdRogueArcadeType::NNHBAOKEBJI_ENDFCJDJHEJ => 8,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -121,7 +121,7 @@ impl ::protobuf::EnumFull for CmdRogueArcadeType {
 
 impl ::std::default::Default for CmdRogueArcadeType {
     fn default() -> Self {
-        CmdRogueArcadeType::JEJMOKKEGLI_PCPDHELPKEM
+        CmdRogueArcadeType::NNHBAOKEBJI_NLCDGIPGFDJ
     }
 }
 
@@ -132,13 +132,13 @@ impl CmdRogueArcadeType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdRogueArcadeType.proto*\xb1\x02\n\x12CmdRogueArcadeType\x12\x1b\
-    \n\x17JEJMOKKEGLI_PCPDHELPKEM\x10\0\x12\x1f\n\x1aCmdRogueArcadeGetInfoSc\
-    Rsp\x10\xfd;\x12\x1f\n\x1aCmdRogueArcadeRestartCsReq\x10\x81<\x12\x1f\n\
-    \x1aCmdRogueArcadeGetInfoCsReq\x10\xe3;\x12\x1d\n\x18CmdRogueArcadeStart\
-    CsReq\x10\x87<\x12\x1f\n\x1aCmdRogueArcadeRestartScRsp\x10\x92<\x12\x1d\
-    \n\x18CmdRogueArcadeLeaveScRsp\x10\xe7;\x12\x1d\n\x18CmdRogueArcadeStart\
-    ScRsp\x10\xf4;\x12\x1d\n\x18CmdRogueArcadeLeaveCsReq\x10\xe9;b\x06proto3\
+    \n\x18CmdRogueArcadeType.proto*\xa1\x02\n\x12CmdRogueArcadeType\x12\x1b\
+    \n\x17NNHBAOKEBJI_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17NNHBAOKEBJI_GFECMCBCMDM\
+    \x10\xea;\x12\x1c\n\x17NNHBAOKEBJI_OCEMBBBNAGJ\x10\xe9;\x12\x1c\n\x17NNH\
+    BAOKEBJI_OCKANPAJIMJ\x10\xe5;\x12\x1c\n\x17NNHBAOKEBJI_PJDFLECDOAA\x10\
+    \xf7;\x12\x1c\n\x17NNHBAOKEBJI_DCHBPOBFJJK\x10\x84<\x12\x1c\n\x17NNHBAOK\
+    EBJI_FNAMLLEMAOK\x10\xf9;\x12\x1c\n\x17NNHBAOKEBJI_IFPCDBMEIAK\x10\x8a<\
+    \x12\x1c\n\x17NNHBAOKEBJI_ENDFCJDJHEJ\x10\x8b<b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

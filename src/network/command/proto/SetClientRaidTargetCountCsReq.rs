@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetClientRaidTargetCountCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.HJJMOOHHKMH)
-    pub HJJMOOHHKMH: u32,
+    // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.KJKGHIEKNID)
+    pub KJKGHIEKNID: u32,
     // @@protoc_insertion_point(field:SetClientRaidTargetCountCsReq.progress)
     pub progress: u32,
     // special fields
@@ -52,9 +52,9 @@ impl SetClientRaidTargetCountCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HJJMOOHHKMH",
-            |m: &SetClientRaidTargetCountCsReq| { &m.HJJMOOHHKMH },
-            |m: &mut SetClientRaidTargetCountCsReq| { &mut m.HJJMOOHHKMH },
+            "KJKGHIEKNID",
+            |m: &SetClientRaidTargetCountCsReq| { &m.KJKGHIEKNID },
+            |m: &mut SetClientRaidTargetCountCsReq| { &mut m.KJKGHIEKNID },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "progress",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.HJJMOOHHKMH = is.read_uint32()?;
+                48 => {
+                    self.KJKGHIEKNID = is.read_uint32()?;
                 },
-                24 => {
+                96 => {
                     self.progress = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HJJMOOHHKMH != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HJJMOOHHKMH);
+        if self.KJKGHIEKNID != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.KJKGHIEKNID);
         }
         if self.progress != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.progress);
+            my_size += ::protobuf::rt::uint32_size(12, self.progress);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HJJMOOHHKMH != 0 {
-            os.write_uint32(14, self.HJJMOOHHKMH)?;
+        if self.KJKGHIEKNID != 0 {
+            os.write_uint32(6, self.KJKGHIEKNID)?;
         }
         if self.progress != 0 {
-            os.write_uint32(3, self.progress)?;
+            os.write_uint32(12, self.progress)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for SetClientRaidTargetCountCsReq {
     }
 
     fn clear(&mut self) {
-        self.HJJMOOHHKMH = 0;
+        self.KJKGHIEKNID = 0;
         self.progress = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetClientRaidTargetCountCsReq {
         static instance: SetClientRaidTargetCountCsReq = SetClientRaidTargetCountCsReq {
-            HJJMOOHHKMH: 0,
+            KJKGHIEKNID: 0,
             progress: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for SetClientRaidTargetCountCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n#SetClientRaidTargetCountCsReq.proto\"]\n\x1dSetClientRaidTargetCountC\
-    sReq\x12\x20\n\x0bHJJMOOHHKMH\x18\x0e\x20\x01(\rR\x0bHJJMOOHHKMH\x12\x1a\
-    \n\x08progress\x18\x03\x20\x01(\rR\x08progressb\x06proto3\
+    sReq\x12\x20\n\x0bKJKGHIEKNID\x18\x06\x20\x01(\rR\x0bKJKGHIEKNID\x12\x1a\
+    \n\x08progress\x18\x0c\x20\x01(\rR\x08progressb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

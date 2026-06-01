@@ -31,7 +31,7 @@ pub struct BattleGridFightTraitEffectInfo {
     // @@protoc_insertion_point(field:BattleGridFightTraitEffectInfo.effect_id)
     pub effect_id: u32,
     // message oneof groups
-    pub HDACCIEIJFO: ::std::option::Option<battle_grid_fight_trait_effect_info::HDACCIEIJFO>,
+    pub NEBNJDMFELO: ::std::option::Option<battle_grid_fight_trait_effect_info::NEBNJDMFELO>,
     // special fields
     // @@protoc_insertion_point(special_field:BattleGridFightTraitEffectInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,36 +51,36 @@ impl BattleGridFightTraitEffectInfo {
     // .BattleGridFightTraitCoreRoleInfo trait_core_role = 101;
 
     pub fn trait_core_role(&self) -> &super::BattleGridFightTraitCoreRoleInfo::BattleGridFightTraitCoreRoleInfo {
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitCoreRole(ref v)) => v,
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitCoreRole(ref v)) => v,
             _ => <super::BattleGridFightTraitCoreRoleInfo::BattleGridFightTraitCoreRoleInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_trait_core_role(&mut self) {
-        self.HDACCIEIJFO = ::std::option::Option::None;
+        self.NEBNJDMFELO = ::std::option::Option::None;
     }
 
     pub fn has_trait_core_role(&self) -> bool {
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitCoreRole(..)) => true,
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitCoreRole(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_trait_core_role(&mut self, v: super::BattleGridFightTraitCoreRoleInfo::BattleGridFightTraitCoreRoleInfo) {
-        self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitCoreRole(v))
+        self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitCoreRole(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_trait_core_role(&mut self) -> &mut super::BattleGridFightTraitCoreRoleInfo::BattleGridFightTraitCoreRoleInfo {
-        if let ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitCoreRole(_)) = self.HDACCIEIJFO {
+        if let ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitCoreRole(_)) = self.NEBNJDMFELO {
         } else {
-            self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitCoreRole(super::BattleGridFightTraitCoreRoleInfo::BattleGridFightTraitCoreRoleInfo::new()));
+            self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitCoreRole(super::BattleGridFightTraitCoreRoleInfo::BattleGridFightTraitCoreRoleInfo::new()));
         }
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitCoreRole(ref mut v)) => v,
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitCoreRole(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -88,8 +88,8 @@ impl BattleGridFightTraitEffectInfo {
     // Take field
     pub fn take_trait_core_role(&mut self) -> super::BattleGridFightTraitCoreRoleInfo::BattleGridFightTraitCoreRoleInfo {
         if self.has_trait_core_role() {
-            match self.HDACCIEIJFO.take() {
-                ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitCoreRole(v)) => v,
+            match self.NEBNJDMFELO.take() {
+                ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitCoreRole(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -100,36 +100,36 @@ impl BattleGridFightTraitEffectInfo {
     // .BattleGridFigntAvatarCoreRoleInfo avatar_core_info = 102;
 
     pub fn avatar_core_info(&self) -> &super::BattleGridFigntAvatarCoreRoleInfo::BattleGridFigntAvatarCoreRoleInfo {
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::AvatarCoreInfo(ref v)) => v,
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::AvatarCoreInfo(ref v)) => v,
             _ => <super::BattleGridFigntAvatarCoreRoleInfo::BattleGridFigntAvatarCoreRoleInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_avatar_core_info(&mut self) {
-        self.HDACCIEIJFO = ::std::option::Option::None;
+        self.NEBNJDMFELO = ::std::option::Option::None;
     }
 
     pub fn has_avatar_core_info(&self) -> bool {
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::AvatarCoreInfo(..)) => true,
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::AvatarCoreInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_avatar_core_info(&mut self, v: super::BattleGridFigntAvatarCoreRoleInfo::BattleGridFigntAvatarCoreRoleInfo) {
-        self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::AvatarCoreInfo(v))
+        self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::AvatarCoreInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_avatar_core_info(&mut self) -> &mut super::BattleGridFigntAvatarCoreRoleInfo::BattleGridFigntAvatarCoreRoleInfo {
-        if let ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::AvatarCoreInfo(_)) = self.HDACCIEIJFO {
+        if let ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::AvatarCoreInfo(_)) = self.NEBNJDMFELO {
         } else {
-            self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::AvatarCoreInfo(super::BattleGridFigntAvatarCoreRoleInfo::BattleGridFigntAvatarCoreRoleInfo::new()));
+            self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::AvatarCoreInfo(super::BattleGridFigntAvatarCoreRoleInfo::BattleGridFigntAvatarCoreRoleInfo::new()));
         }
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::AvatarCoreInfo(ref mut v)) => v,
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::AvatarCoreInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -137,8 +137,8 @@ impl BattleGridFightTraitEffectInfo {
     // Take field
     pub fn take_avatar_core_info(&mut self) -> super::BattleGridFigntAvatarCoreRoleInfo::BattleGridFigntAvatarCoreRoleInfo {
         if self.has_avatar_core_info() {
-            match self.HDACCIEIJFO.take() {
-                ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::AvatarCoreInfo(v)) => v,
+            match self.NEBNJDMFELO.take() {
+                ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::AvatarCoreInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -149,36 +149,36 @@ impl BattleGridFightTraitEffectInfo {
     // .GridFightTraitEffectLevelInfo trait_effect_level_info = 103;
 
     pub fn trait_effect_level_info(&self) -> &super::GridFightTraitEffectLevelInfo::GridFightTraitEffectLevelInfo {
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitEffectLevelInfo(ref v)) => v,
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitEffectLevelInfo(ref v)) => v,
             _ => <super::GridFightTraitEffectLevelInfo::GridFightTraitEffectLevelInfo as ::protobuf::Message>::default_instance(),
         }
     }
 
     pub fn clear_trait_effect_level_info(&mut self) {
-        self.HDACCIEIJFO = ::std::option::Option::None;
+        self.NEBNJDMFELO = ::std::option::Option::None;
     }
 
     pub fn has_trait_effect_level_info(&self) -> bool {
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitEffectLevelInfo(..)) => true,
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitEffectLevelInfo(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
     pub fn set_trait_effect_level_info(&mut self, v: super::GridFightTraitEffectLevelInfo::GridFightTraitEffectLevelInfo) {
-        self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitEffectLevelInfo(v))
+        self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitEffectLevelInfo(v))
     }
 
     // Mutable pointer to the field.
     pub fn mut_trait_effect_level_info(&mut self) -> &mut super::GridFightTraitEffectLevelInfo::GridFightTraitEffectLevelInfo {
-        if let ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitEffectLevelInfo(_)) = self.HDACCIEIJFO {
+        if let ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitEffectLevelInfo(_)) = self.NEBNJDMFELO {
         } else {
-            self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitEffectLevelInfo(super::GridFightTraitEffectLevelInfo::GridFightTraitEffectLevelInfo::new()));
+            self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitEffectLevelInfo(super::GridFightTraitEffectLevelInfo::GridFightTraitEffectLevelInfo::new()));
         }
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitEffectLevelInfo(ref mut v)) => v,
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitEffectLevelInfo(ref mut v)) => v,
             _ => panic!(),
         }
     }
@@ -186,8 +186,8 @@ impl BattleGridFightTraitEffectInfo {
     // Take field
     pub fn take_trait_effect_level_info(&mut self) -> super::GridFightTraitEffectLevelInfo::GridFightTraitEffectLevelInfo {
         if self.has_trait_effect_level_info() {
-            match self.HDACCIEIJFO.take() {
-                ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitEffectLevelInfo(v)) => v,
+            match self.NEBNJDMFELO.take() {
+                ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitEffectLevelInfo(v)) => v,
                 _ => panic!(),
             }
         } else {
@@ -195,52 +195,52 @@ impl BattleGridFightTraitEffectInfo {
         }
     }
 
-    // .DFJGPODAKAM HAINJKLLLKF = 104;
+    // .KFMKBMJPEIC JLCLHAKNMLL = 104;
 
-    pub fn HAINJKLLLKF(&self) -> &super::DFJGPODAKAM::DFJGPODAKAM {
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::HAINJKLLLKF(ref v)) => v,
-            _ => <super::DFJGPODAKAM::DFJGPODAKAM as ::protobuf::Message>::default_instance(),
+    pub fn JLCLHAKNMLL(&self) -> &super::KFMKBMJPEIC::KFMKBMJPEIC {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(ref v)) => v,
+            _ => <super::KFMKBMJPEIC::KFMKBMJPEIC as ::protobuf::Message>::default_instance(),
         }
     }
 
-    pub fn clear_HAINJKLLLKF(&mut self) {
-        self.HDACCIEIJFO = ::std::option::Option::None;
+    pub fn clear_JLCLHAKNMLL(&mut self) {
+        self.NEBNJDMFELO = ::std::option::Option::None;
     }
 
-    pub fn has_HAINJKLLLKF(&self) -> bool {
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::HAINJKLLLKF(..)) => true,
+    pub fn has_JLCLHAKNMLL(&self) -> bool {
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(..)) => true,
             _ => false,
         }
     }
 
     // Param is passed by value, moved
-    pub fn set_HAINJKLLLKF(&mut self, v: super::DFJGPODAKAM::DFJGPODAKAM) {
-        self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::HAINJKLLLKF(v))
+    pub fn set_JLCLHAKNMLL(&mut self, v: super::KFMKBMJPEIC::KFMKBMJPEIC) {
+        self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(v))
     }
 
     // Mutable pointer to the field.
-    pub fn mut_HAINJKLLLKF(&mut self) -> &mut super::DFJGPODAKAM::DFJGPODAKAM {
-        if let ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::HAINJKLLLKF(_)) = self.HDACCIEIJFO {
+    pub fn mut_JLCLHAKNMLL(&mut self) -> &mut super::KFMKBMJPEIC::KFMKBMJPEIC {
+        if let ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(_)) = self.NEBNJDMFELO {
         } else {
-            self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::HAINJKLLLKF(super::DFJGPODAKAM::DFJGPODAKAM::new()));
+            self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(super::KFMKBMJPEIC::KFMKBMJPEIC::new()));
         }
-        match self.HDACCIEIJFO {
-            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::HAINJKLLLKF(ref mut v)) => v,
+        match self.NEBNJDMFELO {
+            ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(ref mut v)) => v,
             _ => panic!(),
         }
     }
 
     // Take field
-    pub fn take_HAINJKLLLKF(&mut self) -> super::DFJGPODAKAM::DFJGPODAKAM {
-        if self.has_HAINJKLLLKF() {
-            match self.HDACCIEIJFO.take() {
-                ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::HAINJKLLLKF(v)) => v,
+    pub fn take_JLCLHAKNMLL(&mut self) -> super::KFMKBMJPEIC::KFMKBMJPEIC {
+        if self.has_JLCLHAKNMLL() {
+            match self.NEBNJDMFELO.take() {
+                ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(v)) => v,
                 _ => panic!(),
             }
         } else {
-            super::DFJGPODAKAM::DFJGPODAKAM::new()
+            super::KFMKBMJPEIC::KFMKBMJPEIC::new()
         }
     }
 
@@ -273,14 +273,14 @@ impl BattleGridFightTraitEffectInfo {
             BattleGridFightTraitEffectInfo::mut_trait_effect_level_info,
             BattleGridFightTraitEffectInfo::set_trait_effect_level_info,
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::DFJGPODAKAM::DFJGPODAKAM>(
-            "HAINJKLLLKF",
-            BattleGridFightTraitEffectInfo::has_HAINJKLLLKF,
-            BattleGridFightTraitEffectInfo::HAINJKLLLKF,
-            BattleGridFightTraitEffectInfo::mut_HAINJKLLLKF,
-            BattleGridFightTraitEffectInfo::set_HAINJKLLLKF,
+        fields.push(::protobuf::reflect::rt::v2::make_oneof_message_has_get_mut_set_accessor::<_, super::KFMKBMJPEIC::KFMKBMJPEIC>(
+            "JLCLHAKNMLL",
+            BattleGridFightTraitEffectInfo::has_JLCLHAKNMLL,
+            BattleGridFightTraitEffectInfo::JLCLHAKNMLL,
+            BattleGridFightTraitEffectInfo::mut_JLCLHAKNMLL,
+            BattleGridFightTraitEffectInfo::set_JLCLHAKNMLL,
         ));
-        oneofs.push(battle_grid_fight_trait_effect_info::HDACCIEIJFO::generated_oneof_descriptor_data());
+        oneofs.push(battle_grid_fight_trait_effect_info::NEBNJDMFELO::generated_oneof_descriptor_data());
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<BattleGridFightTraitEffectInfo>(
             "BattleGridFightTraitEffectInfo",
             fields,
@@ -303,16 +303,16 @@ impl ::protobuf::Message for BattleGridFightTraitEffectInfo {
                     self.effect_id = is.read_uint32()?;
                 },
                 810 => {
-                    self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitCoreRole(is.read_message()?));
+                    self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitCoreRole(is.read_message()?));
                 },
                 818 => {
-                    self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::AvatarCoreInfo(is.read_message()?));
+                    self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::AvatarCoreInfo(is.read_message()?));
                 },
                 826 => {
-                    self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitEffectLevelInfo(is.read_message()?));
+                    self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitEffectLevelInfo(is.read_message()?));
                 },
                 834 => {
-                    self.HDACCIEIJFO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::HDACCIEIJFO::HAINJKLLLKF(is.read_message()?));
+                    self.NEBNJDMFELO = ::std::option::Option::Some(battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(is.read_message()?));
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -329,21 +329,21 @@ impl ::protobuf::Message for BattleGridFightTraitEffectInfo {
         if self.effect_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.effect_id);
         }
-        if let ::std::option::Option::Some(ref v) = self.HDACCIEIJFO {
+        if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
             match v {
-                &battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitCoreRole(ref v) => {
+                &battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitCoreRole(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &battle_grid_fight_trait_effect_info::HDACCIEIJFO::AvatarCoreInfo(ref v) => {
+                &battle_grid_fight_trait_effect_info::NEBNJDMFELO::AvatarCoreInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitEffectLevelInfo(ref v) => {
+                &battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitEffectLevelInfo(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
-                &battle_grid_fight_trait_effect_info::HDACCIEIJFO::HAINJKLLLKF(ref v) => {
+                &battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(ref v) => {
                     let len = v.compute_size();
                     my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
                 },
@@ -358,18 +358,18 @@ impl ::protobuf::Message for BattleGridFightTraitEffectInfo {
         if self.effect_id != 0 {
             os.write_uint32(1, self.effect_id)?;
         }
-        if let ::std::option::Option::Some(ref v) = self.HDACCIEIJFO {
+        if let ::std::option::Option::Some(ref v) = self.NEBNJDMFELO {
             match v {
-                &battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitCoreRole(ref v) => {
+                &battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitCoreRole(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(101, v, os)?;
                 },
-                &battle_grid_fight_trait_effect_info::HDACCIEIJFO::AvatarCoreInfo(ref v) => {
+                &battle_grid_fight_trait_effect_info::NEBNJDMFELO::AvatarCoreInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(102, v, os)?;
                 },
-                &battle_grid_fight_trait_effect_info::HDACCIEIJFO::TraitEffectLevelInfo(ref v) => {
+                &battle_grid_fight_trait_effect_info::NEBNJDMFELO::TraitEffectLevelInfo(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(103, v, os)?;
                 },
-                &battle_grid_fight_trait_effect_info::HDACCIEIJFO::HAINJKLLLKF(ref v) => {
+                &battle_grid_fight_trait_effect_info::NEBNJDMFELO::JLCLHAKNMLL(ref v) => {
                     ::protobuf::rt::write_message_field_with_cached_size(104, v, os)?;
                 },
             };
@@ -392,17 +392,17 @@ impl ::protobuf::Message for BattleGridFightTraitEffectInfo {
 
     fn clear(&mut self) {
         self.effect_id = 0;
-        self.HDACCIEIJFO = ::std::option::Option::None;
-        self.HDACCIEIJFO = ::std::option::Option::None;
-        self.HDACCIEIJFO = ::std::option::Option::None;
-        self.HDACCIEIJFO = ::std::option::Option::None;
+        self.NEBNJDMFELO = ::std::option::Option::None;
+        self.NEBNJDMFELO = ::std::option::Option::None;
+        self.NEBNJDMFELO = ::std::option::Option::None;
+        self.NEBNJDMFELO = ::std::option::Option::None;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static BattleGridFightTraitEffectInfo {
         static instance: BattleGridFightTraitEffectInfo = BattleGridFightTraitEffectInfo {
             effect_id: 0,
-            HDACCIEIJFO: ::std::option::Option::None,
+            NEBNJDMFELO: ::std::option::Option::None,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -431,46 +431,46 @@ pub mod battle_grid_fight_trait_effect_info {
 
     #[derive(Clone,PartialEq,Debug)]
     #[non_exhaustive]
-    // @@protoc_insertion_point(oneof:BattleGridFightTraitEffectInfo.HDACCIEIJFO)
-    pub enum HDACCIEIJFO {
+    // @@protoc_insertion_point(oneof:BattleGridFightTraitEffectInfo.NEBNJDMFELO)
+    pub enum NEBNJDMFELO {
         // @@protoc_insertion_point(oneof_field:BattleGridFightTraitEffectInfo.trait_core_role)
         TraitCoreRole(super::super::BattleGridFightTraitCoreRoleInfo::BattleGridFightTraitCoreRoleInfo),
         // @@protoc_insertion_point(oneof_field:BattleGridFightTraitEffectInfo.avatar_core_info)
         AvatarCoreInfo(super::super::BattleGridFigntAvatarCoreRoleInfo::BattleGridFigntAvatarCoreRoleInfo),
         // @@protoc_insertion_point(oneof_field:BattleGridFightTraitEffectInfo.trait_effect_level_info)
         TraitEffectLevelInfo(super::super::GridFightTraitEffectLevelInfo::GridFightTraitEffectLevelInfo),
-        // @@protoc_insertion_point(oneof_field:BattleGridFightTraitEffectInfo.HAINJKLLLKF)
-        HAINJKLLLKF(super::super::DFJGPODAKAM::DFJGPODAKAM),
+        // @@protoc_insertion_point(oneof_field:BattleGridFightTraitEffectInfo.JLCLHAKNMLL)
+        JLCLHAKNMLL(super::super::KFMKBMJPEIC::KFMKBMJPEIC),
     }
 
-    impl ::protobuf::Oneof for HDACCIEIJFO {
+    impl ::protobuf::Oneof for NEBNJDMFELO {
     }
 
-    impl ::protobuf::OneofFull for HDACCIEIJFO {
+    impl ::protobuf::OneofFull for NEBNJDMFELO {
         fn descriptor() -> ::protobuf::reflect::OneofDescriptor {
             static descriptor: ::protobuf::rt::Lazy<::protobuf::reflect::OneofDescriptor> = ::protobuf::rt::Lazy::new();
-            descriptor.get(|| <super::BattleGridFightTraitEffectInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("HDACCIEIJFO").unwrap()).clone()
+            descriptor.get(|| <super::BattleGridFightTraitEffectInfo as ::protobuf::MessageFull>::descriptor().oneof_by_name("NEBNJDMFELO").unwrap()).clone()
         }
     }
 
-    impl HDACCIEIJFO {
+    impl NEBNJDMFELO {
         pub(in super) fn generated_oneof_descriptor_data() -> ::protobuf::reflect::GeneratedOneofDescriptorData {
-            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<HDACCIEIJFO>("HDACCIEIJFO")
+            ::protobuf::reflect::GeneratedOneofDescriptorData::new::<NEBNJDMFELO>("NEBNJDMFELO")
         }
     }
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$BattleGridFightTraitEffectInfo.proto\x1a&BattleGridFightTraitCoreRole\
-    Info.proto\x1a'BattleGridFigntAvatarCoreRoleInfo.proto\x1a\x11DFJGPODAKA\
-    M.proto\x1a#GridFightTraitEffectLevelInfo.proto\"\xf4\x02\n\x1eBattleGri\
+    Info.proto\x1a'BattleGridFigntAvatarCoreRoleInfo.proto\x1a#GridFightTrai\
+    tEffectLevelInfo.proto\x1a\x11KFMKBMJPEIC.proto\"\xf4\x02\n\x1eBattleGri\
     dFightTraitEffectInfo\x12\x1b\n\teffect_id\x18\x01\x20\x01(\rR\x08effect\
     Id\x12K\n\x0ftrait_core_role\x18e\x20\x01(\x0b2!.BattleGridFightTraitCor\
     eRoleInfoH\0R\rtraitCoreRole\x12N\n\x10avatar_core_info\x18f\x20\x01(\
     \x0b2\".BattleGridFigntAvatarCoreRoleInfoH\0R\x0eavatarCoreInfo\x12W\n\
     \x17trait_effect_level_info\x18g\x20\x01(\x0b2\x1e.GridFightTraitEffectL\
-    evelInfoH\0R\x14traitEffectLevelInfo\x120\n\x0bHAINJKLLLKF\x18h\x20\x01(\
-    \x0b2\x0c.DFJGPODAKAMH\0R\x0bHAINJKLLLKFB\r\n\x0bHDACCIEIJFOb\x06proto3\
+    evelInfoH\0R\x14traitEffectLevelInfo\x120\n\x0bJLCLHAKNMLL\x18h\x20\x01(\
+    \x0b2\x0c.KFMKBMJPEICH\0R\x0bJLCLHAKNMLLB\r\n\x0bNEBNJDMFELOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -490,8 +490,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             let mut deps = ::std::vec::Vec::with_capacity(4);
             deps.push(super::BattleGridFightTraitCoreRoleInfo::file_descriptor().clone());
             deps.push(super::BattleGridFigntAvatarCoreRoleInfo::file_descriptor().clone());
-            deps.push(super::DFJGPODAKAM::file_descriptor().clone());
             deps.push(super::GridFightTraitEffectLevelInfo::file_descriptor().clone());
+            deps.push(super::KFMKBMJPEIC::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(BattleGridFightTraitEffectInfo::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

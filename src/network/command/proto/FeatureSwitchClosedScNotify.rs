@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FeatureSwitchClosedScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FeatureSwitchClosedScNotify.OFDFKMLOGKO)
-    pub OFDFKMLOGKO: ::protobuf::EnumOrUnknown<super::FeatureSwitchType::FeatureSwitchType>,
+    // @@protoc_insertion_point(field:FeatureSwitchClosedScNotify.FMGLEBCIBHG)
+    pub FMGLEBCIBHG: ::protobuf::EnumOrUnknown<super::FeatureSwitchType::FeatureSwitchType>,
     // special fields
     // @@protoc_insertion_point(special_field:FeatureSwitchClosedScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl FeatureSwitchClosedScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OFDFKMLOGKO",
-            |m: &FeatureSwitchClosedScNotify| { &m.OFDFKMLOGKO },
-            |m: &mut FeatureSwitchClosedScNotify| { &mut m.OFDFKMLOGKO },
+            "FMGLEBCIBHG",
+            |m: &FeatureSwitchClosedScNotify| { &m.FMGLEBCIBHG },
+            |m: &mut FeatureSwitchClosedScNotify| { &mut m.FMGLEBCIBHG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FeatureSwitchClosedScNotify>(
             "FeatureSwitchClosedScNotify",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 32 => {
-                    self.OFDFKMLOGKO = is.read_enum_or_unknown()?;
+                    self.FMGLEBCIBHG = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.OFDFKMLOGKO != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::IGCKIJDDJFJ_AHMCKDAOLNE) {
-            my_size += ::protobuf::rt::int32_size(4, self.OFDFKMLOGKO.value());
+        if self.FMGLEBCIBHG != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH) {
+            my_size += ::protobuf::rt::int32_size(4, self.FMGLEBCIBHG.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.OFDFKMLOGKO != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::IGCKIJDDJFJ_AHMCKDAOLNE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.OFDFKMLOGKO))?;
+        if self.FMGLEBCIBHG != ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH) {
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.FMGLEBCIBHG))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for FeatureSwitchClosedScNotify {
     }
 
     fn clear(&mut self) {
-        self.OFDFKMLOGKO = ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::IGCKIJDDJFJ_AHMCKDAOLNE);
+        self.FMGLEBCIBHG = ::protobuf::EnumOrUnknown::new(super::FeatureSwitchType::FeatureSwitchType::BLOHGFCFEEL_OLLFDOONPPH);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FeatureSwitchClosedScNotify {
         static instance: FeatureSwitchClosedScNotify = FeatureSwitchClosedScNotify {
-            OFDFKMLOGKO: ::protobuf::EnumOrUnknown::from_i32(0),
+            FMGLEBCIBHG: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for FeatureSwitchClosedScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!FeatureSwitchClosedScNotify.proto\x1a\x17FeatureSwitchType.proto\"S\n\
-    \x1bFeatureSwitchClosedScNotify\x124\n\x0bOFDFKMLOGKO\x18\x04\x20\x01(\
-    \x0e2\x12.FeatureSwitchTypeR\x0bOFDFKMLOGKOb\x06proto3\
+    \x1bFeatureSwitchClosedScNotify\x124\n\x0bFMGLEBCIBHG\x18\x04\x20\x01(\
+    \x0e2\x12.FeatureSwitchTypeR\x0bFMGLEBCIBHGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MessageChatData {
     // message fields
-    // @@protoc_insertion_point(field:MessageChatData.message_type)
-    pub message_type: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
     // @@protoc_insertion_point(field:MessageChatData.chat_data)
     pub chat_data: ::protobuf::MessageField<super::ChatData::ChatData>,
+    // @@protoc_insertion_point(field:MessageChatData.message_type)
+    pub message_type: ::protobuf::EnumOrUnknown<super::MsgType::MsgType>,
     // special fields
     // @@protoc_insertion_point(special_field:MessageChatData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl MessageChatData {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "message_type",
-            |m: &MessageChatData| { &m.message_type },
-            |m: &mut MessageChatData| { &mut m.message_type },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ChatData::ChatData>(
             "chat_data",
             |m: &MessageChatData| { &m.chat_data },
             |m: &mut MessageChatData| { &mut m.chat_data },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "message_type",
+            |m: &MessageChatData| { &m.message_type },
+            |m: &mut MessageChatData| { &mut m.message_type },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MessageChatData>(
             "MessageChatData",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for MessageChatData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.message_type = is.read_enum_or_unknown()?;
-                },
                 18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.chat_data)?;
+                },
+                8 => {
+                    self.message_type = is.read_enum_or_unknown()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for MessageChatData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.message_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(1, self.message_type.value());
-        }
         if let Some(v) = self.chat_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.message_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+            my_size += ::protobuf::rt::int32_size(1, self.message_type.value());
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for MessageChatData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.message_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
-            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.message_type))?;
-        }
         if let Some(v) = self.chat_data.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+        }
+        if self.message_type != ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE) {
+            os.write_enum(1, ::protobuf::EnumOrUnknown::value(&self.message_type))?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for MessageChatData {
     }
 
     fn clear(&mut self) {
-        self.message_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
         self.chat_data.clear();
+        self.message_type = ::protobuf::EnumOrUnknown::new(super::MsgType::MsgType::MSG_TYPE_NONE);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MessageChatData {
         static instance: MessageChatData = MessageChatData {
-            message_type: ::protobuf::EnumOrUnknown::from_i32(0),
             chat_data: ::protobuf::MessageField::none(),
+            message_type: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for MessageChatData {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15MessageChatData.proto\x1a\x0eChatData.proto\x1a\rMsgType.proto\"f\
-    \n\x0fMessageChatData\x12+\n\x0cmessage_type\x18\x01\x20\x01(\x0e2\x08.M\
-    sgTypeR\x0bmessageType\x12&\n\tchat_data\x18\x02\x20\x01(\x0b2\t.ChatDat\
-    aR\x08chatDatab\x06proto3\
+    \n\x0fMessageChatData\x12&\n\tchat_data\x18\x02\x20\x01(\x0b2\t.ChatData\
+    R\x08chatData\x12+\n\x0cmessage_type\x18\x01\x20\x01(\x0e2\x08.MsgTypeR\
+    \x0bmessageTypeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncTurnFoodNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncTurnFoodNotify.MAODNHNHLIJ)
-    pub MAODNHNHLIJ: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>>,
-    // @@protoc_insertion_point(field:SyncTurnFoodNotify.DBPDPHIMBDJ)
-    pub DBPDPHIMBDJ: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SyncTurnFoodNotify.CAMEGAGKPGL)
+    pub CAMEGAGKPGL: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SyncTurnFoodNotify.EOJBFLHBNMB)
+    pub EOJBFLHBNMB: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::TurnFoodSwitch::TurnFoodSwitch>>,
     // special fields
     // @@protoc_insertion_point(special_field:SyncTurnFoodNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl SyncTurnFoodNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "MAODNHNHLIJ",
-            |m: &SyncTurnFoodNotify| { &m.MAODNHNHLIJ },
-            |m: &mut SyncTurnFoodNotify| { &mut m.MAODNHNHLIJ },
+            "CAMEGAGKPGL",
+            |m: &SyncTurnFoodNotify| { &m.CAMEGAGKPGL },
+            |m: &mut SyncTurnFoodNotify| { &mut m.CAMEGAGKPGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DBPDPHIMBDJ",
-            |m: &SyncTurnFoodNotify| { &m.DBPDPHIMBDJ },
-            |m: &mut SyncTurnFoodNotify| { &mut m.DBPDPHIMBDJ },
+            "EOJBFLHBNMB",
+            |m: &SyncTurnFoodNotify| { &m.EOJBFLHBNMB },
+            |m: &mut SyncTurnFoodNotify| { &mut m.EOJBFLHBNMB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncTurnFoodNotify>(
             "SyncTurnFoodNotify",
@@ -79,17 +79,17 @@ impl ::protobuf::Message for SyncTurnFoodNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                72 => {
-                    self.MAODNHNHLIJ.push(is.read_enum_or_unknown()?);
+                106 => {
+                    is.read_repeated_packed_uint32_into(&mut self.CAMEGAGKPGL)?;
                 },
-                74 => {
-                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.MAODNHNHLIJ)?
+                104 => {
+                    self.CAMEGAGKPGL.push(is.read_uint32()?);
                 },
-                122 => {
-                    is.read_repeated_packed_uint32_into(&mut self.DBPDPHIMBDJ)?;
+                32 => {
+                    self.EOJBFLHBNMB.push(is.read_enum_or_unknown()?);
                 },
-                120 => {
-                    self.DBPDPHIMBDJ.push(is.read_uint32()?);
+                34 => {
+                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.EOJBFLHBNMB)?
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -103,16 +103,16 @@ impl ::protobuf::Message for SyncTurnFoodNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(9, &self.MAODNHNHLIJ);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.DBPDPHIMBDJ);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(13, &self.CAMEGAGKPGL);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(4, &self.EOJBFLHBNMB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_enum_or_unknown(9, &self.MAODNHNHLIJ)?;
-        os.write_repeated_packed_uint32(15, &self.DBPDPHIMBDJ)?;
+        os.write_repeated_packed_uint32(13, &self.CAMEGAGKPGL)?;
+        os.write_repeated_packed_enum_or_unknown(4, &self.EOJBFLHBNMB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -130,15 +130,15 @@ impl ::protobuf::Message for SyncTurnFoodNotify {
     }
 
     fn clear(&mut self) {
-        self.MAODNHNHLIJ.clear();
-        self.DBPDPHIMBDJ.clear();
+        self.CAMEGAGKPGL.clear();
+        self.EOJBFLHBNMB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncTurnFoodNotify {
         static instance: SyncTurnFoodNotify = SyncTurnFoodNotify {
-            MAODNHNHLIJ: ::std::vec::Vec::new(),
-            DBPDPHIMBDJ: ::std::vec::Vec::new(),
+            CAMEGAGKPGL: ::std::vec::Vec::new(),
+            EOJBFLHBNMB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for SyncTurnFoodNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SyncTurnFoodNotify.proto\x1a\x14TurnFoodSwitch.proto\"i\n\x12SyncT\
-    urnFoodNotify\x121\n\x0bMAODNHNHLIJ\x18\t\x20\x03(\x0e2\x0f.TurnFoodSwit\
-    chR\x0bMAODNHNHLIJ\x12\x20\n\x0bDBPDPHIMBDJ\x18\x0f\x20\x03(\rR\x0bDBPDP\
-    HIMBDJb\x06proto3\
+    urnFoodNotify\x12\x20\n\x0bCAMEGAGKPGL\x18\r\x20\x03(\rR\x0bCAMEGAGKPGL\
+    \x121\n\x0bEOJBFLHBNMB\x18\x04\x20\x03(\x0e2\x0f.TurnFoodSwitchR\x0bEOJB\
+    FLHBNMBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

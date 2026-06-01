@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetEvolveBuildCoinNotify {
     // message fields
+    // @@protoc_insertion_point(field:GetEvolveBuildCoinNotify.HFPEJIDDDJG)
+    pub HFPEJIDDDJG: ::protobuf::EnumOrUnknown<super::EDJKFOBBDJF::EDJKFOBBDJF>,
     // @@protoc_insertion_point(field:GetEvolveBuildCoinNotify.item_value)
     pub item_value: u32,
-    // @@protoc_insertion_point(field:GetEvolveBuildCoinNotify.EGLCKGKECAJ)
-    pub EGLCKGKECAJ: ::protobuf::EnumOrUnknown<super::GCHPNHBDCDO::GCHPNHBDCDO>,
     // special fields
     // @@protoc_insertion_point(special_field:GetEvolveBuildCoinNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl GetEvolveBuildCoinNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HFPEJIDDDJG",
+            |m: &GetEvolveBuildCoinNotify| { &m.HFPEJIDDDJG },
+            |m: &mut GetEvolveBuildCoinNotify| { &mut m.HFPEJIDDDJG },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "item_value",
             |m: &GetEvolveBuildCoinNotify| { &m.item_value },
             |m: &mut GetEvolveBuildCoinNotify| { &mut m.item_value },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EGLCKGKECAJ",
-            |m: &GetEvolveBuildCoinNotify| { &m.EGLCKGKECAJ },
-            |m: &mut GetEvolveBuildCoinNotify| { &mut m.EGLCKGKECAJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetEvolveBuildCoinNotify>(
             "GetEvolveBuildCoinNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetEvolveBuildCoinNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.item_value = is.read_uint32()?;
+                120 => {
+                    self.HFPEJIDDDJG = is.read_enum_or_unknown()?;
                 },
-                104 => {
-                    self.EGLCKGKECAJ = is.read_enum_or_unknown()?;
+                88 => {
+                    self.item_value = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GetEvolveBuildCoinNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.item_value != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.item_value);
+        if self.HFPEJIDDDJG != ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL) {
+            my_size += ::protobuf::rt::int32_size(15, self.HFPEJIDDDJG.value());
         }
-        if self.EGLCKGKECAJ != ::protobuf::EnumOrUnknown::new(super::GCHPNHBDCDO::GCHPNHBDCDO::GCHPNHBDCDO_BFKFDKMGLHO) {
-            my_size += ::protobuf::rt::int32_size(13, self.EGLCKGKECAJ.value());
+        if self.item_value != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.item_value);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GetEvolveBuildCoinNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.item_value != 0 {
-            os.write_uint32(1, self.item_value)?;
+        if self.HFPEJIDDDJG != ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.HFPEJIDDDJG))?;
         }
-        if self.EGLCKGKECAJ != ::protobuf::EnumOrUnknown::new(super::GCHPNHBDCDO::GCHPNHBDCDO::GCHPNHBDCDO_BFKFDKMGLHO) {
-            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.EGLCKGKECAJ))?;
+        if self.item_value != 0 {
+            os.write_uint32(11, self.item_value)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for GetEvolveBuildCoinNotify {
     }
 
     fn clear(&mut self) {
+        self.HFPEJIDDDJG = ::protobuf::EnumOrUnknown::new(super::EDJKFOBBDJF::EDJKFOBBDJF::EDJKFOBBDJF_PCIHNGDCFAL);
         self.item_value = 0;
-        self.EGLCKGKECAJ = ::protobuf::EnumOrUnknown::new(super::GCHPNHBDCDO::GCHPNHBDCDO::GCHPNHBDCDO_BFKFDKMGLHO);
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetEvolveBuildCoinNotify {
         static instance: GetEvolveBuildCoinNotify = GetEvolveBuildCoinNotify {
+            HFPEJIDDDJG: ::protobuf::EnumOrUnknown::from_i32(0),
             item_value: 0,
-            EGLCKGKECAJ: ::protobuf::EnumOrUnknown::from_i32(0),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,10 +165,10 @@ impl ::protobuf::reflect::ProtobufValue for GetEvolveBuildCoinNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1eGetEvolveBuildCoinNotify.proto\x1a\x11GCHPNHBDCDO.proto\"i\n\x18Ge\
-    tEvolveBuildCoinNotify\x12\x1d\n\nitem_value\x18\x01\x20\x01(\rR\titemVa\
-    lue\x12.\n\x0bEGLCKGKECAJ\x18\r\x20\x01(\x0e2\x0c.GCHPNHBDCDOR\x0bEGLCKG\
-    KECAJb\x06proto3\
+    \n\x1eGetEvolveBuildCoinNotify.proto\x1a\x11EDJKFOBBDJF.proto\"i\n\x18Ge\
+    tEvolveBuildCoinNotify\x12.\n\x0bHFPEJIDDDJG\x18\x0f\x20\x01(\x0e2\x0c.E\
+    DJKFOBBDJFR\x0bHFPEJIDDDJG\x12\x1d\n\nitem_value\x18\x0b\x20\x01(\rR\tit\
+    emValueb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -186,7 +186,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::GCHPNHBDCDO::file_descriptor().clone());
+            deps.push(super::EDJKFOBBDJF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetEvolveBuildCoinNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FavourArchiveCsReq {
     // message fields
-    // @@protoc_insertion_point(field:FavourArchiveCsReq.PDLBECHDJBL)
-    pub PDLBECHDJBL: bool,
-    // @@protoc_insertion_point(field:FavourArchiveCsReq.AJMBOLHDGHK)
-    pub AJMBOLHDGHK: u32,
+    // @@protoc_insertion_point(field:FavourArchiveCsReq.BAAGDILLLME)
+    pub BAAGDILLLME: u32,
+    // @@protoc_insertion_point(field:FavourArchiveCsReq.IECKKCHJMLP)
+    pub IECKKCHJMLP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:FavourArchiveCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FavourArchiveCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "PDLBECHDJBL",
-            |m: &FavourArchiveCsReq| { &m.PDLBECHDJBL },
-            |m: &mut FavourArchiveCsReq| { &mut m.PDLBECHDJBL },
+            "BAAGDILLLME",
+            |m: &FavourArchiveCsReq| { &m.BAAGDILLLME },
+            |m: &mut FavourArchiveCsReq| { &mut m.BAAGDILLLME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AJMBOLHDGHK",
-            |m: &FavourArchiveCsReq| { &m.AJMBOLHDGHK },
-            |m: &mut FavourArchiveCsReq| { &mut m.AJMBOLHDGHK },
+            "IECKKCHJMLP",
+            |m: &FavourArchiveCsReq| { &m.IECKKCHJMLP },
+            |m: &mut FavourArchiveCsReq| { &mut m.IECKKCHJMLP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FavourArchiveCsReq>(
             "FavourArchiveCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.PDLBECHDJBL = is.read_bool()?;
+                72 => {
+                    self.BAAGDILLLME = is.read_uint32()?;
                 },
-                96 => {
-                    self.AJMBOLHDGHK = is.read_uint32()?;
+                8 => {
+                    self.IECKKCHJMLP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.PDLBECHDJBL != false {
-            my_size += 1 + 1;
+        if self.BAAGDILLLME != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.BAAGDILLLME);
         }
-        if self.AJMBOLHDGHK != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AJMBOLHDGHK);
+        if self.IECKKCHJMLP != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.PDLBECHDJBL != false {
-            os.write_bool(4, self.PDLBECHDJBL)?;
+        if self.BAAGDILLLME != 0 {
+            os.write_uint32(9, self.BAAGDILLLME)?;
         }
-        if self.AJMBOLHDGHK != 0 {
-            os.write_uint32(12, self.AJMBOLHDGHK)?;
+        if self.IECKKCHJMLP != false {
+            os.write_bool(1, self.IECKKCHJMLP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FavourArchiveCsReq {
     }
 
     fn clear(&mut self) {
-        self.PDLBECHDJBL = false;
-        self.AJMBOLHDGHK = 0;
+        self.BAAGDILLLME = 0;
+        self.IECKKCHJMLP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FavourArchiveCsReq {
         static instance: FavourArchiveCsReq = FavourArchiveCsReq {
-            PDLBECHDJBL: false,
-            AJMBOLHDGHK: 0,
+            BAAGDILLLME: 0,
+            IECKKCHJMLP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -165,9 +165,9 @@ impl ::protobuf::reflect::ProtobufValue for FavourArchiveCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18FavourArchiveCsReq.proto\"X\n\x12FavourArchiveCsReq\x12\x20\n\x0bP\
-    DLBECHDJBL\x18\x04\x20\x01(\x08R\x0bPDLBECHDJBL\x12\x20\n\x0bAJMBOLHDGHK\
-    \x18\x0c\x20\x01(\rR\x0bAJMBOLHDGHKb\x06proto3\
+    \n\x18FavourArchiveCsReq.proto\"X\n\x12FavourArchiveCsReq\x12\x20\n\x0bB\
+    AAGDILLLME\x18\t\x20\x01(\rR\x0bBAAGDILLLME\x12\x20\n\x0bIECKKCHJMLP\x18\
+    \x01\x20\x01(\x08R\x0bIECKKCHJMLPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

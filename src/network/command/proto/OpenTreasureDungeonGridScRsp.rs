@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct OpenTreasureDungeonGridScRsp {
     // message fields
-    // @@protoc_insertion_point(field:OpenTreasureDungeonGridScRsp.IKHJLMAKNCD)
-    pub IKHJLMAKNCD: ::protobuf::MessageField<super::KPBGMOCCMLA::KPBGMOCCMLA>,
+    // @@protoc_insertion_point(field:OpenTreasureDungeonGridScRsp.IMHNGDFGJJA)
+    pub IMHNGDFGJJA: ::protobuf::MessageField<super::PPONNIHFJAP::PPONNIHFJAP>,
     // @@protoc_insertion_point(field:OpenTreasureDungeonGridScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,10 +51,10 @@ impl OpenTreasureDungeonGridScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::KPBGMOCCMLA::KPBGMOCCMLA>(
-            "IKHJLMAKNCD",
-            |m: &OpenTreasureDungeonGridScRsp| { &m.IKHJLMAKNCD },
-            |m: &mut OpenTreasureDungeonGridScRsp| { &mut m.IKHJLMAKNCD },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PPONNIHFJAP::PPONNIHFJAP>(
+            "IMHNGDFGJJA",
+            |m: &OpenTreasureDungeonGridScRsp| { &m.IMHNGDFGJJA },
+            |m: &mut OpenTreasureDungeonGridScRsp| { &mut m.IMHNGDFGJJA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for OpenTreasureDungeonGridScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IKHJLMAKNCD)?;
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IMHNGDFGJJA)?;
                 },
-                120 => {
+                56 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for OpenTreasureDungeonGridScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.IKHJLMAKNCD.as_ref() {
+        if let Some(v) = self.IMHNGDFGJJA.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for OpenTreasureDungeonGridScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.IKHJLMAKNCD.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+        if let Some(v) = self.IMHNGDFGJJA.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(15, self.retcode)?;
+            os.write_uint32(7, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for OpenTreasureDungeonGridScRsp {
     }
 
     fn clear(&mut self) {
-        self.IKHJLMAKNCD.clear();
+        self.IMHNGDFGJJA.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static OpenTreasureDungeonGridScRsp {
         static instance: OpenTreasureDungeonGridScRsp = OpenTreasureDungeonGridScRsp {
-            IKHJLMAKNCD: ::protobuf::MessageField::none(),
+            IMHNGDFGJJA: ::protobuf::MessageField::none(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for OpenTreasureDungeonGridScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\"OpenTreasureDungeonGridScRsp.proto\x1a\x11KPBGMOCCMLA.proto\"h\n\x1c\
-    OpenTreasureDungeonGridScRsp\x12.\n\x0bIKHJLMAKNCD\x18\x07\x20\x01(\x0b2\
-    \x0c.KPBGMOCCMLAR\x0bIKHJLMAKNCD\x12\x18\n\x07retcode\x18\x0f\x20\x01(\r\
+    \n\"OpenTreasureDungeonGridScRsp.proto\x1a\x11PPONNIHFJAP.proto\"h\n\x1c\
+    OpenTreasureDungeonGridScRsp\x12.\n\x0bIMHNGDFGJJA\x18\x02\x20\x01(\x0b2\
+    \x0c.PPONNIHFJAPR\x0bIMHNGDFGJJA\x12\x18\n\x07retcode\x18\x07\x20\x01(\r\
     R\x07retcodeb\x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::KPBGMOCCMLA::file_descriptor().clone());
+            deps.push(super::PPONNIHFJAP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(OpenTreasureDungeonGridScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

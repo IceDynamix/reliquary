@@ -27,74 +27,74 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdElfRestaurantType)
 pub enum CmdElfRestaurantType {
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.PFAIIEGNMJO_PCPDHELPKEM)
-    PFAIIEGNMJO_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantPlantSeedScRsp)
-    CmdElfRestaurantPlantSeedScRsp = 2569,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantRecycleSeedCsReq)
-    CmdElfRestaurantRecycleSeedCsReq = 2568,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantUpgradeRecipeLevelCsReq)
-    CmdElfRestaurantUpgradeRecipeLevelCsReq = 2599,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantBuyShopItemCsReq)
-    CmdElfRestaurantBuyShopItemCsReq = 2558,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.PFAIIEGNMJO_EKLMECHLELJ)
-    PFAIIEGNMJO_EKLMECHLELJ = 2553,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdGetElfRestaurantDataCsReq)
-    CmdGetElfRestaurantDataCsReq = 2563,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdIEIGLIEIJAN)
-    CmdIEIGLIEIJAN = 2571,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdEnterElfRestaurantNextDayCsReq)
-    CmdEnterElfRestaurantNextDayCsReq = 2580,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdOIDOEJMAMDE)
-    CmdOIDOEJMAMDE = 2566,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdFBDOEKFPDOB)
-    CmdFBDOEKFPDOB = 2570,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantHarvestCropScRsp)
-    CmdElfRestaurantHarvestCropScRsp = 2594,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantFinishTradeOrderCsReq)
-    CmdElfRestaurantFinishTradeOrderCsReq = 2559,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantDataChangeNotify)
-    CmdElfRestaurantDataChangeNotify = 2588,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantFinishTradeOrderScRsp)
-    CmdElfRestaurantFinishTradeOrderScRsp = 2554,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantUpgradeEmployeeLevelCsReq)
-    CmdElfRestaurantUpgradeEmployeeLevelCsReq = 2600,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdGetElfRestaurantDataScRsp)
-    CmdGetElfRestaurantDataScRsp = 2557,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantHarvestCropCsReq)
-    CmdElfRestaurantHarvestCropCsReq = 2552,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantClientStatusCsReq)
-    CmdElfRestaurantClientStatusCsReq = 2589,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdSettleElfRestaurantPlayCsReq)
-    CmdSettleElfRestaurantPlayCsReq = 2556,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdNIBAINNLCBG)
-    CmdNIBAINNLCBG = 2593,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.PFAIIEGNMJO_BIBKKMADLFJ)
-    PFAIIEGNMJO_BIBKKMADLFJ = 2586,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantRecycleSeedScRsp)
-    CmdElfRestaurantRecycleSeedScRsp = 2595,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdJDGBALBMOHF)
-    CmdJDGBALBMOHF = 2577,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantBuyFieldCsReq)
-    CmdElfRestaurantBuyFieldCsReq = 2555,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantBuyShopItemScRsp)
-    CmdElfRestaurantBuyShopItemScRsp = 2583,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantTakeVillagerRewardCsReq)
-    CmdElfRestaurantTakeVillagerRewardCsReq = 2587,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdPNDDHICKBAC)
-    CmdPNDDHICKBAC = 2576,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdBHPFBLJAEBK)
-    CmdBHPFBLJAEBK = 2551,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdSetElfRestaurantPlayRecipeCsReq)
-    CmdSetElfRestaurantPlayRecipeCsReq = 2579,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantPlantSeedCsReq)
-    CmdElfRestaurantPlantSeedCsReq = 2597,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdNHAALOPDPOO)
-    CmdNHAALOPDPOO = 2565,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantUpgradeFacilityLevelCsReq)
-    CmdElfRestaurantUpgradeFacilityLevelCsReq = 2581,
-    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.CmdElfRestaurantTakeVillagerRewardScRsp)
-    CmdElfRestaurantTakeVillagerRewardScRsp = 2598,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_NLCDGIPGFDJ)
+    AEHOCHBKGOL_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_FHNGMDINBFL)
+    AEHOCHBKGOL_FHNGMDINBFL = 2569,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_HAKDEKOKFDD)
+    AEHOCHBKGOL_HAKDEKOKFDD = 2565,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_MMDHFIHGFHL)
+    AEHOCHBKGOL_MMDHFIHGFHL = 2584,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CCOIOBIHKHD)
+    AEHOCHBKGOL_CCOIOBIHKHD = 2564,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CDNJKEPLPBI)
+    AEHOCHBKGOL_CDNJKEPLPBI = 2592,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_GKOBLBJGNKB)
+    AEHOCHBKGOL_GKOBLBJGNKB = 2587,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_JCCKCKFLPAE)
+    AEHOCHBKGOL_JCCKCKFLPAE = 2568,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CKLPBJGJHIJ)
+    AEHOCHBKGOL_CKLPBJGJHIJ = 2600,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_KGFPEMGOCNG)
+    AEHOCHBKGOL_KGFPEMGOCNG = 2553,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_NAFFCCDNDNE)
+    AEHOCHBKGOL_NAFFCCDNDNE = 2557,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_BPOKCCBFKGF)
+    AEHOCHBKGOL_BPOKCCBFKGF = 2572,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_HDDBEMMEPOJ)
+    AEHOCHBKGOL_HDDBEMMEPOJ = 2590,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CGIKAANCBEP)
+    AEHOCHBKGOL_CGIKAANCBEP = 2582,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_NPBGDFLGLBI)
+    AEHOCHBKGOL_NPBGDFLGLBI = 2573,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_OGCDAOELHCB)
+    AEHOCHBKGOL_OGCDAOELHCB = 2591,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_MFDGFABJPEB)
+    AEHOCHBKGOL_MFDGFABJPEB = 2596,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_CHGMBMNHNCP)
+    AEHOCHBKGOL_CHGMBMNHNCP = 2599,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_EMJLCELODAP)
+    AEHOCHBKGOL_EMJLCELODAP = 2598,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_KGLPEMOFKEF)
+    AEHOCHBKGOL_KGLPEMOFKEF = 2593,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_LCFDIHFAGHA)
+    AEHOCHBKGOL_LCFDIHFAGHA = 2555,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_PAANBAEHMDB)
+    AEHOCHBKGOL_PAANBAEHMDB = 2579,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_HPKGGLPLHMD)
+    AEHOCHBKGOL_HPKGGLPLHMD = 2558,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_OADEAFDLNPG)
+    AEHOCHBKGOL_OADEAFDLNPG = 2574,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_ICEJBAGGOJP)
+    AEHOCHBKGOL_ICEJBAGGOJP = 2559,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_AEPHKPFNNCJ)
+    AEHOCHBKGOL_AEPHKPFNNCJ = 2577,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_DFLNCKFIJIL)
+    AEHOCHBKGOL_DFLNCKFIJIL = 2556,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_AGLGOEMGMHL)
+    AEHOCHBKGOL_AGLGOEMGMHL = 2566,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_IMGIFCEMEED)
+    AEHOCHBKGOL_IMGIFCEMEED = 2595,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_DOJNGFGJICF)
+    AEHOCHBKGOL_DOJNGFGJICF = 2562,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_DNHPFOOEPLE)
+    AEHOCHBKGOL_DNHPFOOEPLE = 2571,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_FBJOMEBDKMF)
+    AEHOCHBKGOL_FBJOMEBDKMF = 2570,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_LOMMBNHOCDD)
+    AEHOCHBKGOL_LOMMBNHOCDD = 2588,
+    // @@protoc_insertion_point(enum_value:CmdElfRestaurantType.AEHOCHBKGOL_LEIKNDKAJLH)
+    AEHOCHBKGOL_LEIKNDKAJLH = 2578,
 }
 
 impl ::protobuf::Enum for CmdElfRestaurantType {
@@ -106,119 +106,119 @@ impl ::protobuf::Enum for CmdElfRestaurantType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdElfRestaurantType> {
         match value {
-            0 => ::std::option::Option::Some(CmdElfRestaurantType::PFAIIEGNMJO_PCPDHELPKEM),
-            2569 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantPlantSeedScRsp),
-            2568 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantRecycleSeedCsReq),
-            2599 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeRecipeLevelCsReq),
-            2558 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyShopItemCsReq),
-            2553 => ::std::option::Option::Some(CmdElfRestaurantType::PFAIIEGNMJO_EKLMECHLELJ),
-            2563 => ::std::option::Option::Some(CmdElfRestaurantType::CmdGetElfRestaurantDataCsReq),
-            2571 => ::std::option::Option::Some(CmdElfRestaurantType::CmdIEIGLIEIJAN),
-            2580 => ::std::option::Option::Some(CmdElfRestaurantType::CmdEnterElfRestaurantNextDayCsReq),
-            2566 => ::std::option::Option::Some(CmdElfRestaurantType::CmdOIDOEJMAMDE),
-            2570 => ::std::option::Option::Some(CmdElfRestaurantType::CmdFBDOEKFPDOB),
-            2594 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantHarvestCropScRsp),
-            2559 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderCsReq),
-            2588 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantDataChangeNotify),
-            2554 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderScRsp),
-            2600 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeEmployeeLevelCsReq),
-            2557 => ::std::option::Option::Some(CmdElfRestaurantType::CmdGetElfRestaurantDataScRsp),
-            2552 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantHarvestCropCsReq),
-            2589 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantClientStatusCsReq),
-            2556 => ::std::option::Option::Some(CmdElfRestaurantType::CmdSettleElfRestaurantPlayCsReq),
-            2593 => ::std::option::Option::Some(CmdElfRestaurantType::CmdNIBAINNLCBG),
-            2586 => ::std::option::Option::Some(CmdElfRestaurantType::PFAIIEGNMJO_BIBKKMADLFJ),
-            2595 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantRecycleSeedScRsp),
-            2577 => ::std::option::Option::Some(CmdElfRestaurantType::CmdJDGBALBMOHF),
-            2555 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyFieldCsReq),
-            2583 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyShopItemScRsp),
-            2587 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardCsReq),
-            2576 => ::std::option::Option::Some(CmdElfRestaurantType::CmdPNDDHICKBAC),
-            2551 => ::std::option::Option::Some(CmdElfRestaurantType::CmdBHPFBLJAEBK),
-            2579 => ::std::option::Option::Some(CmdElfRestaurantType::CmdSetElfRestaurantPlayRecipeCsReq),
-            2597 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantPlantSeedCsReq),
-            2565 => ::std::option::Option::Some(CmdElfRestaurantType::CmdNHAALOPDPOO),
-            2581 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeFacilityLevelCsReq),
-            2598 => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardScRsp),
+            0 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NLCDGIPGFDJ),
+            2569 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL),
+            2565 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD),
+            2584 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL),
+            2564 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD),
+            2592 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI),
+            2587 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB),
+            2568 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE),
+            2600 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ),
+            2553 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG),
+            2557 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NAFFCCDNDNE),
+            2572 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF),
+            2590 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ),
+            2582 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP),
+            2573 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI),
+            2591 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB),
+            2596 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB),
+            2599 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP),
+            2598 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP),
+            2593 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF),
+            2555 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LCFDIHFAGHA),
+            2579 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB),
+            2558 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HPKGGLPLHMD),
+            2574 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OADEAFDLNPG),
+            2559 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP),
+            2577 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ),
+            2556 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL),
+            2566 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL),
+            2595 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_IMGIFCEMEED),
+            2562 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF),
+            2571 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE),
+            2570 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FBJOMEBDKMF),
+            2588 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LOMMBNHOCDD),
+            2578 => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LEIKNDKAJLH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdElfRestaurantType> {
         match str {
-            "PFAIIEGNMJO_PCPDHELPKEM" => ::std::option::Option::Some(CmdElfRestaurantType::PFAIIEGNMJO_PCPDHELPKEM),
-            "CmdElfRestaurantPlantSeedScRsp" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantPlantSeedScRsp),
-            "CmdElfRestaurantRecycleSeedCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantRecycleSeedCsReq),
-            "CmdElfRestaurantUpgradeRecipeLevelCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeRecipeLevelCsReq),
-            "CmdElfRestaurantBuyShopItemCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyShopItemCsReq),
-            "PFAIIEGNMJO_EKLMECHLELJ" => ::std::option::Option::Some(CmdElfRestaurantType::PFAIIEGNMJO_EKLMECHLELJ),
-            "CmdGetElfRestaurantDataCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdGetElfRestaurantDataCsReq),
-            "CmdIEIGLIEIJAN" => ::std::option::Option::Some(CmdElfRestaurantType::CmdIEIGLIEIJAN),
-            "CmdEnterElfRestaurantNextDayCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdEnterElfRestaurantNextDayCsReq),
-            "CmdOIDOEJMAMDE" => ::std::option::Option::Some(CmdElfRestaurantType::CmdOIDOEJMAMDE),
-            "CmdFBDOEKFPDOB" => ::std::option::Option::Some(CmdElfRestaurantType::CmdFBDOEKFPDOB),
-            "CmdElfRestaurantHarvestCropScRsp" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantHarvestCropScRsp),
-            "CmdElfRestaurantFinishTradeOrderCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderCsReq),
-            "CmdElfRestaurantDataChangeNotify" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantDataChangeNotify),
-            "CmdElfRestaurantFinishTradeOrderScRsp" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderScRsp),
-            "CmdElfRestaurantUpgradeEmployeeLevelCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeEmployeeLevelCsReq),
-            "CmdGetElfRestaurantDataScRsp" => ::std::option::Option::Some(CmdElfRestaurantType::CmdGetElfRestaurantDataScRsp),
-            "CmdElfRestaurantHarvestCropCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantHarvestCropCsReq),
-            "CmdElfRestaurantClientStatusCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantClientStatusCsReq),
-            "CmdSettleElfRestaurantPlayCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdSettleElfRestaurantPlayCsReq),
-            "CmdNIBAINNLCBG" => ::std::option::Option::Some(CmdElfRestaurantType::CmdNIBAINNLCBG),
-            "PFAIIEGNMJO_BIBKKMADLFJ" => ::std::option::Option::Some(CmdElfRestaurantType::PFAIIEGNMJO_BIBKKMADLFJ),
-            "CmdElfRestaurantRecycleSeedScRsp" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantRecycleSeedScRsp),
-            "CmdJDGBALBMOHF" => ::std::option::Option::Some(CmdElfRestaurantType::CmdJDGBALBMOHF),
-            "CmdElfRestaurantBuyFieldCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyFieldCsReq),
-            "CmdElfRestaurantBuyShopItemScRsp" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantBuyShopItemScRsp),
-            "CmdElfRestaurantTakeVillagerRewardCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardCsReq),
-            "CmdPNDDHICKBAC" => ::std::option::Option::Some(CmdElfRestaurantType::CmdPNDDHICKBAC),
-            "CmdBHPFBLJAEBK" => ::std::option::Option::Some(CmdElfRestaurantType::CmdBHPFBLJAEBK),
-            "CmdSetElfRestaurantPlayRecipeCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdSetElfRestaurantPlayRecipeCsReq),
-            "CmdElfRestaurantPlantSeedCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantPlantSeedCsReq),
-            "CmdNHAALOPDPOO" => ::std::option::Option::Some(CmdElfRestaurantType::CmdNHAALOPDPOO),
-            "CmdElfRestaurantUpgradeFacilityLevelCsReq" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantUpgradeFacilityLevelCsReq),
-            "CmdElfRestaurantTakeVillagerRewardScRsp" => ::std::option::Option::Some(CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardScRsp),
+            "AEHOCHBKGOL_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NLCDGIPGFDJ),
+            "AEHOCHBKGOL_FHNGMDINBFL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL),
+            "AEHOCHBKGOL_HAKDEKOKFDD" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD),
+            "AEHOCHBKGOL_MMDHFIHGFHL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL),
+            "AEHOCHBKGOL_CCOIOBIHKHD" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD),
+            "AEHOCHBKGOL_CDNJKEPLPBI" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI),
+            "AEHOCHBKGOL_GKOBLBJGNKB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB),
+            "AEHOCHBKGOL_JCCKCKFLPAE" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE),
+            "AEHOCHBKGOL_CKLPBJGJHIJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ),
+            "AEHOCHBKGOL_KGFPEMGOCNG" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG),
+            "AEHOCHBKGOL_NAFFCCDNDNE" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NAFFCCDNDNE),
+            "AEHOCHBKGOL_BPOKCCBFKGF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF),
+            "AEHOCHBKGOL_HDDBEMMEPOJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ),
+            "AEHOCHBKGOL_CGIKAANCBEP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP),
+            "AEHOCHBKGOL_NPBGDFLGLBI" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI),
+            "AEHOCHBKGOL_OGCDAOELHCB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB),
+            "AEHOCHBKGOL_MFDGFABJPEB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB),
+            "AEHOCHBKGOL_CHGMBMNHNCP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP),
+            "AEHOCHBKGOL_EMJLCELODAP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP),
+            "AEHOCHBKGOL_KGLPEMOFKEF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF),
+            "AEHOCHBKGOL_LCFDIHFAGHA" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LCFDIHFAGHA),
+            "AEHOCHBKGOL_PAANBAEHMDB" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB),
+            "AEHOCHBKGOL_HPKGGLPLHMD" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_HPKGGLPLHMD),
+            "AEHOCHBKGOL_OADEAFDLNPG" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_OADEAFDLNPG),
+            "AEHOCHBKGOL_ICEJBAGGOJP" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP),
+            "AEHOCHBKGOL_AEPHKPFNNCJ" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ),
+            "AEHOCHBKGOL_DFLNCKFIJIL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL),
+            "AEHOCHBKGOL_AGLGOEMGMHL" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL),
+            "AEHOCHBKGOL_IMGIFCEMEED" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_IMGIFCEMEED),
+            "AEHOCHBKGOL_DOJNGFGJICF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF),
+            "AEHOCHBKGOL_DNHPFOOEPLE" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE),
+            "AEHOCHBKGOL_FBJOMEBDKMF" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_FBJOMEBDKMF),
+            "AEHOCHBKGOL_LOMMBNHOCDD" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LOMMBNHOCDD),
+            "AEHOCHBKGOL_LEIKNDKAJLH" => ::std::option::Option::Some(CmdElfRestaurantType::AEHOCHBKGOL_LEIKNDKAJLH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdElfRestaurantType] = &[
-        CmdElfRestaurantType::PFAIIEGNMJO_PCPDHELPKEM,
-        CmdElfRestaurantType::CmdElfRestaurantPlantSeedScRsp,
-        CmdElfRestaurantType::CmdElfRestaurantRecycleSeedCsReq,
-        CmdElfRestaurantType::CmdElfRestaurantUpgradeRecipeLevelCsReq,
-        CmdElfRestaurantType::CmdElfRestaurantBuyShopItemCsReq,
-        CmdElfRestaurantType::PFAIIEGNMJO_EKLMECHLELJ,
-        CmdElfRestaurantType::CmdGetElfRestaurantDataCsReq,
-        CmdElfRestaurantType::CmdIEIGLIEIJAN,
-        CmdElfRestaurantType::CmdEnterElfRestaurantNextDayCsReq,
-        CmdElfRestaurantType::CmdOIDOEJMAMDE,
-        CmdElfRestaurantType::CmdFBDOEKFPDOB,
-        CmdElfRestaurantType::CmdElfRestaurantHarvestCropScRsp,
-        CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderCsReq,
-        CmdElfRestaurantType::CmdElfRestaurantDataChangeNotify,
-        CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderScRsp,
-        CmdElfRestaurantType::CmdElfRestaurantUpgradeEmployeeLevelCsReq,
-        CmdElfRestaurantType::CmdGetElfRestaurantDataScRsp,
-        CmdElfRestaurantType::CmdElfRestaurantHarvestCropCsReq,
-        CmdElfRestaurantType::CmdElfRestaurantClientStatusCsReq,
-        CmdElfRestaurantType::CmdSettleElfRestaurantPlayCsReq,
-        CmdElfRestaurantType::CmdNIBAINNLCBG,
-        CmdElfRestaurantType::PFAIIEGNMJO_BIBKKMADLFJ,
-        CmdElfRestaurantType::CmdElfRestaurantRecycleSeedScRsp,
-        CmdElfRestaurantType::CmdJDGBALBMOHF,
-        CmdElfRestaurantType::CmdElfRestaurantBuyFieldCsReq,
-        CmdElfRestaurantType::CmdElfRestaurantBuyShopItemScRsp,
-        CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardCsReq,
-        CmdElfRestaurantType::CmdPNDDHICKBAC,
-        CmdElfRestaurantType::CmdBHPFBLJAEBK,
-        CmdElfRestaurantType::CmdSetElfRestaurantPlayRecipeCsReq,
-        CmdElfRestaurantType::CmdElfRestaurantPlantSeedCsReq,
-        CmdElfRestaurantType::CmdNHAALOPDPOO,
-        CmdElfRestaurantType::CmdElfRestaurantUpgradeFacilityLevelCsReq,
-        CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardScRsp,
+        CmdElfRestaurantType::AEHOCHBKGOL_NLCDGIPGFDJ,
+        CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL,
+        CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD,
+        CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL,
+        CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD,
+        CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI,
+        CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB,
+        CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE,
+        CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ,
+        CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG,
+        CmdElfRestaurantType::AEHOCHBKGOL_NAFFCCDNDNE,
+        CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF,
+        CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ,
+        CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP,
+        CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI,
+        CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB,
+        CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB,
+        CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP,
+        CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP,
+        CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF,
+        CmdElfRestaurantType::AEHOCHBKGOL_LCFDIHFAGHA,
+        CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB,
+        CmdElfRestaurantType::AEHOCHBKGOL_HPKGGLPLHMD,
+        CmdElfRestaurantType::AEHOCHBKGOL_OADEAFDLNPG,
+        CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP,
+        CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ,
+        CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL,
+        CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL,
+        CmdElfRestaurantType::AEHOCHBKGOL_IMGIFCEMEED,
+        CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF,
+        CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE,
+        CmdElfRestaurantType::AEHOCHBKGOL_FBJOMEBDKMF,
+        CmdElfRestaurantType::AEHOCHBKGOL_LOMMBNHOCDD,
+        CmdElfRestaurantType::AEHOCHBKGOL_LEIKNDKAJLH,
     ];
 }
 
@@ -230,40 +230,40 @@ impl ::protobuf::EnumFull for CmdElfRestaurantType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdElfRestaurantType::PFAIIEGNMJO_PCPDHELPKEM => 0,
-            CmdElfRestaurantType::CmdElfRestaurantPlantSeedScRsp => 1,
-            CmdElfRestaurantType::CmdElfRestaurantRecycleSeedCsReq => 2,
-            CmdElfRestaurantType::CmdElfRestaurantUpgradeRecipeLevelCsReq => 3,
-            CmdElfRestaurantType::CmdElfRestaurantBuyShopItemCsReq => 4,
-            CmdElfRestaurantType::PFAIIEGNMJO_EKLMECHLELJ => 5,
-            CmdElfRestaurantType::CmdGetElfRestaurantDataCsReq => 6,
-            CmdElfRestaurantType::CmdIEIGLIEIJAN => 7,
-            CmdElfRestaurantType::CmdEnterElfRestaurantNextDayCsReq => 8,
-            CmdElfRestaurantType::CmdOIDOEJMAMDE => 9,
-            CmdElfRestaurantType::CmdFBDOEKFPDOB => 10,
-            CmdElfRestaurantType::CmdElfRestaurantHarvestCropScRsp => 11,
-            CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderCsReq => 12,
-            CmdElfRestaurantType::CmdElfRestaurantDataChangeNotify => 13,
-            CmdElfRestaurantType::CmdElfRestaurantFinishTradeOrderScRsp => 14,
-            CmdElfRestaurantType::CmdElfRestaurantUpgradeEmployeeLevelCsReq => 15,
-            CmdElfRestaurantType::CmdGetElfRestaurantDataScRsp => 16,
-            CmdElfRestaurantType::CmdElfRestaurantHarvestCropCsReq => 17,
-            CmdElfRestaurantType::CmdElfRestaurantClientStatusCsReq => 18,
-            CmdElfRestaurantType::CmdSettleElfRestaurantPlayCsReq => 19,
-            CmdElfRestaurantType::CmdNIBAINNLCBG => 20,
-            CmdElfRestaurantType::PFAIIEGNMJO_BIBKKMADLFJ => 21,
-            CmdElfRestaurantType::CmdElfRestaurantRecycleSeedScRsp => 22,
-            CmdElfRestaurantType::CmdJDGBALBMOHF => 23,
-            CmdElfRestaurantType::CmdElfRestaurantBuyFieldCsReq => 24,
-            CmdElfRestaurantType::CmdElfRestaurantBuyShopItemScRsp => 25,
-            CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardCsReq => 26,
-            CmdElfRestaurantType::CmdPNDDHICKBAC => 27,
-            CmdElfRestaurantType::CmdBHPFBLJAEBK => 28,
-            CmdElfRestaurantType::CmdSetElfRestaurantPlayRecipeCsReq => 29,
-            CmdElfRestaurantType::CmdElfRestaurantPlantSeedCsReq => 30,
-            CmdElfRestaurantType::CmdNHAALOPDPOO => 31,
-            CmdElfRestaurantType::CmdElfRestaurantUpgradeFacilityLevelCsReq => 32,
-            CmdElfRestaurantType::CmdElfRestaurantTakeVillagerRewardScRsp => 33,
+            CmdElfRestaurantType::AEHOCHBKGOL_NLCDGIPGFDJ => 0,
+            CmdElfRestaurantType::AEHOCHBKGOL_FHNGMDINBFL => 1,
+            CmdElfRestaurantType::AEHOCHBKGOL_HAKDEKOKFDD => 2,
+            CmdElfRestaurantType::AEHOCHBKGOL_MMDHFIHGFHL => 3,
+            CmdElfRestaurantType::AEHOCHBKGOL_CCOIOBIHKHD => 4,
+            CmdElfRestaurantType::AEHOCHBKGOL_CDNJKEPLPBI => 5,
+            CmdElfRestaurantType::AEHOCHBKGOL_GKOBLBJGNKB => 6,
+            CmdElfRestaurantType::AEHOCHBKGOL_JCCKCKFLPAE => 7,
+            CmdElfRestaurantType::AEHOCHBKGOL_CKLPBJGJHIJ => 8,
+            CmdElfRestaurantType::AEHOCHBKGOL_KGFPEMGOCNG => 9,
+            CmdElfRestaurantType::AEHOCHBKGOL_NAFFCCDNDNE => 10,
+            CmdElfRestaurantType::AEHOCHBKGOL_BPOKCCBFKGF => 11,
+            CmdElfRestaurantType::AEHOCHBKGOL_HDDBEMMEPOJ => 12,
+            CmdElfRestaurantType::AEHOCHBKGOL_CGIKAANCBEP => 13,
+            CmdElfRestaurantType::AEHOCHBKGOL_NPBGDFLGLBI => 14,
+            CmdElfRestaurantType::AEHOCHBKGOL_OGCDAOELHCB => 15,
+            CmdElfRestaurantType::AEHOCHBKGOL_MFDGFABJPEB => 16,
+            CmdElfRestaurantType::AEHOCHBKGOL_CHGMBMNHNCP => 17,
+            CmdElfRestaurantType::AEHOCHBKGOL_EMJLCELODAP => 18,
+            CmdElfRestaurantType::AEHOCHBKGOL_KGLPEMOFKEF => 19,
+            CmdElfRestaurantType::AEHOCHBKGOL_LCFDIHFAGHA => 20,
+            CmdElfRestaurantType::AEHOCHBKGOL_PAANBAEHMDB => 21,
+            CmdElfRestaurantType::AEHOCHBKGOL_HPKGGLPLHMD => 22,
+            CmdElfRestaurantType::AEHOCHBKGOL_OADEAFDLNPG => 23,
+            CmdElfRestaurantType::AEHOCHBKGOL_ICEJBAGGOJP => 24,
+            CmdElfRestaurantType::AEHOCHBKGOL_AEPHKPFNNCJ => 25,
+            CmdElfRestaurantType::AEHOCHBKGOL_DFLNCKFIJIL => 26,
+            CmdElfRestaurantType::AEHOCHBKGOL_AGLGOEMGMHL => 27,
+            CmdElfRestaurantType::AEHOCHBKGOL_IMGIFCEMEED => 28,
+            CmdElfRestaurantType::AEHOCHBKGOL_DOJNGFGJICF => 29,
+            CmdElfRestaurantType::AEHOCHBKGOL_DNHPFOOEPLE => 30,
+            CmdElfRestaurantType::AEHOCHBKGOL_FBJOMEBDKMF => 31,
+            CmdElfRestaurantType::AEHOCHBKGOL_LOMMBNHOCDD => 32,
+            CmdElfRestaurantType::AEHOCHBKGOL_LEIKNDKAJLH => 33,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -271,7 +271,7 @@ impl ::protobuf::EnumFull for CmdElfRestaurantType {
 
 impl ::std::default::Default for CmdElfRestaurantType {
     fn default() -> Self {
-        CmdElfRestaurantType::PFAIIEGNMJO_PCPDHELPKEM
+        CmdElfRestaurantType::AEHOCHBKGOL_NLCDGIPGFDJ
     }
 }
 
@@ -282,32 +282,31 @@ impl CmdElfRestaurantType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aCmdElfRestaurantType.proto*\xbd\t\n\x14CmdElfRestaurantType\x12\
-    \x1b\n\x17PFAIIEGNMJO_PCPDHELPKEM\x10\0\x12#\n\x1eCmdElfRestaurantPlantS\
-    eedScRsp\x10\x89\x14\x12%\n\x20CmdElfRestaurantRecycleSeedCsReq\x10\x88\
-    \x14\x12,\n'CmdElfRestaurantUpgradeRecipeLevelCsReq\x10\xa7\x14\x12%\n\
-    \x20CmdElfRestaurantBuyShopItemCsReq\x10\xfe\x13\x12\x1c\n\x17PFAIIEGNMJ\
-    O_EKLMECHLELJ\x10\xf9\x13\x12!\n\x1cCmdGetElfRestaurantDataCsReq\x10\x83\
-    \x14\x12\x13\n\x0eCmdIEIGLIEIJAN\x10\x8b\x14\x12&\n!CmdEnterElfRestauran\
-    tNextDayCsReq\x10\x94\x14\x12\x13\n\x0eCmdOIDOEJMAMDE\x10\x86\x14\x12\
-    \x13\n\x0eCmdFBDOEKFPDOB\x10\x8a\x14\x12%\n\x20CmdElfRestaurantHarvestCr\
-    opScRsp\x10\xa2\x14\x12*\n%CmdElfRestaurantFinishTradeOrderCsReq\x10\xff\
-    \x13\x12%\n\x20CmdElfRestaurantDataChangeNotify\x10\x9c\x14\x12*\n%CmdEl\
-    fRestaurantFinishTradeOrderScRsp\x10\xfa\x13\x12.\n)CmdElfRestaurantUpgr\
-    adeEmployeeLevelCsReq\x10\xa8\x14\x12!\n\x1cCmdGetElfRestaurantDataScRsp\
-    \x10\xfd\x13\x12%\n\x20CmdElfRestaurantHarvestCropCsReq\x10\xf8\x13\x12&\
-    \n!CmdElfRestaurantClientStatusCsReq\x10\x9d\x14\x12$\n\x1fCmdSettleElfR\
-    estaurantPlayCsReq\x10\xfc\x13\x12\x13\n\x0eCmdNIBAINNLCBG\x10\xa1\x14\
-    \x12\x1c\n\x17PFAIIEGNMJO_BIBKKMADLFJ\x10\x9a\x14\x12%\n\x20CmdElfRestau\
-    rantRecycleSeedScRsp\x10\xa3\x14\x12\x13\n\x0eCmdJDGBALBMOHF\x10\x91\x14\
-    \x12\"\n\x1dCmdElfRestaurantBuyFieldCsReq\x10\xfb\x13\x12%\n\x20CmdElfRe\
-    staurantBuyShopItemScRsp\x10\x97\x14\x12,\n'CmdElfRestaurantTakeVillager\
-    RewardCsReq\x10\x9b\x14\x12\x13\n\x0eCmdPNDDHICKBAC\x10\x90\x14\x12\x13\
-    \n\x0eCmdBHPFBLJAEBK\x10\xf7\x13\x12'\n\"CmdSetElfRestaurantPlayRecipeCs\
-    Req\x10\x93\x14\x12#\n\x1eCmdElfRestaurantPlantSeedCsReq\x10\xa5\x14\x12\
-    \x13\n\x0eCmdNHAALOPDPOO\x10\x85\x14\x12.\n)CmdElfRestaurantUpgradeFacil\
-    ityLevelCsReq\x10\x95\x14\x12,\n'CmdElfRestaurantTakeVillagerRewardScRsp\
-    \x10\xa6\x14b\x06proto3\
+    \n\x1aCmdElfRestaurantType.proto*\x91\x08\n\x14CmdElfRestaurantType\x12\
+    \x1b\n\x17AEHOCHBKGOL_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17AEHOCHBKGOL_FHNGMDI\
+    NBFL\x10\x89\x14\x12\x1c\n\x17AEHOCHBKGOL_HAKDEKOKFDD\x10\x85\x14\x12\
+    \x1c\n\x17AEHOCHBKGOL_MMDHFIHGFHL\x10\x98\x14\x12\x1c\n\x17AEHOCHBKGOL_C\
+    COIOBIHKHD\x10\x84\x14\x12\x1c\n\x17AEHOCHBKGOL_CDNJKEPLPBI\x10\xa0\x14\
+    \x12\x1c\n\x17AEHOCHBKGOL_GKOBLBJGNKB\x10\x9b\x14\x12\x1c\n\x17AEHOCHBKG\
+    OL_JCCKCKFLPAE\x10\x88\x14\x12\x1c\n\x17AEHOCHBKGOL_CKLPBJGJHIJ\x10\xa8\
+    \x14\x12\x1c\n\x17AEHOCHBKGOL_KGFPEMGOCNG\x10\xf9\x13\x12\x1c\n\x17AEHOC\
+    HBKGOL_NAFFCCDNDNE\x10\xfd\x13\x12\x1c\n\x17AEHOCHBKGOL_BPOKCCBFKGF\x10\
+    \x8c\x14\x12\x1c\n\x17AEHOCHBKGOL_HDDBEMMEPOJ\x10\x9e\x14\x12\x1c\n\x17A\
+    EHOCHBKGOL_CGIKAANCBEP\x10\x96\x14\x12\x1c\n\x17AEHOCHBKGOL_NPBGDFLGLBI\
+    \x10\x8d\x14\x12\x1c\n\x17AEHOCHBKGOL_OGCDAOELHCB\x10\x9f\x14\x12\x1c\n\
+    \x17AEHOCHBKGOL_MFDGFABJPEB\x10\xa4\x14\x12\x1c\n\x17AEHOCHBKGOL_CHGMBMN\
+    HNCP\x10\xa7\x14\x12\x1c\n\x17AEHOCHBKGOL_EMJLCELODAP\x10\xa6\x14\x12\
+    \x1c\n\x17AEHOCHBKGOL_KGLPEMOFKEF\x10\xa1\x14\x12\x1c\n\x17AEHOCHBKGOL_L\
+    CFDIHFAGHA\x10\xfb\x13\x12\x1c\n\x17AEHOCHBKGOL_PAANBAEHMDB\x10\x93\x14\
+    \x12\x1c\n\x17AEHOCHBKGOL_HPKGGLPLHMD\x10\xfe\x13\x12\x1c\n\x17AEHOCHBKG\
+    OL_OADEAFDLNPG\x10\x8e\x14\x12\x1c\n\x17AEHOCHBKGOL_ICEJBAGGOJP\x10\xff\
+    \x13\x12\x1c\n\x17AEHOCHBKGOL_AEPHKPFNNCJ\x10\x91\x14\x12\x1c\n\x17AEHOC\
+    HBKGOL_DFLNCKFIJIL\x10\xfc\x13\x12\x1c\n\x17AEHOCHBKGOL_AGLGOEMGMHL\x10\
+    \x86\x14\x12\x1c\n\x17AEHOCHBKGOL_IMGIFCEMEED\x10\xa3\x14\x12\x1c\n\x17A\
+    EHOCHBKGOL_DOJNGFGJICF\x10\x82\x14\x12\x1c\n\x17AEHOCHBKGOL_DNHPFOOEPLE\
+    \x10\x8b\x14\x12\x1c\n\x17AEHOCHBKGOL_FBJOMEBDKMF\x10\x8a\x14\x12\x1c\n\
+    \x17AEHOCHBKGOL_LOMMBNHOCDD\x10\x9c\x14\x12\x1c\n\x17AEHOCHBKGOL_LEIKNDK\
+    AJLH\x10\x92\x14b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

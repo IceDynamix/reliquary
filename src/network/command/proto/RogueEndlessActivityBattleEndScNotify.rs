@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueEndlessActivityBattleEndScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RogueEndlessActivityBattleEndScNotify.BNOCEPKMPGK)
-    pub BNOCEPKMPGK: ::protobuf::MessageField<super::DGDHBAGEOOI::DGDHBAGEOOI>,
+    // @@protoc_insertion_point(field:RogueEndlessActivityBattleEndScNotify.PMKGMLELPPI)
+    pub PMKGMLELPPI: ::protobuf::MessageField<super::AJNOEKPLPCL::AJNOEKPLPCL>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueEndlessActivityBattleEndScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -49,10 +49,10 @@ impl RogueEndlessActivityBattleEndScNotify {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DGDHBAGEOOI::DGDHBAGEOOI>(
-            "BNOCEPKMPGK",
-            |m: &RogueEndlessActivityBattleEndScNotify| { &m.BNOCEPKMPGK },
-            |m: &mut RogueEndlessActivityBattleEndScNotify| { &mut m.BNOCEPKMPGK },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::AJNOEKPLPCL::AJNOEKPLPCL>(
+            "PMKGMLELPPI",
+            |m: &RogueEndlessActivityBattleEndScNotify| { &m.PMKGMLELPPI },
+            |m: &mut RogueEndlessActivityBattleEndScNotify| { &mut m.PMKGMLELPPI },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueEndlessActivityBattleEndScNotify>(
             "RogueEndlessActivityBattleEndScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for RogueEndlessActivityBattleEndScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BNOCEPKMPGK)?;
+                122 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.PMKGMLELPPI)?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for RogueEndlessActivityBattleEndScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.BNOCEPKMPGK.as_ref() {
+        if let Some(v) = self.PMKGMLELPPI.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -97,8 +97,8 @@ impl ::protobuf::Message for RogueEndlessActivityBattleEndScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.BNOCEPKMPGK.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.PMKGMLELPPI.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -117,13 +117,13 @@ impl ::protobuf::Message for RogueEndlessActivityBattleEndScNotify {
     }
 
     fn clear(&mut self) {
-        self.BNOCEPKMPGK.clear();
+        self.PMKGMLELPPI.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueEndlessActivityBattleEndScNotify {
         static instance: RogueEndlessActivityBattleEndScNotify = RogueEndlessActivityBattleEndScNotify {
-            BNOCEPKMPGK: ::protobuf::MessageField::none(),
+            PMKGMLELPPI: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueEndlessActivityBattleEndScNotif
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n+RogueEndlessActivityBattleEndScNotify.proto\x1a\x11DGDHBAGEOOI.proto\
-    \"W\n%RogueEndlessActivityBattleEndScNotify\x12.\n\x0bBNOCEPKMPGK\x18\
-    \x01\x20\x01(\x0b2\x0c.DGDHBAGEOOIR\x0bBNOCEPKMPGKb\x06proto3\
+    \n+RogueEndlessActivityBattleEndScNotify.proto\x1a\x11AJNOEKPLPCL.proto\
+    \"W\n%RogueEndlessActivityBattleEndScNotify\x12.\n\x0bPMKGMLELPPI\x18\
+    \x0f\x20\x01(\x0b2\x0c.AJNOEKPLPCLR\x0bPMKGMLELPPIb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DGDHBAGEOOI::file_descriptor().clone());
+            deps.push(super::AJNOEKPLPCL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueEndlessActivityBattleEndScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

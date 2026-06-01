@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct LobbyGridFightInfo {
     // message fields
-    // @@protoc_insertion_point(field:LobbyGridFightInfo.IHGBBHEBLKL)
-    pub IHGBBHEBLKL: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:LobbyGridFightInfo.gold)
-    pub gold: u32,
+    // @@protoc_insertion_point(field:LobbyGridFightInfo.LAJJHAAKGAF)
+    pub LAJJHAAKGAF: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:LobbyGridFightInfo.KEJLHDPBIPO)
+    pub KEJLHDPBIPO: ::std::string::String,
     // @@protoc_insertion_point(field:LobbyGridFightInfo.score_id)
     pub score_id: u32,
-    // @@protoc_insertion_point(field:LobbyGridFightInfo.FCFGBADCGCC)
-    pub FCFGBADCGCC: ::std::string::String,
+    // @@protoc_insertion_point(field:LobbyGridFightInfo.gold)
+    pub gold: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LobbyGridFightInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,14 +56,14 @@ impl LobbyGridFightInfo {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IHGBBHEBLKL",
-            |m: &LobbyGridFightInfo| { &m.IHGBBHEBLKL },
-            |m: &mut LobbyGridFightInfo| { &mut m.IHGBBHEBLKL },
+            "LAJJHAAKGAF",
+            |m: &LobbyGridFightInfo| { &m.LAJJHAAKGAF },
+            |m: &mut LobbyGridFightInfo| { &mut m.LAJJHAAKGAF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "gold",
-            |m: &LobbyGridFightInfo| { &m.gold },
-            |m: &mut LobbyGridFightInfo| { &mut m.gold },
+            "KEJLHDPBIPO",
+            |m: &LobbyGridFightInfo| { &m.KEJLHDPBIPO },
+            |m: &mut LobbyGridFightInfo| { &mut m.KEJLHDPBIPO },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "score_id",
@@ -71,9 +71,9 @@ impl LobbyGridFightInfo {
             |m: &mut LobbyGridFightInfo| { &mut m.score_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "FCFGBADCGCC",
-            |m: &LobbyGridFightInfo| { &m.FCFGBADCGCC },
-            |m: &mut LobbyGridFightInfo| { &mut m.FCFGBADCGCC },
+            "gold",
+            |m: &LobbyGridFightInfo| { &m.gold },
+            |m: &mut LobbyGridFightInfo| { &mut m.gold },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LobbyGridFightInfo>(
             "LobbyGridFightInfo",
@@ -94,19 +94,19 @@ impl ::protobuf::Message for LobbyGridFightInfo {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 10 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IHGBBHEBLKL)?;
+                    is.read_repeated_packed_uint32_into(&mut self.LAJJHAAKGAF)?;
                 },
                 8 => {
-                    self.IHGBBHEBLKL.push(is.read_uint32()?);
+                    self.LAJJHAAKGAF.push(is.read_uint32()?);
                 },
-                16 => {
-                    self.gold = is.read_uint32()?;
+                34 => {
+                    self.KEJLHDPBIPO = is.read_string()?;
                 },
                 24 => {
                     self.score_id = is.read_uint32()?;
                 },
-                34 => {
-                    self.FCFGBADCGCC = is.read_string()?;
+                16 => {
+                    self.gold = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -120,15 +120,15 @@ impl ::protobuf::Message for LobbyGridFightInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.IHGBBHEBLKL);
-        if self.gold != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.gold);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.LAJJHAAKGAF);
+        if !self.KEJLHDPBIPO.is_empty() {
+            my_size += ::protobuf::rt::string_size(4, &self.KEJLHDPBIPO);
         }
         if self.score_id != 0 {
             my_size += ::protobuf::rt::uint32_size(3, self.score_id);
         }
-        if !self.FCFGBADCGCC.is_empty() {
-            my_size += ::protobuf::rt::string_size(4, &self.FCFGBADCGCC);
+        if self.gold != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.gold);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,15 +136,15 @@ impl ::protobuf::Message for LobbyGridFightInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(1, &self.IHGBBHEBLKL)?;
-        if self.gold != 0 {
-            os.write_uint32(2, self.gold)?;
+        os.write_repeated_packed_uint32(1, &self.LAJJHAAKGAF)?;
+        if !self.KEJLHDPBIPO.is_empty() {
+            os.write_string(4, &self.KEJLHDPBIPO)?;
         }
         if self.score_id != 0 {
             os.write_uint32(3, self.score_id)?;
         }
-        if !self.FCFGBADCGCC.is_empty() {
-            os.write_string(4, &self.FCFGBADCGCC)?;
+        if self.gold != 0 {
+            os.write_uint32(2, self.gold)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -163,19 +163,19 @@ impl ::protobuf::Message for LobbyGridFightInfo {
     }
 
     fn clear(&mut self) {
-        self.IHGBBHEBLKL.clear();
-        self.gold = 0;
+        self.LAJJHAAKGAF.clear();
+        self.KEJLHDPBIPO.clear();
         self.score_id = 0;
-        self.FCFGBADCGCC.clear();
+        self.gold = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LobbyGridFightInfo {
         static instance: LobbyGridFightInfo = LobbyGridFightInfo {
-            IHGBBHEBLKL: ::std::vec::Vec::new(),
-            gold: 0,
+            LAJJHAAKGAF: ::std::vec::Vec::new(),
+            KEJLHDPBIPO: ::std::string::String::new(),
             score_id: 0,
-            FCFGBADCGCC: ::std::string::String::new(),
+            gold: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,9 +201,9 @@ impl ::protobuf::reflect::ProtobufValue for LobbyGridFightInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18LobbyGridFightInfo.proto\"\x87\x01\n\x12LobbyGridFightInfo\x12\x20\
-    \n\x0bIHGBBHEBLKL\x18\x01\x20\x03(\rR\x0bIHGBBHEBLKL\x12\x12\n\x04gold\
-    \x18\x02\x20\x01(\rR\x04gold\x12\x19\n\x08score_id\x18\x03\x20\x01(\rR\
-    \x07scoreId\x12\x20\n\x0bFCFGBADCGCC\x18\x04\x20\x01(\tR\x0bFCFGBADCGCCb\
+    \n\x0bLAJJHAAKGAF\x18\x01\x20\x03(\rR\x0bLAJJHAAKGAF\x12\x20\n\x0bKEJLHD\
+    PBIPO\x18\x04\x20\x01(\tR\x0bKEJLHDPBIPO\x12\x19\n\x08score_id\x18\x03\
+    \x20\x01(\rR\x07scoreId\x12\x12\n\x04gold\x18\x02\x20\x01(\rR\x04goldb\
     \x06proto3\
 ";
 

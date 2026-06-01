@@ -30,10 +30,10 @@ pub struct EnterTelevisionActivityStageCsReq {
     // message fields
     // @@protoc_insertion_point(field:EnterTelevisionActivityStageCsReq.buff_list)
     pub buff_list: ::std::vec::Vec<u32>,
-    // @@protoc_insertion_point(field:EnterTelevisionActivityStageCsReq.DEBMOGCGMLI)
-    pub DEBMOGCGMLI: u32,
     // @@protoc_insertion_point(field:EnterTelevisionActivityStageCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::NOJCIEGKAOB::NOJCIEGKAOB>,
+    pub avatar_list: ::std::vec::Vec<super::CBIKIIMGKHH::CBIKIIMGKHH>,
+    // @@protoc_insertion_point(field:EnterTelevisionActivityStageCsReq.KKNGIFOJLGJ)
+    pub KKNGIFOJLGJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterTelevisionActivityStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,15 +58,15 @@ impl EnterTelevisionActivityStageCsReq {
             |m: &EnterTelevisionActivityStageCsReq| { &m.buff_list },
             |m: &mut EnterTelevisionActivityStageCsReq| { &mut m.buff_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DEBMOGCGMLI",
-            |m: &EnterTelevisionActivityStageCsReq| { &m.DEBMOGCGMLI },
-            |m: &mut EnterTelevisionActivityStageCsReq| { &mut m.DEBMOGCGMLI },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "avatar_list",
             |m: &EnterTelevisionActivityStageCsReq| { &m.avatar_list },
             |m: &mut EnterTelevisionActivityStageCsReq| { &mut m.avatar_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KKNGIFOJLGJ",
+            |m: &EnterTelevisionActivityStageCsReq| { &m.KKNGIFOJLGJ },
+            |m: &mut EnterTelevisionActivityStageCsReq| { &mut m.KKNGIFOJLGJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterTelevisionActivityStageCsReq>(
             "EnterTelevisionActivityStageCsReq",
@@ -92,11 +92,11 @@ impl ::protobuf::Message for EnterTelevisionActivityStageCsReq {
                 8 => {
                     self.buff_list.push(is.read_uint32()?);
                 },
-                64 => {
-                    self.DEBMOGCGMLI = is.read_uint32()?;
-                },
-                82 => {
+                34 => {
                     self.avatar_list.push(is.read_message()?);
+                },
+                96 => {
+                    self.KKNGIFOJLGJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -111,13 +111,13 @@ impl ::protobuf::Message for EnterTelevisionActivityStageCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         my_size += ::protobuf::rt::vec_packed_uint32_size(1, &self.buff_list);
-        if self.DEBMOGCGMLI != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.DEBMOGCGMLI);
-        }
         for value in &self.avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.KKNGIFOJLGJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.KKNGIFOJLGJ);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
@@ -125,12 +125,12 @@ impl ::protobuf::Message for EnterTelevisionActivityStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         os.write_repeated_packed_uint32(1, &self.buff_list)?;
-        if self.DEBMOGCGMLI != 0 {
-            os.write_uint32(8, self.DEBMOGCGMLI)?;
-        }
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
+        if self.KKNGIFOJLGJ != 0 {
+            os.write_uint32(12, self.KKNGIFOJLGJ)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -149,16 +149,16 @@ impl ::protobuf::Message for EnterTelevisionActivityStageCsReq {
 
     fn clear(&mut self) {
         self.buff_list.clear();
-        self.DEBMOGCGMLI = 0;
         self.avatar_list.clear();
+        self.KKNGIFOJLGJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterTelevisionActivityStageCsReq {
         static instance: EnterTelevisionActivityStageCsReq = EnterTelevisionActivityStageCsReq {
             buff_list: ::std::vec::Vec::new(),
-            DEBMOGCGMLI: 0,
             avatar_list: ::std::vec::Vec::new(),
+            KKNGIFOJLGJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,11 +183,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterTelevisionActivityStageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'EnterTelevisionActivityStageCsReq.proto\x1a\x11NOJCIEGKAOB.proto\"\
+    \n'EnterTelevisionActivityStageCsReq.proto\x1a\x11CBIKIIMGKHH.proto\"\
     \x91\x01\n!EnterTelevisionActivityStageCsReq\x12\x1b\n\tbuff_list\x18\
-    \x01\x20\x03(\rR\x08buffList\x12\x20\n\x0bDEBMOGCGMLI\x18\x08\x20\x01(\r\
-    R\x0bDEBMOGCGMLI\x12-\n\x0bavatar_list\x18\n\x20\x03(\x0b2\x0c.NOJCIEGKA\
-    OBR\navatarListb\x06proto3\
+    \x01\x20\x03(\rR\x08buffList\x12-\n\x0bavatar_list\x18\x04\x20\x03(\x0b2\
+    \x0c.CBIKIIMGKHHR\navatarList\x12\x20\n\x0bKKNGIFOJLGJ\x18\x0c\x20\x01(\
+    \rR\x0bKKNGIFOJLGJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -205,7 +205,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NOJCIEGKAOB::file_descriptor().clone());
+            deps.push(super::CBIKIIMGKHH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterTelevisionActivityStageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

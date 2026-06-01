@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SpaceZooTakeScRsp {
     // message fields
-    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.BMLKIBNLNJA)
-    pub BMLKIBNLNJA: u32,
-    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:SpaceZooTakeScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:SpaceZooTakeScRsp.KIFKGLGCLEJ)
+    pub KIFKGLGCLEJ: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SpaceZooTakeScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -53,20 +53,20 @@ impl SpaceZooTakeScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "BMLKIBNLNJA",
-            |m: &SpaceZooTakeScRsp| { &m.BMLKIBNLNJA },
-            |m: &mut SpaceZooTakeScRsp| { &mut m.BMLKIBNLNJA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "reward",
+            |m: &SpaceZooTakeScRsp| { &m.reward },
+            |m: &mut SpaceZooTakeScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &SpaceZooTakeScRsp| { &m.retcode },
             |m: &mut SpaceZooTakeScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "reward",
-            |m: &SpaceZooTakeScRsp| { &m.reward },
-            |m: &mut SpaceZooTakeScRsp| { &mut m.reward },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "KIFKGLGCLEJ",
+            |m: &SpaceZooTakeScRsp| { &m.KIFKGLGCLEJ },
+            |m: &mut SpaceZooTakeScRsp| { &mut m.KIFKGLGCLEJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SpaceZooTakeScRsp>(
             "SpaceZooTakeScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.BMLKIBNLNJA = is.read_uint32()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                88 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
-                106 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
+                80 => {
+                    self.KIFKGLGCLEJ = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,15 +107,15 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.BMLKIBNLNJA != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.BMLKIBNLNJA);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+        }
+        if self.KIFKGLGCLEJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.KIFKGLGCLEJ);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.BMLKIBNLNJA != 0 {
-            os.write_uint32(10, self.BMLKIBNLNJA)?;
+        if let Some(v) = self.reward.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
-        if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        if self.KIFKGLGCLEJ != 0 {
+            os.write_uint32(10, self.KIFKGLGCLEJ)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,17 +149,17 @@ impl ::protobuf::Message for SpaceZooTakeScRsp {
     }
 
     fn clear(&mut self) {
-        self.BMLKIBNLNJA = 0;
-        self.retcode = 0;
         self.reward.clear();
+        self.retcode = 0;
+        self.KIFKGLGCLEJ = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SpaceZooTakeScRsp {
         static instance: SpaceZooTakeScRsp = SpaceZooTakeScRsp {
-            BMLKIBNLNJA: 0,
-            retcode: 0,
             reward: ::protobuf::MessageField::none(),
+            retcode: 0,
+            KIFKGLGCLEJ: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -185,9 +185,9 @@ impl ::protobuf::reflect::ProtobufValue for SpaceZooTakeScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17SpaceZooTakeScRsp.proto\x1a\x0eItemList.proto\"r\n\x11SpaceZooTake\
-    ScRsp\x12\x20\n\x0bBMLKIBNLNJA\x18\n\x20\x01(\rR\x0bBMLKIBNLNJA\x12\x18\
-    \n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12!\n\x06reward\x18\r\x20\
-    \x01(\x0b2\t.ItemListR\x06rewardb\x06proto3\
+    ScRsp\x12!\n\x06reward\x18\x08\x20\x01(\x0b2\t.ItemListR\x06reward\x12\
+    \x18\n\x07retcode\x18\t\x20\x01(\rR\x07retcode\x12\x20\n\x0bKIFKGLGCLEJ\
+    \x18\n\x20\x01(\rR\x0bKIFKGLGCLEJb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

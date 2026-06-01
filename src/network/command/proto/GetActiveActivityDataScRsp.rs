@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetActiveActivityDataScRsp {
     // message fields
+    // @@protoc_insertion_point(field:GetActiveActivityDataScRsp.HCLGPDFBDNP)
+    pub HCLGPDFBDNP: ::std::vec::Vec<super::ActiveActivityData::ActiveActivityData>,
     // @@protoc_insertion_point(field:GetActiveActivityDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetActiveActivityDataScRsp.PIDLOGHHHDL)
-    pub PIDLOGHHHDL: ::std::vec::Vec<super::ActiveActivityData::ActiveActivityData>,
     // special fields
     // @@protoc_insertion_point(special_field:GetActiveActivityDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl GetActiveActivityDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "HCLGPDFBDNP",
+            |m: &GetActiveActivityDataScRsp| { &m.HCLGPDFBDNP },
+            |m: &mut GetActiveActivityDataScRsp| { &mut m.HCLGPDFBDNP },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetActiveActivityDataScRsp| { &m.retcode },
             |m: &mut GetActiveActivityDataScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "PIDLOGHHHDL",
-            |m: &GetActiveActivityDataScRsp| { &m.PIDLOGHHHDL },
-            |m: &mut GetActiveActivityDataScRsp| { &mut m.PIDLOGHHHDL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetActiveActivityDataScRsp>(
             "GetActiveActivityDataScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for GetActiveActivityDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.retcode = is.read_uint32()?;
+                58 => {
+                    self.HCLGPDFBDNP.push(is.read_message()?);
                 },
-                10 => {
-                    self.PIDLOGHHHDL.push(is.read_message()?);
+                48 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,25 +97,25 @@ impl ::protobuf::Message for GetActiveActivityDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.retcode);
-        }
-        for value in &self.PIDLOGHHHDL {
+        for value in &self.HCLGPDFBDNP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+        }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(10, self.retcode)?;
-        }
-        for v in &self.PIDLOGHHHDL {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.HCLGPDFBDNP {
+            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
         };
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -133,15 +133,15 @@ impl ::protobuf::Message for GetActiveActivityDataScRsp {
     }
 
     fn clear(&mut self) {
+        self.HCLGPDFBDNP.clear();
         self.retcode = 0;
-        self.PIDLOGHHHDL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetActiveActivityDataScRsp {
         static instance: GetActiveActivityDataScRsp = GetActiveActivityDataScRsp {
+            HCLGPDFBDNP: ::std::vec::Vec::new(),
             retcode: 0,
-            PIDLOGHHHDL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for GetActiveActivityDataScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20GetActiveActivityDataScRsp.proto\x1a\x18ActiveActivityData.proto\"\
-    m\n\x1aGetActiveActivityDataScRsp\x12\x18\n\x07retcode\x18\n\x20\x01(\rR\
-    \x07retcode\x125\n\x0bPIDLOGHHHDL\x18\x01\x20\x03(\x0b2\x13.ActiveActivi\
-    tyDataR\x0bPIDLOGHHHDLb\x06proto3\
+    m\n\x1aGetActiveActivityDataScRsp\x125\n\x0bHCLGPDFBDNP\x18\x07\x20\x03(\
+    \x0b2\x13.ActiveActivityDataR\x0bHCLGPDFBDNP\x12\x18\n\x07retcode\x18\
+    \x06\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

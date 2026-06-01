@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ElfRestaurantTakeVillagerRewardScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ElfRestaurantTakeVillagerRewardScRsp.HALFGLGLDLO)
-    pub HALFGLGLDLO: ::std::vec::Vec<super::OAMHEIJBIKG::OAMHEIJBIKG>,
+    // @@protoc_insertion_point(field:ElfRestaurantTakeVillagerRewardScRsp.DJOBNPIAEJP)
+    pub DJOBNPIAEJP: ::std::vec::Vec<super::PLOHACFCDKF::PLOHACFCDKF>,
     // @@protoc_insertion_point(field:ElfRestaurantTakeVillagerRewardScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -52,9 +52,9 @@ impl ElfRestaurantTakeVillagerRewardScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HALFGLGLDLO",
-            |m: &ElfRestaurantTakeVillagerRewardScRsp| { &m.HALFGLGLDLO },
-            |m: &mut ElfRestaurantTakeVillagerRewardScRsp| { &mut m.HALFGLGLDLO },
+            "DJOBNPIAEJP",
+            |m: &ElfRestaurantTakeVillagerRewardScRsp| { &m.DJOBNPIAEJP },
+            |m: &mut ElfRestaurantTakeVillagerRewardScRsp| { &mut m.DJOBNPIAEJP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for ElfRestaurantTakeVillagerRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                106 => {
-                    self.HALFGLGLDLO.push(is.read_message()?);
+                10 => {
+                    self.DJOBNPIAEJP.push(is.read_message()?);
                 },
-                24 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ElfRestaurantTakeVillagerRewardScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HALFGLGLDLO {
+        for value in &self.DJOBNPIAEJP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ElfRestaurantTakeVillagerRewardScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HALFGLGLDLO {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        for v in &self.DJOBNPIAEJP {
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(3, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,14 +133,14 @@ impl ::protobuf::Message for ElfRestaurantTakeVillagerRewardScRsp {
     }
 
     fn clear(&mut self) {
-        self.HALFGLGLDLO.clear();
+        self.DJOBNPIAEJP.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ElfRestaurantTakeVillagerRewardScRsp {
         static instance: ElfRestaurantTakeVillagerRewardScRsp = ElfRestaurantTakeVillagerRewardScRsp {
-            HALFGLGLDLO: ::std::vec::Vec::new(),
+            DJOBNPIAEJP: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ElfRestaurantTakeVillagerRewardScRsp
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*ElfRestaurantTakeVillagerRewardScRsp.proto\x1a\x11OAMHEIJBIKG.proto\"\
-    p\n$ElfRestaurantTakeVillagerRewardScRsp\x12.\n\x0bHALFGLGLDLO\x18\r\x20\
-    \x03(\x0b2\x0c.OAMHEIJBIKGR\x0bHALFGLGLDLO\x12\x18\n\x07retcode\x18\x03\
-    \x20\x01(\rR\x07retcodeb\x06proto3\
+    \n*ElfRestaurantTakeVillagerRewardScRsp.proto\x1a\x11PLOHACFCDKF.proto\"\
+    p\n$ElfRestaurantTakeVillagerRewardScRsp\x12.\n\x0bDJOBNPIAEJP\x18\x01\
+    \x20\x03(\x0b2\x0c.PLOHACFCDKFR\x0bDJOBNPIAEJP\x12\x18\n\x07retcode\x18\
+    \x0b\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::OAMHEIJBIKG::file_descriptor().clone());
+            deps.push(super::PLOHACFCDKF::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ElfRestaurantTakeVillagerRewardScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

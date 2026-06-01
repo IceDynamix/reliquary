@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeChallengePeakRewardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TakeChallengePeakRewardCsReq.reward_id)
-    pub reward_id: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TakeChallengePeakRewardCsReq.normal_reward_id_list)
     pub normal_reward_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:TakeChallengePeakRewardCsReq.reward_id)
+    pub reward_id: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:TakeChallengePeakRewardCsReq.peak_group_id)
     pub peak_group_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl TakeChallengePeakRewardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "reward_id",
-            |m: &TakeChallengePeakRewardCsReq| { &m.reward_id },
-            |m: &mut TakeChallengePeakRewardCsReq| { &mut m.reward_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
             "normal_reward_id_list",
             |m: &TakeChallengePeakRewardCsReq| { &m.normal_reward_id_list },
             |m: &mut TakeChallengePeakRewardCsReq| { &mut m.normal_reward_id_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "reward_id",
+            |m: &TakeChallengePeakRewardCsReq| { &m.reward_id },
+            |m: &mut TakeChallengePeakRewardCsReq| { &mut m.reward_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "peak_group_id",
@@ -86,19 +86,19 @@ impl ::protobuf::Message for TakeChallengePeakRewardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                74 => {
-                    is.read_repeated_packed_uint32_into(&mut self.reward_id)?;
-                },
-                72 => {
-                    self.reward_id.push(is.read_uint32()?);
-                },
-                50 => {
+                82 => {
                     is.read_repeated_packed_uint32_into(&mut self.normal_reward_id_list)?;
                 },
-                48 => {
+                80 => {
                     self.normal_reward_id_list.push(is.read_uint32()?);
                 },
-                32 => {
+                66 => {
+                    is.read_repeated_packed_uint32_into(&mut self.reward_id)?;
+                },
+                64 => {
+                    self.reward_id.push(is.read_uint32()?);
+                },
+                40 => {
                     self.peak_group_id = is.read_uint32()?;
                 },
                 tag => {
@@ -113,10 +113,10 @@ impl ::protobuf::Message for TakeChallengePeakRewardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(9, &self.reward_id);
-        my_size += ::protobuf::rt::vec_packed_uint32_size(6, &self.normal_reward_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(10, &self.normal_reward_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(8, &self.reward_id);
         if self.peak_group_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.peak_group_id);
+            my_size += ::protobuf::rt::uint32_size(5, self.peak_group_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -124,10 +124,10 @@ impl ::protobuf::Message for TakeChallengePeakRewardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(9, &self.reward_id)?;
-        os.write_repeated_packed_uint32(6, &self.normal_reward_id_list)?;
+        os.write_repeated_packed_uint32(10, &self.normal_reward_id_list)?;
+        os.write_repeated_packed_uint32(8, &self.reward_id)?;
         if self.peak_group_id != 0 {
-            os.write_uint32(4, self.peak_group_id)?;
+            os.write_uint32(5, self.peak_group_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -146,16 +146,16 @@ impl ::protobuf::Message for TakeChallengePeakRewardCsReq {
     }
 
     fn clear(&mut self) {
-        self.reward_id.clear();
         self.normal_reward_id_list.clear();
+        self.reward_id.clear();
         self.peak_group_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeChallengePeakRewardCsReq {
         static instance: TakeChallengePeakRewardCsReq = TakeChallengePeakRewardCsReq {
-            reward_id: ::std::vec::Vec::new(),
             normal_reward_id_list: ::std::vec::Vec::new(),
+            reward_id: ::std::vec::Vec::new(),
             peak_group_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -182,9 +182,9 @@ impl ::protobuf::reflect::ProtobufValue for TakeChallengePeakRewardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\"TakeChallengePeakRewardCsReq.proto\"\x92\x01\n\x1cTakeChallengePeakR\
-    ewardCsReq\x12\x1b\n\treward_id\x18\t\x20\x03(\rR\x08rewardId\x121\n\x15\
-    normal_reward_id_list\x18\x06\x20\x03(\rR\x12normalRewardIdList\x12\"\n\
-    \rpeak_group_id\x18\x04\x20\x01(\rR\x0bpeakGroupIdb\x06proto3\
+    ewardCsReq\x121\n\x15normal_reward_id_list\x18\n\x20\x03(\rR\x12normalRe\
+    wardIdList\x12\x1b\n\treward_id\x18\x08\x20\x03(\rR\x08rewardId\x12\"\n\
+    \rpeak_group_id\x18\x05\x20\x01(\rR\x0bpeakGroupIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

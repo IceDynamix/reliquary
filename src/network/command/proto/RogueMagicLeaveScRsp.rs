@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicLeaveScRsp {
     // message fields
+    // @@protoc_insertion_point(field:RogueMagicLeaveScRsp.IDCMACCPCBH)
+    pub IDCMACCPCBH: ::protobuf::MessageField<super::EEILAINOLPO::EEILAINOLPO>,
     // @@protoc_insertion_point(field:RogueMagicLeaveScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:RogueMagicLeaveScRsp.AFLJJJFCBIN)
-    pub AFLJJJFCBIN: ::protobuf::MessageField<super::JKAIDKIGEGP::JKAIDKIGEGP>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicLeaveScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueMagicLeaveScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EEILAINOLPO::EEILAINOLPO>(
+            "IDCMACCPCBH",
+            |m: &RogueMagicLeaveScRsp| { &m.IDCMACCPCBH },
+            |m: &mut RogueMagicLeaveScRsp| { &mut m.IDCMACCPCBH },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueMagicLeaveScRsp| { &m.retcode },
             |m: &mut RogueMagicLeaveScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JKAIDKIGEGP::JKAIDKIGEGP>(
-            "AFLJJJFCBIN",
-            |m: &RogueMagicLeaveScRsp| { &m.AFLJJJFCBIN },
-            |m: &mut RogueMagicLeaveScRsp| { &mut m.AFLJJJFCBIN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicLeaveScRsp>(
             "RogueMagicLeaveScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicLeaveScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                16 => {
-                    self.retcode = is.read_uint32()?;
+                74 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IDCMACCPCBH)?;
                 },
-                114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.AFLJJJFCBIN)?;
+                112 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for RogueMagicLeaveScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
-        }
-        if let Some(v) = self.AFLJJJFCBIN.as_ref() {
+        if let Some(v) = self.IDCMACCPCBH.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for RogueMagicLeaveScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+        if let Some(v) = self.IDCMACCPCBH.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
         }
-        if let Some(v) = self.AFLJJJFCBIN.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(14, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for RogueMagicLeaveScRsp {
     }
 
     fn clear(&mut self) {
+        self.IDCMACCPCBH.clear();
         self.retcode = 0;
-        self.AFLJJJFCBIN.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicLeaveScRsp {
         static instance: RogueMagicLeaveScRsp = RogueMagicLeaveScRsp {
+            IDCMACCPCBH: ::protobuf::MessageField::none(),
             retcode: 0,
-            AFLJJJFCBIN: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicLeaveScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aRogueMagicLeaveScRsp.proto\x1a\x11JKAIDKIGEGP.proto\"`\n\x14RogueM\
-    agicLeaveScRsp\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcode\x12.\
-    \n\x0bAFLJJJFCBIN\x18\x0e\x20\x01(\x0b2\x0c.JKAIDKIGEGPR\x0bAFLJJJFCBINb\
+    \n\x1aRogueMagicLeaveScRsp.proto\x1a\x11EEILAINOLPO.proto\"`\n\x14RogueM\
+    agicLeaveScRsp\x12.\n\x0bIDCMACCPCBH\x18\t\x20\x01(\x0b2\x0c.EEILAINOLPO\
+    R\x0bIDCMACCPCBH\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcodeb\
     \x06proto3\
 ";
 
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::JKAIDKIGEGP::file_descriptor().clone());
+            deps.push(super::EEILAINOLPO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RogueMagicLeaveScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

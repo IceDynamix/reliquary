@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct GridFightSyncVirtualItemNotify {
     // message fields
     // @@protoc_insertion_point(field:GridFightSyncVirtualItemNotify.item_list)
-    pub item_list: ::std::vec::Vec<super::PIIABEHNMDD::PIIABEHNMDD>,
+    pub item_list: ::std::vec::Vec<super::CENBJOMMJGD::CENBJOMMJGD>,
     // special fields
     // @@protoc_insertion_point(special_field:GridFightSyncVirtualItemNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -72,7 +72,7 @@ impl ::protobuf::Message for GridFightSyncVirtualItemNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
+                106 => {
                     self.item_list.push(is.read_message()?);
                 },
                 tag => {
@@ -98,7 +98,7 @@ impl ::protobuf::Message for GridFightSyncVirtualItemNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.item_list {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,9 +148,9 @@ impl ::protobuf::reflect::ProtobufValue for GridFightSyncVirtualItemNotify {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n$GridFightSyncVirtualItemNotify.proto\x1a\x11PIIABEHNMDD.proto\"K\n\
-    \x1eGridFightSyncVirtualItemNotify\x12)\n\titem_list\x18\x08\x20\x03(\
-    \x0b2\x0c.PIIABEHNMDDR\x08itemListb\x06proto3\
+    \n$GridFightSyncVirtualItemNotify.proto\x1a\x11CENBJOMMJGD.proto\"K\n\
+    \x1eGridFightSyncVirtualItemNotify\x12)\n\titem_list\x18\r\x20\x03(\x0b2\
+    \x0c.CENBJOMMJGDR\x08itemListb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -168,7 +168,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::PIIABEHNMDD::file_descriptor().clone());
+            deps.push(super::CENBJOMMJGD::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GridFightSyncVirtualItemNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

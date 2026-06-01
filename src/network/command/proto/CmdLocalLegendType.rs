@@ -27,18 +27,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdLocalLegendType)
 pub enum CmdLocalLegendType {
-    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.FOAKFHBIJLN_PCPDHELPKEM)
-    FOAKFHBIJLN_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.CmdStartLocalLegendLevelCsReq)
-    CmdStartLocalLegendLevelCsReq = 6577,
-    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.CmdGetLocalLegendDataCsReq)
-    CmdGetLocalLegendDataCsReq = 6576,
-    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.CmdLocalLegendDataChangeNotify)
-    CmdLocalLegendDataChangeNotify = 6578,
-    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.CmdEnterLocalLegendLevelScRsp)
-    CmdEnterLocalLegendLevelScRsp = 6589,
-    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.CmdGetLocalLegendDataScRsp)
-    CmdGetLocalLegendDataScRsp = 6579,
+    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.EGHHBKBLDMM_NLCDGIPGFDJ)
+    EGHHBKBLDMM_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.EGHHBKBLDMM_MFGKBIAKPOA)
+    EGHHBKBLDMM_MFGKBIAKPOA = 6586,
+    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.EGHHBKBLDMM_BABPGAHNGIC)
+    EGHHBKBLDMM_BABPGAHNGIC = 6577,
+    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.EGHHBKBLDMM_OGEDJJNHBIP)
+    EGHHBKBLDMM_OGEDJJNHBIP = 6592,
+    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.EGHHBKBLDMM_LPMAMNPJPCE)
+    EGHHBKBLDMM_LPMAMNPJPCE = 6589,
+    // @@protoc_insertion_point(enum_value:CmdLocalLegendType.EGHHBKBLDMM_PBOPJOANNFH)
+    EGHHBKBLDMM_PBOPJOANNFH = 6583,
 }
 
 impl ::protobuf::Enum for CmdLocalLegendType {
@@ -50,35 +50,35 @@ impl ::protobuf::Enum for CmdLocalLegendType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdLocalLegendType> {
         match value {
-            0 => ::std::option::Option::Some(CmdLocalLegendType::FOAKFHBIJLN_PCPDHELPKEM),
-            6577 => ::std::option::Option::Some(CmdLocalLegendType::CmdStartLocalLegendLevelCsReq),
-            6576 => ::std::option::Option::Some(CmdLocalLegendType::CmdGetLocalLegendDataCsReq),
-            6578 => ::std::option::Option::Some(CmdLocalLegendType::CmdLocalLegendDataChangeNotify),
-            6589 => ::std::option::Option::Some(CmdLocalLegendType::CmdEnterLocalLegendLevelScRsp),
-            6579 => ::std::option::Option::Some(CmdLocalLegendType::CmdGetLocalLegendDataScRsp),
+            0 => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_NLCDGIPGFDJ),
+            6586 => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_MFGKBIAKPOA),
+            6577 => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_BABPGAHNGIC),
+            6592 => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_OGEDJJNHBIP),
+            6589 => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_LPMAMNPJPCE),
+            6583 => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_PBOPJOANNFH),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdLocalLegendType> {
         match str {
-            "FOAKFHBIJLN_PCPDHELPKEM" => ::std::option::Option::Some(CmdLocalLegendType::FOAKFHBIJLN_PCPDHELPKEM),
-            "CmdStartLocalLegendLevelCsReq" => ::std::option::Option::Some(CmdLocalLegendType::CmdStartLocalLegendLevelCsReq),
-            "CmdGetLocalLegendDataCsReq" => ::std::option::Option::Some(CmdLocalLegendType::CmdGetLocalLegendDataCsReq),
-            "CmdLocalLegendDataChangeNotify" => ::std::option::Option::Some(CmdLocalLegendType::CmdLocalLegendDataChangeNotify),
-            "CmdEnterLocalLegendLevelScRsp" => ::std::option::Option::Some(CmdLocalLegendType::CmdEnterLocalLegendLevelScRsp),
-            "CmdGetLocalLegendDataScRsp" => ::std::option::Option::Some(CmdLocalLegendType::CmdGetLocalLegendDataScRsp),
+            "EGHHBKBLDMM_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_NLCDGIPGFDJ),
+            "EGHHBKBLDMM_MFGKBIAKPOA" => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_MFGKBIAKPOA),
+            "EGHHBKBLDMM_BABPGAHNGIC" => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_BABPGAHNGIC),
+            "EGHHBKBLDMM_OGEDJJNHBIP" => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_OGEDJJNHBIP),
+            "EGHHBKBLDMM_LPMAMNPJPCE" => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_LPMAMNPJPCE),
+            "EGHHBKBLDMM_PBOPJOANNFH" => ::std::option::Option::Some(CmdLocalLegendType::EGHHBKBLDMM_PBOPJOANNFH),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdLocalLegendType] = &[
-        CmdLocalLegendType::FOAKFHBIJLN_PCPDHELPKEM,
-        CmdLocalLegendType::CmdStartLocalLegendLevelCsReq,
-        CmdLocalLegendType::CmdGetLocalLegendDataCsReq,
-        CmdLocalLegendType::CmdLocalLegendDataChangeNotify,
-        CmdLocalLegendType::CmdEnterLocalLegendLevelScRsp,
-        CmdLocalLegendType::CmdGetLocalLegendDataScRsp,
+        CmdLocalLegendType::EGHHBKBLDMM_NLCDGIPGFDJ,
+        CmdLocalLegendType::EGHHBKBLDMM_MFGKBIAKPOA,
+        CmdLocalLegendType::EGHHBKBLDMM_BABPGAHNGIC,
+        CmdLocalLegendType::EGHHBKBLDMM_OGEDJJNHBIP,
+        CmdLocalLegendType::EGHHBKBLDMM_LPMAMNPJPCE,
+        CmdLocalLegendType::EGHHBKBLDMM_PBOPJOANNFH,
     ];
 }
 
@@ -90,12 +90,12 @@ impl ::protobuf::EnumFull for CmdLocalLegendType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdLocalLegendType::FOAKFHBIJLN_PCPDHELPKEM => 0,
-            CmdLocalLegendType::CmdStartLocalLegendLevelCsReq => 1,
-            CmdLocalLegendType::CmdGetLocalLegendDataCsReq => 2,
-            CmdLocalLegendType::CmdLocalLegendDataChangeNotify => 3,
-            CmdLocalLegendType::CmdEnterLocalLegendLevelScRsp => 4,
-            CmdLocalLegendType::CmdGetLocalLegendDataScRsp => 5,
+            CmdLocalLegendType::EGHHBKBLDMM_NLCDGIPGFDJ => 0,
+            CmdLocalLegendType::EGHHBKBLDMM_MFGKBIAKPOA => 1,
+            CmdLocalLegendType::EGHHBKBLDMM_BABPGAHNGIC => 2,
+            CmdLocalLegendType::EGHHBKBLDMM_OGEDJJNHBIP => 3,
+            CmdLocalLegendType::EGHHBKBLDMM_LPMAMNPJPCE => 4,
+            CmdLocalLegendType::EGHHBKBLDMM_PBOPJOANNFH => 5,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -103,7 +103,7 @@ impl ::protobuf::EnumFull for CmdLocalLegendType {
 
 impl ::std::default::Default for CmdLocalLegendType {
     fn default() -> Self {
-        CmdLocalLegendType::FOAKFHBIJLN_PCPDHELPKEM
+        CmdLocalLegendType::EGHHBKBLDMM_NLCDGIPGFDJ
     }
 }
 
@@ -114,12 +114,11 @@ impl CmdLocalLegendType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18CmdLocalLegendType.proto*\xe0\x01\n\x12CmdLocalLegendType\x12\x1b\
-    \n\x17FOAKFHBIJLN_PCPDHELPKEM\x10\0\x12\"\n\x1dCmdStartLocalLegendLevelC\
-    sReq\x10\xb13\x12\x1f\n\x1aCmdGetLocalLegendDataCsReq\x10\xb03\x12#\n\
-    \x1eCmdLocalLegendDataChangeNotify\x10\xb23\x12\"\n\x1dCmdEnterLocalLege\
-    ndLevelScRsp\x10\xbd3\x12\x1f\n\x1aCmdGetLocalLegendDataScRsp\x10\xb33b\
-    \x06proto3\
+    \n\x18CmdLocalLegendType.proto*\xc7\x01\n\x12CmdLocalLegendType\x12\x1b\
+    \n\x17EGHHBKBLDMM_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17EGHHBKBLDMM_MFGKBIAKPOA\
+    \x10\xba3\x12\x1c\n\x17EGHHBKBLDMM_BABPGAHNGIC\x10\xb13\x12\x1c\n\x17EGH\
+    HBKBLDMM_OGEDJJNHBIP\x10\xc03\x12\x1c\n\x17EGHHBKBLDMM_LPMAMNPJPCE\x10\
+    \xbd3\x12\x1c\n\x17EGHHBKBLDMM_PBOPJOANNFH\x10\xb73b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

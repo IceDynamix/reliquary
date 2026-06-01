@@ -27,22 +27,22 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:LobbyCharacterStatus)
 pub enum LobbyCharacterStatus {
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JOBBKLNGANP_PCPDHELPKEM)
-    JOBBKLNGANP_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JOBBKLNGANP_GHGAPOAKGAB)
-    JOBBKLNGANP_GHGAPOAKGAB = 1,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JOBBKLNGANP_BPCEKMLPJCJ)
-    JOBBKLNGANP_BPCEKMLPJCJ = 2,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JOBBKLNGANP_GPJMKKADLDC)
-    JOBBKLNGANP_GPJMKKADLDC = 3,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JOBBKLNGANP_CBBHPGAGCOE)
-    JOBBKLNGANP_CBBHPGAGCOE = 4,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JOBBKLNGANP_JNAAAIGLHHI)
-    JOBBKLNGANP_JNAAAIGLHHI = 5,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JOBBKLNGANP_IKNGBCGLMII)
-    JOBBKLNGANP_IKNGBCGLMII = 6,
-    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JOBBKLNGANP_BPDPIPBJEMD)
-    JOBBKLNGANP_BPDPIPBJEMD = 7,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_NLCDGIPGFDJ)
+    JPJAJPOGCJJ_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_BPOCOHFIAOH)
+    JPJAJPOGCJJ_BPOCOHFIAOH = 1,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_NCIPEHOHDMG)
+    JPJAJPOGCJJ_NCIPEHOHDMG = 2,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_HMOGOHOFPFG)
+    JPJAJPOGCJJ_HMOGOHOFPFG = 3,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_HNADONAFDDN)
+    JPJAJPOGCJJ_HNADONAFDDN = 4,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_ANAIJLLOOHF)
+    JPJAJPOGCJJ_ANAIJLLOOHF = 5,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_AILKHMPHLEP)
+    JPJAJPOGCJJ_AILKHMPHLEP = 6,
+    // @@protoc_insertion_point(enum_value:LobbyCharacterStatus.JPJAJPOGCJJ_HIGMNPCOONG)
+    JPJAJPOGCJJ_HIGMNPCOONG = 7,
 }
 
 impl ::protobuf::Enum for LobbyCharacterStatus {
@@ -54,41 +54,41 @@ impl ::protobuf::Enum for LobbyCharacterStatus {
 
     fn from_i32(value: i32) -> ::std::option::Option<LobbyCharacterStatus> {
         match value {
-            0 => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_GHGAPOAKGAB),
-            2 => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_BPCEKMLPJCJ),
-            3 => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_GPJMKKADLDC),
-            4 => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_CBBHPGAGCOE),
-            5 => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_JNAAAIGLHHI),
-            6 => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_IKNGBCGLMII),
-            7 => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_BPDPIPBJEMD),
+            0 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_BPOCOHFIAOH),
+            2 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_NCIPEHOHDMG),
+            3 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HMOGOHOFPFG),
+            4 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HNADONAFDDN),
+            5 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_ANAIJLLOOHF),
+            6 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_AILKHMPHLEP),
+            7 => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HIGMNPCOONG),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<LobbyCharacterStatus> {
         match str {
-            "JOBBKLNGANP_PCPDHELPKEM" => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_PCPDHELPKEM),
-            "JOBBKLNGANP_GHGAPOAKGAB" => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_GHGAPOAKGAB),
-            "JOBBKLNGANP_BPCEKMLPJCJ" => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_BPCEKMLPJCJ),
-            "JOBBKLNGANP_GPJMKKADLDC" => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_GPJMKKADLDC),
-            "JOBBKLNGANP_CBBHPGAGCOE" => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_CBBHPGAGCOE),
-            "JOBBKLNGANP_JNAAAIGLHHI" => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_JNAAAIGLHHI),
-            "JOBBKLNGANP_IKNGBCGLMII" => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_IKNGBCGLMII),
-            "JOBBKLNGANP_BPDPIPBJEMD" => ::std::option::Option::Some(LobbyCharacterStatus::JOBBKLNGANP_BPDPIPBJEMD),
+            "JPJAJPOGCJJ_NLCDGIPGFDJ" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ),
+            "JPJAJPOGCJJ_BPOCOHFIAOH" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_BPOCOHFIAOH),
+            "JPJAJPOGCJJ_NCIPEHOHDMG" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_NCIPEHOHDMG),
+            "JPJAJPOGCJJ_HMOGOHOFPFG" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HMOGOHOFPFG),
+            "JPJAJPOGCJJ_HNADONAFDDN" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HNADONAFDDN),
+            "JPJAJPOGCJJ_ANAIJLLOOHF" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_ANAIJLLOOHF),
+            "JPJAJPOGCJJ_AILKHMPHLEP" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_AILKHMPHLEP),
+            "JPJAJPOGCJJ_HIGMNPCOONG" => ::std::option::Option::Some(LobbyCharacterStatus::JPJAJPOGCJJ_HIGMNPCOONG),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [LobbyCharacterStatus] = &[
-        LobbyCharacterStatus::JOBBKLNGANP_PCPDHELPKEM,
-        LobbyCharacterStatus::JOBBKLNGANP_GHGAPOAKGAB,
-        LobbyCharacterStatus::JOBBKLNGANP_BPCEKMLPJCJ,
-        LobbyCharacterStatus::JOBBKLNGANP_GPJMKKADLDC,
-        LobbyCharacterStatus::JOBBKLNGANP_CBBHPGAGCOE,
-        LobbyCharacterStatus::JOBBKLNGANP_JNAAAIGLHHI,
-        LobbyCharacterStatus::JOBBKLNGANP_IKNGBCGLMII,
-        LobbyCharacterStatus::JOBBKLNGANP_BPDPIPBJEMD,
+        LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ,
+        LobbyCharacterStatus::JPJAJPOGCJJ_BPOCOHFIAOH,
+        LobbyCharacterStatus::JPJAJPOGCJJ_NCIPEHOHDMG,
+        LobbyCharacterStatus::JPJAJPOGCJJ_HMOGOHOFPFG,
+        LobbyCharacterStatus::JPJAJPOGCJJ_HNADONAFDDN,
+        LobbyCharacterStatus::JPJAJPOGCJJ_ANAIJLLOOHF,
+        LobbyCharacterStatus::JPJAJPOGCJJ_AILKHMPHLEP,
+        LobbyCharacterStatus::JPJAJPOGCJJ_HIGMNPCOONG,
     ];
 }
 
@@ -106,7 +106,7 @@ impl ::protobuf::EnumFull for LobbyCharacterStatus {
 
 impl ::std::default::Default for LobbyCharacterStatus {
     fn default() -> Self {
-        LobbyCharacterStatus::JOBBKLNGANP_PCPDHELPKEM
+        LobbyCharacterStatus::JPJAJPOGCJJ_NLCDGIPGFDJ
     }
 }
 
@@ -118,11 +118,11 @@ impl LobbyCharacterStatus {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aLobbyCharacterStatus.proto*\xfe\x01\n\x14LobbyCharacterStatus\x12\
-    \x1b\n\x17JOBBKLNGANP_PCPDHELPKEM\x10\0\x12\x1b\n\x17JOBBKLNGANP_GHGAPOA\
-    KGAB\x10\x01\x12\x1b\n\x17JOBBKLNGANP_BPCEKMLPJCJ\x10\x02\x12\x1b\n\x17J\
-    OBBKLNGANP_GPJMKKADLDC\x10\x03\x12\x1b\n\x17JOBBKLNGANP_CBBHPGAGCOE\x10\
-    \x04\x12\x1b\n\x17JOBBKLNGANP_JNAAAIGLHHI\x10\x05\x12\x1b\n\x17JOBBKLNGA\
-    NP_IKNGBCGLMII\x10\x06\x12\x1b\n\x17JOBBKLNGANP_BPDPIPBJEMD\x10\x07b\x06\
+    \x1b\n\x17JPJAJPOGCJJ_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17JPJAJPOGCJJ_BPOCOHF\
+    IAOH\x10\x01\x12\x1b\n\x17JPJAJPOGCJJ_NCIPEHOHDMG\x10\x02\x12\x1b\n\x17J\
+    PJAJPOGCJJ_HMOGOHOFPFG\x10\x03\x12\x1b\n\x17JPJAJPOGCJJ_HNADONAFDDN\x10\
+    \x04\x12\x1b\n\x17JPJAJPOGCJJ_ANAIJLLOOHF\x10\x05\x12\x1b\n\x17JPJAJPOGC\
+    JJ_AILKHMPHLEP\x10\x06\x12\x1b\n\x17JPJAJPOGCJJ_HIGMNPCOONG\x10\x07b\x06\
     proto3\
 ";
 

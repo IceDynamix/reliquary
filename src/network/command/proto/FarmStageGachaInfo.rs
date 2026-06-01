@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FarmStageGachaInfo {
     // message fields
-    // @@protoc_insertion_point(field:FarmStageGachaInfo.begin_time)
-    pub begin_time: i64,
     // @@protoc_insertion_point(field:FarmStageGachaInfo.gacha_id)
     pub gacha_id: u32,
+    // @@protoc_insertion_point(field:FarmStageGachaInfo.begin_time)
+    pub begin_time: i64,
     // @@protoc_insertion_point(field:FarmStageGachaInfo.end_time)
     pub end_time: i64,
     // special fields
@@ -54,14 +54,14 @@ impl FarmStageGachaInfo {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "begin_time",
-            |m: &FarmStageGachaInfo| { &m.begin_time },
-            |m: &mut FarmStageGachaInfo| { &mut m.begin_time },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "gacha_id",
             |m: &FarmStageGachaInfo| { &m.gacha_id },
             |m: &mut FarmStageGachaInfo| { &mut m.gacha_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "begin_time",
+            |m: &FarmStageGachaInfo| { &m.begin_time },
+            |m: &mut FarmStageGachaInfo| { &mut m.begin_time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "end_time",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for FarmStageGachaInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.begin_time = is.read_int64()?;
-                },
                 32 => {
                     self.gacha_id = is.read_uint32()?;
                 },
-                88 => {
+                64 => {
+                    self.begin_time = is.read_int64()?;
+                },
+                48 => {
                     self.end_time = is.read_int64()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for FarmStageGachaInfo {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.begin_time != 0 {
-            my_size += ::protobuf::rt::int64_size(8, self.begin_time);
-        }
         if self.gacha_id != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.gacha_id);
         }
+        if self.begin_time != 0 {
+            my_size += ::protobuf::rt::int64_size(8, self.begin_time);
+        }
         if self.end_time != 0 {
-            my_size += ::protobuf::rt::int64_size(11, self.end_time);
+            my_size += ::protobuf::rt::int64_size(6, self.end_time);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for FarmStageGachaInfo {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.begin_time != 0 {
-            os.write_int64(8, self.begin_time)?;
-        }
         if self.gacha_id != 0 {
             os.write_uint32(4, self.gacha_id)?;
         }
+        if self.begin_time != 0 {
+            os.write_int64(8, self.begin_time)?;
+        }
         if self.end_time != 0 {
-            os.write_int64(11, self.end_time)?;
+            os.write_int64(6, self.end_time)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for FarmStageGachaInfo {
     }
 
     fn clear(&mut self) {
-        self.begin_time = 0;
         self.gacha_id = 0;
+        self.begin_time = 0;
         self.end_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FarmStageGachaInfo {
         static instance: FarmStageGachaInfo = FarmStageGachaInfo {
-            begin_time: 0,
             gacha_id: 0,
+            begin_time: 0,
             end_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for FarmStageGachaInfo {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18FarmStageGachaInfo.proto\"i\n\x12FarmStageGachaInfo\x12\x1d\n\nbeg\
-    in_time\x18\x08\x20\x01(\x03R\tbeginTime\x12\x19\n\x08gacha_id\x18\x04\
-    \x20\x01(\rR\x07gachaId\x12\x19\n\x08end_time\x18\x0b\x20\x01(\x03R\x07e\
-    ndTimeb\x06proto3\
+    \n\x18FarmStageGachaInfo.proto\"i\n\x12FarmStageGachaInfo\x12\x19\n\x08g\
+    acha_id\x18\x04\x20\x01(\rR\x07gachaId\x12\x1d\n\nbegin_time\x18\x08\x20\
+    \x01(\x03R\tbeginTime\x12\x19\n\x08end_time\x18\x06\x20\x01(\x03R\x07end\
+    Timeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

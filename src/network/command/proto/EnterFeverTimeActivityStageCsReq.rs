@@ -29,13 +29,13 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct EnterFeverTimeActivityStageCsReq {
     // message fields
     // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.avatar_list)
-    pub avatar_list: ::std::vec::Vec<super::HAJAOGGPCJC::HAJAOGGPCJC>,
-    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.GDBOODKLBMK)
-    pub GDBOODKLBMK: u32,
+    pub avatar_list: ::std::vec::Vec<super::KPNHGDGLICN::KPNHGDGLICN>,
+    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.CJHDABDKGHP)
+    pub CJHDABDKGHP: u32,
     // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.id)
     pub id: u32,
-    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.MBNNAGEIAAH)
-    pub MBNNAGEIAAH: u32,
+    // @@protoc_insertion_point(field:EnterFeverTimeActivityStageCsReq.MFLAIMHFABP)
+    pub MFLAIMHFABP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:EnterFeverTimeActivityStageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,9 +61,9 @@ impl EnterFeverTimeActivityStageCsReq {
             |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.avatar_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GDBOODKLBMK",
-            |m: &EnterFeverTimeActivityStageCsReq| { &m.GDBOODKLBMK },
-            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.GDBOODKLBMK },
+            "CJHDABDKGHP",
+            |m: &EnterFeverTimeActivityStageCsReq| { &m.CJHDABDKGHP },
+            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.CJHDABDKGHP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "id",
@@ -71,9 +71,9 @@ impl EnterFeverTimeActivityStageCsReq {
             |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MBNNAGEIAAH",
-            |m: &EnterFeverTimeActivityStageCsReq| { &m.MBNNAGEIAAH },
-            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.MBNNAGEIAAH },
+            "MFLAIMHFABP",
+            |m: &EnterFeverTimeActivityStageCsReq| { &m.MFLAIMHFABP },
+            |m: &mut EnterFeverTimeActivityStageCsReq| { &mut m.MFLAIMHFABP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<EnterFeverTimeActivityStageCsReq>(
             "EnterFeverTimeActivityStageCsReq",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
+                122 => {
                     self.avatar_list.push(is.read_message()?);
                 },
-                104 => {
-                    self.GDBOODKLBMK = is.read_uint32()?;
+                88 => {
+                    self.CJHDABDKGHP = is.read_uint32()?;
                 },
-                64 => {
+                48 => {
                     self.id = is.read_uint32()?;
                 },
-                40 => {
-                    self.MBNNAGEIAAH = is.read_uint32()?;
+                8 => {
+                    self.MFLAIMHFABP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -121,14 +121,14 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.GDBOODKLBMK != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.GDBOODKLBMK);
+        if self.CJHDABDKGHP != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CJHDABDKGHP);
         }
         if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.id);
+            my_size += ::protobuf::rt::uint32_size(6, self.id);
         }
-        if self.MBNNAGEIAAH != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.MBNNAGEIAAH);
+        if self.MFLAIMHFABP != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.MFLAIMHFABP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -137,16 +137,16 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         for v in &self.avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         };
-        if self.GDBOODKLBMK != 0 {
-            os.write_uint32(13, self.GDBOODKLBMK)?;
+        if self.CJHDABDKGHP != 0 {
+            os.write_uint32(11, self.CJHDABDKGHP)?;
         }
         if self.id != 0 {
-            os.write_uint32(8, self.id)?;
+            os.write_uint32(6, self.id)?;
         }
-        if self.MBNNAGEIAAH != 0 {
-            os.write_uint32(5, self.MBNNAGEIAAH)?;
+        if self.MFLAIMHFABP != 0 {
+            os.write_uint32(1, self.MFLAIMHFABP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,18 +166,18 @@ impl ::protobuf::Message for EnterFeverTimeActivityStageCsReq {
 
     fn clear(&mut self) {
         self.avatar_list.clear();
-        self.GDBOODKLBMK = 0;
+        self.CJHDABDKGHP = 0;
         self.id = 0;
-        self.MBNNAGEIAAH = 0;
+        self.MFLAIMHFABP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static EnterFeverTimeActivityStageCsReq {
         static instance: EnterFeverTimeActivityStageCsReq = EnterFeverTimeActivityStageCsReq {
             avatar_list: ::std::vec::Vec::new(),
-            GDBOODKLBMK: 0,
+            CJHDABDKGHP: 0,
             id: 0,
-            MBNNAGEIAAH: 0,
+            MFLAIMHFABP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,11 +202,11 @@ impl ::protobuf::reflect::ProtobufValue for EnterFeverTimeActivityStageCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&EnterFeverTimeActivityStageCsReq.proto\x1a\x11HAJAOGGPCJC.proto\"\xa5\
-    \x01\n\x20EnterFeverTimeActivityStageCsReq\x12-\n\x0bavatar_list\x18\x01\
-    \x20\x03(\x0b2\x0c.HAJAOGGPCJCR\navatarList\x12\x20\n\x0bGDBOODKLBMK\x18\
-    \r\x20\x01(\rR\x0bGDBOODKLBMK\x12\x0e\n\x02id\x18\x08\x20\x01(\rR\x02id\
-    \x12\x20\n\x0bMBNNAGEIAAH\x18\x05\x20\x01(\rR\x0bMBNNAGEIAAHb\x06proto3\
+    \n&EnterFeverTimeActivityStageCsReq.proto\x1a\x11KPNHGDGLICN.proto\"\xa5\
+    \x01\n\x20EnterFeverTimeActivityStageCsReq\x12-\n\x0bavatar_list\x18\x0f\
+    \x20\x03(\x0b2\x0c.KPNHGDGLICNR\navatarList\x12\x20\n\x0bCJHDABDKGHP\x18\
+    \x0b\x20\x01(\rR\x0bCJHDABDKGHP\x12\x0e\n\x02id\x18\x06\x20\x01(\rR\x02i\
+    d\x12\x20\n\x0bMFLAIMHFABP\x18\x01\x20\x01(\rR\x0bMFLAIMHFABPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -224,7 +224,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::HAJAOGGPCJC::file_descriptor().clone());
+            deps.push(super::KPNHGDGLICN::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(EnterFeverTimeActivityStageCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

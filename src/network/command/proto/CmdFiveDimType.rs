@@ -27,42 +27,42 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFiveDimType)
 pub enum CmdFiveDimType {
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.MKLPGBFEJMO_PCPDHELPKEM)
-    MKLPGBFEJMO_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.CmdGetFiveDimMoneyScRsp)
-    CmdGetFiveDimMoneyScRsp = 2261,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.CmdLeaveFiveDimGameScRsp)
-    CmdLeaveFiveDimGameScRsp = 2258,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.MKLPGBFEJMO_DFILLFNLLAJ)
-    MKLPGBFEJMO_DFILLFNLLAJ = 2253,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.CmdFiveDimJumpEnergyChangeScNotify)
-    CmdFiveDimJumpEnergyChangeScNotify = 2265,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.CmdUpdateFiveDimGameDataScRsp)
-    CmdUpdateFiveDimGameDataScRsp = 2259,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.MKLPGBFEJMO_LKLOBDJINOI)
-    MKLPGBFEJMO_LKLOBDJINOI = 2257,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.CmdFiveDimGameTransferScRsp)
-    CmdFiveDimGameTransferScRsp = 2270,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.MKLPGBFEJMO_CJMDBFOJPIC)
-    MKLPGBFEJMO_CJMDBFOJPIC = 2251,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.MKLPGBFEJMO_HKGHBAHIOMC)
-    MKLPGBFEJMO_HKGHBAHIOMC = 2252,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.MKLPGBFEJMO_FFBHNFPKLMD)
-    MKLPGBFEJMO_FFBHNFPKLMD = 2269,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.CmdFiveDimMoneyChangeScNotify)
-    CmdFiveDimMoneyChangeScNotify = 2272,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.CmdEnterFiveDimGameScRsp)
-    CmdEnterFiveDimGameScRsp = 2264,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.MKLPGBFEJMO_OBOBBDGHCDN)
-    MKLPGBFEJMO_OBOBBDGHCDN = 2268,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.CmdFiveDimGameDataUpdateScNotify)
-    CmdFiveDimGameDataUpdateScNotify = 2275,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.CmdGetFiveDimGameDataScRsp)
-    CmdGetFiveDimGameDataScRsp = 2254,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.MKLPGBFEJMO_IIDCMPNMCHM)
-    MKLPGBFEJMO_IIDCMPNMCHM = 2260,
-    // @@protoc_insertion_point(enum_value:CmdFiveDimType.CmdGetFiveDimMoneyDataScRsp)
-    CmdGetFiveDimMoneyDataScRsp = 2274,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_NLCDGIPGFDJ)
+    EIBEMMGHLPK_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_NDLIALBOAOK)
+    EIBEMMGHLPK_NDLIALBOAOK = 2260,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_NCPKMFDCPBJ)
+    EIBEMMGHLPK_NCPKMFDCPBJ = 2273,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_KGNCJLKKDMA)
+    EIBEMMGHLPK_KGNCJLKKDMA = 2262,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_OFNLNMDEPBL)
+    EIBEMMGHLPK_OFNLNMDEPBL = 2270,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_PEAKGCOFFEK)
+    EIBEMMGHLPK_PEAKGCOFFEK = 2268,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_APBHFHJOHIE)
+    EIBEMMGHLPK_APBHFHJOHIE = 2267,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_AFLACEIIELE)
+    EIBEMMGHLPK_AFLACEIIELE = 2254,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_OPKCFEHKHCL)
+    EIBEMMGHLPK_OPKCFEHKHCL = 2261,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_FMFOAIONMCD)
+    EIBEMMGHLPK_FMFOAIONMCD = 2264,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_FJPHANBHBGG)
+    EIBEMMGHLPK_FJPHANBHBGG = 2257,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_BFMKOFDEBOI)
+    EIBEMMGHLPK_BFMKOFDEBOI = 2275,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_EFFCLNDEDLA)
+    EIBEMMGHLPK_EFFCLNDEDLA = 2253,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_BEPOEEABNFB)
+    EIBEMMGHLPK_BEPOEEABNFB = 2258,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_GKNCIGPOBGA)
+    EIBEMMGHLPK_GKNCIGPOBGA = 2271,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_LLPPMHPDNPO)
+    EIBEMMGHLPK_LLPPMHPDNPO = 2256,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_AHPMEDBLABF)
+    EIBEMMGHLPK_AHPMEDBLABF = 2269,
+    // @@protoc_insertion_point(enum_value:CmdFiveDimType.EIBEMMGHLPK_NCNJCDICNND)
+    EIBEMMGHLPK_NCNJCDICNND = 2252,
 }
 
 impl ::protobuf::Enum for CmdFiveDimType {
@@ -74,71 +74,71 @@ impl ::protobuf::Enum for CmdFiveDimType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFiveDimType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_PCPDHELPKEM),
-            2261 => ::std::option::Option::Some(CmdFiveDimType::CmdGetFiveDimMoneyScRsp),
-            2258 => ::std::option::Option::Some(CmdFiveDimType::CmdLeaveFiveDimGameScRsp),
-            2253 => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_DFILLFNLLAJ),
-            2265 => ::std::option::Option::Some(CmdFiveDimType::CmdFiveDimJumpEnergyChangeScNotify),
-            2259 => ::std::option::Option::Some(CmdFiveDimType::CmdUpdateFiveDimGameDataScRsp),
-            2257 => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_LKLOBDJINOI),
-            2270 => ::std::option::Option::Some(CmdFiveDimType::CmdFiveDimGameTransferScRsp),
-            2251 => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_CJMDBFOJPIC),
-            2252 => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_HKGHBAHIOMC),
-            2269 => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_FFBHNFPKLMD),
-            2272 => ::std::option::Option::Some(CmdFiveDimType::CmdFiveDimMoneyChangeScNotify),
-            2264 => ::std::option::Option::Some(CmdFiveDimType::CmdEnterFiveDimGameScRsp),
-            2268 => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_OBOBBDGHCDN),
-            2275 => ::std::option::Option::Some(CmdFiveDimType::CmdFiveDimGameDataUpdateScNotify),
-            2254 => ::std::option::Option::Some(CmdFiveDimType::CmdGetFiveDimGameDataScRsp),
-            2260 => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_IIDCMPNMCHM),
-            2274 => ::std::option::Option::Some(CmdFiveDimType::CmdGetFiveDimMoneyDataScRsp),
+            0 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_NLCDGIPGFDJ),
+            2260 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_NDLIALBOAOK),
+            2273 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_NCPKMFDCPBJ),
+            2262 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_KGNCJLKKDMA),
+            2270 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_OFNLNMDEPBL),
+            2268 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_PEAKGCOFFEK),
+            2267 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_APBHFHJOHIE),
+            2254 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_AFLACEIIELE),
+            2261 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_OPKCFEHKHCL),
+            2264 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_FMFOAIONMCD),
+            2257 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_FJPHANBHBGG),
+            2275 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_BFMKOFDEBOI),
+            2253 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_EFFCLNDEDLA),
+            2258 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_BEPOEEABNFB),
+            2271 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_GKNCIGPOBGA),
+            2256 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_LLPPMHPDNPO),
+            2269 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_AHPMEDBLABF),
+            2252 => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_NCNJCDICNND),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFiveDimType> {
         match str {
-            "MKLPGBFEJMO_PCPDHELPKEM" => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_PCPDHELPKEM),
-            "CmdGetFiveDimMoneyScRsp" => ::std::option::Option::Some(CmdFiveDimType::CmdGetFiveDimMoneyScRsp),
-            "CmdLeaveFiveDimGameScRsp" => ::std::option::Option::Some(CmdFiveDimType::CmdLeaveFiveDimGameScRsp),
-            "MKLPGBFEJMO_DFILLFNLLAJ" => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_DFILLFNLLAJ),
-            "CmdFiveDimJumpEnergyChangeScNotify" => ::std::option::Option::Some(CmdFiveDimType::CmdFiveDimJumpEnergyChangeScNotify),
-            "CmdUpdateFiveDimGameDataScRsp" => ::std::option::Option::Some(CmdFiveDimType::CmdUpdateFiveDimGameDataScRsp),
-            "MKLPGBFEJMO_LKLOBDJINOI" => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_LKLOBDJINOI),
-            "CmdFiveDimGameTransferScRsp" => ::std::option::Option::Some(CmdFiveDimType::CmdFiveDimGameTransferScRsp),
-            "MKLPGBFEJMO_CJMDBFOJPIC" => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_CJMDBFOJPIC),
-            "MKLPGBFEJMO_HKGHBAHIOMC" => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_HKGHBAHIOMC),
-            "MKLPGBFEJMO_FFBHNFPKLMD" => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_FFBHNFPKLMD),
-            "CmdFiveDimMoneyChangeScNotify" => ::std::option::Option::Some(CmdFiveDimType::CmdFiveDimMoneyChangeScNotify),
-            "CmdEnterFiveDimGameScRsp" => ::std::option::Option::Some(CmdFiveDimType::CmdEnterFiveDimGameScRsp),
-            "MKLPGBFEJMO_OBOBBDGHCDN" => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_OBOBBDGHCDN),
-            "CmdFiveDimGameDataUpdateScNotify" => ::std::option::Option::Some(CmdFiveDimType::CmdFiveDimGameDataUpdateScNotify),
-            "CmdGetFiveDimGameDataScRsp" => ::std::option::Option::Some(CmdFiveDimType::CmdGetFiveDimGameDataScRsp),
-            "MKLPGBFEJMO_IIDCMPNMCHM" => ::std::option::Option::Some(CmdFiveDimType::MKLPGBFEJMO_IIDCMPNMCHM),
-            "CmdGetFiveDimMoneyDataScRsp" => ::std::option::Option::Some(CmdFiveDimType::CmdGetFiveDimMoneyDataScRsp),
+            "EIBEMMGHLPK_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_NLCDGIPGFDJ),
+            "EIBEMMGHLPK_NDLIALBOAOK" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_NDLIALBOAOK),
+            "EIBEMMGHLPK_NCPKMFDCPBJ" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_NCPKMFDCPBJ),
+            "EIBEMMGHLPK_KGNCJLKKDMA" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_KGNCJLKKDMA),
+            "EIBEMMGHLPK_OFNLNMDEPBL" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_OFNLNMDEPBL),
+            "EIBEMMGHLPK_PEAKGCOFFEK" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_PEAKGCOFFEK),
+            "EIBEMMGHLPK_APBHFHJOHIE" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_APBHFHJOHIE),
+            "EIBEMMGHLPK_AFLACEIIELE" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_AFLACEIIELE),
+            "EIBEMMGHLPK_OPKCFEHKHCL" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_OPKCFEHKHCL),
+            "EIBEMMGHLPK_FMFOAIONMCD" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_FMFOAIONMCD),
+            "EIBEMMGHLPK_FJPHANBHBGG" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_FJPHANBHBGG),
+            "EIBEMMGHLPK_BFMKOFDEBOI" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_BFMKOFDEBOI),
+            "EIBEMMGHLPK_EFFCLNDEDLA" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_EFFCLNDEDLA),
+            "EIBEMMGHLPK_BEPOEEABNFB" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_BEPOEEABNFB),
+            "EIBEMMGHLPK_GKNCIGPOBGA" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_GKNCIGPOBGA),
+            "EIBEMMGHLPK_LLPPMHPDNPO" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_LLPPMHPDNPO),
+            "EIBEMMGHLPK_AHPMEDBLABF" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_AHPMEDBLABF),
+            "EIBEMMGHLPK_NCNJCDICNND" => ::std::option::Option::Some(CmdFiveDimType::EIBEMMGHLPK_NCNJCDICNND),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFiveDimType] = &[
-        CmdFiveDimType::MKLPGBFEJMO_PCPDHELPKEM,
-        CmdFiveDimType::CmdGetFiveDimMoneyScRsp,
-        CmdFiveDimType::CmdLeaveFiveDimGameScRsp,
-        CmdFiveDimType::MKLPGBFEJMO_DFILLFNLLAJ,
-        CmdFiveDimType::CmdFiveDimJumpEnergyChangeScNotify,
-        CmdFiveDimType::CmdUpdateFiveDimGameDataScRsp,
-        CmdFiveDimType::MKLPGBFEJMO_LKLOBDJINOI,
-        CmdFiveDimType::CmdFiveDimGameTransferScRsp,
-        CmdFiveDimType::MKLPGBFEJMO_CJMDBFOJPIC,
-        CmdFiveDimType::MKLPGBFEJMO_HKGHBAHIOMC,
-        CmdFiveDimType::MKLPGBFEJMO_FFBHNFPKLMD,
-        CmdFiveDimType::CmdFiveDimMoneyChangeScNotify,
-        CmdFiveDimType::CmdEnterFiveDimGameScRsp,
-        CmdFiveDimType::MKLPGBFEJMO_OBOBBDGHCDN,
-        CmdFiveDimType::CmdFiveDimGameDataUpdateScNotify,
-        CmdFiveDimType::CmdGetFiveDimGameDataScRsp,
-        CmdFiveDimType::MKLPGBFEJMO_IIDCMPNMCHM,
-        CmdFiveDimType::CmdGetFiveDimMoneyDataScRsp,
+        CmdFiveDimType::EIBEMMGHLPK_NLCDGIPGFDJ,
+        CmdFiveDimType::EIBEMMGHLPK_NDLIALBOAOK,
+        CmdFiveDimType::EIBEMMGHLPK_NCPKMFDCPBJ,
+        CmdFiveDimType::EIBEMMGHLPK_KGNCJLKKDMA,
+        CmdFiveDimType::EIBEMMGHLPK_OFNLNMDEPBL,
+        CmdFiveDimType::EIBEMMGHLPK_PEAKGCOFFEK,
+        CmdFiveDimType::EIBEMMGHLPK_APBHFHJOHIE,
+        CmdFiveDimType::EIBEMMGHLPK_AFLACEIIELE,
+        CmdFiveDimType::EIBEMMGHLPK_OPKCFEHKHCL,
+        CmdFiveDimType::EIBEMMGHLPK_FMFOAIONMCD,
+        CmdFiveDimType::EIBEMMGHLPK_FJPHANBHBGG,
+        CmdFiveDimType::EIBEMMGHLPK_BFMKOFDEBOI,
+        CmdFiveDimType::EIBEMMGHLPK_EFFCLNDEDLA,
+        CmdFiveDimType::EIBEMMGHLPK_BEPOEEABNFB,
+        CmdFiveDimType::EIBEMMGHLPK_GKNCIGPOBGA,
+        CmdFiveDimType::EIBEMMGHLPK_LLPPMHPDNPO,
+        CmdFiveDimType::EIBEMMGHLPK_AHPMEDBLABF,
+        CmdFiveDimType::EIBEMMGHLPK_NCNJCDICNND,
     ];
 }
 
@@ -150,24 +150,24 @@ impl ::protobuf::EnumFull for CmdFiveDimType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFiveDimType::MKLPGBFEJMO_PCPDHELPKEM => 0,
-            CmdFiveDimType::CmdGetFiveDimMoneyScRsp => 1,
-            CmdFiveDimType::CmdLeaveFiveDimGameScRsp => 2,
-            CmdFiveDimType::MKLPGBFEJMO_DFILLFNLLAJ => 3,
-            CmdFiveDimType::CmdFiveDimJumpEnergyChangeScNotify => 4,
-            CmdFiveDimType::CmdUpdateFiveDimGameDataScRsp => 5,
-            CmdFiveDimType::MKLPGBFEJMO_LKLOBDJINOI => 6,
-            CmdFiveDimType::CmdFiveDimGameTransferScRsp => 7,
-            CmdFiveDimType::MKLPGBFEJMO_CJMDBFOJPIC => 8,
-            CmdFiveDimType::MKLPGBFEJMO_HKGHBAHIOMC => 9,
-            CmdFiveDimType::MKLPGBFEJMO_FFBHNFPKLMD => 10,
-            CmdFiveDimType::CmdFiveDimMoneyChangeScNotify => 11,
-            CmdFiveDimType::CmdEnterFiveDimGameScRsp => 12,
-            CmdFiveDimType::MKLPGBFEJMO_OBOBBDGHCDN => 13,
-            CmdFiveDimType::CmdFiveDimGameDataUpdateScNotify => 14,
-            CmdFiveDimType::CmdGetFiveDimGameDataScRsp => 15,
-            CmdFiveDimType::MKLPGBFEJMO_IIDCMPNMCHM => 16,
-            CmdFiveDimType::CmdGetFiveDimMoneyDataScRsp => 17,
+            CmdFiveDimType::EIBEMMGHLPK_NLCDGIPGFDJ => 0,
+            CmdFiveDimType::EIBEMMGHLPK_NDLIALBOAOK => 1,
+            CmdFiveDimType::EIBEMMGHLPK_NCPKMFDCPBJ => 2,
+            CmdFiveDimType::EIBEMMGHLPK_KGNCJLKKDMA => 3,
+            CmdFiveDimType::EIBEMMGHLPK_OFNLNMDEPBL => 4,
+            CmdFiveDimType::EIBEMMGHLPK_PEAKGCOFFEK => 5,
+            CmdFiveDimType::EIBEMMGHLPK_APBHFHJOHIE => 6,
+            CmdFiveDimType::EIBEMMGHLPK_AFLACEIIELE => 7,
+            CmdFiveDimType::EIBEMMGHLPK_OPKCFEHKHCL => 8,
+            CmdFiveDimType::EIBEMMGHLPK_FMFOAIONMCD => 9,
+            CmdFiveDimType::EIBEMMGHLPK_FJPHANBHBGG => 10,
+            CmdFiveDimType::EIBEMMGHLPK_BFMKOFDEBOI => 11,
+            CmdFiveDimType::EIBEMMGHLPK_EFFCLNDEDLA => 12,
+            CmdFiveDimType::EIBEMMGHLPK_BEPOEEABNFB => 13,
+            CmdFiveDimType::EIBEMMGHLPK_GKNCIGPOBGA => 14,
+            CmdFiveDimType::EIBEMMGHLPK_LLPPMHPDNPO => 15,
+            CmdFiveDimType::EIBEMMGHLPK_AHPMEDBLABF => 16,
+            CmdFiveDimType::EIBEMMGHLPK_NCNJCDICNND => 17,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -175,7 +175,7 @@ impl ::protobuf::EnumFull for CmdFiveDimType {
 
 impl ::std::default::Default for CmdFiveDimType {
     fn default() -> Self {
-        CmdFiveDimType::MKLPGBFEJMO_PCPDHELPKEM
+        CmdFiveDimType::EIBEMMGHLPK_NLCDGIPGFDJ
     }
 }
 
@@ -186,20 +186,20 @@ impl CmdFiveDimType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x14CmdFiveDimType.proto*\xd8\x04\n\x0eCmdFiveDimType\x12\x1b\n\x17MKL\
-    PGBFEJMO_PCPDHELPKEM\x10\0\x12\x1c\n\x17CmdGetFiveDimMoneyScRsp\x10\xd5\
-    \x11\x12\x1d\n\x18CmdLeaveFiveDimGameScRsp\x10\xd2\x11\x12\x1c\n\x17MKLP\
-    GBFEJMO_DFILLFNLLAJ\x10\xcd\x11\x12'\n\"CmdFiveDimJumpEnergyChangeScNoti\
-    fy\x10\xd9\x11\x12\"\n\x1dCmdUpdateFiveDimGameDataScRsp\x10\xd3\x11\x12\
-    \x1c\n\x17MKLPGBFEJMO_LKLOBDJINOI\x10\xd1\x11\x12\x20\n\x1bCmdFiveDimGam\
-    eTransferScRsp\x10\xde\x11\x12\x1c\n\x17MKLPGBFEJMO_CJMDBFOJPIC\x10\xcb\
-    \x11\x12\x1c\n\x17MKLPGBFEJMO_HKGHBAHIOMC\x10\xcc\x11\x12\x1c\n\x17MKLPG\
-    BFEJMO_FFBHNFPKLMD\x10\xdd\x11\x12\"\n\x1dCmdFiveDimMoneyChangeScNotify\
-    \x10\xe0\x11\x12\x1d\n\x18CmdEnterFiveDimGameScRsp\x10\xd8\x11\x12\x1c\n\
-    \x17MKLPGBFEJMO_OBOBBDGHCDN\x10\xdc\x11\x12%\n\x20CmdFiveDimGameDataUpda\
-    teScNotify\x10\xe3\x11\x12\x1f\n\x1aCmdGetFiveDimGameDataScRsp\x10\xce\
-    \x11\x12\x1c\n\x17MKLPGBFEJMO_IIDCMPNMCHM\x10\xd4\x11\x12\x20\n\x1bCmdGe\
-    tFiveDimMoneyDataScRsp\x10\xe2\x11b\x06proto3\
+    \n\x14CmdFiveDimType.proto*\xab\x04\n\x0eCmdFiveDimType\x12\x1b\n\x17EIB\
+    EMMGHLPK_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17EIBEMMGHLPK_NDLIALBOAOK\x10\xd4\
+    \x11\x12\x1c\n\x17EIBEMMGHLPK_NCPKMFDCPBJ\x10\xe1\x11\x12\x1c\n\x17EIBEM\
+    MGHLPK_KGNCJLKKDMA\x10\xd6\x11\x12\x1c\n\x17EIBEMMGHLPK_OFNLNMDEPBL\x10\
+    \xde\x11\x12\x1c\n\x17EIBEMMGHLPK_PEAKGCOFFEK\x10\xdc\x11\x12\x1c\n\x17E\
+    IBEMMGHLPK_APBHFHJOHIE\x10\xdb\x11\x12\x1c\n\x17EIBEMMGHLPK_AFLACEIIELE\
+    \x10\xce\x11\x12\x1c\n\x17EIBEMMGHLPK_OPKCFEHKHCL\x10\xd5\x11\x12\x1c\n\
+    \x17EIBEMMGHLPK_FMFOAIONMCD\x10\xd8\x11\x12\x1c\n\x17EIBEMMGHLPK_FJPHANB\
+    HBGG\x10\xd1\x11\x12\x1c\n\x17EIBEMMGHLPK_BFMKOFDEBOI\x10\xe3\x11\x12\
+    \x1c\n\x17EIBEMMGHLPK_EFFCLNDEDLA\x10\xcd\x11\x12\x1c\n\x17EIBEMMGHLPK_B\
+    EPOEEABNFB\x10\xd2\x11\x12\x1c\n\x17EIBEMMGHLPK_GKNCIGPOBGA\x10\xdf\x11\
+    \x12\x1c\n\x17EIBEMMGHLPK_LLPPMHPDNPO\x10\xd0\x11\x12\x1c\n\x17EIBEMMGHL\
+    PK_AHPMEDBLABF\x10\xdd\x11\x12\x1c\n\x17EIBEMMGHLPK_NCNJCDICNND\x10\xcc\
+    \x11b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

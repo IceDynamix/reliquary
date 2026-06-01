@@ -29,7 +29,7 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct RaidCollectionEnterNextRaidScRsp {
     // message fields
     // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidScRsp.scene)
-    pub scene: ::protobuf::MessageField<super::FNJJCIGJIKC::FNJJCIGJIKC>,
+    pub scene: ::protobuf::MessageField<super::GEGLJDELBHA::GEGLJDELBHA>,
     // @@protoc_insertion_point(field:RaidCollectionEnterNextRaidScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -51,7 +51,7 @@ impl RaidCollectionEnterNextRaidScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FNJJCIGJIKC::FNJJCIGJIKC>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GEGLJDELBHA::GEGLJDELBHA>(
             "scene",
             |m: &RaidCollectionEnterNextRaidScRsp| { &m.scene },
             |m: &mut RaidCollectionEnterNextRaidScRsp| { &mut m.scene },
@@ -79,10 +79,10 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                98 => {
+                106 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.scene)?;
                 },
-                8 => {
+                88 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -102,7 +102,7 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidScRsp {
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -111,10 +111,10 @@ impl ::protobuf::Message for RaidCollectionEnterNextRaidScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.scene.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
+            os.write_uint32(11, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for RaidCollectionEnterNextRaidScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n&RaidCollectionEnterNextRaidScRsp.proto\x1a\x11FNJJCIGJIKC.proto\"`\n\
-    \x20RaidCollectionEnterNextRaidScRsp\x12\"\n\x05scene\x18\x0c\x20\x01(\
-    \x0b2\x0c.FNJJCIGJIKCR\x05scene\x12\x18\n\x07retcode\x18\x01\x20\x01(\rR\
-    \x07retcodeb\x06proto3\
+    \n&RaidCollectionEnterNextRaidScRsp.proto\x1a\x11GEGLJDELBHA.proto\"`\n\
+    \x20RaidCollectionEnterNextRaidScRsp\x12\"\n\x05scene\x18\r\x20\x01(\x0b\
+    2\x0c.GEGLJDELBHAR\x05scene\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07\
+    retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::FNJJCIGJIKC::file_descriptor().clone());
+            deps.push(super::GEGLJDELBHA::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RaidCollectionEnterNextRaidScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

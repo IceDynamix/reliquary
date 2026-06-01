@@ -27,124 +27,124 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdFriendType)
 pub enum CmdFriendType {
-    // @@protoc_insertion_point(enum_value:CmdFriendType.GEGHIEHNEEP_PCPDHELPKEM)
-    GEGHIEHNEEP_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendApplyListInfoScRsp)
-    CmdGetFriendApplyListInfoScRsp = 2918,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncHandleFriendScNotify)
-    CmdSyncHandleFriendScNotify = 2901,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlatformPlayerInfoScRsp)
-    CmdGetPlatformPlayerInfoScRsp = 2949,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendRecommendListInfoScRsp)
-    CmdGetFriendRecommendListInfoScRsp = 2961,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendRecommendLineupDetailCsReq)
-    CmdGetFriendRecommendLineupDetailCsReq = 2952,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistListCsReq)
-    CmdGetAssistListCsReq = 2928,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdTakeAssistRewardScRsp)
-    CmdTakeAssistRewardScRsp = 2920,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdABNLKIDDIOK)
-    CmdABNLKIDDIOK = 3000,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteFriendCsReq)
-    CmdDeleteFriendCsReq = 2974,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistListScRsp)
-    CmdGetAssistListScRsp = 2965,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdReportPlayerCsReq)
-    CmdReportPlayerCsReq = 2944,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlayerDetailInfoCsReq)
-    CmdGetPlayerDetailInfoCsReq = 2994,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendDevelopmentInfoCsReq)
-    CmdGetFriendDevelopmentInfoCsReq = 2977,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendApplyListInfoCsReq)
-    CmdGetFriendApplyListInfoCsReq = 2914,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendRecommendLineupScRsp)
-    CmdGetFriendRecommendLineupScRsp = 2988,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetCurAssistScRsp)
-    CmdGetCurAssistScRsp = 2917,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetFriendMarkCsReq)
-    CmdSetFriendMarkCsReq = 2971,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlatformPlayerInfoCsReq)
-    CmdGetPlatformPlayerInfoCsReq = 2902,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdAddBlacklistCsReq)
-    CmdAddBlacklistCsReq = 2938,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendRecommendLineupCsReq)
-    CmdGetFriendRecommendLineupCsReq = 2906,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendLoginInfoCsReq)
-    CmdGetFriendLoginInfoCsReq = 2966,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetFriendRemarkNameCsReq)
-    CmdSetFriendRemarkNameCsReq = 2907,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdCurAssistChangedNotify)
-    CmdCurAssistChangedNotify = 2993,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendListInfoCsReq)
-    CmdGetFriendListInfoCsReq = 2991,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistHistoryScRsp)
-    CmdGetAssistHistoryScRsp = 2925,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncDeleteFriendScNotify)
-    CmdSyncDeleteFriendScNotify = 2904,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendBattleRecordDetailScRsp)
-    CmdGetFriendBattleRecordDetailScRsp = 2912,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncAddBlacklistScNotify)
-    CmdSyncAddBlacklistScNotify = 2932,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetFriendMarkScRsp)
-    CmdSetFriendMarkScRsp = 2936,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdTakeAssistRewardCsReq)
-    CmdTakeAssistRewardCsReq = 2979,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteFriendScRsp)
-    CmdDeleteFriendScRsp = 2937,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdApplyFriendScRsp)
-    CmdApplyFriendScRsp = 2998,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSearchPlayerCsReq)
-    CmdSearchPlayerCsReq = 2957,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetAssistCsReq)
-    CmdSetAssistCsReq = 2973,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSyncApplyFriendScNotify)
-    CmdSyncApplyFriendScNotify = 2963,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendAssistListCsReq)
-    CmdGetFriendAssistListCsReq = 2903,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdHandleFriendScRsp)
-    CmdHandleFriendScRsp = 2939,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteBlacklistScRsp)
-    CmdDeleteBlacklistScRsp = 2996,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendBattleRecordDetailCsReq)
-    CmdGetFriendBattleRecordDetailCsReq = 2929,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendAssistListScRsp)
-    CmdGetFriendAssistListScRsp = 2992,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdDeleteBlacklistCsReq)
-    CmdDeleteBlacklistCsReq = 2989,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdApplyFriendCsReq)
-    CmdApplyFriendCsReq = 2909,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendRecommendLineupDetailScRsp)
-    CmdGetFriendRecommendLineupDetailScRsp = 2990,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetAllowOtherApplyFriendCsReq)
-    CmdSetAllowOtherApplyFriendCsReq = 2911,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdHandleFriendCsReq)
-    CmdHandleFriendCsReq = 2926,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetCurAssistCsReq)
-    CmdGetCurAssistCsReq = 2908,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendListInfoScRsp)
-    CmdGetFriendListInfoScRsp = 2910,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetFriendRemarkNameScRsp)
-    CmdSetFriendRemarkNameScRsp = 2958,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetAssistHistoryCsReq)
-    CmdGetAssistHistoryCsReq = 2951,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetForbidOtherApplyFriendScRsp)
-    CmdSetForbidOtherApplyFriendScRsp = 2930,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetPlayerDetailInfoScRsp)
-    CmdGetPlayerDetailInfoScRsp = 2995,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendDevelopmentInfoScRsp)
-    CmdGetFriendDevelopmentInfoScRsp = 2916,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdAddBlacklistScRsp)
-    CmdAddBlacklistScRsp = 2972,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendRecommendListInfoCsReq)
-    CmdGetFriendRecommendListInfoCsReq = 2933,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdGetFriendLoginInfoScRsp)
-    CmdGetFriendLoginInfoScRsp = 2905,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSetAssistScRsp)
-    CmdSetAssistScRsp = 2953,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdSearchPlayerScRsp)
-    CmdSearchPlayerScRsp = 2921,
-    // @@protoc_insertion_point(enum_value:CmdFriendType.CmdNewAssistHistoryNotify)
-    CmdNewAssistHistoryNotify = 2954,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_NLCDGIPGFDJ)
+    MGDHKHBKDDG_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_PPFIDCLIHMD)
+    MGDHKHBKDDG_PPFIDCLIHMD = 2932,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_KDPDAOJNAJP)
+    MGDHKHBKDDG_KDPDAOJNAJP = 2959,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_KBKGHNCBLCF)
+    MGDHKHBKDDG_KBKGHNCBLCF = 2985,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_FNMNFKNAHIE)
+    MGDHKHBKDDG_FNMNFKNAHIE = 2935,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_EPOOAHJGAPF)
+    MGDHKHBKDDG_EPOOAHJGAPF = 2988,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_FEHDAKLPDBO)
+    MGDHKHBKDDG_FEHDAKLPDBO = 3000,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_AOGJHKAJDBN)
+    MGDHKHBKDDG_AOGJHKAJDBN = 2930,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_JFCPNIBEGEL)
+    MGDHKHBKDDG_JFCPNIBEGEL = 2916,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_PAGJIFMABED)
+    MGDHKHBKDDG_PAGJIFMABED = 2913,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_FKKHIMBLBCA)
+    MGDHKHBKDDG_FKKHIMBLBCA = 2936,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_JLHNNKPFGHI)
+    MGDHKHBKDDG_JLHNNKPFGHI = 2992,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_ADDHICIPCPJ)
+    MGDHKHBKDDG_ADDHICIPCPJ = 2961,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_LAPCBMNLLAJ)
+    MGDHKHBKDDG_LAPCBMNLLAJ = 2966,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_BFLGHKHLIBD)
+    MGDHKHBKDDG_BFLGHKHLIBD = 2926,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_JEOGJMKGINI)
+    MGDHKHBKDDG_JEOGJMKGINI = 2949,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_CBNIKODOPAH)
+    MGDHKHBKDDG_CBNIKODOPAH = 2937,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_LBJKDABKCAC)
+    MGDHKHBKDDG_LBJKDABKCAC = 2954,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_DPOMKJGPGOA)
+    MGDHKHBKDDG_DPOMKJGPGOA = 2903,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_IGFMFCFBIEA)
+    MGDHKHBKDDG_IGFMFCFBIEA = 2974,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_FNKPKFCNDNM)
+    MGDHKHBKDDG_FNKPKFCNDNM = 2906,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_EJAKFIAICJD)
+    MGDHKHBKDDG_EJAKFIAICJD = 2983,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_PIDNIFCOHPL)
+    MGDHKHBKDDG_PIDNIFCOHPL = 2976,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_HPALFLJOPIA)
+    MGDHKHBKDDG_HPALFLJOPIA = 2912,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_BOBEBFMFNPE)
+    MGDHKHBKDDG_BOBEBFMFNPE = 2953,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_BBAHAINPPGN)
+    MGDHKHBKDDG_BBAHAINPPGN = 2948,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_DOALBCCOOMA)
+    MGDHKHBKDDG_DOALBCCOOMA = 2920,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_ABBHAMIONCJ)
+    MGDHKHBKDDG_ABBHAMIONCJ = 2939,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_FBPNLMIEBAO)
+    MGDHKHBKDDG_FBPNLMIEBAO = 2909,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_HAONHNJPPHO)
+    MGDHKHBKDDG_HAONHNJPPHO = 2973,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_MJGEIGCCACO)
+    MGDHKHBKDDG_MJGEIGCCACO = 2928,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_BIKAKPHLJJF)
+    MGDHKHBKDDG_BIKAKPHLJJF = 2929,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_PBMGMNKFEFN)
+    MGDHKHBKDDG_PBMGMNKFEFN = 2982,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_JNFFKMIDDEL)
+    MGDHKHBKDDG_JNFFKMIDDEL = 2971,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_GCPPDCPKNGL)
+    MGDHKHBKDDG_GCPPDCPKNGL = 2991,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_OLHGEGOGMNH)
+    MGDHKHBKDDG_OLHGEGOGMNH = 2942,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_GOBOBNNKHLB)
+    MGDHKHBKDDG_GOBOBNNKHLB = 2999,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_IIIEFFJGEMG)
+    MGDHKHBKDDG_IIIEFFJGEMG = 2915,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_JNEDPPGFBFK)
+    MGDHKHBKDDG_JNEDPPGFBFK = 2924,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_GDDJANBBFOE)
+    MGDHKHBKDDG_GDDJANBBFOE = 2963,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_AKADDIDOLDF)
+    MGDHKHBKDDG_AKADDIDOLDF = 2993,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_FIGEAOCBNEF)
+    MGDHKHBKDDG_FIGEAOCBNEF = 2987,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_PMJNLHJILGP)
+    MGDHKHBKDDG_PMJNLHJILGP = 2952,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_EEAENAGLCOD)
+    MGDHKHBKDDG_EEAENAGLCOD = 2938,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_CPCBFMHCMPJ)
+    MGDHKHBKDDG_CPCBFMHCMPJ = 2958,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_CDKMBIMEPIK)
+    MGDHKHBKDDG_CDKMBIMEPIK = 2996,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_BHNEEJDGEIA)
+    MGDHKHBKDDG_BHNEEJDGEIA = 2917,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_IBFMBALHAMI)
+    MGDHKHBKDDG_IBFMBALHAMI = 2978,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_MJCIBGGEPBO)
+    MGDHKHBKDDG_MJCIBGGEPBO = 2901,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_FNDCLPDANCK)
+    MGDHKHBKDDG_FNDCLPDANCK = 2967,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_HIEHJGONJDP)
+    MGDHKHBKDDG_HIEHJGONJDP = 2927,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_CPLEJPIKEJD)
+    MGDHKHBKDDG_CPLEJPIKEJD = 2905,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_NJFDMEJAHAK)
+    MGDHKHBKDDG_NJFDMEJAHAK = 2943,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_HLMKAGNMMLN)
+    MGDHKHBKDDG_HLMKAGNMMLN = 2910,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_GAHGIDFPFIC)
+    MGDHKHBKDDG_GAHGIDFPFIC = 2981,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_AMHBMGGFPBH)
+    MGDHKHBKDDG_AMHBMGGFPBH = 2980,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_JGCJBOCHLDP)
+    MGDHKHBKDDG_JGCJBOCHLDP = 2923,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_FKLPPFIJAOL)
+    MGDHKHBKDDG_FKLPPFIJAOL = 2934,
+    // @@protoc_insertion_point(enum_value:CmdFriendType.MGDHKHBKDDG_ACOEGHLGEKD)
+    MGDHKHBKDDG_ACOEGHLGEKD = 2914,
 }
 
 impl ::protobuf::Enum for CmdFriendType {
@@ -156,194 +156,194 @@ impl ::protobuf::Enum for CmdFriendType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdFriendType> {
         match value {
-            0 => ::std::option::Option::Some(CmdFriendType::GEGHIEHNEEP_PCPDHELPKEM),
-            2918 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoScRsp),
-            2901 => ::std::option::Option::Some(CmdFriendType::CmdSyncHandleFriendScNotify),
-            2949 => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoScRsp),
-            2961 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoScRsp),
-            2952 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendLineupDetailCsReq),
-            2928 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListCsReq),
-            2920 => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardScRsp),
-            3000 => ::std::option::Option::Some(CmdFriendType::CmdABNLKIDDIOK),
-            2974 => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendCsReq),
-            2965 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListScRsp),
-            2944 => ::std::option::Option::Some(CmdFriendType::CmdReportPlayerCsReq),
-            2994 => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoCsReq),
-            2977 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoCsReq),
-            2914 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoCsReq),
-            2988 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendLineupScRsp),
-            2917 => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistScRsp),
-            2971 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkCsReq),
-            2902 => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoCsReq),
-            2938 => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistCsReq),
-            2906 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendLineupCsReq),
-            2966 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoCsReq),
-            2907 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameCsReq),
-            2993 => ::std::option::Option::Some(CmdFriendType::CmdCurAssistChangedNotify),
-            2991 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoCsReq),
-            2925 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryScRsp),
-            2904 => ::std::option::Option::Some(CmdFriendType::CmdSyncDeleteFriendScNotify),
-            2912 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailScRsp),
-            2932 => ::std::option::Option::Some(CmdFriendType::CmdSyncAddBlacklistScNotify),
-            2936 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkScRsp),
-            2979 => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardCsReq),
-            2937 => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendScRsp),
-            2998 => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendScRsp),
-            2957 => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerCsReq),
-            2973 => ::std::option::Option::Some(CmdFriendType::CmdSetAssistCsReq),
-            2963 => ::std::option::Option::Some(CmdFriendType::CmdSyncApplyFriendScNotify),
-            2903 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListCsReq),
-            2939 => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendScRsp),
-            2996 => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistScRsp),
-            2929 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailCsReq),
-            2992 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListScRsp),
-            2989 => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistCsReq),
-            2909 => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendCsReq),
-            2990 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendLineupDetailScRsp),
-            2911 => ::std::option::Option::Some(CmdFriendType::CmdSetAllowOtherApplyFriendCsReq),
-            2926 => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendCsReq),
-            2908 => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistCsReq),
-            2910 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoScRsp),
-            2958 => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameScRsp),
-            2951 => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryCsReq),
-            2930 => ::std::option::Option::Some(CmdFriendType::CmdSetForbidOtherApplyFriendScRsp),
-            2995 => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoScRsp),
-            2916 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoScRsp),
-            2972 => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistScRsp),
-            2933 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoCsReq),
-            2905 => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoScRsp),
-            2953 => ::std::option::Option::Some(CmdFriendType::CmdSetAssistScRsp),
-            2921 => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerScRsp),
-            2954 => ::std::option::Option::Some(CmdFriendType::CmdNewAssistHistoryNotify),
+            0 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_NLCDGIPGFDJ),
+            2932 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_PPFIDCLIHMD),
+            2959 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_KDPDAOJNAJP),
+            2985 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_KBKGHNCBLCF),
+            2935 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FNMNFKNAHIE),
+            2988 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_EPOOAHJGAPF),
+            3000 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FEHDAKLPDBO),
+            2930 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_AOGJHKAJDBN),
+            2916 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JFCPNIBEGEL),
+            2913 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_PAGJIFMABED),
+            2936 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FKKHIMBLBCA),
+            2992 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JLHNNKPFGHI),
+            2961 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_ADDHICIPCPJ),
+            2966 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_LAPCBMNLLAJ),
+            2926 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_BFLGHKHLIBD),
+            2949 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JEOGJMKGINI),
+            2937 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_CBNIKODOPAH),
+            2954 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_LBJKDABKCAC),
+            2903 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_DPOMKJGPGOA),
+            2974 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_IGFMFCFBIEA),
+            2906 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FNKPKFCNDNM),
+            2983 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_EJAKFIAICJD),
+            2976 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_PIDNIFCOHPL),
+            2912 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_HPALFLJOPIA),
+            2953 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_BOBEBFMFNPE),
+            2948 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_BBAHAINPPGN),
+            2920 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_DOALBCCOOMA),
+            2939 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_ABBHAMIONCJ),
+            2909 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FBPNLMIEBAO),
+            2973 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_HAONHNJPPHO),
+            2928 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_MJGEIGCCACO),
+            2929 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_BIKAKPHLJJF),
+            2982 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_PBMGMNKFEFN),
+            2971 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JNFFKMIDDEL),
+            2991 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_GCPPDCPKNGL),
+            2942 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_OLHGEGOGMNH),
+            2999 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_GOBOBNNKHLB),
+            2915 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_IIIEFFJGEMG),
+            2924 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JNEDPPGFBFK),
+            2963 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_GDDJANBBFOE),
+            2993 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_AKADDIDOLDF),
+            2987 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FIGEAOCBNEF),
+            2952 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_PMJNLHJILGP),
+            2938 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_EEAENAGLCOD),
+            2958 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_CPCBFMHCMPJ),
+            2996 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_CDKMBIMEPIK),
+            2917 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_BHNEEJDGEIA),
+            2978 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_IBFMBALHAMI),
+            2901 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_MJCIBGGEPBO),
+            2967 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FNDCLPDANCK),
+            2927 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_HIEHJGONJDP),
+            2905 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_CPLEJPIKEJD),
+            2943 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_NJFDMEJAHAK),
+            2910 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_HLMKAGNMMLN),
+            2981 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_GAHGIDFPFIC),
+            2980 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_AMHBMGGFPBH),
+            2923 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JGCJBOCHLDP),
+            2934 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FKLPPFIJAOL),
+            2914 => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_ACOEGHLGEKD),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdFriendType> {
         match str {
-            "GEGHIEHNEEP_PCPDHELPKEM" => ::std::option::Option::Some(CmdFriendType::GEGHIEHNEEP_PCPDHELPKEM),
-            "CmdGetFriendApplyListInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoScRsp),
-            "CmdSyncHandleFriendScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncHandleFriendScNotify),
-            "CmdGetPlatformPlayerInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoScRsp),
-            "CmdGetFriendRecommendListInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoScRsp),
-            "CmdGetFriendRecommendLineupDetailCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendLineupDetailCsReq),
-            "CmdGetAssistListCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListCsReq),
-            "CmdTakeAssistRewardScRsp" => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardScRsp),
-            "CmdABNLKIDDIOK" => ::std::option::Option::Some(CmdFriendType::CmdABNLKIDDIOK),
-            "CmdDeleteFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendCsReq),
-            "CmdGetAssistListScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistListScRsp),
-            "CmdReportPlayerCsReq" => ::std::option::Option::Some(CmdFriendType::CmdReportPlayerCsReq),
-            "CmdGetPlayerDetailInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoCsReq),
-            "CmdGetFriendDevelopmentInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoCsReq),
-            "CmdGetFriendApplyListInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendApplyListInfoCsReq),
-            "CmdGetFriendRecommendLineupScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendLineupScRsp),
-            "CmdGetCurAssistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistScRsp),
-            "CmdSetFriendMarkCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkCsReq),
-            "CmdGetPlatformPlayerInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetPlatformPlayerInfoCsReq),
-            "CmdAddBlacklistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistCsReq),
-            "CmdGetFriendRecommendLineupCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendLineupCsReq),
-            "CmdGetFriendLoginInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoCsReq),
-            "CmdSetFriendRemarkNameCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameCsReq),
-            "CmdCurAssistChangedNotify" => ::std::option::Option::Some(CmdFriendType::CmdCurAssistChangedNotify),
-            "CmdGetFriendListInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoCsReq),
-            "CmdGetAssistHistoryScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryScRsp),
-            "CmdSyncDeleteFriendScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncDeleteFriendScNotify),
-            "CmdGetFriendBattleRecordDetailScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailScRsp),
-            "CmdSyncAddBlacklistScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncAddBlacklistScNotify),
-            "CmdSetFriendMarkScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetFriendMarkScRsp),
-            "CmdTakeAssistRewardCsReq" => ::std::option::Option::Some(CmdFriendType::CmdTakeAssistRewardCsReq),
-            "CmdDeleteFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdDeleteFriendScRsp),
-            "CmdApplyFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendScRsp),
-            "CmdSearchPlayerCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerCsReq),
-            "CmdSetAssistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSetAssistCsReq),
-            "CmdSyncApplyFriendScNotify" => ::std::option::Option::Some(CmdFriendType::CmdSyncApplyFriendScNotify),
-            "CmdGetFriendAssistListCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListCsReq),
-            "CmdHandleFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendScRsp),
-            "CmdDeleteBlacklistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistScRsp),
-            "CmdGetFriendBattleRecordDetailCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendBattleRecordDetailCsReq),
-            "CmdGetFriendAssistListScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendAssistListScRsp),
-            "CmdDeleteBlacklistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdDeleteBlacklistCsReq),
-            "CmdApplyFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdApplyFriendCsReq),
-            "CmdGetFriendRecommendLineupDetailScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendLineupDetailScRsp),
-            "CmdSetAllowOtherApplyFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdSetAllowOtherApplyFriendCsReq),
-            "CmdHandleFriendCsReq" => ::std::option::Option::Some(CmdFriendType::CmdHandleFriendCsReq),
-            "CmdGetCurAssistCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetCurAssistCsReq),
-            "CmdGetFriendListInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendListInfoScRsp),
-            "CmdSetFriendRemarkNameScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetFriendRemarkNameScRsp),
-            "CmdGetAssistHistoryCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetAssistHistoryCsReq),
-            "CmdSetForbidOtherApplyFriendScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetForbidOtherApplyFriendScRsp),
-            "CmdGetPlayerDetailInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetPlayerDetailInfoScRsp),
-            "CmdGetFriendDevelopmentInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendDevelopmentInfoScRsp),
-            "CmdAddBlacklistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdAddBlacklistScRsp),
-            "CmdGetFriendRecommendListInfoCsReq" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendRecommendListInfoCsReq),
-            "CmdGetFriendLoginInfoScRsp" => ::std::option::Option::Some(CmdFriendType::CmdGetFriendLoginInfoScRsp),
-            "CmdSetAssistScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSetAssistScRsp),
-            "CmdSearchPlayerScRsp" => ::std::option::Option::Some(CmdFriendType::CmdSearchPlayerScRsp),
-            "CmdNewAssistHistoryNotify" => ::std::option::Option::Some(CmdFriendType::CmdNewAssistHistoryNotify),
+            "MGDHKHBKDDG_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_NLCDGIPGFDJ),
+            "MGDHKHBKDDG_PPFIDCLIHMD" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_PPFIDCLIHMD),
+            "MGDHKHBKDDG_KDPDAOJNAJP" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_KDPDAOJNAJP),
+            "MGDHKHBKDDG_KBKGHNCBLCF" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_KBKGHNCBLCF),
+            "MGDHKHBKDDG_FNMNFKNAHIE" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FNMNFKNAHIE),
+            "MGDHKHBKDDG_EPOOAHJGAPF" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_EPOOAHJGAPF),
+            "MGDHKHBKDDG_FEHDAKLPDBO" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FEHDAKLPDBO),
+            "MGDHKHBKDDG_AOGJHKAJDBN" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_AOGJHKAJDBN),
+            "MGDHKHBKDDG_JFCPNIBEGEL" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JFCPNIBEGEL),
+            "MGDHKHBKDDG_PAGJIFMABED" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_PAGJIFMABED),
+            "MGDHKHBKDDG_FKKHIMBLBCA" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FKKHIMBLBCA),
+            "MGDHKHBKDDG_JLHNNKPFGHI" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JLHNNKPFGHI),
+            "MGDHKHBKDDG_ADDHICIPCPJ" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_ADDHICIPCPJ),
+            "MGDHKHBKDDG_LAPCBMNLLAJ" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_LAPCBMNLLAJ),
+            "MGDHKHBKDDG_BFLGHKHLIBD" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_BFLGHKHLIBD),
+            "MGDHKHBKDDG_JEOGJMKGINI" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JEOGJMKGINI),
+            "MGDHKHBKDDG_CBNIKODOPAH" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_CBNIKODOPAH),
+            "MGDHKHBKDDG_LBJKDABKCAC" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_LBJKDABKCAC),
+            "MGDHKHBKDDG_DPOMKJGPGOA" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_DPOMKJGPGOA),
+            "MGDHKHBKDDG_IGFMFCFBIEA" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_IGFMFCFBIEA),
+            "MGDHKHBKDDG_FNKPKFCNDNM" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FNKPKFCNDNM),
+            "MGDHKHBKDDG_EJAKFIAICJD" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_EJAKFIAICJD),
+            "MGDHKHBKDDG_PIDNIFCOHPL" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_PIDNIFCOHPL),
+            "MGDHKHBKDDG_HPALFLJOPIA" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_HPALFLJOPIA),
+            "MGDHKHBKDDG_BOBEBFMFNPE" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_BOBEBFMFNPE),
+            "MGDHKHBKDDG_BBAHAINPPGN" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_BBAHAINPPGN),
+            "MGDHKHBKDDG_DOALBCCOOMA" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_DOALBCCOOMA),
+            "MGDHKHBKDDG_ABBHAMIONCJ" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_ABBHAMIONCJ),
+            "MGDHKHBKDDG_FBPNLMIEBAO" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FBPNLMIEBAO),
+            "MGDHKHBKDDG_HAONHNJPPHO" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_HAONHNJPPHO),
+            "MGDHKHBKDDG_MJGEIGCCACO" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_MJGEIGCCACO),
+            "MGDHKHBKDDG_BIKAKPHLJJF" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_BIKAKPHLJJF),
+            "MGDHKHBKDDG_PBMGMNKFEFN" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_PBMGMNKFEFN),
+            "MGDHKHBKDDG_JNFFKMIDDEL" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JNFFKMIDDEL),
+            "MGDHKHBKDDG_GCPPDCPKNGL" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_GCPPDCPKNGL),
+            "MGDHKHBKDDG_OLHGEGOGMNH" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_OLHGEGOGMNH),
+            "MGDHKHBKDDG_GOBOBNNKHLB" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_GOBOBNNKHLB),
+            "MGDHKHBKDDG_IIIEFFJGEMG" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_IIIEFFJGEMG),
+            "MGDHKHBKDDG_JNEDPPGFBFK" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JNEDPPGFBFK),
+            "MGDHKHBKDDG_GDDJANBBFOE" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_GDDJANBBFOE),
+            "MGDHKHBKDDG_AKADDIDOLDF" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_AKADDIDOLDF),
+            "MGDHKHBKDDG_FIGEAOCBNEF" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FIGEAOCBNEF),
+            "MGDHKHBKDDG_PMJNLHJILGP" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_PMJNLHJILGP),
+            "MGDHKHBKDDG_EEAENAGLCOD" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_EEAENAGLCOD),
+            "MGDHKHBKDDG_CPCBFMHCMPJ" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_CPCBFMHCMPJ),
+            "MGDHKHBKDDG_CDKMBIMEPIK" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_CDKMBIMEPIK),
+            "MGDHKHBKDDG_BHNEEJDGEIA" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_BHNEEJDGEIA),
+            "MGDHKHBKDDG_IBFMBALHAMI" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_IBFMBALHAMI),
+            "MGDHKHBKDDG_MJCIBGGEPBO" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_MJCIBGGEPBO),
+            "MGDHKHBKDDG_FNDCLPDANCK" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FNDCLPDANCK),
+            "MGDHKHBKDDG_HIEHJGONJDP" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_HIEHJGONJDP),
+            "MGDHKHBKDDG_CPLEJPIKEJD" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_CPLEJPIKEJD),
+            "MGDHKHBKDDG_NJFDMEJAHAK" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_NJFDMEJAHAK),
+            "MGDHKHBKDDG_HLMKAGNMMLN" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_HLMKAGNMMLN),
+            "MGDHKHBKDDG_GAHGIDFPFIC" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_GAHGIDFPFIC),
+            "MGDHKHBKDDG_AMHBMGGFPBH" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_AMHBMGGFPBH),
+            "MGDHKHBKDDG_JGCJBOCHLDP" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_JGCJBOCHLDP),
+            "MGDHKHBKDDG_FKLPPFIJAOL" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_FKLPPFIJAOL),
+            "MGDHKHBKDDG_ACOEGHLGEKD" => ::std::option::Option::Some(CmdFriendType::MGDHKHBKDDG_ACOEGHLGEKD),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdFriendType] = &[
-        CmdFriendType::GEGHIEHNEEP_PCPDHELPKEM,
-        CmdFriendType::CmdGetFriendApplyListInfoScRsp,
-        CmdFriendType::CmdSyncHandleFriendScNotify,
-        CmdFriendType::CmdGetPlatformPlayerInfoScRsp,
-        CmdFriendType::CmdGetFriendRecommendListInfoScRsp,
-        CmdFriendType::CmdGetFriendRecommendLineupDetailCsReq,
-        CmdFriendType::CmdGetAssistListCsReq,
-        CmdFriendType::CmdTakeAssistRewardScRsp,
-        CmdFriendType::CmdABNLKIDDIOK,
-        CmdFriendType::CmdDeleteFriendCsReq,
-        CmdFriendType::CmdGetAssistListScRsp,
-        CmdFriendType::CmdReportPlayerCsReq,
-        CmdFriendType::CmdGetPlayerDetailInfoCsReq,
-        CmdFriendType::CmdGetFriendDevelopmentInfoCsReq,
-        CmdFriendType::CmdGetFriendApplyListInfoCsReq,
-        CmdFriendType::CmdGetFriendRecommendLineupScRsp,
-        CmdFriendType::CmdGetCurAssistScRsp,
-        CmdFriendType::CmdSetFriendMarkCsReq,
-        CmdFriendType::CmdGetPlatformPlayerInfoCsReq,
-        CmdFriendType::CmdAddBlacklistCsReq,
-        CmdFriendType::CmdGetFriendRecommendLineupCsReq,
-        CmdFriendType::CmdGetFriendLoginInfoCsReq,
-        CmdFriendType::CmdSetFriendRemarkNameCsReq,
-        CmdFriendType::CmdCurAssistChangedNotify,
-        CmdFriendType::CmdGetFriendListInfoCsReq,
-        CmdFriendType::CmdGetAssistHistoryScRsp,
-        CmdFriendType::CmdSyncDeleteFriendScNotify,
-        CmdFriendType::CmdGetFriendBattleRecordDetailScRsp,
-        CmdFriendType::CmdSyncAddBlacklistScNotify,
-        CmdFriendType::CmdSetFriendMarkScRsp,
-        CmdFriendType::CmdTakeAssistRewardCsReq,
-        CmdFriendType::CmdDeleteFriendScRsp,
-        CmdFriendType::CmdApplyFriendScRsp,
-        CmdFriendType::CmdSearchPlayerCsReq,
-        CmdFriendType::CmdSetAssistCsReq,
-        CmdFriendType::CmdSyncApplyFriendScNotify,
-        CmdFriendType::CmdGetFriendAssistListCsReq,
-        CmdFriendType::CmdHandleFriendScRsp,
-        CmdFriendType::CmdDeleteBlacklistScRsp,
-        CmdFriendType::CmdGetFriendBattleRecordDetailCsReq,
-        CmdFriendType::CmdGetFriendAssistListScRsp,
-        CmdFriendType::CmdDeleteBlacklistCsReq,
-        CmdFriendType::CmdApplyFriendCsReq,
-        CmdFriendType::CmdGetFriendRecommendLineupDetailScRsp,
-        CmdFriendType::CmdSetAllowOtherApplyFriendCsReq,
-        CmdFriendType::CmdHandleFriendCsReq,
-        CmdFriendType::CmdGetCurAssistCsReq,
-        CmdFriendType::CmdGetFriendListInfoScRsp,
-        CmdFriendType::CmdSetFriendRemarkNameScRsp,
-        CmdFriendType::CmdGetAssistHistoryCsReq,
-        CmdFriendType::CmdSetForbidOtherApplyFriendScRsp,
-        CmdFriendType::CmdGetPlayerDetailInfoScRsp,
-        CmdFriendType::CmdGetFriendDevelopmentInfoScRsp,
-        CmdFriendType::CmdAddBlacklistScRsp,
-        CmdFriendType::CmdGetFriendRecommendListInfoCsReq,
-        CmdFriendType::CmdGetFriendLoginInfoScRsp,
-        CmdFriendType::CmdSetAssistScRsp,
-        CmdFriendType::CmdSearchPlayerScRsp,
-        CmdFriendType::CmdNewAssistHistoryNotify,
+        CmdFriendType::MGDHKHBKDDG_NLCDGIPGFDJ,
+        CmdFriendType::MGDHKHBKDDG_PPFIDCLIHMD,
+        CmdFriendType::MGDHKHBKDDG_KDPDAOJNAJP,
+        CmdFriendType::MGDHKHBKDDG_KBKGHNCBLCF,
+        CmdFriendType::MGDHKHBKDDG_FNMNFKNAHIE,
+        CmdFriendType::MGDHKHBKDDG_EPOOAHJGAPF,
+        CmdFriendType::MGDHKHBKDDG_FEHDAKLPDBO,
+        CmdFriendType::MGDHKHBKDDG_AOGJHKAJDBN,
+        CmdFriendType::MGDHKHBKDDG_JFCPNIBEGEL,
+        CmdFriendType::MGDHKHBKDDG_PAGJIFMABED,
+        CmdFriendType::MGDHKHBKDDG_FKKHIMBLBCA,
+        CmdFriendType::MGDHKHBKDDG_JLHNNKPFGHI,
+        CmdFriendType::MGDHKHBKDDG_ADDHICIPCPJ,
+        CmdFriendType::MGDHKHBKDDG_LAPCBMNLLAJ,
+        CmdFriendType::MGDHKHBKDDG_BFLGHKHLIBD,
+        CmdFriendType::MGDHKHBKDDG_JEOGJMKGINI,
+        CmdFriendType::MGDHKHBKDDG_CBNIKODOPAH,
+        CmdFriendType::MGDHKHBKDDG_LBJKDABKCAC,
+        CmdFriendType::MGDHKHBKDDG_DPOMKJGPGOA,
+        CmdFriendType::MGDHKHBKDDG_IGFMFCFBIEA,
+        CmdFriendType::MGDHKHBKDDG_FNKPKFCNDNM,
+        CmdFriendType::MGDHKHBKDDG_EJAKFIAICJD,
+        CmdFriendType::MGDHKHBKDDG_PIDNIFCOHPL,
+        CmdFriendType::MGDHKHBKDDG_HPALFLJOPIA,
+        CmdFriendType::MGDHKHBKDDG_BOBEBFMFNPE,
+        CmdFriendType::MGDHKHBKDDG_BBAHAINPPGN,
+        CmdFriendType::MGDHKHBKDDG_DOALBCCOOMA,
+        CmdFriendType::MGDHKHBKDDG_ABBHAMIONCJ,
+        CmdFriendType::MGDHKHBKDDG_FBPNLMIEBAO,
+        CmdFriendType::MGDHKHBKDDG_HAONHNJPPHO,
+        CmdFriendType::MGDHKHBKDDG_MJGEIGCCACO,
+        CmdFriendType::MGDHKHBKDDG_BIKAKPHLJJF,
+        CmdFriendType::MGDHKHBKDDG_PBMGMNKFEFN,
+        CmdFriendType::MGDHKHBKDDG_JNFFKMIDDEL,
+        CmdFriendType::MGDHKHBKDDG_GCPPDCPKNGL,
+        CmdFriendType::MGDHKHBKDDG_OLHGEGOGMNH,
+        CmdFriendType::MGDHKHBKDDG_GOBOBNNKHLB,
+        CmdFriendType::MGDHKHBKDDG_IIIEFFJGEMG,
+        CmdFriendType::MGDHKHBKDDG_JNEDPPGFBFK,
+        CmdFriendType::MGDHKHBKDDG_GDDJANBBFOE,
+        CmdFriendType::MGDHKHBKDDG_AKADDIDOLDF,
+        CmdFriendType::MGDHKHBKDDG_FIGEAOCBNEF,
+        CmdFriendType::MGDHKHBKDDG_PMJNLHJILGP,
+        CmdFriendType::MGDHKHBKDDG_EEAENAGLCOD,
+        CmdFriendType::MGDHKHBKDDG_CPCBFMHCMPJ,
+        CmdFriendType::MGDHKHBKDDG_CDKMBIMEPIK,
+        CmdFriendType::MGDHKHBKDDG_BHNEEJDGEIA,
+        CmdFriendType::MGDHKHBKDDG_IBFMBALHAMI,
+        CmdFriendType::MGDHKHBKDDG_MJCIBGGEPBO,
+        CmdFriendType::MGDHKHBKDDG_FNDCLPDANCK,
+        CmdFriendType::MGDHKHBKDDG_HIEHJGONJDP,
+        CmdFriendType::MGDHKHBKDDG_CPLEJPIKEJD,
+        CmdFriendType::MGDHKHBKDDG_NJFDMEJAHAK,
+        CmdFriendType::MGDHKHBKDDG_HLMKAGNMMLN,
+        CmdFriendType::MGDHKHBKDDG_GAHGIDFPFIC,
+        CmdFriendType::MGDHKHBKDDG_AMHBMGGFPBH,
+        CmdFriendType::MGDHKHBKDDG_JGCJBOCHLDP,
+        CmdFriendType::MGDHKHBKDDG_FKLPPFIJAOL,
+        CmdFriendType::MGDHKHBKDDG_ACOEGHLGEKD,
     ];
 }
 
@@ -355,65 +355,65 @@ impl ::protobuf::EnumFull for CmdFriendType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdFriendType::GEGHIEHNEEP_PCPDHELPKEM => 0,
-            CmdFriendType::CmdGetFriendApplyListInfoScRsp => 1,
-            CmdFriendType::CmdSyncHandleFriendScNotify => 2,
-            CmdFriendType::CmdGetPlatformPlayerInfoScRsp => 3,
-            CmdFriendType::CmdGetFriendRecommendListInfoScRsp => 4,
-            CmdFriendType::CmdGetFriendRecommendLineupDetailCsReq => 5,
-            CmdFriendType::CmdGetAssistListCsReq => 6,
-            CmdFriendType::CmdTakeAssistRewardScRsp => 7,
-            CmdFriendType::CmdABNLKIDDIOK => 8,
-            CmdFriendType::CmdDeleteFriendCsReq => 9,
-            CmdFriendType::CmdGetAssistListScRsp => 10,
-            CmdFriendType::CmdReportPlayerCsReq => 11,
-            CmdFriendType::CmdGetPlayerDetailInfoCsReq => 12,
-            CmdFriendType::CmdGetFriendDevelopmentInfoCsReq => 13,
-            CmdFriendType::CmdGetFriendApplyListInfoCsReq => 14,
-            CmdFriendType::CmdGetFriendRecommendLineupScRsp => 15,
-            CmdFriendType::CmdGetCurAssistScRsp => 16,
-            CmdFriendType::CmdSetFriendMarkCsReq => 17,
-            CmdFriendType::CmdGetPlatformPlayerInfoCsReq => 18,
-            CmdFriendType::CmdAddBlacklistCsReq => 19,
-            CmdFriendType::CmdGetFriendRecommendLineupCsReq => 20,
-            CmdFriendType::CmdGetFriendLoginInfoCsReq => 21,
-            CmdFriendType::CmdSetFriendRemarkNameCsReq => 22,
-            CmdFriendType::CmdCurAssistChangedNotify => 23,
-            CmdFriendType::CmdGetFriendListInfoCsReq => 24,
-            CmdFriendType::CmdGetAssistHistoryScRsp => 25,
-            CmdFriendType::CmdSyncDeleteFriendScNotify => 26,
-            CmdFriendType::CmdGetFriendBattleRecordDetailScRsp => 27,
-            CmdFriendType::CmdSyncAddBlacklistScNotify => 28,
-            CmdFriendType::CmdSetFriendMarkScRsp => 29,
-            CmdFriendType::CmdTakeAssistRewardCsReq => 30,
-            CmdFriendType::CmdDeleteFriendScRsp => 31,
-            CmdFriendType::CmdApplyFriendScRsp => 32,
-            CmdFriendType::CmdSearchPlayerCsReq => 33,
-            CmdFriendType::CmdSetAssistCsReq => 34,
-            CmdFriendType::CmdSyncApplyFriendScNotify => 35,
-            CmdFriendType::CmdGetFriendAssistListCsReq => 36,
-            CmdFriendType::CmdHandleFriendScRsp => 37,
-            CmdFriendType::CmdDeleteBlacklistScRsp => 38,
-            CmdFriendType::CmdGetFriendBattleRecordDetailCsReq => 39,
-            CmdFriendType::CmdGetFriendAssistListScRsp => 40,
-            CmdFriendType::CmdDeleteBlacklistCsReq => 41,
-            CmdFriendType::CmdApplyFriendCsReq => 42,
-            CmdFriendType::CmdGetFriendRecommendLineupDetailScRsp => 43,
-            CmdFriendType::CmdSetAllowOtherApplyFriendCsReq => 44,
-            CmdFriendType::CmdHandleFriendCsReq => 45,
-            CmdFriendType::CmdGetCurAssistCsReq => 46,
-            CmdFriendType::CmdGetFriendListInfoScRsp => 47,
-            CmdFriendType::CmdSetFriendRemarkNameScRsp => 48,
-            CmdFriendType::CmdGetAssistHistoryCsReq => 49,
-            CmdFriendType::CmdSetForbidOtherApplyFriendScRsp => 50,
-            CmdFriendType::CmdGetPlayerDetailInfoScRsp => 51,
-            CmdFriendType::CmdGetFriendDevelopmentInfoScRsp => 52,
-            CmdFriendType::CmdAddBlacklistScRsp => 53,
-            CmdFriendType::CmdGetFriendRecommendListInfoCsReq => 54,
-            CmdFriendType::CmdGetFriendLoginInfoScRsp => 55,
-            CmdFriendType::CmdSetAssistScRsp => 56,
-            CmdFriendType::CmdSearchPlayerScRsp => 57,
-            CmdFriendType::CmdNewAssistHistoryNotify => 58,
+            CmdFriendType::MGDHKHBKDDG_NLCDGIPGFDJ => 0,
+            CmdFriendType::MGDHKHBKDDG_PPFIDCLIHMD => 1,
+            CmdFriendType::MGDHKHBKDDG_KDPDAOJNAJP => 2,
+            CmdFriendType::MGDHKHBKDDG_KBKGHNCBLCF => 3,
+            CmdFriendType::MGDHKHBKDDG_FNMNFKNAHIE => 4,
+            CmdFriendType::MGDHKHBKDDG_EPOOAHJGAPF => 5,
+            CmdFriendType::MGDHKHBKDDG_FEHDAKLPDBO => 6,
+            CmdFriendType::MGDHKHBKDDG_AOGJHKAJDBN => 7,
+            CmdFriendType::MGDHKHBKDDG_JFCPNIBEGEL => 8,
+            CmdFriendType::MGDHKHBKDDG_PAGJIFMABED => 9,
+            CmdFriendType::MGDHKHBKDDG_FKKHIMBLBCA => 10,
+            CmdFriendType::MGDHKHBKDDG_JLHNNKPFGHI => 11,
+            CmdFriendType::MGDHKHBKDDG_ADDHICIPCPJ => 12,
+            CmdFriendType::MGDHKHBKDDG_LAPCBMNLLAJ => 13,
+            CmdFriendType::MGDHKHBKDDG_BFLGHKHLIBD => 14,
+            CmdFriendType::MGDHKHBKDDG_JEOGJMKGINI => 15,
+            CmdFriendType::MGDHKHBKDDG_CBNIKODOPAH => 16,
+            CmdFriendType::MGDHKHBKDDG_LBJKDABKCAC => 17,
+            CmdFriendType::MGDHKHBKDDG_DPOMKJGPGOA => 18,
+            CmdFriendType::MGDHKHBKDDG_IGFMFCFBIEA => 19,
+            CmdFriendType::MGDHKHBKDDG_FNKPKFCNDNM => 20,
+            CmdFriendType::MGDHKHBKDDG_EJAKFIAICJD => 21,
+            CmdFriendType::MGDHKHBKDDG_PIDNIFCOHPL => 22,
+            CmdFriendType::MGDHKHBKDDG_HPALFLJOPIA => 23,
+            CmdFriendType::MGDHKHBKDDG_BOBEBFMFNPE => 24,
+            CmdFriendType::MGDHKHBKDDG_BBAHAINPPGN => 25,
+            CmdFriendType::MGDHKHBKDDG_DOALBCCOOMA => 26,
+            CmdFriendType::MGDHKHBKDDG_ABBHAMIONCJ => 27,
+            CmdFriendType::MGDHKHBKDDG_FBPNLMIEBAO => 28,
+            CmdFriendType::MGDHKHBKDDG_HAONHNJPPHO => 29,
+            CmdFriendType::MGDHKHBKDDG_MJGEIGCCACO => 30,
+            CmdFriendType::MGDHKHBKDDG_BIKAKPHLJJF => 31,
+            CmdFriendType::MGDHKHBKDDG_PBMGMNKFEFN => 32,
+            CmdFriendType::MGDHKHBKDDG_JNFFKMIDDEL => 33,
+            CmdFriendType::MGDHKHBKDDG_GCPPDCPKNGL => 34,
+            CmdFriendType::MGDHKHBKDDG_OLHGEGOGMNH => 35,
+            CmdFriendType::MGDHKHBKDDG_GOBOBNNKHLB => 36,
+            CmdFriendType::MGDHKHBKDDG_IIIEFFJGEMG => 37,
+            CmdFriendType::MGDHKHBKDDG_JNEDPPGFBFK => 38,
+            CmdFriendType::MGDHKHBKDDG_GDDJANBBFOE => 39,
+            CmdFriendType::MGDHKHBKDDG_AKADDIDOLDF => 40,
+            CmdFriendType::MGDHKHBKDDG_FIGEAOCBNEF => 41,
+            CmdFriendType::MGDHKHBKDDG_PMJNLHJILGP => 42,
+            CmdFriendType::MGDHKHBKDDG_EEAENAGLCOD => 43,
+            CmdFriendType::MGDHKHBKDDG_CPCBFMHCMPJ => 44,
+            CmdFriendType::MGDHKHBKDDG_CDKMBIMEPIK => 45,
+            CmdFriendType::MGDHKHBKDDG_BHNEEJDGEIA => 46,
+            CmdFriendType::MGDHKHBKDDG_IBFMBALHAMI => 47,
+            CmdFriendType::MGDHKHBKDDG_MJCIBGGEPBO => 48,
+            CmdFriendType::MGDHKHBKDDG_FNDCLPDANCK => 49,
+            CmdFriendType::MGDHKHBKDDG_HIEHJGONJDP => 50,
+            CmdFriendType::MGDHKHBKDDG_CPLEJPIKEJD => 51,
+            CmdFriendType::MGDHKHBKDDG_NJFDMEJAHAK => 52,
+            CmdFriendType::MGDHKHBKDDG_HLMKAGNMMLN => 53,
+            CmdFriendType::MGDHKHBKDDG_GAHGIDFPFIC => 54,
+            CmdFriendType::MGDHKHBKDDG_AMHBMGGFPBH => 55,
+            CmdFriendType::MGDHKHBKDDG_JGCJBOCHLDP => 56,
+            CmdFriendType::MGDHKHBKDDG_FKLPPFIJAOL => 57,
+            CmdFriendType::MGDHKHBKDDG_ACOEGHLGEKD => 58,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -421,7 +421,7 @@ impl ::protobuf::EnumFull for CmdFriendType {
 
 impl ::std::default::Default for CmdFriendType {
     fn default() -> Self {
-        CmdFriendType::GEGHIEHNEEP_PCPDHELPKEM
+        CmdFriendType::MGDHKHBKDDG_NLCDGIPGFDJ
     }
 }
 
@@ -432,49 +432,48 @@ impl CmdFriendType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13CmdFriendType.proto*\x88\x0f\n\rCmdFriendType\x12\x1b\n\x17GEGHIEH\
-    NEEP_PCPDHELPKEM\x10\0\x12#\n\x1eCmdGetFriendApplyListInfoScRsp\x10\xe6\
-    \x16\x12\x20\n\x1bCmdSyncHandleFriendScNotify\x10\xd5\x16\x12\"\n\x1dCmd\
-    GetPlatformPlayerInfoScRsp\x10\x85\x17\x12'\n\"CmdGetFriendRecommendList\
-    InfoScRsp\x10\x91\x17\x12+\n&CmdGetFriendRecommendLineupDetailCsReq\x10\
-    \x88\x17\x12\x1a\n\x15CmdGetAssistListCsReq\x10\xf0\x16\x12\x1d\n\x18Cmd\
-    TakeAssistRewardScRsp\x10\xe8\x16\x12\x13\n\x0eCmdABNLKIDDIOK\x10\xb8\
-    \x17\x12\x19\n\x14CmdDeleteFriendCsReq\x10\x9e\x17\x12\x1a\n\x15CmdGetAs\
-    sistListScRsp\x10\x95\x17\x12\x19\n\x14CmdReportPlayerCsReq\x10\x80\x17\
-    \x12\x20\n\x1bCmdGetPlayerDetailInfoCsReq\x10\xb2\x17\x12%\n\x20CmdGetFr\
-    iendDevelopmentInfoCsReq\x10\xa1\x17\x12#\n\x1eCmdGetFriendApplyListInfo\
-    CsReq\x10\xe2\x16\x12%\n\x20CmdGetFriendRecommendLineupScRsp\x10\xac\x17\
-    \x12\x19\n\x14CmdGetCurAssistScRsp\x10\xe5\x16\x12\x1a\n\x15CmdSetFriend\
-    MarkCsReq\x10\x9b\x17\x12\"\n\x1dCmdGetPlatformPlayerInfoCsReq\x10\xd6\
-    \x16\x12\x19\n\x14CmdAddBlacklistCsReq\x10\xfa\x16\x12%\n\x20CmdGetFrien\
-    dRecommendLineupCsReq\x10\xda\x16\x12\x1f\n\x1aCmdGetFriendLoginInfoCsRe\
-    q\x10\x96\x17\x12\x20\n\x1bCmdSetFriendRemarkNameCsReq\x10\xdb\x16\x12\
-    \x1e\n\x19CmdCurAssistChangedNotify\x10\xb1\x17\x12\x1e\n\x19CmdGetFrien\
-    dListInfoCsReq\x10\xaf\x17\x12\x1d\n\x18CmdGetAssistHistoryScRsp\x10\xed\
-    \x16\x12\x20\n\x1bCmdSyncDeleteFriendScNotify\x10\xd8\x16\x12(\n#CmdGetF\
-    riendBattleRecordDetailScRsp\x10\xe0\x16\x12\x20\n\x1bCmdSyncAddBlacklis\
-    tScNotify\x10\xf4\x16\x12\x1a\n\x15CmdSetFriendMarkScRsp\x10\xf8\x16\x12\
-    \x1d\n\x18CmdTakeAssistRewardCsReq\x10\xa3\x17\x12\x19\n\x14CmdDeleteFri\
-    endScRsp\x10\xf9\x16\x12\x18\n\x13CmdApplyFriendScRsp\x10\xb6\x17\x12\
-    \x19\n\x14CmdSearchPlayerCsReq\x10\x8d\x17\x12\x16\n\x11CmdSetAssistCsRe\
-    q\x10\x9d\x17\x12\x1f\n\x1aCmdSyncApplyFriendScNotify\x10\x93\x17\x12\
-    \x20\n\x1bCmdGetFriendAssistListCsReq\x10\xd7\x16\x12\x19\n\x14CmdHandle\
-    FriendScRsp\x10\xfb\x16\x12\x1c\n\x17CmdDeleteBlacklistScRsp\x10\xb4\x17\
-    \x12(\n#CmdGetFriendBattleRecordDetailCsReq\x10\xf1\x16\x12\x20\n\x1bCmd\
-    GetFriendAssistListScRsp\x10\xb0\x17\x12\x1c\n\x17CmdDeleteBlacklistCsRe\
-    q\x10\xad\x17\x12\x18\n\x13CmdApplyFriendCsReq\x10\xdd\x16\x12+\n&CmdGet\
-    FriendRecommendLineupDetailScRsp\x10\xae\x17\x12%\n\x20CmdSetAllowOtherA\
-    pplyFriendCsReq\x10\xdf\x16\x12\x19\n\x14CmdHandleFriendCsReq\x10\xee\
-    \x16\x12\x19\n\x14CmdGetCurAssistCsReq\x10\xdc\x16\x12\x1e\n\x19CmdGetFr\
-    iendListInfoScRsp\x10\xde\x16\x12\x20\n\x1bCmdSetFriendRemarkNameScRsp\
-    \x10\x8e\x17\x12\x1d\n\x18CmdGetAssistHistoryCsReq\x10\x87\x17\x12&\n!Cm\
-    dSetForbidOtherApplyFriendScRsp\x10\xf2\x16\x12\x20\n\x1bCmdGetPlayerDet\
-    ailInfoScRsp\x10\xb3\x17\x12%\n\x20CmdGetFriendDevelopmentInfoScRsp\x10\
-    \xe4\x16\x12\x19\n\x14CmdAddBlacklistScRsp\x10\x9c\x17\x12'\n\"CmdGetFri\
-    endRecommendListInfoCsReq\x10\xf5\x16\x12\x1f\n\x1aCmdGetFriendLoginInfo\
-    ScRsp\x10\xd9\x16\x12\x16\n\x11CmdSetAssistScRsp\x10\x89\x17\x12\x19\n\
-    \x14CmdSearchPlayerScRsp\x10\xe9\x16\x12\x1e\n\x19CmdNewAssistHistoryNot\
-    ify\x10\x8a\x17b\x06proto3\
+    \n\x13CmdFriendType.proto*\xf8\r\n\rCmdFriendType\x12\x1b\n\x17MGDHKHBKD\
+    DG_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17MGDHKHBKDDG_PPFIDCLIHMD\x10\xf4\x16\
+    \x12\x1c\n\x17MGDHKHBKDDG_KDPDAOJNAJP\x10\x8f\x17\x12\x1c\n\x17MGDHKHBKD\
+    DG_KBKGHNCBLCF\x10\xa9\x17\x12\x1c\n\x17MGDHKHBKDDG_FNMNFKNAHIE\x10\xf7\
+    \x16\x12\x1c\n\x17MGDHKHBKDDG_EPOOAHJGAPF\x10\xac\x17\x12\x1c\n\x17MGDHK\
+    HBKDDG_FEHDAKLPDBO\x10\xb8\x17\x12\x1c\n\x17MGDHKHBKDDG_AOGJHKAJDBN\x10\
+    \xf2\x16\x12\x1c\n\x17MGDHKHBKDDG_JFCPNIBEGEL\x10\xe4\x16\x12\x1c\n\x17M\
+    GDHKHBKDDG_PAGJIFMABED\x10\xe1\x16\x12\x1c\n\x17MGDHKHBKDDG_FKKHIMBLBCA\
+    \x10\xf8\x16\x12\x1c\n\x17MGDHKHBKDDG_JLHNNKPFGHI\x10\xb0\x17\x12\x1c\n\
+    \x17MGDHKHBKDDG_ADDHICIPCPJ\x10\x91\x17\x12\x1c\n\x17MGDHKHBKDDG_LAPCBMN\
+    LLAJ\x10\x96\x17\x12\x1c\n\x17MGDHKHBKDDG_BFLGHKHLIBD\x10\xee\x16\x12\
+    \x1c\n\x17MGDHKHBKDDG_JEOGJMKGINI\x10\x85\x17\x12\x1c\n\x17MGDHKHBKDDG_C\
+    BNIKODOPAH\x10\xf9\x16\x12\x1c\n\x17MGDHKHBKDDG_LBJKDABKCAC\x10\x8a\x17\
+    \x12\x1c\n\x17MGDHKHBKDDG_DPOMKJGPGOA\x10\xd7\x16\x12\x1c\n\x17MGDHKHBKD\
+    DG_IGFMFCFBIEA\x10\x9e\x17\x12\x1c\n\x17MGDHKHBKDDG_FNKPKFCNDNM\x10\xda\
+    \x16\x12\x1c\n\x17MGDHKHBKDDG_EJAKFIAICJD\x10\xa7\x17\x12\x1c\n\x17MGDHK\
+    HBKDDG_PIDNIFCOHPL\x10\xa0\x17\x12\x1c\n\x17MGDHKHBKDDG_HPALFLJOPIA\x10\
+    \xe0\x16\x12\x1c\n\x17MGDHKHBKDDG_BOBEBFMFNPE\x10\x89\x17\x12\x1c\n\x17M\
+    GDHKHBKDDG_BBAHAINPPGN\x10\x84\x17\x12\x1c\n\x17MGDHKHBKDDG_DOALBCCOOMA\
+    \x10\xe8\x16\x12\x1c\n\x17MGDHKHBKDDG_ABBHAMIONCJ\x10\xfb\x16\x12\x1c\n\
+    \x17MGDHKHBKDDG_FBPNLMIEBAO\x10\xdd\x16\x12\x1c\n\x17MGDHKHBKDDG_HAONHNJ\
+    PPHO\x10\x9d\x17\x12\x1c\n\x17MGDHKHBKDDG_MJGEIGCCACO\x10\xf0\x16\x12\
+    \x1c\n\x17MGDHKHBKDDG_BIKAKPHLJJF\x10\xf1\x16\x12\x1c\n\x17MGDHKHBKDDG_P\
+    BMGMNKFEFN\x10\xa6\x17\x12\x1c\n\x17MGDHKHBKDDG_JNFFKMIDDEL\x10\x9b\x17\
+    \x12\x1c\n\x17MGDHKHBKDDG_GCPPDCPKNGL\x10\xaf\x17\x12\x1c\n\x17MGDHKHBKD\
+    DG_OLHGEGOGMNH\x10\xfe\x16\x12\x1c\n\x17MGDHKHBKDDG_GOBOBNNKHLB\x10\xb7\
+    \x17\x12\x1c\n\x17MGDHKHBKDDG_IIIEFFJGEMG\x10\xe3\x16\x12\x1c\n\x17MGDHK\
+    HBKDDG_JNEDPPGFBFK\x10\xec\x16\x12\x1c\n\x17MGDHKHBKDDG_GDDJANBBFOE\x10\
+    \x93\x17\x12\x1c\n\x17MGDHKHBKDDG_AKADDIDOLDF\x10\xb1\x17\x12\x1c\n\x17M\
+    GDHKHBKDDG_FIGEAOCBNEF\x10\xab\x17\x12\x1c\n\x17MGDHKHBKDDG_PMJNLHJILGP\
+    \x10\x88\x17\x12\x1c\n\x17MGDHKHBKDDG_EEAENAGLCOD\x10\xfa\x16\x12\x1c\n\
+    \x17MGDHKHBKDDG_CPCBFMHCMPJ\x10\x8e\x17\x12\x1c\n\x17MGDHKHBKDDG_CDKMBIM\
+    EPIK\x10\xb4\x17\x12\x1c\n\x17MGDHKHBKDDG_BHNEEJDGEIA\x10\xe5\x16\x12\
+    \x1c\n\x17MGDHKHBKDDG_IBFMBALHAMI\x10\xa2\x17\x12\x1c\n\x17MGDHKHBKDDG_M\
+    JCIBGGEPBO\x10\xd5\x16\x12\x1c\n\x17MGDHKHBKDDG_FNDCLPDANCK\x10\x97\x17\
+    \x12\x1c\n\x17MGDHKHBKDDG_HIEHJGONJDP\x10\xef\x16\x12\x1c\n\x17MGDHKHBKD\
+    DG_CPLEJPIKEJD\x10\xd9\x16\x12\x1c\n\x17MGDHKHBKDDG_NJFDMEJAHAK\x10\xff\
+    \x16\x12\x1c\n\x17MGDHKHBKDDG_HLMKAGNMMLN\x10\xde\x16\x12\x1c\n\x17MGDHK\
+    HBKDDG_GAHGIDFPFIC\x10\xa5\x17\x12\x1c\n\x17MGDHKHBKDDG_AMHBMGGFPBH\x10\
+    \xa4\x17\x12\x1c\n\x17MGDHKHBKDDG_JGCJBOCHLDP\x10\xeb\x16\x12\x1c\n\x17M\
+    GDHKHBKDDG_FKLPPFIJAOL\x10\xf6\x16\x12\x1c\n\x17MGDHKHBKDDG_ACOEGHLGEKD\
+    \x10\xe2\x16b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct FiveDimMoneyChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:FiveDimMoneyChangeScNotify.JKLDOFBHABM)
-    pub JKLDOFBHABM: u32,
-    // @@protoc_insertion_point(field:FiveDimMoneyChangeScNotify.NDKMOINLOOE)
-    pub NDKMOINLOOE: u32,
+    // @@protoc_insertion_point(field:FiveDimMoneyChangeScNotify.OEPCCMAPFFH)
+    pub OEPCCMAPFFH: u32,
+    // @@protoc_insertion_point(field:FiveDimMoneyChangeScNotify.KFBJGFJHGEK)
+    pub KFBJGFJHGEK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:FiveDimMoneyChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl FiveDimMoneyChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JKLDOFBHABM",
-            |m: &FiveDimMoneyChangeScNotify| { &m.JKLDOFBHABM },
-            |m: &mut FiveDimMoneyChangeScNotify| { &mut m.JKLDOFBHABM },
+            "OEPCCMAPFFH",
+            |m: &FiveDimMoneyChangeScNotify| { &m.OEPCCMAPFFH },
+            |m: &mut FiveDimMoneyChangeScNotify| { &mut m.OEPCCMAPFFH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDKMOINLOOE",
-            |m: &FiveDimMoneyChangeScNotify| { &m.NDKMOINLOOE },
-            |m: &mut FiveDimMoneyChangeScNotify| { &mut m.NDKMOINLOOE },
+            "KFBJGFJHGEK",
+            |m: &FiveDimMoneyChangeScNotify| { &m.KFBJGFJHGEK },
+            |m: &mut FiveDimMoneyChangeScNotify| { &mut m.KFBJGFJHGEK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<FiveDimMoneyChangeScNotify>(
             "FiveDimMoneyChangeScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for FiveDimMoneyChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
-                    self.JKLDOFBHABM = is.read_uint32()?;
+                64 => {
+                    self.OEPCCMAPFFH = is.read_uint32()?;
                 },
-                40 => {
-                    self.NDKMOINLOOE = is.read_uint32()?;
+                56 => {
+                    self.KFBJGFJHGEK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for FiveDimMoneyChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.JKLDOFBHABM != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.JKLDOFBHABM);
+        if self.OEPCCMAPFFH != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.OEPCCMAPFFH);
         }
-        if self.NDKMOINLOOE != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.NDKMOINLOOE);
+        if self.KFBJGFJHGEK != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.KFBJGFJHGEK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for FiveDimMoneyChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.JKLDOFBHABM != 0 {
-            os.write_uint32(14, self.JKLDOFBHABM)?;
+        if self.OEPCCMAPFFH != 0 {
+            os.write_uint32(8, self.OEPCCMAPFFH)?;
         }
-        if self.NDKMOINLOOE != 0 {
-            os.write_uint32(5, self.NDKMOINLOOE)?;
+        if self.KFBJGFJHGEK != 0 {
+            os.write_uint32(7, self.KFBJGFJHGEK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for FiveDimMoneyChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.JKLDOFBHABM = 0;
-        self.NDKMOINLOOE = 0;
+        self.OEPCCMAPFFH = 0;
+        self.KFBJGFJHGEK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static FiveDimMoneyChangeScNotify {
         static instance: FiveDimMoneyChangeScNotify = FiveDimMoneyChangeScNotify {
-            JKLDOFBHABM: 0,
-            NDKMOINLOOE: 0,
+            OEPCCMAPFFH: 0,
+            KFBJGFJHGEK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for FiveDimMoneyChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20FiveDimMoneyChangeScNotify.proto\"`\n\x1aFiveDimMoneyChangeScNotif\
-    y\x12\x20\n\x0bJKLDOFBHABM\x18\x0e\x20\x01(\rR\x0bJKLDOFBHABM\x12\x20\n\
-    \x0bNDKMOINLOOE\x18\x05\x20\x01(\rR\x0bNDKMOINLOOEb\x06proto3\
+    y\x12\x20\n\x0bOEPCCMAPFFH\x18\x08\x20\x01(\rR\x0bOEPCCMAPFFH\x12\x20\n\
+    \x0bKFBJGFJHGEK\x18\x07\x20\x01(\rR\x0bKFBJGFJHGEKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

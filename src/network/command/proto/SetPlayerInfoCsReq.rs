@@ -86,13 +86,13 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                10 => {
                     self.nickname = is.read_string()?;
                 },
-                16 => {
+                56 => {
                     self.gender = is.read_enum_or_unknown()?;
                 },
-                120 => {
+                64 => {
                     self.is_modify = is.read_bool()?;
                 },
                 tag => {
@@ -108,10 +108,10 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if !self.nickname.is_empty() {
-            my_size += ::protobuf::rt::string_size(10, &self.nickname);
+            my_size += ::protobuf::rt::string_size(1, &self.nickname);
         }
         if self.gender != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            my_size += ::protobuf::rt::int32_size(2, self.gender.value());
+            my_size += ::protobuf::rt::int32_size(7, self.gender.value());
         }
         if self.is_modify != false {
             my_size += 1 + 1;
@@ -123,13 +123,13 @@ impl ::protobuf::Message for SetPlayerInfoCsReq {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if !self.nickname.is_empty() {
-            os.write_string(10, &self.nickname)?;
+            os.write_string(1, &self.nickname)?;
         }
         if self.gender != ::protobuf::EnumOrUnknown::new(super::Gender::Gender::GenderNone) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.gender))?;
+            os.write_enum(7, ::protobuf::EnumOrUnknown::value(&self.gender))?;
         }
         if self.is_modify != false {
-            os.write_bool(15, self.is_modify)?;
+            os.write_bool(8, self.is_modify)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SetPlayerInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x18SetPlayerInfoCsReq.proto\x1a\x0cGender.proto\"n\n\x12SetPlayerInfo\
-    CsReq\x12\x1a\n\x08nickname\x18\n\x20\x01(\tR\x08nickname\x12\x1f\n\x06g\
-    ender\x18\x02\x20\x01(\x0e2\x07.GenderR\x06gender\x12\x1b\n\tis_modify\
-    \x18\x0f\x20\x01(\x08R\x08isModifyb\x06proto3\
+    CsReq\x12\x1a\n\x08nickname\x18\x01\x20\x01(\tR\x08nickname\x12\x1f\n\
+    \x06gender\x18\x07\x20\x01(\x0e2\x07.GenderR\x06gender\x12\x1b\n\tis_mod\
+    ify\x18\x08\x20\x01(\x08R\x08isModifyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

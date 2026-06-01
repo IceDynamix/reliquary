@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PickRogueAvatarCsReq {
     // message fields
-    // @@protoc_insertion_point(field:PickRogueAvatarCsReq.base_avatar_id_list)
-    pub base_avatar_id_list: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:PickRogueAvatarCsReq.NOEPBNMJFGL)
+    pub NOEPBNMJFGL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:PickRogueAvatarCsReq.prop_entity_id)
     pub prop_entity_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl PickRogueAvatarCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "base_avatar_id_list",
-            |m: &PickRogueAvatarCsReq| { &m.base_avatar_id_list },
-            |m: &mut PickRogueAvatarCsReq| { &mut m.base_avatar_id_list },
+            "NOEPBNMJFGL",
+            |m: &PickRogueAvatarCsReq| { &m.NOEPBNMJFGL },
+            |m: &mut PickRogueAvatarCsReq| { &mut m.NOEPBNMJFGL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "prop_entity_id",
@@ -79,13 +79,13 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                26 => {
-                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
+                90 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NOEPBNMJFGL)?;
                 },
-                24 => {
-                    self.base_avatar_id_list.push(is.read_uint32()?);
+                88 => {
+                    self.NOEPBNMJFGL.push(is.read_uint32()?);
                 },
-                120 => {
+                8 => {
                     self.prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -100,9 +100,9 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.base_avatar_id_list);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(11, &self.NOEPBNMJFGL);
         if self.prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,9 +110,9 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(3, &self.base_avatar_id_list)?;
+        os.write_repeated_packed_uint32(11, &self.NOEPBNMJFGL)?;
         if self.prop_entity_id != 0 {
-            os.write_uint32(15, self.prop_entity_id)?;
+            os.write_uint32(1, self.prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -131,14 +131,14 @@ impl ::protobuf::Message for PickRogueAvatarCsReq {
     }
 
     fn clear(&mut self) {
-        self.base_avatar_id_list.clear();
+        self.NOEPBNMJFGL.clear();
         self.prop_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PickRogueAvatarCsReq {
         static instance: PickRogueAvatarCsReq = PickRogueAvatarCsReq {
-            base_avatar_id_list: ::std::vec::Vec::new(),
+            NOEPBNMJFGL: ::std::vec::Vec::new(),
             prop_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -164,9 +164,9 @@ impl ::protobuf::reflect::ProtobufValue for PickRogueAvatarCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aPickRogueAvatarCsReq.proto\"k\n\x14PickRogueAvatarCsReq\x12-\n\x13\
-    base_avatar_id_list\x18\x03\x20\x03(\rR\x10baseAvatarIdList\x12$\n\x0epr\
-    op_entity_id\x18\x0f\x20\x01(\rR\x0cpropEntityIdb\x06proto3\
+    \n\x1aPickRogueAvatarCsReq.proto\"^\n\x14PickRogueAvatarCsReq\x12\x20\n\
+    \x0bNOEPBNMJFGL\x18\x0b\x20\x03(\rR\x0bNOEPBNMJFGL\x12$\n\x0eprop_entity\
+    _id\x18\x01\x20\x01(\rR\x0cpropEntityIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

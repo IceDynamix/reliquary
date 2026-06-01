@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdInteractiveTriggerMazeBuffType)
 pub enum CmdInteractiveTriggerMazeBuffType {
-    // @@protoc_insertion_point(enum_value:CmdInteractiveTriggerMazeBuffType.COCNBMMFLII_PCPDHELPKEM)
-    COCNBMMFLII_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdInteractiveTriggerMazeBuffType.CmdCOEOHEBFICO)
-    CmdCOEOHEBFICO = 9479,
-    // @@protoc_insertion_point(enum_value:CmdInteractiveTriggerMazeBuffType.CmdJHIAGLGPMBD)
-    CmdJHIAGLGPMBD = 9480,
+    // @@protoc_insertion_point(enum_value:CmdInteractiveTriggerMazeBuffType.EFDHFOEMKHH_NLCDGIPGFDJ)
+    EFDHFOEMKHH_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdInteractiveTriggerMazeBuffType.EFDHFOEMKHH_GDINFMFDOPD)
+    EFDHFOEMKHH_GDINFMFDOPD = 9479,
+    // @@protoc_insertion_point(enum_value:CmdInteractiveTriggerMazeBuffType.EFDHFOEMKHH_DLDAICAFMPP)
+    EFDHFOEMKHH_DLDAICAFMPP = 9478,
 }
 
 impl ::protobuf::Enum for CmdInteractiveTriggerMazeBuffType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for CmdInteractiveTriggerMazeBuffType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdInteractiveTriggerMazeBuffType> {
         match value {
-            0 => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::COCNBMMFLII_PCPDHELPKEM),
-            9479 => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::CmdCOEOHEBFICO),
-            9480 => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::CmdJHIAGLGPMBD),
+            0 => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_NLCDGIPGFDJ),
+            9479 => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_GDINFMFDOPD),
+            9478 => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_DLDAICAFMPP),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdInteractiveTriggerMazeBuffType> {
         match str {
-            "COCNBMMFLII_PCPDHELPKEM" => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::COCNBMMFLII_PCPDHELPKEM),
-            "CmdCOEOHEBFICO" => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::CmdCOEOHEBFICO),
-            "CmdJHIAGLGPMBD" => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::CmdJHIAGLGPMBD),
+            "EFDHFOEMKHH_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_NLCDGIPGFDJ),
+            "EFDHFOEMKHH_GDINFMFDOPD" => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_GDINFMFDOPD),
+            "EFDHFOEMKHH_DLDAICAFMPP" => ::std::option::Option::Some(CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_DLDAICAFMPP),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdInteractiveTriggerMazeBuffType] = &[
-        CmdInteractiveTriggerMazeBuffType::COCNBMMFLII_PCPDHELPKEM,
-        CmdInteractiveTriggerMazeBuffType::CmdCOEOHEBFICO,
-        CmdInteractiveTriggerMazeBuffType::CmdJHIAGLGPMBD,
+        CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_NLCDGIPGFDJ,
+        CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_GDINFMFDOPD,
+        CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_DLDAICAFMPP,
     ];
 }
 
@@ -75,9 +75,9 @@ impl ::protobuf::EnumFull for CmdInteractiveTriggerMazeBuffType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdInteractiveTriggerMazeBuffType::COCNBMMFLII_PCPDHELPKEM => 0,
-            CmdInteractiveTriggerMazeBuffType::CmdCOEOHEBFICO => 1,
-            CmdInteractiveTriggerMazeBuffType::CmdJHIAGLGPMBD => 2,
+            CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_NLCDGIPGFDJ => 0,
+            CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_GDINFMFDOPD => 1,
+            CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_DLDAICAFMPP => 2,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -85,7 +85,7 @@ impl ::protobuf::EnumFull for CmdInteractiveTriggerMazeBuffType {
 
 impl ::std::default::Default for CmdInteractiveTriggerMazeBuffType {
     fn default() -> Self {
-        CmdInteractiveTriggerMazeBuffType::COCNBMMFLII_PCPDHELPKEM
+        CmdInteractiveTriggerMazeBuffType::EFDHFOEMKHH_NLCDGIPGFDJ
     }
 }
 
@@ -96,9 +96,10 @@ impl CmdInteractiveTriggerMazeBuffType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'CmdInteractiveTriggerMazeBuffType.proto*j\n!CmdInteractiveTriggerMaze\
-    BuffType\x12\x1b\n\x17COCNBMMFLII_PCPDHELPKEM\x10\0\x12\x13\n\x0eCmdCOEO\
-    HEBFICO\x10\x87J\x12\x13\n\x0eCmdJHIAGLGPMBD\x10\x88Jb\x06proto3\
+    \n'CmdInteractiveTriggerMazeBuffType.proto*|\n!CmdInteractiveTriggerMaze\
+    BuffType\x12\x1b\n\x17EFDHFOEMKHH_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17EFDHFOE\
+    MKHH_GDINFMFDOPD\x10\x87J\x12\x1c\n\x17EFDHFOEMKHH_DLDAICAFMPP\x10\x86Jb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetMatchPlayDataCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetMatchPlayDataCsReq.BFBJKAALFHD)
-    pub BFBJKAALFHD: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>>,
+    // @@protoc_insertion_point(field:GetMatchPlayDataCsReq.LCCHAKBKAHL)
+    pub LCCHAKBKAHL: ::std::vec::Vec<::protobuf::EnumOrUnknown<super::FightGameMode::FightGameMode>>,
     // special fields
     // @@protoc_insertion_point(special_field:GetMatchPlayDataCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GetMatchPlayDataCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BFBJKAALFHD",
-            |m: &GetMatchPlayDataCsReq| { &m.BFBJKAALFHD },
-            |m: &mut GetMatchPlayDataCsReq| { &mut m.BFBJKAALFHD },
+            "LCCHAKBKAHL",
+            |m: &GetMatchPlayDataCsReq| { &m.LCCHAKBKAHL },
+            |m: &mut GetMatchPlayDataCsReq| { &mut m.LCCHAKBKAHL },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetMatchPlayDataCsReq>(
             "GetMatchPlayDataCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for GetMatchPlayDataCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                64 => {
-                    self.BFBJKAALFHD.push(is.read_enum_or_unknown()?);
+                40 => {
+                    self.LCCHAKBKAHL.push(is.read_enum_or_unknown()?);
                 },
-                66 => {
-                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.BFBJKAALFHD)?
+                42 => {
+                    ::protobuf::rt::read_repeated_packed_enum_or_unknown_into(is, &mut self.LCCHAKBKAHL)?
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for GetMatchPlayDataCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(8, &self.BFBJKAALFHD);
+        my_size += ::protobuf::rt::vec_packed_enum_or_unknown_size(5, &self.LCCHAKBKAHL);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_enum_or_unknown(8, &self.BFBJKAALFHD)?;
+        os.write_repeated_packed_enum_or_unknown(5, &self.LCCHAKBKAHL)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for GetMatchPlayDataCsReq {
     }
 
     fn clear(&mut self) {
-        self.BFBJKAALFHD.clear();
+        self.LCCHAKBKAHL.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetMatchPlayDataCsReq {
         static instance: GetMatchPlayDataCsReq = GetMatchPlayDataCsReq {
-            BFBJKAALFHD: ::std::vec::Vec::new(),
+            LCCHAKBKAHL: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,8 +147,8 @@ impl ::protobuf::reflect::ProtobufValue for GetMatchPlayDataCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bGetMatchPlayDataCsReq.proto\x1a\x13FightGameMode.proto\"I\n\x15Get\
-    MatchPlayDataCsReq\x120\n\x0bBFBJKAALFHD\x18\x08\x20\x03(\x0e2\x0e.Fight\
-    GameModeR\x0bBFBJKAALFHDb\x06proto3\
+    MatchPlayDataCsReq\x120\n\x0bLCCHAKBKAHL\x18\x05\x20\x03(\x0e2\x0e.Fight\
+    GameModeR\x0bLCCHAKBKAHLb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,38 +30,40 @@ pub struct PVEBattleResultScRsp {
     // message fields
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.item_list_unk1)
     pub item_list_unk1: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.stage_id)
-    pub stage_id: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.DPHOLBABAOL)
+    pub DPHOLBABAOL: ::std::string::String,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.item_list_unk2)
     pub item_list_unk2: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.end_status)
-    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.AFJDGFMHMMA)
-    pub AFJDGFMHMMA: ::std::string::String,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.retcode)
-    pub retcode: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.event_id)
-    pub event_id: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.drop_data)
-    pub drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.NDEJJDHJBIM)
-    pub NDEJJDHJBIM: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.check_identical)
-    pub check_identical: bool,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.battle_avatar_list)
     pub battle_avatar_list: ::std::vec::Vec<super::BattleAvatar::BattleAvatar>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.battle_id)
-    pub battle_id: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.GGDBPDDAPDG)
-    pub GGDBPDDAPDG: u32,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.JAHEKNGDNMI)
-    pub JAHEKNGDNMI: ::std::string::String,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.CJAJBMAJNJP)
-    pub CJAJBMAJNJP: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.ABEMLCJBIEF)
+    pub ABEMLCJBIEF: ::protobuf::MessageField<super::LMDPKOELKFL::LMDPKOELKFL>,
     // @@protoc_insertion_point(field:PVEBattleResultScRsp.multiple_drop_data)
     pub multiple_drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:PVEBattleResultScRsp.HICNFJDGGGL)
-    pub HICNFJDGGGL: ::protobuf::MessageField<super::NNOIJJNCHJB::NNOIJJNCHJB>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.drop_data)
+    pub drop_data: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.DIMHPKFPPKA)
+    pub DIMHPKFPPKA: ::std::string::String,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.OPDKJBHLOJM)
+    pub OPDKJBHLOJM: bool,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.check_identical)
+    pub check_identical: bool,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.AKDGBBDFDHA)
+    pub AKDGBBDFDHA: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.stage_id)
+    pub stage_id: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.EAHGEKNLHPN)
+    pub EAHGEKNLHPN: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.event_id)
+    pub event_id: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.end_status)
+    pub end_status: ::protobuf::EnumOrUnknown<super::BattleEndStatus::BattleEndStatus>,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.battle_id)
+    pub battle_id: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.LEMGICCOKBK)
+    pub LEMGICCOKBK: u32,
+    // @@protoc_insertion_point(field:PVEBattleResultScRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PVEBattleResultScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -79,7 +81,7 @@ impl PVEBattleResultScRsp {
     }
 
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
-        let mut fields = ::std::vec::Vec::with_capacity(17);
+        let mut fields = ::std::vec::Vec::with_capacity(18);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "item_list_unk1",
@@ -87,34 +89,29 @@ impl PVEBattleResultScRsp {
             |m: &mut PVEBattleResultScRsp| { &mut m.item_list_unk1 },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "stage_id",
-            |m: &PVEBattleResultScRsp| { &m.stage_id },
-            |m: &mut PVEBattleResultScRsp| { &mut m.stage_id },
+            "DPHOLBABAOL",
+            |m: &PVEBattleResultScRsp| { &m.DPHOLBABAOL },
+            |m: &mut PVEBattleResultScRsp| { &mut m.DPHOLBABAOL },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "item_list_unk2",
             |m: &PVEBattleResultScRsp| { &m.item_list_unk2 },
             |m: &mut PVEBattleResultScRsp| { &mut m.item_list_unk2 },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "end_status",
-            |m: &PVEBattleResultScRsp| { &m.end_status },
-            |m: &mut PVEBattleResultScRsp| { &mut m.end_status },
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "battle_avatar_list",
+            |m: &PVEBattleResultScRsp| { &m.battle_avatar_list },
+            |m: &mut PVEBattleResultScRsp| { &mut m.battle_avatar_list },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AFJDGFMHMMA",
-            |m: &PVEBattleResultScRsp| { &m.AFJDGFMHMMA },
-            |m: &mut PVEBattleResultScRsp| { &mut m.AFJDGFMHMMA },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LMDPKOELKFL::LMDPKOELKFL>(
+            "ABEMLCJBIEF",
+            |m: &PVEBattleResultScRsp| { &m.ABEMLCJBIEF },
+            |m: &mut PVEBattleResultScRsp| { &mut m.ABEMLCJBIEF },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &PVEBattleResultScRsp| { &m.retcode },
-            |m: &mut PVEBattleResultScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "event_id",
-            |m: &PVEBattleResultScRsp| { &m.event_id },
-            |m: &mut PVEBattleResultScRsp| { &mut m.event_id },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
+            "multiple_drop_data",
+            |m: &PVEBattleResultScRsp| { &m.multiple_drop_data },
+            |m: &mut PVEBattleResultScRsp| { &mut m.multiple_drop_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "drop_data",
@@ -122,19 +119,44 @@ impl PVEBattleResultScRsp {
             |m: &mut PVEBattleResultScRsp| { &mut m.drop_data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDEJJDHJBIM",
-            |m: &PVEBattleResultScRsp| { &m.NDEJJDHJBIM },
-            |m: &mut PVEBattleResultScRsp| { &mut m.NDEJJDHJBIM },
+            "DIMHPKFPPKA",
+            |m: &PVEBattleResultScRsp| { &m.DIMHPKFPPKA },
+            |m: &mut PVEBattleResultScRsp| { &mut m.DIMHPKFPPKA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "OPDKJBHLOJM",
+            |m: &PVEBattleResultScRsp| { &m.OPDKJBHLOJM },
+            |m: &mut PVEBattleResultScRsp| { &mut m.OPDKJBHLOJM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "check_identical",
             |m: &PVEBattleResultScRsp| { &m.check_identical },
             |m: &mut PVEBattleResultScRsp| { &mut m.check_identical },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "battle_avatar_list",
-            |m: &PVEBattleResultScRsp| { &m.battle_avatar_list },
-            |m: &mut PVEBattleResultScRsp| { &mut m.battle_avatar_list },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "AKDGBBDFDHA",
+            |m: &PVEBattleResultScRsp| { &m.AKDGBBDFDHA },
+            |m: &mut PVEBattleResultScRsp| { &mut m.AKDGBBDFDHA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "stage_id",
+            |m: &PVEBattleResultScRsp| { &m.stage_id },
+            |m: &mut PVEBattleResultScRsp| { &mut m.stage_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EAHGEKNLHPN",
+            |m: &PVEBattleResultScRsp| { &m.EAHGEKNLHPN },
+            |m: &mut PVEBattleResultScRsp| { &mut m.EAHGEKNLHPN },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "event_id",
+            |m: &PVEBattleResultScRsp| { &m.event_id },
+            |m: &mut PVEBattleResultScRsp| { &mut m.event_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "end_status",
+            |m: &PVEBattleResultScRsp| { &m.end_status },
+            |m: &mut PVEBattleResultScRsp| { &mut m.end_status },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "battle_id",
@@ -142,29 +164,14 @@ impl PVEBattleResultScRsp {
             |m: &mut PVEBattleResultScRsp| { &mut m.battle_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GGDBPDDAPDG",
-            |m: &PVEBattleResultScRsp| { &m.GGDBPDDAPDG },
-            |m: &mut PVEBattleResultScRsp| { &mut m.GGDBPDDAPDG },
+            "LEMGICCOKBK",
+            |m: &PVEBattleResultScRsp| { &m.LEMGICCOKBK },
+            |m: &mut PVEBattleResultScRsp| { &mut m.LEMGICCOKBK },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JAHEKNGDNMI",
-            |m: &PVEBattleResultScRsp| { &m.JAHEKNGDNMI },
-            |m: &mut PVEBattleResultScRsp| { &mut m.JAHEKNGDNMI },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "CJAJBMAJNJP",
-            |m: &PVEBattleResultScRsp| { &m.CJAJBMAJNJP },
-            |m: &mut PVEBattleResultScRsp| { &mut m.CJAJBMAJNJP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
-            "multiple_drop_data",
-            |m: &PVEBattleResultScRsp| { &m.multiple_drop_data },
-            |m: &mut PVEBattleResultScRsp| { &mut m.multiple_drop_data },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::NNOIJJNCHJB::NNOIJJNCHJB>(
-            "HICNFJDGGGL",
-            |m: &PVEBattleResultScRsp| { &m.HICNFJDGGGL },
-            |m: &mut PVEBattleResultScRsp| { &mut m.HICNFJDGGGL },
+            "retcode",
+            |m: &PVEBattleResultScRsp| { &m.retcode },
+            |m: &mut PVEBattleResultScRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PVEBattleResultScRsp>(
             "PVEBattleResultScRsp",
@@ -184,56 +191,59 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
+                5818 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list_unk1)?;
                 },
-                24 => {
-                    self.stage_id = is.read_uint32()?;
-                },
-                3682 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list_unk2)?;
-                },
-                32 => {
-                    self.end_status = is.read_enum_or_unknown()?;
-                },
-                122 => {
-                    self.AFJDGFMHMMA = is.read_string()?;
-                },
-                112 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                96 => {
-                    self.event_id = is.read_uint32()?;
+                26 => {
+                    self.DPHOLBABAOL = is.read_string()?;
                 },
                 50 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.drop_data)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.item_list_unk2)?;
                 },
-                88 => {
-                    self.NDEJJDHJBIM = is.read_uint32()?;
-                },
-                64 => {
-                    self.check_identical = is.read_bool()?;
-                },
-                74 => {
+                34 => {
                     self.battle_avatar_list.push(is.read_message()?);
                 },
-                104 => {
-                    self.battle_id = is.read_uint32()?;
-                },
-                8 => {
-                    self.GGDBPDDAPDG = is.read_uint32()?;
+                11538 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ABEMLCJBIEF)?;
                 },
                 18 => {
-                    self.JAHEKNGDNMI = is.read_string()?;
-                },
-                80 => {
-                    self.CJAJBMAJNJP = is.read_uint32()?;
-                },
-                42 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.multiple_drop_data)?;
                 },
-                12658 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HICNFJDGGGL)?;
+                106 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.drop_data)?;
+                },
+                90 => {
+                    self.DIMHPKFPPKA = is.read_string()?;
+                },
+                5544 => {
+                    self.OPDKJBHLOJM = is.read_bool()?;
+                },
+                96 => {
+                    self.check_identical = is.read_bool()?;
+                },
+                64 => {
+                    self.AKDGBBDFDHA = is.read_uint32()?;
+                },
+                8 => {
+                    self.stage_id = is.read_uint32()?;
+                },
+                72 => {
+                    self.EAHGEKNLHPN = is.read_uint32()?;
+                },
+                80 => {
+                    self.event_id = is.read_uint32()?;
+                },
+                120 => {
+                    self.end_status = is.read_enum_or_unknown()?;
+                },
+                56 => {
+                    self.battle_id = is.read_uint32()?;
+                },
+                112 => {
+                    self.LEMGICCOKBK = is.read_uint32()?;
+                },
+                40 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -249,60 +259,63 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
         let mut my_size = 0;
         if let Some(v) = self.item_list_unk1.as_ref() {
             let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.stage_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.stage_id);
+        if !self.DPHOLBABAOL.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.DPHOLBABAOL);
         }
         if let Some(v) = self.item_list_unk2.as_ref() {
             let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            my_size += ::protobuf::rt::int32_size(4, self.end_status.value());
-        }
-        if !self.AFJDGFMHMMA.is_empty() {
-            my_size += ::protobuf::rt::string_size(15, &self.AFJDGFMHMMA);
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
-        }
-        if self.event_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.event_id);
-        }
-        if let Some(v) = self.drop_data.as_ref() {
-            let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        if self.NDEJJDHJBIM != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.NDEJJDHJBIM);
-        }
-        if self.check_identical != false {
-            my_size += 1 + 1;
         }
         for value in &self.battle_avatar_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.battle_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.battle_id);
-        }
-        if self.GGDBPDDAPDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.GGDBPDDAPDG);
-        }
-        if !self.JAHEKNGDNMI.is_empty() {
-            my_size += ::protobuf::rt::string_size(2, &self.JAHEKNGDNMI);
-        }
-        if self.CJAJBMAJNJP != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.CJAJBMAJNJP);
+        if let Some(v) = self.ABEMLCJBIEF.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if let Some(v) = self.multiple_drop_data.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.HICNFJDGGGL.as_ref() {
+        if let Some(v) = self.drop_data.as_ref() {
             let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if !self.DIMHPKFPPKA.is_empty() {
+            my_size += ::protobuf::rt::string_size(11, &self.DIMHPKFPPKA);
+        }
+        if self.OPDKJBHLOJM != false {
+            my_size += 2 + 1;
+        }
+        if self.check_identical != false {
+            my_size += 1 + 1;
+        }
+        if self.AKDGBBDFDHA != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.AKDGBBDFDHA);
+        }
+        if self.stage_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.stage_id);
+        }
+        if self.EAHGEKNLHPN != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.EAHGEKNLHPN);
+        }
+        if self.event_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(10, self.event_id);
+        }
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            my_size += ::protobuf::rt::int32_size(15, self.end_status.value());
+        }
+        if self.battle_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.battle_id);
+        }
+        if self.LEMGICCOKBK != 0 {
+            my_size += ::protobuf::rt::uint32_size(14, self.LEMGICCOKBK);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -311,55 +324,58 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.item_list_unk1.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(7, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(727, v, os)?;
         }
-        if self.stage_id != 0 {
-            os.write_uint32(3, self.stage_id)?;
+        if !self.DPHOLBABAOL.is_empty() {
+            os.write_string(3, &self.DPHOLBABAOL)?;
         }
         if let Some(v) = self.item_list_unk2.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(460, v, os)?;
-        }
-        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
-            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
-        }
-        if !self.AFJDGFMHMMA.is_empty() {
-            os.write_string(15, &self.AFJDGFMHMMA)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
-        }
-        if self.event_id != 0 {
-            os.write_uint32(12, self.event_id)?;
-        }
-        if let Some(v) = self.drop_data.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.NDEJJDHJBIM != 0 {
-            os.write_uint32(11, self.NDEJJDHJBIM)?;
-        }
-        if self.check_identical != false {
-            os.write_bool(8, self.check_identical)?;
-        }
         for v in &self.battle_avatar_list {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.battle_id != 0 {
-            os.write_uint32(13, self.battle_id)?;
-        }
-        if self.GGDBPDDAPDG != 0 {
-            os.write_uint32(1, self.GGDBPDDAPDG)?;
-        }
-        if !self.JAHEKNGDNMI.is_empty() {
-            os.write_string(2, &self.JAHEKNGDNMI)?;
-        }
-        if self.CJAJBMAJNJP != 0 {
-            os.write_uint32(10, self.CJAJBMAJNJP)?;
+        if let Some(v) = self.ABEMLCJBIEF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(1442, v, os)?;
         }
         if let Some(v) = self.multiple_drop_data.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        if let Some(v) = self.HICNFJDGGGL.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1582, v, os)?;
+        if let Some(v) = self.drop_data.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        }
+        if !self.DIMHPKFPPKA.is_empty() {
+            os.write_string(11, &self.DIMHPKFPPKA)?;
+        }
+        if self.OPDKJBHLOJM != false {
+            os.write_bool(693, self.OPDKJBHLOJM)?;
+        }
+        if self.check_identical != false {
+            os.write_bool(12, self.check_identical)?;
+        }
+        if self.AKDGBBDFDHA != 0 {
+            os.write_uint32(8, self.AKDGBBDFDHA)?;
+        }
+        if self.stage_id != 0 {
+            os.write_uint32(1, self.stage_id)?;
+        }
+        if self.EAHGEKNLHPN != 0 {
+            os.write_uint32(9, self.EAHGEKNLHPN)?;
+        }
+        if self.event_id != 0 {
+            os.write_uint32(10, self.event_id)?;
+        }
+        if self.end_status != ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.end_status))?;
+        }
+        if self.battle_id != 0 {
+            os.write_uint32(7, self.battle_id)?;
+        }
+        if self.LEMGICCOKBK != 0 {
+            os.write_uint32(14, self.LEMGICCOKBK)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -379,44 +395,46 @@ impl ::protobuf::Message for PVEBattleResultScRsp {
 
     fn clear(&mut self) {
         self.item_list_unk1.clear();
-        self.stage_id = 0;
+        self.DPHOLBABAOL.clear();
         self.item_list_unk2.clear();
-        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
-        self.AFJDGFMHMMA.clear();
-        self.retcode = 0;
-        self.event_id = 0;
-        self.drop_data.clear();
-        self.NDEJJDHJBIM = 0;
-        self.check_identical = false;
         self.battle_avatar_list.clear();
-        self.battle_id = 0;
-        self.GGDBPDDAPDG = 0;
-        self.JAHEKNGDNMI.clear();
-        self.CJAJBMAJNJP = 0;
+        self.ABEMLCJBIEF.clear();
         self.multiple_drop_data.clear();
-        self.HICNFJDGGGL.clear();
+        self.drop_data.clear();
+        self.DIMHPKFPPKA.clear();
+        self.OPDKJBHLOJM = false;
+        self.check_identical = false;
+        self.AKDGBBDFDHA = 0;
+        self.stage_id = 0;
+        self.EAHGEKNLHPN = 0;
+        self.event_id = 0;
+        self.end_status = ::protobuf::EnumOrUnknown::new(super::BattleEndStatus::BattleEndStatus::BATTLE_END_NONE);
+        self.battle_id = 0;
+        self.LEMGICCOKBK = 0;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PVEBattleResultScRsp {
         static instance: PVEBattleResultScRsp = PVEBattleResultScRsp {
             item_list_unk1: ::protobuf::MessageField::none(),
-            stage_id: 0,
+            DPHOLBABAOL: ::std::string::String::new(),
             item_list_unk2: ::protobuf::MessageField::none(),
-            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
-            AFJDGFMHMMA: ::std::string::String::new(),
-            retcode: 0,
-            event_id: 0,
-            drop_data: ::protobuf::MessageField::none(),
-            NDEJJDHJBIM: 0,
-            check_identical: false,
             battle_avatar_list: ::std::vec::Vec::new(),
-            battle_id: 0,
-            GGDBPDDAPDG: 0,
-            JAHEKNGDNMI: ::std::string::String::new(),
-            CJAJBMAJNJP: 0,
+            ABEMLCJBIEF: ::protobuf::MessageField::none(),
             multiple_drop_data: ::protobuf::MessageField::none(),
-            HICNFJDGGGL: ::protobuf::MessageField::none(),
+            drop_data: ::protobuf::MessageField::none(),
+            DIMHPKFPPKA: ::std::string::String::new(),
+            OPDKJBHLOJM: false,
+            check_identical: false,
+            AKDGBBDFDHA: 0,
+            stage_id: 0,
+            EAHGEKNLHPN: 0,
+            event_id: 0,
+            end_status: ::protobuf::EnumOrUnknown::from_i32(0),
+            battle_id: 0,
+            LEMGICCOKBK: 0,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -442,24 +460,24 @@ impl ::protobuf::reflect::ProtobufValue for PVEBattleResultScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1aPVEBattleResultScRsp.proto\x1a\x12BattleAvatar.proto\x1a\x15Battle\
-    EndStatus.proto\x1a\x0eItemList.proto\x1a\x11NNOIJJNCHJB.proto\"\xb9\x05\
-    \n\x14PVEBattleResultScRsp\x12/\n\x0eitem_list_unk1\x18\x07\x20\x01(\x0b\
-    2\t.ItemListR\x0citemListUnk1\x12\x19\n\x08stage_id\x18\x03\x20\x01(\rR\
-    \x07stageId\x120\n\x0eitem_list_unk2\x18\xcc\x03\x20\x01(\x0b2\t.ItemLis\
-    tR\x0citemListUnk2\x12/\n\nend_status\x18\x04\x20\x01(\x0e2\x10.BattleEn\
-    dStatusR\tendStatus\x12\x20\n\x0bAFJDGFMHMMA\x18\x0f\x20\x01(\tR\x0bAFJD\
-    GFMHMMA\x12\x18\n\x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x19\n\
-    \x08event_id\x18\x0c\x20\x01(\rR\x07eventId\x12&\n\tdrop_data\x18\x06\
-    \x20\x01(\x0b2\t.ItemListR\x08dropData\x12\x20\n\x0bNDEJJDHJBIM\x18\x0b\
-    \x20\x01(\rR\x0bNDEJJDHJBIM\x12'\n\x0fcheck_identical\x18\x08\x20\x01(\
-    \x08R\x0echeckIdentical\x12;\n\x12battle_avatar_list\x18\t\x20\x03(\x0b2\
-    \r.BattleAvatarR\x10battleAvatarList\x12\x1b\n\tbattle_id\x18\r\x20\x01(\
-    \rR\x08battleId\x12\x20\n\x0bGGDBPDDAPDG\x18\x01\x20\x01(\rR\x0bGGDBPDDA\
-    PDG\x12\x20\n\x0bJAHEKNGDNMI\x18\x02\x20\x01(\tR\x0bJAHEKNGDNMI\x12\x20\
-    \n\x0bCJAJBMAJNJP\x18\n\x20\x01(\rR\x0bCJAJBMAJNJP\x127\n\x12multiple_dr\
-    op_data\x18\x05\x20\x01(\x0b2\t.ItemListR\x10multipleDropData\x12/\n\x0b\
-    HICNFJDGGGL\x18\xae\x0c\x20\x01(\x0b2\x0c.NNOIJJNCHJBR\x0bHICNFJDGGGLb\
-    \x06proto3\
+    EndStatus.proto\x1a\x0eItemList.proto\x1a\x11LMDPKOELKFL.proto\"\xdc\x05\
+    \n\x14PVEBattleResultScRsp\x120\n\x0eitem_list_unk1\x18\xd7\x05\x20\x01(\
+    \x0b2\t.ItemListR\x0citemListUnk1\x12\x20\n\x0bDPHOLBABAOL\x18\x03\x20\
+    \x01(\tR\x0bDPHOLBABAOL\x12/\n\x0eitem_list_unk2\x18\x06\x20\x01(\x0b2\t\
+    .ItemListR\x0citemListUnk2\x12;\n\x12battle_avatar_list\x18\x04\x20\x03(\
+    \x0b2\r.BattleAvatarR\x10battleAvatarList\x12/\n\x0bABEMLCJBIEF\x18\xa2\
+    \x0b\x20\x01(\x0b2\x0c.LMDPKOELKFLR\x0bABEMLCJBIEF\x127\n\x12multiple_dr\
+    op_data\x18\x02\x20\x01(\x0b2\t.ItemListR\x10multipleDropData\x12&\n\tdr\
+    op_data\x18\r\x20\x01(\x0b2\t.ItemListR\x08dropData\x12\x20\n\x0bDIMHPKF\
+    PPKA\x18\x0b\x20\x01(\tR\x0bDIMHPKFPPKA\x12!\n\x0bOPDKJBHLOJM\x18\xb5\
+    \x05\x20\x01(\x08R\x0bOPDKJBHLOJM\x12'\n\x0fcheck_identical\x18\x0c\x20\
+    \x01(\x08R\x0echeckIdentical\x12\x20\n\x0bAKDGBBDFDHA\x18\x08\x20\x01(\r\
+    R\x0bAKDGBBDFDHA\x12\x19\n\x08stage_id\x18\x01\x20\x01(\rR\x07stageId\
+    \x12\x20\n\x0bEAHGEKNLHPN\x18\t\x20\x01(\rR\x0bEAHGEKNLHPN\x12\x19\n\x08\
+    event_id\x18\n\x20\x01(\rR\x07eventId\x12/\n\nend_status\x18\x0f\x20\x01\
+    (\x0e2\x10.BattleEndStatusR\tendStatus\x12\x1b\n\tbattle_id\x18\x07\x20\
+    \x01(\rR\x08battleId\x12\x20\n\x0bLEMGICCOKBK\x18\x0e\x20\x01(\rR\x0bLEM\
+    GICCOKBK\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -480,7 +498,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
             deps.push(super::BattleAvatar::file_descriptor().clone());
             deps.push(super::BattleEndStatus::file_descriptor().clone());
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::NNOIJJNCHJB::file_descriptor().clone());
+            deps.push(super::LMDPKOELKFL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(PVEBattleResultScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

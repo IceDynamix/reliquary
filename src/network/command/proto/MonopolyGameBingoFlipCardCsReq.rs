@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct MonopolyGameBingoFlipCardCsReq {
     // message fields
-    // @@protoc_insertion_point(field:MonopolyGameBingoFlipCardCsReq.NBFLCNHFEFM)
-    pub NBFLCNHFEFM: u32,
+    // @@protoc_insertion_point(field:MonopolyGameBingoFlipCardCsReq.LKFIGBGPEJB)
+    pub LKFIGBGPEJB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:MonopolyGameBingoFlipCardCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl MonopolyGameBingoFlipCardCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NBFLCNHFEFM",
-            |m: &MonopolyGameBingoFlipCardCsReq| { &m.NBFLCNHFEFM },
-            |m: &mut MonopolyGameBingoFlipCardCsReq| { &mut m.NBFLCNHFEFM },
+            "LKFIGBGPEJB",
+            |m: &MonopolyGameBingoFlipCardCsReq| { &m.LKFIGBGPEJB },
+            |m: &mut MonopolyGameBingoFlipCardCsReq| { &mut m.LKFIGBGPEJB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<MonopolyGameBingoFlipCardCsReq>(
             "MonopolyGameBingoFlipCardCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for MonopolyGameBingoFlipCardCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                80 => {
-                    self.NBFLCNHFEFM = is.read_uint32()?;
+                32 => {
+                    self.LKFIGBGPEJB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for MonopolyGameBingoFlipCardCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NBFLCNHFEFM != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.NBFLCNHFEFM);
+        if self.LKFIGBGPEJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.LKFIGBGPEJB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for MonopolyGameBingoFlipCardCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NBFLCNHFEFM != 0 {
-            os.write_uint32(10, self.NBFLCNHFEFM)?;
+        if self.LKFIGBGPEJB != 0 {
+            os.write_uint32(4, self.LKFIGBGPEJB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for MonopolyGameBingoFlipCardCsReq {
     }
 
     fn clear(&mut self) {
-        self.NBFLCNHFEFM = 0;
+        self.LKFIGBGPEJB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static MonopolyGameBingoFlipCardCsReq {
         static instance: MonopolyGameBingoFlipCardCsReq = MonopolyGameBingoFlipCardCsReq {
-            NBFLCNHFEFM: 0,
+            LKFIGBGPEJB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyGameBingoFlipCardCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n$MonopolyGameBingoFlipCardCsReq.proto\"B\n\x1eMonopolyGameBingoFlipCar\
-    dCsReq\x12\x20\n\x0bNBFLCNHFEFM\x18\n\x20\x01(\rR\x0bNBFLCNHFEFMb\x06pro\
-    to3\
+    dCsReq\x12\x20\n\x0bLKFIGBGPEJB\x18\x04\x20\x01(\rR\x0bLKFIGBGPEJBb\x06p\
+    roto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

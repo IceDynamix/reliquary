@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpdateAiPamSettingsCsReq {
     // message fields
-    // @@protoc_insertion_point(field:UpdateAiPamSettingsCsReq.EKBMIOCOLIC)
-    pub EKBMIOCOLIC: bool,
+    // @@protoc_insertion_point(field:UpdateAiPamSettingsCsReq.LOCNGFLCENG)
+    pub LOCNGFLCENG: bool,
     // special fields
     // @@protoc_insertion_point(special_field:UpdateAiPamSettingsCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl UpdateAiPamSettingsCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EKBMIOCOLIC",
-            |m: &UpdateAiPamSettingsCsReq| { &m.EKBMIOCOLIC },
-            |m: &mut UpdateAiPamSettingsCsReq| { &mut m.EKBMIOCOLIC },
+            "LOCNGFLCENG",
+            |m: &UpdateAiPamSettingsCsReq| { &m.LOCNGFLCENG },
+            |m: &mut UpdateAiPamSettingsCsReq| { &mut m.LOCNGFLCENG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpdateAiPamSettingsCsReq>(
             "UpdateAiPamSettingsCsReq",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for UpdateAiPamSettingsCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 80 => {
-                    self.EKBMIOCOLIC = is.read_bool()?;
+                    self.LOCNGFLCENG = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,7 +87,7 @@ impl ::protobuf::Message for UpdateAiPamSettingsCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.EKBMIOCOLIC != false {
+        if self.LOCNGFLCENG != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -96,8 +96,8 @@ impl ::protobuf::Message for UpdateAiPamSettingsCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.EKBMIOCOLIC != false {
-            os.write_bool(10, self.EKBMIOCOLIC)?;
+        if self.LOCNGFLCENG != false {
+            os.write_bool(10, self.LOCNGFLCENG)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for UpdateAiPamSettingsCsReq {
     }
 
     fn clear(&mut self) {
-        self.EKBMIOCOLIC = false;
+        self.LOCNGFLCENG = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpdateAiPamSettingsCsReq {
         static instance: UpdateAiPamSettingsCsReq = UpdateAiPamSettingsCsReq {
-            EKBMIOCOLIC: false,
+            LOCNGFLCENG: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for UpdateAiPamSettingsCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1eUpdateAiPamSettingsCsReq.proto\"<\n\x18UpdateAiPamSettingsCsReq\
-    \x12\x20\n\x0bEKBMIOCOLIC\x18\n\x20\x01(\x08R\x0bEKBMIOCOLICb\x06proto3\
+    \x12\x20\n\x0bLOCNGFLCENG\x18\n\x20\x01(\x08R\x0bLOCNGFLCENGb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

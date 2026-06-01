@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingActivatedPrivilegeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChenLingActivatedPrivilegeCsReq.HCEOMBKCDDM)
-    pub HCEOMBKCDDM: u32,
+    // @@protoc_insertion_point(field:ChenLingActivatedPrivilegeCsReq.ADBGHKBGGJM)
+    pub ADBGHKBGGJM: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChenLingActivatedPrivilegeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl ChenLingActivatedPrivilegeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCEOMBKCDDM",
-            |m: &ChenLingActivatedPrivilegeCsReq| { &m.HCEOMBKCDDM },
-            |m: &mut ChenLingActivatedPrivilegeCsReq| { &mut m.HCEOMBKCDDM },
+            "ADBGHKBGGJM",
+            |m: &ChenLingActivatedPrivilegeCsReq| { &m.ADBGHKBGGJM },
+            |m: &mut ChenLingActivatedPrivilegeCsReq| { &mut m.ADBGHKBGGJM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChenLingActivatedPrivilegeCsReq>(
             "ChenLingActivatedPrivilegeCsReq",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.HCEOMBKCDDM = is.read_uint32()?;
+                88 => {
+                    self.ADBGHKBGGJM = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.HCEOMBKCDDM != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.HCEOMBKCDDM);
+        if self.ADBGHKBGGJM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.ADBGHKBGGJM);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.HCEOMBKCDDM != 0 {
-            os.write_uint32(12, self.HCEOMBKCDDM)?;
+        if self.ADBGHKBGGJM != 0 {
+            os.write_uint32(11, self.ADBGHKBGGJM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for ChenLingActivatedPrivilegeCsReq {
     }
 
     fn clear(&mut self) {
-        self.HCEOMBKCDDM = 0;
+        self.ADBGHKBGGJM = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingActivatedPrivilegeCsReq {
         static instance: ChenLingActivatedPrivilegeCsReq = ChenLingActivatedPrivilegeCsReq {
-            HCEOMBKCDDM: 0,
+            ADBGHKBGGJM: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingActivatedPrivilegeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%ChenLingActivatedPrivilegeCsReq.proto\"C\n\x1fChenLingActivatedPrivil\
-    egeCsReq\x12\x20\n\x0bHCEOMBKCDDM\x18\x0c\x20\x01(\rR\x0bHCEOMBKCDDMb\
+    egeCsReq\x12\x20\n\x0bADBGHKBGGJM\x18\x0b\x20\x01(\rR\x0bADBGHKBGGJMb\
     \x06proto3\
 ";
 

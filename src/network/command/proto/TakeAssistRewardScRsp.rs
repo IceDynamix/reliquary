@@ -30,8 +30,8 @@ pub struct TakeAssistRewardScRsp {
     // message fields
     // @@protoc_insertion_point(field:TakeAssistRewardScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:TakeAssistRewardScRsp.CADPJMANPCA)
-    pub CADPJMANPCA: ::std::vec::Vec<super::MBICBKAFGIK::MBICBKAFGIK>,
+    // @@protoc_insertion_point(field:TakeAssistRewardScRsp.OILHLECGBCH)
+    pub OILHLECGBCH: ::std::vec::Vec<super::KAODLPJMEFE::KAODLPJMEFE>,
     // @@protoc_insertion_point(field:TakeAssistRewardScRsp.retcode)
     pub retcode: u32,
     // special fields
@@ -59,9 +59,9 @@ impl TakeAssistRewardScRsp {
             |m: &mut TakeAssistRewardScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CADPJMANPCA",
-            |m: &TakeAssistRewardScRsp| { &m.CADPJMANPCA },
-            |m: &mut TakeAssistRewardScRsp| { &mut m.CADPJMANPCA },
+            "OILHLECGBCH",
+            |m: &TakeAssistRewardScRsp| { &m.OILHLECGBCH },
+            |m: &mut TakeAssistRewardScRsp| { &mut m.OILHLECGBCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for TakeAssistRewardScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                82 => {
+                18 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                74 => {
-                    self.CADPJMANPCA.push(is.read_message()?);
+                106 => {
+                    self.OILHLECGBCH.push(is.read_message()?);
                 },
-                48 => {
+                72 => {
                     self.retcode = is.read_uint32()?;
                 },
                 tag => {
@@ -111,12 +111,12 @@ impl ::protobuf::Message for TakeAssistRewardScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        for value in &self.CADPJMANPCA {
+        for value in &self.OILHLECGBCH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -125,13 +125,13 @@ impl ::protobuf::Message for TakeAssistRewardScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
-        for v in &self.CADPJMANPCA {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+        for v in &self.OILHLECGBCH {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
         };
         if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
+            os.write_uint32(9, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -151,7 +151,7 @@ impl ::protobuf::Message for TakeAssistRewardScRsp {
 
     fn clear(&mut self) {
         self.reward.clear();
-        self.CADPJMANPCA.clear();
+        self.OILHLECGBCH.clear();
         self.retcode = 0;
         self.special_fields.clear();
     }
@@ -159,7 +159,7 @@ impl ::protobuf::Message for TakeAssistRewardScRsp {
     fn default_instance() -> &'static TakeAssistRewardScRsp {
         static instance: TakeAssistRewardScRsp = TakeAssistRewardScRsp {
             reward: ::protobuf::MessageField::none(),
-            CADPJMANPCA: ::std::vec::Vec::new(),
+            OILHLECGBCH: ::std::vec::Vec::new(),
             retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeAssistRewardScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1bTakeAssistRewardScRsp.proto\x1a\x0eItemList.proto\x1a\x11MBICBKAFG\
-    IK.proto\"\x84\x01\n\x15TakeAssistRewardScRsp\x12!\n\x06reward\x18\n\x20\
-    \x01(\x0b2\t.ItemListR\x06reward\x12.\n\x0bCADPJMANPCA\x18\t\x20\x03(\
-    \x0b2\x0c.MBICBKAFGIKR\x0bCADPJMANPCA\x12\x18\n\x07retcode\x18\x06\x20\
+    \n\x1bTakeAssistRewardScRsp.proto\x1a\x0eItemList.proto\x1a\x11KAODLPJME\
+    FE.proto\"\x84\x01\n\x15TakeAssistRewardScRsp\x12!\n\x06reward\x18\x02\
+    \x20\x01(\x0b2\t.ItemListR\x06reward\x12.\n\x0bOILHLECGBCH\x18\r\x20\x03\
+    (\x0b2\x0c.KAODLPJMEFER\x0bOILHLECGBCH\x12\x18\n\x07retcode\x18\t\x20\
     \x01(\rR\x07retcodeb\x06proto3\
 ";
 
@@ -208,7 +208,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
             deps.push(super::ItemList::file_descriptor().clone());
-            deps.push(super::MBICBKAFGIK::file_descriptor().clone());
+            deps.push(super::KAODLPJMEFE::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(TakeAssistRewardScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

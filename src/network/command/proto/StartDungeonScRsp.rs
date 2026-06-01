@@ -28,16 +28,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct StartDungeonScRsp {
     // message fields
-    // @@protoc_insertion_point(field:StartDungeonScRsp.LBCIKPEFAIP)
-    pub LBCIKPEFAIP: ::std::vec::Vec<super::PDPALPDALDG::PDPALPDALDG>,
-    // @@protoc_insertion_point(field:StartDungeonScRsp.target_side)
-    pub target_side: u32,
-    // @@protoc_insertion_point(field:StartDungeonScRsp.CPOMNGJDBCL)
-    pub CPOMNGJDBCL: ::std::vec::Vec<super::GKDEKJKOIJN::GKDEKJKOIJN>,
+    // @@protoc_insertion_point(field:StartDungeonScRsp.KMMBNFIFALA)
+    pub KMMBNFIFALA: ::std::vec::Vec<super::BCIMOPDDKHH::BCIMOPDDKHH>,
+    // @@protoc_insertion_point(field:StartDungeonScRsp.ENCINPIHHDF)
+    pub ENCINPIHHDF: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
+    // @@protoc_insertion_point(field:StartDungeonScRsp.COLOHMBFKIH)
+    pub COLOHMBFKIH: ::std::vec::Vec<super::APAMFCKFHLL::APAMFCKFHLL>,
+    // @@protoc_insertion_point(field:StartDungeonScRsp.EICEKDBENKM)
+    pub EICEKDBENKM: u32,
     // @@protoc_insertion_point(field:StartDungeonScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:StartDungeonScRsp.OICEJIMEONG)
-    pub OICEJIMEONG: ::std::vec::Vec<super::GKDEKJKOIJN::GKDEKJKOIJN>,
     // special fields
     // @@protoc_insertion_point(special_field:StartDungeonScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -58,29 +58,29 @@ impl StartDungeonScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(5);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "LBCIKPEFAIP",
-            |m: &StartDungeonScRsp| { &m.LBCIKPEFAIP },
-            |m: &mut StartDungeonScRsp| { &mut m.LBCIKPEFAIP },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "target_side",
-            |m: &StartDungeonScRsp| { &m.target_side },
-            |m: &mut StartDungeonScRsp| { &mut m.target_side },
+            "KMMBNFIFALA",
+            |m: &StartDungeonScRsp| { &m.KMMBNFIFALA },
+            |m: &mut StartDungeonScRsp| { &mut m.KMMBNFIFALA },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CPOMNGJDBCL",
-            |m: &StartDungeonScRsp| { &m.CPOMNGJDBCL },
-            |m: &mut StartDungeonScRsp| { &mut m.CPOMNGJDBCL },
+            "ENCINPIHHDF",
+            |m: &StartDungeonScRsp| { &m.ENCINPIHHDF },
+            |m: &mut StartDungeonScRsp| { &mut m.ENCINPIHHDF },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "COLOHMBFKIH",
+            |m: &StartDungeonScRsp| { &m.COLOHMBFKIH },
+            |m: &mut StartDungeonScRsp| { &mut m.COLOHMBFKIH },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "EICEKDBENKM",
+            |m: &StartDungeonScRsp| { &m.EICEKDBENKM },
+            |m: &mut StartDungeonScRsp| { &mut m.EICEKDBENKM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &StartDungeonScRsp| { &m.retcode },
             |m: &mut StartDungeonScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "OICEJIMEONG",
-            |m: &StartDungeonScRsp| { &m.OICEJIMEONG },
-            |m: &mut StartDungeonScRsp| { &mut m.OICEJIMEONG },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<StartDungeonScRsp>(
             "StartDungeonScRsp",
@@ -100,20 +100,20 @@ impl ::protobuf::Message for StartDungeonScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                66 => {
-                    self.LBCIKPEFAIP.push(is.read_message()?);
-                },
-                24 => {
-                    self.target_side = is.read_uint32()?;
-                },
-                90 => {
-                    self.CPOMNGJDBCL.push(is.read_message()?);
-                },
-                48 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 82 => {
-                    self.OICEJIMEONG.push(is.read_message()?);
+                    self.KMMBNFIFALA.push(is.read_message()?);
+                },
+                114 => {
+                    self.ENCINPIHHDF.push(is.read_message()?);
+                },
+                106 => {
+                    self.COLOHMBFKIH.push(is.read_message()?);
+                },
+                88 => {
+                    self.EICEKDBENKM = is.read_uint32()?;
+                },
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -127,45 +127,45 @@ impl ::protobuf::Message for StartDungeonScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.LBCIKPEFAIP {
+        for value in &self.KMMBNFIFALA {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.target_side != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.target_side);
+        for value in &self.ENCINPIHHDF {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.COLOHMBFKIH {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if self.EICEKDBENKM != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.EICEKDBENKM);
         }
-        for value in &self.CPOMNGJDBCL {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
-        for value in &self.OICEJIMEONG {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.LBCIKPEFAIP {
-            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
-        };
-        if self.target_side != 0 {
-            os.write_uint32(3, self.target_side)?;
-        }
-        for v in &self.CPOMNGJDBCL {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
-        };
-        if self.retcode != 0 {
-            os.write_uint32(6, self.retcode)?;
-        }
-        for v in &self.OICEJIMEONG {
+        for v in &self.KMMBNFIFALA {
             ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         };
+        for v in &self.ENCINPIHHDF {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        };
+        for v in &self.COLOHMBFKIH {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        if self.EICEKDBENKM != 0 {
+            os.write_uint32(11, self.EICEKDBENKM)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(12, self.retcode)?;
+        }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -183,21 +183,21 @@ impl ::protobuf::Message for StartDungeonScRsp {
     }
 
     fn clear(&mut self) {
-        self.LBCIKPEFAIP.clear();
-        self.target_side = 0;
-        self.CPOMNGJDBCL.clear();
+        self.KMMBNFIFALA.clear();
+        self.ENCINPIHHDF.clear();
+        self.COLOHMBFKIH.clear();
+        self.EICEKDBENKM = 0;
         self.retcode = 0;
-        self.OICEJIMEONG.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static StartDungeonScRsp {
         static instance: StartDungeonScRsp = StartDungeonScRsp {
-            LBCIKPEFAIP: ::std::vec::Vec::new(),
-            target_side: 0,
-            CPOMNGJDBCL: ::std::vec::Vec::new(),
+            KMMBNFIFALA: ::std::vec::Vec::new(),
+            ENCINPIHHDF: ::std::vec::Vec::new(),
+            COLOHMBFKIH: ::std::vec::Vec::new(),
+            EICEKDBENKM: 0,
             retcode: 0,
-            OICEJIMEONG: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -222,13 +222,13 @@ impl ::protobuf::reflect::ProtobufValue for StartDungeonScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17StartDungeonScRsp.proto\x1a\x11GKDEKJKOIJN.proto\x1a\x11PDPALPDALD\
-    G.proto\"\xde\x01\n\x11StartDungeonScRsp\x12.\n\x0bLBCIKPEFAIP\x18\x08\
-    \x20\x03(\x0b2\x0c.PDPALPDALDGR\x0bLBCIKPEFAIP\x12\x1f\n\x0btarget_side\
-    \x18\x03\x20\x01(\rR\ntargetSide\x12.\n\x0bCPOMNGJDBCL\x18\x0b\x20\x03(\
-    \x0b2\x0c.GKDEKJKOIJNR\x0bCPOMNGJDBCL\x12\x18\n\x07retcode\x18\x06\x20\
-    \x01(\rR\x07retcode\x12.\n\x0bOICEJIMEONG\x18\n\x20\x03(\x0b2\x0c.GKDEKJ\
-    KOIJNR\x0bOICEJIMEONGb\x06proto3\
+    \n\x17StartDungeonScRsp.proto\x1a\x11APAMFCKFHLL.proto\x1a\x11BCIMOPDDKH\
+    H.proto\"\xdf\x01\n\x11StartDungeonScRsp\x12.\n\x0bKMMBNFIFALA\x18\n\x20\
+    \x03(\x0b2\x0c.BCIMOPDDKHHR\x0bKMMBNFIFALA\x12.\n\x0bENCINPIHHDF\x18\x0e\
+    \x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0bENCINPIHHDF\x12.\n\x0bCOLOHMBFKIH\x18\
+    \r\x20\x03(\x0b2\x0c.APAMFCKFHLLR\x0bCOLOHMBFKIH\x12\x20\n\x0bEICEKDBENK\
+    M\x18\x0b\x20\x01(\rR\x0bEICEKDBENKM\x12\x18\n\x07retcode\x18\x0c\x20\
+    \x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -246,8 +246,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::GKDEKJKOIJN::file_descriptor().clone());
-            deps.push(super::PDPALPDALDG::file_descriptor().clone());
+            deps.push(super::APAMFCKFHLL::file_descriptor().clone());
+            deps.push(super::BCIMOPDDKHH::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(StartDungeonScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

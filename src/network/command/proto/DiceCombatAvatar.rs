@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DiceCombatAvatar {
     // message fields
+    // @@protoc_insertion_point(field:DiceCombatAvatar.dice_id_list)
+    pub dice_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DiceCombatAvatar.dice_avatar_id)
     pub dice_avatar_id: u32,
     // @@protoc_insertion_point(field:DiceCombatAvatar.level)
     pub level: u32,
-    // @@protoc_insertion_point(field:DiceCombatAvatar.dice_id_list)
-    pub dice_id_list: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:DiceCombatAvatar.unlock_time)
     pub unlock_time: i64,
     // special fields
@@ -55,6 +55,11 @@ impl DiceCombatAvatar {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "dice_id_list",
+            |m: &DiceCombatAvatar| { &m.dice_id_list },
+            |m: &mut DiceCombatAvatar| { &mut m.dice_id_list },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "dice_avatar_id",
             |m: &DiceCombatAvatar| { &m.dice_avatar_id },
@@ -64,11 +69,6 @@ impl DiceCombatAvatar {
             "level",
             |m: &DiceCombatAvatar| { &m.level },
             |m: &mut DiceCombatAvatar| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "dice_id_list",
-            |m: &DiceCombatAvatar| { &m.dice_id_list },
-            |m: &mut DiceCombatAvatar| { &mut m.dice_id_list },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "unlock_time",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for DiceCombatAvatar {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.dice_avatar_id = is.read_uint32()?;
-                },
-                16 => {
-                    self.level = is.read_uint32()?;
-                },
                 26 => {
                     is.read_repeated_packed_uint32_into(&mut self.dice_id_list)?;
                 },
                 24 => {
                     self.dice_id_list.push(is.read_uint32()?);
+                },
+                8 => {
+                    self.dice_avatar_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.level = is.read_uint32()?;
                 },
                 32 => {
                     self.unlock_time = is.read_int64()?;
@@ -120,13 +120,13 @@ impl ::protobuf::Message for DiceCombatAvatar {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.dice_id_list);
         if self.dice_avatar_id != 0 {
             my_size += ::protobuf::rt::uint32_size(1, self.dice_avatar_id);
         }
         if self.level != 0 {
             my_size += ::protobuf::rt::uint32_size(2, self.level);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.dice_id_list);
         if self.unlock_time != 0 {
             my_size += ::protobuf::rt::int64_size(4, self.unlock_time);
         }
@@ -136,13 +136,13 @@ impl ::protobuf::Message for DiceCombatAvatar {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(3, &self.dice_id_list)?;
         if self.dice_avatar_id != 0 {
             os.write_uint32(1, self.dice_avatar_id)?;
         }
         if self.level != 0 {
             os.write_uint32(2, self.level)?;
         }
-        os.write_repeated_packed_uint32(3, &self.dice_id_list)?;
         if self.unlock_time != 0 {
             os.write_int64(4, self.unlock_time)?;
         }
@@ -163,18 +163,18 @@ impl ::protobuf::Message for DiceCombatAvatar {
     }
 
     fn clear(&mut self) {
+        self.dice_id_list.clear();
         self.dice_avatar_id = 0;
         self.level = 0;
-        self.dice_id_list.clear();
         self.unlock_time = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DiceCombatAvatar {
         static instance: DiceCombatAvatar = DiceCombatAvatar {
+            dice_id_list: ::std::vec::Vec::new(),
             dice_avatar_id: 0,
             level: 0,
-            dice_id_list: ::std::vec::Vec::new(),
             unlock_time: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -200,11 +200,11 @@ impl ::protobuf::reflect::ProtobufValue for DiceCombatAvatar {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16DiceCombatAvatar.proto\"\x91\x01\n\x10DiceCombatAvatar\x12$\n\x0ed\
-    ice_avatar_id\x18\x01\x20\x01(\rR\x0cdiceAvatarId\x12\x14\n\x05level\x18\
-    \x02\x20\x01(\rR\x05level\x12\x20\n\x0cdice_id_list\x18\x03\x20\x03(\rR\
-    \ndiceIdList\x12\x1f\n\x0bunlock_time\x18\x04\x20\x01(\x03R\nunlockTimeb\
-    \x06proto3\
+    \n\x16DiceCombatAvatar.proto\"\x91\x01\n\x10DiceCombatAvatar\x12\x20\n\
+    \x0cdice_id_list\x18\x03\x20\x03(\rR\ndiceIdList\x12$\n\x0edice_avatar_i\
+    d\x18\x01\x20\x01(\rR\x0cdiceAvatarId\x12\x14\n\x05level\x18\x02\x20\x01\
+    (\rR\x05level\x12\x1f\n\x0bunlock_time\x18\x04\x20\x01(\x03R\nunlockTime\
+    b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

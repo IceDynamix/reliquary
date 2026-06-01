@@ -30,16 +30,16 @@ pub struct ClockParkHandleWaitOperationScRsp {
     // message fields
     // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.battle_info)
     pub battle_info: ::protobuf::MessageField<super::SceneBattleInfo::SceneBattleInfo>,
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.NNFAMOJAHCH)
-    pub NNFAMOJAHCH: u32,
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.NKAHDEEOHAO)
-    pub NKAHDEEOHAO: ::protobuf::EnumOrUnknown<super::ClockParkPlayStatus::ClockParkPlayStatus>,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.DMNECEKOLAJ)
+    pub DMNECEKOLAJ: u32,
     // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.NDEEBDDEOFA)
-    pub NDEEBDDEOFA: u32,
-    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.IHNMHNPMHJG)
-    pub IHNMHNPMHJG: u32,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.LNPGHCLDOKG)
+    pub LNPGHCLDOKG: ::protobuf::EnumOrUnknown<super::ClockParkPlayStatus::ClockParkPlayStatus>,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.JGPHDBDHKKO)
+    pub JGPHDBDHKKO: u32,
+    // @@protoc_insertion_point(field:ClockParkHandleWaitOperationScRsp.IGBHCBNKEBO)
+    pub IGBHCBNKEBO: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClockParkHandleWaitOperationScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,14 +65,9 @@ impl ClockParkHandleWaitOperationScRsp {
             |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.battle_info },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NNFAMOJAHCH",
-            |m: &ClockParkHandleWaitOperationScRsp| { &m.NNFAMOJAHCH },
-            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.NNFAMOJAHCH },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NKAHDEEOHAO",
-            |m: &ClockParkHandleWaitOperationScRsp| { &m.NKAHDEEOHAO },
-            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.NKAHDEEOHAO },
+            "DMNECEKOLAJ",
+            |m: &ClockParkHandleWaitOperationScRsp| { &m.DMNECEKOLAJ },
+            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.DMNECEKOLAJ },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -80,14 +75,19 @@ impl ClockParkHandleWaitOperationScRsp {
             |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NDEEBDDEOFA",
-            |m: &ClockParkHandleWaitOperationScRsp| { &m.NDEEBDDEOFA },
-            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.NDEEBDDEOFA },
+            "LNPGHCLDOKG",
+            |m: &ClockParkHandleWaitOperationScRsp| { &m.LNPGHCLDOKG },
+            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.LNPGHCLDOKG },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IHNMHNPMHJG",
-            |m: &ClockParkHandleWaitOperationScRsp| { &m.IHNMHNPMHJG },
-            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.IHNMHNPMHJG },
+            "JGPHDBDHKKO",
+            |m: &ClockParkHandleWaitOperationScRsp| { &m.JGPHDBDHKKO },
+            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.JGPHDBDHKKO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "IGBHCBNKEBO",
+            |m: &ClockParkHandleWaitOperationScRsp| { &m.IGBHCBNKEBO },
+            |m: &mut ClockParkHandleWaitOperationScRsp| { &mut m.IGBHCBNKEBO },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClockParkHandleWaitOperationScRsp>(
             "ClockParkHandleWaitOperationScRsp",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
+                50 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.battle_info)?;
                 },
-                96 => {
-                    self.NNFAMOJAHCH = is.read_uint32()?;
-                },
-                16 => {
-                    self.NKAHDEEOHAO = is.read_enum_or_unknown()?;
-                },
-                56 => {
-                    self.retcode = is.read_uint32()?;
+                24 => {
+                    self.DMNECEKOLAJ = is.read_uint32()?;
                 },
                 64 => {
-                    self.NDEEBDDEOFA = is.read_uint32()?;
+                    self.retcode = is.read_uint32()?;
                 },
                 120 => {
-                    self.IHNMHNPMHJG = is.read_uint32()?;
+                    self.LNPGHCLDOKG = is.read_enum_or_unknown()?;
+                },
+                56 => {
+                    self.JGPHDBDHKKO = is.read_uint32()?;
+                },
+                32 => {
+                    self.IGBHCBNKEBO = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,20 +141,20 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationScRsp {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.NNFAMOJAHCH != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.NNFAMOJAHCH);
-        }
-        if self.NKAHDEEOHAO != ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::FOGFBPODIDN_ECFAOMLDDGL) {
-            my_size += ::protobuf::rt::int32_size(2, self.NKAHDEEOHAO.value());
+        if self.DMNECEKOLAJ != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.DMNECEKOLAJ);
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
         }
-        if self.NDEEBDDEOFA != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.NDEEBDDEOFA);
+        if self.LNPGHCLDOKG != ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::ACKNOAAIMPC_NFALPEDFKCL) {
+            my_size += ::protobuf::rt::int32_size(15, self.LNPGHCLDOKG.value());
         }
-        if self.IHNMHNPMHJG != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.IHNMHNPMHJG);
+        if self.JGPHDBDHKKO != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JGPHDBDHKKO);
+        }
+        if self.IGBHCBNKEBO != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.IGBHCBNKEBO);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,22 +163,22 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationScRsp {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.battle_info.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         }
-        if self.NNFAMOJAHCH != 0 {
-            os.write_uint32(12, self.NNFAMOJAHCH)?;
-        }
-        if self.NKAHDEEOHAO != ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::FOGFBPODIDN_ECFAOMLDDGL) {
-            os.write_enum(2, ::protobuf::EnumOrUnknown::value(&self.NKAHDEEOHAO))?;
+        if self.DMNECEKOLAJ != 0 {
+            os.write_uint32(3, self.DMNECEKOLAJ)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(7, self.retcode)?;
+            os.write_uint32(8, self.retcode)?;
         }
-        if self.NDEEBDDEOFA != 0 {
-            os.write_uint32(8, self.NDEEBDDEOFA)?;
+        if self.LNPGHCLDOKG != ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::ACKNOAAIMPC_NFALPEDFKCL) {
+            os.write_enum(15, ::protobuf::EnumOrUnknown::value(&self.LNPGHCLDOKG))?;
         }
-        if self.IHNMHNPMHJG != 0 {
-            os.write_uint32(15, self.IHNMHNPMHJG)?;
+        if self.JGPHDBDHKKO != 0 {
+            os.write_uint32(7, self.JGPHDBDHKKO)?;
+        }
+        if self.IGBHCBNKEBO != 0 {
+            os.write_uint32(4, self.IGBHCBNKEBO)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,22 +198,22 @@ impl ::protobuf::Message for ClockParkHandleWaitOperationScRsp {
 
     fn clear(&mut self) {
         self.battle_info.clear();
-        self.NNFAMOJAHCH = 0;
-        self.NKAHDEEOHAO = ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::FOGFBPODIDN_ECFAOMLDDGL);
+        self.DMNECEKOLAJ = 0;
         self.retcode = 0;
-        self.NDEEBDDEOFA = 0;
-        self.IHNMHNPMHJG = 0;
+        self.LNPGHCLDOKG = ::protobuf::EnumOrUnknown::new(super::ClockParkPlayStatus::ClockParkPlayStatus::ACKNOAAIMPC_NFALPEDFKCL);
+        self.JGPHDBDHKKO = 0;
+        self.IGBHCBNKEBO = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClockParkHandleWaitOperationScRsp {
         static instance: ClockParkHandleWaitOperationScRsp = ClockParkHandleWaitOperationScRsp {
             battle_info: ::protobuf::MessageField::none(),
-            NNFAMOJAHCH: 0,
-            NKAHDEEOHAO: ::protobuf::EnumOrUnknown::from_i32(0),
+            DMNECEKOLAJ: 0,
             retcode: 0,
-            NDEEBDDEOFA: 0,
-            IHNMHNPMHJG: 0,
+            LNPGHCLDOKG: ::protobuf::EnumOrUnknown::from_i32(0),
+            JGPHDBDHKKO: 0,
+            IGBHCBNKEBO: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,12 +240,12 @@ impl ::protobuf::reflect::ProtobufValue for ClockParkHandleWaitOperationScRsp {
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n'ClockParkHandleWaitOperationScRsp.proto\x1a\x19ClockParkPlayStatus.pr\
     oto\x1a\x15SceneBattleInfo.proto\"\x8e\x02\n!ClockParkHandleWaitOperatio\
-    nScRsp\x121\n\x0bbattle_info\x18\x0b\x20\x01(\x0b2\x10.SceneBattleInfoR\
-    \nbattleInfo\x12\x20\n\x0bNNFAMOJAHCH\x18\x0c\x20\x01(\rR\x0bNNFAMOJAHCH\
-    \x126\n\x0bNKAHDEEOHAO\x18\x02\x20\x01(\x0e2\x14.ClockParkPlayStatusR\
-    \x0bNKAHDEEOHAO\x12\x18\n\x07retcode\x18\x07\x20\x01(\rR\x07retcode\x12\
-    \x20\n\x0bNDEEBDDEOFA\x18\x08\x20\x01(\rR\x0bNDEEBDDEOFA\x12\x20\n\x0bIH\
-    NMHNPMHJG\x18\x0f\x20\x01(\rR\x0bIHNMHNPMHJGb\x06proto3\
+    nScRsp\x121\n\x0bbattle_info\x18\x06\x20\x01(\x0b2\x10.SceneBattleInfoR\
+    \nbattleInfo\x12\x20\n\x0bDMNECEKOLAJ\x18\x03\x20\x01(\rR\x0bDMNECEKOLAJ\
+    \x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x126\n\x0bLNPGHCLDO\
+    KG\x18\x0f\x20\x01(\x0e2\x14.ClockParkPlayStatusR\x0bLNPGHCLDOKG\x12\x20\
+    \n\x0bJGPHDBDHKKO\x18\x07\x20\x01(\rR\x0bJGPHDBDHKKO\x12\x20\n\x0bIGBHCB\
+    NKEBO\x18\x04\x20\x01(\rR\x0bIGBHCBNKEBOb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

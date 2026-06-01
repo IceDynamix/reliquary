@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicEnterLayerCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicEnterLayerCsReq.APMIAKDPHJL)
-    pub APMIAKDPHJL: u32,
-    // @@protoc_insertion_point(field:RogueMagicEnterLayerCsReq.MNMAFKLOJCC)
-    pub MNMAFKLOJCC: u32,
+    // @@protoc_insertion_point(field:RogueMagicEnterLayerCsReq.BJHMFOAGMBF)
+    pub BJHMFOAGMBF: u32,
+    // @@protoc_insertion_point(field:RogueMagicEnterLayerCsReq.KHBLMAOPLLN)
+    pub KHBLMAOPLLN: u32,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicEnterLayerCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RogueMagicEnterLayerCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "APMIAKDPHJL",
-            |m: &RogueMagicEnterLayerCsReq| { &m.APMIAKDPHJL },
-            |m: &mut RogueMagicEnterLayerCsReq| { &mut m.APMIAKDPHJL },
+            "BJHMFOAGMBF",
+            |m: &RogueMagicEnterLayerCsReq| { &m.BJHMFOAGMBF },
+            |m: &mut RogueMagicEnterLayerCsReq| { &mut m.BJHMFOAGMBF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MNMAFKLOJCC",
-            |m: &RogueMagicEnterLayerCsReq| { &m.MNMAFKLOJCC },
-            |m: &mut RogueMagicEnterLayerCsReq| { &mut m.MNMAFKLOJCC },
+            "KHBLMAOPLLN",
+            |m: &RogueMagicEnterLayerCsReq| { &m.KHBLMAOPLLN },
+            |m: &mut RogueMagicEnterLayerCsReq| { &mut m.KHBLMAOPLLN },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicEnterLayerCsReq>(
             "RogueMagicEnterLayerCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicEnterLayerCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.APMIAKDPHJL = is.read_uint32()?;
+                40 => {
+                    self.BJHMFOAGMBF = is.read_uint32()?;
                 },
-                96 => {
-                    self.MNMAFKLOJCC = is.read_uint32()?;
+                104 => {
+                    self.KHBLMAOPLLN = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueMagicEnterLayerCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.APMIAKDPHJL != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.APMIAKDPHJL);
+        if self.BJHMFOAGMBF != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.BJHMFOAGMBF);
         }
-        if self.MNMAFKLOJCC != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.MNMAFKLOJCC);
+        if self.KHBLMAOPLLN != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.KHBLMAOPLLN);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueMagicEnterLayerCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.APMIAKDPHJL != 0 {
-            os.write_uint32(13, self.APMIAKDPHJL)?;
+        if self.BJHMFOAGMBF != 0 {
+            os.write_uint32(5, self.BJHMFOAGMBF)?;
         }
-        if self.MNMAFKLOJCC != 0 {
-            os.write_uint32(12, self.MNMAFKLOJCC)?;
+        if self.KHBLMAOPLLN != 0 {
+            os.write_uint32(13, self.KHBLMAOPLLN)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RogueMagicEnterLayerCsReq {
     }
 
     fn clear(&mut self) {
-        self.APMIAKDPHJL = 0;
-        self.MNMAFKLOJCC = 0;
+        self.BJHMFOAGMBF = 0;
+        self.KHBLMAOPLLN = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicEnterLayerCsReq {
         static instance: RogueMagicEnterLayerCsReq = RogueMagicEnterLayerCsReq {
-            APMIAKDPHJL: 0,
-            MNMAFKLOJCC: 0,
+            BJHMFOAGMBF: 0,
+            KHBLMAOPLLN: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicEnterLayerCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fRogueMagicEnterLayerCsReq.proto\"_\n\x19RogueMagicEnterLayerCsReq\
-    \x12\x20\n\x0bAPMIAKDPHJL\x18\r\x20\x01(\rR\x0bAPMIAKDPHJL\x12\x20\n\x0b\
-    MNMAFKLOJCC\x18\x0c\x20\x01(\rR\x0bMNMAFKLOJCCb\x06proto3\
+    \x12\x20\n\x0bBJHMFOAGMBF\x18\x05\x20\x01(\rR\x0bBJHMFOAGMBF\x12\x20\n\
+    \x0bKHBLMAOPLLN\x18\r\x20\x01(\rR\x0bKHBLMAOPLLNb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

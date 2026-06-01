@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ConfirmChallengePeakSettleScRsp {
     // message fields
-    // @@protoc_insertion_point(field:ConfirmChallengePeakSettleScRsp.ABHOLNJNPJM)
-    pub ABHOLNJNPJM: bool,
-    // @@protoc_insertion_point(field:ConfirmChallengePeakSettleScRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:ConfirmChallengePeakSettleScRsp.peak_id)
     pub peak_id: u32,
+    // @@protoc_insertion_point(field:ConfirmChallengePeakSettleScRsp.retcode)
+    pub retcode: u32,
+    // @@protoc_insertion_point(field:ConfirmChallengePeakSettleScRsp.IOBCIMIPEOM)
+    pub IOBCIMIPEOM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ConfirmChallengePeakSettleScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,9 +54,9 @@ impl ConfirmChallengePeakSettleScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ABHOLNJNPJM",
-            |m: &ConfirmChallengePeakSettleScRsp| { &m.ABHOLNJNPJM },
-            |m: &mut ConfirmChallengePeakSettleScRsp| { &mut m.ABHOLNJNPJM },
+            "peak_id",
+            |m: &ConfirmChallengePeakSettleScRsp| { &m.peak_id },
+            |m: &mut ConfirmChallengePeakSettleScRsp| { &mut m.peak_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
@@ -64,9 +64,9 @@ impl ConfirmChallengePeakSettleScRsp {
             |m: &mut ConfirmChallengePeakSettleScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "peak_id",
-            |m: &ConfirmChallengePeakSettleScRsp| { &m.peak_id },
-            |m: &mut ConfirmChallengePeakSettleScRsp| { &mut m.peak_id },
+            "IOBCIMIPEOM",
+            |m: &ConfirmChallengePeakSettleScRsp| { &m.IOBCIMIPEOM },
+            |m: &mut ConfirmChallengePeakSettleScRsp| { &mut m.IOBCIMIPEOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ConfirmChallengePeakSettleScRsp>(
             "ConfirmChallengePeakSettleScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                96 => {
-                    self.ABHOLNJNPJM = is.read_bool()?;
-                },
-                64 => {
-                    self.retcode = is.read_uint32()?;
-                },
                 56 => {
                     self.peak_id = is.read_uint32()?;
+                },
+                88 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                64 => {
+                    self.IOBCIMIPEOM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ABHOLNJNPJM != false {
-            my_size += 1 + 1;
-        }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.retcode);
-        }
         if self.peak_id != 0 {
             my_size += ::protobuf::rt::uint32_size(7, self.peak_id);
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
+        }
+        if self.IOBCIMIPEOM != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ABHOLNJNPJM != false {
-            os.write_bool(12, self.ABHOLNJNPJM)?;
-        }
-        if self.retcode != 0 {
-            os.write_uint32(8, self.retcode)?;
-        }
         if self.peak_id != 0 {
             os.write_uint32(7, self.peak_id)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(11, self.retcode)?;
+        }
+        if self.IOBCIMIPEOM != false {
+            os.write_bool(8, self.IOBCIMIPEOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for ConfirmChallengePeakSettleScRsp {
     }
 
     fn clear(&mut self) {
-        self.ABHOLNJNPJM = false;
-        self.retcode = 0;
         self.peak_id = 0;
+        self.retcode = 0;
+        self.IOBCIMIPEOM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ConfirmChallengePeakSettleScRsp {
         static instance: ConfirmChallengePeakSettleScRsp = ConfirmChallengePeakSettleScRsp {
-            ABHOLNJNPJM: false,
-            retcode: 0,
             peak_id: 0,
+            retcode: 0,
+            IOBCIMIPEOM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for ConfirmChallengePeakSettleScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%ConfirmChallengePeakSettleScRsp.proto\"v\n\x1fConfirmChallengePeakSet\
-    tleScRsp\x12\x20\n\x0bABHOLNJNPJM\x18\x0c\x20\x01(\x08R\x0bABHOLNJNPJM\
-    \x12\x18\n\x07retcode\x18\x08\x20\x01(\rR\x07retcode\x12\x17\n\x07peak_i\
-    d\x18\x07\x20\x01(\rR\x06peakIdb\x06proto3\
+    tleScRsp\x12\x17\n\x07peak_id\x18\x07\x20\x01(\rR\x06peakId\x12\x18\n\
+    \x07retcode\x18\x0b\x20\x01(\rR\x07retcode\x12\x20\n\x0bIOBCIMIPEOM\x18\
+    \x08\x20\x01(\x08R\x0bIOBCIMIPEOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

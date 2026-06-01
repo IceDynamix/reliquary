@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRogueModifierType)
 pub enum CmdRogueModifierType {
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.LKOKNHLLOMF_PCPDHELPKEM)
-    LKOKNHLLOMF_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierUpdateNotify)
-    CmdRogueModifierUpdateNotify = 5398,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierAddNotify)
-    CmdRogueModifierAddNotify = 5394,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierSelectCellScRsp)
-    CmdRogueModifierSelectCellScRsp = 5314,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierDelNotify)
-    CmdRogueModifierDelNotify = 5363,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierSelectCellCsReq)
-    CmdRogueModifierSelectCellCsReq = 5395,
-    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.CmdRogueModifierStageStartNotify)
-    CmdRogueModifierStageStartNotify = 5326,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_NLCDGIPGFDJ)
+    JKJGPOOLLKF_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_EPPMKBDPDBM)
+    JKJGPOOLLKF_EPPMKBDPDBM = 5327,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_LHGHFLGEBBN)
+    JKJGPOOLLKF_LHGHFLGEBBN = 5336,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_KKEHIBPDIEF)
+    JKJGPOOLLKF_KKEHIBPDIEF = 5310,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_GALJIBIENIB)
+    JKJGPOOLLKF_GALJIBIENIB = 5380,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_ECBIHKFNGGM)
+    JKJGPOOLLKF_ECBIHKFNGGM = 5387,
+    // @@protoc_insertion_point(enum_value:CmdRogueModifierType.JKJGPOOLLKF_PLELMMJJOLM)
+    JKJGPOOLLKF_PLELMMJJOLM = 5381,
 }
 
 impl ::protobuf::Enum for CmdRogueModifierType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for CmdRogueModifierType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRogueModifierType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRogueModifierType::LKOKNHLLOMF_PCPDHELPKEM),
-            5398 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierUpdateNotify),
-            5394 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierAddNotify),
-            5314 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellScRsp),
-            5363 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierDelNotify),
-            5395 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellCsReq),
-            5326 => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierStageStartNotify),
+            0 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_NLCDGIPGFDJ),
+            5327 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM),
+            5336 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_LHGHFLGEBBN),
+            5310 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF),
+            5380 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB),
+            5387 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_ECBIHKFNGGM),
+            5381 => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_PLELMMJJOLM),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRogueModifierType> {
         match str {
-            "LKOKNHLLOMF_PCPDHELPKEM" => ::std::option::Option::Some(CmdRogueModifierType::LKOKNHLLOMF_PCPDHELPKEM),
-            "CmdRogueModifierUpdateNotify" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierUpdateNotify),
-            "CmdRogueModifierAddNotify" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierAddNotify),
-            "CmdRogueModifierSelectCellScRsp" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellScRsp),
-            "CmdRogueModifierDelNotify" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierDelNotify),
-            "CmdRogueModifierSelectCellCsReq" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierSelectCellCsReq),
-            "CmdRogueModifierStageStartNotify" => ::std::option::Option::Some(CmdRogueModifierType::CmdRogueModifierStageStartNotify),
+            "JKJGPOOLLKF_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_NLCDGIPGFDJ),
+            "JKJGPOOLLKF_EPPMKBDPDBM" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM),
+            "JKJGPOOLLKF_LHGHFLGEBBN" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_LHGHFLGEBBN),
+            "JKJGPOOLLKF_KKEHIBPDIEF" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF),
+            "JKJGPOOLLKF_GALJIBIENIB" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB),
+            "JKJGPOOLLKF_ECBIHKFNGGM" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_ECBIHKFNGGM),
+            "JKJGPOOLLKF_PLELMMJJOLM" => ::std::option::Option::Some(CmdRogueModifierType::JKJGPOOLLKF_PLELMMJJOLM),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRogueModifierType] = &[
-        CmdRogueModifierType::LKOKNHLLOMF_PCPDHELPKEM,
-        CmdRogueModifierType::CmdRogueModifierUpdateNotify,
-        CmdRogueModifierType::CmdRogueModifierAddNotify,
-        CmdRogueModifierType::CmdRogueModifierSelectCellScRsp,
-        CmdRogueModifierType::CmdRogueModifierDelNotify,
-        CmdRogueModifierType::CmdRogueModifierSelectCellCsReq,
-        CmdRogueModifierType::CmdRogueModifierStageStartNotify,
+        CmdRogueModifierType::JKJGPOOLLKF_NLCDGIPGFDJ,
+        CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM,
+        CmdRogueModifierType::JKJGPOOLLKF_LHGHFLGEBBN,
+        CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF,
+        CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB,
+        CmdRogueModifierType::JKJGPOOLLKF_ECBIHKFNGGM,
+        CmdRogueModifierType::JKJGPOOLLKF_PLELMMJJOLM,
     ];
 }
 
@@ -95,13 +95,13 @@ impl ::protobuf::EnumFull for CmdRogueModifierType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRogueModifierType::LKOKNHLLOMF_PCPDHELPKEM => 0,
-            CmdRogueModifierType::CmdRogueModifierUpdateNotify => 1,
-            CmdRogueModifierType::CmdRogueModifierAddNotify => 2,
-            CmdRogueModifierType::CmdRogueModifierSelectCellScRsp => 3,
-            CmdRogueModifierType::CmdRogueModifierDelNotify => 4,
-            CmdRogueModifierType::CmdRogueModifierSelectCellCsReq => 5,
-            CmdRogueModifierType::CmdRogueModifierStageStartNotify => 6,
+            CmdRogueModifierType::JKJGPOOLLKF_NLCDGIPGFDJ => 0,
+            CmdRogueModifierType::JKJGPOOLLKF_EPPMKBDPDBM => 1,
+            CmdRogueModifierType::JKJGPOOLLKF_LHGHFLGEBBN => 2,
+            CmdRogueModifierType::JKJGPOOLLKF_KKEHIBPDIEF => 3,
+            CmdRogueModifierType::JKJGPOOLLKF_GALJIBIENIB => 4,
+            CmdRogueModifierType::JKJGPOOLLKF_ECBIHKFNGGM => 5,
+            CmdRogueModifierType::JKJGPOOLLKF_PLELMMJJOLM => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,7 +109,7 @@ impl ::protobuf::EnumFull for CmdRogueModifierType {
 
 impl ::std::default::Default for CmdRogueModifierType {
     fn default() -> Self {
-        CmdRogueModifierType::LKOKNHLLOMF_PCPDHELPKEM
+        CmdRogueModifierType::JKJGPOOLLKF_NLCDGIPGFDJ
     }
 }
 
@@ -120,12 +120,12 @@ impl CmdRogueModifierType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aCmdRogueModifierType.proto*\x89\x02\n\x14CmdRogueModifierType\x12\
-    \x1b\n\x17LKOKNHLLOMF_PCPDHELPKEM\x10\0\x12!\n\x1cCmdRogueModifierUpdate\
-    Notify\x10\x96*\x12\x1e\n\x19CmdRogueModifierAddNotify\x10\x92*\x12$\n\
-    \x1fCmdRogueModifierSelectCellScRsp\x10\xc2)\x12\x1e\n\x19CmdRogueModifi\
-    erDelNotify\x10\xf3)\x12$\n\x1fCmdRogueModifierSelectCellCsReq\x10\x93*\
-    \x12%\n\x20CmdRogueModifierStageStartNotify\x10\xce)b\x06proto3\
+    \n\x1aCmdRogueModifierType.proto*\xe7\x01\n\x14CmdRogueModifierType\x12\
+    \x1b\n\x17JKJGPOOLLKF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17JKJGPOOLLKF_EPPMKBD\
+    PDBM\x10\xcf)\x12\x1c\n\x17JKJGPOOLLKF_LHGHFLGEBBN\x10\xd8)\x12\x1c\n\
+    \x17JKJGPOOLLKF_KKEHIBPDIEF\x10\xbe)\x12\x1c\n\x17JKJGPOOLLKF_GALJIBIENI\
+    B\x10\x84*\x12\x1c\n\x17JKJGPOOLLKF_ECBIHKFNGGM\x10\x8b*\x12\x1c\n\x17JK\
+    JGPOOLLKF_PLELMMJJOLM\x10\x85*b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

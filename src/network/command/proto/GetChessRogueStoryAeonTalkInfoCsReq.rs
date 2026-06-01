@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetChessRogueStoryAeonTalkInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoCsReq.AHKFFCIEPDG)
-    pub AHKFFCIEPDG: u32,
+    // @@protoc_insertion_point(field:GetChessRogueStoryAeonTalkInfoCsReq.OEANPIHCHHF)
+    pub OEANPIHCHHF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetChessRogueStoryAeonTalkInfoCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl GetChessRogueStoryAeonTalkInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "AHKFFCIEPDG",
-            |m: &GetChessRogueStoryAeonTalkInfoCsReq| { &m.AHKFFCIEPDG },
-            |m: &mut GetChessRogueStoryAeonTalkInfoCsReq| { &mut m.AHKFFCIEPDG },
+            "OEANPIHCHHF",
+            |m: &GetChessRogueStoryAeonTalkInfoCsReq| { &m.OEANPIHCHHF },
+            |m: &mut GetChessRogueStoryAeonTalkInfoCsReq| { &mut m.OEANPIHCHHF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetChessRogueStoryAeonTalkInfoCsReq>(
             "GetChessRogueStoryAeonTalkInfoCsReq",
@@ -73,7 +73,7 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 96 => {
-                    self.AHKFFCIEPDG = is.read_uint32()?;
+                    self.OEANPIHCHHF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.AHKFFCIEPDG != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.AHKFFCIEPDG);
+        if self.OEANPIHCHHF != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.OEANPIHCHHF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.AHKFFCIEPDG != 0 {
-            os.write_uint32(12, self.AHKFFCIEPDG)?;
+        if self.OEANPIHCHHF != 0 {
+            os.write_uint32(12, self.OEANPIHCHHF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for GetChessRogueStoryAeonTalkInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.AHKFFCIEPDG = 0;
+        self.OEANPIHCHHF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetChessRogueStoryAeonTalkInfoCsReq {
         static instance: GetChessRogueStoryAeonTalkInfoCsReq = GetChessRogueStoryAeonTalkInfoCsReq {
-            AHKFFCIEPDG: 0,
+            OEANPIHCHHF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,8 +148,8 @@ impl ::protobuf::reflect::ProtobufValue for GetChessRogueStoryAeonTalkInfoCsReq 
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n)GetChessRogueStoryAeonTalkInfoCsReq.proto\"G\n#GetChessRogueStoryAeon\
-    TalkInfoCsReq\x12\x20\n\x0bAHKFFCIEPDG\x18\x0c\x20\x01(\rR\x0bAHKFFCIEPD\
-    Gb\x06proto3\
+    TalkInfoCsReq\x12\x20\n\x0bOEANPIHCHHF\x18\x0c\x20\x01(\rR\x0bOEANPIHCHH\
+    Fb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

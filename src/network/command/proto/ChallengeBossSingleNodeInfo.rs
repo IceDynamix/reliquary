@@ -30,12 +30,12 @@ pub struct ChallengeBossSingleNodeInfo {
     // message fields
     // @@protoc_insertion_point(field:ChallengeBossSingleNodeInfo.max_score)
     pub max_score: u32,
-    // @@protoc_insertion_point(field:ChallengeBossSingleNodeInfo.is_win)
-    pub is_win: bool,
     // @@protoc_insertion_point(field:ChallengeBossSingleNodeInfo.buff_id)
     pub buff_id: u32,
-    // @@protoc_insertion_point(field:ChallengeBossSingleNodeInfo.JBJODEHADJB)
-    pub JBJODEHADJB: bool,
+    // @@protoc_insertion_point(field:ChallengeBossSingleNodeInfo.is_win)
+    pub is_win: bool,
+    // @@protoc_insertion_point(field:ChallengeBossSingleNodeInfo.MBHCJPONJOM)
+    pub MBHCJPONJOM: bool,
     // special fields
     // @@protoc_insertion_point(special_field:ChallengeBossSingleNodeInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,19 +61,19 @@ impl ChallengeBossSingleNodeInfo {
             |m: &mut ChallengeBossSingleNodeInfo| { &mut m.max_score },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &ChallengeBossSingleNodeInfo| { &m.is_win },
-            |m: &mut ChallengeBossSingleNodeInfo| { &mut m.is_win },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "buff_id",
             |m: &ChallengeBossSingleNodeInfo| { &m.buff_id },
             |m: &mut ChallengeBossSingleNodeInfo| { &mut m.buff_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JBJODEHADJB",
-            |m: &ChallengeBossSingleNodeInfo| { &m.JBJODEHADJB },
-            |m: &mut ChallengeBossSingleNodeInfo| { &mut m.JBJODEHADJB },
+            "is_win",
+            |m: &ChallengeBossSingleNodeInfo| { &m.is_win },
+            |m: &mut ChallengeBossSingleNodeInfo| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MBHCJPONJOM",
+            |m: &ChallengeBossSingleNodeInfo| { &m.MBHCJPONJOM },
+            |m: &mut ChallengeBossSingleNodeInfo| { &mut m.MBHCJPONJOM },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChallengeBossSingleNodeInfo>(
             "ChallengeBossSingleNodeInfo",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ChallengeBossSingleNodeInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
+                88 => {
                     self.max_score = is.read_uint32()?;
                 },
                 32 => {
-                    self.is_win = is.read_bool()?;
-                },
-                64 => {
                     self.buff_id = is.read_uint32()?;
                 },
-                56 => {
-                    self.JBJODEHADJB = is.read_bool()?;
+                40 => {
+                    self.is_win = is.read_bool()?;
+                },
+                120 => {
+                    self.MBHCJPONJOM = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,15 +118,15 @@ impl ::protobuf::Message for ChallengeBossSingleNodeInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.max_score != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.max_score);
+            my_size += ::protobuf::rt::uint32_size(11, self.max_score);
+        }
+        if self.buff_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.buff_id);
         }
         if self.is_win != false {
             my_size += 1 + 1;
         }
-        if self.buff_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.buff_id);
-        }
-        if self.JBJODEHADJB != false {
+        if self.MBHCJPONJOM != false {
             my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
@@ -136,16 +136,16 @@ impl ::protobuf::Message for ChallengeBossSingleNodeInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.max_score != 0 {
-            os.write_uint32(3, self.max_score)?;
-        }
-        if self.is_win != false {
-            os.write_bool(4, self.is_win)?;
+            os.write_uint32(11, self.max_score)?;
         }
         if self.buff_id != 0 {
-            os.write_uint32(8, self.buff_id)?;
+            os.write_uint32(4, self.buff_id)?;
         }
-        if self.JBJODEHADJB != false {
-            os.write_bool(7, self.JBJODEHADJB)?;
+        if self.is_win != false {
+            os.write_bool(5, self.is_win)?;
+        }
+        if self.MBHCJPONJOM != false {
+            os.write_bool(15, self.MBHCJPONJOM)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for ChallengeBossSingleNodeInfo {
 
     fn clear(&mut self) {
         self.max_score = 0;
-        self.is_win = false;
         self.buff_id = 0;
-        self.JBJODEHADJB = false;
+        self.is_win = false;
+        self.MBHCJPONJOM = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChallengeBossSingleNodeInfo {
         static instance: ChallengeBossSingleNodeInfo = ChallengeBossSingleNodeInfo {
             max_score: 0,
-            is_win: false,
             buff_id: 0,
-            JBJODEHADJB: false,
+            is_win: false,
+            MBHCJPONJOM: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for ChallengeBossSingleNodeInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ChallengeBossSingleNodeInfo.proto\"\x8c\x01\n\x1bChallengeBossSingleN\
-    odeInfo\x12\x1b\n\tmax_score\x18\x03\x20\x01(\rR\x08maxScore\x12\x15\n\
-    \x06is_win\x18\x04\x20\x01(\x08R\x05isWin\x12\x17\n\x07buff_id\x18\x08\
-    \x20\x01(\rR\x06buffId\x12\x20\n\x0bJBJODEHADJB\x18\x07\x20\x01(\x08R\
-    \x0bJBJODEHADJBb\x06proto3\
+    odeInfo\x12\x1b\n\tmax_score\x18\x0b\x20\x01(\rR\x08maxScore\x12\x17\n\
+    \x07buff_id\x18\x04\x20\x01(\rR\x06buffId\x12\x15\n\x06is_win\x18\x05\
+    \x20\x01(\x08R\x05isWin\x12\x20\n\x0bMBHCJPONJOM\x18\x0f\x20\x01(\x08R\
+    \x0bMBHCJPONJOMb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

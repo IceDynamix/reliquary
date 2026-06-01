@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:PunkLordShareType)
 pub enum PunkLordShareType {
-    // @@protoc_insertion_point(enum_value:PunkLordShareType.FOODOPDNDLK_PCPDHELPKEM)
-    FOODOPDNDLK_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:PunkLordShareType.FOODOPDNDLK_DKCKDCLCPEL)
-    FOODOPDNDLK_DKCKDCLCPEL = 1,
-    // @@protoc_insertion_point(enum_value:PunkLordShareType.FOODOPDNDLK_PNMCJHFNBOO)
-    FOODOPDNDLK_PNMCJHFNBOO = 2,
+    // @@protoc_insertion_point(enum_value:PunkLordShareType.EOPODGPDKMO_NLCDGIPGFDJ)
+    EOPODGPDKMO_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:PunkLordShareType.EOPODGPDKMO_ENFIEFPPCIC)
+    EOPODGPDKMO_ENFIEFPPCIC = 1,
+    // @@protoc_insertion_point(enum_value:PunkLordShareType.EOPODGPDKMO_ACAOCKPIGPL)
+    EOPODGPDKMO_ACAOCKPIGPL = 2,
 }
 
 impl ::protobuf::Enum for PunkLordShareType {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for PunkLordShareType {
 
     fn from_i32(value: i32) -> ::std::option::Option<PunkLordShareType> {
         match value {
-            0 => ::std::option::Option::Some(PunkLordShareType::FOODOPDNDLK_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(PunkLordShareType::FOODOPDNDLK_DKCKDCLCPEL),
-            2 => ::std::option::Option::Some(PunkLordShareType::FOODOPDNDLK_PNMCJHFNBOO),
+            0 => ::std::option::Option::Some(PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(PunkLordShareType::EOPODGPDKMO_ENFIEFPPCIC),
+            2 => ::std::option::Option::Some(PunkLordShareType::EOPODGPDKMO_ACAOCKPIGPL),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<PunkLordShareType> {
         match str {
-            "FOODOPDNDLK_PCPDHELPKEM" => ::std::option::Option::Some(PunkLordShareType::FOODOPDNDLK_PCPDHELPKEM),
-            "FOODOPDNDLK_DKCKDCLCPEL" => ::std::option::Option::Some(PunkLordShareType::FOODOPDNDLK_DKCKDCLCPEL),
-            "FOODOPDNDLK_PNMCJHFNBOO" => ::std::option::Option::Some(PunkLordShareType::FOODOPDNDLK_PNMCJHFNBOO),
+            "EOPODGPDKMO_NLCDGIPGFDJ" => ::std::option::Option::Some(PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ),
+            "EOPODGPDKMO_ENFIEFPPCIC" => ::std::option::Option::Some(PunkLordShareType::EOPODGPDKMO_ENFIEFPPCIC),
+            "EOPODGPDKMO_ACAOCKPIGPL" => ::std::option::Option::Some(PunkLordShareType::EOPODGPDKMO_ACAOCKPIGPL),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [PunkLordShareType] = &[
-        PunkLordShareType::FOODOPDNDLK_PCPDHELPKEM,
-        PunkLordShareType::FOODOPDNDLK_DKCKDCLCPEL,
-        PunkLordShareType::FOODOPDNDLK_PNMCJHFNBOO,
+        PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ,
+        PunkLordShareType::EOPODGPDKMO_ENFIEFPPCIC,
+        PunkLordShareType::EOPODGPDKMO_ACAOCKPIGPL,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for PunkLordShareType {
 
 impl ::std::default::Default for PunkLordShareType {
     fn default() -> Self {
-        PunkLordShareType::FOODOPDNDLK_PCPDHELPKEM
+        PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ
     }
 }
 
@@ -92,9 +92,9 @@ impl PunkLordShareType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x17PunkLordShareType.proto*j\n\x11PunkLordShareType\x12\x1b\n\x17FOOD\
-    OPDNDLK_PCPDHELPKEM\x10\0\x12\x1b\n\x17FOODOPDNDLK_DKCKDCLCPEL\x10\x01\
-    \x12\x1b\n\x17FOODOPDNDLK_PNMCJHFNBOO\x10\x02b\x06proto3\
+    \n\x17PunkLordShareType.proto*j\n\x11PunkLordShareType\x12\x1b\n\x17EOPO\
+    DGPDKMO_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17EOPODGPDKMO_ENFIEFPPCIC\x10\x01\
+    \x12\x1b\n\x17EOPODGPDKMO_ACAOCKPIGPL\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

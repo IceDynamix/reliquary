@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicSmartWearDeletePinRelicCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RelicSmartWearDeletePinRelicCsReq.DHCNMIAIBGF)
-    pub DHCNMIAIBGF: ::std::vec::Vec<super::NHFOGDPBOHN::NHFOGDPBOHN>,
-    // @@protoc_insertion_point(field:RelicSmartWearDeletePinRelicCsReq.OPCPHICEOOF)
-    pub OPCPHICEOOF: bool,
+    // @@protoc_insertion_point(field:RelicSmartWearDeletePinRelicCsReq.AIFAMIFGMCH)
+    pub AIFAMIFGMCH: ::std::vec::Vec<super::ONFLANPGHHL::ONFLANPGHHL>,
+    // @@protoc_insertion_point(field:RelicSmartWearDeletePinRelicCsReq.BEAJGCMPOED)
+    pub BEAJGCMPOED: bool,
     // @@protoc_insertion_point(field:RelicSmartWearDeletePinRelicCsReq.avatar_id)
     pub avatar_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl RelicSmartWearDeletePinRelicCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "DHCNMIAIBGF",
-            |m: &RelicSmartWearDeletePinRelicCsReq| { &m.DHCNMIAIBGF },
-            |m: &mut RelicSmartWearDeletePinRelicCsReq| { &mut m.DHCNMIAIBGF },
+            "AIFAMIFGMCH",
+            |m: &RelicSmartWearDeletePinRelicCsReq| { &m.AIFAMIFGMCH },
+            |m: &mut RelicSmartWearDeletePinRelicCsReq| { &mut m.AIFAMIFGMCH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OPCPHICEOOF",
-            |m: &RelicSmartWearDeletePinRelicCsReq| { &m.OPCPHICEOOF },
-            |m: &mut RelicSmartWearDeletePinRelicCsReq| { &mut m.OPCPHICEOOF },
+            "BEAJGCMPOED",
+            |m: &RelicSmartWearDeletePinRelicCsReq| { &m.BEAJGCMPOED },
+            |m: &mut RelicSmartWearDeletePinRelicCsReq| { &mut m.BEAJGCMPOED },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_id",
@@ -86,13 +86,13 @@ impl ::protobuf::Message for RelicSmartWearDeletePinRelicCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                90 => {
-                    self.DHCNMIAIBGF.push(is.read_message()?);
+                34 => {
+                    self.AIFAMIFGMCH.push(is.read_message()?);
                 },
-                24 => {
-                    self.OPCPHICEOOF = is.read_bool()?;
+                104 => {
+                    self.BEAJGCMPOED = is.read_bool()?;
                 },
-                48 => {
+                96 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,15 +107,15 @@ impl ::protobuf::Message for RelicSmartWearDeletePinRelicCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.DHCNMIAIBGF {
+        for value in &self.AIFAMIFGMCH {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.OPCPHICEOOF != false {
+        if self.BEAJGCMPOED != false {
             my_size += 1 + 1;
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -123,14 +123,14 @@ impl ::protobuf::Message for RelicSmartWearDeletePinRelicCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.DHCNMIAIBGF {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        for v in &self.AIFAMIFGMCH {
+            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
         };
-        if self.OPCPHICEOOF != false {
-            os.write_bool(3, self.OPCPHICEOOF)?;
+        if self.BEAJGCMPOED != false {
+            os.write_bool(13, self.BEAJGCMPOED)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(6, self.avatar_id)?;
+            os.write_uint32(12, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -149,16 +149,16 @@ impl ::protobuf::Message for RelicSmartWearDeletePinRelicCsReq {
     }
 
     fn clear(&mut self) {
-        self.DHCNMIAIBGF.clear();
-        self.OPCPHICEOOF = false;
+        self.AIFAMIFGMCH.clear();
+        self.BEAJGCMPOED = false;
         self.avatar_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicSmartWearDeletePinRelicCsReq {
         static instance: RelicSmartWearDeletePinRelicCsReq = RelicSmartWearDeletePinRelicCsReq {
-            DHCNMIAIBGF: ::std::vec::Vec::new(),
-            OPCPHICEOOF: false,
+            AIFAMIFGMCH: ::std::vec::Vec::new(),
+            BEAJGCMPOED: false,
             avatar_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,11 +184,11 @@ impl ::protobuf::reflect::ProtobufValue for RelicSmartWearDeletePinRelicCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n'RelicSmartWearDeletePinRelicCsReq.proto\x1a\x11NHFOGDPBOHN.proto\"\
-    \x92\x01\n!RelicSmartWearDeletePinRelicCsReq\x12.\n\x0bDHCNMIAIBGF\x18\
-    \x0b\x20\x03(\x0b2\x0c.NHFOGDPBOHNR\x0bDHCNMIAIBGF\x12\x20\n\x0bOPCPHICE\
-    OOF\x18\x03\x20\x01(\x08R\x0bOPCPHICEOOF\x12\x1b\n\tavatar_id\x18\x06\
-    \x20\x01(\rR\x08avatarIdb\x06proto3\
+    \n'RelicSmartWearDeletePinRelicCsReq.proto\x1a\x11ONFLANPGHHL.proto\"\
+    \x92\x01\n!RelicSmartWearDeletePinRelicCsReq\x12.\n\x0bAIFAMIFGMCH\x18\
+    \x04\x20\x03(\x0b2\x0c.ONFLANPGHHLR\x0bAIFAMIFGMCH\x12\x20\n\x0bBEAJGCMP\
+    OED\x18\r\x20\x01(\x08R\x0bBEAJGCMPOED\x12\x1b\n\tavatar_id\x18\x0c\x20\
+    \x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -206,7 +206,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::NHFOGDPBOHN::file_descriptor().clone());
+            deps.push(super::ONFLANPGHHL::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RelicSmartWearDeletePinRelicCsReq::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

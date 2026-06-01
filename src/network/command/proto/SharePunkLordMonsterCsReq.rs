@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SharePunkLordMonsterCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SharePunkLordMonsterCsReq.uid)
-    pub uid: u32,
     // @@protoc_insertion_point(field:SharePunkLordMonsterCsReq.share_type)
     pub share_type: ::protobuf::EnumOrUnknown<super::PunkLordShareType::PunkLordShareType>,
+    // @@protoc_insertion_point(field:SharePunkLordMonsterCsReq.uid)
+    pub uid: u32,
     // @@protoc_insertion_point(field:SharePunkLordMonsterCsReq.monster_id)
     pub monster_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl SharePunkLordMonsterCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "uid",
-            |m: &SharePunkLordMonsterCsReq| { &m.uid },
-            |m: &mut SharePunkLordMonsterCsReq| { &mut m.uid },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "share_type",
             |m: &SharePunkLordMonsterCsReq| { &m.share_type },
             |m: &mut SharePunkLordMonsterCsReq| { &mut m.share_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "uid",
+            |m: &SharePunkLordMonsterCsReq| { &m.uid },
+            |m: &mut SharePunkLordMonsterCsReq| { &mut m.uid },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "monster_id",
@@ -87,12 +87,12 @@ impl ::protobuf::Message for SharePunkLordMonsterCsReq {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
                 104 => {
-                    self.uid = is.read_uint32()?;
-                },
-                96 => {
                     self.share_type = is.read_enum_or_unknown()?;
                 },
-                24 => {
+                120 => {
+                    self.uid = is.read_uint32()?;
+                },
+                8 => {
                     self.monster_id = is.read_uint32()?;
                 },
                 tag => {
@@ -107,14 +107,14 @@ impl ::protobuf::Message for SharePunkLordMonsterCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.uid != 0 {
-            my_size += ::protobuf::rt::uint32_size(13, self.uid);
+        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(13, self.share_type.value());
         }
-        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::FOODOPDNDLK_PCPDHELPKEM) {
-            my_size += ::protobuf::rt::int32_size(12, self.share_type.value());
+        if self.uid != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.uid);
         }
         if self.monster_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.monster_id);
+            my_size += ::protobuf::rt::uint32_size(1, self.monster_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for SharePunkLordMonsterCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.uid != 0 {
-            os.write_uint32(13, self.uid)?;
+        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.share_type))?;
         }
-        if self.share_type != ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::FOODOPDNDLK_PCPDHELPKEM) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.share_type))?;
+        if self.uid != 0 {
+            os.write_uint32(15, self.uid)?;
         }
         if self.monster_id != 0 {
-            os.write_uint32(3, self.monster_id)?;
+            os.write_uint32(1, self.monster_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,16 +148,16 @@ impl ::protobuf::Message for SharePunkLordMonsterCsReq {
     }
 
     fn clear(&mut self) {
+        self.share_type = ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::EOPODGPDKMO_NLCDGIPGFDJ);
         self.uid = 0;
-        self.share_type = ::protobuf::EnumOrUnknown::new(super::PunkLordShareType::PunkLordShareType::FOODOPDNDLK_PCPDHELPKEM);
         self.monster_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SharePunkLordMonsterCsReq {
         static instance: SharePunkLordMonsterCsReq = SharePunkLordMonsterCsReq {
-            uid: 0,
             share_type: ::protobuf::EnumOrUnknown::from_i32(0),
+            uid: 0,
             monster_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for SharePunkLordMonsterCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fSharePunkLordMonsterCsReq.proto\x1a\x17PunkLordShareType.proto\"\
-    \x7f\n\x19SharePunkLordMonsterCsReq\x12\x10\n\x03uid\x18\r\x20\x01(\rR\
-    \x03uid\x121\n\nshare_type\x18\x0c\x20\x01(\x0e2\x12.PunkLordShareTypeR\
-    \tshareType\x12\x1d\n\nmonster_id\x18\x03\x20\x01(\rR\tmonsterIdb\x06pro\
+    \x7f\n\x19SharePunkLordMonsterCsReq\x121\n\nshare_type\x18\r\x20\x01(\
+    \x0e2\x12.PunkLordShareTypeR\tshareType\x12\x10\n\x03uid\x18\x0f\x20\x01\
+    (\rR\x03uid\x12\x1d\n\nmonster_id\x18\x01\x20\x01(\rR\tmonsterIdb\x06pro\
     to3\
 ";
 

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TravelBrochureSelectMessageCsReq {
     // message fields
-    // @@protoc_insertion_point(field:TravelBrochureSelectMessageCsReq.DICEPCGFBNO)
-    pub DICEPCGFBNO: u32,
-    // @@protoc_insertion_point(field:TravelBrochureSelectMessageCsReq.HBCJPCMJPHE)
-    pub HBCJPCMJPHE: u32,
+    // @@protoc_insertion_point(field:TravelBrochureSelectMessageCsReq.DCIJEFMACME)
+    pub DCIJEFMACME: u32,
+    // @@protoc_insertion_point(field:TravelBrochureSelectMessageCsReq.CFCICBNEOJB)
+    pub CFCICBNEOJB: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TravelBrochureSelectMessageCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl TravelBrochureSelectMessageCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "DICEPCGFBNO",
-            |m: &TravelBrochureSelectMessageCsReq| { &m.DICEPCGFBNO },
-            |m: &mut TravelBrochureSelectMessageCsReq| { &mut m.DICEPCGFBNO },
+            "DCIJEFMACME",
+            |m: &TravelBrochureSelectMessageCsReq| { &m.DCIJEFMACME },
+            |m: &mut TravelBrochureSelectMessageCsReq| { &mut m.DCIJEFMACME },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HBCJPCMJPHE",
-            |m: &TravelBrochureSelectMessageCsReq| { &m.HBCJPCMJPHE },
-            |m: &mut TravelBrochureSelectMessageCsReq| { &mut m.HBCJPCMJPHE },
+            "CFCICBNEOJB",
+            |m: &TravelBrochureSelectMessageCsReq| { &m.CFCICBNEOJB },
+            |m: &mut TravelBrochureSelectMessageCsReq| { &mut m.CFCICBNEOJB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TravelBrochureSelectMessageCsReq>(
             "TravelBrochureSelectMessageCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for TravelBrochureSelectMessageCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                32 => {
-                    self.DICEPCGFBNO = is.read_uint32()?;
+                120 => {
+                    self.DCIJEFMACME = is.read_uint32()?;
                 },
-                112 => {
-                    self.HBCJPCMJPHE = is.read_uint32()?;
+                88 => {
+                    self.CFCICBNEOJB = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for TravelBrochureSelectMessageCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.DICEPCGFBNO != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.DICEPCGFBNO);
+        if self.DCIJEFMACME != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.DCIJEFMACME);
         }
-        if self.HBCJPCMJPHE != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.HBCJPCMJPHE);
+        if self.CFCICBNEOJB != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.CFCICBNEOJB);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for TravelBrochureSelectMessageCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.DICEPCGFBNO != 0 {
-            os.write_uint32(4, self.DICEPCGFBNO)?;
+        if self.DCIJEFMACME != 0 {
+            os.write_uint32(15, self.DCIJEFMACME)?;
         }
-        if self.HBCJPCMJPHE != 0 {
-            os.write_uint32(14, self.HBCJPCMJPHE)?;
+        if self.CFCICBNEOJB != 0 {
+            os.write_uint32(11, self.CFCICBNEOJB)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for TravelBrochureSelectMessageCsReq {
     }
 
     fn clear(&mut self) {
-        self.DICEPCGFBNO = 0;
-        self.HBCJPCMJPHE = 0;
+        self.DCIJEFMACME = 0;
+        self.CFCICBNEOJB = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TravelBrochureSelectMessageCsReq {
         static instance: TravelBrochureSelectMessageCsReq = TravelBrochureSelectMessageCsReq {
-            DICEPCGFBNO: 0,
-            HBCJPCMJPHE: 0,
+            DCIJEFMACME: 0,
+            CFCICBNEOJB: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for TravelBrochureSelectMessageCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n&TravelBrochureSelectMessageCsReq.proto\"f\n\x20TravelBrochureSelectMe\
-    ssageCsReq\x12\x20\n\x0bDICEPCGFBNO\x18\x04\x20\x01(\rR\x0bDICEPCGFBNO\
-    \x12\x20\n\x0bHBCJPCMJPHE\x18\x0e\x20\x01(\rR\x0bHBCJPCMJPHEb\x06proto3\
+    ssageCsReq\x12\x20\n\x0bDCIJEFMACME\x18\x0f\x20\x01(\rR\x0bDCIJEFMACME\
+    \x12\x20\n\x0bCFCICBNEOJB\x18\x0b\x20\x01(\rR\x0bCFCICBNEOJBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

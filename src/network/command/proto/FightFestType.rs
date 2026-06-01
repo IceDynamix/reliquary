@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:FightFestType)
 pub enum FightFestType {
-    // @@protoc_insertion_point(enum_value:FightFestType.MHKEAFAPMFP_PCPDHELPKEM)
-    MHKEAFAPMFP_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:FightFestType.MHKEAFAPMFP_PEOACNPKMDP)
-    MHKEAFAPMFP_PEOACNPKMDP = 1,
-    // @@protoc_insertion_point(enum_value:FightFestType.MHKEAFAPMFP_FAMMLINGLDA)
-    MHKEAFAPMFP_FAMMLINGLDA = 2,
-    // @@protoc_insertion_point(enum_value:FightFestType.MHKEAFAPMFP_OPCGNJMGJDE)
-    MHKEAFAPMFP_OPCGNJMGJDE = 3,
-    // @@protoc_insertion_point(enum_value:FightFestType.MHKEAFAPMFP_ENDNKKOIBHE)
-    MHKEAFAPMFP_ENDNKKOIBHE = 4,
+    // @@protoc_insertion_point(enum_value:FightFestType.OGOJLBNJKCN_NLCDGIPGFDJ)
+    OGOJLBNJKCN_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:FightFestType.OGOJLBNJKCN_IBAADNINFCG)
+    OGOJLBNJKCN_IBAADNINFCG = 1,
+    // @@protoc_insertion_point(enum_value:FightFestType.OGOJLBNJKCN_score_id)
+    OGOJLBNJKCN_score_id = 2,
+    // @@protoc_insertion_point(enum_value:FightFestType.OGOJLBNJKCN_OCDLPDDMCLP)
+    OGOJLBNJKCN_OCDLPDDMCLP = 3,
+    // @@protoc_insertion_point(enum_value:FightFestType.OGOJLBNJKCN_HNGBFGALLBI)
+    OGOJLBNJKCN_HNGBFGALLBI = 4,
 }
 
 impl ::protobuf::Enum for FightFestType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for FightFestType {
 
     fn from_i32(value: i32) -> ::std::option::Option<FightFestType> {
         match value {
-            0 => ::std::option::Option::Some(FightFestType::MHKEAFAPMFP_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(FightFestType::MHKEAFAPMFP_PEOACNPKMDP),
-            2 => ::std::option::Option::Some(FightFestType::MHKEAFAPMFP_FAMMLINGLDA),
-            3 => ::std::option::Option::Some(FightFestType::MHKEAFAPMFP_OPCGNJMGJDE),
-            4 => ::std::option::Option::Some(FightFestType::MHKEAFAPMFP_ENDNKKOIBHE),
+            0 => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_IBAADNINFCG),
+            2 => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_score_id),
+            3 => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_OCDLPDDMCLP),
+            4 => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_HNGBFGALLBI),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<FightFestType> {
         match str {
-            "MHKEAFAPMFP_PCPDHELPKEM" => ::std::option::Option::Some(FightFestType::MHKEAFAPMFP_PCPDHELPKEM),
-            "MHKEAFAPMFP_PEOACNPKMDP" => ::std::option::Option::Some(FightFestType::MHKEAFAPMFP_PEOACNPKMDP),
-            "MHKEAFAPMFP_FAMMLINGLDA" => ::std::option::Option::Some(FightFestType::MHKEAFAPMFP_FAMMLINGLDA),
-            "MHKEAFAPMFP_OPCGNJMGJDE" => ::std::option::Option::Some(FightFestType::MHKEAFAPMFP_OPCGNJMGJDE),
-            "MHKEAFAPMFP_ENDNKKOIBHE" => ::std::option::Option::Some(FightFestType::MHKEAFAPMFP_ENDNKKOIBHE),
+            "OGOJLBNJKCN_NLCDGIPGFDJ" => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_NLCDGIPGFDJ),
+            "OGOJLBNJKCN_IBAADNINFCG" => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_IBAADNINFCG),
+            "OGOJLBNJKCN_score_id" => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_score_id),
+            "OGOJLBNJKCN_OCDLPDDMCLP" => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_OCDLPDDMCLP),
+            "OGOJLBNJKCN_HNGBFGALLBI" => ::std::option::Option::Some(FightFestType::OGOJLBNJKCN_HNGBFGALLBI),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [FightFestType] = &[
-        FightFestType::MHKEAFAPMFP_PCPDHELPKEM,
-        FightFestType::MHKEAFAPMFP_PEOACNPKMDP,
-        FightFestType::MHKEAFAPMFP_FAMMLINGLDA,
-        FightFestType::MHKEAFAPMFP_OPCGNJMGJDE,
-        FightFestType::MHKEAFAPMFP_ENDNKKOIBHE,
+        FightFestType::OGOJLBNJKCN_NLCDGIPGFDJ,
+        FightFestType::OGOJLBNJKCN_IBAADNINFCG,
+        FightFestType::OGOJLBNJKCN_score_id,
+        FightFestType::OGOJLBNJKCN_OCDLPDDMCLP,
+        FightFestType::OGOJLBNJKCN_HNGBFGALLBI,
     ];
 }
 
@@ -91,7 +91,7 @@ impl ::protobuf::EnumFull for FightFestType {
 
 impl ::std::default::Default for FightFestType {
     fn default() -> Self {
-        FightFestType::MHKEAFAPMFP_PCPDHELPKEM
+        FightFestType::OGOJLBNJKCN_NLCDGIPGFDJ
     }
 }
 
@@ -102,10 +102,10 @@ impl FightFestType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13FightFestType.proto*\xa0\x01\n\rFightFestType\x12\x1b\n\x17MHKEAFA\
-    PMFP_PCPDHELPKEM\x10\0\x12\x1b\n\x17MHKEAFAPMFP_PEOACNPKMDP\x10\x01\x12\
-    \x1b\n\x17MHKEAFAPMFP_FAMMLINGLDA\x10\x02\x12\x1b\n\x17MHKEAFAPMFP_OPCGN\
-    JMGJDE\x10\x03\x12\x1b\n\x17MHKEAFAPMFP_ENDNKKOIBHE\x10\x04b\x06proto3\
+    \n\x13FightFestType.proto*\x9d\x01\n\rFightFestType\x12\x1b\n\x17OGOJLBN\
+    JKCN_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17OGOJLBNJKCN_IBAADNINFCG\x10\x01\x12\
+    \x18\n\x14OGOJLBNJKCN_score_id\x10\x02\x12\x1b\n\x17OGOJLBNJKCN_OCDLPDDM\
+    CLP\x10\x03\x12\x1b\n\x17OGOJLBNJKCN_HNGBFGALLBI\x10\x04b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

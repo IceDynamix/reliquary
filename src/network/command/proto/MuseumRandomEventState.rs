@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:MuseumRandomEventState)
 pub enum MuseumRandomEventState {
-    // @@protoc_insertion_point(enum_value:MuseumRandomEventState.JKEKNDDBDMC_PCPDHELPKEM)
-    JKEKNDDBDMC_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:MuseumRandomEventState.JKEKNDDBDMC_DDLPGNHADCJ)
-    JKEKNDDBDMC_DDLPGNHADCJ = 1,
-    // @@protoc_insertion_point(enum_value:MuseumRandomEventState.JKEKNDDBDMC_HPJEBFFHJNP)
-    JKEKNDDBDMC_HPJEBFFHJNP = 2,
-    // @@protoc_insertion_point(enum_value:MuseumRandomEventState.JKEKNDDBDMC_KLHDCOPPLNG)
-    JKEKNDDBDMC_KLHDCOPPLNG = 3,
+    // @@protoc_insertion_point(enum_value:MuseumRandomEventState.NLAEDPNBHBP_NLCDGIPGFDJ)
+    NLAEDPNBHBP_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:MuseumRandomEventState.NLAEDPNBHBP_NPAFMEBNFOB)
+    NLAEDPNBHBP_NPAFMEBNFOB = 1,
+    // @@protoc_insertion_point(enum_value:MuseumRandomEventState.NLAEDPNBHBP_LOOAKNHDBLL)
+    NLAEDPNBHBP_LOOAKNHDBLL = 2,
+    // @@protoc_insertion_point(enum_value:MuseumRandomEventState.NLAEDPNBHBP_CIHFGJDCHIA)
+    NLAEDPNBHBP_CIHFGJDCHIA = 3,
 }
 
 impl ::protobuf::Enum for MuseumRandomEventState {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for MuseumRandomEventState {
 
     fn from_i32(value: i32) -> ::std::option::Option<MuseumRandomEventState> {
         match value {
-            0 => ::std::option::Option::Some(MuseumRandomEventState::JKEKNDDBDMC_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(MuseumRandomEventState::JKEKNDDBDMC_DDLPGNHADCJ),
-            2 => ::std::option::Option::Some(MuseumRandomEventState::JKEKNDDBDMC_HPJEBFFHJNP),
-            3 => ::std::option::Option::Some(MuseumRandomEventState::JKEKNDDBDMC_KLHDCOPPLNG),
+            0 => ::std::option::Option::Some(MuseumRandomEventState::NLAEDPNBHBP_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(MuseumRandomEventState::NLAEDPNBHBP_NPAFMEBNFOB),
+            2 => ::std::option::Option::Some(MuseumRandomEventState::NLAEDPNBHBP_LOOAKNHDBLL),
+            3 => ::std::option::Option::Some(MuseumRandomEventState::NLAEDPNBHBP_CIHFGJDCHIA),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<MuseumRandomEventState> {
         match str {
-            "JKEKNDDBDMC_PCPDHELPKEM" => ::std::option::Option::Some(MuseumRandomEventState::JKEKNDDBDMC_PCPDHELPKEM),
-            "JKEKNDDBDMC_DDLPGNHADCJ" => ::std::option::Option::Some(MuseumRandomEventState::JKEKNDDBDMC_DDLPGNHADCJ),
-            "JKEKNDDBDMC_HPJEBFFHJNP" => ::std::option::Option::Some(MuseumRandomEventState::JKEKNDDBDMC_HPJEBFFHJNP),
-            "JKEKNDDBDMC_KLHDCOPPLNG" => ::std::option::Option::Some(MuseumRandomEventState::JKEKNDDBDMC_KLHDCOPPLNG),
+            "NLAEDPNBHBP_NLCDGIPGFDJ" => ::std::option::Option::Some(MuseumRandomEventState::NLAEDPNBHBP_NLCDGIPGFDJ),
+            "NLAEDPNBHBP_NPAFMEBNFOB" => ::std::option::Option::Some(MuseumRandomEventState::NLAEDPNBHBP_NPAFMEBNFOB),
+            "NLAEDPNBHBP_LOOAKNHDBLL" => ::std::option::Option::Some(MuseumRandomEventState::NLAEDPNBHBP_LOOAKNHDBLL),
+            "NLAEDPNBHBP_CIHFGJDCHIA" => ::std::option::Option::Some(MuseumRandomEventState::NLAEDPNBHBP_CIHFGJDCHIA),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [MuseumRandomEventState] = &[
-        MuseumRandomEventState::JKEKNDDBDMC_PCPDHELPKEM,
-        MuseumRandomEventState::JKEKNDDBDMC_DDLPGNHADCJ,
-        MuseumRandomEventState::JKEKNDDBDMC_HPJEBFFHJNP,
-        MuseumRandomEventState::JKEKNDDBDMC_KLHDCOPPLNG,
+        MuseumRandomEventState::NLAEDPNBHBP_NLCDGIPGFDJ,
+        MuseumRandomEventState::NLAEDPNBHBP_NPAFMEBNFOB,
+        MuseumRandomEventState::NLAEDPNBHBP_LOOAKNHDBLL,
+        MuseumRandomEventState::NLAEDPNBHBP_CIHFGJDCHIA,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for MuseumRandomEventState {
 
 impl ::std::default::Default for MuseumRandomEventState {
     fn default() -> Self {
-        MuseumRandomEventState::JKEKNDDBDMC_PCPDHELPKEM
+        MuseumRandomEventState::NLAEDPNBHBP_NLCDGIPGFDJ
     }
 }
 
@@ -98,9 +98,9 @@ impl MuseumRandomEventState {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cMuseumRandomEventState.proto*\x8c\x01\n\x16MuseumRandomEventState\
-    \x12\x1b\n\x17JKEKNDDBDMC_PCPDHELPKEM\x10\0\x12\x1b\n\x17JKEKNDDBDMC_DDL\
-    PGNHADCJ\x10\x01\x12\x1b\n\x17JKEKNDDBDMC_HPJEBFFHJNP\x10\x02\x12\x1b\n\
-    \x17JKEKNDDBDMC_KLHDCOPPLNG\x10\x03b\x06proto3\
+    \x12\x1b\n\x17NLAEDPNBHBP_NLCDGIPGFDJ\x10\0\x12\x1b\n\x17NLAEDPNBHBP_NPA\
+    FMEBNFOB\x10\x01\x12\x1b\n\x17NLAEDPNBHBP_LOOAKNHDBLL\x10\x02\x12\x1b\n\
+    \x17NLAEDPNBHBP_CIHFGJDCHIA\x10\x03b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetRogueShopBuffInfoCsReq {
     // message fields
-    // @@protoc_insertion_point(field:GetRogueShopBuffInfoCsReq.NOKNNMPMGGN)
-    pub NOKNNMPMGGN: bool,
+    // @@protoc_insertion_point(field:GetRogueShopBuffInfoCsReq.LJBCDJNNBJH)
+    pub LJBCDJNNBJH: bool,
     // @@protoc_insertion_point(field:GetRogueShopBuffInfoCsReq.interacted_prop_entity_id)
     pub interacted_prop_entity_id: u32,
     // special fields
@@ -52,9 +52,9 @@ impl GetRogueShopBuffInfoCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NOKNNMPMGGN",
-            |m: &GetRogueShopBuffInfoCsReq| { &m.NOKNNMPMGGN },
-            |m: &mut GetRogueShopBuffInfoCsReq| { &mut m.NOKNNMPMGGN },
+            "LJBCDJNNBJH",
+            |m: &GetRogueShopBuffInfoCsReq| { &m.LJBCDJNNBJH },
+            |m: &mut GetRogueShopBuffInfoCsReq| { &mut m.LJBCDJNNBJH },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "interacted_prop_entity_id",
@@ -79,10 +79,10 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.NOKNNMPMGGN = is.read_bool()?;
+                32 => {
+                    self.LJBCDJNNBJH = is.read_bool()?;
                 },
-                72 => {
+                16 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
                 },
                 tag => {
@@ -97,11 +97,11 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.NOKNNMPMGGN != false {
+        if self.LJBCDJNNBJH != false {
             my_size += 1 + 1;
         }
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(2, self.interacted_prop_entity_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.NOKNNMPMGGN != false {
-            os.write_bool(6, self.NOKNNMPMGGN)?;
+        if self.LJBCDJNNBJH != false {
+            os.write_bool(4, self.LJBCDJNNBJH)?;
         }
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(9, self.interacted_prop_entity_id)?;
+            os.write_uint32(2, self.interacted_prop_entity_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,14 +132,14 @@ impl ::protobuf::Message for GetRogueShopBuffInfoCsReq {
     }
 
     fn clear(&mut self) {
-        self.NOKNNMPMGGN = false;
+        self.LJBCDJNNBJH = false;
         self.interacted_prop_entity_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetRogueShopBuffInfoCsReq {
         static instance: GetRogueShopBuffInfoCsReq = GetRogueShopBuffInfoCsReq {
-            NOKNNMPMGGN: false,
+            LJBCDJNNBJH: false,
             interacted_prop_entity_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -166,9 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for GetRogueShopBuffInfoCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGetRogueShopBuffInfoCsReq.proto\"x\n\x19GetRogueShopBuffInfoCsReq\
-    \x12\x20\n\x0bNOKNNMPMGGN\x18\x06\x20\x01(\x08R\x0bNOKNNMPMGGN\x129\n\
-    \x19interacted_prop_entity_id\x18\t\x20\x01(\rR\x16interactedPropEntityI\
-    db\x06proto3\
+    \x12\x20\n\x0bLJBCDJNNBJH\x18\x04\x20\x01(\x08R\x0bLJBCDJNNBJH\x129\n\
+    \x19interacted_prop_entity_id\x18\x02\x20\x01(\rR\x16interactedPropEntit\
+    yIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

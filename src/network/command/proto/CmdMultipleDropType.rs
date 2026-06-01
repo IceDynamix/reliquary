@@ -27,20 +27,20 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdMultipleDropType)
 pub enum CmdMultipleDropType {
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.FLPPNJGEMFN_PCPDHELPKEM)
-    FLPPNJGEMFN_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdMultipleDropInfoScNotify)
-    CmdMultipleDropInfoScNotify = 4694,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdMultipleDropInfoNotify)
-    CmdMultipleDropInfoNotify = 4618,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdGetMultipleDropInfoCsReq)
-    CmdGetMultipleDropInfoCsReq = 4691,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdGetPlayerReturnMultiDropInfoScRsp)
-    CmdGetPlayerReturnMultiDropInfoScRsp = 4614,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdGetPlayerReturnMultiDropInfoCsReq)
-    CmdGetPlayerReturnMultiDropInfoCsReq = 4695,
-    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.CmdGetMultipleDropInfoScRsp)
-    CmdGetMultipleDropInfoScRsp = 4610,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_NLCDGIPGFDJ)
+    ACIMFGFNPDF_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_FEKBMNHPIHH)
+    ACIMFGFNPDF_FEKBMNHPIHH = 4636,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_EKEMGKOPHFP)
+    ACIMFGFNPDF_EKEMGKOPHFP = 4627,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_KBJBDAOPHGG)
+    ACIMFGFNPDF_KBJBDAOPHGG = 4613,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_NPKMBAOAPLD)
+    ACIMFGFNPDF_NPKMBAOAPLD = 4673,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_DOICNEIODDH)
+    ACIMFGFNPDF_DOICNEIODDH = 4603,
+    // @@protoc_insertion_point(enum_value:CmdMultipleDropType.ACIMFGFNPDF_IEKEHEGBEKF)
+    ACIMFGFNPDF_IEKEHEGBEKF = 4680,
 }
 
 impl ::protobuf::Enum for CmdMultipleDropType {
@@ -52,38 +52,38 @@ impl ::protobuf::Enum for CmdMultipleDropType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdMultipleDropType> {
         match value {
-            0 => ::std::option::Option::Some(CmdMultipleDropType::FLPPNJGEMFN_PCPDHELPKEM),
-            4694 => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoScNotify),
-            4618 => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoNotify),
-            4691 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetMultipleDropInfoCsReq),
-            4614 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp),
-            4695 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq),
-            4610 => ::std::option::Option::Some(CmdMultipleDropType::CmdGetMultipleDropInfoScRsp),
+            0 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_NLCDGIPGFDJ),
+            4636 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH),
+            4627 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP),
+            4613 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG),
+            4673 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_NPKMBAOAPLD),
+            4603 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_DOICNEIODDH),
+            4680 => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_IEKEHEGBEKF),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdMultipleDropType> {
         match str {
-            "FLPPNJGEMFN_PCPDHELPKEM" => ::std::option::Option::Some(CmdMultipleDropType::FLPPNJGEMFN_PCPDHELPKEM),
-            "CmdMultipleDropInfoScNotify" => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoScNotify),
-            "CmdMultipleDropInfoNotify" => ::std::option::Option::Some(CmdMultipleDropType::CmdMultipleDropInfoNotify),
-            "CmdGetMultipleDropInfoCsReq" => ::std::option::Option::Some(CmdMultipleDropType::CmdGetMultipleDropInfoCsReq),
-            "CmdGetPlayerReturnMultiDropInfoScRsp" => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp),
-            "CmdGetPlayerReturnMultiDropInfoCsReq" => ::std::option::Option::Some(CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq),
-            "CmdGetMultipleDropInfoScRsp" => ::std::option::Option::Some(CmdMultipleDropType::CmdGetMultipleDropInfoScRsp),
+            "ACIMFGFNPDF_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_NLCDGIPGFDJ),
+            "ACIMFGFNPDF_FEKBMNHPIHH" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH),
+            "ACIMFGFNPDF_EKEMGKOPHFP" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP),
+            "ACIMFGFNPDF_KBJBDAOPHGG" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG),
+            "ACIMFGFNPDF_NPKMBAOAPLD" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_NPKMBAOAPLD),
+            "ACIMFGFNPDF_DOICNEIODDH" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_DOICNEIODDH),
+            "ACIMFGFNPDF_IEKEHEGBEKF" => ::std::option::Option::Some(CmdMultipleDropType::ACIMFGFNPDF_IEKEHEGBEKF),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdMultipleDropType] = &[
-        CmdMultipleDropType::FLPPNJGEMFN_PCPDHELPKEM,
-        CmdMultipleDropType::CmdMultipleDropInfoScNotify,
-        CmdMultipleDropType::CmdMultipleDropInfoNotify,
-        CmdMultipleDropType::CmdGetMultipleDropInfoCsReq,
-        CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp,
-        CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq,
-        CmdMultipleDropType::CmdGetMultipleDropInfoScRsp,
+        CmdMultipleDropType::ACIMFGFNPDF_NLCDGIPGFDJ,
+        CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH,
+        CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP,
+        CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG,
+        CmdMultipleDropType::ACIMFGFNPDF_NPKMBAOAPLD,
+        CmdMultipleDropType::ACIMFGFNPDF_DOICNEIODDH,
+        CmdMultipleDropType::ACIMFGFNPDF_IEKEHEGBEKF,
     ];
 }
 
@@ -95,13 +95,13 @@ impl ::protobuf::EnumFull for CmdMultipleDropType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdMultipleDropType::FLPPNJGEMFN_PCPDHELPKEM => 0,
-            CmdMultipleDropType::CmdMultipleDropInfoScNotify => 1,
-            CmdMultipleDropType::CmdMultipleDropInfoNotify => 2,
-            CmdMultipleDropType::CmdGetMultipleDropInfoCsReq => 3,
-            CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoScRsp => 4,
-            CmdMultipleDropType::CmdGetPlayerReturnMultiDropInfoCsReq => 5,
-            CmdMultipleDropType::CmdGetMultipleDropInfoScRsp => 6,
+            CmdMultipleDropType::ACIMFGFNPDF_NLCDGIPGFDJ => 0,
+            CmdMultipleDropType::ACIMFGFNPDF_FEKBMNHPIHH => 1,
+            CmdMultipleDropType::ACIMFGFNPDF_EKEMGKOPHFP => 2,
+            CmdMultipleDropType::ACIMFGFNPDF_KBJBDAOPHGG => 3,
+            CmdMultipleDropType::ACIMFGFNPDF_NPKMBAOAPLD => 4,
+            CmdMultipleDropType::ACIMFGFNPDF_DOICNEIODDH => 5,
+            CmdMultipleDropType::ACIMFGFNPDF_IEKEHEGBEKF => 6,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -109,7 +109,7 @@ impl ::protobuf::EnumFull for CmdMultipleDropType {
 
 impl ::std::default::Default for CmdMultipleDropType {
     fn default() -> Self {
-        CmdMultipleDropType::FLPPNJGEMFN_PCPDHELPKEM
+        CmdMultipleDropType::ACIMFGFNPDF_NLCDGIPGFDJ
     }
 }
 
@@ -120,12 +120,12 @@ impl CmdMultipleDropType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19CmdMultipleDropType.proto*\x8e\x02\n\x13CmdMultipleDropType\x12\
-    \x1b\n\x17FLPPNJGEMFN_PCPDHELPKEM\x10\0\x12\x20\n\x1bCmdMultipleDropInfo\
-    ScNotify\x10\xd6$\x12\x1e\n\x19CmdMultipleDropInfoNotify\x10\x8a$\x12\
-    \x20\n\x1bCmdGetMultipleDropInfoCsReq\x10\xd3$\x12)\n$CmdGetPlayerReturn\
-    MultiDropInfoScRsp\x10\x86$\x12)\n$CmdGetPlayerReturnMultiDropInfoCsReq\
-    \x10\xd7$\x12\x20\n\x1bCmdGetMultipleDropInfoScRsp\x10\x82$b\x06proto3\
+    \n\x19CmdMultipleDropType.proto*\xe6\x01\n\x13CmdMultipleDropType\x12\
+    \x1b\n\x17ACIMFGFNPDF_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17ACIMFGFNPDF_FEKBMNH\
+    PIHH\x10\x9c$\x12\x1c\n\x17ACIMFGFNPDF_EKEMGKOPHFP\x10\x93$\x12\x1c\n\
+    \x17ACIMFGFNPDF_KBJBDAOPHGG\x10\x85$\x12\x1c\n\x17ACIMFGFNPDF_NPKMBAOAPL\
+    D\x10\xc1$\x12\x1c\n\x17ACIMFGFNPDF_DOICNEIODDH\x10\xfb#\x12\x1c\n\x17AC\
+    IMFGFNPDF_IEKEHEGBEKF\x10\xc8$b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

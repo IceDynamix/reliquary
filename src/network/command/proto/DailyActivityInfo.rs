@@ -30,12 +30,12 @@ pub struct DailyActivityInfo {
     // message fields
     // @@protoc_insertion_point(field:DailyActivityInfo.level)
     pub level: u32,
+    // @@protoc_insertion_point(field:DailyActivityInfo.is_has_taken)
+    pub is_has_taken: bool,
     // @@protoc_insertion_point(field:DailyActivityInfo.daily_active_point)
     pub daily_active_point: u32,
     // @@protoc_insertion_point(field:DailyActivityInfo.world_level)
     pub world_level: u32,
-    // @@protoc_insertion_point(field:DailyActivityInfo.is_has_taken)
-    pub is_has_taken: bool,
     // special fields
     // @@protoc_insertion_point(special_field:DailyActivityInfo.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -61,6 +61,11 @@ impl DailyActivityInfo {
             |m: &mut DailyActivityInfo| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_has_taken",
+            |m: &DailyActivityInfo| { &m.is_has_taken },
+            |m: &mut DailyActivityInfo| { &mut m.is_has_taken },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "daily_active_point",
             |m: &DailyActivityInfo| { &m.daily_active_point },
             |m: &mut DailyActivityInfo| { &mut m.daily_active_point },
@@ -69,11 +74,6 @@ impl DailyActivityInfo {
             "world_level",
             |m: &DailyActivityInfo| { &m.world_level },
             |m: &mut DailyActivityInfo| { &mut m.world_level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_has_taken",
-            |m: &DailyActivityInfo| { &m.is_has_taken },
-            |m: &mut DailyActivityInfo| { &mut m.is_has_taken },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DailyActivityInfo>(
             "DailyActivityInfo",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for DailyActivityInfo {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
+                72 => {
                     self.level = is.read_uint32()?;
                 },
-                80 => {
+                104 => {
+                    self.is_has_taken = is.read_bool()?;
+                },
+                96 => {
                     self.daily_active_point = is.read_uint32()?;
                 },
                 56 => {
                     self.world_level = is.read_uint32()?;
-                },
-                48 => {
-                    self.is_has_taken = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -118,16 +118,16 @@ impl ::protobuf::Message for DailyActivityInfo {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
-        }
-        if self.daily_active_point != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.daily_active_point);
-        }
-        if self.world_level != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.world_level);
+            my_size += ::protobuf::rt::uint32_size(9, self.level);
         }
         if self.is_has_taken != false {
             my_size += 1 + 1;
+        }
+        if self.daily_active_point != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.daily_active_point);
+        }
+        if self.world_level != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.world_level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,16 +136,16 @@ impl ::protobuf::Message for DailyActivityInfo {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.level != 0 {
-            os.write_uint32(5, self.level)?;
+            os.write_uint32(9, self.level)?;
+        }
+        if self.is_has_taken != false {
+            os.write_bool(13, self.is_has_taken)?;
         }
         if self.daily_active_point != 0 {
-            os.write_uint32(10, self.daily_active_point)?;
+            os.write_uint32(12, self.daily_active_point)?;
         }
         if self.world_level != 0 {
             os.write_uint32(7, self.world_level)?;
-        }
-        if self.is_has_taken != false {
-            os.write_bool(6, self.is_has_taken)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,18 +165,18 @@ impl ::protobuf::Message for DailyActivityInfo {
 
     fn clear(&mut self) {
         self.level = 0;
+        self.is_has_taken = false;
         self.daily_active_point = 0;
         self.world_level = 0;
-        self.is_has_taken = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DailyActivityInfo {
         static instance: DailyActivityInfo = DailyActivityInfo {
             level: 0,
+            is_has_taken: false,
             daily_active_point: 0,
             world_level: 0,
-            is_has_taken: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -202,10 +202,10 @@ impl ::protobuf::reflect::ProtobufValue for DailyActivityInfo {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x17DailyActivityInfo.proto\"\x9a\x01\n\x11DailyActivityInfo\x12\x14\n\
-    \x05level\x18\x05\x20\x01(\rR\x05level\x12,\n\x12daily_active_point\x18\
-    \n\x20\x01(\rR\x10dailyActivePoint\x12\x1f\n\x0bworld_level\x18\x07\x20\
-    \x01(\rR\nworldLevel\x12\x20\n\x0cis_has_taken\x18\x06\x20\x01(\x08R\nis\
-    HasTakenb\x06proto3\
+    \x05level\x18\t\x20\x01(\rR\x05level\x12\x20\n\x0cis_has_taken\x18\r\x20\
+    \x01(\x08R\nisHasTaken\x12,\n\x12daily_active_point\x18\x0c\x20\x01(\rR\
+    \x10dailyActivePoint\x12\x1f\n\x0bworld_level\x18\x07\x20\x01(\rR\nworld\
+    Levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

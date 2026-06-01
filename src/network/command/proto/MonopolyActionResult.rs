@@ -29,17 +29,17 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 pub struct MonopolyActionResult {
     // message fields
     // @@protoc_insertion_point(field:MonopolyActionResult.detail)
-    pub detail: ::protobuf::MessageField<super::JDMPAAEGMCD::JDMPAAEGMCD>,
-    // @@protoc_insertion_point(field:MonopolyActionResult.effect_type)
-    pub effect_type: u32,
+    pub detail: ::protobuf::MessageField<super::GPPKIMDCPBM::GPPKIMDCPBM>,
+    // @@protoc_insertion_point(field:MonopolyActionResult.source_type)
+    pub source_type: ::protobuf::EnumOrUnknown<super::BAKAELIMIJI::BAKAELIMIJI>,
     // @@protoc_insertion_point(field:MonopolyActionResult.trigger_cell_id)
     pub trigger_cell_id: u32,
-    // @@protoc_insertion_point(field:MonopolyActionResult.source_type)
-    pub source_type: ::protobuf::EnumOrUnknown<super::NGAEFPNBDAD::NGAEFPNBDAD>,
-    // @@protoc_insertion_point(field:MonopolyActionResult.click_map_id)
-    pub click_map_id: u32,
     // @@protoc_insertion_point(field:MonopolyActionResult.click_cell_id)
     pub click_cell_id: u32,
+    // @@protoc_insertion_point(field:MonopolyActionResult.effect_type)
+    pub effect_type: u32,
+    // @@protoc_insertion_point(field:MonopolyActionResult.click_map_id)
+    pub click_map_id: u32,
     // @@protoc_insertion_point(field:MonopolyActionResult.trigger_map_id)
     pub trigger_map_id: u32,
     // special fields
@@ -61,20 +61,10 @@ impl MonopolyActionResult {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(7);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JDMPAAEGMCD::JDMPAAEGMCD>(
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::GPPKIMDCPBM::GPPKIMDCPBM>(
             "detail",
             |m: &MonopolyActionResult| { &m.detail },
             |m: &mut MonopolyActionResult| { &mut m.detail },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "effect_type",
-            |m: &MonopolyActionResult| { &m.effect_type },
-            |m: &mut MonopolyActionResult| { &mut m.effect_type },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "trigger_cell_id",
-            |m: &MonopolyActionResult| { &m.trigger_cell_id },
-            |m: &mut MonopolyActionResult| { &mut m.trigger_cell_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "source_type",
@@ -82,14 +72,24 @@ impl MonopolyActionResult {
             |m: &mut MonopolyActionResult| { &mut m.source_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "click_map_id",
-            |m: &MonopolyActionResult| { &m.click_map_id },
-            |m: &mut MonopolyActionResult| { &mut m.click_map_id },
+            "trigger_cell_id",
+            |m: &MonopolyActionResult| { &m.trigger_cell_id },
+            |m: &mut MonopolyActionResult| { &mut m.trigger_cell_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "click_cell_id",
             |m: &MonopolyActionResult| { &m.click_cell_id },
             |m: &mut MonopolyActionResult| { &mut m.click_cell_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "effect_type",
+            |m: &MonopolyActionResult| { &m.effect_type },
+            |m: &mut MonopolyActionResult| { &mut m.effect_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "click_map_id",
+            |m: &MonopolyActionResult| { &m.click_map_id },
+            |m: &mut MonopolyActionResult| { &mut m.click_map_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "trigger_map_id",
@@ -114,25 +114,25 @@ impl ::protobuf::Message for MonopolyActionResult {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                18 => {
+                122 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.detail)?;
                 },
-                72 => {
-                    self.effect_type = is.read_uint32()?;
+                104 => {
+                    self.source_type = is.read_enum_or_unknown()?;
                 },
-                64 => {
+                48 => {
                     self.trigger_cell_id = is.read_uint32()?;
                 },
                 24 => {
-                    self.source_type = is.read_enum_or_unknown()?;
-                },
-                120 => {
-                    self.click_map_id = is.read_uint32()?;
-                },
-                56 => {
                     self.click_cell_id = is.read_uint32()?;
                 },
-                80 => {
+                88 => {
+                    self.effect_type = is.read_uint32()?;
+                },
+                32 => {
+                    self.click_map_id = is.read_uint32()?;
+                },
+                96 => {
                     self.trigger_map_id = is.read_uint32()?;
                 },
                 tag => {
@@ -151,23 +151,23 @@ impl ::protobuf::Message for MonopolyActionResult {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.effect_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.effect_type);
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::BAKAELIMIJI::BAKAELIMIJI::BAKAELIMIJI_NLCDGIPGFDJ) {
+            my_size += ::protobuf::rt::int32_size(13, self.source_type.value());
         }
         if self.trigger_cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.trigger_cell_id);
-        }
-        if self.source_type != ::protobuf::EnumOrUnknown::new(super::NGAEFPNBDAD::NGAEFPNBDAD::NGAEFPNBDAD_PCPDHELPKEM) {
-            my_size += ::protobuf::rt::int32_size(3, self.source_type.value());
-        }
-        if self.click_map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(15, self.click_map_id);
+            my_size += ::protobuf::rt::uint32_size(6, self.trigger_cell_id);
         }
         if self.click_cell_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.click_cell_id);
+            my_size += ::protobuf::rt::uint32_size(3, self.click_cell_id);
+        }
+        if self.effect_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(11, self.effect_type);
+        }
+        if self.click_map_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.click_map_id);
         }
         if self.trigger_map_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.trigger_map_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.trigger_map_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -176,25 +176,25 @@ impl ::protobuf::Message for MonopolyActionResult {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.detail.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
         }
-        if self.effect_type != 0 {
-            os.write_uint32(9, self.effect_type)?;
+        if self.source_type != ::protobuf::EnumOrUnknown::new(super::BAKAELIMIJI::BAKAELIMIJI::BAKAELIMIJI_NLCDGIPGFDJ) {
+            os.write_enum(13, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
         }
         if self.trigger_cell_id != 0 {
-            os.write_uint32(8, self.trigger_cell_id)?;
-        }
-        if self.source_type != ::protobuf::EnumOrUnknown::new(super::NGAEFPNBDAD::NGAEFPNBDAD::NGAEFPNBDAD_PCPDHELPKEM) {
-            os.write_enum(3, ::protobuf::EnumOrUnknown::value(&self.source_type))?;
-        }
-        if self.click_map_id != 0 {
-            os.write_uint32(15, self.click_map_id)?;
+            os.write_uint32(6, self.trigger_cell_id)?;
         }
         if self.click_cell_id != 0 {
-            os.write_uint32(7, self.click_cell_id)?;
+            os.write_uint32(3, self.click_cell_id)?;
+        }
+        if self.effect_type != 0 {
+            os.write_uint32(11, self.effect_type)?;
+        }
+        if self.click_map_id != 0 {
+            os.write_uint32(4, self.click_map_id)?;
         }
         if self.trigger_map_id != 0 {
-            os.write_uint32(10, self.trigger_map_id)?;
+            os.write_uint32(12, self.trigger_map_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -214,11 +214,11 @@ impl ::protobuf::Message for MonopolyActionResult {
 
     fn clear(&mut self) {
         self.detail.clear();
-        self.effect_type = 0;
+        self.source_type = ::protobuf::EnumOrUnknown::new(super::BAKAELIMIJI::BAKAELIMIJI::BAKAELIMIJI_NLCDGIPGFDJ);
         self.trigger_cell_id = 0;
-        self.source_type = ::protobuf::EnumOrUnknown::new(super::NGAEFPNBDAD::NGAEFPNBDAD::NGAEFPNBDAD_PCPDHELPKEM);
-        self.click_map_id = 0;
         self.click_cell_id = 0;
+        self.effect_type = 0;
+        self.click_map_id = 0;
         self.trigger_map_id = 0;
         self.special_fields.clear();
     }
@@ -226,11 +226,11 @@ impl ::protobuf::Message for MonopolyActionResult {
     fn default_instance() -> &'static MonopolyActionResult {
         static instance: MonopolyActionResult = MonopolyActionResult {
             detail: ::protobuf::MessageField::none(),
-            effect_type: 0,
-            trigger_cell_id: 0,
             source_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            click_map_id: 0,
+            trigger_cell_id: 0,
             click_cell_id: 0,
+            effect_type: 0,
+            click_map_id: 0,
             trigger_map_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -256,14 +256,14 @@ impl ::protobuf::reflect::ProtobufValue for MonopolyActionResult {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aMonopolyActionResult.proto\x1a\x11JDMPAAEGMCD.proto\x1a\x11NGAEFPN\
-    BDAD.proto\"\xa0\x02\n\x14MonopolyActionResult\x12$\n\x06detail\x18\x02\
-    \x20\x01(\x0b2\x0c.JDMPAAEGMCDR\x06detail\x12\x1f\n\x0beffect_type\x18\t\
-    \x20\x01(\rR\neffectType\x12&\n\x0ftrigger_cell_id\x18\x08\x20\x01(\rR\r\
-    triggerCellId\x12-\n\x0bsource_type\x18\x03\x20\x01(\x0e2\x0c.NGAEFPNBDA\
-    DR\nsourceType\x12\x20\n\x0cclick_map_id\x18\x0f\x20\x01(\rR\nclickMapId\
-    \x12\"\n\rclick_cell_id\x18\x07\x20\x01(\rR\x0bclickCellId\x12$\n\x0etri\
-    gger_map_id\x18\n\x20\x01(\rR\x0ctriggerMapIdb\x06proto3\
+    \n\x1aMonopolyActionResult.proto\x1a\x11BAKAELIMIJI.proto\x1a\x11GPPKIMD\
+    CPBM.proto\"\xa0\x02\n\x14MonopolyActionResult\x12$\n\x06detail\x18\x0f\
+    \x20\x01(\x0b2\x0c.GPPKIMDCPBMR\x06detail\x12-\n\x0bsource_type\x18\r\
+    \x20\x01(\x0e2\x0c.BAKAELIMIJIR\nsourceType\x12&\n\x0ftrigger_cell_id\
+    \x18\x06\x20\x01(\rR\rtriggerCellId\x12\"\n\rclick_cell_id\x18\x03\x20\
+    \x01(\rR\x0bclickCellId\x12\x1f\n\x0beffect_type\x18\x0b\x20\x01(\rR\nef\
+    fectType\x12\x20\n\x0cclick_map_id\x18\x04\x20\x01(\rR\nclickMapId\x12$\
+    \n\x0etrigger_map_id\x18\x0c\x20\x01(\rR\x0ctriggerMapIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -281,8 +281,8 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(2);
-            deps.push(super::JDMPAAEGMCD::file_descriptor().clone());
-            deps.push(super::NGAEFPNBDAD::file_descriptor().clone());
+            deps.push(super::BAKAELIMIJI::file_descriptor().clone());
+            deps.push(super::GPPKIMDCPBM::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(MonopolyActionResult::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

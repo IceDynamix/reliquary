@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct DirectDeliveryScNotify {
     // message fields
-    // @@protoc_insertion_point(field:DirectDeliveryScNotify.HALFGLGLDLO)
-    pub HALFGLGLDLO: ::std::vec::Vec<super::ItemList::ItemList>,
-    // @@protoc_insertion_point(field:DirectDeliveryScNotify.OECCPKANHMN)
-    pub OECCPKANHMN: u32,
+    // @@protoc_insertion_point(field:DirectDeliveryScNotify.DJOBNPIAEJP)
+    pub DJOBNPIAEJP: ::std::vec::Vec<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:DirectDeliveryScNotify.HFHHKGFNGFC)
+    pub HFHHKGFNGFC: u32,
     // special fields
     // @@protoc_insertion_point(special_field:DirectDeliveryScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl DirectDeliveryScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "HALFGLGLDLO",
-            |m: &DirectDeliveryScNotify| { &m.HALFGLGLDLO },
-            |m: &mut DirectDeliveryScNotify| { &mut m.HALFGLGLDLO },
+            "DJOBNPIAEJP",
+            |m: &DirectDeliveryScNotify| { &m.DJOBNPIAEJP },
+            |m: &mut DirectDeliveryScNotify| { &mut m.DJOBNPIAEJP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "OECCPKANHMN",
-            |m: &DirectDeliveryScNotify| { &m.OECCPKANHMN },
-            |m: &mut DirectDeliveryScNotify| { &mut m.OECCPKANHMN },
+            "HFHHKGFNGFC",
+            |m: &DirectDeliveryScNotify| { &m.HFHHKGFNGFC },
+            |m: &mut DirectDeliveryScNotify| { &mut m.HFHHKGFNGFC },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<DirectDeliveryScNotify>(
             "DirectDeliveryScNotify",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for DirectDeliveryScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    self.HALFGLGLDLO.push(is.read_message()?);
+                50 => {
+                    self.DJOBNPIAEJP.push(is.read_message()?);
                 },
-                72 => {
-                    self.OECCPKANHMN = is.read_uint32()?;
+                8 => {
+                    self.HFHHKGFNGFC = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for DirectDeliveryScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.HALFGLGLDLO {
+        for value in &self.DJOBNPIAEJP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        if self.OECCPKANHMN != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.OECCPKANHMN);
+        if self.HFHHKGFNGFC != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.HFHHKGFNGFC);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for DirectDeliveryScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.HALFGLGLDLO {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        for v in &self.DJOBNPIAEJP {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
-        if self.OECCPKANHMN != 0 {
-            os.write_uint32(9, self.OECCPKANHMN)?;
+        if self.HFHHKGFNGFC != 0 {
+            os.write_uint32(1, self.HFHHKGFNGFC)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for DirectDeliveryScNotify {
     }
 
     fn clear(&mut self) {
-        self.HALFGLGLDLO.clear();
-        self.OECCPKANHMN = 0;
+        self.DJOBNPIAEJP.clear();
+        self.HFHHKGFNGFC = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static DirectDeliveryScNotify {
         static instance: DirectDeliveryScNotify = DirectDeliveryScNotify {
-            HALFGLGLDLO: ::std::vec::Vec::new(),
-            OECCPKANHMN: 0,
+            DJOBNPIAEJP: ::std::vec::Vec::new(),
+            HFHHKGFNGFC: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -167,9 +167,9 @@ impl ::protobuf::reflect::ProtobufValue for DirectDeliveryScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cDirectDeliveryScNotify.proto\x1a\x0eItemList.proto\"g\n\x16DirectD\
-    eliveryScNotify\x12+\n\x0bHALFGLGLDLO\x18\x01\x20\x03(\x0b2\t.ItemListR\
-    \x0bHALFGLGLDLO\x12\x20\n\x0bOECCPKANHMN\x18\t\x20\x01(\rR\x0bOECCPKANHM\
-    Nb\x06proto3\
+    eliveryScNotify\x12+\n\x0bDJOBNPIAEJP\x18\x06\x20\x03(\x0b2\t.ItemListR\
+    \x0bDJOBNPIAEJP\x12\x20\n\x0bHFHHKGFNGFC\x18\x01\x20\x01(\rR\x0bHFHHKGFN\
+    GFCb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

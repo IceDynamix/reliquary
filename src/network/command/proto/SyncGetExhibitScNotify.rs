@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SyncGetExhibitScNotify {
     // message fields
-    // @@protoc_insertion_point(field:SyncGetExhibitScNotify.ECJBEELEDFK)
-    pub ECJBEELEDFK: u32,
+    // @@protoc_insertion_point(field:SyncGetExhibitScNotify.MMNBPCGIONF)
+    pub MMNBPCGIONF: u32,
     // special fields
     // @@protoc_insertion_point(special_field:SyncGetExhibitScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SyncGetExhibitScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "ECJBEELEDFK",
-            |m: &SyncGetExhibitScNotify| { &m.ECJBEELEDFK },
-            |m: &mut SyncGetExhibitScNotify| { &mut m.ECJBEELEDFK },
+            "MMNBPCGIONF",
+            |m: &SyncGetExhibitScNotify| { &m.MMNBPCGIONF },
+            |m: &mut SyncGetExhibitScNotify| { &mut m.MMNBPCGIONF },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SyncGetExhibitScNotify>(
             "SyncGetExhibitScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for SyncGetExhibitScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.ECJBEELEDFK = is.read_uint32()?;
+                64 => {
+                    self.MMNBPCGIONF = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for SyncGetExhibitScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.ECJBEELEDFK != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.ECJBEELEDFK);
+        if self.MMNBPCGIONF != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.MMNBPCGIONF);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for SyncGetExhibitScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.ECJBEELEDFK != 0 {
-            os.write_uint32(3, self.ECJBEELEDFK)?;
+        if self.MMNBPCGIONF != 0 {
+            os.write_uint32(8, self.MMNBPCGIONF)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for SyncGetExhibitScNotify {
     }
 
     fn clear(&mut self) {
-        self.ECJBEELEDFK = 0;
+        self.MMNBPCGIONF = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SyncGetExhibitScNotify {
         static instance: SyncGetExhibitScNotify = SyncGetExhibitScNotify {
-            ECJBEELEDFK: 0,
+            MMNBPCGIONF: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for SyncGetExhibitScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1cSyncGetExhibitScNotify.proto\":\n\x16SyncGetExhibitScNotify\x12\
-    \x20\n\x0bECJBEELEDFK\x18\x03\x20\x01(\rR\x0bECJBEELEDFKb\x06proto3\
+    \x20\n\x0bMMNBPCGIONF\x18\x08\x20\x01(\rR\x0bMMNBPCGIONFb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

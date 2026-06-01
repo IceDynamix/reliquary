@@ -28,52 +28,52 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PerformanceStartSnapshot {
     // message fields
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.performance_id)
-    pub performance_id: u32,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.performance_type)
-    pub performance_type: u32,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.plane_id)
-    pub plane_id: u32,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.floor_id)
-    pub floor_id: u32,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.dimension_id)
-    pub dimension_id: u32,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.story_line_id)
-    pub story_line_id: u32,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.content_id)
-    pub content_id: u32,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.entry_id)
-    pub entry_id: u32,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.version)
-    pub version: u32,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.player)
-    pub player: ::protobuf::MessageField<super::PlayerSnapshot::PlayerSnapshot>,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.mission)
-    pub mission: ::protobuf::MessageField<super::MissionSnapshot::MissionSnapshot>,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.map_rotation)
+    pub map_rotation: ::protobuf::MessageField<super::MapRotationSnapshot::MapRotationSnapshot>,
     // @@protoc_insertion_point(field:PerformanceStartSnapshot.era_flipper)
     pub era_flipper: ::protobuf::MessageField<super::EraFlipperSnapshot::EraFlipperSnapshot>,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.server_group_list)
-    pub server_group_list: ::std::vec::Vec<super::GroupSnapshot::GroupSnapshot>,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.mission)
+    pub mission: ::protobuf::MessageField<super::MissionSnapshot::MissionSnapshot>,
     // @@protoc_insertion_point(field:PerformanceStartSnapshot.client_group_list)
     pub client_group_list: ::std::vec::Vec<super::GroupSnapshot::GroupSnapshot>,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.server_legacy_group_list)
-    pub server_legacy_group_list: ::std::vec::Vec<super::GroupSnapshot::GroupSnapshot>,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.client_legacy_group_list)
-    pub client_legacy_group_list: ::std::vec::Vec<super::GroupSnapshot::GroupSnapshot>,
     // @@protoc_insertion_point(field:PerformanceStartSnapshot.floor_saved_value_list)
     pub floor_saved_value_list: ::std::collections::HashMap<::std::string::String, i32>,
     // @@protoc_insertion_point(field:PerformanceStartSnapshot.floor_custom_value_list)
     pub floor_custom_value_list: ::std::collections::HashMap<::std::string::String, super::FloorCustomValueSnapshot::FloorCustomValueSnapshot>,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.map_rotation)
-    pub map_rotation: ::protobuf::MessageField<super::MapRotationSnapshot::MapRotationSnapshot>,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.world_id)
-    pub world_id: u32,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.dialog)
-    pub dialog: ::protobuf::MessageField<super::DialogSnapshot::DialogSnapshot>,
-    // @@protoc_insertion_point(field:PerformanceStartSnapshot.owner_group_id)
-    pub owner_group_id: u32,
     // @@protoc_insertion_point(field:PerformanceStartSnapshot.switch_hand)
     pub switch_hand: ::protobuf::MessageField<super::SwitchHandSnapshot::SwitchHandSnapshot>,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.client_legacy_group_list)
+    pub client_legacy_group_list: ::std::vec::Vec<super::GroupSnapshot::GroupSnapshot>,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.server_group_list)
+    pub server_group_list: ::std::vec::Vec<super::GroupSnapshot::GroupSnapshot>,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.player)
+    pub player: ::protobuf::MessageField<super::PlayerSnapshot::PlayerSnapshot>,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.server_legacy_group_list)
+    pub server_legacy_group_list: ::std::vec::Vec<super::GroupSnapshot::GroupSnapshot>,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.dialog)
+    pub dialog: ::protobuf::MessageField<super::DialogSnapshot::DialogSnapshot>,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.dimension_id)
+    pub dimension_id: u32,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.entry_id)
+    pub entry_id: u32,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.owner_group_id)
+    pub owner_group_id: u32,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.performance_id)
+    pub performance_id: u32,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.world_id)
+    pub world_id: u32,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.plane_id)
+    pub plane_id: u32,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.floor_id)
+    pub floor_id: u32,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.performance_type)
+    pub performance_type: u32,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.story_line_id)
+    pub story_line_id: u32,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.version)
+    pub version: u32,
+    // @@protoc_insertion_point(field:PerformanceStartSnapshot.content_id)
+    pub content_id: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PerformanceStartSnapshot.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -93,15 +93,90 @@ impl PerformanceStartSnapshot {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(23);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MapRotationSnapshot::MapRotationSnapshot>(
+            "map_rotation",
+            |m: &PerformanceStartSnapshot| { &m.map_rotation },
+            |m: &mut PerformanceStartSnapshot| { &mut m.map_rotation },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EraFlipperSnapshot::EraFlipperSnapshot>(
+            "era_flipper",
+            |m: &PerformanceStartSnapshot| { &m.era_flipper },
+            |m: &mut PerformanceStartSnapshot| { &mut m.era_flipper },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MissionSnapshot::MissionSnapshot>(
+            "mission",
+            |m: &PerformanceStartSnapshot| { &m.mission },
+            |m: &mut PerformanceStartSnapshot| { &mut m.mission },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "client_group_list",
+            |m: &PerformanceStartSnapshot| { &m.client_group_list },
+            |m: &mut PerformanceStartSnapshot| { &mut m.client_group_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "floor_saved_value_list",
+            |m: &PerformanceStartSnapshot| { &m.floor_saved_value_list },
+            |m: &mut PerformanceStartSnapshot| { &mut m.floor_saved_value_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
+            "floor_custom_value_list",
+            |m: &PerformanceStartSnapshot| { &m.floor_custom_value_list },
+            |m: &mut PerformanceStartSnapshot| { &mut m.floor_custom_value_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SwitchHandSnapshot::SwitchHandSnapshot>(
+            "switch_hand",
+            |m: &PerformanceStartSnapshot| { &m.switch_hand },
+            |m: &mut PerformanceStartSnapshot| { &mut m.switch_hand },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "client_legacy_group_list",
+            |m: &PerformanceStartSnapshot| { &m.client_legacy_group_list },
+            |m: &mut PerformanceStartSnapshot| { &mut m.client_legacy_group_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "server_group_list",
+            |m: &PerformanceStartSnapshot| { &m.server_group_list },
+            |m: &mut PerformanceStartSnapshot| { &mut m.server_group_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSnapshot::PlayerSnapshot>(
+            "player",
+            |m: &PerformanceStartSnapshot| { &m.player },
+            |m: &mut PerformanceStartSnapshot| { &mut m.player },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "server_legacy_group_list",
+            |m: &PerformanceStartSnapshot| { &m.server_legacy_group_list },
+            |m: &mut PerformanceStartSnapshot| { &mut m.server_legacy_group_list },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DialogSnapshot::DialogSnapshot>(
+            "dialog",
+            |m: &PerformanceStartSnapshot| { &m.dialog },
+            |m: &mut PerformanceStartSnapshot| { &mut m.dialog },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "dimension_id",
+            |m: &PerformanceStartSnapshot| { &m.dimension_id },
+            |m: &mut PerformanceStartSnapshot| { &mut m.dimension_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "entry_id",
+            |m: &PerformanceStartSnapshot| { &m.entry_id },
+            |m: &mut PerformanceStartSnapshot| { &mut m.entry_id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "owner_group_id",
+            |m: &PerformanceStartSnapshot| { &m.owner_group_id },
+            |m: &mut PerformanceStartSnapshot| { &mut m.owner_group_id },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "performance_id",
             |m: &PerformanceStartSnapshot| { &m.performance_id },
             |m: &mut PerformanceStartSnapshot| { &mut m.performance_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "performance_type",
-            |m: &PerformanceStartSnapshot| { &m.performance_type },
-            |m: &mut PerformanceStartSnapshot| { &mut m.performance_type },
+            "world_id",
+            |m: &PerformanceStartSnapshot| { &m.world_id },
+            |m: &mut PerformanceStartSnapshot| { &mut m.world_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "plane_id",
@@ -114,9 +189,9 @@ impl PerformanceStartSnapshot {
             |m: &mut PerformanceStartSnapshot| { &mut m.floor_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "dimension_id",
-            |m: &PerformanceStartSnapshot| { &m.dimension_id },
-            |m: &mut PerformanceStartSnapshot| { &mut m.dimension_id },
+            "performance_type",
+            |m: &PerformanceStartSnapshot| { &m.performance_type },
+            |m: &mut PerformanceStartSnapshot| { &mut m.performance_type },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "story_line_id",
@@ -124,89 +199,14 @@ impl PerformanceStartSnapshot {
             |m: &mut PerformanceStartSnapshot| { &mut m.story_line_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "content_id",
-            |m: &PerformanceStartSnapshot| { &m.content_id },
-            |m: &mut PerformanceStartSnapshot| { &mut m.content_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "entry_id",
-            |m: &PerformanceStartSnapshot| { &m.entry_id },
-            |m: &mut PerformanceStartSnapshot| { &mut m.entry_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "version",
             |m: &PerformanceStartSnapshot| { &m.version },
             |m: &mut PerformanceStartSnapshot| { &mut m.version },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::PlayerSnapshot::PlayerSnapshot>(
-            "player",
-            |m: &PerformanceStartSnapshot| { &m.player },
-            |m: &mut PerformanceStartSnapshot| { &mut m.player },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MissionSnapshot::MissionSnapshot>(
-            "mission",
-            |m: &PerformanceStartSnapshot| { &m.mission },
-            |m: &mut PerformanceStartSnapshot| { &mut m.mission },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::EraFlipperSnapshot::EraFlipperSnapshot>(
-            "era_flipper",
-            |m: &PerformanceStartSnapshot| { &m.era_flipper },
-            |m: &mut PerformanceStartSnapshot| { &mut m.era_flipper },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "server_group_list",
-            |m: &PerformanceStartSnapshot| { &m.server_group_list },
-            |m: &mut PerformanceStartSnapshot| { &mut m.server_group_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "client_group_list",
-            |m: &PerformanceStartSnapshot| { &m.client_group_list },
-            |m: &mut PerformanceStartSnapshot| { &mut m.client_group_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "server_legacy_group_list",
-            |m: &PerformanceStartSnapshot| { &m.server_legacy_group_list },
-            |m: &mut PerformanceStartSnapshot| { &mut m.server_legacy_group_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "client_legacy_group_list",
-            |m: &PerformanceStartSnapshot| { &m.client_legacy_group_list },
-            |m: &mut PerformanceStartSnapshot| { &mut m.client_legacy_group_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "floor_saved_value_list",
-            |m: &PerformanceStartSnapshot| { &m.floor_saved_value_list },
-            |m: &mut PerformanceStartSnapshot| { &mut m.floor_saved_value_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_map_simpler_accessor_new::<_, _>(
-            "floor_custom_value_list",
-            |m: &PerformanceStartSnapshot| { &m.floor_custom_value_list },
-            |m: &mut PerformanceStartSnapshot| { &mut m.floor_custom_value_list },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::MapRotationSnapshot::MapRotationSnapshot>(
-            "map_rotation",
-            |m: &PerformanceStartSnapshot| { &m.map_rotation },
-            |m: &mut PerformanceStartSnapshot| { &mut m.map_rotation },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "world_id",
-            |m: &PerformanceStartSnapshot| { &m.world_id },
-            |m: &mut PerformanceStartSnapshot| { &mut m.world_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DialogSnapshot::DialogSnapshot>(
-            "dialog",
-            |m: &PerformanceStartSnapshot| { &m.dialog },
-            |m: &mut PerformanceStartSnapshot| { &mut m.dialog },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "owner_group_id",
-            |m: &PerformanceStartSnapshot| { &m.owner_group_id },
-            |m: &mut PerformanceStartSnapshot| { &mut m.owner_group_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::SwitchHandSnapshot::SwitchHandSnapshot>(
-            "switch_hand",
-            |m: &PerformanceStartSnapshot| { &m.switch_hand },
-            |m: &mut PerformanceStartSnapshot| { &mut m.switch_hand },
+            "content_id",
+            |m: &PerformanceStartSnapshot| { &m.content_id },
+            |m: &mut PerformanceStartSnapshot| { &mut m.content_id },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PerformanceStartSnapshot>(
             "PerformanceStartSnapshot",
@@ -226,53 +226,17 @@ impl ::protobuf::Message for PerformanceStartSnapshot {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.performance_id = is.read_uint32()?;
-                },
-                16 => {
-                    self.performance_type = is.read_uint32()?;
-                },
-                24 => {
-                    self.plane_id = is.read_uint32()?;
-                },
-                32 => {
-                    self.floor_id = is.read_uint32()?;
-                },
-                40 => {
-                    self.dimension_id = is.read_uint32()?;
-                },
-                48 => {
-                    self.story_line_id = is.read_uint32()?;
-                },
-                56 => {
-                    self.content_id = is.read_uint32()?;
-                },
-                64 => {
-                    self.entry_id = is.read_uint32()?;
-                },
-                72 => {
-                    self.version = is.read_uint32()?;
-                },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player)?;
-                },
-                90 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.mission)?;
+                154 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.map_rotation)?;
                 },
                 98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.era_flipper)?;
                 },
-                106 => {
-                    self.server_group_list.push(is.read_message()?);
+                90 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.mission)?;
                 },
                 114 => {
                     self.client_group_list.push(is.read_message()?);
-                },
-                122 => {
-                    self.server_legacy_group_list.push(is.read_message()?);
-                },
-                130 => {
-                    self.client_legacy_group_list.push(is.read_message()?);
                 },
                 138 => {
                     let len = is.read_raw_varint32()?;
@@ -304,20 +268,56 @@ impl ::protobuf::Message for PerformanceStartSnapshot {
                     is.pop_limit(old_limit);
                     self.floor_custom_value_list.insert(key, value);
                 },
-                154 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.map_rotation)?;
+                186 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.switch_hand)?;
                 },
-                160 => {
-                    self.world_id = is.read_uint32()?;
+                130 => {
+                    self.client_legacy_group_list.push(is.read_message()?);
+                },
+                106 => {
+                    self.server_group_list.push(is.read_message()?);
+                },
+                82 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.player)?;
+                },
+                122 => {
+                    self.server_legacy_group_list.push(is.read_message()?);
                 },
                 170 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.dialog)?;
                 },
+                40 => {
+                    self.dimension_id = is.read_uint32()?;
+                },
+                64 => {
+                    self.entry_id = is.read_uint32()?;
+                },
                 176 => {
                     self.owner_group_id = is.read_uint32()?;
                 },
-                186 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.switch_hand)?;
+                8 => {
+                    self.performance_id = is.read_uint32()?;
+                },
+                160 => {
+                    self.world_id = is.read_uint32()?;
+                },
+                24 => {
+                    self.plane_id = is.read_uint32()?;
+                },
+                32 => {
+                    self.floor_id = is.read_uint32()?;
+                },
+                16 => {
+                    self.performance_type = is.read_uint32()?;
+                },
+                48 => {
+                    self.story_line_id = is.read_uint32()?;
+                },
+                72 => {
+                    self.version = is.read_uint32()?;
+                },
+                56 => {
+                    self.content_id = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -331,34 +331,11 @@ impl ::protobuf::Message for PerformanceStartSnapshot {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.performance_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.performance_id);
+        if let Some(v) = self.map_rotation.as_ref() {
+            let len = v.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.performance_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.performance_type);
-        }
-        if self.plane_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.plane_id);
-        }
-        if self.floor_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.floor_id);
-        }
-        if self.dimension_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.dimension_id);
-        }
-        if self.story_line_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.story_line_id);
-        }
-        if self.content_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.content_id);
-        }
-        if self.entry_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.entry_id);
-        }
-        if self.version != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.version);
-        }
-        if let Some(v) = self.player.as_ref() {
+        if let Some(v) = self.era_flipper.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
@@ -366,25 +343,9 @@ impl ::protobuf::Message for PerformanceStartSnapshot {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.era_flipper.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        }
-        for value in &self.server_group_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
         for value in &self.client_group_list {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.server_legacy_group_list {
-            let len = value.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
-        };
-        for value in &self.client_legacy_group_list {
-            let len = value.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
         for (k, v) in &self.floor_saved_value_list {
             let mut entry_size = 0;
@@ -399,23 +360,62 @@ impl ::protobuf::Message for PerformanceStartSnapshot {
             entry_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(entry_size) + entry_size
         };
-        if let Some(v) = self.map_rotation.as_ref() {
+        if let Some(v) = self.switch_hand.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.world_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(20, self.world_id);
+        for value in &self.client_legacy_group_list {
+            let len = value.compute_size();
+            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        for value in &self.server_group_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
+        if let Some(v) = self.player.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        for value in &self.server_legacy_group_list {
+            let len = value.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        };
         if let Some(v) = self.dialog.as_ref() {
             let len = v.compute_size();
             my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
+        if self.dimension_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.dimension_id);
+        }
+        if self.entry_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(8, self.entry_id);
+        }
         if self.owner_group_id != 0 {
             my_size += ::protobuf::rt::uint32_size(22, self.owner_group_id);
         }
-        if let Some(v) = self.switch_hand.as_ref() {
-            let len = v.compute_size();
-            my_size += 2 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.performance_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.performance_id);
+        }
+        if self.world_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(20, self.world_id);
+        }
+        if self.plane_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(3, self.plane_id);
+        }
+        if self.floor_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.floor_id);
+        }
+        if self.performance_type != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.performance_type);
+        }
+        if self.story_line_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.story_line_id);
+        }
+        if self.version != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.version);
+        }
+        if self.content_id != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.content_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -423,53 +423,17 @@ impl ::protobuf::Message for PerformanceStartSnapshot {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.performance_id != 0 {
-            os.write_uint32(1, self.performance_id)?;
-        }
-        if self.performance_type != 0 {
-            os.write_uint32(2, self.performance_type)?;
-        }
-        if self.plane_id != 0 {
-            os.write_uint32(3, self.plane_id)?;
-        }
-        if self.floor_id != 0 {
-            os.write_uint32(4, self.floor_id)?;
-        }
-        if self.dimension_id != 0 {
-            os.write_uint32(5, self.dimension_id)?;
-        }
-        if self.story_line_id != 0 {
-            os.write_uint32(6, self.story_line_id)?;
-        }
-        if self.content_id != 0 {
-            os.write_uint32(7, self.content_id)?;
-        }
-        if self.entry_id != 0 {
-            os.write_uint32(8, self.entry_id)?;
-        }
-        if self.version != 0 {
-            os.write_uint32(9, self.version)?;
-        }
-        if let Some(v) = self.player.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
-        }
-        if let Some(v) = self.mission.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        if let Some(v) = self.map_rotation.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(19, v, os)?;
         }
         if let Some(v) = self.era_flipper.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
-        for v in &self.server_group_list {
-            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
-        };
+        if let Some(v) = self.mission.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(11, v, os)?;
+        }
         for v in &self.client_group_list {
             ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
-        };
-        for v in &self.server_legacy_group_list {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        };
-        for v in &self.client_legacy_group_list {
-            ::protobuf::rt::write_message_field_with_cached_size(16, v, os)?;
         };
         for (k, v) in &self.floor_saved_value_list {
             let mut entry_size = 0;
@@ -490,20 +454,56 @@ impl ::protobuf::Message for PerformanceStartSnapshot {
             os.write_string(1, &k)?;
             ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         };
-        if let Some(v) = self.map_rotation.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(19, v, os)?;
+        if let Some(v) = self.switch_hand.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(23, v, os)?;
         }
-        if self.world_id != 0 {
-            os.write_uint32(20, self.world_id)?;
+        for v in &self.client_legacy_group_list {
+            ::protobuf::rt::write_message_field_with_cached_size(16, v, os)?;
+        };
+        for v in &self.server_group_list {
+            ::protobuf::rt::write_message_field_with_cached_size(13, v, os)?;
+        };
+        if let Some(v) = self.player.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
         }
+        for v in &self.server_legacy_group_list {
+            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
+        };
         if let Some(v) = self.dialog.as_ref() {
             ::protobuf::rt::write_message_field_with_cached_size(21, v, os)?;
+        }
+        if self.dimension_id != 0 {
+            os.write_uint32(5, self.dimension_id)?;
+        }
+        if self.entry_id != 0 {
+            os.write_uint32(8, self.entry_id)?;
         }
         if self.owner_group_id != 0 {
             os.write_uint32(22, self.owner_group_id)?;
         }
-        if let Some(v) = self.switch_hand.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(23, v, os)?;
+        if self.performance_id != 0 {
+            os.write_uint32(1, self.performance_id)?;
+        }
+        if self.world_id != 0 {
+            os.write_uint32(20, self.world_id)?;
+        }
+        if self.plane_id != 0 {
+            os.write_uint32(3, self.plane_id)?;
+        }
+        if self.floor_id != 0 {
+            os.write_uint32(4, self.floor_id)?;
+        }
+        if self.performance_type != 0 {
+            os.write_uint32(2, self.performance_type)?;
+        }
+        if self.story_line_id != 0 {
+            os.write_uint32(6, self.story_line_id)?;
+        }
+        if self.version != 0 {
+            os.write_uint32(9, self.version)?;
+        }
+        if self.content_id != 0 {
+            os.write_uint32(7, self.content_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -522,29 +522,29 @@ impl ::protobuf::Message for PerformanceStartSnapshot {
     }
 
     fn clear(&mut self) {
-        self.performance_id = 0;
-        self.performance_type = 0;
-        self.plane_id = 0;
-        self.floor_id = 0;
-        self.dimension_id = 0;
-        self.story_line_id = 0;
-        self.content_id = 0;
-        self.entry_id = 0;
-        self.version = 0;
-        self.player.clear();
-        self.mission.clear();
+        self.map_rotation.clear();
         self.era_flipper.clear();
-        self.server_group_list.clear();
+        self.mission.clear();
         self.client_group_list.clear();
-        self.server_legacy_group_list.clear();
-        self.client_legacy_group_list.clear();
         self.floor_saved_value_list.clear();
         self.floor_custom_value_list.clear();
-        self.map_rotation.clear();
-        self.world_id = 0;
-        self.dialog.clear();
-        self.owner_group_id = 0;
         self.switch_hand.clear();
+        self.client_legacy_group_list.clear();
+        self.server_group_list.clear();
+        self.player.clear();
+        self.server_legacy_group_list.clear();
+        self.dialog.clear();
+        self.dimension_id = 0;
+        self.entry_id = 0;
+        self.owner_group_id = 0;
+        self.performance_id = 0;
+        self.world_id = 0;
+        self.plane_id = 0;
+        self.floor_id = 0;
+        self.performance_type = 0;
+        self.story_line_id = 0;
+        self.version = 0;
+        self.content_id = 0;
         self.special_fields.clear();
     }
 
@@ -576,36 +576,35 @@ static file_descriptor_proto_data: &'static [u8] = b"\
     EraFlipperSnapshot.proto\x1a\x1eFloorCustomValueSnapshot.proto\x1a\x13Gr\
     oupSnapshot.proto\x1a\x19MapRotationSnapshot.proto\x1a\x15MissionSnapsho\
     t.proto\x1a\x14PlayerSnapshot.proto\x1a\x18SwitchHandSnapshot.proto\"\
-    \xac\n\n\x18PerformanceStartSnapshot\x12%\n\x0eperformance_id\x18\x01\
-    \x20\x01(\rR\rperformanceId\x12)\n\x10performance_type\x18\x02\x20\x01(\
-    \rR\x0fperformanceType\x12\x19\n\x08plane_id\x18\x03\x20\x01(\rR\x07plan\
-    eId\x12\x19\n\x08floor_id\x18\x04\x20\x01(\rR\x07floorId\x12!\n\x0cdimen\
-    sion_id\x18\x05\x20\x01(\rR\x0bdimensionId\x12\"\n\rstory_line_id\x18\
-    \x06\x20\x01(\rR\x0bstoryLineId\x12\x1d\n\ncontent_id\x18\x07\x20\x01(\r\
-    R\tcontentId\x12\x19\n\x08entry_id\x18\x08\x20\x01(\rR\x07entryId\x12\
-    \x18\n\x07version\x18\t\x20\x01(\rR\x07version\x12'\n\x06player\x18\n\
-    \x20\x01(\x0b2\x0f.PlayerSnapshotR\x06player\x12*\n\x07mission\x18\x0b\
-    \x20\x01(\x0b2\x10.MissionSnapshotR\x07mission\x124\n\x0bera_flipper\x18\
-    \x0c\x20\x01(\x0b2\x13.EraFlipperSnapshotR\neraFlipper\x12:\n\x11server_\
-    group_list\x18\r\x20\x03(\x0b2\x0e.GroupSnapshotR\x0fserverGroupList\x12\
-    :\n\x11client_group_list\x18\x0e\x20\x03(\x0b2\x0e.GroupSnapshotR\x0fcli\
-    entGroupList\x12G\n\x18server_legacy_group_list\x18\x0f\x20\x03(\x0b2\
-    \x0e.GroupSnapshotR\x15serverLegacyGroupList\x12G\n\x18client_legacy_gro\
-    up_list\x18\x10\x20\x03(\x0b2\x0e.GroupSnapshotR\x15clientLegacyGroupLis\
-    t\x12g\n\x16floor_saved_value_list\x18\x11\x20\x03(\x0b22.PerformanceSta\
-    rtSnapshot.FloorSavedValueListEntryR\x13floorSavedValueList\x12j\n\x17fl\
-    oor_custom_value_list\x18\x12\x20\x03(\x0b23.PerformanceStartSnapshot.Fl\
-    oorCustomValueListEntryR\x14floorCustomValueList\x127\n\x0cmap_rotation\
-    \x18\x13\x20\x01(\x0b2\x14.MapRotationSnapshotR\x0bmapRotation\x12\x19\n\
-    \x08world_id\x18\x14\x20\x01(\rR\x07worldId\x12'\n\x06dialog\x18\x15\x20\
-    \x01(\x0b2\x0f.DialogSnapshotR\x06dialog\x12$\n\x0eowner_group_id\x18\
-    \x16\x20\x01(\rR\x0cownerGroupId\x124\n\x0bswitch_hand\x18\x17\x20\x01(\
-    \x0b2\x13.SwitchHandSnapshotR\nswitchHand\x1aF\n\x18FloorSavedValueListE\
-    ntry\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\
-    \x02\x20\x01(\x05R\x05value:\x028\x01\x1ab\n\x19FloorCustomValueListEntr\
-    y\x12\x10\n\x03key\x18\x01\x20\x01(\tR\x03key\x12/\n\x05value\x18\x02\
-    \x20\x01(\x0b2\x19.FloorCustomValueSnapshotR\x05value:\x028\x01b\x06prot\
-    o3\
+    \xac\n\n\x18PerformanceStartSnapshot\x127\n\x0cmap_rotation\x18\x13\x20\
+    \x01(\x0b2\x14.MapRotationSnapshotR\x0bmapRotation\x124\n\x0bera_flipper\
+    \x18\x0c\x20\x01(\x0b2\x13.EraFlipperSnapshotR\neraFlipper\x12*\n\x07mis\
+    sion\x18\x0b\x20\x01(\x0b2\x10.MissionSnapshotR\x07mission\x12:\n\x11cli\
+    ent_group_list\x18\x0e\x20\x03(\x0b2\x0e.GroupSnapshotR\x0fclientGroupLi\
+    st\x12g\n\x16floor_saved_value_list\x18\x11\x20\x03(\x0b22.PerformanceSt\
+    artSnapshot.FloorSavedValueListEntryR\x13floorSavedValueList\x12j\n\x17f\
+    loor_custom_value_list\x18\x12\x20\x03(\x0b23.PerformanceStartSnapshot.F\
+    loorCustomValueListEntryR\x14floorCustomValueList\x124\n\x0bswitch_hand\
+    \x18\x17\x20\x01(\x0b2\x13.SwitchHandSnapshotR\nswitchHand\x12G\n\x18cli\
+    ent_legacy_group_list\x18\x10\x20\x03(\x0b2\x0e.GroupSnapshotR\x15client\
+    LegacyGroupList\x12:\n\x11server_group_list\x18\r\x20\x03(\x0b2\x0e.Grou\
+    pSnapshotR\x0fserverGroupList\x12'\n\x06player\x18\n\x20\x01(\x0b2\x0f.P\
+    layerSnapshotR\x06player\x12G\n\x18server_legacy_group_list\x18\x0f\x20\
+    \x03(\x0b2\x0e.GroupSnapshotR\x15serverLegacyGroupList\x12'\n\x06dialog\
+    \x18\x15\x20\x01(\x0b2\x0f.DialogSnapshotR\x06dialog\x12!\n\x0cdimension\
+    _id\x18\x05\x20\x01(\rR\x0bdimensionId\x12\x19\n\x08entry_id\x18\x08\x20\
+    \x01(\rR\x07entryId\x12$\n\x0eowner_group_id\x18\x16\x20\x01(\rR\x0cowne\
+    rGroupId\x12%\n\x0eperformance_id\x18\x01\x20\x01(\rR\rperformanceId\x12\
+    \x19\n\x08world_id\x18\x14\x20\x01(\rR\x07worldId\x12\x19\n\x08plane_id\
+    \x18\x03\x20\x01(\rR\x07planeId\x12\x19\n\x08floor_id\x18\x04\x20\x01(\r\
+    R\x07floorId\x12)\n\x10performance_type\x18\x02\x20\x01(\rR\x0fperforman\
+    ceType\x12\"\n\rstory_line_id\x18\x06\x20\x01(\rR\x0bstoryLineId\x12\x18\
+    \n\x07version\x18\t\x20\x01(\rR\x07version\x12\x1d\n\ncontent_id\x18\x07\
+    \x20\x01(\rR\tcontentId\x1aF\n\x18FloorSavedValueListEntry\x12\x10\n\x03\
+    key\x18\x01\x20\x01(\tR\x03key\x12\x14\n\x05value\x18\x02\x20\x01(\x05R\
+    \x05value:\x028\x01\x1ab\n\x19FloorCustomValueListEntry\x12\x10\n\x03key\
+    \x18\x01\x20\x01(\tR\x03key\x12/\n\x05value\x18\x02\x20\x01(\x0b2\x19.Fl\
+    oorCustomValueSnapshotR\x05value:\x028\x01b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

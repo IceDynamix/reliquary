@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct UpgradeTeamSlotCsRsp {
     // message fields
-    // @@protoc_insertion_point(field:UpgradeTeamSlotCsRsp.level)
-    pub level: u32,
-    // @@protoc_insertion_point(field:UpgradeTeamSlotCsRsp.JNGHMOPEKJO)
-    pub JNGHMOPEKJO: u32,
     // @@protoc_insertion_point(field:UpgradeTeamSlotCsRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:UpgradeTeamSlotCsRsp.level)
+    pub level: u32,
+    // @@protoc_insertion_point(field:UpgradeTeamSlotCsRsp.JIGOOAEFDPP)
+    pub JIGOOAEFDPP: u32,
     // special fields
     // @@protoc_insertion_point(special_field:UpgradeTeamSlotCsRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl UpgradeTeamSlotCsRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &UpgradeTeamSlotCsRsp| { &m.retcode },
+            |m: &mut UpgradeTeamSlotCsRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "level",
             |m: &UpgradeTeamSlotCsRsp| { &m.level },
             |m: &mut UpgradeTeamSlotCsRsp| { &mut m.level },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "JNGHMOPEKJO",
-            |m: &UpgradeTeamSlotCsRsp| { &m.JNGHMOPEKJO },
-            |m: &mut UpgradeTeamSlotCsRsp| { &mut m.JNGHMOPEKJO },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &UpgradeTeamSlotCsRsp| { &m.retcode },
-            |m: &mut UpgradeTeamSlotCsRsp| { &mut m.retcode },
+            "JIGOOAEFDPP",
+            |m: &UpgradeTeamSlotCsRsp| { &m.JIGOOAEFDPP },
+            |m: &mut UpgradeTeamSlotCsRsp| { &mut m.JIGOOAEFDPP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<UpgradeTeamSlotCsRsp>(
             "UpgradeTeamSlotCsRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for UpgradeTeamSlotCsRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                48 => {
-                    self.level = is.read_uint32()?;
-                },
-                56 => {
-                    self.JNGHMOPEKJO = is.read_uint32()?;
-                },
                 32 => {
                     self.retcode = is.read_uint32()?;
+                },
+                120 => {
+                    self.level = is.read_uint32()?;
+                },
+                104 => {
+                    self.JIGOOAEFDPP = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for UpgradeTeamSlotCsRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.level);
-        }
-        if self.JNGHMOPEKJO != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.JNGHMOPEKJO);
-        }
         if self.retcode != 0 {
             my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(15, self.level);
+        }
+        if self.JIGOOAEFDPP != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.JIGOOAEFDPP);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for UpgradeTeamSlotCsRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(6, self.level)?;
-        }
-        if self.JNGHMOPEKJO != 0 {
-            os.write_uint32(7, self.JNGHMOPEKJO)?;
-        }
         if self.retcode != 0 {
             os.write_uint32(4, self.retcode)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(15, self.level)?;
+        }
+        if self.JIGOOAEFDPP != 0 {
+            os.write_uint32(13, self.JIGOOAEFDPP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for UpgradeTeamSlotCsRsp {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
-        self.JNGHMOPEKJO = 0;
         self.retcode = 0;
+        self.level = 0;
+        self.JIGOOAEFDPP = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static UpgradeTeamSlotCsRsp {
         static instance: UpgradeTeamSlotCsRsp = UpgradeTeamSlotCsRsp {
-            level: 0,
-            JNGHMOPEKJO: 0,
             retcode: 0,
+            level: 0,
+            JIGOOAEFDPP: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for UpgradeTeamSlotCsRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1aUpgradeTeamSlotCsRsp.proto\"h\n\x14UpgradeTeamSlotCsRsp\x12\x14\n\
-    \x05level\x18\x06\x20\x01(\rR\x05level\x12\x20\n\x0bJNGHMOPEKJO\x18\x07\
-    \x20\x01(\rR\x0bJNGHMOPEKJO\x12\x18\n\x07retcode\x18\x04\x20\x01(\rR\x07\
-    retcodeb\x06proto3\
+    \n\x1aUpgradeTeamSlotCsRsp.proto\"h\n\x14UpgradeTeamSlotCsRsp\x12\x18\n\
+    \x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x14\n\x05level\x18\x0f\
+    \x20\x01(\rR\x05level\x12\x20\n\x0bJIGOOAEFDPP\x18\r\x20\x01(\rR\x0bJIGO\
+    OAEFDPPb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

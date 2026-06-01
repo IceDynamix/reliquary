@@ -27,116 +27,112 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdIdleLiveType)
 pub enum CmdIdleLiveType {
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.INJJLAAJGDE_PCPDHELPKEM)
-    INJJLAAJGDE_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveUpdateLiveRoomTitleCsReq)
-    CmdIdleLiveUpdateLiveRoomTitleCsReq = 9379,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdReplaceTeamCsRsp)
-    CmdReplaceTeamCsRsp = 9388,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveGetPendingEquipCsReq)
-    CmdIdleLiveGetPendingEquipCsReq = 9383,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveGetDataCsReq)
-    CmdIdleLiveGetDataCsReq = 9441,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdGJBINEEABIP)
-    CmdGJBINEEABIP = 9376,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveGetFriendAssistListCsReq)
-    CmdIdleLiveGetFriendAssistListCsReq = 9380,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveFinishNodeBattleQuitCsReq)
-    CmdIdleLiveFinishNodeBattleQuitCsReq = 9359,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveTakeTaskRewardCsReq)
-    CmdIdleLiveTakeTaskRewardCsReq = 9415,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdAPKPGIOLLNP)
-    CmdAPKPGIOLLNP = 9408,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdNMBGLKALLBM)
-    CmdNMBGLKALLBM = 9448,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveTakeAssistRewardScRsp)
-    CmdIdleLiveTakeAssistRewardScRsp = 9353,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdHandlePendingEquipScRsp)
-    CmdHandlePendingEquipScRsp = 9446,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdGetFriendNewAssistRewardScNotify)
-    CmdGetFriendNewAssistRewardScNotify = 9442,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveHandlePendingEquipReq)
-    CmdIdleLiveHandlePendingEquipReq = 9439,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveManualFinishQuestionCsReq)
-    CmdIdleLiveManualFinishQuestionCsReq = 9427,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveEndDungeonCsReq)
-    CmdIdleLiveEndDungeonCsReq = 9399,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveTakeAssistRewardCsReq)
-    CmdIdleLiveTakeAssistRewardCsReq = 9386,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveStartNodeCsReq)
-    CmdIdleLiveStartNodeCsReq = 9444,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdTakeTaskRewardScRsp)
-    CmdTakeTaskRewardScRsp = 9423,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdUpgradeTeamSlotCsRsp)
-    CmdUpgradeTeamSlotCsRsp = 9409,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveGetStatisticCsReq)
-    CmdIdleLiveGetStatisticCsReq = 9407,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdUpdateCustomInfoScRsp)
-    CmdUpdateCustomInfoScRsp = 9362,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdNFPEDBOOFFF)
-    CmdNFPEDBOOFFF = 9445,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveTakeContentRewardCsReq)
-    CmdIdleLiveTakeContentRewardCsReq = 9429,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveStartNodeBattleCsReq)
-    CmdIdleLiveStartNodeBattleCsReq = 9364,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveReplaceTeamCsReq)
-    CmdIdleLiveReplaceTeamCsReq = 9354,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdTakeContentScRsp)
-    CmdTakeContentScRsp = 9370,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdEndDungeonScRsp)
-    CmdEndDungeonScRsp = 9416,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveDressSpecialEquipCsReq)
-    CmdIdleLiveDressSpecialEquipCsReq = 9394,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdLCFGFGFDLOF)
-    CmdLCFGFGFDLOF = 9351,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveCollectIncomeCsReq)
-    CmdIdleLiveCollectIncomeCsReq = 9422,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdGetFriendDungeonRankingInfosScRsp)
-    CmdGetFriendDungeonRankingInfosScRsp = 9361,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdStartDungeonScRsp)
-    CmdStartDungeonScRsp = 9352,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdTechTreeChangeNodeStateCsRsp)
-    CmdTechTreeChangeNodeStateCsRsp = 9358,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveOpenChestReq)
-    CmdIdleLiveOpenChestReq = 9357,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdFinishQuestionRsp)
-    CmdFinishQuestionRsp = 9366,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveTakeQuestEquipCsReq)
-    CmdIdleLiveTakeQuestEquipCsReq = 9374,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveDoGachaCsReq)
-    CmdIdleLiveDoGachaCsReq = 9367,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdDoGachaScRsp2)
-    CmdDoGachaScRsp2 = 9401,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdStartNodeBattleScRsp)
-    CmdStartNodeBattleScRsp = 9368,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdSyncChangeNtf)
-    CmdSyncChangeNtf = 9378,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveFinishFinalActCsReq)
-    CmdIdleLiveFinishFinalActCsReq = 9389,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveGetFriendDungeonRankingInfosCsReq)
-    CmdIdleLiveGetFriendDungeonRankingInfosCsReq = 9355,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveGetFriendAssistListScRsp)
-    CmdIdleLiveGetFriendAssistListScRsp = 9421,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveChangeTechTreeNodeCsReq)
-    CmdIdleLiveChangeTechTreeNodeCsReq = 9403,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveUpgradeSlotCsReq)
-    CmdIdleLiveUpgradeSlotCsReq = 9392,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveFinishNodeEventCsReq)
-    CmdIdleLiveFinishNodeEventCsReq = 9413,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdHBCMBPKGBJK)
-    CmdHBCMBPKGBJK = 9382,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdTakeQuestEquipCsRsp)
-    CmdTakeQuestEquipCsRsp = 9428,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdGPKCEDKHLAD)
-    CmdGPKCEDKHLAD = 9371,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdJFKMFGLOPOF)
-    CmdJFKMFGLOPOF = 9411,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveStartDungeonCsReq)
-    CmdIdleLiveStartDungeonCsReq = 9443,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdIdleLiveGetDataScRsp)
-    CmdIdleLiveGetDataScRsp = 9360,
-    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.CmdDressSpecialEquipScRsp)
-    CmdDressSpecialEquipScRsp = 9450,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_NLCDGIPGFDJ)
+    IJKEHFDJOJH_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_EBHAHJLGNIJ)
+    IJKEHFDJOJH_EBHAHJLGNIJ = 9431,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_OMEJOMBJBIM)
+    IJKEHFDJOJH_OMEJOMBJBIM = 9409,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_KJMAMEAADPL)
+    IJKEHFDJOJH_KJMAMEAADPL = 9365,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_IMLBIAALDGN)
+    IJKEHFDJOJH_IMLBIAALDGN = 9423,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_CAECBBBKIIE)
+    IJKEHFDJOJH_CAECBBBKIIE = 9377,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_JPOFFHELHIO)
+    IJKEHFDJOJH_JPOFFHELHIO = 9408,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_HMJDPMGHEIF)
+    IJKEHFDJOJH_HMJDPMGHEIF = 9374,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_ILCHPIAKNLP)
+    IJKEHFDJOJH_ILCHPIAKNLP = 9386,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_MEAJIICEMJG)
+    IJKEHFDJOJH_MEAJIICEMJG = 9378,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_FLDDHJPOPJD)
+    IJKEHFDJOJH_FLDDHJPOPJD = 9398,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_NCIEMNNODNF)
+    IJKEHFDJOJH_NCIEMNNODNF = 9440,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_BJBIGHFFIBL)
+    IJKEHFDJOJH_BJBIGHFFIBL = 9393,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_DOMFEEKIFAJ)
+    IJKEHFDJOJH_DOMFEEKIFAJ = 9426,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_KFPEADHDPOF)
+    IJKEHFDJOJH_KFPEADHDPOF = 9430,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_EGKKBNCAFME)
+    IJKEHFDJOJH_EGKKBNCAFME = 9403,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_EJDECCEKCBB)
+    IJKEHFDJOJH_EJDECCEKCBB = 9417,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_JAKNBEPDOPI)
+    IJKEHFDJOJH_JAKNBEPDOPI = 9362,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_MHKMBOHAEGB)
+    IJKEHFDJOJH_MHKMBOHAEGB = 9432,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_CMLIFFMFLHC)
+    IJKEHFDJOJH_CMLIFFMFLHC = 9351,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_LFOIKALICNF)
+    IJKEHFDJOJH_LFOIKALICNF = 9385,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_PAMKFLGMFGC)
+    IJKEHFDJOJH_PAMKFLGMFGC = 9355,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_KMHAFKKOGBL)
+    IJKEHFDJOJH_KMHAFKKOGBL = 9438,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_MLOPDKBLENP)
+    IJKEHFDJOJH_MLOPDKBLENP = 9411,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_HKMELFCNPFP)
+    IJKEHFDJOJH_HKMELFCNPFP = 9395,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_AAAOIENBLPH)
+    IJKEHFDJOJH_AAAOIENBLPH = 9353,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_CHADKCADCJD)
+    IJKEHFDJOJH_CHADKCADCJD = 9388,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_CDCLEPBFDGP)
+    IJKEHFDJOJH_CDCLEPBFDGP = 9387,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_COHLLCMCAEB)
+    IJKEHFDJOJH_COHLLCMCAEB = 9437,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_IIOEIKNDLNL)
+    IJKEHFDJOJH_IIOEIKNDLNL = 9424,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_KIPGAHBCJMG)
+    IJKEHFDJOJH_KIPGAHBCJMG = 9376,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_OOFNKHNEBFD)
+    IJKEHFDJOJH_OOFNKHNEBFD = 9364,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_GEEANICAGGJ)
+    IJKEHFDJOJH_GEEANICAGGJ = 9402,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_HOEILNOAJGL)
+    IJKEHFDJOJH_HOEILNOAJGL = 9368,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_GDHGKMDLGIJ)
+    IJKEHFDJOJH_GDHGKMDLGIJ = 9359,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_LGPLFOBMBFI)
+    IJKEHFDJOJH_LGPLFOBMBFI = 9391,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_JDMKGGCKPEL)
+    IJKEHFDJOJH_JDMKGGCKPEL = 9370,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_BHEAODAONOG)
+    IJKEHFDJOJH_BHEAODAONOG = 9416,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_JIPONLFHCHK)
+    IJKEHFDJOJH_JIPONLFHCHK = 9366,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_AIENGOEFEFI)
+    IJKEHFDJOJH_AIENGOEFEFI = 9443,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_BFIDGCFALNP)
+    IJKEHFDJOJH_BFIDGCFALNP = 9435,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_CJKCHOPKGNA)
+    IJKEHFDJOJH_CJKCHOPKGNA = 9389,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_OGFEPJKKPHC)
+    IJKEHFDJOJH_OGFEPJKKPHC = 9384,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_FGPHAGJEBIG)
+    IJKEHFDJOJH_FGPHAGJEBIG = 9428,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_DBBGBPAHIDJ)
+    IJKEHFDJOJH_DBBGBPAHIDJ = 9363,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_KGNCNAMNOMP)
+    IJKEHFDJOJH_KGNCNAMNOMP = 9360,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_CKEMELFNPIL)
+    IJKEHFDJOJH_CKEMELFNPIL = 9380,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_GHNHDIPGGGG)
+    IJKEHFDJOJH_GHNHDIPGGGG = 9421,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_BKLPCBLNOCB)
+    IJKEHFDJOJH_BKLPCBLNOCB = 9392,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_FGBKDFIMFLF)
+    IJKEHFDJOJH_FGBKDFIMFLF = 9446,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_EDKBPBPAKEC)
+    IJKEHFDJOJH_EDKBPBPAKEC = 9399,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_GPAKLOEGNNG)
+    IJKEHFDJOJH_GPAKLOEGNNG = 9379,
+    // @@protoc_insertion_point(enum_value:CmdIdleLiveType.IJKEHFDJOJH_HPDNIDCNEOJ)
+    IJKEHFDJOJH_HPDNIDCNEOJ = 9442,
 }
 
 impl ::protobuf::Enum for CmdIdleLiveType {
@@ -148,182 +144,176 @@ impl ::protobuf::Enum for CmdIdleLiveType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdIdleLiveType> {
         match value {
-            0 => ::std::option::Option::Some(CmdIdleLiveType::INJJLAAJGDE_PCPDHELPKEM),
-            9379 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveUpdateLiveRoomTitleCsReq),
-            9388 => ::std::option::Option::Some(CmdIdleLiveType::CmdReplaceTeamCsRsp),
-            9383 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetPendingEquipCsReq),
-            9441 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetDataCsReq),
-            9376 => ::std::option::Option::Some(CmdIdleLiveType::CmdGJBINEEABIP),
-            9380 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetFriendAssistListCsReq),
-            9359 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveFinishNodeBattleQuitCsReq),
-            9415 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveTakeTaskRewardCsReq),
-            9408 => ::std::option::Option::Some(CmdIdleLiveType::CmdAPKPGIOLLNP),
-            9448 => ::std::option::Option::Some(CmdIdleLiveType::CmdNMBGLKALLBM),
-            9353 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveTakeAssistRewardScRsp),
-            9446 => ::std::option::Option::Some(CmdIdleLiveType::CmdHandlePendingEquipScRsp),
-            9442 => ::std::option::Option::Some(CmdIdleLiveType::CmdGetFriendNewAssistRewardScNotify),
-            9439 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveHandlePendingEquipReq),
-            9427 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveManualFinishQuestionCsReq),
-            9399 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveEndDungeonCsReq),
-            9386 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveTakeAssistRewardCsReq),
-            9444 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveStartNodeCsReq),
-            9423 => ::std::option::Option::Some(CmdIdleLiveType::CmdTakeTaskRewardScRsp),
-            9409 => ::std::option::Option::Some(CmdIdleLiveType::CmdUpgradeTeamSlotCsRsp),
-            9407 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetStatisticCsReq),
-            9362 => ::std::option::Option::Some(CmdIdleLiveType::CmdUpdateCustomInfoScRsp),
-            9445 => ::std::option::Option::Some(CmdIdleLiveType::CmdNFPEDBOOFFF),
-            9429 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveTakeContentRewardCsReq),
-            9364 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveStartNodeBattleCsReq),
-            9354 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveReplaceTeamCsReq),
-            9370 => ::std::option::Option::Some(CmdIdleLiveType::CmdTakeContentScRsp),
-            9416 => ::std::option::Option::Some(CmdIdleLiveType::CmdEndDungeonScRsp),
-            9394 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveDressSpecialEquipCsReq),
-            9351 => ::std::option::Option::Some(CmdIdleLiveType::CmdLCFGFGFDLOF),
-            9422 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveCollectIncomeCsReq),
-            9361 => ::std::option::Option::Some(CmdIdleLiveType::CmdGetFriendDungeonRankingInfosScRsp),
-            9352 => ::std::option::Option::Some(CmdIdleLiveType::CmdStartDungeonScRsp),
-            9358 => ::std::option::Option::Some(CmdIdleLiveType::CmdTechTreeChangeNodeStateCsRsp),
-            9357 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveOpenChestReq),
-            9366 => ::std::option::Option::Some(CmdIdleLiveType::CmdFinishQuestionRsp),
-            9374 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveTakeQuestEquipCsReq),
-            9367 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveDoGachaCsReq),
-            9401 => ::std::option::Option::Some(CmdIdleLiveType::CmdDoGachaScRsp2),
-            9368 => ::std::option::Option::Some(CmdIdleLiveType::CmdStartNodeBattleScRsp),
-            9378 => ::std::option::Option::Some(CmdIdleLiveType::CmdSyncChangeNtf),
-            9389 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveFinishFinalActCsReq),
-            9355 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetFriendDungeonRankingInfosCsReq),
-            9421 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetFriendAssistListScRsp),
-            9403 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveChangeTechTreeNodeCsReq),
-            9392 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveUpgradeSlotCsReq),
-            9413 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveFinishNodeEventCsReq),
-            9382 => ::std::option::Option::Some(CmdIdleLiveType::CmdHBCMBPKGBJK),
-            9428 => ::std::option::Option::Some(CmdIdleLiveType::CmdTakeQuestEquipCsRsp),
-            9371 => ::std::option::Option::Some(CmdIdleLiveType::CmdGPKCEDKHLAD),
-            9411 => ::std::option::Option::Some(CmdIdleLiveType::CmdJFKMFGLOPOF),
-            9443 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveStartDungeonCsReq),
-            9360 => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetDataScRsp),
-            9450 => ::std::option::Option::Some(CmdIdleLiveType::CmdDressSpecialEquipScRsp),
+            0 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_NLCDGIPGFDJ),
+            9431 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_EBHAHJLGNIJ),
+            9409 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_OMEJOMBJBIM),
+            9365 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_KJMAMEAADPL),
+            9423 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_IMLBIAALDGN),
+            9377 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CAECBBBKIIE),
+            9408 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_JPOFFHELHIO),
+            9374 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_HMJDPMGHEIF),
+            9386 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_ILCHPIAKNLP),
+            9378 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_MEAJIICEMJG),
+            9398 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_FLDDHJPOPJD),
+            9440 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_NCIEMNNODNF),
+            9393 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_BJBIGHFFIBL),
+            9426 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_DOMFEEKIFAJ),
+            9430 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_KFPEADHDPOF),
+            9403 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_EGKKBNCAFME),
+            9417 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_EJDECCEKCBB),
+            9362 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_JAKNBEPDOPI),
+            9432 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_MHKMBOHAEGB),
+            9351 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CMLIFFMFLHC),
+            9385 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_LFOIKALICNF),
+            9355 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_PAMKFLGMFGC),
+            9438 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_KMHAFKKOGBL),
+            9411 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_MLOPDKBLENP),
+            9395 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_HKMELFCNPFP),
+            9353 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_AAAOIENBLPH),
+            9388 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CHADKCADCJD),
+            9387 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CDCLEPBFDGP),
+            9437 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_COHLLCMCAEB),
+            9424 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_IIOEIKNDLNL),
+            9376 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_KIPGAHBCJMG),
+            9364 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_OOFNKHNEBFD),
+            9402 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_GEEANICAGGJ),
+            9368 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_HOEILNOAJGL),
+            9359 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_GDHGKMDLGIJ),
+            9391 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_LGPLFOBMBFI),
+            9370 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_JDMKGGCKPEL),
+            9416 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_BHEAODAONOG),
+            9366 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_JIPONLFHCHK),
+            9443 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_AIENGOEFEFI),
+            9435 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_BFIDGCFALNP),
+            9389 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CJKCHOPKGNA),
+            9384 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_OGFEPJKKPHC),
+            9428 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_FGPHAGJEBIG),
+            9363 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_DBBGBPAHIDJ),
+            9360 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_KGNCNAMNOMP),
+            9380 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CKEMELFNPIL),
+            9421 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_GHNHDIPGGGG),
+            9392 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_BKLPCBLNOCB),
+            9446 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_FGBKDFIMFLF),
+            9399 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_EDKBPBPAKEC),
+            9379 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_GPAKLOEGNNG),
+            9442 => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_HPDNIDCNEOJ),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdIdleLiveType> {
         match str {
-            "INJJLAAJGDE_PCPDHELPKEM" => ::std::option::Option::Some(CmdIdleLiveType::INJJLAAJGDE_PCPDHELPKEM),
-            "CmdIdleLiveUpdateLiveRoomTitleCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveUpdateLiveRoomTitleCsReq),
-            "CmdReplaceTeamCsRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdReplaceTeamCsRsp),
-            "CmdIdleLiveGetPendingEquipCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetPendingEquipCsReq),
-            "CmdIdleLiveGetDataCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetDataCsReq),
-            "CmdGJBINEEABIP" => ::std::option::Option::Some(CmdIdleLiveType::CmdGJBINEEABIP),
-            "CmdIdleLiveGetFriendAssistListCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetFriendAssistListCsReq),
-            "CmdIdleLiveFinishNodeBattleQuitCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveFinishNodeBattleQuitCsReq),
-            "CmdIdleLiveTakeTaskRewardCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveTakeTaskRewardCsReq),
-            "CmdAPKPGIOLLNP" => ::std::option::Option::Some(CmdIdleLiveType::CmdAPKPGIOLLNP),
-            "CmdNMBGLKALLBM" => ::std::option::Option::Some(CmdIdleLiveType::CmdNMBGLKALLBM),
-            "CmdIdleLiveTakeAssistRewardScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveTakeAssistRewardScRsp),
-            "CmdHandlePendingEquipScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdHandlePendingEquipScRsp),
-            "CmdGetFriendNewAssistRewardScNotify" => ::std::option::Option::Some(CmdIdleLiveType::CmdGetFriendNewAssistRewardScNotify),
-            "CmdIdleLiveHandlePendingEquipReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveHandlePendingEquipReq),
-            "CmdIdleLiveManualFinishQuestionCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveManualFinishQuestionCsReq),
-            "CmdIdleLiveEndDungeonCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveEndDungeonCsReq),
-            "CmdIdleLiveTakeAssistRewardCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveTakeAssistRewardCsReq),
-            "CmdIdleLiveStartNodeCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveStartNodeCsReq),
-            "CmdTakeTaskRewardScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdTakeTaskRewardScRsp),
-            "CmdUpgradeTeamSlotCsRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdUpgradeTeamSlotCsRsp),
-            "CmdIdleLiveGetStatisticCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetStatisticCsReq),
-            "CmdUpdateCustomInfoScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdUpdateCustomInfoScRsp),
-            "CmdNFPEDBOOFFF" => ::std::option::Option::Some(CmdIdleLiveType::CmdNFPEDBOOFFF),
-            "CmdIdleLiveTakeContentRewardCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveTakeContentRewardCsReq),
-            "CmdIdleLiveStartNodeBattleCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveStartNodeBattleCsReq),
-            "CmdIdleLiveReplaceTeamCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveReplaceTeamCsReq),
-            "CmdTakeContentScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdTakeContentScRsp),
-            "CmdEndDungeonScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdEndDungeonScRsp),
-            "CmdIdleLiveDressSpecialEquipCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveDressSpecialEquipCsReq),
-            "CmdLCFGFGFDLOF" => ::std::option::Option::Some(CmdIdleLiveType::CmdLCFGFGFDLOF),
-            "CmdIdleLiveCollectIncomeCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveCollectIncomeCsReq),
-            "CmdGetFriendDungeonRankingInfosScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdGetFriendDungeonRankingInfosScRsp),
-            "CmdStartDungeonScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdStartDungeonScRsp),
-            "CmdTechTreeChangeNodeStateCsRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdTechTreeChangeNodeStateCsRsp),
-            "CmdIdleLiveOpenChestReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveOpenChestReq),
-            "CmdFinishQuestionRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdFinishQuestionRsp),
-            "CmdIdleLiveTakeQuestEquipCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveTakeQuestEquipCsReq),
-            "CmdIdleLiveDoGachaCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveDoGachaCsReq),
-            "CmdDoGachaScRsp2" => ::std::option::Option::Some(CmdIdleLiveType::CmdDoGachaScRsp2),
-            "CmdStartNodeBattleScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdStartNodeBattleScRsp),
-            "CmdSyncChangeNtf" => ::std::option::Option::Some(CmdIdleLiveType::CmdSyncChangeNtf),
-            "CmdIdleLiveFinishFinalActCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveFinishFinalActCsReq),
-            "CmdIdleLiveGetFriendDungeonRankingInfosCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetFriendDungeonRankingInfosCsReq),
-            "CmdIdleLiveGetFriendAssistListScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetFriendAssistListScRsp),
-            "CmdIdleLiveChangeTechTreeNodeCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveChangeTechTreeNodeCsReq),
-            "CmdIdleLiveUpgradeSlotCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveUpgradeSlotCsReq),
-            "CmdIdleLiveFinishNodeEventCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveFinishNodeEventCsReq),
-            "CmdHBCMBPKGBJK" => ::std::option::Option::Some(CmdIdleLiveType::CmdHBCMBPKGBJK),
-            "CmdTakeQuestEquipCsRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdTakeQuestEquipCsRsp),
-            "CmdGPKCEDKHLAD" => ::std::option::Option::Some(CmdIdleLiveType::CmdGPKCEDKHLAD),
-            "CmdJFKMFGLOPOF" => ::std::option::Option::Some(CmdIdleLiveType::CmdJFKMFGLOPOF),
-            "CmdIdleLiveStartDungeonCsReq" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveStartDungeonCsReq),
-            "CmdIdleLiveGetDataScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdIdleLiveGetDataScRsp),
-            "CmdDressSpecialEquipScRsp" => ::std::option::Option::Some(CmdIdleLiveType::CmdDressSpecialEquipScRsp),
+            "IJKEHFDJOJH_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_NLCDGIPGFDJ),
+            "IJKEHFDJOJH_EBHAHJLGNIJ" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_EBHAHJLGNIJ),
+            "IJKEHFDJOJH_OMEJOMBJBIM" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_OMEJOMBJBIM),
+            "IJKEHFDJOJH_KJMAMEAADPL" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_KJMAMEAADPL),
+            "IJKEHFDJOJH_IMLBIAALDGN" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_IMLBIAALDGN),
+            "IJKEHFDJOJH_CAECBBBKIIE" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CAECBBBKIIE),
+            "IJKEHFDJOJH_JPOFFHELHIO" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_JPOFFHELHIO),
+            "IJKEHFDJOJH_HMJDPMGHEIF" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_HMJDPMGHEIF),
+            "IJKEHFDJOJH_ILCHPIAKNLP" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_ILCHPIAKNLP),
+            "IJKEHFDJOJH_MEAJIICEMJG" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_MEAJIICEMJG),
+            "IJKEHFDJOJH_FLDDHJPOPJD" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_FLDDHJPOPJD),
+            "IJKEHFDJOJH_NCIEMNNODNF" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_NCIEMNNODNF),
+            "IJKEHFDJOJH_BJBIGHFFIBL" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_BJBIGHFFIBL),
+            "IJKEHFDJOJH_DOMFEEKIFAJ" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_DOMFEEKIFAJ),
+            "IJKEHFDJOJH_KFPEADHDPOF" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_KFPEADHDPOF),
+            "IJKEHFDJOJH_EGKKBNCAFME" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_EGKKBNCAFME),
+            "IJKEHFDJOJH_EJDECCEKCBB" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_EJDECCEKCBB),
+            "IJKEHFDJOJH_JAKNBEPDOPI" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_JAKNBEPDOPI),
+            "IJKEHFDJOJH_MHKMBOHAEGB" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_MHKMBOHAEGB),
+            "IJKEHFDJOJH_CMLIFFMFLHC" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CMLIFFMFLHC),
+            "IJKEHFDJOJH_LFOIKALICNF" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_LFOIKALICNF),
+            "IJKEHFDJOJH_PAMKFLGMFGC" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_PAMKFLGMFGC),
+            "IJKEHFDJOJH_KMHAFKKOGBL" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_KMHAFKKOGBL),
+            "IJKEHFDJOJH_MLOPDKBLENP" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_MLOPDKBLENP),
+            "IJKEHFDJOJH_HKMELFCNPFP" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_HKMELFCNPFP),
+            "IJKEHFDJOJH_AAAOIENBLPH" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_AAAOIENBLPH),
+            "IJKEHFDJOJH_CHADKCADCJD" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CHADKCADCJD),
+            "IJKEHFDJOJH_CDCLEPBFDGP" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CDCLEPBFDGP),
+            "IJKEHFDJOJH_COHLLCMCAEB" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_COHLLCMCAEB),
+            "IJKEHFDJOJH_IIOEIKNDLNL" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_IIOEIKNDLNL),
+            "IJKEHFDJOJH_KIPGAHBCJMG" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_KIPGAHBCJMG),
+            "IJKEHFDJOJH_OOFNKHNEBFD" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_OOFNKHNEBFD),
+            "IJKEHFDJOJH_GEEANICAGGJ" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_GEEANICAGGJ),
+            "IJKEHFDJOJH_HOEILNOAJGL" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_HOEILNOAJGL),
+            "IJKEHFDJOJH_GDHGKMDLGIJ" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_GDHGKMDLGIJ),
+            "IJKEHFDJOJH_LGPLFOBMBFI" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_LGPLFOBMBFI),
+            "IJKEHFDJOJH_JDMKGGCKPEL" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_JDMKGGCKPEL),
+            "IJKEHFDJOJH_BHEAODAONOG" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_BHEAODAONOG),
+            "IJKEHFDJOJH_JIPONLFHCHK" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_JIPONLFHCHK),
+            "IJKEHFDJOJH_AIENGOEFEFI" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_AIENGOEFEFI),
+            "IJKEHFDJOJH_BFIDGCFALNP" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_BFIDGCFALNP),
+            "IJKEHFDJOJH_CJKCHOPKGNA" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CJKCHOPKGNA),
+            "IJKEHFDJOJH_OGFEPJKKPHC" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_OGFEPJKKPHC),
+            "IJKEHFDJOJH_FGPHAGJEBIG" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_FGPHAGJEBIG),
+            "IJKEHFDJOJH_DBBGBPAHIDJ" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_DBBGBPAHIDJ),
+            "IJKEHFDJOJH_KGNCNAMNOMP" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_KGNCNAMNOMP),
+            "IJKEHFDJOJH_CKEMELFNPIL" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_CKEMELFNPIL),
+            "IJKEHFDJOJH_GHNHDIPGGGG" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_GHNHDIPGGGG),
+            "IJKEHFDJOJH_BKLPCBLNOCB" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_BKLPCBLNOCB),
+            "IJKEHFDJOJH_FGBKDFIMFLF" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_FGBKDFIMFLF),
+            "IJKEHFDJOJH_EDKBPBPAKEC" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_EDKBPBPAKEC),
+            "IJKEHFDJOJH_GPAKLOEGNNG" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_GPAKLOEGNNG),
+            "IJKEHFDJOJH_HPDNIDCNEOJ" => ::std::option::Option::Some(CmdIdleLiveType::IJKEHFDJOJH_HPDNIDCNEOJ),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdIdleLiveType] = &[
-        CmdIdleLiveType::INJJLAAJGDE_PCPDHELPKEM,
-        CmdIdleLiveType::CmdIdleLiveUpdateLiveRoomTitleCsReq,
-        CmdIdleLiveType::CmdReplaceTeamCsRsp,
-        CmdIdleLiveType::CmdIdleLiveGetPendingEquipCsReq,
-        CmdIdleLiveType::CmdIdleLiveGetDataCsReq,
-        CmdIdleLiveType::CmdGJBINEEABIP,
-        CmdIdleLiveType::CmdIdleLiveGetFriendAssistListCsReq,
-        CmdIdleLiveType::CmdIdleLiveFinishNodeBattleQuitCsReq,
-        CmdIdleLiveType::CmdIdleLiveTakeTaskRewardCsReq,
-        CmdIdleLiveType::CmdAPKPGIOLLNP,
-        CmdIdleLiveType::CmdNMBGLKALLBM,
-        CmdIdleLiveType::CmdIdleLiveTakeAssistRewardScRsp,
-        CmdIdleLiveType::CmdHandlePendingEquipScRsp,
-        CmdIdleLiveType::CmdGetFriendNewAssistRewardScNotify,
-        CmdIdleLiveType::CmdIdleLiveHandlePendingEquipReq,
-        CmdIdleLiveType::CmdIdleLiveManualFinishQuestionCsReq,
-        CmdIdleLiveType::CmdIdleLiveEndDungeonCsReq,
-        CmdIdleLiveType::CmdIdleLiveTakeAssistRewardCsReq,
-        CmdIdleLiveType::CmdIdleLiveStartNodeCsReq,
-        CmdIdleLiveType::CmdTakeTaskRewardScRsp,
-        CmdIdleLiveType::CmdUpgradeTeamSlotCsRsp,
-        CmdIdleLiveType::CmdIdleLiveGetStatisticCsReq,
-        CmdIdleLiveType::CmdUpdateCustomInfoScRsp,
-        CmdIdleLiveType::CmdNFPEDBOOFFF,
-        CmdIdleLiveType::CmdIdleLiveTakeContentRewardCsReq,
-        CmdIdleLiveType::CmdIdleLiveStartNodeBattleCsReq,
-        CmdIdleLiveType::CmdIdleLiveReplaceTeamCsReq,
-        CmdIdleLiveType::CmdTakeContentScRsp,
-        CmdIdleLiveType::CmdEndDungeonScRsp,
-        CmdIdleLiveType::CmdIdleLiveDressSpecialEquipCsReq,
-        CmdIdleLiveType::CmdLCFGFGFDLOF,
-        CmdIdleLiveType::CmdIdleLiveCollectIncomeCsReq,
-        CmdIdleLiveType::CmdGetFriendDungeonRankingInfosScRsp,
-        CmdIdleLiveType::CmdStartDungeonScRsp,
-        CmdIdleLiveType::CmdTechTreeChangeNodeStateCsRsp,
-        CmdIdleLiveType::CmdIdleLiveOpenChestReq,
-        CmdIdleLiveType::CmdFinishQuestionRsp,
-        CmdIdleLiveType::CmdIdleLiveTakeQuestEquipCsReq,
-        CmdIdleLiveType::CmdIdleLiveDoGachaCsReq,
-        CmdIdleLiveType::CmdDoGachaScRsp2,
-        CmdIdleLiveType::CmdStartNodeBattleScRsp,
-        CmdIdleLiveType::CmdSyncChangeNtf,
-        CmdIdleLiveType::CmdIdleLiveFinishFinalActCsReq,
-        CmdIdleLiveType::CmdIdleLiveGetFriendDungeonRankingInfosCsReq,
-        CmdIdleLiveType::CmdIdleLiveGetFriendAssistListScRsp,
-        CmdIdleLiveType::CmdIdleLiveChangeTechTreeNodeCsReq,
-        CmdIdleLiveType::CmdIdleLiveUpgradeSlotCsReq,
-        CmdIdleLiveType::CmdIdleLiveFinishNodeEventCsReq,
-        CmdIdleLiveType::CmdHBCMBPKGBJK,
-        CmdIdleLiveType::CmdTakeQuestEquipCsRsp,
-        CmdIdleLiveType::CmdGPKCEDKHLAD,
-        CmdIdleLiveType::CmdJFKMFGLOPOF,
-        CmdIdleLiveType::CmdIdleLiveStartDungeonCsReq,
-        CmdIdleLiveType::CmdIdleLiveGetDataScRsp,
-        CmdIdleLiveType::CmdDressSpecialEquipScRsp,
+        CmdIdleLiveType::IJKEHFDJOJH_NLCDGIPGFDJ,
+        CmdIdleLiveType::IJKEHFDJOJH_EBHAHJLGNIJ,
+        CmdIdleLiveType::IJKEHFDJOJH_OMEJOMBJBIM,
+        CmdIdleLiveType::IJKEHFDJOJH_KJMAMEAADPL,
+        CmdIdleLiveType::IJKEHFDJOJH_IMLBIAALDGN,
+        CmdIdleLiveType::IJKEHFDJOJH_CAECBBBKIIE,
+        CmdIdleLiveType::IJKEHFDJOJH_JPOFFHELHIO,
+        CmdIdleLiveType::IJKEHFDJOJH_HMJDPMGHEIF,
+        CmdIdleLiveType::IJKEHFDJOJH_ILCHPIAKNLP,
+        CmdIdleLiveType::IJKEHFDJOJH_MEAJIICEMJG,
+        CmdIdleLiveType::IJKEHFDJOJH_FLDDHJPOPJD,
+        CmdIdleLiveType::IJKEHFDJOJH_NCIEMNNODNF,
+        CmdIdleLiveType::IJKEHFDJOJH_BJBIGHFFIBL,
+        CmdIdleLiveType::IJKEHFDJOJH_DOMFEEKIFAJ,
+        CmdIdleLiveType::IJKEHFDJOJH_KFPEADHDPOF,
+        CmdIdleLiveType::IJKEHFDJOJH_EGKKBNCAFME,
+        CmdIdleLiveType::IJKEHFDJOJH_EJDECCEKCBB,
+        CmdIdleLiveType::IJKEHFDJOJH_JAKNBEPDOPI,
+        CmdIdleLiveType::IJKEHFDJOJH_MHKMBOHAEGB,
+        CmdIdleLiveType::IJKEHFDJOJH_CMLIFFMFLHC,
+        CmdIdleLiveType::IJKEHFDJOJH_LFOIKALICNF,
+        CmdIdleLiveType::IJKEHFDJOJH_PAMKFLGMFGC,
+        CmdIdleLiveType::IJKEHFDJOJH_KMHAFKKOGBL,
+        CmdIdleLiveType::IJKEHFDJOJH_MLOPDKBLENP,
+        CmdIdleLiveType::IJKEHFDJOJH_HKMELFCNPFP,
+        CmdIdleLiveType::IJKEHFDJOJH_AAAOIENBLPH,
+        CmdIdleLiveType::IJKEHFDJOJH_CHADKCADCJD,
+        CmdIdleLiveType::IJKEHFDJOJH_CDCLEPBFDGP,
+        CmdIdleLiveType::IJKEHFDJOJH_COHLLCMCAEB,
+        CmdIdleLiveType::IJKEHFDJOJH_IIOEIKNDLNL,
+        CmdIdleLiveType::IJKEHFDJOJH_KIPGAHBCJMG,
+        CmdIdleLiveType::IJKEHFDJOJH_OOFNKHNEBFD,
+        CmdIdleLiveType::IJKEHFDJOJH_GEEANICAGGJ,
+        CmdIdleLiveType::IJKEHFDJOJH_HOEILNOAJGL,
+        CmdIdleLiveType::IJKEHFDJOJH_GDHGKMDLGIJ,
+        CmdIdleLiveType::IJKEHFDJOJH_LGPLFOBMBFI,
+        CmdIdleLiveType::IJKEHFDJOJH_JDMKGGCKPEL,
+        CmdIdleLiveType::IJKEHFDJOJH_BHEAODAONOG,
+        CmdIdleLiveType::IJKEHFDJOJH_JIPONLFHCHK,
+        CmdIdleLiveType::IJKEHFDJOJH_AIENGOEFEFI,
+        CmdIdleLiveType::IJKEHFDJOJH_BFIDGCFALNP,
+        CmdIdleLiveType::IJKEHFDJOJH_CJKCHOPKGNA,
+        CmdIdleLiveType::IJKEHFDJOJH_OGFEPJKKPHC,
+        CmdIdleLiveType::IJKEHFDJOJH_FGPHAGJEBIG,
+        CmdIdleLiveType::IJKEHFDJOJH_DBBGBPAHIDJ,
+        CmdIdleLiveType::IJKEHFDJOJH_KGNCNAMNOMP,
+        CmdIdleLiveType::IJKEHFDJOJH_CKEMELFNPIL,
+        CmdIdleLiveType::IJKEHFDJOJH_GHNHDIPGGGG,
+        CmdIdleLiveType::IJKEHFDJOJH_BKLPCBLNOCB,
+        CmdIdleLiveType::IJKEHFDJOJH_FGBKDFIMFLF,
+        CmdIdleLiveType::IJKEHFDJOJH_EDKBPBPAKEC,
+        CmdIdleLiveType::IJKEHFDJOJH_GPAKLOEGNNG,
+        CmdIdleLiveType::IJKEHFDJOJH_HPDNIDCNEOJ,
     ];
 }
 
@@ -335,61 +325,59 @@ impl ::protobuf::EnumFull for CmdIdleLiveType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdIdleLiveType::INJJLAAJGDE_PCPDHELPKEM => 0,
-            CmdIdleLiveType::CmdIdleLiveUpdateLiveRoomTitleCsReq => 1,
-            CmdIdleLiveType::CmdReplaceTeamCsRsp => 2,
-            CmdIdleLiveType::CmdIdleLiveGetPendingEquipCsReq => 3,
-            CmdIdleLiveType::CmdIdleLiveGetDataCsReq => 4,
-            CmdIdleLiveType::CmdGJBINEEABIP => 5,
-            CmdIdleLiveType::CmdIdleLiveGetFriendAssistListCsReq => 6,
-            CmdIdleLiveType::CmdIdleLiveFinishNodeBattleQuitCsReq => 7,
-            CmdIdleLiveType::CmdIdleLiveTakeTaskRewardCsReq => 8,
-            CmdIdleLiveType::CmdAPKPGIOLLNP => 9,
-            CmdIdleLiveType::CmdNMBGLKALLBM => 10,
-            CmdIdleLiveType::CmdIdleLiveTakeAssistRewardScRsp => 11,
-            CmdIdleLiveType::CmdHandlePendingEquipScRsp => 12,
-            CmdIdleLiveType::CmdGetFriendNewAssistRewardScNotify => 13,
-            CmdIdleLiveType::CmdIdleLiveHandlePendingEquipReq => 14,
-            CmdIdleLiveType::CmdIdleLiveManualFinishQuestionCsReq => 15,
-            CmdIdleLiveType::CmdIdleLiveEndDungeonCsReq => 16,
-            CmdIdleLiveType::CmdIdleLiveTakeAssistRewardCsReq => 17,
-            CmdIdleLiveType::CmdIdleLiveStartNodeCsReq => 18,
-            CmdIdleLiveType::CmdTakeTaskRewardScRsp => 19,
-            CmdIdleLiveType::CmdUpgradeTeamSlotCsRsp => 20,
-            CmdIdleLiveType::CmdIdleLiveGetStatisticCsReq => 21,
-            CmdIdleLiveType::CmdUpdateCustomInfoScRsp => 22,
-            CmdIdleLiveType::CmdNFPEDBOOFFF => 23,
-            CmdIdleLiveType::CmdIdleLiveTakeContentRewardCsReq => 24,
-            CmdIdleLiveType::CmdIdleLiveStartNodeBattleCsReq => 25,
-            CmdIdleLiveType::CmdIdleLiveReplaceTeamCsReq => 26,
-            CmdIdleLiveType::CmdTakeContentScRsp => 27,
-            CmdIdleLiveType::CmdEndDungeonScRsp => 28,
-            CmdIdleLiveType::CmdIdleLiveDressSpecialEquipCsReq => 29,
-            CmdIdleLiveType::CmdLCFGFGFDLOF => 30,
-            CmdIdleLiveType::CmdIdleLiveCollectIncomeCsReq => 31,
-            CmdIdleLiveType::CmdGetFriendDungeonRankingInfosScRsp => 32,
-            CmdIdleLiveType::CmdStartDungeonScRsp => 33,
-            CmdIdleLiveType::CmdTechTreeChangeNodeStateCsRsp => 34,
-            CmdIdleLiveType::CmdIdleLiveOpenChestReq => 35,
-            CmdIdleLiveType::CmdFinishQuestionRsp => 36,
-            CmdIdleLiveType::CmdIdleLiveTakeQuestEquipCsReq => 37,
-            CmdIdleLiveType::CmdIdleLiveDoGachaCsReq => 38,
-            CmdIdleLiveType::CmdDoGachaScRsp2 => 39,
-            CmdIdleLiveType::CmdStartNodeBattleScRsp => 40,
-            CmdIdleLiveType::CmdSyncChangeNtf => 41,
-            CmdIdleLiveType::CmdIdleLiveFinishFinalActCsReq => 42,
-            CmdIdleLiveType::CmdIdleLiveGetFriendDungeonRankingInfosCsReq => 43,
-            CmdIdleLiveType::CmdIdleLiveGetFriendAssistListScRsp => 44,
-            CmdIdleLiveType::CmdIdleLiveChangeTechTreeNodeCsReq => 45,
-            CmdIdleLiveType::CmdIdleLiveUpgradeSlotCsReq => 46,
-            CmdIdleLiveType::CmdIdleLiveFinishNodeEventCsReq => 47,
-            CmdIdleLiveType::CmdHBCMBPKGBJK => 48,
-            CmdIdleLiveType::CmdTakeQuestEquipCsRsp => 49,
-            CmdIdleLiveType::CmdGPKCEDKHLAD => 50,
-            CmdIdleLiveType::CmdJFKMFGLOPOF => 51,
-            CmdIdleLiveType::CmdIdleLiveStartDungeonCsReq => 52,
-            CmdIdleLiveType::CmdIdleLiveGetDataScRsp => 53,
-            CmdIdleLiveType::CmdDressSpecialEquipScRsp => 54,
+            CmdIdleLiveType::IJKEHFDJOJH_NLCDGIPGFDJ => 0,
+            CmdIdleLiveType::IJKEHFDJOJH_EBHAHJLGNIJ => 1,
+            CmdIdleLiveType::IJKEHFDJOJH_OMEJOMBJBIM => 2,
+            CmdIdleLiveType::IJKEHFDJOJH_KJMAMEAADPL => 3,
+            CmdIdleLiveType::IJKEHFDJOJH_IMLBIAALDGN => 4,
+            CmdIdleLiveType::IJKEHFDJOJH_CAECBBBKIIE => 5,
+            CmdIdleLiveType::IJKEHFDJOJH_JPOFFHELHIO => 6,
+            CmdIdleLiveType::IJKEHFDJOJH_HMJDPMGHEIF => 7,
+            CmdIdleLiveType::IJKEHFDJOJH_ILCHPIAKNLP => 8,
+            CmdIdleLiveType::IJKEHFDJOJH_MEAJIICEMJG => 9,
+            CmdIdleLiveType::IJKEHFDJOJH_FLDDHJPOPJD => 10,
+            CmdIdleLiveType::IJKEHFDJOJH_NCIEMNNODNF => 11,
+            CmdIdleLiveType::IJKEHFDJOJH_BJBIGHFFIBL => 12,
+            CmdIdleLiveType::IJKEHFDJOJH_DOMFEEKIFAJ => 13,
+            CmdIdleLiveType::IJKEHFDJOJH_KFPEADHDPOF => 14,
+            CmdIdleLiveType::IJKEHFDJOJH_EGKKBNCAFME => 15,
+            CmdIdleLiveType::IJKEHFDJOJH_EJDECCEKCBB => 16,
+            CmdIdleLiveType::IJKEHFDJOJH_JAKNBEPDOPI => 17,
+            CmdIdleLiveType::IJKEHFDJOJH_MHKMBOHAEGB => 18,
+            CmdIdleLiveType::IJKEHFDJOJH_CMLIFFMFLHC => 19,
+            CmdIdleLiveType::IJKEHFDJOJH_LFOIKALICNF => 20,
+            CmdIdleLiveType::IJKEHFDJOJH_PAMKFLGMFGC => 21,
+            CmdIdleLiveType::IJKEHFDJOJH_KMHAFKKOGBL => 22,
+            CmdIdleLiveType::IJKEHFDJOJH_MLOPDKBLENP => 23,
+            CmdIdleLiveType::IJKEHFDJOJH_HKMELFCNPFP => 24,
+            CmdIdleLiveType::IJKEHFDJOJH_AAAOIENBLPH => 25,
+            CmdIdleLiveType::IJKEHFDJOJH_CHADKCADCJD => 26,
+            CmdIdleLiveType::IJKEHFDJOJH_CDCLEPBFDGP => 27,
+            CmdIdleLiveType::IJKEHFDJOJH_COHLLCMCAEB => 28,
+            CmdIdleLiveType::IJKEHFDJOJH_IIOEIKNDLNL => 29,
+            CmdIdleLiveType::IJKEHFDJOJH_KIPGAHBCJMG => 30,
+            CmdIdleLiveType::IJKEHFDJOJH_OOFNKHNEBFD => 31,
+            CmdIdleLiveType::IJKEHFDJOJH_GEEANICAGGJ => 32,
+            CmdIdleLiveType::IJKEHFDJOJH_HOEILNOAJGL => 33,
+            CmdIdleLiveType::IJKEHFDJOJH_GDHGKMDLGIJ => 34,
+            CmdIdleLiveType::IJKEHFDJOJH_LGPLFOBMBFI => 35,
+            CmdIdleLiveType::IJKEHFDJOJH_JDMKGGCKPEL => 36,
+            CmdIdleLiveType::IJKEHFDJOJH_BHEAODAONOG => 37,
+            CmdIdleLiveType::IJKEHFDJOJH_JIPONLFHCHK => 38,
+            CmdIdleLiveType::IJKEHFDJOJH_AIENGOEFEFI => 39,
+            CmdIdleLiveType::IJKEHFDJOJH_BFIDGCFALNP => 40,
+            CmdIdleLiveType::IJKEHFDJOJH_CJKCHOPKGNA => 41,
+            CmdIdleLiveType::IJKEHFDJOJH_OGFEPJKKPHC => 42,
+            CmdIdleLiveType::IJKEHFDJOJH_FGPHAGJEBIG => 43,
+            CmdIdleLiveType::IJKEHFDJOJH_DBBGBPAHIDJ => 44,
+            CmdIdleLiveType::IJKEHFDJOJH_KGNCNAMNOMP => 45,
+            CmdIdleLiveType::IJKEHFDJOJH_CKEMELFNPIL => 46,
+            CmdIdleLiveType::IJKEHFDJOJH_GHNHDIPGGGG => 47,
+            CmdIdleLiveType::IJKEHFDJOJH_BKLPCBLNOCB => 48,
+            CmdIdleLiveType::IJKEHFDJOJH_FGBKDFIMFLF => 49,
+            CmdIdleLiveType::IJKEHFDJOJH_EDKBPBPAKEC => 50,
+            CmdIdleLiveType::IJKEHFDJOJH_GPAKLOEGNNG => 51,
+            CmdIdleLiveType::IJKEHFDJOJH_HPDNIDCNEOJ => 52,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -397,7 +385,7 @@ impl ::protobuf::EnumFull for CmdIdleLiveType {
 
 impl ::std::default::Default for CmdIdleLiveType {
     fn default() -> Self {
-        CmdIdleLiveType::INJJLAAJGDE_PCPDHELPKEM
+        CmdIdleLiveType::IJKEHFDJOJH_NLCDGIPGFDJ
     }
 }
 
@@ -408,43 +396,42 @@ impl CmdIdleLiveType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x15CmdIdleLiveType.proto*\x95\x0e\n\x0fCmdIdleLiveType\x12\x1b\n\x17I\
-    NJJLAAJGDE_PCPDHELPKEM\x10\0\x12(\n#CmdIdleLiveUpdateLiveRoomTitleCsReq\
-    \x10\xa3I\x12\x18\n\x13CmdReplaceTeamCsRsp\x10\xacI\x12$\n\x1fCmdIdleLiv\
-    eGetPendingEquipCsReq\x10\xa7I\x12\x1c\n\x17CmdIdleLiveGetDataCsReq\x10\
-    \xe1I\x12\x13\n\x0eCmdGJBINEEABIP\x10\xa0I\x12(\n#CmdIdleLiveGetFriendAs\
-    sistListCsReq\x10\xa4I\x12)\n$CmdIdleLiveFinishNodeBattleQuitCsReq\x10\
-    \x8fI\x12#\n\x1eCmdIdleLiveTakeTaskRewardCsReq\x10\xc7I\x12\x13\n\x0eCmd\
-    APKPGIOLLNP\x10\xc0I\x12\x13\n\x0eCmdNMBGLKALLBM\x10\xe8I\x12%\n\x20CmdI\
-    dleLiveTakeAssistRewardScRsp\x10\x89I\x12\x1f\n\x1aCmdHandlePendingEquip\
-    ScRsp\x10\xe6I\x12(\n#CmdGetFriendNewAssistRewardScNotify\x10\xe2I\x12%\
-    \n\x20CmdIdleLiveHandlePendingEquipReq\x10\xdfI\x12)\n$CmdIdleLiveManual\
-    FinishQuestionCsReq\x10\xd3I\x12\x1f\n\x1aCmdIdleLiveEndDungeonCsReq\x10\
-    \xb7I\x12%\n\x20CmdIdleLiveTakeAssistRewardCsReq\x10\xaaI\x12\x1e\n\x19C\
-    mdIdleLiveStartNodeCsReq\x10\xe4I\x12\x1b\n\x16CmdTakeTaskRewardScRsp\
-    \x10\xcfI\x12\x1c\n\x17CmdUpgradeTeamSlotCsRsp\x10\xc1I\x12!\n\x1cCmdIdl\
-    eLiveGetStatisticCsReq\x10\xbfI\x12\x1d\n\x18CmdUpdateCustomInfoScRsp\
-    \x10\x92I\x12\x13\n\x0eCmdNFPEDBOOFFF\x10\xe5I\x12&\n!CmdIdleLiveTakeCon\
-    tentRewardCsReq\x10\xd5I\x12$\n\x1fCmdIdleLiveStartNodeBattleCsReq\x10\
-    \x94I\x12\x20\n\x1bCmdIdleLiveReplaceTeamCsReq\x10\x8aI\x12\x18\n\x13Cmd\
-    TakeContentScRsp\x10\x9aI\x12\x17\n\x12CmdEndDungeonScRsp\x10\xc8I\x12&\
-    \n!CmdIdleLiveDressSpecialEquipCsReq\x10\xb2I\x12\x13\n\x0eCmdLCFGFGFDLO\
-    F\x10\x87I\x12\"\n\x1dCmdIdleLiveCollectIncomeCsReq\x10\xceI\x12)\n$CmdG\
-    etFriendDungeonRankingInfosScRsp\x10\x91I\x12\x19\n\x14CmdStartDungeonSc\
-    Rsp\x10\x88I\x12$\n\x1fCmdTechTreeChangeNodeStateCsRsp\x10\x8eI\x12\x1c\
-    \n\x17CmdIdleLiveOpenChestReq\x10\x8dI\x12\x19\n\x14CmdFinishQuestionRsp\
-    \x10\x96I\x12#\n\x1eCmdIdleLiveTakeQuestEquipCsReq\x10\x9eI\x12\x1c\n\
-    \x17CmdIdleLiveDoGachaCsReq\x10\x97I\x12\x15\n\x10CmdDoGachaScRsp2\x10\
-    \xb9I\x12\x1c\n\x17CmdStartNodeBattleScRsp\x10\x98I\x12\x15\n\x10CmdSync\
-    ChangeNtf\x10\xa2I\x12#\n\x1eCmdIdleLiveFinishFinalActCsReq\x10\xadI\x12\
-    1\n,CmdIdleLiveGetFriendDungeonRankingInfosCsReq\x10\x8bI\x12(\n#CmdIdle\
-    LiveGetFriendAssistListScRsp\x10\xcdI\x12'\n\"CmdIdleLiveChangeTechTreeN\
-    odeCsReq\x10\xbbI\x12\x20\n\x1bCmdIdleLiveUpgradeSlotCsReq\x10\xb0I\x12$\
-    \n\x1fCmdIdleLiveFinishNodeEventCsReq\x10\xc5I\x12\x13\n\x0eCmdHBCMBPKGB\
-    JK\x10\xa6I\x12\x1b\n\x16CmdTakeQuestEquipCsRsp\x10\xd4I\x12\x13\n\x0eCm\
-    dGPKCEDKHLAD\x10\x9bI\x12\x13\n\x0eCmdJFKMFGLOPOF\x10\xc3I\x12!\n\x1cCmd\
-    IdleLiveStartDungeonCsReq\x10\xe3I\x12\x1c\n\x17CmdIdleLiveGetDataScRsp\
-    \x10\x90I\x12\x1e\n\x19CmdDressSpecialEquipScRsp\x10\xeaIb\x06proto3\
+    \n\x15CmdIdleLiveType.proto*\xc6\x0c\n\x0fCmdIdleLiveType\x12\x1b\n\x17I\
+    JKEHFDJOJH_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17IJKEHFDJOJH_EBHAHJLGNIJ\x10\
+    \xd7I\x12\x1c\n\x17IJKEHFDJOJH_OMEJOMBJBIM\x10\xc1I\x12\x1c\n\x17IJKEHFD\
+    JOJH_KJMAMEAADPL\x10\x95I\x12\x1c\n\x17IJKEHFDJOJH_IMLBIAALDGN\x10\xcfI\
+    \x12\x1c\n\x17IJKEHFDJOJH_CAECBBBKIIE\x10\xa1I\x12\x1c\n\x17IJKEHFDJOJH_\
+    JPOFFHELHIO\x10\xc0I\x12\x1c\n\x17IJKEHFDJOJH_HMJDPMGHEIF\x10\x9eI\x12\
+    \x1c\n\x17IJKEHFDJOJH_ILCHPIAKNLP\x10\xaaI\x12\x1c\n\x17IJKEHFDJOJH_MEAJ\
+    IICEMJG\x10\xa2I\x12\x1c\n\x17IJKEHFDJOJH_FLDDHJPOPJD\x10\xb6I\x12\x1c\n\
+    \x17IJKEHFDJOJH_NCIEMNNODNF\x10\xe0I\x12\x1c\n\x17IJKEHFDJOJH_BJBIGHFFIB\
+    L\x10\xb1I\x12\x1c\n\x17IJKEHFDJOJH_DOMFEEKIFAJ\x10\xd2I\x12\x1c\n\x17IJ\
+    KEHFDJOJH_KFPEADHDPOF\x10\xd6I\x12\x1c\n\x17IJKEHFDJOJH_EGKKBNCAFME\x10\
+    \xbbI\x12\x1c\n\x17IJKEHFDJOJH_EJDECCEKCBB\x10\xc9I\x12\x1c\n\x17IJKEHFD\
+    JOJH_JAKNBEPDOPI\x10\x92I\x12\x1c\n\x17IJKEHFDJOJH_MHKMBOHAEGB\x10\xd8I\
+    \x12\x1c\n\x17IJKEHFDJOJH_CMLIFFMFLHC\x10\x87I\x12\x1c\n\x17IJKEHFDJOJH_\
+    LFOIKALICNF\x10\xa9I\x12\x1c\n\x17IJKEHFDJOJH_PAMKFLGMFGC\x10\x8bI\x12\
+    \x1c\n\x17IJKEHFDJOJH_KMHAFKKOGBL\x10\xdeI\x12\x1c\n\x17IJKEHFDJOJH_MLOP\
+    DKBLENP\x10\xc3I\x12\x1c\n\x17IJKEHFDJOJH_HKMELFCNPFP\x10\xb3I\x12\x1c\n\
+    \x17IJKEHFDJOJH_AAAOIENBLPH\x10\x89I\x12\x1c\n\x17IJKEHFDJOJH_CHADKCADCJ\
+    D\x10\xacI\x12\x1c\n\x17IJKEHFDJOJH_CDCLEPBFDGP\x10\xabI\x12\x1c\n\x17IJ\
+    KEHFDJOJH_COHLLCMCAEB\x10\xddI\x12\x1c\n\x17IJKEHFDJOJH_IIOEIKNDLNL\x10\
+    \xd0I\x12\x1c\n\x17IJKEHFDJOJH_KIPGAHBCJMG\x10\xa0I\x12\x1c\n\x17IJKEHFD\
+    JOJH_OOFNKHNEBFD\x10\x94I\x12\x1c\n\x17IJKEHFDJOJH_GEEANICAGGJ\x10\xbaI\
+    \x12\x1c\n\x17IJKEHFDJOJH_HOEILNOAJGL\x10\x98I\x12\x1c\n\x17IJKEHFDJOJH_\
+    GDHGKMDLGIJ\x10\x8fI\x12\x1c\n\x17IJKEHFDJOJH_LGPLFOBMBFI\x10\xafI\x12\
+    \x1c\n\x17IJKEHFDJOJH_JDMKGGCKPEL\x10\x9aI\x12\x1c\n\x17IJKEHFDJOJH_BHEA\
+    ODAONOG\x10\xc8I\x12\x1c\n\x17IJKEHFDJOJH_JIPONLFHCHK\x10\x96I\x12\x1c\n\
+    \x17IJKEHFDJOJH_AIENGOEFEFI\x10\xe3I\x12\x1c\n\x17IJKEHFDJOJH_BFIDGCFALN\
+    P\x10\xdbI\x12\x1c\n\x17IJKEHFDJOJH_CJKCHOPKGNA\x10\xadI\x12\x1c\n\x17IJ\
+    KEHFDJOJH_OGFEPJKKPHC\x10\xa8I\x12\x1c\n\x17IJKEHFDJOJH_FGPHAGJEBIG\x10\
+    \xd4I\x12\x1c\n\x17IJKEHFDJOJH_DBBGBPAHIDJ\x10\x93I\x12\x1c\n\x17IJKEHFD\
+    JOJH_KGNCNAMNOMP\x10\x90I\x12\x1c\n\x17IJKEHFDJOJH_CKEMELFNPIL\x10\xa4I\
+    \x12\x1c\n\x17IJKEHFDJOJH_GHNHDIPGGGG\x10\xcdI\x12\x1c\n\x17IJKEHFDJOJH_\
+    BKLPCBLNOCB\x10\xb0I\x12\x1c\n\x17IJKEHFDJOJH_FGBKDFIMFLF\x10\xe6I\x12\
+    \x1c\n\x17IJKEHFDJOJH_EDKBPBPAKEC\x10\xb7I\x12\x1c\n\x17IJKEHFDJOJH_GPAK\
+    LOEGNNG\x10\xa3I\x12\x1c\n\x17IJKEHFDJOJH_HPDNIDCNEOJ\x10\xe2Ib\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

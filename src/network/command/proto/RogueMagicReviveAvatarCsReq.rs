@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicReviveAvatarCsReq {
     // message fields
+    // @@protoc_insertion_point(field:RogueMagicReviveAvatarCsReq.NOEPBNMJFGL)
+    pub NOEPBNMJFGL: ::std::vec::Vec<u32>,
     // @@protoc_insertion_point(field:RogueMagicReviveAvatarCsReq.interacted_prop_entity_id)
     pub interacted_prop_entity_id: u32,
-    // @@protoc_insertion_point(field:RogueMagicReviveAvatarCsReq.base_avatar_id_list)
-    pub base_avatar_id_list: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicReviveAvatarCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl RogueMagicReviveAvatarCsReq {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
+            "NOEPBNMJFGL",
+            |m: &RogueMagicReviveAvatarCsReq| { &m.NOEPBNMJFGL },
+            |m: &mut RogueMagicReviveAvatarCsReq| { &mut m.NOEPBNMJFGL },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "interacted_prop_entity_id",
             |m: &RogueMagicReviveAvatarCsReq| { &m.interacted_prop_entity_id },
             |m: &mut RogueMagicReviveAvatarCsReq| { &mut m.interacted_prop_entity_id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "base_avatar_id_list",
-            |m: &RogueMagicReviveAvatarCsReq| { &m.base_avatar_id_list },
-            |m: &mut RogueMagicReviveAvatarCsReq| { &mut m.base_avatar_id_list },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicReviveAvatarCsReq>(
             "RogueMagicReviveAvatarCsReq",
@@ -79,14 +79,14 @@ impl ::protobuf::Message for RogueMagicReviveAvatarCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NOEPBNMJFGL)?;
+                },
                 24 => {
+                    self.NOEPBNMJFGL.push(is.read_uint32()?);
+                },
+                56 => {
                     self.interacted_prop_entity_id = is.read_uint32()?;
-                },
-                42 => {
-                    is.read_repeated_packed_uint32_into(&mut self.base_avatar_id_list)?;
-                },
-                40 => {
-                    self.base_avatar_id_list.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -100,20 +100,20 @@ impl ::protobuf::Message for RogueMagicReviveAvatarCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.NOEPBNMJFGL);
         if self.interacted_prop_entity_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.interacted_prop_entity_id);
+            my_size += ::protobuf::rt::uint32_size(7, self.interacted_prop_entity_id);
         }
-        my_size += ::protobuf::rt::vec_packed_uint32_size(5, &self.base_avatar_id_list);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
+        os.write_repeated_packed_uint32(3, &self.NOEPBNMJFGL)?;
         if self.interacted_prop_entity_id != 0 {
-            os.write_uint32(3, self.interacted_prop_entity_id)?;
+            os.write_uint32(7, self.interacted_prop_entity_id)?;
         }
-        os.write_repeated_packed_uint32(5, &self.base_avatar_id_list)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -131,15 +131,15 @@ impl ::protobuf::Message for RogueMagicReviveAvatarCsReq {
     }
 
     fn clear(&mut self) {
+        self.NOEPBNMJFGL.clear();
         self.interacted_prop_entity_id = 0;
-        self.base_avatar_id_list.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicReviveAvatarCsReq {
         static instance: RogueMagicReviveAvatarCsReq = RogueMagicReviveAvatarCsReq {
+            NOEPBNMJFGL: ::std::vec::Vec::new(),
             interacted_prop_entity_id: 0,
-            base_avatar_id_list: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -164,10 +164,10 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicReviveAvatarCsReq {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n!RogueMagicReviveAvatarCsReq.proto\"\x87\x01\n\x1bRogueMagicReviveAvat\
-    arCsReq\x129\n\x19interacted_prop_entity_id\x18\x03\x20\x01(\rR\x16inter\
-    actedPropEntityId\x12-\n\x13base_avatar_id_list\x18\x05\x20\x03(\rR\x10b\
-    aseAvatarIdListb\x06proto3\
+    \n!RogueMagicReviveAvatarCsReq.proto\"z\n\x1bRogueMagicReviveAvatarCsReq\
+    \x12\x20\n\x0bNOEPBNMJFGL\x18\x03\x20\x03(\rR\x0bNOEPBNMJFGL\x129\n\x19i\
+    nteracted_prop_entity_id\x18\x07\x20\x01(\rR\x16interactedPropEntityIdb\
+    \x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

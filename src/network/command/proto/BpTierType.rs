@@ -27,14 +27,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:BpTierType)
 pub enum BpTierType {
-    // @@protoc_insertion_point(enum_value:BpTierType.ANMMOPCHJDI_PCPDHELPKEM)
-    ANMMOPCHJDI_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:BpTierType.ANMMOPCHJDI_LBLBCLIFGNE)
-    ANMMOPCHJDI_LBLBCLIFGNE = 1,
-    // @@protoc_insertion_point(enum_value:BpTierType.ANMMOPCHJDI_GILFHNIDKFF)
-    ANMMOPCHJDI_GILFHNIDKFF = 2,
-    // @@protoc_insertion_point(enum_value:BpTierType.ANMMOPCHJDI_DGNEFFILOMJ)
-    ANMMOPCHJDI_DGNEFFILOMJ = 3,
+    // @@protoc_insertion_point(enum_value:BpTierType.FMGFKIKBHKN_NLCDGIPGFDJ)
+    FMGFKIKBHKN_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:BpTierType.FMGFKIKBHKN_LDCGNGDPGAM)
+    FMGFKIKBHKN_LDCGNGDPGAM = 1,
+    // @@protoc_insertion_point(enum_value:BpTierType.FMGFKIKBHKN_FENMGLMPMFF)
+    FMGFKIKBHKN_FENMGLMPMFF = 2,
+    // @@protoc_insertion_point(enum_value:BpTierType.FMGFKIKBHKN_AJDEOPEJGEC)
+    FMGFKIKBHKN_AJDEOPEJGEC = 3,
 }
 
 impl ::protobuf::Enum for BpTierType {
@@ -46,29 +46,29 @@ impl ::protobuf::Enum for BpTierType {
 
     fn from_i32(value: i32) -> ::std::option::Option<BpTierType> {
         match value {
-            0 => ::std::option::Option::Some(BpTierType::ANMMOPCHJDI_PCPDHELPKEM),
-            1 => ::std::option::Option::Some(BpTierType::ANMMOPCHJDI_LBLBCLIFGNE),
-            2 => ::std::option::Option::Some(BpTierType::ANMMOPCHJDI_GILFHNIDKFF),
-            3 => ::std::option::Option::Some(BpTierType::ANMMOPCHJDI_DGNEFFILOMJ),
+            0 => ::std::option::Option::Some(BpTierType::FMGFKIKBHKN_NLCDGIPGFDJ),
+            1 => ::std::option::Option::Some(BpTierType::FMGFKIKBHKN_LDCGNGDPGAM),
+            2 => ::std::option::Option::Some(BpTierType::FMGFKIKBHKN_FENMGLMPMFF),
+            3 => ::std::option::Option::Some(BpTierType::FMGFKIKBHKN_AJDEOPEJGEC),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<BpTierType> {
         match str {
-            "ANMMOPCHJDI_PCPDHELPKEM" => ::std::option::Option::Some(BpTierType::ANMMOPCHJDI_PCPDHELPKEM),
-            "ANMMOPCHJDI_LBLBCLIFGNE" => ::std::option::Option::Some(BpTierType::ANMMOPCHJDI_LBLBCLIFGNE),
-            "ANMMOPCHJDI_GILFHNIDKFF" => ::std::option::Option::Some(BpTierType::ANMMOPCHJDI_GILFHNIDKFF),
-            "ANMMOPCHJDI_DGNEFFILOMJ" => ::std::option::Option::Some(BpTierType::ANMMOPCHJDI_DGNEFFILOMJ),
+            "FMGFKIKBHKN_NLCDGIPGFDJ" => ::std::option::Option::Some(BpTierType::FMGFKIKBHKN_NLCDGIPGFDJ),
+            "FMGFKIKBHKN_LDCGNGDPGAM" => ::std::option::Option::Some(BpTierType::FMGFKIKBHKN_LDCGNGDPGAM),
+            "FMGFKIKBHKN_FENMGLMPMFF" => ::std::option::Option::Some(BpTierType::FMGFKIKBHKN_FENMGLMPMFF),
+            "FMGFKIKBHKN_AJDEOPEJGEC" => ::std::option::Option::Some(BpTierType::FMGFKIKBHKN_AJDEOPEJGEC),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [BpTierType] = &[
-        BpTierType::ANMMOPCHJDI_PCPDHELPKEM,
-        BpTierType::ANMMOPCHJDI_LBLBCLIFGNE,
-        BpTierType::ANMMOPCHJDI_GILFHNIDKFF,
-        BpTierType::ANMMOPCHJDI_DGNEFFILOMJ,
+        BpTierType::FMGFKIKBHKN_NLCDGIPGFDJ,
+        BpTierType::FMGFKIKBHKN_LDCGNGDPGAM,
+        BpTierType::FMGFKIKBHKN_FENMGLMPMFF,
+        BpTierType::FMGFKIKBHKN_AJDEOPEJGEC,
     ];
 }
 
@@ -86,7 +86,7 @@ impl ::protobuf::EnumFull for BpTierType {
 
 impl ::std::default::Default for BpTierType {
     fn default() -> Self {
-        BpTierType::ANMMOPCHJDI_PCPDHELPKEM
+        BpTierType::FMGFKIKBHKN_NLCDGIPGFDJ
     }
 }
 
@@ -97,9 +97,9 @@ impl BpTierType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10BpTierType.proto*\x80\x01\n\nBpTierType\x12\x1b\n\x17ANMMOPCHJDI_P\
-    CPDHELPKEM\x10\0\x12\x1b\n\x17ANMMOPCHJDI_LBLBCLIFGNE\x10\x01\x12\x1b\n\
-    \x17ANMMOPCHJDI_GILFHNIDKFF\x10\x02\x12\x1b\n\x17ANMMOPCHJDI_DGNEFFILOMJ\
+    \n\x10BpTierType.proto*\x80\x01\n\nBpTierType\x12\x1b\n\x17FMGFKIKBHKN_N\
+    LCDGIPGFDJ\x10\0\x12\x1b\n\x17FMGFKIKBHKN_LDCGNGDPGAM\x10\x01\x12\x1b\n\
+    \x17FMGFKIKBHKN_FENMGLMPMFF\x10\x02\x12\x1b\n\x17FMGFKIKBHKN_AJDEOPEJGEC\
     \x10\x03b\x06proto3\
 ";
 

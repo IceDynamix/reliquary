@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChenLingQuitStageScRsp {
     // message fields
+    // @@protoc_insertion_point(field:ChenLingQuitStageScRsp.BFLLJJBHLDF)
+    pub BFLLJJBHLDF: ::protobuf::MessageField<super::DFEGGFFOMKI::DFEGGFFOMKI>,
     // @@protoc_insertion_point(field:ChenLingQuitStageScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:ChenLingQuitStageScRsp.EDKJMPACHNJ)
-    pub EDKJMPACHNJ: ::protobuf::MessageField<super::DCEBJIGAPEI::DCEBJIGAPEI>,
     // special fields
     // @@protoc_insertion_point(special_field:ChenLingQuitStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -51,15 +51,15 @@ impl ChenLingQuitStageScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DFEGGFFOMKI::DFEGGFFOMKI>(
+            "BFLLJJBHLDF",
+            |m: &ChenLingQuitStageScRsp| { &m.BFLLJJBHLDF },
+            |m: &mut ChenLingQuitStageScRsp| { &mut m.BFLLJJBHLDF },
+        ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &ChenLingQuitStageScRsp| { &m.retcode },
             |m: &mut ChenLingQuitStageScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::DCEBJIGAPEI::DCEBJIGAPEI>(
-            "EDKJMPACHNJ",
-            |m: &ChenLingQuitStageScRsp| { &m.EDKJMPACHNJ },
-            |m: &mut ChenLingQuitStageScRsp| { &mut m.EDKJMPACHNJ },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChenLingQuitStageScRsp>(
             "ChenLingQuitStageScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChenLingQuitStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.retcode = is.read_uint32()?;
+                42 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.BFLLJJBHLDF)?;
                 },
-                82 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.EDKJMPACHNJ)?;
+                48 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,12 +97,12 @@ impl ::protobuf::Message for ChenLingQuitStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.retcode);
-        }
-        if let Some(v) = self.EDKJMPACHNJ.as_ref() {
+        if let Some(v) = self.BFLLJJBHLDF.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(6, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,11 +110,11 @@ impl ::protobuf::Message for ChenLingQuitStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(11, self.retcode)?;
+        if let Some(v) = self.BFLLJJBHLDF.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
         }
-        if let Some(v) = self.EDKJMPACHNJ.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(10, v, os)?;
+        if self.retcode != 0 {
+            os.write_uint32(6, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -133,15 +133,15 @@ impl ::protobuf::Message for ChenLingQuitStageScRsp {
     }
 
     fn clear(&mut self) {
+        self.BFLLJJBHLDF.clear();
         self.retcode = 0;
-        self.EDKJMPACHNJ.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChenLingQuitStageScRsp {
         static instance: ChenLingQuitStageScRsp = ChenLingQuitStageScRsp {
+            BFLLJJBHLDF: ::protobuf::MessageField::none(),
             retcode: 0,
-            EDKJMPACHNJ: ::protobuf::MessageField::none(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,10 +166,10 @@ impl ::protobuf::reflect::ProtobufValue for ChenLingQuitStageScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x1cChenLingQuitStageScRsp.proto\x1a\x11DCEBJIGAPEI.proto\"b\n\x16Chen\
-    LingQuitStageScRsp\x12\x18\n\x07retcode\x18\x0b\x20\x01(\rR\x07retcode\
-    \x12.\n\x0bEDKJMPACHNJ\x18\n\x20\x01(\x0b2\x0c.DCEBJIGAPEIR\x0bEDKJMPACH\
-    NJb\x06proto3\
+    \n\x1cChenLingQuitStageScRsp.proto\x1a\x11DFEGGFFOMKI.proto\"b\n\x16Chen\
+    LingQuitStageScRsp\x12.\n\x0bBFLLJJBHLDF\x18\x05\x20\x01(\x0b2\x0c.DFEGG\
+    FFOMKIR\x0bBFLLJJBHLDF\x12\x18\n\x07retcode\x18\x06\x20\x01(\rR\x07retco\
+    deb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -187,7 +187,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::DCEBJIGAPEI::file_descriptor().clone());
+            deps.push(super::DFEGGFFOMKI::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(ChenLingQuitStageScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

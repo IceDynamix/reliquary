@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RelicSmartWearUpdatePinRelicScNotify {
     // message fields
-    // @@protoc_insertion_point(field:RelicSmartWearUpdatePinRelicScNotify.BKDEIHEKGIC)
-    pub BKDEIHEKGIC: ::std::vec::Vec<super::BDEKEIKAKML::BDEKEIKAKML>,
-    // @@protoc_insertion_point(field:RelicSmartWearUpdatePinRelicScNotify.NAEIPMIIIEC)
-    pub NAEIPMIIIEC: ::std::vec::Vec<super::BDEKEIKAKML::BDEKEIKAKML>,
+    // @@protoc_insertion_point(field:RelicSmartWearUpdatePinRelicScNotify.PLNCNCNIPKN)
+    pub PLNCNCNIPKN: ::std::vec::Vec<super::CABBOOKAODO::CABBOOKAODO>,
+    // @@protoc_insertion_point(field:RelicSmartWearUpdatePinRelicScNotify.ANCHGOGNLFP)
+    pub ANCHGOGNLFP: ::std::vec::Vec<super::CABBOOKAODO::CABBOOKAODO>,
     // @@protoc_insertion_point(field:RelicSmartWearUpdatePinRelicScNotify.relic_unique_id)
     pub relic_unique_id: u32,
     // special fields
@@ -54,14 +54,14 @@ impl RelicSmartWearUpdatePinRelicScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "BKDEIHEKGIC",
-            |m: &RelicSmartWearUpdatePinRelicScNotify| { &m.BKDEIHEKGIC },
-            |m: &mut RelicSmartWearUpdatePinRelicScNotify| { &mut m.BKDEIHEKGIC },
+            "PLNCNCNIPKN",
+            |m: &RelicSmartWearUpdatePinRelicScNotify| { &m.PLNCNCNIPKN },
+            |m: &mut RelicSmartWearUpdatePinRelicScNotify| { &mut m.PLNCNCNIPKN },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "NAEIPMIIIEC",
-            |m: &RelicSmartWearUpdatePinRelicScNotify| { &m.NAEIPMIIIEC },
-            |m: &mut RelicSmartWearUpdatePinRelicScNotify| { &mut m.NAEIPMIIIEC },
+            "ANCHGOGNLFP",
+            |m: &RelicSmartWearUpdatePinRelicScNotify| { &m.ANCHGOGNLFP },
+            |m: &mut RelicSmartWearUpdatePinRelicScNotify| { &mut m.ANCHGOGNLFP },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "relic_unique_id",
@@ -86,11 +86,11 @@ impl ::protobuf::Message for RelicSmartWearUpdatePinRelicScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                34 => {
-                    self.BKDEIHEKGIC.push(is.read_message()?);
+                98 => {
+                    self.PLNCNCNIPKN.push(is.read_message()?);
                 },
-                42 => {
-                    self.NAEIPMIIIEC.push(is.read_message()?);
+                50 => {
+                    self.ANCHGOGNLFP.push(is.read_message()?);
                 },
                 72 => {
                     self.relic_unique_id = is.read_uint32()?;
@@ -107,11 +107,11 @@ impl ::protobuf::Message for RelicSmartWearUpdatePinRelicScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        for value in &self.BKDEIHEKGIC {
+        for value in &self.PLNCNCNIPKN {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
-        for value in &self.NAEIPMIIIEC {
+        for value in &self.ANCHGOGNLFP {
             let len = value.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         };
@@ -124,11 +124,11 @@ impl ::protobuf::Message for RelicSmartWearUpdatePinRelicScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        for v in &self.BKDEIHEKGIC {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        for v in &self.PLNCNCNIPKN {
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         };
-        for v in &self.NAEIPMIIIEC {
-            ::protobuf::rt::write_message_field_with_cached_size(5, v, os)?;
+        for v in &self.ANCHGOGNLFP {
+            ::protobuf::rt::write_message_field_with_cached_size(6, v, os)?;
         };
         if self.relic_unique_id != 0 {
             os.write_uint32(9, self.relic_unique_id)?;
@@ -150,16 +150,16 @@ impl ::protobuf::Message for RelicSmartWearUpdatePinRelicScNotify {
     }
 
     fn clear(&mut self) {
-        self.BKDEIHEKGIC.clear();
-        self.NAEIPMIIIEC.clear();
+        self.PLNCNCNIPKN.clear();
+        self.ANCHGOGNLFP.clear();
         self.relic_unique_id = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RelicSmartWearUpdatePinRelicScNotify {
         static instance: RelicSmartWearUpdatePinRelicScNotify = RelicSmartWearUpdatePinRelicScNotify {
-            BKDEIHEKGIC: ::std::vec::Vec::new(),
-            NAEIPMIIIEC: ::std::vec::Vec::new(),
+            PLNCNCNIPKN: ::std::vec::Vec::new(),
+            ANCHGOGNLFP: ::std::vec::Vec::new(),
             relic_unique_id: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
@@ -185,10 +185,10 @@ impl ::protobuf::reflect::ProtobufValue for RelicSmartWearUpdatePinRelicScNotify
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n*RelicSmartWearUpdatePinRelicScNotify.proto\x1a\x11BDEKEIKAKML.proto\"\
-    \xae\x01\n$RelicSmartWearUpdatePinRelicScNotify\x12.\n\x0bBKDEIHEKGIC\
-    \x18\x04\x20\x03(\x0b2\x0c.BDEKEIKAKMLR\x0bBKDEIHEKGIC\x12.\n\x0bNAEIPMI\
-    IIEC\x18\x05\x20\x03(\x0b2\x0c.BDEKEIKAKMLR\x0bNAEIPMIIIEC\x12&\n\x0frel\
+    \n*RelicSmartWearUpdatePinRelicScNotify.proto\x1a\x11CABBOOKAODO.proto\"\
+    \xae\x01\n$RelicSmartWearUpdatePinRelicScNotify\x12.\n\x0bPLNCNCNIPKN\
+    \x18\x0c\x20\x03(\x0b2\x0c.CABBOOKAODOR\x0bPLNCNCNIPKN\x12.\n\x0bANCHGOG\
+    NLFP\x18\x06\x20\x03(\x0b2\x0c.CABBOOKAODOR\x0bANCHGOGNLFP\x12&\n\x0frel\
     ic_unique_id\x18\t\x20\x01(\rR\rrelicUniqueIdb\x06proto3\
 ";
 
@@ -207,7 +207,7 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(1);
-            deps.push(super::BDEKEIKAKML::file_descriptor().clone());
+            deps.push(super::CABBOOKAODO::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(RelicSmartWearUpdatePinRelicScNotify::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

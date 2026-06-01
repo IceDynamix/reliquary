@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicSetAutoDressInMagicUnitScRsp {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicSetAutoDressInMagicUnitScRsp.KMPPNOFBNPM)
-    pub KMPPNOFBNPM: bool,
     // @@protoc_insertion_point(field:RogueMagicSetAutoDressInMagicUnitScRsp.retcode)
     pub retcode: u32,
+    // @@protoc_insertion_point(field:RogueMagicSetAutoDressInMagicUnitScRsp.GBEMCAHPBKP)
+    pub GBEMCAHPBKP: bool,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicSetAutoDressInMagicUnitScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl RogueMagicSetAutoDressInMagicUnitScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "KMPPNOFBNPM",
-            |m: &RogueMagicSetAutoDressInMagicUnitScRsp| { &m.KMPPNOFBNPM },
-            |m: &mut RogueMagicSetAutoDressInMagicUnitScRsp| { &mut m.KMPPNOFBNPM },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &RogueMagicSetAutoDressInMagicUnitScRsp| { &m.retcode },
             |m: &mut RogueMagicSetAutoDressInMagicUnitScRsp| { &mut m.retcode },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "GBEMCAHPBKP",
+            |m: &RogueMagicSetAutoDressInMagicUnitScRsp| { &m.GBEMCAHPBKP },
+            |m: &mut RogueMagicSetAutoDressInMagicUnitScRsp| { &mut m.GBEMCAHPBKP },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicSetAutoDressInMagicUnitScRsp>(
             "RogueMagicSetAutoDressInMagicUnitScRsp",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                120 => {
-                    self.KMPPNOFBNPM = is.read_bool()?;
-                },
-                16 => {
+                40 => {
                     self.retcode = is.read_uint32()?;
+                },
+                88 => {
+                    self.GBEMCAHPBKP = is.read_bool()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.KMPPNOFBNPM != false {
-            my_size += 1 + 1;
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(2, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
+        }
+        if self.GBEMCAHPBKP != false {
+            my_size += 1 + 1;
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.KMPPNOFBNPM != false {
-            os.write_bool(15, self.KMPPNOFBNPM)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(2, self.retcode)?;
+            os.write_uint32(5, self.retcode)?;
+        }
+        if self.GBEMCAHPBKP != false {
+            os.write_bool(11, self.GBEMCAHPBKP)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for RogueMagicSetAutoDressInMagicUnitScRsp {
     }
 
     fn clear(&mut self) {
-        self.KMPPNOFBNPM = false;
         self.retcode = 0;
+        self.GBEMCAHPBKP = false;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicSetAutoDressInMagicUnitScRsp {
         static instance: RogueMagicSetAutoDressInMagicUnitScRsp = RogueMagicSetAutoDressInMagicUnitScRsp {
-            KMPPNOFBNPM: false,
             retcode: 0,
+            GBEMCAHPBKP: false,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,9 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicSetAutoDressInMagicUnitScR
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n,RogueMagicSetAutoDressInMagicUnitScRsp.proto\"d\n&RogueMagicSetAutoDr\
-    essInMagicUnitScRsp\x12\x20\n\x0bKMPPNOFBNPM\x18\x0f\x20\x01(\x08R\x0bKM\
-    PPNOFBNPM\x12\x18\n\x07retcode\x18\x02\x20\x01(\rR\x07retcodeb\x06proto3\
+    essInMagicUnitScRsp\x12\x18\n\x07retcode\x18\x05\x20\x01(\rR\x07retcode\
+    \x12\x20\n\x0bGBEMCAHPBKP\x18\x0b\x20\x01(\x08R\x0bGBEMCAHPBKPb\x06proto\
+    3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

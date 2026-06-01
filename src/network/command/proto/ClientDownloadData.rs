@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ClientDownloadData {
     // message fields
-    // @@protoc_insertion_point(field:ClientDownloadData.version)
-    pub version: u32,
-    // @@protoc_insertion_point(field:ClientDownloadData.time)
-    pub time: i64,
     // @@protoc_insertion_point(field:ClientDownloadData.data)
     pub data: ::std::string::String,
-    // @@protoc_insertion_point(field:ClientDownloadData.EFKCMFIJGIJ)
-    pub EFKCMFIJGIJ: u32,
+    // @@protoc_insertion_point(field:ClientDownloadData.time)
+    pub time: i64,
+    // @@protoc_insertion_point(field:ClientDownloadData.DJCNHCGFHKF)
+    pub DJCNHCGFHKF: u32,
+    // @@protoc_insertion_point(field:ClientDownloadData.version)
+    pub version: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ClientDownloadData.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -56,9 +56,9 @@ impl ClientDownloadData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "version",
-            |m: &ClientDownloadData| { &m.version },
-            |m: &mut ClientDownloadData| { &mut m.version },
+            "data",
+            |m: &ClientDownloadData| { &m.data },
+            |m: &mut ClientDownloadData| { &mut m.data },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "time",
@@ -66,14 +66,14 @@ impl ClientDownloadData {
             |m: &mut ClientDownloadData| { &mut m.time },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "data",
-            |m: &ClientDownloadData| { &m.data },
-            |m: &mut ClientDownloadData| { &mut m.data },
+            "DJCNHCGFHKF",
+            |m: &ClientDownloadData| { &m.DJCNHCGFHKF },
+            |m: &mut ClientDownloadData| { &mut m.DJCNHCGFHKF },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "EFKCMFIJGIJ",
-            |m: &ClientDownloadData| { &m.EFKCMFIJGIJ },
-            |m: &mut ClientDownloadData| { &mut m.EFKCMFIJGIJ },
+            "version",
+            |m: &ClientDownloadData| { &m.version },
+            |m: &mut ClientDownloadData| { &mut m.version },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ClientDownloadData>(
             "ClientDownloadData",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for ClientDownloadData {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.version = is.read_uint32()?;
+                26 => {
+                    self.data = is.read_string()?;
                 },
                 16 => {
                     self.time = is.read_int64()?;
                 },
-                26 => {
-                    self.data = is.read_string()?;
-                },
                 32 => {
-                    self.EFKCMFIJGIJ = is.read_uint32()?;
+                    self.DJCNHCGFHKF = is.read_uint32()?;
+                },
+                8 => {
+                    self.version = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,17 +117,17 @@ impl ::protobuf::Message for ClientDownloadData {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.version != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.version);
+        if !self.data.is_empty() {
+            my_size += ::protobuf::rt::string_size(3, &self.data);
         }
         if self.time != 0 {
             my_size += ::protobuf::rt::int64_size(2, self.time);
         }
-        if !self.data.is_empty() {
-            my_size += ::protobuf::rt::string_size(3, &self.data);
+        if self.DJCNHCGFHKF != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.DJCNHCGFHKF);
         }
-        if self.EFKCMFIJGIJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.EFKCMFIJGIJ);
+        if self.version != 0 {
+            my_size += ::protobuf::rt::uint32_size(1, self.version);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -135,17 +135,17 @@ impl ::protobuf::Message for ClientDownloadData {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.version != 0 {
-            os.write_uint32(1, self.version)?;
+        if !self.data.is_empty() {
+            os.write_string(3, &self.data)?;
         }
         if self.time != 0 {
             os.write_int64(2, self.time)?;
         }
-        if !self.data.is_empty() {
-            os.write_string(3, &self.data)?;
+        if self.DJCNHCGFHKF != 0 {
+            os.write_uint32(4, self.DJCNHCGFHKF)?;
         }
-        if self.EFKCMFIJGIJ != 0 {
-            os.write_uint32(4, self.EFKCMFIJGIJ)?;
+        if self.version != 0 {
+            os.write_uint32(1, self.version)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -164,19 +164,19 @@ impl ::protobuf::Message for ClientDownloadData {
     }
 
     fn clear(&mut self) {
-        self.version = 0;
-        self.time = 0;
         self.data.clear();
-        self.EFKCMFIJGIJ = 0;
+        self.time = 0;
+        self.DJCNHCGFHKF = 0;
+        self.version = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ClientDownloadData {
         static instance: ClientDownloadData = ClientDownloadData {
-            version: 0,
-            time: 0,
             data: ::std::string::String::new(),
-            EFKCMFIJGIJ: 0,
+            time: 0,
+            DJCNHCGFHKF: 0,
+            version: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -201,10 +201,10 @@ impl ::protobuf::reflect::ProtobufValue for ClientDownloadData {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x18ClientDownloadData.proto\"x\n\x12ClientDownloadData\x12\x18\n\x07v\
-    ersion\x18\x01\x20\x01(\rR\x07version\x12\x12\n\x04time\x18\x02\x20\x01(\
-    \x03R\x04time\x12\x12\n\x04data\x18\x03\x20\x01(\tR\x04data\x12\x20\n\
-    \x0bEFKCMFIJGIJ\x18\x04\x20\x01(\rR\x0bEFKCMFIJGIJb\x06proto3\
+    \n\x18ClientDownloadData.proto\"x\n\x12ClientDownloadData\x12\x12\n\x04d\
+    ata\x18\x03\x20\x01(\tR\x04data\x12\x12\n\x04time\x18\x02\x20\x01(\x03R\
+    \x04time\x12\x20\n\x0bDJCNHCGFHKF\x18\x04\x20\x01(\rR\x0bDJCNHCGFHKF\x12\
+    \x18\n\x07version\x18\x01\x20\x01(\rR\x07versionb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

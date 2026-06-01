@@ -28,18 +28,18 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetHipplenDataScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetHipplenDataScRsp.ACJHGLGHEAH)
-    pub ACJHGLGHEAH: ::protobuf::MessageField<super::OOLHNFNKOHN::OOLHNFNKOHN>,
-    // @@protoc_insertion_point(field:GetHipplenDataScRsp.CEAJNLLIBFP)
-    pub CEAJNLLIBFP: ::protobuf::MessageField<super::LIOLPIJOMBI::LIOLPIJOMBI>,
-    // @@protoc_insertion_point(field:GetHipplenDataScRsp.MPPJLFIDMLB)
-    pub MPPJLFIDMLB: bool,
-    // @@protoc_insertion_point(field:GetHipplenDataScRsp.IPOEIGADLJN)
-    pub IPOEIGADLJN: u32,
+    // @@protoc_insertion_point(field:GetHipplenDataScRsp.KJDEEJNBLHK)
+    pub KJDEEJNBLHK: ::protobuf::MessageField<super::FEDNIHCAHGP::FEDNIHCAHGP>,
+    // @@protoc_insertion_point(field:GetHipplenDataScRsp.ACOLLHOFKGL)
+    pub ACOLLHOFKGL: ::protobuf::MessageField<super::ELOFLNEAHPD::ELOFLNEAHPD>,
+    // @@protoc_insertion_point(field:GetHipplenDataScRsp.HIGHKDBJNIM)
+    pub HIGHKDBJNIM: ::protobuf::MessageField<super::BNJAIHINJIK::BNJAIHINJIK>,
     // @@protoc_insertion_point(field:GetHipplenDataScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetHipplenDataScRsp.IBHLKGIEPLG)
-    pub IBHLKGIEPLG: ::protobuf::MessageField<super::JFACONIBFHM::JFACONIBFHM>,
+    // @@protoc_insertion_point(field:GetHipplenDataScRsp.HPKECDINMCE)
+    pub HPKECDINMCE: bool,
+    // @@protoc_insertion_point(field:GetHipplenDataScRsp.JFLAEGMBMAK)
+    pub JFLAEGMBMAK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetHipplenDataScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -59,35 +59,35 @@ impl GetHipplenDataScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(6);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::OOLHNFNKOHN::OOLHNFNKOHN>(
-            "ACJHGLGHEAH",
-            |m: &GetHipplenDataScRsp| { &m.ACJHGLGHEAH },
-            |m: &mut GetHipplenDataScRsp| { &mut m.ACJHGLGHEAH },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::FEDNIHCAHGP::FEDNIHCAHGP>(
+            "KJDEEJNBLHK",
+            |m: &GetHipplenDataScRsp| { &m.KJDEEJNBLHK },
+            |m: &mut GetHipplenDataScRsp| { &mut m.KJDEEJNBLHK },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::LIOLPIJOMBI::LIOLPIJOMBI>(
-            "CEAJNLLIBFP",
-            |m: &GetHipplenDataScRsp| { &m.CEAJNLLIBFP },
-            |m: &mut GetHipplenDataScRsp| { &mut m.CEAJNLLIBFP },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ELOFLNEAHPD::ELOFLNEAHPD>(
+            "ACOLLHOFKGL",
+            |m: &GetHipplenDataScRsp| { &m.ACOLLHOFKGL },
+            |m: &mut GetHipplenDataScRsp| { &mut m.ACOLLHOFKGL },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MPPJLFIDMLB",
-            |m: &GetHipplenDataScRsp| { &m.MPPJLFIDMLB },
-            |m: &mut GetHipplenDataScRsp| { &mut m.MPPJLFIDMLB },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "IPOEIGADLJN",
-            |m: &GetHipplenDataScRsp| { &m.IPOEIGADLJN },
-            |m: &mut GetHipplenDataScRsp| { &mut m.IPOEIGADLJN },
+        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::BNJAIHINJIK::BNJAIHINJIK>(
+            "HIGHKDBJNIM",
+            |m: &GetHipplenDataScRsp| { &m.HIGHKDBJNIM },
+            |m: &mut GetHipplenDataScRsp| { &mut m.HIGHKDBJNIM },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetHipplenDataScRsp| { &m.retcode },
             |m: &mut GetHipplenDataScRsp| { &mut m.retcode },
         ));
-        fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::JFACONIBFHM::JFACONIBFHM>(
-            "IBHLKGIEPLG",
-            |m: &GetHipplenDataScRsp| { &m.IBHLKGIEPLG },
-            |m: &mut GetHipplenDataScRsp| { &mut m.IBHLKGIEPLG },
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "HPKECDINMCE",
+            |m: &GetHipplenDataScRsp| { &m.HPKECDINMCE },
+            |m: &mut GetHipplenDataScRsp| { &mut m.HPKECDINMCE },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "JFLAEGMBMAK",
+            |m: &GetHipplenDataScRsp| { &m.JFLAEGMBMAK },
+            |m: &mut GetHipplenDataScRsp| { &mut m.JFLAEGMBMAK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetHipplenDataScRsp>(
             "GetHipplenDataScRsp",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for GetHipplenDataScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                10 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ACJHGLGHEAH)?;
-                },
-                34 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.CEAJNLLIBFP)?;
-                },
-                80 => {
-                    self.MPPJLFIDMLB = is.read_bool()?;
-                },
-                56 => {
-                    self.IPOEIGADLJN = is.read_uint32()?;
-                },
-                72 => {
-                    self.retcode = is.read_uint32()?;
+                66 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.KJDEEJNBLHK)?;
                 },
                 114 => {
-                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.IBHLKGIEPLG)?;
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.ACOLLHOFKGL)?;
+                },
+                18 => {
+                    ::protobuf::rt::read_singular_message_into_field(is, &mut self.HIGHKDBJNIM)?;
+                },
+                24 => {
+                    self.retcode = is.read_uint32()?;
+                },
+                40 => {
+                    self.HPKECDINMCE = is.read_bool()?;
+                },
+                56 => {
+                    self.JFLAEGMBMAK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -137,26 +137,26 @@ impl ::protobuf::Message for GetHipplenDataScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if let Some(v) = self.ACJHGLGHEAH.as_ref() {
+        if let Some(v) = self.KJDEEJNBLHK.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if let Some(v) = self.CEAJNLLIBFP.as_ref() {
+        if let Some(v) = self.ACOLLHOFKGL.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.MPPJLFIDMLB != false {
-            my_size += 1 + 1;
-        }
-        if self.IPOEIGADLJN != 0 {
-            my_size += ::protobuf::rt::uint32_size(7, self.IPOEIGADLJN);
+        if let Some(v) = self.HIGHKDBJNIM.as_ref() {
+            let len = v.compute_size();
+            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(3, self.retcode);
         }
-        if let Some(v) = self.IBHLKGIEPLG.as_ref() {
-            let len = v.compute_size();
-            my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
+        if self.HPKECDINMCE != false {
+            my_size += 1 + 1;
+        }
+        if self.JFLAEGMBMAK != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.JFLAEGMBMAK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -164,23 +164,23 @@ impl ::protobuf::Message for GetHipplenDataScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if let Some(v) = self.ACJHGLGHEAH.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        if let Some(v) = self.KJDEEJNBLHK.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(8, v, os)?;
         }
-        if let Some(v) = self.CEAJNLLIBFP.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(4, v, os)?;
+        if let Some(v) = self.ACOLLHOFKGL.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
         }
-        if self.MPPJLFIDMLB != false {
-            os.write_bool(10, self.MPPJLFIDMLB)?;
-        }
-        if self.IPOEIGADLJN != 0 {
-            os.write_uint32(7, self.IPOEIGADLJN)?;
+        if let Some(v) = self.HIGHKDBJNIM.as_ref() {
+            ::protobuf::rt::write_message_field_with_cached_size(2, v, os)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(9, self.retcode)?;
+            os.write_uint32(3, self.retcode)?;
         }
-        if let Some(v) = self.IBHLKGIEPLG.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(14, v, os)?;
+        if self.HPKECDINMCE != false {
+            os.write_bool(5, self.HPKECDINMCE)?;
+        }
+        if self.JFLAEGMBMAK != 0 {
+            os.write_uint32(7, self.JFLAEGMBMAK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -199,23 +199,23 @@ impl ::protobuf::Message for GetHipplenDataScRsp {
     }
 
     fn clear(&mut self) {
-        self.ACJHGLGHEAH.clear();
-        self.CEAJNLLIBFP.clear();
-        self.MPPJLFIDMLB = false;
-        self.IPOEIGADLJN = 0;
+        self.KJDEEJNBLHK.clear();
+        self.ACOLLHOFKGL.clear();
+        self.HIGHKDBJNIM.clear();
         self.retcode = 0;
-        self.IBHLKGIEPLG.clear();
+        self.HPKECDINMCE = false;
+        self.JFLAEGMBMAK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetHipplenDataScRsp {
         static instance: GetHipplenDataScRsp = GetHipplenDataScRsp {
-            ACJHGLGHEAH: ::protobuf::MessageField::none(),
-            CEAJNLLIBFP: ::protobuf::MessageField::none(),
-            MPPJLFIDMLB: false,
-            IPOEIGADLJN: 0,
+            KJDEEJNBLHK: ::protobuf::MessageField::none(),
+            ACOLLHOFKGL: ::protobuf::MessageField::none(),
+            HIGHKDBJNIM: ::protobuf::MessageField::none(),
             retcode: 0,
-            IBHLKGIEPLG: ::protobuf::MessageField::none(),
+            HPKECDINMCE: false,
+            JFLAEGMBMAK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -240,14 +240,14 @@ impl ::protobuf::reflect::ProtobufValue for GetHipplenDataScRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19GetHipplenDataScRsp.proto\x1a\x11JFACONIBFHM.proto\x1a\x11LIOLPIJO\
-    MBI.proto\x1a\x11OOLHNFNKOHN.proto\"\x83\x02\n\x13GetHipplenDataScRsp\
-    \x12.\n\x0bACJHGLGHEAH\x18\x01\x20\x01(\x0b2\x0c.OOLHNFNKOHNR\x0bACJHGLG\
-    HEAH\x12.\n\x0bCEAJNLLIBFP\x18\x04\x20\x01(\x0b2\x0c.LIOLPIJOMBIR\x0bCEA\
-    JNLLIBFP\x12\x20\n\x0bMPPJLFIDMLB\x18\n\x20\x01(\x08R\x0bMPPJLFIDMLB\x12\
-    \x20\n\x0bIPOEIGADLJN\x18\x07\x20\x01(\rR\x0bIPOEIGADLJN\x12\x18\n\x07re\
-    tcode\x18\t\x20\x01(\rR\x07retcode\x12.\n\x0bIBHLKGIEPLG\x18\x0e\x20\x01\
-    (\x0b2\x0c.JFACONIBFHMR\x0bIBHLKGIEPLGb\x06proto3\
+    \n\x19GetHipplenDataScRsp.proto\x1a\x11BNJAIHINJIK.proto\x1a\x11ELOFLNEA\
+    HPD.proto\x1a\x11FEDNIHCAHGP.proto\"\x83\x02\n\x13GetHipplenDataScRsp\
+    \x12.\n\x0bKJDEEJNBLHK\x18\x08\x20\x01(\x0b2\x0c.FEDNIHCAHGPR\x0bKJDEEJN\
+    BLHK\x12.\n\x0bACOLLHOFKGL\x18\x0e\x20\x01(\x0b2\x0c.ELOFLNEAHPDR\x0bACO\
+    LLHOFKGL\x12.\n\x0bHIGHKDBJNIM\x18\x02\x20\x01(\x0b2\x0c.BNJAIHINJIKR\
+    \x0bHIGHKDBJNIM\x12\x18\n\x07retcode\x18\x03\x20\x01(\rR\x07retcode\x12\
+    \x20\n\x0bHPKECDINMCE\x18\x05\x20\x01(\x08R\x0bHPKECDINMCE\x12\x20\n\x0b\
+    JFLAEGMBMAK\x18\x07\x20\x01(\rR\x0bJFLAEGMBMAKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file
@@ -265,9 +265,9 @@ pub fn file_descriptor() -> &'static ::protobuf::reflect::FileDescriptor {
     file_descriptor.get(|| {
         let generated_file_descriptor = generated_file_descriptor_lazy.get(|| {
             let mut deps = ::std::vec::Vec::with_capacity(3);
-            deps.push(super::JFACONIBFHM::file_descriptor().clone());
-            deps.push(super::LIOLPIJOMBI::file_descriptor().clone());
-            deps.push(super::OOLHNFNKOHN::file_descriptor().clone());
+            deps.push(super::BNJAIHINJIK::file_descriptor().clone());
+            deps.push(super::ELOFLNEAHPD::file_descriptor().clone());
+            deps.push(super::FEDNIHCAHGP::file_descriptor().clone());
             let mut messages = ::std::vec::Vec::with_capacity(1);
             messages.push(GetHipplenDataScRsp::generated_message_descriptor_data());
             let mut enums = ::std::vec::Vec::with_capacity(0);

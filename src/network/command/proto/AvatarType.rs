@@ -45,6 +45,8 @@ pub enum AvatarType {
     AVATAR_GRID_FIGHT_TYPE = 7,
     // @@protoc_insertion_point(enum_value:AvatarType.AVATAR_GLJDNDMIGIP)
     AVATAR_GLJDNDMIGIP = 8,
+    // @@protoc_insertion_point(enum_value:AvatarType.AvatarType_GPMNKEOADPI)
+    AvatarType_GPMNKEOADPI = 9,
 }
 
 impl ::protobuf::Enum for AvatarType {
@@ -65,6 +67,7 @@ impl ::protobuf::Enum for AvatarType {
             6 => ::std::option::Option::Some(AvatarType::AVATAR_UPGRADE_AVAILABLE_TYPE),
             7 => ::std::option::Option::Some(AvatarType::AVATAR_GRID_FIGHT_TYPE),
             8 => ::std::option::Option::Some(AvatarType::AVATAR_GLJDNDMIGIP),
+            9 => ::std::option::Option::Some(AvatarType::AvatarType_GPMNKEOADPI),
             _ => ::std::option::Option::None
         }
     }
@@ -80,6 +83,7 @@ impl ::protobuf::Enum for AvatarType {
             "AVATAR_UPGRADE_AVAILABLE_TYPE" => ::std::option::Option::Some(AvatarType::AVATAR_UPGRADE_AVAILABLE_TYPE),
             "AVATAR_GRID_FIGHT_TYPE" => ::std::option::Option::Some(AvatarType::AVATAR_GRID_FIGHT_TYPE),
             "AVATAR_GLJDNDMIGIP" => ::std::option::Option::Some(AvatarType::AVATAR_GLJDNDMIGIP),
+            "AvatarType_GPMNKEOADPI" => ::std::option::Option::Some(AvatarType::AvatarType_GPMNKEOADPI),
             _ => ::std::option::Option::None
         }
     }
@@ -94,6 +98,7 @@ impl ::protobuf::Enum for AvatarType {
         AvatarType::AVATAR_UPGRADE_AVAILABLE_TYPE,
         AvatarType::AVATAR_GRID_FIGHT_TYPE,
         AvatarType::AVATAR_GLJDNDMIGIP,
+        AvatarType::AvatarType_GPMNKEOADPI,
     ];
 }
 
@@ -122,12 +127,13 @@ impl AvatarType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x10AvatarType.proto*\xf6\x01\n\nAvatarType\x12\x14\n\x10AVATAR_TYPE_N\
+    \n\x10AvatarType.proto*\x92\x02\n\nAvatarType\x12\x14\n\x10AVATAR_TYPE_N\
     ONE\x10\0\x12\x15\n\x11AVATAR_TRIAL_TYPE\x10\x01\x12\x15\n\x11AVATAR_LIM\
     IT_TYPE\x10\x02\x12\x16\n\x12AVATAR_FORMAL_TYPE\x10\x03\x12\x16\n\x12AVA\
     TAR_ASSIST_TYPE\x10\x04\x12\x1d\n\x19AVATAR_AETHER_DIVIDE_TYPE\x10\x05\
     \x12!\n\x1dAVATAR_UPGRADE_AVAILABLE_TYPE\x10\x06\x12\x1a\n\x16AVATAR_GRI\
-    D_FIGHT_TYPE\x10\x07\x12\x16\n\x12AVATAR_GLJDNDMIGIP\x10\x08b\x06proto3\
+    D_FIGHT_TYPE\x10\x07\x12\x16\n\x12AVATAR_GLJDNDMIGIP\x10\x08\x12\x1a\n\
+    \x16AvatarType_GPMNKEOADPI\x10\tb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

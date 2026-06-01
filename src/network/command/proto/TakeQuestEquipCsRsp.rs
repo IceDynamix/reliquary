@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct TakeQuestEquipCsRsp {
     // message fields
-    // @@protoc_insertion_point(field:TakeQuestEquipCsRsp.retcode)
-    pub retcode: u32,
     // @@protoc_insertion_point(field:TakeQuestEquipCsRsp.quest_id)
     pub quest_id: u32,
-    // @@protoc_insertion_point(field:TakeQuestEquipCsRsp.LEINLFGHIBC)
-    pub LEINLFGHIBC: bool,
+    // @@protoc_insertion_point(field:TakeQuestEquipCsRsp.DKPCAIGPHNO)
+    pub DKPCAIGPHNO: bool,
+    // @@protoc_insertion_point(field:TakeQuestEquipCsRsp.retcode)
+    pub retcode: u32,
     // special fields
     // @@protoc_insertion_point(special_field:TakeQuestEquipCsRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl TakeQuestEquipCsRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "retcode",
-            |m: &TakeQuestEquipCsRsp| { &m.retcode },
-            |m: &mut TakeQuestEquipCsRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "quest_id",
             |m: &TakeQuestEquipCsRsp| { &m.quest_id },
             |m: &mut TakeQuestEquipCsRsp| { &mut m.quest_id },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LEINLFGHIBC",
-            |m: &TakeQuestEquipCsRsp| { &m.LEINLFGHIBC },
-            |m: &mut TakeQuestEquipCsRsp| { &mut m.LEINLFGHIBC },
+            "DKPCAIGPHNO",
+            |m: &TakeQuestEquipCsRsp| { &m.DKPCAIGPHNO },
+            |m: &mut TakeQuestEquipCsRsp| { &mut m.DKPCAIGPHNO },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "retcode",
+            |m: &TakeQuestEquipCsRsp| { &m.retcode },
+            |m: &mut TakeQuestEquipCsRsp| { &mut m.retcode },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<TakeQuestEquipCsRsp>(
             "TakeQuestEquipCsRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for TakeQuestEquipCsRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                8 => {
-                    self.retcode = is.read_uint32()?;
-                },
-                96 => {
+                72 => {
                     self.quest_id = is.read_uint32()?;
                 },
-                32 => {
-                    self.LEINLFGHIBC = is.read_bool()?;
+                48 => {
+                    self.DKPCAIGPHNO = is.read_bool()?;
+                },
+                40 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for TakeQuestEquipCsRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(1, self.retcode);
-        }
         if self.quest_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(12, self.quest_id);
+            my_size += ::protobuf::rt::uint32_size(9, self.quest_id);
         }
-        if self.LEINLFGHIBC != false {
+        if self.DKPCAIGPHNO != false {
             my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(5, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for TakeQuestEquipCsRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.retcode != 0 {
-            os.write_uint32(1, self.retcode)?;
-        }
         if self.quest_id != 0 {
-            os.write_uint32(12, self.quest_id)?;
+            os.write_uint32(9, self.quest_id)?;
         }
-        if self.LEINLFGHIBC != false {
-            os.write_bool(4, self.LEINLFGHIBC)?;
+        if self.DKPCAIGPHNO != false {
+            os.write_bool(6, self.DKPCAIGPHNO)?;
+        }
+        if self.retcode != 0 {
+            os.write_uint32(5, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for TakeQuestEquipCsRsp {
     }
 
     fn clear(&mut self) {
-        self.retcode = 0;
         self.quest_id = 0;
-        self.LEINLFGHIBC = false;
+        self.DKPCAIGPHNO = false;
+        self.retcode = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static TakeQuestEquipCsRsp {
         static instance: TakeQuestEquipCsRsp = TakeQuestEquipCsRsp {
-            retcode: 0,
             quest_id: 0,
-            LEINLFGHIBC: false,
+            DKPCAIGPHNO: false,
+            retcode: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -183,10 +183,10 @@ impl ::protobuf::reflect::ProtobufValue for TakeQuestEquipCsRsp {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x19TakeQuestEquipCsRsp.proto\"l\n\x13TakeQuestEquipCsRsp\x12\x18\n\
-    \x07retcode\x18\x01\x20\x01(\rR\x07retcode\x12\x19\n\x08quest_id\x18\x0c\
-    \x20\x01(\rR\x07questId\x12\x20\n\x0bLEINLFGHIBC\x18\x04\x20\x01(\x08R\
-    \x0bLEINLFGHIBCb\x06proto3\
+    \n\x19TakeQuestEquipCsRsp.proto\"l\n\x13TakeQuestEquipCsRsp\x12\x19\n\
+    \x08quest_id\x18\t\x20\x01(\rR\x07questId\x12\x20\n\x0bDKPCAIGPHNO\x18\
+    \x06\x20\x01(\x08R\x0bDKPCAIGPHNO\x12\x18\n\x07retcode\x18\x05\x20\x01(\
+    \rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

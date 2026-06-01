@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct RogueMagicUnitComposeCsReq {
     // message fields
-    // @@protoc_insertion_point(field:RogueMagicUnitComposeCsReq.IGEABMFLCGC)
-    pub IGEABMFLCGC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:RogueMagicUnitComposeCsReq.JDJFHIMPIPK)
+    pub JDJFHIMPIPK: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:RogueMagicUnitComposeCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl RogueMagicUnitComposeCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "IGEABMFLCGC",
-            |m: &RogueMagicUnitComposeCsReq| { &m.IGEABMFLCGC },
-            |m: &mut RogueMagicUnitComposeCsReq| { &mut m.IGEABMFLCGC },
+            "JDJFHIMPIPK",
+            |m: &RogueMagicUnitComposeCsReq| { &m.JDJFHIMPIPK },
+            |m: &mut RogueMagicUnitComposeCsReq| { &mut m.JDJFHIMPIPK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<RogueMagicUnitComposeCsReq>(
             "RogueMagicUnitComposeCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for RogueMagicUnitComposeCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.IGEABMFLCGC)?;
+                26 => {
+                    is.read_repeated_packed_uint32_into(&mut self.JDJFHIMPIPK)?;
                 },
-                56 => {
-                    self.IGEABMFLCGC.push(is.read_uint32()?);
+                24 => {
+                    self.JDJFHIMPIPK.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for RogueMagicUnitComposeCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.IGEABMFLCGC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(3, &self.JDJFHIMPIPK);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.IGEABMFLCGC)?;
+        os.write_repeated_packed_uint32(3, &self.JDJFHIMPIPK)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for RogueMagicUnitComposeCsReq {
     }
 
     fn clear(&mut self) {
-        self.IGEABMFLCGC.clear();
+        self.JDJFHIMPIPK.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static RogueMagicUnitComposeCsReq {
         static instance: RogueMagicUnitComposeCsReq = RogueMagicUnitComposeCsReq {
-            IGEABMFLCGC: ::std::vec::Vec::new(),
+            JDJFHIMPIPK: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for RogueMagicUnitComposeCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x20RogueMagicUnitComposeCsReq.proto\">\n\x1aRogueMagicUnitComposeCsRe\
-    q\x12\x20\n\x0bIGEABMFLCGC\x18\x07\x20\x03(\rR\x0bIGEABMFLCGCb\x06proto3\
+    q\x12\x20\n\x0bJDJFHIMPIPK\x18\x03\x20\x03(\rR\x0bJDJFHIMPIPKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -30,16 +30,16 @@ pub struct LineupAvatar {
     // message fields
     // @@protoc_insertion_point(field:LineupAvatar.sp_bar)
     pub sp_bar: ::protobuf::MessageField<super::SpBarInfo::SpBarInfo>,
-    // @@protoc_insertion_point(field:LineupAvatar.id)
-    pub id: u32,
     // @@protoc_insertion_point(field:LineupAvatar.avatar_type)
     pub avatar_type: ::protobuf::EnumOrUnknown<super::AvatarType::AvatarType>,
-    // @@protoc_insertion_point(field:LineupAvatar.hp)
-    pub hp: u32,
-    // @@protoc_insertion_point(field:LineupAvatar.satiety)
-    pub satiety: u32,
     // @@protoc_insertion_point(field:LineupAvatar.slot)
     pub slot: u32,
+    // @@protoc_insertion_point(field:LineupAvatar.hp)
+    pub hp: u32,
+    // @@protoc_insertion_point(field:LineupAvatar.id)
+    pub id: u32,
+    // @@protoc_insertion_point(field:LineupAvatar.satiety)
+    pub satiety: u32,
     // special fields
     // @@protoc_insertion_point(special_field:LineupAvatar.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -65,14 +65,14 @@ impl LineupAvatar {
             |m: &mut LineupAvatar| { &mut m.sp_bar },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "id",
-            |m: &LineupAvatar| { &m.id },
-            |m: &mut LineupAvatar| { &mut m.id },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "avatar_type",
             |m: &LineupAvatar| { &m.avatar_type },
             |m: &mut LineupAvatar| { &mut m.avatar_type },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "slot",
+            |m: &LineupAvatar| { &m.slot },
+            |m: &mut LineupAvatar| { &mut m.slot },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "hp",
@@ -80,14 +80,14 @@ impl LineupAvatar {
             |m: &mut LineupAvatar| { &mut m.hp },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "id",
+            |m: &LineupAvatar| { &m.id },
+            |m: &mut LineupAvatar| { &mut m.id },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "satiety",
             |m: &LineupAvatar| { &m.satiety },
             |m: &mut LineupAvatar| { &mut m.satiety },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "slot",
-            |m: &LineupAvatar| { &m.slot },
-            |m: &mut LineupAvatar| { &mut m.slot },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<LineupAvatar>(
             "LineupAvatar",
@@ -107,23 +107,23 @@ impl ::protobuf::Message for LineupAvatar {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                122 => {
+                98 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.sp_bar)?;
                 },
-                48 => {
-                    self.id = is.read_uint32()?;
-                },
-                96 => {
+                32 => {
                     self.avatar_type = is.read_enum_or_unknown()?;
                 },
-                72 => {
+                64 => {
+                    self.slot = is.read_uint32()?;
+                },
+                104 => {
                     self.hp = is.read_uint32()?;
                 },
-                88 => {
-                    self.satiety = is.read_uint32()?;
+                16 => {
+                    self.id = is.read_uint32()?;
                 },
-                32 => {
-                    self.slot = is.read_uint32()?;
+                72 => {
+                    self.satiety = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -141,20 +141,20 @@ impl ::protobuf::Message for LineupAvatar {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.id);
-        }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            my_size += ::protobuf::rt::int32_size(12, self.avatar_type.value());
-        }
-        if self.hp != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.hp);
-        }
-        if self.satiety != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.satiety);
+            my_size += ::protobuf::rt::int32_size(4, self.avatar_type.value());
         }
         if self.slot != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.slot);
+            my_size += ::protobuf::rt::uint32_size(8, self.slot);
+        }
+        if self.hp != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.hp);
+        }
+        if self.id != 0 {
+            my_size += ::protobuf::rt::uint32_size(2, self.id);
+        }
+        if self.satiety != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.satiety);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -163,22 +163,22 @@ impl ::protobuf::Message for LineupAvatar {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if let Some(v) = self.sp_bar.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(15, v, os)?;
-        }
-        if self.id != 0 {
-            os.write_uint32(6, self.id)?;
+            ::protobuf::rt::write_message_field_with_cached_size(12, v, os)?;
         }
         if self.avatar_type != ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE) {
-            os.write_enum(12, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
-        }
-        if self.hp != 0 {
-            os.write_uint32(9, self.hp)?;
-        }
-        if self.satiety != 0 {
-            os.write_uint32(11, self.satiety)?;
+            os.write_enum(4, ::protobuf::EnumOrUnknown::value(&self.avatar_type))?;
         }
         if self.slot != 0 {
-            os.write_uint32(4, self.slot)?;
+            os.write_uint32(8, self.slot)?;
+        }
+        if self.hp != 0 {
+            os.write_uint32(13, self.hp)?;
+        }
+        if self.id != 0 {
+            os.write_uint32(2, self.id)?;
+        }
+        if self.satiety != 0 {
+            os.write_uint32(9, self.satiety)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -198,22 +198,22 @@ impl ::protobuf::Message for LineupAvatar {
 
     fn clear(&mut self) {
         self.sp_bar.clear();
-        self.id = 0;
         self.avatar_type = ::protobuf::EnumOrUnknown::new(super::AvatarType::AvatarType::AVATAR_TYPE_NONE);
-        self.hp = 0;
-        self.satiety = 0;
         self.slot = 0;
+        self.hp = 0;
+        self.id = 0;
+        self.satiety = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static LineupAvatar {
         static instance: LineupAvatar = LineupAvatar {
             sp_bar: ::protobuf::MessageField::none(),
-            id: 0,
             avatar_type: ::protobuf::EnumOrUnknown::from_i32(0),
-            hp: 0,
-            satiety: 0,
             slot: 0,
+            hp: 0,
+            id: 0,
+            satiety: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -239,11 +239,11 @@ impl ::protobuf::reflect::ProtobufValue for LineupAvatar {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x12LineupAvatar.proto\x1a\x10AvatarType.proto\x1a\x0fSpBarInfo.proto\
-    \"\xad\x01\n\x0cLineupAvatar\x12!\n\x06sp_bar\x18\x0f\x20\x01(\x0b2\n.Sp\
-    BarInfoR\x05spBar\x12\x0e\n\x02id\x18\x06\x20\x01(\rR\x02id\x12,\n\x0bav\
-    atar_type\x18\x0c\x20\x01(\x0e2\x0b.AvatarTypeR\navatarType\x12\x0e\n\
-    \x02hp\x18\t\x20\x01(\rR\x02hp\x12\x18\n\x07satiety\x18\x0b\x20\x01(\rR\
-    \x07satiety\x12\x12\n\x04slot\x18\x04\x20\x01(\rR\x04slotb\x06proto3\
+    \"\xad\x01\n\x0cLineupAvatar\x12!\n\x06sp_bar\x18\x0c\x20\x01(\x0b2\n.Sp\
+    BarInfoR\x05spBar\x12,\n\x0bavatar_type\x18\x04\x20\x01(\x0e2\x0b.Avatar\
+    TypeR\navatarType\x12\x12\n\x04slot\x18\x08\x20\x01(\rR\x04slot\x12\x0e\
+    \n\x02hp\x18\r\x20\x01(\rR\x02hp\x12\x0e\n\x02id\x18\x02\x20\x01(\rR\x02\
+    id\x12\x18\n\x07satiety\x18\t\x20\x01(\rR\x07satietyb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,12 +28,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct GetEvolveBuildShopAbilityDownScRsp {
     // message fields
-    // @@protoc_insertion_point(field:GetEvolveBuildShopAbilityDownScRsp.level)
-    pub level: u32,
     // @@protoc_insertion_point(field:GetEvolveBuildShopAbilityDownScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:GetEvolveBuildShopAbilityDownScRsp.NJPCMDNHOFL)
-    pub NJPCMDNHOFL: u32,
+    // @@protoc_insertion_point(field:GetEvolveBuildShopAbilityDownScRsp.JEKLOEPPJBK)
+    pub JEKLOEPPJBK: u32,
+    // @@protoc_insertion_point(field:GetEvolveBuildShopAbilityDownScRsp.level)
+    pub level: u32,
     // special fields
     // @@protoc_insertion_point(special_field:GetEvolveBuildShopAbilityDownScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -54,19 +54,19 @@ impl GetEvolveBuildShopAbilityDownScRsp {
         let mut fields = ::std::vec::Vec::with_capacity(3);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "level",
-            |m: &GetEvolveBuildShopAbilityDownScRsp| { &m.level },
-            |m: &mut GetEvolveBuildShopAbilityDownScRsp| { &mut m.level },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &GetEvolveBuildShopAbilityDownScRsp| { &m.retcode },
             |m: &mut GetEvolveBuildShopAbilityDownScRsp| { &mut m.retcode },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "NJPCMDNHOFL",
-            |m: &GetEvolveBuildShopAbilityDownScRsp| { &m.NJPCMDNHOFL },
-            |m: &mut GetEvolveBuildShopAbilityDownScRsp| { &mut m.NJPCMDNHOFL },
+            "JEKLOEPPJBK",
+            |m: &GetEvolveBuildShopAbilityDownScRsp| { &m.JEKLOEPPJBK },
+            |m: &mut GetEvolveBuildShopAbilityDownScRsp| { &mut m.JEKLOEPPJBK },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "level",
+            |m: &GetEvolveBuildShopAbilityDownScRsp| { &m.level },
+            |m: &mut GetEvolveBuildShopAbilityDownScRsp| { &mut m.level },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<GetEvolveBuildShopAbilityDownScRsp>(
             "GetEvolveBuildShopAbilityDownScRsp",
@@ -86,14 +86,14 @@ impl ::protobuf::Message for GetEvolveBuildShopAbilityDownScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                40 => {
-                    self.level = is.read_uint32()?;
-                },
-                112 => {
+                120 => {
                     self.retcode = is.read_uint32()?;
                 },
-                72 => {
-                    self.NJPCMDNHOFL = is.read_uint32()?;
+                32 => {
+                    self.JEKLOEPPJBK = is.read_uint32()?;
+                },
+                96 => {
+                    self.level = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -107,14 +107,14 @@ impl ::protobuf::Message for GetEvolveBuildShopAbilityDownScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.level != 0 {
-            my_size += ::protobuf::rt::uint32_size(5, self.level);
-        }
         if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.retcode);
+            my_size += ::protobuf::rt::uint32_size(15, self.retcode);
         }
-        if self.NJPCMDNHOFL != 0 {
-            my_size += ::protobuf::rt::uint32_size(9, self.NJPCMDNHOFL);
+        if self.JEKLOEPPJBK != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.JEKLOEPPJBK);
+        }
+        if self.level != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.level);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -122,14 +122,14 @@ impl ::protobuf::Message for GetEvolveBuildShopAbilityDownScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.level != 0 {
-            os.write_uint32(5, self.level)?;
-        }
         if self.retcode != 0 {
-            os.write_uint32(14, self.retcode)?;
+            os.write_uint32(15, self.retcode)?;
         }
-        if self.NJPCMDNHOFL != 0 {
-            os.write_uint32(9, self.NJPCMDNHOFL)?;
+        if self.JEKLOEPPJBK != 0 {
+            os.write_uint32(4, self.JEKLOEPPJBK)?;
+        }
+        if self.level != 0 {
+            os.write_uint32(12, self.level)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -148,17 +148,17 @@ impl ::protobuf::Message for GetEvolveBuildShopAbilityDownScRsp {
     }
 
     fn clear(&mut self) {
-        self.level = 0;
         self.retcode = 0;
-        self.NJPCMDNHOFL = 0;
+        self.JEKLOEPPJBK = 0;
+        self.level = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static GetEvolveBuildShopAbilityDownScRsp {
         static instance: GetEvolveBuildShopAbilityDownScRsp = GetEvolveBuildShopAbilityDownScRsp {
-            level: 0,
             retcode: 0,
-            NJPCMDNHOFL: 0,
+            JEKLOEPPJBK: 0,
+            level: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -184,9 +184,9 @@ impl ::protobuf::reflect::ProtobufValue for GetEvolveBuildShopAbilityDownScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n(GetEvolveBuildShopAbilityDownScRsp.proto\"v\n\"GetEvolveBuildShopAbil\
-    ityDownScRsp\x12\x14\n\x05level\x18\x05\x20\x01(\rR\x05level\x12\x18\n\
-    \x07retcode\x18\x0e\x20\x01(\rR\x07retcode\x12\x20\n\x0bNJPCMDNHOFL\x18\
-    \t\x20\x01(\rR\x0bNJPCMDNHOFLb\x06proto3\
+    ityDownScRsp\x12\x18\n\x07retcode\x18\x0f\x20\x01(\rR\x07retcode\x12\x20\
+    \n\x0bJEKLOEPPJBK\x18\x04\x20\x01(\rR\x0bJEKLOEPPJBK\x12\x14\n\x05level\
+    \x18\x0c\x20\x01(\rR\x05levelb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,10 +28,10 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct ChimeraDuelShopBuyItemCsReq {
     // message fields
-    // @@protoc_insertion_point(field:ChimeraDuelShopBuyItemCsReq.GCENPLKCCBA)
-    pub GCENPLKCCBA: u32,
-    // @@protoc_insertion_point(field:ChimeraDuelShopBuyItemCsReq.HCNKAJNKGFH)
-    pub HCNKAJNKGFH: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelShopBuyItemCsReq.AGBAIFPNKII)
+    pub AGBAIFPNKII: u32,
+    // @@protoc_insertion_point(field:ChimeraDuelShopBuyItemCsReq.JHINLPCKMPK)
+    pub JHINLPCKMPK: u32,
     // special fields
     // @@protoc_insertion_point(special_field:ChimeraDuelShopBuyItemCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -52,14 +52,14 @@ impl ChimeraDuelShopBuyItemCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(2);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "GCENPLKCCBA",
-            |m: &ChimeraDuelShopBuyItemCsReq| { &m.GCENPLKCCBA },
-            |m: &mut ChimeraDuelShopBuyItemCsReq| { &mut m.GCENPLKCCBA },
+            "AGBAIFPNKII",
+            |m: &ChimeraDuelShopBuyItemCsReq| { &m.AGBAIFPNKII },
+            |m: &mut ChimeraDuelShopBuyItemCsReq| { &mut m.AGBAIFPNKII },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "HCNKAJNKGFH",
-            |m: &ChimeraDuelShopBuyItemCsReq| { &m.HCNKAJNKGFH },
-            |m: &mut ChimeraDuelShopBuyItemCsReq| { &mut m.HCNKAJNKGFH },
+            "JHINLPCKMPK",
+            |m: &ChimeraDuelShopBuyItemCsReq| { &m.JHINLPCKMPK },
+            |m: &mut ChimeraDuelShopBuyItemCsReq| { &mut m.JHINLPCKMPK },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<ChimeraDuelShopBuyItemCsReq>(
             "ChimeraDuelShopBuyItemCsReq",
@@ -79,11 +79,11 @@ impl ::protobuf::Message for ChimeraDuelShopBuyItemCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                24 => {
-                    self.GCENPLKCCBA = is.read_uint32()?;
+                32 => {
+                    self.AGBAIFPNKII = is.read_uint32()?;
                 },
-                80 => {
-                    self.HCNKAJNKGFH = is.read_uint32()?;
+                72 => {
+                    self.JHINLPCKMPK = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -97,11 +97,11 @@ impl ::protobuf::Message for ChimeraDuelShopBuyItemCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.GCENPLKCCBA != 0 {
-            my_size += ::protobuf::rt::uint32_size(3, self.GCENPLKCCBA);
+        if self.AGBAIFPNKII != 0 {
+            my_size += ::protobuf::rt::uint32_size(4, self.AGBAIFPNKII);
         }
-        if self.HCNKAJNKGFH != 0 {
-            my_size += ::protobuf::rt::uint32_size(10, self.HCNKAJNKGFH);
+        if self.JHINLPCKMPK != 0 {
+            my_size += ::protobuf::rt::uint32_size(9, self.JHINLPCKMPK);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -109,11 +109,11 @@ impl ::protobuf::Message for ChimeraDuelShopBuyItemCsReq {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.GCENPLKCCBA != 0 {
-            os.write_uint32(3, self.GCENPLKCCBA)?;
+        if self.AGBAIFPNKII != 0 {
+            os.write_uint32(4, self.AGBAIFPNKII)?;
         }
-        if self.HCNKAJNKGFH != 0 {
-            os.write_uint32(10, self.HCNKAJNKGFH)?;
+        if self.JHINLPCKMPK != 0 {
+            os.write_uint32(9, self.JHINLPCKMPK)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -132,15 +132,15 @@ impl ::protobuf::Message for ChimeraDuelShopBuyItemCsReq {
     }
 
     fn clear(&mut self) {
-        self.GCENPLKCCBA = 0;
-        self.HCNKAJNKGFH = 0;
+        self.AGBAIFPNKII = 0;
+        self.JHINLPCKMPK = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static ChimeraDuelShopBuyItemCsReq {
         static instance: ChimeraDuelShopBuyItemCsReq = ChimeraDuelShopBuyItemCsReq {
-            GCENPLKCCBA: 0,
-            HCNKAJNKGFH: 0,
+            AGBAIFPNKII: 0,
+            JHINLPCKMPK: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for ChimeraDuelShopBuyItemCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n!ChimeraDuelShopBuyItemCsReq.proto\"a\n\x1bChimeraDuelShopBuyItemCsReq\
-    \x12\x20\n\x0bGCENPLKCCBA\x18\x03\x20\x01(\rR\x0bGCENPLKCCBA\x12\x20\n\
-    \x0bHCNKAJNKGFH\x18\n\x20\x01(\rR\x0bHCNKAJNKGFHb\x06proto3\
+    \x12\x20\n\x0bAGBAIFPNKII\x18\x04\x20\x01(\rR\x0bAGBAIFPNKII\x12\x20\n\
+    \x0bJHINLPCKMPK\x18\t\x20\x01(\rR\x0bJHINLPCKMPKb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

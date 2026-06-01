@@ -28,14 +28,14 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct V2FinishPveStageScRsp {
     // message fields
-    // @@protoc_insertion_point(field:V2FinishPveStageScRsp.is_win)
-    pub is_win: bool,
     // @@protoc_insertion_point(field:V2FinishPveStageScRsp.reward)
     pub reward: ::protobuf::MessageField<super::ItemList::ItemList>,
+    // @@protoc_insertion_point(field:V2FinishPveStageScRsp.MPDHNFNCIEA)
+    pub MPDHNFNCIEA: u32,
+    // @@protoc_insertion_point(field:V2FinishPveStageScRsp.is_win)
+    pub is_win: bool,
     // @@protoc_insertion_point(field:V2FinishPveStageScRsp.retcode)
     pub retcode: u32,
-    // @@protoc_insertion_point(field:V2FinishPveStageScRsp.MMLKFJIAKKH)
-    pub MMLKFJIAKKH: u32,
     // special fields
     // @@protoc_insertion_point(special_field:V2FinishPveStageScRsp.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -55,25 +55,25 @@ impl V2FinishPveStageScRsp {
     fn generated_message_descriptor_data() -> ::protobuf::reflect::GeneratedMessageDescriptorData {
         let mut fields = ::std::vec::Vec::with_capacity(4);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "is_win",
-            |m: &V2FinishPveStageScRsp| { &m.is_win },
-            |m: &mut V2FinishPveStageScRsp| { &mut m.is_win },
-        ));
         fields.push(::protobuf::reflect::rt::v2::make_message_field_accessor::<_, super::ItemList::ItemList>(
             "reward",
             |m: &V2FinishPveStageScRsp| { &m.reward },
             |m: &mut V2FinishPveStageScRsp| { &mut m.reward },
         ));
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "MPDHNFNCIEA",
+            |m: &V2FinishPveStageScRsp| { &m.MPDHNFNCIEA },
+            |m: &mut V2FinishPveStageScRsp| { &mut m.MPDHNFNCIEA },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
+            "is_win",
+            |m: &V2FinishPveStageScRsp| { &m.is_win },
+            |m: &mut V2FinishPveStageScRsp| { &mut m.is_win },
+        ));
+        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
             "retcode",
             |m: &V2FinishPveStageScRsp| { &m.retcode },
             |m: &mut V2FinishPveStageScRsp| { &mut m.retcode },
-        ));
-        fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "MMLKFJIAKKH",
-            |m: &V2FinishPveStageScRsp| { &m.MMLKFJIAKKH },
-            |m: &mut V2FinishPveStageScRsp| { &mut m.MMLKFJIAKKH },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<V2FinishPveStageScRsp>(
             "V2FinishPveStageScRsp",
@@ -93,17 +93,17 @@ impl ::protobuf::Message for V2FinishPveStageScRsp {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                104 => {
-                    self.is_win = is.read_bool()?;
-                },
-                74 => {
+                10 => {
                     ::protobuf::rt::read_singular_message_into_field(is, &mut self.reward)?;
                 },
-                32 => {
-                    self.retcode = is.read_uint32()?;
+                104 => {
+                    self.MPDHNFNCIEA = is.read_uint32()?;
                 },
-                64 => {
-                    self.MMLKFJIAKKH = is.read_uint32()?;
+                32 => {
+                    self.is_win = is.read_bool()?;
+                },
+                96 => {
+                    self.retcode = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -117,18 +117,18 @@ impl ::protobuf::Message for V2FinishPveStageScRsp {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.is_win != false {
-            my_size += 1 + 1;
-        }
         if let Some(v) = self.reward.as_ref() {
             let len = v.compute_size();
             my_size += 1 + ::protobuf::rt::compute_raw_varint64_size(len) + len;
         }
-        if self.retcode != 0 {
-            my_size += ::protobuf::rt::uint32_size(4, self.retcode);
+        if self.MPDHNFNCIEA != 0 {
+            my_size += ::protobuf::rt::uint32_size(13, self.MPDHNFNCIEA);
         }
-        if self.MMLKFJIAKKH != 0 {
-            my_size += ::protobuf::rt::uint32_size(8, self.MMLKFJIAKKH);
+        if self.is_win != false {
+            my_size += 1 + 1;
+        }
+        if self.retcode != 0 {
+            my_size += ::protobuf::rt::uint32_size(12, self.retcode);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -136,17 +136,17 @@ impl ::protobuf::Message for V2FinishPveStageScRsp {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.is_win != false {
-            os.write_bool(13, self.is_win)?;
-        }
         if let Some(v) = self.reward.as_ref() {
-            ::protobuf::rt::write_message_field_with_cached_size(9, v, os)?;
+            ::protobuf::rt::write_message_field_with_cached_size(1, v, os)?;
+        }
+        if self.MPDHNFNCIEA != 0 {
+            os.write_uint32(13, self.MPDHNFNCIEA)?;
+        }
+        if self.is_win != false {
+            os.write_bool(4, self.is_win)?;
         }
         if self.retcode != 0 {
-            os.write_uint32(4, self.retcode)?;
-        }
-        if self.MMLKFJIAKKH != 0 {
-            os.write_uint32(8, self.MMLKFJIAKKH)?;
+            os.write_uint32(12, self.retcode)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -165,19 +165,19 @@ impl ::protobuf::Message for V2FinishPveStageScRsp {
     }
 
     fn clear(&mut self) {
-        self.is_win = false;
         self.reward.clear();
+        self.MPDHNFNCIEA = 0;
+        self.is_win = false;
         self.retcode = 0;
-        self.MMLKFJIAKKH = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static V2FinishPveStageScRsp {
         static instance: V2FinishPveStageScRsp = V2FinishPveStageScRsp {
-            is_win: false,
             reward: ::protobuf::MessageField::none(),
+            MPDHNFNCIEA: 0,
+            is_win: false,
             retcode: 0,
-            MMLKFJIAKKH: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -203,10 +203,10 @@ impl ::protobuf::reflect::ProtobufValue for V2FinishPveStageScRsp {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bV2FinishPveStageScRsp.proto\x1a\x0eItemList.proto\"\x8d\x01\n\x15V\
-    2FinishPveStageScRsp\x12\x15\n\x06is_win\x18\r\x20\x01(\x08R\x05isWin\
-    \x12!\n\x06reward\x18\t\x20\x01(\x0b2\t.ItemListR\x06reward\x12\x18\n\
-    \x07retcode\x18\x04\x20\x01(\rR\x07retcode\x12\x20\n\x0bMMLKFJIAKKH\x18\
-    \x08\x20\x01(\rR\x0bMMLKFJIAKKHb\x06proto3\
+    2FinishPveStageScRsp\x12!\n\x06reward\x18\x01\x20\x01(\x0b2\t.ItemListR\
+    \x06reward\x12\x20\n\x0bMPDHNFNCIEA\x18\r\x20\x01(\rR\x0bMPDHNFNCIEA\x12\
+    \x15\n\x06is_win\x18\x04\x20\x01(\x08R\x05isWin\x12\x18\n\x07retcode\x18\
+    \x0c\x20\x01(\rR\x07retcodeb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

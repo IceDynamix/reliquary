@@ -82,7 +82,7 @@ impl ::protobuf::Message for DressRelicParam {
                 16 => {
                     self.relic_unique_id = is.read_uint32()?;
                 },
-                88 => {
+                8 => {
                     self.relic_type = is.read_uint32()?;
                 },
                 tag => {
@@ -101,7 +101,7 @@ impl ::protobuf::Message for DressRelicParam {
             my_size += ::protobuf::rt::uint32_size(2, self.relic_unique_id);
         }
         if self.relic_type != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.relic_type);
+            my_size += ::protobuf::rt::uint32_size(1, self.relic_type);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -113,7 +113,7 @@ impl ::protobuf::Message for DressRelicParam {
             os.write_uint32(2, self.relic_unique_id)?;
         }
         if self.relic_type != 0 {
-            os.write_uint32(11, self.relic_type)?;
+            os.write_uint32(1, self.relic_type)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,7 +166,7 @@ impl ::protobuf::reflect::ProtobufValue for DressRelicParam {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x15DressRelicParam.proto\"X\n\x0fDressRelicParam\x12&\n\x0frelic_uniq\
-    ue_id\x18\x02\x20\x01(\rR\rrelicUniqueId\x12\x1d\n\nrelic_type\x18\x0b\
+    ue_id\x18\x02\x20\x01(\rR\rrelicUniqueId\x12\x1d\n\nrelic_type\x18\x01\
     \x20\x01(\rR\trelicTypeb\x06proto3\
 ";
 

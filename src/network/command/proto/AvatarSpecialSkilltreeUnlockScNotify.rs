@@ -79,10 +79,10 @@ impl ::protobuf::Message for AvatarSpecialSkilltreeUnlockScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                112 => {
+                104 => {
                     self.point_id = is.read_uint32()?;
                 },
-                48 => {
+                96 => {
                     self.avatar_id = is.read_uint32()?;
                 },
                 tag => {
@@ -98,10 +98,10 @@ impl ::protobuf::Message for AvatarSpecialSkilltreeUnlockScNotify {
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
         if self.point_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(14, self.point_id);
+            my_size += ::protobuf::rt::uint32_size(13, self.point_id);
         }
         if self.avatar_id != 0 {
-            my_size += ::protobuf::rt::uint32_size(6, self.avatar_id);
+            my_size += ::protobuf::rt::uint32_size(12, self.avatar_id);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -110,10 +110,10 @@ impl ::protobuf::Message for AvatarSpecialSkilltreeUnlockScNotify {
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
         if self.point_id != 0 {
-            os.write_uint32(14, self.point_id)?;
+            os.write_uint32(13, self.point_id)?;
         }
         if self.avatar_id != 0 {
-            os.write_uint32(6, self.avatar_id)?;
+            os.write_uint32(12, self.avatar_id)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -166,8 +166,8 @@ impl ::protobuf::reflect::ProtobufValue for AvatarSpecialSkilltreeUnlockScNotify
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n*AvatarSpecialSkilltreeUnlockScNotify.proto\"^\n$AvatarSpecialSkilltre\
-    eUnlockScNotify\x12\x19\n\x08point_id\x18\x0e\x20\x01(\rR\x07pointId\x12\
-    \x1b\n\tavatar_id\x18\x06\x20\x01(\rR\x08avatarIdb\x06proto3\
+    eUnlockScNotify\x12\x19\n\x08point_id\x18\r\x20\x01(\rR\x07pointId\x12\
+    \x1b\n\tavatar_id\x18\x0c\x20\x01(\rR\x08avatarIdb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct SetHipplenAgendaCsReq {
     // message fields
-    // @@protoc_insertion_point(field:SetHipplenAgendaCsReq.CLKAILDCPJC)
-    pub CLKAILDCPJC: ::std::vec::Vec<u32>,
+    // @@protoc_insertion_point(field:SetHipplenAgendaCsReq.NEMFNENACNB)
+    pub NEMFNENACNB: ::std::vec::Vec<u32>,
     // special fields
     // @@protoc_insertion_point(special_field:SetHipplenAgendaCsReq.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl SetHipplenAgendaCsReq {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_vec_simpler_accessor::<_, _>(
-            "CLKAILDCPJC",
-            |m: &SetHipplenAgendaCsReq| { &m.CLKAILDCPJC },
-            |m: &mut SetHipplenAgendaCsReq| { &mut m.CLKAILDCPJC },
+            "NEMFNENACNB",
+            |m: &SetHipplenAgendaCsReq| { &m.NEMFNENACNB },
+            |m: &mut SetHipplenAgendaCsReq| { &mut m.NEMFNENACNB },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<SetHipplenAgendaCsReq>(
             "SetHipplenAgendaCsReq",
@@ -72,11 +72,11 @@ impl ::protobuf::Message for SetHipplenAgendaCsReq {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                58 => {
-                    is.read_repeated_packed_uint32_into(&mut self.CLKAILDCPJC)?;
+                122 => {
+                    is.read_repeated_packed_uint32_into(&mut self.NEMFNENACNB)?;
                 },
-                56 => {
-                    self.CLKAILDCPJC.push(is.read_uint32()?);
+                120 => {
+                    self.NEMFNENACNB.push(is.read_uint32()?);
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -90,14 +90,14 @@ impl ::protobuf::Message for SetHipplenAgendaCsReq {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        my_size += ::protobuf::rt::vec_packed_uint32_size(7, &self.CLKAILDCPJC);
+        my_size += ::protobuf::rt::vec_packed_uint32_size(15, &self.NEMFNENACNB);
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
         my_size
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        os.write_repeated_packed_uint32(7, &self.CLKAILDCPJC)?;
+        os.write_repeated_packed_uint32(15, &self.NEMFNENACNB)?;
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
     }
@@ -115,13 +115,13 @@ impl ::protobuf::Message for SetHipplenAgendaCsReq {
     }
 
     fn clear(&mut self) {
-        self.CLKAILDCPJC.clear();
+        self.NEMFNENACNB.clear();
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static SetHipplenAgendaCsReq {
         static instance: SetHipplenAgendaCsReq = SetHipplenAgendaCsReq {
-            CLKAILDCPJC: ::std::vec::Vec::new(),
+            NEMFNENACNB: ::std::vec::Vec::new(),
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -147,7 +147,7 @@ impl ::protobuf::reflect::ProtobufValue for SetHipplenAgendaCsReq {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1bSetHipplenAgendaCsReq.proto\"9\n\x15SetHipplenAgendaCsReq\x12\x20\
-    \n\x0bCLKAILDCPJC\x18\x07\x20\x03(\rR\x0bCLKAILDCPJCb\x06proto3\
+    \n\x0bNEMFNENACNB\x18\x0f\x20\x03(\rR\x0bNEMFNENACNBb\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

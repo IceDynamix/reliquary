@@ -27,16 +27,16 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:CmdRecommendType)
 pub enum CmdRecommendType {
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.KEHJMOOMBBA_PCPDHELPKEM)
-    KEHJMOOMBBA_PCPDHELPKEM = 0,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataRecommendCsReq)
-    CmdGetBigDataRecommendCsReq = 2405,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataAllRecommendScRsp)
-    CmdGetBigDataAllRecommendScRsp = 2419,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataRecommendScRsp)
-    CmdGetBigDataRecommendScRsp = 2401,
-    // @@protoc_insertion_point(enum_value:CmdRecommendType.CmdGetBigDataAllRecommendCsReq)
-    CmdGetBigDataAllRecommendCsReq = 2447,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_NLCDGIPGFDJ)
+    APDINKHBHGC_NLCDGIPGFDJ = 0,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_DFIEHBOAJDG)
+    APDINKHBHGC_DFIEHBOAJDG = 2419,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_CECCNMFJEPB)
+    APDINKHBHGC_CECCNMFJEPB = 2445,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_DDHLPICBNLN)
+    APDINKHBHGC_DDHLPICBNLN = 2429,
+    // @@protoc_insertion_point(enum_value:CmdRecommendType.APDINKHBHGC_CMNBINBILDO)
+    APDINKHBHGC_CMNBINBILDO = 2409,
 }
 
 impl ::protobuf::Enum for CmdRecommendType {
@@ -48,32 +48,32 @@ impl ::protobuf::Enum for CmdRecommendType {
 
     fn from_i32(value: i32) -> ::std::option::Option<CmdRecommendType> {
         match value {
-            0 => ::std::option::Option::Some(CmdRecommendType::KEHJMOOMBBA_PCPDHELPKEM),
-            2405 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendCsReq),
-            2419 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendScRsp),
-            2401 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendScRsp),
-            2447 => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendCsReq),
+            0 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_NLCDGIPGFDJ),
+            2419 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DFIEHBOAJDG),
+            2445 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_CECCNMFJEPB),
+            2429 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DDHLPICBNLN),
+            2409 => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_CMNBINBILDO),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<CmdRecommendType> {
         match str {
-            "KEHJMOOMBBA_PCPDHELPKEM" => ::std::option::Option::Some(CmdRecommendType::KEHJMOOMBBA_PCPDHELPKEM),
-            "CmdGetBigDataRecommendCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendCsReq),
-            "CmdGetBigDataAllRecommendScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendScRsp),
-            "CmdGetBigDataRecommendScRsp" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataRecommendScRsp),
-            "CmdGetBigDataAllRecommendCsReq" => ::std::option::Option::Some(CmdRecommendType::CmdGetBigDataAllRecommendCsReq),
+            "APDINKHBHGC_NLCDGIPGFDJ" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_NLCDGIPGFDJ),
+            "APDINKHBHGC_DFIEHBOAJDG" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DFIEHBOAJDG),
+            "APDINKHBHGC_CECCNMFJEPB" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_CECCNMFJEPB),
+            "APDINKHBHGC_DDHLPICBNLN" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_DDHLPICBNLN),
+            "APDINKHBHGC_CMNBINBILDO" => ::std::option::Option::Some(CmdRecommendType::APDINKHBHGC_CMNBINBILDO),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [CmdRecommendType] = &[
-        CmdRecommendType::KEHJMOOMBBA_PCPDHELPKEM,
-        CmdRecommendType::CmdGetBigDataRecommendCsReq,
-        CmdRecommendType::CmdGetBigDataAllRecommendScRsp,
-        CmdRecommendType::CmdGetBigDataRecommendScRsp,
-        CmdRecommendType::CmdGetBigDataAllRecommendCsReq,
+        CmdRecommendType::APDINKHBHGC_NLCDGIPGFDJ,
+        CmdRecommendType::APDINKHBHGC_DFIEHBOAJDG,
+        CmdRecommendType::APDINKHBHGC_CECCNMFJEPB,
+        CmdRecommendType::APDINKHBHGC_DDHLPICBNLN,
+        CmdRecommendType::APDINKHBHGC_CMNBINBILDO,
     ];
 }
 
@@ -85,11 +85,11 @@ impl ::protobuf::EnumFull for CmdRecommendType {
 
     fn descriptor(&self) -> ::protobuf::reflect::EnumValueDescriptor {
         let index = match self {
-            CmdRecommendType::KEHJMOOMBBA_PCPDHELPKEM => 0,
-            CmdRecommendType::CmdGetBigDataRecommendCsReq => 1,
-            CmdRecommendType::CmdGetBigDataAllRecommendScRsp => 2,
-            CmdRecommendType::CmdGetBigDataRecommendScRsp => 3,
-            CmdRecommendType::CmdGetBigDataAllRecommendCsReq => 4,
+            CmdRecommendType::APDINKHBHGC_NLCDGIPGFDJ => 0,
+            CmdRecommendType::APDINKHBHGC_DFIEHBOAJDG => 1,
+            CmdRecommendType::APDINKHBHGC_CECCNMFJEPB => 2,
+            CmdRecommendType::APDINKHBHGC_DDHLPICBNLN => 3,
+            CmdRecommendType::APDINKHBHGC_CMNBINBILDO => 4,
         };
         Self::enum_descriptor().value_by_index(index)
     }
@@ -97,7 +97,7 @@ impl ::protobuf::EnumFull for CmdRecommendType {
 
 impl ::std::default::Default for CmdRecommendType {
     fn default() -> Self {
-        CmdRecommendType::KEHJMOOMBBA_PCPDHELPKEM
+        CmdRecommendType::APDINKHBHGC_NLCDGIPGFDJ
     }
 }
 
@@ -108,11 +108,11 @@ impl CmdRecommendType {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x16CmdRecommendType.proto*\xbd\x01\n\x10CmdRecommendType\x12\x1b\n\
-    \x17KEHJMOOMBBA_PCPDHELPKEM\x10\0\x12\x20\n\x1bCmdGetBigDataRecommendCsR\
-    eq\x10\xe5\x12\x12#\n\x1eCmdGetBigDataAllRecommendScRsp\x10\xf3\x12\x12\
-    \x20\n\x1bCmdGetBigDataRecommendScRsp\x10\xe1\x12\x12#\n\x1eCmdGetBigDat\
-    aAllRecommendCsReq\x10\x8f\x13b\x06proto3\
+    \n\x16CmdRecommendType.proto*\xa7\x01\n\x10CmdRecommendType\x12\x1b\n\
+    \x17APDINKHBHGC_NLCDGIPGFDJ\x10\0\x12\x1c\n\x17APDINKHBHGC_DFIEHBOAJDG\
+    \x10\xf3\x12\x12\x1c\n\x17APDINKHBHGC_CECCNMFJEPB\x10\x8d\x13\x12\x1c\n\
+    \x17APDINKHBHGC_DDHLPICBNLN\x10\xfd\x12\x12\x1c\n\x17APDINKHBHGC_CMNBINB\
+    ILDO\x10\xe9\x12b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

@@ -27,12 +27,12 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(Clone,Copy,PartialEq,Eq,Debug,Hash)]
 // @@protoc_insertion_point(enum:GridFightEquipDressSource)
 pub enum GridFightEquipDressSource {
-    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.BLJJDJODAHH_FLLIPKCMFHH)
-    BLJJDJODAHH_FLLIPKCMFHH = 0,
-    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.BLJJDJODAHH_GNFNPHHANFA)
-    BLJJDJODAHH_GNFNPHHANFA = 1,
-    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.BLJJDJODAHH_GMLJDAFOEIC)
-    BLJJDJODAHH_GMLJDAFOEIC = 2,
+    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.DMGOKGLBNJJ_IMLHGIMCJGG)
+    DMGOKGLBNJJ_IMLHGIMCJGG = 0,
+    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.DMGOKGLBNJJ_GPAPBPFNKBI)
+    DMGOKGLBNJJ_GPAPBPFNKBI = 1,
+    // @@protoc_insertion_point(enum_value:GridFightEquipDressSource.DMGOKGLBNJJ_PBKFJGEFCID)
+    DMGOKGLBNJJ_PBKFJGEFCID = 2,
 }
 
 impl ::protobuf::Enum for GridFightEquipDressSource {
@@ -44,26 +44,26 @@ impl ::protobuf::Enum for GridFightEquipDressSource {
 
     fn from_i32(value: i32) -> ::std::option::Option<GridFightEquipDressSource> {
         match value {
-            0 => ::std::option::Option::Some(GridFightEquipDressSource::BLJJDJODAHH_FLLIPKCMFHH),
-            1 => ::std::option::Option::Some(GridFightEquipDressSource::BLJJDJODAHH_GNFNPHHANFA),
-            2 => ::std::option::Option::Some(GridFightEquipDressSource::BLJJDJODAHH_GMLJDAFOEIC),
+            0 => ::std::option::Option::Some(GridFightEquipDressSource::DMGOKGLBNJJ_IMLHGIMCJGG),
+            1 => ::std::option::Option::Some(GridFightEquipDressSource::DMGOKGLBNJJ_GPAPBPFNKBI),
+            2 => ::std::option::Option::Some(GridFightEquipDressSource::DMGOKGLBNJJ_PBKFJGEFCID),
             _ => ::std::option::Option::None
         }
     }
 
     fn from_str(str: &str) -> ::std::option::Option<GridFightEquipDressSource> {
         match str {
-            "BLJJDJODAHH_FLLIPKCMFHH" => ::std::option::Option::Some(GridFightEquipDressSource::BLJJDJODAHH_FLLIPKCMFHH),
-            "BLJJDJODAHH_GNFNPHHANFA" => ::std::option::Option::Some(GridFightEquipDressSource::BLJJDJODAHH_GNFNPHHANFA),
-            "BLJJDJODAHH_GMLJDAFOEIC" => ::std::option::Option::Some(GridFightEquipDressSource::BLJJDJODAHH_GMLJDAFOEIC),
+            "DMGOKGLBNJJ_IMLHGIMCJGG" => ::std::option::Option::Some(GridFightEquipDressSource::DMGOKGLBNJJ_IMLHGIMCJGG),
+            "DMGOKGLBNJJ_GPAPBPFNKBI" => ::std::option::Option::Some(GridFightEquipDressSource::DMGOKGLBNJJ_GPAPBPFNKBI),
+            "DMGOKGLBNJJ_PBKFJGEFCID" => ::std::option::Option::Some(GridFightEquipDressSource::DMGOKGLBNJJ_PBKFJGEFCID),
             _ => ::std::option::Option::None
         }
     }
 
     const VALUES: &'static [GridFightEquipDressSource] = &[
-        GridFightEquipDressSource::BLJJDJODAHH_FLLIPKCMFHH,
-        GridFightEquipDressSource::BLJJDJODAHH_GNFNPHHANFA,
-        GridFightEquipDressSource::BLJJDJODAHH_GMLJDAFOEIC,
+        GridFightEquipDressSource::DMGOKGLBNJJ_IMLHGIMCJGG,
+        GridFightEquipDressSource::DMGOKGLBNJJ_GPAPBPFNKBI,
+        GridFightEquipDressSource::DMGOKGLBNJJ_PBKFJGEFCID,
     ];
 }
 
@@ -81,7 +81,7 @@ impl ::protobuf::EnumFull for GridFightEquipDressSource {
 
 impl ::std::default::Default for GridFightEquipDressSource {
     fn default() -> Self {
-        GridFightEquipDressSource::BLJJDJODAHH_FLLIPKCMFHH
+        GridFightEquipDressSource::DMGOKGLBNJJ_IMLHGIMCJGG
     }
 }
 
@@ -93,8 +93,8 @@ impl GridFightEquipDressSource {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n\x1fGridFightEquipDressSource.proto*r\n\x19GridFightEquipDressSource\
-    \x12\x1b\n\x17BLJJDJODAHH_FLLIPKCMFHH\x10\0\x12\x1b\n\x17BLJJDJODAHH_GNF\
-    NPHHANFA\x10\x01\x12\x1b\n\x17BLJJDJODAHH_GMLJDAFOEIC\x10\x02b\x06proto3\
+    \x12\x1b\n\x17DMGOKGLBNJJ_IMLHGIMCJGG\x10\0\x12\x1b\n\x17DMGOKGLBNJJ_GPA\
+    PBPFNKBI\x10\x01\x12\x1b\n\x17DMGOKGLBNJJ_PBKFJGEFCID\x10\x02b\x06proto3\
 ";
 
 /// `FileDescriptorProto` object which was a source for this generated file

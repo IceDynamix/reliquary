@@ -28,8 +28,8 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_7_1;
 #[derive(PartialEq,Clone,Default,Debug)]
 pub struct PlayerReturnPointChangeScNotify {
     // message fields
-    // @@protoc_insertion_point(field:PlayerReturnPointChangeScNotify.LCDALEEEDJJ)
-    pub LCDALEEEDJJ: u32,
+    // @@protoc_insertion_point(field:PlayerReturnPointChangeScNotify.MNMJCNOLIII)
+    pub MNMJCNOLIII: u32,
     // special fields
     // @@protoc_insertion_point(special_field:PlayerReturnPointChangeScNotify.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
@@ -50,9 +50,9 @@ impl PlayerReturnPointChangeScNotify {
         let mut fields = ::std::vec::Vec::with_capacity(1);
         let mut oneofs = ::std::vec::Vec::with_capacity(0);
         fields.push(::protobuf::reflect::rt::v2::make_simpler_field_accessor::<_, _>(
-            "LCDALEEEDJJ",
-            |m: &PlayerReturnPointChangeScNotify| { &m.LCDALEEEDJJ },
-            |m: &mut PlayerReturnPointChangeScNotify| { &mut m.LCDALEEEDJJ },
+            "MNMJCNOLIII",
+            |m: &PlayerReturnPointChangeScNotify| { &m.MNMJCNOLIII },
+            |m: &mut PlayerReturnPointChangeScNotify| { &mut m.MNMJCNOLIII },
         ));
         ::protobuf::reflect::GeneratedMessageDescriptorData::new_2::<PlayerReturnPointChangeScNotify>(
             "PlayerReturnPointChangeScNotify",
@@ -72,8 +72,8 @@ impl ::protobuf::Message for PlayerReturnPointChangeScNotify {
     fn merge_from(&mut self, is: &mut ::protobuf::CodedInputStream<'_>) -> ::protobuf::Result<()> {
         while let Some(tag) = is.read_raw_tag_or_eof()? {
             match tag {
-                88 => {
-                    self.LCDALEEEDJJ = is.read_uint32()?;
+                56 => {
+                    self.MNMJCNOLIII = is.read_uint32()?;
                 },
                 tag => {
                     ::protobuf::rt::read_unknown_or_skip_group(tag, is, self.special_fields.mut_unknown_fields())?;
@@ -87,8 +87,8 @@ impl ::protobuf::Message for PlayerReturnPointChangeScNotify {
     #[allow(unused_variables)]
     fn compute_size(&self) -> u64 {
         let mut my_size = 0;
-        if self.LCDALEEEDJJ != 0 {
-            my_size += ::protobuf::rt::uint32_size(11, self.LCDALEEEDJJ);
+        if self.MNMJCNOLIII != 0 {
+            my_size += ::protobuf::rt::uint32_size(7, self.MNMJCNOLIII);
         }
         my_size += ::protobuf::rt::unknown_fields_size(self.special_fields.unknown_fields());
         self.special_fields.cached_size().set(my_size as u32);
@@ -96,8 +96,8 @@ impl ::protobuf::Message for PlayerReturnPointChangeScNotify {
     }
 
     fn write_to_with_cached_sizes(&self, os: &mut ::protobuf::CodedOutputStream<'_>) -> ::protobuf::Result<()> {
-        if self.LCDALEEEDJJ != 0 {
-            os.write_uint32(11, self.LCDALEEEDJJ)?;
+        if self.MNMJCNOLIII != 0 {
+            os.write_uint32(7, self.MNMJCNOLIII)?;
         }
         os.write_unknown_fields(self.special_fields.unknown_fields())?;
         ::std::result::Result::Ok(())
@@ -116,13 +116,13 @@ impl ::protobuf::Message for PlayerReturnPointChangeScNotify {
     }
 
     fn clear(&mut self) {
-        self.LCDALEEEDJJ = 0;
+        self.MNMJCNOLIII = 0;
         self.special_fields.clear();
     }
 
     fn default_instance() -> &'static PlayerReturnPointChangeScNotify {
         static instance: PlayerReturnPointChangeScNotify = PlayerReturnPointChangeScNotify {
-            LCDALEEEDJJ: 0,
+            MNMJCNOLIII: 0,
             special_fields: ::protobuf::SpecialFields::new(),
         };
         &instance
@@ -148,7 +148,7 @@ impl ::protobuf::reflect::ProtobufValue for PlayerReturnPointChangeScNotify {
 
 static file_descriptor_proto_data: &'static [u8] = b"\
     \n%PlayerReturnPointChangeScNotify.proto\"C\n\x1fPlayerReturnPointChange\
-    ScNotify\x12\x20\n\x0bLCDALEEEDJJ\x18\x0b\x20\x01(\rR\x0bLCDALEEEDJJb\
+    ScNotify\x12\x20\n\x0bMNMJCNOLIII\x18\x07\x20\x01(\rR\x0bMNMJCNOLIIIb\
     \x06proto3\
 ";
 
